@@ -1,0 +1,38 @@
+---
+title: "Systemnahes"
+target_name: courses-sysprog
+
+tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall']
+
+menu: true
+menu_order: 10
+---
+
+Systemnahes Programmieren unter Linux
+=====================================
+
+"*Systemnahe Programmierung unter Linux*" ist ein Kurs, der als
+[offene
+Schulung](http://bodenseo.de/kurs/linux_systemnahe_programmierung.html)
+(findet an vorgegebenen Terminen statt und kann von jedermann gebucht
+werden) und auch als Inhouseschulung bei [der Firma
+Bodenseo](http://bodenseo.de) gebucht werden kann.
+
+Zusätzlich dazu biete ich den Kurs auch als "Aufbauprogramm" in
+Einzelteilen an, die als Inhouseschulungen <%= link_to_name('bei mir
+gebucht', 'contact') %> werden können. Die Unterlagen sind modular
+aufgebaut, sodass sie je nach Bedarf angepasst werden können --- die
+nachfolgenden Schulungsbeschreibungen sind dementsprechend als
+Vorschlag zu verstehen.
+
+* <%= link_to_name('Linux Grundlagen', 'course-system-basics') %>:
+  eine Einführung in das System anhand von Beispielen.
+* <%= link_to_name('Multithreading', 'course-multithreading') %>:
+  richtiger Umgang mit POSIX Threads und Realtime.
+* <%= link_to_name('Netzwerk-Programmierung', 'course-network') %>:
+  Client/Server Programmierung mit TCP/IP und UNIX-Domain Sockets
+* <%= link_to_name('Fortgeschrittene Themen', 'course-advanced') %>
+  wie virtuelles Memory, POSIX IPC, und konsequente Unix-ismen, die es
+  paradoxerweise nur unter Linux gibt.
+* <%= link_to_name('Embedded Linux', 'course-embedded') %>:
+  verschiedene Themen aus dem Embedded Umfeld.

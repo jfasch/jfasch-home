@@ -1,0 +1,21 @@
+---
+title: "Verschiedenes"
+target_name: courses-misc
+
+tags: ['linux', 'kurs', 'schulung']
+
+menu: true
+menu_order: 20
+---
+
+jjj das da noch fertig machen
+
+Verschiedenes
+=============
+
+In Kooperation mit Schulungsunternehmen biete ich auch folgende Themen
+an.
+
+* [Softwareentwicklung unter Linux für Nicht-Linuxer](Kettner-Softwareentwicklung)
+* [Linux from Scratch](Kettner-LFS)
+* [Einführung in Python](Kettner-Python)

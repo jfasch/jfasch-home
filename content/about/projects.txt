@@ -1,0 +1,116 @@
+---
+title: "Projekte"
+target_name: projects
+---
+
+Bisherige Projekte
+==================
+
+(Stand März 2012)
+
+* **Spielo, Unterpremstätten bei Graz**<br>
+  März und April 2012
+
+  * Update des hauseigenen Linux-Betriebssystems
+  * Integration eines USB-Touchscreens
+
+* **Signalis, Unterschleissheim**<br>
+  Coastal Surveillance Systems<br>
+  Juni 2011 bis dato
+
+  * Konvertierung verschiedener ASTERIX Formate zum Zwecke der
+    Integration externer Datenquellen (in Python)
+  * Export von Daten via SOAP (in Python)
+
+* **Efkon AG, Graz**<br>
+  Mautsysteme<br>
+  Bis dato
+
+  * Integration verschiedener Hardwareteile (Touchscreen, Lagesensor;
+    in C und C++)
+  * Anpassung von cryptsetup (Filesystemverschlüsselung) an die
+    Anforderungen der Embedded-Applikation (in C)
+  * Clientseitige Implementation des GigE-Vision Kamera-Protokolls,
+    incl. softwarebasierter Kamerasimulation (in C++)
+
+* **YLog GmbH, Dobl**<br>
+  Lagerautomatisierung<br>
+  2008 bis dato
+
+  * Entwicklung der beteiligten Protokolle (in C++ unter Linux)
+    * Server zu SPS (TCP)
+    * Server zu autonomen Fahrzeugen (TCP)
+    * Server zu Kundenapplikationen (TCP)
+    * Autonome Fahrzeuge zu Mikrocontroller (Seriell/RS232)
+  * Beratende Tätigkeit
+    * Versionskontrolle und Releasemanagement (Subversion)
+    * Architektur
+
+* **KWB Kraft und Wärme aus Biomasse GmbH, St.Margarethen/Raab**<br>
+  Heizungsanlagen<br>
+  Jänner 2010 bis März 2011
+
+  * Parametrisierung der Anlage (C mit IAR/ARM Workbench Segger embOS,
+    VBA/Excel)
+  * Protokolle zur Verteilung der Parametrisierung (TCP unter Segger
+    embOS, Microsoft .NET/C#, Linux)
+  * Versionskontrollinfrastruktur (Subversion, assoziierte Scripts mit
+    Python und Shell)
+
+* **Salomon Automation GmbH, Friesach bei Graz**<br>
+  Mai 2009 bis Juni 2010
+
+  * Erweiterung der Buildumgebung (CMake, Confix
+    (http://confix.sf.net), in Python)
+
+* **Mathias Kettner, München**<br>
+  Open-Source-Schulungen<br>
+  September 2010 bis dato
+  
+  Verschiedene Schulungen aus dem Umkreis Linux
+
+  * Softwareentwicklung unter Linux für Nicht-Linuxer
+  * Linux from Scratch
+  * Python
+  * Shell-Programmierung
+  * Embedded Linux
+
+* **Bodenseo, Singen**<br>
+  Open-Source-Schulungen<br>
+  November 2010 bis dato
+
+  Verschiedene Schulungen aus dem Umkreis Linux
+  
+  * Systemnahe Softwareentwicklung
+  * Embedded Linux
+
+Projekte aus nichtselbstständiger Tätigkeit
+===========================================
+
+* **Atronic GmbH, Unterpremstätten bei Graz**<br>
+  2006 bis 2010
+
+  * Softwarearchitektur
+  * Portierung der Spielesoftware von ENEA/OSE nach Linux (C++)
+  * Entwurf der Systemschnittstellen
+  * Driverentwicklung (Linux/PowerPC, USB)
+  * Entwicklung des "Betriebssystems" auf Basis Gentoo,
+    Vanilla-Kernel, und Aufs
+
+* **Salomon Automation GmbH, Friesach bei Graz**<br>
+  2001 bis 2006
+
+  * Softwarearchitektur
+  * Abteilungsleitung
+  * Analyse und Design
+  * Datenbankdesign
+  * Programmierung einer objektrelationalen Datenbankschnittstelle (C++)
+
+* **Hyperwave AG, Graz**<br>
+  1998 bis 2001
+
+  * Softwareentwicklung
+  * Abteilungsleitung
+  * Analyse und Design (Rational Rose)
+  * Releasemanagement (CVS, Subversion)
+  * Systemnahe Programmierung (C++ unter Linux und Windows)

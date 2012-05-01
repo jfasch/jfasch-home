@@ -1,0 +1,20 @@
+---
+title: "Linux from Scratch"
+menu_order: 110
+
+tags: ['linux', 'kurs', 'schulung', 'root filesystem', 'pxe', 'grub', 'bootloader', 'compile']
+
+context: course
+course_type: hosted
+course_duration: 5
+---
+
+Linux from Scratch
+==================
+
+Basteln eines bootfähigen Linuxsystems von Null weg.
+
+Dieser Kurs wird von der Firma [Mathias
+Kettner](http://mathias-kettner.de) in München angeboten, mit mir als
+Dozenten. Finden Sie [hier die originale und ausführliche
+Schulungsbeschreibung](http://mathias-kettner.de/schulung_linux_from_scratch.html).

@@ -1,0 +1,57 @@
+---
+title: Fortgeschrittenes
+menu_order: 40
+target_name: course-advanced
+
+tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall', 'mmap', 'virtuelles memory',
+       'mlockall', 'shared memory', 'semaphore', 'ipc', 'timerfd', 'signalfd', 'eventfd']
+
+context: course
+course_duration: 2
+course_type: inhouse
+---
+
+Systemnahe Programmierung für Fortgeschrittene
+==============================================
+
+Will man in Tiefen des Systems steigen, die dem Alltagsprogrammierer
+normalerweise verborgen bleiben, ist dieser Kurs genau der
+Richtige. Linux und Unix bieten an der Basis eine Vielzahl von
+Schnittstellen, die es ermöglichen, hochperformante Anwendungen zu
+schreiben. Hier wird ein Überblick gegeben.
+
+Kursinhalt
+----------
+
+* **Virtuelles Memory**. Speicherverwaltung in modernen
+  Bertriebssystemen basiert auf sogenanntem *virtuellen Memory*. Zum
+  Beispiel bleibt dem Benutzer verborgen, dass unter Umständen
+  Speicherbereiche seiner Programme auf die Festplatte ausgelagert
+  werden (Swap), oder dass der Code von zwei Instanzen desselben
+  Programmes nur einmal im Hauptspeicher liegt.
+  * Grundlagen
+  * Memory Mappings
+  * Assoziierte System Calls: mmap, mlock, mlockall, ...
+* **POSIX IPC**. Netzwerk-Kommunikation mittels Sockets ist nur *ein*
+  Mittel, Prozesse miteinander kommunizieren zu lassen. *IPC* (Inter
+  Process Communication) ist eine Sammlung weiterer Mechanismen, auf
+  die hier eingegangen wird.
+  * Shared Memory
+  * Semaphoren
+  * Message Queues
+* **Neue, Linux-spezifische Systemcalls**. Gewisse Mechanismen in Unix
+  sind steinalt und haben bis heute überlebt, obwohl es keineswegs
+  einfach ist, sie fehlerfrei zu benutzen --- man denke an Signale und
+  Timer. Linux führt die Unix-Tradition "Everything is a File"
+  konsequent weiter und verpasst genau diesen Mechanismen ein
+  alternatives Interface, das genau auf diesem Prinzip beruht.
+  * Signal Handling mit `signalfd`
+  * Timer mit `timerfd_create`
+  * `eventfd`
+  
+Empfohlene Vorkenntnisse
+------------------------
+
+Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
+Grundkenntnis des Systems (vgl. Kurs "Linux vom
+Programmierer-Standpunkt: Überblick").

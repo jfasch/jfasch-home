@@ -1,0 +1,17 @@
+<ul class="oss-facts">
+
+  <% if @item[:oss_project] %>
+  <li><a href="<%= @item[:oss_project] %>">Project Page</a></li>
+  <% end %>
+
+  <% if @item[:oss_browse_source] %>
+  <li><a href="<%= @item[:oss_browse_source] %>">Browse Source</a></li>
+  <% end %>
+
+  <% if @item[:oss_download] %>
+  <li><a href="<%= @item[:oss_download] %>">Download</a></li>
+  <% end %>
+  
+</ul>
+
+<%= toc(@item, 2) %>

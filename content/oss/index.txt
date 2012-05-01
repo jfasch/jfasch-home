@@ -1,0 +1,13 @@
+---
+title: "Open Source"
+menu: true
+target_name: open-source
+---
+
+jjjj write more here
+
+* <%= link_to_name('Confix', 'confix') %>
+  * add small flash sections/articles like relocated headers
+* <%= link_to_name('Unit Test Framework', 'jf-unittest') %>
+  * relocated headers are no more -> simplify howto
+* <%= link_to_name('Linux Tools', 'jf-linuxtools') %>

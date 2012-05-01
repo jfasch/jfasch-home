@@ -1,0 +1,47 @@
+---
+title: "Embedded Linux"
+target_name: course-embedded
+menu_order: 50
+
+tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall', 'embedded', 'bootloader', 'kernel', 'rootfilesystem', 'flash' ] 
+
+context: course
+course_duration: 2
+course_type: inhouse
+---
+
+Embedded Linux
+==============
+
+Linux hat sich in den letzten Jahren zu einer erstzunehmenden
+Alternative zu herkömmlichen Embedded Betriebssystemen
+entwickelt. Einerseits sind die Anforderungen an Embedded Plattformen
+gestiegen (USB, TCP/IP), sodass es ganz logisch erscheint, die gleiche
+Codebasis, die auf Desktop-PCs und Servern schon lange Einsatz findet,
+auch in kleineren Geräten einzusetzen. Andererseits entspricht Linux
+mittlerweile auch Anforderungen, die speziell aus dem Embedded-Bereich
+kommen, wie z.B. Echtzeitfähigkeit.  Ziel des Kurses ist es, ein
+Verständnis des Aufbaus eines Linux-Systems zu vermitteln, und den
+Teilnehmern die Möglichkeit zu geben, aus Alternativen (deren es unter
+Linux viele gibt) zu wählen.
+
+Kursinhalt
+----------
+
+* **Bootprozess**. Bootloader, Kernel, Root Filesystem. Anhand des
+  Bootprozesses, der von einem "regulären" Linux-PC bekannt ist,
+  werden die einzelnen Komponenten und deren Aufgaben betrachtet. Nach
+  und nach werden alternative Wege herausgearbeitet, um schliesslich
+  bei U-Boot, Busybox, und dem Thema "Der Prozess mit der PID 1" (oder
+  "1000 Möglichkeiten, ein System zu booten") zu landen.
+* **Kernel-Konfiguration und -Build**
+* **Speichermedien und Filesystemtypen**. Das Linux MTD ("Memory
+  Technology Devices" - Flash) Subsystem und die darauf basierenden
+  Flash-Filesysteme werden erläutert. Kurz wird auch auf die bekannten
+  Block-basierten Filesysteme wie ext2, ext3, etc. eingegangen.
+
+Empfohlene Vorkenntnisse
+------------------------
+
+Eine Grundkenntnis des Systems wird vorausgesetzt (vgl. <%=
+link_to_name('Einführungskurs', 'course-system-basics') %>).

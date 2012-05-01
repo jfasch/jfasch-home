@@ -1,0 +1,415 @@
+---
+title: "JF-Unittest"
+menu: false
+menu_order: 20
+target_name: jf-unittest
+
+context: oss
+oss_project: http://sourceforge.net/projects/jf-unittest/
+oss_browse_source: http://jf-unittest.git.sourceforge.net/git/gitweb-index.cgi
+oss_download: http://sourceforge.net/projects/jf-unittest/files/
+---
+
+Introductory blahblah
+=====================
+
+jf-unittest is a piece of code that has no dependencies on any other
+packages, and thus it serves as a subject for the most basic
+introductory example. You need not install anything but a C++
+compiler.
+
+Get the Source
+--------------
+
+Before we begin, we have to retrieve the package source code. The
+source as seen in the repository is what has been written by hand,
+line by line. This is what we want, and checking it out from the
+repository is thus the preferred way. An alternative, if you don't
+have SVN installed or are otherwise unable to connect to the repo, is
+to download a distribution package and clean out all the generated
+files.
+
+I chose to name the source directory `/home/jfasch/src/jf-unittest`,
+and will refer to that name throughout the text.
+
+Alternative 1: Check out
+------------------------
+
+Check out the source from the subversion repository,
+
+    $ pwd
+    /home/jfasch/src
+    $ svn co http://confix.svn.sourceforge.net/svnroot/confix/unittest/trunk jf-unittest
+
+Alternative 2: Download release
+-------------------------------
+
+Go to the [jf-unittest download
+page](http://sourceforge.net/projects/jf-unittest/files/)
+and pick the most recent release. To give the baby a name, I stored it
+as `~/download/jf-unittest-1.0.2.tar.bz2`. Unpack it into the
+directory from above. This needs a little tar fiddling to not unpack
+the tar file's root directory, `jf-unittest-1.0.2`. We do this to get
+the same directory name as if we had checked the package out - no
+deeper reasons.
+
+    $ pwd
+    /home/jfasch/src
+    $ mkdir jf-unittest
+    $ tar -C jf-unittest --strip-components 1 -jxf ~/download/jf-unittest-1.0.2.tar.bz2
+
+Next, as the package contains generated files that we do not (yet)
+want to see, we have to clean them.
+
+    $ cd jf-unittest
+    $ rm acinclude.m4 aclocal.m4 config.h.in configure configure.ac jf-unittest.repo
+    $ rm -r confix-admin
+    $ find . -name Makefile.am -o -name Makefile.in|xargs rm
+    $ cd ..
+
+The Package structure
+=====================
+
+Now that we can see the source, we should definitely do so to get a
+grasp of what we're going to build.
+
+Directories
+-----------
+
+In `~/src/unittest`, you see the following directories, listed
+together with the files that are used to govern the build.
+
+    .
+    |-- Confix2.dir
+    |-- Confix2.pkg
+    |-- basics
+    |   |-- Confix2.dir
+    |   `-- tests
+    |       `-- Confix2.dir
+    |-- include
+    |   `-- jf
+    |       `-- unittest
+    |           |-- Confix2.dir
+    |           `-- tests
+    |               `-- Confix2.dir
+    |-- tests
+    |   `-- Confix2.dir
+    `-- treerunner
+        `-- Confix2.dir
+
+* `include`. A hierarchy of header files, sorted into subdirectories
+  according to the namespaces that they contain. *Normally, this is
+  not necessary* - Confix suggests you leave your header files in the
+  directory where the C files are, and takes care and applies a little
+  magic to make things right. Here, in jf-unittest, we have a separate
+  header file hierarchy because somebody wanted to use the package
+  with an inferior tool (Visual Studio). See the next package in the
+  example chain, <%= link_to_name('jf-linuxtools', 'jf-linuxtools')
+  %>, for examples on how to use Confix the right way (obviously
+  nobody wants to build <%= link_to_name('jf-linuxtools',
+  'jf-linuxtools') %> with Visual Studio).
+* `basics`. Contains the test case and the test suite implementations
+  of the unit test framework. Although not relevant to our job of
+  building the damn thing, what's relevant is that all other code
+  relies upon it. A library is built here, and unit tests will pull it
+  in.
+* `treerunner`. A test runner that outputs test output in a tree form,
+  textually, indented according to the test hierarchy.
+* `tests`. A test executable, accumulating the different test suites
+  in the package.
+
+Nodes and Interdependencies
+---------------------------
+
+The source code in the package, like in any other package, is
+structured into directories, and each directory is a linked entity - a
+library (static libraries are not exactly linked entities, but you get
+the idea) or one or more executables. As executables link against
+libraries, and libraries refer to other libraries, we can draw a
+dependency graph of the package. The only directory in the package
+that builds an executable is `tests`, shown below as
+`jf-unittest.tests`. It contains the package's test program which
+aggregates together a few test suites and test cases. (The package
+contains no really useful programs - its main contribution to the
+world is a test framework which consists of two libraries.)
+
+`jf-unittest.tests` refers to the test suite of the core library,
+which is contained in the directory `basics/tests`, shown in the image
+as `jf-unittest.basics.tests`. It uses the tree test runner from
+`jf-unittest.treerunner` to execute that test suite. Everybody uses
+the `jf-unittest.basics` library which has the core test framework
+logic.
+
+Unfortunately, as I mentioned, the package has the header files in a
+separate `include` directory - this is what the extra dependencies
+`jf-unittest.include.jf.unittest` and
+`jf-unittest.include.jf.unittest.tests` reflect.
+
+<img src="unittest.gif"/>
+
+Build Instructions
+------------------
+
+Let's make a quick tour of the various files in the package that
+instruct Confix what to build, and how.
+
+### Package description
+
+The file `Confix2.pkg` in the package's root directory contains
+overall package descriptions.
+
+    PACKAGE_NAME('jf-unittest')
+    PACKAGE_VERSION('1.0.2')
+    from libconfix.setups.explicit_setup import ExplicitSetup
+    SETUPS([ExplicitSetup(use_libtool=True)])
+
+The first two lines obviously have influence on how the package is
+called. This is relevant in several places, for example the name of
+the tarball that is generated by `make dist` (but more on that later).
+
+The import statement (yes, it is Python) pulls in the definition of a
+`Setup` class, `ExplicitSetup`, which is used in the last
+line. `ExplicitSetup` forces the user to list the files that are
+built, rather than automatically recognizing stuff by default (and -
+my opinion - begging for errors).
+
+### Directory Description
+
+A directory description file `Confix2.dir` contains instructions for
+Confix to descend into child directories, build files, and to
+aggregate files into either a library or one or more executables.
+
+Let's start with the latter; `tests/Confix2.dir` contains instructions
+to build three executables.
+
+    EXECUTABLE(center=CXX('stage1.cc'),
+               exename='stage1',
+               what=EXECUTABLE_CHECK)
+    EXECUTABLE(center=CXX('stage2.cc'),
+               exename='stage2',
+               what=EXECUTABLE_CHECK)
+    EXECUTABLE(center=CXX('stage3.cc'),
+               exename='stage3',
+               what=EXECUTABLE_CHECK)
+
+The reason for building three executables instead of just one is fun
+(bootstrapping a test framwork that tests itself). Anyway, an
+executable has
+
+* a `center`, usually the file that defines `main()`.
+* a `name`. If none is specified, Confix mangles one.
+* a reason (`what`). Here the reason is "check", which instructs
+  Automake to not install the executable, but to execute it when the
+  user calls `make check`.
+* `members`. None are listed here; if we had ones, one would say
+  `members=[CXX('a_file.cc'), H('a_file.h')]`.
+
+Another one, `basics/Confix2.dir`, builds a library, and descends into
+a subdirectory,
+
+    DIRECTORY(['tests'])
+    h = [
+        # sadly, we have to have our headers in include/jf/unittest. see
+        # there for why.
+        ]
+    cc = [
+        'test_case.cc',
+        'test_suite.cc',
+        'simple_test_result.cc',
+        ]
+    LIBRARY(members=[H(filename=f, install=['jf', 'unittest']) for f in h] + [CXX(filename=f) for f in cc])
+
+Like `EXECUTABLE()`, `LIBRARY()` has members. What's interesting is
+the `install` parameter to `H()`. It instructs Confix to install a
+header file so that it is included like `#include
+<jf/unittest/file.h>`, even by files in fellow directories in the same
+package. Again, sadly, we do not have header files here.
+
+Last not least, if you want, here's how to place headers outside of
+the directory where the C is. The jf-unittest package does it, so I
+explain. As we will see, Confix maintains *dependencies* between
+directories, and since the headers belong to the C, one has to declare
+that fact.
+
+    for h in [
+        'api.h',
+        'cleanliness.h',
+        'cleanliness_fwd.h',
+        'failure.h',
+        'simple_test_result.h',
+        'test.h',
+        'test_case.h',
+        'test_case_fwd.h',
+        'test_fwd.h',
+        'test_result.h',
+        'test_result_fwd.h',
+        'test_suite.h',
+        'test_suite_fwd.h',
+        ]:
+        H(filename=h, install=['jf', 'unittest'], relocate_to=['basics'])
+        pass
+    
+    for h in [
+        'tree_test_result.h',
+        'tree_test_runner.h',
+        ]:
+        H(filename=h, install=['jf', 'unittest'], relocate_to=['treerunner'])
+        pass
+    
+    DIRECTORY(['tests'])
+
+The first bunch of headers is ''relocated'' from the
+`include/jf/unittest` directory to the `basics` directory. The second
+is relocated to `treerunner`. This has the effect that, for example,
+directories that `#include <jf/unittest/test_case.h>` automatically
+reference the library that is built in `basics`
+(`treerunner/tree_test_result.cc` does it. This is why there is an
+edge from `jf-unittest.treerunner` to `jf-unittest.basics` in the
+graph above.
+
+Generating Automake Files
+=========================
+
+So far, we have only seen handwritten code - C++, and a little Python
+for the package metadata. As we will be building the package with
+Automake, we have to generate all the necessary files. This is the
+only thing that Confix really does. Everything else (bootstrapping,
+configuring, and building) is trivial and can easily be done by hand.
+
+    $ pwd
+    /home/jfasch/src/unittest
+    $ confix2.py --output
+
+This was easy. Let's see what has been generated (the tree output
+below lists the new files).
+
+    .
+    |-- configure.ac
+    |-- confix-admin
+    |   `-- Makefile.am
+    |-- acinclude.m4
+    |-- jf-unittest.repo
+    |-- Makefile.am
+    |-- basics
+    |   |-- Makefile.am
+    |   `-- tests
+    |       `-- Makefile.am
+    |-- include
+    |   `-- jf
+    |       `-- unittest
+    |           |-- Makefile.am
+    |           `-- tests
+    |               `-- Makefile.am
+    |-- tests
+    |   `-- Makefile.am
+    `-- treerunner
+        `-- Makefile.am
+
+These files are normally written by the developer. Here in this small
+package, they are not significantly larger or more complicated than
+the `Confix2.pkg` and `Confix2.dir` files.
+
+But take a look into `tests/Makefile.am`. You'll likely notice the
+linker lines that Confix generated,
+
+    stage1_LDADD = -L$(top_builddir)/treerunner \
+        -L$(top_builddir)/basics/tests -L$(top_builddir)/basics \
+        -ljf-unittest_treerunner -ljf-unittest_basics_tests \
+        -ljf-unittest_basics $(CONFIX_BACKSLASH_MITIGATOR)
+
+Here in this small package, there are only three libraries involved to
+build the stage1 executable. If you add a fourth library, without
+Confix you'd have to add it to the stage1 link line manually, and also
+to the stage2 and stage3 lines which are not shown here.
+
+You can imagine how tedious it can become to keep the linker lines
+manually consistent when the project becomes larger, or when you
+restructure your code and split libraries, for example.
+
+Finishing the package
+=====================
+
+Now that we have all that the Autotools require to massage the
+package, lets see how this is done.
+
+    $ confix2.py --prefix=/home/jfasch/installed-packages --bootstrap
+    bootstrapping in /home/jfasch/src/unittest ...
+    aclocal -I /home/jfasch/work/confix/trunk/confix/share/confix/autoconf-archive/m4src ...
+    autoheader ...
+    automake --foreign --add-missing --copy ...
+    configure.ac:6: installing `confix-admin/config.guess'
+    configure.ac:6: installing `confix-admin/config.sub'
+    configure.ac:3: installing `confix-admin/install-sh'
+    configure.ac:7: installing `confix-admin/missing'
+    basics/Makefile.am: installing `confix-admin/depcomp'
+    autoconf ...
+
+A whole bunch of new files have been generated which I don't bother to
+explain. The package is now in the shape that the end user sees. If
+you chose to download a tarball of jf-unittest rather than checking
+out from SVN, then you've seen exactly the current set of files as you
+see them now.
+
+Consequently, we proceed as if we were a regular user who sees only
+`configure` and `make install`. Automake suggests to not perform the
+compilation inside the source tree, and we behave.
+
+    $ mkdir -p ~/build/unittest
+    $ cd ~/build/unittest
+    $ /home/jfasch/src/unittest/configure --prefix=/home/jfasch/installed-packages
+    $ /home/jfasch/src/unittest/configure --prefix=/home/jfasch/installed-packages
+    checking for a BSD-compatible install... /usr/bin/install -c
+    checking build system type... i686-pc-linux-gnu
+    (...)
+    $ make
+    (...)
+
+The package is a unittest framework which can test itself by using
+itself and Automake's `make check` feature. So, let's make sure
+everything is fine, before installing the package.
+
+    $ make check
+    (...more compilation...)
+    PASS: stage1
+    PASS: stage2
+    + jf::unittest::tests::Stage2Suite
+      + jf::unittest::tests::SetupTeardownSuite
+        - jf::unittest::tests::SetupTeardownSuccess...ok
+        - jf::unittest::tests::SetupTeardownSetupFailure...ok
+        - jf::unittest::tests::SetupTeardownSetupError...ok
+        - jf::unittest::tests::SetupTeardownRunFailure...ok
+        - jf::unittest::tests::SetupTeardownRunError...ok
+        - jf::unittest::tests::SetupTeardownTeardownFailure...ok
+        - jf::unittest::tests::SetupTeardownTeardownError...ok
+      + jf::unittest::tests::EnterLeaveSuite
+        - jf::unittest::TestEnterLeave...ok
+        - jf::unittest::SuiteEnterLeave...ok
+      + jf::unittest::tests::CleanlinessCheckSuite
+        - jf::unittest::tests::CleanlinessTest...ok
+        - jf::unittest::tests::UncleanlinessTest...ok
+        - jf::unittest::tests::MixedCleanlinessTest...ok
+        - jf::unittest::tests::RecursiveMixedCleanlinessTest...ok
+      + jf::unittest::tests::AssertSuite
+        - jf::unittest::tests::AssertThrowsTest...ok
+    ------------------------
+    #Success:          14
+    #Failures:         0
+    #Errors:           0
+    #Tests run:        14
+    #Suites entered:   5
+    #Asserts entered:  60
+    ------------------------
+    PASS: stage3
+    ==================
+    All 3 tests passed
+    ==================
+    make[2]: Leaving directory `/home/jfasch/build/unittest/tests'
+    make[1]: Leaving directory `/home/jfasch/build/unittest/tests'
+
+Now that we know all is well, we can install.
+
+    $ make install
+
+A release tarball is prepared like this.
+
+    $ make dist-bzip2

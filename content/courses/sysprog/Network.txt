@@ -1,0 +1,64 @@
+---
+title: "Netzwerk"
+menu_order: 30
+target_name: course-network
+
+tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall',
+       'sockets', 'tcp', 'udp', 'socket can', 'select', 'poll', 'epoll']
+
+context: course
+course_duration: 2
+course_type: inhouse
+---
+
+Netzwerk-Programmierung unter Linux
+===================================
+
+Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
+in das Grundprinzip "Everything is a File" ein. Das Socket-Interface
+stellt ein leicht zu benutzendes Programmierparadigma dar, das nicht
+auf TCP/IP beschränkt ist, sondern auf eine Vielzahl anderer
+Netzwerkprotokolle anwendbar ist.
+
+Kursinhalt
+----------
+
+* **Grundlagen der Netzwerkprogrammierung**. Das Socket-Interface ---
+  seine Datentypen und Systemcalls --- wird erklärt, ohne jedoch noch
+  auf ein spezielles Medium einzugehen.
+  * Stream- und Datagramm-Sockets.
+  * Adressfamilien: jedes "Medium" hat seine eigene Auffassung der
+    Adresse eines Endpoints. Beispielsweise kennt man von IPv4 die
+    vier Nummern wie 192.168.1.2 --- andere Medien wie Bluetooth haben
+    andere Adressen, die aber mit den gleichen System Calls bearbeitet
+    werden.
+* **TCP/IP**. Netzwerkprogrammierung am Internet.
+  * TCP (Stream-Verbindungen) und UDP (Datagramme)
+  * Hilfsfunktionen, DNS-Lookup
+  * IPv4 und IPv6
+* **UNIX Domain Sockets**. Prozesse, die nur lokal (innerhalb eines
+  Systems) kommunizieren, verwenden UNIX Domain Sockets. Sie
+  funktionieren gleich wie ihre TCP/IP-Äquivalente, nur sind sie
+  ungleich ressourcenschonender, und ihre Adressen sind Pfadnamen im
+  Filesystem.
+* **Verschiedene: CAN, Bluetooth**. Bluetooth bietet ungefähr die
+  gleichen Möglichkeiten wie TCP/IP und ist konsequenterweise auch mit
+  Hilfe des Socket-Interfaces bedienbar. CAN (Controller Area Network)
+  war lange Zeit nur über Controller-spezifische Driver und deren
+  Interfaces bedienbar; mittlerweise wurde dieses Medium, wenngleich
+  *broadcast-only*, in das Socket-Interface eingepasst und ist
+  dementsprechend angenehm zu verwenden.
+* **IO-Multiplexing mit `select/poll/epoll`**. Eine Möglichkeit, in
+  einem Prozess mit mehreren Verbindungen umzugehen, ist, jeder
+  Verbindung einen Thread zu widmen --- und sich dadurch den damit
+  verbundenen Gefahren auszusetzen. IO-Multiplexing ist eine
+  alternative Methode, mit mehreren Verbindungen umzugehen --- man
+  reagiert auf *IO-Events* wie "Daten können von einem Socket gelesen
+  werden", oder "Daten können auf ein Socket geschrieben werden".
+
+Empfohlene Vorkenntnisse
+------------------------
+
+Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
+Grundkenntnis des Systems (vgl. <%= link_to_name('Einführungskurs',
+'course-system-basics') %>).

@@ -1,0 +1,39 @@
+---
+title: "Subversion"
+menu_order: 60
+target_name: course-svn
+
+tags: ['linux', 'kurs', 'schulung', 'svn', 'subversion',
+       'versionskontrolle', 'branch', 'merge']
+
+context: course
+course_duration: 1
+course_type: inhouse
+---
+
+Subversion: eine Einführung
+===========================
+
+Versionskontrolle ist bei größeren (ich behaupte: bei allen) Projekten
+unumgänglich notwendig. Releasemanagement und parallele Entwicklung
+kann man anders nicht betreiben. Subversion hat sich mittlerweile als
+hervorragende Alternative zu großkopferten kommerziellen Systemen wie
+Clearcase oder Perforce etabliert, und hat das ebenfalls als Open
+Source erhältliche CVS lange als dessen Nachfolger abgelöst.
+
+Kursinhalt
+----------
+
+* Arbeitsweise: Copy-Modify-Merge statt Lock-Modify-Unlock
+* Einfacher Workflow: "Working Copy", Checkout, Commit, ...
+* Update: Konflikte und deren Bereinigung
+* Branching, Merging, und Tags
+* Releasemanagement-Strategien
+* Einschränkungen
+
+Empfohlene Vorkenntnisse
+------------------------
+
+Fast keine (Subversion wird nicht nur von Programmierern
+eingesetzt). Eine gewisse Vertrautheit mit der Commandline (Shell) ist
+von Vorteil.

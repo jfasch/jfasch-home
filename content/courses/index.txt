@@ -1,0 +1,42 @@
+---
+title: "Schulungen"
+menu: true
+target_name: courses
+---
+
+Schulungen
+==========
+
+<img src="/images/sysprog-bodenseo.jpg" border="0" alt="Kurs im
+Hoeri-Hotel" style="float: right; margin: 10px; border: 0pt none;" />
+
+Jahre des Programmierens haben ihre Spuren hinterlassen --- es hat
+sich einiges an Wissen angesammelt. Vieles davon ist nicht mehr
+relevant (was gut ist); einiges vom Rest habe ich strukturiert und zu
+Schulungsunterlagen verarbeitet.
+
+Ein Großteil des Materials entfällt auf die <%=
+link_to_name('Systemnahe Programmierung', 'courses-sysprog') %> ---
+hier versuche ich, meinen Eindruck der Schönheit eines Linux-Systems
+weiterzugeben. [Auszüge aus dem
+Material](http://www.fh-joanneum.at/aw/home/Studienangebot_Uebersicht/fachbereich_information_design_technologien/swd/Studium/~uqq/SWD_lvdetails/?alvid=4305944553&lan=de)
+unterrichte ich bisweilen auch an der [FH
+Joanneum](http://www.fh-joanneum.at) in Kapfenberg.
+
+Der Rest ist "Beiwerk". Unter Linux hat sich eine grosse Kultur
+entwickelt, was Entwicklungswerkzeuge, Programmiersprachen, und vor
+allem Vorgehensweisen und Geschmack betrifft. Als sehr Linux-lastiger
+Softwareentwickler habe ich mich jahrelang in dieser Kultur bewegt ---
+ich bin praktisch in ihr aufgewachsen. Finden Sie <%=
+link_to_name('hier eine Aufstellung von Kursen aus diesem Bereich',
+'courses-misc') %>.
+
+Mir ist es sehr wichtig, Schulungen ausschliesslich über solche Themen
+anzubieten, in denen ich selbst lange genug tätig bin und in denen ich
+genügend Erfahrung besitze. Zum Beispiel möchte ich gerne eines Tages
+eine Schulung über [Git](http://git-scm.com/) anbieten --- bis dahin
+ist es allerdings noch ein langer Weg. Ich lerne noch.
+
+
+
+

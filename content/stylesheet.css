@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #f30;
+}
+
+a:hover {
+    color: #f90;
+}
+
+/* ---------- header area -----------*/
+#header-area {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+#header-area h1 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+/* ---------- breadcrumbs area -----------*/
+#breadcrumbs-area {
+    top: 70px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* ---------- menu area -----------*/
+ul.menu, ul.menu ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+li.menu {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#menu-area {
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    width: 200px;
+    padding: 20px 20px 0 0;
+    text-align: left;
+}
+
+#menu-area h2 {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+/* ---------- copyright etc area -----------*/
+#copyright-area {
+    position: fixed;
+    top: 400px;
+    left: 20px;
+    width: 200px;
+    padding: 20px 20px 0 0;
+    text-align: left;
+    list-style-type: none;
+}
+
+#copyright-area ul {
+    list-style-type: none;
+}
+
+/* ---------- content area -----------*/
+#content-area {
+    position: absolute;
+    top: 90px;
+    left: 280px;
+    width: 60%;
+}
+
+#content-area h1 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+#content-area h2 {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+#content-area p {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#content-area ul, #content-area ol {
+    margin: 20px;
+}
+
+#content-area li {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#content-area ul li {
+    list-style-type: square;
+}
+
+#content-area pre {
+    border:1px dashed #E1E1E1;
+    color:#333344;
+    background:#FAFAFA;
+    font-family:monospace;
+    overflow:auto;
+    font-size:11px;
+    padding:0.5em;
+}
+
+/* ---------- context area (depends on 'context' attribute of items) -----------*/
+#context-area {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    width: 15%;
+    overflow:auto;
+}
+
+/* ---------- course facts table, as emitted by 'course' context -----------*/
+table.course-facts {
+    border: 1px solid red;
+    background-color: #ffd070;
+}
+
+/* ---------- OSS facts list, as emitted by 'oss' context -----------*/
+ul.oss-facts {
+    border: 1px solid red;
+    background-color: #ffd070;
+    list-style-type: square;
+}
+
+/* ---------- Page TOC, as emitted by 'oss' context and possibly others -----------*/
+ul.toc, ul.toc ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+li.toc {
+    font-size: 14px;
+    line-height: 20px;
+}

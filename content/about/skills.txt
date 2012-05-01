@@ -1,0 +1,45 @@
+---
+title: "Technische Fähigkeiten"
+target_name: skills
+---
+
+Qualifikationen
+===============
+
+* Linux
+  * Netzwerkprogrammierung
+  * Multithreading
+  * Realtime
+  * USB (Host und Device, mit libusb und GadgetFS)
+  * Serielle Protokolle (RS232, RS485)
+  * Portierung von verschiedenen Embedded OS nach Linux
+  * Distributionen: Gentoo, OpenEmbedded.
+  * Bootprozess
+  * Busybox und initramfs
+  * UnionFS/aufs
+  * Treiberentwicklung
+
+* Programmiersprachen
+  * C und C++ (hauptsächlich GNU Toolchain), STL, Boost
+  * Python
+  * Perl
+  * Mono/C#
+
+* Softwareentwicklung
+  * Objektorientierte Programmierung
+  * OOA, OOD
+  * Unit Testing
+  * GUI-Programmierung mit Gtk+ und Qt
+
+* Releasemanagement und Versionskontrollsysteme
+  * Releasemanagementprozesse
+  * Git
+  * SVN
+  * CVS
+  * Clearcase
+
+* Software Build (hauptsächlich C/C++)
+  * Automake
+  * CMake
+  * http://confix.sf.net (mein Open Source Projekt)
+  * Diverse Entwicklungsumgebungen (KDevelop, Eclipse CDT)

@@ -1,0 +1,146 @@
+---
+title: "Confix"
+menu: false
+menu_order: 10
+target_name: confix
+
+context: oss
+oss_project: http://sourceforge.net/projects/confix/
+oss_browse_source: http://confix.svn.sourceforge.net/viewvc/confix/confix/
+oss_download: http://sourceforge.net/projects/confix/files/confix/
+---
+
+Introduction
+============
+
+Build tools such as [Automake](http://www.gnu.org/software/automake/),
+[CMake](http://www.cmake.org/), or [SCons](http://www.scons.org/), try
+to shield the unfortunate C or C++ programmer from crafting compiler
+and linker commandlines for myriads of different compilers and
+compiler versions. Each of these tools has a slightly different focus
+- some prefer cross-platform features, and some focus on fully
+supporting all of the Unices. Each is unbeatable in doing its
+job. Basically, all you have to tell them is, for example, "Compile
+these files as C, and make a library out of them!", and they do what
+you want.
+
+Automake, CMake, and SCons do not, however, help you in managing your
+project. All of us know that, once the project has grown beyond a
+certain size, restructuring it can become a nightmare. Even moving one
+header file can break the build for a day or two, since everybody has
+to adjust include paths. Or, even worse, consider you split a library
+into two or three separate libraries because it has acquired too many
+responsibilities over time - you'd have to instruct everyone who has
+used the library about the new structure. (People often argue that a
+project's structure does not contribute any quality measure, and that
+the time spent on the structure be better spent on getting the code
+right. This is certainly a valid view of the matter, but it's a
+different story, and I don't argue against. Anyway, if you do not care
+about structure, then you should only be reading on if you want to use
+the features of Automake but don't want to learn its damn syntax.)
+
+Project structure maintenance is of course but one of Confix's
+features, although the strongest. The following list is a rough
+compilation of things that Confix can do for the programmer.
+
+Automake Input File Generation
+------------------------------
+
+Automake is one of the most widely used build tools in the Unix Open
+Source community. Everybody who likes hanging around there knows the
+configure && make && make install dance, the hallmark of
+Automake. But, as comfortable as it is for the end user who is in
+charge of compiling and installing a package, as odd it is for the
+maintainer of the package. Confix tries to take away the complexity
+from the build instructions, and defines it own minimal set of
+functions which are mapped onto the Automake language. (Actually,
+Confix project files are written in Python, so chances are you don't
+have to learn yet another language).
+
+Automatic Include Path
+----------------------
+
+Maintenance of the include path that has to be set when compiling
+source code is one of the great challenges in build
+administration. You have to take care that you point the compiler in
+every directory that contains header files needed for the
+compilation. This is often accomplished in a trial and error kind of
+way. More than that, one often faces the issue of leftover directories
+in the include path - ones that *did* contain needed header files way
+in the past, but which are either not needed for the compilation
+anymore, or which have been moved. As a consequence, include paths
+tend to grow rather than shrink. Note that this include path problem
+is one of the reasons why project structures tend to become a maze -
+the cost of moving files around rises with the size of the
+project. Confix knows which compilation needs which header files (by
+simply parsing the files that are subject to compilation), and can
+match this information against the location where these headers
+are. This way, at the heart of its implementation, it maintains a
+graph which contains enough information to be able to compose a
+correct include path for every compilation - without requiring the
+programmer to do anything.
+
+Automatic Linker Line
+---------------------
+
+Placing the libraries you need on the linker command line is a task
+which is at least as tedious as composing a correct include path. In
+addition to determining all the libraries that you need, you have to
+take care to place them on the linker command line in the correct
+order (most linkers are very particular about open references pointing
+in the wrong direction). Needless to say that one would rather refrain
+from changing the library structure when he expects linker lines
+breaking and people getting annoyed. Confix solves this problem
+similar to the include path problem described above. As it knows who
+needs what, it is not difficult to compose a correct linker line -
+again without demanding anything from the programmer (except to keep
+reference cycles out of the project, but this is a matter of hygiene
+anyway).
+
+Inter Package Dependencies
+--------------------------
+
+For various reasons - project size, organizational, or simply taste
+(to foster good interfaces, for example) - it might make sense to
+split a big project into several smaller ones that are independently
+maintained. With Automake, the granularity of a project is the unit
+with which one does the `configure && make && make install` dance. A
+project is finally made public by saying make install, and this is how
+project teams communicate changes: one team *installs* a tested
+version of their project (or releases it for installation), and the
+other team uses it. With Confix, you split a project by moving files,
+and nothing else (well almost).
+
+Lots of other things
+--------------------
+
+A lot of Confix's energy goes into fighting the overhead of project
+structure maintenance (you guessed it - I'm a fan). Here's a short
+summary of the other - minor - things it can do.
+
+* **Location independent subdirectory installs.** You can make any
+  header visible as `<subdir/file.h>`, without putting it into a
+  directory subdir.
+* **Transparent inclusion of Autoconf checks.** If one project X
+  includes an Autoconf check for some library, for example, another
+  project that uses project X does not have to include this same check
+  to make things work. This is done automatically by Confix. If you
+  don't know what this means, then it doesn't matter.
+* (To be continued.)
+
+Other Pages
+===========
+
+* <%= link_to_name('Installation', 'confix-install') %>
+
+Examples
+========
+
+* <%= link_to_name('jf-unittest', 'jf-unittest') %>
+* <%= link_to_name('jf-linuxtools', 'jf-linuxtools') %>
+
+License
+=======
+
+Confix is licensed under the [GNU Lesser General Public
+License](http://www.gnu.org/licenses/lgpl.html).

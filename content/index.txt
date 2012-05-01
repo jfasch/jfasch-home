@@ -1,0 +1,40 @@
+---
+title: "Home"
+target_name: home
+tags:
+- consulting
+- linux
+---
+
+Linux und Open Source Entwicklung
+=================================
+
+Programmieren ist mein Hauptbetätigungsfeld. Ich biete verschiedene
+Dienstleistungen an, die sich im Wesentlichen um folgende "Hard Facts"
+ansiedeln.
+
+* Systemnahe Softwareentwicklung
+* Portierung nach Linux
+* Server- und Embeddedentwicklung
+* Multithreading und Realtime
+* Hardwareintegration
+* Übertragungsprotokolle
+* Anpassungen und Fixes in Open-Source-Paketen
+* Rootfilesystem-Entwicklung
+
+Meine Dienstleistungen umfassen natürlich auch Beratung und
+Durchführung in begleitenden Disziplinen wie
+
+* Versionskontrolle und Releasemanagement
+* Buildmanagement
+* Unittests
+* OO Analyse und Design
+
+Schulungen
+==========
+
+Zu vielen der oben genannten Themen biete ich auch Schulungen an, die
+sowohl als flexible Inhouse-Veranstaltungen in Ihrer Firma als auch
+als von Einzelpersonen zu besuchende vorgefertigte Termine zu buchen
+sind. Finden Sie <%= link_to_name('hier eine detaillierte
+Aufstellung', 'courses') %>.

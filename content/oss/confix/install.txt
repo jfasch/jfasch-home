@@ -1,0 +1,44 @@
+---
+title: "Confix: Installation"
+menu: true
+target_name: confix-install
+
+context: oss
+oss_project: http://sourceforge.net/projects/confix/
+oss_browse_source: http://confix.svn.sourceforge.net/viewvc/confix/confix/
+oss_download: http://sourceforge.net/projects/confix/files/confix/
+---
+
+You can download releases [on the Sourceforge project
+site](https://sourceforge.net/project/showfiles.php?group_id=68975). If
+no release is recent enough, you may always checkout a [development
+version from
+Subversion](http://sourceforge.net/svn/?group_id=68975). You can also
+[browse the Subversion repository without having a Subversion client
+installed](http://svn.sourceforge.net/viewvc/confix/).
+
+Follow the instructions in the [INSTALL
+file](http://confix.svn.sourceforge.net/viewvc/confix/confix/trunk/INSTALL?view=markup),
+or read on.
+
+    $ pwd
+    /home/jfasch/download
+    $ tar jxf Confix-2.2.0.tar.bz2
+    $ cd Confix-2.2.0
+    $ python setup.py install --prefix=${HOME}/sandbox
+
+Then, provided you gave a non-default prefix (when you omit
+`--prefix`, the package goes to `/usr/local`), you should update your
+environment accordingly. For example, you could add the following
+lines to your `~/.bashrc`:
+
+    PREFIX=${HOME}/sandbox
+    export PYTHONPATH=${PYTHONPATH}:${PREFIX}/lib/pythonA.B/site-packages
+    export PATH=${PATH}:${PREFIX}/bin
+
+Make sure A.B corresponds to the version of Python that you use, such as 2.4.
+
+That's it, you're ready to use Confix. Try out the installation by
+calling up the command line help:
+
+    $ confix2.py --help
