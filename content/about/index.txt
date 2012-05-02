@@ -113,9 +113,9 @@ Selbstständigkeit
 
 Schlussendlich war mir einiges klar:
 
-* Ich kann gut mit Leuten zusammenarbeiten, Führungspositionen kann ich
-  jedoch höchstens in technologischer Hinsicht bekleiden.
-* Abteilungsleitung ist nichts für mich.
+* Ich kann gut mit Leuten zusammenarbeiten.
+* Führung von Mitarbeitern schlägt bei mir leicht in Richtung
+  Techologie aus, weg vom Organisatorischen.
 * Programmieren macht Spaß.
 * Ich brauche Abwechslung und muss von Zeit zu Zeit Neues lernen.
 
