@@ -1,8 +1,6 @@
 include Nanoc::Helpers::LinkTo
 
-require 'time'
-
-def menu(identifier, params={})
+def menu(identifier)
   # Get other item
   other = @items.find { |i| i.identifier == identifier }
 
@@ -15,16 +13,16 @@ def menu(identifier, params={})
 
   res = '<li>'
 
-  link_text = other[:short_title] || other[:title] || other.identifier
+  link_text = other[:title] || other.identifier
 
   # Add link itself
-  res += link_to_unless_current("<span>#{link_text}</span>", other)
+  res += link_to_unless_current(link_text, other)
 
   # if submenus are desired for other, then sort children according to
   # their :menu_order. items without :menu_order come at the end.
   children_with_order = {}
   children_without_order = []
-
+  
   if in_other_tree && other[:menu]
     other.children.each do |c|
       if c[:menu_order].nil?
@@ -46,7 +44,7 @@ def menu(identifier, params={})
     res += "</ul>\n"
   end
   
-  res << '</li>'
+  res += '</li>'
 
   res
 end

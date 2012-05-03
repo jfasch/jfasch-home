@@ -35,11 +35,11 @@ and will refer to that name throughout the text.
 Alternative 1: Check out
 ------------------------
 
-Check out the source from the subversion repository,
+Clone the git repository like so:
 
     $ pwd
     /home/jfasch/src
-    $ svn co http://confix.svn.sourceforge.net/svnroot/confix/unittest/trunk jf-unittest
+    $ git clone git://jf-unittest.git.sourceforge.net/gitroot/jf-unittest/jf-unittest
 
 Alternative 2: Download release
 -------------------------------
@@ -76,7 +76,7 @@ grasp of what we're going to build.
 Directories
 -----------
 
-In `~/src/unittest`, you see the following directories, listed
+In `~/src/jf-unittest`, you see the following directories, listed
 together with the files that are used to govern the build.
 
     .

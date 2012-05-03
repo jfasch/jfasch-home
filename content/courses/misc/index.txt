@@ -8,13 +8,11 @@ menu: true
 menu_order: 20
 ---
 
-jjj das da noch fertig machen
-
 Verschiedenes
 =============
 
-In Kooperation mit Schulungsunternehmen biete ich auch folgende Themen
-an.
+In Kooperation mit [Mathias Kettner](http://mathias-kettner.de) biete
+ich auch folgende Themen an.
 
 * [Softwareentwicklung unter Linux für Nicht-Linuxer](Kettner-Softwareentwicklung)
 * [Linux from Scratch](Kettner-LFS)

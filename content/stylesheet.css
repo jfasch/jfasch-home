@@ -49,6 +49,21 @@ a:hover {
 }
 
 /* ---------- menu area -----------*/
+
+/* green for all li within .menu */
+/*
+.menu li {
+    background-color: green;
+}
+*/
+
+/* 3rd level: green for li in li in li within .menu */
+/*
+ul.menu li li li {
+    background-color: green;
+}
+*/
+
 ul.menu, ul.menu ul {
     list-style-type: none;
     margin-left: 10px;

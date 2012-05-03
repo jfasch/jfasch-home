@@ -4,10 +4,25 @@ menu: true
 target_name: open-source
 ---
 
-jjjj write more here
+Over the years, being an engineer at heart, I had to do fun projects
+in my spare time. Most of these revolve around my obsession --- err
+profession --- of build management and software development in
+general.
 
-* <%= link_to_name('Confix', 'confix') %>
-  * add small flash sections/articles like relocated headers
-* <%= link_to_name('Unit Test Framework', 'jf-unittest') %>
-  * relocated headers are no more -> simplify howto
-* <%= link_to_name('Linux Tools', 'jf-linuxtools') %>
+* <%= link_to_name('Confix', 'confix') %> is a build tool written in
+  Python. With a very simple build definition it generates build
+  definitions for the lower-level tools
+  [Automake](http://www.gnu.org/software/automake/) and
+  [CMake](http://www.cmake.org/).
+* <%= link_to_name('jf-unittest', 'jf-unittest') %> is a simple yet
+  complete unit test framework written in C++. I hear you: "Why would
+  the world need yet another unit test framework?". Answer: for C++
+  there is nothing out there that satisfies me. Your mileage may vary
+  --- perhaps your project depends on so many things already that a
+  unit test framework *and its own dependencies* don't matter. I don't
+  like dependencies, and <%= link_to_name('jf-unittest',
+  'jf-unittest') %> has none.
+* <%= link_to_name('jf-linuxtools', 'jf-linuxtools') %> is a package
+  that contains small utilities (and their unit tests) to accompany
+  <%= link_to_name('the course in systems programming',
+  'courses-sysprog') %>.
