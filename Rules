@@ -39,16 +39,31 @@ route '/stylesheet/' do
   '/style.css'
 end
 
+route '/htaccess/' do
+  raise "What\'s this?" unless item[:extension] == 'dotfile'
+  '/.htaccess'
+end
+
+route '/errors/404/' do
+  '/errors/404.html'
+end
+
+# redirect toplevel access to /de/ language tree. the redirect page
+# cannot be named index.html in the source (this name is already taken
+# by the "virtual" root page in the language), so we have to route it
+# into that place.
+route '/redirect/' do
+  '/index.html'
+end
+
 route '*' do
-  print item.identifier + "\n"
   if item.binary?
-    # Write item with identifier /foo/ to /foo.ext
+    # binary item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
-  elsif item.identifier == '/redirect/'
-    '/index.html'
   else
-    # Write item with identifier /foo/ to /de/foo/index.html
-    '/de/' + item.identifier + 'index.html'
+    # for now (until proper multilanguage is in place) all regular
+    # pages go to the /de/ language tree.
+    '/de' + item.identifier + 'index.html'
   end
 end
 
