@@ -6,11 +6,12 @@ target_name: contact
 Jörg Faschingbauer
 ------------------
 
-* <a href="mailto:kd@it-works.co.at">jf@faschingbauer.co.at</a>
+* <a href="mailto:jf@faschingbauer.co.at">jf@faschingbauer.co.at</a>
 * &#9990; +43(0)664 5783814
 * [GPG Key](http://pgp.mit.edu:11371/pks/lookup?op=vindex&search=0xCBDE4DB7FA0A759E)
 * Bergwirtstrasse 10<br/>
   8075 Hart bei Graz
+* UID/VAT: ATU63522469
 
 <iframe
    width="300"
