@@ -14,8 +14,8 @@
 #   item, use the pattern "/about/*/"; "/about/*" will also select the parent,
 #   because "*" matches zero or more characters.
 
-compile '/stylesheet/' do
-  # don't filter or layout
+# don't filter or layout style sheets
+compile '/barebone/' do
 end
 
 compile '/sitemap_xml/' do
@@ -35,8 +35,8 @@ compile '*' do
   end
 end
 
-route '/stylesheet/' do
-  '/style.css'
+route '/barebone/' do
+  '/barebone.css'
 end
 
 route '/htaccess/' do

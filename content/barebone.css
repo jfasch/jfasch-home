@@ -21,8 +21,8 @@ a:hover {
     color: #f90;
 }
 
-/* ---------- header area -----------*/
-#header-area {
+/* ---------- header -----------*/
+#header {
     top: 0px;
     left: 0px;
     width: 100%;
@@ -32,7 +32,7 @@ a:hover {
     z-index: 1000;
 }
 
-#header-area h1 {
+#header h1 {
     font-size: 30px;
     font-weight: normal;
 }
@@ -50,19 +50,28 @@ a:hover {
 
 /* ---------- menu area -----------*/
 
-/* green for all li within .menu */
-/*
-.menu li {
-    background-color: green;
-}
-*/
+/* <TESTS> */
 
-/* 3rd level: green for li in li in li within .menu */
-/*
-ul.menu li li li {
-    background-color: green;
+/* 1st level */
+ul.menu li {
+    background-color: cyan;
 }
-*/
+
+/* 2nd level */
+ul.menu li li {
+    background-color: lightblue;
+}
+
+/* 3rd level */
+ul.menu li li li {
+    background-color: lightgreen;
+}
+
+ul.menu a:hover {
+    font-weight:bold;
+}
+
+/* </TESTS> */
 
 ul.menu, ul.menu ul {
     list-style-type: none;
@@ -91,8 +100,8 @@ li.menu {
     line-height: 20px;
 }
 
-/* ---------- copyright etc area -----------*/
-#copyright-area {
+/* ---------- copyright -----------*/
+#copyright {
     position: fixed;
     top: 400px;
     left: 20px;
@@ -102,7 +111,7 @@ li.menu {
     list-style-type: none;
 }
 
-#copyright-area ul {
+#copyright ul {
     list-style-type: none;
 }
 

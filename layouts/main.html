@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>J&ouml;rg Faschingbauer - <%= @item[:title] %></title>
-    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/barebone.css" media="screen">
     <meta name="generator" content="nanoc 3.3.1">
     <% keywords = "joerg faschingbauer"
        keywords += ", " + @item[:tags].join(', ') if @item[:tags]
@@ -12,11 +12,11 @@
   </head>
   <body>
 
-    <div id="header-area">
+    <div id="header">
       <h1><img src="/images/baustelle.gif" width="70" />J&ouml;rg Faschingbauer</h1>
     </div>
 
-    <div id="copyright-area">
+    <div id="copyright">
       <ul>
 	<li>&copy;J&ouml;rg Faschingbauer</li>
 	<li>Design: Einstweilen noch ich, nachher die Doris
