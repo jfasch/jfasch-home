@@ -13,7 +13,7 @@ oss_download: http://sourceforge.net/projects/jf-unittest/files/
 Introductory blahblah
 =====================
 
-jf-unittest is a piece of code that has no dependencies on any other
+`jf-unittest` is a piece of code that has no dependencies on any other
 packages, and thus it serves as a subject for the most basic
 introductory example. You need not install anything but a C++
 compiler.
@@ -76,47 +76,36 @@ grasp of what we're going to build.
 Directories
 -----------
 
-In `~/src/jf-unittest`, you see the following directories, listed
-together with the files that are used to govern the build.
+In `~/src/jf-unittest`, you see the following structure (with a couple
+of files omitted for readability).
 
     .
     |-- Confix2.dir
     |-- Confix2.pkg
-    |-- basics
+    |-- lib
     |   |-- Confix2.dir
-    |   `-- tests
-    |       `-- Confix2.dir
-    |-- include
-    |   `-- jf
-    |       `-- unittest
-    |           |-- Confix2.dir
-    |           `-- tests
-    |               `-- Confix2.dir
-    |-- tests
-    |   `-- Confix2.dir
-    `-- treerunner
-        `-- Confix2.dir
+    |   |-- case.h
+    |   |-- failure.cc
+    |   |-- failure.h
+    |   |-- ...
+    |   |-- suite.h
+    |   |-- test.cc
+    |   |-- test.h
+    |   |-- tests
+    |   |   |-- Confix2.dir
+    |   |   |-- assert-suite.cc
+    |   |   |-- assert-suite.h
+    |   |   `-- ...
+    |   |-- ...
+    |   |-- walk.cc
+    |   `-- walk.h
+    `-- tests
+        |-- Confix2.dir
+        |-- stage3.cc
+        `-- ...
 
-* `include`. A hierarchy of header files, sorted into subdirectories
-  according to the namespaces that they contain. *Normally, this is
-  not necessary* - Confix suggests you leave your header files in the
-  directory where the C files are, and takes care and applies a little
-  magic to make things right. Here, in jf-unittest, we have a separate
-  header file hierarchy because somebody wanted to use the package
-  with an inferior tool (Visual Studio). See the next package in the
-  example chain, <%= link_to_name('jf-linuxtools', 'jf-linuxtools')
-  %>, for examples on how to use Confix the right way (obviously
-  nobody wants to build <%= link_to_name('jf-linuxtools',
-  'jf-linuxtools') %> with Visual Studio).
-* `basics`. Contains the test case and the test suite implementations
-  of the unit test framework. Although not relevant to our job of
-  building the damn thing, what's relevant is that all other code
-  relies upon it. A library is built here, and unit tests will pull it
-  in.
-* `treerunner`. A test runner that outputs test output in a tree form,
-  textually, indented according to the test hierarchy.
-* `tests`. A test executable, accumulating the different test suites
-  in the package.
+jjjjjjj
+
 
 Nodes and Interdependencies
 ---------------------------
