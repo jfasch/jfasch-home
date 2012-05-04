@@ -15,7 +15,10 @@
 #   because "*" matches zero or more characters.
 
 # don't filter or layout style sheets
+# jjjj better rules for that
 compile '/barebone/' do
+end
+compile '/3column/' do
 end
 
 compile '/sitemap_xml/' do
@@ -30,13 +33,18 @@ compile '*' do
       filter :encode_umlauts
       filter :kramdown
     end      
-    layout 'main'
+#    layout 'main'
+    layout '3column'
     filter :relativize_paths, :type => :html     
   end
 end
 
+# jjj better rules for that
 route '/barebone/' do
   '/barebone.css'
+end
+route '/3column/' do
+  '/3column.css'
 end
 
 route '/htaccess/' do
