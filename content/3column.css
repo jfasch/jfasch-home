@@ -1,70 +1,132 @@
-body{
+body {
     margin: 0;
     padding: 0;
     border: 0;
     overflow: hidden;
     height: 100%; 
     max-height: 100%; 
+
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    /* these serve as defaults for most elements. overridden where
+       necessary. */
+    font-size:13px;
+    color:#6f6f6f;
+
+    /* background image over the entire page */
+    background-image:url(/images/background.jpg);
+    background-repeat:no-repeat;
+    background-color:#FFF;
+    background-attachment: fixed;
 }
 
-#framecontentLeft, #framecontentRight{
-    position: absolute; 
-    height: 100%;
-    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+/* SITE-WIDE HEADING STYLES --------------------------- */
+h1 {
+    font-size: 35px;
+    font-weight: normal;
+    /* line-height: 40px; */
+    /* line-height: 100%; */
+    letter-spacing: -1px;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    color:#233e73;
 }
+h2 {
+    margin-top:0px;
+    margin-bottom:15px;
+    font-size: 25px;
+    /* line-height:100%; */
+    letter-spacing: -1px;
+    font-weight:normal;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    /* font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+    color:#233e73;
+}
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    /* line-height: 40px; */
+    letter-spacing: -1px;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    color:#233e73;
+}
+
 
 #framecontentLeft {
+    position: absolute; 
+    height: 100%;
     top: 0;
     left: 0;
     width: 200px;
-
-    background: yellow;
+    
+    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    /* jjj background: yellow; */
+    background: none;
 }
 
-#framecontentRight{
+#framecontentRight {
+    position: absolute; 
+    height: 100%;
     top: 0;
     right: 0; 
     left: auto;
     width: 150px;
 
-    background: lightgreen;
+    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    /* jjj background: lightgreen; */
+    background: none;
 }
 
-#framecontentTop{
+#framecontentTop {
     position: absolute;
     top: 0;
     left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
     right: 150px; /*Set right value to WidthOfRightFrameDiv*/
     width: auto;
     height: 50px; /*Height of top frame div*/
+
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
-    background: lightblue;
+    /* jjj background: lightblue; */
+    background: none;
     color: white;
 }
 
-#maincontent{
+
+
+#maincontent {
     position: fixed; 
     top: 50px; /*Set top value to HeightOfTopFrameDiv*/
     left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
     right: 150px; /*Set right value to WidthOfRightFrameDiv*/
     bottom: 0;
+
     overflow: auto; 
-    background: #fff;
+    background: none;
 }
 
-.innertube{
+#maincontent pre {
+    border:1px dashed #E1E1E1;
+    color:#333344;
+    background:#FAFAFA;
+    font-family:monospace;
+    overflow:auto;
+    font-size:11px;
+    padding:0.5em;
+}
+
+
+
+.innertube {
     margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
 }
 
-* html body{ /*IE6 hack*/
+* html body { /*IE6 hack*/
     padding: 120px 150px 0 200px; /*Set value to (HeightOfTopFrameDiv WidthOfRightFrameDiv 0 WidthOfLeftFrameDiv)*/
 }
 
-* html #maincontent{ /*IE6 hack*/
+* html #maincontent { /*IE6 hack*/
     height: 100%; 
     width: 100%; 
 }
 
-* html #framecontentTop{ /*IE6 hack*/
+* html #framecontentTop { /*IE6 hack*/
     width: 100%;
 }
