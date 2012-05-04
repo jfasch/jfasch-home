@@ -1,6 +1,6 @@
 include Nanoc::Helpers::LinkTo
 
-def menu(identifier)
+def menu(identifier, indent=0, embedded=true)
   # Get other item
   other = @items.find { |i| i.identifier == identifier }
 
@@ -11,12 +11,7 @@ def menu(identifier)
   # Check whether we are in other or a child
   in_other_tree = is_in_tree(@item, other)
 
-  res = '<li>'
-
-  link_text = other[:title] || other.identifier
-
-  # Add link itself
-  res += link_to_unless_current(link_text, other)
+  res = ' '*indent + '<li>' + link_to_unless_current(other[:title] || other.identifier, other)
 
   # if submenus are desired for other, then sort children according to
   # their :menu_order. items without :menu_order come at the end.
@@ -34,18 +29,21 @@ def menu(identifier)
   end
 
   if children_with_order.length + children_without_order.length != 0
-    res += "<ul>\n"
+    res += "\n" + ' '*(indent+4) + "<ul>\n"
     children_with_order.sort.each do |c|
-      res += menu(c[1].identifier)
+      res += menu(c[1].identifier, indent+6, false)
     end
     children_without_order.each do |c|
-      res += menu(c.identifier)
+      res += menu(c.identifier, indent+6, false)
     end
-    res += "</ul>\n"
+    res += ' '*(indent+4) + "</ul>\n"
+    res += ' '*(indent+2) + "</li>"
+  else
+    res += "</li>"
   end
-  
-  res += '</li>'
 
+  res += "\n" unless embedded
+  
   res
 end
 
