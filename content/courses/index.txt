@@ -8,7 +8,7 @@ Schulungen
 ==========
 
 <img src="/images/sysprog-bodenseo.jpg" border="0" alt="Kurs im
-Hoeri-Hotel" style="float: right; margin: 10px; border: 0pt none;" />
+     Hoeri-Hotel" style="float: right;" />
 
 Jahre des Programmierens haben ihre Spuren hinterlassen --- es hat
 sich einiges an Wissen angesammelt. Vieles davon ist nicht mehr
