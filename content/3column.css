@@ -92,6 +92,12 @@ ul.menu .active, ul.menu a:hover {
     font-weight: bold;
 }
 
+/* BREADCRUMBS STYLE ------------------------------------------*/
+.breadcrumbs a {
+    text-decoration: none;
+    color: #6f6f6f;
+}
+
 /* POSITIONING AND SUCH -------------------------------*/
 
 #framecontentLeft {
