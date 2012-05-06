@@ -66,49 +66,63 @@ ul.menu .active, ul.menu a:hover {
 .breadcrumbs a {
     text-decoration: none;
     color: #6f6f6f;
+    font-size: 11px;
 }
 
 /* POSITIONING AND SUCH -------------------------------*/
 
 #framecontentLeft {
     position: absolute; 
+
     height: 100%;
     top: 0;
     left: 0;
-    width: 200px;
-    
+    width: 240px;
+
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
-#framecontentLeft .headerimage_left {
+#framecontentLeft #headerimage_left {
+    border-bottom: 1px solid #d2d6e5;
+    border-right: 1px solid #d2d6e5;
+    
     background-color:#f2f6fc;
     width: 100%;
+}
+
+#framecontentLeft #menu_box {
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 
 #framecontentRight {
     position: absolute; 
-    height: 100%;
     top: 0;
     right: 0; 
+
+    height: 100%;
     left: auto;
-    width: 150px;
+    width: 250px;
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
-#framecontentRight .headerimage_right {
+#framecontentRight #headerimage_right {
+    border-bottom: 1px solid #d2d6e5;
+    border-left: 1px solid #d2d6e5;
     background-color:#f2f6fc;
     width: 100%;
 }
 
 #framecontentTop {
     background-color:#f2f6fc;
+    border-bottom: 1px solid #d2d6e5;
 
     position: absolute;
     top: 0;
-    left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
-    right: 150px; /*Set right value to WidthOfRightFrameDiv*/
+    left: 240px; /*Set left value to WidthOfLeftFrameDiv*/
+    right: 250px; /*Set right value to WidthOfRightFrameDiv*/
     width: auto;
-    height: 50px; /*Height of top frame div*/
+    height: 30px; /*Height of top frame div*/
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
@@ -116,10 +130,13 @@ ul.menu .active, ul.menu a:hover {
 
 
 #maincontent {
-    position: fixed; 
-    top: 50px; /*Set top value to HeightOfTopFrameDiv*/
-    left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
-    right: 150px; /*Set right value to WidthOfRightFrameDiv*/
+    position: fixed;
+
+    margin-left: 10px;
+    
+    top: 30px; /*Set top value to HeightOfTopFrameDiv*/
+    left: 240px; /*Set left value to WidthOfLeftFrameDiv*/
+    right: 250px; /*Set right value to WidthOfRightFrameDiv*/
     bottom: 0;
 
     overflow: auto; 
@@ -164,6 +181,33 @@ ul.menu .active, ul.menu a:hover {
     color: #233e73;
 }
 
+.text li {
+    /* jjj das krieg ich net hin. knoedel ist in der mitte des gesamten paragraphen. */
+
+    /* list-style: none; */
+    /* padding-left: 10px; */
+    /* background:url(images/listenpunkt.png) no-repeat left center; */
+    /* margin-left:-38px; */
+}
+
+.text img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b1b1b1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* jjj maybe we should mark visited links? */
+
+/* jjj maybe define a global links style, to be overridden by menu and
+   toc? */
+.text a, .copyright a {
+    color: #198289;
+}
+
 
 .copyright {
     font-size: 10px;
@@ -171,13 +215,8 @@ ul.menu .active, ul.menu a:hover {
     padding-bottom: 20px;
 }
 
-.innertube {
-/*    margin: 15px;*/ /*Margins for inner DIV inside each DIV (to provide padding)*/
-}
 
-
-
-/* nix verstehen */
+/* jjj nix verstehen */
 
 * html body { /*IE6 hack*/
     padding: 120px 150px 0 200px; /*Set value to (HeightOfTopFrameDiv WidthOfRightFrameDiv 0 WidthOfLeftFrameDiv)*/

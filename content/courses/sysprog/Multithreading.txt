@@ -19,9 +19,8 @@ unverständlich, warum Multithreading von modernen Programmiersprachen
 und Frameworks ungeachtet der Gefahren als einzige Möglichkeit,
 effiziente Programme zu schreiben, propagiert wird.
 
-<img src="/images/salad-mt-small.jpg" border="0" alt="Applied
-Multithreading" style="float: right; margin: 10px; border: 0pt none;"
-/>
+<img src="/images/salad-mt-small.jpg" alt="Applied Multithreading"
+     style="float: right;" />
 
 Parallele Programmierung ist auch unter Linux schwer - wie sollte es
 auch anders sein? Der Kurs gibt einen soliden Überblick über
