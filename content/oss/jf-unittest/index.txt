@@ -134,7 +134,7 @@ separate `include` directory - this is what the extra dependencies
 `jf-unittest.include.jf.unittest` and
 `jf-unittest.include.jf.unittest.tests` reflect.
 
-<img src="unittest.gif"/>
+<img src="/images/unittest.gif"/>
 
 Build Instructions
 ------------------
