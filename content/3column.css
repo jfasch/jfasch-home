@@ -210,6 +210,7 @@ ul.menu .active, ul.menu a:hover {
 
 
 .copyright {
+    clear: both;
     font-size: 10px;
     padding-top: 40px;
     padding-bottom: 20px;
