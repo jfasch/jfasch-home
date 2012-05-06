@@ -19,36 +19,6 @@ body {
     background-attachment: fixed;
 }
 
-/* SITE-WIDE HEADING STYLES --------------------------- */
-h1 {
-    font-size: 35px;
-    font-weight: normal;
-    /* line-height: 40px; */
-    /* line-height: 100%; */
-    letter-spacing: -1px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #233e73;
-}
-h2 {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 25px;
-    /* line-height:100%; */
-    letter-spacing: -1px;
-    font-weight: normal;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    /* font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; */
-    color: #233e73;
-}
-h3 {
-    font-size: 16px;
-    font-weight: normal;
-    /* line-height: 40px; */
-    letter-spacing: -1px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #233e73;
-}
-
 /* MENU STYLE ------------------------------------------*/
 
 /* settings for menu <ul> and all descendants */
@@ -109,6 +79,11 @@ ul.menu .active, ul.menu a:hover {
     
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
+#framecontentLeft .headerimage_left {
+    background-color:#f2f6fc;
+    width: 100%;
+}
+
 
 #framecontentRight {
     position: absolute; 
@@ -120,8 +95,14 @@ ul.menu .active, ul.menu a:hover {
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
+#framecontentRight .headerimage_right {
+    background-color:#f2f6fc;
+    width: 100%;
+}
 
 #framecontentTop {
+    background-color:#f2f6fc;
+
     position: absolute;
     top: 0;
     left: 200px; /*Set left value to WidthOfLeftFrameDiv*/
@@ -144,7 +125,7 @@ ul.menu .active, ul.menu a:hover {
     overflow: auto; 
 }
 
-#maincontent pre {
+.text pre {
     border: 1px dashed #E1E1E1;
     color: #333344;
     background: #fafafa;
@@ -154,10 +135,44 @@ ul.menu .active, ul.menu a:hover {
     padding: 0.5em;
 }
 
+.text h1 {
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
+}
 
+.text h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    /* line-height:100%; */
+    letter-spacing: -1px;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+    color: #233e73;
+}
+
+.text h3 {
+    font-size: 16px;
+    font-weight: normal;
+    /* line-height: 40px; */
+    letter-spacing: -1px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
+}
+
+
+.copyright {
+    font-size: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
 
 .innertube {
-    margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+/*    margin: 15px;*/ /*Margins for inner DIV inside each DIV (to provide padding)*/
 }
 
 
