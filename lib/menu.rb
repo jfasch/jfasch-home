@@ -1,6 +1,6 @@
 include Nanoc::Helpers::LinkTo
 
-def menu(identifier, indent=0, embedded=true)
+def menu(identifier, level=0, embedded=true)
   # Get other item
   other = @items.find { |i| i.identifier == identifier }
 
@@ -11,7 +11,18 @@ def menu(identifier, indent=0, embedded=true)
   # Check whether we are in other or a child
   in_other_tree = is_in_tree(@item, other)
 
-  res = ' '*indent + '<li>' + link_to_unless_current(other[:title] || other.identifier, other)
+  # wish I could do this via list-style-type
+  if level == 0
+    text = '&gt;&nbsp;&nbsp;'
+  else 
+    text = '&raquo;&nbsp;&nbsp;'
+  end
+  text += other[:title] || other.identifier  
+
+  res = ' '*level + '<li>'
+  res += '<span class="on-menu-path">' if in_other_tree and identifier != '/'
+  res += link_to_unless_current(text, other)
+  res += '</span>' if in_other_tree and identifier != '/'
 
   # if submenus are desired for other, then sort children according to
   # their :menu_order. items without :menu_order come at the end.
@@ -29,15 +40,15 @@ def menu(identifier, indent=0, embedded=true)
   end
 
   if children_with_order.length + children_without_order.length != 0
-    res += "\n" + ' '*(indent+4) + "<ul>\n"
+    res += "\n" + ' '*(level+4) + "<ul>\n"
     children_with_order.sort.each do |c|
-      res += menu(c[1].identifier, indent+6, false)
+      res += menu(c[1].identifier, level+6, false)
     end
     children_without_order.each do |c|
-      res += menu(c.identifier, indent+6, false)
+      res += menu(c.identifier, level+6, false)
     end
-    res += ' '*(indent+4) + "</ul>\n"
-    res += ' '*(indent+2) + "</li>"
+    res += ' '*(level+4) + "</ul>\n"
+    res += ' '*(level+2) + "</li>"
   else
     res += "</li>"
   end

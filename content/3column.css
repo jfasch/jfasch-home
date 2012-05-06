@@ -9,13 +9,13 @@ body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     /* these serve as defaults for most elements. overridden where
        necessary. */
-    font-size:13px;
-    color:#6f6f6f;
+    font-size: 13px;
+    color: #6f6f6f;
 
     /* background image over the entire page */
-    background-image:url(/images/background.jpg);
-    background-repeat:no-repeat;
-    background-color:#FFF;
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-color: #FFF;
     background-attachment: fixed;
 }
 
@@ -26,29 +26,73 @@ h1 {
     /* line-height: 40px; */
     /* line-height: 100%; */
     letter-spacing: -1px;
-    font-family:Georgia, "Times New Roman", Times, serif;
-    color:#233e73;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
 }
 h2 {
-    margin-top:0px;
-    margin-bottom:15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
     font-size: 25px;
     /* line-height:100%; */
     letter-spacing: -1px;
-    font-weight:normal;
-    font-family:Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
     /* font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; */
-    color:#233e73;
+    color: #233e73;
 }
 h3 {
     font-size: 16px;
     font-weight: normal;
     /* line-height: 40px; */
     letter-spacing: -1px;
-    font-family:Georgia, "Times New Roman", Times, serif;
-    color:#233e73;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
 }
 
+/* MENU STYLE ------------------------------------------*/
+
+/* settings for menu <ul> and all descendants */
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu * {
+    margin: 0;
+    padding: 0;
+    line-height: 180%;
+
+    /* we generate "list style" ("&gt", "&raquo") in the source text,
+       unfortunately */
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul.menu a {
+    color: #6f6f6f;
+}
+
+/* all nested entries (li somewhere inside li, somewhere inside
+   ul.menu) add up their left padding to the containing
+   element's. this gives nice and simple indentation. */
+ul.menu li li {
+    padding-left: 17px;
+}
+
+/* nodes on the menu path to the current page */
+ul.menu .on-menu-path a {
+    font-style: italic;
+}
+
+/* the "active" (current) page, as well as those that could become
+   active (-> hover) */
+ul.menu .active, ul.menu a:hover {
+    color: #233e73;
+    font-weight: bold;
+}
+
+/* POSITIONING AND SUCH -------------------------------*/
 
 #framecontentLeft {
     position: absolute; 
@@ -58,8 +102,6 @@ h3 {
     width: 200px;
     
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
-    /* jjj background: yellow; */
-    background: none;
 }
 
 #framecontentRight {
@@ -71,8 +113,6 @@ h3 {
     width: 150px;
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
-    /* jjj background: lightgreen; */
-    background: none;
 }
 
 #framecontentTop {
@@ -84,9 +124,6 @@ h3 {
     height: 50px; /*Height of top frame div*/
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
-    /* jjj background: lightblue; */
-    background: none;
-    color: white;
 }
 
 
@@ -99,17 +136,16 @@ h3 {
     bottom: 0;
 
     overflow: auto; 
-    background: none;
 }
 
 #maincontent pre {
-    border:1px dashed #E1E1E1;
-    color:#333344;
-    background:#FAFAFA;
-    font-family:monospace;
-    overflow:auto;
-    font-size:11px;
-    padding:0.5em;
+    border: 1px dashed #E1E1E1;
+    color: #333344;
+    background: #fafafa;
+    font-family: monospace;
+    overflow: auto;
+    font-size: 11px;
+    padding: 0.5em;
 }
 
 
@@ -117,6 +153,10 @@ h3 {
 .innertube {
     margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
 }
+
+
+
+/* nix verstehen */
 
 * html body { /*IE6 hack*/
     padding: 120px 150px 0 200px; /*Set value to (HeightOfTopFrameDiv WidthOfRightFrameDiv 0 WidthOfLeftFrameDiv)*/
