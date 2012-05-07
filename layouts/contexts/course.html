@@ -1,43 +1,48 @@
 <% price_per_day = 1100 %>
 
-<table class="course-facts">
-  <tr>
-    <td><b>Titel:</b></td>
-    <td><%= @item[:title] or raise "No title attribute in item #{@item.identifier}" %></td>
-  </tr>
-  <tr>
-    <td><b>Dauer:</b></td>
-    <td><%= @item[:course_duration] or raise "No duration attribute in item #{@item.identifier}" %> Tage</td>
-  </tr>
-  <tr>
-    <td><b>Ort:</b></td>
-    <td><%= case @item[:course_type]
-	    when "inhouse"
-	      "Bei Ihnen"
-	    when "hosted"
-	      "lt. Originalseite"
-	    else
-	      raise "No course_type attribute in item #{@item.identifier}"
-	    end
-	    %>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Termin:</b></td>
-    <td>auf Anfrage</td>
-  </tr>
-  <tr>
-    <td><b>Preis:</b></td>
-    <td><%= case @item[:course_type]
-	    when "inhouse"
-	      (price_per_day * @item[:course_duration]).to_s + "€ (zzgl.Mwst)"
-	    when "hosted"
-	      "lt. Originalseite"
-	    else
-	      raise "No course_type attribute in item #{@item.identifier}"
-	    end
-	    %>
-    </td>
-  </tr>
-</table>
+<div id="course-box">
+
+  <table class="course-facts">
+    <tr>
+      <td><b>Titel:</b></td>
+      <td><%= @item[:title] or raise "No title attribute in item #{@item.identifier}" %></td>
+    </tr>
+    <tr>
+      <td><b>Dauer:</b></td>
+      <td><%= @item[:course_duration] or raise "No duration attribute in item #{@item.identifier}" %> Tage</td>
+    </tr>
+    <tr>
+      <td><b>Ort:</b></td>
+      <td><%= case @item[:course_type]
+	      when "inhouse"
+	        "Bei Ihnen"
+	      when "hosted"
+	        "lt. Originalseite"
+	      else
+	        raise "No course_type attribute in item #{@item.identifier}"
+	      end
+	      %>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Termin:</b></td>
+      <td>auf Anfrage</td>
+    </tr>
+    <tr>
+      <td><b>Preis:</b></td>
+      <td><%= case @item[:course_type]
+    	      when "inhouse"
+    	        (price_per_day * @item[:course_duration]).to_s + "€ (zzgl.Mwst)"
+    	      when "hosted"
+    	        "lt. Originalseite"
+    	      else
+    	        raise "No course_type attribute in item #{@item.identifier}"
+    	      end
+    	      %>
+      </td>
+    </tr>
+
+  </table>
+
+</div>
 

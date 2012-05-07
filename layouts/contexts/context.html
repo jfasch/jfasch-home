@@ -1,0 +1,18 @@
+<div id="context-box">
+
+<%=
+   if @item[:context]
+     case @item[:context]
+     when "course"
+       render('contexts/course')
+     when "oss"
+       render('contexts/oss')
+     else
+       raise "unknown context \"#{@item[:context]}\" in #{@item.identifier}"
+     end
+   else
+     render('contexts/default')
+   end
+%>
+
+</div>

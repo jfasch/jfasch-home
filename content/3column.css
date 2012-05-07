@@ -20,7 +20,6 @@ body {
 }
 
 /* MENU STYLE ------------------------------------------*/
-
 /* settings for menu <ul> and all descendants */
 
 ul.menu {
@@ -69,9 +68,93 @@ ul.menu .active, ul.menu a:hover {
     font-size: 11px;
 }
 
-/* POSITIONING AND SUCH -------------------------------*/
+/* CONTENT STYLE ------------------------------------------*/
 
-#framecontentLeft {
+.content h1 {
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
+}
+
+.content h2 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    /* line-height:100%; */
+    letter-spacing: -1px;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+    color: #233e73;
+}
+
+.content h3 {
+    font-size: 16px;
+    font-weight: normal;
+    /* line-height: 40px; */
+    letter-spacing: -1px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
+}
+
+/* jjj maybe we should mark visited links? */
+.content a {
+    color: #198289;
+}
+
+.content li {
+    /* jjj das krieg ich net hin. knoedel ist in der mitte des gesamten paragraphen. */
+
+    /* list-style: none; */
+    /* padding-left: 10px; */
+    /* background:url(images/listenpunkt.png) no-repeat left center; */
+    /* margin-left:-38px; */
+}
+
+.content img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b1b1b1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content pre {
+    border: 1px dashed #E1E1E1;
+    color: #333344;
+    background: #fafafa;
+    font-family: monospace;
+    overflow: auto;
+    font-size: 11px;
+    padding: 0.5em;
+}
+
+/* COPYRIGHT STYLE ------------------------------------------*/
+
+/* "copyright" is a list of items, which need not necessarily be laid
+   out as a list. one item after the other, giving various information
+   about the site's creator(s).
+   */
+.copyright a {
+    color: #198289;
+}
+
+.copyright {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    list-style-type: none;
+}
+
+
+
+/* POSITIONING -------------------------------*/
+
+#left-column-box {
     position: absolute; 
 
     height: 100%;
@@ -81,7 +164,8 @@ ul.menu .active, ul.menu a:hover {
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
-#framecontentLeft #headerimage_left {
+
+#left-column-box #logo-box {
     border-bottom: 1px solid #d2d6e5;
     border-right: 1px solid #d2d6e5;
     
@@ -89,13 +173,22 @@ ul.menu .active, ul.menu a:hover {
     width: 100%;
 }
 
-#framecontentLeft #menu_box {
+/* menu comes right below the left header image */
+#left-column-box #menu-box {
     padding-top: 20px;
     padding-left: 20px;
 }
 
+/* copyright box comes at the bottom */
+#left-column-box #copyright-box {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
 
-#framecontentRight {
+
+#right-column-box {
     position: absolute; 
     top: 0;
     right: 0; 
@@ -106,14 +199,35 @@ ul.menu .active, ul.menu a:hover {
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
-#framecontentRight #headerimage_right {
+#right-column-box #logo-box {
     border-bottom: 1px solid #d2d6e5;
     border-left: 1px solid #d2d6e5;
     background-color:#f2f6fc;
     width: 100%;
 }
 
-#framecontentTop {
+#right-column-box #context-box {
+    margin: 5px;
+    border: 2px solid green;
+}
+#right-column-box #context-box #course-box {
+    margin: 5px;
+    border: 2px solid blue;
+}
+#right-column-box #context-box #oss-box {
+    margin: 5px;
+    border: 2px solid red;
+}
+#right-column-box #context-box #oss-box #oss-facts-box {
+    margin: 5px;
+    border: 2px solid orange;
+}
+#right-column-box #context-box #oss-box #oss-toc-box {
+    margin: 5px;
+    border: 2px solid lightblue;
+}
+
+#middle-header-box {
     background-color:#f2f6fc;
     border-bottom: 1px solid #d2d6e5;
 
@@ -127,9 +241,7 @@ ul.menu .active, ul.menu a:hover {
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
 
-
-
-#maincontent {
+#middle-content-box {
     position: fixed;
 
     margin-left: 10px;
@@ -142,79 +254,10 @@ ul.menu .active, ul.menu a:hover {
     overflow: auto; 
 }
 
-.text pre {
-    border: 1px dashed #E1E1E1;
-    color: #333344;
-    background: #fafafa;
-    font-family: monospace;
-    overflow: auto;
-    font-size: 11px;
-    padding: 0.5em;
-}
-
-.text h1 {
-    font-size: 35px;
-    font-weight: normal;
-    letter-spacing: -1px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #233e73;
-}
-
-.text h2 {
-    margin-top: 0px;
-    margin-bottom: 15px;
-    font-size: 25px;
-    /* line-height:100%; */
-    letter-spacing: -1px;
-    font-weight: normal;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    /* font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; */
-    color: #233e73;
-}
-
-.text h3 {
-    font-size: 16px;
-    font-weight: normal;
-    /* line-height: 40px; */
-    letter-spacing: -1px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #233e73;
-}
-
-.text li {
-    /* jjj das krieg ich net hin. knoedel ist in der mitte des gesamten paragraphen. */
-
-    /* list-style: none; */
-    /* padding-left: 10px; */
-    /* background:url(images/listenpunkt.png) no-repeat left center; */
-    /* margin-left:-38px; */
-}
-
-.text img {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #b1b1b1;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-/* jjj maybe we should mark visited links? */
-
-/* jjj maybe define a global links style, to be overridden by menu and
-   toc? */
-.text a, .copyright a {
-    color: #198289;
-}
 
 
-.copyright {
-    clear: both;
-    font-size: 10px;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
+
+
 
 
 /* jjj nix verstehen */
@@ -223,11 +266,11 @@ ul.menu .active, ul.menu a:hover {
     padding: 120px 150px 0 200px; /*Set value to (HeightOfTopFrameDiv WidthOfRightFrameDiv 0 WidthOfLeftFrameDiv)*/
 }
 
-* html #maincontent { /*IE6 hack*/
+* html #middle-content-box { /*IE6 hack*/
     height: 100%; 
     width: 100%; 
 }
 
-* html #framecontentTop { /*IE6 hack*/
+* html #middle-header-box { /*IE6 hack*/
     width: 100%;
 }
