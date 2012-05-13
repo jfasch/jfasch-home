@@ -9,7 +9,7 @@ body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     /* these serve as defaults for most elements. overridden where
        necessary. */
-    font-size: 13px;
+    font-size: 12px;
     color: #6f6f6f;
 
     /* background image over the entire page */
@@ -35,10 +35,12 @@ ul.menu * {
     /* we generate "list style" ("&gt", "&raquo") in the source text,
        unfortunately */
     list-style-type: none;
-    text-decoration: none;
 }
 
 ul.menu a {
+    /* override default anchor style. menu links need not be made
+       explicitly visible - the user knows anyway. */
+    text-decoration: none;
     color: #6f6f6f;
 }
 
@@ -62,16 +64,22 @@ ul.menu .active, ul.menu a:hover {
 }
 
 /* BREADCRUMBS STYLE ------------------------------------------*/
+.breadcrumbs {
+    padding-top:15px;
+    font-size:9px;
+}
+
 .breadcrumbs a {
     text-decoration: none;
+    /* override default anchor color (breadcrumb links need not be made
+       explicit - anybody knows) */
     color: #6f6f6f;
-    font-size: 11px;
 }
 
 /* CONTENT STYLE ------------------------------------------*/
 
 .content h1 {
-    font-size: 35px;
+    font-size: 39px;
     font-weight: normal;
     letter-spacing: -1px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -104,23 +112,21 @@ ul.menu .active, ul.menu a:hover {
     color: #198289;
 }
 
-.content li {
-    /* jjj das krieg ich net hin. knoedel ist in der mitte des gesamten paragraphen. */
-
-    /* list-style: none; */
-    /* padding-left: 10px; */
-    /* background:url(images/listenpunkt.png) no-repeat left center; */
-    /* margin-left:-38px; */
+.content ul {
+    padding-left: 15px;
 }
 
 .content img {
-    margin-left: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid #b1b1b1;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
+
+    border: 1px solid #b1b1b1;
 }
 
 .content pre {
@@ -160,23 +166,20 @@ ul.menu .active, ul.menu a:hover {
     height: 100%;
     top: 0;
     left: 0;
-    width: 240px;
+    width: 230px;
+
+    margin-left: 30px;
 
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
 
 #left-column-box #logo-box {
-    border-bottom: 1px solid #d2d6e5;
-    border-right: 1px solid #d2d6e5;
-    
-    background-color:#f2f6fc;
     width: 100%;
 }
 
 /* menu comes right below the left header image */
 #left-column-box #menu-box {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 30px;
 }
 
 /* copyright box comes at the bottom */
@@ -184,7 +187,6 @@ ul.menu .active, ul.menu a:hover {
     position: absolute;
     bottom: 0;
     padding-bottom: 20px;
-    padding-left: 20px;
 }
 
 
@@ -192,65 +194,79 @@ ul.menu .active, ul.menu a:hover {
     position: absolute; 
     top: 0;
     right: 0; 
-
     height: 100%;
     left: auto;
-    width: 250px;
+    width: 260px;
 
-    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    overflow: hidden;
 }
 #right-column-box #logo-box {
-    border-bottom: 1px solid #d2d6e5;
-    border-left: 1px solid #d2d6e5;
-    background-color:#f2f6fc;
-    width: 100%;
+    width: 230px;
+    height: 126px;
 }
 
+
+/* CONTEXT AREA ------------------------------------------------*/
 #right-column-box #context-box {
-    margin: 5px;
-    border: 2px solid green;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 30px;
+    /* border: 1px solid green; */
 }
+
+/* course box */
 #right-column-box #context-box #course-box {
-    margin: 5px;
-    border: 2px solid blue;
+    background-color: #f0f3f8;
+    padding: 10px;
+
+    /* for debugging */
+    /* border: 1px solid red; */
 }
+#right-column-box #context-box #course-box h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* OSS box */
 #right-column-box #context-box #oss-box {
-    margin: 5px;
-    border: 2px solid red;
+    background-color: #f0f3f8;
 }
-#right-column-box #context-box #oss-box #oss-facts-box {
-    margin: 5px;
-    border: 2px solid orange;
+#right-column-box #context-box #oss-box ul.oss-facts {
+    list-style-type: none;
+    padding-bottom: 20px;
 }
-#right-column-box #context-box #oss-box #oss-toc-box {
-    margin: 5px;
-    border: 2px solid lightblue;
+#right-column-box #context-box #oss-box h1 {
+    font-size: 16px;
+    text-transform: uppercase;
 }
+
 
 #middle-header-box {
-    background-color:#f2f6fc;
-    border-bottom: 1px solid #d2d6e5;
-
     position: absolute;
     top: 0;
-    left: 240px; /*Set left value to WidthOfLeftFrameDiv*/
-    right: 250px; /*Set right value to WidthOfRightFrameDiv*/
+    left: 230px;
+    right: 260px;
     width: auto;
-    height: 30px; /*Height of top frame div*/
+    height: 50px;
 
-    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    overflow: hidden;
+    
+    /* I know that there's only one line (the breadcrumbs) inside, so I
+       apply padding right here in the box. not pretty, code-wise, but
+       anyway. */
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 #middle-content-box {
     position: fixed;
-
-    margin-left: 10px;
-    
-    top: 30px; /*Set top value to HeightOfTopFrameDiv*/
-    left: 240px; /*Set left value to WidthOfLeftFrameDiv*/
-    right: 250px; /*Set right value to WidthOfRightFrameDiv*/
+    top: 50px;
+    left: 230px;
+    right: 250px;
     bottom: 0;
 
+    margin-left: 25px;
+    margin-right: 25px;
     overflow: auto; 
 }
 

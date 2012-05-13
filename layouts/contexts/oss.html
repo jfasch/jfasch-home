@@ -1,27 +1,25 @@
 <div id="oss-box">
 
-  <div id="oss-facts-box">
+  <h1>Links</h1>
 
-    <ul class="oss-facts">
+  <ul class="oss-facts">
 
-      <% if @item[:oss_project] %>
-      <li><a href="<%= @item[:oss_project] %>">Project Page</a></li>
-      <% end %>
+    <% if @item[:oss_project] %>
+    <li><a href="<%= @item[:oss_project] %>">Project Page</a></li>
+    <% end %>
+    
+    <% if @item[:oss_browse_source] %>
+    <li><a href="<%= @item[:oss_browse_source] %>">Browse Source</a></li>
+    <% end %>
 
-      <% if @item[:oss_browse_source] %>
-      <li><a href="<%= @item[:oss_browse_source] %>">Browse Source</a></li>
-      <% end %>
-
-      <% if @item[:oss_download] %>
-      <li><a href="<%= @item[:oss_download] %>">Download</a></li>
-      <% end %>
+    <% if @item[:oss_download] %>
+    <li><a href="<%= @item[:oss_download] %>">Download</a></li>
+    <% end %>
   
-    </ul>
+  </ul>
 
-  </div>
-
-  <div id="oss-toc-box">
-    <%= toc(@item, 2) %>
-  </div>
+  <h1>Table of Contents</h1>
+  
+  <%= toc(@item, 2) %>
 
 </div>
