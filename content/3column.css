@@ -230,14 +230,23 @@ ul.menu .active, ul.menu a:hover {
 /* OSS box */
 #right-column-box #context-box #oss-box {
     background-color: #f0f3f8;
+    padding: 10px;
 }
-#right-column-box #context-box #oss-box ul.oss-facts {
+#right-column-box #context-box #oss-box ul.facts {
     list-style-type: none;
-    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+#right-column-box #context-box #oss-box ul.toc {
+    padding-left: 15px;
 }
 #right-column-box #context-box #oss-box h1 {
     font-size: 16px;
     text-transform: uppercase;
+}
+#right-column-box #context-box #oss-box a {
+    text-decoration: none;
+    color: #6f6f6f;
 }
 
 

@@ -2,24 +2,25 @@
 
   <h1>Links</h1>
 
-  <ul class="oss-facts">
+  <ul class="facts">
 
     <% if @item[:oss_project] %>
-    <li><a href="<%= @item[:oss_project] %>">Project Page</a></li>
+    <li><a href="<%= @item[:oss_project] %>">&gt;&nbsp;&nbsp;Project Page</a></li>
     <% end %>
     
     <% if @item[:oss_browse_source] %>
-    <li><a href="<%= @item[:oss_browse_source] %>">Browse Source</a></li>
+    <li><a href="<%= @item[:oss_browse_source] %>">&gt;&nbsp;&nbsp;Browse Source</a></li>
     <% end %>
 
     <% if @item[:oss_download] %>
-    <li><a href="<%= @item[:oss_download] %>">Download</a></li>
+    <li><a href="<%= @item[:oss_download] %>">&gt;&nbsp;&nbsp;Download</a></li>
     <% end %>
   
   </ul>
 
   <h1>Table of Contents</h1>
-  
+
+  <!-- toc generates ul class "toc" -->
   <%= toc(@item, 2) %>
 
 </div>
