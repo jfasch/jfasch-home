@@ -201,8 +201,16 @@ ul.menu .active, ul.menu a:hover {
     overflow: hidden;
 }
 #right-column-box #logo-box {
+    /* this is the size of the image that it carries - is this good
+       practice? */
     width: 230px;
     height: 126px;
+
+    /* hack; to be removed once I have the language image right. people
+       say IE doesn't get "display: table-cell" right, I don't
+       care. */
+    vertical-align: bottom;
+    display: table-cell;
 }
 
 
