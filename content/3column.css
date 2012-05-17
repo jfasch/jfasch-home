@@ -280,10 +280,39 @@ ul.menu .active, ul.menu a:hover {
 }
 
 
+#main-page {
+    margin-top: 40px;
+}
+#main-page h1 {
+    text-align: center;
+}
+#main-page table th {
+    padding-left: 15px;
+    font-size: 28px;
+    /* border: 1px solid green; */
+}
+#main-page table th, #main-page table td {
+    text-align: left;
+    width: 33%;
+}
+#main-page table tr.text td {
+    padding-left: 15px;
+    padding-right: 20px;
+    vertical-align: top;
+    /* padding: 10px; */
+}
+#main-page table tr.images td {
+    text-align: center;
+}
+#main-page table img {
+    width: 80%;
+    height: auto;
+    /* border: 1px solid red; */
 
-
-
-
+    /* we have image borders from the general text styles; disable that
+       here. */
+    border: none;
+}
 
 /* jjj nix verstehen */
 
