@@ -1,6 +1,7 @@
 ---
 title: "Python"
 menu_order: 120
+target_name: course-kettner-python
 
 tags: ['linux', 'kurs', 'schulung', 'python']
 

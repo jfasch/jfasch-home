@@ -1,6 +1,7 @@
 ---
 title: "Linux from Scratch"
 menu_order: 110
+target_name: course-kettner-lfs
 
 tags: ['linux', 'kurs', 'schulung', 'root filesystem', 'pxe', 'grub', 'bootloader', 'compile']
 

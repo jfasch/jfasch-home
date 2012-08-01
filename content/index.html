@@ -41,14 +41,36 @@ tags:
 
       <td>
 
-	<p>Zu vielen meiner Entwicklungsthemen biete ich auch
-	  Schulungen an, die sowohl als flexible
-	  Inhouse-Veranstaltungen in Ihrer Firma als auch als von
-	  Einzelpersonen zu besuchende vorgefertigte Termine zu buchen
-	  sind.</p>
+	<p>Passend zu vielen meiner Themen aus der Entwicklung biete
+	  ich auch <%= link_to_name('Schulungen', 'courses') %>
+	  an.</p>
 
-	<p>Finden Sie <%= link_to_name('hier eine detaillierte
-			  Aufstellung', 'courses') %>.</p>
+	<p>Verschiedenes um <%= link_to_name('Systemnahe
+	  Programmierung unter Linux', 'courses-sysprog') %>:</p>
+
+	<ul>
+	  <li><%= link_to_name('Linux Grundlagen',
+		  'course-system-basics') %></li>
+	  <li><%= link_to_name('Multithreading',
+		  'course-multithreading') %></li>
+	  <li><%= link_to_name('Netzwerk-Programmierung',
+		  'course-network') %></li>
+	  <li><%= link_to_name('Fortgeschrittene Themen',
+		  'course-advanced') %></li>
+	  <li><%= link_to_name('Embedded Linux',
+		  'course-embedded') %></li>
+	</ul>
+
+	<p>Weitere Schulungsthemen umfassen:</p>
+
+	<ul>
+	  <li><%= link_to_name('Softwareentwicklung unter Linux für
+		  Nicht-Linuxer', 'course-kettner-swd') %></li>
+	  <li><%= link_to_name('Linux from Scratch',
+		  'course-kettner-lfs') %></li>
+	  <li><%= link_to_name('Einführung in Python',
+		  'course-kettner-python') %></li>
+	</ul>
 
       </td>
 

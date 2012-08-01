@@ -14,6 +14,6 @@ Verschiedenes
 In Kooperation mit [Mathias Kettner](http://mathias-kettner.de) biete
 ich auch folgende Themen an.
 
-* [Softwareentwicklung unter Linux für Nicht-Linuxer](Kettner-Softwareentwicklung)
-* [Linux from Scratch](Kettner-LFS)
-* [Einführung in Python](Kettner-Python)
+* <%= link_to_name('Softwareentwicklung unter Linux für Nicht-Linuxer', 'course-kettner-swd') %>
+* <%= link_to_name('Linux from Scratch', 'course-kettner-lfs') %>
+* <%= link_to_name('Einführung in Python', 'course-kettner-python') %>

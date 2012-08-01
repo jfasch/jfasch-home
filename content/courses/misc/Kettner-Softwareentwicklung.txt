@@ -1,6 +1,7 @@
 ---
 title: "Softwareentwicklung"
 menu_order: 100
+target_name: course-kettner-swd
 
 tags: ['linux', 'kurs', 'schulung', 'toolchain', 'gcc', 'qt', 'make',
        'gnu make', 'systemcalls', 'strace', 'gdb', 'debug']
