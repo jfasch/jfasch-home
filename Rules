@@ -31,7 +31,11 @@ compile '*' do
       filter :kramdown
     end      
     layout '3column'
-    filter :relativize_paths, :type => :html     
+
+    # commented out for the time being. it somehow garbles HTML
+    # entities raquo, nbsp etc.
+
+    # filter :relativize_paths, :type => :html     
   end
 end
 
