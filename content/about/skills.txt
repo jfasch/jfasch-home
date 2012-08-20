@@ -13,7 +13,7 @@ Qualifikationen
   * USB (Host und Device, mit libusb und GadgetFS)
   * Serielle Protokolle (RS232, RS485)
   * Portierung von verschiedenen Embedded OS nach Linux
-  * Distributionen: Gentoo, OpenEmbedded.
+  * Distributionen: Gentoo, OpenEmbedded/Angström.
   * Bootprozess
   * Busybox und initramfs
   * UnionFS/aufs
@@ -22,6 +22,7 @@ Qualifikationen
 * Programmiersprachen
   * C und C++ (hauptsächlich GNU Toolchain), STL, Boost
   * Python
+  * Shell
   * Perl
   * Mono/C#
 
