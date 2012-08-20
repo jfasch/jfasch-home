@@ -4,5 +4,6 @@ class EncodeFilter < Nanoc::Filter
  
   def run(content, params={})
     content.gsub( 'ä', '&auml;' ).gsub( 'ö', '&ouml;' ).gsub( 'ü', '&uuml;' ).gsub( 'Ä', '&Auml;' ).gsub( 'Ö', '&Ouml;' ).gsub( 'Ü', '&Uuml;').gsub( 'ß', '&szlig;' )
+    return content
   end
 end
