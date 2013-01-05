@@ -6,36 +6,62 @@ target_name: projects
 Bisherige Projekte
 ==================
 
-(Stand März 2012)
+(Stand Jänner 2013)
 
-* **Spielo, Unterpremstätten bei Graz**<br>
-  März und April 2012
+* **Devicedriver/Linux**, für die PCI Hardware eines
+    Messgeräteherstellers
 
-  * Update des hauseigenen Linux-Betriebssystems
+  Zeit: Dezember 2012 bis dato<br>
+  Ort: Raum Graz
+
+* **Vollautomatische Installation von Serveranlagen** eines
+  Herstellers von Radarüberwachungssystemen
+
+  Zeit: Juni 2012 bis September 2012<br>
+  Ort: Unterschleissheim bei München
+
+* **Instandhaltungsarbeiten am hauseigenen Linux-System**, auf Basis
+  Gentoo Linux
+
+  * Update des Betriebssystems
   * Integration eines USB-Touchscreens
 
-* **Signalis, Unterschleissheim**<br>
-  Coastal Surveillance Systems<br>
-  Juni 2011 bis dato
+  Zeit: März 2012 bis April 2012<br>
+  Firma: Spielo International<br>
+  Ort: Unterpremstätten bei Graz
+
+* **Datenkonvertierung** bei einem Hersteller von
+  Radarüberwachungssystemen
 
   * Konvertierung verschiedener ASTERIX Formate zum Zwecke der
     Integration externer Datenquellen (in Python)
   * Export von Daten via SOAP (in Python)
 
-* **Efkon AG, Graz**<br>
-  Mautsysteme<br>
-  Bis dato
+  Zeit: Juni 2011 bis März 2012<br>
+  Ort: Unterschleissheim bei München
+
+* **Integration von IP Kameras** für einen Hersteller von
+  Videomautsystemen
+
+  * Implementation einer GigE-Vision Clientlibrary
+  * Softwarebasierter Kamerasimulation (in C++)
+
+  Zeit: September 2011 bis April 2012
+  Ort: Raum Graz
+
+* **Verschiedene systemnahe Tätigkeiten** für einen Hersteller von
+  Videomautsystemen
 
   * Integration verschiedener Hardwareteile (Touchscreen, Lagesensor;
     in C und C++)
-  * Anpassung von cryptsetup (Filesystemverschlüsselung) an die
-    Anforderungen der Embedded-Applikation (in C)
-  * Clientseitige Implementation des GigE-Vision Kamera-Protokolls,
-    incl. softwarebasierter Kamerasimulation (in C++)
+  * Anpassung von [cryptsetup](http://code.google.com/p/cryptsetup/)
+    (Filesystemverschlüsselung) an die Anforderungen der
+    Embedded-Applikation (in C)
 
-* **YLog GmbH, Dobl**<br>
-  Lagerautomatisierung<br>
-  2008 bis dato
+  Zeit: März 2011 bis August 2011<br>
+  Ort: Raum Graz
+
+* **Verschiedene Tätigkeiten**, Logistik/Automation
 
   * Entwicklung der beteiligten Protokolle (in C++ unter Linux)
     * Server zu SPS (TCP)
@@ -46,9 +72,11 @@ Bisherige Projekte
     * Versionskontrolle und Releasemanagement (Subversion)
     * Architektur
 
-* **KWB Kraft und Wärme aus Biomasse GmbH, St.Margarethen/Raab**<br>
-  Heizungsanlagen<br>
-  Jänner 2010 bis März 2011
+  Zeit: 2008 bis dato<br>
+  Firma: YLog GmbH, Dobl<br>
+  Ort: Dobl bei Graz
+
+* **Verschiedene Tätigkeiten**, Heizsysteme
 
   * Parametrisierung der Anlage (C mit IAR/ARM Workbench Segger embOS,
     VBA/Excel)
@@ -57,17 +85,17 @@ Bisherige Projekte
   * Versionskontrollinfrastruktur (Subversion, assoziierte Scripts mit
     Python und Shell)
 
-* **Salomon Automation GmbH, Friesach bei Graz**<br>
-  Mai 2009 bis Juni 2010
+  Zeit: Jänner 2010 bis März 2011
+  Ort: Oststeiermark
 
-  * Erweiterung der Buildumgebung (CMake, Confix
-    (http://confix.sf.net), in Python)
+* **Erweiterung der Buildumgebung** ([CMake](http://www.cmake.org/),
+    <%= link_to_name('Confix', 'confix') %>, in Python)
 
-* **Mathias Kettner, München**<br>
-  Open-Source-Schulungen<br>
-  September 2010 bis dato
-  
-  Verschiedene Schulungen aus dem Umkreis Linux
+  Zeit: Mai 2009 bis Juni 2010<br>
+  Firma: Salomon Automation GmbH<br>
+  Ort: Friesach bei Graz
+
+* **Schulungen** aus dem Umkreis Linux
 
   * Softwareentwicklung unter Linux für Nicht-Linuxer
   * Linux from Scratch
@@ -75,20 +103,23 @@ Bisherige Projekte
   * Shell-Programmierung
   * Embedded Linux
 
-* **Bodenseo, Singen**<br>
-  Open-Source-Schulungen<br>
-  November 2010 bis dato
+  Zeit: September 2010 bis dato<br>
+  Firma: Mathias Kettner<br>
+  Ort: München
 
-  Verschiedene Schulungen aus dem Umkreis Linux
-  
+* **Schulungen** aus dem Umkreis Linux
+
   * Systemnahe Softwareentwicklung
   * Embedded Linux
+
+  Zeit: November 2010 bis dato<br>
+  Firma: Bodenseo<br>
+  Ort: Singen am Bodensee
 
 Projekte aus nichtselbstständiger Tätigkeit
 ===========================================
 
 * **Atronic GmbH, Unterpremstätten bei Graz**<br>
-  2006 bis 2010
 
   * Softwarearchitektur
   * Portierung der Spielesoftware von ENEA/OSE nach Linux (C++)
@@ -97,8 +128,9 @@ Projekte aus nichtselbstständiger Tätigkeit
   * Entwicklung des "Betriebssystems" auf Basis Gentoo,
     Vanilla-Kernel, und Aufs
 
+  Zeit: 2006 bis 2010
+
 * **Salomon Automation GmbH, Friesach bei Graz**<br>
-  2001 bis 2006
 
   * Softwarearchitektur
   * Abteilungsleitung
@@ -106,11 +138,14 @@ Projekte aus nichtselbstständiger Tätigkeit
   * Datenbankdesign
   * Programmierung einer objektrelationalen Datenbankschnittstelle (C++)
 
+  Zeit: 2001 bis 2006
+
 * **Hyperwave AG, Graz**<br>
-  1998 bis 2001
 
   * Softwareentwicklung
   * Abteilungsleitung
   * Analyse und Design (Rational Rose)
   * Releasemanagement (CVS, Subversion)
   * Systemnahe Programmierung (C++ unter Linux und Windows)
+
+  Zeit: 1998 bis 2001
