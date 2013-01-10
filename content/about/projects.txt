@@ -44,7 +44,7 @@ Bisherige Projekte
   Videomautsystemen
 
   * Implementation einer GigE-Vision Clientlibrary
-  * Softwarebasierter Kamerasimulation (in C++)
+  * Softwarebasierte Kamerasimulation (in C++)
 
   Zeit: September 2011 bis April 2012
   Ort: Raum Graz
