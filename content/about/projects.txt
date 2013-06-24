@@ -6,10 +6,21 @@ target_name: projects
 Bisherige Projekte
 ==================
 
-(Stand Jänner 2013)
+(Stand Juni 2013)
 
-* **Devicedriver/Linux**, für die PCI Hardware eines
-    Messgeräteherstellers
+* **Backport und Integration eines Touchcontroller-Drivers**, für eine
+    Systemintegrationsfirma im Raum Stuttgart
+
+  Zeit: Mai 2013
+
+* **Verschiedene Python-Programme zur IT-Integration**, wie zum Beispiel
+
+  * E-Billing (Email-Kommunikation, Extraktion von Attachments, Signaturverifikation ...)
+  * Anbindung an ein Informationssystem
+
+  Zeit: Februar bis Juni 2013<br>
+
+* **Devicedriver für die PCI Hardware eines Messgeräteherstellers**
 
   Zeit: Dezember 2012 bis dato<br>
   Ort: Raum Graz
@@ -85,7 +96,7 @@ Bisherige Projekte
   * Versionskontrollinfrastruktur (Subversion, assoziierte Scripts mit
     Python und Shell)
 
-  Zeit: Jänner 2010 bis März 2011
+  Zeit: Jänner 2010 bis März 2011<br>
   Ort: Oststeiermark
 
 * **Erweiterung der Buildumgebung** ([CMake](http://www.cmake.org/),
