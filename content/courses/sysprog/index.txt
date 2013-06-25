@@ -11,19 +11,16 @@ menu_order: 10
 Systemnahes Programmieren unter Linux
 =====================================
 
-"*Systemnahe Programmierung unter Linux*" ist ein Kurs, der als
-[offene
-Schulung](http://bodenseo.de/kurs/linux_systemnahe_programmierung.html)
-(findet an vorgegebenen Terminen statt und kann von jedermann gebucht
-werden) und auch als Inhouseschulung bei [der Firma
-Bodenseo](http://bodenseo.de) gebucht werden kann.
+Mit Linux kann man Probleme auf elegante und einfache Art lösen -
+vorausgesetzt, man versteht die Funktionsweise des Betriebssystems.
 
-Zusätzlich dazu biete ich den Kurs auch als "Aufbauprogramm" in
-Einzelteilen an, die als Inhouseschulungen <%= link_to_name('bei mir
-gebucht', 'contact') %> werden können. Die Unterlagen sind modular
-aufgebaut, sodass sie je nach Bedarf angepasst werden können --- die
-nachfolgenden Schulungsbeschreibungen sind dementsprechend als
-Vorschlag zu verstehen.
+Der Kurs *Systemnahe Programmierung unter Linux* vermittelt den
+Teilnehmern ein grosses Bild, indem die zentralen Punkte des Systems
+herausgearbeitet werden, und auf dieser Basis in speziellere Gebiete
+vorgestossen wird. Die Unterlagen sind modular aufgebaut, sodass sie
+je nach Bedarf angepasst werden können --- die nachfolgenden
+Schulungsbeschreibungen sind dementsprechend als Vorschlag zu
+verstehen.
 
 * <%= link_to_name('Linux Grundlagen', 'course-system-basics') %>:
   eine Einführung in das System anhand von Beispielen.

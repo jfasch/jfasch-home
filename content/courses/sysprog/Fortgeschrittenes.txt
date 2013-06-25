@@ -53,5 +53,5 @@ Empfohlene Vorkenntnisse
 ------------------------
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
-Grundkenntnis des Systems (vgl. Kurs "Linux vom
-Programmierer-Standpunkt: Überblick").
+Grundkenntnis des Systems (vgl. <%= link_to_name('Einführungskurs',
+'course-system-basics') %>).
