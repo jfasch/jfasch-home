@@ -19,3 +19,8 @@ Dieser Kurs wird von der Firma [Mathias
 Kettner](http://mathias-kettner.de) in München angeboten, mit mir als
 Dozenten. Finden Sie [hier die originale und ausführliche
 Schulungsbeschreibung](http://mathias-kettner.de/schulung_linux_from_scratch.html).
+
+Notizen und Links
+-----------------
+
+* <%= link_to_name('LFS 16.9.2013 in München', 'course-kettner-lfs-2013-09-16') %>
