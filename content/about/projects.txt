@@ -137,7 +137,7 @@ Projekte aus nichtselbstständiger Tätigkeit
   * Entwurf der Systemschnittstellen
   * Driverentwicklung (Linux/PowerPC, USB)
   * Entwicklung des "Betriebssystems" auf Basis Gentoo,
-    Vanilla-Kernel, und Aufs
+    Vanilla-Kernel, und [Aufs](http://sourceforge.net/projects/aufs/)
 
   Zeit: 2006 bis 2010
 
