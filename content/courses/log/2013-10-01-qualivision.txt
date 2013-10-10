@@ -7,17 +7,6 @@ target_name: courses-log-2013-10-01-qualivision
 Qualivision, Zürich, 1.10.2013
 ==============================
 
-Themen
-------
-
-* <%= link_to_name('Linux Basics', 'courses-linux-basics') %>
-* Ausgewähte Themen
-  * Software Build
-  * Debugging: GDB, `strace`, `valgrind`
-  * Multithreading und Realtime
-  * Kernelstruktur, Driver, Boot
-  * Package Management unter Debian/Ubuntu
-
 Fragen und Antworten
 --------------------
 
