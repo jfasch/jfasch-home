@@ -15,6 +15,28 @@ sich einiges an Wissen angesammelt. Vieles davon ist nicht mehr
 relevant (was gut ist); einiges vom Rest habe ich strukturiert und zu
 Schulungsunterlagen verarbeitet.
 
+Mir ist es sehr wichtig, Schulungen ausschliesslich über solche Themen
+anzubieten, in denen ich selbst lange genug tätig bin und in denen ich
+genügend Erfahrung besitze. Zum Beispiel möchte ich gerne eines Tages
+eine Schulung über [Git](http://git-scm.com/) anbieten --- bis dahin
+ist es allerdings noch ein langer Weg. Ich lerne noch.
+
+Basics
+------
+
+Der <%= link_to_name('Einführungskurs', 'courses-linux-basics') %>
+soll Ein- und vor allem Umsteigern zu einem schnellen Start in Linux
+verhelfen.
+
+Programmiersprachen
+-------------------
+
+Finden Sie <%= link_to_name('hier', 'courses-programming') %> einen
+Überblick über Schulungen zu verschiedenen Programmiersprachen.
+
+Systemnahe Programmierung
+-------------------------
+
 Ein Großteil des Materials entfällt auf die <%=
 link_to_name('Systemnahe Programmierung', 'courses-sysprog') %> ---
 hier versuche ich, meinen Eindruck der Schönheit eines Linux-Systems
@@ -23,6 +45,9 @@ Material](http://www.fh-joanneum.at/aw/home/Studienangebot_Uebersicht/fachbereic
 unterrichte ich bisweilen auch an der [FH
 Joanneum](http://www.fh-joanneum.at) in Kapfenberg.
 
+Verschiedenes
+-------------
+
 Der Rest ist "Beiwerk". Unter Linux hat sich eine grosse Kultur
 entwickelt, was Entwicklungswerkzeuge, Programmiersprachen, und vor
 allem Vorgehensweisen und Geschmack betrifft. Als sehr Linux-lastiger
@@ -30,13 +55,6 @@ Softwareentwickler habe ich mich jahrelang in dieser Kultur bewegt ---
 ich bin praktisch in ihr aufgewachsen. Finden Sie <%=
 link_to_name('hier eine Aufstellung von Kursen aus diesem Bereich',
 'courses-misc') %>.
-
-Mir ist es sehr wichtig, Schulungen ausschliesslich über solche Themen
-anzubieten, in denen ich selbst lange genug tätig bin und in denen ich
-genügend Erfahrung besitze. Zum Beispiel möchte ich gerne eines Tages
-eine Schulung über [Git](http://git-scm.com/) anbieten --- bis dahin
-ist es allerdings noch ein langer Weg. Ich lerne noch.
-
 
 
 

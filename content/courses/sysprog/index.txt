@@ -5,7 +5,7 @@ target_name: courses-sysprog
 tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall']
 
 menu: true
-menu_order: 10
+menu_order: 30
 ---
 
 Systemnahes Programmieren unter Linux

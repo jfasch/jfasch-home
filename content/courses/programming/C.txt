@@ -1,0 +1,17 @@
+---
+title: "C"
+target_name: course-prog-c
+
+tags: ['kurs', 'schulung', 'c']
+
+context: course
+course_duration: 5
+course_type: inhouse
+
+menu_order: 10
+---
+
+C
+=
+
+Dieser Kurs ist gerade in Vorbereitung --- bitte um etwas Geduld.

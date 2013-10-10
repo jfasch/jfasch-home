@@ -1,6 +1,5 @@
 ---
-title: "Softwareentwicklung"
-menu_order: 100
+title: "Schnelleinstieg"
 target_name: course-kettner-swd
 
 tags: ['linux', 'kurs', 'schulung', 'toolchain', 'gcc', 'qt', 'make',

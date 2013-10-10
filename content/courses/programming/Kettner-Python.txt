@@ -1,13 +1,14 @@
 ---
 title: "Python"
-menu_order: 120
-target_name: course-kettner-python
+target_name: course-prog-python
 
 tags: ['linux', 'kurs', 'schulung', 'python']
 
 context: course
 course_type: hosted
 course_duration: 3
+
+menu_order: 30
 ---
 
 Python

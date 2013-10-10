@@ -5,13 +5,11 @@ target_name: courses-misc
 tags: ['linux', 'kurs', 'schulung']
 
 menu: true
-menu_order: 20
+menu_order: 40
 ---
 
 Verschiedenes
 =============
 
-* <%= link_to_name('Softwareentwicklung unter Linux für Nicht-Linuxer', 'course-kettner-swd') %>
 * <%= link_to_name('Linux from Scratch', 'course-kettner-lfs') %>
 * <%= link_to_name('Einführung in Subversion', 'course-svn') %>
-* <%= link_to_name('Einführung in Python', 'course-kettner-python') %>

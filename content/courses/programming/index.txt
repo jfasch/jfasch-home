@@ -1,0 +1,30 @@
+---
+title: "Programmieren"
+target_name: courses-programming
+
+tags: ['linux', 'kurs', 'schulung', 'programmieren']
+
+menu: true
+menu_order: 20
+---
+
+Programmieren unter Linux
+=========================
+
+Unix und speziell Linux haben eine Vielzahl von Programmiersprachen
+hervorgebracht. Im Laufe der Zeit habe ich viele von ihnen
+erlernt. Einige habe ich erfolgreich verlernt (zum Beispiel Perl),
+andere sind mir erhalten geblieben.
+
+* <%= link_to_name('C', 'course-prog-c') %>: C anhand des didaktisch
+  perfekten (weil minimalen) Buches [The C Programming
+  Language](http://en.wikipedia.org/wiki/The_C_Programming_Language)
+* <%= link_to_name('C++', 'course-prog-cxx') %>: ein Einführung in C++
+* <%= link_to_name('Python', 'course-prog-python') %>: die schönste
+  Programmiersprache
+* <%= link_to_name('Bourne (Again) Shell', 'course-prog-bash') %>:
+  Shell Scripts müssen nicht hässlich sein
+* <%= link_to_name('GNU Make', 'course-prog-make') %>: die Mutter
+  aller Build Tools --- ist auch eine kleine Programmiersprache
+* <%= link_to_name('Schnelleinstieg', 'course-kettner-swd') %>: Ein
+  Überblick über die Softwareentwicklung unter Linux
