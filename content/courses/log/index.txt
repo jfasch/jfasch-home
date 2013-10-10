@@ -1,0 +1,15 @@
+---
+title: "(Log)"
+target_name: courses-log
+---
+
+Hier eine Liste von bereits gehaltenen Schulungen. *Die Einträge
+kommen nur mit ausdrücklicher Erlaubnis des jeweiligen Kunden
+zustande*.
+
+<!--
+
+* <%= link_to_name('Qualivision, 1.10.2013 bis 4.10.2013',
+  'courses-log-2013-10-01-qualivision') %>
+
+-->
