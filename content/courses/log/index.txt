@@ -27,7 +27,7 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
     * Package Management unter Debian/Ubuntu
 
 * **16.9.2013 bis 20.9.2013 bei der [Firma Mathias
-  Kettner](mathias-kettner.de) in München**
+  Kettner](http://mathias-kettner.de) in München**
 
   * <%= link_to_name('Linux from Scratch', 'course-kettner-lfs') %>
 
@@ -62,7 +62,7 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
 * **19.11.2012 bis 21.11.2012 bei der Polizei Niedersachsen in
   Hannover**
 
-  (Im Auftrag der [Firma Mathias Kettner](mathias-kettner.de))
+  (Im Auftrag der [Firma Mathias Kettner](http://mathias-kettner.de))
 
   * [Fehlerdiagnose unter
     Linux](http://mathias-kettner.de/diagnosebuch.html) (auszugsweise)
@@ -73,14 +73,14 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
     Programmierung', 'courses-sysprog') %>
 
 * **15.10.2012 bis 17.10.2012 bei der Firma [Mathias
-  Kettner](mathias-kettner.de) in München**
+  Kettner](http://mathias-kettner.de) in München**
 
   * <%= link_to_name('Python', 'course-prog-python') %>
 
 * **25.9.2012 bis 27.9.2012 bei der [Firma
   STIA](http://www.admonter.at) in Admont/Steiermark**
 
-  (Im Auftrag der [Firma Mathias Kettner](mathias-kettner.de))
+  (Im Auftrag der [Firma Mathias Kettner](http://mathias-kettner.de))
 
   * <%= link_to_name('Python', 'course-prog-python') %>
 
@@ -90,7 +90,7 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
     'courses-sysprog') %>
 
 * **23.1.2012 bis 25.1.2012 bei der Firma [Mathias
-  Kettner](mathias-kettner.de) in München**
+  Kettner](http://mathias-kettner.de) in München**
 
   * <%= link_to_name('Python', 'course-prog-python') %>
 
@@ -115,13 +115,13 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
   * <%= link_to_name('Systemnahe Programmierung', 'courses-sysprog') %>
 
 * **12.12.2010 bis 17.12.2010 bei der [Firma Mathias
-  Kettner](mathias-kettner.de) in München**
+  Kettner](http://mathias-kettner.de) in München**
 
   * <%= link_to_name('Linux from Scratch', 'course-kettner-lfs') %>
 
 * **6.12.2010 bis 10.12.2010 bei einer Firma in Darmstadt**
 
-  (Im Auftrag der [Firma Mathias Kettner](mathias-kettner.de))
+  (Im Auftrag der [Firma Mathias Kettner](http://mathias-kettner.de))
 
   * Software Build
   * Debugging: GDB, `strace`, `valgrind`
@@ -129,7 +129,7 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
 
 * **24.11.2010 bis 26.11.2010 bei einer Firma im Raum Ulm**
 
-  (Im Auftrag der [Firma Mathias Kettner](mathias-kettner.de))
+  (Im Auftrag der [Firma Mathias Kettner](http://mathias-kettner.de))
 
   * Software Build
   * Debugging: GDB, `strace`, `valgrind`
@@ -139,6 +139,6 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
 * **25.10.2010 bis 26.10.2010 bei der Deutschen Bundeswehr in
   Wildflecken**
 
-  (Im Auftrag der [Firma Mathias Kettner](mathias-kettner.de))
+  (Im Auftrag der [Firma Mathias Kettner](http://mathias-kettner.de))
 
   * Linux Kernel
