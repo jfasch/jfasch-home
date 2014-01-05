@@ -1,0 +1,10 @@
+---
+title: "Privates"
+menu: true
+target_name: private
+---
+
+Island
+======
+
+ * <%= link_to_name('Reiseplanung', 'iceland-plan') %>
