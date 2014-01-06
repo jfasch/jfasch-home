@@ -4,9 +4,11 @@ menu: true
 target_name: iceland-plan
 ---
 
-Wechselkurs 100kr -> 0.63€
+Allgemeines
+===========
 
-[http://de.coinmill.com/EUR_ISK.html](http://de.coinmill.com/EUR_ISK.html)
+ * [Wikitravel, Überblick](http://wikitravel.org/en/Iceland)
+ * [Wechselkurs 100kr -> 0.63€](http://de.coinmill.com/EUR_ISK.html)
 
 Rejkjavik
 =========
@@ -19,22 +21,28 @@ Lavawasser](http://wanderingtrader.com/travel-blog/the-blue-lagoon-iceland/)
 20km südöstlich von Rejkjavik. Vielleicht als Abschluss zum
 Dreckrunterwaschen, wenn wir wieder in Rejkjavik sind.
 
+ * [Wikitravel](http://wikitravel.org/en/Blue_Lagoon)
  * [Google Maps](https://maps.google.at/maps?q=Blue+Lagoon,+Reykjav%C3%ADk,+Su%C3%B0urnes,+Island&hl=de&ie=UTF8&sll=65.717641,-16.280365&sspn=0.415086,1.893768&oq=blue&t=h&hq=Blue+Lagoon,+Reykjav%C3%ADk,&hnear=Su%C3%B0urnes,+Island&z=12). 
 
 Landmannalaugar
 ===============
 
-Im Süden, am Weg nach Skaftafell.
+Im Süden, am Weg nach Skaftafell. Viele Vulkane, Touristenhochburg
+glaub ich.
 
- * Viele Vulkane
- * Touristenhochburg glaub ich
- * [Wikipedia](http://de.wikipedia.org/wiki/Landmannalaugar)
+ * [Wikitravel](http://wikitravel.org/en/Landmannalaugar)
 
 Skaftafell
 ==========
 
- * Im Süden, unterhalb vom Vatnajökull (größter Gletscher); geniales
-   Schwemmland mit Leuchtturm. Skaftafell National Park.
+Im Süden, unterhalb vom Vatnajökull (größter Gletscher). Tor zum
+[Skaftafell National
+Park](http://wikitravel.org/en/Skaftafell_National_Park). Davor, zum
+Meer hin, geniales Schwemmland mit Leuchtturm.
+
+**Da müssma unbedingt ein paar Tage bleiben.**
+
+ * [Wikitravel](http://wikitravel.org/en/Skaftafell_National_Park)
  * [Google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=12)
  * Unterkunft
    * Listen
@@ -50,12 +58,15 @@ Skaftafell
 Strand bei Borgarfjordur
 ========================
 
- * Im Nordosten
- * Im Westen von dem Dorf ist ein großer Strand mit zwei
-   Flüßmündungen. In den Westen von dem Strand geht eine Strasse links
-   von den Flüssen, die muss man schon früher nehmen, im
-   Landesinneren.
- * [Homepage von dem Kaff](http://www.borgarfjordureystri.is/en)
+Im Nordosten (oben rechts). Das Dorf ist erreichbar über ein breites
+Tal, das das eigentliche Ziel ist. In dem Tal fliessen zwei Flüsse vom
+Vatnajökull und münden in einem 3km breiten Strand ins Grönlandmeer.
+
+Eine Strasse (Weg?) führt links (westlich) von den Flüssen, die muss
+man schon früher nehmen, im Landesinneren bei Fljotsdalsherad. **Da
+müssma unbedingt ein paar Tage bleiben.**
+
+ * [Homepage von Borgarfjordur](http://www.borgarfjordureystri.is/en)
  * [Google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&ll=65.553914,-14.60083&spn=0.417713,1.893768&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=10)
 
 Dettifoss Wasserfall
@@ -72,6 +83,7 @@ Myvatn Seen
 
 "Pseudokrater" im Süden. Da geht die Strasse vorbei -> verweilen!
 
+ * [Wikitravel](http://wikitravel.org/en/Myvatn)
  * [National Geographic](http://travel.nationalgeographic.com/travel/365-photos/lake-mvatn-iceland/)
  * [Google Maps](https://maps.google.at/maps?q=myvatn&hl=de&ie=UTF8&ll=65.853386,-16.751404&spn=0.825821,3.787537&sll=65.788419,-16.309204&sspn=0.206974,0.946884&t=h&hnear=M%C3%BDvatn&z=9)
 
