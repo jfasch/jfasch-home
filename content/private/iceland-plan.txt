@@ -14,10 +14,10 @@ Rejkjavik
 Blue Lagoon
 ------------
 
-Badeort (?) 20km [südöstlich von
-Rejkjavik]((http://wanderingtrader.com/travel-blog/the-blue-lagoon-iceland/)). Vielleicht
-als Abschluss zum Dreckrunterwaschen, wenn wir wieder in Rejkjavik
-sind.
+[Badeort in
+Lavawasser](http://wanderingtrader.com/travel-blog/the-blue-lagoon-iceland/)
+20km südöstlich von Rejkjavik. Vielleicht als Abschluss zum
+Dreckrunterwaschen, wenn wir wieder in Rejkjavik sind.
 
  * [Google Maps](https://maps.google.at/maps?q=Blue+Lagoon,+Reykjav%C3%ADk,+Su%C3%B0urnes,+Island&hl=de&ie=UTF8&sll=65.717641,-16.280365&sspn=0.415086,1.893768&oq=blue&t=h&hq=Blue+Lagoon,+Reykjav%C3%ADk,&hnear=Su%C3%B0urnes,+Island&z=12). 
 
@@ -35,7 +35,7 @@ Skaftafell
 
  * Im Süden, unterhalb vom Vatnajökull (größter Gletscher); geniales
    Schwemmland mit Leuchtturm. Skaftafell National Park.
- * [google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=12)
+ * [Google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=12)
  * Unterkunft
    * Listen
      [glacierguides.is](http://www.glacierguides.is/accommodation)
@@ -45,7 +45,7 @@ Skaftafell
    * [svinafell.com](http://www.svinafell.com/english/index-en.htm)
      * Hütten für Schlafsack
      * 3700kr -> 23.47€/Person
- * [Wanderung zu einem Wasserfall](http://www.iceland.de/index.php?id=5889&no_cache=1)
+ * [Wanderung zum Wasserfall Svartifoss](http://www.iceland.de/index.php?id=5889&no_cache=1)
 
 Strand bei Borgarfjordur
 ========================
@@ -55,6 +55,7 @@ Strand bei Borgarfjordur
    Flüßmündungen. In den Westen von dem Strand geht eine Strasse links
    von den Flüssen, die muss man schon früher nehmen, im
    Landesinneren.
+ * [Homepage von dem Kaff](http://www.borgarfjordureystri.is/en)
  * [Google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&ll=65.553914,-14.60083&spn=0.417713,1.893768&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=10)
 
 Dettifoss Wasserfall
