@@ -17,11 +17,24 @@ Autovermietungen
  * [http://www.geysir.is](http://www.geysir.is). Die haben einen Lada
    Niva um gut 1500€ 2 Wochen.
 
-Rejkjavik
-=========
+Tourenvarianten
+===============
 
-Blue Lagoon
-------------
+Die Ringstrasse entlang gegen den Uhrzeiger
+-------------------------------------------
+
+[Rejkjavik](#Rejkjavik) - [Skaftafell](#Skaftafell) - [Borgarfjordur](#Borgarfjordur) - [Dettifoss](#Dettifoss) - [Myvatn](#Myvatn) - [Godafoss](#Godafoss) - [Blue Lagoon](#BlueLagoon)
+
+Ab Landmannalaugar quer durchs Nichts
+-------------------------------------
+
+[Rejkjavik](#Rejkjavik) - [Landmannalaugar](#Landmannalaugar) - [Zentrales Hochland](#ZentralesHochland) - [Dettifoss](#Dettifoss) - [Myvatn](#Myvatn) - [Borgarfjordur](#Borgarfjordur) - [Skaftafell](#Skaftafell)
+
+<a name="Rejkjavik">Rejkjavik</a>
+=================================
+
+<a name="BlueLagoon">Blue Lagoon</a>
+------------------------------------
 
 [Badeort in
 Lavawasser](http://wanderingtrader.com/travel-blog/the-blue-lagoon-iceland/)
@@ -31,10 +44,10 @@ Dreckrunterwaschen, wenn wir wieder in Rejkjavik sind.
  * [Wikitravel](http://wikitravel.org/en/Blue_Lagoon)
  * [Google Maps](https://maps.google.at/maps?q=Blue+Lagoon,+Reykjav%C3%ADk,+Su%C3%B0urnes,+Island&hl=de&ie=UTF8&sll=65.717641,-16.280365&sspn=0.415086,1.893768&oq=blue&t=h&hq=Blue+Lagoon,+Reykjav%C3%ADk,&hnear=Su%C3%B0urnes,+Island&z=12). 
 
-Landmannalaugar
-===============
+<a name="Landmannalaugar">Landmannalaugar</a>
+=============================================
 
-Im Süden, am Weg nach Skaftafell. Viele Vulkane, heisse
+Im Süden, am Weg nach [Skaftafell](#Skaftafell). Viele Vulkane, heisse
 Quellen. Touristenhochburg glaub ich.
 
  * [Wikitravel](http://wikitravel.org/en/Landmannalaugar)
@@ -42,8 +55,8 @@ Quellen. Touristenhochburg glaub ich.
    nicht, ob das zu Landmannalaugar gehört, aber für unsere Geologin
    einen Ausflug wert. Unter Umständen statt Landmannalaugar.
 
-Skaftafell
-==========
+<a name="Skaftafell">Skaftafell</a>
+===================================
 
 Im Süden, unterhalb vom Vatnajökull (größter Gletscher). Tor zum
 [Skaftafell National
@@ -65,8 +78,8 @@ Meer hin, geniales Schwemmland mit Leuchtturm.
      * 3700kr -> 23.47€/Person
  * [Wanderung zum Wasserfall Svartifoss](http://www.iceland.de/index.php?id=5889&no_cache=1)
 
-Strand bei Borgarfjordur
-========================
+<a name="Borgarfjordur">Strand bei Borgarfjordur</a>
+====================================================
 
 Im Nordosten (oben rechts). Das Dorf ist erreichbar über ein breites
 Tal, das das eigentliche Ziel ist. In dem Tal fliessen zwei Flüsse vom
@@ -79,8 +92,8 @@ müssma unbedingt ein paar Tage bleiben.**
  * [Homepage von Borgarfjordur](http://www.borgarfjordureystri.is/en)
  * [Google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&ll=65.553914,-14.60083&spn=0.417713,1.893768&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=10)
 
-Dettifoss Wasserfall
-====================
+<a name="Dettifoss">Dettifoss Wasserfall</a>
+============================================
 
 Riesenwasserfall. 30km vor Myvatn, ca. 30km nach Norden von der
 Strasse weg.
@@ -88,19 +101,32 @@ Strasse weg.
  * [Wikipedia](http://en.wikipedia.org/wiki/Dettifoss)
  * [Google Maps](https://maps.google.at/maps?q=dettifoss&hl=de&ll=65.788419,-16.309204&spn=0.206974,0.946884&sll=65.553914,-14.60083&sspn=0.417713,1.893768&t=h&hnear=Dettifoss&z=11)
 
-Myvatn Seen
-===========
+<a name="Myvatn">Myvatn Seen</a>
+================================
 
-"Pseudokrater" im Süden. Da geht die Strasse vorbei -> verweilen!
+Der See mit den vielen Mücken. "Pseudokrater" im Süden, sehr schöne
+Landschaft sagen sie. Da geht die Strasse vorbei -> verweilen!
 
  * [Wikitravel](http://wikitravel.org/en/Myvatn)
  * [National Geographic](http://travel.nationalgeographic.com/travel/365-photos/lake-mvatn-iceland/)
  * [Google Maps](https://maps.google.at/maps?q=myvatn&hl=de&ie=UTF8&ll=65.853386,-16.751404&spn=0.825821,3.787537&sll=65.788419,-16.309204&sspn=0.206974,0.946884&t=h&hnear=M%C3%BDvatn&z=9)
 
-Godafoss Wasserfall
-===================
+<a name="Godafoss">Godafoss Wasserfall</a>
+==========================================
 
 30km westlich von Myvatn, an der Strasse. Unbedingt anschauen.
 
  * [Wikipedia](http://en.wikipedia.org/wiki/Go%C3%B0afoss)
  * [Google Maps](https://maps.google.at/maps?q=godafoss&hl=de&sll=65.853386,-16.751404&sspn=0.825821,3.787537&t=h&hq=godafoss&z=9)
+
+<a name="ZentralesHochland">Zentrales Hochland</a>
+==================================================
+
+Route von Landmannalaugar im Süden zurück zur Ringstrasse im Norden,
+[ca. 40km östlich von Myvatn](https://maps.google.at/?ll=65.63109,-16.163635&spn=0.673176,2.90863&t=h&z=9&lci=com.panoramio.all). Dazwischen ist [_Das Nichts_](https://maps.google.at/?ll=64.926423,-16.705718&spn=0.086423,0.363579&t=h&z=12&layer=c&cbll=64.926423,-16.705718&cbp=12,0,,0,0&photoid=po-68298558), bestehend aus
+
+ * der Rückenansicht des Vatnajökull
+ * dem [Vulkan Askja mit dem Kratersee Öskjuvatn](https://maps.google.at/?ll=65.022306,-16.583862&spn=0.344458,1.454315&t=h&z=10&lci=com.panoramio.all)
+ * dem Vulkan [Herdubreid](https://maps.google.at/?ll=65.176977,-16.329632&spn=0.042807,0.181789&t=h&z=13&lci=com.panoramio.all)
+
+ * [Wikipedia](http://de.wikipedia.org/wiki/Isl%C3%A4ndisches_Hochland)
