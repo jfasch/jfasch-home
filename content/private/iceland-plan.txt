@@ -118,7 +118,6 @@ Landschaft sagen sie. Da geht die Strasse vorbei -> verweilen!
 
  * [Wikitravel](http://wikitravel.org/en/Myvatn)
  * [National Geographic](http://travel.nationalgeographic.com/travel/365-photos/lake-mvatn-iceland/)
- * [Google Maps](https://maps.google.at/maps?q=myvatn&hl=de&ie=UTF8&ll=65.853386,-16.751404&spn=0.825821,3.787537&sll=65.788419,-16.309204&sspn=0.206974,0.946884&t=h&hnear=M%C3%BDvatn&z=9)
 
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.frank-probst.de/reisen-htm/island95/media/myvatn.jpg"></iframe>
 
@@ -130,7 +129,10 @@ Landschaft sagen sie. Da geht die Strasse vorbei -> verweilen!
 30km westlich von Myvatn, an der Strasse. Unbedingt anschauen.
 
  * [Wikipedia](http://en.wikipedia.org/wiki/Go%C3%B0afoss)
- * [Google Maps](https://maps.google.at/maps?q=godafoss&hl=de&sll=65.853386,-16.751404&sspn=0.825821,3.787537&t=h&hq=godafoss&z=9)
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://duchrow.bplaced.net/island/pict/island-der-gotterwasserfall-godafoss-20080810_094758.jpg"></iframe>
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=65.682603,-17.539902&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=65.643553,-17.30896&amp;spn=0.396456,1.167297&amp;z=9&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=65.682603,-17.539902&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=65.643553,-17.30896&amp;spn=0.396456,1.167297&amp;z=9&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
 
 <a name="ZentralesHochland">Zentrales Hochland</a>
 ==================================================
