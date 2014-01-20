@@ -145,3 +145,7 @@ Route von Landmannalaugar im Süden zurück zur Ringstrasse im Norden,
  * dem Vulkan [Herdubreid](https://maps.google.at/?ll=65.176977,-16.329632&spn=0.042807,0.181789&t=h&z=13&lci=com.panoramio.all)
 
  * [Wikipedia](http://de.wikipedia.org/wiki/Isl%C3%A4ndisches_Hochland)
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.traildino.com/img/upload/Europe/Iceland/Trails/General/Askja_trail-01b.jpg"></iframe>
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=65.014186,-16.788025&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=65.032742,-16.737671&amp;spn=0.811558,2.334595&amp;z=8&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=65.014186,-16.788025&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=65.032742,-16.737671&amp;spn=0.811558,2.334595&amp;z=8&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
