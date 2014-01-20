@@ -42,7 +42,8 @@ Lavawasser](http://wanderingtrader.com/travel-blog/the-blue-lagoon-iceland/)
 Dreckrunterwaschen, wenn wir wieder in Rejkjavik sind.
 
  * [Wikitravel](http://wikitravel.org/en/Blue_Lagoon)
- * [Google Maps](https://maps.google.at/maps?q=Blue+Lagoon,+Reykjav%C3%ADk,+Su%C3%B0urnes,+Island&hl=de&ie=UTF8&sll=65.717641,-16.280365&sspn=0.415086,1.893768&oq=blue&t=h&hq=Blue+Lagoon,+Reykjav%C3%ADk,&hnear=Su%C3%B0urnes,+Island&z=12). 
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=Blue+Lagoon,+Reykjav%C3%ADk,+Su%C3%B0urnes,+Island&amp;hl=de&amp;ie=UTF8&amp;sll=65.717641,-16.280365&amp;sspn=0.415086,1.893768&amp;oq=blue&amp;t=h&amp;hq=Blue+Lagoon,+Reykjav%C3%ADk,&amp;hnear=Su%C3%B0urnes,+Island&amp;ll=63.879995,-22.449188&amp;spn=0.211609,0.583649&amp;z=10&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=Blue+Lagoon,+Reykjav%C3%ADk,+Su%C3%B0urnes,+Island&amp;hl=de&amp;ie=UTF8&amp;sll=65.717641,-16.280365&amp;sspn=0.415086,1.893768&amp;oq=blue&amp;t=h&amp;hq=Blue+Lagoon,+Reykjav%C3%ADk,&amp;hnear=Su%C3%B0urnes,+Island&amp;ll=63.879995,-22.449188&amp;spn=0.211609,0.583649&amp;z=10&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
 
 <a name="Landmannalaugar">Landmannalaugar</a>
 =============================================
@@ -55,6 +56,8 @@ Quellen. Touristenhochburg glaub ich.
    nicht, ob das zu Landmannalaugar gehört, aber für unsere Geologin
    einen Ausflug wert. Unter Umständen statt Landmannalaugar.
 
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=63.982287,-19.082279&amp;num=1&amp;t=h&amp;ie=UTF8&amp;z=12&amp;ll=63.983793,-19.095612&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=63.982287,-19.082279&amp;num=1&amp;t=h&amp;ie=UTF8&amp;z=12&amp;ll=63.983793,-19.095612&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
+
 <a name="Skaftafell">Skaftafell</a>
 ===================================
 
@@ -66,7 +69,6 @@ Meer hin, geniales Schwemmland mit Leuchtturm.
 **Da müssma unbedingt ein paar Tage bleiben.**
 
  * [Wikitravel](http://wikitravel.org/en/Skaftafell_National_Park)
- * [Google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=12)
  * Unterkunft
    * Listen
      [glacierguides.is](http://www.glacierguides.is/accommodation)
@@ -77,6 +79,8 @@ Meer hin, geniales Schwemmland mit Leuchtturm.
      * Hütten für Schlafsack
      * 3700kr -> 23.47€/Person
  * [Wanderung zum Wasserfall Svartifoss](http://www.iceland.de/index.php?id=5889&no_cache=1)
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=64.030737,-17.000198&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=63.953055,-17.023315&amp;spn=0.422119,1.167297&amp;z=9&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=64.030737,-17.000198&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=63.953055,-17.023315&amp;spn=0.422119,1.167297&amp;z=9&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
 
 <a name="Borgarfjordur">Strand bei Borgarfjordur</a>
 ====================================================
@@ -90,7 +94,8 @@ man schon früher nehmen, im Landesinneren bei Fljotsdalsherad. **Da
 müssma unbedingt ein paar Tage bleiben.**
 
  * [Homepage von Borgarfjordur](http://www.borgarfjordureystri.is/en)
- * [Google Maps](https://maps.google.at/maps?q=Skaftafell,+Island&hl=de&ll=65.553914,-14.60083&spn=0.417713,1.893768&sll=47.141161,14.864502&sspn=2.746214,7.575073&oq=skaf&t=h&hnear=Skaftafell,+Island&z=10)
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=65.64412,-14.25911&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;z=10&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=65.64412,-14.25911&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;z=10&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
 
 <a name="Dettifoss">Dettifoss Wasserfall</a>
 ============================================
@@ -101,6 +106,10 @@ Strasse weg.
  * [Wikipedia](http://en.wikipedia.org/wiki/Dettifoss)
  * [Google Maps](https://maps.google.at/maps?q=dettifoss&hl=de&ll=65.788419,-16.309204&spn=0.206974,0.946884&sll=65.553914,-14.60083&sspn=0.417713,1.893768&t=h&hnear=Dettifoss&z=11)
 
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://randomstory.org/wp-content/uploads/2013/04/11.jpeg"></iframe>
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=65.819657,-16.378326&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=65.719335,-16.737671&amp;spn=0.395298,1.167297&amp;z=9&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=65.819657,-16.378326&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;ll=65.719335,-16.737671&amp;spn=0.395298,1.167297&amp;z=9&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
+
 <a name="Myvatn">Myvatn Seen</a>
 ================================
 
@@ -110,6 +119,10 @@ Landschaft sagen sie. Da geht die Strasse vorbei -> verweilen!
  * [Wikitravel](http://wikitravel.org/en/Myvatn)
  * [National Geographic](http://travel.nationalgeographic.com/travel/365-photos/lake-mvatn-iceland/)
  * [Google Maps](https://maps.google.at/maps?q=myvatn&hl=de&ie=UTF8&ll=65.853386,-16.751404&spn=0.825821,3.787537&sll=65.788419,-16.309204&sspn=0.206974,0.946884&t=h&hnear=M%C3%BDvatn&z=9)
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.frank-probst.de/reisen-htm/island95/media/myvatn.jpg"></iframe>
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.at/maps?q=65.598205,-16.999054&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;z=9&amp;ll=65.605012,-16.954651&amp;output=embed"></iframe><br /><small><a href="https://maps.google.at/maps?q=65.598205,-16.999054&amp;num=1&amp;t=h&amp;hl=de&amp;ie=UTF8&amp;z=9&amp;ll=65.605012,-16.954651&amp;source=embed" style="color:#0000FF;text-align:left">Größere Kartenansicht</a></small>
 
 <a name="Godafoss">Godafoss Wasserfall</a>
 ==========================================
