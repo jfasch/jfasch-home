@@ -6,7 +6,13 @@ target_name: projects
 Bisherige Projekte
 ==================
 
-(Stand Juni 2013)
+(Stand Jänner 2014)
+
+* **Devicedriver für die PCI Hardware eines Messgeräteherstellers**
+  (Windows-Portierung des [untenstehenden Projektes](#dewe-pci-linux)
+
+  Zeit: Jänner 2014 bis dato<br>
+  Ort: Raum Graz
 
 * **Backport und Integration eines Touchcontroller-Drivers**, für eine
     Systemintegrationsfirma im Raum Stuttgart
@@ -20,9 +26,9 @@ Bisherige Projekte
 
   Zeit: Februar bis Juni 2013<br>
 
-* **Devicedriver für die PCI Hardware eines Messgeräteherstellers**
+* <a name="dewe-pci-linux">**Devicedriver für die PCI Hardware eines Messgeräteherstellers**</a>
 
-  Zeit: Dezember 2012 bis dato<br>
+  Zeit: Dezember 2012 bis September 2013<br>
   Ort: Raum Graz
 
 * **Vollautomatische Installation von Serveranlagen** eines
