@@ -60,7 +60,7 @@ Bisherige Projekte
 * **Integration von IP Kameras** für einen Hersteller von
   Videomautsystemen
 
-  * Implementation einer GigE-Vision Clientlibrary
+  * Implementation einer GigE-Vision Clientlibrary (C++)
   * Softwarebasierte Kamerasimulation (in C++)
 
   Zeit: September 2011 bis April 2012

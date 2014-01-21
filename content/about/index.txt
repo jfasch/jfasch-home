@@ -14,6 +14,12 @@ bitte folgenden Links:
 * <%= link_to_name('Eine Liste meiner technischen Fähigkeiten', 'skills') %>
 * <%= link_to_name('Eine Liste meiner bisherigen Projekte', 'projects') %>
 
+Englische Übersetzungen:
+
+* <%= link_to_name('A more formal Curriculum Vitae', 'cv-en') %>
+* <%= link_to_name('Technical skills', 'skills-en') %>
+* <%= link_to_name('List of projects mastered', 'projects-en') %>
+
 Programmieren, Linux, und ich
 =============================
 

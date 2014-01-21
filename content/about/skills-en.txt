@@ -1,0 +1,43 @@
+---
+title: "Skills"
+target_name: skills-en
+---
+
+* Linux
+  * Network programming
+  * Multithreading
+  * Realtime
+  * USB (Host and device, libusb and GadgetFS)
+  * Serial protocols (RS232, RS485)
+  * Porting from Embedded OS's to Linux
+  * Distros: Gentoo, OpenEmbedded/Angström.
+  * Boot process
+  * Busybox and initramfs
+  * UnionFS/aufs
+  * Driver development
+
+* Programming Languages
+  * C and C++ (mainly the GNU Toolchain), STL, Boost
+  * Python
+  * Shell
+  * Perl
+  * Mono/C#
+
+* Software development
+  * Object Oriented Programming
+  * OOA, OOD
+  * Unit Testing
+  * GUI-Programming in Gtk+ and Qt
+
+* Release management and version control
+  * Release management processes
+  * Git
+  * SVN
+  * CVS
+  * Clearcase
+
+* Software Build (mainly C/C++)
+  * Automake
+  * CMake
+  * http://confix.sf.net
+  * KDevelop, Eclipse CDT
