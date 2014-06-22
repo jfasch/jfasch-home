@@ -10,8 +10,91 @@ course_type: inhouse
 
 menu_order: 10
 ---
+C: Die Programmierprache
+========================
 
-C
-=
+Der _Bibel_ von Brian Kernighan und Dennis Ritchie kann man nichts
+hinzufügen. Der "Erfinder" von C, Dennis Ritchie, kann wohl am besten
+erklären, wie C tickt, wozu man es verwendet, und wo seine Grenzen
+sind.
 
-Dieser Kurs ist gerade in Vorbereitung --- bitte um etwas Geduld.
+Der Kurs nimmt das Buch als Vorlage für die Didaktik und ergänzt es
+durch Übungen und etwas Kontext aus der heutigen Zeit. Sollte der Kurs
+als Vorbereitung für den <%= link_to_name('C++-Kurs',
+'course-prog-cxx') %> dienen, macht es Sinn, nur den Sprachkern zu
+unterrichten und auf die Standardlibrary zugunsten der bequemeren
+C++-Werkzeuge zu verzichten.
+
+Inhalt
+======
+
+C ist eine sehr kleine Sprache. Beim Sprachdesign hat man offenbar
+darauf geachtet, dass der Sprachkern isoliert verwendet werden kann
+und man alles, was C abseits davon mitbringt, optional hält. Dadurch
+eignet sich C hervorragend für Systemprogrammierung --- man kann
+optionale Features wie zum Beispiel File I/O weglassen, wenn File I/O
+keinen Sinn macht (zum Beispiel weil man ein Embedded OS progammiert).
+
+Der Kurs ist dementsprechend sinngemäss in zwei separate Kapitel
+aufgeteilt --- Sprachkern und Standardlibrary.
+
+Der Sprachkern
+--------------
+
+* **Grundlagen**. C ist eine Sprache, um nackten Speicher zu
+  manipulieren. Maschineninstruktionen werden direkt ausgeführt. Das
+  bringt einen erheblichen Geschwindigkeitsvorteil gegenüber
+  interpretierten Sprachen --- aber auch den Nachteil, dass man zu
+  jeder Zeit genau wissen muss, was man tut. In diesem Kapitel werden
+  Grundlagen erklärt, die für das Verständnis der Speicherverwaltung
+  eines Programmes zu tun haben.
+
+* **Kontrollkonstrukte**. Das wenigste, worin sich C von anderen
+  Sprachen unterscheidet, sind Kontrollstrukturen wie `if`, `switch`,
+  `while`, sowie Funktionen.
+
+* **Pointer** sind das Beliebteste an C, da sie eine Unmenge an
+  Flexibilität einbringen. Sie sind auch das Unbeliebteste an C, da
+  sie eine Unmenge an Fehlermöglichkeiten einbringen. Neben Pointern
+  werden auch Möglichkeiten gezeigt, die unvermeidlichen Fehler zu
+  finden.
+
+* **Implizite Typumwandlungen**. Ein Hauptkritikpunkt an C ist die
+  sorglose Konvertierung zwischen signed und unsigned Integertypen,
+  zwischen Integertypen verschiedener Breite, und zwischen Floating
+  Point Zahlen und Integers. Die Konvertierungen folgen
+  nichtsdestotrotz einem Regelwerk, das man verstanden haben sollte,
+  um korrekte Programme schreiben zu können.
+
+* **Der C-Präprozessor**. So leid es mir tut, er ist Teil der Sprache,
+  und muss zumindest in Grundzügen gezeigt werden.
+
+* **Modularisierung** ist heutzutage aus der Programmierung nicht mehr
+  wegzudenken. Ein Grund für den Erfolg von C war damals die
+  Möglichkeit, Teile von Programmen separat zu bauen und sie erst
+  später zu verbinden. Hier gibt es einiges zu erzählen, und leider
+  spielt der Präprozessor eine nicht zu kleine Rolle.
+
+* **Verschiedenes**.
+
+  * Debugginghilfen wie das `assert()` Macro
+  * Sichtbarkeit, oder die verschiedenen Bedeutungen des Wortes `static`
+  * Die Toolchain: Compiler und Linker, Optimierungsmöglichkeiten, ...
+  * Analyse von Memoryfehlerszenarien
+
+Die Standard-Library
+--------------------
+
+* **Dynamischer Speicher**. `malloc()` und `free()`, und verwandte
+  Funktionen, um explizit Speicher zu verwalten.
+
+* **Standard I/O**. Formatierte _und_ komfortable Ein- und Ausgabe ist
+  nicht gerade eine der Stärken von C. C hat mächtige Werkzeuge der
+  Ein- und Ausgabe, jedoch sind diese weit weg von Komfort und
+  Fehlerimmunität --- schon alleine deswegen verdienen sie mehr als
+  nur eine Erwähnung.
+
+* **Stringbearbeitung**. Strings sind in C aus heutiger Sicht etwas
+  eigenwillig definiert. Die Standard-Library bringt eine Fülle von
+  Funktionen mit, die Stringbearbeitung erleichtern. Hier lauern
+  wieder Gefahren (alle Arten von Memoryfehlern).
