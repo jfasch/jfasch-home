@@ -1,0 +1,90 @@
+---
+title: "Raspberry Pi Hands-On"
+menu_order: 10
+target_name: raspi-hands-on
+
+tags: ['linux', 'kurs', 'schulung', 'raspi', 'raspberry', 'hardware']
+
+context: course
+course_duration: 5
+course_type: inhouse
+---
+
+Eine Woche mit dem Raspberry Pi
+===============================
+
+Das Raspberry Pi wurde von der gleichnamigen Foundation zu dem Zweck
+ins Leben gerufen, Kindern wieder Spass an produktivem Basteln
+näherzubringen --- statt reine Spielekonsumenten zu sein. Das Ziel
+wurde erreicht, und zwar nicht für Kinder, wie die nicht enden
+wollende Liste an Projekten zeigt,
+
+ * jjj 1
+ * jjj 2
+ * jjj 3
+ * jjj ganze Liste bei der Foundation
+
+In anderen Worten: das Projekt "Raspberry Pi" hat das erstemal einer
+breiteren Öffentlichkeit gezeigt, dass Linux mehr drauf hat als nur
+Server, Handy, und Desktop --- _es kann auch mit beliebiger
+Hardware_. Das Vorhandensein der Basisinfrastruktur wie Filesystem,
+Multitasking, TCP/IP und vielem anderem macht es zu einer
+hervorragenden Alternative zu "gestandenen" Embedded-Betriebssystemen.
+
+Zielpublikum
+------------
+
+Der Kurs richtet sich an "Interessierte" im weitesten Sinn, wie zum
+Beispiel ...
+
+ * Hobbybastler
+ * Embeddedprogrammierer, die sich schon länger fragen, warum Features
+   eines "normalen" Betriebssystems ihnen versagt bleiben oder teuer
+   erkauft werden müssen
+ * Elektroniker, die Devices testen wollen, bevor in ihrer Firma die
+   Hostsoftware soweit ist
+
+Kursinhalt
+----------
+
+ * **Linux und die Commandline**. Linux ist ein Desktopbetriebssystem.
+     Unter anderem --- es ist alles nur eine Frage des vorhandenen
+     Speichers. Das Rasperry ist für Embedded-Verhältnisse mit 512MB
+     reichlich ausgestattet. Ein Desktop ist trotzdem nur mühsam zu
+     betreiben --- und ist für ein Embedded-Produktivsystem ohnehin
+     unangebracht. Zurück an die Unix-Anfänge also ...
+   * Remote Login mit SSH
+   * Grundlegendes: die Shell, Werkzeuge wie `sed`, `grep`, `find` ...
+   * Diagnose mit Tools wie `netstat`, `top`, den Filesystemen `procfs` und `sysfs` ...
+ * **Python Grundlagen**. Obwohl der Kursinhalt sprachunabhängig ist,
+     brauchen wir für das weitere Vorgehen eine
+     Programmiersprache. Die Raspberry Foundation, die unter anderem
+     das Ziel verfolgt, Kinder weg vom reinen Computerspielen zurück
+     zum spielerischen Programmieren zu führen, wählt zu
+     Recht Python als die Sprache, das zu erreichen.
+ * **Wir bauen ein Lauflicht**, oder: _das General Purpose IO (GPIO)
+     Subsystem_.
+   * _Output_: Schalten von LEDs
+   * _Input_: Abfragen eines Tastschalters (sowohl über dummes Polling
+     als auch über intelligentes ereignisgesteuertes Programmieren)
+ * **Mit Mikrocontrollern sprechen**. Aufgaben wie
+   z.B. Temperaturmessung, IO-Port Expandierung, Pulse Width
+   Modulation (PWM) etc. werden gerne an externe Hardware ausgelagert,
+   die über dedizierte Protokolle angesteuert wird. Hier wird ein
+   Überblick über die Protokolle und über verschiedene Aspekte der
+   Integration in Linux gegeben. Stichworte:
+   * _Inter Integrated Circuit (I2C)_
+   * _Serial Peripheral Interface (SPI)_
+   * _LM-Sensors_ Subsystem
+ * **CAN-Bus** ist ein Netzwerkprotokoll (*Controller Area Network_),
+   das zur Kommunikation zwischen Mikrocontrollern verwendet wird ---
+   zum Beispiel im Auto. In Linux hat sich eine sehr nette
+   Infrastruktur entwickelt, die das Protokoll nahtlos in den
+   Netzwerkstack einpasst.
+
+Empfohlene Vorkenntnisse
+------------------------
+
+* Etwas Programmiererfahrung
+* Interesse an Hardware
+* Spass an Basteln
