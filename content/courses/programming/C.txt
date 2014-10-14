@@ -10,8 +10,8 @@ course_type: inhouse
 
 menu_order: 10
 ---
-C: Die Programmierprache
-========================
+Die Programmierprache C
+=======================
 
 Der _Bibel_ von Brian Kernighan und Dennis Ritchie kann man nichts
 hinzufügen. Der "Erfinder" von C, Dennis Ritchie, kann wohl am besten
