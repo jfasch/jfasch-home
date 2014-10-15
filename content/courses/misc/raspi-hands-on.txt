@@ -19,10 +19,10 @@ näherzubringen --- statt reine Spielekonsumenten zu sein. Das Ziel
 wurde erreicht, und zwar nicht für Kinder, wie die nicht enden
 wollende Liste an Projekten zeigt,
 
- * jjj 1
- * jjj 2
- * jjj 3
- * jjj ganze Liste bei der Foundation
+ * [Parent Detector](http://www.raspberrypi.org/learning/parent-detector)
+ * [Pi in the Sky](http://www.raspberrypi.org/pi-in-the-sky)
+ * [RaspBMC](http://www.raspbmc.com/about)
+ * Und vieles andere mehr ...
 
 In anderen Worten: das Projekt "Raspberry Pi" hat das erstemal einer
 breiteren Öffentlichkeit gezeigt, dass Linux mehr drauf hat als nur
@@ -43,6 +43,10 @@ Beispiel ...
    erkauft werden müssen
  * Elektroniker, die Devices testen wollen, bevor in ihrer Firma die
    Hostsoftware soweit ist
+
+Die Teilnehmer sind eingeladen, eigenes Equipment -- Lötmaterial,
+Breadboard, etc. -- mitzubringen. Werkzeug und Material ist vorhanden,
+jedoch macht es mit dem eigenen wahrscheinlich mehr Spass.
 
 Kursinhalt
 ----------
