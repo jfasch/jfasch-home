@@ -1,0 +1,49 @@
+---
+title: "Python für Fortgeschrittene"
+target_name: course-prog-python-advanced
+
+tags: ['linux', 'kurs', 'schulung', 'programmieren', 'python']
+
+menu: false
+---
+
+Python für Fortgeschrittene
+===========================
+
+Python ist schnell gelernt: es ist einfach zu verstehen, bietet keine
+Überraschungen, der Sprachumfang ist klar
+definiert. Programmiereinsteiger können damit das Programmieren an
+sich lernen, Umsteiger aus anderen Sprachen haben einen sehr schnellen
+Start.
+
+Es ist damit noch lange nicht alles gesagt. Taucht man etwas weiter ab
+in die Programmiersprache Python, erkennt man, dass _Einfach_ und
+_Schön_ sehr eng miteinander verwandt sind.
+
+Kursinhalt
+----------
+
+* **Objektorientierte Programmierung**. Ein Thema, das nicht neu ist
+  und gar nichts mit Python zu tun hat --- ausser dass man in Python
+  _auch_ objektorientiert programmieren kann. Einige Grundpfeiler
+  dieser Disziplin --- und ihr Zusammenhang mit Python --- werden
+  beleuchtet, wie zum Beispiel ...
+  * _Konstruktoren_
+  * _Memberzugriff_
+  * _Vererbung_
+  * _Exceptions_
+  * _Das Python Objektmodell_
+* **Das Modulkonzept**. Das `import` Statement ist für den
+  Programmierer der Einsprungspunkt zur Wiederverwendung. Hier werden
+  ein paar Details vorgestellt ...
+  * _Module und Packages_: was ist das und wie kann ich selbst welche
+    erstellen?
+  * _Lokale Imports_: wie verschmutze ich nicht den globalen Namespace?
+* **Generatoren**. In Python, wie in vielen anderen Sprachen, ist das
+  Iterieren über eine existierende Menge an Daten ein häufiges
+  Idiom. Python bietet Sprachwerkzeuge, die es erlauben, sehr einfach
+  über beliebige Datenmengen zu iterieren --- selbst wenn diese noch
+  nicht existieren.
+* **Verschiedene ausgewählte Themen**.
+  * _Context Managers_: das `with` Statement
+  * _Dekoratoren_

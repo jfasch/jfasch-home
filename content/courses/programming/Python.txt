@@ -1,0 +1,25 @@
+---
+title: "Python"
+target_name: course-prog-python
+
+tags: ['linux', 'kurs', 'schulung', 'python']
+
+context: course
+course_type: hosted
+course_duration: 3
+
+menu_order: 30
+---
+
+Python - die schönste aller Programmiersprachen
+===============================================
+
+* **Einführung in Python**. Dieser Kurs wird von der Firma [Mathias
+  Kettner](http://mathias-kettner.de) in München angeboten, mit mir
+  als Dozenten. Finden Sie [hier die originale und ausführliche
+  Schulungsbeschreibung](http://mathias-kettner.de/python_schulung.html).
+
+* **Python für Fortgeschrittene**. Python ist leicht zu erlernen ---
+  damit ist nicht gesagt, dass damit alles gesagt ist. <%=
+  link_to_name('Eine separate Schulung',
+  'course-prog-python-advanced') %> führt Sie in tiefere Gewässer.
