@@ -37,6 +37,7 @@ Kursinhalt
   * _Vererbung_
   * _Exceptions_
   * _Das Python Objektmodell_
+  * _Unit Testing_
 * **Das Modulkonzept**. Das `import` Statement ist für den
   Programmierer der Einsprungspunkt zur Wiederverwendung. Hier werden
   ein paar Details vorgestellt ...
