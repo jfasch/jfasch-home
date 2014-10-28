@@ -68,11 +68,10 @@ Kursinhalt
      das Ziel verfolgt, Kinder weg vom reinen Computerspielen zurück
      zum spielerischen Programmieren zu führen, wählt zu
      Recht Python als die Sprache, das zu erreichen.
- * **Wir bauen ein Lauflicht**, oder: _das General Purpose IO (GPIO)
-     Subsystem_.
-   * _Output_: Schalten von LEDs
-   * _Input_: Abfragen eines Tastschalters (sowohl über dummes Polling
-     als auch über intelligentes ereignisgesteuertes Programmieren)
+ * **Das General Purpose IO (GPIO) Subsystem**.
+   * _Output_: Schalten von Ausgängen
+   * _Input_: Abfragen von Eingängen (sowohl über dummes Polling
+     als auch über intelligentes ereignisgesteuertes Programmieren bzw. Interrupts)
  * **Mit Mikrocontrollern sprechen**. Aufgaben wie
    z.B. Temperaturmessung, IO-Port Expandierung, Pulse Width
    Modulation (PWM) etc. werden gerne an externe Hardware ausgelagert,
@@ -87,6 +86,11 @@ Kursinhalt
    zum Beispiel im Auto. In Linux hat sich eine sehr nette
    Infrastruktur entwickelt, die das Protokoll nahtlos in den
    Netzwerkstack einpasst.
+ * **[Video4Linux
+   (V4L)](http://de.wikipedia.org/wiki/Video4Linux)**. Das
+   Video-Subsystem, das zusammen mit einer Menge von Hardwaredrivern
+   (unter anderem für das Raspberry-Kamerainterface) die
+   Videofähigkeiten von Linux implementiert.
 
 Empfohlene Vorkenntnisse
 ------------------------
