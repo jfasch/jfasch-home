@@ -38,7 +38,7 @@ Kursinhalt
 * **Objektorientierte Programmierung** ist in Python genauso möglich
   wie in vielen anderen Sprachen --- und ist auch unerlässlich, will
   man große und komplexe Programme verstehbar halten. Hier wird das
-  Handwerk erklärt und auch _Objektorientiertes Design_ eingegangen.
+  Handwerk erklärt und auch auf _Objektorientiertes Design_ eingegangen.
   * _Konstruktoren_
   * _Memberzugriff_
   * _Vererbung_
