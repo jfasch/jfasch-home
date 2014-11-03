@@ -19,8 +19,8 @@ Programmierung --- das ist das Zentrum dieses Kurses.**
 Das [Raspberry Pi](http://www.raspberrypi.org/) wurde von der
 gleichnamigen Foundation zu dem Zweck ins Leben gerufen, Kindern
 wieder Spass an produktivem Basteln näherzubringen --- statt reine
-Spielekonsumenten zu sein. Das Ziel wurde erreicht, und zwar nicht für
-Kinder, wie eine nicht enden wollende Liste an Projekten zeigt.
+Spielekonsumenten zu sein. Das Ziel wurde erreicht, und zwar nicht nur
+für Kinder, wie eine nicht enden wollende Liste an Projekten zeigt.
 
 <img src="/images/raspberry-pi-rev2-pinout.jpg" height="300" alt="Raspi Pinout"
      style="float: right;" />
