@@ -29,8 +29,8 @@ Zielpublikum
 ------------
 
 Der Kurs richtet sich an alle Programmierer, die bereits Teile ihres
-Aufgabenbereichs in Python lösen (oft sind das Administratoren) ---
-und mehr damit machen möchten ohne sich zu verrennen.
+Aufgabenbereichs in Python lösen --- und mehr damit machen möchten
+ohne sich zu verrennen.
 
 Kursinhalt
 ----------
