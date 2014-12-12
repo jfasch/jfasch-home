@@ -26,5 +26,3 @@ andere sind mir erhalten geblieben.
   Shell Scripts müssen nicht hässlich sein
 * <%= link_to_name('GNU Make', 'course-prog-make') %>: die Mutter
   aller Build Tools --- ist auch eine kleine Programmiersprache
-* <%= link_to_name('Schnelleinstieg', 'course-kettner-swd') %>: Ein
-  Überblick über die Softwareentwicklung unter Linux

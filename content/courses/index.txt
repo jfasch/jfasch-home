@@ -24,37 +24,43 @@ ist es allerdings noch ein langer Weg. Ich lerne noch.
 Basics
 ------
 
-Der <%= link_to_name('Einführungskurs', 'courses-linux-basics') %>
-soll Ein- und vor allem Umsteigern zu einem schnellen Start in Linux
-verhelfen.
+ * <%= link_to_name('Linux Basics', 'courses-linux-basics') %> ---
+   "Wie tickt Linux?" für Technik-Affine.
 
 Programmiersprachen
 -------------------
 
-Finden Sie <%= link_to_name('hier', 'courses-programming') %> einen
-Überblick über Schulungen zu verschiedenen Programmiersprachen.
+* <%= link_to_name('C', 'course-prog-c') %>: C anhand des didaktisch
+  perfekten (weil minimalen) Buches [The C Programming
+  Language](http://en.wikipedia.org/wiki/The_C_Programming_Language)
+* <%= link_to_name('C++', 'course-prog-cxx') %> für C-Programmierer
+* <%= link_to_name('Python', 'course-prog-python') %>: die
+  wahrscheinlich schönste Programmiersprache der Welt --- eine Einführung
+* <%= link_to_name('Mehr Python', 'course-prog-python-advanced') %>:
+  Python ist nicht nur einfach, sondern auch mächtig
+* <%= link_to_name('Bourne (Again) Shell', 'course-prog-bash') %>:
+  Shell Scripting
+* <%= link_to_name('GNU Make', 'course-prog-make') %>, die Mutter
+  aller Build Tools --- ist auch eine kleine Programmiersprache
 
 Systemnahe Programmierung
 -------------------------
 
-Ein Großteil des Materials entfällt auf die <%=
-link_to_name('Systemnahe Programmierung', 'courses-sysprog') %> ---
-hier versuche ich, meinen Eindruck der Schönheit eines Linux-Systems
-weiterzugeben. [Auszüge aus dem
-Material](http://www.fh-joanneum.at/aw/home/Studienangebot_Uebersicht/fachbereich_information_design_technologien/swd/Studium/~uqq/SWD_lvdetails/?alvid=4305944553&lan=de)
-unterrichte ich bisweilen auch an der [FH
-Joanneum](http://www.fh-joanneum.at) in Kapfenberg.
+* <%= link_to_name('Linux Grundlagen', 'course-system-basics') %>:
+  eine Einführung in das System anhand von Beispielen.
+* <%= link_to_name('Netzwerk-Programmierung', 'course-network') %>:
+  Client/Server Programmierung mit TCP/IP und UNIX-Domain Sockets
+* <%= link_to_name('Multithreading', 'course-multithreading') %>:
+  richtiger Umgang mit POSIX Threads und Realtime.
+* <%= link_to_name('Fortgeschrittene Themen', 'course-advanced') %>
+  wie virtuelles Memory, POSIX IPC, und konsequente Unix-ismen, die es
+  paradoxerweise nur unter Linux gibt.
+* <%= link_to_name('Embedded Linux', 'course-embedded') %>:
+  verschiedene Themen aus dem Embedded Umfeld.
 
 Verschiedenes
 -------------
 
-Der Rest ist "Beiwerk". Unter Linux hat sich eine grosse Kultur
-entwickelt, was Entwicklungswerkzeuge, Programmiersprachen, und vor
-allem Vorgehensweisen und Geschmack betrifft. Als sehr Linux-lastiger
-Softwareentwickler habe ich mich jahrelang in dieser Kultur bewegt ---
-ich bin praktisch in ihr aufgewachsen. Finden Sie <%=
-link_to_name('hier eine Aufstellung von Kursen aus diesem Bereich',
-'courses-misc') %>.
-
-
-
+* <%= link_to_name('Raspberry Pi Hands-On', 'raspi-hands-on') %>
+* <%= link_to_name('Linux from Scratch', 'course-kettner-lfs') %>
+* <%= link_to_name('Einführung in Subversion', 'course-svn') %>
