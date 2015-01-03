@@ -36,6 +36,7 @@ Programmiersprachen
 * <%= link_to_name('C --- Eine Einführung', 'course-prog-c') %>: C anhand des didaktisch
   perfekten (weil minimalen) Buches [The C Programming
   Language](http://en.wikipedia.org/wiki/The_C_Programming_Language)
+* <%= link_to_name('C für Fortgeschrittene', 'course-prog-c-advanced') %>: Verschiedenes aus C, das die wenigsten wissen
 * <%= link_to_name('C++ --- Eine Einführung', 'course-prog-cxx') %> für C-Programmierer
 * <%= link_to_name('Python --- Eine Einführung', 'course-prog-python') %>: die
   wahrscheinlich schönste Programmiersprache der Welt

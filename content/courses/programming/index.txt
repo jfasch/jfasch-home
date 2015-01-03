@@ -16,13 +16,16 @@ hervorgebracht. Im Laufe der Zeit habe ich viele von ihnen
 erlernt. Einige habe ich erfolgreich verlernt (zum Beispiel Perl),
 andere sind mir erhalten geblieben.
 
-* <%= link_to_name('C', 'course-prog-c') %>: C anhand des didaktisch
+* <%= link_to_name('C --- Eine Einführung', 'course-prog-c') %>: C anhand des didaktisch
   perfekten (weil minimalen) Buches [The C Programming
   Language](http://en.wikipedia.org/wiki/The_C_Programming_Language)
-* <%= link_to_name('C++', 'course-prog-cxx') %>: ein Einführung in C++
-* <%= link_to_name('Python', 'course-prog-python') %>: die schönste
-  Programmiersprache
+* <%= link_to_name('C für Fortgeschrittene', 'course-prog-c-advanced') %>: Verschiedenes aus C, das die wenigsten wissen
+* <%= link_to_name('C++ --- Eine Einführung', 'course-prog-cxx') %> für C-Programmierer
+* <%= link_to_name('Python --- Eine Einführung', 'course-prog-python') %>: die
+  wahrscheinlich schönste Programmiersprache der Welt
+* <%= link_to_name('Mehr Python', 'course-prog-python-advanced') %>:
+  Python ist nicht nur einfach, sondern auch mächtig
 * <%= link_to_name('Bourne (Again) Shell', 'course-prog-bash') %>:
-  Shell Scripts müssen nicht hässlich sein
-* <%= link_to_name('GNU Make', 'course-prog-make') %>: die Mutter
+  Shell Scripting
+* <%= link_to_name('GNU Make', 'course-prog-make') %>, die Mutter
   aller Build Tools --- ist auch eine kleine Programmiersprache
