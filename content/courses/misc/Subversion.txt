@@ -21,6 +21,15 @@ hervorragende Alternative zu großkopferten kommerziellen Systemen wie
 Clearcase oder Perforce etabliert, und hat das ebenfalls als Open
 Source erhältliche CVS lange als dessen Nachfolger abgelöst.
 
+Zielpublikum
+------------
+
+* Programmierer --- das primäre Publikum
+* Sekundäres Publikum: alle, die was zu versionieren haben
+  * Technische Dokumentation
+  * (Release-)Manager
+  * Und viele andere mehr ...
+
 Kursinhalt
 ----------
 
