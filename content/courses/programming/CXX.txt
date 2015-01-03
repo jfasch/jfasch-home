@@ -1,5 +1,5 @@
 ---
-title: "C++: Eine Einführung"
+title: "C++ Einführung"
 target_name: course-prog-cxx
 
 tags: ['kurs', 'schulung', 'c++']

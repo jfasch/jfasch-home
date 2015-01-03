@@ -21,6 +21,9 @@ genügend Erfahrung besitze. Zum Beispiel möchte ich gerne eines Tages
 eine Schulung über [Git](http://git-scm.com/) anbieten --- bis dahin
 ist es allerdings noch ein langer Weg. Ich lerne noch.
 
+Kursmaterial wird gestellt in Form von gedruckten Handouts der Folien,
+sowie einem PDF derselben.
+
 Basics
 ------
 
@@ -30,12 +33,12 @@ Basics
 Programmiersprachen
 -------------------
 
-* <%= link_to_name('C', 'course-prog-c') %>: C anhand des didaktisch
+* <%= link_to_name('C --- Eine Einführung', 'course-prog-c') %>: C anhand des didaktisch
   perfekten (weil minimalen) Buches [The C Programming
   Language](http://en.wikipedia.org/wiki/The_C_Programming_Language)
-* <%= link_to_name('C++', 'course-prog-cxx') %> für C-Programmierer
-* <%= link_to_name('Python', 'course-prog-python') %>: die
-  wahrscheinlich schönste Programmiersprache der Welt --- eine Einführung
+* <%= link_to_name('C++ --- Eine Einführung', 'course-prog-cxx') %> für C-Programmierer
+* <%= link_to_name('Python --- Eine Einführung', 'course-prog-python') %>: die
+  wahrscheinlich schönste Programmiersprache der Welt
 * <%= link_to_name('Mehr Python', 'course-prog-python-advanced') %>:
   Python ist nicht nur einfach, sondern auch mächtig
 * <%= link_to_name('Bourne (Again) Shell', 'course-prog-bash') %>:
