@@ -13,10 +13,13 @@ menu_order: 10
 Die Programmierprache C
 =======================
 
-Der _Bibel_ von Brian Kernighan und Dennis Ritchie kann man nichts
+Der [_Bibel_ von Brian Kernighan und Dennis Ritchie](http://de.wikipedia.org/wiki/The_C_Programming_Language "Die Bibel") kann man nichts
 hinzufügen. Der "Erfinder" von C, Dennis Ritchie, kann wohl am besten
 erklären, wie C tickt, wozu man es verwendet, und wo seine Grenzen
 sind.
+
+<img src="/images/c-kernighan-ritchie-book.jpg" alt="Die Bibel"
+     style="float: right;max-width: 30%;" />
 
 Der Kurs nimmt das Buch als Vorlage für die Didaktik und ergänzt es
 durch Übungen und etwas Kontext aus der heutigen Zeit. Sollte der Kurs
