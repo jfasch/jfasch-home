@@ -24,7 +24,11 @@ unter Linux de-facto Standard ist. Er versucht, der
 Shellprogrammierung den Ruf des Schmutzigen zu nehmen und ihr
 stattdessen eher einen Hauch von perverser Ästhetik zu verpassen.
 
-Hier ein Themenüberblick:
+Zielpublikum
+------------
+
+Kursinhalt
+----------
 
  * **Die Geschichte der Shell**. Die Shell und Unix haben eine lange
    und interessante gemeinsame Geschichte
@@ -36,3 +40,10 @@ Hier ein Themenüberblick:
  * **Pipes, IO-Redirection**
  * **Verschiedenes**. Stringmanipulation ("Parameter Expansion") und
    verschiedene andere obskure Konstrukte, ohne die man nicht auskommt
+
+Empfohlene Vorkenntnisse
+------------------------
+
+Erfahrung in Unix und der Umgang mit der Shell auf der Commandline
+werden vorausgesetzt. Siehe dazu auch den <%=
+link_to_name('Einführungskurs', 'courses-linux-basics') %>.
