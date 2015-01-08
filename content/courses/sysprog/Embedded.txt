@@ -6,7 +6,7 @@ menu_order: 50
 tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall', 'embedded', 'bootloader', 'kernel', 'rootfilesystem', 'flash' ] 
 
 context: course
-course_duration: 2
+course_duration: 5
 course_type: inhouse
 ---
 
@@ -20,25 +20,52 @@ gestiegen (USB, TCP/IP), sodass es ganz logisch erscheint, die gleiche
 Codebasis, die auf Desktop-PCs und Servern schon lange Einsatz findet,
 auch in kleineren Geräten einzusetzen. Andererseits entspricht Linux
 mittlerweile auch Anforderungen, die speziell aus dem Embedded-Bereich
-kommen, wie z.B. Echtzeitfähigkeit.  Ziel des Kurses ist es, ein
-Verständnis des Aufbaus eines Linux-Systems zu vermitteln, und den
-Teilnehmern die Möglichkeit zu geben, aus Alternativen (deren es unter
-Linux viele gibt) zu wählen.
+kommen, wie z.B. Realtimefähigkeit.
+
+Ziel des Kurses ist es, ein Verständnis des Aufbaus eines
+Linux-Systems und der zugrundeliegenden Konzepte zu vermitteln. Den
+Teilnehmern wird die Möglichkeit gegeben, aus Alternativen (deren es
+unter Linux viele gibt) diejenige zu wählen, die für ihre Verhältnisse
+die angemessenste ist.
+
+Zielgruppe
+----------
+
+Der Kurs wendet sich an Programmierer und Systemarchitekten, die
+Erfahrung im Embedded-Bereich mitbringen. Die Teilnehmer sollten
+Kenntnisse in C mitbringen. Etwas Erfahrung in Linux ist von Vorteil,
+aber nicht zwingend.
 
 Kursinhalt
 ----------
 
-* **Bootprozess**. Bootloader, Kernel, Root Filesystem. Anhand des
+* System Startup. Bootloader, Kernel, Root Filesystem. Anhand des
   Bootprozesses, der von einem "regulären" Linux-PC bekannt ist,
   werden die einzelnen Komponenten und deren Aufgaben betrachtet. Nach
   und nach werden alternative Wege herausgearbeitet, um schliesslich
   bei U-Boot, Busybox, und dem Thema "Der Prozess mit der PID 1" (oder
   "1000 Möglichkeiten, ein System zu booten") zu landen.
-* **Kernel-Konfiguration und -Build**
-* **Speichermedien und Filesystemtypen**. Das Linux MTD ("Memory
-  Technology Devices" - Flash) Subsystem und die darauf basierenden
-  Flash-Filesysteme werden erläutert. Kurz wird auch auf die bekannten
-  Block-basierten Filesysteme wie ext2, ext3, etc. eingegangen.
+* Busybox. Konfiguration und Verwendung.
+* Entwicklung. Verstehen alleine ist zuwenig - das Handwerk des
+  Programmierens muss sitzen.
+  * Cross-Development, Cross-Debugging, Toolchains, Buildsysteme. Eine
+    Einführung in Cross-Development unter Linux.
+  * Beziehen des Root Filesystems und der crosscompilierten eigenen
+    Programme über NFS.
+* Kernel. Unter allen Softwarekomponenten eines Linuxsystems ist der
+  Kernel auch nur eine weitere, wenngleich mit eine speziellen Rolle -
+  ohne ihn geht nichts.
+  * Konfiguration und Build
+  * Überblick über die Subsysteme
+  * Kommunikation mit Gerätetreibern
+  * Einbinden eigener Gerätetreiber
+* Funktionsweise des Betriebssystems
+  * Prozesse
+  * Netzwerkprogrammierung
+  * Realtime und Multithreading
+  * In Absprache mit den Teilnehmern: ausgewählte Themen aus der
+    Kursreihe <%= link_to_name('"Systemnahe Programmierung unter
+    Linux"', 'courses-sysprog') %>
 
 Empfohlene Vorkenntnisse
 ------------------------
