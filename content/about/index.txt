@@ -1,5 +1,6 @@
 ---
 title: "Über mich"
+menu: true
 ---
 
 Ich bin in der glücklichen Lage, dass mir mein Beruf Spaß
@@ -10,9 +11,9 @@ Werdegang unter diesem speziellen Gesichtspunkt schildern.
 Falls Sie an einem schnelleren Überblick interessiert sind, folgen Sie
 bitte folgenden Links:
 
-* <%= link_to_name('Ein formaleres Curriculum Vitae', 'cv') %>
-* <%= link_to_name('Eine Liste meiner technischen Fähigkeiten', 'skills') %>
-* <%= link_to_name('Eine Liste meiner bisherigen Projekte', 'projects') %>
+* <%= link_to_name('Ein formaleres Curriculum Vitae', 'cv-de') %>
+* <%= link_to_name('Eine Liste meiner technischen Fähigkeiten', 'skills-de') %>
+* <%= link_to_name('Eine Liste meiner bisherigen Projekte', 'projects-de') %>
 
 Englische Übersetzungen:
 
@@ -130,7 +131,7 @@ achten. Das war ungefähr Ende 2009, Anfang 2010. Ich bin seit April
 2010 als Einzelunternehmer tätig, und bereue es in keiner Sekunde.
 
 Über die Jahre habe ich genug an Know-How gesammelt, um <%=
-link_to_name('ein genügend grosses Repertoire', 'skills') %> anbieten
+link_to_name('ein genügend grosses Repertoire', 'skills-de') %> anbieten
 zu können. Das schöne daran ist, dass das Repertoire mit Spaß
 gewachsen ist, und dass seine Erweiterung auch noch Spaß
 macht. Beispielsweise habe ich einen Teil von dem, was ich am besten

@@ -1,6 +1,7 @@
 ---
-title: "Projekte"
-target_name: projects
+title: "Projekte (de)"
+target_name: projects-de
+menu_order: 30
 ---
 
 Bisherige Projekte

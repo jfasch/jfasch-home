@@ -1,6 +1,7 @@
 ---
-title: "Skills"
+title: "Skills (en)"
 target_name: skills-en
+menu_order: 21
 ---
 
 * Linux

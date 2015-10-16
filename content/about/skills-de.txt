@@ -1,6 +1,7 @@
 ---
-title: "Technische Fähigkeiten"
-target_name: skills
+title: "Skills (de)"
+target_name: skills-de
+menu_order: 20
 ---
 
 Qualifikationen

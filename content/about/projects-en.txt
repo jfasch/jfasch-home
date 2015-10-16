@@ -1,6 +1,7 @@
 ---
-title: "Projekte"
+title: "Projects (en)"
 target_name: projects-en
+menu_order: 31
 ---
 
 Projects mastered

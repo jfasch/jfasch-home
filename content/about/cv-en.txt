@@ -1,6 +1,7 @@
 ---
-title: "Curriculum Vitae"
+title: "Curriculum Vitae (en)"
 target_name: cv-en
+menu_order: 11
 ---
 
 Curriculum Vitae

@@ -1,6 +1,7 @@
 ---
-title: "Curriculum Vitae"
-target_name: cv
+title: "Curriculum Vitae (de)"
+target_name: cv-de
+menu_order: 10
 ---
 
 Lebenslauf
