@@ -1,7 +1,10 @@
 ---
 title: "Linux Basics"
 target_name: courses-linux-basics
+
+context: course
 course_duration: 3
+course_type: inhouse
 
 tags: ['linux', 'kurs', 'schulung', einfuehrung]
 
