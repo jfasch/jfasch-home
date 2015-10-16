@@ -59,8 +59,9 @@ Systemnahe Programmierung
 * <%= link_to_name('Fortgeschrittene Themen', 'course-advanced') %>
   wie virtuelles Memory, POSIX IPC, und konsequente Unix-ismen, die es
   paradoxerweise nur unter Linux gibt.
-* <%= link_to_name('Embedded Linux', 'course-embedded') %>:
-  verschiedene Themen aus dem Embedded Umfeld.
+* <%= link_to_name('Embedded Linux', 'course-embedded') %>: Systemnahe
+  Unixprogrammierung, gepaart mit ausgewählten Themen aus der
+  Embedded-Welt
 
 Verschiedenes
 -------------
