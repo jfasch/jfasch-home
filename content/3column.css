@@ -160,7 +160,7 @@ ul.menu .active, ul.menu a:hover {
 
 /* POSITIONING -------------------------------*/
 
-#left-column-box {
+#left-column {
     position: absolute; 
 
     height: 100%;
@@ -173,25 +173,25 @@ ul.menu .active, ul.menu a:hover {
     overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
 }
 
-#left-column-box #logo-box {
+#left-column #logo-box {
     width: 100%;
 }
 
 /* menu comes right below the left header image */
-#left-column-box #menu-box {
+#left-column #menu-box {
     padding-top: 30px;
 }
 
 /* copyright box comes at the bottom */
-#left-column-box #copyright-box {
+#left-column #copyright-box {
     position: absolute;
     bottom: 0;
     padding-bottom: 20px;
 }
 
 
-#right-column-box {
-    position: absolute; 
+#right-column {
+    position: fixed; 
     top: 0;
     right: 0; 
     height: 100%;
@@ -200,7 +200,11 @@ ul.menu .active, ul.menu a:hover {
 
     overflow: hidden;
 }
-#right-column-box #logo-box {
+#right-column #logo-box {
+    position: absolute;
+
+    top: 0;
+    left: 0;
     /* this is the size of the image that it carries - is this good
        practice? */
     width: 230px;
@@ -215,50 +219,55 @@ ul.menu .active, ul.menu a:hover {
 
 
 /* CONTEXT AREA ------------------------------------------------*/
-#right-column-box #context-box {
+#right-column #context-box {
+    position: absolute;
+    top: 130px;
+
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 30px;
+
+    /* for debugging */
     /* border: 1px solid green; */
 }
 
 /* course box */
-#right-column-box #context-box #course-box {
+#right-column #context-box #course-box {
     background-color: #f0f3f8;
     padding: 10px;
 
     /* for debugging */
     /* border: 1px solid red; */
 }
-#right-column-box #context-box #course-box h1 {
+#right-column #context-box #course-box h1 {
     font-size: 16px;
     text-transform: uppercase;
 }
 
 /* OSS box */
-#right-column-box #context-box #oss-box {
+#right-column #context-box #oss-box {
     background-color: #f0f3f8;
     padding: 10px;
 }
-#right-column-box #context-box #oss-box ul.facts {
+#right-column #context-box #oss-box ul.facts {
     list-style-type: none;
     padding-left: 10px;
     padding-bottom: 15px;
 }
-#right-column-box #context-box #oss-box ul.toc {
+#right-column #context-box #oss-box ul.toc {
     padding-left: 15px;
 }
-#right-column-box #context-box #oss-box h1 {
+#right-column #context-box #oss-box h1 {
     font-size: 16px;
     text-transform: uppercase;
 }
-#right-column-box #context-box #oss-box a {
+#right-column #context-box #oss-box a {
     text-decoration: none;
     color: #6f6f6f;
 }
 
 
-#middle-header-box {
+#middle-column #middle-header-box {
     position: absolute;
     top: 0;
     left: 230px;
@@ -275,7 +284,7 @@ ul.menu .active, ul.menu a:hover {
     padding-left: 15px;
 }
 
-#middle-content-box {
+#middle-column #middle-content-box {
     position: fixed;
     top: 50px;
     left: 230px;

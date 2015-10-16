@@ -17,21 +17,32 @@
 
   <body>
 
-    <div id="middle-content-box">
-      <div class="content">
-	<%= yield %>
-      </div>
-    </div>
 
-    <div id="middle-header-box">
+
+    <!-- MIDDLE COLUMN -------------------------------------------------- -->
+
+    <div id="middle-column">
+
+      <div id="middle-header-box">
 	<!-- BREADCRUMBS -->
 	<span class="breadcrumbs">
 	  <%= my_breadcrumbs %>
 	</span>
 	<!-- END OF BREADCRUMBS -->
+      </div>
+
+      <div id="middle-content-box">
+	<div class="content">
+	  <%= yield %>
+	</div>
+      </div>
     </div>
 
-    <div id="left-column-box">
+
+
+    <!-- LEFT COLUMN -------------------------------------------------- -->
+
+    <div id="left-column">
       <div id="logo-box">
 	<a href="/">
 	  <img src="/images/logo.jpg" />
@@ -65,7 +76,10 @@
 
     </div>
 
-    <div id="right-column-box">
+
+    <!-- RIGHT COLUMN -------------------------------------------------- -->
+
+    <div id="right-column">
       <div id="logo-box">
 	<!-- <img src="/images/english.jpg" /> -->
 	<img src="/images/adresse.jpg" />
