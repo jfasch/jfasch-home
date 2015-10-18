@@ -96,10 +96,19 @@ ul.menu .active, ul.menu a:hover {
     color: #6f6f6f;
 }
 
+div#middle-header-box > h1 {
+    font-size: 39px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
+    text-align: center;
+}
+
 /* CONTENT STYLE ------------------------------------------*/
 
 .content h1 {
-    font-size: 39px;
+    font-size: 25px;
     font-weight: normal;
     letter-spacing: -1px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -109,7 +118,7 @@ ul.menu .active, ul.menu a:hover {
 .content h2 {
     margin-top: 0px;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 20px;
     /* line-height:100%; */
     letter-spacing: -1px;
     font-weight: normal;
@@ -300,6 +309,7 @@ ul.menu .active, ul.menu a:hover {
 #middle-column #middle-header-box {
     position: absolute;
     top: 0;
+    left: 0;
     right: 0;
     height: 50px;
 }
@@ -320,6 +330,11 @@ ul.menu .active, ul.menu a:hover {
     margin-top: 40px;
 }
 #main-page h1 {
+    font-size: 39px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #233e73;
     text-align: center;
 }
 #main-page table th {

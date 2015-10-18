@@ -63,11 +63,12 @@
     <div id="middle-column">
 
       <div id="middle-header-box">
-	<!-- BREADCRUMBS -->
-	<span class="breadcrumbs">
-	  <%= my_breadcrumbs %>
-	</span>
-	<!-- END OF BREADCRUMBS -->
+
+	<h1><%= if @item[:title] != "Home" 
+                  @item[:title] 
+                end %>
+	</h1>
+
       </div>
 
       <div id="middle-content-box">
