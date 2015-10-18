@@ -19,27 +19,6 @@
 
 
 
-    <!-- MIDDLE COLUMN -------------------------------------------------- -->
-
-    <div id="middle-column">
-
-      <div id="middle-header-box">
-	<!-- BREADCRUMBS -->
-	<span class="breadcrumbs">
-	  <%= my_breadcrumbs %>
-	</span>
-	<!-- END OF BREADCRUMBS -->
-      </div>
-
-      <div id="middle-content-box">
-	<div class="content">
-	  <%= yield %>
-	</div>
-      </div>
-    </div>
-
-
-
     <!-- LEFT COLUMN -------------------------------------------------- -->
 
     <div id="left-column">
@@ -58,6 +37,7 @@
   <%= menu('/courses/') %>
   <%= menu('/oss/') %>
   <%= menu('/about/') %>
+  <%= menu('/howtos/') %>
   <%= menu('/contact/') %>
 </ul>
 <!-- END OF MENU -->
@@ -75,6 +55,29 @@
       </div>
 
     </div>
+
+
+
+    <!-- MIDDLE COLUMN -------------------------------------------------- -->
+
+    <div id="middle-column">
+
+      <div id="middle-header-box">
+	<!-- BREADCRUMBS -->
+	<span class="breadcrumbs">
+	  <%= my_breadcrumbs %>
+	</span>
+	<!-- END OF BREADCRUMBS -->
+      </div>
+
+      <div id="middle-content-box">
+	<div class="content">
+	  <%= yield %>
+	</div>
+      </div>
+
+    </div>
+
 
 
     <!-- RIGHT COLUMN -------------------------------------------------- -->

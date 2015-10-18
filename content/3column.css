@@ -1,3 +1,20 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+ 
+html,
+body,
+div{
+    margin: 0;
+    padding: 0;
+}
+
+/* /RESET */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +34,9 @@ body {
     background-repeat: no-repeat;
     background-color: #FFF;
     background-attachment: fixed;
+
+    /* for debugging */
+    /* border: 1px solid green; */
 }
 
 /* MENU STYLE ------------------------------------------*/
@@ -157,39 +177,47 @@ ul.menu .active, ul.menu a:hover {
 }
 
 
+/* --------------------------------------------------------------- */
+/* POSITIONING --------------------------------------------------- */
+/* --------------------------------------------------------------- */
 
-/* POSITIONING -------------------------------*/
-
+/* LEFT COLUMN ----------------------------------------------------*/
 #left-column {
-    position: absolute; 
+    position: fixed; 
 
     height: 100%;
     top: 0;
     left: 0;
-    width: 230px;
+    width: 200px;
 
-    margin-left: 30px;
-
-    overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+    overflow: hidden;
 }
 
 #left-column #logo-box {
+    position: absolute;
+    top: 0;
+    height: 126px;
     width: 100%;
 }
 
 /* menu comes right below the left header image */
 #left-column #menu-box {
-    padding-top: 30px;
+    position: absolute;
+    top: 126px;
+
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 /* copyright box comes at the bottom */
 #left-column #copyright-box {
     position: absolute;
     bottom: 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 
+/* RIGHT COLUMN ----------------------------------------------------*/
 #right-column {
     position: fixed; 
     top: 0;
@@ -197,28 +225,20 @@ ul.menu .active, ul.menu a:hover {
     height: 100%;
     left: auto;
     width: 260px;
-
-    overflow: hidden;
 }
 #right-column #logo-box {
     position: absolute;
 
     top: 0;
-    left: 0;
+    right: 0;
     /* this is the size of the image that it carries - is this good
        practice? */
     width: 230px;
     height: 126px;
 
-    /* hack; to be removed once I have the language image right. people
-       say IE doesn't get "display: table-cell" right, I don't
-       care. */
-    vertical-align: bottom;
-    display: table-cell;
+    margin-right: 15px;
 }
 
-
-/* CONTEXT AREA ------------------------------------------------*/
 #right-column #context-box {
     position: absolute;
     top: 130px;
@@ -267,21 +287,21 @@ ul.menu .active, ul.menu a:hover {
 }
 
 
+/* MIDDLE COLUMN ----------------------------------------------------*/
+#middle-column {
+    position: fixed; 
+    top: 0;
+    left: 200px; 
+    right: 260px; 
+    height: 100%;
+    width: auto;
+}
+
 #middle-column #middle-header-box {
     position: absolute;
     top: 0;
-    left: 230px;
-    right: 260px;
-    width: auto;
+    right: 0;
     height: 50px;
-
-    overflow: hidden;
-    
-    /* I know that there's only one line (the breadcrumbs) inside, so I
-       apply padding right here in the box. not pretty, code-wise, but
-       anyway. */
-    padding-top: 15px;
-    padding-left: 15px;
 }
 
 #middle-column #middle-content-box {
@@ -291,12 +311,11 @@ ul.menu .active, ul.menu a:hover {
     right: 250px;
     bottom: 0;
 
-    margin-left: 25px;
-    margin-right: 25px;
-    overflow: auto; 
+    overflow: auto;
 }
 
 
+/* SPECIAL CASE: THE MAIN ENTRY PAGE ------------------------------------------------ */
 #main-page {
     margin-top: 40px;
 }
@@ -329,19 +348,4 @@ ul.menu .active, ul.menu a:hover {
     /* we have image borders from the general text styles; disable that
        here. */
     border: none;
-}
-
-/* jjj nix verstehen */
-
-* html body { /*IE6 hack*/
-    padding: 120px 150px 0 200px; /*Set value to (HeightOfTopFrameDiv WidthOfRightFrameDiv 0 WidthOfLeftFrameDiv)*/
-}
-
-* html #middle-content-box { /*IE6 hack*/
-    height: 100%; 
-    width: 100%; 
-}
-
-* html #middle-header-box { /*IE6 hack*/
-    width: 100%;
 }
