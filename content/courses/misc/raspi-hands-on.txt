@@ -1,5 +1,6 @@
 ---
-title: "Raspberry Pi Hands-On"
+title: "Eine Woche mit dem Raspberry Pi"
+menu_title: "Raspberry Pi"
 menu_order: 10
 target_name: raspi-hands-on
 
@@ -9,9 +10,6 @@ context: course
 course_duration: 5
 course_type: inhouse
 ---
-
-Eine Woche mit dem Raspberry Pi
-===============================
 
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher
 Programmierung --- das ist das Zentrum dieses Kurses.**
@@ -33,7 +31,7 @@ TCP/IP und vielem anderem macht es zu einer hervorragenden Alternative
 zu "gestandenen" Embedded-Betriebssystemen.
 
 Zielpublikum
-------------
+============
 
  * **Embeddedprogrammierer**, die sich schon länger fragen, warum Features
    eines "normalen" Betriebssystems, wie z.B. Multiprocessing, TCP/IP,
@@ -51,7 +49,7 @@ Breadboard, etc. -- mitzubringen. Werkzeug und Material ist reichlich
 vorhanden, jedoch macht es mit dem eigenen wahrscheinlich mehr Spass.
 
 Kursinhalt
-----------
+==========
 
  * **Linux und die Commandline**. Linux ist ein Desktopbetriebssystem.
      Unter anderem --- es ist alles nur eine Frage des vorhandenen
@@ -93,7 +91,7 @@ Kursinhalt
    Videofähigkeiten von Linux implementiert.
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 * Etwas Programmiererfahrung
 * Etwas Hardwareerfahrung

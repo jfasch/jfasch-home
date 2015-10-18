@@ -1,5 +1,6 @@
 ---
-title: "Multithreading"
+title: "Multithreading unter Linux"
+menu_title: "Multithreading"
 menu_order: 20
 target_name: course-multithreading
 
@@ -10,9 +11,6 @@ context: course
 course_duration: 2
 course_type: inhouse
 ---
-
-Multithreading unter Linux
-==========================
 
 Parallele Programmierung war schon immer schwer, und es ist
 unverständlich, warum Multithreading von modernen Programmiersprachen
@@ -30,7 +28,7 @@ werden die Gefahren beleuchtet, die unbedachtes Handeln in einer
 parallelen Welt mit sich bringt.
 
 Kursinhalt
-----------
+==========
 
 * **Der Lebenszyklus von Threads**. Threads werden gestartet, und
   meistens auch beendet. Hier lauern die ersten Gefahren, denn man
@@ -60,7 +58,7 @@ Kursinhalt
     ("Mutex-Protokolle" wie Priority Inheritance)
   
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
 Grundkenntnis des Systems (vgl. <%= link_to_name('Einführungskurs',

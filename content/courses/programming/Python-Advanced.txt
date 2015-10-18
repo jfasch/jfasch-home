@@ -10,10 +10,6 @@ course_type: inhouse
 
 menu: false
 ---
-
-Python für Fortgeschrittene
-===========================
-
 Python ist einfach zu erlernen und bietet mit seiner Standardlibrary
 einen üppig ausgestatteten Werkzeugkasten --- man kann in null komma
 nichts mächtige Programme schreiben. Verglichen mit anderen Sprachen
@@ -26,14 +22,14 @@ seien es Werkzeuge wie zum Beispiel eine Unittest-Framework, oder
 Sprachmittel, um komplexe Aufgaben einfacher zu lösen.
 
 Zielpublikum
-------------
+============
 
 Der Kurs richtet sich an alle Programmierer, die bereits Teile ihres
 Aufgabenbereichs in Python lösen --- und mehr damit machen möchten
 ohne sich zu verrennen.
 
 Kursinhalt
-----------
+==========
 
 * **Objektorientierte Programmierung** ist in Python genauso möglich
   wie in vielen anderen Sprachen --- und ist auch unerlässlich, will
@@ -66,6 +62,6 @@ Kursinhalt
   * _Dekoratoren_
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 * Grundlegende Pythonkenntnisse

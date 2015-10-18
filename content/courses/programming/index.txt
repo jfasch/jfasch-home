@@ -1,5 +1,6 @@
 ---
-title: "Programmieren"
+title: "Programmieren unter Linux"
+menu_title: "Programmieren"
 target_name: courses-programming
 
 tags: ['linux', 'kurs', 'schulung', 'programmieren']
@@ -7,10 +8,6 @@ tags: ['linux', 'kurs', 'schulung', 'programmieren']
 menu: true
 menu_order: 20
 ---
-
-Programmieren unter Linux
-=========================
-
 Unix und speziell Linux haben eine Vielzahl von Programmiersprachen
 hervorgebracht. Im Laufe der Zeit habe ich viele von ihnen
 erlernt. Einige habe ich erfolgreich verlernt (zum Beispiel Perl),

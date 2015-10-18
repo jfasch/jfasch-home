@@ -3,10 +3,6 @@ title: "Schulungen"
 menu: true
 target_name: courses
 ---
-
-Schulungen
-==========
-
 <img src="/images/sysprog-bodenseo.jpg" border="0" alt="Kurs im
      Hoeri-Hotel" style="float: right;" />
 
@@ -25,13 +21,13 @@ Kursmaterial wird gestellt in Form von gedruckten Handouts der Folien,
 sowie einem PDF derselben.
 
 Basics
-------
+======
 
  * <%= link_to_name('Linux Basics', 'courses-linux-basics') %> ---
    "Wie tickt Linux?" für Technik-Affine.
 
 Programmiersprachen
--------------------
+===================
 
 * <%= link_to_name('C --- Eine Einführung', 'course-prog-c') %>: C anhand des didaktisch
   perfekten (weil minimalen) Buches [The C Programming
@@ -48,7 +44,7 @@ Programmiersprachen
   aller Build Tools --- ist auch eine kleine Programmiersprache
 
 Systemnahe Programmierung
--------------------------
+=========================
 
 * <%= link_to_name('Linux Grundlagen', 'course-system-basics') %>:
   eine Einführung in das System anhand von Beispielen.
@@ -64,7 +60,7 @@ Systemnahe Programmierung
   Embedded-Welt
 
 Verschiedenes
--------------
+=============
 
 * <%= link_to_name('Raspberry Pi Hands-On', 'raspi-hands-on') %>
 * <%= link_to_name('Linux from Scratch', 'course-kettner-lfs') %>

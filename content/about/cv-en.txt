@@ -1,11 +1,9 @@
 ---
-title: "Curriculum Vitae (en)"
+title: "Curriculum Vitae"
+menu_title: "Curriculum Vitae (en)"
 target_name: cv-en
 menu_order: 11
 ---
-
-Curriculum Vitae
-================
 
 * Born 1966-06-19 in Graz, Austria
 * Diploma in Mathematics from TU Graz/IICM, 1993

@@ -1,5 +1,6 @@
 ---
-title: "Systemnahes"
+title: "Systemnahes Programmieren unter Linux"
+menu_title: "Systemnahes"
 target_name: courses-sysprog
 
 tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall']
@@ -7,10 +8,6 @@ tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall']
 menu: true
 menu_order: 30
 ---
-
-Systemnahes Programmieren unter Linux
-=====================================
-
 Mit Linux kann man Probleme auf elegante und einfache Art lösen -
 vorausgesetzt, man versteht die Funktionsweise des Betriebssystems.
 

@@ -1,5 +1,6 @@
 ---
-title: "Skills (en)"
+title: "Skills"
+menu_title: "Skills (en)"
 target_name: skills-en
 menu_order: 21
 ---

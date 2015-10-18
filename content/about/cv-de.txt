@@ -1,11 +1,9 @@
 ---
-title: "Curriculum Vitae (de)"
+title: "Curriculum Vitae"
+menu_title: "Curriculum Vitae (de)"
 target_name: cv-de
 menu_order: 10
 ---
-
-Lebenslauf
-==========
 
 * Geboren am 19.6.1966 in Graz
 * Diplom aus Technischer Mathematik an der TU Graz/IICM, 1993

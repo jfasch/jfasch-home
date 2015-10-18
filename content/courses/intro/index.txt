@@ -1,5 +1,6 @@
 ---
-title: "Linux Basics"
+title: "Linux Basics: Eine Einführung Anhand von Beispielen"
+menu_title: "Linux Basics"
 target_name: courses-linux-basics
 
 context: course
@@ -12,11 +13,8 @@ menu: true
 menu_order: 10
 ---
 
-Linux Basics: Eine Einführung Anhand von Beispielen
-===================================================
-
 Dieser Kurs liefert einen grundlegenden Einblick in die Shell, mit
-Hinblick auf das Verständnis des Betriebssystems. 
+Hinblick auf das Verständnis des Betriebssystems.
 
 Die Entwicklung der Shell und die Entwicklung von UNIX gingen Hand in
 Hand. UNIX wäre nicht UNIX, wenn die Shell nicht wäre. Anhand vieler
@@ -26,7 +24,7 @@ entmystifiziert. Im Kurs wird anhand von vielen Beispielen und
 mit dem Betriebssystem und die Konzepte des Betriebssystems erlernt.
 
 Zielpublikum
-------------
+============
 
 * Programmierer
 * Tester
@@ -35,7 +33,7 @@ Zielpublikum
 * Angehende Administratoren
 
 Kursinhalt
-----------
+==========
 
 * Commandline Basics
   * Zeilen editieren
@@ -74,52 +72,7 @@ Kursinhalt
   * Scheduling
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Programmierkenntnisse sind hilfreich, aber nicht nötig. Interesse und
 Spass an Betriebssystemen zwingend nötig.
-
-
-
-
-
-
-
-
-
-
-
-
-
-Ziel dieses Kurses ist, Umsteigern den Einstieg in das Betriebssystem
-Linux zu erleichtern und schmackhaft zu machen. Die Zielgruppe besteht
-aus Technikern, die bereits Erfahrung in anderen Betriebssystemen
-haben und aus den verschiedensten Gründen den Umstieg auf Linux
-erwägen, zum Beispiel
-
- * Programmierer
- * Tester
- * Inbetriebsetzer
- * Hardwareingenieure
-
-Im Kurs wird anhand von vielen Beispielen und Übungen,
-*ausschliesslich mit Hilfe der gefürchteten Shell*, der Umgang mit dem
-Betriebssystem und die Konzepte des Betriebssystems erlernt.
-
-Hier ein Überblick über die Themen:
-
- * **Einführung in die Shell und Bedienung der Commandline**. Die
-   Angst vor der Commandline mag bei Windows' `cmd.exe` berechtigt
-   sein, in Linux ist sie hingegen völlig fehl am Platz.
- * **Das Dateisystem** ist etwas, worauf Unix stolz sein kann. Wir
-   lernen, uns darin zurechtzufinden und, was genauso wichtig ist, das
-   System der Berechtigungen zu verstehen.
- * **Werkzeuge, Die Pipe, Input/Output-Umleitung**. Haben wir die ersten
-   Hürden überwunden, bekommen wir einen Überblick über die
-   verfügbaren Werkzeuge (Stichworte "Suche", "Archivierung",
-   u.v.a.m.) und lernen, sie zu kombinieren.
- * **Diagnosemöglichkeiten**. Geht im System etwas schief, ist es
-   unter Linux sehr leicht, den Ursachen auf den Grund zu gehen. Ein
-   guter Teil der Kurses wird damit verbracht, die zugrundeliegenden
-   Systemkonzepte wie *Prozesse* und *Netzwerk* kennenzulernen und die
-   relevanten Werkzeuge zu beherrschen.

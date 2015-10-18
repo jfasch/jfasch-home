@@ -1,5 +1,6 @@
 ---
-title: "Subversion"
+title: "Subversion: Eine Einführung"
+menu_title: "Subversion"
 menu_order: 60
 target_name: course-svn
 
@@ -11,9 +12,6 @@ course_duration: 1
 course_type: inhouse
 ---
 
-Subversion: eine Einführung
-===========================
-
 Versionskontrolle ist bei größeren (ich behaupte: bei allen) Projekten
 unumgänglich notwendig. Releasemanagement und parallele Entwicklung
 kann man anders nicht betreiben. Subversion hat sich mittlerweile als
@@ -22,7 +20,7 @@ Clearcase oder Perforce etabliert, und hat das ebenfalls als Open
 Source erhältliche CVS lange als dessen Nachfolger abgelöst.
 
 Zielpublikum
-------------
+============
 
 * Programmierer --- das primäre Publikum
 * Sekundäres Publikum: alle, die was zu versionieren haben
@@ -31,7 +29,7 @@ Zielpublikum
   * Und viele andere mehr ...
 
 Kursinhalt
-----------
+==========
 
 * Arbeitsweise: Copy-Modify-Merge statt Lock-Modify-Unlock
 * Einfacher Workflow: "Working Copy", Checkout, Commit, ...
@@ -41,7 +39,7 @@ Kursinhalt
 * Einschränkungen
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Fast keine (Subversion wird nicht nur von Programmierern
 eingesetzt). Eine gewisse Vertrautheit mit der Commandline (Shell) ist

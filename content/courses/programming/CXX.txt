@@ -1,5 +1,6 @@
 ---
-title: "C++ Einführung"
+title: "C++: Eine Einführung"
+menu_title: "C++ Einführung"
 target_name: course-prog-cxx
 
 tags: ['kurs', 'schulung', 'c++']
@@ -10,9 +11,6 @@ course_type: inhouse
 
 menu_order: 20
 ---
-C++: Eine Einführung
-====================
-
 C++ wurde ursprünglich erfunden, um als Superset des guten alten C
 dessen Schwächen leichter handhabbar zu machen. Die Eckpfeiler der
 damals neuen Sprache waren zum Beispiel,
@@ -42,7 +40,7 @@ ihre Sprachmittel und Libraries. Und, was vielleicht das wichtigste
 ist, in ihre Fallen --- deren gibt es nämlich reichlich.
 
 Zielpublikum
-------------
+============
 
  * C-Programmierer, die einen Umstieg erwägen --- unter Umständen,
    weil sich die Zielplattform von einem Embeddedbetriebssystem auf
@@ -52,7 +50,7 @@ Zielpublikum
    möglich aber nicht optimal ist.
 
 Kursinhalt
-----------
+==========
 
  * **Datenkapselung**
    * Klassen
@@ -86,7 +84,7 @@ Kursinhalt
     * Threading
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Solide <%= link_to_name('Kenntnisse in C', 'course-prog-c') %> werden
 vorausgesetzt.

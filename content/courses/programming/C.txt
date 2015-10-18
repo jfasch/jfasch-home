@@ -11,9 +11,6 @@ course_type: inhouse
 
 menu_order: 10
 ---
-Die Programmierprache C: Eine Einführung
-========================================
-
 Der [_Bibel_ von Brian Kernighan und Dennis Ritchie](http://de.wikipedia.org/wiki/The_C_Programming_Language "Die Bibel") kann man nichts
 hinzufügen. Der "Erfinder" von C, Dennis Ritchie, kann wohl am besten
 erklären, wie C tickt, wozu man es verwendet, und wo seine Grenzen

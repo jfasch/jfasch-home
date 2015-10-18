@@ -1,5 +1,6 @@
 ---
-title: "Netzwerk"
+title: "Netzwerk-Programmierung unter Linux"
+menu_title: "Netzwerk"
 menu_order: 30
 target_name: course-network
 
@@ -11,9 +12,6 @@ course_duration: 2
 course_type: inhouse
 ---
 
-Netzwerk-Programmierung unter Linux
-===================================
-
 Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
 in das Grundprinzip "Everything is a File" ein. Das Socket-Interface
 stellt ein leicht zu benutzendes Programmierparadigma dar, das nicht
@@ -21,7 +19,7 @@ auf TCP/IP beschränkt ist, sondern auf eine Vielzahl anderer
 Netzwerkprotokolle anwendbar ist.
 
 Kursinhalt
-----------
+==========
 
 * **Grundlagen der Netzwerkprogrammierung**. Das Socket-Interface ---
   seine Datentypen und Systemcalls --- wird erklärt, ohne jedoch noch
@@ -57,7 +55,7 @@ Kursinhalt
   werden", oder "Daten können auf ein Socket geschrieben werden".
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
 Grundkenntnis des Systems (vgl. <%= link_to_name('Einführungskurs',

@@ -10,9 +10,6 @@ course_duration: 5
 course_type: inhouse
 ---
 
-Embedded Linux
-==============
-
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher
 Programmierung --- das ist das Zentrum dieses Kurses.**
 
@@ -33,7 +30,7 @@ Werkzeuge, und rundet das Gelernte mit einem "Hardwarebastelworkshop"
 ab.
 
 Zielpublikum
-------------
+============
 
  * **Embeddedprogrammierer**, die sich schon länger fragen, warum Features
    eines "normalen" Betriebssystems, wie z.B. Multiprocessing, TCP/IP,
@@ -53,7 +50,7 @@ Spass. Die Bastelei erfolgt mit vorhandenen Raspberry Minicomputern,
 mit denen sich hervorragend Prototypen erstellen lassen.
 
 Kursinhalt
-----------
+==========
 
  * **Linux und die Commandline**. Linux ist ein Desktopbetriebssystem.
      Unter anderem --- es ist alles nur eine Frage des vorhandenen
@@ -105,7 +102,7 @@ Kursinhalt
        einpasst.
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
  * Etwas Programmiererfahrung. Implementationssprachen sind C und/oder
    Python.

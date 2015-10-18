@@ -1,10 +1,9 @@
 ---
-title: "Linux from Scratch, 16.9.2013"
+title: "Linux from Scratch, 16.9.2013, München"
+menu_title: "Linux from Scratch, 16.9.2013"
 target_name: course-kettner-lfs-2013-09-16
 tags: ['linux', 'kurs', 'schulung', 'root filesystem', 'pxe', 'grub', 'bootloader', 'compile']
 ---
-Linux from Scratch, 16.9.2013, München
-======================================
 
 Von Montag bis Freitag zügig durch, dann am Freitag gegen 4 Uhr die
 Punktlandung: `fdisk`, GRUB 0.97 (siehe unten) ins MBR, `menu.lst`,
@@ -14,7 +13,7 @@ Nachfolgend ein paar Nachsätze und Links, in etwas wahlloser
 Reihenfolge.
 
 GRUB 0.97
----------
+=========
 
 GRUB 0.97 ("GRUB Legacy") baut nicht mit einer reinen 64 Bit
 Toolchain. Im Kurs haben wir das erste Mal (Zeit is worden) ein 64 Bit
@@ -26,7 +25,7 @@ hinweggeholfen, und zwar mit einer vorcompilierten statisch gelinkten
 Version von GRUB aus dem Gentoo-Paket `sys-boot/grub-static`.
 
 Cross Systeme Bauen
--------------------
+===================
 
 Christof's Ziel war, alle Sourcen crosszucompilieren und schliesslich
 auf einem meiner Raspberries zum laufen zu bringen. Leider
@@ -49,7 +48,7 @@ mittlerweile auch dafür flexible Lösungen. Ich empfehle, sich
 [Yocto](https://www.yoctoproject.org/) anzusehen.
 
 Realtime
---------
+========
 
 Das Wort Xenomai ist im Kurs mal gefallen. Für harte
 Realtime-Garantien durchaus gerechtfertigt; unter Umständen muss man
@@ -60,7 +59,7 @@ guter Mittelweg auch der [PREEMPT_RT Patch](http://rt.wiki.kernel.org)
 sein, dessen Ziel ist, immer mehr in Mainline zu diffundieren.
 
 Init, oder der Prozess mit der ID 1
------------------------------------
+===================================
 
 Unser `init` ist ein kleines Shell-Script, das Pfade setzt, `ldconfig`
 etc. aufruft, und dann eine Login-Shell startet. Nicht sehr flexibel
@@ -79,7 +78,7 @@ mehr Distributionen eingesetzt wird, ist
 interessant, und trotz aller Behauptungen gar nicht overengineered.
 
 Verschiedenes
--------------
+=============
 
 * [Linux Device Drivers, Jonathan Corbet](http://lwn.net/Kernel/LDD3/)
 * [LWN](http://lwn.net/), meine Lieblingsseite für

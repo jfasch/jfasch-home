@@ -1,5 +1,6 @@
 ---
 title: "C für Fortgeschrittene"
+menu_title: "C Fortgeschritten"
 target_name: course-prog-c-advanced
 
 tags: ['kurs', 'schulung', 'c']
@@ -10,9 +11,6 @@ course_type: inhouse
 
 menu_order: 15
 ---
-C für Fortgeschrittene
-======================
-
 C ist eine kleine und einfache Sprache, was den Sprachumfang angeht. C
 ist auch eine schnelle Sprache, da compilierter Maschinencode
 ausgeführt wird.
@@ -28,13 +26,13 @@ Erklärungen zu geben, wo diese aus der Sprachdefinition nicht so
 offensichtlich greifbar sind.
 
 Zielpublikum
-------------
+============
 
 Der Kurs richtet sich an erfahrene C-Programmierer, die den Verdacht
 haben, dass manches, was sie tun, auf Zufall basiert.
 
 Kursinhalt
-----------
+==========
 
  * **Typkonversionen und ihre Fallen**: die Lücken im Typensystem von
    C
@@ -56,7 +54,7 @@ Kursinhalt
    * Compiler "Built-Ins", wie zum Beispiel _Atomare Instruktionen_
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Solide <%= link_to_name('Kenntnisse in C', 'course-prog-c') %> werden
 vorausgesetzt.

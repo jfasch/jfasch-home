@@ -1,5 +1,6 @@
 ---
-title: "Einführung"
+title: "Einführung: Linux Systemnah"
+menu_title: "Einführung"
 menu_order: 10
 target_name: course-system-basics
 
@@ -11,16 +12,13 @@ course_duration: 2
 course_type: inhouse
 ---
 
-Einführung: Linux Systemnah
-===========================
-
 Dieser Einführungskurs richtet sich an Programmierer, die Linux nicht
 so sehr kennen, es aber kennen lernen wollen. Die Zusammenhänge und
 die Grundpfeiler des Systems werden erklärt, sodass man am Ende ein
 großes Bild hat und sich selbst orientieren und zurechtfinden kann.
 
 Kursinhalt
-----------
+==========
 
 * **Die Shell**. Für Ein- bzw. Umsteiger ist dieses Commandline-Zeug
   meist ein einziges Ärgernis. Wenn man allerdings die Möglichkeiten,
@@ -55,7 +53,7 @@ Kursinhalt
   * Filedescriptoren und assoziierte Systemcalls
   
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Solide Kenntnisse in C werden vorausgesetzt. Kenntnisse in
 Betriebssystemen im Allgemeinen sind von Vorteil, aber nicht zwingend

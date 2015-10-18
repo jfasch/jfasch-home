@@ -1,5 +1,6 @@
 ---
-title: "Shell Scripting"
+title: "Shell Scripting mit der Bourne Again Shell (Bash)"
+menu_title: "Shell Scripting"
 target_name: course-prog-bash
 
 tags: ['kurs', 'schulung', 'shell', 'bash']
@@ -10,9 +11,6 @@ course_type: inhouse
 
 menu_order: 40
 ---
-
-Shell Scripting mit der Bourne Again Shell (Bash)
-=================================================
 
 Die Shell ist nicht nur ein notwendiges Übel, um mit dem System
 sprechen zu können. Sie ist auch eine vollständige Programmiersprache
@@ -25,10 +23,10 @@ Shellprogrammierung den Ruf des Schmutzigen zu nehmen und ihr
 stattdessen eher einen Hauch von perverser Ästhetik zu verpassen.
 
 Zielpublikum
-------------
+============
 
 Kursinhalt
-----------
+==========
 
  * **Die Geschichte der Shell**. Die Shell und Unix haben eine lange
    und interessante gemeinsame Geschichte
@@ -42,7 +40,7 @@ Kursinhalt
    verschiedene andere obskure Konstrukte, ohne die man nicht auskommt
 
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Erfahrung in Unix und der Umgang mit der Shell auf der Commandline
 werden vorausgesetzt. Siehe dazu auch den <%=

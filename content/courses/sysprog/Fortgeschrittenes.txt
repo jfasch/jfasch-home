@@ -1,5 +1,6 @@
 ---
-title: Fortgeschrittenes
+title: Systemnahe Programmierung für Fortgeschrittene
+menu_title: Fortgeschrittenes
 menu_order: 40
 target_name: course-advanced
 
@@ -11,9 +12,6 @@ course_duration: 2
 course_type: inhouse
 ---
 
-Systemnahe Programmierung für Fortgeschrittene
-==============================================
-
 Will man in Tiefen des Systems steigen, die dem Alltagsprogrammierer
 normalerweise verborgen bleiben, ist dieser Kurs genau der
 Richtige. Linux und Unix bieten an der Basis eine Vielzahl von
@@ -21,7 +19,7 @@ Schnittstellen, die es ermöglichen, hochperformante Anwendungen zu
 schreiben. Hier wird ein Überblick gegeben.
 
 Kursinhalt
-----------
+==========
 
 * **Virtuelles Memory**. Speicherverwaltung in modernen
   Bertriebssystemen basiert auf sogenanntem *virtuellen Memory*. Zum
@@ -50,7 +48,7 @@ Kursinhalt
   * `eventfd`
   
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
 Grundkenntnis des Systems (vgl. <%= link_to_name('Einführungskurs',

@@ -1,11 +1,12 @@
 ---
-title: "Projects (en)"
+title: "Projects"
+menu_title: "Projects (en)"
 target_name: projects-en
 menu_order: 31
 ---
 
-Projects mastered
-=================
+Projects as Freelancer
+======================
 
 (as of January, 2014)
 

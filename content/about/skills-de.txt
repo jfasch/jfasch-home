@@ -1,11 +1,9 @@
 ---
-title: "Skills (de)"
+title: "Skills"
+menu_title: "Skills (de)"
 target_name: skills-de
 menu_order: 20
 ---
-
-Qualifikationen
-===============
 
 * Linux
   * Netzwerkprogrammierung

@@ -1,11 +1,12 @@
 ---
-title: "Projekte (de)"
+title: "Projekte"
+menu_title: "Projekte (de)"
 target_name: projects-de
 menu_order: 30
 ---
 
-Bisherige Projekte
-==================
+Projekte aus selbstständiger Tätigkeit
+======================================
 
 (Stand Jänner 2014)
 
