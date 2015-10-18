@@ -1,5 +1,6 @@
 ---
-title: "C Einführung"
+title: "Die Programmierprache C: Eine Einführung"
+menu_title: "C Einführung"
 target_name: course-prog-c
 
 tags: ['kurs', 'schulung', 'c']

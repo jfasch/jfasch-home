@@ -17,7 +17,7 @@ def menu(identifier, level=0, embedded=true)
   else 
     text = '&raquo;&nbsp;&nbsp;'
   end
-  text += other[:title] || other.identifier  
+  text += other[:menu_title] || other[:title] || other.identifier  
 
   res = ' '*level + '<li>'
   res += '<span class="on-menu-path">' if in_other_tree and identifier != '/'
