@@ -7,6 +7,8 @@
        render('contexts/course')
      when "oss"
        render('contexts/oss')
+     when "howto"
+       render('contexts/howto')
      else
        raise "unknown context \"#{@item[:context]}\" in #{@item.identifier}"
      end

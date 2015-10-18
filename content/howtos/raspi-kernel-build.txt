@@ -1,0 +1,324 @@
+---
+title: "Rasperry Pi: Kernel Build"
+context: howto
+---
+
+Note that the entire process of building the Rasperry Pi kernel is
+described in
+<https://www.raspberrypi.org/documentation/linux/kernel/building.md>. The
+foundation's description is targetted to the end user who wants to get
+the problem solved. Enable one more driver in the build, and be done.
+
+This description borrows heavily from the foundation's, but deviates
+in a few places. It is for people who want to do more, for example,
+
+ * Maintain their own kernels using Git
+ * Build kernels for different architectures
+ * Use different toolchains (I use Gentoo's `crossdev` to create toolchains)
+ * Understand better what's involved
+
+# Cross Toolchain on Host
+
+It's no fun to do large compilations on the Pi. The Pi2 has become a
+lot more powerful --- 4 processors can do more than just one. RAM has
+also doubled but there is still "only" 1GB which soon becomes the
+limiting factor for a parallel kernel compilation.
+
+This is why we do *cross compiling*. One could compile on the Pi if
+one wants, things become simpler (but not much) when done this
+way. Anyway, there are other platforms which are not as capable as the
+Pi --- where there is no native compilation no matter what ---, and
+the same principles apply there.
+
+## Architecture Name --- What's That?
+
+I am not exactly sure where those *architecture names* come from, and
+what their canonical definition is. I understand that one needs a
+*cross toolchain* to build code *on the workstation*, and that code
+will run *on the target machine* (Pi in our case).
+
+*So how to select the toolchain?* Every toolchain has a *name*, and I
+cannot come up with a good explanation of how these names are made up.
+--- here two examples.
+
+ * *The Raspberry Foundation's toolchain*. See
+   <https://www.raspberrypi.org/documentation/linux/kernel/building.md>
+   for how to get it (it boils down to cloning a Github
+   repository). Obviously they use the target name
+   `arm-linux-gnueabihf`. Makes sense, the `...hf` stands for
+   *hardware floatingpoint*.
+ * *Gentoo's `crossdev`*. Here the Pi toolchain is referred to as
+   `armv6j-hardfloat-linux-gnueabi` (see
+   <https://wiki.gentoo.org/wiki/Raspberry_Pi>) which also makes
+   sense. `hardfloat` as above, plus there we are more specific about
+   the processor type: `armv6j`.
+
+The point is that there is no magic behind the toolchain name (except
+that you should choose the right toolchain for your target
+architecture of course). All you need to know is that the target name
+is part of the name of the binaries,
+
+~~~
+   $ ls -1 /usr/bin/armv6j-hardfloat-linux-gnueabi-*
+   /usr/bin/armv6j-hardfloat-linux-gnueabi-ar
+   /usr/bin/armv6j-hardfloat-linux-gnueabi-as
+   /usr/bin/armv6j-hardfloat-linux-gnueabi-g++
+   /usr/bin/armv6j-hardfloat-linux-gnueabi-gcc
+   /usr/bin/armv6j-hardfloat-linux-gnueabi-ld
+   /usr/bin/armv6j-hardfloat-linux-gnueabi-nm
+   /usr/bin/armv6j-hardfloat-linux-gnueabi-objcopy
+   ...
+~~~
+
+I, being a Gentoo user, will use `armv6j-hardfloat-linux-gnueabi` for
+the remainder.
+
+## Building a Toolchain with Gentoo's `crossdev`
+
+Links: 
+
+ * <https://wiki.gentoo.org/wiki/Raspberry_Pi>
+ * <https://wiki.gentoo.org/wiki/Overlay/Local_overlay>
+
+Crossdev will pull in a lot of Ebuilds which are used to build the
+members (`binutils`, `gcc`, ...) of the toolchain. These will not be
+stored in the main portage tree, but rather in a [local portage
+overlay](https://wiki.gentoo.org/wiki/Overlay/Local_overlay) that you
+will have to create.
+
+To create a local overlay for the crossdev artifacts,
+
+~~~
+# mkdir -p /usr/local/portage-crossdev/profiles
+# echo local-crossdev > /usr/local/portage-crossdev/profiles/repo_name
+~~~
+
+In /etc/portage/repos.conf/crossdev.conf (create if it does not
+exist), add
+
+~~~
+[local-crossdev]
+location = /usr/local/portage-crossdev
+priority = 9999
+masters = gentoo
+auto-sync = no
+~~~
+
+Build the toolchain (this can take a while),
+
+~~~
+# crossdev --stable --target armv6j-hardfloat-linux-gnueabi
+~~~
+
+## Other Toolchains
+
+The [Raspberry Foundation's
+documentation](https://www.raspberrypi.org/documentation/linux/kernel/building.md)
+has a precompiled toolchain available from a Git repository. (What
+mindset leds you to using Git for this?)
+
+If you are developing for industry embedded platforms, as I do from
+time to time, chances are that you will be using a vendor supplied
+toolchain. No difference, basically, other than probably very outdated
+versions.
+
+
+
+# Kernel Source
+
+I use to track Linus's repository, and pull stuff from others as
+needed. Occasional kernel work is also done there. Together with
+out-of-source kernel builds, this is what is in this description:
+
+ * Get the mainline kernel
+ * Augment it with the Raspi tree on Github
+
+Kernel source from Linus's repository (I use to have it in
+`~/work/linux`),
+
+~~~
+$ git clone https://github.com/torvalds/linux.git ~/work/linux
+~~~
+
+The Raspberry kernel source is in
+<https://github.com/raspberrypi/linux.git> --- add this as a *git
+remote*,
+
+~~~
+$ cd ~/work/linux
+$ git remote add raspberrypi https://github.com/raspberrypi/linux.git
+$ git remote -v
+origin	https://github.com/torvalds/linux.git (fetch)
+origin	https://github.com/torvalds/linux.git (push)
+raspberrypi	https://github.com/raspberrypi/linux.git (fetch)
+raspberrypi	https://github.com/raspberrypi/linux.git (push)
+~~~
+
+Initial fetch,
+
+~~~
+$ git fetch raspberrypi
+~~~
+
+Add a local tracking branch (and check it out) for the one remote
+branch that we want to work on. `rpi-4.1.y` is the current version as
+of this writing.
+
+~~~
+$ git checkout -b rpi-4.1.y remotes/raspberrypi/rpi-4.1.y
+~~~
+
+
+# Kernel Compilation
+
+## Parameters for the Build
+
+In order to make the million command lines that follow more concise
+and maintainable, I set a few variables that are referred to in the
+remainder as needed. In real life all this would be done in a shell
+script (it is), but it is easier to make things clear in a
+step-by-step manner.
+
+`SOURCEDIR` is where the source is. The build will leave that tree
+untouched.
+
+~~~
+SOURCEDIR=$HOME/work/linux
+~~~
+
+`BUILDDIR` is where the kernel build goes. Initially empty.
+
+~~~
+BUILDDIR=/var/jfasch/raspi/kernel/rpi-4.1.y-jfasch/build
+~~~
+
+`BUILDPARAM` is supplied to the kernel build as a whole, as a
+commandline parameter to the `make` program. This one's for cross
+compilation --- select the ARM architecture, and specify your cross
+toolchain.
+
+**Important**: when supplying the toolchain name
+(`armv6j-hardfloat-linux-gnueabi`) to the kernel build, we have to add
+an extra '-' at the end, making it into
+`armv6j-hardfloat-linux-gnueabi-`. The kernel build system prepends
+the supplied value to `gcc` literally.
+
+Otherwise the build will fail with a rather unobvious
+message like
+
+~~~
+scripts/kconfig/zconf.tab.c:199:24: fatal error: zconf.hash.c: No such file or directory
+~~~
+
+So,
+
+~~~
+BUILDPARAM="ARCH=arm CROSS_COMPILE=armv6j-hardfloat-linux-gnueabi-"
+~~~
+
+Next, I like the build to take place out-of-source, and this is how it
+is done.
+
+~~~
+BUILDPARAM="$BUILDPARAM -C $SOURCEDIR"
+BUILDPARAM="$BUILDPARAM O=$BUILDDIR"
+~~~
+
+jjj todo jjj packaging
+
+~~~
+MODULESDIR=/var/jfasch/raspi/kernel/rpi-4.1.y-jfasch/modules-root
+~~~
+
+
+## Preparing the Kernel .config File
+
+If you have a running Raspi, you can retrieve the kernel configuration
+from the running kernel (logged in as root on the Raspi),
+
+~~~
+# modprobe configs    # suddenly /proc/config.gz appears
+# gzip -cd /proc/config.gz > /tmp/raspi-config
+~~~
+
+Then, on the host, copy that file into the build directory (which is
+still empty at this point), and let the build assimilate it,
+
+~~~
+$ cp raspi-config $BUILDDIR/.config
+$ make $BUILDPARAM oldconfig
+~~~
+
+Alternatively, for the Raspi tree, there is a way to create the same
+configuration without having a running Raspi.
+
+ * Pi 1: `$ make $BUILDPARAM bcmrpi_defconfig`
+ * Pi 2: `$ make $BUILDPARAM bcm2709_defconfig`
+
+This creates the same `$BUILDDIR/.config` kernel configuration file
+that we extracted from the live Raspi above. Assimilate,
+
+~~~
+$ make $BUILDPARAM oldconfig
+~~~
+
+Now is the time to make adjustments --- this is why we are compiling a
+custom kernel in the first place. Enter the configuration menu,
+
+~~~
+$ make $BUILDPARAM menuconfig
+~~~
+
+Your modification demands may vary --- here are demands that I can
+imagine.
+
+ * `CONFIG_LOCALVERSION`: it make sense to differentiate (with `uname
+   -r` for example) your custom kernel from the original. I append
+   `-jfasch`, at a minimum or something more precise.
+
+ * `CONFIG_IKCONFIG`: link `/proc/config.gz` statically. Otherwise one
+   has to `modprobe configs` to see it. I use the file often during
+   development, and don't want to load a module eveytime I need it.
+
+ * `CONFIG_CAN_MCP251X`: a CAN controller that I needed to talk to in
+   one of my recent projects. Already there, as a module. but better
+   check.
+
+ * `CONFIG_SENSORS_LM73`: an I2C temperature sensor. Configure as
+   module.
+
+## Building the Kernel Artifacts
+
+Now, having created and edited the configuration, the tree is fit for
+building. Note how we didn't yet make any modifications to the source
+(`$SOURCEDIR`) itself --- all we did takes place in `$BUILDDIR`. Let
+the system build all the necessary artifacts,
+
+ * The main kernel image
+ * Modules
+ * Device tree blobs
+
+~~~
+$ make $BUILDPARAM zImage modules dtbs
+~~~
+
+
+# Packaging
+
+jjj blah transfer to raspi
+
+## Kernel Image
+
+jjj
+
+## Module Tree
+
+jjj
+
+~~~
+$ make $BUILDPARAM INSTALL_MOD_PATH=$MODULESDIR modules_install
+~~~
+
+## Device Tree BLOBs
+
+jjj
