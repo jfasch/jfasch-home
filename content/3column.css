@@ -336,14 +336,14 @@ div#middle-header-box > h1 {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 60px;
 }
 
 #middle-column #middle-content-box {
-    position: fixed;
-    top: 50px;
-    left: 230px;
-    right: 250px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
     bottom: 0;
 
     /* leave space for scrollbar */
