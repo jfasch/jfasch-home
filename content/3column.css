@@ -161,7 +161,9 @@ div#middle-header-box > h1 {
 .content pre {
     border: 1px dashed #E1E1E1;
     color: #333344;
-    background: #fafafa;
+    /* background: #fafafa; */
+    /* background: #ebe7e7; */
+    background: #f2f0f0;
     font-family: monospace;
     overflow: auto;
     font-size: 11px;
