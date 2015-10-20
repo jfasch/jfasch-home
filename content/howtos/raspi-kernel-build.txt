@@ -15,13 +15,13 @@ Note that the entire process of building the Rasperry Pi kernel is
 described in
 <https://www.raspberrypi.org/documentation/linux/kernel/building.md>. The
 foundation's description is targetted to the end user who wants to get
-the problem solved. Enable one more driver in the build, and be done.
+the problem solved. Enable one more drivers in the build, and be done.
 
 This description borrows heavily from the foundation's, but deviates
 in a few places. It is for people who want to do more, for example,
 
  * Maintain their own kernels using Git
- * Build kernels for different architectures
+ * Build kernels for different architectures, and not only for the Rasperry
  * Use different toolchains (I use Gentoo's `crossdev` to create toolchains)
  * Understand better what's involved
 
@@ -123,13 +123,13 @@ Build the toolchain (this can take a while),
 The [Raspberry Foundation's
 documentation](https://www.raspberrypi.org/documentation/linux/kernel/building.md)
 has a precompiled toolchain available from a Git repository. (What
-mindset leds you to using Git for this?)
+mindset leads you to using Git for this?)
 
 If you are developing for industry embedded platforms, as I do from
 time to time, chances are that you will be using a vendor supplied
 toolchain. No difference, basically, other than probably very outdated
-versions.
-
+versions. If the pain becomes too hard because the version are way too
+outdated, Gentoo's `crossdev` can always come to the rescue.
 
 
 # Kernel Source
