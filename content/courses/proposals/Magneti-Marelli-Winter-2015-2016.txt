@@ -1,0 +1,103 @@
+---
+title: "Proposal: Magneti Marelli, Winter 2015/2016"
+menu: false
+context: howto
+---
+
+This proposal is for a course in Linux Systems Programming, scheduled
+for a week in December 2015, or maybe January, 2016. Course attendees
+are programmers.
+
+Material is taken mostly from the <%= link_to_name('regular course',
+'courses-sysprog') %>, with deviations here and there.
+
+# Day 1: Introduction
+
+Without using any programming APIs that the OS offers, an overview of
+the system is presented. We use the shell and some basic programs like
+ls, chmod, find, cat, ... to get an impression of the concepts
+involved (and, if need be, to still fears of the commandline).
+
+* Files and directories
+* Permissions
+* Resource limits
+* Scheduling
+* Processes and threads
+* Networking
+
+# Day 2: Linux Development, Groundwork
+
+Linux development, unlike Windows and certain embedded processor
+platforms, does not rely upon an Intgrated Development Environment
+(IDE). It's more like the other way around - an IDE is only optional,
+and is actually only rarely used. Especially for cross development it
+is important to understand what the pieces are and how they work
+together.
+
+* Toolchain: compiler, linker, and others
+* Build tools overview: GNU Make, GNU Automake, CMake
+* Debugging: GDB, strace, valgrind
+* Profiling: gprof, oprofile
+* Cross development and debugging
+
+# Day 3: Basics: File I/O, File Descriptors, and Processes
+
+This is the beginning of the programming part of the course. It
+contains all one really needs to know to be able to manage the OS:
+file descriptors and processes. The former, file descriptors, are used
+to do all kinds of I/O - network, several buses like CAN and I2C, and
+many more. Implicitly, file descriptors are also used to manage
+several kinds of wait conditions in a transparent way. The latter,
+processes, represent *isolated* running entities in the system - they
+are created, scheduled, and terminated.
+
+* File I/O
+  * open/read/write/close
+  * Duplication semantics
+    * Implicit duplication through cross-process inheritance
+    * Explicit duplication
+* Processes
+  * Life cycle (fork/exec/exit)
+  * Signal handling
+
+Day 4: Multithreading and Realtime
+==================================
+
+Like processes, threads represent running entities. Unlike processes,
+however, threads do away with isolation. There is no memory protection
+- threads are said to *share an address space*. This opens a number of
+opportunities for efficient data sharing, which is not easily done
+when using processes. On the other hand, programming in a
+multithreaded environment requires a certain degree of diligence and
+knowledge.
+
+Realtime is a topic that applies to both multiprocessing and
+multithreading --- both processes and threads are *scheduled*, and the
+term "realtime" is just another way of scheduling.
+
+* Multithreading
+  * Life cycle (create, run, terminate, join)
+  * Synchronization (mutex)
+  * Communication (condition variable)
+  * Thread specific storage; others miscellanea
+* Realtime scheduling
+  * Scheduling policies (Normal ("other"), FIFO, Round robin)
+  * Scheduling priorities
+  * Priority inversion
+
+Day 5: Miscellaneous
+====================
+
+Day 1 to day 4 cover the topics that are essential to Linux systems
+programming in userspace. Other topics that come to mind, but can be
+done without, follow. We can fill the day with a selection of these.
+
+* Network programming (Sockets). This is weird but easy; traps
+  are not hidden but rather obvious.
+* I/O Multiplexing. There are more efficient and elegant ways to
+  handle multiple file descriptors than creating a thread for each.
+* Virtual memory. Sharing memory and memory-mapped files are
+  only one application of the memory management swiss army knife,
+  `mmap`.
+* POSIX IPC. Inter-**Process**-Communication, the standard way.
+* Shared libraries. Creating, using, applications, pitfalls.
