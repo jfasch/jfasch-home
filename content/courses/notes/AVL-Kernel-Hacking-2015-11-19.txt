@@ -1,0 +1,204 @@
+---
+title: "Course Notes: AVL 2015-11-17"
+menu: false
+context: howto
+---
+
+The course was a little, well, unstructured --- apologies to those who
+weren't able to follow entirely. A few questions have been left
+unanswered, a few questions remain to be answered. Here's a loosely
+structured list of further information --- if something's missing,
+don't hesitate to ask.
+
+# Example Code 
+
+The following Github repositories use to accompany my courses.
+
+* *Linux Systems Programming*. Parts of it were done in the "basics"
+  course in week 45. The
+  [`jf-linuxexamples`](https://github.com/jfasch/jf-linuxexamples)
+  project contains straightforward C++ code to wrap most of what's
+  covered in this course.
+* *Linux Kernel Programming*. The
+  [`jf-kernel-course`](https://github.com/jfasch/jf-kernel-course)
+  project contains the drivers that we went through on day three of
+  the kernel course.
+
+# CAN Bus
+
+## Sample Drivers
+
+The CAN device drivers that we looked at were,
+
+* [The Bosch
+  C_CAN/D_CAN](https://github.com/torvalds/linux/tree/master/drivers/net/can/c_can/),
+  built into AM437x processors. Look into the ["platform"
+  part](https://github.com/torvalds/linux/blob/master/drivers/net/can/c_can/c_can_platform.c)
+  (as opposed to the PCI version)
+* [Microchip
+  MCP2515](https://github.com/torvalds/linux/blob/master/drivers/net/can/spi/mcp251x.c)
+
+## CAN Socket Programming
+
+There's plenty of information about SocketCAN in the kernel source's
+[`Documentation/networking/can.txt`](https://github.com/torvalds/linux/blob/master/Documentation/networking/can.txt).
+
+I gave a talk about it at [Grazer Linuxtage
+2014](https://glt14.linuxtage.at/),
+
+* [Program](https://glt14-programm.linuxtage.at/events/239.de.html)
+* [Slides](https://glt14-programm.linuxtage.at/attachments/151_GLT2014-CANBus.pdf)
+* [Video](https://www.youtube.com/watch?v=5XuSr4M9uNI&list=PLWHx0EvwLLUHaDLeRf7bHoVjy9wx7IbbB&index=6)
+
+# PREEMPT_RT: Realtime Preemption Patch
+
+* [Wiki](http://rt.wiki.kernel.org)
+* [Download](http://www.kernel.org/pub/linux/kernel/projects/rt/)
+* [More](https://rt.wiki.kernel.org/index.php/Publications)
+* Benchmark tool: [Cyclictest](https://rt.wiki.kernel.org/index.php/Cyclictest)
+
+# GPIO in `sysfs`
+
+You were apparently impressed when I let an LED blink using the
+commandline. We later used *Sysfs GPIO* to track down why the
+Ricoboard didn't boot with Xenomai -- apply voltage to GPIO 32 to let
+the FPGA blink more slowly,
+
+~~~
+#!/bin/sh
+
+echo 32 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio32/direction
+echo 1 > /sys/class/gpio/gpio32/value
+~~~
+
+More information,
+
+* Kernel source,
+  [`Documentation/gpio/sysfs.txt`](https://github.com/torvalds/linux/blob/master/Documentation/gpio/sysfs.txt)
+* [Sample
+  source](https://github.com/jfasch/jf-kernel-course/blob/master/userspace/bin/io-test.cc),
+  using the `select` system call to receive GPIO interrupts in
+  userspace.
+
+
+# Root Filesystem, `initramfs`, Overlayfs
+
+* You are currently using an [Arago root
+  filesystem](http://arago-project.org/wiki/index.php/Main_Page),
+  which is built using [Yocto](https://www.yoctoproject.org/). I
+  definitely recommend a look at Yocto.
+* `initramfs` is a "boot through" root filesystem, used to build more
+  complex (overlayed?) root filesystems. See
+  [`Documentation/filesystems/ramfs-rootfs-initramfs.txt`](https://github.com/torvalds/linux/blob/master/Documentation/filesystems/ramfs-rootfs-initramfs.txt)
+* `overlayfs`, see
+  [`Documentation/filesystems/overlayfs.txt`](https://github.com/torvalds/linux/blob/master/Documentation/filesystems/overlayfs.txt)
+
+
+# Kernel Build
+
+## Building the Raspi Kernel
+
+To build any kernel, we used the How-To on my homepage, <%=
+link_to_name('Rasperry Pi: Kernel Build', 'howto-raspi-kernel-build')
+%>.
+
+## Building External Modules
+
+Slaven was asking how to build external kernel modules (ones that are
+not part of the kernel tree). Two approaches ...
+
+* RTFM:
+  [`Documentation/kbuild/modules.txt`](https://github.com/torvalds/linux/blob/master/Documentation/kbuild/modules.txt)
+* [Example in `jf-kernel-course/drivers`](https://github.com/jfasch/jf-kernel-course/blob/master/drivers/build.sh)
+
+~~~
+#!/bin/sh
+
+make -C ~/work/linux O=/var/jfasch/raspi/kernel/rpi-4.1.7-rt8-jfasch ARCH=arm CROSS_COMPILE=armv6j-hardfloat-linux-gnueabi- M=$(pwd) $*
+~~~
+
+I have another "How-To" document pending to be published on my
+homepage, but chances are that you figure it out by yourself before
+that is ready.
+
+
+# Git, TI, I-Pipe
+
+We were using Git a lot to pull in various remote repositories, for
+example ...
+
+~~~
+$ git remote -v
+ipipe	git://git.xenomai.org/ipipe.git (fetch)
+ipipe	git://git.xenomai.org/ipipe.git (push)
+ipipe-gch	git://git.xenomai.org/ipipe-gch.git (fetch)
+ipipe-gch	git://git.xenomai.org/ipipe-gch.git (push)
+linux-stable	git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git (fetch)
+linux-stable	git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git (push)
+origin	https://github.com/torvalds/linux.git (fetch)
+origin	https://github.com/torvalds/linux.git (push)
+ti	git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git (fetch)
+ti	git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git (push)
+ti-avl	../../tmp/AVL/devicebuilder/kernel/ (fetch)
+ti-avl	../../tmp/AVL/devicebuilder/kernel/ (push)
+~~~
+
+(`ti-avl` is the Git repo from the SDK)
+
+(See <%= link_to_name('Rasperry Pi: Kernel Build',
+'howto-raspi-kernel-build') %> for an explanation of remotes.)
+
+## Merging I-Pipe to TI
+
+~~~
+$ git checkout avl-sdk-linux
+$ git checkout -b avl-sdk-linux-ipipe-merge-3.14
+$ git merge remotes/ipipe-gch/for-ipipe-3.14
+$ git status
+... see two conflicted files ...
+~~~
+
+## Detecting Conflicting Commits
+
+~~~
+$ git blame arch/arm/mach-omap2/timer.c
+~~~
+
+Two conflicting regions are seen,
+
+* Region 1
+  * HEAD
+    * 538e33452 Vaibhav Bedia
+  * remotes/ipipe-gch/for-ipipe-3.14
+    * 88fc1d63b Gilles Chanteperdrix
+* Region 2
+  * HEAD
+    * f25e84f34 Afzal Mohammed
+  * remotes/ipipe-gch/for-ipipe-3.14
+    * 88fc1d63b Gilles Chanteperdrix
+
+~~~
+$ git blame drivers/gpio/gpio-omap.c
+~~~
+
+* HEAD
+  * Hmm, da wurde was removed -> schwer zu finden
+* remotes/ipipe-gch/for-ipipe-3.14
+  * e5c56ed3c David Brownell
+  * e9191028e Lennert Buytenhek
+  * 88fc1d63b Gilles Chanteperdrix
+
+## Finding Commit Origins
+
+In order to detect where the conflicting commits come from (which
+branch), we use the `--contains` option.
+
+~~~
+$ git branch --contains <commit>
+~~~
+
+It reveals information that is obvious at best. Commit `88fc1d63b` is
+from I-Pipe, it is a huge commit where Gilles Chanteperdrix made lots
+of unrelated changes. (This is not the way one does serious
+development.)

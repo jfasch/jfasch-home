@@ -1,5 +1,6 @@
 ---
 title: "Rasperry Pi: Kernel Build"
+target_name: howto-raspi-kernel-build
 context: howto
 
 tags: ['cross compile', 'kernel', 'raspberry', 'pi', 'embedded', 'architecture', 'target']
