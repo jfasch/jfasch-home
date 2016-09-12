@@ -27,25 +27,34 @@ Kursinhalt
   Speicherbereiche seiner Programme auf die Festplatte ausgelagert
   werden (Swap), oder dass der Code von zwei Instanzen desselben
   Programmes nur einmal im Hauptspeicher liegt.
-  * Grundlagen
-  * Memory Mappings
-  * Assoziierte System Calls: mmap, mlock, mlockall, ...
+  * *Memory Mappings*: Grundlagen
+  * *Sichtbarkeit*: "Private" vs. "Shared"
+  * *Speicherzugriff*: Schutzmechanismen
+  * *Assoziierte System Calls*: mmap, mlock, mlockall, ...
+  * *Realtime-Aspekte*
 * **POSIX IPC**. Netzwerk-Kommunikation mittels Sockets ist nur *ein*
   Mittel, Prozesse miteinander kommunizieren zu lassen. *IPC* (Inter
   Process Communication) ist eine Sammlung weiterer Mechanismen, auf
   die hier eingegangen wird.
-  * Shared Memory
-  * Semaphoren
-  * Message Queues
+  * *Shared Memory*
+  * *Semaphoren*
+  * *Message Queues*
 * **Neue, Linux-spezifische Systemcalls**. Gewisse Mechanismen in Unix
   sind steinalt und haben bis heute überlebt, obwohl es keineswegs
   einfach ist, sie fehlerfrei zu benutzen --- man denke an Signale und
   Timer. Linux führt die Unix-Tradition "Everything is a File"
   konsequent weiter und verpasst genau diesen Mechanismen ein
   alternatives Interface, das genau auf diesem Prinzip beruht.
-  * Signal Handling mit `signalfd`
-  * Timer mit `timerfd_create`
-  * `eventfd`
+  * *Signal Handling*: `signalfd`
+  * *Timer*: `timerfd_create`
+  * *`eventfd`*
+* **Shared Libraries**. Dynamisch ladbare Libraries sind ein
+    mächtiges, wenngleich kompliziertes, Werkzeug, um Flexibilität,
+    Ressourcenschonung, und einen wasserdichten Upgradepfad zu
+    erreichen.
+  * *ELF*: "Executable and Linkable Format"
+  * *Automatisches/implizites Laden*: Linux Loader
+  * *Explizites Laden* mit `dlopen()`: "Loading Scopes" etc.
   
 Empfohlene Vorkenntnisse
 ========================

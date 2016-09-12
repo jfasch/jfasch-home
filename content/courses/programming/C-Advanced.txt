@@ -34,11 +34,17 @@ haben, dass manches, was sie tun, auf Zufall basiert.
 Kursinhalt
 ==========
 
- * **Typkonversionen und ihre Fallen**: die Lücken im Typensystem von
+* **Typkonversionen und ihre Fallen**: die Lücken im Typensystem von
    C
- * **Der C-Präprozessor** und seine dunklen Ecken
+   * *Techniken zur Typensicherheit*
+ * **Der C-Präprozessor**
+   * *Dunkle Ecken*
+   * *C99 Features*, um den C-Präprozessor unnötig zu machen.
  * **Programmhygiene**. Verschiedene Wege, sich von Compiler und
    Linker den Weg zu sauberen Programmen weisen zu lassen.
+   * *`const`*
+   * *`static`*
+   * *Explizite Typensicherheit*
  * **Performance**
    * Optimierungstechniken, die Compiler anwenden --- viele händische
      Optimierung sind unnötig und erschweren die Lesbarkeit

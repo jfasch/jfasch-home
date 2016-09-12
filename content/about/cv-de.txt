@@ -17,7 +17,7 @@ menu_order: 10
   * OO Design und Analyse (Rational Rose, für C++ und Java)
   * Releasemanagement (CVS und Subversion)
   * Systemnahe Programmierung unter Unix und Windows NT, in C/C++
-* Salomon in Friesach bei Graz, bis 2006.
+* Salomon in Friesach bei Graz, bis 2006
   * OO Design und Analyse (MagicDraw)
   * Datenbankdesign (MagicDraw)
   * Programmierung einer objektrelationalen Datenbankschnittstelle in
