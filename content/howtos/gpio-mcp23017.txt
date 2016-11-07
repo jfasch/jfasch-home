@@ -1,0 +1,423 @@
+---
+title: "MCP23017 IO Expansion"
+target_name: howto-gpio-mcp23017
+context: howto
+
+tags: ['raspberry', 'pi', 'linux', 'gpio']
+---
+
+**This is something that *Simply Works (TM)* --- I love it!**
+
+The Raspberries have 26 or 40 pin expansion headers (depending on the
+hardware revision). Roughly half of the pins are general purpose IO
+(GPIO) pins that can be used by arbitrary applications; the others are
+special purpose pins like I2C (SDA and SCL), SPI (MISO, MOSI, CE0 and
+CE1), etc. If you need more GPIO pins (for whatever purpose --- for
+example if you run five [7-segment LCD
+displays](http://de.farnell.com/7-segment-lcd-anzeigen)), you have to
+extend the number of pins. This little document explains how this is
+done.
+
+The [MCP23017](http://www.microchip.com/wwwproducts/en/MCP23017) is a
+16 bit GPIO port expander. It is controlled via I2C or SPI; we will
+only be using I2C here. Most important, there is a [Linux kernel
+driver](https://github.com/torvalds/linux/blob/master/drivers/gpio/gpio-mcp23s08.c)
+and a [device tree
+overlay](https://github.com/raspberrypi/linux/blob/rpi-4.4.y/arch/arm/boot/dts/overlays/mcp23017-overlay.dts)
+available for the MCP23017 --- this means that ...
+
+* it integrates seamlessly into the <%= link_to_name('Linux GPIO
+  subsystem', 'howto-gpio-sysfs') %>
+* the amount of work needed to expand your GPIOs drops to a minimum
+
+The same holds true for a number of port expander chips. Check the
+overlay documentation --- `/boot/overlays/README` on the Raspberry, or
+[here in the Raspberry kernel
+repository](https://github.com/raspberrypi/linux/blob/rpi-4.4.y/arch/arm/boot/dts/overlays/README).
+
+The rest of the text explains the Linux way of expanding the range of
+GPIO pins. It is ...
+
+* not Raspberry specific
+* not MCP23017 specific
+
+The principles apply to any platform and any GPIO chip for which a
+decent Linux driver exists. The Raspberry is a good and
+well-maintained and well-documented platform, and MCP23017 is a
+popular and cheap port expander, so it makes sense to use that
+combination for the following walk-through.
+
+# Prerequisites
+
+## Enable I2C
+
+In `/boot/config.txt`, uncomment the following line to instruct the
+bootloader to configure the I2C pins,
+
+~~~
+...
+dtparam=i2c_arm=on
+...
+~~~
+
+After a reboot we will see the `i2c_bcm2708` kernel driver loaded,
+
+~~~
+jfasch@raspberrypi:~ $ lsmod|grep i2c_bcm
+i2c_bcm2708             5740  0 
+~~~
+
+## `i2c-tools`
+
+Install the `i2c-tools` package,
+
+~~~
+root@raspberrypi:~# apt-get install i2c-tools
+~~~
+
+This is not strictly needed --- it's the driver's job to talk to the
+controller. However, we will be using the `i2cdetect` program to
+verify that the chip is there at the desired address. Currently,
+there's nothing yet wired to the I2C pins, let's check that simple
+fact.
+
+Insert (as root, obviously) the `i2c-dev` kernel module. `i2cdetect`
+and its friends from the `i2c-tools` do userspace I2C communication
+(as opposed to what kernel drivers are doing), and thus need a device
+special file in order to be able to.
+
+~~~
+root@raspberrypi:~# modprobe i2c-dev
+root@raspberrypi:~# ls -l /dev/i2c-*
+crw-rw---- 1 root i2c 89, 1 Nov  2 14:23 /dev/i2c-1
+~~~
+
+*Note* that you have to be member of the `i2c` group to access that
+device file. The preconfigured user `pi` already is; see <%=
+link_to_name('here', 'howto-users-groups-permissions') %> for more.
+
+Next, see how nothing is there on the bus (the "1" argument is the I2C
+bus to probe, this is `/dev/i2c-1`),
+
+~~~
+pi@raspberrypi:~ $ i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+~~~
+
+Note: maybe it makes sense to load the `i2c-dev` module automatically
+so you don't have to insert it by hand everytime you need it. You
+decide. `/etc/modules` is there for exactly that reason; add the
+following line to it, and the module will be loaded upon next boot,
+
+~~~
+pi@raspberrypi:~ $ cat /etc/modules
+# /etc/modules: kernel modules to load at boot time.
+#
+# This file contains the names of kernel modules that should be loaded
+# at boot time, one per line. Lines beginning with "#" are ignored.
+
+i2c-dev
+~~~
+
+# Wiring MCP23017
+
+Here's the MCP23017 pinout from the
+[datasheet](http://www.microchip.com/wwwproducts/en/MCP23017) ...
+
+<img src="/images/MCP23017-pinout.png" alt="MCP23017 Pinout"/>
+
+The wiring on the breadboard ...
+
+<img src="/images/Raspi-MCP23017_bb.svg" alt="Breadboard Diagram"/>
+
+A couple of notes ...
+
+* *Address configuration*. Pins A0-A2 are used to tune the I2C bus
+  address; see "1.4 Hardware Address Decoder" in the datasheet. I tied
+  A0-A2 to ground, which gives address 0x20.
+* *Interrupt*. Pins INTA and INTB can be used to signal interrupts on
+  the IO banks A and B, respectively. I wired INTA to GPIO25, though
+  this is not necessary for this example.
+* An LED is connected to GPA0, using a 1k resistor to ground. Goal is
+  to switch it on.
+
+## Test the Wiring
+
+Given that we correctly wired the I2C pins, we should now see someone
+there on the bus at address 0x20.
+
+~~~
+pi@raspberrypi:~ $ i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+~~~
+
+We installed the `i2c-tools` package just for that reason; if you
+want, you can uninstall it now.
+
+Let's move on to the GPIO driver and the device tree overlay that
+configures it.
+
+# Adding a GPIO Chip
+
+## GPIO Chips in `sysfs`
+
+The <%= link_to_name('GPIO subsystem', 'howto-gpio-sysfs') %>
+maintains the concept of a "gpiochip", which is usually a piece of
+hardware that implements, well, GPIOs. The Broadcom SoC on the
+Raspberry has one; we can see it in `/sys/class/gpio` (this directory
+provides a view into the GPIO subsystem's data structures),
+
+~~~
+pi@raspberrypi:~ $ ls -l /sys/class/gpio
+total 0
+-rwxrwx--- 1 root gpio 4096 Nov  4 09:17 export
+lrwxrwxrwx 1 root gpio    0 Nov  4 09:17 gpiochip0 -> ../../devices/platform/soc/20200000.gpio/gpio/gpiochip0
+-rwxrwx--- 1 root gpio 4096 Nov  4 09:17 unexport
+~~~
+
+Poking around in the `gpiochip0` directory reveals some interesting
+information,
+
+~~~
+pi@raspberrypi:~ $ cat /sys/class/gpio/gpiochip0/label 
+pinctrl-bcm2835
+pi@raspberrypi:~ $ cat /sys/class/gpio/gpiochip0/base 
+0
+pi@raspberrypi:~ $ cat /sys/class/gpio/gpiochip0/ngpio 
+54
+~~~
+
+This tell us that ...
+
+* The chip structure is named `pinctrl-bcm2835`
+* The GPIO numbering starts at 0
+* It has 54 GPIOs, so GPIOs 0 through 53 can be had
+
+Our MCP23017 can be rightfully considered another GPIO chip, so we expect it
+to show up as another `gpiochipNNN` directory with similar
+metadata. It is the job of the [kernel
+driver](https://github.com/torvalds/linux/blob/master/drivers/gpio/gpio-mcp23s08.c)
+to provide all this information, and to communicate with the chip over
+I2C. Next we will see how to automatically load and parameterize that
+driver.
+
+## Devicetree overlay for MCP23017
+
+"Devicetree" is a structured language to describe hardware ([an
+excellent description can be found on the Raspberry Foundation's
+site](https://www.raspberrypi.org/documentation/configuration/device-tree.md)). A
+"devicetree blob" is passed by the bootloader to the kernel. On the
+Raspberry, you can find a number of basic devicetree blobs in `/boot`,
+one each for the various Raspberry versions,
+
+~~~
+pi@raspberrypi:~ $ ls -l /boot/*.dtb
+-rwxr-xr-x 1 root root 14010 Sep 22 18:07 /boot/bcm2708-rpi-b.dtb
+-rwxr-xr-x 1 root root 14273 Sep 22 18:07 /boot/bcm2708-rpi-b-plus.dtb
+-rwxr-xr-x 1 root root 13964 Sep 22 18:07 /boot/bcm2708-rpi-cm.dtb
+-rwxr-xr-x 1 root root 15356 Sep 22 18:07 /boot/bcm2709-rpi-2-b.dtb
+-rwxr-xr-x 1 root root 15992 Sep 22 18:07 /boot/bcm2710-rpi-3-b.dtb
+-rwxr-xr-x 1 root root 15343 Sep 22 18:07 /boot/bcm2710-rpi-cm3.dtb
+~~~
+
+To extend the basic hardware structure --- which is what we do with
+the MCP23017 ---, you use so called "devicetree overlays". The
+bootloader combines these together with the basic blob, and passes the
+resulting hardware description to the kernel.
+
+Overlays are contained in the `/boot/overlays/` directory,
+
+~~~
+pi@raspberrypi:~ $ ls -l /boot/overlays/*.dtbo
+... (lots) ...
+~~~
+
+Also in the `/boot/overlays/` directory there is a README file which
+contains short descriptions of each of the overlays, together with
+parameter lists and all that is needed to use a particular overlay,
+
+~~~
+pi@raspberrypi:~ $ less /boot/overlays/README 
+... (many more) ...
+
+Name:   mcp23017
+Info:   Configures the MCP23017 I2C GPIO expander
+Load:   dtoverlay=mcp23017,<param>=<val>
+Params: gpiopin                 Gpio pin connected to the INTA output of the
+                                MCP23017 (default: 4)
+
+        addr                    I2C address of the MCP23017 (default: 0x20)
+
+... (many more) ...
+~~~
+
+With this information (and having read the introductory section of
+that file), we now add the following line to
+`/boot/config.txt`. Remember the address and the GPIO interrupt pin
+from the wiring above.
+
+~~~
+pi@raspberrypi:~ $ less /boot/config.txt
+...
+dtoverlay=mcp23017,addr=0x20,gpiopin=25
+...
+~~~
+
+*Reboot.*
+
+See how the new GPIO chip is available,
+
+~~~
+pi@raspberrypi:~ $ ls -l /sys/class/gpio/
+total 0
+-rwxrwx--- 1 root gpio 4096 Nov  7 12:06 export
+lrwxrwxrwx 1 root gpio    0 Nov  7 12:06 gpiochip0 -> ../../devices/platform/soc/20200000.gpio/gpio/gpiochip0
+lrwxrwxrwx 1 root gpio    0 Nov  7 12:06 gpiochip496 -> ../../devices/platform/soc/20804000.i2c/i2c-1/1-0020/gpio/gpiochip496
+-rwxrwx--- 1 root gpio 4096 Nov  7 12:06 unexport
+~~~
+
+The new chip's metadata aren't surprising. GPIO numbers start at 496
+(a decision that's made somewhere in the kernel, anything is perfect
+as long as it does not conflict with any existing chip's), and there
+are 16 GPIOs available.
+
+~~~
+pi@raspberrypi:~ $ cat /sys/class/gpio/gpiochip496/{label,base,ngpio}
+mcp23017
+496
+16
+~~~
+
+## Test: Switch on the LED
+
+Finally, test if our setup is correct. We connected the LED to pin
+GPA0, which we can assume become the zeroth GPIO from base offset 496
+--- hence GPIO #496. Export it to userspace so we hammer on it,
+
+~~~
+pi@raspberrypi:~ $ echo 496 > /sys/class/gpio/export 
+pi@raspberrypi:~ $ ls -l  /sys/class/gpio/
+total 0
+-rwxrwx--- 1 root gpio 4096 Nov  7 12:14 export
+lrwxrwxrwx 1 root gpio    0 Nov  7 12:14 gpio496 -> ../../devices/platform/soc/20804000.i2c/i2c-1/1-0020/gpio/gpio496
+lrwxrwxrwx 1 root gpio    0 Nov  7 12:06 gpiochip0 -> ../../devices/platform/soc/20200000.gpio/gpio/gpiochip0
+lrwxrwxrwx 1 root gpio    0 Nov  7 12:06 gpiochip496 -> ../../devices/platform/soc/20804000.i2c/i2c-1/1-0020/gpio/gpiochip496
+-rwxrwx--- 1 root gpio 4096 Nov  7 12:06 unexport
+~~~
+
+Directory `gpio496` contains all the pin's information. Configure the
+it as output, and switch it on,
+
+~~~
+pi@raspberrypi:~ $ echo out >  /sys/class/gpio/gpio496/direction 
+pi@raspberrypi:~ $ echo 1 >  /sys/class/gpio/gpio496/value 
+~~~
+
+*The LED should be on now.*
+
+## Troubleshooting
+
+Breadboard wiring is a poor man's solution --- you cannot trust the
+contacts. Check the logs what they say; I once had the case the driver
+could not detect the chip at startup, for example,
+
+~~~
+root@raspberrypi:~# journalctl|grep mcp
+Nov 07 12:26:08 raspberrypi kernel: mcp230xx: probe of 1-0020 failed with error -5
+~~~
+
+It could well be that the chip is detected without an error, but then
+fails during operation.
+
+Possible solutions:
+
+* Don't use a breadboard (have to solder then, though)
+* I2C baudrate is 100KHz by default; lower it to, say, 10000. In
+  `/boot/config.txt`, add the line ...
+
+~~~
+i2c_arm_baudrate=10000
+~~~
+
+# And RPi.GPIO?
+
+Bad news is that the popular `RPi.GPIO` Python library doesn't work
+with Linux's GPIO subsystem (see the rant below). The following
+program complains that GPIO number 496 is unknown on a Raspberry,
+
+~~~
+#!/usr/bin/python
+
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(496, GPIO.OUT)
+GPIO.output(496, 1)
+~~~
+
+~~~
+pi@raspberrypi:~ $ python ~/rpi.py 
+Traceback (most recent call last):
+  File "/home/pi/rpi.py", line 6, in <module>
+    GPIO.setup(496, GPIO.OUT)
+ValueError: The channel sent is invalid on a Raspberry Pi
+~~~
+
+## Solution
+
+Fortunately it is easy to write your own Python GPIO implementation
+based on the `sysfs` interface.  [See here for an
+example](https://github.com/jfasch/openheating/blob/master/openheating/hardware/gpio.py).
+
+## Rant
+
+The `RPi.GPIO` library accesses the Broadcom SoC's GPIO controller in
+a way that completely bypasses the OS; hence it does not know anything
+about added GPIO chips and their pin numbers.
+
+It does so be accessing the device registers directly, rather than of
+letting the kernel take care of the hardware and provide abstractions
+to userspace instead (which is its main job after all). It used to
+require root permissions for any program that used GPIO, which is a
+giant step backwards in a world of root exploits and NSA spying
+attacks.
+
+That particular problem (root access required) has been solved in the
+meantime. There is a [dedicated
+driver](https://github.com/raspberrypi/linux/blob/rpi-4.4.y/drivers/char/broadcom/bcm2835-gpiomem.c)
+that lets userspace map the device registers via
+`/dev/gpiomem`. `/dev/mem` access (which dictates root provileges) is
+no longer required, problem solved.
+
+The problems that remain are no less severe, I'd say, and they inhibit
+any serious use of the library. Forward progress is being made to
+solve these problems --- there are lots of users ---, but I don't know
+of any time frame.
+
+* *Does not cooperate with the kernel's GPIO subsystem*. No mainstream
+  GPIO expansion possible, as we saw. There are "solutions" like
+  [here](http://wiringpi.com/examples/quick2wire-and-wiringpi/the-16-pin-gpio-expansion-board/)
+  and
+  [there](http://tutorials-raspberrypi.de/gpios-mittels-i2c-port-expander-erweitern-teil-2/),
+  and I'm sure there are others.
+* *It locks you into the Raspberry universe*. The GPIO subsystem is
+  not Raspberry specific, it is *Linux specific* and thus has a much
+  wider range. By using it, porting your code is as easy as changing a
+  few pin numbers. You cannot as easily exchange the `RPi.GPIO`
+  library, unless you invent your own abstractions.

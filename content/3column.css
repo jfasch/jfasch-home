@@ -354,6 +354,20 @@ div#middle-header-box > h1 {
     overflow: auto;
 }
 
+/* argh. if I leave this in, the main-page table is rendered with this
+in effect.
+
+#middle-column table {
+    border-collapse: collapse;
+}
+#middle-column table th, #middle-column table td {
+    border: 1px solid;
+}
+#middle-column table th table td {
+    background-color: #f2f0f0;
+    border: 1px solid;
+}
+*/
 
 /* SPECIAL CASE: THE MAIN ENTRY PAGE ------------------------------------------------ */
 #main-page {

@@ -1,0 +1,10 @@
+---
+title: "GPIO in sysfs"
+target_name: howto-gpio-sysfs
+context: howto
+
+tags: ['raspberry', 'pi', 'linux', 'gpio']
+---
+# To Be Written
+
+jjjj

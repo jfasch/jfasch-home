@@ -1,0 +1,197 @@
+---
+title: "Users, Groups, and Permissions"
+target_name: howto-users-groups-permissions
+context: howto
+
+tags: ['raspberry', 'pi', 'linux']
+---
+
+Raspbian (and the other Raspberry distributions) comes with the
+preconfigured user `pi`, password `raspberry`. This account is
+well-known all across the world --- everybody could log in to the `pi`
+account if you leave your Raspberry lying around. This article
+explains how to keep users out of your system, by doing basic
+administrative tasks such as changing passwords, and creating users
+and groups.
+
+**Be aware that exposing your machine to the Internet requires
+additional security measures. See <%= link_to_name('Understanding
+SSH', 'howto-ssh') %> for more.**
+
+Also note that, while the following text takes files in `/sys` as an
+example (on the Raspberry, we like to deal with hardware), everything
+applies to regular files just as well.
+
+# Permissions
+
+On the Raspberry, one often wants to access hardware via *device
+special files* (mostly *character devices*) or other pseudo files
+somewhere in `/sys`. For example,
+
+~~~
+$ ls -l /sys/class/gpio
+-rwxrwx--- 1 root gpio 4096 Oct 13 18:17 export
+lrwxrwxrwx 1 root gpio    0 Oct 13 18:17 gpiochip0 -> ../../devices/platform/soc/3f200000.gpio/gpio/gpiochip0
+-rwxrwx--- 1 root gpio 4096 Oct 13 18:17 unexport
+~~~
+
+(See <%= link_to_name('GPIO in sysfs', 'howto-gpio-sysfs') %> for what
+this is.)
+
+Take as an example the `export` file,
+
+~~~
+-rwxrwx--- 1 root gpio 4096 Oct 13 18:17 export
+~~~
+
+It belongs to user `root` and has group ownership `gpio`, as can be
+seen from columns 3 and 4. Note the `rwxrwx---` in the first column
+--- the permissions. (The first character represents the file type,
+and `-` tells us that `export` is a regular file.) Divide the nine
+characters in groups of three, like in the table below, to see how the
+permissions apply.
+
+|------+------+---------|
+| user | group | others |
+|------|-------|--------|
+| rwx  | rwx   | - - -  |
+|------|-------|--------|
+
+* The file `export` can be **r**ead, **w**ritten, and e**x**ecuted by
+  user `root` (actually, reading and executing `export` is not
+  particularly meaningful due to its special role in the GPIO
+  subsystem, and I have no idea why it has these permissions).
+* It can also be rwx'ed by all users in the group `gpio`.
+* All *others* cannot access the file in any way.
+
+If you happen to be authenticated as a user who does not have
+permissions of that file, a straightforward solution would be to (as
+root) [change the permissions](#change-permissions) of the file to
+allow access for *others*. This is inappropriate though, because
+
+* Not only that user would gain access, but really *all others* (and
+  this is not what I call fine grained access control).
+* `/sys/class/gpio/export` is a file in the `sysfs` file system. This
+  is a *virtual* file system which has no persistent backing --- you
+  would have to change permissions after every reboot.
+
+So why not [add the user to group](#add-user-to-group) `gpio`? This is
+the proper way, and this is what that group is there for.
+
+The following lengthy text tries to explain the Unix permission
+system, in case you want more. If so, be patient, and read on.
+
+# The `id` Command
+
+Use the `id` command to show the *credentials* (user ID and group
+memberships) a user has. Without any arguments, it prints the
+credentials of the current user, `pi` in this case.
+
+~~~
+pi@raspberrypi:~ $ id
+uid=1000(pi) gid=1000(pi) groups=1000(pi),4(adm),20(dialout),24(cdrom),29(audio),44(video),46(plugdev),60(games),100(users),101(input),108(netdev),997(gpio),998(i2c),999(spi)
+~~~
+
+To see the credentials of a different (and less privileged) user,
+
+~~~
+pi@raspberrypi:~ $ id jfasch
+uid=1007(jfasch) gid=1007(jfasch) groups=1007(jfasch)
+~~~
+
+# Creating a User
+
+So how about that user `jfasch` that we see above? Why would one want
+to create a user when a user `pi` is already there?
+
+I use Linux in my house for several automation tasks. All is based on
+the Raspberry, just because *it is there* --- it is almost free, has a
+great community and simply works (because there is a community). I
+don't *depend* on it though --- all I want is Linux, a couple of IO
+pins, maybe I2C, maybe SPI, to talk to the hardware pieces that I
+have. So, no, I don't run automation tasks as user `pi`. I tend to
+create a dedicated user. So here is how.
+
+One could edit the `/etc/passwd` file and simply add a line
+there. That file is the "user database" of a Unix system, where every
+line is a "user record". The record of user `jfasch`, for example,
+looks like this,
+
+~~~
+pi@raspberrypi:~ $ grep jfasch /etc/passwd
+jfasch:x:1007:1007::/home/jfasch:/bin/bash
+~~~
+
+There is a better way to add a user beyond modifying `/etc/passwd`,
+read on. So I'm not going to explain the structure of that file here,
+except that `jfasch`'s user ID is 1007, the primary group he is in is
+also 1007, his home directory is `/home/jfasch`, and his login shell
+is `/bin/bash`. if you want to know more, read the `passwd` man page,
+
+~~~
+pi@raspberrypi:~ $ man passwd
+... read ...
+~~~
+
+That said, here is how `jfasch` was created. As root,
+
+~~~
+root@raspberrypi:~# useradd --help
+... read ...
+root@raspberrypi:~# useradd -d /home/jfasch -m -s /bin/bash jfasch
+~~~
+
+Now we didn't create a user for fun --- he will want to log in sooner
+or later, and specify a password at login. Give him one,
+
+~~~
+root@raspberrypi:~# passwd jfasch
+... type password twice ...
+~~~
+
+Tell him what the password is so he can login. At the first login he
+can change his password to one that he likes better, without having to
+be root,
+
+~~~
+jfasch@raspberrypi:~ $ passwd
+... follow instructions ...
+~~~
+
+# <a name="add-user-to-group"/>Adding a User to a Group
+
+Now that we have a dedicated user, `jfasch`, we discover that he does
+not have permissions to operate on `/sys/class/gpio`. Only members of
+the `gpio` group are allowed --- so `jfasch` needs to become a member
+of the `gpio` group.
+
+We could have known this in advance and created the user with the
+correct permissions,
+
+~~~
+root@raspberrypi:~# useradd -d /home/jfasch -m -s /bin/bash -G gpio jfasch
+~~~
+
+But most of the time I am not so foreseeing, so I have apply the
+correction afterwards,
+
+~~~
+root@raspberrypi:~# usermod --help
+... read ...
+root@raspberrypi:~# usermod -a -G gpio jfasch
+~~~
+
+Be careful to specify the `-a` (*append*) option, or otherwise you
+will remove any preexisting group memberships.
+
+Check, voila,
+
+~~~
+root@raspberrypi:~# id jfasch
+uid=1007(jfasch) gid=1007(jfasch) groups=1007(jfasch),998(i2c),997(gpio)
+~~~
+
+Note that modifying the credentials of a user does *not* affect any
+login sessions --- they won't suddenly be able to operate on
+`/sys/class/gpio`. Any new login session will, so log out and back in,
+and everything is in order.

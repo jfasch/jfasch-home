@@ -4,4 +4,5 @@ menu: true
 target_name: howtos
 ---
 
-Blah
+* <%= link_to_name('Raspberry Kernel Build', 'howto-raspi-kernel-build') %>
+* <%= link_to_name('Users, Groups, and Permissions', 'howto-users-groups-permissions') %>
