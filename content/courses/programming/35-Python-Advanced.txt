@@ -8,18 +8,15 @@ context: course
 course_duration: 2
 course_type: inhouse
 
-menu: false
+menu_order: 35
 ---
-Python ist einfach zu erlernen und bietet mit seiner Standardlibrary
-einen üppig ausgestatteten Werkzeugkasten --- man kann in null komma
-nichts mächtige Programme schreiben. Verglichen mit anderen Sprachen
-stösst man erst sehr spät an eine Grenze, die es überall gibt:
-**Wartbarkeit**.
 
-Über den grundlegenden Sprachumfang hinaus bietet Python eine Reihe
-von Möglichkeiten, die dem Programmier das Handwerk erleichtern ---
-seien es Werkzeuge wie zum Beispiel eine Unittest-Framework, oder
-Sprachmittel, um komplexe Aufgaben einfacher zu lösen.
+Über den grundlegenden Sprachumfang (siehe Schulung <%=
+link_to_name('Python Grundlagen', 'course-prog-python-basics') %>)
+hinaus bietet Python eine Reihe von Möglichkeiten, die dem Programmier
+das Handwerk erleichtern --- seien es Werkzeuge wie zum Beispiel ein
+Unittest-Framework, oder Sprachmittel, um komplexe Aufgaben einfacher
+zu lösen.
 
 Zielpublikum
 ============
@@ -64,4 +61,7 @@ Kursinhalt
 Empfohlene Vorkenntnisse
 ========================
 
-* Grundlegende Pythonkenntnisse
+* Grundlegende Pythonkenntnisse, wie sie zum Beispiel <%=
+  link_to_name('hier', 'course-prog-python-basics') %> vermittelt
+  werden.
+

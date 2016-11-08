@@ -34,9 +34,9 @@ Programmiersprachen
   Language](http://en.wikipedia.org/wiki/The_C_Programming_Language)
 * <%= link_to_name('C für Fortgeschrittene', 'course-prog-c-advanced') %>: Verschiedenes aus C, das die wenigsten wissen
 * <%= link_to_name('C++ --- Eine Einführung', 'course-prog-cxx') %> für C-Programmierer
-* <%= link_to_name('Python --- Eine Einführung', 'course-prog-python') %>: die
-  wahrscheinlich schönste Programmiersprache der Welt
-* <%= link_to_name('Mehr Python', 'course-prog-python-advanced') %>:
+* <%= link_to_name('Python Grundlagen', 'course-prog-python-basics') %>:
+  die wahrscheinlich schönste und einfachste Sprache der Welt
+* <%= link_to_name('Python für Fortgeschrittene', 'course-prog-python-advanced') %>: 
   Python ist nicht nur einfach, sondern auch mächtig
 * <%= link_to_name('Bourne (Again) Shell', 'course-prog-bash') %>:
   Shell Scripting

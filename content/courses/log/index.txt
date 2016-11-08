@@ -72,27 +72,10 @@ mit ausdrücklicher Erlaubnis namentlich erwähnt**.
   * Ausgewählte Themen aus <%= link_to_name('Systemnahe
     Programmierung', 'courses-sysprog') %>
 
-* **15.10.2012 bis 17.10.2012 bei der Firma [Mathias
-  Kettner](http://mathias-kettner.de) in München**
-
-  * <%= link_to_name('Python', 'course-prog-python') %>
-
-* **25.9.2012 bis 27.9.2012 bei der [Firma
-  STIA](http://www.admonter.at) in Admont/Steiermark**
-
-  (Im Auftrag der [Firma Mathias Kettner](http://mathias-kettner.de))
-
-  * <%= link_to_name('Python', 'course-prog-python') %>
-
 * **13.2.2012 bis 15.2.2012 bei einer Firma in Zürich**
 
   * Verschiedenes aus <%= link_to_name('Systemnahe Programmierung',
     'courses-sysprog') %>
-
-* **23.1.2012 bis 25.1.2012 bei der Firma [Mathias
-  Kettner](http://mathias-kettner.de) in München**
-
-  * <%= link_to_name('Python', 'course-prog-python') %>
 
 * **19.9.2011 bis 22.9.2011 bei einer Firma in Oberösterreich**
 
