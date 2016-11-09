@@ -54,7 +54,7 @@ Kursinhalt
 * **Exception Handling**
   * *Die Exception-Hierarchie* der Standard Library
   * *Definieren eigener Exceptions*
-  * *Verursachen und Reaieren* auf Exceptions
+  * *Verursachen und Reagieren*
 * **Strings** --- Weiterführendes
   * *Methoden*. Strings können sehr viel
   * *Formatierung*

@@ -57,6 +57,8 @@ Kursinhalt
   * _Interpreteraufruf_ mittels `exec`
   * _Context Managers_: das `with` Statement
   * _Dekoratoren_
+  * _Regular Expressions_
+  * _Verschiedene ausgewählte Module aus der Python Standard Library_
 
 Empfohlene Vorkenntnisse
 ========================
