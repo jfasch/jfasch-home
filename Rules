@@ -18,26 +18,41 @@
 compile '/3column/' do
 end
 
-compile '/sitemap_xml/' do
+
+# jjjj commented out
+# compile '/sitemap_xml/' do
+#   filter :erb
+# end
+
+
+# new jjjj
+compile '/**/*.txt' do
+  # print 'fuuuut'
+  # print item.identifier.ext
+  # print 'oaasch'
+  
   filter :erb
+  filter :encode_umlauts
+  filter :kramdown
+  layout '3column'
 end
 
-compile '*' do
-  unless item.binary? then
-    filter :erb
-    case item[:extension]
-    when 'txt' then
-      filter :encode_umlauts
-      filter :kramdown
-    end      
-    layout '3column'
-
-    # commented out for the time being. it somehow garbles HTML
-    # entities raquo, nbsp etc.
-
-    # filter :relativize_paths, :type => :html     
-  end
-end
+# compile '/**/*' do
+#   unless item.binary? then
+#     filter :erb
+#     case item[:extension]
+#     when 'txt' then
+#       filter :encode_umlauts
+#       filter :kramdown
+#     end      
+#     layout '3column'
+# 
+#     # commented out for the time being. it somehow garbles HTML
+#     # entities raquo, nbsp etc.
+# 
+#     # filter :relativize_paths, :type => :html     
+#   end
+# end
 
 route '/3column/' do
   '/3column.css'

@@ -1,30 +1,17 @@
 ---
-title: "C: Einführung"
-menu_title: "C Einführung"
-target_name: course-prog-c
+title: "C: Auffrischung"
+menu_title: "C Auffrischung"
+target_name: course-prog-c-refresh
 
 tags: ['kurs', 'schulung', 'c']
 
 context: course
-course_duration: 5
+course_duration: 2
 course_type: inhouse
 
-menu_order: 10
+menu_order: 12
 ---
-Der [_Bibel_ von Brian Kernighan und Dennis Ritchie](http://de.wikipedia.org/wiki/The_C_Programming_Language "Die Bibel") kann man nichts
-hinzufügen. Der "Erfinder" von C, Dennis Ritchie, kann wohl am besten
-erklären, wie C tickt, wozu man es verwendet, und wo seine Grenzen
-sind.
 
-<img src="/images/c-kernighan-ritchie-book.jpg" alt="Die Bibel"
-     style="float: right;max-width: 30%;" />
-
-Der Kurs nimmt das Buch als Vorlage für die Didaktik und ergänzt es
-durch Übungen und etwas Kontext aus der heutigen Zeit. Sollte der Kurs
-als Vorbereitung für den <%= link_to_name('C++-Kurs',
-'course-prog-cxx') %> dienen, macht es Sinn, nur den Sprachkern zu
-unterrichten und auf die Standardlibrary zugunsten der bequemeren
-C++-Werkzeuge zu verzichten.
 
 Inhalt
 ======

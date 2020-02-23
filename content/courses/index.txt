@@ -29,9 +29,11 @@ Basics
 Programmiersprachen
 ===================
 
-* <%= link_to_name('C --- Eine Einführung', 'course-prog-c') %>: C anhand des didaktisch
+* <%= link_to_name('C --- Einführung', 'course-prog-c') %>: C anhand des didaktisch
   perfekten (weil minimalen) Buches [The C Programming
   Language](http://en.wikipedia.org/wiki/The_C_Programming_Language)
+* <%= link_to_name('C --- Auffrischung', 'course-prog-c-refresh') %>:
+  Schnellstart für Programmierer, die C kennen, deren Wissen aber entstaubt gehört
 * <%= link_to_name('C für Fortgeschrittene', 'course-prog-c-advanced') %>: Verschiedenes aus C, das die wenigsten wissen
 * <%= link_to_name('C++ --- Eine Einführung', 'course-prog-cxx') %> für C-Programmierer
 * <%= link_to_name('Python Grundlagen', 'course-prog-python-basics') %>:
