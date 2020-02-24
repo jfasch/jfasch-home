@@ -1,16 +1,9 @@
----
-title: "Netzwerk-Programmierung unter Linux"
-menu_title: "Netzwerk"
-menu_order: 30
-target_name: course-network
+Netzwerk-Programmierung unter Linux
+===================================
 
-tags: ['linux', 'kurs', 'schulung', 'systemnah', 'systemcall',
-       'sockets', 'tcp', 'udp', 'socket can', 'select', 'poll', 'epoll']
+.. todo::
 
-context: course
-course_duration: 2
-course_type: inhouse
----
+   sidebar: 2
 
 Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
 in das Grundprinzip "Everything is a File" ein. Das Socket-Interface
@@ -19,50 +12,56 @@ auf TCP/IP beschränkt ist, sondern auf eine Vielzahl anderer
 Netzwerkprotokolle anwendbar ist.
 
 Kursinhalt
-==========
+----------
 
-* **Grundlagen der Netzwerkprogrammierung**. Das Socket-Interface ---
-  seine Datentypen und Systemcalls --- wird erklärt, ohne jedoch noch
+* **Grundlagen der Netzwerkprogrammierung**. Das Socket-Interface -
+  seine Datentypen und Systemcalls - wird erklärt, ohne jedoch noch
   auf ein spezielles Medium einzugehen.
-  * *Relevante Systemcalls*: `socket()`, `connect()`, `bind()`, `listen()`, `accept()`
+
+  * *Relevante Systemcalls*: ``socket()``, ``connect()``, ``bind()``,
+    ``listen()``, ``accept()``
   * *Streamverbindungen*: Verbindungsaufnahme und Kommunikation
   * *Datagramme*: verbindungslose Kommunikation
   * *Fehlerszenarien*
   * *Adressfamilien*: jedes "Medium" hat seine eigene Auffassung der
     Adresse eines Endpoints. Beispielsweise kennt man von IPv4 die
-    vier Nummern wie 192.168.1.2 --- andere Medien wie Bluetooth haben
+    vier Nummern wie 192.168.1.2 - andere Medien wie Bluetooth haben
     andere Adressen, die aber mit den gleichen System Calls bearbeitet
     werden.
+
 * **TCP/IP**. Netzwerkprogrammierung am Internet.
+
   * TCP (Stream-Verbindungen) und UDP (Datagramme)
   * Hilfsfunktionen zur Adresskonvertierung
   * DNS-Lookup
   * IPv4 und IPv6
+
 * **UNIX Domain Sockets**. Prozesse, die nur lokal (innerhalb eines
   Systems) kommunizieren, verwenden UNIX Domain Sockets. Sie
   funktionieren gleich wie ihre TCP/IP-Äquivalente, nur sind sie
   ungleich ressourcenschonender, und ihre Adressen sind Pfadnamen im
   Filesystem.
-* **CAN-Bus**. CAN (Controller Area Network)
-  war lange Zeit nur über Controller-spezifische Driver und deren
-  Interfaces bedienbar; mittlerweise wurde dieses Medium, wenngleich
-  *broadcast-only*, in das Socket-Interface eingepasst und ist
-  dementsprechend angenehm zu verwenden.
-* **IO-Multiplexing mit `select/poll/epoll`**. Eine Möglichkeit, in
+* **CAN-Bus**. CAN (Controller Area Network) war lange Zeit nur über
+  Controller-spezifische Driver und deren Interfaces bedienbar;
+  mittlerweise wurde dieses Medium, wenngleich *broadcast-only*, in
+  das Socket-Interface eingepasst und ist dementsprechend angenehm zu
+  verwenden.
+* **IO-Multiplexing mit select/poll/epoll**. Eine Möglichkeit, in
   einem Prozess mit mehreren Verbindungen umzugehen, ist, jeder
-  Verbindung einen Thread zu widmen --- und sich dadurch den damit
+  Verbindung einen Thread zu widmen - und sich dadurch den damit
   verbundenen Gefahren auszusetzen. IO-Multiplexing ist eine
-  alternative Methode, mit mehreren Verbindungen umzugehen --- man
+  alternative Methode, mit mehreren Verbindungen umzugehen - man
   reagiert auf *IO-Events* wie "Daten können von einem Socket gelesen
   werden", oder "Daten können auf ein Socket geschrieben werden".
+
   * *Eventgetriebenes ("nonblocking") Programmieren*
   * *Verbindungsaufnahme*, nonblocking
   * *I/O*, nonblocking
   * *Eventgetriebenes Programmieren* abseits von Netzwerk-I/O: Timer, Signale, ...
 
 Empfohlene Vorkenntnisse
-========================
+------------------------
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
-Grundkenntnis des Systems (vgl. <%= link_to_name('Einführungskurs',
-'course-system-basics') %>).
+Grundkenntnis des Systems (vgl. :doc:`Einführungskurs
+<System-Basics>`).

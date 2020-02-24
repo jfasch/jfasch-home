@@ -1,4 +1,1 @@
-
-*.~*~
-/crash.log
-/tmp/
+/_build

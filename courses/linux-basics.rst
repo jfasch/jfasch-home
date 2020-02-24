@@ -1,17 +1,9 @@
----
-title: "Linux Basics: Eine Einführung Anhand von Beispielen"
-menu_title: "Linux Basics"
-target_name: courses-linux-basics
+Linux Basics: Eine Einführung Anhand von Beispielen
+===================================================
 
-context: course
-course_duration: 3
-course_type: inhouse
+.. todo::
 
-tags: ['linux', 'kurs', 'schulung', einfuehrung]
-
-menu: true
-menu_order: 10
----
+   jjj sidebar: duration 3
 
 Dieser Kurs liefert einen grundlegenden Einblick in die Shell, mit
 Hinblick auf das Verständnis des Betriebssystems.
@@ -24,7 +16,7 @@ entmystifiziert. Im Kurs wird anhand von vielen Beispielen und
 mit dem Betriebssystem und die Konzepte des Betriebssystems erlernt.
 
 Zielpublikum
-============
+------------
 
 * Programmierer
 * Tester
@@ -33,7 +25,7 @@ Zielpublikum
 * Angehende Administratoren
 
 Kursinhalt
-==========
+----------
 
 * Commandline Basics
   * Zeilen editieren
@@ -72,7 +64,7 @@ Kursinhalt
   * Scheduling
 
 Empfohlene Vorkenntnisse
-========================
+------------------------
 
 Programmierkenntnisse sind hilfreich, aber nicht nötig. Interesse und
 Spass an Betriebssystemen zwingend nötig.

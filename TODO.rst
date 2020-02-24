@@ -1,14 +1,43 @@
-Convert to reStructuredText
-===========================
+To Do
+=====
 
-* content
+Convert Content
+---------------
 
-  * .txt -> .rst
-  * toctree accordingly
+Stack
+.....
 
-* references, past trainings
+* :doc:`/index`
 
-  * mail people, send link when done (after style is in place)
+  * Links "Schulungen", once they are in place.
+
+    * ``courses-sysprog``
+    * ``courses-misc``
+
+* :doc:`/courses/index`
+
+  * why is content if index included in sidebar toc?
+
+  * Links
+
+    * misc
+
+      * ``raspi-hands-on``
+      * ``course-kettner-lfs``
+      * ``course-svn``
+
+  * sysprog: virtmem, ipc -> avl
+  * CMake
+  * CAN -> network
+  * GPIO, libgpiod -> Embedded
+
+References, Past Trainings
+--------------------------
+
+* mail people, send link when done (after style is in place)
+
+Skills
+------
 
 * web programming as skills? ("ungern")
 
@@ -17,6 +46,9 @@ Convert to reStructuredText
     interfaces (link to openheating -> intersphinx)
   * sphinx, for documentation -> consulting, soft skills
   * picture of myself wearing "css sucks" t-shirt
+
+Miscellaneous
+-------------
 
 * openheating/doc/glt2020/ sphinxize
   
