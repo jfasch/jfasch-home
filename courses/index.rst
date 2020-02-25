@@ -11,6 +11,9 @@ dahin ist es allerdings noch ein langer Weg. Ich lerne noch.
    :alt: Kurs im Hoeri-Hotel
    :align: right
 
+Die Schulungsunterlagen sind durchwegs in Englisch; die Kurse selbst
+werden wahlweise in Deutsch oder Englisch gehalten.
+
 Linux
 -----
 

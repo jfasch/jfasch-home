@@ -15,16 +15,19 @@ Add Missing
 * 400-kernel.tex
 * 910-glt-2014.tex (CAN)
 
-Stack
+Structure
+.........
+
+* add avl live hacking to "sysprog: virtmem, ipc"
+* CAN -> network
+* GPIO, libgpiod -> Embedded
+* System basics: links to make, bash, ...
+* split "linux intro" out of sysprog topics -> testers etc.
+
+About
 .....
 
-* Structure
-
-  * add avl live hacking to "sysprog: virtmem, ipc"
-  * CAN -> network
-  * GPIO, libgpiod -> Embedded
-  * System basics: links to make, bash, ...
-  * split "linux intro" out of sysprog topics -> testers etc.
+* missing link to confix in :doc:`/about/projects-de` ("jjj")
 
 References, Past Trainings
 --------------------------
@@ -41,6 +44,12 @@ Skills
     interfaces (link to openheating -> intersphinx)
   * sphinx, for documentation -> consulting, soft skills
   * picture of myself wearing "css sucks" t-shirt
+
+Blog
+----
+
+* Scheduling: the porting trap
+* Why ps sucks
 
 Miscellaneous
 -------------

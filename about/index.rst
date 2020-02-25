@@ -1,7 +1,5 @@
----
-title: "Über mich"
-menu: true
----
+Über mich
+=========
 
 Ich bin in der glücklichen Lage, dass mir mein Beruf Spaß
 macht. Dieses Privileg ist mir sehr viel wert, und ich möchte es um
@@ -11,59 +9,55 @@ Werdegang unter diesem speziellen Gesichtspunkt schildern.
 Falls Sie an einem schnelleren Überblick interessiert sind, folgen Sie
 bitte folgenden Links:
 
-* <%= link_to_name('Ein formaleres Curriculum Vitae', 'cv-de') %>
-* <%= link_to_name('Eine Liste meiner technischen Fähigkeiten', 'skills-de') %>
-* <%= link_to_name('Eine Liste meiner bisherigen Projekte', 'projects-de') %>
+.. toctree::
 
-Englische Übersetzungen:
-
-* <%= link_to_name('A more formal Curriculum Vitae', 'cv-en') %>
-* <%= link_to_name('Technical skills', 'skills-en') %>
-* <%= link_to_name('List of projects mastered', 'projects-en') %>
+   Ein formaleres Curriculum Vitae <cv-de>
+   Eine Liste meiner technischen Fähigkeiten <skills-de>
+   Eine Liste meiner bisherigen Projekte <projects-de>
 
 Programmieren, Linux, und ich
-=============================
+-----------------------------
 
 Mit dem Programmieren bin ich für heutige Begriffe recht spät in
 Kontakt gekommen, nämlich zu Beginn meines Studiums. Unix begann
 damals im universitären Bereich erst Fuß zu fassen und verdrängte
 langsam VAX/VMS als ernsthaft einzusetzendes Betriebssystem. Als
 Übungsmittel wurde vornehmlich Windows in seiner damaligen Variante
-3.11 eingesetzt. Beides --- Unix und Windows --- hatte sehr wenig mit
-Spaß zu tun. Windows hatte man zuhause, man konnte es aber so gut wie
-nicht programmieren (ich habe Einschränkungen noch nie verstanden, die
-daher kommen, dass man ein Pflaster über das andere klebt). Unix hatte
-man auf der Universität, aber Programmieren war dort ein Genuss. Ich
-war zwar erst am Beginn meiner Programmierlaufbahn, aber diese
-Einschätzung traute ich mir damals schon zu. Beides zusammen ---
-zuhause mit Genuss programmieren --- war damals unmöglich.
+3.11 eingesetzt. Beides - Unix und Windows - hatte sehr wenig mit Spaß
+zu tun. Windows hatte man zuhause, man konnte es aber so gut wie nicht
+programmieren (ich habe Einschränkungen noch nie verstanden, die daher
+kommen, dass man ein Pflaster über das andere klebt). Unix hatte man
+auf der Universität, aber Programmieren war dort ein Genuss. Ich war
+zwar erst am Beginn meiner Programmierlaufbahn, aber diese
+Einschätzung traute ich mir damals schon zu. Beides zusammen -
+zuhause mit Genuss programmieren - war damals unmöglich.
 
 Kurz und gut: Unix hatte mich, und ich verbrachte recht viel Zeit
 außer Haus. Es verging nicht viel Zeit, und ein Unix-Clone namens
 Linux begann sich unter dem Namen "Slackware" zu verbreiten. Meine
 Leidensgefährten und ich sprangen auf den Zug auf. Der Rest ist
-Geschichte --- und unendlich viel Spaß für beinahe unendlich viele
+Geschichte - und unendlich viel Spaß für beinahe unendlich viele
 Gleichgesinnte.
 
 Dienstverhältnisse
-==================
+------------------
 
 Irgendwann hat jeder Spaß ein Ende, und so ging auch meine
 Studentenzeit dem Ende zu. Dank der Ermutigungen meiner jetzigen Frau
-hatte ich meine
-[Diplomarbeit](https://online.tugraz.at/tug_online/wbAbs.showThesis?pThesisNr=5984&pOrgNr=2367)
+hatte ich meine `Diplomarbeit
+<https://online.tugraz.at/tug_online/wbAbs.showThesis?pThesisNr=5984&pOrgNr=2367>`__
 unter Dach und Fach (vor allem die Einleitung und den Schluss). Ich
-war zu der Zeit als Studienassistent an der [TU
-Graz](http://www.tugraz.at) tätig, und verblieb dort auch nach meiner
-Diplomierung als Universitätsassistent. Ziel war, einerseits an der
-dortigen Entwicklung des Informationssystems
-[Hyper-G](http://www.chemie.fu-berlin.de/outerspace/doc/hyper-g-abs.html)
+war zu der Zeit als Studienassistent an der `TU Graz
+<http://www.tugraz.at>`__ tätig, und verblieb dort auch nach meiner
+Diplomierung, als Universitätsassistent. Ziel war, einerseits an der
+dortigen Entwicklung des Informationssystems `Hyper-G
+<http://www.chemie.fu-berlin.de/outerspace/doc/hyper-g-abs.html>`__
 mitzuarbeiten, und andererseits meine Dissertation voranzutreiben.
 
 Während zweiteres gründlich schief ging, war bei ersterem deutlich
 mehr Spaß zu haben. So verließ ich mit der Gründung der Firma
-[Hyperwave](http://hyperwave.com/), eines kommerziellen Spin-Offs des
-Institutes, auch die Universität, um weiter an der Entwicklung des
+`Hyperwave <http://hyperwave.com/>`__, eines kommerziellen Spin-Offs
+des Institutes, auch die Universität, um weiter an der Entwicklung des
 Produktes mitzuarbeiten.
 
 Wechseln
@@ -73,7 +67,7 @@ Die Dinge liefen gut, die Firma entwickelte sich und wuchs. Ich hatte
 mich zu einer Art Leitentwickler entwickelt (wir waren mehrere
 davon). Die Firma hatte eine gute Unternehmenskultur, und es war wenig
 Notwendigkeit, sich zu verändern. Ich war zu der Zeit bereits
-dreifacher Vater --- eine Situation, die vordergründig betrachtet eher
+dreifacher Vater - eine Situation, die vordergründig betrachtet eher
 nach dem Gegenteil von beruflicher Veränderung verlangt.
 
 Es hatte sich aber schon längere Zeit eine gewisse inhaltliche
@@ -84,15 +78,15 @@ oder wie ich überzeugt bin, gerade *wegen* meiner Verantwortung als
 Familienvater.
 
 So wechselte ich in eine andere Branche, Logistik, und heuerte bei der
-Firma [Salomon (jetzt SSI Schäfer)](http://www.ssi-schaefer.at) als
+Firma `Salomon (jetzt SSI Schäfer) <http://www.ssi-schaefer.at>`__ als
 Mitarbeiter der Abteilung "Forschung und Entwicklung" an. Es vergingen
 fünf ereignisreiche und erfüllende Jahre, in denen die Firma und ich
 einander viel abverlangten. Ich war Softwarearchitekt und Leiter
 meiner Abteilung geworden und ging eine Zeit lang in der
-Herausforderung auf --- bis wieder das Gefühl in mir aufstieg, einen
+Herausforderung auf - bis wieder das Gefühl in mir aufstieg, einen
 Tapetenwechsel zu brauchen.
 
-Ich wechselte zur Firma [Atronic](http://www.atronic.com/) in die
+Ich wechselte zur Firma `Atronic <http://www.atronic.com/>`__ in die
 Casino-Automaten-Branche, um mich dort als Softwarearchitekt zu
 betätigen. Programmieren, und Linux im Speziellen, war in den letzten
 zwei Jahren zu einem Nebenschauplatz verkommen (ich habe meinen
@@ -101,7 +95,7 @@ dortige Microsoft-zentrische IT war mir zu meiner eigenen Schande kein
 solcher Dorn im Auge.
 
 Zurück zu Linux
-===============
+---------------
 
 Durch eine Fügung des Schicksals wurde bei Atronic just an dem Tag,
 als ich meinen Dienst dort begann, die Entscheidung getroffen, die
@@ -116,7 +110,7 @@ werden, das Betriebssystem musste zusammengestellt werden, und und und
 ...
 
 Selbstständigkeit
-=================
+-----------------
 
 Schlussendlich war mir einiges klar:
 
@@ -130,13 +124,12 @@ Mit einem Wort: ich muss mich selbstständig machen und selbst auf mich
 achten. Das war ungefähr Ende 2009, Anfang 2010. Ich bin seit April
 2010 als Einzelunternehmer tätig, und bereue es in keiner Sekunde.
 
-Über die Jahre habe ich genug an Know-How gesammelt, um <%=
-link_to_name('ein genügend grosses Repertoire', 'skills-de') %> anbieten
-zu können. Das schöne daran ist, dass das Repertoire mit Spaß
-gewachsen ist, und dass seine Erweiterung auch noch Spaß
-macht. Beispielsweise habe ich einen Teil von dem, was ich am besten
-kann, zu <%= link_to_name('Schulungen', 'courses') %> verarbeitet, die
-ich zusätzlich zur Softwareentwicklung anbiete.
+Über die Jahre habe ich genug an Know-How gesammelt, um :doc:`ein
+genügend grosses Repertoire <skills-de>` anbieten zu können. Das
+schöne daran ist, dass das Repertoire mit Spaß gewachsen ist, und dass
+seine Erweiterung auch noch Spaß macht. Beispielsweise habe ich einen
+Teil von dem, was ich am besten kann, zu :doc:`Schulungen </courses/index>`
+verarbeitet, die ich zusätzlich zur Softwareentwicklung anbiete.
 
 Und das ist nicht das Ende. Der Softwaremarkt ändert sich rasant, und
 wenn ich beobachte, welche Rolle Linux dabei spielt, dann kann ich mir

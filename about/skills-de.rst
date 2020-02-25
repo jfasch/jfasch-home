@@ -1,11 +1,8 @@
----
-title: "Skills"
-menu_title: "Skills (de)"
-target_name: skills-de
-menu_order: 20
----
+Skills
+======
 
 * Linux
+
   * Netzwerkprogrammierung
   * Multithreading
   * Realtime
@@ -19,6 +16,7 @@ menu_order: 20
   * Treiberentwicklung
 
 * Programmiersprachen
+
   * C und C++ (hauptsächlich GNU Toolchain), STL, Boost
   * Python
   * Shell
@@ -26,12 +24,14 @@ menu_order: 20
   * Mono/C#
 
 * Softwareentwicklung
+
   * Objektorientierte Programmierung
   * OOA, OOD
   * Unit Testing
   * GUI-Programmierung mit Gtk+ und Qt
 
 * Releasemanagement und Versionskontrollsysteme
+
   * Releasemanagementprozesse
   * Git
   * SVN
@@ -39,7 +39,9 @@ menu_order: 20
   * Clearcase
 
 * Software Build (hauptsächlich C/C++)
+
   * Automake
   * CMake
-  * http://confix.sf.net (mein Open Source Projekt)
+  * `Confix <http://confix.sf.net>`__ (eines meiner Open Source
+    Projekte)
   * Diverse Entwicklungsumgebungen (KDevelop, Eclipse CDT)

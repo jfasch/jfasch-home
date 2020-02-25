@@ -2,20 +2,13 @@ Linux und Open Source
 =====================
 
 .. toctree::
-   :caption: Schulungen
    :hidden:
    :maxdepth: -1
    :titlesonly:
    :glob:
 
    courses/index
-
-.. toctree::
-   :caption: Management
-   :hidden:
-   :titlesonly:
-   :maxdepth: -1
-
+   about/index
    TODO
 
 Entwicklung

@@ -1,43 +1,42 @@
----
-title: "Projekte"
-menu_title: "Projekte (de)"
-target_name: projects-de
-menu_order: 30
----
+Projekte
+========
 
 Projekte aus selbstständiger Tätigkeit
-======================================
+--------------------------------------
 
 (Stand Jänner 2014)
 
 * **Devicedriver für die PCI Hardware eines Messgeräteherstellers**
-  (Windows-Portierung des [untenstehenden Projektes](#dewe-pci-linux)
+  (Windows-Portierung des :ref:`untenstehenden Projektes
+  <dewe-pci-linux>`)
 
-  Zeit: Jänner 2014 bis dato<br>
-  Ort: Raum Graz
+  * *Zeit*: Jänner 2014 bis dato
+  * *Ort*: Raum Graz
 
 * **Backport und Integration eines Touchcontroller-Drivers**, für eine
-    Systemintegrationsfirma im Raum Stuttgart
+  Systemintegrationsfirma im Raum Stuttgart
 
-  Zeit: Mai 2013
+  * *Zeit*: Mai 2013
 
 * **Verschiedene Python-Programme zur IT-Integration**, wie zum Beispiel
 
   * E-Billing (Email-Kommunikation, Extraktion von Attachments, Signaturverifikation ...)
   * Anbindung an ein Informationssystem
 
-  Zeit: Februar bis Juni 2013<br>
+  * *Zeit*: Februar bis Juni 2013
 
-* <a name="dewe-pci-linux">**Devicedriver für die PCI Hardware eines Messgeräteherstellers**</a>
+.. _dewe-pci-linux:
 
-  Zeit: Dezember 2012 bis September 2013<br>
-  Ort: Raum Graz
+* **Devicedriver für die PCI Hardware eines Messgeräteherstellers**
+
+  * *Zeit*: Dezember 2012 bis September 2013
+  * *Ort*: Raum Graz
 
 * **Vollautomatische Installation von Serveranlagen** eines
   Herstellers von Radarüberwachungssystemen
 
-  Zeit: Juni 2012 bis September 2012<br>
-  Ort: Unterschleissheim bei München
+  * *Zeit*: Juni 2012 bis September 2012
+  * *Ort*: Unterschleissheim bei München
 
 * **Instandhaltungsarbeiten am hauseigenen Linux-System**, auf Basis
   Gentoo Linux
@@ -45,9 +44,9 @@ Projekte aus selbstständiger Tätigkeit
   * Update des Betriebssystems
   * Integration eines USB-Touchscreens
 
-  Zeit: März 2012 bis April 2012<br>
-  Firma: Spielo International<br>
-  Ort: Unterpremstätten bei Graz
+  * *Zeit*: März 2012 bis April 2012
+  * *Firma*: Spielo International
+  * *Ort*: Unterpremstätten bei Graz
 
 * **Datenkonvertierung** bei einem Hersteller von
   Radarüberwachungssystemen
@@ -56,8 +55,8 @@ Projekte aus selbstständiger Tätigkeit
     Integration externer Datenquellen (in Python)
   * Export von Daten via SOAP (in Python)
 
-  Zeit: Juni 2011 bis März 2012<br>
-  Ort: Unterschleissheim bei München
+  * *Zeit*: Juni 2011 bis März 2012
+  * *Ort*: Unterschleissheim bei München
 
 * **Integration von IP Kameras** für einen Hersteller von
   Videomautsystemen
@@ -65,8 +64,8 @@ Projekte aus selbstständiger Tätigkeit
   * Implementation einer GigE-Vision Clientlibrary (C++)
   * Softwarebasierte Kamerasimulation (in C++)
 
-  Zeit: September 2011 bis April 2012
-  Ort: Raum Graz
+  * *Zeit*: September 2011 bis April 2012
+  * *Ort*: Raum Graz
 
 * **Verschiedene systemnahe Tätigkeiten** für einen Hersteller von
   Videomautsystemen
@@ -77,23 +76,26 @@ Projekte aus selbstständiger Tätigkeit
     (Filesystemverschlüsselung) an die Anforderungen der
     Embedded-Applikation (in C)
 
-  Zeit: März 2011 bis August 2011<br>
-  Ort: Raum Graz
+  * *Zeit*: März 2011 bis August 2011
+  * *Ort*: Raum Graz
 
 * **Verschiedene Tätigkeiten**, Logistik/Automation
 
   * Entwicklung der beteiligten Protokolle (in C++ unter Linux)
+
     * Server zu SPS (TCP)
     * Server zu autonomen Fahrzeugen (TCP)
     * Server zu Kundenapplikationen (TCP)
     * Autonome Fahrzeuge zu Mikrocontroller (Seriell/RS232)
+
   * Beratende Tätigkeit
+
     * Versionskontrolle und Releasemanagement (Subversion)
     * Architektur
 
-  Zeit: 2008 bis dato<br>
-  Firma: YLog GmbH, Dobl<br>
-  Ort: Dobl bei Graz
+  * *Zeit*: 2008 bis dato
+  * *Firma*: YLog GmbH, Dobl
+  * *Ort*: Dobl bei Graz
 
 * **Verschiedene Tätigkeiten**, Heizsysteme
 
@@ -104,15 +106,15 @@ Projekte aus selbstständiger Tätigkeit
   * Versionskontrollinfrastruktur (Subversion, assoziierte Scripts mit
     Python und Shell)
 
-  Zeit: Jänner 2010 bis März 2011<br>
-  Ort: Oststeiermark
+  * *Zeit*: Jänner 2010 bis März 2011
+  * *Ort*: Oststeiermark
 
-* **Erweiterung der Buildumgebung** ([CMake](http://www.cmake.org/),
-    <%= link_to_name('Confix', 'confix') %>, in Python)
+* **Erweiterung der Buildumgebung** (`CMake <http://www.cmake.org/>`),
+  jjj Confix, in Python
 
-  Zeit: Mai 2009 bis Juni 2010<br>
-  Firma: Salomon Automation GmbH<br>
-  Ort: Friesach bei Graz
+  * *Zeit*: Mai 2009 bis Juni 2010
+  * *Firma*: Salomon Automation GmbH
+  * *Ort*: Friesach bei Graz
 
 * **Schulungen** aus dem Umkreis Linux
 
@@ -122,34 +124,35 @@ Projekte aus selbstständiger Tätigkeit
   * Shell-Programmierung
   * Embedded Linux
 
-  Zeit: September 2010 bis dato<br>
-  Firma: Mathias Kettner<br>
-  Ort: München
+  * *Zeit*: September 2010 bis dato
+  * *Firma*: Mathias Kettner
+  * *Ort*: München
 
 * **Schulungen** aus dem Umkreis Linux
 
   * Systemnahe Softwareentwicklung
   * Embedded Linux
 
-  Zeit: November 2010 bis dato<br>
-  Firma: Bodenseo<br>
-  Ort: Singen am Bodensee
+  * *Zeit*: November 2010 bis dato
+  * *Firma*: Bodenseo
+  * *Ort*: Singen am Bodensee
 
 Projekte aus nichtselbstständiger Tätigkeit
-===========================================
+-------------------------------------------
 
-* **Atronic GmbH, Unterpremstätten bei Graz**<br>
+* **Atronic GmbH, Unterpremstätten bei Graz**
 
   * Softwarearchitektur
   * Portierung der Spielesoftware von ENEA/OSE nach Linux (C++)
   * Entwurf der Systemschnittstellen
   * Driverentwicklung (Linux/PowerPC, USB)
   * Entwicklung des "Betriebssystems" auf Basis Gentoo,
-    Vanilla-Kernel, und [Aufs](http://sourceforge.net/projects/aufs/)
+    Vanilla-Kernel, und `Aufs
+    <http://sourceforge.net/projects/aufs/>`__
 
-  Zeit: 2006 bis 2010
+  * *Zeit*: 2006 bis 2010
 
-* **Salomon Automation GmbH, Friesach bei Graz**<br>
+* **Salomon Automation GmbH, Friesach bei Graz**
 
   * Softwarearchitektur
   * Abteilungsleitung
@@ -157,9 +160,9 @@ Projekte aus nichtselbstständiger Tätigkeit
   * Datenbankdesign
   * Programmierung einer objektrelationalen Datenbankschnittstelle (C++)
 
-  Zeit: 2001 bis 2006
+  * *Zeit*: 2001 bis 2006
 
-* **Hyperwave AG, Graz**<br>
+* **Hyperwave AG, Graz**
 
   * Softwareentwicklung
   * Abteilungsleitung
@@ -167,4 +170,4 @@ Projekte aus nichtselbstständiger Tätigkeit
   * Releasemanagement (CVS, Subversion)
   * Systemnahe Programmierung (C++ unter Linux und Windows)
 
-  Zeit: 1998 bis 2001
+  * *Zeit*: 1998 bis 2001
