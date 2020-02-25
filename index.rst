@@ -2,6 +2,13 @@ Linux und Open Source
 =====================
 
 .. toctree::
+   :caption: Schulungen
+   :hidden:
+   :maxdepth: -1
+
+   courses/index.rst
+
+.. toctree::
    :caption: Management
    :hidden:
    :maxdepth: -1
@@ -28,13 +35,6 @@ ansiedeln.
 Schulung
 --------
 
-.. toctree::
-   :caption: Schulungen
-   :hidden:
-   :maxdepth: -1
-
-   courses/index.rst
-   
 Passend zu vielen meiner Themen aus der Entwicklung biete ich auch
 :doc:`Schulungen <courses/index>` an.
 

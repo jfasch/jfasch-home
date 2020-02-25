@@ -3,6 +3,7 @@ Schulungen
 
 .. toctree::
    :hidden:
+   :titlesonly:
 
    linux-basics.rst
    programming-languages/10-C.rst
@@ -18,6 +19,9 @@ Schulungen
    sysprog/Multithreading.rst
    sysprog/Fortgeschrittenes.rst
    sysprog/Embedded.rst
+   misc/raspi-hands-on.rst
+   misc/kettner-lfs-descr.rst
+   misc/Subversion.rst
 
 .. image:: sysprog-bodenseo.jpg
    :alt: Kurs im Hoeri-Hotel
@@ -106,6 +110,6 @@ verstehen.
 Verschiedenes
 -------------
 
-* jjj Raspberry Pi Hands-On (``raspi-hands-on``)
-* jjj Linux from Scratch (``course-kettner-lfs``)
-* jjj Einführung in Subversion (``course-svn``)
+* :doc:`Raspberry Pi Hands-On <misc/raspi-hands-on>`
+* :doc:`Linux from Scratch <misc/kettner-lfs-descr>`
+* :doc:`Einführung in Subversion <misc/Subversion>`

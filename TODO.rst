@@ -22,8 +22,6 @@ Stack
 
     * misc
 
-      * ``raspi-hands-on``
-      * ``course-kettner-lfs``
       * ``course-svn``
 
   * sysprog: virtmem, ipc -> avl
