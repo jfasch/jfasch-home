@@ -4,30 +4,27 @@ To Do
 Convert Content
 ---------------
 
+Add Missing
+...........
+
+* 045-cmake.tex
+* 055-c++03.tex
+* 056-c++11.tex
+* 060-design-patterns-unittests.tex
+* 200-misc.tex
+* 400-kernel.tex
+* 910-glt-2014.tex (CAN)
+
 Stack
 .....
 
-* :doc:`/index`
+* Structure
 
-  * Links "Schulungen", once they are in place.
-
-    * ``courses-sysprog``
-    * ``courses-misc``
-
-* :doc:`/courses/index`
-
-  * why is content if index included in sidebar toc?
-
-  * Links
-
-    * misc
-
-      * ``course-svn``
-
-  * sysprog: virtmem, ipc -> avl
-  * CMake
+  * add avl live hacking to "sysprog: virtmem, ipc"
   * CAN -> network
   * GPIO, libgpiod -> Embedded
+  * System basics: links to make, bash, ...
+  * split "linux intro" out of sysprog topics -> testers etc.
 
 References, Past Trainings
 --------------------------

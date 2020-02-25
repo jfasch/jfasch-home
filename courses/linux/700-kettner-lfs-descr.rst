@@ -16,4 +16,4 @@ Schulungsbeschreibung
 Notizen und Links
 -----------------
 
-* :doc:`kettner-lfs-2013-09-16`
+* :doc:`_hidden/kettner-lfs-2013-09-16`

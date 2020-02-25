@@ -1,5 +1,5 @@
-Multithreading unter Linux
-==========================
+Systemprogrammierung: Multithreading
+====================================
 
 .. todo::
 
@@ -74,4 +74,4 @@ Empfohlene Vorkenntnisse
 ------------------------
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
-Grundkenntnis des Systems (:doc:`Einführungskurs <System-Basics>`).
+Grundkenntnis des Systems (:doc:`Einführungskurs <020-sysprog-basics>`).

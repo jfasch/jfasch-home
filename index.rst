@@ -5,12 +5,15 @@ Linux und Open Source
    :caption: Schulungen
    :hidden:
    :maxdepth: -1
+   :titlesonly:
+   :glob:
 
-   courses/index.rst
+   courses/index
 
 .. toctree::
    :caption: Management
    :hidden:
+   :titlesonly:
    :maxdepth: -1
 
    TODO
@@ -35,15 +38,12 @@ ansiedeln.
 Schulung
 --------
 
-Passend zu vielen meiner Themen aus der Entwicklung biete ich auch
-:doc:`Schulungen <courses/index>` an.
+Jahre des Programmierens haben ihre Spuren hinterlassen - es hat sich
+einiges an Wissen angesammelt. Vieles davon ist nicht mehr relevant
+(was gut ist); den Großteil des Rests habe ich strukturiert und zu
+Schulungsunterlagen verarbeitet.
 
-* :doc:`courses/linux-basics` für Ein- und Umsteiger
-* Programmiersprachen (``courses-programming``) in Linux und darüber
-  hinaus
-* jjj Systemnahe und Embedded Programmierung (``courses-sysprog``) für
-  fortgeschrittene Programmierer
-* jjj Weiterführende Themen (``courses-misc``)
+:doc:`Hier für mehr <courses/index>`
 
 Beratung
 --------

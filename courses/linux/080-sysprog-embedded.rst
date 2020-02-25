@@ -1,5 +1,5 @@
-Embedded Linux
-==============
+Systemprogrammierung: Embedded/Hardware
+=======================================
 
 .. todo::
 

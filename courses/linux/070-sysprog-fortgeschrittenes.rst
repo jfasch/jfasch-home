@@ -1,5 +1,5 @@
-Systemnahe Programmierung für Fortgeschrittene
-==============================================
+Systemprogrammierung: Virtuelles Memory, IPC, Shared Libraries
+==============================================================
 
 .. todo::
 
@@ -61,4 +61,4 @@ Empfohlene Vorkenntnisse
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
 Grundkenntnis des Systems (vgl. :doc:`Einführungskurs
-<System-Basics>`).
+<020-sysprog-basics>`).

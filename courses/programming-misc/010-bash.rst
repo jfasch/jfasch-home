@@ -37,4 +37,4 @@ Empfohlene Vorkenntnisse
 
 Erfahrung in Unix und der Umgang mit der Shell auf der Commandline
 werden vorausgesetzt. Siehe dazu auch den :doc:`Linux Einführungskurs
-</courses/linux-basics>`.
+<../linux/010-linux-basics>`.
