@@ -36,7 +36,6 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinx.ext.autodoc',
-    'openheating.sphinx.rstjinja',
     'sphinx_rtd_theme',
 ]
 todo_include_todos = True
