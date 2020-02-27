@@ -54,7 +54,14 @@ Structure
 References, Past Trainings
 --------------------------
 
+* move log/ over from old-fart/
 * mail people, send link when done (after style is in place)
+
+Code
+----
+
+* Move :doc:`/courses/records/2020-01-10/index` to the sysprog/ipc
+  section.
 
 About
 -----

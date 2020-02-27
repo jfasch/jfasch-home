@@ -14,6 +14,9 @@ dahin ist es allerdings noch ein langer Weg. Ich lerne noch.
 Die Schulungsunterlagen sind durchwegs in Englisch; die Kurse selbst
 werden wahlweise in Deutsch oder Englisch gehalten.
 
+:doc:`Hier <records/index>` finden Sie ein Liste von bereits
+gehaltenen Schulungen, inklusive Anmerkungen.
+
 Linux
 -----
 
@@ -68,3 +71,9 @@ Programmieren: Beiwerk
 
    programming-misc/*
 
+Bisher Gehaltene
+----------------
+
+.. toctree::
+
+   records/index
