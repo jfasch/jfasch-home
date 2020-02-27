@@ -1,8 +1,25 @@
+.. contents::
+
 To Do
 =====
 
-Convert Content
----------------
+C++
+---
+
+Convert to RST/S5
+.................
+
+* C++03
+* C++11
+
+Examples
+........
+
+``Homebrain/Kurse/Material/C++11/Examples/``: dress it up nicely using
+literalinclude and such. links from within presentation.
+
+Convert Existing Content
+------------------------
 
 Add Missing
 ...........
@@ -24,15 +41,16 @@ Structure
 * System basics: links to make, bash, ...
 * split "linux intro" out of sysprog topics -> testers etc.
 
-About
-.....
-
-* missing link to confix in :doc:`/about/projects-de` ("jjj")
-
 References, Past Trainings
 --------------------------
 
 * mail people, send link when done (after style is in place)
+
+About
+-----
+
+* missing link to confix in :doc:`/about/projects-de` ("jjj")
+* add public ssh key
 
 Skills
 ------
@@ -49,7 +67,16 @@ Blog
 ----
 
 * Scheduling: the porting trap
-* Why ps sucks
+* Blogger
+
+  * Why ps sucks
+  * Saving Solid State Disk Life (Gentoo),
+    https://www.blogger.com/blogger.g?blogID=3867340954160340359#editor/target=post;postID=7436894785834137465;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=1;src=postname
+  * Porting to Linux (There's Always A Better Way),
+    https://www.blogger.com/blogger.g?blogID=3867340954160340359#editor/target=post;postID=4473407852888987760;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=2;src=postname
+  * Beagleboard: How to Repair NAND (also known as 40W),
+    https://www.blogger.com/blogger.g?blogID=3867340954160340359#editor/target=post;postID=6895379688667243523;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=3;src=postname
+
 
 Miscellaneous
 -------------

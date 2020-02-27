@@ -9,6 +9,7 @@ Linux und Open Source
 
    courses/index
    about/index
+   blog/index
    TODO
 
 Entwicklung
@@ -36,7 +37,7 @@ einiges an Wissen angesammelt. Vieles davon ist nicht mehr relevant
 (was gut ist); den Großteil des Rests habe ich strukturiert und zu
 Schulungsunterlagen verarbeitet.
 
-:doc:`Hier für mehr <courses/index>`
+:doc:`Hier viel mehr darüber </courses/index>`.
 
 Beratung
 --------
@@ -44,6 +45,7 @@ Beratung
 Meine Dienstleistungen umfassen auch Beratung und Durchführung in
 begleitenden Disziplinen wie
 
+* Architektur
 * Versionskontrolle und Releasemanagement
 * Buildmanagement
 * Unittests

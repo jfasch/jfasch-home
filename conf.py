@@ -28,6 +28,7 @@ release = '0.0.0'
 
 # -- General configuration ---------------------------------------------------
 master_doc = 'index'
+templates_path = []
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -37,11 +38,15 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.autodoc',
     'sphinx_rtd_theme',
+    'ablog',
 ]
 todo_include_todos = True
 
+import ablog
+templates_path.append(ablog.get_html_templates_path())
+
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+# templates_path = ['_templates']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -60,3 +65,7 @@ html_theme_options = {
 
 html_static_path = ['_static']
 
+
+html_sidebars = {
+    
+}
