@@ -35,7 +35,9 @@ Add Missing
 Structure
 .........
 
-* add avl live hacking to "sysprog: virtmem, ipc"
+* add avl live hacking to "sysprog: virtmem, ipc". link to it from
+  /blog/2011/01/porting-to-linux-there-s-always-a-better-way.rst
+  "Signals Aren't Messages")
 * CAN -> network
 * GPIO, libgpiod -> Embedded
 * System basics: links to make, bash, ...
@@ -66,17 +68,15 @@ Skills
 Blog
 ----
 
-* Scheduling: the porting trap
-* Blogger
+* go over posts, and use sidebars a lot.
 
-  * Why ps sucks
-  * Saving Solid State Disk Life (Gentoo),
-    https://www.blogger.com/blogger.g?blogID=3867340954160340359#editor/target=post;postID=7436894785834137465;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=1;src=postname
-  * Porting to Linux (There's Always A Better Way),
-    https://www.blogger.com/blogger.g?blogID=3867340954160340359#editor/target=post;postID=4473407852888987760;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=2;src=postname
-  * Beagleboard: How to Repair NAND (also known as 40W),
-    https://www.blogger.com/blogger.g?blogID=3867340954160340359#editor/target=post;postID=6895379688667243523;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=3;src=postname
+  * fex, unix signal vs. rtos signal, and other terminology
+    misunderstandings, and async-signal-safe in
+    :doc:`/blog/2011/01/porting-to-linux-there-s-always-a-better-way`
 
+* Scheduling: the porting trap (plus link to it in
+  :doc:`/blog/2011/01/porting-to-linux-there-s-always-a-better-way`,
+  "Processes are Threads")
 
 Miscellaneous
 -------------

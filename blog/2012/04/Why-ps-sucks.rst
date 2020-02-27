@@ -1,4 +1,4 @@
-.. post:: Apr 3, 2012
+.. post:: 2012-04-03
    :category: linux
    :author: Jörg Faschingbauer
    :location: Hart bei Graz, Austria
