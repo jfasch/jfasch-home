@@ -1,9 +1,11 @@
 Systemprogrammierung: Virtuelles Memory, IPC, Shared Libraries
 ==============================================================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 2
+   .. csv-table::
+
+      Dauer, 2 Tage
 
 Will man in Tiefen des Systems steigen, die dem Alltagsprogrammierer
 normalerweise verborgen bleiben, ist dieser Kurs genau der

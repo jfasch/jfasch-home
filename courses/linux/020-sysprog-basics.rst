@@ -1,9 +1,11 @@
 Systemprogrammierung: Einführung
 ================================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 2
+   .. csv-table::
+
+      Dauer, 2 Tage
 
 Dieser Einführungskurs richtet sich an Programmierer, die Linux nicht
 so sehr kennen, es aber kennen lernen wollen. Die Zusammenhänge und

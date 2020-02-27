@@ -1,9 +1,11 @@
 Linux Basics: Eine Einführung Anhand von Beispielen
 ===================================================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   jjj sidebar: duration 3
+   .. csv-table::
+
+      Dauer, 3 Tage
 
 Dieser Kurs liefert einen grundlegenden Einblick in die Shell, mit
 Hinblick auf das Verständnis des Betriebssystems.

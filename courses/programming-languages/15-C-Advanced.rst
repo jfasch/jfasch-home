@@ -1,9 +1,11 @@
 C für Fortgeschrittene
 ======================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 3
+   .. csv-table::
+
+      Dauer, 3 Tage
 
 C ist eine kleine und einfache Sprache, was den Sprachumfang angeht. C
 ist auch eine schnelle Sprache, da compilierter Maschinencode

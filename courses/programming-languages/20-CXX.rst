@@ -1,9 +1,11 @@
 C++: Eine Einführung
 ====================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 5
+   .. csv-table::
+
+      Dauer, 5 Tage
 
 C++ wurde ursprünglich erfunden, um als Superset des guten alten C
 dessen Schwächen leichter handhabbar zu machen. Die Eckpfeiler der

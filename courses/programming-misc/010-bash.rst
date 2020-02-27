@@ -1,9 +1,11 @@
 Shell Scripting mit der Bourne Again Shell (Bash)
 =================================================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 3
+   .. csv-table::
+
+      Dauer, 3 Tage
 
 Die Shell ist nicht nur ein notwendiges Übel, um mit dem System
 sprechen zu können. Sie ist auch eine vollständige Programmiersprache

@@ -1,9 +1,11 @@
 C: Einführung
 =============
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 5
+   .. csv-table::
+
+      Dauer, 5 Tage
 
 Der `Bibel von Brian Kernighan und Dennis Ritchie
 <http://de.wikipedia.org/wiki/The_C_Programming_Language>`__ kann man

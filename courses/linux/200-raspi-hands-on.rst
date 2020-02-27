@@ -1,10 +1,11 @@
 Eine Woche mit dem Raspberry Pi
 ===============================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   * sidebar: 5
-   * raspi 3 pinout
+   .. csv-table::
+
+      Dauer, 5 Tage
 
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher
 Programmierung - das ist das Zentrum dieses Kurses.**
@@ -15,7 +16,7 @@ wieder Spass an produktivem Basteln näherzubringen - statt reine
 Spielekonsumenten zu sein. Das Ziel wurde erreicht, und zwar nicht nur
 für Kinder, wie eine nicht enden wollende Liste an Projekten zeigt.
 
-.. image:: raspberry-pi-rev2-pinout.jpg
+.. image:: Pi-GPIO-header.png
    :alt: Raspi Pinout
    :align: right
 

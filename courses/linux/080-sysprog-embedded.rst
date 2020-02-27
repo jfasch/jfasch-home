@@ -1,9 +1,11 @@
 Systemprogrammierung: Embedded/Hardware
 =======================================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 5
+   .. csv-table::
+
+      Dauer, 5 Tage
 
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher
 Programmierung - das ist das Zentrum dieses Kurses.**

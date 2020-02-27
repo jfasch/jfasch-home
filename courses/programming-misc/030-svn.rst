@@ -1,9 +1,11 @@
 Subversion: Eine Einführung
 ===========================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 1
+   .. csv-table::
+
+      Dauer, 1 Tage
 
 Versionskontrolle ist bei größeren (ich behaupte: bei allen) Projekten
 unumgänglich notwendig. Releasemanagement und parallele Entwicklung

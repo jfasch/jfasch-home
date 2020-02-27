@@ -1,9 +1,11 @@
 Systemprogrammierung: Multithreading
 ====================================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 2
+   .. csv-table::
+
+      Dauer, 2 Tage
 
 Parallele Programmierung war schon immer schwer, und es ist
 unverständlich, warum Multithreading von modernen Programmiersprachen

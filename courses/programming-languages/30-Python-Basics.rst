@@ -1,9 +1,11 @@
 Python Grundlagen
 =================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 2
+   .. csv-table::
+
+      Dauer, 2 Tage
 
 Python ist einfach zu erlernen und bietet mit seiner Standardlibrary
 einen üppig ausgestatteten Werkzeugkasten - man kann in null komma

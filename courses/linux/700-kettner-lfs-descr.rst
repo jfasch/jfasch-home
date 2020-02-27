@@ -1,9 +1,11 @@
 Linux from Scratch
 ==================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 5
+   .. csv-table::
+
+      Dauer, 5 Tage
 
 Basteln eines bootfähigen Linuxsystems von Null weg.
 

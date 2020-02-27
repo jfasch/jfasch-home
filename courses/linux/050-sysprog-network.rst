@@ -1,9 +1,11 @@
 Systemprogrammierung: Netzwerk
 ==============================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 2
+   .. csv-table::
+
+      Dauer, 2 Tage
 
 Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
 in das Grundprinzip "Everything is a File" ein. Das Socket-Interface

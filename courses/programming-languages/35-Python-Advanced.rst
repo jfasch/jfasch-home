@@ -1,9 +1,11 @@
 Python für Fortgeschrittene
 ===========================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 2
+   .. csv-table::
+
+      Dauer, 2 Tage
 
 Über den grundlegenden Sprachumfang (siehe Schulung :doc:`Python
 Grundlagen <30-Python-Basics>`) hinaus bietet Python eine Reihe von

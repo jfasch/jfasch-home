@@ -1,9 +1,11 @@
 GNU-Make: Eine Einführung
 =========================
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 1
+   .. csv-table::
+
+      Dauer, 1 Tage
 
 Die Mutter aller Build-Tools unter Linux und Unix ist Make - unter
 Linux in seiner extrem mächtigen Variante "GNU Make" verfügbar. Steht

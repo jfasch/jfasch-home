@@ -3,6 +3,14 @@
 To Do
 =====
 
+Github Pages
+------------
+
+Rename jfasch/company-page -> jfasch-home when there's time. What's
+involved?
+
+Repo jfasch-home-pages
+
 C++
 ---
 

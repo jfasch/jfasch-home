@@ -1,9 +1,11 @@
 C: Auffrischung
 ===============
 
-.. todo::
+.. sidebar:: Kursdaten
 
-   sidebar: 2
+   .. csv-table::
+
+      Dauer, 2 Tage
 
 Inhalt
 ------
