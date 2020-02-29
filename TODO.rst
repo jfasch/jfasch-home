@@ -4,6 +4,11 @@
 To Do
 =====
 
+reST Todos
+----------
+
+.. todolist::
+
 Github Pages
 ------------
 

@@ -53,7 +53,7 @@ Summary: The Linux kernel
 %global zipsed -e 's/\.ko$/\.ko.xz/'
 %endif
 
-%define buildid .jfasch
+# define buildid .local
 
 %if 0%{?fedora}
 %define primary_target fedora
@@ -825,7 +825,6 @@ Patch600: alsa-5.5.patch
 
 # ALSA code from v5.6 (Intel ASoC Sound Open Firmware driver support)
 Patch601: alsa-5.6.patch
-Patch999: RIP-ucsi_displayport_remove_partner.patch
 
 # END OF PATCH DEFINITIONS
 

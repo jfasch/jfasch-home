@@ -8,8 +8,16 @@
 Patching and Building the Fedora Kernel
 =======================================
 
+It's not easy to get up to date information on how to create a custom
+kernel on Fedora. There's plenty of information out there, but most of
+it is outdated and only halfway true.
+
+Here's what I was able to find out by combining non-outdated
+information into a working procedure. It goes as follows.
+
 .. contents::
    :local:
+   :depth: 1
 
 Why?
 ----
@@ -117,95 +125,6 @@ appear to be multiple issues, not just one.
 I'll focus on mine: patch, build, report, and help with
 testing. First, see how kernels are built in Fedora.
 
-Building a Fedora Kernel
-------------------------
-
-* (https://fedoraproject.org/wiki/Building_a_custom_kernel)
-* better this one?
-  https://docs.fedoraproject.org/en-US/quick-docs/kernel/build-custom-kernel/
-
-
-Try 42
-------
-
-or better yet, this one? (Laura Abbott)
-  https://fedoramagazine.org/building-fedora-kernel/
-
-$ fedpkg clone -a kernel
-
-fatal: the remote end hung up unexpectedly27 MiB | 1.09 MiB/s  
-
-retried, worked
-
-being at 31,
-
-$ cd kernel/
-$ git checkout origin/f31
-
-fedpkg local
-
-coffee
-
-done -> pollution ...
-
-
-$ ls -l ./kernel-5.5.fc33/
-total 305616
--rw-r--r--.  1 jfasch jfasch        31 Feb 27 08:00 debugfiles.list
--rw-r--r--.  1 jfasch jfasch    174194 Feb 27 08:00 debugfiles.list.dirs.sed
--rw-r--r--.  1 jfasch jfasch         0 Feb 27 08:00 debuginfodebug.list
--rw-r--r--.  1 jfasch jfasch    449975 Feb 27 08:00 debuginfo.list
--rw-r--r--.  1 jfasch jfasch         0 Feb 27 07:55 debuglinks.list
--rw-r--r--.  1 jfasch jfasch 311626830 Feb 27 07:59 debugsources.list
--rw-r--r--.  1 jfasch jfasch    307123 Feb 27 07:59 elfbins.list
--rw-r--r--.  1 jfasch jfasch         0 Feb 27 08:00 ignored-debuginfo.list
--rw-r--r--.  1 jfasch jfasch    208992 Feb 27 07:55 kernel-core.list
--rw-r--r--.  1 jfasch jfasch        16 Feb 27 07:51 kernel-ldsoconf.list
--rw-r--r--.  1 jfasch jfasch    154089 Feb 27 07:55 kernel-modules.list
-drwxr-xr-x. 26 jfasch jfasch      4096 Feb 27 07:51 linux-5.6.0-0.rc3.git1.1.fc33.x86_64
-drwxr-xr-x. 24 jfasch jfasch      4096 Jan 27 01:23 vanilla-5.5
-drwxr-xr-x. 25 jfasch jfasch      4096 Feb 27 05:58 vanilla-5.6-rc3-git1
-
-$ ls -l ./kernel-5.5.fc33/linux-5.6.0-0.rc3.git1.1.fc33.x86_64/
-
-looks even more polluted, guess that is where kernel build took place
-(in-source). copy away, to produce patch/diff.
-
-cp -r ./kernel-5.5.fc33/linux-5.6.0-0.rc3.git1.1.fc33.x86_64/ /somewhere/else/
-
-fix as above (jjj local ref):
-
-emacs /somewhere/else/linux-5.6.0-0.rc3.git1.1.fc33.x86_64/drivers/usb/typec/ucsi/displayport.c
-
-patch ...
-
-https://fedoraproject.org/wiki/Kernel/Spec#Individual_patches
-
-jjjj
-
-diff -ur ./kernel-5.5.fc33/linux-5.6.0-0.rc3.git1.1.fc33.x86_64 /somewhere/else/linux-5.6.0-0.rc3.git1.1.fc33.x86_64/ > ./RIP-ucsi_displayport_remove_partner.patch
-
-add to patch list in kernel.spec
-
-rebuild:
-
-fedpkg local
-
--> error failed apply patch
-
-Try 43
-------
-
-It's not easy to get up to date information on how to create a custom
-kernel on Fedora. There's plenty of information out there, but most of
-it is outdated and only halfway true.
-
-Here's what I was able to find out by combining non-outdated
-information into a working procedure. It goes as follows.
-
-.. contents::
-   :local:
-
 Find Kernel Source (Git), Fix It, and Create Patch
 --------------------------------------------------
 
@@ -216,7 +135,8 @@ Find Kernel Source (Git), Fix It, and Create Patch
 
 Fedora has a Git repository at ``kernel.org`` where they apply their
 own patches on top of the vanilla kernel. Clone that, and create a
-development branch.
+development branch. (I am on Fedora 31, so I'm basing the branch on
+that.)
 
 .. code-block:: shell
 
@@ -247,80 +167,135 @@ the ``HEAD``.
 
        kernel-5.5.6-201.fc31 configs
 
-Create the patch,
+Create the patch which we will pick up later,
 
 .. code-block:: shell
 
    $ git format-patch -o /tmp 4382f76bc8ef9fce5e7e96d4cdb0c073564ad249
    /tmp/0001-fix-RIP-ucsi_displayport_remove_partner.patch
 
-$ rpmdev-setuptree
+Prepare the RPM Build
+---------------------
 
-effect: empty structure
+.. sidebar:: Link
 
-$ tree ~/rpmbuild/
-/home/jfasch/rpmbuild/
-├── BUILD
-├── RPMS
-├── SOURCES
-├── SPECS
-└── SRPMS
+   `Building a custom kernel/Source RPM
+   <https://fedoraproject.org/wiki/Building_a_custom_kernel/Source_RPM#Prepare_Build_Files>`__
 
-kernel rpm/spec
-...............
+.. contents:: 
+   :local:
 
-which? -> ls -l /boot -> vmlinuz-5.4.13-201.fc31.x86_64 -> 5.4.13-201.fc31
+Install Prerequisites
+.....................
+      
+.. code-block:: shell
 
-$ koji download-build --arch=src kernel-5.4.13-201.fc31
+   $ sudo dnf install rpmdevtools koji
 
--> kernel-5.4.13-201.fc31.src.rpm
+Setup ``rpmbuild`` Directory
+............................
 
-$ rpm -Uvh kernel-5.4.13-201.fc31.src.rpm 
+Setup an empty RPM tree. This will simply create a directory
+``rpmbuild`` skeleton tree in the home directory.
 
-effect: source rpm placed into ~/rpmbuild
+.. code-block:: shell
 
-$ tree ~/rpmbuild/
-/home/jfasch/rpmbuild/
-├── BUILD
-├── RPMS
-├── SOURCES
-│   ├── 0001-crypto-ccp-Release-all-allocated-memory-if-sha-type-.patch
-│   ├── 0001-Drop-that-for-now.patch
-... (blah) ...
-├── SPECS
-│   └── kernel.spec
-└── SRPMS
+   $ rpmdev-setuptree
+   $ tree ~/rpmbuild/
+   /home/jfasch/rpmbuild/
+   ├── BUILD
+   ├── RPMS
+   ├── SOURCES
+   ├── SPECS
+   └── SRPMS
 
-apply patch
-...........
+Download and Install Source RPM For Crashing Kernel
+---------------------------------------------------
 
-$ cp /tmp/0001-fix-RIP-ucsi_displayport_remove_partner.patch ~/rpmbuild/SOURCES/RIP-ucsi_displayport_remove_partner.patch
+Find out the version of the crashing kernel (the one that is currently
+running),
 
-$ cd ~/rpmbuild/SPECS/
+.. code-block:: shell
 
-* uncomment buildid
-* add patch
+   $ uname -r
+   5.4.13-201.local.fc31.x86_64
 
-literalinclude spec diff
+Download the corresponding source RPM from their build engine,
 
-build
-.....
+.. code-block:: shell
 
-$ rpmbuild -bb --target=x86_64 kernel.spec
+   $ koji download-build --arch=src kernel-5.4.13-201.fc31
+   $ ls -l *.rpm
+   kernel-5.4.13-201.fc31.src.rpm
 
-install
-.......
+Install the RPM. This will fill the ``~/rpmbuild/`` skeleton with the
+kenrel build instructions.
 
-rpm -ivh --oldpackage \
-   ~/rpmbuild/RPMS/x86_64/kernel-core-5.4.13-201.local.fc31.x86_64.rpm \
-   ~/rpmbuild/RPMS/x86_64/kernel-modules-5.4.13-201.local.fc31.x86_64.rpm
+.. code-block:: shell
 
-disable secure boot
+   $ rpm -ivh kernel-5.4.13-201.fc31.src.rpm 
+   $ tree ~/rpmbuild/
+   /home/jfasch/rpmbuild/
+   ├── BUILD
+   ├── RPMS
+   ├── SOURCES
+   │   ├── 0001-crypto-ccp-Release-all-allocated-memory-if-sha-type-.patch
+   │   ├── 0001-Drop-that-for-now.patch
+   ... (blah) ...
+   ├── SPECS
+   │   └── kernel.spec
+   └── SRPMS
 
-Links
------
+Apply the Patch
+---------------
 
-https://fedoraproject.org/wiki/Building_a_custom_kernel/Source_RPM
+Copy the patch from above into the build tree, where the other patches
+are,
+
+.. code-block:: shell
+
+   $ cp /tmp/0001-fix-RIP-ucsi_displayport_remove_partner.patch \
+       ~/rpmbuild/SOURCES/RIP-ucsi_displayport_remove_partner.patch
+
+Edit the build specification, ``~/rpmbuild/SPECS/kernel.spec``, to
+
+* contain a descriptive version
+* apply the patch
+
+.. literalinclude:: kernel.spec
+   :language: shell
+   :diff: kernel.spec.orig
+
+Build the Kernel RPMs
+---------------------
+
+.. code-block:: shell
+
+   $ cd ~/rpmbuild/SPECS/
+   $ rpmbuild -bb --target=x86_64 kernel.spec
+   ... roedel ...
+
+Before doing this, make sure the following is available:
+
+* Enough RAM
+* Enough disk
+* Patience, coffee, or something else to do
+
+Install Kernel
+--------------
+
+.. code-block:: shell
+
+   $ sudo rpm -ivh --oldpackage \
+      ~/rpmbuild/RPMS/x86_64/kernel-core-5.4.13-201.jfasch.fc31.x86_64.rpm \
+      ~/rpmbuild/RPMS/x86_64/kernel-modules-5.4.13-201.jfasch.fc31.x86_64.rpm
+
+.. note::
+
+   The kernel is not signed, obviously, so you might have to disable
+   Secure Boot in your UEFI.
+
+
 
 .. rubric:: Footnotes
 
