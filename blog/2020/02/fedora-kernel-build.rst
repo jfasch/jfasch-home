@@ -196,7 +196,63 @@ fedpkg local
 Try 43
 ------
 
-https://fedoraproject.org/wiki/Building_a_custom_kernel/Source_RPM
+It's not easy to get up to date information on how to create a custom
+kernel on Fedora. There's plenty of information out there, but most of
+it is outdated and only halfway true.
+
+Here's what I was able to find out by combining non-outdated
+information into a working procedure. It goes as follows.
+
+.. contents::
+   :local:
+
+Find Kernel Source (Git), Fix It, and Create Patch
+--------------------------------------------------
+
+.. sidebar:: Link
+
+   `Fedora Wiki: "Exploded Git Trees"
+   <https://fedoraproject.org/wiki/Building_a_custom_kernel#Building_a_kernel_from_the_exploded_git_trees>`__
+
+Fedora has a Git repository at ``kernel.org`` where they apply their
+own patches on top of the vanilla kernel. Clone that, and create a
+development branch.
+
+.. code-block:: shell
+
+   $ git clone git://git.kernel.org/pub/scm/linux/kernel/git/jwboyer/fedora.git
+   $ git checkout -b jfasch-fix remotes/origin/f31
+
+Fix ``drivers/usb/typec/ucsi/displayport.c`` as sketched above, and
+commit.
+
+.. code-block:: shell
+
+   $ git commit -am 'fix RIP:ucsi_displayport_remove_partner()'
+
+The remainder of the procedure will build the kernel RPM. A kernel RPM
+build works by applying a set of patches on top of the base vanilla
+kernel [#exploded_tree]_, so we create a patch for later use.
+
+I made only one commit for which I want to create a patch. Find out
+the revision that this patch is based upon; it is one revision before
+the ``HEAD``.
+
+.. code-block:: shell
+
+   $ git show --quiet HEAD~1
+   commit 4382f76bc8ef9fce5e7e96d4cdb0c073564ad249 (tag: kernel-5.5.6-201.fc31, origin/f31)
+   Author: Josh Boyer <jwboyer@fedoraproject.org>
+   Date:   Mon Feb 24 23:09:20 2020 +0000
+
+       kernel-5.5.6-201.fc31 configs
+
+Create the patch,
+
+.. code-block:: shell
+
+   $ git format-patch -o /tmp 4382f76bc8ef9fce5e7e96d4cdb0c073564ad249
+   /tmp/0001-fix-RIP-ucsi_displayport_remove_partner.patch
 
 $ rpmdev-setuptree
 
@@ -235,24 +291,6 @@ $ tree ~/rpmbuild/
 │   └── kernel.spec
 └── SRPMS
 
-make patch
-..........
-
-https://fedoraproject.org/wiki/Building_a_custom_kernel#Building_a_kernel_from_the_exploded_git_trees
-
-$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/jwboyer/fedora.git
-$ git checkout -b jfasch-fix remotes/origin/f31
-
-fix drivers/usb/typec/ucsi/displayport.c
-
-$ git commit -am 'fix RIP:ucsi_displayport_remove_partner()'
-
-use git log to find out the previous revision ->
-4382f76bc8ef9fce5e7e96d4cdb0c073564ad249
-
-$ git format-patch -o /tmp 4382f76bc8ef9fce5e7e96d4cdb0c073564ad249
-/tmp/0001-fix-RIP-ucsi_displayport_remove_partner.patch
-
 apply patch
 ...........
 
@@ -270,21 +308,21 @@ build
 
 $ rpmbuild -bb --target=x86_64 kernel.spec
 
-Certificate Things Gosh
------------------------
+install
+.......
 
-# echo jfasch >> /etc/pesign/users
-# /usr/libexec/pesign/pesign-authorize
+rpm -ivh --oldpackage \
+   ~/rpmbuild/RPMS/x86_64/kernel-core-5.4.13-201.local.fc31.x86_64.rpm \
+   ~/rpmbuild/RPMS/x86_64/kernel-modules-5.4.13-201.local.fc31.x86_64.rpm
 
-$ openssl req -new -x509 -newkey rsa:2048 -keyout "key.pem" \
-        -outform DER -out jfasch.der -nodes -days 36500 \
-        -subj "/CN=jfasch/"
+disable secure boot
 
-# mokutil --import jfasch.der
-(remember password I had to give)
+Links
+-----
 
-$ openssl pkcs12 -export -out jfasch.p12 -inkey jfasch.pem -in jfasch.der
+https://fedoraproject.org/wiki/Building_a_custom_kernel/Source_RPM
 
+.. rubric:: Footnotes
 
-
-
+.. [#exploded_tree] Yes, the patches are created from the Git
+                    repository we are working with.
