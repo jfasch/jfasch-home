@@ -8,6 +8,8 @@ Saving Solid State Disk Life (Gentoo)
 =====================================
 
 .. contents::
+   :local:
+   :depth: 1
 
 Rant
 ----

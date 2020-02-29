@@ -8,6 +8,7 @@
 ===================================================
 
 .. contents::
+   :local:
 
 Recently, I held a course on select topics around embedded Linux, at a
 company in Zürich. The audience was pretty cool - they had ported

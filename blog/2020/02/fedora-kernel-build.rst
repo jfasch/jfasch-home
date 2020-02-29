@@ -9,6 +9,7 @@ Patching and Building the Fedora Kernel
 =======================================
 
 .. contents::
+   :local:
 
 Why?
 ----

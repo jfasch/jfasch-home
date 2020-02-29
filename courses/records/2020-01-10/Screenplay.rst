@@ -1,7 +1,8 @@
 Screenplay
 ==========
 
-.. contents:: Table of Contents
+.. contents::
+   :local:
 
 Signals
 -------

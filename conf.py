@@ -44,6 +44,7 @@ todo_include_todos = True
 
 import ablog
 templates_path.append(ablog.get_html_templates_path())
+post_date_format = '%Y-%m-%d'
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['_templates']
