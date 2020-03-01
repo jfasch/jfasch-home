@@ -7,11 +7,14 @@ Ein-Tages-Workshop, Themen:
 * Shared Memory, und infolgedessen Virtuelles Memory
 * Semaphore
 
-Der Workshop war als Livehacking-Session konzipiert; :doc:`hier das
-Drehbuch mit Code <Screenplay>`
+Der Workshop war als Livehacking-Session konzipiert; hier mehr Material:
+
+* :doc:`Signals: Slides </training-material/signals-slides>`
+* :doc:`Signals: Drehbuch mit Code </training-material/signals-screenplay>`
+* :doc:`POSIX IPC: Slides </training-material/ipc-slides>`
+* :doc:`POSIX IPC: Drehbuch mit Code </training-material/ipc-screenplay>`
 
 .. toctree::
    :maxdepth: 1
 
    Proposal
-   Screenplay

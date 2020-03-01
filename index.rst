@@ -11,6 +11,17 @@ Linux und Open Source
    courses/index
    about/index
    TODO
+   STACKS
+
+.. toctree::
+   :caption: Unterlagen
+   :hidden:
+   :maxdepth: -1
+
+   training-material/signals-slides
+   training-material/signals-screenplay
+   training-material/ipc-slides
+   training-material/ipc-screenplay
 
 .. toctree::
    :caption: Blog

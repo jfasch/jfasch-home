@@ -1,11 +1,17 @@
-Systemprogrammierung: Virtuelles Memory, IPC, Shared Libraries
-==============================================================
+================================================================
+ Systemprogrammierung: Virtuelles Memory, IPC, Shared Libraries
+================================================================
 
 .. sidebar:: Kursdaten
 
    .. csv-table::
 
       Dauer, 2 Tage
+      Slides, :doc:`Signals </training-material/signals-slides>`
+      Slides, :doc:`IPC </training-material/ipc-slides>`
+      Live Hacking, :doc:`Signals </training-material/signals-screenplay>`
+      Live Hacking, :doc:`IPC </training-material/ipc-screenplay>`
+
 
 Will man in Tiefen des Systems steigen, die dem Alltagsprogrammierer
 normalerweise verborgen bleiben, ist dieser Kurs genau der
@@ -14,7 +20,7 @@ Schnittstellen, die es ermöglichen, hochperformante Anwendungen zu
 schreiben. Hier wird ein Überblick gegeben.
 
 Kursinhalt
-----------
+==========
 
 * **Virtuelles Memory**. Speicherverwaltung in modernen
   Bertriebssystemen basiert auf sogenanntem *virtuellen Memory*. Zum
@@ -59,7 +65,7 @@ Kursinhalt
   * *Explizites Laden* mit ``dlopen()``: "Loading Scopes" etc.
   
 Empfohlene Vorkenntnisse
-------------------------
+========================
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
 Grundkenntnis des Systems (vgl. :doc:`Einführungskurs
