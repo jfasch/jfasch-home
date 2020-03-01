@@ -1,5 +1,6 @@
 .. contents::
    :local:
+   :depth: 1
 
 To Do
 =====
@@ -8,6 +9,18 @@ reST Todos
 ----------
 
 .. todolist::
+
+Styling
+-------
+
+Browse through `RTD user list
+<https://www.sphinx-doc.org/en/master/examples.html#documentation-using-sphinx-rtd-theme>`__
+
+* `Blender <https://docs.blender.org/manual/en/latest/>`__: uses
+  container directive a lot. could be applied to front page.
+* `Corda <https://docs.corda.net/>`__: howto add links to html
+  sidebar. `github
+  <https://github.com/corda/corda/tree/release/os/4.5/docs>`__.
 
 Github Pages
 ------------

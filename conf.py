@@ -42,12 +42,37 @@ extensions = [
 ]
 todo_include_todos = True
 
-import ablog
-templates_path.append(ablog.get_html_templates_path())
-post_date_format = '%Y-%m-%d'
+# ablog
+if True:
+    import ablog
+    templates_path.append(ablog.get_html_templates_path())
+    post_date_format = '%Y-%m-%d'
 
-# Add any paths that contain templates here, relative to this directory.
-# templates_path = ['_templates']
+    blog_title = u'Jörg Faschingbauer'
+    blog_path = 'blog'
+
+    # a side effect of setting blog_baseurl is that atom.axml feeds
+    # are generated altogether
+    blog_baseurl = 'https://faschingbauer.me'
+
+    blog_authors = {
+        'jfasch': ('Jörg Faschingbauer', 'https://faschingbauer.me'),
+    }
+    blog_default_author = 'jfasch'
+    
+    blog_locations = {
+        'daham': ('Graz, Austria', 'https://de.wikipedia.org/wiki/Graz'),
+    }
+    blog_default_location = 'daham'
+    fontawesome_link_cdn = 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
+    blog_feed_fulltext = True
+    blog_feed_length = 10
+    blog_feed_archives = True
+
+    # feed is http://feeds.feedburner.com/JoergFaschingbauer
+
+
+templates_path.append('_templates')
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -55,7 +80,11 @@ post_date_format = '%Y-%m-%d'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # context that jinja (and rst, via the rstjinja extension) sees.
-html_context = {}
+html_context = {
+    # experimental: this is how we can get settings into templates
+    'READTHEDOCS': False, # {en,dis}able versions.html
+    'versions': [('blah', 'https://www.google.com'),],
+}
 
 # ---
 html_theme = 'sphinx_rtd_theme'
@@ -64,9 +93,8 @@ html_theme_options = {
     'navigation_depth': -1,
 }
 
-html_static_path = ['_static']
+html_static_path = []
 
-
+# hmmm. somehow this is disregarded by rtd theme.
 html_sidebars = {
-    
 }

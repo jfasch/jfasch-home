@@ -2,6 +2,7 @@ Linux und Open Source
 =====================
 
 .. toctree::
+   :caption: Content
    :hidden:
    :maxdepth: -1
    :titlesonly:
@@ -9,8 +10,14 @@ Linux und Open Source
 
    courses/index
    about/index
-   blog/index
    TODO
+
+.. toctree::
+   :caption: Blog
+   :hidden:
+   :maxdepth: -1
+
+   blog/index
 
 Entwicklung
 -----------
