@@ -1,15 +1,15 @@
 Schulungen
 ==========
 
+.. image:: sysprog-bodenseo.jpg
+   :alt: Kurs im Hoeri-Hotel
+   :align: right
+
 Mir ist es sehr wichtig, Schulungen ausschliesslich über solche Themen
 anzubieten, in denen ich selbst lange genug tätig bin und in denen ich
 genügend Erfahrung besitze. Zum Beispiel möchte ich gerne eines Tages
 eine Schulung über `Git <http://git-scm.com/>`__ anbieten - bis dahin
 ist es allerdings noch ein langer Weg. Ich lerne noch.
-
-.. image:: sysprog-bodenseo.jpg
-   :alt: Kurs im Hoeri-Hotel
-   :align: right
 
 Unterlagen
 ----------
@@ -22,6 +22,11 @@ Der Großteil der Unterlagen ist noch in gutem altem Latex geschrieben
 <https://en.wikipedia.org/wiki/Beamer_(LaTeX)>`__). Einen Teil dieser
 finden Sie als vorcompilierte PDFs :doc:`hier
 </training-material/overview>`.
+
+.. sidebar:: Download
+
+   Ein Großteil der Unterlagen ist :doc:`hier
+   </training-material/overview>` als Download verfügbar.
 
 Work in Progress: S5 Web Slides
 ...............................

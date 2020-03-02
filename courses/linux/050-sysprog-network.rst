@@ -6,6 +6,7 @@ Systemprogrammierung: Netzwerk
    .. csv-table::
 
       Dauer, 2 Tage
+      PDF Slides, :download:`sysprog </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
 
 Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
 in das Grundprinzip "Everything is a File" ein. Das Socket-Interface

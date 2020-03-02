@@ -6,6 +6,7 @@ C: Auffrischung
    .. csv-table::
 
       Dauer, 2 Tage
+      PDF Slides, :download:`C </training-material/slides/pdf/050-c.pdf>`
 
 Inhalt
 ------

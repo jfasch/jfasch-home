@@ -6,6 +6,7 @@ Shell Scripting mit der Bourne Again Shell (Bash)
    .. csv-table::
 
       Dauer, 3 Tage
+      PDF Slides, :download:`Bash </training-material/slides/pdf/100-shell-scripting.pdf>`
 
 Die Shell ist nicht nur ein notwendiges Übel, um mit dem System
 sprechen zu können. Sie ist auch eine vollständige Programmiersprache

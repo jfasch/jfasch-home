@@ -6,6 +6,8 @@ C++: Eine Einführung
    .. csv-table::
 
       Dauer, 5 Tage
+      PDF Slides, :download:`C++03 </training-material/slides/pdf/055-c++03.pdf>`
+      PDF Slides, :download:`C++11 </training-material/slides/pdf/056-c++11.pdf>`
 
 C++ wurde ursprünglich erfunden, um als Superset des guten alten C
 dessen Schwächen leichter handhabbar zu machen. Die Eckpfeiler der

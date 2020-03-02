@@ -6,6 +6,7 @@ Python Grundlagen
    .. csv-table::
 
       Dauer, 2 Tage
+      PDF Slides, :download:`Python </training-material/slides/pdf/300-python.pdf>`
 
 Python ist einfach zu erlernen und bietet mit seiner Standardlibrary
 einen üppig ausgestatteten Werkzeugkasten - man kann in null komma

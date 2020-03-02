@@ -6,6 +6,7 @@ Systemprogrammierung: Multithreading
    .. csv-table::
 
       Dauer, 2 Tage
+      PDF Slides, :download:`sysprog </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
 
 Parallele Programmierung war schon immer schwer, und es ist
 unverständlich, warum Multithreading von modernen Programmiersprachen

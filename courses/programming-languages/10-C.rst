@@ -6,6 +6,7 @@ C: Einführung
    .. csv-table::
 
       Dauer, 5 Tage
+      PDF Slides, :download:`C </training-material/slides/pdf/050-c.pdf>`
 
 Der `Bibel von Brian Kernighan und Dennis Ritchie
 <http://de.wikipedia.org/wiki/The_C_Programming_Language>`__ kann man

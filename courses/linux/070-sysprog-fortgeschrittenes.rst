@@ -7,8 +7,9 @@
    .. csv-table::
 
       Dauer, 2 Tage
-      Slides, :doc:`Signals </training-material/slides/signals-slides>`
-      Slides, :doc:`IPC </training-material/slides/ipc-slides>`
+      PDF Slides, :download:`sysprog </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
+      S5 Slides, :doc:`Signals </training-material/slides/signals-slides>`
+      S5 Slides, :doc:`IPC </training-material/slides/ipc-slides>`
       Live Hacking, :doc:`Signals </training-material/live-hacking/signals-screenplay>`
       Live Hacking, :doc:`IPC </training-material/live-hacking/ipc-screenplay>`
 

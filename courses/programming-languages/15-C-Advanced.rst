@@ -6,6 +6,7 @@ C für Fortgeschrittene
    .. csv-table::
 
       Dauer, 3 Tage
+      PDF Slides, :download:`C </training-material/slides/pdf/050-c.pdf>`
 
 C ist eine kleine und einfache Sprache, was den Sprachumfang angeht. C
 ist auch eine schnelle Sprache, da compilierter Maschinencode
