@@ -7,7 +7,11 @@ Linux und Open Source
    :maxdepth: -1
    :titlesonly:
 
-   about/index
+   about/cv-de
+   about/skills-de
+   about/projects-de
+   about/lengthy
+   about/contact
 
 .. toctree::
    :caption: Schulungen
@@ -30,15 +34,6 @@ Linux und Open Source
    training-material/live-hacking/index
    training-material/tests/index
 
-.. toctree::
-   :caption: Work in Progress
-   :hidden:
-   :maxdepth: -1
-
-   work-in-progress/TODO
-   work-in-progress/s5
-   work-in-progress/STACKS
-      
 .. toctree::
    :caption: Blog
    :hidden:

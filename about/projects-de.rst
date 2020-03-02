@@ -110,7 +110,7 @@ Projekte aus selbstständiger Tätigkeit
   * *Ort*: Oststeiermark
 
 * **Erweiterung der Buildumgebung** (`CMake <http://www.cmake.org/>`),
-  jjj Confix, in Python
+  Confix, in Python
 
   * *Zeit*: Mai 2009 bis Juni 2010
   * *Firma*: Salomon Automation GmbH
