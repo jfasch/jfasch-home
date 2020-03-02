@@ -1,5 +1,5 @@
-Signals: Live Hacking Screenplay
-================================
+Signals (Live Hacking Screenplay)
+=================================
 
 .. contents::
    :local:

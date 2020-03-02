@@ -1,52 +1,60 @@
-POSIX IPC: Slides
-=================
+POSIX IPC (Slides)
+==================
 
-.. basics
-.. -------------------------------------------------------------------------------------------
+.. sidebar:: Slideshow
 
-Inter Process Communication (IPC) (1)
--------------------------------------
+   :download:`ipc-slides.s5.html`
 
-**Traditional Unix IPC:** mechanisms to communicate between unrelated
-*processes*
+* **Unix IPC:** mechanisms to communicate between unrelated* processes
 
-* Semaphores
-* Shared memory
-* Message queues
+  * Semaphores
+  * Shared memory
+  * Message queues
+  * *No sockets*
 
-*Unrelated*: not related via parent/child relationships
-
-Inter Process Communication (IPC) (2)
--------------------------------------
-
-**History: two IPC variants ...**
+History: Two IPC Variants
+-------------------------
   
-* *System V IPC*
+* **System V IPC**
 
   * Cumbersome, unnecessarily complex API
   * Older -> more portable between Unixen
 
-* *POSIX IPC*
+* **POSIX IPC**
 
   * Easy to use
   * Much of it implemented in userspace (through memory mapped files)
   * Optional feature in POSIX (fully supported in Linux though)
 
-**We're doing POSIX!**
+Object Names
+------------
 
-POSIX IPC: Overview
--------------------
+* **Communication between unrelated processes**
 
-**IPC object names:**
+  * *Related*: none is a descendant of the other (``fork()``)
+  * Cannot *inherit* object
+  * Must be able to *locate* them
 
-* System-wide visibility -> just like files
-* Consistently like so: ``/some-object-name``
+* **System-wide visibility via names**
 
-**API:**
+  * Just like files
+  * In fact, most IPC mechanisms *are* files (at least in Linux)
+  * Consistently with leading slash: ``/some-object-name``
+
+File Semantics
+--------------
   
-* Semaphores, shared memory and message queues are opened just like
-  files. E.g. ``shm_open()``, using the same flags.
-* Just like file descriptors, all types are reference counted.
+* **Objects look just like files**. For example,
+
+  * ``shm_open()``, using the same flags as good ol' ``open()``
+  * ``shm_unlink()`` to remove a shared memory segment, just like good
+    ol' ``unlink()`` removes a file.
+
+* **Handles are reference counted**
+
+  * Shared memory: ``int`` - a true file descriptor
+  * Message queue: ``mqd_t`` (typedef ``int``)
+  * Incremented across ``fork()``, ``dup()`` etc.
 
 
 .. Message Queues
@@ -55,21 +63,19 @@ POSIX IPC: Overview
 Message Queues
 --------------
 
-**Message queue creation parameters:**
+* **Message queue parameters**
   
-* Maximum number of messages
-* Maximum size of a single message
-* *Realtime guarantees*
+  * Maximum number of messages
+  * Maximum size of a single message
+  * *Realtime guarantees*
 
-**Message priorities:**
+* **Message priorities**
   
-* Messages are sent with a priority
-* Higher prioritized messages overtake lower prioritized messages
+  * Messages are sent with a priority
+  * Higher prioritized messages overtake lower prioritized messages
 
-.. sidebar:: Link
-
-   `man -s 7 mq_overview
-   <http://man7.org/linux/man-pages/man7/mq_overview.7.html>`__
+`man -s 7 mq_overview
+<http://man7.org/linux/man-pages/man7/mq_overview.7.html>`__
 
 Open/Create: ``mq_open()``
 --------------------------
@@ -79,28 +85,32 @@ Open/Create: ``mq_open()``
    mqd_t mq_open(const char *name, int oflag);
    mqd_t mq_open(const char *name, int oflag, mode_t mode, struct mq_attr *attr);
 
-.. sidebar:: Link
+* Attributes (``attr``)
 
-   `man -s 3 mq_open
-   <http://man7.org/linux/man-pages/man2/mq_open.2.html>`__
+  * ``mq_flags``: nonblocking?
+  * ``mq_maxmsg``: length
+  * ``mq_msgsize``: width
 
-In ``attr`` the only relevant members are ``mq_flags``, ``mq_maxmsg``
-and ``mq_msgsize``.
+`man -s 3 mq_open
+<http://man7.org/linux/man-pages/man2/mq_open.2.html>`__
 
 Sending/Receiving: ``mq_send()``, ``mq_receive()``
 --------------------------------------------------
 
 .. code-block:: c
 
-   int mq_send(mqd_t mqdes, const char *msg_ptr, size_t msg_len, unsigned msg_prio);
-   ssize_t mq_receive(mqd_t mqdes, char *msg_ptr, size_t msg_len, unsigned *msg_prio);
+   int mq_send(mqd_t mqdes, const char *msg_ptr, 
+               size_t msg_len, unsigned msg_prio);
+   ssize_t mq_receive(mqd_t mqdes, char *msg_ptr,
+               size_t msg_len, unsigned *msg_prio);
 
-.. sidebar:: Links
+* Higher with higher priority are faster
+* ``msg_len`` must not exceed configured queue width
+* Same as ``write()``/``send()`` otherwise
 
-   * `man -s 3 mq_receive
-     <http://man7.org/linux/man-pages/man3/mq_receive.3.html>`__
-   * `man -s 3 mq_send
-     <http://man7.org/linux/man-pages/man3/mq_send.3.html>`__
+`man -s 3 mq_receive <http://man7.org/linux/man-pages/man3/mq_receive.3.html>`__
+
+`man -s 3 mq_send <http://man7.org/linux/man-pages/man3/mq_send.3.html>`__
 
 Closing/Removing: ``mq_close()``, ``mq_unlink()``
 -------------------------------------------------
@@ -110,40 +120,40 @@ Closing/Removing: ``mq_close()``, ``mq_unlink()``
    int mq_close(mqd_t mqdes);
    int mq_unlink(const char *name);
 
-.. sidebar:: Links
+* Boring ...
+* Analogy: ``close()`` and ``unlink()``.
 
-   * `man -s 3 mq_close
-     <http://man7.org/linux/man-pages/man3/mq_close.3.html>`__
-   * `man -s 3 mq_unlink
-     <http://man7.org/linux/man-pages/man3/mq_unlink.3.html>`__
+`man -s 3 mq_close
+<http://man7.org/linux/man-pages/man3/mq_close.3.html>`__
 
-  Analogy: ``close()`` and unlink()``.
-
+`man -s 3 mq_unlink
+<http://man7.org/linux/man-pages/man3/mq_unlink.3.html>`__
 
 Notification: ``mq_notify()``
 -----------------------------
-
-**Notification: obscure feature, only shown because of its obscurity
-...**
 
 .. code-block:: c
 
    int mq_notify(mqd_t mqdes, const struct sigevent *sevp);
 
-Please read yourself and be disturbed!
+**Obscure feature ...**
 
-.. sidebar:: Link
+* Only shown because of its obscurity
+* Specification *predates* that of event loops
+* Guess what ... **SIGNALS**
+* Please read yourself and be disturbed!
 
-   `man -s 3 mq_notify
-   <http://man7.org/linux/man-pages/man3/mq_notify.3.html>`__
+`man -s 3 mq_notify
+<http://man7.org/linux/man-pages/man3/mq_notify.3.html>`__
 
 Message Queues are Files
 ------------------------
 
-**Obvious implementation:** (provided there's OS infrastructure)
-  
-* Message queues are implemented as files
-* Virtual filesystem - ``mqueue``
+* **Obvious implementation:** files
+
+  * ... provided there's OS infrastructure
+  * Message queues are implemented as files
+  * Virtual filesystem - ``mqueue``
 
 Notifications can be received more elegantly - ``select()``,
 ``poll()``, ``epoll``!
@@ -151,7 +161,7 @@ Notifications can be received more elegantly - ``select()``,
 Message Queue Filesystem: ``mqueue``
 ------------------------------------
 
-**Message queues visible as files:** the *mqueue* filesystem
+* **Message queues visible as files:** the *mqueue* filesystem
 
 .. code-block:: shell
   
@@ -168,14 +178,18 @@ Message Queue Filesystem: ``mqueue``
 Semaphores
 ----------
 
-**Creation parameter:**
+**Communication and synchronization device**
 
-* Initial value
+* Bag of N elements 
+* N items can be consumed without waiting
+* (N+1)st consumer has to wait until an item is goiven back
 
-.. sidebar:: Link
-  
-   `man -s 7 sem_overview
-   <http://man7.org/linux/man-pages/man7/sem_overview.7.html>`__
+**Creation parameter**
+
+* Initial value N
+
+`man -s 7 sem_overview
+<http://man7.org/linux/man-pages/man7/sem_overview.7.html>`__
 
 Open/Create: ``sem_open()``
 ---------------------------
@@ -183,11 +197,18 @@ Open/Create: ``sem_open()``
 .. code-block:: c
 
    sem_t *sem_open(const char *name, int oflag);
-   sem_t *sem_open(const char *name, int oflag, mode_t mode, unsigned int value);
+   sem_t *sem_open(const char *name, int oflag, 
+                   mode_t mode, unsigned int value);
 
-.. sidebar:: Link
+* Again: file semantics
+* Like ``open()``, to calling "signatures"
 
-   `man -s 3 sem_open <https://linux.die.net/man/3/sem_open>`__
+  * *create*
+  * *open*
+
+* ``value``: initial value N (creation only)
+
+`man -s 3 sem_open <https://linux.die.net/man/3/sem_open>`__
 
 Communication: ``sem_wait()``, ``sem_post()``
 ---------------------------------------------
@@ -197,20 +218,16 @@ Communication: ``sem_wait()``, ``sem_post()``
    int sem_wait(sem_t *sem);
    int sem_trywait(sem_t *sem);
    int sem_timedwait(sem_t *sem, const struct timespec *abs_timeout);
-
-.. sidebar:: Link
-
-   `man -s 3 sem_wait
-   <http://man7.org/linux/man-pages/man3/sem_wait.3.html>`__
-
-.. code-block:: c
-
    int sem_post(sem_t *sem);
 
-.. sidebar:: Link
+* *wait*: consume element; blocks if count is zero
+* *post*: give element back
 
-   `man -s 3 sem_post
-   <http://man7.org/linux/man-pages/man3/sem_post.3.html>`__
+`man -s 3 sem_wait
+<http://man7.org/linux/man-pages/man3/sem_wait.3.html>`__
+
+`man -s 3 sem_post
+<http://man7.org/linux/man-pages/man3/sem_post.3.html>`__
 
 Closing/Removing: ``sem_close(), ``sem_unlink()``
 -------------------------------------------------
@@ -220,28 +237,31 @@ Closing/Removing: ``sem_close(), ``sem_unlink()``
    int sem_close(sem_t *sem);
    int sem_unlink(const char *name);
 
-.. sidebar:: Links
+* Boring (again) ...
+* Analogy: ``close()`` and ``unlink()``.
 
-   * `man -s 3 sem_close
-     <http://man7.org/linux/man-pages/man3/sem_close.3.html>`__
-   * `man -s 3 sem_unlink
-     <http://man7.org/linux/man-pages/man3/sem_unlink.3.html>`__
+`man -s 3 sem_close
+<http://man7.org/linux/man-pages/man3/sem_close.3.html>`__
 
-  Analogy: ``close()`` and ``unlink()``,
+`man -s 3 sem_unlink
+<http://man7.org/linux/man-pages/man3/sem_unlink.3.html>`__
 
 Semaphores are Files
 --------------------
-
-* Implemented as file mappings
-* ``sem_t`` encapsulates open file descriptor and ``void*`` (the
-  mapped memory)
-* ``/dev/shm`` is a ``tmpfs`` instance
 
 .. code-block:: shell
 
    $ ls -l /dev/shm/
    total 1604
    -rw------- ... sem.my-semaphore
+
+* ``/dev/shm`` is a ``tmpfs`` instance
+* ``sem.my-semaphore`` is a *regulare file* in it
+
+  * Contains a flat structure, the semaphore
+
+* ``sem_t`` encapsulates open file descriptor and ``void*`` (the
+  mapped memory)
 
 
 .. Shared Memory
@@ -250,27 +270,33 @@ Semaphores are Files
 Shared Memory (1)
 -----------------
 
+.. code-block:: c
+
+   int shm_open(const char *name, int oflag, mode_t mode);
+   int shm_unlink(const char *name);
+
 **POSIX shared memory** is almost non-existing ...
 
 * Small wrapper around existing system calls
-* `` shm_open()``. Does not even pretend to be something
-  special -> explicitly returns a file descriptor
-* ``shm_close()``
+* ``shm_open()`` only dictates the object name (``/some-name``)
 
-.. sidebar:: Link
+  * Explicitly returns a file descriptor
 
-   `man -s 7 shm_overview
-   <http://man7.org/linux/man-pages/man7/shm_overview.7.html>`__
+* ``shm_close()`` does not exist. Use ``close()``.
+
+`man -s 7 shm_overview
+<http://man7.org/linux/man-pages/man7/shm_overview.7.html>`__
 
 Shared Memory (2)
 -----------------
 
-**Further steps:**
+**Workflow**
 
+* After creating (``shm_open()``), size is zero
 * ``ftruncate()``, to adjust the size
 * ``mmap()``, to create the mapping
 
-The only reason for the ``shm_*`` is the "where" -> ``/dev/shm``
+As simple as it can get!
 
 .. exercise
 .. -------------------------------------------------------------------------------------------

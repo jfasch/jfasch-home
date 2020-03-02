@@ -93,7 +93,7 @@ html_theme_options = {
     'navigation_depth': -1,
 }
 
-html_static_path = []
+html_static_path = ['_static']
 
 # hmmm. somehow this is disregarded by rtd theme.
 html_sidebars = {

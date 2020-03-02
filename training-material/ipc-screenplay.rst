@@ -1,5 +1,5 @@
-POSIX IPC: Live Hacking Screenplay
-==================================
+POSIX IPC (Live Hacking Screenplay)
+===================================
 
 .. contents::
    :local:
