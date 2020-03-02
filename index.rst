@@ -2,24 +2,32 @@ Linux und Open Source
 =====================
 
 .. toctree::
-   :caption: Content
+   :caption: Über mich
    :hidden:
    :maxdepth: -1
    :titlesonly:
-   :glob:
 
-   courses/index
    about/index
+
+.. toctree::
+   :caption: Schulungen
+   :hidden:
+   :maxdepth: -1
+   :titlesonly:
+
+   Allgemeines <courses/overview>
+   courses/linux/index
+   courses/programming-languages/index
+   courses/programming-misc/index
 
 .. toctree::
    :caption: Unterlagen
    :hidden:
    :maxdepth: -1
 
-   training-material/signals-slides
-   training-material/signals-screenplay
-   training-material/ipc-slides
-   training-material/ipc-screenplay
+   training-material/overview
+   training-material/slides/index
+   training-material/live-hacking/index
    training-material/tests/index
 
 .. toctree::
@@ -63,7 +71,7 @@ einiges an Wissen angesammelt. Vieles davon ist nicht mehr relevant
 (was gut ist); den Großteil des Rests habe ich strukturiert und zu
 Schulungsunterlagen verarbeitet.
 
-:doc:`Hier viel mehr darüber </courses/index>`.
+:doc:`Hier viel mehr darüber </courses/overview>`.
 
 Beratung
 --------

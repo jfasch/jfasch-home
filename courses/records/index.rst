@@ -1,5 +1,5 @@
-Bisher Gehaltene
-================
+Bisher Gehaltene Schulungen
+===========================
 
 .. toctree::
    :titlesonly:

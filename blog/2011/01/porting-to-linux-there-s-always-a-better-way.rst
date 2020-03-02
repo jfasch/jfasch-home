@@ -81,6 +81,13 @@ Don't use Unix signals for communication. They have very few in common
 with what's called a *signal* in RTOSs. (In the RTOS world, *signals*
 are often called *messages*.)
 
+.. sidebar:: References
+
+   * :doc:`Slide material: UNIX signals
+     </training-material/slides/signals-slides>`
+   * :doc:`Demo code: UNIX signals
+     </training-material/live-hacking/signals-screenplay>`
+
 In Unix, signals are commonly used to tear down a process (*not* a
 thread), giving it a chance to perform proper cleanup before
 exit. There are other uses of signals as well, such as notification of
@@ -119,6 +126,13 @@ following steps.
 Message Queues aren't Message Queues
 ------------------------------------
 
+.. sidebar:: References
+
+   * :doc:`Slide material: POSIX message queues
+     </training-material/slides/ipc-slides>`
+   * :doc:`Demo code: POSIX message queues
+     </training-material/live-hacking/ipc-screenplay>`
+
 Chances are that the threads (err, processes) of your OS communicate
 via messages queues over which messages (err, signals) are sent. A
 naive Google search ("Linux message queues") will lead you to POSIX
@@ -131,6 +145,13 @@ pthread primitives. You can find a sample such implementation `here
 
 Semaphores and Mutexes
 ----------------------
+
+.. sidebar:: References
+
+   * :doc:`Slide material: POSIX semaphores
+     </training-material/slides/ipc-slides>`
+   * :doc:`Demo code: POSIX semaphores
+     </training-material/live-hacking/ipc-screenplay>`
 
 Many of those OSs out there have semaphores as the one and only
 synchronisation mechanism. Linux has semaphores - System V and POSIX

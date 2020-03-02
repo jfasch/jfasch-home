@@ -7,10 +7,10 @@
    .. csv-table::
 
       Dauer, 2 Tage
-      Slides, :doc:`Signals </training-material/signals-slides>`
-      Slides, :doc:`IPC </training-material/ipc-slides>`
-      Live Hacking, :doc:`Signals </training-material/signals-screenplay>`
-      Live Hacking, :doc:`IPC </training-material/ipc-screenplay>`
+      Slides, :doc:`Signals </training-material/slides/signals-slides>`
+      Slides, :doc:`IPC </training-material/slides/ipc-slides>`
+      Live Hacking, :doc:`Signals </training-material/live-hacking/signals-screenplay>`
+      Live Hacking, :doc:`IPC </training-material/live-hacking/ipc-screenplay>`
 
 
 Will man in Tiefen des Systems steigen, die dem Alltagsprogrammierer
