@@ -3,6 +3,8 @@
 
 .. sidebar:: Material
 
+   * :doc:`Schulungsbeschreibung
+     </courses/linux/070-sysprog-fortgeschrittenes>`
    * :doc:`Signals: Slides </training-material/slides/signals-slides>`
    * :doc:`Signals: Drehbuch mit Code
      </training-material/live-hacking/signals-screenplay>`
