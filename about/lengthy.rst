@@ -6,9 +6,6 @@ macht. Dieses Privileg ist mir sehr viel wert, und ich möchte es um
 jeden Preis erhalten. Auf dieser Seite möchte ich Ihnen meinen
 Werdegang unter diesem speziellen Gesichtspunkt schildern.
 
-Falls Sie an einem schnelleren Überblick interessiert sind, folgen Sie
-bitte folgenden Links:
-
 Programmieren, Linux, und ich
 -----------------------------
 
