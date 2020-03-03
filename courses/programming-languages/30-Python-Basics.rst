@@ -8,6 +8,17 @@ Python Grundlagen
       Dauer, 2 Tage
       PDF Slides, :download:`Python </training-material/slides/pdf/300-python.pdf>`
 
+   **Termine**
+
+   * 18.5.2020 - 20.5.2020, Graz, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
+   * 28.9.2020 - 30.9.2020, Wien, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
+   * 23.11.2020 - 25.11.2020, Graz, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
+   * 22.2.2021 - 24.2.2021, Wien, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
+
 Python ist einfach zu erlernen und bietet mit seiner Standardlibrary
 einen üppig ausgestatteten Werkzeugkasten - man kann in null komma
 nichts mächtige Programme schreiben. Verglichen mit anderen Sprachen
@@ -15,10 +26,7 @@ stösst man erst sehr spät an eine Grenze, die es überall gibt:
 **Wartbarkeit**.
 
 Der Kurs vermittelt den grundlegenden Sprachinhalt von Python und
-beinhaltet alles, was für einen leichten Einstieg notwendig
-ist. Python 2 und Python 3 werden gleichermassen behandelt, wenngleich
-der Tenor eher auf Python 3 liegt und die Unterschiede und die
-Beweggründe für die Inkompatibilität erklärt werden.
+beinhaltet alles, was für einen leichten Einstieg notwendig ist.
 
 Zielpublikum
 ------------

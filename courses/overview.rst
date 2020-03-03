@@ -11,6 +11,17 @@ genügend Erfahrung besitze. Zum Beispiel möchte ich gerne eines Tages
 eine Schulung über `Git <http://git-scm.com/>`__ anbieten - bis dahin
 ist es allerdings noch ein langer Weg. Ich lerne noch.
 
+Termine, Buchung
+----------------
+
+Offene Schulungen [#offene_schulung]_ werden durch Partner angeboten;
+Sie finden eine Liste an geplanten Terminen bei der jeweiligen
+Schulungsbeschreibung.
+
+Inhouseschulungen [#inhouse_schulung]_ werden in Absprache mit der/dem
+Buchenden terminisiert - genauso wie ihr Inhalt zustandekommt. Ich bin
+hier zeitlich und örtlich so flexibel wie es der Kalender zulässt.
+
 Unterlagen
 ----------
 
@@ -53,3 +64,11 @@ gehaltenen Schulungen, inklusive Anmerkungen.
    :maxdepth: 2
 
    records/index
+
+.. rubric:: Fußnoten
+
+.. [#offene_schulung] Zu einer "offenen Schulung" kann sich jeder
+                      anmelden - sie ist öffentlich.
+.. [#inhouse_schulung] "Inhouseschulung" ist eine Schulung, die
+                       exklusiv für eine Firma gehalten wird -
+                       üblicherweise am Firmenstandort.

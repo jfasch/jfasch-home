@@ -5,6 +5,7 @@
 
    * :doc:`Schulungsbeschreibung
      </courses/linux/070-sysprog-fortgeschrittenes>`
+   * :download:`PDF </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
    * :doc:`Signals: Slides </training-material/slides/signals-slides>`
    * :doc:`Signals: Drehbuch mit Code
      </training-material/live-hacking/signals-screenplay>`

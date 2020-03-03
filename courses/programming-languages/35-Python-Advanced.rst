@@ -7,6 +7,19 @@ Python für Fortgeschrittene
 
       Dauer, 2 Tage
 
+   **Termine**
+
+   * 25.3.2020 - 27.3.2020, Wien, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
+   * 17.6.2020 - 19.6.2020, Graz, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
+   * 27.10.2020 - 29.10.2020, Wien, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
+   * 16.12.2020 - 18.12.2020, Graz, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
+   * 22.3.2021 - 24.3.2021, Wien, `tecTrain
+     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
+
 Über den grundlegenden Sprachumfang (siehe Schulung :doc:`Python
 Grundlagen <30-Python-Basics>`) hinaus bietet Python eine Reihe von
 Möglichkeiten, die dem Programmier das Handwerk erleichtern - seien es
