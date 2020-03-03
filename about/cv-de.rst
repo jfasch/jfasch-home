@@ -38,3 +38,11 @@ Curriculum Vitae
   * Systemnahe Programmierung unter Linux in C/C++.
 
 * Seit April 2010 selbstständig.
+* 2018/19 bei AVL in Graz in einem Teilzeitdienstverhältnis (quasi um
+  zu erkennen, dass ich in der Tat selbstständig bin).
+
+  * Linuxexperte
+  * Architekt
+  * Build Management
+  * Schittstelle zum Management
+  * Weiser Alter Mann
