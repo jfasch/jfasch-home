@@ -5,6 +5,7 @@ Python für Fortgeschrittene
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
 
    **Termine**

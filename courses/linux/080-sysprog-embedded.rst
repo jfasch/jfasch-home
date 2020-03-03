@@ -5,6 +5,7 @@ Systemprogrammierung: Embedded/Hardware
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 5 Tage
 
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher

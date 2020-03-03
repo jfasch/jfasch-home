@@ -5,6 +5,7 @@ C++: Eine Einführung
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 5 Tage
       PDF Slides, :download:`C++03 </training-material/slides/pdf/055-c++03.pdf>`
       PDF Slides, :download:`C++11 </training-material/slides/pdf/056-c++11.pdf>`

@@ -5,6 +5,7 @@ Python Grundlagen
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
       PDF Slides, :download:`Python </training-material/slides/pdf/300-python.pdf>`
 

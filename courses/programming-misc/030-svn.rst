@@ -5,7 +5,8 @@ Subversion: Eine Einführung
 
    .. csv-table::
 
-      Dauer, 1 Tage
+      Anfrage, training@faschingbauer.co.at
+      Dauer, 1 Tag
 
 Versionskontrolle ist bei größeren (ich behaupte: bei allen) Projekten
 unumgänglich notwendig. Releasemanagement und parallele Entwicklung

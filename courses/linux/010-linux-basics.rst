@@ -5,6 +5,7 @@ Linux Basics: Eine Einführung Anhand von Beispielen
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 3 Tage
 
 Dieser Kurs liefert einen grundlegenden Einblick in die Shell, mit

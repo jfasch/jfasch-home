@@ -5,6 +5,7 @@ C für Fortgeschrittene
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 3 Tage
       PDF Slides, :download:`C </training-material/slides/pdf/050-c.pdf>`
 

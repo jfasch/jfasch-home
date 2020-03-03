@@ -6,6 +6,7 @@
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
       PDF Slides, :download:`sysprog </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
       S5 Slides, :doc:`Signals </training-material/slides/signals-slides>`

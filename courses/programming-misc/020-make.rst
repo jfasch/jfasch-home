@@ -5,6 +5,7 @@ GNU-Make: Eine Einführung
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 1 Tage
       PDF Slides, :download:`GNU Make </training-material/slides/pdf/040-gnu-make.pdf>`
 

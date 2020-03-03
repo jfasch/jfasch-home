@@ -5,6 +5,7 @@ Eine Woche mit dem Raspberry Pi
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 5 Tage
 
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher

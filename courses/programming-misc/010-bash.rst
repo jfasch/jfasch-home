@@ -5,6 +5,7 @@ Shell Scripting mit der Bourne Again Shell (Bash)
 
    .. csv-table::
 
+      Anfrage, training@faschingbauer.co.at
       Dauer, 3 Tage
       PDF Slides, :download:`Bash </training-material/slides/pdf/100-shell-scripting.pdf>`
 
