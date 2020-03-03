@@ -5,7 +5,10 @@
 Adding a Custom Domain to a Github Pages Project Site
 =====================================================
 
-In the `previous post </blog/2020/03/sphinx-gh-pages>`__ I pushed
+.. in ablog, apparently, <sphinx-gh-pages> is not a document
+   name. have to reference absolutely.
+
+In the :doc:`previous post </blog/2020/03/sphinx-gh-pages>` I pushed
 generated static site content to `Github Pages
 <https://pages.github.com/>`__, to be served as
 `https://jfasch.github.io/jfasch-home-pages/
