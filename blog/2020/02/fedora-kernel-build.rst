@@ -1,9 +1,6 @@
 .. post:: 2020-02-27
    :category: kernel
-   :author: Jörg Faschingbauer
-   :location: Hart bei Graz, Austria
    :language: en
-
 
 Patching and Building the Fedora Kernel
 =======================================
