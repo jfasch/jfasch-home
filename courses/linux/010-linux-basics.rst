@@ -31,12 +31,14 @@ Kursinhalt
 ----------
 
 * Commandline Basics
+
   * Zeilen editieren
   * Die Bedeutung des TAB Key
   * Variablen
   * History (blättern, suchen, Shortcuts)
 
 * Filesystem
+
   * Pfade und Verzeichnisse
   * Typen von Files (incl. Symlinks, Device Special Files, ...)
   * Current Working Directory
@@ -44,20 +46,24 @@ Kursinhalt
   * Permissions
 
 * Textdateien
+
   * cat, less, diff, grep
 
 * Pipes etc.
+
   * Standard-Filedeskriptoren: stdin, stdout, stderr
   * IO-Redirection (Demo: Serielle Schnittstelle - immer lustig)
   * Pipes
   * Named Pipes
 
 * Werkzeuge, Kombinationen mittels Pipes
+
   * gzip, tar, in Kombination mit z.B. find
   * ssh
   * Shell-Scripts
 
 * Prozesse
+
   * Grundlagen (incl. Abschweifen Richtung Virtual Memory)
   * Shell Konstrukte
   * System Calls
