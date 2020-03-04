@@ -53,10 +53,10 @@ if True:
 
     # a side effect of setting blog_baseurl is that atom.axml feeds
     # are generated altogether
-    blog_baseurl = 'https://faschingbauer.me'
+    blog_baseurl = 'https://www.faschingbauer.me'
 
     blog_authors = {
-        'jfasch': ('Jörg Faschingbauer', 'https://faschingbauer.me'),
+        'jfasch': ('Jörg Faschingbauer', 'https://www.faschingbauer.me'),
     }
     blog_default_author = 'jfasch'
     

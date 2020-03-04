@@ -30,6 +30,7 @@ Browse through `RTD user list
 * `Corda <https://docs.corda.net/>`__: howto add links to html
   sidebar. `github
   <https://github.com/corda/corda/tree/release/os/4.5/docs>`__.
+* figure directive has a ``figclass`` attribute. hmm.
 
 Github Pages
 ------------
@@ -104,17 +105,3 @@ Skills
   * sphinx, for documentation -> consulting, soft skills
   * picture of myself wearing "css sucks" t-shirt
 
-Blog
-----
-
-* go over posts, and use sidebars a lot.
-* Scheduling: the porting trap (plus link to it in
-  :doc:`/blog/2011/01/porting-to-linux-there-s-always-a-better-way`,
-  "Processes are Threads")
-* Timers in Linux hehe!!
-
-Document Sphinx Usage
----------------------
-
-* really cool: ``make linkcheck``. goes out and sees if anybody's at
-  home.
