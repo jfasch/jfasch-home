@@ -18,3 +18,6 @@ verstehen.
    
    [0-9]*
 
+.. todo::
+
+   * kernel programming

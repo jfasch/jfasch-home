@@ -1,8 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 from scipy.io import loadmat
-from sklearn.cluster import KMeans
-
 import sys
 
 
@@ -12,4 +10,6 @@ print(type(mat['imnData']))
 print(mat['imnData'])
 print(mat['imnData'].dtype)
 
+# obviously "imnData" is what we want
 data = mat['imnData']
+# ...

@@ -7,19 +7,19 @@ from sklearn.cluster import KMeans
 import sys
 
 
-img = PIL.Image.open(sys.argv[1])
+img = PIL.Image.open('veggie.png')
 
 imgarray = numpy.array(img)
 nrows, ncols, nrgba = imgarray.shape
-
-print('image is {}x{}, RGBA'.format(nrows, ncols))
 
 # disregard alpha plane for clustering
 alpha = imgarray[:,:,3:]
 rgb = imgarray[:,:,0:3]
 
-# change view to a linear sequence of (r,g,b) points
+# change view to a linear sequence of (r,g,b) points. (K-Means cannot
+# take arbitrarily dimensioned spaces, he likes it linear.)
 linear_rgb = rgb.reshape((nrows*ncols, 3))
+
 km = KMeans(n_clusters=8)
 km.fit(linear_rgb)
 
@@ -31,4 +31,4 @@ for idx, label in enumerate(km.labels_):
 imgarray = numpy.concatenate((rgb, alpha), axis=2)
 
 reduced_img = PIL.Image.fromarray(imgarray, 'RGBA')
-reduced_img.show()
+reduced_img.save('veggie-reduced.png')

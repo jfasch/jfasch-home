@@ -34,3 +34,6 @@ def load_dat(filename):
         matrix[row_no,0:len(row)] = row
 
     return matrix
+
+if __name__ == '__main__':
+    print(load_dat(sys.argv[1]))
