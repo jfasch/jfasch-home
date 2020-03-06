@@ -7,13 +7,16 @@ POSIX IPC (Live Hacking Screenplay)
 Virtual Memory, ``mmap()``
 --------------------------
 
-Basic ``mmap()`` demo. Read ``/etc/passwd`` by creating a *mapping*
-and only using memory access.
+* First, read ``/etc/passwd`` using regular file IO
+* Discuss copy from/to kernel space
+* Basic ``mmap()`` demo: read ``/etc/passwd`` by creating a *mapping*
+  and only using memory access.
 
 .. literalinclude:: shm-code/010-mmap.cc
    :language: c++
 
 * Give explanation of mappings
+* Discuss copy -> whiteboard sketch
 * Show ``/proc/<pid>/maps``
 * ``strace`` to see how address space is prepared
 * File mappings vs. anonymous

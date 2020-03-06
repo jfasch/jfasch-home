@@ -8,6 +8,7 @@ In the Works
 ............
 
 .. toctree::
+   :maxdepth: 1
 
    github-pages-custom-domains-ssl-bad-certificate
 

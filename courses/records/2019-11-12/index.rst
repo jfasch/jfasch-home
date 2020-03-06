@@ -5,7 +5,7 @@
 
    * :doc:`Schulungsbeschreibung
      </courses/programming-languages/30-Python-Basics>`
-   * :download:`PDF </training-material/slides/pdf/300-python.pdf>`
+   * :download:`PDF </training-material/pdf/300-python.pdf>`
 
 Standardthemen
 --------------

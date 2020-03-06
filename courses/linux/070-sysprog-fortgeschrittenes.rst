@@ -8,11 +8,11 @@
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
-      S5 Slides, :doc:`Signals </training-material/slides/signals-slides>`
-      S5 Slides, :doc:`IPC </training-material/slides/ipc-slides>`
-      Live Hacking, :doc:`Signals </training-material/live-hacking/signals-screenplay>`
-      Live Hacking, :doc:`IPC </training-material/live-hacking/ipc-screenplay>`
+      PDF Slides, :download:`sysprog </training-material/pdf/020-linux-sysprog--en.pdf>`
+      S5 Slides, :doc:`Signals </training-material/sysprog/signals-slides>`
+      S5 Slides, :doc:`IPC </training-material/sysprog/ipc-slides>`
+      Live Hacking, :doc:`Signals </training-material/sysprog/signals-screenplay>`
+      Live Hacking, :doc:`IPC </training-material/sysprog/ipc-screenplay>`
 
 
 Will man in Tiefen des Systems steigen, die dem Alltagsprogrammierer

@@ -11,6 +11,8 @@ Live Hacking: Python
 
     * add notebooks
 
+  * Unify "Unterlagen" und "Schulungen"
+
 * Screenplay
 
   make /courses/records/2019-11-12/index into screenplay series
@@ -20,9 +22,6 @@ Live Hacking: Python
   * Generatoren
   * Closures (genaugenommen gibts die anderswo auch)
   * Dekoratoren (detto)
-  
-* Restructure :doc:`/training-material/live-hacking/index` first
+  * find out how to make link to source code
 
-  * move signals and ipc into "sysprog" subdir.
-  * create python subdir, and in it two or more screenplays for the
-    above topics.
+    * apply that to sysprog screenplays

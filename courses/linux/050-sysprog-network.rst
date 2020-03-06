@@ -7,7 +7,7 @@ Systemprogrammierung: Netzwerk
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
+      PDF Slides, :download:`sysprog </training-material/pdf/020-linux-sysprog--en.pdf>`
 
 Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
 in das Grundprinzip "Everything is a File" ein. Das Socket-Interface

@@ -1,5 +1,13 @@
-Überblick
-=========
+Download
+========
+
+.. toctree::
+   :maxdepth: 1
+
+   sysprog/signals-screenplay
+   sysprog/signals-slides
+   sysprog/ipc-screenplay
+   sysprog/ipc-slides
 
 .. list-table::
 
@@ -12,23 +20,23 @@
      -
      -
    * - :doc:`/courses/linux/020-sysprog-basics`
-     - :download:`sysprog <slides/pdf/020-linux-sysprog--en.pdf>`
+     - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
      -
    * - :doc:`/courses/linux/050-sysprog-network`
-     - :download:`sysprog <slides/pdf/020-linux-sysprog--en.pdf>`
+     - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
      -
    * - :doc:`/courses/linux/060-sysprog-multithreading`
-     - :download:`sysprog <slides/pdf/020-linux-sysprog--en.pdf>`
+     - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
      -
    * - :doc:`/courses/linux/070-sysprog-fortgeschrittenes`
-     - :download:`sysprog <slides/pdf/020-linux-sysprog--en.pdf>`
-     - - :doc:`slides/signals-slides`
-       - :doc:`slides/ipc-slides`
-     - - :doc:`live-hacking/signals-screenplay`
-       - :doc:`live-hacking/ipc-screenplay`
+     - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
+     - - :doc:`sysprog/signals-slides`
+       - :doc:`sysprog/ipc-slides`
+     - - :doc:`sysprog/signals-screenplay`
+       - :doc:`sysprog/ipc-screenplay`
    * - :doc:`/courses/linux/080-sysprog-embedded`
      -
      -
@@ -42,24 +50,24 @@
      -
      -
    * - :doc:`/courses/programming-languages/10-C`
-     - :download:`C <slides/pdf/050-c.pdf>`
+     - :download:`C <pdf/050-c.pdf>`
      -
      -
    * - :doc:`/courses/programming-languages/12-C-Refresher`
-     - :download:`C <slides/pdf/050-c.pdf>`
+     - :download:`C <pdf/050-c.pdf>`
      -
      -
    * - :doc:`/courses/programming-languages/15-C-Advanced`
-     - :download:`C <slides/pdf/050-c.pdf>`
+     - :download:`C <pdf/050-c.pdf>`
      -
      -
    * - :doc:`/courses/programming-languages/20-CXX`
-     - - :download:`C++03 <slides/pdf/055-c++03.pdf>`
-       - :download:`C++11 <slides/pdf/056-c++11.pdf>`
+     - - :download:`C++03 <pdf/055-c++03.pdf>`
+       - :download:`C++11 <pdf/056-c++11.pdf>`
      -
      -
    * - :doc:`/courses/programming-languages/30-Python-Basics`
-     - :download:`Python <slides/pdf/300-python.pdf>`
+     - :download:`Python <pdf/300-python.pdf>`
      -
      -
    * - :doc:`/courses/programming-languages/35-Python-Advanced`
@@ -67,11 +75,11 @@
      -
      -
    * - :doc:`/courses/programming-misc/010-bash`
-     - :download:`Bash <slides/pdf/100-shell-scripting.pdf>`
+     - :download:`Bash <pdf/100-shell-scripting.pdf>`
      -
      -
    * - :doc:`/courses/programming-misc/020-make`
-     - :download:`GNU Make <slides/pdf/040-gnu-make.pdf>`
+     - :download:`GNU Make <pdf/040-gnu-make.pdf>`
      -
      -
    * - :doc:`/courses/programming-misc/030-svn`

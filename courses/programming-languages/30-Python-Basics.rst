@@ -7,7 +7,7 @@ Python Grundlagen
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
-      PDF Slides, :download:`Python </training-material/slides/pdf/300-python.pdf>`
+      PDF Slides, :download:`Python </training-material/pdf/300-python.pdf>`
 
    **Termine**
 

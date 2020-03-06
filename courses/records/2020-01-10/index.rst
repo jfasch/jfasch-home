@@ -5,13 +5,13 @@
 
    * :doc:`Schulungsbeschreibung
      </courses/linux/070-sysprog-fortgeschrittenes>`
-   * :download:`PDF </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
-   * :doc:`Signals: Slides </training-material/slides/signals-slides>`
+   * :download:`PDF </training-material/pdf/020-linux-sysprog--en.pdf>`
+   * :doc:`Signals: Slides </training-material/sysprog/signals-slides>`
    * :doc:`Signals: Drehbuch mit Code
-     </training-material/live-hacking/signals-screenplay>`
-   * :doc:`POSIX IPC: Slides </training-material/slides/ipc-slides>`
+     </training-material/sysprog/signals-screenplay>`
+   * :doc:`POSIX IPC: Slides </training-material/sysprog/ipc-slides>`
    * :doc:`POSIX IPC: Drehbuch mit Code
-     </training-material/live-hacking/ipc-screenplay>`
+     </training-material/sysprog/ipc-screenplay>`
 
 Ein-Tages-Workshop, Themen:
 

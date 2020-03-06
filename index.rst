@@ -30,8 +30,6 @@ Linux und Open Source
    :maxdepth: -1
 
    training-material/overview
-   training-material/slides/index
-   training-material/live-hacking/index
    training-material/tests/index
 
 .. toctree::

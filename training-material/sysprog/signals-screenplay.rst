@@ -44,11 +44,10 @@ Signal Handler
 --------------
 
 * ``termination_handler()``: *signal handler*
-* Why does it jump through hoops for simple output on stderr? See `man
-  7 signal-safety
-  <http://man7.org/linux/man-pages/man7/signal-safety.7.html>`__.
+* Start with printf(), promising the worst
 * Installed as handler for ``SIGTERM``
 
+  * Using ``signal()``, knowing that it is bad.
   * Still only ``pause()``, in linear flow, no loop
   * Terminates -> why? Show fallthrough, cout after pause
   * Discuss ``errno``, ``EINTR``, and error handling in general
@@ -63,7 +62,9 @@ Signal Handler
 
 * Fix crap
 
-  * cout in signal handler context
+  * cout in signal handler context. Jump through hoops for simple
+    output on cerr. See `man 7 signal-safety
+    <http://man7.org/linux/man-pages/man7/signal-safety.7.html>`__.
   * ``sig_atomic_t quit``
   * Error handling. Fail when trying to comprehend bloody ``signal()``
     return value. Use ``sigaction`` from here on.
@@ -114,8 +115,21 @@ interrupted.
 
 * ``man open`` says ``EINTR`` on pipe
 * ``man alarm`` says delivered to calling *process*
+* Signal delivery changes significantly when threads are thrown
+  in. Much of the semantics seems to be undefined. See for example
+  `man sigprocmask
+  <http://man7.org/linux/man-pages/man2/sigprocmask.2.html>`__, where
+  they say,
+
+     "sigprocmask() is used to fetch and/or change the signal mask of
+     the calling **thread**."
+
+  but then,
+
+     "The use of sigprocmask() is **unspecified in a multithreaded
+     process**; see pthread_sigmask(3)."
 
 .. danger::
 
-   So WTF?
+   *So WTF?* Stay away!
 

@@ -7,7 +7,7 @@ C: Einführung
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 5 Tage
-      PDF Slides, :download:`C </training-material/slides/pdf/050-c.pdf>`
+      PDF Slides, :download:`C </training-material/pdf/050-c.pdf>`
 
    **Termine**
 
@@ -76,7 +76,7 @@ aufgeteilt - Sprachkern und Standardlibrary.
 
   * *Grundlagen* - ein typische verkettete Liste
   * *Fehlerszenarien*: Absturz und stilles Dahinsiechen
-  * *Debugginghilfen*: `valgrind`
+  * *Debugginghilfen*: ``valgrind``
 
 * **Implizite Typumwandlungen**. Ein Hauptkritikpunkt an C ist die
   sorglose Konvertierung zwischen signed und unsigned Integertypen,
@@ -115,7 +115,7 @@ aufgeteilt - Sprachkern und Standardlibrary.
   * *Sichtbarkeit*, oder die verschiedenen Bedeutungen des Wortes
     ``static``
   * *Toolchain*: Compiler und Linker, Optimierungsmöglichkeiten, ...
-  * *`valgrind`*: Analyse von Memoryfehlern
+  * *valgrind*: Analyse von Memoryfehlern
 
 * **Dynamischer Speicher**. ``malloc()`` und ``free()``, und verwandte
   Funktionen, um explizit Speicher zu verwalten.

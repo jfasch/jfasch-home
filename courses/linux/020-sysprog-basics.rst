@@ -7,7 +7,7 @@ Systemprogrammierung: Einführung
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </training-material/slides/pdf/020-linux-sysprog--en.pdf>`
+      PDF Slides, :download:`sysprog </training-material/pdf/020-linux-sysprog--en.pdf>`
 
 Dieser Einführungskurs richtet sich an Programmierer, die Linux nicht
 so sehr kennen, es aber kennen lernen wollen. Die Zusammenhänge und
