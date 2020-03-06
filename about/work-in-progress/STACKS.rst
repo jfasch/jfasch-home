@@ -18,8 +18,6 @@ Live Hacking: Python
   make /courses/records/2019-11-12/index into screenplay series
   "Python Ingenuities"
 
-  * Iteration
-  * Generatoren
   * Closures (genaugenommen gibts die anderswo auch)
   * Dekoratoren (detto)
   * find out how to make link to source code

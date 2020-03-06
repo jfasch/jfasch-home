@@ -32,12 +32,12 @@ Der Großteil der Unterlagen ist noch in gutem altem Latex geschrieben
 (`Latex Beamer, ein Folienpaket
 <https://en.wikipedia.org/wiki/Beamer_(LaTeX)>`__). Einen Teil dieser
 finden Sie als vorcompilierte PDFs :doc:`hier
-</training-material/overview>`.
+</training-material/index>`.
 
 .. sidebar:: Download
 
    Ein Großteil der Unterlagen ist :doc:`hier
-   </training-material/overview>` als Download verfügbar.
+   </training-material/index>` als Download verfügbar.
 
 Work in Progress: S5 Web Slides
 ...............................
@@ -52,7 +52,7 @@ hier in `Sphinx <https://www.sphinx-doc.org/en/master/>`__ verfasst
 ist, das seinerseits auf reStructuredText aufbaut.
 
 Den Status dieser Konvertierung (inklusive Links zu den Slides) können
-Sie :doc:`hier </training-material/overview>` einsehen.
+Sie :doc:`hier </training-material/index>` einsehen.
 
 Gehaltene Schulungen
 --------------------

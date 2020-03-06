@@ -29,7 +29,7 @@ Linux und Open Source
    :hidden:
    :maxdepth: -1
 
-   training-material/overview
+   training-material/index
    training-material/tests/index
 
 .. toctree::
