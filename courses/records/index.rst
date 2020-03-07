@@ -6,10 +6,10 @@ Bisher Gehaltene Schulungen
    statement.
 
 .. toctree::
-   :hidden:
    :titlesonly:
    :maxdepth: 1
 
+   2020-03-30/index
    2020-01-10/index
    2019-11-12/index
 

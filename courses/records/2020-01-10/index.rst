@@ -1,5 +1,5 @@
-10.1.2020 Graz: IPC in Linux
-============================
+IPC in Linux (10.1.2020 in Graz) 
+================================
 
 .. sidebar:: Material
 
