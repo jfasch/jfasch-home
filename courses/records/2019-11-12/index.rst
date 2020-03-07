@@ -1,6 +1,13 @@
 12.11.2019 Graz: Python
 =======================
 
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   code/BigPlan.ipynb
+   code/LiveHacking.ipynb
+
 .. contents::
    :local:
 
@@ -23,14 +30,18 @@ gibts jetzt als :doc:`Live-Hacking-Screenplay
 Das Hauptthema: Numerik, NumPy
 ------------------------------
 
+Siehe dazu auch :doc:`ein Jupyter Notebook "BigPlan"
+<code/BigPlan>`.
+
 Der Chef hat mir bei einem Vorgespräch ein Übungsbeispiel für die
 Teilnehmer mitgegeben: ausgehend von einem Spektralbild (sagt man
 so?), verwende den `K-Means Clusteringalgorithmus
 <https://en.wikipedia.org/wiki/K-means_clustering>`__, um die Bereiche
 auf dem Bild zu kategorisieren (die abgebildeten Stücke zu erkennen).
 
-Ich hab mir erlaubt, so quasi als Appetizer das Problem etwas zu
-reduzieren: Farbreduktion eines Bildes (auf 8 Farben). Das Programm
+Ich hab mir erlaubt, für die Kursvorbereitung
+[#ich_nix_bildverarbeitung]_ so quasi als Appetizer das Problem etwas
+zu reduzieren: Farbreduktion eines Bildes (auf 8 Farben). Das Programm
 (siehe unten) verwendet
 
 * `Pillow <https://pillow.readthedocs.io/en/3.1.x/index.html>`__, um
@@ -91,3 +102,7 @@ zufrieden waren, sieht so aus,
    :language: python
    :caption: :download:`code/franziska/dat.py`
 
+.. rubric:: Footnotes
+
+.. [#ich_nix_bildverarbeitung] Ich hatte von Bildverarbeitung keine
+                               Ahnung

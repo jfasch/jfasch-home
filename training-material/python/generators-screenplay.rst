@@ -41,8 +41,8 @@ Fibonacci Numbers: Function Producing Infinite Sequence
    :caption: :download:`generators-code/40-fibo-generator.py`
    :language: python
 
-Common Pattern: Turn List into ``yield``
-----------------------------------------
+Common Pattern: Turn List into Generated Items
+----------------------------------------------
 
 * correct infinity can save a few lines
 

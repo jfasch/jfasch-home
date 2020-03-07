@@ -39,6 +39,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx_rtd_theme',
     'ablog',
+    'nbsphinx',
 ]
 todo_include_todos = True
 
@@ -77,7 +78,10 @@ templates_path.append('_templates')
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [
+    '_build',
+    '**.ipynb_checkpoints',
+]
 
 # context that jinja (and rst, via the rstjinja extension) sees.
 html_context = {
