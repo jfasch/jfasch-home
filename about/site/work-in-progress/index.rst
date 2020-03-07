@@ -2,9 +2,10 @@ Work in Progress
 ================
 
 .. toctree::
+   :maxdepth: 1
 
+   stacks.rst
    s5.rst
-   STACKS.rst
-   TODO.rst
    blog-queue/index
+   todo-misc.rst
    

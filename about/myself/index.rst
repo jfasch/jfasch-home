@@ -1,10 +1,22 @@
-Etwas länger
-============
+Über Mich
+=========
 
 Ich bin in der glücklichen Lage, dass mir mein Beruf Spaß
 macht. Dieses Privileg ist mir sehr viel wert, und ich möchte es um
 jeden Preis erhalten. Auf dieser Seite möchte ich Ihnen meinen
 Werdegang unter diesem speziellen Gesichtspunkt schildern.
+
+Der Werdegang ist aber nur mäßig interessant; folgen Sie bitte einem
+der folgenden Links, um zu einem zielgerichteteren Überblick zu
+gelangen:
+
+.. toctree::
+   :maxdepth: 1
+
+   cv-de
+   skills-de
+   projects-de
+   contact
 
 Programmieren, Linux, und ich
 -----------------------------
@@ -125,7 +137,3 @@ verarbeitet, die ich zusätzlich zur Softwareentwicklung anbiete.
 Und das ist nicht das Ende. Der Softwaremarkt ändert sich rasant, und
 wenn ich beobachte, welche Rolle Linux dabei spielt, dann kann ich mir
 ausrechnen, dass es mit dem Lernen noch lange nicht vorbei ist.
-
-.. toctree::
-
-   work-in-progress/index

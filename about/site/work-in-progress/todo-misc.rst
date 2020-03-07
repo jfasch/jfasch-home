@@ -2,8 +2,8 @@
    :local:
    :depth: 1
 
-To Do
-=====
+Miscellaneous To Do
+===================
 
 Extensions
 ----------
@@ -91,7 +91,7 @@ References, Past Trainings
 About
 -----
 
-* missing link to confix in :doc:`/about/projects-de` ("jjj")
+* missing link to confix in :doc:`/about/myself/projects-de` ("jjj")
 * add public ssh key
 
 Skills

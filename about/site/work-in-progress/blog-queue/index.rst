@@ -1,5 +1,5 @@
-Blog Work
-=========
+Blog
+====
 
 Articles
 --------

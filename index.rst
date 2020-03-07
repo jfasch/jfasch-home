@@ -2,16 +2,13 @@ Linux und Open Source
 =====================
 
 .. toctree::
-   :caption: Über mich
+   :caption: About
    :hidden:
    :maxdepth: -1
    :titlesonly:
 
-   about/cv-de
-   about/skills-de
-   about/projects-de
-   about/lengthy
-   about/contact
+   about/myself/index
+   about/site/index
 
 .. toctree::
    :caption: Schulungen
