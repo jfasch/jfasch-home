@@ -17,10 +17,11 @@ Linux und Open Source
    :titlesonly:
 
    Allgemeines <courses/index>
+   courses/records/index
+   courses/material/index
    courses/linux/index
    courses/programming-languages/index
    courses/programming-misc/index
-   courses/material/index
 
 .. toctree::
    :caption: Blog

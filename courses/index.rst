@@ -52,11 +52,6 @@ Gehaltene Schulungen
 :doc:`Hier <records/index>` finden Sie ein Liste von bereits
 gehaltenen Schulungen, inklusive Anmerkungen und Kursmaterial.
 
-.. toctree::
-   :maxdepth: 2
-
-   records/index
-
 .. rubric:: Fußnoten
 
 .. [#offene_schulung] Zu einer "offenen Schulung" kann sich jeder

@@ -1,5 +1,5 @@
-Bisher Gehaltene Schulungen
-===========================
+Bisher Gehaltene
+================
 
 .. new records have to be added here (sphinx don't like orphans). take
    care to explicitly reference them below, together with a funky
@@ -14,34 +14,11 @@ Bisher Gehaltene Schulungen
    2019-11-12/index
 
 
-.. copied from jf-linux-trainings; preserved for translation (way in
-   the future though)
-
-.. Each training is different:
-.. 
-.. * *The exercises* that I have in the PDF slides are mostly solved in
-..   similar ways in each of the trainings, with only minor variations.
-.. * *The questions* show that humans are different. To answer those, I
-..   frequently hack something together in a short program. If the answer
-..   fits in a `Jupyter Notebook <https://jupyter.org/>`__, I write the
-..   code there and make inline notes.
-.. * *The group projects* are launched when all is said and hacking is
-..   desired. This is often the case when the audience is homogeneous
-..   (e.g. all from the same company where they work together), and the
-..   topic is drawn from their own problem domains.
-.. * Even if all else is the same, *my mood* has enough entropy to create
-..   variations.
-.. 
-.. The content of this directory makes all this available to the audience
-.. after the training, and gives the not-yet-audience a feeling what they
-.. are maybe up to.
-
-
 Jeder Kurs ist anders ...
 
 * Die *Übungen* in den Kursen (aus den :doc:`PDFs
-  </courses/material/index>`) werden meist auf ähnliche Weise
-  gelöst, mit nur geringer Varianz.
+  </courses/material/index>`) werden meist auf ähnliche Weise gelöst,
+  mit nur geringer Varianz.
 * Die *Fragen* allerdings zeigen, wie unterschiedlich Menschen
   sind. Um diese Fragen zu beantworten, hacke ich meistens schnell
   etwas daher, in einem kleinen Programm. Wenn die Antwort
@@ -61,12 +38,14 @@ Jeder Kurs ist anders ...
 Der Rest dieses Textes ist gewissermaßen als Logbuch zu verstehen, das
 ich verwende, um den Kursteilnehmer das zustandegekommene Material
 zukommen zu lassen. Und die potentiellen zukünftigen Kursteilnehmer
-können einen Eindruck bekommen, was auf sie zukommt.
+können einen Eindruck bekommen, was auf sie zukommt. (Das Publizieren
+des Materials geschieht natürlich nur mit dem Einverständnis des
+Kunden.)
 
 10.1.2020 IPC in Linux; bei einer namhaften Firma in Graz
 ---------------------------------------------------------
 
-(:doc:`Material <2020-01-10/index>`)
+(:doc:`Mehr ... <2020-01-10/index>`)
 
 Ein Eintagesworkshop (Signale, Shared Memory, Semaphore), mit Leuten,
 die ich persönlich gut kenne. Konzipiert als Livehacking-Demo und
@@ -76,7 +55,7 @@ Gott und die Welt.
 12.11.2019 Python/NumPy; `EVK <https://www.evk.biz/de/>`__ in Graz
 ------------------------------------------------------------------
 
-(:doc:`Material <2019-11-12/index>`)
+(:doc:`Mehr ... <2019-11-12/index>`)
 
 *Das* war cool! Die Firma `EVK <https://www.evk.biz/de/>`__ hat über
 `tecTrain (Graz)
