@@ -6,6 +6,7 @@ Bisher Gehaltene
    statement.
 
 .. toctree::
+   :hidden:
    :titlesonly:
    :maxdepth: 1
 
@@ -80,7 +81,171 @@ auch, die Jungs habens nämlich richtig drauf.
 
 Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
 
-.. todo::
+14.10.2013 bis 15.10.2013 bei einer Firma im Raum München
+---------------------------------------------------------
 
-   `Altes Zeug hier rein
-   <http://www.faschingbauer.co.at/de/courses/log/>`__
+* :doc:`../linux/010-linux-basics`
+* Verschiedene hardwarenahe Embedded-Themen
+
+7.10.2013 bis 9.10.2013 bei einer Firma in Oberösterreich
+---------------------------------------------------------
+
+* :doc:`../programming-misc/010-bash`
+* Einige ausgewählte Themen aus dem Embedded-Bereich
+ 
+1.10.2013 bis 4.10.2013 bei einer Firma in Zürich
+-------------------------------------------------
+
+* :doc:`../linux/010-linux-basics`
+* Ausgewähte Themen
+
+  * Software Build
+  * Debugging: GDB, ``strace``, ``valgrind``
+  * :doc:`../linux/060-sysprog-multithreading`
+  * Realtime
+  * Kernelstruktur, Driver, Boot
+  * Package Management unter Debian/Ubuntu
+
+16.9.2013 bis 20.9.2013 bei der Firma `Mathias Kettner <http://mathias-kettner.de>`__ in München
+------------------------------------------------------------------------------------------------
+
+* :doc:`../linux/700-kettner-lfs-descr`
+
+2.7.2013 bis 4.7.2013 bei einer Firma in Oberösterreich
+-------------------------------------------------------
+
+* :doc:`../linux/010-linux-basics`
+
+27.5.2013 bis 29.5.2013 bei einer Firma im Raum München
+-------------------------------------------------------
+
+Ausgewählte Themen aus
+
+* :doc:`../linux/010-linux-basics`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+* :doc:`../linux/080-sysprog-embedded`
+
+23.4.2013 für die Firma `tecTrain <http://www.tectrain.at/>`__ in Graz
+----------------------------------------------------------------------
+
+* :doc:`../programming-misc/020-make`
+
+14.1.2013 bis 18.1.2013 bei einer Firma in Oberösterreich
+---------------------------------------------------------
+
+Ausgewählte Themen aus
+
+* :doc:`../linux/010-linux-basics`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+* :doc:`../linux/080-sysprog-embedded`
+
+26.11.2012 bis 28.11.2012 bei einer Firma in Hamburg
+----------------------------------------------------
+
+Ausgewählte Themen aus
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+* :doc:`../linux/080-sysprog-embedded`
+* :doc:`Verschiedenes Neues aus C++ (C++11)
+  <../programming-languages/20-CXX>`
+
+19.11.2012 bis 21.11.2012 bei der Polizei Niedersachsen in Hannover
+-------------------------------------------------------------------
+
+(Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
+
+  * `Fehlerdiagnose unter Linux
+    <http://mathias-kettner.de/diagnosebuch.html>`__ (auszugsweise)
+
+29.10.2012 bis 30.10.2012 bei einer Firma im Raum München
+---------------------------------------------------------
+
+Ausgewählte Themen aus
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+* :doc:`../linux/080-sysprog-embedded`
+
+13.2.2012 bis 15.2.2012 bei einer Firma in Zürich
+-------------------------------------------------
+
+Ausgewählte Themen aus
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+* :doc:`../linux/080-sysprog-embedded`
+
+19.9.2011 bis 22.9.2011 bei einer Firma in Oberösterreich
+---------------------------------------------------------
+
+Ausgewählte Themen aus
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+* :doc:`../linux/080-sysprog-embedded`
+
+13.9.2011 bis 15.9.2011 bei einer Firma in Oberösterreich
+---------------------------------------------------------
+
+* :doc:`../linux/010-linux-basics`
+
+4.7.2011 bis 7.7.2011 für die Firma `Bodenseo <http://bodenseo.de/>`__ in Singen (Ort: Hemmenhofen am Bodensee)
+---------------------------------------------------------------------------------------------------------------
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+
+14.2.2011 bis 18.2.2011 für die Firma `Bodenseo <http://bodenseo.de/>`__ in Singen (Ort: Hemmenhofen am Bodensee)
+-----------------------------------------------------------------------------------------------------------------
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+
+12.12.2010 bis 17.12.2010 bei der Firma `Mathias Kettner <http://mathias-kettner.de>`__ in München
+--------------------------------------------------------------------------------------------------
+
+* :doc:`../linux/700-kettner-lfs-descr`
+
+6.12.2010 bis 10.12.2010 bei einer Firma in Darmstadt
+-----------------------------------------------------
+
+(Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
+
+* Software Build
+* Debugging: GDB, ``strace``, ``valgrind``
+* Verschiedenes aus
+
+  * :doc:`../linux/020-sysprog-basics`
+  * :doc:`../linux/050-sysprog-network`
+  * :doc:`../linux/060-sysprog-multithreading`
+  * :doc:`../linux/070-sysprog-fortgeschrittenes`
+
+24.11.2010 bis 26.11.2010 bei einer Firma im Raum Ulm
+-----------------------------------------------------
+
+(Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
+
+* Software Build
+* Debugging: GDB, ``strace``, ``valgrind``
+* :doc:`../linux/060-sysprog-multithreading`
+* Erstellen von Debian Packages
+
+25.10.2010 bis 26.10.2010 bei der Deutschen Bundeswehr in Wildflecken
+---------------------------------------------------------------------
+
+(Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
+
+* Linux Kernel
