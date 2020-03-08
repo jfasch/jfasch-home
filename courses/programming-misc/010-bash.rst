@@ -7,7 +7,7 @@ Shell Scripting mit der Bourne Again Shell (Bash)
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 3 Tage
-      PDF Slides, :download:`Bash </training-material/pdf/100-shell-scripting.pdf>`
+      PDF Slides, :download:`Bash </courses/material/pdf/100-shell-scripting.pdf>`
 
 Die Shell ist nicht nur ein notwendiges Übel, um mit dem System
 sprechen zu können. Sie ist auch eine vollständige Programmiersprache

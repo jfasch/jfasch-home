@@ -1,5 +1,5 @@
-Trainingsunterlagen
-===================
+Unterlagen & Download
+=====================
 
 .. toctree::
    :caption: Sysprog
@@ -11,10 +11,10 @@ Trainingsunterlagen
    sysprog/ipc-slides
    python/generators-screenplay
 
-Overview
---------
+Zu allen Kursen gibt es Unterlagen zum Download; Sie finden bei den
+Kursbeschreibungen direkte Links zu relevantem Material.
 
-Diese Riesentabelle ist ein Versuch, nicht den Überblick zu verlieren.
+
 
 .. list-table::
 

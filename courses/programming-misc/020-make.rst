@@ -7,7 +7,7 @@ GNU-Make: Eine Einführung
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 1 Tage
-      PDF Slides, :download:`GNU Make </training-material/pdf/040-gnu-make.pdf>`
+      PDF Slides, :download:`GNU Make </courses/material/pdf/040-gnu-make.pdf>`
 
 Die Mutter aller Build-Tools unter Linux und Unix ist Make - unter
 Linux in seiner extrem mächtigen Variante "GNU Make" verfügbar. Steht

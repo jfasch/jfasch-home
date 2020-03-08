@@ -1,6 +1,31 @@
 S5 Integration
 ==============
 
+.. toctree::
+
+   tests/index
+
+Work in Progress: S5 Web Slides
+-------------------------------
+
+The conversion of the slides to the `S5 slide format
+<https://meyerweb.com/eric/tools/s5/>`__ is *work in progress*. To put
+it more precisely, I am converting to `reStructuredText
+<https://docutils.sourceforge.io/rst.html>`__, which, in turn, is
+converted to S5 by the `rst2s5
+<https://docutils.sourceforge.io/docs/user/slide-shows.html>`__
+tool.
+
+This makes sense because the entire site is massaged with `Sphinx
+<https://www.sphinx-doc.org/en/master/>`__, which itself builds upon
+reStructuredText.
+
+You can view the state of conversion in the (rather huge) table in
+:doc:`hier </courses/material/index>`.
+
+Implementaion Notes
+-------------------
+
 S5 (via `rst2s5
 <https://docutils.sourceforge.io/docs/user/slide-shows.html>`__) isnot
 as integrated as I want it to be.

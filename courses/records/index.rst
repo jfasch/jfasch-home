@@ -40,7 +40,7 @@ Bisher Gehaltene Schulungen
 Jeder Kurs ist anders ...
 
 * Die *Übungen* in den Kursen (aus den :doc:`PDFs
-  </training-material/index>`) werden meist auf ähnliche Weise
+  </courses/material/index>`) werden meist auf ähnliche Weise
   gelöst, mit nur geringer Varianz.
 * Die *Fragen* allerdings zeigen, wie unterschiedlich Menschen
   sind. Um diese Fragen zu beantworten, hacke ich meistens schnell

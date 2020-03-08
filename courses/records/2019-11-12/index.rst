@@ -15,7 +15,7 @@ Python (12.11.2019 - 14.11.2019 in Graz)
 
    * :doc:`Schulungsbeschreibung
      </courses/programming-languages/30-Python-Basics>`
-   * :download:`PDF </training-material/pdf/300-python.pdf>`
+   * :download:`PDF </courses/material/pdf/300-python.pdf>`
 
 Standardthemen
 --------------
@@ -25,7 +25,7 @@ kanns nicht lassen, bevor die Anfängerthemen vorbei sind, auf dem
 Besten von Python herumzureiten: Iteration und Generatoren. Hier hatte
 ich eine kleine Demo gehackt - zum x-ten mal. Das ganze Fibonacci-Zeug
 gibts jetzt als :doc:`Live-Hacking-Screenplay
-</training-material/python/generators-screenplay>`
+</courses/material/python/generators-screenplay>`
 
 Das Hauptthema: Numerik, NumPy
 ------------------------------

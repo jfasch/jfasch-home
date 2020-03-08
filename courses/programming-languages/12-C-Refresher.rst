@@ -7,7 +7,7 @@ C: Auffrischung
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
-      PDF Slides, :download:`C </training-material/pdf/050-c.pdf>`
+      PDF Slides, :download:`C </courses/material/pdf/050-c.pdf>`
 
 Inhalt
 ------

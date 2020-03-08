@@ -5,7 +5,7 @@ Work in Progress
    :maxdepth: 1
 
    stacks.rst
-   s5.rst
-   blog-queue/index
+   s5/index.rst
+   blog-queue/index.rst
    todo-misc.rst
    

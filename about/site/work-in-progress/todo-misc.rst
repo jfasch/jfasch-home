@@ -12,7 +12,7 @@ Extensions
   dates, this could be solved by having a central database and
   generating the table. use rstjinja for this.
 * **SVG**
-* **S5**. See :doc:`here <s5>`
+* **S5**. See :doc:`here <s5/index>`
 
 reST Todos
 ----------

@@ -9,10 +9,10 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 nahe Heilbronn)
      </courses/programming-languages/15-C-Advanced>`
    * :doc:`C++ (Schulungsbeschreibung)
      </courses/programming-languages/20-CXX>`
-   * :download:`C (PDF) </training-material/pdf/050-c.pdf>`
-   * :download:`C++03 (PDF) </training-material/pdf/055-c++03.pdf>`
-   * :download:`C++11 (PDF) </training-material/pdf/056-c++11.pdf>`
-   * :download:`CMake </training-material/pdf/045-cmake.pdf>`
+   * :download:`C (PDF) </courses/material/pdf/050-c.pdf>`
+   * :download:`C++03 (PDF) </courses/material/pdf/055-c++03.pdf>`
+   * :download:`C++11 (PDF) </courses/material/pdf/056-c++11.pdf>`
+   * :download:`CMake </courses/material/pdf/045-cmake.pdf>`
 
 Plan (sich entwickelnd)
 -----------------------

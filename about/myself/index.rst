@@ -131,7 +131,7 @@ achten. Das war ungefähr Ende 2009, Anfang 2010. Ich bin seit April
 genügend grosses Repertoire <skills-de>` anbieten zu können. Das
 schöne daran ist, dass das Repertoire mit Spaß gewachsen ist, und dass
 seine Erweiterung auch noch Spaß macht. Beispielsweise habe ich einen
-Teil von dem, was ich am besten kann, zu :doc:`Schulungen </courses/overview>`
+Teil von dem, was ich am besten kann, zu :doc:`Schulungen </courses/index>`
 verarbeitet, die ich zusätzlich zur Softwareentwicklung anbiete.
 
 Und das ist nicht das Ende. Der Softwaremarkt ändert sich rasant, und

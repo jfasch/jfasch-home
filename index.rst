@@ -16,23 +16,17 @@ Linux und Open Source
    :maxdepth: -1
    :titlesonly:
 
-   Allgemeines <courses/overview>
+   Allgemeines <courses/index>
    courses/linux/index
    courses/programming-languages/index
    courses/programming-misc/index
-
-.. toctree::
-   :caption: Unterlagen
-   :hidden:
-   :maxdepth: -1
-
-   training-material/index
-   training-material/tests/index
+   courses/material/index
 
 .. toctree::
    :caption: Blog
    :hidden:
    :maxdepth: -1
+   :titlesonly:
 
    blog/index
 
@@ -61,7 +55,7 @@ einiges an Wissen angesammelt. Vieles davon ist nicht mehr relevant
 (was gut ist); den Großteil des Rests habe ich strukturiert und zu
 Schulungsunterlagen verarbeitet.
 
-:doc:`Hier viel mehr darüber </courses/overview>`.
+:doc:`Hier viel mehr darüber </courses/index>`.
 
 Beratung
 --------
