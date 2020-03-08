@@ -47,8 +47,8 @@ Kunden.)
 .. contents::
    :local:
 
-10.1.2020 IPC in Linux; bei einer Firma in Graz
------------------------------------------------
+IPC in Linux (10.1.2020, bei einer Firma in Graz)
+-------------------------------------------------
 
 (:doc:`Mehr ... <2020-01-10/index>`)
 
@@ -57,8 +57,8 @@ die ich persönlich gut kenne. Konzipiert als Livehacking-Demo und
 einhergehender Diskussion über technische Lösungen, Architektur, und
 Gott und die Welt.
 
-12.11.2019 Python/NumPy; `EVK <https://www.evk.biz/de/>`__ in Graz
-------------------------------------------------------------------
+Python/NumPy (12.11.2019, `EVK <https://www.evk.biz/de/>`__ in Graz)
+--------------------------------------------------------------------
 
 (:doc:`Mehr ... <2019-11-12/index>`)
 
@@ -85,58 +85,49 @@ auch, die Jungs habens nämlich richtig drauf.
 
 Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
 
+Python (1.6.2015 - 3.6.2015, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
+----------------------------------------------------------------------------------------
 
-.. ITG
+Einführung in Python (nach Mathias' Unterlagen, Einführungscharakter)
 
+Linux Basics, Kernel, Git (9.3.2015 - 13.3.2015, Siemens Braunschweig)
+----------------------------------------------------------------------
 
+Offene Schulung, "Softwareentwicklung unter Linux". Themen:
 
+* Systemkonzepte (heute :doc:`../linux/010-linux-basics`)
+* Software Build
+* Kernelprogrammierung
+* Git
 
-.. 023-Magneti-Marelli/Rechnungen
-.. 026-Signalis/Rechnungen
-.. 022-Bertrandt/Rechnungen
-.. 007-MEDS/Rechnungen
-.. 001-Consonya/Rechnungen
-.. 015-TecTrain/Rechnungen
-.. 014-Spielo/Rechnungen
-.. 004-KWB/Rechnungen
-.. 018-STIA/Rechnungen
-.. 033-Gorba/Rechnungen
-.. 038-Brottrager/Rechnungen
-.. 020-QualiVision/Rechnungen
-.. 006-Bodenseo/Rechnungen
-.. 016-TQS/Rechnungen
-.. 013-FH-Joanneum/Rechnungen
-.. 037-Gessmann/Rechnungen
-.. 032-AVL/Rechnungen
-.. 017-Dewetron/Rechnungen
-.. 003-Salomon/Rechnungen
-.. 024-Fraunhofer/Rechnungen
-.. 010-Fronius/Rechnungen
-.. 002-YLOG/Rechnungen
-.. 005-Mathias-Kettner/Rechnungen
-.. 030-TKI-Automotive/Rechnungen
-.. 019-RST/Rechnungen
-.. 031-Wedas-Solutions/Rechnungen
-.. 008-Efkon/Rechnungen
-.. 009-BMW-Motoren-GmbH/Rechnungen
-.. 012-TripleS/Rechnungen
+Linux from Scratch (1.12.2014 - 5.12.2014 LPD Hannover)
+-------------------------------------------------------
 
+(Im Auftrag von `Mathias Kettner <http://mathias-kettner.de>`__)
 
+* :doc:`../linux/700-kettner-lfs-descr`
 
-14.10.2013 bis 15.10.2013 bei einer Firma im Raum München
----------------------------------------------------------
+Einführung in Python (23.6.2014 - 26.6.2014, LKA Niedersachsen)
+---------------------------------------------------------------
+
+(Im Auftrag von `Mathias Kettner <http://mathias-kettner.de>`__)
+
+Einführung in Python (nach Mathias' Unterlagen, Einführungscharakter)
+
+Linux Basics, Embedded Linux (14.10.2013 - 15.10.2013 bei einer Firma im Raum München)
+--------------------------------------------------------------------------------------
 
 * :doc:`../linux/010-linux-basics`
 * Verschiedene hardwarenahe Embedded-Themen
 
-7.10.2013 bis 9.10.2013 bei einer Firma in Oberösterreich
----------------------------------------------------------
+Shell Programmierung (7.10.2013 - 9.10.2013, bei einer Firma in Oberösterreich)
+-------------------------------------------------------------------------------
 
 * :doc:`../programming-misc/010-bash`
 * Einige ausgewählte Themen aus dem Embedded-Bereich
  
-1.10.2013 bis 4.10.2013 bei der Firma `QualiVision <http://www.qualivision.ch/>`__ in Zürich
---------------------------------------------------------------------------------------------
+Alles Linux (1.10.2013 - 4.10.2013, `QualiVision <http://www.qualivision.ch/>`__ in Zürich)
+-------------------------------------------------------------------------------------------
 
 (:doc:`Mehr ... <2013-10-01/index>`)
 
@@ -150,18 +141,18 @@ Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
   * Kernelstruktur, Driver, Boot
   * Package Management unter Debian/Ubuntu
 
-16.9.2013 bis 20.9.2013 bei der Firma `Mathias Kettner <http://mathias-kettner.de>`__ in München
-------------------------------------------------------------------------------------------------
+Linux from Scratch (16.9.2013 - 20.9.2013, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
+------------------------------------------------------------------------------------------------------
 
 * :doc:`../linux/700-kettner-lfs-descr`
 
-2.7.2013 bis 4.7.2013 bei einer Firma in Oberösterreich
--------------------------------------------------------
+Linux Basics (2.7.2013 - 4.7.2013, bei einer Firma in Oberösterreich)
+---------------------------------------------------------------------
 
 * :doc:`../linux/010-linux-basics`
 
-27.5.2013 bis 29.5.2013 bei einer Firma im Raum München
--------------------------------------------------------
+Linux Softwareentwicklung (27.5.2013 - 29.5.2013, bei einer Firma im Raum München)
+----------------------------------------------------------------------------------
 
 Ausgewählte Themen aus
 
@@ -169,13 +160,13 @@ Ausgewählte Themen aus
 * :doc:`../linux/070-sysprog-fortgeschrittenes`
 * :doc:`../linux/080-sysprog-embedded`
 
-23.4.2013 für die Firma `tecTrain <http://www.tectrain.at/>`__ in Graz
-----------------------------------------------------------------------
+GNU Make (23.4.2013, für die Firma `tecTrain <http://www.tectrain.at/>`__ in Graz)
+----------------------------------------------------------------------------------
 
 * :doc:`../programming-misc/020-make`
 
-14.1.2013 bis 18.1.2013 bei einer Firma in Oberösterreich
----------------------------------------------------------
+Linux Basics & Embedded (14.1.2013 - 18.1.2013, bei einer Firma in Oberösterreich)
+----------------------------------------------------------------------------------
 
 Ausgewählte Themen aus
 
@@ -183,8 +174,8 @@ Ausgewählte Themen aus
 * :doc:`../linux/070-sysprog-fortgeschrittenes`
 * :doc:`../linux/080-sysprog-embedded`
 
-26.11.2012 bis 28.11.2012 bei einer Firma in Hamburg
-----------------------------------------------------
+Linux Systemnah, Embedded, C++ (26.11.2012 - 28.11.2012, bei einer Firma in Hamburg)
+------------------------------------------------------------------------------------
 
 Ausgewählte Themen aus
 
@@ -196,16 +187,16 @@ Ausgewählte Themen aus
 * :doc:`Verschiedenes Neues aus C++ (C++11)
   <../programming-languages/20-CXX>`
 
-19.11.2012 bis 21.11.2012 bei der Polizei Niedersachsen in Hannover
--------------------------------------------------------------------
+Fehlerdiagnose unter Linux (19.11.2012 - 21.11.2012, Polizei Niedersachsen in Hannover)
+---------------------------------------------------------------------------------------
 
 (Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
 
   * `Fehlerdiagnose unter Linux
     <http://mathias-kettner.de/diagnosebuch.html>`__ (auszugsweise)
 
-29.10.2012 bis 30.10.2012 bei einer Firma im Raum München
----------------------------------------------------------
+Linux Systemnah (29.10.2012 - 30.10.2012, bei einer Firma im Raum München)
+--------------------------------------------------------------------------
 
 Ausgewählte Themen aus
 
@@ -215,8 +206,18 @@ Ausgewählte Themen aus
 * :doc:`../linux/070-sysprog-fortgeschrittenes`
 * :doc:`../linux/080-sysprog-embedded`
 
-13.2.2012 bis 15.2.2012 bei einer Firma in Zürich
--------------------------------------------------
+Einführung in Python (15.10.2012 - 17.10.2012, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
+----------------------------------------------------------------------------------------------------------
+
+Einführung in Python (nach Mathias' Unterlagen, Einführungscharakter)
+
+Einführung in Python (25.9.2012 - 27.9.2012, STIA in Admont)
+------------------------------------------------------------
+
+* :doc:`../programming-languages/30-Python-Basics`
+
+Linux Systemnah (13.2.2012 bis 15.2.2012, bei einer Firma in Zürich)
+--------------------------------------------------------------------
 
 Ausgewählte Themen aus
 
@@ -226,8 +227,13 @@ Ausgewählte Themen aus
 * :doc:`../linux/070-sysprog-fortgeschrittenes`
 * :doc:`../linux/080-sysprog-embedded`
 
-19.9.2011 bis 22.9.2011 bei einer Firma in Oberösterreich
----------------------------------------------------------
+Einführung in Python (24.1.2012 - 26.1.2012, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
+--------------------------------------------------------------------------------------------------------
+
+Einführung in Python (nach Mathias' Unterlagen, Einführungscharakter)
+
+Linux Systemnah (19.9.2011 - 22.9.2011, bei einer Firma in Oberösterreich)
+--------------------------------------------------------------------------
 
 Ausgewählte Themen aus
 
@@ -237,34 +243,40 @@ Ausgewählte Themen aus
 * :doc:`../linux/070-sysprog-fortgeschrittenes`
 * :doc:`../linux/080-sysprog-embedded`
 
-13.9.2011 bis 15.9.2011 bei einer Firma in Oberösterreich
----------------------------------------------------------
+Linux Basics (13.9.2011 - 15.9.2011, bei einer Firma in Oberösterreich)
+-----------------------------------------------------------------------
 
 * :doc:`../linux/010-linux-basics`
 
-4.7.2011 bis 7.7.2011 für die Firma `Bodenseo <http://bodenseo.de/>`__ in Singen (Ort: Hemmenhofen am Bodensee)
----------------------------------------------------------------------------------------------------------------
-
-* :doc:`../linux/020-sysprog-basics`
-* :doc:`../linux/050-sysprog-network`
-* :doc:`../linux/060-sysprog-multithreading`
-* :doc:`../linux/070-sysprog-fortgeschrittenes`
-
-14.2.2011 bis 18.2.2011 für die Firma `Bodenseo <http://bodenseo.de/>`__ in Singen (Ort: Hemmenhofen am Bodensee)
------------------------------------------------------------------------------------------------------------------
-
-* :doc:`../linux/020-sysprog-basics`
-* :doc:`../linux/050-sysprog-network`
-* :doc:`../linux/060-sysprog-multithreading`
-* :doc:`../linux/070-sysprog-fortgeschrittenes`
-
-12.12.2010 bis 17.12.2010 bei der Firma `Mathias Kettner <http://mathias-kettner.de>`__ in München
+Linux Systemnah (4.7.2011 - 7.7.2011, `Bodenseo <http://bodenseo.de/>`__, Hemmenhofen am Bodensee)
 --------------------------------------------------------------------------------------------------
+
+(offene Schulung)
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+
+Linux Systemnah (14.2.2011 - 18.2.2011, `Bodenseo <http://bodenseo.de/>`__, Hemmenhofen am Bodensee)
+----------------------------------------------------------------------------------------------------
+
+(offene Schulung)
+
+* :doc:`../linux/020-sysprog-basics`
+* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/060-sysprog-multithreading`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`
+
+Linux from Scratch (12.12.2010 - 17.12.2010, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
+--------------------------------------------------------------------------------------------------------
+
+(offene Schulung)
 
 * :doc:`../linux/700-kettner-lfs-descr`
 
-6.12.2010 bis 10.12.2010 bei einer Firma in Darmstadt
------------------------------------------------------
+Softwareentwicklung unter Linux (6.12.2010 - 10.12.2010, bei einer Firma in Darmstadt)
+--------------------------------------------------------------------------------------
 
 (Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
 
@@ -277,8 +289,8 @@ Ausgewählte Themen aus
   * :doc:`../linux/060-sysprog-multithreading`
   * :doc:`../linux/070-sysprog-fortgeschrittenes`
 
-24.11.2010 bis 26.11.2010 bei einer Firma im Raum Ulm
------------------------------------------------------
+Softwareentwicklung unter Linux (24.11.2010 - 26.11.2010, bei einer Firma im Raum Ulm)
+--------------------------------------------------------------------------------------
 
 (Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
 
@@ -287,9 +299,19 @@ Ausgewählte Themen aus
 * :doc:`../linux/060-sysprog-multithreading`
 * Erstellen von Debian Packages
 
-25.10.2010 bis 26.10.2010 bei der Deutschen Bundeswehr in Wildflecken
----------------------------------------------------------------------
+Linux Kernel (25.10.2010 - 26.10.2010, Deutsche Bundeswehr in Wildflecken)
+--------------------------------------------------------------------------
 
 (Im Auftrag der Firma `Mathias Kettner <http://mathias-kettner.de>`__)
 
 * Linux Kernel
+
+Softwareentwicklung unter Linux (20.10.2020 - 24.10.2010, `Mathias Kettner <http://mathias-kettner.de>`__)
+----------------------------------------------------------------------------------------------------------
+
+(offene Schulung)
+
+* Systemkonzepte (heute :doc:`../linux/010-linux-basics`)
+* Software Build
+* Git
+
