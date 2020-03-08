@@ -13,6 +13,7 @@ Bisher Gehaltene
    2020-03-30/index
    2020-01-10/index
    2019-11-12/index
+   2013-10-01/index
 
 
 Jeder Kurs ist anders ...
@@ -43,8 +44,11 @@ können einen Eindruck bekommen, was auf sie zukommt. (Das Publizieren
 des Materials geschieht natürlich nur mit dem Einverständnis des
 Kunden.)
 
-10.1.2020 IPC in Linux; bei einer namhaften Firma in Graz
----------------------------------------------------------
+.. contents::
+   :local:
+
+10.1.2020 IPC in Linux; bei einer Firma in Graz
+-----------------------------------------------
 
 (:doc:`Mehr ... <2020-01-10/index>`)
 
@@ -81,6 +85,44 @@ auch, die Jungs habens nämlich richtig drauf.
 
 Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
 
+
+.. ITG
+
+
+
+
+.. 023-Magneti-Marelli/Rechnungen
+.. 026-Signalis/Rechnungen
+.. 022-Bertrandt/Rechnungen
+.. 007-MEDS/Rechnungen
+.. 001-Consonya/Rechnungen
+.. 015-TecTrain/Rechnungen
+.. 014-Spielo/Rechnungen
+.. 004-KWB/Rechnungen
+.. 018-STIA/Rechnungen
+.. 033-Gorba/Rechnungen
+.. 038-Brottrager/Rechnungen
+.. 020-QualiVision/Rechnungen
+.. 006-Bodenseo/Rechnungen
+.. 016-TQS/Rechnungen
+.. 013-FH-Joanneum/Rechnungen
+.. 037-Gessmann/Rechnungen
+.. 032-AVL/Rechnungen
+.. 017-Dewetron/Rechnungen
+.. 003-Salomon/Rechnungen
+.. 024-Fraunhofer/Rechnungen
+.. 010-Fronius/Rechnungen
+.. 002-YLOG/Rechnungen
+.. 005-Mathias-Kettner/Rechnungen
+.. 030-TKI-Automotive/Rechnungen
+.. 019-RST/Rechnungen
+.. 031-Wedas-Solutions/Rechnungen
+.. 008-Efkon/Rechnungen
+.. 009-BMW-Motoren-GmbH/Rechnungen
+.. 012-TripleS/Rechnungen
+
+
+
 14.10.2013 bis 15.10.2013 bei einer Firma im Raum München
 ---------------------------------------------------------
 
@@ -93,8 +135,10 @@ Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
 * :doc:`../programming-misc/010-bash`
 * Einige ausgewählte Themen aus dem Embedded-Bereich
  
-1.10.2013 bis 4.10.2013 bei einer Firma in Zürich
--------------------------------------------------
+1.10.2013 bis 4.10.2013 bei der Firma `QualiVision <http://www.qualivision.ch/>`__ in Zürich
+--------------------------------------------------------------------------------------------
+
+(:doc:`Mehr ... <2013-10-01/index>`)
 
 * :doc:`../linux/010-linux-basics`
 * Ausgewähte Themen
