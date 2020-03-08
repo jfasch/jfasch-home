@@ -5,6 +5,7 @@ This Site
    :hidden:
 
    work-in-progress/index
+   recipes
 
 This is work in progress (and will always be, like any software).
 
@@ -22,3 +23,5 @@ This is work in progress (and will always be, like any software).
   content, with an eye towards structure and built-in link consistency
   (it won't let me break connections by just moving documents around).
 * :doc:`Work in progress is tracked here <work-in-progress/index>`.
+* :doc:`Here are recipes (for example, Jupyter Notebook do's and
+  don'ts) <recipes>`
