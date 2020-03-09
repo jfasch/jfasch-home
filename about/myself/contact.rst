@@ -1,6 +1,7 @@
 Kontakt
 =======
 
+* DI Jörg Faschingbauer
 * office@faschingbauer.co.at
 * +43(0)664 5783814
 * `GPG Key <http://pgp.mit.edu:11371/pks/lookup?op=vindex&search=0xCBDE4DB7FA0A759E>`__
