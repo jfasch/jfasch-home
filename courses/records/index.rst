@@ -15,6 +15,14 @@ Bisher Gehaltene
    2019-11-12/index
    2013-10-01/index
 
+Diese Liste ist als Logbuch zu verstehen, das ich verwende, um den
+Kursteilnehmer das zustandegekommene Material zukommen zu lassen. Und
+die potentiellen zukünftigen Kursteilnehmer können einen Eindruck
+bekommen, was auf sie zukommt. (Das Publizieren des Materials
+geschieht natürlich nur mit dem Einverständnis des Kunden.)
+
+.. contents::
+   :local:
 
 Jeder Kurs ist anders ...
 
@@ -36,16 +44,6 @@ Jeder Kurs ist anders ...
   Leben und ist jedesmal anders.
 * Selbst wenn alles andere gleich ist, habe ich genügend Entropie in
   mir, um den gegenwärtigen Kurs anders als seine Vorgänger zu machen.
-
-Der Rest dieses Textes ist gewissermaßen als Logbuch zu verstehen, das
-ich verwende, um den Kursteilnehmer das zustandegekommene Material
-zukommen zu lassen. Und die potentiellen zukünftigen Kursteilnehmer
-können einen Eindruck bekommen, was auf sie zukommt. (Das Publizieren
-des Materials geschieht natürlich nur mit dem Einverständnis des
-Kunden.)
-
-.. contents::
-   :local:
 
 IPC in Linux (10.1.2020, bei einer Firma in Graz)
 -------------------------------------------------
@@ -219,13 +217,14 @@ Einführung in Python (25.9.2012 - 27.9.2012, STIA in Admont)
 Linux Systemnah (13.2.2012 bis 15.2.2012, bei einer Firma in Zürich)
 --------------------------------------------------------------------
 
+.. Albis Technologies
+
 Ausgewählte Themen aus
 
-* :doc:`../linux/020-sysprog-basics`
-* :doc:`../linux/050-sysprog-network`
+* :doc:`../linux/020-sysprog-basics`: Toolchain, Crosscompilation
 * :doc:`../linux/060-sysprog-multithreading`
-* :doc:`../linux/070-sysprog-fortgeschrittenes`
-* :doc:`../linux/080-sysprog-embedded`
+* :doc:`../linux/070-sysprog-fortgeschrittenes`: Signale und IPC
+* :doc:`../linux/080-sysprog-embedded`: Userspace I2C, SPI, USB, CAN
 
 Einführung in Python (24.1.2012 - 26.1.2012, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
 --------------------------------------------------------------------------------------------------------

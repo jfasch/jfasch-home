@@ -25,8 +25,8 @@ Ich liebe es. Nach einem solchen Kurs mit viel Interaktion bin ich
 immer wohlig gerädert, ungefähr wie nach einer langen Schitour oder
 Bergwanderung.
 
-Unterlagen
-----------
+Unterlagen & Download
+---------------------
 
 Für alle Kurse gibt es mehr als genug Folien; :doc:`hier
 </courses/material/index>` finden Sie einen Überblick über alle

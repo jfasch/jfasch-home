@@ -1,5 +1,5 @@
-Subversion: Eine Einführung
-===========================
+Subversion
+==========
 
 .. sidebar:: Kursdaten
 

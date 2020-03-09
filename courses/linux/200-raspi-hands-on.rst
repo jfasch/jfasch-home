@@ -13,6 +13,9 @@ Eine Woche mit dem Raspberry Pi
    * 22.6.2020 - 26.6.2020, Hemmenhofen/Bodensee, `bodenseo
      <https://www.bodenseo.de/kurs/raspberry_pi_python.html>`__
 
+.. image:: raspberry_logo.png
+   :alt: Raspi Logo
+   :align: left
 
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher
 Programmierung - das ist das Zentrum dieses Kurses.**
@@ -22,10 +25,6 @@ gleichnamigen Foundation zu dem Zweck ins Leben gerufen, Kindern
 wieder Spass an produktivem Basteln näherzubringen - statt reine
 Spielekonsumenten zu sein. Das Ziel wurde erreicht, und zwar nicht nur
 für Kinder, wie eine nicht enden wollende Liste an Projekten zeigt.
-
-.. image:: Pi-GPIO-header.png
-   :alt: Raspi Pinout
-   :align: right
 
 Das Projekt "Raspberry Pi" hat das erstemal einer breiteren
 Öffentlichkeit gezeigt, dass Linux mehr drauf hat als nur Server,
@@ -53,6 +52,10 @@ vorhanden, jedoch macht es mit dem eigenen wahrscheinlich mehr Spass.
 
 Kursinhalt
 ----------
+
+.. image:: Pi-GPIO-header.png
+   :alt: Raspi Pinout
+   :align: right
 
 * **Linux und die Commandline**. Linux ist ein Desktopbetriebssystem.
   Unter anderem - es ist alles nur eine Frage des vorhandenen

@@ -31,12 +31,38 @@ Linux und Open Source
 
    blog/index
 
+.. note::
+
+   Diese Seite soll demnächst `www.faschingbauer.co.at, meine
+   bisherige Homepage <http://www.faschingbauer.co.at/>`__,
+   ablösen. Der Inhalt ist im Wesentlichen fertig, an der Struktur und
+   dem Layout wird gearbeitet - bitte entschuldigen Sie etwaige
+   Sackgassen und sonstige Unannehmlichkeiten.
+
+   Für Anregungen und Kritik sehr dankbar,
+
+       Jörg Faschingbauer jf@faschingbauer.co.at
+
+Schulung
+--------
+
+* :doc:`Linux Einführung <courses/linux/index>`
+* :doc:`Systemnahe Programmierung <courses/linux/index>`
+* :doc:`Kernelprogrammierung <courses/linux/index>`
+* :doc:`C und C++ <courses/programming-languages/index>`
+* :doc:`Python <courses/programming-languages/index>`
+* :doc:`Unittesting und Test Driven Development
+  <courses/programming-misc/index>`
+* :doc:`Design Patterns <courses/programming-misc/index>`
+* :doc:`Software Build <courses/programming-misc/index>`
+* :doc:`Versionskontrolle <courses/programming-misc/index>`
+* :doc:`Shell Benutzung und Programmierung
+  <courses/programming-misc/index>`
+
+:doc:`Hier mehr darüber </courses/index>`.
+
 Entwicklung
 -----------
-
-Programmieren ist mein Hauptbetätigungsfeld. Ich biete verschiedene
-Dienstleistungen an, die sich im Wesentlichen um folgende "Hard Facts"
-ansiedeln.
 
 * Systemnahe Softwareentwicklung
 * Portierung nach Linux
@@ -48,24 +74,11 @@ ansiedeln.
 * Anpassungen und Fixes in Open-Source-Paketen
 * Rootfilesystem-Entwicklung
 
-Schulung
---------
-
-Jahre des Programmierens haben ihre Spuren hinterlassen - es hat sich
-einiges an Wissen angesammelt. Vieles davon ist nicht mehr relevant
-(was gut ist); den Großteil des Rests habe ich strukturiert und zu
-Schulungsunterlagen verarbeitet.
-
-:doc:`Hier viel mehr darüber </courses/index>`.
-
 Beratung
 --------
-
-Meine Dienstleistungen umfassen auch Beratung und Durchführung in
-begleitenden Disziplinen wie
 
 * Architektur
 * Versionskontrolle und Releasemanagement
 * Buildmanagement
-* Unittests
+* Unittesting, Test Driven Development
 * OO Analyse und Design

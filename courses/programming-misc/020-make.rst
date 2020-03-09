@@ -1,5 +1,5 @@
-GNU-Make: Eine Einführung
-=========================
+GNU-Make
+========
 
 .. sidebar:: Kursdaten
 
@@ -18,7 +18,7 @@ oder Automake verwendet).
 Dieser Kurs wendet sich an Programmierer, die nicht nur an
 Programmieren interessiert sind, sondern auch verstehen wollen, wie
 größere Projekte gebaut werden, und wie die mitunter sehr
-komplizierten Abhänigkeitsbeziehungen in den Griff bekommen werden
+komplizierten Abhängigkeitsbeziehungen in den Griff bekommen werden
 können.
 
 Kursinhalt

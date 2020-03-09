@@ -1,5 +1,5 @@
-C++: Eine Einführung
-====================
+C++: Einführung und Überblick
+=============================
 
 .. sidebar:: Kursdaten
 

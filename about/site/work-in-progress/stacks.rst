@@ -1,10 +1,30 @@
 Stacks (Hanging)
 ================
 
-Course Records
---------------
+Finish
+------
 
-* bring those in
+* todo
+
+  * title page:
+    https://www.w3schools.com/howto/howto_css_image_transparent.asp
+* courses
+
+    * schulungen zentraler
+
+      * auf der titelseite in die mitte
+      * courses/index knackiger
+      * image mit text:
+        https://www.w3schools.com/howto/howto_css_image_transparent.asp
+
+    * records
+
+      * https://www.w3schools.com/howto/howto_js_read_more.asp
+      * material in subdir (gegen menu clutter)
+
+  * "open source"
+
+* diese da noch rein in die liste
 
   * ITG (from jf-linux-trainings)
   * 006-Bodenseo/Rechnungen
@@ -27,3 +47,4 @@ Course Records
   * schreiben wegen nennung
 
     * Gerald Dietl
+    * Albis Zürich; info.ch@albis-elcon.com, 13.2.2012
