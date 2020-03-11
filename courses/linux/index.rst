@@ -17,7 +17,3 @@ verstehen.
    :titlesonly:
    
    [0-9]*
-
-.. todo::
-
-   * kernel programming
