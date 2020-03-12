@@ -40,6 +40,7 @@ extensions = [
     'sphinx_rtd_theme',
     'ablog',
     'nbsphinx',
+    'sphinxcontrib.fulltoc',
 ]
 todo_include_todos = True
 
@@ -82,23 +83,87 @@ exclude_patterns = [
     '_build',
     '**.ipynb_checkpoints',
 ]
-
-# context that jinja (and rst, via the rstjinja extension) sees.
-html_context = {
-    # experimental: this is how we can get settings into templates
-    'READTHEDOCS': False, # {en,dis}able versions.html
-    'versions': [('blah', 'https://www.google.com'),],
-}
-
-# ---
-html_theme = 'sphinx_rtd_theme'
-html_theme_options = {
-    'collapse_navigation': False,
-    'navigation_depth': -1,
-}
-
+html_context = {}
 html_static_path = ['_static']
 
-# hmmm. somehow this is disregarded by rtd theme.
-html_sidebars = {
-}
+_BASIC = 'basic'
+_RTD = 'sphinx_rtd_theme'
+_PYRAMID = 'pyramid'
+_PRESS = 'press'
+_NATURE = 'nature'
+_ALABASTER = 'alabaster'
+_BOOTSTRAP = 'bootstrap'
+
+html_theme = _ALABASTER
+html_theme_path = []
+html_theme_options = {}
+
+if html_theme == _ALABASTER:
+    import alabaster
+
+    html_theme_path.append(alabaster.get_path())
+
+    html_theme_options['fixed_sidebar'] = True
+    html_theme_options['logo'] = 'logo.jpg'
+    # html_theme_options['show_powered_by'] = False
+    html_theme_options['page_width'] = '90%'
+    html_theme_options['sidebar_width'] = '20%'
+
+    html_sidebars = {
+        '**': [
+            'about.html',
+            'searchbox.html',
+            'navigation.html',
+        ],
+    }
+
+    def setup(app):
+        app.add_stylesheet('css/jf.css')
+
+if html_theme == _RTD:
+    # nav and location feedback really great
+    
+    # looks good on mobile
+    
+    # on wider screen a lot of screen real estate to the right is wasted
+    
+    # html_sidebars disregarded
+
+    # RTD css unreadable (uglified?)
+    
+    html_theme_options['collapse_navigation'] = False
+    html_theme_options['navigation_depth'] = -1
+    
+    # context that jinja (and rst, via the rstjinja extension) sees.
+    html_context.update({
+        # experimental: this is how we can get settings into templates
+        'READTHEDOCS': False, # {en,dis}able versions.html
+        'versions': [('blah', 'https://www.google.com'),],
+    
+        # reading the RTD theme sources, I see that this is the RTD way of
+        # adding my own css.
+        'extra_css_files': ['_static/css/jf.css'],
+    })
+    
+if html_theme == _PYRAMID:
+    import pyramid_sphinx_themes
+    html_theme_path += pyramid_sphinx_themes.get_html_themes_path()
+
+if html_theme == _PRESS:
+    # html_sidebars as set above won't work. emptying it does,
+    # somehow.
+
+    # nav is buggy.
+    pass
+
+if html_theme == _NATURE:
+    pass
+
+if html_theme == _BASIC:
+    pass
+
+if html_theme == _BOOTSTRAP:
+    # just a try, no navigation with location feedback
+
+    import sphinx_bootstrap_theme
+    html_theme_path += sphinx_bootstrap_theme.get_html_theme_path()

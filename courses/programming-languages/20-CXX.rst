@@ -20,7 +20,7 @@ damals neuen Sprache waren zum Beispiel,
    war zwar schon aus anderen Programmiersprachen bekannt, diese haben
    aber nie in den Mainstream Einzug gehalten.
 
-C++ hiess damals "C mit Klassen", was ein treffender Name war. Seitdem
+C++ hieß damals "C mit Klassen", was ein treffender Name war. Seitdem
 hat sich die Sprache allerdings weiterentwickelt. Man kann heute noch
 vereinzelt Artefakte von C erkennen (Pointer wird es immer geben), und
 man kann C++ noch so programmieren, als ob es C wäre - aber mit C hat

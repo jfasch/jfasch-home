@@ -1,0 +1,14 @@
+* .logo {
+    background-color: #f0f3f8; 
+}
+
+#searchlabel {
+    font-size: 0;
+}
+div.sphinxsidebarwrapper > h3 {
+    font-size: 0;
+}
+
+div.sphinxsidebar p.caption {
+    font-size: 140%;
+}
