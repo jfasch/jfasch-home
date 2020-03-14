@@ -1,0 +1,50 @@
+/* -*- css -*- */
+
+/* distinguish sidebar from document body */
+div.sphinxsidebarwrapper {
+    border: 1px solid #ccc;
+    background-color: {{ jf_confidence_bg }};
+}
+
+/* see big rant in conf.py. TL;DR: sidebar overlaps into body if you
+   tune sidebar and page width. */
+div.body {
+    padding-left: 50px;
+}
+
+/* wipe fat annoying sidebar headlines
+
+   * "Quick Search" ("basic" theme, searchbox.html) 
+   * "Navigation" ("alabaster" theme, navigation.html) 
+
+*/
+#searchlabel {
+    font-size: 0;
+}
+div.sphinxsidebarwrapper > h3 {
+    font-size: 0;
+}
+
+/* sidebar/nav: increase visibility of toplevel toctree captions */
+div.sphinxsidebar p.caption {
+    font-size: 140%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+
+/* "contents" directive */
+div.topic {
+    background-color: {{ jf_confidence_bg }};
+}
+
+/* "sidebar" directive */
+div.sidebar {
+    border: 1px solid #ccc;
+    background-color: {{ jf_sidebar_bg }};
+}
+
+/* "note" directive */
+div.note {
+    background-color: {{ jf_note_bg }};
+}

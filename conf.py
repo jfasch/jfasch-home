@@ -74,8 +74,6 @@ if True:
     # feed is http://feeds.feedburner.com/JoergFaschingbauer
 
 
-templates_path.append('_templates')
-
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -99,15 +97,58 @@ html_theme_path = []
 html_theme_options = {}
 
 if html_theme == _ALABASTER:
+    # RANT: the settings below (page_width 90%, sidebar_width 20% (of
+    # page_width, essentially)) result in 
+
+    # * div.bodywrapper: margin-left: 20% (=274.75 on my screen)
+
+    # * div.sphinxsidebar: width: 20% (305.267)
+
+    # though the plan is obviously that they have the same calculated
+    # size, so the sphinxsidebar fits in bodywrapper's left
+    # margin. (sidenote: why the f**k is it done in this way? why not
+    # just position clearly with ... whatever ... some flexbox fancy?)
+
+    # however: this *not* the case. for some reason (*), the
+    # calculated values are *not* equal, and the sidebar's
+    # width=305.267 overlaps into bodywrapper's 274.75 margin-left.
+
+    # (*) hmm ... when I look at the element hierarchy, I see that
+
+    # * div.sphinxsidebar is a child of div.document
+
+    # * div.bodywrapper is a child of div.documentwrapper which is a
+    #   child of div.document
+
+    # question: how can it be that bodywrapper'div.s margin-left
+    # calculates to a value that appears to be derived from
+    # div.document?
+
+    # ANYWAY: stick with it, but keep looking out for better
+    # solutions/themes. learn to do web crap better.
+
     import alabaster
 
     html_theme_path.append(alabaster.get_path())
 
-    html_theme_options['fixed_sidebar'] = True
-    html_theme_options['logo'] = 'logo.jpg'
-    # html_theme_options['show_powered_by'] = False
-    html_theme_options['page_width'] = '90%'
-    html_theme_options['sidebar_width'] = '20%'
+    templates_path.append('_templates')
+
+    html_theme_options.update({
+        'fixed_sidebar': True,
+        'logo': 'logo.jpg',
+        # 'description': 'Linux und Open Source',
+        'page_width': '90%',
+        'sidebar_width': '20%',
+
+        # hardwired by default by "basic" theme, to 800px. no idea
+        # why. occupy what we can get.
+        'body_max_width': '100%',
+
+        # 'github_banner': True,
+        # 'github_button': True,
+
+        # 'font_family': 'sans-serif',
+    })
 
     html_sidebars = {
         '**': [
@@ -115,7 +156,19 @@ if html_theme == _ALABASTER:
             'searchbox.html',
             'navigation.html',
         ],
+        # 'blog/**': [
+        #     'about.html',
+        #     'searchbox.html',
+        #     'navigation.html',
+        #     'postcard.html',
+        # ],
     }
+
+    html_context.update({
+        'jf_confidence_bg': '#f0f3f8',
+        'jf_sidebar_bg': 'transparent', # '#eee',
+        'jf_note_bg': '#eee',
+    })
 
     def setup(app):
         app.add_stylesheet('css/jf.css')

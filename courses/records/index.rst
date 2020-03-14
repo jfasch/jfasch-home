@@ -1,5 +1,5 @@
-Bisher Gehaltene
-================
+Bisher Gehaltene Schulungen
+===========================
 
 .. new records have to be added here (sphinx don't like orphans). take
    care to explicitly reference them below, together with a funky

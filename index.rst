@@ -31,17 +31,17 @@ Linux und Open Source
 
    blog/index
 
-.. note::
-
-   Diese Seite soll demnächst `www.faschingbauer.co.at, meine
-   bisherige Homepage <http://www.faschingbauer.co.at/>`__,
-   ablösen. Der Inhalt ist im Wesentlichen fertig, an der Struktur und
-   dem Layout wird gearbeitet - bitte entschuldigen Sie etwaige
-   Sackgassen und sonstige Unannehmlichkeiten.
-
-   Für Anregungen und Kritik sehr dankbar,
-
-       Jörg Faschingbauer jf@faschingbauer.co.at
+.. .. note::
+.. 
+..    Diese Seite soll demnächst `www.faschingbauer.co.at, meine
+..    bisherige Homepage <http://www.faschingbauer.co.at/>`__,
+..    ablösen. Der Inhalt ist im Wesentlichen fertig, an der Struktur und
+..    dem Layout wird gearbeitet - bitte entschuldigen Sie etwaige
+..    Sackgassen und sonstige Unannehmlichkeiten.
+.. 
+..    Für Anregungen und Kritik sehr dankbar,
+.. 
+..        Jörg Faschingbauer jf@faschingbauer.co.at
 
 Schulung
 --------

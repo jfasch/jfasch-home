@@ -8,13 +8,13 @@ S5 Integration
 Work in Progress: S5 Web Slides
 -------------------------------
 
-The conversion of the slides to the `S5 slide format
+The conversion of my old `Latex Beamer slides
+<https://ctan.org/pkg/beamer>`__ to the `S5 slide format
 <https://meyerweb.com/eric/tools/s5/>`__ is *work in progress*. To put
 it more precisely, I am converting to `reStructuredText
 <https://docutils.sourceforge.io/rst.html>`__, which, in turn, is
 converted to S5 by the `rst2s5
-<https://docutils.sourceforge.io/docs/user/slide-shows.html>`__
-tool.
+<https://docutils.sourceforge.io/docs/user/slide-shows.html>`__ tool.
 
 This makes sense because the entire site is massaged with `Sphinx
 <https://www.sphinx-doc.org/en/master/>`__, which itself builds upon

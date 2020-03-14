@@ -46,12 +46,6 @@ Inhouseschulungen [#inhouse_schulung]_ werden in Absprache mit der/dem
 Buchenden terminisiert - genauso wie ihr Inhalt zustandekommt. Ich bin
 hier zeitlich und örtlich so flexibel wie es der Kalender zulässt.
 
-Gehaltene Schulungen
---------------------
-
-:doc:`Hier <records/index>` finden Sie ein Liste von bereits
-gehaltenen Schulungen, inklusive Anmerkungen und Kursmaterial.
-
 .. rubric:: Fußnoten
 
 .. [#offene_schulung] Zu einer "offenen Schulung" kann sich jeder
