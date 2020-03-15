@@ -1,13 +1,19 @@
 /* -*- css -*- */
 
-/* distinguish sidebar from document body */
 div.sphinxsidebarwrapper {
+    /* don't let sidebar exceed screen, vertically. 80vh is rather
+       heuristic though, and has to play together with div.document
+       vertical margin. (vh is "1% viewport height".) */
+    height: 80vh;
+    overflow-y: auto;
+
+    /* distinguish sidebar from document body */
     border: 1px solid #ccc;
     background-color: {{ jf_confidence_bg }};
 }
 
 /* see big rant in conf.py. TL;DR: sidebar overlaps into body if you
-   tune sidebar and page width. */
+   tune sidebar and page widths. */
 div.body {
     padding-left: 50px;
 }
