@@ -7,8 +7,10 @@
 Porting to Linux (There's Always A Better Way)
 ==============================================
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Over the past months I met a couple of people who are relatively new
 to Linux. For one, I've been to Germany doing courses on Linux -

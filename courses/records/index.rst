@@ -21,8 +21,10 @@ die potentiellen zukünftigen Kursteilnehmer können einen Eindruck
 bekommen, was auf sie zukommt. (Das Publizieren des Materials
 geschieht natürlich nur mit dem Einverständnis des Kunden.)
 
-.. contents::
-   :local:
+.. sidebar:: Inhalt
+
+   .. contents::
+      :local:
 
 Jeder Kurs ist anders ...
 

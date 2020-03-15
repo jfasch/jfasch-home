@@ -1,13 +1,16 @@
-.. contents::
-   :local:
-   :depth: 1
-
 Miscellaneous To Do
 ===================
+
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
+      :depth: 1
 
 Extensions
 ----------
 
+* Contents in sidebars
 * **Schulungen/Sidebars** are manually maintained. As for the course
   dates, this could be solved by having a central database and
   generating the table. use rstjinja for this.

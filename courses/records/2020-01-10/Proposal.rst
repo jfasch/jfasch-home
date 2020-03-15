@@ -10,8 +10,10 @@ covering the following topics.
 * Code review of **BEEEEEEP**
 * Optional: advanced topics
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Unix is a broad field of diversity and history. Just like there are
 many ways to do timers, there are many ways to do IPC (and by the way,

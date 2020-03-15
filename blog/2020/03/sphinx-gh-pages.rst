@@ -24,8 +24,10 @@ were,
   <https://www.faschingbauer.me>`__ is the topic of a :doc:`companion
   post </blog/2020/03/custom-domain-gh-pages>`.
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Create "Site Publication Repo"
 ------------------------------

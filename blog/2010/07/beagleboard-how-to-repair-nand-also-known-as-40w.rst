@@ -7,8 +7,10 @@
 Beagleboard: How to Repair NAND (also known as 40W)
 ===================================================
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 It happened again. Friends of mine have an alias,
 

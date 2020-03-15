@@ -35,8 +35,10 @@ on the internet that suggest that adding a custom domain to a *project
 page* has been cumbersome in the past - these days are over,
 apparently. Following is what I did.
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Configure a Subdomain, ``www.faschingbauer.me``
 -----------------------------------------------

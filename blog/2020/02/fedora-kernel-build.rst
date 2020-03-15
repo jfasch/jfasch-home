@@ -12,9 +12,11 @@ it is outdated and only halfway true.
 Here's what I was able to find out by combining non-outdated
 information into a working procedure. It goes as follows.
 
-.. contents::
-   :local:
-   :depth: 1
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
+      :depth: 1
 
 Why?
 ----

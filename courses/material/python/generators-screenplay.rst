@@ -1,8 +1,10 @@
 Generators (Live Hacking Screenplay)
 ====================================
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Fibonacci Numbers: Naive List
 -----------------------------

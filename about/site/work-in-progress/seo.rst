@@ -8,8 +8,10 @@ SEO
   <https://search.google.com/search-console/welcome>`__. Add a ``TXT``
   DNS record to domain.
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Meta Information
 ----------------

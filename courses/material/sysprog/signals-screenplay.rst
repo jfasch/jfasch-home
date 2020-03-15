@@ -1,8 +1,10 @@
 Signals (Live Hacking Screenplay)
 =================================
 
-.. contents::
-   :local:
+.. sidebar:: Inhalt
+
+   .. contents::
+      :local:
 
 Barebones Naive Program
 -----------------------

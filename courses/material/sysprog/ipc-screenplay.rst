@@ -1,8 +1,10 @@
 POSIX IPC (Live Hacking Screenplay)
 ===================================
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Virtual Memory, ``mmap()``
 --------------------------

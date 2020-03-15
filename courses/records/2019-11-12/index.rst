@@ -8,8 +8,10 @@ Python (12.11.2019 - 14.11.2019 in Graz)
    code/BigPlan.ipynb
    code/LiveHacking.ipynb
 
-.. contents::
-   :local:
+.. sidebar:: Inhalt
+
+   .. contents::
+      :local:
 
 .. sidebar:: Material
 
@@ -87,10 +89,10 @@ die `Funktion
 Franziska's Weird Input File
 ----------------------------
 
-Franziska, sie studiert Physik neben der Arbeit (oder umgekehrt), muss
-für eine Übung ... was weiss ich ... machen. Wie auch immer, der Input
-für ihre Arbeit liegt in folgendem bekackten Inputformat vor, das es
-zu parsen gilt. War eine nette Zwischendurch-Gruppenarbeit.
+Franziska, sie studiert Physik neben der Arbeit, muss für eine Übung
+... was weiss ich ... machen. Wie auch immer, der Input für ihre
+Arbeit liegt in folgendem bekackten Inputformat vor, das es zu parsen
+gilt. War eine nette Zwischendurch-Gruppenarbeit.
 
 .. literalinclude:: code/franziska/H2O.dat.txt
    :caption: :download:`code/franziska/H2O.dat.txt`

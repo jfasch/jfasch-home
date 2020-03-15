@@ -7,8 +7,10 @@
 "Why ``ps`` Sucks" or "Counting Memory Consumption"
 ===================================================
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
 
 Recently, I held a course on select topics around embedded Linux, at a
 company in Zürich. The audience was pretty cool - they had ported
