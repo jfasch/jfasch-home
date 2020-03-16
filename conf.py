@@ -165,8 +165,8 @@ if html_theme == _ALABASTER:
     }
 
     html_context.update({
-        'jf_confidence_bg': '#f0f3f8',
-        'jf_sidebar_bg': 'transparent', # '#eee',
+        'jf_nav_bg': '#f0f3f8',
+        'jf_info_bg': '#fcfcfc',
         'jf_note_bg': '#eee',
     })
 

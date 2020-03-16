@@ -5,10 +5,62 @@ Layout Test Page
    :local:
    :depth: 1
 
+Admonitions
+-----------
+
+Tip
+...
+
+.. tip::
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
 Note
-----
+....
 
 .. note::
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+Hint
+....
+
+.. hint::
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+Important
+.........
+
+.. important::
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+Attention
+.........
+
+.. attention::
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+Caution
+.......
+
+.. caution::
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+Error
+.....
+
+.. error::
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
+Danger
+......
+
+.. danger::
 
    blah blah blah blah blah blah blah blah blah blah blah blah blah
 

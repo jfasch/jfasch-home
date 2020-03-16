@@ -9,7 +9,7 @@ div.sphinxsidebarwrapper {
 
     /* distinguish sidebar from document body */
     border: 1px solid #ccc;
-    background-color: {{ jf_confidence_bg }};
+    background-color: {{ jf_nav_bg }};
 }
 
 /* see big rant in conf.py. TL;DR: sidebar overlaps into body if you
@@ -41,16 +41,41 @@ div.sphinxsidebar p.caption {
 
 /* "contents" directive */
 div.topic {
-    background-color: {{ jf_confidence_bg }};
+    background-color: {{ jf_nav_bg }};
 }
 
 /* "sidebar" directive */
 div.sidebar {
     border: 1px solid #ccc;
-    background-color: {{ jf_sidebar_bg }};
+    background-color: {{ jf_info_bg }};
 }
 
-/* "note" directive */
-div.note {
-    background-color: {{ jf_note_bg }};
+div.admonition {
+    background-color: {{ jf_info_bg }};
+
+    border-style: dotted dotted dotted solid;
+    border-width: 1px 1px 1px 0.5em;
+    border-color: #ccc #ccc #ccc #ccc;
+
+    /* clear shadowing from alabaster */
+    box-shadow: none;
+}
+
+div.admonition.important {
+    border-color: #ccc #ccc #ccc #ffccb3;
+}
+
+div.admonition.attention, div.admonition.caution {
+    border-color: #ccc #ccc #ccc #ffad99;
+}
+
+div.admonition.danger, div.admonition.error {
+    border-color: #ccc #ccc #ccc #ff471a;
+}
+
+table {
+   border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #ccc;
 }

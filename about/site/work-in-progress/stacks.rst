@@ -62,7 +62,4 @@ Finish
     * font settings from old-fart 3columns.css
 
 * test-page., containing all rst elements that I use
-
-* push local contents directives into sidebar
-
-  * ~/work/jfasch-home/courses/records/2019-11-12/index.rst
+* download: CSS to prepend ``&darr;`` to text
