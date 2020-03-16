@@ -1,55 +1,59 @@
-Schulungen
-==========
+Kursangebot
+===========
+
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+
+   linux/index
+   programming-languages/index
+   programming-misc/index
 
 .. sidebar:: Inhalt
 
    .. contents::
       :local:
 
-Kursgestaltung
---------------
+Individualkurse
+---------------
 
-Der perfekte Kurs ist der, dessen Themen und der gesamte Ablauf von
-vorneherein feststehen. Den gibt es nicht, aber er wäre sicher sehr
-langweilig. Kurse leben von der Interaktion der Teilnehmer mit dem
-Vortragenden, von Fragen und Antworten, persönlichen Ansichten und
-Vorlieben, ... dem ganzen Hin- und Her eben. Jeder Kurs hat einen
-roten Faden - der hält auch immer im Großen und Ganzen - aber wenn das
-Kursgeschehen Varianten verlangt, bin ich als erster mit Freude dabei.
+Sollten Sie hier keinen Kurs finden, der alle Ihre gewünschten Themen
+enthält, ist das kein Problem. :doc:`Teilen Sie Ihre Wünsche mit
+</about/myself/contact>`, und ich stelle Ihnen einen maßgeschneiderten
+Kurs zusammen.
 
-.. image:: sysprog-bodenseo.jpg
-   :alt: Kurs im Hoeri-Hotel
-   :align: right
+Einführung in Linux
+-------------------
 
-Ich liebe es. Nach einem solchen Kurs mit viel Interaktion bin ich
-immer wohlig gerädert, ungefähr wie nach einer langen Schitour oder
-Bergwanderung.
+* :doc:`linux/010-linux-basics`
 
-Unterlagen & Download
----------------------
+Linux: Systemnahe Programmierung
+--------------------------------
 
-Für alle Kurse gibt es mehr als genug Folien; :doc:`hier
-</courses/material/index>` finden Sie einen Überblick über alle
-Unterlagen (inklusive Download Links).
+* :doc:`linux/020-sysprog-basics`
+* :doc:`linux/050-sysprog-network`
+* :doc:`linux/060-sysprog-multithreading`
+* :doc:`linux/070-sysprog-fortgeschrittenes`
+* :doc:`linux/080-sysprog-embedded`
+* :doc:`linux/190-kernel-programming-basics`
+* :doc:`linux/200-raspi-hands-on`
 
-Die Schulungsunterlagen sind durchwegs in Englisch; die Kurse selbst
-werden wahlweise in Deutsch oder Englisch gehalten.
+Programmiersprachen
+-------------------
 
-Termine, Buchung
-----------------
+* :doc:`programming-languages/10-C`
+* :doc:`programming-languages/12-C-Refresher`
+* :doc:`programming-languages/15-C-Advanced`
+* :doc:`programming-languages/20-CXX`
+* :doc:`programming-languages/30-Python-Basics`
+* :doc:`programming-languages/35-Python-Advanced`
+* :doc:`programming-misc/010-bash`
 
-Offene Schulungen [#offene_schulung]_ werden durch Partner angeboten;
-Sie finden eine Liste an geplanten Terminen bei der jeweiligen
-Schulungsbeschreibung.
+Build- und Projektmanagement
+----------------------------
 
-Inhouseschulungen [#inhouse_schulung]_ werden in Absprache mit der/dem
-Buchenden terminisiert - genauso wie ihr Inhalt zustandekommt. Ich bin
-hier zeitlich und örtlich so flexibel wie es der Kalender zulässt.
-
-.. rubric:: Fußnoten
-
-.. [#offene_schulung] Zu einer "offenen Schulung" kann sich jeder
-                      anmelden - sie ist öffentlich.
-.. [#inhouse_schulung] "Inhouseschulung" ist eine Schulung, die
-                       exklusiv für eine Firma gehalten wird -
-                       üblicherweise am Firmenstandort.
+* :doc:`programming-misc/020-make`
+* :doc:`programming-misc/025-cmake`
+* :doc:`programming-misc/030-svn`
+* :doc:`programming-misc/040-unittests`
+* :doc:`programming-misc/050-design-patterns`

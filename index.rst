@@ -2,6 +2,17 @@ Linux und Open Source
 =====================
 
 .. toctree::
+   :caption: Schulungen
+   :hidden:
+   :maxdepth: -1
+   :titlesonly:
+
+   courses/index
+   courses/booking
+   courses/material/index
+   courses/records/index
+
+.. toctree::
    :caption: About
    :hidden:
    :maxdepth: -1
@@ -9,19 +20,6 @@ Linux und Open Source
 
    about/myself/index
    about/site/index
-
-.. toctree::
-   :caption: Schulungen
-   :hidden:
-   :maxdepth: -1
-   :titlesonly:
-
-   Allgemeines <courses/index>
-   courses/records/index
-   courses/material/index
-   courses/linux/index
-   courses/programming-languages/index
-   courses/programming-misc/index
 
 .. toctree::
    :caption: Blog

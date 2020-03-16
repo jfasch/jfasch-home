@@ -60,6 +60,3 @@ Finish
     * add github thing
     * transparent logo -> Didi
     * font settings from old-fart 3columns.css
-
-* test-page., containing all rst elements that I use
-* download: CSS to prepend ``&darr;`` to text
