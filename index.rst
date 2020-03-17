@@ -34,34 +34,18 @@ Linux und Open Source
 Schulung
 --------
 
-* Hardware- und Systemnahes
-
-  * Low-Level APIs
-  * Hardware
-  * Kernelprogrammierung
-
-* Programmiersprachen
-
-  * C und C++
-  * Python
-  * Shellscripting
-
-* Build
-
-  * Make
-  * Automake
-  * CMake
-  * Meson
-
-* Versionskontrolle
-
-  * Git
-  * Subversion
-
-* Basisagilität
-
-  * Unittesting, Test Driven Development
-  * Design Patterns
+* :doc:`Linux Einführung <courses/linux/index>`
+* :doc:`Systemnahe Programmierung <courses/linux/index>`
+* :doc:`Kernelprogrammierung <courses/linux/index>`
+* :doc:`C und C++ <courses/programming-languages/index>`
+* :doc:`Python <courses/programming-languages/index>`
+* :doc:`Unittesting und Test Driven Development
+  <courses/programming-misc/index>`
+* :doc:`Design Patterns <courses/programming-misc/index>`
+* :doc:`Software Build <courses/programming-misc/index>`
+* :doc:`Versionskontrolle <courses/programming-misc/index>`
+* :doc:`Shell Benutzung und Programmierung
+  <courses/programming-misc/index>`
 
 :doc:`Hier mehr darüber </courses/index>`.
 

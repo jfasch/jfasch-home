@@ -27,7 +27,6 @@ Finish
 
   * diese da noch rein in die liste
   
-    * ITG (from jf-linux-trainings)
     * 006-Bodenseo/Rechnungen
     * 008-Efkon/Rechnungen
     * 009-BMW-Motoren-GmbH/Rechnungen
@@ -49,6 +48,9 @@ Finish
   
       * Gerald Dietl
       * Albis Zürich; info.ch@albis-elcon.com, 13.2.2012
+      * ITK 2019-10-28 records-itk-2019-10-28
+
+  * ITG (from jf-linux-trainings)
 
 * alabaster theme customization
 

@@ -13,6 +13,7 @@ Bisher Gehaltene Schulungen
    2020-03-30/index
    2020-01-10/index
    2019-11-12/index
+   2019-10-28/index
    2013-10-01/index
 
 Diese Liste ist als Logbuch zu verstehen, das ich verwende, um den
@@ -84,6 +85,24 @@ auch, die Jungs habens nämlich richtig drauf.
     würde es also jederzeit weiterempfehlen bzw. wiederholen."*
 
 Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
+
+
+.. _records-itk-2019-10-28:
+
+Python Individualtraining (5 Tage, beginnend 28.10.2019)
+--------------------------------------------------------
+
+(:doc:`Mehr ... <2019-10-28/index>`)
+
+Einführung in Python, und darauffolgendes Vertiefen in ausgewählten Bereichen,
+
+* Datenbanken/DBAPI2
+* Objektorientierung
+* Unittesting
+
+Der Kurs fand in den Räumen der Firma `tecTrain in Graz
+<https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
+statt, über die auch gebucht wurde.
 
 Python (1.6.2015 - 3.6.2015, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
 ----------------------------------------------------------------------------------------

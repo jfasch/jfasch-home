@@ -1,0 +1,7 @@
+sw_2960 = {"image" : "c2960-lanbasek9-tar.122-55.SE12", "md5" : "1504e5d9342eabf6f7b2376e94ace46f"}
+sw_2960s = {"image" : "c2960s-universalk9-tar.152-2.E9", "md5" : "ea604d030b378b6c5c3dda3d501ac2f5"}
+sw_2960x = {"image" : "c2960x-universalk9-tar.152-2.E7", "md5" : "d92c2837256799dc0bc9d395cdd1bd12"}
+sw_2960cx = {"image" : "c2960cx-universalk9-tar.152-4.E7", "md5" : "dfd8e706a96765a34e480fc125df09be"}
+sw_2960cg = {"image" : "c2960c405ex-universalk9-tar.152-2.E9", "md5" : "b6708bcc199b229878b90cb2da0e5320"}
+sw_3560cx = {"image" : "c3560cx-universalk9-tar.152-4.E7", "md5" : "6d71d629150d1968375374ec7d4a9ce4"}
+
