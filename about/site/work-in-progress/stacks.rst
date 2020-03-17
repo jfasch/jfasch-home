@@ -25,40 +25,82 @@ Finish
 
   * "open source"
 
-  * diese da noch rein in die liste
-  
-    * 006-Bodenseo/Rechnungen
-    * 008-Efkon/Rechnungen
-    * 009-BMW-Motoren-GmbH/Rechnungen
-    * 010-Fronius/Rechnungen
-    * 012-TripleS/Rechnungen
-    * 015-TecTrain/Rechnungen
-    * 016-TQS/Rechnungen
-    * 022-Bertrandt/Rechnungen
-    * 023-Magneti-Marelli/Rechnungen
-    * 024-Fraunhofer/Rechnungen
-    * 030-TKI-Automotive/Rechnungen
-    * 031-Wedas-Solutions/Rechnungen
-    * 032-AVL/Rechnungen
-    * 033-Gorba/Rechnungen
-    * 037-Gessmann/Rechnungen
-    * 038-Brottrager/Rechnungen
-  
-    * schreiben wegen nennung
-  
-      * Gerald Dietl
-      * Albis Zürich; info.ch@albis-elcon.com, 13.2.2012
-      * ITK 2019-10-28 records-itk-2019-10-28
+  * schreiben wegen nennung
 
-  * ITG (from jf-linux-trainings)
+    * Brottrager
 
-* alabaster theme customization
+	* records-brottrager-2019-05-23
 
-  * sidebar
+    * Gessmann
 
-    * "Navigation" is a bit too large. remove it altogether will be
-      best I think.
-    * erase "Quick Search" title
-    * add github thing
-    * transparent logo -> Didi
-    * font settings from old-fart 3columns.css
+	* records-gessmann-2019-05-27
+
+    * Gorba/LTG
+
+	* records-gorba-2018-03-12
+
+    * AVL
+
+	* records-avl-2019-10-09
+
+    * TKI
+
+	* records-tki-2017-09-11
+
+    * Fraunhofer
+
+	* records-fraunhofer-2018-07-09
+	* records-fraunhofer-2017-08-28
+	* records-fraunhofer-2017-08-23
+	* records-fraunhofer-2016-07-05
+	* records-fraunhofer-2015-07-01
+	* records-fraunhofer-2015-06-17
+	* records-fraunhofer-2014-12-09
+
+    * Magneti Marelli
+
+      * records-magnetimarelli-2015-01-28
+
+    * TQS
+
+	* records-tqs-2013-10-14
+	* records-tqs-2013-05-27
+	* records-tqs-2012-10-29
+
+    * TecTrain
+
+	* records-tectrain-2019-10-28 (ITK)
+	* records-tectrain-2017-06-06 (Paar)
+	* records-tectrain-2016-10-17 (Bosch)
+	* records-tectrain-2016-02-22 (Paar)
+
+    * Peter Jahn
+
+	* records-linuxcampus-2019-09-30
+	* records-linuxcampus-2015-10-05 (OEBB)
+	* records-linuxcampus-2014-10-07
+	* records-linuxcampus-2014-02-24 (BRZ)
+	* records-linuxcampus-2014-03-03 (BRZ)
+	* records-linuxcampus-2013-11-11 (BRZ)
+	* records-linuxcampus-2013-10-28 (BRZ)
+
+    * Gerald Dietl
+
+	* records-fronius-2019-06-13
+	* records-fronius-2019-06-03
+	* records-fronius-2019-05-13
+	* records-fronius-2018-10-01
+	* records-fronius-2018-07-16
+	* records-fronius-2017-02-20
+	* records-fronius-2015-07-27
+	* records-fronius-2013-10-07
+	* records-fronius-2013-07-02
+	* records-fronius-2013-01-14
+	* records-fronius-2011-09-19
+	* records-fronius-2011-09-13
+
+    * Albis Zürich; info.ch@albis-elcon.com, records-albistechnologies-2012-02-13
+    * ITK 2019-10-28 records-itk-2019-10-28
+    * Albis Technologies records-albistechnologies-2012-02-13
+    * Morphodetection records-morphodetection-2012-11-26
+    * Fraunhofer records-fraunhofer-2014-12-09

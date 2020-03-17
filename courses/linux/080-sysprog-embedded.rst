@@ -1,5 +1,5 @@
-Systemprogrammierung: Embedded/Hardware
-=======================================
+Systemprogrammierung: Embedded Linux/Hardwareanbindung
+======================================================
 
 .. sidebar:: Kursdaten
 
