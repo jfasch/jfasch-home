@@ -5,6 +5,11 @@
 Deploying Sphinx Generated Documentation to Github Pages
 ========================================================
 
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
+
 `Github Pages <https://pages.github.com/>`__, a hosting service for
 static webpages, is free and easy, although run by Microsoft
 [#well_theres_marketing]_. Times are changing.
@@ -23,11 +28,6 @@ were,
   serve it as `https://www.faschingbauer.me
   <https://www.faschingbauer.me>`__ is the topic of a :doc:`companion
   post </blog/2020/03/custom-domain-gh-pages>`.
-
-.. sidebar:: Contents
-
-   .. contents::
-      :local:
 
 Create "Site Publication Repo"
 ------------------------------

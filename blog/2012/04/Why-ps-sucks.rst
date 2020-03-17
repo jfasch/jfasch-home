@@ -415,7 +415,7 @@ actually use the stack.
    Killed
 
 Ok, that's what I'd expect. Until the process was killed, the Red Hot
-Chili Peppers had become overly funky (autio glitches all over), and
+Chili Peppers had become overly funky (audio glitches all over), and
 the Adobe Flash Plugin had crashed (Good Riddance). Less threads ...
 
 .. code-block:: shell
