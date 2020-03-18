@@ -9,10 +9,10 @@ Linux und Open Source
    :maxdepth: -1
    :titlesonly:
 
-   courses/index
-   courses/booking
-   courses/material/index
-   courses/records/index
+   trainings/index
+   trainings/booking
+   trainings/material/index
+   trainings/records/index
 
 .. toctree::
    :caption: About
@@ -34,20 +34,14 @@ Linux und Open Source
 Schulung
 --------
 
-* :doc:`Linux Einführung <courses/linux/index>`
-* :doc:`Systemnahe Programmierung <courses/linux/index>`
-* :doc:`Kernelprogrammierung <courses/linux/index>`
-* :doc:`C und C++ <courses/programming-languages/index>`
-* :doc:`Python <courses/programming-languages/index>`
-* :doc:`Unittesting und Test Driven Development
-  <courses/programming-misc/index>`
-* :doc:`Design Patterns <courses/programming-misc/index>`
-* :doc:`Software Build <courses/programming-misc/index>`
-* :doc:`Versionskontrolle <courses/programming-misc/index>`
-* :doc:`Shell Benutzung und Programmierung
-  <courses/programming-misc/index>`
+* Systemnahe Programmierung und Kernelhacking
+* C und C++
+* Python
+* Unittesting
+* Buildmanagement und Versionskontrolle
+* Design und Architektur
 
-:doc:`Hier mehr darüber </courses/index>`.
+:doc:`Hier mehr darüber </trainings/index>`.
 
 Entwicklung
 -----------

@@ -83,7 +83,7 @@ Sidebar "Kursdaten"
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </courses/material/pdf/020-linux-sysprog--en.pdf>`
+      PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
 
 Hmm. Should be an eye-catcher somehow.
 

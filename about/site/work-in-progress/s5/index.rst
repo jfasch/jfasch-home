@@ -21,7 +21,7 @@ This makes sense because the entire site is massaged with `Sphinx
 reStructuredText.
 
 You can view the state of conversion in the (rather huge) table in
-:doc:`hier </courses/material/index>`.
+:doc:`hier </trainings/material/index>`.
 
 Implementaion Notes
 -------------------
