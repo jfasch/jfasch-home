@@ -1,3 +1,10 @@
+.. meta::
+   :description: Dieses einwöchige Training versucht, trotz aller
+                 Widernisse der Sprache, C näherzubringen und seine
+                 Beweggründe verstehen zu lernen
+   :keywords: schulung, training, programming, c, linker, toolchain,
+              kernighan, ritchie, linux, embedded, pointer, memory
+
 C: Einführung
 =============
 

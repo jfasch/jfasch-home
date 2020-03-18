@@ -1,3 +1,9 @@
+.. meta::
+   :description: Ein Überblick, in Tabellenform (sorry), über alle
+                 Schulungsbeschreibungen und deren Unterlagen und
+                 Downloadsq
+   :keywords: schulung, training
+
 Unterlagen & Download
 =====================
 

@@ -22,6 +22,11 @@ vorhanden.
 Kursinhalt
 ----------
 
+(Der Ursprung dieses Kurses ist ein :ref:`eintägiger Ausflug ins
+Kernel-Land <records-bodenseo-2015-11-30-kernel>` im Rahmen eines
+einwöchigen :doc:`"Systemnahe Programmierung" <index>` Trainings am
+Bodensee.)
+
 * **Module**. In Linux-Speak ist ein *Modul* dynamisch ladbarer
   Code. Module werden geladen (explizit oder implizit), initialisiert,
   deinitialisiert, entladen.

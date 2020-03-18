@@ -1,3 +1,9 @@
+.. meta::
+   :description: Basierend auf Python-Basiswissen vermittelt dieses
+                 Training Einblicke in die Genialität und Einfachheit
+                 der Sprache
+   :keywords: schulung, training, programming, python
+
 Python für Fortgeschrittene
 ===========================
 

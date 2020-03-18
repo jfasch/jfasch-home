@@ -1,3 +1,9 @@
+.. meta::
+   :description: Dieses einwöchige Training versucht, trotz aller
+                 Widernisse der Sprache, C++ näherzubringen
+   :keywords: schulung, training, programming, c, c++, linker,
+              toolchain
+
 C++: Einführung und Überblick
 =============================
 

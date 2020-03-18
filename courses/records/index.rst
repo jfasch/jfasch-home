@@ -14,6 +14,7 @@ Bisher Gehaltene
    2020-01-10/index
    2019-11-12/index
    2019-10-28/index
+   2015-11-30/index
    2013-10-01/index
 
 Diese Liste ist als Logbuch zu verstehen, das ich verwende, um den
@@ -398,6 +399,8 @@ einem Basiswissen mal hier mal dort in die Tiefe geht.
 
 Embedded Linux (30.11.2015 - 4.12.2015, `Bodenseo <http://bodenseo.de/>`__, Hemmenhofen am Bodensee)
 ----------------------------------------------------------------------------------------------------
+
+(:doc:`Mehr ... <2015-11-30/index>`)
 
 Offene Schulung im Hotel Hoeri am Bodensee, zustandegekommen über
 meinen Partner `Bodenseo <http://bodenseo.de/>`__. Sehr nette

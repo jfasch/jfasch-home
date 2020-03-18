@@ -1,3 +1,10 @@
+.. meta::
+   :description: This live-hacking screenplay is a guide for myself to
+                 repeatably, didactically, demonstrate how UNIX
+                 signals work - yes there are Linux specific details
+   :keywords: linux, systemnah, schulung, training, programming,
+              signals
+
 Signals (Live Hacking Screenplay)
 =================================
 

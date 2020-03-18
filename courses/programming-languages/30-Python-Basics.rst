@@ -1,3 +1,9 @@
+.. meta::
+   :description: In diesem zweitägigen Training kommt es regelmäßig
+                 vor, dass Teilnehmer am zweiten Tag sinnvoll
+                 programmieren und Probleme lösen
+   :keywords: schulung, training, raspberry, programming, python
+
 Python Grundlagen
 =================
 

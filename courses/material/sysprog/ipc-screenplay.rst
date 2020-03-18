@@ -1,3 +1,11 @@
+.. meta::
+   :description: This live-hacking screenplay is a guide for myself to
+                 repeatably, didactically, demonstrate how POSIX IPC
+                 (semaphores, shared memory, message queues) work on
+                 Linux
+   :keywords: linux, systemnah, schulung, training, programming, ipc,
+              shared memory, semaphore, message queue
+
 POSIX IPC (Live Hacking Screenplay)
 ===================================
 

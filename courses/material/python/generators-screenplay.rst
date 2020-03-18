@@ -1,3 +1,9 @@
+.. meta::
+   :description: This live-hacking screenplay is a guide for myself to
+                 repeatably, didactically, demonstrate what Python
+                 generators are
+   :keywords: python, schulung, training, programming
+
 Generators (Live Hacking Screenplay)
 ====================================
 

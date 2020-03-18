@@ -1,3 +1,10 @@
+.. meta::
+   :description: Dieses zweitägige Training hilft allen, die C schon
+                 einmal kannten, aber erfolgreich verdrängt haben,
+                 wieder auf die Sprünge
+   :keywords: schulung, training, programming, c, linker, toolchain,
+              kernighan, ritchie, linux, embedded, pointer, memory
+
 C: Auffrischung
 ===============
 
