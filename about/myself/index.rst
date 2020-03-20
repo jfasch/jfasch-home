@@ -13,10 +13,10 @@ gelangen:
 .. toctree::
    :maxdepth: 1
 
+   contact
    cv-de
    skills-de
    projects-de
-   contact
 
 Programmieren, Linux, und ich
 -----------------------------

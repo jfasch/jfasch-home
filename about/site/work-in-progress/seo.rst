@@ -13,6 +13,12 @@ SEO
    .. contents::
       :local:
 
+Sitemap
+-------
+
+Use the `sitemap extension
+<https://github.com/jdillard/sphinx-sitemap>`__
+
 Meta Information
 ----------------
 

@@ -6,10 +6,18 @@ Finish
 
 * todo
 
+  * style
+
+    * sans serif
+    * <li> spacing
+    * nested lists: space before less than after
+
   * title page:
     https://www.w3schools.com/howto/howto_css_image_transparent.asp
 
   * courses
+
+    * meta += see also (bisher gehaltene, unterlagen)
 
     * schulungen zentraler
 
@@ -105,9 +113,7 @@ Finish
     * Morphodetection records-morphodetection-2012-11-26
     * Fraunhofer records-fraunhofer-2014-12-09
 
-  * avoid 401, keep existing google knowledge
-
-    jjjjjjj
+  * 404 not found -> link to co.at oder so
 
 * seo/meta
 
