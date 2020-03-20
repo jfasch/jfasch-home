@@ -49,6 +49,11 @@ Jeder Kurs ist anders ...
 * Selbst wenn alles andere gleich ist, habe ich genügend Entropie in
   mir, um den gegenwärtigen Kurs anders als seine Vorgänger zu machen.
 
+C++ für Embedded Entwickler (30.3.2020 - 4.4.2020, bei einer Firma in Baden-Württemberg)
+----------------------------------------------------------------------------------------
+
+(:doc:`Mehr ... <2020-03-30/index>`)
+
 IPC in Linux (10.1.2020, bei einer Firma in Graz)
 -------------------------------------------------
 
