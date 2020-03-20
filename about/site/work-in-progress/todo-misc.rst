@@ -35,14 +35,6 @@ Browse through `RTD user list
   <https://github.com/corda/corda/tree/release/os/4.5/docs>`__.
 * figure directive has a ``figclass`` attribute. hmm.
 
-Github Pages
-------------
-
-Rename jfasch/company-page -> jfasch-home when there's time. What's
-involved?
-
-Repo jfasch-home-pages
-
 C++
 ---
 
@@ -108,3 +100,9 @@ Skills
   * sphinx, for documentation -> consulting, soft skills
   * picture of myself wearing "css sucks" t-shirt
 
+Blog
+----
+
+`He <https://raymii.org/s/tags/ingsoc.html>`__ only gives a link to
+the feed XML, and leaves subscribing to readers who know how to. Is
+that the way?

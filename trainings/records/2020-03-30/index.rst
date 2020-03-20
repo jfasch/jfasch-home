@@ -6,6 +6,9 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
 
    gtest/basics
 
+Plan (sich entwickelnd)
+-----------------------
+
 .. sidebar:: Material
 
    * :doc:`C Einführung (Schulungsbeschreibung)
@@ -14,14 +17,14 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
      </trainings/repertoire/c-advanced>`
    * :doc:`C++ (Schulungsbeschreibung)
      </trainings/repertoire/cxx>`
-   * :download:`C (PDF) </trainings/material/pdf/050-c.pdf>`
-   * :download:`C++03 (PDF) </trainings/material/pdf/055-c++03.pdf>`
-   * :download:`C++11 (PDF) </trainings/material/pdf/056-c++11.pdf>`
-   * :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
-   * Livehacking screenplay: :doc:`gtest/basics`
-
-Plan (sich entwickelnd)
------------------------
+   * :download:`C </trainings/material/pdf/050-c.pdf>` (PDF download)
+   * :download:`C++03 </trainings/material/pdf/055-c++03.pdf>` (PDF
+     download)
+   * :download:`C++11 </trainings/material/pdf/056-c++11.pdf>` (PDF
+     download)
+   * :download:`CMake </trainings/material/pdf/045-cmake.pdf>` (PDF
+     download)
+   * :doc:`gtest/basics` (Livehacking screenplay)
 
 Tag 1
 .....
@@ -33,7 +36,7 @@ funktioniert (weiss ich, weil ich es selbst betreibe). Unittesting
 des Trainings sein, warum also nicht den Kurs invertieren und uns von
 Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
 
-* :doc:`Einführung in Unittesting <gtest/basics>`
+* :doc:`Livehacking: Einführung in Unittesting <gtest/basics>`
 * Klassen, Members ... C++ Basics
 * Konstruktoren, Destruktoren, am Beispiel Memoryleak.
 * `Auffinden von Leaks mit valgrind <https://valgrind.org/>`__
@@ -41,6 +44,13 @@ Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
 * Methoden, ``this``
 * CMake im Vorbeigehen, sobald der angehäufte C++ Code zu gross
   wird. Eher früher als später.
+
+  * Raunzen wegen "Tutorials" wie `das hier
+    <https://raymii.org/s/tutorials/Cpp_project_setup_with_cmake_and_unit_tests.html>`__. Nicht
+    nur dass er "Folder" statt "Directory sagt", sondern vor allem,
+    dass er sagt, man muss ``googletest`` als Git Subrepo im eigenen
+    Source mitführen und alles statisch linken. Vollpfosten, weil er's
+    selber glaubt; Arsch, weil's ihm andere glauben.
 
 Tag 2
 .....
@@ -106,6 +116,7 @@ Nun zu etwas einfachem: Threading :-)
   <https://en.cppreference.com/w/cpp/thread/thread>`__
 * `Mutex <https://en.cppreference.com/w/cpp/thread/mutex>`__, Scoped
   Locking
+* `Atomics <https://en.cppreference.com/w/cpp/atomic/atomic>`__
 * `Promise <https://en.cppreference.com/w/cpp/thread/promise>`__,
   `Future <https://de.cppreference.com/w/cpp/thread/future>`__, `Async
   <https://de.cppreference.com/w/cpp/thread/async>`__

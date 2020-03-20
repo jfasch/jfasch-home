@@ -15,6 +15,26 @@ In the Works
 Not Yet in the Works
 ....................
 
+* Add ``googletest`` to your ``CMake`` project. 
+
+  * Cite `this bullshit
+    <https://raymii.org/s/tutorials/Cpp_project_setup_with_cmake_and_unit_tests.html>`__
+  * Complain a lot about everyone using Git subrepos, static linking,
+    and The Internet as a whole. Subtitle: "Fighting Against Fake
+    News". Use Four Letter Words a lot.
+  * `GTest "find module"
+    <https://cmake.org/cmake/help/latest/module/FindGTest.html>`__. Explain
+    roughly what "find modules" are.
+  * Why am I not happy with this `populistic bullshit
+    <https://cmake.org/cmake/help/v3.10/module/GoogleTest.html>`__?
+
+    * They say "``gtest_discover_tests`` is more robust than ...", and
+      in the same sentence they say "it may not work in a
+      cross-compiling environment" - implicitly knowing that *it will
+      not work*.
+    * ``gtest_add_tests`` scans the source code in a rather primitive
+      way, leaving the user with all sorts of errors.
+
 * Scheduling: the porting trap (plus link to it in
   :doc:`/blog/2011/01/porting-to-linux-there-s-always-a-better-way`,
   "Processes are Threads")
