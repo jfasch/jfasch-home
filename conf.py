@@ -147,7 +147,7 @@ if html_theme == _ALABASTER:
         # 'github_banner': True,
         # 'github_button': True,
 
-        # 'font_family': 'sans-serif',
+        'font_family': '"Lucida Sans Unicode", "Lucida Grande", sans-serif;'
     })
 
     html_sidebars = {
