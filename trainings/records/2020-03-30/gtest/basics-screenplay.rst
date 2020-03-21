@@ -1,10 +1,11 @@
-Basic GTest Usage
-=================
+Basic GTest (Screenplay)
+========================
 
 .. sidebar:: Contents
 
    .. contents::
       :local:
+      :depth: 1
 
 Siehe `Github <https://github.com/google/googletest>`__.
 
@@ -28,8 +29,8 @@ Installation
 Simplest Test: No Test
 ----------------------
 
-.. literalinclude:: simple.cc
-   :caption: :download:`simple.cc`
+.. literalinclude:: basics-code/simple.cc
+   :caption: :download:`basics-code/simple.cc`
    :language: c++
 
 Compile and run:
@@ -42,8 +43,8 @@ Compile and run:
    [==========] 0 tests from 0 test cases ran. (0 ms total)
    [  PASSED  ] 0 tests.
 
-Next Simplest: Tests in Same File as ``main()``
------------------------------------------------
+Next Simplest: Single File
+--------------------------
 
 Aha, so ``RUN_ALL_TESTS()`` runs all tests. There only have to be
 tests there, so add two *suites*.
@@ -52,8 +53,8 @@ tests there, so add two *suites*.
 
 * Test structure, suites
 
-.. literalinclude:: self-contained.cc
-   :caption: :download:`self-contained.cc`
+.. literalinclude:: basics-code/self-contained.cc
+   :caption: :download:`basics-code/self-contained.cc`
    :language: c++
 
 Compile and run:
@@ -75,8 +76,8 @@ Compile and run:
    [==========] 2 tests from 1 test case ran. (1 ms total)
    [  PASSED  ] 2 tests.
 
-Execute Tests Selectively
--------------------------
+Executing Tests Selectively
+---------------------------
 
 Most importantly: RTFM
 
@@ -153,8 +154,8 @@ Fatal Failure
 ``FAIL()`` is definitely *fatal*, in that the test stops immediately
 in it.
 
-.. literalinclude:: fail.cc
-   :caption: :download:`fail.cc`
+.. literalinclude:: basics-code/fail.cc
+   :caption: :download:`basics-code/fail.cc`
    :language: c++
 
 Compile and run:
@@ -185,8 +186,8 @@ Compile and run:
 ``ASSERT_*()``
 ..............
 
-.. literalinclude:: assert.cc
-   :caption: :download:`assert.cc`
+.. literalinclude:: basics-code/assert.cc
+   :caption: :download:`basics-code/assert.cc`
    :language: c++
 
 Compile and run:
@@ -226,8 +227,8 @@ Non-Fatal Failure
 
 Instead of using ``ASSERT_*()`` like above, use ``EXPECT_*()`` .
 
-.. literalinclude:: expect.cc
-   :caption: :download:`expect.cc`
+.. literalinclude:: basics-code/expect.cc
+   :caption: :download:`basics-code/expect.cc`
    :language: c++
 
 Compile and run:
@@ -268,8 +269,8 @@ Compile and run:
 * Test continues to run
 * Reported as *failed* nonetheless
 
-Last Not Least: Multiple Source Files
--------------------------------------
+Last Not Least: Structure
+-------------------------
 
 **Discussion**
 
@@ -293,29 +294,30 @@ Test Cases and Suites
 * Small standalone fragments, waiting to be aggregated.
 * Do nothing on their own
 
-.. literalinclude:: tests/self-contained.cc
-   :caption: :download:`tests/self-contained.cc`
+.. literalinclude:: basics-code/tests/self-contained.cc
+   :caption: :download:`basics-code/tests/self-contained.cc`
    :language: c++
 
-.. literalinclude:: tests/fail.cc
-   :caption: :download:`tests/fail.cc`
+.. literalinclude:: basics-code/tests/fail.cc
+   :caption: :download:`basics-code/tests/fail.cc`
    :language: c++
 
-.. literalinclude:: tests/assert.cc
-   :caption: :download:`tests/assert.cc`
+.. literalinclude:: basics-code/tests/assert.cc
+   :caption: :download:`basics-code/tests/assert.cc`
    :language: c++
 
-.. literalinclude:: tests/expect.cc
-   :caption: :download:`tests/expect.cc`
+.. literalinclude:: basics-code/tests/expect.cc
+   :caption: :download:`basics-code/tests/expect.cc`
    :language: c++
+
 
 Runner
 ......
 
 * Aggregate them into a test-runner executable
 
-.. literalinclude:: run-tests.cc
-   :caption: :download:`run-tests.cc`
+.. literalinclude:: basics-code/run-tests.cc
+   :caption: :download:`basics-code/run-tests.cc`
    :language: c++
 
 * The main executable does not reference the tests in any way

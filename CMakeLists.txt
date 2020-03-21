@@ -8,4 +8,4 @@ PROJECT(JoergFaschingbauer)
 ENABLE_TESTING()
 FIND_PACKAGE(GTest REQUIRED)
 
-ADD_SUBDIRECTORY(trainings/records/2020-03-30/gtest)
+ADD_SUBDIRECTORY(trainings/records/2020-03-30/gtest/basics-code)

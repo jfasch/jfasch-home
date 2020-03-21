@@ -1,6 +1,11 @@
 C/C++ Build Using CMake
 =======================
 
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
+
 .. todo::
 
    Move that out of here, into a place which is central to the entire
