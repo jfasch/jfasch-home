@@ -22,6 +22,10 @@ Not Yet in the Works
   * Complain a lot about everyone using Git subrepos, static linking,
     and The Internet as a whole. Subtitle: "Fighting Against Fake
     News". Use Four Letter Words a lot.
+  * Well ok, `googletest <https://github.com/google/googletest>`__
+    goes out of its way, describes the method, and goes on to `say
+    that this is the simplest method, but also the most unprofessional
+    <https://github.com/google/googletest/blob/master/googletest/README.md>`__.
   * `GTest "find module"
     <https://cmake.org/cmake/help/latest/module/FindGTest.html>`__. Explain
     roughly what "find modules" are.

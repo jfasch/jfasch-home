@@ -8,9 +8,11 @@ Finish
 
   * style
 
-    * sans serif
     * <li> spacing
     * nested lists: space before less than after
+    * /trainings/index.rst: only overview over topics, for example "C"
+      (-> C1,2,3), "Sysprog" -> sysprog*, "Embedded" ->
+      sysprog-embedded, raspi-hands-on, "misc" -> kernel
 
   * title page:
     https://www.w3schools.com/howto/howto_css_image_transparent.asp
