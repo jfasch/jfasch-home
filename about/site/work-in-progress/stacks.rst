@@ -117,6 +117,26 @@ Finish
 
   * 404 not found -> link to co.at oder so
 
+  * keep old names
+  
+    * linux/010-linux-basics.rst de/courses/intro/index.html
+    * linux/700-kettner-lfs-descr.rst de/courses/misc/Kettner-LFS/index.html
+    * linux/200-raspi-hands-on.rst de/courses/misc/raspi-hands-on/index.html
+    * programming-misc/030-svn.rst de/courses/misc/Subversion/index.html
+    * linux/080-sysprog-embedded.rst de/courses/misc/sysprog-embedded/index.html de/courses/sysprog/Embedded/index.html de/courses/sysprog/Embedded-Sysprog/index.html
+    * programming-languages/10-C.rst de/courses/programming/10-C/index.html de/courses/programming/C/index.html
+    * programming-languages/15-C-Advanced.rst de/courses/programming/15-C-Advanced/index.html de/courses/programming/C-Advanced/index.html
+    * programming-languages/20-CXX.rst de/courses/programming/20-CXX/index.html de/courses/programming/CXX/index.html
+    * programming-languages/30-Python-Basics.rst de/courses/programming/30-Python-Basics/index.html de/courses/programming/Python/index.html de/courses/programming/Python-Basics/index.html
+    * programming-languages/35-Python-Advanced.rst de/courses/programming/35-Python-Advanced/index.html de/courses/programming/Python-Advanced/index.html
+    * programming-misc/010-bash.rst de/courses/programming/40-bash/index.html de/courses/programming/bash/index.html
+    * programming-misc/020-make.rst de/courses/programming/50-make/index.html de/courses/programming/make/index.html
+    * linux/070-sysprog-fortgeschrittenes.rst de/courses/sysprog/Fortgeschrittenes/index.html
+    * linux/060-sysprog-multithreading.rst de/courses/sysprog/Multithreading/index.html
+    * linux/050-sysprog-network.rst de/courses/sysprog/Network/index.html
+    * linux/020-sysprog-basics.rst de/courses/sysprog/System-Basics/index.html
+  
+
 * seo/meta
 
   * Low prio
@@ -171,29 +191,9 @@ Finish
   * ``courses/records/2020-03-30/index.rst``
   * ``courses/records/2019-10-28/index.rst``
   * ``courses/index.rst``
-  * ``courses/programming-misc/010-bash.rst``
   * ``courses/programming-misc/index.rst``
   * ``courses/programming-misc/020-make.rst``
-  * ``courses/programming-misc/025-cmake.rst``
   * ``courses/programming-misc/030-svn.rst``
   * ``courses/programming-misc/050-design-patterns.rst``
   * ``courses/programming-misc/040-unittests.rst``
 
-* keep old names
-
-  * linux/010-linux-basics.rst de/courses/intro/index.html
-  * linux/700-kettner-lfs-descr.rst de/courses/misc/Kettner-LFS/index.html
-  * linux/200-raspi-hands-on.rst de/courses/misc/raspi-hands-on/index.html
-  * programming-misc/030-svn.rst de/courses/misc/Subversion/index.html
-  * linux/080-sysprog-embedded.rst de/courses/misc/sysprog-embedded/index.html de/courses/sysprog/Embedded/index.html de/courses/sysprog/Embedded-Sysprog/index.html
-  * programming-languages/10-C.rst de/courses/programming/10-C/index.html de/courses/programming/C/index.html
-  * programming-languages/15-C-Advanced.rst de/courses/programming/15-C-Advanced/index.html de/courses/programming/C-Advanced/index.html
-  * programming-languages/20-CXX.rst de/courses/programming/20-CXX/index.html de/courses/programming/CXX/index.html
-  * programming-languages/30-Python-Basics.rst de/courses/programming/30-Python-Basics/index.html de/courses/programming/Python/index.html de/courses/programming/Python-Basics/index.html
-  * programming-languages/35-Python-Advanced.rst de/courses/programming/35-Python-Advanced/index.html de/courses/programming/Python-Advanced/index.html
-  * programming-misc/010-bash.rst de/courses/programming/40-bash/index.html de/courses/programming/bash/index.html
-  * programming-misc/020-make.rst de/courses/programming/50-make/index.html de/courses/programming/make/index.html
-  * linux/070-sysprog-fortgeschrittenes.rst de/courses/sysprog/Fortgeschrittenes/index.html
-  * linux/060-sysprog-multithreading.rst de/courses/sysprog/Multithreading/index.html
-  * linux/050-sysprog-network.rst de/courses/sysprog/Network/index.html
-  * linux/020-sysprog-basics.rst de/courses/sysprog/System-Basics/index.html

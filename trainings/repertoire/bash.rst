@@ -1,3 +1,10 @@
+.. meta::
+   :description: Dieses Training zeigt, dass Shell Scripting durchaus
+                 Sinn macht - und, dass die Shell eine vollständige
+                 Programmiersprache ist.
+   :keywords: schulung, training, programming, bash, bourne, shell,
+              bourne shell, linux, embedded, script, scripting
+
 Shell Scripting mit der Bourne Again Shell (Bash)
 =================================================
 

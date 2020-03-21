@@ -1,3 +1,11 @@
+.. meta::
+   :description: Dieses Training gibt Einblick in die Arbeitsweise des
+                 Software-Buildtools CMake - Dos und vor allem Don'ts
+                 eingeschlossen.
+   :keywords: schulung, training, programming, build, cmake, make,
+	      linux, embedded, linker, compiler, project, management,
+	      project management
+
 CMake
 =====
 
