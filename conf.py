@@ -11,6 +11,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 
+import logging
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
@@ -154,17 +155,21 @@ if html_theme == _ALABASTER:
     })
 
     html_sidebars = {
+        # the more specific match must come first (fortunately
+        # dictionary order is preserved since 3.7 :-) prior to that we
+        # would have had no chance to fix that other than changing
+        # html_sidebars to a list of tuples).
+        'blog/**': [
+            'about.html',
+            'searchbox.html',
+            'navigation.html',
+            'postcard.html',
+        ],
         '**': [
             'about.html',
             'searchbox.html',
             'navigation.html',
         ],
-        # 'blog/**': [
-        #     'about.html',
-        #     'searchbox.html',
-        #     'navigation.html',
-        #     'postcard.html',
-        # ],
     }
 
     html_context.update({
@@ -251,3 +256,18 @@ def setup(app):
     for css in _jf_csss:
         app.add_stylesheet(css)
     app.connect("source-read", rstjinja)
+
+    # html_sidebars has two matches, and both match any /blog/
+    # docname. the first match is more specific than the second, which
+    # I consider a common case. nevertheless sphinx generates a
+    # warning. filter that out.
+
+    # (rant) I have no idea what's the benefit of wrapping loggers
+    # into LoggerAdapter's. Or what SphinxLoggerAdapter's purpose
+    # is. Fortunately the LoggerAdapter (victim.logger) is friendly
+    # enough to have a 'logger' member. gosh. overengineering.
+    class NoWarnMultipleMatches(logging.Filter):
+        def filter(self, record):
+            return 'matches two patterns in html_sidebars' not in record.getMessage()
+    import sphinx.builders.html as victim
+    victim.logger.logger.addFilter(NoWarnMultipleMatches())
