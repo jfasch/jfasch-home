@@ -6,6 +6,17 @@ Buchung, Kursablauf
    .. contents::
       :local:
 
+   **Online Schulungen**
+
+   Egal welcher Schulungstyp - offen oder inhouse -, alle Schulungen
+   [#basteln_nicht]_ können problemlos auch online gehalten
+   werden. `Teamviewer <https://www.teamviewer.com/>`__ und `Skype
+   <https://www.skype.com/>`__ funktionieren problemlos unter Linux,
+   genauso wie :doc:`Microsoft Teams
+   </blog/2020/03/ms-teams-on-linux>`.
+
+
+
 Kursgestaltung
 --------------
 
@@ -53,3 +64,6 @@ hier zeitlich und örtlich so flexibel wie es der Kalender zulässt.
 .. [#inhouse_schulung] "Inhouseschulung" ist eine Schulung, die
                        exklusiv für eine Firma gehalten wird -
                        üblicherweise am Firmenstandort.
+.. [#basteln_nicht] :doc:`Gemeinsam mit Hardware zu basteln
+                    <repertoire/raspi-hands-on>` gestaltet sich online
+                    schwierig.

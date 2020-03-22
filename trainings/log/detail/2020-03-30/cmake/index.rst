@@ -6,11 +6,6 @@ C/C++ Build Using CMake
    .. contents::
       :local:
 
-.. todo::
-
-   Move that out of here, into a place which is central to the entire
-   site. There's going to come more.
-
 As this site is heavily into C and C++ (it is into Python too, but
 that's another story), it has lots of code in its many subdirectories
 and areas. This site is also into build and project management
@@ -68,6 +63,15 @@ start the build.
 .. code-block:: shell
 
    $ make
+
+.. todo::
+
+   Move that out of here, into a place which is central to the entire
+   site. There's going to come more.
+
+.. todo::
+
+   Give a list of dependencies, and how to install them.
 
 .. rubric:: Footnotes
 

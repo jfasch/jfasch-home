@@ -6,6 +6,8 @@ Projekte aus selbstständiger Tätigkeit
 
 (Stand Jänner 2014)
 
+.. _projekte-device-driver-for-doze:
+
 * **Devicedriver für die PCI Hardware eines Messgeräteherstellers**
   (Windows-Portierung des :ref:`untenstehenden Projektes
   <dewe-pci-linux>`)
