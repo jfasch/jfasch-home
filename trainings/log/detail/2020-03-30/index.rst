@@ -35,6 +35,7 @@ Plan (sich entwickelnd)
    **Sonstiges**
 
    * :doc:`Bauen der Seite mit CMake <cmake/index>`
+   * :doc:`/blog/2020/03/ms-teams-on-linux`
 
 Tag 1
 .....
