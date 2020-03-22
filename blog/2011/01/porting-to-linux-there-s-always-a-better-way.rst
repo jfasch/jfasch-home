@@ -220,12 +220,11 @@ Event Dispatching
 
 On Unix, *everything is a file*. Entire disks are represented as
 files, partitions are, network sockets are, arbitrary devices are (for
-example, serial/RS232 lines). Regular files are, naturally. On Linux,
+example, serial/UART lines). Regular files are, naturally. On Linux,
 even timers and Unix signals can be represented as files, as I
-mentioned previously. Every open file is represented as a <i>file
-descriptor</i>. File descriptors can be read from and written to,
-using the ``read`` and ``write`` system calls, regardless of their
-type.
+mentioned previously. Every open file is represented as a *file
+descriptor*. File descriptors can be read from and written to, using
+the ``read`` and ``write`` system calls, regardless of their type.
 
 For people who are new to Unix, this may come as a surprise: you can
 read from a serial line as if it were a network connection, and you
@@ -272,8 +271,8 @@ take anybody else's, mine's not the only - it's just the best.)
 One last note: look at the desktop environment of your choice. It's
 made up of a hundred or so processes (no, not threads). Under Gnome,
 which is what I use, there's a process called`` gnome-panel``, for
-example. Try out ``strace -p &lt;pid of gnome-panel&gt;``, direct the
-mouse over the panel, and see what happens: ``poll`` all over.
+example. Try out ``strace -p <pid of gnome-panel>;``, direct the mouse
+over the panel, and see what happens: ``poll`` all over.
 
 Interrupts
 ----------
