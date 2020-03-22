@@ -12,7 +12,7 @@ Linux und Open Source
    trainings/index
    trainings/booking
    trainings/material/index
-   trainings/records/index
+   trainings/log/index
 
 .. toctree::
    :caption: About

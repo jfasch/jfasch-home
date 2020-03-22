@@ -62,8 +62,8 @@ CMake: "Find Modules"
   * Usually in toplevel ``CMakeLists.txt``
   * ... but not necessarily so
 
-.. literalinclude:: ../../../../CMakeLists.txt
-   :caption: :download:`../../../../CMakeLists.txt`
+.. literalinclude:: ../../../../../CMakeLists.txt
+   :caption: :download:`../../../../../CMakeLists.txt`
    
 **Discussion**
 

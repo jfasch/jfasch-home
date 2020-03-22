@@ -1,22 +1,6 @@
 Bisher Gehaltene
 ================
 
-.. new records have to be added here (sphinx don't like orphans). take
-   care to explicitly reference them below, together with a funky
-   statement.
-
-.. toctree::
-   :hidden:
-   :titlesonly:
-   :maxdepth: 1
-
-   2020-03-30/index
-   2020-01-10/index
-   2019-11-12/index
-   2019-10-28/index
-   2015-11-30/index
-   2013-10-01/index
-
 Diese Liste ist als Logbuch zu verstehen, das ich verwende, um den
 Kursteilnehmer das zustandegekommene Material zukommen zu lassen. Und
 die potentiellen zukünftigen Kursteilnehmer können einen Eindruck
@@ -27,6 +11,11 @@ geschieht natürlich nur mit dem Einverständnis des Kunden.)
 
    .. contents::
       :local:
+
+.. toctree::
+   :hidden:
+
+   detail/index
 
 Jeder Kurs ist anders ...
 
@@ -52,12 +41,12 @@ Jeder Kurs ist anders ...
 C++ für Embedded Entwickler (30.3.2020 - 4.4.2020, bei einer Firma in Baden-Württemberg)
 ----------------------------------------------------------------------------------------
 
-(:doc:`Mehr ... <2020-03-30/index>`)
+(:doc:`Mehr ... <detail/2020-03-30/index>`)
 
 IPC in Linux (10.1.2020, bei einer Firma in Graz)
 -------------------------------------------------
 
-(:doc:`Mehr ... <2020-01-10/index>`)
+(:doc:`Mehr ... <detail/2020-01-10/index>`)
 
 Ein Eintagesworkshop (Signale, Shared Memory, Semaphore), mit Leuten,
 die ich persönlich gut kenne. Konzipiert als Livehacking-Demo und
@@ -67,7 +56,7 @@ Gott und die Welt.
 Python/NumPy (12.11.2019, `EVK <https://www.evk.biz/de/>`__ in Graz)
 --------------------------------------------------------------------
 
-(:doc:`Mehr ... <2019-11-12/index>`)
+(:doc:`Mehr ... <detail/2019-11-12/index>`)
 
 *Das* war cool! Die Firma `EVK <https://www.evk.biz/de/>`__ hat über
 `tecTrain (Graz)
@@ -98,7 +87,7 @@ Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
 Python Individualtraining (5 Tage, beginnend 28.10.2019)
 --------------------------------------------------------
 
-(:doc:`Mehr ... <2019-10-28/index>`)
+(:doc:`Mehr ... <detail/2019-10-28/index>`)
 
 Einführung in Python, und darauffolgendes Vertiefen in ausgewählten Bereichen,
 
@@ -405,7 +394,7 @@ einem Basiswissen mal hier mal dort in die Tiefe geht.
 Embedded Linux (30.11.2015 - 4.12.2015, `Bodenseo <http://bodenseo.de/>`__, Hemmenhofen am Bodensee)
 ----------------------------------------------------------------------------------------------------
 
-(:doc:`Mehr ... <2015-11-30/index>`)
+(:doc:`Mehr ... <detail/2015-11-30/index>`)
 
 Offene Schulung im Hotel Hoeri am Bodensee, zustandegekommen über
 meinen Partner `Bodenseo <http://bodenseo.de/>`__. Sehr nette
@@ -631,7 +620,7 @@ Shell/Bash Scripting (7.10.2013 - 9.10.2013, bei einer Firma in Oberösterreich)
 Alles Linux (1.10.2013 - 4.10.2013, `QualiVision <http://www.qualivision.ch/>`__ in Zürich)
 -------------------------------------------------------------------------------------------
 
-(:doc:`Mehr ... <2013-10-01/index>`)
+(:doc:`Mehr ... <detail/2013-10-01/index>`)
 
 * :doc:`../repertoire/linux-basics`
 * Ausgewähte Themen
