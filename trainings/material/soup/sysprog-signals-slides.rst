@@ -3,7 +3,7 @@ Signals (Slides)
 
 .. sidebar:: Slideshow
 
-   :download:`signals-slides.s5.html`
+   :download:`sysprog-signals-slides.s5.html`
 
 .. overview
 .. --------------------------------------------------------------------

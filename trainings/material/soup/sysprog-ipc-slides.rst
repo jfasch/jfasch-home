@@ -3,7 +3,7 @@ POSIX IPC (Slides)
 
 .. sidebar:: Slideshow
 
-   :download:`ipc-slides.s5.html`
+   :download:`sysprog-ipc-slides.s5.html`
 
 * **Unix IPC:** mechanisms to communicate between unrelated* processes
 

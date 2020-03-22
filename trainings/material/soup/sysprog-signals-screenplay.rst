@@ -46,8 +46,8 @@ Barebones Naive Program
 
      # echo core.%p > /proc/sys/kernel/core_pattern
 
-.. literalinclude:: signals-code/010-signal-basics.cc
-   :caption: :download:`signals-code/010-signal-basics.cc`
+.. literalinclude:: sysprog-signals-code/010-signal-basics.cc
+   :caption: :download:`sysprog-signals-code/010-signal-basics.cc`
    :language: c++
 
 Signal Handler
@@ -80,8 +80,8 @@ Signal Handler
     return value. Use ``sigaction`` from here on.
   * ``sigaction``: why is complicated better than simple?
 
-.. literalinclude:: signals-code/020-signal-handler.cc
-   :caption: :download:`signals-code/020-signal-handler.cc`
+.. literalinclude:: sysprog-signals-code/020-signal-handler.cc
+   :caption: :download:`sysprog-signals-code/020-signal-handler.cc`
    :language: c++
 
 Alarm
@@ -90,8 +90,8 @@ Alarm
 * Add ``alarm()`` periodic handler (i.e. re-arm in signal handler)
 * See how ``pause()`` is still interrupted
 
-.. literalinclude:: signals-code/030-signal-termination-alarm.cc
-   :caption: :download:`signals-code/030-signal-termination-alarm.cc`
+.. literalinclude:: sysprog-signals-code/030-signal-termination-alarm.cc
+   :caption: :download:`sysprog-signals-code/030-signal-termination-alarm.cc`
    :language: c++
 
 Multithreading
@@ -104,8 +104,8 @@ Innocent Multithreaded Program
 
 Consumes from n pipes, in n threads, and writes to stdout.
 
-.. literalinclude:: signals-code/040-mt-pipe.cc
-   :caption: :download:`signals-code/040-mt-pipe.cc`
+.. literalinclude:: sysprog-signals-code/040-mt-pipe.cc
+   :caption: :download:`sysprog-signals-code/040-mt-pipe.cc`
    :language: c++
 
 
@@ -115,15 +115,15 @@ Add ``SIGALRM``
 Add alarm handling to that. **Be puzzled why system calls are not
 interrupted in pipe threads as one would expect.**
 
-.. literalinclude:: signals-code/050-mt-pipe-alarm.cc
-   :caption: :download:`signals-code/050-mt-pipe-alarm.cc`
+.. literalinclude:: sysprog-signals-code/050-mt-pipe-alarm.cc
+   :caption: :download:`sysprog-signals-code/050-mt-pipe-alarm.cc`
    :language: c++
 
 Write a standalone single-threaded program and see system call
 interrupted.
 
-.. literalinclude:: signals-code/051-st-pipe-alarm.cc
-   :caption: :download:`signals-code/051-st-pipe-alarm.cc`
+.. literalinclude:: sysprog-signals-code/051-st-pipe-alarm.cc
+   :caption: :download:`sysprog-signals-code/051-st-pipe-alarm.cc`
    :language: c++
 
 **Discuss**

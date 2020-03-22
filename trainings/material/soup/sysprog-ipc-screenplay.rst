@@ -22,8 +22,8 @@ Virtual Memory, ``mmap()``
 * Basic ``mmap()`` demo: read ``/etc/passwd`` by creating a *mapping*
   and only using memory access.
 
-.. literalinclude:: shm-code/010-mmap.cc
-   :caption: :download:`shm-code/010-mmap.cc`
+.. literalinclude:: sysprog-ipc-code/shm/010-mmap.cc
+   :caption: :download:`sysprog-ipc-code/shm/010-mmap.cc`
    :language: c++
 
 * Give explanation of mappings
@@ -56,8 +56,8 @@ Create Shared Memory Segment
 * Zero size after create.
 * Use ``ftruncate()`` to resize as appropriate
 
-.. literalinclude:: shm-code/020-shm-create.cc
-   :caption: :download:`shm-code/020-shm-create.cc`
+.. literalinclude:: sysprog-ipc-code/shm/020-shm-create.cc
+   :caption: :download:`sysprog-ipc-code/shm/020-shm-create.cc`
    :language: c++
 
 Produce into Shared Memory
@@ -67,15 +67,15 @@ Produce into Shared Memory
   write operations *copy-on-write*)
 * Opens ``O_RDWR``: incrementing a counter requires reading it first.
 
-.. literalinclude:: shm-code/030-shm-produce.cc
-   :caption: :download:`shm-code/030-shm-produce.cc`
+.. literalinclude:: sysprog-ipc-code/shm/030-shm-produce.cc
+   :caption: :download:`sysprog-ipc-code/shm/030-shm-produce.cc`
    :language: c++
 
 Consume from Shared Memory
 .......................... 
 
-.. literalinclude:: shm-code/040-shm-consume.cc
-   :caption: :download:`shm-code/040-shm-consume.cc`
+.. literalinclude:: sysprog-ipc-code/shm/040-shm-consume.cc
+   :caption: :download:`sysprog-ipc-code/shm/040-shm-consume.cc`
    :language: c++
 
 POSIX Semaphores
@@ -90,22 +90,22 @@ Create Semaphore
 We create a semaphore with initial value 7 (7 ``wait`` operations
 without blocking).
 
-.. literalinclude:: shm-code/100-sem-create.cc
-   :caption: :download:`shm-code/100-sem-create.cc`
+.. literalinclude:: sysprog-ipc-code/shm/100-sem-create.cc
+   :caption: :download:`sysprog-ipc-code/shm/100-sem-create.cc`
    :language: c++
 
 Wait
 ....
 
-.. literalinclude:: shm-code/110-sem-wait.cc
-   :caption: :download:`shm-code/110-sem-wait.cc`
+.. literalinclude:: sysprog-ipc-code/shm/110-sem-wait.cc
+   :caption: :download:`sysprog-ipc-code/shm/110-sem-wait.cc`
    :language: c++
 
 Post
 ....
 
-.. literalinclude:: shm-code/120-sem-post.cc
-   :caption: :download:`shm-code/120-sem-post.cc`
+.. literalinclude:: sysprog-ipc-code/shm/120-sem-post.cc
+   :caption: :download:`sysprog-ipc-code/shm/120-sem-post.cc`
    :language: c++
 
 POSIX Message Queues
@@ -132,8 +132,8 @@ Create
      # mkdir mqueue-mount
      # mount -t mqueue blah mqueue-mount
 
-.. literalinclude:: mq-code/010-mq-create.cc
-   :caption: :download:`mq-code/010-mq-create.cc`
+.. literalinclude:: sysprog-ipc-code/mq/010-mq-create.cc
+   :caption: :download:`sysprog-ipc-code/mq/010-mq-create.cc`
    :language: c++
 
 Produce
@@ -141,8 +141,8 @@ Produce
 
 Produce a number of items, and see what mqueue-fs says.
 
-.. literalinclude:: mq-code/020-mq-produce.cc
-   :caption: :download:`mq-code/020-mq-produce.cc`
+.. literalinclude:: sysprog-ipc-code/mq/020-mq-produce.cc
+   :caption: :download:`sysprog-ipc-code/mq/020-mq-produce.cc`
    :language: c++
 
 Consume
@@ -150,7 +150,7 @@ Consume
 
 Show how a read blocks when queue is empty.
 
-.. literalinclude:: mq-code/030-mq-consume.cc
-   :caption: :download:`mq-code/030-mq-consume.cc`
+.. literalinclude:: sysprog-ipc-code/mq/030-mq-consume.cc
+   :caption: :download:`sysprog-ipc-code/mq/030-mq-consume.cc`
    :language: c++
 

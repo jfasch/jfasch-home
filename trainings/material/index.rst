@@ -8,14 +8,10 @@ Unterlagen & Download
 =====================
 
 .. toctree::
-   :caption: Sysprog
    :maxdepth: 1
+   :hidden:
 
-   sysprog/signals-screenplay
-   sysprog/signals-slides
-   sysprog/ipc-screenplay
-   sysprog/ipc-slides
-   python/generators-screenplay
+   soup
 
 Zu allen Kursen gibt es Unterlagen zum Download; Sie finden bei den
 Kursbeschreibungen direkte Links zu relevantem Material.
@@ -46,10 +42,10 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      -
    * - :doc:`/trainings/repertoire/sysprog-fortgeschrittenes`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
-     - - :doc:`sysprog/signals-slides`
-       - :doc:`sysprog/ipc-slides`
-     - - :doc:`sysprog/signals-screenplay`
-       - :doc:`sysprog/ipc-screenplay`
+     - - :doc:`soup/sysprog-signals-slides`
+       - :doc:`soup/sysprog-ipc-slides`
+     - - :doc:`soup/sysprog-signals-screenplay`
+       - :doc:`soup/sysprog-ipc-screenplay`
    * - :doc:`/trainings/repertoire/sysprog-embedded`
      -
      -

@@ -73,7 +73,6 @@ if True:
 
     # feed is http://feeds.feedburner.com/JoergFaschingbauer
 
-
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
@@ -86,6 +85,8 @@ html_static_path = ['_static']
 
 _BASIC = 'basic'
 _RTD = 'sphinx_rtd_theme'
+_BETTER = 'better'
+_CLOUD = 'cloud'
 _PYRAMID = 'pyramid'
 _PRESS = 'press'
 _NATURE = 'nature'
@@ -95,6 +96,8 @@ _BOOTSTRAP = 'bootstrap'
 html_theme = _ALABASTER
 html_theme_path = []
 html_theme_options = {}
+
+_jf_csss = []
 
 if html_theme == _ALABASTER:
     # RANT: the settings below (page_width 90%, sidebar_width 20% (of
@@ -170,8 +173,7 @@ if html_theme == _ALABASTER:
         'jf_note_bg': '#eee',
     })
 
-    def setup(app):
-        app.add_stylesheet('css/jf.css')
+    _jf_csss.append('css/jf.css')
 
 if html_theme == _RTD:
     # nav and location feedback really great
@@ -197,7 +199,15 @@ if html_theme == _RTD:
         # adding my own css.
         'extra_css_files': ['_static/css/jf.css'],
     })
-    
+
+if html_theme == _BETTER:
+    from better import better_theme_path
+    html_theme_path = [better_theme_path]
+
+if html_theme == _CLOUD:
+    html_theme_options['max_width'] = '100%'
+    pass
+
 if html_theme == _PYRAMID:
     import pyramid_sphinx_themes
     html_theme_path += pyramid_sphinx_themes.get_html_themes_path()
@@ -220,3 +230,24 @@ if html_theme == _BOOTSTRAP:
 
     import sphinx_bootstrap_theme
     html_theme_path += sphinx_bootstrap_theme.get_html_theme_path()
+
+
+
+
+def rstjinja(app, docname, source):
+    """
+    Render our pages as a jinja template for fancy templating goodness.
+    """
+    # Make sure we're outputting HTML
+    if app.builder.format != 'html':
+        return
+    src = source[0]
+    rendered = app.builder.templates.render_string(
+        src, app.config.html_context
+    )
+    source[0] = rendered
+
+def setup(app):
+    for css in _jf_csss:
+        app.add_stylesheet(css)
+    app.connect("source-read", rstjinja)
