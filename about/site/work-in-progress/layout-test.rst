@@ -96,10 +96,6 @@ orientieren und zurechtfinden kann.  blah
 Local Content
 -------------
 
-Have to write an extension someday that provides me an extension for
-that. Better yet, redefine the ``contents`` directive to wrap it in a
-sidebar somehow. Anyway, that's how it looks.
-
 .. contents::
    :local:
 
