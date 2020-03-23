@@ -86,9 +86,9 @@ Kursbeschreibungen direkte Links zu relevantem Material.
    * - :doc:`/trainings/repertoire/design-patterns`
      - :download:`Python <pdf/060-design-patterns-unittests.pdf>`
      -
-     - - :doc:`../log/detail/2020-03-30/gtest/basics-screenplay`
-       - :doc:`../log/detail/2020-03-30/gtest/cmake-screenplay`
-       - :doc:`../log/detail/2020-03-30/gtest/fixture-screenplay`
+     - - :doc:`soup/unittest-gtest-basics-screenplay`
+       - :doc:`soup/unittest-gtest-cmake-screenplay`
+       - :doc:`soup/unittest-gtest-fixture-screenplay`
    * - :doc:`/trainings/repertoire/kernel-programming-basics`
      - :download:`Kernel <pdf/400-kernel.pdf>`
      -

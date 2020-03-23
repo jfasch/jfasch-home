@@ -21,7 +21,7 @@ CMake and GTest (Screenplay)
   * Use distro's package manager
 
     * This is what we will do here
-    * Installed it already in :doc:`basics-screenplay`
+    * Installed it already in :doc:`unittest-gtest-basics-screenplay`
 
 Installed: to be found in Standard Paths
 ----------------------------------------
@@ -62,8 +62,8 @@ CMake: "Find Modules"
   * Usually in toplevel ``CMakeLists.txt``
   * ... but not necessarily so
 
-.. literalinclude:: ../../../../../CMakeLists.txt
-   :caption: :download:`../../../../../CMakeLists.txt`
+.. literalinclude:: ../../../CMakeLists.txt
+   :caption: :download:`../../../CMakeLists.txt`
    
 **Discussion**
 

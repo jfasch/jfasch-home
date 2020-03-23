@@ -5,9 +5,6 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
    :hidden:
 
    cmake/index
-   gtest/basics-screenplay
-   gtest/cmake-screenplay
-   gtest/fixture-screenplay
 
 Plan (sich entwickelnd)
 -----------------------
@@ -30,9 +27,9 @@ Plan (sich entwickelnd)
 
    **Screenplays**
 
-   * :doc:`gtest/basics-screenplay`
-   * :doc:`gtest/cmake-screenplay`
-   * :doc:`gtest/fixture-screenplay`
+   * :doc:`/trainings/material/soup/unittest-gtest-basics-screenplay`
+   * :doc:`/trainings/material/soup/unittest-gtest-cmake-screenplay`
+   * :doc:`/trainings/material/soup/unittest-gtest-fixture-screenplay`
 
    **Sonstiges**
 
@@ -54,8 +51,8 @@ des Trainings sein, warum also nicht den Kurs invertieren und uns von
 Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
 
 * :doc:`Livehacking: Einführung in Unittesting
-  <gtest/basics-screenplay>`, mittels `googletest
-  <https://github.com/google/googletest>`__
+  </trainings/material/soup/unittest-gtest-basics-screenplay>`,
+  mittels `googletest <https://github.com/google/googletest>`__
 * Klassen, Members ... C++ Basics
 * Konstruktoren, Destruktoren, am Beispiel Memoryleak.
 * `Auffinden von Leaks mit valgrind <https://valgrind.org/>`__

@@ -10,8 +10,8 @@ GTest Fixtures (Screenplay)
 Predefined Environment for a Number of Tests
 --------------------------------------------
 
-.. literalinclude:: fixture-code/predef-environ.cc
-   :caption: :download:`fixture-code/predef-environ.cc`
+.. literalinclude:: unittest-gtest-fixture-code/predef-environ.cc
+   :caption: :download:`unittest-gtest-fixture-code/predef-environ.cc`
    :language: c++
 
 **Discussion**
@@ -35,8 +35,8 @@ Predefined Environment for a Number of Tests
 Environment is *Isolated* Per Test
 ----------------------------------
 
-.. literalinclude:: fixture-code/isolated-environment.cc
-   :caption: :download:`fixture-code/isolated-environment.cc`
+.. literalinclude:: unittest-gtest-fixture-code/isolated-environment.cc
+   :caption: :download:`unittest-gtest-fixture-code/isolated-environment.cc`
    :language: c++
 
 **Discussion**
@@ -46,8 +46,8 @@ Environment is *Isolated* Per Test
 More Complex Environment: ``SetUp()``, ``TearDown()``
 -----------------------------------------------------
 
-.. literalinclude:: fixture-code/setup-teardown.cc
-   :caption: :download:`fixture-code/setup-teardown.cc`
+.. literalinclude:: unittest-gtest-fixture-code/setup-teardown.cc
+   :caption: :download:`unittest-gtest-fixture-code/setup-teardown.cc`
    :language: c++
 
 **Discussion**

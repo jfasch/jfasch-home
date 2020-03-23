@@ -27,8 +27,8 @@ Installation
 Simplest Test: No Test
 ----------------------
 
-.. literalinclude:: basics-code/simple.cc
-   :caption: :download:`basics-code/simple.cc`
+.. literalinclude:: unittest-gtest-basics-code/simple.cc
+   :caption: :download:`unittest-gtest-basics-code/simple.cc`
    :language: c++
 
 Compile and run:
@@ -51,8 +51,8 @@ tests there, so add two *suites*.
 
 * Test structure, suites
 
-.. literalinclude:: basics-code/self-contained.cc
-   :caption: :download:`basics-code/self-contained.cc`
+.. literalinclude:: unittest-gtest-basics-code/self-contained.cc
+   :caption: :download:`unittest-gtest-basics-code/self-contained.cc`
    :language: c++
 
 Compile and run:
@@ -152,8 +152,8 @@ Fatal Failure
 ``FAIL()`` is definitely *fatal*, in that the test stops immediately
 in it.
 
-.. literalinclude:: basics-code/fail.cc
-   :caption: :download:`basics-code/fail.cc`
+.. literalinclude:: unittest-gtest-basics-code/fail.cc
+   :caption: :download:`unittest-gtest-basics-code/fail.cc`
    :language: c++
 
 Compile and run:
@@ -184,8 +184,8 @@ Compile and run:
 ``ASSERT_*()``
 ..............
 
-.. literalinclude:: basics-code/assert.cc
-   :caption: :download:`basics-code/assert.cc`
+.. literalinclude:: unittest-gtest-basics-code/assert.cc
+   :caption: :download:`unittest-gtest-basics-code/assert.cc`
    :language: c++
 
 Compile and run:
@@ -225,8 +225,8 @@ Non-Fatal Failure
 
 Instead of using ``ASSERT_*()`` like above, use ``EXPECT_*()`` .
 
-.. literalinclude:: basics-code/expect.cc
-   :caption: :download:`basics-code/expect.cc`
+.. literalinclude:: unittest-gtest-basics-code/expect.cc
+   :caption: :download:`unittest-gtest-basics-code/expect.cc`
    :language: c++
 
 Compile and run:
@@ -292,20 +292,20 @@ Test Cases and Suites
 * Small standalone fragments, waiting to be aggregated.
 * Do nothing on their own
 
-.. literalinclude:: basics-code/tests/self-contained.cc
-   :caption: :download:`basics-code/tests/self-contained.cc`
+.. literalinclude:: unittest-gtest-basics-code/tests/self-contained.cc
+   :caption: :download:`unittest-gtest-basics-code/tests/self-contained.cc`
    :language: c++
 
-.. literalinclude:: basics-code/tests/fail.cc
-   :caption: :download:`basics-code/tests/fail.cc`
+.. literalinclude:: unittest-gtest-basics-code/tests/fail.cc
+   :caption: :download:`unittest-gtest-basics-code/tests/fail.cc`
    :language: c++
 
-.. literalinclude:: basics-code/tests/assert.cc
-   :caption: :download:`basics-code/tests/assert.cc`
+.. literalinclude:: unittest-gtest-basics-code/tests/assert.cc
+   :caption: :download:`unittest-gtest-basics-code/tests/assert.cc`
    :language: c++
 
-.. literalinclude:: basics-code/tests/expect.cc
-   :caption: :download:`basics-code/tests/expect.cc`
+.. literalinclude:: unittest-gtest-basics-code/tests/expect.cc
+   :caption: :download:`unittest-gtest-basics-code/tests/expect.cc`
    :language: c++
 
 
@@ -314,8 +314,8 @@ Runner
 
 * Aggregate them into a test-runner executable
 
-.. literalinclude:: basics-code/run-tests.cc
-   :caption: :download:`basics-code/run-tests.cc`
+.. literalinclude:: unittest-gtest-basics-code/run-tests.cc
+   :caption: :download:`unittest-gtest-basics-code/run-tests.cc`
    :language: c++
 
 * The main executable does not reference the tests in any way
