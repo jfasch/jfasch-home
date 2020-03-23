@@ -29,24 +29,12 @@ video conferencing solutions has grown dramatically
 end of March, has asked me if we could do the training online - using
 Microsoft Teams [#teamviewer_experience]_.
 
-I spent a couple of hours to work out if and how that is done on
+I spent a number of hours to work out if and how that is done on
 Linux, and to test all the details; this is what I want to share with
 you in this post. It is sure not a definitive guide as I am not a
 Microsoft expert [#driver_dont_tell_anybody]_, and things might have
 changed as you read this. Please :doc:`inform me
 </about/myself/contact>` if you have news.
-
-.. note::
-
-   What follows might not sound like I am a friend of Microsoft. (I
-   admit I'm not.) For a reason though - *"Cloud everywhere"* has
-   replaced *"Windows everywhere"* - Linux users see more openness
-   throughout the past decade. I appreciate that.
-
-   .. image:: cloud-linux.jpg
-      :scale: 30%
-
-.. _desktop-sharing-x11-revival:
 
 Screen Sharing: X11 Revival
 ---------------------------
