@@ -51,7 +51,7 @@ Configure a Subdomain, ``www.faschingbauer.me``
 
    All this does is to create a :file:`docs/CNAME`; pull the changes,
 
-   .. code-block:: shell
+   .. code-block:: console
 
       $ cd $HOME/jfasch-home-pages
       $ git pull
@@ -64,7 +64,7 @@ Configure a Subdomain, ``www.faschingbauer.me``
    URL - it may take some time until the changes have propagated to
    other name servers. Check like so,
 
-   .. code-block:: shell
+   .. code-block:: console
 
       $ dig www.faschingbauer.me
       
@@ -97,7 +97,7 @@ configuration: at the DNS provider, arrange that ``faschingbauer.me``
 points to one or more of Github's static IP addresses (taken from the
 output of the above ``dig`` command). These are,
 
-.. code-block::
+.. code-block:: console
 
    185.199.108.153
    185.199.109.153

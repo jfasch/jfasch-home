@@ -28,21 +28,21 @@ Barebones Naive Program
 
 * Discuss core (post mortem debugging)
 
-  .. code-block:: shell
+  .. code-block:: console
 
      $ cat /proc/sys/kernel/core_pattern 
      |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h
 
   Hmm. Don't want them to send that core home.
 
-  .. code-block:: shell
+  .. code-block:: console
 
      # echo core > /proc/sys/kernel/core_pattern
 
   Better yet, to prevent conflicts (many processes dumping to ``core``
   simultaneously)
 
-  .. code-block:: shell
+  .. code-block:: console
 
      # echo core.%p > /proc/sys/kernel/core_pattern
 

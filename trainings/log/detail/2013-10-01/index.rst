@@ -102,20 +102,20 @@ Fragen und Antworten
 
   Man setzt die MTU auf mehr als 1500 Bytes,
 
-  .. code-block:: shell
+  .. code-block:: console
 
      # ip link set dev eth0 mtu 9000
 
   oder 
 
-  .. code-block:: shell
+  .. code-block:: console
 
      # ifconfig eth0 mtu 9000
   
   Persistent abgelegt wird die Konfiguration auf Debian
   in ``/etc/network/interfaces``:
 
-  .. code-block:: shell
+  .. code-block:: console
 
      auto eth0
      iface eth0 inet static
@@ -125,7 +125,7 @@ Fragen und Antworten
 
   Vorsicht mit Routern, die die Pakete fragmentieren,
 
-  .. code-block:: shell
+  .. code-block:: console
 
      # traceroute --mtu ...
 

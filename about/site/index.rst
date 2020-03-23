@@ -12,7 +12,7 @@ This is work in progress (and will always be, like any software).
 * Progress is happening on `Github
   <https://github.com/jfasch/jfasch-home>`__.
 
-  .. code-block:: shell
+  .. code-block:: console
 
      $ git clone https://github.com/jfasch/jfasch-home.git
 

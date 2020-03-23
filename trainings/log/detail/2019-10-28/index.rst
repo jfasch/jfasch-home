@@ -88,7 +88,7 @@ list from the commandline, naively.
 
 The following program does that. Call it like so,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./eval-argv.py '[1, 2, 3, 4]'
 

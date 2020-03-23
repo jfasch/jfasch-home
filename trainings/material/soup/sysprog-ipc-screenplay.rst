@@ -127,7 +127,7 @@ Create
 * Create the queue
 * Mount the mqueue-fs, and look into it,
 
-  .. code-block:: shell
+  .. code-block:: console
 
      # mkdir mqueue-mount
      # mount -t mqueue blah mqueue-mount

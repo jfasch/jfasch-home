@@ -84,13 +84,13 @@ explicitly.
 
 Compile like so,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ gcc -o process-stack process-stack.c
 
 So, lets start with a small stack,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./process-stack 10
    PID: 24299
@@ -99,7 +99,7 @@ So, lets start with a small stack,
 Examine the various size attributes of the process, using the cool
 ``-o`` option to ``ps``:
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 24299
       VSZ    SZ  SIZE   RSS
@@ -141,13 +141,13 @@ even if it does not consume anything.
 
 Anyway, let's proceed with our tests and eat a million bytes stack.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./process-stack 1000000
    PID: 24908
    done
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 24908
       VSZ    SZ  SIZE   RSS
@@ -156,7 +156,7 @@ Anyway, let's proceed with our tests and eat a million bytes stack.
 Ok, the columns have grown within reason and reflect what we
 did. Next, we become a bit greedy and want ten million bytes
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./process-stack 10000000
    PID: 24960
@@ -165,20 +165,20 @@ did. Next, we become a bit greedy and want ten million bytes
 We've hit the stack size limit 8MB which places a barrier against
 greedy people,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ulimit -s
    8192
 
 Eight million bytes is ok, and ``ps`` gives no surprise.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./process-stack 8000000
    PID: 25018
    done
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 25018
       VSZ    SZ  SIZE   RSS
@@ -279,7 +279,7 @@ then shut up and sit. It looks as follows.
 
 Compile like so,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ gcc -pthread -o thread-stack thread-stack.c
 
@@ -289,12 +289,12 @@ Experiment #1: 100 default threads, eating no stack
 Let's create a hundred threads with default stack size, each eating
 100 bytes of stack.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 100 0 100
    PID: 31524
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 31524
       VSZ    SZ  SIZE   RSS
@@ -324,12 +324,12 @@ The first experiment created 100 threads with default stack size 8MB,
 and consumed almost nothing of the stacks. Lets eat up the stacks and
 see what ``ps`` reports this time.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 100 0 8000000
    PID: 771
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 771
       VSZ    SZ  SIZE   RSS
@@ -344,7 +344,7 @@ Experiment #3: 100 threads with limited stack
 
 See what effect a stack limit has.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 100 4096 10
    PID: 1026
@@ -354,12 +354,12 @@ Ok, we cannot limit the stack to only a single page. We don't insist
 (``PTHREAD_STACK_MIN`` is 4 pages anyway), so lets increase stack size
 and see what ``ps`` tells us.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 100 16384 10
    PID: 1125
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 1125
       VSZ    SZ  SIZE   RSS
@@ -383,12 +383,12 @@ threads with 8MB stack size each - 512*8MB == 4G. Let's try that out
 and create 513 threads. Each of the threads eats only 10 bytes of its
 stack.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 513 0 10
    PID: 2212
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 2212
       VSZ    SZ  SIZE   RSS
@@ -408,7 +408,7 @@ memory. Others still get their share. Nobody complained during
 experiment #4, music kept playing without noticeable stutter. Now lets
 actually use the stack.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 513 0 8000000
    PID: 4353
@@ -418,12 +418,12 @@ Ok, that's what I'd expect. Until the process was killed, the Red Hot
 Chili Peppers had become overly funky (audio glitches all over), and
 the Adobe Flash Plugin had crashed (Good Riddance). Less threads ...
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 400 0 8000000
    PID: 8462
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ps -o vsz,sz,size,rss -p 8462
       VSZ    SZ  SIZE   RSS
@@ -437,14 +437,14 @@ So, when I am able to create 400 threads which eat up their 8MB
 (default) stacks, then I should be able to create about 800 threads
 which eat up half of their 8MB stacks, right?
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 800 0 4000000
    PID: 11338
 
 That was ok, try 900 threads ...
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./thread-stack 900 0 4000000
    PID: 12156
@@ -467,7 +467,7 @@ out for is ``clone()``. ``clone()`` is used to create both processes
 (``fork()`` is implemented in terms of ``clone()``) and threads, just
 with different kinds of flags.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ strace -f ./thread-stack 30 0 10
 
@@ -476,7 +476,7 @@ only the interesting stuff. We have told the program to create 30
 threads with default stack size 8MB. Hence we see 30 blocks like this
 one,
 
-.. code-block:: shell
+.. code-block:: console
 
    [pid 14386] clone(child_stack=0x7f5813f22ff0,
              flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHA...) = 14413
@@ -508,7 +508,7 @@ What we see here is,
 Once mappings have been created, we can inspect them in the process's
 directory in the ``/proc`` filesystem:
 
-.. code-block:: shell
+.. code-block:: console
 
    $ cat /proc/14386/maps
    ...
@@ -525,7 +525,7 @@ seen from another pseudo-file in the process's ``/proc`` directory. (I
 can imagine that the presence of a second file with redundant
 information has historical reasons.)
 
-.. code-block:: shell
+.. code-block:: console
 
    $ cat /proc/14386/smaps
    ...

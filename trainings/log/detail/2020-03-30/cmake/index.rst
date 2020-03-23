@@ -22,7 +22,7 @@ The ``jfasch-home`` project is maintained on `Github
 <https://github.com/jfasch/jfasch-home>`__. Clone that. (I use to
 store project clones in ``~/work/``).
 
-.. code-block:: shell
+.. code-block:: console
 
    $ cd ~/work/
    $ git clone https://github.com/jfasch/jfasch-home.git
@@ -40,7 +40,7 @@ So, create a build directory. I use to create one in ``/var/jfasch``
 (which belongs to me, in a Unix sense). (``jfasch-home`` is the name
 of the project, and I like to name build roots after their sources.)
 
-.. code-block:: shell
+.. code-block:: console
 
    $ mkdir /var/jfasch/jfasch-home
 
@@ -51,7 +51,7 @@ Use ``cmake`` to massage the many ``CMakeLists.txt`` files in the
 source tree, and generate a parallel build tree in
 ``/var/jfasch/jfasch-home``.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ cd /var/jfasch/jfasch-home/
    $ cmake ~/work/jfasch-home

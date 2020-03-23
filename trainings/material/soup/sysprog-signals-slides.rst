@@ -71,7 +71,7 @@ Important Signals
 Sending, Commandline
 --------------------
 
-.. code-block:: shell
+.. code-block:: console
 
    $ kill -l
    ... signals here ...

@@ -54,7 +54,7 @@ material.
 * ``some-slides.s5.html`` (the S5 HTML) is created *manually*, into
   the same directory as ``some-slides.rst``.
 
-  .. code-block:: shell
+  .. code-block:: console
 
      $ rst2s5 --theme-url ../../_static/s5/ui/default \
 		  some-slides.rst some-slides.s5.html

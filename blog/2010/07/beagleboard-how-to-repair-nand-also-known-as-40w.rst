@@ -14,7 +14,7 @@ Beagleboard: How to Repair NAND (also known as 40W)
 
 It happened again. Friends of mine have an alias,
 
-.. code-block:: shell
+.. code-block:: console
 
    alias faschingbauer="rm -rf ~"
 
@@ -33,7 +33,7 @@ It happened to me that, during finding out the correct arguments of
 U-Boot's ``nand erase`` command, I hit the
 return key early - expecting that a sole
 
-.. code-block:: shell
+.. code-block:: console
 
    nand erase
 
@@ -131,7 +131,7 @@ steps.
 
 First off, we initialize MMC/SD.
 
-.. code-block:: shell
+.. code-block:: console
 
    OMAP3 beagleboard.org # mmc init
    mmc1 is available
@@ -154,7 +154,7 @@ as described in the `tech note
 <http://download.micron.com/pdf/technotes/nand/tn2916.pdf>`__, so we
 select it.
 
-..  code-block:: shell
+..  code-block:: console
 
     OMAP3 beagleboard.org # nandecc hw
     HW ECC selected
@@ -176,7 +176,7 @@ determined by looking in ``board-omap3beagle.c`` - 128K = 0x20000.
 Read the image into memory, and write it out 4 times, in the first
 four erase blocks of the partition.
 
-.. code-block:: shell
+.. code-block:: console
 
    OMAP3 beagleboard.org # fatload mmc 0 80200000 x-load.bin.ift
    reading x-load.bin.ift
@@ -204,7 +204,7 @@ Writing U-Boot to NAND
 Can't find which ECC incarnation the X-Loader uses, software seems to
 be the choice (sounds like the do-nothing-and-cross-fingers approach).
 
-.. code-block:: shell
+.. code-block:: console
 
    OMAP3 beagleboard.org # nandecc sw
    SW ECC selected
@@ -214,7 +214,7 @@ According to the kernel sources, U-Boot's partition starts at offset
 
 Erase NAND, load U-Boot from card, write it to the partition.
 
-.. code-block:: shell
+.. code-block:: console
 
    OMAP3 beagleboard.org # nand erase 80000 1e0000
    NAND erase: device 0 offset 0x80000, size 0x1e0000
@@ -235,13 +235,13 @@ prompt.
 Take care when you flash the kernel. In case you don't know the
 correct ``nand erase`` parameters, write
 
-.. code-block:: shell
+.. code-block:: console
 
    OMAP3 beagleboard.org # help nand
 
 instead of ``nand erase``. I suggest you type
 
-.. code-block:: shell
+.. code-block:: console
 
    OMAP3 beagleboard.org # nand erase 280000 400000
 

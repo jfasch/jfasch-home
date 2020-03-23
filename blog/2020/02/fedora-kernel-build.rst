@@ -29,7 +29,7 @@ external HDMI monitor is plugged via an adapter.
 * Wait a few seconds
 * Watch kernel go up in flames
 
-.. code-block::
+.. code-block:: console
    :caption: The Oops
 
    Feb 26 13:58:08 zen kernel: BUG: kernel NULL pointer dereference, address: 0000000000000080
@@ -80,7 +80,7 @@ external HDMI monitor is plugged via an adapter.
 Looking at the cause, we see that the crash is a NULL pointer that is
 deferenced in ``ucsi_displayport_remove_partner()``,
 
-.. code-block::
+.. code-block:: console
 
    Feb 26 13:58:08 zen kernel: BUG: kernel NULL pointer dereference, address: 0000000000000080
    ... (blah) ...
@@ -137,7 +137,7 @@ own patches on top of the vanilla kernel. Clone that, and create a
 development branch. (I am on Fedora 31, so I'm basing the branch on
 that.)
 
-.. code-block:: shell
+.. code-block:: console
 
    $ git clone git://git.kernel.org/pub/scm/linux/kernel/git/jwboyer/fedora.git
    $ git checkout -b jfasch-fix remotes/origin/f31
@@ -145,7 +145,7 @@ that.)
 Fix ``drivers/usb/typec/ucsi/displayport.c`` as sketched above, and
 commit.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ git commit -am 'fix RIP:ucsi_displayport_remove_partner()'
 
@@ -157,7 +157,7 @@ I made only one commit for which I want to create a patch. Find out
 the revision that this patch is based upon; it is one revision before
 the ``HEAD``.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ git show --quiet HEAD~1
    commit 4382f76bc8ef9fce5e7e96d4cdb0c073564ad249 (tag: kernel-5.5.6-201.fc31, origin/f31)
@@ -168,7 +168,7 @@ the ``HEAD``.
 
 Create the patch which we will pick up later,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ git format-patch -o /tmp 4382f76bc8ef9fce5e7e96d4cdb0c073564ad249
    /tmp/0001-fix-RIP-ucsi_displayport_remove_partner.patch
@@ -187,7 +187,7 @@ Prepare the RPM Build
 Install Prerequisites
 .....................
       
-.. code-block:: shell
+.. code-block:: console
 
    $ sudo dnf install rpmdevtools koji
 
@@ -197,7 +197,7 @@ Setup ``rpmbuild`` Directory
 Setup an empty RPM tree. This will simply create a directory
 ``rpmbuild`` skeleton tree in the home directory.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ rpmdev-setuptree
    $ tree ~/rpmbuild/
@@ -214,14 +214,14 @@ Download and Install Source RPM For Crashing Kernel
 Find out the version of the crashing kernel (the one that is currently
 running),
 
-.. code-block:: shell
+.. code-block:: console
 
    $ uname -r
    5.4.13-201.local.fc31.x86_64
 
 Download the corresponding source RPM from their build engine,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ koji download-build --arch=src kernel-5.4.13-201.fc31
    $ ls -l *.rpm
@@ -230,7 +230,7 @@ Download the corresponding source RPM from their build engine,
 Install the RPM. This will fill the ``~/rpmbuild/`` skeleton with the
 kenrel build instructions.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ rpm -ivh kernel-5.4.13-201.fc31.src.rpm 
    $ tree ~/rpmbuild/
@@ -251,7 +251,7 @@ Apply the Patch
 Copy the patch from above into the build tree, where the other patches
 are,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ cp /tmp/0001-fix-RIP-ucsi_displayport_remove_partner.patch \
        ~/rpmbuild/SOURCES/RIP-ucsi_displayport_remove_partner.patch
@@ -268,7 +268,7 @@ Edit the build specification, ``~/rpmbuild/SPECS/kernel.spec``, to
 Build the Kernel RPMs
 ---------------------
 
-.. code-block:: shell
+.. code-block:: console
 
    $ cd ~/rpmbuild/SPECS/
    $ rpmbuild -bb --target=x86_64 kernel.spec
@@ -283,7 +283,7 @@ Before doing this, make sure the following is available:
 Install Kernel
 --------------
 
-.. code-block:: shell
+.. code-block:: console
 
    $ sudo rpm -ivh --oldpackage \
       ~/rpmbuild/RPMS/x86_64/kernel-core-5.4.13-201.jfasch.fc31.x86_64.rpm \

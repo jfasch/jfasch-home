@@ -70,7 +70,7 @@ code, technically, so we do not want Github to build our site with
 Jekyll. This is what the ``.nojekyll`` file tells them to - *suppress
 build*.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ mkdir docs/
    $ cat <<EOF > docs/index.html
@@ -135,7 +135,7 @@ that's another story.)
 
 1. Build homepage, locally, with Sphinx
 
-   .. code-block:: shell
+   .. code-block:: console
 
       $ cd $HOME/jfasch-home
       $ make html
@@ -150,14 +150,14 @@ that's another story.)
    remembering that we have to preserve the :file:`docs/CNAME` file
    once we add a custom domain.
 
-   .. code-block:: shell
+   .. code-block:: console
 
       $ cd $HOME/jfasch-home-pages
       $ cp docs/CNAME /tmp/
 
 3. Remove existing site, and copy new site
 
-   .. code-block:: shell
+   .. code-block:: console
 
       $ cd $HOME/jfasch-home-pages
       $ git rm -r docs/
@@ -166,13 +166,13 @@ that's another story.)
 
 4. (Optional) Restore :file:`docs/CNAME`
 
-   .. code-block:: shell
+   .. code-block:: console
 
       $ cp /tmp/CNAME docs/
 
 5. Deploy (i.e. commit and push)
 
-   .. code-block:: shell
+   .. code-block:: console
 
       $ git add --all docs/
       $ git commit -am 'shiny new homepage version'

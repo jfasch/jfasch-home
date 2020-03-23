@@ -12,13 +12,13 @@ Installation
 
 **Fedora**:
 
-.. code-block:: shell
+.. code-block:: console
 
    # dnf install gtest-devel
 
 **Debian/Ubuntu**
 
-.. code-block:: shell
+.. code-block:: console
 
    # apt-get install libgtest-dev
 
@@ -33,7 +33,7 @@ Simplest Test: No Test
 
 Compile and run:
 
-.. code-block:: shell
+.. code-block:: console
 
    $ g++ simple.cc -o simple -lgtest
    $ ./simple 
@@ -57,7 +57,7 @@ tests there, so add two *suites*.
 
 Compile and run:
 
-.. code-block:: shell
+.. code-block:: console
 
    $ g++ self-contained.cc -o self-contained -lgtest
    $ ./self-contained 
@@ -79,7 +79,7 @@ Executing Tests Selectively
 
 Most importantly: RTFM
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./self-contained --help
    ...
@@ -92,7 +92,7 @@ Most importantly: RTFM
 Running the program executes all tests that are there, which might be
 many.
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./self-contained --gtest_list_tests
    OneSuite.
@@ -104,7 +104,7 @@ many.
 
 Want to run only ``OneSuite.Test2``,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./self-contained --gtest_filter='OneSuite.Test1'
    Note: Google Test filter = OneSuite.Test1
@@ -121,7 +121,7 @@ Want to run only ``OneSuite.Test2``,
 
 Filter is actually a *shell glob*,
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ./self-contained --gtest_filter='OneSuite*'
    Note: Google Test filter = OneSuite*

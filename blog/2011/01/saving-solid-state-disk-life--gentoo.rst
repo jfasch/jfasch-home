@@ -65,7 +65,7 @@ partition for the purpose of hibernating, which I don't configure in
 I usually suspend to RAM when at home, and when I move to the living
 room or board a train to Germany then I hibernate like so,
 
-.. code-block:: shell
+.. code-block:: console
 
    # sync && swapon /dev/sda1 && echo disk > /sys/power/state && swapoff /dev/sda1
 
@@ -85,7 +85,7 @@ places where I write continuously, and which can be mitigated easily.
 
 All that needs to be done is add two entries to ``/etc/fstab``:
 
-.. code-block:: shell
+.. code-block:: console
 
    portage-tmpfs /var/tmp/portage tmpfs rw 0 0
    tmp-tmpfs     /tmp             tmpfs rw 0 0
@@ -104,7 +104,7 @@ I tried to install openoffice. That piece of crap requires 6G of disk
 space for compilation! Ok, I take it I have to make an exception which
 reads like so,
 
-.. code-block:: shell
+.. code-block:: console
 
    # # (plug my USB throwaway 1TB disk)
    # mount /dev/sdc1 /mnt/disk
@@ -137,14 +137,14 @@ Mountpoint for messages
 I create a dedicated directory as a mountpoint, moving the
 ``messages`` one level deeper,
 
-.. code-block:: shell
+.. code-block:: console
 
    # rm /var/log/messages
    # mkdir /var/log/messages
 
 Mount a ``tmpfs`` there, using ``/etc/fstab``,
 
-.. code-block:: shell
+.. code-block:: console
 
    messages-tmp  /var/log/messages tmpfs rw 0 0
 
@@ -152,7 +152,7 @@ At this point you use ``mount -a`` to immediately create the
 mount. Next, tell ``syslog-ng`` about it. In
 ``/etc/syslog-ng/syslog-ng.conf`` write,
 
-.. code-block:: shell
+.. code-block:: console
 
     # ...
     destination messages { file("/var/log/messages/messages"); };
@@ -161,13 +161,13 @@ mount. Next, tell ``syslog-ng`` about it. In
 Logrotate
 .........
 
-.. code-block:: shell
+.. code-block:: console
 
    # emerge app-admin/logrotate
 
 Make sure ``cron`` is running (``rc-status|grep cron``, he runs ``logrotate``). ``syslog-ng`` already comes with a ``logrotate`` configuration file, ``/etc/logrotate.d/syslog-ng``. Tune this to our needs (rotate the file when its size exceeds 20M, keeping one compressed copy).
 
-.. code-block:: shell
+.. code-block:: console
 
    /var/log/messages/messages {
         compress
@@ -188,9 +188,9 @@ Kernel I/O Scheduler
 
 The kernel uses an algorithm called an I/O scheduler to optimize disk access. It does this by collecting read and write requests at adjacent disk locations. This is not necessary with SSDs as there are no disks and no heads. I switch off the scheduler for ``sda`` (which is the SSD), and keep the default scheduler (``cfq``) for USB disks I use to plug on occasion (for example if there's an openoffice update).</p><p>In ``/etc/conf.d/local.start`` I write,
 
-.. code-block:: shell
+.. code-block:: console
 
-   echo noop > /sys/block/sda/queue/scheduler
+   # echo noop > /sys/block/sda/queue/scheduler
 
 Use RAM for the Kernel Build
 ----------------------------
@@ -199,7 +199,7 @@ I am a big believer in out-of-source builds. The kernel build system
 is also capable of it, and I use to build the kernel in ``/tmp`` like
 so.
 
-.. code-block:: shell
+.. code-block:: console
 
    # mkdir /tmp/kernel-build
    # cp /boot/linux-2.6.36-gentoo-r5/.config /tmp/kernel-build

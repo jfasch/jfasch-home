@@ -163,7 +163,7 @@ Message Queue Filesystem: ``mqueue``
 
 * **Message queues visible as files:** the *mqueue* filesystem
 
-.. code-block:: shell
+.. code-block:: console
   
    # mount -t mqueue blah /mnt/mqueue
    # ls -l /mnt/mqueue/my-queue
@@ -249,7 +249,7 @@ Closing/Removing: ``sem_close(), ``sem_unlink()``
 Semaphores are Files
 --------------------
 
-.. code-block:: shell
+.. code-block:: console
 
    $ ls -l /dev/shm/
    total 1604
