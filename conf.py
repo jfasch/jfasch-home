@@ -18,14 +18,11 @@ sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
-
-project = 'Jörg Faschingbauer'
-copyright = '2020, Jörg Faschingbauer'
-author = 'Jörg Faschingbauer'
-
-# The full version, including alpha/beta/rc tags
-release = '0.0.0'
-
+_me = 'Jörg Faschingbauer'
+project = author = _me
+copyright = '2020, '+_me
+html_title = _me
+release = version = ''
 
 # -- General configuration ---------------------------------------------------
 master_doc = 'index'
