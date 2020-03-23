@@ -7,8 +7,6 @@ Basic GTest (Screenplay)
       :local:
       :depth: 1
 
-Siehe `Github <https://github.com/google/googletest>`__.
-
 Installation
 ------------
 

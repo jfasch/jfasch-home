@@ -29,12 +29,12 @@ video conferencing solutions has grown dramatically
 end of March, has asked me if we could do the training online - using
 Microsoft Teams [#teamviewer_experience]_.
 
-I spent a day or two to work out if and how that is done on Linux, and
-to test all the details; this is what I want to share with you in this
-post. It is sure not a definitive guide as I am not a Microsoft expert
-[#driver_dont_tell_anybody]_, and things might have changed as you
-read this. Please :doc:`inform me </about/myself/contact>` if you have
-news.
+I spent a couple of hours to work out if and how that is done on
+Linux, and to test all the details; this is what I want to share with
+you in this post. It is sure not a definitive guide as I am not a
+Microsoft expert [#driver_dont_tell_anybody]_, and things might have
+changed as you read this. Please :doc:`inform me
+</about/myself/contact>` if you have news.
 
 .. note::
 
@@ -100,8 +100,8 @@ RPM Package (Meh!)
 Download the RPM from `here
 <https://teams.microsoft.com/downloads>`__; it'll be available as
 ``~/Downloads/teams-1.3.00.5153-1.x86_64.rpm`` (your version might
-differ) if you used a browser. If you used ``wget`` then you know
-better where the file is.
+differ) if you used a browser for the download. If you used ``wget``
+then you know better where the file is.
 
 Install it as root,
 
@@ -170,8 +170,8 @@ Annoyance #2: (Re)Registers Itself For Autostart
 
 Logout, and back in. Teams pops up right into my face. Maybe that's
 the desired behavior in the office world where everyone's in a meeting
-at any given point in time. I live in a different world, though: when
-I want something to pop into my face at startup (I rarely do), I
+at any given point in time. I live in a different world though: when I
+want something to pop into my face in the morning (I rarely do), I
 configure it so.
 
 .. code-block:: console
@@ -209,8 +209,8 @@ Well, no, it's actually not so simple.
 
 * It does not work with Firefox 74.0 (shipped with Fedora 31, as of
   2020-03-22). The error message says something like "DOM storage not
-  enabled". Which is not true because it is enabled; this is where I
-  gave up.
+  enabled". I checked, DOM storage *is* enabled; this is where I gave
+  up.
 * It works in Chromium "Version 80.0.3987.132 (Developer Build) Fedora
   Project (64-bit)" (as it says) (shipped with Fedora 31, as of
   2020-03-22)

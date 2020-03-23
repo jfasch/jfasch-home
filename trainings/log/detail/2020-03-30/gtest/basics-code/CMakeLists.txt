@@ -14,11 +14,10 @@ ADD_EXECUTABLE(expect expect.cc)
 TARGET_LINK_LIBRARIES(expect GTest::GTest)
 
 ADD_EXECUTABLE(run-tests 
-
   run-tests.cc
   tests/self-contained.cc
   tests/fail.cc
   tests/assert.cc
   tests/expect.cc
   )
-TARGET_LINK_LIBRARIES(expect GTest::GTest)
+TARGET_LINK_LIBRARIES(run-tests GTest::GTest)

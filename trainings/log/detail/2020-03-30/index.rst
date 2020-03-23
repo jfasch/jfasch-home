@@ -7,6 +7,7 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
    cmake/index
    gtest/basics-screenplay
    gtest/cmake-screenplay
+   gtest/fixture-screenplay
 
 Plan (sich entwickelnd)
 -----------------------
@@ -31,11 +32,16 @@ Plan (sich entwickelnd)
 
    * :doc:`gtest/basics-screenplay`
    * :doc:`gtest/cmake-screenplay`
+   * :doc:`gtest/fixture-screenplay`
 
    **Sonstiges**
 
    * :doc:`Bauen der Seite mit CMake <cmake/index>`
    * :doc:`/blog/2020/03/ms-teams-on-linux`
+   * `Googletest <https://github.com/google/googletest>`__
+
+     * `Primer
+       <https://github.com/google/googletest/blob/master/googletest/docs/primer.md>`__
 
 Tag 1
 .....
