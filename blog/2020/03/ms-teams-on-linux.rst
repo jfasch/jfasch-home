@@ -38,10 +38,13 @@ news.
 
 .. note::
 
-   What follows might not sound like I am a friend of Microsoft (I
-   admit I'm not). I nevertheless really appreciate that they make
-   their software (and their service) available for us poor stubborn
-   Linux users.
+   What follows might not sound like I am a friend of Microsoft. (I
+   admit I'm not.) For a reason though - *"Cloud everywhere"* has
+   replaced *"Windows everywhere"* - Linux users see more openness
+   throughout the past decade. I appreciate that.
+
+   .. image:: cloud-linux.jpg
+      :scale: 30%
 
 .. _desktop-sharing-x11-revival:
 
