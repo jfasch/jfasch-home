@@ -1,3 +1,10 @@
+.. meta::
+   :description: Linux/C/C++/Python/etc Schulungen für Programmierer;
+                 Beratung für Softwareprojekte; Programmierung,
+                 Hardwareintegration
+   :keywords: linux, c, c++, python, beratung, training, schulung,
+              consulting, hardware, kernel, programmierung
+
 .. rst-class:: jf-main-page
 
 Linux und Open Source
