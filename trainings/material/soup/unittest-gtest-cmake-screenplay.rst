@@ -85,4 +85,21 @@ Consequentially, usage:
    ADD_EXECUTABLE(assert assert.cc)
    TARGET_LINK_LIBRARIES(assert GTest::GTest)
 
+Executing Tests As Part of Build
+--------------------------------
 
+.. code-block:: console
+
+   ADD_TEST(assert assert)
+
+* 1st arg: test name (cmake reports failures as such)
+* 2nd arg: command (from ``ADD_EXECUTABLE()``)
+
+Tests That Are Expected to Fail
+-------------------------------
+
+.. code-block:: console
+
+   SET_TESTS_PROPERTIES(
+     assert ... (maybe more)
+     PROPERTIES WILL_FAIL true)
