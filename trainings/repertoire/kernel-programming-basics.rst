@@ -1,3 +1,13 @@
+.. meta::
+   :description: Dieses Training vermittelt Grundkenntnisse der Linux
+		 Kernel Programmierung, und ermöglicht ihnen einen
+		 schnellen Start
+   :keywords: schulung, training, programming, c, linux, kernel, linux
+              kernel, driver, kernel driver, module, hardware, pci,
+              semaphore, mutex, spinlock, wait queue, waitqueue,
+              device, character device, block device, interrupt,
+              interrupt handler, isr
+
 Kernelprogrammierung: Einführung
 ================================
 

@@ -1,3 +1,12 @@
+.. meta::
+   :description: Dieses Training erklärt den Zweck von Design
+                 Patterns, gibt einen Überblick über die "Gang of
+                 Four" Patterns, udn verfestigt das vermittelte Wissen
+                 mit Übungen
+   :keywords: schulung, training, programming, c, c++, java, python,
+              architecture, design, patterns, oo, object, object
+              oriented
+
 Design Patterns
 ===============
 

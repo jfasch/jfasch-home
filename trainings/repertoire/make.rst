@@ -1,3 +1,10 @@
+.. meta::
+   :description: Dieses Training erklärt das Build-Tool GNU Make:
+                 Aufbau, Do's and Don'ts, Struktur, und Programmierung
+   :keywords: schulung, training, programming, c, linker, toolchain,
+              linux, embedded, make gnu, gnu make, rule, dependency,
+              build, build management
+
 GNU-Make
 ========
 

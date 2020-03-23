@@ -2,7 +2,10 @@
    :description: In diesem zweitägigen Training kommt es regelmäßig
                  vor, dass Teilnehmer am zweiten Tag sinnvoll
                  programmieren und Probleme lösen
-   :keywords: schulung, training, raspberry, programming, python
+   :keywords: schulung, training, raspberry, programming, python,
+              introduction, einführung, datentype, datatype,
+              dictionary, list, tuple, mutable, immutable, function,
+              class, exception, batteries, string, encoding, file
 
 Python Grundlagen
 =================

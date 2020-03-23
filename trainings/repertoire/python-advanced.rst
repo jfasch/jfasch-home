@@ -2,7 +2,10 @@
    :description: Basierend auf Python-Basiswissen vermittelt dieses
                  Training Einblicke in die Genialität und Einfachheit
                  der Sprache
-   :keywords: schulung, training, programming, python
+   :keywords: schulung, training, programming, python, advanced,
+              exceptions, object, object model, inheritance, class,
+              constructor, module, package, unittest, iteration ,
+              generator, setup, distutils, setuptools
 
 Python für Fortgeschrittene
 ===========================

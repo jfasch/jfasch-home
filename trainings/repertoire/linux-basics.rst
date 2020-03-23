@@ -1,3 +1,11 @@
+.. meta::
+   :description: Eine Linux-Einführung für Programmierer, Tester,
+                 Architekten, Hardwerker, und alle, die Shell und
+                 Systemkonzpte verstehen wollen
+   :keywords: schulung, training, programming, embedded, linux, shell,
+              bash, bourne shell, redirection, console, kill, ps, cat,
+              less, pipe, filesystem, grep, debugging, scripting
+
 Linux Basics: Eine Einführung Anhand von Beispielen
 ===================================================
 
