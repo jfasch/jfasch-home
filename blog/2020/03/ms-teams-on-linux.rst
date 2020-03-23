@@ -17,11 +17,7 @@ Using Microsoft Teams on Linux
    .. contents::
       :local:
 
-I have used `Teamviewer <https://www.teamviewer.com/>`__ in the past,
-as a part-time teacher at `FH Joanneum
-<https://www.fh-joanneum.at/>`__ - it works great on Linux.
-
-Nowadays, I occasionally run :doc:`trainings </trainings/index>` for
+I frequently run :doc:`trainings </trainings/index>` for
 companies. These trainings use to take place physically - I book hotel
 and train for the duration of the training, meet people face to face,
 have fun, and then travel home again.
@@ -31,7 +27,7 @@ working from home [#homeoffice_should_be_default]_, and the demand for
 video conferencing solutions has grown dramatically
 [#microsoft_conspiracy_theory]_. A customer, having ordered a training
 end of March, has asked me if we could do the training online - using
-Microsoft Teams.
+Microsoft Teams [#teamviewer_experience]_.
 
 I spent a day or two to work out if and how that is done on Linux, and
 to test all the details; this is what I want to share with you in this
@@ -242,3 +238,11 @@ Well, no, it's actually not so simple.
                                for Windows
                                <projekte-device-driver-for-doze>`, but
                                please don't tell anybody.
+
+.. [#teamviewer_experience] I have used `Teamviewer
+			    <https://www.teamviewer.com/>`__ in the
+			    past, as a part-time teacher at `FH
+			    Joanneum
+			    <https://www.fh-joanneum.at/>`__ - it
+			    works great on Linux.
+
