@@ -80,9 +80,20 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      -
      -
    * - :doc:`/trainings/repertoire/python-advanced`
+     - :download:`Python <pdf/300-python.pdf>`
      -
      -
+   * - :doc:`/trainings/repertoire/design-patterns`
+     - :download:`Python <pdf/060-design-patterns-unittests.pdf>`
      -
+     - - :doc:`../log/detail/2020-03-30/gtest/basics-screenplay`
+       - :doc:`../log/detail/2020-03-30/gtest/cmake-screenplay`
+       - :doc:`../log/detail/2020-03-30/gtest/fixture-screenplay`
+   * - :doc:`/trainings/repertoire/kernel-programming-basics`
+     - :download:`Kernel <pdf/400-kernel.pdf>`
+     -
+     - (See `jf-kernel-course on Github
+       <https://github.com/jfasch/jf-kernel-course>`__)
    * - :doc:`/trainings/repertoire/bash`
      - :download:`Bash <pdf/100-shell-scripting.pdf>`
      -
@@ -91,7 +102,11 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - :download:`GNU Make <pdf/040-gnu-make.pdf>`
      -
      -
-   * - :doc:`/trainings/repertoire/svn`
+   * - :doc:`/trainings/repertoire/cmake`
+     - :download:`GNU Make <pdf/045-cmake.pdf>`
      -
+     -
+   * - :doc:`/trainings/repertoire/svn`
+     - :download:`Subversion <pdf/070-subversion.pdf>`
      -
      -
