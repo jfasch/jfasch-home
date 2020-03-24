@@ -24,10 +24,9 @@ have fun, and then travel home again.
 
 Things have changed: it's the *Age Of The Corona Virus*, everybody's
 working from home [#homeoffice_should_be_default]_, and the demand for
-video conferencing solutions has grown dramatically
-[#microsoft_conspiracy_theory]_. A customer, having ordered a training
-end of March, has asked me if we could do the training online - using
-Microsoft Teams [#teamviewer_experience]_.
+video conferencing solutions has grown dramatically. A customer,
+having ordered a training end of March, has asked me if we could do
+the training online - using Microsoft Teams [#teamviewer_experience]_.
 
 I spent a number of hours to work out if and how that is done on
 Linux, and to test all the details; this is what I want to share with
@@ -35,6 +34,8 @@ you in this post. It is sure not a definitive guide as I am not a
 Microsoft expert [#driver_dont_tell_anybody]_, and things might have
 changed as you read this. Please :doc:`inform me
 </about/myself/contact>` if you have news.
+
+.. _desktop-sharing-x11-revival:
 
 Screen Sharing: X11 Revival
 ---------------------------
@@ -50,11 +51,14 @@ there to keep X11 applications happy.
 Smooth - except for cornercases like X11 programs which want to share
 the desktop, apparently. For Teams, this means:
 
-* The RPM native desktop app crashes hard when you hover over the
-  "share screen" field.
-* The browser app, from the sharer's point of view, appears to share
-  like you tell it to. Meeting participants only see the mouse on a
-  black screen, no matter what the sharer does.
+* Teams is obviously an X11 program.
+* The :ref:`native desktop app (the RPM installation)
+  <ms-teams-desktop-app>` crashes hard when you hover over the "share
+  screen" field.
+* The :ref:`browser app <ms-teams-browser-app>`, from the sharer's
+  point of view, appears to share like you tell it to. Meeting
+  participants only see the mouse on a black screen, no matter what
+  the sharer does.
 
 So, here's how to make your login screen start an X11 session, rather
 than a Wayland session.
@@ -79,6 +83,8 @@ Switch to X11,
 
 Log out (i.e. terminate the current Wayland session), log back in
 (i.e. start an X11 session), done.
+
+.. _ms-teams-desktop-app:
 
 RPM Package (Meh!)
 ------------------
@@ -178,6 +184,8 @@ But no.
 
    $ sudo rpm -e teams
 
+.. _ms-teams-browser-app:
+
 Run In Browser (My Recommendation)
 ----------------------------------
 
@@ -215,15 +223,6 @@ Well, no, it's actually not so simple.
                                    the purpose of gaming, streaming,
                                    and pornwatching - and work from
                                    home more.
-
-.. [#microsoft_conspiracy_theory] It's also the age of conspiracy
-                                  theories. "That's `Roche again
-                                  <https://www.zeit.de/wissen/gesundheit/2012-01/tamiflu-cochrane-wirksamkeit>`__!"
-                                  I take the opportunity to add
-                                  another one, "That's Microsoft
-                                  marketing their products more
-                                  aggressively than even Steve Ballmer
-                                  was able to!" (*Satire!*)
 
 .. [#driver_dont_tell_anybody] I have :ref:`written a device driver
                                for Windows
