@@ -175,7 +175,7 @@ if html_theme == _ALABASTER:
         'jf_note_bg': '#eee',
     })
 
-    _jf_csss.append('css/jf.css')
+    _jf_csss.append('css/jf-alabaster.css')
 
 if html_theme == _RTD:
     # nav and location feedback really great
@@ -252,6 +252,7 @@ def rstjinja(app, docname, source):
 def setup(app):
     for css in _jf_csss:
         app.add_stylesheet(css)
+
     app.connect("source-read", rstjinja)
 
     # html_sidebars has two matches, and both match any /blog/
@@ -262,7 +263,8 @@ def setup(app):
     # (rant) I have no idea what's the benefit of wrapping loggers
     # into LoggerAdapter's. Or what SphinxLoggerAdapter's purpose
     # is. Fortunately the LoggerAdapter (victim.logger) is friendly
-    # enough to have a 'logger' member. gosh. overengineering.
+    # enough to have a 'logger' member. gosh; I only want to silence a
+    # warning.
     class NoWarnMultipleMatches(logging.Filter):
         def filter(self, record):
             return 'matches two patterns in html_sidebars' not in record.getMessage()
