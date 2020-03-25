@@ -16,7 +16,6 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
-
 # -- Project information -----------------------------------------------------
 _me = 'Jörg Faschingbauer'
 project = author = _me
@@ -39,6 +38,8 @@ extensions = [
     'ablog',
     'nbsphinx',
     'sphinxcontrib.fulltoc',
+
+    'jf',
 ]
 todo_include_todos = True
 
