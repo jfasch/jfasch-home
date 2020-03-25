@@ -7,8 +7,11 @@ Basic GTest (Screenplay)
       :local:
       :depth: 1
 
+Before We Start
+---------------
+
 Installation
-------------
+............
 
 **Fedora**:
 
@@ -21,6 +24,20 @@ Installation
 .. code-block:: console
 
    # apt-get install libgtest-dev
+
+Documentation
+.............
+
+* `Googletest <https://github.com/google/googletest>`__
+
+  * `Primer
+    <https://github.com/google/googletest/blob/master/googletest/docs/primer.md>`__
+  * `Advanced
+    <https://github.com/google/googletest/blob/master/googletest/docs/advanced.md>`__
+  * `gMock for Dummies
+    <https://github.com/google/googletest/blob/master/googlemock/docs/for_dummies.md>`__
+  * `Cookbook
+    <https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md>`__
 
 .. _gtest-basics-simple:
 
@@ -77,7 +94,7 @@ Compile and run:
 Executing Tests Selectively
 ---------------------------
 
-Most importantly: RTFM
+Most important: RTFM
 
 .. code-block:: console
 
@@ -266,6 +283,15 @@ Compile and run:
 * Both ``EXPECT_()`` are evaluated
 * Test continues to run
 * Reported as *failed* nonetheless
+
+Custom Message Output
+---------------------
+
+All test macros support ``<<`` ``ostream`` operators.
+
+.. literalinclude:: unittest-gtest-basics-code/fail-with-message.cc
+   :caption: :download:`unittest-gtest-basics-code/fail-with-message.cc`
+   :language: c++
 
 Last Not Least: Structure
 -------------------------

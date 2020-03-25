@@ -3,7 +3,6 @@ Details
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    2020-03-30/index
    2020-01-10/index

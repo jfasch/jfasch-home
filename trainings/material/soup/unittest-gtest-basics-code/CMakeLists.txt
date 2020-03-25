@@ -18,6 +18,10 @@ ADD_EXECUTABLE(expect expect.cc)
 TARGET_LINK_LIBRARIES(expect GTest::GTest)
 ADD_TEST(expect expect)
 
+ADD_EXECUTABLE(fail-with-message fail-with-message.cc)
+TARGET_LINK_LIBRARIES(fail-with-message GTest::GTest)
+ADD_TEST(fail-with-message fail-with-message)
+
 ADD_EXECUTABLE(run-tests 
   run-tests.cc
   tests/self-contained.cc
@@ -32,5 +36,5 @@ ADD_TEST(run-tests run-tests)
 # these will fail. they are only demos, so don't fail the entire
 # build.
 SET_TESTS_PROPERTIES(
-  fail assert expect run-tests 
+  fail assert expect fail-with-message run-tests 
   PROPERTIES WILL_FAIL true)
