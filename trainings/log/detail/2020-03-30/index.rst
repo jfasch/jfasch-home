@@ -30,6 +30,7 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/unittest-gtest-basics-screenplay`
    * :doc:`/trainings/material/soup/unittest-gtest-cmake-screenplay`
    * :doc:`/trainings/material/soup/unittest-gtest-fixture-screenplay`
+   * :doc:`/trainings/material/soup/c++-class-intro-screenplay`
 
    **Sonstiges**
 

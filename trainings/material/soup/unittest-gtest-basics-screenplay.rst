@@ -18,12 +18,14 @@ Installation
 .. code-block:: console
 
    # dnf install gtest-devel
+   # dnf install gmock-devel
 
 **Debian/Ubuntu**
 
 .. code-block:: console
 
    # apt-get install libgtest-dev
+   # apt-get install libgmock-dev
 
 Documentation
 .............

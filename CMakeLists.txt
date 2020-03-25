@@ -11,3 +11,4 @@ FIND_PACKAGE(GTest REQUIRED)
 FIND_PACKAGE(Threads REQUIRED)
 
 ADD_SUBDIRECTORY(trainings/material/soup)
+ADD_SUBDIRECTORY(trainings/log/detail/2020-03-30/code)
