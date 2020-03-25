@@ -17,6 +17,11 @@ Using Microsoft Teams on Linux
    .. contents::
       :local:
 
+.. note::
+
+   **TL;DR**: :ref:`back to X11 <desktop-sharing-x11-revival>`, and
+   then :ref:`use Chromium <ms-teams-browser-app>`.
+
 I frequently run :doc:`trainings </trainings/index>` for
 companies. These trainings use to take place physically - I book hotel
 and train for the duration of the training, meet people face to face,
