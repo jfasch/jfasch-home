@@ -1,5 +1,28 @@
-Gesamte Suppe
-=============
+The Entire Soup
+===============
+
+.. note::
+
+   See :doc:`here </trainings/log/detail/2020-03-30/cmake/index>` for
+   how to build the sample code that is referenced.
+
+Live Hacking Screenplays
+------------------------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   soup/*screenplay*
+
+Slides
+------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   soup/*slides*
 
 PDF Downloads
 -------------
@@ -15,12 +38,3 @@ PDF Downloads
 * :download:`pdf/100-shell-scripting.pdf`
 * :download:`pdf/300-python.pdf`
 * :download:`pdf/400-kernel.pdf`
-
-Web Material
-------------
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   soup/*
