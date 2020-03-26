@@ -74,7 +74,7 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - - :download:`C++03 <pdf/055-c++03.pdf>`
        - :download:`C++11 <pdf/056-c++11.pdf>`
      -
-     -
+     - :doc:`soup/c++-class-intro-screenplay`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
      -
