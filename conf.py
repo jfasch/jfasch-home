@@ -137,7 +137,7 @@ if html_theme == _ALABASTER:
 
     html_theme_options.update({
         'fixed_sidebar': True,
-        'logo': 'logo.jpg',
+        'logo': 'logo.png',
         'description': 'Linux und Open Source',
         'page_width': '90%',
         'sidebar_width': '20%',
