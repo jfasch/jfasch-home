@@ -1,12 +1,7 @@
 Über Mich
 =========
 
-Ich bin in der glücklichen Lage, dass mir mein Beruf Spaß
-macht. Dieses Privileg ist mir sehr viel wert, und ich möchte es um
-jeden Preis erhalten. Auf dieser Seite möchte ich Ihnen meinen
-Werdegang unter diesem speziellen Gesichtspunkt schildern.
-
-Der Werdegang ist aber nur mäßig interessant; folgen Sie bitte einem
+Der Werdegang ist nur mäßig interessant; folgen Sie bitte einem
 der folgenden Links, um zu einem zielgerichteteren Überblick zu
 gelangen:
 
@@ -17,6 +12,11 @@ gelangen:
    cv-de
    skills-de
    projects-de
+
+Ich bin in der glücklichen Lage, dass mir mein Beruf Spaß
+macht. Dieses Privileg ist mir sehr viel wert, und ich möchte es um
+jeden Preis erhalten. Auf dieser Seite möchte ich Ihnen meinen
+Werdegang unter diesem speziellen Gesichtspunkt schildern.
 
 Programmieren, Linux, und ich
 -----------------------------
