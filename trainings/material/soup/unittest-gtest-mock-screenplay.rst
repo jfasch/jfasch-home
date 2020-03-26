@@ -5,7 +5,6 @@ Screenplay: Unittest: GTest Mocks
 
    .. contents::
       :local:
-      :depth: 1
 
    **Code**: :doc:`unittest-gtest-mock-code/index`
 

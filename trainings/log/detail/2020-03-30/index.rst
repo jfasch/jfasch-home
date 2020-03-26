@@ -31,6 +31,7 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/unittest-gtest-cmake-screenplay`
    * :doc:`/trainings/material/soup/unittest-gtest-fixture-screenplay`
    * :doc:`/trainings/material/soup/c++-class-intro-screenplay`
+   * :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
 
    **Sonstiges**
 
@@ -54,14 +55,24 @@ Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
 * :doc:`Livehacking: Einführung in Unittesting
   </trainings/material/soup/unittest-gtest-basics-screenplay>`,
   mittels `googletest <https://github.com/google/googletest>`__
-* Klassen, Members ... C++ Basics
-* Konstruktoren, Destruktoren, am Beispiel Memoryleak.
-* `Auffinden von Leaks mit valgrind <https://valgrind.org/>`__
-* `RAII <https://en.cppreference.com/w/cpp/language/raii>`__
-* Methoden, ``this``
-* ``<iostream>``, zumindest rudimentär
 * :doc:`CMake <cmake/index>` im Vorbeigehen, sobald der angehäufte C++
   Code zu gross wird. Eher früher als später.
+* :doc:`Klassen, Members ... C++ Basics
+  </trainings/material/soup/c++-class-intro-screenplay>`
+
+  * Methoden, ``this``
+
+* :doc:`Dynamisches Memory
+  </trainings/material/soup/c++-dynamic-memory-screenplay>`: ``new``,
+  ``delete``, ``[]``
+
+  * `Auffinden von Leaks mit valgrind <https://valgrind.org/>`__
+
+* Konstruktoren und Destruktoren, am Beispiel Memoryleak.
+
+  * `RAII <https://en.cppreference.com/w/cpp/language/raii>`__
+
+* ``<iostream>``, zumindest rudimentär
 
 Tag 2
 .....

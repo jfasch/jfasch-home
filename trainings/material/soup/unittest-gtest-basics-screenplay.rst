@@ -5,7 +5,6 @@ Screenplay: Unittest: GTest Basics
 
    .. contents::
       :local:
-      :depth: 1
 
    **Code**: :doc:`unittest-gtest-basics-code/index`
 

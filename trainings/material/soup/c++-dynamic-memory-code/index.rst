@@ -1,5 +1,5 @@
-Code: C++: Basic Class
-======================
+Code: C++: Dynamic Memory
+=========================
 
 .. todo::
 

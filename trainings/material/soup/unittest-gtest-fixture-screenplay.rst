@@ -5,7 +5,6 @@ Screenplay: Unittest: GTest Fixtures
 
    .. contents::
       :local:
-      :depth: 1
 
    **Code**: :doc:`unittest-gtest-fixture-code/index`
 

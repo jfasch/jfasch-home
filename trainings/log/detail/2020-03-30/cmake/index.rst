@@ -52,10 +52,15 @@ Use ``cmake`` to massage the many ``CMakeLists.txt`` files in the
 source tree, and generate a parallel build tree in
 ``/var/jfasch/jfasch-home``.
 
+.. _cmake-debug-build:
+
 .. code-block:: console
 
    $ cd /var/jfasch/jfasch-home/
    $ cmake ~/work/jfasch-home
+
+   # ... for debug builds:
+   $ cmake -DCMAKE_BUILD_TYPE=Release ~/work/jfasch-home
    
 When successful (the project has a number of dependencies to external
 libraries, and ``cmake`` complains loudly when it cannot find them),

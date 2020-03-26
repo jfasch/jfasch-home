@@ -1,11 +1,10 @@
-Screenplay: C++: The Very Basics
-================================
+Screenplay: C++: Basic Class
+============================
 
 .. sidebar:: Contents
 
    .. contents::
       :local:
-      :depth: 1
 
    **Code**: :doc:`c++-class-intro-code/index`
 

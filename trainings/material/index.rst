@@ -111,7 +111,6 @@ Kursbeschreibungen direkte Links zu relevantem Material.
        - :doc:`soup/unittest-gtest-cmake-screenplay`
        - :doc:`soup/unittest-gtest-fixture-screenplay`
      - - :doc:`soup/unittest-gtest-basics-code/index`
-       - :doc:`soup/unittest-gtest-cmake-code/index`
        - :doc:`soup/unittest-gtest-fixture-code/index`
    * - :doc:`/trainings/repertoire/kernel-programming-basics`
      - :download:`Kernel <pdf/400-kernel.pdf>`
