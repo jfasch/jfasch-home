@@ -22,3 +22,6 @@ help:
 
 clean::
 	rm -rf "$(BUILDDIR)"
+
+tildeclean::
+	find $(SOURCEDIR) -type f -name '*~' -delete

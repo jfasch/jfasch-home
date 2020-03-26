@@ -6,13 +6,15 @@
    :keywords: linux, systemnah, schulung, training, programming, ipc,
               shared memory, semaphore, message queue
 
-POSIX IPC (Live Hacking Screenplay)
-===================================
+Screenplay: Sysprog: POSIX IPC
+==============================
 
 .. sidebar:: Contents
 
    .. contents::
       :local:
+
+   **Code**: :doc:`sysprog-ipc-code/index`
 
 Virtual Memory, ``mmap()``
 --------------------------

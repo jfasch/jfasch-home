@@ -4,13 +4,15 @@
                  generators are
    :keywords: python, schulung, training, programming
 
-Generators (Live Hacking Screenplay)
-====================================
+Screenplay: Python: Generators
+==============================
 
 .. sidebar:: Contents
 
    .. contents::
       :local:
+
+   **Code**: :doc:`python-generators-code/index`
 
 Fibonacci Numbers: Naive List
 -----------------------------

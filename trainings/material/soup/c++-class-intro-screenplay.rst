@@ -1,11 +1,13 @@
-C++: The Very Basics (Screenplay)
-=================================
+Screenplay: C++: The Very Basics
+================================
 
 .. sidebar:: Contents
 
    .. contents::
       :local:
       :depth: 1
+
+   **Code**: :doc:`c++-class-intro-code/index`
 
 Plain Old C: No Encapsulation
 -----------------------------

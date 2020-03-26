@@ -11,7 +11,7 @@ Unterlagen & Download
    :maxdepth: 1
    :hidden:
 
-   soup
+   soup/index
 
 Zu allen Kursen gibt es Unterlagen zum Download; Sie finden bei den
 Kursbeschreibungen direkte Links zu relevantem Material.
@@ -24,7 +24,9 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - **PDF**
      - **S5**
      - **Live Hacking**
+     - **Code**
    * - :doc:`/trainings/repertoire/linux-basics`
+     -
      -
      -
      -
@@ -32,12 +34,15 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
      -
+     -
    * - :doc:`/trainings/repertoire/sysprog-network`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
      -
+     -
    * - :doc:`/trainings/repertoire/sysprog-multithreading`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
+     -
      -
      -
    * - :doc:`/trainings/repertoire/sysprog-fortgeschrittenes`
@@ -46,7 +51,10 @@ Kursbeschreibungen direkte Links zu relevantem Material.
        - :doc:`soup/sysprog-ipc-slides`
      - - :doc:`soup/sysprog-signals-screenplay`
        - :doc:`soup/sysprog-ipc-screenplay`
+     - - :doc:`soup/sysprog-signals-code/index`
+       - :doc:`soup/sysprog-ipc-code/index`
    * - :doc:`/trainings/repertoire/sysprog-embedded`
+     -
      -
      -
      -
@@ -54,7 +62,9 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      -
      -
      -
+     -
    * - :doc:`/trainings/repertoire/kettner-lfs-descr`
+     -
      -
      -
      -
@@ -62,12 +72,15 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - :download:`C <pdf/050-c.pdf>`
      -
      -
+     -
    * - :doc:`/trainings/repertoire/c-refresher`
      - :download:`C <pdf/050-c.pdf>`
      -
      -
+     -
    * - :doc:`/trainings/repertoire/c-advanced`
      - :download:`C <pdf/050-c.pdf>`
+     -
      -
      -
    * - :doc:`/trainings/repertoire/cxx`
@@ -75,38 +88,54 @@ Kursbeschreibungen direkte Links zu relevantem Material.
        - :download:`C++11 <pdf/056-c++11.pdf>`
      -
      - :doc:`soup/c++-class-intro-screenplay`
+     - :doc:`soup/c++-class-intro-code/index`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
      -
      -
+     - :doc:`soup/python-generators-code/index`
    * - :doc:`/trainings/repertoire/python-advanced`
      - :download:`Python <pdf/300-python.pdf>`
      -
      -
+     - :doc:`soup/python-generators-code/index`
    * - :doc:`/trainings/repertoire/design-patterns`
+     - :download:`Python <pdf/060-design-patterns-unittests.pdf>`
+     -
+     - 
+     -
+   * - :doc:`/trainings/repertoire/unittests`
      - :download:`Python <pdf/060-design-patterns-unittests.pdf>`
      -
      - - :doc:`soup/unittest-gtest-basics-screenplay`
        - :doc:`soup/unittest-gtest-cmake-screenplay`
        - :doc:`soup/unittest-gtest-fixture-screenplay`
+     - - :doc:`soup/unittest-gtest-basics-code/index`
+       - :doc:`soup/unittest-gtest-cmake-code/index`
+       - :doc:`soup/unittest-gtest-fixture-code/index`
    * - :doc:`/trainings/repertoire/kernel-programming-basics`
      - :download:`Kernel <pdf/400-kernel.pdf>`
      -
      - (See `jf-kernel-course on Github
        <https://github.com/jfasch/jf-kernel-course>`__)
+     -
    * - :doc:`/trainings/repertoire/bash`
      - :download:`Bash <pdf/100-shell-scripting.pdf>`
+     -
      -
      -
    * - :doc:`/trainings/repertoire/make`
      - :download:`GNU Make <pdf/040-gnu-make.pdf>`
      -
      -
+     -
    * - :doc:`/trainings/repertoire/cmake`
      - :download:`GNU Make <pdf/045-cmake.pdf>`
      -
      -
+     -
    * - :doc:`/trainings/repertoire/svn`
      - :download:`Subversion <pdf/070-subversion.pdf>`
+     -
      -
      -

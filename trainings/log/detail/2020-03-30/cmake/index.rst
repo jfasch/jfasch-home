@@ -8,7 +8,7 @@ C/C++ Build Using CMake
 
 As this site is heavily into C and C++ (it is into Python too, but
 that's another story), it has lots of code in its many subdirectories
-and :doc:`areas </trainings/material/soup>`. This site is also into
+and :doc:`areas </trainings/material/soup/index>`. This site is also into
 build and project management [#project_management]_, so we do not let
 code bitrot.
 

@@ -1,5 +1,5 @@
-POSIX IPC (Slides)
-==================
+Slides: Sysprog: POSIX IPC
+==========================
 
 .. sidebar:: Slideshow
 

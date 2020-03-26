@@ -5,13 +5,15 @@
    :keywords: linux, systemnah, schulung, training, programming,
               signals
 
-Signals (Live Hacking Screenplay)
-=================================
+Screenplay: Sysprog: Signals
+============================
 
 .. sidebar:: Inhalt
 
    .. contents::
       :local:
+
+   **Code**: :doc:`sysprog-signals-code/index`
 
 Barebones Naive Program
 -----------------------

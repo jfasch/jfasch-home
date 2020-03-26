@@ -38,6 +38,7 @@ extensions = [
     'ablog',
     'nbsphinx',
     'sphinxcontrib.fulltoc',
+    'sphinxcontrib.programoutput',
 
     'jf',
 ]

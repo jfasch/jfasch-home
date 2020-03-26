@@ -1,5 +1,5 @@
-Signals (Slides)
-================
+Slides: Sysprog: Signals
+========================
 
 .. sidebar:: Slideshow
 
