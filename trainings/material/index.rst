@@ -87,8 +87,12 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - - :download:`C++03 <pdf/055-c++03.pdf>`
        - :download:`C++11 <pdf/056-c++11.pdf>`
      -
-     - :doc:`soup/c++-class-intro-screenplay`
-     - :doc:`soup/c++-class-intro-code/index`
+     - - :doc:`soup/c++-class-intro-screenplay`
+       - :doc:`soup/c++-dynamic-memory-screenplay`
+       - :doc:`soup/c++-ownership-raii-screenplay`
+     - - :doc:`soup/c++-class-intro-code/index`
+       - :doc:`soup/c++-dynamic-memory-code/index`
+       - :doc:`soup/c++-ownership-raii-code/index`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
      -

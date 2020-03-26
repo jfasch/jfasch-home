@@ -6,6 +6,7 @@
 TEST(Bug, MemoryLeak)
 {
     int* ip = (int*)malloc(sizeof(int));
+    (void)ip; // avoid "unused" warning
 }
 
 TEST(Bug, ArrayBoundsWrite)

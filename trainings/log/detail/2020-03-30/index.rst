@@ -32,6 +32,7 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/unittest-gtest-fixture-screenplay`
    * :doc:`/trainings/material/soup/c++-class-intro-screenplay`
    * :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
+   * :doc:`/trainings/material/soup/c++-ctor-dtor-screenplay`
 
    **Sonstiges**
 

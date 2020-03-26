@@ -1,0 +1,5 @@
+ADD_EXECUTABLE(10-alloc 10-alloc.cc)
+ADD_EXECUTABLE(20-own 20-own.cc)
+ADD_EXECUTABLE(30-maybe-own--non-const-non-const 30-maybe-own--non-const-non-const.cc)
+ADD_EXECUTABLE(40-maybe-own--const-method 40-maybe-own--const-method.cc)
+ADD_EXECUTABLE(50-own--const-const 50-own--const-const.cc)
