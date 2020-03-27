@@ -45,6 +45,21 @@ of the project, and I like to name build roots after their sources.)
 
    $ mkdir /var/jfasch/jfasch-home
 
+Install Dependencies
+--------------------
+
+* `Googletest <https://github.com/google/googletest>`__
+
+  .. code-block:: console
+     :caption: Debian, Ubuntu
+
+     $ sudo apt-get install libgtest-dev libgmock-dev
+     
+  .. code-block:: console
+     :caption: Fedora
+
+     $ sudo dnf install gtest-devel gmock-devel
+     
 Generate ``Makefile`` Build from CMake Sources
 ----------------------------------------------
 

@@ -9,7 +9,20 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
 Plan (sich entwickelnd)
 -----------------------
 
-.. sidebar:: *Material*
+.. sidebar:: *Kursinformation*
+
+   **Beginn**
+
+   Montag 30.3.2020, 8:00 (Martin lädt ein).
+
+   **Vorbereitung, Übungen**
+
+   * Bitte einen `Github <https://github.com/>`__ Account mitbringen,
+     um an Übungen teilzunehmen. Diese werden in einem Private
+     Repository stattfinden (Link folgt).
+   * :doc:`Hier die Bauanleitung <cmake/index>`; bitte wenn geht vorab
+     ausprobieren (:doc:`Feedback </about/myself/contact>` sehr
+     willkommen).
 
    **Schulungsbeschreibungen**
 
@@ -32,7 +45,7 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/unittest-gtest-fixture-screenplay`
    * :doc:`/trainings/material/soup/c++-class-intro-screenplay`
    * :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
-   * :doc:`/trainings/material/soup/c++-ctor-dtor-screenplay`
+   * :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
 
    **Sonstiges**
 
