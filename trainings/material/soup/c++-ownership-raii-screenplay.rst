@@ -68,9 +68,11 @@ Ownership: 2 x ``const``
 Add ``const`` to ``mem()`` return type, and let compiler take you by
 the hand,
 
+.. _cpp-pointer-const-const-delete:
+
 * ``const`` variable
 * ``strcpy()``: lhs parameter, see ``man strcpy``
-* ``delete[] whose`` **still possible** - own as own can
+* ``delete[] whose`` **still possible! Don't do it!**
 
 .. literalinclude:: c++-ownership-raii-code/50-own--const-const.cc
    :caption: :download:`c++-ownership-raii-code/50-own--const-const.cc`

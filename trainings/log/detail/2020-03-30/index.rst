@@ -4,7 +4,7 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
 .. toctree::
    :hidden:
 
-   cmake/index
+   setup
 
 Plan (sich entwickelnd)
 -----------------------
@@ -20,7 +20,7 @@ Plan (sich entwickelnd)
    * Bitte einen `Github <https://github.com/>`__ Account mitbringen,
      um an Übungen teilzunehmen. Diese werden in einem Private
      Repository stattfinden (Link folgt).
-   * :doc:`Hier die Bauanleitung <cmake/index>`; bitte wenn geht vorab
+   * :doc:`Hier die Bauanleitung <setup>`; bitte wenn geht vorab
      ausprobieren (:doc:`Feedback </about/myself/contact>` sehr
      willkommen).
 
@@ -46,10 +46,11 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/c++-class-intro-screenplay`
    * :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
    * :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
+   * :doc:`/trainings/material/soup/c++-global-initialization-screenplay`
 
    **Sonstiges**
 
-   * :doc:`Bauen der Seite mit CMake <cmake/index>`
+   * :doc:`setup`
    * :doc:`/blog/2020/03/ms-teams-on-linux`
    * `Googletest <https://github.com/google/googletest>`__
 
@@ -69,7 +70,7 @@ Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
 * :doc:`Livehacking: Einführung in Unittesting
   </trainings/material/soup/unittest-gtest-basics-screenplay>`,
   mittels `googletest <https://github.com/google/googletest>`__
-* :doc:`CMake <cmake/index>` im Vorbeigehen, sobald der angehäufte C++
+* :doc:`CMake <setup>` im Vorbeigehen, sobald der angehäufte C++
   Code zu gross wird. Eher früher als später.
 * :doc:`Klassen, Members ... C++ Basics
   </trainings/material/soup/c++-class-intro-screenplay>`
@@ -136,6 +137,9 @@ Tag 3
 
   * Überblick, Arten von Algorithmen
   * ``lambda``
+
+* `"Big O" Notation
+  <https://realpython.com/must-watch-pycon-talks/#6-big-o-how-code-slows-as-data-grows>`__
 
 * `Smart Pointer
   <https://en.cppreference.com/book/intro/smart_pointers>`__

@@ -7,5 +7,5 @@ ADD_SUBDIRECTORY(sysprog-ipc-code)
 ADD_SUBDIRECTORY(c++-class-intro-code)
 ADD_SUBDIRECTORY(c++-dynamic-memory-code)
 ADD_SUBDIRECTORY(c++-ownership-raii-code)
-
+ADD_SUBDIRECTORY(c++-global-initialization-code)
 

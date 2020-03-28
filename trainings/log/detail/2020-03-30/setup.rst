@@ -1,5 +1,5 @@
-C/C++ Build Using CMake
-=======================
+Software Setup, Build
+=====================
 
 .. sidebar:: Contents
 
@@ -45,8 +45,15 @@ of the project, and I like to name build roots after their sources.)
 
    $ mkdir /var/jfasch/jfasch-home
 
-Install Dependencies
---------------------
+Install Prerequisites and Dependencies
+--------------------------------------
+
+* Toolchain, CMake, etc.
+
+  .. code-block:: console
+     :caption: Debian, Ubuntu
+
+     $ sudo apt install build-essential cmake
 
 * `Googletest <https://github.com/google/googletest>`__
 

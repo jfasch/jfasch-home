@@ -3,7 +3,7 @@ The Entire Soup
 
 .. note::
 
-   See :doc:`here </trainings/log/detail/2020-03-30/cmake/index>` for
+   See :doc:`here </trainings/log/detail/2020-03-30/setup>` for
    how to build the sample code that is referenced.
 
 Live Hacking Screenplays

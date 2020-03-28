@@ -74,13 +74,13 @@ Signal Handler
 
 * Fix crap
 
-  * cout in signal handler context. Jump through hoops for simple
-    output on cerr. See `man 7 signal-safety
+  * **cout in signal handler context**. Jump through hoops for simple
+    output on ``STDOUT_FILENO``. See `man 7 signal-safety
     <http://man7.org/linux/man-pages/man7/signal-safety.7.html>`__.
   * ``sig_atomic_t quit``
-  * Error handling. Fail when trying to comprehend bloody ``signal()``
-    return value. Use ``sigaction`` from here on.
-  * ``sigaction``: why is complicated better than simple?
+  * **Error handling**. Fail when trying to comprehend bloody
+    ``signal()`` return value. Use ``sigaction()`` from here on.
+  * ``sigaction()``: why is complicated better than simple?
 
 .. literalinclude:: sysprog-signals-code/020-signal-handler.cc
    :caption: :download:`sysprog-signals-code/020-signal-handler.cc`
