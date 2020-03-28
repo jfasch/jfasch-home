@@ -28,6 +28,16 @@ store project clones in ``~/work/``).
    $ cd ~/work/
    $ git clone https://github.com/jfasch/jfasch-home.git
 
+For trainings where we collaborate in a separate repository (I use to
+create private repositories for some, and add the training
+participants as collaborators), use that instead. (Exchange
+``<organization>`` with you custom name, of course.)
+
+.. code-block:: console
+
+   $ cd ~/work/
+   $ git clone https://github.com/jfasch/jfasch-home-<organization>.git jfasch-home
+
 Create Build Directory
 ----------------------
 
