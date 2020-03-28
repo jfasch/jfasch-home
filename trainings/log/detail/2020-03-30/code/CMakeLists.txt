@@ -1,1 +1,1 @@
-ADD_EXECUTABLE(2020-03-30-dummy 2020-03-30-dummy.cc)
+ADD_SUBDIRECTORY(uebungen)

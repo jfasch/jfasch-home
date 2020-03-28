@@ -37,6 +37,9 @@ Plan (sich entwickelnd)
    * :download:`C++03 </trainings/material/pdf/055-c++03.pdf>` (PDF)
    * :download:`C++11 </trainings/material/pdf/056-c++11.pdf>` (PDF)
    * :download:`CMake </trainings/material/pdf/045-cmake.pdf>` (PDF)
+   * :download:`Unittesting
+     </trainings/material/pdf/060-design-patterns-unittests.pdf>`
+     (PDF)
 
    **Screenplays**
 
@@ -67,27 +70,12 @@ funktioniert (weiss ich, weil ich es selbst betreibe). Unittesting
 des Trainings sein, warum also nicht den Kurs invertieren und uns von
 Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
 
-* :doc:`Livehacking: Einführung in Unittesting
-  </trainings/material/soup/unittest-gtest-basics-screenplay>`,
-  mittels `googletest <https://github.com/google/googletest>`__
-* :doc:`CMake <setup>` im Vorbeigehen, sobald der angehäufte C++
-  Code zu gross wird. Eher früher als später.
-* :doc:`Klassen, Members ... C++ Basics
-  </trainings/material/soup/c++-class-intro-screenplay>`
-
-  * Methoden, ``this``
-
-* :doc:`Dynamisches Memory
-  </trainings/material/soup/c++-dynamic-memory-screenplay>`: ``new``,
-  ``delete``, ``[]``
-
-  * `Auffinden von Leaks mit valgrind <https://valgrind.org/>`__
-
-* Konstruktoren und Destruktoren, am Beispiel Memoryleak.
-
-  * `RAII <https://en.cppreference.com/w/cpp/language/raii>`__
-
-* ``<iostream>``, zumindest rudimentär
+* :doc:`/trainings/material/soup/unittest-gtest-basics-screenplay`
+* :doc:`/trainings/material/soup/unittest-gtest-cmake-screenplay`
+* :doc:`/trainings/material/soup/c++-class-intro-screenplay`
+* :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
+* :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
+* :doc:`/trainings/material/soup/c++-global-initialization-screenplay`
 
 Tag 2
 .....
