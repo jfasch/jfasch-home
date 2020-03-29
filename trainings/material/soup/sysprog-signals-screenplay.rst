@@ -1,3 +1,5 @@
+.. jf-screenplay:: sysprog-signals
+
 .. meta::
    :description: This live-hacking screenplay is a guide for myself to
                  repeatably, didactically, demonstrate how UNIX

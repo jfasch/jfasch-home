@@ -1,3 +1,5 @@
+.. jf-screenplay:: sysprog-ipc
+
 .. meta::
    :description: This live-hacking screenplay is a guide for myself to
                  repeatably, didactically, demonstrate how POSIX IPC

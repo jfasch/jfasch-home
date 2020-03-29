@@ -1,3 +1,5 @@
+.. jf-screenplay:: unittest-gtest-cmake
+
 Screenplay: Unittest: GTest and CMake
 =====================================
 

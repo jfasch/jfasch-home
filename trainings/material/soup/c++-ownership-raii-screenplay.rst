@@ -1,3 +1,5 @@
+.. jf-screenplay:: c++-ownership-raii
+
 Screenplay: C++: Ownership/RAII
 ===============================
 

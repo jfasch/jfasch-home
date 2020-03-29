@@ -1,3 +1,5 @@
+.. jf-screenplay:: unittest-gtest-mock
+
 Screenplay: Unittest: GTest Mocks
 =================================
 

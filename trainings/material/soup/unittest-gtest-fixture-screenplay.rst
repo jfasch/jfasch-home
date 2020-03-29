@@ -1,3 +1,5 @@
+.. jf-screenplay:: unittest-gtest-fixture
+
 Screenplay: Unittest: GTest Fixtures
 ====================================
 

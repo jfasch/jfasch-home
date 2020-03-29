@@ -1,3 +1,6 @@
+.. jf-screenplay:: c++-class-intro
+
+
 Screenplay: C++: Basic Class
 ============================
 
