@@ -50,6 +50,7 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
    * :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
    * :doc:`/trainings/material/soup/c++-global-initialization-screenplay`
+   * :doc:`/trainings/material/soup/c++-exercises-screenplay`
 
    **Sonstiges**
 
@@ -76,6 +77,7 @@ Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
 * :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
 * :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
 * :doc:`/trainings/material/soup/c++-global-initialization-screenplay`
+* :doc:`/trainings/material/soup/c++-exercises-screenplay`
 
 Tag 2
 .....
