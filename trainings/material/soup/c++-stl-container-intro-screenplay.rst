@@ -79,8 +79,8 @@ Algorithm: ``std::vector`` and Naive Copy
 
   * different prototypes, but identical body
 
-.. literalinclude:: c++-stl-container-intro-code/25-vector-copy.cc
-   :caption: :download:`c++-stl-container-intro-code/25-vector-copy.cc`
+.. literalinclude:: c++-stl-container-intro-code/25-vector-naive-copy.cc
+   :caption: :download:`c++-stl-container-intro-code/25-vector-naive-copy.cc`
    :language: c++
 
 **Discussion**
