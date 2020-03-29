@@ -91,11 +91,14 @@ Kursbeschreibungen direkte Links zu relevantem Material.
        - :doc:`soup/c++-dynamic-memory-screenplay`
        - :doc:`soup/c++-ownership-raii-screenplay`
        - :doc:`soup/c++-global-initialization-screenplay`
+       - :doc:`soup/c++-exercises-screenplay`
+       - :doc:`soup/c++-stl-container-intro-screenplay`
      - - :doc:`soup/c++-class-intro-code/index`
        - :doc:`soup/c++-dynamic-memory-code/index`
        - :doc:`soup/c++-ownership-raii-code/index`
-       - :doc:`soup/c++-ownership-raii-code/index`
        - :doc:`soup/c++-global-initialization-code/index`
+       - :doc:`soup/c++-exercises-code/index`
+       - :doc:`soup/c++-stl-container-intro-code/index`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
      -

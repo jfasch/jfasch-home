@@ -1,0 +1,13 @@
+  /home/jfasch/work/jfasch-home/trainings/material/soup/c++-stl-container-intro-code:
+  total used in directory 40 available 288504212
+  drwxr-xr-x.  2 jfasch jfasch 4096 Mar 29 18:36 .
+  drwxrwxr-x. 14 jfasch jfasch 4096 Mar 29 18:29 ..
+  -rw-r--r--.  1 jfasch jfasch  308 Mar 29 18:33 10-pointer-arith-basics.cc
+  -rw-r--r--.  1 jfasch jfasch  295 Mar 29 18:32 10-pointer-arith-basics.cc.~1~
+  -rw-r--r--.  1 jfasch jfasch    6 Mar 29 18:15 10-pointer-arith.cc.~1~
+  -rw-r--r--.  1 jfasch jfasch  219 Mar 29 18:36 11-pointer-arith-ranges.cc
+  -rw-r--r--.  1 jfasch jfasch  295 Mar 29 18:33 11-pointer-arith-sizes.cc.~1~
+  -rw-r--r--.  1 jfasch jfasch  123 Mar 29 18:15 CMakeLists.txt
+  -rw-r--r--.  1 jfasch jfasch    0 Mar 29 18:13 CMakeLists.txt.~1~
+  -rw-r--r--.  1 jfasch jfasch  223 Mar 29 17:41 index.rst
+  -rw-r--r--.  1 jfasch jfasch  201 Mar 29 17:40 index.rst.~1~

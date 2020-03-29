@@ -40,7 +40,7 @@ extensions = [
     'sphinxcontrib.fulltoc',
     'sphinxcontrib.programoutput',
 
-#    'jf',
+    'jf',
 ]
 todo_include_todos = True
 

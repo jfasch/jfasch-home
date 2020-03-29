@@ -24,5 +24,5 @@ The latter - *identical implementations* - is the challenge.
 Solution
 --------
 
-.. program-output:: tree x
-   :cwd: .
+.. program-output:: tree 
+   :cwd: c++-exercises-code

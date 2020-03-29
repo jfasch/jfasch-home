@@ -51,6 +51,7 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
    * :doc:`/trainings/material/soup/c++-global-initialization-screenplay`
    * :doc:`/trainings/material/soup/c++-exercises-screenplay`
+   * :doc:`/trainings/material/soup/c++-stl-container-intro-screenplay`
 
    **Sonstiges**
 

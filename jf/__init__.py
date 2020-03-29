@@ -28,7 +28,11 @@ def _collect_screenplays(app, doctree):
         assert docname not in (docname for docname,_ in screenplays)
         assert nodeid not in (nodeid for _,nodeid in screenplays)
 
-        app.builder.env._jf_screenplays.append((docname, nodeid))
+        if False:
+            # argh. app.builder.env is pickled and comes back with all
+            # its entries. build up a second "live/current" list, and
+            # compare both?
+            app.builder.env._jf_screenplays.append((docname, nodeid))
 
         # remove node from document (writers know nothing about it)
         node.parent.remove(node)
