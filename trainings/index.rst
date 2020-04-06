@@ -94,3 +94,9 @@ Build- und Projektmanagement
 * :doc:`repertoire/cmake`
 * :doc:`repertoire/bash`
 * :doc:`repertoire/svn`
+
+.. rubric:: Fußnoten
+
+.. [#basteln_nicht] :doc:`Gemeinsam mit Hardware zu basteln
+                    <repertoire/raspi-hands-on>` gestaltet sich online
+                    schwierig.
