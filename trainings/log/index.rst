@@ -62,14 +62,15 @@ Python/NumPy (12.11.2019, `EVK <https://www.evk.biz/de/>`__ in Graz)
 `tecTrain (Graz)
 <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
 (ein Partner von mir, in dessen Schulungsräumen der Kurs stattfand)
-eine Python-Einführung bestellt, um etwas über die numerischen
-Fähigkeiten von Python zu erfahren. Hintergrund war die Frage, "Ist
-die Herrschaft von MATLAB absolut?".
+eine Python-Einführung für ihr Professional Services Team bestellt, um
+etwas über die numerischen Fähigkeiten von Python zu
+erfahren. Hintergrund war die Frage, "Ist die Herrschaft von MATLAB
+absolut?".
 
 Anlässlich des Kurses habe ich wahrscheinlich mehr gelernt als die
 Teilnehmer - `NumPy <https://numpy.org/>`__ kannte ich bisher nur aus
 weiter Ferne, und die Vorbereitungszeit war eine sehr feine. Der Kurs
-auch, die Jungs habens nämlich richtig drauf.
+auch, das Mädel und die Jungs habens nämlich richtig drauf.
 
     *"Die Schulung war unglaublich lustig und hat mir einen sehr guten
     Überblick über Python vermittelt, ich habe gelernt wie ich es auf
