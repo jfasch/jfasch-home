@@ -38,6 +38,12 @@ Jeder Kurs ist anders ...
 * Selbst wenn alles andere gleich ist, habe ich genügend Entropie in
   mir, um den gegenwärtigen Kurs anders als seine Vorgänger zu machen.
 
+Python Advanced (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
+---------------------------------------------------------------
+
+(:doc:`Mehr ... <detail/2020-05-12/index>`)
+
+
 C++ für Embedded Entwickler (30.3.2020 - 4.4.2020, bei einer Firma in Baden-Württemberg)
 ----------------------------------------------------------------------------------------
 
