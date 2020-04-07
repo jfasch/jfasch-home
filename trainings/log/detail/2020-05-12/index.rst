@@ -125,6 +125,8 @@ Day 1: Language Basics
 * Control flow constructs: ``if``, ``while``, ``for``
 * Complex datatypes: ``list``, ``set``, ``dict``
 * *Mutability* and *immutabiliy*: ``tuple``
+* Functions and parameter passing
+* Closures
 * Iteration and Generators
 
 Day 2: Advanced Topics
