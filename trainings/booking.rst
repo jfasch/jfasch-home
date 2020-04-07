@@ -10,12 +10,10 @@ Buchung, Kursablauf
 
    Egal welcher Schulungstyp - offen oder inhouse -, alle Schulungen
    [#basteln_nicht]_ können problemlos auch online gehalten
-   werden. `Teamviewer <https://www.teamviewer.com/>`__ und `Skype
+   werden. `Zoom <https://zoom.us/>`__ und `Skype
    <https://www.skype.com/>`__ funktionieren problemlos unter Linux,
    genauso wie :doc:`Microsoft Teams
    </blog/2020/03/ms-teams-on-linux>`.
-
-
 
 Kursgestaltung
 --------------
