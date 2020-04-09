@@ -117,6 +117,13 @@ Start it,
 That was easy. Login with your Microsoft account, and figure out how
 to use it (this is not the point of this post).
 
+.. update:: 2020-04-09
+
+   The following annoyances of the desktop app can be switched off in
+   the settings; I should have checked more closely. See `here
+   <https://docs.microsoft.com/answers/comments/22019/view.html>`__,
+   thanks to Marjan Javorka.
+
 Annoyance #1: Keeps Running in Background
 .........................................
 
