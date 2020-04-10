@@ -57,16 +57,6 @@ Finish
 
 	* records-tki-2017-09-11
 
-    * Fraunhofer
-
-	* records-fraunhofer-2018-07-09
-	* records-fraunhofer-2017-08-28
-	* records-fraunhofer-2017-08-23
-	* records-fraunhofer-2016-07-05
-	* records-fraunhofer-2015-07-01
-	* records-fraunhofer-2015-06-17
-	* records-fraunhofer-2014-12-09
-
     * Magneti Marelli
 
       * records-magnetimarelli-2015-01-28

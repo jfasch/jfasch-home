@@ -28,7 +28,7 @@ Installation
 .. code-block:: console
 
    # apt-get install libgtest-dev
-   # apt-get install libgmock-dev
+   # apt-get install google-mock
 
 Documentation
 .............
@@ -43,6 +43,9 @@ Documentation
     <https://github.com/google/googletest/blob/master/googlemock/docs/for_dummies.md>`__
   * `Cookbook
     <https://github.com/google/googletest/blob/master/googlemock/docs/cook_book.md>`__
+
+.. image:: images/book-tdd.jpg
+   :align: center
 
 .. _gtest-basics-simple:
 

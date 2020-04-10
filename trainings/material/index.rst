@@ -110,7 +110,7 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      -
      - :doc:`soup/python-generators-code/index`
    * - :doc:`/trainings/repertoire/design-patterns`
-     - :download:`Python <pdf/060-design-patterns-unittests.pdf>`
+     - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -
      - 
      -

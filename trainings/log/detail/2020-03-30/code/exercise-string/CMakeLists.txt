@@ -1,0 +1,3 @@
+ADD_SUBDIRECTORY(group1)
+ADD_SUBDIRECTORY(group2)
+ADD_SUBDIRECTORY(trainer-solution)

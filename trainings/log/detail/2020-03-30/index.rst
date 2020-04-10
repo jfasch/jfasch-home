@@ -5,21 +5,25 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
    :hidden:
 
    setup
-
-Plan (sich entwickelnd)
------------------------
+   install-googletest
+   vs-code
+   code/exercise-string/index
 
 .. sidebar:: *Kursinformation*
 
+   .. contents::
+      :local:
+
    **Beginn**
 
-   Montag 30.3.2020, 8:00 (Martin lädt ein).
+   Montag 30.3.2020, 8:00
 
    **Vorbereitung, Übungen**
 
    * Bitte einen `Github <https://github.com/>`__ Account mitbringen,
      um an Übungen teilzunehmen. Diese werden in einem Private
-     Repository stattfinden (Link folgt).
+     Repository stattfinden (Link folgt). Siehe hierzu die
+     :doc:`Privatheitsrichtlinien </trainings/log/codex>`.
    * :doc:`Hier die Bauanleitung <setup>`; bitte wenn geht vorab
      ausprobieren (:doc:`Feedback </about/myself/contact>` sehr
      willkommen).
@@ -51,112 +55,183 @@ Plan (sich entwickelnd)
    * :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
    * :doc:`/trainings/material/soup/c++-global-initialization-screenplay`
    * :doc:`/trainings/material/soup/c++-exercises-screenplay`
+   * :doc:`/trainings/material/soup/c++-smart-pointers-screenplay`
    * :doc:`/trainings/material/soup/c++-stl-container-intro-screenplay`
+
+   **Links**
+
+   * C++ Online Reference: `hier <http://www.cplusplus.com/>`__ oder
+     `hier <https://en.cppreference.com>`__
+   * `Scott Meyers: Effective Modern C++
+     <https://www.oreilly.com/library/view/effective-modern-c/9781491908419/>`__
+   * `Git Book <https://git-scm.com/book/en/v2>`__
+     <https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows>`__.
+   * `Googletest <https://github.com/google/googletest>`__, `Primer
+     <https://github.com/google/googletest/blob/master/googletest/docs/primer.md>`__
 
    **Sonstiges**
 
    * :doc:`setup`
+   * :doc:`install-googletest`
+   * :doc:`vs-code`
    * :doc:`/blog/2020/03/ms-teams-on-linux`
-   * `Googletest <https://github.com/google/googletest>`__
 
-     * `Primer
-       <https://github.com/google/googletest/blob/master/googletest/docs/primer.md>`__
+Kursaufbau
+----------
+
+`Test Driven Development bzw. Unittesting
+<https://www.amazon.de/Test-Driven-Development-Example-Signature/dp/0321146530>`__
+ist Teil der Kursanforderung, ergänzend zu den C++-Themen.
+
+Lasst uns also den Kursverlauf testgetrieben entwickeln dort, wo es
+Sinn macht.
+
+* Die meisten der Livehacking Demos können als Testcases gestaltet
+  werden.
+* Übungen erst recht; der Trainer formuliert die Aufgabe als
+  Unittest - die Teilnehmer hacken - alle diskutieren - nächste
+  Iteration ...
+
+Kursverlauf
+-----------
+
+Im folgenden eine Niederschrift des Geschehenen. Übungen und
+Live-Hacking-Demos des Trainers sind im zur Seite gehörenden
+Git-Repository (bzw. eines Clones in einem privaten
+Github-Respository) entwickelt worden. 
+
+Die Code-Integration mit HTML verläuft noch nicht ideal, sodass man
+den Code hier nicht ansehen kann. Bitte dazu das :doc:`Repo clonen
+<setup>`. Wann immer im folgenden Code erwähnt wird, ist dieser im
+zugehörigen Clone in dem Subdirectory zu finden, das der URL im
+URL-Bar entspricht. Hier also
+``<clone-root>/trainings/log/detail/2020-03-30/code/``.
 
 Tag 1
 .....
 
-`Test Driven Development
-<https://www.amazon.de/Test-Driven-Development-Example-Signature/dp/0321146530>`__
-funktioniert (weiss ich, weil ich es selbst betreibe). Unittesting
-(mit `googletest <https://github.com/google/googletest>`__) soll Teil
-des Trainings sein, warum also nicht den Kurs invertieren und uns von
-Tests treiben lassen (zumindest was die Übungen anbelangt)? Also:
+Ein nicht unbeträchtlicher Teil des Tages wurde dafür verwendet, um
+das `Google Test Framework <https://github.com/google/googletest>`__
+auf Ubuntu 16.04 LTS (mit GCC5 als System-Compiler) zum Laufen zu
+bekommen. Daraus entstanden ist :doc:`eine Installationsanleitung
+<install-googletest>`.
 
-* :doc:`/trainings/material/soup/unittest-gtest-basics-screenplay`
-* :doc:`/trainings/material/soup/unittest-gtest-cmake-screenplay`
-* :doc:`/trainings/material/soup/c++-class-intro-screenplay`
-* :doc:`/trainings/material/soup/c++-dynamic-memory-screenplay`
-* :doc:`/trainings/material/soup/c++-ownership-raii-screenplay`
-* :doc:`/trainings/material/soup/c++-global-initialization-screenplay`
-* :doc:`/trainings/material/soup/c++-exercises-screenplay`
+* Code: ``code/gtest-basics/``. Live-Hacking, GTest und Test Driven
+  Development. Anfangs ohne CMake mit direkter Toolchain-Benutzung,
+  dann Migration auf CMake.
+
+  * Zuerst drei separate Test-Executables:
+    ``code/gtest-basics/fail.cc``, ``code/gtest-basics/non-fatal.cc``,
+    ``code/gtest-basics/simple.cc``.
+  * Dann eine Aggregation *durch den Linker* (bitte
+    ``code/gtest-basics/CMakeLists.txt`` ansehen) aller Testcases in
+    *ein einzelnes* Executable.
 
 Tag 2
 .....
 
-* Mehr zu Methoden: `overloading
-  <https://www.tutorialspoint.com/cplusplus/cpp_overloading.htm>`__
-* Operator overloading
-* Parameter passing
+* Klassen (Einführung): Konstruktoren, Methoden, Referenzen, ``const``
 
-  * Per copy/pointer -> Referenzen
-  * ``const``
-  * Move, RValue-Referenzen (ab C++11)
+  * Code: ``code/class-basics/``. "Point" Klasse (Live-Hacking)
+  
+    * Zuerst in C als ``struct``
+    * C++ Äquivalent als ``class``
+    * ``const`` bei Parameter-Übergabe
+    * ``const`` Methoden
+    * Langsames Ausbauen: Operator Overloading
+    
+* Dynamisches Memory, ``code/dynmem-ownership/``
 
-* Break: zurück zu Unittesting
+  * ``code/dynmem-ownership/dynmem-tests.cc``. Eine Reihe von Tests,
+    um zu demonstrieren, wie in C und in C++ dynamisch alloziert
+    wird. ``malloc()``/``free()`` vs. ``new``/``delete``
+    vs. ``new[]``/``delete[]``
+  * *Ownership*, bzw. RAII (*Resource Acquisition is Initialization*).
+  * Verwenden von Konstruktor und Destruktor, um Memory-Fehler zu
+    vermeiden. Siehe dazu
+    ``code/dynmem-ownership/ownership-ctor-dtor.cc``
+  * Benutzung von ``valgrind``
+  * Ausflug: ``std::string``, ``size()`` und ``capacity()``. Siehe
+    ``code/dynmem-ownership/string-demo.cc``
 
-  * Fixtures
-  * Mehr Assertions/Expectations: Exceptions
-  * Death tests
-  * Output (json, xml)
-
-* Exceptions
 
 Tag 3
 .....
 
-* Zur Einstimmung: alles schön und gut die letzten beiden
-  Tage. *Aber*: all die Fallen!
-
-  * Copy Konstruktor, Assignment operator
-  * Globale Objekte, Abhängigkeiten: *Vorsicht!*
-  * Globale Objekte, cool: *Der Init Trick*
-  * Exception Design, ``nothrow``, ...
-  * (was noch?)
-
-* `Standard Template Library: Containers
-  <https://en.cppreference.com/w/cpp/container>`__
-
-  * Überblick, Arten von Containern
-  * Pointerarithmetik Wiederholung
-  * Iteration mit ``for``
-  * ``auto``
-  * `Range based
-    <https://en.cppreference.com/w/cpp/language/range-for>`__ ``for``
-
-* `Standard Template Library: Algorithmen
-  <https://en.cppreference.com/w/cpp/algorithm>`__
-
-  * Überblick, Arten von Algorithmen
-  * ``lambda``
-
-* `"Big O" Notation
-  <https://realpython.com/must-watch-pycon-talks/#6-big-o-how-code-slows-as-data-grows>`__
-
-* `Smart Pointer
-  <https://en.cppreference.com/book/intro/smart_pointers>`__
-
-  * ``unique_ptr``: explicit ownership transfer
-  * ``shared_ptr``: shared ownership (a.k.a. loss of control)
-  * ``weak_ptr``: subtle but simple
+* Diskussion: "Temporary Objects"
+  (``code/class-basics/temporaries-demo.cc``)
+* Copy Konstruktor, Assignment operator
+* :doc:`code/exercise-string/index`
+  
+  * *Copy Constructor* und *Assignment Operator*
+  * Zum Teufel: **Self Assignment**
+  * Code: ``code/exercise-string/``
+  
+* Viel Diskussion
 
 Tag 4
 .....
 
-Nun zu etwas einfachem: Threading :-)
-
-* `Threads starten
-  <https://en.cppreference.com/w/cpp/thread/thread>`__
-* `Mutex <https://en.cppreference.com/w/cpp/thread/mutex>`__, Scoped
-  Locking
-* `Atomics <https://en.cppreference.com/w/cpp/atomic/atomic>`__
-* `Promise <https://en.cppreference.com/w/cpp/thread/promise>`__,
-  `Future <https://de.cppreference.com/w/cpp/thread/future>`__, `Async
-  <https://de.cppreference.com/w/cpp/thread/async>`__
+* Diskussion (Code: ``code/static-vs-inline/``): ``static``
+  (File-Scope), und was hat das zu tun mit ``inline``?
+* Pointer-Datentypen (Unittest: ``code/smart-pointers/ownership.cc``).
+  ``std::shared_ptr<>`` (Shared Ownership) und ``std::unique_ptr<>``
+  (Exclusive Ownership), demonstriert anhand einer
+  Manager/Employee/Testcase Beziehung.
+* Vorgriff auf STL (Code: ``code/smart-pointers/lt-sort.cc``):
+  sortieren von ``EmployeeRecord``s in einem ``std::vector`` nach
+  verschiedenen Kriterien.
+* Templates Intro (Code: ``class-template/``): ``class Point`` mit
+  parametrisierbarem Koordinatentyp
 
 Tag 5
 .....
 
-Der geplante Stoff der vergangenen vier Tage hat genug Entropie in
-sich, um mit dem Ungesagten und Nochzusagenden den fünften Tag zu
-füllen.
+* STL Containers (Code: ``code/stl-container/``, Slides:
+  :download:`C++03 (PDF) </trainings/material/pdf/055-c++03.pdf>`, 102ff)
+
+  * Überblick, Arten von Containern
+  * Pointerarithmetik Wiederholung
+  * Iteratoren, Iteration mit ``for``
+  * Demos
+
+    * ``std::vector`` (``code/vector.cc``).
+    * ``std::list`` (``code/list.cc``)
+    * ``std::map`` (``code/map.cc``)
+
+  * Diskussion: Laufzeitverhalten, `O-Notation
+    <https://realpython.com/must-watch-pycon-talks/#6-big-o-how-code-slows-as-data-grows>`__
+
+  * C++11 Verbesserungen gegenüber C++03 (Slides: :download:`C++03
+    (PDF) </trainings/material/pdf/056-c++11.pdf>`, 6ff)
+
+    * ``auto``
+    * `Range based
+      <https://en.cppreference.com/w/cpp/language/range-for>`__
+      ``for``
+
+* ``lambda``. Siehe
+
+  * ``code/stl-container/sort-is-n-log-n.cc``. Gegenüberstellung
+    explizite Funktion vs. Lambda.
+  * ``code/stl-container/vector.cc``: ``TEST(Vector,
+    Sort_Algorithm_Reverse_Lambda)``
+  * ``code/stl-container/threads.cc``
+
+* Vererbung vs. Templates. Fallstudie, livegehackt. Wir haben einen
+  Sensor ``Thermometer``, der über SPI angebunden ist, und auf den
+  komplexe Stücke Software aufbauen. Nun will ein Kunde, dass wir
+  einen vergleichbaren über I2C anbinden. Zwei Möglichkeiten, und
+  Diskussion,
+
+  * Vererbung (Code: ``code/inheritance-interfaces-virtual/``)
+  * Templates (Code: ``code/inheritance-morph-to-templates/``)
+
+* Exceptions wurden nicht explizit als eigenes Kapitel behandelt und
+  quasi im Vorbeigehen erklärt.
+
+
+
+
+
 

@@ -2,10 +2,12 @@ Bisher Gehaltene
 ================
 
 Diese Liste ist als Logbuch zu verstehen, das ich verwende, um den
-Kursteilnehmer das zustandegekommene Material zukommen zu lassen. Und
+Kursteilnehmern das zustandegekommene Material zukommen zu lassen. Und
 die potentiellen zukünftigen Kursteilnehmer können einen Eindruck
-bekommen, was auf sie zukommt. (Das Publizieren des Materials
-geschieht natürlich nur mit dem Einverständnis des Kunden.)
+bekommen, was auf sie zukommt.
+
+Das Publizieren des Materials geschieht natürlich nur mit dem
+Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <codex>`.
 
 .. sidebar:: Inhalt
 
@@ -15,28 +17,8 @@ geschieht natürlich nur mit dem Einverständnis des Kunden.)
 .. toctree::
    :hidden:
 
+   codex
    detail/index
-
-Jeder Kurs ist anders ...
-
-* Die *Übungen* in den Kursen (aus den :doc:`PDFs
-  </trainings/material/index>`) werden meist auf ähnliche Weise gelöst,
-  mit nur geringer Varianz.
-* Die *Fragen* allerdings zeigen, wie unterschiedlich Menschen
-  sind. Um diese Fragen zu beantworten, hacke ich meistens schnell
-  etwas daher, in einem kleinen Programm. Wenn die Antwort
-  (vorausgesetzt die Frage kam in einer Python-Schulung) in ein
-  `Jupyter Notebook <https://jupyter.org/>`__ passt, schreibe ich den
-  Code dort und mache Inline-Notizen.
-* Die *Gruppenprojekte* werden gestartet, wenn alles gesagt ist und
-  alle der Meinung sind, dass jetzt was programmiert werden muss. Das
-  ist immer dann der Fall, wenn das Publikum homogen ist (bei
-  Inhouseschulungen arbeiten die Teilnehmer im Alltag meistens
-  zusammen, aber auch bei offenen Schulungen bilden sich
-  Interessensgemeinschaften). Das Projektthema kommt aus dem richtigen
-  Leben und ist jedesmal anders.
-* Selbst wenn alles andere gleich ist, habe ich genügend Entropie in
-  mir, um den gegenwärtigen Kurs anders als seine Vorgänger zu machen.
 
 Python Advanced (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
 ---------------------------------------------------------------

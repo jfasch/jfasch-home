@@ -18,21 +18,25 @@ Buchung, Kursablauf
 Kursgestaltung
 --------------
 
-Der perfekte Kurs ist der, dessen Themen und der gesamte Ablauf von
-vorneherein feststehen. Den gibt es nicht, aber er wäre sicher sehr
-langweilig. Kurse leben von der Interaktion der Teilnehmer mit dem
-Vortragenden, von Fragen und Antworten, persönlichen Ansichten und
-Vorlieben, ... dem ganzen Hin- und Her eben. Jeder Kurs hat einen
-roten Faden - der hält auch immer im Großen und Ganzen - aber wenn das
-Kursgeschehen Varianten verlangt, bin ich als erster mit Freude dabei.
+Um einen Eindruck über die Gestaltung des Vortrages, die
+Themenauswahl, und die Schlüssigkeit zu bekommen, bitte ich Sie, die
+:doc:`chronologisch geführte Liste von bisher gehaltenen Schulungen
+<log/index>` querzulesen. 
+
+Die Anforderungen an jede Schulung werden zusammen mit dem Kunden
+definiert; basierend darauf wird individuell ein "roter Faden"
+erarbeitet, nach dem die Schulung ablaufen soll. Dieser ist natürlich
+Gegenstand von Änderungen, wenn das Kursgeschehen danach verlangt -
+auf Fragen wird gerne eingegangen, und es kann gut passieren, dass
+dabei ein Thema detaillierter auf Kosten eines anderen behandelt wird.
 
 .. image:: sysprog-bodenseo.jpg
    :alt: Kurs im Hoeri-Hotel
    :align: right
 
-Ich liebe es. Nach einem solchen Kurs mit viel Interaktion bin ich
-immer wohlig gerädert, ungefähr wie nach einer langen Schitour oder
-Bergwanderung.
+Ich liebe es. Nach einem Kurs mit viel Interaktion bin ich immer
+wohlig gerädert, ungefähr wie nach einer langen Schitour oder
+Bergwanderung. Die Teilnehmer auch.
 
 Unterlagen & Download
 ---------------------

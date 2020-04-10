@@ -26,7 +26,7 @@ Pointer Arithmetics Recap
 * :download:`C++03 slides </trainings/material/pdf/055-c++03.pdf>`,
   105ff.
 
-**Next: ``copy`` algorithm**
+**Next: "copy" algorithm**
 
 * start without ``const``
 * ``const`` on ``begin``, ``end``; fix ``copy()`` prototype
@@ -104,3 +104,25 @@ Algorithm: ``std::vector`` and ``std::copy<>``
 * ``std::copy`` works like ``my_copy``: no range checks, nothing
   special
 * 
+
+Container: ``std::list``
+------------------------
+
+**Steps**
+
+* Nah, these are trivial. Show ``vector`` pendants
+* erase is difficult. 
+
+  * show naive variant first; ``valgrind`` will complain.
+  * check doc of erase. return value is what we need.
+
+.. literalinclude:: c++-stl-container-intro-code/25-list.cc
+   :caption: :download:`c++-stl-container-intro-code/25-list.cc`
+   :language: c++
+
+Container: ``std::map``
+------------------------
+
+.. literalinclude:: c++-stl-container-intro-code/30-map.cc
+   :caption: :download:`c++-stl-container-intro-code/30-map.cc`
+   :language: c++

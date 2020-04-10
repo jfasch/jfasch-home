@@ -1,4 +1,5 @@
 *~
 /_build
 __pycache__
+/_build-cmake
 /node_modules
