@@ -26,8 +26,14 @@ Python Advanced (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
 (:doc:`Mehr ... <detail/2020-05-12/index>`)
 
 
-C++ für Embedded Entwickler (30.3.2020 - 4.4.2020, bei einer Firma in Baden-Württemberg)
+C++ für Embedded-Entwickler (30.3.2020 - 4.4.2020, bei einer Firma in Baden-Württemberg)
 ----------------------------------------------------------------------------------------
+
+Eine Einführung in C++ für gestandene C-Embedded-Entwickler; die
+Zusatzaufgabe "Test Driven Development" hat uns durch den Kurs
+geführt. Der Kurs wurde online mittels :doc:`Microsoft Teams
+</blog/2020/03/ms-teams-on-linux>` gehalten. Einschränkungen dadurch:
+keine.
 
 (:doc:`Mehr ... <detail/2020-03-30/index>`)
 
@@ -150,8 +156,6 @@ Python Basics (3.6.2019 - 6.6.2019, bei einer Firma in Oberösterreich)
 ----------------------------------------------------------------------
 
 * :doc:`../repertoire/python-basics`
-
-.. _records-gessmann-2019-05-27:
 
 Linux Big Picture (27.5.2019 - 29.5.2019, bei einer Firma in Baden-Württemberg)
 -------------------------------------------------------------------------------

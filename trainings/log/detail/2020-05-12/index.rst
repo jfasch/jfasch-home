@@ -26,6 +26,12 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
    * :doc:`/trainings/repertoire/python-basics`
    * :doc:`/trainings/repertoire/python-advanced`
 
+   **Privacy Statement**
+
+   Please note that, although this concept page is publicly available,
+   everything else will follow a privacy guideline; see :doc:`here
+   </trainings/log/codex>` for more.
+
 Culture
 -------
 
