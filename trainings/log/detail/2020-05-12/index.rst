@@ -29,11 +29,10 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
 Culture
 -------
 
-Based upon up-front discussion, I came up with draft plan (see below)
-as to how the structure of our two days Python training will look
-like. Please don't take this as a hard rule - we will take ourselves
-the freedom to spontaneously go deeper into one topic, at the cost of
-another.
+Following a draft plan, based upon up-front discussion, as to how the
+structure of our two days Python training will look like. Please don't
+take this as a hard rule - we will take ourselves the freedom to
+spontaneously go deeper into one topic, at the cost of another.
 
 Unit Testing and Test Driven Development
 ........................................
@@ -67,7 +66,7 @@ we use the standard Python installation,
 
 * Download Windows installer from `here
   <https://www.python.org/downloads/>`__, and go through the
-  istallation process. *Take care to check the "add python to path"*
+  installation process. *Take care to check the "add python to path"*
   box.
 
   (For Linuxers, Python usually comes as part of your favorite
