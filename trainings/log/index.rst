@@ -77,7 +77,7 @@ auch, das Mädel und die Jungs habens nämlich richtig drauf.
 Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
 
 
-.. _records-tectrain-2019-10-28:
+.. _records-2019-10-28:
 
 Python Individualtraining (5 Tage, beginnend 28.10.2019)
 --------------------------------------------------------
@@ -94,7 +94,7 @@ Der Kurs fand in den Räumen der Firma `tecTrain in Graz
 <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
 statt, über die auch gebucht wurde.
 
-.. _records-avl-2019-10-09:
+.. _records-2019-10-09:
 
 Python Advanced (9.10.2019 - 10.10.2019 bei einer Firma in Graz)
 ----------------------------------------------------------------
@@ -112,7 +112,7 @@ Ein Gemisch aus folgenden Kursen:
 * :doc:`../repertoire/python-basics`
 * :doc:`../repertoire/python-advanced`
 
-.. _records-linuxcampus-2019-09-30:
+.. _records-2019-09-30:
 
 C für Fortgeschrittene (30.9.2019 - 4.10.2019 in Wiener Neustadt)
 -----------------------------------------------------------------
@@ -143,14 +143,14 @@ Python Basics (24.6.2019 - 27.6.2019, bei einer Firma in Oberösterreich)
 
 * :doc:`../repertoire/python-basics`
 
-.. _records-fronius-2019-06-13:
+.. _records-2019-06-13:
 
 Linux Basics (13.6.2019 - 19.6.2019, bei einer Firma in Oberösterreich)
 -----------------------------------------------------------------------
 
 * :doc:`../repertoire/linux-basics`
 
-.. _records-fronius-2019-06-03:
+.. _records-2019-06-03:
 
 Python Basics (3.6.2019 - 6.6.2019, bei einer Firma in Oberösterreich)
 ----------------------------------------------------------------------
@@ -172,7 +172,7 @@ Ein Zusammenschnitt aus diesen Kursen:
 * :doc:`../repertoire/sysprog-multithreading`
 * :doc:`../repertoire/sysprog-fortgeschrittenes`
 
-.. _records-brottrager-2019-05-23:
+.. _records-2019-05-23:
 
 Python Basics (23.5.2019 - 24.5.2019, bei einer Firma in der Obersteiermark)
 ----------------------------------------------------------------------------
@@ -194,7 +194,7 @@ ist.
 Der Kurs wurde gebucht über meinen Partner `tecTrain
 <http://www.tectrain.at/>`__.
 
-.. _records-fronius-2019-05-13:
+.. _records-2019-05-13:
 
 Linux Basics (13.5.2019 - 15.5.2019, bei einer Firma in Oberösterreich)
 -----------------------------------------------------------------------
@@ -211,14 +211,14 @@ C: Ausgewählte Themen (17.12.2018 - 19.12.2018 in Graz)
 Der Kurs wurde gebucht über meinen Partner `tecTrain
 <http://www.tectrain.at/>`__, und fand in dessen Räumen in Graz statt.
 
-.. _records-fronius-2018-10-01:
+.. _records-2018-10-01:
 
 Python Basics (1.10.2018 - 4.10.2018, bei einer Firma in Oberösterreich)
 ------------------------------------------------------------------------
 
 * :doc:`../repertoire/python-basics`
 
-.. _records-fronius-2018-07-16:
+.. _records-2018-07-16:
 
 Linux Basics, Shell Scripting (16.7.2018 - 20.7.2018, bei einer Firma in Oberösterreich)
 ----------------------------------------------------------------------------------------
@@ -248,7 +248,7 @@ Ein Gemisch aus diesen Kursen:
 * :doc:`../repertoire/sysprog-multithreading`
 * :doc:`../repertoire/sysprog-fortgeschrittenes`
 
-.. _records-gorba-2018-03-12:
+.. _records-2018-03-12:
 
 Linux für Fortgeschrittene (12.3.2018 - 16.3.2018, Oberbüren/Schweiz)
 ---------------------------------------------------------------------
@@ -262,7 +262,7 @@ Ein Zusammenschnitt aus folgenden Kursen, angeordnet um die
 * :doc:`../repertoire/sysprog-fortgeschrittenes`
 * :doc:`../repertoire/sysprog-embedded`
 
-.. _records-tki-2017-09-11:
+.. _records-2017-09-11:
 
 Linux und Python (11.9.2017 - 13.9.2017, bei einer Firma im Raum München)
 -------------------------------------------------------------------------
@@ -308,7 +308,7 @@ Querbeet aus
 * :doc:`../repertoire/c-refresher`
 * :doc:`../repertoire/c-advanced`
 
-.. _records-tectrain-2017-06-06:
+.. _records-2017-06-06:
 
 C++11: Ausgewählte Themen (6.6.2017 - 8.6.2017 bei einer Firma in Graz)
 -----------------------------------------------------------------------
@@ -332,7 +332,7 @@ Linux vom Programmiererstandpunkt (30.12.2016 in Wien)
 Der Kurs wurde gebucht über meinen Partner `tecTrain
 <http://www.tectrain.at/>`__, und fand in dessen Räumen in Graz statt.
 
-.. _records-tectrain-2016-10-17:
+.. _records-2016-10-17:
 
 Embedded Linux anhand des Raspberry Pi (17.10.2016 - 21.10.2016 bei einer Firma in Baden-Württemberg)
 -----------------------------------------------------------------------------------------------------
@@ -363,7 +363,7 @@ Tobak, wie gesagt.
 
 * :doc:`../repertoire/c-advanced`
 
-.. _records-tectrain-2016-02-22:
+.. _records-2016-02-22:
 
 Einführung in C++ (22.2.2016 - 26.2.2016 bei einer Firma in Graz)
 -----------------------------------------------------------------
@@ -373,7 +373,7 @@ Einführung in C++ (22.2.2016 - 26.2.2016 bei einer Firma in Graz)
 Der Kurs wurde gebucht über meinen Partner `tecTrain
 <http://www.tectrain.at/>`__.
 
-.. _records-fronius-2017-02-20:
+.. _records-2017-02-20:
 
 Advanced Python Workshop (20.2.2017 - 23.2.2017, bei einer Firma in Oberösterreich)
 -----------------------------------------------------------------------------------
@@ -416,7 +416,7 @@ Linux Basics (3.11.2015 - 5.11.2015 bei einer Firma in Graz)
 Der Kurs wurde gebucht über meinen Partner `tecTrain
 <http://www.tectrain.at/>`__.
 
-.. _records-linuxcampus-2015-10-05:
+.. _records-2015-10-05:
 
 Einführung in Python (5.10.2015 - 6.10.2015 in Wien)
 ----------------------------------------------------
@@ -426,7 +426,7 @@ Einführung in Python (5.10.2015 - 6.10.2015 in Wien)
 Der Kurs wurde gebucht über meinen Partner `LinuxCampus
 <https://www.linuxcampus.net/>`__.
 
-.. _records-fronius-2015-07-27:
+.. _records-2015-07-27:
 
 Linux Basics, Systemnahe Programmierung (27.7.2015 - 31.7.2015, bei einer Firma in Oberösterreich)
 --------------------------------------------------------------------------------------------------
@@ -479,15 +479,13 @@ Offene Schulung, "Softwareentwicklung unter Linux". Themen:
 * Kernelprogrammierung (:doc:`../repertoire/kernel-programming-basics`)
 * Git
 
-.. _records-magnetimarelli-2015-01-28:
+.. _records-2015-01-28:
 
 Embedded Linux (28.1.2015 - 30.1.2015, bei einer Firma im Raum München)
 -----------------------------------------------------------------------
 
 * :doc:`../repertoire/linux-basics`
 * :doc:`../repertoire/sysprog-embedded`
-
-.. _records-fraunhofer-2014-12-09:
 
 C for Intermediate Users (9.12.2014 - 11.12.2014, Raum Nürnberg)
 ----------------------------------------------------------------
@@ -512,7 +510,7 @@ Linux from Scratch (1.12.2014 - 5.12.2014 LPD Hannover)
 
 * :doc:`../repertoire/kettner-lfs-descr`
 
-.. _records-linuxcampus-2014-10-07:
+.. _records-2014-10-07:
 
 Einführung in C++ (7.10.2014 - 10.10.2014 in Wien)
 --------------------------------------------------
@@ -533,7 +531,7 @@ Ausgewählte Themen aus
 * :doc:`../repertoire/sysprog-fortgeschrittenes`
 * :doc:`../repertoire/sysprog-embedded`
 
-.. _records-linuxcampus-2014-03-03:
+.. _records-2014-03-03:
 
 Einführung in C++ (3.3.2014 - 14.3.2014 in Wien)
 ------------------------------------------------
@@ -543,7 +541,7 @@ Einführung in C++ (3.3.2014 - 14.3.2014 in Wien)
 Der Kurs wurde gebucht über meinen Partner `LinuxCampus
 <https://www.linuxcampus.net/>`__.
 
-.. _records-linuxcampus-2014-02-24:
+.. _records-2014-02-24:
 
 Projektverwaltung mit Subversion und CMake (24.2.2014 - 27.2.2014 in Wien)
 --------------------------------------------------------------------------
@@ -572,7 +570,7 @@ Linux: Boot-Konfiguration und Systemnahe Programmierung (27.5.2014 - 30.5.2014 i
 Der Kurs fand in den Räumen der Firma `tecTrain in Graz
 <https://www.tectrain.at/>`__ statt, über die auch gebucht wurde.
 
-.. _records-linuxcampus-2013-11-11:
+.. _records-2013-11-11:
 
 Einführung in C (11.11.2013 - 22.11.2013 in Wien)
 -------------------------------------------------
@@ -582,7 +580,7 @@ Einführung in C (11.11.2013 - 22.11.2013 in Wien)
 Der Kurs wurde gebucht über meinen Partner `LinuxCampus
 <https://www.linuxcampus.net/>`__.
 
-.. _records-linuxcampus-2013-10-28:
+.. _records-2013-10-28:
 
 Linux Basics (28.10.2013 - 31.10.2013 in Wien)
 ----------------------------------------------
@@ -593,7 +591,7 @@ Der Kurs wurde gebucht über meinen Partner `LinuxCampus
 <https://www.linuxcampus.net/>`__.
 
 
-.. _records-tqs-2013-10-14:
+.. _records-2013-10-14:
 
 Linux Basics, Embedded Linux (14.10.2013 - 15.10.2013 bei einer Firma im Raum München)
 --------------------------------------------------------------------------------------
@@ -602,7 +600,7 @@ Linux Basics, Embedded Linux (14.10.2013 - 15.10.2013 bei einer Firma im Raum M�
 * Verschiedene hardwarenahe Embedded-Themen
 
 
-.. _records-fronius-2013-10-07:
+.. _records-2013-10-07:
 
 Shell/Bash Scripting (7.10.2013 - 9.10.2013, bei einer Firma in Oberösterreich)
 -------------------------------------------------------------------------------
@@ -630,14 +628,14 @@ Linux from Scratch (16.9.2013 - 20.9.2013, `Mathias Kettner <http://mathias-kett
 
 * :doc:`../repertoire/kettner-lfs-descr`
 
-.. _records-fronius-2013-07-02:
+.. _records-2013-07-02:
 
 Linux Basics (2.7.2013 - 4.7.2013, bei einer Firma in Oberösterreich)
 ---------------------------------------------------------------------
 
 * :doc:`../repertoire/linux-basics`
 
-.. _records-tqs-2013-05-27:
+.. _records-2013-05-27:
 
 Linux - Einführung und Programmierung (27.5.2013 - 29.5.2013, bei einer Firma im Raum München)
 ----------------------------------------------------------------------------------------------
@@ -656,7 +654,7 @@ GNU Make (23.4.2013 in Graz)
 Der Kurs wurde gebucht über meinen Partner `tecTrain
 <http://www.tectrain.at/>`__, und fand in dessen Räumen in Graz statt.
 
-.. _records-fronius-2013-01-14:
+.. _records-2013-01-14:
 
 Linux Basics & Embedded (14.1.2013 - 18.1.2013, bei einer Firma in Oberösterreich)
 ----------------------------------------------------------------------------------
@@ -667,7 +665,7 @@ Ausgewählte Themen aus
 * :doc:`../repertoire/sysprog-fortgeschrittenes`
 * :doc:`../repertoire/sysprog-embedded`
 
-.. _records-morphodetection-2012-11-26:
+.. _records-2012-11-26:
 
 Linux Systemnah, Embedded, C++ (26.11.2012 - 28.11.2012, bei einer Firma in Hamburg)
 ------------------------------------------------------------------------------------
@@ -692,7 +690,7 @@ Fehlerdiagnose unter Linux (19.11.2012 - 21.11.2012, Polizei Niedersachsen in Ha
   * `Fehlerdiagnose unter Linux
     <http://mathias-kettner.de/diagnosebuch.html>`__ (auszugsweise)
 
-.. _records-tqs-2012-10-29:
+.. _records-2012-10-29:
 
 Systemnahe Programmierung unter Linux (29.10.2012 - 30.10.2012, bei einer Firma im Raum München)
 ------------------------------------------------------------------------------------------------
@@ -715,7 +713,7 @@ Einführung in Python (25.9.2012 - 27.9.2012, STIA in Admont)
 
 * :doc:`../repertoire/python-basics`
 
-.. _records-albistechnologies-2012-02-13:
+.. _records-2012-02-13:
 
 Linux Systemnah (13.2.2012 bis 15.2.2012, bei einer Firma in Zürich)
 --------------------------------------------------------------------
@@ -732,7 +730,7 @@ Einführung in Python (24.1.2012 - 26.1.2012, `Mathias Kettner <http://mathias-k
 
 Einführung in Python (nach Mathias' Unterlagen, Einführungscharakter)
 
-.. _records-fronius-2011-09-19:
+.. _records-2011-09-19:
 
 Linux Systemnah (19.9.2011 - 22.9.2011, bei einer Firma in Oberösterreich)
 --------------------------------------------------------------------------
@@ -745,7 +743,7 @@ Ausgewählte Themen aus
 * :doc:`../repertoire/sysprog-fortgeschrittenes`
 * :doc:`../repertoire/sysprog-embedded`
 
-.. _records-fronius-2011-09-13:
+.. _records-2011-09-13:
 
 Linux Basics (13.9.2011 - 15.9.2011, bei einer Firma in Oberösterreich)
 -----------------------------------------------------------------------
