@@ -18,9 +18,11 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 _me = 'Jörg Faschingbauer'
+_canonical = 'https://www.faschingbauer.me'
 project = author = _me
 copyright = '2020, '+_me
 html_title = _me
+html_baseurl = _canonical
 release = version = ''
 
 # -- General configuration ---------------------------------------------------
@@ -53,12 +55,12 @@ if True:
     blog_title = u'Jörg Faschingbauer'
     blog_path = 'blog'
 
-    # a side effect of setting blog_baseurl is that atom.axml feeds
+    # a side effect of setting blog_baseurl is that atom.xml feeds
     # are generated altogether
-    blog_baseurl = 'https://www.faschingbauer.me'
+    blog_baseurl = _canonical
 
     blog_authors = {
-        'jfasch': ('Jörg Faschingbauer', 'https://www.faschingbauer.me'),
+        'jfasch': ('Jörg Faschingbauer', _canonical),
     }
     blog_default_author = 'jfasch'
     
