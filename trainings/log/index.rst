@@ -313,7 +313,7 @@ Querbeet aus
 C++11: Ausgewählte Themen (6.6.2017 - 8.6.2017 bei einer Firma in Graz)
 -----------------------------------------------------------------------
 
-Aufbauend auf das :ref:`zuvor <records-tectrain-2016-02-22>` im
+Aufbauend auf das :ref:`zuvor <records-2016-02-22>` im
 Grundkurs vermittelte Wissen, ein Überblick über die wichtigsten
 Neuerungen aus C++11 ff.
 
