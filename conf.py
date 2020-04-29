@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 _me = 'Jörg Faschingbauer'
-_canonical = 'https://www.faschingbauer.me'
+_canonical = 'https://www.faschingbauer.co.at'
 project = author = _me
 copyright = '2020, '+_me
 html_title = _me
@@ -36,7 +36,6 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinx.ext.autodoc',
-    'sphinx_rtd_theme',
     'ablog',
     'nbsphinx',
     'sphinxcontrib.fulltoc',
@@ -192,6 +191,8 @@ if html_theme == _RTD:
 
     # RTD css unreadable (uglified?)
     
+    extensions.append('sphinx_rtd_theme')
+
     html_theme_options['collapse_navigation'] = False
     html_theme_options['navigation_depth'] = -1
     
@@ -241,8 +242,10 @@ if html_theme == _BOOTSTRAP:
 
 
 def rstjinja(app, docname, source):
-    """
-    Render our pages as a jinja template for fancy templating goodness.
+    """Render our pages as a jinja template for fancy templating goodness.
+
+    Eroc Holscher mentions this somewhere in his blog.
+
     """
     # Make sure we're outputting HTML
     if app.builder.format != 'html':
@@ -255,7 +258,7 @@ def rstjinja(app, docname, source):
 
 def setup(app):
     for css in _jf_csss:
-        app.add_stylesheet(css)
+        app.add_css_file(css)
 
     app.connect("source-read", rstjinja)
 
