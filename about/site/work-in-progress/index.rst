@@ -5,6 +5,7 @@ Work in Progress
    :maxdepth: 1
 
    stacks.rst
+   topics.rst
    layout-test.rst
    seo.rst
    s5/index.rst
