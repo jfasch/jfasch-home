@@ -11,8 +11,11 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
    .. contents::
       :local:
 
+   **Date, Location**
+
    * Monday 12.5.2020
-   * Location: to be defined [#maybe_online]_
+   * Location: BigBlueButton on https://bbb.faschingbauer.co.at
+     (server online only on-demand)
 
    **Slides**
 
@@ -29,7 +32,7 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
    **Privacy Statement**
 
    Please note that, although this concept page is publicly available,
-   everything else will follow a privacy guideline; see :doc:`here
+   everything will follow a privacy guideline; see :doc:`here
    </trainings/log/codex>` for more.
 
 Culture
@@ -145,8 +148,6 @@ Day 2: Advanced Topics
 
 .. rubric:: Footnotes
 
-.. [#maybe_online] It is still undecided whether we will meet in
-                   person or online.
 .. [#anaconda_r] Anaconda also packages the `R
                  <https://www.r-project.org/>`__ language which is
                  also heavily used by data scientists.
