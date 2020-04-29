@@ -153,7 +153,7 @@ Firewall settings are important; here's what I have,
 
 .. image:: gcp-firewall.png
 
-Now login to the machine ia SSH (clickable in the GCP window).
+Now login to the machine via SSH (clickable in the GCP window).
 
 BigBlueButton Installation
 --------------------------
@@ -190,9 +190,9 @@ script first and check what it does (as normal user),
    ...
   
 Pure decadence from now on. I even let the script install a
-`LetsEncrypt <https://letsencrypt.org/>`__ for me. (I named the
-machine ``bbb``, and my login name is ``jf``, hence the prompt shows
-``jf@bbb``.)
+`LetsEncrypt <https://letsencrypt.org/>`__ certificate for me. (I
+named the machine ``bbb``, and my login name is ``jf``, hence the
+prompt shows ``jf@bbb``.)
 
 .. code-block:: console
 
