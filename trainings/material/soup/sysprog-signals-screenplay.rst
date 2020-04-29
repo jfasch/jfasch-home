@@ -98,6 +98,19 @@ Alarm
    :caption: :download:`sysprog-signals-code/030-signal-termination-alarm.cc`
    :language: c++
 
+Alarm (Louder)
+--------------
+
+* Dangerous ``man signal-safety``
+* See below for threading issues
+
+Synchronous Delivery
+--------------------
+
+.. literalinclude:: sysprog-signals-code/035-synchronous-delivery.c
+   :caption: :download:`sysprog-signals-code/035-synchronous-delivery.c`
+   :language: c
+
 Multithreading
 --------------
 
