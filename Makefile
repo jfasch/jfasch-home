@@ -3,10 +3,9 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
-SPHINXOPTS    ?=
+SPHINXOPTS    ?= -W --keep-going --no-color
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
-# BUILDDIR      = _build
 BUILDDIR = /tmp/jfasch-home
 
 # Put it first so that "make" without argument is like "make help".

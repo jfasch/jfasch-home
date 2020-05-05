@@ -1,0 +1,64 @@
+.. jf-screenplay:: unittest-gtest-fixture
+
+Screenplay: Unittest: GTest Fixtures
+====================================
+
+.. sidebar:: Contents
+
+   .. contents::
+      :local:
+
+   **Code**: :doc:`code/index`
+
+Predefined Environment for a Number of Tests
+--------------------------------------------
+
+.. literalinclude:: code/predef-environ.cc
+   :caption: :download:`code/predef-environ.cc`
+   :language: c++
+
+**Discussion**
+
+* A fixture is a class (in ``gtest``). Technically,
+
+  * "environment": protected members
+  * ``TEST_F()``: C macro; derives from fixture class
+
+* ``initial_state`` is not a very complex test environment, but you
+  get the point
+
+  * database
+  * running co-process
+  * a server that's being talked to
+  * ...
+
+* Otherwise (untechnically), it's just a function that operates on an
+  environment
+
+Environment is *Isolated* Per Test
+----------------------------------
+
+.. literalinclude:: code/isolated-environment.cc
+   :caption: :download:`code/isolated-environment.cc`
+   :language: c++
+
+**Discussion**
+
+* See how environment modification is not seen by the other test
+
+More Complex Environment: ``SetUp()``, ``TearDown()``
+-----------------------------------------------------
+
+.. literalinclude:: code/setup-teardown.cc
+   :caption: :download:`code/setup-teardown.cc`
+   :language: c++
+
+**Discussion**
+
+* *Fixture* is `historically defined
+  <https://www.amazon.de/Test-Driven-Development-Example-Signature/dp/0321146530>`__
+  as being *set up* and *torn down*
+* Naive alternative: use constructor and destructor
+
+  * Destructor *must not throw*!
+  * ``TearDown()`` exception is a normal failure

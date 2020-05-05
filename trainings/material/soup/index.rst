@@ -6,35 +6,15 @@ The Entire Soup
    See :doc:`here </trainings/log/detail/2020-03-30/setup>` for
    how to build the sample code that is referenced.
 
-Live Hacking Screenplays
-------------------------
-
-Text
-....
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   *screenplay
-
-Code
-....
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   *code/index
-
-Slides
+Topics
 ------
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   *slides
+   */topic
+
 
 PDF Downloads
 -------------
