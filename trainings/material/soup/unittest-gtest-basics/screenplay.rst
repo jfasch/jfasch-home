@@ -1,5 +1,3 @@
-.. jf-screenplay:: unittest-gtest-basics
-
 Screenplay: Unittest: GTest Basics
 ==================================
 

@@ -1,3 +1,5 @@
+.. jf-topic:: c++-global-initialization
+
 Topic: C++: Global Objects Initialization
 =========================================
 

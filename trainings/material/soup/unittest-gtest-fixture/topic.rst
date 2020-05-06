@@ -1,3 +1,5 @@
+.. jf-topic:: unittest-gtest-fixture
+
 Topic: Unittest: GTest Fixtures
 ===============================
 

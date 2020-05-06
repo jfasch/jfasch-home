@@ -1,5 +1,3 @@
-.. jf-screenplay:: c++-global-initialization
-
 Screenplay: C++: Global Objects Initialization
 ==============================================
 

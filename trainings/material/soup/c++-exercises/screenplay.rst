@@ -1,5 +1,3 @@
-.. jf-screenplay:: c++-exercises
-
 Screenplay: C++: Exercise Structure
 ===================================
 

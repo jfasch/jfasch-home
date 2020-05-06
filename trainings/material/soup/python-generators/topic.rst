@@ -1,3 +1,5 @@
+.. jf-topic:: python-generators
+
 Topic: Python: Generators
 =========================
 

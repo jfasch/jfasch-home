@@ -1,3 +1,5 @@
+.. jf-topic:: sysprog-signals
+
 Topic: Sysprog: Signals
 =======================
 

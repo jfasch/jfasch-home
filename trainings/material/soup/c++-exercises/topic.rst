@@ -1,3 +1,5 @@
+.. jf-topic:: c++-exercises
+
 Topic: C++: Exercises
 =====================
 

@@ -1,6 +1,3 @@
-.. jf-screenplay:: c++-smart-pointers
-
-
 Screenplay: C++: Smart Pointers
 ===============================
 

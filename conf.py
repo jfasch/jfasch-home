@@ -41,7 +41,7 @@ extensions = [
     'sphinxcontrib.fulltoc',
     'sphinxcontrib.programoutput',
 
-    'jf',
+    'jf.topic',
 ]
 todo_include_todos = True
 

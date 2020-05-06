@@ -1,5 +1,3 @@
-.. jf-screenplay:: c++-stl-container-intro
-
 Screenplay: C++: STL Containers (Intro)
 =======================================
 

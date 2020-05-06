@@ -1,5 +1,3 @@
-.. jf-screenplay:: c++-dynamic-memory
-
 Screenplay: C++: Dynamic Memory
 ===============================
 
