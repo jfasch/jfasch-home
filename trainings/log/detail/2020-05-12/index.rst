@@ -13,9 +13,8 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
 
    **Date, Location**
 
-   * Monday 12.5.2020
-   * Location: BigBlueButton on https://bbb.faschingbauer.co.at
-     (server online only on-demand)
+   * Tuesday 12.5.2020 8:30, and Wednesday
+   * Location: `Zoom Meeting <https://zoom.us/>`__
 
    **Slides**
 
@@ -35,20 +34,20 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
    everything will follow a privacy guideline; see :doc:`here
    </trainings/log/codex>` for more.
 
-Culture
--------
+Environment
+-----------
 
-Following a draft plan, based upon up-front discussion, as to how the
-structure of our two days Python training will look like. Please don't
-take this as a hard rule - we will take ourselves the freedom to
-spontaneously go deeper into one topic, at the cost of another.
+We will try to follow a draft plan, based upon up-front
+discussion. Please don't take this as a hard rule - we will take
+ourselves the freedom to spontaneously go deeper into one topic, at
+the cost of another.
 
 Unit Testing and Test Driven Development
 ........................................
 
-Part of the requirements was to lose a few words about unit testing
-and test driven development. I take the opportunity to kind of invert
-the training scenario, into something that comes into being using the
+Part of the requirements was to spend a few words on unit testing and
+test driven development. I take the opportunity to kind of invert the
+training scenario, into something that comes into being using the
 basis of all *agile* methodologies. Exercises will not have textual
 descriptions, for example, but will be formulated as unit tests that
 initially fail (naturally).
@@ -101,16 +100,16 @@ That said, here's a list of IDEs/editors that are frequently used for
 Python programming. It is in no particular order, and far from being
 complete.
 
-* `PyCharm <https://www.jetbrains.com/pycharm/>`__. I frequently see
-  people use it, so it cannot be all that bad.
-* `Eclipse <https://www.eclipse.org/>`__ and `PyDev
-  <http://pydev.org/>`__. Definitely a heavy weight (regarding memory
-  footprint at least) among IDEs, Eclipse knows how to handle Python.
 * `Visual Studio Code <https://code.visualstudio.com/>`__. Not to be
   confused with Visual Studio, Visual Studio Code is actually a modern
   text editor, not an IDE. Together with its configurabilty, it can be
   turned into one, but by itself does not dictate anything upon the
   user.
+* `PyCharm <https://www.jetbrains.com/pycharm/>`__. I frequently see
+  people use it, so it cannot be all that bad.
+* `Eclipse <https://www.eclipse.org/>`__ and `PyDev
+  <http://pydev.org/>`__. Definitely a heavy weight (regarding memory
+  footprint at least) among IDEs, Eclipse knows how to handle Python.
 * `Spyder <https://www.spyder-ide.org/>`__. It is used by data
   scientists a lot. Running code in it feels like a `Jupyter Notebook
   <https://jupyter.org/>`__ execution in that there are seemingly

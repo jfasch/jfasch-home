@@ -9,12 +9,19 @@ The Entire Soup
 Topics
 ------
 
+Globs
+.....
+
 .. toctree::
    :maxdepth: 1
    :glob:
 
    */topic
 
+Generated from ``jf-topic`` Occurences
+......................................
+
+.. jf-topiclist::
 
 PDF Downloads
 -------------
