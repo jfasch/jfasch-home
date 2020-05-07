@@ -1,7 +1,7 @@
 .. jf-topic:: sysprog-events
 
-Topic: Sysprog: POSIX IPC
-=========================
+Topic: Sysprog: Events
+======================
 
 .. toctree::
 

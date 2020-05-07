@@ -1,15 +1,8 @@
 class Topic:
-    def __init__(self, topicid, docname, dependencies):
-        self._topicid = topicid
-        self._docname = docname
-        self._dependencies = dependencies
-    @property
-    def topicid(self):
-        return self._topicid
-    @property
-    def docname(self):
-        return self._docname
-    @property
-    def dependencies(self):
-        return self._dependencies
+    def __init__(self, title, topicid, docname, dependencies):
+        self.title = title
+        self.topicid = topicid
+        self.docname = docname
+        self.dependencies = dependencies
+        
 
