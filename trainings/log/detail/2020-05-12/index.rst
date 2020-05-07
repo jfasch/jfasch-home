@@ -4,6 +4,8 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
 .. toctree::
    :hidden:
 
+   code/index
+
 .. sidebar:: *Information*
 
    **Table of Contents**
@@ -13,7 +15,7 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
 
    **Date, Location**
 
-   * Tuesday 12.5.2020 8:30, and Wednesday
+   * Wednesday 13.5.2020 8:30, and Thursday
    * Location: `Zoom Meeting <https://zoom.us/>`__
 
    **Slides**
@@ -27,6 +29,11 @@ Python Grundlagen (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
 
    * :doc:`/trainings/repertoire/python-basics`
    * :doc:`/trainings/repertoire/python-advanced`
+
+   **Code**
+
+   Coding will be done in a git clone of this homepage, in a
+   :doc:`sandbox <code/index>` dedicated to this training.
 
    **Privacy Statement**
 
