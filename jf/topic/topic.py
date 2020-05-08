@@ -1,7 +1,7 @@
 class Topic:
-    def __init__(self, title, topicid, docname, dependencies):
+    def __init__(self, title, id, docname, dependencies):
         self.title = title
-        self.topicid = topicid
+        self.id = id
         self.docname = docname
         self.dependencies = dependencies
         

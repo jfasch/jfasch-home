@@ -10,3 +10,8 @@ class Soup:
     def purge(self, docname):
         self._topics = [topic for topic in self._topics if topic.docname != docname]
         
+    def find_id(self, id):
+        for t in self._topics:
+            if t.id == id:
+                return t
+        raise KeyError('no topic with ID '+id)
