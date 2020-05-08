@@ -34,25 +34,25 @@ class TopicListExpander:
     def _topic_paragraph(self, id):
         topic = self._gibberish.soup.find_id(id)
         p = nodes.paragraph()
-        p += self._topic_headline_paragraph(id)
+        p += self._topic_headline_elems(id)
         if topic.dependencies:
             p += self._topic_dependencies(id)
         return p
 
-    def _topic_headline_paragraph(self, id):
+    def _topic_headline_elems(self, id):
         topic = self._gibberish.soup.find_id(id)
-        par = nodes.paragraph()
-        par += nodes.Text(f'{topic.title} (')
+        elems = []
+        elems.append(nodes.Text(f'{topic.title} ('))
 
         ref = nodes.reference()
         ref['refuri'] = self._gibberish.app.builder.get_relative_uri(
             from_=self._docname, to=topic.docname)
         ref += nodes.Text(topic.id)
-        par += ref
+        elems.append(ref)
 
-        par += nodes.Text(')')
+        elems.append(nodes.Text(')'))
         
-        return par
+        return elems
         
     def _topic_dependencies(self, id):
         topic = self._gibberish.soup.find_id(id)
@@ -61,6 +61,9 @@ class TopicListExpander:
             li = nodes.list_item()
             bl += li
 
+            par = nodes.paragraph()
+            li += par
+
             t = self._gibberish.soup.find_id(d)
-            li += self._topic_headline_paragraph(t.id)
+            par += self._topic_headline_elems(t.id)
         return bl
