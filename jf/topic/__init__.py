@@ -1,3 +1,4 @@
+from .soup import Soup
 from .topic import Topic
 from .gibberish import Gibberish
 
@@ -11,13 +12,17 @@ def setup(app):
 
     app.add_directive('jf-topic', TopicDirective)
     app.add_directive('jf-topiclist', TopicListDirective)
+    app.add_directive('jf-topicgraph', TopicGraphDirective)
 
     app.connect('env-purge-doc', _ev_env_purge_doc)
-    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topiclists)
     app.connect('doctree-read', _ev_doctree_read__extract_topicnodes)
+    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topiclists)
+    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topicgraphs)
 
 def _ev_builder_inited__setup_gibberish(app):
-    app.jf_gibberish = Gibberish(app)
+    if not hasattr(app.env, 'jf_topic_soup'):
+        app.env.jf_topic_soup = Soup()
+    app.jf_gibberish = Gibberish(app=app, soup=app.env.jf_topic_soup)
 
 def _ev_env_purge_doc(app, env, docname):
     app.jf_gibberish.soup.purge(docname)
@@ -72,13 +77,26 @@ class TopicListDirective(SphinxDirective):
         node = TopicListNode()
         node.document = self.state.document
         set_source_info(self, node)
-
         return [node]
 
 def _ev_doctree_resolved__expand_topiclists(app, doctree, docname):
     expander = app.jf_gibberish.topiclist_expander(docname)
-
     for topiclist in doctree.traverse(TopicListNode):
-        expanded = expander.expand(topiclist)
+        topiclist.replace_self(expander.expand(topiclist))
 
-        topiclist.replace_self(expanded)
+class TopicGraphNode(nodes.Element):
+    pass
+
+class TopicGraphDirective(SphinxDirective):
+    def run(self):
+        node = TopicGraphNode()
+        node.document = self.state.document
+        set_source_info(self, node)
+        return [node]
+
+def _ev_doctree_resolved__expand_topicgraphs(app, doctree, docname):
+    expander = app.jf_gibberish.topicgraph_expander(docname)
+    for topicgraph in doctree.traverse(TopicGraphNode):
+        x = expander.expand(topicgraph)
+        print(x)
+        topicgraph.replace_self(x)

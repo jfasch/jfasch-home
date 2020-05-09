@@ -1,12 +1,16 @@
 from .soup import Soup
 
 from docutils import nodes
+import networkx as nx
+import matplotlib.pyplot as plt
+
+import io
 
 
 class Gibberish:
-    def __init__(self, app):
+    def __init__(self, app, soup):
         self._app = app
-        self._soup = Soup()
+        self._soup = soup
 
     @property
     def app(self):
@@ -17,6 +21,9 @@ class Gibberish:
 
     def topiclist_expander(self, docname):
         return TopicListExpander(gibberish=self, docname=docname)
+
+    def topicgraph_expander(self, docname):
+        return TopicGraphExpander(gibberish=self, docname=docname)
 
 class TopicListExpander:
     def __init__(self, gibberish, docname):
@@ -67,3 +74,28 @@ class TopicListExpander:
             t = self._gibberish.soup.find_id(d)
             par += self._topic_headline_elems(t.id)
         return bl
+
+class TopicGraphExpander:
+    def __init__(self, gibberish, docname):
+        self._gibberish = gibberish
+        self._docname = docname
+
+    def expand(self, topicgraph):
+        g = nx.DiGraph()
+        node_labels = {}
+        for topic in self._gibberish.soup:
+            g.add_node(topic)
+            node_labels[topic] = topic.id
+            for target_id in topic.dependencies:
+                target_topic = self._gibberish.soup.find_id(target_id)
+                g.add_edge(topic, target_topic)
+
+        nx.draw_networkx(g, labels=node_labels, with_label=True)
+
+        data = io.StringIO()
+        plt.savefig(data, format='svg')
+
+        s = data.getvalue()
+        s = s[s.find('<svg'):]
+
+        return [nodes.raw(s, s, format='html')]

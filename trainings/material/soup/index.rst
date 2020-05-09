@@ -6,23 +6,6 @@ The Entire Soup
    See :doc:`here </trainings/log/detail/2020-03-30/setup>` for
    how to build the sample code that is referenced.
 
-Topics
-------
-
-Globs
-.....
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   */topic
-
-Generated from ``jf-topic`` Occurences
-......................................
-
-.. jf-topiclist::
-
 PDF Downloads
 -------------
 
@@ -41,3 +24,19 @@ PDF Downloads
 .. literalinclude:: CMakeLists.txt
    :language: cmake
 
+Topics
+------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   */topic
+
+Generated
+---------
+
+.. toctree::
+
+   list
+   graph
