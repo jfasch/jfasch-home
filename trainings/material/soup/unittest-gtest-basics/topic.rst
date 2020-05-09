@@ -1,7 +1,7 @@
 .. jf-topic:: unittest-gtest-basics
 
-Topic: Unittest: GTest Basics
-=============================
+Unittest: GTest Basics
+======================
 
 .. toctree::
 

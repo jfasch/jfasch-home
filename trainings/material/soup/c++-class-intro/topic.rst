@@ -1,7 +1,7 @@
 .. jf-topic:: c++-class-intro
 
-Topic: C++: Class (Introduction)
-================================
+C++: Class (Introduction)
+=========================
 
 .. toctree::
 

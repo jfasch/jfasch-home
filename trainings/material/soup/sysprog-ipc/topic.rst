@@ -1,7 +1,7 @@
 .. jf-topic:: sysprog-ipc
 
-Topic: Sysprog: POSIX IPC
-=========================
+Sysprog: POSIX IPC
+==================
 
 .. toctree::
 

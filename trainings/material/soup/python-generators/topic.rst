@@ -1,7 +1,7 @@
 .. jf-topic:: python-generators
 
-Topic: Python: Generators
-=========================
+Python: Generators
+==================
 
 .. toctree::
 

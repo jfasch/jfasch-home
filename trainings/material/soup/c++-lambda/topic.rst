@@ -1,5 +1,5 @@
-Topic: C++: Lambda
-==================
+C++: Lambda
+===========
 
 .. toctree::
 

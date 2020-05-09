@@ -1,7 +1,7 @@
 .. jf-topic:: c++-smart-pointers
 
-Topic: C++: Smart Pointers
-==========================
+C++: Smart Pointers
+===================
 
 .. toctree::
 

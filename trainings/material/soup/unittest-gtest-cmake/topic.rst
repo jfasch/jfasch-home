@@ -1,7 +1,7 @@
 .. jf-topic:: unittest-gtest-cmake
 
-Topic: Unittest: GTest and CMake
-================================
+Unittest: GTest and CMake
+=========================
 
 .. toctree::
 

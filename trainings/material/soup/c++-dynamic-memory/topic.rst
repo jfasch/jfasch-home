@@ -1,7 +1,7 @@
 .. jf-topic:: c++-dynamic-memory
 
-Topic: C++: Dynamic Memory
-==========================
+C++: Dynamic Memory
+===================
 
 .. toctree::
 

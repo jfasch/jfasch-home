@@ -1,8 +1,8 @@
 .. jf-topic:: c++-class-template
    :dependencies: c++-class-intro
 
-Topic: C++: Class Templates
-===========================
+C++: Class Templates
+====================
 
 .. toctree::
 

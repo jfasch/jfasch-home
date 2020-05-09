@@ -1,5 +1,5 @@
-Topic: C++: Inheritance, Interfaces, ``virtual``
-================================================
+C++: Inheritance, Interfaces, ``virtual``
+=========================================
 
 .. toctree::
 

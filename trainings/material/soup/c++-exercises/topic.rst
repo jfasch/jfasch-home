@@ -1,7 +1,7 @@
 .. jf-topic:: c++-exercises
 
-Topic: C++: Exercises
-=====================
+C++: Exercises
+==============
 
 .. toctree::
 

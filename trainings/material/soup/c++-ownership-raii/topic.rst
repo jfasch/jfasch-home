@@ -1,7 +1,7 @@
 .. jf-topic:: c++-ownership-raii
 
-Topic: C++: Ownership/RAII
-==========================
+C++: Ownership/RAII
+===================
 
 .. toctree::
 

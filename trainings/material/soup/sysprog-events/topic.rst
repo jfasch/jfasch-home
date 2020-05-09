@@ -1,7 +1,7 @@
 .. jf-topic:: sysprog-events
 
-Topic: Sysprog: Events
-======================
+Sysprog: Events
+===============
 
 .. toctree::
 

@@ -1,7 +1,7 @@
 .. jf-topic:: c++-global-initialization
 
-Topic: C++: Global Objects Initialization
-=========================================
+C++: Global Objects Initialization
+==================================
 
 .. toctree::
 

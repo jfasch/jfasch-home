@@ -1,7 +1,7 @@
 .. jf-topic:: sysprog-signals
 
-Topic: Sysprog: Signals
-=======================
+Sysprog: Signals
+================
 
 .. toctree::
 

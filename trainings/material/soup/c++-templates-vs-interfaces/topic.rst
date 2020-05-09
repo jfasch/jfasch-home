@@ -1,5 +1,5 @@
-Topic: C++: Templates vs. Interfaces
-====================================
+C++: Templates vs. Interfaces
+=============================
 
 .. toctree::
 
