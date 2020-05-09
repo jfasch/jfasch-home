@@ -2,6 +2,7 @@ from .soup import Soup
 
 from docutils import nodes
 import networkx as nx
+from networkx.algorithms.dag import descendants
 import matplotlib.pyplot as plt
 
 import io
@@ -81,19 +82,33 @@ class TopicGraphExpander:
         self._docname = docname
 
     def expand(self, topicgraph):
-        g = nx.DiGraph()
-        node_labels = {}
+        world = nx.DiGraph()
         for topic in self._gibberish.soup:
-            g.add_node(topic)
-            node_labels[topic] = topic.id
+            world.add_node(topic)
             for target_id in topic.dependencies:
                 target_topic = self._gibberish.soup.find_id(target_id)
-                g.add_edge(topic, target_topic)
+                world.add_edge(topic, target_topic)
 
+        if len(topicgraph.entries):
+            topics = set()
+            for topic in (self._gibberish.soup.find_id(id) for id in topicgraph.entries):
+                topics.add(topic)
+                topics.update(descendants(world, topic))
+            g = world.subgraph(topics)
+            for n in g.nodes:
+                print(n.id)
+        else:
+            g = world
+
+        node_labels = {topic: topic.id for topic in g.nodes}
         nx.draw_networkx(g, labels=node_labels, with_label=True)
 
         data = io.StringIO()
         plt.savefig(data, format='svg')
+        plt.clf()
+        plt.cla()
+        plt.close()
+
 
         s = data.getvalue()
         s = s[s.find('<svg'):]

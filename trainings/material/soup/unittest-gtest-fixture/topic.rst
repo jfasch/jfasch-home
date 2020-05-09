@@ -8,3 +8,6 @@ Unittest: GTest Fixtures
 
    screenplay
    code/index
+
+.. jf-topicgraph::
+   :entries: unittest-gtest-fixture

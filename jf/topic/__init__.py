@@ -85,11 +85,17 @@ def _ev_doctree_resolved__expand_topiclists(app, doctree, docname):
         topiclist.replace_self(expander.expand(topiclist))
 
 class TopicGraphNode(nodes.Element):
+    def __init__(self, entries):
+        super().__init__(self)
+        self.entries = entries
     pass
 
 class TopicGraphDirective(SphinxDirective):
+    option_spec = {
+        'entries': _list_of_stripped_str,
+    }
     def run(self):
-        node = TopicGraphNode()
+        node = TopicGraphNode(entries=self.options.get('entries', []))
         node.document = self.state.document
         set_source_info(self, node)
         return [node]
@@ -97,6 +103,4 @@ class TopicGraphDirective(SphinxDirective):
 def _ev_doctree_resolved__expand_topicgraphs(app, doctree, docname):
     expander = app.jf_gibberish.topicgraph_expander(docname)
     for topicgraph in doctree.traverse(TopicGraphNode):
-        x = expander.expand(topicgraph)
-        print(x)
-        topicgraph.replace_self(x)
+        topicgraph.replace_self(expander.expand(topicgraph))
