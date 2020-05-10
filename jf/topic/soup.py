@@ -15,3 +15,12 @@ class Soup:
             if t.id == id:
                 return t
         raise KeyError('no topic with ID '+id)
+
+
+def setup(app):
+    app.connect('env-purge-doc', _ev_env_purge_doc)
+
+def _ev_env_purge_doc(app, env, docname):
+    app.jf_gibberish.soup.purge(docname)
+
+    

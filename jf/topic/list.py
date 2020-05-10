@@ -3,17 +3,21 @@ from sphinx.util.nodes import set_source_info
 from docutils import nodes
 
 
-def event_doctree_resolved__expand_topiclist_nodes(app, doctree, docname):
+def setup(app):
+    app.add_directive('jf-topiclist', _TopicListDirective)
+    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topiclist_nodes)
+
+def _ev_doctree_resolved__expand_topiclist_nodes(app, doctree, docname):
     expander = TopicListExpander(gibberish=app.jf_gibberish, docname=docname)
-    for n in doctree.traverse(TopicListNode):
+    for n in doctree.traverse(_TopicListNode):
         expander.expand(n)
 
-class TopicListNode(nodes.Element):
+class _TopicListNode(nodes.Element):
     pass
 
-class TopicListDirective(SphinxDirective):
+class _TopicListDirective(SphinxDirective):
     def run(self):
-        node = TopicListNode()
+        node = _TopicListNode()
         node.document = self.state.document
         set_source_info(self, node)
         return [node]
