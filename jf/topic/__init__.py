@@ -1,3 +1,4 @@
+from . import list
 from . import graph
 from . import utils
 from .soup import Soup
@@ -13,12 +14,12 @@ def setup(app):
     app.connect('builder-inited', _ev_builder_inited__setup_gibberish)
 
     app.add_directive('jf-topic', TopicDirective)
-    app.add_directive('jf-topiclist', TopicListDirective)
+    app.add_directive('jf-topiclist', list.TopicListDirective)
     app.add_directive('jf-topicgraph', graph.TopicGraphDirective)
 
     app.connect('env-purge-doc', _ev_env_purge_doc)
     app.connect('doctree-read', _ev_doctree_read__extract_topicnodes)
-    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topiclists)
+    app.connect('doctree-resolved', list.event_doctree_resolved__expand_topiclist_nodes)
     app.connect('doctree-resolved', graph.event_doctree_resolved__expand_topicgraph_nodes)
 
 def _ev_builder_inited__setup_gibberish(app):
@@ -67,19 +68,4 @@ def _ev_doctree_read__extract_topicnodes(app, doctree):
             topic.title = _get_doctree_title(docname, doctree)
         app.jf_gibberish.soup.add(topic)
         tn.replace_self([])
-
-class TopicListNode(nodes.Element):
-    pass
-
-class TopicListDirective(SphinxDirective):
-    def run(self):
-        node = TopicListNode()
-        node.document = self.state.document
-        set_source_info(self, node)
-        return [node]
-
-def _ev_doctree_resolved__expand_topiclists(app, doctree, docname):
-    expander = app.jf_gibberish.topiclist_expander(docname)
-    for topiclist in doctree.traverse(TopicListNode):
-        topiclist.replace_self(expander.expand(topiclist))
 

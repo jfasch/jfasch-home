@@ -51,8 +51,6 @@ class TopicGraphExpander:
                 topics.add(topic)
                 topics.update(descendants(world, topic))
             g = world.subgraph(topics)
-            for n in g.nodes:
-                print(n.id)
         else:
             g = world
 
