@@ -1,3 +1,5 @@
+from . import graph
+from . import utils
 from .soup import Soup
 from .topic import Topic
 from .gibberish import Gibberish
@@ -12,12 +14,12 @@ def setup(app):
 
     app.add_directive('jf-topic', TopicDirective)
     app.add_directive('jf-topiclist', TopicListDirective)
-    app.add_directive('jf-topicgraph', TopicGraphDirective)
+    app.add_directive('jf-topicgraph', graph.TopicGraphDirective)
 
     app.connect('env-purge-doc', _ev_env_purge_doc)
     app.connect('doctree-read', _ev_doctree_read__extract_topicnodes)
     app.connect('doctree-resolved', _ev_doctree_resolved__expand_topiclists)
-    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topicgraphs)
+    app.connect('doctree-resolved', graph.event_doctree_resolved__expand_topicgraph_nodes)
 
 def _ev_builder_inited__setup_gibberish(app):
     if not hasattr(app.env, 'jf_topic_soup'):
@@ -26,9 +28,6 @@ def _ev_builder_inited__setup_gibberish(app):
 
 def _ev_env_purge_doc(app, env, docname):
     app.jf_gibberish.soup.purge(docname)
-
-def _list_of_stripped_str(optval):
-    return [s.strip() for s in optval.split(',')]
 
 class TopicNode(nodes.Element):
     def __init__(self, topic):
@@ -40,7 +39,7 @@ class TopicDirective(SphinxDirective):
 
     option_spec = {
         'title': str,
-        'dependencies': _list_of_stripped_str,
+        'dependencies': utils.list_of_stripped_str,
     }
 
     def run(self):
@@ -84,23 +83,3 @@ def _ev_doctree_resolved__expand_topiclists(app, doctree, docname):
     for topiclist in doctree.traverse(TopicListNode):
         topiclist.replace_self(expander.expand(topiclist))
 
-class TopicGraphNode(nodes.Element):
-    def __init__(self, entries):
-        super().__init__(self)
-        self.entries = entries
-    pass
-
-class TopicGraphDirective(SphinxDirective):
-    option_spec = {
-        'entries': _list_of_stripped_str,
-    }
-    def run(self):
-        node = TopicGraphNode(entries=self.options.get('entries', []))
-        node.document = self.state.document
-        set_source_info(self, node)
-        return [node]
-
-def _ev_doctree_resolved__expand_topicgraphs(app, doctree, docname):
-    expander = app.jf_gibberish.topicgraph_expander(docname)
-    for topicgraph in doctree.traverse(TopicGraphNode):
-        topicgraph.replace_self(expander.expand(topicgraph))
