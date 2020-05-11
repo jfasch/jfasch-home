@@ -19,6 +19,7 @@ Linux und Open Source
    trainings/index
    trainings/booking
    trainings/material/index
+   Übungen <trainings/instructions.rst>
    trainings/log/index
 
 .. toctree::

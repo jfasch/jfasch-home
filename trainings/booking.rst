@@ -6,6 +6,11 @@ Buchung, Kursablauf
    .. contents::
       :local:
 
+   **Buchung**
+
+   Schicken Sie bitte eine formlose Mail mit Ihrem Anliegen an
+   training@faschingbauer.co.at.
+
    **Online Schulungen**
 
    Egal welcher Schulungstyp - offen oder inhouse -, alle Schulungen
