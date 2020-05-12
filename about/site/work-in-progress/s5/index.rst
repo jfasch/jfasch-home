@@ -56,7 +56,7 @@ material.
 
   .. code-block:: console
 
-     $ rst2s5 --theme-url ../../_static/s5/ui/default \
+     $ rst2s5.py --theme-url ../../_static/s5/ui/default \
 		  some-slides.rst some-slides.s5.html
 
   ``--theme-url`` is given so that downloader can find the S5
