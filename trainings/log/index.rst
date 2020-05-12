@@ -20,11 +20,10 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <codex>`.
    codex
    detail/index
 
-Python Advanced (12.5.2020 - 14.5.2020 bei einer Firma in Graz)
+Python Advanced (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
 ---------------------------------------------------------------
 
 (:doc:`Mehr ... <detail/2020-05-12/index>`)
-
 
 C++ für Embedded-Entwickler (30.3.2020 - 4.4.2020, bei einer Firma in Baden-Württemberg)
 ----------------------------------------------------------------------------------------

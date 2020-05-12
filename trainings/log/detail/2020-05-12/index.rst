@@ -1,5 +1,5 @@
-Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
-=================================================================
+Python Advanced (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
+===============================================================
 
 .. toctree::
    :hidden:
@@ -33,7 +33,9 @@ Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
    **Code**
 
    Coding will be done in a git clone of this homepage, in a
-   :doc:`sandbox <code/index>` dedicated to this training.
+   :doc:`sandbox <code/index>` dedicated to this training. See
+   :doc:`here </trainings/exercises>` for a simplistic description of
+   the Git workflow we will be using.
 
    **Privacy Statement**
 
