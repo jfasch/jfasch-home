@@ -1,5 +1,5 @@
-Python Advanced (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
-===============================================================
+Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
+=================================================================
 
 .. toctree::
    :hidden:
@@ -33,9 +33,7 @@ Python Advanced (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
    **Code**
 
    Coding will be done in a git clone of this homepage, in a
-   :doc:`sandbox <code/index>` dedicated to this training. See
-   :doc:`here </trainings/exercises>` for a simplistic description of
-   the Git workflow we will be using.
+   :doc:`sandbox <code/index>` dedicated to this training.
 
    **Privacy Statement**
 
@@ -132,6 +130,8 @@ complete.
 Topics
 ------
 
+.. _envisioned-topics:
+
 Day 1: Language Basics
 ......................
 
@@ -154,8 +154,132 @@ Day 2: Advanced Topics
 * Modules and packages ("namespaces")
 * Maybe a larger group exercise, to consolidate news from two days.
 
+Wrap-Up
+-------
+
+The training was done online, due to the Corona crisis, using `Zoom
+<https://zoom.us/>`__. Surprisingly, I wouldn't have expected that,
+online is not much different from face-to-face; questions were asked
+at a normal rate, nobody slept over (at least I did not see anybody
+falling from their chairs). I would have liked to see faces more,
+though, and I am definitely missing the off-topic communication during
+breaks and lunch. All in all, though, I definitely can say that there
+is no reason to not do trainings online.
+
+That said, we probably tried to squeeze a little too much into only
+two days. To make the bigger part of the audience more happy, we
+should have probably explicitly agreed to strip basics (which the plan
+had dedicated day one to), at the cost of some in the audience who
+were not so advanced. Such things happen from time to time in
+trainings, it would appear that it's the trainer's job to detect such
+situations more early. My takeaway is that it is very important to
+state facts clearly and *early*, especially in settings where you
+cannot rely on your nonverbal antennae.
+
+Being a stubborn greybeard though, I use to insist in bringing big
+pictures (which Python's iteration, (im)mutability, and ``exec()``
+belong to, among others), which I definitely did.
+
+Day two was dedicated to a walk through the ``unittest`` module,
+together with a sketch of what Test Driven Development could do for
+you. We thereby saw what Python *modules* and *packages* are, and how
+modularization is done in Python. ``$PYTHONPATH`` and such. To wrap
+this up, the sketch ended with a discussion of ``distutils``. We saw
+what a ``setup.py`` file adds, and discussed what (possibly
+continuous?) integration and deployment is at such a small
+scale. (Probably Azure DevOps is a rather heavyweight solution to that
+little local problem; it might solve problems that kept out of reach
+of this little local training though.)
+
+Later in the afternoon of day two, we were only able to scratch the
+surface of parallel programming (not among the agreed topics) by
+discussing how threading is done in Python. We saw how the Global
+Interpreter Lock (GIL) enables simplicity, but also makes true
+parallism nearly impossible.
+
+Some topics have only been covered on their surface, others not at
+all. Clearly two days can't have it all, so what follows is a list of
+YouTube links. Opinionated recommendations of mine to expand all those
+topics that would have been interesting to cover, but which we haven't
+had the time for.
+
+Links
+.....
+
+My favorite Python videos are those that are both entertaining and
+informative, and long. Among those, many are by **David Beazley** (a
+freelance trainer who teaches Python) and **Raymond Hettinger** (same,
+in addition to being a Python core developer). I am slightly biased
+towards Beazley because I like his sense of humor.
+
+For short and to-the-point tutorials, below, I recommend (and cite
+below) **Corey Schafer** (for general topics), and **Keith Galli** for
+data science.
+
+Anyway, here a couple of links
+
+* `Modern dictionaries
+  <https://www.youtube.com/watch?v=p33CVV29OG8>`__: **Raymond
+  Hettinger** emphasizing on dictionaries, even more than
+  I did. (Hehe, I just discovered that he's bringing my quick hash
+  table explanation to a conclusive end. Hard stuff for the unaware
+  though.)
+* `Understanding the Python GIL
+  <https://www.youtube.com/watch?v=Obt-vMVdM8s>`__: **David Beazley**
+  dissecting the Global Interpreter Lock, explaining why
+  multiprocessing is better. At around minute 45, in the
+  questions/answers, there a mention that using NumPy operations in
+  multiple threads is *truly parallel*.
+* `Concurrency <https://www.youtube.com/watch?v=9zinZmE3Ogk>`__:
+  **Raymond Hettinger** covering most if not all aspects and
+  possiblities of concurrency. Very informative, very concise,
+  covering
+
+  * Multithreading
+  * Multiprocessing
+  * Async; I didn't even mention that. `asyncio
+    <https://docs.python.org/3/library/asyncio.html>`__. Me big fan.
+
+* `Modules and Packages
+  <https://www.youtube.com/watch?v=0oTh1CXRaQ0>`__. **David Beazley**
+  has a three hour (!) *really cool and in-depth* look into the
+  seemingly simple ``import`` mechanism.
+* `Unit Testing <https://www.youtube.com/watch?v=6tNS--WetLI>`__:
+  **Corey Schafer** (he has a number of really good *and* short
+  tutorial videos; look out for him as you search).
+* `Virtual Environments Tutorial
+  <https://www.youtube.com/watch?v=APOPm01BVrk>`__: **Corey Schafer**
+  again. Virtual environments are kind of an isolated development
+  sandbox, solving a similar problem as containers do, but much more
+  lightweight and Python only.
+* `Packaging, Deployment, PyPI, and pip
+  <https://www.youtube.com/watch?v=P3dY3uDmnkU>`__: **Chris Wilcox**
+  (of Google) talking about packaging and deployment, and related
+  topics
+* `Generators Tutorial
+  <https://www.youtube.com/watch?v=bD05uGo_sVI>`__: **Corey Schafer**
+  again, this time 11 minutes on generators.
+* `Generators: The Final Frontier
+  <https://www.youtube.com/watch?v=D1twn9kLmYg>`__: **David Beazley**,
+  again a bit (a whopping four hours) more precise on that topic.
+* `Decorators Tutorial
+  <https://www.youtube.com/watch?v=FsAPt_9Bf3U>`__: **Corey Schafer**
+  on decorators and closures.
+* `NumPy Tutorial <https://www.youtube.com/watch?v=GB9ByFAIAH4>`__:
+  **Keith Galli** has a number of good **data science** tutorials.
+* :doc:`Here <../2019-11-12/index>` and :doc:`here
+  <../2019-11-12/code/BigPlan>` you might want to read up on another
+  Python training I gave last year; **me** getting in touch with
+  `NumPy <https://numpy.org/>`__ more closely.
+* `Simulating COVID-19 using Python, NumPy & Matplotlib
+  <https://www.youtube.com/watch?v=KAmZe5D3v5I>`__: finishing the
+  list, I found that funny. Apart from that, it is a good live hacking
+  session that brings it all together. You might like `Matplotlib
+  <https://matplotlib.org/>`__, btw.
+
 .. rubric:: Footnotes
 
 .. [#anaconda_r] Anaconda also packages the `R
                  <https://www.r-project.org/>`__ language which is
                  also heavily used by data scientists.
+
