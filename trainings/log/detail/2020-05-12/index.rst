@@ -1,3 +1,8 @@
+.. meta::
+   :description: Vor- und Nachbearbeitung eines zweitägigen Python
+                 Trainings
+   :keywords: schulung, training, programming, python
+
 Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
 =================================================================
 

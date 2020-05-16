@@ -1,3 +1,8 @@
+.. meta::
+   :description: Vor- und Nachbearbeitung eines zweitägigen Python
+                 Trainings
+   :keywords: schulung, training, programming, python
+
 Python (12.11.2019 - 14.11.2019 in Graz)
 ========================================
 
