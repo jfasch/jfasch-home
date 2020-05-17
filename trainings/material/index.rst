@@ -103,12 +103,12 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - :download:`Python <pdf/300-python.pdf>`
      -
      -
-     - :doc:`soup/python-generators/code/index`
+     - :doc:`soup/python-yield-fibo/code/index`
    * - :doc:`/trainings/repertoire/python-advanced`
      - :download:`Python <pdf/300-python.pdf>`
      -
      -
-     - :doc:`soup/python-generators/code/index`
+     - :doc:`soup/python-yield-fibo/code/index`
    * - :doc:`/trainings/repertoire/design-patterns`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -

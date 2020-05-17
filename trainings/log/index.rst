@@ -20,6 +20,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <codex>`.
    codex
    detail/index
 
+Python Individualtraining (18.5.2020 - 19.5.2020)
+-------------------------------------------------
+
+(:doc:`Mehr ... <detail/2020-05-18/index>`)
+
+Der Kurs fand in den Räumen der Firma `tecTrain in Graz
+<https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
+statt, über die auch gebucht wurde.
+
 Python Advanced (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
 ---------------------------------------------------------------
 

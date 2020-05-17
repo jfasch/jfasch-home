@@ -1,11 +1,11 @@
 .. meta::
    :description: This live-hacking screenplay is a guide for myself to
-                 repeatably, didactically, demonstrate what Python
-                 generators are
-   :keywords: python, schulung, training, programming
+                 repeatably, didactically, demonstrate how the Python
+                 yield statement works
+   :keywords: python, schulung, training, programming, yield
 
-Screenplay: Python: Generators
-==============================
+Screenplay: Python: The Yield Statement
+=======================================
 
 .. sidebar:: Contents
 
