@@ -128,7 +128,7 @@ complete.
   strange "cell" like dependencies. (Take this into account when you
   decide to go with it.)
 * `Emacs <https://www.gnu.org/software/emacs/>`__. (I had to say
-  that.) You trainer will use it to do occasional live hacking
+  that.) Your trainer will use it to do occasional live hacking
   demos. Watching someone use it is ok, but learning how to use it
   requires a nontrivial amount of patience.
 
@@ -162,14 +162,19 @@ Day 2: Advanced Topics
 Wrap-Up
 -------
 
-The training was done online, due to the Corona crisis, using `Zoom
-<https://zoom.us/>`__. Surprisingly, I wouldn't have expected that,
-online is not much different from face-to-face; questions were asked
-at a normal rate, nobody slept over (at least I did not see anybody
-falling from their chairs). I would have liked to see faces more,
-though, and I am definitely missing the off-topic communication during
-breaks and lunch. All in all, though, I definitely can say that there
-is no reason to not do trainings online.
+How Was It?
+...........
+
+
+The training was done online on `Zoom <https://zoom.us/>`__, due to
+the Corona crisis. This was my second online experience (first one is
+:doc:`here <../2020-03-30/index>`), and I must say online is not much
+different from face-to-face. Questions were asked at a normal rate,
+nobody slept over (at least I did not see anybody falling from their
+chairs). I would have liked to see faces more, though, and I am
+definitely missing the off-topic communication during breaks and
+lunch. All in all, though, I definitely can say that there is no
+reason to not do trainings online.
 
 That said, we probably tried to squeeze a little too much into only
 two days. To make the bigger part of the audience more happy, we
@@ -180,6 +185,9 @@ trainings, it would appear that it's the trainer's job to detect such
 situations more early. My takeaway is that it is very important to
 state facts clearly and *early*, especially in settings where you
 cannot rely on your nonverbal antennae.
+
+Topics
+......
 
 Being a stubborn greybeard though, I use to insist in bringing big
 pictures (which Python's iteration, (im)mutability, and ``exec()``
