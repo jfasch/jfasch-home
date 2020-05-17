@@ -23,10 +23,10 @@ Python Individualtraining (18.5.2020 - 19.5.2020)
    * Montag 18.5.2020 9:00, und Dienstag
    * Microsoft Teams
 
-   **Slides**
+   **Material**
 
-   * :download:`Python </trainings/material/pdf/300-python.pdf>` (PDF)
+   * Slides: :download:`PDF </trainings/material/pdf/300-python.pdf>`
+   * :doc:`Kursbeschreibung </trainings/repertoire/python-basics>`
+   * Anleitung: :doc:`Entstandenes Material und Übungen
+     </trainings/exercises>`
 
-   **Kursbeschreibung**
-
-   * :doc:`/trainings/repertoire/python-basics`

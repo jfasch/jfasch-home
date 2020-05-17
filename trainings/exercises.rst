@@ -48,9 +48,9 @@ online directly from that site.
 Workflow
 --------
 
-Lets say the training takes place on 2020-05-12; then the Github
+Lets say the training takes place on 2020-05-18; then the Github
 repository's URL is named something like
-``https://github.com/jfasch/jfasch-home-2020-05-12`` (the actual
+``https://github.com/jfasch/jfasch-home-2020-05-18`` (the actual
 repository name to clone is communicated to the trainees).
 
 Cloning the Repository
@@ -62,19 +62,19 @@ say,
 
 .. code-block:: console
 
-   $ git clone https://github.com/jfasch/jfasch-home-2020-05-12
+   $ git clone https://github.com/jfasch/jfasch-home-2020-05-18
 
-What you just cloned into directory ``jfasch-home-2020-05-12`` is the
+What you just cloned into directory ``jfasch-home-2020-05-18`` is the
 entire source code for the website that you are browsing,
 `<https://www.faschingbauer.me>`__. Besides course descriptions, the
 training material, a blog where I occasionally drop an article, and
 other stuff, that site contains one subdirectory for your
 training. That directory is visible through the URL
-`<https://www.faschingbauer.me/trainings/log/detail/2020-05-12/>`__
+`<https://www.faschingbauer.me/trainings/log/detail/2020-05-18/>`__
 (the training *metadata*, so to say).
 
 In the clone, there is a corresponding directory,
-``jfasch-home-2020-05-12/trainings/log/detail/2020-05-12/``, which is
+``jfasch-home-2020-05-18/trainings/log/detail/2020-05-18/``, which is
 the home for your training. This is where material for the training
 starts to pile up - short programs written by the trainer as a
 response to questions, occasional `Jupyter notebooks
@@ -85,7 +85,7 @@ Lets make this our current working directory from now on,
 
 .. code-block:: console
 
-   $ cd jfasch-home-2020-05-12/trainings/log/detail/2020-05-12/
+   $ cd jfasch-home-2020-05-18/trainings/log/detail/2020-05-18/
 
 Exercise Time
 .............
@@ -174,7 +174,7 @@ and obvious, I don't know), is to *commit* what you have staged.
    $ git commit -m 'my rather cool solution'
    [master 7434a5b] my rather cool solution
     1 file changed, 3 insertions(+)
-    create mode 100755 trainings/log/detail/2020-05-12/code/exercise-1/user2/my-unique-solution.py
+    create mode 100755 trainings/log/detail/2020-05-18/code/exercise-1/user2/my-unique-solution.py
 
 This created a commit with ID ``7434a5b``, and the message you
 provided. In real life, out of respect from your coworkers and your
@@ -203,9 +203,9 @@ publicize - *push* - what we have local. "``git push``" is next.
    $ git push
    Username for 'https://github.com': user2
    Password for 'https://user2@github.com': 
-   To https://github.com/jfasch/jfasch-home-2020-05-12
+   To https://github.com/jfasch/jfasch-home-2020-05-18
     ! [rejected]        master -> master (fetch first)
-   error: failed to push some refs to 'https://github.com/jfasch/jfasch-home-2020-05-12'
+   error: failed to push some refs to 'https://github.com/jfasch/jfasch-home-2020-05-18'
    hint: Updates were rejected because the remote contains work that you do
    hint: not have locally. This is usually caused by another repository pushing
    hint: to the same ref. You may want to first integrate the remote changes
@@ -230,13 +230,13 @@ offending version,
    remote: Compressing objects: 100% (9/9), done.
    remote: Total 9 (delta 3), reused 6 (delta 0), pack-reused 0
    Unpacking objects: 100% (9/9), 869 bytes | 124.00 KiB/s, done.
-   From https://github.com/jfasch/jfasch-home-2020-05-12
+   From https://github.com/jfasch/jfasch-home-2020-05-18
       a4b9666..bf5bb75  master     -> origin/master
    Updating 7434a5b..bf5bb75
    Fast-forward
-    trainings/log/detail/2020-05-12/code/exercise-1/user1/another-perfect-solution.py | 3 +++
+    trainings/log/detail/2020-05-18/code/exercise-1/user1/another-perfect-solution.py | 3 +++
     1 file changed, 3 insertions(+)
-    create mode 100755 trainings/log/detail/2020-05-12/code/exercise-1/user1/another-perfect-solution.py
+    create mode 100755 trainings/log/detail/2020-05-18/code/exercise-1/user1/another-perfect-solution.py
 
 This went ok; now it's time to retry the ``git push`` above.
 
@@ -265,3 +265,31 @@ together.
 If you are interested, I suggest you read the `section on branching
 and merging in the Git book
 <https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging>`__.
+
+Trainer's Notes
+---------------
+
+Your trainer (me) wishes he had a Git training in his repertoire, but
+he hasn't for a reason. Here's how to set this up (with the training
+ID ``2020-05-18``).
+
+* On Github, create a private repository ``jfasch-home-2020-05-18``.
+* Push branch ``master`` to it,
+
+  .. code-block:: console
+
+     $ git push git@github.com:jfasch/jfasch-home-2020-05-18.git
+
+* Add remote, and fetch what was just pushed (nothing is fetched,
+  clearly),
+
+  .. code-block:: console
+  
+     $ git remote add 2020-05-18 git@github.com:jfasch/jfasch-home-2020-05-18.git
+     $ git fetch 2020-05-18
+
+* Create tracking branch, and check it out,
+
+  .. code-block:: console
+  
+     $ git checkout --track -b 2020-05-18-master 2020-05-18/master
