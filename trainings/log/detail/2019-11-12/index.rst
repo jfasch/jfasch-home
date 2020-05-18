@@ -91,13 +91,14 @@ die `Funktion
    :caption: :download:`code/mat.py`
    :language: python
 
-Franziska's Weird Input File
-----------------------------
+Lösen einer Uni-Übung
+---------------------
 
-Franziska, sie studiert Physik neben der Arbeit, muss für eine Übung
-... was weiss ich ... machen. Wie auch immer, der Input für ihre
-Arbeit liegt in folgendem bekackten Inputformat vor, das es zu parsen
-gilt. War eine nette Zwischendurch-Gruppenarbeit.
+Ein Teilzeitmitarbeiterin der Firma, sie studiert Physik neben der
+Arbeit, muss für eine Übung ... was weiss ich ... machen. Wie auch
+immer, der Input für ihre Arbeit liegt in folgendem bekackten
+Inputformat vor, das es zu parsen gilt. War eine nette
+Zwischendurch-Gruppenarbeit.
 
 .. literalinclude:: code/franziska/H2O.dat.txt
    :caption: :download:`code/franziska/H2O.dat.txt`

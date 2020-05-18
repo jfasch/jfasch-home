@@ -59,24 +59,19 @@ die ich persönlich gut kenne. Konzipiert als Livehacking-Demo und
 einhergehender Diskussion über technische Lösungen, Architektur, und
 Gott und die Welt.
 
-Python/NumPy (12.11.2019, `EVK <https://www.evk.biz/de/>`__ in Graz)
---------------------------------------------------------------------
+Python/NumPy (12.11.2019 - 13.11.2019 in Graz)
+----------------------------------------------
 
 (:doc:`Mehr ... <detail/2019-11-12/index>`)
 
-*Das* war cool! Die Firma `EVK <https://www.evk.biz/de/>`__ hat über
-`tecTrain (Graz)
-<https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
-(ein Partner von mir, in dessen Schulungsräumen der Kurs stattfand)
-eine Python-Einführung für ihr Professional Services Team bestellt, um
-etwas über die numerischen Fähigkeiten von Python zu
-erfahren. Hintergrund war die Frage, "Ist die Herrschaft von MATLAB
-absolut?".
-
-Anlässlich des Kurses habe ich wahrscheinlich mehr gelernt als die
-Teilnehmer - `NumPy <https://numpy.org/>`__ kannte ich bisher nur aus
-weiter Ferne, und die Vorbereitungszeit war eine sehr feine. Der Kurs
-auch, das Mädel und die Jungs habens nämlich richtig drauf.
+Eine Einführung in Python und `NumPy <https://numpy.org/>`__, zur
+Beantwortung der Frage, "Ist die Herrschaft von MATLAB
+absolut?". Gestellt von einer Firma aus dem Raum Graz, gehalten in den
+Schulungsräumen von `tecTrain (Graz)
+<https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__,
+über die der Kurs gebucht wurde. Platzhirsche sind schwer zu schlagen,
+haben wir herausgefunden, aber Python ist auf einem sehr guten
+Weg. Spass hatten wir allemal.
 
     *"Die Schulung war unglaublich lustig und hat mir einen sehr guten
     Überblick über Python vermittelt, ich habe gelernt wie ich es auf
