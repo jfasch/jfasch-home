@@ -16,19 +16,24 @@ Variables (1)
 * *Something* has a type
 * ... but its name hasn't
 
-::
+.. list-table::
+   :width: 70%
+   :align: left
+   :widths: 30, 30
 
-    >>> a = 42
-    >>> type(a)
-    <class 'int'>
-    >>> a = 1.5
-    >>> type(a)
-    <class 'float'>
-    >>> a = [42,'blah']
-    >>> type(a)
-    <class 'list'>
+   * - ::
 
-.. image:: 0140-variables-datatypes-basic.dia
+          >>> a = 42
+	  >>> type(a)
+	  <class 'int'>
+	  >>> a = 1.5
+	  >>> type(a)
+	  <class 'float'>
+	  >>> a = [42,'blah']
+	  >>> type(a)
+	  <class 'list'>
+     - .. image:: 0140-variables-datatypes-basic.dia
+          :width: 100%
 
 Variables (2)
 -------------
@@ -77,16 +82,21 @@ Assignment Details
 * Good to know when something goes wrong
 * Only valid for *immutable* types (``int``, ``float``, ``str``)
 
-::
+.. list-table::
+   :width: 70%
+   :align: left
+   :widths: 30, 20
 
-   a = 42
-   b = a
-   b = 7
+   * - ::
 
-Or equivalently ...::
+          a = 42
+	  b = a
+	  b = 7
+
+       Or equivalently ...::
       
-   a = 42
-   b = 42
-   b = 7
+	 a = 42
+	 b = 42
+	 b = 7
 
-.. image:: 0140-variables-datatypes-assignment-details.dia
+     - .. image:: 0140-variables-datatypes-assignment-details.dia
