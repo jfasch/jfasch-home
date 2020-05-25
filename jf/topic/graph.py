@@ -6,6 +6,7 @@ from docutils import nodes
 
 from networkx.algorithms.dag import descendants
 from networkx import DiGraph, draw_networkx
+from networkx.drawing.nx_pydot import pydot_layout
 import matplotlib.pyplot as plt
 
 import io
@@ -58,14 +59,14 @@ class _TopicGraphExpander:
         else:
             g = world
 
-        draw_networkx(g, labels={topic: topic.id for topic in g.nodes}, with_label=True)
+        pos = pydot_layout(g, prog='dot')
+        draw_networkx(g, pos=pos, labels={topic: topic.id for topic in g.nodes}, with_label=True)
 
         data = io.StringIO()
         plt.savefig(data, format='svg')
         plt.clf()
         plt.cla()
         plt.close()
-
 
         s = data.getvalue()
         s = s[s.find('<svg'):]
