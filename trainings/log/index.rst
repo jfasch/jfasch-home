@@ -29,6 +29,9 @@ Partner `tecTrain
 <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
 gebucht.
 
+Konzipiert als offene Schulung kam nur eine Anmeldung zustande, was
+uns einige Freiheiten ermöglichte.
+
 (:doc:`Mehr ... <detail/2020-05-18/index>`)
 
 Python Advanced (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
