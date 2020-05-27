@@ -10,6 +10,7 @@ from networkx.drawing.nx_pydot import pydot_layout
 import matplotlib.pyplot as plt
 
 import io
+import re
 
 
 def setup(app):
@@ -68,7 +69,32 @@ class _TopicGraphExpander:
         plt.cla()
         plt.close()
 
-        s = data.getvalue()
-        s = s[s.find('<svg'):]
+        # matplotlib thankfully outputs a "viewBox" that puts
+        # everything into the visible area. unfortunately it also
+        # defines the visible area by outputting "width" and
+        # "height". remove those.
+        svgstr = self._strip_svg_width_height(data.getvalue())
 
-        node.replace_self([nodes.raw(s, s, format='html')])
+        node.replace_self([nodes.raw(svgstr, svgstr, format='html')])
+
+    re_svg_begin_and_rest = re.compile(r'^.*?(<svg .*?>)(.*)', re.MULTILINE|re.DOTALL)
+    re_width = re.compile('^(<svg.*?)width=".*?"(.*)', re.MULTILINE|re.DOTALL)
+    re_height = re.compile('^(<svg.*?)height=".*?"(.*)', re.MULTILINE|re.DOTALL)
+
+    @classmethod
+    def _strip_svg_width_height(cls, xmlstr):
+        '''Being too stupid to get the fucking etree namespace handling right,
+        I have to remove width and height manually
+
+        '''
+
+        m = cls.re_svg_begin_and_rest.search(xmlstr)
+        svg_begin, rest = m.group(1), m.group(2)
+
+        m = cls.re_width.search(svg_begin)
+        svg_begin = m.group(1) + m.group(2)
+
+        m = cls.re_height.search(svg_begin)
+        svg_begin = m.group(1) + m.group(2)
+
+        return svg_begin + rest

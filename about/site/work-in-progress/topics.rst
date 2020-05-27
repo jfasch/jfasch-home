@@ -1,6 +1,10 @@
 Topics to Write
 ===============
 
+* Python: classmethod, staticmethod, class members
+
+  show exec in class dict
+
 Exception Handling from a Goto Orgy Perspective
 -----------------------------------------------
 
