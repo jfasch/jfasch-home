@@ -47,16 +47,16 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
 
    **Screenplays**
 
-   * :doc:`/trainings/material/soup/unittest-gtest-basics/screenplay`
-   * :doc:`/trainings/material/soup/unittest-gtest-cmake/screenplay`
-   * :doc:`/trainings/material/soup/unittest-gtest-fixture/screenplay`
-   * :doc:`/trainings/material/soup/c++-class-intro/screenplay`
-   * :doc:`/trainings/material/soup/c++-dynamic-memory/screenplay`
-   * :doc:`/trainings/material/soup/c++-ownership-raii/screenplay`
-   * :doc:`/trainings/material/soup/c++-global-initialization/screenplay`
-   * :doc:`/trainings/material/soup/c++-exercises/screenplay`
-   * :doc:`/trainings/material/soup/c++-smart-pointers/screenplay`
-   * :doc:`/trainings/material/soup/c++-stl-container-intro/screenplay`
+   * :doc:`/trainings/material/soup/unittest_gtest_basics/screenplay`
+   * :doc:`/trainings/material/soup/unittest_gtest_cmake/screenplay`
+   * :doc:`/trainings/material/soup/unittest_gtest_fixture/screenplay`
+   * :doc:`/trainings/material/soup/cxx_class_intro/screenplay`
+   * :doc:`/trainings/material/soup/cxx_dynamic_memory/screenplay`
+   * :doc:`/trainings/material/soup/cxx_ownership_raii/screenplay`
+   * :doc:`/trainings/material/soup/cxx_global_initialization/screenplay`
+   * :doc:`/trainings/material/soup/cxx_exercises/screenplay`
+   * :doc:`/trainings/material/soup/cxx_smart_pointers/screenplay`
+   * :doc:`/trainings/material/soup/cxx_stl_container_intro/screenplay`
 
    **Links**
 

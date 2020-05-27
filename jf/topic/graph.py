@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 
 import io
 import re
+import subprocess
 
 
 def setup(app):
@@ -44,6 +45,21 @@ class _TopicGraphExpander:
         self._docname = docname
 
     def expand(self, node):
+        g = self._build_graph(node)
+        dotspec = self._graph_to_dot(g)
+        try:
+            completed = subprocess.run(
+                ['dot', '-T', 'svg'],
+                input=dotspec, check=True, text=True, capture_output=True)
+        except subprocess.CalledProcessError as e:
+            raise utils.TopicError(f'dot exited with status {e.returncode}:\n[dot]\n{dotspec}\n[stderr]\n{e.stderr}')
+
+        svgstr = completed.stdout
+        node.replace_self([nodes.raw(svgstr, svgstr, format='html')])
+
+    def _build_graph(self, node):
+        assert isinstance(node, _TopicGraphNode)
+
         world = DiGraph()
         for topic in self._gibberish.soup:
             world.add_node(topic)
@@ -51,31 +67,30 @@ class _TopicGraphExpander:
                 target_topic = self._gibberish.soup.find_id(target_id)
                 world.add_edge(topic, target_topic)
 
-        if len(node.entries):
-            topics = set()
-            for topic in (self._gibberish.soup.find_id(id) for id in node.entries):
-                topics.add(topic)
-                topics.update(descendants(world, topic))
-            g = world.subgraph(topics)
-        else:
-            g = world
+        if len(node.entries) == 0:
+            return world
 
-        pos = pydot_layout(g, prog='dot')
-        draw_networkx(g, pos=pos, labels={topic: topic.id for topic in g.nodes}, with_label=True)
+        topics = set()
+        for topic in (self._gibberish.soup.find_id(id) for id in node.entries):
+            topics.add(topic)
+            topics.update(descendants(world, topic))
 
-        data = io.StringIO()
-        plt.savefig(data, format='svg')
-        plt.clf()
-        plt.cla()
-        plt.close()
+        return world.subgraph(topics)
 
-        # matplotlib thankfully outputs a "viewBox" that puts
-        # everything into the visible area. unfortunately it also
-        # defines the visible area by outputting "width" and
-        # "height". remove those.
-        svgstr = self._strip_svg_width_height(data.getvalue())
+    @classmethod
+    def _graph_to_dot(cls, g):
+        lines = [
+            'digraph {',
+        ]
 
-        node.replace_self([nodes.raw(svgstr, svgstr, format='html')])
+        for topic in g.nodes:
+            lines.append(f'{topic.id}[label="{topic.title}"];')
+        for src, dst in g.edges:
+            lines.append(f'{src.id} -> {dst.id};')
+
+        lines.append('}')
+
+        return '\n'.join(lines)
 
     re_svg_begin_and_rest = re.compile(r'^.*?(<svg .*?>)(.*)', re.MULTILINE|re.DOTALL)
     re_width = re.compile('^(<svg.*?)width=".*?"(.*)', re.MULTILINE|re.DOTALL)

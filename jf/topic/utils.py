@@ -1,5 +1,9 @@
 from docutils import nodes
+from sphinx.errors import SphinxError
 
+
+class TopicError(SphinxError):
+    category = 'Topic error'
 
 def list_of_stripped_str(optval):
     'directive option conversion'

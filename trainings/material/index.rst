@@ -47,12 +47,12 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      -
    * - :doc:`/trainings/repertoire/sysprog-fortgeschrittenes`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
-     - - :doc:`soup/sysprog-signals/slides`
-       - :doc:`soup/sysprog-ipc/slides`
-     - - :doc:`soup/sysprog-signals/screenplay`
-       - :doc:`soup/sysprog-ipc/screenplay`
-     - - :doc:`soup/sysprog-signals/code/index`
-       - :doc:`soup/sysprog-ipc/code/index`
+     - - :doc:`soup/sysprog_signals/slides`
+       - :doc:`soup/sysprog_ipc/slides`
+     - - :doc:`soup/sysprog_signals/screenplay`
+       - :doc:`soup/sysprog_ipc/screenplay`
+     - - :doc:`soup/sysprog_signals/code/index`
+       - :doc:`soup/sysprog_ipc/code/index`
    * - :doc:`/trainings/repertoire/sysprog-embedded`
      -
      -
@@ -87,28 +87,28 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - - :download:`C++03 <pdf/055-c++03.pdf>`
        - :download:`C++11 <pdf/056-c++11.pdf>`
      -
-     - - :doc:`soup/c++-class-intro/screenplay`
-       - :doc:`soup/c++-dynamic-memory/screenplay`
-       - :doc:`soup/c++-ownership-raii/screenplay`
-       - :doc:`soup/c++-global-initialization/screenplay`
-       - :doc:`soup/c++-exercises/screenplay`
-       - :doc:`soup/c++-stl-container-intro/screenplay`
-     - - :doc:`soup/c++-class-intro/code/index`
-       - :doc:`soup/c++-dynamic-memory/code/index`
-       - :doc:`soup/c++-ownership-raii/code/index`
-       - :doc:`soup/c++-global-initialization/code/index`
-       - :doc:`soup/c++-exercises/code/index`
-       - :doc:`soup/c++-stl-container-intro/code/index`
+     - - :doc:`soup/cxx_class_intro/screenplay`
+       - :doc:`soup/cxx_dynamic_memory/screenplay`
+       - :doc:`soup/cxx_ownership_raii/screenplay`
+       - :doc:`soup/cxx_global_initialization/screenplay`
+       - :doc:`soup/cxx_exercises/screenplay`
+       - :doc:`soup/cxx_stl_container_intro/screenplay`
+     - - :doc:`soup/cxx_class_intro/code/index`
+       - :doc:`soup/cxx_dynamic_memory/code/index`
+       - :doc:`soup/cxx_ownership_raii/code/index`
+       - :doc:`soup/cxx_global_initialization/code/index`
+       - :doc:`soup/cxx_exercises/code/index`
+       - :doc:`soup/cxx_stl_container_intro/code/index`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
      -
      -
-     - :doc:`soup/python-yield-fibo/code/index`
+     - :doc:`soup/python_yield_fibo/code/index`
    * - :doc:`/trainings/repertoire/python-advanced`
      - :download:`Python <pdf/300-python.pdf>`
      -
      -
-     - :doc:`soup/python-yield-fibo/code/index`
+     - :doc:`soup/python_yield_fibo/code/index`
    * - :doc:`/trainings/repertoire/design-patterns`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -
@@ -117,11 +117,11 @@ Kursbeschreibungen direkte Links zu relevantem Material.
    * - :doc:`/trainings/repertoire/unittests`
      - :download:`Python <pdf/060-design-patterns-unittests.pdf>`
      -
-     - - :doc:`soup/unittest-gtest-basics/screenplay`
-       - :doc:`soup/unittest-gtest-cmake/screenplay`
-       - :doc:`soup/unittest-gtest-fixture/screenplay`
-     - - :doc:`soup/unittest-gtest-basics/code/index`
-       - :doc:`soup/unittest-gtest-fixture/code/index`
+     - - :doc:`soup/unittest_gtest_basics/screenplay`
+       - :doc:`soup/unittest_gtest_cmake/screenplay`
+       - :doc:`soup/unittest_gtest_fixture/screenplay`
+     - - :doc:`soup/unittest_gtest_basics/code/index`
+       - :doc:`soup/unittest_gtest_fixture/code/index`
    * - :doc:`/trainings/repertoire/kernel-programming-basics`
      - :download:`Kernel <pdf/400-kernel.pdf>`
      -

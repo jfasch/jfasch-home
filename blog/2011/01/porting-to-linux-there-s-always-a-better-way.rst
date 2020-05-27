@@ -86,9 +86,9 @@ are often called *messages*.)
 .. sidebar:: References
 
    * :doc:`Slide material: UNIX signals
-     </trainings/material/soup/sysprog-signals/slides>`
+     </trainings/material/soup/sysprog_signals/slides>`
    * :doc:`Demo code: UNIX signals
-     </trainings/material/soup/sysprog-signals/screenplay>`
+     </trainings/material/soup/sysprog_signals/screenplay>`
 
 In Unix, signals are commonly used to tear down a process (*not* a
 thread), giving it a chance to perform proper cleanup before
@@ -131,9 +131,9 @@ Message Queues aren't Message Queues
 .. sidebar:: References
 
    * :doc:`Slide material: POSIX message queues
-     </trainings/material/soup/sysprog-ipc/slides>`
+     </trainings/material/soup/sysprog_ipc/slides>`
    * :doc:`Demo code: POSIX message queues
-     </trainings/material/soup/sysprog-ipc/screenplay>`
+     </trainings/material/soup/sysprog_ipc/screenplay>`
 
 Chances are that the threads (err, processes) of your OS communicate
 via messages queues over which messages (err, signals) are sent. A
@@ -151,9 +151,9 @@ Semaphores and Mutexes
 .. sidebar:: References
 
    * :doc:`Slide material: POSIX semaphores
-     </trainings/material/soup/sysprog-ipc/slides>`
+     </trainings/material/soup/sysprog_ipc/slides>`
    * :doc:`Demo code: POSIX semaphores
-     </trainings/material/soup/sysprog-ipc/screenplay>`
+     </trainings/material/soup/sysprog_ipc/screenplay>`
 
 Many of those OSs out there have semaphores as the one and only
 synchronisation mechanism. Linux has semaphores - System V and POSIX

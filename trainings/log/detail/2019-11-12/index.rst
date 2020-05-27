@@ -32,7 +32,7 @@ kanns nicht lassen, bevor die Anfängerthemen vorbei sind, auf dem
 Besten von Python herumzureiten: Iteration und Generatoren. Hier hatte
 ich eine kleine Demo gehackt - zum x-ten mal. Das ganze Fibonacci-Zeug
 gibts jetzt als :doc:`Live-Hacking-Screenplay
-</trainings/material/soup/python-yield-fibo/screenplay>`
+</trainings/material/soup/python_yield_fibo/screenplay>`
 
 Das Hauptthema: Numerik, NumPy
 ------------------------------
