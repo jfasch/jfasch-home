@@ -14,6 +14,12 @@ Taken from `reStructuredText Standard Definition Files
 .. contents::
    :local:
 
+.. csv-table::
+   :align: left
+
+   ``|longrightarrow|``, |longrightarrow|
+
+
 ``isoamsa.txt``: Added Mathematical Symbols: Arrows
 ...................................................
 

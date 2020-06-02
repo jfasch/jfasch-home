@@ -1,4 +1,5 @@
 .. jf-topic:: python_0150_datatypes_overview
+   :dependencies: python_0140_variables
 
 .. include:: <mmlalias.txt>
 
