@@ -10,6 +10,8 @@ In the Works
 .. toctree::
    :maxdepth: 1
 
+   sphinx
+
 
 Not Yet in the Works
 ....................

@@ -19,8 +19,8 @@ Beamer <https://ctan.org/pkg/beamer>`__).
 * :download:`../pdf/300-python.pdf`
 * :download:`../pdf/400-kernel.pdf`
 
-Topics
-------
+Topics - This is Work in Progress
+---------------------------------
 
 Newer training material is written in `reStructuredText
 <https://docutils.sourceforge.io/rst.html>`__, and massaged by a

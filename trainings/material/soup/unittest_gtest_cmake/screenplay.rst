@@ -6,7 +6,7 @@ Screenplay: Unittest: GTest and CMake
    .. contents::
       :local:
 
-   **Code**: :doc:`../unittest-gtest-basics/code/index`
+   **Code**: :doc:`../unittest_gtest_basics/code/index`
 
 **Discussion**
 
@@ -22,7 +22,7 @@ Screenplay: Unittest: GTest and CMake
   * Use distro's package manager
 
     * This is what we will do here
-    * Installed it already in :doc:`../unittest-gtest-basics/screenplay`
+    * Installed it already in :doc:`../unittest_gtest_basics/screenplay`
 
 Installed: to be found in Standard Paths
 ----------------------------------------

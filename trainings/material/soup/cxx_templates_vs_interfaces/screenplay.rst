@@ -1,7 +1,7 @@
 Screenplay: C++: Templates vs. Interfaces
 =========================================
 
-* Copy :doc:`../c++-inheritance-virtual/code/index`
+* Copy :doc:`../cxx_inheritance_virtual/code/index`
 * discuss: runtime overhead of dynamic dispatch
 * plan
 
