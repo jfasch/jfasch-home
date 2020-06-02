@@ -2,16 +2,18 @@ from . import utils
 
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import set_source_info
+from sphinx import addnodes
+from sphinx.transforms.post_transforms import SphinxPostTransform
 from docutils import nodes
 
 from networkx.algorithms.dag import descendants
-from networkx import DiGraph, draw_networkx
-from networkx.drawing.nx_pydot import pydot_layout
-import matplotlib.pyplot as plt
+from networkx import DiGraph
 
-import io
 import re
 import subprocess
+
+from sphinx.util import logging
+logger = logging.getLogger(__name__)
 
 
 def setup(app):
@@ -45,71 +47,64 @@ class _TopicGraphExpander:
         self._docname = docname
 
     def expand(self, node):
-        g = self._build_graph(node)
-        dotspec = self._graph_to_dot(g)
-        try:
-            completed = subprocess.run(
-                ['dot', '-T', 'svg'],
-                input=dotspec, check=True, text=True, capture_output=True)
-        except subprocess.CalledProcessError as e:
-            raise utils.TopicError(f'dot exited with status {e.returncode}:\n[dot]\n{dotspec}\n[stderr]\n{e.stderr}')
+        graph = self._graphnode_to_graph(node)
+        dot = self._graph_to_dot(graph=graph)
+        svg = self._dot_to_svg(dot=dot)
+        node.replace_self(nodes.raw(svg, svg, format='html'))
 
-        svgstr = completed.stdout
-        node.replace_self([nodes.raw(svgstr, svgstr, format='html')])
-
-    def _build_graph(self, node):
+    def _graphnode_to_graph(self, node):
         assert isinstance(node, _TopicGraphNode)
-
-        world = DiGraph()
-        for topic in self._gibberish.soup:
-            world.add_node(topic)
-            for target_id in topic.dependencies:
-                target_topic = self._gibberish.soup.find_id(target_id)
-                world.add_edge(topic, target_topic)
-
+        soup = self._gibberish.soup
+        world = build_worldgraph(soup=soup)
         if len(node.entries) == 0:
             return world
+        return build_subgraph(world=world, entrypoint_ids=set(node.entries))
 
-        topics = set()
-        for topic in (self._gibberish.soup.find_id(id) for id in node.entries):
-            topics.add(topic)
-            topics.update(descendants(world, topic))
-
-        return world.subgraph(topics)
-
-    @classmethod
-    def _graph_to_dot(cls, g):
+    def _graph_to_dot(self, graph):
         lines = [
             'digraph {',
         ]
 
-        for topic in g.nodes:
-            lines.append(f'{topic.id}[label="{topic.title}"];')
-        for src, dst in g.edges:
+        for topic in graph.nodes:
+            uri = self._gibberish.app.builder.get_relative_uri(from_=self._docname, to=topic.docname)
+            lines.append(f'{topic.id}[label="{topic.title}", href="{uri}"];')
+        for src, dst in graph.edges:
             lines.append(f'{src.id} -> {dst.id};')
 
         lines.append('}')
 
         return '\n'.join(lines)
+    
+    def _dot_to_svg(self, dot):
+        try:
+            completed = subprocess.run(
+                ['dot', '-T', 'svg'],
+                input=dot, check=True, text=True, capture_output=True)
+        except subprocess.CalledProcessError as e:
+            raise TopicError(f'dot exited with status {e.returncode}:\n[dot]\n{dotspec}\n[stderr]\n{e.stderr}')
+    
+        svg = completed.stdout
+        # strip XML declaration (we are embedding it)
+        svg = svg[svg.index('<svg'):]
+        return svg
 
-    re_svg_begin_and_rest = re.compile(r'^.*?(<svg .*?>)(.*)', re.MULTILINE|re.DOTALL)
-    re_width = re.compile('^(<svg.*?)width=".*?"(.*)', re.MULTILINE|re.DOTALL)
-    re_height = re.compile('^(<svg.*?)height=".*?"(.*)', re.MULTILINE|re.DOTALL)
+def build_worldgraph(soup):
+    world = DiGraph()
+    for topic in soup:
+        world.add_node(topic)
+        for target_id in topic.dependencies:
+            target_topic = soup.find_id(target_id)
+            world.add_edge(topic, target_topic)
+    return world
 
-    @classmethod
-    def _strip_svg_width_height(cls, xmlstr):
-        '''Being too stupid to get the fucking etree namespace handling right,
-        I have to remove width and height manually
+def build_subgraph(world, entrypoint_ids):
+    topics = set()
+    for topic in (t for t in world if t.id in entrypoint_ids):
+        topics.add(topic)
+        topics.update(descendants(world, topic))
+    return world.subgraph(topics)
 
-        '''
 
-        m = cls.re_svg_begin_and_rest.search(xmlstr)
-        svg_begin, rest = m.group(1), m.group(2)
+    
 
-        m = cls.re_width.search(svg_begin)
-        svg_begin = m.group(1) + m.group(2)
 
-        m = cls.re_height.search(svg_begin)
-        svg_begin = m.group(1) + m.group(2)
-
-        return svg_begin + rest

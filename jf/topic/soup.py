@@ -1,6 +1,9 @@
 class Soup:
-    def __init__(self):
-        self._topics = []
+    def __init__(self, topics=None):
+        if topics:
+            self._topics = topics
+        else:
+            self._topics = []
     def __len__(self):
         return len(self._topics)
     def __iter__(self):
