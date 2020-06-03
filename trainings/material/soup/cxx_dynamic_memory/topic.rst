@@ -1,5 +1,3 @@
-.. jf-topic:: cxx_dynamic_memory
-
 C++: Dynamic Memory
 ===================
 
@@ -7,3 +5,5 @@ C++: Dynamic Memory
 
    screenplay
    code/index
+
+.. jf-topic:: cxx_dynamic_memory

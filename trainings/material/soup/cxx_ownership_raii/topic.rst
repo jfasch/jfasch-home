@@ -1,5 +1,3 @@
-.. jf-topic:: cxx_ownership_raii
-
 C++: Ownership/RAII
 ===================
 
@@ -7,3 +5,6 @@ C++: Ownership/RAII
 
    screenplay
    code/index
+
+.. jf-topic:: cxx_ownership_raii
+

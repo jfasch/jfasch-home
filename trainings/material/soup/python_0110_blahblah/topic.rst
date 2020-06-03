@@ -1,5 +1,3 @@
-.. jf-topic:: python_0110_blahblah
-
 .. include:: <mmlalias.txt>
 
 Python: Blahblah
@@ -7,6 +5,8 @@ Python: Blahblah
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0110_blahblah
 
 The Python Programming Language
 -------------------------------

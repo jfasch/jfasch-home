@@ -1,3 +1,11 @@
+.. include:: <mmlalias.txt>
+
+Python: Exercises: Basics
+=========================
+
+.. contents::
+   :local:
+
 .. jf-topic:: python_0190_exercises
    :dependencies: python_0110_blahblah, 
 		  python_0120_helloworld, 
@@ -7,14 +15,6 @@
 		  python_0150_datatypes_overview_compound, 
 		  python_0160_boolean, 
 		  python_0170_if
-
-.. include:: <mmlalias.txt>
-
-Python: Exercises: Basics
-=========================
-
-.. contents::
-   :local:
 
 Exercises
 ---------

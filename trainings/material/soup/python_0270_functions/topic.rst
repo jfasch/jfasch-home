@@ -1,6 +1,3 @@
-.. jf-topic:: python_0270_functions
-   :dependencies: python_0140_variables
-
 .. include:: <mmlalias.txt>
 
 Python: Functions
@@ -8,6 +5,9 @@ Python: Functions
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0270_functions
+   :dependencies: python_0140_variables
 
 Why Functions?
 --------------

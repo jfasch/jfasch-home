@@ -1,6 +1,3 @@
-.. jf-topic:: python_0250_refs_flat_deep_copy
-   :dependencies: python_0140_variables, python_0150_datatypes_overview, python_0150_datatypes_overview_compound
-
 .. include:: <mmlalias.txt>
 
 Python: References, (Im)mutability
@@ -8,6 +5,9 @@ Python: References, (Im)mutability
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0250_refs_flat_deep_copy
+   :dependencies: python_0140_variables, python_0150_datatypes_overview, python_0150_datatypes_overview_compound
 
 Immutability: Numbers
 ---------------------

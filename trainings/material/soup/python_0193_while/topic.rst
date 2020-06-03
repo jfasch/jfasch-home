@@ -1,6 +1,3 @@
-.. jf-topic:: python_0193_while
-   :dependencies: python_0160_boolean
-
 .. include:: <mmlalias.txt>
 
 Python: ``while`` Loops
@@ -8,6 +5,9 @@ Python: ``while`` Loops
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0193_while
+   :dependencies: python_0160_boolean
 
 Looping Constructs
 ------------------

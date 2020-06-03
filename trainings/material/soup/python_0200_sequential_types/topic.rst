@@ -1,6 +1,3 @@
-.. jf-topic:: python_0200_sequential_types
-   :dependencies: python_0150_datatypes_overview
-
 .. include:: <mmlalias.txt>
 
 Python: Sequential Datatypes
@@ -8,6 +5,9 @@ Python: Sequential Datatypes
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0200_sequential_types
+   :dependencies: python_0150_datatypes_overview
 
 Sequential Datatypes
 --------------------

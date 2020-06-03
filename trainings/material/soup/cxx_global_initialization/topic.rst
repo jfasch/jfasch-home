@@ -1,5 +1,3 @@
-.. jf-topic:: cxx_global_initialization
-
 C++: Global Objects Initialization
 ==================================
 
@@ -7,3 +5,6 @@ C++: Global Objects Initialization
 
    screenplay
    code/index
+
+.. jf-topic:: cxx_global_initialization
+

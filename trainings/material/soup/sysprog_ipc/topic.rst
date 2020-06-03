@@ -1,5 +1,3 @@
-.. jf-topic:: sysprog_ipc
-
 Sysprog: POSIX IPC
 ==================
 
@@ -8,3 +6,5 @@ Sysprog: POSIX IPC
    slides
    screenplay
    code/index
+
+.. jf-topic:: sysprog_ipc

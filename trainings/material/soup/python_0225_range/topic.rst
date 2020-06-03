@@ -1,6 +1,3 @@
-.. jf-topic:: python_0225_range
-   :dependencies: python_0200_sequential_types, python_0220_for
-
 .. include:: <mmlalias.txt>
 
 Python: The ``range`` Function
@@ -8,6 +5,9 @@ Python: The ``range`` Function
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0225_range
+   :dependencies: python_0200_sequential_types, python_0220_for
 
 Iteration over Numbers: ``range()``
 -----------------------------------

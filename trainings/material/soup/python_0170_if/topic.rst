@@ -1,6 +1,3 @@
-.. jf-topic:: python_0170_if
-   :dependencies: python_0160_boolean
-
 .. include:: <mmlalias.txt>
 
 Python: The ``if`` Statement
@@ -8,6 +5,9 @@ Python: The ``if`` Statement
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0170_if
+   :dependencies: python_0160_boolean
 
 The ``if`` Statement
 --------------------

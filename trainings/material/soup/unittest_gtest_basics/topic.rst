@@ -1,5 +1,3 @@
-.. jf-topic:: unittest_gtest_basics
-
 Unittest: GTest Basics
 ======================
 
@@ -7,3 +5,5 @@ Unittest: GTest Basics
 
    screenplay
    code/index
+
+.. jf-topic:: unittest_gtest_basics

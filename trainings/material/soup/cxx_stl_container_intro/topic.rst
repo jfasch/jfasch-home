@@ -1,5 +1,3 @@
-.. jf-topic:: cxx_stl_container_intro
-
 C++: STL Containers (Intro)
 ===========================
 
@@ -7,3 +5,5 @@ C++: STL Containers (Intro)
 
    screenplay
    code/index
+
+.. jf-topic:: cxx_stl_container_intro

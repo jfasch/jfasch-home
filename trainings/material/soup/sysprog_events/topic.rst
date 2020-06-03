@@ -1,5 +1,3 @@
-.. jf-topic:: sysprog_events
-
 Sysprog: Events
 ===============
 
@@ -7,3 +5,6 @@ Sysprog: Events
 
    screenplay
    code/index
+
+.. jf-topic:: sysprog_events
+

@@ -63,11 +63,12 @@ class _TopicDirective(SphinxDirective):
     }
 
     def run(self):
+        topicid = self.arguments[0].strip()
         return [_TopicNode(topic=Topic(title = self.options.get('title', None),
-                                      id = self.arguments[0].strip(),
-                                      docname = self.env.docname,
-                                      dependencies = self.options.get('dependencies', []),
-        ))]            
+                                       id = topicid,
+                                       docname = self.env.docname,
+                                       dependencies = self.options.get('dependencies', []))),
+                _TopicGraphNode(entries=[topicid])]
 
 
 # topiclist
@@ -154,8 +155,8 @@ def _ev_doctree_resolved__expand_topicgraph_nodes(app, doctree, docname):
         expander = _TopicGraphExpander(gibberish=app.jf_gibberish, docname=docname)
         for n in doctree.traverse(_TopicGraphNode):
             expander.expand(n)
-    except Exception as e:
-        logger.warning(f'jjjjjjjjjjjjjjjjjjjjjjjjj {e}')
+    except Exception:
+        logger.exception(f'cannot expand topic graph in {docname}')
         raise
 
 class _TopicGraphNode(nodes.Element):

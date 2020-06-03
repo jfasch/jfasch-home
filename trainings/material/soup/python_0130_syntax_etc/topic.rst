@@ -1,5 +1,3 @@
-.. jf-topic:: python_0130_syntax_etc
-
 .. include:: <mmlalias.txt>
 
 Python: Syntax etc.
@@ -7,6 +5,8 @@ Python: Syntax etc.
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0130_syntax_etc
 
 Syntax: Indentation (1)
 -----------------------

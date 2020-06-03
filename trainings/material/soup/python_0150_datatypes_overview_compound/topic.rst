@@ -1,6 +1,3 @@
-.. jf-topic:: python_0150_datatypes_overview_compound
-   :dependencies: python_0150_datatypes_overview
-
 .. include:: <mmlalias.txt>
 
 Python: Compound Datatypes
@@ -8,6 +5,9 @@ Python: Compound Datatypes
 
 .. contents::
    :local:
+
+.. jf-topic:: python_0150_datatypes_overview_compound
+   :dependencies: python_0150_datatypes_overview
 
 Compound Datatypes By Example: List, Tuple
 ------------------------------------------

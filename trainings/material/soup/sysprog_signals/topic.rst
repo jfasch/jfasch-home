@@ -1,5 +1,3 @@
-.. jf-topic:: sysprog_signals
-
 Sysprog: Signals
 ================
 
@@ -8,3 +6,5 @@ Sysprog: Signals
    slides
    screenplay
    code/index
+
+.. jf-topic:: sysprog_signals
