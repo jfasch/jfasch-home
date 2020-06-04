@@ -26,3 +26,11 @@ though.
   .. code-block::
 
      /home/jfasch/work/jfasch-home/courses/records/2019-11-12/code/BigPlan.ipynb:686: WARNING: Unknown target name: "labels".
+
+Running Sphinx From Source
+--------------------------
+
+.. code-block:: console
+
+   $ export PYTHONPATH=$HOME/work/sphinx:$PYTHONPATH
+   $ python ~/work/sphinx/sphinx/cmd/build.py -W --keep-going --no-color ~/work/jfasch-home /tmp/jfasch-home/html
