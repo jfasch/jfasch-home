@@ -2,10 +2,15 @@ This Site
 =========
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
 
-   work-in-progress/index
    recipes
+   layout-test
+   mathml
+   isoamsa
+   isoamsr
+   isonum
+   work-in-progress/index
 
 This is work in progress (and will always be, like any software).
 
