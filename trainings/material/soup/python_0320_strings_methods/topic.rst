@@ -15,7 +15,7 @@ Batteries Included: Checks
 
 **Lots of small checks (returning boolean)** - for example ...
 
-* ``'...'.isspace(): contains only whitespace
+* ``'...'.isspace()``: contains only whitespace
 * Character types
 
   * ``'...'.isalpha()``

@@ -93,13 +93,13 @@ From Strings to Raw Bytes
 * Unicode is a set of numbers, not a concrete encoding
 
 .. code-block:: python
-   :caption: ``ö'' is obviously multibyte in UTF-8
+   :caption: "ö" is obviously multibyte in UTF-8
 
    >>> joerg.encode('utf-8')
    b'J\xc3\xb6rg'
 
 .. code-block:: python
-   :caption: ``ö'' is unknown in China
+   :caption: "ö" is unknown in China
 
    >>> joerg.encode('big5')
    Traceback (most recent call last):
