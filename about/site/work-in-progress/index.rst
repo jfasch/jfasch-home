@@ -4,10 +4,9 @@ Work in Progress
 .. toctree::
    :maxdepth: 1
 
-   stacks.rst
-   topics.rst
-   seo.rst
-   s5/index.rst
-   blog-queue/index.rst
+   stacks
+   topic/index
+   seo
+   blog-queue/index
    todo-misc.rst
    

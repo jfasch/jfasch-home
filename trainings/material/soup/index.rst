@@ -25,7 +25,7 @@ Topics - This is Work in Progress
 Newer training material is written in `reStructuredText
 <https://docutils.sourceforge.io/rst.html>`__, and massaged by a
 Sphinx extension to form a network of *topics* as I call it. This is
-:doc:`work in progress </about/site/work-in-progress/s5/index>`;
+:doc:`work in progress </about/site/work-in-progress/topic/index>`;
 here's a list of topics that are currently present in this format.
 
 .. toctree::
