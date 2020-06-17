@@ -50,12 +50,12 @@ Wer sind wir?
 
 (300 Zeichen)
 
-Ich (Einzelunternehmer) lebe einerseits von kleineren und größeren
-Projekten, und andererseits von Schulungen, die ich hauptsächlich für
-Unternehmen halte.
+Ich lebe einerseits von kleineren und größeren Projekten, und
+andererseits von Schulungen, die ich hauptsächlich für Unternehmen
+halte.
 
-Das Schulungsgeschehen rückt immer mehr ins Zentrum der Aktivität, und
-das kundenspezifische Aufbereiten der Unterlagen, deren zeitgemäße
+Schulungen rücken immer mehr ins Zentrum der Aktivität, und das
+kundenspezifische Aufbereiten der Unterlagen und deren zeitgemäße
 Präsentation, und die Nachbearbeitung verlangen nach einer
 zufriedenstellenden Lösung.
 
@@ -217,6 +217,8 @@ jjj 1200 Zeichen
 
   * https://opensource.com/article/18/5/markdown-slide-generators
   * https://github.com/slideshow-s9/awesome-slideshows/blob/master/README.md
+  * Projektidee (oder so):
+    http://docideas.mietus.nl/en/latest/Blog/WebSlides/index.html
 
 8. ALLEINSTELLUNGSMERKMAL
 -------------------------
