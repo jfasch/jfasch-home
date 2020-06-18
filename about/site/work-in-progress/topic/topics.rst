@@ -24,9 +24,13 @@ New Topics to Write
   * in dict
   * in class dict
 
-* Python: modules and packages. There is one half hearted
-  topic. Elaborate on packages, namespace packages, ``__init__.py``,
-  ``__all__``.
+* Python: modules and packages. There is one half hearted topic. Split
+  and pimp:
+
+  * Developer: elaborate on packages, namespace packages, ``__init__.py``,
+    ``__all__``, etc.
+  * User: ``import``, ``PYTHONPATH``, etc.
+
 * C++: Exception Handling from a Goto Orgy Perspective
 
   Always under valgrind supervision, hack something that uses malloc()

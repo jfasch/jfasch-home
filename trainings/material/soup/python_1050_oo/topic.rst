@@ -56,7 +56,7 @@ The ``class`` Statement
    class MakesNoSense:
        ...
 
-* ``class`` creates a ``class'' object (|longrightarrow|
+* ``class`` creates a "class" object (|longrightarrow|
   *Metaprogramming*)
 * ``MakesNoSense`` is the name of a variable (that refers to the class
   object)
