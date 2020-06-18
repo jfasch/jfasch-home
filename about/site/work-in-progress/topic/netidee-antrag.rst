@@ -43,8 +43,7 @@ Contemporary Training Material Management
 2.3 Allgemeinverständliche KURZbeschreibung des Projektes
 .........................................................
 
-Wer sind wir?
-,,,,,,,,,,,,,
+**Wer sind wir?**
 
 **... und was ist unsere Motivation für das Projekt?**
 
@@ -59,8 +58,7 @@ kundenspezifische Aufbereiten der Unterlagen und deren zeitgemäße
 Präsentation, und die Nachbearbeitung verlangen nach einer
 zufriedenstellenden Lösung.
 
-Für wen ist es?
-,,,,,,,,,,,,,,,
+**Für wen ist es?**
 
 **Wer wird die Projektergebnisse nutzen?**
 
@@ -74,8 +72,7 @@ Für wen ist es?
 * **Trainer**. Modulare, strukturierte, leichtgewichtige und zeitgemäß
   im Browser zu präsentierende Kursunterlagen haben die wenigsten.
 
-Was ist es?
-,,,,,,,,,,,
+**Was ist es?**
 
 **Welches Problem wird gelöst?**
 
@@ -91,8 +88,7 @@ Was ist es?
 * **Lightweight Content Management**. Content Management Lösungen sind
   zu schwerfällig (Datenbank, Webserver)
 
-Wie funktioniert es?
-,,,,,,,,,,,,,,,,,,,,
+**Wie funktioniert es?**
 
 **Wie wird das Problem gelöst? Was ist das wesentliche
 Projektergebnis?**
@@ -113,16 +109,16 @@ oben genannte Probleme,
 * Generierung von Kursagenden und Nachlesen
 * Präsentation im Web-Brower
 
-3. PROJEKTANSCHLUSSFÖRDERUNG
-----------------------------
+2.4 Anschlussförderung
+......................
 
 (nicht anwendbar)
 
-4. DIE BESONDERE BEDEUTUNG IHRES PROJEKTES FÜR DAS INTERNET (DIE INTERNETNUTZUNG) IN ÖSTERREICH?
+3. DIE BESONDERE BEDEUTUNG IHRES PROJEKTES FÜR DAS INTERNET (DIE INTERNETNUTZUNG) IN ÖSTERREICH?
 ------------------------------------------------------------------------------------------------
 
 **Ein klarer Bezug Ihres Projektes zum Internet/zur Internetnutzung in
-Österreich istFördervoraussetzung. Bitte gehen Sie im Folgenden aber
+Österreich ist Fördervoraussetzung. Bitte gehen Sie im Folgenden aber
 ausschließlich auf jene Aspekte ein, bei denen Ihr Projekt einen sehr
 klaren Mehrwert hat.**
 
@@ -131,74 +127,164 @@ klaren Mehrwert hat.**
 * (Umwelt)
 * (Wirtschaftliche und/oder wissenschaftliche Kooperationen)
 * (Regionalpolitik)
-* Sonstige
+* (Sonstige)
 
-5. ZIELGRUPPE UND PROJEKTZIEL
+**Mehrwert für Internet-Technologie/-Infrastruktur**
+
+*Welchen konkreten Mehrwert erreichen Sie mit Ihrem Projekt für den
+Bereich Internet-Technologie/-Infrastruktur?*
+
+Bessere Unterlagen vor allem in Internet und Programmiersprachen, weil
+das ist die Trainer-Zielgruppe. Blah jjjj
+
+**Mehrwert soziale/gesellschaftliche Aspekte**
+
+*Welchen konkreten Mehrwert erreichen Sie mit Ihrem Projekt für den
+Bereich Soziales/Gesellschaft?*
+
+Nicht verschenken, sondern Zusammenarbeit zwischen Trainern. Tugend
+geht der Menschheit langsam verloren. Blah jjj
+
+4. ZIELGRUPPE UND PROJEKTZIEL
 -----------------------------
 
-**Wer ist genau der Adressat Ihres Vorhabens/der Projektergebnisse?
-Wer hat den Nutzen? Je konkreter Sie Ihre Zielgruppe eingrenzen, desto
-besser können Sie die Bedürfnisse genau dieser Adressaten
-berücksichtigen und desto wahrscheinlicher wird deshalb die
-erfolgreiche nachhaltige Wirkung Ihres Projektes. Weil in speziellen
-Konzepten unterschiedliche Zielgruppen in besonderer Beziehung
-zueinander stehen, sind auch mehrere Zielgruppen möglich
-(z.B. Anbieter / Nachfrager,...). Bitte maximal drei Zielgruppen
-angeben. Ihr Projektziel sollte die – möglichst nachhaltige - Lösung
-eines erhebliches Problems Ihrerjeweiligen Zielgruppe sein. Wie dann
-die Lösung für das Problem der einzelnen Zielgruppen aussieht ist erst
-Bestandteil von Punkt 6 („LÖSUNG“). Hier in Punkt 5 geht es
+**Wer ist genau die_der Adressat_in Ihres Vorhabens/der
+Projektergebnisse? Wer hat den Nutzen? Je konkreter Sie Ihre
+Zielgruppe eingrenzen, desto besser können Sie die Bedürfnisse genau
+dieser Adressat_innen berücksichtigen und desto wahrscheinlicher wird
+deshalb die erfolgreiche nachhaltige Wirkung Ihres Projektes. Weil in
+speziellen Konzepten unterschiedliche Zielgruppen in besonderer
+Beziehung zueinander stehen, sind auch mehrere Zielgruppen möglich
+(z.B. Anbieter_innen / Nachfrager_innen,…). Bitte maximal drei
+Zielgruppen angeben.**
+
+**Ihr Projektziel sollte die – möglichst nachhaltige - Lösung eines
+erhebliches Problems Ihrer jeweiligen Zielgruppe sein. Wie dann die
+Lösung für das Problem der einzelnen Zielgruppen aussieht ist erst
+Bestandteil von Punkt 5 („LÖSUNG“). Hier in Punkt 4 geht es
 ausschließlich um Ihre Zielgruppe(n) und deren Probleme, die Sie mit
 Ihrem Projekt lösen wollen.**
 
-jjj Link "Hilfestellung Abgrenzung Organisationen/Privatpersonen"
+.. note:: Hilfestellung Abgrenzung Organisationen/Privatpersonen
 
-*ZIELGRUPPE & PROBLEM DATENSATZ AUFKLAPPEN* im Originaldokument geht
-nicht. Wahrscheinlich mit einem proprietären Tool erzeugt, das PDF.
+   **Organisationen:**
 
-jjj
+   * Bestimmte Branche(n)
+   * Bestimmte Firmen(gruppen)
+   * Staatliche Organisationen/Verwaltung
+   * Private Organisationen/Vereine
+   * NPOs
+   * Wissenschaft/Universität
+   * Fachhochschulen (bestimmte Richtungen)
+   * Bestimmte Regionen (Stadt, Land, Bezirke/Gemeinden)
+   * Bestimmte Interessensgruppen (z.B. Selbstvermarkter_innen)
+   * Landwirtschaft
+   * Handwerk
+   * u.v.m.
 
-6. LÖSUNG
+   **Privatpersonen:**
+
+   * Bestimmte Altersgruppe
+   * Genderspezifisch [z.B. für Frauen]
+   * Bestimmte Region (Stadt, Land, …)
+   * Gesellschaftliche Gruppe (z.B: Schüler_innen, Lehrer_innen)
+   * Thematische Community
+   * Muttersprache (Deutsch, nicht-Deutsch)
+   * Flüchtlinge
+   * Bestimmte gesellschaftliche Position
+   * u.v.m.
+
+* Zielgruppen jjj N mal ...
+
+  * Zielgruppe des Projektes
+  
+    * Zielgruppenname
+    * Zielgruppentyp; eins von:
+  
+      * Organisationen
+      * Open Source Community
+      * Privatpersonen
+  
+    * Beschreibung/Abgrenzung (350 Zeichen)
+  
+      Beschreiben Sie bitte Ihre Zielgruppe möglichst konkret. Auch wenn
+      Sie im ersten Augenblick denken, die Zielgruppe wäre ganz einfach
+      "die Allgemeinheit/die Gesellschaft, finden Sie bei genauer
+      Analyse sicher Abgrenzungen bzw. Gruppen, die mehr betroffen sind
+      als andere. Siehe dazu auch am Beginn Punkt 4 unter "Hilfestellung
+      Abgrenzung Organisationen/Privatpersonen".
+  
+    * Erhebliches Problem/wesentliches Bedürfnis der Zielgruppe (350
+      Zeichen)
+  
+      Ihr Projektziel sollte sein, für Ihre Zielgruppe ein erhebliches
+      Problem lösen bzw. ein wesentliches Bedürfnis zu
+      erfüllen. Beschreiben Sie dieses Problem bzw. Bedürfnis Ihrer
+      Zielgruppe möglichst anschaulich.
+  
+    * Abschätzung der Zielgruppengröße (350 Zeichen)
+  
+      Wie viele Personen Ihrer Zielgruppe leben in Österreich und der EU
+      und wären theoretisch mögliche Nutzer_innen Ihrer
+      Projektergebnisse? Wie viel Prozent davon könnten Sie nach Ihrer
+      Einschätzung realistisch direkt bzw. indirekt erreichen? Falls für
+      Sie relevant dieselben Überlegungen für die deutsschsprachigen
+      Länder, die EU oder global.
+
+
+    * Wie haben Sie von den angegebenen erheblichen
+      Problemen/wesentlichen Bedürfnissen ihrer Zielgruppe(n) Kenntnis
+      erlangt?
+
+      jjj Checklist:
+
+      * Eigene Überlegungen
+      * Bin selbst Mitglied der Zielgruppe
+      * Gespräche mit Betroffenen aus der Zielgruppe
+
+5. LÖSUNG
 ---------
 
-6.1 Beschreibung der Problemlösung
+5.1 Beschreibung der Problemlösung
 ..................................
 
-jjj das Fragezeichen klappt nicht auf
+jjj N mal ...
 
-6.2 Wesentliche Elemente eines nachhaltigen Impact NACH netidee Projektende
+* Zielgruppenname (von oben)
+* Beschreibung (400 Zeichen)
+
+5.2 Wesentliche Elemente eines nachhaltigen Impact NACH netidee Projektende
 ...........................................................................
 
 **In vielen Fällen werden auch nach netidee Projektende Maßnahmen zur
-Förderung/Sicherstellung eines nachhaltigen Impacts der
-Projektergebnisse erforderlich sein – was ist hier geplant?
-Beispielsweise wenn im Rahmen des netidee Projektes eine Webplattform
-entstehen:Maßnahmen für die Erhöhung der Sichtbarkeit, Sicherstellung
-aktueller Inhalte,technische Wartung, ggf. Performanceverbesserungen,
-...**
+Sicherstellung eines nachhaltigen Impacts der Projektergebnisse
+erforderlich sein – was ist hier geplant?**
+
+**Beispielsweise wenn im Rahmen des netidee Projektes eine
+Webplattform entsteht: Maßnahmen für die Erhöhung der Sichtbarkeit,
+Sicherstellung aktueller Inhalte, technische Wartung,
+Performanceverbesserungen, ...**
 
 * (Ich plane keine Aktivitäten nach Ende des netidee Projektes)
 * Ich plane Aktivitäten nach Ende des netidee Projektes um einen
   nachhaltigen Impactmeines Projektes sicherzustellen
 
-jjj welche?
-
-7. UMFELDANALYSE
+6. UMFELDANALYSE
 ----------------
 
-7.1 Was ist der Stand der Technik / Methode / des Wissens?
+6.1 Was ist der Stand der Technik / Methode / des Wissens?
 ..........................................................
 
 **Beschreibung und Angabe der wesentlichen Quellen (Websites, Literatur...)**
 
 jjj 500 Zeichen
 
-7.2 Welche andere Lösungen/Vorhaben zu den genannten Problemen gibt es schon?
+6.2 Welche andere Lösungen/Vorhaben zu den genannten Problemen gibt es schon?
 .............................................................................
 
 **Welche Produkte, Dienstleistungen, Vorhaben/Projekte gibt es gemäß
 Ihrer Recherche ganz konkret von Anderen in Hinblick auf die von Ihnen
-angegebenen Probleme/Projektziele ?**
+angegebenen Probleme/Projektziele?**
 
 **Nennen Sie die wesentlichen Quellen ihrer Recherche (Websites, ...)
 und beschreiben Sie die Stärken und Schwächen der
@@ -220,7 +306,7 @@ jjj 1200 Zeichen
   * Projektidee (oder so):
     http://docideas.mietus.nl/en/latest/Blog/WebSlides/index.html
 
-8. ALLEINSTELLUNGSMERKMAL
+7. ALLEINSTELLUNGSMERKMAL
 -------------------------
 
 **Was ist aus Sicht Ihrer Zielgruppe(n) das entscheidende
@@ -240,72 +326,77 @@ vorteilhaft von anderen unterscheidet?**
 * Die Software (Sphinx-Extensions) ist in Python geschrieben, was ihre
   Weiterentwicklung attraktiv für die Open Source Community macht.
 
-9. PROJEKTERGEBNISSE
+8. PROJEKTERGEBNISSE
 --------------------
 
 **Was wird in Ihrem Projekt bis Projektende erarbeitet , das dann im
 Sinne des Open Source Prinzips von Anderen kostenlos genutzt oder auch
-weiterentwickelt werden kann? Gemäß den netidee Förderbedingungen sind
-alle Projektergebnisse auf der jeweiligen netidee-Projektseite am
-Projektende zu veröffentlichen.**
+weiterentwickelt werden kann?**
 
-9.1 Liste der Projektergebnisse
-...............................
+**Gemäß den netidee Förderbedingungen sind alle Projektergebnisse auf
+der jeweiligen netidee-Projektseite am Projektende zu
+veröffentlichen.**
+
+8.1 Liste der Projektergebnisse 
+................................
 
 **Je nachvollziehbarer Sie Ihr geplantes Projektergebnis strukturieren
 und beschreiben, desto vorteilhafter ist dies für eine positive
 Förderzusage.**
 
-**HINWEIS: Verpflichtende Projektergebnisse für alle Projekte, die Sie
-hier nicht gesondert erwähnen müssen**
+**HINWEIS: Verpflichtende Projektergebnisse für alle Projekte, die Sie hier nicht gesondert erwähnen müssen:**
 
-*PROJEKTERGEBNIS DATENSATZ AUFKLAPPEN* im Originaldokument geht
-nicht. Wahrscheinlich mit einem proprietären Tool erzeugt, das PDF.
+* PROJEKTZWISCHENBERICHT *  (CC-BY / CC-BY-SA)
+* PROJEKTZUSAMMENFASSUNG *  (CC-BY / CC-BY-SA)
+* PROJEKTENDBERICHT * (CC-BY / CC-BY-SA)
+* ENTWICKLERDOKUMENTATION * (CC-BY / CC-BY-SA)
+* ANWENDERDOKUMENTATION (Produkt/ Dienstleistungsbeschreibung) *
+  (CC-BY / CC-BY-SA) - abhängig von der Art des Projektes
+* DOKUMENTATION EXTERNKOMMUNIKATION zur Erreichung Sichtbarkeit
+  /Nachhaltigkeit* (CC-BY / CC-BY-SA)
 
-jjjj
+jjj N mal:
+
+* Projektergebnistyp, eins von
+
+  * Software-Client
+  * Software-Server
+  * Software-Cloud
+  * Software-Modul
+  * Mobile App
+  * Open Hardware
+  * Open Data
+  * Studie
+  * Konzept
+  * Dokumentation
+  * Andere ...
+
+* Haupteigenschaften/Funktionalität, 350 Zeichen
+* Open Source Lizenz
+
+  gemäß Vorgaben im Kapitel acht der `netidee Förderbedingungen
+  <https://www.netidee.at/sites/default/files/2020-03/Call15_F%C3%B6rderbedingungen.pdf>`__
+
+  (im Online Formular ist ein Dropdown von Lizenzen)
+
+
+**jjj**
 
 * Git Repo
 * PyPI Package
 * Meine Unterlagen als Beispiel (man muss sie nicht Open Source
   machen)
 
-Projektergebnistyp
-,,,,,,,,,,,,,,,,,,
-
-jjj
-
-Haupteigenschaften/Funktionalität
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-
-jjj
-
-Open Source Lizenz
-,,,,,,,,,,,,,,,,,,
-
-`GPL v3 <https://www.gnu.org/licenses/gpl-3.0.html>`__
-
-jjj
-
-9.2 Erforderliche Lizenzen Dritter
+8.2 Erforderliche Lizenzen Dritter
 ..................................
 
-**WICHTIG: Bitte Angabe, falls für die Nutzung Ihrer Projektergebnisse
-Fremdprodukte/-Lizenzen Dritter erforderlichsind. Falls zutreffend,
-bitte auch um Nennung der ungefähren jährlichen Kosten.**
+(keine)
 
-N mal:
+9. ERFOLGREICHER PROJEKTABSCHLUSS
+---------------------------------
 
-* Fremd-Produkt
-* Lizenz
-* Kosten (in €)/Jahr
-
-jjj wird leer bleiben
-
-10. ERFOLGREICHER PROJEKTABSCHLUSS
-----------------------------------
-
-10.1 Ihre sonstigen Aktivitäten im Projektbereich
-.................................................
+9.1 Ihre sonstigen Aktivitäten im Projektbereich
+................................................
 
 **Ihre bisherigen bzw. aktuellen Aktivitäten im Bereich/im Umfeld
 ihres Projektantrages.**
@@ -316,8 +407,8 @@ jjj 300 Zeichen
 * Python Trainingsunterlagen nach reStructuredText transkribiert
 * Neue Unterlagen werden nur mehr in reStructuredText erstellt
 
-10.2 Angaben zur fachlichen Eignung der MitarbeiterInnen im Projektkernteam
-...........................................................................
+9.2 Angaben zur fachlichen Eignung der MitarbeiterInnen im Projektkernteam
+..........................................................................
 
 **Kurze Lebensläufe der Projektbeteiligten sowie wichtige
 Veröffentlichungen (Bücher, Fachartikel, Patente, Vorträge) auf dem
@@ -325,8 +416,8 @@ Gebiet des Projektes, die den Projektinhalt verdeutlichen.**
 
 jjj 1000 Zeichen
 
-10.3 Erfahrung des/der vorgesehenen ProjektleiterIn
-...................................................
+9.3 Erfahrung des/der vorgesehenen ProjektleiterIn
+..................................................
 
 jjj 400 Zeichen
 
@@ -334,20 +425,25 @@ jjj 400 Zeichen
 * 20 davon als Teamleiter, technischer Leiter, Releasemanager
 * 12 Jahre Erfahrung als Trainer
 
-10.4 Link zum maximal 2-minütigen Video des Projektkernteams
-............................................................
+9.4 Link zum maximal 2-minütigen Video des Projektkernteams
+...........................................................
 
-**In diesem Video möchten wir Sie und Ihr Projektteam
-kennenlernen. Erklären Sie uns (ohne Hintergrundmusik und
-Windgeräusche!), warum wir gerade Ihr Vorhaben fördern
-sollen. Animierte Produktvideos interessieren uns nicht. Bitte stellen
-Sie sicher, dass das Video bis mindestens vier Monate nach
-Einreichschluss uneingeschränktaufrufbar ist.**
+**In diesem Video möchten wir Ihr Projekt, Sie und ggf. Ihr
+Projektkernteam kennenlernen. Es geht hier um eine “knackige”
+Darstellung: was gemacht wird und wer die handelnden Personen
+sind. So, wie z.B. in der TV-Sendung “2 Minuten 2 Millionen”! Was wir
+nicht wollen: Ihren Antrag nochmals vorgelesen bekommen.**
+
+**Und erklären Sie uns (ohne Hintergrundmusik und Windgeräusche!),
+warum wir gerade Ihr Vorhaben fördern sollen! Animierte Produktvideos
+interessieren uns nicht. Bitte stellen Sie sicher, dass das Video bis
+mindestens vier Monate nach Einreichschluss uneingeschränkt aufrufbar
+ist.**
 
 jjj Link zum Video
 
-10.5 Risiken
-............
+9.5 Risiken
+...........
 
 **Welche Projektrisiken sehen Sie?**
 
@@ -357,16 +453,13 @@ jjj 300 Zeichen
   ähnlich großes Repertoire an Unterlagen in unterschiedlichen, meist
   proprietären, Formaten.
 
-10.6 Erfolgskriterien am netidee-Projektende
-............................................
+9.6 Erfolgskriterien am netidee-Projektende
+...........................................
 
 **Mit welchen Erfolgskriterien bewerten/messen Sie die Zielerreichung
 am Ende des netidee-Projektes?**
 
-*ERFOLGSKRITERIUM DATENSATZ AUFKLAPPEN* im Originaldokument geht
-nicht. Wahrscheinlich mit einem proprietären Tool erzeugt, das PDF.
-
-n mal:
+jjj N mal:
 
 * Beschreibung
 * minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
@@ -374,18 +467,13 @@ n mal:
 * ausgezeichneter Erfolg bei (Kriterien für den angestrebten
   ausgezeichneten Projekterfolg)
 
-jjj
-
-10.7 Angestrebter Impact 3 Jahre nach netidee-Projektende
-.........................................................
+9.7 Angestrebter Impact 3 Jahre nach netidee-Projektende
+........................................................
 
 **Mit welchen Erfolgskriterien bewerten/messen Sie die Zielerreichung
 drei Jahre nach netidee-Projektende?**
 
-*ERFOLGSKRITERIUM DATENSATZ AUFKLAPPEN* im Originaldokument geht
-nicht. Wahrscheinlich mit einem proprietären Tool erzeugt, das PDF.
-
-n mal:
+jjj N mal:
 
 * Beschreibung
 * ausgezeichneter Erfolg bei (Kriterien für den angestrebten
@@ -393,18 +481,18 @@ n mal:
 
 jjj
 
-11. UMSETZUNG (EINJÄHRIGES NETIDEE PROJEKT)
+10. UMSETZUNG (EINJÄHRIGES NETIDEE PROJEKT)
 -------------------------------------------
 
-11.1 Wichtige Partner
-.....................
+10.1 Wichtige Partner_innen
+...........................
 
-**Kooperationspartner, Dienstleister, sonstige Mitwirkende,
-Zielgruppenvertreter,...**
+**Kooperationspartner_innen, Dienstleister_innen, sonstige
+Mitwirkende, Zielgruppenvertreter_innen,...**
 
 jjj 400 Zeichen
 
-11.2 Arbeitsschwerpunkte
+10.2 Arbeitsschwerpunkte
 ........................
 
 **Wofür sollen Arbeitsstunden/Geld im Projekt vor allem eingesetzt
@@ -412,27 +500,27 @@ werden?**
 
 jjj 600 Zeichen
 
-11.3 Wesentliche Ressourcen
+10.3 Wesentliche Ressourcen
 ...........................
 
 **Welches Know How /Personal ist in welchem Umfang erforderlich,
-welche Sachressourcen werden benötigt? Wasmuss ggf. extern zugekauft
+welche Sachressourcen werden benötigt? Was muss ggf. extern zugekauft
 werden?**
 
 jjj 600 Zeichen
 
-11.4 Nutzer-Kommunikationskanäle
-................................
+10.4 Nutzer_innen-Kommunikationskanäle
+.......................................
 
 **Wie erreichen Sie schon während des Projektes die Personen der
 Zielgruppe?**
 
 jjj 400 Zeichen
 
-12. PROJEKTTERMINE
+11. PROJEKTTERMINE
 ------------------
 
-12.1 Termine Projektstart - Projektende
+11.1 Termine Projektstart - Projektende
 .......................................
 
 Projektstart
@@ -449,23 +537,37 @@ Projektende
 
 jjj von bis
 
-13. KOSTEN UND FINANZIERUNG
+12. KOSTEN UND FINANZIERUNG
 ---------------------------
 
+12.1 Projektkosten
+..................
+
 Personalkosten
-..............
+,,,,,,,,,,,,,,
 
-**Bitte geben Sie die Funktion der einzelnen Mitarbeiter,
-Stundenanzahl im Projekt und jeweilige Stundensätze an(z.B. Senior
+**Bitte geben Sie die Funktion der einzelnen Mitarbeiter_innen,
+Stundenanzahl im Projekt und jeweilige Stundensätze an (z.B. Senior
 bzw. Junior Programmierer_in, Designer_in, Contentmanager_in,
-Projektmanager_in, technischeAssistenz; administrative Assistenz,
-Sachbearbeiter_in, Social Media Spzialist_in, ...)**
+Projektmanager_in, technische Assistenz; administrative Assistenz,
+Sachbearbeiter_in, Social Media Spzialist_in, ...).**
 
-**Für Firmeneigentümer und Gesellschafter sowie für Privatpersonen
-beträgt der maximal förderbare Stundensatz €35,-.(brutto). Nicht
-nachvollziehbar hohe Stundensätze können das Risiko, dass ein höherer
-Eigenmittelanteil als Bedingung für eine Förderung festgelegt wird,
-erhöhen.**
+**Für Firmeneigentümer_innen, Gesellschafter_innen,
+Vereinsfunktionär_innen sowie für Privatpersonen beträgt der maximal
+förderbare Stundensatz € 40,- (brutto). Für nachweislich angestellte
+Projektmitarbeiter_innen errechnet sich der förderbare Stundensatz bei
+einem Vollzeitvertrag (38,5 Stunden) mit einem Jahresstundenteiler von
+1720, bei Teilzeitbeschäftigten aliquot reduziert. Der
+Dienstgeberanteil wird mit einem Faktor 0,3
+berücksichtigt. Kalkulation daher: Stundensatz = (Jahresbruttogehalt x
+1,3 ) / 1720. Nicht nachvollziehbar hohe Stundensätze können das
+Risiko, dass ein höherer Eigenmittelanteil als Bedingung für eine
+Förderung festgelegt wird, erhöhen.**
+
+**Gemeinkosten werden nicht gefördert.**
+
+**Bei Anträgen, die HTL-Diplomarbeiten zum Inhalt haben, werden
+Personalkosten nicht gefördert.**
 
 jjj Stefan?
 
@@ -475,27 +577,29 @@ jjj Stefan?
 * Stunden
 * Betrag
 
-Sachkosten
-..........
+Sonstige Kosten
+,,,,,,,,,,,,,,,
 
-**Bitte die Sachkosten nach Material, Leistungen Dritter, Reisen
-etc. gliedern.**
+**Kosten für externe Dienstleistungen, Sachkosten, projektbedingte
+Reisekosten sowie Betriebskosten, die unmittelbar durch die
+Projekttätigkeit entstehen. Bitte die Kosten nach Material, Leistungen
+Dritter, Reisen etc. gliedern. Gemeinkosten werden nicht
+gefördert. Die ggf. auf einer Rechnung enthaltene Umsatzsteuer darf in
+der netidee Kostenabrechnung nur dann berücksichtigt werden, wenn
+die_der Fördernehmer_in nicht vorsteuerabzugsberechtigt ist.**
 
-n mal:
+jjj N mal:
 
-* Konkrete Leistung (Konkrete Leistung inkl. Menge/Anzahl)
-* Gesamtkosten in €
+* Konkrete Leistung inkl. Menge/Anzahl, Kosten
 
-jjj wird leer bleiben
+(wird leer bleiben)
 
-Kosten Summary
-..............
+Gesamtkosten in €
+,,,,,,,,,,,,,,,,,
 
 jjj
 
-* Gesamtkosten in €
-
-13.2 Wir beantragen folgende netidee-Förderung
+12.2 Wir beantragen folgende netidee-Förderung
 ..............................................
 
 * jjj wieviel jetzt?
@@ -514,17 +618,14 @@ Einzelkosten).**
 **ACHTUNG: Wenn die Gesamtprojektkosten höher sind als die beantragte
 Förderung, ist dieser Punkt verpflichtend auszufüllen.**
 
-*RESTFINANZIERUNGS DATENSATZ AUFKLAPPEN* im Originaldokument geht
-nicht. Wahrscheinlich mit einem proprietären Tool erzeugt, das PDF.
-
-n mal:
+jjj N mal:
 
 * Beschreibung
 * Betrag in €
 
-jjj
+(wird leer bleiben)
 
-14. SONDERPREIS
+13. SONDERPREIS
 ---------------
 
 **Ich reiche für einen Sonderpreis ein**
@@ -532,12 +633,10 @@ jjj
 * (Ja)
 * Nein
 
-jjj
-
-15. ERGÄNZENDE ANGABEN
+14. ERGÄNZENDE ANGABEN
 ----------------------
 
-15.1 Transparenz Mehrfachanträge
+14.1 Transparenz Mehrfachanträge
 ................................
 
 * NEIN, ich reiche neben diesem Antrag KEINE weitere Anträge (Projekte
@@ -549,7 +648,7 @@ jjj
 
 jjj
 
-15.2 Nutzung der WhatAVenture-Plattform
+14.2 Nutzung der WhatAVenture-Plattform
 .......................................
 
 **Ich habe im Zuge der Projektantragsstellung die
@@ -558,13 +657,13 @@ WhatAVenture-Plattform genutzt**
 * Ja
 * (Nein)
 
-15.3 Das eingereichte Projekt ist Teil einer schulischen Verpflichtung (z.B. HTL Diplomarbeit)
+14.3 Das eingereichte Projekt ist Teil einer schulischen Verpflichtung (z.B. HTL Diplomarbeit)
 ..............................................................................................
 
 * (Ja)
 * Nein
 
-15.4 Wie haben Sie von der netidee erfahren? (Mehrfachnennungen möglich)
+14.4 Wie haben Sie von der netidee erfahren? (Mehrfachnennungen möglich)
 ........................................................................
 
 * über die Medien
@@ -585,19 +684,4 @@ jjj
 16. DATENSCHUTZ
 ---------------
 
-* Ich habe die Förderbedingungen einschließlich der darin
-  enthaltenenDatenschutzbestimmungen gelesen und zur Kenntnis
-  genommen. Insbesondere habe ichverstanden und zur Kenntnis genommen,
-  dass mit der Inanspruchnahme der beantragtenFörderung zahlreiche
-  Veröffentlichungen des geförderten Projektes, des Antragstellers
-  (bzw.aller Antragsteller bei mehreren Antragstellern) und der
-  jeweils zuerkannten Förderbeträgeverbunden sind. Damit wird dem
-  Stiftungszweck in transparenter Weise Rechnung getragenund
-  gewährleistet, dass die Fördergelder widmungsgemäß verwendet werden.
-* Ich stimme zu, dass meine Antragsdaten einschließlich der darin
-  enthaltenenpersonenbezogenen Daten auch dann von netidee gespeichert
-  und weiterverarbeitet werden,wenn ich keine Förderung
-  erhalte. Hinweis: Wenn Sie nicht zustimmen, wird IhrBenutzerkonto
-  und alle Antragsdaten nach Ende der Auskunftsmöglichkeit für
-  nichtgeförderte Anträge, spätestens drei Monate nach der
-  Förderentscheidung, gelöscht.
+blah zur Kenntnis nehmen
