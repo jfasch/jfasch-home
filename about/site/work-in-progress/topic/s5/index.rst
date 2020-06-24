@@ -23,8 +23,8 @@ reStructuredText.
 You can view the state of conversion in the (rather huge) table in
 :doc:`hier </trainings/material/index>`.
 
-Implementaion Notes
--------------------
+Implementation Notes
+--------------------
 
 S5 (via `rst2s5
 <https://docutils.sourceforge.io/docs/user/slide-shows.html>`__) isnot
