@@ -7,7 +7,8 @@ Python: Functions
    :local:
 
 .. jf-topic:: python_0270_functions
-   :dependencies: python_0140_variables
+   :dependencies: python_0140_variables,
+                  python_0150_datatypes_overview
 
 Why Functions?
 --------------

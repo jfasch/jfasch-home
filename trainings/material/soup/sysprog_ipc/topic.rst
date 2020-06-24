@@ -2,6 +2,7 @@ Sysprog: POSIX IPC
 ==================
 
 .. toctree::
+   :maxdepth: 1
 
    slides
    screenplay
