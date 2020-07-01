@@ -13,6 +13,9 @@ Netidee *Projekt Call 2020*: Video Screenplay
 Draft 2
 -------
 
+.. contents::
+   :local:
+
 Open Source Training Material
 .............................
 

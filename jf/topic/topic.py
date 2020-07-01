@@ -1,12 +1,7 @@
-from . import utils
+from .element import Element
 
-class Topic:
-    def __init__(self, title, id, docname, dependencies):
-        if not id.isidentifier():
-            raise utils.TopicError(f'Topic id={id} is not an identifier')
 
-        self.title = title
-        self.id = id
-        self.docname = docname
+class Topic(Element):
+    def __init__(self, title, path, docname, dependencies):
+        super().__init__(title=title, path=path, docname=docname)
         self.dependencies = dependencies
-

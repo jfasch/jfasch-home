@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
-SPHINXOPTS    ?= -W --keep-going --no-color
+SPHINXOPTS    ?= -W -T --keep-going --no-color
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
 BUILDDIR = /tmp/jfasch-home
