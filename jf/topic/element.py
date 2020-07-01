@@ -3,8 +3,6 @@ from . import errors
 
 class Element:
     def __init__(self, title, path, docname):
-        if type(path) is not tuple:  # need hashable
-            raise errors.NotPath(f'Not a valid path: {path} (must be tuple)')
         for elem in path:
             if type(elem) is not str:
                 raise errors.NotPath(f'Not a valid path: {path} ({elem} is not str)')

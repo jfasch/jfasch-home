@@ -40,10 +40,8 @@ def _ev_doctree_read__extract_topicnodes(app, doctree):
             else:
                 title = tn.title
             
-            app.env.jf_elements[docname] = utils.sphinx_add_topic(
-                app=app, docname=docname,
-                title=title, path=tn.path, dependencies=tn.dependencies)
-
+            utils.sphinx_add_topic(app=app, docname=docname,
+                                   title=title, path=tn.path, dependencies=tn.dependencies)
             tn.replace_self([])
     except Exception:
         logger.exception(f'{docname}: cannot extract topic nodes')
@@ -61,11 +59,11 @@ class _TopicDirective(SphinxDirective):
 
     option_spec = {
         'title': str,
-        'dependencies': utils.list_of_stripped_str,
+        'dependencies': utils.list_of_element_path,
     }
 
     def run(self):
-        path = utils.path_from_dotted_str(self.arguments[0].strip())
+        path = utils.element_path(self.arguments[0].strip())
         title = self.options.get('title', None)
         dependencies = self.options.get('dependencies', [])
 
@@ -104,17 +102,16 @@ class _TopicListExpander:
         self._docname = docname
 
     def expand(self, node):
-        print('jjjjjjjj _TopicListExpander.expand()')
         bl = nodes.bullet_list()
         for topic in self._app.jf_soup.iter_topics():
-            print('jjjjjjjj _TopicListExpander.expand(): topic')
             li = nodes.list_item()
             li += self._topic_paragraph(topic.path)
             bl += li
         node.replace_self(bl)
 
     def _topic_paragraph(self, path):
-        topic = self._app.jf_soup.find_element(path)
+        topic = self._app.jf_soup.element_by_path(path)
+        assert isinstance(topic, Topic), f'dependency on non-topic {path}?'
         p = nodes.paragraph()
         p += self._topic_headline_elems(path)
         if topic.dependencies:
@@ -122,7 +119,7 @@ class _TopicListExpander:
         return p
 
     def _topic_headline_elems(self, path):
-        topic = self._app.jf_soup.find_path(path)
+        topic = self._app.jf_soup.element_by_path(path)
         elems = []
         elems.append(nodes.Text(f'{topic.title} ('))
 
@@ -137,7 +134,7 @@ class _TopicListExpander:
         return elems
         
     def _topic_dependencies(self, path):
-        topic = self._app.jf_soup.find_path(path)
+        topic = self._app.jf_soup.element_by_path(path)
         bl = nodes.bullet_list()
         for d in topic.dependencies:
             li = nodes.list_item()
@@ -146,8 +143,8 @@ class _TopicListExpander:
             par = nodes.paragraph()
             li += par
 
-            t = self._app.jf_soup.find_path(d)
-            par += self._topic_headline_elems('.'.join(t.path))
+            t = self._app.jf_soup.element_by_path(d)
+            par += self._topic_headline_elems(t.path)
         return bl
 
 
@@ -155,13 +152,13 @@ class _TopicListExpander:
 # ----------------------------------
 def _setup_graph(app):
     app.add_directive('jf-topicgraph', _TopicGraphDirective)
-# jjj    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topicgraph_nodes)
+    app.connect('doctree-resolved', _ev_doctree_resolved__expand_topicgraph_nodes)
 
 def _ev_doctree_resolved__expand_topicgraph_nodes(app, doctree, docname):
     '''"doctree-resolved" event handler to expand topic graph nodes'''
     try:
-        app.jf_gibberish.soup.commit()
-        expander = _TopicGraphExpander(gibberish=app.jf_gibberish, docname=docname)
+        utils.sphinx_create_soup(app)
+        expander = _TopicGraphExpander(app=app, docname=docname)
         for n in doctree.traverse(_TopicGraphNode):
             expander.expand(n)
     except Exception:
@@ -175,7 +172,7 @@ class _TopicGraphNode(nodes.Element):
 
 class _TopicGraphDirective(SphinxDirective):
     option_spec = {
-        'entries': utils.list_of_stripped_str,
+        'entries': utils.list_of_element_path,
     }
     def run(self):
         node = _TopicGraphNode(entries=self.options.get('entries', []))
@@ -184,8 +181,8 @@ class _TopicGraphDirective(SphinxDirective):
         return [node]
 
 class _TopicGraphExpander:
-    def __init__(self, gibberish, docname):
-        self._gibberish = gibberish
+    def __init__(self, app, docname):
+        self._app = app
         self._docname = docname
 
     def expand(self, node):
@@ -197,8 +194,8 @@ class _TopicGraphExpander:
     def _graphnode_to_graph(self, node):
         assert isinstance(node, _TopicGraphNode)
         if len(node.entries) == 0:
-            return self._gibberish.soup.worldgraph()
-        return self._gibberish.soup.subgraph(entrypoint_paths=set(node.entries))
+            return self._app.jf_soup.worldgraph()
+        return self._app.jf_soup.subgraph(entrypoint_paths=node.entries)
 
     def _graph_to_dot(self, graph):
         lines = [
@@ -206,10 +203,13 @@ class _TopicGraphExpander:
         ]
 
         for topic in graph.nodes:
-            uri = self._gibberish.app.builder.get_relative_uri(from_=self._docname, to=topic.docname)
-            lines.append(f'{topic.id}[label="{topic.title}", href="{uri}"];')
+            uri = self._app.builder.get_relative_uri(from_=self._docname, to=topic.docname)
+            node_id = '_'.join(topic.path)
+            lines.append(f'{node_id}[label="{topic.title}", href="{uri}"];')
         for src, dst in graph.edges:
-            lines.append(f'{src.id} -> {dst.id};')
+            src_id = '_'.join(src.path)
+            dst_id = '_'.join(dst.path)
+            lines.append(f'{src_id} -> {dst_id};')
 
         lines.append('}')
 

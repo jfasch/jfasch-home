@@ -17,14 +17,12 @@ class Soup:
         return len(list(self._root_group.iter_recursive()))
 
     def iter_topics(self):
-        print('jjjjjj Soup.iter_topics()')
         self._assert_committed()
-        for elem in self._root_group.iter_recursive():
-            print('jjjjjj      ', elem)
+        for name, elem in self._root_group.iter_recursive():
             if isinstance(elem, Topic):
                 yield elem
             else:
-                print('jjjjjj          nix topic')
+                assert False, elem
 
     def add_element(self, element):
         self._assert_uncommitted()
@@ -46,11 +44,8 @@ class Soup:
     def root(self):
         return self._root_group
 
-    def find_id(self, id):
-        for t in self._topics:
-            if t.id == id:
-                return t
-        raise KeyError('no topic with ID '+id)
+    def element_by_path(self, path):
+        return self._root_group.element_by_path(path)
 
     def worldgraph(self):
         self._assert_committed()
@@ -60,7 +55,7 @@ class Soup:
         self._assert_committed()
         world = self._make_worldgraph()
         topics = set()
-        for topic in (t for t in world if t.id in entrypoint_ids):
+        for topic in (t for t in world if t.path in entrypoint_paths):
             topics.add(topic)
             topics.update(descendants(world, topic))
         return world.subgraph(topics)
@@ -70,12 +65,13 @@ class Soup:
             return self._worldgraph
 
         self._worldgraph = DiGraph()
-        topics = (e for e in self._root_group.iter_recursive() if isinstance(e, Topic))
-        for topic in topics:
-            self._worldgraph.add_node(topic)
-            for target_path in topic.dependencies:
-                target_topic = self.find_path(target_path)
-                self._worldgraph.add_edge(topic, target_topic)
+        for name, elem in self._root_group.iter_recursive():
+            if not isinstance(elem, Topic):
+                continue
+            self._worldgraph.add_node(elem)
+            for target_path in elem.dependencies:
+                target_topic = self.element_by_path(target_path)
+                self._worldgraph.add_edge(elem, target_topic)
 
         return self._worldgraph
 
@@ -93,17 +89,10 @@ class Soup:
 
     def _add_topics_to_groups(self):
         topics = [t for t in self._elements if isinstance(t, Topic)]
-        print('jjjjjjjjjjjjjj _add_topics_to_groups')
         for t in topics:
             self._root_group.add_element(t)
             self._elements.remove(t)
-            print('jjjjjjjjjjjjjj        ', t.path)
             
-        print('jjjjjjjjjjjjjj _add_topics_to_groups: root children', self._root_group._children)
-        print('jjjjjjjjjjjjjj _add_topics_to_groups: soup topics ...')
-        for t in self.iter_topics():
-            print('      ', t.path)
-
     def _assert_committed(self):
         if self._root_group is None:
             raise errors.NotCommitted('soup not committed')
