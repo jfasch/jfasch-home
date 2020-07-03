@@ -6,8 +6,8 @@
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0193_while
-   :dependencies: python.python_0160_boolean
+.. jf-topic:: python.basics.python_0193_while
+   :dependencies: python.basics.python_0160_boolean
 
 Looping Constructs
 ------------------

@@ -6,9 +6,9 @@ File I/O
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0500_files
-   :dependencies: python.python_0220_for, 
-		  python.python_0330_strings_encoding
+.. jf-topic:: python.basics.python_0500_files
+   :dependencies: python.basics.python_0220_for, 
+		  python.basics.python_0330_strings_encoding
 
 Python 2 vs. Python 3
 ---------------------

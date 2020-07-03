@@ -6,7 +6,7 @@ Hello World
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0120_helloworld
+.. jf-topic:: python.basics.python_0120_helloworld
 
 *Hello World*: Interactive Mode
 -------------------------------

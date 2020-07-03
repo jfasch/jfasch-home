@@ -6,9 +6,9 @@ The ``unittest`` Module
 .. contents::
    :local:
 
-.. jf-topic:: python.python_5600_unittest
-   :dependencies: python.python_1050_oo,
-		  python.python_1200_modules
+.. jf-topic:: python.swdev.python_5600_unittest
+   :dependencies: python.swdev.python_1050_oo,
+		  python.swdev.python_1200_modules
 
 Simplest Example
 ----------------

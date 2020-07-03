@@ -7,7 +7,7 @@ Function Objects
    :local:
 
 .. jf-topic:: python.python_1000_function_objects
-   :dependencies: python.python_0270_functions
+   :dependencies: python.basics.python_0270_functions
 
 What's a Function?
 ------------------

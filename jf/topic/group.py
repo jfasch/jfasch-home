@@ -41,7 +41,7 @@ class Group(Element):
             return element
         try:
             return element.element_by_path(path[1:])
-        except PathNotFound:
+        except errors.PathNotFound:
             raise errors.PathNotFound(f'{self}: no element with name "{path[0]}"')
 
     def child_by_name(self, name):

@@ -6,13 +6,13 @@ Exercises: Lists, Loops, Functions
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0275_exercises
-   :dependencies: python.python_0195_exercises, 
-		  python.python_0193_while, 
-		  python.python_0220_for, 
-		  python.python_0270_functions,
-		  python.python_0150_datatypes_overview,
-		  python.python_0150_datatypes_overview_compound
+.. jf-topic:: python.basics.python_0275_exercises
+   :dependencies: python.basics.python_0195_exercises, 
+		  python.basics.python_0193_while, 
+		  python.basics.python_0220_for, 
+		  python.basics.python_0270_functions,
+		  python.basics.python_0150_datatypes_overview,
+		  python.basics.python_0150_datatypes_overview_compound
 
 Exercises
 ---------

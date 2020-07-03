@@ -6,9 +6,9 @@ Functions
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0270_functions
-   :dependencies: python.python_0140_variables,
-                  python.python_0150_datatypes_overview
+.. jf-topic:: python.basics.python_0270_functions
+   :dependencies: python.basics.python_0140_variables,
+                  python.basics.python_0150_datatypes_overview
 
 Why Functions?
 --------------

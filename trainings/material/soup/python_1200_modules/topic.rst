@@ -6,10 +6,11 @@ Modules
 .. contents::
    :local:
 
-.. jf-topic:: python.python_1200_modules
-   :dependencies: python.python_0270_functions,
-		  python.python_1050_oo,
-                  python.python_0140_variables
+.. jf-topic:: python.swdev.python_1200_modules
+   :dependencies: python.basics.python_0270_functions,
+                  python.basics.python_0140_variables,
+		  python.swdev.python_1050_oo
+
 
 Modules
 -------

@@ -6,9 +6,9 @@ Exercises: While Loop
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0195_exercises
-   :dependencies: python.python_0193_while, 
-		  python.python_0190_exercises
+.. jf-topic:: python.basics.python_0195_exercises
+   :dependencies: python.basics.python_0193_while, 
+		  python.basics.python_0190_exercises
 
 Exercises
 ---------

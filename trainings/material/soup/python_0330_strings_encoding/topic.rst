@@ -6,8 +6,8 @@ Strings and Encoding
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0330_strings_encoding
-   :dependencies: python.python_0300_strings
+.. jf-topic:: python.basics.python_0330_strings_encoding
+   :dependencies: python.basics.python_0300_strings
 
 Character Encodings
 -------------------

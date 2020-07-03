@@ -6,9 +6,9 @@ The ``range`` Function
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0225_range
-   :dependencies: python.python_0200_sequential_types, 
-		  python.python_0220_for
+.. jf-topic:: python.basics.python_0225_range
+   :dependencies: python.basics.python_0200_sequential_types, 
+		  python.basics.python_0220_for
 
 Iteration over Numbers: ``range()``
 -----------------------------------

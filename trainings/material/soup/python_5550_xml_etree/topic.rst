@@ -7,9 +7,9 @@ XML: ElementTree (``etree``)
    :local:
 
 .. jf-topic:: python.python_5550_xml_etree
-   :dependencies: python.python_1200_modules,
-		  python.python_0220_for,
-                  python.python_0450_dictionaries
+   :dependencies: python.swdev.python_1200_modules,
+		  python.basics.python_0220_for,
+                  python.basics.python_0450_dictionaries
 
 SAX and DOM
 -----------

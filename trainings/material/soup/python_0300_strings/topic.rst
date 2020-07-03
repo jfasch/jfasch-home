@@ -6,10 +6,10 @@ More About Strings
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0300_strings
-   :dependencies: python.python_0200_sequential_types, 
-		  python.python_0150_datatypes_overview, 
-		  python.python_0250_refs_flat_deep_copy
+.. jf-topic:: python.basics.python_0300_strings
+   :dependencies: python.basics.python_0200_sequential_types, 
+		  python.basics.python_0150_datatypes_overview, 
+		  python.basics.python_0250_refs_flat_deep_copy
 
 String Delimiters
 -----------------

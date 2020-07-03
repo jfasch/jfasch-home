@@ -6,9 +6,9 @@ Exercises: Strings, Files, ...
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0510_exercises_strings_and_files
-   :dependencies: python.python_0350_exercises, 
-		  python.python_0500_files
+.. jf-topic:: python.basics.python_0510_exercises_strings_and_files
+   :dependencies: python.basics.python_0350_exercises, 
+		  python.basics.python_0500_files
 
 Exercises (1)
 -------------

@@ -6,8 +6,8 @@ Boolean
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0160_boolean
-   :dependencies: python.python_0150_datatypes_overview
+.. jf-topic:: python.basics.python_0160_boolean
+   :dependencies: python.basics.python_0150_datatypes_overview
 
 Boolean Values
 --------------

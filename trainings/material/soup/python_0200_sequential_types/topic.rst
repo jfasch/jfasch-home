@@ -6,8 +6,8 @@ Sequential Datatypes
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0200_sequential_types
-   :dependencies: python.python_0150_datatypes_overview
+.. jf-topic:: python.basics.python_0200_sequential_types
+   :dependencies: python.basics.python_0150_datatypes_overview
 
 Sequential Datatypes
 --------------------

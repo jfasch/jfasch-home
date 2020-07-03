@@ -6,8 +6,8 @@ More on Sets
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0460_sets
-   :dependencies: python.python_0150_datatypes_overview_compound
+.. jf-topic:: python.basics.python_0460_sets
+   :dependencies: python.basics.python_0150_datatypes_overview_compound
 
 Sets
 ----

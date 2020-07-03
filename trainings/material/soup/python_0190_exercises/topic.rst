@@ -6,15 +6,15 @@ Exercises: Basics
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0190_exercises
-   :dependencies: python.python_0110_blahblah, 
-		  python.python_0120_helloworld, 
-		  python.python_0130_syntax_etc, 
-		  python.python_0140_variables, 
-		  python.python_0150_datatypes_overview, 
-		  python.python_0150_datatypes_overview_compound, 
-		  python.python_0160_boolean, 
-		  python.python_0170_if
+.. jf-topic:: python.basics.python_0190_exercises
+   :dependencies: python.basics.python_0110_blahblah, 
+		  python.basics.python_0120_helloworld, 
+		  python.basics.python_0130_syntax_etc, 
+		  python.basics.python_0140_variables, 
+		  python.basics.python_0150_datatypes_overview, 
+		  python.basics.python_0150_datatypes_overview_compound, 
+		  python.basics.python_0160_boolean, 
+		  python.basics.python_0170_if
 
 Exercises
 ---------

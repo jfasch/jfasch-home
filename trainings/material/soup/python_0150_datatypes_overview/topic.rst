@@ -6,8 +6,8 @@ Datatypes
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0150_datatypes_overview
-   :dependencies: python.python_0140_variables
+.. jf-topic:: python.basics.python_0150_datatypes_overview
+   :dependencies: python.basics.python_0140_variables
 
 Numbers
 -------

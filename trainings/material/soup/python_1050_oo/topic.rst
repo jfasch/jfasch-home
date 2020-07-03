@@ -6,9 +6,9 @@ Object Oriented Programming
 .. contents::
    :local:
 
-.. jf-topic:: python.python_1050_oo
-   :dependencies: python.python_0450_dictionaries,
-		  python.python_0270_functions
+.. jf-topic:: python.swdev.python_1050_oo
+   :dependencies: python.basics.python_0450_dictionaries,
+		  python.basics.python_0270_functions
 
 Object Oriented Programming
 ---------------------------

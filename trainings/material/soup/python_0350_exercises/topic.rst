@@ -6,11 +6,11 @@ Exercises: Strings
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0350_exercises
-   :dependencies: python.python_0300_strings,
-		  python.python_0310_strings_formatting,
-		  python.python_0320_strings_methods,
-		  python.python_0330_strings_encoding
+.. jf-topic:: python.basics.python_0350_exercises
+   :dependencies: python.basics.python_0300_strings,
+		  python.basics.python_0310_strings_formatting,
+		  python.basics.python_0320_strings_methods,
+		  python.basics.python_0330_strings_encoding
 
 Exercises
 ---------

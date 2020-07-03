@@ -6,9 +6,9 @@ Miscellaneous String Methods
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0320_strings_methods
-   :dependencies: python.python_0310_strings_formatting,
-		  python.python_0300_strings
+.. jf-topic:: python.basics.python_0320_strings_methods
+   :dependencies: python.basics.python_0310_strings_formatting,
+		  python.basics.python_0300_strings
 
 Batteries Included: Checks
 --------------------------

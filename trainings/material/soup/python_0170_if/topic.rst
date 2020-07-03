@@ -6,8 +6,8 @@ The ``if`` Statement
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0170_if
-   :dependencies: python.python_0160_boolean
+.. jf-topic:: python.basics.python_0170_if
+   :dependencies: python.basics.python_0160_boolean
 
 The ``if`` Statement
 --------------------

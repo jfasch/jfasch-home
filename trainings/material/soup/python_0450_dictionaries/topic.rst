@@ -6,9 +6,9 @@ More on Dictionaries
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0450_dictionaries
-   :dependencies: python.python_0150_datatypes_overview_compound,
-                  python.python_0220_for
+.. jf-topic:: python.basics.python_0450_dictionaries
+   :dependencies: python.basics.python_0150_datatypes_overview_compound,
+                  python.basics.python_0220_for
 
 Dictionaries
 ------------

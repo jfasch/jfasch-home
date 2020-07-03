@@ -6,10 +6,10 @@ Exception Handling
 .. contents::
    :local:
 
-.. jf-topic:: python.python_1100_exceptions
-   :dependencies: python.python_0140_variables,
-		  python.python_0270_functions,
-		  python.python_1050_oo
+.. jf-topic:: python.swdev.python_1100_exceptions
+   :dependencies: python.basics.python_0140_variables,
+		  python.basics.python_0270_functions,
+		  python.swdev.python_1050_oo
 
 Why Exceptions?
 ---------------

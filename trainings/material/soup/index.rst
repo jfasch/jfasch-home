@@ -43,6 +43,9 @@ is a *directed acyclic graph*.
    list
    graph
    python
+   python-basics
+   python-swdev
+   python-db
 
 Code
 ----

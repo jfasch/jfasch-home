@@ -6,7 +6,7 @@ Variables
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0140_variables
+.. jf-topic:: python.basics.python_0140_variables
 
 Variables (1)
 -------------

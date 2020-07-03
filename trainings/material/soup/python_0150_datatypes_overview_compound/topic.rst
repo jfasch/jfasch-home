@@ -6,8 +6,8 @@ Compound Datatypes
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0150_datatypes_overview_compound
-   :dependencies: python.python_0150_datatypes_overview
+.. jf-topic:: python.basics.python_0150_datatypes_overview_compound
+   :dependencies: python.basics.python_0150_datatypes_overview
 
 Compound Datatypes By Example: List, Tuple
 ------------------------------------------

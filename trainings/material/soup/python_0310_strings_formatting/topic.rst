@@ -6,8 +6,8 @@ String Formatting
 .. contents::
    :local:
 
-.. jf-topic:: python.python_0310_strings_formatting
-   :dependencies: python.python_0300_strings
+.. jf-topic:: python.basics.python_0310_strings_formatting
+   :dependencies: python.basics.python_0300_strings
 
 C-Style Formatting (1)
 ----------------------
