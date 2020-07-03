@@ -9,4 +9,5 @@ Work in Progress
    seo
    blog-queue/index
    todo-misc.rst
+   git
    

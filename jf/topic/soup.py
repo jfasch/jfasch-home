@@ -1,6 +1,6 @@
-from . import errors
 from .group import Group
 from .topic import Topic
+from . import errors
 
 from networkx.algorithms.dag import descendants
 from networkx import DiGraph
@@ -72,7 +72,6 @@ class Soup:
                 continue
             self._worldgraph.add_node(elem)
             for target_path in elem.dependencies:
-                print('jjjj _make_worldgraph:', target_path)
                 try:
                     target_topic = self.element_by_path(target_path)
                 except errors.PathNotFound:

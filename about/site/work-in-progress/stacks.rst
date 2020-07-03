@@ -4,27 +4,14 @@ Stacks (Hanging)
 Topics
 ------
 
-* Transform Python training into topics
+* pending
 
-  * sequential: list and tuple, "str too!", "for" outlook
-  * (Im)mutability
+  * all python topics into python group
+  * subgroups "very basics", "advanced basics"
+  * split .../topic.rst into overview page and slide material (iter/gen:
+    add screenplay)
 
-  * Generators and Iteration
-
-    * for loop: break, continue, else, iter list, str, set, dict,
-            ... -> range, enumerate, zip, ...
-
-      * -> sequential
-
-    * yield-fibo
-    * Iterator protocol (-> yield-fibo)
-    * comprehensions: list, set, dict (-> basic datatypes)
-    * generator expressions (-> yield-fibo, comprehensions)
-
-* Variables and basic datatypes: names, int, float, str, bool,
-  (complex)
-
-  * dia files: dia --filter svg --export names-objects-types.svg names-objects-types.dia 
+* render groups as dot ``cluster_<group>``
 
 Finish
 ------
