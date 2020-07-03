@@ -1,6 +1,8 @@
 from . import utils
 from . import soup
 from .. import errors
+from ..topic import Topic
+from ..group import Group
 
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import set_source_info
@@ -64,19 +66,71 @@ class _TopicGraphExpander:
             'digraph {',
         ]
 
-        for topic in graph.nodes:
-            uri = self._app.builder.get_relative_uri(from_=self._docname, to=topic.docname)
-            node_id = '_'.join(topic.path)
-            lines.append(f'{node_id}[label="{topic.title}", href="{uri}"];')
+        root_cluster = self._dot_group_clusters(graph)
+        lines.extend(self._dot_cluster_lines(root_cluster))
+
         for src, dst in graph.edges:
-            src_id = '_'.join(src.path)
-            dst_id = '_'.join(dst.path)
-            lines.append(f'{src_id} -> {dst_id};')
+            lines.extend(self._dot_edge_lines(src, dst))
 
         lines.append('}')
 
         return '\n'.join(lines)
     
+    class Cluster:
+        def __init__(self, group):
+            self.group = group
+            self.clusters = []
+            self.nodes = []  # leaf topics
+
+    def _dot_group_clusters(self, graph):
+        root_cluster = self.Cluster(self._app.jf_soup.root)
+
+        have_clusters = { self._app.jf_soup.root: root_cluster }
+        # walk topics and create cluster hierarchy from their
+        # containing groups
+        for topic in graph.nodes:
+            assert type(topic) is Topic
+            cluster = self._dot_make_cluster(topic.parent, have_clusters)
+            cluster.nodes.append(topic)
+
+        return root_cluster
+
+    def _dot_make_cluster(self, group, have_clusters):
+        assert type(group) is Group
+
+        cluster = have_clusters.get(group)
+        if not cluster:
+            cluster = self.Cluster(group)
+            have_clusters[group] = cluster
+            parent_cluster = self._dot_make_cluster(group.parent, have_clusters)
+            parent_cluster.clusters.append(cluster)
+
+        return cluster
+
+    def _dot_cluster_lines(self, cluster):
+        lines = []
+        if cluster.group is not self._app.jf_soup.root:
+            lines.append('subgraph cluster_' + self._dot_id_from_path(cluster.group.path) + '{')
+
+        for topic in cluster.nodes:
+            lines.extend(self._dot_topic_node_lines(topic))
+        for subcluster in cluster.clusters:
+            lines.extend(self._dot_cluster_lines(subcluster))
+
+        if cluster.group is not self._app.jf_soup.root:
+            lines.append('}')
+        return lines
+
+    def _dot_topic_node_lines(self, topic):
+        uri = self._app.builder.get_relative_uri(from_=self._docname, to=topic.docname)
+        node_id = '_'.join(topic.path)
+        return [f'{node_id}[label="{topic.title}", href="{uri}"];']
+
+    def _dot_edge_lines(self, src, dst):
+        src_id = '_'.join(src.path)
+        dst_id = '_'.join(dst.path)
+        return [f'{src_id} -> {dst_id};']
+
     def _dot_to_svg(self, dot):
         try:
             completed = subprocess.run(
@@ -89,3 +143,6 @@ class _TopicGraphExpander:
         # strip XML declaration (we are embedding it)
         svg = svg[svg.index('<svg'):]
         return svg
+
+    def _dot_id_from_path(self,  path):
+        return '_'.join(path)

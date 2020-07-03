@@ -8,8 +8,8 @@ Topics
 
   * all python topics into python group
   * subgroups "very basics", "advanced basics"
-  * split .../topic.rst into overview page and slide material (iter/gen:
-    add screenplay)
+  * split .../topic.rst into overview page and slide material
+    (iter/gen: add screenplay)
 
 * render groups as dot ``cluster_<group>``
 
