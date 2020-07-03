@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: String Formatting
-=========================
+String Formatting
+=================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0310_strings_formatting
-   :dependencies: python_0300_strings
+.. jf-topic:: python.python_0310_strings_formatting
+   :dependencies: python.python_0300_strings
 
 C-Style Formatting (1)
 ----------------------

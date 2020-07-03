@@ -1,14 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: Miscellaneous String Methods
-====================================
+Miscellaneous String Methods
+============================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0320_strings_methods
-   :dependencies: python_0310_strings_formatting,
-		  python_0300_strings
+.. jf-topic:: python.python_0320_strings_methods
+   :dependencies: python.python_0310_strings_formatting,
+		  python.python_0300_strings
 
 Batteries Included: Checks
 --------------------------

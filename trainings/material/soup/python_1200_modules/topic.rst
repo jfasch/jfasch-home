@@ -1,14 +1,15 @@
 .. include:: <mmlalias.txt>
 
-Python: Modules
-===============
+Modules
+=======
 
 .. contents::
    :local:
 
-.. jf-topic:: python_1200_modules
-   :dependencies: python_0270_functions, python_1050_oo,
-                  python_0140_variables
+.. jf-topic:: python.python_1200_modules
+   :dependencies: python.python_0270_functions,
+		  python.python_1050_oo,
+                  python.python_0140_variables
 
 Modules
 -------

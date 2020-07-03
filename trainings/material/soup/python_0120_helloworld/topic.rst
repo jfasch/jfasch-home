@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Python: Hello World
-===================
+Hello World
+===========
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0120_helloworld
+.. jf-topic:: python.python_0120_helloworld
 
 *Hello World*: Interactive Mode
 -------------------------------

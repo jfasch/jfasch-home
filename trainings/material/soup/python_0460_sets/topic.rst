@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: More on Sets
-====================
+More on Sets
+============
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0460_sets
-   :dependencies: python_0150_datatypes_overview_compound
+.. jf-topic:: python.python_0460_sets
+   :dependencies: python.python_0150_datatypes_overview_compound
 
 Sets
 ----

@@ -1,14 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: File I/O
-================
+File I/O
+========
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0500_files
-   :dependencies: python_0220_for, 
-		  python_0330_strings_encoding
+.. jf-topic:: python.python_0500_files
+   :dependencies: python.python_0220_for, 
+		  python.python_0330_strings_encoding
 
 Python 2 vs. Python 3
 ---------------------

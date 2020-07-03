@@ -1,13 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: The ``range`` Function
-==============================
+The ``range`` Function
+======================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0225_range
-   :dependencies: python_0200_sequential_types, python_0220_for
+.. jf-topic:: python.python_0225_range
+   :dependencies: python.python_0200_sequential_types, 
+		  python.python_0220_for
 
 Iteration over Numbers: ``range()``
 -----------------------------------

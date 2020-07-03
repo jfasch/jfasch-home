@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: The ``if`` Statement
-============================
+The ``if`` Statement
+====================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0170_if
-   :dependencies: python_0160_boolean
+.. jf-topic:: python.python_0170_if
+   :dependencies: python.python_0160_boolean
 
 The ``if`` Statement
 --------------------

@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: Strings and Encoding
-============================
+Strings and Encoding
+====================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0330_strings_encoding
-   :dependencies: python_0300_strings
+.. jf-topic:: python.python_0330_strings_encoding
+   :dependencies: python.python_0300_strings
 
 Character Encodings
 -------------------

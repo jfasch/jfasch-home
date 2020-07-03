@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Python: Syntax etc.
-===================
+Syntax etc.
+===========
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0130_syntax_etc
+.. jf-topic:: python.python_0130_syntax_etc
 
 Syntax: Indentation (1)
 -----------------------

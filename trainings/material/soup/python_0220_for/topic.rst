@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: ``for`` Loops
-=====================
+``for`` Loops
+=============
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0220_for
-   :dependencies: python_0200_sequential_types
+.. jf-topic:: python.python_0220_for
+   :dependencies: python.python_0200_sequential_types
 
 Iteration over ... Something
 ----------------------------

@@ -1,18 +1,18 @@
 .. include:: <mmlalias.txt>
 
-Python: Exercises: Lists, Loops, Functions
-==========================================
+Exercises: Lists, Loops, Functions
+==================================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0275_exercises
-   :dependencies: python_0195_exercises, 
-		  python_0193_while, 
-		  python_0220_for, 
-		  python_0270_functions,
-		  python_0150_datatypes_overview,
-		  python_0150_datatypes_overview_compound
+.. jf-topic:: python.python_0275_exercises
+   :dependencies: python.python_0195_exercises, 
+		  python.python_0193_while, 
+		  python.python_0220_for, 
+		  python.python_0270_functions,
+		  python.python_0150_datatypes_overview,
+		  python.python_0150_datatypes_overview_compound
 
 Exercises
 ---------

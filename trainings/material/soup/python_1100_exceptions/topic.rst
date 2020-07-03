@@ -1,13 +1,15 @@
 .. include:: <mmlalias.txt>
 
-Python: Exception Handling
-==========================
+Exception Handling
+==================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_1100_exceptions
-   :dependencies: python_0140_variables, python_0270_functions, python_1050_oo
+.. jf-topic:: python.python_1100_exceptions
+   :dependencies: python.python_0140_variables,
+		  python.python_0270_functions,
+		  python.python_1050_oo
 
 Why Exceptions?
 ---------------

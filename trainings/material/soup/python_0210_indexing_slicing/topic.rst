@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: Indexing and Slicing
-============================
+Indexing and Slicing
+====================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0210_indexing_slicing
-   :dependencies: python_0200_sequential_types
+.. jf-topic:: python.python_0210_indexing_slicing
+   :dependencies: python.python_0200_sequential_types
 
 Indexing (1)
 ------------

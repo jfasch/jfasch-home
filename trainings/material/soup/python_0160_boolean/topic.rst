@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: Boolean
-===============
+Boolean
+=======
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0160_boolean
-   :dependencies: python_0150_datatypes_overview
+.. jf-topic:: python.python_0160_boolean
+   :dependencies: python.python_0150_datatypes_overview
 
 Boolean Values
 --------------

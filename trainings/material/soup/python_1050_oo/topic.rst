@@ -1,13 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: Object Oriented Programming
-===================================
+Object Oriented Programming
+===========================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_1050_oo
-   :dependencies: python_0450_dictionaries, python_0270_functions
+.. jf-topic:: python.python_1050_oo
+   :dependencies: python.python_0450_dictionaries,
+		  python.python_0270_functions
 
 Object Oriented Programming
 ---------------------------

@@ -1,20 +1,20 @@
 .. include:: <mmlalias.txt>
 
-Python: Exercises: Basics
-=========================
+Exercises: Basics
+=================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0190_exercises
-   :dependencies: python_0110_blahblah, 
-		  python_0120_helloworld, 
-		  python_0130_syntax_etc, 
-		  python_0140_variables, 
-		  python_0150_datatypes_overview, 
-		  python_0150_datatypes_overview_compound, 
-		  python_0160_boolean, 
-		  python_0170_if
+.. jf-topic:: python.python_0190_exercises
+   :dependencies: python.python_0110_blahblah, 
+		  python.python_0120_helloworld, 
+		  python.python_0130_syntax_etc, 
+		  python.python_0140_variables, 
+		  python.python_0150_datatypes_overview, 
+		  python.python_0150_datatypes_overview_compound, 
+		  python.python_0160_boolean, 
+		  python.python_0170_if
 
 Exercises
 ---------

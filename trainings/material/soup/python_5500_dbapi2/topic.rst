@@ -1,13 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: DBAPI 2
-===============
+DBAPI 2
+=======
 
 .. contents::
    :local:
 
-.. jf-topic:: python_5500_dbapi2
-   :dependencies: python_1200_modules, python_0220_for,
+.. jf-topic:: python.python_5500_dbapi2
+   :dependencies: python.python_1200_modules,
+		  python.python_0220_for,
                   python.python_1010_generators_yield
 
 Database Interfaces

@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Python: Variables
-=================
+Variables
+=========
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0140_variables
+.. jf-topic:: python.python_0140_variables
 
 Variables (1)
 -------------

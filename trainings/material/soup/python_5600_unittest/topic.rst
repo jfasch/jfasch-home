@@ -1,13 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: The ``unittest`` Module
-===============================
+The ``unittest`` Module
+=======================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_5600_unittest
-   :dependencies: python_1050_oo, python_1200_modules
+.. jf-topic:: python.python_5600_unittest
+   :dependencies: python.python_1050_oo,
+		  python.python_1200_modules
 
 Simplest Example
 ----------------

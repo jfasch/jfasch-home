@@ -1,13 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: Exercise: Generators
-============================
+Exercise: Generators
+====================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_1011_generators_yield_exercise
-   :dependencies: python.python_1010_generators_yield, python_yield_fibo
+.. jf-topic:: python.python_1011_generators_yield_exercise
+   :dependencies: python.python_1010_generators_yield,
+		  python.python_yield_fibo
 
 Exercise: Fibonacci
 -------------------

@@ -1,15 +1,15 @@
 .. include:: <mmlalias.txt>
 
-Python: More About Strings
-==========================
+More About Strings
+==================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0300_strings
-   :dependencies: python_0200_sequential_types, 
-		  python_0150_datatypes_overview, 
-		  python_0250_refs_flat_deep_copy
+.. jf-topic:: python.python_0300_strings
+   :dependencies: python.python_0200_sequential_types, 
+		  python.python_0150_datatypes_overview, 
+		  python.python_0250_refs_flat_deep_copy
 
 String Delimiters
 -----------------

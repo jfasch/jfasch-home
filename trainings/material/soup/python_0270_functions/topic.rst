@@ -1,14 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: Functions
-=================
+Functions
+=========
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0270_functions
-   :dependencies: python_0140_variables,
-                  python_0150_datatypes_overview
+.. jf-topic:: python.python_0270_functions
+   :dependencies: python.python_0140_variables,
+                  python.python_0150_datatypes_overview
 
 Why Functions?
 --------------

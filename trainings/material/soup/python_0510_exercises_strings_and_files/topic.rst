@@ -1,14 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: Exercises: Strings, Files, ...
-======================================
+Exercises: Strings, Files, ...
+==============================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0510_exercises_strings_and_files
-   :dependencies: python_0350_exercises, 
-		  python_0500_files
+.. jf-topic:: python.python_0510_exercises_strings_and_files
+   :dependencies: python.python_0350_exercises, 
+		  python.python_0500_files
 
 Exercises (1)
 -------------

@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: Datatypes
-=================
+Datatypes
+=========
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0150_datatypes_overview
-   :dependencies: python_0140_variables
+.. jf-topic:: python.python_0150_datatypes_overview
+   :dependencies: python.python_0140_variables
 
 Numbers
 -------

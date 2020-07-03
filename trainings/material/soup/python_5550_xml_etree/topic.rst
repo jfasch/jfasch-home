@@ -1,14 +1,15 @@
 .. include:: <mmlalias.txt>
 
-Python: XML: ElementTree (``etree``)
-====================================
+XML: ElementTree (``etree``)
+============================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_5550_xml_etree
-   :dependencies: python_1200_modules, python_0220_for,
-                  python_0450_dictionaries
+.. jf-topic:: python.python_5550_xml_etree
+   :dependencies: python.python_1200_modules,
+		  python.python_0220_for,
+                  python.python_0450_dictionaries
 
 SAX and DOM
 -----------

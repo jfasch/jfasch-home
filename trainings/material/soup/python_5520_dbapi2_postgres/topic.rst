@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: DBAPI 2: PostgreSQL
-===========================
+DBAPI 2: PostgreSQL
+===================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_5520_dbapi2_postgres
-   :dependencies: python_5500_dbapi2
+.. jf-topic:: python.python_5520_dbapi2_postgres
+   :dependencies: python.python_5500_dbapi2
 
 DBAPI 2 Example: Postgres
 -------------------------

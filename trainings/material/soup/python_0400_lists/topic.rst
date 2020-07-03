@@ -1,13 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Python: More on Lists
-=====================
+More on Lists
+=============
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0400_lists
-   :dependencies: python_0150_datatypes_overview_compound
+.. jf-topic:: python.python_0400_lists
+   :dependencies: python.python_0150_datatypes_overview_compound
 
 List Access
 -----------

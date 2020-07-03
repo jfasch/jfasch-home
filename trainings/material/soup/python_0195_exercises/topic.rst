@@ -1,13 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Python: Exercises: While Loop
-=============================
+Exercises: While Loop
+=====================
 
 .. contents::
    :local:
 
-.. jf-topic:: python_0195_exercises
-   :dependencies: python_0193_while, python_0190_exercises
+.. jf-topic:: python.python_0195_exercises
+   :dependencies: python.python_0193_while, 
+		  python.python_0190_exercises
 
 Exercises
 ---------
