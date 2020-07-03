@@ -4,7 +4,10 @@ from sphinx.errors import SphinxError
 class TopicError(SphinxError):
     category = 'Topic error'
 
-class NotPath(TopicError):
+class BadPath(TopicError):
+    pass
+
+class PathNotFound(TopicError):
     pass
 
 class NotCommitted(TopicError):

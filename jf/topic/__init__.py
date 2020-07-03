@@ -18,6 +18,7 @@ def setup(app):
     app.connect('env-purge-doc', utils.sphinx_purge_doc)
 
     _setup_topic(app)
+    _setup_group(app)
     _setup_topiclist(app)
     _setup_graph(app)
 
@@ -35,40 +36,132 @@ def _ev_doctree_read__extract_topicnodes(app, doctree):
             raise TopicError(f'{docname} contains multiple topics')
 
         for tn in topic_nodes:
-            if tn.title is None:
-                title = utils.get_document_title(docname, doctree)
-            else:
-                title = tn.title
-            
-            utils.sphinx_add_topic(app=app, docname=docname,
-                                   title=title, path=tn.path, dependencies=tn.dependencies)
+            utils.sphinx_add_topic(
+                app=app, 
+                docname=docname,
+                title=utils.get_document_title(docname, doctree),
+                path=tn.path, 
+                dependencies=tn.dependencies)
             tn.replace_self([])
     except Exception:
         logger.exception(f'{docname}: cannot extract topic nodes')
         raise
         
 class _TopicNode(nodes.Element):
-    def __init__(self, title, path, dependencies):
+    def __init__(self, path, dependencies):
         super().__init__(self)
-        self.title = title
+        self.title = None
         self.path = path
         self.dependencies = dependencies
 
 class _TopicDirective(SphinxDirective):
-    required_arguments = 1   # topic path
+    required_arguments = 1   # path
 
     option_spec = {
-        'title': str,
         'dependencies': utils.list_of_element_path,
     }
 
     def run(self):
         path = utils.element_path(self.arguments[0].strip())
-        title = self.options.get('title', None)
         dependencies = self.options.get('dependencies', [])
 
-        return [_TopicNode(title=title, path=path, dependencies=dependencies),
-                _TopicGraphNode(entries=[path])]
+        topic = _TopicNode(path=path, dependencies=dependencies)
+        topic.document = self.state.document
+        set_source_info(self, topic)
+
+        graph = _TopicGraphNode(entries=[path])
+        graph.document = self.state.document
+        set_source_info(self, graph)
+
+        return [topic, graph]
+
+# group
+# ----------------------------------
+def _setup_group(app):
+    app.add_directive('jf-group', _GroupDirective)
+    app.connect('doctree-read', _ev_doctree_read__extract_groupnodes)
+    app.connect('doctree-resolved', _ev_doctree_resolved__expand_group_nodes)
+
+def _ev_doctree_read__extract_groupnodes(app, doctree):
+    try:
+        docname = app.env.docname
+        group_nodes = list(doctree.traverse(_GroupNode))
+        if len(group_nodes) > 1:
+            raise TopicError(f'{docname} contains multiple groups')
+
+        for gn in group_nodes:
+            utils.sphinx_add_group(
+                app=app, 
+                docname=docname, 
+                title=utils.get_document_title(docname, doctree), 
+                path=gn.path)
+            gn.replace_self([])
+    except Exception:
+        logger.exception(f'{docname}: cannot extract group nodes')
+        raise
+
+def _ev_doctree_resolved__expand_group_nodes(app, doctree, docname):
+    try:
+        utils.sphinx_create_soup(app)
+        expander = _GroupExpander(app=app, docname=docname)
+        for n in doctree.traverse(_GroupNode):
+            expander.expand(n)
+    except Exception:
+        logger.exception(f'{docname}: cannot expand group')
+        raise
+
+class _GroupNode(nodes.Element):
+    def __init__(self, path):
+        super().__init__(self)
+        self.path = path
+
+class _GroupDirective(SphinxDirective):
+    required_arguments = 1   # path
+
+    def run(self):
+        path = utils.element_path(self.arguments[0].strip())
+        group = _GroupNode(path=path)
+        group.document = self.state.document
+        set_source_info(self, group)
+        return [group]
+
+class _GroupExpander:
+    def __init__(self, app, docname):
+        self._app = app
+        self._docname = docname
+
+    def expand(self, node):
+        group = self._app.jf_soup.element_by_path(node.path)
+
+        bl = nodes.bullet_list()
+        for _, topic in group.iter_recursive():
+            if not isinstance(topic, Topic):
+                continue
+            li = nodes.list_item()
+            li += self._topic_paragraph(topic.path)
+            bl += li
+        node.replace_self(bl)
+
+    def _topic_paragraph(self, path):
+        topic = self._app.jf_soup.element_by_path(path)
+        assert isinstance(topic, Topic), f'dependency on non-topic {path}?'
+        p = nodes.paragraph()
+        p += self._topic_headline_elems(path)
+        return p
+
+    def _topic_headline_elems(self, path):
+        topic = self._app.jf_soup.element_by_path(path)
+        elems = []
+        elems.append(nodes.Text(f'{topic.title} ('))
+
+        ref = nodes.reference()
+        ref['refuri'] = self._app.builder.get_relative_uri(
+            from_=self._docname, to=topic.docname)
+        ref += nodes.Text('.'.join(topic.path))
+        elems.append(ref)
+        elems.append(nodes.Text(')'))
+        
+        return elems
 
 # topiclist
 # ----------------------------------
@@ -128,7 +221,6 @@ class _TopicListExpander:
             from_=self._docname, to=topic.docname)
         ref += nodes.Text('.'.join(topic.path))
         elems.append(ref)
-
         elems.append(nodes.Text(')'))
         
         return elems

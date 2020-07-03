@@ -1,5 +1,5 @@
 Python
 ======
 
-.. .. jf-topicgroup:: python
+.. jf-group:: python
 

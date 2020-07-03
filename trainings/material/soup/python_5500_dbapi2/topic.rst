@@ -8,7 +8,7 @@ Python: DBAPI 2
 
 .. jf-topic:: python_5500_dbapi2
    :dependencies: python_1200_modules, python_0220_for,
-                  python_1010_generators_yield
+                  python.python_1010_generators_yield
 
 Database Interfaces
 -------------------

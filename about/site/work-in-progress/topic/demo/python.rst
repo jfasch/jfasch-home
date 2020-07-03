@@ -31,7 +31,7 @@ All About Python
              python_0500_files,
              python_0510_exercises_strings_and_files,
              python_1000_function_objects,
-             python_1010_generators_yield,
+             python.python_1010_generators_yield,
              python_1011_generators_yield_exercise,
              python_1050_oo,
              python_1100_exceptions,

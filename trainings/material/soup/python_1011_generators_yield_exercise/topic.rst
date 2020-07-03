@@ -7,7 +7,7 @@ Python: Exercise: Generators
    :local:
 
 .. jf-topic:: python_1011_generators_yield_exercise
-   :dependencies: python_1010_generators_yield, python_yield_fibo
+   :dependencies: python.python_1010_generators_yield, python_yield_fibo
 
 Exercise: Fibonacci
 -------------------

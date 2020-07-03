@@ -6,7 +6,7 @@ Python: Iteration and Generators
 .. contents::
    :local:
 
-.. jf-topic:: python_1010_generators_yield
+.. jf-topic:: python.python_1010_generators_yield
    :dependencies: python_0220_for, python_0200_sequential_types, python_0225_range, python_0270_functions
 
 Iteration in Python

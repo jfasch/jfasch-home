@@ -1,7 +1,9 @@
 from .soup import Soup
 from .topic import Topic
+from .group import Group
 
 from docutils import nodes
+
 
 def element_path(pathstr):
     return [c.strip() for c in pathstr.split('.')]
@@ -34,6 +36,18 @@ def sphinx_add_topic(app, docname, title, path, dependencies):
         'dependencies': dependencies,
     }
 
+def sphinx_add_group(app, docname, title, path):
+    if hasattr(app, 'jf_soup'):
+        raise TopicError('Soup already created, cannot add one more group')
+    if not hasattr(app.env, 'jf_elements'):
+        app.env.jf_elements = {}
+
+    app.env.jf_elements[docname] = {
+        'type': 'group',
+        'title': title,
+        'path': path,
+    }
+
 def sphinx_purge_doc(app, env, docname):
     if hasattr(env, 'jf_elements'):
         env.jf_elements.pop(docname, None)
@@ -49,6 +63,9 @@ def sphinx_create_soup(app):
             app.jf_soup.add_element(
                 Topic(title=elem['title'], path=elem['path'], docname=docname,
                       dependencies=elem['dependencies']))
+        elif ty == 'group':
+            app.jf_soup.add_element(
+                Group(title=elem['title'], path=elem['path'], docname=docname))
         else:
             raise TopicError(f'{docname}: unknown type "{ty}"')
 

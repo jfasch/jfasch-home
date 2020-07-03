@@ -21,6 +21,8 @@ class Soup:
         for name, elem in self._root_group.iter_recursive():
             if isinstance(elem, Topic):
                 yield elem
+            elif isinstance(elem, Group):
+                continue
             else:
                 assert False, elem
 
@@ -70,7 +72,11 @@ class Soup:
                 continue
             self._worldgraph.add_node(elem)
             for target_path in elem.dependencies:
-                target_topic = self.element_by_path(target_path)
+                print('jjjj _make_worldgraph:', target_path)
+                try:
+                    target_topic = self.element_by_path(target_path)
+                except errors.PathNotFound:
+                    raise errors.TopicError(f'{elem.docname} ({elem}): dependency {target_path} not found')
                 self._worldgraph.add_edge(elem, target_topic)
 
         return self._worldgraph

@@ -1,4 +1,4 @@
-from .errors import TopicError
+from . import errors
 from .element import Element
 from .topic import Topic
 
@@ -19,15 +19,15 @@ class Group(Element):
         if len(element._requested_path) == 1: # leaf; add to children
             child = self._children.get(child_name)
             if child:
-                raise TopicError(f'{self}: cannot add "{child_name}"; already exists: {child}')
+                raise errors.TopicError(f'{self}: cannot add "{child_name}"; already exists: {child}')
             self._children[child_name] = element
             del element._requested_path
             element.parent = self
         else:
             parent = self._children.get(child_name)
             if parent is None:
-                raise TopicError(f'{self}: cannot add "{element._requested_path}": '
-                                 f'intermediate "{child_name}" does not exist')
+                raise errors.TopicError(f'{self}: cannot add "{element._requested_path}": '
+                                        f'intermediate "{child_name}" does not exist')
             element._requested_path = element._requested_path[1:]
             parent.add_element(element)
 
@@ -36,16 +36,19 @@ class Group(Element):
 
         element = self._children.get(path[0])
         if not element:
-            raise TopicError(f'{self}: no element with name "{path[0]}"')
+            raise errors.PathNotFound(f'{self}: no element with name "{path[0]}"')
         if len(path) == 1:
             return element
-        return element.get_element(path[1:])
+        try:
+            return element.element_by_path(path[1:])
+        except PathNotFound:
+            raise errors.PathNotFound(f'{self}: no element with name "{path[0]}"')
 
     def child_by_name(self, name):
         '''Get direct child element by name.'''
         child = self._children.get(name)
         if child is None:
-            raise TopicError(f'{self}: no child with name {name}')
+            raise errors.TopicError(f'{self}: no child with name {name}')
         return child
 
     def element_name(self, element):
@@ -58,7 +61,7 @@ class Group(Element):
             if elem is element:
                 return name
         else:
-            raise TopicError(f'{element} is not a child of {self}')
+            raise errors.TopicError(f'{element} is not a child of {self}')
 
     def has_element(self, element):
         '''Does this group have the element?'''
@@ -79,7 +82,7 @@ class Group(Element):
             elif isinstance(elem, Group):
                 yield name, elem
                 #yield from elem.iter_children_dfs()
-                for n,e in elem.iter_children_dfs():
+                for n,e in elem.iter_recursive():
                     yield n,e
             else:
                 assert False, f'invalid element type {type(e)}'

@@ -5,9 +5,9 @@ class Element:
     def __init__(self, title, path, docname):
         for elem in path:
             if type(elem) is not str:
-                raise errors.NotPath(f'Not a valid path: {path} ({elem} is not str)')
+                raise errors.BadPath(f'Not a valid path: {path} ({elem} is not str)')
             if not elem.isidentifier():
-                raise errors.NotPath(f'Not a valid path: {path} ({elem} is not an identifier)')
+                raise errors.BadPath(f'Not a valid path: {path} ({elem} is not an identifier)')
 
         self.title = title
         self.docname = docname
