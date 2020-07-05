@@ -111,6 +111,7 @@ class _TopicGraphExpander:
         lines = []
         if cluster.group is not self._app.jf_soup.root:
             lines.append('subgraph cluster_' + self._dot_id_from_path(cluster.group.path) + '{')
+            lines.append(f'label = "{cluster.group.title}";')
 
         for topic in cluster.nodes:
             lines.extend(self._dot_topic_node_lines(topic))
