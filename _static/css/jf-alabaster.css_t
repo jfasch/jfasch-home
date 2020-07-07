@@ -92,9 +92,3 @@ table {
 td, th {
     border: 1px solid #ccc;
 }
-
-/* alabaster's list styling suddenly changed after updating sphinx? 
-*/
-div.body li p {
-    line-height: 1em;
-}
