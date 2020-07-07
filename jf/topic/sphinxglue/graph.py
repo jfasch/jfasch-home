@@ -112,6 +112,7 @@ class _TopicGraphExpander:
         if cluster.group is not self._app.jf_soup.root:
             lines.append('subgraph cluster_' + self._dot_id_from_path(cluster.group.path) + '{')
             lines.append(f'label = "{cluster.group.title}";')
+            lines.append('style = rounded;')  # rounded corners
 
         for topic in cluster.nodes:
             lines.extend(self._dot_topic_node_lines(topic))
@@ -125,7 +126,16 @@ class _TopicGraphExpander:
     def _dot_topic_node_lines(self, topic):
         uri = self._app.builder.get_relative_uri(from_=self._docname, to=topic.docname)
         node_id = '_'.join(topic.path)
-        return [f'{node_id}[label="{topic.title}", href="{uri}"];']
+
+        return [
+            f'{node_id} [',
+            f'    label="{topic.title}";',
+            f'    href="{uri}";',
+            '    shape=rect;',
+            '    style=filled;',
+            '    color="#DCDCDC";'
+            '];',
+        ]
 
     def _dot_edge_lines(self, src, dst):
         src_id = '_'.join(src.path)
