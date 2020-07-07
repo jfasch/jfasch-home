@@ -2,6 +2,8 @@ from . import utils
 from . import soup
 from .. import errors
 from ..topic import Topic
+from ..task import Task
+from ..node import Node
 from ..group import Group
 
 from sphinx.util.docutils import SphinxDirective
@@ -59,7 +61,21 @@ class _TopicGraphExpander:
         assert isinstance(node, TopicGraphNode)
         if len(node.entries) == 0:
             return self._app.jf_soup.worldgraph()
-        return self._app.jf_soup.subgraph(entrypoint_paths=node.entries)
+        entry_nodes = []
+        for entry_path in node.entries:
+            entry = self._app.jf_soup.element_by_path(entry_path)
+            if isinstance(entry, Node):
+                entry_nodes.append(entry)
+            elif isinstance(entry, Group):
+                # Group type entry points are expanded as their
+                # contained nodes.
+                for _, elem in entry.iter_recursive():
+                    if isinstance(elem, Node):
+                        entry_nodes.append(elem)
+            else:
+                assert False, entry_path
+
+        return self._app.jf_soup.subgraph(entrypoint_paths=[n.path for n in entry_nodes])
 
     def _graph_to_dot(self, graph):
         lines = [
@@ -88,10 +104,10 @@ class _TopicGraphExpander:
         have_clusters = { self._app.jf_soup.root: root_cluster }
         # walk topics and create cluster hierarchy from their
         # containing groups
-        for topic in graph.nodes:
-            assert type(topic) is Topic
-            cluster = self._dot_make_cluster(topic.parent, have_clusters)
-            cluster.nodes.append(topic)
+        for n in graph.nodes:
+            assert isinstance(n, Node), n
+            cluster = self._dot_make_cluster(n.parent, have_clusters)
+            cluster.nodes.append(n)
 
         return root_cluster
 
@@ -114,8 +130,8 @@ class _TopicGraphExpander:
             lines.append(f'label = "{cluster.group.title}";')
             lines.append('style = rounded;')  # rounded corners
 
-        for topic in cluster.nodes:
-            lines.extend(self._dot_topic_node_lines(topic))
+        for n in cluster.nodes:
+            lines.extend(self._dot_node_lines(n))
         for subcluster in cluster.clusters:
             lines.extend(self._dot_cluster_lines(subcluster))
 
@@ -123,19 +139,42 @@ class _TopicGraphExpander:
             lines.append('}')
         return lines
 
-    def _dot_topic_node_lines(self, topic):
-        uri = self._app.builder.get_relative_uri(from_=self._docname, to=topic.docname)
-        node_id = '_'.join(topic.path)
+    def _dot_node_lines(self, node):
+        uri = self._app.builder.get_relative_uri(from_=self._docname, to=node.docname)
+        node_id = '_'.join(node.path)
 
-        return [
-            f'{node_id} [',
-            f'    label="{topic.title}";',
-            f'    href="{uri}";',
-            '    shape=rect;',
-            '    style=filled;',
-            '    color="#DCDCDC";'
-            '];',
-        ]
+        if isinstance(node, Topic):
+            return [
+                f'{node_id} [',
+                f'    label="{node.title}";',
+                f'    href="{uri}";',
+                '    shape=rect;',
+                '    style=filled;',
+                '    color="#DCDCDC";'
+                '];',
+            ]
+        elif isinstance(node, Task):
+            label = '{'
+            label += node.title
+            label += '|'
+            label += f'{node.percent_done}% done'
+            label += '|'
+            label += '{'
+            label += f'initial {node.initial_estimate}h'
+            label += '|'
+            label += f'spent {node.spent}h'
+            label += '}'
+            label += '}'
+
+            return [
+                f'{node_id} [',
+                f'    label="{label}";',
+                f'    href="{uri}";',
+                '    shape=record;',
+                '    style=filled;',
+                '    color="#DCDCDC";'
+                '];',
+            ]
 
     def _dot_edge_lines(self, src, dst):
         src_id = '_'.join(src.path)
@@ -148,7 +187,7 @@ class _TopicGraphExpander:
                 ['dot', '-T', 'svg'],
                 input=dot, check=True, text=True, capture_output=True)
         except subprocess.CalledProcessError as e:
-            raise TopicError(f'dot exited with status {e.returncode}:\n[dot]\n{dotspec}\n[stderr]\n{e.stderr}')
+            raise errors.TopicError(f'dot exited with status {e.returncode}:\n[dot]\n{dot}\n[stderr]\n{e.stderr}')
     
         svg = completed.stdout
         # strip XML declaration (we are embedding it)

@@ -1,0 +1,18 @@
+S5 Integration
+==============
+
+.. jf-task:: topic.s5
+   :initial-estimate: 40
+   :dependencies: topic.python_testset
+
+`S5 <https://docutils.sourceforge.io/docs/user/slide-shows.html>`__ is
+a web presentation toolkit based upon `docutils
+<https://docutils.sourceforge.io/>`__.
+
+It is not integrated with Sphinx, which is the point of this task ...
+
+* S5 comes with a set of themes of its own. Select a theme, and deploy
+  that into ``_static/`` during build. From the generated slides,
+  point links there.
+* Embed build into Sphinx: make all Sphinx directives/roles work
+  inside slide material.

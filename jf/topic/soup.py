@@ -1,5 +1,7 @@
 from .group import Group
+from .node import Node
 from .topic import Topic
+from .task import Task
 from . import errors
 
 from networkx.algorithms.dag import descendants
@@ -21,7 +23,8 @@ class Soup:
         for name, elem in self._root_group.iter_recursive():
             if isinstance(elem, Topic):
                 yield elem
-            elif isinstance(elem, Group):
+            elif isinstance(elem, Task) or isinstance(elem, Group):
+                # possibly generalize that; pass class as argument
                 continue
             else:
                 assert False, elem
@@ -38,7 +41,7 @@ class Soup:
 
         self._root_group = Group(title='Root', path=(), docname='')
         self._make_hierarchy()
-        self._add_topics_to_groups()
+        self._add_nodes_to_groups()
         assert len(self._elements) == 0
         del self._elements
 
@@ -68,7 +71,7 @@ class Soup:
 
         self._worldgraph = DiGraph()
         for name, elem in self._root_group.iter_recursive():
-            if not isinstance(elem, Topic):
+            if not isinstance(elem, Node):
                 continue
             self._worldgraph.add_node(elem)
             for target_path in elem.dependencies:
@@ -92,11 +95,11 @@ class Soup:
                 self._elements.remove(g)
             level += 1
 
-    def _add_topics_to_groups(self):
-        topics = [t for t in self._elements if isinstance(t, Topic)]
-        for t in topics:
-            self._root_group.add_element(t)
-            self._elements.remove(t)
+    def _add_nodes_to_groups(self):
+        nodes = [n for n in self._elements if isinstance(n, Node)]
+        for n in nodes:
+            self._root_group.add_element(n)
+            self._elements.remove(n)
             
     def _assert_committed(self):
         if self._root_group is None:

@@ -30,7 +30,7 @@ Generated Graph
 
 .. jf-topicgraph::
    :entries: python.python_1010_generators_yield,
-	     python.python_1050_oo,
-	     python.python_1100_exceptions,
-	     python.python_1200_modules
+	     python.swdev.python_1050_oo,
+	     python.swdev.python_1100_exceptions,
+	     python.swdev.python_1200_modules
 

@@ -1,5 +1,6 @@
 from ..soup import Soup
 from ..topic import Topic
+from ..task import Task
 from ..group import Group
 from ..errors import TopicError
 
@@ -15,6 +16,22 @@ def sphinx_add_topic(app, docname, title, path, dependencies):
         'title': title,
         'path': path,
         'dependencies': dependencies,
+    }
+
+def sphinx_add_task(app, docname, title, path, dependencies, initial_estimate, spent, percent_done):
+    if hasattr(app, 'jf_soup'):
+        raise TopicError('Soup already created, cannot add one more topic')
+    if not hasattr(app.env, 'jf_elements'):
+        app.env.jf_elements = {}
+
+    app.env.jf_elements[docname] = {
+        'type': 'task',
+        'title': title,
+        'path': path,
+        'dependencies': dependencies,
+        'initial_estimate': initial_estimate,
+        'spent': spent,
+        'percent_done': percent_done,
     }
 
 def sphinx_add_group(app, docname, title, path):
@@ -44,6 +61,16 @@ def sphinx_create_soup(app):
             app.jf_soup.add_element(
                 Topic(title=elem['title'], path=elem['path'], docname=docname,
                       dependencies=elem['dependencies']))
+        elif ty == 'task':
+            app.jf_soup.add_element(
+                Task(title=elem['title'],
+                     path=elem['path'],
+                     docname=docname,
+                     dependencies=elem['dependencies'],
+                     initial_estimate=elem['initial_estimate'],
+                     spent=elem['spent'],
+                     percent_done=elem['percent_done'],
+                ))
         elif ty == 'group':
             app.jf_soup.add_element(
                 Group(title=elem['title'], path=elem['path'], docname=docname))

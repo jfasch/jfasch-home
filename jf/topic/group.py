@@ -1,6 +1,6 @@
 from . import errors
 from .element import Element
-from .topic import Topic
+from .node import Node
 
 
 class Group(Element):
@@ -77,7 +77,7 @@ class Group(Element):
     def iter_recursive(self):
         '''Iterator (name, element) over descendants, recursively'''
         for name, elem in self._children.items():
-            if isinstance(elem, Topic):
+            if isinstance(elem, Node):
                 yield name, elem
             elif isinstance(elem, Group):
                 yield name, elem
