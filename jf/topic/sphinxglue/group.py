@@ -8,6 +8,8 @@ from sphinx.util.nodes import set_source_info
 from sphinx.util import logging
 from docutils import nodes
 
+from networkx.algorithms.dag import topological_sort
+
 logger = logging.getLogger(__name__)
 
 
@@ -70,9 +72,12 @@ class _GroupTopicListExpander:
 
     def expand(self, node):
         group = self._app.jf_soup.element_by_path(node.path)
+        topics = (t for _,t in group.iter_recursive() if isinstance(t, Topic))
+        graph = self._app.jf_soup.worldgraph().subgraph(topics)
+        topo = topological_sort(graph)
 
         bl = nodes.bullet_list()
-        for _, topic in group.iter_recursive():
+        for topic in reversed(list(topo)):
             if not isinstance(topic, Topic):
                 continue
             li = nodes.list_item()

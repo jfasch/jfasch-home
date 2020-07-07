@@ -42,7 +42,7 @@ Walk-Through
   * Pinpoint: "Iteration and Generators" *depends on* "Functions"
 
 * Show :doc:`"Iteration and Generators"
-  </trainings/material/soup/python_1010_generators_yield/topic>`
+  </trainings/material/soup/python/python_1010_generators_yield/topic>`
 * Show :doc:`agenda <demo/agenda>`, and *how easy it is*
 
 Requirements
@@ -159,7 +159,7 @@ Solution: Demo
   * Pinpoint: "Iteration and Generators" *depends on* "Functions"
 
 * Show :doc:`"Iteration and Generators"
-  </trainings/material/soup/python_1010_generators_yield/topic>`
+  </trainings/material/soup/python/python_1010_generators_yield/topic>`
 
 * Show :doc:`agenda <demo/agenda>`, and *how easy it is*
 

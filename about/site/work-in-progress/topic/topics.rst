@@ -75,5 +75,5 @@ Refactoring Exisiting
 ---------------------
 
 * Unify
-  :doc:`/trainings/material/soup/python_1010_generators_yield/topic`
-  and :doc:`/trainings/material/soup/python_yield_fibo/topic`
+  :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
+  and :doc:`/trainings/material/soup/python/python_yield_fibo/topic`

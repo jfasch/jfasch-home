@@ -1,5 +1,0 @@
-Python
-======
-
-.. jf-group:: python
-
