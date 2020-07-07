@@ -1,6 +1,7 @@
 from . import utils
 from . import soup
 from .. import errors
+from ..topic import Topic
 
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import set_source_info
@@ -16,6 +17,9 @@ def setup(app):
     app.connect('doctree-resolved', _ev_doctree_resolved__expand_group_nodes)
 
 def _ev_doctree_read__extract_groupnodes(app, doctree):
+    '''Add group metadata to soup. Leave group node intact; it is expanded
+    later when all metadata has been collected.'''
+
     try:
         docname = app.env.docname
         group_nodes = list(doctree.traverse(_GroupNode))
@@ -28,7 +32,6 @@ def _ev_doctree_read__extract_groupnodes(app, doctree):
                 docname=docname, 
                 title=utils.get_document_title(docname, doctree), 
                 path=gn.path)
-            gn.replace_self([])
     except Exception:
         logger.exception(f'{docname}: cannot extract group nodes')
         raise
@@ -36,7 +39,7 @@ def _ev_doctree_read__extract_groupnodes(app, doctree):
 def _ev_doctree_resolved__expand_group_nodes(app, doctree, docname):
     try:
         soup.sphinx_create_soup(app)
-        expander = _GroupExpander(app=app, docname=docname)
+        expander = _GroupTopicListExpander(app=app, docname=docname)
         for n in doctree.traverse(_GroupNode):
             expander.expand(n)
     except Exception:
@@ -53,12 +56,14 @@ class _GroupDirective(SphinxDirective):
 
     def run(self):
         path = utils.element_path(self.arguments[0].strip())
+
         group = _GroupNode(path=path)
         group.document = self.state.document
         set_source_info(self, group)
+
         return [group]
 
-class _GroupExpander:
+class _GroupTopicListExpander:
     def __init__(self, app, docname):
         self._app = app
         self._docname = docname
@@ -95,4 +100,3 @@ class _GroupExpander:
         elems.append(nodes.Text(')'))
         
         return elems
-
