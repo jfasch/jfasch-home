@@ -4,7 +4,9 @@ Richtlinien zur Veröffentlichung von Kursmaterial
 :doc:`Diese Homepage </about/site/index>` dient einerseits zur
 Vermarktung meines Angebotes, eine Homepage eben. Andererseits dient
 sie auch als Referenz für Kursteilnehmer - sie können nach Beendigung
-ihres Kurses jederzeit auf eine Zusammenfassung zurückgreifen.
+ihres Kurses jederzeit auf eine Zusammenfassung
+zurückgreifen. (:doc:`Hier <log/index>` finden Sie eine Reihe an
+Beispielen.)
 
 **Sofern der Kunde dies wünscht**. Die Details und Abstufungen der
 Öffentlichkeit des Kurses werden vorab besprochen; folgende Kriterien

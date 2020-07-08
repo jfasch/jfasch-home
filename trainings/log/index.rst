@@ -7,7 +7,7 @@ die potentiellen zukünftigen Kursteilnehmer können einen Eindruck
 bekommen, was auf sie zukommt.
 
 Das Publizieren des Materials geschieht natürlich nur mit dem
-Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <codex>`.
+Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
 
 .. sidebar:: Inhalt
 
@@ -17,7 +17,7 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <codex>`.
 .. toctree::
    :hidden:
 
-   codex
+   ../codex
    detail/index
 
 Python Individualtraining (18.5.2020 - 19.5.2020)
@@ -191,8 +191,8 @@ Einführung in Python mit Workshopcharakter
 
 * :doc:`../repertoire/python-basics`
 
-Korn Shell Scripting (20.5.2019 - 22.5.2019 bei eine Firma in Salzburg)
------------------------------------------------------------------------
+Korn Shell Scripting (20.5.2019 - 22.5.2019 bei einer Firma in Salzburg)
+------------------------------------------------------------------------
 
 Mal etwas ganz anderes. Durch mein angegrautes Alter kann ich mich
 noch ein wenig an diese Shell erinnern (sie ist eine Erweiterung der

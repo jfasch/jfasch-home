@@ -4,8 +4,8 @@
                  Downloadsq
    :keywords: schulung, training
 
-Unterlagen & Download
-=====================
+Kursunterlagen: Übersicht und Download
+======================================
 
 .. toctree::
    :maxdepth: 1
@@ -13,10 +13,18 @@ Unterlagen & Download
 
    soup/index
 
-Zu allen Kursen gibt es Unterlagen zum Download; Sie finden bei den
-Kursbeschreibungen direkte Links zu relevantem Material.
+.. sidebar:: Topics
 
+   Neueres Material ist in sogenannte *Topics* gefasst. 
 
+   * :doc:`Hier <soup/index>` sehen Sie das in diesem Format
+     verfügbare Material.
+   * :doc:`Hier </about/site/work-in-progress/topic/index>` können Sie
+     mehr darüber erfahren. *Achtung: Work in Progress*.
+
+Zu den meisten Kursen gibt es Folienmaterial in Form von PDFs; neueres
+Material wird etwas kreativer von mehreren Formaten begleitet. Die
+folgende Tabelle gibt einen Überblick über vorhandene Unterlagen.
 
 .. list-table::
 
@@ -101,12 +109,12 @@ Kursbeschreibungen direkte Links zu relevantem Material.
        - :doc:`soup/cxx_stl_container_intro/code/index`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
-     -
+     - :doc:`soup/python/python`
      -
      - :doc:`soup/python/python_yield_fibo/code/index`
    * - :doc:`/trainings/repertoire/python-advanced`
      - :download:`Python <pdf/300-python.pdf>`
-     -
+     - :doc:`soup/python/python`
      -
      - :doc:`soup/python/python_yield_fibo/code/index`
    * - :doc:`/trainings/repertoire/design-patterns`
@@ -115,7 +123,7 @@ Kursbeschreibungen direkte Links zu relevantem Material.
      - 
      -
    * - :doc:`/trainings/repertoire/unittests`
-     - :download:`Python <pdf/060-design-patterns-unittests.pdf>`
+     - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -
      - - :doc:`soup/unittest_gtest_basics/screenplay`
        - :doc:`soup/unittest_gtest_cmake/screenplay`

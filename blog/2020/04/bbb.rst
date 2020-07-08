@@ -22,7 +22,7 @@ recently. I now know that doing my :doc:`trainings </trainings/index>`
 online *is definitely possible* - it is more a matter of attitude
 [#need_attitude]_ than a technical problem. Plus: I strongly believe
 that it is a shame I haven't pursued this before. This post is an
-attempt to correct that.
+attempt at correcting that.
 
 Microsoft Teams' and Zoom's focus are online meetings and
 collaboration. Moreover, both are *hosted* solutions - you do not
@@ -316,7 +316,7 @@ It looks like the Corona era will not come to an end as fast as we
 might wish. Many people like me are currently looking for a way to
 carry on with their business, only in its online form. Whatever it
 will look like, my hope is that some of it will make its way into
-normality - whatever the definition of it will be once we have
+normality - whatever the definition of normality will be once we have
 returned to "business as usual".
 
 BigBlueButton and the set of involved companies have no marketing

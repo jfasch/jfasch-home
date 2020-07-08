@@ -8,7 +8,7 @@ Exercises
 
 Each training is accompanied with a number of exercises. To share code
 with each other, and with the trainer, I usually setup a Github
-repository (see the :doc:`privacy guidelines <log/codex>`) which is
+repository (see the :doc:`privacy guidelines <codex>`) which is
 active for the duration of the training. The workflow that is used in
 the trainings is rather simple; following a description of it for the
 Git-unaware.

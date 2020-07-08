@@ -16,6 +16,8 @@ Python für Fortgeschrittene
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
+      PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
+      Topics, :doc:`/trainings/material/soup/python/python`
 
    **Termine**
 

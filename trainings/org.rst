@@ -1,17 +1,16 @@
-Buchung, Kursablauf
-===================
+Organisatorisches: Buchung, Kursablauf
+======================================
 
-.. sidebar:: Inhalt
+.. toctree::
+   :hidden:
+   :maxdepth: -1
 
-   .. contents::
-      :local:
+   exercises
 
-   **Buchung**
+.. contents::
+   :local:
 
-   Schicken Sie bitte eine formlose Mail mit Ihrem Anliegen an
-   training@faschingbauer.co.at.
-
-   **Online Schulungen**
+.. sidebar:: Online Schulungen
 
    Egal welcher Schulungstyp - offen oder inhouse -, alle Schulungen
    [#basteln_nicht]_ können problemlos auch online gehalten
@@ -19,6 +18,14 @@ Buchung, Kursablauf
  
    * `Zoom <https://zoom.us/>`__
    * :doc:`Microsoft Teams </blog/2020/03/ms-teams-on-linux>`
+   * :doc:`BigBlueButton </blog/2020/04/bbb>`
+
+Buchung
+-------
+
+Schicken Sie bitte eine formlose Mail mit Ihrem Anliegen an
+training@faschingbauer.co.at. Ich werde mich umgehend mit Ihnen in
+Verbindung setzen, um alles weitere zu besprechen.
 
 Kursgestaltung
 --------------
@@ -26,7 +33,7 @@ Kursgestaltung
 Um einen Eindruck über die Gestaltung des Vortrages, die
 Themenauswahl, und die Schlüssigkeit zu bekommen, bitte ich Sie, die
 :doc:`chronologisch geführte Liste von bisher gehaltenen Schulungen
-<log/index>` querzulesen. 
+<log/index>` querzulesen.
 
 Die Anforderungen an jede Schulung werden zusammen mit dem Kunden
 definiert; basierend darauf wird individuell ein "roter Faden"
@@ -39,9 +46,23 @@ dabei ein Thema detaillierter auf Kosten eines anderen behandelt wird.
    :alt: Kurs im Hoeri-Hotel
    :align: right
 
-Ich liebe es. Nach einem Kurs mit viel Interaktion bin ich immer
-wohlig gerädert, ungefähr wie nach einer langen Schitour oder
-Bergwanderung. Die Teilnehmer auch.
+Offene Schulungen [#offene_schulung]_ werden durch Partner angeboten;
+Sie finden eine Liste an geplanten Terminen bei der jeweiligen
+Schulungsbeschreibung.
+
+Inhouseschulungen [#inhouse_schulung]_ werden in Absprache mit der/dem
+Buchenden terminisiert - genauso wie ihr Inhalt zustandekommt. Ich bin
+hier zeitlich und örtlich so flexibel wie es der Kalender zulässt.
+
+Übungen
+-------
+
+Besonders während Onlineschulungen hat es sich als praktisch erwiesen,
+die Zusammenarbeit in Übungen mittels dedizierten Git-Repositories zu
+implementieren.
+
+* :doc:`Instruktionen <exercises>`
+* :doc:`Datenschutzrichtlinien <codex>`
 
 Unterlagen & Download
 ---------------------
@@ -52,17 +73,6 @@ Unterlagen (inklusive Download Links).
 
 Die Schulungsunterlagen sind durchwegs in Englisch; die Kurse selbst
 werden wahlweise in Deutsch oder Englisch gehalten.
-
-Termine, Buchung
-----------------
-
-Offene Schulungen [#offene_schulung]_ werden durch Partner angeboten;
-Sie finden eine Liste an geplanten Terminen bei der jeweiligen
-Schulungsbeschreibung.
-
-Inhouseschulungen [#inhouse_schulung]_ werden in Absprache mit der/dem
-Buchenden terminisiert - genauso wie ihr Inhalt zustandekommt. Ich bin
-hier zeitlich und örtlich so flexibel wie es der Kalender zulässt.
 
 .. rubric:: Fußnoten
 

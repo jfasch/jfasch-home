@@ -1,26 +1,5 @@
-The Entire Soup
-===============
-
-PDF Downloads
--------------
-
-Most of the training material still is in PDF (written in `Latex
-Beamer <https://ctan.org/pkg/beamer>`__).
-
-* :download:`../pdf/020-linux-sysprog--en.pdf`
-* :download:`../pdf/040-gnu-make.pdf`
-* :download:`../pdf/045-cmake.pdf`
-* :download:`../pdf/050-c.pdf`
-* :download:`../pdf/055-c++03.pdf`
-* :download:`../pdf/056-c++11.pdf`
-* :download:`../pdf/060-design-patterns-unittests.pdf`
-* :download:`../pdf/070-subversion.pdf`
-* :download:`../pdf/100-shell-scripting.pdf`
-* :download:`../pdf/300-python.pdf`
-* :download:`../pdf/400-kernel.pdf`
-
-Topics - This is Work in Progress
----------------------------------
+Topics
+======
 
 Newer training material is written in `reStructuredText
 <https://docutils.sourceforge.io/rst.html>`__, and massaged by a
@@ -29,7 +8,7 @@ Sphinx extension to form a network of *topics* as I call it. This is
 
 Topics naturally have one or more dependencies to other
 topics. Together, topics and their dependencies form a network which
-is a *directed acyclic graph*.
+is a :doc:`directed acyclic graph <python/fullgraph>`.
 
 The Python training has been converted to this format; :doc:`see there
 <python/python>` for how this could look like (careful though: *this

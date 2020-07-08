@@ -1,5 +1,5 @@
-Kursangebot
-===========
+Kurse und Seminare: Überblick
+=============================
 
 .. toctree::
    :hidden:
@@ -27,12 +27,10 @@ Kursangebot
    repertoire/unittests.rst
    repertoire/design-patterns.rst
 
-.. sidebar:: Inhalt
+.. contents::
+   :local:
 
-   .. contents::
-      :local:
-
-   **Online Schulungen**
+.. sidebar:: Online Schulungen
 
    Egal welcher Schulungstyp - offen oder inhouse -, alle Schulungen
    [#basteln_nicht]_ können problemlos auch online gehalten
@@ -40,14 +38,14 @@ Kursangebot
  
    * `Zoom <https://zoom.us/>`__
    * :doc:`Microsoft Teams </blog/2020/03/ms-teams-on-linux>`
+   * :doc:`BigBlueButton </blog/2020/04/bbb>`
 
-Individualkurse
----------------
+.. sidebar:: Individualkurse
 
-Sollten Sie hier keinen Kurs finden, der alle Ihre gewünschten Themen
-enthält, ist das kein Problem. :doc:`Teilen Sie Ihre Wünsche mit
-</about/myself/contact>`, und ich stelle Ihnen einen maßgeschneiderten
-Kurs zusammen.
+   Sollten Sie hier keinen Kurs finden, der alle Ihre gewünschten
+   Themen enthält, ist das kein Problem. :doc:`Teilen Sie Ihre Wünsche
+   mit </about/myself/contact>`, und ich stelle Ihnen einen
+   maßgeschneiderten Kurs zusammen.
 
 Einführung in Linux
 -------------------
@@ -56,8 +54,8 @@ Einführung in Linux
 
 .. _trainings-sysprog:
 
-Linux: Systemnahe Programmierung
---------------------------------
+Systemnahe Programmierung unter Linux
+-------------------------------------
 
 Die Kursreihe *Systemnahe Programmierung unter Linux* vermittelt den
 Teilnehmern ein grosses Bild, indem die zentralen Punkte des Systems
@@ -75,8 +73,8 @@ verstehen.
 * :doc:`repertoire/kernel-programming-basics`
 * :doc:`repertoire/raspi-hands-on`
 
-Programmiersprachen
--------------------
+Programmieren
+-------------
 
 Unix und speziell Linux haben eine Vielzahl von Programmiersprachen
 hervorgebracht. Im Laufe der Zeit habe ich viele von ihnen

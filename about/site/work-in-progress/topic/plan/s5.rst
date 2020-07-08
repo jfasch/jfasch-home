@@ -16,3 +16,8 @@ It is not integrated with Sphinx, which is the point of this task ...
   point links there.
 * Embed build into Sphinx: make all Sphinx directives/roles work
   inside slide material.
+
+.. seealso::
+
+   See :doc:`here <../s5/index>` for how to generated S5 material
+   manually.

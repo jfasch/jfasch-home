@@ -16,10 +16,10 @@ Linux und Open Source
    :maxdepth: -1
    :titlesonly:
 
-   trainings/index
-   trainings/booking
-   trainings/material/index
-   Übungen <trainings/exercises.rst>
+   Kursangebot <trainings/index>
+   Unterlagen & Download <trainings/material/index>
+   Organisatorisches <trainings/org>
+   Datenschutz <trainings/codex>
    trainings/log/index
 
 .. toctree::
