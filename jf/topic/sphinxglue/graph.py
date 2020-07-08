@@ -139,6 +139,36 @@ class _TopicGraphExpander:
             lines.append('}')
         return lines
 
+    @staticmethod
+    def _percent_to_rgb(percent):
+        # color taken from
+        # https://www.w3schools.com/colors/colors_picker.asp,
+        # "Lightness"
+        if percent == 0:
+            return "#ffffff"
+        elif 0 < percent <= 10:
+            return "#e6ffe6"
+        elif 10 < percent <= 20:
+            return "#ccffcc"
+        elif 20 < percent <= 30:
+            return "#b3ffb3"
+        elif 30 < percent <= 40:
+            return "#99ff99"
+        elif 40 < percent <= 50:
+            return "#80ff80"
+        elif 50 < percent <= 60:
+            return "#66ff66"
+        elif 60 < percent <= 70:
+            return "#4dff4d"
+        elif 70 < percent <= 80:
+            return "#33ff33"
+        elif 80 < percent <= 90:
+            return "#1aff1a"
+        elif 90 < percent <= 100:
+            return "#00ff00"
+
+        assert False, f'invalid percentage: {percent}'
+
     def _dot_node_lines(self, node):
         uri = self._app.builder.get_relative_uri(from_=self._docname, to=node.docname)
         node_id = '_'.join(node.path)
@@ -148,9 +178,10 @@ class _TopicGraphExpander:
                 f'{node_id} [',
                 f'    label="{node.title}";',
                 f'    href="{uri}";',
-                '    shape=rect;',
+                '    shape=Mrecord;',
                 '    style=filled;',
-                '    color="#DCDCDC";'
+                '    width=0.5;',
+                '    fillcolor="#DCDCDC";'
                 '];',
             ]
         elif isinstance(node, Task):
@@ -170,9 +201,10 @@ class _TopicGraphExpander:
                 f'{node_id} [',
                 f'    label="{label}";',
                 f'    href="{uri}";',
-                '    shape=record;',
+                '    shape=Mrecord;',
                 '    style=filled;',
-                '    color="#DCDCDC";'
+                '    width=0.5;',
+                f'    fillcolor="{self._percent_to_rgb(node.percent_done)}";'
                 '];',
             ]
 

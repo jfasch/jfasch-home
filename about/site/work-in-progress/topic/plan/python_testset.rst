@@ -2,13 +2,12 @@ Python Training: Test Set of Topics
 ===================================
 
 .. jf-task:: topic.python_testset
-   :initial-estimate: 30
+   :dependencies: topic.basic_dependencies
+   :initial-estimate: 5
+   :percent-done: 100
 
-* Translate bloody :download:`Python Latex Beamer
-  </trainings/material/pdf/300-python.pdf>` pile of slides into
-  reStructuredText.
-* Give initial dependencies.
+From the Python Beamer slides, take a handful of representative
+topics. Specify dependencies.
 
-Goal is not to invent new content, or to refactor existing
-material. Rather, dumbly transcribe Latex to reStructuredText.
-
+Goal of this is to have a small yet representative set of nodes to
+experiment with.

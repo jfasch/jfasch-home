@@ -12,3 +12,5 @@ Topics: Project Plan
    basic_dependencies
    s5
    python_testset
+   python_fullset
+   group
