@@ -1,0 +1,10 @@
+UI Improvements
+===============
+
+.. jf-group:: topic.web.ui
+
+.. toctree::
+   :hidden:
+
+   print_graph
+   expand_collapse_svg

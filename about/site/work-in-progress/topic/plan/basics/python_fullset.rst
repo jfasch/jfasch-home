@@ -1,10 +1,11 @@
 Python Training: Full Set of Topics
 ===================================
 
-.. jf-task:: topic.python_fullset
-   :dependencies: topic.python_testset
+.. jf-task:: topic.basics.python_fullset
+   :dependencies: topic.basics.python_testset,
+		  topic.basics.groups
    :initial-estimate: 16
-   :percent-done: 30
+   :percent-done: 100
 
 * Translate bloody :download:`Python Latex Beamer
   </trainings/material/pdf/300-python.pdf>` pile of slides into

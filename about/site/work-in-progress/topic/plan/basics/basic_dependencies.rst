@@ -1,7 +1,7 @@
 Basic Dependency Machinery
 ==========================
 
-.. jf-task:: topic.basic_dependencies
+.. jf-task:: topic.basics.basic_dependencies
    :initial-estimate: 24
    :spent: 24
    :percent-done: 100

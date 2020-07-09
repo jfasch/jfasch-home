@@ -6,9 +6,9 @@ Newer training material is written in `reStructuredText
 Sphinx extension to form a network of *topics* as I call it. This is
 :doc:`work in progress </about/site/work-in-progress/topic/index>`.
 
-Topics naturally have one or more dependencies to other
-topics. Together, topics and their dependencies form a network which
-is a :doc:`directed acyclic graph <python/fullgraph>`.
+Topics naturally depend on other topics. Together, topics and their
+dependencies form a directed acyclic - see for example :doc:`the full
+set of Python topics, laid out as one such graph <python/fullgraph>`.
 
 The Python training has been converted to this format; :doc:`see there
 <python/python>` for how this could look like (careful though: *this

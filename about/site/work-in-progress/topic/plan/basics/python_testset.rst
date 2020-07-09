@@ -1,8 +1,8 @@
 Python Training: Test Set of Topics
 ===================================
 
-.. jf-task:: topic.python_testset
-   :dependencies: topic.basic_dependencies
+.. jf-task:: topic.basics.python_testset
+   :dependencies: topic.basics.basic_dependencies
    :initial-estimate: 5
    :percent-done: 100
 

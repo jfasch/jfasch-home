@@ -9,8 +9,6 @@ Topics: Project Plan
 .. toctree::
    :hidden:
 
-   basic_dependencies
-   s5
-   python_testset
-   python_fullset
-   group
+   basics/00basics
+   web/00web
+   oss/00oss
