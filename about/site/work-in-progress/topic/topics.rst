@@ -70,10 +70,3 @@ New Topics to Write
 PCA9685 (PWM controller)
 
   * https://www.raspberry-pi-geek.de/ausgaben/rpg/2016/06/i-2-c-workshop-teil-11-pwm-modul-pca9685/
-
-Refactoring Exisiting
----------------------
-
-* Unify
-  :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-  and :doc:`/trainings/material/soup/python/python_yield_fibo/topic`

@@ -111,12 +111,12 @@ folgende Tabelle gibt einen Überblick über vorhandene Unterlagen.
      - :download:`Python <pdf/300-python.pdf>`
      - :doc:`soup/python/python`
      -
-     - :doc:`soup/python/python_yield_fibo/code/index`
+     - :doc:`soup/python/python_1010_generators_yield/code/index`
    * - :doc:`/trainings/repertoire/python-advanced`
      - :download:`Python <pdf/300-python.pdf>`
      - :doc:`soup/python/python`
      -
-     - :doc:`soup/python/python_yield_fibo/code/index`
+     - :doc:`soup/python/python_1010_generators_yield/code/index`
    * - :doc:`/trainings/repertoire/design-patterns`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -

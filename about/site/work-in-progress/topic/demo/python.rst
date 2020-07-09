@@ -40,5 +40,4 @@ All About Python
              python.db.python_5510_dbapi2_sqlite3,
              python.db.python_5520_dbapi2_postgres,
              python.python_5550_xml_etree,
-             python.swdev.python_5600_unittest,
-             python.python_yield_fibo
+             python.swdev.python_5600_unittest
