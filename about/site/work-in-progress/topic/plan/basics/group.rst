@@ -1,12 +1,6 @@
 Topic Groups
 ============
 
-.. jf-task:: topic.basics.groups
-   :dependencies: topic.basics.basic_dependencies,
-		  topic.basics.python_testset
-   :initial-estimate: 16
-   :percent-done: 100
-
 **Non-goal**: visualization is not part of this task.
 
 * Organize nodes/topics into groups. For example, the global "soup"
@@ -26,3 +20,11 @@ Topic Groups
   * ...
 
 * Back all that by unittests
+
+
+.. jf-task:: topic.basics.groups
+   :dependencies: topic.basics.basic_dependencies,
+		  topic.basics.python_testset
+   :initial-estimate: 16
+   :percent-done: 100
+

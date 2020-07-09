@@ -1,10 +1,6 @@
 S5 Integration
 ==============
 
-.. jf-task:: topic.web.slides.s5
-   :initial-estimate: 80
-   :dependencies: topic.basics.python_fullset
-
 `S5 <https://docutils.sourceforge.io/docs/user/slide-shows.html>`__ is
 a web presentation toolkit based upon `docutils
 <https://docutils.sourceforge.io/>`__.
@@ -21,3 +17,10 @@ It is not integrated with Sphinx, which is the point of this task ...
 
    See :doc:`here </about/site/work-in-progress/topic/s5/index>` for
    how to generated S5 material manually.
+
+
+
+.. jf-task:: topic.web.slides.s5
+   :initial-estimate: 80
+   :dependencies: topic.basics.python_fullset
+

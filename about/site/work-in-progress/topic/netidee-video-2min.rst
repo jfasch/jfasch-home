@@ -44,6 +44,9 @@ Walk-Through
 * Show :doc:`"Iteration and Generators"
   </trainings/material/soup/python/python_1010_generators_yield/topic>`
 * Show :doc:`agenda <demo/agenda>`, and *how easy it is*
+* Note that use not restricted to technical training
+
+  * Even can do :doc:`project management <plan/plan>`
 
 Requirements
 ............
