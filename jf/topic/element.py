@@ -3,11 +3,7 @@ from . import errors
 
 class Element:
     def __init__(self, title, path, docname):
-        for elem in path:
-            if type(elem) is not str:
-                raise errors.BadPath(f'Not a valid path: {path} ({elem} is not str)')
-            if not elem.isidentifier():
-                raise errors.BadPath(f'Not a valid path: {path} ({elem} is not an identifier)')
+        verify_is_path(path)
 
         self.title = title
         self.docname = docname
@@ -30,3 +26,15 @@ class Element:
             return self.parent.path + [self.parent.element_name(self)]
         else:
             return []
+
+
+def verify_is_path(path):
+    if type(path) not in (list, tuple):
+        raise errors.BadPath(f'Not a valid path: {path} is neither list nor tuple')
+        
+    for elem in path:
+        if type(elem) is not str:
+            raise errors.BadPath(f'Not a valid path: {path} ({elem} is not str)')
+        if not elem.isidentifier():
+            raise errors.BadPath(f'Not a valid path: {path} ({elem} is not an identifier)')
+    

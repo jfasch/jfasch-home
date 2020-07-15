@@ -52,38 +52,44 @@ class _TopicGraphExpander:
         self._docname = docname
 
     def expand(self, node):
-        graph = self._graphnode_to_graph(node)
-        dot = self._graph_to_dot(graph=graph)
+        graph, hilit_nodes = self._graphnode_to_graph(node)
+        dot = self._graph_to_dot(graph=graph, hilit_nodes=hilit_nodes)
         svg = self._dot_to_svg(dot=dot)
         node.replace_self(nodes.raw(svg, svg, format='html'))
 
     def _graphnode_to_graph(self, node):
         assert isinstance(node, TopicGraphNode)
+
+        worldgraph = self._app.jf_soup.worldgraph()
         if len(node.entries) == 0:
-            return self._app.jf_soup.worldgraph()
-        entry_nodes = []
+            return worldgraph, set()
+
+        # highlight node-type entries. expand group-type entries as
+        # their contained nodes.
+        node_entries = set()
+        hilit_nodes = set()
+
         for entry_path in node.entries:
             entry = self._app.jf_soup.element_by_path(entry_path)
             if isinstance(entry, Node):
-                entry_nodes.append(entry)
+                node_entries.add(entry)
+                hilit_nodes.add(entry)
             elif isinstance(entry, Group):
-                # Group type entry points are expanded as their
-                # contained nodes.
                 for _, elem in entry.iter_recursive():
                     if isinstance(elem, Node):
-                        entry_nodes.append(elem)
+                        node_entries.add(elem)
             else:
                 assert False, entry_path
 
-        return self._app.jf_soup.subgraph(entrypoint_paths=[n.path for n in entry_nodes])
+        return self._app.jf_soup.subgraph(node_entries), hilit_nodes
 
-    def _graph_to_dot(self, graph):
+    def _graph_to_dot(self, graph, hilit_nodes):
         lines = [
             'digraph {',
         ]
 
         root_cluster = self._dot_group_clusters(graph)
-        lines.extend(self._dot_cluster_lines(root_cluster))
+        lines.extend(self._dot_cluster_lines(root_cluster, hilit_nodes=hilit_nodes))
 
         for src, dst in graph.edges:
             lines.extend(self._dot_edge_lines(src, dst))
@@ -123,7 +129,7 @@ class _TopicGraphExpander:
 
         return cluster
 
-    def _dot_cluster_lines(self, cluster):
+    def _dot_cluster_lines(self, cluster, hilit_nodes):
         lines = []
         if cluster.group is not self._app.jf_soup.root:
             lines.append('subgraph cluster_' + self._dot_id_from_path(cluster.group.path) + '{')
@@ -131,9 +137,9 @@ class _TopicGraphExpander:
             lines.append('style = rounded;')  # rounded corners
 
         for n in cluster.nodes:
-            lines.extend(self._dot_node_lines(n))
+            lines.extend(self._dot_node_lines(n, hilit=(n in hilit_nodes)))
         for subcluster in cluster.clusters:
-            lines.extend(self._dot_cluster_lines(subcluster))
+            lines.extend(self._dot_cluster_lines(subcluster, hilit_nodes))
 
         if cluster.group is not self._app.jf_soup.root:
             lines.append('}')
@@ -141,7 +147,7 @@ class _TopicGraphExpander:
 
     @staticmethod
     def _percent_to_rgb(percent):
-        # color taken from
+        # colors taken from
         # https://www.w3schools.com/colors/colors_picker.asp,
         # "Lightness"
         if percent == 0:
@@ -169,9 +175,13 @@ class _TopicGraphExpander:
 
         assert False, f'invalid percentage: {percent}'
 
-    def _dot_node_lines(self, node):
+    def _dot_node_lines(self, node, hilit):
         uri = self._app.builder.get_relative_uri(from_=self._docname, to=node.docname)
         node_id = '_'.join(node.path)
+
+        border = 1
+        if hilit:
+            border *= 3
 
         if isinstance(node, Topic):
             return [
@@ -180,7 +190,7 @@ class _TopicGraphExpander:
                 f'    href="{uri}";',
                 '    shape=Mrecord;',
                 '    style=filled;',
-                '    width=0.5;',
+                f'    penwidth="{border}"',
                 '    fillcolor="#DCDCDC";'
                 '];',
             ]
@@ -203,7 +213,7 @@ class _TopicGraphExpander:
                 f'    href="{uri}";',
                 '    shape=Mrecord;',
                 '    style=filled;',
-                '    width=0.5;',
+                f'    penwidth="{border}"',
                 f'    fillcolor="{self._percent_to_rgb(node.percent_done)}";'
                 '];',
             ]

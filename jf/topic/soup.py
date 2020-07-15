@@ -3,6 +3,7 @@ from .node import Node
 from .topic import Topic
 from .task import Task
 from . import errors
+from . import element
 
 from networkx.algorithms.dag import descendants
 from networkx import DiGraph
@@ -56,11 +57,28 @@ class Soup:
         self._assert_committed()
         return self._make_worldgraph()
 
-    def subgraph(self, entrypoint_paths):
+    def subgraph(self, entrypoints):
+        '''Given entrypoints, compute a subgraph of the world graph that
+        contains the entrypoints and all their descendants.
+
+        entrypoints is an iterable of element paths or elements (can
+        be mixed)
+        '''
+
         self._assert_committed()
         world = self._make_worldgraph()
+
+        entrypoint_elems = set()
+        for e in entrypoints:
+            try:
+                element.verify_is_path(e)
+            except errors.TopicError:   # not a path; must be element
+                entrypoint_elems.add(e)
+            else:
+                entrypoint_elems.add(self.element_by_path(e))
+
         topics = set()
-        for topic in (t for t in world if t.path in entrypoint_paths):
+        for topic in entrypoint_elems:
             topics.add(topic)
             topics.update(descendants(world, topic))
         return world.subgraph(topics)
