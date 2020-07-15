@@ -1,13 +1,3 @@
-* Use dependency metadata more
-
-  * Compute textual agenda
-
-* Structure
-
-  * Relations between multiple training material websites
-
-
-
 Basics
 ======
 
@@ -27,3 +17,4 @@ Basics
    python_polishing
    python_testset
    agenda
+   see_also

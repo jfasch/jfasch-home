@@ -1,8 +1,8 @@
 Expand/Collapse Inline SVG Graph
 ================================
 
-Rather than show the SVG graph inline, unconditionally, use a Vue/JS
-(or some other toolkit) to expand/collapse it.
+Rather than show the SVG graph unconditionally, use a Vue/JS (or some
+other toolkit) to expand/collapse that element.
 
 
 
