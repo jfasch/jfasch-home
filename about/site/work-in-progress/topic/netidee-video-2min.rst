@@ -1,8 +1,7 @@
 .. include:: <mmlalias.txt>
 
-
-Netidee *Projekt Call 2020*: Video Screenplay
-=============================================
+OpenTraining
+============
 
 .. toctree::
    :hidden:
@@ -10,8 +9,20 @@ Netidee *Projekt Call 2020*: Video Screenplay
    demo/agenda
    demo/python
 
-.. contents::
-   :local:
+.. sidebar:: Contents
+   
+   .. contents::
+      :local:
+
+The Problem And Me
+------------------
+
+* Trainings all around Linux
+* Large amounts of training material
+* PDF slides, historically (created using `LaTeX Beamer
+  <https://en.wikipedia.org/wiki/Beamer_(LaTeX)>`__)
+* Not entirely satisfied (to say the least)
+* Colleagues aren't satisfied with their material, either
 
 Open Source Training Material
 -----------------------------
@@ -20,68 +31,30 @@ Open Source Training Material
 
 * Nobody does it
 * Trainers (even those in Open Source tech) *don't work together*
-* ... although, historically, OSS has gained incredible momentum
+* ... although, historically, Open Source *software* has gained
+  incredible momentum
 * Expecting the same in training context
 
 **How?** (This project)
 
-* Define and implement common basis
+* Define and implement common basis, solving a number of problems
 * Provide in-depth documentation
-* Provide representative examples
+* Provide representative examples |longrightarrow| my own training
+  material
 
 Walk-Through
 ------------
 
-* Python training (:download:`PDF
-  </trainings/material/pdf/300-python.pdf>`)
-* Show :doc:`graph: Python training <demo/python>`
-
-  * Pinpoint: "Iteration and Generators" *depends on* "Functions"
-
-* Show :doc:`"Iteration and Generators"
-  </trainings/material/soup/python/python_1010_generators_yield/topic>`
-* Show :doc:`agenda <demo/agenda>`, and *how easy it is*
-* Note that use not restricted to technical training
-
-  * Even can do :doc:`project management <plan/plan>`
-
-Requirements
-------------
-
-* Web-native
-* Easy markup
-* No binary format |Longrightarrow| no Libreoffice, no PowerPoint, no Keynote
-* No proprietary format |Longrightarrow| no PowerPoint, no Keynote
-* No closed source |Longrightarrow| no nothing
-* Small topics of manageable size (ideally 15-30min, the average size
-  of a screencast/tutorial)
-* Dependencies: :doc:`"Iteration and Generators"
-  </trainings/material/soup/python/python_1010_generators_yield/topic>`
-  *depends on* :doc:`"Functions"
-  </trainings/material/soup/python/python_0270_functions/topic>`
-* Various other metadata easily introduced
+* Use case: :doc:`demo/agenda`
+* Show topic
+  :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`. Multiple
+  artifacts: slides *and* livehacking screenplay.
+* Show :doc:`complete Python training <demo/python>`
 
 Open Ends
 ---------
 
-* Slide/Presentation
-
-  * `S5
-    <https://docutils.sourceforge.io/docs/user/slide-shows.html>`__
-  * `reveal.js <https://revealjs.com/>`__
-  * `Webslides <https://webslides.tv/>`__
-
-* Use dependency metadata more
-
-  * Compute textual agenda
-  * Fisheye view on one topic
-  * ...
-
-* Structure
-
-  * Relations between multiple training material websites
-
-* Visual enhancements (many)
+See :doc:`project plan <plan/plan>`
 
 Communication
 -------------

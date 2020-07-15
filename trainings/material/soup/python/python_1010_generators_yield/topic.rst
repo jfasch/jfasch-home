@@ -1,10 +1,10 @@
 Iteration and Generators
 ========================
 
-* :doc:`Slides (Source) <slides>`
+* :download:`Slide show (S5) <slides.s5.html>`
+* :doc:`Slide show (source) <slides>`
 * :doc:`Live hacking screenplay <screenplay>` and :doc:`source code
   <code/index>`
-* :download:`S5 slide show <slides.s5.html>`
 
 
 .. jf-topic:: python.python_1010_generators_yield

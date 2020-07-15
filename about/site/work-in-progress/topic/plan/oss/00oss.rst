@@ -3,6 +3,9 @@ Open Source and Communication
 
 .. jf-group:: topic.oss
 
+.. jf-topicgraph::
+   :entries: topic.oss
+
 .. toctree::
    :hidden:
 

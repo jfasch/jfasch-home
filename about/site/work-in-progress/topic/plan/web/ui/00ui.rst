@@ -3,8 +3,13 @@ UI Improvements
 
 .. jf-group:: topic.web.ui
 
+.. jf-topicgraph::
+   :entries: topic.web.ui
+
 .. toctree::
    :hidden:
 
    print_graph
    expand_collapse_svg
+   dot_alternatives
+   fisheye
