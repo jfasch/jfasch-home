@@ -15,7 +15,6 @@ Extensions
   dates, this could be solved by having a central database and
   generating the table. use rstjinja for this.
 * **SVG**
-* **Topics/S5**. See :doc:`here <topic/index>`
 
 reST Todos
 ----------

@@ -4,7 +4,7 @@ Topics
 Newer training material is written in `reStructuredText
 <https://docutils.sourceforge.io/rst.html>`__, and massaged by a
 Sphinx extension to form a network of *topics* as I call it. This is
-:doc:`work in progress </about/site/work-in-progress/topic/index>`.
+:doc:`work in progress </about/site/opentraining/index>`.
 
 Topics naturally depend on other topics. Together, topics and their
 dependencies form a directed acyclic - see for example :doc:`the full

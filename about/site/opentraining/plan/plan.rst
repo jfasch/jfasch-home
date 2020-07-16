@@ -1,5 +1,5 @@
-Topics: Project Plan
-====================
+Project Plan
+============
 
 .. jf-group:: topic
 

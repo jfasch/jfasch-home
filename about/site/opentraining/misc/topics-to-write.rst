@@ -1,24 +1,14 @@
-Topics Todo List
-================
+Topics to be Written
+====================
 
 .. contents::
    :local:
-
-Issues
-------
-
-* Generated topic list has a ``<p>`` inside ``<li>``. This does not
-  play together nicely (CSS-wise at least) with the other lists that
-  don't have it.
-
-  Remark: ``..contents::`` has this too. Hmm.
-
 
 New Topics to Write
 -------------------
 
 * Python: classmethod, staticmethod, class members
-* Python: more on exceptions
+* Python: more on exceptions (``finally``, ``else``)
 * Python: ``exec()``
 
   * in dict

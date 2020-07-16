@@ -5,7 +5,6 @@ Work in Progress
    :maxdepth: 1
 
    stacks
-   topic/index
    seo
    blog-queue/index
    todo-misc.rst

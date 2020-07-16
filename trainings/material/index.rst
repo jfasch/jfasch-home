@@ -19,7 +19,7 @@ Kursunterlagen: Übersicht und Download
 
    * :doc:`Hier <soup/index>` sehen Sie das in diesem Format
      verfügbare Material.
-   * :doc:`Hier </about/site/work-in-progress/topic/index>` können Sie
+   * :doc:`Hier </about/site/opentraining/index>` können Sie
      mehr darüber erfahren. *Achtung: Work in Progress*.
 
 Zu den meisten Kursen gibt es Folienmaterial in Form von PDFs; neueres

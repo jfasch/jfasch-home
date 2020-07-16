@@ -15,9 +15,8 @@ It is not integrated with Sphinx, which is the point of this task ...
 
 .. seealso::
 
-   See :doc:`here </about/site/work-in-progress/topic/s5/index>` for
-   how to generated S5 material manually.
-
+   See :doc:`here </about/site/opentraining/misc/s5/index>` for how to
+   generated S5 material manually.
 
 
 .. jf-task:: topic.web.slides.s5

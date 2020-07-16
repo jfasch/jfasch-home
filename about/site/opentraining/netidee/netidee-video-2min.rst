@@ -3,12 +3,6 @@
 OpenTraining
 ============
 
-.. toctree::
-   :hidden:
-
-   demo/agenda
-   demo/python
-
 .. sidebar:: Contents
    
    .. contents::
@@ -45,20 +39,16 @@ Open Source Training Material
 Walk-Through
 ------------
 
-* Use case: :doc:`demo/agenda`
-* Show topic
-  :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`. Multiple
-  artifacts: slides *and* livehacking screenplay.
-* Show :doc:`complete Python training <demo/python>`
+* :doc:`../usecases/index`
+
+  * :doc:`../usecases/agenda`
+  * Show
+    :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`. Multiple
+    artifacts: slides *and* livehacking screenplay.
+
+* Show :doc:`complete Python training <../usecases/book>`
 
 Open Ends
 ---------
 
-See :doc:`project plan <plan/plan>`
-
-Communication
--------------
-
-* Github Repositories
-* Announce and promote (Facebook/LinkedIn)
-
+See :doc:`project plan <../plan/plan>`

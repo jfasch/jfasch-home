@@ -4,6 +4,7 @@ This Site
 .. toctree::
    :maxdepth: 1
 
+   opentraining/index
    work-in-progress/index
    recipes
    layout-test

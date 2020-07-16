@@ -3,15 +3,17 @@
 Agenda Computation
 ==================
 
+*Use case*: see :doc:`here <../../usecases/agenda>`.
+
 Based upon the entry points into the graph (determined by talking to
 the customer),
 
 * Compute a subgraph
-* Compute its transitive reduction
-* Sort nodes topologically
+* Compute its `transitive reduction
+  <https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.dag.transitive_reduction.html>`__
+* `Sort nodes topologically
+  <https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.dag.topological_sort.html>`__
 * ... and output that list in reverse order |longrightarrow| agenda
-
-See :doc:`here <../../demo/agenda>` for the use case.
 
 .. jf-task:: topic.basics.agenda
    :dependencies: topic.basics.basic_dependencies,
