@@ -17,4 +17,5 @@ Basics
    python_polishing
    python_testset
    agenda
+   agenda_subtract_known
    see_also

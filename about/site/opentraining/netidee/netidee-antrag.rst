@@ -1,5 +1,5 @@
-Netidee Förderantrag: ``jf-topic`` Trainingsunterlagenverwaltung
-================================================================
+Netidee Förderantrag: OpenTraining
+==================================
 
 Siehe https://www.netidee.at. Diese Seite ist ein Entwurf der
 Einreichungsunterlagen, nach `diesem Formular

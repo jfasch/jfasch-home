@@ -10,6 +10,7 @@ A trainer *uses* training material.
    :maxdepth: 1
 
    agenda
+   agenda-subtract-known
    duration
 
 *More to come*
