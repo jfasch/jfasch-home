@@ -33,12 +33,12 @@ allenProjektpartner zu unterschreiben ist, verbindlich vereinbart.**
 2.1 Projektname
 ...............
 
-Slides for the Poor
+OpenTraining
 
 2.2 Projekt-Untertitel
 ......................
 
-Contemporary Training Material Management
+Contemporary Open Source Training Material and Material Management
 
 2.3 Allgemeinverständliche KURZbeschreibung des Projektes
 .........................................................
@@ -49,28 +49,26 @@ Contemporary Training Material Management
 
 (300 Zeichen)
 
-Ich lebe einerseits von kleineren und größeren Projekten, und
-andererseits von Schulungen, die ich hauptsächlich für Unternehmen
-halte.
+Ich, Einzelunternehmer, lebe einerseits von kleineren und größeren
+Projekten, und andererseits von Schulungen, die ich hauptsächlich für
+Unternehmen halte.
 
-Schulungen rücken immer mehr ins Zentrum der Aktivität, und das
-kundenspezifische Aufbereiten der Unterlagen und deren zeitgemäße
-Präsentation, und die Nachbearbeitung verlangen nach einer
-zufriedenstellenden Lösung.
-
+Schulungen bringen Schulungsunterlagen mit, deren Wartbarkeit und
+Nichtverfügbarkeit am Internet ein Problem darstellt.
+ 
 **Für wen ist es?**
 
 **Wer wird die Projektergebnisse nutzen?**
 
 (400 Zeichen)
 
-* **Endbenutzer**. Der Kursverlauf ist oft sehr dynamisch. Vorab wird
-  eine Agenda erstellt, die im Kurs als roter Faden dient. Im Kurs
-  wird im Allgemeinen davon abgewichen. Beides - die Agenda und die
-  Nachlese - sind einfach zu erstellen, die Teilnehmer bekommen also
-  kein lieblos hingehudeltes Material.
-* **Trainer**. Modulare, strukturierte, leichtgewichtige und zeitgemäß
-  im Browser zu präsentierende Kursunterlagen haben die wenigsten.
+* **Trainer** stellen den Kursverlauf aus vorhandenem Material
+  zusammen und bereiten die Kursergebnisse nach.
+* **Editoren** kreieren und warten das Kursmaterial.
+* **Endbenutzer** konsumieren den Kurs und das Kursmaterial.
+
+Siehe auch
+https://www.faschingbauer.me/about/site/opentraining/usecases/index.html
 
 **Was ist es?**
 
@@ -78,15 +76,19 @@ zufriedenstellenden Lösung.
 
 (500 Zeichen)
 
-* **Binärformate**. Präsentationsformate wie LibreOffice oder
-  Powerpoint sind im Wesentlichen binär; eine Versionierung mit zum
-  Beispiel Git ist schwierig.
-* **Modularisierung**. Einen Kurs möchte man aus Einzelthemen
-  handhabbarer Länge (15-30 min) zusammenstellen.
-* **Metadaten**. Definierte Abhängigkeiten zwischen Themen sind
-  essentiell; Gruppierung von Themen ist hilfreich.
-* **Lightweight Content Management**. Content Management Lösungen sind
-  zu schwerfällig (Datenbank, Webserver)
+* Wartbarkeit von Schulungsunterlagen
+
+  * Hierarchische Gruppierung von Einzelthemen ist zuwenig: Themen
+    bauen aufeinander auf.
+  * Explizite Abhängigkeitsbeziehungen fehlen, was die Wartbarkeit
+    extrem verringert.
+
+* Zusammenarbeit unter Trainern
+
+  * Fehlende Aggregierbarkeit bzw. Referenzierbarkeit von
+    Fremdunterlagen (analog zu Libraries in Software)
+  * Einer muss anfangen, zu geben ("Open Trainingsunterlagen", bei
+    Source/Software gings ja auch)
 
 **Wie funktioniert es?**
 
@@ -95,19 +97,15 @@ Projektergebnis?**
 
 (400 Zeichen)
 
-`Sphinx <https://www.sphinx-doc.org/>`__ ist ein
-Dokumentationsgenerator. Ursprünglich entwickelt, um die
-`Dokumentation der Programmiersprache Python
-<https://docs.python.org/3/>`__ zu erstellen, wird Sphinx heute von
-einer Vielzahl von Open Source Projekten verwendet.
+"OpenTraining"
+(https://www.faschingbauer.me/about/site/opentraining/index.html):
 
-Eine Sammlung von *Sphinx-Extensions* implementiert die Lösungen für
-oben genannte Probleme,
-
-* Einzelthemen mit Verlinkung und Gruppierung
-* Visuelle Aufbereitung der Beziehungen
-* Generierung von Kursagenden und Nachlesen
-* Präsentation im Web-Brower
+* Basiert auf `Sphinx <https://www.sphinx-doc.org/>`__, einem
+  populären Open Source Dokumentationstool, das als Static Website
+  Generator verwendet wird
+* Gestaltet als Sphinx Extension (der eigentliche Kern des Projektes)
+* Begleitet von meinem eigenen Schulungsmaterial, das damit Open
+  Source geht, quasi als Spin Off
 
 2.4 Anschlussförderung
 ......................
@@ -125,25 +123,25 @@ klaren Mehrwert hat.**
 * Internet-Technologie/-Infrastruktur
 * Soziales/Gesellschaft
 * (Umwelt)
-* (Wirtschaftliche und/oder wissenschaftliche Kooperationen)
+* Wirtschaftliche und/oder wissenschaftliche Kooperationen
 * (Regionalpolitik)
 * (Sonstige)
 
 **Mehrwert für Internet-Technologie/-Infrastruktur**
 
-*Welchen konkreten Mehrwert erreichen Sie mit Ihrem Projekt für den
-Bereich Internet-Technologie/-Infrastruktur?*
-
-Bessere Unterlagen vor allem in Internet und Programmiersprachen, weil
-das ist die Trainer-Zielgruppe. Blah jjjj
+Web-basiertes Framework für Schulungsunterlagen jeglicher Art, das
+konsistenzgechecktes Crossreferencing von Fremdunterlagen über
+Webseiten hinweg ermöglicht.
 
 **Mehrwert soziale/gesellschaftliche Aspekte**
 
-*Welchen konkreten Mehrwert erreichen Sie mit Ihrem Projekt für den
-Bereich Soziales/Gesellschaft?*
+Öffentliche Verfügbarkeit von Trainingsunterlagen bzw. die
+Erleichterung, diese öffentlich zu machen.
 
-Nicht verschenken, sondern Zusammenarbeit zwischen Trainern. Tugend
-geht der Menschheit langsam verloren. Blah jjj
+**Mehrwert Wirtschaftliche und/oder wissenschaftliche Kooperationen**
+
+Eine Community von TrainerInnenn kann mehr Wert schöpfen als
+TrainerInnenn, die gegeneinander arbeiten.
 
 4. ZIELGRUPPE UND PROJEKTZIEL
 -----------------------------
@@ -194,52 +192,118 @@ Ihrem Projekt lösen wollen.**
    * Bestimmte gesellschaftliche Position
    * u.v.m.
 
-* Zielgruppen jjj N mal ...
+* Zielgruppen
 
   * Zielgruppe des Projektes
   
-    * Zielgruppenname
-    * Zielgruppentyp; eins von:
-  
-      * Organisationen
-      * Open Source Community
-      * Privatpersonen
-  
+    * Trainer
+    * Zielgruppentyp: Organisationen
     * Beschreibung/Abgrenzung (350 Zeichen)
   
-      Beschreiben Sie bitte Ihre Zielgruppe möglichst konkret. Auch wenn
-      Sie im ersten Augenblick denken, die Zielgruppe wäre ganz einfach
-      "die Allgemeinheit/die Gesellschaft, finden Sie bei genauer
-      Analyse sicher Abgrenzungen bzw. Gruppen, die mehr betroffen sind
-      als andere. Siehe dazu auch am Beginn Punkt 4 unter "Hilfestellung
-      Abgrenzung Organisationen/Privatpersonen".
-  
+      * Bereitet eine Schulung vor: erstellt Agenda lt. Zielvorgaben des
+        Kunden, basierend auf existierendem Material
+      * Führt die Schulung durch, jederzeit den Überblick behaltend
+      * Bereitet die Schulung nach
+      
+        * Liste der behandelten Themen
+        * Liste von Fragen/Antworten
+        * Weiterführende Info/Links
+        
     * Erhebliches Problem/wesentliches Bedürfnis der Zielgruppe (350
       Zeichen)
   
-      Ihr Projektziel sollte sein, für Ihre Zielgruppe ein erhebliches
-      Problem lösen bzw. ein wesentliches Bedürfnis zu
-      erfüllen. Beschreiben Sie dieses Problem bzw. Bedürfnis Ihrer
-      Zielgruppe möglichst anschaulich.
-  
-    * Abschätzung der Zielgruppengröße (350 Zeichen)
-  
-      Wie viele Personen Ihrer Zielgruppe leben in Österreich und der EU
-      und wären theoretisch mögliche Nutzer_innen Ihrer
-      Projektergebnisse? Wie viel Prozent davon könnten Sie nach Ihrer
-      Einschätzung realistisch direkt bzw. indirekt erreichen? Falls für
-      Sie relevant dieselben Überlegungen für die deutsschsprachigen
-      Länder, die EU oder global.
+      * Schulungsagenden zu erstellen ist zeitaufwändig und
+        fehlerträchtig (wird aber vom Kunden erwartet)
+      * Während der Schulung auf Fragen einzugehen und den geplanten
+        Kursverlauf zu verlassen birgt Chaos
+      * Den TeilnehmerInnen ein übersichtliche Nachbearbeitung zu
+        hinterlassen ist zeitaufwändig und fehlerträchtig (wird aber
+        vom Kunden erwartet)
 
+    * Abschätzung der Zielgruppengröße (350 Zeichen)
+
+      Trainer mit technisch-affinem Background (inklusive FH/Uni), die
+      von dem Problem betroffen sind:
+
+      * Österreich >= 1000
+      * EU >= 20000
+      
+      Da die Erkennung des Problems etwas Abstand erfordert
+      (vgl. "Frosch im Wasserglas"), und selbst dann die Umstellung
+      zusätzlichen Aufwand bedeutet, werden im besten Fall 10% den
+      Einsatz in Erwägung ziehen.
 
     * Wie haben Sie von den angegebenen erheblichen
       Problemen/wesentlichen Bedürfnissen ihrer Zielgruppe(n) Kenntnis
       erlangt?
 
-      jjj Checklist:
-
-      * Eigene Überlegungen
       * Bin selbst Mitglied der Zielgruppe
+
+  * Zielgruppe des Projektes
+  
+    * Editor
+    * Zielgruppentyp: Organisationen
+    * Beschreibung/Abgrenzung (350 Zeichen)
+
+      * Verfasst Schulungsmaterial
+      * Oft identisch mit obiger Zielgruppe "Trainer"
+      * Behebt Inkonsistenzen
+      * Baut neues Material auf existierendem auf
+        
+    * Erhebliches Problem/wesentliches Bedürfnis der Zielgruppe (350
+      Zeichen)
+
+      * Verliert den Überblick: Aufbaubeziehungen (Thema "A" verlangt
+        "B" und "C" als Grundlage) fehlen
+      * Folienmaterial wird meist in Powerpoint oder anderen
+        Binär/Proprietär-Formaten verfasst, was Versionskontrolle
+        praktisch unmöglich macht
+      * Andere Artefakttypen (Screencasts, Livehacking, ...) ist Stückwerk
+      
+    * Abschätzung der Zielgruppengröße (350 Zeichen)
+      
+      Für gewöhnlich verfasst der/die TrainerIn das Material selbst,
+      ist also selbst Editor; siehe oben unter Zielgruppe "Trainer".
+      
+      Das Projekt zielt darauf ab, Fremdunterlagen transparent
+      wiederzuverwenden (Open Schulungsunterlagen), sodass diese 1:1
+      Beziehung aufgebrochen werden kann. Schwer abzuschätzen.
+
+    * Wie haben Sie von den angegebenen erheblichen
+      Problemen/wesentlichen Bedürfnissen ihrer Zielgruppe(n) Kenntnis
+      erlangt?
+
+      * Bin selbst Mitglied der Zielgruppe
+
+  * Zielgruppe des Projektes
+  
+    * Endbenutzer
+    * Zielgruppentyp: Organisationen
+    * Beschreibung/Abgrenzung (350 Zeichen)
+
+      * Bestimmt die Zielvorgaben - die Themen, auf die der Kurs
+        abzielt (Grundlagen, der Weg dorthin, müssen vom Trainer
+        bestimmt werden)
+      * Unterstützt den Trainer bei der Kursführung: fragt bei
+	Unklarheiten, weist auf etwaige verwandte Themen hin.
+
+    * Erhebliches Problem/wesentliches Bedürfnis der Zielgruppe (350
+      Zeichen)
+
+      * Erwartet ein plausible Agenda
+      * Erwartet eine realistische Abschätzung bzgl. der Kursdauer
+      * Erwartet einen strukturierten, aber nicht langweiligen, Kurs
+      * Erwartet eine den Tatsachen entsprechende Nachbearbeitung
+
+    * Abschätzung der Zielgruppengröße (350 Zeichen)
+
+      Geht wahrscheinlich in die Hunderttausende, die allerdings
+      keinen Einfluss auf die Wahl des Kursmaterials haben.
+      
+    * Wie haben Sie von den angegebenen erheblichen
+      Problemen/wesentlichen Bedürfnissen ihrer Zielgruppe(n) Kenntnis
+      erlangt?
+
       * Gespräche mit Betroffenen aus der Zielgruppe
 
 5. LÖSUNG
@@ -248,10 +312,33 @@ Ihrem Projekt lösen wollen.**
 5.1 Beschreibung der Problemlösung
 ..................................
 
-jjj N mal ...
+* Zielgruppe: Trainer
 
-* Zielgruppenname (von oben)
-* Beschreibung (400 Zeichen)
+  * Beschreibung (400 Zeichen)
+
+    * Assoziieren von Metadaten mit Themen
+    
+      * Aufbaubeziehungen: Thema "A" setzt Themen "B" und "C" voraus
+      * "See Also" Beziehungen: Zu Thema "X" passt ganz gut auch Thema "Y"
+        und Thema "Z"
+    
+    * Algorithmen
+    
+      * Automatisches Berechnen der Agenda aus den Zielvorgaben des
+        Endbenutzers
+      * Semiautomatische Kursnavigation
+      * Semiautomatische Nachbereitung
+    
+* Zielgruppe: Editor
+
+  * Beschreibung (400 Zeichen)
+  
+    * Plaintext-Formate für die meistens Artefakte (Slideshow, Text) zur
+      Erleichterung der Versionskontrolle
+    * Erleichterung der Restrukturierung durch explizite Aufbaubeziehungen
+      (s.o.)
+    * Konsistente Referenzierung von Fremdmaterial aus der Community durch
+      externe Aufbaubeziehungen
 
 5.2 Wesentliche Elemente eines nachhaltigen Impact NACH netidee Projektende
 ...........................................................................
@@ -277,7 +364,21 @@ Performanceverbesserungen, ...**
 
 **Beschreibung und Angabe der wesentlichen Quellen (Websites, Literatur...)**
 
-jjj 500 Zeichen
+(500 Zeichen)
+
+* Lightweight/Plaintext Formate
+
+  * Markdown https://daringfireball.net/projects/markdown/
+    (Default-Format bei Github)
+  * reStructuredText https://docutils.sourceforge.io/rst.html (in
+    diesem Projekt verwendet; Default-Format in Sphinx)
+
+* Static Site Generatoren: https://www.staticgen.com/
+* Verschiedene Learning Management Systeme
+
+  * https://moodle.org/?lang=de
+  * https://www.schoology.com/
+  * https://eduongo.com/
 
 6.2 Welche andere Lösungen/Vorhaben zu den genannten Problemen gibt es schon?
 .............................................................................
@@ -290,21 +391,34 @@ angegebenen Probleme/Projektziele?**
 und beschreiben Sie die Stärken und Schwächen der
 Lösungen /konkurrierenden Konzepte relevanter Anbieter/Projekte?**
 
-jjj 1200 Zeichen
+Das Ziel des Projekts ist nicht, eine allumfassende Lösung für eh
+alles zu sein. Vielmehr bietet es Hilfestellung beim Verfassen von
+Einzelthemen, das Kernthema aber ist und bleibt "Aufbaubeziehungen
+zwischen Einzelthemen".
 
-* https://github.com/webslides/WebSlides,
-  https://t3n.de/news/html-statt-powerpoint-webslides-786214/,
-  https://www.youtube.com/watch?v=uE1m21Umn0s
-* https://revealjs.com/
+Dem Benutzer werden keine Vorgaben gemacht. Existiert zum Beispiel ein
+Wald an Powerpoint Slideshows, ist es sehr wahrscheinlich, dass das
+Fehlen von Beziehungen ein Problem darstellt.
 
-  * Sphinx: https://pypi.org/project/sphinx-revealjs/
+Was OpenTraining beisteuert, sind eben diese Beziehungen zwischen
+Themen, die auch Site-übergreifend definiert werden können. Ein
+Ansatz, den kein mir bekanntes System verfolgt, der aber essentiell
+für die Gesundheit der Unterlagen ist. In diesem Licht ist das
+Folgende zu lesen.
 
-* Reports:
+* Beziehungen zwischen Themen
 
-  * https://opensource.com/article/18/5/markdown-slide-generators
-  * https://github.com/slideshow-s9/awesome-slideshows/blob/master/README.md
-  * Projektidee (oder so):
-    http://docideas.mietus.nl/en/latest/Blog/WebSlides/index.html
+  Moodle https://moodle.org/. Einige Plugins helfen bei der Verwaltung
+  von Themen. Sehr lieblos, als halbherziges Add-On statt
+  zentral. Recherche-Ergebnis: **kann niemand**.
+
+* Web-basierte Slideshow Formate
+
+  * S5
+    https://docutils.sourceforge.io/docs/user/slide-shows.html. Integration
+    ist Teil des Projekts.
+  * RevealJS https://revealjs.com/. Optional.
+  * WebSlides https://webslides.tv/. Optional.
 
 7. ALLEINSTELLUNGSMERKMAL
 -------------------------
@@ -315,16 +429,19 @@ vorteilhaft von anderen unterscheidet?**
 
 (600 Zeichen)
 
-* Die Unterlagen sind Native Web Citizens
-* Die Unterlagen sind in einem offenen Format verfasst
-  (`reStructuredText
-  <https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html>`__,
-  beziehungsweise `Sphinx <https://www.sphinx-doc.org/en/master/>`__)
-* Die Erstellung und Wartung ist sehr leichtgewichtig; man braucht
-  einen Texteditor, ein Filesystem, und etwas Software. Das macht das
-  System ideal für IT-affine Trainer.
-* Die Software (Sphinx-Extensions) ist in Python geschrieben, was ihre
-  Weiterentwicklung attraktiv für die Open Source Community macht.
+*Das Kernfeature des Projektes ist das Inbeziehungsetzen von
+Einzelthemen*, was auch dessen Alleinstellungsmerkmal ist.
+
+Systeme wie zum Beispiel Moodle versagen in der Implementierung
+solcher Features, indem sie den Fokus auf die Verwaltung des
+Schulbetriebes legen.
+
+Ferner haben diese Systeme schwere Abhängigkeiten wie fette
+Datenbanken und Webserver im Hintergrund, wodurch sich redaktionelle
+Arbeit unmöglich offline am Laptop im Zug erledigen lässt.
+
+OpenTraining hat diese Einschränkung nicht - der Output *kann* mittels
+Webserver geserved werden. **Muss nicht**.
 
 8. PROJEKTERGEBNISSE
 --------------------
@@ -379,13 +496,59 @@ jjj N mal:
 
   (im Online Formular ist ein Dropdown von Lizenzen)
 
+* Projektergebnis: OpenTraining Git Repository
 
-**jjj**
+  * Projektergebnistyp: Software-Modul
+  * Haupteigenschaften/Funktionalität (350 Zeichen)
 
-* Git Repo
-* PyPI Package
-* Meine Unterlagen als Beispiel (man muss sie nicht Open Source
-  machen)
+    Sourcecode der Sphinx Extension ``OpenTraining``, bestehend aus
+    
+    * Sphinx-unabhängigem unitgetestetem Core Code
+    * Einer Reihe von Sphinx "Directives", mit denen die verschiedenen
+      generierten Artefakte wie zum Beispiel eine Kursagenda, oder
+      verschiedene Graphen, in die Seiten embedded werden.
+
+  * Open Source Lizenz: GPL 3.0
+
+* Projektergebnis: OpenTraining PyPI Package
+
+  * Projektergebnistyp: Software-Modul
+  * Haupteigenschaften/Funktionalität (350 Zeichen)
+
+    Von PyPI installierbares Python-Paket, generiert aus dem
+    Opentraining Source Repository.
+
+  * Open Source Lizenz: GPL 3.0
+
+* Projektergebnis: OpenTraining Dokumentation (ReadTheDocs)
+
+  * Projektergebnistyp: Dokumentation
+  * Haupteigenschaften/Funktionalität (350 Zeichen)
+
+    Auf ``readthedocs.org`` gehostete Dokumentation, generiert aus dem
+    Opentraining Source Repository.
+
+  * Open Source Lizenz: GPL 3.0
+
+* Projektergebnis: Python-Training (Git Repository)
+
+  * Projektergebnistyp: Andere/Unterlagen
+  * Haupteigenschaften/Funktionalität (350 Zeichen)
+
+    Unterlagen zu einem Python-Training. Konvertiert aus Latex/Beamer
+    nach OpenTraining, verfügbar als Git Repository.
+
+  * Open Source Lizenz: CC-BY-SA
+
+* Projektergebnis: Python-Training (ReadTheDocs)
+
+  * Projektergebnistyp: Andere/Unterlagen
+  * Haupteigenschaften/Funktionalität (350 Zeichen)
+
+    Auf ``readthedocs.org`` gehostete Schulungsunterlagen, generiert
+    aus dem obigen Git Repository.
+
+  * Open Source Lizenz: CC-BY-SA
 
 8.2 Erforderliche Lizenzen Dritter
 ..................................

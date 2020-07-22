@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-OpenTraining
-============
+Video Screenplay
+================
 
 .. sidebar:: Contents
    
@@ -46,7 +46,7 @@ Walk-Through
     :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`. Multiple
     artifacts: slides *and* livehacking screenplay.
 
-* Show :doc:`complete Python training <../usecases/book>`
+* Show :doc:`complete Python training <../usecases/menu>`
 
 Open Ends
 ---------
