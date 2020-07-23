@@ -472,30 +472,6 @@ Förderzusage.**
 * DOKUMENTATION EXTERNKOMMUNIKATION zur Erreichung Sichtbarkeit
   /Nachhaltigkeit* (CC-BY / CC-BY-SA)
 
-jjj N mal:
-
-* Projektergebnistyp, eins von
-
-  * Software-Client
-  * Software-Server
-  * Software-Cloud
-  * Software-Modul
-  * Mobile App
-  * Open Hardware
-  * Open Data
-  * Studie
-  * Konzept
-  * Dokumentation
-  * Andere ...
-
-* Haupteigenschaften/Funktionalität, 350 Zeichen
-* Open Source Lizenz
-
-  gemäß Vorgaben im Kapitel acht der `netidee Förderbedingungen
-  <https://www.netidee.at/sites/default/files/2020-03/Call15_F%C3%B6rderbedingungen.pdf>`__
-
-  (im Online Formular ist ein Dropdown von Lizenzen)
-
 * Projektergebnis: OpenTraining Git Repository
 
   * Projektergebnistyp: Software-Modul
@@ -530,7 +506,7 @@ jjj N mal:
 
   * Open Source Lizenz: GPL 3.0
 
-* Projektergebnis: Python-Training (Git Repository)
+* Projektergebnis: Trainingsunterlagen "Python" (Git Repository)
 
   * Projektergebnistyp: Andere/Unterlagen
   * Haupteigenschaften/Funktionalität (350 Zeichen)
@@ -540,7 +516,29 @@ jjj N mal:
 
   * Open Source Lizenz: CC-BY-SA
 
-* Projektergebnis: Python-Training (ReadTheDocs)
+* Projektergebnis: Trainingsunterlagen "Python" (ReadTheDocs)
+
+  * Projektergebnistyp: Andere/Unterlagen
+  * Haupteigenschaften/Funktionalität (350 Zeichen)
+
+    Auf ``readthedocs.org`` gehostete Schulungsunterlagen, generiert
+    aus dem obigen Git Repository.
+
+  * Open Source Lizenz: CC-BY-SA
+
+* Projektergebnis: Trainingsunterlagen "Systemnahe Programmierung"
+  (Git Repository)
+
+  * Projektergebnistyp: Andere/Unterlagen
+  * Haupteigenschaften/Funktionalität (350 Zeichen)
+
+    Unterlagen zum Training "Systemnahe Programmierung". Konvertiert
+    aus Latex/Beamer nach OpenTraining, verfügbar als Git Repository.
+
+  * Open Source Lizenz: CC-BY-SA
+
+* Projektergebnis: Trainingsunterlagen "Systemnahe Programmierung"
+  (ReadTheDocs)
 
   * Projektergebnistyp: Andere/Unterlagen
   * Haupteigenschaften/Funktionalität (350 Zeichen)
@@ -564,11 +562,21 @@ jjj N mal:
 **Ihre bisherigen bzw. aktuellen Aktivitäten im Bereich/im Umfeld
 ihres Projektantrages.**
 
-jjj 300 Zeichen
+(300 Zeichen)
 
-* Grundlegende Sphinx Extensions vorhanden
-* Python Trainingsunterlagen nach reStructuredText transkribiert
-* Neue Unterlagen werden nur mehr in reStructuredText erstellt
+**Bisher**
+
+* Sphinx Extension Infrastruktur
+* Softwarebasis, grundlegende "Directives"
+* Semiprofessionelle Web-Visualisierung
+* Konvertierung des Python Trainings
+
+**Aktuell**
+
+* Implementation der Trainer-Usecases
+
+Aktueller Stand siehe
+https://www.faschingbauer.me/about/site/opentraining/plan/plan.html
 
 9.2 Angaben zur fachlichen Eignung der MitarbeiterInnen im Projektkernteam
 ..........................................................................
@@ -577,12 +585,52 @@ jjj 300 Zeichen
 Veröffentlichungen (Bücher, Fachartikel, Patente, Vorträge) auf dem
 Gebiet des Projektes, die den Projektinhalt verdeutlichen.**
 
-jjj 1000 Zeichen
+(1000 Zeichen)
+
+* Jörg Faschingbauer
+
+  * Geboren am 19.6.1966 in Graz
+  * Diplom aus Technischer Mathematik an der TU Graz/IICM, 1993
+  * Universitätsassistent ebendort, bis 1998
+  * Hyperwave in Graz, bis 2001
+  
+    * Programmierung
+    * Releasemanagement
+    * Teamleitung
+  
+  * Salomon in Friesach bei Graz, bis 2006
+  
+    * Programmierung
+    * Architektur
+    * Teamleitung
+  
+  * Atronic in Unterpremstätten bei Graz, bis 2010.
+  
+    * Programmierung
+    * Softwarearchitektur
+    * Linuxexperte
+  
+  * Seit April 2010 selbstständig; Softwareprojekte und Schulungen
+  * AVL in Graz, 2018/19
+  
+    * Linuxexperte
+    * Architekt
+
+* Stefan Walkner
+
+  * Geboren am 28.2.1983 in Hallein
+  * Master in Computer Science, Uni Salzburg, 2012
+  * Management Consultancy Isamberth in Adnet, 2000-2002
+  * Selbstständig, diverse Projekte, 2005-2007
+  * Entwicklungsleiter YLog GmbH in Dobl, 2007-2013
+  * Software Architekt, Nextsense GmbH in Graz, ab 2016
+  * Selbstständig ab 2015
+
 
 9.3 Erfahrung des/der vorgesehenen ProjektleiterIn
 ..................................................
 
-jjj 400 Zeichen
+(400 Zeichen)
 
 * 30 Jahre Programmiererfahrung (hauptsächlich C, C++, Python, Bash)
 * 20 davon als Teamleiter, technischer Leiter, Releasemanager
@@ -603,18 +651,21 @@ interessieren uns nicht. Bitte stellen Sie sicher, dass das Video bis
 mindestens vier Monate nach Einreichschluss uneingeschränkt aufrufbar
 ist.**
 
-jjj Link zum Video
+https://youtu.be/HObyB1ZukDY
 
 9.5 Risiken
 ...........
 
 **Welche Projektrisiken sehen Sie?**
 
-jjj 300 Zeichen
+(300 Zeichen)
 
-* *Fehlende Akzeptanz*. Trainerkollegen haben beispielsweise ein.. 
-  ähnlich großes Repertoire an Unterlagen in unterschiedlichen, meist
-  proprietären, Formaten.
+* *Zu wenige Personen sind von dem Problem betroffen*. Viele Trainer
+  pflegen einen frontalen Vortragsstil.
+* *Zu starker Paradigmenwechsel*. Der Wechsel von jahrelang gewohnten
+  Verfahrensweisen ist zu abrupt.
+* *Zu großer Aufwand*. Monolithische Unterlagen in Einzelthemen zu
+  zerhacken ist Aufwand.
 
 9.6 Erfolgskriterien am netidee-Projektende
 ...........................................
@@ -622,13 +673,39 @@ jjj 300 Zeichen
 **Mit welchen Erfolgskriterien bewerten/messen Sie die Zielerreichung
 am Ende des netidee-Projektes?**
 
-jjj N mal:
+* Kriterium 1
 
-* Beschreibung
-* minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
-  einen positiven Projekterfolg jedenfalls erreicht sein müssen.)
-* ausgezeichneter Erfolg bei (Kriterien für den angestrebten
-  ausgezeichneten Projekterfolg)
+  * *Beschreibung*
+
+    Arbeitserleichterung
+    
+  * *minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
+    einen positiven Projekterfolg jedenfalls erreicht sein müssen.)*
+
+    Die Trainer- und Editor-Usecases sind abgedeckt.
+    
+  * *ausgezeichneter Erfolg bei (Kriterien für den angestrebten
+    ausgezeichneten Projekterfolg)*
+
+    Kunden anerkennen explizit den gesteigerten Wert der Unterlagen
+    und des Kurses.
+
+* Kriterium 2
+
+  * *Beschreibung*
+
+    Open Source Effekt
+    
+  * *minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
+    einen positiven Projekterfolg jedenfalls erreicht sein müssen.)*
+
+    Mindestens ein/e weiter/e Trainer/in bekundet Interesse an meinen
+    Unterlagen.
+    
+  * *ausgezeichneter Erfolg bei (Kriterien für den angestrebten
+    ausgezeichneten Projekterfolg)*
+
+    In Medien wird über "Open Source Schulungsunterlagen" berichtet.
 
 9.7 Angestrebter Impact 3 Jahre nach netidee-Projektende
 ........................................................
@@ -636,13 +713,40 @@ jjj N mal:
 **Mit welchen Erfolgskriterien bewerten/messen Sie die Zielerreichung
 drei Jahre nach netidee-Projektende?**
 
-jjj N mal:
+* Kriterium 1
 
-* Beschreibung
-* ausgezeichneter Erfolg bei (Kriterien für den angestrebten
-  ausgezeichneten Projekterfolg)
+  * *Beschreibung*
 
-jjj
+    Migration nach OpenTraining
+    
+  * *minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
+    einen positiven Projekterfolg jedenfalls erreicht sein müssen.)*
+
+    Ein/e weitere/r Trainer/in migriert Trainingsunterlagen nach
+    OpenTraining.
+    
+  * *ausgezeichneter Erfolg bei (Kriterien für den angestrebten
+    ausgezeichneten Projekterfolg)*
+
+    Mehr als zehn tun das.
+
+* Kriterium 2
+
+  * *Beschreibung*
+
+    Trainer Community entsteht
+    
+  * *minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
+    einen positiven Projekterfolg jedenfalls erreicht sein müssen.)*
+
+    Ein/e weitere/r Trainer/in verwendet OpenTraining und baut Themen
+    auf meinen auf.
+    
+  * *ausgezeichneter Erfolg bei (Kriterien für den angestrebten
+    ausgezeichneten Projekterfolg)*
+
+    Mindestens zwei verwenden es, um untereinander ohne mein Zutun
+    zusammenzuarbeiten.
 
 10. UMSETZUNG (EINJÄHRIGES NETIDEE PROJEKT)
 -------------------------------------------
@@ -653,7 +757,11 @@ jjj
 **Kooperationspartner_innen, Dienstleister_innen, sonstige
 Mitwirkende, Zielgruppenvertreter_innen,...**
 
-jjj 400 Zeichen
+(400 Zeichen)
+
+* Stefan Walkner (CV siehe oben) für die Web-Programmierung und
+  diverse andere Arbeiten
+* Werbeagentur Faschingbauer & Schaar für Logo(s) und Webdesign
 
 10.2 Arbeitsschwerpunkte
 ........................
@@ -661,7 +769,11 @@ jjj 400 Zeichen
 **Wofür sollen Arbeitsstunden/Geld im Projekt vor allem eingesetzt
 werden?**
 
-jjj 600 Zeichen
+(600 Zeichen)
+
+* Basisarbeit: Programmierung an Workflows und Datenstrukturen
+* Web-Programmierung und für die zeitgemäße Darstellung und
+  Interaktion
 
 10.3 Wesentliche Ressourcen
 ...........................
@@ -670,7 +782,23 @@ jjj 600 Zeichen
 welche Sachressourcen werden benötigt? Was muss ggf. extern zugekauft
 werden?**
 
-jjj 600 Zeichen
+(600 Zeichen)
+
+* Personal
+
+  * Projektleitung und Backendprogrammierung
+
+    * Programmiersprache Python (Sphinx) 
+    * Jörg Faschingbauer
+    * ca. 200 Stunden
+
+  * Webprogrammierung
+
+    * Programmiersprache Javascript (incl. CSS, HTML)
+    * Stefan Walkner
+    * ca. 150 Stunden
+
+* Kreativarbeit (Logo, Design) wird extern zugekauft
 
 10.4 Nutzer_innen-Kommunikationskanäle
 .......................................
@@ -678,7 +806,15 @@ jjj 600 Zeichen
 **Wie erreichen Sie schon während des Projektes die Personen der
 Zielgruppe?**
 
-jjj 400 Zeichen
+(400 Zeichen)
+
+* *Persönliche Kontakte*. Freunde und Bekannte sind ebenfalls als
+  Trainer tätig - sie haben mich ermutigt, das Projekt überhaupt erst
+  zu starten.
+* *Online-Repräsentation*
+
+  * Posts auf meiner Firmen-Facebookseite
+  * Posts in relevanten Foren auf LinkedIn
 
 11. PROJEKTTERMINE
 ------------------
@@ -693,12 +829,8 @@ Projektstart
 des Fördervertrages im Oktober/November). Die geplante Projektdauer
 sollte ein Jahr nicht wesentlich überschreiten.**
 
-jjj von bis
-
-Projektende
-,,,,,,,,,,,
-
-jjj von bis
+* Von: November 2020
+* Bis: August 2021
 
 12. KOSTEN UND FINANZIERUNG
 ---------------------------
@@ -732,13 +864,21 @@ Förderung festgelegt wird, erhöhen.**
 **Bei Anträgen, die HTL-Diplomarbeiten zum Inhalt haben, werden
 Personalkosten nicht gefördert.**
 
-jjj Stefan?
+* Mitarbeiter 1
 
-* Name
-* Funktion
-* Stundensatz
-* Stunden
-* Betrag
+  * Name: Jörg Faschingbauer
+  * Funktion: Projektleitung, Backendprogrammierung
+  * Stundensatz: 40€
+  * Stunden: 200
+  * Betrag: 8000€
+
+* Mitarbeiter 2
+
+  * Name: Stefan Walkner
+  * Funktion: Web-/Frontendprogrammierung
+  * Stundensatz: 30€
+  * Stunden: 150
+  * Betrag: 4500€
 
 Sonstige Kosten
 ,,,,,,,,,,,,,,,
@@ -751,22 +891,18 @@ gefördert. Die ggf. auf einer Rechnung enthaltene Umsatzsteuer darf in
 der netidee Kostenabrechnung nur dann berücksichtigt werden, wenn
 die_der Fördernehmer_in nicht vorsteuerabzugsberechtigt ist.**
 
-jjj N mal:
-
-* Konkrete Leistung inkl. Menge/Anzahl, Kosten
-
-(wird leer bleiben)
+Kreativarbeit (Logo, Design): 1000€
 
 Gesamtkosten in €
 ,,,,,,,,,,,,,,,,,
 
-jjj
+13500€
 
 12.2 Wir beantragen folgende netidee-Förderung
 ..............................................
 
-* jjj wieviel jetzt?
-* jjj Kostendifferenz (€)
+* Beantragt: 13500€
+* Differenz: 0€
 
 13.3 Die restlichen Kosten werden finanziert durch
 ..................................................
@@ -780,11 +916,6 @@ Einzelkosten).**
 
 **ACHTUNG: Wenn die Gesamtprojektkosten höher sind als die beantragte
 Förderung, ist dieser Punkt verpflichtend auszufüllen.**
-
-jjj N mal:
-
-* Beschreibung
-* Betrag in €
 
 (wird leer bleiben)
 
@@ -809,16 +940,14 @@ jjj N mal:
   Stipendium) imlaufenden netidee Call ein oder bin an weiteren
   Anträgen beteiligt.)
 
-jjj
-
 14.2 Nutzung der WhatAVenture-Plattform
 .......................................
 
 **Ich habe im Zuge der Projektantragsstellung die
 WhatAVenture-Plattform genutzt**
 
-* Ja
-* (Nein)
+* (Ja)
+* Nein
 
 14.3 Das eingereichte Projekt ist Teil einer schulischen Verpflichtung (z.B. HTL Diplomarbeit)
 ..............................................................................................
@@ -829,20 +958,8 @@ WhatAVenture-Plattform genutzt**
 14.4 Wie haben Sie von der netidee erfahren? (Mehrfachnennungen möglich)
 ........................................................................
 
-* über die Medien
-* über eigene Recherche
-* über Uni/FH
-* über Freunde/Bekannte/eigenes Netzwerk
-* habe bereits früher ein netidee Projekt eingereicht
-* über netidee Ideenwettbewerb
-* über netidee Open Source Camp
-* über Austrian Startups
-* über WhatAVenture
-* über Werbung auf Facebook bzw. Google
-* über ars electronica
-* Andere...
-
-jjj
+* Andere...: Rundschreiben der Open Source Experts Group der
+  Wirtschaftkammer
 
 16. DATENSCHUTZ
 ---------------
