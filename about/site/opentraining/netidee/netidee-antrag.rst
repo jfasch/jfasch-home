@@ -97,15 +97,14 @@ Projektergebnis?**
 
 (400 Zeichen)
 
-"OpenTraining"
-(https://www.faschingbauer.me/about/site/opentraining/index.html):
-
 * Basiert auf `Sphinx <https://www.sphinx-doc.org/>`__, einem
   populären Open Source Dokumentationstool, das als Static Website
   Generator verwendet wird
 * Gestaltet als Sphinx Extension (der eigentliche Kern des Projektes)
 * Begleitet von meinem eigenen Schulungsmaterial, das damit Open
   Source geht, quasi als Spin Off
+
+Siehe https://www.faschingbauer.me/about/site/opentraining/index.html
 
 2.4 Anschlussförderung
 ......................
@@ -129,18 +128,22 @@ klaren Mehrwert hat.**
 
 **Mehrwert für Internet-Technologie/-Infrastruktur**
 
+(300 Zeichen)
+
 Web-basiertes Framework für Schulungsunterlagen jeglicher Art, das
 konsistenzgechecktes Crossreferencing von Fremdunterlagen über
 Webseiten hinweg ermöglicht.
 
 **Mehrwert soziale/gesellschaftliche Aspekte**
 
+(300 Zeichen)
+
 Öffentliche Verfügbarkeit von Trainingsunterlagen bzw. die
-Erleichterung, diese öffentlich zu machen.
+Erleichterung, diese öffentlich zu machen. 
 
 **Mehrwert Wirtschaftliche und/oder wissenschaftliche Kooperationen**
 
-Eine Community von TrainerInnenn kann mehr Wert schöpfen als
+Eine Community von TrainerInnen kann mehr Wert schöpfen als
 TrainerInnenn, die gegeneinander arbeiten.
 
 4. ZIELGRUPPE UND PROJEKTZIEL
@@ -340,6 +343,15 @@ Ihrem Projekt lösen wollen.**
     * Konsistente Referenzierung von Fremdmaterial aus der Community durch
       externe Aufbaubeziehungen
 
+* Zielgruppe: Endbenutzer
+
+  * Beschreibung (400 Zeichen)
+
+    * Web-basierte "Speisekarte" zur Unterstützung der Themenauswahl
+    * Web-basierte korrekte Agenda, die der Trainer vorbereitet
+    * Web-basierte Nachbereitung
+
+
 5.2 Wesentliche Elemente eines nachhaltigen Impact NACH netidee Projektende
 ...........................................................................
 
@@ -352,9 +364,24 @@ Webplattform entsteht: Maßnahmen für die Erhöhung der Sichtbarkeit,
 Sicherstellung aktueller Inhalte, technische Wartung,
 Performanceverbesserungen, ...**
 
-* (Ich plane keine Aktivitäten nach Ende des netidee Projektes)
-* Ich plane Aktivitäten nach Ende des netidee Projektes um einen
-  nachhaltigen Impactmeines Projektes sicherzustellen
+* Ich plane keine Aktivitäten nach Ende des netidee Projektes
+* (Ich plane Aktivitäten nach Ende des netidee Projektes um einen
+  nachhaltigen Impactmeines Projektes sicherzustellen)
+
+**Erklärung**
+
+**Erklären Sie bitte, wie der gewünschte nachhaltige Impact ohne
+ Aktivitäten nach netidee Projektende erreicht werden kann.**
+
+(Ich hatte den Button "Ich plane Aktivitäten gewählt, aber das
+dzugehörige Textfeld "Geplante Aktivitäten " lässt sich nicht
+bearbeiten. Daher auf diesem Weg.)
+
+Meine restlichen Schulungsunterlagen werden
+
+* Nach OpenTraining konvertiert
+* Open Source gemacht
+* Auf unten beschriebenen Kanälen promoted
 
 6. UMFELDANALYSE
 ----------------
@@ -376,7 +403,7 @@ Performanceverbesserungen, ...**
 * Static Site Generatoren: https://www.staticgen.com/
 * Verschiedene Learning Management Systeme
 
-  * https://moodle.org/?lang=de
+  * https://moodle.org/
   * https://www.schoology.com/
   * https://eduongo.com/
 
@@ -501,7 +528,7 @@ Förderzusage.**
   * Projektergebnistyp: Dokumentation
   * Haupteigenschaften/Funktionalität (350 Zeichen)
 
-    Auf ``readthedocs.org`` gehostete Dokumentation, generiert aus dem
+    Auf "readthedocs.org" gehostete Dokumentation, generiert aus dem
     Opentraining Source Repository.
 
   * Open Source Lizenz: GPL 3.0
@@ -719,16 +746,11 @@ drei Jahre nach netidee-Projektende?**
 
     Migration nach OpenTraining
     
-  * *minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
-    einen positiven Projekterfolg jedenfalls erreicht sein müssen.)*
-
-    Ein/e weitere/r Trainer/in migriert Trainingsunterlagen nach
-    OpenTraining.
-    
   * *ausgezeichneter Erfolg bei (Kriterien für den angestrebten
     ausgezeichneten Projekterfolg)*
 
-    Mehr als zehn tun das.
+    Mehr als zehn Trainer/innen migrieren Trainingsunterlagen nach
+    OpenTraining.
 
 * Kriterium 2
 
@@ -736,16 +758,10 @@ drei Jahre nach netidee-Projektende?**
 
     Trainer Community entsteht
     
-  * *minimaler Erfolg bei (Mindestkriterien, die aus ihrer Sicht für
-    einen positiven Projekterfolg jedenfalls erreicht sein müssen.)*
-
-    Ein/e weitere/r Trainer/in verwendet OpenTraining und baut Themen
-    auf meinen auf.
-    
   * *ausgezeichneter Erfolg bei (Kriterien für den angestrebten
     ausgezeichneten Projekterfolg)*
 
-    Mindestens zwei verwenden es, um untereinander ohne mein Zutun
+    Mindestens zehn Trainer/innen verwenden OpenTraining, um untereinander ohne mein Zutun
     zusammenzuarbeiten.
 
 10. UMSETZUNG (EINJÄHRIGES NETIDEE PROJEKT)
