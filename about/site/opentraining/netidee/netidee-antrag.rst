@@ -371,7 +371,7 @@ Performanceverbesserungen, ...**
 **Erklärung**
 
 **Erklären Sie bitte, wie der gewünschte nachhaltige Impact ohne
- Aktivitäten nach netidee Projektende erreicht werden kann.**
+Aktivitäten nach netidee Projektende erreicht werden kann.**
 
 (Ich hatte den Button "Ich plane Aktivitäten gewählt, aber das
 dzugehörige Textfeld "Geplante Aktivitäten " lässt sich nicht
