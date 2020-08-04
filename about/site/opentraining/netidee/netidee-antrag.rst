@@ -5,6 +5,17 @@ Siehe https://www.netidee.at. Diese Seite ist ein Entwurf der
 Einreichungsunterlagen, nach `diesem Formular
 <https://www.netidee.at/sites/default/files/2018-04/Projekt-Antragsformular%202018%20_%20netidee%20Antragstool.pdf>`__.
 
+.. raw:: html
+
+   <iframe 
+        width="560" 
+	height="315" 
+	src="https://www.youtube.com/embed/HObyB1ZukDY" 
+	frameborder="0" 
+	allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+	allowfullscreen>
+   </iframe>
+
 .. contents::
    :local:
 
