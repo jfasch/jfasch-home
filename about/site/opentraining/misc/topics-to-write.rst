@@ -56,7 +56,3 @@ New Topics to Write
           if (42) {
               // ach
           }
-      
-PCA9685 (PWM controller)
-
-  * https://www.raspberry-pi-geek.de/ausgaben/rpg/2016/06/i-2-c-workshop-teil-11-pwm-modul-pca9685/
