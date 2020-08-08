@@ -17,6 +17,7 @@ is work in progress*).
 .. toctree::
 
    python/python
+   hardware/brushless-motor
    list
    graph
 

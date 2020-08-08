@@ -11,4 +11,3 @@ Draft Topics
 
    hardware-group
    pwm
-   brushless-motor

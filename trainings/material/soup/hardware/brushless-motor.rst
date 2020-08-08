@@ -2,7 +2,8 @@
    :description: Using a Raspberry Pi and PCA9685 PWM controller to
                  operate a brushless motor
    :keywords: linux, raspberry, raspberry pi, pwm, brushless, drone,
-              car, rc, electronic speed controller, esc
+              car, rc, electronic speed controller, esc, pca9685,
+              automation, autonomous, vehicle
 
 Controlling a Brushless Motor With Raspberry Pi
 ===============================================
@@ -41,11 +42,11 @@ First, the wiring ...
 
 .. image:: BLDC-small.png
 
-This is much the same as in the :doc:`PWM topic <pwm>`. There, we used
+This is much the same as in the :doc:`PWM topic </about/site/opentraining/misc/draft-topics/pwm>`. There, we used
 channel 0 (pin 6) to dim an LED; exchange the LED with the ESC's
 signal wire and be done.
 
-See the :doc:`PWM topic <pwm>` for an explanation of what PWM is, and
+See the :doc:`PWM topic </about/site/opentraining/misc/draft-topics/pwm>` for an explanation of what PWM is, and
 how to use a `Raspberry Pi <https://www.raspberrypi.org/>`__ and the
 `PCA9685 <https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf>`__ to
 generate PWM signals. This is information that is heavily used in the
@@ -89,7 +90,7 @@ Electronic Speed Controller (ESC)
 
 Watch the video below to learn how brushless motors work, and what the
 job of an ESC is. That video also explains briefly what Pulse Width
-Modulation (PWM) is; see :doc:`here <pwm>` for more.
+Modulation (PWM) is; see :doc:`here </about/site/opentraining/misc/draft-topics/pwm>` for more.
 
 .. raw:: html
 
@@ -366,7 +367,7 @@ you want (you never do).
 
 The fun part for me is to show how hardware is integrated into Linux,
 and how this fits into the good old Unix paradigms. For :doc:`PWM
-<pwm>`, for example, ``sysfs`` is used to expose PWM chips and their
+</about/site/opentraining/misc/draft-topics/pwm>`, for example, ``sysfs`` is used to expose PWM chips and their
 channels to the user - who is then able to control it using simple
 shell commands. It does not require too much fantasy to come up with a
 programmatic to do what we did on the commandline - one can use any
