@@ -35,7 +35,7 @@ class Group(Element):
         '''Get element by path. path is relative to this group.'''
 
         element = self._children.get(path[0])
-        if not element:
+        if element is None:
             raise errors.PathNotFound(f'{self}: no element with name "{path[0]}"')
         if len(path) == 1:
             return element
