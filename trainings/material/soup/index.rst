@@ -15,9 +15,11 @@ The Python training has been converted to this format; :doc:`see there
 is work in progress*).
 
 .. toctree::
+   :maxdepth: 1
 
    python/python
-   hardware/brushless-motor
+   hardware/index
+   draft/index
    list
    graph
 

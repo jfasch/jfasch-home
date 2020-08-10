@@ -11,10 +11,10 @@ Controlling a Brushless Motor With Raspberry Pi
 .. contents::
    :local:
 
-.. sidebar:: Prerequisites
+.. sidebar:: Topic
 
-   .. jf-topic:: draft.hardware.brushless_motor
-      :dependencies: draft.hardware.pwm
+   .. jf-topic:: hardware.brushless_motor
+      :dependencies: hardware.pwm
 
 The focus of this post is to control a brushless motor from an
 automation point of view. Imagine an autonomous vehicle that grabs
@@ -40,13 +40,16 @@ Setup
 
 First, the wiring ...
 
-.. image:: BLDC-small.png
+.. figure:: BLDC-small.png
 
-This is much the same as in the :doc:`PWM topic </about/site/opentraining/misc/draft-topics/pwm>`. There, we used
-channel 0 (pin 6) to dim an LED; exchange the LED with the ESC's
-signal wire and be done.
+   :download:`Download Fritzing project <BLDC.fzz>`
 
-See the :doc:`PWM topic </about/site/opentraining/misc/draft-topics/pwm>` for an explanation of what PWM is, and
+This is much the same as in the :doc:`PWM topic
+<../pwm/topic>`. There, we used channel 0 (pin 6) to control the
+brighness of an LED. Here, we use the same pin as input to the ESC's
+signal wire.
+
+See the :doc:`PWM topic <../pwm/topic>` for an explanation of what PWM is, and
 how to use a `Raspberry Pi <https://www.raspberrypi.org/>`__ and the
 `PCA9685 <https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf>`__ to
 generate PWM signals. This is information that is heavily used in the
@@ -90,7 +93,7 @@ Electronic Speed Controller (ESC)
 
 Watch the video below to learn how brushless motors work, and what the
 job of an ESC is. That video also explains briefly what Pulse Width
-Modulation (PWM) is; see :doc:`here </about/site/opentraining/misc/draft-topics/pwm>` for more.
+Modulation (PWM) is; see :doc:`here <../pwm/topic>` for more.
 
 .. raw:: html
 
@@ -113,31 +116,6 @@ little prototype project.
 Check out the `datasheet/manual of the 16BL30
 <https://www.hobbywing.com/products/enpdf/QuicRunWP10BL30-10BL60-8BL150.pdf>`__,
 I'll refer to it below.
-
-Why An External PWM Controller?
--------------------------------
-
-While it is possible to drive a PWM signal on a GPIO pin from software
-that runs on the CPU, this is not generally a good idea. This is
-especially true for mission critical applications such as motor
-control, where harm could be done to people and/or money.
-
-Linux is much more complex than any bare-metal OS that is usually used
-for such applications. It has a network stack that operates in the
-background, and a filesystem and block IO layer, and maybe a graphics
-stack, other software such as remote login programs, a webserver, and
-much more.
-
-Driving a PWM signal at a millisecond frequency means that the PWM
-software would have to compete with a possibly unknown number of other
-processes in the system - leading to glitches and hard-to-detect
-errors. While Linux, as deployed on the Raspberry, has real-time
-capabilities that try to give wakeup guarantees, this is a best-effort
-approach. Turning Linux into a realtime OS that gives hard guarantees
-`is no fun <https://rt.wiki.kernel.org/index.php/Main_Page>`__.
-
-Attaching a PCA9685 PWM controller is really simple, and to use it
-from Linux is even simpler, so this approach was chosen.
 
 Select Running Mode: "Fwd/Rev"
 ------------------------------
@@ -367,7 +345,7 @@ you want (you never do).
 
 The fun part for me is to show how hardware is integrated into Linux,
 and how this fits into the good old Unix paradigms. For :doc:`PWM
-</about/site/opentraining/misc/draft-topics/pwm>`, for example, ``sysfs`` is used to expose PWM chips and their
+<../pwm/topic>`, for example, ``sysfs`` is used to expose PWM chips and their
 channels to the user - who is then able to control it using simple
 shell commands. It does not require too much fantasy to come up with a
 programmatic to do what we did on the commandline - one can use any
