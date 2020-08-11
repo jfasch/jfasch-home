@@ -37,8 +37,8 @@ gibts jetzt als :doc:`Live-Hacking-Screenplay
 Das Hauptthema: Numerik, NumPy
 ------------------------------
 
-Siehe dazu auch :doc:`ein Jupyter Notebook "BigPlan"
-<code/BigPlan>`.
+Siehe dazu auch :doc:`ein Jupyter Notebook "BigPlan" <code/BigPlan>`
+(:download:`download <code/BigPlan.ipynb>`).
 
 Der Chef hat mir bei einem Vorgespräch ein Übungsbeispiel für die
 Teilnehmer mitgegeben: ausgehend von einem Spektralbild (sagt man
