@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 _me = 'Jörg Faschingbauer'
-_canonical = 'https://www.faschingbauer.co.at'
+_canonical = 'https://www.faschingbauer.me'
 project = author = _me
 copyright = '2020, '+_me
 html_title = _me
