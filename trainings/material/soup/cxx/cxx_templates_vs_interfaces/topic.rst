@@ -1,3 +1,5 @@
+.. jf-topic:: cxx.templates_vs_interfaces
+
 C++: Templates vs. Interfaces
 =============================
 
@@ -6,4 +8,3 @@ C++: Templates vs. Interfaces
    screenplay
    code/index
 
-.. jf-topic:: cxx_templates_vs_interfaces

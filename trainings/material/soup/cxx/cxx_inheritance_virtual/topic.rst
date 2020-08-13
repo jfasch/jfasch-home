@@ -1,3 +1,5 @@
+.. jf-topic:: cxx.inheritance_virtual
+
 C++: Inheritance, Interfaces, ``virtual``
 =========================================
 
@@ -5,5 +7,3 @@ C++: Inheritance, Interfaces, ``virtual``
 
    screenplay
    code/index
-
-.. jf-topic:: cxx_inheritance_virtual

@@ -1,3 +1,5 @@
+.. jf-topic:: cxx.lambda
+
 C++: Lambda
 ===========
 
@@ -5,4 +7,3 @@ C++: Lambda
 
    code/index
 
-.. jf-topic:: cxx_lambda

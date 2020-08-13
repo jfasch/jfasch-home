@@ -20,15 +20,11 @@ is work in progress*).
    python/python
    cxx/cxx
    hardware/index
+   sysprog/sysprog
+   unittest/unittest
    draft/index
    list
    graph
-
-.. toctree::
-   :hidden:
-   :glob:
-
-   */topic
 
 Code
 ----

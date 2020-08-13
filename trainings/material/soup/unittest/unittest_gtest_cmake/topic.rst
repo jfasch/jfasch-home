@@ -1,3 +1,6 @@
+.. jf-topic:: unittest.gtest_cmake
+   :dependencies: unittest.gtest_basics
+
 Unittest: GTest and CMake
 =========================
 
@@ -5,5 +8,3 @@ Unittest: GTest and CMake
 
    screenplay
 
-.. jf-topic:: unittest_gtest_cmake
-   :dependencies: unittest_gtest_basics

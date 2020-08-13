@@ -1,3 +1,5 @@
+.. jf-topic:: sysprog.signals
+
 Sysprog: Signals
 ================
 
@@ -7,4 +9,3 @@ Sysprog: Signals
    screenplay
    code/index
 
-.. jf-topic:: sysprog_signals

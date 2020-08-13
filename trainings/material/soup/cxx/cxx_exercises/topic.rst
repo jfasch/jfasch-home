@@ -1,3 +1,5 @@
+.. jf-topic:: cxx.exercises
+
 C++: Exercises
 ==============
 
@@ -5,6 +7,3 @@ C++: Exercises
 
    screenplay
    code/index
-
-.. jf-topic:: cxx_exercises
-

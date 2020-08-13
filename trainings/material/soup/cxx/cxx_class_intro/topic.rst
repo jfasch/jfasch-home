@@ -1,3 +1,5 @@
+.. jf-topic:: cxx.class_intro
+
 C++: Class (Introduction)
 =========================
 
@@ -5,6 +7,4 @@ C++: Class (Introduction)
 
    screenplay
    code/index
-
-.. jf-topic:: cxx_class_intro
 

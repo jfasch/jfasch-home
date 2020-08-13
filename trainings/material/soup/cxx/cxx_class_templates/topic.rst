@@ -1,3 +1,6 @@
+.. jf-topic:: cxx.class_template
+   :dependencies: cxx.class_intro
+
 C++: Class Templates
 ====================
 
@@ -6,5 +9,3 @@ C++: Class Templates
    screenplay
    code/index
 
-.. jf-topic:: cxx_class_template
-   :dependencies: cxx_class_intro
