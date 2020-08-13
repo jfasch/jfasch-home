@@ -56,9 +56,5 @@ class _TopicDirective(SphinxDirective):
         topic.document = self.state.document
         set_source_info(self, topic)
 
-        graph = TopicGraphNode(entries=[path])
-        graph.document = self.state.document
-        set_source_info(self, graph)
-
-        return [topic, graph]
+        return [topic]
 
