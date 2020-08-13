@@ -18,6 +18,7 @@ is work in progress*).
    :maxdepth: 1
 
    python/python
+   cxx/cxx
    hardware/index
    draft/index
    list

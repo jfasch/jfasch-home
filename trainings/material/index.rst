@@ -95,18 +95,18 @@ folgende Tabelle gibt einen Überblick über vorhandene Unterlagen.
      - - :download:`C++03 <pdf/055-c++03.pdf>`
        - :download:`C++11 <pdf/056-c++11.pdf>`
      -
-     - - :doc:`soup/cxx_class_intro/screenplay`
-       - :doc:`soup/cxx_dynamic_memory/screenplay`
-       - :doc:`soup/cxx_ownership_raii/screenplay`
-       - :doc:`soup/cxx_global_initialization/screenplay`
-       - :doc:`soup/cxx_exercises/screenplay`
-       - :doc:`soup/cxx_stl_container_intro/screenplay`
-     - - :doc:`soup/cxx_class_intro/code/index`
-       - :doc:`soup/cxx_dynamic_memory/code/index`
-       - :doc:`soup/cxx_ownership_raii/code/index`
-       - :doc:`soup/cxx_global_initialization/code/index`
-       - :doc:`soup/cxx_exercises/code/index`
-       - :doc:`soup/cxx_stl_container_intro/code/index`
+     - - :doc:`soup/cxx/cxx_class_intro/screenplay`
+       - :doc:`soup/cxx/cxx_dynamic_memory/screenplay`
+       - :doc:`soup/cxx/cxx_ownership_raii/screenplay`
+       - :doc:`soup/cxx/cxx_global_initialization/screenplay`
+       - :doc:`soup/cxx/cxx_exercises/screenplay`
+       - :doc:`soup/cxx/cxx_stl_container_intro/screenplay`
+     - - :doc:`soup/cxx/cxx_class_intro/code/index`
+       - :doc:`soup/cxx/cxx_dynamic_memory/code/index`
+       - :doc:`soup/cxx/cxx_ownership_raii/code/index`
+       - :doc:`soup/cxx/cxx_global_initialization/code/index`
+       - :doc:`soup/cxx/cxx_exercises/code/index`
+       - :doc:`soup/cxx/cxx_stl_container_intro/code/index`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
      - :doc:`soup/python/python`
