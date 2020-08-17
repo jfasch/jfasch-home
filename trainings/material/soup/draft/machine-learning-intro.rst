@@ -92,7 +92,7 @@ Types of Machine Learning
 
 * **Unsupervised Learning**.
 
-  * Works on unlabeled data. 
+  * Works on *unlabeled* data.
   * Creates clusters on its own, identifying features.
   * Used for association and clustering
 
@@ -109,7 +109,7 @@ Problems Solved
   * *Output*: continuous quantity (usually a forecast of something)
   * Solved by *supervised learning* algorithms like *Linear
     Regression*.
-  * Example topic: :doc:`linear-regression/topic`
+  * See topic: :doc:`linear-regression/topic`
 
 * **Classification**
 
@@ -125,4 +125,4 @@ Problems Solved
 
   * *Output*: clusters of input data
   * Solved by *unsupervised learning* algorithms like K-means
-  * Example topic: :doc:`k-means`
+  * See topic: :doc:`k-means`

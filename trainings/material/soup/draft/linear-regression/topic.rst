@@ -1,7 +1,5 @@
 .. jf-topic:: drafts.ai.linear_regression
-   :dependencies: drafts.ai.pandas, 
-		  drafts.venv, 
-		  drafts.ai.numpy, 
+   :dependencies: drafts.venv, 
 		  drafts.ai.machine_learning_intro
 
 Linear Regression

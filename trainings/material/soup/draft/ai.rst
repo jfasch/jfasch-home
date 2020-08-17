@@ -8,11 +8,8 @@ Contents
    :maxdepth: 1
 
    machine-learning-intro
-   numpy
-   pandas
    linear-regression/topic
    k-means
-   tensorflow
 
 Group Definition
 ----------------
