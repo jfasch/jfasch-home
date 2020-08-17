@@ -96,9 +96,9 @@ we use the standard Python installation,
 
 Data scientists often use a *distribution* named `Anaconda
 <https://www.anaconda.com/>`__ which brings the standard Python
-installation and a large pre-packaged set of external extensions
-[#anaconda_r]_ . If you are already used to Anaconda, then I don't
-object.
+installation and a large set of set of pre-packaged external
+extensions [#anaconda_r]_ . If you are already familiar with Anaconda,
+then I don't object.
 
 Programming Environment
 .......................

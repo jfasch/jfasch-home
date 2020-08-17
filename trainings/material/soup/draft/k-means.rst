@@ -17,3 +17,22 @@ TODO
 
 * formulate topic
 * move k-means over from ITK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

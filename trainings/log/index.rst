@@ -20,6 +20,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Advanced (7.9.2020 - 10.9.2020 bei einer Firma in Gmunden)
+-----------------------------------------------------------------
+
+Der Kurs ist in Vorbereitung.
+
+(:doc:`Mehr ... <detail/2020-09-07/index>`)
+
 Python Individualtraining (18.5.2020 - 19.5.2020)
 -------------------------------------------------
 

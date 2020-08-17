@@ -16,6 +16,9 @@ Contents
    ai
    venv/topic
    pip/topic
+   duck-typing
+   context_manager
+   special_methods
 
 Group Definition
 ----------------
