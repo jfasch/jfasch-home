@@ -10,7 +10,8 @@ Contents
    machine-learning-intro
    numpy
    pandas
-   linear-regression
+   linear-regression/topic
+   k-means
    tensorflow
 
 Group Definition

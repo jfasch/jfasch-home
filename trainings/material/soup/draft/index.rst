@@ -1,6 +1,12 @@
 Drafts
 ======
 
+.. contents::
+   :local:
+
+This is the home of topics under constructions. Once completed, they
+are moved into their respective groups.
+
 Contents
 --------
 
@@ -8,7 +14,8 @@ Contents
    :maxdepth: 1
 
    ai
-   venv
+   venv/topic
+   pip/topic
 
 Group Definition
 ----------------

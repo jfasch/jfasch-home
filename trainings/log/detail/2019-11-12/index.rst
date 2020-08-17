@@ -94,7 +94,7 @@ die `Funktion
 Lösen einer Uni-Übung
 ---------------------
 
-Ein Teilzeitmitarbeiterin der Firma, sie studiert Physik neben der
+Eine Teilzeitmitarbeiterin der Firma, sie studiert Physik neben der
 Arbeit, muss für eine Übung ... was weiss ich ... machen. Wie auch
 immer, der Input für ihre Arbeit liegt in folgendem bekackten
 Inputformat vor, das es zu parsen gilt. War eine nette

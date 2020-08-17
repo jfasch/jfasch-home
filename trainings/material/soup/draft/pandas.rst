@@ -1,6 +1,7 @@
 .. jf-topic:: drafts.ai.pandas
    :dependencies: python.basics.python_0200_sequential_types, 
-		  drafts.ai.numpy
+		  drafts.ai.numpy,
+		  drafts.venv
 
 .. dependency is for the slicing syntax.
 

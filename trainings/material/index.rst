@@ -16,7 +16,9 @@ Training material is currently available in two forms,
 
 * Good old PDF slide material
 * Newer material, in the form of :doc:`OpenTraining
-  </about/site/opentraining/index>` topics; this is work in progress.
+  </about/site/opentraining/index>` topics; this is work in
+  progress. :doc:`See here <soup/index>` for an overview of available
+  topics.
 
 The following table is an attempt to give an overview of the available
 material.
