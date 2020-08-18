@@ -19,6 +19,9 @@ Contents
    duck-typing
    context_manager
    special_methods
+   starargs
+   decorators
+   import
 
 Group Definition
 ----------------

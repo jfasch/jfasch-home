@@ -1,7 +1,5 @@
-.. include:: <mmlalias.txt>
-
 .. jf-topic:: drafts.venv
-   :dependencies: python.swdev.python_1200_modules,
+   :dependencies: drafts.import,
 		  python.pip
 
 Virtual Environments
@@ -12,13 +10,6 @@ Virtual Environments
 
    slides
    screenplay
-
-TODO
-----
-
-* structure explanation
-* PATH, PYTHONPATH
-* pip freeze
 
 .. jf-topicgraph:: 
    :entries: drafts.venv
