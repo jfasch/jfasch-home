@@ -9,10 +9,12 @@ Machine Learning: Concepts and Terminology
 .. jf-topicgraph::
    :entries: drafts.ai.machine_learning_intro
 
-Recommended Course
-------------------
+This topic is an introductory one. We will only scratch the surface;
+there is much terminology to learn, and this is what this topic is
+about. Data science, machine learning, and artificial intelligence are
+a very broad field, and there is much more to it.
 
-We only scratch the surface; see this video for much more. Beware
+See this video for a really good and thorough introduction. Beware
 though, it is a whopping 4 hours long.
 
 .. raw:: html
@@ -25,6 +27,23 @@ though, it is a whopping 4 hours long.
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
        allowfullscreen>
    </iframe>
+
+Data scientists are not always known to be good (let alone diligent)
+programmers. I have seen people use `Jupyter Notebooks
+<https://jupyter.org/>`__ as editor and runtime environment for their
+programs. While I like notebooks to play around, creating nicely
+looking web pages with plots and charts *as a side effect* (really
+cool), there is a point where one has to bite the bullet and start to
+*program*. The latter is the focus of these AI topics.
+
+See Also
+--------
+
+Concrete applications of the concepts and terminology introduced in
+this topics can be found here:
+
+* :doc:`linear-regression/topic`
+* :doc:`k-means`
 
 How Far Is Mankind from Creating God
 ------------------------------------
