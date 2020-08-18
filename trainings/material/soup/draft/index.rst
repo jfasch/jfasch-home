@@ -21,6 +21,7 @@ Contents
    special_methods
    starargs
    decorators
+   closures
    import
 
 Group Definition
