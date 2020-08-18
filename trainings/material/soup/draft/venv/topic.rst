@@ -1,6 +1,6 @@
 .. jf-topic:: drafts.venv
    :dependencies: drafts.import,
-		  python.pip
+		  drafts.pip
 
 Virtual Environments
 ====================

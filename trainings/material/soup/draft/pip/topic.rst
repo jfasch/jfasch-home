@@ -1,9 +1,16 @@
-.. jf-topic:: python.pip
+.. jf-topic:: drafts.pip
+   :dependencies: drafts.import
 
-Python Package Index (incomplete)
-=================================
+Python Package Index
+====================
 
-TODO
-----
+.. toctree::
+   :maxdepth: 1
 
-* a lot
+   slides
+   screenplay
+
+See also :doc:`../venv/topic`.
+
+.. jf-topicgraph:: 
+   :entries: drafts.pip
