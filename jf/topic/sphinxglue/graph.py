@@ -190,7 +190,7 @@ class _TopicGraphExpander:
                 f'    href="{uri}";',
                 '    shape=Mrecord;',
                 '    style=filled;',
-                f'    penwidth="{border}"',
+                f'    penwidth="{border}";',
                 '    fillcolor="#DCDCDC";'
                 '];',
             ]
