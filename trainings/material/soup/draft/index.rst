@@ -21,7 +21,7 @@ Contents
    special_methods
    starargs
    decorators
-   closures
+   closures/topic
    import
 
 Group Definition

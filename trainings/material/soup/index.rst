@@ -7,7 +7,7 @@ Sphinx extension to form a network of *topics* as I call it. This is
 :doc:`work in progress </about/site/opentraining/index>`.
 
 Topics naturally depend on other topics. Together, topics and their
-dependencies form a directed acyclic - see for example :doc:`the full
+dependencies form a directed acyclic graph - see for example :doc:`the full
 set of Python topics, laid out as one such graph <python/fullgraph>`.
 
 The Python training has been converted to this format; :doc:`see there
