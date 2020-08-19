@@ -1,8 +1,8 @@
 .. jf-topic:: drafts.closures
    :dependencies: python.basics.python_0270_functions
 
-Closures (incomplete)
-=====================
+Closures
+========
 
 .. toctree::
    :maxdepth: 1

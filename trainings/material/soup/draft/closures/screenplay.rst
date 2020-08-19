@@ -3,6 +3,9 @@
 Closures (Livehacking Screenplay)
 =================================
 
+.. contents::
+   :local:
+
 ``def`` is a Statement
 ----------------------
 
