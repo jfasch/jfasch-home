@@ -9,6 +9,9 @@ Decorators (incomplete)
 .. contents::
    :local:
 
+TODO
+----
+
 * `Decorators Tutorial
   <https://www.youtube.com/watch?v=FsAPt_9Bf3U>`__: **Corey Schafer**
   on decorators and closures.
@@ -16,6 +19,7 @@ Decorators (incomplete)
   Of Your Functions
   <https://www.youtube.com/watch?v=FsAPt_9Bf3U>`__. Ein etwas
   fortgeschritteneres Thema, wieder von **Corey Schafer**.
+* functools.wraps (better explain that with decorators?)
 
 .. jf-topicgraph:: 
    :entries: drafts.decorators

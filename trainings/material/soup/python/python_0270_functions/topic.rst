@@ -15,5 +15,4 @@ Functions
 
    * :doc:`/trainings/material/soup/draft/closures/topic`
    * :doc:`/trainings/material/soup/draft/decorators`
-   * :doc:`/trainings/material/soup/draft/starargs`
-
+   * :doc:`/trainings/material/soup/draft/starargs/topic`

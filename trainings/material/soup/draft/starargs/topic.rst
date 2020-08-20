@@ -4,8 +4,10 @@
 Positional and Keyword Arguments (incomplete)
 =============================================
 
-.. contents::
-   :local:
+.. toctree::
+   :maxdepth: 1
+
+   screenplay
 
 .. jf-topicgraph:: 
    :entries: drafts.starargs

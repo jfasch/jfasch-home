@@ -4,7 +4,7 @@ Drafts
 .. contents::
    :local:
 
-This is the home of topics under constructions. Once completed, they
+This is the home of topics under construction. Once completed, they
 are moved into their respective groups.
 
 Contents
@@ -19,7 +19,7 @@ Contents
    duck-typing
    context_manager
    special_methods
-   starargs
+   starargs/topic
    decorators
    closures/topic
    import
