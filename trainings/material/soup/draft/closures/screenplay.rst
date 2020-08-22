@@ -9,133 +9,189 @@ Closures (Livehacking Screenplay)
 ``def`` is a Statement
 ----------------------
 
-Creates a function, and points a name to it (syntactic sugar).
+Demonstrate:
 
-.. code-block:: python
+* Functions are objects, just like integers are
+* ``def`` used inside another function |longrightarrow| local variable
+* *function as return value*
 
-   >>> f()
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in <module>
-   NameError: name 'f' is not defined
-   >>> def f():
-   ...     print('f called')
-   ... 
-   >>> f
-   <function f at 0x7fc8cc842310>
-   >>> f()
-   f called
+.. list-table::
+   :align: left
 
-.. code-block:: python
+   * *
 
-   >>> g = f
-   >>> g()
-   f called
+       .. literalinclude:: code/10_create_function.py
+ 	 :caption: :download:`code/10_create_function.py`
+ 	 :language: python
+ 
+       .. code-block:: console
+       
+          $ python code/05_functions_are_objects.py
+          f called
+          f called
+ 
+     * * ``def`` is a statement
+       * creates function object, and name ``f`` in current scope that
+	 refers to it
+       * ``g = f`` demonstrates this
+       * Why shouldn't we return a function from another function   
+       * Function that creates a function?
 
-**Discuss**
+.. list-table::
+   :align: left
 
-* Why shouldn't we return a function from another function   
-* Function that creates a function?
-
-.. literalinclude:: code/10_create_function.py
-   :caption: :download:`code/10_create_function.py`
-   :language: python
-
-.. code-block:: console
-
-   $ python code/10_create_function.py 
-   inner f called
+   * *
+       .. literalinclude:: code/10_create_function.py
+ 	 :caption: :download:`code/10_create_function.py`
+ 	 :language: python
+ 
+       .. code-block:: console
+       
+          $ python code/10_create_function.py 
+          inner f called
+ 
+     * * ``def`` called in function scope
+       * name ``f`` is local
+       * returned
 
 Global Scope
 ------------
 
-.. literalinclude:: code/20_global_read.py
-   :caption: :download:`code/20_global_read.py`
-   :language: python
+* Variables in global scope can be accessed by "inner" functions (no
+  surprise)
 
-.. code-block:: console
+.. list-table::
+   :align: left
 
-   $ python code/20_global_read.py
-   inner f called, g = 1
+   * *
 
-As expected.
+       .. literalinclude:: code/20_global_read.py
+	  :caption: :download:`code/20_global_read.py`
+	  :language: python
+       
+       .. code-block:: console
+       
+          $ python code/20_global_read.py
+          inner f called, g = 1
+
+     * * global variable ``g``
+       * any function in the same global scope (*module* scope) can
+         access it
+       * inner function ``f`` can, too, as expected
 
 And Intermediate Scope?
 -----------------------
 
-.. literalinclude:: code/30_intermediate_closure.py
-   :caption: :download:`code/30_intermediate_closure.py`
-   :language: python
+* Variables in the fnction containing the ``def``?
 
-.. code-block:: console
+.. list-table::
+   :align: left
 
-   $ python code/30_intermediate_closure.py
-   inner f called, intermediate = 1
+   * * 
+       .. literalinclude:: code/30_intermediate_closure.py
+          :caption: :download:`code/30_intermediate_closure.py`
+	  :language: python
 
-**Discuss**
+       .. code-block:: console
 
-* ``create_f``'s scope is gone after call returns
-* Inner ``f`` has been returned by that call
-* Obviously inner ``def f(): ...`` has *captured* variable
-  ``intermediate`` of enclosing scope
+          $ python code/30_intermediate_closure.py
+          inner f called, intermediate = 1
 
-|longrightarrow| *Closure*
-
-How About Assignment?
----------------------
+     * * ``create_f``'s scope is gone after call returns
+       * Inner ``f`` has been returned by that call
+       * Obviously inner ``def f(): ...`` has *captured* variable
+	 ``intermediate`` of enclosing scope
+       * |longrightarrow| Definition of *closure*
 
 Assignment to Global Scope
-..........................
+--------------------------
 
-.. literalinclude:: code/40_global_assignment_wrong.py
-   :caption: Wrong, :download:`code/40_global_assignment_wrong.py`
-   :language: python
+* Recap of ``global`` keyword
+* ... used inside inner function
 
-.. code-block:: console
+.. list-table::
+   :align: left
 
-   $ python code/40_global_assignment_wrong.py
-   inner f called, g = 2
-   global g = 1
+   * *
 
-Ah yes, ``f()`` assigned to (|longrightarrow| *created*) local
-variable ``g``. This is what the ``global`` keyword is there for:
+       .. literalinclude:: code/40_global_assignment_wrong.py
+          :caption: Wrong, :download:`code/40_global_assignment_wrong.py`
+	  :language: python
+  
+       .. code-block:: console
+       
+          $ python code/40_global_assignment_wrong.py
+          inner f called, g = 2
+          global g = 1
 
-.. literalinclude:: code/50_global_assignment_right.py
-   :caption: Right, :download:`code/50_global_assignment_right.py`
-   :language: python
+     * * Revert closure stuff back to global
+       * Assign to global variable, forgetting ``global``
+       * Ah yes, ``f()`` assigned to (|longrightarrow| *created*)
+	 local variable ``g``. This is what the ``global`` keyword is
+	 there for
 
-.. code-block:: console
+.. list-table::
+   :align: left
 
-   $ python code/50_global_assignment_right.py
-   inner f called, g = 2
-   global g = 2
+   * * 
+
+       .. literalinclude:: code/50_global_assignment_right.py
+          :caption: Right, :download:`code/50_global_assignment_right.py`
+          :language: python
+       
+       .. code-block:: console
+       
+          $ python code/50_global_assignment_right.py
+          inner f called, g = 2
+          global g = 2
+
+     * * Ah yes, ``global``
+
 
 Assignment to Intermediate Scope
-................................
+--------------------------------
 
-* rename ``f`` into ``assign``
-* variable ``intermediate`` instead of global ``g``
-* **Discuss**: how to check if ``intermediate`` has been assigned
-  correctly?
-* |longrightarrow| second local function ``check``
+* And now, what about assignment to intermediate scope? To *a variable
+  in the closure*?
+* Who does this?
+* Many non-obvious use cases, used to improve job security
 
-.. literalinclude:: code/60_intermediate_assignment_wrong.py
-   :caption: Wrong, :download:`code/60_intermediate_assignment_wrong.py`
-   :language: python
+.. list-table::
+   :align: left
 
-.. code-block:: console
+   * * 
 
-   $ python code/60_intermediate_assignment_wrong.py
-   assign: intermediate = 2
-   check: intermediate = 1
+       .. literalinclude:: code/60_intermediate_assignment_wrong.py
+          :caption: Wrong, :download:`code/60_intermediate_assignment_wrong.py`
+          :language: python
+       
+       .. code-block:: console
+       
+          $ python code/60_intermediate_assignment_wrong.py
+          assign: intermediate = 2
+          check: intermediate = 1
 
-**Damn** |longrightarrow| ``nonlocal``
+     * * rename ``f`` into ``assign``
+       * variable ``intermediate`` instead of global ``g``
+       * **Discuss**: how to check if ``intermediate`` has been
+	 assigned correctly?
+       * |longrightarrow| second local function ``check``
+       * **Damn**! Again created a local variable!
+       * |longrightarrow| ``nonlocal``
 
-.. literalinclude:: code/70_intermediate_assignment_right.py
-   :caption: Wrong, :download:`code/70_intermediate_assignment_right.py`
-   :language: python
+.. list-table::
+   :align: left
 
-.. code-block:: console
+   * * 
 
-   $ python code/70_intermediate_assignment_right.py
-   assign: intermediate = 2
-   check: intermediate = 2
+       .. literalinclude:: code/70_intermediate_assignment_right.py
+          :caption: Wrong, :download:`code/70_intermediate_assignment_right.py`
+          :language: python
+       
+       .. code-block:: console
+       
+          $ python code/70_intermediate_assignment_right.py
+          assign: intermediate = 2
+          check: intermediate = 2
+
+     * * Tataa!
