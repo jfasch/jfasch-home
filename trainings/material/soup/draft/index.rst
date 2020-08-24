@@ -23,6 +23,8 @@ Contents
    decorators
    closures/topic
    import
+   mysql
+   installation
 
 Group Definition
 ----------------

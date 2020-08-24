@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Python Advanced
-===============
+Python Advanced (7.9.2020 - 10.9.2020)
+======================================
 
 .. sidebar:: *Training Information*
 
@@ -16,15 +16,12 @@ Python Advanced
 
    :doc:`/trainings/repertoire/python-advanced`
 
-   **Slides**
+   **Training Material**
 
-   * :download:`/trainings/material/pdf/300-python.pdf` (PDF)
+   .. csv-table::
 
-   **Miscellaneus**
-
-   * (TODO) create topic from setup section of :doc:`this document
-     </trainings/log/detail/2020-05-12/index>`, and link to it from
-     here.
+      :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/python`
+      PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
 Requirements
 ------------
@@ -41,7 +38,8 @@ interesting Python features, such as
 
 * :doc:`Iteration and generators
   </trainings/material/soup/python/python_1010_generators_yield/topic>`
-* Context managers (the ``with`` statement) (TODO)
+* :doc:`Context managers (the "with" statement)
+  </trainings/material/soup/draft/context_manager>`
 * Encoding. TODO: somehow externalize "encoding" stuff from these:
 
   * :doc:`/trainings/material/soup/python/python_0330_strings_encoding/topic`
@@ -52,8 +50,9 @@ interesting Python features, such as
   separate *module usage* (|longrightarrow| "The ``import``
   statement", ``PYTHONPATH``, etc.)  from *module content*
   (``__all__``, ``__init__.py``, etc.)
-* TODO: Philosophical excourse: *Duck Typing* vs. *Strict OO* (who
-  could do data science if it had to be done using strong typing?)
+* :doc:`Philosophical excourse: Duck Typing vs. Strict OO
+  </trainings/material/soup/draft/duck-typing>` (who could do data
+  science if it had to be done using strong typing?)
 
 Agenda
 ------
@@ -72,4 +71,6 @@ TODO:
 	     python.swdev.python_1200_modules,
 	     python.python_1010_generators_yield,
 	     python.basics.python_0330_strings_encoding,
-	     python.basics.python_0500_files
+	     python.basics.python_0500_files,
+	     drafts.mysql,
+	     drafts.installation
