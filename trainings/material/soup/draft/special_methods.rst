@@ -9,3 +9,4 @@ Special Methods, Operator Overloading (*incomplete*)
 * Make
   :download:`/trainings/log/detail/2019-10-28/Misc/operator-overloading.py`
   into a topic
+* ``__call__``

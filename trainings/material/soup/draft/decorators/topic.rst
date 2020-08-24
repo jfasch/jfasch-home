@@ -1,16 +1,28 @@
 .. jf-topic:: drafts.decorators
    :dependencies: python.basics.python_0270_functions,
 		  drafts.closures,
-		  drafts.starargs
+		  drafts.starargs,
+		  drafts.special_methods
 
 Decorators (incomplete)
 =======================
 
-.. contents::
-   :local:
+.. toctree::
+   :maxdepth: 1
+
+   slides
+   screenplay
 
 TODO
 ----
+
+* Class decorators
+
+  .. code-block:: python
+
+     @foo(1, 2)    # ctor
+     def bar(a, b, c):
+         ...
 
 * `Decorators Tutorial
   <https://www.youtube.com/watch?v=FsAPt_9Bf3U>`__: **Corey Schafer**

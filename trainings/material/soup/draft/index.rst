@@ -20,7 +20,7 @@ Contents
    context_manager
    special_methods
    starargs/topic
-   decorators
+   decorators/topic
    closures/topic
    import
    mysql
