@@ -188,7 +188,7 @@ class _TopicGraphExpander:
                 f'{node_id} [',
                 f'    label="{node.title}";',
                 f'    href="{uri}";',
-                '    shape=Mrecord;',
+#                '    shape=Mrecord;',
                 '    style=filled;',
                 f'    penwidth="{border}";',
                 '    fillcolor="#DCDCDC";'
@@ -226,7 +226,7 @@ class _TopicGraphExpander:
     def _dot_to_svg(self, dot):
         try:
             completed = subprocess.run(
-                ['dot', '-T', 'svg'],
+                ['dot', '-v', '-T', 'svg'],
                 input=dot, check=True, text=True, capture_output=True)
         except subprocess.CalledProcessError as e:
             raise errors.TopicError(f'dot exited with status {e.returncode}:\n[dot]\n{dot}\n[stderr]\n{e.stderr}')
