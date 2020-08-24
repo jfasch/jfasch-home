@@ -20,8 +20,8 @@ Demonstrate:
 
    * *
 
-       .. literalinclude:: code/10_create_function.py
- 	 :caption: :download:`code/10_create_function.py`
+       .. literalinclude:: code/05_functions_are_objects.py
+ 	 :caption: :download:`code/05_functions_are_objects.py`
  	 :language: python
  
        .. code-block:: console
@@ -102,6 +102,25 @@ And Intermediate Scope?
        * Obviously inner ``def f(): ...`` has *captured* variable
 	 ``intermediate`` of enclosing scope
        * |longrightarrow| Definition of *closure*
+
+A Less Theoretical "Use Case"
+-----------------------------
+
+.. list-table::
+   :align: left
+
+   * * 
+       .. literalinclude:: code/35_closure_use_case.py
+          :caption: :download:`code/35_closure_use_case.py`
+	  :language: python
+
+       .. code-block:: console
+
+        $ python code/35_closure_use_case.py
+        blah
+        something
+
+     * * (self explanatory)
 
 Assignment to Global Scope
 --------------------------
