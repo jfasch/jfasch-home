@@ -1,3 +1,9 @@
+.. meta:: 
+   :description: Collection of useful information on how to create
+		 screencasts (openshot, obs-studio)
+   :keywords: openshot, screencast, obs studio, video, video editing,
+              screen recording
+
 Creating Screencasts
 ====================
 

@@ -16,13 +16,16 @@ Python Grundlagen
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 2 Tage
-      PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-      Topics, :doc:`/trainings/material/soup/python/python`
+
+   **Unterlagen**
+
+   .. csv-table::
+
+      :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/python`
+      PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
    **Termine**
 
-   * 18.5.2020 - 20.5.2020, Graz, `tecTrain
-     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
    * 28.9.2020 - 30.9.2020, Wien, `tecTrain
      <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
    * 23.11.2020 - 25.11.2020, Graz, `tecTrain
