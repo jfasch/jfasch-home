@@ -57,6 +57,9 @@ covered.
 
 * :doc:`/trainings/material/soup/draft/duck-typing`
 * :doc:`/trainings/material/soup/draft/special_methods`
+* :doc:`/trainings/material/soup/draft/closures/topic`
+* :doc:`/trainings/material/soup/draft/decorators`
+* :doc:`/trainings/material/soup/draft/starargs/topic`
 
 Special Topics
 ..............
@@ -85,6 +88,9 @@ Graph
 	     drafts.duck_typing,
 	     drafts.context_manager,
 	     drafts.special_methods,
+	     drafts.closures,
+	     drafts.decorators,
+	     drafts.starargs,
 	     python.swdev.python_1200_modules,
 	     python.python_1010_generators_yield,
 	     drafts.encoding,
