@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Modules
-=======
+Modules and Packages
+====================
 
 .. contents::
    :local:

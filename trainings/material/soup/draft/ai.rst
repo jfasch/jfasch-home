@@ -1,5 +1,5 @@
-Artificial Intelligence
-=======================
+Machine Learning, Artificial Intelligence
+=========================================
 
 Contents
 --------

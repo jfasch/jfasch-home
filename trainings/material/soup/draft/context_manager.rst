@@ -1,10 +1,10 @@
 .. jf-topic:: drafts.context_manager
    :dependencies: python.basics.python_0140_variables
 
-Context Managers (incomplete)
-=============================
+Context Managers (the ``with`` Statement) (*incomplete*)
+========================================================
 
-TODO jjj
+**TODO**
 
 * dependency on "variables" is for the necessary explanation on
   reference counting and lifetime. work that out.

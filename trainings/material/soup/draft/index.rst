@@ -25,6 +25,8 @@ Contents
    import
    mysql
    installation
+   encoding
+   exceptions
 
 Group Definition
 ----------------

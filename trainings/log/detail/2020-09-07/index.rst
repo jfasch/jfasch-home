@@ -3,64 +3,81 @@
 Python Advanced (7.9.2020 - 10.9.2020)
 ======================================
 
+.. contents::
+   :local:
+
 .. sidebar:: *Training Information*
 
-   .. contents::
-      :local:
+   **Preparation**
+
+   :doc:`Python installation
+   </trainings/material/soup/draft/installation>`
 
    **Start**
 
    Montag 7.9.2020, 9:00
 
-   **Training Description**
+   **Official Description**
 
    :doc:`/trainings/repertoire/python-advanced`
 
-   **Training Material**
+   **Material**
 
    .. csv-table::
 
       :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/python`
       PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
-Requirements
-------------
+This is a training for a team which is already experienced in Python
+programming. There were some special requirements for the training,
+such as to loose a couple of words about AI/machinelearning and other
+topics, as well as a fuzzy "bring us advanced stuff".
+
+Advanced Core Python Topics
+...........................
+
+Python is easy; one can solve nontrivial problems in only a few lines
+of code, in no time. This does not mean that you have to fully
+understand the language - which is good because this is what makes the
+language easy.
+
+On the other hand, there's always a line to cross where you wish you
+knew more. Here the more advanced core Python topics that shall be
+covered.
+
+* :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
+* :doc:`/trainings/material/soup/draft/context_manager`
+* :doc:`/trainings/material/soup/draft/encoding`
+* :doc:`/trainings/material/soup/draft/exceptions`
+* :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+
+  * TODO: separate *module usage* (|longrightarrow| "The ``import``
+    statement", ``PYTHONPATH``, etc.)  from *module content*
+    (``__all__``, ``__init__.py``, etc.)
+
+* :doc:`/trainings/material/soup/draft/duck-typing`
+* :doc:`/trainings/material/soup/draft/special_methods`
+
+Special Topics
+..............
+
+* :doc:`/trainings/material/soup/draft/ai`
+
+  * :doc:`/trainings/material/soup/draft/machine-learning-intro`
+  * :doc:`/trainings/material/soup/draft/linear-regression/topic`
+  * :doc:`/trainings/material/soup/draft/k-means`
+
+* :doc:`/trainings/material/soup/draft/mysql`
+* Unit Testing, Test Driven Development, Design Patterns
+
+  * Excerpt from :doc:`/trainings/repertoire/unittests`
+    (:download:`/trainings/material/pdf/060-design-patterns-unittests.pdf`)
+  * :doc:`/trainings/material/soup/python/python_5600_unittest/topic`
 
 * Web programming with Jango and/or Flask
-* AI, machine learning
-* Databases, especially MySQL
-* Unit testing, test driven development
-* Design patterns
 
-This is a training for a team which is already experienced in Python
-programming. Makes sense to shine some light on advanced and
-interesting Python features, such as
-
-* :doc:`Iteration and generators
-  </trainings/material/soup/python/python_1010_generators_yield/topic>`
-* :doc:`Context managers (the "with" statement)
-  </trainings/material/soup/draft/context_manager>`
-* Encoding. TODO: somehow externalize "encoding" stuff from these:
-
-  * :doc:`/trainings/material/soup/python/python_0330_strings_encoding/topic`
-  * :doc:`/trainings/material/soup/python/python_0500_files/topic`
-
-* :doc:`Modules and packages
-  </trainings/material/soup/python/python_1200_modules/topic>`. TODO:
-  separate *module usage* (|longrightarrow| "The ``import``
-  statement", ``PYTHONPATH``, etc.)  from *module content*
-  (``__all__``, ``__init__.py``, etc.)
-* :doc:`Philosophical excourse: Duck Typing vs. Strict OO
-  </trainings/material/soup/draft/duck-typing>` (who could do data
-  science if it had to be done using strong typing?)
-
-Agenda
-------
-
-TODO:
-
-* calculate toposorted topic list
-* verify accuracy of entrypoints against TODO's
+Graph
+.....
 
 .. jf-topicgraph::
    :entries: drafts.ai.linear_regression,
@@ -70,7 +87,7 @@ TODO:
 	     drafts.special_methods,
 	     python.swdev.python_1200_modules,
 	     python.python_1010_generators_yield,
-	     python.basics.python_0330_strings_encoding,
-	     python.basics.python_0500_files,
+	     drafts.encoding,
 	     drafts.mysql,
-	     drafts.installation
+	     drafts.installation,
+	     drafts.exceptions

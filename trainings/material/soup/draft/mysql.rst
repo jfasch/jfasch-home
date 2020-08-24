@@ -10,3 +10,6 @@ TODO
 
 * Describe connection string
 * Work out date/time issues (as always)
+
+.. jf-topicgraph::
+   :entries: drafts.mysql

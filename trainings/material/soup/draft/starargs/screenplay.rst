@@ -22,17 +22,22 @@ Plain Function with Positional Arguments
 Arbitrary Number of Arguments?
 ------------------------------
 
-.. literalinclude:: code/20-arbitrary-positional-tuple.py
-   :caption: :download:`code/20-arbitrary-positional-tuple.py`
-   :language: python
+.. list-table::
+   :align: left
 
-.. code-block:: console
+   * *
 
-   $ python code/20-arbitrary-positional-tuple.py
-   (1, 2, 3)
+        .. literalinclude:: code/20-arbitrary-positional-tuple.py
+           :caption: :download:`code/20-arbitrary-positional-tuple.py`
+           :language: python
+        
+        .. code-block:: console
+        
+           $ python code/20-arbitrary-positional-tuple.py
+           (1, 2, 3)
 
-* A-ha: positional arguments passed as tuple
-* "Unpack" tuple as positional arguments?
+     * * A-ha: positional arguments passed as tuple
+       * "Unpack" tuple as positional arguments?
 
 .. literalinclude:: code/30-unpack-positional.py
    :caption: :download:`code/30-unpack-positional.py`
