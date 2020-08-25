@@ -7,6 +7,7 @@ Closures
 .. toctree::
    :maxdepth: 1
 
+   slides
    screenplay
 
 .. jf-topicgraph:: 

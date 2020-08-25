@@ -25,7 +25,7 @@ Python Advanced (7.9.2020 - 10.9.2020)
 
    .. csv-table::
 
-      :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/python`
+      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/python`
       PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
 This is a training for a team which is already experienced in Python
@@ -58,7 +58,7 @@ covered.
 * :doc:`/trainings/material/soup/draft/duck-typing`
 * :doc:`/trainings/material/soup/draft/special_methods`
 * :doc:`/trainings/material/soup/draft/closures/topic`
-* :doc:`/trainings/material/soup/draft/decorators`
+* :doc:`/trainings/material/soup/draft/decorators/topic`
 * :doc:`/trainings/material/soup/draft/starargs/topic`
 
 Special Topics
