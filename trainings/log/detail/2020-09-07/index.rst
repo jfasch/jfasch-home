@@ -8,14 +8,9 @@ Python Advanced (7.9.2020 - 10.9.2020)
 
 .. sidebar:: *Training Information*
 
-   **Preparation**
-
-   :doc:`Python installation
-   </trainings/material/soup/draft/installation>`
-
    **Start**
 
-   Montag 7.9.2020, 9:00
+   Montag 7.9.2020, 8:00
 
    **Official Description**
 
@@ -33,8 +28,25 @@ programming. There were some special requirements for the training,
 such as to loose a couple of words about AI/machinelearning and other
 topics, as well as a fuzzy "bring us advanced stuff".
 
+Preparation
+-----------
+
+Workspace Setup
+...............
+
+* :doc:`/trainings/material/soup/draft/installation`
+* :doc:`/trainings/material/soup/draft/vscode`
+
+Github for Exercises
+....................
+
+Please create `Github <https://github.com/>`__ accounts and send them
+to training@faschingbauer.co.at. We will do exercises via a private
+repository on Github. (See the :doc:`privacy statement
+</trainings/codex>`.)
+
 Advanced Core Python Topics
-...........................
+---------------------------
 
 Python is easy; one can solve nontrivial problems in only a few lines
 of code, in no time. This does not mean that you have to fully
@@ -62,7 +74,7 @@ covered.
 * :doc:`/trainings/material/soup/draft/starargs/topic`
 
 Special Topics
-..............
+--------------
 
 * :doc:`/trainings/material/soup/draft/ai`
 
@@ -80,7 +92,7 @@ Special Topics
 * Web programming with Jango and/or Flask
 
 Graph
-.....
+-----
 
 .. jf-topicgraph::
    :entries: drafts.ai.linear_regression,

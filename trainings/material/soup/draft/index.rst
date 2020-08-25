@@ -25,6 +25,7 @@ Contents
    import
    mysql
    installation
+   vscode
    encoding
    exceptions
 

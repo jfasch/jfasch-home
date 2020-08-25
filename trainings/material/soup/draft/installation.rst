@@ -8,20 +8,22 @@ Setup
 
 The language itself consists of the Python interpreter itself, and a
 rather complete set of *modules* (one says, "Python comes with
-batteries included"). This - the *python installation* - is the
-primary focus of this training. We might look into `NumPy
-<https://numpy.org/>`__ and/or `Pandas <https://pandas.pydata.org/>`__
-a bit.
+batteries included").
+
+In the training we might look into *external* modules, such as `NumPy
+<https://numpy.org/>`__ and/or `Pandas
+<https://pandas.pydata.org/>`__, but installing these is not the focus
+of the current topic  [#pip_venv]_.
 
 .. note::
 
-   While the training material covers Python versions 2 and 3, time
-   has come to consider version 2 *obsolete*.
+   While the training material covers Python versions 2 and 3 to a
+   large extent, time has come to consider version 2 *obsolete*.
 
    **Please choose Python 3 when installing!**
 
-For the matter of this training, for diadactical purposes, I suggest
-we use the standard Python installation,
+For the matter of the training, for diadactical purposes, I suggest we
+use the standard Python installation,
 
 * Download Windows installer from `here
   <https://www.python.org/downloads/>`__, and go through the
@@ -51,11 +53,8 @@ That said, here's a list of IDEs/editors that are frequently used for
 Python programming. It is in no particular order, and far from being
 complete.
 
-* `Visual Studio Code <https://code.visualstudio.com/>`__. Not to be
-  confused with Visual Studio, Visual Studio Code is actually a modern
-  text editor, not an IDE. Together with its configurabilty, it can be
-  turned into one, but by itself does not dictate anything upon the
-  user.
+* `Visual Studio Code <https://code.visualstudio.com/>`__. See
+  :doc:`here <vscode>` for more.
 * `PyCharm <https://www.jetbrains.com/pycharm/>`__. I frequently see
   people use it, so it cannot be all that bad.
 * `Eclipse <https://www.eclipse.org/>`__ and `PyDev
@@ -76,4 +75,7 @@ complete.
 .. [#anaconda_r] Anaconda also packages the `R
                  <https://www.r-project.org/>`__ language which is
                  also heavily used by data scientists.
+.. [#pip_venv] See :doc:`pip/topic` and :doc:`venv/topic` for how to
+               install external packages.
+
 
