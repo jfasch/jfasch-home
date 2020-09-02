@@ -69,9 +69,9 @@ covered.
 
 * :doc:`/trainings/material/soup/draft/duck-typing`
 * :doc:`/trainings/material/soup/draft/special_methods`
+* :doc:`/trainings/material/soup/draft/starargs/topic`
 * :doc:`/trainings/material/soup/draft/closures/topic`
 * :doc:`/trainings/material/soup/draft/decorators/topic`
-* :doc:`/trainings/material/soup/draft/starargs/topic`
 
 Special Topics
 --------------
