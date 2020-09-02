@@ -15,8 +15,18 @@ Projekte aus selbstständiger Tätigkeit
   * *Zeit*: Jänner 2014 bis dato
   * *Ort*: Raum Graz
 
-* **Backport und Integration eines Touchcontroller-Drivers**, für eine
-  Systemintegrationsfirma im Raum Stuttgart
+.. _dewe-pci-linux:
+
+* **Linux Devicedriver für die PCI Hardware eines
+  Messgeräteherstellers**
+
+  * Anbindung verschiedener Linux Hardwareinterfaces (I2C, SPI, CAN)
+    an die Custom PCI Firmware des Kunden
+  * *Zeit*: Dezember 2012 bis dato
+  * *Ort*: Raum Graz
+
+* **Backport und Integration eines I2C Touchcontroller-Drivers**, für
+  eine Systemintegrationsfirma im Raum Stuttgart
 
   * *Zeit*: Mai 2013
 
@@ -26,13 +36,6 @@ Projekte aus selbstständiger Tätigkeit
   * Anbindung an ein Informationssystem
 
   * *Zeit*: Februar bis Juni 2013
-
-.. _dewe-pci-linux:
-
-* **Devicedriver für die PCI Hardware eines Messgeräteherstellers**
-
-  * *Zeit*: Dezember 2012 bis September 2013
-  * *Ort*: Raum Graz
 
 * **Vollautomatische Installation von Serveranlagen** eines
   Herstellers von Radarüberwachungssystemen
@@ -45,6 +48,7 @@ Projekte aus selbstständiger Tätigkeit
 
   * Update des Betriebssystems
   * Integration eines USB-Touchscreens
+  * Cheat Detection im Münzeinwurf via GPIO Interrupts
 
   * *Zeit*: März 2012 bis April 2012
   * *Firma*: Spielo International
@@ -53,8 +57,9 @@ Projekte aus selbstständiger Tätigkeit
 * **Datenkonvertierung** bei einem Hersteller von
   Radarüberwachungssystemen
 
-  * Konvertierung verschiedener ASTERIX Formate zum Zwecke der
-    Integration externer Datenquellen (in Python)
+  * Konvertierung verschiedener `ASTERIX
+    <https://en.wikipedia.org/wiki/ASTERIX_(ATC_standard)>`__ Formate
+    zum Zwecke der Integration externer Datenquellen (in Python)
   * Export von Daten via SOAP (in Python)
 
   * *Zeit*: Juni 2011 bis März 2012
@@ -63,7 +68,8 @@ Projekte aus selbstständiger Tätigkeit
 * **Integration von IP Kameras** für einen Hersteller von
   Videomautsystemen
 
-  * Implementation einer GigE-Vision Clientlibrary (C++)
+  * Implementation einer `GigE-Vision
+    <https://en.wikipedia.org/wiki/GigE_Vision>`__ Clientlibrary (C++)
   * Softwarebasierte Kamerasimulation (in C++)
 
   * *Zeit*: September 2011 bis April 2012
@@ -72,9 +78,10 @@ Projekte aus selbstständiger Tätigkeit
 * **Verschiedene systemnahe Tätigkeiten** für einen Hersteller von
   Videomautsystemen
 
-  * Integration verschiedener Hardwareteile (Touchscreen, Lagesensor;
-    in C und C++)
-  * Anpassung von [cryptsetup](http://code.google.com/p/cryptsetup/)
+  * Integration verschiedener Hardwareteile (I2C Touchscreen, RS232
+    Lagesensor; in C und C++)
+  * Anpassung von `cryptsetup
+    <https://gitlab.com/cryptsetup/cryptsetup/>`__
     (Filesystemverschlüsselung) an die Anforderungen der
     Embedded-Applikation (in C)
 
@@ -127,7 +134,8 @@ Projekte aus selbstständiger Tätigkeit
   * Embedded Linux
 
   * *Zeit*: September 2010 bis dato
-  * *Firma*: Mathias Kettner
+  * *Firma*: `Mathias Kettner
+    <https://checkmk.de/training-topics.html>`__
   * *Ort*: München
 
 * **Schulungen** aus dem Umkreis Linux
@@ -136,7 +144,7 @@ Projekte aus selbstständiger Tätigkeit
   * Embedded Linux
 
   * *Zeit*: November 2010 bis dato
-  * *Firma*: Bodenseo
+  * *Firma*: `Bodenseo <https://bodenseo.de/>`__
   * *Ort*: Singen am Bodensee
 
 Projekte aus nichtselbstständiger Tätigkeit

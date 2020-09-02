@@ -39,9 +39,13 @@ Curriculum Vitae
     OSE nach Linux beteiligt.
   * Systemnahe Programmierung unter Linux in C/C++.
 
-* Seit April 2010 selbstständig.
-* 2018/19 bei AVL in Graz in einem Teilzeitdienstverhältnis (quasi um
-  zu erkennen, dass ich in der Tat selbstständig bin).
+* **Seit April 2010 selbstständig.**
+* FH Joanneum in Kapfenberg (2011 bis 2015)
+
+  * Lehrveranstaltung *Systemnahe Programmierung* im Lehrgang
+    *Software Design*
+
+* AVL in Graz (2018/2019)
 
   * Linuxexperte
   * Architekt
