@@ -17,7 +17,7 @@ Contents
    venv/topic
    pip/topic
    duck-typing
-   context_manager
+   context_manager/topic
    special_methods
    starargs/topic
    decorators/topic
