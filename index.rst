@@ -45,7 +45,7 @@ Schulung
 * Systemnahe Programmierung und Kernelhacking
 * C und C++
 * Python
-* Unittesting
+* Unittesting, Test Driven Development, Agile Methoden
 * Buildmanagement und Versionskontrolle
 * Design und Architektur
 

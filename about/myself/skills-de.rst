@@ -10,6 +10,8 @@ Skills
   * Kerneldriver Entwicklung
   * Serielle Protokolle (RS232, RS485)
   * I2C (In-Kernel und Userspace)
+  * SPI (In-Kernel und Userspace)
+  * GPIO (In-Kernel und Userspace)
   * USB (Host und Device, mit libusb und GadgetFS)
   * Modbus
   * Portierung von verschiedenen Embedded RTOS nach Linux
