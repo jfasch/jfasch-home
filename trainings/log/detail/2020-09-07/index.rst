@@ -21,7 +21,8 @@ Python Advanced (7.9.2020 - 10.9.2020)
    .. csv-table::
 
       :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/python`
-      PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
+      PDF Slides (Python obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
+      PDF Slides (Design Patterns), :download:`Design Patterns </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 
 This is a training for a team which is already experienced in Python
 programming. There were some special requirements for the training,
@@ -58,7 +59,7 @@ knew more. Here the more advanced core Python topics that shall be
 covered.
 
 * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/draft/context_manager`
+* :doc:`/trainings/material/soup/draft/context_manager/topic`
 * :doc:`/trainings/material/soup/draft/encoding`
 * :doc:`/trainings/material/soup/draft/exceptions`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
@@ -91,6 +92,62 @@ Special Topics
 
 * Web programming with Jango and/or Flask
 
+TODO
+----
+
+Log
+...
+
+* Day 1: fast forward, basically. Mainly covered
+
+  * (im)mutability
+  * sequential types; indexing/slicing
+  * else clauses on ``while`` and ``for``
+
+* Day 2
+
+  * livehacking *iteration*
+
+    * start with ``squares()`` function, over ``[1,2,3]``
+    * list comprehension
+    * larger input list: 10000000, first filled with manual ``while``
+      loop. then filled with for/in/range(10000000).
+    * not at all fill list with anything, but rather pass range to
+      ``squares()`` directly.
+    * squares still has temporary list
+    * enter ``yield``
+
+  * livehacking OO
+
+    * ``oo.py``
+
+      * initially: ``Thermometer``, ctor, ``get_temperature()``
+      * ``__init__``, ``self``, etc. (``self`` can also read ``this``)
+      * ``th.__dict__``
+      * *private*, pros and cons
+      * properties (r/w)
+   
+    * inheritance
+
+      * ``abstract-base-class.py``, ``abstract-base-class.cpp``
+      * insert one step *without* ``abc`` before it, and then show
+        what ``abc`` can do
+      * explain "check errors as early as can" |longrightarrow| at
+        ctor time, rather than at method call time.
+
+    * patterns
+
+      * ``composite.py``
+      * ``adapter.py``
+
+Videos
+......
+
+* Beazley metaprogramming 3h
+* Hettinger "Own the Dot"
+* Schaefer Properties maybe
+
+
 Graph
 -----
 
@@ -109,3 +166,4 @@ Graph
 	     drafts.mysql,
 	     drafts.installation,
 	     drafts.exceptions
+
