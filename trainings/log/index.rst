@@ -20,6 +20,22 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Linux Basics (30.11.2020 - 3.12.2020)
+-------------------------------------
+
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht, und wird
+gerade vorbereitet.
+
+(:doc:`Mehr ... <detail/2020-11-30/index>`)
+
+Python Basics (19.10.2020 - 22.10.2020)
+---------------------------------------
+
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht, und wird
+gerade vorbereitet.
+
+(:doc:`Mehr ... <detail/2020-10-19/index>`)
+
 Python Basics (28.9.2020 - 30.9.2020)
 -------------------------------------
 
