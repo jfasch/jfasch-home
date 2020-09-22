@@ -20,10 +20,17 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Basics (28.9.2020 - 30.9.2020)
+-------------------------------------
+
+Dieser Kurs wird gerade vorbereitet.
+
+(:doc:`Mehr ... <detail/2020-09-28/index>`)
+
 Python Advanced (7.9.2020 - 10.9.2020 bei einer Firma in Gmunden)
 -----------------------------------------------------------------
 
-Kursnachbearbeitung ist in Arbeit ... 
+Kursnachbearbeitung ist in Arbeit.
 
 (:doc:`Mehr ... <detail/2020-09-07/index>`)
 
