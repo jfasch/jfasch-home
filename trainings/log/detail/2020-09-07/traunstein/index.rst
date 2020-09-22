@@ -1,3 +1,9 @@
+.. meta::
+   :description: Auf den Traunstein über den Zierlersteig:
+                 unversichert, unmarkiert, saugeil
+   :keywords: gmunden, traunsee, traunstein, zierlersteig, hiking,
+              bergsteigen, climbing, klettern
+
 Traunstein via Zierlersteig
 ===========================
 
@@ -28,8 +34,8 @@ Zusammenfassung:
 Die Tour war eine der schönsten, die ich jemals gemacht habe, was
 nicht zuletzt an der traumhaften Gegend und vor allem am Traunsee
 liegt, der immer in Griffweite erscheint. Hier ein paar Eindrücke
-davon; nichts als ein müder Abklatsch der Erinnerungen, die sich in
-mein Hirn eingebrannt haben.
+davon; sie sind nichts als ein müder Abklatsch der Erinnerungen, die
+sich in mein Hirn eingebrannt haben.
 
 .. contents::
    :local:
