@@ -41,6 +41,7 @@ extensions = [
     'nbsphinx',
     'sphinxcontrib.fulltoc',
     'sphinxcontrib.programoutput',
+    'sphinxcontrib.images',
 
     'jf.topic',
 

@@ -6,6 +6,11 @@ Python Advanced (7.9.2020 - 10.9.2020)
 .. contents::
    :local:
 
+.. toctree::
+   :hidden:
+
+   traunstein/index
+
 .. sidebar:: *Training Information*
 
    **Start**
@@ -46,8 +51,11 @@ to training@faschingbauer.co.at. We will do exercises via a private
 repository on Github. (See the :doc:`privacy statement
 </trainings/codex>`.)
 
+Agenda
+------
+
 Advanced Core Python Topics
----------------------------
+...........................
 
 Python is easy; one can solve nontrivial problems in only a few lines
 of code, in no time. This does not mean that you have to fully
@@ -63,11 +71,6 @@ covered.
 * :doc:`/trainings/material/soup/draft/encoding`
 * :doc:`/trainings/material/soup/draft/exceptions`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
-
-  * TODO: separate *module usage* (|longrightarrow| "The ``import``
-    statement", ``PYTHONPATH``, etc.)  from *module content*
-    (``__all__``, ``__init__.py``, etc.)
-
 * :doc:`/trainings/material/soup/draft/duck-typing`
 * :doc:`/trainings/material/soup/draft/special_methods`
 * :doc:`/trainings/material/soup/draft/starargs/topic`
@@ -75,7 +78,7 @@ covered.
 * :doc:`/trainings/material/soup/draft/decorators/topic`
 
 Special Topics
---------------
+..............
 
 * :doc:`/trainings/material/soup/draft/ai`
 
@@ -92,17 +95,38 @@ Special Topics
 
 * Web programming with Jango and/or Flask
 
+Finishing
+---------
+
+Day 1
+.....
+
+Rushed through basics,
+
+* :doc:`/trainings/material/soup/python/python_0140_variables/topic`
+* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
+* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/python_0170_if/topic`
+
+Put a strong focus on Python features,
+
+* :doc:`/trainings/material/soup/python/python_0250_refs_flat_deep_copy/topic`
+* :doc:`/trainings/material/soup/python/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/python_0193_while/topic`. The
+  ``else`` clause, mainly - everyone was supposed to know what a
+  ``while`` loop is.
+* :doc:`/trainings/material/soup/python/python_0220_for/topic`.
+
+  * ``else`` clause
+  * :doc:`/trainings/material/soup/python/python_0225_range/topic`. Whetting
+    appetite for the *Iteration* livehacking session on day 2.
+
 TODO
 ----
 
 Log
 ...
-
-* Day 1: fast forward, basically. Mainly covered
-
-  * (im)mutability
-  * sequential types; indexing/slicing
-  * else clauses on ``while`` and ``for``
 
 * Day 2
 
@@ -140,6 +164,43 @@ Log
       * ``composite.py``
       * ``adapter.py``
 
+* Day 3
+
+  * revisit ``abstract-base-class.py``. morph into ``duck-typing.py``,
+    explaining how ``abc`` shifts duck errors from *call* to
+    *initialization*
+  * visitor pattern
+
+    * ``visitor.py``, complicated with class with callback. sideways:
+
+      * show how ``__call__`` makes a class callable.
+      * show how ``__str__`` and ``__repr__`` work together in
+        ``print()``
+
+    * ``visitor-generator.py``, making ``dfs()`` iterable. ``yield
+      from``
+    * TODO: Turn that into a screenplay
+
+  * TDD and Unit Testing theory
+
+  * Start hacking on project. Agreed upon myself doing live
+    hacking. Doing TDD.
+    
+    * ``sensordata.py``, and ``sensordata_tests.py``. Prepare TDD;
+      explain suites, cases, fixture, assertions.
+    * While writing data classes (holding only attributes and no
+      functionality), explain ``namedtuple``.
+    * Slowly fix things, in a test driven way. Discuss, team giving
+      input, all really fine.
+
+* Day 4
+
+  * Decorators (starargs and closures); mainly to see how flask routes
+    work.
+  * CSV import
+  * sqlite3 export, trying out dbapi2
+  * flask frontend, reading sqlite3 db
+
 Videos
 ......
 
@@ -147,6 +208,23 @@ Videos
 * Hettinger "Own the Dot"
 * Schaefer Properties maybe
 
+After Work Party
+................
+
+From my point of view, the training went really fine. Not everyone is
+equally satisfied with the outcome (we didn't get to the AI topics,
+for example), but I have the impression that I brought it over.
+
+As a gift to myself, I had reserved Thursday night at `Gmundner Hütter
+<http://members.aon.at/traunstein/>`__. After the training I went back
+to `Hoisn Wirt <https://www.hoisnwirt.at/>`__ (which is where I stayed
+during the training - really fine), changed clothes, and started to
+climb the `Traunstein
+<https://de.wikipedia.org/wiki/Traunstein_(Berg)>`__ via `Zierlersteig
+<https://www.alpenvereinaktiv.com/de/tour/am-zierlersteig-auf-den-traunstein-1691-m/10620837/>`__.
+
+See :doc:`here <traunstein/index>` for the description and pictures from
+this extraordinary hike.
 
 Graph
 -----

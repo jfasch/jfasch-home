@@ -23,7 +23,7 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
 Python Advanced (7.9.2020 - 10.9.2020 bei einer Firma in Gmunden)
 -----------------------------------------------------------------
 
-Der Kurs ist in Vorbereitung.
+Kursnachbearbeitung ist in Arbeit ... 
 
 (:doc:`Mehr ... <detail/2020-09-07/index>`)
 
