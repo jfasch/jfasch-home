@@ -9,5 +9,14 @@ Iteration and Generation
 
    screenplay
 
+The :doc:`screenplay <screenplay>` covers
+
+* List comprehensions
+* The ``range`` function
+* Writing generators using ``yield``
+* Generator expressions
+
+See also 
+
 .. jf-topicgraph:: 
    :entries: drafts.iteration_generation

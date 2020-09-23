@@ -29,6 +29,10 @@ Python Advanced (7.9.2020 - 10.9.2020)
       PDF Slides (Python obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
       PDF Slides (Design Patterns), :download:`Design Patterns </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 
+   **Github Private Repository**
+
+   https://github.com/jfasch/2020-09-07
+
 This is a training for a team which is already experienced in Python
 programming. There were some special requirements for the training,
 such as to loose a couple of words about AI/machinelearning and other
@@ -122,84 +126,197 @@ Put a strong focus on Python features,
   * :doc:`/trainings/material/soup/python/python_0225_range/topic`. Whetting
     appetite for the *Iteration* livehacking session on day 2.
 
-TODO
-----
+Day 2
+.....
 
-Log
-...
+* Livehacking:
+  :doc:`/trainings/material/soup/draft/iteration-generation/topic`,
+  covering
 
-* Day 2
+  * List comprehensions
+  * The ``range`` function
+  * Writing generators using ``yield``
+  * Generator expressions
 
-  * Livehacking: :doc:`/trainings/material/soup/draft/iteration-generation/topic`
-  * livehacking OO
+* Livehacking OO
 
-    * ``oo.py``
+  * ``joerg-livehacking/oo.py``
 
-      * initially: ``Thermometer``, ctor, ``get_temperature()``
-      * ``__init__``, ``self``, etc. (``self`` can also read ``this``)
-      * ``th.__dict__``
-      * *private*, pros and cons
-      * properties (r/w)
-   
-    * inheritance
+    * initially: ``Thermometer``, ctor, ``get_temperature()``
+    * ``__init__``, ``self``, etc. (``self`` can also read ``this``)
+    * ``th.__dict__``
+    * *private*, pros and cons
+    * properties (r/w)
+ 
+  * inheritance
 
-      * ``abstract-base-class.py``, ``abstract-base-class.cpp``
-      * insert one step *without* ``abc`` before it, and then show
-        what ``abc`` can do
-      * explain "check errors as early as can" |longrightarrow| at
-        ctor time, rather than at method call time.
+    * ``joerg-livehacking/abstract-base-class.py``, ``joerg-livehacking/abstract-base-class.cpp``
+    * insert one step *without* ``abc`` before it, and then show what
+      ``abc`` can do
+    * explain "check errors as early as can" |longrightarrow| at ctor
+      time, rather than at method call time.
 
-    * patterns
+* Livehacking design patterns
 
-      * ``composite.py``
-      * ``adapter.py``
+  * ``joerg-livehacking/composite.py``. Using the thermometer
+    hierarchy, a "composite" thermometer was created. That thermometer
+    uses (*has*) a set of concrete thermometers to calculate the
+    average room temperature.
+  * ``joerg-livehacking/adapter.py``. Fictional scenario ...
 
-* Day 3
+    * The ``Unser`` thermometer framework contains a number of
+      thermometer implementations which all support the
+      ``get_temperature_celsius()`` method.
+    * A collaboration with a competitor is launched. That competitor
+      has a similar set of thermometer implementations. The difference
+      between ``Eana`` and ``Unser`` is that ``Eana`` thermometers do
+      not support ``get_temperature_celsius()``, but rather only
+      ``get_temperature_fahrenheit()``.
+    * We employ the *adapter pattern* and create one special
+      thermometer in the ``Unser`` hierarchy
 
-  * revisit ``abstract-base-class.py``. morph into ``duck-typing.py``,
-    explaining how ``abc`` shifts duck errors from *call* to
+      .. code-block:: python
+
+         class EanaAdapter(UnserThermometer):
+	     ...
+
+Day 3
+.....
+
+* Revisit abstract base classes
+
+  * Discuss duck typing.
+  * Morph ``joerg-livehacking/abstract-base-class.py`` into
+    ``joerg-livehacking/duck-typing.py``.
+  * Explaining how ``abc`` shifts duck errors from *call* to
     *initialization*
-  * visitor pattern
 
-    * ``visitor.py``, complicated with class with callback. sideways:
+* Visitor pattern. Not every pattern in the `"Gang of Four" book
+  <https://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612>`__
+  should be considered a real pattern. For example, the `Visitor
+  pattern <https://en.wikipedia.org/wiki/Visitor_pattern>`__ turn into
+  an idiom for languages that don't support generators.
 
-      * show how ``__call__`` makes a class callable.
-      * show how ``__str__`` and ``__repr__`` work together in
-        ``print()``
+  * ``joerg-livehacking/visitor.py``. Classic OO implementation of the
+    visitor pattern as a `DFS traversal
+    <https://en.wikipedia.org/wiki/Depth-first_search>`__. Together
+    with callbacks and all convolutions. Took sideways like,
 
-    * ``visitor-generator.py``, making ``dfs()`` iterable. ``yield
-      from``
-    * TODO: Turn that into a screenplay
+    * show how ``__call__`` makes a class callable.
+    * show how ``__str__`` and ``__repr__`` work together in
+      ``print()``
 
-  * TDD and Unit Testing theory
+  * ``joerg-livehacking/visitor-generator.py``. "I don't want to
+    implement a visitor!", poor user says. "I only want to iterate
+    over the tree in DFS order!"
 
-  * Start hacking on project. Agreed upon myself doing live
-    hacking. Doing TDD.
-    
-    * ``sensordata.py``, and ``sensordata_tests.py``. Prepare TDD;
-      explain suites, cases, fixture, assertions.
-    * While writing data classes (holding only attributes and no
-      functionality), explain ``namedtuple``.
-    * Slowly fix things, in a test driven way. Discuss, team giving
-      input, all really fine.
+    Implement DFS iteration using ``yield from`` which delegates
+    iteration into recursion.
 
-* Day 4
+* TDD and Unit Testing theory; using excerpts from the
+  :download:`Design Patterns
+  </trainings/material/pdf/060-design-patterns-unittests.pdf>` deck of
+  slides. Explain terminology; *fixtures* and such.
 
-  * Decorators (starargs and closures); mainly to see how flask routes
+* Start hacking on project. Agreed upon myself doing live
+  hacking. Doing TDD.
+  
+  * ``Project/sensor/sensordata.py``, and
+    ``Project/tests/sensordata_tests.py``. Prepare TDD; explain
+    suites, cases, fixture, assertions.
+  * While writing data classes (holding only attributes and no
+    functionality), explain ``namedtuple``. Use that to implement
+    ``sensor.sensordata.HistoryData``.
+  * Slowly fix things, in a test driven way. Discuss, team giving
+    input, all really fine.
+
+Day 4
+.....
+
+  * Decorators theory, and livehacking. Mainly to see how flask routes
     work.
-  * CSV import
-  * sqlite3 export, trying out dbapi2
-  * flask frontend, reading sqlite3 db
 
-Videos
-......
+    * :doc:`/trainings/material/soup/draft/starargs/topic`
+    * :doc:`/trainings/material/soup/draft/closures/topic`
+    * :doc:`/trainings/material/soup/draft/decorators/topic`
 
-* Beazley metaprogramming 3h
-* Hettinger "Own the Dot"
-* Schaefer Properties maybe
+  * Continue project; add CSV
+    import. 
+
+    ``Project/programs/csvreport.py``
+  * `sqlite3 <https://docs.python.org/3/library/sqlite3.html>`__
+    export, trying out the `DBAPI 2.0 interface
+    <https://www.python.org/dev/peps/pep-0249/>`__. 
+
+    ``Project/programs/csv2sqlite3.py``
+  * Flask frontend, reading ``sqlite3`` db.
+
+    ``Project/programs/flaskerl.py``
+
+Recommended Tutorials
+---------------------
+
+We couldn't cover everything we would have liked to. Here is a random
+list of tutorial to watch in quiet moments.
+
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__. **Raymond
+  Hettinger**, reiterating his favorite phrase: "There must be a
+  better way". (Hettinger is a "Python Core Developer".)
+* `Python Tutorial: Duck Typing and Asking Forgiveness, Not Permission
+  (EAFP) <https://www.youtube.com/watch?v=x3v9zMX1s4s>`__. **Corey
+  Schafer** about *Duck Typing*, and the word *Pythonic*. Corey
+  Schafer has a number of very good Tutorials; he manages to keep
+  those short and to the point, and rarely exceeds 15 minutes.
+* `Python Tutorial: Unit Testing Your Code with the unittest Module
+  <https://www.youtube.com/watch?v=6tNS--WetLI>`__. Our project was
+  guided by unit tests; here's **Corey Schafer** about the
+  ``unittest`` module.
+* `Python Tutorial: Decorators - Dynamically Alter The Functionality
+  Of Your Functions <https://www.youtube.com/watch?v=FsAPt_9Bf3U>`__.
+  **Corey Schafer** about decorators. Mine was better :-)
+* `Built in Super Heroes
+  <https://www.youtube.com/watch?v=lyDLAutA88s>`__. **David Beazley**
+  in an entertaining keynote to the "PyData Chicago 2016"
+  conference. He has a number of very good and entertaining (and very
+  advanced) videos. You have to spend an entire evening with him
+  though.
+* `Concurrency <https://www.youtube.com/watch?v=9zinZmE3Ogk>`__:
+  **Raymond Hettinger** covering most if not all aspects and
+  possiblities of concurrency. Very informative, very concise,
+  covering
+
+  * Multithreading
+  * Multiprocessing
+  * Async; I didn't even mention that. `asyncio
+    <https://docs.python.org/3/library/asyncio.html>`__. Me big fan.
+* `Understanding the Python GIL
+  <https://www.youtube.com/watch?v=Obt-vMVdM8s>`__: **David Beazley**
+  dissecting the Global Interpreter Lock, explaining why
+  multiprocessing is better. At around minute 45, in the
+  questions/answers, there a mention that using NumPy operations in
+  multiple threads is *truly parallel*.
+* `Modules and Packages
+  <https://www.youtube.com/watch?v=0oTh1CXRaQ0>`__. **David Beazley**
+  has a three hour (!) *really cool and in-depth* look into the
+  seemingly simple ``import`` mechanism.
+* `Virtual Environments Tutorial
+  <https://www.youtube.com/watch?v=APOPm01BVrk>`__: **Corey Schafer**
+  again. Virtual environments are kind of an isolated development
+  sandbox, solving a similar problem as containers do, but much more
+  lightweight and Python only.
+* `Packaging, Deployment, PyPI, and pip
+  <https://www.youtube.com/watch?v=P3dY3uDmnkU>`__: **Chris Wilcox**
+  (of Google) talking about packaging and deployment, and related
+  topics
+* `Generators: The Final Frontier
+  <https://www.youtube.com/watch?v=D1twn9kLmYg>`__: **David Beazley**,
+  again a bit (a whopping four hours) more precise on that topic.
+* `NumPy Tutorial <https://www.youtube.com/watch?v=GB9ByFAIAH4>`__:
+  **Keith Galli** has a number of good **data science** tutorials.
 
 After Work Party
-................
+----------------
 
 From my point of view, the training went really fine. Not everyone is
 equally satisfied with the outcome (we didn't get to the AI topics,

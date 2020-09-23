@@ -20,8 +20,7 @@ Linux Basics (30.11.2020 - 3.12.2020)
 
    .. csv-table::
 
-      PDF Slides, :download:`Shell Scripting
-      </trainings/material/pdf/100-shell-scripting.pdf>`
+      PDF Slides, :download:`Shell Scripting </trainings/material/pdf/100-shell-scripting.pdf>`
 
 Preparation
 -----------

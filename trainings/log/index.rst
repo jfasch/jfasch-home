@@ -43,10 +43,14 @@ Dieser Kurs wird gerade vorbereitet.
 
 (:doc:`Mehr ... <detail/2020-09-28/index>`)
 
-Python Advanced (7.9.2020 - 10.9.2020 bei einer Firma in Gmunden)
------------------------------------------------------------------
+Python Advanced (7.9.2020 - 10.9.2020)
+--------------------------------------
 
-Kursnachbearbeitung ist in Arbeit.
+Ein Inhouse-Kurs bei einer Firma im schönen Gmunden. Ein homogenes
+Team aus 10 Teilnehmern, die die Kursführung aktiv mitgestaltet haben.
+
+Als Kursabschluss war der Traunstein dran, der in ganz Oberösterreich
+provokant sichtbar ist und schon lange fällig war.
 
 (:doc:`Mehr ... <detail/2020-09-07/index>`)
 
