@@ -130,17 +130,7 @@ Log
 
 * Day 2
 
-  * livehacking *iteration*
-
-    * start with ``squares()`` function, over ``[1,2,3]``
-    * list comprehension
-    * larger input list: 10000000, first filled with manual ``while``
-      loop. then filled with for/in/range(10000000).
-    * not at all fill list with anything, but rather pass range to
-      ``squares()`` directly.
-    * squares still has temporary list
-    * enter ``yield``
-
+  * Livehacking: :doc:`/trainings/material/soup/draft/iteration-generation/topic`
   * livehacking OO
 
     * ``oo.py``
