@@ -183,7 +183,7 @@ Zum Schluss noch eine Schnecke auf Jägerbrot im Schein der Stirnlampe.
 
 Gleich beim Ausstieg des `Hernlersteigs
 <https://www.bergsteigen.com/touren/klettersteig/hans-hernler-steig-hernlersteig/>`__,
-in den der Zierlersteig ganz zum Schuss mündet, ist die
+in den der Zierlersteig ganz zum Schluss mündet, ist die
 Gmundnerhütte. Sehr gemütlich, nette Wirtsleut mit denen man bis lang
 nach Hüttenruhe ansitzen kann. Leider machen sie einem keinen
 Schweinsbraten mehr, wenn man nach 9 reinkommt und sie die Küche schon
