@@ -102,6 +102,10 @@ Special Topics
 Finishing
 ---------
 
+Following is a recap of what has happened. File names are relative to
+the root of the `Github repository
+<https://github.com/jfasch/2020-09-07>`__ we were working from.
+
 Day 1
 .....
 
