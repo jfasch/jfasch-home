@@ -20,57 +20,45 @@ Linux Basics (30.11.2020 - 3.12.2020)
 
    .. csv-table::
 
+      PDF Slides, :download:`Linux Basics </trainings/material/pdf/010-linux-basics.pdf>`
       PDF Slides, :download:`Shell Scripting </trainings/material/pdf/100-shell-scripting.pdf>`
 
 Preparation
 -----------
 
-Workspace Setup
-...............
-
-* :doc:`/trainings/material/soup/draft/installation`
-* :doc:`/trainings/material/soup/draft/vscode`
+I will bring a number of Raspberry Pi computers, similar to what the
+trainees will be working with at their jobs - embedded Linux. I'll
+also bring network equipment to make the training environment pretty
+autonomous. No preparation needed from company side.
 
 Agenda
 ------
 
-This is a preliminary list of basic topics. The audience is rather
-homogeneous, and the agenda is rather open to special questions.
+This is a preliminary list of topic that we will cover. Please send
+suggestions to training@faschingbauer.co.at.
 
-* Variables and Types
+* Overview of concepts
+* Commandline - the Bourne Shell
+* Filesystem
 
-  * Numerical types such as integer, floating point, boolean
-  * Sequential types such as list, tuple, string
-  * Indexing, slicing and other operations on sequential types
-  * Associative types such as dictionaries and sets
-  * Mutable versus immutable
+  * File Types
+  * Tools (``cp``, ``mv``, ``rm``, ...)
+  * Permissions
 
-* Control Flow
+* More Commandine
 
-  * ``if``
-  * ``while``
-  * ``for``: more about *iteration*
+  * More Tools: ``grep``, ``find``, ``head``, ``tail``
+  * IO Redirection
+  * The Pipe
+  * Archiving and Comressing (``gzip``/``bzip2``, ``tar``)
 
-* Functions
+* Diagnosing
 
-  * Why and how
-  * Parameters passing: positional versus keyword parameters, default
-    parameters
-  * Return values
+  * Processes: ``ps``, ``top``, and ``procfs`` (and *scheduling* in general)
+  * Network: ``netstat`` and ``netcat``/``nc``
 
-* Exception Handling
+* Shell Scripting
 
-  * The exception hierarchy in the standard library
-  * How to define custom exception classes
-  * Raising exceptions, and reacting on them
-
-* Strings — Advanced Features
-
-  * String methods
-  * Formatting
-  * Encoding: what it is, and how Python solves encoding problems
-
-* File I/O
-
-  * Opening and/or creating files
-  * Reading and writing
+  * Syntax and Concepts
+  * Control Flow: ``if``, ``while``, ``case``
+  * Functions, Blocks, and Subshells

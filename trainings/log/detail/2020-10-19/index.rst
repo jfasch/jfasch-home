@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Python Basics (19.10.2020 - 22.10.2020)
-=======================================
+Python Basic and Advanced (19.10.2020 - 22.10.2020)
+===================================================
 
 .. contents::
    :local:
@@ -35,8 +35,9 @@ Workspace Setup
 Agenda
 ------
 
-This is a preliminary list of basic topics. The audience is rather
-homogeneous, and the agenda is rather open to special questions.
+This is a preliminary list of *very basic* topics. The *advanced* part
+of the training is under discussion. Please send feedback/suggestions to
+training@faschingbauer.co.at.
 
 * Variables and Types
 
@@ -75,3 +76,31 @@ homogeneous, and the agenda is rather open to special questions.
 
   * Opening and/or creating files
   * Reading and writing
+
+* Advanced Topics
+
+  * Database Programming
+  * Web Programming with Flask
+
+Log
+---
+
+Day 1
+.....
+
+* :doc:`/trainings/material/soup/python/python_0110_blahblah/topic`
+* :doc:`/trainings/material/soup/python/python_0120_helloworld/topic`
+* :doc:`/trainings/material/soup/python/python_0130_syntax_etc/topic`
+* :doc:`/trainings/material/soup/python/python_0140_variables/topic`
+* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
+* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/python_0160_boolean/topic`
+* :doc:`/trainings/material/soup/python/python_0170_if/topic`
+* :doc:`/trainings/material/soup/python/python_0190_exercises/topic`
+* :doc:`/trainings/material/soup/python/python_0193_while/topic`
+* :doc:`/trainings/material/soup/python/python_0195_exercises/topic`
+* :doc:`/trainings/material/soup/python/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/python_0220_for/topic`
+* :doc:`/trainings/material/soup/python/python_0270_functions/topic`
+* :doc:`/trainings/material/soup/python/python_0275_exercises/topic` (exercise 1 "Prime" only)

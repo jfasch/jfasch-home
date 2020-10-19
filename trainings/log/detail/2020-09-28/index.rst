@@ -83,3 +83,40 @@ homogeneous team - chances are that we will deviate as much as we can.
 
   * Opening and/or creating files
   * Reading and writing
+
+Log
+---
+
+Day 1
+.....
+
+Day 2
+.....
+
+* Datastructures: ``list``, `dict``, ``set``
+* Functions, parameter passing
+* Generators
+* Exercises: ``exercise4/joerg/uniq.py``,
+  ``exercise4/joerg/uniq-yield.py``. Fill in comments, move into
+  ``livehacking/``.
+
+  * Discussion: *lookup* runtime behavior of data structures (``list``
+    vs. ``set``). *Make a dedicated section in summary page.*
+
+Day 3
+.....
+
+* File IO; https://www.youtube.com/watch?v=Uh2ebFW8OYM
+* Modules and packages; https://www.youtube.com/watch?v=f26nAmfJggw
+* Demo hacking
+
+  * ``livehacking/uniq-modularized/``
+
+* Group exercise ``group-exercise/``
+
+
+
+Links
+-----
+
+https://www.youtube.com/watch?v=5qQQ3yzbKp8&lc=UghArKscoP9uTHgCoAEC

@@ -15,6 +15,7 @@ Linux Basics: Eine Einführung Anhand von Beispielen
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 3 Tage
+      PDF Slides, :download:`linux-basics </trainings/material/pdf/010-linux-basics.pdf>`
 
 Dieser Kurs liefert einen grundlegenden Einblick in die Shell, mit
 Hinblick auf das Verständnis des Betriebssystems.
