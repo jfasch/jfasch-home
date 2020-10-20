@@ -103,4 +103,46 @@ Day 1
 * :doc:`/trainings/material/soup/python/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/python_0275_exercises/topic` (exercise 1 "Prime" only)
+* :doc:`/trainings/material/soup/python/python_0275_exercises/topic`:
+  exercise 1 "Prime"
+
+Day 2
+.....
+
+* Observation by Thomas: "as opposed to C# I need to define a function
+  before I can use it"
+
+  Longish answer ...
+
+  * Variables are *names* that refer to objects
+  * ``def`` is only a *statement*: creates a *function* object, and
+    points a *name* (the function name to it)
+  * Cannot use a *name* that is not there
+  * Show how to delete (and resurrect) the ``int`` type
+
+* :doc:`/trainings/material/soup/python/python_0275_exercises/topic`
+
+  * Exercise 2: ``uniq()``. 
+
+    * TODO: Screenplay
+
+      * Complicated iteration over outputsequence, only to determine
+        membership. First with a flag, then with an ``else`` clause.
+      * ``in`` operator on outputsequence
+      * Performance: using a ``set`` for have-ness
+
+  * Exercise 3: ``join()``. Sketch multiple ways to solve the problem.
+
+    * ``join-manual-index.py``
+    * ``join-manual-index-range.py``
+    * ``join-slicing.py``
+    * ``join-enumerate.py``
+
+* ``for`` loops
+
+  * :doc:`/trainings/material/soup/python/python_0220_for/topic`
+  * :doc:`/trainings/material/soup/python/python_0225_range/topic`,
+    and the *iterator protocol*
+
+* Generators:
+  :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
