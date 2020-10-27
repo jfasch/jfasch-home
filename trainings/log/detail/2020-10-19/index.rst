@@ -82,8 +82,38 @@ training@faschingbauer.co.at.
   * Database Programming
   * Web Programming with Flask
 
-Log
----
+Additional Topics, brought in by Thomas
+.......................................
+
+* Programmverweise mit import XY und Aufruf von XY.ZAB
+* JSON Handling
+* Exception Handling
+* with open(eventCodeFile, 'r') as f:
+    definedLISAEvents = json.load(f)['event_ids']
+* print (f'bla{variable}blubb'} : was macht das f hier? (habe gesehen, eine verbesserte Stringformatierung in Python3?)
+* CTYPES
+* Klassen und deren Aufruf im .py Code
+* Headerfiles (.h) verwenden
+* from lib import *
+* .lst Files (Listen?)
+* Socket module
+* Shell script inclusion
+* Code Snippet: "@cs.CALLBACKFUNC" was macht das?
+
+Outcome
+-------
+
+Notebook
+........
+
+.. toctree::
+
+   Notebook
+
+Links
+
+* :doc:`Link to entire notebook <Notebook>`
+* Download notebook: :download:`Notebook.ipynb`
 
 Day 1
 .....
@@ -146,3 +176,63 @@ Day 2
 
 * Generators:
   :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
+
+  * TODO: reference ``fibo-*.py`` files
+
+Day 3
+.....
+
+* Comprehension expressions
+
+  * List comprehension, from
+    :doc:`/trainings/material/soup/python/python_0400_lists/topic` (live hacking `here <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/list-comprehension.py>`__)
+  * Generator expression (live hacking `here <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/generator-expression.py>`__
+  * Dictionary comprehension (live hacking `here <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/dictionary-comprehension.py>`__)
+
+* File IO
+
+  * :doc:`/trainings/material/soup/python/python_0500_files/topic`
+  * The ``with`` statement: *context managers*
+
+* Group exercise
+
+  A CAN bus log is gathered by software running on a device. That log
+  contains CAN frames, basically. It has CSV format, suitable for
+  analysis with Excel. One wants to automate the process of log
+  analysis, at least to a certain extent.
+
+  * Start with the ``csv`` module: read the log file, print the
+    content of each row. *Iteration*, basically, and some *tuple
+    unpacking*.
+  * Sideway: *encoding*. The logfile is in ``cp1252`` format.
+
+Day 4
+.....
+
+* *Plan*
+
+  * unify
+  * Format a message list to JSON
+  * Cut out a time interval from a larger list
+  * Show how CAN bus programming is done in Linux and Python, using
+    the ``socket`` module.
+  * Explain ``**kwargs``, see :doc:`here
+    </trainings/material/soup/draft/starargs/topic>` for more. TODO:
+    link to ``DictReader`` example in exercises.
+
+* Class ``Message`` to hold rows
+* Function to read CSV into a list of ``Message`` objects
+* Modularization: message, reader, and one main program that prints
+  out messages
+
+
+
+
+Links
+-----
+
+https://www.youtube.com/watch?reload=9&v=EiOglTERPEo
+https://www.youtube.com/watch?v=OSGv2VnC0go
+
+
+CAN slides
