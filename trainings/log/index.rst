@@ -20,6 +20,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Linux Kernel Driver Development Basics
+--------------------------------------
+
+Dieser Kurs ist in Vorbereitung.
+
+(:doc:`Mehr ... <detail/2020-12-XX/index>`)
+
 Linux Basics (30.11.2020 - 3.12.2020)
 -------------------------------------
 

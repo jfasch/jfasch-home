@@ -16,7 +16,7 @@ Kernelprogrammierung: Einführung
    .. csv-table::
 
       Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
+      Dauer, 5 Tage
       Sourcecode, `jf-kernel-course <https://github.com/jfasch/jf-kernel-course>`__
 
 Der Linux Kernel ist zu verzweigt und komplex, um in eine Schulung

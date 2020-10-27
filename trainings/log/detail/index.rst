@@ -4,6 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2020-12-XX/index
    2020-11-30/index
    2020-10-19/index
    2020-09-28/index
