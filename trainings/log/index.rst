@@ -35,11 +35,21 @@ gerade vorbereitet.
 
 (:doc:`Mehr ... <detail/2020-11-30/index>`)
 
+Linux und Raspberry Pi (3.11.2020, 4.11.2020, 17.11.2020)
+---------------------------------------------------------
+
+Der Kurs findet online mittels :doc:`Microsoft Teams
+</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+Partner `tecTrain
+<https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2020-11-03/index>`)
+
 Python Basics (19.10.2020 - 22.10.2020)
 ---------------------------------------
 
-Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht, und wird
-gerade vorbereitet.
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
 
 (:doc:`Mehr ... <detail/2020-10-19/index>`)
 

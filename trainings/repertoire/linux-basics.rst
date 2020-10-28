@@ -22,7 +22,7 @@ Hinblick auf das Verständnis des Betriebssystems.
 
 Die Entwicklung der Shell und die Entwicklung von UNIX gingen Hand in
 Hand. UNIX wäre nicht UNIX, wenn die Shell nicht wäre. Anhand vieler
-Demosessions, werden vertrackte Konstrukte gezeigt und
+Demosessions werden vertrackte Konstrukte gezeigt und
 entmystifiziert. Im Kurs wird anhand von vielen Beispielen und
 Übungen, ausschliesslich mit Hilfe der gefürchteten Shell, der Umgang
 mit dem Betriebssystem und die Konzepte des Betriebssystems erlernt.
