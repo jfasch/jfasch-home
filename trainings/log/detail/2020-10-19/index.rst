@@ -152,21 +152,42 @@ Day 2
 
 * :doc:`/trainings/material/soup/python/python_0275_exercises/topic`
 
-  * Exercise 2: ``uniq()``. 
+  * Exercise 2: ``uniq()`` in steps:
 
-    * TODO: Screenplay
+    #. Complicated iteration over outputsequence, only to determine
+       membership. First with a flag, then with an ``else`` clause.
+    #. ``in`` operator on outputsequence
+    #. Performance: using a ``set`` for have-ness
 
-      * Complicated iteration over outputsequence, only to determine
-        membership. First with a flag, then with an ``else`` clause.
-      * ``in`` operator on outputsequence
-      * Performance: using a ``set`` for have-ness
+    *End result:*
+    `uniq.py <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/uniq.py>`__
+
+    *Generator version (can't resist):* `uniq-generator.py
+    <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/uniq-generator.py>`__
 
   * Exercise 3: ``join()``. Sketch multiple ways to solve the problem.
 
-    * ``join-manual-index.py``
-    * ``join-manual-index-range.py``
-    * ``join-slicing.py``
-    * ``join-enumerate.py``
+    #. `join-manual-index.py
+       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-manual-index.py>`__. Iterate
+       over the input list, manually tracking indexes to determine if
+       we are at the last element.
+    #. `join-manual-index-range.py
+       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-manual-index-range.py>`__. Iterate
+       over a ``range`` object for index keeping, and use *index based
+       iteration* on the input list.
+    #. `join-slicing.py
+       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-slicing.py>`__. Another
+       cumbersome but working approach: cut out ``[1:]`` from the
+       input list.
+    #. `join-correct-sep.py
+       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-correct-sep.py>`__. Add
+       separator unconditionally after each element, and take
+       correcting action finally.
+    #. `join-enumerate.py
+       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-enumerate.py>`__:
+       use `enumerate()
+       <https://docs.python.org/3/library/functions.html#enumerate>`__
+       to iterate over the input sequence *and* keep the indexes.
 
 * ``for`` loops
 
@@ -177,7 +198,19 @@ Day 2
 * Generators:
   :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
 
-  * TODO: reference ``fibo-*.py`` files
+  #. `fibo-inline.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/fibo-inline.py>`__. Generate
+     Fibonacci numbers in an infinite loop, and print them as we
+     go. This is not modular (we're not using a function), but it
+     allows for *infinity*.
+  #. `fibo-function.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/fibo-function.py>`__. Externalize
+     Fibonacci generation into a function. This is modular, but we
+     have to limit the amount of numbers generated (or we will run out
+     of memory).
+  #. `fibo-generator.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/fibo-generator.py>`__. Using
+     a function (err, a *generator*), *and* have infinity.
 
 Day 3
 .....
@@ -185,16 +218,20 @@ Day 3
 * Comprehension expressions
 
   * List comprehension, from
-    :doc:`/trainings/material/soup/python/python_0400_lists/topic` (live hacking `here <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/list-comprehension.py>`__)
-  * Generator expression (live hacking `here <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/generator-expression.py>`__
-  * Dictionary comprehension (live hacking `here <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/dictionary-comprehension.py>`__)
+    :doc:`/trainings/material/soup/python/python_0400_lists/topic`. Code:
+    `list-comprehension.py
+    <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/list-comprehension.py>`__.
+  * Generator expression. Code: `generator-expression.py
+    <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/generator-expression.py>`__.
+  * Dictionary comprehension. Code: `dictionary-comprehension.py
+    <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/dictionary-comprehension.py>`__.
 
 * File IO
 
   * :doc:`/trainings/material/soup/python/python_0500_files/topic`
   * The ``with`` statement: *context managers*
 
-* Group exercise
+* Group exercise: discussion
 
   A CAN bus log is gathered by software running on a device. That log
   contains CAN frames, basically. It has CSV format, suitable for
@@ -209,30 +246,54 @@ Day 3
 Day 4
 .....
 
-* *Plan*
+* Class ``Message`` to hold rows (include ``datetime.datetime``
+  conversion). Code: `csvlog/unified/message.py
+  <https://github.com/jfasch/2020-10-19/blob/main/csvlog/unified/message.py>`__.
+* Function to read CSV into a list of ``Message`` objects. Code:
+  `csvlog/unified/csv_Reader.py
+  <https://github.com/jfasch/2020-10-19/blob/main/csvlog/unified/csv_Reader.py>`__
+* One main program that prints CAN messages. Code:
+  `csvlog/unified/print-log.py
+  <https://github.com/jfasch/2020-10-19/blob/main/csvlog/unified/print-log.py>`__
+* Cut out a time interval from a larger list
+* Show how CAN bus programming is done in Linux and Python, using the
+  ``socket`` module. 
 
-  * unify
-  * Format a message list to JSON
-  * Cut out a time interval from a larger list
-  * Show how CAN bus programming is done in Linux and Python, using
-    the ``socket`` module.
-  * Explain ``**kwargs``, see :doc:`here
-    </trainings/material/soup/draft/starargs/topic>` for more. TODO:
-    link to ``DictReader`` example in exercises.
-
-* Class ``Message`` to hold rows
-* Function to read CSV into a list of ``Message`` objects
-* Modularization: message, reader, and one main program that prints
-  out messages
-
-
-
+  * Excerpt from my Grazer Linuxtage 2014 talk: "CAN-Bus mit Linux und
+    Python" (:download:`PDF <910-glt-2014.pdf>`, `Youtube Video
+    <https://www.youtube.com/watch?v=5XuSr4M9uNI>`__).
+  * Code: `csvlog/joerg/can-recv.py
+    <https://github.com/jfasch/2020-10-19/blob/main/csvlog/joerg/can-recv.py>`__
 
 Links
 -----
 
-https://www.youtube.com/watch?reload=9&v=EiOglTERPEo
-https://www.youtube.com/watch?v=OSGv2VnC0go
+Tutorials
+.........
 
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__. **Raymond
+  Hettinger**, emphasizing on his favorite phrase "There must be a
+  better way". (Hettinger is a "Python Core Developer".)
+* `Modern dictionaries
+  <https://www.youtube.com/watch?v=p33CVV29OG8>`__: **Raymond
+  Hettinger** again, this time emphasizing on dictionaries, even more
+  than I did. (Hehe, I just discovered that he's bringing my quick
+  hash table explanation to a conclusive end. Hard stuff for the
+  unaware though.)
+* `Unit Testing <https://www.youtube.com/watch?v=6tNS--WetLI>`__:
+  **Corey Schafer** (he has a number of really good *and* short
+  tutorial videos; look out for him as you search).
+* `Generators Tutorial
+  <https://www.youtube.com/watch?v=bD05uGo_sVI>`__: **Corey Schafer**
+  again, this time 11 minutes on generators. (I couldn't resist.)
 
-CAN slides
+CAN Bus
+.......
+
+* `CAN Utils on Github <https://github.com/linux-can/can-utils>`__
+* Grazer Linuxtage 2014: "CAN-Bus mit Linux und Python"
+
+  * :download:`PDF <910-glt-2014.pdf>`
+  * `Youtube Video <https://www.youtube.com/watch?v=5XuSr4M9uNI>`__
+
