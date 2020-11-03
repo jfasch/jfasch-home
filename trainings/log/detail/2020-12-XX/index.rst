@@ -18,7 +18,7 @@ Linux Kernel Driver Development Basics
 
    **Material**
 
-   `Github Repository <https://github.com/jfasch/jf-kernel-course>`__
+   * `Github Repository <https://github.com/jfasch/jf-kernel-course>`__
 
 Agenda
 ------
@@ -67,3 +67,9 @@ The training will be based upon
 
   * Device initialization
   * Register ("BAR") access
+
+Books
+-----
+
+* `Linux Device Drivers, Third Edition
+  <https://lwn.net/Kernel/LDD3/>`__
