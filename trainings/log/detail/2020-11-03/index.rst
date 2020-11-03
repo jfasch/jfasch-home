@@ -101,3 +101,13 @@ suggestions to training@faschingbauer.co.at.
   * GPIO subsystem
   * I2C: adding sensors (optional, if there is time and interest)
   * Serial/RS232 interface (optional, if there is time and interest)
+
+Support Material
+----------------
+
+* Bourne Again Shell (``bash``)
+
+  * :download:`Short Cheat Sheet </trainings/material/misc/bash-help-sheet.pdf>`
+  * :download:`Long Cheat Sheet
+    </trainings/material/misc/readline-emacs-editing-mode-cheat-sheet.pdf>`
+
