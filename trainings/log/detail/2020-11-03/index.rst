@@ -45,9 +45,15 @@ The machine's OS is Debian 10.6 for that matter, which is similar to
 what we'll encounter on the Raspberry - at least for the generic
 *Linux* part of the training.
 
+.. .. code-block:: console
+.. 
+..    ssh training@34.91.249.217
+..    ... leave passphrase empty ...
+..    .. supply password sent in private email ...
+
 .. code-block:: console
 
-   ssh training@34.91.249.217
+   ssh training@35.246.179.112
    ... leave passphrase empty ...
    .. supply password sent in private email ...
 
@@ -102,6 +108,57 @@ suggestions to training@faschingbauer.co.at.
   * I2C: adding sensors (optional, if there is time and interest)
   * Serial/RS232 interface (optional, if there is time and interest)
 
+Log
+---
+
+Day 1
+.....
+
+(From the PDF slides)
+
+* Building blocks (complete)
+* Demo sessions (complete)
+* Bash (complete)
+* Filesystem
+
+  * Paths
+  * Directories
+  * Symbolic links
+  * Current working directory
+  * Directory listings
+  * Copying and moving
+
+Day 2
+.....
+
+* Filesystem
+
+  * Owner, permissions
+  * ``find``
+
+* Tools for text files (complete)
+
+Day 3
+.....
+
+Day 3 will happen on 2020-11-17. Following topics are on the menu:
+
+* Basic *security*. Such as ...
+
+  * Creating a non ``pi`` user with more restricted rights
+  * Disallowing passowrd login with SSH
+  * Public key authentication with SSH
+  * ``netstat`` to see which ports are open
+
+* *Everything is a file*: Raspberry SD card setup, *not* using any of
+  these idiotic "Disk Imager" programs (hey, they even recommend using
+  one on Ubuntu!)
+* GPIO subsystem using the ``sysfs`` interface from the shell
+* Use a `watchdog program <https://linux.die.net/man/8/watchdog>`__ to
+  check a script's output. Verify that a file is modified
+  periodically, for example. Write that script, based upon what we
+  have learned in this training.
+
 Support Material
 ----------------
 
@@ -110,4 +167,28 @@ Support Material
   * :download:`Short Cheat Sheet </trainings/material/misc/bash-help-sheet.pdf>`
   * :download:`Long Cheat Sheet
     </trainings/material/misc/readline-emacs-editing-mode-cheat-sheet.pdf>`
+  * `Briana's Bash Tutorial: How to Use the Command Line in Linux, Windows, and Mac <https://www.youtube.com/watch?v=BFMyUgF6I8Y>`__
 
+    .. raw:: html
+
+       <iframe 
+           width="560" 
+	   height="315" 
+	   src="https://www.youtube.com/embed/BFMyUgF6I8Y" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+       </iframe>
+
+  * `Everything You Need to Know About $PATH in Bash <https://www.youtube.com/watch?v=rJMFxIbDe-g>`__
+
+    .. raw:: html
+
+       <iframe 
+           width="560" 
+	   height="315" 
+	   src="https://www.youtube.com/embed/rJMFxIbDe-g" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+       </iframe>
