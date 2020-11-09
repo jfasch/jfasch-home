@@ -158,6 +158,7 @@ Day 3 will happen on 2020-11-17. Following topics are on the menu:
   check a script's output. Verify that a file is modified
   periodically, for example. Write that script, based upon what we
   have learned in this training.
+* Reload a page in Chromium. Hm, not sure if this is Linux Basics.
 
 Support Material
 ----------------
