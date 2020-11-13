@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.exceptions
+.. jf-topic:: python.drafts.exceptions
    :dependencies: python.swdev.python_1100_exceptions
 
 Exception Handling (*incomplete*)

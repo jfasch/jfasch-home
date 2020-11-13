@@ -29,8 +29,8 @@ Preparation
 Workspace Setup
 ...............
 
-* :doc:`/trainings/material/soup/draft/installation`
-* :doc:`/trainings/material/soup/draft/vscode`
+* :doc:`/trainings/material/soup/python/draft/installation`
+* :doc:`/trainings/material/soup/python/draft/vscode`
 
 Github for Exercises
 ....................

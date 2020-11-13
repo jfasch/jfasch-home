@@ -13,6 +13,6 @@ Functions
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/draft/closures/topic`
-   * :doc:`/trainings/material/soup/draft/decorators/topic`
-   * :doc:`/trainings/material/soup/draft/starargs/topic`
+   * :doc:`/trainings/material/soup/python/draft/closures/topic`
+   * :doc:`/trainings/material/soup/python/draft/decorators/topic`
+   * :doc:`/trainings/material/soup/python/draft/starargs/topic`

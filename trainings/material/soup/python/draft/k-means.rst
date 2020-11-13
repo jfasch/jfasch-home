@@ -1,7 +1,7 @@
-.. jf-topic:: drafts.ai.k_means
-   :dependencies: drafts.venv, 
-		  drafts.ai.machine_learning_intro,
-		  drafts.ai.linear_regression
+.. jf-topic:: python.drafts.ai.k_means
+   :dependencies: python.drafts.venv, 
+		  python.drafts.ai.machine_learning_intro,
+		  python.drafts.ai.linear_regression
 
 K-Means
 =======
@@ -51,4 +51,4 @@ Topic Dependencies
 ------------------
 
 .. jf-topicgraph::
-   :entries: drafts.ai.k_means
+   :entries: python.drafts.ai.k_means

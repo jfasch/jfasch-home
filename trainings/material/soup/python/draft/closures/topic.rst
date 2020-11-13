@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.closures
+.. jf-topic:: python.drafts.closures
    :dependencies: python.basics.python_0270_functions
 
 Closures
@@ -11,4 +11,4 @@ Closures
    screenplay
 
 .. jf-topicgraph:: 
-   :entries: drafts.closures
+   :entries: python.drafts.closures

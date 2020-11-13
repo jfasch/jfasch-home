@@ -44,8 +44,8 @@ Preparation
 Workspace Setup
 ...............
 
-* :doc:`/trainings/material/soup/draft/installation`
-* :doc:`/trainings/material/soup/draft/vscode`
+* :doc:`/trainings/material/soup/python/draft/installation`
+* :doc:`/trainings/material/soup/python/draft/vscode`
 
 Github for Exercises
 ....................
@@ -71,26 +71,26 @@ knew more. Here the more advanced core Python topics that shall be
 covered.
 
 * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/draft/context_manager/topic`
-* :doc:`/trainings/material/soup/draft/encoding`
-* :doc:`/trainings/material/soup/draft/exceptions`
+* :doc:`/trainings/material/soup/python/draft/context_manager/topic`
+* :doc:`/trainings/material/soup/python/draft/encoding`
+* :doc:`/trainings/material/soup/python/draft/exceptions`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
-* :doc:`/trainings/material/soup/draft/duck-typing`
-* :doc:`/trainings/material/soup/draft/special_methods`
-* :doc:`/trainings/material/soup/draft/starargs/topic`
-* :doc:`/trainings/material/soup/draft/closures/topic`
-* :doc:`/trainings/material/soup/draft/decorators/topic`
+* :doc:`/trainings/material/soup/python/draft/duck-typing`
+* :doc:`/trainings/material/soup/python/draft/special_methods`
+* :doc:`/trainings/material/soup/python/draft/starargs/topic`
+* :doc:`/trainings/material/soup/python/draft/closures/topic`
+* :doc:`/trainings/material/soup/python/draft/decorators/topic`
 
 Special Topics
 ..............
 
-* :doc:`/trainings/material/soup/draft/ai`
+* :doc:`/trainings/material/soup/python/draft/ai`
 
-  * :doc:`/trainings/material/soup/draft/machine-learning-intro`
-  * :doc:`/trainings/material/soup/draft/linear-regression/topic`
-  * :doc:`/trainings/material/soup/draft/k-means`
+  * :doc:`/trainings/material/soup/python/draft/machine-learning-intro`
+  * :doc:`/trainings/material/soup/python/draft/linear-regression/topic`
+  * :doc:`/trainings/material/soup/python/draft/k-means`
 
-* :doc:`/trainings/material/soup/draft/mysql`
+* :doc:`/trainings/material/soup/python/draft/mysql`
 * Unit Testing, Test Driven Development, Design Patterns
 
   * Excerpt from :doc:`/trainings/repertoire/unittests`
@@ -134,7 +134,7 @@ Day 2
 .....
 
 * Livehacking:
-  :doc:`/trainings/material/soup/draft/iteration-generation/topic`,
+  :doc:`/trainings/material/soup/python/draft/iteration-generation/topic`,
   covering
 
   * List comprehensions
@@ -240,9 +240,9 @@ Day 4
   * Decorators theory, and livehacking. Mainly to see how flask routes
     work.
 
-    * :doc:`/trainings/material/soup/draft/starargs/topic`
-    * :doc:`/trainings/material/soup/draft/closures/topic`
-    * :doc:`/trainings/material/soup/draft/decorators/topic`
+    * :doc:`/trainings/material/soup/python/draft/starargs/topic`
+    * :doc:`/trainings/material/soup/python/draft/closures/topic`
+    * :doc:`/trainings/material/soup/python/draft/decorators/topic`
 
   * Continue project; add CSV
     import. 
@@ -341,18 +341,18 @@ Graph
 -----
 
 .. jf-topicgraph::
-   :entries: drafts.ai.linear_regression,
-	     drafts.ai.k_means,
-	     drafts.duck_typing,
-	     drafts.context_manager,
-	     drafts.special_methods,
-	     drafts.closures,
-	     drafts.decorators,
-	     drafts.starargs,
+   :entries: python.drafts.ai.linear_regression,
+	     python.drafts.ai.k_means,
+	     python.drafts.duck_typing,
+	     python.drafts.context_manager,
+	     python.drafts.special_methods,
+	     python.drafts.closures,
+	     python.drafts.decorators,
+	     python.drafts.starargs,
 	     python.swdev.python_1200_modules,
 	     python.python_1010_generators_yield,
-	     drafts.encoding,
-	     drafts.mysql,
-	     drafts.installation,
-	     drafts.exceptions
+	     python.drafts.encoding,
+	     python.drafts.mysql,
+	     python.drafts.installation,
+	     python.drafts.exceptions
 

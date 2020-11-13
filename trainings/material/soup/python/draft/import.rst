@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.import
+.. jf-topic:: python.drafts.import
    :dependencies: python.swdev.python_1200_modules
 
 The ``import`` Statement (incomplete)

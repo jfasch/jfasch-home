@@ -14,7 +14,7 @@ Contents
 Group Definition
 ----------------
 
-.. jf-group:: drafts.ai
+.. jf-group:: python.drafts.ai
 
 .. jf-topicgraph::
-   :entries: drafts.ai
+   :entries: python.drafts.ai

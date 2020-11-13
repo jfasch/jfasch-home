@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.installation
+.. jf-topic:: python.drafts.installation
 
 Python Installation
 ===================

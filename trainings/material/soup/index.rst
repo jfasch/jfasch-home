@@ -18,11 +18,11 @@ is work in progress*).
    :maxdepth: 1
 
    python/python
+   python/draft/index
    cxx/cxx
    hardware/index
    sysprog/sysprog
    unittest/unittest
-   draft/index
    list
    graph
 

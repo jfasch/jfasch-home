@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.encoding
+.. jf-topic:: python.drafts.encoding
    :dependencies: python.basics.python_0330_strings_encoding,
 		  python.basics.python_0500_files
 

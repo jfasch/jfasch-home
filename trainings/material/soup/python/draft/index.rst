@@ -1,11 +1,10 @@
-Drafts
-======
+Python Drafts
+=============
 
 .. contents::
    :local:
 
-This is the home of topics under construction. Once completed, they
-are moved into their respective groups.
+This is the home of (Python) topics under construction.
 
 Contents
 --------
@@ -33,7 +32,7 @@ Contents
 Group Definition
 ----------------
 
-.. jf-group:: drafts
+.. jf-group:: python.drafts
 
 .. jf-topicgraph::
-   :entries: drafts
+   :entries: python.drafts

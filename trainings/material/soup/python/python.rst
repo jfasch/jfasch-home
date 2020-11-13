@@ -21,6 +21,7 @@ Contents
    python-swdev
    python-db
    fullgraph
+   draft/index
 
 Group Description
 -----------------

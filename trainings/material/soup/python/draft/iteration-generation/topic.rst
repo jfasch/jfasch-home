@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.iteration_generation
+.. jf-topic:: python.drafts.iteration_generation
    :dependencies: python.basics.python_0220_for
 
 Iteration and Generation
@@ -19,4 +19,4 @@ The :doc:`screenplay <screenplay>` covers
 See also 
 
 .. jf-topicgraph:: 
-   :entries: drafts.iteration_generation
+   :entries: python.drafts.iteration_generation

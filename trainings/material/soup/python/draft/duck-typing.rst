@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.duck_typing
+.. jf-topic:: python.drafts.duck_typing
    :dependencies: python.basics.python_0140_variables
 
 Duck Typing vs. Strong Typing (*incomplete*)
@@ -19,7 +19,7 @@ Duck Typing vs. Strong Typing (*incomplete*)
   * Enter Zen.
 
 .. jf-topicgraph:: 
-   :entries: drafts.duck_typing
+   :entries: python.drafts.duck_typing
 
 
 

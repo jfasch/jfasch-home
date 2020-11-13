@@ -1,6 +1,6 @@
-.. jf-topic:: drafts.ai.linear_regression
-   :dependencies: drafts.venv, 
-		  drafts.ai.machine_learning_intro
+.. jf-topic:: python.drafts.ai.linear_regression
+   :dependencies: python.drafts.venv, 
+		  python.drafts.ai.machine_learning_intro
 
 Linear Regression
 =================
@@ -75,7 +75,7 @@ Topic Dependencies
 ------------------
 
 .. jf-topicgraph::
-   :entries: drafts.ai.linear_regression
+   :entries: python.drafts.ai.linear_regression
 
 .. rubric:: Footnotes
 

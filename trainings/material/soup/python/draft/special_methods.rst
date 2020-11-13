@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.special_methods
+.. jf-topic:: python.drafts.special_methods
    :dependencies: python.swdev.python_1050_oo
 
 Special Methods, Operator Overloading (*incomplete*)

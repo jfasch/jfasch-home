@@ -1,4 +1,4 @@
-.. jf-topic:: drafts.mysql
+.. jf-topic:: python.drafts.mysql
    :dependencies: python.db.python_5510_dbapi2_sqlite3,
 		  python.db.python_5500_dbapi2
 
@@ -12,4 +12,4 @@ TODO
 * Work out date/time issues (as always)
 
 .. jf-topicgraph::
-   :entries: drafts.mysql
+   :entries: python.drafts.mysql
