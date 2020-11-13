@@ -21,7 +21,7 @@ Python Basic and Advanced (19.10.2020 - 22.10.2020)
    .. csv-table::
 
       PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/python`
+      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/index`
 
 Preparation
 -----------

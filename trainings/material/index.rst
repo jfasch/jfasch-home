@@ -67,10 +67,10 @@ material.
      - :doc:`soup/cxx/cxx`
    * - :doc:`/trainings/repertoire/python-basics`
      - :download:`Python <pdf/300-python.pdf>`
-     - :doc:`soup/python/python`
+     - :doc:`soup/python/index`
    * - :doc:`/trainings/repertoire/python-advanced`
      - :download:`Python <pdf/300-python.pdf>`
-     - :doc:`soup/python/python`
+     - :doc:`soup/python/index`
    * - :doc:`/trainings/repertoire/design-patterns`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -

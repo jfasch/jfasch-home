@@ -23,6 +23,13 @@ Contents
    fullgraph
    draft/index
 
+.. toctree::
+   :maxdepth: 1
+   :glob:
+   :hidden:
+
+   */topic
+
 Group Description
 -----------------
 
@@ -31,9 +38,3 @@ Group Description
 .. jf-topicgraph::
    :entries: python
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :hidden:
-
-   */topic

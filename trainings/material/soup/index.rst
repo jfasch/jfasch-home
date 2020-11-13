@@ -11,18 +11,18 @@ dependencies form a directed acyclic graph - see for example :doc:`the full
 set of Python topics, laid out as one such graph <python/fullgraph>`.
 
 The Python training has been converted to this format; :doc:`see there
-<python/python>` for how this could look like (careful though: *this
+<python/index>` for how this could look like (careful though: *this
 is work in progress*).
 
 .. toctree::
    :maxdepth: 1
 
-   python/python
-   python/draft/index
+   python/index
    cxx/cxx
    hardware/index
    sysprog/sysprog
    unittest/unittest
+   kernel/index
    list
    graph
 
