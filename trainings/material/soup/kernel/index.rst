@@ -9,10 +9,10 @@ A put-together of kernel related topics.
 Contents
 --------
 
-.. .. toctree::
-..    :maxdepth: 1
-.. 
-..    build/
+.. toctree::
+   :maxdepth: 1
+
+   build/topic
 
 Group Description
 -----------------
@@ -21,10 +21,3 @@ Group Description
 
 .. jf-topicgraph::
    :entries: kernel
-
-.. .. toctree::
-..    :maxdepth: 1
-..    :glob:
-..    :hidden:
-.. 
-..    */topic
