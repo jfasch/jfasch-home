@@ -6,6 +6,7 @@ Details
 
    2020-12-14/index
    2020-11-30/index
+   2020-11-23/index
    2020-11-03/index
    2020-10-19/index
    2020-09-28/index
