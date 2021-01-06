@@ -10,4 +10,4 @@ Work in Progress
    todo-misc.rst
    git
    screencast
-   
+   fh-joanneum/index

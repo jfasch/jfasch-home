@@ -12,7 +12,8 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   build/topic
+   fedora-kernel-build/topic
+   fedora-module-build/topic
 
 Group Description
 -----------------
