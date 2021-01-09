@@ -1,29 +1,40 @@
-FH Joanneum
-===========
+FH Joanneum: Embedded Computing
+===============================
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
+   Overview <ec>
    embedded-computing-1
    embedded-computing-2
 
 .. toctree::
    :hidden:
 
+   cxx
+   mt
+   linux
+   python
+
    cxx_build
    cxx_iface
-   dev_mgmt
-   exercise_sensors_cxx
+   linux_dev_mgmt
+   linux_exercise_sensors
    git
-   os_basics
+   linux_basics
    cxx_oo_basics
-   exercise_avg_sensor
+   linux_exercise_avg_sensor
    cxx_unittest
-   exercise_led_display
-   gpio
+   linux_exercise_led_display
+   linux_gpio
+   mt_wait
+   mt_lock
+   exercise_mt_race_fixed
+   exercise_mt_race
+   linux_exercise_avg_sensor_parallel
 
-.. jf-group:: fh
-
-.. jf-topicgraph::
-   :entries: fh
+   py_basics
+   py_exercise_avg_display
+   py_exercise_sensors
+   py_web
+   py_web_sensors

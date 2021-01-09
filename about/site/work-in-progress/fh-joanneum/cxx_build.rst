@@ -1,4 +1,4 @@
-.. jf-topic:: fh.build
+.. jf-topic:: ec.ec1.cxx.build
 
 C++: Building with CMake
 ========================

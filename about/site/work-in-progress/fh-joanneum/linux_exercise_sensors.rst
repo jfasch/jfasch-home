@@ -1,11 +1,11 @@
-.. jf-topic:: fh.exercise_sensors_cxx
-   :dependencies: fh.dev_mgmt, 
-		  fh.cxx_iface,
-		  fh.build,
-		  fh.git
+.. jf-topic:: ec.ec1.linux.exercise_sensors
+   :dependencies: ec.ec1.linux.dev_mgmt, 
+		  ec.ec1.cxx.iface,
+		  ec.ec1.cxx.build,
+		  ec.ec1.git
 
-Exercise: Temperature Sensors (C++)
-===================================
+EX: Temperature Sensors
+=======================
 
 .. contents::
    :local:

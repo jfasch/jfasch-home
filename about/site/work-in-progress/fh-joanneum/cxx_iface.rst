@@ -1,9 +1,8 @@
-.. jf-topic:: fh.cxx_iface
-   :dependencies: fh.cxx_oo_basics,
-		  fh.dev_mgmt
+.. jf-topic:: ec.ec1.cxx.iface
+   :dependencies: ec.ec1.cxx.oo_basics
 
-C++: Interfaces (pure virtual)
-==============================
+C++: Interfaces
+===============
 
 Given that everytbody knows what a class is, differentiate between two
 different inheritance techniques,
@@ -16,5 +15,5 @@ different inheritance techniques,
   * A lot more opportunities to shoot oneself in the foot
 
 Put the *interface thinking* in relation to the different
-:doc:`hardware sensor devices <dev_mgmt>` - thermometers, just
+:doc:`hardware sensor devices <linux_dev_mgmt>` - thermometers, just
 implemented differently.

@@ -1,7 +1,8 @@
-.. jf-topic:: fh.gpio
+.. jf-topic:: ec.ec1.linux.gpio
+   :dependencies: ec.ec1.linux.dev_mgmt
 
-Linux GPIO Subsystem
-====================
+GPIO
+====
 
 Learn how to use the Linux GPIO subsystem, especially what it takes to
 control GPIOs from userspace.
@@ -22,4 +23,20 @@ control GPIOs from userspace.
 -------------------
 
 * `Source <https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/>`__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

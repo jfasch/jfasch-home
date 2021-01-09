@@ -1,6 +1,6 @@
-.. jf-topic:: fh.cxx_oo_basics
-   :dependencies: fh.git, 
-		  fh.build
+.. jf-topic:: ec.ec1.cxx.oo_basics
+   :dependencies: ec.ec1.git, 
+		  ec.ec1.cxx.build
 
 C++: OO Basics
 ==============

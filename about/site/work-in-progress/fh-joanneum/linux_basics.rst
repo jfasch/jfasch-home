@@ -1,7 +1,7 @@
-.. jf-topic:: fh.os_basics
+.. jf-topic:: ec.ec1.linux.basics
 
-Linux OS Basics
-===============
+Basics
+======
 
 As opposed to bare metal and/or realtime operating systems, Linux (and
 other general purpose operating systems) have a number of features

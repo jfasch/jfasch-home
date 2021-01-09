@@ -1,10 +1,10 @@
-.. jf-topic:: fh.exercise_led_display
-   :dependencies: fh.exercise_avg_sensor,
-		  fh.gpio,
-		  fh.cxx_unittest
+.. jf-topic:: ec.ec1.linux.exercise_led_display
+   :dependencies: ec.ec1.linux.exercise_avg_sensor,
+		  ec.ec1.linux.gpio,
+		  ec.ec1.cxx.unittest
 
-Exercise: LED Temperature Display
-=================================
+EX: LED Temperature Display
+===========================
 
 Goals
 -----

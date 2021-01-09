@@ -1,6 +1,6 @@
-.. jf-topic:: fh.cxx_unittest
-   :dependencies: fh.build,
-		  fh.cxx_oo_basics
+.. jf-topic:: ec.ec1.cxx.unittest
+   :dependencies: ec.ec1.cxx.build,
+		  ec.ec1.cxx.oo_basics
 
 C++: Unit Testing
 =================

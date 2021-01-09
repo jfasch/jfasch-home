@@ -1,8 +1,9 @@
-.. jf-topic:: fh.exercise_avg_sensor
-   :dependencies: fh.cxx_unittest
+.. jf-topic:: ec.ec1.linux.exercise_avg_sensor
+   :dependencies: ec.ec1.cxx.unittest,
+		  ec.ec1.linux.exercise_sensors
 
-Exercise: Averaging Sensor
-==========================
+EX: Averaging Sensor
+====================
 
 Goals
 -----
