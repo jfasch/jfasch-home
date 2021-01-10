@@ -1,4 +1,4 @@
-.. jf-group:: ec.ec1
+.. include:: <mmlalias.txt>
 
 Embedded Computing 1
 ====================
@@ -6,24 +6,32 @@ Embedded Computing 1
 .. contents::
    :local:
 
-Definition laut Studienplan
----------------------------
+Current Curriculum
+------------------
 
-(See `curriculum
+(Taken from `here
 <https://www.fh-joanneum.at/elektronik-und-computer-engineering/bachelor/en/my-studies/curriculum/>`__)
 
-* X Grundlagen Betriebssysteme
-* X Speicher-, Prozess- und Geräteverwaltung
-* Echtzeitbetriebssysteme
-* X Softwareentwicklungsprozesse
-* X Sourcecode- und Konfigurationsverwaltung
-* X Qualitätssicherung
-* X Grundlagen der objektorientierten Programmierung
-* X Datenkapselung durch Klassen und Vererbung
-* X Objekte mit deren Eigenschaften und Methoden 
+* Fundamentals of operating systems
+* Memory, process and device management
+* Real time operating systems
+* Software development processes
+* Source code and configuration management
+* Quality assurance
+* Fundamentals of object-oriented programming
+* Data encapsulation through classes and inheritance
+* Objects with their characteristics and methods
 
-Graph
------
+Topics
+------
+
+.. jf-group:: ec.ec1
+
+Dependency Graph
+----------------
+
+Read: an arrow ``A`` |longrightarrow| ``B`` means that topic ``A``
+*depends on* topic ``B``.
 
 .. jf-topicgraph::
    :entries: ec.ec1

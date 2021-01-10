@@ -1,7 +1,7 @@
 .. jf-group:: ec
 
-Embedded Computing
-==================
+Graph
+-----
 
 .. jf-topicgraph::
    :entries: ec

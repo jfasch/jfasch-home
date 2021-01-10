@@ -1,5 +1,3 @@
-.. jf-group:: ec.ec1.mt
-
 Multithreading
 ==============
 
@@ -16,6 +14,8 @@ Goals
 
   * Counting semaphore
   * Condition variable
+
+.. jf-group:: ec.ec1.mt
 
 .. jf-topicgraph::
    :entries: ec.ec1.mt

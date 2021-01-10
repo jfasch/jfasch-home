@@ -1,4 +1,4 @@
-.. jf-group:: ec.ec2
+.. include:: <mmlalias.txt>
 
 Embedded Computing 2
 ====================
@@ -6,21 +6,29 @@ Embedded Computing 2
 .. contents::
    :local:
 
-Definition laut Studienplan
----------------------------
+Current Curriculum
+------------------
 
-(See `curriculum
+(Taken from `here
 <https://www.fh-joanneum.at/elektronik-und-computer-engineering/bachelor/en/my-studies/curriculum/>`__)
 
-* X Objektorientierter Softwareentwurf
-* X Polymorphismus und Klassenentwurf
-* Ausnahmebehandlung
-* X Nebenläufigkeit
-* X siehe JSON, exercise: Einsatz fertiger Klassenbibliotheken
-* Templates und Templatesklassen
+* Object-oriented software design
+* Polymorphism and class design
+* Exception handling
+* Concurrency
+* Use of class libraries
+* Templates and template classes 
 
-Graph
------
+Topics
+------
+
+.. jf-group:: ec.ec2
+
+Dependency Graph
+----------------
+
+Read: an arrow ``A`` |longrightarrow| ``B`` means that topic ``A``
+*depends on* topic ``B``.
 
 .. jf-topicgraph::
    :entries: ec.ec2
