@@ -1,7 +1,7 @@
 .. jf-topic:: ec.ec1.linux.basics
 
-Basics
-======
+Introduction to Linux and Unix
+==============================
 
 As opposed to bare metal and/or realtime operating systems, Linux (and
 other general purpose operating systems) have a number of features

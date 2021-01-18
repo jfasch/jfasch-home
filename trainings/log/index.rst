@@ -20,12 +20,23 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
-Linux Kernel Driver Development Basics (14.12.2020 - 18.12.2020)
-----------------------------------------------------------------
+Linux Kernel Driver Development Basics (8.3.2021 - 12.3.2020)
+-------------------------------------------------------------
 
 Dieser Kurs ist in Vorbereitung.
 
-(:doc:`Mehr ... <detail/2020-12-14/index>`)
+(:doc:`Mehr ... <detail/2021-03-08/index>`)
+
+Programmierung Grundlagenm, anhand von Python (13. und 14.1.2021)
+-----------------------------------------------------------------
+
+Der Kurs fand online mittels :doc:`Microsoft Teams
+</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+Partner `tecTrain
+<https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-01-13/index>`)
 
 Linux Basics (30.11.2020 - 3.12.2020)
 -------------------------------------

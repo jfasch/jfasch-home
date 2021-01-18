@@ -7,7 +7,8 @@
    :local:
 
 .. jf-topic:: python.basics.python_0220_for
-   :dependencies: python.basics.python_0200_sequential_types
+   :dependencies: python.basics.python_0200_sequential_types,
+		  python.basics.python_0193_while
 
 Iteration over ... Something
 ----------------------------

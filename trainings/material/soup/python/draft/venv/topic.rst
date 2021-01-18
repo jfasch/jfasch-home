@@ -10,6 +10,7 @@ Virtual Environments
 
    slides
    screenplay
+   links
 
 .. jf-topicgraph:: 
    :entries: python.drafts.venv

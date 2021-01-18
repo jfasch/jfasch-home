@@ -3,9 +3,6 @@
 Exercises: Lists, Loops, Functions
 ==================================
 
-.. contents::
-   :local:
-
 .. jf-topic:: python.basics.python_0275_exercises
    :dependencies: python.basics.python_0195_exercises, 
 		  python.basics.python_0193_while, 

@@ -7,6 +7,7 @@ Syntax etc.
    :local:
 
 .. jf-topic:: python.basics.python_0130_syntax_etc
+   :dependencies: python.basics.python_0120_helloworld
 
 Syntax: Indentation (1)
 -----------------------

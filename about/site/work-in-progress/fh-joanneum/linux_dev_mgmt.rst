@@ -1,8 +1,8 @@
 .. jf-topic:: ec.ec1.linux.dev_mgmt
    :dependencies: ec.ec1.linux.basics
 
-Linux Device Management
-=======================
+Linux Hardware Device Management
+================================
 
 Given knowledge of the I2C and Onewire hardware protocols, learn how
 to treat such devices from userspace on Linux.

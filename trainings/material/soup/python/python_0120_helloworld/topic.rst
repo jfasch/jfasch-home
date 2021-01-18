@@ -7,6 +7,7 @@ Hello World
    :local:
 
 .. jf-topic:: python.basics.python_0120_helloworld
+   :dependencies: python.basics.python_0110_blahblah
 
 *Hello World*: Interactive Mode
 -------------------------------

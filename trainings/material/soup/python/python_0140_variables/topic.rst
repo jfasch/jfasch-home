@@ -7,6 +7,7 @@ Variables
    :local:
 
 .. jf-topic:: python.basics.python_0140_variables
+   :dependencies: python.basics.python_0130_syntax_etc
 
 Variables (1)
 -------------

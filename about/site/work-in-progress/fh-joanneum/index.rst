@@ -81,9 +81,9 @@ through introduction to
 
 * **Programming language alternatives**. Embedded applications are
   historically written in C/C++ which is hard. It is often more
-  appropriate to prototype functionality in a more higher level
-  language like `Python <https://www.python.org/>`__, or even use that
-  as final production language.
+  appropriate to prototype functionality in a higher level language
+  like `Python <https://www.python.org/>`__, or even use that as final
+  production language.
   
 Embedded Computing 1
 --------------------
@@ -93,18 +93,18 @@ Embedded Computing 1
 * **Groundwork**. To lay the groundwork for an instructive set of
   programming exercises, the following topics are covered up-front:
 
-  * :doc:`Build <cxx_build>`
-  * :doc:`Version control <git>`
-  * :doc:`Basic object oriented programming in C++ <cxx_oo_basics>`
-  * :doc:`Basic unit testing <cxx_unittest>`
-  * :doc:`Introduction to Linux and Unix <linux_basics>`
-  * :doc:`Introduction to hardware device management in Linux
-    <linux_dev_mgmt>`
+  * :doc:`cxx_build`
+  * :doc:`git`
+  * :doc:`cxx_oo_basics`
+  * :doc:`cxx_unittest`
+  * :doc:`linux_basics`
+  * :doc:`linux_dev_mgmt`
 
-* **Exercises**. Above topics are consolidated by a set of programming
-  exercises. See :doc:`here <embedded-computing-1>` for the details.
+* **Exercises and Making**. Above topics are consolidated by a set of
+  programming exercises that involve relatively simple hardware
+  makery. See :doc:`here <embedded-computing-1>` for the details.
 * **Multithreading**. Although this is not exactly beginner stuff,
-  everybody does it (wrong). It makes sense to clarify the dos and
+  everybody does it (wrong). It makes sense to clarify the do's and
   don'ts :doc:`early on <mt>`, and to consolidate the matter in
   another set of exercises.
 
@@ -127,3 +127,5 @@ Embedded Computing 2
   * Network programming
   * Exchange documents using JSON and/or CSV/Excel
   * Database access
+
+* **Linux Kernel Drivers** maybe?
