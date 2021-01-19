@@ -8,7 +8,7 @@ New Topics to Write
 -------------------
 
 *
-  :doc:`/trainings/material/soup/python/python_0275_exercises/topic`. Screenplay
+  :doc:`/trainings/material/soup/python/python_0275_exercises/exercise_misc`. Screenplay
   for Exercise 2: ``uniq()``.
 
   * Complicated iteration over outputsequence, only to determine

@@ -6,7 +6,7 @@ Exercise: Boolean Expressions
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.exercise_boolean
+.. jf-topic:: python.basics.exercises.boolean
    :dependencies: python.basics.python_0160_boolean
 
 #. What is the value of the following expression?

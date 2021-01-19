@@ -6,8 +6,8 @@ Exercise: Swap Two Variables
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.exercise_variable
-   :dependencies: python.basics.exercise_boolean,
+.. jf-topic:: python.basics.exercises.variable
+   :dependencies: python.basics.exercises.boolean,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,
 		  python.basics.python_0120_helloworld

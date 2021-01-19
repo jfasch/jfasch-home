@@ -52,6 +52,7 @@ Live-Hacking (Jupyter Notebook)
 
 * :doc:`Jupyter Notebook (Übersicht) <notebook-wrapper>`
 * :doc:`Jupyter Notebook <Notebook>`
+* :download:`Download <Notebook.ipynb>`
 
 Struktur
 --------
@@ -98,7 +99,7 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
      - 6.7 Ausdrücke und Operatorrangfolgen
      - Bereits bei den Datentypen angeschnitten. Hier als Vertiefung
        nocheinmal.
-   * - 
+   * - :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_variable`
      - 6.8 Übungen
      - - Übung 1: Arbeiten mit grundlegenden Sprachelementen
 
@@ -107,7 +108,8 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
 	 - **4** lassen wir aus, da wir Syntaxdiagramme gespritzt
            haben.
 
-       - Übung 2: wird gemacht
+       - Übung 2: wird gemacht (siehe :doc:`hier
+         </trainings/material/soup/python/python_0165_exercises/exercise_variable>`)
 
 Herdt Kapitel 7: Kontrollstrukturen
 ...................................
@@ -155,7 +157,9 @@ Also: aus meinem Skriptum
    * - :doc:`/trainings/material/soup/python/python_0170_if/topic`
      - 7.7 Mehrfache Verzweigung (Fallauswahl)
      - Sperrige Formulierungen bei Herdt
-   * -
+   * - * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
+       * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_greet`
+       * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_username_password`
      - 7.15 Übungen
      - - Übung 1: Verzweigung
        - Übung 2: Geschachtelte Verzweigung
@@ -187,7 +191,8 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - :doc:`/trainings/material/soup/python/python_0193_while/topic`
      - 7.10 Kopfgesteuerte bedingte Schleife
      - Meins gewinnt
-   * -
+   * - * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
+       * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_even_numbers`
      -
      - 7.15 Übungen
        - Übung 4: Gerade Zahlen in der Konsole anzeigen
@@ -210,11 +215,9 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - :doc:`/trainings/material/soup/python/python_0225_range/topic`
      - 
      -
-   * - 
+   * - :doc:`/trainings/material/soup/python/python_0230_exercises/exercise_for_primeness`
      - 
-     - Übung: bauen Sie die ``while`` Schleife in unserem
-       Primzahlenerkennungsprogramm auf ``for`` um. Benutzen Sie dafür
-       die ``range()`` Funktion.
+     - 
    * - 
      - 7.12 Schnellübersicht
      - Auslassen
@@ -285,11 +288,17 @@ Herdt Kapitel 8: Elementare Datenstrukturen
      - 8.10 Übungen
      - Gemeinsam drüber schauen
 
-       * Übung 1, ``enumerate()``
-       * 
+       * Übung 1. Siehe
+	 :doc:`Jupyter Notebook, Kapitel 8.10 </trainings/log/detail/2021-01-13/notebook-wrapper>`; dort
+	 wird auf eine Vielzahl von Lösungsmöglichkeiten
+         eingegangen. *Bitte spezielle die Variante mit ``enumerate()``
+         beachten, diese ist die Pythonischste*.
 
 Herdt Kapitel 9: Methoden, Prozeduren und Funktionen
 ....................................................
+
+Diese Abteilung wurde hauptsächlich im :doc:`Jupyter Notebook
+</trainings/log/detail/2021-01-13/notebook-wrapper>` bestritten.
 
 .. list-table::
    :widths: 50 50 100
@@ -310,26 +319,27 @@ Herdt Kapitel 9: Methoden, Prozeduren und Funktionen
 
    * - 
      - 9.1 Unterprogramme
-     - 
+     - Auslassen
    * - 
      - 9.2 Parameterübergabe
-     - 
+     - Auslassen
    * - 
      - 9.3 Parameterübergabe als Wert
-     - 
+     - Auslassen
    * - 
      - 9.4 Parameterübergabe über Referenzen
-     - 
+     - Auslassen
    * - 
      - 9.5 Rückgabewerte von Funktionen oder Methoden
-     - 
+     - Auslassen
    * - 
      - 9.6 Innere Funktionen - Closures
-     - 
+     - Auslassen
    * - 
      - 9.7 Standardbibliotheken und Built-in-Funktionalitäten
-     - 
-   * - 
+     - Auslassen
+   * - * :doc:`/trainings/material/soup/python/python_0275_exercises/exercise_max_numbers_function`
+       * :doc:`/trainings/material/soup/python/python_0275_exercises/exercise_primeness_function`
      - 9.8 Übungen
      - U.U. nimmt man die Übungen aus ``if``/Verzweigung her
        (Beispiel: Übung 1 dort will, dass man das Maximum zweier
@@ -338,12 +348,91 @@ Herdt Kapitel 9: Methoden, Prozeduren und Funktionen
 Links
 -----
 
-jjj
+* `PEP 20 - The Zen of Python
+  <https://www.python.org/dev/peps/pep-0020/>`__
+* `Corey Schaefer's Youtube Channel
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
-* Pythonic, Zen
-* Corey Schaefer
-* Raymond Hettinger: "there must be a better way"
-* Generatoren, Corey Schafer
-* Local/Global, Corey Schafer
-* ``import``, modules, Corey Schafer
+  Corey Schaefer ist ein Python Trainer/Hacker, der eine schier
+  unendliche Anzahl von sehr guten Tutorials (im Live-Hacking Stil) im
+  Repertoire hat, eines besser als das andere. Hier eine Auswahl.
 
+  * .. raw:: html
+
+       <iframe
+           width="560" 
+	   height="315" 
+	   src="https://www.youtube.com/embed/QVdf0LgmICw" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+       </iframe>
+
+  * .. raw:: html
+
+       <iframe
+           width="560" 
+	   height="315" 
+	   src="https://www.youtube.com/embed/CqvZ3vGoGs0" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+       </iframe>
+
+  * .. raw:: html
+
+       <iframe
+           width="560"
+	   height="315" 
+	   src="https://www.youtube.com/embed/jTYiNjvnHZY" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+       </iframe>
+
+  * .. raw:: html
+
+       <iframe
+           width="560" 
+	   height="315" 
+	   src="https://www.youtube.com/embed/bD05uGo_sVI" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+       </iframe>
+
+* Raymond Hettinger hat den Satz geprägt, "There must be a better
+  way!"
+
+  Hettinger ist ein Python Core Developer, und gibt von Zeit zu Zeit
+  Talks auf Konferenzen. Hier der Talk mit dem Satz; definitiv
+  sehenswert, wenn man weiter in Python rein will.
+
+  .. raw:: html
+
+     <iframe
+         width="560" 
+	 height="315" 
+	 src="https://www.youtube.com/embed/anrOzOapJ2E" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>
+
+* `David Beazley
+  <https://www.youtube.com/channel/UCbNpPBMvCHr-TeJkkezog7Q>`__,
+  definitiv nichts für Anfänger, aber dafür hochinteressant und
+  lustig.
+
+  Hier ein typisches Video von ihm:
+
+  .. raw:: html
+
+     <iframe
+         width="560" 
+	 height="315" 
+	 src="https://www.youtube.com/embed/sPiWg5jSoZI" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>

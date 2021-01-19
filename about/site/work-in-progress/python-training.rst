@@ -16,19 +16,35 @@ exercises were made, and put them in order with dependencies. The
 resulting dependency chain defines the main structure of the course.
 
 * Split the "Executable Program" part out of "Hello World" (and rename
-  the entire thing to something like executing python code)
+  the entire thing to something like executing python code).
+
+  Don't forget about dependencies.
+
 * Split "Commandline Arguments" out from
   :doc:`/trainings/material/soup/python/python_0130_syntax_etc/topic`.
 
-  * Depend
-    :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_cmdline_digit`
-    on it.
+  Depend on it:
+
+  * :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+  * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
 
 * Create special purpose node type ``jf-exercise`` (rectangle shape),
   and convert all.
 
+* ``while`` exercises: generalize
+  :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
+  to take any number of arguments, and use while to run over those.
+
+* ``for`` exercise: simplify **all** ``while`` exercises to use
+  ``for`` instead.
+
+* Cram exercises in groups
+
 Exercise Structure
 ------------------
+
+* Continue to cram exercises in their respective groups
+* Bring in all the exercises from the Herdt script
 
 Split Exercises
 ...............
@@ -37,8 +53,6 @@ Custom trainings are defined by picking the appropriate
 exercises. Improve existing exercise material by splitting existing
 exercise-topics into more fine-grained pieces (maybe surrounded by a
 group?)
-
-* :doc:`/trainings/material/soup/python/python_0275_exercises/topic`
 
 Miscellaneous
 -------------
@@ -57,3 +71,4 @@ Miscellaneous
   * :doc:`/trainings/material/soup/python/python_0120_helloworld/topic`
   * :doc:`/trainings/material/soup/python/python_0500_files/topic`
 
+* "Dependencies" link in every topic

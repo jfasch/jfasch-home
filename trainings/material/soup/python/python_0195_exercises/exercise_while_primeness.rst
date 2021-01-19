@@ -1,12 +1,11 @@
 .. include:: <mmlalias.txt>
 
-Exercises: While Loop (Primeness)
-=================================
+Exercises: Primeness (``while``)
+================================
 
-.. jf-topic:: python.basics.exercise_while_primeness
-   :dependencies: python.basics.python_0193_while, 
-		  python.basics.exercise_boolean,
-		  python.basics.exercise_variable
+.. jf-topic:: python.basics.exercises.while_primeness
+   :dependencies: python.basics.python_0193_while,
+		  python.basics.exercises.while_even_numbers
 
 #. Write a program that checks whether a given number is prime!
 

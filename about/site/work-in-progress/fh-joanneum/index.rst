@@ -125,7 +125,7 @@ Embedded Computing 2
 
 (:doc:`Details <embedded-computing-2>`)
 
-* **Python interoduction**. :doc:`Introduce a new language.
+* **Python introduction**. :doc:`Introduce a new language.
   </trainings/material/soup/python/python-basics>`
 * **Rewrite exercises**. Based on what was accomplished in C++, in
   "Embedded Computing 1", translate those exercises into an equivalent
