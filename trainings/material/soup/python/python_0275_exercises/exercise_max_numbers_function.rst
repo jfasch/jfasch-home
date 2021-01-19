@@ -1,0 +1,24 @@
+.. include:: <mmlalias.txt>
+
+Exercise: Determine Maximum of Two Numbers (Function)
+=====================================================
+
+.. contents::
+   :local:
+
+.. jf-topic:: python.basics.exercises.max_numbers_function
+   :dependencies: python.basics.exercises.max_numbers,
+		  python.basics.python_0270_functions
+
+
+Modify the program from
+:doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
+as follows.
+
+* Push the code that calculates the maximum into a function.
+
+  * The function takes the numbers-to-compare as parameters.
+  * The function returns the calculated maximum.
+
+* The rest of the program remains intact; only the function is called
+  rather than implementing the comparison inline, top level.
