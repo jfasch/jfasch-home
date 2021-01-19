@@ -35,3 +35,8 @@ Read: an arrow ``A`` |longrightarrow| ``B`` means that topic ``A``
 
 .. jf-topicgraph::
    :entries: ec.ec1
+
+Stundenplan
+-----------
+
+:doc:`Hier ... <2021-SS-Stundenplan>`

@@ -1,15 +1,15 @@
 Embedded Computing
 ==================
 
-.. toctree::
-   :maxdepth: 1
-
-   Overview <ec>
-   embedded-computing-1
-   embedded-computing-2
+.. contents::
+   :local:
 
 .. toctree::
    :hidden:
+
+   ec
+   embedded-computing-1
+   embedded-computing-2
 
    cxx
    mt
@@ -39,13 +39,16 @@ Embedded Computing
    py_web
    py_web_sensors
 
+   2021-SS-Stundenplan
 
-Motivation
-----------
+Overview
+--------
+
+Knwoledge Transferred
+.....................
 
 Knowledge from "Computer Science and Programming (1+2)" and "Embedded
-Systems" is picked up and unified. We continue to give students a
-through introduction to
+Systems" is picked up and unified.
 
 * **Large scale software development**, covering topics like
 
@@ -53,10 +56,10 @@ through introduction to
   * Object Oriented Design
   * Configuration Management
 
-* **Operating System (OS) Concepts**. Bare metal operating systems are
-  intentionally *simple* - as a result, they are generally less
-  *powerful*. Linux, being a *general purpose OS*, has a number of
-  features any developer wants if the software becomes larger,
+* **Linux** (*Operating System Concepts*). Bare metal operating
+  systems are intentionally *simple* - as a result, they are generally
+  less *powerful*. Linux, being a *general purpose OS*, has a number
+  of features every developer wants if the software becomes larger,
 
   * *Address space separation* through the concept of *processes*: an
     abstraction of a crucial piece of hardware, the *Memory Management
@@ -71,22 +74,30 @@ through introduction to
     support *non-PC type hardware* which is popular in the embedded
     world.
 
-  The `Raspberry Pi <https://www.raspberrypi.org/>`__ is used as
-  hardware platform, for the following reasons,
+* **Python** (*Programming language alternatives*). Embedded
+  applications are historically written in C/C++ which is hard. It is
+  often more appropriate to prototype functionality in a higher level
+  language like `Python <https://www.python.org/>`__, or even use that
+  as final production language.
 
-  * It comes with a fully functional Linux distribution (based on
-    `Debian <https://www.debian.org/>`__).
-  * It supports hardware that is en vogue in embedded applications,
-    like GPIO, I2C, SPI, serial, and others.
+Course Setup
+............
 
-* **Programming language alternatives**. Embedded applications are
-  historically written in C/C++ which is hard. It is often more
-  appropriate to prototype functionality in a higher level language
-  like `Python <https://www.python.org/>`__, or even use that as final
-  production language.
+The `Raspberry Pi <https://www.raspberrypi.org/>`__ is used as work
+environment *and* hardware platform.
+
+* It comes with a fully functional Linux distribution (based on
+  `Debian <https://www.debian.org/>`__).
+* It supports hardware that is en vogue in embedded applications, like
+  GPIO, I2C, SPI, serial, and others.
+
+Details
+-------
+
+See :doc:`here <ec>` for a complete overview of the course structure.
   
 Embedded Computing 1
---------------------
+....................
 
 (:doc:`Details <embedded-computing-1>`)
 
@@ -110,7 +121,7 @@ Embedded Computing 1
 
 
 Embedded Computing 2
---------------------
+....................
 
 (:doc:`Details <embedded-computing-2>`)
 
