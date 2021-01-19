@@ -191,7 +191,7 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
      -
      - 7.15 Übungen
        - Übung 4: Gerade Zahlen in der Konsole anzeigen
-       - :doc:`/trainings/material/soup/python/python_0195_exercises/topic`
+       - :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
    * - 
      - 7.11 Fußgesteuerte bedingte Schleife
      - Auslassen (gibts nicht in Python)

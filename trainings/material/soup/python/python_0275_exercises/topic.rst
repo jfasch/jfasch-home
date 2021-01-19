@@ -4,7 +4,7 @@ Exercises: Lists, Loops, Functions
 ==================================
 
 .. jf-topic:: python.basics.python_0275_exercises
-   :dependencies: python.basics.python_0195_exercises, 
+   :dependencies: python.basics.exercise_while_primeness,
 		  python.basics.python_0193_while, 
 		  python.basics.python_0220_for, 
 		  python.basics.python_0270_functions,

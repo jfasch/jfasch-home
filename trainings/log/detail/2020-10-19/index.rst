@@ -126,9 +126,10 @@ Day 1
 * :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/python_0160_boolean/topic`
 * :doc:`/trainings/material/soup/python/python_0170_if/topic`
-* :doc:`/trainings/material/soup/python/python_0190_exercises/topic`
+* :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_mixed_list_keyerror`
+* :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_cmdline_digit`
 * :doc:`/trainings/material/soup/python/python_0193_while/topic`
-* :doc:`/trainings/material/soup/python/python_0195_exercises/topic`
+* :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while`
 * :doc:`/trainings/material/soup/python/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/python_0220_for/topic`
