@@ -62,6 +62,7 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
 
 .. list-table::
    :widths: 50 50 100
+   :align: left
    :header-rows: 1
 
    * - OpenTraining Topics
@@ -127,6 +128,7 @@ Also: aus meinem Skriptum
 Übungen von Herdt. Siehe dazu die folgende Tabelle.
 
 .. list-table::
+   :align: left
    :widths: 50 50 100
    :header-rows: 1
 
@@ -174,6 +176,7 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
 *Python* hilfreich zu sein.
 
 .. list-table::
+   :align: left
    :widths: 50 50 100
    :header-rows: 1
 
@@ -232,6 +235,7 @@ Herdt Kapitel 8: Elementare Datenstrukturen
 ...........................................
 
 .. list-table::
+   :align: left
    :widths: 50 50 100
    :header-rows: 1
 
@@ -301,6 +305,7 @@ Diese Abteilung wurde hauptsächlich im :doc:`Jupyter Notebook
 </trainings/log/detail/2021-01-13/notebook-wrapper>` bestritten.
 
 .. list-table::
+   :align: left
    :widths: 50 50 100
    :header-rows: 1
 

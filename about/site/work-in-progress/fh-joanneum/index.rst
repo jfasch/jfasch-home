@@ -44,7 +44,7 @@ Embedded Computing
 Overview
 --------
 
-Knwoledge Transferred
+Knowledge Transferred
 .....................
 
 Knowledge from "Computer Science and Programming (1+2)" and "Embedded

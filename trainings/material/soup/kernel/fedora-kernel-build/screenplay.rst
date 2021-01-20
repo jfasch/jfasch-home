@@ -10,68 +10,8 @@ kernel.
 .. contents::
    :local:
 
-Prerequisites
--------------
-
-.. code-block:: console
-
-   # dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign grubby 
-
-Building from the RPM Source
-----------------------------
-
-(`Documentation on Fedora Wiki
-<https://fedoraproject.org/wiki/Building_a_custom_kernel#Building_a_Kernel_from_the_Fedora_source_tree>`__)
-
-* Clone Fedora's kernel RPM. (``-a`` is *anonymous*, as I don't have a
-  developer account and don't intent to write back into their repo.)
-* As of this writing Fedora is at it 33rd release. We intend to make
-  modifications, so we dont just checkout that branch, but rather
-  create a tracking branch for it.
-
-  .. code-block:: console
-
-     $ fedpkg clone -a kernel
-     $ cd kernel/
-     $ git checkout --track remotes/origin/f33
-
-* Modify kernel version, append ``.local``. In ``kernel.spec``, modify
-  the line
-
-  .. code-block:: console
-
-     # define buildid .local
-
-  to
-
-  .. code-block:: console
-
-     %define buildid .local
-
-* Pull in more packages, based upon what's in the kernel specs.
-
-  .. code-block:: console
-
-     $ sudo dnf builddep kernel.spec
-
-* Add myself to ``/etc/pesign/users``
-
-  .. code-block:: console
-
-     $ sudo sh -c 'echo jfasch >> /etc/pesign/users'
-     $ sudo /usr/libexec/pesign/pesign-authorize 
-
-* Build
-
-.. code-block:: console
-
-   $ fedpkg local
-
-Building from "Exploded Git Tree"
----------------------------------
-
-(`Documentation on Fedora Wiki
-<https://fedoraproject.org/wiki/Building_a_custom_kernel#Building_a_kernel_from_the_exploded_git_trees>`__)
+Why Build the Entire Kernel When I Only Want to Build a Module
+--------------------------------------------------------------
 
 To build only kernel modules, they say, it is sufficient to install
 the ``kernel-devel`` package. However, that package tends to not be
@@ -79,8 +19,17 @@ available in the version that you need it for (usually you build
 against a kernel that runs on a different system, in a different
 version).
 
-This is where the "exploded git tree" is helpful. For us, the target
-system is
+Building from "Exploded Git Tree"
+---------------------------------
+
+(`Documentation on Fedora Wiki
+<https://fedoraproject.org/wiki/Building_a_custom_kernel#Building_a_kernel_from_the_exploded_git_trees>`__)
+
+The "Exploded Git Tree" is Fedorish for "a kernel tree that is less
+integrated with the Fedora workflow, and thus more suitable for
+developers that refuse to integrate with any workflow. This is me.
+
+See :ref:`below <fedora_rpm_build>` if you like workflows and RPMs.
 
 .. code-block:: console
 
@@ -102,7 +51,7 @@ built-in. I'd have expected the exploded tree to already contain a
 suitable ``EXTRAVERSION``, but this is not the case.
 
 Our target kernel is ``5.8.18-300.fc33.x86_64``, so we edit the
-toplevel ``Makefile`` to have 
+toplevel ``Makefile`` to have
 
 .. code-block:: console
 
@@ -143,3 +92,61 @@ Restore version control,
 .. code-block:: console
 
    $ mv .git-hidden .git
+
+
+.. _fedora_rpm_build:
+
+Building from the RPM Source
+----------------------------
+
+(`Documentation on Fedora Wiki
+<https://fedoraproject.org/wiki/Building_a_custom_kernel#Building_a_Kernel_from_the_Fedora_source_tree>`__)
+
+.. code-block:: console
+   :caption: Prerequisites
+
+   # dnf install fedpkg fedora-packager rpmdevtools ncurses-devel pesign grubby 
+
+* Clone Fedora's kernel RPM. (``-a`` is *anonymous*, as I don't have a
+  developer account and don't intent to write back into their repo.)
+* As of this writing Fedora is at its 33rd release. We intend to make
+  modifications, so we dont just checkout that branch, but rather
+  create a tracking branch for it.
+
+  .. code-block:: console
+
+     $ fedpkg clone -a kernel
+     $ cd kernel/
+     $ git checkout --track remotes/origin/f33
+
+* Modify kernel version, append ``.local``. In ``kernel.spec``, modify
+  the line
+
+  .. code-block:: console
+
+     # define buildid .local
+
+  to
+
+  .. code-block:: console
+
+     %define buildid .local
+
+* Pull in more packages, based upon what's in the kernel specs.
+
+  .. code-block:: console
+
+     # dnf builddep kernel.spec
+
+* Add myself to ``/etc/pesign/users``
+
+  .. code-block:: console
+
+     # sh -c 'echo jfasch >> /etc/pesign/users'
+     # /usr/libexec/pesign/pesign-authorize 
+
+* Build
+
+.. code-block:: console
+
+   $ fedpkg local

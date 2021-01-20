@@ -78,12 +78,12 @@ Juni
 VO
 ..
 
-* KW23: ganztags ausser Donnerstag, 6 VO
+* KW23: ganztags ausser Mittwoch, 6 VO
 
 UE
 ..
 
-* KW23: ganztags ausser Donnerstag, 6 UE pro Gruppe (12 UE insgesamt)
+* KW23: ganztags ausser Mittwoch, 6 UE pro Gruppe (12 UE insgesamt)
 
 .. csv-table::
 
