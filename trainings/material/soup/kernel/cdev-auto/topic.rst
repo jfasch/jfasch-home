@@ -8,6 +8,7 @@ Character Devices (Automatic Node Creation)
    :maxdepth: 1
 
    slides
+   screenplay
 
 .. jf-topicgraph:: 
    :entries: kernel.cdev_auto

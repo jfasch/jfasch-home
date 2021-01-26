@@ -8,6 +8,7 @@ Character Devices (Manual Node Creation)
    :maxdepth: 1
 
    slides
+   screenplay
 
 .. jf-topicgraph:: 
    :entries: kernel.cdev_manual

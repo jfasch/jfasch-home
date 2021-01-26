@@ -12,3 +12,8 @@ Character Devices: Using ``ioctl()``
 
 .. jf-topicgraph:: 
    :entries: kernel.cdev_ioctl
+
+ToDo
+----
+
+* empty ioctl just to see what's called

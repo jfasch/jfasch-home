@@ -8,6 +8,8 @@
 Character Devices: Using ``ioctl()`` (Slideshow)
 ================================================
 
+jjj todo see :doc:`topic`
+
 .. contents::
    :local:
 

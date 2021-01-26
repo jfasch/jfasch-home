@@ -68,7 +68,7 @@ The training will be based upon
   * Device initialization
   * Register ("BAR") access
 
-* Das Network-Subsystem/NAPI
+* **Network-Subsystem/NAPI**
 
 Books
 -----

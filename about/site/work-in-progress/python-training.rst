@@ -72,3 +72,8 @@ Miscellaneous
   * :doc:`/trainings/material/soup/python/python_0500_files/topic`
 
 * "Dependencies" link in every topic
+
+* Absorb
+  :doc:`/trainings/material/soup/python/python_1000_function_objects/topic`
+  in
+  :doc:`/trainings/material/soup/python/python_0270_functions/topic`

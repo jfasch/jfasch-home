@@ -5,8 +5,8 @@
    :keywords: schulung, training, linux, kernel, module, load, unload,
               initialization, build
 
-Modules: Hello World (Slideshow)
-================================
+Module Loading, Hello World (Slideshow)
+=======================================
 
 .. contents::
    :local:
@@ -62,6 +62,26 @@ Minimum Module Source
    
    module_init(hello_init);
    module_exit(hello_exit);
+
+Gotchas: ``init()`` and ``exit()``
+----------------------------------
+
+* ``init()`` returns 0 on success
+* On error, returns negative value of userspace's ``errno``
+
+  * E.g., ``return -EINVAL``
+  * ``EINVAL`` is the most unspecific, one for all, errors
+
+* Careful when ``init()`` fails *in the middle*
+
+  * |longrightarrow| *partial initialization*
+  * |longrightarrow| before returning, ``init()`` must revert what is
+    did so far
+
+* If ``init()`` succeeds, then ``exit()`` is supposed to revert
+  everything that ``init()`` did
+* If ``init()`` fails, the module is *not* loaded (and thus ``exit()``
+  is not called)
 
 Module Build
 ------------
