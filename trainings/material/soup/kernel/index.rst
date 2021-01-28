@@ -48,7 +48,22 @@ Sample Code Maintenance
         ``sysfs``, class, device, blah.
 
 	* ``my_driver_cdev_file_operations``. ``struct
-	  file_operations``.
+ 	  file_operations``.
+
+	  Only dummy operations
+
+	  * ``my_driver_cdev_first_functionality``. ``linux/list.h``,
+            ``kmalloc()``.
+
+Links
+-----
+
+jjj clean this up
+
+* https://www.kernel.org/doc/
+* https://www.kernel.org/doc/html/latest/
+
+  blah search blah sphinx blah
 
 To Do List
 ----------
@@ -63,3 +78,4 @@ To Do List
   * ``meta`` everywhere
   * sidebars with backlinks to this document
   * this document: course description
+
