@@ -34,11 +34,35 @@ Sample Code Maintenance
 * ``my_driver.c`` is morphed as we go
 * Branch *tree* (not merged back)
 
-  * ``my_driver_hello``. :doc:`hello-world/topic`. 
+  * **Branch** ``my_driver_hello``
 
-    The root of everything. Module loading, ``init()``, ``exit()``.
+    .. list-table::
+       :widths: auto
+       :align: left
 
-    * ``my_driver_cdev_manual``. :doc:`cdev-manual/topic`
+       * - *Topic*
+	 - :doc:`hello-world/topic`
+       * - *Contents*
+	 - * The root of everything
+	   * ``Makefile``, build
+	   * Module loading, ``init()``, ``exit()``.
+       * - *Status*
+	 - DONE
+
+    * **Branch** ``my_driver_cdev_manual``
+
+      .. list-table::
+         :widths: auto
+         :align: left
+  
+         * - *Topic*
+	   -  :doc:`cdev-manual/topic`
+         * - *Contents*
+           - * History: *static* device numbers
+	     * Character device basics
+         * - *Status*
+	   - 
+
 
       #. major/minor numbers |longrightarrow| ``/proc/devices``
       #. Character devices, all manual |longrightarrow| ``mknod``
@@ -54,6 +78,23 @@ Sample Code Maintenance
 
 	  * ``my_driver_cdev_first_functionality``. ``linux/list.h``,
             ``kmalloc()``.
+
+	    * ``my_driver_cdev_refactoring``
+
+	      :doc:`/trainings/material/soup/kernel/cdev-refactoring/topic`
+
+	      * ``my_driver_multiple_devices``
+
+		:doc:`/trainings/material/soup/kernel/cdev-multiple-devices/topic`
+
+		* ``my_driver_mutex``
+
+		  :doc:`/trainings/material/soup/kernel/mutex/topic`
+
+		  * ``my_driver_interrupt``. Move to raspi, see how
+                    cross compilation works.
+
+		    :doc:`/trainings/material/soup/kernel/interrupt/topic`
 
 Links
 -----

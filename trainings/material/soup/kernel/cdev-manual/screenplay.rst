@@ -1,17 +1,10 @@
 .. include:: <mmlalias.txt>
 
-Character Devices (Manual Node Creation) (Livehacking SCreenplay)
-=================================================================
+Character Device Basics (Livehacking Screenplay)
+================================================
 
 .. contents::
    :local:
-
-Source on Github
-----------------
-
-jjj give link
-
-jjj code-block
 
 Major and Minor Numbers
 -----------------------
@@ -31,8 +24,6 @@ In the ``init()`` method ...
 Character Device
 ----------------
 
-jjj
-
 * Empty ``ops``, no oops (no methods too, though)
 * ``(42,1)`` succeeds
 
@@ -45,3 +36,7 @@ jjj
 
   * cat/open() -> EINVAL
 
+Source
+------
+
+jjj give source

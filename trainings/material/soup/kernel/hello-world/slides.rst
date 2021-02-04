@@ -139,6 +139,7 @@ Modules: Load/Unload Commands
 
    * - ``lsmod``
      - Lists all loaded modules
+     - `man page <https://man7.org/linux/man-pages/man8/lsmod.8.html>`__
    * - ``insmod``
      - Inserts module by *file name* (e.g. ``insmod
        ../path/to/hello.ko``)
@@ -148,6 +149,7 @@ Modules: Load/Unload Commands
 	 symbols)
        * No nothing
 
+     - `man page <https://man7.org/linux/man-pages/man8/insmod.8.html>`__
    * - ``modprobe``
      - Inserts module by *module name* (e.g. ``modprobe hello``)
        
@@ -156,10 +158,12 @@ Modules: Load/Unload Commands
        * Variant: ``modprobe -r hello`` *unloads* including
          dependencies
        
+     - `man page <https://man7.org/linux/man-pages/man8/modprobe.8.html>`__
    * - ``rmmod``
      - * Removes/unloads module by *module name* (e.g. ``rmmod hello``)
        * Leaves now-unused dependencies in place (use ``modprobe -r``
 	 instead)
+     - `man page <https://man7.org/linux/man-pages/man8/rmmod.8.html>`__
 
 Modules: Dependency (and other) Databases
 -----------------------------------------

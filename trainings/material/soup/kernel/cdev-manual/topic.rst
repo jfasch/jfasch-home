@@ -1,8 +1,8 @@
 .. jf-topic:: kernel.cdev_manual
    :dependencies: kernel.modules_hello_world
 
-Character Devices (Manual Node Creation)
-========================================
+Character Device Basics
+=======================
 
 .. toctree::
    :maxdepth: 1

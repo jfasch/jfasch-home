@@ -23,6 +23,9 @@ First Functionality (Slideshow)
 
     * careful: do not modify while iterating
 
+  * ``list_entry()``
+  * ``list_add_tail()``
+  * ``list_first_entry()``
   * more
 
 * kmalloc etc: https://www.oreilly.com/library/view/linux-device-drivers/0596005903/ch08.html
