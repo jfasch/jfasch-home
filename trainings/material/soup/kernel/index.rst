@@ -61,11 +61,7 @@ Sample Code Maintenance
            - * History: *static* device numbers
 	     * Character device basics
          * - *Status*
-	   - 
-
-
-      #. major/minor numbers |longrightarrow| ``/proc/devices``
-      #. Character devices, all manual |longrightarrow| ``mknod``
+	   - DONE
 
       * ``my_driver_module_params``. Major number as module parameter.
       * ``my_driver_cdev_dynamic_major``. :doc:`cdev-auto/topic`.

@@ -55,17 +55,17 @@ Before going public with a character device,
    int register_chrdev_region(dev_t, unsigned count, const char* drivername);
    void unregister_chrdev_region(dev_t, unsigned count);
 
-Links:
+.. sidebar:: Documentation
 
-.. list-table::
-   :widths: auto
-   :align: left
-
-   * * `register_chrdev_region
-       <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=register_chrdev_region#c.register_chrdev_region>`__
-
-   * * `unregister_chrdev_region
-       <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=register_chrdev_region#c.unregister_chrdev_region>`__
+   .. list-table::
+      :widths: auto
+      :align: left
+   
+      * * `register_chrdev_region
+          <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=register_chrdev_region#c.register_chrdev_region>`__
+   
+      * * `unregister_chrdev_region
+          <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=register_chrdev_region#c.unregister_chrdev_region>`__
 
 History: Hardcoded Device Numbers (2)
 -------------------------------------
@@ -102,18 +102,18 @@ Once we have the device numbers guaranteed, a *device* is created.
   in ``register_chrdev_region()``)
 * ``cdev_del()`` is the inverse of ``cdev_add()``
 
-Links:
+.. sidebar:: Documentation
 
-.. list-table::
-   :widths: auto
-   :align: left
-
-   * * `cdev_init
-       <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=cdev_init#c.cdev_init>`__
-   * * `cdev_add
-       <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=cdev_add#c.cdev_add>`__
-   * * `cdev_del
-       <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=cdev_del#c.cdev_del>`__
+   .. list-table::
+      :widths: auto
+      :align: left
+   
+      * * `cdev_init
+          <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=cdev_init#c.cdev_init>`__
+      * * `cdev_add
+          <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=cdev_add#c.cdev_add>`__
+      * * `cdev_del
+          <https://www.kernel.org/doc/html/latest/core-api/kernel-api.html?highlight=cdev_del#c.cdev_del>`__
 
 Character Device (2)
 --------------------

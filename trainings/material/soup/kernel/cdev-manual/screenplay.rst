@@ -9,32 +9,39 @@ Character Device Basics (Livehacking Screenplay)
 Major and Minor Numbers
 -----------------------
 
-In the ``init()`` method ...
+* ``register_chrdev_region()`` in ``init()``, and
+  ``unregister_chrdev_region()`` in ``exit()``
 
-* Hardcode major and minor numbers to ``(1,1)`` initially
-  |longrightarrow| error in logs (``KERN_ERR``)
-* Emphasize on error handling (``return -EINVAL``)
-* ``register_chrdev_region()``. *Not* ``register_chrdev()``, that does
-  ``cdev_add()`` implicitly |longrightarrow| kernel development just
-  happens.
-* ``unregister_chrdev_region()``. *Not* ``unregister_chrdev()`` - that
-  leaves the major number registered, at least. Predates ``cdev`` API;
-  still used by old drivers.
+  * Caveat: kernel development just happens. The following methods
+    predate the ``cdev`` API; still used by old drivers.
+
+    * *Not* ``register_chrdev()`` - that does ``cdev_add()``
+      implicitly
+    * *Not* ``unregister_chrdev()`` - that leaves the major number
+      registered, at least.
+
+  * Hardcode major and minor numbers to ``(1,1)`` initially
+    |longrightarrow| error in logs (``KERN_ERR``)
+  * Emphasize on error handling (``return -EINVAL``)
+  * Take ``(42,1)``, finally works
+
+    * See how major shows up in ``/proc/devices``
+
 
 Character Device
 ----------------
 
-* Empty ``ops``, no oops (no methods too, though)
-* ``(42,1)`` succeeds
-
-  * See how major shows up in ``/proc/devices``
-  * Create node ...
+* ``cdev_init()``, ``cdev_add()`` (in ``init()``)
+* ``cdev_del()`` (in ``exit()``)
+* Empty ``file_operations`` |longrightarrow| later
+* Create node ...
 
     .. code-block:: console
 		  
        # mknod my_driver_henkel c 42 0
 
-  * cat/open() -> EINVAL
+  * ``cat my_driver_henkel`` |longrightarrow| EINVAL
+  * ``strace cat my_driver_henkel`` |longrightarrow| Aha
 
 Source
 ------
