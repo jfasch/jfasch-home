@@ -6,6 +6,14 @@ Interrupts (Screenplay)
 .. contents::
    :local:
 
+jjj Todo
+--------
+
+* give source
+* hammer on it via ``ioctl()``, and at the same time generate interrupts
+
+  * discuss: "atomic context"
+
 New ``ioctl``: ``MY_ACTIVATE_GPIO``
 -----------------------------------
 
@@ -54,8 +62,3 @@ Request Interrupt
 Add hardware, check ``/proc/interrupts``
 
 
-
-Source
-------
-
-jjjj give source

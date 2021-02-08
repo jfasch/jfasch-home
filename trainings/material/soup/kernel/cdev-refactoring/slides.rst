@@ -59,3 +59,10 @@ of devices.
 * how does the cdev come in in open?
 * ``container_of()``, link to it.
 
+**jjjjj more**:
+
+* bring in ``cdev`` section from :download:`Kernel
+  </trainings/material/pdf/400-kernel.pdf>`
+* bring in ``open()`` section from :download:`Kernel
+  </trainings/material/pdf/400-kernel.pdf>`
+  

@@ -63,34 +63,41 @@ Sample Code Maintenance
          * - *Status*
 	   - DONE
 
-      * ``my_driver_module_params``. Major number as module parameter.
-      * ``my_driver_cdev_dynamic_major``. :doc:`cdev-auto/topic`.
+      * **Branch** ``my_driver_module_params``. Major number as module parameter.
+      * **Branch** ``my_driver_cdev_dynamic_major``. :doc:`cdev-auto/topic`.
         ``sysfs``, class, device, blah.
 
-	* ``my_driver_cdev_file_operations``. ``struct
+	* **Branch** ``my_driver_cdev_file_operations``. ``struct
  	  file_operations``.
 
-	  Only dummy operations
+	  :doc:`/trainings/material/soup/kernel/cdev-file-operations/topic`
+          (only dummy operations)
 
-	  * ``my_driver_cdev_first_functionality``. ``linux/list.h``,
+	  * **Branch** ``my_driver_cdev_first_functionality``. ``linux/list.h``,
             ``kmalloc()``.
 
-	    * ``my_driver_cdev_refactoring``
+	    :doc:`/trainings/material/soup/kernel/cdev-first-functionality/topic`
+
+	    * **Branch** ``my_driver_cdev_refactoring``
 
 	      :doc:`/trainings/material/soup/kernel/cdev-refactoring/topic`
 
-	      * ``my_driver_multiple_devices``
+	      * **Branch** ``my_driver_multiple_devices``
 
 		:doc:`/trainings/material/soup/kernel/cdev-multiple-devices/topic`
 
-		* ``my_driver_mutex``
+		* **Branch** ``my_driver_mutex``
 
 		  :doc:`/trainings/material/soup/kernel/mutex/topic`
 
-		  * ``my_driver_interrupt``. Move to raspi, see how
-                    cross compilation works.
+		  * **Branch** ``my_driver_interrupt``. Move to raspi,
+                    see how cross compilation works.
 
 		    :doc:`/trainings/material/soup/kernel/interrupt/topic`
+
+                    * **Branch** ``my_driver_spinlock_atomic``.
+  
+                      :doc:`/trainings/material/soup/kernel/spinlock-atomic/topic`
 
 Links
 -----

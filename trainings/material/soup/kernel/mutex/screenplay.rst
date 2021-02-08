@@ -21,6 +21,7 @@ Protect Event List
 * Init in ``init()``
 * ``destroy()``: how can that be called in parallel?
 * Protect all other methods
+* ``kmalloc()`` outside critical section?
 
 Protect Device List
 -------------------

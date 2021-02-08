@@ -6,6 +6,16 @@ Fighting Parallelism: Mutex (Slideshow)
 .. contents::
    :local:
 
+jjj Todo
+--------
+
+:download:`Kernel </trainings/material/pdf/400-kernel.pdf>`
+
+* nested? recursive?
+* interruptible?
+* realtime mutex? stub topic for riority inheritance/inversion.
+* trylock?
+
 What Do We Have?
 ----------------
 
@@ -63,6 +73,8 @@ Enter Mutex
    mutex_init(&my_mutex);
    mutex_destroy(&my_mutex);
    mutex_lock(&my_mutex);
+   mutex_lock_interruptible();
+   mutex_lock_interruptible_nested();
    mutex_unlock(&my_mutex);
 
 Usage?

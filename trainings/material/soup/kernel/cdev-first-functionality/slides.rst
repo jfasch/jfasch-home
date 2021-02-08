@@ -31,3 +31,5 @@ First Functionality (Slideshow)
 * kmalloc etc: https://www.oreilly.com/library/view/linux-device-drivers/0596005903/ch08.html
 
   * ``#include <linux/slab.h>``
+
+* bring in ``ioctl()`` chapter from :download:`Kernel </trainings/material/pdf/400-kernel.pdf>`
