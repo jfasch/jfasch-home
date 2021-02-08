@@ -56,16 +56,28 @@ Sample Code Maintenance
          :align: left
   
          * - *Topic*
-	   -  :doc:`cdev-manual/topic`
+           -  :doc:`cdev-manual/topic`
          * - *Contents*
            - * History: *static* device numbers
-	     * Character device basics
+             * Character device basics
          * - *Status*
-	   - DONE
+           - DONE
 
-      * **Branch** ``my_driver_module_params``. Major number as module parameter.
-      * **Branch** ``my_driver_cdev_dynamic_major``. :doc:`cdev-auto/topic`.
+      * **Branch**
+        ``my_driver_cdev_dynamic_major``. :doc:`cdev-auto/topic`.
         ``sysfs``, class, device, blah.
+
+        .. list-table::
+	   :widths: auto
+           :align: left
+    
+           * - *Topic*
+             -  :doc:`cdev-auto/topic`
+           * - *Contents*
+             - * *Dynamic* device number allocation
+               * ``devtmpfs`` and ``sysfs``
+           * - *Status*
+             - ...
 
 	* **Branch** ``my_driver_cdev_file_operations``. ``struct
  	  file_operations``.
@@ -81,6 +93,8 @@ Sample Code Maintenance
 	    * **Branch** ``my_driver_cdev_refactoring``
 
 	      :doc:`/trainings/material/soup/kernel/cdev-refactoring/topic`
+
+	      Module params
 
 	      * **Branch** ``my_driver_multiple_devices``
 
@@ -111,6 +125,18 @@ jjj clean this up
 
 To Do List
 ----------
+
+* :download:`Kernel </trainings/material/pdf/400-kernel.pdf>`
+
+  * Topic "Kernel Source"
+  * "Kernel Modules"? Probably aggregate into :doc:`hello-world/topic`
+  * "Kernel Internals"?
+
+  * 0520-kernel-communication
+  * 0521-kernel-kmalloc (GFP etc, **depend interrupts on it**)
+  * 0525-kernel-io-memory
+  * 0532-kernel-threaded-interrupts
+  * 0710-kernel-preempt-rt
 
 * Aggregate ``_morph/`` branches top-level
 * Bring source code into slides/screenplays
