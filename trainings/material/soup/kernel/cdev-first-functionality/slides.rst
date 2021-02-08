@@ -13,6 +13,11 @@ First Functionality (Slideshow)
 .. contents::
    :local:
 
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_cdev_first_functionality/_morph>`__
+
 * list: https://www.oreilly.com/library/view/linux-device-drivers/0596000081/ch10s05.html
 
   * ``#include <linux/list.h>``

@@ -12,6 +12,11 @@ Character Device Basics (Slideshow)
 .. contents::
    :local:
 
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_cdev_manual/_morph>`__
+
 Major and Minor Numbers: User's View
 ------------------------------------
 

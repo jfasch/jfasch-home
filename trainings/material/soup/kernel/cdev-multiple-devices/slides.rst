@@ -6,6 +6,11 @@ Multiple Devices (Slideshow)
 .. contents::
    :local:
 
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_multiple_devices/_morph>`__
+
 Module Parameter: ``ndevices``
 ------------------------------
 

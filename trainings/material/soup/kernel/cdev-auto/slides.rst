@@ -12,6 +12,11 @@ Character Devices (Automatic Node Creation) (Slideshow)
 .. contents::
    :local:
 
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_cdev_dynamic_major/_morph>`__
+
 Dynamic Device Numbers
 ----------------------
 

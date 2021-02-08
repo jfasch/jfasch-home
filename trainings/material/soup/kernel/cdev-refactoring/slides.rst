@@ -11,6 +11,11 @@ Refactoring (Slideshow)
 .. contents::
    :local:
 
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_cdev_refactoring/_morph>`__
+
 What's Bad?
 -----------
 

@@ -11,6 +11,11 @@ Module Loading, Hello World (Slideshow)
 .. contents::
    :local:
 
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_hello/_morph>`__
+
 Kernel Driver Anatomy
 ---------------------
 

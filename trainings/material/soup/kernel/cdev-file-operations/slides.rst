@@ -12,6 +12,11 @@ File Operations on Character Devices (Slideshow)
 .. contents::
    :local:
 
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_cdev_file_operations/_morph>`__
+
 File Operations: "vtable"
 -------------------------
 
