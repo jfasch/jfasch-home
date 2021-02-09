@@ -11,6 +11,12 @@ Interrupts (Slideshow)
    `See Github
    <https://github.com/jfasch/jf-kernel-course/tree/my_driver_interrupt/_morph>`__
 
+jjj Todo
+--------
+
+Look over interrupt section in :download:`Kernel
+</trainings/material/pdf/400-kernel.pdf>`
+
 Move to Raspberry Pi, Cross Compiling
 -------------------------------------
 

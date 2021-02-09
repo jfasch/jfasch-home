@@ -113,6 +113,20 @@ Sample Code Maintenance
   
                       :doc:`/trainings/material/soup/kernel/spinlock-atomic/topic`
 
+		      * **Branch** ``my_driver_time_timer``.
+  
+                        .. list-table::
+                           :widths: auto
+                           :align: left
+                    
+                           * - *Topic*
+                             - :doc:`time_timer/topic`
+                           * - *Contents*
+                             - * ``jiffies``
+                               * Timer wheel methods
+                           * - *Status*
+                             - DONE
+
 Links
 -----
 

@@ -20,10 +20,7 @@ Character Devices (Automatic Node Creation) (Slideshow)
 Problem
 -------
 
-.. fut::
-
-   hier weitermachen
-
+jjj
 
 Dynamic Device Numbers
 ----------------------
