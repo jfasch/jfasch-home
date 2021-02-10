@@ -11,12 +11,6 @@ Interrupts (Slideshow)
    `See Github
    <https://github.com/jfasch/jf-kernel-course/tree/my_driver_interrupt/_morph>`__
 
-jjj Todo
---------
-
-Look over interrupt section in :download:`Kernel
-</trainings/material/pdf/400-kernel.pdf>`
-
 Move to Raspberry Pi, Cross Compiling
 -------------------------------------
 
@@ -59,56 +53,6 @@ Cross Compilation Sucks
 
    $ make oldconfig
 
-.. _ioctl-strange-beast:
-
-``ioctl()`` Is A Strange Beast
-------------------------------
-
-* History-laden
-* Historically, hardcoding major an minor number led to conflicts
-  between devices (so they say)
-* Safety measure: ``ioctl`` request numbers need to be endoded
-
-  * Type information of 3rd argument
-  * Direction
-
-* Currently not the case: ``enum my_ioctl_requests`` starts at 0, just
-  like ``enum``'s do by default
-
-``_IO*()`` Macros
------------------
-
-.. code-block:: c
-   :caption: <linux/ioctl.h>
-
-   /*
-    * Used to create numbers.
-    *
-    * NOTE: _IOW means userland is writing and kernel is reading. _IOR
-    * means userland is reading and kernel is writing.
-    */
-   #define _IO(type,nr)		_IOC(_IOC_NONE,(type),(nr),0)
-   #define _IOR(type,nr,size)	_IOC(_IOC_READ,(type),(nr),(_IOC_TYPECHECK(size)))
-   #define _IOW(type,nr,size)	_IOC(_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
-   #define _IOWR(type,nr,size)	_IOC(_IOC_READ|_IOC_WRITE,(type),(nr),(_IOC_TYPECHECK(size)))
-
-* ``type``: some (arbitrary?) "magic number"
-* ``nr``: actual ``ioctl`` request
-* ``size``: the C type, *not* the size (OMG)
-
-.. code-block:: c
-
-``_IO*()`` Macros: Usage
-------------------------
-
-.. code-block:: c
-
-   enum my_ioctls
-   {
-       DO_THIS = _IO(666, 0), /* no argument */
-       DO_THAT = _IOW(666, 1, int), /* user to kernel, int argument */
-   };
-
 Short (Legacy) GPIO API Introduction
 ------------------------------------
 
@@ -134,6 +78,20 @@ Short (Legacy) GPIO API Introduction
    * Descriptor based (``gpiod``) API: `LWN article
      <https://lwn.net/Articles/533632/>`__
 
+Interrupt Facts
+---------------
+
+* Interrupt context is not *scheduled*
+* No sleeping API calls allowed
+* Not easily debugged
+* Not easy in general
+* No prioritization
+
+**But** ...
+
+* Threaded interrupt handlers
+* ... thanks to ``PREEMPT_RT`` slowly being integrated in mainline
+
 Interrupt Service Routine
 -------------------------
 
@@ -155,10 +113,10 @@ Interrupt Service Routine
 
    ``IRQ_NONE``, interrupt was not from this device or was not handled (shared interrupt?)
    ``IRQ_HANDLED``, interrupt was handled by this device
-   ``IRQ_WAKE_THREAD``, handler requests to wake the handler thread
+   ``IRQ_WAKE_THREAD``, handler requests to wake the handler thread (for threaded interrupts)
 
-Requesting (and Releasing) Interrupts
--------------------------------------
+Requesting (and Releasing) Interrupts (1)
+-----------------------------------------
 
 .. code-block:: c
 
@@ -173,10 +131,17 @@ Requesting (and Releasing) Interrupts
    :widths: auto
    :align: left
 
+   ``IRQF_SHARED``, Multiple interrupts shared on same line
    ``IRQF_TRIGGER_RISING``, Edge triggered: rising
    ``IRQF_TRIGGER_FALLING``, Edge triggered: falling
    ``IRQF_TRIGGER_HIGH``, Level triggered: high
    ``IRQF_TRIGGER_LOW``, Level triggered: low
+
+* *Attention*: after successful call to ``request_irq()`` line is hot
+  *immediately*
+
+Requesting (and Releasing) Interrupts (2)
+-----------------------------------------
 
 .. note::
 

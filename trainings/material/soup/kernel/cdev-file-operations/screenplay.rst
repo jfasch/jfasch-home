@@ -23,8 +23,8 @@ Hooks Necessary
    read(3, 0x7f3d11330000, 131072)         = -1 EINVAL (Invalid argument)
    ...
 
-``open()``, ``read()``, ``write()``
------------------------------------
+Implement ``open()``, ``read()``, ``write()``
+---------------------------------------------
 
 * Only debug output; no access to device (or any state held by it)
 * ``read()`` and ``write()`` initially just like ``/dev/null``
@@ -32,7 +32,6 @@ Hooks Necessary
 ``ioctl()``
 -----------
 
-* blah ``unlocked_ioctl()``: history
 * ``request`` parameter: like protocol identifier
 * ignore data for now
 
@@ -40,6 +39,3 @@ Hooks Necessary
 
 * Use ``request = 666`` as ioctl request |longrightarrow|
   *Inappropriate ioctl for device* (``ENOTTY``)
-
-
-https://man7.org/linux/man-pages/man2/ioctl.2.html

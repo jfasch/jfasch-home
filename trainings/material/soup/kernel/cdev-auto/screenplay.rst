@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Character Devices (Automatic Node Creation) (Screenplay)
-========================================================
+Modern Character Devices (Screenplay)
+=====================================
 
 .. contents::
    :local:

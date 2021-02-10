@@ -6,8 +6,8 @@
    :keywords: schulung, training, linux, kernel, module, character
               device, cdev, device_create
 
-Character Devices (Automatic Node Creation) (Slideshow)
-=======================================================
+Modern Character Devices (Slideshow)
+====================================
 
 .. contents::
    :local:

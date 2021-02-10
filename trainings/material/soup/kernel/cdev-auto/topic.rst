@@ -1,8 +1,8 @@
 .. jf-topic:: kernel.cdev_auto
    :dependencies: kernel.cdev_manual
 
-Character Devices (Automatic Node Creation)
-===========================================
+Modern Character Devices
+========================
 
 .. toctree::
    :maxdepth: 1

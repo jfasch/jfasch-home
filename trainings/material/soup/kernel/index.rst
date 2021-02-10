@@ -63,9 +63,7 @@ Sample Code Maintenance
          * - *Status*
            - DONE
 
-      * **Branch**
-        ``my_driver_cdev_dynamic_major``. :doc:`cdev-auto/topic`.
-        ``sysfs``, class, device, blah.
+      * **Branch** ``my_driver_cdev_dynamic_major``
 
         .. list-table::
 	   :widths: auto
@@ -79,11 +77,22 @@ Sample Code Maintenance
            * - *Status*
              - ...
 
-	* **Branch** ``my_driver_cdev_file_operations``. ``struct
- 	  file_operations``.
+	* **Branch** ``my_driver_cdev_file_operations``
 
-	  :doc:`/trainings/material/soup/kernel/cdev-file-operations/topic`
-          (only dummy operations)
+          .. list-table::
+             :widths: auto
+             :align: left
+      
+             * - *Topic*
+               - :doc:`cdev-file-operations/topic`
+             * - *Contents*
+               - * History: *static* device numbers
+                 * Character device basics
+		 * ``struct file_operations``
+		 * ``open()``
+		 * ``ioctl()`` and ``_IO*()`` macros
+             * - *Status*
+               - DONE
 
 	  * **Branch** ``my_driver_cdev_first_functionality``. ``linux/list.h``,
             ``kmalloc()``.
@@ -102,7 +111,19 @@ Sample Code Maintenance
 
 		* **Branch** ``my_driver_mutex``
 
-		  :doc:`/trainings/material/soup/kernel/mutex/topic`
+                  .. list-table::
+                     :widths: auto
+                     :align: left
+              
+                     * - *Topic*
+                       -  :doc:`mutex/topic`
+                     * - *Contents*
+                       - * Race on unprotected lists
+                         * Mutex
+			 * RT mutex
+			 * "Interruptible"
+                     * - *Status*
+                       - DONE
 
 		  * **Branch** ``my_driver_interrupt``. Move to raspi,
                     see how cross compilation works.

@@ -10,90 +10,125 @@ Fighting Parallelism: Mutex (Slideshow)
 
    `See Github <https://github.com/jfasch/jf-kernel-course/tree/my_driver_mutex/_morph>`__
 
-jjj Todo
---------
+Locking in the Kernel
+---------------------
 
-:download:`Kernel </trainings/material/pdf/400-kernel.pdf>`
+**Userspace parallelism is simple** ...
 
-* nested? recursive?
-* interruptible?
-* realtime mutex? stub topic for riority inheritance/inversion.
-* trylock?
+* *All* code is preemptible
+* ... no way to disable preemption
+* Critical sections are best protected by a mutex ``pthread_mutex_t``)
 
-What Do We Have?
-----------------
+**Kernel parallelism is different** ...
 
-**jjj drawing**
+* Schedulable code
 
-* list of devices
-* list of events per device
-* all doubly linked lists
+  * Processes in kernel mode
+  * kernel threads
 
-**Hm ... what if we add events concurrently?**
+* Non-schedulable code
 
-.. code-block:: console
+  * Interrupt service routines
+  * Other atomic code (spinlock holders)
 
-   # for _ in $(seq 10); do
-   >  while true; do
-   >   ./test-inject-event 0
-   >  done&
-   > done
+Mutual Exclusion: Mutex
+-----------------------
 
-|longrightarrow| 10 processes hammer on poor event list 0
+**Process context vs. process context**
 
-Consequences of Not Protecting
-------------------------------
-
-**Hell breaks loose ...**
-
-.. code-block:: console
-
-   Nov 21 16:28:41 opfer kernel: list_del corruption. next->prev should be ffff91285ae68f00, but was ffff9128406cec00
-   Nov 21 16:28:41 opfer kernel: ------------[ cut here ]------------
-   Nov 21 16:28:41 opfer kernel: kernel BUG at lib/list_debug.c:54!
-   ...
-   Nov 21 16:28:41 opfer kernel: Call Trace:
-   Nov 21 16:28:41 opfer kernel:  my_event_list_add+0x70/0xb0 [my_driver]
-   Nov 21 16:28:41 opfer kernel:  my_ioctl+0x4c/0xdd [my_driver]
-   Nov 21 16:28:41 opfer kernel:  ksys_ioctl+0x82/0xc0
-   Nov 21 16:28:41 opfer kernel:  __x64_sys_ioctl+0x16/0x20
-   Nov 21 16:28:41 opfer kernel:  do_syscall_64+0x4d/0x90
-   Nov 21 16:28:41 opfer kernel:  entry_SYSCALL_64_after_hwframe+0x44/0xa9
-   ...
-
-Enter Mutex
------------
+* Classic mutex semantics
+* Binary semaphore
+* If held, arriving processes have to wait - they are scheduled*
 
 .. code-block:: c
-   :caption: Type
 
    #include <linux/mutex.h>
-
-   struct mutex my_mutex;
+   struct mutex mutex;
 
 .. code-block:: c
-   :caption: (Basic) operations
+   :caption: OO-like constructor and destructor
 
-   mutex_init(&my_mutex);
-   mutex_destroy(&my_mutex);
-   mutex_lock(&my_mutex);
-   mutex_lock_interruptible();
-   mutex_lock_interruptible_nested();
-   mutex_unlock(&my_mutex);
+   mutex_init(&mutex);
+   mutex_destroy(&mutex);
 
-Usage?
-------
+Mutex: Locking (1)
+------------------
 
-**Problem:**
+**Locking** is done in many different ways ...
 
-* Event list: *(doubly) linked list*
-* Hammered on by 10 processes, in parallel
-* Just like a toilet with no lock on the door
-* |longrightarrow| **deploy lock!**
+.. code-block:: c
 
-  * Best to put it into the data structure that it will protect
+   mutex_lock(&mutex);
 
-* Device list is also unprotected - somebody might add devices
-  concurrently
+**Preferred version**: *interruptible*
 
-(|longrightarrow| :doc:`screenplay`)
+.. code-block:: c
+
+   int error = mutex_lock_interruptible(&mutex);
+
+* Puts the caller to sleep if lock is held by someone else
+
+  * Attention: no protection against self-deadlock!
+
+* "Interruptible": return ``-EINTR`` ("Interrupted system call") if
+  process receives a signal
+
+  * Good old Unix
+
+* Uninterruptible sleeps should be used with care
+
+Mutex: Locking (2)
+------------------
+
+**Recursive locking** ...
+
+.. code-block:: c
+
+   int error = mutex_lock_interruptible_nested(&mutex);
+
+* Same process may lock multiple times (no deadlock)
+* Must unlock as many times
+* Use is questionable though
+
+**Polling** ...
+
+.. code-block:: c
+
+   int error = mutex_trylock(&mutex);
+
+* Lock if not held
+* Otherwise, return ``-EAGAIN`` immediately
+* Use is even more questionable than recursive
+
+Mutex: Releasing
+----------------
+
+**At the end of the critical section** ...
+
+.. code-block:: c
+
+   mutex_unlock(&mutex);
+
+* Releases the lock
+* Wakes up waiter if any
+
+Realtime Mutex
+--------------
+
+**``struct mutex`` does not support priority inheritance**
+
+Linus Torvalds does not like realtime ...
+
+    "Friends don't let friends use priority inheritance. Just don't do
+    it. If you really need it, your system is broken anyway."
+
+* `LWN article
+  <https://lwn.net/Articles/178253/}{\texttt{lwn.net/Articles/178253/>`__
+* Features from the ``PREEMPT_RT`` tree keep trickling in
+* |longrightarrow| "Realtime" mutex with priority inheritance
+* Used just like ordinary mutex
+
+.. code-block:: c
+
+   #include <linux/rtmutex.h>
+   struct rt_mutex mutex;
