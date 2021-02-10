@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Spinlocks (Slideshow)
-=====================
+Spinlock (vs. Mutex) (Slideshow)
+================================
 
 .. contents::
    :local:
@@ -87,3 +87,31 @@ Simple is not Bulletproof: Interrupt State
    ...
    spin_unlock_irqrestore(&lock, irqflags);
 
+Mutual Exclusion: Conclusion
+----------------------------
+
+**There is always a tradeoff** ...
+
+* Spinlocks are good
+
+  * No expensive *context switch* during lock contention
+  * Can be used in (between) interrupt context and process context
+
+* Spinlocks are bad
+
+  * No sleep! (|longrightarrow| no easy memory allocation, no easy
+    this, no easy that)
+  * Must be held *very short* |longrightarrow| no
+    scheduling/preemption on local processor
+
+* Mutexes are good
+
+  * Sleeping allowed
+  * Everything's easy
+
+* Mutexes are bad
+
+  * Expensive *context switch* during lock contention
+  * Cannot be used in interrupt context
+  * |longrightarrow| no easy data sharing between process and
+    interrupt context

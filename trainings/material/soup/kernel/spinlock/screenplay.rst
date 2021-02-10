@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Spinlocks (Screenplay)
-======================
+Spinlock (vs. Mutex) (Screenplay)
+=================================
 
 .. contents::
    :local:

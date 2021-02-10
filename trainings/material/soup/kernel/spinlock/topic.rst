@@ -3,8 +3,8 @@
 		  kernel.process_vs_atomic
 
 
-Spinlocks
-=========
+Spinlock (vs. Mutex)
+====================
 
 .. toctree::
    :maxdepth: 1

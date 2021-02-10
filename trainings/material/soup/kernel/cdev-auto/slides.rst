@@ -17,10 +17,25 @@ Modern Character Devices (Slideshow)
    `See Github
    <https://github.com/jfasch/jf-kernel-course/tree/my_driver_cdev_dynamic_major/_morph>`__
 
-Problem
--------
+Character Devices: Problems
+---------------------------
 
-jjj
+* Manually creating device nodes is cumbersome
+* *Number* conflicts are much more likely than *name* conflicts
+* Want *names*, not *numbers*
+
+**Linux way**: ``devtmpfs``
+
+* File system that contains device nodes
+* Automatically populated by the kernel
+* ... with a little driver support
+
+.. code-block:: console
+
+   $ mount
+   ...
+   devtmpfs on /dev type devtmpfs (rw,relatime,...)
+   ...
 
 Dynamic Device Numbers
 ----------------------
@@ -41,13 +56,6 @@ https://www.kernel.org/doc/htmldocs/kernel-api/API-alloc-chrdev-region.html
        unsigned count,
        const char * name);
 
-Problem: ``mknod`` Parameters?
-------------------------------
-
-* Enter ``devtmpfs`` (and ``sysfs``)
-* ``/dev`` is-a ``devtmpfs``
-
-* jjj sysfs
 
 Device Classes
 --------------

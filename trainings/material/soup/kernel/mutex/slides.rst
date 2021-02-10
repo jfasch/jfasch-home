@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Fighting Parallelism: Mutex (Slideshow)
-=======================================
+Mutex (and RT Mutex) (Slideshow)
+================================
 
 .. contents::
    :local:

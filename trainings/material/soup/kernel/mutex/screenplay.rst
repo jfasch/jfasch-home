@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Fighting Parallelism: Mutex (Screenplay)
-========================================
+Mutex (and RT Mutex) (Screenplay)
+=================================
 
 .. contents::
    :local:

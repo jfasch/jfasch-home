@@ -3,8 +3,8 @@
 		  kernel.process_vs_atomic
 
 
-Fighting Parallelism: Mutex
-===========================
+Mutex (and RT Mutex)
+====================
 
 .. toctree::
    :maxdepth: 1
