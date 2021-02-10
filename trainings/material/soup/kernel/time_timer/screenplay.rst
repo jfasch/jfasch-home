@@ -49,6 +49,9 @@ Gotcha: Cleanup Running Timer
 
 * ``my_device_destroy()``: ``del_timer_sync()``
 
+More Gotchas
+------------
+
 **Questions**
 
 * What if somebody injects an event while a deferred event is pending?
@@ -66,9 +69,8 @@ Gotcha: Cleanup Running Timer
 * Naive: flag and *no locking*
 * *Bad* |longrightarrow| Spinlock (timers run in interrupt context)
 
+Refactoring
+-----------
 
-
-
-
-* Refact (symmetry): ``my_device_add_event()``, and call that from
-  ``MY_INJECT_EVENT``
+Symmetry: ``my_device_add_event()``, and call that from
+``MY_INJECT_EVENT``

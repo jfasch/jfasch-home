@@ -13,7 +13,7 @@ Simple Spinlock Usage: ``spin_lock()``
 * Use plain ``spin_lock()``
 * Test
 
-  * Two tight loop injecting events via ``ioctl()``
+  * Two tight loops injecting events via ``ioctl()``
   * Generate interrupts in parallel
   * |longrightarrow| hang sooner or later
 
@@ -33,3 +33,18 @@ Enter ``spin_lock_irqsave()``, ``spin_unlock_irqrestore()``
 * Fix
 * Test
 * Gone
+
+Ah, ``kmalloc()``
+-----------------
+
+* ``event.c``: still using ``GFP_KERNEL``
+
+  * *Called from interrupt service routine!*
+
+* ``CONFIG_DEBUG_ATOMIC_SLEEP`` would have complained loudly
+
+  .. image:: menuconfig-lock-debugging.png
+
+**Fix**
+
+* Pass ``gfp_t`` parameter to ``my_event_list_add()``

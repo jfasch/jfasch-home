@@ -14,12 +14,16 @@ Timer Management (Slideshow)
 Original Timer API
 ------------------
 
-  * "Timer wheel"
-  * relies on ``jiffies`` (ticks per second, ``CONFIG_HZ``)
-  * updated by periodic timer tick
-  * |longrightarrow| not power friendly
-  * |longrightarrow| not very fine grained (100 - 1000 Hz)
-  * But simple!
+* "Timer wheel"
+* relies on ``jiffies`` (ticks per second, ``CONFIG_HZ``)
+* updated by periodic timer tick
+* |longrightarrow| not power friendly
+* |longrightarrow| not very fine grained (100 - 1000 Hz)
+* But simple!
+
+.. attention::
+
+   Timer callbacks run in *atomic* context!
 
 ``jiffies``
 -----------
@@ -32,7 +36,7 @@ Original Timer API
 
    #include <linux/jiffies.h>
 
-   extern unsigned long volatile jiffies
+   extern unsigned long volatile jiffies;
 
    extern unsigned int jiffies_to_msecs(const unsigned long j);
    extern unsigned int jiffies_to_usecs(const unsigned long j);

@@ -1,6 +1,7 @@
 .. jf-topic:: kernel.interrupt
    :dependencies: kernel.raspi_kernel_build,
-		  kernel.mutex
+		  kernel.mutex,
+		  kernel.process_vs_atomic
 
 
 Interrupts

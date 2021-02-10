@@ -93,5 +93,7 @@ Atomic vs. Process Context
 "Sleep While Atomic" Debugging
 ------------------------------
 
+|longrightarrow| ``CONFIG_DEBUG_ATOMIC_SLEEP``
+
 .. image:: menuconfig-lock-debugging.png
 

@@ -10,4 +10,4 @@ Dynamic Memory: ``kmalloc()``
    slides
 
 .. jf-topicgraph:: 
-   :entries: kernel.modules_hello_world
+   :entries: kernel.process_vs_atomic
