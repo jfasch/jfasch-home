@@ -38,7 +38,7 @@ Device?
   * ``struct device*``
   * ...
 
-* Move those into ``struct my_device``; methods:
+* Move those into ``struct my_device`` methods:
 
   * ``my_device_init()``
   * ``my_device_destroy()``

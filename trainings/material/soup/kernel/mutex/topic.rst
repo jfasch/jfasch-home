@@ -1,5 +1,6 @@
 .. jf-topic:: kernel.mutex
-   :dependencies: kernel.multiple_devices
+   :dependencies: kernel.multiple_devices,
+		  kernel.process_vs_atomic
 
 
 Fighting Parallelism: Mutex

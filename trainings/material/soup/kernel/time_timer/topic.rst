@@ -1,5 +1,5 @@
 .. jf-topic:: kernel.timer
-   :dependencies: kernel.spinlock_atomic
+   :dependencies: kernel.spinlock
 
 
 Timer Management

@@ -1,5 +1,6 @@
 .. jf-topic:: kernel.cdev_first_functionality
-   :dependencies: kernel.cdev_file_operations
+   :dependencies: kernel.cdev_file_operations,
+		  kernel.kmalloc
 
 
 First Functionality

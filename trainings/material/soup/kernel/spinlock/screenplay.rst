@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Atomic Context, Spinlocks (Screenplay)
-======================================
+Spinlocks (Screenplay)
+======================
 
 .. contents::
    :local:

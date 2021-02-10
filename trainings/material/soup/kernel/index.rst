@@ -94,10 +94,12 @@ Sample Code Maintenance
              * - *Status*
                - DONE
 
-	  * **Branch** ``my_driver_cdev_first_functionality``. ``linux/list.h``,
+	  * **Branch** ``my_driver_cdev_first_functionality``
             ``kmalloc()``.
 
-	    :doc:`/trainings/material/soup/kernel/cdev-first-functionality/topic`
+	    * :doc:`/trainings/material/soup/kernel/cdev-first-functionality/topic`
+	    * ``<linux/list.h>``
+	    * ``kmalloc()`` (dependency)
 
 	    * **Branch** ``my_driver_cdev_refactoring``
 
@@ -125,14 +127,35 @@ Sample Code Maintenance
                      * - *Status*
                        - DONE
 
-		  * **Branch** ``my_driver_interrupt``. Move to raspi,
-                    see how cross compilation works.
+		  * **Branch** ``my_driver_interrupt``
 
-		    :doc:`/trainings/material/soup/kernel/interrupt/topic`
+                    .. list-table::
+                       :widths: auto
+                       :align: left
+                
+                       * - *Topic*
+                         -  :doc:`interrupt/topic`
+                       * - *Contents*
+                         - * Short GPIO introduction |longrightarrow|
+                             move to Raspi
+                           * Request and free IRQ
+			   * *Atomic*?
+                       * - *Status*
+                         - DONE
 
                     * **Branch** ``my_driver_spinlock_atomic``.
   
-                      :doc:`/trainings/material/soup/kernel/spinlock-atomic/topic`
+                      .. list-table::
+                         :widths: auto
+                         :align: left
+                  
+                         * - *Topic*
+                           - :doc:`spinlock/topic`
+                         * - *Contents*
+                           - * Spinlock usage
+			     * Spinlock caveats (sleep/atomic)
+                         * - *Status*
+                           - DONE
 
 		      * **Branch** ``my_driver_time_timer``.
   
@@ -157,6 +180,9 @@ jjj clean this up
 * https://www.kernel.org/doc/html/latest/
 
   blah search blah sphinx blah
+
+* `LDD3, O'Reilly
+  <https://www.oreilly.com/openbook/linuxdrive3/book/>`__
 
 To Do List
 ----------
