@@ -50,15 +50,13 @@ Copying To and From Userspace
 Documentation
 -------------
 
-.. sidebar:: Documentation
+.. list-table::
+   :widths: auto
+   :align: left
 
-   .. list-table::
-      :widths: auto
-      :align: left
-   
-      * * `copy_from_user
-          <https://www.kernel.org/doc/htmldocs/kernel-api/API---copy-from-user.html>`__
-      * * `copy_to_user
-          <https://www.kernel.org/doc/htmldocs/kernel-api/API---copy-to-user.html>`__
+   * * `copy_from_user
+       <https://www.kernel.org/doc/htmldocs/kernel-api/API---copy-from-user.html>`__
+   * * `copy_to_user
+       <https://www.kernel.org/doc/htmldocs/kernel-api/API---copy-to-user.html>`__
 
 
