@@ -171,6 +171,34 @@ Sample Code Maintenance
                            * - *Status*
                              - DONE
 
+                        * **Branch** ``my_driver_workqueue``.
+    
+                          .. list-table::
+                             :widths: auto
+                             :align: left
+                      
+                             * - *Topic*
+                               - :doc:`workqueue/topic`
+                             * - *Contents*
+                               - * Workqueue
+				 * Getting rid of atomic code
+				 * Realtime priorities
+                             * - *Status*
+                               - DONE
+
+                          * **Branch** ``my_driver_usermem``.
+      
+                            .. list-table::
+                               :widths: auto
+                               :align: left
+                        
+                               * - *Topic*
+				 - :doc:`usermem/topic`
+                               * - *Contents*
+                                 - * ``copy_{to,from}_user()``
+                               * - *Status*
+                                 - ...
+
 Links
 -----
 
