@@ -197,7 +197,23 @@ Sample Code Maintenance
                                * - *Contents*
                                  - * ``copy_{to,from}_user()``
                                * - *Status*
-                                 - ...
+                                 - DONE
+
+                          * **Branch** ``my_driver_waitqueue``.
+      
+                            .. list-table::
+                               :widths: auto
+                               :align: left
+                        
+                               * - *Topic*
+				 - :doc:`waitqueue/topic`
+                               * - *Contents*
+				 - * Wait queues
+                                   * Blocking vs. nonblocking ``read()``
+				   * ``EAGAIN`` and EOF
+
+                               * - *Status*
+                                 - DONE
 
 Links
 -----
@@ -214,6 +230,10 @@ jjj clean this up
 
 To Do List
 ----------
+
+* Networking
+
+  https://www.cs.dartmouth.edu/~sergey/netreads/path-of-packet/Lab9_modified.pdf
 
 * :download:`Kernel </trainings/material/pdf/400-kernel.pdf>`
 

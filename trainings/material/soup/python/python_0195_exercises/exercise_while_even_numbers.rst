@@ -10,3 +10,9 @@ Exercises: Even Numbers (``while``)
    100 (exclusive).
 
    Use a ``while`` loop!
+
+Dependencies
+------------
+
+.. jf-topicgraph:: 
+   :entries: python.basics.exercises.while_even_numbers

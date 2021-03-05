@@ -22,3 +22,9 @@ as follows.
 
 * The rest of the program remains intact; only the function is called
   rather than implementing the comparison inline, top level.
+
+Dependencies
+------------
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.max_numbers_function

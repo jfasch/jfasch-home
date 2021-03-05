@@ -3,9 +3,6 @@
 Exercise: Swap Two Variables
 ============================
 
-.. contents::
-   :local:
-
 .. jf-topic:: python.basics.exercises.variable
    :dependencies: python.basics.exercises.boolean,
 		  python.basics.python_0140_variables,
@@ -22,3 +19,9 @@ Exercise: Swap Two Variables
 
       print('Before:', var1, var2)
       print('After:', var1, var2)
+
+Dependencies
+------------
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.variable

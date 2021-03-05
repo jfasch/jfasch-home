@@ -39,6 +39,11 @@ Submit/Defer Work From Atomic Context
 
    # chrt -p 20 <pid>
 
+Cleanup (Why We Did This, After All)
+------------------------------------
+
+* Remove ``gfp_t`` parameter from ``my_event_list_add()``
+
 Finish
 ------
 

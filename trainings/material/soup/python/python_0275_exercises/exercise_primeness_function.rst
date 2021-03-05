@@ -27,3 +27,8 @@ or :doc:`here
   level code.
 
   
+Dependencies
+------------
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.function_primeness

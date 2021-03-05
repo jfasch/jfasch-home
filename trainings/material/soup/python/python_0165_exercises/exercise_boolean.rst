@@ -23,3 +23,9 @@ Exercise: Boolean Expressions
   #. * ``value1 = 500``
      * ``value2 = 800``
      * ``value3 = 0``
+
+Dependencies
+------------
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.boolean

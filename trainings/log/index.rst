@@ -27,7 +27,18 @@ Dieser Kurs ist in Vorbereitung.
 
 (:doc:`Mehr ... <detail/2021-03-08/index>`)
 
-Programmierung Grundlagenm, anhand von Python (13. und 14.1.2021)
+Python Basics (22.2.2021 - 24.2.2021)
+-------------------------------------
+
+Der Kurs fand online mittels :doc:`Microsoft Teams
+</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+Partner `tecTrain
+<https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-02-22/index>`)
+
+Programmierung Grundlagen, anhand von Python (13. und 14.1.2021)
 -----------------------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams

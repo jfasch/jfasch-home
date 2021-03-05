@@ -27,7 +27,7 @@ Building from "Exploded Git Tree"
 
 The "Exploded Git Tree" is Fedorish for "a kernel tree that is less
 integrated with the Fedora workflow, and thus more suitable for
-developers that refuse to integrate with any workflow. This is me.
+developers who refuse to integrate with any workflow". This is me.
 
 See :ref:`below <fedora_rpm_build>` if you like workflows and RPMs.
 

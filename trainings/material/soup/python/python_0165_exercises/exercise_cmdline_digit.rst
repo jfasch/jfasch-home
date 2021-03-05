@@ -15,3 +15,9 @@ Exercises: Digit to English Word
 
 #. Write a program that takes a single digit as commandline
    parameter. Print the English word for that digit.
+
+Dependencies
+------------
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.cmdline_digit

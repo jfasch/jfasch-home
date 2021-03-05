@@ -3,9 +3,6 @@
 Exercises: (Mixed) List, ``KeyError``
 =====================================
 
-.. contents::
-   :local:
-
 .. jf-topic:: python.basics.exercises.mixed_list_keyerror
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0130_syntax_etc,
@@ -30,3 +27,9 @@ Exercises: (Mixed) List, ``KeyError``
 
 #. Do the same in an executable Python program
 #. What happens when you access a non-existent dictionary member?
+
+Dependencies
+------------
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.mixed_list_keyerror
