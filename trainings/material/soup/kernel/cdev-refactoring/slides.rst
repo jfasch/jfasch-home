@@ -58,16 +58,3 @@ of devices.
 * That one element is an *object* that is set into the *open file*
   (``struct file``) in ``open()``
 * ... accessed by further calls through that structure.
-
-**jjjjj drawing**: 
-
-* how does the cdev come in in open?
-* ``container_of()``, link to it.
-
-**jjjjj more**:
-
-* bring in ``cdev`` section from :download:`Kernel
-  </trainings/material/pdf/400-kernel.pdf>`
-* bring in ``open()`` section from :download:`Kernel
-  </trainings/material/pdf/400-kernel.pdf>`
-  

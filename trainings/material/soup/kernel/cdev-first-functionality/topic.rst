@@ -1,7 +1,7 @@
 .. jf-topic:: kernel.cdev_first_functionality
    :dependencies: kernel.cdev_file_operations,
-		  kernel.kmalloc
-
+		  kernel.kmalloc,
+		  kernel.list
 
 First Functionality
 ===================
@@ -10,7 +10,6 @@ First Functionality
    :maxdepth: 1
 
    slides
-   screenplay
 
 .. jf-topicgraph:: 
    :entries: kernel.cdev_first_functionality

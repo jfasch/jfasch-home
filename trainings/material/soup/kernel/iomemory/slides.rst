@@ -77,7 +77,7 @@ barriers ...
 
 * Writing
 
-   * ``void iowrite8(u8 value, void *addr);``
+  * ``void iowrite8(u8 value, void *addr);``
   * ``void iowrite16(u16 value, void *addr);``
   * ``void iowrite32(u32 value void *addr);``
 
