@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-First Functionality (Slideshow)
-===============================
+Coding: First Functionality (Slideshow)
+=======================================
 
 .. contents::
    :local:
@@ -10,6 +10,10 @@ First Functionality (Slideshow)
 
    `See Github
    <https://github.com/jfasch/jf-kernel-course/tree/my_driver_cdev_first_functionality/_morph>`__
+
+.. todo::
+
+   jjj add "architecture" drawing
 
 Implement Event List
 --------------------

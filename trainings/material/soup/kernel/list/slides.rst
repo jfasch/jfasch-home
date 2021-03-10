@@ -63,21 +63,21 @@ Insert a Node
 
    struct payload* new_payload = ...; // allocate?
    struct payload* existing_payload = ...; // already in list
-   list_add(new_payload->node, existing_payload->node);
+   list_add(&new_payload->node, &existing_payload->node);
 
 **Prepend**: add after head of list
 
 .. code-block:: c
 
    struct payload* new_payload = ...; // allocate?
-   list_add(new_payload->node, &some_list);
+   list_add(&new_payload->node, &some_list);
 
 **Append**: add before tail member of ``list_head``
 
 .. code-block:: c
 
    struct payload* new_payload = ...; // allocate?
-   list_add_tail(new_payload->node, &some_list);
+   list_add_tail(&new_payload->node, &some_list);
 
 Iteration, and Getting a Node's Container
 -----------------------------------------

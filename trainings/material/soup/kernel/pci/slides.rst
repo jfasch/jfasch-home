@@ -10,6 +10,7 @@ See `Linux Kernel Documentation
 <https://www.kernel.org/doc/html/latest/PCI/index.html>`__ for
 something more comprehensive.
 
+
 First and Foremost
 ------------------
 
@@ -45,13 +46,15 @@ PCI Driver Methods
    * - ``probe()``
      - Called when device inserted (or during boot when enumerated)
    * - ``remove()``
-     - Called when device is removed
+     - Called when device is removed (or driver is unloaded)
    * - ``suspend()``
      - Called when device is suspended
    * - ``resume()``
      - Called when device is resumed
    * - ...
-     - and many more (see ``linux/pci.h``)
+     - and many more (`see
+       <https://github.com/torvalds/linux/blob/master/include/linux/pci.h>`__
+       ``linux/pci.h``)
 
 .. code-block:: c
 
@@ -80,6 +83,12 @@ PCI Driver Structure, and the ``init()`` Method
        int err = pci_register_driver(&my_driver);
        /* ... */
    }
+   static void my_exit(void)
+   {
+       pci_unregister_driver(&my_driver);
+       /* ... */
+   }
+
 
 * ``id_table`` should not be ``NULL``, and ideally should contain what
   was registered statically with ``MODULE_DEVICE_TABLE()`` (at least I
@@ -116,8 +125,8 @@ appear).
 * ``irq`` as in :doc:`../interrupt/topic`
 * ``resource``: PCI resources, or *Base Address Registers (BARs)*
 
-The ``probe()`` Method: Responsibilities
-----------------------------------------
+The ``probe()`` Method: Boilerplate
+-----------------------------------
 
 * ``int err = pci_enable_device(pdev);``
 
@@ -144,3 +153,42 @@ The ``probe()`` Method: Responsibilities
   * ``void* context`` is set in ``pdev``
   * Usually points to a driver specific device structure
   * Much like ``private_data`` in ``struct file``
+
+The ``probe()`` Method: Interrupt
+---------------------------------
+
+Nothing simpler than that:
+
+* ``struct pci_dev`` has all we need
+* ``pdev->irq``
+
+.. code-block:: c
+
+   irqreturn_t irq_handler(int irq, void *cookie) { ... }
+
+   ...
+
+   err = request_irq(pdev->irq, irq_handler, IRQF_SHARED, "my-driver", &my_device);
+
+* ``free_irq()`` is best called in the ``remove()`` method
+
+The ``probe()`` Method: PCI Resources (BARs)
+--------------------------------------------
+
+* Number of PCI resources (Base Address Register - BAR) is device
+  specific |longrightarrow| datasheet
+* Each resource (``pdev->resource[i]``) represents a memory area of
+  certain length
+* Much like :doc:`IO memory <../iomemory/topic>` |longrightarrow| best
+  to not access it directly, but with ``ioread*()`` and ``iowrite*()``
+
+.. code-block:: c
+
+   unsigned len = pci_resource_len(pdev, bar_no /*index into pdev->resource*/);
+   void __iomem *addr = pci_iomap(pdev, bar_no, len);
+
+* Reverted (unmapped) in ``remove()``
+
+.. code-block:: c
+
+   pci_iounmap(pdev, addr);

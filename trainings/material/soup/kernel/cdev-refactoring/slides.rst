@@ -5,8 +5,8 @@
 		 multiple devices (and get rid of global variable)
    :keywords: schulung, training, linux, kernel, module, container_of
 
-Refactoring (Slideshow)
-=======================
+Coding: Refactoring (Slideshow)
+===============================
 
 .. contents::
    :local:
@@ -19,42 +19,60 @@ Refactoring (Slideshow)
 What's Bad?
 -----------
 
-* Factor ``my_event`` and ``my_event_list`` out into separate file
+#. We're putting everything into a single file:
 
-  * Drawing: module *frontend* has the "event engine" as *backend*
-  * split apart, and show how to build a driver from multiple sources
+   * ``struct my_event``
+   * ``struct my_event_list``
 
-* Factor macros out into ``misc.h`` (and include that in the userspace
-  programs)
-* ``-Wswitch-enum``
+   Factor these out into separate files, ``event.{h,c}``, and *use*
+   those from the main driver file, ``my_driver.c``
+   [#build_conflict]_.
 
-Device?
--------
+   By the way, the ``Makefile`` for a ``module.ko`` that is built from
+   multiple files looks like so,
 
-* Our device is made up of multiple distinct entities
+   .. code-block:: c
 
-  * ``struct my_event_list``
-  * ``struct cdev``
-  * ``struct device*``
-  * ...
+      obj-m += module.o
+      module-y += file1.o file2.o file3.o
 
-* Move those into ``struct my_device`` methods:
+   .. todo::
 
-  * ``my_device_init()``
-  * ``my_device_destroy()``
-  * ``my_device_go_public()``
+      jjj draw a sketch
 
-* Move all these into ``device.{h,c}``
+#. Factor macros out into ``misc.h`` (and include that in the
+   userspace programs)
+#. Add the warning options ``-Wswitch-enum`` and ``-Werror`` (and
+   ``-Wall``) to the compiler commandline. This is done by adding the
+   following line to the ``Makefile``,
 
-Multiple Devices? (Preparation)
--------------------------------
+   .. code-block:: c
 
-**Motivation**: PCI and USB drivers can maintain *multiple devices*
-(one driver for all devices of the same kind) |longrightarrow| *list*
-of devices.
+      ccflags-y += -Werror -Wall -Wswitch-enum
 
-* Convert global *device* variable to a list. Initially having only
-  one element.
-* That one element is an *object* that is set into the *open file*
-  (``struct file``) in ``open()``
-* ... accessed by further calls through that structure.
+#. Encapsulate global variables into ``struct my_device``
+
+   We currently only have a single device node, implemented by
+   multiple distinct entities which are global variables in the driver
+   code,
+
+   * ``struct my_event_list``
+   * ``struct cdev``
+   * ``struct device*``
+   * ...
+
+   Create a separate file pair ``device.{h,c}`` that contains ``struct
+   my_device`` to contain these variables, and make an instance of
+   that type a single global device instead.
+
+   Lets move the build-up and tear-down code into methods
+
+   * ``my_device_init()``
+   * ``my_device_destroy()``
+
+.. rubric:: Footnotes
+
+.. [#build_conflict] Btw, we will have to rename ``my_driver.c`` (to
+                     ``main.c`` perhaps) because ``my_driver.ko`` has
+                     the same stem. Sadly, Kbuild does not warn us
+                     about this conflict.

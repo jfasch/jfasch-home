@@ -42,8 +42,3 @@ Character Device
 
   * ``cat my_driver_henkel`` |longrightarrow| EINVAL
   * ``strace cat my_driver_henkel`` |longrightarrow| Aha
-
-Source
-------
-
-jjj give source

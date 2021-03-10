@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Multiple Devices (Slideshow)
-============================
+Coding: Multiple Devices (Slideshow)
+====================================
 
 .. contents::
    :local:
@@ -11,24 +11,25 @@ Multiple Devices (Slideshow)
    `See Github
    <https://github.com/jfasch/jf-kernel-course/tree/my_driver_multiple_devices/_morph>`__
 
-Module Parameter: ``ndevices``
-------------------------------
+Instantiate Multiple Devices
+----------------------------
 
-.. code-block::
+#. Add an ``int`` type module parameter, ``ndevices``
 
-   module_param(ndevices, int, 0);
+   .. code-block:: c
 
-* Fill list with as many devices as the parameter says.
-* Range checking on ``ndevices``
+      int ndevices;
+      ...
+      module_param(ndevices, int, 0);
 
-New ``ioctl``: *Add Event*
----------------------------
+   Use that to instantiate ``ndevices`` instances of ``struct
+   my_device``, and store those in a :doc:`doubly linked list
+   <../list/topic>`.
 
-* On demand add new devices.
-* Somewhat like the ``probe()`` method of the PCI and USB subsystems.
-* Not so beautiful: a new device can be added via *any* existing device
+#. In the ``open()`` implementation, use ``(major, minor)`` (stored in
+   the ``struct inode`` that gets passed) to find the associated
+   ``struct my_device`` in the list.  Store a pointer to it in the
+   ``private_data`` member of the ``struct file*`` that is passed to
+   ``open()``.
 
-  * Bad if somebody give ``ndevices=0``
-  * Should have a master/control device which is always there
-  * Anyway, I just don't care
-
+#. Use ``private_data`` in the ``ioctl()`` implementation.

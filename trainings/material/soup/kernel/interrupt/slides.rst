@@ -99,10 +99,10 @@ Interrupt Service Routine
 
    #include <linux/interrupt.h>
 
-   irqreturn_t irq_handler(int irq, void *userdata) { ... }
+   irqreturn_t irq_handler(int irq, void *cookie) { ... }
 
 * ``irq``: the interrupt number that is active
-* ``userdata``: set when requesting the IRQ
+* ``cookie``: opque pointer, given as ``cookie`` when IRQ is requested
 * Return value ...
 
 ** ``irqreturn_t`` values**
@@ -112,7 +112,7 @@ Interrupt Service Routine
    :align: left
 
    ``IRQ_NONE``, interrupt was not from this device or was not handled (shared interrupt?)
-   ``IRQ_HANDLED``, interrupt was handled by this device
+   ``IRQ_HANDLED``, interrupt was handled by this device, *important!* (Else line may remain active)
    ``IRQ_WAKE_THREAD``, handler requests to wake the handler thread (for threaded interrupts)
 
 Requesting (and Releasing) Interrupts (1)
@@ -125,27 +125,30 @@ Requesting (and Releasing) Interrupts (1)
    int request_irq(unsigned int irq, irq_handler_t handler, unsigned long flags, const char *name, void *cookie);
    const void* free_irq(unsigned int irq, void *cookie);
 
-**``flags`` values**
+* ``irq``: the requested interrupt line
+* ``handler``: interrupt handler to attach to ``irq``
+* ``flags``: a *meaningful* combination of
 
-.. csv-table::
-   :widths: auto
-   :align: left
+   .. csv-table::
+      :widths: auto
+      :align: left
+   
+      ``IRQF_SHARED``, Multiple interrupts shared on same line
+      ``IRQF_TRIGGER_RISING``, Edge triggered: rising
+      ``IRQF_TRIGGER_FALLING``, Edge triggered: falling
+      ``IRQF_TRIGGER_HIGH``, Level triggered: high
+      ``IRQF_TRIGGER_LOW``, Level triggered: low
 
-   ``IRQF_SHARED``, Multiple interrupts shared on same line
-   ``IRQF_TRIGGER_RISING``, Edge triggered: rising
-   ``IRQF_TRIGGER_FALLING``, Edge triggered: falling
-   ``IRQF_TRIGGER_HIGH``, Level triggered: high
-   ``IRQF_TRIGGER_LOW``, Level triggered: low
-
-* *Attention*: after successful call to ``request_irq()`` line is hot
-  *immediately*
-
-Requesting (and Releasing) Interrupts (2)
------------------------------------------
+* ``name``: shows up in ``/proc/interrupts``
+* ``cookie``: echoed back into interrupt handler when called
 
 .. note::
 
-   Check ``/proc/interrupts``!
+   After successful call to ``request_irq()`` line is hot
+   *immediately*
+
+Documentation
+-------------
 
 .. sidebar:: Documentation
 

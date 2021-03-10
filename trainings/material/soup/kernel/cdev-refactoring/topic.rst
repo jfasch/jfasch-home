@@ -2,8 +2,8 @@
    :dependencies: kernel.cdev_first_functionality
 
 
-Refactoring
-===========
+Coding: Refactoring
+===================
 
 .. toctree::
    :maxdepth: 1

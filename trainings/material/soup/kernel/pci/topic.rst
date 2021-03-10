@@ -1,6 +1,7 @@
 .. jf-topic:: kernel.pci
    :dependencies: kernel.interrupt,
-		  kernel.iomemory
+		  kernel.iomemory,
+		  kernel.dma
 
 
 PCI

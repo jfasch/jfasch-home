@@ -3,8 +3,8 @@
 		  kernel.kmalloc,
 		  kernel.list
 
-First Functionality
-===================
+Coding: First Functionality
+===========================
 
 .. toctree::
    :maxdepth: 1
