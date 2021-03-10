@@ -1,6 +1,5 @@
 .. jf-topic:: kernel.spinlock
-   :dependencies: kernel.interrupt,
-		  kernel.process_vs_atomic
+   :dependencies: kernel.process_vs_atomic
 
 
 Spinlock (vs. Mutex)
@@ -10,7 +9,6 @@ Spinlock (vs. Mutex)
    :maxdepth: 1
 
    slides
-   screenplay
 
 .. jf-topicgraph:: 
    :entries: kernel.spinlock

@@ -1,5 +1,5 @@
 .. jf-topic:: kernel.workqueue
-   :dependencies: kernel.timer,
+   :dependencies: kernel.timer_coding,
 		  kernel.process_vs_atomic
 
 

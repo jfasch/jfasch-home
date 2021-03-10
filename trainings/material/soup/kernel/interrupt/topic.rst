@@ -1,7 +1,5 @@
 .. jf-topic:: kernel.interrupt
-   :dependencies: kernel.raspi_kernel_build,
-		  kernel.mutex,
-		  kernel.process_vs_atomic
+   :dependencies: kernel.process_vs_atomic
 
 
 Interrupts
@@ -11,7 +9,6 @@ Interrupts
    :maxdepth: 1
 
    slides
-   screenplay
 
 .. jf-topicgraph:: 
    :entries: kernel.interrupt

@@ -1,10 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Mutex (and RT Mutex) (Screenplay)
-=================================
+Coding: Fix Race Condition (Mutex) (Slideshow)
+==============================================
 
 .. contents::
    :local:
+
+.. sidebar:: Source
+
+   `See Github <https://github.com/jfasch/jf-kernel-course/tree/my_driver_mutex/_morph>`__
 
 What Do We Have?
 ----------------

@@ -6,11 +6,6 @@ Spinlock (vs. Mutex) (Slideshow)
 .. contents::
    :local:
 
-.. sidebar:: Source
-
-   `See Github
-   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_spinlock_atomic/_morph>`__
-
 Mutual Exclusion: Spinlock
 --------------------------
 

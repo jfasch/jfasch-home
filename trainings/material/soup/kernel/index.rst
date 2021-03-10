@@ -159,7 +159,7 @@ Sample Code Maintenance
        :align: left
 
        * - *Topic*
-         -  :doc:`mutex/topic`
+         -  :doc:`mutex-coding/topic`
        * - *Branch*
 	 - `my_driver_mutex <https://github.com/jfasch/jf-kernel-course/tree/my_driver_mutex>`__
        * - *Contents*
@@ -168,7 +168,7 @@ Sample Code Maintenance
 	   * RT mutex
 	   * "Interruptible"
        * - *Status*
-         - DONE
+	 - DONE
 
   * **Branch** ``my_driver_interrupt``
   
@@ -177,7 +177,7 @@ Sample Code Maintenance
        :align: left
   
        * - *Topic*
-         -  :doc:`interrupt/topic`
+	 -  :doc:`interrupt-coding/topic`
        * - *Branch*
 	 - `my_driver_interrupt <https://github.com/jfasch/jf-kernel-course/tree/my_driver_interrupt>`__
        * - *Contents*
@@ -195,7 +195,7 @@ Sample Code Maintenance
        :align: left
   
        * - *Topic*
-         - :doc:`spinlock/topic`
+         - :doc:`spinlock-coding/topic`
        * - *Branch*
 	 - `my_driver_spinlock_atomic <https://github.com/jfasch/jf-kernel-course/tree/my_driver_spinlock_atomic>`__
        * - *Contents*
@@ -211,7 +211,7 @@ Sample Code Maintenance
        :align: left
   
        * - *Topic*
-         - :doc:`time_timer/topic`
+         - :doc:`time_timer-coding/topic`
        * - *Branch*
 	 - `my_driver_time_timer <https://github.com/jfasch/jf-kernel-course/tree/my_driver_time_timer>`__
        * - *Contents*

@@ -1,6 +1,5 @@
 .. jf-topic:: kernel.mutex
-   :dependencies: kernel.multiple_devices,
-		  kernel.process_vs_atomic
+   :dependencies: kernel.process_vs_atomic
 
 
 Mutex (and RT Mutex)
@@ -10,7 +9,6 @@ Mutex (and RT Mutex)
    :maxdepth: 1
 
    slides
-   screenplay
 
 .. jf-topicgraph:: 
    :entries: kernel.mutex

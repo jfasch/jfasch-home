@@ -1,10 +1,15 @@
 .. include:: <mmlalias.txt>
 
-Spinlock (vs. Mutex) (Screenplay)
-=================================
+Coding: Fix *Sleep While Atomic* (Slideshow)
+============================================
 
 .. contents::
    :local:
+
+.. sidebar:: Source
+
+   `See Github
+   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_spinlock_atomic/_morph>`__
 
 Simple Spinlock Usage: ``spin_lock()``
 --------------------------------------
