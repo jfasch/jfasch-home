@@ -9,6 +9,10 @@
 Dynamic Memory: ``kmalloc()`` (Slideshow)
 =========================================
 
+For a much greater documentation of kernel memory allocation see `Mel
+Gorman's wonderful guide
+<https://www.kernel.org/doc/gorman/html/understand/index.html>`__
+
 Dynamic Memory: ``kmalloc()``
 -----------------------------
 

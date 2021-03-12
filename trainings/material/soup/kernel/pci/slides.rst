@@ -192,3 +192,15 @@ The ``probe()`` Method: PCI Resources (BARs)
 .. code-block:: c
 
    pci_iounmap(pdev, addr);
+
+DMA Support Routines
+--------------------
+
+.. code-block:: c
+
+    cpu_addr = pci_alloc_consistent(os_device->_os.pdev, size, &dma_addr);
+    pci_free_consistent(os_device->_os.pdev, self->_os._size, 
+                        self->_os._cpu_addr, t_os_dma_addr__get_native(self->_os._dma_addr));
+
+    error = pci_set_dma_mask(self->_os_device->_os.pdev, DMA_BIT_MASK(32));
+    error = pci_set_consistent_dma_mask(self->_os_device->_os.pdev, DMA_BIT_MASK(32));

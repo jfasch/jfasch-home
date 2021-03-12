@@ -61,7 +61,8 @@ Original Timer API
 * ``my_timer.expires``: set to *absolute monotonic* jiffies
   (``expires`` = *number of jiffies from boot* into the future)
 
-High Resolution Timers
-----------------------
+Better Documentation
+--------------------
 
-* `LWN article <https://lwn.net/Articles/167897/>`__
+* `LWN article about the timer wheel described above <https://lwn.net/Articles/84836/>`__
+* `LWN article about high resolution timers <https://lwn.net/Articles/167897/>`__

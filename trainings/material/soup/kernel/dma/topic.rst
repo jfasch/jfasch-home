@@ -1,4 +1,5 @@
 .. jf-topic:: kernel.dma
+   :dependencies: kernel.kmalloc
 
 DMA
 ===
