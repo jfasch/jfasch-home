@@ -20,6 +20,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python (22.3.2021 - 25.3.2021)
+------------------------------
+
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+
+(:doc:`Mehr ... <detail/2021-03-22/index>`)
+
 Python Advanced (15.3.2021 - 17.3.2021)
 ---------------------------------------
 

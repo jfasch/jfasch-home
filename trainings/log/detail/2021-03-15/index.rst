@@ -18,3 +18,6 @@ Jupyter Notebook
 Log
 ---
 
+* Tag 1 und 1/2 2: siehe notebook
+* File IO
+* OO Basics
