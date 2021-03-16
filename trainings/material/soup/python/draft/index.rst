@@ -15,6 +15,7 @@ Contents
    ai
    venv/topic
    pip/topic
+   mqtt
    duck-typing
    context_manager/topic
    special_methods
