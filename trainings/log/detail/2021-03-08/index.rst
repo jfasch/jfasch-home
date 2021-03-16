@@ -16,6 +16,10 @@ Linux Kernel Driver Development Basics (14.12.2020)
 
    :doc:`/trainings/repertoire/kernel-programming-basics`
 
+   **Course Details**
+
+   :doc:`Course details </trainings/material/soup/kernel/index>`
+
    **Material**
 
    * `Github Repository <https://github.com/jfasch/jf-kernel-course>`__

@@ -6,17 +6,14 @@ Workqueue (Slideshow)
 .. contents::
    :local:
 
-.. sidebar:: Source
-
-   `See Github
-   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_workqueue/_morph>`__
-
-Explanation Workqueue
+Workqueue: Motivation
 ---------------------
 
-* Worker thread
+* Kernel thread |longrightarrow| has a process ID, and is thus
+  schedulable
+* |longrightarrow| *process context*
+* Commonly used to defer (postpone) work from atomic context
 * Optional thread pool: one work queue per CPU
-* Used to defer work from atomic context
 
 Creating/Destroying a Workqueue
 -------------------------------

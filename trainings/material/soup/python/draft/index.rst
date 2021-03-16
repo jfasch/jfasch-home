@@ -22,7 +22,6 @@ Contents
    decorators/topic
    closures/topic
    import
-   mysql
    installation
    vscode
    encoding

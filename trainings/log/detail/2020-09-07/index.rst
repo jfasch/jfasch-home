@@ -90,7 +90,6 @@ Special Topics
   * :doc:`/trainings/material/soup/python/draft/linear-regression/topic`
   * :doc:`/trainings/material/soup/python/draft/k-means`
 
-* :doc:`/trainings/material/soup/python/draft/mysql`
 * Unit Testing, Test Driven Development, Design Patterns
 
   * Excerpt from :doc:`/trainings/repertoire/unittests`
@@ -352,7 +351,6 @@ Graph
 	     python.swdev.python_1200_modules,
 	     python.python_1010_generators_yield,
 	     python.drafts.encoding,
-	     python.drafts.mysql,
 	     python.drafts.installation,
 	     python.drafts.exceptions
 

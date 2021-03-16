@@ -6,12 +6,6 @@ Waiting for Something (Slideshow)
 .. contents::
    :local:
 
-.. sidebar:: Source
-
-   `See Github
-   <https://github.com/jfasch/jf-kernel-course/tree/my_driver_waitqueue/_morph>`__
-
-
 Waiting for Something
 ---------------------
 

@@ -20,10 +20,20 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Advanced (15.3.2021 - 17.3.2021)
+---------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-03-15/index>`)
+
 Linux Kernel Driver Development Basics (8.3.2021 - 12.3.2020)
 -------------------------------------------------------------
 
-Dieser Kurs ist in Vorbereitung.
+Der Kurs wurde über meinen Partner `LinuxCampus
+<https://www.linuxcampus.net/>`__ gebucht.
 
 (:doc:`Mehr ... <detail/2021-03-08/index>`)
 
