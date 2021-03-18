@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Iteration and Generation (Livehacking Screenplay)
-=================================================
+Iteration, Comprehensions, and Generators (Livehacking Screenplay)
+==================================================================
 
 .. contents::
    :local:

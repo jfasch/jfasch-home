@@ -47,3 +47,23 @@ From :download:`Linux Basics (PDF)
 
   36-45, 58-61, 63, 64
 
+2021-03-18
+..........
+
+From :download:`Linux Basics (PDF)
+</trainings/material/pdf/010-linux-basics.pdf>` ...
+     
+* *Das Filesystem*
+
+  * Pfade: 67-71
+  * Directories: 72-76
+  * Symbolische Links: 77-79
+  * Directory Listings (``ls``): 84-87
+  * Kopieren und Verschieben (``cp`` und ``mv``): 88-91
+  * Owner, Permissions: 92-97, 100
+
+Weiter
+......
+
+* SetUID, Sticky, ``umask``
+* ``find``

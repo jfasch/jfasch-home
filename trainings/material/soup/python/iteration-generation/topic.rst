@@ -1,8 +1,8 @@
-.. jf-topic:: python.drafts.iteration_generation
+.. jf-topic:: python.iteration_generation
    :dependencies: python.basics.python_0220_for
 
-Iteration and Generation
-========================
+Iteration, Comprehensions, and Generators
+=========================================
 
 .. toctree::
    :maxdepth: 1
@@ -19,4 +19,4 @@ The :doc:`screenplay <screenplay>` covers
 See also 
 
 .. jf-topicgraph:: 
-   :entries: python.drafts.iteration_generation
+   :entries: python.iteration_generation

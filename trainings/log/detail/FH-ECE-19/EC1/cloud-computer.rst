@@ -35,7 +35,7 @@ Machine, Logins
   * ``themessl.felix``
   * ``vogel.astrid``
   * ``zwittnigg.florian``
-  * ``faschingbauer.joerg``
+  * ``faschingbauer.jörg``
 
   Passwords are not published here for obvious reasons; those are
   communicated in one of the first lessons.

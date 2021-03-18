@@ -4,8 +4,8 @@
 		  python.basics.python_0225_range,
 		  python.basics.python_0270_functions
 
-Iteration and Generators
-========================
+Iteration, and Generators: the ``yield`` Keyword
+================================================
 
 * :download:`Slide show (S5) <slides.s5.html>`
 * :doc:`Slide show (source) <slides>`
