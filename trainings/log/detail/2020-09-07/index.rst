@@ -133,7 +133,7 @@ Day 2
 .....
 
 * Livehacking:
-  :doc:`/trainings/material/soup/python/draft/iteration-generation/topic`,
+  :doc:`/trainings/material/soup/python/iteration-generation/topic`,
   covering
 
   * List comprehensions
