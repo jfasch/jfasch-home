@@ -42,3 +42,7 @@ The ``if`` Statement
               print('3')
           else:
               print('many')
+
+
+.. jf-topicgraph::
+   :entries: python.basics.python_0170_if

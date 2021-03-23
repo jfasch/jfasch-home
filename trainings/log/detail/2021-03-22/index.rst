@@ -47,9 +47,16 @@ Jupyter Notebook
 
    Notebook
 
-Exercises
----------
+Log
+---
 
+We're lagging behind what's in the agenda, don't want to lose anybody.
+
+Day 1
+.....
+
+* Basics from the slides, up until ``if`` (see :doc:`here
+  </trainings/material/soup/python/python_0170_if/topic>`)
 * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
 
   Solution, doing everything by hand ...
@@ -66,7 +73,57 @@ Exercises
   .. literalinclude:: code/maximum-gscheit.py
      :caption: :download:`code/maximum-gscheit.py`
      :language: python
-  
+
+Day 2
+.....
+
+* :doc:`Exercise: digit translation
+  </trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit>`
+
+  .. literalinclude:: code/digit.py
+     :caption: :download:`code/digit.py`
+     :language: python
+
+* ``while``
+* :doc:`Exercise: primeness (using while)
+  </trainings/material/soup/python/python_0195_exercises/exercise_while_primeness>`
+
+  .. literalinclude:: code/prime-while.py
+     :caption: :download:`code/prime-while.py`
+     :language: python
+
+* ``for``, ``range()``
+* :doc:`Exercise: primeness (using for)
+  </trainings/material/soup/python/python_0230_exercises/exercise_for_primeness>`
+
+  .. literalinclude:: code/prime-for.py
+     :caption: :download:`code/prime-for.py`
+     :language: python
+
+* Functions
+* :doc:`Exercise: primeness (function)
+  </trainings/material/soup/python/python_0275_exercises/exercise_primeness_function>`
+
+  .. literalinclude:: code/prime-function.py
+     :caption: :download:`code/prime-function.py`
+     :language: python
+
+* :doc:`Exercise: uniq function
+  </trainings/material/soup/python/python_0275_exercises/exercise_misc>`
+
+  .. literalinclude:: code/uniq.py
+     :caption: :download:`code/uniq.py`
+     :language: python
+
+Day 3
+.....
+
+Cold start in the morning:
+
+* ``uniq()`` transformed into *generator*
+* ``with``
+* ``is``
+
 Links
 -----
 

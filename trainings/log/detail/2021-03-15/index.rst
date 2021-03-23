@@ -39,6 +39,5 @@ Log
   * Github Exercise
   * :doc:`/trainings/material/soup/python/draft/mqtt` Diskussion
 
-  * unittest
+  * Unittesting
 
-* Ausblick: decorators
