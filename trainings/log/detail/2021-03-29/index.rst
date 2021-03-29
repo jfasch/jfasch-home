@@ -6,7 +6,7 @@ Linux Basics, Shell Scripting (2019-03-29)
 
 .. sidebar:: Course Details
 
-   * Start: see MS Teams invitation
+   * Start: 9:00 (see MS Teams invitation)
    * Linux Basics (:download:`Download
      </trainings/material/pdf/010-linux-basics.pdf>`)
    * Shell Scripting (:download:`Download

@@ -115,6 +115,9 @@ Day 2
      :caption: :download:`code/uniq.py`
      :language: python
 
+* Large group exercise (extending until course finish). Something with
+  CSV files. File IO for a purpose.
+
 Day 3
 .....
 
@@ -124,8 +127,34 @@ Cold start in the morning:
 * ``with``
 * ``is``
 
+* Using ``csv.DictReader``; see `here
+  <https://docs.python.org/3/library/csv.html#csv.DictReader>`__
+* Group exercise on `Github
+  <https://github.com/jfasch/2021-03-22.1>`__
+
+Day 4
+.....
+
+* Use ``collections.namedtuple`` for our ``dict`` objects that we use
+  as *records*.
+* Test driven development
+* OO
+* :doc:`/trainings/material/soup/python/draft/mqtt/topic`
+
 Links
 -----
 
-* :doc:`Python/NumPy Course by myself, including links
+* :doc:`Python/NumPy course by myself, including links
   <../2019-11-12/index>`
+* `SciPy: Interpolation
+  <https://docs.scipy.org/doc/scipy/reference/interpolate.html>`__
+* `Pandas: read_excel()
+  <https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html>`__. Make
+  sense to look into: the ``converters`` parameter, for example, looks
+  like it would offer a cool opportunity to hook in our dumb
+  ``str("123,456")`` (note the *comma*) -> ``float(123.456)``
+  conversions.
+* :doc:`Virtual Environments
+  </trainings/material/soup/python/draft/venv/topic>`, and
+  :doc:`Python Package Index (PyPI)
+  </trainings/material/soup/python/draft/pip/topic>`

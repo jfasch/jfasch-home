@@ -62,6 +62,28 @@ From :download:`Linux Basics (PDF)
   * Kopieren und Verschieben (``cp`` und ``mv``): 88-91
   * Owner, Permissions: 92-97, 100
 
+2021-03-26
+..........
+
+* umask -> pruefingsfrage
+* setuid -> pruefingsfrage!
+* sticky
+* find
+
+des weiteren: tools
+
+* cat
+* cut (ansatzweise)
+* grep (ansatzweise)
+* less
+* sort
+* uniq
+
+pipe, das prinzip
+
+**Das verdammte Directory eines fremden Users, das ein File drin hat,
+das ich aus dem Directory nicht löschen darf.**
+
 Weiter
 ......
 
