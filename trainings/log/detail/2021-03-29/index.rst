@@ -11,6 +11,11 @@ Linux Basics, Shell Scripting (2019-03-29)
      </trainings/material/pdf/010-linux-basics.pdf>`)
    * Shell Scripting (:download:`Download
      </trainings/material/pdf/100-shell-scripting.pdf>`)
+   * `Github Repository <https://github.com/jfasch/2021-03-29>`__
+   * :download:`Bash help sheet
+     </trainings/material/misc/bash-help-sheet.pdf>`
+   * :download:`Readline Emacs Editing Mode Cheat Sheet
+     </trainings/material/misc/readline-emacs-editing-mode-cheat-sheet.pdf>`
 
 Agenda
 ------
@@ -85,3 +90,81 @@ follows (substitute my username with yours),
 	 allowfullscreen>
      </iframe>
 
+Log
+---
+
+Day 1
+.....
+
+Linux Basics (:download:`download
+</trainings/material/pdf/010-linux-basics.pdf>`), heading straight
+through to the "Permissions" chapter startung on slide #92.
+
+Exercises
+`````````
+
+* *Change Password*
+
+  Your password on our cloud machine equals your username. From a
+  security standpoint, this is suboptimal - if anybody knows your
+  username, you're `pwned <https://haveibeenpwned.com/>`__.
+
+  Change your password.
+
+* *Create an alias*
+
+  ``ls -al DIR`` shows a long listing of ``DIR`` (including "hidden"
+  files). ``ls -al`` is relatively clumsy to type, clumsier than
+  e.g. ``x``.
+
+  For your comfort, create an alias to solve this problem. Do this in
+  a way that makes the alias automatically available on next login.
+
+* ``echo`` *suppressing linefeed*
+
+  The ``echo`` command appends a linefeed (aka newline) to its output,
+
+  .. code-block:: console
+
+     $ echo this is a line because it has a newline at the end
+     this is a line because it has a newline at the end
+     $
+
+  (You can see the newline character because the next prompt appears
+  on a new line.)
+
+  Which option makes ``echo`` suppress the newline character? (The
+  next prompt appears right after the output, on the same line.)
+
+* *Show file content*
+
+  In my (username ``faschingbauer.jörg``) home directory, there exists
+  a subdirectory ``dumpbin``, and inside that directory exists a file
+  ``easter``.
+
+  Print the file content on the console.
+
+* *Create dumpbin, and give colleagues write permissions*
+
+  In your hmoe directory, create a ``dumpbin`` directory. Give your
+  colleagues write permissions in that directory (btw, a colleague is
+  one of the ``frcoll`` group).
+
+* *Create a file in your colleague's dumpbin, and write-protect that
+  file against the colleague*
+
+Day 2
+.....  
+
+Again from Linux Basics (:download:`download
+</trainings/material/pdf/010-linux-basics.pdf>`)
+
+* Permissions, again (*this is important!*)
+* Tools, including some live demos of pipe usage
+* ``stdin``, ``stdout``, pipe short demos
+
+.. figure:: ssh-shell-stdin-stdout.png
+   :scale: 40%
+   :align: left
+
+   How PuTTY/SSH *terminals* play together with the SSH daemon

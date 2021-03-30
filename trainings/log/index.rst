@@ -23,7 +23,8 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
 Linux Basics, Shell Scripting (2019-03-29 - 1.4.2021)
 -----------------------------------------------------
 
-Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht, und
+online über Zoom gehalten.
 
 (:doc:`Mehr ... <detail/2021-03-29/index>`)
 
