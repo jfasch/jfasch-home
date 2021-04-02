@@ -1,4 +1,4 @@
-Linux Basics, Shell Scripting (2019-03-29)
+Linux Basics, Shell Scripting (2021-03-29)
 ==========================================
 
 .. contents::
@@ -11,6 +11,8 @@ Linux Basics, Shell Scripting (2019-03-29)
      </trainings/material/pdf/010-linux-basics.pdf>`)
    * Shell Scripting (:download:`Download
      </trainings/material/pdf/100-shell-scripting.pdf>`)
+   * SSH (and other topics like GDB (:download:`Download
+     </trainings/material/pdf/200-misc.pdf>`)
    * `Github Repository <https://github.com/jfasch/2021-03-29>`__
    * :download:`Bash help sheet
      </trainings/material/misc/bash-help-sheet.pdf>`
@@ -167,4 +169,133 @@ Again from Linux Basics (:download:`download
    :scale: 40%
    :align: left
 
-   How PuTTY/SSH *terminals* play together with the SSH daemon
+   How PuTTY/SSH *terminals* play together with the SSH daemon (the
+   ``$TERM`` environment variable)
+
+Day 3
+.....
+
+* More about SSH (:download:`download slides
+  </trainings/material/pdf/200-misc.pdf>`)
+* From Linux Basics (:download:`download
+  </trainings/material/pdf/010-linux-basics.pdf>`)
+
+  * IO Redirection and Pipes
+  * A bunch of exercises from that same chapter
+
+Day 4
+.....
+
+Problem: on the (small ARM) target machine hell breaks loose (`OOM
+killer
+<https://www.kernel.org/doc/gorman/html/understand/understand016.html>`__
+runs amoc) from time to time. Sketch a possible way to pull memory
+usage snapshots from the target.
+
+* SSH for remote execution
+* Shell script on target
+* Python on host, after making clear why Shell is not an appropriate
+  language if you want to do more.
+
+.. figure:: local-embedded-scripting.png
+   :scale: 40%
+   :align: left
+
+Links
+-----
+
+SSH
+...
+
+* **Beginners**
+
+  `Tinkernut
+  <https://www.youtube.com/channel/UCZDA1kA3y3EIg25BpcHSpwQ>`__ has a
+  lot about Raspbery, here's something he has about SSH.
+
+  .. raw:: html
+
+     <iframe 
+         width="560" 
+	 height="315" 
+	 src="https://www.youtube.com/embed/qWKK_PNHnnA" 
+	 title="YouTube video player" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>
+
+* **Key base authentication**, including turning off password
+  authentication on the server (definitely recommended if you intend
+  to go public)
+
+  `Corey Schaefer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__ is
+  into Python; he has a lot of awesome tutorials, from beginner stuff
+  to very advanced.
+
+  .. raw:: html
+
+     <iframe 
+         width="560" 
+	 height="315" 
+	 src="https://www.youtube.com/embed/vpk_1gldOAE" 
+	 title="YouTube video player" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>
+
+* **SSH tunneling**. We didn't get to that. Again from `Tinkernut
+  <https://www.youtube.com/channel/UCZDA1kA3y3EIg25BpcHSpwQ>`__.
+
+  .. raw:: html
+
+     <iframe 
+         width="560" 
+	 height="315" 
+	 src="https://www.youtube.com/embed/AtuAdk4MwWw" 
+	 title="YouTube video player" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>
+
+Linux and/or Shell on Windows Host
+..................................
+
+On day 4 we sketched how host/target integration could work: running
+programs/scripts on the host, and automating remote execution on the
+target (using SSH and key based authentication). Here's a number of
+ways how to have a Linux (-like) environment on the (Windows) host.
+
+* Install `any <https://getfedora.org/>`__ `distribution
+  <https://ubuntu.com/>`__ on your PC (unlikely in a Windows centric
+  company)
+* Run `any <https://getfedora.org/>`__ `distribution
+  <https://ubuntu.com/>`__ on `VirtualBox
+  <https://www.virtualbox.org/>`__
+* `Windows Subsystem for Linux
+  <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`__
+* `Cygwin <https://www.cygwin.com/>`__ is a rather lightweight
+  alternative to all of above. All you need is a shell prompt, after
+  all.
+* `Git for Windows <https://gitforwindows.org/>`__ comes with a Bash
+  and assorted tools.
+
+Editor Support for Shell Scripting
+..................................
+
+I definitely don't recommend `Emacs
+<https://www.gnu.org/software/emacs/>`__. But anyway, `nano
+<https://www.nano-editor.org/>`__ is not an editor which is made for
+programmers.
+
+`Visual Studio Code <https://code.visualstudio.com/>`__ appears to be
+the Emacs for Kids Today. It comes with a large universe of
+programming language support,
+
+* `Shell Scriping <https://marketplace.visualstudio.com/items?itemName=Remisa.shellman>`__
+* Python
+  * `Python in VS Code Tutorial <https://code.visualstudio.com/docs/python/python-tutorial>`__
+  * `Corey Schaefer on the same topic <https://www.youtube.com/watch?v=-nh9rCzPJ20>`__
