@@ -24,15 +24,6 @@ Python für Fortgeschrittene
       :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/index`
       PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
-   **Termine**
-
-   * 27.10.2020 - 29.10.2020, Wien, `tecTrain
-     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
-   * 16.12.2020 - 18.12.2020, Graz, `tecTrain
-     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
-   * 22.3.2021 - 24.3.2021, Wien, `tecTrain
-     <https://www.tectrain.at/seminare/themen/programmierung/python-vertiefung>`__
-
 Über den grundlegenden Sprachumfang (siehe Schulung :doc:`Python
 Grundlagen <python-basics>`) hinaus bietet Python eine Reihe von
 Möglichkeiten, die dem Programmier das Handwerk erleichtern - seien es

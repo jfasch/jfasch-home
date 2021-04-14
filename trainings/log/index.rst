@@ -20,6 +20,17 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Programmierung Grundlagen, anhand von Python (12. und 13.4.2021)
+-----------------------------------------------------------------
+
+Der Kurs fand online mittels :doc:`Microsoft Teams
+</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+Partner `tecTrain
+<https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-04-12/index>`)
+
 Linux Basics, Shell Scripting (2019-03-29 - 1.4.2021)
 -----------------------------------------------------
 

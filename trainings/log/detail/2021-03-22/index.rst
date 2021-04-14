@@ -4,10 +4,17 @@ Python Basic and Advanced (22.3.2021 - 25.3.2021)
 .. contents::
    :local:
 
-.. sidebar:: Material
+.. sidebar:: *Training Information*
+
+   **Material**
 
    * PDF Slides (:download:`Download
      </trainings/material/pdf/300-python.pdf>`)
+   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/index`
+
+   **Source Code**
+
+   `See Github <https://github.com/jfasch/2021-03-22.1>`__
 
 Agenda
 ------
@@ -127,6 +134,10 @@ Cold start in the morning:
 * ``with``
 * ``is``
 
+Continue with the group exercise. Moved the code over to Github last
+evening, starting with a short `Git intro
+<https://www.youtube.com/watch?v=HVsySz-h9r4>`__.
+
 * Using ``csv.DictReader``; see `here
   <https://docs.python.org/3/library/csv.html#csv.DictReader>`__
 * Group exercise on `Github
@@ -134,6 +145,8 @@ Cold start in the morning:
 
 Day 4
 .....
+
+
 
 * Use ``collections.namedtuple`` for our ``dict`` objects that we use
   as *records*.
@@ -149,7 +162,7 @@ Links
 * `SciPy: Interpolation
   <https://docs.scipy.org/doc/scipy/reference/interpolate.html>`__
 * `Pandas: read_excel()
-  <https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html>`__. Make
+  <https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html>`__. Makes
   sense to look into: the ``converters`` parameter, for example, looks
   like it would offer a cool opportunity to hook in our dumb
   ``str("123,456")`` (note the *comma*) -> ``float(123.456)``
@@ -158,3 +171,83 @@ Links
   </trainings/material/soup/python/draft/venv/topic>`, and
   :doc:`Python Package Index (PyPI)
   </trainings/material/soup/python/draft/pip/topic>`
+
+(Tutorial) Videos
+-----------------
+
+* .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+   	     src="https://www.youtube.com/embed/HVsySz-h9r4" 
+   	     title="YouTube video player" 
+   	     frameborder="0" 
+   	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+   	     allowfullscreen>
+     </iframe>
+
+* .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+   	     src="https://www.youtube.com/embed/OSGv2VnC0go" 
+   	     title="YouTube video player" 
+   	     frameborder="0" 
+   	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+   	     allowfullscreen>
+     </iframe>
+   
+* .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+   	     src="https://www.youtube.com/embed/C-gEQdGVXbk" 
+   	     title="YouTube video player" 
+   	     frameborder="0" 
+   	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+   	     allowfullscreen>
+     </iframe>
+
+* .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+   	     src="https://www.youtube.com/embed/zdJEYhA2AZQ" 
+   	     title="YouTube video player" 
+   	     frameborder="0" 
+   	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+   	     allowfullscreen>
+     </iframe>
+
+* .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+   	     src="https://www.youtube.com/embed/jTYiNjvnHZY" 
+   	     title="YouTube video player" 
+   	     frameborder="0" 
+   	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+   	     allowfullscreen>
+     </iframe>
+
+* .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+   	     src="https://www.youtube.com/embed/6tNS--WetLI" 
+   	     title="YouTube video player" 
+   	     frameborder="0" 
+   	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+   	     allowfullscreen>
+     </iframe>
+
+* .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+   	     src="https://www.youtube.com/embed/K8L6KVGG-7o" 
+   	     title="YouTube video player" 
+   	     frameborder="0" 
+   	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+   	     allowfullscreen>
+     </iframe>

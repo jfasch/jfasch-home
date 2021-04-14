@@ -24,15 +24,6 @@ Python Grundlagen
       :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/index`
       PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
-   **Termine**
-
-   * 28.9.2020 - 30.9.2020, Wien, `tecTrain
-     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
-   * 23.11.2020 - 25.11.2020, Graz, `tecTrain
-     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
-   * 22.2.2021 - 24.2.2021, Wien, `tecTrain
-     <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
-
 Python ist einfach zu erlernen und bietet mit seiner Standardlibrary
 einen üppig ausgestatteten Werkzeugkasten - man kann in null komma
 nichts mächtige Programme schreiben. Verglichen mit anderen Sprachen

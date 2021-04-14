@@ -11,6 +11,16 @@ the good old :download:`PDF material
 The Python collection is extended continuously with new material, and
 is managed using :doc:`OpenTraining </about/site/opentraining/index>`.
 
+Link Collection
+---------------
+
+A collection of links to paste into training logs.
+
+.. toctree::
+   :maxdepth: 1
+
+   link-collection
+
 Contents
 --------
 

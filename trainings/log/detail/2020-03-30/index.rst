@@ -202,7 +202,7 @@ Tag 5
   * Diskussion: Laufzeitverhalten, `O-Notation
     <https://realpython.com/must-watch-pycon-talks/#6-big-o-how-code-slows-as-data-grows>`__
 
-  * C++11 Verbesserungen gegenüber C++03 (Slides: :download:`C++03
+  * C++11 Verbesserungen gegenüber C++03 (Slides: :download:`C++11
     (PDF) </trainings/material/pdf/056-c++11.pdf>`, 6ff)
 
     * ``auto``

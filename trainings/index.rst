@@ -20,6 +20,7 @@ Kurse und Seminare: Überblick
    repertoire/cxx.rst
    repertoire/python-basics.rst
    repertoire/python-advanced.rst
+   repertoire/python_herdt.rst
    repertoire/make.rst
    repertoire/cmake.rst
    repertoire/bash.rst
