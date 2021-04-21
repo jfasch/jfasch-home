@@ -8,8 +8,8 @@ Kernel Hacking
 
 A put-together of kernel related topics.
 
-Contents
---------
+Topics and Dependencies
+-----------------------
 
 .. toctree::
    :maxdepth: 1
@@ -17,13 +17,14 @@ Contents
 
    */topic
 
+.. jf-topicgraph::
+   :entries: kernel
+
+
 Group Description
 -----------------
 
 .. jf-group:: kernel
-
-.. jf-topicgraph::
-   :entries: kernel
 
 Sample Code Maintenance
 -----------------------

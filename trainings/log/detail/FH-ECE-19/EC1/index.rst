@@ -12,6 +12,12 @@ Embedded Computing 1 (ECE 19)
    plan
    cloud-computer
 
+.. sidebar:: Material
+
+   * :download:`Linux Basics (PDF) </trainings/material/pdf/010-linux-basics.pdf>`
+   * :download:`Python (PDF) </trainings/material/pdf/300-python.pdf>`
+   * Private repository on Github: https://github.com/jfasch/FH-ECE-19
+
 .. contents::
    :local:
 
@@ -55,6 +61,15 @@ From :download:`Linux Basics (PDF)
      
 * *Das Filesystem*
 
+  Es ist wichtig, im Filesystem navigieren zu können. Die Basic Tools
+  müssen sitzen (``cd``, ``ls``, ``pwd``, ``mkdir``, ``rm``, ``cp``,
+  ``mv``, etc.). (Dazu muss man natürlich verstehen, was Files,
+  Directories etc. sind.)
+
+  Das *Permission*-Thema ist *extrem* wichtig, und man kann damit
+  rechnen, dass zur Prüfung ein paar trockene Fragen zu dem Thema
+  kommen.
+
   * Pfade: 67-71
   * Directories: 72-76
   * Symbolische Links: 77-79
@@ -65,27 +80,94 @@ From :download:`Linux Basics (PDF)
 2021-03-26
 ..........
 
-* umask -> pruefingsfrage
-* setuid -> pruefingsfrage!
-* sticky
-* find
+* *Das Filesystem*
 
-des weiteren: tools
+  * Permissions
 
-* cat
-* cut (ansatzweise)
-* grep (ansatzweise)
-* less
-* sort
-* uniq
+    * Die ``umask``: 98-99
+    * Tools für Permissions: 100
+    * Set-UID Bit: 101
+    * Sticky Bit: 102
 
-pipe, das prinzip
+  * Das ``find`` Command: 105-109
 
-**Das verdammte Directory eines fremden Users, das ein File drin hat,
-das ich aus dem Directory nicht löschen darf.**
+* Tools für Textfiles: 113ff.
 
-Weiter
+  Das Kapitel wurde ansatzweise durchgegangen - jedes Tool. Wichtig
+  ist, zu verstehen,
+
+  * dass die Tools von *Standard Input* lesen, auf *Standard Output*
+    schreiben (und auf *Standard Error* Fehler und Debug-Messages
+    schreiben).
+  * dass diese und andere Tools durch die Benutzung von *Standard
+    Input* und *Standard Output* in der *Pipe*
+
+* IO Redirection und Pipes: 133ff.
+
+  Dieses Kapitel wurde in einem mit den Tools durchgemacht,
+  ansatzweise.
+
+  Wichtig ist mir, dass die Wirkungsweise der Pipe verstanden wird,
+  und dass man Tools mit ihrer Hilfe verknüpfen kann.
+
+2021-04-15
+..........
+
+* Aufwärmen
+
+  * SSH Public Key Authentication
+  * **Das verdammte Directory eines fremden Users, das ein File drin
+    hat, das ich aus dem Directory nicht löschen darf.**
+  * Abschluss des Linux/Shell Kapitels: *Fragerunde*
+
+* Python Setup
+
+  * :doc:`/trainings/material/soup/python/draft/installation`
+  * :doc:`/trainings/material/soup/python/draft/vscode`
+
+* Python Intro
+
+  * :download:`Python Course (PDF) </trainings/material/pdf/300-python.pdf>`
+
+2021-04-21
+----------
+
+Git Intro
+.........
+
+.. sidebar:: Download and Installation
+
+   * `Git for Windows <https://git-scm.com/download/win>`__
+   * `Git for MacOS <https://git-scm.com/download/mac>`__
+
+.. raw:: html
+
+   <iframe width="560" 
+           height="315" 
+	   src="https://www.youtube.com/embed/HVsySz-h9r4" 
+	   title="YouTube video player" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+   </iframe>
+
+Github
 ......
 
-* SetUID, Sticky, ``umask``
-* ``find``
+* Private repository on Github: https://github.com/jfasch/FH-ECE-19
+* Create Github account, and send it to jf@faschingbauer.co.at
+* Clone the repository
+
+  .. code-block:: console
+
+     $ cd directory-where-i-have-my-ec-work
+     $ git clone https://github.com/jfasch/FH-ECE-19.git
+
+* If you are getting tired of entering a password for each repo
+  transaction, you can always `deploy a SSH public key to Github
+  <https://github.com/settings/keys>`__, and then re-clone using the
+  SSH access method:
+
+  .. code-block:: console
+
+     $ git clone git@github.com:jfasch/FH-ECE-19.git

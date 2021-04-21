@@ -9,6 +9,9 @@ tools exist, how hardware is accessed. Starting with C and C++
 development, we will quickly move over to Python, a more comfortable
 and more powerful language.
 
+So much for the plan. See :doc:`here <index>` for a record of what's
+actually going on.
+
 .. contents::
    :local:
 
