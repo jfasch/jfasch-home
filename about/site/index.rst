@@ -9,6 +9,7 @@ This Site
    work-in-progress/index
    recipes
    layout-test
+   courses/index
    mathml
    isoamsa
    isoamsr

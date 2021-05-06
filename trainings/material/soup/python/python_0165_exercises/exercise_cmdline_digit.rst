@@ -1,10 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Exercises: Digit to English Word
-================================
-
-.. contents::
-   :local:
+Exercise: Digit to English Word
+===============================
 
 .. jf-topic:: python.basics.exercises.cmdline_digit
    :dependencies: python.basics.python_0120_helloworld,
@@ -13,8 +10,17 @@ Exercises: Digit to English Word
 		  python.basics.python_0150_datatypes_overview,
 		  python.basics.python_0150_datatypes_overview_compound
 
-#. Write a program that takes a single digit as commandline
-   parameter. Print the English word for that digit.
+Write a program ``digit`` that takes a single digit as commandline
+parameter. Print the English word for that digit. 
+
+.. code-block:: console
+
+   $ ./digit 7
+   seven
+
+* Use a dictionary (key: ``int``, value: ``str``) for the translation.
+* Valid inputs are digits ``0`` - ``9``. Outputs are the
+  corresponding *lowercase* english words for that digit.
 
 Dependencies
 ------------

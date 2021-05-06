@@ -171,3 +171,29 @@ Github
   .. code-block:: console
 
      $ git clone git@github.com:jfasch/FH-ECE-19.git
+
+* Exercise:
+  :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+
+2021-04-29
+----------
+
+* Raspi Lab Setup
+
+  * Image preparation using `script in our Github repo
+    <https://github.com/jfasch/FH-ECE-19/blob/master/bin/fh-lab-image>`__
+  * Me being Doze admin, configuring static IPs
+
+* GPIO demo, using an LED
+* OneWire demo, using one of those `DS18B20
+  <https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf>`__
+  sensors.
+
+.. figure:: Bullshit-Bingo-G2.jpg
+
+   Topics of interest, from Group 2
+
+* Exercise:
+  :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+
+  Short recap
