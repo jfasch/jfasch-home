@@ -1,5 +1,5 @@
-Cloud Computer
-==============
+Cloud Computer, SSH Login
+=========================
 
 .. contents::
    :local:
