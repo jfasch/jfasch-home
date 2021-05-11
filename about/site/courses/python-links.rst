@@ -9,7 +9,7 @@ Visual Studio Code
 
 * `Visual Studio Code (Windows) - Setting up a Python Development
   Environment and Complete Overview
-  <https://www.youtube.com/watch?v=-nh9rCzPJ20>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=-nh9rCzPJ20>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -25,7 +25,7 @@ Visual Studio Code
 
 * `Visual Studio Code (Mac) - Setting up a Python Development
   Environment and Complete Overview
-  <https://www.youtube.com/watch?v=06I63_p-2A4>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=06I63_p-2A4>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -42,7 +42,7 @@ Python Beginner Tutorials
 -------------------------
 
 * `5 Common Python Mistakes and How to Fix Them
-  <https://www.youtube.com/watch?v=zdJEYhA2AZQ>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=zdJEYhA2AZQ>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -57,7 +57,7 @@ Python Beginner Tutorials
 
 * `Python Quick Tip: F-Strings - How to Use Them and Advanced String
   Formatting <https://www.youtube.com/watch?v=nghuHvKLhJA>`__, by
-  `Corey Schaefer
+  `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -71,7 +71,7 @@ Python Beginner Tutorials
      </iframe>
 
 * `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
-  <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -86,7 +86,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial for Beginners 5: Dictionaries - Working with
   Key-Value Pairs <https://www.youtube.com/watch?v=daefaLgNkw0>`__, by
-  `Corey Schaefer
+  `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -101,7 +101,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial for Beginners 7: Loops and Iterations - For/While
   Loops <https://www.youtube.com/watch?v=6iF8Xb7Z3wQ>`__, by `Corey
-  Schaefer
+  Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -115,7 +115,7 @@ Python Beginner Tutorials
      </iframe>
 
 * `Python Tutorial for Beginners 8: Functions
-  <https://www.youtube.com/watch?v=9Os0o3wzS_I>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=9Os0o3wzS_I>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -129,7 +129,7 @@ Python Beginner Tutorials
      </iframe>
 
 * `10 Python Tips and Tricks For Writing Better Code
-  <https://www.youtube.com/watch?v=C-gEQdGVXbk>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=C-gEQdGVXbk>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -144,7 +144,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
   Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by `Corey
-  Schaefer
+  Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -162,7 +162,7 @@ Advanced Python
 
 * `Python Tutorial: Duck Typing and Asking Forgiveness, Not Permission
   (EAFP) <https://www.youtube.com/watch?v=x3v9zMX1s4s>`__, by `Corey
-  Schaefer
+  Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -176,7 +176,7 @@ Advanced Python
      </iframe>
 
 * `Python Tutorial: Unit Testing Your Code with the unittest Module
-  <https://www.youtube.com/watch?v=6tNS--WetLI>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=6tNS--WetLI>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -191,7 +191,7 @@ Advanced Python
 
 * `Python Tutorial: Decorators - Dynamically Alter The Functionality
   Of Your Functions <https://www.youtube.com/watch?v=FsAPt_9Bf3U>`__,
-  by `Corey Schaefer
+  by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -241,7 +241,7 @@ PyPI (Installing Modules that don't come as Batteries)
 
 * `Python Tutorial: pip - An in-depth look at the package management
   system <https://www.youtube.com/watch?v=U2ZN104hIcc>`__, by `Corey
-  Schaefer
+  Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -268,7 +268,7 @@ Git, and Github
 ---------------
 
 * `Git Tutorial for Beginners: Command-Line Fundamentals
-  <https://www.youtube.com/watch?v=HVsySz-h9r4>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=HVsySz-h9r4>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
@@ -283,7 +283,7 @@ Git, and Github
      </iframe>
 
 * `Git Tutorial: Fixing Common Mistakes and Undoing Bad Commits
-  <https://www.youtube.com/watch?v=FdZecVxzJbk>`__, by `Corey Schaefer
+  <https://www.youtube.com/watch?v=FdZecVxzJbk>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
 
   .. raw:: html
