@@ -232,13 +232,92 @@ Python: Functions
 2021-05-12
 ----------
 
-Python: Towards Object Oriented Programming
-...........................................
+Python: Walk-Through Passing and Failing an Exam
+................................................
 
-Writing a checker for the exercise (live hacking). Covers these topics:
+Writing a checker for the exercise (:doc:`live hacking
+<2021-05-12/screenplay-checker>`).
 
-* Tuple unpacking
-* Iteration
-* Functions
-* Modules
-* Classes and ``namedtuple``
+.. toctree::
+   :hidden:
+
+   2021-05-12/screenplay-checker
+
+.. list-table::
+   :align: left
+   :header-rows: 1
+
+   * * Course Material
+     * Notebook Structure
+     * Notebook Download
+   * * (void)
+     * .. toctree::
+
+          Notebooks/Checker-Explanations
+
+     * :download:`Notebook: Checker Explanations <Notebooks/Checker-Explanations.ipynb>`
+
+Further Information
+...................
+
+* ``os.path`` module (from the `Python docs
+  <https://docs.python.org/3/library/os.path.html#module-os.path>`__)
+* ``subprocess`` module (from the `Python docs
+  <https://docs.python.org/3/library/subprocess.html#module-subprocess>`__)
+* `Stackoverflow: Git file permissions on Windows
+  <https://stackoverflow.com/questions/6476513/git-file-permissions-on-windows>`__
+* `Python Tutorial: Using Try/Except Blocks for Error Handling
+  <https://www.youtube.com/watch?v=NIWwJbo-9_8>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/NIWwJbo-9_8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: OS Module - Use Underlying Operating System
+  Functionality <https://www.youtube.com/watch?v=tJxcKyFMTGo>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/tJxcKyFMTGo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Calling External Commands Using the Subprocess
+  Module <https://www.youtube.com/watch?v=2Fp1N6dof0Y>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2Fp1N6dof0Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python 3.7: Encode String Method <https://www.youtube.com/watch?v=IoU4AbPpMys>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/IoU4AbPpMys" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>

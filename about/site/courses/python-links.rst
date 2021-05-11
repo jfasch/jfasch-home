@@ -157,6 +157,65 @@ Python Beginner Tutorials
 	     allowfullscreen>
      </iframe>
 
+* `Python Tutorial: Using Try/Except Blocks for Error Handling
+  <https://www.youtube.com/watch?v=NIWwJbo-9_8>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/NIWwJbo-9_8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python 3.7: Encode String Method <https://www.youtube.com/watch?v=IoU4AbPpMys>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/IoU4AbPpMys" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Modules from Standard Library
+-----------------------------
+
+* `Python Tutorial: OS Module - Use Underlying Operating System
+  Functionality <https://www.youtube.com/watch?v=tJxcKyFMTGo>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/tJxcKyFMTGo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Calling External Commands Using the Subprocess
+  Module <https://www.youtube.com/watch?v=2Fp1N6dof0Y>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2Fp1N6dof0Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
 Advanced Python
 ---------------
 
