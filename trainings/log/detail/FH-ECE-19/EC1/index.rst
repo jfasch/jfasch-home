@@ -172,8 +172,29 @@ Github
 
      $ git clone git@github.com:jfasch/FH-ECE-19.git
 
-* Exercise:
-  :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+Python
+......
+
+.. _first-notebook-here:
+
+.. list-table::
+   :align: left
+   :header-rows: 1
+
+   * * Notebook Structure
+     * Notebook Download
+   * * .. toctree::
+
+          Notebooks/Datatypes
+
+     * :download:`Notebook: Datatypes <Notebooks/Datatypes.ipynb>`
+
+.. _first-dag-here:
+
+**Course material**
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.cmdline_digit
 
 2021-04-29
 ----------
@@ -193,7 +214,54 @@ Github
 
    Topics of interest, from Group 2
 
-* Exercise:
+* Exercise recap:
   :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
 
-  Short recap
+2021-05-10
+----------
+
+Org Stuff
+.........
+
+* Course documentation
+
+  * Notebooks now maintained here (moved over from Github) (see
+    :ref:`here <first-notebook-here>`)
+  * Topic dependency graphs inserted in random locations (see :ref:`here <first-dag-here>`)
+
+* Github
+
+  * Repo made private
+  * FH VPN? Gitlab?
+
+Python: Functions
+.................
+
+.. list-table::
+   :align: left
+   :header-rows: 1
+
+   * * Course Material
+     * Notebook Structure
+     * Notebook Download
+   * * * :doc:`/trainings/material/soup/python/python_0270_functions/topic`
+       * :doc:`/trainings/material/soup/python/python_0270_functions/screenplay-scoping`
+     * .. toctree::
+
+          Notebooks/Functions
+
+     * :download:`Notebook: Functions <Notebooks/Functions.ipynb>`
+
+2021-05-12
+----------
+
+Python: Towards Object Oriented Programming
+...........................................
+
+Writing a checker for the exercise (live hacking). Covers these topics:
+
+* Tuple unpacking
+* Iteration
+* Functions
+* Modules
+* Classes and ``namedtuple``
