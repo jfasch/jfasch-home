@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('.'))
 _me = 'Jörg Faschingbauer'
 _canonical = 'https://www.faschingbauer.me'
 project = author = _me
-copyright = '2020, '+_me
+copyright = '2019-2021, '+_me
 html_title = _me
 html_baseurl = _canonical
 release = version = ''
