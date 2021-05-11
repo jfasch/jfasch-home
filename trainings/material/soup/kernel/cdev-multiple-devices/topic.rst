@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.multiple_devices
+.. jf-exercise:: kernel.multiple_devices
    :dependencies: kernel.cdev_refactoring
 
 

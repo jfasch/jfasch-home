@@ -2,6 +2,7 @@ from . import utils
 from . import soup
 from .. import errors
 from ..topic import Topic
+from ..exercise import Exercise
 from ..task import Task
 from ..node import Node
 from ..group import Group
@@ -188,10 +189,19 @@ class _TopicGraphExpander:
                 f'{node_id} [',
                 f'    label="{node.title}";',
                 f'    href="{uri}";',
-#                '    shape=Mrecord;',
                 '    style=filled;',
                 f'    penwidth="{border}";',
                 '    fillcolor="#DCDCDC";'
+                '];',
+            ]
+        elif isinstance(node, Exercise):
+            return [
+                f'{node_id} [',
+                f'    label="{node.title}";',
+                f'    href="{uri}";',
+                '    style=filled;',
+                f'    penwidth="{border}";',
+                '    fillcolor="red";'
                 '];',
             ]
         elif isinstance(node, Task):

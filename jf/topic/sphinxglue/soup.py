@@ -1,5 +1,6 @@
 from ..soup import Soup
 from ..topic import Topic
+from ..exercise import Exercise
 from ..task import Task
 from ..group import Group
 from ..errors import TopicError
@@ -13,6 +14,19 @@ def sphinx_add_topic(app, docname, title, path, dependencies):
 
     app.env.jf_elements[docname] = {
         'type': 'topic',
+        'title': title,
+        'path': path,
+        'dependencies': dependencies,
+    }
+
+def sphinx_add_exercise(app, docname, title, path, dependencies):
+    if hasattr(app, 'jf_soup'):
+        raise TopicError('Soup already created, cannot add one more topic')
+    if not hasattr(app.env, 'jf_elements'):
+        app.env.jf_elements = {}
+
+    app.env.jf_elements[docname] = {
+        'type': 'exercise',
         'title': title,
         'path': path,
         'dependencies': dependencies,
@@ -61,6 +75,10 @@ def sphinx_create_soup(app):
             app.jf_soup.add_element(
                 Topic(title=elem['title'], path=elem['path'], docname=docname,
                       dependencies=elem['dependencies']))
+        elif ty == 'exercise':
+            app.jf_soup.add_element(
+                Exercise(title=elem['title'], path=elem['path'], docname=docname,
+                         dependencies=elem['dependencies']))
         elif ty == 'task':
             app.jf_soup.add_element(
                 Task(title=elem['title'],

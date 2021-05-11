@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.cdev_first_functionality
+.. jf-exercise:: kernel.cdev_first_functionality
    :dependencies: kernel.cdev_file_operations,
 		  kernel.kmalloc,
 		  kernel.list

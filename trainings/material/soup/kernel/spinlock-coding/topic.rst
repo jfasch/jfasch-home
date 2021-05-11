@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.spinlock_coding
+.. jf-exercise:: kernel.spinlock_coding
    :dependencies: kernel.interrupt_coding,
 		  kernel.spinlock
 

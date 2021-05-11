@@ -1,6 +1,7 @@
 from .group import Group
 from .node import Node
 from .topic import Topic
+from .exercise import Exercise
 from .task import Task
 from . import errors
 from . import element
@@ -18,17 +19,6 @@ class Soup:
     def __len__(self):
         # well this is a bit dumb
         return len(list(self._root_group.iter_recursive()))
-
-    def iter_topics(self):
-        self._assert_committed()
-        for name, elem in self._root_group.iter_recursive():
-            if isinstance(elem, Topic):
-                yield elem
-            elif isinstance(elem, Task) or isinstance(elem, Group):
-                # possibly generalize that; pass class as argument
-                continue
-            else:
-                assert False, elem
 
     def add_element(self, element):
         self._assert_uncommitted()

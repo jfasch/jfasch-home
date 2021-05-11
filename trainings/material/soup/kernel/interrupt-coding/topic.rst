@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.interrupt_coding
+.. jf-exercise:: kernel.interrupt_coding
    :dependencies: kernel.raspi_kernel_build,
 		  kernel.mutex_coding,
 		  kernel.interrupt

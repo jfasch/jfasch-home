@@ -1,7 +1,7 @@
 from .sphinxglue import topic
+from .sphinxglue import exercise
 from .sphinxglue import task
 from .sphinxglue import group
-from .sphinxglue import topiclist
 from .sphinxglue import graph
 from .sphinxglue import soup
 
@@ -17,9 +17,9 @@ def setup(app):
     app.connect('env-purge-doc', soup.sphinx_purge_doc)
 
     topic.setup(app)
+    exercise.setup(app)
     task.setup(app)
     group.setup(app)
-    topiclist.setup(app)
     graph.setup(app)
 
 

@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.mutex_coding
+.. jf-exercise:: kernel.mutex_coding
    :dependencies: kernel.multiple_devices,
 		  kernel.mutex
 

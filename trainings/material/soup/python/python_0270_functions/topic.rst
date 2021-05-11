@@ -16,3 +16,6 @@ Functions
    * :doc:`/trainings/material/soup/python/draft/closures/topic`
    * :doc:`/trainings/material/soup/python/draft/decorators/topic`
    * :doc:`/trainings/material/soup/python/draft/starargs/topic`
+
+.. jf-topicgraph::
+   :entries: python.basics.python_0270_functions

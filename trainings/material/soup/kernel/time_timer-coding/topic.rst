@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.timer_coding
+.. jf-exercise:: kernel.timer_coding
    :dependencies: kernel.spinlock_coding,
 		  kernel.timer
 

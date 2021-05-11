@@ -23,7 +23,6 @@ is work in progress*).
    sysprog/sysprog
    unittest/unittest
    kernel/index
-   list
    graph
 
 Code
