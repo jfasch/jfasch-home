@@ -58,6 +58,12 @@ Tag 3
 * :doc:`/trainings/material/soup/python/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
 
+Tag 4
+.....
+
+.. jf-topicgraph::
+   :entries: python.basics.exercises.python_0510_exercises_strings_and_files
+
 Live-Hacking (Jupyter Notebook)
 -------------------------------
 
@@ -74,7 +80,7 @@ Visual Studio Code
 * `Visual Studio Code (Windows) - Setting up a Python Development
   Environment and Complete Overview
   <https://www.youtube.com/watch?v=-nh9rCzPJ20>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
   
@@ -90,7 +96,7 @@ Visual Studio Code
 * `Visual Studio Code (Mac) - Setting up a Python Development
   Environment and Complete Overview
   <https://www.youtube.com/watch?v=06I63_p-2A4>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
   
@@ -107,7 +113,7 @@ Python Beginner Tutorials
 
 * `5 Common Python Mistakes and How to Fix Them
   <https://www.youtube.com/watch?v=zdJEYhA2AZQ>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 	   
@@ -121,7 +127,7 @@ Python Beginner Tutorials
 
 * `Python Quick Tip: F-Strings - How to Use Them and Advanced String
   Formatting <https://www.youtube.com/watch?v=nghuHvKLhJA>`__, by
-  **Corey Schaefer**
+  **Corey Schafer**
 
   .. raw:: html
 	   
@@ -135,7 +141,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
   <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 	   
@@ -149,7 +155,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial for Beginners 5: Dictionaries - Working with
   Key-Value Pairs <https://www.youtube.com/watch?v=daefaLgNkw0>`__, by
-  **Corey Schaefer**
+  **Corey Schafer**
 
   .. raw:: html
 	   
@@ -163,7 +169,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial for Beginners 7: Loops and Iterations - For/While
   Loops <https://www.youtube.com/watch?v=6iF8Xb7Z3wQ>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 	   
@@ -177,7 +183,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial for Beginners 8: Functions
   <https://www.youtube.com/watch?v=9Os0o3wzS_I>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 	   
@@ -191,7 +197,7 @@ Python Beginner Tutorials
 
 * `10 Python Tips and Tricks For Writing Better Code
   <https://www.youtube.com/watch?v=C-gEQdGVXbk>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 	   
@@ -205,7 +211,7 @@ Python Beginner Tutorials
 
 * `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
   Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 	   
@@ -252,7 +258,7 @@ PyPI (Installing Modules that don't come as Batteries)
 
 * `Python Tutorial: pip - An in-depth look at the package management
   system <https://www.youtube.com/watch?v=U2ZN104hIcc>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 
@@ -279,7 +285,7 @@ Git, and Github
 
 * `Git Tutorial for Beginners: Command-Line Fundamentals
   <https://www.youtube.com/watch?v=HVsySz-h9r4>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 
@@ -294,7 +300,7 @@ Git, and Github
 
 * `Git Tutorial: Fixing Common Mistakes and Undoing Bad Commits
   <https://www.youtube.com/watch?v=FdZecVxzJbk>`__, by **Corey
-  Schaefer**
+  Schafer**
 
   .. raw:: html
 
