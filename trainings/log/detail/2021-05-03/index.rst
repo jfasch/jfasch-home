@@ -64,6 +64,11 @@ Tag 4
 .. jf-topicgraph::
    :entries: python.basics.exercises.python_0510_exercises_strings_and_files
 
+**PCAP – Certified Associate in Python Programming certification**
+
+* `PCAP <https://pythoninstitute.org/certification/pcap-certification-associate/>`__
+* :download:`Sample Test <PCAP-FREE-SAMPLE-TEST-1-Aug-21-2018.pdf>`
+
 Live-Hacking (Jupyter Notebook)
 -------------------------------
 
