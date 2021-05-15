@@ -219,6 +219,20 @@ Modules from Standard Library
 Advanced Python
 ---------------
 
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__, by **Raymond
+  Hettinger**
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/OSGv2VnC0go" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
 * `Python Tutorial: Duck Typing and Asking Forgiveness, Not Permission
   (EAFP) <https://www.youtube.com/watch?v=x3v9zMX1s4s>`__, by `Corey
   Schafer

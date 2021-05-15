@@ -324,3 +324,75 @@ Further Information
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 	     allowfullscreen>
      </iframe>
+
+2021-05-19
+----------
+
+* :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+
+  * Compare
+
+    * `Corinna Baumgartner
+      <https://github.com/jfasch/FH-ECE-19/blob/master/exercises/baumgartner.corinna/digit>`__
+    * `Matthias Kappel
+      <https://github.com/jfasch/FH-ECE-19/blob/master/exercises/kappel.matthias/digit>`__
+
+Plan
+....
+
+* A bit on encoding. Re-iterate on exercise's use when capturing
+  ``stdout``.
+
+  :doc:`/trainings/material/soup/python/draft/encoding/topic`
+
+* show argparse jjj tag on branch
+
+  * show branch
+  * branching tutorial
+  * argparse tutorial
+
+* show custom exception, ``StudentFailedError`` (on branch)
+
+  * show branch
+  * oo tutorial
+  * exceptions tutorial
+
+* show modularization?
+* rebase (branch from master)?
+
+Exercise
+........
+
+**Warming up the Raspberry**
+
+* Something with GPIO
+* Blinklicht in Python
+* File IO
+
+  .. jf-topicgraph::
+     :entries: python.basics.python_0500_files
+
+**Exercise text**
+
+* Program ``blink``
+* Commandline
+
+  * GPIO number
+  * Interval, in seconds (as passed to ``time.sleep()``)
+
+Further Information
+...................
+
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__, by **Raymond
+  Hettinger**
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/OSGv2VnC0go" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>

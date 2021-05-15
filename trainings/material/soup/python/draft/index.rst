@@ -25,7 +25,7 @@ Contents
    import
    installation
    vscode
-   encoding
+   encoding/topic
    exceptions
 
 Group Definition

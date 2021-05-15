@@ -26,8 +26,8 @@ attempt at correcting that.
 
 Microsoft Teams' and Zoom's focus are online meetings and
 collaboration. Moreover, both are *hosted* solutions - you do not
-setup software and servers, but rather throw in money and/or data and
-be done.
+setup software and servers, but rather throw in money **and/or data**
+and be done.
 
 A different thing is `BigBlueButton <https://bigbluebutton.org/>`__:
 it focuses on *online teaching* which makes it perfect for my
@@ -53,7 +53,7 @@ BigBlueButton instance out there in the cloud in less than an hour
 include
 
 * Video and audio sharing
-* Client runs in the browser; participants do no need to install
+* Client runs in the browser; participants do not need to install
   anything
 * Whiteboard
 * Chats (class wide and one-to-one)

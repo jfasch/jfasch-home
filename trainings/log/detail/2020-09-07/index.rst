@@ -72,7 +72,7 @@ covered.
 
 * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
 * :doc:`/trainings/material/soup/python/draft/context_manager/topic`
-* :doc:`/trainings/material/soup/python/draft/encoding`
+* :doc:`/trainings/material/soup/python/draft/encoding/topic`
 * :doc:`/trainings/material/soup/python/draft/exceptions`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
 * :doc:`/trainings/material/soup/python/draft/duck-typing`
