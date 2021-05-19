@@ -325,17 +325,51 @@ Further Information
 	     allowfullscreen>
      </iframe>
 
-2021-05-19
-----------
+2021-05-{19,20}
+---------------
 
-* :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+.. list-table::
+   :align: left
+   :header-rows: 1
 
-  * Compare
+   * * Course Material
+     * Notebook Structure
+     * Notebook Download
+   * * :doc:`/trainings/material/soup/python/python_0500_files/topic`
+     * .. toctree::
 
-    * `Corinna Baumgartner
-      <https://github.com/jfasch/FH-ECE-19/blob/master/exercises/baumgartner.corinna/digit>`__
-    * `Matthias Kappel
-      <https://github.com/jfasch/FH-ECE-19/blob/master/exercises/kappel.matthias/digit>`__
+          Notebooks/2021-05-19-G1
+
+     * :download:`Notebook: 2021-05-19 <Notebooks/2021-05-19-G1.ipynb>`
+
+Reiterating on Exercise
+.......................
+
+:doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+
+* Hashbang: ``#!/usr/bin/python``
+
+  * Behnaz Mehrabadi: missing
+
+    * Program is run as a shell script
+    * Why does it take so long? Turns out that ``import`` is a
+      screenshot command.
+
+  * Anzhelika Chernykh: ``#!usr/bin/python``
+
+* Peter Kolter
+
+  .. code-block:: python
+
+     d = dict()
+     d = {0: 'zero', 1: 'one', 2: 'two', 3: 'three',4: 'four',5: 'five', 6: 'six', 7: 'seven', 8:'eight', 9: 'nine'}
+
+* Leo Moser
+
+  .. code-block:: python
+
+     if __name__ == "__main__":
+         main()
 
 Plan
 ....
@@ -345,54 +379,32 @@ Plan
 
   :doc:`/trainings/material/soup/python/draft/encoding/topic`
 
-* show argparse jjj tag on branch
+* ``argparse``, to overcome those undescriptive ``IndexError``
+  messages when a user fails to pass the correct arguments.
+* Modularization
 
-  * show branch
-  * branching tutorial
-  * argparse tutorial
-
-* show custom exception, ``StudentFailedError`` (on branch)
-
-  * show branch
-  * oo tutorial
-  * exceptions tutorial
-
-* show modularization?
-* rebase (branch from master)?
+  * Create students module
+  * Augment that with helper methods
+  * Make it executable (``if __name__ == "__main__":``)
 
 Exercise
 ........
 
-**Warming up the Raspberry**
+.. jf-topicgraph::
+   :entries: ece19.blinklicht_unittest,
+	     ece19.blinklicht_abc,
+	     ece19.blinklicht_oo,
+	     ece19.blinklicht
 
-* Something with GPIO
-* Blinklicht in Python
-* File IO
+2021-05-21
+----------
 
-  .. jf-topicgraph::
-     :entries: python.basics.python_0500_files
+Plan
+....
 
-**Exercise text**
+* Windows vs. Linux (Fr.Baumgartner)
 
-* Program ``blink``
-* Commandline
-
-  * GPIO number
-  * Interval, in seconds (as passed to ``time.sleep()``)
-
-Further Information
-...................
-
-* `Transforming Code into Beautiful, Idiomatic Python
-  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__, by **Raymond
-  Hettinger**
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/OSGv2VnC0go" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-	     allowfullscreen>
-     </iframe>
+  * "Executable" definition: ``.py`` vs. 755
+  * |longrightarrow| hash bang
+  * Interpreter path: ``/usr/bin/python`` does not exist on Windows
+  * ``\r\n`` massacre, especially inside hashbang line

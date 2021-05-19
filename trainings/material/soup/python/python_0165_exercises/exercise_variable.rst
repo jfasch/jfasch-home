@@ -1,9 +1,9 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Swap Two Variables
-============================
+Swap Two Variables
+==================
 
-.. jf-topic:: python.basics.exercises.variable
+.. jf-exercise:: python.basics.exercises.variable
    :dependencies: python.basics.exercises.boolean,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,

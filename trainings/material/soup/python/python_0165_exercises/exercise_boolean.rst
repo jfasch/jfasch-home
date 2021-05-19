@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Boolean Expressions
-=============================
+Boolean Expressions
+===================
 
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.exercises.boolean
+.. jf-exercise:: python.basics.exercises.boolean
    :dependencies: python.basics.python_0160_boolean
 
 #. What is the value of the following expression?

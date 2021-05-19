@@ -14,4 +14,4 @@ Embedded Computing 1 (ECE 19)
    plan
    cloud-computer
    log
-
+   Exercises/fh-group

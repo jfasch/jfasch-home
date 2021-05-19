@@ -1,9 +1,9 @@
 .. include:: <mmlalias.txt>
 
-Exercises: (Mixed) List, ``KeyError``
-=====================================
+(Mixed) List, ``KeyError``
+==========================
 
-.. jf-topic:: python.basics.exercises.mixed_list_keyerror
+.. jf-exercise:: python.basics.exercises.mixed_list_keyerror
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0130_syntax_etc,
 		  python.basics.python_0140_variables,

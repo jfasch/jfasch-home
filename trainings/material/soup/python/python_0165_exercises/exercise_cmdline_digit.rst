@@ -1,9 +1,9 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Digit to English Word
-===============================
+Digit to English Word
+=====================
 
-.. jf-topic:: python.basics.exercises.cmdline_digit
+.. jf-exercise:: python.basics.exercises.cmdline_digit
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0130_syntax_etc,
 		  python.basics.python_0140_variables,
