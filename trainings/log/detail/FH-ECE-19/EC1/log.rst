@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 Daily Log
 =========
 
@@ -333,14 +336,15 @@ Further Information
    :header-rows: 1
 
    * * Course Material
-     * Notebook Structure
+     * Notebook
      * Notebook Download
-   * * :doc:`/trainings/material/soup/python/python_0500_files/topic`
+   * * * :doc:`/trainings/material/soup/python/python_0500_files/topic`
+       * :doc:`/trainings/material/soup/python/python_0320_strings_methods/topic`
      * .. toctree::
 
-          Notebooks/2021-05-19-G1
+          Notebooks/2021-05-20-G2
 
-     * :download:`Notebook: 2021-05-19 <Notebooks/2021-05-19-G1.ipynb>`
+     * :download:`Notebook: 2021-05-20 (G2) <Notebooks/2021-05-20-G2.ipynb>`
 
 Reiterating on Exercise
 .......................
@@ -371,21 +375,16 @@ Reiterating on Exercise
      if __name__ == "__main__":
          main()
 
-Plan
-....
+``import argparse``
+...................
 
-* A bit on encoding. Re-iterate on exercise's use when capturing
-  ``stdout``.
+In `checker-digit
+<https://github.com/jfasch/FH-ECE-19/blob/master/bin/checker-digit>`__
+...
 
-  :doc:`/trainings/material/soup/python/draft/encoding/topic`
-
-* ``argparse``, to overcome those undescriptive ``IndexError``
-  messages when a user fails to pass the correct arguments.
-* Modularization
-
-  * Create students module
-  * Augment that with helper methods
-  * Make it executable (``if __name__ == "__main__":``)
+* overcome those undescriptive ``IndexError`` messages when a user
+  fails to pass the correct arguments.
+* Optional argument: ``--python`` (a contribution to Doze users)
 
 Exercise
 ........
@@ -404,7 +403,23 @@ Plan
 
 * Windows vs. Linux (Fr.Baumgartner)
 
-  * "Executable" definition: ``.py`` vs. 755
-  * |longrightarrow| hash bang
-  * Interpreter path: ``/usr/bin/python`` does not exist on Windows
-  * ``\r\n`` massacre, especially inside hashbang line
+  * Hashbang and CRLF massacre
+
+    * "Executable" definition: ``.py`` vs. ``755``
+    * ``755`` |longrightarrow| hash bang
+    * Windows CRLF: ``#!/usr/bin/python^M``
+    * Interpreter path: ``/usr/bin/python`` does not exist on Windows
+    * ``\r\n`` massacre, especially inside hashbang line
+
+  * Why do I have to say, ``./digit`` ?
+
+* Modules
+
+  .. code-block:: python
+
+     if __name__ == '__main__':
+         ...
+
+* Encoding. Re-iterate on exercise's use when capturing ``stdout``.
+
+  :doc:`/trainings/material/soup/python/draft/encoding/topic`

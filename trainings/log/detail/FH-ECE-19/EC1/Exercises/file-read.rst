@@ -36,13 +36,20 @@ Output
 
 The program writes to standard output one line per student record,
 
+.. note::
+
+   Please take care that the output is *exactly* as shown (spaces are
+   spaces, not tabs, for example). This greatly helps a future checker
+   script.
+
 .. code-block:: console
 
    $ path/to/repo/root/exercises/lastname.firstname/studentdb students.txt
    ...
-   MatNr: 666, Last name: Faschingbauer, First name: Jörg
    MatNr: 1810420029, Last name: Zwittnigg, First name: Florian
-   ...
+   MatNr: 666, Last name: Faschingbauer, First name: Jörg
+   $
+
 
 Further Information
 -------------------
