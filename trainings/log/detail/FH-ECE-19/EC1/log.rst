@@ -398,28 +398,82 @@ Exercise
 2021-05-21
 ----------
 
-Plan
-....
+Exercise ``digit`` (Once More)
+..............................
 
-* Windows vs. Linux (Fr.Baumgartner)
+(:doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`)
 
-  * Hashbang and CRLF massacre
+* Make it executable
 
-    * "Executable" definition: ``.py`` vs. ``755``
-    * ``755`` |longrightarrow| hash bang
-    * Windows CRLF: ``#!/usr/bin/python^M``
-    * Interpreter path: ``/usr/bin/python`` does not exist on Windows
-    * ``\r\n`` massacre, especially inside hashbang line
+  On Linux,
 
-  * Why do I have to say, ``./digit`` ?
+  .. code-block:: console
 
-* Modules
+     $ chmod 755 digit
+     $ git add digit
+
+  On Doze (there is no such *execute permissions*),
+
+  .. code-block:: console
+
+     $ git update-index --chmod=+x digit
+
+  (found on `Stackoverflow
+  <https://stackoverflow.com/questions/6476513/git-file-permissions-on-windows>`__)
+
+* Windows: hashbang and CRLF massacre
+
+  * "Executable" definition: ``.py`` vs. ``755``
+  * ``755`` |longrightarrow| hash bang
+  * Windows CRLF: ``#!/usr/bin/python^M``
+  * Interpreter path: ``/usr/bin/python`` does not exist on Windows
+  * ``\r\n`` massacre, especially inside hashbang line
+
+* Linux: Why do I have to say, ``./digit`` ?
+
+Modules
+.......
+
+* :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+* What's this?
 
   .. code-block:: python
 
      if __name__ == '__main__':
          ...
 
-* Encoding. Re-iterate on exercise's use when capturing ``stdout``.
+* Live-hack it: externalize students list into module
 
-  :doc:`/trainings/material/soup/python/draft/encoding/topic`
+.. raw:: html
+
+   <iframe width="560" height="315" 
+           src="https://www.youtube.com/embed/CqvZ3vGoGs0" 
+	   title="YouTube video player" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+   </iframe>
+
+Encoding
+........
+
+* :doc:`/trainings/material/soup/python/draft/encoding/topic`
+* Re-iterate on exercise's use when capturing ``stdout``.
+
+Notebook
+........
+
+.. list-table::
+   :align: left
+   :header-rows: 1
+
+   * * Course Material
+     * Notebook
+     * Notebook Download
+   * * * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+       * :doc:`/trainings/material/soup/python/draft/encoding/topic`
+     * .. toctree::
+
+          Notebooks/2021-05-21
+
+     * :download:`Notebook: 2021-05-21 <Notebooks/2021-05-21.ipynb>`

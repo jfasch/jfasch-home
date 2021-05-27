@@ -6,8 +6,8 @@
 		  python.basics.python_0330_strings_encoding,
 		  python.basics.python_0500_files
 
-Encoding (*incomplete*)
-=======================
+Encoding
+========
 
 .. contents::
    :local:

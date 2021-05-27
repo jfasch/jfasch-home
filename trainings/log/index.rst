@@ -20,6 +20,18 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Advanced (2021-05-25 - 2021-05-27)
+-----------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
+gebucht, zum dem Zweck, für den Test `PCAP – Certified Associate in
+Python Programming
+<https://pythoninstitute.org/certification/pcap-certification-associate/pcap-exam-syllabus/>`__
+vorzubereiten.
+
+(:doc:`Mehr ... <detail/2021-05-25/index>`)
+
 Python Grundlagen (2021-05-03 - 2021-05-05)
 -------------------------------------------
 
