@@ -419,3 +419,17 @@ Conference Talks
 	     allowfullscreen>
      </iframe>
 
+* `The Fun of Reinvention - David Beazley - Pycon Israel 2017
+  <https://www.youtube.com/watch?v=5nXmq1PsoJ0&t=1263s>`__. `David
+  Beazley <https://www.dabeaz.com/>`__ with an entertaining keynote
+  about typing, type annotations, metaprogramming, contracts.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/5nXmq1PsoJ0" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
