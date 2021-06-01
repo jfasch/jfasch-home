@@ -178,3 +178,17 @@ Further Information
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 	     allowfullscreen>
      </iframe>
+
+* `Raymond Hettinger - Super considered super! - PyCon 2015
+  <https://www.youtube.com/watch?v=EiOglTERPEo&t=1808s>`__. **Raymond
+  Hettinger**, iterating all around ``super()`` and MRO.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/EiOglTERPEo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>

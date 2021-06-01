@@ -477,3 +477,9 @@ Notebook
           Notebooks/2021-05-21
 
      * :download:`Notebook: 2021-05-21 <Notebooks/2021-05-21.ipynb>`
+
+2021-06-01
+----------
+
+.. jf-topicgraph::
+   :entries: ece19.blinklicht
