@@ -148,8 +148,8 @@ Github
 
 * If you are getting tired of entering a password for each repo
   transaction, you can always `deploy a SSH public key to Github
-  <https://github.com/settings/keys>`__, and then re-clone using the
-  SSH access method:
+  <https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh>`__,
+  and then re-clone using the SSH access method:
 
   .. code-block:: console
 
@@ -489,3 +489,10 @@ Notebook
 
 Trial exam (`see here
 <https://virtueller-campus-2020-21.fh-joanneum.at/course/view.php?id=2852#section-6>`__)
+
+Missing questions:
+
+* ``stdin`` and ``stdout`` and their relationship to the
+  pipe. ``stderr``.
+* SSH, password vs. key based authentication
+* Python: what to ask?
