@@ -109,11 +109,11 @@ Raspberry Header Pinout
 Implementation Notes
 --------------------
 
-* After exporting the GPIO (``export 25 > export``), the directory
+* After exporting the GPIO (``echo 25 > export``), the directory
   ``gpio25`` and the files it contains are not *immediately*
   visible. Rather, the operation completes *asynchronously*. This
   means that you have to *wait* between the export and the
-  access. 1/10 second should be sufficient. 
+  access. 1/10 second should be sufficient.
 
   You do this using ``time.sleep()``. Read the documentation of it.
 * A starting point, regarding the "Use ``argparse`` for commandline

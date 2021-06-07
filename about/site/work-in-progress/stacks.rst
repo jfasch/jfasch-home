@@ -41,7 +41,7 @@ https://pypi.org/project/pydbus/
   Research:
 
   * Where does ``gi`` come from? See below, ``PyGObject``.
-  * Why is there no dependency on it from ``pydbus``?
+  * Why is there no dependency on ``PyGObject`` from ``pydbus``?
 
   .. code-block:: console
 
