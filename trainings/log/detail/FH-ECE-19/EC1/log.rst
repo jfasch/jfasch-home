@@ -483,3 +483,9 @@ Notebook
 
 .. jf-topicgraph::
    :entries: ece19.blinklicht
+
+2021-06-07
+----------
+
+Trial exam (`see here
+<https://virtueller-campus-2020-21.fh-joanneum.at/course/view.php?id=2852#section-6>`__)
