@@ -116,8 +116,29 @@ Objectives covered by the block (9 items)
 * open(), errno and its values; close()
 * .read(), .write(), .readline(); readlines() (along with bytearray())
 
+2021-06-09
+----------
+
+.. literalinclude:: histogram.py
+   :caption: :download:`Download histogram.py <histogram.py>`
+
 Further Information
 -------------------
+
+* `Python Tutorial: OS Module - Use Underlying Operating System
+  Functionality <https://www.youtube.com/watch?v=tJxcKyFMTGo>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/tJxcKyFMTGo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
 
 * `Transforming Code into Beautiful, Idiomatic Python
   <https://www.youtube.com/watch?v=OSGv2VnC0go>`__, by **Raymond
@@ -179,9 +200,39 @@ Further Information
 	     allowfullscreen>
      </iframe>
 
+* `Iterations of Evolution: The Unauthorized Biography of the For-Loop
+  <https://www.youtube.com/watch?v=2AXuhgid7E4>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ giving lessons in history. How ``for``
+  evolved from the beginning until where we are today.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2AXuhgid7E4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Keynote - David Beazley
+  <https://www.youtube.com/watch?v=VUT386_GKI8>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ live coding a Web Assembly
+  interpreter. PyCon India 2019.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/VUT386_GKI8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
 * `Raymond Hettinger - Super considered super! - PyCon 2015
   <https://www.youtube.com/watch?v=EiOglTERPEo&t=1808s>`__. **Raymond
-  Hettinger**, iterating all around ``super()`` and MRO.
+  Hettinger**, revolving around ``super()`` and MRO.
 
   .. raw:: html
 

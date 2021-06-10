@@ -387,20 +387,8 @@ Git, and Github
 Conference Talks
 ----------------
 
-* `Transforming Code into Beautiful, Idiomatic Python
-  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__. **Raymond
-  Hettinger**, reiterating his favorite phrase: "There must be a
-  better way". (Hettinger is a "Python Core Developer".)
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-	     src="https://www.youtube.com/embed/OSGv2VnC0go" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-	     allowfullscreen>
-     </iframe>
+David Beazley
+.............
 
 * `Built in Super Heroes
   <https://www.youtube.com/watch?v=lyDLAutA88s>`__. `David Beazley
@@ -434,9 +422,70 @@ Conference Talks
 	     allowfullscreen>
      </iframe>
 
+* `Keynote - David Beazley
+  <https://www.youtube.com/watch?v=VUT386_GKI8>`__. David Beazley live
+  coding a Web Assembly interpreter. PyCon India 2019.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/VUT386_GKI8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Curious Course on Coroutines and Concurrency
+  <https://www.youtube.com/watch?v=Z_OAlIhXziw>`__. David Beazley,
+  entertaining as always. PyCon Chicago 2009.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/Z_OAlIhXziw" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Iterations of Evolution: The Unauthorized Biography of the For-Loop
+  <https://www.youtube.com/watch?v=2AXuhgid7E4>`__. David Beazley
+  giving lessons in history. How ``for`` evolved from the beginning
+  until where we are today.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2AXuhgid7E4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Raymond Hettinger
+.................
+
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__. **Raymond
+  Hettinger**, reiterating his favorite phrase: "There must be a
+  better way". (Hettinger is a "Python Core Developer".)
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/OSGv2VnC0go" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
 * `Raymond Hettinger - Super considered super! - PyCon 2015
   <https://www.youtube.com/watch?v=EiOglTERPEo&t=1808s>`__. **Raymond
-  Hettinger**, iterating all around ``super()`` and MRO.
+  Hettinger**, revolving around ``super()`` and MRO.
 
   .. raw:: html
 

@@ -1,5 +1,5 @@
-Hardware
-========
+Linux Hardware Interfaces
+=========================
 
 .. contents::
    :local:
@@ -19,8 +19,7 @@ Contents
 Group Description
 -----------------
 
-.. jf-group:: hardware
+.. jf-group:: linux.hardware
 
 .. jf-topicgraph::
-   :entries: hardware 
-
+   :entries: linux.hardware 

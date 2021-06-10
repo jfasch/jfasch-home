@@ -30,7 +30,7 @@ material.
      - **OpenTraining**
    * - :doc:`/trainings/repertoire/linux-basics`
      -
-     -
+     - :doc:`soup/linux/group`
    * - :doc:`/trainings/repertoire/sysprog-basics`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
@@ -45,10 +45,10 @@ material.
      - :doc:`soup/sysprog/sysprog`
    * - :doc:`/trainings/repertoire/sysprog-embedded`
      -
-     - :doc:`soup/hardware/index`
+     - :doc:`soup/linux/hardware/group`
    * - :doc:`/trainings/repertoire/raspi-hands-on`
      -
-     - :doc:`soup/hardware/index`
+     - :doc:`soup/linux/hardware/group`
    * - :doc:`/trainings/repertoire/kettner-lfs-descr`
      -
      -

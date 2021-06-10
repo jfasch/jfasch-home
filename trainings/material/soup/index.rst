@@ -15,11 +15,11 @@ The Python training has been converted to this format; :doc:`see there
 is work in progress*).
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    python/index
    cxx/cxx
-   hardware/index
+   linux/group
    sysprog/sysprog
    unittest/unittest
    kernel/index
