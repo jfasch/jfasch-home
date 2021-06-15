@@ -4,6 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2021-06-14/index
    2021-05-25/index
    2021-05-03/index
    2021-04-12/index

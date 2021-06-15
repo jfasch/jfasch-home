@@ -423,7 +423,8 @@ David Beazley
      </iframe>
 
 * `Keynote - David Beazley
-  <https://www.youtube.com/watch?v=VUT386_GKI8>`__. David Beazley live
+  <https://www.youtube.com/watch?v=VUT386_GKI8>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ live
   coding a Web Assembly interpreter. PyCon India 2019.
 
   .. raw:: html
@@ -436,9 +437,25 @@ David Beazley
 	     allowfullscreen>
      </iframe>
 
+* `Modules and Packages: Live and Let Die (Screencast)
+  <https://www.youtube.com/watch?v=bGYZEKstQuQ>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ dissecting the module loading mechanism
+  (a whopping three hours long).
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/bGYZEKstQuQ" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
 * `Curious Course on Coroutines and Concurrency
-  <https://www.youtube.com/watch?v=Z_OAlIhXziw>`__. David Beazley,
-  entertaining as always. PyCon Chicago 2009.
+  <https://www.youtube.com/watch?v=Z_OAlIhXziw>`__. `David Beazley
+  <https://www.dabeaz.com/>`__, entertaining as always. Tutorial
+  session given at PyCon Chicago 2009. (Three hours!)
 
   .. raw:: html
 
@@ -451,9 +468,9 @@ David Beazley
      </iframe>
 
 * `Iterations of Evolution: The Unauthorized Biography of the For-Loop
-  <https://www.youtube.com/watch?v=2AXuhgid7E4>`__. David Beazley
-  giving lessons in history. How ``for`` evolved from the beginning
-  until where we are today.
+  <https://www.youtube.com/watch?v=2AXuhgid7E4>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ giving lessons in history. How ``for``
+  evolved from the beginning until where we are today.
 
   .. raw:: html
 
