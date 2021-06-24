@@ -1,69 +1,200 @@
-Plan
-````
+.. include:: <mmlalias.txt>
 
-* Talk to people about further goals
+Programmieren mit C (2021-06-14 - 2021-06-18)
+=============================================
 
-  * Thanks to Julia for the feedback, war sehr angenehm
-  * Options to go into; survey
+.. sidebar:: *Training Information*
 
-    * Usage of pointers. I could try to live hack a linked list but
-      that would be an awful experience.
-    * Further details about how to structure a project. We could move
-      to github and work from there.
+   **Start**
 
-      * Explain basic problem - team work - and one possible and
-	popular solution, git
-      * Blah Linux blah Torvalds blah
-      * Mention `Github <https://github.com/>`__
-      * Mention `Team Foundation Server (TFS)
-	<https://www.it-visions.de/glossar/alle/3762/Team_Foundation_Server_TFS.aspx>`__
+   Montag 14.6.2021, 9:00
 
-    * Custom datatype definitions, ``struct``. I give an interface,
-      and per user subdirs, equipped with CMake infrastructure
-      skeletons to fill out.
-    * Copy out relevant parts of the ``struct point`` stuff into
-      (private?) repo. Options
+   **Offizielle Beschreibung**
 
-      * be alone
-        (`https://github.com/jfasch/2021-06-14/archive/refs/heads/main.zip`)
-      * work in team (`https://github.com/jfasch/2021-06-14.git`)
+   `tecTrain
+   <https://www.tectrain.at/seminare/seminar-themen/programmierung/c-grundlagen-fuer-programmierer>`__
 
-    * Explain another braindead invention inside CPP: conditional
-      acompilation using flags.
+   **Material**
 
-* Hm no
+   * Slides, :download:`C </trainings/material/pdf/050-c.pdf>`
+   * Slides, :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+   * Slides, :download:`GNU Make </trainings/material/pdf/040-gnu-make.pdf>`
+   * `Github Repository <https://github.com/jfasch/2021-06-14>`__
 
-  * Establish Git. Cross finger and what can be done with `this <https://code.visualstudio.com/docs/editor/versioncontrol>`__.
-  
-    * Work together as a team. Create private repository on github.
-    * Request people to give a github account 
-    * Short git intro
-  
-  * Establish CMake. See tutorial `here <https://www.youtube.com/watch?v=V1YP7eJHDJE>`__.
-  
-    * `Doze installation <https://cmake.org/install>`__
-    * Add CMake to path: maybe `this
-      <https://stackoverflow.com/questions/61625880/vscode-cmake-windows-10-cmake-not-in-path>`__
-      could help with ``PATH`` problems
-    
-* Fast run-through: 64-75
+   **CPA Exam**
+
+   * `Sample Questions
+     <https://cppinstitute.org/wp-content/uploads/2016/07/CPA_sample_exam_questions.pdf>`__
+
+.. contents::
+   :local:
+
+Preparation: Tools
+------------------
+
+* `C/C++ for Visual Studio Code <https://code.visualstudio.com/docs/languages/cpp>`__
+* `Get started with CMake Tools on Linux
+  <https://code.visualstudio.com/docs/cpp/cmake-linux>`__
+* `CMake download <https://cmake.org/download/>`__
+
+Log
+---
+
+Day 1
+.....
+
+* Introduction (from the :download:`C slides
+  </trainings/material/pdf/050-c.pdf>`)
+
+  * Hello World
+  * Variables and Arithmetic
+  * ``for`` Loops
+  * Symbolic Constants
+  * Character I/O
+
+* Occasional live hacking
+
+  * `hello.c <https://github.com/jfasch/2021-06-14/blob/main/hello.c>`__
+  * `fahr.c <https://github.com/jfasch/2021-06-14/blob/main/fahr.c>`__
+  * `fahr-for.c <https://github.com/jfasch/2021-06-14/blob/main/fahr-for.c>`__
+  * `wc.c
+    <https://github.com/jfasch/2021-06-14/blob/main/wc.c>`__. This is
+    going to be morphed into a formal state machine tomorrow.
+
+Day 2
+.....
+
+State machine
+`````````````
+
+It turns out that the correct solution to exercise on slide 37 of
+:download:`the slide deck </trainings/material/pdf/050-c.pdf>` is a
+*state machine*. It enables us to correctly cover all corner cases
+(e.g. multiple consecutive spaces between two words) ...
+
+  .. image:: state-machine.jpg
+     :scale: 20%
+
+* `wc.c <https://github.com/jfasch/2021-06-14/blob/main/wc.c>`__
+  became a state machine, implementing the above state chart. Using
+  ``if-then-else`` to cover the states.
+* Introduced the ``switch`` statement (slightly :-) deviating from the
+  regular course flow); changed the state maching to use that instead
+  of ``if-then-else``. See `wc-switch.c
+  <https://github.com/jfasch/2021-06-14/blob/main/wc-switch.c>`__
+
+Regular Course Topics
+`````````````````````
+
+* Introduced pre and post increment operators (again severely
+  deviating). See `pre-post-increment.c
+  <https://github.com/jfasch/2021-06-14/blob/main/pre-post-increment.c>`__.
+* Ah, arrays: leading to the "histogram" exercise (slide 41 from the
+  :download:`slides </trainings/material/pdf/050-c.pdf>`). Solution see
+  `here on Github <https://github.com/jfasch/2021-06-14/blob/main/histogram.c>`__
+* Functions. Slides 44ff. from the :download:`slides
+  </trainings/material/pdf/050-c.pdf>` (the ``power()`` function from
+  the K&R book) as a live hacking gig. `See here on Github
+  <https://github.com/jfasch/2021-06-14/blob/main/power-function.c>`__.
+* Quick :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+  intro, as a preparation for the upcoming group project. Confusing
+  people.
+
+Day 3
+.....
+
+* *Git*. See `here
+  <https://code.visualstudio.com/docs/editor/versioncontrol>`__ for
+  instructions about how to use Git with VS Code. It turns out that
+
+  * `Git Extension Pack
+    <https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack>`__
+    guides users through workflows pretty well. Staging, commits,
+    merges.
+  * Except that we appear to have problems with Github authentication,
+    which is why we use `Github Desktop
+    <https://desktop.github.com/>`__ for remote stuff like clone,
+    push, pull.
+
+* *CMake*. `Doze installation <https://cmake.org/install>`__; use the
+  MSI (the installer package).
+* Fast run-through: slides 64-75
 * Stop at enums/76: morph wc.c state machine into a perfect enum
-  candidate. This is the time to enable ``-Wswitch-enum``.
-* "Variable Definitions" section
+  candidate. This is the time to ...
 
-  * emphasize on local variables (this is what we saw so far)
-    more. Lifetime, initialization, etc.
-  * Live-hack local/global: local initialization can be anything that
-    is computed at runtime. global, otoh, can only be precomputed
-    values.
+  * Show how to use ``enum`` in the state machine from above.
+  * Enable ``-Wswitch-enum`` (nowadays included in ``-Wall``,
+    apparently) `CMakeLists.txt
+    <https://github.com/jfasch/2021-06-14/blob/main/CMakeLists.txt>`__
+  * Show how ``default:``-less ``switch`` statements, ``enum``s, and
+    ``-Wswitch-enum`` can work together and help me maintain code
+    better.
+
+  Program see `here
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/wc-switch-enum.c>`__.
+
+* "Variable Definitions" section. Slides 77ff. Emphasize on local
+  variables (this is what we saw so far) more. Lifetime,
+  initialization, etc.
 
 * Almost skip 81-88. Operators, boring.
-* Hard stop at "Type Conversions"
-  
+* Hard stop at "Type Conversions", slides 89ff. Make people run away
+  screaming (intentionally).
+
+Group Project Kick-Off :-)
+``````````````````````````
+
+Kick off "group project". Git, CMake, and team development, with
+rather artificial use cases. But anyway, these are use case. See `here
+<https://github.com/jfasch/2021-06-14/tree/main/group-project>`__.
+
+*Exercise*: in the ``group-project/`` directory,
+
+* Build a program that uses *declarations* from ``db.h``, to
+
+  * Iterate over what is in the user database |longrightarrow|
+    ``userdb`` alongside ``num_users``, *external variables*.
+  * Write CSV output.
+
+* Add build instructions to ``group-project/CMakeLists.txt``.
+* When done, commit and push to Github.
 
 Day 4
 .....
 
+Plan
+````
+
+* Reiterate on "Variable Definitions", and global vs. local. Blah
+  build system blah.
+* Hmm. Pointers. 200ff.
+
+  * Missing slide: entire address space
+
+    .. image:: address-space-and-pointers.jpg
+       :scale: 40%
+
+  * jjj live-hacking log
+
+* Group project: hmm. Pointers. Iteration maybe. As always.
+
+*Intro*
+
+``userdb`` is something that lets us do something on it. interface.
+
+* init() (not yet, lets keep it global)
+* Search by name -> strcmp()
+* Index, incl. range checking and error handling. 
+* Add maybe. Preallocate, and keep track of fill
+* Goodie: remove, collapsing. Pooh no.
+
+*Exercise*
+
+blah
+
 Day 5
 .....
 
+* ``ar cq <files>``
+* CMake
+* Project structure
