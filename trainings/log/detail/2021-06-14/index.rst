@@ -103,6 +103,9 @@ Regular Course Topics
 Day 3
 .....
 
+Development Tools (Git & CMake) Installation Massacre
+`````````````````````````````````````````````````````
+
 * *Git*. See `here
   <https://code.visualstudio.com/docs/editor/versioncontrol>`__ for
   instructions about how to use Git with VS Code. It turns out that
@@ -118,6 +121,10 @@ Day 3
 
 * *CMake*. `Doze installation <https://cmake.org/install>`__; use the
   MSI (the installer package).
+
+Regular Course Material
+```````````````````````
+
 * Fast run-through: slides 64-75
 * Stop at enums/76: morph wc.c state machine into a perfect enum
   candidate. This is the time to ...
@@ -145,7 +152,8 @@ Group Project Kick-Off :-)
 ``````````````````````````
 
 Kick off "group project". Git, CMake, and team development, with
-rather artificial use cases. But anyway, these are use case. See `here
+rather artificial use cases. But anyway, these are use cases. See
+`here
 <https://github.com/jfasch/2021-06-14/tree/main/group-project>`__.
 
 *Exercise*: in the ``group-project/`` directory,
@@ -162,39 +170,263 @@ rather artificial use cases. But anyway, these are use case. See `here
 Day 4
 .....
 
-Plan
-````
+Regular Course Material
+```````````````````````
 
-* Reiterate on "Variable Definitions", and global vs. local. Blah
-  build system blah.
-* Hmm. Pointers. 200ff.
+* Repeat ``external``, local vs. global variables, visibility
+* Pointers: 199ff from the :download:`slides
+  </trainings/material/pdf/050-c.pdf>`. Address space and pointers:
 
-  * Missing slide: entire address space
+  .. figure:: address-space-and-pointers.jpg
+     :scale: 40%
 
-    .. image:: address-space-and-pointers.jpg
-       :scale: 40%
+     Entire address space
 
-  * jjj live-hacking log
 
-* Group project: hmm. Pointers. Iteration maybe. As always.
+* Pointers: slide 203, "More Examples": `pointers.c
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/pointers.c>`__
 
-*Intro*
+  .. figure:: take-address.jpg
+     :scale: 60%
 
-``userdb`` is something that lets us do something on it. interface.
+* Slide 204ff, "Pointers as Function Parameters":
+  `pointers-as-function-parameters.c
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/pointers-as-function-parameters.c>`__
+* Slide 208ff, "Pointers and Arrays": `pointer-arrays-arithmetic.c
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/pointer-arrays-arithmetic.c>`__
+* Slide 220ff, "Commandline": `pointers-argv.c
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/pointers-argv.c>`__
+* C++: STL, Iterators, and their relation to pointer
+  arithmetic. `pointer-array-in-c++.cpp
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/pointer-array-in-c++.cpp>`__.
 
-* init() (not yet, lets keep it global)
-* Search by name -> strcmp()
-* Index, incl. range checking and error handling. 
-* Add maybe. Preallocate, and keep track of fill
-* Goodie: remove, collapsing. Pooh no.
+* ``struct`` chapter, slides 222ff
 
-*Exercise*
+  * Live-hack the ``struct point`` story from the slides. Show how an
+    API could look like. `point.c
+    <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/point.c>`__.
 
-blah
+Exercise: Encapsulate Index Access to ``userdb``
+````````````````````````````````````````````````
+
+* In your CSV export programs, replace the direct index access to
+  ``userdb`` with the API function ``db_get_user_at_index()`` from
+  ``db.h``.
+* ``userdb`` must not be seen anymore in any user code.
+
+.. figure:: pointer-to-user-struct.jpg
+   :scale: 60%
+
+Group Project (Use Case Driven Course Flow :-) )
+````````````````````````````````````````````````
+
+* Hide implementation details: use ``static`` for the ``userdb``
+  array. (More on slides 298ff.)
+* Add user record to DB. Have to use ``strcpy()``. Here a sketch of
+  the internal "organisation".
+
+  .. image:: db-extend.jpg
+     :scale: 40%
 
 Day 5
 .....
 
-* ``ar cq <files>``
-* CMake
-* Project structure
+Pointer Recap
+`````````````
+
+* ``strlen()``. `Man page <https://linux.die.net/man/3/strlen>`__
+
+  .. figure:: strlen.jpg
+     :scale: 60%
+
+* ``strcpy()``. `Man page <https://linux.die.net/man/3/strcpy>`__.
+
+  Here is how to produce undefined bahavior by allocating too less
+  space for the target string.
+
+  .. literalinclude:: strcpy-undefined-behavior.c
+     :caption: :download:`strcpy-undefined-behavior.c`
+
+  .. figure:: strcpy-overwrite.jpg
+     :scale: 60%
+
+* Pointer massacre: ``strtol()``. `Man page
+  <https://linux.die.net/man/3/strtol>`__.
+
+  Live hacking example: `str-to-int-conversion.c
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/str-to-int-conversion.c>`__
+
+  .. figure:: strtol.jpg
+     :scale: 60%
+
+On With Group Project
+`````````````````````
+
+* Show how *error codes* can be implemented
+
+  * Error code definition using an ``enum``. `db.h
+    <https://github.com/jfasch/2021-06-14/blob/main/group-project/db.h>`__,
+    ``enum Error``.
+  * Error code stringification, ``db_error_string()``.
+
+    * `db.h
+      <https://github.com/jfasch/2021-06-14/blob/main/group-project/db.h>`__,
+      declaration.
+    * `db.c
+      <https://github.com/jfasch/2021-06-14/blob/main/group-project/db.c>`__,
+      definition. Note how we are using a ``default``-less ``switch``
+      statement, together with ``-Wall`` (implicitly enabling
+      ``-Wswitch-enum``) in the `toplevel CMakeLists.txt
+      <https://github.com/jfasch/2021-06-14/blob/main/CMakeLists.txt>`__.
+
+* `Valgrind <https://www.valgrind.org/>`__. Here's a `YouTube Video
+  <https://www.youtube.com/watch?v=bb1bTJtgXrI>`__ on it.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/bb1bTJtgXrI" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* File IO: binary vs. text. Here's a `YouTube Video
+  <https://www.youtube.com/watch?v=uk61sKTgpMA>`__ on it.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/uk61sKTgpMA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* CMake: show how you build and use
+  libraries. `group-project/CMakeLists.txt
+  <https://github.com/jfasch/2021-06-14/blob/main/group-project/CMakeLists.txt>`__.
+
+Further Information
+-------------------
+
+Here's some literature :-) to study as a preparation for our upcoming
+C++ course. Unfortunately, there are no absolute high-quality tutorial
+videos out there - one reason might be that those languages are not as
+sexy anymore as, for example, Python (where you can pick your
+favorites from a large pool of high quality material).
+
+C++ Basics
+..........
+
+* `C++ Strings - Intro and Comparison to C Strings
+  <https://www.youtube.com/watch?v=qUcHK3zVp1I>`__. `Caleb Curry
+  <https://www.youtube.com/channel/UCZUyPT9DkJWmS_DzdOi7RIA>`__.
+
+ .. raw:: html
+
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/qUcHK3zVp1I" 
+	    title="YouTube video player" 
+	    frameborder="0" 
+	    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	    allowfullscreen>
+    </iframe>
+
+* `C++ Examples - Pass by Value vs Reference vs Pointer
+  <https://www.youtube.com/watch?v=minNjVO8jkM>`__. `Caleb Curry
+  <https://www.youtube.com/channel/UCZUyPT9DkJWmS_DzdOi7RIA>`__.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/minNjVO8jkM" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Pointers, Pointer Arithmetic, and the Standard Template Library (STL)
+.....................................................................
+
+* `C++ Pointers - Finally Understand Pointers
+  <https://www.youtube.com/watch?v=rtgwvkaYt1A>`__. `Caleb Curry
+  <https://www.youtube.com/channel/UCZUyPT9DkJWmS_DzdOi7RIA>`__.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/rtgwvkaYt1A" 
+	     title="YouTube video player" 
+	     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Pointer Arithmetic
+  <https://www.youtube.com/watch?v=FmptkK2XZ0w>`__. Pointer Arithmetic
+  in C; good to understand before going into C++ containers and
+  iterators.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/FmptkK2XZ0w" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `STL Containers - Learn Modern C++
+  <https://www.youtube.com/watch?v=fuI7UQ8dg1Q>`__. A somewhat boring
+  but comprehensive overview of available C++/STL datastructures *and
+  their runtime behaviour*.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/fuI7UQ8dg1Q" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `STL Vector <https://www.youtube.com/watch?v=Y29tlyp_jBA>`__.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/Y29tlyp_jBA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `STL Map <https://www.youtube.com/watch?v=kDwXAmLz47w>`__.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/kDwXAmLz47w" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `STL Set <https://www.youtube.com/watch?v=YuZPHhniZtw>`__.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/YuZPHhniZtw" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>

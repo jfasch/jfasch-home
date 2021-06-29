@@ -12,3 +12,4 @@ Work in Progress
    git
    screencast
    fh-joanneum/index
+   project-xxx/index

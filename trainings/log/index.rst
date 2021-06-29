@@ -20,6 +20,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Programmieren mit C++ (2021-07-12 - 2021-07-16)
+-----------------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/c-grundlagen-fuer-programmierer>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-07-12/index>`)
+
 Programmieren mit C (2021-06-14 - 2021-06-18)
 ---------------------------------------------
 

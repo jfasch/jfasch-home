@@ -13,13 +13,9 @@ Finish: Debian Kernel Package etc.
 Goal
 ----
 
-When all is done, we can have an easily installable Debian kernel
-package.
+When all is done, packaging is in order. Delivery of a Debian Kernel
+package is not appropriate for some reasons, so a different delivery
+mechanism has to be found. Possibilities are,
 
-Further Information
--------------------
-
-* Possible starting point: `8.6. Compiling a New Kernel
-  <https://www.debian.org/releases/jessie/amd64/ch08s06.html.en>`__
-* `The Ubuntu way
-  <https://wiki.ubuntu.com/Kernel/BuildYourOwnKernel>`__
+* A simple ``.tar`` file
+* A Git repository of some sort
