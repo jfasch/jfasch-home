@@ -27,3 +27,7 @@ Group Description
    :hidden:
 
    020-data-encapsulation/group
+   030-functions-and-methods/group
+   040-exceptions/group
+   050-templates/group
+   060-stl/group
