@@ -1,5 +1,5 @@
-Standard Template Library
-=========================
+Inheritance and Object Oriented Design
+======================================
 
 .. contents::
    :local:
@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03.stl
+.. jf-group:: cxx03.inheritance_oo
 
 .. jf-topicgraph::
-   :entries: cxx03.stl
+   :entries: cxx03.inheritance_oo
