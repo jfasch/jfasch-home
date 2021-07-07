@@ -18,8 +18,10 @@ is work in progress*).
    :maxdepth: 2
 
    python/index
+   c/group
    cxx/group
    cxx03/group
+   cxx11/group
    linux/group
    sysprog/sysprog
    unittest/unittest
