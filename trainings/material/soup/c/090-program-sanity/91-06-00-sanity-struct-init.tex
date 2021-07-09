@@ -1,0 +1,57 @@
+\subsection{Struct Initialization}
+
+% --------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Good Old Struct Initialization}
+
+  \begin{block}{}
+\begin{verbatim}
+struct person
+{
+  char fn[16];
+  char ln[16];
+  int age;
+  int height;
+};
+struct person me = { "Joerg", "Faschingbauer", 50, 172 };
+\end{verbatim}
+  \end{block}
+
+  \textbf{As always: Ambiguity}
+
+  \begin{itemize}
+  \item One can only guess as to what the initializer means
+    \begin{itemize}
+    \item Imagine somebody's name is ``Beman Dawes''
+    \item \texttt{age}? \texttt{height}? Or is it \texttt{weight}?
+    \end{itemize}
+  \item Have to lookup the definition of \texttt{struct person}
+  \end{itemize}
+
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{C99 ``Designated Initializer''}
+
+  \begin{block}{}
+\begin{verbatim}
+struct person me = {
+  .fn = "Joerg",
+  .ln = "Faschingbauer",
+  .age = 50,
+  .height = 172
+};
+\end{verbatim}
+  \end{block}
+
+  \textbf{Consequences:}
+
+  \begin{itemize}
+  \item A couple more characters of typing
+  \item Safety: when member names (semantics?) change, the compiler
+    \textit{forces} checking
+  \item \textcolor{green}{Clarity}
+  \end{itemize}
+
+\end{frame}

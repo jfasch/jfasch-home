@@ -1,0 +1,115 @@
+\subsection{\texttt{valgrind}}
+
+% --------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Valgrind}
+
+  \textbf{Valgrind: debugging at its best} (because it is so simple)
+
+  \begin{itemize}
+  \item Main target: memory errors
+  \item Writing and reading beyond array bounds
+  \item Usage of uninitialized memory
+  \item Double \texttt{free}/\texttt{delete}
+  \item Memory leaks
+  \end{itemize}
+  
+  \textbf{Drawback:} considerable execution slowdown $\to$
+  \begin{itemize}
+    \item Race conditions not easily debugged
+    \item Multithreading is hard generally
+    \item Larger programs are not easily emulated $\to$ smaller test
+      suites that are regularly checked with \texttt{valgrind}
+  \end{itemize}
+  
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind in Action (1)}
+
+  % Material/C-Advanced/Code/valgrind/off-by-one.c
+  % Material/C-Advanced/Code/valgrind/segfault.c
+
+  \textbf{There are bugs that cannot be found because they}
+
+  \begin{itemize}
+  \item \textit{almost} never occur
+  \item \textit{almost} never are visible
+  \item Cannot be reproduced in tests programs
+  \item ...
+  \end{itemize}
+
+  \begin{block}{Find the Bug!}
+\begin{verbatim}
+#include <stdlib.h>
+void main(void)
+{
+    char *bug = malloc(64);
+    bug[64] = '\0';
+}
+\end{verbatim}
+  \end{block}
+
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind in Action (2)}
+
+  \begin{block}{\texttt{valgrind} at Bug Search}
+\begin{verbatim}
+$ valgrind ./a.out 
+...
+Invalid write of size 1
+   at 0x400552: main (array-bounds-write.c:5)
+ Address 0x51bb072 is 0 bytes after a block of size 50
+   at 0x4C28C6D: malloc (vg_replace_malloc.c:236)
+   by 0x400545: main (array-bounds-write.c:4)
+...
+\end{verbatim}
+  \end{block}
+
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Valgrind in Action (3)}
+
+  \begin{block}{Memory leak}
+\begin{verbatim}
+$ valgrind --leak-check=full ./a.out 
+...
+50 bytes in 1 blocks are definitely lost in loss rec..
+   at 0x4C28C6D: malloc (vg_replace_malloc.c:236)
+   by 0x400545: main (array-bounds-write.c:4)
+...
+\end{verbatim}
+  \end{block}
+
+  $\to$ \textit{very} helpful!
+
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Valgrind: more ...}
+
+  \textbf{Uncovers many more types of errors:}
+
+  \begin{itemize}
+  \item Usage of uninitialized variables
+  \item \textit{De}allocation errors
+    (\texttt{free}/\texttt{delete}/\texttt{delete[]})
+  \item Erroneous system call usage
+  \item ...
+  \end{itemize}
+
+  \textbf{More information:}
+  \begin{itemize}
+  \item \texttt{valgrind.org}
+  \item \texttt{man valgrind} (as always)
+  \end{itemize}
+
+\end{frame}
+

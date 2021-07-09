@@ -14,6 +14,11 @@ Topics
    020-types-operators-expressions/group
    030-program-flow/group
    040-functions-and-program-structure/group
+   050-pointers-and-arrays/group
+   060-structures/group
+   070-memory/group
+   080-advanced-language-features/group
+   090-program-sanity/group
 
 Group Description
 -----------------

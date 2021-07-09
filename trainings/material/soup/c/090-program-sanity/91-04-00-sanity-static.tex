@@ -1,0 +1,152 @@
+\subsection{Visibility --- \texttt{static}}
+
+% --------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Visibility}
+
+  \textbf{Compilation unit:} the entity seen by \textit{one} compiler
+  call
+
+  \begin{itemize}
+  \item The C file that is being compiled
+  \item All included header files
+  \item Result is usually one object file
+  \end{itemize}
+
+  \textbf{Symbol resolution: }
+
+  \begin{itemize}
+  \item By compiler inside \textit{one} compilation unit
+  \item By linker \textit{across multiple} compilation units
+    \begin{itemize}
+    \item Among symbols that the linker \textit{sees}
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A Somewhat Contrived Example (1)}
+
+  Two compilation units linked into an executable ...
+
+  \begin{columns}[t]
+
+    \begin{column}{.4\textwidth}
+
+      \begin{block}{\texttt{main.c}}
+\begin{verbatim}
+#include <stdio.h>
+
+extern float avg(
+  int *begin, int *end);
+
+int main(void)
+{
+  int array[] = 
+    { 1, 2, 3, 4, 5 };
+  printf("%f\n", 
+    avg(array, array+3));
+  return 0;
+}
+\end{verbatim}
+      \end{block}
+
+    \end{column}
+
+    \begin{column}{.5\textwidth}
+      
+      \begin{block}{\texttt{avg.c}}
+\begin{verbatim}
+int sum(int *begin, int *end)
+{
+    int sum = 0;
+    while (begin < end)
+        sum += *begin++;
+    return sum;
+}
+float avg(int *begin, int *end)
+{
+    return
+      (float)sum(begin, end) /
+      (end-begin);
+}
+\end{verbatim}
+      \end{block}
+
+    \end{column}
+  
+  \end{columns}
+
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}
+  \frametitle{A Somewhat Contrived Example (2)}
+
+  \textbf{Function \texttt{sum()} in \texttt{avg.c} is
+    \textit{globally} visible}
+
+  \begin{itemize}
+  \item Anybody could \textit{declare} it and use it
+    \begin{itemize}
+    \item Linker will resolve it (that's his job)
+    \end{itemize}
+  \item Name could clash with another symbol in another compilation
+    unit
+    \begin{itemize}
+    \item Linker error (``duplicate symbol'') when linking statically
+    \item Subtle bug when using shared libraries
+    \end{itemize}
+  \item Innocent reader has to think twice
+    \begin{itemize}
+    \item ``Can I modify the function without telling anybody?''
+    \end{itemize}
+  \end{itemize}
+
+  $\to$ \textbf{Ambiguity} that needs resolution!
+
+\end{frame}
+
+% --------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{The \texttt{static} Keyword (Hooray!)}
+
+  \textbf{Solution:} \texttt{static} --- restrict visibility to the
+  compilation unit
+
+  \begin{columns}[t]
+
+    \begin{column}{.4\textwidth}
+
+      \begin{block}{\texttt{avg.c}}
+\begin{verbatim}
+static int sum(
+  int *begin, int *end)
+{
+    int sum = 0;
+    while (begin < end)
+        sum += *begin++;
+    return sum;
+}
+\end{verbatim}
+      \end{block}
+
+    \end{column}
+
+    \begin{column}{.5\textwidth}
+      \begin{itemize}
+      \item Nobody has to think twice
+      \item Nobody can use \texttt{sum} but the file it is defined in
+      \item No name clashes
+      \item \textcolor{green}{\textbf{No ambiguity!}}
+      \item \textcolor{green}{\textbf{Only readability!}}
+      \item Compiler can automatically inline the function
+      \item ... with only 6 characters of effort
+      \end{itemize}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
