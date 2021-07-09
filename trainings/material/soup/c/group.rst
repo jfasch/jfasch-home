@@ -11,6 +11,9 @@ Topics
    :maxdepth: 1
 
    010-introduction/group
+   020-types-operators-expressions/group
+   030-program-flow/group
+   040-functions-and-program-structure/group
 
 Group Description
 -----------------
