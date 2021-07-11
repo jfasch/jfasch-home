@@ -7,11 +7,13 @@ C++ 11
 Topics
 ------
 
-.. .. toctree::
-..    :maxdepth: 1
-..    :glob:
-.. 
-..    */topic
+.. toctree::
+   :maxdepth: 1
+
+   010-introduction/group
+   020-new-language-features/group
+   030-smart-pointers/group
+   040-bind-function/group
 
 Group Description
 -----------------
@@ -26,10 +28,4 @@ Group Description
 .. toctree::
    :hidden:
 
-..    020-data-encapsulation/group
-..    030-functions-and-methods/group
-..    040-exceptions/group
-..    050-templates/group
-..    060-stl-containers/group
-..    070-dynamic-memory/group
-..    100-inheritance-oo-design/group
+..   020-data-encapsulation/group

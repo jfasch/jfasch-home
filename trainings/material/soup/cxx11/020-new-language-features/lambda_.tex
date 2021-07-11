@@ -1,0 +1,101 @@
+%% \subsection{Lambda Expressions}
+%% 
+%% % ---------------------------------------------------------------------------
+%% \begin{frame}[fragile]
+%%   \frametitle{Lambda Expressions: Motivation}
+%%   
+%%   \begin{columns}[t]
+%%     
+%%     \begin{column}{.4\textwidth}
+%%       \begin{itemize}
+%%       \item E.g. \texttt{<algorithm>}: comparison function, etc.
+%%       \item Functions have to be defined \textit{elsewhere} ...
+%%       \item ... although used only once
+%%       \item $\to$ much typing
+%%       \item $\to$ loud
+%%       \end{itemize}
+%% 
+%%     \end{column}
+%% 
+%%     \begin{column}{.6\textwidth}
+%%       \begin{block}{Reverse sorting}
+%% \begin{verbatim}
+%% static bool greater(
+%%   int lhs, int rhs)
+%% { 
+%%   return lhs > rhs;
+%% }
+%% 
+%% // 2 kilometers down below ...
+%% std::sort(v.begin(), v.end(), 
+%%           greater);
+%% \end{verbatim}
+%%       \end{block}
+%%     \end{column}
+%% 
+%%   \end{columns}
+%% 
+%% \end{frame}
+%% 
+%% % ---------------------------------------------------------------------------
+%% \begin{frame}[fragile]
+%%   \frametitle{Lambda Expressions}
+%% 
+%%   \begin{itemize}
+%%   \item ``Lamda'' (Python, Perl, ...)
+%%   \item Definition \textit{is} usage
+%%   \end{itemize}
+%% 
+%%   \begin{block}{Reverse sorting: lambda version}
+%% \begin{verbatim}
+%% std::sort(v.begin(), v.end(),
+%%   [](int lhs, int rhs) { return lhs>rhs; });
+%% \end{verbatim}
+%%   \end{block}
+%%   
+%% \end{frame}
+%% 
+%% % ---------------------------------------------------------------------------
+%% \begin{frame}[fragile]
+%%   \frametitle{Lambda Expressions: Closures (1)}
+%% 
+%%   \begin{itemize}
+%%   \item Lambdas are ``Closures''
+%%   \item $\to$ ``environment'' that is ``saved'' together with a lambda
+%%     expression
+%%   \end{itemize}
+%% 
+%%   \begin{block}{Simple Closure}
+%% \begin{verbatim}
+%% void f() {
+%%   static const int min = 1, max = 2;
+%%   auto it = find_if(v.cbegin(), v.cend(), 
+%%         [](int i) { return i>min&&i<max; });
+%% }
+%% \end{verbatim}
+%%   \end{block}
+%% 
+%%   \alert{\texttt{static}} is necessary! ($\to$ lifetime)
+%%   
+%% \end{frame}
+%% 
+%% % ---------------------------------------------------------------------------
+%% \begin{frame}[fragile]
+%%   \frametitle{Lambda Expressions: Closures (2)}
+%% 
+%%   If the scope is not enough, then the environment has to be
+%%   \textit{captured} explicitly ...
+%% 
+%%   \begin{block}{Capturing}
+%% \begin{verbatim}
+%% void f() {
+%%   const int min = 1, max = 2;
+%%   auto it = find_if(v.cbegin(), v.cend(), 
+%%         [min,max](int i) { return i>min&&i<max; });
+%% }
+%% \end{verbatim}
+%%   \end{block}
+%%   
+%% \end{frame}
+%% 
+%% 

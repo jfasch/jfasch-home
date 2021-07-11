@@ -1,0 +1,458 @@
+\subsection{\texttt{std::bind}}
+
+% ---------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{\texttt{std::bind}: Why?}
+
+  \textbf{Why?} What's the problem? \linebreak
+  \textbf{Answer:} 
+
+  \begin{itemize}
+  \item Hard to explain
+  \item Best to see the problem first
+  \item Let's start small, by simple example
+  \end{itemize}
+
+  \textbf{Problem: we have ...}
+
+  \begin{itemize}
+  \item Two dimensional points \texttt{(x,y)}
+  \item A function to compute the distance between two points
+  \end{itemize}
+
+  \textbf{We want:}
+
+  \begin{itemize}
+  \item A function to compute the distance from \textit{origin}
+    \texttt{(0,0)}
+  \end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{What We Have}
+
+  \begin{block}{Point}
+\begin{verbatim}
+struct Point
+{
+  Point(double x, double y)
+    : x(x), y(y) {}
+  double x, y;
+};
+\end{verbatim}
+  \end{block}
+
+  \begin{block}{Distance}
+\begin{verbatim}
+double distance(Point p, Point q)
+{
+  return std::sqrt(
+    std::pow(std::abs(p.x-q.x), 2) + 
+    std::pow(std::abs(p.y-q.y), 2)
+  );
+}
+\end{verbatim}
+  \end{block}
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Retro C/C++}
+
+  \begin{itemize}
+  \item We have all that is needed
+  \item Could easily define a small function
+  \item $\to$ Problem solved
+  \item \textit{But this would be soo retro!}
+  \end{itemize}
+
+  \begin{block}{Distance from Origin}
+\begin{verbatim}
+double distance_origin(Point p)
+{
+  return distance(p, {0,0});
+}
+\end{verbatim}
+  \end{block}
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{The Real Problem}
+
+  \textbf{Nothing is wrong with small functions}
+
+  \begin{itemize}
+  \item Compiler will inline them
+    \begin{itemize}
+    \item ... and optimize away entirely
+    \end{itemize}
+  \item Defined centrally (public header file?) for further reuse
+  \end{itemize}
+
+  \textbf{But...}
+
+  \begin{itemize}
+  \item What if they serve \textit{only one} purpose?
+  \end{itemize}
+
+  \begin{block}{Sample Problem}
+    Compute the origin-distances of an array of points, and store
+    those in an equally sized array of \texttt{double}!
+  \end{block}
+  
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Straightforward Implementation}
+
+  Near the top of the implementation file ...
+
+  \begin{block}{One-Time Function Definition}
+\begin{verbatim}
+static double distance_origin(Point p) {
+    return distance(p, {0,0});
+}
+\end{verbatim}
+  \end{block}
+
+  And \textit{far down below}, in the implementation section ...
+  
+  \begin{block}{Location of use}
+\begin{verbatim}
+double distances_origin[sizeof(swarm)/sizeof(Point)];
+std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
+               distances_origin, 
+               distance_origin);
+\end{verbatim}
+  \end{block}
+  
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{More Sample Problems}
+
+  \begin{block}{Another Sample Problem}
+    Compute the distances of an array of points from a given point,
+    and store those in an equally sized array of \texttt{double}!
+  \end{block}
+
+  \textit{Possible solutions}: as many as there are different tastes
+  around ...
+  
+  \begin{itemize}
+  \item Lets write another stupid function, basically a copy of
+    \texttt{distance\_origin} --- only with \texttt{(1,1)} instead of
+    \texttt{(0,0)}
+  \item Even better: lets generalize! \textit{Functors!}
+    \textit{Function call operator!}
+  \end{itemize}
+  
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{More Straightforward Implementations}
+
+  \begin{block}{One-Time Functor Definition}
+\begin{verbatim}
+struct distance_point {
+  distance_point(Point origin) : origin(origin) {}
+  double operator()(Point p) const {
+      return distance(p, origin);
+  }
+  Point origin;
+};
+\end{verbatim}
+  \end{block}
+
+  \begin{block}{Location of use}
+\begin{verbatim}
+double distances_origin[sizeof(swarm)/sizeof(Point)];
+std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
+               distances_point, 
+               distance_point({1,1}));
+\end{verbatim}
+  \end{block}
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Readability}
+
+  \textit{Provided that the helper code is only used once ...}
+
+  \begin{itemize}
+  \item \textit{Readability} is inversely proportional to amount of
+    code
+  \item \textit{Number of bugs} is directly proportional to amount of
+    code
+  \item Helper implementation is nowhere near location of use
+  \item \texttt{static} is the only keyword that enhances readability
+  \end{itemize}
+
+  \textit{Similar problem with many data structures and algorithms
+    ...}
+
+  \begin{itemize}
+  \item Sorting criteria: \texttt{std::sort}, \texttt{std::map}, ...
+  \item Predicates: \texttt{std::find\_if}, \texttt{std::equal}, ...
+  \item Arbitrary adaptations where helper functions are needed
+    \begin{itemize}
+    \item Most prominent (although relatively useless nowadays):
+      \texttt{std::for\_each}
+    \end{itemize}
+  \end{itemize}
+  
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Introducing \texttt{std::bind} (1)}
+
+  \textit{Best done by example ...}
+
+  \begin{block}{}
+\begin{verbatim}
+void f(int a, int b) {
+  std::cout << a << ',' << b << std::endl;
+}
+\end{verbatim}
+  \end{block}
+
+  \begin{columns}[t]
+
+    \begin{column}{.6\textwidth}
+      \begin{block}{Direct function call}
+\begin{verbatim}
+f(1, 2);
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+    \begin{column}{.3\textwidth}
+      \begin{block}{prints ...}
+\begin{verbatim}
+1,2
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+  \end{columns}
+
+\begin{verbatim}
+\end{verbatim}
+
+\textbf{What if} we need the functionality of \texttt{f(a, b)}, but
+  are required to pass a \textit{callable} that taken no parameters?
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Introducing \texttt{std::bind} (2)}
+
+  \textbf{In other words}, we need to create a function-like object
+  that wraps \texttt{f(a,b)} that always calls \texttt{f} with, say,
+  \texttt{a=1} and \texttt{b=2}.
+
+  \begin{columns}[t]
+
+    \begin{column}{.6\textwidth}
+      \begin{block}{Hardcoded parameters}
+\begin{verbatim}
+auto bound = std::bind(f, 1, 2);
+bound();
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+    \begin{column}{.3\textwidth}
+      \begin{block}{prints ...}
+\begin{verbatim}
+1,2
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+  \end{columns}
+
+  \begin{itemize}
+  \item Alternative: manually write function adaptor (functor) that
+    remembers parameters until called
+  \item Origin: Boost (\href{www.boost.org}{www.boost.org})
+  \end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Introducing \texttt{std::bind} (3)}
+
+  \textbf{Routing parameters into arbitrary positions}:
+  \texttt{std::placeholders}
+
+  \begin{columns}[t]
+
+    \begin{column}{.6\textwidth}
+      \begin{block}{Hardcoding only second parameter}
+\begin{verbatim}
+auto bound = std::bind(f, 
+       42, std::placeholders::_1);
+bound(7);
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+    \begin{column}{.3\textwidth}
+      \begin{block}{prints ...}
+\begin{verbatim}
+42,7
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+  \end{columns}
+
+  \begin{columns}[t]
+
+    \begin{column}{.6\textwidth}
+      \begin{block}{Exchanging parameters}
+\begin{verbatim}
+auto bound = std::bind(f, 
+       std::placeholders::_2, 
+       std::placeholders::_1);
+bound(1,2);
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+    \begin{column}{.3\textwidth}
+      \begin{block}{prints ...}
+\begin{verbatim}
+2,1
+\end{verbatim}
+      \end{block}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Applying \texttt{std::bind} (1)}
+
+  \textbf{So how does this apply to our \texttt{std::transform}
+    problem?}
+
+  \begin{itemize}
+  \item Readability: we want to eliminate those annoying extra helper
+    functions
+  \item Want to wrap existing \texttt{double distance(Point, Point)}
+    which is similar in purpose but does not fit exactly
+  \end{itemize}
+
+  \begin{block}{What we have ...}
+\begin{verbatim}
+struct Point {...};
+double distance(Point, Point);
+\end{verbatim}
+  \end{block}
+
+  \begin{block}{What we want ...}
+\begin{verbatim}
+std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
+               distances_point, 
+               SOMETHING WHICH TAKES ONE POINT);
+\end{verbatim}
+  \end{block}
+  
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{Applying \texttt{std::bind} (2)}
+
+  \begin{block}{Distances from origin}
+\begin{verbatim}
+std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
+               distances_origin, 
+               std::bind(distance, 
+                  Point{0,0}, std::placeholders::_1));
+\end{verbatim}
+  \end{block}
+  
+  \begin{block}{Distances from any point}
+\begin{verbatim}
+// this is exactly the same as above
+\end{verbatim}
+  \end{block}
+
+  \begin{columns}[t]
+  \end{columns}
+
+  \textbf{Summary}
+
+  \begin{itemize}
+  \item Readability: what remains unreadable is only the language
+    itself
+  \item Have to get used to \texttt{std::bind}
+  \end{itemize}
+
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{\texttt{std::bind} vs. Lambda}
+
+  \textbf{Lambdas are usually a better alternative} ...
+
+  \begin{block}{}
+\begin{verbatim}
+std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
+               distances_origin, 
+               [](Point p) { return distance({0,0}, p); });
+\end{verbatim}
+  \end{block}
+
+  \begin{block}{A more advanced exercise}
+    Use \texttt{std::sort} to sort an array of points by their
+    distance to a given point.
+  \end{block}
+  
+\end{frame}
+
+% ---------------------------------------------------------------------------
+\begin{frame}[fragile]
+  \frametitle{A Bigger Picture: Types}
+
+  \textbf{What about types?}
+
+  \begin{itemize}
+  \item Goal is to have \textit{no runtime overhead}
+  \item $\implies$ \textit{Late binding (polymorphism)} ruled out
+  \item $\implies$ No common base class
+  \item Only the call signatures (parameter and return types) are the
+    same
+  \end{itemize}
+
+  \textbf{What does this mean?}
+
+  \begin{itemize}
+  \item Perfect for \texttt{<algorithm>} which is also designed for
+    speed
+  \item Have to be careful when code size is important
+  \item Client code has to be instantiated with the type
+  \item \textbf{Tradeoff}: speed, code size, elegance, design, taste
+    ...
+  \end{itemize}
+    
+\end{frame}
