@@ -86,7 +86,7 @@ Valgrind: more ...
 **Uncovers many more types of errors:**
 
 * Usage of uninitialized variables
-* \textit{De}allocation errors (\texttt{free}/\texttt{delete}/\texttt{delete[]})
+* *De*-allocation errors (``free``/``delete``/``delete[]``)
 * Erroneous system call usage
 * ...
 

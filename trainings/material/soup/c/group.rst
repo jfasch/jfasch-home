@@ -19,6 +19,8 @@ Topics
    070-memory/group
    080-advanced-language-features/group
    090-program-sanity/group
+   100-performance/group
+   110-profiling/group
 
 Group Description
 -----------------
