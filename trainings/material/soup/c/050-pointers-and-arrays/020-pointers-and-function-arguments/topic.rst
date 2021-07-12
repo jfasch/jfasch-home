@@ -7,6 +7,9 @@
 Pointers as Function Parameters
 ===============================
 
+.. contents::
+   :local:
+
 Call by Reference (1)
 ---------------------
 

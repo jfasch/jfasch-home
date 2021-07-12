@@ -3,8 +3,11 @@
 .. jf-topic:: c.structures.basics
    :dependencies: c.pointers_and_arrays.command_line_arguments
 
-Basics
-======
+``struct``: Basics
+==================
+
+.. contents::
+   :local:
 
 ``struct``: Compound Datatypes
 ------------------------------

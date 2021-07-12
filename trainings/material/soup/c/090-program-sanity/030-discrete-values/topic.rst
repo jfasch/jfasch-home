@@ -7,6 +7,9 @@
 Discrete Values - ``enum``
 ==========================
 
+.. contents::
+   :local:
+
 Discrete Values
 ---------------
 

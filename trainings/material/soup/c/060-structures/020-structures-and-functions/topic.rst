@@ -4,8 +4,11 @@
    :dependencies: c.structures.basics
 
 
-``struct``, Functions
+``struct``: Functions
 =====================
+
+.. contents::
+   :local:
 
 Parameters and Return (1)
 -------------------------

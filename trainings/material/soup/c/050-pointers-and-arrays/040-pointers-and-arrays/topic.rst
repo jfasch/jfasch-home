@@ -7,6 +7,9 @@
 Pointers and Arrays
 ===================
 
+.. contents::
+   :local:
+
 It's Only Memory
 ----------------
 

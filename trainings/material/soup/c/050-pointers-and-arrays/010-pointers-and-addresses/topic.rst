@@ -7,6 +7,9 @@
 Pointers and Addresses
 ======================
 
+.. contents::
+   :local:
+
 Pointers: Basics
 ----------------
 
