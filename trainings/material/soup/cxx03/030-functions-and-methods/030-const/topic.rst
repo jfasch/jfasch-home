@@ -13,10 +13,11 @@
 **Already possible in C:** immutable variables
 
 .. list-table::
+   :align: left
 
    * * .. code-block::
 
-          const point *p;
+          const struct point *p;
 	  p->x = 7;       // ERROR!!
 
      * Variables |longrightarrow| modification impossible
@@ -38,6 +39,7 @@
   modifies the object
 
 .. list-table:: 
+   :align: left
 
    * * .. code-block:: c++
 

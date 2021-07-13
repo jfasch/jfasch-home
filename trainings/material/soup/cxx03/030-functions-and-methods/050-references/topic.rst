@@ -17,6 +17,7 @@ Pointers, Seen Differently: References (1)
   large, but you get the point)
 
 .. list-table::
+   :align: left
 
    * * .. code-block:: c++
 
@@ -44,6 +45,7 @@ Pointers, Seen Differently: References (2)
 ------------------------------------------
 
 .. list-table::
+   :align: left
 
    * * Definition
      * Usage
@@ -82,6 +84,7 @@ Pointers, Seen Differently: References (3)
 Long story short ...
 
 .. list-table::
+   :align: left
 
    * * Definition
      * Usage

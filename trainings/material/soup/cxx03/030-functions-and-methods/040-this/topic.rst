@@ -35,6 +35,7 @@ Hidden Pointer: ``this`` (2)
 **How would this be done in C?**
 
 .. list-table::
+   :align: left
    :header-rows: 1
 
    * * C++

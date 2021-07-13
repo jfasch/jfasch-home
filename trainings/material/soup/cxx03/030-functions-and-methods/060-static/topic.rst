@@ -36,6 +36,7 @@ Methods without Object - ``static`` (2)
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage

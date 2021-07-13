@@ -102,7 +102,7 @@ Pointer Arithmetic (3)
 
    * * .. code-block:: c
      
-          *pa = a + 4;
+          pa = a + 4;  // or "pa += 4"
 	  pa -= 2;
 	  i = *pa; /* ok */
 
@@ -112,7 +112,7 @@ Pointer Arithmetic (3)
 
    * * .. code-block:: c
 
-          *pa = a - 1;
+          pa = a - 1;
           pa += 2;
           i = *pa; /* ok */
 
@@ -131,7 +131,7 @@ Pointer Arithmetic: Difference
    * * .. code-block:: c
 
           p = &a[0];
-          q = &a[2];
+          q = &a[3];   // *one past* last valid element
           num = q - p; /* 2 */
 
      * 

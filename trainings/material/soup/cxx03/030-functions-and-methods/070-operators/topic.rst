@@ -40,6 +40,7 @@ Example: Operator ``+=`` *on the Object* (1)
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -68,6 +69,7 @@ Example: Operator ``+=`` *on the Object* (2)
 --------------------------------------------
 
 .. list-table::
+   :align: left
 
    * * .. code-block:: c++
 
@@ -110,6 +112,7 @@ Example: Operator ``+`` *not* on the Object (2)
 -----------------------------------------------
 
 .. list-table::
+   :align: left
 
    * * .. code-block:: c++
 
@@ -187,6 +190,7 @@ Example: Function Objects - *Functors* (3)
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
