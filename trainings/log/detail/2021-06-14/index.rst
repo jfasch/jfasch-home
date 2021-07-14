@@ -265,15 +265,15 @@ On With Group Project
 * Show how *error codes* can be implemented
 
   * Error code definition using an ``enum``. `db.h
-    <https://github.com/jfasch/2021-06-14/blob/main/group-project/db.h>`__,
+    <https://github.com/jfasch/2021-06-14/blob/main/db-c/db.h>`__,
     ``enum Error``.
   * Error code stringification, ``db_error_string()``.
 
     * `db.h
-      <https://github.com/jfasch/2021-06-14/blob/main/group-project/db.h>`__,
+      <https://github.com/jfasch/2021-06-14/blob/main/db-c/db.h>`__,
       declaration.
     * `db.c
-      <https://github.com/jfasch/2021-06-14/blob/main/group-project/db.c>`__,
+      <https://github.com/jfasch/2021-06-14/blob/main/db-c/db.c>`__,
       definition. Note how we are using a ``default``-less ``switch``
       statement, together with ``-Wall`` (implicitly enabling
       ``-Wswitch-enum``) in the `toplevel CMakeLists.txt

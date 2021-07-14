@@ -32,6 +32,9 @@ The C++ Programming Language (2021-07-12 - 2021-07-16)
       * * CMake
 	* :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
 	*
+      * * Make
+	* :download:`Make </trainings/material/pdf/040-gnu-make.pdf>`
+	*
       * * Design Patterns
 	* :download:`Design Patterns </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 	*
@@ -181,8 +184,50 @@ Regular Topics
   * :doc:`/trainings/material/soup/cxx03/060-stl-containers/040-sequential-containers/topic`
   * :doc:`/trainings/material/soup/cxx03/060-stl-containers/050-associative-containers/topic`
 
+Toolchain: C/C++ Build (How Complicated Can Things Be?)
+.......................................................
+
+  .. list-table::
+     :align: left
+
+     * * 
+         .. image:: wacom-sketches/include-graph.png
+	    :scale: 50%
+
+       * Trying to get ``#include`` dependencies right. Respectively,
+         what you're up to when you want to write a ``Makefile`` (or
+         more of those) :download:`by hand </trainings/material/pdf/040-gnu-make.pdf>`.
+
+     * * 
+         .. image:: wacom-sketches/toolchain-cmake.png
+	    :scale: 50%
+
+       * Using :doc:`CMake </trainings/repertoire/cmake>` to do manage
+         the build. What is still left to the developer is to define "module"
+         dependencies.
+
+Exercises: Using the C++ Toolbox
+................................
+
+* Starting to morph the `"user database" from the C course
+  <https://github.com/jfasch/2021-06-14/tree/main/db-c>`__ (a month
+  ago) into `something more object oriented
+  <https://github.com/jfasch/2021-06-14/tree/main/db-cpp>`__.
+
 Day 4
 -----
+
+Unit Testing, Formally
+......................
+
+Current state is, we're writing one program to test one
+aspect/requirement. This is something that can be `formalized
+<https://www.amazon.de/Test-Driven-Development-Example-Signature/dp/0321146530>`__
+(/me big fan of things that are so simple).
+
+Install `Google's unittesting framework (on Doze, sadly)
+<https://medium.com/swlh/google-test-installation-guide-for-c-in-windows-for-visual-studio-code-2b2e66352456>`__,
+and start to use it.
 
 * Debugging: how to, using VS Code *and* CMake
 * GraphObj things, brought about by Tirol-Daniel. Polymorphism to be
