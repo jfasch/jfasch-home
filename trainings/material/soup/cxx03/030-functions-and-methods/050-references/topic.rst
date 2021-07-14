@@ -68,20 +68,17 @@ Pointers, Seen Differently: References (2)
 	  point b(2, 3);
 	  float dist = a.distance(&b);
 
-
-**Problem**
-
-* User has to take the address
-* Pointers can be ``NULL``
-
-**Solution**
-
-* References
+       **Problem**
+       
+       * User has to take the address
+       * Pointers can easily be ``NULL``
+       
+       **Solution**
+       
+       * References
 
 Pointers, Seen Differently: References (3)
 ------------------------------------------
-
-Long story short ...
 
 .. list-table::
    :align: left
@@ -106,3 +103,10 @@ Long story short ...
           point a(1,2);
 	  point b(2, 3);
 	  float dist = a.distance(b);
+
+       **Pretty, because ...**
+
+       * Looks like ordinary parameter passing
+       * *Compiler* takes the address |longrightarrow| physically, a
+         pointer is passed
+       * ``NULL`` pointer passing (nearly) impossible

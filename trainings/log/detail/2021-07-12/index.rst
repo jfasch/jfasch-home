@@ -150,13 +150,62 @@ Regular Topics
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
 
+Exercises
+.........
+
+  * ``point::operator==()``
+  * ``rect::operator+=()``
+  * ``static double point::distance(const point&, const point&)``
+
 Day 3
 -----
 
-* Debugging: how to, using VS Code *and* CMake
+Exercises
+.........
+
+Finish exercises from day 2
+
+Regular Topics
+..............
+
+* Templates
+
+  * :doc:`/trainings/material/soup/cxx03/050-templates/010-function-templates/topic`
+  * :doc:`/trainings/material/soup/cxx03/050-templates/020-class-templates/topic`
+
+* Standard Template Library: Container Templates
+
+  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/010-basics/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/020-sorting/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/030-searching/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/040-sequential-containers/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/050-associative-containers/topic`
 
 Day 4
 -----
+
+* Debugging: how to, using VS Code *and* CMake
+* GraphObj things, brought about by Tirol-Daniel. Polymorphism to be
+  done.
+
+  .. list-table::
+     :align: left
+
+     * *
+
+         .. image:: wacom-sketches/graphobj-uml.png
+	    :scale: 50%
+
+     * *
+
+         .. image:: wacom-sketches/graphobj-layout.png
+	    :scale: 50%
+
+     * *
+
+         .. image:: wacom-sketches/graphobj-segv.png
+	    :scale: 50%
+
 
 Day 5
 -----
@@ -189,28 +238,6 @@ TODO
   * Exercise ``circle``, ``sphere``, ``rect`` in the middle.
   * Resource management separated, as a preparation to what follows:
     :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy/topic`
-
-* GraphObj things, brought about by Tirol-Daniel. Polymorphism to be
-  done.
-
-  .. list-table::
-     :align: left
-
-     * *
-
-         .. image:: wacom-sketches/graphobj-uml.png
-	    :scale: 50%
-
-     * *
-
-         .. image:: wacom-sketches/graphobj-layout.png
-	    :scale: 50%
-
-     * *
-
-         .. image:: wacom-sketches/graphobj-segv.png
-	    :scale: 50%
-
 
 * Exercise series
 
