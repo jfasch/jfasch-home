@@ -55,3 +55,8 @@ Call by Reference (2)
        f(&i);
    }
 
+.. figure:: call-by-reference.png
+
+   A sketch of that matter (made on a Wacom-tablet during :doc:`one
+   course </trainings/log/detail/2021-07-12/index>`)
+

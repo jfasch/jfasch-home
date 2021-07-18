@@ -19,6 +19,7 @@ is work in progress*).
 
    python/index
    c/group
+   cxx-todo/index
    cxx/group
    cxx03/group
    cxx11/group

@@ -13,7 +13,6 @@ Topics
    010-introduction/group
    020-new-language-features/group
    030-smart-pointers/group
-   040-bind-function/group
 
 Group Description
 -----------------

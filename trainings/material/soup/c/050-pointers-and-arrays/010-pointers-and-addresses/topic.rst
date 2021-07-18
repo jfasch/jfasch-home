@@ -20,9 +20,21 @@ Pointers: Basics
 * Simple in theory
 * Practically difficult and dangerous
 
-.. figure:: 05-01-pointer-to-int.dia
+**Pointer to integer (64 bit)**
 
-   Pointer to integer (64 bit)
+.. list-table::
+   :align: left
+
+   * * 
+
+       .. image:: 05-01-pointer-to-int.dia
+
+     * 
+       .. figure:: addrspace.png
+
+	  Showing the entire address space (``0..2^64-1``) (a Wacom
+	  sketch, made during :doc:`a course
+	  </trainings/log/detail/2021-07-12/index>`)
 
 Pointer: Operators
 ------------------

@@ -217,8 +217,13 @@ Exercises: Using the C++ Toolbox
 Day 4
 -----
 
-Unit Testing, Formally
-......................
+Finish First "User Database" Functionality
+..........................................
+
+* ``UserDB::has_lastname()``, using ``std::find_if()``
+
+Unit Testing
+............
 
 Current state is, we're writing one program to test one
 aspect/requirement. This is something that can be `formalized
@@ -228,6 +233,106 @@ aspect/requirement. This is something that can be `formalized
 Install `Google's unittesting framework (on Doze, sadly)
 <https://medium.com/swlh/google-test-installation-guide-for-c-in-windows-for-visual-studio-code-2b2e66352456>`__,
 and start to use it.
+
+GTest Installation
+..................
+
+Clone `GitHub repository <https://github.com/google/googletest>`__:
+
+.. code-block:: console
+
+   $ git clone https://github.com/google/googletest.git
+
+**Build**
+
+* Build with VS Code: open directory, and hit CMake build botton
+* Build by hand
+
+.. code-block:: console
+
+   $ cd googletest
+   $ cmake .
+
+**Install**
+
+* Copy ``lib/*.a`` to MinGW installation ``..../lib`` directory
+* Copy ``include/gtest/`` to MinGW installation ``..../include``
+  directory
+
+Git Workflows
+.............
+
+.. list-table::
+   :align: left
+
+   * * **Central workflow**. Much like SVN's, except that local
+       commits are possible.
+
+       .. image:: wacom-sketches/git-workflow-central.png
+	  :scale: 50%
+
+   * * **Distributed workflow**. (At least, one
+       possibility). Resembles Github "pull requests".
+
+       .. image:: wacom-sketches/git-workflow-distributed.png
+	  :scale: 50%
+
+Exercises
+.........
+
+* Torture them with even more requirements that they need to implement
+
+Regular Topics
+..............
+
+* `Functors
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/functor.cpp>`__
+* Exceptions
+
+  * :doc:`/trainings/material/soup/cxx03/040-exceptions/010-basics/topic`
+  * :doc:`/trainings/material/soup/cxx03/040-exceptions/020-try-catch/topic`
+
+  Live-hacked, rudimentarily, into our project. See `here
+  <https://github.com/jfasch/2021-06-14/blob/main/db-cpp/db-find.cpp>`__
+  for the *exception handling* part.
+
+Day 5
+-----
+
+* References recap
+  (:doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`)
+* ``explicit``: another C++ trap/bug (automatic conversion), fixed by
+  an ad-hoc solution - the ``explicit`` keyword, bolted onto what's
+  there. `Here's
+  <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/explicit.cpp>`__
+  a live-hacked explanation of it.
+
+  It has gotten a bit larger becauser I used it as an introduction to
+  recource management and smart pointers.
+* Pointer classes ("smart pointers")
+
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/020-unique-ptr/topic`
+
+    Although ``std::unique_ptr<>`` is the simpler of the two in what
+    it does, its usage is more involved. Ownership transfer (this is
+    what I like about it) is implemented using the outright genius
+    :doc:`"move" mechanism (since C++11)
+    </trainings/material/soup/cxx11/020-new-language-features/060-move/topic>`,
+    and one needs to know a bit when the compiler fails to enforce the
+    ownership transfer contract.
+
+    Live-hacked that `here
+    <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/unique_ptr.cpp>`__.
+
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/030-shared-ptr/topic`
+
+    Didn't go through it in great detail (time was over
+    anyway). Shared ownership, though, is easier explained than
+    *unique* ownership: "just don't think about it". (Should have
+    mentioned reference cycles, to make things more complicated :-) ).
+
+What's Left
+...........
 
 * Debugging: how to, using VS Code *and* CMake
 * GraphObj things, brought about by Tirol-Daniel. Polymorphism to be
@@ -250,47 +355,3 @@ and start to use it.
 
          .. image:: wacom-sketches/graphobj-segv.png
 	    :scale: 50%
-
-
-Day 5
------
-
-Further Information
--------------------
-
-TODO
-----
-
-* Add wacom sketches to slide material
-
-  * Linear address space ->
-    :doc:`/trainings/material/soup/c/050-pointers-and-arrays/010-pointers-and-addresses/topic`
-
-    .. image:: wacom-sketches/addrspace.png
-       :scale: 30%
-
-  * Call by reference ->
-    :doc:`/trainings/material/soup/c/060-structures/020-structures-and-functions/topic`
-
-    .. image:: wacom-sketches/call-by-reference.png
-       :scale: 30%
-
-* Split
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor/topic`
-  in two.
-
-  * Plain ctor, initializer list.
-  * Exercise ``circle``, ``sphere``, ``rect`` in the middle.
-  * Resource management separated, as a preparation to what follows:
-    :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy/topic`
-
-* Exercise series
-
-  * point in C
-  * point in C++, members and ctors
-  * shapes, based upon point (circle, triangle, rectangle, ...)
-
-    * access methods
-
-  * const correctness
-  * operator overloading
