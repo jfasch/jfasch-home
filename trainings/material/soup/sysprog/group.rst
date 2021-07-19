@@ -16,6 +16,7 @@ Topics
    :maxdepth: 1
    :glob:
 
+   posix-threads/group
    */topic
 
 Group Description

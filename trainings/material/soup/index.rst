@@ -24,7 +24,7 @@ is work in progress*).
    cxx03/group
    cxx11/group
    linux/group
-   sysprog/sysprog
+   sysprog/group
    unittest/unittest
    kernel/index
    graph
