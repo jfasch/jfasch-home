@@ -9,6 +9,13 @@ Layout Test Page
 Admonitions
 -----------
 
+Admonition
+..........
+
+.. admonition:: This is an ``.. admonition::``
+
+   blah blah blah blah blah blah blah blah blah blah blah blah blah
+
 Tip
 ...
 

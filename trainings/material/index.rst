@@ -42,7 +42,7 @@ material.
      -
    * - :doc:`/trainings/repertoire/sysprog-fortgeschrittenes`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
-     - :doc:`soup/sysprog/sysprog`
+     - :doc:`soup/sysprog/group`
    * - :doc:`/trainings/repertoire/sysprog-embedded`
      -
      - :doc:`soup/linux/hardware/group`
