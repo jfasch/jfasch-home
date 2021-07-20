@@ -4,6 +4,7 @@ Work in Progress
 .. toctree::
    :maxdepth: 1
 
+   web
    python-training
    stacks
    seo

@@ -1,20 +1,6 @@
 This Site
 =========
 
-.. toctree::
-   :maxdepth: 1
-
-   listed-at
-   opentraining/index
-   work-in-progress/index
-   recipes
-   layout-test
-   courses/index
-   mathml
-   isoamsa
-   isoamsr
-   isonum
-
 This is work in progress (and will always be, like any software).
 
 * Progress is happening on `Github
@@ -31,5 +17,13 @@ This is work in progress (and will always be, like any software).
   content, with an eye towards structure and built-in link consistency
   (it won't let me break connections by just moving documents around).
 * :doc:`Work in progress is tracked here <work-in-progress/index>`.
-* :doc:`Here are recipes (for example, Jupyter Notebook do's and
-  don'ts) <recipes>`
+
+.. toctree::
+   :maxdepth: 1
+
+   opentraining/index
+   work-in-progress/index
+   recipes/index
+   courses/index
+   org/index
+

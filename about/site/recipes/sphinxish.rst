@@ -1,5 +1,5 @@
-Recipes
-=======
+Sphinxish
+=========
 
 Jupyter Notebooks
 -----------------
