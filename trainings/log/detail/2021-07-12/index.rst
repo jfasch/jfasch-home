@@ -331,10 +331,12 @@ Day 5
     *unique* ownership: "just don't think about it". (Should have
     mentioned reference cycles, to make things more complicated :-) ).
 
-What's Left
-...........
+Day X
+-----
 
-* Debugging: how to, using VS Code *and* CMake
+* Mocking: Unittesting ohne schwere Abhängigkeiten
+* Projektstruktur: Modulabhängigkeiten, Packaging, Release Management
+* OO Design, Polymorphism ("virtual" und so), Design Patterns (ansatzweise)
 * GraphObj things, brought about by Tirol-Daniel. Polymorphism to be
   done.
 

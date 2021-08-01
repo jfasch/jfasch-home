@@ -11,7 +11,8 @@ In the Works
    :maxdepth: 1
 
    sphinx
-
+   franken-tour/index
+   desktop/index
 
 Not Yet in the Works
 ....................

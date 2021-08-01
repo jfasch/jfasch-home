@@ -20,6 +20,17 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
+--------------------------------------------------------------
+
+Der Kurs fand online mittels :doc:`Microsoft Teams
+</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-08-02/index>`)
+
 Programmieren mit C++ (2021-07-12 - 2021-07-16)
 -----------------------------------------------
 
@@ -55,7 +66,7 @@ Programmierung Grundlagen, anhand von Python (12. und 13.4.2021)
 Der Kurs fand online mittels :doc:`Microsoft Teams
 </blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
-<https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
 gebucht.
 
 (:doc:`Mehr ... <detail/2021-04-12/index>`)

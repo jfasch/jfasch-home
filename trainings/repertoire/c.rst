@@ -16,11 +16,6 @@ C: Einführung
       Dauer, 5 Tage
       PDF Slides, :download:`C </trainings/material/pdf/050-c.pdf>`
 
-   **Termine**
-
-   * 4.5.2020 - 8.5.2020, Wiener Neustadt, `Linuxcampus.net
-     <https://www.linuxcampus.net/kurs/details/10-c-grundlagen>`__
-
 Der `Bibel von Brian Kernighan und Dennis Ritchie
 <http://de.wikipedia.org/wiki/The_C_Programming_Language>`__ kann man
 nichts hinzufügen. Der "Erfinder" von C, Dennis Ritchie, kann wohl am
