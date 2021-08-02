@@ -140,8 +140,8 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - :doc:`/trainings/material/soup/python/python_0193_while/topic`
      - 7.10 Kopfgesteuerte bedingte Schleife
      - Meins gewinnt
-   * - * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
-       * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_even_numbers`
+   * - * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_even_numbers`
+       * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
      -
      - 7.15 Übungen
        - Übung 4: Gerade Zahlen in der Konsole anzeigen

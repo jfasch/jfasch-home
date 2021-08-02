@@ -1,9 +1,9 @@
 .. include:: <mmlalias.txt>
 
-Exercises: Lists, Loops, Functions
-==================================
+Lists, Loops, Functions
+=======================
 
-.. jf-topic:: python.basics.exercises.python_0275_exercises
+.. jf-exercise:: python.basics.exercises.python_0275_exercises
    :dependencies: python.basics.exercises.while_primeness,
 		  python.basics.python_0193_while,
 		  python.basics.python_0220_for,

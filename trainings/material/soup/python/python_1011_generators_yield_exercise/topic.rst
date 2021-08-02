@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Generators
-====================
+Generators
+==========
 
 .. contents::
    :local:
 
-.. jf-topic:: python.python_1011_generators_yield_exercise
+.. jf-exercise:: python.python_1011_generators_yield_exercise
    :dependencies: python.python_1010_generators_yield
 
 Exercise: Fibonacci

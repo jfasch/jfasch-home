@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Greeting, Depending on Time of Day
-============================================
+Greeting, Depending on Time of Day
+==================================
 
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.exercises.greeting
+.. jf-exercise:: python.basics.exercises.greeting
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,

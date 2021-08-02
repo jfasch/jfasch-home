@@ -1,9 +1,9 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Primeness (``for``)
-=============================
+Primeness (``for``)
+===================
 
-.. jf-topic:: python.basics.exercises.for_primeness
+.. jf-exercise:: python.basics.exercises.for_primeness
    :dependencies: python.basics.python_0220_for,
 		  python.basics.exercises.while_primeness
 

@@ -1,9 +1,9 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Primeness (Function)
-==============================
+Primeness (Function)
+====================
 
-.. jf-topic:: python.basics.exercises.function_primeness
+.. jf-exercise:: python.basics.exercises.function_primeness
    :dependencies: python.basics.exercises.for_primeness,
 		  python.basics.exercises.max_numbers_function,
 		  python.basics.python_0270_functions

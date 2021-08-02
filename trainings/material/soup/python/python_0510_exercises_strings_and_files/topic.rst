@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Exercises: Strings, Files, ...
-==============================
+Strings, Files, ...
+===================
 
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.exercises.python_0510_exercises_strings_and_files
+.. jf-exercise:: python.basics.exercises.python_0510_exercises_strings_and_files
    :dependencies: python.basics.exercises.python_0350_exercises, 
 		  python.basics.python_0500_files
 

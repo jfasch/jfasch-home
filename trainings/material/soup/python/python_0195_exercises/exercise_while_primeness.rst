@@ -1,9 +1,9 @@
 .. include:: <mmlalias.txt>
 
-Exercises: Primeness (``while``)
-================================
+Primeness (``while``)
+=====================
 
-.. jf-topic:: python.basics.exercises.while_primeness
+.. jf-exercise:: python.basics.exercises.while_primeness
    :dependencies: python.basics.python_0193_while,
 		  python.basics.exercises.while_even_numbers
 
