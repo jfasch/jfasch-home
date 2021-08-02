@@ -357,3 +357,18 @@ Day X
 
          .. image:: wacom-sketches/graphobj-segv.png
 	    :scale: 50%
+
+
+.. .. jjjjjjj
+.. .. 
+.. .. 
+.. .. oo-composite-fs.png
+.. .. oo-composite-objects.png
+.. .. oo-composite-shape2.png
+.. .. oo-composite-shape.png
+.. .. oo-interface.png
+.. .. oo-object-sizes.png
+.. .. oo-vector-of-pointer.png
+.. .. ptr-shared.png
+.. .. ptr-unique.png
+.. .. uml-has-a.png
