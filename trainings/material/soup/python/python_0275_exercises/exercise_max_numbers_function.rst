@@ -6,8 +6,8 @@ Determine Maximum of Two Numbers (Function)
 .. contents::
    :local:
 
-.. jf-exercise:: python.basics.exercises.max_numbers_function
-   :dependencies: python.basics.exercises.max_numbers,
+.. jf-exercise:: python.exercises.max_numbers_function
+   :dependencies: python.exercises.max_numbers,
 		  python.basics.python_0270_functions
 
 
@@ -27,4 +27,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.max_numbers_function
+   :entries: python.exercises.max_numbers_function

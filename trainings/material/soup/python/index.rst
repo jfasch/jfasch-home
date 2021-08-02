@@ -28,7 +28,7 @@ Contents
    :maxdepth: 1
 
    python-basics
-   python-basics-exercises
+   python-exercises
    python-swdev
    python-db
    fullgraph

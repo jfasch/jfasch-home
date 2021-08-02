@@ -6,8 +6,8 @@ Strings, Files, ...
 .. contents::
    :local:
 
-.. jf-exercise:: python.basics.exercises.python_0510_exercises_strings_and_files
-   :dependencies: python.basics.exercises.python_0350_exercises, 
+.. jf-exercise:: python.exercises.python_0510_exercises_strings_and_files
+   :dependencies: python.exercises.python_0350_exercises, 
 		  python.basics.python_0500_files
 
 Exercises (1)

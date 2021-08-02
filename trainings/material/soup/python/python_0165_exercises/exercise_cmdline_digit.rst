@@ -3,7 +3,7 @@
 Digit to English Word
 =====================
 
-.. jf-exercise:: python.basics.exercises.cmdline_digit
+.. jf-exercise:: python.exercises.cmdline_digit
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0130_syntax_etc,
 		  python.basics.python_0140_variables,
@@ -26,4 +26,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.cmdline_digit
+   :entries: python.exercises.cmdline_digit

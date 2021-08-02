@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Determine Maximum of Two Numbers
-==========================================
+Determine Maximum of Two Numbers
+================================
 
 .. contents::
    :local:
 
-.. jf-exercise:: python.basics.exercises.max_numbers
+.. jf-exercise:: python.exercises.max_numbers
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,

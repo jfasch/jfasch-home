@@ -3,9 +3,9 @@
 Primeness (Function)
 ====================
 
-.. jf-exercise:: python.basics.exercises.function_primeness
-   :dependencies: python.basics.exercises.for_primeness,
-		  python.basics.exercises.max_numbers_function,
+.. jf-exercise:: python.exercises.function_primeness
+   :dependencies: python.exercises.for_primeness,
+		  python.exercises.max_numbers_function,
 		  python.basics.python_0270_functions
 
 Modify the prime number detection program from :doc:`here
@@ -31,4 +31,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.function_primeness
+   :entries: python.exercises.function_primeness

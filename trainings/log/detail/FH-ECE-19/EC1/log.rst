@@ -177,7 +177,7 @@ Python
 **Course material**
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.cmdline_digit
+   :entries: python.exercises.cmdline_digit
 
 2021-04-29
 ----------

@@ -38,7 +38,7 @@ Tag 1
 .....
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.mixed_list_keyerror
+   :entries: python.exercises.mixed_list_keyerror
 
 Tag 2
 .....
@@ -62,7 +62,7 @@ Tag 4
 .....
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.python_0510_exercises_strings_and_files
+   :entries: python.exercises.python_0510_exercises_strings_and_files
 
 **PCAP – Certified Associate in Python Programming certification**
 

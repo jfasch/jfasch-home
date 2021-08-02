@@ -1,12 +1,12 @@
 .. include:: <mmlalias.txt>
 
-Exercise: Username/Password Check
-=================================
+Username/Password Check
+=======================
 
 .. contents::
    :local:
 
-.. jf-exercise:: python.basics.exercises.username_password
+.. jf-exercise:: python.exercises.username_password
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,

@@ -3,7 +3,7 @@
 (Mixed) List, ``KeyError``
 ==========================
 
-.. jf-exercise:: python.basics.exercises.mixed_list_keyerror
+.. jf-exercise:: python.exercises.mixed_list_keyerror
    :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0130_syntax_etc,
 		  python.basics.python_0140_variables,
@@ -32,4 +32,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.mixed_list_keyerror
+   :entries: python.exercises.mixed_list_keyerror

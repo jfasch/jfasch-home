@@ -6,7 +6,7 @@ Boolean Expressions
 .. contents::
    :local:
 
-.. jf-exercise:: python.basics.exercises.boolean
+.. jf-exercise:: python.exercises.boolean
    :dependencies: python.basics.python_0160_boolean
 
 #. What is the value of the following expression?
@@ -28,4 +28,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph::
-   :entries: python.basics.exercises.boolean
+   :entries: python.exercises.boolean
