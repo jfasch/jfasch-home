@@ -334,41 +334,71 @@ Day 5
 Day X
 -----
 
-* Mocking: Unittesting ohne schwere Abhängigkeiten
-* Projektstruktur: Modulabhängigkeiten, Packaging, Release Management
-* OO Design, Polymorphism ("virtual" und so), Design Patterns (ansatzweise)
-* GraphObj things, brought about by Tirol-Daniel. Polymorphism to be
-  done.
+Smart Pointers, Recap
+.....................
+
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/020-unique-ptr/topic`
+
+  .. image:: wacom-sketches/ptr-unique.png
+     :scale: 50%
+
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/030-shared-ptr/topic`
+
+  .. image:: wacom-sketches/ptr-shared.png
+     :scale: 50%
+
+``std::map``
+............
+
+* :doc:`/trainings/material/soup/cxx03/060-stl-containers/050-associative-containers/topic`. Livehackingly
+  building an index into our `user database <https://github.com/jfasch/2021-06-14/blob/main/db-cpp/db.hpp>`__
+
+OO, and Polymorphism
+....................
+
+* Interface ``class shape``, `shape.h <https://github.com/jfasch/2021-06-14/blob/main/OO-Point/shape.h>`__
+* Concrete implementation of that, `rect.h
+  <https://github.com/jfasch/2021-06-14/blob/main/OO-Point/rect.h>`__,
+  `circle.h
+  <https://github.com/jfasch/2021-06-14/blob/main/OO-Point/circle.h>`__
 
   .. list-table::
      :align: left
 
+
      * *
 
-         .. image:: wacom-sketches/graphobj-uml.png
+         .. image:: wacom-sketches/oo-interface.png
 	    :scale: 50%
 
      * *
 
-         .. image:: wacom-sketches/graphobj-layout.png
+         .. image:: wacom-sketches/oo-vector-of-pointer.png
+	    :scale: 50%
+
+* Composite pattern: `sketch.h <https://github.com/jfasch/2021-06-14/blob/main/OO-Point/sketch.h>`__
+
+  .. list-table::
+     :align: left
+
+
+     * *
+
+         .. image:: wacom-sketches/oo-composite-shape.png
 	    :scale: 50%
 
      * *
 
-         .. image:: wacom-sketches/graphobj-segv.png
+         .. image:: wacom-sketches/oo-composite-shape2.png
 	    :scale: 50%
 
+     * *
 
-.. .. jjjjjjj
-.. .. 
-.. .. 
-.. .. oo-composite-fs.png
-.. .. oo-composite-objects.png
-.. .. oo-composite-shape2.png
-.. .. oo-composite-shape.png
-.. .. oo-interface.png
-.. .. oo-object-sizes.png
-.. .. oo-vector-of-pointer.png
-.. .. ptr-shared.png
-.. .. ptr-unique.png
-.. .. uml-has-a.png
+         .. image:: wacom-sketches/oo-composite-objects.png
+	    :scale: 50%
+
+     * *
+
+         .. image:: wacom-sketches/oo-composite-fs.png
+	    :scale: 50%
+
