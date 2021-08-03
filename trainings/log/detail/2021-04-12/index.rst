@@ -60,12 +60,12 @@ Tag 1
   * swap.py
   * ...
 
-* :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_greet`
+* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_greet`
 
 Tag 2
 .....
 
-* Henning: ``vehikelkauf.py`` jjj
+* Henning: ``vehikelkauf.py``
 * Datentypen
 
 Live-Hacking (Jupyter Notebook)

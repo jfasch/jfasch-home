@@ -12,7 +12,7 @@ Determine Maximum of Two Numbers (Function)
 
 
 Modify the program from
-:doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
+:doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
 as follows.
 
 * Push the code that calculates the maximum into a function.

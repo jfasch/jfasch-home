@@ -198,7 +198,7 @@ Python
    Topics of interest, from Group 2
 
 * Exercise recap:
-  :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+  :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`
 
 2021-05-10
 ----------
@@ -349,7 +349,7 @@ Further Information
 Reiterating on Exercise
 .......................
 
-:doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
+:doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`
 
 * Hashbang: ``#!/usr/bin/python``
 
@@ -401,7 +401,7 @@ Exercise
 Exercise ``digit`` (Once More)
 ..............................
 
-(:doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`)
+(:doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`)
 
 * Make it executable
 

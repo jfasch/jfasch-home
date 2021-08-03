@@ -62,7 +62,7 @@ Variablen und Datentypen
 
 **Übungen**
 
-* :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_variable` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/swap.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_variable` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/swap.py>`__)
 
   .. .. jjjj rename exercise to something like "swap"
 
@@ -80,8 +80,8 @@ Kontrollstrukturen
 
 **Übungen**
 
-* :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/maximum.py>`__)
-* :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_greet` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/greeting.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/maximum.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_greet` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/greeting.py>`__)
 
 **Stoff**
 
@@ -91,12 +91,41 @@ Kontrollstrukturen
 
 **Übungen**
 
-* :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_even_numbers`
-* :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
+* :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_even_numbers`
+* :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
 
   .. image:: wacom-sketches/prime.png
      :scale: 50%
 
-.. .. jjjjjj see if there are unreferenced livehacking sessions
+Tag 2
+.....
 
-.. .. jjjjjj see if there are unreferenced wacom sketches
+**Stoff**
+
+* :doc:`/trainings/material/soup/python/python_0270_functions/topic`
+
+**Übungen**
+
+* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_max_numbers_function`
+
+**Stoff**
+
+* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/python_0400_lists/topic`
+* :doc:`/trainings/material/soup/python/python_0450_dictionaries/topic`
+* :doc:`/trainings/material/soup/python/python_0460_sets/topic`
+
+**Showcasing "Full Stack Development"**
+
+.. image:: wacom-sketches/fullstack.png
+   :scale: 70%
+
+.. toctree::
+
+   notebook
+
+Links
+-----
+
+* `PHP: A Fractal of Bad Design <https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/>`__
+* :doc:`Meine Web-Tutorials </about/site/work-in-progress/web>`

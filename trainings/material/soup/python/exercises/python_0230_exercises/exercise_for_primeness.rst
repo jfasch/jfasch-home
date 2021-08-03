@@ -8,7 +8,7 @@ Primeness (``for``)
 		  python.exercises.while_primeness
 
 #. Convert the program from exercise
-   :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
+   :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
    as follows.
 
    * Use a ``for`` loop instead of a ``while`` loop

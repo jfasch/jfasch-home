@@ -43,8 +43,8 @@ Tag 1
 Tag 2
 .....
 
-* :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
-* :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_greet`
+* :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`
+* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_greet`
 * Reading CSV files (`ein Versuch einer Erklärung
   <https://www.python-lernen.de/csv-datei-einlesen.htm>`__)
 
@@ -53,7 +53,7 @@ Tag 3
 
 * Functional Python: ``enumerate()``, ``sum()`` and ``map()``
 * :doc:`/trainings/material/soup/python/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/python_0275_exercises/exercise_misc`
+* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_misc`
   (the ``uniq()`` part of it)
 * :doc:`/trainings/material/soup/python/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`

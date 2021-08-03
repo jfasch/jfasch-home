@@ -46,7 +46,7 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
      - 6.7 Ausdrücke und Operatorrangfolgen
      - Bereits bei den Datentypen angeschnitten. Hier als Vertiefung
        nocheinmal.
-   * - :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_variable`
+   * - :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_variable`
      - 6.8 Übungen
      - - Übung 1: Arbeiten mit grundlegenden Sprachelementen
 
@@ -56,7 +56,7 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
            haben.
 
        - Übung 2: wird gemacht (siehe :doc:`hier
-         </trainings/material/soup/python/python_0165_exercises/exercise_variable>`)
+         </trainings/material/soup/python/exercises/python_0165_exercises/exercise_variable>`)
 
 Herdt Kapitel 7: Kontrollstrukturen
 ...................................
@@ -105,9 +105,9 @@ Also: aus meinem Skriptum
    * - :doc:`/trainings/material/soup/python/python_0170_if/topic`
      - 7.7 Mehrfache Verzweigung (Fallauswahl)
      - Sperrige Formulierungen bei Herdt
-   * - * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
-       * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_greet`
-       * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_username_password`
+   * - * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
+       * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_greet`
+       * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_username_password`
      - 7.15 Übungen
      - - Übung 1: Verzweigung
        - Übung 2: Geschachtelte Verzweigung
@@ -140,12 +140,12 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - :doc:`/trainings/material/soup/python/python_0193_while/topic`
      - 7.10 Kopfgesteuerte bedingte Schleife
      - Meins gewinnt
-   * - * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_even_numbers`
-       * :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
+   * - * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_even_numbers`
+       * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
      -
      - 7.15 Übungen
        - Übung 4: Gerade Zahlen in der Konsole anzeigen
-       - :doc:`/trainings/material/soup/python/python_0195_exercises/exercise_while_primeness`
+       - :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
    * - 
      - 7.11 Fußgesteuerte bedingte Schleife
      - Auslassen (gibts nicht in Python)
@@ -164,7 +164,7 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - :doc:`/trainings/material/soup/python/python_0225_range/topic`
      - 
      -
-   * - :doc:`/trainings/material/soup/python/python_0230_exercises/exercise_for_primeness`
+   * - :doc:`/trainings/material/soup/python/exercises/python_0230_exercises/exercise_for_primeness`
      - 
      - 
    * - 
@@ -289,8 +289,8 @@ Diese Abteilung wurde hauptsächlich im :doc:`Jupyter Notebook
    * - 
      - 9.7 Standardbibliotheken und Built-in-Funktionalitäten
      - Auslassen
-   * - * :doc:`/trainings/material/soup/python/python_0275_exercises/exercise_max_numbers_function`
-       * :doc:`/trainings/material/soup/python/python_0275_exercises/exercise_primeness_function`
+   * - * :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_max_numbers_function`
+       * :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_primeness_function`
      - 9.8 Übungen
      - U.U. nimmt man die Übungen aus ``if``/Verzweigung her
        (Beispiel: Übung 1 dort will, dass man das Maximum zweier

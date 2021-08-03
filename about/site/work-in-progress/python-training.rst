@@ -25,14 +25,14 @@ resulting dependency chain defines the main structure of the course.
 
   Depend on it:
 
-  * :doc:`/trainings/material/soup/python/python_0165_exercises/exercise_cmdline_digit`
-  * :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
+  * :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`
+  * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
 
 * Create special purpose node type ``jf-exercise`` (rectangle shape),
   and convert all.
 
 * ``while`` exercises: generalize
-  :doc:`/trainings/material/soup/python/python_0190_exercises/exercise_max_numbers`
+  :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
   to take any number of arguments, and use while to run over those.
 
 * ``for`` exercise: simplify **all** ``while`` exercises to use

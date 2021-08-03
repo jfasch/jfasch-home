@@ -40,7 +40,6 @@ Contents
    :hidden:
 
    */topic
-   */exercise*
 
 Group Description
 -----------------

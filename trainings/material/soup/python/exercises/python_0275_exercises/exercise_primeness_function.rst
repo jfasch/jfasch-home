@@ -9,9 +9,9 @@ Primeness (Function)
 		  python.basics.python_0270_functions
 
 Modify the prime number detection program from :doc:`here
-</trainings/material/soup/python/python_0195_exercises/exercise_while_primeness>`
+</trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness>`
 or :doc:`here
-</trainings/material/soup/python/python_0230_exercises/exercise_for_primeness>` as follows.
+</trainings/material/soup/python/exercises/python_0230_exercises/exercise_for_primeness>` as follows.
 
 * Push the *prime number checking algorithm* into a function.
   (``is_prime()`` is a likely name for the function.)
