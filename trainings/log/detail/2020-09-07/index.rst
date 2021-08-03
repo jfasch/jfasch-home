@@ -110,23 +110,23 @@ Day 1
 
 Rushed through basics,
 
-* :doc:`/trainings/material/soup/python/python_0140_variables/topic`
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
-* :doc:`/trainings/material/soup/python/python_0170_if/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 
 Put a strong focus on Python features,
 
-* :doc:`/trainings/material/soup/python/python_0250_refs_flat_deep_copy/topic`
-* :doc:`/trainings/material/soup/python/python_0200_sequential_types/topic`
-* :doc:`/trainings/material/soup/python/python_0210_indexing_slicing/topic`
-* :doc:`/trainings/material/soup/python/python_0193_while/topic`. The
+* :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`. The
   ``else`` clause, mainly - everyone was supposed to know what a
   ``while`` loop is.
-* :doc:`/trainings/material/soup/python/python_0220_for/topic`.
+* :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`.
 
   * ``else`` clause
-  * :doc:`/trainings/material/soup/python/python_0225_range/topic`. Whetting
+  * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`. Whetting
     appetite for the *Iteration* livehacking session on day 2.
 
 Day 2

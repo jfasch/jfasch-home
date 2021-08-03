@@ -6,12 +6,13 @@ Greeting, Depending on Time of Day
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.greeting
-   :dependencies: python.basics.python_0120_helloworld,
+.. jf-exercise:: python.exercises.herdt.greeting
+   :dependencies: python.exercises.herdt.boolean,
+		  python.exercises.herdt.swap,
+		  python.basics.python_0120_helloworld,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,
-		  python.basics.python_0170_if,
-		  python.exercises.boolean
+		  python.basics.python_0170_if
 
 #. A greeting has to be composed automatically, based upon time of day
    and sex.

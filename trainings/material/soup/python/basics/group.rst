@@ -6,3 +6,7 @@ Basics
 .. jf-topicgraph::
    :entries: python.basics
 
+.. toctree::
+   :glob:
+
+   */topic

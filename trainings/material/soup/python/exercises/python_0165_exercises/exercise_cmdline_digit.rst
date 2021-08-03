@@ -4,7 +4,8 @@ Digit to English Word
 =====================
 
 .. jf-exercise:: python.exercises.cmdline_digit
-   :dependencies: python.basics.python_0120_helloworld,
+   :dependencies: python.exercises.mixed_list_keyerror,
+		  python.basics.python_0120_helloworld,
 		  python.basics.python_0130_syntax_etc,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,

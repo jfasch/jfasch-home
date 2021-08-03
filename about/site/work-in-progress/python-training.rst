@@ -21,7 +21,7 @@ resulting dependency chain defines the main structure of the course.
   Don't forget about dependencies.
 
 * Split "Commandline Arguments" out from
-  :doc:`/trainings/material/soup/python/python_0130_syntax_etc/topic`.
+  :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`.
 
   Depend on it:
 
@@ -57,23 +57,23 @@ group?)
 Miscellaneous
 -------------
 
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 
   Cut example code linewise into tables, giving comments in the right
   column.
-* :doc:`/trainings/material/soup/python/python_0193_while/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 
   ``break`` and ``continue`` example, with a search in a
   sequence/list. Maybe as a livehacking screenplay.
 * Eliminate Python 2 wherever I see it
 
-  * :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
-  * :doc:`/trainings/material/soup/python/python_0120_helloworld/topic`
-  * :doc:`/trainings/material/soup/python/python_0500_files/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
 * "Dependencies" link in every topic
 
 * Absorb
-  :doc:`/trainings/material/soup/python/python_1000_function_objects/topic`
+  :doc:`/trainings/material/soup/python/basics/python_1000_function_objects/topic`
   in
-  :doc:`/trainings/material/soup/python/python_0270_functions/topic`
+  :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`

@@ -6,8 +6,9 @@ Username/Password Check
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.username_password
-   :dependencies: python.basics.python_0120_helloworld,
+.. jf-exercise:: python.exercises.herdt.username_password
+   :dependencies: python.exercises.herdt.swap,
+		  python.basics.python_0120_helloworld,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,
 		  python.basics.python_0170_if,

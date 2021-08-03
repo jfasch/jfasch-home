@@ -227,8 +227,8 @@ Python: Functions
    * * Course Material
      * Notebook Structure
      * Notebook Download
-   * * * :doc:`/trainings/material/soup/python/python_0270_functions/topic`
-       * :doc:`/trainings/material/soup/python/python_0270_functions/screenplay-scoping`
+   * * * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
+       * :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
      * .. toctree::
 
           Notebooks/Functions
@@ -338,8 +338,8 @@ Further Information
    * * Course Material
      * Notebook
      * Notebook Download
-   * * * :doc:`/trainings/material/soup/python/python_0500_files/topic`
-       * :doc:`/trainings/material/soup/python/python_0320_strings_methods/topic`
+   * * * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+       * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
      * .. toctree::
 
           Notebooks/2021-05-20-G2

@@ -25,7 +25,7 @@ Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
 
 Die Kurssprache des Kurses "Programmierung Grundlagen" ist Python;
 viele der Python-spezifische Elemente werden von :doc:`hier
-</trainings/material/soup/python/python-basics>` unterrichtet.
+</trainings/material/soup/python/basics/group>` unterrichtet.
 
 Themenreihenfolge und Übungen werden aus dem Herdt-Skriptum
 "Programmierung Grundlagen mit Beispielen in Python" übernommen.
@@ -53,16 +53,16 @@ Variablen und Datentypen
 
 **Stoff**
 
-* :doc:`/trainings/material/soup/python/python_0110_blahblah/topic`
-* :doc:`/trainings/material/soup/python/python_0120_helloworld/topic`
-* :doc:`/trainings/material/soup/python/python_0130_syntax_etc/topic`
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
-* :doc:`/trainings/material/soup/python/python_0160_boolean/topic`
-* :doc:`/trainings/material/soup/python/python_0300_strings/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 
 **Übungen**
 
-* :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_variable` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/swap.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/herdt/swap` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/swap.py>`__)
 
   .. .. jjjj rename exercise to something like "swap"
 
@@ -76,16 +76,16 @@ Kontrollstrukturen
 
 **Stoff**
 
-* :doc:`/trainings/material/soup/python/python_0170_if/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 
 **Übungen**
 
 * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/maximum.py>`__)
-* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_greet` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/greeting.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/herdt/greet` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/greeting.py>`__)
 
 **Stoff**
 
-* :doc:`/trainings/material/soup/python/python_0193_while/topic` (das
+* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic` (das
   Summenbeispiel `live-gehackt
   <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/sum.py>`__)
 
@@ -102,7 +102,7 @@ Tag 2
 
 **Stoff**
 
-* :doc:`/trainings/material/soup/python/python_0270_functions/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 
 **Übungen**
 
@@ -110,10 +110,10 @@ Tag 2
 
 **Stoff**
 
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
-* :doc:`/trainings/material/soup/python/python_0400_lists/topic`
-* :doc:`/trainings/material/soup/python/python_0450_dictionaries/topic`
-* :doc:`/trainings/material/soup/python/python_0460_sets/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 
 **Showcasing "Full Stack Development"**
 

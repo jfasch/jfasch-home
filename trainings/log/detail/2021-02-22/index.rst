@@ -29,14 +29,14 @@ Python Basics (22.2.2021 - 24.2.2021)
 Tag 1
 -----
 
-* :doc:`/trainings/material/soup/python/python_0110_blahblah/topic`
-* :doc:`/trainings/material/soup/python/python_0120_helloworld/topic`
-* :doc:`/trainings/material/soup/python/python_0130_syntax_etc/topic`
-* :doc:`/trainings/material/soup/python/python_0140_variables/topic`
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
-* :doc:`/trainings/material/soup/python/python_0160_boolean/topic`
-* :doc:`/trainings/material/soup/python/python_0170_if/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 * Exercises
 
   * :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_mixed_list_keyerror`
@@ -46,18 +46,18 @@ Tag 2
 -----
 
 * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
-* :doc:`/trainings/material/soup/python/python_0193_while/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 
   * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_even_numbers`
   * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
 
-* :doc:`/trainings/material/soup/python/python_0200_sequential_types/topic`
-* :doc:`/trainings/material/soup/python/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 
 Tag 3
 -----
 
-* :doc:`/trainings/material/soup/python/python_0270_functions/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_max_numbers_function`
 * :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_primeness_function`
 

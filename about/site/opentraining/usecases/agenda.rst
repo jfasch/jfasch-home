@@ -49,15 +49,15 @@ be explained before topic A (A is said to *depend* on B).
 Based upon this knowledge, a tool can be used to *automatically*
 generate an agenda.
 
-* :doc:`/trainings/material/soup/python/python_0140_variables/topic`
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
-* :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
-* :doc:`/trainings/material/soup/python/python_0200_sequential_types/topic`
-* :doc:`/trainings/material/soup/python/python_0220_for/topic`
-* :doc:`/trainings/material/soup/python/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/python_0450_dictionaries/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 * :doc:`/trainings/material/soup/python/python_1050_oo/topic`
 * :doc:`/trainings/material/soup/python/python_1100_exceptions/topic`
-* :doc:`/trainings/material/soup/python/python_0225_range/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`

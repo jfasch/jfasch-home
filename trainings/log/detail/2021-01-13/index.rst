@@ -42,7 +42,7 @@ Programmierung Grundlagen (13. und 14.1.2021)
   weswegen in einigen Fällen Ausnahmen gemacht werden.
 * Die Kurssprache ist Python; viele der Python-spezifische Elemente
   werden von :doc:`hier
-  </trainings/material/soup/python/python-basics>` unterrichtet.
+  </trainings/material/soup/python/basics/group>` unterrichtet.
 * Live-Hackereien des Trainers erfolgen in einem :doc:`gleichermaßen
   strukturierten Dokument <Notebook>`, einem sogenannten `Jupyter
   Notebook <https://jupyter.org/>`__.
@@ -68,21 +68,21 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
    * - OpenTraining Topics
      - Herdt Kapitel
      - Kommentar
-   * - :doc:`/trainings/material/soup/python/python_0110_blahblah/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
      - 
      - 
-   * - :doc:`/trainings/material/soup/python/python_0120_helloworld/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
      - 
      - 
-   * - :doc:`/trainings/material/soup/python/python_0130_syntax_etc/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
      - 6.1 Syntax und Semantik
      - Herdt zu allgemein/verwirrend
-   * - :doc:`/trainings/material/soup/python/python_0130_syntax_etc/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
      - 6.2 Grundlegende Elemente einer Sprache
      - Herdt zu allgemein/verwirrend
-   * - - :doc:`/trainings/material/soup/python/python_0150_datatypes_overview/topic`
-       - :doc:`/trainings/material/soup/python/python_0160_boolean/topic`
-       - :doc:`/trainings/material/soup/python/python_0300_strings/topic`
+   * - - :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+       - :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
+       - :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
      - - 6.3 Standarddatentypen (elementare Datentypen)
        - 6.4 Literale für primitive Datentypen
      - - Meins: Python2/3 ignorieren (besser gleich endgültig
@@ -100,7 +100,7 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
      - 6.7 Ausdrücke und Operatorrangfolgen
      - Bereits bei den Datentypen angeschnitten. Hier als Vertiefung
        nocheinmal.
-   * - :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_variable`
+   * - :doc:`/trainings/material/soup/python/exercises/herdt/swap`
      - 6.8 Übungen
      - - Übung 1: Arbeiten mit grundlegenden Sprachelementen
 
@@ -110,7 +110,7 @@ Herdt Kapitel 6: Grundlegende Sprachelemente
            haben.
 
        - Übung 2: wird gemacht (siehe :doc:`hier
-         </trainings/material/soup/python/exercises/python_0165_exercises/exercise_variable>`)
+         </trainings/material/soup/python/exercises/herdt/swap>`)
 
 Herdt Kapitel 7: Kontrollstrukturen
 ...................................
@@ -124,7 +124,7 @@ Effekt aus, dass menschliche Sprache leicht in Python abzubilden ist
 :-)
 
 Also: aus meinem Skriptum
-:doc:`/trainings/material/soup/python/python_0170_if/topic`, und die
+:doc:`/trainings/material/soup/python/basics/python_0170_if/topic`, und die
 Übungen von Herdt. Siehe dazu die folgende Tabelle.
 
 .. list-table::
@@ -147,21 +147,21 @@ Also: aus meinem Skriptum
    * - 
      - 7.3 Grundlagen zu Verzweigungen
      - Bullshit
-   * - :doc:`/trainings/material/soup/python/python_0170_if/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
      - 7.4 Bedingte Anweisung
      - Sperrige Formulierungen bei Herdt
-   * - :doc:`/trainings/material/soup/python/python_0170_if/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
      - 7.5 Verzweigung
      - Sperrige Formulierungen bei Herdt
-   * - :doc:`/trainings/material/soup/python/python_0170_if/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
      - 7.6 Geschachtelte Verzweigung
      - Sperrige Formulierungen bei Herdt
-   * - :doc:`/trainings/material/soup/python/python_0170_if/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
      - 7.7 Mehrfache Verzweigung (Fallauswahl)
      - Sperrige Formulierungen bei Herdt
    * - * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
-       * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_greet`
-       * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_username_password`
+       * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
+       * :doc:`/trainings/material/soup/python/exercises/herdt/username_password`
      - 7.15 Übungen
      - - Übung 1: Verzweigung
        - Übung 2: Geschachtelte Verzweigung
@@ -191,7 +191,7 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - 
      - 7.9 Zählergesteuerte Schleifen (Iteration)
      - Auslassen
-   * - :doc:`/trainings/material/soup/python/python_0193_while/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
      - 7.10 Kopfgesteuerte bedingte Schleife
      - Meins gewinnt
    * - * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
@@ -203,10 +203,10 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - 
      - 7.11 Fußgesteuerte bedingte Schleife
      - Auslassen (gibts nicht in Python)
-   * - :doc:`/trainings/material/soup/python/python_0200_sequential_types/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
      - (jf) Sequential Datatypes
      - Als Voraussetzung für ``for``
-   * - :doc:`/trainings/material/soup/python/python_0220_for/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
      - 
      - ``for`` Loop ist bei Herdt nicht so gut. Livehacking, Iteration
        über
@@ -215,7 +215,7 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
        * String
        * Dictionary (als Ausblick)
        
-   * - :doc:`/trainings/material/soup/python/python_0225_range/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
      - 
      -
    * - :doc:`/trainings/material/soup/python/exercises/python_0230_exercises/exercise_for_primeness`
@@ -245,10 +245,10 @@ Herdt Kapitel 8: Elementare Datenstrukturen
    * - 
      - 8.1 Warum werden Datenstrukturen benötigt?
      - Naja mal reinschauen, eher mager
-   * - :doc:`/trainings/material/soup/python/python_0150_datatypes_overview_compound/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
      - 
      - Compound Datatypes: Überblick
-   * - :doc:`/trainings/material/soup/python/python_0250_refs_flat_deep_copy/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
      -
      - Als Ersatz für das ausgelassene Kapitel "6.5 Variablen und
        Konstanten"
@@ -262,15 +262,15 @@ Herdt Kapitel 8: Elementare Datenstrukturen
      - 8.4 Records
      - Auslassen: siehe 8.7 Dictionaries, gefolgt von ``class`` und
        ``namedtuple``
-   * - - :doc:`/trainings/material/soup/python/python_0300_strings/topic` (Wiederholung)
-       - :doc:`/trainings/material/soup/python/python_0320_strings_methods/topic`
-       - :doc:`/trainings/material/soup/python/python_0310_strings_formatting/topic`
+   * - - :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic` (Wiederholung)
+       - :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+       - :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
      - 8.5 Zeichenketten
      - Vielleicht eine kurze Livehacking Session *f-Strings*
-   * - :doc:`/trainings/material/soup/python/python_0400_lists/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
      - 8.6 Tupel und Listen
      - Meins
-   * - :doc:`/trainings/material/soup/python/python_0450_dictionaries/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
      - 8.7 Dictionaries
      - Meins
    * -
@@ -280,7 +280,7 @@ Herdt Kapitel 8: Elementare Datenstrukturen
        - Livehacking Demo von ``class``
        - ``from collections import namedtuple``
 
-   * - :doc:`/trainings/material/soup/python/python_0460_sets/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
      - 8.8 Mengen
      - Meins
    * - 
@@ -312,7 +312,7 @@ Diese Abteilung wurde hauptsächlich im :doc:`Jupyter Notebook
    * - OpenTraining Topics
      - Herdt Kapitel
      - Kommentar
-   * - :doc:`/trainings/material/soup/python/python_0270_functions/topic`
+   * - :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
      -
      - Funktionen und Scope
    * -

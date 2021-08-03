@@ -36,7 +36,7 @@ Programmierung Grundlagen (12. und 13.4.2021)
 
 Die Kurssprache des Kurses "Programmierung Grundlagen" ist Python;
 viele der Python-spezifische Elemente werden von :doc:`hier
-</trainings/material/soup/python/python-basics>` unterrichtet.
+</trainings/material/soup/python/basics/group>` unterrichtet.
 
 Themenreihenfolge und Übungen werden aus dem Herdt-Skriptum
 "Programmierung Grundlagen mit Beispielen in Python" übernommen.
@@ -60,7 +60,7 @@ Tag 1
   * swap.py
   * ...
 
-* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_greet`
+* :doc:`/trainings/material/soup/python/exercises/herdt/greet`
 
 Tag 2
 .....

@@ -27,7 +27,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   python-basics
+   basics/group
    exercises/group
    python-swdev
    python-db

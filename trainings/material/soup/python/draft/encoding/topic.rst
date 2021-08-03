@@ -18,8 +18,8 @@ TODO
 * Somehow externalize "encoding" stuff from these, and point them
   here.
 
-  * :doc:`/trainings/material/soup/python/python_0330_strings_encoding/topic`
-  * :doc:`/trainings/material/soup/python/python_0500_files/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0330_strings_encoding/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
 ASCII
 -----
@@ -64,7 +64,7 @@ And Python?
 
 * ``str`` is `Unicode <https://en.wikipedia.org/wiki/Unicode>`__
 * :doc:`Sequence
-  </trainings/material/soup/python/python_0200_sequential_types/topic>`
+  </trainings/material/soup/python/basics/python_0200_sequential_types/topic>`
   of *Unicode Code Points*
 
   * To differentiate the concept from *characters* (which are
@@ -237,7 +237,7 @@ Boundary Code
 
   * Explicitly, using ``str.encode()``
   * Implicitly (|longrightarrow| :doc:`File I/O
-    </trainings/material/soup/python/python_0500_files/topic>`, Web,
+    </trainings/material/soup/python/basics/python_0500_files/topic>`, Web,
     E-Mail)
 
 Ah Yes: ``decode()``
