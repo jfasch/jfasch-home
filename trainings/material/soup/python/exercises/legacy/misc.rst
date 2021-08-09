@@ -3,8 +3,8 @@
 Lists, Loops, Functions
 =======================
 
-.. jf-exercise:: python.exercises.python_0275_exercises
-   :dependencies: python.exercises.while_primeness,
+.. jf-exercise:: python.exercises.legacy.python_0275_exercises
+   :dependencies: python.exercises.legacy.while_primeness,
 		  python.basics.python_0193_while,
 		  python.basics.python_0220_for,
 		  python.basics.python_0270_functions,

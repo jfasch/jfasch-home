@@ -3,7 +3,7 @@
 Even Numbers (``while``)
 ========================
 
-.. jf-exercise:: python.exercises.while_even_numbers
+.. jf-exercise:: python.exercises.legacy.while_even_numbers
    :dependencies: python.basics.python_0193_while
 
 #. Write a program that output all even numbers from 0 (inclusive) to
@@ -15,4 +15,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph:: 
-   :entries: python.exercises.while_even_numbers
+   :entries: python.exercises.legacy.while_even_numbers

@@ -3,9 +3,9 @@
 Primeness (``while``)
 =====================
 
-.. jf-exercise:: python.exercises.while_primeness
+.. jf-exercise:: python.exercises.legacy.while_primeness
    :dependencies: python.basics.python_0193_while,
-		  python.exercises.while_even_numbers
+		  python.exercises.legacy.while_even_numbers
 
 #. Write a program that checks whether a given number is prime!
 

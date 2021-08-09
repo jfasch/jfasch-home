@@ -6,7 +6,7 @@ Generators
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.python_1011_generators_yield
+.. jf-exercise:: python.exercises.legacy.python_1011_generators_yield
    :dependencies: python.python_1010_generators_yield
 
 Exercise: Fibonacci

@@ -3,12 +3,12 @@
 Primeness (``for``)
 ===================
 
-.. jf-exercise:: python.exercises.for_primeness
+.. jf-exercise:: python.exercises.legacy.for_primeness
    :dependencies: python.basics.python_0220_for,
-		  python.exercises.while_primeness
+		  python.exercises.legacy.while_primeness
 
 #. Convert the program from exercise
-   :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
+   :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
    as follows.
 
    * Use a ``for`` loop instead of a ``while`` loop

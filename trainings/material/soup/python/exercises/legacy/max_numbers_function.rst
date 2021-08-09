@@ -6,13 +6,13 @@ Determine Maximum of Two Numbers (Function)
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.max_numbers_function
-   :dependencies: python.exercises.max_numbers,
+.. jf-exercise:: python.exercises.legacy.max_numbers_function
+   :dependencies: python.exercises.legacy.max_numbers,
 		  python.basics.python_0270_functions
 
 
 Modify the program from
-:doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
+:doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
 as follows.
 
 * Push the code that calculates the maximum into a function.
@@ -27,4 +27,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph::
-   :entries: python.exercises.max_numbers_function
+   :entries: python.exercises.legacy.max_numbers_function

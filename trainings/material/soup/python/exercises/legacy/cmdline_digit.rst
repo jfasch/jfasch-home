@@ -3,12 +3,9 @@
 Digit to English Word
 =====================
 
-.. jf-exercise:: python.exercises.cmdline_digit
-   :dependencies: python.exercises.mixed_list_keyerror,
+.. jf-exercise:: python.exercises.legacy.cmdline_digit
+   :dependencies: python.exercises.legacy.dict_keyerror,
 		  python.basics.python_0120_helloworld,
-		  python.basics.python_0130_syntax_etc,
-		  python.basics.python_0140_variables,
-		  python.basics.python_0150_datatypes_overview,
 		  python.basics.python_0150_datatypes_overview_compound
 
 Write a program ``digit`` that takes a single digit as commandline
@@ -27,4 +24,4 @@ Dependencies
 ------------
 
 .. jf-topicgraph::
-   :entries: python.exercises.cmdline_digit
+   :entries: python.exercises.legacy.cmdline_digit
