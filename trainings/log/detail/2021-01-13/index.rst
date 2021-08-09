@@ -159,7 +159,7 @@ Also: aus meinem Skriptum
    * - :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
      - 7.7 Mehrfache Verzweigung (Fallauswahl)
      - Sperrige Formulierungen bei Herdt
-   * - * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+   * - * :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
        * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
        * :doc:`/trainings/material/soup/python/exercises/herdt/username_password`
      - 7.15 Übungen
@@ -195,7 +195,7 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
      - 7.10 Kopfgesteuerte bedingte Schleife
      - Meins gewinnt
    * - * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
-       * :doc:`/trainings/material/soup/python/exercises/legacy/exercise_while_even_numbers`
+       * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
      -
      - 7.15 Übungen
        - Übung 4: Gerade Zahlen in der Konsole anzeigen

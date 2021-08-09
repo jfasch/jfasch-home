@@ -13,12 +13,10 @@ order.
 .. toctree:: 
 
    cmdline_digit
-   exercise_while_even_numbers
    fibonacci-generator
    while_primeness
    for_primeness
    max_numbers_function
-   max_numbers
    mixed_list_interactive
    mixed_list_executable
    dict_keyerror

@@ -47,10 +47,10 @@ Tag 1
 Tag 2
 -----
 
-* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+* :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 
-  * :doc:`/trainings/material/soup/python/exercises/legacy/exercise_while_even_numbers`
+  * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
   * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`

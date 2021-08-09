@@ -6,12 +6,10 @@ Determine Maximum of Two Numbers
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.legacy.max_numbers
-   :dependencies: python.basics.python_0120_helloworld,
+.. jf-exercise:: python.exercises.herdt.max_numbers
+   :dependencies: python.exercises.herdt.swap,
 		  python.basics.python_0140_variables,
-		  python.basics.python_0150_datatypes_overview,
-		  python.basics.python_0170_if,
-		  python.basics.python_0130_syntax_etc
+		  python.basics.python_0170_if
 
 Write a program that
 
@@ -20,3 +18,9 @@ Write a program that
   numbers.
 * Determines the maximum of the numbers.
 * Outputs the maximum.
+
+Dependencies
+------------
+
+.. jf-topicgraph::
+   :entries: python.exercises.herdt.max_numbers

@@ -64,7 +64,7 @@ Day 1
 
 * Basics from the slides, up until ``if`` (see :doc:`here
   </trainings/material/soup/python/basics/python_0170_if/topic>`)
-* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+* :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
 
   Solution, doing everything by hand ...
 

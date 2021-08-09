@@ -7,12 +7,12 @@ Determine Maximum of Two Numbers (Function)
    :local:
 
 .. jf-exercise:: python.exercises.legacy.max_numbers_function
-   :dependencies: python.exercises.legacy.max_numbers,
+   :dependencies: python.exercises.herdt.max_numbers,
 		  python.basics.python_0270_functions
 
 
 Modify the program from
-:doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+:doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
 as follows.
 
 * Push the code that calculates the maximum into a function.

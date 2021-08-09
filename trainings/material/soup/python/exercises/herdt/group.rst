@@ -10,5 +10,7 @@ Exercises (External)
 
    boolean
    swap
+   max_numbers
    greet
    username_password
+   exercise_while_even_numbers
