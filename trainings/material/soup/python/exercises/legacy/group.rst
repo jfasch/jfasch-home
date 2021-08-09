@@ -15,15 +15,19 @@ order.
    cmdline_digit
    exercise_while_even_numbers
    fibonacci-generator
+   while_primeness
    for_primeness
    max_numbers_function
    max_numbers
-   misc
    mixed_list_interactive
    mixed_list_executable
    dict_keyerror
    primeness_function
+   uniq_function
+   join_function
    string-rightjustify
-   strings-and-files
-   while_primeness
+   wc
+   revert
+   distill
+   passwd
 

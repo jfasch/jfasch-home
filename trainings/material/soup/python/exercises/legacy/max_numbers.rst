@@ -13,10 +13,10 @@ Determine Maximum of Two Numbers
 		  python.basics.python_0170_if,
 		  python.basics.python_0130_syntax_etc
 
-#. Write a program that
+Write a program that
 
-   * Takes two numbers from the commandline. *Remember*: commandline
-     arguments can only be strings, so those have to be converted to
-     numbers.
-   * Determines the maximum of the numbers.
-   * Outputs the maximum.
+* Takes two numbers from the commandline. *Remember*: commandline
+  arguments can only be strings, so those have to be converted to
+  numbers.
+* Determines the maximum of the numbers.
+* Outputs the maximum.

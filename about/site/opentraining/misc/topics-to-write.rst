@@ -7,15 +7,6 @@ Topics to be Written
 New Topics to Write
 -------------------
 
-*
-  :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_misc`. Screenplay
-  for Exercise 2: ``uniq()``.
-
-  * Complicated iteration over outputsequence, only to determine
-    membership. First with a flag, then with an ``else`` clause.
-  * ``in`` operator on outputsequence
-  * Performance: using a ``set`` for have-ness
-
 * Python: classmethod, staticmethod, class members
 * Python: more on exceptions (``finally``, ``else``)
 * Python: ``exec()``

@@ -80,7 +80,7 @@ Kontrollstrukturen
 
 **Übungen**
 
-* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/maximum.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/maximum.py>`__)
 * :doc:`/trainings/material/soup/python/exercises/herdt/greet` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/greeting.py>`__)
 
 **Stoff**
@@ -91,8 +91,8 @@ Kontrollstrukturen
 
 **Übungen**
 
-* :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_even_numbers`
-* :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
+* :doc:`/trainings/material/soup/python/exercises/legacy/exercise_while_even_numbers`
+* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 
   .. image:: wacom-sketches/prime.png
      :scale: 50%
@@ -106,7 +106,7 @@ Tag 2
 
 **Übungen**
 
-* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_max_numbers_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
 
 **Stoff**
 

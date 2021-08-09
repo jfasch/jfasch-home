@@ -37,13 +37,14 @@ Log
 Tag 1
 .....
 
-.. jf-topicgraph::
-   :entries: python.exercises.mixed_list_keyerror
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+* :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
 
 Tag 2
 .....
 
-* :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`
+* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
 * Reading CSV files (`ein Versuch einer Erklärung
   <https://www.python-lernen.de/csv-datei-einlesen.htm>`__)
@@ -53,8 +54,7 @@ Tag 3
 
 * Functional Python: ``enumerate()``, ``sum()`` and ``map()``
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_misc`
-  (the ``uniq()`` part of it)
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
 
@@ -62,7 +62,9 @@ Tag 4
 .....
 
 .. jf-topicgraph::
-   :entries: python.exercises.python_0510_exercises_strings_and_files
+   :entries: python.exercises.legacy.wc,
+             python.exercises.legacy.revert,
+             python.exercises.legacy.distill
 
 **PCAP – Certified Associate in Python Programming certification**
 

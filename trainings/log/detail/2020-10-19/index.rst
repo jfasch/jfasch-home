@@ -126,15 +126,18 @@ Day 1
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
-* :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_mixed_list_keyerror`
-* :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+* :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
+* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-* :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
+* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_primeness_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
 
 Day 2
 .....
@@ -150,44 +153,44 @@ Day 2
   * Cannot use a *name* that is not there
   * Show how to delete (and resurrect) the ``int`` type
 
-* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_misc`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
 
-  * Exercise 2: ``uniq()`` in steps:
+  #. Complicated iteration over outputsequence, only to determine
+     membership. First with a flag, then with an ``else`` clause.
+  #. ``in`` operator on outputsequence
+  #. Performance: using a ``set`` for have-ness
 
-    #. Complicated iteration over outputsequence, only to determine
-       membership. First with a flag, then with an ``else`` clause.
-    #. ``in`` operator on outputsequence
-    #. Performance: using a ``set`` for have-ness
+  *End result:*
+  `uniq.py <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/uniq.py>`__
 
-    *End result:*
-    `uniq.py <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/uniq.py>`__
+  *Generator version (can't resist):* `uniq-generator.py
+  <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/uniq-generator.py>`__
 
-    *Generator version (can't resist):* `uniq-generator.py
-    <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/uniq-generator.py>`__
+* :doc:`/trainings/material/soup/python/exercises/legacy/join_function`
 
-  * Exercise 3: ``join()``. Sketch multiple ways to solve the problem.
+  Sketch multiple ways to solve the problem.
 
-    #. `join-manual-index.py
-       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-manual-index.py>`__. Iterate
-       over the input list, manually tracking indexes to determine if
-       we are at the last element.
-    #. `join-manual-index-range.py
-       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-manual-index-range.py>`__. Iterate
-       over a ``range`` object for index keeping, and use *index based
-       iteration* on the input list.
-    #. `join-slicing.py
-       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-slicing.py>`__. Another
-       cumbersome but working approach: cut out ``[1:]`` from the
-       input list.
-    #. `join-correct-sep.py
-       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-correct-sep.py>`__. Add
-       separator unconditionally after each element, and take
-       correcting action finally.
-    #. `join-enumerate.py
-       <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-enumerate.py>`__:
-       use `enumerate()
-       <https://docs.python.org/3/library/functions.html#enumerate>`__
-       to iterate over the input sequence *and* keep the indexes.
+  #. `join-manual-index.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-manual-index.py>`__. Iterate
+     over the input list, manually tracking indexes to determine if
+     we are at the last element.
+  #. `join-manual-index-range.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-manual-index-range.py>`__. Iterate
+     over a ``range`` object for index keeping, and use *index based
+     iteration* on the input list.
+  #. `join-slicing.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-slicing.py>`__. Another
+     cumbersome but working approach: cut out ``[1:]`` from the
+     input list.
+  #. `join-correct-sep.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-correct-sep.py>`__. Add
+     separator unconditionally after each element, and take
+     correcting action finally.
+  #. `join-enumerate.py
+     <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/join-enumerate.py>`__:
+     use `enumerate()
+     <https://docs.python.org/3/library/functions.html#enumerate>`__
+     to iterate over the input sequence *and* keep the indexes.
 
 * ``for`` loops
 

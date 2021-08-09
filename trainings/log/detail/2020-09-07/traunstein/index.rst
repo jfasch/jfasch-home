@@ -14,7 +14,7 @@ mir den `Traunstein
 <https://de.wikipedia.org/wiki/Traunstein_(Berg)>`__ ausgesucht, und
 zwar über den `Zierlersteig
 <https://www.alpenvereinaktiv.com/de/tour/am-zierlersteig-auf-den-traunstein-1691-m/10620837/>`__. Nach
-der Schulung um ca. 16:45 los, Übernachtung auf der `Gmundner Hütter
+der Schulung um ca. 16:45 los, Übernachtung auf der `Gmundner Hütte
 <http://members.aon.at/traunstein/>`__, am nächsten Tag Abstieg über
 den `Naturfreundesteig
 <https://www.bergfex.at/sommer/oberoesterreich/touren/hochtour/64181,naturfreundesteig-auf-den-traunstein/>`__.

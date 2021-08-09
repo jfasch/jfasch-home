@@ -159,7 +159,7 @@ Also: aus meinem Skriptum
    * - :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
      - 7.7 Mehrfache Verzweigung (Fallauswahl)
      - Sperrige Formulierungen bei Herdt
-   * - * :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
+   * - * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
        * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
        * :doc:`/trainings/material/soup/python/exercises/herdt/username_password`
      - 7.15 Übungen
@@ -194,12 +194,12 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
      - 7.10 Kopfgesteuerte bedingte Schleife
      - Meins gewinnt
-   * - * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
-       * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_even_numbers`
+   * - * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+       * :doc:`/trainings/material/soup/python/exercises/legacy/exercise_while_even_numbers`
      -
      - 7.15 Übungen
        - Übung 4: Gerade Zahlen in der Konsole anzeigen
-       - :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
+       - :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
    * - 
      - 7.11 Fußgesteuerte bedingte Schleife
      - Auslassen (gibts nicht in Python)
@@ -218,7 +218,7 @@ ausser Acht. Es ist zu allgemein gehalten, um bei unserem Vehikel
    * - :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
      - 
      -
-   * - :doc:`/trainings/material/soup/python/exercises/python_0230_exercises/exercise_for_primeness`
+   * - :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
      - 
      - 
    * - 
@@ -343,8 +343,8 @@ Diese Abteilung wurde hauptsächlich im :doc:`Jupyter Notebook
    * - 
      - 9.7 Standardbibliotheken und Built-in-Funktionalitäten
      - Auslassen
-   * - * :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_max_numbers_function`
-       * :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_primeness_function`
+   * - * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
+       * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
      - 9.8 Übungen
      - U.U. nimmt man die Übungen aus ``if``/Verzweigung her
        (Beispiel: Übung 1 dort will, dass man das Maximum zweier

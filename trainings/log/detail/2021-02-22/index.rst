@@ -39,17 +39,19 @@ Tag 1
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 * Exercises
 
-  * :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_mixed_list_keyerror`
-  * :doc:`/trainings/material/soup/python/exercises/python_0165_exercises/exercise_cmdline_digit`
+  * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
+  * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+  * :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
+  * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 
 Tag 2
 -----
 
-* :doc:`/trainings/material/soup/python/exercises/python_0190_exercises/exercise_max_numbers`
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 
-  * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_even_numbers`
-  * :doc:`/trainings/material/soup/python/exercises/python_0195_exercises/exercise_while_primeness`
+  * :doc:`/trainings/material/soup/python/exercises/legacy/exercise_while_even_numbers`
+  * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
@@ -58,9 +60,8 @@ Tag 3
 -----
 
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_max_numbers_function`
-* :doc:`/trainings/material/soup/python/exercises/python_0275_exercises/exercise_primeness_function`
-
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
 * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
 
   * Anschliessendes Extrahieren der ``is_prime()`` Funktion in ein
