@@ -1,16 +1,14 @@
 .. include:: <mmlalias.txt>
 
-Generators
-==========
+Generator: Fibonacci
+====================
 
 .. contents::
    :local:
 
 .. jf-exercise:: python.exercises.legacy.python_1011_generators_yield
-   :dependencies: python.python_1010_generators_yield
-
-Exercise: Fibonacci
--------------------
+   :dependencies: python.exercises.legacy.uniq_generator,
+		  python.python_1010_generators_yield
 
 Write a function that *generates* an infinite sequence of
 Fibonacci numbers! Make the start values configurable!

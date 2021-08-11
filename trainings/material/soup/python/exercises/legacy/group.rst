@@ -13,7 +13,6 @@ order.
 .. toctree:: 
 
    cmdline_digit
-   fibonacci-generator
    while_primeness
    for_primeness
    max_numbers_function
@@ -28,4 +27,5 @@ order.
    revert
    distill
    passwd
-
+   uniq_generator
+   fibonacci-generator
