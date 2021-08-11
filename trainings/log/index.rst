@@ -9,11 +9,6 @@ bekommen, was auf sie zukommt.
 Das Publizieren des Materials geschieht natürlich nur mit dem
 Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
 
-.. sidebar:: Inhalt
-
-   .. contents::
-      :local:
-
 .. toctree::
    :hidden:
 
