@@ -4,7 +4,7 @@ Dictionary: Errors?
 ===================
 
 .. jf-exercise:: python.exercises.legacy.dict_keyerror
-   :dependencies: python.exercises.legacy.mixed_list_executable,
+   :dependencies: python.exercises.legacy.max_numbers,
 		  python.basics.python_0150_datatypes_overview_compound
 
 In the interactive interpreter, create a dictionary like so:

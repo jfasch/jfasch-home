@@ -13,7 +13,7 @@ Python Advanced (2021-05-25 - 2021-05-27)
    **Material**
 
    * PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/index`
+   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
 
 .. contents::
    :local:

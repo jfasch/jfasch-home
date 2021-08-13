@@ -25,7 +25,7 @@ Python Advanced (7.9.2020 - 10.9.2020)
 
    .. csv-table::
 
-      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/index`
+      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
       PDF Slides (Python obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
       PDF Slides (Design Patterns), :download:`Design Patterns </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 
@@ -44,7 +44,7 @@ Preparation
 Workspace Setup
 ...............
 
-* :doc:`/trainings/material/soup/python/draft/installation`
+* :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/draft/vscode`
 
 Github for Exercises
@@ -494,6 +494,6 @@ Graph
 	     python.swdev.python_1200_modules,
 	     python.python_1010_generators_yield,
 	     python.drafts.encoding,
-	     python.drafts.installation,
+	     python.basics.installation,
 	     python.drafts.exceptions
 

@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.installation
+.. jf-topic:: python.basics.installation
 
 Python Installation
 ===================
@@ -54,7 +54,7 @@ Python programming. It is in no particular order, and far from being
 complete.
 
 * `Visual Studio Code <https://code.visualstudio.com/>`__. See
-  :doc:`here <vscode>` for more.
+  :doc:`here <../draft/vscode>` for more.
 * `PyCharm <https://www.jetbrains.com/pycharm/>`__. I frequently see
   people use it, so it cannot be all that bad.
 * `Eclipse <https://www.eclipse.org/>`__ and `PyDev
@@ -75,7 +75,7 @@ complete.
 .. [#anaconda_r] Anaconda also packages the `R
                  <https://www.r-project.org/>`__ language which is
                  also heavily used by data scientists.
-.. [#pip_venv] See :doc:`pip/topic` and :doc:`venv/topic` for how to
+.. [#pip_venv] See :doc:`../draft/pip/topic` and :doc:`../draft/venv/topic` for how to
                install external packages.
 
 

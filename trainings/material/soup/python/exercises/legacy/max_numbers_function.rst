@@ -7,7 +7,7 @@ Determine Maximum of Two Numbers (Function)
    :local:
 
 .. jf-exercise:: python.exercises.legacy.max_numbers_function
-   :dependencies: python.exercises.herdt.max_numbers,
+   :dependencies: python.exercises.legacy.for_primeness,
 		  python.basics.python_0270_functions
 
 

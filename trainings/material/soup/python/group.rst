@@ -32,7 +32,7 @@ Contents
    python-swdev
    python-db
    fullgraph
-   draft/index
+   draft/group
 
 .. toctree::
    :maxdepth: 1

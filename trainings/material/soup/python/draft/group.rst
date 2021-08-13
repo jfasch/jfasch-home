@@ -23,7 +23,6 @@ Contents
    decorators/topic
    closures/topic
    import
-   installation
    vscode
    encoding/topic
    exceptions

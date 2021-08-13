@@ -21,7 +21,7 @@ Python für Fortgeschrittene
 
    .. csv-table::
 
-      :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/index`
+      :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/group`
       PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
 Über den grundlegenden Sprachumfang (siehe Schulung :doc:`Python

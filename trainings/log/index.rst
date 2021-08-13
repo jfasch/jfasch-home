@@ -15,6 +15,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Grundlagen (2021-08-23 - 2021-08-25)
+-------------------------------------------
+
+Ein Inhouse Training bei einer Firma in Kärnten, gebucht über meinen
+Partner `tecTrain
+<https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen?gclid=CjwKCAjwsNiIBhBdEiwAJK4khkl2JJmP0nzhw9T5wnKcd3T2DrNCehcbQwW8IsA7e9dpFG3IzctgohoCcTgQAvD_BwE>`__.
+
+(:doc:`Mehr ... <detail/2021-08-23/index>`)
+
 Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
 --------------------------------------------------------------
 

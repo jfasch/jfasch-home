@@ -105,7 +105,7 @@ From :download:`Linux Basics (PDF)
 
 * Python Setup
 
-  * :doc:`/trainings/material/soup/python/draft/installation`
+  * :doc:`/trainings/material/soup/python/basics/installation`
   * :doc:`/trainings/material/soup/python/draft/vscode`
 
 * Python Intro

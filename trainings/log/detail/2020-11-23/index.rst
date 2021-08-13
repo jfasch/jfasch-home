@@ -25,7 +25,7 @@ Python Basics (23.11.2020 - 25.11.2020)
    .. csv-table::
 
       PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/index`
+      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
 
 Preparation
 -----------
@@ -33,7 +33,7 @@ Preparation
 Workspace Setup
 ...............
 
-* :doc:`/trainings/material/soup/python/draft/installation`
+* :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/draft/vscode`
 
 Agenda

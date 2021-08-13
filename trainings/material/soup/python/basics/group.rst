@@ -9,4 +9,5 @@ Basics
 .. toctree::
    :glob:
 
+   installation
    */topic

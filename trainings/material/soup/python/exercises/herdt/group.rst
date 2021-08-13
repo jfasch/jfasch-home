@@ -1,12 +1,15 @@
 Exercises (External)
 ====================
 
-.. jf-group:: python.exercises.herdt
 
-.. jf-topicgraph::
-   :entries: python.exercises.herdt
+.. contents::
+   :local:
+
+Contents
+--------
 
 .. toctree:: 
+   :maxdepth: 1
 
    boolean
    swap
@@ -14,3 +17,12 @@ Exercises (External)
    greet
    username_password
    exercise_while_even_numbers
+
+Graph
+-----
+
+.. jf-group:: python.exercises.herdt
+
+.. jf-topicgraph::
+   :entries: python.exercises.herdt
+

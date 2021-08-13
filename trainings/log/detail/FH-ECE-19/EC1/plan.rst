@@ -72,7 +72,7 @@ Python Development
 
    * :download:`Python (PDF) </trainings/material/pdf/300-python.pdf>`
    * :doc:`Python (HTML, more alive than PDF)
-     </trainings/material/soup/python/index>`
+     </trainings/material/soup/python/group>`
 
 * **Language Introduction**
 

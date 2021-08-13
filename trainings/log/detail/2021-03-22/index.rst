@@ -10,7 +10,7 @@ Python Basic and Advanced (22.3.2021 - 25.3.2021)
 
    * PDF Slides (:download:`Download
      </trainings/material/pdf/300-python.pdf>`)
-   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/index`
+   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
 
    **Source Code**
 

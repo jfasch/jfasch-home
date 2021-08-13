@@ -1,7 +1,7 @@
 Github/ReadTheDocs: Python
 ==========================
 
-* Split :doc:`/trainings/material/soup/python/index` into separate Github repository
+* Split :doc:`/trainings/material/soup/python/group` into separate Github repository
 * Set up a `Read the Docs <https://readthedocs.org/>`__ build
 
 

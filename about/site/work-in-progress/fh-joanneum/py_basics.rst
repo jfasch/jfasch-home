@@ -3,7 +3,7 @@
 Python Basics
 =============
 
-This is :doc:`/trainings/material/soup/python/index`
+This is :doc:`/trainings/material/soup/python/group`
 
 .. jf-topicgraph::
    :entries: python.basics
