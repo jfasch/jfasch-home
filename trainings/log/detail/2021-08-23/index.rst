@@ -52,58 +52,55 @@ The basics, with a moderate amount of exercises.
   * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
   * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
   * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 
 * Control Flow and Iteration
 
   * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
   * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
   * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
 * Functions and Generators
 
   * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/join_function`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/join_function`
   * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/fibonacci-generator`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/fibonacci-generator`
   * :doc:`/trainings/material/soup/python/iteration-generation/topic`
 
 * File I/O and Strings
 
   * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/string-rightjustify`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/string-rightjustify`
   * :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0330_strings_encoding/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/revert`
-  * :doc:`/trainings/material/soup/python/exercises/legacy/wc`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/revert`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/wc`
 
 Day 3
 .....
-
-
 
 * Databases
 
   * :doc:`/trainings/material/soup/python/python_5500_dbapi2/topic`
   * :doc:`/trainings/material/soup/python/python_5510_dbapi2_sqlite3/topic`
-  * `DB-API2 for MS-SQL
-    <https://docs.microsoft.com/de-de/sql/connect/python/python-driver-for-sql-server>`
+  * `DB-API2 for MS-SQL <https://docs.microsoft.com/de-de/sql/connect/python/python-driver-for-sql-server>`__
 
 * Advanced Topics
 
@@ -124,6 +121,10 @@ Day 2
 Day 3
 .....
 
+* Reverse Dict? -> no
+* Multithreadihg
+* Multiprocessing
+
 Live-Hacking (Jupyter Notebook)
 -------------------------------
 
@@ -133,4 +134,23 @@ Live-Hacking (Jupyter Notebook)
 
 Links
 -----
+
+Todo
+----
+
+*
+  :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+  depends on
+  :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
+  which depends on
+  :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+  which depends on
+  :doc:`/trainings/material/soup/python/basics/python_0170_if/topic` !!
+
+*
+  :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`:
+
+  * ``digit.py``
+  * ``d['one']``
+
 

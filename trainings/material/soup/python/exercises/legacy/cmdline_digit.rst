@@ -13,7 +13,7 @@ parameter. Print the English word for that digit.
 
 .. code-block:: console
 
-   $ ./digit 7
+   $ python digit.py 7
    seven
 
 * Use a dictionary (key: ``int``, value: ``str``) for the translation.
