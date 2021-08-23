@@ -28,6 +28,17 @@ The program structure could be something like follows ...
    for element in output_list:
        print(element)
 
+The expected program output is as follows:
+
+.. code-block:: console
+
+   $ python uniq.py
+   2
+   3
+   1
+   10
+   5
+
 
 Dependencies
 ------------

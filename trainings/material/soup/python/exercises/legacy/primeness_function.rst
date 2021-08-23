@@ -19,6 +19,9 @@ or :doc:`here
     primeness.
   * The function returns whether the number-to-check is prime (a
     boolean value)
+  * The function does not have any side effects, like printing on the
+    console, or use ``sys.exit()`` to terminate the process. All that
+    must be done by *the caller*.
 
 The rest of the program (taking the number from the commandline, or
 using ``input()`` to prompt the user for the number) remains

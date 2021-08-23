@@ -32,11 +32,11 @@ Python Grundlagen (2021-08-23 - 2021-08-25)
 .. contents::
    :local:
 
-Agenda
-------
+Log
+---
 
-Day 1+2
-.......
+Day 1
+.....
 
 The basics, with a moderate amount of exercises.
 
@@ -47,6 +47,12 @@ The basics, with a moderate amount of exercises.
 
   * :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
+
+    * `Hello world
+      <https://github.com/jfasch/2021-08-23/blob/master/live-hacking/hello.py>`__
+    * `Commandline arguments demo
+      <https://github.com/jfasch/2021-08-23/blob/master/live-hacking/argv.py>`__
+
   * :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
@@ -56,7 +62,10 @@ The basics, with a moderate amount of exercises.
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
   * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+  * Exercise:
+    :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+    (`Solution
+    <https://github.com/jfasch/2021-08-23/blob/master/live-hacking/digit.py>`__)
   * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 
 * Control Flow and Iteration
@@ -64,7 +73,10 @@ The basics, with a moderate amount of exercises.
   * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
   * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+  * Exercise:
+    :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+    (`Solution
+    <https://github.com/jfasch/2021-08-23/blob/master/live-hacking/prime-while.py>`__)
   * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
@@ -74,6 +86,13 @@ The basics, with a moderate amount of exercises.
   * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+
+Day 2
+.....
+
+* Functions and Generators
+
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/join_function`
   * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
@@ -109,21 +128,11 @@ Day 3
   * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
   * :doc:`/trainings/material/soup/python/python_5600_unittest/topic`
 
-Log
----
-
-Day 1
-.....
-
-Day 2
-.....
-
-Day 3
-.....
-
-* Reverse Dict? -> no
-* Multithreadihg
-* Multiprocessing
+* What else?
+    
+  * Multithreadihg
+  * Multiprocessing
+  * OPC-UA (-> :doc:`/trainings/material/soup/python/draft/venv/topic`)
 
 Live-Hacking (Jupyter Notebook)
 -------------------------------
