@@ -15,6 +15,11 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Grundlagen (in Planung)
+------------------------------
+
+(:doc:`Mehr ... <detail/2021-XX-XX/index>`)
+
 Python Grundlagen (2021-08-23 - 2021-08-25)
 -------------------------------------------
 
