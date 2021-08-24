@@ -22,7 +22,7 @@ The program structure could be something like follows ...
        # ... here a miracle has to happen ...
        return ... # the uniq-ified list
    
-   input_list = [2, 3, 1, 10, 3, 3, 1, 10, 5, 2 ]
+   input_list = [2, 3, 1, 10, 3, 3, 1, 10, 5, 2]
    output_list = uniq(input_list)
    
    for element in output_list:

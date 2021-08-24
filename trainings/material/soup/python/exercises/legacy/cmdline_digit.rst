@@ -8,7 +8,7 @@ Digit to English Word
 		  python.basics.python_0120_helloworld,
 		  python.basics.python_0150_datatypes_overview_compound
 
-Write a program ``digit`` that takes a single digit as commandline
+Write a program ``digit.py`` that takes a single digit as commandline
 parameter. Print the English word for that digit. 
 
 .. code-block:: console
