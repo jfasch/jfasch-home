@@ -16,6 +16,7 @@ separator. For example,
 
 * ``join(['Hello', 'World'], '-')`` returns ``'Hello-World'``
 * ``join(['Hello'], '-')`` returns ``'Hello'``
+* ``join([], '-')`` returns ``''`` (the empty string)
 
 Dependencies
 ------------

@@ -28,6 +28,7 @@ Python Grundlagen (2021-08-23 - 2021-08-25)
 
    Jupyter Notebook (Übersicht) <notebook-wrapper>
    Jupyter Notebook <Notebook>
+   exercises/sap-cleaned
 
 .. contents::
    :local:
@@ -97,8 +98,6 @@ Day 2
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/join_function`
   * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/fibonacci-generator`
-  * :doc:`/trainings/material/soup/python/iteration-generation/topic`
 
 * File I/O and Strings
 
@@ -108,9 +107,19 @@ Day 2
   * :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0330_strings_encoding/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/distill`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/revert`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/wc`
+  * ``collections.namedtuple``: see `here
+    <https://docs.python.org/3/library/collections.html#collections.namedtuple>`__
+  * ``datetime``
+
+    * ``datetime``: `here <https://docs.python.org/3/library/datetime.html?highlight=strptime#datetime.datetime>`__
+    * ``timedelta``: `here <https://docs.python.org/3/library/datetime.html?highlight=strptime#timedelta-objects>`__
+    * ``datetime.strptime()``: `parsing strings
+      <https://docs.python.org/3/library/datetime.html?highlight=strptime#datetime.datetime.strptime>`__
+
+    .. image:: datetime.png
+       :scale: 50%
+
+  * Exercise: :doc:`exercises/sap-cleaned`
 
 Day 3
 .....
@@ -155,11 +164,4 @@ Todo
   :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
   which depends on
   :doc:`/trainings/material/soup/python/basics/python_0170_if/topic` !!
-
-*
-  :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`:
-
-  * ``digit.py``
-  * ``d['one']``
-
 
