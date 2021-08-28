@@ -6,11 +6,6 @@ Python Advanced (7.9.2020 - 10.9.2020)
 .. contents::
    :local:
 
-.. toctree::
-   :hidden:
-
-   traunstein/index
-
 .. sidebar:: *Training Information*
 
    **Start**
@@ -477,7 +472,7 @@ climb the `Traunstein
 <https://www.alpenvereinaktiv.com/de/tour/am-zierlersteig-auf-den-traunstein-1691-m/10620837/>`__.
 
 :doc:`See here for the description and pictures from this
-extraordinary hike.  <traunstein/index>`
+extraordinary hike.  </blog/2020/09/traunstein>`
 
 Graph
 -----

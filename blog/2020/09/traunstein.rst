@@ -1,16 +1,26 @@
+.. post:: 2020-09-07
+   :category: outdoor
+   :language: de
+   :author: me
+
 .. meta::
    :description: Auf den Traunstein über den Zierlersteig:
                  unversichert, unmarkiert, saugeil
    :keywords: gmunden, traunsee, traunstein, zierlersteig, hiking,
-              bergsteigen, climbing, klettern
+              bergsteigen, climbing, klettern, outdoor
 
 Traunstein via Zierlersteig
 ===========================
 
+.. sidebar:: In this Article
+
+   .. contents::
+      :local:
+
 Am Donnerstag (10.9.2020) nach :doc:`einer Schulung in Gmunden
-<../index>` hatte ich das Bedürfnis, zusätzlich zur geistigen
-Erschöpfung auch körperliche Erschöpfung zu erfahren. Dazu hatte ich
-mir den `Traunstein
+</trainings/log/detail/2020-09-07/index>` hatte ich das Bedürfnis,
+zusätzlich zur geistigen Erschöpfung auch körperliche Erschöpfung zu
+erfahren. Dazu hatte ich mir den `Traunstein
 <https://de.wikipedia.org/wiki/Traunstein_(Berg)>`__ ausgesucht, und
 zwar über den `Zierlersteig
 <https://www.alpenvereinaktiv.com/de/tour/am-zierlersteig-auf-den-traunstein-1691-m/10620837/>`__. Nach

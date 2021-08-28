@@ -185,8 +185,8 @@ Ein Inhouse-Kurs bei einer Firma im schönen Gmunden. Ein homogenes
 Team aus 10 Teilnehmern, die die Kursführung aktiv mitgestaltet haben.
 
 Als Kursabschluss :doc:`war der Traunstein dran
-<detail/2020-09-07/traunstein/index>`, der in ganz Oberösterreich
-provokant sichtbar ist und schon lange fällig war.
+</blog/2020/09/traunstein>`, der in ganz Oberösterreich provokant
+sichtbar ist und schon lange fällig war.
 
 (:doc:`Mehr ... <detail/2020-09-07/index>`)
 
