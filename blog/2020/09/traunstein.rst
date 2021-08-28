@@ -1,7 +1,6 @@
 .. post:: 2020-09-07
    :category: outdoor
    :language: de
-   :author: me
 
 .. meta::
    :description: Auf den Traunstein über den Zierlersteig:
