@@ -64,9 +64,20 @@ Setup
 * |longrightarrow| *activating*
 
 .. code-block:: console
+   :caption: Unixen
 
    $ . my_venv/bin/activate
    (my_venv) $ 
+
+.. code-block:: console
+   :caption: Doze, ``cmd.exe``
+
+   C:\ my_venv\Scripts\activate.bat
+
+.. code-block:: console
+   :caption: Doze, ``Powershell``
+
+   PS C:\> my_venv\Scripts\Activate.ps1
 
 * A-ha! Prompt.
 * What are the effects?
@@ -168,4 +179,10 @@ Recreating an Environment
    sklearn       0.0    
    threadpoolctl 2.1.0  
 
+Using Virtual Environments With :doc:`Visual Studio Code <../vscode>`
+---------------------------------------------------------------------
 
+`Here <https://code.visualstudio.com/docs/python/environments>`__ is
+an explanation of the matter. In short: persuade VS Code to use the
+Python interpreter from your virtual environment - that one has all
+the paths VS Code needs to display help.

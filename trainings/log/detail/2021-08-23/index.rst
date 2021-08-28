@@ -120,9 +120,28 @@ Day 2
        :scale: 50%
 
   * Exercise: :doc:`exercises/sap-cleaned`
+  * Modules
+
+    * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+    * `Quick run-through
+      <https://github.com/jfasch/2021-08-23/tree/master/sap>`__,
+      modularizing the :doc:`last exercise <exercises/sap-cleaned>`
+      
+  * JSON (Java Script Object Notation) `quick demo
+    <https://github.com/jfasch/2021-08-23/blob/master/sap/read-file-and-write-json-output.py>`__
+    (full JSON documentation see `here
+    <https://docs.python.org/3/library/json.html>`__)
+
 
 Day 3
 .....
+
+.. image:: plan.png
+   :scale: 70%
+
+* :doc:`/trainings/material/soup/python/draft/pip/topic`
+* :doc:`/trainings/material/soup/python/draft/venv/topic`
+* :doc:`/trainings/material/soup/python/draft/mqtt/topic`
 
 * Databases
 
@@ -134,14 +153,16 @@ Day 3
 
   * :doc:`/trainings/material/soup/python/python_1050_oo/topic`
   * :doc:`/trainings/material/soup/python/python_1100_exceptions/topic`
-  * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
   * :doc:`/trainings/material/soup/python/python_5600_unittest/topic`
 
 * What else?
     
-  * Multithreadihg
-  * Multiprocessing
-  * OPC-UA (-> :doc:`/trainings/material/soup/python/draft/venv/topic`)
+  * `Multithreading <https://docs.python.org/3/library/threading.html>`__
+  * `Multiprocessing
+    <https://docs.python.org/3/library/multiprocessing.html>`__
+  * `OPC-UA
+    <https://opcfoundation.org/about/opc-technologies/opc-ua/>`__,
+    `Python client <https://pypi.org/project/opcua-client/>`__
 
 Live-Hacking (Jupyter Notebook)
 -------------------------------
@@ -152,6 +173,171 @@ Live-Hacking (Jupyter Notebook)
 
 Links
 -----
+
+jjj
+
+* https://oss.oetiker.ch/rrdtool/
+* https://pypi.org/project/rrdtool/
+
+Tutorials
+---------
+
+* `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
+  <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/W8KRzm-HUcc" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 5: Dictionaries - Working with
+  Key-Value Pairs <https://www.youtube.com/watch?v=daefaLgNkw0>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/daefaLgNkw0" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 7: Loops and Iterations - For/While
+  Loops <https://www.youtube.com/watch?v=6iF8Xb7Z3wQ>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/6iF8Xb7Z3wQ" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 8: Functions
+  <https://www.youtube.com/watch?v=9Os0o3wzS_I>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/9Os0o3wzS_I" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `10 Python Tips and Tricks For Writing Better Code
+  <https://www.youtube.com/watch?v=C-gEQdGVXbk>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/C-gEQdGVXbk" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
+  Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/q5uM4VKywbA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Using Try/Except Blocks for Error Handling
+  <https://www.youtube.com/watch?v=NIWwJbo-9_8>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/NIWwJbo-9_8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python 3.7: Encode String Method <https://www.youtube.com/watch?v=IoU4AbPpMys>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/IoU4AbPpMys" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: OS Module - Use Underlying Operating System
+  Functionality <https://www.youtube.com/watch?v=tJxcKyFMTGo>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/tJxcKyFMTGo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Calling External Commands Using the Subprocess
+  Module <https://www.youtube.com/watch?v=2Fp1N6dof0Y>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2Fp1N6dof0Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__, by **Raymond
+  Hettinger**
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/OSGv2VnC0go" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
 
 Todo
 ----

@@ -1,8 +1,8 @@
 :orphan:
 
 
-Programmierung Grundlagen (Jupyter Notebook)
-============================================
+Jupyter Notebook
+================
 
 .. toctree::
 

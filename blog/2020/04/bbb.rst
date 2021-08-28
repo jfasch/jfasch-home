@@ -5,7 +5,7 @@
 .. meta::
    :description: Using BigBlueButton for Online Training
    :keywords: online, training, linux, video, conference, virtual,
-              classroom, remote
+              classroom, remote, big blue button, BigBlueButton
 
 Using BigBlueButton for Online Training
 =======================================

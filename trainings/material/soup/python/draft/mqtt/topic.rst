@@ -7,10 +7,37 @@ MQTT
 .. contents::
    :local:
 
+Installation
+------------
+
+Server/Broker
+.............
+
+First, install an MQTT broker of your choice. My choice is `Eclipse
+Mosquitto <https://mosquitto.org/>`__. On Fedora, you install that
+package like so ...
+
+.. code-block:: console
+
+   # dnf install mosquitto
+
+Client
+......
+
+Then, to communicate with that broker from Python programs, you
+install a Python client implementation of your choice. My choice is
+the `Paho implementation <https://pypi.org/project/paho-mqtt/>`__,
+which is installed like so ...
+
+.. code-block:: console
+
+   $ pip install paho-mqtt
+
 Starting the Service
 --------------------
 
-This is Fedorish, your mileage might vary:
+This is `Fedorish <https://getfedora.org/>`__, your mileage might
+vary:
 
 .. code-block:: console
 
