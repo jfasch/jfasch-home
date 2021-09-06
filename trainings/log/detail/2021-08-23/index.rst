@@ -335,14 +335,11 @@ Tutorials
 	     allowfullscreen>
      </iframe>
 
-Todo
-----
+After Work Party
+----------------
 
-*
-  :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
-  depends on
-  :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
-  which depends on
-  :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
-  which depends on
-  :doc:`/trainings/material/soup/python/basics/python_0170_if/topic` !!
+Bleiburg is not far away from Slovenia. As such, as a gift to myself
+after three work days, I had made plans to climb :doc:`Grintovec
+(2558m) </blog/2021/08/grintovec>` after an overnight stay at `Češka
+Koča <https://www.bergwelten.com/h/ceska-koca>`__. See :doc:`here
+</blog/2021/08/grintovec>` for a tour description.
