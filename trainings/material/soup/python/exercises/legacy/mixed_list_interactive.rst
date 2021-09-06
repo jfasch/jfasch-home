@@ -15,6 +15,7 @@ Mixed List (Interactive Interpreter)
 * Integer
 * Floatingpoint
 * Boolean
+* String
 * List
 * Tuple
 * Set

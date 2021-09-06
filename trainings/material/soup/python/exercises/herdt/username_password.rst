@@ -3,9 +3,6 @@
 Username/Password Check
 =======================
 
-.. contents::
-   :local:
-
 .. jf-exercise:: python.exercises.herdt.username_password
    :dependencies: python.exercises.herdt.greeting,
 		  python.basics.python_0170_if

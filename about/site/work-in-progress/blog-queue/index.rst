@@ -12,7 +12,6 @@ In the Works
 
    sphinx
    franken-tour/index
-   desktop/index
 
 Not Yet in the Works
 ....................

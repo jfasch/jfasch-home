@@ -54,13 +54,13 @@ material.
      -
    * - :doc:`/trainings/repertoire/c`
      - :download:`C <pdf/050-c.pdf>`
-     -
+     - :doc:`/trainings/material/soup/c/group`
    * - :doc:`/trainings/repertoire/c-refresher`
      - :download:`C <pdf/050-c.pdf>`
-     -
+     - :doc:`/trainings/material/soup/c/group`
    * - :doc:`/trainings/repertoire/c-advanced`
      - :download:`C <pdf/050-c.pdf>`
-     -
+     - :doc:`/trainings/material/soup/c/group`
    * - :doc:`/trainings/repertoire/cxx`
      - :download:`C++03 <pdf/055-c++03.pdf>`, :download:`C++11
        <pdf/056-c++11.pdf>`

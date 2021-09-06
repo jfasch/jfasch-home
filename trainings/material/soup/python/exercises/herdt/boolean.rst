@@ -3,9 +3,6 @@
 Boolean Expressions
 ===================
 
-.. contents::
-   :local:
-
 .. jf-exercise:: python.exercises.herdt.boolean
    :dependencies: python.basics.python_0160_boolean
 

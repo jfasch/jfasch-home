@@ -20,6 +20,15 @@ Python Grundlagen (in Planung)
 
 (:doc:`Mehr ... <detail/2021-XX-XX/index>`)
 
+Python Grundlagen (2021-08-31 - 2021-09-01)
+-------------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/python-grundlagen>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-08-31/index>`)
+
 Python Grundlagen (2021-08-23 - 2021-08-25)
 -------------------------------------------
 

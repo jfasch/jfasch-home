@@ -11,7 +11,7 @@ Optimization - Introduction
 
 **General Rules ...**
 
-* Focus on clean design $\to$ efficiency follows
+* Focus on clean design |longrightarrow| efficiency follows
 * Optimization near the end of the project
 * Proven hotspots need optimization
 * *Proof through profiling*

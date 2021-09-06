@@ -17,8 +17,6 @@ Python Grundlagen (2021-08-23 - 2021-08-25)
    **Material**
 
    * :doc:`Python Topics </trainings/material/soup/python/group>`
-   * PDF Slides (Altlast), :download:`Python
-     </trainings/material/pdf/300-python.pdf>`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-08-23>`__
@@ -155,11 +153,9 @@ Day 3
   * :doc:`/trainings/material/soup/python/python_1100_exceptions/topic`
   * :doc:`/trainings/material/soup/python/python_5600_unittest/topic`
 
-* What else?
+* Miscellaneous Topics
     
   * `Multithreading <https://docs.python.org/3/library/threading.html>`__
-  * `Multiprocessing
-    <https://docs.python.org/3/library/multiprocessing.html>`__
   * `OPC-UA
     <https://opcfoundation.org/about/opc-technologies/opc-ua/>`__,
     `Python client <https://pypi.org/project/opcua-client/>`__
@@ -174,10 +170,10 @@ Live-Hacking (Jupyter Notebook)
 Links
 -----
 
-jjj
+* RRDtool (RRD = Round Robin Database)
 
-* https://oss.oetiker.ch/rrdtool/
-* https://pypi.org/project/rrdtool/
+  * `Homepage and docs <https://oss.oetiker.ch/rrdtool/>`__
+  * `PyPI package <https://pypi.org/project/rrdtool/>`__
 
 Tutorials
 ---------
@@ -350,4 +346,3 @@ Todo
   :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
   which depends on
   :doc:`/trainings/material/soup/python/basics/python_0170_if/topic` !!
-

@@ -19,7 +19,6 @@ Compound Datatypes By Example: List, Tuple
 
    * - ::
 
-          l = list()
 	  l = [1,2,3]
 	  l.append(4)
 	  l.extend([5,6,7])
@@ -31,7 +30,6 @@ Compound Datatypes By Example: List, Tuple
 
    * - ::
 
-          t = tuple()
 	  t = (1,2,3)
 	  t = (1,)
 	  new_t = t + (4,5)
@@ -47,7 +45,6 @@ Compound Datatypes By Example: Dictionary
 
    * - ::
 
-          >>> d = dict()
 	  >>> d = {1:'one', 2:'two'}
 	  >>> d[2]
 	  'two'
@@ -70,7 +67,6 @@ Compound Datatypes By Example: Set
 
    * - ::
 
-          >>> s = set()
 	  >>> s = {1,2,3}
 	  >>> 1 in s
 	  True

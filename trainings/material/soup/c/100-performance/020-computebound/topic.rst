@@ -128,7 +128,7 @@ Inlining (3)
 **GCC ...**
 
 * Does not optimize by default
-* Ignores explicit \texttt{inline} when not optimizing
+* Ignores explicit ``inline`` when not optimizing
 * ``-finline-small-functions`` (enabled at ``-O2``): inline when
   function call overhead is larger than body (even when not declared
   inline)
@@ -241,8 +241,8 @@ Another one that might look stupid but readable ...
    x = 42;
    y = 43;
 
-Consider transitive and repeated folding and propagation $\to$ pretty
-results
+Consider transitive and repeated folding and propagation
+|longrightarrow| pretty results
 
 Loop Invariants
 ---------------

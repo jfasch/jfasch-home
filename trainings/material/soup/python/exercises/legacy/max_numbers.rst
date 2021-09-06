@@ -3,9 +3,6 @@
 Determine Maximum of Two Numbers
 ================================
 
-.. contents::
-   :local:
-
 .. jf-exercise:: python.exercises.legacy.max_numbers
    :dependencies: python.exercises.legacy.mixed_list_executable,
 		  python.basics.python_0140_variables,
@@ -18,6 +15,13 @@ Write a program that
   numbers.
 * Determines the maximum of the numbers.
 * Outputs the maximum.
+
+.. code-block:: console
+
+   $ python maximum.py 3 4
+   4
+   $ python maximum.py 200 99
+   200
 
 Dependencies
 ------------

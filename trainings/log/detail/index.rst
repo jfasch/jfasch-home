@@ -5,6 +5,7 @@ Details
    :maxdepth: 1
 
    2021-XX-XX/index
+   2021-08-31/index
    2021-08-23/index
    2021-08-02/index
    2021-07-12/index

@@ -3,9 +3,6 @@
 Greeting, Depending on Time of Day
 ==================================
 
-.. contents::
-   :local:
-
 .. jf-exercise:: python.exercises.herdt.greeting
    :dependencies: python.exercises.herdt.max_numbers,
 		  python.basics.python_0170_if
@@ -17,8 +14,10 @@ and sex.
   three variables,
 
   * Name
-  * Sex. Valid inputs are ``m`` (male) and ``f`` (female); all
-    other input leads to program termination.
+  * Sex. Valid inputs are ``m`` (male) and ``f`` (female); both
+    uppercase and lowercase characters are allowed. All other input
+    leads to program termination (use ``sys.exit(1)`` for erroneous
+    termination).
   * Hour of day. Valid inputs are number ``0`` through ``23``; all
     other input leads to program termination.
 

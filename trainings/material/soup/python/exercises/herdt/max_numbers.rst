@@ -3,9 +3,6 @@
 Determine Maximum of Two Numbers
 ================================
 
-.. contents::
-   :local:
-
 .. jf-exercise:: python.exercises.herdt.max_numbers
    :dependencies: python.exercises.herdt.swap,
 		  python.basics.python_0140_variables,
