@@ -21,8 +21,8 @@ Python Basics (2021-08-31 - 2021-09-01)
 .. contents::
    :local:
 
-Agenda
-------
+Log
+---
 
 Day 1
 .....
@@ -80,19 +80,12 @@ Day 2
   * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
-* jjj live-hacking csv, matplotlib: manual/csv
+* CVS and matplotlib demo (Github)
 
-jjj Omitted
-...........
-
-* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-* Exercise:
-  :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
-* Exercise:
-  :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
-* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
-* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
-* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+  * Manual CSV parsing: `here
+    <`https://github.com/jfasch/2021-08-31/blob/main/live-hacking/csv-to-axes-manually.py>`__
+  * Using the ``csv`` module: `here
+    <https://github.com/jfasch/2021-08-31/blob/main/live-hacking/csv-to-axes-csv.py>`__
 
 Jupyter Notebook
 ----------------
@@ -104,14 +97,8 @@ Jupyter Notebook
 Links
 -----
 
-* jjj csv corey schafer
-* numpy
-
-  * pandas
-  * numpy
-  * scipy
-  * scikit-learn
-  * tensorflow
+Basics
+......
 
 * `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
   <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schafer
@@ -184,6 +171,75 @@ Links
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 	     allowfullscreen>
      </iframe>
+
+* `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
+  Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/q5uM4VKywbA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Numerics, and AI
+................
+
+* `Solving real world data science tasks with Python Pandas!
+  <https://www.youtube.com/watch?v=eMOA1pPVUc4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/eMOA1pPVUc4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Complete Python NumPy Tutorial (Creating Arrays, Indexing, Math,
+  Statistics, Reshaping)
+  <https://www.youtube.com/watch?v=GB9ByFAIAH4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/GB9ByFAIAH4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Intro to Data Visualization in Python with Matplotlib! (line graph,
+  bar chart, title, labels, size)
+  <https://www.youtube.com/watch?v=DAQNHzOcO5A>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/DAQNHzOcO5A" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+
+* `SciPy <https://scipy.org/>`__
+* `scikit-learn: Machine Learning in Python
+  <https://scikit-learn.org/>`__
+* `TensorFlow <https://www.tensorflow.org/>`__
+
 
 Mountains near Graz
 ...................

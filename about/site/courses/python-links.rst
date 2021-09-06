@@ -309,6 +309,21 @@ NumPy and Data Science Tutorials
 	     allowfullscreen>
      </iframe>
 
+* `Intro to Data Visualization in Python with Matplotlib! (line graph,
+  bar chart, title, labels, size)
+  <https://www.youtube.com/watch?v=DAQNHzOcO5A>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/DAQNHzOcO5A" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
 PyPI (Installing Modules that don't come as Batteries)
 ------------------------------------------------------
 
