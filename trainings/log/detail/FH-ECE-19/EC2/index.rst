@@ -4,81 +4,91 @@ Embedded Computing 2 (ECE 19)
 .. contents::
    :local:
 
-Group Project
--------------
+Overall Big Picture
+-------------------
 
-**Topics**
+This is a learning project - we do *not* expect any meaningful
+output. An initial bullshit bingo session led to this picture; let's
+cover what we can.
 
-.. figure:: ../EC1/Bullshit-Bingo-G2.jpg
+.. image:: ../EC1/Bullshit-Bingo-G2.jpg
+   :scale: 30%
 
-**Random Ideas**
+.. toctree:: 
 
-* MQTT for debug messages and status reports.
+   random-thoughts
 
-  Background: Christan Vogel thinking about how to watch a uC car
-  (that from *Embedded Systems*) drive, internally. Students running
-  side by side a car and watching what's on the display does not scale
-  so well.
+Hardware Interaction
+--------------------
 
-  Good opportunity to look into 
+Sensors
+.......
 
-  * how debugging could be done in a real-world
-    application. (``stderr`` first.)
-  * how ``stderr`` could be replaced with MQTT client.
-  * how the Python ``logging`` module is used. MQTT log sink.
+* Write Python class for each sensor:
+  :doc:`/about/site/work-in-progress/fh-joanneum/py_exercise_sensors`
+* Simple test program, letting us configure the sensor to use, and the
+  measurement interval from the commandline.
 
-* Fork openheating
+  * See
+    :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`;
+    maybe extract ``sys.argv`` from there into a separate topic
+  * `argparse documentation
+    <https://docs.python.org/3/library/argparse.html>`__
+  * `Youtube Tutorial <https://www.youtube.com/watch?v=cdblJqEUDNo>`__
 
-  * First commit, tagged: remove all thermometer related
-    implementations.
+  Program writes sensor values to ``sys.stdout``, making it a good
+  member of a pipeline.
 
-    Rationale: can pull them over later if need be. Git can handle
-    that.
+  *Special goodie:* one special sensor that does *not* require
+  hardware, but rather returns sine values based upon the measurement
+  time. Cute for testing.
 
-  * WHat it left is:
+* Evolution step: ``sys.stdout`` is too unflexible. Enter :doc:`MQTT
+  </trainings/material/soup/python/draft/mqtt/topic>`.
 
-    * DBus framework, and interface definitions. Will use them later
-      in the project, when we get to distribution. classes and oo (and
-      duck/abc first maybe?)
-    * Switch unit tests, unused first, one-by-one, and a sketch of the
-      interface. *Maybe switch to pytest?*
+  More configuration options on commandline: MQTT parameters.
 
-    * Plan
+  (Maybe switch over to D-Bus is there's time or need. For example,
+  querying the state of a switch is not something that's easily done
+  with MQTT.)
 
-      * move to gitlab/fh
-      * pimp the oo topic which is outright crap. split apart into
+Switches
+........
 
-	* use a see-also scheme (?) all over.
-	* use live hacking; only short introductory slides
-	* encapsulation, methods, attributes, self
-	* properties (in the advanced section)
-	* staticmethod, classmethod
+Starting with our :doc:`LED blink exercise from summer 2021
+</trainings/log/detail/FH-ECE-19/EC1/Exercises/blinklicht>`, we want
+to have easily usable classes (just as with the sensors above).
 
-      * rip apart ``openheating/plant/service_def.py``
-      * Exercise
+* :doc:`/trainings/log/detail/FH-ECE-19/EC1/Exercises/blinklicht-oo`
 
-	* pull out switch implementation from ``blink`` into a class
-	* modify ``blink`` to use that module. blah Switch
-          instantiation blah.
+OO/Interface Design
+...................
 
-      * overall: group reports, in a circular way. every member of a
-        group gets to speak. hehe: database where groups and their
-        members are registered. point system per report day. hehehehe.
-      * Pull best implementation into framework
-      * DBus: wrap Switch into a server, show interface
-        definitions. write a program that exercises interface
-        repo. document that damn thing, all over the project.
-      * Show DBus client switching
-      * Next: unittest for switch. how could that work? mocking. first
-        manually, and then with pytest. this basically only defines
-        that a mockswitch must remember an attribute state on/off, and
-        use the same on() and off() methods as the real switch.
-      * Next: thermometer, using the same schema. interface definiton,
-        blah.
-      * Next: hysteresis, on/off, again using TDD. one group going
-        into exercise.
-      * Next: kitt pattern as a class, using a configurable amount of
-        leds/gpios. TDD means that it has to have a testable interface
-        -> external clock.
-      * What else?
-      * System startup. maybe there's a good video on it.
+Moving away from :doc:`duck typing
+</trainings/material/soup/python/draft/duck-typing>`, use Python's
+`Abstract Base Class (abc) module
+<https://docs.python.org/3/library/abc.html>`__.
+
+* Sensors
+* Switches:
+  :doc:`/trainings/log/detail/FH-ECE-19/EC1/Exercises/blinklicht-abc`
+
+Project State (Hardware Perspective)
+------------------------------------
+
+Having implemented that, we can now draw this picture.
+
+* A bunch of sensors pushing sensor values into the cloud (err, MQTT)
+* Something (a PID controller operating a switch maybe?) listening for
+  those.
+
+.. image:: picture-hw-perspective.png
+
+Service Management
+------------------
+
+What's a "service"? Clear that up, and introduce systemd.
+
+* `systemd service unit files
+  <https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__
+

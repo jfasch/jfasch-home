@@ -23,20 +23,4 @@ control GPIOs from userspace.
 -------------------
 
 * `Source <https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/>`__
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* `python3-gpiod <https://pypi.org/project/gpiod/>`__
