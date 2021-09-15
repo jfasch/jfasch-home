@@ -11,7 +11,7 @@ In the Works
    :maxdepth: 1
 
    sphinx
-   franken-tour/index
+   hochkoenig/index
 
 Not Yet in the Works
 ....................
