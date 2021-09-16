@@ -3,5 +3,4 @@ Course Material
 
 .. toctree::
 
-   Course log Record <samples/index>
-   python-links
+   Sample Course log Record <samples/index>
