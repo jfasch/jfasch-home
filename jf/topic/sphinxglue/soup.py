@@ -32,7 +32,8 @@ def sphinx_add_exercise(app, docname, title, path, dependencies):
         'dependencies': dependencies,
     }
 
-def sphinx_add_task(app, docname, title, path, dependencies, initial_estimate, spent, percent_done):
+def sphinx_add_task(app, docname, title, path, dependencies, 
+                    responsible, initial_estimate, spent, percent_done):
     if hasattr(app, 'jf_soup'):
         raise TopicError('Soup already created, cannot add one more topic')
     if not hasattr(app.env, 'jf_elements'):
@@ -43,6 +44,7 @@ def sphinx_add_task(app, docname, title, path, dependencies, initial_estimate, s
         'title': title,
         'path': path,
         'dependencies': dependencies,
+        'responsible': responsible,
         'initial_estimate': initial_estimate,
         'spent': spent,
         'percent_done': percent_done,
@@ -85,6 +87,7 @@ def sphinx_create_soup(app):
                      path=elem['path'],
                      docname=docname,
                      dependencies=elem['dependencies'],
+                     responsible=elem['responsible'],
                      initial_estimate=elem['initial_estimate'],
                      spent=elem['spent'],
                      percent_done=elem['percent_done'],

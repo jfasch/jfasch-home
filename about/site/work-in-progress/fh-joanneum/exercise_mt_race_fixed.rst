@@ -1,6 +1,6 @@
-.. jf-topic:: ec.ec1.mt.exercise_mt_race_fixed
-   :dependencies: ec.ec1.mt.exercise_mt_race,
-		  ec.ec1.mt.lock
+.. jf-topic:: ecproposal.ec1.mt.exercise_mt_race_fixed
+   :dependencies: ecproposal.ec1.mt.exercise_mt_race,
+		  ecproposal.ec1.mt.lock
 
 EX: Avoiding Race Condition
 ===========================

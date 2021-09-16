@@ -1,4 +1,4 @@
-.. jf-topic:: ec.ec2.python.flask
+.. jf-topic:: ecproposal.ec2.python.flask
 
 Simple Web Programming
 ======================

@@ -1,5 +1,5 @@
-.. jf-topic:: ec.ec1.linux.gpio
-   :dependencies: ec.ec1.linux.dev_mgmt
+.. jf-topic:: ecproposal.ec1.linux.gpio
+   :dependencies: ecproposal.ec1.linux.dev_mgmt
 
 GPIO
 ====

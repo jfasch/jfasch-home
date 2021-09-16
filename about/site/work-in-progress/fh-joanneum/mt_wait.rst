@@ -1,5 +1,5 @@
-.. jf-topic:: ec.ec1.mt.wait
-   :dependencies: ec.ec1.mt.lock
+.. jf-topic:: ecproposal.ec1.mt.wait
+   :dependencies: ecproposal.ec1.mt.lock
 
 Communication: Waiting for Something
 ====================================

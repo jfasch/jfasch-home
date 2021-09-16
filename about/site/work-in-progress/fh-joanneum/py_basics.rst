@@ -1,4 +1,4 @@
-.. jf-topic:: ec.ec2.python.basics
+.. jf-topic:: ecproposal.ec2.python.basics
 
 Python Basics
 =============

@@ -25,7 +25,7 @@ Current Curriculum
 Topics
 ------
 
-.. jf-group:: ec.ec1
+.. jf-group:: ecproposal.ec1
 
 Dependency Graph
 ----------------
@@ -34,7 +34,7 @@ Read: an arrow ``A`` |longrightarrow| ``B`` means that topic ``A``
 *depends on* topic ``B``.
 
 .. jf-topicgraph::
-   :entries: ec.ec1
+   :entries: ecproposal.ec1
 
 Stundenplan
 -----------

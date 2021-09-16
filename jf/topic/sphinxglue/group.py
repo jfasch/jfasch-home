@@ -2,6 +2,7 @@ from . import utils
 from . import soup
 from .. import errors
 from ..topic import Topic
+from ..errors import TopicError
 
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import set_source_info

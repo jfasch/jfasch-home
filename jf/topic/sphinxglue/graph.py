@@ -208,9 +208,11 @@ class _TopicGraphExpander:
             label = '{'
             label += node.title
             label += '|'
-            label += f'{node.percent_done}% done'
+            label += f'responsible {node.responsible}'
             label += '|'
             label += '{'
+            label += f'{node.percent_done}% done'
+            label += '|'
             label += f'initial {node.initial_estimate}h'
             label += '|'
             label += f'spent {node.spent}h'

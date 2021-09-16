@@ -1,4 +1,4 @@
-.. jf-topic:: ec.ec1.linux.basics
+.. jf-topic:: ecproposal.ec1.linux.basics
 
 Introduction to Linux and Unix
 ==============================

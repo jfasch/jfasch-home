@@ -1,4 +1,4 @@
-.. jf-group:: ec.ec1.cxx
+.. jf-group:: ecproposal.ec1.cxx
 
 C++
 ===

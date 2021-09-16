@@ -1,7 +1,7 @@
-.. jf-topic:: ec.ec1.linux.exercise_led_display
-   :dependencies: ec.ec1.linux.exercise_avg_sensor,
-		  ec.ec1.linux.gpio,
-		  ec.ec1.cxx.unittest
+.. jf-topic:: ecproposal.ec1.linux.exercise_led_display
+   :dependencies: ecproposal.ec1.linux.exercise_avg_sensor,
+		  ecproposal.ec1.linux.gpio,
+		  ecproposal.ec1.cxx.unittest
 
 EX: LED Temperature Display
 ===========================

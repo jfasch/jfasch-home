@@ -1,6 +1,6 @@
-.. jf-topic:: ec.ec1.cxx.oo_basics
-   :dependencies: ec.ec1.git, 
-		  ec.ec1.cxx.build
+.. jf-topic:: ecproposal.ec1.cxx.oo_basics
+   :dependencies: ecproposal.ec1.git, 
+		  ecproposal.ec1.cxx.build
 
 C++: OO Basics
 ==============

@@ -127,6 +127,6 @@ Separate Compilation
 
      * **Built like so:**
 
-       .. code-block:: c
+       .. code-block:: console
 
 	  $ gcc main.c f.c g.c

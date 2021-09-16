@@ -1,5 +1,5 @@
-.. jf-topic:: ec.ec1.mt.lock
-   :dependencies: ec.ec1.mt.exercise_mt_race
+.. jf-topic:: ecproposal.ec1.mt.lock
+   :dependencies: ecproposal.ec1.mt.exercise_mt_race
 
 Avoiding Race Conditions: Semaphore/Mutex
 =========================================

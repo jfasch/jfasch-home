@@ -1,8 +1,8 @@
-.. jf-topic:: ec.ec1.linux.exercise_sensors
-   :dependencies: ec.ec1.linux.dev_mgmt, 
-		  ec.ec1.cxx.iface,
-		  ec.ec1.cxx.build,
-		  ec.ec1.git
+.. jf-topic:: ecproposal.ec1.linux.exercise_sensors
+   :dependencies: ecproposal.ec1.linux.dev_mgmt, 
+		  ecproposal.ec1.cxx.iface,
+		  ecproposal.ec1.cxx.build,
+		  ecproposal.ec1.git
 
 EX: Temperature Sensors
 =======================

@@ -1,4 +1,4 @@
-.. jf-group:: ec.ec1.linux
+.. jf-group:: ecproposal.ec1.linux
 
 Linux
 =====

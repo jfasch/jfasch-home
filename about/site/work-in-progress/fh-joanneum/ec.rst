@@ -1,7 +1,7 @@
-.. jf-group:: ec
+.. jf-group:: ecproposal
 
 Graph
 -----
 
 .. jf-topicgraph::
-   :entries: ec
+   :entries: ecproposal

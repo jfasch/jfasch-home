@@ -1,5 +1,5 @@
-.. jf-topic:: ec.ec1.cxx.iface
-   :dependencies: ec.ec1.cxx.oo_basics
+.. jf-topic:: ecproposal.ec1.cxx.iface
+   :dependencies: ecproposal.ec1.cxx.oo_basics
 
 C++: Interfaces
 ===============

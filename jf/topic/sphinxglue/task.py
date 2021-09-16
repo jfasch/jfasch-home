@@ -29,6 +29,7 @@ def _ev_doctree_read__extract_tasknodes(app, doctree):
                 title=utils.get_document_title(docname, doctree),
                 path=tn.path, 
                 dependencies=tn.dependencies,
+                responsible=tn.responsible,
                 initial_estimate=tn.initial_estimate,
                 spent=tn.spent,
                 percent_done=tn.percent_done,
@@ -40,11 +41,12 @@ def _ev_doctree_read__extract_tasknodes(app, doctree):
         
 class _TaskNode(nodes.Element):
     def __init__(self, path, dependencies,
-                 initial_estimate, spent, percent_done):
+                 responsible, initial_estimate, spent, percent_done):
         super().__init__(self)
         self.title = None
         self.path = path
         self.dependencies = dependencies
+        self.responsible = responsible
         self.initial_estimate = initial_estimate
         self.spent = spent
         self.percent_done = percent_done
@@ -54,6 +56,7 @@ class _TaskDirective(SphinxDirective):
 
     option_spec = {
         'dependencies': utils.list_of_element_path,
+        'responsible': str,
         'initial-estimate': int,
         'spent': int,
         'percent-done': int,
@@ -62,18 +65,25 @@ class _TaskDirective(SphinxDirective):
     def run(self):
         path = utils.element_path(self.arguments[0].strip())
         dependencies = self.options.get('dependencies', [])
-        initial_estimate = self.options.get('initial-estimate')
+        responsible = self.options.get('responsible', '')
+        initial_estimate = self.options.get('initial-estimate', 0)
         spent = self.options.get('spent', 0)
         percent_done = self.options.get('percent-done', 0)
 
-        task = _TaskNode(path=path, dependencies=dependencies,
-                         initial_estimate=initial_estimate, spent=spent, percent_done=percent_done)
+        task = _TaskNode(path=path, 
+                         dependencies=dependencies,
+                         responsible=responsible,
+                         initial_estimate=initial_estimate, 
+                         spent=spent, 
+                         percent_done=percent_done)
         task.document = self.state.document
         set_source_info(self, task)
 
-        graph = TopicGraphNode(entries=[path])
-        graph.document = self.state.document
-        set_source_info(self, graph)
+        # graph = TopicGraphNode(entries=[path])
+        # graph.document = self.state.document
+        # set_source_info(self, graph)
 
-        return [task, graph]
+        return [task
+                # , graph
+                ]
 

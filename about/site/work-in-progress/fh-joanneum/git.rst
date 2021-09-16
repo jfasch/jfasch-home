@@ -1,4 +1,4 @@
-.. jf-topic:: ec.ec1.git
+.. jf-topic:: ecproposal.ec1.git
 
 Git Introduction
 ================
