@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('.'))
 _me = 'Jörg Faschingbauer'
 _canonical = 'https://www.faschingbauer.me'
 project = author = _me
-copyright = '2019-2021, '+_me
+copyright = '2019-2021 (GPLv3), '+_me
 html_title = _me
 html_baseurl = _canonical
 release = version = ''
@@ -142,6 +142,7 @@ if html_theme == _ALABASTER:
     templates_path.append('_templates')
 
     html_theme_options.update({
+        'show_powered_by': False,
         'fixed_sidebar': True,
         'logo': 'logo.png',
         'description': 'Linux und Open Source',
