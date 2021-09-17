@@ -5,8 +5,9 @@ Recipes
    :maxdepth: 1
 
    layout-test
+   emoji
+   mathml
    isoamsa
    isoamsr
    isonum
-   mathml
    sphinxish

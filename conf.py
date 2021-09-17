@@ -42,6 +42,7 @@ extensions = [
     'sphinxcontrib.fulltoc',
     'sphinxcontrib.programoutput',
     'sphinxcontrib.images',
+    'sphinxemoji.sphinxemoji',
 
     'jf.topic',
 
