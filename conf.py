@@ -45,8 +45,6 @@ extensions = [
     'sphinxemoji.sphinxemoji',
 
     'jf.topic',
-
-    'sphinx.environment.collectors.asset',
     'jf.dia',
 ]
 todo_include_todos = True
