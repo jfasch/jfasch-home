@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: sysprog.posix_threads.exercise_mutex
+.. ot-exercise:: sysprog.posix_threads.exercise_mutex
    :dependencies: sysprog.posix_threads.mutex
 
 

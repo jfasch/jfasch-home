@@ -176,7 +176,7 @@ Python
 
 **Course material**
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.cmdline_digit
 
 2021-04-29
@@ -389,7 +389,7 @@ In `checker-digit
 Exercise
 ........
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ece19.blinklicht_unittest,
 	     ece19.blinklicht_abc,
 	     ece19.blinklicht_oo,
@@ -481,7 +481,7 @@ Notebook
 2021-06-01
 ----------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ece19.blinklicht
 
 2021-06-07

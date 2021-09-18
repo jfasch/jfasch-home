@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
 
-.. jf-topic:: python.drafts.encoding
+.. ot-topic:: python.drafts.encoding
    :dependencies: python.basics.python_0150_datatypes_overview,
 		  python.basics.python_0330_strings_encoding,
 		  python.basics.python_0500_files
@@ -279,5 +279,5 @@ And Source Encoding?
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.drafts.encoding

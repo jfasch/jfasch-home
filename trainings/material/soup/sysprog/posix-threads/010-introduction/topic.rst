@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: sysprog.posix_threads.basics
+.. ot-topic:: sysprog.posix_threads.basics
 
 
 Basics

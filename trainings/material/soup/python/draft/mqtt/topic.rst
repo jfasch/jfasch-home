@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.mqtt
+.. ot-topic:: python.drafts.mqtt
    :dependencies: python.drafts.venv
 
 MQTT
@@ -163,9 +163,9 @@ Links
           allowfullscreen>
       </iframe>
 
-Graph
------
+Dependencies
+------------
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.drafts.mqtt
 

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.functions_and_program_structure.basics
+.. ot-topic:: c.functions_and_program_structure.basics
    :dependencies: c.program_flow.goto_and_labels
 
 Basics

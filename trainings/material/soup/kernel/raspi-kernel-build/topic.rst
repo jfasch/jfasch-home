@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.raspi_kernel_build
+.. ot-topic:: kernel.raspi_kernel_build
 
 Raspberry Pi: Building the Kernel
 =================================
@@ -73,7 +73,7 @@ Todo jjj
 Graph
 -----
    
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.raspi_kernel_build
 
 

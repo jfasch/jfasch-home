@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.types_operators_expressions.declarations
+.. ot-topic:: c.types_operators_expressions.declarations
    :dependencies: c.types_operators_expressions.constants
 
 

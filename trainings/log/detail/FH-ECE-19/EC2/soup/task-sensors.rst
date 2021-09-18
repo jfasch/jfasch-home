@@ -1,4 +1,4 @@
-.. jf-task:: ec.ec2.task_sensors
+.. ot-task:: ec.ec2.task_sensors
    :dependencies: ec.ec2.sphinx_intro, 
 		  ec.ec2.virtualbox,
 		  ec.ec2.task_sensor_iface
@@ -45,5 +45,5 @@ A set of Python classes for temperature sensors, implementing the
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ec.ec2.task_sensors

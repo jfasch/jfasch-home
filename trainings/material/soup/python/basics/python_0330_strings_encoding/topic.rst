@@ -6,7 +6,7 @@ Strings and Encoding
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.python_0330_strings_encoding
+.. ot-topic:: python.basics.python_0330_strings_encoding
    :dependencies: python.basics.python_0300_strings
 
 Character Encodings

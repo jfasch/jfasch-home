@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.ownership_raii
+.. ot-topic:: cxx.ownership_raii
 
 C++: Ownership/RAII
 ===================

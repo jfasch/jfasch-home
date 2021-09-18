@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.profiling.oprofile
+.. ot-topic:: c.profiling.oprofile
    :dependencies: c.profiling.callgrind
 
 

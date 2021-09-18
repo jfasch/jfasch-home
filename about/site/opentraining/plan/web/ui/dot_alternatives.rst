@@ -8,7 +8,7 @@ Clientside Graph Rendering
   <https://graphviz.org/>`__) generated inline SVGs.
 * Based upon that, implement the rendering.
 
-.. jf-task:: topic.web.ui.dot_alternatives
+.. ot-task:: topic.web.ui.dot_alternatives
    :initial-estimate: 40
    :dependencies: topic.basics.basic_dependencies,
 		  topic.basics.python_testset,

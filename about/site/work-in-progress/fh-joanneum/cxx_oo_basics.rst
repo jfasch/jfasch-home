@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec1.cxx.oo_basics
+.. ot-topic:: ecproposal.ec1.cxx.oo_basics
    :dependencies: ecproposal.ec1.git, 
 		  ecproposal.ec1.cxx.build
 

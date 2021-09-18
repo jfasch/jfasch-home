@@ -14,7 +14,7 @@
 import logging
 import os
 import sys
-sys.path.insert(0, os.path.abspath('.'))
+#sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 _me = 'Jörg Faschingbauer'
@@ -39,13 +39,13 @@ extensions = [
     'sphinx.ext.graphviz',
     'ablog',
     'nbsphinx',
-    'sphinxcontrib.fulltoc',
+    # ??? 'sphinxcontrib.fulltoc',
     'sphinxcontrib.programoutput',
     'sphinxcontrib.images',
     'sphinxemoji.sphinxemoji',
 
-    'jf.topic',
-    'jf.dia',
+    'opentraining.topic',
+    'opentraining.dia',
 ]
 todo_include_todos = True
 

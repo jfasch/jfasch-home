@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.performance.computebound
+.. ot-topic:: c.performance.computebound
    :dependencies: c.performance.introduction
 
 Compute Bound Code

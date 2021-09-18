@@ -1,9 +1,9 @@
 Open Source and Communication
 =============================
 
-.. jf-group:: topic.oss
+.. ot-group:: topic.oss
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: topic.oss
 
 .. toctree::

@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx11.miscellaneous
+.. ot-group:: cxx11.miscellaneous
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx11.miscellaneous

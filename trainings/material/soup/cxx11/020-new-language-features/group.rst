@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx11.new_language_features
+.. ot-group:: cxx11.new_language_features
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx11.new_language_features

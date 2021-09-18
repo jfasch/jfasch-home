@@ -7,8 +7,8 @@ Linux
    permissions/group
    hardware/group
 
-.. jf-group:: linux
+.. ot-group:: linux
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: linux
 

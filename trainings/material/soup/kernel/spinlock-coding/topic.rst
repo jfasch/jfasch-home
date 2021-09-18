@@ -1,4 +1,4 @@
-.. jf-exercise:: kernel.spinlock_coding
+.. ot-exercise:: kernel.spinlock_coding
    :dependencies: kernel.interrupt_coding,
 		  kernel.spinlock
 
@@ -11,5 +11,5 @@ Coding: Fix *Sleep While Atomic*
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.spinlock_coding

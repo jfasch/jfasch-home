@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise::  c.introduction.exercise_fahrenheit_float
+.. ot-exercise::  c.introduction.exercise_fahrenheit_float
    :dependencies: c.introduction.variables_and_arithmetic_expressions
 
 

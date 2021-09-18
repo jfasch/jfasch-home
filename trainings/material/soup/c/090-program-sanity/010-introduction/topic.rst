@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.program_sanity.introduction
+.. ot-topic:: c.program_sanity.introduction
    :dependencies: c.advanced_language_features.alignment
 
 

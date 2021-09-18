@@ -6,6 +6,6 @@
 
 
 
-.. jf-task:: topic.oss.jf_topic_doc
+.. ot-task:: topic.oss.jf_topic_doc
    :initial-estimate: 40
 

@@ -19,7 +19,7 @@ It is not integrated with Sphinx, which is the point of this task ...
    generated S5 material manually.
 
 
-.. jf-task:: topic.web.slides.s5
+.. ot-task:: topic.web.slides.s5
    :initial-estimate: 80
    :dependencies: topic.basics.python_fullset
 

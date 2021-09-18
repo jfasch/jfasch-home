@@ -1,9 +1,9 @@
 Basics
 ======
 
-.. jf-group:: python.basics
+.. ot-group:: python.basics
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.basics
 
 .. toctree::

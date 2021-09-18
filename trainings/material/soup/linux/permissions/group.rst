@@ -15,7 +15,7 @@ Contents
 Group Description
 -----------------
 
-.. jf-group:: linux.permissions
+.. ot-group:: linux.permissions
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: linux.permissions

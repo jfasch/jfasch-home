@@ -1,4 +1,4 @@
-.. jf-task:: ec.ec2.task_arduino_proxy
+.. ot-task:: ec.ec2.task_arduino_proxy
    :dependencies: ec.ec2.task_sensor_iface,
 		  ec.ec2.virtualbox
 
@@ -39,5 +39,5 @@ An application of the `proxy pattern
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ec.ec2.task_arduino_proxy

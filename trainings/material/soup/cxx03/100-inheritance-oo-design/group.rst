@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03.inheritance_oo
+.. ot-group:: cxx03.inheritance_oo
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx03.inheritance_oo

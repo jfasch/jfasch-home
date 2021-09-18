@@ -11,7 +11,7 @@ material. Rather, dumbly transcribe Latex to reStructuredText.
 
 
 
-.. jf-task:: topic.basics.python_fullset
+.. ot-task:: topic.basics.python_fullset
    :dependencies: topic.basics.python_testset,
 		  topic.basics.groups
    :initial-estimate: 16

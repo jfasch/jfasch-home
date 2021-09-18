@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec2.python.exercise_sensors
+.. ot-topic:: ecproposal.ec2.python.exercise_sensors
    :dependencies: ecproposal.ec1.linux.exercise_sensors,
 		  ecproposal.ec2.python.basics
 

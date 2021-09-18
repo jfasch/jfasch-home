@@ -10,7 +10,7 @@ Custom Training, Subtract Known
   reached nodes/topics
 * Subtract these from the "agenda" graph
 
-.. jf-task:: topic.basics.agenda_subtract_known
+.. ot-task:: topic.basics.agenda_subtract_known
    :dependencies: topic.basics.agenda
    :initial-estimate: 8
    :percent-done: 0

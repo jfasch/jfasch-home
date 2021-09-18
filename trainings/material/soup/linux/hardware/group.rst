@@ -19,7 +19,7 @@ Contents
 Group Description
 -----------------
 
-.. jf-group:: linux.hardware
+.. ot-group:: linux.hardware
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: linux.hardware 

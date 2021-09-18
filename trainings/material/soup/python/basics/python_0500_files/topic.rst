@@ -6,7 +6,7 @@ File I/O
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.python_0500_files
+.. ot-topic:: python.basics.python_0500_files
    :dependencies: python.basics.python_0220_for, 
 		  python.basics.python_0330_strings_encoding
 

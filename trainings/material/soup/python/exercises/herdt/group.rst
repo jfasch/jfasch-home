@@ -21,8 +21,8 @@ Contents
 Graph
 -----
 
-.. jf-group:: python.exercises.herdt
+.. ot-group:: python.exercises.herdt
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.herdt
 

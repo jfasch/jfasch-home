@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.character_io
+.. ot-topic:: c.introduction.character_io
    :dependencies: c.introduction.exercise_fahrenheit_cpp
 
 

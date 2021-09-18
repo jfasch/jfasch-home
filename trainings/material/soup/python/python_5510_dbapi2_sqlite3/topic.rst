@@ -6,7 +6,7 @@ DBAPI 2: ``sqlite3``
 .. contents::
    :local:
 
-.. jf-topic:: python.db.python_5510_dbapi2_sqlite3
+.. ot-topic:: python.db.python_5510_dbapi2_sqlite3
    :dependencies: python.db.python_5500_dbapi2
 
 SQLite3

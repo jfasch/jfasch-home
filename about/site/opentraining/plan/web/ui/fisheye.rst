@@ -5,7 +5,7 @@ Fisheye View
   node
 * Implement that
 
-.. jf-task:: topic.web.ui.fisheye
+.. ot-task:: topic.web.ui.fisheye
    :initial-estimate: 40
    :dependencies: topic.basics.basic_dependencies,
 		  topic.basics.python_testset,

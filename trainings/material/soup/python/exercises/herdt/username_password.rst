@@ -3,7 +3,7 @@
 Username/Password Check
 =======================
 
-.. jf-exercise:: python.exercises.herdt.username_password
+.. ot-exercise:: python.exercises.herdt.username_password
    :dependencies: python.exercises.herdt.greeting,
 		  python.basics.python_0170_if
 
@@ -19,5 +19,5 @@ Write a program that
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.herdt.username_password

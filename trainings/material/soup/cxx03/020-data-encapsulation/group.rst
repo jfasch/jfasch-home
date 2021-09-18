@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03.data_encapsulation
+.. ot-group:: cxx03.data_encapsulation
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx03.data_encapsulation

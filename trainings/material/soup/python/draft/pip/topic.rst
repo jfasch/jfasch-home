@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.pip
+.. ot-topic:: python.drafts.pip
    :dependencies: python.drafts.import
 
 Python Package Index
@@ -12,5 +12,5 @@ Python Package Index
 
 See also :doc:`../venv/topic`.
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.drafts.pip

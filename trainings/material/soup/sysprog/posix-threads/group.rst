@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: sysprog.posix_threads
+.. ot-group:: sysprog.posix_threads
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: sysprog.posix_threads

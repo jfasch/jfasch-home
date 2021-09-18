@@ -1,9 +1,9 @@
 I2S Audio for a Kontron SMARC Module
 ====================================
 
-.. jf-group:: project_xxx
+.. ot-group:: project_xxx
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: project_xxx
 
 .. toctree::

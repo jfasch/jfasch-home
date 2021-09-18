@@ -1,4 +1,4 @@
-.. jf-topic:: python.python_1010_generators_yield
+.. ot-topic:: python.python_1010_generators_yield
    :dependencies: python.basics.python_0220_for,
 		  python.basics.python_0200_sequential_types,
 		  python.basics.python_0225_range,

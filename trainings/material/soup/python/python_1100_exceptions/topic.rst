@@ -6,7 +6,7 @@ Exception Handling
 .. contents::
    :local:
 
-.. jf-topic:: python.swdev.python_1100_exceptions
+.. ot-topic:: python.swdev.python_1100_exceptions
    :dependencies: python.basics.python_0140_variables,
 		  python.basics.python_0270_functions,
 		  python.swdev.python_1050_oo

@@ -6,7 +6,7 @@ The ``range`` Function
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.python_0225_range
+.. ot-topic:: python.basics.python_0225_range
    :dependencies: python.basics.python_0200_sequential_types, 
 		  python.basics.python_0220_for
 

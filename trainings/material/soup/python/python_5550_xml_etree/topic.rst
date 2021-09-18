@@ -6,7 +6,7 @@ XML: ElementTree (``etree``)
 .. contents::
    :local:
 
-.. jf-topic:: python.python_5550_xml_etree
+.. ot-topic:: python.python_5550_xml_etree
    :dependencies: python.swdev.python_1200_modules,
 		  python.basics.python_0220_for,
                   python.basics.python_0450_dictionaries

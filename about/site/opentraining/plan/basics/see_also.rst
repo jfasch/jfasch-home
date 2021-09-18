@@ -19,7 +19,7 @@ Tasks:
 * Modify existing code that currently treats any edge as "Depends On".
 * Add "See Also" links as a sidebar to topics.
 
-.. jf-task:: topic.basics.see_also
+.. ot-task:: topic.basics.see_also
    :dependencies: topic.basics.basic_dependencies,
 		  topic.basics.python_testset
    :initial-estimate: 8

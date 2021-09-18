@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.netdev
+.. ot-topic:: kernel.netdev
    :dependencies: kernel.dma,
 		  kernel.interrupt
 
@@ -10,5 +10,5 @@ Network Devices
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.netdev

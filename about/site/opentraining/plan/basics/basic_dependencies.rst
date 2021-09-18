@@ -9,7 +9,7 @@ Sphinx directive ``jf-topic`` to define a topic node, like so:
       :dependencies: <topic-name>, <topic-name>, ...
 
 
-.. jf-task:: topic.basics.basic_dependencies
+.. ot-task:: topic.basics.basic_dependencies
    :initial-estimate: 24
    :spent: 24
    :percent-done: 100

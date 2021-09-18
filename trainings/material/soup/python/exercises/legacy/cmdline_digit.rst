@@ -3,7 +3,7 @@
 Digit to English Word
 =====================
 
-.. jf-exercise:: python.exercises.legacy.cmdline_digit
+.. ot-exercise:: python.exercises.legacy.cmdline_digit
    :dependencies: python.exercises.legacy.dict_keyerror,
 		  python.basics.python_0120_helloworld,
 		  python.basics.python_0150_datatypes_overview_compound
@@ -23,5 +23,5 @@ parameter. Print the English word for that digit.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.cmdline_digit

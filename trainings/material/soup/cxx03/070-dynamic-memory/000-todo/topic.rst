@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.dynamic_memory.todo
+.. ot-topic:: cxx03.dynamic_memory.todo
    :dependencies: cxx03.stl.associative_containers
 
 

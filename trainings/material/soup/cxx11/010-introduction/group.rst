@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx11.introduction
+.. ot-group:: cxx11.introduction
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx11.introduction

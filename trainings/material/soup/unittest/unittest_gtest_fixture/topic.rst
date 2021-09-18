@@ -1,4 +1,4 @@
-.. jf-topic:: unittest.gtest_fixture
+.. ot-topic:: unittest.gtest_fixture
    :dependencies: unittest.gtest_basics, 
 		  unittest.gtest_cmake
 

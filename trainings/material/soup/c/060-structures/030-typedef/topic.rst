@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.structures.typedef
+.. ot-topic:: c.structures.typedef
    :dependencies: c.structures.structures_and_functions
 
 ``typedef``: Type Alias

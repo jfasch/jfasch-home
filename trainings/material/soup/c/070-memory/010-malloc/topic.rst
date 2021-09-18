@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.memory.malloc
+.. ot-topic:: c.memory.malloc
    :dependencies: c.structures.typedef
 
 

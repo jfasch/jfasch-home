@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.types_operators_expressions.conditional_expressions
+.. ot-topic:: c.types_operators_expressions.conditional_expressions
    :dependencies: c.types_operators_expressions.assignment_operators_and_expressions
 
 

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.profiling.introduction
+.. ot-topic:: c.profiling.introduction
    :dependencies: c.performance.memory
 
 

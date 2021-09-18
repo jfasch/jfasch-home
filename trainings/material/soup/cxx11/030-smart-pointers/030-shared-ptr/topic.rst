@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.smart_pointers.shared_ptr
+.. ot-topic:: cxx11.smart_pointers.shared_ptr
    :dependencies: cxx11.smart_pointers.unique_ptr
 
 

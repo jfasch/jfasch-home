@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.dynamic_memory
+.. ot-topic:: cxx.dynamic_memory
 
 C++: Dynamic Memory
 ===================

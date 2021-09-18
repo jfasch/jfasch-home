@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.usermem
+.. ot-topic:: kernel.usermem
    :dependencies: kernel.workqueue
 
 
@@ -11,5 +11,5 @@ Accessing Userspace Memory
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.usermem

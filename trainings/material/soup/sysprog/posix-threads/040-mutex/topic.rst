@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: sysprog.posix_threads.mutex
+.. ot-topic:: sysprog.posix_threads.mutex
    :dependencies: sysprog.posix_threads.exercise_pthcreate_racecondition
 
 

@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.lambda
+.. ot-topic:: cxx.lambda
 
 C++: Lambda
 ===========

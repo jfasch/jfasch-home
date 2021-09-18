@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.interrupt
+.. ot-topic:: kernel.interrupt
    :dependencies: kernel.process_vs_atomic
 
 
@@ -10,5 +10,5 @@ Interrupts
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.interrupt

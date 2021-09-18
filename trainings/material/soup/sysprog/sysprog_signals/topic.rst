@@ -1,4 +1,4 @@
-.. jf-topic:: sysprog.signals
+.. ot-topic:: sysprog.signals
 
 Sysprog: Signals
 ================

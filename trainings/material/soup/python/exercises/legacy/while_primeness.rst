@@ -3,7 +3,7 @@
 Primeness (``while``)
 =====================
 
-.. jf-exercise:: python.exercises.legacy.while_primeness
+.. ot-exercise:: python.exercises.legacy.while_primeness
    :dependencies: python.exercises.legacy.cmdline_digit,
 		  python.basics.python_0193_while
 
@@ -24,6 +24,6 @@ The number that the program checks can be given in two ways,
 Dependencies
 ------------
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.exercises.legacy.while_primeness
    

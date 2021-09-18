@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.class_template
+.. ot-topic:: cxx.class_template
    :dependencies: cxx.class_intro
 
 C++: Class Templates

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.types_operators_expressions.variable_names
+.. ot-topic:: c.types_operators_expressions.variable_names
    :dependencies: c.types_operators_expressions.introduction
 
 

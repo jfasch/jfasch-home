@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.introduction.exercise_string_read_line
+.. ot-exercise:: c.introduction.exercise_string_read_line
    :dependencies: c.introduction.character_arrays
 
 

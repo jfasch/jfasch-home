@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.memory.exercise_linked_list
+.. ot-exercise:: c.memory.exercise_linked_list
    :dependencies: c.memory.malloc
 
 Singly Linked List

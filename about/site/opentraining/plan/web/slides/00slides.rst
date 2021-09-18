@@ -1,9 +1,9 @@
 Slides
 ======
 
-.. jf-group:: topic.web.slides
+.. ot-group:: topic.web.slides
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: topic.web.slides
 
 .. toctree::

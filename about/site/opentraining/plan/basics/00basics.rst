@@ -1,9 +1,9 @@
 Basics
 ======
 
-.. jf-group:: topic.basics
+.. ot-group:: topic.basics
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: topic.basics
 
 .. toctree::

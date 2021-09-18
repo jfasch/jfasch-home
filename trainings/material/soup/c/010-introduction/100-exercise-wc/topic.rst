@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.introduction.exercise_wc
+.. ot-exercise:: c.introduction.exercise_wc
    :dependencies: c.introduction.character_io
 
 

@@ -1,4 +1,4 @@
-.. jf-task:: ec.ec2.virtualbox
+.. ot-task:: ec.ec2.virtualbox
    :responsible: joerg.faschingbauer
 
 VirtualBox (Working With Embedded Linux Devices)
@@ -16,5 +16,5 @@ don't yet have a VirtualBox image.)
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ec.ec2.virtualbox

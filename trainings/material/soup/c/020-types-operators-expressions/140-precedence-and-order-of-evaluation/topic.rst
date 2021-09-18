@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.types_operators_expressions.precedence_and_order_of_evaluation
+.. ot-topic:: c.types_operators_expressions.precedence_and_order_of_evaluation
    :dependencies: c.types_operators_expressions.conditional_expressions
 
 

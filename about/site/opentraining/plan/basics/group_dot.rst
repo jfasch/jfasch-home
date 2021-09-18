@@ -5,7 +5,7 @@ Topic Groups: ``dot`` Visualization
 * Take into account arbitrary levels of nesting.
 
 
-.. jf-task:: topic.basics.group_dot
+.. ot-task:: topic.basics.group_dot
    :dependencies: topic.basics.groups
    :initial-estimate: 5
    :percent-done: 100

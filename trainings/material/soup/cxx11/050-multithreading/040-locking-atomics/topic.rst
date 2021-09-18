@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.multithreading.locking_atomics
+.. ot-topic:: cxx11.multithreading.locking_atomics
    :dependencies: cxx11.multithreading.race_conditions, 
 		  sysprog.posix_threads.mutex
 

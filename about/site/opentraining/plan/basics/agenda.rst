@@ -15,7 +15,7 @@ the customer),
   <https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.dag.topological_sort.html>`__
 * ... and output that list in reverse order |longrightarrow| agenda
 
-.. jf-task:: topic.basics.agenda
+.. ot-task:: topic.basics.agenda
    :dependencies: topic.basics.basic_dependencies,
 		  topic.basics.python_testset
    :initial-estimate: 4

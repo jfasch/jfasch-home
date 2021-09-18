@@ -6,7 +6,7 @@ Parsing ``/etc/passwd``
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.legacy.passwd
+.. ot-exercise:: python.exercises.legacy.passwd
    :dependencies: python.exercises.legacy.distill,
 		  python.basics.python_0500_files
 

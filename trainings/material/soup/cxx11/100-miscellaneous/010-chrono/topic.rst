@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.multithreading.chrono
+.. ot-topic:: cxx11.multithreading.chrono
    :dependencies: cxx11.multithreading.condition_variable
 
 

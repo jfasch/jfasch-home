@@ -22,7 +22,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: sysprog
+.. ot-group:: sysprog
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: sysprog

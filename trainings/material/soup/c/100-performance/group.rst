@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.performance
+.. ot-group:: c.performance
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.performance

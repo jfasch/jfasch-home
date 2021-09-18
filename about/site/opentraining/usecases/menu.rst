@@ -15,5 +15,5 @@ all that.
 
 The information is there, and all that information can be computed.
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python

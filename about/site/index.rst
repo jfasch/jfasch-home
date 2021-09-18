@@ -34,11 +34,13 @@ that.
 
 A while ago, there was a `Debian resolution
 <https://www.debian.org/vote/2006/vote_001>`__ to not use the GFDL
-because it is *too* restrictive.
-
-`This article
+because it is *too* restrictive. `This article
 <https://web.archive.org/web/20080515215935/http://home.twcny.rr.com/nerode/neroden/fdl.html>`__
 describes pretty much the same issues.
+
+**How do I choose a license altogether?**
+
+I have no idea. https://choosealicense.com/ appears helpful.
 
 Github
 ------
@@ -77,4 +79,3 @@ More
    recipes/index
    courses/index
    org/index
-

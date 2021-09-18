@@ -9,7 +9,7 @@ Basics: Mode, User and Group Ownership
 
 .. sidebar:: Topic
 
-   .. jf-topic:: linux.permissions.basics
+   .. ot-topic:: linux.permissions.basics
 
 Owner and Permissions
 ---------------------

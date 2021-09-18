@@ -30,7 +30,7 @@ Contents
 Group Definition
 ----------------
 
-.. jf-group:: python.drafts
+.. ot-group:: python.drafts
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.drafts

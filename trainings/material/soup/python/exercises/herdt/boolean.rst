@@ -3,7 +3,7 @@
 Boolean Expressions
 ===================
 
-.. jf-exercise:: python.exercises.herdt.boolean
+.. ot-exercise:: python.exercises.herdt.boolean
    :dependencies: python.basics.python_0160_boolean
 
 #. What is the value of the following expression?
@@ -24,5 +24,5 @@ Boolean Expressions
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.herdt.boolean

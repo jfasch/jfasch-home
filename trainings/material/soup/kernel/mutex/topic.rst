@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.mutex
+.. ot-topic:: kernel.mutex
    :dependencies: kernel.process_vs_atomic
 
 
@@ -10,5 +10,5 @@ Mutex (and RT Mutex)
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.mutex

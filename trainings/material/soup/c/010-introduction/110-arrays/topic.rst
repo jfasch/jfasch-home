@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.arrays
+.. ot-topic:: c.introduction.arrays
    :dependencies: c.introduction.exercise_wc
 
 

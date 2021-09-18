@@ -3,7 +3,7 @@
 Dictionary: Errors?
 ===================
 
-.. jf-exercise:: python.exercises.legacy.dict_keyerror
+.. ot-exercise:: python.exercises.legacy.dict_keyerror
    :dependencies: python.basics.python_0150_datatypes_overview_compound 
 
 In the interactive interpreter, create a dictionary like so:
@@ -26,5 +26,5 @@ What happens if you access a non-existent key?
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.dict_keyerror

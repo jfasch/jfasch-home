@@ -1,4 +1,4 @@
-.. jf-topic:: sysprog.ipc
+.. ot-topic:: sysprog.ipc
 
 Sysprog: POSIX IPC
 ==================

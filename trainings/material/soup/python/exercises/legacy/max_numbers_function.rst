@@ -6,7 +6,7 @@ Determine Maximum of Two Numbers (Function)
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.legacy.max_numbers_function
+.. ot-exercise:: python.exercises.legacy.max_numbers_function
    :dependencies: python.exercises.legacy.max_numbers,
 		  python.exercises.legacy.for_primeness,
 		  python.basics.python_0270_functions
@@ -25,5 +25,5 @@ Modify the program from :doc:`max_numbers` as follows.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.max_numbers_function

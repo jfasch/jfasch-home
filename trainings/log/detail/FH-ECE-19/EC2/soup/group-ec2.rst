@@ -1,4 +1,4 @@
-.. jf-group:: ec.ec2
+.. ot-group:: ec.ec2
 
 Embedded Computing 2
 ====================

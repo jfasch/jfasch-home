@@ -20,9 +20,9 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx11
+.. ot-group:: cxx11
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx11
 
 .. register subgroups with toctree.

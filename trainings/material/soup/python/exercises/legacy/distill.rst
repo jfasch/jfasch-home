@@ -6,7 +6,7 @@ Eliminate Empty/Comment-Only Lines
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.legacy.distill
+.. ot-exercise:: python.exercises.legacy.distill
    :dependencies: python.exercises.legacy.revert,
 		  python.basics.python_0500_files
 
@@ -17,5 +17,5 @@ entirely consist of a Python style comment.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.distill

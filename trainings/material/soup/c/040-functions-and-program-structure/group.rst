@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.functions_and_program_structure
+.. ot-group:: c.functions_and_program_structure
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.functions_and_program_structure

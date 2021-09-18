@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.pointers_and_arrays.pointers_and_function_arguments
+.. ot-topic:: c.pointers_and_arrays.pointers_and_function_arguments
    :dependencies: c.pointers_and_arrays.pointers_and_addresses
 
 

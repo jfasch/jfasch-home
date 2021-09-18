@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.spinlock
+.. ot-topic:: kernel.spinlock
    :dependencies: kernel.process_vs_atomic
 
 
@@ -10,5 +10,5 @@ Spinlock (vs. Mutex)
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.spinlock

@@ -1,4 +1,4 @@
-.. jf-task:: ec.ec2.task_prog_stdout
+.. ot-task:: ec.ec2.task_prog_stdout
    :dependencies: ec.ec2.task_sensor_iface
 
 Simple (``stdout``) Temperature Output
@@ -33,5 +33,5 @@ thermometers. That program has the following characteristics.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ec.ec2.task_prog_stdout

@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.workqueue
+.. ot-topic:: kernel.workqueue
    :dependencies: kernel.timer_coding,
 		  kernel.process_vs_atomic
 
@@ -12,5 +12,5 @@ Workqueue
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.workqueue

@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.list
+.. ot-topic:: kernel.list
 
 Doubly Linked Lists
 ===================
@@ -8,5 +8,5 @@ Doubly Linked Lists
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.list

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.functions
+.. ot-topic:: c.introduction.functions
    :dependencies: c.introduction.exercise_histogram
 
 

@@ -1,9 +1,9 @@
 UI Improvements
 ===============
 
-.. jf-group:: topic.web.ui
+.. ot-group:: topic.web.ui
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: topic.web.ui
 
 .. toctree::

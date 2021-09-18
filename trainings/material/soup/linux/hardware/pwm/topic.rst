@@ -6,7 +6,7 @@ The Linux PWM Userspace Interface
 
 .. sidebar:: Topic
 
-   .. jf-topic:: linux.hardware.pwm
+   .. ot-topic:: linux.hardware.pwm
 
 Overview
 --------

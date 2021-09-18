@@ -3,7 +3,7 @@
 Greeting, Depending on Time of Day
 ==================================
 
-.. jf-exercise:: python.exercises.herdt.greeting
+.. ot-exercise:: python.exercises.herdt.greeting
    :dependencies: python.exercises.herdt.max_numbers,
 		  python.basics.python_0170_if
 
@@ -35,5 +35,5 @@ and sex.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.herdt.greeting

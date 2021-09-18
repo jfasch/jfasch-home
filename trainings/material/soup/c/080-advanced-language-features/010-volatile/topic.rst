@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.advanced_language_features.volatile
+.. ot-topic:: c.advanced_language_features.volatile
    :dependencies: c.memory.exercise_linked_list
 
 

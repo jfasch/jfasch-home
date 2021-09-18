@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec2.python.web_sensors
+.. ot-topic:: ecproposal.ec2.python.web_sensors
    :dependencies: ecproposal.ec2.python.flask,
 		  ecproposal.ec2.python.exercise_avg_display
 

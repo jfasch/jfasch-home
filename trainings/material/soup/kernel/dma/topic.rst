@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.dma
+.. ot-topic:: kernel.dma
    :dependencies: kernel.kmalloc
 
 DMA
@@ -9,5 +9,5 @@ DMA
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.dma

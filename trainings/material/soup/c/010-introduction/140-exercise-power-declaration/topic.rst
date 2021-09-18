@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.introduction.exercise_power_declaration
+.. ot-exercise:: c.introduction.exercise_power_declaration
    :dependencies: c.introduction.functions
 
 

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.multithreading.thread
+.. ot-topic:: cxx11.multithreading.thread
    :dependencies: cxx11.multithreading.introduction,
 		  sysprog.posix_threads.lifecycle
 

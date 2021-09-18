@@ -6,7 +6,7 @@ More on Lists
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.python_0400_lists
+.. ot-topic:: python.basics.python_0400_lists
    :dependencies: python.basics.python_0150_datatypes_overview_compound
 
 List Access

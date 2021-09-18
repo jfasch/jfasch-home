@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.program_flow.else_if
+.. ot-topic:: c.program_flow.else_if
    :dependencies: c.program_flow.if_else
 
 

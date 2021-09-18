@@ -20,7 +20,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: unittest
+.. ot-group:: unittest
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: unittest

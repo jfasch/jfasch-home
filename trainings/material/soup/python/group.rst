@@ -44,8 +44,8 @@ Contents
 Group Description
 -----------------
 
-.. jf-group:: python
+.. ot-group:: python
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python
 

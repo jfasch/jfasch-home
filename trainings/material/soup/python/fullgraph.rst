@@ -1,5 +1,5 @@
 Python Topics: Directed Acyclic Graph
 =====================================
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python

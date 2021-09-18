@@ -6,7 +6,7 @@ Boolean
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.python_0160_boolean
+.. ot-topic:: python.basics.python_0160_boolean
    :dependencies: python.basics.python_0150_datatypes_overview
 
 Boolean Values

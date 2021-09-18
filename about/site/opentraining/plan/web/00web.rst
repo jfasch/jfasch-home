@@ -1,7 +1,7 @@
 Web Design and Programming
 ==========================
 
-.. jf-group:: topic.web
+.. ot-group:: topic.web
 
 .. toctree::
 

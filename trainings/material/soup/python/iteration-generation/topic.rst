@@ -1,4 +1,4 @@
-.. jf-topic:: python.iteration_generation
+.. ot-topic:: python.iteration_generation
    :dependencies: python.basics.python_0220_for
 
 Iteration, Comprehensions, and Generators
@@ -16,7 +16,8 @@ The :doc:`screenplay <screenplay>` covers
 * Writing generators using ``yield``
 * Generator expressions
 
-See also 
+Dependencies
+------------
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.iteration_generation

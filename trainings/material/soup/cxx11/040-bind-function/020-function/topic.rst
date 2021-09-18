@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.functions_functions.function
+.. ot-topic:: cxx11.functions_functions.function
    :dependencies: cxx11.functions_functions.bind
 
 

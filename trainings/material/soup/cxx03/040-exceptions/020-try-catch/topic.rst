@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.exceptions.try_catch
+.. ot-topic:: cxx03.exceptions.try_catch
    :dependencies: cxx03.exceptions.basics
 
 

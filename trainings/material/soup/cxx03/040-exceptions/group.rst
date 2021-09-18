@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03.exceptions
+.. ot-group:: cxx03.exceptions
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx03.exceptions

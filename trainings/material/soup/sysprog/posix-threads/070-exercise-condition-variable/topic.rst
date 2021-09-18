@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: sysprog.posix_threads.exercise_condition_variable
+.. ot-exercise:: sysprog.posix_threads.exercise_condition_variable
    :dependencies: sysprog.posix_threads.condition_variable
 
 

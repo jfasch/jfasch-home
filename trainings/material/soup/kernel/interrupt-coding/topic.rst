@@ -1,4 +1,4 @@
-.. jf-exercise:: kernel.interrupt_coding
+.. ot-exercise:: kernel.interrupt_coding
    :dependencies: kernel.raspi_kernel_build,
 		  kernel.mutex_coding,
 		  kernel.interrupt
@@ -12,5 +12,5 @@ Coding: Raspi GPIO Interrupts
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.interrupt_coding

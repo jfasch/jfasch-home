@@ -3,7 +3,7 @@
 Generator: ``uniq()``
 =====================
 
-.. jf-exercise:: python.exercises.legacy.uniq_generator
+.. ot-exercise:: python.exercises.legacy.uniq_generator
    :dependencies: python.exercises.legacy.uniq_function,
 		  python.exercises.legacy.passwd,
 		  python.python_1010_generators_yield
@@ -17,5 +17,5 @@ uniqified numbers. Transform your solution to use ``yield`` instead.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.uniq_generator

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.structures.basics
+.. ot-topic:: c.structures.basics
    :dependencies: c.pointers_and_arrays.command_line_arguments
 
 ``struct``: Basics

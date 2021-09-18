@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.global_initialization
+.. ot-topic:: cxx.global_initialization
 
 C++: Global Objects Initialization
 ==================================

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.structures.structures_and_functions
+.. ot-topic:: c.structures.structures_and_functions
    :dependencies: c.structures.basics
 
 

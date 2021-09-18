@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.types_operators_expressions
+.. ot-group:: c.types_operators_expressions
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.types_operators_expressions

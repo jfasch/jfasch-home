@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.pointers_and_arrays.exercise_swap
+.. ot-exercise:: c.pointers_and_arrays.exercise_swap
    :dependencies: c.pointers_and_arrays.pointers_and_function_arguments
 
 

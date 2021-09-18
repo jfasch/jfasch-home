@@ -61,7 +61,7 @@ Tag 3
 Tag 4
 .....
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.wc,
              python.exercises.legacy.revert,
              python.exercises.legacy.distill

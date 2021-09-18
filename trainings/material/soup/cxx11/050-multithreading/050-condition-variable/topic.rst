@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.multithreading.condition_variable
+.. ot-topic:: cxx11.multithreading.condition_variable
    :dependencies: cxx11.multithreading.locking_atomics,
 		  sysprog.posix_threads.condition_variable
 

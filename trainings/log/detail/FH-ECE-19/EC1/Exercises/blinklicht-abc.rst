@@ -3,7 +3,7 @@
 GPIO: Blinklicht Interface
 ==========================
 
-.. jf-exercise:: ece19.blinklicht_abc
+.. ot-exercise:: ece19.blinklicht_abc
    :dependencies: ece19.blinklicht_oo
 
 .. contents:: 
@@ -19,5 +19,5 @@ TODO
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ece19.blinklicht_oo

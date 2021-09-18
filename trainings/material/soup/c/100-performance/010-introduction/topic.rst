@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.performance.introduction
+.. ot-topic:: c.performance.introduction
    :dependencies: c.program_sanity.valgrind
 
 Optimization

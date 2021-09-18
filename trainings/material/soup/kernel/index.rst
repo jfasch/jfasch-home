@@ -17,14 +17,14 @@ Topics and Dependencies
 
    */topic
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: kernel
 
 
 Group Description
 -----------------
 
-.. jf-group:: kernel
+.. ot-group:: kernel
 
 Sample Code Maintenance
 -----------------------

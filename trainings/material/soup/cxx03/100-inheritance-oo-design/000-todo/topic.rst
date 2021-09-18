@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.inheritance_oo.todo
+.. ot-topic:: cxx03.inheritance_oo.todo
    :dependencies: cxx03.dynamic_memory.todo
 
 

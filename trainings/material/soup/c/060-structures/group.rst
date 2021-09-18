@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.structures
+.. ot-group:: c.structures
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.structures

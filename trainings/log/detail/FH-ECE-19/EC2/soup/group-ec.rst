@@ -1,4 +1,4 @@
-.. jf-group:: ec
+.. ot-group:: ec
 
 Embedded Computing
 ==================

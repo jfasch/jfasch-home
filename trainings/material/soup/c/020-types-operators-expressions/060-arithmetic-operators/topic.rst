@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.types_operators_expressions.arithmetic_operators
+.. ot-topic:: c.types_operators_expressions.arithmetic_operators
    :dependencies: c.types_operators_expressions.declarations
 
 

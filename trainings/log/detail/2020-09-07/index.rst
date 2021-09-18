@@ -477,7 +477,7 @@ extraordinary hike.  </blog/2020/09/traunstein>`
 Graph
 -----
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.drafts.ai.linear_regression,
 	     python.drafts.ai.k_means,
 	     python.drafts.duck_typing,

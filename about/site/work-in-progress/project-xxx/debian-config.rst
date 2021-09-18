@@ -1,4 +1,4 @@
-.. jf-task:: project_xxx.debian_config
+.. ot-task:: project_xxx.debian_config
    :initial-estimate: 3
    :percent-done: 100
 

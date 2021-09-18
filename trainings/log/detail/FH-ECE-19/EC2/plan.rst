@@ -1,5 +1,5 @@
 Project Plan
 ============
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: ec.ec2

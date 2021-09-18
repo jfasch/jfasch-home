@@ -6,7 +6,7 @@ Github/ReadTheDocs: Python
 
 
 
-.. jf-task:: topic.oss.python
+.. ot-task:: topic.oss.python
    :initial-estimate: 24
    :dependencies: topic.basics.python_gen_overview
 

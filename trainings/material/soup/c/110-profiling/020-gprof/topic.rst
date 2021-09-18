@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.profiling.gprof
+.. ot-topic:: c.profiling.gprof
    :dependencies: c.profiling.introduction
 
 

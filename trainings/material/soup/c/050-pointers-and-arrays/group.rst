@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.pointers_and_arrays
+.. ot-group:: c.pointers_and_arrays
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.pointers_and_arrays

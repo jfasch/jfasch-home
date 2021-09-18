@@ -1,4 +1,4 @@
-.. jf-exercise:: kernel.multiple_devices
+.. ot-exercise:: kernel.multiple_devices
    :dependencies: kernel.cdev_refactoring
 
 
@@ -10,5 +10,5 @@ Coding: Multiple Devices
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.multiple_devices

@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec1.linux.exercise_sensors
+.. ot-topic:: ecproposal.ec1.linux.exercise_sensors
    :dependencies: ecproposal.ec1.linux.dev_mgmt, 
 		  ecproposal.ec1.cxx.iface,
 		  ecproposal.ec1.cxx.build,

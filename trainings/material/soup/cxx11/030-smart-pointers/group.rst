@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx11.smart_pointers
+.. ot-group:: cxx11.smart_pointers
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx11.smart_pointers

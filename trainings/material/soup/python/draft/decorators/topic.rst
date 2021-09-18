@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.decorators
+.. ot-topic:: python.drafts.decorators
    :dependencies: python.basics.python_0270_functions,
 		  python.drafts.closures,
 		  python.drafts.starargs,
@@ -13,5 +13,5 @@ Decorators
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.drafts.decorators

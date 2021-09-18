@@ -1,5 +1,5 @@
 Generated Topic Graph
 =====================
 
-.. jf-topicgraph::
+.. ot-graph::
 

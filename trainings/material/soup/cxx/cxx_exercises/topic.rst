@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.exercises
+.. ot-topic:: cxx.exercises
 
 C++: Exercises
 ==============

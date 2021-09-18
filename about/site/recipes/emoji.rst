@@ -28,6 +28,7 @@ Codes
 -----
 
 .. list-table::
+   :align: left
 
    * * |:+1:|
      * ``|:+1:|``

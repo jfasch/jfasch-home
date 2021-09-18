@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.venv
+.. ot-topic:: python.drafts.venv
    :dependencies: python.drafts.import,
 		  python.drafts.pip
 
@@ -12,6 +12,6 @@ Virtual Environments
    screenplay
    links
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.drafts.venv
 

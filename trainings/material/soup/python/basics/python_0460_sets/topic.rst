@@ -6,7 +6,7 @@ More on Sets
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.python_0460_sets
+.. ot-topic:: python.basics.python_0460_sets
    :dependencies: python.basics.python_0150_datatypes_overview_compound
 
 Sets

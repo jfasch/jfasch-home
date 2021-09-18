@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.pci
+.. ot-topic:: kernel.pci
    :dependencies: kernel.interrupt,
 		  kernel.iomemory,
 		  kernel.dma
@@ -12,5 +12,5 @@ PCI
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.pci

@@ -1,8 +1,8 @@
 Databases
 =========
 
-.. jf-group:: python.db
+.. ot-group:: python.db
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.db
 

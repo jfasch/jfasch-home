@@ -6,7 +6,7 @@ Counting Lines, Words, Characters
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.legacy.wc
+.. ot-exercise:: python.exercises.legacy.wc
    :dependencies: python.exercises.legacy.python_0350_exercises, 
 		  python.basics.python_0500_files
 
@@ -22,5 +22,5 @@ and then outputs the gathered statistics to ``stdout``
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.wc

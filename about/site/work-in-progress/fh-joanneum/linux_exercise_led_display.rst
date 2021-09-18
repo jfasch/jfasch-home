@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec1.linux.exercise_led_display
+.. ot-topic:: ecproposal.ec1.linux.exercise_led_display
    :dependencies: ecproposal.ec1.linux.exercise_avg_sensor,
 		  ecproposal.ec1.linux.gpio,
 		  ecproposal.ec1.cxx.unittest

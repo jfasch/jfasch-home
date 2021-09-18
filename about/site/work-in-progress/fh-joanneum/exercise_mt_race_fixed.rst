@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec1.mt.exercise_mt_race_fixed
+.. ot-topic:: ecproposal.ec1.mt.exercise_mt_race_fixed
    :dependencies: ecproposal.ec1.mt.exercise_mt_race,
 		  ecproposal.ec1.mt.lock
 

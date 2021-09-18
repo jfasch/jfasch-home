@@ -3,7 +3,7 @@
 Functions: ``join()``
 =====================
 
-.. jf-exercise:: python.exercises.legacy.join_function
+.. ot-exercise:: python.exercises.legacy.join_function
    :dependencies: python.exercises.legacy.uniq_function,
 		  python.basics.python_0270_functions,
 		  python.basics.python_0150_datatypes_overview,
@@ -21,5 +21,5 @@ separator. For example,
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.join_function

@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.cdev_auto
+.. ot-topic:: kernel.cdev_auto
    :dependencies: kernel.cdev_manual
 
 Modern Character Devices
@@ -17,5 +17,5 @@ Modern Character Devices
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.cdev_auto

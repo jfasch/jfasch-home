@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.ai.k_means
+.. ot-topic:: python.drafts.ai.k_means
    :dependencies: python.drafts.venv, 
 		  python.drafts.ai.machine_learning_intro,
 		  python.drafts.ai.linear_regression
@@ -50,5 +50,5 @@ Like :doc:`linear-regression/topic`, this topic consists of
 Topic Dependencies
 ------------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.drafts.ai.k_means

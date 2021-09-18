@@ -8,7 +8,7 @@ Github/PyPI: ``jf.topic``
 
 
 
-.. jf-task:: topic.oss.jf_topic
+.. ot-task:: topic.oss.jf_topic
    :initial-estimate: 24
    :dependencies: topic.basics.python_gen_overview,
 		  topic.oss.jf_topic_doc

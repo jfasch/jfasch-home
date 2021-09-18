@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.types_operators_expressions.constants
+.. ot-topic:: c.types_operators_expressions.constants
    :dependencies: c.types_operators_expressions.datatypes_size
 
 

@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.modules_hello_world
+.. ot-topic:: kernel.modules_hello_world
    :dependencies: kernel.fedora_module_build
 
 Module Loading, Hello World
@@ -9,5 +9,5 @@ Module Loading, Hello World
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.modules_hello_world

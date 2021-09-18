@@ -1,9 +1,9 @@
 Project Plan
 ============
 
-.. jf-group:: topic
+.. ot-group:: topic
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: topic
 
 .. toctree::

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.functions_and_methods.operators
+.. ot-topic:: cxx03.functions_and_methods.operators
    :dependencies: cxx03.functions_and_methods.static
 
 

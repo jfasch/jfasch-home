@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.advanced_language_features.alignment
+.. ot-topic:: c.advanced_language_features.alignment
    :dependencies: c.advanced_language_features.atomic
 
 

@@ -1,4 +1,4 @@
-.. jf-task:: project_xxx.yocto_kernel
+.. ot-task:: project_xxx.yocto_kernel
    :initial-estimate: 2
    :percent-done: 100
 

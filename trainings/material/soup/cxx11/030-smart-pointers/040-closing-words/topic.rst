@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.smart_pointers.closing_words
+.. ot-topic:: cxx11.smart_pointers.closing_words
    :dependencies: cxx11.smart_pointers.shared_ptr
 
 

@@ -10,7 +10,7 @@ Print Graph (``.dot``, ``.pdf``)
 
 
 
-.. jf-task:: topic.web.ui.print_graph
+.. ot-task:: topic.web.ui.print_graph
    :initial-estimate: 32
    :dependencies: topic.basics.python_fullset
 

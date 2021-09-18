@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx11.functions_functions
+.. ot-group:: cxx11.functions_functions
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx11.functions_functions

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.program_sanity.const
+.. ot-topic:: c.program_sanity.const
    :dependencies: c.program_sanity.static
 
 Correctness - ``const``

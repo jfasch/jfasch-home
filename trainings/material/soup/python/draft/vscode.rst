@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.vscode
+.. ot-topic:: python.drafts.vscode
 
 Visual Studio Code for Python Programming
 =========================================

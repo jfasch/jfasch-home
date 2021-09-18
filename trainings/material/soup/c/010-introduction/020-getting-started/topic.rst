@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.hello_world
+.. ot-topic:: c.introduction.hello_world
    :dependencies: c.introduction.introduction
 
 Hello World

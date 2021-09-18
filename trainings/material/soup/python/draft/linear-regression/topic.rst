@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.ai.linear_regression
+.. ot-topic:: python.drafts.ai.linear_regression
    :dependencies: python.drafts.venv, 
 		  python.drafts.ai.machine_learning_intro
 
@@ -74,7 +74,7 @@ Both the notebook and the program use a :doc:`test dataset
 Topic Dependencies
 ------------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.drafts.ai.linear_regression
 
 .. rubric:: Footnotes

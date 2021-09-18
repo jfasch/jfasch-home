@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.program_sanity.struct_initialization
+.. ot-topic:: c.program_sanity.struct_initialization
    :dependencies: c.program_sanity.const
 
 

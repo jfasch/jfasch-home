@@ -1,4 +1,4 @@
-.. jf-topic:: sysprog.events
+.. ot-topic:: sysprog.events
 
 Sysprog: Events
 ===============

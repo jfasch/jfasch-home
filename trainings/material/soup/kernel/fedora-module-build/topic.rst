@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.fedora_module_build
+.. ot-topic:: kernel.fedora_module_build
    :dependencies: kernel.fedora_kernel_build
 
 Fedora: Building External Kernel Modules
@@ -9,5 +9,5 @@ Fedora: Building External Kernel Modules
 
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.fedora_module_build

@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.starargs
+.. ot-topic:: python.drafts.starargs
    :dependencies: python.basics.python_0270_functions
 
 Positional and Keyword Arguments
@@ -9,5 +9,5 @@ Positional and Keyword Arguments
 
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.drafts.starargs

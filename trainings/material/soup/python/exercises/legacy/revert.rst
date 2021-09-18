@@ -6,7 +6,7 @@ Reverting Lines of a File
 .. contents::
    :local:
 
-.. jf-exercise:: python.exercises.legacy.revert
+.. ot-exercise:: python.exercises.legacy.revert
    :dependencies: python.exercises.legacy.wc,
 		  python.basics.python_0500_files
 
@@ -18,5 +18,5 @@ otherwise the linefeed will come first in the reversed line.)
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.revert

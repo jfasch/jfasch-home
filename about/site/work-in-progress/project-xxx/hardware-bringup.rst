@@ -1,4 +1,4 @@
-.. jf-task:: project_xxx.hardware_bringup
+.. ot-task:: project_xxx.hardware_bringup
    :dependencies: project_xxx.dirty_upgrade, project_xxx.wait_hardware
    :initial-estimate: 16
    :percent-done: 0

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: python.basics.python_0193_while
+.. ot-topic:: python.basics.python_0193_while
    :dependencies: python.basics.python_0160_boolean,
 		  python.basics.python_0170_if
 

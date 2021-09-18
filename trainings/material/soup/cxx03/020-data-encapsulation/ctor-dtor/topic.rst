@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.data_encapsulation.ctor_dtor
+.. ot-topic:: cxx03.data_encapsulation.ctor_dtor
    :dependencies: cxx03.data_encapsulation.introduction
 
 

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.new_language_features.miscellaneous
+.. ot-topic:: cxx11.new_language_features.miscellaneous
    :dependencies: cxx11.new_language_features.move
 
 

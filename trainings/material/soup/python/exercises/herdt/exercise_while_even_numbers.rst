@@ -3,7 +3,7 @@
 Even Numbers (``while``)
 ========================
 
-.. jf-exercise:: python.exercises.herdt.while_even_numbers
+.. ot-exercise:: python.exercises.herdt.while_even_numbers
    :dependencies: python.exercises.herdt.username_password,
 		  python.basics.python_0193_while
 
@@ -15,5 +15,5 @@ Even Numbers (``while``)
 Dependencies
 ------------
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.exercises.herdt.while_even_numbers

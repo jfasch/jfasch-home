@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.cdev_manual
+.. ot-topic:: kernel.cdev_manual
    :dependencies: kernel.modules_hello_world
 
 Character Device Basics
@@ -10,5 +10,5 @@ Character Device Basics
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.cdev_manual

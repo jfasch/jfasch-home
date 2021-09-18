@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: sysprog.posix_threads.exercise_pthcreate_racecondition
+.. ot-exercise:: sysprog.posix_threads.exercise_pthcreate_racecondition
    :dependencies: sysprog.posix_threads.lifecycle
 
 

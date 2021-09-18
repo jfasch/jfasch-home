@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.cpp_symbolic_constants
+.. ot-topic:: c.introduction.cpp_symbolic_constants
    :dependencies: c.introduction.exercise_fahrenheit_for
 
 

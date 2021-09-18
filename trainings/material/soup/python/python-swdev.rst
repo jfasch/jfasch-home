@@ -1,7 +1,7 @@
 Software Development
 ====================
 
-.. jf-group:: python.swdev
+.. ot-group:: python.swdev
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.swdev

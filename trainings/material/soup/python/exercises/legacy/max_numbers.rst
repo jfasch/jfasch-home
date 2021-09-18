@@ -3,7 +3,7 @@
 Determine Maximum of Two Numbers
 ================================
 
-.. jf-exercise:: python.exercises.legacy.max_numbers
+.. ot-exercise:: python.exercises.legacy.max_numbers
    :dependencies: python.exercises.legacy.mixed_list_executable,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0170_if
@@ -26,5 +26,5 @@ Write a program that
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.max_numbers

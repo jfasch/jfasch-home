@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03.templates
+.. ot-group:: cxx03.templates
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx03.templates

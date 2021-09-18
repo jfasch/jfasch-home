@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.functions_functions.bind
+.. ot-topic:: cxx11.functions_functions.bind
    :dependencies: cxx11.smart_pointers.closing_words
 
 

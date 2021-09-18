@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.multithreading.race_conditions
+.. ot-topic:: cxx11.multithreading.race_conditions
    :dependencies: sysprog.posix_threads.exercise_pthcreate_racecondition,
 		  cxx11.multithreading.thread
 

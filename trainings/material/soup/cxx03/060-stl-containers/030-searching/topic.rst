@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.stl.searching
+.. ot-topic:: cxx03.stl.searching
    :dependencies: cxx03.stl.sorting
 
 

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.new_language_features.auto
+.. ot-topic:: cxx11.new_language_features.auto
    :dependencies: cxx11.new_language_features.strongly_typed_enums
 
 

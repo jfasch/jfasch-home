@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.class_intro
+.. ot-topic:: cxx.class_intro
 
 C++: Class (Introduction)
 =========================

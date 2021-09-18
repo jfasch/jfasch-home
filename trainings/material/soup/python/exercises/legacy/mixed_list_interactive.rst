@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: python.exercises.legacy.mixed_list_interactive
+.. ot-exercise:: python.exercises.legacy.mixed_list_interactive
    :dependencies: python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,
 		  python.basics.python_0150_datatypes_overview_compound,
@@ -26,5 +26,5 @@ Does it work? If yes, print the list using the ``print()`` function.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.mixed_list_interactive

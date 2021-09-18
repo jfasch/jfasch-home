@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.performance.memory
+.. ot-topic:: c.performance.memory
    :dependencies: c.performance.computebound
 
 Memory Optimizations

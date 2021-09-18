@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: sysprog.posix_threads.lifecycle
+.. ot-topic:: sysprog.posix_threads.lifecycle
    :dependencies: sysprog.posix_threads.basics
 
 

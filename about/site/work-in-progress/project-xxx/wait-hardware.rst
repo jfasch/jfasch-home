@@ -1,4 +1,4 @@
-.. jf-task:: project_xxx.wait_hardware
+.. ot-task:: project_xxx.wait_hardware
    :initial-estimate: 0
    :percent-done: 0
 

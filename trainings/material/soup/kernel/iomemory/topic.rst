@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.iomemory
+.. ot-topic:: kernel.iomemory
    :dependencies: kernel.modules_hello_world
 
 IO Memory
@@ -9,5 +9,5 @@ IO Memory
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.iomemory

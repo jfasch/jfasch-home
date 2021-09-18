@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.timer
+.. ot-topic:: kernel.timer
    :dependencies: kernel.process_vs_atomic
 
 
@@ -10,5 +10,5 @@ Timer Management
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.timer

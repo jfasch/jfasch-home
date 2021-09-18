@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.multithreading.introduction
+.. ot-topic:: cxx11.multithreading.introduction
    :dependencies: cxx11.functions_functions.function
 
 

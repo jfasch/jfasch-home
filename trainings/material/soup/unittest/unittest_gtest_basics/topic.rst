@@ -1,4 +1,4 @@
-.. jf-topic:: unittest.gtest_basics
+.. ot-topic:: unittest.gtest_basics
 
 Unittest: GTest Basics
 ======================

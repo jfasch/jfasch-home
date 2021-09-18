@@ -3,7 +3,7 @@
 Primeness (Function)
 ====================
 
-.. jf-exercise:: python.exercises.legacy.function_primeness
+.. ot-exercise:: python.exercises.legacy.function_primeness
    :dependencies: python.exercises.legacy.max_numbers_function,
 		  python.basics.python_0270_functions
 
@@ -32,5 +32,5 @@ code.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.function_primeness

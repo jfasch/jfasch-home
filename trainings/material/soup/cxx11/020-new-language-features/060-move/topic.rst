@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx11.new_language_features.move
+.. ot-topic:: cxx11.new_language_features.move
    :dependencies: cxx11.new_language_features.delegating_ctor
 
 

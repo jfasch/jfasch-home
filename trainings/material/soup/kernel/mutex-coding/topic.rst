@@ -1,4 +1,4 @@
-.. jf-exercise:: kernel.mutex_coding
+.. ot-exercise:: kernel.mutex_coding
    :dependencies: kernel.multiple_devices,
 		  kernel.mutex
 
@@ -11,5 +11,5 @@ Coding: Fix Race Condition (Mutex)
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.mutex_coding

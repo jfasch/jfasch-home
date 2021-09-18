@@ -1,4 +1,4 @@
-.. jf-topic:: python.basics.python_0270_functions
+.. ot-topic:: python.basics.python_0270_functions
    :dependencies: python.basics.python_0140_variables,
                   python.basics.python_0150_datatypes_overview
 
@@ -17,5 +17,5 @@ Functions
    * :doc:`/trainings/material/soup/python/draft/decorators/topic`
    * :doc:`/trainings/material/soup/python/draft/starargs/topic`
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.basics.python_0270_functions

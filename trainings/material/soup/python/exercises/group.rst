@@ -16,7 +16,7 @@ Contents
 Graph
 -----
 
-.. jf-group:: python.exercises
+.. ot-group:: python.exercises
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises

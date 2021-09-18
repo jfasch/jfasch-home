@@ -1,10 +1,10 @@
 .. include:: <mmlalias.txt>
 
+.. ot-exercise:: ece19.blinklicht_unittest
+   :dependencies: ece19.blinklicht_abc
+
 GPIO: Blinklicht Unittests
 ==========================
-
-.. jf-exercise:: ece19.blinklicht_unittest
-   :dependencies: ece19.blinklicht_abc
 
 .. contents:: 
    :local:
@@ -18,5 +18,5 @@ TODO
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ece19.blinklicht_unittest

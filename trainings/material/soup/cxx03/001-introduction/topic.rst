@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.introduction
+.. ot-topic:: cxx03.introduction
 
 Introduction
 ============

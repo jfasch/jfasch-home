@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.character_arrays
+.. ot-topic:: c.introduction.character_arrays
    :dependencies: c.introduction.exercise_power_declaration
 
 

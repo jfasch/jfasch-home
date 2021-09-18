@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.closures
+.. ot-topic:: python.drafts.closures
    :dependencies: python.basics.python_0270_functions
 
 Closures
@@ -10,5 +10,5 @@ Closures
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.drafts.closures

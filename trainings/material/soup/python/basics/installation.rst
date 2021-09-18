@@ -1,4 +1,4 @@
-.. jf-topic:: python.basics.installation
+.. ot-topic:: python.basics.installation
 
 Python Installation
 ===================

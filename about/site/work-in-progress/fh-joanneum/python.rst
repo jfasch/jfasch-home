@@ -1,4 +1,4 @@
-.. jf-group:: ecproposal.ec2.python
+.. ot-group:: ecproposal.ec2.python
 
 Python
 ======

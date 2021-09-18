@@ -1,4 +1,4 @@
-.. jf-exercise:: kernel.cdev_refactoring
+.. ot-exercise:: kernel.cdev_refactoring
    :dependencies: kernel.cdev_first_functionality
 
 
@@ -11,5 +11,5 @@ Coding: Refactoring
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.cdev_refactoring

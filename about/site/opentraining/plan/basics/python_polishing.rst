@@ -9,7 +9,7 @@ such reports.
 
 
 
-.. jf-task:: topic.basics.python_gen_overview
+.. ot-task:: topic.basics.python_gen_overview
    :dependencies: topic.basics.group_dot,
 		  topic.basics.group_listing,
 		  topic.basics.python_fullset

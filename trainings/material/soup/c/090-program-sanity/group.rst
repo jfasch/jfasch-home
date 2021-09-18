@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.program_sanity
+.. ot-group:: c.program_sanity
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.program_sanity

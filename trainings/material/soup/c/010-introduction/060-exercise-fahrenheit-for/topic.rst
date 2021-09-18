@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.introduction.exercise_fahrenheit_for
+.. ot-exercise:: c.introduction.exercise_fahrenheit_for
    :dependencies: c.introduction.for_loop
 
 

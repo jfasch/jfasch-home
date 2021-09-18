@@ -1,4 +1,4 @@
-.. jf-task:: ec.ec2.sphinx_intro
+.. ot-task:: ec.ec2.sphinx_intro
    :responsible: joerg.faschingbauer
 
 Sphinx Skeleton, Introduction
@@ -12,5 +12,5 @@ Sphinx Skeleton, Introduction
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ec.ec2.sphinx_intro

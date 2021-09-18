@@ -16,9 +16,9 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03
+.. ot-group:: cxx03
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx03
 
 .. register subgroups with toctree.

@@ -3,7 +3,7 @@
 Swap Two Variables
 ==================
 
-.. jf-exercise:: python.exercises.herdt.swap
+.. ot-exercise:: python.exercises.herdt.swap
    :dependencies: python.exercises.herdt.boolean,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0150_datatypes_overview,
@@ -23,5 +23,5 @@ Swap Two Variables
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.herdt.swap

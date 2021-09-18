@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.program_sanity.valgrind
+.. ot-topic:: c.program_sanity.valgrind
    :dependencies: c.program_sanity.explicit_type_safety
 
 ``valgrind``

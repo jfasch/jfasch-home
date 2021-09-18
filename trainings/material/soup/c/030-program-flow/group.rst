@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.program_flow
+.. ot-group:: c.program_flow
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.program_flow

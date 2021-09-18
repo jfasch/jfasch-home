@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec1.cxx.build
+.. ot-topic:: ecproposal.ec1.cxx.build
 
 C++: Building with CMake
 ========================

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.types_operators_expressions.exercise_string_reduce
+.. ot-exercise:: c.types_operators_expressions.exercise_string_reduce
    :dependencies: c.types_operators_expressions.increment_decrement_operators
 
 

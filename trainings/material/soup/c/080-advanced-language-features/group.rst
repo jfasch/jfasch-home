@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.advanced_language_features
+.. ot-group:: c.advanced_language_features
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.advanced_language_features

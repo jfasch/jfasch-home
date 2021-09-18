@@ -6,7 +6,7 @@ Indexing and Slicing
 .. contents::
    :local:
 
-.. jf-topic:: python.basics.python_0210_indexing_slicing
+.. ot-topic:: python.basics.python_0210_indexing_slicing
    :dependencies: python.basics.python_0200_sequential_types
 
 Indexing (1)

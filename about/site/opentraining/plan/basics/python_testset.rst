@@ -8,7 +8,7 @@ Goal of this is to have a small yet representative set of nodes to
 experiment with.
 
 
-.. jf-task:: topic.basics.python_testset
+.. ot-task:: topic.basics.python_testset
    :dependencies: topic.basics.basic_dependencies
    :initial-estimate: 5
    :percent-done: 100

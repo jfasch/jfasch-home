@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.program_flow.loops_do_while
+.. ot-topic:: c.program_flow.loops_do_while
    :dependencies: c.program_flow.loops_while_and_for
 
 

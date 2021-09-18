@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-exercise:: c.introduction.exercise_histogram
+.. ot-exercise:: c.introduction.exercise_histogram
    :dependencies: c.introduction.arrays
 
 

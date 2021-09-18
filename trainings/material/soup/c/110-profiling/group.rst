@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.profiling
+.. ot-group:: c.profiling
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.profiling

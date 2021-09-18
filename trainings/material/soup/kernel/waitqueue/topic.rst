@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.waitqueue
+.. ot-topic:: kernel.waitqueue
    :dependencies: kernel.usermem,
 		  kernel.cdev_file_operations
 
@@ -12,5 +12,5 @@ Waiting for Something
    slides
    screenplay
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.waitqueue

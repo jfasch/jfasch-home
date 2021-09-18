@@ -6,7 +6,7 @@ other toolkit) to expand/collapse that element.
 
 
 
-.. jf-task:: topic.web.ui.expand_collapse_svg
+.. ot-task:: topic.web.ui.expand_collapse_svg
    :initial-estimate: 40
    :dependencies: topic.basics.python_fullset
 

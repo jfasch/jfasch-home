@@ -1,4 +1,4 @@
-.. jf-task:: ec.ec2.task_sensor_iface
+.. ot-task:: ec.ec2.task_sensor_iface
 
 Thermometer Interface Definition
 ================================
@@ -34,5 +34,5 @@ Thermometer Interface Definition
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ec.ec2.task_sensor_iface

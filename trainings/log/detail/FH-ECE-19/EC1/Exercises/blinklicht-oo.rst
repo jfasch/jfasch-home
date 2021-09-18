@@ -1,10 +1,10 @@
 .. include:: <mmlalias.txt>
 
+.. ot-exercise:: ece19.blinklicht_oo
+   :dependencies: ece19.blinklicht
+
 GPIO: Object Oriented Blinklicht
 ================================
-
-.. jf-exercise:: ece19.blinklicht_oo
-   :dependencies: ece19.blinklicht
 
 .. contents:: 
    :local:
@@ -19,5 +19,5 @@ TODO
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ece19.blinklicht_oo

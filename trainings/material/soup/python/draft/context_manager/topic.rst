@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.context_manager
+.. ot-topic:: python.drafts.context_manager
    :dependencies: python.basics.python_0140_variables,
 		  python.drafts.decorators,
 		  python.python_1010_generators_yield,
@@ -20,6 +20,6 @@ Context Managers (the ``with`` Statement) (*incomplete*)
 * ``__enter__``, ``__exit__``
 * contextlib
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: python.drafts.closures
 

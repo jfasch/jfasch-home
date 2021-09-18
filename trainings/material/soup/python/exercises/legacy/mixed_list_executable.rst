@@ -3,7 +3,7 @@
 Mixed List (Executable Program)
 ===============================
 
-.. jf-exercise:: python.exercises.legacy.mixed_list_executable
+.. ot-exercise:: python.exercises.legacy.mixed_list_executable
    :dependencies: python.exercises.legacy.mixed_list_interactive,
 		  python.basics.python_0120_helloworld,
 		  python.basics.python_0140_variables,
@@ -18,5 +18,5 @@ program.
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.mixed_list_executable

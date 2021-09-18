@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: cxx03.templates.class_templates
+.. ot-topic:: cxx03.templates.class_templates
    :dependencies: cxx03.templates.function_templates
 
 

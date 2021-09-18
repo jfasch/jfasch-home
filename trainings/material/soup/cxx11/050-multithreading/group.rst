@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx11.multithreading
+.. ot-group:: cxx11.multithreading
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx11.multithreading

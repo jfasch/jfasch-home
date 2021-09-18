@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: sysprog.posix_threads.last_warning
+.. ot-topic:: sysprog.posix_threads.last_warning
    :dependencies: sysprog.posix_threads.miscellaneous
 
 

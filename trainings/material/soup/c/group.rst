@@ -25,9 +25,9 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c
+.. ot-group:: c
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c
 
 .. register subgroups with toctree.

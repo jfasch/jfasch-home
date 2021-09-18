@@ -20,7 +20,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx
+.. ot-group:: cxx
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx

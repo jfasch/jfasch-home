@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.advanced_language_features.atomic
+.. ot-topic:: c.advanced_language_features.atomic
    :dependencies: c.advanced_language_features.volatile
 
 

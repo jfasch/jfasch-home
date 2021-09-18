@@ -1,4 +1,4 @@
-.. jf-topic:: kernel.process_vs_atomic
+.. ot-topic:: kernel.process_vs_atomic
 
 
 Process vs.Atomic Context
@@ -9,5 +9,5 @@ Process vs.Atomic Context
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.process_vs_atomic

@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03.functions_and_methods
+.. ot-group:: cxx03.functions_and_methods
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx03.functions_and_methods

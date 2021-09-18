@@ -1,4 +1,4 @@
-.. jf-topic:: python.drafts.ai.machine_learning_intro
+.. ot-topic:: python.drafts.ai.machine_learning_intro
 
 Machine Learning: Concepts and Terminology
 ==========================================
@@ -6,7 +6,7 @@ Machine Learning: Concepts and Terminology
 .. contents::
    :local:
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.drafts.ai.machine_learning_intro
 
 This topic is an introductory one. We will only scratch the surface;

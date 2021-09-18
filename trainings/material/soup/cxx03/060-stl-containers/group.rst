@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: cxx03.stl
+.. ot-group:: cxx03.stl
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: cxx03.stl

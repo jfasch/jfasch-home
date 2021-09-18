@@ -1,4 +1,4 @@
-.. jf-exercise:: kernel.timer_coding
+.. ot-exercise:: kernel.timer_coding
    :dependencies: kernel.spinlock_coding,
 		  kernel.timer
 
@@ -11,5 +11,5 @@ Coding: Timed Event
 
    slides
 
-.. jf-topicgraph:: 
+.. ot-graph:: 
    :entries: kernel.timer_coding

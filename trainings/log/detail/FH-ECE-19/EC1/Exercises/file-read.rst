@@ -1,10 +1,10 @@
 .. include:: <mmlalias.txt>
 
+.. ot-exercise:: ece19.file_read
+   :dependencies: python.basics.python_0500_files
+
 Reading a File
 ==============
-
-.. jf-exercise:: ece19.file_read
-   :dependencies: python.basics.python_0500_files
 
 .. contents:: 
    :local:
@@ -65,5 +65,5 @@ Further Information
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ece19.file_read

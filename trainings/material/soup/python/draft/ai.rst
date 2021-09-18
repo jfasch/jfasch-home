@@ -14,7 +14,7 @@ Contents
 Group Definition
 ----------------
 
-.. jf-group:: python.drafts.ai
+.. ot-group:: python.drafts.ai
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.drafts.ai

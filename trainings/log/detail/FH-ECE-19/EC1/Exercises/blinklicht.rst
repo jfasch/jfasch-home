@@ -1,10 +1,10 @@
 .. include:: <mmlalias.txt>
 
+.. ot-exercise:: ece19.blinklicht
+   :dependencies: ece19.file_read
+
 GPIO: Blinklicht
 ================
-
-.. jf-exercise:: ece19.blinklicht
-   :dependencies: ece19.file_read
 
 .. contents:: 
    :local:
@@ -135,5 +135,5 @@ Implementation Notes
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: ece19.blinklicht

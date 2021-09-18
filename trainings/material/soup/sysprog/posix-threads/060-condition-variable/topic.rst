@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: sysprog.posix_threads.condition_variable
+.. ot-topic:: sysprog.posix_threads.condition_variable
    :dependencies: sysprog.posix_threads.exercise_mutex
 
 

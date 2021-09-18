@@ -16,7 +16,7 @@ Topics
 Group Description
 -----------------
 	      
-.. jf-group:: c.memory
+.. ot-group:: c.memory
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: c.memory

@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.functions_and_program_structure.header_files
+.. ot-topic:: c.functions_and_program_structure.header_files
    :dependencies: c.functions_and_program_structure.external_variables
 
 

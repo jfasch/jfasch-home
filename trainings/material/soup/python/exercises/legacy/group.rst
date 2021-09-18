@@ -36,8 +36,8 @@ Contents
 Graph
 -----
 
-.. jf-group:: python.exercises.legacy
+.. ot-group:: python.exercises.legacy
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy
 

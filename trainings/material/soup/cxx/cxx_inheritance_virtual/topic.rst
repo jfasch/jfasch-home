@@ -1,4 +1,4 @@
-.. jf-topic:: cxx.inheritance_virtual
+.. ot-topic:: cxx.inheritance_virtual
 
 C++: Inheritance, Interfaces, ``virtual``
 =========================================

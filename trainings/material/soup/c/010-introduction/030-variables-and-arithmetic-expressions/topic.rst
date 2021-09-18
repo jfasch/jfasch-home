@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.variables_and_arithmetic_expressions
+.. ot-topic:: c.introduction.variables_and_arithmetic_expressions
    :dependencies: c.introduction.hello_world
 
 

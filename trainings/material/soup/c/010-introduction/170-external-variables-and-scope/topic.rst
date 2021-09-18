@@ -1,6 +1,6 @@
 .. include:: <mmlalias.txt>
 
-.. jf-topic:: c.introduction.external_variables_and_scope
+.. ot-topic:: c.introduction.external_variables_and_scope
    :dependencies: c.introduction.exercise_string_read_line
 
 

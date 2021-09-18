@@ -11,7 +11,7 @@ Github/ReadTheDocs: Sysprog
 
 
 
-.. jf-task:: topic.oss.sysprog
+.. ot-task:: topic.oss.sysprog
    :dependencies: topic.basics.python_gen_overview,
 		  topic.oss.jf_topic,
 		  topic.oss.python

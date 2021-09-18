@@ -1,4 +1,4 @@
-.. jf-topic:: ecproposal.ec1.linux.gpio
+.. ot-topic:: ecproposal.ec1.linux.gpio
    :dependencies: ecproposal.ec1.linux.dev_mgmt
 
 GPIO

@@ -40,7 +40,7 @@ Here you can see the structure of the hypothetical training that we
 defined above. An arrow A |longrightarrow| B means that topic B must
 be explained before topic A (A is said to *depend* on B).
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.python_1010_generators_yield,
 	     python.swdev.python_1050_oo,
 	     python.swdev.python_1100_exceptions,

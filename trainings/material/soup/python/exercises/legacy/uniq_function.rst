@@ -3,7 +3,7 @@
 Function: ``uniq()``
 ====================
 
-.. jf-exercise:: python.exercises.legacy.uniq_function
+.. ot-exercise:: python.exercises.legacy.uniq_function
    :dependencies: python.exercises.legacy.function_primeness,
 		  python.basics.python_0270_functions,
 		  python.basics.python_0150_datatypes_overview_compound
@@ -43,5 +43,5 @@ The expected program output is as follows:
 Dependencies
 ------------
 
-.. jf-topicgraph::
+.. ot-graph::
    :entries: python.exercises.legacy.uniq_function
