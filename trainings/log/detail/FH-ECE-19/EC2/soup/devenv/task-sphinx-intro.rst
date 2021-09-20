@@ -1,8 +1,14 @@
-.. ot-task:: ec.ec2.sphinx_intro
+.. ot-task:: ec2.devenv.sphinx_intro
    :responsible: joerg.faschingbauer
 
 Sphinx Skeleton, Introduction
 =============================
+
+.. contents::
+   :local:
+
+Description
+-----------
 
 * In the Git repository, create a Sphinx doc structure (and an initial
   ``requirements.txt``) file.
@@ -13,4 +19,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: ec.ec2.sphinx_intro
+   :entries: ec2.devenv.sphinx_intro

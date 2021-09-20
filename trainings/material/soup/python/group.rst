@@ -29,10 +29,10 @@ Contents
 
    basics/group
    exercises/group
-   python-swdev
-   python-db
-   fullgraph
+   swdev/group
+   db/group
    draft/group
+   fullgraph
 
 .. toctree::
    :maxdepth: 1

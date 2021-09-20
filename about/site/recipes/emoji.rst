@@ -280,11 +280,6 @@ Codes
      * ``|:as:|``
    * * |:ascension:|
      * ``|:ascension:|``
-.. "asterisk" causes rst to bummer out
-..    * * |:asterisk:|
-..      * ``|:asterisk:|``
-..    * * |:asterisk_symbol:|
-..      * ``|:asterisk_symbol:|``
    * * |:astonished:|
      * ``|:astonished:|``
    * * |:astronaut:|
@@ -3885,8 +3880,6 @@ Codes
      * ``|:key:|``
    * * |:keyboard:|
      * ``|:keyboard:|``
-   * * |:keycap_asterisk:|
-     * ``|:keycap_asterisk:|``
    * * |:keycap_ten:|
      * ``|:keycap_ten:|``
    * * |:kg:|

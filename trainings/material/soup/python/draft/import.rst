@@ -1,5 +1,5 @@
 .. ot-topic:: python.drafts.import
-   :dependencies: python.swdev.python_1200_modules
+   :dependencies: python.swdev.modules
 
 The ``import`` Statement (incomplete)
 =====================================
@@ -11,6 +11,6 @@ TODO
 ----
 
 * Rip relevant material out from
-  :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+  :doc:`/trainings/material/soup/python/swdev/modules`
 * Don't forget about ``python -m venv`` (for example), which is why we
   do this.

@@ -6,8 +6,8 @@ DBAPI 2: ``sqlite3``
 .. contents::
    :local:
 
-.. ot-topic:: python.db.python_5510_dbapi2_sqlite3
-   :dependencies: python.db.python_5500_dbapi2
+.. ot-topic:: python.db.sqlite3
+   :dependencies: python.db.dbapi2
 
 SQLite3
 -------

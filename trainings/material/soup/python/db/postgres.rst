@@ -6,8 +6,8 @@ DBAPI 2: PostgreSQL
 .. contents::
    :local:
 
-.. ot-topic:: python.db.python_5520_dbapi2_postgres
-   :dependencies: python.db.python_5500_dbapi2
+.. ot-topic:: python.db.postgres
+   :dependencies: python.db.dbapi2
 
 DBAPI 2 Example: Postgres
 -------------------------

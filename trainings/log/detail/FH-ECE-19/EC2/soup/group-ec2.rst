@@ -1,13 +1,28 @@
-.. ot-group:: ec.ec2
+.. ot-group:: ec2
 
-Embedded Computing 2
-====================
+Plan for *Embedded Computing 2*
+===============================
+
+.. contents::
+   :local:
+
+Big Picture |:rolling_on_the_floor_laughing:|
+---------------------------------------------
+
+.. image:: picture-hw-perspective.png
+
+Work Packages
+-------------
 
 .. toctree::
+   :maxdepth: 1
 
-   task-sensor-iface
-   task-sensors
-   task-sphinx-intro
-   task-virtualbox
-   task-arduino-proxy
-   task-prog-stdout
+   sensors/group
+   mqtt/group
+   devenv/group
+
+Project Plan
+------------
+
+.. ot-graph::
+   :entries: ec2

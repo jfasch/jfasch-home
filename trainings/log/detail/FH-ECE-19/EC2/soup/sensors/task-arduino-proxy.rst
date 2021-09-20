@@ -1,9 +1,15 @@
-.. ot-task:: ec.ec2.task_arduino_proxy
-   :dependencies: ec.ec2.task_sensor_iface,
-		  ec.ec2.virtualbox
+.. ot-task:: ec2.sensors.task_arduino_proxy
+   :dependencies: ec2.sensors.task_sensor_iface,
+		  ec2.devenv.virtualbox
 
 Arduino/Raspberry Communication (Proxy Sensor)
 ==============================================
+
+.. contents::
+   :local:
+
+Description
+-----------
 
 An application of the `proxy pattern
 <https://en.wikipedia.org/wiki/Proxy_pattern>`__:
@@ -40,4 +46,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: ec.ec2.task_arduino_proxy
+   :entries: ec2.sensors.task_arduino_proxy

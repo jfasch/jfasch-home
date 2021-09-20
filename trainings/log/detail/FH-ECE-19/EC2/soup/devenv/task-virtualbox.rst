@@ -1,8 +1,15 @@
-.. ot-task:: ec.ec2.virtualbox
+.. ot-task:: ec2.devenv.virtualbox
    :responsible: joerg.faschingbauer
+   :percent-done: 10
 
 VirtualBox (Working With Embedded Linux Devices)
 ================================================
+
+.. contents::
+   :local:
+
+Description
+-----------
 
 (See :doc:`here </blog/2021/09/xps13-shim-mok-brick/index>` for why we
 don't yet have a VirtualBox image.)
@@ -17,4 +24,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: ec.ec2.virtualbox
+   :entries: ec2.devenv.virtualbox

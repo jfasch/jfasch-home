@@ -1,7 +1,13 @@
-.. ot-task:: ec.ec2.task_sensor_iface
+.. ot-task:: ec2.sensors.task_sensor_iface
 
 Thermometer Interface Definition
 ================================
+
+.. contents::
+   :local:
+
+Description
+-----------
 
 * Define a temperature sensor (thermometer) interface to be used
   throughout the project, roughly as follows.
@@ -35,4 +41,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: ec.ec2.task_sensor_iface
+   :entries: ec2.sensors.task_sensor_iface

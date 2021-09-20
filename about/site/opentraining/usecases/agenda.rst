@@ -13,9 +13,9 @@ call it becomes clear that they are interested in the following
 topics,
 
 * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/python/python_1050_oo/topic`
-* :doc:`/trainings/material/soup/python/python_1100_exceptions/topic`
-* :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+* :doc:`/trainings/material/soup/python/swdev/oo`
+* :doc:`/trainings/material/soup/python/swdev/exceptions`
+* :doc:`/trainings/material/soup/python/swdev/modules`
 
 I promise them to come up with an agenda for the training.
 
@@ -42,9 +42,9 @@ be explained before topic A (A is said to *depend* on B).
 
 .. ot-graph::
    :entries: python.python_1010_generators_yield,
-	     python.swdev.python_1050_oo,
-	     python.swdev.python_1100_exceptions,
-	     python.swdev.python_1200_modules
+	     python.swdev.oo,
+	     python.swdev.exceptions,
+	     python.swdev.modules
 
 Based upon this knowledge, a tool can be used to *automatically*
 generate an agenda.
@@ -56,8 +56,8 @@ generate an agenda.
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
-* :doc:`/trainings/material/soup/python/python_1050_oo/topic`
-* :doc:`/trainings/material/soup/python/python_1100_exceptions/topic`
+* :doc:`/trainings/material/soup/python/swdev/oo`
+* :doc:`/trainings/material/soup/python/swdev/exceptions`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+* :doc:`/trainings/material/soup/python/swdev/modules`

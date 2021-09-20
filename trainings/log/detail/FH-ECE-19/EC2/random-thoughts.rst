@@ -1,5 +1,5 @@
-Random Ideas
-============
+Random Ideas from *Embedded Computing 1*
+========================================
 
 .. contents::
    :local:

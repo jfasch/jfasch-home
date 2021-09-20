@@ -1,7 +1,7 @@
-.. ot-task:: ec.ec2.task_sensors
-   :dependencies: ec.ec2.sphinx_intro, 
-		  ec.ec2.virtualbox,
-		  ec.ec2.task_sensor_iface
+.. ot-task:: ec2.sensors.task_sensors
+   :dependencies: ec2.devenv.sphinx_intro, 
+		  ec2.devenv.virtualbox,
+		  ec2.sensors.task_sensor_iface
 
 Hardware Temperature Sensors (Core Classes)
 ===========================================
@@ -9,8 +9,8 @@ Hardware Temperature Sensors (Core Classes)
 .. contents::
    :local:
 
-Deliverables
-------------
+Description
+-----------
 
 A set of Python classes for temperature sensors, implementing the
 ``Thermometer`` :doc:`interface <task-sensor-iface>`.
@@ -28,10 +28,12 @@ A set of Python classes for temperature sensors, implementing the
   * LM73 via userspace I2C (`here
     <https://www.kernel.org/doc/Documentation/i2c/dev-interface>`__)
 
+* Possibly other sensors? Some from the Arduino starter kit?
+
 .. note:: 
 
-   Both sensors are well-supported by Linux; their drivers support the
-   ``hwmon`` driver interface (`here
+   DS18S20 and LM73 sensors are well-supported by Linux; their drivers
+   support the ``hwmon`` driver interface (`here
    <https://www.kernel.org/doc/Documentation/hwmon/sysfs-interface>`__)
 
 * Documentation
@@ -46,4 +48,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: ec.ec2.task_sensors
+   :entries: ec2.sensors.task_sensors

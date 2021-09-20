@@ -69,7 +69,7 @@ covered.
 * :doc:`/trainings/material/soup/python/draft/context_manager/topic`
 * :doc:`/trainings/material/soup/python/draft/encoding/topic`
 * :doc:`/trainings/material/soup/python/draft/exceptions`
-* :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+* :doc:`/trainings/material/soup/python/swdev/modules`
 * :doc:`/trainings/material/soup/python/draft/duck-typing`
 * :doc:`/trainings/material/soup/python/draft/special_methods`
 * :doc:`/trainings/material/soup/python/draft/starargs/topic`
@@ -89,7 +89,7 @@ Special Topics
 
   * Excerpt from :doc:`/trainings/repertoire/unittests`
     (:download:`/trainings/material/pdf/060-design-patterns-unittests.pdf`)
-  * :doc:`/trainings/material/soup/python/python_5600_unittest/topic`
+  * :doc:`/trainings/material/soup/python/swdev/unittest`
 
 * Web programming with Jango and/or Flask
 
@@ -486,7 +486,7 @@ Graph
 	     python.drafts.closures,
 	     python.drafts.decorators,
 	     python.drafts.starargs,
-	     python.swdev.python_1200_modules,
+	     python.swdev.modules,
 	     python.python_1010_generators_yield,
 	     python.drafts.encoding,
 	     python.basics.installation,

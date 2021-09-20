@@ -29,7 +29,7 @@ material.
      - **PDF**
      - **OpenTraining**
    * - :doc:`/trainings/repertoire/linux-basics`
-     -
+     - :download:`basics <pdf/010-linux-basics.pdf>`
      - :doc:`soup/linux/group`
    * - :doc:`/trainings/repertoire/sysprog-basics`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`

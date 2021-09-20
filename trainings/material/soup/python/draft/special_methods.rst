@@ -1,5 +1,5 @@
 .. ot-topic:: python.drafts.special_methods
-   :dependencies: python.swdev.python_1050_oo
+   :dependencies: python.swdev.oo
 
 Special Methods, Operator Overloading (*incomplete*)
 ====================================================

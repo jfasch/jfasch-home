@@ -1,15 +1,26 @@
-.. ot-task:: ec.ec2.task_prog_stdout
-   :dependencies: ec.ec2.task_sensor_iface
+.. ot-task:: ec2.sensors.task_prog_stdout
+   :dependencies: ec2.sensors.task_sensor_iface
 
-Simple (``stdout``) Temperature Output
-======================================
+Program: Read Sensors, Write to ``stdout``
+==========================================
+
+.. contents::
+   :local:
+
+Description
+-----------
 
 A program that periodically reads temperatures from a given set of
 thermometers. That program has the following characteristics.
 
 * Takes from a configuration file [#winini]__ 
 
-  * The set of thermometers
+  * The set of thermometers. Each thermometer has
+
+    * Name
+    * Type (be it a LM73, DS18S20, or one of the simulated
+      thermometers)
+
   * The temperature read interval
 
 * Writes structured data to *standard output* [#pipe]_. The following
@@ -34,4 +45,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: ec.ec2.task_prog_stdout
+   :entries: ec2.sensors.task_prog_stdout

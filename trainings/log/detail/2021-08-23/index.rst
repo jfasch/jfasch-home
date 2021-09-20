@@ -120,7 +120,7 @@ Day 2
   * Exercise: :doc:`exercises/sap-cleaned`
   * Modules
 
-    * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+    * :doc:`/trainings/material/soup/python/swdev/modules`
     * `Quick run-through
       <https://github.com/jfasch/2021-08-23/tree/master/sap>`__,
       modularizing the :doc:`last exercise <exercises/sap-cleaned>`
@@ -143,15 +143,15 @@ Day 3
 
 * Databases
 
-  * :doc:`/trainings/material/soup/python/python_5500_dbapi2/topic`
-  * :doc:`/trainings/material/soup/python/python_5510_dbapi2_sqlite3/topic`
+  * :doc:`/trainings/material/soup/python/db/dbapi2`
+  * :doc:`/trainings/material/soup/python/db/sqlite3`
   * `DB-API2 for MS-SQL <https://docs.microsoft.com/de-de/sql/connect/python/python-driver-for-sql-server>`__
 
 * Advanced Topics
 
-  * :doc:`/trainings/material/soup/python/python_1050_oo/topic`
-  * :doc:`/trainings/material/soup/python/python_1100_exceptions/topic`
-  * :doc:`/trainings/material/soup/python/python_5600_unittest/topic`
+  * :doc:`/trainings/material/soup/python/swdev/oo`
+  * :doc:`/trainings/material/soup/python/swdev/exceptions`
+  * :doc:`/trainings/material/soup/python/swdev/unittest`
 
 * Miscellaneous Topics
     

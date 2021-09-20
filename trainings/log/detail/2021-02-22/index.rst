@@ -62,12 +62,12 @@ Tag 3
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
 * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
-* :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+* :doc:`/trainings/material/soup/python/swdev/modules`
 
   * Anschliessendes Extrahieren der ``is_prime()`` Funktion in ein
     eigenes Modul jjj siehe Github
 
-* :doc:`/trainings/material/soup/python/python_5600_unittest/topic`
+* :doc:`/trainings/material/soup/python/swdev/unittest`
 
 * Flow Charts
 * ``for``

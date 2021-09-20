@@ -434,7 +434,7 @@ Exercise ``digit`` (Once More)
 Modules
 .......
 
-* :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+* :doc:`/trainings/material/soup/python/swdev/modules`
 * What's this?
 
   .. code-block:: python
@@ -470,7 +470,7 @@ Notebook
    * * Course Material
      * Notebook
      * Notebook Download
-   * * * :doc:`/trainings/material/soup/python/python_1200_modules/topic`
+   * * * :doc:`/trainings/material/soup/python/swdev/modules`
        * :doc:`/trainings/material/soup/python/draft/encoding/topic`
      * .. toctree::
 

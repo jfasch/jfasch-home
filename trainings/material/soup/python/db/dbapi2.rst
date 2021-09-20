@@ -6,8 +6,8 @@ DBAPI 2
 .. contents::
    :local:
 
-.. ot-topic:: python.db.python_5500_dbapi2
-   :dependencies: python.swdev.python_1200_modules,
+.. ot-topic:: python.db.dbapi2
+   :dependencies: python.swdev.modules,
 		  python.basics.python_0220_for,
                   python.python_1010_generators_yield
 
