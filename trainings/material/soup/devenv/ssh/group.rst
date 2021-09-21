@@ -12,6 +12,7 @@ Topics
    basics
    scp
    portforwarding
+   sshfs
 
 Dependencies
 ------------
