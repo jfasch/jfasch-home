@@ -1,6 +1,8 @@
 Unit Testing
 ============
 
+.. ot-group:: unittest
+
 .. contents::
    :local:
 
@@ -17,10 +19,8 @@ Topics
 
    */topic
 
-Group Description
------------------
+Dependencies
+------------
 	      
-.. ot-group:: unittest
-
 .. ot-graph::
    :entries: unittest

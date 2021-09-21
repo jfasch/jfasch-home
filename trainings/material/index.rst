@@ -76,7 +76,7 @@ material.
      -
    * - :doc:`/trainings/repertoire/unittests`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
-     - :doc:`Unittest <soup/unittest/unittest>`
+     - :doc:`Unittest <soup/unittest/group>`
    * - :doc:`/trainings/repertoire/kernel-programming-basics`
      - :download:`Kernel <pdf/400-kernel.pdf>`
      - (See `jf-kernel-course on Github
