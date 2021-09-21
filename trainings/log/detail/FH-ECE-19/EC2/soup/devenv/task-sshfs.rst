@@ -1,6 +1,6 @@
 .. ot-task:: ec2.devenv.sshfs
    :responsible: joerg.faschingbauer
-   :percent-done: 40
+   :percent-done: 100
 
 Write ``sshfs`` Topic
 =====================
@@ -15,7 +15,7 @@ Description
    :align: left
 
    * * Write dedicated topic on ``sshfs``
-     *
+     * :doc:`DONE </trainings/material/soup/devenv/ssh/sshfs>`
    * * Depend that on generic SSH topics (to be extracted from
        PDF/beamer content).
      * :doc:`DONE </trainings/material/soup/devenv/ssh/group>`

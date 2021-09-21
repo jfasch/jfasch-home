@@ -10,10 +10,18 @@ Sphinx Skeleton, Introduction
 Description
 -----------
 
-* In the Git repository, create a Sphinx doc structure (and an initial
-  ``requirements.txt``) file.
-* Provide an initial sine-generating sensor, and use docstrings.
-* Incorporate that into the doc page.
+.. list-table::
+   :align: left
+
+   * * In the Git repository, create a Sphinx doc structure (and an
+       initial ``requirements.txt``) file.
+     * 
+   * * Provide an initial sine-generating sensor, and use docstrings.
+     *
+   * * Incorporate that into the doc page.
+     *
+   * * Move project plan over
+     *
 
 Dependencies
 ------------
