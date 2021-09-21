@@ -15,7 +15,7 @@ The Python training has been converted to this format; :doc:`see there
 is work in progress*).
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    python/group
    c/group
@@ -27,6 +27,7 @@ is work in progress*).
    sysprog/group
    unittest/group
    kernel/index
+   devenv/group
    graph
 
 Code
