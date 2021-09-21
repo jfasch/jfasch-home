@@ -44,8 +44,7 @@ extensions = [
     'sphinxcontrib.images',
     'sphinxemoji.sphinxemoji',
 
-    'opentraining.topic',
-    'opentraining.dia',
+    'opentraining',
 ]
 todo_include_todos = True
 
