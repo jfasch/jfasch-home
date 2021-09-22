@@ -353,7 +353,7 @@ Reiterating on Exercise
 
 * Hashbang: ``#!/usr/bin/python``
 
-  * Behnaz Mehrabadi: missing
+  * (Student1): missing
 
     * Program is run as a shell script
     * Why does it take so long? Turns out that ``import`` is a
@@ -361,14 +361,14 @@ Reiterating on Exercise
 
   * Anzhelika Chernykh: ``#!usr/bin/python``
 
-* Peter Kolter
+* (Student2)
 
   .. code-block:: python
 
      d = dict()
      d = {0: 'zero', 1: 'one', 2: 'two', 3: 'three',4: 'four',5: 'five', 6: 'six', 7: 'seven', 8:'eight', 9: 'nine'}
 
-* Leo Moser
+* (Student3)
 
   .. code-block:: python
 

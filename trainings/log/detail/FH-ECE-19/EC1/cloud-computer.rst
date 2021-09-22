@@ -11,31 +11,7 @@ Machine, Logins
   address ``34.107.39.200``.
 * *Logins* exist for the following users
 
-  * ``baumgartner.corinna``
-  * ``chernykh.anzhelika``
-  * ``hu.simon``
-  * ``kappel.matthias``
-  * ``kolter.peter``
-  * ``kornberger.jan``
-  * ``kraker.luis``
-  * ``kudriaschov.leonid``
-  * ``lang.michael``
-  * ``lukas.sonja``
-  * ``mehrabadi.behnaz``
-  * ``moser.leo``
-  * ``nagelschmied.moritz``
-  * ``reimer.bianca``
-  * ``schmid.tim``
-  * ``schüttler.lukas``
-  * ``schweiger.michael``
-  * ``sinabell.paul``
-  * ``slovik.jan``
-  * ``söls.daniel``
-  * ``stangl.michael``
-  * ``themessl.felix``
-  * ``vogel.astrid``
-  * ``zwittnigg.florian``
-  * ``faschingbauer.jörg``
+  (not disclosed publically)
 
   Passwords are not published here for obvious reasons; those are
   communicated in one of the first lessons.

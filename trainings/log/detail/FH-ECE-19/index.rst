@@ -1,5 +1,3 @@
-:orphan:
-
 Embedded Computing 1+2, ECE 19
 ==============================
 
