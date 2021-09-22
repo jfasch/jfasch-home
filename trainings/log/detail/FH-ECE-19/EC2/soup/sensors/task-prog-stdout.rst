@@ -1,5 +1,6 @@
 .. ot-task:: ec2.sensors.task_prog_stdout
-   :dependencies: ec2.sensors.task_sensor_iface
+   :dependencies: ec2.sensors.task_simu
+
 
 Program: Read Sensors, Write to ``stdout``
 ==========================================

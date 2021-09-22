@@ -4,12 +4,23 @@ Python
 .. contents::
    :local:
 
-This is a collection of Python topics that have been translated from
-the good old :download:`PDF material
-</trainings/material/pdf/300-python.pdf>` (which is now defunct).
+Contents
+--------
 
-The Python collection is extended continuously with new material, and
-is managed using :doc:`OpenTraining </about/site/opentraining/index>`.
+.. toctree::
+   :maxdepth: 1
+
+   basics/group
+   swdev/group
+   db/group
+   draft/group
+   exercises/group
+
+.. toctree::
+   :glob:
+   :hidden:
+
+   */topic
 
 Link Collection
 ---------------
@@ -21,28 +32,8 @@ A collection of links to paste into training logs.
 
    link-collection
 
-Contents
---------
-
-.. toctree::
-   :maxdepth: 1
-
-   basics/group
-   exercises/group
-   swdev/group
-   db/group
-   draft/group
-   fullgraph
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-   :hidden:
-
-   */topic
-
-Group Description
------------------
+Dependencies
+------------
 
 .. ot-group:: python
 

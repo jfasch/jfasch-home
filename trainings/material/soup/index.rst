@@ -6,13 +6,9 @@ Newer training material is written in `reStructuredText
 Sphinx extension to form a network of *topics* as I call it. This is
 :doc:`work in progress </about/site/opentraining/index>`.
 
-Topics naturally depend on other topics. Together, topics and their
-dependencies form a directed acyclic graph - see for example :doc:`the full
-set of Python topics, laid out as one such graph <python/fullgraph>`.
-
 The Python training has been converted to this format; :doc:`see there
-<python/group>` for how this could look like (careful though: *this
-is work in progress*).
+<python/group>` for how this could look like (careful though: *this is
+work in progress*).
 
 .. toctree::
    :maxdepth: 1
@@ -35,7 +31,9 @@ Code
 
 Much of the training material is accompanied by a growing code base,
 mostly written in Python, C, and C++. For reference, here's the
-``CMakeLists.txt`` file that steers the build of C and C++ material.
+``CMakeLists.txt`` file that steers the build of C and C++
+material. See :download:`here </trainings/material/pdf/045-cmake.pdf>`
+for further information about CMake.
 
 .. literalinclude:: CMakeLists.txt
    :language: cmake

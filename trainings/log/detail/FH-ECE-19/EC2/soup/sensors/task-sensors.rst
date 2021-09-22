@@ -1,7 +1,8 @@
 .. ot-task:: ec2.sensors.task_sensors
    :dependencies: ec2.devenv.sphinx_intro, 
 		  ec2.devenv.virtualbox,
-		  ec2.sensors.task_sensor_iface
+		  ec2.sensors.task_sensor_iface,
+		  ec2.devenv.hwdoc
 
 Hardware Temperature Sensors (Core Classes)
 ===========================================

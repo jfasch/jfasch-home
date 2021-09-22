@@ -1,6 +1,6 @@
 .. ot-task:: ec2.devenv.project
    :responsible: joerg.faschingbauer
-   :percent-done: 30
+   :percent-done: 20
    :dependencies: ec2.devenv.sshfs, 
 		  ec2.devenv.sphinx_intro,
 		  ec2.devenv.virtualbox
@@ -15,19 +15,27 @@ Create Initial Project Structure
 Description
 -----------
 
-* Add tests/
-* Doc:
+.. list-table::
+   :align: left
 
-  * ``pytest`` usage in project
-  * Structure
-  * Deployment to Raspi. Add references to
+   * * Add tests/
+     * DONE (`here
+       <https://github.com/jfasch/FH-ECE-19/tree/master/tests>`__)
+   * * Doc: ``pytest`` usage in project
+     * 
+   * * Doc: Structure
+     *
+   * * Doc: Deployment to Raspi. Add references to
 
-    * :doc:`task-sshfs`
-    * :doc:`/trainings/material/soup/python/draft/pip/topic`
-    * :doc:`/trainings/material/soup/python/draft/venv/topic`
+       * :doc:`task-sshfs`
+       * :doc:`/trainings/material/soup/python/draft/pip/topic`
+       * :doc:`/trainings/material/soup/python/draft/venv/topic`
 
-  * Sphinx build
-  * VirtualBox usage
+     *
+   * * Doc: Sphinx build
+     *
+   * * Doc: VirtualBox usage
+     *
 
 Dependencies
 ------------

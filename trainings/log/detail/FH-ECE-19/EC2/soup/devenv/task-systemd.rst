@@ -4,10 +4,23 @@
 Write ``systemd`` Topic
 =======================
 
-* Write dedicated topic about ``systemd``
-* Explain what ``Type=notify`` is
-* Provide sample services that depend on each other
-* Show start/stop behaviour
+.. contents::
+   :local:
+
+Description
+-----------
+
+.. list-table::
+   :align: left
+
+   * * Write dedicated topic about ``systemd``
+     *
+   * * Explain what ``Type=notify`` is
+     *
+   * * Provide sample services that depend on each other
+     *
+   * * Show start/stop behaviour
+     *
 
 Links
 -----
@@ -15,3 +28,8 @@ Links
 * `systemd service unit files
   <https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__
 
+Dependencies
+------------
+
+.. ot-graph::
+   :entries: ec2.devenv.systemd

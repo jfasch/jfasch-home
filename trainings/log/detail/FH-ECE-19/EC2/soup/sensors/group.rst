@@ -16,6 +16,7 @@ Tasks
 
    task-sensor-iface
    task-prog-stdout
+   task-hwdoc
    task-sensors
    task-arduino-proxy
 
