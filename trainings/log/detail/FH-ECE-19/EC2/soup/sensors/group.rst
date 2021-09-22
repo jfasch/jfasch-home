@@ -15,6 +15,7 @@ Tasks
    :maxdepth: 1
 
    task-sensor-iface
+   task-simu
    task-prog-stdout
    task-hwdoc
    task-sensors

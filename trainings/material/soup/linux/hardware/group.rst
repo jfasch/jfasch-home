@@ -13,8 +13,9 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   brushless-motor/topic
+   w1/topic
    pwm/topic
+   brushless-motor/topic
 
 Group Description
 -----------------

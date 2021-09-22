@@ -26,6 +26,8 @@ Topics For Today
 * Hardware interfaces for sensors (:doc:`Task
   <soup/sensors/task-hwdoc>`)
 
+  * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
+
 **Optional**
 
 * :doc:`/trainings/material/soup/python/draft/pip/topic`
@@ -34,7 +36,7 @@ Topics For Today
 Exercise
 ........
 
-* Setup Pi again
+* Setup Pi (again?)
 * Install VirtualBox
 * Run the image
 * Use ``ssh`` to connect to the Pi (:doc:`here

@@ -1,12 +1,15 @@
-The Linux PWM Userspace Interface
-=================================
+.. meta::
+   :description: The Linux PWM Userspace Interface
+   :keywords: linux, pwm, PCA9685, raspberry pi, raspi, pulse width
+              modulation, realtime, userspace
+
+PWM Userspace Interface (using PCA9685)
+=======================================
+
+.. ot-topic:: linux.hardware.pwm
 
 .. contents::
    :local:
-
-.. sidebar:: Topic
-
-   .. ot-topic:: linux.hardware.pwm
 
 Overview
 --------
