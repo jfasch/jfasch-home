@@ -23,17 +23,12 @@ This article shows how you use Linux to communicate with `Onewire
   handwork might be needed though - Pi's ``/boot/config.txt`` is
   really cool).
 
-A `Onewire <https://en.wikipedia.org/wiki/1-Wire>`__ device has three
-wires attached to it: data, ground, and power. Data and ground are
-mandatory, obviously. Power is optional; if omitted, the device is
-said to be operated in *parasitic mode*.
-
 ``w1-gpio``: Bitbanging (Master)
 --------------------------------
 
 Lacking a hardware Onewire master (the Raspi does not have one
 built-in), we use a software implementation of the Onewire protocol -
-the ``w1-gpio`` kernel driver. You dedicate one GPIO to act as the
+the ``w1-gpio`` kernel driver. You configure one GPIO to act as the
 data line, and the kernel driver is then used to `bitbang
 <https://en.wikipedia.org/wiki/Bit_banging>`__ the Onewire protocol in
 and out of the CPU.
@@ -67,6 +62,11 @@ DS18B20 (Slave)
 
 Wiring
 ------
+
+A `Onewire <https://en.wikipedia.org/wiki/1-Wire>`__ device has three
+wires attached to it: data, ground, and power. Data and ground are
+mandatory, obviously. Power is optional; if omitted, the device is
+said to be operated in *parasitic mode*.
 
 .. note::
 
@@ -130,9 +130,10 @@ As a Hardware Monitoring (``hwmon``) Device
 ...........................................
 
 A different aspect to our sensor, DS18B20, is that it is a temperature
-sensor. There is an entire framework inside the kernel, ``hwmon``, to
-cover such devices - no matter if they are Onewire or I2C (or ...)
-devices, or if they are reachable via a CPU internal bus.
+sensor - independent of which hardware it is. There is an entire
+framework inside the kernel, ``hwmon``, to cover such devices - no
+matter if they are Onewire or I2C (or ...)  devices, or if they are
+reachable via a CPU internal bus.
 
 As such (a temperature sensor), the device appears under an
 alternative location in ``sysfs``,
@@ -169,6 +170,34 @@ temperature in milli-celsius):
 
 	$ ls -l /sys/class/hwmon/hwmon1/device
 	lrwxrwxrwx 1 root root 0 Sep 22 14:44 /sys/class/hwmon/hwmon1/device -> ../../../28-01144fe7b4aa
+
+``lm-sensors``
+..............
+
+It is the ``hwmon`` hardware-independent sensor interface that the
+userspace ``lm-sensors`` framework builds upon. (`Github
+<https://github.com/lm-sensors/lm-sensors>`__, `Wikipedia
+<https://en.wikipedia.org/wiki/Lm_sensors>`__.)
+
+.. code-block:: console
+   :caption: Installation (on the Raspi)
+
+   # apt install lm-sensors
+
+.. code-block:: console
+
+   # sensors
+   rpi_volt-isa-0000
+   Adapter: ISA adapter
+   in0:              N/A  
+   
+   cpu_thermal-virtual-0
+   Adapter: Virtual device
+   temp1:        +50.1°C  
+   
+   w1_slave_temp-virtual-0
+   Adapter: Virtual device
+   temp1:        +21.4°C  
 
 Caveats
 -------
