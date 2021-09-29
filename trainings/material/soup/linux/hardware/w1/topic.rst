@@ -6,6 +6,8 @@
 OneWire Userspace Interface (using DS18B20)
 ===========================================
 
+.. ot-topic:: linux.hardware.w1
+
 .. contents::
    :local:
 

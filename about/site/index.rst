@@ -62,6 +62,36 @@ great static website generator. It lets me focus myself on content,
 with an eye towards structure and built-in link consistency (it won't
 let me break links by just moving documents around).
 
+Installation Instructions
+-------------------------
+
+Clone Repo, create and populate virtual environment (as yourself).
+
+.. code-block:: console
+
+   $ git clone https://github.com/jfasch/jfasch-home.git
+   $ python -m venv ~/venv/jfasch-home-venv
+   $ . ~/venv/jfasch-home-venv/bin/activate
+   (jfasch-home-venv) $ pip install -r requirements.txt
+
+.. sidebar:: ``pip`` and ``venv``
+
+   * :doc:`/trainings/material/soup/python/draft/pip/topic`
+   * :doc:`/trainings/material/soup/python/draft/venv/topic`
+
+Install external dependencies (as ``root``). This is Fedorish; your
+mileage might vary.
+
+.. code-block:: console
+
+   # dnf install pandoc graphviz dia
+
+* ``pandoc`` for markdown handling in jupyter notebooks
+* ``graphviz`` for those funky dependency graphs (:doc:`example
+  </trainings/material/soup/python/draft/pip/topic>`)
+* ``dia`` for historical baggage (convert ``.dia`` vector drawings to
+  SVG)
+
 Work in Progress
 ----------------
 

@@ -285,8 +285,8 @@ see what's there.
 
 Sounds much like PWM. The files ``period`` and ``duty_cycle``, like
 the ``export`` file above, are not persistent on any storage
-media. Rather, they actually provided by the kernel who sits under the
-surface and observes any read/write operations.
+media. Rather, they are actually provided by the kernel who sits under
+the surface and intercepts any read/write operations on the files.
 
 Lets configure PWM, by writing time periods (in nanoseconds) into
 those files. First the PWM period,
@@ -364,5 +364,5 @@ time, requiring as little code and hardware experience as possible.
                  avoid conflicts with kernel driver which might have
                  grabbed the channel for their own purposes.
 .. [#dim-not-linear] The brightness is not quite linear with the duty
-		     cycle, this is why the value might look a bit
+		     cycle, this is why the values might look a bit
 		     odd.
