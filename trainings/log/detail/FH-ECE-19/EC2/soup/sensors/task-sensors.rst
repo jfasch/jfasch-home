@@ -18,16 +18,16 @@ A set of Python classes for temperature sensors, implementing the
 
 * DS18S20 (Onewire) 
 
+  * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
   * :download:`Datasheet <DS18S20.pdf>`
   * `Onewire filesystem
     <https://www.kernel.org/doc/html/latest/w1/index.html>`__
 
 * LM73 (I2C) 
 
-  * `TI product page <https://www.ti.com/product/LM73>`__
+  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
   * :download:`Datasheet <lm73.pdf>`
-  * LM73 via userspace I2C (`here
-    <https://www.kernel.org/doc/Documentation/i2c/dev-interface>`__)
+  * `TI product page <https://www.ti.com/product/LM73>`__
 
 * Possibly other sensors? Some from the Arduino starter kit?
 

@@ -1,5 +1,5 @@
 .. meta::
-   :description: The Linux PWM Userspace Interface
+   :description: Linux PWM Userspace Interface
    :keywords: linux, pwm, PCA9685, raspberry pi, raspi, pulse width
               modulation, realtime, userspace
 
@@ -18,7 +18,7 @@ The value of the resistor that you use to protect an LED determines
 its brightness. To change the brightness of the LED, you use a
 potentiometer instead of a plain resistor. If you want to control LED
 brightness from software though, you do Pulse Width Modulation (PWM)
-on an IO pin to which the LED is attached.
+on an IO pin which the LED is attached to.
 
 Here in this topic we will be doing just that,
 

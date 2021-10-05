@@ -14,6 +14,7 @@ Contents
    :maxdepth: 1
 
    w1/topic
+   i2c/topic
    pwm/topic
    brushless-motor/topic
 

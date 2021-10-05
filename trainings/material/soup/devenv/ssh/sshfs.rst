@@ -52,7 +52,7 @@ Installation
 .. code-block:: console
    :caption: Debianish (e.g. Ubuntu, Raspberry OS)
 
-   # apt install sshfs
+   # apt install fuse-sshfs
 
 .. code-block:: console
    :caption: Fedorish
@@ -62,9 +62,9 @@ Installation
 Example Situation: The Raspi
 ----------------------------
 
-* I have a Raspi with an IP address of ``192.168.1.142``. Just like
-  everybody: substitute that with a real embedded device you are
-  working with - the principles are the same for that matter.
+* I have a Raspi with an IP address of ``192.168.1.142``. Substitute
+  that with a real embedded device you are working with - the
+  principles are the same for that matter.
 * The ``sshd`` service is enabled on the Raspi
 * ``jfasch`` is my account there. I have :doc:`configured public key
   authentication <basics>`, but *this is not required*.

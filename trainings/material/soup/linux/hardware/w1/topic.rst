@@ -72,7 +72,7 @@ said to be operated in *parasitic mode*.
 
 .. note::
 
-   Though not exatly necessary |:wink:|, it makes sense to halt and
+   Though not exactly necessary |:wink:|, it makes sense to halt and
    power off the Pi before connecting the sensor.
 
 .. list-table::
@@ -81,8 +81,11 @@ said to be operated in *parasitic mode*.
 
    * * Professional Diagram
      * Decadent Pi Addon
+     * Raspi Pinout
    * * .. image:: wiring.png
      * .. image:: wiring-photo.jpg
+     * .. image:: ../common-images/raspi-pinout.png
+          :scale: 100%
 
 Using the Device
 ----------------

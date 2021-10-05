@@ -1,6 +1,6 @@
 .. ot-task:: ec2.devenv.hwdoc
    :responsible: joerg.faschingbauer
-   :percent-done: 50
+   :percent-done: 100
 
 
 Write Topic: "I2C and Onewire Sensors on Linux"
@@ -20,10 +20,9 @@ Description
    :align: left
 
    * * Topic: I2C, how to add devices (that pseudo-hotplug thing)
-     *
+     * DONE (:doc:`/trainings/material/soup/linux/hardware/i2c/topic`)
    * * Topic: Onewire
-     * DONE (:doc:`here
-       </trainings/material/soup/linux/hardware/w1/topic>`)
+     * DONE (:doc:`/trainings/material/soup/linux/hardware/w1/topic`)
 
 Dependencies
 ------------
