@@ -19,9 +19,9 @@ What Is It?
 * Yet another network file system. Much like SMB and NFS, but simpler.
 * Requires a working SSH login on the remote machine
 * Implemented as File System in Userspace (`Wikipedia
-  <https://en.wikipedia.org/wiki/Filesystem_in_Userspace>`, `Linux
+  <https://en.wikipedia.org/wiki/Filesystem_in_Userspace>`__, `Linux
   kernel
-  <https://www.kernel.org/doc/html/latest/filesystems/fuse.html>`). Regular
+  <https://www.kernel.org/doc/html/latest/filesystems/fuse.html>`__). Regular
   userspace program, sitting on top of
 
   * The SSH libraries |longrightarrow| authentication, encryption, ...

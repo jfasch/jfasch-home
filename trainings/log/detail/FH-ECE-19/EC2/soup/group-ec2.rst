@@ -1,15 +1,10 @@
 .. ot-group:: ec2
 
-Plan for *Embedded Computing 2*
-===============================
+Project Plan
+============
 
 .. contents::
    :local:
-
-Big Picture |:rolling_on_the_floor_laughing:|
----------------------------------------------
-
-.. image:: picture-hw-perspective.png
 
 Work Packages
 -------------

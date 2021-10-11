@@ -15,6 +15,7 @@ Tasks
    task-virtualbox
    task-sshfs
    task-systemd
+   task-hwdoc
 
 .. ot-group:: ec2.devenv
 

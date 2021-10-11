@@ -5,9 +5,9 @@ Embedded Computing 2 (ECE 19)
    :local:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   soup/group-ec2
+   project
 
 .. toctree::
    :maxdepth: 3

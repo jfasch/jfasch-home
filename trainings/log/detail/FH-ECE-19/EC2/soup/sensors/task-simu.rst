@@ -23,7 +23,8 @@ Description
        * Cool to have when I want to unit-test my code.
   
        Which?
-  
+
+       * One that reads the temperature from a file
        * One that generates a sine (its samples can be given to a
          Fourier analysis)
        * One that spits out random numbers in a range

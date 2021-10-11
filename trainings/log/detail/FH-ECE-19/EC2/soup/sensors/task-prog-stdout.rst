@@ -14,13 +14,16 @@ Description
 A program that periodically reads temperatures from a given set of
 thermometers. That program has the following characteristics.
 
-* Takes from a configuration file [#winini]__ 
+* Takes from a configuration file [#winini]_
 
   * The set of thermometers. Each thermometer has
 
     * Name
-    * Type (be it a LM73, DS18S20, or one of the simulated
-      thermometers)
+    * Type (be it a :doc:`LM73 <task-lm73>`, :doc:`DS18S20
+      <task-ds18s20>`, or one of the :doc:`simulated thermometers
+      <task-simu>`)
+    * Parameters (such as bus number and address for I2C devices for
+      example)
 
   * The temperature read interval
 

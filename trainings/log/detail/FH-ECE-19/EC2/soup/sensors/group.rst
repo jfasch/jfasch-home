@@ -15,10 +15,10 @@ Tasks
    :maxdepth: 1
 
    task-sensor-iface
-   task-simu
    task-prog-stdout
-   task-hwdoc
-   task-sensors
+   task-simu
+   task-ds18s20
+   task-lm73
    task-arduino-proxy
 
 Dependencies
