@@ -1,7 +1,7 @@
 .. ot-group:: ec2.sensors
 
-Low Level Sensor Classes
-========================
+Sensors
+=======
 
 Bring up one part of the core functionality: the sensors.
 

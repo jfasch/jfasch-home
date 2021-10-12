@@ -4,6 +4,14 @@ Group Project
 .. contents::
    :local:
 
+Project Plan
+------------
+
+.. toctree::
+   :maxdepth: 2
+   
+   soup/group-ec2
+
 Big Picture |:rolling_on_the_floor_laughing:|
 ---------------------------------------------
 
@@ -78,13 +86,7 @@ The following table is used as a starting point for the project.
      * * 1 group
        * 3 members
 
-Project Plan
-------------
 
-.. toctree::
-   :maxdepth: 2
-   
-   soup/group-ec2
 
 
 .. rubric:: Footnotes

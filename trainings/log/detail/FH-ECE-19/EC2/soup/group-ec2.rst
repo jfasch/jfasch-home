@@ -13,11 +13,13 @@ Work Packages
    :maxdepth: 1
 
    sensors/group
+   switches/group
    mqtt/group
+   backoffice/group
    devenv/group
 
-Project Plan
-------------
+Tasks and Dependencies
+----------------------
 
 .. ot-graph::
    :entries: ec2
