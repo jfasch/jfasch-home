@@ -1,0 +1,46 @@
+2021-10-07
+----------
+
+Whose Fault It Is
+.................
+
+.. image:: ../../EC1/Bullshit-Bingo-G2.jpg
+   :scale: 10%
+
+Topics
+......
+
+* Org stuff
+
+  * `Moodle
+    <https://virtueller-campus-2021-22.fh-joanneum.at/course/view.php?id=3249>`__
+  * :doc:`Project plan <../soup/group-ec2>`
+  * Grading system: show `manager's sheet
+    <https://virtueller-campus-2021-22.fh-joanneum.at/mod/resource/view.php?id=21246>`__
+  * `VirtualBox image
+    <https://fhjoanneum-my.sharepoint.com/:u:/g/personal/joerg_faschingbauer_fh-joanneum_at/EWHSVLu-U5tPladezSnhRxIBNTSPmq4XvNiaMGnlFsJ0tA?e=JgfzSt>`__
+    (:doc:`Task <../soup/devenv/task-virtualbox>`)
+
+* Project structure
+
+  * `Github <https://github.com/jfasch/FH-ECE-19>`__ (same as in
+    :doc:`last semester <../../EC1/index>`)
+  * Briefly discuss the Why
+
+* OO introduction. Live-hack a thermometer that reads from a file
+
+  * Sketch of task ":doc:`../soup/sensors/task-prog-stdout`" (`here
+    <https://github.com/jfasch/FH-ECE-19/blob/master/bin/read-thermometers>`__)
+
+    * Omit commandline parsing and config file. Hardcode interval and
+      thermometer list.
+    * Try to instantiate ``Thermometer``.
+
+  * *Abstract base class*. ``Thermometer`` discussion.
+  * ``FileThermometer`` (`here
+    <https://github.com/jfasch/FH-ECE-19/blob/master/src/ece19/sensors/thermometer.py>`__
+
+    * *Constructor*
+    * *Member* (= attribute, property)
+    * *Method*
+

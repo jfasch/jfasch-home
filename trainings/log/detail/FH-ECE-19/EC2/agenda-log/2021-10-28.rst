@@ -1,0 +1,37 @@
+2021-10-28
+==========
+
+.. contents::
+   :local:
+
+* Complain how I hate that manual ``read-thermometers`` invocation.
+* Introduce prerequisites
+
+  * :doc:`/trainings/material/soup/python/draft/pip/topic`
+  * :doc:`/trainings/material/soup/python/draft/venv/topic`
+
+* Unit testing. Present ``pytest``.
+
+* Hardware interfaces for sensors (:doc:`Task
+  <../soup/devenv/task-hwdoc>`)
+
+  * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
+  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
+
+Exercise
+--------
+
+* Setup Pi (again?)
+* Install VirtualBox
+* Run the image
+* Use ``ssh`` to connect to the Pi (:doc:`here
+  </trainings/material/soup/devenv/ssh/basics>`)
+* Mount your Pi homedirectory (:doc:`here
+  </trainings/material/soup/devenv/ssh/sshfs>`)
+
+TODOs
+-----
+
+* Add VSCode to Vbox image
+* Topic: Raspi static IP, point to point connection to Linux PC (on
+  subnet ``192.168.7.*``)

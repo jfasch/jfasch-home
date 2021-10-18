@@ -12,10 +12,6 @@ Write Topic: "I2C and Onewire Sensors on Linux"
 Description
 -----------
 
-.. note::
-
-   Update :doc:`course agenda <../../agenda-log>` as we make progress!
-
 .. list-table::
    :align: left
 

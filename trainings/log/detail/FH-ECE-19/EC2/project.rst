@@ -32,7 +32,7 @@ project plan <soup/group-ec2>` to get an overview of where we are
 
 We will start with the tasks below. Each task will have people
 assigned to it. Please read the task descriptions, and decide where
-your place is/what you're going to do *mainly*. :ref:`2021-10-07` we
+your place is/what you're going to do *mainly*. :doc:`agenda-log/2021-10-07` we
 had a look at a sample "Management Sheet" (`here
 <https://virtueller-campus-2021-22.fh-joanneum.at/mod/resource/view.php?id=22533>`__)
 that I intend to use for the group assignments.

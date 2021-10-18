@@ -1,0 +1,207 @@
+2021-10-12 (Bringing Newcomers Up-to-Date)
+==========================================
+
+.. contents::
+   :local:
+
+What happened in :doc:`/trainings/log/detail/FH-ECE-19/EC1/index` ...
+
+Linux/UNIX
+----------
+
+* Linux Topics (:download:`Linux Basics (PDF)
+  </trainings/material/pdf/010-linux-basics.pdf>`)
+
+  * *Bausteine von Unix und Linux*
+
+    5-7, 9-16
+
+  * *Die Shell (Bash - "Bourne Again Shell")*
+
+    36-45, 58-61, 63, 64
+  
+  * *Das Filesystem*
+  
+    Es ist wichtig, im Filesystem navigieren zu können. Die Basic Tools
+    müssen sitzen (``cd``, ``ls``, ``pwd``, ``mkdir``, ``rm``, ``cp``,
+    ``mv``, etc.). (Dazu muss man natürlich verstehen, was Files,
+    Directories etc. sind.)
+  
+    Das *Permission*-Thema ist *extrem* wichtig, und man kann damit
+    rechnen, dass zur Prüfung ein paar trockene Fragen zu dem Thema
+    kommen.
+  
+    * Pfade: 67-71
+    * Directories: 72-76
+    * Symbolische Links: 77-79
+    * Directory Listings (``ls``): 84-87
+    * Kopieren und Verschieben (``cp`` und ``mv``): 88-91
+    * Owner, Permissions: 92-97, 100
+    * Die ``umask``: 98-99
+    * Tools für Permissions: 100
+    * Set-UID Bit: 101
+    * Sticky Bit: 102
+
+  * Das ``find`` Command: 105-109
+  * Tools für Textfiles: 113ff.
+  
+    Das Kapitel wurde ansatzweise durchgegangen - jedes Tool. Wichtig
+    ist, zu verstehen,
+  
+    * dass die Tools von *Standard Input* lesen, auf *Standard Output*
+      schreiben (und auf *Standard Error* Fehler und Debug-Messages
+      schreiben).
+    * dass diese und andere Tools durch die Benutzung von *Standard
+      Input* und *Standard Output* in der *Pipe*
+  
+  * IO Redirection und Pipes: 133ff.
+  
+    Dieses Kapitel wurde in einem mit den Tools durchgemacht,
+    ansatzweise.
+  
+    Wichtig ist mir, dass die Wirkungsweise der Pipe verstanden wird,
+    und dass man Tools mit ihrer Hilfe verknüpfen kann.
+
+SSH
+---
+
+* :doc:`SSH </trainings/material/soup/devenv/ssh/group>` (connecting
+  to the Raspberry)
+
+Python
+------
+
+* Setup
+
+  * :doc:`/trainings/material/soup/python/basics/installation`
+  * :doc:`/trainings/material/soup/python/draft/vscode`
+
+* Python Datatypes
+
+  * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic` (:doc:`Jupyter Notebook </trainings/log/detail/FH-ECE-19/EC1/Notebooks/Checker-Explanations>`)
+  * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+  * :doc:`Jupyter Notebook (Datatypes)
+    </trainings/log/detail/FH-ECE-19/EC1/Notebooks/Datatypes>`
+
+* Control Flow
+
+  * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
+
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic` (:doc:`Jupyter Notebook </trainings/log/detail/FH-ECE-19/EC1/Notebooks/2021-05-20-G2>`)
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic` (:doc:`Jupyter Notebook </trainings/log/detail/FH-ECE-19/EC1/Notebooks/Functions>`)
+* Exercises
+
+  * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+  * :doc:`/trainings/log/detail/FH-ECE-19/EC1/Exercises/blinklicht`
+
+Links
+.....
+
+* ``os.path`` module (from the `Python docs
+  <https://docs.python.org/3/library/os.path.html#module-os.path>`__)
+* ``subprocess`` module (from the `Python docs
+  <https://docs.python.org/3/library/subprocess.html#module-subprocess>`__)
+* `Stackoverflow: Git file permissions on Windows
+  <https://stackoverflow.com/questions/6476513/git-file-permissions-on-windows>`__
+* `Python Tutorial: Using Try/Except Blocks for Error Handling
+  <https://www.youtube.com/watch?v=NIWwJbo-9_8>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/NIWwJbo-9_8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: OS Module - Use Underlying Operating System
+  Functionality <https://www.youtube.com/watch?v=tJxcKyFMTGo>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/tJxcKyFMTGo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Calling External Commands Using the Subprocess
+  Module <https://www.youtube.com/watch?v=2Fp1N6dof0Y>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2Fp1N6dof0Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python 3.7: Encode String Method <https://www.youtube.com/watch?v=IoU4AbPpMys>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/IoU4AbPpMys" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Git
+---
+
+.. sidebar:: Download and Installation
+
+   * `Git for Windows <https://git-scm.com/download/win>`__
+   * `Git for MacOS <https://git-scm.com/download/mac>`__
+
+.. raw:: html
+
+   <iframe width="560" 
+           height="315" 
+	   src="https://www.youtube.com/embed/HVsySz-h9r4" 
+	   title="YouTube video player" 
+	   frameborder="0" 
+	   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	   allowfullscreen>
+   </iframe>
+
+**Project on Github**
+
+* Private repository on Github: https://github.com/jfasch/FH-ECE-19
+* Create Github account, and send it to jf@faschingbauer.co.at
+* Clone the repository
+
+  .. code-block:: console
+
+     $ cd directory-where-i-have-my-ec-work
+     $ git clone https://github.com/jfasch/FH-ECE-19.git
+
+* If you are getting tired of entering a password for each repo
+  transaction, you can always `deploy a SSH public key to Github
+  <https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh>`__,
+  and then re-clone using the SSH access method:
+
+  .. code-block:: console
+
+     $ git clone git@github.com:jfasch/FH-ECE-19.git
+

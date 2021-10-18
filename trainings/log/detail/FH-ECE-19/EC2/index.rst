@@ -10,9 +10,8 @@ Embedded Computing 2 (ECE 19)
    project
 
 .. toctree::
-   :maxdepth: 3
 
-   agenda-log
+   agenda-log/index
 
 .. toctree::
    :maxdepth: 1
