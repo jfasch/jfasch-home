@@ -2,11 +2,12 @@
 
 .. meta::
    :description: I2C (using LM73)
-   :keywords: linux, inter intergrated circuit, i2c, lm73, raspberry
-              pi, raspi, userspace, hwmon, sysfs
+   :keywords: linux, inter intergrated circuit, i2c, sensors,
+              lm-sensors, lm73, raspberry pi, raspi, userspace, hwmon,
+              sysfs
 
-I2C (using LM73)
-================
+Linux and I2C (using LM73 Temperature Sensor as Slave)
+======================================================
 
 .. ot-topic:: linux.hardware.i2c
 
@@ -22,9 +23,9 @@ This article shows how you use Linux to communicate with `I2C
 * Rasperry Pi because everything's easy there. This article's
   principles hold unmodified for other devices that run Linux (more
   handwork might be needed though).
-* jjj two masters
-
-Blah i2c blah jjjj
+* The *Hardware Monitoring* interface in ``/sys/class/hwmon``
+* The `Texas Instruments LM73 <https://www.ti.com/product/LM73>`__
+  temperature sensor.
 
 Configuring I2C Master
 ----------------------
@@ -48,17 +49,24 @@ on, you configure the bootloader to turn it on. The bootloader will
 then pass the relevant information to the kernel which will react
 accordingly - load the appropriate drivers, for example.
 
-In ``/boot/config.txt`` insert [#config_uncomment]_ the following line
+In ``/boot/config.txt`` insert the following line [#config_uncomment]_
 ...
 
 .. code-block:: text
 
    dtparam=i2c_arm=on
 
-**Reboot**, and check. I2C pins 2 (data) and 3 (clock) - see pinout
-diagram - are enabled, and the platform I2C driver has been loaded.
+The effect of enabling I2C is that
+
+* pins *GPIO2* and *GPIO3* are not GPIO pins anymore, but rather their
+  alternative configurations as *data* and *clock*, respectively, are
+  enabled. See the pinout diagram.
+* the platform I2C driver is loaded.
+
+**Reboot**, and check:
 
 .. code-block:: console
+   :caption: I2C platform driver
 
    $ lsmod |grep i2c
    i2c_bcm2835            16384  0
@@ -66,6 +74,7 @@ diagram - are enabled, and the platform I2C driver has been loaded.
 We can see a userspace representation of the bus in ``sysfs``,
 
 .. code-block:: console
+   :caption: I2C bus #1 visible in ``sysfs``
    
    $ ls -l /sys/bus/i2c/devices/i2c-1
    lrwxrwxrwx 1 root root 0 Oct  4 12:43 /sys/bus/i2c/devices/i2c-1 -> ../../../devices/platform/soc/fe804000.i2c/i2c-1
@@ -74,8 +83,8 @@ We can see a userspace representation of the bus in ``sysfs``,
 
    You can use the ``raspi-config`` tool to do the same in a more
    comfortable manner. Here in this article, we do *not* use any of
-   those decadent tools: we want to know what is going on
-   [#config-txt-decadent-enough]_.
+   those decadent tools. These are Raspberry specific and not
+   available on any other Linux device [#config-txt-decadent-enough]_.
 
    See `here
    <https://www.raspberrypi.org/documentation/computers/configuration.html>`__
@@ -411,7 +420,6 @@ in milli-celsius):
 .. [#config-txt-decadent-enough] The functionality that the Raspberry
                                  bootloader (via ``/boot/config.txt``)
                                  brings is already decadent enough.
-.. [#not-a-hw-guy] I am not a hardware expert.
 .. [#why_root_for_hotplug] While members of group ``i2c`` are
                            permitted to *talk* to I2C devices, adding
                            devices is considered an administrative

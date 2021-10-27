@@ -42,14 +42,20 @@ thermometers. That program has the following characteristics.
 
      $ ./publish-thermometers --config-file /etc/thermometers.conf
 
-.. rubric:: Footnotes
+Further Information
+-------------------
 
-.. [#winini] The ``configparser`` module from the Python standard
-             library is a straightforward choice; see `here
-             <https://docs.python.org/3/library/configparser.html>`__.
+* :doc:`/trainings/material/soup/python/draft/mqtt/topic`
 
 Dependencies
 ------------
 
 .. ot-graph::
    :entries: ec2.mqtt.task_prog_publish
+
+.. rubric:: Footnotes
+
+.. [#winini] The ``configparser`` module from the Python standard
+             library is a straightforward choice; see `here
+             <https://docs.python.org/3/library/configparser.html>`__.
+
