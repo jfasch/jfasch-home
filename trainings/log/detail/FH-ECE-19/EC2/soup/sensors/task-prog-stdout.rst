@@ -11,21 +11,27 @@ Program: Read Sensors, Write to ``stdout``
 Description
 -----------
 
-A program that periodically reads temperatures from a given set of
-thermometers. That program has the following characteristics.
+Write a program that periodically reads temperatures from a given set
+of thermometers. That program has the following characteristics.
 
-* Takes from a configuration file [#winini]_
+* Takes from a configuration file 
 
-  * The set of thermometers. Each thermometer has
-
-    * Name
-    * Type (be it a :doc:`LM73 <task-lm73>`, :doc:`DS18S20
-      <task-ds18s20>`, or one of the :doc:`simulated thermometers
-      <task-simu>`)
-    * Parameters (such as bus number and address for I2C devices for
-      example)
-
+  * A set of thermometers
   * The temperature read interval
+
+  Possible choices for configuration file formats are
+
+  * The ``configparser`` module from the Python standard library; see
+    `here <https://docs.python.org/3/library/configparser.html>`__
+  * Simpler (albeit more involved): something that can be passed to
+    the ``exec()`` function (see `here
+    <https://docs.python.org/3/library/functions.html#exec>`__).
+
+  .. note::
+
+     The configuration file parsing code should be externalized as a
+     module. :doc:`../mqtt/task-prog-mqtt` is going to use the same
+     code.
 
 * Writes structured data to *standard output* [#pipe]_. The following
   hypothetical output is reasonable,
@@ -37,12 +43,8 @@ thermometers. That program has the following characteristics.
      kuehlhaus-ro 1631715458.7846692 11.75
      ...
 
-
 .. rubric:: Footnotes
 
-.. [#winini] The ``configparser`` module from the Python standard
-             library is a straightforward choice; see `here
-             <https://docs.python.org/3/library/configparser.html>`__.
 .. [#pipe] The program is designed to be part of a larger pipeline.
 
 Dependencies

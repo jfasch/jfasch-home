@@ -4,26 +4,54 @@
 .. contents::
    :local:
 
-* Complain how I hate that manual ``read-thermometers`` invocation.
-* Introduce prerequisites
+Group Project
+-------------
 
-  * :doc:`/trainings/material/soup/python/draft/pip/topic`
-  * :doc:`/trainings/material/soup/python/draft/venv/topic`
+* Show :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/group-ec2`
+* Assignment sheet on Moodle jjj
 
-* Unit testing. Present ``pytest``.
+Discussion of Tasks
+...................
 
-* Hardware interfaces for sensors (:doc:`Task
-  <../soup/devenv/task-hwdoc>`)
+* Sensors
 
-  * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
-  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
+  * LM73
+  
+    * :doc:`../soup/sensors/task-lm73-hwmon`; *Involves kernel build!*
+    * :doc:`../soup/sensors/task-lm73-dev`
+  
+  * :doc:`../soup/sensors/task-ds18s20`; possible OneWire woes. 
+  
+    This task is performed by two groups. Maybe agree that one of
+    those should proceed with the ``Switch`` interface instead? See
+    :doc:`../soup/switches/group`.
+  
+  * :doc:`../soup/sensors/task-simu`. Point at
+    :doc:`/trainings/material/soup/python/iteration-generation/topic`.
+  *
+    :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/sensors/task-arduino-proxy`. **The
+    heavyweight!**
+
+* Sensor Usage
+
+  *
+    :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/sensors/task-prog-stdout`. Point
+    out that this task defines the sensor list configuration.
+  *
+    :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/mqtt/task-prog-mqtt`. point
+    out that this task *uses* the sensor list configuration.
+
+* Git structure; see `Github project
+  <https://github.com/jfasch/FH-ECE-19>`__
+
+  * Sphinx, build
+  * ``src/ece19``
+
 
 Exercise
 --------
 
 * Setup Pi (again?)
-* Install VirtualBox
-* Run the image
 * Use ``ssh`` to connect to the Pi (:doc:`here
   </trainings/material/soup/devenv/ssh/basics>`)
 * Mount your Pi homedirectory (:doc:`here

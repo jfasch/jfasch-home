@@ -18,7 +18,8 @@ Tasks
    task-prog-stdout
    task-simu
    task-ds18s20
-   task-lm73
+   task-lm73-dev
+   task-lm73-hwmon
    task-arduino-proxy
 
 Dependencies

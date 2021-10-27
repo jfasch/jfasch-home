@@ -69,9 +69,12 @@ The following table is used as a starting point for the project.
    * * :doc:`soup/sensors/task-simu`
      * * 2 groups
        * 3 members each
-   * * :doc:`soup/sensors/task-lm73`
-     * * 2 groups
-       * 3 members each
+   * * :doc:`soup/sensors/task-lm73-dev`
+     * * 1 group
+       * 3 members
+   * * :doc:`soup/sensors/task-lm73-hwmon`
+     * * 1 group
+       * 3 members
    * * :doc:`soup/sensors/task-ds18s20`
      * * 2 groups
        * 3 members each

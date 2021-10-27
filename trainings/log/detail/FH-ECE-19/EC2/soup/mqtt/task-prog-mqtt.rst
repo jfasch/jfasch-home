@@ -21,20 +21,8 @@ Description
 A program that periodically reads temperatures from a given set of
 thermometers. That program has the following characteristics.
 
-* Takes from a configuration file [#winini]_
-
-  * The set of thermometers. Each thermometer has
-
-    * Name
-    * Type (be it a LM73, DS18S20, or one of the simulated
-      thermometers)
-    * MQTT parameters
-      
-      * Hostname and port number of broker
-      * Topic to publish values to
-
-  * The temperature read interval
-
+* Uses the configuration file from :doc:`../sensors/task-prog-stdout`
+  to define the set of sensors to use.
 * As configured, publishes sensors values (as JSON formatted
   structures/dictionaries) to their respective MQTT topics.
 
@@ -54,8 +42,4 @@ Dependencies
    :entries: ec2.mqtt.task_prog_publish
 
 .. rubric:: Footnotes
-
-.. [#winini] The ``configparser`` module from the Python standard
-             library is a straightforward choice; see `here
-             <https://docs.python.org/3/library/configparser.html>`__.
 
