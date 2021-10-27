@@ -7,8 +7,22 @@
 Group Project
 -------------
 
+* `Assignment sheet on Moodle
+  <https://virtueller-campus-2021-22.fh-joanneum.at/mod/resource/view.php?id=27182>`__
 * Show :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/group-ec2`
-* Assignment sheet on Moodle jjj
+* Git structure; see `Github project
+  <https://github.com/jfasch/FH-ECE-19>`__
+
+  * Sphinx, build
+  * ``src/ece19``: point out that this is where we are working
+    in. Last semester has been pushed down into ``summer-2021``.
+
+* Next sessions
+
+  * VO 2021-11-15
+  * UE 2021-11-16
+
+  Discuss consultation hours where I sit in FH for one day.
 
 Discussion of Tasks
 ...................
@@ -40,13 +54,6 @@ Discussion of Tasks
   *
     :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/mqtt/task-prog-mqtt`. point
     out that this task *uses* the sensor list configuration.
-
-* Git structure; see `Github project
-  <https://github.com/jfasch/FH-ECE-19>`__
-
-  * Sphinx, build
-  * ``src/ece19``
-
 
 Exercise
 --------
