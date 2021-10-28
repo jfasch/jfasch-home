@@ -15,6 +15,7 @@ Topics
    oo
    exceptions
    modules
+   exec/topic
    unittest
 
 Dependencies
