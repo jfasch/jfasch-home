@@ -4,36 +4,92 @@
 Program: Read Sensors, Publish to MQTT Topic
 ============================================
 
-Conceptually, this is like :doc:`../sensors/task-prog-stdout`: a
-program that reads sensor values in a given interval. Rather than
-writing the values to ``stdout``, we *publish* those to respective
-MQTT *topics*.
-
-See :doc:`here </trainings/material/soup/python/draft/mqtt/topic>` for
-more informtion about MQTT, and how to use it in Python.
-
-.. contents::
+.. contents:: 
    :local:
 
 Description
 -----------
 
-A program that periodically reads temperatures from a given set of
-thermometers. That program has the following characteristics.
+Relation to :doc:`../sensors/task-prog-stdout`
+..............................................
 
-* Uses the configuration file from :doc:`../sensors/task-prog-stdout`
-  to define the set of sensors to use.
-* As configured, publishes sensors values (as JSON formatted
-  structures/dictionaries) to their respective MQTT topics.
+This is not going to be much different from
+:doc:`../sensors/task-prog-stdout`. Please read that task description
+first to see what they are up to.
 
-  .. code-block:: console
+In short, what :doc:`../sensors/task-prog-stdout` does is:
 
-     $ ./publish-thermometers --config-file /etc/thermometers.conf
+* Read values from a **list of thermometers**, at a given *interval**
+* Write those values to *standard output* as they are available
+
+The difference between this MQTT task and
+:doc:`../sensors/task-prog-stdout` is that, rather than writing the
+values to *standard output*, the values are *published* to their
+respective MQTT topics.
+
+JSON
+....
+
+JSON (`documentation <https://docs.python.org/3/library/json.html>`__)
+is a popular data format on The Internet, especially when using
+brokers like MQTT.
+
+Please define a suitable JSON structure for the ``(timestamp,
+temperature)`` tuples that are being transferred. Straightforward
+would be a dictionary (err, this is a *map* in Javascript; Javascript
+data structures are very similar to Python's) like so,
+
+.. code-block:: javascript
+
+   {
+      "timestamp": 1635502701.9270382,
+      "temperature": -273.15
+   }
+
+Collaboration With Colleagues
+.............................
+
+**Configuration file formats**
+
+:doc:`../sensors/task-prog-stdout` defines two configuration file
+formats. You are going to use those when they are ready, and
+incorporate it in to your program.
+
+You sure don't want to wait until these formats are fully implemented
+and tested, so what you need is a temporary solution - your primary
+task is MQTT after all.
+
+Solution to this problem:
+
+* Hardcode the thermometer list in the meantime
+* Wait for a notification from the :doc:`../sensors/task-prog-stdout`
+  team that they are done with config
+* Implement commandline parsing (``argparse``, see there) and config
+  file usage.
+
+Final State
+...........
+
+(Taken from :doc:`../sensors/task-prog-stdout`, replaced
+``read-thermometers`` with ``publish-thermometers``.)
+
+.. code-block:: console
+
+   $ ./bin/publish-thermometers --conf-ini some-config.ini
+   ...
+
+Call the program, feeding configuration from a Python config file:
+
+.. code-block:: console
+
+   $ ./bin/publish-thermometers --conf-exec some-config.py
+   ...
 
 Further Information
 -------------------
 
-* :doc:`/trainings/material/soup/python/draft/mqtt/topic`
+* See :doc:`here </trainings/material/soup/python/draft/mqtt/topic>`
+  for more informtion about MQTT, and how to use it in Python.
 
 Dependencies
 ------------
