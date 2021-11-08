@@ -21,7 +21,7 @@ Python (12.11.2019 - 14.11.2019 in Graz)
 .. sidebar:: Material
 
    * :doc:`Schulungsbeschreibung
-     </trainings/repertoire/python-basics>`
+     </trainings/repertoire/python/basics>`
    * :download:`PDF </trainings/material/pdf/300-python.pdf>`
 
 Standardthemen

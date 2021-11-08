@@ -30,10 +30,9 @@ Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
      </trainings/material/pdf/060-design-patterns-unittests.pdf>`
      (PDF)
 
-   **Training Descriptions**
+   **Training Description**
 
-   * :doc:`/trainings/repertoire/python-basics`
-   * :doc:`/trainings/repertoire/python-advanced`
+   * :doc:`/trainings/repertoire/python/index`
 
    **Code**
 

@@ -14,7 +14,7 @@ unverständlich, warum Multithreading von modernen Programmiersprachen
 und Frameworks ungeachtet der Gefahren als einzige Möglichkeit,
 effiziente Programme zu schreiben, propagiert wird.
 
-.. image:: images/salad-mt-small.jpg
+.. image:: salad-mt-small.jpg
    :alt: Applied Multithreading
    :align: right
 
@@ -78,4 +78,4 @@ Empfohlene Vorkenntnisse
 ------------------------
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
-Grundkenntnis des Systems (:doc:`Einführungskurs <sysprog-basics>`).
+Grundkenntnis des Systems (:doc:`Einführungskurs <basics>`).

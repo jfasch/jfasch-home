@@ -1,0 +1,46 @@
+.. include:: <mmlalias.txt>
+
+
+2021-11-15
+==========
+
+.. contents::
+   :local:
+
+Project Management
+------------------
+
+* :doc`soup/sensors/task-simu`: assignment changes?
+* Any others? Should we update anything?
+* Integration questions. *Communicate, guys!*
+
+Work Environment
+----------------
+
+* `WSL2 <https://docs.microsoft.com/en-us/windows/wsl/install>`__
+
+  * Why? |longrightarrow| Many problems on native Doze
+
+    * MinGW/Git Bash: ``python -m venv`` sets up a Doze venv
+    * What else?
+
+* SSH public key auth, Github
+* :doc:`/trainings/material/soup/devenv/ssh/sshfs`
+* :doc:`/trainings/material/soup/devenv/ssh/portforwarding`
+  (incl. live demo)
+
+Patterns
+--------
+
+* Based upon :doc:`../soup/sensors/task-arduino-proxy`, tell a story
+  about :download:`Design Patterns
+  </trainings/material/pdf/060-design-patterns-unittests.pdf>`,
+  especially the *Proxy Pattern*.
+
+Python
+------
+
+* ``$PYTHONPATH``, ``os.path``, ``os.getcwd()``, ``__file__``,
+  ``os.path.basename()``, ``os.dirname()``
+* ``os.listdir()``
+* Iterator protocol (-> generators): giving a timeline to sensors

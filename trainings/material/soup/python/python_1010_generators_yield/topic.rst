@@ -7,8 +7,7 @@
 Iteration, and Generators: the ``yield`` Keyword
 ================================================
 
-* :download:`Slide show (S5) <slides.s5.html>`
-* :doc:`Slide show (source) <slides>`
+* :doc:`Slide show <slides>`
 * :doc:`Live hacking screenplay <screenplay>` and :doc:`source code
   <code/index>`
 

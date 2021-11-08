@@ -14,7 +14,7 @@ Python Basics (23.11.2020 - 25.11.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/python-basics`
+   :doc:`/trainings/repertoire/python/basics`
 
    **Github Repo**
 

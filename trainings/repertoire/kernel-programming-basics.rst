@@ -8,8 +8,8 @@
               device, character device, block device, interrupt,
               interrupt handler, isr
 
-Kernelprogrammierung: Einführung
-================================
+Linux Driver Development
+========================
 
 .. sidebar:: Kursdaten
 
@@ -18,7 +18,7 @@ Kernelprogrammierung: Einführung
       Anfrage, training@faschingbauer.co.at
       Dauer, 5 Tage
       Sourcecode, `jf-kernel-course <https://github.com/jfasch/jf-kernel-course>`__
-      Topics, :doc:`/trainings/material/soup/kernel/index`
+      Unterlagen, :doc:`/trainings/material/soup/kernel/index`
 
 Der Linux Kernel ist zu verzweigt und komplex, um in eine Schulung
 egal welcher Länge zu passen. Diese Schulung richtet sich an erfahrene

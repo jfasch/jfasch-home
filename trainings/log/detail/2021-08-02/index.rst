@@ -14,7 +14,7 @@ Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
 
    * PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
    * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
-   * Herdt vs. Python: :doc:`hier </trainings/repertoire/python_herdt>`.
+   * Herdt vs. Python: :doc:`hier </trainings/repertoire/python/herdt>`.
    * `Github Repository <https://github.com/jfasch/2021-08-02>`__
 
 .. contents::
@@ -33,7 +33,7 @@ Themenreihenfolge und Übungen werden aus dem Herdt-Skriptum
 Das Herdt Skriptum ist etwas zu allgemein gehalten (geht auf
 Programmiersprachen im Allgemeinen ein, und ist dadurch verwirrend),
 weswegen in vielen Fällen Ausnahmen gemacht werden. Siehe :doc:`hier
-</trainings/repertoire/python_herdt>` für eine Zuordnung zu meinen
+</trainings/repertoire/python/herdt>` für eine Zuordnung zu meinen
 Python Unterlagen.
 
 Log

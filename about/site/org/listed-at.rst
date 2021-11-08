@@ -14,15 +14,15 @@
    * * Theirs
      * Mine
    * * `Embedded Linux <https://bodenseo.de/kurs/Linux_embedded.html>`__
-     * * :doc:`/trainings/repertoire/sysprog-embedded`
+     * * :doc:`/trainings/repertoire/embedded`
        * :doc:`/trainings/repertoire/raspi-hands-on`
    * * `Raspberry Pi, Linux und Python <https://bodenseo.de/kurs/raspberry_pi.html>`__
      * * :doc:`/trainings/repertoire/raspi-hands-on`
    * * `Systemnahe Programmierung unter Linux <https://bodenseo.de/kurs/linux_systemnahe_programmierung.html>`__
-     * * :doc:`/trainings/repertoire/sysprog-basics`
-       * :doc:`/trainings/repertoire/sysprog-multithreading`
-       * :doc:`/trainings/repertoire/sysprog-network`
-       * :doc:`/trainings/repertoire/sysprog-fortgeschrittenes`
+     * * :doc:`/trainings/repertoire/sysprog/basics`
+       * :doc:`/trainings/repertoire/sysprog/multithreading`
+       * :doc:`/trainings/repertoire/sysprog/network`
+       * :doc:`/trainings/repertoire/sysprog/fortgeschrittenes`
 
 `IT-Visions <https://www.it-visions.de/>`__
 -------------------------------------------
@@ -59,10 +59,10 @@ Systems Programming
    * * Theirs
      * Mine
    * * `Linux-Systemprogrammierung <https://www.it-visions.de/Schulung/S/10223>`__
-     * * :doc:`/trainings/repertoire/sysprog-basics`
-       * :doc:`/trainings/repertoire/sysprog-multithreading`
-       * :doc:`/trainings/repertoire/sysprog-network`
-       * :doc:`/trainings/repertoire/sysprog-fortgeschrittenes`
+     * * :doc:`/trainings/repertoire/sysprog/basics`
+       * :doc:`/trainings/repertoire/sysprog/multithreading`
+       * :doc:`/trainings/repertoire/sysprog/network`
+       * :doc:`/trainings/repertoire/sysprog/fortgeschrittenes`
 
 Embedded Linux, and Kernel Hacking
 ..................................
@@ -74,7 +74,7 @@ Embedded Linux, and Kernel Hacking
    * * Theirs
      * Mine
    * * `Embedded Realtime Linux <https://www.it-visions.de/Schulung/S/9660>`__
-     * * :doc:`/trainings/repertoire/sysprog-embedded`
+     * * :doc:`/trainings/repertoire/embedded`
        * :doc:`/trainings/repertoire/raspi-hands-on`
        * :doc:`/trainings/repertoire/kernel-programming-basics`
 

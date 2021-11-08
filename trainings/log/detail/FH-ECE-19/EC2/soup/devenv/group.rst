@@ -12,7 +12,6 @@ Tasks
 
    task-project
    task-sphinx-intro
-   task-virtualbox
    task-sshfs
    task-systemd
    task-hwdoc

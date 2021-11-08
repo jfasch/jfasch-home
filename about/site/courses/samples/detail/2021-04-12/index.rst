@@ -45,7 +45,7 @@ Das Herdt Skriptum ist etwas zu allgemein gehalten (geht auf
 Programmiersprachen im Allgemeinen ein, und ist dadurch verwirrend),
 weswegen in vielen Fällen Ausnahmen gemacht werden.
 
-**Kursstruktur** siehe :doc:`hier </trainings/repertoire/python_herdt>`.
+**Kursstruktur** siehe :doc:`hier </trainings/repertoire/python/herdt>`.
 
 Log
 ---

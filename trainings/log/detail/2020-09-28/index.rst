@@ -14,7 +14,7 @@ Python Basics (28.9.2020 - 30.9.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/python-basics`
+   :doc:`/trainings/repertoire/python/basics`
 
    **Material**
 

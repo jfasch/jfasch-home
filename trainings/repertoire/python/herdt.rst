@@ -1,3 +1,5 @@
+:orphan:
+
 .. include:: <mmlalias.txt>
 
 Herdt

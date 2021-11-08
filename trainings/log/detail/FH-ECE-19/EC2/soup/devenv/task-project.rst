@@ -2,8 +2,7 @@
    :responsible: joerg.faschingbauer
    :percent-done: 20
    :dependencies: ec2.devenv.sshfs, 
-		  ec2.devenv.sphinx_intro,
-		  ec2.devenv.virtualbox
+		  ec2.devenv.sphinx_intro
 
 
 Create Initial Project Structure

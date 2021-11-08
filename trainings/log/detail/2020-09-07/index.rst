@@ -14,7 +14,7 @@ Python Advanced (7.9.2020 - 10.9.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/python-advanced`
+   :doc:`/trainings/repertoire/python/advanced`
 
    **Material**
 

@@ -1,6 +1,6 @@
 .. meta::
    :description: An overview of all available training material,
-                 together with download links
+		 together with download links
    :keywords: schulung, training
 
 Training Material: Overview and Download
@@ -31,44 +31,38 @@ material.
    * - :doc:`/trainings/repertoire/linux-basics`
      - :download:`basics <pdf/010-linux-basics.pdf>`
      - :doc:`soup/linux/group`
-   * - :doc:`/trainings/repertoire/sysprog-basics`
+   * - :doc:`/trainings/repertoire/sysprog/basics`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
-   * - :doc:`/trainings/repertoire/sysprog-network`
+   * - :doc:`/trainings/repertoire/sysprog/network`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
-   * - :doc:`/trainings/repertoire/sysprog-multithreading`
+   * - :doc:`/trainings/repertoire/sysprog/multithreading`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
-   * - :doc:`/trainings/repertoire/sysprog-fortgeschrittenes`
+   * - :doc:`/trainings/repertoire/sysprog/fortgeschrittenes`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      - :doc:`soup/sysprog/group`
-   * - :doc:`/trainings/repertoire/sysprog-embedded`
+   * - :doc:`/trainings/repertoire/embedded`
      -
      - :doc:`soup/linux/hardware/group`
    * - :doc:`/trainings/repertoire/raspi-hands-on`
      -
      - :doc:`soup/linux/hardware/group`
-   * - :doc:`/trainings/repertoire/kettner-lfs-descr`
-     -
-     -
-   * - :doc:`/trainings/repertoire/c`
+   * - :doc:`/trainings/repertoire/c-like/c`
      - :download:`C <pdf/050-c.pdf>`
      - :doc:`/trainings/material/soup/c/group`
-   * - :doc:`/trainings/repertoire/c-refresher`
+   * - :doc:`/trainings/repertoire/c-like/c-advanced`
      - :download:`C <pdf/050-c.pdf>`
      - :doc:`/trainings/material/soup/c/group`
-   * - :doc:`/trainings/repertoire/c-advanced`
-     - :download:`C <pdf/050-c.pdf>`
-     - :doc:`/trainings/material/soup/c/group`
-   * - :doc:`/trainings/repertoire/cxx`
+   * - :doc:`/trainings/repertoire/c-like/cxx`
      - :download:`C++03 <pdf/055-c++03.pdf>`, :download:`C++11
        <pdf/056-c++11.pdf>`
      - :doc:`soup/cxx/group`
-   * - :doc:`/trainings/repertoire/python-basics`
+   * - :doc:`/trainings/repertoire/python/basics`
      - :download:`Python <pdf/300-python.pdf>`
      - :doc:`soup/python/group`
-   * - :doc:`/trainings/repertoire/python-advanced`
+   * - :doc:`/trainings/repertoire/python/advanced`
      - :download:`Python <pdf/300-python.pdf>`
      - :doc:`soup/python/group`
    * - :doc:`/trainings/repertoire/design-patterns`

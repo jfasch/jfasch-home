@@ -17,10 +17,7 @@ Topics
   * :doc:`Project plan <../soup/group-ec2>`
   * Grading system: show `manager's sheet
     <https://virtueller-campus-2021-22.fh-joanneum.at/mod/resource/view.php?id=21246>`__
-  * `VirtualBox image
-    <https://fhjoanneum-my.sharepoint.com/:u:/g/personal/joerg_faschingbauer_fh-joanneum_at/EWHSVLu-U5tPladezSnhRxIBNTSPmq4XvNiaMGnlFsJ0tA?e=JgfzSt>`__
-    (:doc:`Task <../soup/devenv/task-virtualbox>`)
-
+  
 * Project structure
 
   * `Github <https://github.com/jfasch/FH-ECE-19>`__ (same as in

@@ -1,6 +1,5 @@
 .. ot-task:: ec2.sensors.task_ds18s20
    :dependencies: ec2.devenv.sphinx_intro, 
-		  ec2.devenv.virtualbox,
 		  ec2.sensors.task_sensor_iface,
 		  ec2.devenv.hwdoc
 
@@ -32,6 +31,15 @@ noise and/or timing issues, so we have a second method at hand: attach
 a DS2482 OneWire master to the Raspberry's I2C bus, and let that talk
 with our sensor. Again, described in
 :doc:`/trainings/material/soup/linux/hardware/w1/topic`.
+
+Integration
+-----------
+
+* Once your thermometer is in a shape to be used, notify your users
+  (:doc:`task-prog-stdout` depends on you) how this is done.
+* Help them integrate your thermometer
+* Before, push your documentation department to do their job, or else
+  you will have to explain all that repeatedly
 
 Further Information
 -------------------

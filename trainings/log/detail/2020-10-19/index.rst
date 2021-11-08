@@ -14,7 +14,7 @@ Python Basic and Advanced (19.10.2020 - 22.10.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/python-basics`
+   :doc:`/trainings/repertoire/python/basics`
 
    **Material**
 

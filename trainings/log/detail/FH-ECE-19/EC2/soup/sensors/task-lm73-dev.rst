@@ -1,6 +1,5 @@
 .. ot-task:: ec2.sensors.task_lm73_dev
    :dependencies: ec2.devenv.sphinx_intro, 
-		  ec2.devenv.virtualbox,
 		  ec2.sensors.task_sensor_iface,
 		  ec2.devenv.hwdoc
 
@@ -26,6 +25,15 @@ Description
   Linux kernel. (The companion task, :doc:`task-lm73-hwmon`, *does*
   use the driver.)
 * Document all that
+
+Integration
+-----------
+
+* Once your thermometer is in a shape to be used, notify your users
+  (:doc:`task-prog-stdout` depends on you) how this is done.
+* Help them integrate your thermometer
+* Before, push your documentation department to do their job, or else
+  you will have to explain all that repeatedly
 
 Further Information
 -------------------

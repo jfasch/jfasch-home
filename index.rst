@@ -42,14 +42,17 @@ Linux und Open Source
 Schulung
 --------
 
-* Systemnahe Programmierung und Kernelhacking
-* C und C++
-* Python
-* Unittesting, Test Driven Development, Agile Methoden
-* Buildmanagement und Versionskontrolle
-* Design und Architektur
+* :doc:`trainings/repertoire/python/index`
+* :doc:`trainings/repertoire/sysprog/index`
+* :doc:`trainings/repertoire/kernel-programming-basics`
+* :doc:`trainings/repertoire/c-like/index`
+* :doc:`Unittesting, Test Driven Development
+  </trainings/repertoire/unittests>`
+* :doc:`Buildmanagement <trainings/repertoire/cmake>` and
+  Version Control
+* :doc:`Design and Architecture <trainings/repertoire/design-patterns>`
 
-:doc:`Hier mehr darüber </trainings/index>`.
+:doc:`More ... </trainings/index>`.
 
 Entwicklung
 -----------

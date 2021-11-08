@@ -68,4 +68,4 @@ Empfohlene Vorkenntnisse
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
 Grundkenntnis des Systems (vgl. :doc:`Einführungskurs
-<sysprog-basics>`).
+<basics>`).

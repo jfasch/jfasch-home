@@ -1,6 +1,5 @@
 .. ot-task:: ec2.switches.task_gpio
    :dependencies: ec2.devenv.sphinx_intro, 
-		  ec2.devenv.virtualbox,
 		  ec2.switches.task_switch_iface
 
 GPIO Switch

@@ -25,7 +25,7 @@ Python für Fortgeschrittene
       PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
 
 Über den grundlegenden Sprachumfang (siehe Schulung :doc:`Python
-Grundlagen <python-basics>`) hinaus bietet Python eine Reihe von
+Grundlagen <basics>`) hinaus bietet Python eine Reihe von
 Möglichkeiten, die dem Programmier das Handwerk erleichtern - seien es
 Werkzeuge wie zum Beispiel ein Unittest-Framework, oder Sprachmittel,
 um komplexe Aufgaben einfacher zu lösen.
@@ -85,5 +85,5 @@ Empfohlene Vorkenntnisse
 ------------------------
 
 * Grundlegende Pythonkenntnisse, wie sie zum Beispiel :doc:`hier
-  <python-basics>` vermittelt werden.
+  <basics>` vermittelt werden.
 

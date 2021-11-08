@@ -27,7 +27,7 @@ Python Individualtraining (18.5.2020 - 19.5.2020)
    **Material**
 
    * Slides: :download:`PDF </trainings/material/pdf/300-python.pdf>`
-   * :doc:`Kursbeschreibung </trainings/repertoire/python-basics>`
+   * :doc:`Kursbeschreibung </trainings/repertoire/python/basics>`
    * Anleitung: :doc:`Entstandenes Material und Übungen
      </trainings/exercises>`
 

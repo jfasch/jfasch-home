@@ -22,7 +22,7 @@ nichts hinzufügen. Der "Erfinder" von C, Dennis Ritchie, kann wohl am
 besten erklären, wie C tickt, wozu man es verwendet, und wo seine
 Grenzen sind.
 
-.. image:: images/c-kernighan-ritchie-book.jpg
+.. image:: c-kernighan-ritchie-book.jpg
    :alt: Die Bibel
    :align: right
 

@@ -21,8 +21,8 @@ CMake
    :alt: CMake Logo
    :align: left
 
-Sind :doc:`C <../repertoire/c>` und :doc:`C++
-<../repertoire/cxx>` nicht schon schwer genug zu
+Sind :doc:`C <../repertoire/c-like/c>` und :doc:`C++
+<../repertoire/c-like/cxx>` nicht schon schwer genug zu
 erlernen, muss man sie auch noch kompliziert bauen - alles, damit
 diese Sprachen ihrem Performanceargument gerecht werden.
 
