@@ -11,6 +11,11 @@
 Python: More Language Features
 ==============================
 
+.. image:: /_images/python-logo-master-v3-TM.png
+   :alt: Python logo
+   :align: right
+   :scale: 50%
+
 .. sidebar::
 
    .. list-table::

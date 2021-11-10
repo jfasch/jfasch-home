@@ -1,5 +1,5 @@
-Iterating Intelligently: Generators, and the Iteration Protocol
-===============================================================
+Iterating Intelligently: Generators, and the Iterator Protocol
+==============================================================
 
 .. toctree::
 

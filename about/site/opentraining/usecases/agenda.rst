@@ -3,8 +3,6 @@
 Use Case: Compose Custom Training
 =================================
 
-(See :doc:`here <../plan/basics/agenda>` for the task description)
-
 Initial Customer Requirements
 -----------------------------
 

@@ -48,7 +48,3 @@ Walk-Through
 
 * Show :doc:`complete Python training <../usecases/menu>`
 
-Open Ends
----------
-
-See :doc:`project plan <../plan/plan>`

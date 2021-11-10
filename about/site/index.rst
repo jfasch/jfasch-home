@@ -4,6 +4,11 @@ About This Site
 .. contents::
    :local:
 
+.. image:: /_images/python-powered-w.svg
+   :align: right
+   :alt: Python-powered logo
+   :scale: 50%
+
 License: `GPLv3 <http://www.gnu.org/licenses/gpl-3.0.html>`__
 -------------------------------------------------------------
 
@@ -30,7 +35,7 @@ I'm not a lawyer, but I understand that `CC BY-SA
 <https://creativecommons.org/licenses/by-sa/3.0/>`__ permits exactly
 that.
 
-**Why not the `GNU Free Documentation License <https://www.gnu.org/licenses/fdl.html>`__**
+**Why not the** `GNU Free Documentation License <https://www.gnu.org/licenses/fdl.html>`__
 
 A while ago, there was a `Debian resolution
 <https://www.debian.org/vote/2006/vote_001>`__ to not use the GFDL
@@ -60,12 +65,18 @@ documentation generator. Homepages generally contain content, which is
 not much different from documentation - so yes, Sphinx is a really
 great static website generator. It lets me focus myself on content,
 with an eye towards structure and built-in link consistency (it won't
-let me break links by just moving documents around).
+let me break links by moving documents around).
 
 Installation Instructions
 -------------------------
 
-Clone Repo, create and populate virtual environment (as yourself).
+.. sidebar:: ``pip`` and ``venv``
+
+   * :doc:`/trainings/material/soup/python/swdev/pip/topic`
+   * :doc:`/trainings/material/soup/python/swdev/venv/topic`
+
+Clone Repo, create and populate a virtual environment (as yourself,
+not ``root``).
 
 .. code-block:: console
 
@@ -73,11 +84,6 @@ Clone Repo, create and populate virtual environment (as yourself).
    $ python -m venv ~/venv/jfasch-home-venv
    $ . ~/venv/jfasch-home-venv/bin/activate
    (jfasch-home-venv) $ pip install -r requirements.txt
-
-.. sidebar:: ``pip`` and ``venv``
-
-   * :doc:`/trainings/material/soup/python/swdev/pip/topic`
-   * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 
 Install external dependencies (as ``root``). This is Fedorish; your
 mileage might vary.

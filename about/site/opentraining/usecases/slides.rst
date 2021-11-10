@@ -1,8 +1,6 @@
 Use Case: Slide Show Material as Plain-Text Files
 =================================================
 
-See :doc:`../plan/web/slides/00slides` for task descriptions.
-
 As a training material editor, I want to be able to maintain slide
 material as follows.
 
