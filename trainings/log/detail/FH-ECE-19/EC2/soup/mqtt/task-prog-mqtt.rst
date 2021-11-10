@@ -88,7 +88,7 @@ Call the program, feeding configuration from a Python config file:
 Further Information
 -------------------
 
-* See :doc:`here </trainings/material/soup/python/draft/mqtt/topic>`
+* See :doc:`here </trainings/material/soup/python/misc/mqtt/topic>`
   for more informtion about MQTT, and how to use it in Python.
 
 Dependencies

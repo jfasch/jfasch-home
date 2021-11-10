@@ -12,8 +12,7 @@ Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
 
    **Material**
 
-   * PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/basics/group`
    * Herdt vs. Python: :doc:`hier </trainings/repertoire/python/herdt>`.
    * `Github Repository <https://github.com/jfasch/2021-08-02>`__
 

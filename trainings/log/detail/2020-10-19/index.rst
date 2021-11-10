@@ -12,16 +12,15 @@ Python Basic and Advanced (19.10.2020 - 22.10.2020)
 
    Monday 19.10.2020, 9:00
 
-   **Official Description**
+   **Course Description**
 
-   :doc:`/trainings/repertoire/python/basics`
+   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/advanced/group`
+   * :doc:`/trainings/material/soup/python/swdev/group`
 
    **Material**
 
-   .. csv-table::
-
-      PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+   :doc:`/trainings/material/soup/python/group`
 
 Preparation
 -----------
@@ -30,7 +29,7 @@ Workspace Setup
 ...............
 
 * :doc:`/trainings/material/soup/python/basics/installation`
-* :doc:`/trainings/material/soup/python/draft/vscode`
+* :doc:`/trainings/material/soup/python/misc/vscode`
 
 Agenda
 ------
@@ -85,20 +84,23 @@ training@faschingbauer.co.at.
 Additional Topics, brought in by Thomas
 .......................................
 
-* Programmverweise mit import XY und Aufruf von XY.ZAB
+* Programmverweise mit ``import XY`` und Aufruf von ``XY.ZAB``
 * JSON Handling
 * Exception Handling
-* with open(eventCodeFile, 'r') as f:
-    definedLISAEvents = json.load(f)['event_ids']
-* print (f'bla{variable}blubb'} : was macht das f hier? (habe gesehen, eine verbesserte Stringformatierung in Python3?)
+* .. code-block:: python
+
+     with open(eventCodeFile, 'r') as f:
+         definedLISAEvents = json.load(f)['event_ids']
+
+* ``print (f'bla{variable}blubb'}``: was macht das f hier? (habe gesehen, eine verbesserte Stringformatierung in Python3?)
 * CTYPES
-* Klassen und deren Aufruf im .py Code
-* Headerfiles (.h) verwenden
-* from lib import *
-* .lst Files (Listen?)
+* Klassen und deren Aufruf im ``.py`` Code
+* Headerfiles (``.h``) verwenden
+* ``from lib import *``
+* ``.lst`` Files (Listen?)
 * Socket module
 * Shell script inclusion
-* Code Snippet: "@cs.CALLBACKFUNC" was macht das?
+* Code Snippet: ``@cs.CALLBACKFUNC`` was macht das?
 
 Outcome
 -------

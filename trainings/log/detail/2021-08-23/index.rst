@@ -40,7 +40,7 @@ Day 1
 The basics, with a moderate amount of exercises.
 
 * :doc:`/trainings/material/soup/python/basics/installation`
-* :doc:`/trainings/material/soup/python/draft/vscode`
+* :doc:`/trainings/material/soup/python/misc/vscode`
 
 * Datatypes
 
@@ -137,14 +137,14 @@ Day 3
 .. image:: plan.png
    :scale: 70%
 
-* :doc:`/trainings/material/soup/python/draft/pip/topic`
-* :doc:`/trainings/material/soup/python/draft/venv/topic`
-* :doc:`/trainings/material/soup/python/draft/mqtt/topic`
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+* :doc:`/trainings/material/soup/python/misc/mqtt/topic`
 
 * Databases
 
-  * :doc:`/trainings/material/soup/python/db/dbapi2`
-  * :doc:`/trainings/material/soup/python/db/sqlite3`
+  * :doc:`/trainings/material/soup/python/misc/db/dbapi2`
+  * :doc:`/trainings/material/soup/python/misc/db/sqlite3`
   * `DB-API2 for MS-SQL <https://docs.microsoft.com/de-de/sql/connect/python/python-driver-for-sql-server>`__
 
 * Advanced Topics

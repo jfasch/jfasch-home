@@ -12,9 +12,7 @@ Python Basics (Unplanned)
 
    **Material**
 
-   * :doc:`Python Topics </trainings/material/soup/python/group>`
-   * PDF Slides (Altlast), :download:`Python
-     </trainings/material/pdf/300-python.pdf>`
+   * :doc:`Python Topics </trainings/material/soup/python/basics/group>`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-08-23>`__
@@ -37,7 +35,7 @@ Day 1
 * Setup, Development Environment
 
   * :doc:`/trainings/material/soup/python/basics/installation`
-  * :doc:`/trainings/material/soup/python/draft/vscode`
+  * :doc:`/trainings/material/soup/python/misc/vscode`
 
 * Datatypes
 

@@ -76,8 +76,8 @@ Clone Repo, create and populate virtual environment (as yourself).
 
 .. sidebar:: ``pip`` and ``venv``
 
-   * :doc:`/trainings/material/soup/python/draft/pip/topic`
-   * :doc:`/trainings/material/soup/python/draft/venv/topic`
+   * :doc:`/trainings/material/soup/python/swdev/pip/topic`
+   * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 
 Install external dependencies (as ``root``). This is Fedorish; your
 mileage might vary.
@@ -88,7 +88,7 @@ mileage might vary.
 
 * ``pandoc`` for markdown handling in jupyter notebooks
 * ``graphviz`` for those funky dependency graphs (:doc:`example
-  </trainings/material/soup/python/draft/pip/topic>`)
+  </trainings/material/soup/python/swdev/pip/topic>`)
 * ``dia`` for historical baggage (convert ``.dia`` vector drawings to
   SVG)
 

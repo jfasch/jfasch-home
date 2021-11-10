@@ -255,8 +255,8 @@ https://pypi.org/project/pydbus/
   ``$ dnf install all packages``
 
 
-Perturb :doc:`Encoding </trainings/material/soup/python/draft/encoding/topic>`
-..............................................................................
+Perturb :doc:`Encoding </trainings/material/soup/python/misc/encoding/topic>`
+.............................................................................
 
 * Rename it so we can fix all referers. Split string explanation out
   of legacy "encoding" topic.
@@ -264,8 +264,8 @@ Perturb :doc:`Encoding </trainings/material/soup/python/draft/encoding/topic>`
 * Move new encoding into basic. Better yet, create one new group
   'special' ("other python core topics")
 
-:doc:`/trainings/material/soup/python/draft/context_manager/slides`
-...................................................................
+:doc:`/trainings/material/soup/python/misc/context_manager/slides`
+..................................................................
 
 Bring pseudo code in the slideshow. What is solved?
 

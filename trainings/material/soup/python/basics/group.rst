@@ -8,8 +8,8 @@
 
 .. ot-group:: python.basics
 
-Basic Python: The Language Fundamentals
-=======================================
+Python: The Language Fundamentals
+=================================
 
 .. sidebar::
 
@@ -26,16 +26,18 @@ Basic Python: The Language Fundamentals
 	    devops personnel
           * Those who just want to do more, and who are not required
 	    to write in a particular language
+      * * **Course Language**
+	* * Course material language is English
+	  * Trainer language is English or German
       * * **See also**
-	* * :doc:`../draft/group`
-	  * :doc:`Complete Python material
+	* * :doc:`Complete Python material
             </trainings/material/soup/python/group>`
       * * **Booking**
 	* training@faschingbauer.co.at
 
 Python's strengths are ...
 
-* It can be taught in no time (you'll find yourself writing useful
+* It is taught in no time (you'll find yourself writing useful
   programs on day two)
 * It is powerful
 * It comes with a huge toolkit (the *standard library*)
@@ -43,7 +45,7 @@ Python's strengths are ...
 This course gives a thorough but easy introduction to Python. With the
 help of many small exercises, you'll learn how to write Python
 programs, get an overview of the functionality in the standard
-library, and get an idea :doc:`what else <../draft/group>` Python can do.
+library, and get an idea :doc:`what else <../advanced/group>` Python can do.
 
 .. toctree::
    :maxdepth: 1

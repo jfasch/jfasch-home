@@ -107,12 +107,12 @@ From :download:`Linux Basics (PDF)
 * Python Setup
 
   * :doc:`/trainings/material/soup/python/basics/installation`
-  * :doc:`/trainings/material/soup/python/draft/vscode`
+  * :doc:`/trainings/material/soup/python/misc/vscode`
 
 * Python Intro
 
-  * :download:`Python Course (PDF) </trainings/material/pdf/300-python.pdf>`
-
+   * :doc:`/trainings/material/soup/python/basics/group`
+  
 2021-04-21
 ----------
 
@@ -458,7 +458,7 @@ Modules
 Encoding
 ........
 
-* :doc:`/trainings/material/soup/python/draft/encoding/topic`
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * Re-iterate on exercise's use when capturing ``stdout``.
 
 Notebook
@@ -472,7 +472,7 @@ Notebook
      * Notebook
      * Notebook Download
    * * * :doc:`/trainings/material/soup/python/advanced/modules`
-       * :doc:`/trainings/material/soup/python/draft/encoding/topic`
+       * :doc:`/trainings/material/soup/python/misc/encoding/topic`
      * .. toctree::
 
           Notebooks/2021-05-21

@@ -20,8 +20,7 @@ Python Advanced (7.9.2020 - 10.9.2020)
 
    .. csv-table::
 
-      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
-      PDF Slides (Python obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
+      Python material, :doc:`/trainings/material/soup/python/group`
       PDF Slides (Design Patterns), :download:`Design Patterns </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 
    **Github Private Repository**
@@ -33,6 +32,8 @@ programming. There were some special requirements for the training,
 such as to loose a couple of words about AI/machinelearning and other
 topics, as well as a fuzzy "bring us advanced stuff".
 
+The training was accompanied by a lot of improvised live hacking.
+
 Preparation
 -----------
 
@@ -40,7 +41,7 @@ Workspace Setup
 ...............
 
 * :doc:`/trainings/material/soup/python/basics/installation`
-* :doc:`/trainings/material/soup/python/draft/vscode`
+* :doc:`/trainings/material/soup/python/misc/vscode`
 
 Github for Exercises
 ....................
@@ -66,12 +67,12 @@ knew more. Here the more advanced core Python topics that shall be
 covered.
 
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/python/draft/context_manager/topic`
-* :doc:`/trainings/material/soup/python/draft/encoding/topic`
+* :doc:`/trainings/material/soup/python/misc/context_manager/topic`
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/advanced/modules`
-* :doc:`/trainings/material/soup/python/draft/duck-typing`
-* :doc:`/trainings/material/soup/python/draft/special_methods`
+* :doc:`/trainings/material/soup/python/misc/duck-typing`
+* :doc:`/trainings/material/soup/python/misc/special_methods`
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
@@ -79,11 +80,11 @@ covered.
 Special Topics
 ..............
 
-* :doc:`/trainings/material/soup/python/draft/ai`
+* :doc:`/trainings/material/soup/python/misc/ai/group`
 
-  * :doc:`/trainings/material/soup/python/draft/machine-learning-intro`
-  * :doc:`/trainings/material/soup/python/draft/linear-regression/topic`
-  * :doc:`/trainings/material/soup/python/draft/k-means`
+  * :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
+  * :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`
+  * :doc:`/trainings/material/soup/python/misc/ai/k-means`
 
 * Unit Testing, Test Driven Development, Design Patterns
 
@@ -93,8 +94,8 @@ Special Topics
 
 * Web programming with Jango and/or Flask
 
-Finishing
----------
+Log
+---
 
 Following is a recap of what has happened. File names are relative to
 the root of the `Github repository
@@ -138,7 +139,8 @@ Day 2
 
 * Livehacking OO
 
-  * ``joerg-livehacking/oo.py``
+  * `joerg-livehacking/oo.py
+    <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/oo.py>`__
 
     * initially: ``Thermometer``, ctor, ``get_temperature()``
     * ``__init__``, ``self``, etc. (``self`` can also read ``this``)
@@ -148,19 +150,25 @@ Day 2
  
   * inheritance
 
-    * ``joerg-livehacking/abstract-base-class.py``, ``joerg-livehacking/abstract-base-class.cpp``
-    * insert one step *without* ``abc`` before it, and then show what
+    * `joerg-livehacking/abstract-base-class.py
+      <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/abstract-base-class.py>`__,
+      `joerg-livehacking/abstract-base-class.cpp
+      <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/abstract-base-class.cpp>`__
+    * Insert one step *without* ``abc`` before it, and then show what
       ``abc`` can do
     * explain "check errors as early as can" |longrightarrow| at ctor
       time, rather than at method call time.
 
 * Livehacking design patterns
 
-  * ``joerg-livehacking/composite.py``. Using the thermometer
-    hierarchy, a "composite" thermometer was created. That thermometer
-    uses (*has*) a set of concrete thermometers to calculate the
-    average room temperature.
-  * ``joerg-livehacking/adapter.py``. Fictional scenario ...
+  * `joerg-livehacking/composite.py
+    <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/composite.py>`__. Using
+    the thermometer hierarchy, a "composite" thermometer was
+    created. That thermometer uses (*has*) a set of concrete
+    thermometers to calculate the average room temperature.
+  * `joerg-livehacking/adapter.py
+    <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/adapter.py>`__. Fictional
+    scenario ...
 
     * The ``Unser`` thermometer framework contains a number of
       thermometer implementations which all support the
@@ -184,8 +192,10 @@ Day 3
 * Revisit abstract base classes
 
   * Discuss duck typing.
-  * Morph ``joerg-livehacking/abstract-base-class.py`` into
-    ``joerg-livehacking/duck-typing.py``.
+  * Morph `joerg-livehacking/abstract-base-class.py
+    <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/abstract-base-class.py>`__
+    into `joerg-livehacking/duck-typing.py
+    <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/duck-typing.py>`__.
   * Explaining how ``abc`` shifts duck errors from *call* to
     *initialization*
 
@@ -195,8 +205,9 @@ Day 3
   pattern <https://en.wikipedia.org/wiki/Visitor_pattern>`__ turn into
   an idiom for languages that don't support generators.
 
-  * ``joerg-livehacking/visitor.py``. Classic OO implementation of the
-    visitor pattern as a `DFS traversal
+  * `joerg-livehacking/visitor.py
+    <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/visitor.py>`__. Classic
+    OO implementation of the visitor pattern as a `DFS traversal
     <https://en.wikipedia.org/wiki/Depth-first_search>`__. Together
     with callbacks and all convolutions. Took sideways like,
 
@@ -204,9 +215,10 @@ Day 3
     * show how ``__str__`` and ``__repr__`` work together in
       ``print()``
 
-  * ``joerg-livehacking/visitor-generator.py``. "I don't want to
-    implement a visitor!", poor user says. "I only want to iterate
-    over the tree in DFS order!"
+  * `joerg-livehacking/visitor-generator.py
+    <https://github.com/jfasch/2020-09-07/blob/master/joerg-livehacking/visitor-generator.py>`__. "I
+    don't want to implement a visitor!", poor user says. "I only want
+    to iterate over the tree in DFS order!"
 
     Implement DFS iteration using ``yield from`` which delegates
     iteration into recursion.
@@ -478,17 +490,17 @@ Graph
 -----
 
 .. ot-graph::
-   :entries: python.drafts.ai.linear_regression,
-	     python.drafts.ai.k_means,
-	     python.drafts.duck_typing,
-	     python.drafts.context_manager,
-	     python.drafts.special_methods,
+   :entries: python.misc.ai.linear_regression,
+	     python.misc.ai.k_means,
+	     python.misc.duck_typing,
+	     python.misc.context_manager,
+	     python.misc.special_methods,
 	     python.advanced.closures,
 	     python.advanced.decorators,
 	     python.advanced.starargs,
 	     python.advanced.modules,
 	     python.advanced.python_1010_generators_yield,
-	     python.drafts.encoding,
+	     python.misc.encoding,
 	     python.basics.installation,
 	     python.advanced.exceptions
 

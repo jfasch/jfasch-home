@@ -59,12 +59,18 @@ material.
      - :download:`C++03 <pdf/055-c++03.pdf>`, :download:`C++11
        <pdf/056-c++11.pdf>`
      - :doc:`soup/cxx/group`
-   * - :doc:`/trainings/repertoire/python/basics`
-     - :download:`Python <pdf/300-python.pdf>`
-     - :doc:`soup/python/group`
-   * - :doc:`/trainings/repertoire/python/advanced`
-     - :download:`Python <pdf/300-python.pdf>`
-     - :doc:`soup/python/group`
+   * - :doc:`/trainings/material/soup/python/basics/group`
+     - 
+     - :doc:`/trainings/material/soup/python/basics/group`
+   * - :doc:`/trainings/material/soup/python/advanced/group`
+     - 
+     - :doc:`/trainings/material/soup/python/advanced/group`
+   * - :doc:`/trainings/material/soup/python/swdev/group`
+     - 
+     - :doc:`/trainings/material/soup/python/swdev/group`
+   * - :doc:`/trainings/material/soup/python/misc/group`
+     - 
+     - :doc:`/trainings/material/soup/python/misc/group`
    * - :doc:`/trainings/repertoire/design-patterns`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -

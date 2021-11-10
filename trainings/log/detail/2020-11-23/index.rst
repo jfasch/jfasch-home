@@ -14,7 +14,7 @@ Python Basics (23.11.2020 - 25.11.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/python/basics`
+   :doc:`/trainings/material/soup/python/basics/group`
 
    **Github Repo**
 
@@ -22,10 +22,7 @@ Python Basics (23.11.2020 - 25.11.2020)
 
    **Material**
 
-   .. csv-table::
-
-      PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+   :doc:`/trainings/material/soup/python/group`
 
 Preparation
 -----------
@@ -34,7 +31,7 @@ Workspace Setup
 ...............
 
 * :doc:`/trainings/material/soup/python/basics/installation`
-* :doc:`/trainings/material/soup/python/draft/vscode`
+* :doc:`/trainings/material/soup/python/misc/vscode`
 
 Agenda
 ------
@@ -145,7 +142,7 @@ Links
 -----
 
 * File IO: https://www.youtube.com/watch?v=Uh2ebFW8OYM
-* :doc:`Data science </trainings/material/soup/python/draft/ai>`
+* :doc:`Data science </trainings/material/soup/python/misc/ai/group>`
 * jjj exceptions corey schaefer
 * jjj slice corey schaefer
 * jjj KI

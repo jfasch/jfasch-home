@@ -70,9 +70,7 @@ Python Development
 
 .. sidebar:: Slides
 
-   * :download:`Python (PDF) </trainings/material/pdf/300-python.pdf>`
-   * :doc:`Python (HTML, more alive than PDF)
-     </trainings/material/soup/python/group>`
+   * :doc:`/trainings/material/soup/python/group`
 
 * **Language Introduction**
 

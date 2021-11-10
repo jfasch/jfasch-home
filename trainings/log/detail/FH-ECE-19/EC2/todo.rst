@@ -14,7 +14,7 @@ OO/Interface Design
 -------------------
 
 Moving away from :doc:`duck typing
-</trainings/material/soup/python/draft/duck-typing>`, use Python's
+</trainings/material/soup/python/misc/duck-typing>`, use Python's
 `Abstract Base Class (abc) module
 <https://docs.python.org/3/library/abc.html>`__.
 

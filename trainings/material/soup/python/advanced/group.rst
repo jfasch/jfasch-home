@@ -4,12 +4,12 @@
               object oriented, oo, class, exception, closure,
               decorator, starargs, args, positional, kwargs, keyword
               arguments, starstarargs, iterator, for loop, iterator
-              protocol, operator, operator overloading
+              protocol, operator, operator overloading, exec
 
 .. ot-group:: python.advanced
 
-Advanced Python: More Language Features
-=======================================
+Python: More Language Features
+==============================
 
 .. sidebar::
 
@@ -23,6 +23,9 @@ Advanced Python: More Language Features
       * * **Target Audience**
 	* Those who want to use Python as a programming (*not
           scripting*) language
+      * * **Course Language**
+	* * Course material language is English
+	  * Trainer language is English or German
       * * **See also**
 	* :doc:`Complete Python material
           </trainings/material/soup/python/group>`
@@ -46,6 +49,7 @@ which you won't be able to do without once you got used to them.
    starargs/topic
    closures/topic
    decorators/topic
+   exec/topic
    oo
    exceptions
    modules

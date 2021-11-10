@@ -26,8 +26,7 @@ Python Individualtraining (18.5.2020 - 19.5.2020)
 
    **Material**
 
-   * Slides: :download:`PDF </trainings/material/pdf/300-python.pdf>`
-   * :doc:`Kursbeschreibung </trainings/repertoire/python/basics>`
+   * :doc:`/trainings/material/soup/python/basics/group`
    * Anleitung: :doc:`Entstandenes Material und Übungen
      </trainings/exercises>`
 
@@ -44,8 +43,8 @@ Bedürfnisse einzugehen. Der Teilnehmer hatte schon etwas Vorwissen
 durch konkreten Aufgabenstellungen seines Dienstgebers mitgebracht,
 was uns einen Quickstart ermöglichte.
 
-Im ersten Teil wurden im Wesentlichen die :download:`Folien
-</trainings/material/pdf/300-python.pdf>` vorgetragen, wenngleich in
+Im ersten Teil wurden im Wesentlichen die :doc:`Folien
+</trainings/material/soup/python/group>` vorgetragen, wenngleich in
 einer etwas unüblichen Reihenfolge.
 
 Einen guten Teil des zweiten Tages verbrachten wir mit Code Review

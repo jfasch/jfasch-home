@@ -20,9 +20,27 @@ Python (12.11.2019 - 14.11.2019 in Graz)
 
 .. sidebar:: Material
 
-   * :doc:`Schulungsbeschreibung
-     </trainings/repertoire/python/basics>`
-   * :download:`PDF </trainings/material/pdf/300-python.pdf>`
+   :doc:`/trainings/material/soup/python/basics/group`
+
+
+Eine Einführung in Python und `NumPy <https://numpy.org/>`__, zur
+Beantwortung der Frage, "Ist die Herrschaft von MATLAB
+absolut?". Gestellt von einer Firma aus dem Raum Graz, gehalten in den
+Schulungsräumen von `tecTrain (Graz)
+<https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__,
+über die der Kurs gebucht wurde. Platzhirsche sind schwer zu schlagen,
+haben wir herausgefunden, aber Python ist auf einem sehr guten
+Weg. Spass hatten wir allemal.
+
+    *"Die Schulung war unglaublich lustig und hat mir einen sehr guten
+    Überblick über Python vermittelt, ich habe gelernt wie ich es auf
+    für mich relevante Probleme anwende und was es dabei zu beachten
+    gilt.*
+    
+    *Zudem war der Kursleiter sehr sympathisch und kompetent. Ich
+    würde es also jederzeit weiterempfehlen bzw. wiederholen."*
+
+Danke Christoph, sowas nettes hat noch nie jemand zu mir gesagt!
 
 Standardthemen
 --------------

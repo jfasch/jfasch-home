@@ -298,8 +298,9 @@ Eine zweitägige Tour-de-Force in Python.
 
 Ein Gemisch aus folgenden Kursen:
 
-* :doc:`../repertoire/python/basics`
-* :doc:`../repertoire/python/advanced`
+* :doc:`/trainings/material/soup/python/basics/group`
+* :doc:`/trainings/material/soup/python/advanced/group`
+* :doc:`/trainings/material/soup/python/swdev/group`
 
 .. _records-2019-09-30:
 
@@ -330,7 +331,7 @@ Der Kurs wurde gebucht über meinen Partner `tecTrain
 Python Basics (24.6.2019 - 27.6.2019, bei einer Firma in Oberösterreich)
 ------------------------------------------------------------------------
 
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 
 .. _records-2019-06-13:
 
@@ -344,7 +345,7 @@ Linux Basics (13.6.2019 - 19.6.2019, bei einer Firma in Oberösterreich)
 Python Basics (3.6.2019 - 6.6.2019, bei einer Firma in Oberösterreich)
 ----------------------------------------------------------------------
 
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 
 Linux Big Picture (27.5.2019 - 29.5.2019, bei einer Firma in Baden-Württemberg)
 -------------------------------------------------------------------------------
@@ -368,7 +369,7 @@ Python Basics (23.5.2019 - 24.5.2019, bei einer Firma in der Obersteiermark)
 
 Einführung in Python mit Workshopcharakter
 
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 
 Korn Shell Scripting (20.5.2019 - 22.5.2019 bei einer Firma in Salzburg)
 ------------------------------------------------------------------------
@@ -404,7 +405,7 @@ Der Kurs wurde gebucht über meinen Partner `tecTrain
 Python Basics (1.10.2018 - 4.10.2018, bei einer Firma in Oberösterreich)
 ------------------------------------------------------------------------
 
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 
 .. _records-2018-07-16:
 
@@ -459,7 +460,7 @@ Einführung in Linux für geübte Bare-Metal-Programmierer, die offenbar
 auch noch weg von C hin zu Python wollen.
 
 * :doc:`../repertoire/linux-basics`
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 
 .. _records-fraunhofer-2017-08-28:
 
@@ -568,7 +569,7 @@ Advanced Python Workshop (20.2.2017 - 23.2.2017, bei einer Firma in Oberösterre
 Eine meiner Lieblingsschulungen: ein Workshop, wo man ausgehend von
 einem Basiswissen mal hier mal dort in die Tiefe geht.
 
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 * :doc:`../repertoire/python/advanced`
 
 Embedded Linux (30.11.2015 - 4.12.2015, `Bodenseo <http://bodenseo.de/>`__, Hemmenhofen am Bodensee)
@@ -608,7 +609,7 @@ Der Kurs wurde gebucht über meinen Partner `tecTrain
 Einführung in Python (5.10.2015 - 6.10.2015 in Wien)
 ----------------------------------------------------
 
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 
 Der Kurs wurde gebucht über meinen Partner `LinuxCampus
 <https://www.linuxcampus.net/>`__.
@@ -893,7 +894,7 @@ Einführung in Python (nach Mathias' Unterlagen, Einführungscharakter)
 Einführung in Python (25.9.2012 - 27.9.2012, STIA in Admont)
 ------------------------------------------------------------
 
-* :doc:`../repertoire/python/basics`
+* :doc:`/trainings/material/soup/python/basics/group`
 
 .. _records-2012-02-13:
 

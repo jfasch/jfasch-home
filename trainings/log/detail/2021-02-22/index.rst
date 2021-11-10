@@ -16,8 +16,9 @@ Python Basics (22.2.2021 - 24.2.2021)
 
    **Material**
 
-   * PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/advanced/group`
+   * :doc:`/trainings/material/soup/python/swdev/group`
 
    **Source Code**
 

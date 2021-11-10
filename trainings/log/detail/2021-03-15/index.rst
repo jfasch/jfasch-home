@@ -37,7 +37,7 @@ Log
   * File IO
   * OO Basics
   * Github Exercise
-  * :doc:`/trainings/material/soup/python/draft/mqtt/topic` Diskussion
+  * :doc:`/trainings/material/soup/python/misc/mqtt/topic` Diskussion
 
   * Unittesting
 

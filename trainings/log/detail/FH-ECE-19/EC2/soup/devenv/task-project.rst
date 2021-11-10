@@ -27,8 +27,8 @@ Description
    * * Doc: Deployment to Raspi. Add references to
 
        * :doc:`task-sshfs`
-       * :doc:`/trainings/material/soup/python/draft/pip/topic`
-       * :doc:`/trainings/material/soup/python/draft/venv/topic`
+       * :doc:`/trainings/material/soup/python/swdev/pip/topic`
+       * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 
      *
    * * Doc: Sphinx build

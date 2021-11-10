@@ -30,7 +30,7 @@ Day 1
 * Setup, Development Environment
 
   * :doc:`/trainings/material/soup/python/basics/installation`
-  * :doc:`/trainings/material/soup/python/draft/vscode`
+  * :doc:`/trainings/material/soup/python/misc/vscode`
 
 * Datatypes
 

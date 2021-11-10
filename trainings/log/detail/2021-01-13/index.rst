@@ -16,8 +16,7 @@ Programmierung Grundlagen (13. und 14.1.2021)
 
    **Material**
 
-   * PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
-   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/basics/group`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`, :download:`download
      <Notebook.ipynb>`
 

@@ -8,9 +8,9 @@ Python Basic and Advanced (22.3.2021 - 25.3.2021)
 
    **Material**
 
-   * PDF Slides (:download:`Download
-     </trainings/material/pdf/300-python.pdf>`)
-   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/advanced/group`
+   * :doc:`/trainings/material/soup/python/swdev/group`
 
    **Source Code**
 
@@ -152,7 +152,7 @@ Day 4
   as *records*.
 * Test driven development
 * OO
-* :doc:`/trainings/material/soup/python/draft/mqtt/topic`
+* :doc:`/trainings/material/soup/python/misc/mqtt/topic`
 
 Links
 -----
@@ -168,9 +168,9 @@ Links
   ``str("123,456")`` (note the *comma*) -> ``float(123.456)``
   conversions.
 * :doc:`Virtual Environments
-  </trainings/material/soup/python/draft/venv/topic>`, and
+  </trainings/material/soup/python/swdev/venv/topic>`, and
   :doc:`Python Package Index (PyPI)
-  </trainings/material/soup/python/draft/pip/topic>`
+  </trainings/material/soup/python/swdev/pip/topic>`
 
 (Tutorial) Videos
 -----------------

@@ -14,13 +14,13 @@ Python Basics (28.9.2020 - 30.9.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/python/basics`
+   :doc:`/trainings/material/soup/python/basics/group`
 
    **Material**
 
    .. csv-table::
 
-      PDF Slides, :download:`Python </trainings/material/pdf/300-python.pdf>`
+      Python material, :doc:`/trainings/material/soup/python/group`
       :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
 
 Preparation
@@ -30,7 +30,7 @@ Workspace Setup
 ...............
 
 * :doc:`/trainings/material/soup/python/basics/installation`
-* :doc:`/trainings/material/soup/python/draft/vscode`
+* :doc:`/trainings/material/soup/python/misc/vscode`
 
 Github for Exercises
 ....................

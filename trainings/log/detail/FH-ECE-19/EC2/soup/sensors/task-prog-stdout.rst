@@ -73,7 +73,7 @@ makes them available to other people as well (for example, the task
   ``ece19/configs/sensors_ini.py``.
 * One that is not a special configuration file syntax in itself, but
   rather uses the Python ``exec()`` function. See
-  :doc:`/trainings/material/soup/python/swdev/exec/topic` for an
+  :doc:`/trainings/material/soup/python/advanced/exec/topic` for an
   explanation. Put it in, say, ``ece19/configs/sensors_exec.py``.
 
 Call the program, feeding configuration from a ``.ini`` file:

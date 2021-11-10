@@ -282,7 +282,7 @@ Advanced Python
   <https://www.youtube.com/watch?v=APOPm01BVrk>`__: `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
   again. :doc:`Virtual environments
-  </trainings/material/soup/python/draft/venv/topic>` are kind of an
+  </trainings/material/soup/python/swdev/venv/topic>` are kind of an
   isolated development sandbox, solving a similar problem as
   containers do, but much more lightweight and Python only.
 

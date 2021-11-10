@@ -25,14 +25,16 @@ Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
 
    **Slides**
 
-   * :download:`Python </trainings/material/pdf/300-python.pdf>` (PDF)
+   * :doc:`/trainings/material/soup/python/basics/group`
    * :download:`Unittesting
      </trainings/material/pdf/060-design-patterns-unittests.pdf>`
      (PDF)
+   * :doc:`/trainings/material/soup/python/swdev/unittest``
 
    **Training Description**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/swdev/group`
 
    **Code**
 
