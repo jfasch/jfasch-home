@@ -1,3 +1,5 @@
+.. ot-group:: linux.hardware
+
 Linux Hardware Interfaces
 =========================
 
@@ -20,8 +22,6 @@ Contents
 
 Group Description
 -----------------
-
-.. ot-group:: linux.hardware
 
 .. ot-graph::
    :entries: linux.hardware 

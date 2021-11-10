@@ -6,6 +6,7 @@ Linux
 
    permissions/group
    hardware/group
+   drafts/group
 
 .. ot-group:: linux
 
