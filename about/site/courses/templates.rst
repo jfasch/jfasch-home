@@ -17,6 +17,8 @@ Sidebar: Course Metadata
 	  * Modules can be booked separately
       * * **Requirements**
 	* Participants should be fluent in C
+      * * **Target Audience**
+	* ...
       * * **Course Material**
 	* ...
       * * **See also**

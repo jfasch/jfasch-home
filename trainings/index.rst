@@ -36,16 +36,25 @@ Everything About Linux
 Programming Languages
 ---------------------
 
-* :doc:`repertoire/python/index`
+* :doc:`material/soup/python/group`
 * :doc:`repertoire/c-like/index`
 * :doc:`repertoire/bash`
 
 .. toctree::
    :hidden:
 
-   repertoire/python/index
+   material/soup/python/group
    repertoire/c-like/index
    repertoire/bash
+
+.. there are a few links out there that reference those. have to keep
+   them for a while:
+
+.. toctree::
+   :hidden:
+
+   repertoire/python/basics
+   repertoire/python/advanced
 
 Miscellaneous but Related
 -------------------------

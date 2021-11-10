@@ -49,7 +49,7 @@ sequence, rather than the real time.
 Based upon a `simple sketch in our project
 <https://github.com/jfasch/FH-ECE-19/blob/master/tests/timeline-example.py>`__,
 and an :doc:`attempt to explain all this
-</trainings/material/soup/python/python_1010_generators_yield/topic>`,
+</trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic>`,
 all simulated thermometer implementation should have an optional
 constructor parameter (call it, say, ``timeline``, uniformly) that can
 be used by unit tests.

@@ -41,7 +41,7 @@ Discussion of Tasks
     :doc:`../soup/switches/group`.
   
   * :doc:`../soup/sensors/task-simu`. Point at
-    :doc:`/trainings/material/soup/python/iteration-generation/topic`.
+    :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`.
   *
     :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/sensors/task-arduino-proxy`. **The
     heavyweight!**

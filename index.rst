@@ -42,7 +42,7 @@ Linux und Open Source
 Schulung
 --------
 
-* :doc:`trainings/repertoire/python/index`
+* :doc:`trainings/material/soup/python/group`
 * :doc:`trainings/repertoire/sysprog/index`
 * :doc:`trainings/repertoire/kernel-programming-basics`
 * :doc:`trainings/repertoire/c-like/index`

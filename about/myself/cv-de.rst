@@ -52,3 +52,8 @@ Curriculum Vitae
   * Build Management
   * Schittstelle zum Management
   * Weiser Alter Mann
+
+* FH Joanneum Graz (seit 2020)
+
+  * Lehrveranstaltung *Embedded Computing* im Lehrgang *Electronics
+    and Computer Engineering*

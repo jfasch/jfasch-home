@@ -7,9 +7,9 @@ DBAPI 2
    :local:
 
 .. ot-topic:: python.db.dbapi2
-   :dependencies: python.swdev.modules,
+   :dependencies: python.advanced.modules,
 		  python.basics.python_0220_for,
-                  python.python_1010_generators_yield
+                  python.advanced.python_1010_generators_yield
 
 Database Interfaces
 -------------------

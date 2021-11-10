@@ -199,7 +199,7 @@ Day 2
     and the *iterator protocol*
 
 * Generators:
-  :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
+  :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
 
   #. `fibo-inline.py
      <https://github.com/jfasch/2020-10-19/blob/main/live-hacking/fibo-inline.py>`__. Generate

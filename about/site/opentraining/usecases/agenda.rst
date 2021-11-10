@@ -12,10 +12,10 @@ A company is interested in a Python training. During an initial phone
 call it becomes clear that they are interested in the following
 topics,
 
-* :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/python/swdev/oo`
-* :doc:`/trainings/material/soup/python/swdev/exceptions`
-* :doc:`/trainings/material/soup/python/swdev/modules`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo`
+* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/advanced/modules`
 
 I promise them to come up with an agenda for the training.
 
@@ -41,10 +41,10 @@ defined above. An arrow A |longrightarrow| B means that topic B must
 be explained before topic A (A is said to *depend* on B).
 
 .. ot-graph::
-   :entries: python.python_1010_generators_yield,
-	     python.swdev.oo,
-	     python.swdev.exceptions,
-	     python.swdev.modules
+   :entries: python.advanced.python_1010_generators_yield,
+	     python.advanced.oo,
+	     python.advanced.exceptions,
+	     python.advanced.modules
 
 Based upon this knowledge, a tool can be used to *automatically*
 generate an agenda.
@@ -56,8 +56,8 @@ generate an agenda.
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
-* :doc:`/trainings/material/soup/python/swdev/oo`
-* :doc:`/trainings/material/soup/python/swdev/exceptions`
+* :doc:`/trainings/material/soup/python/advanced/oo`
+* :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-* :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/python/swdev/modules`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
+* :doc:`/trainings/material/soup/python/advanced/modules`

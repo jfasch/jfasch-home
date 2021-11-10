@@ -35,7 +35,7 @@ Kursinhalt
 
 (Der Ursprung dieses Kurses ist ein :ref:`eintägiger Ausflug ins
 Kernel-Land <records-bodenseo-2015-11-30-kernel>` im Rahmen eines
-einwöchigen :ref:`"Systemnahe Programmierung" <trainings-sysprog>`
+einwöchigen :doc:`"Systemnahe Programmierung" <sysprog/index>`
 Trainings am Bodensee.)
 
 * **Module**. In Linux-Speak ist ein *Modul* dynamisch ladbarer

@@ -1,5 +1,4 @@
-
-.. ot-topic:: python.iteration_generation
+.. ot-topic:: python.advanced.iteration_generation
    :dependencies: python.basics.python_0220_for
 
 Iteration, Comprehensions, and Generators
@@ -21,4 +20,4 @@ Dependencies
 ------------
 
 .. ot-graph:: 
-   :entries: python.iteration_generation
+   :entries: python.advanced.iteration_generation

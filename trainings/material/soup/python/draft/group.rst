@@ -19,13 +19,9 @@ Contents
    duck-typing
    context_manager/topic
    special_methods
-   starargs/topic
-   decorators/topic
-   closures/topic
    import
    vscode
    encoding/topic
-   exceptions
 
 Group Definition
 ----------------

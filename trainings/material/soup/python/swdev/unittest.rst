@@ -7,8 +7,8 @@ The ``unittest`` Module
    :local:
 
 .. ot-topic:: python.swdev.unittest
-   :dependencies: python.swdev.oo,
-		  python.swdev.modules
+   :dependencies: python.advanced.oo,
+		  python.advanced.modules
 
 Simplest Example
 ----------------

@@ -12,9 +12,6 @@ Topics
 .. toctree::
    :maxdepth: 1
 
-   oo
-   exceptions
-   modules
    exec/topic
    unittest
 

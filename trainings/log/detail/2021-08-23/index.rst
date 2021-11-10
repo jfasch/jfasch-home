@@ -94,7 +94,7 @@ Day 2
 
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/join_function`
-  * :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
+  * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
 
 * File I/O and Strings
@@ -120,7 +120,7 @@ Day 2
   * Exercise: :doc:`exercises/sap-cleaned`
   * Modules
 
-    * :doc:`/trainings/material/soup/python/swdev/modules`
+    * :doc:`/trainings/material/soup/python/advanced/modules`
     * `Quick run-through
       <https://github.com/jfasch/2021-08-23/tree/master/sap>`__,
       modularizing the :doc:`last exercise <exercises/sap-cleaned>`
@@ -149,8 +149,8 @@ Day 3
 
 * Advanced Topics
 
-  * :doc:`/trainings/material/soup/python/swdev/oo`
-  * :doc:`/trainings/material/soup/python/swdev/exceptions`
+  * :doc:`/trainings/material/soup/python/advanced/oo`
+  * :doc:`/trainings/material/soup/python/advanced/exceptions`
   * :doc:`/trainings/material/soup/python/swdev/unittest`
 
 * Miscellaneous Topics

@@ -43,7 +43,7 @@ Walk-Through
 
   * :doc:`../usecases/agenda`
   * Show
-    :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`. Multiple
+    :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`. Multiple
     artifacts: slides *and* livehacking screenplay.
 
 * Show :doc:`complete Python training <../usecases/menu>`

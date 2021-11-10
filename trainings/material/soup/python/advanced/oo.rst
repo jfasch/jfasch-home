@@ -1,3 +1,7 @@
+.. ot-topic:: python.advanced.oo
+   :dependencies: python.basics.python_0450_dictionaries,
+		  python.basics.python_0270_functions
+
 .. include:: <mmlalias.txt>
 
 Object Oriented Programming
@@ -5,10 +9,6 @@ Object Oriented Programming
 
 .. contents::
    :local:
-
-.. ot-topic:: python.swdev.oo
-   :dependencies: python.basics.python_0450_dictionaries,
-		  python.basics.python_0270_functions
 
 Object Oriented Programming
 ---------------------------

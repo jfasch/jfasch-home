@@ -56,7 +56,7 @@ Tag 3
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-* :doc:`/trainings/material/soup/python/swdev/modules`
+* :doc:`/trainings/material/soup/python/advanced/modules`
 
 Tag 4
 .....

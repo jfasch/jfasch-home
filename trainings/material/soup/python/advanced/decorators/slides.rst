@@ -3,6 +3,9 @@
 Decorators (Slideshow)
 ======================
 
+.. contents::
+   :local:
+
 The Ominous "``@``"
 -------------------
 

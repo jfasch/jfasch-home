@@ -65,16 +65,16 @@ On the other hand, there's always a line to cross where you wish you
 knew more. Here the more advanced core Python topics that shall be
 covered.
 
-* :doc:`/trainings/material/soup/python/python_1010_generators_yield/topic`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
 * :doc:`/trainings/material/soup/python/draft/context_manager/topic`
 * :doc:`/trainings/material/soup/python/draft/encoding/topic`
-* :doc:`/trainings/material/soup/python/draft/exceptions`
-* :doc:`/trainings/material/soup/python/swdev/modules`
+* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/draft/duck-typing`
 * :doc:`/trainings/material/soup/python/draft/special_methods`
-* :doc:`/trainings/material/soup/python/draft/starargs/topic`
-* :doc:`/trainings/material/soup/python/draft/closures/topic`
-* :doc:`/trainings/material/soup/python/draft/decorators/topic`
+* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+* :doc:`/trainings/material/soup/python/advanced/closures/topic`
+* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
 Special Topics
 ..............
@@ -128,7 +128,7 @@ Day 2
 .....
 
 * Livehacking:
-  :doc:`/trainings/material/soup/python/iteration-generation/topic`,
+  :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`,
   covering
 
   * List comprehensions
@@ -234,9 +234,9 @@ Day 4
   * Decorators theory, and livehacking. Mainly to see how flask routes
     work.
 
-    * :doc:`/trainings/material/soup/python/draft/starargs/topic`
-    * :doc:`/trainings/material/soup/python/draft/closures/topic`
-    * :doc:`/trainings/material/soup/python/draft/decorators/topic`
+    * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+    * :doc:`/trainings/material/soup/python/advanced/closures/topic`
+    * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
   * Continue project; add CSV
     import. 
@@ -483,12 +483,12 @@ Graph
 	     python.drafts.duck_typing,
 	     python.drafts.context_manager,
 	     python.drafts.special_methods,
-	     python.drafts.closures,
-	     python.drafts.decorators,
-	     python.drafts.starargs,
-	     python.swdev.modules,
-	     python.python_1010_generators_yield,
+	     python.advanced.closures,
+	     python.advanced.decorators,
+	     python.advanced.starargs,
+	     python.advanced.modules,
+	     python.advanced.python_1010_generators_yield,
 	     python.drafts.encoding,
 	     python.basics.installation,
-	     python.drafts.exceptions
+	     python.advanced.exceptions
 

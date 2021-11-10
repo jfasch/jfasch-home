@@ -1,5 +1,5 @@
-Systemprogrammierung: Einführung
-================================
+Linux Systems Programming: Introduction
+=======================================
 
 .. sidebar:: Kursdaten
 

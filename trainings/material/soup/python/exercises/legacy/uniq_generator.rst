@@ -6,7 +6,7 @@ Generator: ``uniq()``
 .. ot-exercise:: python.exercises.legacy.uniq_generator
    :dependencies: python.exercises.legacy.uniq_function,
 		  python.exercises.legacy.passwd,
-		  python.python_1010_generators_yield
+		  python.advanced.python_1010_generators_yield
 
 You came up with a solution for
 :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`.

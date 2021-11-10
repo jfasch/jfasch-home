@@ -1,4 +1,4 @@
-.. ot-topic:: python.drafts.starargs
+.. ot-topic:: python.advanced.starargs
    :dependencies: python.basics.python_0270_functions
 
 Positional and Keyword Arguments
@@ -10,4 +10,4 @@ Positional and Keyword Arguments
    screenplay
 
 .. ot-graph:: 
-   :entries: python.drafts.starargs
+   :entries: python.advanced.starargs

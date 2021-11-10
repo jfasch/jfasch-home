@@ -1,3 +1,8 @@
+.. ot-topic:: python.advanced.exceptions
+   :dependencies: python.basics.python_0140_variables,
+		  python.basics.python_0270_functions,
+		  python.advanced.oo
+
 .. include:: <mmlalias.txt>
 
 Exception Handling
@@ -5,11 +10,6 @@ Exception Handling
 
 .. contents::
    :local:
-
-.. ot-topic:: python.swdev.exceptions
-   :dependencies: python.basics.python_0140_variables,
-		  python.basics.python_0270_functions,
-		  python.swdev.oo
 
 Why Exceptions?
 ---------------

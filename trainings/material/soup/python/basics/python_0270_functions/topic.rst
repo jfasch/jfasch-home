@@ -13,9 +13,9 @@ Functions
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/python/draft/closures/topic`
-   * :doc:`/trainings/material/soup/python/draft/decorators/topic`
-   * :doc:`/trainings/material/soup/python/draft/starargs/topic`
+   * :doc:`/trainings/material/soup/python/advanced/closures/topic`
+   * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+   * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 
 .. ot-graph::
    :entries: python.basics.python_0270_functions

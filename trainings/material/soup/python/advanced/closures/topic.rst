@@ -1,4 +1,4 @@
-.. ot-topic:: python.drafts.closures
+.. ot-topic:: python.advanced.closures
    :dependencies: python.basics.python_0270_functions
 
 Closures
@@ -11,4 +11,4 @@ Closures
    screenplay
 
 .. ot-graph:: 
-   :entries: python.drafts.closures
+   :entries: python.advanced.closures

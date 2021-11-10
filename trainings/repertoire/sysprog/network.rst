@@ -1,5 +1,5 @@
-Systemprogrammierung: Netzwerk
-==============================
+Linux Systems Programming: Network Programming
+==============================================
 
 .. sidebar:: Kursdaten
 

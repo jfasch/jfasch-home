@@ -1,5 +1,4 @@
-================================================================
- Systemprogrammierung: Virtuelles Memory, IPC, Shared Libraries
+Linux Systems Programming: Virtual Memory, IPC, Shared Libraries
 ================================================================
 
 .. sidebar:: Kursdaten
@@ -21,7 +20,7 @@ Schnittstellen, die es ermöglichen, hochperformante Anwendungen zu
 schreiben. Hier wird ein Überblick gegeben.
 
 Kursinhalt
-==========
+----------
 
 * **Virtuelles Memory**. Speicherverwaltung in modernen
   Bertriebssystemen basiert auf sogenanntem *virtuellen Memory*. Zum
@@ -66,7 +65,7 @@ Kursinhalt
   * *Explizites Laden* mit ``dlopen()``: "Loading Scopes" etc.
   
 Empfohlene Vorkenntnisse
-========================
+------------------------
 
 Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
 Grundkenntnis des Systems (vgl. :doc:`Einführungskurs

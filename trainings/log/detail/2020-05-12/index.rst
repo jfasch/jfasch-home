@@ -32,7 +32,7 @@ Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
 
    **Training Description**
 
-   * :doc:`/trainings/repertoire/python/index`
+   * :doc:`/trainings/material/soup/python/group`
 
    **Code**
 

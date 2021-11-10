@@ -1,8 +1,8 @@
 .. ot-topic:: python.drafts.context_manager
    :dependencies: python.basics.python_0140_variables,
-		  python.drafts.decorators,
-		  python.python_1010_generators_yield,
-		  python.drafts.exceptions
+		  python.advanced.decorators,
+		  python.advanced.python_1010_generators_yield,
+		  python.advanced.exceptions
 
 Context Managers (the ``with`` Statement) (*incomplete*)
 ========================================================
@@ -21,5 +21,5 @@ Context Managers (the ``with`` Statement) (*incomplete*)
 * contextlib
 
 .. ot-graph:: 
-   :entries: python.drafts.closures
+   :entries: python.drafts.context_manager
 

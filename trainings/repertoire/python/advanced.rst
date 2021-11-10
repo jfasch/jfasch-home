@@ -1,89 +1,72 @@
 .. meta::
-   :description: Basierend auf Python-Basiswissen vermittelt dieses
-                 Training Einblicke in die Genialität und Einfachheit
-                 der Sprache
+   :description: Python advanced: though so simple, it is powerful
    :keywords: schulung, training, programming, python, advanced,
               exceptions, object, object model, inheritance, class,
-              constructor, module, package, unittest, iteration ,
+              constructor, module, package, unittest, iteration,
               generator, setup, distutils, setuptools
 
-Python für Fortgeschrittene
-===========================
+Advanced Python
+===============
 
-.. sidebar:: Kursdaten
+.. sidebar::
 
-   .. csv-table::
+   .. list-table::
+      :align: left
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
+      * * **Duration**
+	* 2-3 days
+      * * **Requirements**
+	* :doc:`basics`
+      * * **Target Audience**
+	* Those who want to use Python as a programming language
+      * * **Course Material**
+	* :doc:`/trainings/material/soup/python/draft/group`
+      * * **See also**
+	* * :doc:`basics`
+	  * :doc:`Complete Python material
+            </trainings/material/soup/python/group>`
+      * * **Booking**
+	* training@faschingbauer.co.at
 
-   **Unterlagen**
+`The Zen of Python <https://www.python.org/dev/peps/pep-0020/>`__
+gives a number of reasons why it is a great idea to use that language
+to solve problems.
 
-   .. csv-table::
+Course Contents
+---------------
 
-      :doc:`Topics </about/site/opentraining/index>`, :doc:`/trainings/material/soup/python/group`
-      PDF Slides (obsolete), :download:`Python </trainings/material/pdf/300-python.pdf>`
+* **Object Oriented Programming** The language is, in its internals,
+  object oriented. Nobody is required to know what a class is though,
+  although that knowledge sure helps maintain bigger code bases.
 
-Über den grundlegenden Sprachumfang (siehe Schulung :doc:`Python
-Grundlagen <basics>`) hinaus bietet Python eine Reihe von
-Möglichkeiten, die dem Programmier das Handwerk erleichtern - seien es
-Werkzeuge wie zum Beispiel ein Unittest-Framework, oder Sprachmittel,
-um komplexe Aufgaben einfacher zu lösen.
-
-Zielpublikum
-------------
-
-Der Kurs richtet sich an alle Programmierer, die bereits Teile ihres
-Aufgabenbereichs in Python lösen - und mehr damit machen möchten ohne
-sich zu verrennen.
-
-Kursinhalt
-----------
-
-* **Objektorientierte Programmierung** ist in Python genauso möglich
-  wie in vielen anderen Sprachen - und ist auch unerlässlich, will man
-  große und komplexe Programme verstehbar halten. Hier wird das
-  Handwerk erklärt und auch auf *Objektorientiertes Design*
-  eingegangen.
-
-  * *Konstruktoren*
-  * *Memberzugriff*
-  * *Vererbung*
+  * *Classes*
+  * *Constructors*
+  * *Members*
+  * *Inheritance*
   * *Exceptions*
-  * *Das Python Objektmodell*
+  * *The Python Object Model*
 
-* **Das Modulkonzept**. Das ``import`` Statement ist für den
-  Programmierer der Einsprungspunkt zur Wiederverwendung. Hier werden
-  ein paar Details vorgestellt ...
+* **Modules and Packages**. The ``import`` statement, together with a
+  simple yet powerful module concept, is the key to program
+  modularization.
 
-  * *Module und Packages*: was ist das und wie kann ich selbst welche
-    erstellen?
-  * *Lokale Imports*: wie verschmutze ich nicht den globalen
-    Namespace?
+  * *Module search*
+  * *Namespace packages*
+  * *Relative imports*
 
-* **Grössere Programme und Unit Testing**. Werden Programme größer und
-  fürchtet man sich vor jeder Änderung vor neuen Fehlern, braucht man
+* **Unit testing, structure, and sanity**. As projects become larger,
+  they need help or they fall apart.
 
-  * *Programmstruktur*
-  * *Unittests*
-  * *Installation von Paketen*
+  * *Project structure*
+  * *Package installation*: ``pip``, PyPi, and virtual environments
+  * *Packaging*: ``setuptools``, and package deployment
+  * *Unit testing*
 
-* **Generatoren**. In Python, wie in vielen anderen Sprachen, ist das
-  Iterieren über eine existierende Menge an Daten ein häufiges
-  Idiom. Python bietet Sprachwerkzeuge, die es erlauben, sehr einfach
-  über beliebige Datenmengen zu iterieren - selbst wenn diese noch
-  nicht existieren.
-* **Verschiedene ausgewählte Themen**.
+* **Miscellaneous Topics**.
 
-  * *Interpreteraufruf* mittels ``exec``
-  * *Context Managers*: das ``with`` Statement
-  * *Dekoratoren*
-  * *Regular Expressions*
-  * *Verschiedene ausgewählte Module aus der Python Standard Library*
-
-Empfohlene Vorkenntnisse
-------------------------
-
-* Grundlegende Pythonkenntnisse, wie sie zum Beispiel :doc:`hier
-  <basics>` vermittelt werden.
+  * *Generators*: the ``yield`` statement, generator expressions
+  * *Recursive interpreter calls*: ``exec()`` and ``eval()``
+  * *Context Managers*: the ``with`` statement
+  * *Decorators*
+  * *Regular expressions*
 

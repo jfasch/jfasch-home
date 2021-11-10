@@ -1,5 +1,5 @@
-Systemprogrammierung: Multithreading
-====================================
+Linux Systems Programming: Multithreading
+=========================================
 
 .. sidebar:: Kursdaten
 
