@@ -349,6 +349,16 @@ driver name is ``lm73``, and the chip is on address ``0x48``, as
 		
    # echo lm73 0x48 > /sys/bus/i2c/devices/i2c-1/new_device
 
+Check that the driver has been loaded. (If you haven't compiled the
+kernel, or made any other mistake during the installation of it, then
+the driver simply isn't there and will silently *not* be loaded.)
+
+.. code-block:: console
+
+   $ lsmod | grep lm73
+   lm73                   16384  0
+
+
 Device up and running. Consequentially, the new device is represented
 as a directory in ``sysfs``,
 
@@ -371,7 +381,7 @@ sensor. There is an entire framework inside the kernel, ``hwmon``, to
 cover such devices - no matter if they are Onewire or I2C (or ...)
 devices, or if they are reachable via a CPU internal bus.
 
-As such (a temperature sensor), the device appears under an
+As such - *a temperature sensor* - the device appears under an
 alternative location in ``sysfs``,
 
 .. code-block:: console
@@ -395,13 +405,13 @@ in milli-celsius):
 
 .. code-block:: console
 
-   $ cat /sys/class/hwmon/hwmon1/temp1_input 
+   $ cat /sys/class/hwmon/hwmon3/temp1_input 
    22000
 
 .. note::
 
    * **Question**: how do I know that it's my sensor in ``hwmon3``?
-     ``hwmon1`` seems like a randomly/sequentially chosen name, and I
+     ``hwmon3`` seems like a randomly/sequentially chosen name, and I
      assume the order is not always the same across boots.
    * **Answer**: correct. You can identify your sensor, though, by
      looking at the ``device`` symlink,
@@ -409,7 +419,7 @@ in milli-celsius):
      .. code-block:: console
 
         $ ls -l /sys/class/hwmon/hwmon3/device
-        lrwxrwxrwx 1 root root 0 Oct  5 08:57 /sys/class/hwmon/hwmon3/device -> ../../../1-0048
+	lrwxrwxrwx 1 root root 0 Oct  5 08:57 /sys/class/hwmon/hwmon3/device -> ../../../1-0048
 
      Apparently, the nomenclature is ``<bus>-<address>``.
 
