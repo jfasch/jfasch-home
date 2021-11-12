@@ -28,6 +28,12 @@ Work Environment
 * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
 * :doc:`/trainings/material/soup/devenv/ssh/portforwarding`
   (incl. live demo)
+* :doc:`/trainings/repertoire/sysprog/index`, and Python
+
+  * ``os.listdir()``
+  * ``os.readlink()``
+  * ``os.walk()``
+  * ``os.path.join()``, ``.abspath()``
 
 Patterns
 --------

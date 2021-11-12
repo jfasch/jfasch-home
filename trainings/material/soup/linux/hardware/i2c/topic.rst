@@ -301,7 +301,6 @@ Massage the configuration,
 .. code-block:: console
 
    $ cd linux
-   $ KERNEL=kernel7l
    $ make bcm2711_defconfig
    $ make menuconfig
 
@@ -327,7 +326,7 @@ Install the kernel, and reboot (as root),
    # cp arch/arm/boot/dts/*.dtb /boot/
    # cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
    # cp arch/arm/boot/dts/overlays/README /boot/overlays/
-   # cp arch/arm/boot/zImage /boot/$KERNEL.img
+   # cp arch/arm/boot/zImage /boot/kernel7l.img
    # reboot
 
 Loading the Driver
@@ -382,11 +381,38 @@ cover such devices - no matter if they are Onewire or I2C (or ...)
 devices, or if they are reachable via a CPU internal bus.
 
 As such - *a temperature sensor* - the device appears under an
-alternative location in ``sysfs``,
+alternative location under ``/sysfs/class/hwmon/``, among other.
+
+Prior to loading the driver, on the Raspberry there are two such
+``hwmon`` devices preinstalled; these apparently represent temperature
+sensors that are built-in to the CPU, and which are enabled as part of
+Linux's Raspberry board support.
 
 .. code-block:: console
 
-   $ ls -l /sys/class/hwmon/hwmon3/
+   $ ls -l /sys/class/hwmon/
+   total 0
+   lrwxrwxrwx 1 root root 0 Nov 12 07:14 hwmon0 -> ../../devices/virtual/thermal/thermal_zone0/hwmon0
+   lrwxrwxrwx 1 root root 0 Nov 12 07:14 hwmon1 -> ../../devices/platform/soc/soc:firmware/raspberrypi-hwmon/hwmon/hwmon1
+
+After we load the driver (remember, the ``echo lm73 0x48 > ...``
+above), another symlink appears in ``/sys/class/hwmon/``.
+
+.. code-block:: console
+
+   $ ls -l /sys/class/hwmon/
+   total 0
+   lrwxrwxrwx 1 root root 0 Nov 12 07:14 hwmon0 -> ../../devices/virtual/thermal/thermal_zone0/hwmon0
+   lrwxrwxrwx 1 root root 0 Nov 12 07:14 hwmon1 -> ../../devices/platform/soc/soc:firmware/raspberrypi-hwmon/hwmon/hwmon1
+   lrwxrwxrwx 1 root root 0 Nov 12 07:36 hwmon2 -> ../../devices/platform/soc/fe804000.i2c/i2c-1/1-0048/hwmon/hwmon2
+
+   All these ``/sys/class/hwmon/hwmon*`` symlinks refer to directories
+   in a different location in ``sysfs`` where the fun stuff is. Lets
+   look at our sensor,
+
+.. code-block:: console
+
+   $ ls -l /sys/class/hwmon/hwmon2/
    total 0
    lrwxrwxrwx 1 root root    0 Oct  5 08:57 device -> ../../../1-0048
    -r--r--r-- 1 root root 4096 Oct  5 08:57 name
@@ -405,21 +431,21 @@ in milli-celsius):
 
 .. code-block:: console
 
-   $ cat /sys/class/hwmon/hwmon3/temp1_input 
+   $ cat /sys/class/hwmon/hwmon2/temp1_input 
    22000
 
 .. note::
 
-   * **Question**: how do I know that it's my sensor in ``hwmon3``?
-     ``hwmon3`` seems like a randomly/sequentially chosen name, and I
+   * **Question**: how do I know that it's my sensor in ``hwmon2``?
+     ``hwmon2`` seems like a randomly/sequentially chosen name, and I
      assume the order is not always the same across boots.
    * **Answer**: correct. You can identify your sensor, though, by
      looking at the ``device`` symlink,
 
      .. code-block:: console
 
-        $ ls -l /sys/class/hwmon/hwmon3/device
-	lrwxrwxrwx 1 root root 0 Oct  5 08:57 /sys/class/hwmon/hwmon3/device -> ../../../1-0048
+        $ ls -l /sys/class/hwmon/hwmon2/device
+	lrwxrwxrwx 1 root root 0 Oct  5 08:57 /sys/class/hwmon/hwmon2/device -> ../../../1-0048
 
      Apparently, the nomenclature is ``<bus>-<address>``.
 
