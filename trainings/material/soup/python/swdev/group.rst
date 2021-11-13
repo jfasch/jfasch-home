@@ -58,6 +58,7 @@ rich set of non-fun tools.
 
    pip/topic
    venv/topic
+   pypi
    unittest
 
 .. ot-graph::

@@ -344,7 +344,7 @@ driver name is ``lm73``, and the chip is on address ``0x48``, as
 *root* [#why_root_for_hotplug]_ do the following,
 
 .. code-block:: console
-   :caption: Announce LM73 at ``0x48``
+   :caption: Announce LM73 on address ``0x48``
 		
    # echo lm73 0x48 > /sys/bus/i2c/devices/i2c-1/new_device
 
