@@ -26,8 +26,7 @@ Logging, Testing
 ----------------
 
 Once the code base has gotten big enough (there's nothing much to test
-in :doc:`sensors <soup/sensors/group>` and :doc:`MQTT
-<soup/mqtt/group>`, so there's no problem to solve), enter a
+in *Sensors* and *MQTT*, so there's no problem to solve), enter a
 refactoring round.
 
 * Build logging into all "service" type programs (much like `here

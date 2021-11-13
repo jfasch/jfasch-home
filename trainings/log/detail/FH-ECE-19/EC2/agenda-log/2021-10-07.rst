@@ -14,7 +14,7 @@ Topics
 
   * `Moodle
     <https://virtueller-campus-2021-22.fh-joanneum.at/course/view.php?id=3249>`__
-  * :doc:`Project plan <../soup/group-ec2>`
+  * Project plan (see github repo)
   * Grading system: show `manager's sheet
     <https://virtueller-campus-2021-22.fh-joanneum.at/mod/resource/view.php?id=21246>`__
   
@@ -26,7 +26,7 @@ Topics
 
 * OO introduction. Live-hack a thermometer that reads from a file
 
-  * Sketch of task ":doc:`../soup/sensors/task-prog-stdout`" (`here
+  * Sketch of task *Program: Read Sensors, Write to stdout* (`here
     <https://github.com/jfasch/FH-ECE-19/blob/master/bin/read-thermometers>`__)
 
     * Omit commandline parsing and config file. Hardcode interval and

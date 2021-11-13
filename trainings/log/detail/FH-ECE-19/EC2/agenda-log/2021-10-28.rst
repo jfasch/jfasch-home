@@ -9,7 +9,7 @@ Group Project
 
 * `Assignment sheet on Moodle
   <https://virtueller-campus-2021-22.fh-joanneum.at/mod/resource/view.php?id=27182>`__
-* Show :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/group-ec2`
+* Show *Project Management*
 * Git structure; see `Github project
   <https://github.com/jfasch/FH-ECE-19>`__
 
@@ -31,29 +31,25 @@ Discussion of Tasks
 
   * LM73
   
-    * :doc:`../soup/sensors/task-lm73-hwmon`; *Involves kernel build!*
-    * :doc:`../soup/sensors/task-lm73-dev`
+    * *Temperature Sensor: LM73 (via hwmon)*; **Involves kernel build!**
+    * *Temperature Sensor: LM73 (via i2c-dev)*
   
-  * :doc:`../soup/sensors/task-ds18s20`; possible OneWire woes. 
+  * *Temperature Sensor: DS18S20*
   
     This task is performed by two groups. Maybe agree that one of
-    those should proceed with the ``Switch`` interface instead? See
-    :doc:`../soup/switches/group`.
+    those should proceed with the ``Switch`` interface instead?
   
-  * :doc:`../soup/sensors/task-simu`. Point at
+  * *Simulated/Dummy Thermometers*. Point towards
     :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`.
-  *
-    :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/sensors/task-arduino-proxy`. **The
-    heavyweight!**
+  * Arduino/Raspberry Communication (Proxy Sensor)*. **The
+    *heavyweight!**
 
 * Sensor Usage
 
-  *
-    :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/sensors/task-prog-stdout`. Point
-    out that this task defines the sensor list configuration.
-  *
-    :doc:`/trainings/log/detail/FH-ECE-19/EC2/soup/mqtt/task-prog-mqtt`. point
-    out that this task *uses* the sensor list configuration.
+  * Program: Read Sensors, Write to stdout*. Point out that this task
+    defines the sensor list configuration.
+  * *Program: Read Sensors, Publish to MQTT Topic*. point out that
+    this task *uses* the sensor list configuration.
 
 Exercise
 --------

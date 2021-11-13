@@ -44,8 +44,8 @@ Work Environment
 Patterns
 --------
 
-* Based upon :doc:`../soup/sensors/task-arduino-proxy`, tell a story
-  about :download:`Design Patterns
+* Based upon *Arduino/Raspberry Communication (Proxy Sensor)*, tell a
+  story about :download:`Design Patterns
   </trainings/material/pdf/060-design-patterns-unittests.pdf>`,
   especially the *Proxy Pattern*.
 
