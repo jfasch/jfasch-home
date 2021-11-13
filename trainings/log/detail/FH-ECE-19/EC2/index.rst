@@ -5,11 +5,6 @@ Embedded Computing 2 (ECE 19)
    :local:
 
 .. toctree::
-   :maxdepth: 1
-
-   project
-
-.. toctree::
 
    agenda-log/index
 
