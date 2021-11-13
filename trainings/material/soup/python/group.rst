@@ -53,8 +53,8 @@ links, and more. Here is a representative list of such transcripts,
 * :doc:`/trainings/log/detail/2020-05-18/index`. Single-person
   training in an online setting.
 * :doc:`/trainings/log/detail/2020-10-19/index`. Four days of Python,
-  with a number of excursions in the customer's domain, like `CAN Bus
-  communication <https://youtu.be/5XuSr4M9uNI>`__
+  with a number of excursions into the customer's domain, like `CAN
+  Bus communication <https://youtu.be/5XuSr4M9uNI>`__
 * :doc:`/trainings/log/detail/2020-09-07/index`. Very advanced;
   accompanied by a lot of improvised live-hacking.
 * :doc:`/trainings/log/detail/2019-11-12/index`. Fun beating MATLAB
