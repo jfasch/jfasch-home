@@ -10,7 +10,8 @@
 Project Management
 ------------------
 
-* :doc`soup/sensors/task-simu`: assignment changes?
+* Announce ece19 internal project management
+* *Simulated/Dummy Thermometers* assignment changes?
 * Any others? Should we update anything?
 * Integration questions. *Communicate, guys!*
 
@@ -28,10 +29,15 @@ Work Environment
 * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
 * :doc:`/trainings/material/soup/devenv/ssh/portforwarding`
   (incl. live demo)
-* :doc:`/trainings/repertoire/sysprog/index`, and Python
+* :doc:`/trainings/repertoire/sysprog/index`, and Python. Files, file
+  descriptors, File IO.
 
-  * ``os.listdir()``
+  * Symbolic links (because ``sysfs`` uses them heavily): their nature
+
+* Notebook session (nah, native on the Pi?)
+
   * ``os.readlink()``
+  * ``os.listdir()``
   * ``os.walk()``
   * ``os.path.join()``, ``.abspath()``
 
