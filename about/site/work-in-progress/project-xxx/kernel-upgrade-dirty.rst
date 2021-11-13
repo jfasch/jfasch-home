@@ -1,7 +1,6 @@
 .. ot-task:: project_xxx.dirty_upgrade
    :dependencies: project_xxx.debian_config, project_xxx.yocto_kernel
-   :initial-estimate: 8
-   :percent-done: 0
+
 
 Dirty Upgrade Path
 ==================

@@ -1,6 +1,6 @@
 .. ot-task:: project_xxx.debian_config
    :initial-estimate: 3
-   :percent-done: 100
+
 
 Get Debian 10 Kernel Config
 ===========================

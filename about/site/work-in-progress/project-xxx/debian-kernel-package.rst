@@ -1,8 +1,7 @@
 .. ot-task:: project_xxx.debian_kernel_package
    :dependencies: project_xxx.audio_chip, project_xxx.dirty_upgrade,
                   project_xxx.hardware_bringup
-   :initial-estimate: 24
-   :percent-done: 0
+
 
 Finish: Debian Kernel Package etc.
 ==================================

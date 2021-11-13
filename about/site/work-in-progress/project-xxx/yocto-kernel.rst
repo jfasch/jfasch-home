@@ -1,6 +1,5 @@
 .. ot-task:: project_xxx.yocto_kernel
-   :initial-estimate: 2
-   :percent-done: 100
+
 
 Extract Kernel from Intel Yocto BSP
 ===================================

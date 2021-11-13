@@ -1,7 +1,5 @@
 .. ot-task:: project_xxx.audio_chip
    :dependencies: project_xxx.hardware_bringup
-   :initial-estimate: 40
-   :percent-done: 0
 
 Audio Chip Bringup
 ==================
