@@ -1,5 +1,4 @@
 .. ot-task:: project_xxx.debian_config
-   :initial-estimate: 3
 
 
 Get Debian 10 Kernel Config
