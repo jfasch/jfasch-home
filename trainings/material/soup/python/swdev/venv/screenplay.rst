@@ -32,7 +32,6 @@ First: Help
    
    Once an environment has been created, you may wish to activate it, e.g. by sourcing an activate script in its bin directory.
 
-
 Setup
 -----
 
@@ -62,6 +61,20 @@ Setup
 * ``bin/python``, ``bin/pip``, ``lib/python3.8``
 * Point paths to it?
 * |longrightarrow| *activating*
+
+.. note:: Debian is different
+
+   $ python3 -m venv my_venv
+   The virtual environment was not created successfully because ensurepip is not
+   available.  On Debian/Ubuntu systems, you need to install the python3-venv
+   package using the following command.
+   
+       apt-get install python3-venv
+   
+   You may need to use sudo with that command.  After installing the python3-venv
+   package, recreate your virtual environment.
+   
+   Failing command: ['/home/jfasch/my_venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']
 
 .. code-block:: console
    :caption: Unixen

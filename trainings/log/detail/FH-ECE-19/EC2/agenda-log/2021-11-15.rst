@@ -10,10 +10,27 @@
 Project Management
 ------------------
 
+* **Documentation**: repeat *"how to build"*
+
+  * Point to `"Documentation" on Github
+    <https://github.com/jfasch/FH-ECE-19/blob/master/docs/build.rst>`__
+  * :doc:`/trainings/material/soup/python/swdev/venv/topic`
+  * :doc:`/trainings/material/soup/python/swdev/pip/topic`
+
 * Announce ece19 internal project management
-* *Simulated/Dummy Thermometers* assignment changes?
-* Any others? Should we update anything?
-* Integration questions. *Communicate, guys!*
+
+  * Open `mgmt sheet from Moodle
+    <https://virtueller-campus-2021-22.fh-joanneum.at/mod/resource/view.php?id=27182>`__
+    |longrightarrow| *adjacence matrix*
+  * Show graph
+  * Walk through tasks and persons
+
+* Management time. Ask a number of questions that will be
+  answered/discussed tomorrow:
+
+  * *Simulated/Dummy Thermometers* assignment changes?
+  * Any others? Should we update anything?
+  * Integration questions. *Communicate, guys!*
 
 Work Environment
 ----------------
@@ -25,34 +42,34 @@ Work Environment
     * MinGW/Git Bash: ``python -m venv`` sets up a Doze venv
     * What else?
 
-* SSH public key auth, Github
+* Git document by someone?
 * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
-* :doc:`/trainings/material/soup/devenv/ssh/portforwarding`
-  (incl. live demo)
+
+  .. image:: sshfs.png
+
+Systems Programming: Files, Directories, Links ...
+--------------------------------------------------
+
 * :doc:`/trainings/repertoire/sysprog/index`, and Python. Files, file
   descriptors, File IO.
 
-  * Symbolic links (because ``sysfs`` uses them heavily): their nature
+  * C: System Calls (53, 54, 55, 56)
+  * C: Error Handling (58, 59)
+  * C: File IO, Basics (64ff)
+  * Directories and Links (151, 152)
 
-* Notebook session (nah, native on the Pi?)
+    * Directory (153)
 
-  * ``os.readlink()``
-  * ``os.listdir()``
-  * ``os.walk()``
-  * ``os.path.join()``, ``.abspath()``
+      * ``readdir()`` (`man page
+	<https://man7.org/linux/man-pages/man3/readdir.3.html>`__)
+      * Python: ``os.listdir()`` (`documentation
+        <https://docs.python.org/3/library/os.html#os.listdir>`__),
+        ``ow.walk()`` (`documentation
+        <https://docs.python.org/3/library/os.html#os.walk>`__)
 
-Patterns
---------
+    * Soft Link (155)
 
-* Based upon *Arduino/Raspberry Communication (Proxy Sensor)*, tell a
-  story about :download:`Design Patterns
-  </trainings/material/pdf/060-design-patterns-unittests.pdf>`,
-  especially the *Proxy Pattern*.
-
-Python
-------
-
-* ``$PYTHONPATH``, ``os.path``, ``os.getcwd()``, ``__file__``,
-  ``os.path.basename()``, ``os.dirname()``
-* ``os.listdir()``
-* Iterator protocol (-> generators): giving a timeline to sensors
+      * ``readlink()`` (`man page
+        <https://man7.org/linux/man-pages/man2/readlink.2.html>`__)
+      * Python: ``os.readlink()`` (`documentation
+        <https://docs.python.org/3/library/os.html#os.readlink>`__)

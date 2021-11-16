@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Programmierung Grundlagen (12. und 13.4.2021)
-=============================================
+Python Basics (2021-xx-xx - 2021-yy-yy)
+=======================================
 
 .. sidebar:: *Training Information*
 
@@ -9,14 +9,14 @@ Programmierung Grundlagen (12. und 13.4.2021)
 
    Mittwoch 12.4.2021, 9:00
 
-   **Offizielle Beschreibung**
+   **Course Description**
 
    `tecTrain "Programmierung Grundlagen"
-   <https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
+   <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
 
-   **Material**
+   **Course Material**
 
-   * :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/group`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-04-12>`__

@@ -15,10 +15,10 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
-Python Grundlagen (in Planung)
-------------------------------
+Python Grundlagen (2021-11-17 - 2021-11-19)
+-------------------------------------------
 
-(:doc:`Mehr ... <detail/2021-XX-XX/index>`)
+(:doc:`Mehr ... <detail/2021-11-17/index>`)
 
 Python Grundlagen (2021-08-31 - 2021-09-01)
 -------------------------------------------
