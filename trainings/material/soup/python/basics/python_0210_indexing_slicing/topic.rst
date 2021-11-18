@@ -1,13 +1,14 @@
+.. ot-topic:: python.basics.python_0210_indexing_slicing
+   :dependencies: python.basics.python_0200_sequential_types
+
 .. include:: <mmlalias.txt>
+
 
 Indexing and Slicing
 ====================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_0210_indexing_slicing
-   :dependencies: python.basics.python_0200_sequential_types
 
 Indexing (1)
 ------------

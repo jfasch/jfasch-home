@@ -32,8 +32,7 @@ Python: More Language Features
 	* * Course material language is English
 	  * Trainer language is English or German
       * * **See also**
-	* :doc:`Complete Python material
-          </trainings/material/soup/python/group>`
+	* :doc:`Complete Python material <../group>`
       * * **Booking**
 	* training@faschingbauer.co.at
 
