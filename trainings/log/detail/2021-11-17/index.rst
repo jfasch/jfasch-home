@@ -73,6 +73,7 @@ Day 2
   .. literalinclude:: code/uniq.py
      :caption: :download:`code/uniq.py`
 
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/passwd`
 
   * Solution 1: relatively explicit and long
@@ -93,12 +94,54 @@ Day 3
   :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`:
   ``set`` usage for speed!
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
+* Fibonacci
+
+  * 1
+  * 1
+  * 2
+  * 3
+  * 5
+  * 8
+  * 13 
+  * ...
+
+* Iterable and ``dict``, ``list``
+* Comprehensions (jjjj -> notebook)
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
+* CSV
+
+  * :download:`Download: sample CSV file <code/beispiel.csv>`
+  * See :doc:`notebook <notebook-wrapper>`, "CSV" section
+  * See `Python documentation, CSV section
+    <https://docs.python.org/3/library/csv.html>`__
+  * ``csv.reader``
+  * ``csv.DictReader``: better choice - interpret the header line for
+    us
+
+  .. csv-table::
+     :file: code/beispiel.csv
+     :delim: ;
+     :header-rows: 1
+     :width: 100%
+
+  Column types:
+
+  * ``FUND_NAME``: ``str``
+  * ``FUND_ISIN``: ``str``
+  * ``FUND_TICKER``: ``str``
+  * ``AS_OF_DATE``: ``datetime``
+  * ``FUND_IN_UNIVERSE``: ``bool`` (``T``, ``F``)
+  * ``FUND_OF_FUNDS``: ``None`` if empty, crash if filled
+  * ``FUND_HOLDINGS_COUNT``: ``int``
+  * ``FUND_HOLDING_FUNDS_COUNT``: ``int``
+
+* :doc:`/trainings/material/soup/python/misc/db/group`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+* :doc:`/trainings/material/soup/python/advanced/modules`
 
 
 Jupyter Notebook
@@ -111,8 +154,11 @@ Jupyter Notebook
 PCAP Exam Syllabus
 ------------------
 
-(Taken from `here
-<https://pythoninstitute.org/certification/pcap-certification-associate/pcap-exam-syllabus/>`__)
+* `Python Institute
+  <https://pythoninstitute.org/certification/pcap-certification-associate/>`__
+* `Syllabus
+  <https://pythoninstitute.org/certification/pcap-certification-associate/pcap-exam-syllabus/>`__
+* :download:`Sample Test <PCAP-FREE-SAMPLE-TEST-1-Aug-21-2018.pdf>`
 
 **Exam block #1: Modules and Packages (12%)**
 
