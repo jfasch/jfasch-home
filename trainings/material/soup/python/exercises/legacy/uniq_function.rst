@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Function: ``uniq()``
-====================
+Exercise: Function: ``uniq()``
+==============================
 
 .. ot-exercise:: python.exercises.legacy.uniq_function
    :dependencies: python.exercises.legacy.function_primeness,

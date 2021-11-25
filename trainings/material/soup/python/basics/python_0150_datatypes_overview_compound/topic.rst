@@ -1,13 +1,14 @@
+.. ot-topic:: python.basics.python_0150_datatypes_overview_compound
+   :dependencies: python.basics.python_0150_datatypes_overview
+
 .. include:: <mmlalias.txt>
+
 
 Compound Datatypes
 ==================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_0150_datatypes_overview_compound
-   :dependencies: python.basics.python_0150_datatypes_overview
 
 Compound Datatypes By Example: List, Tuple
 ------------------------------------------

@@ -1,14 +1,15 @@
+.. ot-topic:: python.basics.python_0220_for
+   :dependencies: python.basics.python_0200_sequential_types,
+		  python.basics.python_0193_while
+
 .. include:: <mmlalias.txt>
+
 
 ``for`` Loops
 =============
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_0220_for
-   :dependencies: python.basics.python_0200_sequential_types,
-		  python.basics.python_0193_while
 
 Iteration over ... Something
 ----------------------------

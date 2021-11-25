@@ -5,8 +5,8 @@
    :keywords: schulung, training, programming, bash, bourne, shell,
               bourne shell, linux, embedded, script, scripting
 
-Shell Scripting mit der Bourne Again Shell (Bash)
-=================================================
+Shell Scripting/Bourne Again Shell (Bash)
+=========================================
 
 .. sidebar:: Kursdaten
 

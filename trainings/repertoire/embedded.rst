@@ -1,5 +1,5 @@
-Systemprogrammierung: Embedded Linux/Hardwareanbindung
-======================================================
+Embedded Software Development: Hardware, Realtime, and Memory Management
+========================================================================
 
 .. sidebar:: Kursdaten
 

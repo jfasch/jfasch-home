@@ -4,10 +4,10 @@ About This Site
 .. contents::
    :local:
 
-.. image:: /_images/python-powered-w.svg
+.. image:: /_images/python-powered-w-200x80.png
    :align: right
    :alt: Python-powered logo
-   :scale: 50%
+   :scale: 150%
 
 License: `GPLv3 <http://www.gnu.org/licenses/gpl-3.0.html>`__
 -------------------------------------------------------------

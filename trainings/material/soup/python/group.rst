@@ -4,8 +4,8 @@
 
 .. ot-group:: python
 
-Python Programming
-==================
+Python Programming: From Absolute Beginner to Advanced Productivity
+===================================================================
 
 .. image:: /_images/python-logo-master-v3-TM.png
    :alt: Python logo

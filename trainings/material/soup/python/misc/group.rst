@@ -47,6 +47,7 @@ material.
 .. toctree::
    :maxdepth: 1
 
+   csv/topic
    db/group
    ai/group
    mqtt/topic

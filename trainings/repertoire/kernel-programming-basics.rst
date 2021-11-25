@@ -8,8 +8,8 @@
               device, character device, block device, interrupt,
               interrupt handler, isr
 
-Linux Driver Development
-========================
+Linux Kernel Driver Development
+===============================
 
 .. sidebar:: Kursdaten
 

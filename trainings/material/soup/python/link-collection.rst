@@ -142,21 +142,6 @@ Python Beginner Tutorials
 	     allowfullscreen>
      </iframe>
 
-* `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
-  Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by `Corey
-  Schafer
-  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
-
-  .. raw:: html
-	   
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/q5uM4VKywbA" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-	     allowfullscreen>
-     </iframe>
-
 * `Python Tutorial: Using Try/Except Blocks for Error Handling
   <https://www.youtube.com/watch?v=NIWwJbo-9_8>`__, by `Corey Schafer
   <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
@@ -210,6 +195,36 @@ Modules from Standard Library
 
      <iframe width="560" height="315" 
              src="https://www.youtube.com/embed/2Fp1N6dof0Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: re Module - How to Write and Match Regular
+  Expressions (Regex)
+  <https://www.youtube.com/watch?v=K8L6KVGG-7o>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/K8L6KVGG-7o" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
+  Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/q5uM4VKywbA" 
 	     title="YouTube video player" 
 	     frameborder="0" 
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

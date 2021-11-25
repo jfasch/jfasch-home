@@ -37,6 +37,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.autodoc',
     'sphinx.ext.graphviz',
+    'sphinx.ext.intersphinx',
     'ablog',
     'nbsphinx',
     # ??? 'sphinxcontrib.fulltoc',
@@ -46,6 +47,9 @@ extensions = [
 
     'opentraining',
 ]
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3/', None),
+}
 todo_include_todos = True
 
 # ablog

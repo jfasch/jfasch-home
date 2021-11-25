@@ -1,13 +1,14 @@
+.. ot-topic:: python.db.sqlite3
+   :dependencies: python.db.dbapi2
+
 .. include:: <mmlalias.txt>
+
 
 DBAPI 2: ``sqlite3``
 ====================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.db.sqlite3
-   :dependencies: python.db.dbapi2
 
 SQLite3
 -------

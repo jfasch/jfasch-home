@@ -95,54 +95,39 @@ Day 3
   ``set`` usage for speed!
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
-* Fibonacci
+* Fibonacci Numbers: 1, 1, 2, 3, 5, 8, 13, ...
 
-  * 1
-  * 1
-  * 2
-  * 3
-  * 5
-  * 8
-  * 13 
-  * ...
+  .. literalinclude:: code/fibonacci.py
+     :caption: :download:`code/fibonacci.py`
 
-* Iterable and ``dict``, ``list``
-* Comprehensions (jjjj -> notebook)
+* Iterable and ``dict``, ``list``. See :doc:`notebook <notebook-wrapper>`.
+* Comprehensions. See :doc:`notebook <notebook-wrapper>`.
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
-* CSV
-
-  * :download:`Download: sample CSV file <code/beispiel.csv>`
-  * See :doc:`notebook <notebook-wrapper>`, "CSV" section
-  * See `Python documentation, CSV section
-    <https://docs.python.org/3/library/csv.html>`__
-  * ``csv.reader``
-  * ``csv.DictReader``: better choice - interpret the header line for
-    us
-
-  .. csv-table::
-     :file: code/beispiel.csv
-     :delim: ;
-     :header-rows: 1
-     :width: 100%
-
-  Column types:
-
-  * ``FUND_NAME``: ``str``
-  * ``FUND_ISIN``: ``str``
-  * ``FUND_TICKER``: ``str``
-  * ``AS_OF_DATE``: ``datetime``
-  * ``FUND_IN_UNIVERSE``: ``bool`` (``T``, ``F``)
-  * ``FUND_OF_FUNDS``: ``None`` if empty, crash if filled
-  * ``FUND_HOLDINGS_COUNT``: ``int``
-  * ``FUND_HOLDING_FUNDS_COUNT``: ``int``
-
-* :doc:`/trainings/material/soup/python/misc/db/group`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/advanced/modules`
+* :doc:`/trainings/material/soup/python/misc/csv/topic`
+* :doc:`/trainings/material/soup/python/exercises/csv/csv-module`
 
+  The module ``stock.py``:
+
+  .. literalinclude:: code/csv/stock.py
+     :caption: :download:`code/csv/stock.py`
+
+  The program ``read-stock.py``:
+
+  .. literalinclude:: code/csv/read-stock.py
+     :caption: :download:`code/csv/read-stock.py`
+
+* :doc:`/trainings/material/soup/python/misc/db/group`
+* :doc:`/trainings/material/soup/python/exercises/csv/csv-db`
+
+  The program ``stock-to-db.py``:
+
+  .. literalinclude:: code/csv/stock-to-db.py
+     :caption: :download:`code/csv/stock-to-db.py`
 
 Jupyter Notebook
 ----------------
@@ -226,14 +211,6 @@ Objectives covered by the block (9 items)
 
 Links
 -----
-
-jjj
-
-* Python doc
-* PyPI
-* Studio Code
-* corey schafer re
-* corey schafer was noch?
 
 Visual Studio Code
 ..................
@@ -332,4 +309,32 @@ Python (Core Topics)
 Python Standard Library
 .......................
 
-jjj
+* `Python Tutorial: re Module - How to Write and Match Regular
+  Expressions (Regex)
+  <https://www.youtube.com/watch?v=K8L6KVGG-7o>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/K8L6KVGG-7o" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
+  Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/q5uM4VKywbA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>

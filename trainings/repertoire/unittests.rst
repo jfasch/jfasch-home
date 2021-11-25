@@ -1,5 +1,5 @@
-Unittesting, Test Driven Development
-====================================
+Unittesting and Test Driven Development
+=======================================
 
 .. sidebar:: Kursdaten
 

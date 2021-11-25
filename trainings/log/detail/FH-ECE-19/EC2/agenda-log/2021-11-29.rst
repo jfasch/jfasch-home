@@ -1,0 +1,19 @@
+2021-11-29
+==========
+
+* Project Management
+
+  Blah Excel Sheet blah dag adjacency matrix blah. graph, tasks, blah,
+  tasks, persons blah.
+
+  * score table
+  * per person stats
+  * per task stats
+
+* Unit Testing
+
+  * blah pytest blah paar schweinereien
+  * opentraining/tests/test_grading.py
+  * fixture: our course setup. "starting from here ..."
+  * "when I do this with setup/fixture, then I expect the following to
+    happen ..."

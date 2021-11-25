@@ -1,12 +1,13 @@
-.. include:: <mmlalias.txt>
-
-Generator: ``uniq()``
-=====================
-
 .. ot-exercise:: python.exercises.legacy.uniq_generator
    :dependencies: python.exercises.legacy.uniq_function,
 		  python.exercises.legacy.passwd,
 		  python.advanced.python_1010_generators_yield
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Generator: ``uniq()``
+===============================
 
 You came up with a solution for
 :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`.

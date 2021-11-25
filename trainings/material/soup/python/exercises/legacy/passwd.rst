@@ -7,11 +7,14 @@
 .. include:: <mmlalias.txt>
 
 
-Parsing ``/etc/passwd``
-=======================
+Exercise: Parsing ``/etc/passwd``
+=================================
 
 .. contents::
    :local:
+
+Requirement
+-----------
 
 Write a program ``getuser.py`` that takes a filename and one or more
 usernames from the commandline, looks them up in ``/etc/passwd``, and
@@ -34,9 +37,9 @@ prints out the user records one after the other.
 Implementation Strategy
 -----------------------
 
-The ``/etc/passwd`` (:download:`sample <passwd>`) is the UNIX user
-database. The file is line-based (an old UNIX tradition), and each
-line contains a user record:
+The ``/etc/passwd`` (:download:`download sample <passwd>`) is the UNIX
+user database. The file is line-based (an old UNIX tradition), and
+each line contains a user record:
 
 .. code-block:: console
 
@@ -50,6 +53,7 @@ Each line/record consists of seven fields, separated by colons
 
 .. list-table::
    :header-rows: 1
+   :widths: auto
    :align: left
 
    * * Field index

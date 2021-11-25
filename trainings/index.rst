@@ -22,7 +22,7 @@ Courses: Overview
 Everything About Linux
 ----------------------
 
-* :doc:`repertoire/linux-basics`
+* :doc:`Linux Basics: A Gentle Introduction <repertoire/linux-basics>`
 * :doc:`repertoire/sysprog/index`
 * :doc:`repertoire/kernel-programming-basics`
 
@@ -60,10 +60,10 @@ Miscellaneous but Related
 -------------------------
 
 * :doc:`repertoire/embedded`
-* :doc:`repertoire/raspi-hands-on`
-* :doc:`repertoire/make`
-* :doc:`repertoire/cmake`
-* :doc:`repertoire/svn`
+* :doc:`A Week with the Raspberry Pi <repertoire/raspi-hands-on>`
+* :doc:`GNU Make: The Mother of All Build Tools <repertoire/make>`
+* :doc:`CMake: A Dirty But Powerful Build Tool <repertoire/cmake>`
+* :doc:`Subversion (SVN): The History of Version History <repertoire/svn>`
 * :doc:`repertoire/unittests`
 * :doc:`repertoire/design-patterns`
 

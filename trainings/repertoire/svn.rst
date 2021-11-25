@@ -1,5 +1,5 @@
-Subversion
-==========
+Subversion (SVN)
+================
 
 .. sidebar:: Kursdaten
 
