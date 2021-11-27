@@ -17,11 +17,10 @@ The source of this site is licensed under the `GPLv3
 
 **Why apply a software license to a website?**
 
-This site contains material for courses that I give. The course
-material is structured much like software (topics *depend on* other
-topics; see for example :doc:`here
-</trainings/material/soup/kernel/index>` and :doc:`here
-</trainings/material/soup/python/group>`)
+This site contains material for trainings that I give. The material is
+structured much like software (topics *depend on* other topics; see
+for example :doc:`here </trainings/material/soup/kernel/index>` and
+:doc:`here </trainings/material/soup/python/group>`)
 
 See also `this discussion over at LWN
 <https://lwn.net/Articles/394306/>`__.
@@ -65,7 +64,7 @@ documentation generator. Homepages generally contain content, which is
 not much different from documentation - so yes, Sphinx is a really
 great static website generator. It lets me focus myself on content,
 with an eye towards structure and built-in link consistency (it won't
-let me break links by moving documents around).
+let me break links by moving content around).
 
 Installation Instructions
 -------------------------

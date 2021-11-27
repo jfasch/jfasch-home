@@ -1,11 +1,16 @@
 Über Mich
 =========
 
-.. toctree::
-   :maxdepth: 1
+.. list-table::
+   :align: left
 
-   contact
-   cv-de
-   skills-de
-   projects-de
+   * * .. image:: DSC_0896kl.jpg
+          :scale: 30%
+     * .. toctree::
+          :maxdepth: 1
+       
+          contact
+          cv-de
+          skills-de
+          projects-de
 
