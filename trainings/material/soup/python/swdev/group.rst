@@ -60,6 +60,7 @@ rich set of non-fun tools.
    venv/topic
    pypi
    unittest
+   pytest-intro
 
 .. ot-graph::
    :entries: python.swdev

@@ -49,6 +49,8 @@ extensions = [
 ]
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
+    'opentraining': ('https://opentraining.readthedocs.io/en/latest/', None),
+    'pytest': ('https://docs.pytest.org/en/latest/', None),
 }
 todo_include_todos = True
 

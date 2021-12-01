@@ -1,14 +1,15 @@
+.. ot-topic:: python.swdev.unittest
+   :dependencies: python.advanced.oo,
+		  python.advanced.modules
+
 .. include:: <mmlalias.txt>
+
 
 The ``unittest`` Module
 =======================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.swdev.unittest
-   :dependencies: python.advanced.oo,
-		  python.advanced.modules
 
 Simplest Example
 ----------------

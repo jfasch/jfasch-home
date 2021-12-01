@@ -1,19 +1,71 @@
+.. include:: <mmlalias.txt>
+
+
 2021-11-29
 ==========
 
-* Project Management
+.. contents::
+   :local:
 
-  Blah Excel Sheet blah dag adjacency matrix blah. graph, tasks, blah,
-  tasks, persons blah.
+Project Management
+------------------
 
-  * score table
-  * per person stats
-  * per task stats
+* Show syllabus, points tracker, etc.
+* Tomorrow is integration day |longrightarrow| bring your equipment
+* Miscellaneous
 
-* Unit Testing
+  * Version control rules
 
-  * blah pytest blah paar schweinereien
-  * opentraining/tests/test_grading.py
-  * fixture: our course setup. "starting from here ..."
-  * "when I do this with setup/fixture, then I expect the following to
-    happen ..."
+    * double-check what you commit
+    * don't commit a venv
+    * don't commit compiled binaries
+    * only commit what you wrote by hand
+
+  * Documentation structure
+
+    .. code-block:: console
+
+	 checking consistency... /home/jfasch/work/FH-ECE-19/bin/publish-thermometers_docu.rst: WARNING: document isn't included in any toctree
+
+    |longrightarrow| reiterate on doc structure
+
+  * ``ExecConfig``
+
+Topics
+------
+
+Multithreading
+..............
+
+* Arduino guys
+
+  * maybe draw sketch
+  * discuss race in dictionary
+  * discuss shutdown
+
+* :doc:`/trainings/material/soup/python/advanced/threading/basics`
+* :doc:`/trainings/material/soup/python/advanced/threading/mutex`
+
+Unit Testing
+............
+
+* Blah blah from
+  :download:`/trainings/material/pdf/060-design-patterns-unittests.pdf`
+
+  * Fixture
+  * Test case
+  * Test suite
+
+* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* `opentraining tests
+  <https://github.com/jfasch/opentraining/tree/main/tests>`__
+* Live-hack a test, together with ``.ini`` guys
+
+
+
+
+jjjj
+----
+
+* Pull in wacom sketches
+* Plan for further work

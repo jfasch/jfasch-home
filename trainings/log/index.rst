@@ -15,6 +15,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Advanced (2021-12-01 - 2021-12-03)
+-----------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/python-vertiefung/>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-12-01/index>`)
+
 Python Grundlagen (2021-11-17 - 2021-11-19)
 -------------------------------------------
 
