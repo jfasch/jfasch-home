@@ -18,6 +18,10 @@ Python Advanced (2021-12-01 - 2021-12-03)
    * :doc:`2021-12-01`
    * :doc:`Notebook TOC <notebook-wrapper>`
 
+   **Git**
+
+   https://github.com/jfasch/2021-12-01
+
 .. toctree::
    :hidden:
 
@@ -53,6 +57,7 @@ Basics Recap
 
 * Comprehensions (``list``, ``set``, ``dict``). (No generator
   expressions though.) See :doc:`2021-12-01`.
+* :doc:`/trainings/material/soup/python/basics/python_1000_function_objects/topic`
 
 Group Project Preparation
 .........................
@@ -100,11 +105,23 @@ Day 2
 Wild hacking expected ...
 
 * :doc:`/trainings/material/soup/python/advanced/oo`
-* :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/advanced/modules`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
+
+**TODO**
+
+* jjj git workflow sketch
+* jjj time axis sketch
+* jjj refer to test cases
+* jjj refer to thread series
+* jjj refer to tests for tomorrow
+
+Day 3
+-----
+
+* :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 
 Advanced Language Topics
 ........................
@@ -112,10 +129,6 @@ Advanced Language Topics
 **Encoding**
 
 * :doc:`/trainings/material/soup/python/misc/encoding/topic`
-
-**Iterator Protocol**
-
-* :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
 
 **Metaprogramming**
 
@@ -128,3 +141,4 @@ Miscellaneous
 
 * :doc:`/trainings/material/soup/python/misc/db/group`
 * :doc:`/trainings/material/soup/python/advanced/threading/group`
+
