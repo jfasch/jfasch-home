@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 Python Advanced (2021-12-01 - 2021-12-03)
 =========================================
 
@@ -104,14 +107,42 @@ Day 2
 
 Wild hacking expected ...
 
+.. image:: images/timeaxis.png
+   :scale: 40%
+
+jjj describe
+
 * :doc:`/trainings/material/soup/python/advanced/oo`
 * :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
+* Git workflow question, "What commit local? What push pull?"
+
+  .. image:: images/git-workflow.png
+     :scale: 40%
+
+* Preparing for tomorrow
+
+  * Interfaces, abstract base classes |longrightarrow|
+    :doc:`python:library/abc`
+
+    .. image:: images/sensors.png
+       :scale: 40%
+
+  * MQTT transport format - *serialize/deserialize* - for sensor
+    tuples ``(ts, x, y, z)`` |longrightarrow|
+    :doc:`python:library/json`
+
+    .. image:: images/serialize-deserialize.png
+       :scale: 40%
+
+    .. image:: images/serialize.png
+       :scale: 40%
+
+    .. image:: images/deserialize.png
+       :scale: 40%
 
 **TODO**
 
-* jjj git workflow sketch
-* jjj time axis sketch
 * jjj refer to test cases
 * jjj refer to thread series
 * jjj refer to tests for tomorrow
