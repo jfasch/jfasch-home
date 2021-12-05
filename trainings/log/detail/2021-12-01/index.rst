@@ -114,7 +114,10 @@ Day 2
 All these sensors should be decoupled from *wall clock time* - testing
 time series data is hard when you *must* deal with time. We don't.
 
-.. image:: images/timeaxis.png
+.. image:: images/timeaxis-vibrcheck-yes.png
+   :scale: 40%
+
+.. image:: images/timeaxis-vibrcheck-no.png
    :scale: 40%
 
 Wild hacking expected.
@@ -177,7 +180,7 @@ Day 3
     * Publish sensor data row by row, at an interval (Should I?
       :doc:`python:library/argparse`?)
     * Subscribe at the other end, using
-      `https://mosquitto.org/man/mosquitto_sub-1.html`__
+      https://mosquitto.org/man/mosquitto_sub-1.html
     * Discuss what to do
 
       * Average? Over a number of values? Hacked in a minute.
@@ -196,7 +199,22 @@ Day 3
     * ``finally``?
     * ``else``?
 
-  * Create exception hierarchy for our little project.
+  * Create exception hierarchy for our little project. Live hacking.
+
+    * Builtin exception hierarchy
+
+      .. image:: images/exception-builtin.png
+	 :scale: 40%
+
+    * Deriving from ``Exception`` ("dangling" exceptions)
+
+      .. image:: images/exceptions-standalone.png
+         :scale: 40%
+
+    * Project specific exception hierarchy
+
+      .. image:: images/exception-builtin.png
+         :scale: 40%
 
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 
@@ -215,4 +233,5 @@ Hmmm?
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 * :doc:`/trainings/material/soup/python/misc/db/group`
+
 
