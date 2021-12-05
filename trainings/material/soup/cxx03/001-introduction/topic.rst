@@ -1,6 +1,8 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: cxx03.introduction
+   :dependencies: c.introduction.installation
+
 
 Introduction
 ============

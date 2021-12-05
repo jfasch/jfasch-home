@@ -15,6 +15,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+C Programming (2021-12-06 - 2021-12-10)
+---------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/c-grundlagen-fuer-programmierer>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2021-12-06/index>`)
+
 Python Advanced (2021-12-01 - 2021-12-03)
 -----------------------------------------
 
@@ -24,13 +33,13 @@ gebucht.
 
 (:doc:`Mehr ... <detail/2021-12-01/index>`)
 
-Python Grundlagen (2021-11-17 - 2021-11-19)
--------------------------------------------
+Python Basics (2021-11-17 - 2021-11-19)
+---------------------------------------
 
 (:doc:`Mehr ... <detail/2021-11-17/index>`)
 
-Python Grundlagen (2021-08-31 - 2021-09-01)
--------------------------------------------
+Python Basics (2021-08-31 - 2021-09-01)
+---------------------------------------
 
 Der Kurs wurde über meinen Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/python-grundlagen>`__
@@ -38,8 +47,8 @@ gebucht.
 
 (:doc:`Mehr ... <detail/2021-08-31/index>`)
 
-Python Grundlagen (2021-08-23 - 2021-08-25)
--------------------------------------------
+Python Basics (2021-08-23 - 2021-08-25)
+---------------------------------------
 
 Ein Inhouse Training bei einer Firma in Kärnten, gebucht über meinen
 Partner `tecTrain

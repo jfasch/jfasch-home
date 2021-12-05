@@ -4,8 +4,16 @@
    :dependencies: c.introduction.for_loop
 
 
-Fahrenheit Table Using ``for``
-==============================
+Exercise: Fahrenheit Table Using ``for``
+========================================
 
-Use a ``for`` loop to compute the temperature table. Do this
-backwards, 300 down to 0.
+Compute a temperature table as in
+:doc:`../040-exercise-fahrenheit-float/topic`, but use a for loop.
+
+#. Ascending as in :doc:`../040-exercise-fahrenheit-float/topic`
+#. Modify the program to print the table in reverse order
+
+
+
+
+

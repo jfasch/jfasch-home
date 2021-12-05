@@ -4,8 +4,11 @@
    :dependencies: c.introduction.variables_and_arithmetic_expressions
 
 
-A Better Fahrenheit Table
-=========================
+Exercise: A Better Fahrenheit Table
+===================================
+
+Review the "Fahrenheit/Celsius Table" program in
+:doc:`../030-variables-and-arithmetic-expressions/topic`.
 
 **Following ugliness comes to mind:**
 

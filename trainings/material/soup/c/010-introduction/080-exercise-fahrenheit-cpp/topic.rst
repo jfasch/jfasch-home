@@ -7,4 +7,5 @@
 Fahrenheit Table Using Macros
 =============================
 
-Modify the temparature table to use macros!
+Modify the temperature table from
+:doc:`../060-exercise-fahrenheit-for/topic` to use macros!

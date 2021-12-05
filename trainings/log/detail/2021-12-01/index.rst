@@ -105,12 +105,19 @@ Group Project Preparation
 Day 2
 -----
 
-Wild hacking expected ...
+**Plan**: write a number of sensor classes
+
+* ``SensorRandom``
+* ``SensorSine``
+* ``SensorConstant``
+
+All these sensors should be decoupled from *wall clock time* - testing
+time series data is hard when you *must* deal with time. We don't.
 
 .. image:: images/timeaxis.png
    :scale: 40%
 
-jjj describe
+Wild hacking expected.
 
 * :doc:`/trainings/material/soup/python/advanced/oo`
 * :doc:`/trainings/material/soup/python/advanced/modules`
@@ -120,26 +127,8 @@ jjj describe
   .. image:: images/git-workflow.png
      :scale: 40%
 
-* Preparing for tomorrow
-
-  * Interfaces, abstract base classes |longrightarrow|
-    :doc:`python:library/abc`
-
-    .. image:: images/sensors.png
-       :scale: 40%
-
-  * MQTT transport format - *serialize/deserialize* - for sensor
-    tuples ``(ts, x, y, z)`` |longrightarrow|
-    :doc:`python:library/json`
-
-    .. image:: images/serialize-deserialize.png
-       :scale: 40%
-
-    .. image:: images/serialize.png
-       :scale: 40%
-
-    .. image:: images/deserialize.png
-       :scale: 40%
+* Last topic for today:
+  :doc:`/trainings/material/soup/python/advanced/threading/group`
 
 **TODO**
 
@@ -150,26 +139,80 @@ jjj describe
 Day 3
 -----
 
+* :doc:`/trainings/material/soup/python/advanced/threading/group`
+
+  Reiterate, was a bit fast yesteray.
+
+* Interfaces, abstract base classes |longrightarrow|
+  :doc:`python:library/abc`
+
+  .. image:: images/sensors.png
+     :scale: 40%
+
+* *Exercise*: MQTT transport format - *serialize/deserialize* - for
+  sensor tuples ``(ts, x, y, z)`` |longrightarrow|
+  :doc:`python:library/json`
+
+  .. image:: images/serialize-deserialize.png
+     :scale: 40%
+
+  .. image:: images/serialize.png
+     :scale: 40%
+
+  .. image:: images/deserialize.png
+     :scale: 40%
+
+  .. note::
+
+     Don't forget to include error tests. JSON exceptions must not get
+     swallowed, at least. :doc:`python:library/json`
+
+* MQTT livehacking maybe? Complete MQTT walkthrough? 1h.
+
+  * :doc:`/trainings/material/soup/python/misc/mqtt/topic`.
+  * Publish sensor data
+
+    * Use our json ``blah.exchangeformat`` module. See
+      ``tests/test_mqtt_format.py`` for how it works.
+    * Publish sensor data row by row, at an interval (Should I?
+      :doc:`python:library/argparse`?)
+    * Subscribe at the other end, using
+      `https://mosquitto.org/man/mosquitto_sub-1.html`__
+    * Discuss what to do
+
+      * Average? Over a number of values? Hacked in a minute.
+      * CSV?
+
+	* Live hacking? Figure out
+	  writer. :doc:`/trainings/material/soup/python/misc/csv/topic`
+	* :doc:`python:library/csv` |longrightarrow| link
+  
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
+
+  * Requirement: JSON deserialize must raise a ``DeserializeError``.
+  * Notebook: exception handling
+
+    * base class last
+    * ``finally``?
+    * ``else``?
+
+  * Create exception hierarchy for our little project.
+
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
-Advanced Language Topics
-........................
+  * Quick livehack demo what can be done.
+  * MATLAB replacement
 
-**Encoding**
+    * :doc:`numpy:index`
 
 * :doc:`/trainings/material/soup/python/misc/encoding/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
-**Metaprogramming**
+Hmmm?
+.....
 
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
-
-Miscellaneous
-.............
-
 * :doc:`/trainings/material/soup/python/misc/db/group`
-* :doc:`/trainings/material/soup/python/advanced/threading/group`
 

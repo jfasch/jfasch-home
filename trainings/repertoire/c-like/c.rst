@@ -14,7 +14,8 @@ C: Einführung
 
       Anfrage, training@faschingbauer.co.at
       Dauer, 5 Tage
-      PDF Slides, :download:`C </trainings/material/pdf/050-c.pdf>`
+      Material, :doc:`/trainings/material/soup/c/group`
+      PDF Slides (unmaintained), :download:`C </trainings/material/pdf/050-c.pdf>`
 
 Der `Bibel von Brian Kernighan und Dennis Ritchie
 <http://de.wikipedia.org/wiki/The_C_Programming_Language>`__ kann man

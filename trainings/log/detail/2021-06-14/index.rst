@@ -54,19 +54,18 @@ Day 1
 
 * Occasional live hacking
 
-  * `hello.c <https://github.com/jfasch/2021-06-14/blob/main/hello.c>`__
-  * `fahr.c <https://github.com/jfasch/2021-06-14/blob/main/fahr.c>`__
-  * `fahr-for.c <https://github.com/jfasch/2021-06-14/blob/main/fahr-for.c>`__
+  * `hello.c <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/hello.c>`__
+  * `fahr.c <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/fahr.c>`__
+  * `fahr-for.c <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/fahr-for.c>`__
   * `wc.c
-    <https://github.com/jfasch/2021-06-14/blob/main/wc.c>`__. This is
-    going to be morphed into a formal state machine tomorrow.
+    <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/wc.c>`__. This
+    is going to be morphed into a formal state machine tomorrow.
 
 Day 2
 .....
 
 State machine
 `````````````
-
 It turns out that the correct solution to exercise on slide 37 of
 :download:`the slide deck </trainings/material/pdf/050-c.pdf>` is a
 *state machine*. It enables us to correctly cover all corner cases
