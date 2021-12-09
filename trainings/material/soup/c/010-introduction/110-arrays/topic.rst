@@ -17,6 +17,19 @@ and others.
    :language: c
    :caption: :download:`countchars-explicit-init.c`
 
+Array Access
+------------
+
+You access the ``n``-th element of the array using the *index*
+(``[n]``) operator.
+
+.. code-block:: c
+
+   int n = 7;   // for example
+   int number;
+   ndigit[n] = 666;  // write value 666 in n-th array position
+   number = ndigit[n];   // read value from n-th array position (and store into 'number')
+
 Discussion: Initialization
 --------------------------
 

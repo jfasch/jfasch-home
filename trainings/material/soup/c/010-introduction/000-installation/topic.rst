@@ -9,6 +9,23 @@ Installation
 On Windows
 ----------
 
+
+* https://code.visualstudio.com/docs/cpp/config-mingw
+* https://www.msys2.org/
+
+* OS specific ``settings.json``. Won't work. VSCode still has no
+  platform specific settings.
+  
+  * https://github.com/microsoft/vscode/issues/5595 (live)
+  * https://github.com/microsoft/vscode/issues/17619
+
+* https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-settings.md
+
+.. code-block:: console
+
+   $ pacman -S mingw64/mingw-w64-x86_64-cmake
+
+
 * `C/C++ for Visual Studio Code <https://code.visualstudio.com/docs/languages/cpp>`__
 
   * Especially, `install mingw-x64 compiler

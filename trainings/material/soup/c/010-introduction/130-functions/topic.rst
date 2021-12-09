@@ -41,7 +41,7 @@ Function *Signature*
           int power(int base, int n)
 
      * * Function name (``power``)
-       * Names \textit{and types} of parameters
+       * Names *and types* of parameters
        * Return type
 
 * Parameters are *local* to function
