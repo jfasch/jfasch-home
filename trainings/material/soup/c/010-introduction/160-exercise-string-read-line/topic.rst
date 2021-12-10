@@ -4,8 +4,8 @@
    :dependencies: c.introduction.character_arrays
 
 
-Read Line Into String from ``stdin``
-====================================
+Exercise: Read Line Into String from ``stdin``
+==============================================
 
 Write a (nonsensial) program that ...
 

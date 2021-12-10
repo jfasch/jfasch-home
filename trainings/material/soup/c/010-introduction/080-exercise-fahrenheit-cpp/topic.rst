@@ -4,8 +4,8 @@
    :dependencies: c.introduction.cpp_symbolic_constants
 
 
-Fahrenheit Table Using Macros
-=============================
+Exercise: Fahrenheit Table Using Macros
+=======================================
 
 Modify the temperature table from
 :doc:`../060-exercise-fahrenheit-for/topic` to use macros!

@@ -4,8 +4,8 @@
    :dependencies: c.types_operators_expressions.increment_decrement_operators
 
 
-Copy and Reduce String
-======================
+Exercise: Copy and Reduce String
+================================
 
 * Write a function (and the program with the ``main()`` function
   calling that function) similar to :doc:`what we just saw

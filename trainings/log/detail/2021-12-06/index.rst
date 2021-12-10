@@ -82,6 +82,21 @@ Day 3
   * How far can I write past the end of an array? |longrightarrow|
     `out-of-bounds-write.cpp
     <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/out-of-bounds-write.cpp>`__
+
+    * From the histogram example: what happens if we receive an
+      ``iso-8859-1`` Umlaut character, say "ö". That character is sure
+      not within range ``[0,128)``.
+
+      .. image:: images/out-of-bounds-write.png
+	 :scale: 40%
+
+    * From the smaller-scale `canary
+      <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/out-of-bounds-write.cpp>`__
+      example.
+
+      .. image:: images/out-of-bounds-write-canary.png
+	 :scale: 40%
+
   * Aside: C has no ``bool`` datatype (C++ has) |longrightarrow|
     `infinite-loop.cpp
     <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/infinite-loop.cpp>`__
@@ -89,20 +104,104 @@ Day 3
 * :doc:`/trainings/material/soup/c/010-introduction/130-functions/topic`
 * :doc:`/trainings/material/soup/c/010-introduction/140-exercise-power-declaration/topic`
 
-  Solution: `power.c <>`__
+  Solution: `power.c
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/power.c>`__
 
 * :doc:`/trainings/material/soup/c/010-introduction/150-character-arrays/topic`
+
+  Char array (i.e., string) walkthrough: `strings-wtf.cpp
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/strings-wtf.cpp>`__
+
+  Massacre using ``strcpy`` ...
+
+  .. image:: images/strcpy-massacre.png
+     :scale: 40%
+
 * :doc:`/trainings/material/soup/c/010-introduction/160-exercise-string-read-line/topic`
 * :doc:`/trainings/material/soup/c/010-introduction/170-external-variables-and-scope/topic`
+
+  Global variables: `global-vs-local.cpp
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/global-vs-local.cpp>`__
+
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/010-introduction/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/020-variable-names/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/030-data-types-and-sizes/topic`
-* :doc:`/trainings/material/soup/c/020-types-operators-expressions/040-constants/topic`
+* :doc:`/trainings/material/soup/c/020-types-operators-expressions/080-type-conversions/topic`
+
+  Demo code: `type-system.cpp
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/type-system.cpp>`__
+
+  Massacre resulting from mixing signed and unsigned integers ...
+
+  .. image:: images/signed-unsigned-massacre.png
+     :scale: 40%
+
+* :doc:`/trainings/material/soup/c/050-pointers-and-arrays/group`
+
+  * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/010-pointers-and-addresses/topic`
+  
+    * `pointer-basics.cpp
+      <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/pointer-basics.cpp>`__
+    * `pointer-brainfuck.cpp
+      <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/pointer-brainfuck.cpp>`__
+  
+  * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/030-exercise-swap/topic`
+  
+    * Fix that to actually swap the *caller's* variables:
+      `swap-nok.cpp
+      <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/swap-nok.cpp>`__
+
+Day 4
+-----
+
+* Reiterate on `canary
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/out-of-bounds-write.cpp>`__
+  and memory errors in general. Security holes, blah, blah. C is the
+  root of all evil.
+
+* Resolve :doc:`/trainings/material/soup/c/050-pointers-and-arrays/030-exercise-swap/topic`
+
+  * `swap-nok.cpp
+    <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/swap-nok.cpp>`__
+  * *Not* working
+
+    .. image:: images/swap-nok.png
+       :scale: 40%
+
+  * Working
+
+    .. image:: images/swap-ok.png
+       :scale: 40%
+
+* Continuing with :doc:`/trainings/material/soup/c/050-pointers-and-arrays/group`
+
+  * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
+  * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
+
+    Hack a little ``argv`` example
+
+* :doc:`/trainings/material/soup/c/060-structures/group`
+
+  * :doc:`/trainings/material/soup/c/060-structures/010-basics-of-structures/topic`
+  * :doc:`/trainings/material/soup/c/060-structures/020-structures-and-functions/topic`
+  * :doc:`/trainings/material/soup/c/060-structures/030-typedef/topic`
+
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/group`
+
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/010-basics-of-functions/topic`
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/020-external-variables/topic`
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/030-header-files/topic`
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/040-static-variables/topic`
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/050-c-preprocessor/topic`
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/060-c-preprocessor-advanced/topic`
+
+Boring, Skipped/Deferred
+------------------------
+
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/040-constants/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/050-declarations/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/060-arithmetic-operators/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/070-relational-and-logical-operators/topic`
-* :doc:`/trainings/material/soup/c/020-types-operators-expressions/080-type-conversions/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/090-increment-and-decrement-operators/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/100-exercise-string-reduce/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/110-bitwise-operators/topic`
