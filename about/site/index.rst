@@ -66,6 +66,10 @@ great static website generator. It lets me focus myself on content,
 with an eye towards structure and built-in link consistency (it won't
 let me break links by moving content around).
 
+Last not least, Sphinx has an extension interface :doc:`that I use
+<opentraining:index>` a lot to make course material :doc:`a little
+more maintainable </trainings/material/soup/kernel/index>`.
+
 Installation Instructions
 -------------------------
 

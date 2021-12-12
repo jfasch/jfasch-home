@@ -154,10 +154,47 @@ Day 3
 Day 4
 -----
 
-* Reiterate on `canary
-  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/out-of-bounds-write.cpp>`__
-  and memory errors in general. Security holes, blah, blah. C is the
-  root of all evil.
+* Morning wakeup, talking about what happened, questions
+
+  * Reiterate on `canary
+    <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/out-of-bounds-write.cpp>`__
+    and memory errors in general. Security holes, blah, blah. C is the
+    root of all evil.
+  
+    .. image:: images/out-of-bounds-write-canary.png
+       :scale: 40%
+
+  * ``argv``; that double pointer thing.
+
+    Compose an array like ``argv`` manually (`argv-manually.cpp
+    <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/argv-manually.cpp>`__)
+
+    .. image:: images/argv-manual.png
+       :scale: 40%
+
+  * Double pointers, generally
+
+    `double-pointer.cpp
+    <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/double-pointer.cpp>`__
+
+    .. image:: images/pointer-pointer.png
+       :scale: 40%
+
+  * Pointer arithmetic, killing canaries sitting in a row next to an
+    integer
+
+    .. image:: images/pointer-arith.png
+       :scale: 40%
+
+  * The same can happen to a function's return address
+
+    .. image:: images/return-address-massacre.png
+       :scale: 40%
+
+  * Useful use of pointers: singly linked list
+
+    .. image:: images/singly-linked-list.png
+       :scale: 40%
 
 * Resolve :doc:`/trainings/material/soup/c/050-pointers-and-arrays/030-exercise-swap/topic`
 
@@ -188,15 +225,24 @@ Day 4
 
 * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/group`
 
-  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/010-basics-of-functions/topic`
-  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/020-external-variables/topic`
-  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/030-header-files/topic`
-  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/040-static-variables/topic`
-  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/050-c-preprocessor/topic`
-  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/060-c-preprocessor-advanced/topic`
+  * jjj userdb ...
+
+* Pointer Recap: `pointer-recap.cpp
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/pointer-recap.cpp>`__
 
 Boring, Skipped/Deferred
 ------------------------
+
+**Skipped, Modularization**
+
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/010-basics-of-functions/topic`
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/020-external-variables/topic`
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/030-header-files/topic`
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/040-static-variables/topic`
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/050-c-preprocessor/topic`
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/060-c-preprocessor-advanced/topic`
+
+**Boring**
 
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/040-constants/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/050-declarations/topic`
