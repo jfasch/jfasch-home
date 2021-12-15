@@ -1,0 +1,56 @@
+.. include:: <mmlalias.txt>
+
+
+2021-01-10
+==========
+
+.. contents::
+   :local:
+
+Project Management
+------------------
+
+
+Topics
+------
+
+Exception Handling
+..................
+
+* Slides. Blah resource cleanup blah ``raise``/``except`` blah.
+* Config errors
+
+  * Discuss MQTT topic names? Can they contain spaces? Currently they
+    can, but is that sane, for example?
+  * Is an I2C address valid? What is it? String in hex, or what?
+  * IP addresses/host names?
+  * Invalid type? Currently, the ``.ini`` parser ignores everything
+    that it does not understand.
+
+    * Live hack test to verify that that fails, at a very basic
+      level. ``raise Exception(f'invalid type "{type_from_ini}"')`` is
+      enough to pass.
+
+  * Many more
+
+* One exception class per project
+
+  * For example, when the "Invalid type" error is triggered above
+    (``Exception``), then that error is rather unspecific. Require
+    (live hack test and implementation) that an instance of
+    ``ECE19Error`` is raised. New module ``ece19.errors``.
+  * Write a program ``check-config`` that tries to read a configfile,
+    and reports ``ece19`` errors a bit prettier. Base exception class
+    attributes, like ``support_address="developer@email.com"``. (Show
+    ``__str__()``?)
+  * That leaves all system level errors through ("No such file or
+    directory").
+
+* Derive exceptions
+
+  * For example, config again, we might want to see
+    ``InvalidTypeError``, instead of a plain ``ECE19Error``, but still
+    keeping the ``support_address`` field. Live hack test.
+  * Modify ``check-config`` to catch those, and leave all others
+    through, ``ECE19Error`` and system errors. Point out what we saw
+    in slides about exception hierarchy.
