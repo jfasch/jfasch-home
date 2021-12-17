@@ -7,8 +7,23 @@
 Synchronization
 ===============
 
+.. sidebar::
+
+   .. contents::
+      :local:
+
+   **See also**
+
+   * :doc:`../locked-trylock`
+
 Race Conditions (1)
 -------------------
+
+.. sidebar::
+
+   * Race condition (Python): :download:`here <lost-increment.py>`
+   * No race condition (Python): :download:`here
+     <no-lost-increment.py>`
 
 .. list-table::
    :align: left

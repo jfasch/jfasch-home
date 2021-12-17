@@ -12,6 +12,7 @@ Topics
    :glob:
 
    */topic
+   locked-trylock
 
 Group Description
 -----------------
