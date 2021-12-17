@@ -18,11 +18,67 @@ Future Topics
 * MT Schuettler/Schmid: live hacking maybe, using ``mutex.locked()``
   and ``mutex.acquire(blocking=False)``
 * Temperature display interface?
-
+* jjj link pthread /trainings/material/soup/sysprog/posix-threads/
+  into /trainings/log/detail/FH-ECE-19/EC2/agenda-log/2021-12-14.rst
 
 * Tasks
 
-  * OO Schweiger -> ``abc``
-  * Söls refacting task
+  * OLED Display/Kit -> Leo Moser
+  * Temp. Display -> Florian Zwittnig
+  * Temp. Display MQTT -> Matthias Kappel
+  * Thermometer Factory -> Daniel Söls, Felix Themessl
+  * Matplotlib -> Daniel Söls
+  * OO -> Schweiger, Lang
+
+    * hwmon base class
+    * ``Thermometer`` base class
+    * ``abc``
+    * jjj ~/tmp/duck*.py
+
+    * Andi LM73!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
   * Chernykh/Slovik research task
-  * Baumgartner
+  * Baumgartner: LED matrix
+  * RGB LED strip -> Chernykh Impl, Slovik Integr, Mehrabadi Doc.
+  * LED Bar -> Hu, Nagelschmied, jjj
+  * InfluxDB, Grafana -> Schuettler, Schmid, jjj
+  * Switch (Simu, GPIO) -> Sonja Lukas, Jan Kornberger, Luis Kraker
+  * MQTT protocol -> Kudriaschow
+  * LED Matrix/Bar -> Baumgartner Doc./Integr., Mehrabadi Impl.
+  * Hysterese -> Kappel, Lang. Unittests!
+  * Stepper motor, temperature display: Stangl, Wasserfaller, Moser R.
+
+* Bug Tracker
+
+  * lm73 hwmon 2 thermometers?
+
+* Nachmittag
+
+  * Wasserfaller -> andere Gruppe: Stangl, Vogel. Unit testing??
+    
+C++ Sideways
+------------
+
+* `C++ STL Containers (Part 1) <https://youtu.be/nmNY8SbqZ34>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/nmNY8SbqZ34" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `C++ STL Containers (Part 2) <https://youtu.be/Ft8SkoH2s8M>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/Ft8SkoH2s8M" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
