@@ -49,11 +49,13 @@ extensions = [
     'opentraining',
 ]
 
+html_logo = '_static/logo.png'
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'collapse_navigation': False,
     'navigation_depth': -1,
     'prev_next_buttons_location': None,
+    'logo_only': True,
     
     # 'includehidden': False,
     # 'style_external_links': True,
