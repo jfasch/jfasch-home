@@ -1,3 +1,9 @@
 .wy-nav-content {
     max-width: 100% /* !important */;
 }
+
+/* same as .sidebar */
+.contents {
+    background-color: #f3f6f6;
+    border: 1px solid #e1e4e5;
+}
