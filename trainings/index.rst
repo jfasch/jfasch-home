@@ -1,10 +1,9 @@
 Courses: Overview
 =================
 
-.. contents::
-   :local:
+.. sidebar::
 
-.. sidebar:: Online Trainings
+   **Online Trainings**
 
    All trainings can be booked in an online setting [#basteln_nicht]_,
    too. Verified online solutions are:
@@ -13,11 +12,14 @@ Courses: Overview
    * :doc:`Microsoft Teams </blog/2020/03/ms-teams-on-linux>`
    * :doc:`BigBlueButton </blog/2020/04/bbb>`
 
-.. sidebar:: Individual Trainings
+   **Individual Trainings**
 
    If you do not find a course description that fits your needs, that
    is not a problem. Write an :doc:`Email </about/myself/contact>`,
    and we'll compose a custom training.
+
+.. contents::
+   :local:
 
 Everything About Linux
 ----------------------
