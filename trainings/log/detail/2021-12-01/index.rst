@@ -122,7 +122,7 @@ time series data is hard when you *must* deal with time. We don't.
 
 Wild hacking expected.
 
-* :doc:`/trainings/material/soup/python/advanced/oo`
+* :doc:`/trainings/material/soup/python/advanced/oo/group`
 * :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
 * Git workflow question, "What commit local? What push pull?"

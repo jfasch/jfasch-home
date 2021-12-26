@@ -1,5 +1,5 @@
 .. ot-topic:: python.misc.special_methods
-   :dependencies: python.advanced.oo
+   :dependencies: python.advanced.oo.basics
 
 Special Methods, Operator Overloading (*incomplete*)
 ====================================================

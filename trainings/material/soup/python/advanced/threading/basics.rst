@@ -1,5 +1,5 @@
 .. ot-topic:: python.advanced.threading.basics
-   :dependencies: python.advanced.oo
+   :dependencies: python.advanced.oo.basics
 
 .. include:: <mmlalias.txt>
 

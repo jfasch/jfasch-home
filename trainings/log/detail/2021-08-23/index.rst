@@ -149,7 +149,7 @@ Day 3
 
 * Advanced Topics
 
-  * :doc:`/trainings/material/soup/python/advanced/oo`
+  * :doc:`/trainings/material/soup/python/advanced/oo/group`
   * :doc:`/trainings/material/soup/python/advanced/exceptions`
   * :doc:`/trainings/material/soup/python/swdev/unittest`
 

@@ -1,8 +1,9 @@
-.. ot-topic:: python.advanced.oo
+.. ot-topic:: python.advanced.oo.basics
    :dependencies: python.basics.python_0450_dictionaries,
 		  python.basics.python_0270_functions
 
 .. include:: <mmlalias.txt>
+
 
 Object Oriented Programming
 ===========================
@@ -14,7 +15,6 @@ Object Oriented Programming
 ---------------------------
 
 **OO Principles**
-
 
 * *Procedural*: there's data, and there's code
 * |longrightarrow| relationship is not aways clear

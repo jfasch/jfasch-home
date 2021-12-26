@@ -54,7 +54,7 @@ which you won't be able to do without once you got used to them.
    closures/topic
    decorators/topic
    exec/topic
-   oo
+   oo/group
    exceptions
    modules
    threading/group

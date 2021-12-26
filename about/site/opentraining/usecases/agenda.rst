@@ -11,7 +11,7 @@ call it becomes clear that they are interested in the following
 topics,
 
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo`
+* :doc:`/trainings/material/soup/python/advanced/oo/group`
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/advanced/modules`
 
@@ -54,7 +54,7 @@ generate an agenda.
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo`
+* :doc:`/trainings/material/soup/python/advanced/oo/group`
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`

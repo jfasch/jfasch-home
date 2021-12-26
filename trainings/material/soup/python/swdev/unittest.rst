@@ -1,5 +1,5 @@
 .. ot-topic:: python.swdev.unittest
-   :dependencies: python.advanced.oo,
+   :dependencies: python.advanced.oo.basics,
 		  python.advanced.modules
 
 .. include:: <mmlalias.txt>

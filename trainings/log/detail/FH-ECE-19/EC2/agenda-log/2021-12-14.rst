@@ -18,35 +18,26 @@ Future Topics
 * MT Schuettler/Schmid: live hacking maybe, using ``mutex.locked()``
   and ``mutex.acquire(blocking=False)``
 * Temperature display interface?
-* jjj link pthread /trainings/material/soup/sysprog/posix-threads/
-  into /trainings/log/detail/FH-ECE-19/EC2/agenda-log/2021-12-14.rst
 
 * Tasks
 
-  * OLED Display/Kit -> Leo Moser
-  * Temp. Display -> Florian Zwittnig
-  * Temp. Display MQTT -> Matthias Kappel
-  * Thermometer Factory -> Daniel Söls, Felix Themessl
-  * Matplotlib -> Daniel Söls
-  * OO -> Schweiger, Lang
+  * (DONE) OLED Display/Kit -> Leo Moser
+  * (DONE) Temp. Display -> Florian Zwittnig
+  * (DONE) Temp. Display MQTT -> Matthias Kappel
+  * (DONE) Thermometer Factory -> Daniel Söls, Felix Themessl
+  * (DONE) OO -> Schweiger, Lang
+  * (DONE) Switch (Simu, GPIO) -> Sonja Lukas, Jan Kornberger, Luis Kraker
+  * (DONE) MQTT protocol -> Kudriaschow
+  * (DONE) Hysterese -> Kappel, Lang. Unittests!
+  * (DONE) RGB LED strip -> Chernykh Impl, Slovik Integr, Mehrabadi Doc.
+  * (DONE) LED Matrix/Bar -> Baumgartner Doc./Integr., Mehrabadi Impl.
+  * (DONE) LED Bar -> Hu, Nagelschmied, Schmid Markus
 
-    * hwmon base class
-    * ``Thermometer`` base class
-    * ``abc``
-    * jjj ~/tmp/duck*.py
-
-    * Andi LM73!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-  * Chernykh/Slovik research task
-  * Baumgartner: LED matrix
-  * RGB LED strip -> Chernykh Impl, Slovik Integr, Mehrabadi Doc.
-  * LED Bar -> Hu, Nagelschmied, jjj
-  * InfluxDB, Grafana -> Schuettler, Schmid, jjj
-  * Switch (Simu, GPIO) -> Sonja Lukas, Jan Kornberger, Luis Kraker
-  * MQTT protocol -> Kudriaschow
-  * LED Matrix/Bar -> Baumgartner Doc./Integr., Mehrabadi Impl.
-  * Hysterese -> Kappel, Lang. Unittests!
   * Stepper motor, temperature display: Stangl, Wasserfaller, Moser R.
+
+  * Matplotlib -> Daniel Söls
+  * InfluxDB, Grafana -> Schuettler, Schmid, jjj
+  * Hysteresis user: two LEDs as callbacks -> Kappel, Lang
 
 * Bug Tracker
 
@@ -55,6 +46,19 @@ Future Topics
 * Nachmittag
 
   * Wasserfaller -> andere Gruppe: Stangl, Vogel. Unit testing??
+
+OO
+--
+
+* :doc:`/trainings/material/soup/python/advanced/oo/implementation-inheritance`
+
+Threading
+---------
+
+* :doc:`/trainings/material/soup/python/advanced/threading/basics`
+* :doc:`/trainings/material/soup/python/advanced/threading/mutex`
+* jjj link pthread /trainings/material/soup/sysprog/posix-threads/
+  into /trainings/log/detail/FH-ECE-19/EC2/agenda-log/2021-12-14.rst
     
 C++ Sideways
 ------------
