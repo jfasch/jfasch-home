@@ -131,7 +131,7 @@ Wild hacking expected.
      :scale: 40%
 
 * Last topic for today:
-  :doc:`/trainings/material/soup/python/advanced/threading/group`
+  :doc:`/trainings/material/soup/python/advanced/multithreading/group`
 
 **TODO**
 
@@ -142,7 +142,7 @@ Wild hacking expected.
 Day 3
 -----
 
-* :doc:`/trainings/material/soup/python/advanced/threading/group`
+* :doc:`/trainings/material/soup/python/advanced/multithreading/group`
 
   Reiterate, was a bit fast yesteray.
 

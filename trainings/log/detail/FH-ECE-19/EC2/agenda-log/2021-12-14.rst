@@ -55,8 +55,8 @@ OO
 Threading
 ---------
 
-* :doc:`/trainings/material/soup/python/advanced/threading/basics`
-* :doc:`/trainings/material/soup/python/advanced/threading/mutex`
+* :doc:`/trainings/material/soup/python/advanced/multithreading/basics`
+* :doc:`/trainings/material/soup/python/advanced/multithreading/mutex`
     
 C++ Sideways
 ------------
