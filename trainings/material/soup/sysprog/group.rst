@@ -1,3 +1,6 @@
+.. ot-group:: sysprog
+
+
 Systems Programming
 ===================
 
@@ -14,15 +17,15 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
+   scheduling/group
    posix-threads/group
-   */topic
+   sysprog_signals/topic
+   sysprog_ipc/topic
+   sysprog_events/topic
 
 Group Description
 -----------------
 	      
-.. ot-group:: sysprog
-
 .. ot-graph::
    :entries: sysprog
