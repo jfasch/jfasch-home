@@ -57,8 +57,6 @@ Threading
 
 * :doc:`/trainings/material/soup/python/advanced/threading/basics`
 * :doc:`/trainings/material/soup/python/advanced/threading/mutex`
-* jjj link pthread /trainings/material/soup/sysprog/posix-threads/
-  into /trainings/log/detail/FH-ECE-19/EC2/agenda-log/2021-12-14.rst
     
 C++ Sideways
 ------------

@@ -186,6 +186,8 @@ Day 2
          class EanaAdapter(UnserThermometer):
 	     ...
 
+.. _duck-abc:
+
 Day 3
 .....
 
