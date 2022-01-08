@@ -1,4 +1,4 @@
-.. ot-group:: python.advanced.threading
+.. ot-group:: python.advanced.multithreading
 
 Multithreading
 ==============
@@ -10,5 +10,5 @@ Multithreading
    mutex
 
 .. ot-graph::
-   :entries: python.advanced.threading
+   :entries: python.advanced.multithreading
 

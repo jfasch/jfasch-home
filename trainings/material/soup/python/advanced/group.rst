@@ -57,7 +57,8 @@ which you won't be able to do without once you got used to them.
    oo/group
    exceptions
    modules
-   threading/group
+   multithreading/group
+   multiprocessing/group
 
 
 .. ot-graph::
