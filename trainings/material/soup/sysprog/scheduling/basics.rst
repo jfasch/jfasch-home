@@ -17,7 +17,8 @@ Scheduling
   * Core kernel subsystem
   * Assigns CPU resources to *runnable* tasks (tasks that do *not*
     wait for anything; e.g. network I/O, timer)
-  * Task: process or thread; kernel makes no difference
+  * Task: process or thread; kernel makes no difference (see
+    :doc:`processes-and-threads` for difference and motivation)
 
 * *Timeslicing*
 

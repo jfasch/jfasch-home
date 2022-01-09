@@ -1,4 +1,4 @@
-// g++ -o /tmp/embedded-app embedded-app.cpp -lrt
+// g++ -o /tmp/embedded-app-1-irq embedded-app-1-irq.cpp -lrt
 
 #include <signal.h>
 #include <time.h>

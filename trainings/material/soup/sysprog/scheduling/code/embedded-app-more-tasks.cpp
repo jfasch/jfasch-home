@@ -1,4 +1,4 @@
-// g++ -o /tmp/embedded-app-tasks embedded-app-tasks.cpp -lrt -lpthread
+// g++ -o /tmp/embedded-app-more-tasks embedded-app-more-tasks.cpp -lrt -lpthread
 
 #include <signal.h>
 #include <time.h>
@@ -88,6 +88,29 @@ static void* show_status_func(void*)
     return NULL;
 }
 
+static void* flash_func(void*)
+{
+    bool is_reverse = false;
+    static char reverse[] = "\033[7m";
+    static char normal[] = "\033[0m";
+
+    while (true) {
+        if (is_reverse)
+            write(STDOUT_FILENO, reverse, sizeof(reverse));
+        else
+            write(STDOUT_FILENO, normal, sizeof(normal));
+
+        is_reverse = !is_reverse;
+        
+        struct timespec interval_ts = {
+            /*sec*/ 2, 
+            /*nsec*/ 0
+        };
+        nanosleep(&interval_ts, NULL);
+    }
+}
+
+
 int main()
 {
     // initialize application
@@ -111,6 +134,16 @@ int main()
     {
         pthread_t show_task;
         int error = pthread_create(&show_task, NULL, show_status_func, NULL);
+        if (error) {
+            fprintf(stderr, "pthread_create: %s\n", strerror(error));
+            return 1;
+        }
+    }
+
+    // start reverse/normal task
+    {
+        pthread_t flash_task;
+        int error = pthread_create(&flash_task, NULL, flash_func, NULL);
         if (error) {
             fprintf(stderr, "pthread_create: %s\n", strerror(error));
             return 1;
