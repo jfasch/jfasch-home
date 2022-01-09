@@ -15,7 +15,10 @@ Topics
    :glob:
 
    basics
+   processes-and-threads
    wakup-latency
+   realtime
+   realtime-api
 
 Group Description
 -----------------

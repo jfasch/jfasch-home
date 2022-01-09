@@ -1,4 +1,4 @@
-.. ot-topic:: sysprog.scheduling.basics_demo
+.. ot-topic:: sysprog.scheduling.wakeup_latency
    :dependencies: sysprog.scheduling.basics
 
 .. include:: <mmlalias.txt>
@@ -50,8 +50,10 @@ more processes want their share)
 
 * Gotcha: CPU frequency scaling (``ondemand`` governor)
 * CPU bound processes make CPUs run faster
-* |longrightarrow| When wakeup latency is an issue, power saving is
-  not a good idea!
+
+.. note::
+
+   When wakeup latency is an issue, power saving is not a good idea!
 
 CPU Frequency Scaling Out Of The Way
 ------------------------------------

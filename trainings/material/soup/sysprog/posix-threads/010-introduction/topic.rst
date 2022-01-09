@@ -1,6 +1,7 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: sysprog.posix_threads.basics
+   :dependencies: sysprog.scheduling.basics
 
 
 Basics
@@ -9,7 +10,7 @@ Basics
 Why Threads?
 ------------
 
-**``fork()`` is so beautiful**
+``fork()`` **is so beautiful**
   
 * New process
 * New address space

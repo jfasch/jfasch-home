@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-Scheduling Basics
-=================
+Scheduling (and Multitasking)
+=============================
 
 .. contents::
    :local:
@@ -15,8 +15,8 @@ Scheduling
 * *Scheduler*
 
   * Core kernel subsystem
-  * Assigns CPU resources to *runnable* tasks (tasks that do not wait
-    upon something; e.g. network I/O, timer)
+  * Assigns CPU resources to *runnable* tasks (tasks that do *not*
+    wait for anything; e.g. network I/O, timer)
   * Task: process or thread; kernel makes no difference
 
 * *Timeslicing*
@@ -32,6 +32,14 @@ Scheduling
 * No task must *starve* (not scheduled onto a CPU for a long time)
 * Each task must receive an *equal CPU share*
 * Among all *runnable* tasks, the "best" tasks is chosen to run next
+* When a task becomes *runnable* (e.g. network packet arrived), it
+  *does not run immediately*
+
+  * Only added to set of *runnable* tasks |longrightarrow| scheduler
+    picks "best" task when CPU becomes available
+  * |longrightarrow| tasks not interrupted; can achieve more work
+  * |longrightarrow| *throughput*
+
 * Dynamic meaning of "best", based on usage patterns
 
   * |longrightarrow| *CPU bound* vs. *I/O bound*
