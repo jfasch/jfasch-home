@@ -17,7 +17,7 @@ enum State
 struct app_status {
     int state;
     int tick_counter;
-    char display[11];;
+    char display[12];
 };
 struct app_status status;
 
