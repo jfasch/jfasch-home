@@ -7,11 +7,15 @@
 .. contents::
    :local:
 
-Topics
-------
+Scheduling and Realtime
+-----------------------
+
+* :doc:`/trainings/material/soup/sysprog/scheduling/wakup-latency`
+* :doc:`/trainings/material/soup/sysprog/scheduling/realtime`
+* :doc:`/trainings/material/soup/sysprog/scheduling/realtime-api`
 
 Exception Handling
-..................
+------------------
 
 * Slides. Blah resource cleanup blah ``raise``/``except`` blah.
 * Config errors
