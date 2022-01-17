@@ -27,10 +27,18 @@ and sex.
   * ``10`` - ``17``: "Good day, "
   * ``18`` - ``23``: "Good evening, "
 
-* Depending on the sex, the greeting continues with "Mrs." or
-  "Mr.".
+* Depending on the sex, the greeting continues with "Mrs." or "Mr.".
 * Last comes the name.
 * Finally, the greeting is output on ``stdout``
+
+.. code-block:: console
+
+   $ python greet.py
+   Name: Jörg
+   Sex: f
+   Hour of day: 22
+
+   Good evening, Mrs. Jörg
 
 Dependencies
 ------------

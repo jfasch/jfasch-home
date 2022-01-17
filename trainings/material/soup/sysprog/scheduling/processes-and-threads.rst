@@ -33,6 +33,7 @@ A Typical Bare Metal Application
   * Show status
 
 .. literalinclude:: code/embedded-app-1-irq.cpp
+   :caption: :download:`code/embedded-app-1-irq.cpp`
    :language: cpp
 
 .. code-block:: console
@@ -65,7 +66,8 @@ Hm. Need Another Timer Interrupt!
 * |longrightarrow| "update" timer (0.5s, and a separate "show" timer
   (1s)
 
-.. literalinclude:: code/embedded-app-1-irq.cpp
+.. literalinclude:: code/embedded-app-2-irq.cpp
+   :caption: :download:`code/embedded-app-2-irq.cpp`
    :language: cpp
 
 .. code-block:: console
@@ -110,6 +112,7 @@ Away From Interrupts: Use An Operating System
   tasks
 
 .. literalinclude:: code/embedded-app-tasks.cpp
+   :caption: :download:`code/embedded-app-tasks.cpp`
    :language: cpp
 
 .. code-block:: console
@@ -176,6 +179,7 @@ Nonsense: switch terminal between reverse and normal
 * Normal: ``"\033[0m"``
 
 .. literalinclude:: code/embedded-app-more-tasks.cpp
+   :caption: :download:`code/embedded-app-more-tasks.cpp`
    :language: cpp
 
 .. code-block:: console
@@ -202,6 +206,7 @@ Are Threads Great?
 terminal flasher)
 
 .. literalinclude:: code/embedded-app-more-tasks-buggy.cpp
+   :caption: :download:`code/embedded-app-more-tasks-buggy.cpp`
    :language: cpp
 
 .. code-block:: console
@@ -258,6 +263,7 @@ Stabilizing
   * Flash terminal in separate program
 
 .. literalinclude:: code/flash-terminal.cpp
+   :caption: :download:`code/flash-terminal.cpp`
    :language: cpp
 
 .. code-block:: console

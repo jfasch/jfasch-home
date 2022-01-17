@@ -16,6 +16,10 @@ Write a program that
 * Determines the maximum of the numbers.
 * Outputs the maximum.
 
+.. code-block::
+
+   $ python maximum.py 42 666
+
 Dependencies
 ------------
 
