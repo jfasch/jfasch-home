@@ -83,32 +83,6 @@ Syntax: Statements and Lines
 	      "Hello " +
 	      "World")
 
-Commandline Arguments
----------------------
-
-**Python is lean:**
-
-
-* Very few *built-in* functionality (compared to other languages)
-* Extension through *modules*
-* First (and most used): ``sys``
-
-.. code-block:: python
-   :caption: File ``args.py``
-
-   #!/usr/bin/python
-   import sys
-   print(sys.argv[0])
-   print(sys.argv[1])
-   print(sys.argv[2])
-
-.. code-block:: console
-
-   $ ./x.py one argument
-   ./x.py
-   one
-   argument
-
 Comments vs. Documentation
 --------------------------
 

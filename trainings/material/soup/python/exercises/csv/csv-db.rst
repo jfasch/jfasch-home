@@ -1,6 +1,7 @@
 .. ot-exercise:: python.exercises.csv.csv_db
    :dependencies: python.exercises.csv.csv_db,
-		  python.db.sqlite3
+		  python.db.sqlite3,
+		  python.basics.python_0139_commandline_argv
 		  
 .. include:: <mmlalias.txt>
 

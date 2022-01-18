@@ -1,6 +1,7 @@
 .. ot-exercise:: python.exercises.herdt.while_even_numbers
    :dependencies: python.exercises.herdt.username_password,
-		  python.basics.python_0193_while
+		  python.basics.python_0193_while,
+		  python.basics.python_0139_commandline_argv
 
 .. include:: <mmlalias.txt>
 

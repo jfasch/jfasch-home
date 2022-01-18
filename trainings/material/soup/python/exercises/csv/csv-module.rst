@@ -1,7 +1,8 @@
 .. ot-exercise:: python.exercises.csv.csv_module
    :dependencies: python.misc.csv,
 		  python.advanced.python_1010_generators_yield,
-		  python.advanced.modules
+		  python.advanced.modules,
+		  python.basics.python_0139_commandline_argv
 		  
 .. include:: <mmlalias.txt>
 

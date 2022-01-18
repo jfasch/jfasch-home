@@ -1,6 +1,7 @@
 .. ot-exercise:: python.exercises.legacy.distill
    :dependencies: python.exercises.legacy.revert,
-		  python.basics.python_0500_files
+		  python.basics.python_0500_files,
+		  python.basics.python_0139_commandline_argv
 
 .. include:: <mmlalias.txt>
 

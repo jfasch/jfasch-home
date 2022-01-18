@@ -1,7 +1,5 @@
 .. ot-exercise:: python.exercises.legacy.uniq_plain
-   :dependencies: python.exercises.legacy.function_primeness,
-		  python.basics.python_0270_functions,
-		  python.basics.python_0150_datatypes_overview_compound
+   :dependencies: python.basics.python_0150_datatypes_overview_compound
 
 .. include:: <mmlalias.txt>
 

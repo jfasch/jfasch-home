@@ -1,7 +1,8 @@
 .. ot-exercise:: python.exercises.legacy.max_numbers
    :dependencies: python.exercises.legacy.mixed_list_executable,
 		  python.basics.python_0140_variables,
-		  python.basics.python_0170_if
+		  python.basics.python_0170_if,
+		  python.basics.python_0139_commandline_argv
 
 .. include:: <mmlalias.txt>
 

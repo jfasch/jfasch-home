@@ -1,7 +1,8 @@
 .. ot-exercise:: python.exercises.herdt.max_numbers
    :dependencies: python.exercises.herdt.swap,
 		  python.basics.python_0140_variables,
-		  python.basics.python_0170_if
+		  python.basics.python_0170_if,
+		  python.basics.python_0139_commandline_argv
 
 .. include:: <mmlalias.txt>
 

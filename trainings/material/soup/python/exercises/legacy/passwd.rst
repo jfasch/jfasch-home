@@ -2,7 +2,8 @@
    :dependencies: python.exercises.legacy.distill,
 		  python.basics.python_0500_files,
 		  python.basics.python_0450_dictionaries,
-		  python.basics.python_0210_indexing_slicing
+		  python.basics.python_0210_indexing_slicing,
+		  python.basics.python_0139_commandline_argv
 
 .. include:: <mmlalias.txt>
 

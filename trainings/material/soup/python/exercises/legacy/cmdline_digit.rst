@@ -1,7 +1,8 @@
 .. ot-exercise:: python.exercises.legacy.cmdline_digit
    :dependencies: python.exercises.legacy.dict_keyerror,
 		  python.basics.python_0120_helloworld,
-		  python.basics.python_0150_datatypes_overview_compound
+		  python.basics.python_0150_datatypes_overview_compound,
+		  python.basics.python_0139_commandline_argv
 
 .. include:: <mmlalias.txt>
 

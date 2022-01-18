@@ -8,6 +8,7 @@
 
 .. ot-group:: python.basics
 
+
 Python: The Language Fundamentals
 =================================
 
