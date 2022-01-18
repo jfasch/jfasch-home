@@ -50,8 +50,6 @@ Tag 1
 Variablen und Datentypen
 ````````````````````````
 
-**Stoff**
-
 * :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
 
@@ -79,8 +77,6 @@ Variablen und Datentypen
     `umlaut-iso-latin-1.txt
     <https://github.com/jfasch/2022-01-17/blob/main/umlaut-iso-latin-1.txt>`__
 
-**Übungen**
-
 * :doc:`/trainings/material/soup/python/exercises/herdt/swap`
 
   * Swap: `swap.py
@@ -91,16 +87,10 @@ Variablen und Datentypen
   .. image:: wacom-sketches/swap.png
      :scale: 50%
 
-
 Kontrollstrukturen
 ``````````````````
 
-**Stoff**
-
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
-
-**Übungen**
-
 * :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
 
   * Maximum: `maximum.py
@@ -110,25 +100,43 @@ Kontrollstrukturen
 
 * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
 
-Agenda
-------
+  * `greet.py <https://github.com/jfasch/2022-01-17/blob/main/greet.py>`__
 
 Tag 2
 .....
 
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
+
+  * Straightforward (``while``): `even.py <https://github.com/jfasch/2022-01-17/blob/main/even.py>`__
+  * Straightforward (using ``for``; slightly better): `even-for.py
+    <https://github.com/jfasch/2022-01-17/blob/main/even-for.py>`__
+  * Even-number *generator*: `even-yield.py
+    <https://github.com/jfasch/2022-01-17/blob/main/even-yield.py>`__
+  * Not programming anything, but rather using ``range()``'s
+    *step-width* parameter: `even-ultimate-pythonicity.py
+    <https://github.com/jfasch/2022-01-17/blob/main/even-ultimate-pythonicity.py>`__
+
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 
   .. image:: wacom-sketches/prime.png
      :scale: 50%
+
+  * `prime.py <https://github.com/jfasch/2022-01-17/blob/main/prime.py>`__
 
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
+
+  * Sequential search in output list (bad): `uniq-sequential.py <https://github.com/jfasch/2022-01-17/blob/main/uniq-sequential.py>`__
+  * Constant-time search in ``set`` (good): `uniq-set.py <https://github.com/jfasch/2022-01-17/blob/main/uniq-set.py>`__
+
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+
+  * `digit.py <https://github.com/jfasch/2022-01-17/blob/main/digit.py>`__
+
 
 .. .. .. jjj Tag 2
 .. .. .. jjj .....
@@ -170,3 +178,7 @@ TODO
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`:
   explain "break and continue" in terms of "while-else" (right below)
 * Link: `PHP: A Fractal of Bad Design <https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/>`__
+
+
+
+
