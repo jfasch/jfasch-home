@@ -1,14 +1,15 @@
-.. include:: <mmlalias.txt>
-
-Reverting Lines of a File
-=========================
-
-.. contents::
-   :local:
-
 .. ot-exercise:: python.exercises.legacy.revert
    :dependencies: python.exercises.legacy.wc,
 		  python.basics.python_0500_files
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Reverting Lines of a File
+===================================
+
+.. contents::
+   :local:
 
 Write a program ``revert.py`` that takes a filename from the
 commandline, and outputs every line of the file with the line's

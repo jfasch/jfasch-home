@@ -1,11 +1,12 @@
-.. include:: <mmlalias.txt>
-
-Username/Password Check
-=======================
-
 .. ot-exercise:: python.exercises.herdt.username_password
    :dependencies: python.exercises.herdt.greeting,
 		  python.basics.python_0170_if
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Username/Password Check
+=================================
 
 Write a program that
 

@@ -1,10 +1,11 @@
-.. include:: <mmlalias.txt>
-
-Dictionary: Errors?
-===================
-
 .. ot-exercise:: python.exercises.legacy.dict_keyerror
    :dependencies: python.basics.python_0150_datatypes_overview_compound 
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Dictionary: Errors?
+=============================
 
 In the interactive interpreter, create a dictionary like so:
 

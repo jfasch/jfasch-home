@@ -23,6 +23,7 @@ Contents
    mixed_list_executable
    dict_keyerror
    primeness_function
+   uniq_plain
    uniq_function
    join_function
    string-rightjustify

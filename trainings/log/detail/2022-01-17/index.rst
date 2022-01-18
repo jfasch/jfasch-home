@@ -41,28 +41,52 @@ Jupyter Notebook
 * :doc:`Structure <notebook-wrapper>`
 * :doc:`Whole notebook <notebook>`
 
-Agenda
-------
+Log
+---
+
+Tag 1
+.....
 
 Variablen und Datentypen
-........................
+````````````````````````
 
 **Stoff**
 
 * :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
+
+  * Hello World: `hello.py
+    <https://github.com/jfasch/2022-01-17/blob/main/hello.py>`__
+  * Commandline arguments: `argv.py
+    <https://github.com/jfasch/2022-01-17/blob/main/argv.py>`__
+
 * :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
+
+  * Indentation: `indentation.py
+    <https://github.com/jfasch/2022-01-17/blob/main/indentation.py>`__
+
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+
+  * Overflow in C: `overflow.c
+    <https://github.com/jfasch/2022-01-17/blob/main/overflow.c>`__
+
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
+
+  * Encoding: ``Liebe Grüße, Jörg`` in UTF-8 `umlaut-utf8.txt
+    <https://github.com/jfasch/2022-01-17/blob/main/umlaut-utf8.txt>`__
+  * Encoding: ``Liebe Grüße, Jörg`` in ISO-8859-1
+    `umlaut-iso-latin-1.txt
+    <https://github.com/jfasch/2022-01-17/blob/main/umlaut-iso-latin-1.txt>`__
 
 **Übungen**
 
 * :doc:`/trainings/material/soup/python/exercises/herdt/swap`
 
-  .. .. jjjj rename exercise to something like "swap"
-
-  .. .. jjjj extract herdt exercises into separate group
+  * Swap: `swap.py
+    <https://github.com/jfasch/2022-01-17/blob/main/swap.py>`__
+  * Swap, Pythonic version: `swap-pythonic.py
+    <https://github.com/jfasch/2022-01-17/blob/main/swap-pythonic.py>`__
 
   .. image:: wacom-sketches/swap.png
      :scale: 50%
@@ -78,60 +102,34 @@ Kontrollstrukturen
 **Übungen**
 
 * :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
+
+  * Maximum: `maximum.py
+    <https://github.com/jfasch/2022-01-17/blob/main/maximum.py>`__
+  * Maximum, Pythonic version `maximum-pythonic.py
+    <https://github.com/jfasch/2022-01-17/blob/main/maximum-pythonic.py>`__
+
 * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
 
-**Stoff**
+Agenda
+------
+
+Tag 2
+.....
 
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-
-**Übungen**
-
 * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 
   .. image:: wacom-sketches/prime.png
      :scale: 50%
 
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
 
-.. .. .. jjj Log
-.. .. .. jjj ---
-.. .. .. jjj 
-.. .. .. jjj Tag 1
-.. .. .. jjj .....
-.. .. .. jjj 
-.. .. .. jjj **Vorab**: bissl Livehacking
-.. .. .. jjj 
-.. .. .. jjj * `Hello World <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/hello.py>`__
-.. .. .. jjj * `Commandlineargumente <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/args.py>`__
-.. .. .. jjj * `Input/Prompt <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/input.py>`__
-.. .. .. jjj 
-.. .. .. jjj 
-.. .. .. jjj Kontrollstrukturen
-.. .. .. jjj ``````````````````
-.. .. .. jjj 
-.. .. .. jjj **Stoff**
-.. .. .. jjj 
-.. .. .. jjj * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
-.. .. .. jjj 
-.. .. .. jjj **Übungen**
-.. .. .. jjj 
-.. .. .. jjj * :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/maximum.py>`__)
-.. .. .. jjj * :doc:`/trainings/material/soup/python/exercises/herdt/greet` (`livehacked <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/greeting.py>`__)
-.. .. .. jjj 
-.. .. .. jjj **Stoff**
-.. .. .. jjj 
-.. .. .. jjj * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic` (das
-.. .. .. jjj   Summenbeispiel `live-gehackt
-.. .. .. jjj   <https://github.com/jfasch/2021-08-02/blob/master/live-hacking/sum.py>`__)
-.. .. .. jjj 
-.. .. .. jjj **Übungen**
-.. .. .. jjj 
-.. .. .. jjj * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
-.. .. .. jjj * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
-.. .. .. jjj 
-.. .. .. jjj   .. image:: wacom-sketches/prime.png
-.. .. .. jjj      :scale: 50%
-.. .. .. jjj 
+
 .. .. .. jjj Tag 2
 .. .. .. jjj .....
 .. .. .. jjj 
@@ -162,6 +160,13 @@ Kontrollstrukturen
 .. .. .. jjj Links
 .. .. .. jjj -----
 .. .. .. jjj 
-.. .. .. jjj * `PHP: A Fractal of Bad Design <https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/>`__
 .. .. .. jjj * :doc:`Meine Web-Tutorials </about/site/work-in-progress/web>`
 .. .. .. jjj 
+
+
+TODO
+----
+
+* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`:
+  explain "break and continue" in terms of "while-else" (right below)
+* Link: `PHP: A Fractal of Bad Design <https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/>`__

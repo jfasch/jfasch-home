@@ -1,10 +1,11 @@
-.. include:: <mmlalias.txt>
-
-Boolean Expressions
-===================
-
 .. ot-exercise:: python.exercises.herdt.boolean
    :dependencies: python.basics.python_0160_boolean
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Boolean Expressions
+=============================
 
 #. What is the value of the following expression?
 

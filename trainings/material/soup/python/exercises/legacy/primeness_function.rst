@@ -1,11 +1,12 @@
-.. include:: <mmlalias.txt>
-
-Primeness (Function)
-====================
-
 .. ot-exercise:: python.exercises.legacy.function_primeness
    :dependencies: python.exercises.legacy.max_numbers_function,
 		  python.basics.python_0270_functions
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Primeness (Function)
+==============================
 
 Modify the prime number detection program from :doc:`here
 </trainings/material/soup/python/exercises/legacy/while_primeness>`

@@ -1,14 +1,15 @@
-.. include:: <mmlalias.txt>
-
-Eliminate Empty/Comment-Only Lines
-==================================
-
-.. contents::
-   :local:
-
 .. ot-exercise:: python.exercises.legacy.distill
    :dependencies: python.exercises.legacy.revert,
 		  python.basics.python_0500_files
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Eliminate Empty/Comment-Only Lines
+============================================
+
+.. contents::
+   :local:
 
 Write a program ``distill.py`` that takes a filename from the
 commandline, and outputs only those lines that are not empty or don't

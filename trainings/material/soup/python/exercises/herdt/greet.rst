@@ -1,11 +1,12 @@
-.. include:: <mmlalias.txt>
-
-Greeting, Depending on Time of Day
-==================================
-
 .. ot-exercise:: python.exercises.herdt.greeting
    :dependencies: python.exercises.herdt.max_numbers,
 		  python.basics.python_0170_if
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Greeting, Depending on Time of Day
+============================================
 
 A greeting has to be composed automatically, based upon time of day
 and sex.

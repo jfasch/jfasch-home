@@ -1,13 +1,14 @@
-.. include:: <mmlalias.txt>
-
-Exercise: Function: ``uniq()``
-==============================
-
 .. ot-exercise:: python.exercises.legacy.uniq_function
    :dependencies: python.exercises.legacy.function_primeness,
+		  python.exercises.legacy.uniq_plain,
 		  python.basics.python_0270_functions,
 		  python.basics.python_0150_datatypes_overview_compound
 
+.. include:: <mmlalias.txt>
+
+
+Exercise: Function: ``uniq()``
+==============================
 
 Write a function ``uniq()`` that takes a sequence as input. It
 returns a list with duplicate elements removed, and where the

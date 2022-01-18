@@ -1,12 +1,13 @@
-.. include:: <mmlalias.txt>
-
-Determine Maximum of Two Numbers
-================================
-
 .. ot-exercise:: python.exercises.legacy.max_numbers
    :dependencies: python.exercises.legacy.mixed_list_executable,
 		  python.basics.python_0140_variables,
 		  python.basics.python_0170_if
+
+.. include:: <mmlalias.txt>
+
+
+Exercise: Determine Maximum of Two Numbers
+==========================================
 
 Write a program that
 
