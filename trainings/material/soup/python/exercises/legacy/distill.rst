@@ -26,7 +26,7 @@ Example
 -------
 
 .. literalinclude:: distill-test.txt
-   :caption: :download: distill-test.txt
+   :caption: :download:`distill-test.txt`
 
 .. code-block:: console
 

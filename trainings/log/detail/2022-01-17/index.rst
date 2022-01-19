@@ -157,6 +157,20 @@ Tag 3
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
+
+  Talking about searchable datastructures, like in ``dict`` and
+  ``set`` (those are implemented as hash tables, btw.)
+
+  * Hash Table
+
+    .. image:: hashtable.png
+       :scale: 40%
+
+  * Red-Black Tree
+
+    .. image:: rbtree.png
+       :scale: 40%
+
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
