@@ -137,6 +137,30 @@ Tag 2
 
   * `digit.py <https://github.com/jfasch/2022-01-17/blob/main/digit.py>`__
 
+Tag 3
+.....
+
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
+
+  * :doc:`/trainings/material/soup/python/basics/python_0270_functions/slideshow`
+  * :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+
+  * `uniq-function.py
+    <https://github.com/jfasch/2022-01-17/blob/main/uniq-function.py>`__
+  * Using ``dict.fromkeys()``: `uniq-fromkeys.py
+    <https://github.com/jfasch/2022-01-17/blob/main/uniq-fromkeys.py>`__
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
+* :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+* :doc:`/trainings/material/soup/python/exercises/legacy/passwd`
 
 .. .. .. jjj Tag 2
 .. .. .. jjj .....
