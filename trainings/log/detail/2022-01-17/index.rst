@@ -173,43 +173,24 @@ Tag 3
 
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+
+  * Using ``f.readline()`` (EOF is clumsy): `passwd-readline.py
+    <https://github.com/jfasch/2022-01-17/blob/main/passwd-readline.py>`__
+  * Pythonic, using iteration: `passwd-iter.py
+    <https://github.com/jfasch/2022-01-17/blob/main/passwd-iter.py>`__
+
 * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+
+  * `distill.py <https://github.com/jfasch/2022-01-17/blob/main/distill.py>`__
+
 * :doc:`/trainings/material/soup/python/exercises/legacy/passwd`
 
-.. .. .. jjj Tag 2
-.. .. .. jjj .....
-.. .. .. jjj 
-.. .. .. jjj **Stoff**
-.. .. .. jjj 
-.. .. .. jjj * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-.. .. .. jjj 
-.. .. .. jjj **Übungen**
-.. .. .. jjj 
-.. .. .. jjj * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
-.. .. .. jjj 
-.. .. .. jjj **Stoff**
-.. .. .. jjj 
-.. .. .. jjj * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
-.. .. .. jjj * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
-.. .. .. jjj * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
-.. .. .. jjj * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
-.. .. .. jjj 
-.. .. .. jjj **Showcasing "Full Stack Development"**
-.. .. .. jjj 
-.. .. .. jjj .. image:: wacom-sketches/fullstack.png
-.. .. .. jjj    :scale: 70%
-.. .. .. jjj 
-.. .. .. jjj .. toctree::
-.. .. .. jjj 
-.. .. .. jjj    notebook
-.. .. .. jjj 
-.. .. .. jjj Links
-.. .. .. jjj -----
-.. .. .. jjj 
-.. .. .. jjj * :doc:`Meine Web-Tutorials </about/site/work-in-progress/web>`
-.. .. .. jjj 
+Tag 4
+-----
 
-
+* :doc:`/trainings/material/soup/python/advanced/modules`
+* :doc:`/trainings/material/soup/python/advanced/oo/group`
+  
 TODO
 ----
 

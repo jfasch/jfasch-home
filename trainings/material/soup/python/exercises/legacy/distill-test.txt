@@ -5,3 +5,5 @@ the previous line contains two TAB characters
       starts at column >0, but is visible
 
 the previousline is entirely empty
+
+         # comment

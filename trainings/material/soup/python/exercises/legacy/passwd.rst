@@ -62,8 +62,8 @@ Each line/record consists of seven fields, separated by colons
    * * 0
      * ``username``
    * * 1
-     * ``password``. Encrypted password, ``x`` means that this can be
-       found in ``/etc/shadow``.
+     * ``password``. Encrypted password; ``x`` means that the
+       encrypted password is found in ``/etc/shadow``.
    * * 2
      * ``uid``. User ID.
    * * 3
