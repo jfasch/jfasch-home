@@ -27,8 +27,8 @@ C Programming (2021-12-06 - 2021-12-10)
 
 	$ git clone https://github.com/jfasch/2021-12-06
 
-Day 1
------
+2021-12-06
+----------
 
 * :doc:`/trainings/material/soup/c/010-introduction/000-installation/topic`
 * :doc:`/trainings/material/soup/c/010-introduction/010-introduction/topic`
@@ -49,8 +49,8 @@ Day 1
   * `fahrenheit-for-reverse.c <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/fahrenheit-for-reverse.c>`__
   * `fahrenheit-for-float.cpp <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/fahrenheit-for-float.cpp>`__
 
-Day 2
------
+2021-12-07
+----------
 
 * :doc:`/trainings/material/soup/c/010-introduction/070-symbolic-constants/topic`
 * :doc:`/trainings/material/soup/c/010-introduction/080-exercise-fahrenheit-cpp/topic`
@@ -70,8 +70,8 @@ Day 2
 
   * Solution: `histogram.cpp <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/histogram.cpp>`__
 
-Day 3
------
+2021-12-08
+----------
 
 * Reiterating on
   :doc:`/trainings/material/soup/c/010-introduction/120-exercise-histogram/topic`
@@ -151,8 +151,8 @@ Day 3
       `swap-nok.cpp
       <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/swap-nok.cpp>`__
 
-Day 4
------
+2021-12-09
+----------
 
 * Morning wakeup, talking about what happened, questions
 
@@ -224,25 +224,67 @@ Day 4
   * :doc:`/trainings/material/soup/c/060-structures/030-typedef/topic`
 
 * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/group`
-
-  * jjj userdb ...
-
 * Pointer Recap: `pointer-recap.cpp
   <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/pointer-recap.cpp>`__
 
-Boring, Skipped/Deferred
-------------------------
+2022-01-24
+----------
 
-**Skipped, Modularization**
+Undefined Behavior
+..................
 
-* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/010-basics-of-functions/topic`
-* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/020-external-variables/topic`
-* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/030-header-files/topic`
+*Undefined behavior* ist commonplace in C. C++ takes long turns to get
+undefined behavior out of the way. For example:
+
+* Array bounds read/write
+
+  * It is perfectly ok to read and write past the boundaries of an
+    array. At least this is ok for the compiler; occasionally the
+    program will exhibit *undefined behavior* - for example when you
+    write into variables in the neighborhood. See
+    `undefined-behavior.c
+    <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/undefined-behavior.c>`__.
+  * C++ brings data structures like ``std::vector`` that can do this
+    better. See `undefined-behavior-c++.cpp
+    <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/undefined-behavior-c%2B%2B.cpp>`__.
+
+* Integer overflow bugs are the norm - happily mix signedness and
+  unsignedness, happily mix various integer widths. See
+  `overflow-recap.cpp
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/overflow-recap.cpp>`__.
+
+* Structures (``struct``) recap; `struct-recap.cpp
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/struct-recap.cpp>`__,
+  again with an array bounds write.
+* Pointers recap; `pointer-recap-recap.cpp
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/pointer-recap-recap.cpp>`__.
+* Functions recap; `power-recap.c
+  <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/power-recap.c>`__.
+
+Modularization
+..............
+
+* What's that *separate compilation unit* thing? How do we use the C
+  preprocessor? *Dogmatically introducing include guards!*
+
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/010-basics-of-functions/topic`
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/020-external-variables/topic`
+  * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/030-header-files/topic`
+
+  See an example (in C, largely) `here
+  <https://github.com/jfasch/2021-12-06/tree/main/userdb>`__.
+
+2022-01-25
+----------
+
 * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/040-static-variables/topic`
 * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/050-c-preprocessor/topic`
 * :doc:`/trainings/material/soup/c/040-functions-and-program-structure/060-c-preprocessor-advanced/topic`
 
-**Boring**
+Boring
+------
+
+To be done when time is right ...
 
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/040-constants/topic`
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/050-declarations/topic`

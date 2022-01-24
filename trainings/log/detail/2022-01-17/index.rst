@@ -1,5 +1,6 @@
 .. include:: <mmlalias.txt>
 
+
 Programmierung Grundlagen, anhand von Python (2022-01-17 - 2022-01-10)
 ======================================================================
 
@@ -185,18 +186,25 @@ Tag 3
 
 * :doc:`/trainings/material/soup/python/exercises/legacy/passwd`
 
+  * Larger OO/modules/database "project" `see here
+    <https://github.com/jfasch/2022-01-17/tree/main/passwd>`__
+
 Tag 4
 -----
 
 * :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/advanced/oo/group`
-  
-TODO
-----
+* SQL
 
-* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`:
-  explain "break and continue" in terms of "while-else" (right below)
-* Link: `PHP: A Fractal of Bad Design <https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/>`__
+  * :doc:`/trainings/material/soup/python/misc/db/dbapi2`
+  * :doc:`/trainings/material/soup/python/misc/db/sqlite3`
+  * Exercise: larger OO/modules/database "project" `see here
+    <https://github.com/jfasch/2022-01-17/tree/main/passwd>`__
+
+Links
+-----
+
+* `PHP: A Fractal of Bad Design <https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/>`__
 
 
 

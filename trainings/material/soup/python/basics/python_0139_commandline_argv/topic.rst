@@ -1,11 +1,12 @@
 .. ot-topic:: python.basics.python_0139_commandline_argv
-   :dependencies: python.basics.python_0130_syntax_etc
+   :dependencies: python.basics.python_0130_syntax_etc,
+		  python.basics.python_0125_running
 
 .. include:: <mmlalias.txt>
 
 
-How to Bring Commandline Parameters into a Program
-==================================================
+Commandline Arguments (``sys.argv``)
+====================================
 
 .. contents::
    :local:
@@ -32,6 +33,7 @@ Commandline Arguments
 .. code-block:: console
 
    $ python args.py one argument
-   0: x.py
+   ['args.py', 'one', 'argument']
+   0: args.py
    1: one
    2: argument
