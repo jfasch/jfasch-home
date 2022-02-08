@@ -8,6 +8,10 @@
 Threads in C++
 ==============
 
+.. code-block:: c++
+
+   #include <thread>
+
 Creating Threads is Far Too Easy
 --------------------------------
 

@@ -11,6 +11,7 @@ Objects in C - ``struct``
 -------------------------
 
 .. list-table::
+   :align: left
    
    * * **Objects in C** - ``struct``
 
@@ -43,6 +44,7 @@ Example: ``struct point``
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -56,9 +58,6 @@ Example: ``struct point``
           struct point add_points(
               struct point rhs,
               struct point lhs);
-          void add_to_point(
-              struct point *rhs,
-              struct point lhs);
 
      * .. code-block:: c
 
@@ -66,13 +65,12 @@ Example: ``struct point``
                        B = {2,4};
           struct point C;
           
-          C = add_points(A, B);
-          add_to_point(&A, B);
+          C = add_points(A, B);  // C = A+B; // sadly not possible in C
 
 ``struct point`` - Criticism
 ----------------------------
 
-**Is ``struct`` good enough?**
+**Is struct good enough?**
 
 
 * Members are public
@@ -94,6 +92,7 @@ Example: ``class point``
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -131,6 +130,7 @@ Example: ``class point``
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -165,6 +165,7 @@ Example: ``class point``
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -200,6 +201,7 @@ Example: ``class point``
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -226,6 +228,7 @@ Example: ``class point``
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -253,6 +256,7 @@ Example: ``class point``
 
 .. list-table::
    :header-rows: 1
+   :align: left
 
    * * Definition
      * Usage
@@ -279,6 +283,7 @@ Terminology
 **One says:**
 
 .. list-table::
+   :align: left
 
    * * .. code-block:: c++
 

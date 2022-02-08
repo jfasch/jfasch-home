@@ -1,3 +1,6 @@
+.. ot-group:: cxx11.smart_pointers
+
+
 Smart Pointers
 ==============
 
@@ -16,7 +19,5 @@ Topics
 Group Description
 -----------------
 	      
-.. ot-group:: cxx11.smart_pointers
-
 .. ot-graph::
    :entries: cxx11.smart_pointers

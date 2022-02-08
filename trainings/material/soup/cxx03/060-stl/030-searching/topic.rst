@@ -1,7 +1,7 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.stl.searching
-   :dependencies: cxx03.stl.sorting
+   :dependencies: cxx03.stl.algorithm.sort
+
+.. include:: <mmlalias.txt>
 
 
 Searching

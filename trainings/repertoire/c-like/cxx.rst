@@ -15,10 +15,8 @@ C++: Einführung und Überblick
       Anfrage, training@faschingbauer.co.at
       Dauer, 5 Tage
       Material (C++03): :doc:`/trainings/material/soup/cxx03/group`
-      Material (C++03): :doc:`/trainings/material/soup/cxx11/group`
+      Material (C++11): :doc:`/trainings/material/soup/cxx11/group`
       Material (C++ misc.traps): :doc:`/trainings/material/soup/cxx/group`
-      PDF Slides, :download:`C++03 </trainings/material/pdf/055-c++03.pdf>`
-      PDF Slides, :download:`C++11 </trainings/material/pdf/056-c++11.pdf>`
 
 C++ wurde ursprünglich erfunden, um als Superset des guten alten C
 dessen Schwächen leichter handhabbar zu machen. Die Eckpfeiler der

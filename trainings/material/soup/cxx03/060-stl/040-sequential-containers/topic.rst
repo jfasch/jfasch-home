@@ -29,7 +29,7 @@ But ...
 
    * * * Appending at the back
      
-         * There is room $\to$ immediate
+         * There is room |longrightarrow| immediate
 	 * No room |longrightarrow| allocate (double the space), copy over, and append
 
        * Removing from the back

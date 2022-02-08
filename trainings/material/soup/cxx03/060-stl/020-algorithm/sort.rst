@@ -1,14 +1,17 @@
-.. include:: <mmlalias.txt>
-
-.. ot-topic:: cxx03.stl.sorting
+.. ot-topic:: cxx03.stl.algorithm.sort
    :dependencies: cxx03.stl.basics
 
+.. include:: <mmlalias.txt>
 
-Sorting
-=======
 
-Algorithms: ``std::sort``
--------------------------
+``std::sort``
+=============
+
+.. contents::
+   :local:
+
+Algorithm: ``std::sort``
+------------------------
 
 Now for something simple ...
 
@@ -28,8 +31,8 @@ Now for something simple ...
    
    std::sort(int_array.begin(), int_array.end());
 
-Algorithms: ``std::sort``, custom comparison
---------------------------------------------
+Algorithm: ``std::sort``, custom comparison
+-------------------------------------------
 
 .. code-block:: c++
 

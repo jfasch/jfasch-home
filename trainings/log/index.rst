@@ -26,8 +26,8 @@ gebucht.
 
 (:doc:`Mehr ... <detail/2022-01-17/index>`)
 
-C Programming (2021-12-06 - 2021-12-10)
----------------------------------------
+C/C++ Programming (2021-12-06 - 2021-12-10, 2022-01-24 - 2022-02-04)
+--------------------------------------------------------------------
 
 Der Kurs wurde über meinen Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/c-grundlagen-fuer-programmierer>`__

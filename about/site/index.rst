@@ -93,7 +93,7 @@ mileage might vary.
 
 .. code-block:: console
 
-   # dnf install pandoc graphviz dia
+   # dnf install pandoc graphviz dia gtest gtest-devel
 
 * ``pandoc`` for markdown handling in jupyter notebooks
 * ``graphviz`` for those funky dependency graphs (:doc:`example

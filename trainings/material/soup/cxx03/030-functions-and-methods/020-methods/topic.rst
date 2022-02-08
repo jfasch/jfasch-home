@@ -36,7 +36,11 @@ Method - Example ``point`` (1)
    class point
    {
    public:
-       void move(int x, int y);
+       void move(int x, int y)
+       {
+	   this->x += x;
+	   this->y += y;
+       }
        float distance_origin() const;
        float distance(const point&) const;
    };

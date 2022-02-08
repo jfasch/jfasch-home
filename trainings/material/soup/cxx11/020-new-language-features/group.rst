@@ -1,3 +1,6 @@
+.. ot-group:: cxx11.new_language_features
+
+
 New Language Features
 =====================
 
@@ -16,7 +19,5 @@ Topics
 Group Description
 -----------------
 	      
-.. ot-group:: cxx11.new_language_features
-
 .. ot-graph::
    :entries: cxx11.new_language_features

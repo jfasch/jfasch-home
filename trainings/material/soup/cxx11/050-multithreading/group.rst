@@ -1,3 +1,6 @@
+.. ot-group:: cxx11.multithreading
+
+
 Multithreading
 ==============
 
@@ -16,7 +19,5 @@ Topics
 Group Description
 -----------------
 	      
-.. ot-group:: cxx11.multithreading
-
 .. ot-graph::
    :entries: cxx11.multithreading

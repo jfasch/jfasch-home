@@ -178,11 +178,11 @@ Regular Topics
 
 * Standard Template Library: Container Templates
 
-  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/010-basics/topic`
-  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/020-sorting/topic`
-  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/030-searching/topic`
-  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/040-sequential-containers/topic`
-  * :doc:`/trainings/material/soup/cxx03/060-stl-containers/050-associative-containers/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/030-searching/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/topic`
 
 Toolchain: C/C++ Build (How Complicated Can Things Be?)
 .......................................................
@@ -350,7 +350,7 @@ Smart Pointers, Recap
 ``std::map``
 ............
 
-* :doc:`/trainings/material/soup/cxx03/060-stl-containers/050-associative-containers/topic`. Livehackingly
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/topic`. Livehackingly
   building an index into our `user database <https://github.com/jfasch/2021-06-14/blob/main/db-cpp/db.hpp>`__
 
 OO, and Polymorphism

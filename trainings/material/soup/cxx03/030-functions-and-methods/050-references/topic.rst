@@ -32,14 +32,20 @@ Pointers, Seen Differently: References (1)
               }
           };
 
-     * * **Problem**
+     * .. code-block:: c++
 
-         * Parameter is a ``copy``
+          point a(1,2);
+	  point b(2, 3);
+	  float dist = a.distance(b);
 
-       * **Solution**
+       **Problem**
 
-         * Pass by pointer
-	 * Even better: ``const`` pointer
+       * Parameter is a ``copy``
+
+       **Solution**
+
+       * Pass by pointer
+       * Even better: ``const`` pointer
 
 Pointers, Seen Differently: References (2)
 ------------------------------------------
