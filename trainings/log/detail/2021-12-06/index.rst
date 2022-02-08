@@ -612,7 +612,7 @@ Live hacked:
 
   .. code-block:: console
 
-     $ sudo apt install cmake build-essential libsqlite3-dev libboost-all-dev
+     $ sudo apt install cmake build-essential libsqlite3-dev libboost-all-dev libgtk-3-dev
 
 * Unit testing framework documentation: `Boost Test Library: The Unit
   Test Framework
@@ -622,6 +622,5 @@ Live hacked:
   * Requirements not defined in prosaic words anymore: *test driven
     development*
   * Roman going mad: using `wxWidgets <https://www.wxwidgets.org/>`__
-    to build a GUI on top of our userdatabase
+    to build a GUI on top of our user database
   * ...
-
