@@ -617,6 +617,11 @@ Live hacked:
 * Unit testing framework documentation: `Boost Test Library: The Unit
   Test Framework
   <https://www.boost.org/doc/libs/1_43_0/libs/test/doc/html/utf.html>`__
+* ``class UserDB`` is now an *interface*
+
+  .. image:: images/userdb-iface.png
+     :scale: 40%
+
 * Into the wild ...
 
   * Requirements not defined in prosaic words anymore: *test driven
