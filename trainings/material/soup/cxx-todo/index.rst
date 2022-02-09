@@ -4,21 +4,23 @@
 C++: TODO List
 ==============
 
+Structural
+----------
+
+* Move C++03 and C++11, and "C++: Miscellaneous Live-Hacking" into new
+  group, "C++"
+* *Depend* c++11 on c++03, topic by topic
+
 STL, Containers and Algorithms
 ------------------------------
-
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/string.cpp
 
 Algorithms
 ..........
 
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/copy.cpp
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/binary_search.cpp
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/find.cpp
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/find_if.cpp
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/find_if-functor.cpp
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/for_each-functor.cpp
-* https://github.com/jfasch/2021-12-06/blob/main/live-hacking/sort.cpp
+* Add documentation links to cplusplus.com *and* cppreference.com
+* Add dependencies
+* Lose a few words on each (most contain only code)
+* ``std::lower_bound``?
 
 OO
 ...

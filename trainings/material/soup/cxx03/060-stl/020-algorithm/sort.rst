@@ -43,3 +43,10 @@ Algorithm: ``std::sort``, custom comparison
    
    int int_array[] = { 34, 45, 1, 3, 2, 666 };
    std::sort(int_array, int_array + 6, less_reverse);
+
+Live Hacking
+------------
+
+.. literalinclude:: sort.cpp
+   :caption: :download:`sort.cpp`
+   :language: c++

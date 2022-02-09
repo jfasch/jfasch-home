@@ -9,7 +9,13 @@
 .. contents::
    :local:
 
-Initialization, Assignment
---------------------------
+Documentation
+-------------
 
+* `std::string on cplusplus.com <http://cplusplus.com/reference/string/string/>`__
 
+Basic Usage
+-----------
+
+.. literalinclude:: basic-usage.cpp
+   :language: c++

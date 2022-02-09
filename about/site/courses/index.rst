@@ -5,4 +5,3 @@ Course Material
 
    Sample Course log Record <samples/index>
    templates
-   c++/index

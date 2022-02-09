@@ -1,0 +1,6 @@
+ADD_EXECUTABLE(copy copy.cpp)
+ADD_EXECUTABLE(sort sort.cpp)
+ADD_EXECUTABLE(binary_search binary_search.cpp)
+ADD_EXECUTABLE(find_if find_if.cpp)
+ADD_EXECUTABLE(find_if-functor find_if-functor.cpp)
+ADD_EXECUTABLE(for_each for_each.cpp)

@@ -4,8 +4,9 @@
 .. include:: <mmlalias.txt>
 
 
-``std::copy`` (Draft)
-=====================
+``std::copy``
+=============
 
 .. literalinclude:: copy.cpp
    :caption: :download:`copy.cpp`
+   :language: c++
