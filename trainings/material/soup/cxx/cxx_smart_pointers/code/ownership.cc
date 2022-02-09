@@ -51,7 +51,7 @@ TEST(Ownership, SharedOwnership_Bad)
     Data* data = new Data(new char[28], 28);
     (void)data;
     {
-        SharedDataOwner owner(std::shared_ptr<Data>(data));
+        SharedDataOwner owner = std::shared_ptr<Data>(data);
         // owner dtor called here!
     }
 
