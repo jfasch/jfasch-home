@@ -1,4 +1,4 @@
-Standard Template Library: Container Templates
+Dynamic Memory Allocation, Resource Management
 ==============================================
 
 .. contents::
@@ -11,7 +11,7 @@ Topics
    :maxdepth: 1
    :glob:
 
-   */topic
+   000-todo/topic
 
 Group Description
 -----------------

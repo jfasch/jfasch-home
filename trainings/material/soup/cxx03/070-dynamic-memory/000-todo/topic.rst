@@ -7,7 +7,8 @@
 Dynamic Memory (To Be Done)
 ===========================
 
-* ``new``, ``delete``, ``new[]``, ``delete[]``
-* ``std::shared_ptr<>``
-* ``auto_ptr<>``
-* See also: C++11 ff. blah ``std::unique_ptr<>``
+* ``new``, ``delete``
+* ``new[]``, ``delete[]``
+* ``auto_ptr<>`` *deprecated*
+* Refer to
+  :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`

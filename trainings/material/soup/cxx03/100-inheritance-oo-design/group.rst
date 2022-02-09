@@ -11,7 +11,7 @@ Topics
    :maxdepth: 1
    :glob:
 
-   */topic
+   000-todo/topic
 
 Group Description
 -----------------

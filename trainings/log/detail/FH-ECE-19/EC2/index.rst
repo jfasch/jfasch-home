@@ -18,3 +18,9 @@ Agenda/Log
 
    agenda-log/index
 
+Test Material
+-------------
+
+.. toctree::
+
+   test-material

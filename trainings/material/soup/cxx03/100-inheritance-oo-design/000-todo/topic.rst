@@ -10,3 +10,4 @@ Inheritance and OO Design (To Be Done)
 * ``virtual``
 * WTF: virtual dtor
 * base class ctor
+* See "OO" section of :doc:`/about/site/courses/c++/index`

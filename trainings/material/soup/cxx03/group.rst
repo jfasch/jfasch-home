@@ -12,19 +12,8 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   */topic
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx03
-
-.. toctree::
-   :hidden:
-
+   001-introduction/topic
    020-data-encapsulation/group
    030-functions-and-methods/group
    040-exceptions/group
@@ -33,5 +22,19 @@ Group Description
    070-dynamic-memory/group
    100-inheritance-oo-design/group
    900-standard-library-miscellanea/group
+
+Exercises
+---------
+
+.. toctree::
+   :maxdepth: 1
+
    exercises-userdb/group
    exercises-misc/group
+
+Group Description
+-----------------
+	      
+.. ot-graph::
+   :entries: cxx03
+
