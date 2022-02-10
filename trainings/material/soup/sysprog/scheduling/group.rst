@@ -20,6 +20,8 @@ Topics
    realtime
    realtime-api
 
+   questions
+
 Group Description
 -----------------
 	      

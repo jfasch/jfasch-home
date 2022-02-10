@@ -127,6 +127,14 @@ Smart Pointers
 * https://github.com/jfasch/2021-12-06/blob/main/live-hacking/unique-ptr.cpp
 * https://github.com/jfasch/2021-12-06/blob/main/live-hacking/shared-ptr.cpp
 
+UserDB Exercise
+---------------
+
+* Add boost test
+* Define requirement: add interface ``UserDB``, let ``UserDB_Vector``
+  derive from it.
+* Define requirement: ``UserDB_Map``
+
 Miscellaneous
 -------------
 

@@ -9,6 +9,8 @@ Multithreading
    basics
    mutex
 
+   questions
+
 .. ot-graph::
    :entries: python.advanced.multithreading
 

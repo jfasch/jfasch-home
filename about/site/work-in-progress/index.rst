@@ -16,3 +16,4 @@ Work in Progress
    fh-joanneum/index
    project-xxx/index
    packaging/index
+   clean-coding-seminar

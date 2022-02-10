@@ -4,8 +4,8 @@
    :dependencies: sysprog.posix_threads.mutex
 
 
-Mutex: Solve Load/Modify/Conflict
-=================================
+Mutex: Solve Load/Modify/Store Conflict
+=======================================
 
 * Use a mutex to protect the integer increment in the last
   exercise. *What do you notice?*

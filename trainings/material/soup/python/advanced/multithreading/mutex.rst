@@ -31,6 +31,21 @@ Mother of All Race conditions: Integer Increment
 
 |longrightarrow| *Load Modify Store Conflict*
 
+Load Modify Store Conflict
+--------------------------
+
+====== ====     ====== ====  ===========
+**CPU A**         **CPU B**  **Memory**
+-----------     -----------  -----------
+Instr   Loc     Instr   Loc  Glob
+load     42     -       -     42 
+-        42     load    42    42 
+inc      43     -       -     42 
+-        43     inc     43    42 
+-        43     store   43    43 
+store    43     -       43    43 
+====== ====     ====== ====  ===========
+
 Solution: Mutex (Explicit Acquire/Release)
 ------------------------------------------
 
