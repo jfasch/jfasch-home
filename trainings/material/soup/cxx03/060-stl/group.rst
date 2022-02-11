@@ -12,10 +12,12 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
+   010-basics/topic
    020-algorithm/group
-   */topic
+   030-searching/topic
+   040-sequential-containers/group
+   050-associative-containers/topic
 
 Dependencies
 ------------

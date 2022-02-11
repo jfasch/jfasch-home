@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-``std::binary_search``
-======================
+``binary_search<>``
+===================
 
 .. contents::
    :local:

@@ -400,7 +400,7 @@ Standard Template Library: Container Templates
 * :doc:`/trainings/material/soup/cxx03/exercises-userdb/userdb-vector/exercise`
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
 * :doc:`/trainings/material/soup/cxx03/060-stl/030-searching/topic`
-* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/topic`
+* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/group`
 
 2022-01-31
 ----------

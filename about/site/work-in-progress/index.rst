@@ -4,7 +4,6 @@ Work in Progress
 .. toctree::
    :maxdepth: 1
 
-   cxx
    web
    python-training
    stacks

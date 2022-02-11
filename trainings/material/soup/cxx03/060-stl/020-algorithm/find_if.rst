@@ -4,7 +4,7 @@
 .. include:: <mmlalias.txt>
 
 
-``std::find_if``
+``find_if<>``
 ================
 
 .. contents::

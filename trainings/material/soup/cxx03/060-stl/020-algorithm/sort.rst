@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-``std::sort``
-=============
+``sort<>``
+==========
 
 .. contents::
    :local:

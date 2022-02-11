@@ -14,18 +14,26 @@ Structural
 STL, Containers and Algorithms
 ------------------------------
 
+* :doc:`/trainings/material/soup/cxx03/060-stl/030-searching/topic`:
+  split out into new dedicated topics, together with live code
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/topic`: bring together with new map topic
+* multimap? make UserDB_Map exercise refer to it
+
 Algorithms
 ..........
 
 * Add documentation links to cplusplus.com *and* cppreference.com
+
+  .. sidebar:: Documentation
+  
+     * `std::list <https://en.cppreference.com/w/cpp/container/list>`__
+       @ `cppreference.com <https://cppreference.com>`__
+     * `std::list <http://www.cplusplus.com/reference/list/list/>`__ @
+       `cplusplus.com <https://cplusplus.com>`__
+
 * Add dependencies
 * Lose a few words on each (most contain only code)
 * ``std::lower_bound``?
-
-OO
-...
-
-Make an exercise out of ``UserDB``/``UserDB_Vector``/``UserDB_Map``
 
 Containers
 ..........
@@ -34,6 +42,8 @@ Containers
   https://github.com/jfasch/2021-12-06/blob/main/live-hacking/vector.cpp
 * ``std::map<>``:
   https://github.com/jfasch/2021-12-06/blob/main/live-hacking/map.cpp
+* ``std::multimap<>``:
+  https://github.com/jfasch/2021-12-06/blob/main/live-hacking/multimap.cpp
 
 Exercise: Reverse a String
 ..........................
@@ -43,6 +53,11 @@ Exercise: Reverse a String
   (in-place). https://github.com/jfasch/2021-12-06/blob/main/live-hacking/reverse-string-reverse.cpp
 * ``std::reverse_copy`` - DOES NOT
   ALLOCATE!. https://github.com/jfasch/2021-12-06/blob/main/live-hacking/reverse-string-reverse-copy.cpp
+
+OO
+--
+
+Make an exercise out of ``UserDB``/``UserDB_Vector``/``UserDB_Map``
 
 Operator Overloading
 --------------------
@@ -146,7 +161,7 @@ Miscellaneous
 Complete Transcription of C++11
 ...............................
 
-Many of the chapter from the LaTex deck haven't yet been transcribed.
+Many of the chapters from the LaTex deck haven't yet been transcribed.
 
 Dependencies
 ............

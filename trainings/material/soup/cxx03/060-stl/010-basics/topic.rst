@@ -4,8 +4,8 @@
    :dependencies: cxx03.templates.class_templates
 
 
-Basics
-======
+Standard Template Library: Basics
+=================================
 
 Containers, Iterators, Algorithms
 ---------------------------------

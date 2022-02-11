@@ -1,14 +1,26 @@
+.. ot-topic:: cxx03.stl.sequential_containers.vector
+   :dependencies: cxx03.stl.sequential_containers.basics
+
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx03.stl.sequential_containers
-   :dependencies: cxx03.stl.searching
+
+``vector<>``
+============
+
+.. sidebar:: Documentation
+  
+   * `std::vector <https://en.cppreference.com/w/cpp/container/vector>`__
+     @ `cppreference.com <https://cppreference.com>`__
+   * `std::vector
+     <http://www.cplusplus.com/reference/vector/vector/>`__ @
+     `cplusplus.com <https://cplusplus.com>`__
+
+.. contents::
+   :local:
 
 
-Sequential Containers
-=====================
-
-Characteristics of ``std::vector<>``
-------------------------------------
+Characteristics
+---------------
 
 ``std::vector<>`` is an efficient sequential container because ...
 
@@ -22,8 +34,8 @@ But ...
 * Insertion at arbitrary position is slow
 * |longrightarrow| Unwanted copies
 
-``std::vector<>``: Modification at the Back
--------------------------------------------
+Modification at the Back
+------------------------
 
 .. list-table::
 
@@ -42,8 +54,8 @@ But ...
 
        .. image:: 40-35-00-vector-push-back.dia
 
-``std::vector<>``: Insertion
-----------------------------
+Insertion
+---------
 
 .. list-table::
 
@@ -64,20 +76,8 @@ But ...
 
        .. image:: 40-35-00-vector-insert.dia
 
-``std::list<>``: Insertion and Deletion
----------------------------------------
+Example
+-------
 
-.. list-table::
-
-   * * * Insertion at arbitrary position
-
-         * Pointer rearrangement |longrightarrow| constant time
-
-       * Deletion at arbitrary position
-
-	 * Pointer rearrangement |longrightarrow| constant time
-
-     * 
-
-       .. image:: 40-35-00-list.dia
-
+.. literalinclude:: code/vector.cpp
+   :caption: :download:`code/vector.cpp`

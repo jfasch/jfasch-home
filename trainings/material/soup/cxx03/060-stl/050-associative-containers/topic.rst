@@ -1,7 +1,6 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: cxx03.stl.associative_containers
-   :dependencies: cxx03.stl.sequential_containers
 
 
 Associative Containers

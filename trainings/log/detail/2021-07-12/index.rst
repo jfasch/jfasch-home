@@ -181,7 +181,7 @@ Regular Topics
   * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
   * :doc:`/trainings/material/soup/cxx03/060-stl/030-searching/topic`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/topic`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/group`
   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/topic`
 
 Toolchain: C/C++ Build (How Complicated Can Things Be?)

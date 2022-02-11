@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-``std::for_each``
-=================
+``for_each<>``
+==============
 
 .. contents::
    :local:
