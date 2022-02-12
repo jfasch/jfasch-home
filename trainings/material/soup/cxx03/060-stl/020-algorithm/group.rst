@@ -18,6 +18,9 @@ Basic Algorithms
 
    for_each
    copy
+   reverse
+   reverse_copy
+   find
    find_if
 
 Sorted Arrays
@@ -28,6 +31,7 @@ Sorted Arrays
 
    sort
    binary_search
+   lower_bound
 
 
 Dependencies

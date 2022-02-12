@@ -55,6 +55,6 @@ Algorithm: ``std::sort``, custom comparison
 Live Hacking
 ------------
 
-.. literalinclude:: sort.cpp
-   :caption: :download:`sort.cpp`
+.. literalinclude:: code/sort.cpp
+   :caption: :download:`code/sort.cpp`
    :language: c++

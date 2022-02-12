@@ -18,6 +18,16 @@
 .. contents::
    :local:
 
-.. literalinclude:: copy.cpp
-   :caption: :download:`copy.cpp`
+Usage
+-----
+
+.. attention::
+
+   Does not allocate |longrightarrow| *undefined behavior!*
+
+Live Hacking
+------------
+
+.. literalinclude:: code/copy.cpp
+   :caption: :download:`code/copy.cpp`
    :language: c++

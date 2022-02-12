@@ -16,6 +16,7 @@ Contents
    sum-integers-from-stdin/exercise
    american-flag/exercise
    reverse-string/exercise
+   reverse-string/solution
 
 Graph
 -----

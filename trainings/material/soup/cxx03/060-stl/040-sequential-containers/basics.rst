@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: cxx03.stl.sequential_containers.basics
-   :dependencies: cxx03.stl.searching
+   :dependencies: cxx03.stl.basics
 
 
 Sequential Containers

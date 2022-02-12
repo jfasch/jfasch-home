@@ -10,40 +10,21 @@ Structural
 * Move C++03 and C++11, and "C++: Miscellaneous Live-Hacking" into new
   group, "C++"
 * *Depend* c++11 on c++03, topic by topic
+* Bring pieces of :doc:`/trainings/material/soup/cxx/group` to where
+  they belong
 
 STL, Containers and Algorithms
 ------------------------------
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/030-searching/topic`:
-  split out into new dedicated topics, together with live code
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/topic`: bring together with new map topic
-* multimap? make UserDB_Map exercise refer to it
-
-Algorithms
-..........
-
-* Add documentation links to cplusplus.com *and* cppreference.com
-
-  .. sidebar:: Documentation
-  
-     * `std::list <https://en.cppreference.com/w/cpp/container/list>`__
-       @ `cppreference.com <https://cppreference.com>`__
-     * `std::list <http://www.cplusplus.com/reference/list/list/>`__ @
-       `cplusplus.com <https://cplusplus.com>`__
-
 * Add dependencies
-* Lose a few words on each (most contain only code)
-* ``std::lower_bound``?
 
-Containers
-..........
+**Misc:**
 
-* ``std::vector<>``:
-  https://github.com/jfasch/2021-12-06/blob/main/live-hacking/vector.cpp
-* ``std::map<>``:
-  https://github.com/jfasch/2021-12-06/blob/main/live-hacking/map.cpp
-* ``std::multimap<>``:
-  https://github.com/jfasch/2021-12-06/blob/main/live-hacking/multimap.cpp
+* make UserDB_Map exercise refer to
+  :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/multimap`
+* extract back-insert-iterator thing, and link to
+  :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/copy`,
+  :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/reverse_copy`
 
 Exercise: Reverse a String
 ..........................

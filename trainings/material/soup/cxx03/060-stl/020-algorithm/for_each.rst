@@ -22,6 +22,6 @@
 Live Hacking
 ------------
 
-.. literalinclude:: for_each.cpp
-   :caption: :download:`for_each.cpp`
+.. literalinclude:: code/for_each.cpp
+   :caption: :download:`code/for_each.cpp`
    :language: c++
