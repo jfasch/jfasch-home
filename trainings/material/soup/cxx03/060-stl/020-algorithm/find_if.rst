@@ -4,6 +4,15 @@
 .. include:: <mmlalias.txt>
 
 
+.. sidebar:: Documentation
+
+   * `std::find_if
+     <https://en.cppreference.com/w/cpp/algorithm/find>`__ @
+     `cppreference.com <https://cppreference.com>`__
+   * `std::find_if
+     <http://www.cplusplus.com/reference/algorithm/find_if/>`__ @
+     `cplusplus.com <https://cplusplus.com>`__
+
 ``find_if<>``
 ================
 

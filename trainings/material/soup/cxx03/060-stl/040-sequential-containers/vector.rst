@@ -4,9 +4,6 @@
 .. include:: <mmlalias.txt>
 
 
-``vector<>``
-============
-
 .. sidebar:: Documentation
   
    * `std::vector <https://en.cppreference.com/w/cpp/container/vector>`__
@@ -14,6 +11,9 @@
    * `std::vector
      <http://www.cplusplus.com/reference/vector/vector/>`__ @
      `cplusplus.com <https://cplusplus.com>`__
+
+``vector<>``
+============
 
 .. contents::
    :local:

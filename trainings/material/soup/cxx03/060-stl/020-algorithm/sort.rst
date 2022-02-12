@@ -4,6 +4,14 @@
 .. include:: <mmlalias.txt>
 
 
+.. sidebar:: Documentation
+
+   * `std::sort <https://en.cppreference.com/w/cpp/algorithm/sort>`__
+     @ `cppreference.com <https://cppreference.com>`__
+   * `std::sort
+     <http://www.cplusplus.com/reference/algorithm/sort/>`__ @
+     `cplusplus.com <https://cplusplus.com>`__
+
 ``sort<>``
 ==========
 

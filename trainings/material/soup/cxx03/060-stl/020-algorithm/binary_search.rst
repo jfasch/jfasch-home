@@ -4,6 +4,14 @@
 .. include:: <mmlalias.txt>
 
 
+.. sidebar:: Documentation
+
+   * `std::binary_search <https://en.cppreference.com/w/cpp/algorithm/binary_search>`__
+     @ `cppreference.com <https://cppreference.com>`__
+   * `std::binary_search
+     <http://www.cplusplus.com/reference/algorithm/binary_search/>`__
+     @ `cplusplus.com <https://cplusplus.com>`__
+
 ``binary_search<>``
 ===================
 

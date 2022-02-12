@@ -4,8 +4,19 @@
 .. include:: <mmlalias.txt>
 
 
+.. sidebar:: Documentation
+
+   * `std::copy <https://en.cppreference.com/w/cpp/algorithm/copy>`__
+     @ `cppreference.com <https://cppreference.com>`__
+   * `std::copy
+     <http://www.cplusplus.com/reference/algorithm/copy/>`__ @
+     `cplusplus.com <https://cplusplus.com>`__
+
 ``copy<>``
 ==========
+
+.. contents::
+   :local:
 
 .. literalinclude:: copy.cpp
    :caption: :download:`copy.cpp`
