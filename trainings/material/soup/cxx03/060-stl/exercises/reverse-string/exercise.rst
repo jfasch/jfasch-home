@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx03.exercises_misc.reverse_string
+.. ot-exercise:: cxx03.stl.exercises.reverse_string.exercise
 
 .. include:: <mmlalias.txt>
 

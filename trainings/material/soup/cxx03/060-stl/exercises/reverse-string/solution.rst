@@ -1,8 +1,7 @@
-.. ot-topic:: cxx03.exercises_misc.reverse_string_solution
-   :dependencies: cxx03.exercises_misc.reverse_string,
+.. ot-topic:: cxx03.stl.exercises.reverse_string.solution
+   :dependencies: cxx03.stl.exercises.reverse_string.exercise,
 		  cxx03.stl.algorithm.reverse,
 		  cxx03.stl.algorithm.reverse_copy
-
 
 .. include:: <mmlalias.txt>
 

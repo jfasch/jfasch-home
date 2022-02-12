@@ -18,6 +18,8 @@ Topics
    040-sequential-containers/group
    050-associative-containers/group
 
+   exercises/group
+
 Dependencies
 ------------
 	      

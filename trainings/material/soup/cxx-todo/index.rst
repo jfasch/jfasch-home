@@ -26,15 +26,6 @@ STL, Containers and Algorithms
   :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/copy`,
   :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/reverse_copy`
 
-Exercise: Reverse a String
-..........................
-
-* Naive. https://github.com/jfasch/2021-12-06/blob/main/live-hacking/reverse-string-naive.cpp
-* ``std::reverse<>``
-  (in-place). https://github.com/jfasch/2021-12-06/blob/main/live-hacking/reverse-string-reverse.cpp
-* ``std::reverse_copy`` - DOES NOT
-  ALLOCATE!. https://github.com/jfasch/2021-12-06/blob/main/live-hacking/reverse-string-reverse-copy.cpp
-
 OO
 --
 
