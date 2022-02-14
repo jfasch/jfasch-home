@@ -74,8 +74,8 @@ Scheduling: Exam Questions
 * How does a CPU become available/free for another task to run on?
   (Wrong answers are subtracted from correct answers.)
 
-  * By *preemption*: the scheduler interrupts it in favor of another
-    runnable task.
+  * By *preemption*: the scheduler interrupts a running task in favor
+    of another (runnable) task.
   * *Voluntarily*: the task puts itself to sleep by declaring to the
     kernel that it has to wait for something.
   * The CPU is signaled (by an inter-processor interrupt) by another

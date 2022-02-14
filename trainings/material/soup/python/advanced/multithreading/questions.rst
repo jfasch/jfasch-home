@@ -14,14 +14,14 @@ Multithreading: Exam Questions
     events that happen while a system is running.
   * A thread's memory is isolated from all other threads in the
     system.
-  * When a program starts, the process is made of one initial thread,
-    the *main thread*
+  * When a program starts, the process is made up of one initial
+    thread, the *main thread*
   * Threads are a way of achieving *parallel execution* within the
     same address space.
 
 * What can happen when two threads modify the same integer at the same
   time (for example using a plain "+" operator in most programming
-  languages)?
+  languages)? (One answer.)
 
   * One of the modifications might be lost.
   * Everything will be ok.
@@ -31,10 +31,9 @@ Multithreading: Exam Questions
 
   * Two or more threads execute a loop, and it is not entirely clear
     which one finishes first.
-  * Two or more thread access the same data at the same time, without
-    providing any protection for potentially overlapping non-atomic
-    operations.
-  * 
+  * It is a race condition if two or more threads access the same data
+    at the same time, without providing any protection for potentially
+    overlapping non-atomic operations.
 
 * What device is usually used to prevent race conditions? (One
   answer.)
