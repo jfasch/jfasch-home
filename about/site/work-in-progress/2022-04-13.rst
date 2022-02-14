@@ -1,5 +1,7 @@
-Clean Coding Seminar
-====================
+Agenda: Seminar on Clean Coding (2022-04-13)
+============================================
+
+
 
 Objects? Why?
 -------------

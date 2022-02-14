@@ -35,8 +35,3 @@ Read: an arrow ``A`` |longrightarrow| ``B`` means that topic ``A``
 
 .. ot-graph::
    :entries: ecproposal.ec1
-
-Stundenplan
------------
-
-:doc:`Hier ... <2021-SS-Stundenplan>`

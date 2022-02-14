@@ -7,9 +7,6 @@ Exercises: User Database
 .. contents::
    :local:
 
-Contents
---------
-
 .. toctree:: 
    :maxdepth: 1
 
@@ -24,9 +21,6 @@ Contents
    userdb-search/exercise
    userdb-search-find_if/exercise
    userdb-search-notfound-exception/exercise
-
-Graph
------
 
 .. ot-graph::
    :entries: cxx03.exercises_userdb

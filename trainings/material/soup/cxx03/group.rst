@@ -32,9 +32,6 @@ Exercises
    exercises-userdb/group
    exercises-misc/group
 
-Group Description
------------------
-	      
 .. ot-graph::
    :entries: cxx03
 

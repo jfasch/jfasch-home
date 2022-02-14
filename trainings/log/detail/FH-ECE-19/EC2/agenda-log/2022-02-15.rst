@@ -1,0 +1,16 @@
+.. include:: <mmlalias.txt>
+
+
+2022-02-15
+==========
+
+.. contents::
+   :local:
+
+Project Management
+------------------
+
+* Switches?
+
+  * Lukas?
+  * Kornberger/Kraker
