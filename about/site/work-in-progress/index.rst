@@ -15,4 +15,4 @@ Work in Progress
    fh-joanneum/index
    project-xxx/index
    packaging/index
-   2022-04-13
+   2022-04-13/index
