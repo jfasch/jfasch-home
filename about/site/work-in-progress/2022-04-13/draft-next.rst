@@ -7,6 +7,10 @@ Agenda (Version 2022-02-16)
 .. contents::
    :local:
 
+**Changes**
+
+* Add section on "Code Structure"
+
 Introduction: Clean Code? What is that?
 ---------------------------------------
 
@@ -75,6 +79,20 @@ Interfaces, Implementations, and Design Patterns
     *Proxy*, *Composite* are the most understandable).
   * Mix coding with UML whiteboard drawings, this gives a gentle
     introduction.
+
+Code Structure
+--------------
+
+* What's a "module"?
+* *Dependency management*
+
+  * Modules depend on others
+  * Often the *why* is unknown |longrightarrow| "just happened"
+  * *Dependency Inversion*: depending on *interfaces* rather than
+    *implementations*
+  * ``cmake --graphviz=...``
+
+* Road to hell: *cyclic dependencies* and *global variables*
 
 Requirements Engineering: *Boring* |longrightarrow| Unit Testing
 ----------------------------------------------------------------

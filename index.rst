@@ -52,7 +52,7 @@ Schulung
   Version Control
 * :doc:`Design and Architecture <trainings/repertoire/design-patterns>`
 
-:doc:`More ... </trainings/index>`.
+:doc:`More ... </trainings/index>`
 
 Entwicklung
 -----------
