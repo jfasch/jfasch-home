@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda (Version 2022-02-16)
-===========================
+Agenda (Sent Out 2022-02-16)
+============================
 
 .. contents::
    :local:

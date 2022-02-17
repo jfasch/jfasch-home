@@ -1,67 +1,14 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: c.performance.computebound
    :dependencies: c.performance.introduction
 
-Compute Bound Code
-==================
+.. include:: <mmlalias.txt>
 
-.. https://class.coursera.org/compilers/lecture
-.. http://en.wikibooks.org/wiki/Compiler_Construction/Optimization
-.. http://en.wikipedia.org/wiki/Optimizing_compiler#Optimization_techniques_2
-..
-.. http://wiki.gentoo.org/wiki/GCC_optimization
-.. --------------------------------------------
-.. 
-..     -O0: This level (that's the letter "O" followed by a zero) turns
-..     off optimization entirely and is the default if no -O level is
-..     specified in CFLAGS or CXXFLAGS. This reduces compilation time and
-..     can improve debugging info, but some applications will not work
-..     properly without optimization enabled. This option is not
-..     recommended except for debugging purposes.
-.. 
-..     -O1: This is the most basic optimization level. The compiler will
-..     try to produce faster, smaller code without taking much
-..     compilation time. It's pretty basic, but it should get the job
-..     done all the time.
-.. 
-..     -O2: A step up from -O1. This is the recommended level of
-..     optimization unless you have special needs. -O2 will activate a
-..     few more flags in addition to the ones activated by -O1. With -O2,
-..     the compiler will attempt to increase code performance without
-..     compromising on size, and without taking too much compilation
-..     time.
-.. 
-..     -O3: This is the highest level of optimization possible. It
-..     enables optimizations that are expensive in terms of compile time
-..     and memory usage. Compiling with -O3 is not a guaranteed way to
-..     improve performance, and in fact in many cases can slow down a
-..     system due to larger binaries and increased memory usage. -O3 is
-..     also known to break several packages. Therefore, using -O3 is not
-..     recommended.
-.. 
-..     -Os: This option will optimize your code for size. It activates
-..     all -O2 options that don't increase the size of the generated
-..     code. It can be useful for machines that have extremely limited
-..     disk storage space and/or have CPUs with small cache sizes.
-.. 
-..     -Og: In GCC 4.8, a new general optimization level, -Og, has been
-..     introduced. It addresses the need for fast compilation and a
-..     superior debugging experience while providing a reasonable level
-..     of runtime performance. Overall experience for development should
-..     be better than the default optimization level -O0. Note that -Og
-..     does not imply -g, it simply disables optimizations that may
-..     interfere with debugging.
-.. 
-..     -Ofast: New in GCC 4.7, consists of -O3 plus -ffast-math,
-..     -fno-protect-parens, and -fstack-arrays. This option breaks strict
-..     standards compliance, and is not recommended for use.
-.. 
-.. As previously mentioned, -O2 is the recommended optimization level. If
-.. package compilation fails and you aren't using -O2, try rebuilding
-.. with that option. As a fallback option, try setting your CFLAGS and
-.. CXXFLAGS to a lower optimization level, such as -O1 or even -O0 -g2
-.. -ggdb (for error reporting and checking for possible problems).
+
+Optimizations: Compute Bound Code
+=================================
+
+.. contents::
+   :local:
 
 Many Ways of Optimization
 -------------------------
@@ -166,7 +113,8 @@ Register Allocation (2)
 **GCC ...**
 
 * ``-fira-*`` (for Integrated Register Allocator)
-* RTFM please
+* `RTFM please
+  <https://gcc.gnu.org/onlinedocs/gccint/RTL-passes.html>`__
 * A *lot* of tuning opportunities for those who care
 
 Peephole Optimization
@@ -342,3 +290,16 @@ GCC: Optimization "Levels"
   size
 * ``-Og`` (since GCC 4.8): "developer mode"; turns on options that
   don't interfere with debugging or compilation time
+
+Further Reading
+---------------
+
+* `Wikipedia: Optimizing compiler
+  <https://en.wikipedia.org/wiki/Optimizing_compiler>`__
+* `GCC optimization <https://wiki.gentoo.org/wiki/GCC_optimization>`__
+* `Compiler Construction/Optimization
+  <http://en.wikibooks.org/wiki/Compiler_Construction/Optimization>`__
+* `Steven S. Muchnik: Advanced Compiler Design and Implementation
+  <https://www.amazon.de/Advanced-Compiler-Design-Implementation-Muchnick/dp/1558603204>`__
+* `John R. Levine: Linkers and Loaders
+  <https://www.amazon.de/Linkers-Loaders-John-R-Levine/dp/1558604960>`__

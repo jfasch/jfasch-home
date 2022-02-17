@@ -1,15 +1,15 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda (Version 2022-02-16)
+Agenda (Draft, Unpublished)
 ===========================
 
 .. contents::
    :local:
 
-**Changes**
+.. note:: **Changes from** :doc:`draft-2022-02-16`
 
-* Add section on "Code Structure"
+   * Add section on "Code Structure"
 
 Introduction: Clean Code? What is that?
 ---------------------------------------

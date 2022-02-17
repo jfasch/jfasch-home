@@ -1,10 +1,14 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: c.performance.memory
    :dependencies: c.performance.computebound
 
-Memory Optimizations
-====================
+.. include:: <mmlalias.txt>
+
+
+Optimizations: Memory Optimizations
+===================================
+
+.. contents::
+   :local:
 
 Memory: Caches
 --------------
