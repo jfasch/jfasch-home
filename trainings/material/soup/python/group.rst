@@ -58,7 +58,8 @@ links, and more. Here is a representative list of such transcripts,
 * :doc:`/trainings/log/detail/2020-09-07/index`. Very advanced;
   accompanied by a lot of improvised live-hacking.
 * :doc:`/trainings/log/detail/2019-11-12/index`. Fun beating MATLAB
-  with NumPy, for a team who wanted to know if that is possible.
+  with `NumPy <https://numpy.org/>`__, for a team who wanted to know
+  if that is possible.
 
 More Information
 ----------------

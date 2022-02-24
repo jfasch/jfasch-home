@@ -616,6 +616,20 @@ Raymond Hettinger
 	     allowfullscreen>
      </iframe>
 
+* `Raymond Hettinger - Modern Dictionaries
+  <https://youtu.be/p33CVV29OG8>`__. **Raymond Hettinger**, explaining
+  how dictionaries are implemented.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/p33CVV29OG8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
 * `Raymond Hettinger, Keynote on Concurrency, PyBay 2017 <https://www.youtube.com/watch?v=9zinZmE3Ogk>`__:
   **Raymond Hettinger** covering most if not all aspects and
   possiblities of concurrency. Very informative, very concise,

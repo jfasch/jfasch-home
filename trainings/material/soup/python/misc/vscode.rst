@@ -9,7 +9,7 @@ text editor, not an IDE. Together with its configurabilty, it can be
 turned into one, but by itself does not dictate anything upon the
 user.
 
-You trainer is only capable of using fancy editing frameworks in a
+Your trainer is only capable of using fancy editing frameworks in a
 limited way (he's an Emacs addict, and he will use that editor during
 live-hacking sessions).
 
