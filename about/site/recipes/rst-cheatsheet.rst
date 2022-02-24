@@ -76,12 +76,21 @@ External Links
 Section References
 ..................
 
+References to a section in the middle of a document requires
+
+* Adding a section label
+* Referring to that label using the ``:ref:`` role (either from inside
+  the same document, or from any other document)
+
+Example follows ...
+
 .. _dummy-section:
 
 Dummy Section That We Refer To
 ``````````````````````````````
 
-This section is referred to by the next section.
+This section is referred to by the next section. It requires a section
+label, like so:
 
 .. code-block:: rst
 
@@ -94,6 +103,9 @@ This section is referred to by the next section.
 
 Another Section Contains a Link To The Referred Section Above
 `````````````````````````````````````````````````````````````
+
+One refers to the label we created in the :ref:`section above
+<dummy-section>` using the ``:ref:`` role:
 
 .. list-table::
    :align: left
