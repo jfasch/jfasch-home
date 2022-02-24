@@ -11,8 +11,47 @@ Commandline Arguments (``sys.argv``)
 .. contents::
    :local:
 
-Commandline Arguments
----------------------
+Operating Systems and Programs
+------------------------------
+
+* *The Shell* is just one way to start a program
+
+  * Generally speaking, programs are started by other programs (the
+    shell is just an ordinary program, after all)
+  * |longrightarrow| service manager, Cron-Jobs
+
+* *Deal* between OS and program
+
+  * Argument vector (|longrightarrow| ``argv``)
+  * Environment variables
+  * Exit status
+
+.. list-table::
+   :align: left
+
+   * * .. code-block:: console
+
+          $ ls -l
+
+     * Argument vector: ``['ls', '-l']``
+
+Commandline Arguments in Python
+-------------------------------
+
+.. literalinclude:: args.py
+   :caption: :download:`args.py`
+   :language: python
+
+.. list-table::
+   :align: left
+
+   * * .. command-output:: python args.py Joerg Faschingbauer
+          :cwd: .
+
+     * Argument vector: ``['args.py', 'Joerg', 'Faschingbauer']``
+
+Cosmetics: Rudimentary Argument Parsing
+---------------------------------------
 
 .. sidebar:: Further information: ``argparse``
 
@@ -20,20 +59,10 @@ Commandline Arguments
    (:doc:`documentation <python:library/argparse>`) provides further
    functionality to parse commandline parameters.
 
-**Python is lean:**
-
-* Very few *built-in* functionality (compared to other languages)
-* Extension through *modules*
-* First (and most used): ``sys``
-
-.. literalinclude:: args.py
-   :caption: :download:`args.py`
+.. literalinclude:: args-parsing.py
+   :caption: :download:`args-parsing.py`
    :language: python
 
-.. code-block:: console
-
-   $ python args.py one argument
-   ['args.py', 'one', 'argument']
-   0: args.py
-   1: one
-   2: argument
+.. command-output:: python args-parsing.py Joerg
+   :cwd: .
+   :returncode: 1

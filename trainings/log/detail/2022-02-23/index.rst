@@ -33,7 +33,6 @@ Day 1
 
 * :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/misc/vscode`
-
 * :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
@@ -46,6 +45,24 @@ Day 1
 
 Day 2
 .....
+
+* Quick walkthrough of data structures and algorithms
+
+  .. list-table::
+     :align: left
+
+     * * .. image:: oh-notation.png
+            :scale: 40%
+       * Big-O Notation
+     * * .. image:: binarytree.png
+            :scale: 40%
+       * (Unbalanced) binary tree
+     * * .. image:: binarysearch.png
+            :scale: 40%
+       * Binary search in a *sorted* array
+     * * .. image:: hashtable.png
+            :scale: 40%
+       * Hash table (very basic)
 
 * :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
 * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
