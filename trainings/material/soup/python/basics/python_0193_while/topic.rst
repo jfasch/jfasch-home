@@ -55,6 +55,21 @@ Looping Constructs
        sum += i
        i += 1
 
+.. note:: 
+
+   **Pythonicity**
+
+   This example is rather contrived. One would rather use the built-in
+   ``sum()`` function (`documentation here
+   <https://docs.python.org/3/library/functions.html#sum>`__),
+   combined with the ``range()`` function (`documentation here
+   <https://docs.python.org/3/library/stdtypes.html#typesseq-range>`__)
+   to do the same.
+
+   .. code-block:: python
+		   
+      sum(range(1,101))
+
 ``break`` and ``continue``
 --------------------------
 
@@ -64,19 +79,11 @@ Looping Constructs
 * ``continue`` ends the current loop and continues with the next -
   evaluating the condition
 
-.. code-block:: python
+*For example*: roll dice, until it shows six eyes ...
 
-   while True:
-       line = sys.stdin.readline()
-       for c in line: print(c, ord(c))
-       if len(line) == 0:
-           # eof seen
-           break
-       if line.strip() == '':
-           # ignore empty lines
-           continue
-   
-       # ... do something ...
+.. literalinclude:: dice-infinite.py
+   :language: python
+   :caption: :download:`dice-infinite.py`
 
 Esoteric Feature: ``while/else``
 --------------------------------
@@ -88,13 +95,18 @@ Esoteric Feature: ``while/else``
 * Natural ``while`` loop termination: loop condition evaluates to
   ``False``
 
-.. code-block:: python
+*For example*: roll dice six times. Win when it shows six eyes at
+least once, lose when not.
 
-   i = 0
-   while i < 100:
-       i += 1
-       number = random.randrange(0,1001)
-       if number == 42:
-           break
-   else:
-       print('no answer found')
+.. list-table::
+   :align: left
+   :header-rows: 1
+
+   * * Non-pythonic (using a flag)
+     * Pythonic (``else`` on ``while``)
+   * * .. literalinclude:: dice-sixtimes-flag.py
+          :language: python
+	  :caption: :download:`dice-sixtimes-flag.py`
+     * .. literalinclude:: dice-sixtimes-else.py
+          :language: python
+	  :caption: :download:`dice-sixtimes-else.py`
