@@ -41,7 +41,10 @@ Day 1
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
-* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+* Exercise:
+  :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+  (Solution: `mixed-list.py
+  <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/mixed-list.py>`__)
 
 Day 2
 .....
@@ -63,9 +66,24 @@ Day 2
      * * .. image:: hashtable.png
             :scale: 40%
        * Hash table (very basic)
+     * * .. raw:: html
+
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/p33CVV29OG8" 
+       		    title="YouTube video player" 
+       		    frameborder="0" 
+       		    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+       		    allowfullscreen>
+            </iframe>
+       * `Raymond Hettinger - Modern Dictionaries
+	 <https://youtu.be/p33CVV29OG8>`__. **Raymond Hettinger**,
+	 explaining how dictionaries are implemented.
 
 * :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
-* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+* Exercise:
+  :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+  (Solution: `digit.py
+  <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/digit.py>`__)
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
@@ -73,13 +91,24 @@ Day 2
 * Control Flow and Iteration
 
   * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+  * Exercise:
+    :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+    (Solution: `maximum.py
+    <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/maximum.py>`__)
   * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
   * Exercise:
-    :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+  :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+  (Solution: `prime-while.py
+  <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/prime-while.py>`__)
   * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+  * Exercise:
+  :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+  (Solution: `prime-for.py
+  <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/prime-for.py>`__)
+
+Day 3
+.....
 
 * Functions
 
@@ -88,3 +117,27 @@ Day 2
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
 
+* Short generators demo?
+* Miscellaneous
+
+  * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+  * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
+
+* File I/O
+
+  * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+
+* Into the wild: do something with GIS data
+
+  * Sample data `here
+    <https://github.com/jfasch/2022-02-23/tree/main/the-wild/data>`__
+  * :doc:`/trainings/material/soup/python/misc/csv/topic`
+  * `Open Source Geospatial Foundation
+    <https://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation>`__
+  * `GDAL Project <https://pypi.org/project/GDAL/>`__ on `PyPI <https://pypi.org/>`__
+  * `PyPI <https://pypi.org/>`__
+
+    * :doc:`/trainings/material/soup/python/swdev/pip/topic`
+    * :doc:`/trainings/material/soup/python/swdev/venv/topic`
