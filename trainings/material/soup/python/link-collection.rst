@@ -592,6 +592,8 @@ Raymond Hettinger
   Hettinger**, reiterating his favorite phrase: "There must be a
   better way". (Hettinger is a "Python Core Developer".)
 
+  (He uses Python 2 though.)
+
   .. raw:: html
 
      <iframe width="560" height="315" 

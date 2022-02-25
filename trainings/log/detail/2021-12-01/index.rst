@@ -4,12 +4,10 @@
 Python Advanced (2021-12-01 - 2021-12-03)
 =========================================
 
+.. contents::
+   :local:
+
 .. sidebar::
-
-   **Contents**
-
-   .. contents::
-      :local:
 
    **Material**
 

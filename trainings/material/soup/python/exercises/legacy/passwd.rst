@@ -17,6 +17,10 @@ Exercise: Parsing ``/etc/passwd``
 Requirement
 -----------
 
+.. sidebar:: Sample ``/etc/passwd`` file
+
+   :download:`Download /etc/passwd <passwd>`
+
 Write a program ``getuser.py`` that takes a filename and one or more
 usernames from the commandline, looks them up in ``/etc/passwd``, and
 prints out the user records one after the other.

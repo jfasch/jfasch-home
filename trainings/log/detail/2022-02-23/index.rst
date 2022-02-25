@@ -3,6 +3,11 @@
 Python Basics (2022-02-23 - 2022-02-25)
 =======================================
 
+.. toctree::
+   :hidden:
+
+   pcap-exam-syllabus
+
 .. sidebar:: *Training Information*
 
    **Material**
@@ -15,6 +20,7 @@ Python Basics (2022-02-23 - 2022-02-25)
      * :download:`download <Notebook.ipynb>`
 
    * `Github Repository <https://github.com/jfasch/2022-02-23>`__
+   * :doc:`pcap-exam-syllabus`
 
 .. toctree::
    :hidden:
@@ -25,11 +31,8 @@ Python Basics (2022-02-23 - 2022-02-25)
 .. contents::
    :local:
 
-Log
----
-
 Day 1
-.....
+-----
 
 * :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/misc/vscode`
@@ -47,7 +50,7 @@ Day 1
   <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/mixed-list.py>`__)
 
 Day 2
-.....
+-----
 
 * Quick walkthrough of data structures and algorithms
 
@@ -108,7 +111,7 @@ Day 2
     <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/prime-for.py>`__)
 
 Day 3
-.....
+-----
 
 * Functions
 
@@ -140,3 +143,154 @@ Day 3
 
     * :doc:`/trainings/material/soup/python/swdev/pip/topic`
     * :doc:`/trainings/material/soup/python/swdev/venv/topic`
+
+Further Information
+-------------------
+
+* `Book: Automate the Boring Stuff with Python (Al Sweigart)
+  <https://automatetheboringstuff.com/>`__
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__. **Raymond
+  Hettinger**, reiterating his favorite phrase: "There must be a
+  better way". (Hettinger is a "Python Core Developer".)
+
+  (He uses Python 2 though.)
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/OSGv2VnC0go" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Data Structures
+...............
+
+* `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
+  <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/W8KRzm-HUcc" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 5: Dictionaries - Working with
+  Key-Value Pairs <https://www.youtube.com/watch?v=daefaLgNkw0>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/daefaLgNkw0" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Built in Super Heroes
+  <https://www.youtube.com/watch?v=lyDLAutA88s>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ in an entertaining keynote to the
+  "PyData Chicago 2016" conference. He has a number of very good and
+  entertaining (and very advanced) videos. You have to spend an entire
+  evening with him though.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/lyDLAutA88s" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+OS Things
+.........
+
+* `Python Tutorial: OS Module - Use Underlying Operating System
+  Functionality <https://www.youtube.com/watch?v=tJxcKyFMTGo>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/tJxcKyFMTGo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Calling External Commands Using the Subprocess
+  Module <https://www.youtube.com/watch?v=2Fp1N6dof0Y>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2Fp1N6dof0Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Data Science
+............
+
+* `Solving real world data science tasks with Python Pandas!
+  <https://www.youtube.com/watch?v=eMOA1pPVUc4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/eMOA1pPVUc4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Complete Python NumPy Tutorial (Creating Arrays, Indexing, Math,
+  Statistics, Reshaping)
+  <https://www.youtube.com/watch?v=GB9ByFAIAH4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/GB9ByFAIAH4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Intro to Data Visualization in Python with Matplotlib! (line graph,
+  bar chart, title, labels, size)
+  <https://www.youtube.com/watch?v=DAQNHzOcO5A>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/DAQNHzOcO5A" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
