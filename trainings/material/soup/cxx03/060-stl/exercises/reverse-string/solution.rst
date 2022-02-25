@@ -45,4 +45,4 @@ Using ``std::reverse_copy<>``
 
 
 .. ot-graph::
-   :entries: cxx03.exercises_misc.reverse_string_solution
+   :entries: cxx03.stl.exercises.reverse_string.solution

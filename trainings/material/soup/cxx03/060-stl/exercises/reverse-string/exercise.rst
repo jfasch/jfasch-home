@@ -59,4 +59,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: cxx03.exercises_misc.reverse_string
+   :entries: cxx03.stl.exercises.reverse_string.exercise

@@ -399,7 +399,8 @@ Standard Template Library: Container Templates
 
 * :doc:`/trainings/material/soup/cxx03/exercises-userdb/userdb-vector/exercise`
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
-* :doc:`/trainings/material/soup/cxx03/060-stl/030-searching/topic`
+* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
+* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/lower_bound`
 * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/group`
 
 2022-01-31
@@ -496,7 +497,7 @@ Associative Container: ``std::map``
   * Introducing *Lambda*: `sort-lambda.cpp
     <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/functors/sort-lambda.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/topic`
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/group`
 
   Not much in there though |longrightarrow| live hacking
 
@@ -537,7 +538,7 @@ Exceptions, and Exception Handling
   <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/american-flag.cpp>`__. Slightly
   over-engineered, to show how you write your own ``operator<<()``.
 
-* :doc:`/trainings/material/soup/cxx03/exercises-misc/reverse-string/exercise`
+* :doc:`/trainings/material/soup/cxx03/060-stl/exercises/reverse-string/exercise`
 
   Solution alternatives:
 

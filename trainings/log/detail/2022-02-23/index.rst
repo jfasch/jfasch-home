@@ -3,11 +3,6 @@
 Python Basics (2022-02-23 - 2022-02-25)
 =======================================
 
-.. toctree::
-   :hidden:
-
-   pcap-exam-syllabus
-
 .. sidebar:: *Training Information*
 
    **Material**
@@ -20,7 +15,7 @@ Python Basics (2022-02-23 - 2022-02-25)
      * :download:`download <Notebook.ipynb>`
 
    * `Github Repository <https://github.com/jfasch/2022-02-23>`__
-   * :doc:`pcap-exam-syllabus`
+   * :doc:`/trainings/material/soup/python/pcap-exam`
 
 .. toctree::
    :hidden:
