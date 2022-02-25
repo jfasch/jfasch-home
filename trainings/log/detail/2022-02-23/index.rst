@@ -97,15 +97,15 @@ Day 2
     <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/maximum.py>`__)
   * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
   * Exercise:
-  :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
-  (Solution: `prime-while.py
-  <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/prime-while.py>`__)
+    :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+    (Solution: `prime-while.py
+    <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/prime-while.py>`__)
   * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
   * Exercise:
-  :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
-  (Solution: `prime-for.py
-  <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/prime-for.py>`__)
+    :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+    (Solution `prime-for.py
+    <https://github.com/jfasch/2022-02-23/blob/main/exercises/joerg/prime-for.py>`__)
 
 Day 3
 .....
@@ -113,11 +113,9 @@ Day 3
 * Functions
 
   * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
-  * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+  * Short generators demo?
 
-* Short generators demo?
 * Miscellaneous
 
   * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
@@ -128,6 +126,7 @@ Day 3
 * File I/O
 
   * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+  * :doc:`/trainings/material/soup/python/exercises/legacy/passwd`
 
 * Into the wild: do something with GIS data
 
