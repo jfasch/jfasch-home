@@ -4,6 +4,12 @@ Python Links
 .. contents::
    :local:
 
+Books
+-----
+
+* `Book: Automate the Boring Stuff with Python (Al Sweigart)
+  <https://automatetheboringstuff.com/>`__
+
 Visual Studio Code
 ------------------
 

@@ -16,8 +16,6 @@ Structural
 STL, Containers and Algorithms
 ------------------------------
 
-* Add dependencies
-
 **Misc:**
 
 * make UserDB_Map exercise refer to
