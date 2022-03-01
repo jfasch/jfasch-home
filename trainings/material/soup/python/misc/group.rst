@@ -52,7 +52,6 @@ material.
    ai/group
    mqtt/topic
    python_5550_xml_etree/topic
-   duck-typing
    context_manager/topic
    special_methods
    import
