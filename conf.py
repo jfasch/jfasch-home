@@ -40,6 +40,10 @@ extensions = [
     'sphinx.ext.intersphinx',
     'ablog',
     'nbsphinx',
+
+    # .../notebook.ipynb:: WARNING: Could not lex literal_block as "ipython3". Highlighting skipped.    
+    'IPython.sphinxext.ipython_console_highlighting',
+
     # ??? 'sphinxcontrib.fulltoc',
     'sphinxcontrib.programoutput',
     'sphinxcontrib.images',
