@@ -5,9 +5,8 @@ Python Basics (2022-02-23 - 2022-02-25)
 
 .. sidebar:: *Training Information*
 
-   **Material**
-
-   * :doc:`Python Topics </trainings/material/soup/python/group>`
+   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/group`
    * Jupyter Notebook
 
      * :doc:`Structure <notebook-wrapper>`
@@ -16,6 +15,7 @@ Python Basics (2022-02-23 - 2022-02-25)
 
    * `Github Repository <https://github.com/jfasch/2022-02-23>`__
    * :doc:`/trainings/material/soup/python/pcap-exam`
+   * Followup training to this one: :doc:`../2022-03-15/index`
 
 .. toctree::
    :hidden:
