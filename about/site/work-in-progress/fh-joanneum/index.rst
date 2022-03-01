@@ -5,4 +5,4 @@ Embedded Computing
    :maxdepth: 1
 
    2019/index
-   2020/index
+   2020/ss2022

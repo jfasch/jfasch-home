@@ -1,0 +1,280 @@
+.. include:: <mmlalias.txt>
+
+
+SS2022
+======
+
+.. contents::
+   :local:
+
+Block 1: Linux, and Working With Remote/Embedded Devices
+--------------------------------------------------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * VO
+     * KU G1
+     * KU G2
+     * #Units
+     * Topics
+   * * 2022-03-08
+     * 
+     * 
+     * 3
+     *
+
+       * **Linux Basics**
+
+         * Linux Concepts and Terminology (Transcribe first chapter
+	   from
+	   :download:`/trainings/material/pdf/010-linux-basics.pdf`)
+
+	   * Userspace vs. kernel
+	   * |longrightarrow| hardware abstractions (disks and file
+             systems, sockets, typical embedded hardware)
+	   * |longrightarrow| *"Everything is a file"*
+	   * Permissions: user and group IDs; "What's a login?"
+
+         * Shell/Commandline Intro (From
+           :download:`/trainings/material/pdf/010-linux-basics.pdf`,
+	   pimped a lot)
+
+       * **Static aspect: file system** (also from
+	 :download:`/trainings/material/pdf/010-linux-basics.pdf`)
+
+         * Current working directory (commands ``cd``, ``pwd``)
+         * Absolute and relative paths
+         * Overview of a typical Linux filesystem structure
+	   (|longrightarrow| *home*)
+	 * Commands: ``ls``, ``cp``, ``mv``, ``rm``, ``rmdir``
+	 * File system permissions
+
+       .. note::
+
+	  Request working `WSL2
+	  <https://docs.microsoft.com/en-us/windows/wsl/install>`__
+	  installation until next time around.
+
+   * * 2022-03-10
+     * 
+     * 
+     * 3
+     * * **Dynamic aspect: processes and scheduling**
+
+         * Embedded/bare-metal vs. OS
+         * Address spaces: virtual memory, memory access permissions
+         * Processes (and threads) (transcribe *and pimp* relevant
+	   sections from
+	   :download:`/trainings/material/pdf/010-linux-basics.pdf`)
+
+           * Command ``ps`` (and all its usage variants :-) )
+	   * ``/proc``
+	   * Permissions: user and group IDs
+	   * Set-UID programs; ``sudo``
+
+         * Scheduling intro
+
+           * :doc:`/trainings/material/soup/sysprog/scheduling/basics`
+           * :doc:`/trainings/material/soup/sysprog/scheduling/realtime`
+
+       * **More tools** (transcribe *and pimp* relevant sections from
+	 :download:`/trainings/material/pdf/010-linux-basics.pdf`)
+
+	 * Viewing: ``cat``, ``head``, ``tail``
+	 * Processing: ``cut``, ``grep``
+	 * Redirection, standard streams
+	 * Filtering: the *pipe*
+
+   * * 2022-03-21
+     *
+     * 
+     * 3
+     * * **Working with embedded devices**
+
+         On a cloud computer with student accounts ...
+
+         * :doc:`/trainings/material/soup/devenv/ssh/basics`
+         * :doc:`/trainings/material/soup/devenv/ssh/scp`
+         * :doc:`/trainings/material/soup/devenv/ssh/portforwarding`
+         * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
+
+       * **Development environment**
+
+	 * Jumping through hoops on Doze
+
+	   * `WSL 2 with Visual Studio Code
+	     <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
+	   * `Visual Studio Code Remote - WSL
+             <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
+	   * *Big picture*: how would this fit together with
+             remote/embedded work
+
+	 * ... or native Linux of course :-)
+
+   * * 
+     * 2022-03-22 
+     * 2022-03-24
+     * 3
+     * * **Playing with cloud computer**; exercises around following
+         topics
+
+         * SSH login
+	 * Public key generation
+	 * ``scp``
+	 * ``sshfs``: editing remote files locally
+	 * Commands, I//O redirection, pipe
+
+   * * (2022-03-24)
+
+       .. note:: Moved to 2022-02-29
+
+     * 2022-03-25
+     * *2022-02-24*
+
+       .. note:: This is ex 2022-02-29
+
+     * 3
+     * **Test**
+
+Block 2: C on Linux: Local and *Cross* Development
+--------------------------------------------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * VO
+     * KU G1
+     * KU G2
+     * #Units
+     * Topics
+   * * 2022-03-28
+     * 
+     * 
+     * 3
+     * * **Toolchain**
+
+         * Compilation, warning and error options, include path
+	 * Linkage: executables, shared libraries, static linking
+	 * Archiving: building static libraries
+	 * Automatic build: :download:`Makefiles
+           </trainings/material/pdf/040-gnu-make.pdf>`
+	 * :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+
+   * * *2022-03-29*
+
+       .. note:: This is ex 2022-02-24
+
+     * 
+     * (2022-03-29)
+
+       .. note:: Moved to 2022-02-24
+
+     * 3
+     * **Unit Testing**. One of ...
+
+       * `Unity <http://www.throwtheswitch.org/>`__
+       * `googletest <https://github.com/google/googletest/>`__
+       * `Boost.Test
+         <https://www.boost.org/doc/libs/1_78_0/libs/test/doc/html/index.html>`__
+
+       **Project Management**
+
+       Build tool support for
+
+       * Dependency management
+       * Packaging (``make release``)
+       * Unit test invocation (``make test``, `make check``, ...)
+
+   * * 
+     * 2022-04-28
+     * 2022-04-28
+     * 3
+     * Give bunch of source code, let them create a build
+   * * 2022-05-09
+     * 
+     * 
+     * 3
+     * **Cross development**
+
+       * Amazon ARM server
+       * Raspberry
+
+   * * 
+     * 2022-06-02
+     * 2022-06-02
+     * 3
+     * **Test**
+
+Block 3: C++: Local and Cross
+-----------------------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * VO
+     * KU G1
+     * KU G2
+     * #Units
+     * Topics
+   * * 2022-06-03
+     * 
+     * 
+     * 3
+     *
+   * * 
+     * 
+     * 2022-06-03
+     * 3
+     *
+   * * 
+     * 2022-06-07
+     * 
+     * 3
+     *
+   * * 2022-06-09
+     * 
+     * 
+     * 3
+     *
+   * * 
+     * 2022-06-09
+     * 2022-06-10
+     * 3
+     *
+   * * 2022-06-21
+     * 
+     * 
+     * 3
+     *
+   * * 
+     * 2022-06-27
+     * 2022-06-27
+     * 3
+     *
+   * * 
+     * 2022-06-28
+     * 2022-06-28
+     * 3
+     *
+   * * 2022-06-29
+     * 
+     * 
+     * 3
+     *
+   * * 
+     * 2022-06-30
+     * 2022-06-30
+     * 3
+     *
+   * * 
+     * 2022-07-01
+     * 2022-07-01
+     * 3
+     *
