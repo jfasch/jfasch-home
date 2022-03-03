@@ -1,15 +1,13 @@
+.. ot-topic:: linux.basics.permissions.basics
+
 .. include:: <mmlalias.txt>
 
 
-Basics: Mode, User and Group Ownership
-======================================
+Mode, User and Group Ownership
+==============================
 
 .. contents::
    :local:
-
-.. sidebar:: Topic
-
-   .. ot-topic:: linux.permissions.basics
 
 Owner and Permissions
 ---------------------
@@ -22,12 +20,28 @@ Owner and Permissions
   
 **Separate permissions for ...**
 
-* User (``u``): the owning user of the entry
-* Group (``g``): the owning group of the entry
+* User (``u``): the owning *user* of the entry
+* Group (``g``): the owning *group* of the entry
 * Others (``o``): all others
 
 A Simple Example
 ----------------
+
+.. sidebar:: Teacher's note: create that constellation (as root)
+
+   .. code-block:: console
+
+      # groupadd team
+      # useradd --groups team --home-dir /home/teammember42 --create-home teammember42
+      # usermod --append --groups team jfasch
+      $ touch tasks.csv
+      $ chmod 664 tasks.csv
+      $ chgrp team tasks.csv
+
+* Group ``team``
+* User ``jfasch``, member (among possibly others) of group ``team``
+* User ``teammember42``, also member of group ``team``
+* User ``manfromthestreet``, *not* member of group ``team``
 
 The typical ``ls -l`` output:
 
@@ -47,17 +61,17 @@ Three groups of "bits": ``rw-``, ``rw-``, ``r--``
    * * ``rw-``
      * Read- and writable for owning *user* (``jfasch``)
    * * ``rw-``
-     * Read- and writable for owning *group* (``team``)
+     * Read- and writable for (members of) owning *group* (``team``)
    * * ``r--``
      * Readable for all *others*: those who are *neither* user
        ``jfasch`` nor belong to group ``team``
 
-First column (``-``) is irrelevant (type: *regular file*)
+First column (``-``) is irrelevant (it's the type: *regular file*)
 
 Permission Check: User
 ----------------------
 
-**Can user ``jfasch`` write the file?**
+**Can user** ``jfasch`` **write the file?**
 
 * Which triplet to check?
 
@@ -70,7 +84,7 @@ Permission Check: User
 Permission Check: Group
 -----------------------
 
-**Can user ``teammember42`` write the file?**
+**Can user** ``teammember42`` **write the file?**
 
 * Which triplet to check?
 
@@ -92,7 +106,7 @@ Permission Check: Group
 Permission Check: Others
 ------------------------
 
-**Can user ``manfromthestreet`` read the file?**
+**Can user** ``manfromthestreet`` **read the file?**
 
 * Which triplet to check?
 
@@ -114,17 +128,10 @@ Permission Check: Others
     * |longrightarrow| no, ``manfromthestreet`` cannot write
     * (``manfromthestreet`` can read though)
 
+Programs: Execute Permissions
+-----------------------------
 
-
-.. .. futoaschbeidl:: jjjj
-
-
-
-
-
-
-Execute Permissions
--------------------
+**What makes a file a program?**
 
 .. code-block:: console
 
@@ -151,6 +158,51 @@ Directory Permissions
   directories along the path
 * *The right to* ``cd`` *into the directory*
 
+Shell Commands
+--------------
+
+* Permission modification (set to octal value)
+
+  .. code-block:: console
+     
+     $ chmod 755 /bin/script.sh
+
+* Permission modification (differential symbolic)
+
+  .. code-block:: console
+     
+     $ chmod u+x,g-wx,o-rwx /bin/script.sh
+
+* Group ownership modification (only root and members of the group can
+  do this)
+
+  .. code-block:: console
+
+     $ chgrp team /tmp/file
+
+* Ownership modification (only root)
+
+  .. code-block:: console
+
+     # chown jfasch /tmp/file
+
+* ``chmod``, ``chown``, and ``chgrp`` understand
+    ``-R`` for "recursive".
+
+.. note:: Documentation
+
+   .. code-block:: console
+
+      $ man 1 chmod
+      $ man 1 chgrp
+      $ man 1 chown
+
+   Online:
+
+   * ``chmod`` `here <https://linux.die.net/man/1/chmod>`__
+   * ``chgrp`` `here <https://linux.die.net/man/1/chgrp>`__
+   * ``chown`` `here <https://linux.die.net/man/1/chown>`__
+
 Permission Bits, octal
 ----------------------
   
@@ -170,112 +222,4 @@ Permission Bits, octal
    * * ``-rwxr-xr-x``
      * ``111101101``
      * ``chmod 0755 <path>``
-
-Default Permissions - ``umask``
--------------------------------
-
-**The U-Mask ...**
-
-* Bit field
-* *Subtracted* from default permissions at file/directory creation
-*  Process attribute |longrightarrow| inherited
-
-.. code-block:: console
-   :caption: ``umask`` in action
-
-   $ umask
-   0022
-   $ touch /tmp/file
-   $ ls -l /tmp/file
-
-``umask``: How Does it Work?
-----------------------------
-
-* ``umask`` *subtracted* from default permissions
-* ``umask`` is an (inherited) process attribute
-* Default permissions at file creation: ``rw-rw-rw-``
-
-.. list-table::
-   :align: left
-
-   * * Default permissions
-     * ``rw-rw-rw-``
-     * ``110 110 110``
-     * ``0666``
-   * * - U-Mask 
-     * ``----w--w-``
-     * ``000 010 010``
-     * ``0022``
-   * * **Outcome**
-     * ``rw-r--r--``
-     * ``110 100 100``
-     * ``0644``
-
-Shell Commands
---------------
-
-* Permission modification (set to octal value)
-
-  .. code-block:: console
-     
-     $ chmod 755 /bin/script.sh
-
-* Permission modification (differential symbolic)
-
-  .. code-block:: console
-     
-     $ chmod u+x,g-wx,o-rwx /bin/script.sh
-
-* Group ownership modification (only root and members of the
-  group can do this)
-
-  .. code-block:: console
-
-     $ chgrp team /tmp/file
-
-* Ownership modification (only root)
-
-  .. code-block:: console
-
-     # chown jfasch /tmp/file
-
-* ``chmod``, ``chown``, and ``chgrp`` understand
-    ``-R`` for "recursive".
-
-Set-UID Bit
------------
-
-**Set-UID Bit: motivation**
-
-* *Ugly hack!*
-* Encrypted passwords in ``/etc/passwd`` (or ``/etc/shadow``,
-  nowadays)
-* Only ``root`` can modify
-* I (``jfasch``) want to change my password
-* Have to ask ``root`` to edit ``/etc/passwd`` or ``/etc/shadow`` for
-  me
-* ``root`` is annoyed by me
-
-.. code-block:: console
-
-   $ ls -l /bin/passwd 
-   -rws--x--x 1 root root ... /bin/passwd
-
-Sticky Bit
-----------
-
-**Sticky bit: motivation**
-
-* *Ugly hack!*
-* Everyone has write permissions in ``/tmp``
-
-  * |longrightarrow| everyone can create files
-  * |longrightarrow| everyone can remove files
-
-* Chaos: everyone can remove each other's files
-
-.. code-block:: console
-
-   $ ls -ld /tmp
-   drwxrwxrwt ... /tmp
 

@@ -1,14 +1,15 @@
+.. ot-group:: linux
+
+
 Linux
 =====
 
 .. toctree::
    :maxdepth: 1
 
-   permissions/group
+   basics/group
    hardware/group
    drafts/group
-
-.. ot-group:: linux
 
 .. ot-graph::
    :entries: linux

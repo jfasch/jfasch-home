@@ -50,7 +50,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * Overview of a typical Linux filesystem structure
 	   (|longrightarrow| *home*)
 	 * Commands: ``ls``, ``cp``, ``mv``, ``rm``, ``rmdir``
-	 * File system permissions
+	 * :doc:`/trainings/material/soup/linux/permissions/group`
 
        .. note::
 
@@ -129,12 +129,12 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 
    * * (2022-03-24)
 
-       .. note:: Moved to 2022-02-29
+       .. note:: Moved to 2022-03-29
 
      * 2022-03-25
-     * *2022-02-24*
+     * 2022-03-24
 
-       .. note:: This is ex 2022-02-29
+       .. note:: This is ex 2022-03-29
 
      * 3
      * **Test**
@@ -165,14 +165,14 @@ Block 2: C on Linux: Local and *Cross* Development
            </trainings/material/pdf/040-gnu-make.pdf>`
 	 * :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
 
-   * * *2022-03-29*
+   * * 2022-04-01
 
-       .. note:: This is ex 2022-02-24
+       .. note:: This is ex 2022-03-24
 
      * 
      * (2022-03-29)
 
-       .. note:: Moved to 2022-02-24
+       .. note:: Moved to 2022-03-24
 
      * 3
      * **Unit Testing**. One of ...
@@ -210,8 +210,8 @@ Block 2: C on Linux: Local and *Cross* Development
      * 3
      * **Test**
 
-Block 3: C++: Local and Cross
------------------------------
+Block 3: C++
+------------
 
 .. list-table::
    :align: left
