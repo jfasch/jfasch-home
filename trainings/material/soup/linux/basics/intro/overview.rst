@@ -4,3 +4,4 @@
 Overview
 ========
 
+.. image:: user-kernel.svg
