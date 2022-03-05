@@ -32,7 +32,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	   from
 	   :download:`/trainings/material/pdf/010-linux-basics.pdf`)
 
-	   * Userspace vs. kernel
+	   * :doc:`/trainings/material/soup/linux/basics/intro/group`
 	   * |longrightarrow| hardware abstractions (disks and file
              systems, sockets, typical embedded hardware)
 	   * |longrightarrow| *"Everything is a file"*
@@ -50,7 +50,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * Overview of a typical Linux filesystem structure
 	   (|longrightarrow| *home*)
 	 * Commands: ``ls``, ``cp``, ``mv``, ``rm``, ``rmdir``
-	 * :doc:`/trainings/material/soup/linux/permissions/group`
+	 * :doc:`/trainings/material/soup/linux/basics/permissions/group`
 
        .. note::
 

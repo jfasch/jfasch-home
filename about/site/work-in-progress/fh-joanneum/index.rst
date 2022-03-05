@@ -1,5 +1,5 @@
-Embedded Computing
-==================
+Embedded Computing (FH Joanneum Graz)
+=====================================
 
 .. toctree::
    :maxdepth: 1
