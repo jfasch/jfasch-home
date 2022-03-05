@@ -1,4 +1,4 @@
-.. ot-topic:: linux.basics.intro.overview
+.. ot-topic:: linux.basics.intro.overview.overview
 
 .. include:: <mmlalias.txt>
 
@@ -45,6 +45,14 @@ User Space: *Abstractions*
 
   * *Sockets*, represented by *file descriptors*
   * *Blocking* I/O
+
+.. sidebar:: 
+
+   **Everything is a file!**
+
+   * :doc:`blocking-io-file`
+   * :doc:`blocking-io-network`
+   * :doc:`blocking-io-timer`
 
 * (Many more)
 

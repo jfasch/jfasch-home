@@ -13,7 +13,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   overview
+   overview/group.rst
 
 Group Description
 -----------------
