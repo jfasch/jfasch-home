@@ -1,5 +1,5 @@
-.. ot-topic:: linux.basics.intro.overview.blocking_io_file
-   :dependencies: linux.basics.intro.overview.overview
+.. ot-topic:: linux.basics.intro.blocking_io_file
+   :dependencies: linux.basics.intro.overview
 
 .. include:: <mmlalias.txt>
 

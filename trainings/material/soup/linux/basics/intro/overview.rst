@@ -1,4 +1,4 @@
-.. ot-topic:: linux.basics.intro.overview.overview
+.. ot-topic:: linux.basics.intro.overview
 
 .. include:: <mmlalias.txt>
 
@@ -24,6 +24,14 @@ User Space, Kernel Space?
 User Space: *Abstractions*
 --------------------------
 
+.. sidebar:: 
+
+   **Blocking I/O, "Everything is a file"**
+
+   * :doc:`blocking-io-file`
+   * :doc:`blocking-io-network`
+   * :doc:`blocking-io-timer`
+
 * No direct hardware access
 * Per-process *linear address space*
 
@@ -45,14 +53,6 @@ User Space: *Abstractions*
 
   * *Sockets*, represented by *file descriptors*
   * *Blocking* I/O
-
-.. sidebar:: 
-
-   **Everything is a file!**
-
-   * :doc:`blocking-io-file`
-   * :doc:`blocking-io-network`
-   * :doc:`blocking-io-timer`
 
 * (Many more)
 
