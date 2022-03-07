@@ -10,6 +10,13 @@ Blocking I/O (On A File): What is That?
 .. contents::
    :local:
 
+.. sidebar:: Documentation
+
+   * `man -s 2 open <https://man7.org/linux/man-pages/man2/open.2.html>`__
+   * `man -s 2 read <https://man7.org/linux/man-pages/man2/read.2.html>`__
+   * `man -s 2 write <https://man7.org/linux/man-pages/man2/write.2.html>`__
+   * `man -s 2 close <https://man7.org/linux/man-pages/man2/close.2.html>`__
+
 Reading a File
 --------------
 

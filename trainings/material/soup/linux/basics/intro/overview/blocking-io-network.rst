@@ -11,6 +11,15 @@ Blocking I/O: On A Network Socket
 .. contents::
    :local:
 
+.. sidebar:: Documentation
+
+   * `man -s 7 socket <https://man7.org/linux/man-pages/man7/socket.7.html>`__
+   * `man -s 2 socket <https://man7.org/linux/man-pages/man2/socket.2.html>`__
+   * `man -s 2 connect <https://man7.org/linux/man-pages/man2/connect.2.html>`__
+   * `man -s 2 read <https://man7.org/linux/man-pages/man2/read.2.html>`__
+   * `man -s 2 write <https://man7.org/linux/man-pages/man2/write.2.html>`__
+   * `man -s 2 close <https://man7.org/linux/man-pages/man2/close.2.html>`__
+
 Opening a Network Connection
 ----------------------------
 

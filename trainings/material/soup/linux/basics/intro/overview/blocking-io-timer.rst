@@ -11,6 +11,13 @@ Blocking I/O: On A Timer? WTF?
 .. contents::
    :local:
 
+.. sidebar:: Documentation
+
+   * `man -s 2 timerfd_create <https://man7.org/linux/man-pages/man2/timerfd_create.2.html>`__
+   * `man -s 2 timerfd_settime <https://man7.org/linux/man-pages/man2/timerfd_create.2.html>`__
+   * `man -s 2 read <https://man7.org/linux/man-pages/man2/read.2.html>`__
+   * `man -s 2 close <https://man7.org/linux/man-pages/man2/close.2.html>`__
+
 Setup A Timer
 -------------
 
@@ -18,10 +25,11 @@ Setup A Timer
 * Write to timer chip's registers
 * Hm? How many timer chips do I have? 
 
-  * Can I run out of timers?
+  * Can I run out of timers chips?
   * Do I need to write my own "virtualized timer" library where I can
     multiplex many abstract timers onto a number of physical/hardware
     timers?
+  * Architectural differences?
 
 * |longrightarrow| a job for an *Operating System*
 
