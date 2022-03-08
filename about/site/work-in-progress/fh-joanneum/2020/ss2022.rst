@@ -31,6 +31,19 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
 	 * :doc:`/trainings/material/soup/linux/basics/intro/blocking-io/group`
 	 * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
+
+       .. note::
+
+	  Request working `WSL2
+	  <https://docs.microsoft.com/en-us/windows/wsl/install>`__
+	  installation until next time around.
+
+   * * 2022-03-10
+     * 
+     * 
+     * 3
+     * * :doc:`/trainings/material/soup/linux/basics/intro/group` (continued from 2022-03-08)
+
 	 * :doc:`/trainings/material/soup/linux/basics/intro/process`
 	 * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
 	 * :doc:`/trainings/material/soup/linux/basics/intro/login`
@@ -49,17 +62,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	 * Commands: ``ls``, ``cp``, ``mv``, ``rm``, ``rmdir``
 	 * :doc:`/trainings/material/soup/linux/basics/permissions/group`
 
-       .. note::
-
-	  Request working `WSL2
-	  <https://docs.microsoft.com/en-us/windows/wsl/install>`__
-	  installation until next time around.
-
-   * * 2022-03-10
-     * 
-     * 
-     * 3
-     * * **Dynamic aspect: processes and scheduling**
+       * **Dynamic aspect: processes and scheduling**
 
          * Embedded/bare-metal vs. OS
          * Address spaces: virtual memory, memory access permissions

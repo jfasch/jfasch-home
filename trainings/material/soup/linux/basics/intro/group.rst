@@ -19,6 +19,7 @@ Contents
    process
    process-tree
    login
+   wsl
 
 Dependencies
 ------------
