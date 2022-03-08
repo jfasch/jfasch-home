@@ -30,7 +30,7 @@ int main(void)
         addr.sin_port = htons(1234);
         inet_aton("127.0.0.1", &addr.sin_addr);
 
-        // this send out packets via network hardware, does all the
+        // this sends out packets via network hardware, does all the
         // tedious timeout handling, DMA, and whatnot.
         error = connect(fd, (struct sockaddr*)&addr, sizeof(addr));
         // error handling

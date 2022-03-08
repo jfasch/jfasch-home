@@ -31,6 +31,7 @@ User Space: *Abstractions*
 * No direct hardware access
 * Per-process *linear address space*
 
+  * **The Process Abstraction**
   * |longrightarrow| perception that I *own* all memory
   * *Virtual memory* - *virtualization* of physical memory
 

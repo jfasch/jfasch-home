@@ -16,8 +16,9 @@ Shape (1)
 Consists of three parts ... well mostly, this is just convention.
 
 * Command: executable program, or script, shell alias (see below),
-  oder shell builtin (like ``cd``)
-* Options: e.g. ``-i`` ("short option"), oder ``--interactive`` ("long option")
+  or shell builtin (like ``cd``)
+* Options: e.g. ``-i`` (*short option*), oder ``--interactive`` (*long
+  option*)
 * Arguments: file names, mostly
 
 Shape (2)
@@ -36,211 +37,264 @@ Shape (2)
 Options
 -------
   
-..   Alternativ: ``Long Options''; z.B. bei \texttt{cp}
-..   \begin{itemize}
-..     \item \texttt{--interactive} statt \texttt{-i}
-..     \item \texttt{--recursive} statt \texttt{-r}
-..   \end{itemize}
-.. 
-..   ``Standard'' Optionen:
-..   \begin{itemize}
-..     \item \texttt{-h} oder \texttt{--help}: kurze Erläuterung des
-..       Commands
-..     \item \texttt{-v} oder \texttt{--verbose}: Ausführliche Meldungen
-..     \item \texttt{--version}: Version des Commands
-..   \end{itemize}
-.. 
-..   Ausreisser:
-..   \begin{block}{\texttt{dd}}
-.. \begin{verbatim}
-.. $ dd if=/dev/zero of=/dev/null count=20 bs=1024
-.. \end{verbatim}
-..   \end{block}
-.. 
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}[fragile]
-..   \frametitle{Hilfe und Manual (1)}
-..   
-..   Befehl erklärt seine Optionen mit \texttt{--help}
-..   \begin{block}{\texttt{--help}}
-.. \begin{verbatim}
-.. $ cp --help
-.. \end{verbatim}
-..   \end{block}
-..   Vollständige Beschreibung in der Manual Page (``Man-Page'')
-..   \begin{block}{\texttt{Manual Pages}}
-.. \begin{verbatim}
-.. $ man cp
-.. \end{verbatim}
-..   \end{block}
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}[fragile]
-..   \frametitle{Hilfe und Manual (2)}
-.. 
-..   Navigation in der Anzeige von Man-Pages
-.. 
-..   \begin{block}{}
-..     \begin{tabular}{|l|l|}
-..       \hline
-..       \keystroke{h} & Hilfe von \texttt{man} \\
-..       \keystroke{q} & Beendet \texttt{man} (oder die Hilfe) \\
-..       \keystroke{g} & Springt zum Anfang \\
-..       \keystroke{G} & Springt zum Ende \\
-..       \keystroke{/} & Sucht vorwärts im Text \\
-..       \keystroke{?} & Sucht rückwärts im Text \\
-..       \keystroke{n} & Springt zur nächsten Fundstelle \\
-..       \keystroke{N} & Springt zur vorherigen Fundstelle \\
-..       \hline
-..     \end{tabular}
-..   \end{block}
-.. 
-..   \begin{block}{Hilfe für \texttt{man} selbst}
-.. \begin{verbatim}
-.. $ man man
-.. \end{verbatim}
-..   \end{block}
-.. 
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}
-..   \frametitle{Line Editing (1)}
-.. 
-..   Geniale Editiermöglichkeiten (Emacs-Keys!)
-..   
-..   \begin{block}{}
-..     \begin{tabular}{|l|l|}
-..       \hline
-..       \LArrow, \RArrow & Cursor links, rechts \\
-..       \BSpace (Backspace) & Löscht das Zeichen links vom Cursor \\
-..       \Del, \Ctrl+\keystroke{d} & Löscht das Zeichen unter dem Cursor \\
-..       \Home, \Ctrl+\keystroke{a} & Springt zum Zeilenanfang \\
-..       \End, \Ctrl+\keystroke{e} & Springt zum Zeilenende \\
-..       \Ctrl+\keystroke{k} & Löscht vom Cursor bis zum Zeilenende \\
-..       \Ctrl+\keystroke{u} & Löscht vom Cursor bis zum Zeilenanfang \\
-..       \Ctrl+\keystroke{l} & Löscht den Bildschirm bis auf die aktuelle Zeile \\
-..       \hline
-..     \end{tabular}
-..   \end{block}
-.. 
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}
-..   \frametitle{Line Editing (2)}
-.. 
-..   Wortweises Editieren
-..   \linebreak
-.. 
-..   \begin{block}{}
-..     \begin{tabular}{|l|l|}
-..       \hline
-..       \Ctrl+\LArrow, \Alt+\keystroke{b} & Springt ein Wort nach links \\
-..       \Ctrl+\RArrow, \Alt+\keystroke{f} & Springt ein Wort nach rechts \\
-..       \Alt+\keystroke{d} & Löscht Wort rechts vom Cursor \\
-..       \Alt+\BSpace & Löscht Wort links vom Cursor \\
-..       \hline
-..     \end{tabular}
-..   \end{block}
-.. 
-..   Anmerkungen
-..   \linebreak
-.. 
-..   \begin{itemize}
-..   \item \Ctrl+\LArrow und \Ctrl+\RArrow funktionieren nicht auf der
-..     virtuellen Konsole (belegt mit Konsolen-Switch)
-..   \item Sollte \Alt nicht belegt sein, nimmt man \Esc
-..   \end{itemize}
-.. 
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}
-..   \frametitle{Line Editing (3)}
-.. 
-..   Keys für Kenner, Liebhaber und Emacs-Benutzer
-..   \linebreak
-.. 
-..   \begin{block}{}
-..     \begin{tabular}{|l|l|}
-..       \hline
-..       \Ctrl+\keystroke{y}, \Alt+\keystroke{y} & Einfügen aus dem ``Kill-Ring'' \\
-..       \Ctrl+\keystroke{\_} (Underline) & Undo \\
-..       \Ctrl+\keystroke{t} & Zeichen tauschen (``transpose'') \\
-..       \Alt+\keystroke{t} & Wörter tauschen \\
-..       \Alt+\keystroke{u} & Wort in Uppercase wandeln \\
-..       \Alt+\keystroke{l} & Wort in Lowercase wandeln \\
-..       \Alt+\keystroke{c} & 1. Buchstabe groß (``capitalize'') \\
-..       \hline
-..     \end{tabular}
-..   \end{block}
-.. 
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}[fragile]
-..   \frametitle{Tabulatortaste (1)}
-.. 
-..   \begin{itemize}
-..     \item Tabulatortaste Spart Tastendrücke (kein Mensch kann Maschinschreiben)
-..     \item Commandvervollständigung
-..   \end{itemize}
-.. 
-..   \begin{block}{Alle Commands, die mit \texttt{git} beginnen}
-.. \begin{alltt}
-.. $ git\Tab
-.. git                 git-p4              git-resurrect       git-upload-archive  gitk
-.. git-cvsserver       git-receive-pack    git-shell           git-upload-pack     gitview
-.. \end{alltt}
-..   \end{block}
-.. 
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}[fragile]
-..   \frametitle{Tabulatortaste (2)}
-.. 
-..   \begin{itemize}
-..   \item Filenamenvervollständigung
-..   \end{itemize}
-.. 
-..   \begin{block}{Piepen, falls nicht eindeutig}
-..     \begin{alltt}
-.. $ less /var/log/emerge-log/emerge\Tab
-..     \end{alltt}
-..   \end{block}
-.. 
-..   \begin{block}{Zwei Tabs $\to$ Liste}
-..     \begin{alltt}
-.. $ less /var/log/emerge-log/emerge\Tab\Tab
-.. emerge-fetch.log  emerge.log        
-..     \end{alltt}
-..   \end{block}
-.. 
-.. \end{frame}
-.. 
-.. % --------------------------------------------------------------------
-.. \begin{frame}[fragile]
-..   \frametitle{Tabulatortaste (3)}
-.. 
-..   \begin{itemize}
-..   \item Eigene Vervollständigungen mit \texttt{complete}
-..   \end{itemize}
-.. 
-..   \begin{block}{Eigene Vervollständigungen}
-..     \begin{alltt}
-.. $ complete -W "server laptop" ssh
-.. $ ssh s\Tab
-..     \end{alltt}
-..   \end{block}
-.. 
-..   Wird zu "\texttt{ssh server}"
-..   \linebreak
-..   Dauerhaft eingetragen in \texttt{\textasciitilde/.bashrc}
-.. 
-.. \end{frame}
-.. 
+* Alternative: *long options*; e.g. ``cp``
+
+  * ``--interactive`` instead of ``-i``
+  * ``--recursive`` instead of ``-r``
+  * |longrightarrow| shell scripts
+  * |longrightarrow| readability
+
+* "Standard" options
+
+  * ``-h`` or ``--help``: brief overview
+  * ``-v`` or ``--verbose``: log/debug outout as the command runs
+  * ``--version``: command version
+
+* There is no standard, only evolution
+
+  .. code-block:: console
+     :caption: ``dd``, used to copy 20K (20*1024) of NULL bytes into
+               trash bin
+
+     $ dd if=/dev/zero of=/dev/null count=20 bs=1024
+
+  .. code-block:: console
+     :caption: ``ls -h`` is not helpful either, but *human readable*
+
+     $ ls -h
+     Documents  Downloads  Pictures
+
+Help and Manual
+---------------
+  
+* Command explains itself when given the option ``--help`` (well,
+  mostly)
+
+  .. code-block:: console
+  
+     $ find --help
+     Usage: find [-H] [-L] [-P] [-Olevel] [-D debugopts] [path...] [expression]
+     
+     default path is the current directory; default expression is -print
+     expression may consist of: operators, options, tests, and actions:
+     operators (decreasing precedence; -and is implicit where no others are given):
+           ( EXPR )   ! EXPR   -not EXPR   EXPR1 -a EXPR2   EXPR1 -and EXPR2
+           EXPR1 -o EXPR2   EXPR1 -or EXPR2   EXPR1 , EXPR2
+     positional options (always true): -daystart -follow -regextype
+     ...
+
+
+* Complete Description is in the *manual page* (or *man page*, for
+  short)
+
+  .. code-block:: console
+
+     FIND(1)                                                                                                  General Commands Manual                                                                                                 FIND(1)
+     
+     NAME
+            find - search for files in a directory hierarchy
+     
+     SYNOPSIS
+            find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]
+     
+     DESCRIPTION
+            This  manual  page  documents the GNU version of find.  GNU find searches the directory tree rooted at each given starting-point by evaluating the given expression from left to right, according to the rules of precedence (see
+            section OPERATORS), until the outcome is known (the left hand side is false for and operations, true for or), at which point find moves on to the next file name.  If no starting-point is specified, `.' is assumed.
+     
+            If you are using find in an environment where security is important (for example if you are using it to search directories that are writable by other users), you should read the `Security Considerations' chapter of the findu‐
+            tils documentation, which is called Finding Files and comes with findutils.  That document also includes a lot more detail and discussion than this manual page, so you may find it a more useful source of information.
+     
+     OPTIONS
+            The  -H,  -L  and -P options control the treatment of symbolic links.  Command-line arguments following these are taken to be names of files or directories to be examined, up to the first argument that begins with `-', or the
+            argument `(' or `!'.  That argument and any following arguments are taken to be the expression describing what is to be searched for.  If no paths are given, the current directory is used.  If no expression is given, the  ex‐
+            pression -print is used (but you should probably consider using -print0 instead, anyway).
+     ... 20 kilometers more ...
+
+Man Pages: Navigation
+---------------------
+
+.. sidebar:: Documentation
+
+   * `man -s 1 man <https://man7.org/linux/man-pages/man1/man.1.html>`__
+   * `man -s 7 man (man page format itself)
+     <https://man7.org/linux/man-pages/man7/man.7.html>`__
+     |:exploding_head:|
+
+* When used interactively, the ``man`` command uses the ``less``
+  command to *page* its output.
+
+  .. list-table::
+     :align: left
+     :header-rows: 1
+     :widths: auto
+
+     * * Keystroke
+       * Description
+     * * :kbd:`q`
+       * Quit ``man``
+     * * :kbd:`h`
+       * Integrated help (same keystrokes apply there) - :kbd:`q` for
+         "quit help"
+     * * :kbd:`g`
+       * Go to beginning of page
+     * * :kbd:`G`
+       * Go to bottom of page
+     * * :kbd:`/`
+       * Prompts for pattern, search forward
+     * * :kbd:`?`
+       * Prompts for pattern, search backwards
+     * * :kbd:`n`
+       * Repeat last search, go to next occurence
+     * * :kbd:`N`
+       * Repeat last search, go to previous occurence
+
+Commandline Editing: Moving, Deleting
+-------------------------------------
+
+.. sidebar:: Documentation
+
+   * `Useful Linux Command Line Bash Shortcuts You Should Know <https://www.tecmint.com/linux-command-line-bash-shortcut-keys/>`__
+   * `Bash Shortcuts for the Command Line (emacs) <https://www.smartfile.com/blog/bash-shortcuts-for-the-command-line-emacs/>`__
+   * :download:`bash-help-sheet.pdf`
+   * :download:`readline-emacs-editing-mode-cheat-sheet.pdf`
+   * `Repetitive strain injury (RSI, Mouse Disease)
+     <https://en.wikipedia.org/wiki/Repetitive_strain_injury>`__
+
+* Noob: **run away screaming!!**
+* Expert: *come on, don't panic!*
+
+.. list-table::
+   :align: left
+   :header-rows: 1
+   :widths: auto
+
+   * * Keystroke
+     * Description
+   * * |LeftArrow|
+     * One character left
+   * * |RightArrow|
+     * One character right
+   * * ``<BACKSPACE>``
+     * Delete character left of cursor
+   * * ``<DELETE>``, :kbd:`C-d`
+     * Delete character below cursor
+   * * ``<HOME>`` (``<POS1>``), :kbd:`C-a`
+     * Move cursor to beginning of line
+   * * ``<END>``, :kbd:`C-e`
+     * Move cursor to end of line
+   * * :kbd:`C-k`
+     * Delete character below cursor, until end of line 
+   * * :kbd:`C-u`
+     * Delete character left of cursor, until beginning of line 
+   * * :kbd:`C-l` ("ell")
+     * Clear screen
+
+Commandline Editing: Entire Words
+---------------------------------
+
+.. list-table::
+   :align: left
+   :header-rows: 1
+   :widths: auto
+
+   * * Keystroke
+     * Description
+   * * :kbd:`C-<left>`, `M-b`
+     * Move cursor one word left
+   * * :kbd:`C-<right>`, `M-f`
+     * Move cursor one word right
+   * * :kbd:`M-d`
+     * Delete word right
+   * * :kbd:`M-<backspace>`
+     * Delete word left
+
+.. note::
+
+   * Arrow keys don't always work (embedded systems are often
+     misconfigured in this regard) |longrightarrow| best to get used
+     to *real* keys
+   * Should the ``M`` (*Meta*, ``Alt``) not work, one can use ``ESC``,
+     followed by the combined character. 
+
+     For example ``Alt+d`` (pressed at the same time) is the same as
+     ``ESC``, *followed by* ``d``
+
+Commandline Editing: Entire Lines
+---------------------------------
+
+.. note:: 
+
+   Keys for freaks, nerds, and `Emacs
+   <https://www.gnu.org/software/emacs/>`__ addicts.
+
+.. list-table::
+   :align: left
+   :header-rows: 1
+   :widths: auto
+
+   * * Keystroke
+     * Description
+   * * :kbd:`C-y`, :kbd:`M-y`
+     * Insert from *kill ring* (`here
+       <https://unix.stackexchange.com/questions/284871/what-does-rotate-the-kill-ring-mean>`__)
+   * * :kbd:`C-_`
+     * Undo
+   * * :kbd:`C-t`
+     * Transpose characters
+   * * :kbd:`M-t`
+     * Transpose words
+   * * :kbd:`M-u`
+     * Uppercase word
+   * * :kbd:`M-l`
+     * Lowercase word
+   * * :kbd:`M-c`
+     * Capitalize word
+
+The Tabulator Key: Command Completion
+-------------------------------------
+
+* Usage **absolutely recommended**
+* Nobody remembers, for example, all commands the start with ``git``
+
+  .. code-block:: console
+     
+     $ git       # <-- HIT <TAB> HERE AFTER 'git'
+     git                 git-p4              git-resurrect       git-upload-archive  gitk
+     git-cvsserver       git-receive-pack    git-shell           git-upload-pack     gitview
+
+The Tabulator Key: Filename Completion
+--------------------------------------
+
+* Usage **absolutely recommended**
+* Nobody wants to type long paths
+* Single ``TAB`` completes until ambiguity
+* Double ``TAB`` shows alternatives
+
+.. code-block:: console
+
+   $ less ~/Doc             # <-- HIT <TAB> HERE       -> COMPLETES
+   $ less ~/Documents/      # <-- HIT <TAB> HERE TWICE -> ALTERNATIVES
+   2021-12-26-Oesterreich-Pre-Travel-Clearance.pdf                          e7d76d19-dd3d-4d52-9394-2c16dc73f9d1_VStV_921302213705_2021___VStVF.pdf  python-3.10.0-docs-html/
+   boardingpass_1d9xf3dvd1uzt00tsswu68duh.gif                               Einkommensteuerbescheid1.pdf                                             python-doc.zip
+   boardingpass_b6uy9xqgeojspx1hxshogcbbq.gif                               Einkommensteuervorauszahlungsbescheid1.pdf                               RF-Immobilienbewertung-ETW-2022.pdf
+   Booking.com Confirmation.pdf                                             Fedora 34 ECE 19.ova                                                     Umsatzsteuerbescheid1.pdf
+   Buchhaltung.csv                                                          H0020211105124337.pdf                                                    VK9VST311192021_0022021.pdf
+   $ less ~/Documents/Bu    # <-- HIT <TAB>            -> COMPLETES
+   less ~/Documents/Buchhaltung.csv
+   ... shows boring stuff ...
+
+Links
+-----
+
+* `Bash Tutorial: How to Use the Command Line in Linux, Windows, and
+  Mac Terminal <https://youtu.be/BFMyUgF6I8Y>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/BFMyUgF6I8Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>

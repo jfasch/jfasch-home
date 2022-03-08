@@ -91,6 +91,7 @@ Disks and Partitions
 * Kernel has variables in memory that configure certain aspects of its
   operation
 * Most of these variables are exposed as files
+* |longrightarrow| *Virtual* file systems: ``sys`` and ``proc``
 
 .. code-block:: console
    :caption: Processes as directories
@@ -104,6 +105,14 @@ Disks and Partitions
 
 Pseudo Devices
 --------------
+
+.. sidebar:: Documentation
+
+   * `man dd <https://man7.org/linux/man-pages/man1/dd.1.html>`__
+   * `/dev/zero <https://en.wikipedia.org/wiki//dev/zero>`__
+   * `/dev/null <https://en.wikipedia.org/wiki/Null_device>`__
+   * `Difference between /dev/null and /dev/zero
+     <https://unix.stackexchange.com/questions/254384/difference-between-dev-null-and-dev-zero>`__
 
 * ``/dev/null``: trash can, swallowing everything you write to it)x
 

@@ -22,13 +22,14 @@ Reading a File
 
 * Reading something from disk is not a trivial task
 
-  * Rotating (hence the name *disk* alas)
+  * Rotating (hence the name *disk*, alas)
   * Head positioning
   * *Interrupt* when done
   * Direct Memory Access (DMA), done by controller chip
-  * |longrightarrow| required a lot of coordination
+  * *Interrupt* when done
+  * |longrightarrow| requires a lot of coordination
 
-* |longrightarrow| abstractions are in order
+* |longrightarrow| **abstractions** are in order
 * |longrightarrow| a job for an *Operating System*
 
 Abstractions

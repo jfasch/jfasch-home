@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1"
-     inkscape:cx="443.5"
+     inkscape:cx="586.5"
      inkscape:cy="366"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
@@ -649,5 +649,15 @@
          id="tspan77203"
          x="-673.73969"
          y="79.870628">Kernel space</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:29.3333px;line-height:1.25;font-family:sans-serif"
+       x="350.79871"
+       y="143.56659"
+       id="text5152"><tspan
+         sodipodi:role="line"
+         id="tspan5150"
+         x="350.79871"
+         y="143.56659">Processes</tspan></text>
   </g>
 </svg>

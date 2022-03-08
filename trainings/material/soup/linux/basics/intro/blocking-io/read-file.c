@@ -12,7 +12,8 @@ int main(void)
     // /etc/passwd --> FILE DESCRIPTOR
     int fd = open("/etc/passwd", O_RDONLY);
 
-    // error handling
+    // error handling (/etc/passwd might not exist, o rI might not
+    // have permissions to read it)
     if (fd == -1) {
         perror("open()");
         exit(1);

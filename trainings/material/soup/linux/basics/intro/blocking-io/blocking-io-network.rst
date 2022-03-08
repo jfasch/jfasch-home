@@ -13,7 +13,7 @@ Blocking I/O: On A Network Socket
 
 .. sidebar:: Documentation
 
-   * `man -s 7 socket <https://man7.org/linux/man-pages/man7/socket.7.html>`__
+   * `man -s 7 socket (sockets overview) <https://man7.org/linux/man-pages/man7/socket.7.html>`__
    * `man -s 2 socket <https://man7.org/linux/man-pages/man2/socket.2.html>`__
    * `man -s 2 connect <https://man7.org/linux/man-pages/man2/connect.2.html>`__
    * `man -s 2 read <https://man7.org/linux/man-pages/man2/read.2.html>`__
@@ -44,6 +44,7 @@ Abstractions
 
   * Bytes from a *network connection*
   * Addresses depend on network type (TCP/IP is just one out of many)
+  * |longrightarrow| **Socket abstraction!**
 
 * *How* do we read that? In the case of TCP ...
 
