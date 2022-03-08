@@ -26,21 +26,18 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 3
      *
 
-       * **Linux Basics**
+       * :doc:`/trainings/material/soup/linux/basics/intro/group`
 
-         * Linux Concepts and Terminology (Transcribe first chapter
-	   from
-	   :download:`/trainings/material/pdf/010-linux-basics.pdf`)
+	 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
+	 * :doc:`/trainings/material/soup/linux/basics/intro/blocking-io/group`
+	 * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
+	 * :doc:`/trainings/material/soup/linux/basics/intro/process`
+	 * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
+	 * :doc:`/trainings/material/soup/linux/basics/intro/login`
 
-	   * :doc:`/trainings/material/soup/linux/basics/intro/group`
-	   * |longrightarrow| hardware abstractions (disks and file
-             systems, sockets, typical embedded hardware)
-	   * |longrightarrow| *"Everything is a file"*
-	   * Permissions: user and group IDs; "What's a login?"
-
-         * Shell/Commandline Intro (From
-           :download:`/trainings/material/pdf/010-linux-basics.pdf`,
-	   pimped a lot)
+       * Shell/Commandline Intro (From
+	 :download:`/trainings/material/pdf/010-linux-basics.pdf`,
+	 pimped a lot)
 
        * **Static aspect: file system** (also from
 	 :download:`/trainings/material/pdf/010-linux-basics.pdf`)

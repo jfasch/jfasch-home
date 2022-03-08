@@ -14,12 +14,14 @@ Contents
    :maxdepth: 1
 
    overview
-   blocking-io-file
-   blocking-io-network
-   blocking-io-timer
+   blocking-io/group
+   demo-everything-is-a-file
+   process
+   process-tree
+   login
 
-Group Description
------------------
+Dependencies
+------------
 
 .. ot-graph::
    :entries: linux.basics.intro

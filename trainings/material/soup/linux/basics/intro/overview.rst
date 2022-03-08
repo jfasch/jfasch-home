@@ -9,7 +9,7 @@ Overview
 .. contents::
    :local:
 
-.. image:: user-kernel.svg
+.. image:: user-kernel/user-kernel.svg
 
 User Space, Kernel Space?
 -------------------------
@@ -26,17 +26,17 @@ User Space: *Abstractions*
 
 .. sidebar:: 
 
-   **Blocking I/O, "Everything is a file"**
-
-   * :doc:`blocking-io-file`
-   * :doc:`blocking-io-network`
-   * :doc:`blocking-io-timer`
+   See :doc:`blocking-io/group`
 
 * No direct hardware access
 * Per-process *linear address space*
 
   * |longrightarrow| perception that I *own* all memory
   * *Virtual memory* - *virtualization* of physical memory
+
+.. sidebar:: See also
+
+   :doc:`process`
 
 * *Scheduling*
 

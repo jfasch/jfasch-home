@@ -1,2 +1,2 @@
 ADD_SUBDIRECTORY(basics/permissions)
-ADD_SUBDIRECTORY(basics/intro/overview)
+ADD_SUBDIRECTORY(basics/intro)

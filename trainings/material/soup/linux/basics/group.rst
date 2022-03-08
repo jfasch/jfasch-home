@@ -14,6 +14,7 @@ Contents
    :maxdepth: 1
 
    intro/group
+   shell/group
    permissions/group
 
 Group Description

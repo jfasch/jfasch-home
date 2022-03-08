@@ -15,6 +15,19 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python (2022-03-23, 2022-03-30, 2022-04-19 - 2022-03-21)
+--------------------------------------------------------
+
+.. Der Kurs fand präsent *und* online mittels :doc:`Microsoft Teams
+.. </blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+.. Partner `tecTrain
+.. <https://www.tectrain.at/seminare/seminar-themen/programmierung/python-vertiefung>`__
+.. gebucht.
+
+Dieser Kurs ist in Vorbereitung.
+
+(:doc:`Mehr ... <detail/2022-03-23/index>`)
+
 Python Advanced (2022-03-15 - 2022-03-17)
 -----------------------------------------
 
