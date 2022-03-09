@@ -10,9 +10,14 @@ Agenda (Sent Out 2022-02-16)
 Introduction: Clean Code? What is that?
 ---------------------------------------
 
+.. sidebar:: 
+
+   .. image:: clean-code.jpg
+
 `Clean Code: A Handbook of Agile Software Craftsmanship, by
 Robert C. Martin ("Uncle Bob")
 <https://www.oreilly.com/library/view/clean-code-a/9780136083238/>`__
+
 
 Cornerstones ...
 

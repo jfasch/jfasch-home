@@ -10,9 +10,48 @@ Agenda (Draft, Unpublished)
 .. note:: **Changes from** :doc:`draft-2022-02-16`
 
    * Add section on "Code Structure"
+   * Proposed changes 2022-03-09
+
+     * 2 bloecke
+
+       * 1
+
+	 * clean code -> uncle bob
+	 * ... in the small ...
+
+       * 2
+
+	 * unit testing: c/c++ (see below gtest/boost) and python (?)
+           (unittest/pytest -> sketch only)
+	 * tdd
+	 * livehacking -> mir was einfallen lassen
+
+       * hands on
+
+	 * 7 entwickler (3er, 4er)
+	 * real life code oder skizze?
+
+	   * audio resampling? geht das? testbar?
+	   * sonst? was faellt euch ein?
+
+	 * cmake, cdash (?), ctest, visual studio (2019, doze)
+	 * tools fuer unittests?
+
+	   * cdk (core development kit) testsystem
+             (hausgemacht). wuerden sie gerne wegkommen.
+	   * https://robotframework.org/ -> jenkins
+
+	 * 2 dummy projekte mit je cmake/gtest machen und schicken ->
+           probieren zu bauen
+	 * frage: gtest oder boost?
+	 * frage: cdk? kann man das mit den metriken extrahieren?
 
 Introduction: Clean Code? What is that?
 ---------------------------------------
+
+.. sidebar:: 
+
+   .. image:: clean-code.jpg
 
 `Clean Code: A Handbook of Agile Software Craftsmanship, by
 Robert C. Martin ("Uncle Bob")
