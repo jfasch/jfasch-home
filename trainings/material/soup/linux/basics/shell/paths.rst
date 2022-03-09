@@ -55,7 +55,7 @@ Absolute Paths
 Special Paths
 -------------
 
-* ``/``: root directory
+* ``/``: root directory - **where it all begins**
 * ``~``: home directory of the user
 
   .. code-block:: console

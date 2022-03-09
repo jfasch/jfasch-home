@@ -15,6 +15,10 @@ Contents
 
    commandline
    paths
+   ls
+   cwd
+   file_dir_create_rm
+   links
 
 Dependencies
 ------------

@@ -1,4 +1,5 @@
 .. ot-topic:: linux.basics.permissions.basics
+   :dependencies: linux.basics.shell.ls
 
 .. include:: <mmlalias.txt>
 

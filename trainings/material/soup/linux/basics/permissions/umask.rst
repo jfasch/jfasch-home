@@ -1,5 +1,6 @@
-.. ot-topic:: linux.basics.permissions.umask
-   :dependencies: linux.basics.permissions.basics
+.. ot-topic:: linux.basics.permissions.umasks
+   :dependencies: linux.basics.permissions.basics,
+		  linux.basics.shell.file_dir_create_rm
 
 .. include:: <mmlalias.txt>
 
