@@ -24,268 +24,44 @@ https://sphinxemojicodes.readthedocs.io/
        ...
    ]
 
-Popular
--------
+Most Used Here In This Site
+---------------------------
 
 .. list-table::
    :align: left
 
-   * * |:adult:|
-     * ``|:adult:|``
-   * * |:adult_dark_skin_tone:|
-     * ``|:adult_dark_skin_tone:|``
-   * * |:angel:|
-     * ``|:angel:|``
-   * * |:angel_tone1:|
-     * ``|:angel_tone1:|``
-   * * |:angry:|
-     * ``|:angry:|``
-   * * |:anguished:|
-     * ``|:anguished:|``
-   * * |:artist:|
-     * ``|:artist:|``
-   * * |:artist_dark_skin_tone:|
-     * ``|:artist_dark_skin_tone:|``
-   * * |:astonished:|
-     * ``|:astonished:|``
-   * * |:astronaut:|
-     * ``|:astronaut:|``
-   * * |:astronaut_dark_skin_tone:|
-     * ``|:astronaut_dark_skin_tone:|``
-   * * |:baby:|
-     * ``|:baby:|``
-   * * |:baby_tone1:|
-     * ``|:baby_tone1:|``
-   * * |:bearded_person:|
-     * ``|:bearded_person:|``
-   * * |:bearded_person_dark_skin_tone:|
-     * ``|:bearded_person_dark_skin_tone:|``
-   * * |:blond-haired_man:|
-     * ``|:blond-haired_man:|``
-   * * |:blond-haired_man_dark_skin_tone:|
-     * ``|:blond-haired_man_dark_skin_tone:|``
-   * * |:blond-haired_woman:|
-     * ``|:blond-haired_woman:|``
-   * * |:blond-haired_woman_dark_skin_tone:|
-     * ``|:blond-haired_woman_dark_skin_tone:|``
-   * * |:blond_haired_person:|
-     * ``|:blond_haired_person:|``
-   * * |:blond_haired_person_tone1:|
-     * ``|:blond_haired_person_tone1:|``
-   * * |:blonde_man:|
-     * ``|:blonde_man:|``
-   * * |:blonde_woman:|
-     * ``|:blonde_woman:|``
-   * * |:blush:|
-     * ``|:blush:|``
-   * * |:bow:|
-     * ``|:bow:|``
-   * * |:bow_and_arrow:|
-     * ``|:bow_and_arrow:|``
-   * * |:bow_tone1:|
-     * ``|:bow_tone1:|``
-   * * |:boy:|
-     * ``|:boy:|``
-   * * |:boy_tone1:|
-     * ``|:boy_tone1:|``
-   * * |:bride_with_veil:|
-     * ``|:bride_with_veil:|``
-   * * |:bride_with_veil_tone1:|
-     * ``|:bride_with_veil_tone1:|``
-   * * |:child:|
-     * ``|:child:|``
-   * * |:child_dark_skin_tone:|
-     * ``|:child_dark_skin_tone:|``
-   * * |:confounded:|
-     * ``|:confounded:|``
-   * * |:confused:|
-     * ``|:confused:|``
-   * * |:construction_worker:|
-     * ``|:construction_worker:|``
-   * * |:construction_worker_man:|
-     * ``|:construction_worker_man:|``
-   * * |:cook:|
-     * ``|:cook:|``
-   * * |:cook_dark_skin_tone:|
-     * ``|:cook_dark_skin_tone:|``
-   * * |:cop:|
-     * ``|:cop:|``
-   * * |:cop_tone1:|
-     * ``|:cop_tone1:|``
-   * * |:cowboy:|
-     * ``|:cowboy:|``
-   * * |:cry:|
-     * ``|:cry:|``
-   * * |:detective_tone1:|
-     * ``|:detective_tone1:|``
-   * * |:disappointed:|
-     * ``|:disappointed:|``
-   * * |:disappointed_relieved:|
-     * ``|:disappointed_relieved:|``
-   * * |:disguised_face:|
-     * ``|:disguised_face:|``
-   * * |:dizzy_face:|
-     * ``|:dizzy_face:|``
-   * * |:drool:|
-     * ``|:drool:|``
-   * * |:drooling_face:|
-     * ``|:drooling_face:|``
-   * * |:exploding_head:|
-     * ``|:exploding_head:|``
-   * * |:expressionless:|
-     * ``|:expressionless:|``
-   * * |:face_exhaling:|
-     * ``|:face_exhaling:|``
-   * * |:face_in_clouds:|
-     * ``|:face_in_clouds:|``
-   * * |:face_palm:|
-     * ``|:face_palm:|``
-   * * |:face_palm_tone1:|
-     * ``|:face_palm_tone1:|``
-   * * |:face_with_hand_over_mouth:|
-     * ``|:face_with_hand_over_mouth:|``
-   * * |:face_with_head_bandage:|
-     * ``|:face_with_head_bandage:|``
-   * * |:face_with_monocle:|
-     * ``|:face_with_monocle:|``
-   * * |:face_with_raised_eyebrow:|
-     * ``|:face_with_raised_eyebrow:|``
-   * * |:face_with_rolling_eyes:|
-     * ``|:face_with_rolling_eyes:|``
-   * * |:face_with_spiral_eyes:|
-     * ``|:face_with_spiral_eyes:|``
-   * * |:face_with_symbols_over_mouth:|
-     * ``|:face_with_symbols_over_mouth:|``
-   * * |:face_with_thermometer:|
-     * ``|:face_with_thermometer:|``
-   * * |:factory_worker:|
-     * ``|:factory_worker:|``
-   * * |:factory_worker_dark_skin_tone:|
-     * ``|:factory_worker_dark_skin_tone:|``
-   * * |:fearful:|
-     * ``|:fearful:|``
-   * * |:flushed:|
-     * ``|:flushed:|``
-   * * |:frowning:|
-     * ``|:frowning:|``
-   * * |:frowning_face:|
-     * ``|:frowning_face:|``
    * * |:grimacing:|
      * ``|:grimacing:|``
-   * * |:grin:|
-     * ``|:grin:|``
-   * * |:grinning:|
-     * ``|:grinning:|``
-   * * |:head_bandage:|
-     * ``|:head_bandage:|``
-   * * |:heart:|
-     * ``|:heart:|``
-   * * |:heart_eyes:|
-     * ``|:heart_eyes:|``
-   * * |:hugging:|
-     * ``|:hugging:|``
-   * * |:hugging_face:|
-     * ``|:hugging_face:|``
-   * * |:hugs:|
-     * ``|:hugs:|``
-   * * |:hushed:|
-     * ``|:hushed:|``
+   * * |:face_with_raised_eyebrow:|
+     * ``|:face_with_raised_eyebrow:|``
+   * * |:flushed:|
+     * ``|:flushed:|``
    * * |:innocent:|
      * ``|:innocent:|``
-   * * |:joy:|
-     * ``|:joy:|``
-   * * |:kiss:|
-     * ``|:kiss:|``
    * * |:kissing:|
      * ``|:kissing:|``
    * * |:kissing_heart:|
      * ``|:kissing_heart:|``
-   * * |:kissing_smiling_eyes:|
-     * ``|:kissing_smiling_eyes:|``
-   * * |:liar:|
-     * ``|:liar:|``
-   * * |:mask:|
-     * ``|:mask:|``
-   * * |:mechanic:|
-     * ``|:mechanic:|``
-   * * |:metal:|
-     * ``|:metal:|``
    * * |:middle_finger:|
      * ``|:middle_finger:|``
-   * * |:money_mouth:|
-     * ``|:money_mouth:|``
-   * * |:money_mouth_face:|
-     * ``|:money_mouth_face:|``
+   * * |:metal:|
+     * ``|:metal:|``
    * * |:muscle:|
      * ``|:muscle:|``
    * * |:nerd:|
      * ``|:nerd:|``
-   * * |:nerd_face:|
-     * ``|:nerd_face:|``
-   * * |:neutral_face:|
-     * ``|:neutral_face:|``
    * * |:ninja:|
      * ``|:ninja:|``
-   * * |:no_mouth:|
-     * ``|:no_mouth:|``
    * * |:ok_hand:|
      * ``|:ok_hand:|``
-   * * |:older_man:|
-     * ``|:older_man:|``
-   * * |:older_woman:|
-     * ``|:older_woman:|``
-   * * |:open_mouth:|
-     * ``|:open_mouth:|``
    * * |:penguin:|
      * ``|:penguin:|``
-   * * |:pensive:|
-     * ``|:pensive:|``
-   * * |:persevere:|
-     * ``|:persevere:|``
    * * |:pig:|
      * ``|:pig:|``
-   * * |:pleading_face:|
-     * ``|:pleading_face:|``
-   * * |:point_down:|
-     * ``|:point_down:|``
-   * * |:point_left:|
-     * ``|:point_left:|``
-   * * |:point_right:|
-     * ``|:point_right:|``
    * * |:point_up:|
      * ``|:point_up:|``
-   * * |:relaxed:|
-     * ``|:relaxed:|``
-   * * |:relieved:|
-     * ``|:relieved:|``
-   * * |:roll_eyes:|
-     * ``|:roll_eyes:|``
-   * * |:satisfied:|
-     * ``|:satisfied:|``
    * * |:sleeping:|
      * ``|:sleeping:|``
-   * * |:slight_frown:|
-     * ``|:slight_frown:|``
-   * * |:slight_smile:|
-     * ``|:slight_smile:|``
-   * * |:slightly_frowning_face:|
-     * ``|:slightly_frowning_face:|``
-   * * |:slightly_smiling_face:|
-     * ``|:slightly_smiling_face:|``
-   * * |:smiling_face_with_3_hearts:|
-     * ``|:smiling_face_with_3_hearts:|``
-   * * |:smiling_face_with_tear:|
-     * ``|:smiling_face_with_tear:|``
-   * * |:sob:|
-     * ``|:sob:|``
-   * * |:star_struck:|
-     * ``|:star_struck:|``
-   * * |:stuck_out_tongue:|
-     * ``|:stuck_out_tongue:|``
-   * * |:stuck_out_tongue_closed_eyes:|
-     * ``|:stuck_out_tongue_closed_eyes:|``
-   * * |:stuck_out_tongue_winking_eye:|
-     * ``|:stuck_out_tongue_winking_eye:|``
    * * |:sunglasses:|
      * ``|:sunglasses:|``
    * * |:thinking:|
@@ -294,22 +70,8 @@ Popular
      * ``|:thumbsdown:|``
    * * |:thumbsup:|
      * ``|:thumbsup:|``
-   * * |:tired_face:|
-     * ``|:tired_face:|``
-   * * |:upside_down:|
-     * ``|:upside_down:|``
-   * * |:v:|
-     * ``|:v:|``
    * * |:wink:|
      * ``|:wink:|``
-   * * |:woozy_face:|
-     * ``|:woozy_face:|``
-   * * |:yawning_face:|
-     * ``|:yawning_face:|``
-   * * |:zany_face:|
-     * ``|:zany_face:|``
-   * * |:zipper_mouth:|
-     * ``|:zipper_mouth:|``
 
 All Codes
 ---------

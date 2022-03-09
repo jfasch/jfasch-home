@@ -34,8 +34,8 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 
        .. note::
 
-	  Request working `WSL2
-	  <https://docs.microsoft.com/en-us/windows/wsl/install>`__
+	  Request working
+	  :doc:`/trainings/material/soup/linux/basics/intro/wsl`
 	  installation until next time around.
 
    * * 2022-03-10

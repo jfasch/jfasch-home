@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-Windows Subsystem for Linux
-===========================
+Windows Subsystem for Linux (WSL)
+=================================
 
 .. note:: Disclaimer!
 
@@ -17,8 +17,21 @@ Windows Subsystem for Linux
 .. contents::
    :local:
 
+Links
+-----
+
 This document is a rather half hearted approach to guiding people
-through *working for Linux on Windows*. 
+through *working for Linux on Windows*. Follow the links below - so
+much for guidance (the rest of the document is very opinionated
+|:face_with_raised_eyebrow:|).
+
+* `Basic install document
+  <https://docs.microsoft.com/en-us/windows/wsl/install>`__
+* `Set up a WSL development environment
+  <https://docs.microsoft.com/en-us/windows/wsl/setup/environment>`__
+* `Get started using Visual Studio Code with Windows Subsystem for
+  Linux
+  <https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode>`__
 
 My $0.02
 --------
@@ -42,7 +55,18 @@ to help them out as much as they can [#selfish]_.
 WSL, Finally
 ------------
 
-WSL is a good thing - alternatives are:
+WSL is a good thing. If I needed to, I'd appreciate that I could just
+say (but not without opening a command window first),
+
+.. code-block:: console
+
+   wsl --install   
+
+This innocent looking command installs a virtualized `Ubuntu Linux
+<https://ubuntu.com/>`__ inside Windows, and provides mostly seamless
+integration with it.
+
+Alternatives are:
 
 * A full virtual machine like `VirtualBox
   <https://www.virtualbox.org/>`__ or `VMWare
@@ -51,23 +75,6 @@ WSL is a good thing - alternatives are:
   <https://www.mingw-w64.org/>`__ or `Cygwin
   <https://www.cygwin.com/>`__
 
-If I needed to, I'd appreciate that I could just say (but not without
-opening a command window first),
-
-.. code-block:: console
-
-   wsl --install   
-
-Links
------
-
-* `Basic install document
-  <https://docs.microsoft.com/en-us/windows/wsl/install>`__
-* `Set up a WSL development environment
-  <https://docs.microsoft.com/en-us/windows/wsl/setup/environment>`__
-* `Get started using Visual Studio Code with Windows Subsystem for
-  Linux
-  <https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode>`__
 
 .. rubric:: Footnotes
 
