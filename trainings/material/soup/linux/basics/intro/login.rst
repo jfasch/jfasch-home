@@ -31,7 +31,7 @@ Authentication: Prompting The User For Login Data
    :align: left
    :header-rows: 1
 
-   * * GNOME3 (gdm)
+   * * GNOME3 login (gdm)
      * Console login (``agetty``)
      * SSH login
    * * .. image:: gdm-wayland.png

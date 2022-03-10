@@ -7,6 +7,7 @@ int main(void)
     while (1) {
         printf("%d\n", i);
         ten_integers[i] = i;
+        i++;
     }
     return 0;
 }
