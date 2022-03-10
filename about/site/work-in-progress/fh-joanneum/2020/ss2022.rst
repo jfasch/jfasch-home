@@ -26,7 +26,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 3
      *
 
-       * :doc:`/trainings/material/soup/linux/basics/intro/group`
+       * From :doc:`/trainings/material/soup/linux/basics/intro/group`
 
 	 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
 	 * :doc:`/trainings/material/soup/linux/basics/intro/blocking-io/group`
@@ -42,51 +42,25 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 
      * 
      * 3
-     * * :doc:`/trainings/material/soup/linux/basics/intro/group` (continued from 2022-03-08)
+     * * From :doc:`/trainings/material/soup/linux/basics/intro/group` (continued from 2022-03-08)
 
 	 * :doc:`/trainings/material/soup/linux/basics/intro/process`
 	 * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
 	 * :doc:`/trainings/material/soup/linux/basics/intro/login`
 
-       * :doc:`/trainings/material/soup/linux/basics/shell/group`
+       * From :doc:`/trainings/material/soup/linux/basics/shell/group`
 
 	 * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
 	 * :doc:`/trainings/material/soup/linux/basics/shell/paths`
+         * :doc:`/trainings/material/soup/linux/basics/shell/cwd`
+         * :doc:`/trainings/material/soup/linux/basics/shell/ls`
+         * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
+         * :doc:`/trainings/material/soup/linux/basics/shell/cp`
+         * :doc:`/trainings/material/soup/linux/basics/shell/mv`
 
-       * **Static aspect: file system** (also from
-	 :download:`/trainings/material/pdf/010-linux-basics.pdf`)
+       * From :doc:`/trainings/material/soup/linux/basics/permissions/group`
 
-         * Current working directory (commands ``cd``, ``pwd``)
-         * Overview of a typical Linux filesystem structure
-	   (|longrightarrow| *home*)
-	 * Commands: ``ls``, ``cp``, ``mv``, ``rm``, ``rmdir``
-	 * :doc:`/trainings/material/soup/linux/basics/permissions/group`
-
-       * **Dynamic aspect: processes and scheduling**
-
-         * Embedded/bare-metal vs. OS
-         * Address spaces: virtual memory, memory access permissions
-         * Processes (and threads) (transcribe *and pimp* relevant
-	   sections from
-	   :download:`/trainings/material/pdf/010-linux-basics.pdf`)
-
-           * Command ``ps`` (and all its usage variants :-) )
-	   * ``/proc``
-	   * Permissions: user and group IDs
-	   * Set-UID programs; ``sudo``
-
-         * Scheduling intro
-
-           * :doc:`/trainings/material/soup/sysprog/scheduling/basics`
-           * :doc:`/trainings/material/soup/sysprog/scheduling/realtime`
-
-       * **More tools** (transcribe *and pimp* relevant sections from
-	 :download:`/trainings/material/pdf/010-linux-basics.pdf`)
-
-	 * Viewing: ``cat``, ``head``, ``tail``
-	 * Processing: ``cut``, ``grep``
-	 * Redirection, standard streams
-	 * Filtering: the *pipe*
+	 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
 
    * * 2022-03-21
      *

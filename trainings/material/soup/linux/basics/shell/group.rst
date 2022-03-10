@@ -18,6 +18,8 @@ Contents
    ls
    cwd
    file_dir_create_rm
+   cp
+   mv
    links
 
 Dependencies
