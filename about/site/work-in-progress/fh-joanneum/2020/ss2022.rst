@@ -58,15 +58,15 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * :doc:`/trainings/material/soup/linux/basics/shell/cp`
          * :doc:`/trainings/material/soup/linux/basics/shell/mv`
 
-       * From :doc:`/trainings/material/soup/linux/basics/permissions/group`
-
-	 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-
    * * 2022-03-21
      *
      * 
      * 3
-     * * **Working with embedded devices**
+     * * From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+	 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+
+       * **Working with embedded devices**
 
          On a cloud computer with student accounts ...
 
