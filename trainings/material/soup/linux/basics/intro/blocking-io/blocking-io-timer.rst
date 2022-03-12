@@ -18,6 +18,11 @@ Blocking I/O: On A Timer? WTF?
    * `man -s 2 read <https://man7.org/linux/man-pages/man2/read.2.html>`__
    * `man -s 2 close <https://man7.org/linux/man-pages/man2/close.2.html>`__
 
+.. sidebar:: See Also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls`
+   * :doc:`/trainings/material/soup/linux/sysprog/errorhandling`
+
 Setup A Timer
 -------------
 

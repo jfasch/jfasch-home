@@ -17,6 +17,11 @@ Blocking I/O (On A File): What is That?
    * `man -s 2 write <https://man7.org/linux/man-pages/man2/write.2.html>`__
    * `man -s 2 close <https://man7.org/linux/man-pages/man2/close.2.html>`__
 
+.. sidebar:: See Also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls`
+   * :doc:`/trainings/material/soup/linux/sysprog/errorhandling`
+
 Reading a File
 --------------
 
