@@ -41,21 +41,32 @@ Creating a Directory: ``mkdir``
 Creating a File: I/O redirection
 --------------------------------
 
+**Create a file (or overwrite if it exists)**
+
 .. code-block:: console
 
-   $ echo hallo > /tmp/a-file-containing-hallo
-   $ cat /tmp/a-file-containing-hallo
-   hallo
+   $ echo hello > /tmp/a-file-containing-hello
+   $ cat /tmp/a-file-containing-hello
+   hello
 
 And permissions? I didn't say how I want these!
 |:face_with_raised_eyebrow:|
 
 .. code-block:: console
 
-   $ ls -l /tmp/a-file-containing-hallo
-   -rw-rw-r--. 1 jfasch jfasch 6 Mar  9 18:56 /tmp/a-file-containing-hallo
+   $ ls -l /tmp/a-file-containing-hello
+   -rw-rw-r--. 1 jfasch jfasch 6 Mar  9 18:56 /tmp/a-file-containing-hello
 
 |longrightarrow| :doc:`../permissions/umask`
+
+**Append to an existing file (or creating, if it doesn't exist)**
+
+.. code-block:: console
+
+   $ echo sweetheart >> /tmp/a-file-containing-hello
+   $ cat /tmp/a-file-containing-hello
+   hello
+   sweetheart
 
 Removing A File: ``rm``
 -----------------------

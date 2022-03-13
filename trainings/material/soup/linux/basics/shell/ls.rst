@@ -6,8 +6,8 @@
 .. include:: <mmlalias.txt>
 
 
-Directory Listings: The ``ls`` Command``
-========================================
+Directory Listings: The ``ls`` Command
+======================================
 
 .. sidebar:: Documentation
 

@@ -22,6 +22,8 @@ Contents
    mv
    links
 
+   exercises/group
+
 Dependencies
 ------------
 
