@@ -1,0 +1,26 @@
+2022-03-10 (Homework until 2022-03-21)
+======================================
+
+From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`
+--------------------------------------------------------------------------------------
+
+**Exercise series: create, copy, move, remove things**
+
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-copy-files`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-move-files`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/verify-hierarchy`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/copy-tree`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-tree`
+
+**Joke, mostly**
+
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-rf`
+
+From  :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/group`
+---------------------------------------------------------------------------
+
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/etc-passwd-size`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/dev-types`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/home-permissions`

@@ -24,40 +24,13 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 
      * 
      * 3
-     *
-
-       * From :doc:`/trainings/material/soup/linux/basics/intro/group`
-
-	 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
-	 * :doc:`/trainings/material/soup/linux/basics/intro/blocking-io/group`
-	 * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
-
-       .. note::
-
-	  Request working
-	  :doc:`/trainings/material/soup/linux/basics/intro/wsl`
-	  installation until next time around.
-
+     * * :doc:`ss2022-log/2022-03-08`
    * * 2022-03-10
      * 
      * 
      * 3
-     * * From :doc:`/trainings/material/soup/linux/basics/intro/group` (continued from 2022-03-08)
-
-	 * :doc:`/trainings/material/soup/linux/basics/intro/process`
-	 * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
-	 * :doc:`/trainings/material/soup/linux/basics/intro/login`
-
-       * From :doc:`/trainings/material/soup/linux/basics/shell/group`
-
-	 * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
-	 * :doc:`/trainings/material/soup/linux/basics/shell/paths`
-         * :doc:`/trainings/material/soup/linux/basics/shell/cwd`
-         * :doc:`/trainings/material/soup/linux/basics/shell/ls`
-         * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
-         * :doc:`/trainings/material/soup/linux/basics/shell/cp`
-         * :doc:`/trainings/material/soup/linux/basics/shell/mv`
-
+     * * :doc:`ss2022-log/2022-03-10`
+       * :doc:`ss2022-log/2022-03-10-homework`
    * * 2022-03-21
      *
      * 

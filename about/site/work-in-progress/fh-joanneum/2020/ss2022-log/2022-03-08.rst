@@ -1,0 +1,21 @@
+2022-03-08
+==========
+
+.. contents::
+   :local:
+
+Topics
+------
+
+* From :doc:`/trainings/material/soup/linux/basics/intro/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/intro/overview`
+  * :doc:`/trainings/material/soup/linux/basics/intro/blocking-io/group`
+  * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
+
+Homework
+--------
+
+Request working :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+installation until next time around.
+
