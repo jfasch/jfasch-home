@@ -1,8 +1,8 @@
-.. ot-exercise:: linux.basics.shell.exercises.verify_hierarchy
-   :dependencies: linux.basics.shell.exercises.mkdir_p_rm_r,
-		  linux.basics.shell.exercises.echo_create_files,
-		  linux.basics.shell.exercises.echo_copy_files,
-		  linux.basics.shell.exercises.echo_move_files
+.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.verify_hierarchy
+   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
+		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files,
+		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_copy_files,
+		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_move_files
 
 
 Exercise: Verify, Repeat
@@ -52,11 +52,11 @@ In the exercises
         8020 Graz
 
 2. If any of the above is not the case, :doc:`remove
-   <../file_dir_create_rm>` ``/tmp/parent`` again recursively, and
+   <../../file_dir_create_rm>` ``/tmp/parent`` again recursively, and
    recreate the hierarchy.
 3. **Repeat until successful!**
 
 
 
 .. ot-graph::
-   :entries: linux.basics.shell.exercises.verify_hierarchy
+   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.verify_hierarchy

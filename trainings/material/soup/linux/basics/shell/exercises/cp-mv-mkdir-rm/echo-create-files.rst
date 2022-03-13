@@ -1,5 +1,5 @@
-.. ot-exercise:: linux.basics.shell.exercises.echo_create_files
-   :dependencies: linux.basics.shell.exercises.mkdir_p_rm_r,
+.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files
+   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
 		  linux.basics.shell.file_dir_create_rm,
 		  linux.basics.shell.paths,
 		  linux.basics.shell.cwd
@@ -25,4 +25,4 @@ Exercise: Create Files (I/O Redirection)
     * Your ZIP code and city
 
 .. ot-graph::
-   :entries: linux.basics.shell.exercises.echo_create_files
+   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files

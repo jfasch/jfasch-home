@@ -1,5 +1,5 @@
-.. ot-exercise:: linux.basics.shell.exercises.copy_tree
-   :dependencies: linux.basics.shell.exercises.verify_hierarchy,
+.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.copy_tree
+   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.verify_hierarchy,
 		  linux.basics.shell.cp
 
 
@@ -21,7 +21,7 @@ Exercise: Copy Directory Tree
      ├── garbage2.txt
      └── hello
   
-* :doc:`Copy <../cp>` that tree into your home directory as
+* :doc:`Copy <../../cp>` that tree into your home directory as
   ``~/parent-copy`` so that you see the following,
 
   .. code-block:: console
@@ -38,4 +38,4 @@ Exercise: Copy Directory Tree
 
 
 .. ot-graph::
-   :entries: linux.basics.shell.exercises.copy_tree
+   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.copy_tree
