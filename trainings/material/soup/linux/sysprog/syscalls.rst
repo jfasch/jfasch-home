@@ -30,41 +30,41 @@ but rather *System Calls*.
 * Changes context from user mode to kernel mode
 * Implementation is CPU specific (software interrupt ...)
 * Numbers, parameters, etc. are Linux specific
-* |longrightarrow| "Kernel acts on behalf of a process"
+* |longrightarrow| "kernel acts on behalf of a process"
 
-System Calls and the C-Library
+system calls and the c-library
 ------------------------------
 
 .. list-table::
    :align: left
    :widths: auto
    
-   * * System calls are never used directly by a program ...
+   * * system calls are never used directly by a program ...
 
        .. code-block:: c
-	  :caption: Syscall Wrapper: ``write()``
+	  :caption: syscall wrapper: ``write()``
 
           #include <unistd.h>
           int main() {
-              write(1, "Hallo\n", 6);
+              write(1, "hallo\n", 6);
               return 0;
           }
 
      * .. image:: syscalls-libc.svg
           :scale: 50%
 
-Library Function or System Call?
+library function or system call?
 --------------------------------
 
-Distinction is not always clear |longrightarrow| Manual pages
+distinction is not always clear |longrightarrow| manual pages
 
 .. list-table::
    :align: left
    :widths: auto
    :header-rows: 1
 
-   * * System calls (``man -s 2 ...``)
-     * *No* system calls (``man -s 3 ...``)
+   * * system calls (``man -s 2 ...``)
+     * *no* system calls (``man -s 3 ...``)
    * * * ``write()`` (`man -s 2 write
          <https://man7.org/linux/man-pages/man2/write.2.html>`__)
        * ``read()`` (`man -s 2 read
@@ -78,15 +78,15 @@ Distinction is not always clear |longrightarrow| Manual pages
        * ``getaddrinfo()`` (`man -s 3 getaddrinfo <https://man7.org/linux/man-pages/man3/getaddrinfo.3.html>`__
        *  ...
 
-Manual Pages
+manual pages
 ------------
 
 ``man [section] name``
 
-For example: ``man man`` |longrightarrow|
+for example: ``man man`` |longrightarrow|
 
-#. User Commands
-#. System Calls
+#. user commands
+#. system calls
 #. C Library Functions
 #. Devices and Special Files
 #. File Formats and Conventions
