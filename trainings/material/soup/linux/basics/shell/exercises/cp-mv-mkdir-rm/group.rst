@@ -1,8 +1,8 @@
 .. ot-group:: linux.basics.shell.exercises.cp_mv_mkdir_rm
 
 
-Create/Copy/Move/Remove
-=======================
+Exercises: Create/Copy/Move/Remove
+==================================
 
 .. contents::
    :local:

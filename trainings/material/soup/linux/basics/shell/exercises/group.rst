@@ -14,6 +14,7 @@ Contents
    :maxdepth: 1
 
    cp-mv-mkdir-rm/group
+   ls/group
 
 Dependencies
 ------------
