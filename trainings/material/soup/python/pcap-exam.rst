@@ -83,4 +83,3 @@ Sample Questions
 ----------------
 
 * https://www.examtopics.com/exams/python-institute/pcap/
-* https://www.itexams.com/exam/PCAP

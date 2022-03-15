@@ -26,26 +26,34 @@ Python Advanced (2022-03-15 - 2022-03-17)
 .. contents::
    :local:
 
+2022-03-15
+----------
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+
+Draft Agenda
+------------
 
 Encoding
---------
+........
 
 * :doc:`/trainings/material/soup/python/misc/encoding/topic`
 
 Iteration Recap
----------------:
+...............
 
-* :doc:/trainings/material/soup/python/advanced/iteration-generation/topic`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
 
 Decorators
-----------
+..........
 
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
 OO
---
+...
 
 * :doc:`/trainings/material/soup/python/advanced/oo/basics` (maybe
   pimp that, using the KarteiKarte example)
@@ -53,12 +61,12 @@ OO
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
 
 Modules
--------
+.......
 
 * :doc:`/trainings/material/soup/python/advanced/modules`
 
 Miscellaneous Topics
---------------------
+....................
 
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
