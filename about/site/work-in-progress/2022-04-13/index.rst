@@ -22,3 +22,5 @@ Feedback, Staged For The Next Round
    :maxdepth: 1
    
    draft-next
+   googletest-instructions
+

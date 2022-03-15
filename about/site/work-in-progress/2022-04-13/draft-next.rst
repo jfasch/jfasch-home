@@ -12,39 +12,31 @@ Agenda (Draft, Unpublished)
    * Add section on "Code Structure"
    * Proposed changes 2022-03-09
 
-     * 2 bloecke
+     * Block 1: Clean code
 
-       * 1
+       * Thoughts from Uncle Bob |longrightarrow| discussion
+       * Keeping Code Clean in the Small
 
-	 * clean code -> uncle bob
-	 * ... in the small ...
+     * Block 2: Unit Testing, TDD
 
-       * 2
+       * C/C++: googletest
+       * Python: pytest (sketch only)
+       * Livehacking and simple project
 
-	 * unit testing: c/c++ (see below gtest/boost) and python (?)
-           (unittest/pytest -> sketch only)
-	 * tdd
-	 * livehacking -> mir was einfallen lassen
+     * Block 3: TDD hands-on
 
-       * hands on
+       * 7 people |longrightarrow| groups
+       * Artificial project; it's not easy to find code that can be
+         made testable/tested at customer's site.
+       * cmake, cdash (?), ctest, visual studio (2019, doze)
+       * In-house tools for unittests?
 
-	 * 7 entwickler (3er, 4er)
-	 * real life code oder skizze?
+	 * cdk (core development kit) testsystem (home-made, unwanted
+           internally)
+	 * https://robotframework.org/ -> jenkins
 
-	   * audio resampling? geht das? testbar?
-	   * sonst? was faellt euch ein?
-
-	 * cmake, cdash (?), ctest, visual studio (2019, doze)
-	 * tools fuer unittests?
-
-	   * cdk (core development kit) testsystem
-             (hausgemacht). wuerden sie gerne wegkommen.
-	   * https://robotframework.org/ -> jenkins
-
-	 * 2 dummy projekte mit je cmake/gtest machen und schicken ->
-           probieren zu bauen
-	 * frage: gtest oder boost?
-	 * frage: cdk? kann man das mit den metriken extrahieren?
+       * Create two dummy projects googletest and boost, try to build
+         those
 
 Introduction: Clean Code? What is that?
 ---------------------------------------
