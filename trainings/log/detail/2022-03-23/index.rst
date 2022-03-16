@@ -99,3 +99,21 @@ Select topics from chapters ...
 * :doc:`/trainings/material/soup/python/advanced/group`
 * :doc:`/trainings/material/soup/python/swdev/group`
 * :doc:`/trainings/material/soup/python/misc/group`
+
+.. note:: Customer Request
+
+   Aus meiner Sicht wäre zu Beginn noch kurz ein Überblick über
+   Installation/Betreiben von unterschiedlichen Versionen sinnvoll (am
+   besten auch in Bezug auf virtuelle Umgebungen). In das Thema kommt
+   man früher oder später unausweichlich.
+   
+   Folgende Punkte sind interessant:
+
+   * Installationsverzeichnis(e)
+   * Verzeichnisse unterschiedlicher Versionen
+   * Python in VisualStudio
+   * Code mit unterschiedlichen Versionen ausführen
+
+   Wenn man Code aus dem Internet hernimmt kommt man meiner Erfahrung
+   nach schnell auf diese Dinge. Dann machts erst Spaß wenn man weiß
+   was man tun muss damits rennt...
