@@ -77,3 +77,19 @@ And Keyword Arguments?
 * A-ha: similar to ``*args``, ``**kwargs`` is passed as dictionary
 * And unpacking |longrightarrow| same: ``**``
 
+And Both? ``*args, **kwargs``?
+------------------------------
+
+Rule: positional args must come before keyword args
+
+.. literalinclude:: code/60-args-kwargs.py
+   :caption: :download:`code/60-args-kwargs.py`
+   :language: python
+
+.. code-block:: console
+
+   $ python code/60-args-kwargs.py
+   args: (1, 2, 3)
+   kwargs: {'a': 7, 'b': 42, 'c': 'hallo', 'blah': {'zwei', 'eins'}}
+
+

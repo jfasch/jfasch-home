@@ -31,26 +31,48 @@ Python Advanced (2022-03-15 - 2022-03-17)
 
 * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
 * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
+
+2022-03-16
+----------
+
+Good morning!
+
+* Live-hack ``eval()``
+
+  * :doc:`notebook (first) <notebook-wrapper>`
+  * `dict-from-cmdline.py <https://github.com/jfasch/2022-02-23/blob/main/livehacking/dict-from-cmdline.py>`__
+
+* :doc:`/trainings/material/soup/python/advanced/exec/topic`
+  (`exec-context.py
+  <https://github.com/jfasch/2022-02-23/blob/main/livehacking/exec-context.py>`__)
+
+* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+  (`args-kwargs.py
+  <https://github.com/jfasch/2022-02-23/blob/main/livehacking/args-kwargs.py>`__)
+* :doc:`/trainings/material/soup/python/advanced/closures/topic`
+  (`closure.py
+  <https://github.com/jfasch/2022-02-23/blob/main/livehacking/closure.py>`__)
+* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+  (`decorator.py
+  <https://github.com/jfasch/2022-02-23/blob/main/livehacking/decorator.py>`__)
+
+Continue with exercises: CSV |longrightarrow| modularization
+
+* :doc:`/trainings/material/soup/python/misc/csv/topic`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+* :doc:`/trainings/material/soup/python/advanced/modules`
+* :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
 
 Draft Agenda
 ------------
-
-Encoding
-........
-
-* :doc:`/trainings/material/soup/python/misc/encoding/topic`
 
 Iteration Recap
 ...............
 
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
-
-Decorators
-..........
-
-* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-* :doc:`/trainings/material/soup/python/advanced/closures/topic`
-* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
 OO
 ...
@@ -60,11 +82,6 @@ OO
 * :doc:`/trainings/material/soup/python/advanced/oo/implementation-inheritance` (optional)
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
 
-Modules
-.......
-
-* :doc:`/trainings/material/soup/python/advanced/modules`
-
 Miscellaneous Topics
 ....................
 
@@ -72,6 +89,11 @@ Miscellaneous Topics
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
 * :doc:`/trainings/material/soup/python/misc/db/group`
-* :doc:`/trainings/material/soup/python/misc/csv/topic`
 * :doc:`/trainings/material/soup/python/misc/context_manager/topic`
 * :doc:`/trainings/material/soup/python/misc/mqtt/topic`
+
+
+Links
+-----
+
+* jjjj super considered super

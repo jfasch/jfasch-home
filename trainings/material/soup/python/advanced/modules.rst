@@ -1,7 +1,4 @@
 .. ot-topic:: python.advanced.modules
-   :dependencies: python.basics.python_0270_functions,
-		  python.basics.python_0140_variables,
-		  python.advanced.oo.basics
 
 .. include:: <mmlalias.txt>
 

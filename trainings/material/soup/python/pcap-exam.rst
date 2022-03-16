@@ -82,4 +82,6 @@ Objectives covered by the block (9 items)
 Sample Questions
 ----------------
 
+* `Python Certification Exam PCAP-31-03 - Practice Tests - 2022
+  <https://www.udemy.com/course/python-certification-exam-pcap-31-03-practice-tests/>`__
 * https://www.examtopics.com/exams/python-institute/pcap/
