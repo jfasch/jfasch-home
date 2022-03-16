@@ -38,6 +38,10 @@ Agenda (Draft, Unpublished)
        * Create two dummy projects googletest and boost, try to build
          those
 
+   * Complain loudly about `this
+     <https://google.github.io/googletest/advanced.html#type-assertions>`__. Tested
+     code should not contain test code.
+
 Introduction: Clean Code? What is that?
 ---------------------------------------
 
