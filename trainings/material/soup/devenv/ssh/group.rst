@@ -10,6 +10,7 @@ Topics
    :maxdepth: 1
 
    basics
+   key-pair
    scp
    portforwarding
    sshfs

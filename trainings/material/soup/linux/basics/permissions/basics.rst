@@ -7,6 +7,17 @@
 Mode, User and Group Ownership
 ==============================
 
+.. sidebar:: Documentation
+
+   * `man -s 8 useradd
+     <https://man7.org/linux/man-pages/man8/useradd.8.html>`__
+   * `man -s 8 groupadd
+     <https://man7.org/linux/man-pages/man8/groupadd.8.html>`__
+   * `man -s 8 usermod
+     <https://man7.org/linux/man-pages/man8/usermod.8.html>`__
+   * `man -s 8 groupmod
+     <https://man7.org/linux/man-pages/man8/groupmod.8.html>`__
+
 .. contents::
    :local:
 

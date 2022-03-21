@@ -1,4 +1,5 @@
-.. include:: <mmlalias.txt>
+.. ot-topic:: devenv.ssh.basics
+   :dependencies: linux.basics.intro.login
 
 .. meta::
    :description: Slide material: SSH basics
@@ -6,17 +7,17 @@
               authentication, training, key based authentication,
               remote login
 
+.. include:: <mmlalias.txt>
+
 
 SSH: Basics
 ===========
 
-.. ot-topic:: devenv.ssh.basics
-
 .. contents::
    :local:
 
-SSH: Overview (1)
------------------
+Overview
+--------
 
 **Secure Shell**: *secure* login to remote computers
 
@@ -25,8 +26,7 @@ SSH: Overview (1)
 * |longrightarrow| NSA must have it a bit harder!
 * |longrightarrow| SSH
 
-SSH:Overview (2)
-----------------
+**Focus**
 
 * SSH is a protocol (primarily, at least))
 * Main task: authentication and encryption
@@ -40,10 +40,10 @@ SSH:Overview (2)
   * Tunneling (a.k.a VPN)
   * ...
 
-SSH: Login (1)
---------------
+Login
+-----
 
-**Logging in as user \texttt{jfasch}**
+**Logging in as user** ``jfasch``
 
 .. code-block:: console
 
@@ -56,15 +56,15 @@ SSH: Login (1)
    $ ssh home.com
 
 **Logging in and executing a remote command** (using one's login
-  shell)**
+shell)
 
 .. code-block:: console
 
-   $ ssh jfasch@home.com ls -l}
+   $ ssh jfasch@home.com ls -l
    $ ssh jfasch@home.com 'ps -efl | grep sshd'    # quoting necessary: '|' is a shell metacharacter
 
-SSH: Exit Status, ``stdin``, ``stdout``
----------------------------------------
+Exit Status, ``stdin``, ``stdout``: Scripting
+---------------------------------------------
 
 **Exit status of the remote command is propagated**
 
@@ -89,46 +89,3 @@ SSH: Exit Status, ``stdin``, ``stdout``
      remote computer
    * ``wc -l`` runs locally
 
-SSH: Public Key Authentication (1)
-----------------------------------
-
-Password authentication is insecure:
-
-* Man-in-the-Middle (MITM) attacks
-* Brute force attacks to guess passwords
-
-... and uncomfortable: have to type password over and over
-
-* *Public key* deployed to server
-* *Private key* remains local, in one's personal locked safe ideally
-
-SSH: Public Key Authentication (2)
-----------------------------------
-
-.. code-block:: console
-
-   $ ssh-keygen -t rsa
-   Generating public/private rsa key pair.
-   ...
-
-* *Public key* ``~/.ssh/id_rsa.pub`` is deployed to the server: append
-  it to ``~/.ssh/authorized_keys``.
-* *Private key* ``~/.ssh/id_rsa`` remains local.
-
-SSH: Public Key Authentication (3)
-----------------------------------
-
-* *Passphrase* provides additional safeguard, should the private key
-  get lost
-* |longrightarrow| *Drawback*: login becomes interactive again
-  (although on a different level)
-* Omitting passphrase: answer prompt empty, twice
-* ``ssh-agent``: managing passphrases
-
-  * Remembers passphrase in memory, *safely*
-  * ``ssh`` talks to agent when passphrase needed
-
-* *Permissions* of ``~/.ssh`` - and contained files - are
-  important. If permissions are too open (others could read
-  credentials, other could write/modify), ``ssh`` will complain loudly
-  and refuse to work.

@@ -35,31 +35,23 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      *
      * 
      * 3
-     * * From :doc:`/trainings/material/soup/linux/basics/permissions/group`
-
-	 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-
-       * **Working with embedded devices**
+     *
+       * **Secure Shell**
 
          On a cloud computer with student accounts ...
 
          * :doc:`/trainings/material/soup/devenv/ssh/basics`
-         * :doc:`/trainings/material/soup/devenv/ssh/scp`
+	 * :doc:`/trainings/material/soup/devenv/ssh/key-pair`
+
+       * From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+	 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+	 * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
+
+       * **Secure Shell: More**
+
          * :doc:`/trainings/material/soup/devenv/ssh/portforwarding`
          * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
-
-       * **Development environment**
-
-	 * Jumping through hoops on Doze
-
-	   * `WSL 2 with Visual Studio Code
-	     <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
-	   * `Visual Studio Code Remote - WSL
-             <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
-	   * *Big picture*: how would this fit together with
-             remote/embedded work
-
-	 * ... or native Linux of course :-)
 
    * * 
      * 2022-03-22 
@@ -105,6 +97,19 @@ Block 2: C on Linux: Local and *Cross* Development
 	 * Automatic build: :download:`Makefiles
            </trainings/material/pdf/040-gnu-make.pdf>`
 	 * :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+
+       * **Development environment**
+
+	 * Jumping through hoops on Doze
+
+	   * `WSL 2 with Visual Studio Code
+	     <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
+	   * `Visual Studio Code Remote - WSL
+             <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
+	   * *Big picture*: how would this fit together with
+             remote/embedded work
+
+	 * ... or native Linux of course :-)
 
    * * 2022-04-01
      * 

@@ -13,16 +13,14 @@ SSH: Secure Copy
 .. contents::
    :local:
 
-``scp``
--------
-
-``scp``: *secure copy*
+``scp``: Secure Copy
+--------------------
 
 * Conceptually like ``cp``
 * *Remote* copy
 * Via SSH protocol |longrightarrow| encrypted
 
-**Copying a single file into remote ``$HOME``**
+**Copying a single file into remote** ``$HOME``
 
 .. code-block:: console
 

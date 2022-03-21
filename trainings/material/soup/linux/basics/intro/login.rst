@@ -23,7 +23,8 @@ Authentication: Prompting The User For Login Data
 * Login process verifies that user the is who she claims to be
 
   * Username and password
-  * Username and public/private key
+  * Username and public/private key (see
+    :doc:`/trainings/material/soup/devenv/ssh/key-pair`)
   * Username and token (Kerberos/Active directory)
   * ...
 
@@ -43,8 +44,8 @@ Authentication: Prompting The User For Login Data
           $ ssh jfasch@192.168.1.147
 	  jfasch@192.168.1.147's password: 
 
-Authentication - Verification Of Login Data
--------------------------------------------
+Authentication: Verification Of Login Data
+------------------------------------------
 
 * Authentication information has been prompted |longrightarrow|
   username, password (lets stick with the simplest case).
@@ -101,10 +102,16 @@ in*. *What does that mean?*
 Impersonation
 -------------
 
+.. sidebar:: Documentation
+
+   * `man -s 2 setuid
+     <https://man7.org/linux/man-pages/man2/setuid.2.html>`__
+
 * Login process runs as ``root`` - necessary to *impersonate as the
   user*
 
-  * |longrightarrow| System call ``setuid()``
+  * |longrightarrow| System call ``setuid()`` (or executing a
+    :doc:`"setuid program" <../permissions/setuid>`)
   * Only possible for ``root``
   * "Hey kernel, I don't want to be ``0`` anymore, let me be ``1000``
     from now on
