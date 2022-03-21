@@ -25,33 +25,28 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 
      * 3
      * * :doc:`ss2022-log/2022-03-08`
+
+         * OS concepts
+
    * * 2022-03-10
      * 
      * 
      * 3
      * * :doc:`ss2022-log/2022-03-10`
+
+         * OS concepts (cont'd)
+	 * Basic file system commands
+
        * :doc:`ss2022-log/2022-03-10-homework`
+
    * * 2022-03-21
      *
      * 
      * 3
-     *
-       * **Secure Shell**
-
-         On a cloud computer with student accounts ...
-
-         * :doc:`/trainings/material/soup/devenv/ssh/basics`
-	 * :doc:`/trainings/material/soup/devenv/ssh/key-pair`
-
-       * From :doc:`/trainings/material/soup/linux/basics/permissions/group`
-
-	 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-	 * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
-
-       * **Secure Shell: More**
-
-         * :doc:`/trainings/material/soup/devenv/ssh/portforwarding`
-         * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
+     * * :doc:`ss2022-log/2022-03-21`
+         
+         * SSH (``ssh``, keys, ``scp``, ``sshfs``)
+	 * UNIX permissions
 
    * * 
      * 2022-03-22 
@@ -65,6 +60,19 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	 * ``scp``
 	 * ``sshfs``: editing remote files locally
 	 * Commands, I//O redirection, pipe
+
+       * **Development environment**
+
+	 * Jumping through hoops on Doze
+
+	   * `WSL 2 with Visual Studio Code
+	     <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
+	   * `Visual Studio Code Remote - WSL
+             <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
+	   * *Big picture*: how would this fit together with
+             remote/embedded work
+
+	 * ... or native Linux of course :-)
 
    * *
      * 2022-03-25
@@ -97,19 +105,6 @@ Block 2: C on Linux: Local and *Cross* Development
 	 * Automatic build: :download:`Makefiles
            </trainings/material/pdf/040-gnu-make.pdf>`
 	 * :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
-
-       * **Development environment**
-
-	 * Jumping through hoops on Doze
-
-	   * `WSL 2 with Visual Studio Code
-	     <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
-	   * `Visual Studio Code Remote - WSL
-             <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
-	   * *Big picture*: how would this fit together with
-             remote/embedded work
-
-	 * ... or native Linux of course :-)
 
    * * 2022-04-01
      * 

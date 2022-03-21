@@ -1,0 +1,30 @@
+2022-03-21
+==========
+
+.. contents::
+   :local:
+
+Topics
+------
+
+* **Secure Shell**
+
+  On a cloud computer with student accounts ...
+
+  * :doc:`/trainings/material/soup/devenv/ssh/basics`
+  * :doc:`/trainings/material/soup/devenv/ssh/key-pair`
+
+* From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
+
+* **Secure Shell: More**
+
+  * :doc:`/trainings/material/soup/devenv/ssh/scp`
+  * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
+
+Homework
+--------
+
+Create SSH key pairs, send public key.
