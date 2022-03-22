@@ -1,0 +1,27 @@
+.. ot-exercise:: linux.basics.permissions.exercises.shared_file
+   :dependencies: linux.basics.permissions.basics,
+		  linux.basics.permissions.exercises.credentials
+
+
+Exercise: Create Group-Shared File
+==================================
+
+* In your home directory, :doc:`create an empty file
+  <../../shell/file_dir_create_rm>` ``shared.txt`` [#create_file]_.
+* Tune that file's permissions so that every member of your team can
+  write to it.
+
+.. rubric:: Footnotes
+
+.. [#create_file] Each of the following commands will do this for you:
+
+   .. code-block:: console
+
+      $ echo > shared.txt
+
+   .. code-block:: console
+
+      $ touch shared.txt
+
+.. ot-graph::
+   :entries: linux.basics.permissions.exercises.shared_file

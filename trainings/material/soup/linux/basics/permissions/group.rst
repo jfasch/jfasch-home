@@ -18,6 +18,7 @@ Contents
    setuid-livedemo
    umask
    sticky
+   exercises/group
 
 Group Description
 -----------------

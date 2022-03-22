@@ -1,4 +1,4 @@
-.. ot-topic:: devenv.ssh.basics
+.. ot-topic:: linux.ssh.basics
    :dependencies: linux.basics.intro.login
 
 .. meta::

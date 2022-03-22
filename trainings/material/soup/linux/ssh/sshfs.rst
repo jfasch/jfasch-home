@@ -1,14 +1,15 @@
-.. include:: <mmlalias.txt>
+.. ot-topic:: linux.ssh.sshfs
+   :dependencies: linux.ssh.basics
 
 .. meta::
    :description: SSHFS: SSH File System
    :keywords: linux, ssh, file system, network file system, training
 
+.. include:: <mmlalias.txt>
+
+
 SSH File System (``sshfs``)
 ===========================
-
-.. ot-topic:: devenv.ssh.sshfs
-   :dependencies: devenv.ssh.basics
 
 .. contents::
    :local:

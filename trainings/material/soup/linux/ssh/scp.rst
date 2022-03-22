@@ -1,14 +1,15 @@
-.. include:: <mmlalias.txt>
+.. ot-topic:: linux.ssh.scp
+   :dependencies: linux.ssh.basics
 
 .. meta::
    :description: Slide material: scp (secure copy)
    :keywords: linux, ssh, scp, secure copy, training
 
+.. include:: <mmlalias.txt>
+
+
 SSH: Secure Copy
 ================
-
-.. ot-topic:: devenv.ssh.scp
-   :dependencies: devenv.ssh.basics
 
 .. contents::
    :local:

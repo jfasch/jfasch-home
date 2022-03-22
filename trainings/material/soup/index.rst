@@ -23,7 +23,6 @@ work in progress*).
    sysprog/group
    unittest/group
    kernel/index
-   devenv/group
    graph
 
 Code

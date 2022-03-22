@@ -36,6 +36,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 
          * OS concepts (cont'd)
 	 * Basic file system commands
+	 * :doc:`/trainings/material/soup/linux/basics/intro/wsl`
 
        * :doc:`ss2022-log/2022-03-10-homework`
 
@@ -52,16 +53,31 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 2022-03-22 
      * 2022-03-24
      * 3
-     * * **Playing with cloud computer**; exercises around following
-         topics
+     * 
+       * **Homework** (:doc:`ss2022-log/2022-03-10-homework`
 
-         * SSH login
-	 * Public key generation
-	 * ``scp``
-	 * ``sshfs``: editing remote files locally
-	 * Commands, I//O redirection, pipe
+	 * Take as given
+	 * Have a quick look
 
-       * **Development environment**
+       * **Exercises from**
+	 :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory-question`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory-question`
+
+       * **Exercises from**
+         :doc:`/trainings/material/soup/linux/ssh/exercises/group`
+
+         * :doc:`/trainings/material/soup/linux/ssh/exercises/pubkey`
+           (done)
+         * :doc:`/trainings/material/soup/linux/ssh/exercises/copy-file`
+         * :doc:`/trainings/material/soup/linux/ssh/exercises/copy-tree`
+
+       * **Development environment** (if time remains)
 
 	 * Jumping through hoops on Doze
 

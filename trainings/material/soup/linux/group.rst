@@ -8,6 +8,7 @@ Linux
    :maxdepth: 1
 
    basics/group
+   ssh/group
    sysprog/group
    hardware/group
    drafts/group

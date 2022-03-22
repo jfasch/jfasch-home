@@ -68,6 +68,13 @@ And permissions? I didn't say how I want these!
    hello
    sweetheart
 
+Creating an Empty File: ``touch``
+---------------------------------
+
+.. code-block:: console
+
+   $ touch file.txt
+
 Removing A File: ``rm``
 -----------------------
 

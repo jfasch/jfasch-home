@@ -1,7 +1,7 @@
 SSH
 ===
 
-.. ot-group:: devenv.ssh
+.. ot-group:: linux.ssh
 
 Topics
 ------
@@ -14,9 +14,10 @@ Topics
    scp
    portforwarding
    sshfs
+   exercises/group
 
 Dependencies
 ------------
 
 .. ot-graph::
-   :entries: devenv.ssh
+   :entries: linux.ssh

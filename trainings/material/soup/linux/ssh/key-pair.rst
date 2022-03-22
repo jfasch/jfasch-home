@@ -1,5 +1,5 @@
-.. ot-topic:: devenv.ssh.key_pair
-   :dependencies: devenv.ssh.basics, 
+.. ot-topic:: linux.ssh.key_pair
+   :dependencies: linux.ssh.basics, 
 		  linux.basics.intro.login
 
 .. meta::

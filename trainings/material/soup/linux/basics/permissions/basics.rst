@@ -9,6 +9,14 @@ Mode, User and Group Ownership
 
 .. sidebar:: Documentation
 
+   **Tune Permissions**
+
+   * ``man -s 1 chmod`` `here <https://linux.die.net/man/1/chmod>`__
+   * ``man -s 1 chgrp`` `here <https://linux.die.net/man/1/chgrp>`__
+   * ``man -s 1 chown`` `here <https://linux.die.net/man/1/chown>`__
+
+   **Create and Modify User and Group**
+
    * `man -s 8 useradd
      <https://man7.org/linux/man-pages/man8/useradd.8.html>`__
    * `man -s 8 groupadd
@@ -200,20 +208,6 @@ Shell Commands
 
 * ``chmod``, ``chown``, and ``chgrp`` understand
     ``-R`` for "recursive".
-
-.. note:: Documentation
-
-   .. code-block:: console
-
-      $ man 1 chmod
-      $ man 1 chgrp
-      $ man 1 chown
-
-   Online:
-
-   * ``chmod`` `here <https://linux.die.net/man/1/chmod>`__
-   * ``chgrp`` `here <https://linux.die.net/man/1/chgrp>`__
-   * ``chown`` `here <https://linux.die.net/man/1/chown>`__
 
 Permission Bits, octal
 ----------------------

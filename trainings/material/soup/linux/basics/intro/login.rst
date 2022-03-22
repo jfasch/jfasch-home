@@ -24,7 +24,7 @@ Authentication: Prompting The User For Login Data
 
   * Username and password
   * Username and public/private key (see
-    :doc:`/trainings/material/soup/devenv/ssh/key-pair`)
+    :doc:`/trainings/material/soup/linux/ssh/key-pair`)
   * Username and token (Kerberos/Active directory)
   * ...
 
