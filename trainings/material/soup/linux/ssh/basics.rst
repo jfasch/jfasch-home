@@ -43,6 +43,15 @@ Overview
 Login
 -----
 
+.. sidebar::
+
+   If the SSH daemon runs on a non-default (22) port, you use the ``-p
+   <portno>`` (lowercase "p") option. For example:
+
+   .. code-block:: console
+
+      $ ssh -p 2020 jfasch@home.com
+
 **Logging in as user** ``jfasch``
 
 .. code-block:: console

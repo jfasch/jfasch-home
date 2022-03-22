@@ -11,9 +11,9 @@ Mode, User and Group Ownership
 
    **Tune Permissions**
 
-   * ``man -s 1 chmod`` `here <https://linux.die.net/man/1/chmod>`__
-   * ``man -s 1 chgrp`` `here <https://linux.die.net/man/1/chgrp>`__
-   * ``man -s 1 chown`` `here <https://linux.die.net/man/1/chown>`__
+   * `man -s 1 chmod <https://linux.die.net/man/1/chmod>`__
+   * `man -s 1 chgrp <https://linux.die.net/man/1/chgrp>`__
+   * `man -s 1 chown <https://linux.die.net/man/1/chown>`__
 
    **Create and Modify User and Group**
 

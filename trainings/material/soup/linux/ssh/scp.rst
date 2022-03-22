@@ -17,6 +17,15 @@ SSH: Secure Copy
 ``scp``: Secure Copy
 --------------------
 
+.. sidebar::
+
+   If the SSH daemon runs on a non-default (22) port, you use the ``-P
+   <portno>`` (uppercase "P") option. For example:
+
+   .. code-block:: console
+
+      $ scp -P 2020 ~/.bashrc jfasch@home.com:
+
 * Conceptually like ``cp``
 * *Remote* copy
 * Via SSH protocol |longrightarrow| encrypted
@@ -42,3 +51,4 @@ SSH: Secure Copy
 .. code-block:: console
 
    $ scp -r ~/Downloads jfasch@home.com:
+

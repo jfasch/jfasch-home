@@ -16,6 +16,7 @@ Exercise: Create Public Directory
   * You and your team mates can look and ``cd`` into it
   * You and your team mates can store data in it
   * You and your team mates can remove data from it
+  * Nobody else but you and your team mates have any permissions
 
 .. ot-graph::
    :entries: linux.basics.permissions.exercises.public_directory

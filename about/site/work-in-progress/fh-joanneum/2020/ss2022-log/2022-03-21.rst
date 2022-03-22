@@ -11,8 +11,8 @@ Topics
 
   On a cloud computer with student accounts ...
 
-  * :doc:`/trainings/material/soup/devenv/ssh/basics`
-  * :doc:`/trainings/material/soup/devenv/ssh/key-pair`
+  * :doc:`/trainings/material/soup/linux/ssh/basics`
+  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
 
 * From :doc:`/trainings/material/soup/linux/basics/permissions/group`
 
@@ -21,8 +21,8 @@ Topics
 
 * **Secure Shell: More**
 
-  * :doc:`/trainings/material/soup/devenv/ssh/scp`
-  * :doc:`/trainings/material/soup/devenv/ssh/sshfs`
+  * :doc:`/trainings/material/soup/linux/ssh/scp`
+  * :doc:`/trainings/material/soup/linux/ssh/sshfs`
 
 Homework
 --------
