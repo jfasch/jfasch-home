@@ -37,37 +37,32 @@ Agenda
   `Notepad++ <https://notepad-plus-plus.org/downloads/>`__)
 * :doc:`/trainings/material/soup/python/basics/python_0125_running/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
+
+  Indentaion bug demo: `indentation-bug.py
+  <https://github.com/jfasch/2022-03-23/blob/main/livehacking/indentation-bug.py>`__
+
+*
+  :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
+  (Sample code: `argv.py
+  <https://github.com/jfasch/2022-03-23/blob/main/livehacking/argv.py>`__)
 * :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
 * :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
+  (Solution: `maximum.py
+  <https://github.com/jfasch/2022-03-23/blob/main/exercises/joerg/maximum.py>`__)
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
-
-Exercises
-`````````
-
-* :doc:`/trainings/material/soup/python/exercises/herdt/boolean`
-* :doc:`/trainings/material/soup/python/exercises/herdt/swap`
 * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
-* :doc:`/trainings/material/soup/python/exercises/herdt/username_password`
-* :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
-* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
-
-.. .. ot-graph::
-..    :entries: python.exercises.herdt.boolean,
-..  	     python.exercises.herdt.swap,
-..  	     python.exercises.herdt.max_numbers,
-..  	     python.exercises.herdt.greeting,
-..  	     python.exercises.herdt.username_password,
-.. 	     python.exercises.herdt.while_even_numbers,
-.. 	     python.exercises.legacy.cmdline_digit
+  (Solution: `greet.py
+  <https://github.com/jfasch/2022-03-23/blob/main/exercises/joerg/greet.py>`__)
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 
 2022-03-30: Basics
 ..................
 
+* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
+* :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`

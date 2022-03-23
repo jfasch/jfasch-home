@@ -8,6 +8,11 @@
 Exercise: Greeting, Depending on Time of Day
 ============================================
 
+.. sidebar:: Documentation
+
+   * `Python's input() function
+     <https://docs.python.org/3/library/functions.html#input>`__
+
 A greeting has to be composed automatically, based upon time of day
 and sex.
 
