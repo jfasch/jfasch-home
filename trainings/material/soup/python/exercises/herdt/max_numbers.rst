@@ -12,15 +12,18 @@ Exercise: Determine Maximum of Two Numbers
 
 Write a program that
 
-* Takes two numbers from the commandline. *Remember*: commandline
-  arguments can only be strings, so those have to be converted to
-  numbers.
+* Takes two numbers from the :doc:`commandline
+  </trainings/material/soup/python/basics/python_0139_commandline_argv/topic>`. *Remember*:
+  commandline arguments can only be strings, so those have to be
+  :doc:`converted to numbers
+  </trainings/material/soup/python/basics/python_0150_datatypes_overview/topic>`.
 * Determines the maximum of the numbers.
 * Outputs the maximum.
 
 .. code-block::
 
-   $ python maximum.py 42 666
+   $ python maximum.py 42 123
+   123
 
 Dependencies
 ------------
