@@ -9,13 +9,16 @@ Mode, User and Group Ownership
 
 .. sidebar:: Documentation
 
-   **Tune Permissions**
+   *Tune Permissions*
 
    * `man -s 1 chmod <https://linux.die.net/man/1/chmod>`__
+
+   *Change Ownership*
+
    * `man -s 1 chgrp <https://linux.die.net/man/1/chgrp>`__
    * `man -s 1 chown <https://linux.die.net/man/1/chown>`__
 
-   **Create and Modify User and Group**
+   *Create and Modify Users and Groups*
 
    * `man -s 8 useradd
      <https://man7.org/linux/man-pages/man8/useradd.8.html>`__
@@ -170,44 +173,13 @@ Directory Permissions
 .. code-block:: console
 
    $ ls -ld /etc
-   drwxr-xr-x ... 07:54 /etc
+   drwxr-xr-x 1 root root 4882 Mar 22 12:20 /etc
 
 * Read permissions: *content* (list of names) is readable
 * Execute permissions: to access a file (e.g. for reading), one has to
   have *execute permissions* on the parent directory and all
   directories along the path
 * *The right to* ``cd`` *into the directory*
-
-Shell Commands
---------------
-
-* Permission modification (set to octal value)
-
-  .. code-block:: console
-     
-     $ chmod 755 /bin/script.sh
-
-* Permission modification (differential symbolic)
-
-  .. code-block:: console
-     
-     $ chmod u+x,g-wx,o-rwx /bin/script.sh
-
-* Group ownership modification (only root and members of the group can
-  do this)
-
-  .. code-block:: console
-
-     $ chgrp team /tmp/file
-
-* Ownership modification (only root)
-
-  .. code-block:: console
-
-     # chown jfasch /tmp/file
-
-* ``chmod``, ``chown``, and ``chgrp`` understand
-    ``-R`` for "recursive".
 
 Permission Bits, octal
 ----------------------
@@ -229,3 +201,44 @@ Permission Bits, octal
      * ``111101101``
      * ``chmod 0755 <path>``
 
+Shell Commands: Tuning Permissions
+----------------------------------
+
+* Permission modification (set to octal value, absolutely, the whole
+  bitmask no matter what)
+
+  .. code-block:: console
+
+     $ ls -l /bin/script.sh
+     -rw-rw-r-- 1 jfasch jfasch 612 Mar 23 18:39 script.sh
+     $ chmod 755 /bin/script.sh
+     -rwxr-xr-x 1 jfasch jfasch 0 Mar 23 18:39 script.sh
+
+* Permission modification (differential symbolic)
+
+  .. code-block:: console
+     
+     $ ls -l /bin/script.sh
+     -rw-rw-r-- 1 jfasch jfasch 612 Mar 23 18:39 script.sh
+     $ chmod u+x,g-w,g+x,o+x script.sh 
+     $ ls -l script.sh 
+     -rwxr-xr-x. 1 jfasch jfasch 0 Mar 23 18:42 script.sh
+
+Shell Commands: Changing User/Group Ownership
+---------------------------------------------
+
+* Group ownership modification (only root and members of the group can
+  do this)
+
+  .. code-block:: console
+
+     $ chgrp team /tmp/file
+
+* Ownership modification (only root)
+
+  .. code-block:: console
+
+     # chown jfasch /tmp/file
+
+* ``chmod``, ``chown``, and ``chgrp`` understand ``-R`` for
+  "recursive".

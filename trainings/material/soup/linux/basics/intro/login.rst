@@ -122,3 +122,17 @@ Impersonation
   * Execute ``/bin/bash``
 
 * Done
+
+Logged In, Finally
+------------------
+
+* Finally, when a user is logged in, they get presented a shell (their
+  *login shell*).
+* All commands that they run *inherit* (:doc:`process-tree`) their
+  credentials from their login shell
+* |longrightarrow| UID, GID, (supplementary) groups
+
+.. code-block:: console
+
+   $ id
+   uid=1020(joerg.faschingbauer) gid=1020(joerg.faschingbauer) groups=1020(joerg.faschingbauer),1021(ece20)

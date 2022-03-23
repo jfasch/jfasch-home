@@ -17,6 +17,8 @@ Contents
    shell/group
    permissions/group
 
+   EXAM
+
 Group Description
 -----------------
 

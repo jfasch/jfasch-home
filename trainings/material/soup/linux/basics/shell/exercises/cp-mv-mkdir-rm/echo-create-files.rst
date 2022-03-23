@@ -24,5 +24,14 @@ Exercise: Create Files (I/O Redirection)
     * Your street (including number)
     * Your ZIP code and city
 
+.. hint::
+
+   You use the ``>>`` operator to *append* a line to an existing file
+   (or to create that file if it doesn't exist:
+
+   .. code-block:: console
+
+      $ echo 8020 Graz >> somefile.txt
+
 .. ot-graph::
    :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files
