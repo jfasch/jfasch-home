@@ -95,6 +95,8 @@ Public Place (10 Points)
 .. sidebar::
 
    * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+   * `man -s 1 chmod <https://linux.die.net/man/1/chmod>`__
+   * `man -s 1 chgrp <https://linux.die.net/man/1/chgrp>`__
 
 Tune the permissions of the ``~/exam-01/public-place`` directory in a
 way that
@@ -113,6 +115,22 @@ way that
 
 * Nobody else can do any of the above
 
+.. hint::
+
+   You use the ``-d`` option (together with ``-l`` of course) to the
+   ``ls`` command to view the permissions of the directory itself,
+   *not* its contents.
+
+   For example, this shows the initial - not-yet-tuned - permissions
+   of the directory:
+
+   .. code-block:: console
+
+      $ pwd
+      /home/joerg.faschingbauer/exam-01
+      $ ls -ld public-place/
+      drwxr-xr-x 2 joerg.faschingbauer joerg.faschingbauer 4096 Mar 24 07:00 public-place/
+
 Private Place (10 Points)
 -------------------------
 
@@ -130,43 +148,58 @@ way that
 Shared File in Public Place (10 Points)
 ---------------------------------------
 
-Create a file ``completely-open.txt`` in ``~/exam-01/public-place`` in
-a way that
+#. Create a file ``completely-open.txt`` in ``~/exam-01/public-place``
+   in a way that
 
-* It contains the phrase "Hello teacher"
+   * It contains the phrase "Hello teacher"
+   
+     .. code-block:: console
+   
+        $ cat ~/exam-01/public-place/completely-open.txt
+        Hello teacher
+   
+   * You can modify/write that file
+   * Your fellow members of ``ece20`` can only read it, but not write
+     it
 
-  .. code-block:: console
+#. Create another file ``completely-open-removable.yesno`` in
+   ``~/exam-01/public-place`` that contains either ``yes`` or ``no``,
+   answering the following question:
 
-     $ cat ~/exam-01/public-place/completely-open.txt
-     Hello teacher
-
-* You can modify/write that file
-* Your fellow members of ``ece20`` can only read it
+   *Would any member of the* ``ece20`` *group be able to remove*
+   ``completely-open.txt``?
 
 Make A Backup Of ``~/exam-01`` (15 Points)
 ------------------------------------------
 
-* Goal
+.. sidebar:: Documentation
 
-  * Transfer what you created (i.e. the entire contents of the remote
-    ``~/exam-01`` directory) to your local machine.
-  * Use the ``scp`` command for this task
+   * :doc:`/trainings/material/soup/linux/ssh/scp`
+   * man -s 1 scp
+     <https://man7.org/linux/man-pages/man1/scp.1.html>`__
 
-* Think
+**Goal**
 
-  * What would be the command to do this?
-  * Note that we were extremely picky to restrict permissions in most
-    parts of the tree. How would you preserve those valuable
-    permissions across the remote copy?
+* Transfer what you created (i.e. the entire contents of the remote
+  ``~/exam-01`` directory) to your local machine.
+* Use the ``scp`` command for this task
+* **But read on! Do not start!!**
 
-    (Hint: read the ``scp`` manual page, and find out about the ``-p``
-    option.)
+**Think**
 
-* Create a file ``backup-command.sh`` in ``~/exam-01/public-place``
+* What would be the command to do this?
+* Note that we were extremely picky to restrict permissions in most
+  parts of the tree. How would you preserve those valuable permissions
+  across the remote copy?
+
+  (Hint: read the ``scp`` manual page, and find out about the ``-p``
+  option.)
+
+* Create a file ``backup-command.sh`` in ``~/exam-01/``
   containing that command.
-* Make this file executable for *all users* (but otherwise preserve
-  its default permissions that it had initially)
-* Finally, execute the ``scp`` command on your local machine
+* Make this file executable for *all users*, but otherwise preserve
+  its default permissions that it had initially.
+* **Finally, execute the** ``scp`` **command on your local machine**
 
 Dependencies
 ------------

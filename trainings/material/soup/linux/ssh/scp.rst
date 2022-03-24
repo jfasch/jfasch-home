@@ -14,6 +14,11 @@ SSH: Secure Copy
 .. contents::
    :local:
 
+.. sidebar:: Documentation
+
+   * man -s 1 scp
+     <https://man7.org/linux/man-pages/man1/scp.1.html>`__
+
 ``scp``: Secure Copy
 --------------------
 

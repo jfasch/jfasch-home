@@ -126,11 +126,17 @@ Impersonation
 Logged In, Finally
 ------------------
 
+.. sidebar:: Documentation
+
+   * `man -s 1 id <https://man7.org/linux/man-pages/man1/id.1.html>`__
+
 * Finally, when a user is logged in, they get presented a shell (their
   *login shell*).
 * All commands that they run *inherit* (:doc:`process-tree`) their
   credentials from their login shell
 * |longrightarrow| UID, GID, (supplementary) groups
+
+To find out who you are, you can use the ``id`` command:
 
 .. code-block:: console
 
