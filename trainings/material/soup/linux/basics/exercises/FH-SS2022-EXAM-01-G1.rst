@@ -83,7 +83,7 @@ In the directory ``~/exam-01/credentials``, create a bunch of files as follows:
 
        .. code-block:: console
 
-	  $ cat ~/exam-01/credentials
+	  $ cat ~/exam-01/credentials/name
 	  joerg.faschingbauer
 	  1020
 
@@ -93,7 +93,7 @@ In the directory ``~/exam-01/credentials``, create a bunch of files as follows:
 
        .. code-block:: console
 
-	  $ cat ~/exam-01/primary-group
+	  $ cat ~/exam-01/credentials/primary-group
 	  joerg.faschingbauer
 	  1020
 
@@ -103,7 +103,7 @@ In the directory ``~/exam-01/credentials``, create a bunch of files as follows:
 
        .. code-block:: console
 
-	  $ cat ~/exam-01/supplementary-groups
+	  $ cat ~/exam-01/credentials/supplementary-groups
 	  joerg.faschingbauer 1020
 	  ece20 1021
 

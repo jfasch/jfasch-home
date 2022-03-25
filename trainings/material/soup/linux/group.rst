@@ -9,6 +9,7 @@ Linux
 
    basics/group
    ssh/group
+   toolchain/group
    sysprog/group
    hardware/group
    drafts/group
