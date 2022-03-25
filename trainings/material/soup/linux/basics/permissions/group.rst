@@ -7,8 +7,8 @@ File System Permissions
 .. contents::
    :local:
 
-Contents
---------
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -18,6 +18,13 @@ Contents
    setuid-livedemo
    umask
    sticky
+
+Exercises
+---------
+
+.. toctree::
+   :maxdepth: 1
+
    exercises/group
 
 Group Description

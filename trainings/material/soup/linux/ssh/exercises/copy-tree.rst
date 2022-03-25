@@ -9,6 +9,12 @@
 Exercise: Copy a Tree To Remote Machine (And Adjust Permissions)
 ================================================================
 
+.. sidebar::
+
+   **Topics**
+
+   * :doc:`../scp`
+
 In
 :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/verify-hierarchy`
 (and the exercise series that preceded it), you created an entire file

@@ -6,8 +6,18 @@
 Exercise: Create Group-Shared File
 ==================================
 
-* In your home directory, :doc:`create an empty file
-  <../../shell/file_dir_create_rm>` ``shared.txt`` [#create_file]_.
+.. sidebar::
+
+   **Documentation**
+
+   * `man -s 1 chmod <https://linux.die.net/man/1/chmod>`__
+
+   **Topics**
+
+   * :doc:`../../shell/file_dir_create_rm`
+
+* In your home directory, create an empty file ``shared.txt``
+  [#create_file]_.
 * Tune that file's permissions so that every member of your team can
   write to it.
 

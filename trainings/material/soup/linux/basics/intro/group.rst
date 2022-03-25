@@ -7,8 +7,8 @@ Introduction: Concepts and Terminology
 .. contents::
    :local:
 
-Contents
---------
+Topics
+------
 
 .. toctree::
    :maxdepth: 1

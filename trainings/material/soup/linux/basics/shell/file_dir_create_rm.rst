@@ -71,6 +71,13 @@ And permissions? I didn't say how I want these!
 Creating an Empty File: ``touch``
 ---------------------------------
 
+.. sidebar::
+
+   **Documentation**
+
+   * `man -s 1 touch
+     <https://man7.org/linux/man-pages/man1/touch.1.html>`__
+
 .. code-block:: console
 
    $ touch file.txt
@@ -82,30 +89,30 @@ Removing A File: ``rm``
 
    * `man -s 1 rm <https://man7.org/linux/man-pages/man1/rm.1.html>`__
 
-* Remove a file
+**Remove a file**
 
-  .. code-block:: console
+.. code-block:: console
 
-     $ rm /tmp/a-file-containing-hallo
+   $ rm /tmp/a-file-containing-hallo
 
-* Remove a file, but no :doc:`../permissions/basics`
+**Remove a file, but no** :doc:`permissions <../permissions/basics>`
 
-  .. code-block:: console
+.. code-block:: console
 
-     $ rm /etc/passwd
-     rm: remove write-protected regular file '/etc/passwd'? y
-     rm: cannot remove '/etc/passwd': Permission denied
+   $ rm /etc/passwd
+   rm: remove write-protected regular file '/etc/passwd'? y
+   rm: cannot remove '/etc/passwd': Permission denied
 
-* Remove a file, suppressing the stupid question
+**Remove a file, suppressing the stupid question**
 
-  * |longrightarrow| still fails with ``/etc/passwd`` because owned by
-    ``root``)
-  * Succeeds though if owned by myself but not writeable
+* |longrightarrow| still fails with ``/etc/passwd`` because owned by
+  ``root``)
+* Succeeds though if owned by myself but not writeable
 
-  .. code-block:: console
+.. code-block:: console
 
-     $ rm -f /etc/passwd
-     rm: cannot remove '/etc/passwd': Permission denied
+   $ rm -f /etc/passwd
+   rm: cannot remove '/etc/passwd': Permission denied
 
 Removing A Directory: ``rmdir``, ``rm -r``
 ------------------------------------------

@@ -7,8 +7,8 @@ Linux Basics
 .. contents::
    :local:
 
-Contents
---------
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -17,7 +17,13 @@ Contents
    shell/group
    permissions/group
 
-   EXAM
+Exercises
+---------
+
+.. toctree::
+   :maxdepth: 1
+
+   exercises/group
 
 Group Description
 -----------------

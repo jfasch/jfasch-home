@@ -1,18 +1,26 @@
-.. ot-exercise:: linux.basics.EXAM
+.. ot-exercise:: linux.basics.exercises.FH_SS2022_EXAM_01_G2
    :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
 		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files,
 		  linux.basics.shell.cp,
 		  linux.basics.shell.ls
 
 
-Exam: Do A Lot With Files And Directories
-=========================================
+Exam (ECE/SS2022/G2): Do A Lot With Files And Directories
+=========================================================
+
+.. sidebar::
+
+   Originally created for :doc:`/about/site/work-in-progress/fh-joanneum/2020/ss2022`
 
 .. contents:: 
    :local:
 
 Precondition: Logged-In To Remote/Exam Computer
 -----------------------------------------------
+
+.. sidebar::
+
+   * :doc:`/trainings/material/soup/linux/ssh/key-pair`
 
 * Public key deployed to remote computer (see
   :doc:`/trainings/material/soup/linux/ssh/key-pair`)
@@ -175,7 +183,7 @@ Make A Backup Of ``~/exam-01`` (15 Points)
 .. sidebar:: Documentation
 
    * :doc:`/trainings/material/soup/linux/ssh/scp`
-   * man -s 1 scp
+   * `man -s 1 scp
      <https://man7.org/linux/man-pages/man1/scp.1.html>`__
 
 **Goal**
@@ -205,5 +213,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: linux.basics.EXAM
-
+   :entries: linux.basics.exercises.FH_SS2022_EXAM_01_G2

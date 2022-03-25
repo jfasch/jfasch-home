@@ -7,8 +7,8 @@ The Shell (Bash - "Bourne Again Shell")
 .. contents::
    :local:
 
-Contents
---------
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -21,6 +21,12 @@ Contents
    cp
    mv
    links
+
+Exercises
+---------
+
+.. toctree::
+   :maxdepth: 1
 
    exercises/group
 

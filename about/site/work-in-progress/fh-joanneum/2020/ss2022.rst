@@ -53,29 +53,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 2022-03-22 
      * 2022-03-24
      * 3
-     * 
-       * **Homework** (:doc:`ss2022-log/2022-03-10-homework`
-
-	 * Take as given
-	 * Have a quick look
-
-       * **Exercises from**
-	 :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
-
-         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
-         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
-         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory`
-         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory-question`
-         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory`
-         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory-question`
-
-       * **Exercises from**
-         :doc:`/trainings/material/soup/linux/ssh/exercises/group`
-
-         * :doc:`/trainings/material/soup/linux/ssh/exercises/pubkey`
-           (done)
-         * :doc:`/trainings/material/soup/linux/ssh/exercises/copy-file`
-         * :doc:`/trainings/material/soup/linux/ssh/exercises/copy-tree`
+     * :doc:`ss2022-log/2022-03-22,24`
 
    * *
      * 2022-03-25

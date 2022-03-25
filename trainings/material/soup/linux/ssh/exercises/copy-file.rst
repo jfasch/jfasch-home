@@ -8,6 +8,12 @@
 Exercise: Copy a File To Remote Machine, And Verify
 ===================================================
 
+.. sidebar::
+
+   **Topics**
+
+   * :doc:`../scp`
+
 * View your *local* password database's metadata, and compute its
   SHA256 fingerprint.
 
