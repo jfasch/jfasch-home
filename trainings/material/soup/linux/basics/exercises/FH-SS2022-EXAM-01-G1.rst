@@ -18,6 +18,10 @@ Exam (ECE/SS2022/G1): Do A Lot With Files And Directories
 Precondition: Logged-In To Remote/Exam Computer
 -----------------------------------------------
 
+.. image:: cloud-computer.jpg
+   :align: right
+   :scale: 50%
+
 .. sidebar::
 
    * :doc:`/trainings/material/soup/linux/ssh/key-pair`
@@ -83,7 +87,7 @@ In the directory ``~/exam-01/credentials``, create a bunch of files as follows:
 	  joerg.faschingbauer
 	  1020
 
-     * ``primary-group``
+   * * ``primary-group``
      * The name and group ID (GID) of your primary group, one line
        each; for example
 
@@ -93,7 +97,7 @@ In the directory ``~/exam-01/credentials``, create a bunch of files as follows:
 	  joerg.faschingbauer
 	  1020
 
-     * ``supplementary-groups``
+   * * ``supplementary-groups``
      * The name and ID of your supplementary groups, one line each;
        for example
 

@@ -18,6 +18,10 @@ Exam (ECE/SS2022/G2): Do A Lot With Files And Directories
 Precondition: Logged-In To Remote/Exam Computer
 -----------------------------------------------
 
+.. image:: cloud-computer.jpg
+   :align: right
+   :scale: 50%
+
 .. sidebar::
 
    * :doc:`/trainings/material/soup/linux/ssh/key-pair`
