@@ -2,6 +2,6 @@
 
 int main(void)
 {
-    hello();
+    hello();   // <--- HERE
     return 0;
 }

@@ -4,6 +4,6 @@
 int main(void)
 {
     printf("Ha, here's a second world greeter!\n");
-    hello();
+    hello();   // <--- HERE
     return 0;
 }

@@ -17,8 +17,8 @@ Remember: All-In-One Build ...
    :widths: auto
    :header-rows: 1
 
-   * * Main
-     * "Modularized" out
+   * * User
+     * Valuable and rock-stable code
    * * .. literalinclude:: hello-first.c
           :caption: :download:`hello-first.c`
           :language: c
@@ -44,12 +44,34 @@ Adding Another ``main()``: What About Shared Code?
 
 **So here's another user ...**
 
-.. literalinclude:: hello-second.c
-   :language: c
-   :caption: :download:`hello-second.c`
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Users
+     * Valuable and rock-stable code
+   * * .. literalinclude:: hello-first.c
+          :caption: :download:`hello-first.c`
+          :language: c
+
+       .. literalinclude:: hello-second.c
+          :caption: :download:`hello-second.c`
+          :language: c
+
+     * .. literalinclude:: hello.h
+          :caption: :download:`hello.h`
+	  :language: c
+
+       .. literalinclude:: hello.c
+	  :caption: :download:`hello.c`
+          :language: c
+
+**Building all this**
 
 .. code-block:: console
   
+   $ gcc -o hello-first hello-first.c hello.c
    $ gcc -o hello-second hello-second.c hello.c
 
 **This is bad!**
@@ -62,18 +84,16 @@ Adding Another ``main()``: What About Shared Code?
 Solution: Separate Compilation And Linking Steps
 ------------------------------------------------
 
-**Goal**
+* **Goal**: only a single compilation step of ``hello.c``
+* This cannot produce an executable, obviously
+* Compilation only: turn ``hello.c`` into ``hello.o``
 
-* Only a single compilation step of ``hello.c``
+.. code-block:: console
+   :caption: *Compiling only*: ``hello.c``
 
-  * This cannot produce an executable, obviousl
-  * Compilation only |longrightarrow| ``hello.o``
+   $ gcc -c -o hello.o hello.c
 
-  .. code-block:: console
-
-     $ gcc -c -o hello.o hello.c
-
-* Separate compilation steps of each user
+* Same for both users of ``hello()``
 
   * ``hello-first.c`` |longrightarrow| ``hello-first.o``
 
