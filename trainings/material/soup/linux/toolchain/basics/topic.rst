@@ -6,6 +6,13 @@
 Basics
 ======
 
+.. sidebar:: 
+
+   **Source Code**
+
+   The code referred to in this section is maintained `on Github
+   <https://github.com/jfasch/jfasch-home-linux-toolchain/tree/main/basics>`__
+
 .. contents::
    :local:
 
@@ -47,8 +54,8 @@ All-In-One Usage: Single File
 
 * "Monolithic" program
 
-  .. literalinclude:: hello-single.c
-     :caption: :download:`hello-single.c`
+  .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello-single.c
+     :caption: :download:`../jfasch-home-linux-toolchain/basics/hello-single.c`
      :language: c
 
 * All-in-one: convert C to executable (seemingly directly)
@@ -90,15 +97,15 @@ All-In-One Usage: Multiple Files
 
      * * Main
        * "Modularized" out
-     * * .. literalinclude:: hello-main.c
-            :caption: :download:`hello-main.c`
+     * * .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello-main.c
+            :caption: :download:`../jfasch-home-linux-toolchain/basics/hello-main.c`
             :language: c
-       * .. literalinclude:: hello.h
-            :caption: :download:`hello.h`
+       * .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello.h
+            :caption: :download:`../jfasch-home-linux-toolchain/basics/hello.h`
             :language: c
 
-         .. literalinclude:: hello.c
-            :caption: :download:`hello.c`
+         .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello.c
+            :caption: :download:`../jfasch-home-linux-toolchain/basics/hello.c`
             :language: c
 
 * All-in-one: convert *multiple C files* to executable
@@ -117,8 +124,8 @@ All-In-One Usage: Multiple Files
      $ ./hello-modular 
      Hello World
 
-This Is Not Simple!
--------------------
+This Is Not As Simple As It Seems!
+----------------------------------
 
 .. sidebar:: Documentation
 
@@ -260,3 +267,47 @@ Overview: Where Do Which Symbols Come From (|longrightarrow| The Toolchain)
 
 	  $ ls -l /lib64/libc.so.6
 	  lrwxrwxrwx. 1 root root 12 Jan 26 02:53 /lib64/libc.so.6 -> libc-2.33.so
+
+Recap: Toolchain
+----------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * Compiler: `man -s 1 gcc
+     <https://man7.org/linux/man-pages/man1/gcc.1.html>`__
+   * C Preprocessor: `man -s 1 cpp
+     <https://man7.org/linux/man-pages/man1/cpp.1.html>`__
+   * Assembler: `man -s 1 as
+     <https://man7.org/linux/man-pages/man1/as.1.html>`__
+   * Linker: `man -s 1 ld
+     <https://man7.org/linux/man-pages/man1/ld.1.html>`__
+
+The seemingly simple command "Build be an executable ``hello-single``
+from ``hello-single.c``" does a number of separate things under the
+hood:
+
+* *Compile* ``hello-single.c`` to an *object file* (an ELF format file
+  containing only the machine code of function ``hello()``)
+
+  * One does not see that file as it is only kept *temporarily*. Such
+    object files usually carry the ``.o`` extension.
+  * Multiple intermediate steps are hidden under the name
+    *compilation* as well, producing more temporary files:
+
+    * Running the :doc:`C preprocessor
+      </trainings/material/soup/c/040-functions-and-program-structure/050-c-preprocessor/topic>`
+      on the source file
+    * Compiling what the preprocessor left, into *machine specific
+      (but human readable) assembly code*
+    * Running the *assembler* to turn that into machine code, finally.
+
+* *Link* ``hello-single.o`` (lets give the temporary file a name)
+  together with the following artifacts, and finally produce the
+  *executable* ``hello-single``:
+
+  * The OS specific startup code
+  * The *shared* C runtime - the "C library" (that library defines a
+    large number of functions like ``printf()``, ``malloc()``,
+    ``free()``, ...)
