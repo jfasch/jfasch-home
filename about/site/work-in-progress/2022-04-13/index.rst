@@ -12,7 +12,16 @@ Current Version
 
 .. toctree::
    :maxdepth: 1
-   
+
+   draft-2022-03-27
+   googletest-instructions
+
+Past Versions
+-------------
+
+.. toctree::
+   :maxdepth: 1
+
    draft-2022-02-16
 
 Feedback, Staged For The Next Round
@@ -22,5 +31,4 @@ Feedback, Staged For The Next Round
    :maxdepth: 1
    
    draft-next
-   googletest-instructions
 

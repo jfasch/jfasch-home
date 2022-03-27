@@ -139,4 +139,3 @@ A "Footnotes" footer block:
    .. rubric:: Footnotes
    
       .. [#a_footnote] Blah
-   

@@ -19,15 +19,6 @@ Robert C. Martin ("Uncle Bob")
 <https://www.oreilly.com/library/view/clean-code-a/9780136083238/>`__
 
 
-Cornerstones ...
-
-* Software development cycle (*not (!!)*: waterfall)
-* Requirements
-* *Intuitive* implementation (|longrightarrow| respect from co-workers
-  and oneself)
-* Refactoring: removing unclean code and *not* breaking requirements
-* Craftsmanship? 
-* **Maintainability?**
 
 Object Oriented Programming
 ---------------------------

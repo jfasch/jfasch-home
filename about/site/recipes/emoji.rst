@@ -32,6 +32,8 @@ Most Used Here In This Site
 
    * * |:grimacing:|
      * ``|:grimacing:|``
+   * * |:astonished:|
+     * ``|:astonished:|``
    * * |:rolling_eyes:|
      * ``|:rolling_eyes:|``
    * * |:face_with_raised_eyebrow:|
