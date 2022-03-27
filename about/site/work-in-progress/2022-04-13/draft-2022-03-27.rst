@@ -14,35 +14,35 @@ Overall Plan
 
    **Proposed structure from 2022-03-09**
 
-     * Block 1: Clean code
+   * Block 1: Clean code
 
-       * Thoughts from Uncle Bob
+     * Thoughts from Uncle Bob
 
-	 * Bring example
-	 * Discuss
+       * Bring example
+       * Discuss
 
-       * Keeping Code Clean in the Small
+     * Keeping Code Clean in the Small
 
-     * Block 2: Unit Testing, TDD
+   * Block 2: Unit Testing, TDD
 
-       * C/C++: googletest
-       * Python: pytest (sketch only)
-       * Livehacking and simple project
+     * C/C++: googletest
+     * Python: pytest (sketch only)
+     * Livehacking and simple project
 
-     * Block 3: TDD hands-on
+   * Block 3: TDD hands-on
 
-       * 7 people |longrightarrow| groups
-       * Artificial project; it's not easy to find code that can be
-         made testable/tested at customer's site.
-       * cmake, cdash (?), ctest, visual studio (2019, doze)
-       * In-house tools for unittests?
+     * 7 people |longrightarrow| groups
+     * Artificial project; it's not easy to find code that can be
+       made testable/tested at customer's site.
+     * cmake, cdash (?), ctest, visual studio (2019, doze)
+     * In-house tools for unittests?
 
-	 * cdk (core development kit) testsystem (home-made, unwanted
-           internally)
-	 * https://robotframework.org/ -> jenkins
+       * cdk (core development kit) testsystem (home-made, unwanted
+         internally)
+       * https://robotframework.org/ -> jenkins
 
-       * Create two dummy projects googletest and boost, try to build
-         those
+     * Create two dummy projects googletest and boost, try to build
+       those
 
 *Live-hack*, and bring up an artificial project step by step, to give
 an overview of the following topics.
