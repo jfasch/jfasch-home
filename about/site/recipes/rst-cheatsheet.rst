@@ -119,3 +119,24 @@ One refers to the label we created in the :ref:`section above
      * .. code-block:: rst
 
           :ref:`Custom referred-to link name <dummy-section>`
+
+Footnotes
+---------
+
+A reference to a footnote [#a_footnote]_:
+
+.. code-block:: rst
+
+   A reference to a footnote [#a_footnote]_:
+
+A "Footnotes" footer block:
+
+.. rubric:: Footnotes
+.. [#a_footnote] Blah
+
+.. code-block:: rst
+
+   .. rubric:: Footnotes
+   
+      .. [#a_footnote] Blah
+   
