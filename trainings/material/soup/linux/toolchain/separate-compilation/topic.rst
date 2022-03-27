@@ -232,5 +232,5 @@ commands run,
    
 .. rubric:: Footnotes
 
-.. [#rm-files] You may want to remove the files we created during this
-               lesson by hand.
+.. [#rm-files] Prior to doing this, you may want to remove the
+               binaries we created during this lesson.
