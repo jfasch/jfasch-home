@@ -56,9 +56,9 @@ Exercise
 
 * Setup Pi (again?)
 * Use ``ssh`` to connect to the Pi (:doc:`here
-  </trainings/material/soup/devenv/ssh/basics>`)
+  </trainings/material/soup/linux/ssh/basics>`)
 * Mount your Pi homedirectory (:doc:`here
-  </trainings/material/soup/devenv/ssh/sshfs>`)
+  </trainings/material/soup/linux/ssh/sshfs>`)
 
 TODOs
 -----

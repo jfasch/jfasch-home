@@ -99,7 +99,7 @@ From :download:`Linux Basics (PDF)
 * Aufwärmen
 
   * SSH Public Key Authentication (see :doc:`here
-    </trainings/material/soup/devenv/ssh/group>` for SSH topics)
+    </trainings/material/soup/linux/ssh/group>` for SSH topics)
   * **Das verdammte Directory eines fremden Users, das ein File drin
     hat, das ich aus dem Directory nicht löschen darf.**
   * Abschluss des Linux/Shell Kapitels: *Fragerunde*
