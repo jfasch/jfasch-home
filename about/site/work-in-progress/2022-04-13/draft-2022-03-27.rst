@@ -64,7 +64,10 @@ Driven Development </trainings/repertoire/unittests>`.
 By throwing more and more requirements at the project as we go, ideas
 from the Clean Code book are demonstrated.
 
-User Database: The Beginning
+Using slide material, guide through an agile process based on test
+driven development on that project.
+
+User Database: The Beginning 
 ----------------------------
 
 .. sidebar::
@@ -153,11 +156,14 @@ First Test: A Bug Comes In
   that test file.
 
   * Re-use is not a matter now
-  * A second test, later, when a feature is implemented
-    during TDD jjj link, will do the same.
+  * A :ref:`second test <second-test>`, later, when a feature is
+    implemented using Test Driven Development, we will factor that
+    code out.
 	   
 * Fix `valgrind <https://valgrind.org/>`__ detected file descriptor
   leak when done
+
+.. _second-test:
 
 Second Test: A Requirement Comes In
 -----------------------------------
@@ -188,7 +194,7 @@ something more modern: plaintext files. :doc:`/me
      char filename[] = "my-first-testXXXXXX";
      int fileno = mkstemp(filename);
      std::ofstream ofs(filename, std::ofstream::out);
-     db.write(ofs);
+     db.write_plaintext(ofs);
      
      std::string content = read_entire_file_content_into_memory(filename);
      if (content != EXPECTED_CONTENT)
@@ -199,26 +205,9 @@ something more modern: plaintext files. :doc:`/me
   pull in an implementation from snippets.
 * Write another test, this time for the reader side. Now it's the
   third time that we fill our user database so verbosely.
-* Restructure test code
-  
-  * Factor out ``UserDB`` instances from both tests, this is duplicate
-    code |longrightarrow| *not clean*
-  * Provide a global variable and a ``setup_fixture(std::vector)``
-    (*by copy*, provocantly [#rvalue-ref]_) in
-    ``userdb-fixture.{h.cpp}``)
-  * Use that instead in all three tests
 
-* Write another test for the reader (error checking, this time). "No
-  separator found!", for example.
-* Create *test suites*, to group together related tests into separate
-  file, and run them as part of *one binary per test suite*. Goal:
-
-  .. code-block:: console
-
-     $ for test in $(ls -1 test-*); do $test && echo "SUCCESS: $test" 1>&2 || echo "FAILED: $test" 1>&2; done
-
-Enter Unit Testing Frameworks
------------------------------
+Restructure Test Code: Enter Unit Testing Frameworks
+----------------------------------------------------
 
 .. sidebar:: 
 
@@ -232,6 +221,27 @@ Enter Unit Testing Frameworks
    * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/screenplay`
    * :doc:`googletest-instructions`
    * `googletest <https://github.com/google/googletest>`__
+
+* Factor out ``UserDB`` instances from both tests, this is duplicate
+  code |longrightarrow| *not clean*
+* Provide a global variable and a ``setup_fixture(std::vector)`` (*by
+  copy*, provocantly [#rvalue-ref]_) in ``userdb-fixture.{h.cpp}``)
+* Use that instead in all three tests
+
+More tests ...
+
+* Write another test for the reader (error checking, this time). "No
+  separator found!", for example.
+* Create *test suites*, to group together related tests into separate
+  file, and run them as part of *one binary per test suite*. Goal:
+
+  .. code-block:: console
+
+     $ for test in $(ls -1 test-*); do $test && echo "SUCCESS: $test" 1>&2 || echo "FAILED: $test" 1>&2; done
+
+Enter Unit Testing Frameworks
+-----------------------------
+
 
 Implementation
 ..............
