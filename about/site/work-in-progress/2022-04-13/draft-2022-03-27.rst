@@ -277,9 +277,17 @@ Cornerstones From The "Clean Code" Book
 
 * Software development cycle (*not (!!)*: waterfall)
 * Requirements
+
+  * At a small scale, tests are easy. Mocking a database away maybe?
+    New reader/writer.
+  * Lost tests? Do ``CMake`` and ``googletest`` help in this regard?
+
 * *Intuitive* implementation (|longrightarrow| respect from co-workers
   and oneself)
 * Refactoring: removing unclean code and *not* breaking requirements
+
+  E.g., factor out readers and writers in an interface, and separate.
+
 * Craftsmanship? 
 * **Maintainability?**
 * Bonus topics about code structure [#code-structure]_, maybe
@@ -320,11 +328,15 @@ Optimization
 Hands-On: More Requirements
 ---------------------------
 
-* Switch to group exercise mode: can we work together on a version
-  control system?
-* Github maybe? Can we have per-user accounts?
-* Or can I join your organization?
-* :doc:`googletest-instructions`
+.. sidebar::
+
+   **Goal**
+
+   * Switch to group exercise mode: can we work together on a version
+     control system?
+   * Github maybe? Can we have per-user accounts?
+   * Or can I join your organization?
+   * :doc:`googletest-instructions`
 
 Conclusion/Message
 ------------------
