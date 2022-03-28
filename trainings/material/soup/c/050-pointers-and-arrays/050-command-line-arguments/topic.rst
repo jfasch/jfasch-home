@@ -3,8 +3,8 @@
 .. ot-topic:: c.pointers_and_arrays.command_line_arguments
    :dependencies: c.pointers_and_arrays.pointers_and_arrays
 
-Commandline
-===========
+Commandline Arguments
+=====================
 
 ``main()`` Can Take Parameters
 ------------------------------

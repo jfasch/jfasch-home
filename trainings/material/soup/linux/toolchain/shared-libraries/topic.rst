@@ -1,5 +1,6 @@
 .. ot-topic:: linux.toolchain.shared_library
-   :dependencies: linux.toolchain.static_library
+   :dependencies: linux.toolchain.static_library,
+		  linux.basics.shell.environment
 
 .. include:: <mmlalias.txt>
 

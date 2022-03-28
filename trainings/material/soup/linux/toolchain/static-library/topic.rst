@@ -24,7 +24,11 @@ Code Bases Get Larger (1)
 
 New feture in our code base |:clown:| ...
 
-* more flexible greeting, in a separate file pair, ``hello-flexible.{h,c}``
+* more flexible greeting, in a separate file pair,
+  ``hello-flexible.{h,c}``. Takes the name to be greeted from the
+  commandline. (See
+  :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
+  for details on commandline argument processing.)
 * used by ``hello-second.c``
 
 .. list-table::

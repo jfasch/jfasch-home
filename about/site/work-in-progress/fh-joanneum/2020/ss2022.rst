@@ -80,33 +80,40 @@ Block 2: C on Linux: Local and *Cross* Development
      * 3
      * 
 
-       * **Development environment**
+       * File sharing between Windows and WSL/Ubuntu:
+         :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+       * From :doc:`/trainings/material/soup/linux/toolchain/group`
 
-	 * Jumping through hoops on Doze
-
-	   * `WSL 2 with Visual Studio Code
-	     <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
-	   * `Visual Studio Code Remote - WSL
-             <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
-	   * *Big picture*: how would this fit together with
-             remote/embedded work
-
-	 * ... or native Linux of course :-)
-
-       * **Toolchain**
-
-         * Compilation, warning and error options, include path
-	 * Linkage: executables, shared libraries, static linking
-	 * Archiving: building static libraries
-	 * Automatic build: :download:`Makefiles
-           </trainings/material/pdf/040-gnu-make.pdf>`
-	 * :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+	 * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
+	 * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
+	 * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
 
    * * 2022-04-01
      * 
      *
      * 3
-     * **Unit Testing**. One of ...
+     *
+
+       * Live demo: environment variables
+       * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
+
+       **Development environment**
+
+       * Jumping through hoops on Doze
+       
+         * `WSL 2 with Visual Studio Code
+           <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
+         * `Visual Studio Code Remote - WSL
+           <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
+         * *Big picture*: how would this fit together with
+           remote/embedded work
+
+	 .. image:: doze-linux-integration.png
+	    :scale: 50%
+       
+       * ... or native Linux of course :-)
+
+       **Unit Testing**. One of ...
 
        * `Unity <http://www.throwtheswitch.org/>`__
        * `googletest <https://github.com/google/googletest/>`__
