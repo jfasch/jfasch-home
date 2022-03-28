@@ -22,6 +22,8 @@ Topics
 
    basics/topic
    separate-compilation/topic
+   static-library/topic
+   shared-libraries/topic
 
 Exercises
 ---------

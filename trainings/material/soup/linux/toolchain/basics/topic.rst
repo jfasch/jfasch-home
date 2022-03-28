@@ -1,4 +1,5 @@
 .. ot-topic:: linux.toolchain.basics
+   :dependencies: linux.basics.shell.file_dir_create_rm
 
 .. include:: <mmlalias.txt>
 
