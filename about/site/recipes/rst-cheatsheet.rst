@@ -82,6 +82,10 @@ References to a section in the middle of a document requires
 * Referring to that label using the ``:ref:`` role (either from inside
   the same document, or from any other document)
 
+.. note::
+
+   Section label must be unique across the tree
+
 Example follows ...
 
 .. _dummy-section:
