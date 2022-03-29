@@ -137,5 +137,4 @@ A "Footnotes" footer block:
 .. code-block:: rst
 
    .. rubric:: Footnotes
-   
-      .. [#a_footnote] Blah
+   .. [#a_footnote] Blah

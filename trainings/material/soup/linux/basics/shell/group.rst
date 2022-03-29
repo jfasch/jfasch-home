@@ -21,7 +21,6 @@ Topics
    cp
    mv
    links
-   environment
 
 Exercises
 ---------

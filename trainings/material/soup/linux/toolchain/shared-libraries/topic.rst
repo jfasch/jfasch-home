@@ -1,6 +1,6 @@
 .. ot-topic:: linux.toolchain.shared_library
    :dependencies: linux.toolchain.static_library,
-		  linux.basics.shell.environment
+		  linux.basics.intro.environment
 
 .. include:: <mmlalias.txt>
 
@@ -232,6 +232,10 @@ This Is Not Simple: *Library Search Path*
 
    * `man -s 8 ld.so
      <https://man7.org/linux/man-pages/man8/ld.so.8.html>`__
+
+   **Topics**
+
+   * :doc:`/trainings/material/soup/linux/basics/intro/environment`
 
 .. code-block:: console
 
