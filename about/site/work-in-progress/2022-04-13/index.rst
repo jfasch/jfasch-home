@@ -4,17 +4,13 @@
 Seminar on Clean Coding (2022-04-13)
 ====================================
 
-Agenda for a seminar on select topics in advanced software
-development.
-
 Current Version
 ---------------
 
 .. toctree::
    :maxdepth: 1
 
-   draft-2022-03-27
-   googletest-instructions
+   draft-2022-03-29
 
 Past Versions
 -------------
@@ -23,12 +19,12 @@ Past Versions
    :maxdepth: 1
 
    draft-2022-02-16
+   draft-2022-03-27
 
-Feedback, Staged For The Next Round
------------------------------------
+
 
 .. toctree::
-   :maxdepth: 1
-   
-   draft-next
+   :hidden:
 
+   proposed-structure
+   googletest-instructions
