@@ -1,8 +1,8 @@
-.. ot-group:: linux.basics.commands
+.. ot-group:: linux.basics.archiving_compression
 
 
-Miscellaneous Commands
-======================
+Archiving and Compression
+=========================
 
 .. contents::
    :local:
@@ -13,6 +13,8 @@ Topics
 .. toctree::
    :maxdepth: 1
 
+   overview
+   gzip
    tar
 
 Exercises
@@ -27,4 +29,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: linux.basics.commands
+   :entries: linux.basics.archiving_compression

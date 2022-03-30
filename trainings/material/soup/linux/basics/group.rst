@@ -16,7 +16,7 @@ Topics
    intro/group
    shell/group
    permissions/group
-   commands/group
+   archiving-compression/group
 
 Exercises
 ---------

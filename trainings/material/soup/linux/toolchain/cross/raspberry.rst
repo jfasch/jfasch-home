@@ -2,7 +2,7 @@
    :dependencies: linux.toolchain.cross.basics,
 		  linux.ssh.basics,
 		  linux.ssh.scp,
-		  linux.basics.commands.tar,
+		  linux.basics.archiving_compression.tar,
 		  linux.basics.intro.environment
 
 .. include:: <mmlalias.txt>
@@ -31,7 +31,7 @@ Create a ``sysroot``
    **Topics**
 
    * :doc:`../../ssh/basics`
-   * :doc:`../../basics/commands/tar`
+   * :doc:`../../basics/archiving-compression/tar`
 
    **Documentation**
 
@@ -51,8 +51,7 @@ into the host's ``sysroot``,
 We use :doc:`SSH remote command execution <../../ssh/basics>` in a pipe
 to
 
-* Create a :doc:`tar
-  </trainings/material/soup/linux/basics/commands/tar>` archive
+* Create a :doc:`tar <../../basics/archiving-compression/tar>` archive
   containing these directories, remotely
 * Compress that archive onto the wire, remotely
 * Uncompress from the wire, locally
