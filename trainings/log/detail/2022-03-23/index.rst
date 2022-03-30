@@ -38,7 +38,7 @@ Agenda
 * :doc:`/trainings/material/soup/python/basics/python_0125_running/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
 
-  Indentaion bug demo: `indentation-bug.py
+  Indentation bug demo: `indentation-bug.py
   <https://github.com/jfasch/2022-03-23/blob/main/livehacking/indentation-bug.py>`__
 
 *
@@ -63,36 +63,73 @@ Agenda
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
-* :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
+  (`even.py
+  <https://github.com/jfasch/2022-03-23/blob/main/exercises/joerg/even.py>`__,
+  `even-pythonic.py
+  <https://github.com/jfasch/2022-03-23/blob/main/exercises/joerg/even-pythonic.py>`__)
+
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
+*
+    :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+    (`uniq.py
+    <https://github.com/jfasch/2022-03-23/blob/main/exercises/joerg/uniq.py>`__,
+    `uniq-generator.py
+    <https://github.com/jfasch/2022-03-23/blob/main/exercises/joerg/uniq-generator.py>`__)
+  
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+* :doc:`/trainings/material/soup/python/exercises/legacy/passwd`
 
-Exercises
-`````````
+CSV
+```
 
-* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
-* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
-* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
-* :doc:`/trainings/material/soup/python/exercises/legacy/join_function`
-* :doc:`/trainings/material/soup/python/exercises/legacy/wc`
+* :doc:`/trainings/material/soup/python/misc/csv/topic`
+* From :doc:`/trainings/material/soup/python/exercises/userdb/group`
 
-.. .. ot-graph::
-..    :entries: python.exercises.legacy.while_primeness,
-.. 	     python.exercises.legacy.for_primeness,
-.. 	     python.exercises.legacy.function_primeness,
-.. 	     python.exercises.legacy.uniq_function,
-.. 	     python.exercises.legacy.join_function,
-.. 	     python.exercises.legacy.wc
+  * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+
+Modules
+```````
+
+* :doc:`/trainings/material/soup/python/advanced/modules`
+* From :doc:`/trainings/material/soup/python/exercises/userdb/group`
+
+  * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
 
 2022-04-19, 2022-04-20, 2022-04-21: Advanced
 ............................................
+
+Refactoring
+```````````
+
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+
+Modules
+```````
+
+* :doc:`/trainings/material/soup/python/advanced/modules`
+* From :doc:`/trainings/material/soup/python/exercises/userdb/group`
+
+  * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+
+Plan For The Wild Part
+``````````````````````
+
+.. image:: plan.png
+   :scale: 50%
+
+More details (omitted in "basics" days)
+
+* :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 
 Select topics from chapters ...
 
