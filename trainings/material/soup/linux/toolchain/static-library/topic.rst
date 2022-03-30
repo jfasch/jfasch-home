@@ -70,6 +70,7 @@ Code Bases Get Larger
 Build instructions need to be updated
 
 * Build ``hello-flexible.o`` from ``hello-flexible.c``
+
 * Link ``hello-second`` against ``hello-flexible.o`` (and not
   ``hello.o``)
 

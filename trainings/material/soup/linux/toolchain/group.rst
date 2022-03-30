@@ -24,6 +24,9 @@ Topics
    separate-compilation/topic
    static-library/topic
    shared-libraries/topic
+   cross/group
+
+   exercises/group
 
 Exercises
 ---------

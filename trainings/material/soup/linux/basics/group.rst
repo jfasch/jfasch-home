@@ -16,6 +16,7 @@ Topics
    intro/group
    shell/group
    permissions/group
+   commands/group
 
 Exercises
 ---------

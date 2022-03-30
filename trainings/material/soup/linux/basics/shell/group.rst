@@ -21,6 +21,7 @@ Topics
    cp
    mv
    links
+   configfiles
 
 Exercises
 ---------

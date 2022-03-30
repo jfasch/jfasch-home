@@ -100,8 +100,14 @@ Popular Environment Variables: ``HOME``, ``SHELL``, ``USER``
 Popular Environment Variables: ``PATH``
 ---------------------------------------
 
+.. sidebar::
+
+   **Topics**
+
+   * :doc:`../shell/configfiles`
+
 * Set during shell startup
-* From various configuration files extend ``PATH`` incrementally
+* From various configuration files that extend ``PATH`` incrementally
 
   * ``/etc/profile``: system wide
   * ``~/.bashrc``: per user
