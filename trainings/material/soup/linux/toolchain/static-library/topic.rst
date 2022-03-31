@@ -11,10 +11,8 @@ Object Code Archives/Static Libraries
 
    **Source Code**
 
-   Clone the `Github repository
-   <https://github.com/jfasch/jfasch-home-linux-toolchain>`__, and
-   change into the ``static-libraries/`` subdirectory to follow
-   along.
+   The example code in this section is maintained on `Github
+   <https://github.com/jfasch/jfasch-home-linux-toolchain>`__
 
 .. contents::
    :local:
@@ -22,7 +20,7 @@ Object Code Archives/Static Libraries
 Code Bases Get Larger (1)
 -------------------------
 
-New feture in our code base |:clown:| ...
+New feature in our code base |:clown:| ...
 
 * more flexible greeting, in a separate file pair,
   ``hello-flexible.{h,c}``. Takes the name to be greeted from the

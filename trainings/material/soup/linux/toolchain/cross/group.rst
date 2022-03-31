@@ -14,9 +14,8 @@ Topics
 
    **Source Code**
 
-   Clone the `Github repository
-   <https://github.com/jfasch/jfasch-home-linux-toolchain>`__, and
-   change into the ``cross/`` subdirectory to follow along.
+   The example code in this section is maintained on `Github
+   <https://github.com/jfasch/jfasch-home-linux-toolchain>`__
 
 .. toctree::
    :maxdepth: 1

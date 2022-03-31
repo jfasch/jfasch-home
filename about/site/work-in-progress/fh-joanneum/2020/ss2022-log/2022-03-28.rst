@@ -1,0 +1,13 @@
+2022-03-28
+==========
+
+Topics
+------
+
+* File sharing between Windows and WSL/Ubuntu:
+  :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+* From :doc:`/trainings/material/soup/linux/toolchain/group`
+
+  * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
+  * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
+  * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`

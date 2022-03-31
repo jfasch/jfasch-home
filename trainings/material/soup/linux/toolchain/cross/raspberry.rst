@@ -33,11 +33,6 @@ Create a ``sysroot``
    * :doc:`../../ssh/basics`
    * :doc:`../../basics/archiving-compression/tar`
 
-   **Documentation**
-
-   * `man -s 1 tar
-     <https://man7.org/linux/man-pages/man1/tar.1.html>`__
-
 Lacking a precomposed ``sysroot`` that only contains what we need, we
 copy over a minimal set of artifacts from the target. By trial and
 error we can come up for the following remote directories that we copy

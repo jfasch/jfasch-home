@@ -61,6 +61,9 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 3
      * **Test**
 
+       * :doc:`/trainings/material/soup/linux/basics/exercises/FH-SS2022-EXAM-01-G1`
+       * :doc:`/trainings/material/soup/linux/basics/exercises/FH-SS2022-EXAM-01-G2`
+
 Block 2: C on Linux: Local and *Cross* Development
 --------------------------------------------------
 
@@ -78,24 +81,18 @@ Block 2: C on Linux: Local and *Cross* Development
      * 
      * 
      * 3
-     * 
-
-       * File sharing between Windows and WSL/Ubuntu:
-         :doc:`/trainings/material/soup/linux/basics/intro/wsl`
-       * From :doc:`/trainings/material/soup/linux/toolchain/group`
-
-	 * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
-	 * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
-	 * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
-
+     * :doc:`ss2022-log/2022-03-28`
    * * 2022-04-01
      * 
      *
      * 3
      *
 
-       * Live demo: environment variables
+       * :doc:`/trainings/material/soup/linux/basics/intro/environment`
+       * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
        * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
+       * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
+       * :doc:`/trainings/material/soup/linux/toolchain/cross/raspberry`
 
        **Development environment**
 

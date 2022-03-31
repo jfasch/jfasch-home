@@ -10,15 +10,10 @@ Exercises: Linux Basics
 Contents
 --------
 
-.. toctree::
-   :maxdepth: 1
-
-   FH-SS2022-EXAM-01-G2   
-
 .. toctree:: 
-   :hidden:
 
    FH-SS2022-EXAM-01-G1
+   FH-SS2022-EXAM-01-G2   
 
 Dependencies
 ------------

@@ -12,10 +12,8 @@ Shared Libraries (Shared Objects)
 
    **Source Code**
 
-   Clone the `Github repository
-   <https://github.com/jfasch/jfasch-home-linux-toolchain>`__, and
-   change into the ``shared-libraries/`` subdirectory to follow
-   along.
+   The example code in this section is maintained on `Github
+   <https://github.com/jfasch/jfasch-home-linux-toolchain>`__
 
 .. contents::
    :local:

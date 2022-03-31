@@ -11,8 +11,8 @@ Basics
 
    **Source Code**
 
-   The code referred to in this section is maintained `on Github
-   <https://github.com/jfasch/jfasch-home-linux-toolchain/tree/main/basics>`__
+   The example code in this section is maintained on `Github
+   <https://github.com/jfasch/jfasch-home-linux-toolchain>`__
 
 .. contents::
    :local:

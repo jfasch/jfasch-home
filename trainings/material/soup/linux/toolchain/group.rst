@@ -14,7 +14,7 @@ Topics
 
    **Source Code**
 
-   Get the code in this section from `here
+   The example code in this section is maintained on `Github
    <https://github.com/jfasch/jfasch-home-linux-toolchain>`__
 
 .. toctree::
