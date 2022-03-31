@@ -36,10 +36,33 @@ Cross?
 * Code must be built against *target situation*
 * Header files and libraries
 * |longrightarrow| must be available on *host*
+
+  * |longrightarrow| ``sysroot``
+
 * Must match the target situation |longrightarrow| binary
   compatibility
 * Statically linked cross build generally ok
 * *But:* shared libraries are a continuous source of pain
+
+**Challenges**
+
+* Cross compiler: finding or building one that works
+
+  * Trial and error, mostly
+  * Building one: `crosstool-ng <https://crosstool-ng.github.io/>`__
+  * Using a metadistribution like `Yocto
+    <https://www.yoctoproject.org/>`__: give you a cross toolchain as
+    by-product of creating the *target rootfilesystem*
+
+* ``sysroot``
+
+  * Target root filesystem, in principle
+  * Ideally stripped down to a miniumum
+
+    * Don't need target *executables* on the host, for example (they
+      won't run)
+
+  * Ideally a by-product of root filesystem creation
 
 The ``sysroot``
 ---------------
