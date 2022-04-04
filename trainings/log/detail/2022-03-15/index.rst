@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-Python Advanced (2022-03-15 - 2022-03-17)
-=========================================
+Python Advanced (2022-03-15 - 2022-03-17, 2022-03-31)
+=====================================================
 
 .. sidebar:: *Training Information*
 
@@ -141,6 +141,36 @@ Continue with mess ...
     * `CSV to database program
       <https://github.com/jfasch/2022-02-23/blob/main/userdb/hcsv-to-sqlite3.py>`__
 
+2022-03-31
+----------
+
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+
+:doc:`PCAP exam </trainings/material/soup/python/pcap-exam>` preparation
+........................................................................
+
+* Look through
+  https://www.udemy.com/course/python-certification-exam-pcap-31-03-practice-tests/
+  (suggest subscription at Udemy)
+
+  * :doc:`Notebook <notebook-wrapper>` section on OO
+
+    * Duck typing
+    * Interfaces
+    * Implementation Inheritance
+    * Method Resolution Order (MRO), and super()
+    * Object Layout (``self``)
+
+    .. image:: mro.png
+       :scale: 50%
+
+* Repeat these:
+
+  * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+  * :doc:`/trainings/material/soup/python/advanced/closures/topic`
+  * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+ 
 Links
 -----
 

@@ -67,6 +67,12 @@ Cross?
 The ``sysroot``
 ---------------
 
+.. sidebar::
+
+   **Topics**
+
+   * :doc:`sshfs <../../ssh/sshfs>`
+
 * The situation on the target, made available on the host
 * Usually a single tree, containing a subset of the target's *root
   filesystem*
@@ -79,3 +85,5 @@ The ``sysroot``
    drwxrwxr-x. 1 jfasch jfasch 38 Mar 29 19:00 lib
    drwxrwxr-x. 1 jfasch jfasch 20 Mar 29 18:59 usr
 
+* Easy solution: use :doc:`sshfs <../../ssh/sshfs>` to mount the
+  target root directory (that does not scale up to reality though)

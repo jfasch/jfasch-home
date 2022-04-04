@@ -21,10 +21,14 @@ Past Versions
    draft-2022-02-16
    draft-2022-03-27
 
+Ongoing Work
+------------
 
+* :doc:`screenplay`
 
 .. toctree::
    :hidden:
 
    proposed-structure
    googletest-instructions
+   screenplay

@@ -18,11 +18,11 @@ Shell Configuration File: ``~/.bashrc``
 What's Volatile?
 ================
 
-* Setting from the commandline aren't usually persistent
+* Settings from the commandline aren't usually persistent
 * Tuning the ``PATH`` environment variable is in effect only for the
   current shell/process and for all of its descendants
-* Nobody outside can see the modification (environment variables are
-  *inherited* after all)
+* Nobody outside that shell's process tree can see the modification
+  *(environment variables are inherited* after all)
 * After a reboot, they are definitely gone
 
   .. code-block:: console

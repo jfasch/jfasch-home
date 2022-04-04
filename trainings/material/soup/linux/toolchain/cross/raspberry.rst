@@ -23,6 +23,32 @@ Toolchains are always a pain in the butt. Here's a writeup (as of
 .. contents::
    :local:
 
+Download And Unpack Linaro Toolchain
+------------------------------------
+
+.. sidebar:: 
+
+   **Links**
+
+   * `Linaro homepage <https://www.linaro.org/>`__
+   * `Linaro toolchain download
+     <https://snapshots.linaro.org/gnu-toolchain/>`__
+
+* Download tarball (I chose the lastest). Be sure to pick the one that
+  runs on ``x86_64``, not the ``aarch64`` one.
+
+  .. code-block:: console
+
+     $ wget -o ~/Downloads/gcc-linaro-12.0.1-2022.02-x86_64_arm-linux-gnueabihf.tar.xz \
+          https://snapshots.linaro.org/gnu-toolchain/12.0-2022.02-1/arm-linux-gnueabihf/gcc-linaro-12.0.1-2022.02-x86_64_arm-linux-gnueabihf.tar.xz
+
+* Unpack into ``~/cross/toolchains``
+
+  .. code-block:: console
+
+     $ mkdir -p ~/cross/toolchains
+     $ tar -C ~/cross/toolchains -J -x -f ~/Downloads/gcc-linaro-12.0.1-2022.02-x86_64_arm-linux-gnueabihf.tar.xz
+
 Create a ``sysroot``
 --------------------
 
@@ -32,6 +58,11 @@ Create a ``sysroot``
 
    * :doc:`../../ssh/basics`
    * :doc:`../../basics/archiving-compression/tar`
+
+.. sidebar::
+
+   Teacher's note: show how mounting the target root directory via
+   :doc:`sshfs <../../ssh/sshfs>` solves the ``sysroot`` problem.
 
 Lacking a precomposed ``sysroot`` that only contains what we need, we
 copy over a minimal set of artifacts from the target. By trial and
@@ -59,32 +90,6 @@ to
    $ ssh  me@target 'tar -c -f - /usr/lib/arm-linux-gnueabihf /usr/lib/gcc/arm-linux-gnueabihf /usr/include /lib/arm-linux-gnueabihf | xz --compress' | \
         xz --decompress | \
 	tar -C ~/cross/sysroots/raspberry -x -f -
-
-Download And Unpack Linaro Toolchain
-------------------------------------
-
-.. sidebar:: 
-
-   **Links**
-
-   * `Linaro homepage <https://www.linaro.org/>`__
-   * `Linaro toolchain download
-     <https://snapshots.linaro.org/gnu-toolchain/>`__
-
-* Download tarball (I chose the lastest). Be sure to pick the one that
-  runs on ``x86_64``, not the ``aarch64`` one.
-
-  .. code-block:: console
-
-     $ wget -o ~/Downloads/gcc-linaro-12.0.1-2022.02-x86_64_arm-linux-gnueabihf.tar.xz \
-          https://snapshots.linaro.org/gnu-toolchain/12.0-2022.02-1/arm-linux-gnueabihf/gcc-linaro-12.0.1-2022.02-x86_64_arm-linux-gnueabihf.tar.xz
-
-* Unpack into ``~/cross/toolchains``
-
-  .. code-block:: console
-
-     $ mkdir -p ~/cross/toolchains
-     $ tar -C ~/cross/toolchains -J -x -f ~/Downloads/gcc-linaro-12.0.1-2022.02-x86_64_arm-linux-gnueabihf.tar.xz
 
 Test Cross Build
 ----------------
