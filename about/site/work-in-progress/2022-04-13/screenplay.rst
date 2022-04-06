@@ -18,7 +18,7 @@ Words
   * A project that falls apart because of ... overengineering
   * Nights of debugging (fun but doesn't scale)
 
-09:00-11:00: Establishing The Project (Live Hacking, Slides)
+09:00-10:30: Establishing The Project (Live Hacking, Slides)
 ------------------------------------------------------------
 
 .. sidebar::
@@ -36,21 +36,96 @@ In a live-hacking session, establish the initial project state.
 
    block-before-googletest
 
+10:30-11:00 Enter Unit Test Frameworks
+--------------------------------------
 
-Enter Unit Test Frameworks
---------------------------
+.. sidebar::
 
-Restructure Test Code
----------------------
+   **Goal**
 
-* ``mkstemp()`` used a lot
-* ``UserDB`` filling
+   * Establish terminology
+   * Show ``googletest`` basics
+
+* jjj slideshow about unit testing, extract from :download:`PDF
+  </trainings/material/pdf/060-design-patterns-unittests.pdf>`
+* jjj polish :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/screenplay`
+* jjj polish :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/screenplay`
+
+.. toctree::
+   :maxdepth: 1
+
+   enter-googletest
+
+11:00-12:00: Cornerstones From The "Clean Code" Book
+----------------------------------------------------
+
+* Software development cycle (*not (!!)*: waterfall)
+* Requirements
+
+  * At a small scale, tests are easy. Mocking a database away maybe?
+    New reader/writer.
+  * Lost tests? Do ``CMake`` and ``googletest`` help in this regard?
+
+* *Intuitive* implementation (|longrightarrow| respect from co-workers
+  and oneself)
+* Refactoring: removing unclean code and *not* breaking requirements
+
+  E.g., factor out readers and writers in an interface, and separate.
+
+* Craftsmanship? 
+* **Maintainability?**
+* Bonus topics about code structure [#code-structure]_, maybe
+
+Clean Code Book Chapters
+........................
+
+Keep the structure, give an overview of what he says (|longrightarrow|
+*respect*), and discuss a few topics. Don't forget "The Code is
+Documentation Enough* T - shirt.
+
+* Names
+
+  * Clear and concise. Nobody should have to think longer than
+    necessary what the named thing is. No encoding, no nothing. Gosh,
+    *hungarian notation*.
+
+    * Is ``UserDB`` a good name? It keeps data in-memory, and has
+      methods ``read()`` and ``write()`` bolted onto it
+      
+      * |longrightarrow| unclear semantics
+      * See :ref:`requirement <userdb-naming-and-implementation>`
+
+  * Class member names: no mangling, like prefixing with
+    ``m_``. Classes must be short enough to not need this.
+  
+* Functions
+
+  * Not everything must take dogmatically though
+  * |longrightarrow| Make a case for ``switch``, by doing
+    :ref:`userdb-backingstore-interface`
+  
+* Comments
+* Formatting
+
+  * Newspaper Metaphor
+
+* Object and Data Structures
+* Error Handling
+* Boundaries
+* Unit Tests
+* Classes
 
 
-Modifications
--------------
 
-It's about keeping code clean, not features.
+12:00-13:00: Lunch Break
+------------------------
+
+UNPOLISHED FROM HERE ON
+-----------------------
+
+
+Requirements
+------------
 
 Error Handling
 ..............
@@ -66,35 +141,72 @@ Refactoring
 ...........
 
 * Something simple as a common output routine for a user?
-* That entire file format mess
-
-  * Flag ``bool binary=true``. From that we know that there is a
-    binary file format somehow. We can assume that there is at most
-    one additional format, but not which one that could be.
-
-    * |longrightarrow| use an ``enum`` and a ``switch`` statement
-    * |longrightarrow| show how ``-Wswitch`` (and ``-Werror``) can
-      help (UB partly hates ``switch`` because he does not know about
-      that feature)
-
-    Discuss *dependency magnetism* though: *every future file format
-    would have to be implemented inside the class*.
-
-  * Everything is implemented inside ``UserDB``: reader and writer
-    classes. 
-
-    * |longrightarrow| could also come up with a reader that reads
-      user records from stdin, and build that into
-      ``bin/userdb-write-binaryfile.cpp`` where it prompts.
-
-      The test for this one would be a little more involved; show that
-      maybe.
-
 * A fixture for temporary files as we would like it. Testname in the
   file stem, but *not* in CWD. Rather in ``/tmp``.
+
+.. _userdb-naming-and-implementation:
+
+``UserDB`` Naming and Implementation
+````````````````````````````````````
+
+* ``UserDB`` is an in-memory structure - a cache basically
+* It has ``read()`` and ``write()`` methods bolted onto it, with
+  unclear signature (``bool binary``?)
+* Create a ``BackingStore`` class that ``UserDB`` gets passed in the
+  constructor (where it then loads from). It does the
+  ``read()/write()`` when the user calls ``sync()`` on ``UserDB``.
+
+.. _userdb-backingstore-interface:
+
+``UserDB``: ``BackingStore`` Must Be An Interface
+`````````````````````````````````````````````````
+
+That entire file format mess. Now
+(:ref:`userdb-naming-and-implementation`) we have a dedicaded
+``BackingStore`` class, but that does two jobs/formats.
+
+* |longrightarrow| *Strategy* pattern
+* Flag ``bool binary=true``. From that we know that there is a binary
+  file format somehow. We can assume that there is at most one
+  additional format, but not which one that could be.
+
+  * |longrightarrow| use an ``enum`` and a ``switch`` statement
+  * |longrightarrow| show how ``-Wswitch`` (and ``-Werror``) can help
+    (UB partly hates ``switch`` because he does not know about that
+    feature)
+
+  Discuss *dependency magnetism* though: *every future file format
+  would have to be implemented inside the class*.
+
+* Everything is still implemented inside ``BackingStore``
+* Make ``BackingStore`` an interface, derive ``Binary`` and ``CSV``
+  from it
+* Change it in frondend programs
+* |longrightarrow| pull out an ``argv``-to-``BackingStore`` function
+  to centralize code.
 
 Features
 ........
 
 * Search by other indexes. ``lastname`` |longrightarrow| multiple
   search results. Something like ``std::lower_bound`` maybe.
+
+.. rubric:: Footnotes
+
+.. [#rvalue-ref] If somebody asks, talk about :doc:`C++ 11 move
+                 semantics
+                 </trainings/material/soup/cxx11/020-new-language-features/060-move/topic>`
+                 |:wink:|
+
+.. [#code-structure] 
+
+   * What's a "module"?
+   * *Dependency management*
+   
+     * Modules depend on others
+     * Often the *why* is unknown |longrightarrow| "just happened"
+     * *Dependency Inversion*: depending on *interfaces* rather than
+       *implementations*
+     * ``cmake --graphviz=...``
+   
+   * Road to hell: *cyclic dependencies* and *global variables*

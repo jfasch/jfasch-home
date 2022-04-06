@@ -12,7 +12,8 @@ Initial Structure
 
 .. sidebar:: Snippets
 
-   Create tree from ``initial-tree.tar.xz``
+   * Create tree from ``initial-tree.tar.xz``
+   * Push to Github
 
 .. code-block:: console
 
@@ -93,6 +94,7 @@ In ``bin/userdb-write-binaryfile.cpp``
 
 In ``src/userdb/userdb.{h,cpp}``, implement ``UserDB::write(const string&)``
 
+* *Write a chapter of method documentation!*
 * Loop over ``std::map`` entries (using range based ``for``)
 * Pull in ``binary-user``
 * ``open(... O_CREAT|O_TRUNC|O_WRONLY, 0666)`` (``assert``'ing that
@@ -284,3 +286,7 @@ Wrap Up
    SUCCESS: ./test-csv
    SUCCESS: ./test-find
    SUCCESS: ./test-funny-overflow-file
+
+**See fixtures**
+
+jjj
