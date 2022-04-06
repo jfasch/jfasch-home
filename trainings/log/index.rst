@@ -15,6 +15,17 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Programmierung Grundlagen, anhand von Python (2022-04-05 - 2022-04-08)
+----------------------------------------------------------------------
+
+Der Kurs fand online mittels :doc:`Microsoft Teams
+</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2022-04-05/index>`)
+
 Python (2022-03-23, 2022-03-30, 2022-04-19 - 2022-03-21)
 --------------------------------------------------------
 

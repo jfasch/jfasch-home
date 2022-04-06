@@ -15,8 +15,7 @@ Write a program that
 * Takes two numbers from the :doc:`commandline
   </trainings/material/soup/python/basics/python_0139_commandline_argv/topic>`. *Remember*:
   commandline arguments can only be strings, so those have to be
-  :doc:`converted to numbers
-  </trainings/material/soup/python/basics/python_0150_datatypes_overview/topic>`.
+   :ref:`converted to numbers <python-datatype-conversions>`.
 * Determines the maximum of the numbers.
 * Outputs the maximum.
 

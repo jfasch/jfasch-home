@@ -296,6 +296,8 @@ Python 3, Generally
 
 **So much for Python 2 vs. 3** ...
 
+.. _python-datatype-conversions:
+
 Datatype Conversions
 --------------------
 
