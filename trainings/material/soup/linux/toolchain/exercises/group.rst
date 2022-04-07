@@ -14,6 +14,8 @@ Contents
    :maxdepth: 1
 
    raspberry-toolchain
+   native-build
+   cross-build
 
 Dependencies
 ------------
