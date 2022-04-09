@@ -18,6 +18,17 @@ Words
   * A project that falls apart because of ... overengineering
   * Nights of debugging (fun but doesn't scale)
 
+* Scenario
+
+  * Someone makes a dumb mistake and software kills 10000 people
+  * Politics will jump in want answers
+  * If we do not have one, they will regulate
+  * Do we want this?
+  * Ethics maybe? Do we have ethics?
+
+* Survey: who has had a project in thier life that got out of control?
+  Why?
+
 09:00-10:30: Establishing The Project (Live Hacking, Slides)
 ------------------------------------------------------------
 
@@ -36,28 +47,38 @@ In a live-hacking session, establish the initial project state.
 
    block-before-googletest
 
-10:30-11:00 Enter Unit Test Frameworks
---------------------------------------
+10:30-10:45: Coffee Break
+-------------------------
 
-.. sidebar::
-
-   **Goal**
-
-   * Establish terminology
-   * Show ``googletest`` basics
-
-* jjj slideshow about unit testing, extract from :download:`PDF
-  </trainings/material/pdf/060-design-patterns-unittests.pdf>`
-* jjj polish :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/screenplay`
-* jjj polish :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/screenplay`
-
-.. toctree::
-   :maxdepth: 1
-
-   enter-googletest
-
-11:00-12:00: Cornerstones From The "Clean Code" Book
+10:45-12:00: Cornerstones From The "Clean Code" Book
 ----------------------------------------------------
+
+Craftsmanship? What's That?
+...........................
+
+.. image:: electrical-nonsolution.jpg
+   :scale: 40%
+
+.. image:: gsellmanns-weltmaschine.jpg
+   :scale: 40%
+
+
+
+Blah 
+
+* Respect: author cares about me
+
+blah
+
+
+
+* A word about OO |longrightarrow| overengineering is the greatest bug
+* Architecture
+
+  * Good architecture allows major decisions to be deferred
+  * Maximizes the number of decisions *not made*
+  * Makes choice of tools irrelevant
+  * Cite Luke :-)
 
 * Software development cycle (*not (!!)*: waterfall)
 * Requirements
@@ -83,6 +104,7 @@ Keep the structure, give an overview of what he says (|longrightarrow|
 *respect*), and discuss a few topics. Don't forget "The Code is
 Documentation Enough* T - shirt.
 
+* Clean Code: what is that?
 * Names
 
   * Clear and concise. Nobody should have to think longer than
@@ -105,24 +127,90 @@ Documentation Enough* T - shirt.
     :ref:`userdb-backingstore-interface`
   
 * Comments
+
+  * Wear T-shirt
+
 * Formatting
 
   * Newspaper Metaphor
 
-* Object and Data Structures
+* Objects and Data Structures
 * Error Handling
 * Boundaries
 * Unit Tests
-* Classes
+
+  Three laws of TDD ...
+
+  1. You may not write production code until you have written a
+     failing unit test
+  2. You may not write more of a unit test than is sufficient to fail
+     (and not compiling is a failure)
+  3. You may not write more production code than is necessary to pass
+     current tests
+
+  Refactoring ...
+
+  * Initial code is a mess (nobody writes clean code from the
+    beginning)
+  * Takes roughly the same time than it took to write code initially
+  * |longrightarrow| nobody likes it
+  * Anyway, it is the only way to keep code clean
+  * |longrightarrow| integral part of our craftsmanship
+
+  Another look ...
+
+  * If you are not able to test in isolation, then something is wrong
+  * If you must fire up an Oracle database to conduct testing, then
+    something's seriously wrong
+
+  It's only tests?
+
+  * Seriously, no!
+  * Tests are the safety net of your architecture |longrightarrow|
+    keep production code together
+  * |longrightarrow| treat them carefully!
+  * Production code follows the tests, actually!
+
+  F.I.R.S.T.
+
+  * Fast
+  * Independent
+  * Repeatable
+  * Self-validating (either pass or fail)
+  * Timely (test first)
+
+* Classes. Gosh, OO. Couple principles maybe.
+
+  * Not loose overview |longrightarrow| classes should be small
+  * One responsibility
+  * ... (it's always the same)
 
 
+10:30-11:00 Enter Unit Test Frameworks
+--------------------------------------
+
+.. sidebar::
+
+   **Goal**
+
+   * Establish terminology
+   * Show ``googletest`` basics
+
+* jjj slideshow about unit testing, extract from :download:`PDF
+  </trainings/material/pdf/060-design-patterns-unittests.pdf>`
+* jjj polish :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/screenplay`
+* jjj polish :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/screenplay`
+
+.. toctree::
+   :maxdepth: 1
+
+   enter-googletest
 
 12:00-13:00: Lunch Break
 ------------------------
 
 UNPOLISHED FROM HERE ON
 -----------------------
-
 
 Requirements
 ------------
@@ -131,7 +219,8 @@ Error Handling
 ..............
 
 * Not overwrite existing files
-* Refuse to read from file when inmem already has data
+* Refuse to read from file when inmem already has data (but see
+  :ref:`pass-store-in-ctor`)
 * Properly defined exceptions (can start with flat unrelated exception
   types, and then be unified under a common exception type)
 
@@ -140,9 +229,23 @@ Error Handling
 Refactoring
 ...........
 
-* Something simple as a common output routine for a user?
 * A fixture for temporary files as we would like it. Testname in the
   file stem, but *not* in CWD. Rather in ``/tmp``.
+
+.. _pass-store-in-ctor:
+
+Load From BackingStore in Constructor
+`````````````````````````````````````
+
+**Problem**
+
+Why live with the restriction that ``UserDB`` cannot load fom a
+``BackingStore`` when we already have data?
+
+**Solution**
+
+* Load from a ``BackingStore`` when ``UserDB`` is initialized.
+* Remove the error type
 
 .. _userdb-naming-and-implementation:
 

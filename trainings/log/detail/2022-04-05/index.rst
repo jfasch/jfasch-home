@@ -62,6 +62,9 @@ Variablen und Datentypen
   * `swap.py <https://github.com/jfasch/2022-04-05/blob/main/exercises/joerg/swap.py>`__
   * `swap-pythonic.py <https://github.com/jfasch/2022-04-05/blob/main/exercises/joerg/swap-pythonic.py>`__
 
+  .. image:: swap.png
+     :scale: 40%
+
 Kontrollstrukturen
 ``````````````````
 
@@ -69,7 +72,6 @@ Kontrollstrukturen
 * :doc:`/trainings/material/soup/python/exercises/herdt/max_numbers`
 
   * `maximum.py <https://github.com/jfasch/2022-04-05/blob/main/exercises/joerg/maximum.py>`__
-  * `maximum-semipythonic.py <https://github.com/jfasch/2022-04-05/blob/main/exercises/joerg/maximum-semipythonic.py>`__
 
 Discussion: Flow Charts?
 ````````````````````````
@@ -96,11 +98,32 @@ Which one is more clear?
 Tag 2
 .....
 
-* Reiterate on maximumu-semipythonic -> pythonic
-
 * :doc:`/trainings/material/soup/python/exercises/herdt/greet`
+
+  * `greet.py
+    <https://github.com/jfasch/2022-04-05/blob/main/exercises/joerg/greet.py>`__
+
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
+
+  * Explaining ``break``: `rolling-dice.py
+    <https://github.com/jfasch/2022-04-05/blob/main/exercises/joerg/rolling-dice.py>`__
+
 * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
+
+  * `even.py
+    <https://github.com/jfasch/2022-04-05/blob/main/exercises/joerg/even.py>`__
+
+* Back to :doc:`/trainings/material/soup/python/exercises/herdt/greet`
+
+  Additional feature: repeatedly prompt the user after bad input. For
+  example, when the input for the sex is 'z', prompt her again. Do
+  this until a valid sex is input.
+
+  Same if hour of day is not in 0-23.
+
+Tag 3
+.....
+
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
@@ -108,10 +131,6 @@ Tag 2
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
-
-Tag 3
-.....
-
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 
   * :doc:`/trainings/material/soup/python/basics/python_0270_functions/slideshow`
