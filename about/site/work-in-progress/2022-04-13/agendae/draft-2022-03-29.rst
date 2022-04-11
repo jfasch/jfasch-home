@@ -1,74 +1,47 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda (Sent Out 2022-03-27)
+Agenda (Sent Out 2022-03-29)
 ============================
 
 .. contents::
    :local:
+   :depth: 2
 
 Overall Plan
 ------------
 
-.. note::
+* Take the topics from the :doc:`proposed agenda <proposed-structure>`
+  ("Clean Code", TDD, and a hands-on session)
+* Establish an artificial project, in a *live-hacking mode* (:doc:`/me
+  </about/myself/index>` hacks and talks, and brings up slide material
+  occasionally)
 
-   **Proposed structure from 2022-03-09**
+  * First implementation of core functionality
+  * Introduce a brute force testing approach (which is then also used
+    for feature development/TDD)
+  * Switch to ``googletest``
 
-   * Block 1: Clean code
-
-     * Thoughts from Uncle Bob
-
-       * Bring example
-       * Discuss
-
-     * Keeping Code Clean in the Small
-
-   * Block 2: Unit Testing, TDD
-
-     * C/C++: googletest
-     * Python: pytest (sketch only)
-     * Livehacking and simple project
-
-   * Block 3: TDD hands-on
-
-     * 7 people |longrightarrow| groups
-     * Artificial project; it's not easy to find code that can be
-       made testable/tested at customer's site.
-     * cmake, cdash (?), ctest, visual studio (2019, doze)
-     * In-house tools for unittests?
-
-       * cdk (core development kit) testsystem (home-made, unwanted
-         internally)
-       * https://robotframework.org/ -> jenkins
-
-     * Create two dummy projects googletest and boost, try to build
-       those
-
-*Live-hack*, and bring up an artificial project step by step, to give
-an overview of the following topics.
+* Overview of the "Clean Code" book (see below)
+* Hands-On session in the afternoon. Refactoring to clean code,
+  feature implementation, ...
 
 .. list-table::
    :align: left
 
-   * * .. image:: clean-code.jpg
+   * * .. image:: ../images/clean-code.jpg
      * `Clean Code: A Handbook of Agile Software Craftsmanship, by
        Robert C. Martin ("Uncle Bob")
        <https://www.oreilly.com/library/view/clean-code-a/9780136083238/>`__
-   * * .. image:: tdd.jpg
+   * * .. image:: ../images/tdd.jpg
      * `Test Driven Development: By Example, by Kent Beck
        <https://www.oreilly.com/library/view/test-driven-development/0321146530/>`__
 
-The project starts small, introducing :doc:`Unit Testing and Test
-Driven Development </trainings/repertoire/unittests>`.
+09:00-11:00: Establishing The Project (Live Hacking, Slides)
+------------------------------------------------------------
 
-By throwing more and more requirements at the project as we go, ideas
-from the Clean Code book are demonstrated.
-
-Using slide material, guide through an agile process based on test
-driven development on that project.
-
-User Database: The Beginning 
-----------------------------
+The Beginning 
+..............
 
 .. sidebar::
 
@@ -78,8 +51,8 @@ User Database: The Beginning
    * That is the problem
    * |longrightarrow| *it has a bug*
 
-Implementation
-..............
+Implementation Notes
+````````````````````
 
 * ``class User``, like I did, for example, in
   :doc:`/trainings/log/detail/2022-03-15/index` - only in C++.
@@ -95,7 +68,7 @@ Implementation
 
      struct BinaryUser {
          char firstname[10];
-         char lastname[10];
+         char lastname[10];     // <--- BUG OPPORTUNITY!! ("Faschingbauer" is longer)
          char email[20];
      };
      void write(std::ofstream&)
@@ -105,10 +78,10 @@ Implementation
      }
    
 Enter Unit Testing
-------------------
+..................
 
 Plan
-....
+````
 
 * First few tests come about when something goes wrong.
 * Write separate programs for each
@@ -118,7 +91,7 @@ Plan
   argparse option. Prepare that, explain a little.
 
 First Test: A Bug Comes In
---------------------------
+..........................
 
 .. sidebar::
 
@@ -156,17 +129,17 @@ First Test: A Bug Comes In
   that test file.
 
   * Re-use is not a matter now
-  * A :ref:`second test <second-test>`, later, when a feature is
+  * A :ref:`second test <xxx-second-test>`, later, when a feature is
     implemented using Test Driven Development, we will factor that
     code out.
 	   
 * Fix `valgrind <https://valgrind.org/>`__ detected file descriptor
   leak when done
 
-.. _second-test:
+.. _xxx-second-test:
 
 Second Test: A Requirement Comes In
------------------------------------
+...................................
 
 .. sidebar::
    
@@ -206,21 +179,11 @@ something more modern: plaintext files. :doc:`/me
 * Write another test, this time for the reader side. Now it's the
   third time that we fill our user database so verbosely.
 
-Restructure Test Code: Enter Unit Testing Frameworks
-----------------------------------------------------
+Restructure Test Code
+.....................
 
-.. sidebar:: 
-
-   **Goal**
-
-   * Show one Unit Testing Framework, ``googletest``
-
-   **Links**
-
-   * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/screenplay`
-   * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/screenplay`
-   * :doc:`googletest-instructions`
-   * `googletest <https://github.com/google/googletest>`__
+Without using a unit testing framework (we want to create the problem
+first, and then see the solution),
 
 * Factor out ``UserDB`` instances from both tests, this is duplicate
   code |longrightarrow| *not clean*
@@ -240,11 +203,20 @@ More tests ...
      $ for test in $(ls -1 test-*); do $test && echo "SUCCESS: $test" 1>&2 || echo "FAILED: $test" 1>&2; done
 
 Enter Unit Testing Frameworks
------------------------------
+.............................
 
+.. sidebar:: 
 
-Implementation
-..............
+   **Goal**
+
+   * Show one Unit Testing Framework, ``googletest``
+
+   **Links**
+
+   * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/screenplay`
+   * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/screenplay`
+   * :doc:`googletest-instructions`
+   * `googletest <https://github.com/google/googletest>`__
 
 * Transform existing test code to use `googletest
   <https://github.com/google/googletest>`__
@@ -252,10 +224,8 @@ Implementation
   <https://google.github.io/googletest/advanced.html#type-assertions>`__. Tested
   code should not contain test code.
 
-More Unit Testing Frameworks
-............................
-
-Overview of other unit testing frameworks.
+Overview Of Other Unit Testing Frameworks
+`````````````````````````````````````````
 
 * C/C++: `Boost.Test
   <https://www.boost.org/doc/libs/1_66_0/libs/test/doc/html/index.html>`__
@@ -263,17 +233,12 @@ Overview of other unit testing frameworks.
   fit in?
 * Python: :doc:`python:library/unittest`
 * Python: `pytest <https://docs.pytest.org/>`__
-  
 
-More Requirements: Clean Code, Large And Small
-----------------------------------------------
+11:00-14:00: Clean Code: What Is That? (Slides Only)
+----------------------------------------------------
 
-Come up with a series of requirements, giving us the chance to shine
-light on the following topics.
-
-Cornerstones From The "Clean Code" Book
-.......................................
-
+11:00-12:00: Cornerstones From The "Clean Code" Book
+....................................................
 
 * Software development cycle (*not (!!)*: waterfall)
 * Requirements
@@ -292,11 +257,13 @@ Cornerstones From The "Clean Code" Book
 * **Maintainability?**
 * Bonus topics about code structure [#code-structure]_, maybe
 
-Keeping Code Clean in the Small
-................................
+12:00-13:00: Lunch Break
+........................
 
-C Language Support for Code Sanity
-``````````````````````````````````
+13:00-14:00: Keeping Code Clean in the Small
+............................................
+
+**C Language Support for Code Sanity**
 
 See :doc:`/trainings/material/soup/c/090-program-sanity/group` for
 available slide material.
@@ -307,26 +274,23 @@ available slide material.
 * Integer sizes and signedness
 * Advanced techniques
 
-Compiler Warning and Error Options
-``````````````````````````````````
+**Compiler Options: Warnings and Errors**
 
 Talk about GCC/LLVM's options to enable warnings on suspicious code.
 
-Optimization
-````````````
+**Optimization**
 
 *
   :doc:`/trainings/material/soup/c/100-performance/020-computebound/topic`. Show
   what compilers usually can do for you, performance-wise (message:
   they are better at writing ugly code than any human).
 
-
 *
   :doc:`/trainings/material/soup/c/100-performance/030-memory/topic`. Memory
   optimization: Caches, array traversal
 
-Hands-On: More Requirements
----------------------------
+14:00-??: Hands-On Session
+--------------------------
 
 .. sidebar::
 
@@ -334,16 +298,18 @@ Hands-On: More Requirements
 
    * Switch to group exercise mode: can we work together on a version
      control system?
+
+   **Open Questions**
+
    * Github maybe? Can we have per-user accounts?
    * Or can I join your organization?
    * :doc:`googletest-instructions`
 
-Conclusion/Message
-------------------
+In a test driven manner, lets do
 
-* Unit Testing makes code clean from beginning
-* Refactoring is done as needed (no fear of breakage)
-* Part of software craftsmanship
+* Refactoring
+* Feature implementation (unclean first, followed by refactoring
+  sessions)
 
 
 .. rubric:: Footnotes
@@ -365,4 +331,5 @@ Conclusion/Message
      * ``cmake --graphviz=...``
    
    * Road to hell: *cyclic dependencies* and *global variables*
+
 

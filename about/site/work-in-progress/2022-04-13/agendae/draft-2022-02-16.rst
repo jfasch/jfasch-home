@@ -12,7 +12,7 @@ Introduction: Clean Code? What is that?
 
 .. sidebar:: 
 
-   .. image:: clean-code.jpg
+   .. image:: ../images/clean-code.jpg
 
 `Clean Code: A Handbook of Agile Software Craftsmanship, by
 Robert C. Martin ("Uncle Bob")
