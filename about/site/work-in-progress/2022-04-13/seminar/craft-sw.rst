@@ -69,6 +69,8 @@ Coding Style
   * War between those who obey the rules and those who (occasionally)
     don't
 
+.. _clean-code-solid:
+
 Design Principles: SOLID
 ------------------------
 

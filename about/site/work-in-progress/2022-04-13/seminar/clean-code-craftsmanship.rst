@@ -7,17 +7,13 @@ Clean Code: Messages From The Book
 .. contents::
    :local:
 
-Clean Code Book Chapters
-------------------------
+.. sidebar:: Survey
 
-Keep the structure, give an overview of what he says (|longrightarrow|
-*respect*), and discuss a few topics. Don't forget "The Code is
-Documentation Enough* T - shirt.
-
-* Clean Code: what is that?
+   Clean code? What is that? What annoys you most when you see code
+   (somebody else's and/or your own)?
 
 Names
-.....
+-----
 
 * Clear and concise. Nobody should have to think longer than necessary
   what the named thing is. No encoding, no nothing. Gosh, *hungarian
@@ -33,38 +29,45 @@ Names
   must be short enough to not need this.
   
 Functions
-.........
+---------
 
 * Not everything must take dogmatically though
 * |longrightarrow| Make a case for ``switch``
 * :doc:`tasks/refactoring/store-enum-switch`
   
 Comments
-........
+--------
 
 * Wear T-shirt
+* Comments do not make up for bad code
+* Incorrect comments?
 
 Formatting
-..........
+----------
 
 * Newspaper Metaphor
 
 Objects and Data Structures
-...........................
+---------------------------
 
 Error Handling
-..............
+--------------
+
+* Exception handling, clearly
+* But what if no language support?
+
+  Show ``/home/jfasch/work/linux/kernel/fork.c``, ``copy_process()``
 
 Boundaries
-..........
+----------
 
 Unit Tests
-..........
+----------
 
 Three laws of TDD ...
 
-1. You may not write production code until you have written a
-   failing unit test
+1. You may not write production code until you have written a failing
+   unit test
 2. You may not write more of a unit test than is sufficient to fail
    (and not compiling is a failure)
 3. You may not write more production code than is necessary to pass

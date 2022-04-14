@@ -1,17 +1,52 @@
 .. ot-task:: clean_code.refactoring.backingstore_monolithic
-   :dependencies: clean_code.refactoring.store_enum_switch
+   :dependencies: clean_code.refactoring.store_enum_switch,
+		  clean_code.bugs.overwrite_existing_files,
+		  clean_code.bugs.overwrite_store_content_on_read
+
+.. include:: <mmlalias.txt>
 
 
-``UserDB`` Responsibilities: ``read()``, ``write()``
-====================================================
+
+``UserDB`` Has Too Many Responsibilities |longrightarrow| ``BackingStore``
+==========================================================================
+
+.. contents::
+   :local:
 
 Should the file format be the responsibility of something that is
 mainly an in-memory database?
 
-Create a class ``BackingStore`` that is used to
+.. attention::
 
-* Read records from, into ``UserDB``
-* Write records to, from inside ``UserDB``
+   There are bugfixes ongoing in the file IO scene. Please wait until
+   they are in place to not unnecessarily conflict by ripping out code
+   under modification.
+   
+   (See :doc:`../bugs/overwrite-existing-files` and
+   :doc:`../bugs/overwrite-store-content-on-read`)
 
-Instead of passing ``filename`` and ``format`` to ``UserDB::read()``
-and ``UserDB::write()``, pass a ``BackingStore`` instance instead.
+``BackingStore``
+----------------
+
+Extract the bodies of ``UserDB::read()`` and ``UserDB::write()`` into
+a new class ``BackingStore``. It is that class's responsibility to
+implement the details of binary and CSV files IO.
+
+Class ``UserDB`` gets passed a ``BackingStore`` instance in its
+``read()`` and ``write()`` methods, as a replacement for a
+``filename``.
+
+Like so,
+
+.. code-block:: c++
+
+   class UserDB {
+   public:
+       void read(BackingStore&, /*...*/);
+       void write(BackingStore&, /*...*/);
+   };
+
+.. image:: backingstore-monolithic.png
+
+.. ot-graph::
+   :entries: clean_code.refactoring.backingstore_monolithic

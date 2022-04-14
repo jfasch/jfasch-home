@@ -8,8 +8,7 @@ Bugs
 
    overwrite-existing-files
    overwrite-store-content-on-read
-   
-
+   find-error
 
 .. ot-graph::
    :entries: clean_code.bugs

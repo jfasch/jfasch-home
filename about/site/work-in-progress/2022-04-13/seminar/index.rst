@@ -1,11 +1,22 @@
 .. include:: <mmlalias.txt>
 
 
-Is Software A Craft? Software Is A Craft?
+Is Software A Craft? Software Is A Craft!
 =========================================
 
 .. contents::
    :local:
+
+.. list-table::
+   :align: left
+   :widths: auto
+
+   * * .. image:: ../images/clean-code.jpg
+          :height: 300px
+     * .. image:: ../images/tdd.jpg
+          :height: 300px
+     * .. image:: ../images/design_patterns.webp
+          :height: 300px
 
 09:00-09:15 Introductory Words
 ------------------------------
@@ -56,7 +67,9 @@ Is Software A Craft? Software Is A Craft?
 10:00-10:15 Coffee Break
 ------------------------
 
-10:15-12:00 Establishing "The Project" (Live Hacking, Slides)
+.. _clean-code-establish-project:
+
+10:15-11:00 Establishing "The Project" (Live Hacking, Slides)
 -------------------------------------------------------------
 
 In a live-hacking session, establish the initial project state.
@@ -66,10 +79,7 @@ In a live-hacking session, establish the initial project state.
 
    block-before-googletest
 
-12:00-13:00 Lunch Break
------------------------
-
-13:00-14:00 Enter Unit Testing Frameworks
+11:00-12:00 Enter Unit Testing Frameworks
 -----------------------------------------
 
 .. image:: ../images/xunit-structure.png
@@ -80,10 +90,10 @@ In a live-hacking session, establish the initial project state.
 
    enter-googletest
 
-14:00-14:15 Coffee Break
-------------------------
+12:00-13:00 Lunch Break
+-----------------------
 
-14:15-15:00 Cornerstones From The "Clean Code" Book
+13:00-14:00 Cornerstones From The "Clean Code" Book
 ---------------------------------------------------
 
 .. toctree::
@@ -91,18 +101,24 @@ In a live-hacking session, establish the initial project state.
 
    clean-code-craftsmanship
 
-15:30-16:00 Keeping Code Clean In The Small
+14:00-14:45 Keeping Code Clean In The Small
 -------------------------------------------
 
 * :doc:`/trainings/material/soup/c/090-program-sanity/group`
 * :doc:`/trainings/material/soup/c/100-performance/group`
 
-16:00-00:00 Hack
-----------------
+14:45-15:00 Coffee Break
+------------------------
+
+15:00-23:59 "Extreme Programming" Session
+-----------------------------------------
+
+Using Test Driven Development, hack deliciously, fearlessly cleaning
+up the code base!
 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    tasks/group
 
-
+See :doc:`tasks/group` for more.

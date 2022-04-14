@@ -1,4 +1,5 @@
 .. ot-task:: clean_code.refactoring.store_enum_switch
+   :dependencies: clean_code.features.csv
 
 
 ``UserDB::{read,write}()``: ``bool``, Really?

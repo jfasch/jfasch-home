@@ -6,11 +6,10 @@ Refactoring
 .. toctree::
    :maxdepth: 1
 
-   pass-store-in-ctor
-   fixture-temp-files
    store-enum-switch
    backingstore-monolithic
    backingstore-interface
+   pass-store-in-ctor
 
 
 .. ot-graph::
