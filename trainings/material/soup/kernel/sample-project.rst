@@ -1,35 +1,13 @@
 .. include:: <mmlalias.txt>
 
-Linux Driver Development
-========================
-
-.. contents::
-   :local:
-
-A put-together of kernel related topics.
-
-Topics and Dependencies
------------------------
-
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   */topic
-
-.. ot-graph::
-   :entries: kernel
-
-
-Group Description
------------------
-
-.. ot-group:: kernel
 
 Sample Code Maintenance
------------------------
+=======================
 
-* Github repo `here <https://github.com/jfasch/jf-kernel-course>`__
+.. sidebar:: 
+
+   * `Github repo <https://github.com/jfasch/jf-kernel-course>`__
+
 * Directory ``_morph`` holds ``my_driver.c``, which is the base for
   livehacking sessions
 * ``my_driver.c`` is morphed as we go
@@ -271,41 +249,3 @@ Sample Code Maintenance
        * - *Status*
          - DONE
  
-Links
------
-
-* https://www.kernel.org/doc/
-* https://www.kernel.org/doc/html/latest/
-* `LDD3, O'Reilly
-  <https://www.oreilly.com/openbook/linuxdrive3/book/>`__
-
-To Do List
-----------
-
-* Networking
-
-  https://www.cs.dartmouth.edu/~sergey/netreads/path-of-packet/Lab9_modified.pdf
-
-* :download:`Kernel </trainings/material/pdf/400-kernel.pdf>`
-
-  * Topic "Kernel Source"
-  * "Kernel Modules"? Probably aggregate into :doc:`hello-world/topic`
-  * "Kernel Internals"?
-
-  * 0520-kernel-communication
-  * 0521-kernel-kmalloc (GFP etc, **depend interrupts on it**)
-  * 0525-kernel-io-memory
-  * 0532-kernel-threaded-interrupts
-  * 0710-kernel-preempt-rt
-
-* Aggregate ``_morph/`` branches top-level
-* Bring source code into slides/screenplays
-* Userspace/kernel picture from sysprog.
-* In topics that refer to github code, mention branch where code is
-  maintained. (code-block caption)
-* SEO
-
-  * ``meta`` everywhere
-  * sidebars with backlinks to this document
-  * this document: course description
-

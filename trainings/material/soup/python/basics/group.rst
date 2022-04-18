@@ -29,7 +29,7 @@ Python: The Language Fundamentals
       * * **Target Audience**
         * * Programming noobs who wish to do more
 	  * Part-time programmers; for example test engineers, or
-	    devops personnel
+	    devops engineers
           * Those who just want to do more, and who are not required
 	    to write in a particular language
       * * **Course Language**

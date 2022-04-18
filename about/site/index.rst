@@ -19,7 +19,7 @@ The source of this site is licensed under the `GPLv3
 
 This site contains material for trainings that I give. The material is
 structured much like software (topics *depend on* other topics; see
-for example :doc:`here </trainings/material/soup/kernel/index>` and
+for example :doc:`here </trainings/material/soup/kernel/group>` and
 :doc:`here </trainings/material/soup/python/group>`)
 
 See also `this discussion over at LWN
@@ -68,7 +68,7 @@ let me break links by moving content around).
 
 Last not least, Sphinx has an extension interface :doc:`that I use
 <opentraining:index>` a lot to make course material :doc:`a little
-more maintainable </trainings/material/soup/kernel/index>`.
+more maintainable </trainings/material/soup/kernel/group>`.
 
 Installation Instructions
 -------------------------

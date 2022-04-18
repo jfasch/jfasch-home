@@ -22,7 +22,7 @@ work in progress*).
    linux/group
    sysprog/group
    unittest/group
-   kernel/index
+   kernel/group
    graph
 
 Code

@@ -18,5 +18,5 @@ cbda1e98040d084c31ff6e83f04d78dbebf5c1c2
 <https://gitlab.cc-asp.fraunhofer.de/ndf/asc-team-training-2022-04/-/commit/cbda1e98040d084c31ff6e83f04d78dbebf5c1c2>`__
 
 
-.. ot-dependencies:: 
+.. ot-graph:: 
    :entries: clean_code.bugs.find_error

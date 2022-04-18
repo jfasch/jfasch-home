@@ -62,8 +62,8 @@ Kernel: Where The Heavy Stuff Is
 
 .. sidebar:: 
 
-   See :doc:`/trainings/material/soup/kernel/index` for a look under
-   the surface.
+   See :doc:`/trainings/repertoire/kernel-programming-basics` for a
+   look under the surface.
 
 * Interrupts from hardware devices
 * Raw memory - *not* organized linearly
