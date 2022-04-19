@@ -15,8 +15,11 @@ Contents
 
    csvreader
    csvdictreader
+   csvreader-function
    csvdictreader-function
    userdb_csv
+   user_json
+   mqtt-publish-csv
 
 Graph
 -----

@@ -88,41 +88,30 @@ CSV
 ```
 
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
-* From :doc:`/trainings/material/soup/python/exercises/userdb/group`
-
-  * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
-
-Modules
-```````
-
-* :doc:`/trainings/material/soup/python/advanced/modules`
-* From :doc:`/trainings/material/soup/python/exercises/userdb/group`
-
-  * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
 
 2022-04-19, 2022-04-20, 2022-04-21: Advanced
 ............................................
-
-Refactoring
-```````````
-
-* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
-
-Modules
-```````
-
-* :doc:`/trainings/material/soup/python/advanced/modules`
-* From :doc:`/trainings/material/soup/python/exercises/userdb/group`
-
-  * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
 
 Plan For The Wild Part
 ``````````````````````
 
 .. image:: plan.png
    :scale: 50%
+
+* Group Exercise Preparation
+
+  * `Git for Windows <https://git-scm.com/download/win>`__
+  * Better yet: :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+  * :doc:`/trainings/material/soup/python/misc/vscode`
+
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+* :doc:`/trainings/material/soup/python/advanced/modules`
+* :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+* :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
+* :doc:`/trainings/material/soup/python/exercises/userdb/mqtt-publish-csv`
 
 More details (omitted in "basics" days)
 

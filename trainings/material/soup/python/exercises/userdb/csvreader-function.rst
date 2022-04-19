@@ -1,12 +1,12 @@
-.. ot-exercise:: python.exercises.userdb.csvdictreader_function
-   :dependencies: python.exercises.userdb.csvdictreader,
+.. ot-exercise:: python.exercises.userdb.csvreader_function
+   :dependencies: python.exercises.userdb.csvreader,
 		  python.basics.python_0270_functions
 		  
 .. include:: <mmlalias.txt>
 
 
-Exercise: Refactoring - Extract CSV Reading Into Function (``csv.dictreader``)
-==============================================================================
+Exercise: Refactoring - Extract CSV Reading Into Function (``csv.reader``)
+==========================================================================
 
 .. contents::
    :local:
@@ -14,8 +14,8 @@ Exercise: Refactoring - Extract CSV Reading Into Function (``csv.dictreader``)
 Requirement
 -----------
 
-Following :doc:`csvdictreader`, refactor ``read-userdb-header.py`` to
-not directly output the user records as specified.
+Following :doc:`csvreader`, refactor ``read-userdb.py`` to not
+directly output the user records as specified.
 
 Rather, create a function that reads the CSV file, and returns a list
 of user records - dictionaries with specified keys - of the form,
@@ -34,7 +34,7 @@ part that creates the output which remains the same):
 
 .. code-block:: python
    
-   user_records = read_csv_header(filename)
+   user_records = read_csv_noheader(filename)
    for rec in user_records:
        ... create output like before, no change ...
 
@@ -42,4 +42,4 @@ Dependencies
 ------------
 
 .. ot-graph::
-   :entries: python.exercises.userdb.csvdictreader_function
+   :entries: python.exercises.userdb.csvreader_function
