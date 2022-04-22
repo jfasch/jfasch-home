@@ -25,6 +25,8 @@ Topics
    static-library/topic
    shared-libraries/topic
    cross/group
+   cmake/stub-cmake-course
+   cmake/local
 
    exercises/group
 

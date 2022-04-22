@@ -1,0 +1,46 @@
+2022-04-01
+==========
+
+.. contents::
+   :local:
+
+Topics
+------
+
+* Recap: this is what's needed during our cross compilation endeavors
+
+  * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
+  * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
+
+**Cross Compilation Prerequisites**
+
+* :doc:`/trainings/material/soup/linux/basics/intro/environment`
+* :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
+* :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
+* :doc:`/trainings/material/soup/linux/toolchain/cross/raspberry`
+
+**Development environment**
+
+* Jumping through hoops on Doze
+       
+  * :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+  * `WSL 2 with Visual Studio Code
+    <https://code.visualstudio.com/blogs/2019/09/03/wsl2>`__
+  * `Visual Studio Code Remote - WSL
+    <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl>`__
+  * `Remote development in WSL
+    <https://code.visualstudio.com/docs/remote/wsl-tutorial>`__
+  * *Big picture*: how would this fit together with remote/embedded
+    work
+ 
+  .. image:: doze-linux-integration.png
+     :scale: 50%
+       
+* ... or native Linux of course :-)
+
+Homework
+--------
+
+* :doc:`/trainings/material/soup/linux/toolchain/exercises/raspberry-toolchain` (2P)
+* :doc:`/trainings/material/soup/linux/toolchain/exercises/native-build` (3P)
+* :doc:`/trainings/material/soup/linux/toolchain/exercises/cross-build` (5P)

@@ -109,7 +109,10 @@ Plan For The Wild Part
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
 * :doc:`/trainings/material/soup/python/advanced/modules`
+* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
 * :doc:`/trainings/material/soup/python/exercises/userdb/mqtt-publish-csv`
 
