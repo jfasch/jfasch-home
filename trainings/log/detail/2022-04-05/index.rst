@@ -22,6 +22,10 @@ Programmierung Grundlagen, anhand von Python (2022-04-05 - 2022-04-08)
    * :doc:`Structure <notebook-wrapper>`
    * :doc:`Whole notebook <notebook>`
 
+   **Successor Training**
+
+   * :doc:`../2022-04-25/index`
+
 .. contents::
    :local:
 

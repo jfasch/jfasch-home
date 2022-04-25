@@ -15,6 +15,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Basics (2022-04-25 - 2022-04-27)
+---------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/python-grundlagen>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2022-04-25/index>`)
+
 Programmierung Grundlagen, anhand von Python (2022-04-05 - 2022-04-08)
 ----------------------------------------------------------------------
 

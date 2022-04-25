@@ -1,0 +1,72 @@
+.. include:: <mmlalias.txt>
+
+Python Basics (2022-04-25 - 2022-04-27)
+=======================================
+
+.. toctree:: 
+   :hidden:
+
+   notebook
+
+.. sidebar:: *Training Information*
+
+   **Material**
+
+   * :doc:`/trainings/material/soup/python/basics/group`
+   * `Github Repository <https://github.com/jfasch/2022-04-05>`__
+
+   **Notebook**
+
+   * :doc:`Structure <notebook-wrapper>`
+   * :doc:`Whole notebook <notebook>`
+   * :download:`Download <notebook.ipynb>`
+
+   **Predecessor Training**
+
+   * :doc:`../2022-04-05/index`
+
+.. contents::
+   :local:
+
+Agenda
+------
+
+**Recapitulation**
+
+* :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
+* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+* Exercise: :doc:`/trainings/material/soup/python/exercises/herdt/greet`
+
+**Control Flow and Iteration**
+
+* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
+
+**Functions**
+
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
+* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+
+**More On DataTypes**
+
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
+
+**File I/O**
+
+* :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
