@@ -13,7 +13,7 @@ Python Basics (2022-04-25 - 2022-04-27)
    **Material**
 
    * :doc:`/trainings/material/soup/python/basics/group`
-   * `Github Repository <https://github.com/jfasch/2022-04-05>`__
+   * `Github Repository <https://github.com/jfasch/2022-04-25>`__
 
    **Notebook**
 
@@ -47,6 +47,7 @@ Agenda
 **Control Flow and Iteration**
 
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
+* :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 
