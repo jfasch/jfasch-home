@@ -27,6 +27,7 @@ Topics
    cross/group
    cmake/stub-cmake-course
    cmake/local
+   cmake/cross
 
    exercises/group
 

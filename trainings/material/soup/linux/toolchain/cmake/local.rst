@@ -140,3 +140,50 @@ Et voila:
    -rwxrwxr-x. 1 jfasch jfasch 27920 Apr 22 11:02 hello-second
    -rw-rw-r--. 1 jfasch jfasch  8102 Apr 22 11:02 libgreet.a
    -rw-rw-r--. 1 jfasch jfasch  8503 Apr 22 10:58 Makefile
+
+Goodie: Dependency Management
+-----------------------------
+
+* Executables *depend on* libraries
+
+  .. code-block:: cmake
+
+     ADD_LIBRARY(greet hello.h hello.c hello-flexible.c)
+     
+     ADD_EXECUTABLE(hello-first hello-first.c)
+     TARGET_LINK_LIBRARIES(hello-first greet)
+     
+     ADD_EXECUTABLE(hello-second hello-second.c)
+     TARGET_LINK_LIBRARIES(hello-second greet)
+
+* These relationships are not always so simple
+* *Directed acyclic graph*
+* |longrightarrow| want to be visualized
+* |longrightarrow| `Graphviz <https://graphviz.org/>`__ package
+
+  .. code-block:: console
+     :caption: Debian/Ubuntu
+
+     # apt install graphviz
+
+  .. code-block:: console
+     :caption: Fedora
+
+     # dnf install graphviz
+
+* During ``Makefile`` generation, pass the ``--graphviz`` option
+  |longrightarrow| ``.dot`` file
+
+  .. code-block:: console
+  
+     $ pwd
+     /home/jfasch/build
+     $ cmake --graphviz=dependencies.dot /home/jfasch/source
+     ... roedel ...
+
+* Massage the ``.dot`` file, e.g. turning it into a ``.png`` (or a
+  ``.pdf``, ...)
+
+  .. code-block:: console
+
+     $ dot -Tpng dependencies.dot > dependencies.png
