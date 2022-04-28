@@ -66,8 +66,8 @@ Create a ``sysroot``
 
 Lacking a precomposed ``sysroot`` that only contains what we need, we
 copy over a minimal set of artifacts from the target. By trial and
-error we can come up for the following remote directories that we copy
-into the host's ``sysroot``,
+error we can come up with the following remote directories that we
+copy into the host's ``sysroot``,
 
 * ``/usr/lib/arm-linux-gnueabihf``
 * ``/usr/lib/gcc/arm-linux-gnueabihf``
@@ -84,12 +84,19 @@ to
 * Unpack that, locally, into a directory of our choice. Lets use
   ``~/cross/`` to keep things in order.
 
+.. sidebar:: Patience!
+
+   This pipeline will take a while: it copies over quite a bunch of
+   data!
+
 .. code-block:: console
 
    $ mkdir -p ~/cross/sysroots/raspberry
    $ ssh  me@target 'tar -c -f - /usr/lib/arm-linux-gnueabihf /usr/lib/gcc/arm-linux-gnueabihf /usr/include /lib/arm-linux-gnueabihf | xz --compress' | \
         xz --decompress | \
 	tar -C ~/cross/sysroots/raspberry -x -f -
+   tar: Removing leading `/' from member names
+   tar: Removing leading `/' from hard link targets
 
 Test Cross Build
 ----------------

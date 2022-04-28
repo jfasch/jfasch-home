@@ -101,31 +101,29 @@ Block 2: C on Linux: Local and *Cross* Development
      * 2022-04-28
      * 2022-04-28
      * 3
-     * Give bunch of source code, let them create a build
+     * **Get cross build running, Homework**
 
+       * :doc:`/trainings/material/soup/linux/toolchain/cross/raspberry`
+       * :doc:`/trainings/material/soup/linux/toolchain/exercises/raspberry-toolchain`
+       * :doc:`/trainings/material/soup/linux/toolchain/exercises/native-build`
+       * :doc:`/trainings/material/soup/linux/toolchain/exercises/cross-build`
+
+       **Get CMake running**
+
+       * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
+       * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
+
+   * * 2022-05-09
+     * 
+     * 
+     * 3
+     *
        **Unit Testing**. One of ...
 
        * `Unity <http://www.throwtheswitch.org/>`__
        * `googletest <https://github.com/google/googletest/>`__
        * `Boost.Test
          <https://www.boost.org/doc/libs/1_78_0/libs/test/doc/html/index.html>`__
-
-       **Project Management**
-
-       Build tool support for
-
-       * Dependency management
-       * Packaging (``make release``)
-       * Unit test invocation (``make test``, `make check``, ...)
-
-   * * 2022-05-09
-     * 
-     * 
-     * 3
-     * **Cross development**
-
-       * Amazon ARM server
-       * Raspberry
 
    * * 
      * 2022-06-02

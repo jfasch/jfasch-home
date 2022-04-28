@@ -187,3 +187,5 @@ Goodie: Dependency Management
   .. code-block:: console
 
      $ dot -Tpng dependencies.dot > dependencies.png
+
+  .. graphviz:: dependencies.dot
