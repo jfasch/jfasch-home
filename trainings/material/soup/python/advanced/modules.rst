@@ -22,6 +22,9 @@ Modules
 
 So where is ``sys`` looked for?
 
+.. sidebar:: Topics
+
+   * :doc:`/trainings/material/soup/linux/basics/intro/environment`
 
 * In the directory where the *importer* lives
 * Along the ``PYTHONPATH`` environment variable

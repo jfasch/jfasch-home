@@ -6,4 +6,4 @@ Python Grundlagen (Jupyter Notebook)
 
 .. toctree::
 
-   Notebook
+   notebook
