@@ -6,6 +6,11 @@ Python Installation
 Setup
 -----
 
+.. sidebar:: Links
+
+   * `Windows installer from python.org <https://www.python.org/downloads>`__
+   * `Alternative: Anaconda <https://www.anaconda.com>`__
+
 The language itself consists of the Python interpreter itself, and a
 rather complete set of *modules* (one says, "Python comes with
 batteries included").

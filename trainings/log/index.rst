@@ -15,6 +15,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python (2022-05-02 - 2022-05-05)
+--------------------------------
+
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+
+(:doc:`Mehr ... <detail/2022-05-02/index>`)
+
 Python Basics (2022-04-25 - 2022-04-27)
 ---------------------------------------
 
