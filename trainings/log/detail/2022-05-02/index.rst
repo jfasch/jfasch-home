@@ -48,36 +48,36 @@ Agenda
 **Control Flow and Iteration**
 
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-* :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
+* :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
 
-**More On DataTypes**
+**Encoding, Strings, and File I/O**
 
-* :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
-
-**Functions and Modules**
-
-* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-* Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
-* :doc:`/trainings/material/soup/python/advanced/modules`
-
-**Sideways: MQTT**
-
-* :doc:`/trainings/material/soup/python/misc/mqtt/topic`
-
-**File I/O**
-
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-* :doc:`/trainings/material/soup/python/misc/encoding/topic`
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+
+**Excursion: CAN Communication, OO, Modules**
+
+* :doc:`/trainings/material/soup/linux/hardware/can/group`
+* Live hacking
+
+  * Send values from a list
+  * Wrap sensor around list, giving values cyclically - maintaining
+    the cycle by hand
+  * Enter :doc:`python:library/itertools` (``itertools.cycle()``)
+
+**Functions, and Modules**
+
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
+* :doc:`/trainings/material/soup/python/advanced/modules`
 
 **CSV**
 
@@ -87,3 +87,25 @@ Agenda
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+
+**More On DataTypes**
+
+* :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
+
+**Dry Exercises**
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
+* :doc:`/trainings/material/soup/python/exercises/legacy/passwd`
+
+**MQTT, maybe**
+
+* :doc:`/trainings/material/soup/python/misc/mqtt/topic`
+
+**Databases, maybe**
+
+* :doc:`/trainings/material/soup/python/misc/db/dbapi2`
+* :doc:`/trainings/material/soup/python/misc/db/sqlite3`
+* :doc:`/trainings/material/soup/python/misc/db/postgres`

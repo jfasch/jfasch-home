@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-More on Dictionaries
-====================
+More About Dictionaries
+=======================
 
 .. contents::
    :local:

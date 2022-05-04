@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-More on Sets
-============
+More About Sets
+===============
 
 .. contents::
    :local:

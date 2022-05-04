@@ -15,6 +15,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
+   can/group
    w1/topic
    i2c/topic
    pwm/topic

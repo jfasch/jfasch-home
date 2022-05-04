@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
-More on Lists
-=============
+More About Lists
+================
 
 .. contents::
    :local:
