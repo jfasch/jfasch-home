@@ -39,6 +39,7 @@ Course Material
    advanced/group
    swdev/group
    misc/group
+   drafts/group
 
 Sample Trainings
 ----------------

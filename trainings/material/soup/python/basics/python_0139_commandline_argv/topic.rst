@@ -55,9 +55,10 @@ Cosmetics: Rudimentary Argument Parsing
 
 .. sidebar:: Further information: ``argparse``
 
-   On top of ``sys.argv``, the ``argparse`` module
-   (:doc:`documentation <python:library/argparse>`) provides further
+   On top of ``sys.argv``, the ``argparse`` module provides further
    functionality to parse commandline parameters.
+
+   See :doc:`/trainings/material/soup/python/drafts/argparse/topic`
 
 .. literalinclude:: args-parsing.py
    :caption: :download:`args-parsing.py`
