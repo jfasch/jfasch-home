@@ -13,11 +13,11 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   syscalls
-   errorhandling
+   basics/group
+   file-io/group
 
 Dependencies
 ------------
 
 .. ot-graph::
-   :entries: linux.basics
+   :entries: linux.sysprog

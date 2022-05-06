@@ -22,8 +22,8 @@ Blocking I/O: On A Network Socket
 
 .. sidebar:: See Also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/syscalls`
-   * :doc:`/trainings/material/soup/linux/sysprog/errorhandling`
+   * :doc:`/trainings/material/soup/linux/sysprog/basics/syscalls`
+   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
 
 Opening a Network Connection
 ----------------------------

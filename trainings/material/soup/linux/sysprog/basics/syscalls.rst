@@ -1,4 +1,5 @@
-.. ot-topic:: linux.sysprog.syscalls
+.. ot-topic:: linux.sysprog.basics.syscalls
+   :dependencies: linux.toolchain.basics
 
 .. include:: <mmlalias.txt>
 
@@ -32,14 +33,14 @@ but rather *System Calls*.
 * Numbers, parameters, etc. are Linux specific
 * |longrightarrow| "kernel acts on behalf of a process"
 
-system calls and the c-library
+System Calls And The C-Library
 ------------------------------
 
 .. list-table::
    :align: left
    :widths: auto
    
-   * * system calls are never used directly by a program ...
+   * * System calls are never used directly by a program ...
 
        .. code-block:: c
 	  :caption: syscall wrapper: ``write()``
@@ -53,18 +54,18 @@ system calls and the c-library
      * .. image:: syscalls-libc.svg
           :scale: 50%
 
-library function or system call?
+Library Function Or System Call?
 --------------------------------
 
-distinction is not always clear |longrightarrow| manual pages
+Distinction is not always clear |longrightarrow| manual pages
 
 .. list-table::
    :align: left
    :widths: auto
    :header-rows: 1
 
-   * * system calls (``man -s 2 ...``)
-     * *no* system calls (``man -s 3 ...``)
+   * * System calls (``man -s 2 ...``)
+     * *No* system calls (``man -s 3 ...``)
    * * * ``write()`` (`man -s 2 write
          <https://man7.org/linux/man-pages/man2/write.2.html>`__)
        * ``read()`` (`man -s 2 read
@@ -78,15 +79,15 @@ distinction is not always clear |longrightarrow| manual pages
        * ``getaddrinfo()`` (`man -s 3 getaddrinfo <https://man7.org/linux/man-pages/man3/getaddrinfo.3.html>`__
        *  ...
 
-manual pages
+Manual Pages
 ------------
 
 ``man [section] name``
 
-for example: ``man man`` |longrightarrow|
+For example: ``man man`` |longrightarrow|
 
-#. user commands
-#. system calls
+#. User Commands
+#. System Calls
 #. C Library Functions
 #. Devices and Special Files
 #. File Formats and Conventions

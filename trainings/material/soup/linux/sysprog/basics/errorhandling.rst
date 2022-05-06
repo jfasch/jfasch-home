@@ -1,5 +1,5 @@
-.. ot-topic:: linux.sysprog.errorhandling
-   :dependencies: linux.sysprog.syscalls
+.. ot-topic:: linux.sysprog.basics.errorhandling
+   :dependencies: linux.sysprog.basics.syscalls
 
 .. include:: <mmlalias.txt>
 
