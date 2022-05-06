@@ -138,7 +138,9 @@ More On DataTypes
 Random Topics
 .............
 
-* :doc:`/trainings/material/soup/python/drafts/argparse/topic`
+* :doc:`/trainings/material/soup/python/drafts/argparse/topic`, see
+  `Github
+  <https://github.com/jfasch/2022-05-02/blob/main/livehacking/can/stdout-sensor.py>`__
 * :doc:`/trainings/material/soup/python/drafts/matplotlib/topic`
 * :doc:`subprocess <python:library/subprocess>`
 

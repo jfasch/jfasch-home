@@ -63,21 +63,29 @@ Each line/record consists of seven fields, separated by colons
 
    * * Field index
      * Field name
+     * Description
    * * 0
      * ``username``
+     * User name
    * * 1
-     * ``password``. Encrypted password; ``x`` means that the
-       encrypted password is found in ``/etc/shadow``.
+     * ``password``
+     * Encrypted password; ``x`` means that the encrypted password is
+       found in ``/etc/shadow``.
    * * 2
-     * ``uid``. User ID.
+     * ``uid``
+     * User ID
    * * 3
-     * ``gid``. (Primary) group ID.
+     * ``gid``
+     * (Primary) group ID
    * * 4
-     * ``description``. Arbitrary descriptive text.
+     * ``description``
+     * Arbitrary descriptive text
    * * 5
-     * ``home``. Home directory.
+     * ``home``
+     * Home directory
    * * 6
-     * ``shell``. Login shell.
+     * ``shell``
+     * Login shell
 
 The program should read ``/etc/passwd`` only once. Each line is a user
 record, and should be broken up into a dictionary. For example, the
