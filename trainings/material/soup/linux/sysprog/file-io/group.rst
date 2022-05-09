@@ -17,6 +17,7 @@ Contents
    basics-exercise-copy
    basics-exercise-hole
    duplicate
+   misc
 
 Dependencies
 ------------

@@ -117,7 +117,27 @@ Block 2: C on Linux: Local and *Cross* Development
      * 
      * 
      * 3
-     *
+     * **File I/O**
+
+       Motivation: :doc:`/trainings/material/soup/linux/hardware/w1/topic`
+
+       *Shell: I/O Redirection, Pipes*
+
+       * :download:`/trainings/material/pdf/010-linux-basics.pdf`
+
+       *Systems Programming: File I/O*
+
+       * :doc:`/trainings/material/soup/linux/sysprog/basics/syscalls`
+       * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/duplicate`
+
+   * * 
+     * 2022-06-02
+     * 2022-06-02
+     * 3
+     * **Test**
+
        **Unit Testing**. One of ...
 
        * `Unity <http://www.throwtheswitch.org/>`__
@@ -125,11 +145,7 @@ Block 2: C on Linux: Local and *Cross* Development
        * `Boost.Test
          <https://www.boost.org/doc/libs/1_78_0/libs/test/doc/html/index.html>`__
 
-   * * 
-     * 2022-06-02
-     * 2022-06-02
-     * 3
-     * **Test**
+
 
 Block 3: C++
 ------------
