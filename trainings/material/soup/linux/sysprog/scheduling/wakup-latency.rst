@@ -1,5 +1,6 @@
 .. ot-topic:: linux.sysprog.scheduling.wakeup_latency
-   :dependencies: linux.sysprog.scheduling.basics
+   :dependencies: linux.sysprog.scheduling.basics,
+		  linux.sysprog.blocking_io.blocking_io
 
 .. include:: <mmlalias.txt>
 
@@ -9,6 +10,10 @@ Wakeup Latency, CPU Frequency (Gotcha)
 
 .. contents::
    :local:
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/scheduling/basics`
 
 Measuring Wakeup Latency
 ------------------------

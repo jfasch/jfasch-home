@@ -1,4 +1,5 @@
 .. ot-topic:: linux.sysprog.scheduling.basics
+   :dependencies: linux.sysprog.blocking_io.blocking_io
 
 .. include:: <mmlalias.txt>
 
@@ -8,6 +9,10 @@ Scheduling (and Multitasking)
 
 .. contents::
    :local:
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/scheduling/basics`
 
 Scheduling
 ----------

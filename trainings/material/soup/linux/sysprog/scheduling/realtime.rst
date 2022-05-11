@@ -1,5 +1,6 @@
 .. ot-topic:: linux.sysprog.scheduling.realtime
-   :dependencies: linux.sysprog.scheduling.wakeup_latency
+   :dependencies: linux.sysprog.scheduling.wakeup_latency,
+		  linux.sysprog.blocking_io.blocking_io
 
 .. include:: <mmlalias.txt>
 
@@ -9,6 +10,10 @@ Realtime
 
 .. contents::
    :local:
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/scheduling/basics`
 
 Wakeup Latency, and Fair Scheduling
 -----------------------------------
