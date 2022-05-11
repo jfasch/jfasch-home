@@ -16,6 +16,7 @@ Contents
    basics/group
    file-io/group
    blocking-io/group
+   process/group
    posix-threads/group
    scheduling/group
    sysprog_events/topic

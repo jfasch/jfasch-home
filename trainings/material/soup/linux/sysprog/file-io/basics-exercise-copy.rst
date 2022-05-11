@@ -1,20 +1,132 @@
 .. ot-exercise:: linux.sysprog.fileio.basics_exercise_copy
-   :dependencies: linux.sysprog.fileio.basics
+   :dependencies: linux.sysprog.fileio.basics,
+		  linux.sysprog.basics.errorhandling,
+		  linux.basics.permissions.basics
 
 
 Exercise: Copy A File
----------------------
+=====================
 
-Write a program that interprets its two arguments as file
-names, and copies the first to the second. The first must be an
-existing file (error handling!). The second is the target of the
+.. contents:: 
+   :local:
+
+Requirement
+-----------
+
+.. sidebar::
+
+   **Topics**
+
+   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+   * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+
+   **Manual Pages**
+
+   * File I/O
+
+     * `man -s 2 open
+       <https://man7.org/linux/man-pages/man2/open.2.html>`__
+     * `man -s 2 read
+       <https://man7.org/linux/man-pages/man2/read.2.html>`__
+     * `man -s 2 write
+       <https://man7.org/linux/man-pages/man2/write.2.html>`__
+     * `man -s 2 close
+       <https://man7.org/linux/man-pages/man2/close.2.html>`__
+
+   * Miscellaneous
+
+     * `man -s 3 errno
+       <https://man7.org/linux/man-pages/man3/errno.3.html>`__
+     * `man -s 3 strerror
+       <https://man7.org/linux/man-pages/man3/strerror.3.html>`__
+
+Write a program ``cp-for-the-poor`` that interprets its two arguments
+as filenames, and copies the first to the second. The first filename
+must be an existing file. The second filename is the target of the
 copy. No existing file must be overwritten.
 
+.. note::
+
+   * Check for system call errors; see
+     :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+     for how to.
+   * Make sure the program interprets its commandline correctly; see
+     :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
+     for how to.
+   * Make sure the program returns exit statuses as specified below;
+     see
+     :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
+     for how to.
+
+Sunny Case: Source File Exists, Destination Does Not Exist
+..........................................................
+
 .. code-block:: console
 
-   $ ./my-copy /etc/passwd /tmp/passwd-copy
+   $ ./cp-for-the-poor /etc/passwd /tmp/passwd-copy
+   $ echo $?
+   0
+
+Error: Wrong Number Of Arguments Specifies
+..........................................
 
 .. code-block:: console
 
-   $ ./my-copy /etc/passwd /tmp/passwd-copy
-   Error: file exists
+   $ ./cp-for-the-poor
+   ./cp-for-the-poor: SRCFILE DSTFILE
+   $ echo $?
+   1
+
+Error: Source File Does Not Exist
+.................................
+
+.. code-block:: console
+
+   $ ./cp-for-the-poor /etc/passwd-not-there /tmp/some-file-that-does-not-exist
+   /etc/passwd-not-there: No such file or directory
+   $ echo $?
+   2
+
+Error: Destination File Exists
+..............................
+
+Provided that ``/tmp/passwd-copy`` already exists [#create-file]_:
+
+.. code-block:: console
+
+   $ ./cp-for-the-poor /etc/passwd /tmp/passwd-copy
+   /tmp/passwd-copy: File exists
+   $ echo $?
+   3
+
+Error: Destination Directory Not Writable
+.........................................
+
+Provided that ``/etc`` is not writable (because you are not ``root``,
+for example),
+
+.. code-block:: console
+
+   $ ./cp-for-the-poor /etc/passwd /etc/passwd-copy
+   /etc/passwd-copy: Permission denied
+   $ echo $?
+   3
+
+Dependencies
+------------
+
+.. ot-graph::
+   :entries: linux.sysprog.fileio.basics_exercise_copy
+
+
+.. rubric:: Footnotes
+.. [#create-file] If not, and you need one for testing purposes, you
+                  create it like so:
+
+		  .. code-block:: console
+
+		     $ touch /tmp/passwd-copy
+
+		  (Or by running the sunny case, of course)

@@ -9,6 +9,10 @@ Commandline Arguments
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
+
 ``main()`` Can Take Parameters
 ------------------------------
 

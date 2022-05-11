@@ -5,8 +5,8 @@
 .. include:: <mmlalias.txt>
 
 
-Basics
-======
+File I/O: Basics
+================
 
 .. contents::
    :local:
@@ -107,6 +107,8 @@ Miscellaneous:
 
    * `man -s 2 open
      <https://man7.org/linux/man-pages/man2/open.2.html>`__
+   * `man -s 2 close
+     <https://man7.org/linux/man-pages/man2/close.2.html>`__
 
 .. code-block:: c
 

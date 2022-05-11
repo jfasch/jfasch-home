@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-Mode, User and Group Ownership
-==============================
+Permissions: Mode, User and Group Ownership
+===========================================
 
 .. sidebar:: Documentation
 
