@@ -20,8 +20,7 @@ Blocking I/O: On A Timer? WTF?
 
 .. sidebar:: See Also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/syscalls`
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+   * :doc:`/trainings/material/soup/linux/sysprog/basics/group`
 
 Setup A Timer
 -------------

@@ -127,8 +127,7 @@ Block 2: C on Linux: Local and *Cross* Development
 
        *Systems Programming: File I/O*
 
-       * :doc:`/trainings/material/soup/linux/sysprog/basics/syscalls`
-       * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+       * :doc:`/trainings/material/soup/linux/sysprog/basics/group`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/duplicate`
 
