@@ -24,9 +24,9 @@ User Space, Kernel Space?
 User Space: *Abstractions*
 --------------------------
 
-.. sidebar:: 
+.. sidebar:: See also
 
-   See :doc:`blocking-io/group`
+   * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io`
 
 * No direct hardware access
 * Per-process *linear address space*

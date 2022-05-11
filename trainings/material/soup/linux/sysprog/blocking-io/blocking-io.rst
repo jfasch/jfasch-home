@@ -1,4 +1,5 @@
-.. ot-group:: linux.basics.intro.blocking_io
+.. ot-topic:: linux.sysprog.blocking_io.blocking_io
+   :dependencies: linux.sysprog.fileio.basics
 
 .. include:: <mmlalias.txt>
 
@@ -8,6 +9,12 @@ Blocking I/O: What is That? ("Everything is a file")
 
 .. contents::
    :local:
+
+.. sidebar:: Examples/Live Demos
+
+   * :doc:`blocking-io-file`
+   * :doc:`blocking-io-network`
+   * :doc:`blocking-io-timer`
 
 Problem
 -------
@@ -47,18 +54,3 @@ Solution: This Is What An Operating System Is There For
 * |longrightarrow| **The "File" Abstraction!**
 * **Question**: who's *me*? |longrightarrow| a process
 
-Live Demos
-----------
-
-.. toctree::
-   :maxdepth: 1
-
-   blocking-io-file
-   blocking-io-network
-   blocking-io-timer
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.intro.blocking_io

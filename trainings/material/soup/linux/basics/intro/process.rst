@@ -21,6 +21,10 @@ The following program is not sane. Why?
 Solution: Scheduling (Time Slices)
 ----------------------------------
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`
+
 * Owning the CPU?
 
   |longrightarrow| on an OS, nobody but **the kernel** (*the OS*) can own
@@ -32,7 +36,8 @@ Solution: Scheduling (Time Slices)
 * |longrightarrow| the more infinite loops, the slower that illusion
   becomes, obviously
 * |longrightarrow| best to not spin until an event happens, but rather
-  *block on that event* (see :doc:`blocking-io/group`)
+  *block on that event* (see
+  :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`)
 
 .. image:: process/timeslicing.svg
    :scale: 50%

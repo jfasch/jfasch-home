@@ -1,8 +1,5 @@
 .. ot-topic:: linux.sysprog.fileio.basics
    :dependencies: linux.sysprog.basics.syscalls,
-		  linux.basics.intro.blocking_io.blocking_io_file,
-		  linux.basics.intro.blocking_io.blocking_io_network,
-		  linux.basics.intro.blocking_io.blocking_io_timer,
 		  linux.basics.permissions.basics
 
 .. include:: <mmlalias.txt>

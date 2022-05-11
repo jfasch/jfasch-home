@@ -1,6 +1,6 @@
-.. ot-topic:: linux.basics.intro.blocking_io.blocking_io_timer
-   :dependencies: linux.basics.intro.overview,
-		  linux.basics.intro.blocking_io.blocking_io_network
+.. ot-topic:: linux.sysprog.blocking_io.blocking_io_timer
+   :dependencies: linux.sysprog.fileio.basics,
+		  linux.sysprog.blocking_io.blocking_io
 
 .. include:: <mmlalias.txt>
 

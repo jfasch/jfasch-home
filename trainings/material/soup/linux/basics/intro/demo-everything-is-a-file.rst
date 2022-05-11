@@ -1,6 +1,6 @@
 .. ot-topic:: linux.basics.intro.demo_everything_is_a_file
    :dependencies: linux.basics.intro.overview,
-		  linux.basics.intro.blocking_io.blocking_io_file
+		  linux.sysprog.blocking_io.blocking_io_file
 
 .. include:: <mmlalias.txt>
 
@@ -10,6 +10,10 @@ Everything Is A File (Live Demo)
 
 .. contents::
    :local:
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io`
 
 Simple is beautiful
 -------------------

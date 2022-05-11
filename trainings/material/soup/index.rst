@@ -24,18 +24,6 @@ work in progress*).
    kernel/group
    graph
 
-Code
-----
-
-Much of the training material is accompanied by a growing code base,
-mostly written in Python, C, and C++. For reference, here's the
-``CMakeLists.txt`` file that steers the build of C and C++
-material. See :download:`here </trainings/material/pdf/045-cmake.pdf>`
-for further information about CMake.
-
-.. literalinclude:: CMakeLists.txt
-   :language: cmake
-
 .. note::
 
    See :doc:`here </trainings/log/detail/2020-03-30/setup>` for how to
