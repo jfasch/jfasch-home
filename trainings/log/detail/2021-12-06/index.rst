@@ -582,7 +582,7 @@ Multithreading
 ..............
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
-* :doc:`/trainings/material/soup/sysprog/posix-threads/040-mutex/topic`
+* :doc:`/trainings/material/soup/linux/sysprog/posix-threads/040-mutex/topic`
 
 Live hacked:
 

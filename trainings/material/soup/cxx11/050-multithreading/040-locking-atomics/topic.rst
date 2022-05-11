@@ -2,7 +2,7 @@
 
 .. ot-topic:: cxx11.multithreading.locking_atomics
    :dependencies: cxx11.multithreading.race_conditions, 
-		  sysprog.posix_threads.mutex
+		  linux.sysprog.posix_threads.mutex
 
 
 Locking and Atomics

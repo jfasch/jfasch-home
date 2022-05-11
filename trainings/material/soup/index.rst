@@ -20,7 +20,6 @@ work in progress*).
    cxx03/group
    cxx11/group
    linux/group
-   sysprog/group
    unittest/group
    kernel/group
    graph

@@ -6,12 +6,12 @@ IPC in Linux (10.1.2020 in Graz)
    * :doc:`Schulungsbeschreibung
      </trainings/repertoire/sysprog/fortgeschrittenes>`
    * :download:`PDF </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-   * :doc:`Signals: Slides </trainings/material/soup/sysprog/sysprog_signals/slides>`
+   * :doc:`Signals: Slides </trainings/material/soup/linux/sysprog/sysprog_signals/slides>`
    * :doc:`Signals: Drehbuch mit Code
-     </trainings/material/soup/sysprog/sysprog_signals/screenplay>`
-   * :doc:`POSIX IPC: Slides </trainings/material/soup/sysprog/sysprog_ipc/slides>`
+     </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
+   * :doc:`POSIX IPC: Slides </trainings/material/soup/linux/sysprog/sysprog_ipc/slides>`
    * :doc:`POSIX IPC: Drehbuch mit Code
-     </trainings/material/soup/sysprog/sysprog_ipc/screenplay>`
+     </trainings/material/soup/linux/sysprog/sysprog_ipc/screenplay>`
 
 Ein-Tages-Workshop, Themen:
 

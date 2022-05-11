@@ -2,7 +2,7 @@
 
 .. ot-topic:: cxx11.multithreading.thread
    :dependencies: cxx11.multithreading.introduction,
-		  sysprog.posix_threads.lifecycle
+		  linux.sysprog.posix_threads.lifecycle
 
 
 Threads in C++

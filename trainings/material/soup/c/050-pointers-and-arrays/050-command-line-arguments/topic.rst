@@ -6,6 +6,9 @@
 Commandline Arguments
 =====================
 
+.. contents::
+   :local:
+
 ``main()`` Can Take Parameters
 ------------------------------
 

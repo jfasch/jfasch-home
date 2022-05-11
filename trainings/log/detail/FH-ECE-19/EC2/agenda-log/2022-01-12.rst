@@ -10,9 +10,9 @@
 Scheduling and Realtime
 -----------------------
 
-* :doc:`/trainings/material/soup/sysprog/scheduling/wakup-latency`
-* :doc:`/trainings/material/soup/sysprog/scheduling/realtime`
-* :doc:`/trainings/material/soup/sysprog/scheduling/realtime-api`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/wakup-latency`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/realtime`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/realtime-api`
 
 Exception Handling
 ------------------

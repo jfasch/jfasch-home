@@ -10,5 +10,5 @@
 Scheduling
 ----------
 
-* :doc:`/trainings/material/soup/sysprog/scheduling/basics`
-* :doc:`/trainings/material/soup/sysprog/scheduling/processes-and-threads`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/basics`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/processes-and-threads`

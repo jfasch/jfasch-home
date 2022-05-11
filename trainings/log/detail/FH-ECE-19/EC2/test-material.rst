@@ -10,18 +10,18 @@ Scheduling and Realtime
 Questions
 .........
 
-* :doc:`/trainings/material/soup/sysprog/scheduling/questions`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/questions`
 
 Slide Material
 ..............
 
-* :doc:`/trainings/material/soup/sysprog/scheduling/processes-and-threads`
-* :doc:`/trainings/material/soup/sysprog/scheduling/basics`
-* :doc:`/trainings/material/soup/sysprog/scheduling/realtime`
-* :doc:`/trainings/material/soup/sysprog/scheduling/realtime-api`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/processes-and-threads`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/basics`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/realtime`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/realtime-api`
 * Trying to explain wakeup latency:
-  :doc:`/trainings/material/soup/sysprog/scheduling/wakup-latency`
-* :doc:`/trainings/material/soup/sysprog/scheduling/realtime-api`
+  :doc:`/trainings/material/soup/linux/sysprog/scheduling/wakup-latency`
+* :doc:`/trainings/material/soup/linux/sysprog/scheduling/realtime-api`
   (Dependency inversion only!)
 
 Multithreading

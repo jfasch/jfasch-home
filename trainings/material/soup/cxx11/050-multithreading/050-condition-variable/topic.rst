@@ -2,7 +2,7 @@
 
 .. ot-topic:: cxx11.multithreading.condition_variable
    :dependencies: cxx11.multithreading.locking_atomics,
-		  sysprog.posix_threads.condition_variable
+		  linux.sysprog.posix_threads.condition_variable
 
 
 Condition Variables

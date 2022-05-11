@@ -15,6 +15,11 @@ Contents
 
    basics/group
    file-io/group
+   posix-threads/group
+   scheduling/group
+   sysprog_events/topic
+   sysprog_ipc/topic
+   sysprog_signals/topic
 
 Dependencies
 ------------
