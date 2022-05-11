@@ -1,4 +1,4 @@
-.. ot-topic:: kernel.raspi_kernel_build
+.. ot-topic:: linux.kernel.raspi_kernel_build
 
 Raspberry Pi: Building the Kernel
 =================================
@@ -74,6 +74,6 @@ Graph
 -----
    
 .. ot-graph:: 
-   :entries: kernel.raspi_kernel_build
+   :entries: linux.kernel.raspi_kernel_build
 
 

@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.dma
-   :dependencies: kernel.kmalloc
+.. ot-topic:: linux.kernel.dma
+   :dependencies: linux.kernel.kmalloc
 
 DMA
 ===
@@ -10,4 +10,4 @@ DMA
    slides
 
 .. ot-graph:: 
-   :entries: kernel.dma
+   :entries: linux.kernel.dma

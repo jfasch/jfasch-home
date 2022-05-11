@@ -1,6 +1,6 @@
-.. ot-topic:: kernel.waitqueue
-   :dependencies: kernel.usermem,
-		  kernel.cdev_file_operations
+.. ot-topic:: linux.kernel.waitqueue
+   :dependencies: linux.kernel.usermem,
+		  linux.kernel.cdev_file_operations
 
 
 Waiting for Something
@@ -13,4 +13,4 @@ Waiting for Something
    screenplay
 
 .. ot-graph:: 
-   :entries: kernel.waitqueue
+   :entries: linux.kernel.waitqueue

@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.mutex
-   :dependencies: kernel.process_vs_atomic
+.. ot-topic:: linux.kernel.mutex
+   :dependencies: linux.kernel.process_vs_atomic
 
 
 Mutex (and RT Mutex)
@@ -11,4 +11,4 @@ Mutex (and RT Mutex)
    slides
 
 .. ot-graph:: 
-   :entries: kernel.mutex
+   :entries: linux.kernel.mutex

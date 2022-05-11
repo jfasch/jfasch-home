@@ -1,6 +1,6 @@
-.. ot-topic:: kernel.netdev
-   :dependencies: kernel.dma,
-		  kernel.interrupt
+.. ot-topic:: linux.kernel.netdev
+   :dependencies: linux.kernel.dma,
+		  linux.kernel.interrupt
 
 Network Devices
 ===============
@@ -11,4 +11,4 @@ Network Devices
    slides
 
 .. ot-graph:: 
-   :entries: kernel.netdev
+   :entries: linux.kernel.netdev

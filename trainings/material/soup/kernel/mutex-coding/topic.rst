@@ -1,6 +1,6 @@
-.. ot-exercise:: kernel.mutex_coding
-   :dependencies: kernel.multiple_devices,
-		  kernel.mutex
+.. ot-exercise:: linux.kernel.mutex_coding
+   :dependencies: linux.kernel.multiple_devices,
+		  linux.kernel.mutex
 
 
 Coding: Fix Race Condition (Mutex)
@@ -12,4 +12,4 @@ Coding: Fix Race Condition (Mutex)
    slides
 
 .. ot-graph:: 
-   :entries: kernel.mutex_coding
+   :entries: linux.kernel.mutex_coding

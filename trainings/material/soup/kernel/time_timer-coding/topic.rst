@@ -1,6 +1,6 @@
-.. ot-exercise:: kernel.timer_coding
-   :dependencies: kernel.spinlock_coding,
-		  kernel.timer
+.. ot-exercise:: linux.kernel.timer_coding
+   :dependencies: linux.kernel.spinlock_coding,
+		  linux.kernel.timer
 
 
 Coding: Timed Event
@@ -12,4 +12,4 @@ Coding: Timed Event
    slides
 
 .. ot-graph:: 
-   :entries: kernel.timer_coding
+   :entries: linux.kernel.timer_coding

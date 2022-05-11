@@ -1,7 +1,7 @@
-.. ot-exercise:: kernel.interrupt_coding
-   :dependencies: kernel.raspi_kernel_build,
-		  kernel.mutex_coding,
-		  kernel.interrupt
+.. ot-exercise:: linux.kernel.interrupt_coding
+   :dependencies: linux.kernel.raspi_kernel_build,
+		  linux.kernel.mutex_coding,
+		  linux.kernel.interrupt
 
 
 Coding: Raspi GPIO Interrupts
@@ -13,4 +13,4 @@ Coding: Raspi GPIO Interrupts
    slides
 
 .. ot-graph:: 
-   :entries: kernel.interrupt_coding
+   :entries: linux.kernel.interrupt_coding

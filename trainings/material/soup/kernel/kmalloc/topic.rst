@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.kmalloc
-   :dependencies: kernel.process_vs_atomic
+.. ot-topic:: linux.kernel.kmalloc
+   :dependencies: linux.kernel.process_vs_atomic
 
 Dynamic Memory: ``kmalloc()``
 =============================
@@ -10,4 +10,4 @@ Dynamic Memory: ``kmalloc()``
    slides
 
 .. ot-graph:: 
-   :entries: kernel.process_vs_atomic
+   :entries: linux.kernel.process_vs_atomic

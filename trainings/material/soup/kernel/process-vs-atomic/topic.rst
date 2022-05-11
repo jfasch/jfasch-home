@@ -1,4 +1,4 @@
-.. ot-topic:: kernel.process_vs_atomic
+.. ot-topic:: linux.kernel.process_vs_atomic
 
 
 Process vs.Atomic Context
@@ -10,4 +10,4 @@ Process vs.Atomic Context
    slides
 
 .. ot-graph:: 
-   :entries: kernel.process_vs_atomic
+   :entries: linux.kernel.process_vs_atomic

@@ -1,4 +1,4 @@
-.. ot-topic:: kernel.fedora_kernel_build
+.. ot-topic:: linux.kernel.fedora_kernel_build
 
 Fedora: Building the Kernel
 ===========================
@@ -9,4 +9,4 @@ Fedora: Building the Kernel
    screenplay
 
 .. ot-graph:: 
-   :entries: kernel.fedora_kernel_build
+   :entries: linux.kernel.fedora_kernel_build

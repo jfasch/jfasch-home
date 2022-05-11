@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.spinlock
-   :dependencies: kernel.process_vs_atomic
+.. ot-topic:: linux.kernel.spinlock
+   :dependencies: linux.kernel.process_vs_atomic
 
 
 Spinlock (vs. Mutex)
@@ -11,4 +11,4 @@ Spinlock (vs. Mutex)
    slides
 
 .. ot-graph:: 
-   :entries: kernel.spinlock
+   :entries: linux.kernel.spinlock

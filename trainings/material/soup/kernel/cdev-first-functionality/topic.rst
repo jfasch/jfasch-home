@@ -1,7 +1,7 @@
-.. ot-exercise:: kernel.cdev_first_functionality
-   :dependencies: kernel.cdev_file_operations,
-		  kernel.kmalloc,
-		  kernel.list
+.. ot-exercise:: linux.kernel.cdev_first_functionality
+   :dependencies: linux.kernel.cdev_file_operations,
+		  linux.kernel.kmalloc,
+		  linux.kernel.list
 
 Coding: First Functionality
 ===========================
@@ -12,4 +12,4 @@ Coding: First Functionality
    slides
 
 .. ot-graph:: 
-   :entries: kernel.cdev_first_functionality
+   :entries: linux.kernel.cdev_first_functionality

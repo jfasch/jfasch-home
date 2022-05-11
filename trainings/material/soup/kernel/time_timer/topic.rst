@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.timer
-   :dependencies: kernel.process_vs_atomic
+.. ot-topic:: linux.kernel.timer
+   :dependencies: linux.kernel.process_vs_atomic
 
 
 Timer Management
@@ -11,4 +11,4 @@ Timer Management
    slides
 
 .. ot-graph:: 
-   :entries: kernel.timer
+   :entries: linux.kernel.timer

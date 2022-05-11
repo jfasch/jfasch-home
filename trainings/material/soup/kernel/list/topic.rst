@@ -1,4 +1,4 @@
-.. ot-topic:: kernel.list
+.. ot-topic:: linux.kernel.list
 
 Doubly Linked Lists
 ===================
@@ -9,4 +9,4 @@ Doubly Linked Lists
    slides
 
 .. ot-graph:: 
-   :entries: kernel.list
+   :entries: linux.kernel.list

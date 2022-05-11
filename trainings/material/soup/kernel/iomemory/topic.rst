@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.iomemory
-   :dependencies: kernel.modules_hello_world
+.. ot-topic:: linux.kernel.iomemory
+   :dependencies: linux.kernel.modules_hello_world
 
 IO Memory
 =========
@@ -10,4 +10,4 @@ IO Memory
    slides
 
 .. ot-graph:: 
-   :entries: kernel.iomemory
+   :entries: linux.kernel.iomemory

@@ -1,4 +1,4 @@
-.. ot-group:: kernel
+.. ot-group:: linux.kernel
 
 .. include:: <mmlalias.txt>
 
@@ -14,7 +14,7 @@ A put-together of kernel related topics.
 Topics and Dependencies
 -----------------------
 
-.. ot-grouplist:: kernel
+.. ot-grouplist:: linux.kernel
 
 .. toctree::
    :hidden:
@@ -34,7 +34,7 @@ Topics and Dependencies
    todo
 
 .. ot-graph::
-   :entries: kernel
+   :entries: linux.kernel
 
 Links
 -----

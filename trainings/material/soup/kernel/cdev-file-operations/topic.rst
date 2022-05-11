@@ -1,6 +1,6 @@
-.. ot-topic:: kernel.cdev_file_operations
-   :dependencies: kernel.cdev_auto,
-		  kernel.stub_sysprog_dup
+.. ot-topic:: linux.kernel.cdev_file_operations
+   :dependencies: linux.kernel.cdev_auto,
+		  linux.kernel.stub_sysprog_dup
 
 File Operations on Character Devices
 ====================================
@@ -12,4 +12,4 @@ File Operations on Character Devices
    screenplay
 
 .. ot-graph:: 
-   :entries: kernel.cdev_file_operations
+   :entries: linux.kernel.cdev_file_operations

@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.interrupt
-   :dependencies: kernel.process_vs_atomic
+.. ot-topic:: linux.kernel.interrupt
+   :dependencies: linux.kernel.process_vs_atomic
 
 
 Interrupts
@@ -11,4 +11,4 @@ Interrupts
    slides
 
 .. ot-graph:: 
-   :entries: kernel.interrupt
+   :entries: linux.kernel.interrupt

@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.cdev_auto
-   :dependencies: kernel.cdev_manual
+.. ot-topic:: linux.kernel.cdev_auto
+   :dependencies: linux.kernel.cdev_manual
 
 Modern Character Devices
 ========================
@@ -18,4 +18,4 @@ Modern Character Devices
    screenplay
 
 .. ot-graph:: 
-   :entries: kernel.cdev_auto
+   :entries: linux.kernel.cdev_auto

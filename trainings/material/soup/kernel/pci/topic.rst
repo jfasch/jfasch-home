@@ -1,7 +1,7 @@
-.. ot-topic:: kernel.pci
-   :dependencies: kernel.interrupt,
-		  kernel.iomemory,
-		  kernel.dma
+.. ot-topic:: linux.kernel.pci
+   :dependencies: linux.kernel.interrupt,
+		  linux.kernel.iomemory,
+		  linux.kernel.dma
 
 
 PCI
@@ -13,4 +13,4 @@ PCI
    slides
 
 .. ot-graph:: 
-   :entries: kernel.pci
+   :entries: linux.kernel.pci

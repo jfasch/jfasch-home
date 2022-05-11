@@ -1,5 +1,5 @@
-.. ot-topic:: kernel.cdev_manual
-   :dependencies: kernel.modules_hello_world
+.. ot-topic:: linux.kernel.cdev_manual
+   :dependencies: linux.kernel.modules_hello_world
 
 Character Device Basics
 =======================
@@ -11,4 +11,4 @@ Character Device Basics
    screenplay
 
 .. ot-graph:: 
-   :entries: kernel.cdev_manual
+   :entries: linux.kernel.cdev_manual

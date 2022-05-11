@@ -1,6 +1,6 @@
-.. ot-topic:: kernel.workqueue
-   :dependencies: kernel.timer_coding,
-		  kernel.process_vs_atomic
+.. ot-topic:: linux.kernel.workqueue
+   :dependencies: linux.kernel.timer_coding,
+		  linux.kernel.process_vs_atomic
 
 
 Workqueue
@@ -13,4 +13,4 @@ Workqueue
    screenplay
 
 .. ot-graph:: 
-   :entries: kernel.workqueue
+   :entries: linux.kernel.workqueue

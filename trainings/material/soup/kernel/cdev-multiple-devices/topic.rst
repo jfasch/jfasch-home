@@ -1,5 +1,5 @@
-.. ot-exercise:: kernel.multiple_devices
-   :dependencies: kernel.cdev_refactoring
+.. ot-exercise:: linux.kernel.multiple_devices
+   :dependencies: linux.kernel.cdev_refactoring
 
 
 Coding: Multiple Devices
@@ -11,4 +11,4 @@ Coding: Multiple Devices
    slides
 
 .. ot-graph:: 
-   :entries: kernel.multiple_devices
+   :entries: linux.kernel.multiple_devices

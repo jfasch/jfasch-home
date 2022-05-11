@@ -1,6 +1,6 @@
-.. ot-exercise:: kernel.spinlock_coding
-   :dependencies: kernel.interrupt_coding,
-		  kernel.spinlock
+.. ot-exercise:: linux.kernel.spinlock_coding
+   :dependencies: linux.kernel.interrupt_coding,
+		  linux.kernel.spinlock
 
 
 Coding: Fix *Sleep While Atomic*
@@ -12,4 +12,4 @@ Coding: Fix *Sleep While Atomic*
    slides
 
 .. ot-graph:: 
-   :entries: kernel.spinlock_coding
+   :entries: linux.kernel.spinlock_coding
