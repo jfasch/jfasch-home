@@ -7,7 +7,7 @@ PROJECT(JoergFaschingbauer)
 
 ENABLE_TESTING()
 
-FIND_PACKAGE(GTest REQUIRED)
+#FIND_PACKAGE(GTest REQUIRED)
 FIND_PACKAGE(Threads REQUIRED)
 
 # compiler options. (we only check for gcc)
@@ -16,5 +16,6 @@ if (${CMAKE_COMPILER_IS_GNUCC})
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g3 -Wall -Werror -std=c++11")
 endif()
 
+ADD_SUBDIRECTORY(googletest)
 ADD_SUBDIRECTORY(trainings/material/soup)
 ADD_SUBDIRECTORY(trainings/log/detail/2020-03-30/code)

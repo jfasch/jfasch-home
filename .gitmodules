@@ -1,3 +1,6 @@
 [submodule "trainings/material/soup/linux/toolchain/jfasch-home-linux-toolchain"]
 	path = trainings/material/soup/linux/toolchain/jfasch-home-linux-toolchain
 	url = git@github.com:jfasch/jfasch-home-linux-toolchain.git
+[submodule "googletest"]
+	path = googletest
+	url = https://github.com/google/googletest

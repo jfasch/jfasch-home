@@ -9,5 +9,7 @@ int main(void)
         ten_integers[i] = i;
         i++;
     }
+
+    (void)ten_integers; // prevent gcc "unused variable" warning
     return 0;
 }
