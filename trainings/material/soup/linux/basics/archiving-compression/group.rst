@@ -7,8 +7,7 @@ Archiving and Compression
 .. contents::
    :local:
 
-Topics
-------
+**Topics**
 
 .. toctree::
    :maxdepth: 1
@@ -17,16 +16,14 @@ Topics
    gzip
    tar
 
-Exercises
----------
+.. **Exercises**
 
 .. .. toctree::
 ..    :maxdepth: 1
 .. 
 ..    exercises/group
 
-Dependencies
-------------
+**Dependencies**
 
 .. ot-graph::
    :entries: linux.basics.archiving_compression

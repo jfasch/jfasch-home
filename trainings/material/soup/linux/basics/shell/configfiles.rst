@@ -16,7 +16,7 @@ Shell Configuration File: ``~/.bashrc``
    :local:
 
 What's Volatile?
-================
+----------------
 
 * Settings from the commandline aren't usually persistent
 * Tuning the ``PATH`` environment variable is in effect only for the

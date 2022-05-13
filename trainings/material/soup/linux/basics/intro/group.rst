@@ -7,8 +7,7 @@ Introduction: Concepts and Terminology
 .. contents::
    :local:
 
-Topics
-------
+**Topics**
 
 .. toctree::
    :maxdepth: 1
@@ -21,8 +20,7 @@ Topics
    login
    wsl
 
-Dependencies
-------------
+**Dependencies**
 
 .. ot-graph::
    :entries: linux.basics.intro

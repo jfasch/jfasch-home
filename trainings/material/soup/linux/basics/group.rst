@@ -7,27 +7,25 @@ Linux Basics
 .. contents::
    :local:
 
-Topics
-------
+**Topics**
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    intro/group
    shell/group
    permissions/group
    archiving-compression/group
+   io-redirection-pipes/group
 
-Exercises
----------
+**Exercises**
 
 .. toctree::
    :maxdepth: 1
 
    exercises/group
 
-Group Description
------------------
+**Dependencies**
 
 .. ot-graph::
    :entries: linux.basics

@@ -17,8 +17,8 @@ Requirement
 
    **Topics**
 
-   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
    * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
    * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
 

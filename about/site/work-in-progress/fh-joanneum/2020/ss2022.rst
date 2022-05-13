@@ -123,7 +123,8 @@ Block 2: C on Linux: Local and *Cross* Development
 
        *Shell: I/O Redirection, Pipes*
 
-       * :download:`/trainings/material/pdf/010-linux-basics.pdf`
+       * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
+       * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
 
        *Systems Programming: File I/O*
 

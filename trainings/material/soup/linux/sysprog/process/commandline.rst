@@ -44,7 +44,7 @@ Shell, Running A Program
 * In any error case (which is "no two parameters" for us), an exit
   status of *non-zero* is returned.
 * The truth value of *non-zero* is ``false``. Again, this makes sense
-  because there are possibly many thing why a program might fail.
+  because there are possibly many things why a program might fail.
 
 .. code-block:: console
 

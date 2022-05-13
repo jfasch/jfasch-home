@@ -7,8 +7,7 @@ File System Permissions
 .. contents::
    :local:
 
-Topics
-------
+**Topics**
 
 .. toctree::
    :maxdepth: 1
@@ -19,16 +18,14 @@ Topics
    umask
    sticky
 
-Exercises
----------
+**Exercises**
 
 .. toctree::
    :maxdepth: 1
 
    exercises/group
 
-Group Description
------------------
+**Dependencies**
 
 .. ot-graph::
    :entries: linux.basics.permissions

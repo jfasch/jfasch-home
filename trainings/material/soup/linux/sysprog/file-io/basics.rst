@@ -133,6 +133,11 @@ bitwise-or'ed flags:
 
 **Access Mode**
 
+.. sidebar:: Examples
+
+   * :doc:`example-O_RDONLY`
+   * :doc:`example-O_WRONLY`
+
 * ``O_RDONLY``: Can only ``read()``; error on ``write()``
 * ``O_WRONLY``: Can only ``write()``; error on ``read()``
 * ``O_RDWR``: ...
