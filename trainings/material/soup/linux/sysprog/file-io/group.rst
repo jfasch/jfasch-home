@@ -26,6 +26,7 @@ Contents
    example-O_RDONLY
    example-O_WRONLY
    example-O_CREAT
+   example-O_EXCL
    basics-exercise-copy
    basics-exercise-hole
    duplicate

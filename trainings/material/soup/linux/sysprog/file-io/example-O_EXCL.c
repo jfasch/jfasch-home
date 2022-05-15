@@ -12,7 +12,7 @@ int main(int argc, char** argv)
     const char bytes_to_write[] = "Howdy\n";
     ssize_t nwritten;
 
-    fd = open(filename, O_WRONLY|O_CREAT);
+    fd = open(filename, O_WRONLY|O_CREAT|O_EXCL, 0666);
     if (fd == -1) {
         perror("open");
         return 1;

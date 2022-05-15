@@ -72,8 +72,37 @@ This is a consequence of reading manual pages too sloppily ::
 
 	      ...
 
+Creating A File If It Does Not Exist
+------------------------------------
 
+.. sidebar:: Topics
 
+   * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+
+Fact is: if a file is created, someone needs to specify *access
+permissions*. This is what the optional third ``open()`` parameter is
+there for - ``mode``.
+
+.. code-block:: c
+
+   int open(const char *pathname, int flags, mode_t mode);
+
+It is common practice to specify ``0666`` as ``mode``, and leave the
+rest to the system. The user can specify via the ``umask`` process
+attribute which permission bits to remove from the ``mode``; see
+:doc:`/trainings/material/soup/linux/basics/permissions/umask` for how
+that works, and how to specify the ``umask``.
+
+Here's a fixed version of the bogus program from above:
+
+.. literalinclude:: example-O_CREAT.c
+   :caption: :download:`example-O_CREAT.c`
+   :language: c
+
+.. code-block:: console
+   :caption: Build it
+
+   $ gcc -o example-O_CREAT example-O_CREAT.c
 
 .. rubric:: Footnotes
 .. [#read-just-as-well] One could legally combine ``O_CREAT`` with

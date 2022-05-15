@@ -17,7 +17,14 @@ Requirement
 
    **Topics**
 
-   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+   * The Whole Truth About ``open()``
+
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_RDONLY`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_WRONLY`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_CREAT`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_EXCL`
+
    * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
    * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
    * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
@@ -69,7 +76,7 @@ Sunny Case: Source File Exists, Destination Does Not Exist
    $ echo $?
    0
 
-Error: Wrong Number Of Arguments Specifies
+Error: Wrong Number Of Arguments Specified
 ..........................................
 
 .. code-block:: console
