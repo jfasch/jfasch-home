@@ -85,7 +85,7 @@ Running Tests
    
    (opentraining) $ pwd
    /home/jfasch/work/opentraining
-   (opentraining) $ pytest
+   (opentraining) $ python -m pytest
    ============================= test session starts =============================
    platform linux -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
    rootdir: /home/jfasch/work/opentraining
@@ -101,7 +101,7 @@ Running Tests
 .. code-block:: console
    :caption: Run all tests in a file
 
-   (opentraining) $ pytest tests/test_project.py 
+   (opentraining) $ python -m pytest tests/test_project.py 
    ============================= test session starts =============================
    platform linux -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
    rootdir: /home/jfasch/work/opentraining
@@ -114,7 +114,7 @@ Running Tests
 .. code-block:: console
    :caption: Run single test from file
 
-   $ pytest tests/test_project.py -k test_person_points
+   $ python -m pytest tests/test_project.py -k test_person_points
    ============================= test session starts =============================
    platform linux -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
    rootdir: /home/jfasch/work/opentraining
@@ -180,7 +180,7 @@ A Simple Test
 .. code-block:: console
    :caption: Run simple test (just like explained above)
 
-   (opentraining) $ pytest tests/test_simple.py 
+   (opentraining) $ python -m pytest tests/test_simple.py 
    ============================= test session starts =============================
    platform linux -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
    rootdir: /home/jfasch/work/opentraining
@@ -204,7 +204,7 @@ Run both tests,
 
 .. code-block:: console
 
-   $ pytest tests/test_simple.py 
+   $ python -m pytest tests/test_simple.py 
    ============================= test session starts =============================
    platform linux -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
    rootdir: /home/jfasch/work/opentraining
@@ -362,7 +362,7 @@ Marking Tests as Expected to Fail
 
 .. code-block:: console
 
-   $ pytest tests/test_simple.py 
+   $ python -m pytest tests/test_simple.py 
    ============================= test session starts =============================
    platform linux -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
    rootdir: /home/jfasch/work/opentraining

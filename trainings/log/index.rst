@@ -15,6 +15,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Advanced (2022-05-16 - 2022-05-18)
+-----------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/python-grundlagen>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2022-05-16/index>`)
+
 Python (2022-05-02 - 2022-05-05)
 --------------------------------
 

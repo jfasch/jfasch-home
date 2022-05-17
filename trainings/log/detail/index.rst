@@ -5,6 +5,7 @@ Details
    :maxdepth: 1
 
    2022-06-14/index
+   2022-05-16/index
    2022-05-02/index
    2022-04-25/index
    2022-04-05/index
