@@ -145,15 +145,10 @@ Write new program ...
 
    $ python persondb-csv-to-sqlite3.py data/standesregister.csv data/standesregister.sqlite3
 
-To Do
------
+XML/Element Tree
+................
 
-**Miscellaneous**
-
-* :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
-* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-* :doc:`/trainings/material/soup/python/advanced/closures/topic`
-* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+* :doc:`/trainings/material/soup/python/misc/python_5550_xml_etree/topic`
 
 Links
 -----
