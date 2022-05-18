@@ -21,6 +21,7 @@ Programmierung Grundlagen, anhand von Python (2022-04-05 - 2022-04-08)
 
    * :doc:`Structure <notebook-wrapper>`
    * :doc:`Whole notebook <notebook>`
+   * :download:`Download <notebook.ipynb>`
 
    **Successor Training**
 

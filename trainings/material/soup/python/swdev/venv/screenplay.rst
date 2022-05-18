@@ -37,7 +37,7 @@ Setup
 
 .. code-block:: console
 
-   $ python -m venv my_env
+   $ python -m venv my_venv
    $ tree my_venv/
    my_venv/
    ├── bin
@@ -56,6 +56,14 @@ Setup
    ├── lib
    │   └── python3.8
    ... much ...
+
+.. note::
+
+   What is referred to by ``my_venv`` is a *directory*. You may choose
+   whatever path you want (e.g. ``~/my_venv`` on Unixen, or
+   ``C:\USers\Student\my_venv`` on Dozen).  Take care though that you
+   have write permisssions, or the creation will fail with a
+   descriptive error.
    
 * Hm. Looks like the Python environment has been duplicated.
 * ``bin/python``, ``bin/pip``, ``lib/python3.8``
@@ -85,7 +93,7 @@ Setup
 .. code-block:: console
    :caption: Doze, ``cmd.exe``
 
-   C:\ my_venv\Scripts\activate.bat
+   C:\my_venv\Scripts\activate.bat
 
 .. code-block:: console
    :caption: Doze, ``Powershell``
