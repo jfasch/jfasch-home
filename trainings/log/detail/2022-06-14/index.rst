@@ -14,8 +14,8 @@ Neuerungen in C++11, C++14, C++17, C++20
    * :doc:`/trainings/material/soup/cxx11/group`
    * :doc:`/trainings/material/soup/cxx/group` (unpolished, unsorted)
 
-Agenda
-------
+Agenda: Speisekarte
+-------------------
 
 .. list-table::
    :align: left
@@ -31,8 +31,8 @@ Agenda
      * Thema, zu dem auf jeden Fall eine Teilnehmerübung stattfinden
        soll
 
-Neuerungen in C++ 11
-....................
+Neuerungen in C++ seit 2011
+...........................
 
 * Neuerungen in der Kernsprache
 
@@ -337,3 +337,173 @@ Neuerungen in C++ 20 (Ausblick)
      * * std::span
        * ``-``
        *
+
+Agenda: Entwurf
+---------------
+
+jjj flatten all out, into something that's an ordering of features
+that I consider important. in order of descending importance.
+
+Pythonicity to C++
+..................
+
+Emphasis on readability and writeability
+
+Range Based for Loops
+`````````````````````
+
+ file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/040-range-based-for/topic.html
+
+* Depend on ``auto``
+* Discuss ``auto&``, ``const auto&``, ...
+* Live hacking example: iteration over ``map<k,v>``
+* See also -> "Structured binding", depending on RBF
+
+* While we are at it: loop-scope variable definition
+* While we are at it: if-scope variable definition
+
+auto Type Declarations
+``````````````````````
+
+ file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/020-auto-type-declaration/topic.html
+
+* Discussion: caveats, compiler errors, ...
+* Bring live hacking examples accordingly
+
+* Function return-type deduction (auto zum quadrat)
+
+Things That Simply Deserved Fixing Since Ages
+.............................................
+
+file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/group.html
+
+Brace Initialization
+````````````````````
+
+file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic.html
+
+New OO keywords: override, final, default, delete
+`````````````````````````````````````````````````
+
+  * Live hacking: show motivation (C++03 lacking those), solution
+
+Strongly Typed enum
+```````````````````
+
+file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic.html
+
+Delegating Constructor
+``````````````````````
+
+file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/050-delegating-ctor/topic.html
+
+Miscellaneous
+`````````````
+
+* ``nullptr`` file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic.html
+* ``constexpr``: bring example
+
+    * ``constexpr if`` (C++17)
+
+  * User defined literals
+
+* Raw Strings?
+
+  * regex library excursion
+  * python example
+  * c++ example
+
+Smart Pointers
+..............
+
+file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/030-smart-pointers/group.html
+
+* ``unique_ptr<>`` file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/030-smart-pointers/020-unique-ptr/topic.html
+
+  * Live hacking
+
+    * show how the compiler helps you in ownership transfer
+    * -> ``std::move<>``
+    * -> see Moving, “RValue References”
+
+* ``shared_ptr<>`` file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/030-smart-pointers/030-shared-ptr/topic.html
+
+  * Live hacking: caveat cyclic references
+
+* ``weak_ptr<>`` NEU
+
+Moving, “RValue References”
+...........................
+
+Probably the biggest and most important change
+
+file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/020-new-language-features/060-move/topic.html
+
+* jjj Depend that on "Smart Pointers" (``unique_ptr<>`` and compiler
+  errors "blah move blah")
+* Live hacking
+
+  * Use auto_ptr -> show weaknesses
+  * Use && to implement "unique_ptr for the poor"
+
+Functions (``std::bind<>``, ``std::function<>``, Lambdas)
+.........................................................
+
+jjj highlight difference between bind and function (polymorphic
+vs. single-purpose-but-efficient), and show how lambda fits in (->
+is-a function, basically)
+
+* ``bind<>``
+* ``function<>``
+* Lambda NEU 
+
+  * file:///tmp/jfasch-home/html/trainings/log/detail/2020-03-30/index.html?highlight=lambda
+  * Bring in extensions from >11
+  * Live hacking: caveat: dead references in capture
+  * Exercise, preparing for threads group exercise
+
+Multithreading
+..............
+
+file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/050-multithreading/group.html
+
+* file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic.html
+* Locking and Atomics  file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/topic.html
+
+  * C++14 shared mutex
+
+* Communication
+
+  * Condition Variables
+    file:///tmp/jfasch-home/html/trainings/material/soup/cxx11/050-multithreading/050-condition-variable/topic.html
+  * ``promise<>`` and ``future<>`` NEU
+
+Miscellaneous Libraries
+.......................
+
+* Solutions to the ``union`` problem
+
+  * any, optional, variant (c++17)
+
+* FS library excursions (next to threading maybe)
+
+  * ``/`` operator
+
+* ``chrono<>``
+
+Miscellaneous
+.............
+
+* new containers and algorithms (next to beginning somewhere)
+* attributes
+* Templated variables?
+* Nested namespace definitions (C++17)
+* Template programming
+
+  * Live hacking (hmmm)
+
+    * two classes with compatible template methods
+    * template function using those
+    * maybe with type traits?
+
+
