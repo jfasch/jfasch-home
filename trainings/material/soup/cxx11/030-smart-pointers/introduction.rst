@@ -24,7 +24,7 @@ Why Smart Pointers?
 
    void do_something() {
        MyClass* tmp = new MyClass(666);
-       do_something_with(tmp); // throws
+       tmp->do_something(); // throws
        delete tmp;     // LEAKED!!
        ...
    }
@@ -38,4 +38,5 @@ Recap: Constructors and Destructors
 * End of scope
 * Exceptions |longrightarrow| *stack unwinding*
 
-.. image:: dtors.dia
+.. image:: introduction-dtors.dia
+

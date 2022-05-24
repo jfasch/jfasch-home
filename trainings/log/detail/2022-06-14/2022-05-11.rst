@@ -1,0 +1,330 @@
+Vorbesprechung 2022-05-11
+=========================
+
+.. contents::
+   :local:
+
+Legende
+-------
+
+.. list-table::
+   :align: left
+   :widths: auto
+
+   * * ``+``
+     * Wichtiges Thema (ausführliche Behandlung)
+   * * ``O``
+     * Weniger wichtiges Thema (kurzer Überblick reicht)
+   * * ``-``
+     * Unwichtiges Thema (Thema kann weggelassen werden)
+   * * ``Ü``
+     * Thema, zu dem auf jeden Fall eine Teilnehmerübung stattfinden
+       soll
+
+Neuerungen in C++ seit 2011
+---------------------------
+
+* Neuerungen in der Kernsprache
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Neue Literale
+       * ``0``
+       *
+     * * RValue Referenzen und move-Konstruktoren
+       * ``+``
+       *
+     * * constexpr
+       * ``0``
+       *
+     * * Initializer Listen
+       * ``0``
+       *
+     * * Uniforme Initialisierung
+       * ``0``
+       *
+     * * Type-Inference
+       * ``0``
+       *
+     * * Range-basierte for Schleifen
+       * ``0``
+       *
+     * * Lambdas und function<...>
+       * ``Ü`` (-> threads)
+       *
+     * * Explizites overrides und final
+       * ``+``
+       *
+     * * default und delete für spezielle Member-Funktionen
+       * ``+``
+       *
+     * * Attribute
+       * ``0``
+       *
+     * * Neuerungen bei der Template Programmierung
+       * ``0``
+       *
+
+* Multithreading
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Das C++11-Speichermodell
+       * ``Ü``
+       *
+     * * Atomare Datentypen
+       * ``Ü``
+       *
+     * * Threads und Tasks
+       * ``Ü``
+       *
+     * * Mutex
+       * ``Ü``
+       *
+     * * Thread-lokale Variablen
+       * ``Ü``
+       *
+
+* Neuerungen in der Standardbibliothek
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Smart Pointer
+       * ``+``, ``Ü``
+       *
+     * * Reguäre Ausdrücke
+       * ``-``
+       *
+     * * Type-Traits
+       * ``+``
+       *
+     * * Zufallszahlen
+       * ``-``
+       *
+     * * Zeitbibliothek
+       * ``-``
+       *
+     * * Referenz-Wrapper
+       * ``0``
+       *
+     * * Neue Container
+       * ``0``
+       *
+     * * Neue Algorithmen
+       * ``0``
+       *
+
+Neuerungen in C++ 14
+--------------------
+
+* Neuerungen in der Sprachsyntax
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Neue Literale
+       * ``-``
+       *
+     * * Function-Return Type-Deduction
+       * ``0``
+       *
+     * * Erweiterungen zu constexpr
+       * ``-``
+       *
+     * * Erweiterungen zu Lambdas und Capture-Expressions
+       * ``0``
+       *
+     * * Templated Variables
+       * ``0``
+       *
+
+* Multithreading
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Shared Mutex
+       * ``0``
+       *
+
+Neuerungen in C++ 17
+--------------------
+
+* Neuerungen in der Sprachsyntax
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Geänderte auto Deduction aus { ... }-Listen
+       * ``-``
+       *
+     * * Nested Namespace-Definitionen
+       * ``0``
+       *
+     * * Neue Standard-Attribute
+       * ``0``
+       *
+     * * Neuerungen bei der Template Programmierung
+       * ``-``
+       *
+     * * constexpr if
+       * ``0``
+       *
+     * * Structured Binding
+       * ``0``
+       *
+     * * Inline Variablen
+       * ``-``
+       *
+
+* Neuerungen in der Standardbibliothek
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * std::any / std::optional / std::variant
+       * ``0``
+       *
+     * * Filesystem-Bibliothek
+       * ``+``, ``Ü``
+       *
+
+Neuerungen in C++ 20 (Ausblick)
+-------------------------------
+
+* Neuerungen in der Kernsprache
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * 3-Weg Vergleich mit operator <=>
+       * ``0``
+       *
+     * * Zusatzvariable in range-based for statement
+       * ``0``
+       *
+     * * Erweiterungen zu Lambdas
+       * ``-``
+       *
+     * * Erweiterungen zu constexpr
+       * ``-``
+       *
+     * * constinit
+       * ``0``
+       *
+     * * Concepts für Templates
+       * ``0`` (``-``)
+       *
+     * * Neue Attribute [[likely]] und [[unlikely]]
+       * ``0``
+       *
+
+* Modularisierung und Versionierung
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Version Header
+       * ``-``
+       *
+     * * Module
+       * ``-``
+       *
+
+* Multithreading
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Revised Memory-Model
+       * ``0`` (``-``)
+       *
+     * * Atomic Smart Pointer
+       * ``0`` (``-``)
+       *
+     * * Atomic References
+       * ``0`` (``-``)
+       *
+     * * Co-Routinen
+       * ``0`` (``-``)
+       *
+     * * Synchronisierung-Werkzeuge
+       * ``0`` (``-``)
+       *
+
+* Neuerungen in der Standardbibliothek
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Thema
+       * jf
+       * pr
+     * * Text-Formatierung
+       * ``-``
+       *
+     * * Kalender- und Zeitzonen-Zusätze zu chrono
+       * ``-``
+       *
+     * * Range-Bibliothek
+       * ``-``
+       *
+     * * std::span
+       * ``-``
+       *
+

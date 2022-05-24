@@ -1,0 +1,3 @@
+set(CMAKE_CXX_STANDARD 14)
+
+ADD_SUBDIRECTORY(030-smart-pointers)

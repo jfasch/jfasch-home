@@ -1,7 +1,8 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: cxx11.smart_pointers.closing_words
-   :dependencies: cxx11.smart_pointers.shared_ptr
+   :dependencies: cxx11.smart_pointers.shared_ptr,
+		  cxx11.smart_pointers.unique_ptr
 
 
 Smart Pointers: Closing Words

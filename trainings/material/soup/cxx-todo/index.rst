@@ -144,14 +144,14 @@ Dependencies
     * ``explicit``. See `here
       <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/explicit.cpp>`__
       for a live-hacked explanation.
-    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/010-introduction/topic`
-    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/020-unique-ptr/topic`
+    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
+    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
 
       Bring `this
       <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/unique_ptr.cpp>`__
       as a screenplay.
 
-    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/030-shared-ptr/topic`
+    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
     * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
 
 Exercise series

@@ -6,8 +6,17 @@
 ``valgrind``
 ============
 
+.. contents::
+   :local:
+
 Valgrind
 --------
+
+.. sidebar:: 
+
+   **Documentation**
+
+   * `Valgrind homepage <https://valgrind.org>`__
 
 **Valgrind: debugging at its best** (because it is so simple)
 

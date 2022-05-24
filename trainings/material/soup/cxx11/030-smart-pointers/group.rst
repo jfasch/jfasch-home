@@ -14,10 +14,14 @@ Topics
    :maxdepth: 1
    :glob:
 
+   introduction
+   introduction-livehack
+   uniqueptr
+   sharedptr
    */topic
 
-Group Description
------------------
+Dependencies
+------------
 	      
 .. ot-graph::
    :entries: cxx11.smart_pointers
