@@ -12,13 +12,12 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
    introduction
    introduction-livehack
    uniqueptr
    sharedptr
-   */topic
+   040-closing-words/topic
 
 Dependencies
 ------------

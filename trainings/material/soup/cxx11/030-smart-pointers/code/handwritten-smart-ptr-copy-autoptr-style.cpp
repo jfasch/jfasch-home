@@ -39,9 +39,9 @@ TEST(handwritten_suite, copy_ctor_good_autoptr_style)
     SmartPtr<Sensor> s1{new ConstantSensor{20}};
     SmartPtr<Sensor> s2{s1};
 
-    // ASSERT_EQ(s1->get_temperature(), 20);    // <---- CRASHES, UNEXPECTEDLY?
+    // ASSERT_DOUBLE_EQ(s1->get_temperature(), 20);    // <---- CRASHES, UNEXPECTEDLY?
     ASSERT_EQ(s1.get(), nullptr);
-    ASSERT_EQ(s2->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s2->get_temperature(), 20);
 }
 
 TEST(handwritten_suite, assignment_operator_good_autoptr_style)
@@ -51,7 +51,7 @@ TEST(handwritten_suite, assignment_operator_good_autoptr_style)
     
     s2 = s1;
 
-    // ASSERT_EQ(s1->get_temperature(), 20);    // <---- CRASHES, UNEXPECTEDLY?
+    // ASSERT_DOUBLE_EQ(s1->get_temperature(), 20);    // <---- CRASHES, UNEXPECTEDLY?
     ASSERT_EQ(s1.get(), nullptr);
-    ASSERT_EQ(s2->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s2->get_temperature(), 20);
 }

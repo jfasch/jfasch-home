@@ -22,8 +22,8 @@ TEST(handwritten_suite, copy_ctor_bad)
     SmartPtr<Sensor> s1{new ConstantSensor{20}};
     SmartPtr<Sensor> s2{s1};
 
-    ASSERT_EQ(s1->get_temperature(), 20);
-    ASSERT_EQ(s2->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s1->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s2->get_temperature(), 20);
 }
 
 TEST(handwritten_suite, assignment_operator_bad)
@@ -33,6 +33,6 @@ TEST(handwritten_suite, assignment_operator_bad)
     
     s2 = s1;
 
-    ASSERT_EQ(s1->get_temperature(), 20);
-    ASSERT_EQ(s2->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s1->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s2->get_temperature(), 20);
 }

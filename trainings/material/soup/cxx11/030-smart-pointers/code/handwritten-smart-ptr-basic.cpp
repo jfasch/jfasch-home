@@ -20,8 +20,8 @@ TEST(handwritten_suite, basic)
 {
     SmartPtr<Sensor> s{new ConstantSensor{20}};
 
-    ASSERT_EQ(s->get_temperature(), 20);
-    ASSERT_EQ((*s).get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ((*s).get_temperature(), 20);
 }
 
 TEST(handwritten_suite, basic_const)

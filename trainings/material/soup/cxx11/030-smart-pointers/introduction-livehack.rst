@@ -26,10 +26,10 @@ Copy Constructor And Assignment Operator (And Default Ctor)
 **Naive approach** 
 
 * Let compiler do the copy
-* |longrightarrow| genrally a bad idea
+* |longrightarrow| generally a bad idea
 
-.. literalinclude:: code/handwritten-smart-ptr-copy.cpp
-   :caption: :download:`code/handwritten-smart-ptr-copy.cpp`
+.. literalinclude:: code/handwritten-smart-ptr-copy-bad.cpp
+   :caption: :download:`code/handwritten-smart-ptr-copy-bad.cpp`
    :language: c++
 
 Crashes ...
@@ -65,8 +65,8 @@ the rescue ...
   * |longrightarrow| At the end of the test case, where both pointers
     are destructed
 
-* But this is not so obvious because non-existent ``vtable``s are
-  being traversed
+* But this is not so obvious because non-existent ``vtable`` is being
+  traversed
 
 .. code-block:: console
 

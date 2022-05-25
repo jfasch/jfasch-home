@@ -20,6 +20,12 @@ ADD_EXECUTABLE(
   unique-ptr-release-reset.cpp
 
   unique-ptr-all.cpp
+
+
+  shared-ptr-basic.cpp
+  shared-ptr-basic-make_shared.cpp
+  shared-ptr-cyclic.cpp
+  shared-ptr-all.cpp
 )
 
 TARGET_LINK_LIBRARIES(c++11-smartptr gtest_main)

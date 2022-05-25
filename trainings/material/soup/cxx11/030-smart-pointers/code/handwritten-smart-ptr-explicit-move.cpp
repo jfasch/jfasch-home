@@ -37,5 +37,5 @@ TEST(handwritten_suite, explicit_move)
     s2.move(s1);
 
     ASSERT_EQ(s1.get(), nullptr);
-    ASSERT_EQ(s2->get_temperature(), 20);
+    ASSERT_DOUBLE_EQ(s2->get_temperature(), 20);
 }

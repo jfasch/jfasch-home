@@ -329,4 +329,5 @@ Optional: Libraries, and Minor Language Features
 Important, To Be Done
 ---------------------
 
-* ``std::forward<>``
+* ``std::forward``
+* ``std::array``
