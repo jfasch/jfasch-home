@@ -10,6 +10,21 @@ Communication: Condition Variable
 Condition Variable (1)
 ----------------------
 
+.. sidebar::
+
+   **Documentation**
+
+   * `pthread_cond_init
+     <https://linux.die.net/man/3/pthread_cond_init>`__
+   * `pthread_cond_destroy
+     <https://linux.die.net/man/3/pthread_cond_destroy>`__
+   * `pthread_cond_wait
+     <https://linux.die.net/man/3/pthread_cond_wait>`__
+   * `pthread_cond_signal
+     <https://linux.die.net/man/3/pthread_cond_signal>`__
+   * `pthread_cond_broadcast
+     <https://linux.die.net/man/3/pthread_cond_broadcast>`__
+
 **Communication**: 
 
 * One thread waits for a certain event to happen

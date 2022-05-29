@@ -20,7 +20,7 @@ Topics
    040-locking-atomics/mutex
    040-locking-atomics/atomics
    promise-future
-   050-condition-variable/topic
+   condition-variable
 
 Group Description
 -----------------

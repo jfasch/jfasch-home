@@ -10,61 +10,66 @@ TARGET_LINK_LIBRARIES(c++11-thread-suite gtest_main)
 # promise/future
 # ------------------------------------------------------------------
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-polling-unlocked
-  c++11-thread-produce-answer-polling-unlocked.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-polling-unlocked Threads::Threads)
+  c++11-thread-future-polling-unlocked
+  c++11-thread-future-polling-unlocked.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-polling-unlocked Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-polling-unlocked-chrono
-  c++11-thread-produce-answer-polling-unlocked-chrono.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-polling-unlocked-chrono Threads::Threads)
+  c++11-thread-future-polling-unlocked-chrono
+  c++11-thread-future-polling-unlocked-chrono.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-polling-unlocked-chrono Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-polling-mutex
-  c++11-thread-produce-answer-polling-mutex.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-polling-mutex Threads::Threads)
+  c++11-thread-future-polling-mutex
+  c++11-thread-future-polling-mutex.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-polling-mutex Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-polling-lockguard
-  c++11-thread-produce-answer-polling-lockguard.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-polling-lockguard Threads::Threads)
+  c++11-thread-future-polling-lockguard
+  c++11-thread-future-polling-lockguard.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-polling-lockguard Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-polling-encapsulated
-  c++11-thread-produce-answer-polling-encapsulated.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-polling-encapsulated Threads::Threads)
+  c++11-thread-future-polling-encapsulated
+  c++11-thread-future-polling-encapsulated.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-polling-encapsulated Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-polling-atomic-struct
-  c++11-thread-produce-answer-polling-atomic-struct.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-polling-atomic-struct Threads::Threads)
+  c++11-thread-future-polling-atomic-struct
+  c++11-thread-future-polling-atomic-struct.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-polling-atomic-struct Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-semaphore
-  c++11-thread-produce-answer-semaphore.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-semaphore Threads::Threads)
+  c++11-thread-future-semaphore
+  c++11-thread-future-semaphore.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-semaphore Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-promise-future
-  c++11-thread-produce-answer-promise-future.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-promise-future Threads::Threads)
+  c++11-thread-future-promise-future
+  c++11-thread-future-promise-future.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-promise-future Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-produce-answer-promise-future-exception
-  c++11-thread-produce-answer-promise-future-exception.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-produce-answer-promise-future-exception Threads::Threads)
+  c++11-thread-future-promise-future-exception
+  c++11-thread-future-promise-future-exception.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-future-promise-future-exception Threads::Threads)
 
 
 
-
-
-
-
-
-
+# ------------------------------------------------------------------
+# condition variable
+# ------------------------------------------------------------------
+ADD_EXECUTABLE(
+  c++11-thread-condvar-queue-polling
+  c++11-thread-condvar-queue-polling.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-condvar-queue-polling Threads::Threads)
 
 ADD_EXECUTABLE(
-  c++11-thread-producer-consumer-queue-polling 
-  c++11-thread-producer-consumer-queue-polling.cpp)
-TARGET_LINK_LIBRARIES(c++11-thread-producer-consumer-queue-polling Threads::Threads)
+  c++11-thread-condvar-queue-pthread
+  c++11-thread-condvar-queue-pthread.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-condvar-queue-pthread Threads::Threads)
 
+ADD_EXECUTABLE(
+  c++11-thread-condvar-queue-condvar
+  c++11-thread-condvar-queue-condvar.cpp)
+TARGET_LINK_LIBRARIES(c++11-thread-condvar-queue-condvar Threads::Threads)

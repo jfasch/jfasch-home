@@ -279,7 +279,8 @@ Multithreading
      * * Ctor starts code in thread -> plain function, std::function,
          lambda
        * No copy, only move (obviously)
-       * ``join()``, ``detach()``
+       * ``join()``, ``detach()``: terminating before join? live hack
+         that!
      * 
      * 
    * * Add scoped locking to :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
@@ -302,7 +303,7 @@ Multithreading
      *
      *
    * * Live hacking: :doc:`condition variables
-       </trainings/material/soup/cxx11/050-multithreading/050-condition-variable/topic>`
+       </trainings/material/soup/cxx11/050-multithreading/condition-variable>`
      * * implement queue
        * discuss wakeup latency
        * discuss realtime
@@ -312,6 +313,8 @@ Multithreading
      * * Distill from `semaphore <https://en.cppreference.com/w/cpp/thread/counting_semaphore>`__
        * Add "see-also"
 	 :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
+       * Add "see-also"
+	 :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
      * 
      * 
 

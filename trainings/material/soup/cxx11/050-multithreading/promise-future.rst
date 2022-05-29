@@ -13,14 +13,16 @@
 Overview
 --------
 
-**Communication device**
+.. code-block:: c++
+
+   #include <future>
+
+**One-shot communication device**
 
 * One thread *promises* to *produce* a value
 * Another thread *waits* for it to become valid in the *future*
 
 .. code-block:: c++
-
-   #include <future>
 
    std::promise<int> promise;
    auto future = promise.get_future();
