@@ -141,9 +141,6 @@ Smart Pointers
 --------------
 
 * Material: :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
-* Live hacking:
-  :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
-
 
 **TODO**
 
@@ -165,13 +162,17 @@ Smart Pointers
 	 (provided that error messages are understood)
        * Introduce ``std::move<>``
      *
-     *
+     * x
    * * Live hacking: ``shared_ptr<>``
      * * Point is: *very decadent* (like Java, Python, ...)
        * But no-one helps you with reference cycles
      * 
-     * 
+     * x
    * * Live hacking: ``std::weak_ptr<>``
+     * Slide material
+     *
+     * 
+   * * Interface tables
      * 
      *
      *
@@ -198,6 +199,19 @@ Moving, “RValue References”
          implementation for-the-poor
        * Use ``&&`` to implement unique_ptr for-the-poor
      * 
+     *
+   * * Rules
+     * * A move constructor for a class X is implicitly declared as defaulted exactly when
+
+         * X does not have a user-declared copy constructor,
+         * X does not have a user-declared copy assignment operator,
+         * X does not have a user-declared move assignment operator,
+         * X does not have a user-declared destructor, and
+         * the move constructor would not be implicitly defined as deleted.
+
+	 https://stackoverflow.com/questions/8283589/are-move-constructors-produced-automatically
+
+     *
      *
 
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
@@ -227,6 +241,8 @@ Functions (``std::bind<>``, ``std::function<>``, Lambdas)
    * * Lambda slide material
      * Slide material: capture syntax, with examples. Cover extensions
        >11
+
+       * https://en.wikipedia.org/wiki/C%2B%2B14#Lambda_capture_expressions
      * 
      *
    * * Live hacking: what is lambda?
@@ -259,6 +275,44 @@ Multithreading
      * Description
      * Link
      * Done
+   * * Discussion: Thread Objects
+     * * Ctor starts code in thread -> plain function, std::function,
+         lambda
+       * No copy, only move (obviously)
+       * ``join()``, ``detach()``
+     * 
+     * 
+   * * Add scoped locking to :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
+     * * ``unique_lock`` (see-also condvar)
+       * ``lock_guard``
+     * 
+     * 
+   * * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`:
+       add ``struct``
+     * 
+     * 
+     * 
+   * * Live hacking: promise/future
+     * * stupid unlocked polling with intervals (int)
+       * intervals -> chrono
+       * locked polling (still stupid)
+       * semaphore
+       * promise/future
+     * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
+     * 
+   * * Overview/method-table on promise/future
+     * 
+     * 
+     *
+   * * Add literals to
+       :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
+     * ... and a "See also" to a literals live hackery
+     * 
+     * 
+   * * Memory Model
+     * See for example the unlocked ``answer``, ``answer_valid`` story
+     *
+     *
    * * Live hacking: producer/consumer/polling
      * * look every millisecond if something's there
        * latency
@@ -273,10 +327,12 @@ Multithreading
        * discuss realtime
      *
      *
-   * * Live hacking: ``promise<>/future<>``
+   * * Semaphores (since 20)
+     * * Distill from `semaphore <https://en.cppreference.com/w/cpp/thread/counting_semaphore>`__
+       * Add "see-also"
+	 :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
      * 
-     *
-     *
+     * 
 
 Exercise
 --------
@@ -313,6 +369,9 @@ Optional: Libraries, and Minor Language Features
 * `File system library
   <https://en.cppreference.com/w/cpp/filesystem>`__
 * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
+
+  * how to sleep
+
 * `Regular expression library <https://en.cppreference.com/w/cpp/regex>`__
 
   * |longrightarrow| `(Raw) string literal
@@ -329,5 +388,8 @@ Optional: Libraries, and Minor Language Features
 Important, To Be Done
 ---------------------
 
+* vector emplace_back ...
 * ``std::forward``
 * ``std::array``
+* std::ref, std::cref:
+  https://stackoverflow.com/questions/11833070/when-is-the-use-of-stdref-necessary

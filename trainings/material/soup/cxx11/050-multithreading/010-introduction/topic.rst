@@ -31,6 +31,6 @@ There Be Dragons
 
 * A project that was designed without threads in mind is useless with threads
 * Multithreading has to be planned *from the beginning*
-* Creation of a new thread must be justified to God
+* Creation of a new thread must be justified before God
 
 *That being said ...*

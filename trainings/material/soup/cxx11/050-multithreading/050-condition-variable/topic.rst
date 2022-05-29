@@ -1,8 +1,8 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx11.multithreading.condition_variable
-   :dependencies: cxx11.multithreading.locking_atomics,
+   :dependencies: cxx11.multithreading.mutex,
 		  linux.sysprog.posix_threads.condition_variable
+
+.. include:: <mmlalias.txt>
 
 
 Condition Variables

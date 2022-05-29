@@ -14,9 +14,13 @@ TEST(shared_ptr_suite, basic)
     auto temp = rs1->get_temperature();
     ASSERT_TRUE(temp>=20 && temp<=40);
 
+    ASSERT_EQ(rs1.use_count(), 1);
+
     sensors["rand1"] = rs1;
     sensors["rand2"] = rs2;
     sensors["const"] = cs;
+
+    ASSERT_EQ(rs1.use_count(), 2);
 
     // shared ownership: cann access sensors from map *and* from
     // outside references

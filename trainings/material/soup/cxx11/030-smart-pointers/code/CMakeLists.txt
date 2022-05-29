@@ -26,6 +26,10 @@ ADD_EXECUTABLE(
   shared-ptr-basic-make_shared.cpp
   shared-ptr-cyclic.cpp
   shared-ptr-all.cpp
-)
 
+  weak-ptr-basic.cpp
+)
 TARGET_LINK_LIBRARIES(c++11-smartptr gtest_main)
+
+ADD_EXECUTABLE(weak-ptr-demo-thread weak-ptr-demo-thread.cpp)
+TARGET_LINK_LIBRARIES(weak-ptr-demo-thread Threads::Threads)
