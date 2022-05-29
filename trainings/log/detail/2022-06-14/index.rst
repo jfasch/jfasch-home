@@ -292,18 +292,6 @@ Multithreading
      * 
      * 
      * 
-   * * Live hacking: promise/future
-     * * stupid unlocked polling with intervals (int)
-       * intervals -> chrono
-       * locked polling (still stupid)
-       * semaphore
-       * promise/future
-     * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
-     * 
-   * * Overview/method-table on promise/future
-     * 
-     * 
-     *
    * * Add literals to
        :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
      * ... and a "See also" to a literals live hackery
@@ -311,13 +299,6 @@ Multithreading
      * 
    * * Memory Model
      * See for example the unlocked ``answer``, ``answer_valid`` story
-     *
-     *
-   * * Live hacking: producer/consumer/polling
-     * * look every millisecond if something's there
-       * latency
-       * |longrightarrow| decrease polling interval
-       * |longrightarrow| CPU usage
      *
      *
    * * Live hacking: :doc:`condition variables

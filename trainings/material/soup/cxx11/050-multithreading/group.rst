@@ -19,8 +19,8 @@ Topics
    030-race-conditions/topic
    040-locking-atomics/mutex
    040-locking-atomics/atomics
-   050-condition-variable/topic
    promise-future
+   050-condition-variable/topic
 
 Group Description
 -----------------

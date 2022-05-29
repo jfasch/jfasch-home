@@ -49,18 +49,3 @@ More Communication: Future
 .. literalinclude:: condvar-future.cc
    :caption: :download:`condvar-future.cc`
 
-``std::promise`` and ``std::future``
-------------------------------------
-
-**Same scenario, but different responsibilities**
-
-* Somebody promises to have \textit{something} ready in the future
-* Two objects ...
-
-  * ``std::promise`` is used by producer (the one who promises)
-  * ``std::future`` is used by consumer (who relies on the promise that has been made)
-
-**Best done by example**
-
-.. literalinclude:: promise-future.cc
-   :caption: :download:`promise-future.cc`

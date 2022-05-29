@@ -116,8 +116,8 @@ Utterly Wrong: Waiting For Something To Become Ready
 * Separate, uncoordinated, flag and answer
 * Use ``nanosleep()`` to poll/wait
 
-.. literalinclude:: code/c++11-thread-produce-answer-polling-unlocked.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-polling-unlocked.cpp`
+.. literalinclude:: code/c++11-thread-future-polling-unlocked.cpp
+   :caption: :download:`code/c++11-thread-future-polling-unlocked.cpp`
    :language: c++
 
 * Bugs
@@ -152,8 +152,8 @@ Sideways: ``std::chrono``, And Literals
      static constexpr auto ANSWER_COMPUTATION_TIME = 2s;
      static constexpr auto ANSWER_POLL_INTERVAL = 2ms;
 
-.. literalinclude:: code/c++11-thread-produce-answer-polling-unlocked-chrono.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-polling-unlocked-chrono.cpp`
+.. literalinclude:: code/c++11-thread-future-polling-unlocked-chrono.cpp
+   :caption: :download:`code/c++11-thread-future-polling-unlocked-chrono.cpp`
    :language: c++
 
 Minimal Fix: Use ``std::mutex``
@@ -174,8 +174,8 @@ Minimal Fix: Use ``std::mutex``
   (non-exception-safe) ``lock()`` and ``unlock()``, together with a
   ``done`` flag
 
-.. literalinclude:: code/c++11-thread-produce-answer-polling-mutex.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-polling-mutex.cpp`
+.. literalinclude:: code/c++11-thread-future-polling-mutex.cpp
+   :caption: :download:`code/c++11-thread-future-polling-mutex.cpp`
    :language: c++
 
 Anti-Clumsiness: Scoped Locking
@@ -195,8 +195,8 @@ Anti-Clumsiness: Scoped Locking
 * Use ``std::lock_guard`` |longrightarrow| remove ``done`` flag, and
   simply break out of loop
 
-.. literalinclude:: code/c++11-thread-produce-answer-polling-lockguard.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-polling-lockguard.cpp`
+.. literalinclude:: code/c++11-thread-future-polling-lockguard.cpp
+   :caption: :download:`code/c++11-thread-future-polling-lockguard.cpp`
    :language: c++
 
 Pro-Readability: Encapsulate
@@ -205,8 +205,8 @@ Pro-Readability: Encapsulate
 * Create ``class Answer``
 * Methods: ``set()``, ``wait(duration)``
 
-.. literalinclude:: code/c++11-thread-produce-answer-polling-encapsulated.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-polling-encapsulated.cpp`
+.. literalinclude:: code/c++11-thread-future-polling-encapsulated.cpp
+   :caption: :download:`code/c++11-thread-future-polling-encapsulated.cpp`
    :language: c++
 
 Atomics On Structures?
@@ -221,8 +221,8 @@ Atomics On Structures?
 * Nested ``struct data``: flag and answer
 * Use ``std::atomic<data>`` inside ``class Answer``
 
-.. literalinclude:: code/c++11-thread-produce-answer-polling-atomic-struct.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-polling-atomic-struct.cpp`
+.. literalinclude:: code/c++11-thread-future-polling-atomic-struct.cpp
+   :caption: :download:`code/c++11-thread-future-polling-atomic-struct.cpp`
    :language: c++
 
 Anti-Polling: Semaphore
@@ -234,15 +234,15 @@ Anti-Polling: Semaphore
 * Discuss: ``_answer_valid`` not needed when properly waited
 * Discuss: OS wait conditions, blocking system calls, realtime
 
-.. literalinclude:: code/c++11-thread-produce-answer-semaphore.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-semaphore.cpp`
+.. literalinclude:: code/c++11-thread-future-semaphore.cpp
+   :caption: :download:`code/c++11-thread-future-semaphore.cpp`
    :language: c++
 
 Getting To The Point: ``std::promise`` And ``std::future``
 ----------------------------------------------------------
 
-.. literalinclude:: code/c++11-thread-produce-answer-promise-future.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-promise-future.cpp`
+.. literalinclude:: code/c++11-thread-future-promise-future.cpp
+   :caption: :download:`code/c++11-thread-future-promise-future.cpp`
    :language: c++
 
 
@@ -251,7 +251,7 @@ Getting To The Point: ``std::promise`` And ``std::future``
 And Exceptions?
 ---------------
 
-.. literalinclude:: code/c++11-thread-produce-answer-promise-future-exception.cpp
-   :caption: :download:`code/c++11-thread-produce-answer-promise-future-exception.cpp`
+.. literalinclude:: code/c++11-thread-future-promise-future-exception.cpp
+   :caption: :download:`code/c++11-thread-future-promise-future-exception.cpp`
    :language: c++
 
