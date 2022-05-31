@@ -2,6 +2,7 @@ ADD_EXECUTABLE(
   c++11-thread-suite
 
   creation.cpp
+  mutex.cpp
   promise-future.cpp
 )
 TARGET_LINK_LIBRARIES(c++11-thread-suite gtest_main)
@@ -73,3 +74,4 @@ ADD_EXECUTABLE(
   c++11-thread-condvar-queue-condvar
   c++11-thread-condvar-queue-condvar.cpp)
 TARGET_LINK_LIBRARIES(c++11-thread-condvar-queue-condvar Threads::Threads)
+

@@ -25,7 +25,7 @@ int main()
     });
 
     while (true) {
-        std::lock_guard<std::mutex> guard(lock);
+        std::scoped_lock guard(lock);
         if (answer_valid) {
             std::cout << answer << std::endl;
             break;

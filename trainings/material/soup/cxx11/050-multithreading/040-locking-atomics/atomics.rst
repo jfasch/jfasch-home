@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-Atomics: ``std::atomic``
-========================
+``std::atomic``
+===============
 
 Atomic Instructions (1)
 -----------------------

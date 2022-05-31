@@ -16,7 +16,7 @@ public:
     
     void set(int answer)
     {
-        std::lock_guard<std::mutex> guard(_lock);
+        std::scoped_lock guard(_lock);
         _answer = answer;
         _answer_valid = true;
     }
@@ -25,7 +25,7 @@ public:
     int wait(dur d)
     {
         while (true) {
-            std::lock_guard<std::mutex> guard(_lock);
+            std::scoped_lock guard(_lock);
             if (_answer_valid)
                 return _answer;
             std::this_thread::sleep_for(d);

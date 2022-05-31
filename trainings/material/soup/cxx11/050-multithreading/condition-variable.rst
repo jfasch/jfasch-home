@@ -158,7 +158,7 @@ Thread-Safe Queue, And C++ Condition Variables
 
 * Scoped locking: ``std::unique_lock`` (see :doc:`here
   </trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex>`)
-* Predicate: parameter (usually a lmbda) to ``condvar.wait()``
+* Predicate: parameter (usually a lambda) to ``condvar.wait()``
 
 .. literalinclude:: code/c++11-thread-condvar-queue-condvar.cpp
    :caption: :download:`code/c++11-thread-condvar-queue-condvar.cpp`

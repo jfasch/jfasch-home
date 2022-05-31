@@ -191,10 +191,10 @@ Anti-Clumsiness: Scoped Locking
 
    **Documentation**
 
-   * `std::lock_guard
-     <https://en.cppreference.com/w/cpp/thread/lock_guard>`__
+   * `std::scoped_lock
+     <https://en.cppreference.com/w/cpp/thread/scoped_lock>`__
 
-* Use ``std::lock_guard`` |longrightarrow| remove ``done`` flag, and
+* Use ``std::scoped_lock`` |longrightarrow| remove ``done`` flag, and
   simply break out of loop
 
 .. literalinclude:: code/c++11-thread-future-polling-lockguard.cpp

@@ -16,7 +16,7 @@ public:
     {
         while (true) {
             {
-                std::lock_guard<std::mutex> guard(_lock);
+                std::scoped_lock guard(_lock);
                 if (_queue.size() <= _maxelem) {
                     _queue.push_back(elem);
                     return;
@@ -31,7 +31,7 @@ public:
     {
         while (true) {
             {
-                std::lock_guard<std::mutex> guard(_lock);
+                std::scoped_lock guard(_lock);
                 if (_queue.size() > 0) {
                     T elem = _queue.front();
                     _queue.pop_front();
