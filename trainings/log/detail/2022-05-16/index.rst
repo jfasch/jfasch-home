@@ -150,6 +150,17 @@ XML/Element Tree
 
 * :doc:`/trainings/material/soup/python/misc/python_5550_xml_etree/topic`
 
+Projektabschlusstag
+-------------------
+
+* `ICS_Demand on Github <https://github.com/jfasch/ICS_Demand>`__
+* `Git Download <https://git-scm.com/downloads>`__
+
+MacOS woes
+
+* Install homebrew: https://brew.sh/
+* https://flaviocopes.com/setup-github-credentials-macos/
+
 Links
 -----
 

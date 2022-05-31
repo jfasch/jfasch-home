@@ -35,11 +35,13 @@ First: Help
 Setup
 -----
 
+Create a virtual environment ``my_venv`` in directory ``/home/jfasch/my_venv``:
+
 .. code-block:: console
 
-   $ python -m venv my_venv
-   $ tree my_venv/
-   my_venv/
+   $ python -m venv /home/jfasch/my_venv
+   $ tree /home/jfasch/my_venv
+   /home/jfasch/my_venv/
    ├── bin
    │   ├── activate
    │   ├── activate.csh
@@ -59,10 +61,10 @@ Setup
 
 .. note::
 
-   What is referred to by ``my_venv`` is a *directory*. You may choose
-   whatever path you want (e.g. ``~/my_venv`` on Unixen, or
-   ``C:\USers\Student\my_venv`` on Dozen).  Take care though that you
-   have write permisssions, or the creation will fail with a
+   What is referred to by ``/home/jfasch/my_venv`` is a
+   *directory*. You may choose whatever path you want
+   (e.g. ``C:\Users\Student\my_venv`` on Windows).  Take care though
+   that you have write permissions, or the creation will fail with a
    descriptive error.
    
 * Hm. Looks like the Python environment has been duplicated.
@@ -72,33 +74,33 @@ Setup
 
 .. note:: Debian is different
 
-   $ python3 -m venv my_venv
+   $ python3 -m venv /home/jfasch/my_venv
    The virtual environment was not created successfully because ensurepip is not
    available.  On Debian/Ubuntu systems, you need to install the python3-venv
    package using the following command.
    
        apt-get install python3-venv
    
-   You may need to use sudo with that command.  After installing the python3-venv
-   package, recreate your virtual environment.
+   You may need to use sudo with that command.  After installing the
+   python3-venv package, recreate your virtual environment.
    
    Failing command: ['/home/jfasch/my_venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']
 
 .. code-block:: console
    :caption: Unixen
 
-   $ . my_venv/bin/activate
+   $ . /home/jfasch/my_venv/bin/activate
    (my_venv) $ 
 
 .. code-block:: console
    :caption: Doze, ``cmd.exe``
 
-   C:\my_venv\Scripts\activate.bat
+   C:\Users\Student\my_venv\Scripts\activate.bat
 
 .. code-block:: console
    :caption: Doze, ``Powershell``
 
-   PS C:\> my_venv\Scripts\Activate.ps1
+   PS C:\> \Users\Student\my_venv\Scripts\Activate.ps1
 
 * A-ha! Prompt.
 * What are the effects?
@@ -107,13 +109,13 @@ Setup
    :caption: Python version sandboxed
 
    (my_venv) $ type python
-   python is /home/jfasch/tmp/my_venv/bin/python
+   python is /home/jfasch/my_venv/bin/python
 
 .. code-block:: console
    :caption: ``$PATH``
 
    (my_venv) $ echo $PATH
-   /home/jfasch/tmp/my_venv/bin:...(original PATH)...
+   /home/jfasch/my_venv/bin:...(original PATH)...
 
 .. code-block:: console
    :caption: *No* ``pip`` installed packages
