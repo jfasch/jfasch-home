@@ -17,6 +17,7 @@ Topics
    introduction-livehack
    uniqueptr
    sharedptr
+   weakptr
    040-closing-words/topic
 
 Dependencies
