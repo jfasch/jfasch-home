@@ -29,6 +29,7 @@ Contents
    example-O_EXCL
    basics-exercise-copy
    basics-exercise-hole
+   exercise-sensor-read
    duplicate
    misc
 

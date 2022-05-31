@@ -136,16 +136,14 @@ Block 2: C on Linux: Local and *Cross* Development
      * 2022-06-02
      * 2022-06-02
      * 3
-     * **Test**
+     * * Go over past homework
 
-       **Unit Testing**. One of ...
+         * :doc:`/trainings/material/soup/linux/toolchain/exercises/raspberry-toolchain` (2P)
+         * :doc:`/trainings/material/soup/linux/toolchain/exercises/native-build` (3P)
+         * :doc:`/trainings/material/soup/linux/toolchain/exercises/cross-build` (5P)
+	 * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
 
-       * `Unity <http://www.throwtheswitch.org/>`__
-       * `googletest <https://github.com/google/googletest/>`__
-       * `Boost.Test
-         <https://www.boost.org/doc/libs/1_78_0/libs/test/doc/html/index.html>`__
-
-
+       * Test
 
 Block 3: C++
 ------------
@@ -164,7 +162,13 @@ Block 3: C++
      * 
      * 
      * 3
-     *
+     * **Unit Testing**. One of ...
+
+       * `Unity <http://www.throwtheswitch.org/>`__
+       * `googletest <https://github.com/google/googletest/>`__
+       * `Boost.Test
+         <https://www.boost.org/doc/libs/1_78_0/libs/test/doc/html/index.html>`__
+
    * * 
      * 
      * 2022-06-03
