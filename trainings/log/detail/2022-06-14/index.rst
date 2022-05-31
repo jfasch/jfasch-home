@@ -14,8 +14,7 @@ C++: A New Language Starting In 2011
 
 Following a list of topics to be covered in our two C++
 trainings. Slide material already exists for most of the topics; links
-to it are given in these cases. Additional topics are given as plain
-text, to be made into slide material.
+to it are given in these cases.
 
 Pythonicity (Thank You: Readablility and Writability)
 -----------------------------------------------------
