@@ -1,0 +1,50 @@
+.. include:: <mmlalias.txt>
+
+.. ot-topic:: cxx11.new_language_features.default
+
+
+``= default``
+=============
+
+.. contents::
+   :local:
+
+Problem: Default Constructor Not Automatically Generated
+--------------------------------------------------------
+
+**Rule**: C++ does not generate a default constructor if a constructor
+has been defined manually
+
+.. literalinclude:: code/c++11-default-missing.cpp
+   :caption: :download:`code/c++11-default-missing.cpp`
+   :language: c++
+
+.. code-block:: console
+
+   code/c++11-default-explicit.cpp:15:31: error: no matching function for call to ‘LackingDefaultConstructor::LackingDefaultConstructor()’
+      15 |     LackingDefaultConstructor ldc;
+         |                               ^~~
+   code/c++11-default-explicit.cpp:7:5: note: candidate: ‘LackingDefaultConstructor::LackingDefaultConstructor(const string&)’
+       7 |     LackingDefaultConstructor(const std::string& s) : _s{s} {}
+         |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+   code/c++11-default-explicit.cpp:7:5: note:   candidate expects 1 argument, 0 provided
+   code/c++11-default-explicit.cpp:4:7: note: candidate: ‘LackingDefaultConstructor::LackingDefaultConstructor(const LackingDefaultConstructor&)’
+       4 | class LackingDefaultConstructor
+         |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+
+C++ < 11 Solution: Write Default Constructor |:angry:| |:thumbsdown:|
+---------------------------------------------------------------------
+
+Well, the default-ctor implementation might be a bit more complicated
+than in this example |:rolling_eyes:|
+
+.. literalinclude:: code/c++11-default-explicit.cpp
+   :caption: :download:`code/c++11-default-explicit.cpp`
+   :language: c++
+
+C++ >= 11 Solution: ``= default``
+---------------------------------
+
+.. literalinclude:: code/c++11-default-default.cpp
+   :caption: :download:`code/c++11-default-default.cpp`
+   :language: c++

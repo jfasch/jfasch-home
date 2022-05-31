@@ -7,6 +7,9 @@
 Brace Initialization
 ====================
 
+.. contents::
+   :local:
+
 Brace Initialization: Motivation (1)
 ------------------------------------
 

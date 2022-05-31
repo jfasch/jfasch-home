@@ -82,9 +82,6 @@ Brace Initialization
 * Material:
   :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
 
-New OO keywords: override, final, default, delete
-.................................................
-
 **TODO**
 
 .. list-table::
@@ -94,8 +91,16 @@ New OO keywords: override, final, default, delete
 
    * * Topic
      * Description
-   * * Slide material
-     * Specification, short examples, and links
+   * * How to initialize container by myself: ``initializer_list``
+     * https://en.cppreference.com/w/cpp/utility/initializer_list
+
+New OO keywords: override, final, default, delete
+.................................................
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
 
 Strongly Typed enum
 ...................
