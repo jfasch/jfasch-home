@@ -12,12 +12,15 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   */topic
+   introduction
+   introduction-livehack
+   uniqueptr
+   sharedptr
+   040-closing-words/topic
 
-Group Description
------------------
+Dependencies
+------------
 	      
 .. ot-graph::
    :entries: cxx11.smart_pointers

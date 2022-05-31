@@ -1,7 +1,8 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: cxx11.new_language_features.move
-   :dependencies: cxx11.new_language_features.delegating_ctor
+   :dependencies: cxx11.new_language_features.delegating_ctor,
+		  cxx11.smart_pointers.unique_ptr
 
 
 Moving, "RValue References"
