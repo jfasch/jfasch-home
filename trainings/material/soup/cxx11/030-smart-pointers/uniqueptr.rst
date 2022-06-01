@@ -114,7 +114,7 @@ Saving Keystrokes: ``std::make_unique<>()``
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/020-auto-type-declaration/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 
 * Too much typing here:
 

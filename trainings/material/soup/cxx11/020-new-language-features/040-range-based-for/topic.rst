@@ -7,6 +7,9 @@
 Range Based ``for`` Loops
 =========================
 
+.. contents::
+   :local:
+
 Range Based ``for`` Loops: Motivation (1)
 -----------------------------------------
 

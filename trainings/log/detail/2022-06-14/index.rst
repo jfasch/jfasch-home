@@ -33,14 +33,13 @@ Range Based for Loops
 
    * * Topic
      * Description
-   * * ``auto`` variants
-     * Discuss relationship with ``auto``; make explicit how important
-       it is to know how to use variants such as ``auto&`` and ``const
-       auto&``
    * * Structured Binding
-     * C++ 17: `"Structured Binding"
-       <https://en.cppreference.com/w/cpp/language/structured_binding>`__
-       (just like Python's *Tuple Unpacking*)
+     * * C++ 17: `"Structured Binding"
+         <https://en.cppreference.com/w/cpp/language/structured_binding>`__
+	 (just like Python's *Tuple Unpacking*)
+       * `std::tuple <https://en.cppreference.com/w/cpp/utility/tuple>`__
+       * `std::tie <https://en.cppreference.com/w/cpp/utility/tuple/tie>`__
+       * `std::ignore <https://en.cppreference.com/w/cpp/utility/tuple/ignore>`__
    * * Live hacking: iteration over ``map<k,v>``
      * 
    * * Range-for temporary
@@ -51,12 +50,16 @@ Range Based for Loops
      * While we are at it: ``if (auto result=foo()) {...}``
        (|longrightarrow| ``std::optional<>``). This does not belong
        here, but it serves a similar purpose.
+   * * See-also links
+     * * auto/decltype
+       * structured binding
+       * tuple, tie, ignore
 
-auto Type Declarations
-......................
+``auto``
+........
 
 * Material:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/020-auto-type-declaration/topic`
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 
 **TODO**
 
@@ -67,6 +70,9 @@ auto Type Declarations
 
    * * Topic
      * Description
+   * * ``auto`` variants
+     * Make explicit how important it is to know how to use variants
+       such as ``auto&`` and ``const auto&``
    * * Discussion: readability, compiler errors
      * Bring live hacking examples accordingly
    * * Function return-type deduction
@@ -118,6 +124,23 @@ Delegating Constructor
 ...........
 
 * Material: :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic`
+
+Miscellaneous
+.............
+
+**TODO**
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Topic
+     * Description
+   * * ``decltype``
+     * https://en.cppreference.com/w/cpp/language/decltype
+   * * ``constexpr``
+     * https://en.cppreference.com/w/cpp/language/constexpr
 
 Smart Pointers
 --------------

@@ -1,3 +1,21 @@
+ADD_EXECUTABLE(
+  c++11-new-language-features-suite
+
+  auto-decltype.cpp
+)
+TARGET_LINK_LIBRARIES(c++11-new-language-features-suite gtest_main)
+
+
+# ----------------------------------------
+# auto, decltype
+# ----------------------------------------
+ADD_EXECUTABLE(c++11-auto-most-basic c++11-auto-most-basic.cpp)
+ADD_EXECUTABLE(c++11-auto-ref-pitfall c++11-auto-ref-pitfall.cpp)
+ADD_EXECUTABLE(c++11-auto-ref c++11-auto-ref.cpp)
+ADD_EXECUTABLE(c++11-auto-const-ref c++11-auto-const-ref.cpp)
+ADD_EXECUTABLE(c++11-auto-pointer c++11-auto-pointer.cpp)
+ADD_EXECUTABLE(c++11-auto-array c++11-auto-array.cpp)
+
 # ----------------------------------------
 # override
 # ----------------------------------------
