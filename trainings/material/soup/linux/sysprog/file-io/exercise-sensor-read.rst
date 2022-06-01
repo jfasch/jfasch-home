@@ -51,8 +51,11 @@ temperature periodically. It takes two arguments,
 CMake Build
 ...........
 
-* Package the program's source code with a ``CMakeLists.txt`` file
-  that builds the program from its source
+* Package the program's source code together with a ``CMakeLists.txt``
+  file that builds the program from its source (see
+  :doc:`/trainings/material/soup/linux/toolchain/cmake/local`; you
+  will want to omit all that library stuff - your program will be
+  built from its main file only)
 * Put both in a directory ``exercise-sensor-read``
 * Pack that directory into a XZ compressed tar archive
   ``exercise-sensor-read.tar.xz``
@@ -62,6 +65,18 @@ CMake Build
      $ tar Jcf exercise-sensor-read.tar.xz exercise-sensor-read
 
 It is that archive that is then uploaded.
+
+.. important::
+
+   You might want to test your program *on the target machine*. For
+   this,
+
+   * write a CMake toolchain file (see
+     :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`)
+   * use :doc:`SSH </trainings/material/soup/linux/ssh/group>` to copy
+     the program over
+   * use :doc:`SSH </trainings/material/soup/linux/ssh/group>` to
+     login on the target and test
 
 Hints, Documentation
 --------------------
@@ -88,3 +103,7 @@ Hints, Documentation
   that the program in this exercise consists of only one source file,
   so you will omit the library stuff referenced there.
 * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
+
+**SSH**
+
+* :doc:`SSH </trainings/material/soup/linux/ssh/group>`
