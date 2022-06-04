@@ -148,6 +148,10 @@ Block 2: C on Linux: Local and *Cross* Development
 Block 3: C++
 ------------
 
+
+
+* `Github repository <https://github.com/jfasch/FH-ECE20>`__
+
 .. list-table::
    :align: left
    :widths: auto
@@ -162,7 +166,22 @@ Block 3: C++
      * 
      * 
      * 3
-     * **Unit Testing**. One of ...
+     * **Memory Errors, And Pointers**
+
+       * Based upon
+         :doc:`/trainings/material/soup/linux/sysprog/process/commandline`,
+         explain
+
+	 * strings
+	 * :doc:`arrays
+           </trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic>`
+
+       * :doc:`/trainings/material/soup/c/090-program-sanity/080-valgrind/topic`
+       * `strace <https://en.wikipedia.org/wiki/Strace>`__
+
+       |longrightarrow| Yay, C++
+
+       **Unit Testing**. One of ...
 
        * `Unity <http://www.throwtheswitch.org/>`__
        * `googletest <https://github.com/google/googletest/>`__

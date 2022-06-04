@@ -15,10 +15,13 @@ Topics
 
    050-delegating-ctor/topic
    060-move/topic
-   040-range-based-for/topic
+   range-based-for
+   range-based-for-map
    070-miscellaneous/topic
    010-strongly-typed-enums/topic
    030-brace-initialization/topic
+   initializer-list
+   structured-binding
    auto
    override
    final

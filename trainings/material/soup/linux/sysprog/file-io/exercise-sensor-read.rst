@@ -13,6 +13,12 @@ Exercise: Read Temperature From Onewire Sensor
 Onewire Basics
 --------------
 
+.. sidebar:: 
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
+
 Have no fear: the setup is done already (see :doc:`here
 </trainings/material/soup/linux/hardware/w1/topic>`). In short,
 Onewire sensor values are read like so,
@@ -50,6 +56,19 @@ temperature periodically. It takes two arguments,
 
 CMake Build
 ...........
+
+.. important::
+
+   Although the project does not use C++, CMake by default checks for
+   a working C++ compiler which leads to a long list of errors.
+
+   To work around this, you instruct CMake to *not* check for the C++
+   compiler, by adding an optional ``LANGUAGES`` parameter to the
+   ``PROJECT()`` macro,
+
+   .. code-block:: console
+
+      PROJECT(MyProjectName LANGUAGES C)
 
 * Package the program's source code together with a ``CMakeLists.txt``
   file that builds the program from its source (see

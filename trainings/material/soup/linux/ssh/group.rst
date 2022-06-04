@@ -14,6 +14,7 @@ Topics
    scp
    portforwarding
    sshfs
+   links
    exercises/group
 
 Dependencies

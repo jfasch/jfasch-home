@@ -1,7 +1,22 @@
 ADD_EXECUTABLE(
   c++11-new-language-features-suite
 
-  auto-decltype.cpp
+  c++11-range-based-for-suite--map-pre-11.cpp
+  c++11-range-based-for-suite--map-basic.cpp
+  c++11-range-based-for-suite--map-basic-const-auto-reference.cpp
+  c++11-range-based-for-suite--map-unpack-copy.cpp
+  c++11-range-based-for-suite--map-unpack-reference.cpp
+  c++11-range-based-for-suite--map-unpack-const-reference.cpp
+
+  c++11-structured_binding_suite--struct_copy.cpp
+  c++11-structured_binding_suite--struct_reference.cpp
+  c++11-structured_binding_suite--struct_const_reference.cpp
+  c++11-structured_binding_suite--tuple_copy.cpp
+  c++11-structured_binding_suite--tuple_reference.cpp
+  c++11-structured_binding_suite--tuple_const_reference.cpp
+  c++11-structured_binding_suite--array_copy.cpp
+  c++11-structured_binding_suite--array_reference.cpp
+  c++11-structured_binding_suite--array_const_reference.cpp
 )
 TARGET_LINK_LIBRARIES(c++11-new-language-features-suite gtest_main)
 

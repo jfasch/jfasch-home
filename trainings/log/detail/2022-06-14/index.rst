@@ -22,7 +22,8 @@ Pythonicity (Thank You: Readablility and Writability)
 Range Based for Loops
 .....................
 
-* Material: :doc:`/trainings/material/soup/cxx11/020-new-language-features/040-range-based-for/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for-map`
 
 **TODO**
 
@@ -33,15 +34,6 @@ Range Based for Loops
 
    * * Topic
      * Description
-   * * Structured Binding
-     * * C++ 17: `"Structured Binding"
-         <https://en.cppreference.com/w/cpp/language/structured_binding>`__
-	 (just like Python's *Tuple Unpacking*)
-       * `std::tuple <https://en.cppreference.com/w/cpp/utility/tuple>`__
-       * `std::tie <https://en.cppreference.com/w/cpp/utility/tuple/tie>`__
-       * `std::ignore <https://en.cppreference.com/w/cpp/utility/tuple/ignore>`__
-   * * Live hacking: iteration over ``map<k,v>``
-     * 
    * * Range-for temporary
      * While we are at it: ``for (T container=foo(); auto elem:
        container) {...}`` (see `here
@@ -50,16 +42,16 @@ Range Based for Loops
      * While we are at it: ``if (auto result=foo()) {...}``
        (|longrightarrow| ``std::optional<>``). This does not belong
        here, but it serves a similar purpose.
-   * * See-also links
-     * * auto/decltype
-       * structured binding
-       * tuple, tie, ignore
 
-``auto``
-........
+Tuple Unpacking (err. Structured Binding)
+.........................................
 
-* Material:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
+
+Duck Typing (err., ``auto``) Without A Duck
+...........................................
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 
 **TODO**
 
@@ -70,11 +62,6 @@ Range Based for Loops
 
    * * Topic
      * Description
-   * * ``auto`` variants
-     * Make explicit how important it is to know how to use variants
-       such as ``auto&`` and ``const auto&``
-   * * Discussion: readability, compiler errors
-     * Bring live hacking examples accordingly
    * * Function return-type deduction
      * While we are at it: `Function return-type deduction
        <https://en.cppreference.com/w/cpp/language/function#Return_type_deduction>`__
@@ -85,8 +72,7 @@ Things That Simply Deserved Fixing Since Ages
 Brace Initialization
 ....................
 
-* Material:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
 
 **TODO**
 
@@ -111,19 +97,17 @@ New OO keywords: override, final, default, delete
 Strongly Typed enum
 ...................
 
-* Material:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic`
 
 Delegating Constructor
 ......................
 
-* Material:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/050-delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/050-delegating-ctor/topic`
 
 ``nullptr``
 ...........
 
-* Material: :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic`
 
 Miscellaneous
 .............
@@ -138,9 +122,12 @@ Miscellaneous
    * * Topic
      * Description
    * * ``decltype``
-     * https://en.cppreference.com/w/cpp/language/decltype
+     * * https://en.cppreference.com/w/cpp/language/decltype
+       * Message: like ``auto``, but exact type
    * * ``constexpr``
-     * https://en.cppreference.com/w/cpp/language/constexpr
+     * * https://en.cppreference.com/w/cpp/language/constexpr
+       * Message: initialization at *compile time*, rather than at
+         runtime
 
 Smart Pointers
 --------------
@@ -169,8 +156,7 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 Moving, “RValue References”
 ---------------------------
 
-* Material:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
 
 **TODO**
 
