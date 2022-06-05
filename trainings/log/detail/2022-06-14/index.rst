@@ -43,13 +43,13 @@ Range Based for Loops
        (|longrightarrow| ``std::optional<>``). This does not belong
        here, but it serves a similar purpose.
 
-Tuple Unpacking (err. Structured Binding)
+Tuple Unpacking (err, Structured Binding)
 .........................................
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
 
-Duck Typing (err., ``auto``) Without A Duck
-...........................................
+Duck Typing (err, ``auto``) Without A Duck
+..........................................
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 
@@ -73,18 +73,7 @@ Brace Initialization
 ....................
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
-
-**TODO**
-
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
-
-   * * Topic
-     * Description
-   * * How to initialize container by myself: ``initializer_list``
-     * https://en.cppreference.com/w/cpp/utility/initializer_list
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/initializer-list`
 
 New OO keywords: override, final, default, delete
 .................................................
@@ -181,7 +170,14 @@ From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
 
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
-* Lambda (tbd)
+
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+
 
 **TODO**
 
@@ -197,20 +193,6 @@ From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
          (single-purpose-but-efficient vs. polymorphic)
        * Show how to use Lambda as ``std::function`` replacement
          (gently introducing lambdas)
-   * * Lambda slide material
-     * Slide material: capture syntax, with examples. Cover extensions
-       >11
-
-       * https://en.wikipedia.org/wiki/C%2B%2B14#Lambda_capture_expressions
-   * * Live hacking: what is lambda?
-     * * Problem: a class with members and a function call operator
-         |longrightarrow| tedious
-       * Solution: Lambda
-   * * Live hacking: capture by reference
-     * * Capture by reference leads to dead references sooner or later
-       * |longrightarrow| show how valgrind can detect such errors
-	 (:doc:`valgrind
-	 </trainings/material/soup/c/090-program-sanity/080-valgrind/topic>`)
 
 Multithreading
 --------------

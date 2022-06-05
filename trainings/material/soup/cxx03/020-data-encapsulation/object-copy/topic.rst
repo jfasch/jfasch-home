@@ -7,6 +7,9 @@
 Object Copy
 ===========
 
+.. contents::
+   :local:
+
 Copy in C
 ---------
 

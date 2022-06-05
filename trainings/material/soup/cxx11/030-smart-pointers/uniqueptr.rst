@@ -131,6 +131,12 @@ Saving Keystrokes: ``std::make_unique<>()``
 Compiler Can Prove: Implicit Ownership Transfer
 -----------------------------------------------
 
+.. sidebar:: 
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+
 * Function returns an object *by copy*
 * |longrightarrow| compiler knows that that object will never be used
   anymore
@@ -156,6 +162,12 @@ ownership transfer.
 
 How To Write Code That Can Take Ownership?
 ------------------------------------------
+
+.. sidebar:: 
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
 
 * Ok, ``unique_ptr`` is programmed to take ownership if possible
 * What if I have code that wants to take ownership of a ``unique_ptr``

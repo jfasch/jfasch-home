@@ -23,6 +23,7 @@ Topics
    initializer-list
    structured-binding
    auto
+   lambda/group
    override
    final
    delete
