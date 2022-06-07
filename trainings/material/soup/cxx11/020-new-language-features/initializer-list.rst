@@ -29,6 +29,8 @@ Basics
 * When the compiler sees elements in braces, it creates a
   ``std::initializer_list<T>`` of those elements (deducing whatever
   types are necessary)
+* Very lightweight |longrightarrow| no copy
+* Shallow wrapper around compiler-specific internals
 
 Direct Usage
 ------------

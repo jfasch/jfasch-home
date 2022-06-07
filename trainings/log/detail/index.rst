@@ -4,6 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2022-XX-XX-sysprog/index
    2022-06-14/index
    2022-05-16/index
    2022-05-02/index

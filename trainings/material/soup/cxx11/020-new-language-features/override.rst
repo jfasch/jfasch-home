@@ -32,7 +32,8 @@ Here is a correct example ...
 
 .. important::
 
-   Both ``Base`` and ``Derived`` methods have exact same signature
+   Both ``Base::method()`` and ``Derived::method()`` have exact same
+   signature
 
 ... Is Very Hard
 ----------------

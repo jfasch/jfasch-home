@@ -10,8 +10,8 @@ Brace Initialization
 .. contents::
    :local:
 
-Brace Initialization: Motivation (1)
-------------------------------------
+Motivation: Inconsistent Initialization Styles
+----------------------------------------------
 
 **Initialization was always inconsistent** |longrightarrow| Extremely
 confusing, especially for newbies!
@@ -22,8 +22,8 @@ confusing, especially for newbies!
 * Container (e.g. ``std::vector``) initialization with contained
   values |longrightarrow| ``push_back()`` orgies
 
-Brace Initialization: Motivation (2)
-------------------------------------
+Motivation: Integral Types Initialization
+-----------------------------------------
 
 .. list-table::
    :align: left
@@ -43,7 +43,7 @@ Brace Initialization: Motivation (2)
           int x = 7; // assignment style
           int y(42); // ctor style
 
-Brace Initialization: Motivation (3)
+Motivation: Aggregate Initialization
 ------------------------------------
 
 .. list-table::
@@ -51,7 +51,7 @@ Brace Initialization: Motivation (3)
 
    * * **Aggregates**
 
-       * Initialization as it used to be in good old C
+       * Initialization goes like it used to go in good old C
        * No constructor style
 
      * **Aggregate Initialization**
@@ -64,8 +64,8 @@ Brace Initialization: Motivation (3)
           s s1 = {1, 2};
           s s2 = {1}; // s2.j==0
 
-Brace Initialization: Motivation (4)
-------------------------------------
+Motivation: Object Initialization/Constructor
+---------------------------------------------
 
 .. list-table:: 
    :align: left
@@ -87,8 +87,8 @@ Brace Initialization: Motivation (4)
           C c1(1,2);
           C c2 = c1;
 
-Brace Initialization: Motivation (5)
-------------------------------------
+Motivation: Container Initialization (Missing Pre C++11)
+--------------------------------------------------------
 
 .. list-table::
    :align: left
@@ -112,8 +112,8 @@ Brace Initialization: Motivation (5)
           s.insert(2);
           vector<int> v(s.cbegin(), s.cend());
 
-Brace Initialization: Motivation (6)
-------------------------------------
+Motivation: Member Array Initialization
+---------------------------------------
 
 .. list-table:: 
    :align: left
@@ -137,8 +137,8 @@ Brace Initialization: Motivation (6)
             const int data_[3];
           };
 
-Brace Initialization: Motivation (7)
-------------------------------------
+Motivation: Heap Array Initialization
+-------------------------------------
 
 .. list-table::
    :align: left
@@ -155,10 +155,10 @@ Brace Initialization: Motivation (7)
        .. code-block:: c++
 
           const int *arr = new int[42];
-          // and now?
+	  // and now?
 
-Brace Initialization: Solution (1)
-----------------------------------
+Solution: Brace Initialization In C++11
+---------------------------------------
 
 **Solution: brace initialization everywhere** |longrightarrow| the
 language becomes ...
@@ -168,34 +168,49 @@ language becomes ...
 * Memorizable (less exceptions)
 * Attractive?
 
-Brace Initialization: Solution (2)
-----------------------------------
+Examples
+--------
 
-.. list-table::
-   :align: left
+* **Integer initialization**
 
-   * * **Braces ...**
+  .. code-block:: c++
 
-       .. code-block:: c++
+     int i{42};
+     int j{};  // initialized with 0
 
-          int i{42};
+* **Array initialization**
+
+  .. code-block:: c++
+
+     int arr[]{1,2,3};
+
+* **Struct initialization**
+
+  .. code-block:: c++
+
+     struct s { int i,j; }
+     s s1{1,2};
+
+* **Container Initialization**
           
-          int arr[]{1,2,3};
-          
-          struct s { int i,j; }
-          s s1{1,2};
-          
-          vector<int> v{1,2,3};
+  .. code-block:: c++
+
+     std::vector<int> v{1,2,3};
+     std::map<int, std::string{ {1, "one"}, {2, "two"}, };
+
+* **Member array initialization**
       
-     * **... many more braces**
+  .. code-block:: c++
 
-       .. code-block:: c++
-
-          class C {
-          public:
-            C() : data_{1,2,3} {}
-          private:
-            const int data_[3];
-          };
+     class C {
+     public:
+       C() : data_{1,2,3} {}
+     private:
+       const int data_[3];
+     };
           
-          const int *arr = new const int[3]{1,2,3};
+* **Heap array initialization**
+
+  .. code-block:: c++
+
+     const int *arr = new const int[3]{1,2,3};

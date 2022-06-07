@@ -14,13 +14,19 @@ Topics
    :maxdepth: 1
 
    050-delegating-ctor/topic
+
    060-move/topic
+   060-move/livehack-smartptr-move
+
    range-based-for
    range-based-for-map
+
    070-miscellaneous/topic
    010-strongly-typed-enums/topic
+
    030-brace-initialization/topic
    initializer-list
+
    structured-binding
    auto
    lambda/group

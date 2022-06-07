@@ -105,6 +105,8 @@ Kursinhalt
     * CAN-Bus. In Linux hat sich eine sehr nette Infrastruktur
       entwickelt, die das Protokoll nahtlos in den Netzwerkstack
       einpasst.
+    * Serielle Schnittstellen
+    * USB Programmierung im Userspace
 
 Empfohlene Vorkenntnisse
 ------------------------

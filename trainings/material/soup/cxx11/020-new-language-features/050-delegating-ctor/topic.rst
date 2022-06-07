@@ -7,6 +7,9 @@
 Delegating Constructor
 ======================
 
+.. contents::
+   :local:
+
 Delegating Constructor: Motivation
 ----------------------------------
   
@@ -18,8 +21,7 @@ Delegating Constructor: Motivation
    {
    public:
      Data(const void *p, size_t s) : data_(p), size_(s) {}
-     Data(const string& s)
-       : data_(s.c_str()), size_(s.size()) {}
+     Data(const string& s) : data_(s.c_str()), size_(s.size()) {}  // <--- DUPLICATION!
    private:
      const void *data_;
      size_t size_;
@@ -36,7 +38,7 @@ Delegating Constructor: Solution
    {
    public:
      Data(const void *p, size_t s) : data_(p), size_(s) {}
-     Data(const string& s) : Data(s.c_str(), s.size()) {}
+     Data(const string& s) : Data(s.c_str(), s.size()) {}   // <--- DELEGATION
    private:
      const void *data_;
      size_t size_;

@@ -8,6 +8,9 @@
 Smart Pointers: Closing Words
 =============================
 
+.. contents::
+   :local:
+
 Shared Pointers: Closing Words
 ------------------------------
 

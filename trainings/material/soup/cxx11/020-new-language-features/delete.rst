@@ -33,6 +33,12 @@ A class that owns memory, for example ...
    :caption: :download:`code/c++11-delete-bogus-copy.cpp`
    :language: c++
 
+.. code-block:: console
+
+   $ ./code/c++11-delete-bogus-copy 
+   free(): double free detected in tcache 2
+   Aborted (core dumped)
+
 C++ < 11 Solution: Make Copy ``private``
 ----------------------------------------
 

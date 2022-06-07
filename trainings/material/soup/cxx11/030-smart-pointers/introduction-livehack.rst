@@ -9,6 +9,39 @@
 .. contents::
    :local:
 
+Overview
+--------
+
+* Step by step build a "managed pointer" class, ``SmartPtr<T>``
+
+  * |longrightarrow| Takes *single* ownership
+
+* Managed objects: sensor of various kinds
+
+**Step 1**
+
+* Take ownership
+* Mimick a pointer (``->``, ``*``)
+
+**Step 2**
+
+* Compiler-generated copy *bad*
+* Crash
+* |longrightarrow| ``std::auto_ptr`` style
+
+  * "steal" from original
+  * *non-const* copy and assignment
+
+Sensors To Manage
+-----------------
+
+This set of hacks builds upon some semi-real-life sensor
+implementations, ``RandomSensor`` and ``ConstantSensor``:
+
+.. literalinclude:: code/sensors.h
+   :caption: :download:`code/sensors.h`
+   :language: c++
+
 Basic Resource Management, Operator Overloading
 -----------------------------------------------
 
@@ -83,10 +116,22 @@ the rescue ...
    :caption: :download:`code/handwritten-smart-ptr-copy-autoptr-style.cpp`
    :language: c++
 
-Shortcomings
-------------
+Explicit ``move()`` Method Maybe?
+---------------------------------
 
 * Still no constructor possible that does that
-* ``static`` method maybe
+* Maybe add a ``move()`` method that is called on the destiation
+  object
+* |longrightarrow| improves readability
+* |longrightarrow| does not help with correctness
+
+.. literalinclude:: code/handwritten-smart-ptr-explicit-move.cpp
+   :caption: :download:`code/handwritten-smart-ptr-explicit-move.cpp`
+   :language: c++
+
+Stop!!!
+-------
+
 * But lets stop here ...
 * ... and see what :doc:`uniqueptr` (and C++11) can do
+

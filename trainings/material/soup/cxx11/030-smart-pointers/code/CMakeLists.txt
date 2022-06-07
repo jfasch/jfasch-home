@@ -1,5 +1,5 @@
 ADD_EXECUTABLE(
-  c++11-smartptr 
+  c++11-smartptr-suite
 
   intro-leak.cpp
 
@@ -8,8 +8,12 @@ ADD_EXECUTABLE(
   handwritten-smart-ptr-copy-autoptr-style.cpp
   handwritten-smart-ptr-explicit-move.cpp
 
-  handwritten-smart-ptr-all.cpp
-
+  # this belongs to ../../060-move
+  
+  # move ctor
+  handwritten-smart-ptr-return-from-function.cpp
+  handwritten-smart-ptr-assignment.cpp
+  
 
   unique-ptr-basic.cpp
   # unique-ptr-ownership-error.cpp
@@ -29,7 +33,7 @@ ADD_EXECUTABLE(
 
   weak-ptr-basic.cpp
 )
-TARGET_LINK_LIBRARIES(c++11-smartptr gtest_main)
+TARGET_LINK_LIBRARIES(c++11-smartptr-suite gtest_main)
 
 ADD_EXECUTABLE(weak-ptr-demo-thread weak-ptr-demo-thread.cpp)
 TARGET_LINK_LIBRARIES(weak-ptr-demo-thread Threads::Threads)

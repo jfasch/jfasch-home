@@ -20,6 +20,8 @@ The Spirit Of ``std::unique_ptr``
 
    * `std::unique_ptr
      <https://en.cppreference.com/w/cpp/memory/unique_ptr>`__
+   * `std::make_unique
+     <https://en.cppreference.com/w/cpp/memory/make_unique>`__
 
    **See also**
 
@@ -34,6 +36,42 @@ The Spirit Of ``std::unique_ptr``
 * ``unique_ptr`` is only one (though important) user of a new language
   feature:
   :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+
+Methods
+-------
+
+Object of type ``std::unique_ptr`` behave like pointers in any respect
+(``->``, ``*``, copy, ...), except that they have methods:
+
+.. sidebar:: 
+
+   **Documentation**
+
+   * `std::unique_ptr
+     <https://en.cppreference.com/w/cpp/memory/unique_ptr>`__
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Method
+     * Description
+   * * ``std::unique_ptr()``
+     * Initializes to ``nullptr``
+   * * ``std::unique_ptr(T* pointer)``
+     * Initializes to ``pointer`` (but see :ref:`std::make_unique
+       <make_unique>` instead)
+   * * ``std::unique_ptr(std::unique_ptr&& from)``
+     * Move constructor; ``from`` is empty afterwards (see
+       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`)
+   * * ``release()``
+     * Returns pointer to managed object, *and releases ownership*
+   * * ``reset(T* pointer)``
+     * Takes ownership of ``pointer`` (can be ``nullptr``), and
+       deletes currently owned pointer (if any)
+   * * ``get()``
+     * Pointer to currently owned object
 
 Basic Usage: Prevent Leaks
 --------------------------
@@ -100,6 +138,8 @@ Explicitly Acknowledging Ownership Transfer: ``std::move()``
 .. literalinclude:: code/unique-ptr-ownership-move.cpp
    :caption: :download:`code/unique-ptr-ownership-move.cpp`
    :language: c++
+
+.. _make_unique:
 
 Saving Keystrokes: ``std::make_unique<>()``
 -------------------------------------------

@@ -12,6 +12,9 @@ Topics
    :glob:
 
    */topic
+   exercise-FH-sensor-oo
+   exercise-FH-sensor-oo-loop-function
+   exercise-FH-sensor-oo-no-polymorphism
 
 Group Description
 -----------------

@@ -11,8 +11,8 @@
 .. contents::
    :local:
 
-``std::shared_ptr``: Not Unique
----------------------------------
+Spirit: Not Unique, But Shared (i.e. *Reference Counted*)
+---------------------------------------------------------
 
 .. sidebar::
 
@@ -20,6 +20,8 @@
 
    * `std::shared_ptr
      <https://en.cppreference.com/w/cpp/memory/shared_ptr>`__
+   * `std::make_shared
+     <https://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared>`__
 
 **Ownership is not always clear ...**
 
@@ -39,6 +41,40 @@
      * 
 
        .. image:: sharedptr.dia
+
+Methods
+-------
+
+Object of type ``std::shared_ptr`` behave like pointers in any respect
+(``->``, ``*``, copy, ...), except that they have methods:
+
+.. sidebar:: 
+
+   **Documentation**
+
+   * `std::shared_ptr
+     <https://en.cppreference.com/w/cpp/memory/shared_ptr>`__
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Method
+     * Description
+   * * ``std::shared_ptr()``
+     * Initializes to ``nullptr``
+   * * ``std::shared_ptr(T* pointer)``
+     * Initializes to ``pointer`` (but see :ref:`std::make_shared
+       <make_shared>` instead); refcount is 1
+   * * ``std::shared_ptr(std::shared_ptr&& from)``
+     * Move constructor; ``from`` is empty afterwards (see
+       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`)
+   * * ``reset(T* pointer)``
+     * Replaces the managed object if any, possibly deleting it if
+       refcount reaches zero. ``pointer`` can be ``nullptr``
+   * * ``get()``
+     * Pointer to currently managed object
 
 ``std::shared_ptr``: Copy
 ---------------------------
@@ -140,6 +176,8 @@ Demo: Basic Usage
 .. literalinclude:: code/shared-ptr-basic.cpp
    :caption: :download:`code/shared-ptr-basic.cpp`
    :language: c++
+
+.. _make_shared:
 
 Demo: ``std::make_shared``
 --------------------------

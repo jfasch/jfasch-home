@@ -1,12 +1,15 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx11.new_language_features.move
    :dependencies: cxx11.new_language_features.delegating_ctor,
 		  cxx11.smart_pointers.unique_ptr
 
+.. include:: <mmlalias.txt>
+
 
 Moving, "RValue References"
 ===========================
+
+.. contents::
+   :local:
 
 "Return Object" Problem: Lifetime (1)
 -------------------------------------
@@ -113,38 +116,22 @@ Moving, "RValue References"
 Move Semantics: Wish List
 -------------------------
 
-**Wish list:**
+* Recall ``class SmartPtr`` from
+  :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
+* |longrightarrow| Ownership transfer, just a bit rude (done
+  implicitly at copy)
 
-* Copy/assignment as before
-* Special constructor for *moving*
-* Can that be implemented in C++03?
+**What if the compiler could help out?**
 
-  * Idea: non-const reference
+* Determine automatically that an object *cannot be used anymore*
+* **If so**, call a special kind of constructor (*move constructor*) that
+  takes ownership
+* **Otherwise**, insert copy constructor as usual
 
-**Exercise**
+Sideway: Continue With ``SmartPtr`` |longrightarrow| Move Semantics
+-------------------------------------------------------------------
 
-* Write a ``class X`` that carries an array of ``int`` and implements
-  the usual copy semantics and a proper destructor.
-* Additionally, for performance, the class provides a constructor that
-  *transfers ownership* of the owned buffer.
-* Try out the scenarios above, and see what's to be done in order for
-  the *move constructor* to (not) be called.
-
-Move Semantics, in C++03
-------------------------
-
-**Clumsy**, isn't it?
-
-* Constructor with non-const reference preferred over const
-* |longrightarrow| Have to be explicit when moving is not wanted -
-  *which is the regular case!*
-
-.. literalinclude:: moving-in-c++03.cc
-   :caption: :download:`moving-in-c++03.cc`
-
-* In none of these use cases (except for function return) I want moving!
-* Function return is optimized away |longrightarrow| *Return Value
-  Optimization (RVO)*
+See how that is done programmatically: :doc:`livehack-smartptr-move`
 
 Lvalues and Rvalues (1)
 -----------------------

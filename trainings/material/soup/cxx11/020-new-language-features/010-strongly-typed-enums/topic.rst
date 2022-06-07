@@ -8,6 +8,9 @@
 Strongly Typed ``enum``
 =======================
 
+.. contents::
+   :local:
+
 C++03 ``enum`` Types: Motivation
 --------------------------------
 
