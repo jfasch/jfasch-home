@@ -53,19 +53,6 @@ Duck Typing (err, ``auto``) Without A Duck
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 
-**TODO**
-
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
-
-   * * Topic
-     * Description
-   * * Function return-type deduction
-     * While we are at it: `Function return-type deduction
-       <https://en.cppreference.com/w/cpp/language/function#Return_type_deduction>`__
-
 Things That Simply Deserved Fixing Since Ages
 ---------------------------------------------
 
@@ -130,22 +117,6 @@ From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
-
-
-**TODO**
-
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
-
-   * * Topic
-     * Description
-   * * Live Hacking: ``bind<>`` and ``function<>``
-     * * Highlight difference between bind and function
-         (single-purpose-but-efficient vs. polymorphic)
-       * Show how to use Lambda as ``std::function`` replacement
-         (gently introducing lambdas)
 
 Multithreading
 --------------
