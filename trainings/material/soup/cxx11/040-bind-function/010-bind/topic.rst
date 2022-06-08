@@ -16,8 +16,8 @@
 
    * `std::bind <https://en.cppreference.com/w/cpp/utility/functional/bind>`__
 
-``std::bind``: Why? What's The Problem?
----------------------------------------
+Why? What's The Problem?
+------------------------
 
 Clumsy code like below ...
 
@@ -26,6 +26,9 @@ Clumsy code like below ...
   ``double distance(Point p, Point q)``)
 * Function definition in places which are far off their call sites
   |longrightarrow| *readability suffers!*
+
+Sample Program: All Done Manually
+---------------------------------
 
 .. literalinclude:: code/c++11-bind-distances-origin-manual.cpp
    :caption: :download:`code/c++11-bind-distances-origin-manual.cpp`
@@ -54,7 +57,11 @@ Sideway: ``std::transform``
   * Predicates: ``std::find_if``, ``std::equal``, ...
   * Arbitrary adaptations where helper functions are needed
 
-Here's a version of the above program that uses ``std::transform`` ...
+Sample Program: Using ``std::transform``
+----------------------------------------
+
+Still using the one-time function ``double distance_origin(Point p)``
+though ...
 
 .. literalinclude:: code/c++11-bind-distances-origin-transform.cpp
    :caption: :download:`code/c++11-bind-distances-origin-transform.cpp`
@@ -96,94 +103,51 @@ Here's a version of the above program that uses ``std::transform`` ...
    :caption: :download:`code/c++11-bind-minus-hardcode-first.cpp`
    :language: c++
 
+``std::bind``: Functor (Is-A Callable)
+--------------------------------------
 
+.. literalinclude:: code/c++11-bind-functor.cpp
+   :caption: :download:`code/c++11-bind-functor.cpp`
+   :language: c++
 
+``std::bind``: Lambda (Is-A Callable)
+-------------------------------------
 
+.. literalinclude:: code/c++11-bind-lambda.cpp
+   :caption: :download:`code/c++11-bind-lambda.cpp`
+   :language: c++
 
+Sample Program: Using ``std::transform`` With ``std::bind``
+-----------------------------------------------------------
 
+See how we can eliminate the one-time function ``double
+distance_origin(Point p)`` ...
 
+.. literalinclude:: code/c++11-bind-distances-origin-transform-bind.cpp
+   :caption: :download:`code/c++11-bind-distances-origin-transform-bind.cpp`
+   :language: c++
 
-
-
-
-
-
-
-Applying ``std::bind`` (1)
---------------------------
-
-**So how does this apply to our ``std::transform`` problem?**
-
-* Readability: we want to eliminate those annoying extra helper functions
-* Want to wrap existing ``double distance(Point, Point)`` which is
-  similar in purpose but does not fit exactly
-
-**What we have ...**
-
-.. code-block:: c++
-
-   struct Point {...};
-   double distance(Point, Point);
-
-**What we want ...**
-
-.. code-block:: c++
-
-   std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
-                  distances_point, 
-                  SOMETHING WHICH TAKES ONE POINT);
-
-Applying ``std::bind`` (2)
---------------------------
-
-.. code-block:: c++
-   :caption: Distances from origin
-
-   std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
-                  distances_origin, 
-                  std::bind(distance, Point{0,0}, std::placeholders::_1));
-
-.. code-block:: c++
-   :caption: Distances from any point
-
-   // this is exactly the same as above
-
-**Summary**
+Summary
+-------
 
 * Readability: what remains unreadable is only the language itself
 * Have to get used to ``std::bind``
 
-``std::bind`` vs. Lambda
-------------------------
+**What about types?**
 
 .. sidebar::
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
-
-**Lambdas are usually a better alternative** ...
-
-.. code-block:: c++
-
-   std::transform(swarm, swarm+sizeof(swarm)/sizeof(Point), 
-                  distances_origin, 
-                  [](Point p) { return distance({0,0}, p); });
-
-.. admonition:: A more advanced exercise
-
-   Use ``std::sort`` to sort an array of points by their distance to a
-   given point.
-
-A Bigger Picture: Types
------------------------
-
-**What about types?**
+   * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
 * Goal is to have *no runtime overhead*
 * |longrightarrow| *Late binding (polymorphism)* ruled out
 * |longrightarrow| No common base class
 * Only the call signatures (parameter and return types) are the same
+* If you want to define interfaces (i.e. share a type), use
+  :doc:`std::function
+  </trainings/material/soup/cxx11/040-bind-function/020-function/topic>`
 
 **What does this mean?**
 
@@ -191,3 +155,15 @@ A Bigger Picture: Types
 * Have to be careful when code size is important
 * Client code has to be instantiated with the type
 * **Tradeoff**: speed, code size, elegance, design, taste ...
+
+**And Lambdas?**
+
+.. sidebar:: 
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+
+* Lambdas are usually a better alternative
+* |longrightarrow| more readable (?)
+
