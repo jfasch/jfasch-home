@@ -74,11 +74,15 @@ involved. Each directory that participates in the build contains a
 Dependencies/Usage Relationships
 ................................
 
+* Executables: ``ADD_EXECUTABLE()``
+* Libraries: ``ADD_LIBRARY()``
+* Dependency relationship: ``TARGET_LINK_LIBRARIES()``
+
 .. graphviz::
 
    digraph foo {
-       "onewire-temperature" -> "w1-sensor";
-       "w1-sensor-suite" -> "w1-sensor";
+       "onewire-temperature" -> "sensors";
+       "run-tests" -> "sensors";
    }
 
 Onewire Sensor Usage: Example/Unit-Test
@@ -89,7 +93,7 @@ From `w1-sensor-suite.cpp
 
 .. code-block:: c++
 
-   #include <w1-sensor.h>\
+   #include <w1-sensor.h>
 
    ...
 

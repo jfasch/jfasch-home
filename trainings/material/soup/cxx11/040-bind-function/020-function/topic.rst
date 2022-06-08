@@ -7,6 +7,9 @@
 ``std::function``
 =================
 
+.. contents::
+   :local:
+
 Classic Polymorphism
 --------------------
 
