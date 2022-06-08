@@ -81,14 +81,14 @@ Lifetime Of Temporary, Made Explicit |longrightarrow| |:ambulance:|
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy/topic`
+   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
 * Modify custom ``String``
 
   * Allocate and deallocate memory to hold string
   * Talk about :doc:`resource management, object copy, and self
     assignment
-    </trainings/material/soup/cxx03/020-data-encapsulation/object-copy/topic>`
+    </trainings/material/soup/cxx03/020-data-encapsulation/object-copy>`
     (gosh!)
 
 .. literalinclude:: ../code/c++11-lambda-capture-handwritten-reference-gosh-boom.cpp

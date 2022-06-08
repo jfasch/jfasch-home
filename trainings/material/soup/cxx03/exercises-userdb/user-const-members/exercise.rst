@@ -28,7 +28,7 @@ overwrite any of the members.
   it tries to say is that you have to *initialize* the members, rather
   than *assign* to them.
 * |longrightarrow| use an *initializer list* (see
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor/topic`)
+  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`)
 
 Dependencies
 ------------

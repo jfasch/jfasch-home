@@ -281,8 +281,8 @@ C++ and OO (Classes)
 ....................
 
 * :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/encapsulation-intro/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-basics/topic`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/encapsulation-intro`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-basics`
 
   * :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-to-cxx-ctor/exercise`
 
@@ -314,8 +314,8 @@ Modularization: Repeating Important Topics (Quickly)
 Classes (continued)
 ...................
 
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy/topic`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
   * Livehacking: `Writing a string class by hand: resource management
     and copy
@@ -344,7 +344,7 @@ Classes (continued)
   :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-access-methods/exercise`
 
   (See
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/encapsulation-intro/topic`
+  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/encapsulation-intro`
   for ``private`` and *access methods*)
 
   Solution see `here

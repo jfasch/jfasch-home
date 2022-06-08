@@ -96,8 +96,8 @@ Jump into C++
 .............
 
 * :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/encapsulation-intro/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor/topic`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/encapsulation-intro`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 
 Exercise
 ........
@@ -136,12 +136,12 @@ Regular Topics
 
 * Constructor, Destructor, Copy
 
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor/topic`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
   
     The rest of it. Yesterday we only got to the plain ``point`` stuff
     where no resource management is necessary.
   
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy/topic`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
 * Functions and Methods
     

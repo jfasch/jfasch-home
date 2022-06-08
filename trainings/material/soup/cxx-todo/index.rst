@@ -170,11 +170,11 @@ Miscellaneous
 .............
 
 * Split
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor/topic`
+  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
   in two.
 
   * Plain ctor, initializer list.
   * Exercise ``circle``, ``sphere``, ``rect`` in the middle.
   * Resource management separated, as a preparation to what follows:
-    :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy/topic`
+    :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 

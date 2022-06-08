@@ -9,12 +9,21 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   */topic
-   exercise-FH-sensor-oo
-   exercise-FH-sensor-oo-loop-function
-   exercise-FH-sensor-oo-no-polymorphism
+   introduction
+   ctor-basics
+   ctor-dtor
+   object-copy
+
+Exercises
+---------
+
+.. toctree::
+   :maxdepth: 1
+
+   exercises-fh/exercise-FH-sensor-oo
+   exercises-fh/exercise-FH-sensor-oo-loop-function
+   exercises-fh/exercise-FH-sensor-oo-no-polymorphism
 
 Group Description
 -----------------
