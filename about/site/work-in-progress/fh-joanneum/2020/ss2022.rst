@@ -148,9 +148,9 @@ Block 2: C on Linux: Local and *Cross* Development
 Block 3: C++
 ------------
 
+.. sidebar::
 
-
-* `Github repository <https://github.com/jfasch/FH-ECE20>`__
+   * `Github repository <https://github.com/jfasch/FH-ECE20>`__
 
 .. list-table::
    :align: left
@@ -196,20 +196,16 @@ Block 3: C++
      * 
      * 
      * 3
-     * **More about C++**
+     * **More about C++: Classes and Objects**
 
        * :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
-
-          * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-basics`
-	  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
-	  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
 
    * * 
      * 2022-06-09
      * 2022-06-10
      * 3
-     *
+     * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/exercises-fh/exercise-FH-sensor-oo-random-sensor`
    * * 2022-06-21
      * 
      * 

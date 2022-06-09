@@ -4,8 +4,8 @@
 class point
 {
 public:
-    point() : _x(0), _y(0) {}
-    point(int x, int y) : _x(x), _y(y) {}
+    point() : _x{0}, _y{0} {}
+    point(int x, int y) : _x{x}, _y{y} {}
 
     int x() const { return _x; }
     int y() const { return _y; }
@@ -19,7 +19,7 @@ public:
 
     point operator+(const point& rhs) const
     {
-        return point(_x+rhs._x, _y+rhs._y);
+        return point{_x+rhs._x, _y+rhs._y};
     }
 
     double distance_from_origin() const

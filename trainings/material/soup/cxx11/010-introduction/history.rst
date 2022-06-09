@@ -1,11 +1,11 @@
-.. include:: <mmlalias.txt>
-
-.. ot-topic:: cxx11.introduction.introduction
+.. ot-topic:: cxx11.introduction.history
    :dependencies: c.introduction.installation
 
+.. include:: <mmlalias.txt>
 
-Introduction
-============
+
+History, Background
+===================
 
 Make C++ Great Again
 --------------------
@@ -22,8 +22,8 @@ Make C++ Great Again
 * No useful standard library
 * Every new revision brings new features to solve old problems
 
-C++11: The "New" C++
---------------------
+The "New" C++
+-------------
 
 * Several years of development (since C++03)
 * To be followed by C++14

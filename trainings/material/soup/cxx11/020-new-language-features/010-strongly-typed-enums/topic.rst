@@ -1,8 +1,8 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx11.new_language_features.strongly_typed_enums
-   :dependencies: cxx11.introduction.introduction,
+   :dependencies: cxx11.introduction.history,
 		  c.program_sanity.discrete_values
+
+.. include:: <mmlalias.txt>
 
 
 Strongly Typed ``enum``

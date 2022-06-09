@@ -16,6 +16,11 @@ Following a list of topics to be covered in our two C++
 trainings. Slide material already exists for most of the topics; links
 to it are given in these cases.
 
+Introduction
+------------
+
+* :doc:`/trainings/material/soup/cxx11/010-introduction/history`
+
 Pythonicity (Thank You: Readablility and Writability)
 -----------------------------------------------------
 

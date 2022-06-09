@@ -103,8 +103,8 @@ Access Specifiers: ``public`` And ``private``
    class point
    {
    public:
-       point() : _x(0), _y(0) {}   // default constructor
-       point(int x, int y) : _x(x), _y(y) {}
+       point() : _x{0}, _y{0} {}   // default constructor
+       point(int x, int y) : _x{x}, _y{y} {}
    
        // ...
    };
@@ -125,7 +125,7 @@ Access Specifiers: ``public`` And ``private``
    class point
    {
    public:
-       point(int x, int y) : _x(x), _y(y) {}
+       point(int x, int y) : _x{x}, _y{y} {}
    };
 
 * Members ``_x`` and ``_y`` initialized with respective parameters
@@ -259,7 +259,7 @@ Operator Overloading
               // ...
               point operator+(const point& rhs) const
               {
-                  return point(_x+rhs._x, _y+rhs._y);
+                  return point{_x+rhs._x, _y+rhs._y};
               }
           };
 

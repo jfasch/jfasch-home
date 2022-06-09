@@ -24,6 +24,7 @@ Exercises
    exercises-fh/exercise-FH-sensor-oo
    exercises-fh/exercise-FH-sensor-oo-loop-function
    exercises-fh/exercise-FH-sensor-oo-no-polymorphism
+   exercises-fh/exercise-FH-sensor-oo-random-sensor
 
 Group Description
 -----------------

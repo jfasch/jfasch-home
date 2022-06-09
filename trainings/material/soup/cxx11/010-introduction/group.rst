@@ -9,9 +9,9 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   */topic
+   history
+   overview-livehacking
 
 Group Description
 -----------------

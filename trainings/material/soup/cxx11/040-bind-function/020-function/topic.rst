@@ -1,7 +1,7 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx11.functions_functions.function
    :dependencies: cxx11.functions_functions.bind
+
+.. include:: <mmlalias.txt>
 
 
 ``std::function``

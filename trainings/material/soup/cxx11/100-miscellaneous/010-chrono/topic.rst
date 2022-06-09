@@ -75,3 +75,8 @@ Measuring Time (2)
 
    Use ``steady_clock`` time points to compute intervals - other
    clocks are not immune against time modifications
+
+Sleeping, and Literals
+----------------------
+
+using namespace std::chrono_literals;
