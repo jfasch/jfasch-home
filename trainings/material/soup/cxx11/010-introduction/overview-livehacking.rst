@@ -215,7 +215,18 @@ Inevitable: Threads
 Unions? ``std::variant``!
 -------------------------
 
+.. sidebar::
 
+   * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
+
+* Why use ``std::pair<std::function<void()>,
+  std::shared_ptr<std::thread>>`` when only either function or thread
+  is active?
+* |longrightarrow| ``std::variant``
+
+.. literalinclude:: code/c++-intro-120-variant.cpp
+   :caption: :download:`code/c++-intro-120-variant.cpp`
+   :language: c++
 
 jjjjjj
 ------

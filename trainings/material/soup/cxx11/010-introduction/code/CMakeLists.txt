@@ -35,4 +35,9 @@ TARGET_LINK_LIBRARIES(c++-intro-100-lambda Threads::Threads)
 ADD_EXECUTABLE(c++-intro-110-threads c++-intro-110-threads.cpp)
 TARGET_LINK_LIBRARIES(c++-intro-110-threads Threads::Threads)
 
+ADD_EXECUTABLE(c++-intro-120-variant c++-intro-120-variant.cpp)
+TARGET_LINK_LIBRARIES(c++-intro-120-variant Threads::Threads)
+
+
+
 

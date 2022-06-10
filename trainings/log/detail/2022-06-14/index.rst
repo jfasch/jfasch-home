@@ -20,6 +20,7 @@ Introduction
 ------------
 
 * :doc:`/trainings/material/soup/cxx11/010-introduction/history`
+* :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
 
 Pythonicity (Thank You: Readablility and Writability)
 -----------------------------------------------------
@@ -29,24 +30,6 @@ Range Based for Loops
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for-map`
-
-**TODO**
-
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
-
-   * * Topic
-     * Description
-   * * Range-for temporary
-     * While we are at it: ``for (T container=foo(); auto elem:
-       container) {...}`` (see `here
-       <https://en.cppreference.com/w/cpp/language/range-for>`__)
-   * * ``if`` temporary variable
-     * While we are at it: ``if (auto result=foo()) {...}``
-       (|longrightarrow| ``std::optional<>``). This does not belong
-       here, but it serves a similar purpose.
 
 Tuple Unpacking (err, Structured Binding)
 .........................................

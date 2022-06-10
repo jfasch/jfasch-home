@@ -12,6 +12,7 @@ Topics
    :glob:
 
    */topic
+   any-variant-optional/variant
 
 Group Description
 -----------------
