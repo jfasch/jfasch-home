@@ -210,6 +210,8 @@ Block 3: C++
      * 3
      * **More C++**
 
+       * Namespaces
+       * ``this``
        * References and pointers
        * Overloading
        * Operator overloading
