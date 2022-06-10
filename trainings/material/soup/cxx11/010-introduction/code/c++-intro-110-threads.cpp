@@ -4,12 +4,11 @@
 #include <chrono>
 #include <thread>
 #include <functional>
-#include <variant>
 #include <memory>
 
 using namespace std::chrono_literals;
 
-int main(int argc, char** argv)
+int main()
 {
     using todo_item = std::pair<std::function<void()>, std::shared_ptr<std::thread>>;
     using todo_list = std::map<std::string, todo_item>;
@@ -24,7 +23,7 @@ int main(int argc, char** argv)
                   }
               },
               nullptr
-          }
+          },
         },
         { "down 1000 to 980",
           {
@@ -35,31 +34,17 @@ int main(int argc, char** argv)
                   }
               },
               nullptr
-          }          
+          },
         },
     };
 
-    if (argc == 2) {
-        // add countdown
-        tdl["COUNTDOWN"] = std::make_pair(
-            [start=std::stoi(argv[1])](){
-                int i = start;
-                while (i) {
-                    std::cout << "COUNTDOWN: " << i-- << std::endl;
-                    std::this_thread::sleep_for(2s);
-                }
-            },
-            nullptr
-        );
+    for (auto& [name, item]: tdl) {
+        std::cout << "---------------- Starting NAME: " << name << std::endl;
+        item.second = std::make_shared<std::thread>(item.first);
     }
 
     for (auto& [name, item]: tdl) {
-        std::cout << "---------------- Running NAME: " << name << std::endl;
-        item.second = std::make_shared<std::thread>(std::get<0>(item));
-    }
-
-    for (auto& [name, item]: tdl) {
-        std::cout << "---------------- Running NAME: " << name << std::endl;
+        std::cout << "---------------- Starting NAME: " << name << std::endl;
         item.second->join();
     }
 

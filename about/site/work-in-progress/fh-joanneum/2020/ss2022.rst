@@ -148,9 +148,7 @@ Block 2: C on Linux: Local and *Cross* Development
 Block 3: C++
 ------------
 
-.. sidebar::
-
-   * `Github repository <https://github.com/jfasch/FH-ECE20>`__
+* `Github repository <https://github.com/jfasch/FH-ECE20>`__
 
 .. list-table::
    :align: left
@@ -210,7 +208,12 @@ Block 3: C++
      * 
      * 
      * 3
-     *
+     * **More C++**
+
+       * References and pointers
+       * Overloading
+       * Operator overloading
+
    * * 
      * 2022-06-27
      * 2022-06-27

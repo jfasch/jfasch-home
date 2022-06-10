@@ -12,7 +12,7 @@ int main(int argc, char** argv)
     double high = std::stod(argv[2]);
 
     std::uniform_real_distribution<double> distribution(low, high);  // <--- HERE
-    std::default_random_engine engine;                               // <--- HERE
+    std::default_random_engine engine{std::random_device{}()};       // <--- HERE
 
     while (true) {
         double number = distribution(engine);                        // <--- HERE

@@ -131,33 +131,96 @@ Still Too Old-School: Want Python's *Tuple Unpacking*
 What If To-Do List Items Can Really Do Something? |longrightarrow| Functions
 ----------------------------------------------------------------------------
 
+.. sidebar:: 
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
+
 * Strings "Up, 1 .. 10", and "Down, 1000 .. 980" are not really
   unambiguous
-* Lets write functions, and run them
+* Lets write unambiguous functions (``void(*)()``), and run them
+* New thing: ``<chrono>``, and its *literals*
+
+  .. code-block:: 
+
+     #include <chrono>
+
+     using namespace std::chrono_literals;
+     std::this_thread::sleep_for(1s);
+
+.. literalinclude:: code/c++-intro-080-real-functions.cpp
+   :caption: :download:`code/c++-intro-080-real-functions.cpp`
+   :language: c++
+
+Function Pointers Are Old-School |longrightarrow| ``std::function``
+-------------------------------------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
+   * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+
+* Replace ``void(*)()`` with ``std::function`` (``<functional>``)
+* |longrightarrow| can take *any* callable
+
+.. literalinclude:: code/c++-intro-090-std-function.cpp
+   :caption: :download:`code/c++-intro-090-std-function.cpp`
+   :language: c++
+
+Definitely *Not* Old-School: *Lambda*
+-------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+
+* ``up_1_to_10()`` and ``down_1000_to_980()`` are *one-shot functions*
+* Make only sense at one point: part of a todo list
+* Want to define them *where I use them*
+* |longrightarrow| :doc:`Lambda
+  </trainings/material/soup/cxx11/020-new-language-features/lambda/group>`
+
+.. note::
+
+   See how ``std::function<void()>`` can take a lambda, as long as the
+   signature fits!
+
+.. literalinclude:: code/c++-intro-100-lambda.cpp
+   :caption: :download:`code/c++-intro-100-lambda.cpp`
+   :language: c++
+
+Inevitable: Threads
+-------------------
+
+.. sidebar::
+
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+
+* Threads are not a toy
+* Far too easy in C++ since 2011
+* Morph todo-item into
+  ``std::pair<std::function<void()>, std::shared_ptr<std::thread>>``
+* Start in a loop
+* Join in another loop
+
+.. literalinclude:: code/c++-intro-110-threads.cpp
+   :caption: :download:`code/c++-intro-110-threads.cpp`
+   :language: c++
+
+Unions? ``std::variant``!
+-------------------------
+
 
 
 jjjjjj
 ------
 
-* write functions instead, to call later
-
-  * void up_0_to_99()
-  * void down_1000_to_900()
-
-  using namespace std::chrono_literals;
-  std::this_thread::sleep_for(1s);
-
-  map<string, void(*)()>
-
-  * second loop, executing the functions
-  * replace void(*)() with std::function<void()>
-  * with this, introduce lambda -> write the functions as we need them
-
-* threads
-
-  using todo_list_item = std::pair<std::function<void()>, std::shared_ptr<std::thread>>;
-  using todo_list = std::map<std::string /*name*/, todo_list_item>;
-
+* std::variant
 * too much inline coding -> encapsulate
 
   * final
