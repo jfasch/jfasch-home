@@ -254,8 +254,25 @@ Wrapping All That Into A Class
    :caption: :download:`code/c++-intro-130-class-nocopy.cpp`
    :language: c++
 
+Architectural Considerations: No Implementation Inheritance Wanted
+------------------------------------------------------------------
 
-* too much inline coding -> encapsulate
+* Clean architecture does not do too much implementation inheritance
+  (at least, OO evangelists say so)
+* Let inhibit that |longrightarrow| make the class ``final``
 
-  * copy op/ctor = delete
-  * final
+.. literalinclude:: code/c++-intro-140-final.cpp
+   :caption: :download:`code/c++-intro-140-final.cpp`
+   :language: c++
+
+Wrapping Up: Initializer
+------------------------
+
+* Lost the ability to *initialize* a ``TodoList`` object
+  (|longrightarrow| ``add_item()``)
+* Add that
+* Done!
+
+.. literalinclude:: code/c++-intro-150-initializer-list.cpp
+   :caption: :download:`code/c++-intro-150-initializer-list.cpp`
+   :language: c++

@@ -41,6 +41,12 @@ TARGET_LINK_LIBRARIES(c++-intro-120-variant Threads::Threads)
 ADD_EXECUTABLE(c++-intro-130-class-nocopy c++-intro-130-class-nocopy.cpp)
 TARGET_LINK_LIBRARIES(c++-intro-130-class-nocopy Threads::Threads)
 
+ADD_EXECUTABLE(c++-intro-140-final c++-intro-140-final.cpp)
+TARGET_LINK_LIBRARIES(c++-intro-140-final Threads::Threads)
+
+ADD_EXECUTABLE(c++-intro-150-initializer-list c++-intro-150-initializer-list.cpp)
+TARGET_LINK_LIBRARIES(c++-intro-150-initializer-list Threads::Threads)
+
 
 
 
