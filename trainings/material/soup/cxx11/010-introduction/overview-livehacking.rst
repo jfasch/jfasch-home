@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-Overview (Live Hacking)
-=======================
+A Live-Hacked Tour Around The New C++
+=====================================
 
 A sketch of something purely nonsense, only there to walk through *The
 New C++*
@@ -70,6 +70,12 @@ Long ``iterator`` Type Names |longrightarrow| ``auto``
 More ``auto``: Unpacking ``std::pair``
 --------------------------------------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
+
 * More explicit type names
 * ``std::pair`` 's ``first``, ``second``
 
@@ -79,6 +85,12 @@ More ``auto``: Unpacking ``std::pair``
 
 Pitfall: Plain ``auto`` Creates Copy |longrightarrow| ``const auto&``
 ---------------------------------------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 
 * ``auto`` is only the base type
 * Here: deducing the type of ``std::pair`` members
@@ -228,11 +240,22 @@ Unions? ``std::variant``!
    :caption: :download:`code/c++-intro-120-variant.cpp`
    :language: c++
 
-jjjjjj
-------
+Wrapping All That Into A Class
+------------------------------
 
-* std::variant
+* This is getting too big |longrightarrow| encapsulate into ``class
+  TodoList``
+* Copying an object that maintains threads shouldn't be possible.
+* Copy is possible though: for technical reasons we had to use
+  ``std::shared_ptr<std::thread>``
+* `` = delete``
+
+.. literalinclude:: code/c++-intro-130-class-nocopy.cpp
+   :caption: :download:`code/c++-intro-130-class-nocopy.cpp`
+   :language: c++
+
+
 * too much inline coding -> encapsulate
 
+  * copy op/ctor = delete
   * final
-  * variant as map's value type
