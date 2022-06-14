@@ -7,7 +7,7 @@ int main()
     int& iref = i;
     auto& j = iref;
 
-    j = 666;  // does *not* assign through to i
+    j = 666;  // *does* assign through to i
 
     cout << "i: " << i << ", &i: " << &i << endl;
     cout << "iref: " << iref << ", &iref: " << &iref << endl;

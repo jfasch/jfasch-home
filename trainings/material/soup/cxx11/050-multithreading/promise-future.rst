@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-``std::promise`` and ``std::future`` (And Some ``std::chrono``)
-===============================================================
+``std::promise`` and ``std::future`` (And Some ``std::chrono``) (Some Live Hacking)
+===================================================================================
 
 .. contents::
    :local:

@@ -13,11 +13,8 @@ class TodoList final
 {
 public:
     TodoList() = default;
-    TodoList(std::initializer_list<std::pair<std::string, std::function<void()>>> l)
-    {
-        for (const auto& [name, func]: l)
-            _list[name] = func;
-    }
+    TodoList(std::initializer_list<std::pair<const std::string, std::function<void()>>> l)
+    : _tdl(l) {}
     TodoList(const TodoList&) = delete;
     TodoList& operator=(const TodoList&) = delete;
 

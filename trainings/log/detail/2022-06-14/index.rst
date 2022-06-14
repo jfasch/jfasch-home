@@ -12,9 +12,13 @@ C++: A New Language Starting In 2011
 .. contents::
    :local:
 
-Following a list of topics to be covered in our two C++
-trainings. Slide material already exists for most of the topics; links
-to it are given in these cases.
+Metadata
+--------
+
+* Live-Hacking, and exercise material on Github: `2022-06-14
+  <https://github.com/jfasch/2022-06-14>`__
+* Also on Github: `entire homepage
+  <https://github.com/jfasch/jfasch-home>`__
 
 Introduction
 ------------
@@ -40,6 +44,11 @@ Duck Typing (err, ``auto``) Without A Duck
 ..........................................
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
+
+Exercise
+........
+
+* :doc:`/trainings/material/soup/cxx11/exercises/bag-copy`
 
 Things That Simply Deserved Fixing Since Ages
 ---------------------------------------------
@@ -84,6 +93,12 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+
+Exercise
+........
+
+* :doc:`/trainings/material/soup/cxx11/exercises/bag-unique`
+* :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
 
 Moving, “RValue References”
 ---------------------------
@@ -152,28 +167,6 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 	 :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
        * Add "see-also"
 	 :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
-
-Exercise
---------
-
-**TODO**
-
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
-
-   * * Topic
-     * Description
-   * * Larger exercise
-     * Ideally split across topics covered so far
-
-       * Multithreading
-       * A ``std::map<>`` |longrightarrow| *range based for* with
-	 *structured binding*, and much *auto*
-       * Lambdas. distill something out of a larger set of measurement
-         data, for example
-       * ``promise<>/future<>`` to wait for the computation result
 
 Miscellaneous
 -------------

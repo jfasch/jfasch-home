@@ -243,6 +243,13 @@ Unions? ``std::variant``!
 Wrapping All That Into A Class
 ------------------------------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
+
 * This is getting too big |longrightarrow| encapsulate into ``class
   TodoList``
 * Copying an object that maintains threads shouldn't be possible.
@@ -257,6 +264,12 @@ Wrapping All That Into A Class
 Architectural Considerations: No Implementation Inheritance Wanted
 ------------------------------------------------------------------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`
+
 * Clean architecture does not do too much implementation inheritance
   (at least, OO evangelists say so)
 * Let inhibit that |longrightarrow| make the class ``final``
@@ -268,10 +281,22 @@ Architectural Considerations: No Implementation Inheritance Wanted
 Wrapping Up: Initializer
 ------------------------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/initializer-list`
+
 * Lost the ability to *initialize* a ``TodoList`` object
   (|longrightarrow| ``add_item()``)
 * Add that
 * Done!
+
+.. note::
+
+   ``std::map`` member type is ``std::pair<const keytype,
+   valuetype>``; take that into account when specifying the
+   initializer list's shape.
 
 .. literalinclude:: code/c++-intro-150-initializer-list.cpp
    :caption: :download:`code/c++-intro-150-initializer-list.cpp`

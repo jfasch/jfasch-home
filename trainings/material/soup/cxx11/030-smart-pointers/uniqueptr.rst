@@ -218,9 +218,24 @@ How To Write Code That Can Take Ownership?
    :caption: :download:`code/unique-ptr-taking-ownership-own-code.cpp`
    :language: c++
 
-|longrightarrow| See
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
-for details (e.g., why ``std::move`` in initializer?)
+.. attention:: 
+
+   **Pitfall alert**
+
+   .. code-block:: c++
+
+      HoldsASensor(std::unique_ptr<Sensor>&& s)
+      : _sensor(std::move(s)) {}
+
+   Note that the parameter ``s`` is an *lvalue*, for that matter - it
+   has a name. So ``std::move()`` is *necessary*. ``std::unique_ptr``
+   does not support copy, by nature, so the code won't sompile
+   anyway. Other types may (``std::string``, for example). **There be
+   dragons!**
+
+   See
+   :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+   for more.
 
 Manipulating Pointer Content
 ----------------------------

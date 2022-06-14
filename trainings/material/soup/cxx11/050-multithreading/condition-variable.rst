@@ -6,8 +6,8 @@
 .. include:: <mmlalias.txt>
 
 
-``std::condition_variable``
-===========================
+``std::condition_variable`` (Live Hacking Multithreaded Queue)
+==============================================================
 
 .. contents::
    :local:

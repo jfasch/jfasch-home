@@ -17,6 +17,8 @@ Topics
    050-multithreading/group
    100-miscellaneous/group
 
+   exercises/group
+
 Group Description
 -----------------
 	      

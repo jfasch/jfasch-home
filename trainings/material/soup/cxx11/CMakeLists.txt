@@ -6,3 +6,5 @@ ADD_SUBDIRECTORY(030-smart-pointers)
 ADD_SUBDIRECTORY(050-multithreading)
 ADD_SUBDIRECTORY(040-bind-function)
 ADD_SUBDIRECTORY(100-miscellaneous)
+
+ADD_SUBDIRECTORY(exercises)
