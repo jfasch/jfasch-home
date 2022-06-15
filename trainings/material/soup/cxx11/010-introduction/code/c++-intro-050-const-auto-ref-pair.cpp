@@ -12,8 +12,8 @@ int main()
     };
 
     for (auto it=tdl.begin(); it!= tdl.end(); ++it) {
-        const auto& name = it->first;
-        const auto& desc = it->second;
+        const auto& name = it->first;      // <--- cheaper than copying std::string
+        const auto& desc = it->second;     // <---
 
         std::cout << "NAME: " << name << ", DESC: " << desc << std::endl;
     }

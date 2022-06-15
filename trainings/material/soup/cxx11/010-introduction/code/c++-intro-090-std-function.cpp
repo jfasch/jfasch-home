@@ -25,7 +25,7 @@ void down_1000_to_980()
 
 int main()
 {
-    using todo_list = std::map<std::string, std::function<void()>>;
+    using todo_list = std::map<std::string, std::function<void()>>;  // <---
 
     todo_list tdl{
         { "up 1 to 10",         up_1_to_10 },

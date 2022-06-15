@@ -11,7 +11,7 @@ int main()
         { "down 1000 to 980",   "prefix: 'DOWN', count down from 1000 to 980, interval 0.5 second"},
     };
 
-    for (const auto& [name, desc]: tdl)
+    for (const auto& [name, desc]: tdl)  // <--- unpacking std::pair right into its parts
         std::cout << "NAME: " << name << ", DESC: " << desc << std::endl;
 
     return 0;

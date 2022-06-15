@@ -12,8 +12,8 @@ int main()
     };
 
     for (auto it=tdl.begin(); it!= tdl.end(); ++it) {
-        auto name = it->first;
-        auto desc = it->second;
+        auto name = it->first;        // <--- compiler knows type std::string anyway
+        auto desc = it->second;       // <---
 
         std::cout << "NAME: " << name << ", DESC: " << desc << std::endl;
     }

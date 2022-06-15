@@ -11,7 +11,7 @@ int main()
         { "down 1000 to 980",   "prefix: 'DOWN', count down from 1000 to 980, interval 0.5 second"},
     };
 
-    for (auto it=tdl.begin(); it!= tdl.end(); ++it) {
+    for (auto it=tdl.begin(); it!= tdl.end(); ++it) {   // <---
         std::string name = it->first;
         std::string desc = it->second;
 

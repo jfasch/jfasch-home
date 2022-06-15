@@ -44,7 +44,7 @@ Real Container Initialization
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
 
 * Think C's "array of ``struct``" initialization
-* ``std::map`` is *initialized*
+* ``std::map`` is *initialized* |longrightarrow| could be ``const``!
 * Almost feels like Python: ``dict([(1, "one"), (2, "two")])``
 
 .. literalinclude:: code/c++-intro-020-brace-initialization.cpp

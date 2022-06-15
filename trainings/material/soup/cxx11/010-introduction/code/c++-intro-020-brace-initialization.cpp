@@ -6,7 +6,7 @@ int main()
 {
     using todo_list = std::map<std::string, std::string>;
 
-    todo_list tdl{
+    todo_list tdl{             // <--- real initialization: could make it *const* just as well!
         { "up 1 to 10",         "prefix: 'UP', count up from 1 to 10, interval 1 second" },
         { "down 1000 to 980",   "prefix: 'DOWN', count down from 1000 to 980, interval 0.5 second"},
     };

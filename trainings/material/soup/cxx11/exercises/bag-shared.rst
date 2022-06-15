@@ -5,7 +5,7 @@
 		  cxx11.new_language_features.auto,
 		  cxx11.new_language_features.range_based_for
 
-Exercise: Bag Of Items, By Unique Reference
+Exercise: Bag Of Items, By Shared Reference
 ===========================================
 
 .. contents::
