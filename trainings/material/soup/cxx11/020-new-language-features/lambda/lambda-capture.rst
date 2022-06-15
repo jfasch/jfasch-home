@@ -54,15 +54,15 @@ Define Variables In Capture
    :caption: :download:`../code/c++11-lambda_capture_suite--initialized_capture.cpp`
    :language: c++
 
-Captureing All By Reference
----------------------------
+Capturing All By Reference
+--------------------------
 	      
 .. literalinclude:: ../code/c++11-lambda_capture_suite--all_by_reference.cpp
    :caption: :download:`../code/c++11-lambda_capture_suite--all_by_reference.cpp`
    :language: c++
 	      
-Captureing All By Copy
-----------------------
+Capturing All By Copy
+---------------------
 
 .. literalinclude:: ../code/c++11-lambda_capture_suite--all_by_copy.cpp
    :caption: :download:`../code/c++11-lambda_capture_suite--all_by_copy.cpp`

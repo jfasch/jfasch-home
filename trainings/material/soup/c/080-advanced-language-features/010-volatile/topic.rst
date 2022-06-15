@@ -7,6 +7,9 @@
 Volatile
 ========
 
+.. contents::
+   :local:
+
 Links
 -----
 

@@ -116,31 +116,6 @@ Straightforward try to prevent leaks:
 * Who would be responsible to destroy the object?
 * **Ownership violation**
 
-Explicitly Acknowledging Ownership Transfer: ``std::move()``
-------------------------------------------------------------
-
-.. sidebar::
-
-   **Documentation**
-
-   * `std::move <https://en.cppreference.com/w/cpp/utility/move>`__
-
-   **See also**
-
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
-
-* What is needed is a way of *explicit ownership tranfer*
-* |longrightarrow| Acknowledging terms and conditions
-* |longrightarrow| Moved-from pointer object becomes invalid
-* This is not specific to ``unique_ptr`` |longrightarrow|
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
-
-.. literalinclude:: code/unique-ptr-ownership-move.cpp
-   :caption: :download:`code/unique-ptr-ownership-move.cpp`
-   :language: c++
-
-.. _make_unique:
-
 Saving Keystrokes: ``std::make_unique<>()``
 -------------------------------------------
 
@@ -167,6 +142,31 @@ Saving Keystrokes: ``std::make_unique<>()``
   .. literalinclude:: code/unique-ptr-make-unique.cpp
      :caption: :download:`code/unique-ptr-make-unique.cpp`
      :language: c++
+
+Explicitly Acknowledging Ownership Transfer: ``std::move()``
+------------------------------------------------------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `std::move <https://en.cppreference.com/w/cpp/utility/move>`__
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+
+* What is needed is a way of *explicit ownership tranfer*
+* |longrightarrow| Acknowledging terms and conditions
+* |longrightarrow| Moved-from pointer object becomes invalid
+* This is not specific to ``unique_ptr`` |longrightarrow|
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+
+.. literalinclude:: code/unique-ptr-ownership-move.cpp
+   :caption: :download:`code/unique-ptr-ownership-move.cpp`
+   :language: c++
+
+.. _make_unique:
 
 Compiler Can Prove: Implicit Ownership Transfer
 -----------------------------------------------

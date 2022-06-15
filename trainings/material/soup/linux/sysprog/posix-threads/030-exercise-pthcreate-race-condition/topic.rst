@@ -17,7 +17,7 @@ increments *the same* integer, say, 10000000 times.
   *the same* memory location.
 
 After the starting process (the *main thread*) has synchronized with
-the incrementer's termination, he outputs the current value of the
+the incrementer's termination, it outputs the current value of the
 said integer.
 
 *What do you notice?*

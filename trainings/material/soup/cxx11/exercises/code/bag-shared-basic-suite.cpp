@@ -6,7 +6,11 @@ TEST(bag_shared_suite, find_by_int_ok)
 {
     BagShared bag;
     bag.insert(std::make_shared<BagShared::Item>("something", 42));
-    bag.insert(std::make_shared<BagShared::Item>("anything", 666));
+
+    auto item2 = std::make_shared<BagShared::Item>("anything", 666);
+    bag.insert(item2);
+
+    ASSERT_EQ(item2.use_count(), 2);
 
     auto item = bag.find_by_int(42);
     ASSERT_NE(item, nullptr);
