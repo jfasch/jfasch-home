@@ -208,13 +208,15 @@ Block 3: C++
      * 
      * 
      * 3
-     * **More C++**
+     * **More C++** from :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
 
-       * Namespaces
-       * ``this``
-       * References and pointers
-       * Overloading
-       * Operator overloading
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
 
    * * 
      * 2022-06-27

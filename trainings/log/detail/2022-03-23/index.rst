@@ -90,6 +90,23 @@ CSV
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+
+.. .. 2022-06-20
+.. .. ----------
+.. .. 
+.. .. * :doc:`/trainings/material/soup/python/advanced/oo/user-screenplay/class-user`
+.. .. 
+.. .. 
+.. .. 
+.. .. * :doc:`/trainings/material/soup/python/advanced/modules`
+.. .. * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+.. .. 
+.. .. * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
+.. .. * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
+.. .. * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+.. .. * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 
 2022-04-19, 2022-04-20, 2022-04-21: Advanced
 ............................................
@@ -106,8 +123,6 @@ Plan For The Wild Part
   * Better yet: :doc:`/trainings/material/soup/linux/basics/intro/wsl`
   * :doc:`/trainings/material/soup/python/misc/vscode`
 
-* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
-* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
 * :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
@@ -117,11 +132,6 @@ Plan For The Wild Part
 * :doc:`/trainings/material/soup/python/exercises/userdb/mqtt-publish-csv`
 
 More details (omitted in "basics" days)
-
-* :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 
 Select topics from chapters ...
 

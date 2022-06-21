@@ -1,118 +1,120 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.functions_and_methods.references
    :dependencies: cxx03.functions_and_methods.this
+
+.. include:: <mmlalias.txt>
 
 
 References
 ==========
 
-Pointers, Seen Differently: References (1)
-------------------------------------------
+.. contents::
+   :local:
 
-**Problem**
+Pass By Copy/Reference
+----------------------
 
-* Passing parameters *by copy* is expensive
-* Especially when objects are large (well, a ``point`` is not so
-  large, but you get the point)
+.. sidebar::
 
-.. list-table::
-   :align: left
+   **Links**
 
-   * * .. code-block:: c++
+   * `Wikipedia
+     <https://en.wikipedia.org/wiki/Evaluation_strategy#Strict_binding_strategies>`__
+   * `Pascal
+     <https://en.wikipedia.org/wiki/Pascal_(programming_language)>`__
 
-          class point
-          {
-          public:
-              float distance(point p) const
-              {
-                  int dx = abs(_x-p._x);
-                  int dy = abs(_y-p._y);
-                  return sqrt(dx*dx+dy*dy);
-              }
-          };
+* Computer literature has terminology for different ways of parameter
+  passing
+* Terms: "Pass by copy", "pass by reference"
+* Terms: "input parameter", "output parameter", "input/output
+  parameter"
+* Pass by copy: callee receives a copy of caller's value
+  (|longrightarrow| function cannot modify caller's value)
+* Pass by reference: callee receives a reference to caller's value
+  (|longrightarrow| callee *can* modify caller's value)
 
-     * .. code-block:: c++
+This terminology is language independent (`Pascal <https://en.wikipedia.org/wiki/Pascal_(programming_language)>`__?)
 
-          point a(1,2);
-	  point b(2, 3);
-	  float dist = a.distance(b);
+Copy? Reference? C? Pointers!
+-----------------------------
 
-       **Problem**
+* In C, parameters are passed *by copy only*
 
-       * Parameter is a ``copy``
+  .. literalinclude:: code/pass-by-copy.cpp
+     :caption: :download:`code/pass-by-copy.cpp`
+     :language: c++
 
-       **Solution**
+* But: there are addresses (pointers) that can be passed (by copy
+  |:face_with_raised_eyebrow:|)
 
-       * Pass by pointer
-       * Even better: ``const`` pointer
+  * Voila, done!
+  * As long as one can handle those ``&`` and ``*``, everything is ok
+  * A little tedious though: take address (``&``), dereference address
+    (``*``)
+  * |longrightarrow| error prone
 
-Pointers, Seen Differently: References (2)
-------------------------------------------
+  .. literalinclude:: code/pass-by-pointer.cpp
+     :caption: :download:`code/pass-by-pointer.cpp`
+     :language: c++
 
-.. list-table::
-   :align: left
+C++: True References
+--------------------
 
-   * * Definition
-     * Usage
-   * * .. code-block:: c++
+* C++ adds another meaning to the ``&`` operator: *reference*
+* Used in function declaration *only*
+* Every use looks like regular variable/parameter access
+* Internally addresses are taken, just like pointers - only easier
+* Advantage: references cannot (easily) dangle, or be ``NULL``
 
-          class point
-          {
-          public:
-              float distance(const point *p) const
-              {
-                  int dx = abs(_x-p->_x);
-                  int dy = abs(_y-p->_y);
-                  return sqrt(dx*dx+dy*dy);
-              }
-          };
+.. literalinclude:: code/pass-by-reference.cpp
+   :caption: :download:`code/pass-by-reference.cpp`
+   :language: c++
 
-     * .. code-block:: c++
+And ``const``? Pointers?
+------------------------
 
-          point a(1,2);
-	  point b(2, 3);
-	  float dist = a.distance(&b);
+* In C, there is the ``const`` keyword which can be applied to
+  pointers too
+* Meaning: "this is the address of something that must not be
+  modified"
 
-       **Problem**
-       
-       * User has to take the address
-       * Pointers can easily be ``NULL``
-       
-       **Solution**
-       
-       * References
+.. literalinclude:: code/pass-by-const-pointer.cpp
+   :caption: :download:`code/pass-by-const-pointer.cpp`
+   :language: c++
 
-Pointers, Seen Differently: References (3)
-------------------------------------------
+.. code-block:: console
 
-.. list-table::
-   :align: left
+   code/pass-by-const-pointer.cpp:5:8: error: assignment of read-only location ‘* j’
+       5 |     *j = 666;              // <--- error: *j is const
+         |     ~~~^~~~~
 
-   * * Definition
-     * Usage
-   * * .. code-block:: c++
+``const`` References
+--------------------
 
-          class point
-          {
-          public:
-              float distance(const point &p) const
-              {
-                  int dx = abs(_x-p._x);
-                  int dy = abs(_y-p._y);
-                  return sqrt(dx*dx+dy*dy);
-              }
-          };
+.. literalinclude:: code/pass-by-const-reference.cpp
+   :caption: :download:`code/pass-by-const-reference.cpp`
+   :language: c++
 
-     * .. code-block:: c++
+.. code-block:: console
 
-          point a(1,2);
-	  point b(2, 3);
-	  float dist = a.distance(b);
+   code/pass-by-const-reference.cpp:5:7: error: assignment of read-only reference ‘j’
+       5 |     j = 666;                 // <--- error: j is const
+         |     ~~^~~~~
 
-       **Pretty, because ...**
+``const`` Reference: Substitute For "Pass by Copy"
+--------------------------------------------------
 
-       * Looks like ordinary parameter passing
-       * *Compiler* takes the address |longrightarrow| physically, a
-         pointer is passed
-       * ``NULL`` pointer passing (nearly) impossible
+* Pass by copy protects from accidental modification
+* Can be expensive though
+
+  .. literalinclude:: code/pass-by-copy-expensive.cpp
+     :caption: :download:`code/pass-by-copy-expensive.cpp`
+     :language: c++
+
+* ``const`` references to the rescue
+* Amount of bytes copied is the size of a pointer, no matter what the
+  target type is
+
+  .. literalinclude:: code/pass-by-const-reference-cheap.cpp
+     :caption: :download:`code/pass-by-const-reference-cheap.cpp`
+     :language: c++
+

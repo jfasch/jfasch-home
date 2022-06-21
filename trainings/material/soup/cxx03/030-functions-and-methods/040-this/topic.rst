@@ -1,11 +1,14 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.functions_and_methods.this
    :dependencies: cxx03.functions_and_methods.const
+
+.. include:: <mmlalias.txt>
 
 
 ``this``
 ========
+
+.. contents::
+   :local:
 
 Hidden Pointer: ``this`` (1)
 ----------------------------

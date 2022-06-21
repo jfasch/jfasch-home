@@ -1,11 +1,14 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.functions_and_methods.methods
    :dependencies: cxx03.functions_and_methods.overloading
+
+.. include:: <mmlalias.txt>
 
 
 Methods
 =======
+
+.. contents::
+   :local:
 
 Objects - Data and Methods
 --------------------------
@@ -21,8 +24,8 @@ Objects - Data and Methods
 * Classes: data and *methods*
 * Methods: functions *bound* to objects
 
-Method - Example ``point`` (1)
-------------------------------
+A Pointless Class: ``class point``
+----------------------------------
 
 * What is a point? |longrightarrow| ``x`` and ``y``
 * What is the responsibility of a point?
@@ -31,59 +34,48 @@ Method - Example ``point`` (1)
   * compute its distance to origin
   * ... or from another point ...
 
-.. code-block:: c++
+.. literalinclude:: code/point.h
+   :caption: :download:`code/point.h`
+   :language: c++
 
-   class point
-   {
-   public:
-       void move(int x, int y)
-       {
-	   this->x += x;
-	   this->y += y;
-       }
-       float distance_origin() const;
-       float distance(const point&) const;
-   };
+Using ``class point``
+---------------------
 
-Method - Example ``point`` (2)
-------------------------------
+.. literalinclude:: code/c++03-methods.cpp
+   :caption: :download:`code/c++03-methods.cpp`
+   :language: c++
 
-* ``point`` offers functionality
-* ``point`` should be used *as simply and clearly as possible!*
+.. code-block:: console
 
-.. code-block:: c++
+   $ ./code/c++03-methods 
+   distance of (3,4) from origin: 5
+   distance of (3,4) from (4,4): 1
 
-   point p(2, 0);
-   p.move(1, 0);
-   if (fabs(p.distance_origin() - 3.0) > 0.0001)
-       std::cerr << "FPU bogus?" << std::endl;
+Methods: What's Coming?
+-----------------------
 
-Methods and Design
-------------------
+.. sidebar::
 
-**Question: what should a point be able to?** 
+   **See also**
 
-Difficult to answer ...
+   * :doc:`../030-const/topic`
+   * :doc:`../050-references/topic`
+   * :doc:`../060-static/topic`
+   * :doc:`../070-operators/topic`
 
-* Should it offer its coordinates?
+**Problems**
 
-  * I think so |longrightarrow| small ``inline`` access methods
+* ``double distance(point other)``: pass by copy
+* ``void move(int x, int y)``: shouldn't that be the ``+=`` operator,
+  only in 2D?
+* Shouldn't
 
-* Should it offer two dimensional arithmetic methods?
+  .. code-block:: c++
 
-  * Why not? This is what a point is there for.
+     std::cout << "distance of (" << p.x() << ',' << p.y() << ") from origin: "  << d_orig << std::endl;
 
-* Should it be able to print a plot of itself?
+  be shorter?
 
-  * Why not? As long as users of a point are willing to link 28 more
-    libraries.
-  * |longrightarrow| *Coupling*
+  .. code-block:: c++
 
-Methods: Wrap-Up
-----------------
-
-**Many but simple (?) Nuances ...**
-
-* ``const``: type system
-* References: performance
-* ``static``, with yet another meaning of the keyword
+     std::cout << "distance of " << p << " from origin: "  << d_orig << std::endl;

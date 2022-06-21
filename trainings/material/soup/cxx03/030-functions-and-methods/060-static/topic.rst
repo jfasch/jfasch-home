@@ -1,57 +1,60 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.functions_and_methods.static
    :dependencies: cxx03.functions_and_methods.references
 
+.. include:: <mmlalias.txt>
 
-``static``
-==========
 
-Methods without Object - ``static`` (1)
----------------------------------------
+``static`` Methods
+==================
+
+.. contents::
+   :local:
+
+Methods without Object
+----------------------
 
 **What we know now:**
 
 * Methods are great
 * Name and variable |longrightarrow| Method (like ``p.move(1,2)``)
 * |longrightarrow| clear writing
+* Methods are invoked on *objects* (mostly)
 
 **But:** *global* functions? Methods without an object?
 
 * Not bound to objects
 * Same scheme ("method of the class")?
 
-**Example:**
+**Example:** add two point objects (|longrightarrow| vector addition)
 
-* Adding points in C takes two ``const`` points and makes a third
-* Does not operate on any one parameter in particular
-* |longrightarrow| global
+* Creates a third point object
+* Leaves the two addends *unmodified*
 
-.. code-block:: c++
+Object method?
 
-   point point_add(const point &l, const point &l);
+* Addition is not normally invoked on an addend
+* But it belongs to ``class point`` somehow
 
-Methods without Object - ``static`` (2)
----------------------------------------
+Naive Implementation: Global Function
+-------------------------------------
 
-.. list-table::
-   :header-rows: 1
-   :align: left
+* In C, one would define such a thing straightforwardly, as a global
+  function
+* In C, there are no functions other than global
 
-   * * Definition
-     * Usage
-   * * .. code-block:: c++
+.. literalinclude:: code/global-function.cpp
+   :caption: :download:`code/global-function.cpp`
+   :language: c++
 
-          class point
-          {
-          public:
-              static point add(const point &l, const point &r)
-              {
-                  return point(l.x()+r.x(), l.y()+r.y());
-              }
-          };
+C++: ``static`` Method
+----------------------
 
-     * .. code-block:: c++
+* C++ adds another meaning for the ``static`` keyword
+* Global function, but ...
 
-          point a(1,2), b(2, 3);
-	  point c = point::add(a, b);
+  * Not bound to an object (not called like ``p.add(...)``
+  * But inside class scope (called like ``point::add(p1, p2)``)
+
+.. literalinclude:: code/static-method.cpp
+   :caption: :download:`code/static-method.cpp`
+   :language: c++

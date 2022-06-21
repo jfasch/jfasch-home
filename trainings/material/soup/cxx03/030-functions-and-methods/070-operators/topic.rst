@@ -1,215 +1,192 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.functions_and_methods.operators
    :dependencies: cxx03.functions_and_methods.static
+
+.. include:: <mmlalias.txt>
 
 
 Operator Overloading
 ====================
 
+.. contents::
+   :local:
+
 Motivation
 ----------
 
-**Operators (+, +=, ->) etc. in C**
-
-* Only available for simple data types (``int``, ``float``, pointer arithmetic, ...)
-* |longrightarrow| *defined by the language*
-
-**Problem**: we want more ...
-
-* Arithmetic operators for ``class point``?
-* Intelligent pointers which have a different definition of ``->``?
-* ... unbounded fantasy here ...
-
-Operators, Functions, and Methods
----------------------------------
-
-**Why shouldn't this be possible?** Operators, after all, are
-functions that are implemented by the compiler.
-
-* ``i += 42``. Method "``+=``" on object of type ``int``, with parameter ``int``
-* ``i = j + 42`. *Static* method "``+``". Two parameters (type ``int``), return type ``int``
-* ``p += point(1,2)``. Define as you like!
-* ``str += "hallo!"``. Someone else did this already ...
-
-  * ``std::string``
-  * *C++ Standard Library*
-
-Example: Operator ``+=`` *on the Object* (1)
---------------------------------------------
-
-.. list-table::
-   :header-rows: 1
-   :align: left
-
-   * * Definition
-     * Usage
-   * * .. code-block:: c++
-
-          class point
-          {
-          public:
-              point& operator+=(const point &addend)
-              {
-                  _x += addend._x;
-                  _y += addend._y;
-                  return *this;
-              }
-          private:
-              int _x;
-              int _y;
-          };
-
-     * .. code-block:: c++
-
-          point a(1,2), b(2,3);
-	  a += b;
-
-Example: Operator ``+=`` *on the Object* (2)
---------------------------------------------
-
-.. list-table::
-   :align: left
-
-   * * .. code-block:: c++
-
-          operator+=(const point &addend)
-
-     * * ``this``: left hand side of ``p1 += p2``
-       * ``addend``: right hand side of ``p1 += p2``
-
-   * * .. code-block:: c++
-
-          point& operator+=(...)
-
-     * ``p3 = p2 += p1;``
-
-   * * .. code-block:: c++
-
-          return *this;
-
-     * * Value of the expression ``p1 += p2`` is ``p1``
-       * |longrightarrow| use ``p1`` onwards
-
-Example: Operator ``+`` *not* on the Object (1)
------------------------------------------------
+Returning back to the venerable ``class point``,
 
 .. code-block:: c++
 
    class point
    {
    public:
+       point(int x, int y) : _x{x}, _y{y} {}
+   
        int x() const { return _x; }
        int y() const { return _y; }
-   };
-   
-   point operator+(const point &l, const point &r)
-   {
-       return point(l.x()+r.x(), l.y()+r.y());
-   }
 
-Example: Operator ``+`` *not* on the Object (2)
------------------------------------------------
-
-.. list-table::
-   :align: left
-
-   * * .. code-block:: c++
-
-          operator+(const point &l, const point &r)
-
-     * * No object |longrightarrow| no ``this``
-       * Two real parameters
-
-   * * .. code-block:: c++
-
-          point operator+(...)
-
-     * * "+" creates *new* object
-       * |longrightarrow| return by *copy*
-
-   * * .. code-block:: c++
-
-          l.x()+r.x() ...
-
-     * * Global function |longrightarrow| ``private`` not visible
-       * ``friend`` - not a solution
-
-Example: Function Objects - *Functors* (1)
-------------------------------------------
-
-**Function Call Operator** "``()``": for example ...
-
-* Class *without* comparison operator
-
-
-.. code-block:: c++
-
-   class Item
-   {
-   public:
-       Item(int dies, int das)
-       : _dies(dies), _das(das) {}
-   
-       int dies() const { return _dies; }
-       int das() const { return _das; }
+       void move(point vec);
    
    private:
-       int _dies, _das;
+       int _x;
+       int _y;
    };
 
-Example: Function Objects - *Functors* (2)
-------------------------------------------
-
-**Problem**: one wants to sort |longrightarrow| comparison operator
- needed
+**Equality of two points?** I don't want to have another function (or
+:doc:`static method <../060-static/topic>`) like,
 
 .. code-block:: c++
 
-   bool operator<(const Item &lhs, const Item &rhs)
-   {
-       if (lhs.dies() < rhs.dies())
-           return true;
-       if (lhs.dies() > rhs.das())
-           return false;
-       return lhs.das() < rhs.das();
-   }
+   if (points_equal(p1, p2)) 
+       ...
 
-**Problem**: he's *global*
+**Enter operators**
 
-* |longrightarrow| Ambiguity!
-* Not everybody agrees
+I want to write something like
 
-Example: Function Objects - *Functors* (3)
+.. code-block:: c++
+
+   if (p1 == p2)
+       ...
+
+**What else?**
+
+* *Arithmetic operators*: 2D space os full of arithmetic, so why not
+  write for example ...
+
+  .. code-block:: c++
+
+     point vec{2,3}
+     p += vec;
+
+* *Stream operators*: this is rather clumsy,
+
+  .. code-block:: c++
+
+     std::cout << '(' << p.x() << ',' << p.y() << ')' << std::endl;
+
+  I want to shift a point out,
+
+  .. code-block:: c++
+
+     std::cout << p << std::endl;
+
+Implementing (In)Equality
+-------------------------
+
+* Operators are ordinary functions
+* Only named a bit oddly: ``operator==()``
+* Most operators can be defined in two way
+
+  * As global function (equality would then take two ``point``
+    parameters)
+  * As object method: "hey left point, are you equal to this other
+    point?"
+
+Implementing (In)Equality: Global Function
 ------------------------------------------
 
-**Solution**:
-  
-* Functors that everybody can tailor to their use
-* *Function Call Operator*
+.. sidebar::
 
-.. list-table::
-   :header-rows: 1
-   :align: left
+   **See also**
 
-   * * Definition
-     * Usage
-   * * .. code-block:: c++
+   * :doc:`../010-overloading/topic`
 
-          class LessOp
-          {
-          public:
-              bool operator()(const Item &lhs, const Item &rhs) const
-              {
-                  // same as operator<(lhs, rhs)
-              }
-          };
+* Global function: a third party authority (global function, not
+  belonging to a class) examines two points for equality
 
-     * .. code-block:: c++
+  * Makes use of :doc:`overloading <../010-overloading/topic>`: there
+    might be other ``==`` operators defined for different types
+  * *No access to private members of operands* (could use the
+    ``friend`` keyword though)
 
-          LessOp less;
-          if (less(item1, item2))
-              ...
 
-* Container classes
-* Algorithms
+* Makes sense to define equality *and* inequality together
+* |longrightarrow| one can be implemented in terms of the other
+
+.. literalinclude:: code/eq-global.cpp
+   :caption: :download:`code/eq-global.cpp`
+   :language: c++
+
+Implementing (In)Equality: Object Method
+----------------------------------------
+
+* As a matter of taste: why not ask a point object if it is equal to
+  another point object
+* Preferred by most: does not have the difficulties from above
+* Usage no different between both ways
+* Equality check does not normally modify objects |longrightarrow|
+  ``const``
+
+.. literalinclude:: code/eq-object.cpp
+   :caption: :download:`code/eq-object.cpp`
+   :language: c++
+
+Implementing Arithmetic: ``+`` (Vector Addition)
+------------------------------------------------
+
+* As with ``operator==()``, there are two ways
+
+  * Global function ``operator+(point lhs, point rsh)``
+  * *Preferred*: object method ``operator+(point rhs) const``
+
+Implementing Arithmetic: ``+`` (Vector Addition): Global Function
+-----------------------------------------------------------------
+
+.. literalinclude:: code/add-global.cpp
+   :caption: :download:`code/add-global.cpp`
+   :language: c++
+
+Implementing Arithmetic: ``+`` (Vector Addition): Object Method
+---------------------------------------------------------------
+
+.. literalinclude:: code/add-object.cpp
+   :caption: :download:`code/add-object.cpp`
+   :language: c++
+
+Implementing Arithmetic: ``+=`` (Moving A Point)
+------------------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../040-this/topic`
+
+* ``+=`` can only be an object method (it is there to modify an
+  object, alas)
+* Things are little confusing otherwise
+* |longrightarrow| Beginning in C, ``+=`` has a value
+
+  .. literalinclude:: code/add-object.cpp
+     :caption: :download:`code/add-object.cpp`
+     :language: c++
+
+* When overloading ``operator+=()``, usually (a reference to) the
+  modified object is the value
+* |longrightarrow| ``*this`` |:thinking:|
+
+.. literalinclude:: code/plus-equal.cpp
+   :caption: :download:`code/plus-equal.cpp`
+   :language: c++
+
+Implementing ``ostream`` Shift: ``std::cout << ...``
+----------------------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../010-overloading/topic`
+
+* Make use of :doc:`overloading <../010-overloading/topic>` again
+* Overload (global) ``std::ostream& operator<<(std::ostream&, point)``
+
+.. literalinclude:: code/c++03-ostream-shift-operator.cpp
+   :caption: :download:`code/c++03-ostream-shift-operator.cpp`
+   :language: c++
+
+.. code-block:: console
+
+   $ ./c++03-ostream-shift-operator 
+   p1: (1,2), p2: (3,4)

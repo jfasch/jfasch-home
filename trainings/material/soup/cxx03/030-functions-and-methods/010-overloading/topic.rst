@@ -1,11 +1,14 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.functions_and_methods.overloading
-   :dependencies: cxx03.data_encapsulation.object_copy
+   :dependencies: cxx03.data_encapsulation.introduction
+
+.. include:: <mmlalias.txt>
 
 
 Overloading
 ===========
+
+.. contents::
+   :local:
 
 Functions in C
 --------------
@@ -16,48 +19,104 @@ Functions in C
 * The name is the only thing by which functions are distinguished
 * *Not* the return type, nor the paraameters
 
-.. code-block:: c++
-   :caption: Declaration of ``x``
+.. literalinclude:: code/c++03-overloading-c.c
+   :caption: :download:`code/c++03-overloading-c.c`
+   :language: c++
 
-   int x(int i);
+Compiler complains:
 
-.. code-block:: c++
-   :caption: Ok
+.. code-block:: console
 
-   int ret = x(42);
+   code/c++03-overloading-c.c:7:6: error: conflicting types for ‘f’; have ‘void(char *)’
+       7 | void f(char* s)
+         |      ^
+   code/c++03-overloading-c.c:3:6: note: previous definition of ‘f’ with type ‘void(int)’
+       3 | void f(int i)
+         |      ^
 
-.. code-block:: c++
-   :caption: 2x Error
-
-   char *ret = x("huh?");
-
-.. code-block:: c++
-   :caption: Error: ``x`` declared twice
-
-   char *x(char* str);
 
 Functions in C++ --- Overloading
 --------------------------------
 
-**C++: better**
+.. literalinclude:: code/c++03-overloading.cpp
+   :caption: :download:`code/c++03-overloading.cpp`
+   :language: c++
+
+.. code-block:: console
+
+   $ code/c++03-overloading 
+   void f(int)
+   void f(char*)
+
+Underlying Mechanism: *Name Mangling*
+-------------------------------------
+
+* Originally, C++ compilers were *frontends* to C
+* Generated C code which was then compiled
+* Times have changed, but not so much
+* |longrightarrow| still compatible with C
+* |longrightarrow| C++ and C can be mixed
+
+*How is overloading implemented?*
+
+* Function names are mangled 
+* |longrightarrow| contain their parameter types
+
+.. code-block:: console
+
+   $ nm code/c++03-overloading 
+   ...
+   0000000000401176 T _Z1fi
+   00000000004011a0 T _Z1fPc
+   ...
+
+.. code-block:: console
+
+   $ nm --demangle code/c++03-overloading 
+   ...
+   0000000000401176 T f(int)
+   00000000004011a0 T f(char*)
+   ...
+
+Overloading Class Methods: Just The Same
+----------------------------------------
+
+The pointless ``class point`` from
+:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+has a method ``move(int, int)`` which takes two parameters which
+represent the respective ``x`` and ``y`` coordinates by which to move
+the point in question:
 
 .. code-block:: c++
-   :caption: *Two* declarations of ``x``
 
-   int x(int i);
-   char *x(const char *str);
-  
+   class point
+   {
+   public:
+       // ...
+
+       void move(int x, int y)
+       {
+           _x += x;
+           _y += y;
+       }
+
+   };
+   
+
+Overloading permits the class to have an alternative method which
+takes a single parameter, the *vector* by which to move the point:
+
 .. code-block:: c++
-   :caption: Ok
 
-   int ret = x(42);
+   class point
+   {
+   public:
+       // ...
 
-.. code-block:: c++
-   :caption: Ok
+       void move(point vec)
+       {
+           _x += vec._x;
+           _y += vec._y;
+       }
 
-   char *ret = x("huh?");
-
-.. code-block:: c++
-   :caption: Error: no appropriate ``x`` found
-
-   char *ret = x(42);
+   };

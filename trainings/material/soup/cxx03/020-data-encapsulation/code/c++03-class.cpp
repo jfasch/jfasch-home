@@ -10,6 +10,12 @@ public:
     int x() const { return _x; }
     int y() const { return _y; }
 
+    void move(int x, int y)
+    {
+        _x += x;
+        _y += y;
+    }
+
     point& operator+=(const point& p)
     {
         _x += p._x;
