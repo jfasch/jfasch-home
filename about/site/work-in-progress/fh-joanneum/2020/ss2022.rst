@@ -218,11 +218,20 @@ Block 3: C++
        * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
        * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
 
+       **Live-hacked material on Github**
+
+       * `Tests: point-suite.cpp <https://github.com/jfasch/FH-ECE20/blob/main/tests/point-suite.cpp>`__
+       * `Implementation: point.h <https://github.com/jfasch/FH-ECE20/blob/main/src/c%2B%2B-school/point.h>`__
+
    * * 
      * 2022-06-27
      * 2022-06-27
      * 3
-     *
+     * **Exercises**
+
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-point`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-rectangle`
+
    * * 
      * 2022-06-28
      * 2022-06-28
