@@ -34,6 +34,36 @@ Pass By Copy/Reference
 
 This terminology is language independent (`Pascal <https://en.wikipedia.org/wiki/Pascal_(programming_language)>`__?)
 
+Pointers Can Be Left Uninitialized
+----------------------------------
+
+**Pointer are evil:** can be left uninitilized ...
+
+.. literalinclude:: code/c++03-references-uninitialized-pointer.cpp
+   :caption: :download:`code/c++03-references-uninitialized-pointer.cpp`
+   :language: c++
+
+.. code-block:: console
+
+   $ ./c++03-references-uninitialized-pointer 
+   Segmentation fault (core dumped)
+
+References Cannot (Easily) Be Left Uninitialized
+------------------------------------------------
+
+C++ does not let you leave references uninitialized:
+
+.. literalinclude:: code/c++03-references-uninitialized-reference.cpp
+   :caption: :download:`code/c++03-references-uninitialized-reference.cpp`
+   :language: c++
+
+.. code-block:: console
+
+   code/c++03-references-uninitialized-reference.cpp: In function ‘int main()’:
+   code/c++03-references-uninitialized-reference.cpp:3:10: error: ‘i’ declared as reference but not initialized
+       3 |     int& i;
+         |          ^
+
 Copy? Reference? C? Pointers!
 -----------------------------
 
