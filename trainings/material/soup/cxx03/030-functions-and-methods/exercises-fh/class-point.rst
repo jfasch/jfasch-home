@@ -80,29 +80,56 @@ Extending ``class point``: More Unit Tests
    ``tests/point-suite.cpp``. Build, fix/hack, run, repeat, until
    everything is green.
 
+Default Constructor
+...................
+
 .. literalinclude:: code/tests/point-default-ctor.cpp
    :caption: :download:`code/tests/point-default-ctor.cpp`
    :language: c++
+
+Access Methods
+..............
 
 .. literalinclude:: code/tests/point-xy.cpp
    :caption: :download:`code/tests/point-xy.cpp`
    :language: c++
 
+(In-)Equality
+.............
+
 .. literalinclude:: code/tests/point-operator-eq-ne.cpp
    :caption: :download:`code/tests/point-operator-eq-ne.cpp`
    :language: c++
+
+``+=``
+......
+
+Implement that one in the ``point.cpp`` file, please.
 
 .. literalinclude:: code/tests/point-operator-pluseq.cpp
    :caption: :download:`code/tests/point-operator-pluseq.cpp`
    :language: c++
 
+``+``
+.....
+
+Implement that one in the ``point.cpp`` file, please.
+
 .. literalinclude:: code/tests/point-operator-plus.cpp
    :caption: :download:`code/tests/point-operator-plus.cpp`
    :language: c++
 
+Unary ``-``
+...........
+
 .. literalinclude:: code/tests/point-operator-unary-minus.cpp
    :caption: :download:`code/tests/point-operator-unary-minus.cpp`
    :language: c++
+
+``<<`` (``std::ostream``)
+.........................
+
+Implement that one in the ``point.cpp`` file, please.
 
 .. literalinclude:: code/tests/point-operator-ostream.cpp
    :caption: :download:`code/tests/point-operator-ostream.cpp`
