@@ -45,7 +45,7 @@ Pointers Can Be Left Uninitialized
 
 .. code-block:: console
 
-   $ ./c++03-references-uninitialized-pointer 
+   $ ./code/c++03-references-uninitialized-pointer 
    Segmentation fault (core dumped)
 
 References Cannot (Easily) Be Left Uninitialized
