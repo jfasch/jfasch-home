@@ -42,7 +42,9 @@ Good Style: Explicit Initialization Functions
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-basics`
+   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
+   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
 
 * C++ *constructor* initializes an object
 * Object referred to as ``this`` (part of C++ syntax)
