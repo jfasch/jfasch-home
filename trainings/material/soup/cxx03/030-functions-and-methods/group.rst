@@ -30,6 +30,8 @@ Exercises
 
    exercises-fh/class-point
    exercises-fh/class-rectangle
+   exercises-fh/class-point3d
+   exercises-fh/class-cuboid
 
 Group Description
 -----------------

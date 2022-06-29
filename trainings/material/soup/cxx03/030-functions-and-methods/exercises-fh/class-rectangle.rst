@@ -1,4 +1,5 @@
-.. ot-topic:: cxx03.functions_and_methods.exercise_class_rectangle
+.. ot-exercise:: cxx03.functions_and_methods.exercise_class_rectangle
+   :dependencies: cxx03.functions_and_methods.exercise_class_point
 
 .. include:: <mmlalias.txt>
 
