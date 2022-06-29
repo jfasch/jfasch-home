@@ -48,7 +48,12 @@ Width, Height, Area
 (In-)Equality
 .............
 
-Implement that one in the ``rectangle.cpp`` file, please.
+In addition to make the test run, please 
+
+* implement that one in the ``rectangle.cpp`` file
+* do *not* pass the right hand side operand *by copy* (rationale: a
+  rectangle is 16 bytes in size, so passing objects by reference is
+  cheaper [#not-true-generally]_).
 
 .. literalinclude:: code/tests/rectangle-operator-eq-ne.cpp
    :caption: :download:`code/tests/rectangle-operator-eq-ne.cpp`
@@ -81,3 +86,13 @@ Implement that one in the ``rectangle.cpp`` file, please.
    :caption: :download:`code/tests/rectangle-operator-ostream.cpp`
    :language: c++
 
+
+
+.. rubric:: Footnotes
+
+.. [#not-true-generally] The claim that passing 16-byte-size objects
+                         by reference (and accessing them through that
+                         reference later) is cheaper than simply
+                         copying the objects is not entirey proven
+                         though. Lets do it anyway for didactical
+                         reasons!

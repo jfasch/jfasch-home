@@ -28,7 +28,7 @@ public:
         return point{_x+rhs._x, _y+rhs._y};
     }
 
-    double distance_from_origin() const
+    double abs() const
     {
         return sqrt(_x*_x + _y*_y);
     }
@@ -45,8 +45,8 @@ int main(void)
 
     C = A;
 
-    double distance = A.distance_from_origin();
-    std::cout << "|A|: " << distance << std::endl;
+    double abs = A.abs();
+    std::cout << "|A|: " << abs << std::endl;
 
     D = A + B;
     std::cout << "D.x: " << D.x() << ", D.y: " << D.y() << std::endl;

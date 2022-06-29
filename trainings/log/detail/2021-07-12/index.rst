@@ -96,7 +96,7 @@ Jump into C++
 .............
 
 * :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 
 Exercise

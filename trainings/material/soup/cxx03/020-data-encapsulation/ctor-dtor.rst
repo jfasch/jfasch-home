@@ -1,7 +1,8 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx03.data_encapsulation.ctor_dtor
-   :dependencies: cxx03.data_encapsulation.ctor_basics
+   :dependencies: cxx03.data_encapsulation.ctor_default,
+		  cxx03.data_encapsulation.ctor_custom
+
+.. include:: <mmlalias.txt>
 
 
 More Constructors, Destructors
@@ -9,53 +10,6 @@ More Constructors, Destructors
 
 .. contents::
    :local:
-
-Constructors: Initializer List (1)
-----------------------------------
-
-**What about ``const`` members?**
-
-.. list-table::
-
-   * * .. code-block:: c++
-
-          class point
-          {
-          public:
-              point(int x, int y)
-              {
-                  _x = x;
-                  _y = y;
-              }
-          private:
-              const int _x;
-              const int _y;
-          };
-
-     * * Compiler error
-
-         * "``const`` members ``x`` und ``y`` not initialized"
-	 * "Assignment to ``const`` member"
-
-       * Constructor body is *normal* Code
-       * ``const`` pollution?
-       * |longrightarrow| **No!**
-
-Constructors: *Initializer List* (2)
-------------------------------------
-
-**Initializer List**: different form of assignment - *Initialization*
-
-.. code-block:: c++
-
-   class point
-   {
-   public:
-       point(int x, int y) : _x(x), _y(y) {}
-   private:
-       const int _x;
-       const int _y;
-   };
 
 Default Constructor (1)
 -----------------------

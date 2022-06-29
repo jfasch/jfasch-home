@@ -1,5 +1,5 @@
 .. ot-exercise:: cxx03.exercises_userdb.user_ctor
-   :dependencies: cxx03.data_encapsulation.ctor_basics,
+   :dependencies: cxx03.data_encapsulation.ctor_custom,
 		  cxx03.standard_library_miscellanea.string
 
 .. include:: <mmlalias.txt>

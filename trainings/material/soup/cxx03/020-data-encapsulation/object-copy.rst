@@ -4,8 +4,8 @@
    :dependencies: cxx03.data_encapsulation.ctor_dtor
 
 
-Object Copy
-===========
+Object Copy (And Resource Management): There Be Dragons
+=======================================================
 
 .. contents::
    :local:

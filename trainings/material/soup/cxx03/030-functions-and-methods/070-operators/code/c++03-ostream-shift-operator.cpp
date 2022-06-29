@@ -13,7 +13,7 @@ private:
     int _y;
 };
 
-std::ostream& operator<<(std::ostream& s, point p)
+static std::ostream& operator<<(std::ostream& s, point p) // <--- "static inline" is another story
 {
     s << '(' << p.x() << ',' << p.y() << ')';
     return s;

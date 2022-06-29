@@ -197,7 +197,8 @@ Block 3: C++
      * **More about C++: Classes and Objects**
 
        * :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
 
    * * 
      * 2022-06-09
@@ -236,7 +237,27 @@ Block 3: C++
      * 2022-06-28
      * 2022-06-28
      * 3
-     *
+     * * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
+
+	 Demo on `Github <https://github.com/jfasch/FH-ECE20>`__
+
+	 * `copy-good-suite.cpp
+           <https://github.com/jfasch/FH-ECE20/blob/main/tests/copy-good-suite.cpp>`__
+	 * `copy-good.h
+           <https://github.com/jfasch/FH-ECE20/blob/main/src/c%2B%2B-school/copy-good.h>`__
+
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+
+	 Demo on `Github <https://github.com/jfasch/FH-ECE20>`__
+
+	 * `my-string-suite.cpp
+           <https://github.com/jfasch/FH-ECE20/blob/main/tests/my-string-suite.cpp>`__
+	 * `mystring.h
+           <https://github.com/jfasch/FH-ECE20/blob/main/src/c%2B%2B-school/mystring.h>`__
+	 
    * * 2022-06-29
      * 
      * 
@@ -253,7 +274,8 @@ Block 3: C++
      * 3
      * **Test**
 
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
        * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
        * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
        * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`

@@ -281,7 +281,7 @@ C++ and OO (Classes)
 ....................
 
 * :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-basics`
 
   * :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-to-cxx-ctor/exercise`
@@ -344,7 +344,7 @@ Classes (continued)
   :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-access-methods/exercise`
 
   (See
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
   for ``private`` and *access methods*)
 
   Solution see `here

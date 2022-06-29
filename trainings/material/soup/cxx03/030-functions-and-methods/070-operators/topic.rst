@@ -164,6 +164,9 @@ Implementing Arithmetic: ``+=`` (Moving A Point)
 
 * When overloading ``operator+=()``, usually (a reference to) the
   modified object is the value
+
+  * Could be a copy just as well |longrightarrow| possibly expensive
+
 * |longrightarrow| ``*this`` |:thinking:|
 
 .. literalinclude:: code/plus-equal.cpp

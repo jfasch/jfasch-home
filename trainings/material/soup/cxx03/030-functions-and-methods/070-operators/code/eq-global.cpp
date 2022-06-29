@@ -13,16 +13,16 @@ private:
     int _y;
 };
 
-bool operator==(point lhs, point rhs)    // <--- global function (not inside class definition)
+static inline bool operator==(point lhs, point rhs) // <--- global function (not inside class definition) ("static inline" is another story)
 {
     return
-        lhs.x() == rhs.x() &&            // <--- using public access methods
-        lhs.y() == rhs.y();              // <--- using public access methods
+        lhs.x() == rhs.x() &&                       // <--- using public access methods
+        lhs.y() == rhs.y();                         // <--- using public access methods
 }
 
-bool operator!=(point lhs, point rhs)    // <--- global function (not inside class definition)
+static inline bool operator!=(point lhs, point rhs) // <--- global function (not inside class definition) ("static inline" is another story)
 {
-    return !operator==(lhs, rhs);        // <--- defined in terms of "=="
+    return !operator==(lhs, rhs);                   // <--- defined in terms of "=="
 }
 
 TEST(operators_suite, equals_global)

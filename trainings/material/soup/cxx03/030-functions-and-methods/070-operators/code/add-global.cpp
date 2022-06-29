@@ -13,10 +13,10 @@ private:
     int _y;
 };
 
-point operator+(point lhs, point rhs)    // <--- global function (not inside class definition)
+point operator+(point lhs, point rhs) // <--- global function (not inside class definition) ("static inline" is another story)
 {
-    int x = lhs.x() + rhs.x();           // <--- using public access methods
-    int y = lhs.y() + rhs.y();           // <--- using public access methods
+    int x = lhs.x() + rhs.x();        // <--- using public access methods
+    int y = lhs.y() + rhs.y();        // <--- using public access methods
     
     return point{x, y};
 }

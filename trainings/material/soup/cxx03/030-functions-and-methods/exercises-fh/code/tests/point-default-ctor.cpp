@@ -6,3 +6,4 @@ TEST(point_suite, default_ctor)
 {
     const point p;
 }
+

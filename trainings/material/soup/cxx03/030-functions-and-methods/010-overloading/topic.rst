@@ -1,5 +1,5 @@
 .. ot-topic:: cxx03.functions_and_methods.overloading
-   :dependencies: cxx03.data_encapsulation.introduction
+   :dependencies: cxx03.data_encapsulation.classes_objects
 
 .. include:: <mmlalias.txt>
 
@@ -82,7 +82,7 @@ Overloading Class Methods: Just The Same
 ----------------------------------------
 
 The pointless ``class point`` from
-:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/introduction`
+:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
 has a method ``move(int, int)`` which takes two parameters which
 represent the respective ``x`` and ``y`` coordinates by which to move
 the point in question:

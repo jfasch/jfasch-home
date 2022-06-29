@@ -1,3 +1,6 @@
+.. ot-group:: cxx03.data_encapsulation
+
+
 Data Encapsulation
 ==================
 
@@ -10,8 +13,11 @@ Topics
 .. toctree::
    :maxdepth: 1
 
-   introduction
-   ctor-basics
+   c
+   cpp-introduction
+   ctor-custom
+   ctor-default
+   copy-basics
    ctor-dtor
    object-copy
 
@@ -29,7 +35,5 @@ Exercises
 Group Description
 -----------------
 	      
-.. ot-group:: cxx03.data_encapsulation
-
 .. ot-graph::
    :entries: cxx03.data_encapsulation
