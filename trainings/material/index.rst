@@ -88,7 +88,7 @@ material.
      - :download:`GNU Make <pdf/040-gnu-make.pdf>`
      -
    * - :doc:`/trainings/repertoire/cmake`
-     - :download:`GNU Make <pdf/045-cmake.pdf>`
+     - :download:`CMake <pdf/045-cmake.pdf>`
      -
    * - :doc:`/trainings/repertoire/svn`
      - :download:`Subversion <pdf/070-subversion.pdf>`
