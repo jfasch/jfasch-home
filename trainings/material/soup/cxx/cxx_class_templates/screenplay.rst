@@ -1,4 +1,6 @@
 Screenplay: C++: Class Templates
 ================================
 
-* Copy :doc:`../cxx_class_intro/code/index`, and morph into template
+* Copy
+  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-point`,
+  and morph into template
