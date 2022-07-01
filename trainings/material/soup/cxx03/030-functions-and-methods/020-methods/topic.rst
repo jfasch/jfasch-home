@@ -19,13 +19,32 @@ Objects - Data and Methods
 * Operations on objects: *free functions*
 * |longrightarrow| can be defined anywhere
 
+  .. code-block:: c
+
+     struct point p = {1,2};
+     point_move(&p, 3, 4); // <--- not syntactically *bound* to p
+
 **C++**
 
 * Classes: data and *methods*
 * Methods: functions *bound* to objects
 
-A Pointless Class: ``class point``
-----------------------------------
+  .. code-block:: c++
+
+     point p{1,2};
+     p.move(3,4);
+
+``class point`` Again
+---------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+
+Reiterating ``class point`` from
+:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`:
 
 * What is a point? |longrightarrow| ``x`` and ``y``
 * What is the responsibility of a point?
@@ -38,44 +57,97 @@ A Pointless Class: ``class point``
    :caption: :download:`code/point.h`
    :language: c++
 
-Using ``class point``
----------------------
+Simple Methods: Access Methods ("Getters")
+------------------------------------------
 
-.. literalinclude:: code/c++03-methods.cpp
-   :caption: :download:`code/c++03-methods.cpp`
-   :language: c++
+* Members are private |longrightarrow| outside access prohibited
+* Read-only access desired, though
+* |longrightarrow| Public access methods
 
-.. code-block:: console
+.. code-block:: c++
 
-   $ ./code/c++03-methods 
-   distance of (3,4) from origin: 5
-   distance of (3,4) from (4,4): 1
+   class point
+   {
+   public:
+       int x() const { return _x; }
+       int y() const { return _y; }
+   private:
+       int _x;
+       int _y;
+   };
 
-Methods: What's Coming?
------------------------
+* ``const``: read-only access does not alter the object
+
+  .. code-block:: c++
+
+     const point p{1,2};
+     int x = p.x();       // <--- x() is *const* => ok
+
+How Are Members Accessed Inside Methods?
+----------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../040-this/topic`
+
+* Method is a *function* that is defined inside the class definition
+* |longrightarrow| C++ *knows* that an object is involved
+* ``_x`` in method body means: "the ``_x`` of the object"
+* Accessed via the hidded ``this`` pointer (see
+  :doc:`../040-this/topic`)
+
+``const`` Methods
+-----------------
 
 .. sidebar::
 
    **See also**
 
    * :doc:`../030-const/topic`
-   * :doc:`../050-references/topic`
-   * :doc:`../060-static/topic`
-   * :doc:`../070-operators/topic`
 
-**Problems**
+* Getters above are ``const`` but trivial
+* Even non-trivial methods can be ``const``
+* |longrightarrow| whenever a method does not modify a member, it
+  should be written as ``const``
 
-* ``double distance(point other)``: pass by copy
-* ``void move(int x, int y)``: shouldn't that be the ``+=`` operator,
-  only in 2D?
-* Shouldn't
+.. code-block:: c++
 
-  .. code-block:: c++
+   class point
+   {
+   public:
+       double abs() const
+       {
+           int hyp = _x*_x + _y*_y;  // <--- read-only member access -> const
+           return sqrt(hyp);
+       }
+   };
 
-     std::cout << "distance of (" << p.x() << ',' << p.y() << ") from origin: "  << d_orig << std::endl;
+Non ``const`` Methods
+---------------------
 
-  be shorter?
+* Moving a point obviously must modify its coordinates
+* |longrightarrow| cannot be ``const``
 
-  .. code-block:: c++
+.. code-block:: c++
 
-     std::cout << "distance of " << p << " from origin: "  << d_orig << std::endl;
+   class point
+   {
+   public:
+       void move(int x, int y)
+       {
+           _x += x;
+           _y += y;
+       }
+   };
+
+* Non ``const`` methods cannot be called on objects that are ``const``
+* |longrightarrow| that is the deal, after all
+
+.. code-block:: c++
+
+   const point p{1,2};
+   p.move(3,4);         // <--- ERROR: passing ‘const point’ as ‘this’ argument discards qualifiers
+
+* Error message is a little "C++ standardese"

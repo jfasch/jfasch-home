@@ -14,7 +14,8 @@ ADD_EXECUTABLE(
   cpp-default-constructor.cpp
   cpp-constructor-coordinates.cpp
   cpp-eq-ne.cpp
-  cpp-move.cpp
+  cpp-move-op-pluseq.cpp
+  cpp-move-func.cpp
   cpp-add-sub.cpp
   cpp-abs.cpp
   cpp-distance.cpp

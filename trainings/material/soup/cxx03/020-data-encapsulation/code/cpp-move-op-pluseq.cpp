@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "point.h"
 
-TEST(point_cpp_suite, move)
+TEST(point_cpp_suite, move_op_pluseq)
 {
     point p{1,2};
     const point vec{3,4};

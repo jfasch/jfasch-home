@@ -38,6 +38,12 @@ public:
         return diff.abs();
     }
 
+    void move(int x, int y)
+    {
+        _x += x;
+        _y += y;
+    }
+
 private:
     int _x{};
     int _y{};

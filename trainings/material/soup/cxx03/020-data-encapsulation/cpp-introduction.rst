@@ -277,7 +277,7 @@ Operator Overloading
               }
           };
 
-       .. literalinclude:: code/cpp-move.cpp
+       .. literalinclude:: code/cpp-move-op-pluseq.cpp
           :caption: Usage
 	  :language: c++
 
