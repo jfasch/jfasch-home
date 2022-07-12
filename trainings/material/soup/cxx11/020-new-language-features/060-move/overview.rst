@@ -92,7 +92,7 @@ Move Semantics: Wish List
   that takes ownership
 * **Otherwise**, insert copy constructor as usual
 
-.. lvalue-definition:
+.. _lvalue-definition:
 
 Theory: Lvalues
 ---------------

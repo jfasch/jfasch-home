@@ -1,4 +1,4 @@
-.. ot-topic:: cxx11.new_language_features.livehack_string_move
+.. ot-topic:: cxx11.new_language_features.move.livehack_string_move
    :dependencies: cxx11.new_language_features.move.overview
 
 .. include:: <mmlalias.txt>

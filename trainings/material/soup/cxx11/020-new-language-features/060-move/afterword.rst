@@ -1,5 +1,5 @@
 .. ot-topic:: cxx11.new_language_features.move.afterword
-   :dependencies: cxx11.new_language_features.livehack_using_string_move
+   :dependencies: cxx11.new_language_features.move.livehack_using_string_move
 
 .. include:: <mmlalias.txt>
 
