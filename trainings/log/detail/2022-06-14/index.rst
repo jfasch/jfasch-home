@@ -103,8 +103,7 @@ Exercise
 Moving, “RValue References”
 ---------------------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-smartptr-move`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
 ---------------------------------------------------------

@@ -15,8 +15,7 @@ Topics
 
    050-delegating-ctor/topic
 
-   060-move/topic
-   060-move/livehack-smartptr-move
+   060-move/group
 
    range-based-for
    range-based-for-map

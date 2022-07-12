@@ -1,1 +1,1 @@
-#add_executable(rvalueref-motivation rvalueref-motivation.cc)
+ADD_SUBDIRECTORY(code)

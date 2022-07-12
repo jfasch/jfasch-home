@@ -25,7 +25,7 @@ The Spirit Of ``std::unique_ptr``
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
 * *Unique* resource ownership: only one pointer object is responsible
   for deleting the referenced object
@@ -35,7 +35,7 @@ The Spirit Of ``std::unique_ptr``
 * Only implicit when compiler can prove that no harm is done
 * ``unique_ptr`` is only one (though important) user of a new language
   feature:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
 Methods
 -------
@@ -64,7 +64,7 @@ Object of type ``std::unique_ptr`` behave like pointers in any respect
        <make_unique>` instead)
    * * ``std::unique_ptr(std::unique_ptr&& from)``
      * Move constructor; ``from`` is empty afterwards (see
-       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`)
+       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`)
    * * ``release()``
      * Returns pointer to managed object, *and releases ownership*
    * * ``reset(T* pointer)``
@@ -154,13 +154,13 @@ Explicitly Acknowledging Ownership Transfer: ``std::move()``
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
 * What is needed is a way of *explicit ownership tranfer*
 * |longrightarrow| Acknowledging terms and conditions
 * |longrightarrow| Moved-from pointer object becomes invalid
 * This is not specific to ``unique_ptr`` |longrightarrow|
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
 .. literalinclude:: code/unique-ptr-ownership-move.cpp
    :caption: :download:`code/unique-ptr-ownership-move.cpp`
@@ -175,7 +175,7 @@ Compiler Can Prove: Implicit Ownership Transfer
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
 * Function returns an object *by copy*
 * |longrightarrow| compiler knows that that object will never be used
@@ -183,7 +183,7 @@ Compiler Can Prove: Implicit Ownership Transfer
 * To the caller this object appears as *R-Value* (something that
   cannot be assigned to)
 * Enter :doc:`"R-Value References"
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/topic>`
+  </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
 * ``unique_ptr`` has a constructor that can accept an R-Value
   reference
 * |longrightarrow| ``&&``
@@ -207,7 +207,7 @@ How To Write Code That Can Take Ownership?
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
 * Ok, ``unique_ptr`` is programmed to take ownership if possible
 * What if I have code that wants to take ownership of a ``unique_ptr``
@@ -234,7 +234,7 @@ How To Write Code That Can Take Ownership?
    dragons!**
 
    See
-   :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/topic`
+   :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
    for more.
 
 Manipulating Pointer Content

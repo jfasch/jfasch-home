@@ -318,7 +318,7 @@ Day 5
     it does, its usage is more involved. Ownership transfer (this is
     what I like about it) is implemented using the outright genius
     :doc:`"move" mechanism (since C++11)
-    </trainings/material/soup/cxx11/020-new-language-features/060-move/topic>`,
+    </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`,
     and one needs to know a bit when the compiler fails to enforce the
     ownership transfer contract.
 
