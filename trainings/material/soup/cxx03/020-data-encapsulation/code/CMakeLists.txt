@@ -34,3 +34,7 @@ ADD_EXECUTABLE(c++03-default-ctor-compiler-generated c++03-default-ctor-compiler
 
 ADD_EXECUTABLE(c++03-default-ctor-compiler-generated-pitfall c++03-default-ctor-compiler-generated-pitfall.cpp)
 SET_SOURCE_FILES_PROPERTIES(c++03-default-ctor-compiler-generated-pitfall.cpp PROPERTIES COMPILE_FLAGS -Wno-uninitialized)
+
+ADD_EXECUTABLE(c++03-copy-string-10 c++03-copy-string-10.cpp)
+ADD_EXECUTABLE(c++03-copy-string-20-03 c++03-copy-string-20-03.cpp)
+ADD_EXECUTABLE(c++03-copy-string-20-11 c++03-copy-string-20-11.cpp)

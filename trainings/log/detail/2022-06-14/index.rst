@@ -134,39 +134,6 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
 
-**TODO**
-
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
-
-   * * Topic
-     * Description
-   * * Discussion: Thread Objects
-     * * Ctor starts code in thread -> plain function, std::function,
-         lambda
-       * No copy, only move (obviously)
-       * ``join()``, ``detach()``: terminating before join? live hack
-         that!
-   * * Extend :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
-     * * ``scoped_lock`` (see-also condvar)
-       * ``unique_lock``
-   * * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`:
-       add ``struct`` specialization
-     * 
-   * * Add literals to
-       :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
-     * ... and a "See also" to a literals live hackery
-   * * Memory Model
-     * See for example the unlocked ``answer``, ``answer_valid`` story
-   * * Semaphores (since 20)
-     * * Distill from `semaphore <https://en.cppreference.com/w/cpp/thread/counting_semaphore>`__
-       * Add "see-also"
-	 :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
-       * Add "see-also"
-	 :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
-
 Miscellaneous
 -------------
 

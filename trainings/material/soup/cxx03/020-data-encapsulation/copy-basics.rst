@@ -14,9 +14,7 @@ Copy Constructor, Assignment Operator
 Compiler Generated Copy Constructor
 -----------------------------------
 
-.. important::
-
-   **Rule**
+.. admonition:: **Rule**
 
    Copy constructor and copy assignment operator is automatically
    generated if ...
@@ -61,7 +59,13 @@ Manually Written Copy Constructor And Assignment Operator
    **Careful**: if you find yourself writing a copy constructor ...
 
    * You should be writing an assignment operator just as well
+   * You should probably implement :doc:`move semantics
+     </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
+     just as well
+   * You should probably implement a destructor just as well
    * You should probably be careful, and read :doc:`object-copy`
+
+   |longrightarrow| *Rule of 5/0*
 
 For demonstration purposes: a completely nonsensical copy constructor
 and assignment operator:

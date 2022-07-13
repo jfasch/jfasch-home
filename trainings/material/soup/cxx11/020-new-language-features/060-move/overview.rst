@@ -6,8 +6,8 @@
 .. include:: <mmlalias.txt>
 
 
-Overview
-========
+Overview (Lvalues, Rvalues, And Such)
+=====================================
 
 .. contents::
    :local:
@@ -274,20 +274,20 @@ Enter Move Constructor And Move Assignment
        foo& operator=(foo&&) noexcept;
    };
 
-**Rules**
+.. admonition:: **Rules**
 
-* *Move constructor* is implicitly defined by compiler as member- (and
-  base-) wise move if there are no user-declared ...
-
-  * Destructor
-  * Copy constructor
-  * Copy assignment operator
-  * Move assignment operator
-
-* *Move assignment operator* is implicitly defined by compiler as
-  member- (and base-) wise move if there are no user-declared ...
-
-  * Destructor
-  * Copy constructor
-  * Copy assignment operator
-  * Move constructor
+   * *Move constructor* is implicitly defined by compiler as member-
+     (and base-) wise move if there are no user-declared ...
+   
+     * Destructor
+     * Copy constructor
+     * Copy assignment operator
+     * Move assignment operator
+   
+   * *Move assignment operator* is implicitly defined by compiler as
+     member- (and base-) wise move if there are no user-declared ...
+   
+     * Destructor
+     * Copy constructor
+     * Copy assignment operator
+     * Move constructor
