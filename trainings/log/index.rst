@@ -15,6 +15,14 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+C++: A New Language Starting In 2011 (2022-07-26 - 2022-07-27)
+--------------------------------------------------------------
+
+An overview of "The New C++" within two days, for experienced C++
+developers.
+
+(:doc:`More ... <detail/2022-07-26/index>`)
+
 C++: A New Language Starting In 2011 (2022-06-14 - 2022-06-15)
 --------------------------------------------------------------
 
