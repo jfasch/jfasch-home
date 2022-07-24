@@ -1,4 +1,4 @@
-.. ot-topic:: cxx11.new_language_features.initializer_list
+.. ot-topic:: cxx11.new_language_features.brace_initialization.implementor_view
 
 .. include:: <mmlalias.txt>
 
@@ -9,8 +9,8 @@
 .. contents::
    :local:
 
-Basics
-------
+``std::initializer_list``
+-------------------------
 
 .. sidebar::
 

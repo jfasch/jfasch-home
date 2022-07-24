@@ -286,5 +286,5 @@ Block 3: C++
 
        Exercises: 
 
-       * CMake project 
-       * googletest-style unit tests - the exercise
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-point3d`
+       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-cuboid`

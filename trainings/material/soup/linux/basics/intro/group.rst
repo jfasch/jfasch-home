@@ -20,6 +20,13 @@ Introduction: Concepts and Terminology
    login
    wsl
 
+**Exercises**
+
+.. toctree::
+   :maxdepth: 1
+
+   exercises/fh-questions
+
 **Dependencies**
 
 .. ot-graph::

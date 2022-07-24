@@ -16,6 +16,7 @@ Contents
    raspberry-toolchain
    native-build
    cross-build
+   fh-questions
 
 Dependencies
 ------------

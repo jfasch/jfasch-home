@@ -1,11 +1,11 @@
-.. include:: <mmlalias.txt>
-
-.. ot-topic:: cxx11.new_language_features.brace_initialization
+.. ot-topic:: cxx11.new_language_features.brace_initialization.intro
    :dependencies: cxx11.new_language_features.auto
 
+.. include:: <mmlalias.txt>
 
-Brace Initialization
-====================
+
+Brace Initialization: Introduction
+==================================
 
 .. contents::
    :local:
@@ -120,11 +120,11 @@ Motivation: Member Array Initialization
 
    * * **Member Arrays**
 
-       * \textit{Cannot} be initialized
+       * *Cannot* be initialized
        * Must be filled in constructor body
-       * $\to$ inconsistent
-       * $\to$ loud
-       * $\to$ workarounds
+       * |longrightarrow| inconsistent
+       * |longrightarrow| loud
+       * |longrightarrow| workarounds
 
      * **Member Array Initialization**
 
@@ -167,6 +167,14 @@ language becomes ...
 * Readable
 * Memorizable (less exceptions)
 * Attractive?
+
+Good: Refuses To *Narrow* Built-In Types
+----------------------------------------
+
+.. code-block:: c++
+
+   int i = 1.5;       // <--- silently narrowing to 1
+   int j{1.5};        // <--- error: narrowing conversion of ‘1.2e+0’ from ‘double’ to ‘int’
 
 Examples
 --------

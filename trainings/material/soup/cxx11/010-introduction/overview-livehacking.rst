@@ -41,7 +41,7 @@ Real Container Initialization
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
 
 * Think C's "array of ``struct``" initialization
 * ``std::map`` is *initialized* |longrightarrow| could be ``const``!
@@ -285,7 +285,7 @@ Wrapping Up: Initializer
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/initializer-list`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
 
 * Lost the ability to *initialize* a ``TodoList`` object
   (|longrightarrow| ``add_item()``)

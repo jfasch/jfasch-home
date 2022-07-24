@@ -19,6 +19,7 @@ Contents
    private-directory-question
    public-directory
    public-directory-question
+   fh-questions
 
 Dependencies
 ------------

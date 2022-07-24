@@ -1,2 +1,3 @@
 ADD_SUBDIRECTORY(code)
+ADD_SUBDIRECTORY(030-brace-initialization)
 ADD_SUBDIRECTORY(060-move)

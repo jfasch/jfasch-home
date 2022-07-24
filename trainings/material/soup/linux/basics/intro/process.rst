@@ -32,7 +32,8 @@ Solution: Scheduling (Time Slices)
 
 * Scheduling
 * Time slicing
-* Even on a single CPU, many can given the illusion of CPU ownership
+* Even on a single CPU, many can be given the illusion of CPU
+  ownership
 * |longrightarrow| the more infinite loops, the slower that illusion
   becomes, obviously
 * |longrightarrow| best to not spin until an event happens, but rather

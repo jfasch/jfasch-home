@@ -56,8 +56,10 @@ Things That Simply Deserved Fixing Since Ages
 Brace Initialization
 ....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/initializer-list`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
 
 New OO keywords: override, final, default, delete
 .................................................

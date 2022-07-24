@@ -124,7 +124,7 @@ Custom Constructor: Usage
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
 
 * User defined initialization
 * Programmer responsible for parameter signature

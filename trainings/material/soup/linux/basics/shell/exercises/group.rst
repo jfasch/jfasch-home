@@ -15,6 +15,7 @@ Contents
 
    cp-mv-mkdir-rm/group
    ls/group
+   fh-questions
 
 Dependencies
 ------------

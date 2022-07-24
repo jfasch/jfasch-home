@@ -23,8 +23,7 @@ Topics
    070-miscellaneous/topic
    010-strongly-typed-enums/topic
 
-   030-brace-initialization/topic
-   initializer-list
+   030-brace-initialization/group
 
    structured-binding
    auto

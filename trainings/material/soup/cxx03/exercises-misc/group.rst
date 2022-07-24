@@ -15,6 +15,7 @@ Contents
 
    sum-integers-from-stdin/exercise
    american-flag/exercise
+   fh-questions
 
 Graph
 -----
