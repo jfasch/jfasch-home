@@ -149,6 +149,7 @@ From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-in
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/mess`
 
 New OO keywords: override, final, default, delete
 .................................................
