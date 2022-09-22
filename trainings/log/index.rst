@@ -15,6 +15,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Linux Basics (2022-10-03 - 2022-10-05)
+--------------------------------------
+
+Der Kurs wurde über meinen Partner `tecTrain
+<https://www.tectrain.at/seminare/seminar-themen/programmierung/python-grundlagen>`__
+gebucht.
+
+(:doc:`Mehr ... <detail/2022-10-03/index>`)
+
 C++: A New Language Starting In 2011 (2022-07-26 - 2022-07-27)
 --------------------------------------------------------------
 
