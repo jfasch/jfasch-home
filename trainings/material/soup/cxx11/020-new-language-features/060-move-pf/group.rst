@@ -1,8 +1,8 @@
-.. ot-group:: cxx11.new_language_features.move
+.. ot-group:: cxx11.new_language_features.move_pf
 
 
-Move Semantics/Rvalue References
-================================
+Move Semantics, Rvalue References, Perfect Forwarding
+=====================================================
 
 .. contents::
    :local:
@@ -16,6 +16,7 @@ Topics
    overview
    livehack-string-move
    livehack-using-string-move
+   perfect-forwarding
    afterword
 
 Alternative Livehacking
@@ -30,4 +31,4 @@ Dependencies
 ------------
 	      
 .. ot-graph::
-   :entries: cxx11.new_language_features.move
+   :entries: cxx11.new_language_features.move_pf

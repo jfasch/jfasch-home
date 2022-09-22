@@ -32,8 +32,15 @@ Make the following tests pass:
 Step 2: *Remove*
 ----------------
 
+.. sidebar::
+
+   **Documentation**
+
+   * `std::vector::erase
+     <https://en.cppreference.com/w/cpp/container/vector/erase>`__
+
 Implement a ``remove_by_int()`` method such that the following test
-passes. Read carefully how the return value of the `erase() method
+passes. Read careful how the return value of the `erase() method
 <https://en.cppreference.com/w/cpp/container/vector/erase>`__ of
 ``std::vector`` is used to modify a container while iterating over it.
 

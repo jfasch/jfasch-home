@@ -1,4 +1,4 @@
-.. ot-topic:: cxx11.new_language_features.move.overview
+.. ot-topic:: cxx11.new_language_features.move_pf.overview
    :dependencies: cxx11.smart_pointers.unique_ptr,
 		  cxx03.functions_and_methods.references,
 		  cxx03.data_encapsulation.object_copy
@@ -193,14 +193,14 @@ Rvalue References: So What Is That?
   .. code-block:: c++
   
      int&& rvr = 42;   // <--- bound to an rvalue (an int literal)
-     rvr = 42;          // <--- assigned to!
+     rvr = 42;         // <--- assigned to!
 
 * Cannot bind to lvalues
 
   .. code-block:: c++
 
      int a = 666;
-     int&& rvr = a;   // <--- error: cannot bind rvalue reference to lvalue
+     int&& rvr = a;    // <--- error: cannot bind rvalue reference to lvalue
 
 * But rvalue references just don't make sense as standalone variables
 * |longrightarrow| Preferred use as function parameters for overload

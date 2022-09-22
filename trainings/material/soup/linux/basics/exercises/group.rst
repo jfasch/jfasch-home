@@ -1,8 +1,8 @@
 .. ot-group:: linux.basics.exercises
 
 
-Exercises: Linux Basics
-=======================
+Exercises/Exams: Linux Basics
+=============================
 
 .. contents::
    :local:

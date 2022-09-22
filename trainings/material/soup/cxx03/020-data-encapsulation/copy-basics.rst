@@ -27,7 +27,7 @@ Compiler Generated Copy Constructor
    **See also**
 
    * :doc:`object-copy`
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`
 
 The venerable ``class point`` from :doc:`cpp-introduction` is simple
 
@@ -60,7 +60,7 @@ Manually Written Copy Constructor And Assignment Operator
 
    * You should be writing an assignment operator just as well
    * You should probably implement :doc:`move semantics
-     </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
+     </trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group>`
      just as well
    * You should probably implement a destructor just as well
    * You should probably be careful, and read :doc:`object-copy`

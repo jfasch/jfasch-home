@@ -132,6 +132,12 @@ Explicit ``move()`` Method Maybe?
 Stop!!!
 -------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`uniqueptr`
+
 * But lets stop here ...
 * ... and see what :doc:`uniqueptr` (and C++11) can do
 

@@ -8,6 +8,9 @@
 Threads in C++
 ==============
 
+.. contents::
+   :local:
+
 .. code-block:: c++
 
    #include <thread>

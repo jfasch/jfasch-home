@@ -15,7 +15,7 @@ Step 1: Transform into ``std::shared_ptr``
 ------------------------------------------
 
 Continuing from :doc:`bag-unique`, create a similar class
-``BagShared`` that contains pointers of type ``std::unique_ptr<Item>``
+``BagShared`` that contains pointers of type ``std::shared_ptr<Item>``
 such that the tests below pass.
 
 .. literalinclude:: code/bag-shared-basic-suite.cpp

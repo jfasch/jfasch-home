@@ -44,7 +44,7 @@ Sideway: ``std::transform``
    * `std::transform
      <https://en.cppreference.com/w/cpp/algorithm/transform>`__
 
-* Problem: manual loops to transform an arry (or any container) into
+* Problem: manual loops to transform an array (or any container) into
   something else
 * Loop body contains transformation code
 * |longrightarrow| cries for duplicate code elimination (here: using

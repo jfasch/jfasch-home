@@ -139,6 +139,9 @@ Exercise
 
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-copy`
 
+  `Solution on Github: bag-copy.h
+  <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-copy.h>`__
+
 Things That Simply Deserved Fixing Since Ages
 ---------------------------------------------
 
@@ -182,20 +185,18 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/exercises/bag-unique` (
+  `Solution on Github: bag-unique.h
+  <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-unique.h>`__)
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
-
-Exercise
-........
-
-* :doc:`/trainings/material/soup/cxx11/exercises/bag-unique`
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
 
 Moving, “RValue References”
 ---------------------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`
 
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
 ---------------------------------------------------------

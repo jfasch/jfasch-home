@@ -33,6 +33,20 @@ RAII - Resource Acquisition Is Initialization
 * Objects are destroyed *at end of block*
 * Unlike Java, Python, ... (garbage collection)
 * |longrightarrow| **Exception safety!**
+
+Simplest: ``std::lock_guard``
+-----------------------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `std::lock_guard
+     <https://en.cppreference.com/w/cpp/thread/lock_guard>`__
+
+* Obtains (single) lock in constructor
+* Releases lock in destructor
+* |longrightarrow| good for single lock
   
 .. code-block:: c++
    :caption: ``std::lock_guard``

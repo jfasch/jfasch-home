@@ -1,5 +1,5 @@
 .. ot-topic:: cxx11.new_language_features.miscellaneous
-   :dependencies: cxx11.new_language_features.move.overview
+   :dependencies: cxx11.new_language_features.move_pf.overview
 
 .. include:: <mmlalias.txt>
 

@@ -105,7 +105,7 @@ Exercise
 Moving, “RValue References”
 ---------------------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`
 
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
 ---------------------------------------------------------

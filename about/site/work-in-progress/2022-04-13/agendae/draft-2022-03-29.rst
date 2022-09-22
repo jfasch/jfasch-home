@@ -316,7 +316,7 @@ In a test driven manner, lets do
 
 .. [#rvalue-ref] If somebody asks, talk about :doc:`C++ 11 move
                  semantics
-                 </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
+                 </trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group>`
                  |:wink:|
 
 .. [#code-structure] 

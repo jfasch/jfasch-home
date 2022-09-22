@@ -7,6 +7,9 @@
 Introduction
 ============
 
+.. contents::
+   :local:
+
 Why Smart Pointers?
 -------------------
 
