@@ -4,6 +4,10 @@
 Linux Basics (2022-10-03 - 2022-10-05)
 ======================================
 
+.. note::
+
+   This course is in preparation
+
 .. contents::
    :local:
 

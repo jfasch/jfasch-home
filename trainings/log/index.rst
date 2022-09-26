@@ -15,6 +15,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python (2022-10-17 - 2022-10-21)
+--------------------------------
+
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+
+(:doc:`Mehr ... <detail/2022-10-17/index>`)
+   
 Linux Basics (2022-10-03 - 2022-10-05)
 --------------------------------------
 
