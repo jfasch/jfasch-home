@@ -11,6 +11,15 @@
 The Raspberry Toolchain
 =======================
 
+.. important::
+
+   This article is defunct; check out :doc:`/blog/2022/09/cross-raspi`
+   instead!
+
+   Reason: C++ is much more involved, and ``libstdc++`` itself (as
+   from Linaro) depends on a specific ``glibc`` version. The Raspberry
+   situation sure does not meet these requirements.
+
 Toolchains are always a pain in the butt. Here's a writeup (as of
 2022-03-29) of something that I found workable.
 
