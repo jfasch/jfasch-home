@@ -15,6 +15,7 @@ Linux Basics
    intro/group
    shell/group
    permissions/group
+   text-tools/group
    archiving-compression/group
    io-redirection-pipes/group
 

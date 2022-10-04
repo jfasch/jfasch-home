@@ -30,11 +30,6 @@ a must, please send suggestions to :doc:`your trainer
 
   * :doc:`/trainings/material/soup/linux/basics/intro/overview`
   * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
-  * :doc:`/trainings/material/soup/linux/basics/intro/process`
-  * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
-  * :doc:`/trainings/material/soup/linux/basics/intro/environment`
-  * :doc:`/trainings/material/soup/linux/basics/intro/login`
-  * :doc:`/trainings/material/soup/linux/basics/intro/exercises/fh-questions`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/group`
 
@@ -49,6 +44,13 @@ a must, please send suggestions to :doc:`your trainer
   * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
   * :doc:`/trainings/material/soup/linux/basics/shell/exercises/group`
 
+* More About Processes
+
+  * :doc:`/trainings/material/soup/linux/basics/intro/process`
+  * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
+  * :doc:`/trainings/material/soup/linux/basics/intro/environment`
+  * :doc:`/trainings/material/soup/linux/basics/intro/login`
+
 * :doc:`/trainings/material/soup/linux/basics/permissions/group`
 
   * :doc:`/trainings/material/soup/linux/basics/permissions/group`
@@ -58,7 +60,17 @@ a must, please send suggestions to :doc:`your trainer
   * :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
   * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
 
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/overview`
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/cat`
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/head-tail`
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/cut`
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/less`
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/grep`
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/exercises`
+
+* :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
 
   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/overview`
   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/gzip`
