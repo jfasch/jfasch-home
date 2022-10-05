@@ -176,8 +176,8 @@ redirections of all three standard streams in a way that ``grep``
    When multiple redirections are used, the operations are executed
    from left to right!
 
-   This might sound so important from what we've learned so far - but
-   see, for example, :doc:`io-redirection-swap-stdout-stderr`.
+   This might not sound so important from what we've learned so far -
+   but see, for example, :doc:`io-redirection-swap-stdout-stderr`.
 
 .. .. % --------------------------------------------------------------------
 .. .. \begin{frame}[fragile]

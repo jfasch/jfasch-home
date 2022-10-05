@@ -4,27 +4,17 @@
 Linux Basics (2022-10-03 - 2022-10-05)
 ======================================
 
-.. note::
-
-   This course is in preparation
-
 .. contents::
    :local:
 
-Preparation
------------
+.. sidebar::
 
-Please bring a computer that runs any Linux that is ideally typically
-used in your organization.
+   * Course: :doc:`/trainings/material/soup/linux/basics/group`
+   * :download:`PDF (unmaintained)
+     </trainings/material/pdf/010-linux-basics.pdf>`
 
 Agenda
 ------
-
-Following a copy of the stock course
-:doc:`/trainings/material/soup/linux/basics/group`. This is in no way
-a must, please send suggestions to :doc:`your trainer
-</about/myself/contact>`.
-
 
 * :doc:`/trainings/material/soup/linux/basics/intro/group`
 
@@ -68,13 +58,8 @@ a must, please send suggestions to :doc:`your trainer
   * :doc:`/trainings/material/soup/linux/basics/text-tools/cut`
   * :doc:`/trainings/material/soup/linux/basics/text-tools/less`
   * :doc:`/trainings/material/soup/linux/basics/text-tools/grep`
+  * :doc:`/trainings/material/soup/linux/basics/text-tools/find`
   * :doc:`/trainings/material/soup/linux/basics/text-tools/exercises`
-
-* :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
-
-  * :doc:`/trainings/material/soup/linux/basics/archiving-compression/overview`
-  * :doc:`/trainings/material/soup/linux/basics/archiving-compression/gzip`
-  * :doc:`/trainings/material/soup/linux/basics/archiving-compression/tar`
 
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
 
@@ -82,6 +67,13 @@ a must, please send suggestions to :doc:`your trainer
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
+
+* :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/archiving-compression/overview`
+  * :doc:`/trainings/material/soup/linux/basics/archiving-compression/gzip`
+  * :doc:`/trainings/material/soup/linux/basics/archiving-compression/tar`
+  * :doc:`/trainings/material/soup/linux/basics/archiving-compression/exercises`
 
 * :doc:`/trainings/material/soup/linux/ssh/group`
 

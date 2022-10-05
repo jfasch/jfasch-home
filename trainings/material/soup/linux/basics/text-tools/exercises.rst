@@ -25,3 +25,8 @@ Exercises: Inspecting Text Files
    Transfer Protocol (FTP). Note: port numbers (Unix speak:
    *services*) are registered in ``/etc/services``.
 #. Use ``less`` for the same task.
+#. Legen Sie zwei symbolische Links an, die aufeinander zeigen. Was
+   geschieht, wenn Sie einen von ihnen dereferenzieren (z.B. mit
+   ``cat``)?
+#. Suchen Sie in ``/var`` alle Files, die ̈alter als eine Stunde und
+   kleiner als 50k sind.

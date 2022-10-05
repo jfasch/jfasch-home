@@ -18,6 +18,7 @@ Tools: Inspecting Text Files
    cut
    less
    grep
+   find
    exercises
 
 **Dependencies**

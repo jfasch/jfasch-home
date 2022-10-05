@@ -16,12 +16,12 @@ Archiving and Compression
    gzip
    tar
 
-.. **Exercises**
+**Exercises**
 
-.. .. toctree::
-..    :maxdepth: 1
-.. 
-..    exercises/group
+.. toctree::
+   :maxdepth: 1
+
+   exercises
 
 **Dependencies**
 
