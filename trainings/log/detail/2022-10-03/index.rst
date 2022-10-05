@@ -85,4 +85,5 @@ Agenda
   * :doc:`/trainings/material/soup/linux/ssh/links`
   * :doc:`/trainings/material/soup/linux/ssh/exercises/group`
 
+
 * :doc:`/trainings/material/soup/linux/basics/exercises/group`
