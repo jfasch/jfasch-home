@@ -6,4 +6,4 @@ ADD_SUBDIRECTORY(060-stl/040-sequential-containers/code)
 ADD_SUBDIRECTORY(060-stl/050-associative-containers/code)
 ADD_SUBDIRECTORY(060-stl/exercises/reverse-string)
 
-
+ADD_SUBDIRECTORY(100-inheritance-oo-design)

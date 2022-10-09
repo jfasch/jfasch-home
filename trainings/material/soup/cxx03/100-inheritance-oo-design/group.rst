@@ -1,4 +1,6 @@
-Inheritance and Object Oriented Design
+.. ot-group:: cxx03.inheritance_oo
+
+Inheritance And Object Oriented Design
 ======================================
 
 .. contents::
@@ -9,14 +11,17 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   000-todo/topic
+   basics
+   private-protected
+   virtual-method
+   polymorphism
+   destructor
+   virtual-destructor
+   interface
 
-Group Description
------------------
-	      
-.. ot-group:: cxx03.inheritance_oo
+Dependencies
+------------
 
 .. ot-graph::
    :entries: cxx03.inheritance_oo

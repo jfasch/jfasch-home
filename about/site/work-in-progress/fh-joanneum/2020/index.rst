@@ -9,3 +9,4 @@ Embedded Computing 2020
 
    ss2022
    ss2022-log/index
+   ws2022

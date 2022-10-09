@@ -1,87 +1,84 @@
 .. include:: <mmlalias.txt>
 
 
-WS2022
+SS2022
 ======
 
 .. contents::
    :local:
 
-Building A Cross Toolchain: ``crosstool-ng``
---------------------------------------------
+Plan: Evolution
+---------------
 
-* https://crosstool-ng.github.io/docs/install/
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
 
-* Install necessary packages
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 2022-10-06
+     * 
+     * 3
+     * C++: Inheritance
+       
+       * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+       * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
+       * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
 
-  * Fedora:
-    https://github.com/crosstool-ng/crosstool-ng/blob/master/testing/docker/fedora35/Dockerfile
+   * * 
+     * 2022-10-10
+     * 3
+     * C++: Inheritance
 
-    .. code-block:: console
+       * Create ``Themometer`` interface for
 
-       $ sudo dnf install autoconf gperf bison file flex texinfo help2man gcc-c++ libtool make patch \
-         ncurses-devel python3-devel perl-Thread-Queue bzip2 git wget which xz unzip rsync diffutils \
-	 meson ninja-build
-    
-  * Ubuntu likewise jjj
+	 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/exercises-fh/exercise-FH-sensor-oo-random-sensor`
+	 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/exercises-fh/exercise-FH-sensor-oo`
 
-* Download tarball; https://crosstool-ng.github.io/download/
-
-  .. code-block:: console
-
-     $ wget http://crosstool-ng.org/download/crosstool-ng/crosstool-ng-1.25.0.tar.xz
-
-* Build and install
-
-  .. code-block:: console
-
-     $ tar xf crosstool-ng-1.25.0.tar.xz
-     $ cd crosstool-ng-1.25.0/
-     $ ./configure --prefix=/home/jfasch/cross/crosstool-ng-1.25.0
-     $ make
-     $ make install
-
-  Test:
-
-  .. code-block:: console
-
-     $ ct-ng --help
-     Usage: gmake [options] [target] ...
-     Options:
-       -b, -m                      Ignored for compatibility.
-       -B, --always-make           Unconditionally make all targets.
-     ...
-
-* Configure toolchain build;
-  https://crosstool-ng.github.io/docs/configuration/
-
-  Create toolchain build directory
-
-  .. code-block:: console
-  
-     $ mkdir -p ~/cross/toolchains/raspberry/build
-     $ cd ~/cross/toolchains/raspberry/build
-
-  Fortunately there is a sample config for RPi 4 available,
-
-  .. code-block:: console
-
-     $ ct-ng list-samples
-     ... many ...
-     $ ct-ng list-samples|grep rpi
-     [G...]   aarch64-rpi3-linux-gnu
-     [G...]   aarch64-rpi4-linux-gnu
-     [G...]   armv7-rpi2-linux-gnueabihf
-     [G...]   armv8-rpi3-linux-gnueabihf
-     [G...]   armv8-rpi4-linux-gnueabihf
-
-  ``armv8-rpi4-linux-gnueabihf`` is what we want (Pi has not yet
-  arrived in 64bit land); create a base config for it. The following
-  command creates a file ``.config`` in the current working directory,
-
-  .. code-block:: console
-
-     $ ct-ng armv8-rpi4-linux-gnueabihf
-     $ ls -l .config 
-     -rw-r--r--. 1 jfasch jfasch 23168 Sep 21 11:38 .config
-		  
+   * * 2022-10-28
+     * 
+     * 3
+     *
+   * * 
+     * 2022-11-02
+     * 3
+     *
+   * * 2022-11-11
+     * 
+     * 3
+     *
+   * *
+     * 2022-11-15
+     * 4
+     *
+   * * 
+     * 2022-11-22
+     * 4
+     *
+   * * 
+     * 2022-11-29
+     * 4
+     *
+   * * 2022-12-07
+     * 
+     * 3
+     *
+   * * 
+     * 2022-12-13
+     * 4
+     *
+   * * 2022-12-21
+     * 
+     * 3
+     *
+   * * 
+     * 2023-01-10
+     * 4
+     *
+   * * 
+     * 2023-01-17
+     * 4
+     *

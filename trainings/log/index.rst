@@ -15,6 +15,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Linux Systems Programming (2023-02-13 - 2023-02-17)
+---------------------------------------------------
+
+Dieser Kurs ist in Vorbereitung.
+
+(:doc:`Mehr ... <detail/2022-XX-XX-sysprog/index>`)
+
 Python (2022-10-17 - 2022-10-21)
 --------------------------------
 

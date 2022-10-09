@@ -23,7 +23,7 @@ Directories durchsuchen mit ``find``
 ``find`` geht ein Directory rekursiv durch und schreibt (ohne
 Optionen) alle Einträge auf ``stdout``.
 
-**Alle Einträge unterhalb des CWD**
+**Alle Einträge unterhalb des** ``CWD``
 
 .. code-block:: console
 
@@ -74,14 +74,14 @@ Optionen) alle Einträge auf ``stdout``.
 ``find``: Beispiele
 -------------------
 
-**Alle Einträge unter ``/etc``, die ``net`` heissen**
+**Alle Einträge unter** ``/etc`` **, die** ``net`` **heissen**
 
 .. code-block:: console
 
    $ find /etc -name net
 
-**Alle Einträge unter ``/etc``, die mit ``net`` beginnen. ``find``
-versteht Shell-Globs, aber Vorsicht: Quoting nicht vergessen!**
+**Alle Einträge unter** ``/etc`` **, die mit** ``net`` **beginnen.** ``find``
+**versteht Shell-Globs, aber Vorsicht: Quoting nicht vergessen!**
 
 .. code-block:: console
 
@@ -94,7 +94,7 @@ versteht Shell-Globs, aber Vorsicht: Quoting nicht vergessen!**
 
    $ find ~ -type d
 
-**Alle Entries in ``/var``, die jünger als 10 Minuten sind:**
+**Alle Entries in** ``/var`` **, die jünger als 10 Minuten sind:**
 
 .. code-block:: console
 
@@ -120,7 +120,7 @@ Kriterien können mit folgenden Operatoren verknüpft werden
 ``find``: Verknüpfungen: Beispiele
 ----------------------------------
 
-**Alle Einträge unter ``/var``, die ``root`` gehören und jünger als 30 Minuten sind:**
+**Alle Einträge unter** ``/var`` **, die** ``root`` **gehören und jünger als 30 Minuten sind:**
 
 .. code-block:: console
 
