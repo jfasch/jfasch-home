@@ -1,13 +1,59 @@
 .. include:: <mmlalias.txt>
 
-Agenda: Linux Systemnahe Programming
-====================================
+Linux Systems Programming (2023-02-13 - 2023-02-17)
+===================================================
 
 .. contents::
    :local:
 
+Programming Environment
+-----------------------
+
+WSL For Core Linux Topics
+.........................
+
+If possible, we should use WSL for core Linux topics. Local editing in
+Visual Studio Code, local compilation on a virtualized Ubuntu, local
+running.
+
+* :doc:`/trainings/material/soup/linux/basics/intro/wsl` (my own $0.02)
+* `Microsoft: Set up a WSL development environment <https://learn.microsoft.com/en-us/windows/wsl/setup/environment>`__
+* `Get started using Visual Studio Code with Windows Subsystem for
+  Linux
+  <https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode>`__
+
+Cross Development For Hardware Topics
+.....................................
+
+For the more involved hardware related topics, I'll bring a Raspberry
+Pi and some network equipment and build up a local network where we
+can log in from our PCs.
+
+Please check that connecting to some foreign untrusted LAN is
+permitted IT-wise.
+
+More Detailed Topics
+--------------------
+
+Those will make it into the agenda below.
+
+* GPIO overview: ``libgpiod`` (documentation `here
+  <https://libgpiod.readthedocs.io/en/latest/index.html>`__)
+* I2C by example
+
+  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
+  * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
+
+* Toolchain and cross compiling
+
+  * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
+  * :doc:`/blog/2022/09/cross-raspi`
+
+Agenda (To Be Reworked)
+-----------------------
+
 Tag 1: Überblick
-----------------
+................
 
 Ziel ist es, mit Hilfe der Shell/Commandline einen Überlick über die
 Systemkonzepte zu vermitteln, ohne noch einen Strich zu
@@ -23,7 +69,7 @@ den folgenden Kurstagen programmatisch behaldelt werden.
 * :doc:`/trainings/material/soup/linux/ssh/group`
 
 Tag 2: (File) I/O und Prozesse
-------------------------------
+..............................
 
 Files und Prozesse sind die Eckpfeiler des UNIX-Designs. Sehr stabile
 Konzepte, die seit ihrer "Erfindung" in den Siebzigerjahren des
@@ -41,7 +87,7 @@ Programmierung (siehe unten) baut darauf auf.
   * :doc:`/trainings/material/soup/linux/sysprog/file-io/group`
 
 Tag 3: Netzwerkprogrammierung (inklusive CAN-Bus)
--------------------------------------------------
+.................................................
 
 Siehe :doc:`/trainings/repertoire/sysprog/network`
 
@@ -51,7 +97,7 @@ Siehe :doc:`/trainings/repertoire/sysprog/network`
 * Fortgeschrittene Paradigmen wie Event-Driven Programming
 
 Tag 4: Multithreading, und Realtime
------------------------------------
+...................................
 
 Siehe :doc:`/trainings/repertoire/sysprog/multithreading`
 
@@ -75,7 +121,7 @@ Siehe :doc:`/trainings/repertoire/sysprog/multithreading`
      * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
 
 Tag 5: Verschiedenes aus der Hardware-Ecke
-------------------------------------------
+..........................................
 
 * Eine Auswahl aus
   :doc:`/trainings/material/soup/linux/hardware/group`

@@ -20,7 +20,7 @@ Linux Systems Programming (2023-02-13 - 2023-02-17)
 
 Dieser Kurs ist in Vorbereitung.
 
-(:doc:`Mehr ... <detail/2022-XX-XX-sysprog/index>`)
+(:doc:`Mehr ... <detail/2023-02-13/index>`)
 
 Python (2022-10-17 - 2022-10-21)
 --------------------------------
@@ -28,6 +28,14 @@ Python (2022-10-17 - 2022-10-21)
 Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
 
 (:doc:`Mehr ... <detail/2022-10-17/index>`)
+
+C++: A New Language Starting In 2011 (2022-10-11 - 2022-10-13)
+--------------------------------------------------------------
+
+An overview of "The New C++" within two days, for experienced C++
+developers.
+
+(:doc:`More ... <detail/2022-10-11/index>`)
    
 Linux Basics (2022-10-03 - 2022-10-05)
 --------------------------------------
