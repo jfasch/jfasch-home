@@ -47,7 +47,7 @@ Interfaces
    {
    public:
        virtual ~Interface() {}
-	 virtual void method() const = 0;
+       virtual void method() const = 0;
    };
   
 * *Ideally* nothing else

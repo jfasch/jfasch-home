@@ -20,6 +20,14 @@ Topics
    virtual-destructor
    interface
 
+Exercises
+---------
+
+.. toctree::
+   :maxdepth: 1
+
+   exercise-thermometer-interface/exercise
+
 Dependencies
 ------------
 
