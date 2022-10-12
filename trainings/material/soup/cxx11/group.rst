@@ -1,3 +1,6 @@
+.. ot-group:: cxx11
+
+
 C++ 11
 ======
 
@@ -13,6 +16,7 @@ Topics
    010-introduction/group
    020-new-language-features/group
    030-smart-pointers/group
+   035-perfect-forwarding/topic
    040-bind-function/group
    050-multithreading/group
    100-miscellaneous/group
@@ -22,8 +26,6 @@ Topics
 Group Description
 -----------------
 	      
-.. ot-group:: cxx11
-
 .. ot-graph::
    :entries: cxx11
 

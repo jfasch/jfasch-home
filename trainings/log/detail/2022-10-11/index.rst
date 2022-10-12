@@ -163,8 +163,8 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
 
-Moving, “RValue References”
----------------------------
+Moving, “RValue References”, And Perfect Forwarding
+---------------------------------------------------
 
 From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`
 
@@ -173,6 +173,9 @@ From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/livehack-using-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/afterword`
 
+Perfect forwarding *ain't moving*:
+
+* :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
 
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
 ---------------------------------------------------------

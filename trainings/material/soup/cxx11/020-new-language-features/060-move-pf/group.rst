@@ -16,7 +16,6 @@ Topics
    overview
    livehack-string-move
    livehack-using-string-move
-   perfect-forwarding
    afterword
 
 Alternative Livehacking

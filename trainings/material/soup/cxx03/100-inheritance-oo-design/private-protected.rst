@@ -7,4 +7,3 @@
 Inheritance: ``private``, ``protected`` (Implementation Inheritance)
 ====================================================================
 
-:doc:`000-todo/topic`
