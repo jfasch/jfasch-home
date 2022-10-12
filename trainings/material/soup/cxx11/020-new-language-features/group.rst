@@ -15,7 +15,7 @@ Topics
 
    050-delegating-ctor/topic
    055-constexpr/topic
-   060-move-pf/group
+   060-move/group
 
    range-based-for
    range-based-for-map

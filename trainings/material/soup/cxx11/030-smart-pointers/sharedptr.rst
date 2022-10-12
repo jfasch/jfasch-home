@@ -69,7 +69,7 @@ Object of type ``std::shared_ptr`` behave like pointers in any respect
        <make_shared>` instead); refcount is 1
    * * ``std::shared_ptr(std::shared_ptr&& from)``
      * Move constructor; ``from`` is empty afterwards (see
-       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`)
+       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`)
    * * ``reset(T* pointer)``
      * Replaces the managed object if any, possibly deleting it if
        refcount reaches zero. ``pointer`` can be ``nullptr``

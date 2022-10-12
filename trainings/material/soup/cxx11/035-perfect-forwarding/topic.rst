@@ -14,7 +14,7 @@ Universal References? Forwarding References? **REALLY?**
 --------------------------------------------------------
 
 This is a good ol' function that takes an :doc:`rvalue reference
-<../020-new-language-features/060-move-pf/group>` (to a
+<../020-new-language-features/060-move/group>` (to a
 ``std::string`` for that matter):
 
 .. code-block:: c++

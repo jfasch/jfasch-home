@@ -166,12 +166,12 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 Moving, “RValue References”, And Perfect Forwarding
 ---------------------------------------------------
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/overview`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/afterword`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
 
 Perfect forwarding *ain't moving*:
 
