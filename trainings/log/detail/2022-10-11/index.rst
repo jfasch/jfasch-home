@@ -166,7 +166,13 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 Moving, “RValue References”
 ---------------------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/group`
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/overview`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move-pf/afterword`
+
 
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
 ---------------------------------------------------------
