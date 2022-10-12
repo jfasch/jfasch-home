@@ -110,7 +110,8 @@ How do ``std::shared_ptr`` and ``std::unique_ptr`` compare?
 * ``std::shared_ptr``
 
   * Size of two pointers
-  * Copying manipulates the resource count
+  * Copying manipulates the resource count. *Expensive: atomic
+    instructions - memory barriers*
   * Copying manipulates non-adjacent memory locations
   * Usage is very easy (no ``std::move`` and such)
 
@@ -127,7 +128,7 @@ How do ``std::shared_ptr`` and ``std::unique_ptr`` compare?
 
 **How long does the pointed-to object live?**
 
-* Reference count is used to track share ownership
+* Reference count is used to track shared ownership
 * When reference count drops to zero, the object is *not referenced anymore*
 * |longrightarrow| deleted
 

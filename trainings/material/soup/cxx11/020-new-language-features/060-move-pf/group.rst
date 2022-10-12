@@ -1,8 +1,8 @@
 .. ot-group:: cxx11.new_language_features.move_pf
 
 
-Move Semantics, Rvalue References, Perfect Forwarding
-=====================================================
+Move Semantics, Rvalue References
+=================================
 
 .. contents::
    :local:

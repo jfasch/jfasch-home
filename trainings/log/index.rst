@@ -25,7 +25,7 @@ Dieser Kurs ist in Vorbereitung.
 Python (2022-10-17 - 2022-10-21)
 --------------------------------
 
-Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+Dieser Kurs ist in Vorbereitung.
 
 (:doc:`Mehr ... <detail/2022-10-17/index>`)
 

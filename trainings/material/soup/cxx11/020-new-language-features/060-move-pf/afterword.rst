@@ -98,7 +98,7 @@ All Said |longrightarrow| Guidelines
    * * Next operation after ``std::move`` is destruction or assignment
      * Don't trust the programmer that she left the object in a valid
        state
-   * * Move-from object must be left in a valid state
+   * * Moved-from object must be left in a valid state
      * Respect from you co-workers
    * * Don't ``std::move`` the return of a local variable
      * Useless: compiler does that anyway (that is the entire plan)
