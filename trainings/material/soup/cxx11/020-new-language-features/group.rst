@@ -14,7 +14,7 @@ Topics
    :maxdepth: 1
 
    050-delegating-ctor/topic
-
+   055-constexpr/topic
    060-move-pf/group
 
    range-based-for

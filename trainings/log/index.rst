@@ -32,7 +32,7 @@ Dieser Kurs ist in Vorbereitung.
 C++: A New Language Starting In 2011 (2022-10-11 - 2022-10-13)
 --------------------------------------------------------------
 
-An overview of "The New C++" within two days, for experienced C++
+An overview of "The New C++" within three days, for experienced C++
 developers.
 
 (:doc:`More ... <detail/2022-10-11/index>`)

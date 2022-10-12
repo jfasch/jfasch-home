@@ -4,8 +4,8 @@
    :dependencies: cxx11.functions_functions.function
 
 
-Threads Inroduction
-===================
+Threads Introduction
+====================
 
 Operating System Primitives
 ---------------------------

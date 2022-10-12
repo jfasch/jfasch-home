@@ -4,7 +4,7 @@ TEST(lambda_capure_suite, all_by_copy)
 {
     int x = 1, y = 2;
 
-    auto fun = [=](){   // <-- all by reference
+    auto fun = [=](){   // <-- all by copy
         return x + y;
     };
 

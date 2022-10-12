@@ -218,7 +218,7 @@ Rvalue References As Function Parameters
 
    int a;
    f(a);     // <--- error: cannot bind rvalue reference to lvalue
-   f(a*2);   // <--- error: ok - rvalue
+   f(a*2);   // <--- ok: rvalue
 
 .. _use-of-rvalue-inside-function:
 
