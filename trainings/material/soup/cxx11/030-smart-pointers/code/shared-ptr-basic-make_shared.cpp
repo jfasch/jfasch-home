@@ -18,7 +18,7 @@ TEST(shared_ptr_suite, basic_make_shared)
     sensors["rand2"] = rs2;
     sensors["const"] = cs;
 
-    // shared ownership: cann access sensors from map *and* from
+    // shared ownership: can access sensors from map *and* from
     // outside references
     ASSERT_DOUBLE_EQ(cs->get_temperature(), 36.5);
     ASSERT_DOUBLE_EQ(sensors["const"]->get_temperature(), 36.5);

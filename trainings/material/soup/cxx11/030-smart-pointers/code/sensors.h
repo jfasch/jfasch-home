@@ -15,7 +15,8 @@ class RandomSensor : public Sensor
 {
 public:
     RandomSensor(double low, double high)
-    : _distribution(std::uniform_real_distribution<double>(low, high)) {}
+    : _distribution(std::uniform_real_distribution<double>(low, high)),
+      _engine(std::random_device()()) {}
 
     virtual double get_temperature() 
     {
