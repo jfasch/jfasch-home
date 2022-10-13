@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <variant>
 
 TEST(variant_suite, default_ctor)
 {
