@@ -31,7 +31,7 @@ C and C++ Programming
 
      c
 
-* :doc:`c-advanced`.     
+* :doc:`Advanced C <c-advanced>`.     
 
   * Traps, traps, traps (and their avoidance)
   * The preprocessor: macro writing
@@ -44,7 +44,7 @@ C and C++ Programming
 
      c-advanced
 
-* :doc:`cxx`. A thorough tour through C++: old school C++, and the new
+* :doc:`C++: A Broad Overview`. A tour through C++: old school C++, and the new
   C++ since 11.
 
   * Encapsulation, and object oriented programming
