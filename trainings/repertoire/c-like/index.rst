@@ -44,7 +44,7 @@ C and C++ Programming
 
      c-advanced
 
-* :doc:`C++: A Broad Overview`. A tour through C++: old school C++, and the new
+* :doc:`C++: A Broad Overview <cxx>`. A tour through C++: old school C++, and the new
   C++ since 11.
 
   * Encapsulation, and object oriented programming

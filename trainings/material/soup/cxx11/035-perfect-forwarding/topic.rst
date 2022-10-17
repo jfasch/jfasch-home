@@ -32,8 +32,12 @@ takes a *universal reference* - a.k.a. *forwarding reference*:
 Universal Reference? Binds To *Lvalues*?
 ----------------------------------------
 
-**Reminder:** function taking an *rvalue reference* cannot take an
-*lvalue*
+**RValue references** 
+
+* A *function* taking an *rvalue reference* cannot take an *lvalue*
+* Reason: if it did, it could do harm to something the caller might
+  still want to use
+* See :doc:`../020-new-language-features/060-move/group`
 
 .. literalinclude:: code/c++11-rvalue-reference.cpp
    :caption: :download:`code/c++11-rvalue-reference.cpp`
