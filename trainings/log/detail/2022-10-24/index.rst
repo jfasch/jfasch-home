@@ -21,8 +21,9 @@ Agenda
 OO Basics
 .........
 
-* UML short introduction
 * Interfaces, Inheritance
+* UML short introduction: *is-a*, *has-a* (aggregation, composition),
+  *knows-a* (association)
 
 SOLID - OO Principles, Metrics
 ..............................
@@ -37,8 +38,8 @@ SOLID - OO Principles, Metrics
 Creational Patterns
 ...................
 
-* Abstract Factory
 * Singleton
+* Abstract Factory
 * Builder
 
 Test Driven Development Short Introduction

@@ -1,8 +1,8 @@
-.. include:: <mmlalias.txt>
-
 .. ot-topic:: cxx11.smart_pointers.shared_ptr
    :dependencies: cxx11.smart_pointers.introduction,
 		  cxx11.smart_pointers.unique_ptr
+
+.. include:: <mmlalias.txt>
 
 
 ``std::shared_ptr``

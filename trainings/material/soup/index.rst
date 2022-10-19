@@ -20,11 +20,13 @@ work in progress*).
    cxx03/group
    cxx11/group
    linux/group
+   design-patterns/group
    unittest/group
    kernel/group
+
+(See :doc:`here <graph>` for interconnections between topics.)
+
+.. toctree::
+   :hidden:
+
    graph
-
-.. note::
-
-   See :doc:`here </trainings/log/detail/2020-03-30/setup>` for how to
-   build the sample code that is referenced.
