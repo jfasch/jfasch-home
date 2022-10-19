@@ -8,9 +8,9 @@ Exercise: Adapter
    :local:
 
 Based upon the problem described in :doc:`../adapter`, implement the
-folloowing test:
+following test:
 
-.. literalinclude:: code/adapter.cpp
-   :caption: :download:`code/adapter.cpp`
+.. literalinclude:: code/adapter-suite.cpp
+   :caption: :download:`code/adapter-suite.cpp`
    :language: c++
 

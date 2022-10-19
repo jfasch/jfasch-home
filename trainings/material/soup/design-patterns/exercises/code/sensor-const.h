@@ -5,14 +5,16 @@
 class ConstantSensor : public Sensor
 {
 public:
-    ConstantSensor(double temp)
-    : _temp(temp) {}
+    ConstantSensor(double value)
+    : _value(value) {}
+
+    double value() const { return _value; }
 
     virtual double get_temperature()
     {
-        return _temp;
+        return _value;
     }
 
 private:
-    double _temp;
+    double _value;
 };

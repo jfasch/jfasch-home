@@ -37,10 +37,48 @@ ADD_EXECUTABLE(
   social-insurance-oegk-strict.cpp
 )
 
+ADD_LIBRARY(
+  design-patterns
+
+
+  # starting point >>>
+  sensor.h
+  sensor-random.h
+  sensor-const.h
+
+  sensor-utils.h
+
+  dummy.cpp  # have to have at least one compiled file in a library
+  # <<< starting point
+
+  # adapter
+  sensor-A.h
+  sensor-A-adapt-B.h
+
+  # decorator
+  sensor-decorated-const.h
+  sensor-decorated-const.cpp
+  sensor-decorated-random.h
+  sensor-decorated-random.cpp
+)  
+
 ADD_EXECUTABLE(
   design-patterns-c++-exercises-suite
 
-  adapter.cpp
+  sensor-utils-suite.cpp
+  adapter-suite.cpp
+
+  decorator-suite-starting-point.cpp
+  decorator-suite-const-sensor-added-functionality.cpp
+  decorator-suite-random-sensor-added-functionality.cpp
+  decorator-suite-const-sensor-is-a-sensor.cpp
+  decorator-suite-random-sensor-is-a-sensor.cpp
+  decorator-suite-decorated-used-in-legacy.cpp
 )
 
-TARGET_LINK_LIBRARIES(design-patterns-c++-exercises-suite gtest_main Threads::Threads)
+TARGET_LINK_LIBRARIES(
+  design-patterns-c++-exercises-suite gtest_main 
+
+  design-patterns  
+  Threads::Threads
+)

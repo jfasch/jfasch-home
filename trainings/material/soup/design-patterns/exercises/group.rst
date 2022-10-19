@@ -14,6 +14,7 @@ Exercises: Design Patterns
    singleton-flexible
    singleton-flexible-strict
    adapter
+   decorator
 
 Dependencies
 ------------

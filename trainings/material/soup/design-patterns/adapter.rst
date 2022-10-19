@@ -35,9 +35,10 @@ Solution
 --------
 
 .. image:: adapter.png
-   :scale: 70%
+   :scale: 40%
 
 Exercise
 --------
 
 :doc:`exercises/adapter`
+
