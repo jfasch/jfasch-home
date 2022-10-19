@@ -41,15 +41,24 @@ ADD_LIBRARY(
   design-patterns
 
 
-  # starting point >>>
+  # <starting point>
+
   sensor.h
   sensor-random.h
   sensor-const.h
 
   sensor-utils.h
+  queue.h
+  server-thread.h
+  server-thread.cpp
 
   dummy.cpp  # have to have at least one compiled file in a library
-  # <<< starting point
+
+  # </starting point>
+
+
+  # <exercises>
+
 
   # adapter
   sensor-A.h
@@ -60,12 +69,21 @@ ADD_LIBRARY(
   sensor-decorated-const.cpp
   sensor-decorated-random.h
   sensor-decorated-random.cpp
+
+
+  # </exercises>
 )  
 
 ADD_EXECUTABLE(
   design-patterns-c++-exercises-suite
 
+  # <starting point>
+  
   sensor-utils-suite.cpp
+
+  # </starting point>
+
+  
   adapter-suite.cpp
 
   decorator-suite-starting-point.cpp
@@ -82,3 +100,15 @@ TARGET_LINK_LIBRARIES(
   design-patterns  
   Threads::Threads
 )
+
+ADD_EXECUTABLE(
+  thread-server-test
+
+  thread-server-test.cpp
+)  
+TARGET_LINK_LIBRARIES(
+  thread-server-test
+
+  design-patterns  
+  Threads::Threads
+)  
