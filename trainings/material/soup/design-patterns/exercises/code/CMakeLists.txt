@@ -80,6 +80,7 @@ ADD_EXECUTABLE(
   # <starting point>
   
   sensor-utils-suite.cpp
+  server-thread-suite.cpp
 
   # </starting point>
 
@@ -101,14 +102,3 @@ TARGET_LINK_LIBRARIES(
   Threads::Threads
 )
 
-ADD_EXECUTABLE(
-  thread-server-test
-
-  thread-server-test.cpp
-)  
-TARGET_LINK_LIBRARIES(
-  thread-server-test
-
-  design-patterns  
-  Threads::Threads
-)  

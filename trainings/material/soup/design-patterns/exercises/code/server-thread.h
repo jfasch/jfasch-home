@@ -8,19 +8,18 @@
 #include <memory>
 
 
-class EchoServer
-{
-public:
-    std::string doit(const std::string& request)
-    {
-        return request;
-    }
-};
-
 class ServerThread
 {
 public:
-    ServerThread(std::unique_ptr<EchoServer> server);
+    class RequestAdapter
+    {
+    public:
+        virtual ~RequestAdapter() {}
+        virtual std::string doit(const std::string& request) = 0;
+    };
+
+public:
+    ServerThread(std::unique_ptr<RequestAdapter> intp);
     ~ServerThread();
 
     std::string write(const std::string& request);
@@ -34,7 +33,7 @@ private:
     };
 
 private:
-    std::unique_ptr<EchoServer> _server;
+    std::unique_ptr<RequestAdapter> _adapter;
     MTQueue<std::shared_ptr<Packet>> _queue;
     std::thread _thread;
 };
