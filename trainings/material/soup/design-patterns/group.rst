@@ -18,6 +18,7 @@ Topics
    adapter
    proxy
    decorator
+   command
 
 Exercises
 ---------

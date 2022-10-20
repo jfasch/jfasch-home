@@ -46,6 +46,7 @@ Note that the ``RemoteAdapter`` is a specialized form of the
 ``RemoteAdapter`` interface are supposed to adapt to *something* by
 implementing a protocol onto somthing that is already there. This is
 not a requirement though - a simplistic implementation may not only
-implement the protocol, but also the logic behind it.
+implement the protocol, but also the logic behind it (effectively
+turning it into an example of :doc:`Command <../command>`)
 
 .. image:: proxy-remote.png

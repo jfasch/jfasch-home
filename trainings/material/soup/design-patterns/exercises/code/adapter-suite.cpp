@@ -7,12 +7,12 @@
 
 TEST(adapter_suite, basic)
 {
-    // buy most sophisticated sensor from A, and see if it works
-    ConstantSensor* sensor_from_a = new ConstantSensor(36.5);
-    ASSERT_FLOAT_EQ(sensor_from_a->get_temperature(), 36.5);
+    // buy most sophisticated sensor from B, and see if it works
+    ConstantSensor sensor_from_b(36.5);
+    ASSERT_FLOAT_EQ(sensor_from_b.get_temperature(), 36.5);
 
     // adapt it into A's framework, converting its Celsius measurement
     // into Fahrenheit
-    SensorB_Adapter b_adapter = std::unique_ptr<Sensor>(sensor_from_a);
+    SensorB_Adapter b_adapter(&sensor_from_b);
     ASSERT_FLOAT_EQ(b_adapter.get_temperature(), 36.5 * 5/9 + 32);
 }

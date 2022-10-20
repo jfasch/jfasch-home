@@ -9,7 +9,7 @@
 class SensorB_Adapter : public SensorA
 {
 public:
-    SensorB_Adapter(std::unique_ptr<Sensor> adaptee) : _adaptee(std::move(adaptee)) {}
+    SensorB_Adapter(Sensor* adaptee) : _adaptee(adaptee) {}
     double get_temperature()
     {
         double celsius = _adaptee->get_temperature();
@@ -17,5 +17,5 @@ public:
     }
 
 private:
-    std::unique_ptr<Sensor> _adaptee;
+    Sensor* _adaptee;
 };

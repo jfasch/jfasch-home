@@ -14,7 +14,6 @@ public:
       _sensor(std::move(sensor)) {}
 
     const std::string& name() const { return _name; }
-
     virtual std::string description() const = 0;
 
     virtual double get_temperature() override
