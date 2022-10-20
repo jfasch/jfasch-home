@@ -7,6 +7,6 @@
 std::string DecoratedRandomSensor::description() const
 {
     std::ostringstream buffer;
-    buffer << "RandomSensor(" << _low << ", " << _high << ')';
+    buffer << "RandomSensor(" << _sensor.low() << ", " << _sensor.high() << ')';
     return buffer.str();
 }

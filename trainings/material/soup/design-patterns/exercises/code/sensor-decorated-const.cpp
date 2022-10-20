@@ -7,6 +7,6 @@
 std::string DecoratedConstantSensor::description() const
 {
     std::ostringstream buffer;
-    buffer << "ConstantSensor(" << _temperature << ')';
+    buffer << "ConstantSensor(" << _sensor.value() << ')';
     return buffer.str();
 }

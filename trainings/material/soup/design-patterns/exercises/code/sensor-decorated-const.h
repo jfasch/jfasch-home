@@ -8,11 +8,12 @@ class DecoratedConstantSensor : public DecoratedSensor
 {
 public:
     DecoratedConstantSensor(const std::string& name, double temperature)
-    : DecoratedSensor(name, std::make_unique<ConstantSensor>(temperature)),
-      _temperature(temperature) {}
+    : DecoratedSensor(name),
+      _sensor(temperature) {}
 
     virtual std::string description() const override;
+    virtual double get_temperature() { return _sensor.get_temperature(); }
 
 private:
-    double _temperature;
+    ConstantSensor _sensor;
 };
