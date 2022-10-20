@@ -3,10 +3,10 @@
 #include "server-thread.h"
 
 
-class Echo : public ServerThread::RequestAdapter
+class Echo : public ServerThread::RemoteAdapter
 {
 public:
-    std::string doit(const std::string& request)
+    std::string execute(const std::string& request)
     {
         return request;
     }
@@ -14,7 +14,8 @@ public:
 
 TEST(server_thread_suite, basic)
 {
-    ServerThread s(std::make_unique<EchoServer>());
+    Echo echo;
+    ServerThread s(&echo);
     std::string request = "abc";
     std::string response = s.write(request);
     ASSERT_EQ(request, response);

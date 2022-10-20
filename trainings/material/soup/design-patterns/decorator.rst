@@ -48,7 +48,7 @@ variant 2: aggregate conrete class objects
 .. image:: decorator-assoc-concrete.png
    :scale: 40%
 
-exercise
+Exercise
 --------
 
 :doc:`exercises/decorator`

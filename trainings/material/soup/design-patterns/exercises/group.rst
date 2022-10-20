@@ -15,6 +15,8 @@ Exercises: Design Patterns
    singleton-flexible-strict
    adapter
    decorator
+   proxy-round
+   proxy-remote
 
 Dependencies
 ------------

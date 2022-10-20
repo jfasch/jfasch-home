@@ -16,6 +16,7 @@ Topics
    interfaces
    singleton
    adapter
+   proxy
    decorator
 
 Exercises

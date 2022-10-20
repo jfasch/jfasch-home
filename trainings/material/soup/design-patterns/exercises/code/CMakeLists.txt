@@ -70,6 +70,12 @@ ADD_LIBRARY(
   sensor-decorated-random.h
   sensor-decorated-random.cpp
 
+  # proxy
+  sensor-round.h
+  sensor-remote.h
+  sensor-remote.cpp
+  sensor-remote-adapter.h
+  sensor-remote-adapter.cpp
 
   # </exercises>
 )  
@@ -93,6 +99,9 @@ ADD_EXECUTABLE(
   decorator-suite-const-sensor-is-a-sensor.cpp
   decorator-suite-random-sensor-is-a-sensor.cpp
   decorator-suite-decorated-used-in-legacy.cpp
+
+  proxy-round-suite.cpp
+  proxy-remote-suite.cpp
 )
 
 TARGET_LINK_LIBRARIES(
