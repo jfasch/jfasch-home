@@ -1,4 +1,4 @@
 ADD_SUBDIRECTORY(library)
 ADD_SUBDIRECTORY(tests)
-ADD_SUBDIRECTORY(social-insurance)
+ADD_SUBDIRECTORY(singleton)
 

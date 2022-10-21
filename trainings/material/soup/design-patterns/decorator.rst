@@ -42,7 +42,7 @@ Variant 1: Aggregate Base Class Objects
 .. image:: decorator-assoc-base.png
    :scale: 40%
 
-variant 2: aggregate conrete class objects
+Variant 2: Aggregate Conrete Class Objects
 ..........................................
 
 .. image:: decorator-assoc-concrete.png

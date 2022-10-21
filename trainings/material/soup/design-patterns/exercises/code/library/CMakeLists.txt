@@ -12,6 +12,11 @@ ADD_LIBRARY(
   server-thread.h
   server-thread.cpp
 
+  social-db.h
+  social-db.cpp
+  social-db-commands.h
+  social-db-commands.cpp
+
   # </starting point>
 
 

@@ -53,8 +53,8 @@ run. Take special care:
   compiler errors.
 * There must not be a memory leak at program end.
 
-.. literalinclude:: code/singleton-social-insurance-flexible-strict-main.cpp
-   :caption: :download:`code/singleton-social-insurance-flexible-strict-main.cpp`
+.. literalinclude:: code/singleton/singleton-social-insurance-flexible-strict-main.cpp
+   :caption: :download:`code/singleton/singleton-social-insurance-flexible-strict-main.cpp`
    :language: c++
 
 Tests

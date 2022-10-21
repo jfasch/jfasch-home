@@ -29,8 +29,8 @@ Modify your solution to :doc:`singleton-inflexible`:
 Add the following program to your build system. The program uses the
 two implementations.
 
-.. literalinclude:: code/singleton-social-insurance-flexible-main.cpp
-   :caption: :download:`code/singleton-social-insurance-flexible-main.cpp`
+.. literalinclude:: code/singleton/singleton-social-insurance-flexible-main.cpp
+   :caption: :download:`code/singleton/singleton-social-insurance-flexible-main.cpp`
    :language: c++
 
 When run, the program outputs the following (and crashes):

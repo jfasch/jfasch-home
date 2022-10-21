@@ -14,7 +14,7 @@ and returns that measurement rounded to the nearest integer.
 Invent that new sensor in a way that it fullfills the following
 requirements:
 
-.. literalinclude:: code/proxy-round-suite.cpp
-   :caption: :download:`code/proxy-round-suite.cpp`
+.. literalinclude:: code/tests/proxy-round-suite.cpp
+   :caption: :download:`code/tests/proxy-round-suite.cpp`
    :language: c++
 

@@ -10,7 +10,7 @@ Exercise: Adapter
 Based upon the problem described in :doc:`../adapter`, implement the
 following test:
 
-.. literalinclude:: code/adapter-suite.cpp
-   :caption: :download:`code/adapter-suite.cpp`
+.. literalinclude:: code/tests/adapter-suite.cpp
+   :caption: :download:`code/tests/adapter-suite.cpp`
    :language: c++
 

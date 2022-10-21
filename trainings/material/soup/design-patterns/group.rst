@@ -20,6 +20,14 @@ Topics
    decorator
    command
 
+To Be Done
+----------
+
+* Abstract Factory
+* Abstract Factory to create Command objects?
+
+* Solution page maybe?
+
 Exercises
 ---------
 
