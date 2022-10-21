@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "sensor-round.h"
-#include "sensor-const.h"
+#include <sensor-round.h>
+#include <sensor-const.h>
 
 
 TEST(proxy_round_suite, round_down)

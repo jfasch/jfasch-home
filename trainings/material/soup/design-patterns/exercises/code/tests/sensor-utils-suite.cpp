@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "sensor-const.h"
-#include "sensor-utils.h"
+#include <sensor-const.h>
+#include <sensor-utils.h>
 
 
 TEST(sensor_utils_suite, average)

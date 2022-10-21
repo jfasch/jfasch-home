@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "sensor-decorated-const.h"
+#include <sensor-decorated-const.h>
 
 
 TEST(decorator_suite, decorated_sensor_const__is_a__sensor)

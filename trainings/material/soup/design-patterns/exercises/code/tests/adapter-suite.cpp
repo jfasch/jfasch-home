@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 
-#include "sensor-A.h"          // <--- company A's sensor interface
-#include "sensor-A-adapt-B.h"  // <--- to be implemented
-#include "sensor.h"            // <--- company B's sensor interface
-#include "sensor-const.h"      // <--- company B's most sophisticated sensor
+#include <sensor-A.h>          // <--- company A's sensor interface
+#include <sensor-A-adapt-B.h>  // <--- to be implemented
+#include <sensor.h>            // <--- company B's sensor interface
+#include <sensor-const.h>      // <--- company B's most sophisticated sensor
 
 TEST(adapter_suite, basic)
 {

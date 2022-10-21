@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "sensor-decorated-const.h"
-#include "sensor-utils.h"
+#include <sensor-decorated-const.h>
+#include <sensor-utils.h>
 
 
 TEST(decorator_suite, average_with_decorated_sensor)

@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 
-#include "server-thread.h"
-#include "sensor-const.h"
-#include "sensor-remote.h"
-#include "sensor-remote-adapter.h"
+#include <server-thread.h>
+#include <sensor-const.h>
+#include <sensor-remote.h>
+#include <sensor-remote-adapter.h>
 
 
 struct proxy_remote_suite : ::testing::Test    // <--- fixture: server thread and sensor setup

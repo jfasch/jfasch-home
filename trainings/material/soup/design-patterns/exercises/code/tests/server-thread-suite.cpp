@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "server-thread.h"
+#include <server-thread.h>
 
 
 class Echo : public ServerThread::RemoteAdapter
