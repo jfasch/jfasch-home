@@ -25,6 +25,7 @@ To Be Done
 
 * Abstract Factory
 * Abstract Factory to create Command objects?
+* Composite -> Command
 
 * Solution page maybe?
 

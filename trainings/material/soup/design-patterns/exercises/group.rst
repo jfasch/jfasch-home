@@ -17,6 +17,7 @@ Exercises: Design Patterns
    decorator
    proxy-round
    proxy-remote
+   command
 
 Dependencies
 ------------

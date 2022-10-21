@@ -6,7 +6,6 @@ ADD_EXECUTABLE(
   sensor-utils-suite.cpp
   server-thread-suite.cpp
   social-db-suite.cpp
-
   # </starting point>
 
   
@@ -22,7 +21,14 @@ ADD_EXECUTABLE(
   proxy-round-suite.cpp
   proxy-remote-suite.cpp
 
-  command-suite.cpp
+  command-suite-insert.cpp
+  command-suite-insert-by-base.cpp
+  command-suite-find.cpp
+  command-suite-drop.cpp
+  command-suite-notfound.cpp
+  command-suite-notinserted.cpp
+  command-suite-bulk-insert.cpp
+  command-suite-bulk-insert--std_initializer_list.cpp
 )
 
 TARGET_LINK_LIBRARIES(

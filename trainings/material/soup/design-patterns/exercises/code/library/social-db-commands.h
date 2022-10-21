@@ -5,6 +5,8 @@
 #include <string>
 #include <variant>
 #include <optional>
+#include <tuple>
+#include <vector>
 
 
 class SocialDBCommand
@@ -47,4 +49,24 @@ public:
 private:
     std::string _svnr;
     std::variant<SocialDB::Person, SocialDB::NotFound> _result;
+};
+
+class SocialDBDropCommand : public SocialDBCommand
+{
+public:
+    virtual void execute(SocialDB&) override;
+    void result() const {}
+};
+
+class SocialDBBulkInsertCommand : public SocialDBCommand
+{
+public:
+    SocialDBBulkInsertCommand() = default;
+    SocialDBBulkInsertCommand(std::initializer_list<std::tuple<std::string, std::string, std::string>>);
+
+    void add(const SocialDBInsertCommand&);
+    virtual void execute(SocialDB&) override;
+
+private:
+    std::vector<SocialDBInsertCommand> _commands;
 };
