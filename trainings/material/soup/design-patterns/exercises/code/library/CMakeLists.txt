@@ -14,8 +14,6 @@ ADD_LIBRARY(
 
   social-db.h
   social-db.cpp
-  social-db-commands.h
-  social-db-commands.cpp
 
   # </starting point>
 
@@ -39,6 +37,14 @@ ADD_LIBRARY(
   sensor-remote.cpp
   sensor-remote-adapter.h
   sensor-remote-adapter.cpp
+
+  # composite
+  sensor-avg.h
+  sensor-avg.cpp
+
+  # command
+  social-db-commands.h
+  social-db-commands.cpp
 
   # </exercises>
 )  

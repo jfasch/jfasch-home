@@ -21,6 +21,9 @@ ADD_EXECUTABLE(
   proxy-round-suite.cpp
   proxy-remote-suite.cpp
 
+  composite-suite-basic.cpp
+  composite-suite-initializer-list.cpp
+
   command-suite-insert.cpp
   command-suite-insert-by-base.cpp
   command-suite-find.cpp

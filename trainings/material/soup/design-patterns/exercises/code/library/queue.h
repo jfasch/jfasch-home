@@ -21,7 +21,6 @@ public:
             _notfull.wait(guard, [this](){ return _queue.size() != _maxsize; });
             _queue.push_back(elem);
         }
-
         _notempty.notify_one();
     }
 

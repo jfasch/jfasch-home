@@ -17,6 +17,7 @@ Topics
    singleton
    adapter
    proxy
+   composite
    decorator
    command
 
@@ -26,6 +27,7 @@ To Be Done
 * Abstract Factory
 * Abstract Factory to create Command objects?
 * Composite -> Command
+* Command with MTQueue
 
 * Solution page maybe?
 

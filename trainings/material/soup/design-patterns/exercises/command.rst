@@ -1,5 +1,6 @@
 .. ot-exercise:: design_patterns.exercises.command
-   :dependencies: design_patterns.interfaces
+   :dependencies: design_patterns.interfaces,
+		  design_patterns.exercises.composite
 
 .. include:: <mmlalias.txt>
 
@@ -80,7 +81,7 @@ operation's return value, and make it available to the issuer via the
 
 Now the ``find()`` database operation can throw an error (of type
 ``SocialDB::NotFound``) that also needs to be made available. Store
-that in the object, and re-throw it in the ``result() method.
+that in the object, and re-throw it in the ``result()`` method.
 
 .. literalinclude:: code/tests/command-suite-notfound.cpp
    :caption: :download:`code/tests/command-suite-notfound.cpp`

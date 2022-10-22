@@ -2,6 +2,7 @@
 
 #include "sensor.h"
 
+
 class ConstantSensor : public Sensor
 {
 public:
