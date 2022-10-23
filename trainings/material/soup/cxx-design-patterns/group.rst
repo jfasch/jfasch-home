@@ -1,4 +1,4 @@
-.. ot-group:: design_patterns
+.. ot-group:: cxx_design_patterns
 
 
 Design Patterns
@@ -16,6 +16,7 @@ Introduction: :doc:`C++ Interfaces
 .. toctree::
    :maxdepth: 1
 
+   uml
    singleton
    adapter
    proxy
@@ -42,4 +43,4 @@ Dependencies
 ------------
 	      
 .. ot-graph::
-   :entries: design_patterns
+   :entries: cxx_design_patterns

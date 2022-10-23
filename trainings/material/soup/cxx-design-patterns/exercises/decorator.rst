@@ -1,6 +1,7 @@
-.. ot-exercise:: design_patterns.exercises.decorator
-   :dependencies: design_patterns.exercises.adapter,
-		  design_patterns.decorator
+.. ot-exercise:: cxx_design_patterns.exercises.decorator
+   :dependencies: cxx_design_patterns.exercises.adapter,
+		  cxx_design_patterns.decorator,
+		  cxx_design_patterns.uml
 
 .. include:: <mmlalias.txt>
 

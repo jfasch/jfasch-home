@@ -1,5 +1,6 @@
-.. ot-exercise:: design_patterns.exercises.adapter
-   :dependencies: design_patterns.adapter
+.. ot-exercise:: cxx_design_patterns.exercises.adapter
+   :dependencies: cxx_design_patterns.adapter,
+		  cxx_design_patterns.uml
 
 Exercise: Adapter
 =================

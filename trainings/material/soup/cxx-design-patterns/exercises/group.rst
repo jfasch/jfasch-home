@@ -1,4 +1,4 @@
-.. ot-group:: design_patterns.exercises
+.. ot-group:: cxx_design_patterns.exercises
 
 
 Exercises: Design Patterns
@@ -25,4 +25,4 @@ Dependencies
 ------------
 	      
 .. ot-graph::
-   :entries: design_patterns.exercises
+   :entries: cxx_design_patterns.exercises

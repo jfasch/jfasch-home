@@ -1,6 +1,8 @@
-.. ot-exercise:: design_patterns.exercises.composite
-   :dependencies: design_patterns.exercises.proxy_round,
-		  design_patterns.composite
+.. ot-exercise:: cxx_design_patterns.exercises.composite
+   :dependencies: cxx_design_patterns.exercises.proxy_round,
+		  cxx_design_patterns.composite,
+		  cxx_design_patterns.uml
+
 
 Exercise: Composite
 ===================

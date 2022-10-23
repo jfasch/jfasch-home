@@ -1,5 +1,7 @@
-.. ot-exercise:: design_patterns.exercises.proxy_round
-   :dependencies: design_patterns.proxy
+.. ot-exercise:: cxx_design_patterns.exercises.proxy_round
+   :dependencies: cxx_design_patterns.proxy,
+		  cxx_design_patterns.uml
+
 
 Exercise: Proxy (Rounding Thermometer)
 ======================================

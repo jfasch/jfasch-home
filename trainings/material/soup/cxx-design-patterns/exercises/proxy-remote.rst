@@ -1,6 +1,8 @@
-.. ot-exercise:: design_patterns.exercises.proxy_remote
-   :dependencies: design_patterns.proxy,
-		  design_patterns.exercises.adapter
+.. ot-exercise:: cxx_design_patterns.exercises.proxy_remote
+   :dependencies: cxx_design_patterns.proxy,
+		  cxx_design_patterns.exercises.adapter,
+		  cxx_design_patterns.uml
+
 
 Exercise: Proxy (Remote Thermometer)
 ====================================

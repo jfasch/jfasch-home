@@ -19,8 +19,8 @@ work in progress*).
    cxx/group
    cxx03/group
    cxx11/group
+   cxx-design-patterns/group
    linux/group
-   design-patterns/group
    unittest/group
    kernel/group
 

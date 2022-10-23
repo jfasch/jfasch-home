@@ -1,7 +1,8 @@
-.. ot-exercise:: design_patterns.exercises.command
-   :dependencies: design_patterns.command,
+.. ot-exercise:: cxx_design_patterns.exercises.command
+   :dependencies: cxx_design_patterns.command,
 		  cxx03.inheritance_oo.interface,
-		  design_patterns.exercises.composite
+		  cxx_design_patterns.exercises.composite,
+		  cxx_design_patterns.uml
 
 .. include:: <mmlalias.txt>
 

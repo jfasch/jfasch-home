@@ -1,6 +1,7 @@
-.. ot-topic:: design_patterns.decorator
-   :dependencies: design_patterns.adapter, 
-		  cxx03.inheritance_oo.interface
+.. ot-topic:: cxx_design_patterns.decorator
+   :dependencies: cxx_design_patterns.adapter, 
+		  cxx03.inheritance_oo.interface,
+		  cxx_design_patterns.uml
 
 .. include:: <mmlalias.txt>
 

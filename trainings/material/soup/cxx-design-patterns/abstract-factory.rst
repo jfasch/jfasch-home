@@ -1,6 +1,7 @@
-.. ot-topic:: design_patterns.abstract_factory
-   :dependencies: design_patterns.singleton,
-		  cxx03.inheritance_oo.interface
+.. ot-topic:: cxx_design_patterns.abstract_factory
+   :dependencies: cxx_design_patterns.singleton,
+		  cxx03.inheritance_oo.interface,
+		  cxx_design_patterns.uml
 
 .. include:: <mmlalias.txt>
 
