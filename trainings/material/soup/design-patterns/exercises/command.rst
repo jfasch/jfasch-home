@@ -1,5 +1,6 @@
 .. ot-exercise:: design_patterns.exercises.command
-   :dependencies: design_patterns.interfaces,
+   :dependencies: design_patterns.command,
+		  design_patterns.interfaces,
 		  design_patterns.exercises.composite
 
 .. include:: <mmlalias.txt>

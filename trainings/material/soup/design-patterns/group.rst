@@ -10,6 +10,9 @@ Design Patterns
 Topics
 ------
 
+Introduction: :doc:`C++ Interfaces
+</trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
+
 .. toctree::
    :maxdepth: 1
 
@@ -20,16 +23,13 @@ Topics
    composite
    decorator
    command
+   abstract-factory
 
 To Be Done
 ----------
 
-* Abstract Factory
-* Abstract Factory to create Command objects?
-* Composite -> Command
 * Command with MTQueue
-
-* Solution page maybe?
+* Solution page(s) maybe?
 
 Exercises
 ---------

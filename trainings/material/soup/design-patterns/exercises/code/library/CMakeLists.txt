@@ -6,6 +6,9 @@ ADD_LIBRARY(
   sensor.h
   sensor-random.h
   sensor-const.h
+  sensor-i2c.h
+  sensor-i2c-vendor1.h
+  sensor-i2c-vendor2.h
 
   sensor-utils.h
   queue.h
@@ -45,6 +48,12 @@ ADD_LIBRARY(
   # command
   social-db-commands.h
   social-db-commands.cpp
+
+  # abstract factory
+  sensor-i2c-factory-vendor1.h
+  sensor-i2c-factory-vendor1.cpp
+  sensor-i2c-factory-vendor2.h
+  sensor-i2c-factory-vendor2.cpp
 
   # </exercises>
 )  

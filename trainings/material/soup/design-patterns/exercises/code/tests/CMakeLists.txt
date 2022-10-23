@@ -32,6 +32,9 @@ ADD_EXECUTABLE(
   command-suite-notinserted.cpp
   command-suite-bulk-insert.cpp
   command-suite-bulk-insert--std_initializer_list.cpp
+
+  abstract-factory-suite-vendor1.cpp
+  abstract-factory-suite-vendor2.cpp
 )
 
 TARGET_LINK_LIBRARIES(

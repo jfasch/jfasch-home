@@ -19,6 +19,7 @@ Exercises: Design Patterns
    proxy-remote
    composite
    command
+   abstract-factory
 
 Dependencies
 ------------
