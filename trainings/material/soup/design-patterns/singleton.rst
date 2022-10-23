@@ -1,5 +1,5 @@
 .. ot-topic:: design_patterns.singleton
-   :dependencies: design_patterns.interfaces
+   :dependencies: cxx03.inheritance_oo.interface
 
 .. include:: <mmlalias.txt>
 

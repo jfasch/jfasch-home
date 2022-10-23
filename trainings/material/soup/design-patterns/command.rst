@@ -1,5 +1,5 @@
 .. ot-topic:: design_patterns.command
-   :dependencies: design_patterns.interfaces,
+   :dependencies: cxx03.inheritance_oo.interface,
 		  design_patterns.composite
 
 .. include:: <mmlalias.txt>

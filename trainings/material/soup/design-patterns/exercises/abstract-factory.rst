@@ -1,5 +1,5 @@
 .. ot-exercise:: design_patterns.exercises.abstract_factory
-   :dependencies: design_patterns.interfaces,
+   :dependencies: cxx03.inheritance_oo.interface,
 		  design_patterns.singleton
 
 .. include:: <mmlalias.txt>

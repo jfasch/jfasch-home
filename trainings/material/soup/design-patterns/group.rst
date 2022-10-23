@@ -16,7 +16,6 @@ Introduction: :doc:`C++ Interfaces
 .. toctree::
    :maxdepth: 1
 
-   interfaces
    singleton
    adapter
    proxy

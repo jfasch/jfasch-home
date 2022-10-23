@@ -1,6 +1,6 @@
 .. ot-topic:: design_patterns.composite
    :dependencies: design_patterns.proxy,
-		  design_patterns.interfaces
+		  cxx03.inheritance_oo.interface
 
 .. include:: <mmlalias.txt>
 

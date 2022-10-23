@@ -1,6 +1,6 @@
 .. ot-topic:: design_patterns.abstract_factory
    :dependencies: design_patterns.singleton,
-		  design_patterns.interfaces
+		  cxx03.inheritance_oo.interface
 
 .. include:: <mmlalias.txt>
 
