@@ -11,6 +11,7 @@ Design- and Archtectural Patterns With C++ (2022-10-24 - 2022-10-26)
 
    * Original Course Description:
      :doc:`/trainings/repertoire/design-patterns`
+   * :doc:`/trainings/material/soup/cxx-design-patterns/group`
    * :download:`Design Patterns (PDF)
      </trainings/material/pdf/060-design-patterns-unittests.pdf>`
    * `Github Repository <https://github.com/jfasch/2022-10-24>`__

@@ -13,4 +13,3 @@ TEST(decorator_suite, average_with_base_sensor)
 
     ASSERT_FLOAT_EQ(average(sensors.begin(), sensors.end()), 354);
 }
-

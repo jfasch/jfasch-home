@@ -33,6 +33,16 @@ ADD_EXECUTABLE(
   command-suite-bulk-insert.cpp
   command-suite-bulk-insert--std_initializer_list.cpp
 
+  interpreter-suite-literal.cpp
+  interpreter-suite-addition.cpp
+  interpreter-suite-subtraction.cpp
+  interpreter-suite-multiplication.cpp
+  interpreter-suite-division.cpp
+  interpreter-suite-combined-arith.cpp
+  interpreter-suite-variable-not-set.cpp
+  interpreter-suite-variable-assignment.cpp
+  interpreter-suite-variable-used-as-expression.cpp
+
   abstract-factory-suite-vendor1.cpp
   abstract-factory-suite-vendor2.cpp
 )

@@ -22,6 +22,9 @@ There is a database implementation, ``SocialDB``, with the operations
 * ``find()``
 * ``drop()``
 
+(See :doc:`here <socialdb>` for the definition of the ``SocialDB``
+class.)
+
 Based on the situation described in :doc:`../command`, implement a
 ``SocialDBCommand`` hierarchy that provides a type for each of the
 database operations.

@@ -1,8 +1,8 @@
 .. ot-group:: cxx_design_patterns
 
 
-Design Patterns
-===============
+Design Patterns With C++
+========================
 
 .. contents::
    :local:
@@ -20,9 +20,10 @@ Introduction: :doc:`C++ Interfaces
    singleton
    adapter
    proxy
-   composite
    decorator
+   composite
    command
+   interpreter
    abstract-factory
 
 To Be Done
@@ -30,6 +31,8 @@ To Be Done
 
 * Command with MTQueue
 * Solution page(s) maybe?
+* Fix proxy: proxy class points to interface, not to concrete class
+* Clarify adapter!
 
 Exercises
 ---------

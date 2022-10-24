@@ -13,10 +13,10 @@ TEST(command_suite, find)
 
     SocialDBFindCommand fc("1037190666");
 
-    SocialDBCommand* c = &fc;           // <--- used as-a base
+    SocialDBCommand* c = &fc;                  // <--- used as-a base
     c->execute(db);
 
-    auto [firstname, lastname] = fc.result();
+    auto [firstname, lastname] = fc.result();  // <--- Hint: use struct SocialDB::Person as return value
     ASSERT_EQ(firstname, "Joerg");
     ASSERT_EQ(lastname, "Faschingbauer");
 }

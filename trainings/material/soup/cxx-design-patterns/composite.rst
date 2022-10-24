@@ -12,19 +12,32 @@ Composite
 .. contents::
    :local:
 
-Problem
--------
-
-Multiple objects of the same base type should be treated as one.
-
-Solution
+Examples
 --------
 
-.. image:: composite.png
+Unix Filesystem
+...............
+
+A typical directory structure:
+
+.. image:: 73-composite-unixfs.dia
    :scale: 40%
+
+A hypthetical class diagram:
+
+.. image:: 73-composite-unixfs-uml.png
+
+Boolean Expressions
+...................
+
+.. image:: 73-composite-boolexpr-uml.png
+
+Thermometers, And Average Calculation
+.....................................
+
+.. image:: 73-composite-thermometer-uml.png
 
 Exercises
 ---------
 
 * :doc:`exercises/composite`
-

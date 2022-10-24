@@ -49,6 +49,14 @@ ADD_LIBRARY(
   social-db-commands.h
   social-db-commands.cpp
 
+  # interpreter
+  expression.h
+  expression.cpp
+
+  # interpreter/sensor adapter
+  expression-sensorvalue.h
+  expression-sensorvalue.cpp
+
   # abstract factory
   sensor-i2c-factory-vendor1.h
   sensor-i2c-factory-vendor1.cpp

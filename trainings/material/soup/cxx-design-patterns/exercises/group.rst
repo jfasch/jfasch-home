@@ -19,6 +19,8 @@ Exercises: Design Patterns
    proxy-remote
    composite
    command
+   interpreter
+   interpreter-and-adapter
    abstract-factory
 
 Dependencies
@@ -26,3 +28,9 @@ Dependencies
 	      
 .. ot-graph::
    :entries: cxx_design_patterns.exercises
+
+
+.. toctree::
+   :hidden:
+
+   socialdb
