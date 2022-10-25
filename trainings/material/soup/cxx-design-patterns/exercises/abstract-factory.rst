@@ -15,10 +15,24 @@ Exercise: Abstract Factory
 I2C Sensor Subhierarchy
 -----------------------
 
-Imagine a company currently deploys I2C sensors of vendor 1. Suddenly
-one day, due to pricing policies of that vendor, it becomes necessary
-to make a switch from that vendor to another vendor 2. At least, that
-switch should be possible, and a prototype has to be created.
+Imagine a company currently deploys I2C sensors of vendor 1. These
+sensor have their place in the sensor hierarchy,
+
+.. image:: abstract-factory-i2c-vendor1.png
+   :scale: 40%
+
+Objects of that sensor type, ``I2CSensor_Vendor1``, are currently
+directly instantiated in the code like so,
+
+.. code-block:: c++
+
+   I2CSensor_Vendor1 sensor(/*bus*/ 2, /*address*/ 0x37);
+   // ...
+
+Suddenly one day, due to pricing policies of that vendor, it becomes
+necessary to make a switch from that vendor to another vendor,
+vendor 2. At least, that switch should be possible, and a prototype
+has to be created.
 
 An existing sensor implementation ``I2CSensor_Vendor1``, is pushed
 down into a subhierarchy like so ...

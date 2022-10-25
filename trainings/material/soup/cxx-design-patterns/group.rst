@@ -33,6 +33,8 @@ To Be Done
 * Solution page(s) maybe?
 * Fix proxy: proxy class points to interface, not to concrete class
 * Clarify adapter!
+* Pattern Catalog: Structural, Behavioral, Creational
+* Interpreter: description in main page
 
 Exercises
 ---------

@@ -5,8 +5,8 @@
 .. include:: <mmlalias.txt>
 
 
-Exercise: Interpreter
-=====================
+Exercise: Arithmetic Expression Interpreter
+===========================================
 
 .. contents::
    :local:
@@ -14,8 +14,8 @@ Exercise: Interpreter
 Motivation
 ----------
 
-Create an Abstract Syntax Tree, like compilers do (albeit much more
-sophisticated), to represent and evaluate expressions.
+Create an Abstract Syntax Tree (AST), like compilers do (albeit much
+more sophisticated), to represent and evaluate expressions.
 
 .. list-table::
    :align: left
@@ -81,7 +81,7 @@ Arithmetic (Binary) Expressions
             :caption: :download:`code/tests/interpreter-suite-addition.cpp`
             :language: c++
   
-       * .. image:: interpreter-literal-class.png
+       * .. image:: interpreter-addition-class.png
             :scale: 50%
 
 * ``Subtraction``

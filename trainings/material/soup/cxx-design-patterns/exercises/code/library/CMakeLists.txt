@@ -63,6 +63,10 @@ ADD_LIBRARY(
   sensor-i2c-factory-vendor2.h
   sensor-i2c-factory-vendor2.cpp
 
+  # observer
+  social-db-observable.h
+  social-db-observable.cpp
+
   # </exercises>
 )  
 

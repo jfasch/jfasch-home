@@ -37,6 +37,9 @@ public:
     SocialDB() = default;
     SocialDB(std::initializer_list<std::pair<const std::string, Person>>);
 
+    SocialDB(const SocialDB&) = delete;
+    SocialDB& operator=(const SocialDB&) = delete;
+
     size_t size() const { return _db.size(); }
     void insert(const std::string& svnr, const std::string& firstname, const std::string& lastname);
     const Person& find(const std::string& svnr) const;

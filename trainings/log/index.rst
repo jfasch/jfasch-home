@@ -29,8 +29,8 @@ Dieser Kurs ist in Vorbereitung.
 
 (:doc:`Mehr ... <detail/2022-11-07/index>`)
 
-Design- and Archtectural Patterns With C++ (2022-10-24 - 2022-10-26)
---------------------------------------------------------------------
+Design- and Architectural Patterns With C++ (2022-10-24 - 2022-10-26)
+---------------------------------------------------------------------
 
 Dieser Kurs ist in Vorbereitung.
 
