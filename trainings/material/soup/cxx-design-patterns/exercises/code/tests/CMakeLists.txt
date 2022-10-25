@@ -43,7 +43,11 @@ ADD_EXECUTABLE(
   interpreter-suite-variable-assignment.cpp
   interpreter-suite-variable-used-as-expression.cpp
 
-  observer-suite.cpp
+  observer-suite-register-one.cpp
+  observer-suite-register-many.cpp
+  observer-suite-register-duplicate.cpp
+  observer-suite-unregister.cpp
+  observer-suite-unregister-not-registered.cpp
 
   abstract-factory-suite-vendor1.cpp
   abstract-factory-suite-vendor2.cpp

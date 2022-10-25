@@ -21,6 +21,7 @@ Exercises: Design Patterns
    command
    interpreter
    interpreter-and-adapter
+   observer
    abstract-factory
 
 Dependencies

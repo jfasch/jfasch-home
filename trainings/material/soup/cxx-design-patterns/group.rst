@@ -24,6 +24,7 @@ Introduction: :doc:`C++ Interfaces
    composite
    command
    interpreter
+   observer
    abstract-factory
 
 To Be Done
@@ -35,6 +36,10 @@ To Be Done
 * Clarify adapter!
 * Pattern Catalog: Structural, Behavioral, Creational
 * Interpreter: description in main page
+* Observer
+
+  * Description in main page
+  * Exercise motivation, explain steps
 
 Exercises
 ---------
