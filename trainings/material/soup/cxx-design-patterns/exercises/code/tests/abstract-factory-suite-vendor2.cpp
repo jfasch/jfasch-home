@@ -16,5 +16,8 @@ TEST(abstract_factory_suite, instantiate_vendor2)
     ASSERT_TRUE(dynamic_cast<I2CSensor_Vendor2*>(i2c_sensor));             // <--- ... from Vendor1
 
     Sensor* a_sensor = i2c_sensor;                                         // <--- and is-a (of course) Sensor
-    (void)a_sensor;
+
+    // ... use sensor here ...
+
+    delete a_sensor;                                                       // <--- *interface* dtor called usually, at program termination
 }

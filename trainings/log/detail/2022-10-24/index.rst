@@ -55,15 +55,17 @@ Tuesday
 * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter`
 
   * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/interpreter`
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/interpreter-and-adapter`
 
 Wednesday
 .........
 
+* Continuing with :doc:`/trainings/material/soup/cxx-design-patterns/interpreter` ...
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/interpreter-and-adapter`
+
+* :doc:`/trainings/material/soup/cxx-design-patterns/observer`
 * :doc:`/trainings/material/soup/cxx-design-patterns/abstract-factory`
 * Builder maybe (sensors and switches?)
-* Visitor is a must have
-* 
 * Maybe: see how large ``if-elif-else`` (creational) chains can be
   decomposed into ... plugins? Plugging modules dynamically? Into
   existing software? ``dlopen()``, ``dlsym()``?
@@ -74,52 +76,3 @@ Wednesday
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
   * New syntactical constructs like *structured binding*, *range based
     for*, ``auto``
-
-Agenda
-------
-
-OO Basics
-.........
-
-* Interfaces, Inheritance
-* UML short introduction: *is-a*, *has-a* (aggregation, composition),
-  *knows-a* (association)
-
-SOLID - OO Principles, Metrics
-..............................
-
-* Single Responsibility
-* Open/Closed
-* Liskov Substitution
-* Interface Segregation
-* Dependency Inversion
-* Metric: Cyclomatic Complexity
-
-Creational Patterns
-...................
-
-* Singleton
-* Abstract Factory
-* Builder
-
-Test Driven Development Short Introduction
-..........................................
-
-* Test Cases and Test Suites
-* Test Runners
-
-Structural Patterns
-...................
-
-* Adapter
-* Bridge
-* Composite
-* Proxy
-
-Behavioral Patterns
-...................
-
-* Command
-* Interpreter
-* Observer
-* Visitor

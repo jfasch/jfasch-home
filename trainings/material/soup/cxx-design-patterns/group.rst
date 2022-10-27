@@ -10,13 +10,30 @@ Design Patterns With C++
 Topics
 ------
 
-Introduction: :doc:`C++ Interfaces
-</trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
+* Introduction: :doc:`C++ Interfaces
+  </trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
+* :doc:`uml`
+* :doc:`oo-principles`
+* :doc:`singleton`
+* :doc:`adapter`
+* :doc:`proxy`
+* :doc:`decorator`
+* :doc:`composite`
+* :doc:`command`
+* :doc:`interpreter`
+* :doc:`observer`
+* :doc:`abstract-factory`
+* :doc:`heating-screenplay`
+
+.. ATTENTION: add items to both toctree and
+.. list!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    uml
+   oo-principles
    singleton
    adapter
    proxy
@@ -26,20 +43,28 @@ Introduction: :doc:`C++ Interfaces
    interpreter
    observer
    abstract-factory
+   heating-screenplay
 
 To Be Done
 ----------
 
+* Source page
+
+  * Solution page(s) maybe?
+
+* Move exercises into main pages
 * Command with MTQueue
-* Solution page(s) maybe?
 * Fix proxy: proxy class points to interface, not to concrete class
 * Clarify adapter!
 * Pattern Catalog: Structural, Behavioral, Creational
 * Interpreter: description in main page
-* Observer
+* Heating case study
 
-  * Description in main page
-  * Exercise motivation, explain steps
+* Course preparation page
+
+  * Split project: base libraries and their tests
+  * To-be-implemented things
+  * List of files
 
 Exercises
 ---------
