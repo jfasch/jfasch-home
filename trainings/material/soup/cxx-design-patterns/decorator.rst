@@ -1,7 +1,8 @@
 .. ot-topic:: cxx_design_patterns.decorator
    :dependencies: cxx_design_patterns.adapter, 
 		  cxx03.inheritance_oo.interface,
-		  cxx_design_patterns.uml
+		  cxx_design_patterns.uml,
+		  cxx_design_patterns.sensor_hierarchy
 
 .. include:: <mmlalias.txt>
 

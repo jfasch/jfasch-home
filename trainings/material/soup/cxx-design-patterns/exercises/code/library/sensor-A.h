@@ -1,10 +1,8 @@
 #pragma once
 
-class SensorA
+class ASensor
 {
 public:
-    virtual ~SensorA() {}
-
-    // returns degrees Fahrenheit
-    virtual double get_temperature() = 0;
+    virtual ~ASensor() {}
+    virtual double get_temperature_fahrenheit() = 0;
 };

@@ -1,6 +1,7 @@
 .. ot-exercise:: cxx_design_patterns.exercises.proxy_round
    :dependencies: cxx_design_patterns.proxy,
-		  cxx_design_patterns.uml
+		  cxx_design_patterns.uml,
+		  cxx_design_patterns.sensor_hierarchy
 
 
 Exercise: Proxy (Rounding Thermometer)

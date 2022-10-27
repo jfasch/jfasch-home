@@ -35,6 +35,7 @@ Topics
    uml
    oo-principles
    singleton
+   sensor-hierarchy
    adapter
    proxy
    decorator
@@ -54,11 +55,9 @@ To Be Done
 
 * Move exercises into main pages
 * Command with MTQueue
-* Fix proxy: proxy class points to interface, not to concrete class
 * Clarify adapter!
 * Pattern Catalog: Structural, Behavioral, Creational
 * Interpreter: description in main page
-* Heating case study
 
 * Course preparation page
 
