@@ -52,10 +52,10 @@ To Be Done
 * Source page
 
   * Solution page(s) maybe?
+  * Link those into course page
 
 * Move exercises into main pages
 * Command with MTQueue
-* Clarify adapter!
 * Pattern Catalog: Structural, Behavioral, Creational
 * Interpreter: description in main page
 
@@ -64,6 +64,10 @@ To Be Done
   * Split project: base libraries and their tests
   * To-be-implemented things
   * List of files
+
+* Fun exercise: devise a system where person have a sensor plugged
+  into them. When the sensor sees a sign of sickness, a post is made
+  into SocialDB to charge for it, and an observing party is notified.
 
 Exercises
 ---------

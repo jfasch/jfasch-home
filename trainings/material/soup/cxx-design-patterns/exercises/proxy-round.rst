@@ -20,4 +20,3 @@ requirements:
 .. literalinclude:: code/tests/proxy-round-suite.cpp
    :caption: :download:`code/tests/proxy-round-suite.cpp`
    :language: c++
-

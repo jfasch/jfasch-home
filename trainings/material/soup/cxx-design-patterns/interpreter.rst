@@ -16,4 +16,3 @@ Exercise
 
 * :doc:`exercises/interpreter`
 * :doc:`exercises/interpreter-and-adapter`
-

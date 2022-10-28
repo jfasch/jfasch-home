@@ -110,6 +110,9 @@ Now that we have an *insert* command that we can instantiate objects
 from, we could create a sequence of such objects and encapsulate those
 in a, say, ``BulkInsert`` command. Lets give it a try.
 
+.. image:: command-bulk-insert.png
+   :scale: 40%
+
 .. literalinclude:: code/tests/command-suite-bulk-insert.cpp
    :caption: :download:`code/tests/command-suite-bulk-insert.cpp`
    :language: c++
