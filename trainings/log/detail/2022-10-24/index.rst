@@ -31,24 +31,18 @@ Monday
   * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible`
   * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible-strict`
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/adapter`
-* :doc:`/trainings/material/soup/cxx-design-patterns/proxy`
+* :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+* :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/proxy-round`
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/proxy-remote`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy-round`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy-remote`
     (That with the ``ServerThread`` |:thinking:|)
 
 Tuesday
 .......
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/composite`
-
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/composite`
-
-* :doc:`/trainings/material/soup/cxx-design-patterns/command`
-
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/command`
-
+* :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+* :doc:`/trainings/material/soup/cxx-design-patterns/command/command`
 * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter`
 
   * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/interpreter`

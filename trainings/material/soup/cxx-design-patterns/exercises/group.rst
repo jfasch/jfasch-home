@@ -10,8 +10,6 @@ Exercises: Design Patterns
 .. toctree::
    :maxdepth: 1
 
-   composite
-   command
    interpreter
    interpreter-and-adapter
    observer
@@ -22,9 +20,3 @@ Dependencies
 	      
 .. ot-graph::
    :entries: cxx_design_patterns.exercises
-
-
-.. toctree::
-   :hidden:
-
-   socialdb

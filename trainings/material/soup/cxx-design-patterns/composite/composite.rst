@@ -1,5 +1,6 @@
 .. ot-topic:: cxx_design_patterns.composite
    :dependencies: cxx_design_patterns.proxy,
+		  cxx_design_patterns.proxy_round,
 		  cxx03.inheritance_oo.interface,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.sensor_hierarchy
@@ -38,7 +39,20 @@ Thermometers, And Average Calculation
 
 .. image:: 73-composite-thermometer-uml.png
 
-Exercises
----------
+Exercise
+--------
 
-* :doc:`exercises/composite`
+Implement the following test:
+
+.. literalinclude:: ../exercises/code/tests/composite-suite-basic.cpp
+   :caption: :download:`../exercises/code/tests/composite-suite-basic.cpp`
+   :language: c++
+
+Maybe, as a C++ 11 excursion, lets implement real *initialization*,
+and omit the ``add()`` method. This way it becomes impossible to
+``add()`` another member to the composite object at the time it is
+already being used.
+
+.. literalinclude:: ../exercises/code/tests/composite-suite-initializer-list.cpp
+   :caption: :download:`../exercises/code/tests/composite-suite-initializer-list.cpp`
+   :language: c++

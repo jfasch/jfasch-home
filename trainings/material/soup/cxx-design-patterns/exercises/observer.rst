@@ -11,7 +11,7 @@ Exercise: Observer (``SocialDB``)
    :local:
 
 Now that we have implemented several iterations of, for example,
-:doc:`../adapter`, :doc:`../proxy/proxy-round`, etc., driven by tests, lets
+:doc:`../adapter/adapter`, :doc:`../proxy/proxy-round`, etc., driven by tests, lets
 implement yet another pattern in the same way.
 
 .. literalinclude:: code/tests/observer-suite-register-one.cpp

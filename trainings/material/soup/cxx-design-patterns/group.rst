@@ -18,8 +18,8 @@ Topics
 * :doc:`adapter/adapter`
 * :doc:`proxy/proxy`
 * :doc:`decorator/decorator`
-* :doc:`composite`
-* :doc:`command`
+* :doc:`composite/composite`
+* :doc:`command/command`
 * :doc:`interpreter`
 * :doc:`observer`
 * :doc:`abstract-factory`
@@ -39,8 +39,8 @@ Topics
    adapter/adapter
    proxy/proxy
    decorator/decorator
-   composite
-   command
+   composite/composite
+   command/command
    interpreter
    observer
    abstract-factory
