@@ -29,8 +29,8 @@ can run. Take special care:
   compiler errors.
 * There must not be a memory leak at program end.
 
-.. literalinclude:: ../exercises/code/singleton/singleton-social-insurance-inflexible-main.cpp
-   :caption: :download:`../exercises/code/singleton/singleton-social-insurance-inflexible-main.cpp`
+.. literalinclude:: ../code/singleton/singleton-social-insurance-inflexible-main.cpp
+   :caption: :download:`../code/singleton/singleton-social-insurance-inflexible-main.cpp`
    :language: c++
 
 When run, the program outputs the following:

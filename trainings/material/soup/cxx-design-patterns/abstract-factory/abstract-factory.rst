@@ -95,12 +95,12 @@ the following *Abstract Factory* hierarchy ...
 
 ... which passed the following tests:
 
-.. literalinclude:: ../exercises/code/tests/abstract-factory-suite-vendor1.cpp
-   :caption: :download:`../exercises/code/tests/abstract-factory-suite-vendor1.cpp`
+.. literalinclude:: ../code/tests/abstract-factory-suite-vendor1.cpp
+   :caption: :download:`../code/tests/abstract-factory-suite-vendor1.cpp`
    :language: c++
 
-.. literalinclude:: ../exercises/code/tests/abstract-factory-suite-vendor2.cpp
-   :caption: :download:`../exercises/code/tests/abstract-factory-suite-vendor2.cpp`
+.. literalinclude:: ../code/tests/abstract-factory-suite-vendor2.cpp
+   :caption: :download:`../code/tests/abstract-factory-suite-vendor2.cpp`
    :language: c++
 
 Notes

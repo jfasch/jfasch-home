@@ -1,1 +1,1 @@
-ADD_SUBDIRECTORY(exercises/code)
+ADD_SUBDIRECTORY(code)

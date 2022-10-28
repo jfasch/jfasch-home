@@ -22,8 +22,8 @@ Step 1: Monolithic
 .. image:: heating-step-1.png
    :scale: 40%
 
-.. literalinclude:: exercises/code/heating/heating-demo-v1.cpp
-   :caption: :download:`exercises/code/heating/heating-demo-v1.cpp`
+.. literalinclude:: ../code/heating/heating-demo-v1.cpp
+   :caption: :download:`../code/heating/heating-demo-v1.cpp`
    :language: c++
 
 .. code-block:: console
@@ -44,23 +44,23 @@ Step 2: And D-Bus? |longrightarrow| Interfaces
 * ``SensorReader`` depends on concrete implementations
 
   * |longrightarrow| :doc:`Dependency Inversion Principle
-    <oo-principles>`
+    <../oo-principles>`
 
 * See how we can log and store via D-Bus
 * Create Interfaces
 * Pull out ``SensorReader``
-  (:download:`exercises/code/heating/sensor-reader.h`)
+  (:download:`../code/heating/sensor-reader.h`)
 * Modify demo program
-  (:download:`exercises/code/heating/heating-demo-v2.cpp`)
+  (:download:`../code/heating/heating-demo-v2.cpp`)
 
 .. image:: heating-interfaces.png
 
-.. literalinclude:: exercises/code/heating/sensor-reader.h
-   :caption: :download:`exercises/code/heating/sensor-reader.h`
+.. literalinclude:: ../code/heating/sensor-reader.h
+   :caption: :download:`../code/heating/sensor-reader.h`
    :language: c++
 
-.. literalinclude:: exercises/code/heating/heating-demo-v2.cpp
-   :caption: :download:`exercises/code/heating/heating-demo-v2.cpp`
+.. literalinclude:: ../code/heating/heating-demo-v2.cpp
+   :caption: :download:`../code/heating/heating-demo-v2.cpp`
    :language: c++
 
 .. code-block:: console
@@ -83,29 +83,29 @@ Step 3: Start D-Bus Implementation
 Pull Demo Logger/Store Out Into Separate Files
 ..............................................
 
-* :download:`logger-demo.h <exercises/code/heating/logger-demo.h>`
+* :download:`logger-demo.h <../code/heating/logger-demo.h>`
 * :download:`valuestore-demo.h
-  <exercises/code/heating/valuestore-demo.h>`
+  <../code/heating/valuestore-demo.h>`
 
 Adapter: ``DBusLogger``
 .......................
 
-.. literalinclude:: exercises/code/heating/logger-dbus.h
-   :caption: :download:`exercises/code/heating/logger-dbus.h`
+.. literalinclude:: ../code/heating/logger-dbus.h
+   :caption: :download:`../code/heating/logger-dbus.h`
    :language: c++
 
 Adapter: ``DBusValueStore``
 ...........................
 
-.. literalinclude:: exercises/code/heating/valuestore-dbus.h
-   :caption: :download:`exercises/code/heating/valuestore-dbus.h`
+.. literalinclude:: ../code/heating/valuestore-dbus.h
+   :caption: :download:`../code/heating/valuestore-dbus.h`
    :language: c++
 
 Demo Program To Instantiate Either Demo Or DBus
 ...............................................
 
-.. literalinclude:: exercises/code/heating/heating-demo-v3.cpp
-   :caption: :download:`exercises/code/heating/heating-demo-v3.cpp`
+.. literalinclude:: ../code/heating/heating-demo-v3.cpp
+   :caption: :download:`../code/heating/heating-demo-v3.cpp`
    :language: c++
 
 Stop Here, Need Help
@@ -115,7 +115,7 @@ Stop Here, Need Help
 
    $ ./heating-demo-v3 DBUS
    *** Round 1 ...
-   heating-demo-v3: /home/jfasch/work/jfasch-home/trainings/material/soup/cxx-design-patterns/exercises/code/heating/logger-dbus.h:14: virtual void DBusLogger::log(const std::string&): Assertion `!"Boss, we need a DBus consultant!!"' failed.
+   heating-demo-v3: /home/jfasch/work/jfasch-home/trainings/material/soup/cxx-design-patterns/exercises/../code/heating/logger-dbus.h:14: virtual void DBusLogger::log(const std::string&): Assertion `!"Boss, we need a DBus consultant!!"' failed.
    Aborted (core dumped)
 
 * Call for consultant to do the dirty work
@@ -131,8 +131,8 @@ Tests
 
 .. image:: heating-tests.png
 
-.. literalinclude:: exercises/code/heating/sensor-reader-suite.cpp
-   :caption: :download:`exercises/code/heating/sensor-reader-suite.cpp`
+.. literalinclude:: ../code/heating/sensor-reader-suite.cpp
+   :caption: :download:`../code/heating/sensor-reader-suite.cpp`
    :language: c++
 
 .. code-block:: console

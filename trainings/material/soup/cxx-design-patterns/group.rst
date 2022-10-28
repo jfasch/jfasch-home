@@ -23,7 +23,7 @@ Topics
 * :doc:`interpreter/interpreter`
 * :doc:`observer/observer`
 * :doc:`abstract-factory/abstract-factory`
-* :doc:`heating-screenplay`
+* :doc:`heating-screenplay/heating-screenplay`
 
 .. ATTENTION: add items to both toctree and
 .. list!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -44,10 +44,14 @@ Topics
    interpreter/interpreter
    observer/observer
    abstract-factory/abstract-factory
-   heating-screenplay
+   heating-screenplay/heating-screenplay
 
 To Be Done
 ----------
+
+* Repertoire page
+
+  * Pattern Catalog: Structural, Behavioral, Creational
 
 * Source page
 
@@ -55,8 +59,6 @@ To Be Done
   * Link those into course page
 
 * Command with MTQueue
-* Pattern Catalog: Structural, Behavioral, Creational
-* Interpreter: description in main page
 * Course preparation page
 
   * Split project: base libraries and their tests
