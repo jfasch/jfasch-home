@@ -10,7 +10,6 @@ Exercises: Design Patterns
 .. toctree::
    :maxdepth: 1
 
-   decorator
    proxy-round
    proxy-remote
    composite

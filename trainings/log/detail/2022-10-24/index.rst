@@ -25,11 +25,11 @@ Monday
 
 * :doc:`C++ Interfaces </trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
 * :doc:`/trainings/material/soup/cxx-design-patterns/uml`
-* :doc:`/trainings/material/soup/cxx-design-patterns/singleton`
+* :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/singleton-inflexible`
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/singleton-flexible`
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/singleton-flexible-strict`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-inflexible`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible-strict`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/adapter`
 * :doc:`/trainings/material/soup/cxx-design-patterns/proxy`

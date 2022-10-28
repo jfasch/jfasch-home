@@ -17,7 +17,7 @@ Topics
 * :doc:`singleton/singleton`
 * :doc:`adapter`
 * :doc:`proxy`
-* :doc:`decorator`
+* :doc:`decorator/decorator`
 * :doc:`composite`
 * :doc:`command`
 * :doc:`interpreter`
@@ -38,7 +38,7 @@ Topics
    sensor-hierarchy
    adapter
    proxy
-   decorator
+   decorator/decorator
    composite
    command
    interpreter

@@ -10,6 +10,8 @@ ADD_LIBRARY(
   sensor-i2c-vendor1.h
   sensor-i2c-vendor2.h
 
+  sensor-A.h
+
   sensor-utils.h
   queue.h
   server-thread.h
@@ -24,8 +26,7 @@ ADD_LIBRARY(
   # <exercises>
 
   # adapter
-  sensor-A.h
-  sensor-A-adapt-B.h
+  sensor-A-adapter.h
 
   # decorator
   sensor-decorated.h  
