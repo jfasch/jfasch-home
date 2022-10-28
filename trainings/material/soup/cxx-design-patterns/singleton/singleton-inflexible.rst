@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx_design_patterns.exercises.singleton_inflexible
+.. ot-exercise:: cxx_design_patterns.singleton_inflexible
    :dependencies: cxx_design_patterns.singleton,
 		  cxx_design_patterns.uml
 
@@ -29,8 +29,8 @@ can run. Take special care:
   compiler errors.
 * There must not be a memory leak at program end.
 
-.. literalinclude:: code/singleton/singleton-social-insurance-inflexible-main.cpp
-   :caption: :download:`code/singleton/singleton-social-insurance-inflexible-main.cpp`
+.. literalinclude:: ../exercises/code/singleton/singleton-social-insurance-inflexible-main.cpp
+   :caption: :download:`../exercises/code/singleton/singleton-social-insurance-inflexible-main.cpp`
    :language: c++
 
 When run, the program outputs the following:

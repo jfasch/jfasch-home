@@ -10,9 +10,6 @@ Exercises: Design Patterns
 .. toctree::
    :maxdepth: 1
 
-   singleton-inflexible
-   singleton-flexible
-   singleton-flexible-strict
    decorator
    proxy-round
    proxy-remote

@@ -1,6 +1,6 @@
-.. ot-exercise:: cxx_design_patterns.exercises.singleton_flexible_strict
-   :dependencies: cxx_design_patterns.exercises.singleton_inflexible,
-		  cxx_design_patterns.exercises.singleton_flexible,
+.. ot-exercise:: cxx_design_patterns.singleton_flexible_strict
+   :dependencies: cxx_design_patterns.singleton_inflexible,
+		  cxx_design_patterns.singleton_flexible,
 		  cxx_design_patterns.singleton,
 		  cxx_design_patterns.uml
 
@@ -55,8 +55,8 @@ run. Take special care:
   compiler errors.
 * There must not be a memory leak at program end.
 
-.. literalinclude:: code/singleton/singleton-social-insurance-flexible-strict-main.cpp
-   :caption: :download:`code/singleton/singleton-social-insurance-flexible-strict-main.cpp`
+.. literalinclude:: ../exercises/code/singleton/singleton-social-insurance-flexible-strict-main.cpp
+   :caption: :download:`../exercises/code/singleton/singleton-social-insurance-flexible-strict-main.cpp`
    :language: c++
 
 Tests

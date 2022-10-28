@@ -14,7 +14,7 @@ Topics
   </trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
 * :doc:`uml`
 * :doc:`oo-principles`
-* :doc:`singleton`
+* :doc:`singleton/singleton`
 * :doc:`adapter`
 * :doc:`proxy`
 * :doc:`decorator`
@@ -34,7 +34,7 @@ Topics
 
    uml
    oo-principles
-   singleton
+   singleton/singleton
    sensor-hierarchy
    adapter
    proxy
@@ -58,7 +58,6 @@ To Be Done
 * Command with MTQueue
 * Pattern Catalog: Structural, Behavioral, Creational
 * Interpreter: description in main page
-
 * Course preparation page
 
   * Split project: base libraries and their tests

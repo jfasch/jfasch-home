@@ -24,23 +24,14 @@ Description
 * Instantiation should be automatic
 * ... and this is where the problems arise
 
-Exerises/Livehacking
---------------------
+Exerises
+--------
 
-Simplest: Concrete Class
-........................
+.. toctree::
 
-:doc:`exercises/singleton-inflexible`
-
-Deriving From Singleton "Interface" - Explicit Instantiation
-............................................................
-
-:doc:`exercises/singleton-flexible`
-
-Hidden Instantiation Via Environment Variable
-.............................................
-
-:doc:`exercises/singleton-flexible-strict`
+   singleton-inflexible
+   singleton-flexible
+   singleton-flexible-strict
 
 And ``class Person``?
 .....................

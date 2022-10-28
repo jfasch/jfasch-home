@@ -1,5 +1,5 @@
-.. ot-exercise:: cxx_design_patterns.exercises.singleton_flexible
-   :dependencies: cxx_design_patterns.exercises.singleton_inflexible,
+.. ot-exercise:: cxx_design_patterns.singleton_flexible
+   :dependencies: cxx_design_patterns.singleton_inflexible,
 		  cxx_design_patterns.singleton,
 		  cxx_design_patterns.uml
 
@@ -31,8 +31,8 @@ Modify your solution to :doc:`singleton-inflexible`:
 Add the following program to your build system. The program uses the
 two implementations.
 
-.. literalinclude:: code/singleton/singleton-social-insurance-flexible-main.cpp
-   :caption: :download:`code/singleton/singleton-social-insurance-flexible-main.cpp`
+.. literalinclude:: ../exercises/code/singleton/singleton-social-insurance-flexible-main.cpp
+   :caption: :download:`../exercises/code/singleton/singleton-social-insurance-flexible-main.cpp`
    :language: c++
 
 When run, the program outputs the following (and crashes):

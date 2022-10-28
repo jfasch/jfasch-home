@@ -41,6 +41,14 @@ swoop, *easily*.
 .. image:: sensor-a-adapter.png
    :scale: 40%
 
+.. note::
+
+   Convert Fahrenheit to Celsius using the following formula:
+
+   .. math::
+
+      C = (F - 32) * 5 / 9
+
 Exercise
 --------
 

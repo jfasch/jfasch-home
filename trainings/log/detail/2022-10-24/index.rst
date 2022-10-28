@@ -32,9 +32,6 @@ Monday
   * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/singleton-flexible-strict`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/adapter`
-
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/adapter`
-
 * :doc:`/trainings/material/soup/cxx-design-patterns/proxy`
 
   * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/proxy-round`
