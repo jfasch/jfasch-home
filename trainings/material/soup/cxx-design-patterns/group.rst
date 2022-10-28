@@ -12,7 +12,7 @@ Topics
 
 * Introduction: :doc:`C++ Interfaces
   </trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
-* :doc:`uml`
+* :doc:`uml/uml`
 * :doc:`oo-principles`
 * :doc:`singleton/singleton`
 * :doc:`adapter/adapter`
@@ -22,7 +22,7 @@ Topics
 * :doc:`command/command`
 * :doc:`interpreter/interpreter`
 * :doc:`observer/observer`
-* :doc:`abstract-factory`
+* :doc:`abstract-factory/abstract-factory`
 * :doc:`heating-screenplay`
 
 .. ATTENTION: add items to both toctree and
@@ -32,7 +32,7 @@ Topics
    :maxdepth: 1
    :hidden:
 
-   uml
+   uml/uml
    oo-principles
    singleton/singleton
    sensor-hierarchy
@@ -43,7 +43,7 @@ Topics
    command/command
    interpreter/interpreter
    observer/observer
-   abstract-factory
+   abstract-factory/abstract-factory
    heating-screenplay
 
 To Be Done
@@ -54,7 +54,6 @@ To Be Done
   * Solution page(s) maybe?
   * Link those into course page
 
-* Move exercises into main pages
 * Command with MTQueue
 * Pattern Catalog: Structural, Behavioral, Creational
 * Interpreter: description in main page
@@ -67,14 +66,6 @@ To Be Done
 * Fun exercise: devise a system where person have a sensor plugged
   into them. When the sensor sees a sign of sickness, a post is made
   into SocialDB to charge for it, and an observing party is notified.
-
-Exercises
----------
-
-.. toctree::
-   :maxdepth: 1
-
-   exercises/group
 
 Dependencies
 ------------

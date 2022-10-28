@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx_design_patterns.exercises.proxy_remote
+.. ot-exercise:: cxx_design_patterns.proxy_remote
    :dependencies: cxx_design_patterns.proxy,
 		  cxx_design_patterns.adapter,
 		  cxx_design_patterns.uml,

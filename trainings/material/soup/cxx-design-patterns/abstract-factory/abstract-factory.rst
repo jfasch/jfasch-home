@@ -1,20 +1,37 @@
-.. ot-exercise:: cxx_design_patterns.exercises.abstract_factory
-   :dependencies: cxx03.inheritance_oo.interface,
-		  cxx_design_patterns.singleton,
+.. ot-topic:: cxx_design_patterns.abstract_factory
+   :dependencies: cxx_design_patterns.singleton,
+		  cxx03.inheritance_oo.interface,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.sensor_hierarchy
 
 .. include:: <mmlalias.txt>
 
 
-Exercise: Abstract Factory
-==========================
+Abstract Factory
+================
 
 .. contents::
    :local:
 
+Problem
+-------
+
+Object instantiation should not make core code depend on a concrete
+implementation. Instead, core code should depend on abstractions.
+
+*Abstract Factory* is such a *dependency inversion* mechanism.
+
+Solution
+--------
+
+.. image:: abstract-factory-hierarchy.png
+   :scale: 40%
+
+Exercise
+--------
+
 I2C Sensor Subhierarchy
------------------------
+.......................
 
 Imagine a company currently deploys I2C sensors of vendor 1. These
 sensor have their place in the sensor hierarchy,
@@ -42,7 +59,7 @@ down into a subhierarchy like so ...
    :scale: 40%
 
 Problem: I2C Sensor Instantiation
----------------------------------
+.................................
 
 In current code, instantiation of the venerable ``I2CSensor_Vendor1``
 class is distributed all over the place. It is not currently on
@@ -52,7 +69,7 @@ across the software than taking the risk of damage and/or project
 slip.
 
 Solution: Factory Objects
--------------------------
+.........................
 
 A change that is reasonable, though, is to centralize the millions of
 ``if`` cascades,
@@ -68,7 +85,7 @@ Better yet, introduce a singleton *factory* object,
    std::unique_ptr<I2CSensor> sensor = I2CSensorFactory::instance().create(/*bus*/ 1, /*address*/ 0x37);
 
 Requirements
-------------
+............
 
 Lets not speak out the *singleton* word for a moment, and implement
 the following *Abstract Factory* hierarchy ...
@@ -78,16 +95,16 @@ the following *Abstract Factory* hierarchy ...
 
 ... which passed the following tests:
 
-.. literalinclude:: code/tests/abstract-factory-suite-vendor1.cpp
-   :caption: :download:`code/tests/abstract-factory-suite-vendor1.cpp`
+.. literalinclude:: ../exercises/code/tests/abstract-factory-suite-vendor1.cpp
+   :caption: :download:`../exercises/code/tests/abstract-factory-suite-vendor1.cpp`
    :language: c++
 
-.. literalinclude:: code/tests/abstract-factory-suite-vendor2.cpp
-   :caption: :download:`code/tests/abstract-factory-suite-vendor2.cpp`
+.. literalinclude:: ../exercises/code/tests/abstract-factory-suite-vendor2.cpp
+   :caption: :download:`../exercises/code/tests/abstract-factory-suite-vendor2.cpp`
    :language: c++
 
 Notes
------
+.....
 
 * The concrete sensor objects are never seen by user code. Neither is
   the concrete factory.
