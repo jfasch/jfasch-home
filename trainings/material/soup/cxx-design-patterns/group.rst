@@ -16,7 +16,7 @@ Topics
 * :doc:`oo-principles`
 * :doc:`singleton/singleton`
 * :doc:`adapter`
-* :doc:`proxy`
+* :doc:`proxy/proxy`
 * :doc:`decorator/decorator`
 * :doc:`composite`
 * :doc:`command`
@@ -37,7 +37,7 @@ Topics
    singleton/singleton
    sensor-hierarchy
    adapter
-   proxy
+   proxy/proxy
    decorator/decorator
    composite
    command

@@ -23,8 +23,8 @@ also be used locally.
 The *Proxy* pattern can also be used purely local, for example to hook
 into the call to the target object.
 
-Solution
---------
+Solution: *Proxy*
+-----------------
 
 Local Variant
 .............
@@ -40,6 +40,8 @@ Remote Variant
 Exercises
 ---------
 
-* :doc:`exercises/proxy-round`
-* :doc:`exercises/proxy-remote`
+.. toctree::
+
+   proxy-round
+   proxy-remote
 

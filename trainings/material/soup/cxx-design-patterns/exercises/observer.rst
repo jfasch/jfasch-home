@@ -2,7 +2,7 @@
    :dependencies: cxx_design_patterns.observer,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.adapter,
-		  cxx_design_patterns.exercises.proxy_round
+		  cxx_design_patterns.proxy_round
 
 Exercise: Observer (``SocialDB``)
 =================================
@@ -11,7 +11,7 @@ Exercise: Observer (``SocialDB``)
    :local:
 
 Now that we have implemented several iterations of, for example,
-:doc:`../adapter`, :doc:`proxy-round`, etc., driven by tests, lets
+:doc:`../adapter`, :doc:`../proxy/proxy-round`, etc., driven by tests, lets
 implement yet another pattern in the same way.
 
 .. literalinclude:: code/tests/observer-suite-register-one.cpp

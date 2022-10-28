@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx_design_patterns.exercises.proxy_round
+.. ot-exercise:: cxx_design_patterns.proxy_round
    :dependencies: cxx_design_patterns.proxy,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.sensor_hierarchy
@@ -17,6 +17,6 @@ and returns that measurement rounded to the nearest integer.
 Invent that new sensor in a way that it fullfills the following
 requirements:
 
-.. literalinclude:: code/tests/proxy-round-suite.cpp
-   :caption: :download:`code/tests/proxy-round-suite.cpp`
+.. literalinclude:: ../exercises/code/tests/proxy-round-suite.cpp
+   :caption: :download:`../exercises/code/tests/proxy-round-suite.cpp`
    :language: c++

@@ -10,8 +10,6 @@ Exercises: Design Patterns
 .. toctree::
    :maxdepth: 1
 
-   proxy-round
-   proxy-remote
    composite
    command
    interpreter

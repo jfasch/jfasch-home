@@ -1,5 +1,5 @@
 .. ot-exercise:: cxx_design_patterns.exercises.composite
-   :dependencies: cxx_design_patterns.exercises.proxy_round,
+   :dependencies: cxx_design_patterns.proxy_round,
 		  cxx_design_patterns.composite,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.sensor_hierarchy
