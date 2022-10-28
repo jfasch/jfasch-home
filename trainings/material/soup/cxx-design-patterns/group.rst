@@ -36,7 +36,7 @@ Topics
    oo-principles
    singleton/singleton
    sensor-hierarchy
-   adapter
+   adapter/adapter
    proxy/proxy
    decorator/decorator
    composite
