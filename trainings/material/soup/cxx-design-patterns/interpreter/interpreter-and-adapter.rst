@@ -1,6 +1,7 @@
-.. ot-exercise:: cxx_design_patterns.exercises.interpreter_and_adapter
+.. ot-exercise:: cxx_design_patterns.interpreter_and_adapter
    :dependencies: cxx_design_patterns.adapter,
 		  cxx_design_patterns.interpreter,
+		  cxx_design_patterns.interpreter_basic,
 		  cxx_design_patterns.sensor_hierarchy
 
 .. include:: <mmlalias.txt>
@@ -34,7 +35,7 @@ Requirement
 In directory ``programs/``, add an executable that is built from the
 following code:
 
-.. literalinclude:: code/programs/dynamic-measurement-language.cpp
-   :caption: :download:`code/programs/dynamic-measurement-language.cpp`
+.. literalinclude:: ../exercises/code/programs/dynamic-measurement-language.cpp
+   :caption: :download:`../exercises/code/programs/dynamic-measurement-language.cpp`
    :language: c++
 

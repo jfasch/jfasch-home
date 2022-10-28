@@ -20,8 +20,8 @@ Topics
 * :doc:`decorator/decorator`
 * :doc:`composite/composite`
 * :doc:`command/command`
-* :doc:`interpreter`
-* :doc:`observer`
+* :doc:`interpreter/interpreter`
+* :doc:`observer/observer`
 * :doc:`abstract-factory`
 * :doc:`heating-screenplay`
 
@@ -41,8 +41,8 @@ Topics
    decorator/decorator
    composite/composite
    command/command
-   interpreter
-   observer
+   interpreter/interpreter
+   observer/observer
    abstract-factory
    heating-screenplay
 

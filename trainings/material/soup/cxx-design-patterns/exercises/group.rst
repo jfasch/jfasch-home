@@ -10,9 +10,6 @@ Exercises: Design Patterns
 .. toctree::
    :maxdepth: 1
 
-   interpreter
-   interpreter-and-adapter
-   observer
    abstract-factory
 
 Dependencies

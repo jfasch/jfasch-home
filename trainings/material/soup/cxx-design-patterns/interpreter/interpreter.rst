@@ -14,5 +14,7 @@ Interpreter
 Exercise
 --------
 
-* :doc:`exercises/interpreter`
-* :doc:`exercises/interpreter-and-adapter`
+.. toctree::
+
+   interpreter-basic
+   interpreter-and-adapter
