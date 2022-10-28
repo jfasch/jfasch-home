@@ -1,6 +1,6 @@
 .. ot-exercise:: cxx_design_patterns.exercises.proxy_remote
    :dependencies: cxx_design_patterns.proxy,
-		  cxx_design_patterns.exercises.adapter,
+		  cxx_design_patterns.adapter,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.sensor_hierarchy
 
@@ -45,7 +45,7 @@ implementation that takes place in the following class diagram. It's
 the green parts that need to be implemented.
 
 Note that the ``RemoteAdapter`` is a specialized form of the
-:doc:`Adapter pattern <../adapter>`: implementations of the
+:doc:`Adapter pattern <adapter>`: implementations of the
 ``RemoteAdapter`` interface are supposed to adapt to *something* by
 implementing a protocol onto somthing that is already there. This is
 not a requirement though - a simplistic implementation may not only

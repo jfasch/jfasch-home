@@ -19,7 +19,7 @@ In :doc:`interpreter` we created a clas hierarchy to do arithmetic
 calculations, based on literals and variables - *values*, all in all.
 
 The venerable ``Sensor`` :doc:`hierarchy <../sensor-hierarchy>` that
-we used in :doc:`adapter` and in :doc:`proxy-round`, for example,
+we used in :doc:`../adapter` and in :doc:`proxy-round`, for example,
 contains a number of classes (to be extended by real-world sensors one
 day), that also provide *values*.
 

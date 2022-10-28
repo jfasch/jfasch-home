@@ -13,7 +13,6 @@ Exercises: Design Patterns
    singleton-inflexible
    singleton-flexible
    singleton-flexible-strict
-   adapter
    decorator
    proxy-round
    proxy-remote

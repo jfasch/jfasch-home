@@ -1,5 +1,5 @@
 .. ot-exercise:: cxx_design_patterns.exercises.decorator
-   :dependencies: cxx_design_patterns.exercises.adapter,
+   :dependencies: cxx_design_patterns.adapter,
 		  cxx_design_patterns.decorator,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.sensor_hierarchy

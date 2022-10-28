@@ -32,8 +32,8 @@ measure in degrees Fahrenheit.
    :caption: :download:`exercises/code/library/sensor-A.h`
    :language: c++
 
-Solution
---------
+Solution: Adaptation
+--------------------
 
 Seems like we could be able to integrate all of their sensors in one
 swoop, *easily*.
@@ -44,7 +44,12 @@ swoop, *easily*.
 Exercise
 --------
 
-:doc:`exercises/adapter`
+Implement such an adapter class into our sensor hierarchy, suh that
+the following test is satisfied:
+
+.. literalinclude:: exercises/code/tests/adapter-suite.cpp
+   :caption: :download:`exercises/code/tests/adapter-suite.cpp`
+   :language: c++
 
 
 .. rubric:: Footnotes
