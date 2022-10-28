@@ -15,7 +15,7 @@ Topics
 * :doc:`uml`
 * :doc:`oo-principles`
 * :doc:`singleton/singleton`
-* :doc:`adapter`
+* :doc:`adapter/adapter`
 * :doc:`proxy/proxy`
 * :doc:`decorator/decorator`
 * :doc:`composite`

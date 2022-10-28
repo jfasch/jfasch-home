@@ -28,8 +28,8 @@ measure in degrees Fahrenheit.
 .. image:: sensor-hierarchy-company-A.png
    :scale: 40%
 
-.. literalinclude:: exercises/code/library/sensor-A.h
-   :caption: :download:`exercises/code/library/sensor-A.h`
+.. literalinclude:: ../exercises/code/library/sensor-A.h
+   :caption: :download:`../exercises/code/library/sensor-A.h`
    :language: c++
 
 Solution: Adaptation
@@ -55,8 +55,8 @@ Exercise
 Implement such an adapter class into our sensor hierarchy, suh that
 the following test is satisfied:
 
-.. literalinclude:: exercises/code/tests/adapter-suite.cpp
-   :caption: :download:`exercises/code/tests/adapter-suite.cpp`
+.. literalinclude:: ../exercises/code/tests/adapter-suite.cpp
+   :caption: :download:`../exercises/code/tests/adapter-suite.cpp`
    :language: c++
 
 
