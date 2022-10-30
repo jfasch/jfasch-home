@@ -21,18 +21,18 @@ class hierarchy, starting at an abstract base class (an
 :doc:`interface
 </trainings/material/soup/cxx03/100-inheritance-oo-design/group>`):
 
-.. literalinclude:: code/library/sensor.h
-   :caption: :download:`code/library/sensor.h`
+.. literalinclude:: code/libtrainer/sensor.h
+   :caption: :download:`code/libtrainer/sensor.h`
    :language: c++
 
 Two concrete implementations of such sensors that we will use in the
 exercise series in this course are:
 
 * :download:`RandomSensor
-  <code/library/sensor-random.h>`. That sensor yields
+  <code/libtrainer/sensor-random.h>`. That sensor yields
   floating point random numbers in a configurable range.
 * :download:`ConstantSensor
-  <code/library/sensor-const.h>`. That one yield always the
+  <code/libtrainer/sensor-const.h>`. That one yield always the
   same temperature. Cool for testing.
 
 We will extend that hierarchy along with the exercises.

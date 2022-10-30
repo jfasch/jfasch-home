@@ -11,6 +11,6 @@ Solution: Proxy (Rounding Thermometer)
 Rounding Sensor (Proxy) Implementation
 --------------------------------------
 
-.. literalinclude:: ../code/library/sensor-round.h
-   :caption: :download:`../code/library/sensor-round.h`
+.. literalinclude:: ../code/libtrainee/sensor-round.h
+   :caption: :download:`../code/libtrainee/sensor-round.h`
    :language: c++

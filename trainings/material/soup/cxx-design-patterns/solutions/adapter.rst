@@ -13,7 +13,7 @@ Solution: Adapter
 Adapter Class For Company A's Sensor
 ------------------------------------
 
-.. literalinclude:: ../code/library/sensor-A-adapter.h
-   :caption: :download:`../code/library/sensor-A-adapter.h`
+.. literalinclude:: ../code/libtrainee/sensor-A-adapter.h
+   :caption: :download:`../code/libtrainee/sensor-A-adapter.h`
    :language: c++
 

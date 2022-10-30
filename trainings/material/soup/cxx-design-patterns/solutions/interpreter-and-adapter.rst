@@ -10,11 +10,11 @@ Solution: Interpreter Combined With Adapter (And A Proxy)
 .. contents::
    :local:
 
-.. literalinclude:: ../code/library/expression-sensorvalue.h
-   :caption: :download:`../code/library/expression-sensorvalue.h`
+.. literalinclude:: ../code/libtrainee/expression-sensorvalue.h
+   :caption: :download:`../code/libtrainee/expression-sensorvalue.h`
    :language: c++
 
-.. literalinclude:: ../code/library/expression-sensorvalue.cpp
-   :caption: :download:`../code/library/expression-sensorvalue.cpp`
+.. literalinclude:: ../code/libtrainee/expression-sensorvalue.cpp
+   :caption: :download:`../code/libtrainee/expression-sensorvalue.cpp`
    :language: c++
 

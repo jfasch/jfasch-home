@@ -1,6 +1,6 @@
 SocialDB Source Code
 ====================
 
-.. literalinclude:: ../code/library/social-db.h
-   :caption: :download:`../code/library/social-db.h`
+.. literalinclude:: ../code/libtrainer/social-db.h
+   :caption: :download:`../code/libtrainer/social-db.h`
    :language: c++

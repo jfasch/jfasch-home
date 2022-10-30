@@ -1,6 +1,8 @@
 ADD_EXECUTABLE(
   design-patterns-c++-trainee-exercises-suite
 
+  trainee-dummy-suite.cpp
+
   adapter-suite.cpp
 
   decorator-suite-starting-point.cpp

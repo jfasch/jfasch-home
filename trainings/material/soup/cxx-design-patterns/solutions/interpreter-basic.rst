@@ -10,10 +10,10 @@ Solution: Arithmetic Expression Interpreter
 .. contents::
    :local:
 
-.. literalinclude:: ../code/library/expression.h
-   :caption: :download:`../code/library/expression.h`
+.. literalinclude:: ../code/libtrainee/expression.h
+   :caption: :download:`../code/libtrainee/expression.h`
    :language: c++
 
-.. literalinclude:: ../code/library/expression.cpp
-   :caption: :download:`../code/library/expression.cpp`
+.. literalinclude:: ../code/libtrainee/expression.cpp
+   :caption: :download:`../code/libtrainee/expression.cpp`
    :language: c++

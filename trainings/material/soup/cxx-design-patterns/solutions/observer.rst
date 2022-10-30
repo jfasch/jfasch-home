@@ -11,10 +11,10 @@ Solution: Observer
    :local:
 
 
-.. literalinclude:: ../code/library/social-db-observable.h
-   :caption: :download:`../code/library/social-db-observable.h`
+.. literalinclude:: ../code/libtrainee/social-db-observable.h
+   :caption: :download:`../code/libtrainee/social-db-observable.h`
    :language: c++
 
-.. literalinclude:: ../code/library/social-db-observable.cpp
-   :caption: :download:`../code/library/social-db-observable.cpp`
+.. literalinclude:: ../code/libtrainee/social-db-observable.cpp
+   :caption: :download:`../code/libtrainee/social-db-observable.cpp`
    :language: c++

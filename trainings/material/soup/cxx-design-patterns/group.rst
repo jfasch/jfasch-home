@@ -45,6 +45,14 @@ Solutions
 
    solutions/group
 
+Course Preparation
+------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   course-preparation
+
 To Be Done
 ----------
 

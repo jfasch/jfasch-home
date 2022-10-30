@@ -11,21 +11,21 @@ Solution: Proxy (Remote Thermometer)
 Client (Proxy) Thermometer
 --------------------------
 
-.. literalinclude:: ../code/library/sensor-remote.h
-   :caption: :download:`../code/library/sensor-remote.h`
+.. literalinclude:: ../code/libtrainee/sensor-remote.h
+   :caption: :download:`../code/libtrainee/sensor-remote.h`
    :language: c++
 
-.. literalinclude:: ../code/library/sensor-remote.cpp
-   :caption: :download:`../code/library/sensor-remote.cpp`
+.. literalinclude:: ../code/libtrainee/sensor-remote.cpp
+   :caption: :download:`../code/libtrainee/sensor-remote.cpp`
    :language: c++
 
 Remote Stub
 -----------
 
-.. literalinclude:: ../code/library/sensor-remote-adapter.h
-   :caption: :download:`../code/library/sensor-remote-adapter.h`
+.. literalinclude:: ../code/libtrainee/sensor-remote-adapter.h
+   :caption: :download:`../code/libtrainee/sensor-remote-adapter.h`
    :language: c++
 
-.. literalinclude:: ../code/library/sensor-remote-adapter.cpp
-   :caption: :download:`../code/library/sensor-remote-adapter.cpp`
+.. literalinclude:: ../code/libtrainee/sensor-remote-adapter.cpp
+   :caption: :download:`../code/libtrainee/sensor-remote-adapter.cpp`
    :language: c++

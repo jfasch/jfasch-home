@@ -13,10 +13,10 @@ Solution: Command
 Command Classes
 ---------------
 
-.. literalinclude:: ../code/library/social-db-commands.h
-   :caption: :download:`../code/library/social-db-commands.h`
+.. literalinclude:: ../code/libtrainee/social-db-commands.h
+   :caption: :download:`../code/libtrainee/social-db-commands.h`
    :language: c++
 
-.. literalinclude:: ../code/library/social-db-commands.cpp
-   :caption: :download:`../code/library/social-db-commands.cpp`
+.. literalinclude:: ../code/libtrainee/social-db-commands.cpp
+   :caption: :download:`../code/libtrainee/social-db-commands.cpp`
    :language: c++

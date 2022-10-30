@@ -13,28 +13,28 @@ Solution: Decorator
 Decorated Sensor (Intermediate Interface)
 -----------------------------------------
 
-.. literalinclude:: ../code/library/sensor-decorated.h
-   :caption: :download:`../code/library/sensor-decorated.h`
+.. literalinclude:: ../code/libtrainee/sensor-decorated.h
+   :caption: :download:`../code/libtrainee/sensor-decorated.h`
    :language: c++
 
 Decorated Constant Sensor
 -------------------------
 
-.. literalinclude:: ../code/library/sensor-decorated-const.h
-   :caption: :download:`../code/library/sensor-decorated-const.h`
+.. literalinclude:: ../code/libtrainee/sensor-decorated-const.h
+   :caption: :download:`../code/libtrainee/sensor-decorated-const.h`
    :language: c++
 
-.. literalinclude:: ../code/library/sensor-decorated-const.cpp
-   :caption: :download:`../code/library/sensor-decorated-const.cpp`
+.. literalinclude:: ../code/libtrainee/sensor-decorated-const.cpp
+   :caption: :download:`../code/libtrainee/sensor-decorated-const.cpp`
    :language: c++
 
 Decorated Random Sensor
 -----------------------
 
-.. literalinclude:: ../code/library/sensor-decorated-random.h
-   :caption: :download:`../code/library/sensor-decorated-random.h`
+.. literalinclude:: ../code/libtrainee/sensor-decorated-random.h
+   :caption: :download:`../code/libtrainee/sensor-decorated-random.h`
    :language: c++
 
-.. literalinclude:: ../code/library/sensor-decorated-random.cpp
-   :caption: :download:`../code/library/sensor-decorated-random.cpp`
+.. literalinclude:: ../code/libtrainee/sensor-decorated-random.cpp
+   :caption: :download:`../code/libtrainee/sensor-decorated-random.cpp`
    :language: c++

@@ -60,8 +60,8 @@ value.
    :align: left
    :widths: auto
 
-   * * .. literalinclude:: ../code/tests/interpreter-suite-literal.cpp
-          :caption: :download:`../code/tests/interpreter-suite-literal.cpp`
+   * * .. literalinclude:: ../code/tests-trainee/interpreter-suite-literal.cpp
+          :caption: :download:`../code/tests-trainee/interpreter-suite-literal.cpp`
           :language: c++
 
      * .. image:: interpreter-literal-class.png
@@ -77,8 +77,8 @@ Arithmetic (Binary) Expressions
      :align: left
      :widths: auto
   
-     * * .. literalinclude:: ../code/tests/interpreter-suite-addition.cpp
-            :caption: :download:`../code/tests/interpreter-suite-addition.cpp`
+     * * .. literalinclude:: ../code/tests-trainee/interpreter-suite-addition.cpp
+            :caption: :download:`../code/tests-trainee/interpreter-suite-addition.cpp`
             :language: c++
   
        * .. image:: interpreter-addition-class.png
@@ -86,20 +86,20 @@ Arithmetic (Binary) Expressions
 
 * ``Subtraction``
 
-  .. literalinclude:: ../code/tests/interpreter-suite-subtraction.cpp
-     :caption: :download:`../code/tests/interpreter-suite-subtraction.cpp`
+  .. literalinclude:: ../code/tests-trainee/interpreter-suite-subtraction.cpp
+     :caption: :download:`../code/tests-trainee/interpreter-suite-subtraction.cpp`
      :language: c++
 
 * ``Multiplication``
 
-  .. literalinclude:: ../code/tests/interpreter-suite-multiplication.cpp
-     :caption: :download:`../code/tests/interpreter-suite-multiplication.cpp`
+  .. literalinclude:: ../code/tests-trainee/interpreter-suite-multiplication.cpp
+     :caption: :download:`../code/tests-trainee/interpreter-suite-multiplication.cpp`
      :language: c++
 
 * ``Division``
 
-  .. literalinclude:: ../code/tests/interpreter-suite-division.cpp
-     :caption: :download:`../code/tests/interpreter-suite-division.cpp`
+  .. literalinclude:: ../code/tests-trainee/interpreter-suite-division.cpp
+     :caption: :download:`../code/tests-trainee/interpreter-suite-division.cpp`
      :language: c++
 
 Check: Combined Arithmetic Expressions
@@ -117,8 +117,8 @@ objects, so it should be possible to create expression trees like,
    * * Test
      * Expression
      * Tree
-   * * .. literalinclude:: ../code/tests/interpreter-suite-combined-arith.cpp
-          :caption: :download:`../code/tests/interpreter-suite-combined-arith.cpp`
+   * * .. literalinclude:: ../code/tests-trainee/interpreter-suite-combined-arith.cpp
+          :caption: :download:`../code/tests-trainee/interpreter-suite-combined-arith.cpp`
 	  :language: c++
      * ``(7+3)*(3-1) = 20``
      * .. image:: interpreter-expression-tree.png
@@ -150,8 +150,8 @@ No Uninitialized Variables!!
 Lets say, our variable are always initialized - without ever assigning
 to them, they have a defined value: ``0``.
 
-.. literalinclude:: ../code/tests/interpreter-suite-variable-not-set.cpp
-   :caption: :download:`../code/tests/interpreter-suite-variable-not-set.cpp`
+.. literalinclude:: ../code/tests-trainee/interpreter-suite-variable-not-set.cpp
+   :caption: :download:`../code/tests-trainee/interpreter-suite-variable-not-set.cpp`
    :language: c++
 
 Assigning To Variables
@@ -171,8 +171,8 @@ into the variable's context/scope. Additionally, we implement C's
 I.e., the assignment ``i = 42`` is an expression whose value is
 ``42``.
 
-.. literalinclude:: ../code/tests/interpreter-suite-variable-assignment.cpp
-   :caption: :download:`../code/tests/interpreter-suite-variable-assignment.cpp`
+.. literalinclude:: ../code/tests-trainee/interpreter-suite-variable-assignment.cpp
+   :caption: :download:`../code/tests-trainee/interpreter-suite-variable-assignment.cpp`
    :language: c++
 
 Using Variables As Expressions
@@ -186,6 +186,6 @@ expressions themselves.
    int i = 42;
    int j = i;  // <--- i used as expression whose value is assigned to j
 
-.. literalinclude:: ../code/tests/interpreter-suite-variable-used-as-expression.cpp
-   :caption: :download:`../code/tests/interpreter-suite-variable-used-as-expression.cpp`
+.. literalinclude:: ../code/tests-trainee/interpreter-suite-variable-used-as-expression.cpp
+   :caption: :download:`../code/tests-trainee/interpreter-suite-variable-used-as-expression.cpp`
    :language: c++

@@ -1,6 +1,9 @@
 ADD_LIBRARY(
   design-patterns-trainee
 
+  trainee-dummy.h
+  trainee-dummy.cpp
+
   # adapter
   sensor-A-adapter.h
 

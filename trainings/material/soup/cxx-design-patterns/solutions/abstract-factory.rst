@@ -13,8 +13,8 @@ Solution: Abstract Factory
 ``I2CSensorFactory`` Abstract Factory
 -------------------------------------
 
-.. literalinclude:: ../code/library/sensor-i2c-factory.h
-   :caption: :download:`../code/library/sensor-i2c-factory.h`
+.. literalinclude:: ../code/libtrainee/sensor-i2c-factory.h
+   :caption: :download:`../code/libtrainee/sensor-i2c-factory.h`
    :language: c++
 
 Concrete Factory Implementations
@@ -23,21 +23,21 @@ Concrete Factory Implementations
 ``I2CSensorFactory_Vendor1``
 ............................
 
-.. literalinclude:: ../code/library/sensor-i2c-factory-vendor1.h
-   :caption: :download:`../code/library/sensor-i2c-factory-vendor1.h`
+.. literalinclude:: ../code/libtrainee/sensor-i2c-factory-vendor1.h
+   :caption: :download:`../code/libtrainee/sensor-i2c-factory-vendor1.h`
    :language: c++
 
-.. literalinclude:: ../code/library/sensor-i2c-factory-vendor1.cpp
-   :caption: :download:`../code/library/sensor-i2c-factory-vendor1.cpp`
+.. literalinclude:: ../code/libtrainee/sensor-i2c-factory-vendor1.cpp
+   :caption: :download:`../code/libtrainee/sensor-i2c-factory-vendor1.cpp`
    :language: c++
 
 ``I2CSensorFactory_Vendor1``
 ............................
 
-.. literalinclude:: ../code/library/sensor-i2c-factory-vendor2.h
-   :caption: :download:`../code/library/sensor-i2c-factory-vendor2.h`
+.. literalinclude:: ../code/libtrainee/sensor-i2c-factory-vendor2.h
+   :caption: :download:`../code/libtrainee/sensor-i2c-factory-vendor2.h`
    :language: c++
 
-.. literalinclude:: ../code/library/sensor-i2c-factory-vendor2.cpp
-   :caption: :download:`../code/library/sensor-i2c-factory-vendor2.cpp`
+.. literalinclude:: ../code/libtrainee/sensor-i2c-factory-vendor2.cpp
+   :caption: :download:`../code/libtrainee/sensor-i2c-factory-vendor2.cpp`
    :language: c++
