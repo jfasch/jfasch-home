@@ -41,11 +41,12 @@ Plan: Evolution
 
        * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/exercise-thermometer-interface/exercise`
 
-   * * 2022-10-28
+   * * 2022-10-31
      * 
      * 3
-     *
-   * * 
+     * Theory: Design Patterns (some)
+
+   * *
      * 2022-11-02
      * 3
      *

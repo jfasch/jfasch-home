@@ -65,7 +65,7 @@ Miscellaneous but Related
 * :doc:`CMake: A Dirty But Powerful Build Tool <repertoire/cmake>`
 * :doc:`Subversion (SVN): The History of Version History <repertoire/svn>`
 * :doc:`repertoire/unittests`
-* :doc:`repertoire/design-patterns`
+* :doc:`repertoire/design-patterns/design-patterns`
 
 .. toctree::
    :hidden:
@@ -76,7 +76,7 @@ Miscellaneous but Related
    repertoire/cmake
    repertoire/svn
    repertoire/unittests
-   repertoire/design-patterns
+   repertoire/design-patterns/design-patterns
 
 .. rubric:: Footnotes
 

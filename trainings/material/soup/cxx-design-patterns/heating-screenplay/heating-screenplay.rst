@@ -6,8 +6,8 @@
 .. include:: <mmlalias.txt>
 
 
-Case Study: Heating Control (Reading Sensors)
-=============================================
+Case Study/Livehacking: Heating Control (Reading Sensors)
+=========================================================
 
 .. contents::
    :local:

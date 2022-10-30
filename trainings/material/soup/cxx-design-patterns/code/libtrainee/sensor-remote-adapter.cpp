@@ -3,8 +3,6 @@
 #include <sstream>
 #include <stdexcept>
 
-#include <iostream> // jjj
-
 
 std::string RemoteSensorAdapter::execute(const std::string& request)
 {
@@ -14,7 +12,7 @@ std::string RemoteSensorAdapter::execute(const std::string& request)
         buffer << value;
         return buffer.str();
     }
-
-    std::cerr << ">>>>>>>>>>>>>>>" << request << "<<<<<<<<<<<<<<<<<<" << std::endl;
-    throw std::runtime_error("invalid request");
+    // ... more requests here maybe ...
+    else
+        throw std::runtime_error("invalid request");
 }

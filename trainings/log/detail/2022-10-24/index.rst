@@ -9,11 +9,9 @@ Design- and Architectural Patterns With C++ (2022-10-24 - 2022-10-26)
 
 .. sidebar::
 
-   * Original Course Description:
-     :doc:`/trainings/repertoire/design-patterns`
+   * Course Description:
+     :doc:`/trainings/repertoire/design-patterns/design-patterns`
    * :doc:`/trainings/material/soup/cxx-design-patterns/group`
-   * :download:`Design Patterns (PDF)
-     </trainings/material/pdf/060-design-patterns-unittests.pdf>`
    * `Github Repository <https://github.com/jfasch/2022-10-24>`__
 
 
@@ -24,46 +22,68 @@ Monday
 ......
 
 * :doc:`C++ Interfaces </trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
-* :doc:`/trainings/material/soup/cxx-design-patterns/uml`
+* :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
 * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton`
 
   * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-inflexible`
+
+    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-inflexible`
+
   * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible`
+
+    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible`
+
   * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible-strict`
 
+    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible-strict`
+
 * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/adapter`
+  
 * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy`
 
   * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy-round`
+
+    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-round`
+
   * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy-remote`
     (That with the ``ServerThread`` |:thinking:|)
+
+    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-remote`
 
 Tuesday
 .......
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
-* :doc:`/trainings/material/soup/cxx-design-patterns/command/command`
-* :doc:`/trainings/material/soup/cxx-design-patterns/interpreter`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/interpreter`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/composite`
+
+* :doc:`/trainings/material/soup/cxx-design-patterns/command/command`
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/command`
+
+* :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter`
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter-basic`
+
+    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/interpreter-basic`
 
 Wednesday
 .........
 
-* Continuing with :doc:`/trainings/material/soup/cxx-design-patterns/interpreter` ...
+* Continuing with :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter` ...
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/exercises/interpreter-and-adapter`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter-and-adapter`
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/observer`
-* :doc:`/trainings/material/soup/cxx-design-patterns/abstract-factory`
-* Builder maybe (sensors and switches?)
-* Maybe: see how large ``if-elif-else`` (creational) chains can be
-  decomposed into ... plugins? Plugging modules dynamically? Into
-  existing software? ``dlopen()``, ``dlsym()``?
-* Unit Testing and Test Driven Development?
-* C++11 if there's time?
+    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/interpreter-and-adapter`
 
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
-  * :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
-  * New syntactical constructs like *structured binding*, *range based
-    for*, ``auto``
+* :doc:`/trainings/material/soup/cxx-design-patterns/observer/observer`
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/observer`
+
+* :doc:`/trainings/material/soup/cxx-design-patterns/abstract-factory/abstract-factory`
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/abstract-factory`
+
+* :doc:`/trainings/material/soup/cxx-design-patterns/heating-screenplay/heating-screenplay`

@@ -50,7 +50,8 @@ Schulung
   </trainings/repertoire/unittests>`
 * :doc:`Buildmanagement <trainings/repertoire/cmake>` and
   Version Control
-* :doc:`Design and Architecture <trainings/repertoire/design-patterns>`
+* :doc:`Design and Architecture
+  <trainings/repertoire/design-patterns/design-patterns>`
 
 :doc:`More ... </trainings/index>`
 

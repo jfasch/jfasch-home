@@ -1,6 +1,6 @@
 #pragma once
 
-#include "sensor.h"
+#include <sensor.h>
 
 #include <string>
 #include <memory>

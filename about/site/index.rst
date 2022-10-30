@@ -117,4 +117,3 @@ More
    work-in-progress/index
    recipes/index
    courses/index
-   org/index

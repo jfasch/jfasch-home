@@ -787,7 +787,7 @@ Linux Basics, Systemnahe Programmierung (27.7.2015 - 31.7.2015, bei einer Firma 
 Design Patterns and Test Driven Development (1.7.2015 - 3.7.2015, Raum Nürnberg)
 --------------------------------------------------------------------------------
 
-:doc:`../repertoire/design-patterns`
+:doc:`../repertoire/design-patterns/design-patterns`
 
 .. _records-fraunhofer-2015-06-17:
 

@@ -1,14 +1,6 @@
 ADD_EXECUTABLE(
-  design-patterns-c++-exercises-suite
+  design-patterns-c++-trainee-exercises-suite
 
-  # <starting point>
-  
-  sensor-utils-suite.cpp
-  server-thread-suite.cpp
-  social-db-suite.cpp
-  # </starting point>
-
-  
   adapter-suite.cpp
 
   decorator-suite-starting-point.cpp
@@ -54,8 +46,10 @@ ADD_EXECUTABLE(
 )
 
 TARGET_LINK_LIBRARIES(
-  design-patterns-c++-exercises-suite gtest_main 
+  design-patterns-c++-trainee-exercises-suite
 
-  design-patterns  
+  gtest_main 
+  design-patterns-trainee
+  design-patterns-trainer
   Threads::Threads
 )

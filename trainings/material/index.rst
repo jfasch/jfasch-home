@@ -71,7 +71,7 @@ material.
    * - :doc:`/trainings/material/soup/python/misc/group`
      - 
      - :doc:`/trainings/material/soup/python/misc/group`
-   * - :doc:`/trainings/repertoire/design-patterns`
+   * - :doc:`/trainings/repertoire/design-patterns/design-patterns`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -
    * - :doc:`/trainings/repertoire/unittests`

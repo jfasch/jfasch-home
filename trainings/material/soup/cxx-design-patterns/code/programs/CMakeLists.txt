@@ -7,5 +7,6 @@ ADD_EXECUTABLE(
 TARGET_LINK_LIBRARIES(
   dynamic-measurement-language
 
-  design-patterns  
+  design-patterns-trainee
+  design-patterns-trainer
 )
