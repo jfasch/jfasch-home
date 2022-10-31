@@ -16,3 +16,12 @@ TEST(adapter_suite, basic)
     ASensor_Adapter a_adapter(&sensor_from_a);
     ASSERT_FLOAT_EQ(a_adapter.get_temperature(), (36.5 - 32) * 5/9);
 }
+
+TEST(adapter_suite, adapter__is_a__sensor)
+{
+    AConstantSensor sensor_from_a(36.5);
+    ASensor_Adapter a_adapter(&sensor_from_a);
+
+    Sensor* sensor = &a_adapter;       // <--- is-a Sensor
+    (void)sensor; // suppress "unused" warning
+}
