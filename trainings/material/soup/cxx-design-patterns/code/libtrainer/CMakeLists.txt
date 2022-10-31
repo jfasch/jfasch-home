@@ -9,6 +9,7 @@ ADD_LIBRARY(
   sensor-i2c-vendor2.h
 
   sensor-A.h
+  sensor-A-const.h
 
   sensor-utils.h
   queue.h
