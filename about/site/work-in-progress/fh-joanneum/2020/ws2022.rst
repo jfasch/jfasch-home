@@ -51,15 +51,15 @@ Plan: Evolution
        * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
        * :doc:`/trainings/material/soup/cxx-design-patterns/sensor-hierarchy`
        * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/command/command`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter`
 
    * *
      * 2022-11-02
      * 3
-     *
+     * Continuing with Design Patterns
+
+       * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+       * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+
    * * 2022-11-11
      * 
      * 3
