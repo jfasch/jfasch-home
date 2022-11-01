@@ -48,7 +48,7 @@ C and C++ Programming
   C++ since 11.
 
   * Encapsulation, and object oriented programming
-  * STandard template library (STL)
+  * Standard template library (STL)
   * Template metaprogramming
   * Dynamic memory
   * Lambda expressions
@@ -59,3 +59,11 @@ C and C++ Programming
      :hidden:
 
      cxx
+
+* :doc:`cxx11`
+
+  .. toctree::
+     :hidden:
+
+     cxx11
+

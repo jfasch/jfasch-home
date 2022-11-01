@@ -52,11 +52,29 @@ swoop, *easily*.
 Exercise
 --------
 
-Implement such an adapter class into our sensor hierarchy, suh that
-the following test is satisfied:
+Implement such an adapter class into our sensor hierarchy, such that
+the following tests are satisfied. Implement one by one, and take your
+time.
 
-.. literalinclude:: ../code/tests-trainee/adapter-suite.cpp
-   :caption: :download:`../code/tests-trainee/adapter-suite.cpp`
+Basic Adaptation
+................
+
+.. literalinclude:: ../code/tests-trainee/adapter-suite-basic.cpp
+   :caption: :download:`../code/tests-trainee/adapter-suite-basic.cpp`
+   :language: c++
+
+Adapter Must *Be-A* ``Sensor``
+..............................
+
+.. literalinclude:: ../code/tests-trainee/adapter-suite-adapter--is-a--sensor.cpp
+   :caption: :download:`../code/tests-trainee/adapter-suite-adapter--is-a--sensor.cpp`
+   :language: c++
+
+Adaptee Can *Be-Any* ``ASensor``
+................................
+
+.. literalinclude:: ../code/tests-trainee/adapter-suite-adapter--knows--an-a-sensor.cpp
+   :caption: :download:`../code/tests-trainee/adapter-suite-adapter--knows--an-a-sensor.cpp`
    :language: c++
 
 

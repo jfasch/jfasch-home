@@ -43,15 +43,13 @@ Schulung
 --------
 
 * :doc:`trainings/material/soup/python/group`
+* :doc:`trainings/repertoire/c-like/index`
+* :doc:`trainings/repertoire/c-like/cxx11`
+* :doc:`trainings/repertoire/design-patterns/design-patterns`
 * :doc:`trainings/repertoire/sysprog/index`
 * :doc:`trainings/repertoire/kernel-programming-basics`
-* :doc:`trainings/repertoire/c-like/index`
-* :doc:`Unittesting, Test Driven Development
-  </trainings/repertoire/unittests>`
-* :doc:`Buildmanagement <trainings/repertoire/cmake>` and
-  Version Control
-* :doc:`Design and Architecture
-  <trainings/repertoire/design-patterns/design-patterns>`
+* :doc:`Buildmanagement <trainings/repertoire/cmake>` and Version
+  Control
 
 :doc:`More ... </trainings/index>`
 

@@ -3,7 +3,9 @@ ADD_EXECUTABLE(
 
   trainee-dummy-suite.cpp
 
-  adapter-suite.cpp
+  adapter-suite-basic.cpp
+  adapter-suite-adapter--is-a--sensor.cpp
+  adapter-suite-adapter--knows--an-a-sensor.cpp
 
   decorator-suite-starting-point.cpp
   decorator-suite-const-sensor-added-functionality.cpp
