@@ -23,6 +23,74 @@ Python (2022-11-07 - 2022-11-10)
 Agenda
 ------
 
+Up Front
+........
+
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+
+Advanced Python
+...............
+
+* Iteration (Recap)
+* :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo-new/group`
+
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/constructor`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/classes-and-dicts`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/methods`
+  * @property
+  * data classes, named tuple
+  * (Implementation) Inheritance
+  * Interface Inheritance (Abstract Base Classes) - The ``abc`` Module
+
+* Metaprogramming
+
+  * What is a class?
+
+    * Class methods (built-in)
+    * Operator overloading, ``__str__()``, ``__repr__()``
+
+  * Using ``type()`` to create a class/type
+  * Runtime Class Manipulation
+  * Class Decorators
+
+* Function Arguments, Closures, Decorators
+
+  * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+  * :doc:`/trainings/material/soup/python/advanced/closures/topic`
+  * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+
+* Generators, The ``yield`` Keyword
+
+  * :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
+  * Generator Expressions
+
+* ``eval()`` and ``exec()``
+
+  * :doc:`/trainings/material/soup/python/advanced/exec/topic`
+
+* The ``with`` Statement (Context Managers)
+
+File System Interaction
+.......................
+
+https://docs.python.org/3/library/filesys.html
+
+* :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group` (Linux Filesystem)
+* The ``shutil`` Module
+* Exercise: Like
+  :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`,
+  only in Python
+* ``os.path``: https://docs.python.org/3/library/os.path.html
+* ``pathlib``: https://docs.python.org/3/library/pathlib.html
+* ``os.walk()``
+
+Agenda (Old Version)
+--------------------
+
 The Language Fundamentals
 .........................
 

@@ -48,12 +48,14 @@ which you won't be able to do without once you got used to them.
 
 .. toctree::
    :maxdepth: 1
-   
+
+   comprehensions/topic
    iteration-generation/topic
    starargs/topic
    closures/topic
    decorators/topic
    exec/topic
+   oo-new/group
    oo/group
    exceptions
    modules

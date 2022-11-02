@@ -84,6 +84,13 @@ dependencies can be taken from the Docker file for your OS (see `here
        ncurses-devel python3-devel perl-Thread-Queue bzip2 git wget which xz unzip rsync diffutils \
        meson ninja-build
 
+.. code-block:: console
+   :caption: Dependencies for Ubuntu
+
+   root@host # apt-get install -y gcc g++ gperf bison flex texinfo help2man make libncurses5-dev \
+       python3-dev autoconf automake libtool libtool-bin gawk wget bzip2 xz-utils unzip \
+       patch libstdc++6 rsync git meson ninja-build
+
 Download, Build, Install
 ........................
  

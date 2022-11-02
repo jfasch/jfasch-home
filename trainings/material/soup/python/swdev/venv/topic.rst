@@ -10,7 +10,6 @@ Virtual Environments
 
    slides
    screenplay
-   links
 
 .. ot-graph:: 
    :entries: python.swdev.venv

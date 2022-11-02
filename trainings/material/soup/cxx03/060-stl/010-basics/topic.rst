@@ -7,6 +7,9 @@
 Standard Template Library: Basics
 =================================
 
+.. contents::
+   :local:
+
 Containers, Iterators, Algorithms
 ---------------------------------
 

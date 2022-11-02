@@ -36,9 +36,11 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
     'sphinx.ext.graphviz',
     'sphinx.ext.intersphinx',
     'ablog',
+
     'nbsphinx',
 
     # .../notebook.ipynb:: WARNING: Could not lex literal_block as "ipython3". Highlighting skipped.    

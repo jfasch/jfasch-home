@@ -1,7 +1,7 @@
 .. ot-group:: python.advanced.oo
 
-Object Oriented Programming
-===========================
+Object Oriented Programming (Outdated)
+======================================
 
 .. toctree::
    :maxdepth: 1
