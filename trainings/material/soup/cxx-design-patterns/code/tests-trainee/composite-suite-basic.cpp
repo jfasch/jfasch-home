@@ -16,5 +16,6 @@ TEST(composite_suite, basic)
     avg.add(s1);
     avg.add(s2);
 
-    ASSERT_FLOAT_EQ(avg.get_temperature(), 3.5);
+    Sensor* s = &avg;      // <-- is-a Sensor
+    ASSERT_FLOAT_EQ(s->get_temperature(), 3.5);
 }

@@ -15,11 +15,8 @@ Design- and Architectural Patterns With C++ (2022-10-24 - 2022-10-26)
    * `Github Repository <https://github.com/jfasch/2022-10-24>`__
 
 
-Log
----
-
 Monday
-......
+------
 
 * :doc:`C++ Interfaces </trainings/material/soup/cxx03/100-inheritance-oo-design/group>`
 * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
@@ -53,7 +50,7 @@ Monday
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-remote`
 
 Tuesday
-.......
+-------
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
 
@@ -70,7 +67,7 @@ Tuesday
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/interpreter-basic`
 
 Wednesday
-.........
+---------
 
 * Continuing with :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter` ...
 
