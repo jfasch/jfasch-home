@@ -6,6 +6,8 @@ ADD_EXECUTABLE(
   adapter-suite-basic.cpp
   adapter-suite-adapter--is-a--sensor.cpp
   adapter-suite-adapter--knows--an-a-sensor.cpp
+  adapter-suite-adapter-definitely-knows--a-sensor--HELL.cpp
+
 
   decorator-suite-starting-point.cpp
   decorator-suite-const-sensor-added-functionality.cpp

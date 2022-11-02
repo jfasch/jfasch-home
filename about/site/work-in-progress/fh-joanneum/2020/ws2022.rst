@@ -44,21 +44,29 @@ Plan: Evolution
    * * 2022-10-31
      * 
      * 3
-     * Theory: Design Patterns (some)
+     * 
 
-       * https://github.com/jfasch/FH-ECE20-patterns
-       * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/sensor-hierarchy`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+       * Theory: Design Patterns (some)
+
+         * https://github.com/jfasch/FH-ECE20-patterns
+         * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
+         * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+         * :doc:`/trainings/material/soup/cxx-design-patterns/sensor-hierarchy`
+         * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
 
    * *
      * 2022-11-02
      * 3
-     * Continuing with Design Patterns
+     * 
 
-       * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+       * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
+       * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector`
+       * Continuing with Design Patterns
+
+         * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+         * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+
+       * :doc:`/blog/2022/09/cross-raspi`
 
    * * 2022-11-11
      * 

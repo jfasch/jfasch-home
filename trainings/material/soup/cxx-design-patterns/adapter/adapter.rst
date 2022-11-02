@@ -77,6 +77,16 @@ Adaptee Can *Be-Any* ``ASensor``
    :caption: :download:`../code/tests-trainee/adapter-suite-adapter--knows--an-a-sensor.cpp`
    :language: c++
 
+Adapter Is Doing Real Measurements
+..................................
+
+Make sure that the adapter is really doing *measurement* (i.e. *use*
+the adaptee) when being asked for its temperature.
+
+.. literalinclude:: ../code/tests-trainee/adapter-suite-adapter-definitely-knows--a-sensor--HELL.cpp
+   :caption: :download:`../code/tests-trainee/adapter-suite-adapter-definitely-knows--a-sensor--HELL.cpp`
+   :language: c++
+
 
 .. rubric:: Footnotes
 .. [#impedance_mismatch] They sure don't share our ``Sensor``
