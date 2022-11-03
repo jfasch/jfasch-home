@@ -12,10 +12,13 @@ Topics
 .. toctree::
    :maxdepth: 1
    
-   classes-and-dicts
-   constructor
-   methods
-   properties
+   classes-and-dicts/topic
+   constructor/topic
+   methods/topic
+   str-repr/topic
+   properties/topic
+   namedtuple/topic
+   inheritance/topic
 
 Interrelationships
 ------------------

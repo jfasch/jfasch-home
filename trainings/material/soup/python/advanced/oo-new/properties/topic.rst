@@ -31,7 +31,7 @@ Readonly Attributes
 -------------------
 
 * ``@property``
-* Built-in decorator (:doc:`../decorators/topic`)
+* Built-in decorator (:doc:`../../decorators/topic`)
 * |longrightarrow| read-only attribute
 
 .. literalinclude:: properties-attr-readonly-attributes.py
@@ -54,3 +54,12 @@ And Write Access?
 .. command-output:: python properties-attr-write.py
    :cwd: .
 
+Calculated Attributes
+---------------------
+
+.. literalinclude:: properties-calc-attr.py
+   :caption: :download:`properties-calc-attr.py`
+   :language: python
+
+.. command-output:: python properties-calc-attr.py
+   :cwd: .

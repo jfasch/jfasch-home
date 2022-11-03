@@ -19,7 +19,7 @@ Facts Up-Front
 * A class is *callable*
 
   * Creates an object (|longrightarrow| ``self``)
-  * Calls ``__init__`` on it (see :doc:`constructor`)
+  * Calls ``__init__`` on it (see :doc:`../constructor/topic`)
 
 Using Raw Dictionaries As Objects
 ---------------------------------

@@ -13,7 +13,7 @@ Constructor
 Motivation
 ----------
 
-* Manually setting attributes (as in :doc:`classes-and-dicts`) is clumsy
+* Manually setting attributes (as in :doc:`../classes-and-dicts/topic`) is clumsy
 * Typos/bugs ahead
 * |longrightarrow| want a well-defined object *initialization*
 

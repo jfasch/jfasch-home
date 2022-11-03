@@ -37,20 +37,22 @@ Advanced Python
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo-new/group`
 
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/constructor`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/classes-and-dicts`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/methods`
-  * @property
-  * data classes, named tuple
-  * (Implementation) Inheritance
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/constructor/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/classes-and-dicts/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/methods/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/str-repr/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/properties/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/namedtuple/topic`
+  * (Implementation) Inheritance, super(), isinstance(), issubclass()
   * Interface Inheritance (Abstract Base Classes) - The ``abc`` Module
+  * Operator overloading, ``__str__()``, ``__repr__()``
+  * MRO
 
 * Metaprogramming
 
   * What is a class?
 
     * Class methods (built-in)
-    * Operator overloading, ``__str__()``, ``__repr__()``
 
   * Using ``type()`` to create a class/type
   * Runtime Class Manipulation

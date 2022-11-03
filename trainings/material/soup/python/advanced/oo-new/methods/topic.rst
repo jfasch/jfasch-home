@@ -15,7 +15,7 @@ Object Methods
 
 * Methods called on *objects* have implicit first parameter
 * ... the *object* the method *is called on*
-* Usually called ``self`` (not a must though; see :doc:`constructor`)
+* Usually called ``self`` (not a must though; see :doc:`../constructor/topic`)
 
 .. literalinclude:: method-object.py
    :caption: :download:`method-object.py`
