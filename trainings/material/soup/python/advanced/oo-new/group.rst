@@ -15,6 +15,7 @@ Topics
    classes-and-dicts
    constructor
    methods
+   properties
 
 Interrelationships
 ------------------

@@ -6,6 +6,13 @@
 Decorators
 ==========
 
+.. sidebar::
+
+   **Read first**
+
+   * :doc:`../starargs/topic`
+   * :doc:`../closures/topic`
+
 .. toctree::
    :maxdepth: 1
 
