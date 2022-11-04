@@ -42,6 +42,7 @@ extensions = [
     'ablog',
 
     'nbsphinx',
+    'jupyter_sphinx',
 
     # .../notebook.ipynb:: WARNING: Could not lex literal_block as "ipython3". Highlighting skipped.    
     'IPython.sphinxext.ipython_console_highlighting',

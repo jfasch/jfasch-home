@@ -19,16 +19,29 @@ Extending Existing Classes
 * *is-a* ``Person``, but with additional features
 * |longrightarrow| *Implementation inheritance*
 
-.. literalinclude:: employee-basic.py
-   :caption: :download:`employee-basic.py`
-   :language: python
+.. jupyter-execute::
 
-*Method Resolution Order*: How Is ``__init__()`` Found?
--------------------------------------------------------
+   class Person:
+       def __init__(self, firstname, lastname):
+           self.firstname = firstname
+           self.lastname = lastname
+   
+       def fullname(self):
+           return f'{self.firstname} {self.lastname}'
+   
+   class Employee(Person):  # <--- is-a Person
+       pass
+
+Creating an instance of ``Employee`` ...
 
 * ``Employee``: no ``__init__()``
 * ``Person``: found
 * |longrightarrow| ``Person.__init__()`` called
+
+.. jupyter-execute::
+
+   emp = Employee('Joerg', 'Faschingbauer')
+   emp.fullname()
 
 Additional Feature: Salary
 --------------------------
@@ -36,22 +49,53 @@ Additional Feature: Salary
 * ``Employee`` needs its own constructor (added ``salary``)
 * Calls base classe constructor |longrightarrow| ``super()``
 
-.. literalinclude:: employee-salary.py
-   :caption: :download:`employee-salary.py`
-   :language: python
+.. jupyter-execute::
 
-.. command-output:: python employee-salary.py
-   :cwd: .
+   class Employee(Person):
+       def __init__(self, firstname, lastname, salary):
+           super().__init__(firstname, lastname)   # <--- Person.__init__()
+           self.salary = salary
+   
+       def title(self):
+           return f'{self.fullname()} ({self.salary})'
+
+* Now calling ``Employee.__init__()`` ...
+* ... which in turn calls ``Person.__init__()``
+
+.. jupyter-execute::
+
+   emp = Employee('Joerg', 'Faschingbauer', 6000)
+   emp.title()
 
 Want Manager
 ------------
 
-.. literalinclude:: manager.py
-   :caption: :download:`manager.py`
-   :language: python
+Another class, ``Manager``, in the tree ...
 
-.. command-output:: python manager.py
-   :cwd: .
+.. jupyter-execute::
+
+   class Manager(Employee):
+       def __init__(self, firstname, lastname, salary, employees):
+           super().__init__(firstname, lastname, salary) # <--- Employee.__init__()
+           self.employees = employees
+   
+       def add_employee(self, employee):
+           self.employees.append(employee)
+   
+       def title(self):
+           title = super().title()
+           return title + f' (manages {len(self.employees)} employees)'
+
+Composing a number of objects into a ``Manager`` instance ...
+
+.. jupyter-execute::
+
+   joerg = Employee('Joerg', 'Faschingbauer', 6000)
+   mgr = Manager('Isolde', 'Haubentaucher', 10000, [joerg])
+   caro = Employee('Caro', 'Faschingbauer', 5000)
+   mgr.add_employee(caro)
+
+   mgr.title()
 
 Introspecting Inheritance: ``isinstance()``, ``issubclass()``
 -------------------------------------------------------------
@@ -63,20 +107,70 @@ Introspecting Inheritance: ``isinstance()``, ``issubclass()``
 
   * Funnily a class is considered a subclass of itself
 
-.. literalinclude:: manager-introspection.py
-   :caption: :download:`manager-introspection.py`
-   :language: python
+``isinstance()``
+----------------
 
-.. command-output:: python manager-introspection.py
-   :cwd: .
+Obviously an ``Employee`` instance is an ``Employee`` instance:
 
-Add ``__str__()``, Creatively
------------------------------
+.. jupyter-execute::
 
-.. literalinclude:: manager-str.py
-   :caption: :download:`manager-str.py`
-   :language: python
+   joerg = Employee('Joerg', 'Faschingbauer', 6000)
+   isinstance(joerg, Employee)
 
-.. command-output:: python manager-str.py
-   :cwd: .
+He is also a ``Person``:
 
+.. jupyter-execute::
+
+   isinstance(joerg, Person)
+
+But not a ``Manager``:
+
+.. jupyter-execute::
+
+   isinstance(joerg, Manager)
+
+``issubclass()``
+----------------
+
+``Manager`` *is-a* ``Person``
+
+.. jupyter-execute::
+
+   issubclass(Manager, Person)
+
+... but not the other way around:
+
+.. jupyter-execute::
+
+   issubclass(Person, Manager)
+
+Funnily, ``Person`` *is-a* ``Person``:
+
+.. jupyter-execute::
+
+   issubclass(Person, Person)
+
+Add ``__str__()``, Creatively, After The Fact
+---------------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../str-repr/topic`
+
+Unrelated, but fun: add class methods dynamically ...
+
+.. jupyter-execute::
+
+   Person.__str__ = Person.fullname
+   Employee.__str__ = Employee.title
+   Manager.__str__ = Manager.title
+
+   joerg = Employee('Joerg', 'Faschingbauer', 6000)
+   mgr = Manager('Isolde', 'Haubentaucher', 10000, [joerg])
+   caro = Employee('Caro', 'Faschingbauer', 5000)
+   mgr.add_employee(caro)
+
+   print('joerg:', joerg)
+   print('mgr:', mgr)

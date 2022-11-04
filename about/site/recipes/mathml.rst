@@ -21,6 +21,7 @@ Taken from `reStructuredText Standard Definition Files
    ``|longrightarrow|``, |longrightarrow|
    ``|Rightarrow|``, |Rightarrow|
    ``|Longrightarrow|``, |Longrightarrow|
+   ``|DoubleLeftRightArrow|``, |DoubleLeftRightArrow|
 
 .. csv-table:: All
    :header: Substitution, Symbol, unicode, Comment

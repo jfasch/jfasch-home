@@ -19,6 +19,7 @@ Topics
    properties/topic
    namedtuple/topic
    inheritance/topic
+   operator-overloading/topic
 
 Interrelationships
 ------------------

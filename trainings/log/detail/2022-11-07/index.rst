@@ -43,9 +43,9 @@ Advanced Python
   * :doc:`/trainings/material/soup/python/advanced/oo-new/str-repr/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo-new/properties/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo-new/namedtuple/topic`
-  * (Implementation) Inheritance, super(), isinstance(), issubclass()
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/operator-overloading/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo-new/inheritance/topic`
   * Interface Inheritance (Abstract Base Classes) - The ``abc`` Module
-  * Operator overloading, ``__str__()``, ``__repr__()``
   * MRO
 
 * Metaprogramming
