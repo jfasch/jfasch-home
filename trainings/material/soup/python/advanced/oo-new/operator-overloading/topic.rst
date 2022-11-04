@@ -1,6 +1,12 @@
 .. ot-topic:: python.advanced.oo_new.operator_overloading
    :dependencies: python.advanced.oo_new.classes_and_dicts
 
+.. meta::
+   :description: A thorough walk through Python's operator
+                 overloading: reverse operations, "NotImplemented"
+                 return value
+   :keywords: python, operators object oriented programming, class
+
 .. include:: <mmlalias.txt>
 
 
@@ -56,6 +62,9 @@ Hypothetical And Pointless ``class Number``
        def __init__(self, n):
            self.n = n
 
+Simplest: Equality Comparison (``==``)
+--------------------------------------
+
 * By default, Python defines object *equality* as object *identity*
 * |longrightarrow| two different objects with the same value compare
   un-equal
@@ -67,10 +76,8 @@ Hypothetical And Pointless ``class Number``
    
    l==r      # <--- same as "l is r"
 
-|longrightarrow| overload ``==``
-
-Simplest: Equality Comparison (``==``)
---------------------------------------
+* Not whats expected
+* |longrightarrow| overload ``==`` by defining the ``__eq__`` method
 
 .. jupyter-execute::
 
@@ -130,13 +137,32 @@ Comparing Against Incompatible Types? (Lotsa Magic!)
 
 * ``int.__eq__`` knows nothing
 * Returns ``NotImplemented``
-* As a fallback, Python reverses operands, thereby asking the right
-  hand operand
+
+.. jupyter-execute::
+  
+   i = 2
+   i == Number(2)
+
+But, at a lower level ...
+
+.. jupyter-execute::
+  
+   i.__eq__(Number(2))
+
+* As a fallback of that, Python reverses operands, thereby asking the
+  right hand operand
 
 .. jupyter-execute::
 
    two = Number(2)
-   2 == two
+   two.__eq__(2)
+
+* Et voila ...
+
+.. jupyter-execute::
+
+   i = 2
+   i == Number(2)
 
 **Special behavior**: this is the same as ...
 

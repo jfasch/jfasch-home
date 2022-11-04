@@ -60,7 +60,6 @@ which you won't be able to do without once you got used to them.
    exceptions
    modules
    multithreading/group
-   multiprocessing/group
 
 
 .. ot-graph::
