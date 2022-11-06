@@ -235,12 +235,7 @@ No surprise though; Python knows that this is the same as ``r < l``:
 
 .. jupyter-execute::
 
-   if hasattr(l.__class__, '__gt__'):
-       result = l.__gt__(r)
-   else:
-       result = r.__lt__(l)
-
-   result
+   hasattr(l, '__gt__')
 
 Table: Comparison Operators
 ---------------------------

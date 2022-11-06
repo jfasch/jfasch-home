@@ -15,6 +15,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+C++ For Embedded Developers (Beginning of 2023)
+-----------------------------------------------
+
+This training is under preparation.
+
+(:doc:`More ... <detail/2023-XX-XX-C++-embedded/index>`)
+
 Linux Systems Programming (2023-02-13 - 2023-02-17)
 ---------------------------------------------------
 
