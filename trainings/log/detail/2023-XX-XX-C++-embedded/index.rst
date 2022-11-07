@@ -76,6 +76,24 @@ Standard Template Library
   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/multimap`
 
+Exercise Series
+---------------
+
+Exercise series ideas ...
+
+* Sensors
+
+  * A sensor *abstract base class* - an *interface*
+  * A number of concrete sensor implementations
+  * A configured set of those, measuring live data
+  * Live data is *posted* via another interface
+
+* Display(s)
+
+  * Another *interface* in the system
+  * Display measurement values
+  * Concrete implementation: a software PWM using a timer and a GPIO
+
 C++11 Outlook
 -------------
 
