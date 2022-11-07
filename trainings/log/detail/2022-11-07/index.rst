@@ -40,7 +40,17 @@ Object Oriented Programming: Classes And More
   * :doc:`/trainings/material/soup/python/advanced/oo-new/properties/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo-new/namedtuple/topic`
 
+* Exercise Series: CSV, JSON (from
 
+  * :doc:`/trainings/material/soup/python/misc/csv/topic`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+  * :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
+
+* From :doc:`/trainings/material/soup/python/advanced/oo-new/group`
 
   * :doc:`/trainings/material/soup/python/advanced/oo-new/operator-overloading/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo-new/inheritance/topic`
@@ -97,18 +107,6 @@ File System Interaction
 * ``pathlib``: :doc:`python:library/pathlib`
 * ``os.walk()``
 
-Exercise Series: CSV, JSON
---------------------------
-
-* :doc:`/trainings/material/soup/python/misc/csv/topic`
-
-* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
-* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
-* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
-* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
-* :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
-* :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
-
 (More About) Exception Handling, Modules
 ----------------------------------------
 
@@ -120,3 +118,10 @@ Databases
   
 * :doc:`/trainings/material/soup/python/misc/db/dbapi2`
 * :doc:`/trainings/material/soup/python/exercises/csv/csv-db`
+
+
+TODO
+----
+
+* Encoding
+* Context Managers ``with``
