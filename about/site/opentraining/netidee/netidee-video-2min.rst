@@ -41,7 +41,6 @@ Walk-Through
 
 * :doc:`../usecases/index`
 
-  * :doc:`../usecases/agenda`
   * Show
     :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`. Multiple
     artifacts: slides *and* livehacking screenplay.

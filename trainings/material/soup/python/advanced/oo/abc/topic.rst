@@ -1,5 +1,5 @@
-.. ot-topic:: python.advanced.oo_new.abc
-   :dependencies: python.advanced.oo_new.inheritance
+.. ot-topic:: python.advanced.oo.abc
+   :dependencies: python.advanced.oo.inheritance
 
 .. include:: <mmlalias.txt>
 

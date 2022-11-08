@@ -1,15 +1,29 @@
 .. ot-group:: python.advanced.oo
 
-Object Oriented Programming (Outdated)
-======================================
+Object Oriented Programming
+===========================
+
+.. contents::
+   :local:
+
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
    
-   basics
-   user-screenplay/class-user
-   implementation-inheritance
+   classes-and-dicts/topic
+   constructor/topic
+   methods/topic
+   str-repr/topic
+   properties/topic
+   namedtuple/topic
+   inheritance/topic
+   operator-overloading/topic
+   abc/topic
 
+Interrelationships
+------------------
 
 .. ot-graph::
    :entries: python.advanced.oo

@@ -1,5 +1,5 @@
-.. ot-topic:: python.advanced.oo_new.str_repr
-   :dependencies: python.advanced.oo_new.methods
+.. ot-topic:: python.advanced.oo.str_repr
+   :dependencies: python.advanced.oo.methods
 
 .. include:: <mmlalias.txt>
 

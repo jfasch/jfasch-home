@@ -1,6 +1,6 @@
-.. ot-topic:: python.advanced.oo_new.inheritance
-   :dependencies: python.advanced.oo_new.classes_and_dicts,
-		  python.advanced.oo_new.constructor
+.. ot-topic:: python.advanced.oo.inheritance
+   :dependencies: python.advanced.oo.classes_and_dicts,
+		  python.advanced.oo.constructor
 
 .. include:: <mmlalias.txt>
 

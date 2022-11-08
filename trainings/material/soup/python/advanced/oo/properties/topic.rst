@@ -1,5 +1,5 @@
-.. ot-topic:: python.advanced.oo_new.properties
-   :dependencies: python.advanced.oo_new.classes_and_dicts
+.. ot-topic:: python.advanced.oo.properties
+   :dependencies: python.advanced.oo.classes_and_dicts
 
 .. include:: <mmlalias.txt>
 

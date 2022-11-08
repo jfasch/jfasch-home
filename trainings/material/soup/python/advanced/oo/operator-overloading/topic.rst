@@ -1,5 +1,5 @@
-.. ot-topic:: python.advanced.oo_new.operator_overloading
-   :dependencies: python.advanced.oo_new.classes_and_dicts
+.. ot-topic:: python.advanced.oo.operator_overloading
+   :dependencies: python.advanced.oo.classes_and_dicts
 
 .. meta::
    :description: A thorough walk through Python's operator

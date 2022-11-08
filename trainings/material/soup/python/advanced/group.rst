@@ -44,7 +44,7 @@ language that is ...
 * *beautiful*
 
 To meet this goal, this course covers some advanced language features
-which you won't be able to do without once you got used to them.
+which you won't be able to do without, once you got used to them.
 
 .. toctree::
    :maxdepth: 1
@@ -55,7 +55,6 @@ which you won't be able to do without once you got used to them.
    closures/topic
    decorators/topic
    exec/topic
-   oo-new/group
    oo/group
    exceptions
    modules

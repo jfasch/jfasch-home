@@ -1,4 +1,4 @@
-.. ot-topic:: python.advanced.oo_new.classes_and_dicts
+.. ot-topic:: python.advanced.oo.classes_and_dicts
    :dependencies: python.basics.python_0150_datatypes_overview_compound
 
 .. include:: <mmlalias.txt>

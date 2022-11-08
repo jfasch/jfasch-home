@@ -53,7 +53,6 @@ material.
    mqtt/topic
    python_5550_xml_etree/topic
    context_manager/topic
-   special_methods
    import
    vscode
    encoding/topic

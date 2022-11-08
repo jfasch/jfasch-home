@@ -20,7 +20,6 @@ Trainer
 .. toctree::
    :maxdepth: 1
 
-   agenda
    agenda-subtract-known
    duration
 

@@ -1,5 +1,5 @@
 .. ot-topic:: python.advanced.multithreading.basics
-   :dependencies: python.advanced.oo.basics
+   :dependencies: python.advanced.oo.inheritance
 
 .. include:: <mmlalias.txt>
 

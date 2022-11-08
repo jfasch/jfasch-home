@@ -34,14 +34,14 @@ Up Front: Project Management
 Object Oriented Programming: Classes
 ....................................
 
-* From :doc:`/trainings/material/soup/python/advanced/oo-new/group`
+* From :doc:`/trainings/material/soup/python/advanced/oo/group`
 
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/constructor/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/classes-and-dicts/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/methods/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/str-repr/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/properties/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/namedtuple/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 
 Exercise Series: CSV
 ....................
@@ -93,11 +93,11 @@ TODO
 More OO
 .......
 
-* From :doc:`/trainings/material/soup/python/advanced/oo-new/group`
+* From :doc:`/trainings/material/soup/python/advanced/oo/group`
 
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/operator-overloading/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/inheritance/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo-new/abc/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
 Function Arguments, Closures, Decorators
 ........................................

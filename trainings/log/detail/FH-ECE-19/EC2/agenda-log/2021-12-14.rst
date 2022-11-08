@@ -50,7 +50,7 @@ Future Topics
 OO
 --
 
-* :doc:`/trainings/material/soup/python/advanced/oo/implementation-inheritance`
+* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
 
 Threading
 ---------

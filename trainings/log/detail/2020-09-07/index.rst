@@ -71,8 +71,8 @@ covered.
 * :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/advanced/modules`
-* :doc:`/trainings/material/soup/python/advanced/oo/implementation-inheritance`
-* :doc:`/trainings/material/soup/python/misc/special_methods`
+* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
@@ -494,9 +494,9 @@ Graph
 .. ot-graph::
    :entries: python.misc.ai.linear_regression,
 	     python.misc.ai.k_means,
-	     python.advanced.oo.implementation_inheritance,
+	     python.advanced.oo.inheritance,
 	     python.misc.context_manager,
-	     python.misc.special_methods,
+	     python.advanced.oo.operator_overloading,
 	     python.advanced.closures,
 	     python.advanced.decorators,
 	     python.advanced.starargs,
