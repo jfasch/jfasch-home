@@ -7,16 +7,14 @@
 ``pytest`` Introduction, By Example
 ===================================
 
+.. contents::
+   :local:
+
 .. sidebar::
 
-   **Contents**
+   **Documentation**
 
-   .. contents::
-      :local:
-
-   **pytest Documentation**
-
-   :doc:`pytest:index`
+   * :doc:`pytest:index`
 
 Sample Project Structure
 ------------------------

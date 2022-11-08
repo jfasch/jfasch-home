@@ -12,7 +12,7 @@ Python (2022-11-07 - 2022-11-10)
 
    **Source Code**
 
-   * `Github <https://github.com/jfasch/2022-10-17>`__
+   * `Github <https://github.com/jfasch/2022-11-07>`__
 
    **Notebook**
 
@@ -20,16 +20,19 @@ Python (2022-11-07 - 2022-11-10)
    * :doc:`Whole notebook <notebook>`
    * :download:`Download <notebook.ipynb>`
 
+Done
+----
+
 Up Front: Project Management
-----------------------------
+............................
 
 * :doc:`/trainings/material/soup/linux/basics/intro/wsl`
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
 
-Object Oriented Programming: Classes And More
----------------------------------------------
+Object Oriented Programming: Classes
+....................................
 
 * From :doc:`/trainings/material/soup/python/advanced/oo-new/group`
 
@@ -40,21 +43,71 @@ Object Oriented Programming: Classes And More
   * :doc:`/trainings/material/soup/python/advanced/oo-new/properties/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo-new/namedtuple/topic`
 
-* Exercise Series: CSV, JSON (from
+Exercise Series: CSV
+....................
 
-  * :doc:`/trainings/material/soup/python/misc/csv/topic`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
-  * :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
+* :doc:`/trainings/material/soup/python/misc/csv/topic`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+
+Missing Pieces: Encoding and Unit Testing
+.........................................
+
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
+* Unit Testing (``pytest`` vs. ``unittest``)
+
+  * :doc:`/trainings/material/soup/python/swdev/unittest`
+
+    * `unittest sample suite
+      <https://github.com/jfasch/2022-11-07/blob/main/livehacking/unittest/unittest-demo.py>`__
+    * `pytest sample suite
+      <https://github.com/jfasch/2022-11-07/blob/main/livehacking/unittest/test_read_csv.py>`__
+
+  * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+
+Exercise Series: CSV, JSON
+..........................
+
+* :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+* :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
+* Modify userdb stuff to read ``Person`` objects: `requirement
+  <https://github.com/jfasch/2022-11-07/blob/main/exercises/userdb/tests/test_person_class.py>`__
+
+Iteration, Generators
+.....................
+
+* Iteration (Recap) (:doc:`see notebook <notebook-wrapper>`)
+* :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
+* Generators, The ``yield`` Keyword
+
+  * :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
+  * Generator Expressions
+
+
+
+TODO
+----
+
+More OO
+.......
 
 * From :doc:`/trainings/material/soup/python/advanced/oo-new/group`
 
   * :doc:`/trainings/material/soup/python/advanced/oo-new/operator-overloading/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo-new/inheritance/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo-new/abc/topic`
+
+Function Arguments, Closures, Decorators
+........................................
+
+* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+* :doc:`/trainings/material/soup/python/advanced/closures/topic`
+* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+
+More Advanced Topics
+....................
 
 * Metaprogramming
 
@@ -66,27 +119,6 @@ Object Oriented Programming: Classes And More
   * Runtime Class Manipulation
   * Class Decorators
 
-Function Arguments, Closures, Decorators
-----------------------------------------
-
-* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-* :doc:`/trainings/material/soup/python/advanced/closures/topic`
-* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
-
-Iteration: Beyond Just Lists
-----------------------------
-
-* Iteration (Recap)
-* :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
-
-* Generators, The ``yield`` Keyword
-
-  * :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
-  * Generator Expressions
-
-More Advanced Topics
---------------------
-
 * ``eval()`` and ``exec()``
 
   * :doc:`/trainings/material/soup/python/advanced/exec/topic`
@@ -94,7 +126,7 @@ More Advanced Topics
 * The ``with`` Statement (Context Managers)
 
 File System Interaction
------------------------
+.......................
 
 :doc:`python:library/filesys`
 
@@ -108,20 +140,32 @@ File System Interaction
 * ``os.walk()``
 
 (More About) Exception Handling, Modules
-----------------------------------------
+........................................
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions`
 * :doc:`/trainings/material/soup/python/advanced/modules`
 
 Databases
----------
+.........
   
 * :doc:`/trainings/material/soup/python/misc/db/dbapi2`
 * :doc:`/trainings/material/soup/python/exercises/csv/csv-db`
 
 
-TODO
-----
+Context Managers/``with``
+.........................
 
-* Encoding
-* Context Managers ``with``
+Project Ideas
+-------------
+
+* ``NoneType`` object is not **iterable** -> iteration
+* ``subprocess`` optimization
+
+  * Network programming (client/server)
+  * stdin, stdout to a coprocess
+
+* Sensors, configurable
+
+  * configfile: INI
+  * configfile: XML
+  * configfile: ``exec()``

@@ -15,7 +15,7 @@ def test_noheader(tmpdir):
             '5;Elizabeth II;Queen;1.1.1900\n',
         ])
             
-    users = userdb_csv.read_csv_noheader(tmpdir/'noheader.csv')
+    users = list(userdb_csv.read_csv_noheader(tmpdir/'noheader.csv'))
 
     assert users[0]['id'] == 1
     assert users[0]['firstname'] == 'Jörg;DI'
@@ -53,7 +53,7 @@ def test_header(tmpdir):
             '5;Elizabeth II;Queen;1.1.1900\n',
         ])
             
-    users = userdb_csv.read_csv_header(tmpdir/'header.csv')
+    users = list(userdb_csv.read_csv_header(tmpdir/'header.csv'))
 
     assert users[0]['id'] == 1
     assert users[0]['firstname'] == 'Jörg;DI'

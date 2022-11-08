@@ -11,6 +11,12 @@ The ``unittest`` Module
 .. contents::
    :local:
 
+.. sidebar::
+
+   **Documentation**
+
+   * :doc:`python:library/unittest`
+
 Simplest Example
 ----------------
 

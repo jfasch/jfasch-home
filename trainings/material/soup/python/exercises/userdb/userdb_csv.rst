@@ -32,8 +32,8 @@ The following test (see
 :doc:`/trainings/material/soup/python/swdev/pytest-intro` for how to
 use it) can better express the requirement,
 
-.. literalinclude:: tests/test_read_csv.py
-   :caption: :download:`tests/test_read_csv.py`
+.. literalinclude:: code/tests/test_read_csv.py
+   :caption: :download:`code/tests/test_read_csv.py`
    :language: python
 
 Dependencies

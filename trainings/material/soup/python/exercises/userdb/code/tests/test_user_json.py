@@ -9,7 +9,7 @@ def test_user_to_json():
         'birth': '19.6.1966',
     }
 
-    json_user_sent = userdb_json.to_json(user)
+    json_user_sent = userdb_json.to_json(user_sent)
     user_received = userdb_json.from_json(json_user_sent)
 
     assert user_received['id'] == 1
