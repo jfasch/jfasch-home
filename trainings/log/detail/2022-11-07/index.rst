@@ -72,8 +72,7 @@ Exercise Series: CSV, JSON
 
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
 * :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
-* Modify userdb stuff to read ``Person`` objects: `requirement
-  <https://github.com/jfasch/2022-11-07/blob/main/exercises/userdb/tests/test_person_class.py>`__
+* :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
 
 Iteration, Generators
 .....................
@@ -85,7 +84,10 @@ Iteration, Generators
   * :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
   * Generator Expressions
 
+Operator Overloading
+....................
 
+  * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
 
 TODO
 ----
@@ -95,7 +97,6 @@ More OO
 
 * From :doc:`/trainings/material/soup/python/advanced/oo/group`
 
-  * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
