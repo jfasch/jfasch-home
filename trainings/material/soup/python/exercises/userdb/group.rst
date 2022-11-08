@@ -20,6 +20,7 @@ Contents
    userdb_csv
    user_json
    mqtt-publish-csv
+   user-class-person
 
 Graph
 -----
