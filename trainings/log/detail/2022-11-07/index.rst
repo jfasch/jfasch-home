@@ -12,7 +12,8 @@ Python (2022-11-07 - 2022-11-10)
 
    **Source Code**
 
-   * `Github <https://github.com/jfasch/2022-11-07>`__
+   * `Github <https://github.com/jfasch/2022-11-07>`__. This is a
+     *private project*; to view it you must be a collaborator.
 
    **Notebook**
 
@@ -20,11 +21,8 @@ Python (2022-11-07 - 2022-11-10)
    * :doc:`Whole notebook <notebook>`
    * :download:`Download <notebook.ipynb>`
 
-Done
-----
-
 Up Front: Project Management
-............................
+----------------------------
 
 * :doc:`/trainings/material/soup/linux/basics/intro/wsl`
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
@@ -32,7 +30,7 @@ Up Front: Project Management
 * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
 
 Object Oriented Programming: Classes
-....................................
+------------------------------------
 
 * From :doc:`/trainings/material/soup/python/advanced/oo/group`
 
@@ -44,7 +42,7 @@ Object Oriented Programming: Classes
   * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 
 Exercise Series: CSV
-....................
+--------------------
 
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
@@ -52,8 +50,8 @@ Exercise Series: CSV
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
 
-Missing Pieces: Encoding and Unit Testing
-.........................................
+Missing Pieces: Encoding, Unit Testing
+--------------------------------------
 
 * :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * Unit Testing (``pytest`` vs. ``unittest``)
@@ -62,20 +60,22 @@ Missing Pieces: Encoding and Unit Testing
 
     * `unittest sample suite
       <https://github.com/jfasch/2022-11-07/blob/main/livehacking/unittest/unittest-demo.py>`__
+      (*Private Github project*)
     * `pytest sample suite
       <https://github.com/jfasch/2022-11-07/blob/main/livehacking/unittest/test_read_csv.py>`__
+      (*Private Github project*)
 
   * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
 
 Exercise Series: CSV, JSON
-..........................
+--------------------------
 
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
 * :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
 * :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
 
 Iteration, Generators
-.....................
+---------------------
 
 * Iteration (Recap) (:doc:`see notebook <notebook-wrapper>`)
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
@@ -85,20 +85,28 @@ Iteration, Generators
   * Generator Expressions
 
 Operator Overloading
-....................
+--------------------
 
-  * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
 
-TODO
-----
+Going Dynamic: ``type()``, ``exec()``
+-------------------------------------
 
-More OO
-.......
+* ``type()``, ``exec()``. Revisit class dictionary, and build ``class
+  Person`` dynamically. See demo `here
+  <https://github.com/jfasch/2022-11-07/blob/main/livehacking/oo-fully-dynamic.py>`__
+  (*Private Github project*)
+
+More OO: Inheritance, Abstract Base Classes
+-------------------------------------------
 
 * From :doc:`/trainings/material/soup/python/advanced/oo/group`
 
   * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
+TODO
+----
 
 Function Arguments, Closures, Decorators
 ........................................
@@ -107,22 +115,7 @@ Function Arguments, Closures, Decorators
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
-More Advanced Topics
-....................
-
-* Metaprogramming
-
-  * What is a class?
-
-    * Class methods (built-in)
-
-  * Using ``type()`` to create a class/type
-  * Runtime Class Manipulation
-  * Class Decorators
-
-* ``eval()`` and ``exec()``
-
-  * :doc:`/trainings/material/soup/python/advanced/exec/topic`
+* :doc:`/trainings/material/soup/python/advanced/exec/topic`
 
 * The ``with`` Statement (Context Managers)
 
