@@ -119,6 +119,8 @@ Intermediate Step: Common Base Class ("Interface")
 
 * And derive concrete sensors from it
 
+.. jupyter-execute::
+
    class ConstantSensor(Sensor):
        def __init__(self, value):
            self.value = value
