@@ -118,26 +118,43 @@ Data Structures Recap
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 
-Misc Pieces
------------
+Miscellaneous Livehacking
+-------------------------
 
-subprocess jjj link to github
+https://github.com/jfasch/2022-11-07/tree/main/
 
-* :doc:`/trainings/material/soup/python/advanced/exceptions`
-* :doc:`/trainings/material/soup/python/misc/python_5550_xml_etree/topic`
+* Subprocess
+
+  * `Livehacking
+    <https://github.com/jfasch/2022-11-07/tree/main/livehacking/subprocess-demo.py>`__
+  * Documentation: :doc:`python:library/subprocess`
+
+* Network programming
+
+  * `Livehacked client
+    <https://github.com/jfasch/2022-11-07/tree/main/livehacking/livehacking/client.py>`__
+  * `Livehacked server
+    <https://github.com/jfasch/2022-11-07/tree/main/livehacking/livehacking/server.py>`__
+  * Documentation: :doc:`python:library/socket`
+
+Function Arguments, Closures, Decorators
+----------------------------------------
+
+* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+  (`Livehacking <livehacking/args-kwargs.py>`__)
+* :doc:`/trainings/material/soup/python/advanced/closures/topic`
+  (`Livehacking <livehacking/closures.py>`__)
+* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+  (`Livehacking <livehacking/decorator.py>`__)
 
 TODO
 ----
 
-Function Arguments, Closures, Decorators
-........................................
-
-* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-* :doc:`/trainings/material/soup/python/advanced/closures/topic`
-* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
-
 * The ``with`` Statement (Context Managers)
 * setuptools
+* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/misc/python_5550_xml_etree/topic`
+
 
 Databases
 .........
