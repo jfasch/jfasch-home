@@ -105,6 +105,27 @@ More OO: Inheritance, Abstract Base Classes
   * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
+Group Project Kickoff
+---------------------
+
+.. image:: project.jpg
+
+Data Structures Recap
+---------------------
+
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+
+Misc Pieces
+-----------
+
+subprocess jjj link to github
+
+* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/misc/python_5550_xml_etree/topic`
+
 TODO
 ----
 
@@ -115,29 +136,8 @@ Function Arguments, Closures, Decorators
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
-* :doc:`/trainings/material/soup/python/advanced/exec/topic`
-
 * The ``with`` Statement (Context Managers)
-
-File System Interaction
-.......................
-
-:doc:`python:library/filesys`
-
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group` (Linux Filesystem)
-* The ``shutil`` Module
-* Exercise: Like
-  :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`,
-  only in Python
-* ``os.path``: :doc:`python:library/os.path`
-* ``pathlib``: :doc:`python:library/pathlib`
-* ``os.walk()``
-
-(More About) Exception Handling, Modules
-........................................
-
-* :doc:`/trainings/material/soup/python/advanced/exceptions`
-* :doc:`/trainings/material/soup/python/advanced/modules`
+* setuptools
 
 Databases
 .........

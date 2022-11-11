@@ -95,7 +95,7 @@ Download, Build, Install
 ........................
  
 I chose to install from a release tarball (`here
-<https://crosstool-ng.github.io/download/>`__; current version as of
+<https://crosstool-ng.github.io/download/>`__); current version as of
 this writing is ``1.25.0``.
 
 .. code-block:: console
@@ -227,6 +227,23 @@ This is as simple as saying,
 By default [#ct-prefix]_, the toolchain is installed in
 ``$HOME/x-tools/armv8-rpi4-linux-gnueabihf/`` (you may want to add
 ``$HOME/x-tools/armv8-rpi4-linux-gnueabihf/bin/`` to ``$PATH``).
+
+For build system configuration (see for example
+:doc:`/trainings/material/soup/linux/toolchain/cmake/cross`),
+
+.. list-table::
+
+   * * ``PATH`` (best in ``~/.bashrc``)
+     * ``$HOME/x-tools/armv8-rpi4-linux-gnueabihf/bin``
+   *
+     * Sysroot; in CMake toolchain files (see
+       :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`,
+       "Toolchain Files"), this is
+
+       * ``CMAKE_FIND_ROOT_PATH``
+       * ``CMAKE_SYSROOT``
+
+     * ``$HOME/x-tools/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf``
 
 Test
 ----

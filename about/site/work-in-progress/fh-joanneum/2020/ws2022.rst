@@ -64,14 +64,46 @@ Plan: Evolution
        * Continuing with Design Patterns
 
          * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
-         * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
-
-       * :doc:`/blog/2022/09/cross-raspi`
 
    * * 2022-11-11
      * 
      * 3
-     *
+     * 
+
+       * Continuing with Design Patterns
+
+	 * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+           (use ``std::vector<>`` to store multiple ``Sensor*``;
+           :doc:`more information
+           </trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector>`)
+
+       * Cross toolchain setup (now one that works for C++)
+
+	 * Download toolchain (whopping 70MB), and unpack to
+           ``<toolchain-dir>``: `armv8-rpi4-linux-gnueabihf.tar.xz
+           <https://drive.google.com/file/d/1vuV3fLCamsqR54Thhr1vZ7lmSjCTpqSg/view?usp=sharing>`__
+	 * Modify ``PATH`` (best permanently in ``~/.bashrc``). Make
+           sure that ``<toolchain-dir>`` is given as **absolute path**
+           (:doc:`see here
+           </trainings/material/soup/linux/basics/shell/paths>`).
+
+	   .. code-block:: console
+
+	      $ export PATH=<toolchain-dir>/armv8-rpi4-linux-gnueabihf/bin:$PATH``
+
+	 * Download (best into ``<toolchain-dir>``) and modify:
+	   :download:`Toolchain file <armv8-rpi4-linux-gnueabihf.cmake>`
+
+	   .. code-block:: text
+
+	      set(CMAKE_FIND_ROOT_PATH <toolchain-dir>/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf)
+	      set(CMAKE_SYSROOT <toolchain-dir>/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf)
+
+	 * Further information
+
+	   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
+	   * :doc:`/blog/2022/09/cross-raspi`
+
    * *
      * 2022-11-15
      * 4
