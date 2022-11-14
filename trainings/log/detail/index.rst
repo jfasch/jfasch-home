@@ -6,6 +6,7 @@ Details
 
    2023-XX-XX-C++-embedded/index
    2023-02-13/index
+   2022-11-16/index
    2022-11-07/index
    2022-10-24/index
    2022-10-11/index

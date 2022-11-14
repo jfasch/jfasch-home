@@ -29,10 +29,17 @@ Dieser Kurs ist in Vorbereitung.
 
 (:doc:`Mehr ... <detail/2023-02-13/index>`)
 
+Python (2022-11-16 - 2022-11-18)
+--------------------------------
+
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+
+(:doc:`Mehr ... <detail/2022-11-16/index>`)
+
 Python (2022-11-07 - 2022-11-10)
 --------------------------------
 
-Dieser Kurs ist in Vorbereitung.
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
 
 (:doc:`Mehr ... <detail/2022-11-07/index>`)
 
