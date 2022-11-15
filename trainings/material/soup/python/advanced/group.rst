@@ -54,6 +54,7 @@ which you won't be able to do without, once you got used to them.
    starargs/topic
    closures/topic
    decorators/topic
+   context-mgr/topic
    exec/topic
    oo/group
    exceptions
