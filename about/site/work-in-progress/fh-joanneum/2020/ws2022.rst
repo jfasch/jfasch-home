@@ -104,6 +104,23 @@ Plan: Evolution
 	   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
 	   * :doc:`/blog/2022/09/cross-raspi`
 
+       * Exercise
+
+	 * Add a directory ``bin-trainee/`` to your build, and
+           register it with your top-level ``CMakeLists.txt``
+	 * Add `onewire-temperature.cpp
+           <https://github.com/jfasch/FH-ECE20-patterns/blob/main/bin-trainer/onewire-temperature.cpp>`__
+           to that directory (and its ``CMakeLists.txt``, of course)
+	 * Slowly transform that program as follows
+
+	   * Create a *real* sensor in ``libtrainee/sensor-onewire.h``
+             and ``libtrainee/sensor-onewire.cpp``. (Move code over
+             from the ``onewire-temperature.cpp`` into the class as
+             you go.) (*Hint:* you use `std::stod
+             <https://en.cppreference.com/w/cpp/string/basic_string/stof>`__
+             to convert a string into its ``double`` representation.)
+	   * Otherwise, leave the program intact.
+
    * *
      * 2022-11-15
      * 4
