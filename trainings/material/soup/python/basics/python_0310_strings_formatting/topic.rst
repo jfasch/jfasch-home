@@ -9,8 +9,14 @@ String Formatting
 .. ot-topic:: python.basics.python_0310_strings_formatting
    :dependencies: python.basics.python_0300_strings
 
+.. sidebar::
+
+   **Documentation**
+
+   * `<https://docs.python.org/3.8/library/string.html#format-string-syntax>`__
+
 C-Style Formatting (1)
-----------------------
+======================
 
 **Good old C:** ``%[flags][width][.precision]type}``
 
@@ -31,80 +37,133 @@ C-Style Formatting (1)
 
 	  0000042,   3.1416
 
-     - .. code-block:: python
-          :caption: Same in Python, using the ``%`` operator
+     - * Same in Python, using the ``%`` operator (humorously)
+       * Format single item into string, by position
 
-          >>> '%07d' % 42
-          '0000042'
-          >>> '%07d, %8.4f' % (42, 3.14159265359)
-          '0000042,   3.1416'
+       .. jupyter-execute::
+
+            '%07d' % 42
+
+       * Format multiple items (|longrightarrow| tuple) into string
+         (again, by position)
+
+       .. jupyter-execute::
+
+	  '%07d, %8.4f' % (42, 3.14159265359)
 
 C-Style Formatting: Conversions
--------------------------------
+===============================
 
 **Frequently used conversions** ...
 
-.. csv-table::
+.. list-table::
    :align: left
+   :widths: auto
+   :header-rows: 1
 
-   ``s``, String
-   ``c``, Single character
-   ``d``, Integer (decimal)
-   ``o``, Integer (octal)
-   ``x``, Integer (hexadecimal lowercase)
-   ``X``, Integer (hexadecimal uppercase)
-   ``f``, Floating point, exponential format (lowercase)
-   ``F``, Floating point, exponential format (uppercase)
-   ``\%``, The ``%`` sign itself
+   * * Format char
+     * Type
+     * Comment
+   * * ``s``
+     * String
+     *
+   * * ``c``
+     * Single character
+     *
+   * * ``d``
+     * Integer
+     * decimal
+   * * ``o``
+     * Integer
+     * octal
+   * * ``x``
+     * Integer
+     * hexadecimal lowercase
+   * * ``X``
+     * Integer
+     * hexadecimal uppercase
+   * * ``f``
+     * Floating point
+     * exponential format (lowercase)
+   * * ``F``
+     * Floating point
+     * exponential format (uppercase)
+   * * ``\%``
+     *
+     * The ``%`` sign itself
 
 C-Style Formatting: Flags
--------------------------
+=========================
 
 **Frequently used flags** ...
 
-.. csv-table::
+.. list-table::
    :align: left
+   :widths: auto
+   :header-rows: 1
 
-   ``#``, Octal or hex integer conversions: ``0x...`` prefixes
-   ``0``, Pad with '0' characters
-   ``-``, Left alignment
-   ``+``, Print sign even if positive
-   `` `` (space), Print space in place of sign if positive
+   * * Flag
+     * Meaning
+   * * ``#``
+     * Octal or hex integer conversions: ``0x...`` prefixes
+   * * ``0``
+     * Pad with '0' characters
+   * * ``-``
+     * Left alignment
+   * * ``+``
+     * Print sign even if positive
+   * * `` `` (space)
+     * Print space in place of sign if positive
 
 C-Style Formatting: Examples
-----------------------------
+============================
 
 .. list-table::
    :align: left
+   :widths: auto
 
-   * - .. code-block:: python
+   * * .. jupyter-execute::
 
-          >>> '%#5X' % 47
-          ' 0X2F'
-          >>> '%5X' % 47
-          '   2F'
-          >>> '%#5.4X' % 47
-          '0X002F'
-          >>> '%#5o' % 25
-          ' 0o31'
-          >>> '%+d' % 42
-          '+42'
+          '%#5X' % 47
 
-     - .. code-block:: python
+     * .. jupyter-execute::
 
-          >>> '% d' % 42
-          ' 42'
-          >>> '%+2d' % 42
-          '+42'
-          >>> '% 4d' % 42
-          '  42'
-          >>> '% 4d' % -42
-          ' -42'
-          >>> '%04d' % 42
-          '0042'
+	  '%5X' % 47
+
+     * .. jupyter-execute::
+
+	  '%#5.4X' % 47
+
+     * .. jupyter-execute::
+
+	  '%#5o' % 25
+
+     * .. jupyter-execute::
+
+	  '%+d' % 42
+
+   * * .. jupyter-execute::
+
+          '% d' % 42
+
+     * .. jupyter-execute::
+
+	  '%+2d' % 42
+
+     * .. jupyter-execute::
+
+	  '% 4d' % 42
+
+     * .. jupyter-execute::
+
+	  '% 4d' % -42
+
+     * .. jupyter-execute::
+
+	  '%04d' % 42
 
 The ``format`` Method
----------------------
+=====================
 
 **Problems** with C-style formatting
 
@@ -120,5 +179,20 @@ The ``format`` Method
    >>> 'a {a:05d}, b {b:8.2f}, a again {a}'.format(a=42, b=1.5)
    'a 00042, b     1.50, a again 42'
 
-More |longrightarrow| `RTFM
-<https://docs.python.org/3.8/library/string.html#format-string-syntax>`__
+Cool Since 3.6: *f-Strings*
+===========================
+
+* Definitely cool
+* In-string syntax like above, but reaching out ...
+
+.. jupyter-execute::
+
+   something = 42
+   f'Hey, something has a value, namely {something}'
+
+* All of the fancy C-style format syntax is valid, e.g.
+
+.. jupyter-execute::
+
+   something = 42.666
+   f'Well, this is also possible: {something:8.2f}'
