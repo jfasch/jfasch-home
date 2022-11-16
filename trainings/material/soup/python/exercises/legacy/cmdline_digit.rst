@@ -19,8 +19,8 @@ parameter. Print the English word for that digit.
    seven
 
 * Use a dictionary (key: ``int``, value: ``str``) for the translation.
-* Valid inputs are digits ``0`` - ``9``. Outputs are the
-  corresponding *lowercase* english words for that digit.
+* Valid inputs are digits ``0`` - ``9``. Outputs are the corresponding
+  *lowercase* english words for that digit.
 
 Dependencies
 ------------
