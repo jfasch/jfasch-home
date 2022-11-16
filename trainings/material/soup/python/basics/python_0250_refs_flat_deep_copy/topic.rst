@@ -18,79 +18,125 @@ Immutability: Numbers
 
 * Object of type ``int`` with value 42
 * Variable ``a`` points to it ("gives it a name")
-* The object cannot change its value - there is no method to
-  modify an integer object
+* The object cannot change its value - there is no method to modify an
+  integer object
 * |longrightarrow| The latter situation is equivalent to the former
   (which is the implementation)
 
 .. list-table::
+   :align: left
+   :widths: auto
   
-   * - .. code-block:: python
+   * - .. jupyter-execute::
 
           a = 42
 	  b = a
 
+       Both ``a`` and ``b`` refer to the same object:
+
+       .. jupyter-execute::
+
+	  print(id(a))
+	  print(id(b))
+
      - .. image:: 0250-refs-flat-deep-copy-immutability-numbers-shared.dia
+          :scale: 50%
 
-.. list-table::
-  
-   * - .. code-block:: python
+Modifying An Integer In-Place? (Immutability)
+---------------------------------------------
 
-          a = 42
-          b = 42
-          
-     - .. image:: 0250-refs-flat-deep-copy-immutability-numbers-distinct.dia
+.. jupyter-execute::
+
+   id(a)
+
+* Operator ``+=`` modifies an integer in-place?
+* ``a = a+7`` modifies an integer in-place?
+* |longrightarrow| No, both create new objects!
+
+.. jupyter-execute::
+
+   a += 1
+   id(a)         # <--- different object now
+
+.. jupyter-execute::
+
+   a = a + 7
+   id(a)         # <--- again, different object now
 
 Immutability: Tuples
 --------------------
 
-**Same with tuples**
-
 .. list-table::
+   :align: left
+   :widths: auto
 
-   * - - Like lists, but *immutable*
+   * - .. jupyter-execute::
+
+          a = (42, "xy", 13)
+	  b = a
+
+	  print(id(a))
+	  print(id(b))
+
+       - Like lists, but *immutable*
        - No way to modify a tuple
 
 	 * No appending
 	 * No slice assignment
 	 * No nothing
+	   
+     - .. image:: 0250-refs-flat-deep-copy-immutability-tuples-shared.dia
+	  :scale: 50%
 
-       - So both of these are equivalent
+* And operator ``+=``?
 
-	 * To the user, ``b`` *is a copy of* ``a``
+.. jupyter-execute::
 
-     - .. code-block:: python
+   a += ('foo', 'bar')
+   print(a)
+   print(id(a))
+   print(id(b))
 
-          >>> a = (42, "xy", 13)
-	  >>> b = a
+* |longrightarrow| leaves ``b`` alone
 
-       .. image:: 0250-refs-flat-deep-copy-immutability-tuples-shared.dia
+.. jupyter-execute::
 
-       .. image:: 0250-refs-flat-deep-copy-immutability-tuples-distinct.dia
+   b
 
 Mutability: Lists (1)
 ---------------------
 
 **Lists are mutable** ...
 
+* Objects can be modified
+* E.g. by using ``append()``
+
 .. list-table::
+   :align: left
+   :widths: auto
 
-   * - .. code-block:: python
+   * - .. jupyter-execute::
 
-          >>> a = [1, 2, 3]
-	  >>> b = a
-	  >>> b
-	  [1, 2, 3]
-	  >>> b.append(4)
-	  >>> b
-	  [1, 2, 3, 4]
-	  >>> a
-	  [1, 2, 3, 4]
+          a = [1, 2, 3]
+	  b = a
+	  b
 
-     - - Objects can be modified
-       - E.g. by using ``append()``
+       * Both now refer to the same object
+       * Modify ``b`` ...
 
-       .. image:: 0250-refs-flat-deep-copy-mutability-list.dia
+       .. jupyter-execute::
+
+	  b.append(4)
+	  b
+
+       * ... and see ``a`` modified!
+
+       .. jupyter-execute::
+
+	  a
+
+     - .. image:: 0250-refs-flat-deep-copy-mutability-list.dia
+	  :scale: 50%
 
 Mutability: Lists (2)
 ---------------------
@@ -99,46 +145,61 @@ Mutability: Lists (2)
 
 * Take care when passing complex data structures
 * Not passed *by copy* (as in C++)
-* Passed *by reference* (as in Java)
-* Make a copy if needed
+* Passed *by reference* (as in Java and C#, for example)
 
-.. code-block:: python
-   :caption: Copying a list
+**Solution?**
 
-   >>> a = [1, 2, 3]
-   >>> b = a[:]
-   >>> a.append(4)
-   >>> b
-   [1, 2, 3]
+* Is copy a solution?
+* |longrightarrow| I'd say no!
+* *Being careful is a solution!*
 
-Shallow Copy
-------------
+.. jupyter-execute::
 
-.. list-table::
+   a = [1, 2, 3]
+   b = a[:]             # <--- copy
+   a.append(4)
+   b
 
-   * - .. code-block:: python
+**Shallow** Copy
+----------------
 
-          >>> a = [1, [1, 2, 3], 2]
-          >>> b = a[:]
-          >>> b
-          [1, [1, 2, 3], 2]
-          >>> a[1].append(4)
-          >>> a
-          [1, [1, 2, 3, 4], 2]
-          >>> b
-          [1, [1, 2, 3, 4], 2]
+* A list within a list
+* Create "copy"
+     
+.. jupyter-execute::
 
-       .. code-block:: python	  
+   a = [1, [1, 2, 3], 2]
+   b = a[:]      # <--- copy
+   b
 
-	  >>> a[1] is b[1]
-	  True
+* This is only a *shallow* copy
 
-     - .. image:: 0250-refs-flat-deep-copy-shallow-copy.dia
+.. image:: 0250-refs-flat-deep-copy-shallow-copy.dia
+   :scale: 60%
 
-       * Only first level copied
-       * *Shallow copy*
-       * ``a[1]`` is a *reference*
-       * ``is``: *object identity*
+* Modify ``a``
+
+.. jupyter-execute::
+
+   a[1].append(4)
+   a
+
+* And ``b``?
+
+.. jupyter-execute::
+
+   b
+
+* Reason: *nested list has not been copied!*
+
+.. jupyter-execute::
+
+   a[1] is b[1]
+
+* Only first level copied
+* *Shallow copy*
+* ``a[1]`` is a *reference*
+* ``is``: *object identity*
 
 Deep Copy
 ---------
@@ -148,11 +209,11 @@ Deep Copy
 * Recursive structure traversal
 * Handling every possible type
 * Dedicated module in the standard library: ``copy``
+* Solution?
 
-.. code-block:: python
+.. jupyter-execute::
 
-   >>> import copy
-   >>> a = [1, [1, 2, 3], 2]
-   >>> b = copy.deepcopy(a)
-   >>> a[1] is b[1]
-   False
+   import copy
+   a = [1, [1, 2, 3], 2]
+   b = copy.deepcopy(a)
+   a[1] is b[1]
