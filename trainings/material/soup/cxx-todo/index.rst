@@ -41,6 +41,18 @@ Templates/Overloading
 ---------------------
 
 * https://github.com/jfasch/2021-12-06/blob/main/live-hacking/overloading-max.cpp
+* `Back to Basics: Function and Class Templates - Dan Saks - CppCon
+  2019 <https://www.youtube.com/watch?v=LMP_sxOaz6g&t=534s>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/LMP_sxOaz6g" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
 
 Exceptions
 ----------

@@ -154,7 +154,7 @@ TODO
 
 * The ``with`` Statement (Context Managers)
 * setuptools
-* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 * :doc:`/trainings/material/soup/python/misc/python_5550_xml_etree/topic`
 
 Databases

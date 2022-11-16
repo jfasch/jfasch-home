@@ -188,7 +188,7 @@ Day 3
 	  writer. :doc:`/trainings/material/soup/python/misc/csv/topic`
 	* :doc:`python:library/csv` |longrightarrow| link
   
-* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 
   * Requirement: JSON deserialize must raise a ``DeserializeError``.
   * Notebook: exception handling

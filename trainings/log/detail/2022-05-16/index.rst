@@ -101,7 +101,7 @@ OO: next exercise (CSV as always |:rolling_eyes:|)
 Exercise: Exception Handling
 ............................
 
-* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 * :doc:`Notebook->Exceptions <notebook-wrapper>`
 
 Fix tests in `tests/test_persondb.py

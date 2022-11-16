@@ -50,6 +50,7 @@ which you won't be able to do without, once you got used to them.
    :maxdepth: 1
 
    comprehensions/topic
+   exceptions/topic
    iteration-generation/topic
    starargs/topic
    closures/topic
@@ -57,7 +58,6 @@ which you won't be able to do without, once you got used to them.
    context-mgr/topic
    exec/topic
    oo/group
-   exceptions
    modules
    multithreading/group
 

@@ -1,10 +1,10 @@
-.. include:: <mmlalias.txt>
-
-
 .. ot-topic:: python.misc.encoding
    :dependencies: python.basics.python_0150_datatypes_overview,
 		  python.basics.python_0330_strings_encoding,
 		  python.basics.python_0500_files
+
+.. include:: <mmlalias.txt>
+
 
 Encoding
 ========

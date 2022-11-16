@@ -12,6 +12,171 @@ Exception Handling
 .. contents::
    :local:
 
+Introduction
+------------
+
+Keywords that cover blocks:
+
+* ``try``: try to execute potentially harmful code - *might raise exceptions*
+* ``except``: react on those exceptions - *catch* them
+* ``finally``: executed in *any* case, no matter if raised or not
+* ``else``: executed if *no* exceptions was raised
+
+A few examples are in order ...
+
+Basic Exception Handling: ``try``, ``except``
+---------------------------------------------
+
+* Catching an exception *no matter what*
+
+.. jupyter-execute::
+
+   try:
+       f = open('file-that-does-not-exist.txt')
+   except:                     # <--- unconditionally catching *any* error
+       print('bad luck')
+
+* Usually not a good idea: covers other more severe errors
+
+.. jupyter-execute::
+
+   try:
+       print(a_variable)       # <--- raises NameError!
+       f = open('file-that-does-not-exist.txt')
+   except:
+       print('bad luck')
+
+* |longrightarrow| catch exception *by their type*
+
+Built-In Exception Hierarchy
+----------------------------
+
+.. sidebar::
+
+   * :doc:`python:library/exceptions`
+
+.. line-block::
+
+   BaseException
+    ├── BaseExceptionGroup
+    ├── GeneratorExit
+    ├── KeyboardInterrupt
+    ├── SystemExit
+    └── Exception
+         ├── ArithmeticError
+         │    ├── FloatingPointError
+         │    ├── OverflowError
+         │    └── ZeroDivisionError
+         ├── AssertionError
+         ├── AttributeError
+         ├── BufferError
+         ├── EOFError
+         ├── ExceptionGroup [BaseExceptionGroup]
+         ├── ImportError
+         │    └── ModuleNotFoundError
+         ├── LookupError
+         │    ├── IndexError
+         │    └── KeyError
+         ├── MemoryError
+         ├── NameError
+         │    └── UnboundLocalError
+         ├── OSError
+         │    ├── BlockingIOError
+         │    ├── ChildProcessError
+         │    ├── ConnectionError
+         │    │    ├── BrokenPipeError
+         │    │    ├── ConnectionAbortedError
+         │    │    ├── ConnectionRefusedError
+         │    │    └── ConnectionResetError
+         │    ├── FileExistsError
+         │    ├── FileNotFoundError
+         │    ├── InterruptedError
+         │    ├── IsADirectoryError
+         │    ├── NotADirectoryError
+         │    ├── PermissionError
+         │    ├── ProcessLookupError
+         │    └── TimeoutError
+         ├── ReferenceError
+         ├── RuntimeError
+         │    ├── NotImplementedError
+         │    └── RecursionError
+         ├── StopAsyncIteration
+         ├── StopIteration
+         ├── SyntaxError
+         │    └── IndentationError
+         │         └── TabError
+         ├── SystemError
+         ├── TypeError
+         ├── ValueError
+         │    └── UnicodeError
+         │         ├── UnicodeDecodeError
+         │         ├── UnicodeEncodeError
+         │         └── UnicodeTranslateError
+         └── Warning
+              ├── BytesWarning
+              ├── DeprecationWarning
+              ├── EncodingWarning
+              ├── FutureWarning
+              ├── ImportWarning
+              ├── PendingDeprecationWarning
+              ├── ResourceWarning
+              ├── RuntimeWarning
+              ├── SyntaxWarning
+              ├── UnicodeWarning
+              └── UserWarning
+
+Exceptions Are Objects
+----------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../oo/inheritance/topic`
+
+* Start with very base class
+* An *object* of (at least) type ``BaseException``
+
+.. jupyter-execute::
+
+   try:
+       f = open('file-that-does-not-exist.txt')
+   except BaseException as e:    # <--- base class of all exception
+       print('bad luck:', e)     # <--- bad luck, because e
+
+``class Exception``
+-------------------
+
+From :doc:`python:library/exceptions`
+
+     Exception
+
+         All built-in, non-system-exiting exceptions are derived from this
+         class. All user-defined exceptions should also be derived from
+         this class.
+
+
+Pitfall: Bad ecept order jjj
+----------------------------
+
+.. sidebar::
+
+   * :doc:`../../misc/encoding/topic`
+
+* encodingerror
+* is-a exception
+
+
+
+
+
+
+Exception Hierarchy
+-------------------
+
+
+
+
 Why Exceptions?
 ---------------
 

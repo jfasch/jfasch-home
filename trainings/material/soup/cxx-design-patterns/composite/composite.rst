@@ -53,6 +53,10 @@ and omit the ``add()`` method. This way it becomes impossible to
 ``add()`` another member to the composite object at the time it is
 already being used.
 
+.. note::
+
+   This step is optional!
+
 .. literalinclude:: ../code/tests-trainee/composite-suite-initializer-list.cpp
    :caption: :download:`../code/tests-trainee/composite-suite-initializer-list.cpp`
    :language: c++

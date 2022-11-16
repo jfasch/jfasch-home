@@ -69,7 +69,7 @@ covered.
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
 * :doc:`/trainings/material/soup/python/misc/context_manager/topic`
 * :doc:`/trainings/material/soup/python/misc/encoding/topic`
-* :doc:`/trainings/material/soup/python/advanced/exceptions`
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 * :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`

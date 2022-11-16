@@ -126,7 +126,7 @@ Example: Monkeypatching The ``print`` Function
 
    **See also**
 
-   * :doc:`starargs/topic`
+   * :doc:`../starargs/topic`
 
 .. jupyter-execute::
 
@@ -146,6 +146,7 @@ Example: Monkeypatching The ``print`` Function
        def __exit__(self, exc_type, exc_val, exc_tb):
            global print
            print = self.orig_print
+	   return True
    
    print('cool')
    with PrefixPrint('MEGA:'):
@@ -158,12 +159,12 @@ Still Much Typing |longrightarrow| ``@contextlib.contextmanager``
 
    **See also**
 
-   * :doc:`iteration-generation/topic`
-   * :doc:`decorators/topic`
+   * :doc:`../iteration-generation/topic`
+   * :doc:`../decorators/topic`
 
 * ``__enter__`` and ``__exit__`` still too clumsy
 * |longrightarrow| using ``yield`` to split a function in half
-* Using ``try`` and ``finally`` for setup and teardown
+* Usually using ``try`` and ``finally`` for setup and teardown
 * Example: distilling ``OpenForReading()`` to a minimum
 
 .. jupyter-execute::
@@ -172,14 +173,12 @@ Still Much Typing |longrightarrow| ``@contextlib.contextmanager``
    
    @contextlib.contextmanager
    def OpenForReading(filename):
-       file = None               # <--- in case open() raises
        try:
            file = open(filename)
            yield file            # <--- becomes 'f' in 'as f'
 	                         # <--- continuing here after 'with' block has run
        finally:
-           if file is not None:
-               file.close()
+           file.close()
 
 More Involved: Using Closures To Implement ``PrefixPrint``
 ----------------------------------------------------------
@@ -190,10 +189,11 @@ More Involved: Using Closures To Implement ``PrefixPrint``
    
    @contextlib.contextmanager
    def PrefixPrint(prefix):
-       global print
        def myprint(*args, **kwargs):
            pfxargs = (prefix,)+args
            orig_print(*pfxargs, **kwargs)
+
+       global print
    
        try:
            orig_print = print
