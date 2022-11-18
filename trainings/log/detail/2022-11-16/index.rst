@@ -41,32 +41,56 @@ Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
-
-**Exercises**
-
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+  (`digit.py
+  <https://github.com/jfasch/2022-11-16/blob/main/livehacking/digit.py>`__)
+
+* At the end of the day, a small CSV demo: `koppel-netzwerke.py
+  <https://github.com/jfasch/2022-11-16/blob/main/livehacking/koppel-netzwerke.py>`__
 
 Control Flow, Sequences, *Iteration*
 ....................................
 
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+
+  * A condensed/pythonic version: `maximum.py
+    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/maximum.py>`__
+
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
+
+  * Rolling dice, demonstrating the ``else`` clause of ``while``):
+    `dice.py
+    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/dice.py>`__
+
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
-* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
+
+  * ``yield`` demo, iterating over generated Fibonacci numbers:
+    `fibonacci.py
+    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/fibonacci.py>`__
+
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
 More Datatypes
 ..............
 
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+
+  A modularized version of that:
+
+  * `prime.py
+    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/prime.py>`__
+  * `primeness.py
+    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/primeness.py>`__
+
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
@@ -74,32 +98,43 @@ More Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
 
+Exercise Series: CSV Files
+--------------------------
+
+* :doc:`/trainings/material/soup/python/misc/csv/topic`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+
+Object Oriented Programming
+---------------------------
+
+* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+
+More, Possibly
+--------------
+
 Advanced Topics
----------------
+...............
 
 * :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0330_strings_encoding/topic`
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
 
 Clean and Structured Coding
 ...........................
 
 * :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-* From :doc:`/trainings/material/soup/python/advanced/oo/group`
-
-  * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
 Extended Language Features
 ..........................
@@ -115,25 +150,3 @@ Project Management
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
-
-Group Exercise: Toy Project
----------------------------
-
-Lets implement a small toy project that touches many topics of the
-course, and which leaves us room to explore Python's huge standard
-library by playing around.
-
-* Acquire values from *any* sensor and send them *somewhere*
-* Sensors are arranged in a class hierarchy starting at ``class
-  Sensor``. Possible sensors are
-
-  * Physical ones (not easily had on a PC though)
-  * Simulated ones (e.g. spitting out random values)
-  * Ones that read their values sequences from e.g. CSV files
-
-* Value sinks likewise. Possible sinks are
-
-  * CSV files
-  * MQTT broker clients
-  * CAN bus (can be had on a PC if it runs Linux)
-

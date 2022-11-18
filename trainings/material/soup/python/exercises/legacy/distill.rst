@@ -25,8 +25,14 @@ commandline.
 Example
 -------
 
+Take as a test case the following content, and write it into a file
+``distill-test.txt`` (or :download:`download it <distill-test.txt>`).
+
 .. literalinclude:: distill-test.txt
    :caption: :download:`distill-test.txt`
+
+Run your program ``distill.py`` on that file. The program's output
+should look as follows.
 
 .. code-block:: console
 
