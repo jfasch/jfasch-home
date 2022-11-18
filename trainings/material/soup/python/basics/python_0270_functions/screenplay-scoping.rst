@@ -9,69 +9,84 @@ Functions: Global and Local Scope (Livehacking Screenplay)
 Undefined Variable
 ------------------
 
-.. code-block:: python
+Using a name that is not defined (neither in local nor in global
+scope) leads to an error:
 
-   >>> def f():
-   ...     print(x)
-   ... 
-   >>> f()
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in <module>
-     File "<stdin>", line 2, in f
-   NameError: name 'x' is not defined
+.. jupyter-execute::
+   :raises:
+
+   def f():
+       print(x)
+   
+   f()
 
 Local Variable
 --------------
 
-.. code-block:: python
+``x`` defined locally:
 
-   >>> def f():
-   ...     x = 1
-   ...     print(x)
-   ... 
-   >>> f()
-   1
+.. jupyter-execute::
 
-**Discuss**: ``x`` ist *not* auomatically in global scope (like
- e.g. Javascript)
+   def f():
+       x = 1
+       print(x)
+   
+   f()
+
+* **Rule**: when a name is assigned to the first time, it is created
+  in that scope where the assignment takes place.
+* |longrightarrow| ``x`` is a *local variable*
+* This is not Javascript where one has to use ``let`` to prevent
+  accidental creation of a *global* variable
 
 Global Variable
 ---------------
 
-.. code-block:: python
+If a name is not defined locally, Python continues to lookup in global
+scope:
 
-   >>> def g():
-   ...     print(globvar)
-   ... 
-   >>> globvar = 42
-   >>> g()
-   42
+.. jupyter-execute::
+
+   def g():
+       print(globvar)
+   
+   globvar = 42
+   g()
+
+Note: ``globvar`` must be visible at *call* time, not at *definition*
+time
 
 Local and Global Variable With Same Name
 ----------------------------------------
 
-.. literalinclude:: code/30-local-global-same-name.py
-   :caption: :download:`code/30-local-global-same-name.py`
-   :language: python
+Local variables *shadow* global variables:
 
-.. code-block:: console
+.. jupyter-execute::
 
-   $ python code/30-local-global-same-name.py
-   local: 1
-   global: 666
+   x = 666
+   
+   def f():
+       x = 1
+       print('local:', x)
+   
+   f()
+   print('global:', x)
 
-Assignment to Global Variable
------------------------------
+Assignment to Global Variable: ``global``
+-----------------------------------------
 
-How do I assign to a global variable then, if assignment creates a
-variable in local scope? |longrightarrow| ``global`` keyword
+* How do I assign to a global variable then, if assignment creates a
+  variable in local scope?
+* |longrightarrow| ``global`` keyword
 
-.. literalinclude:: code/40-global-assignment.py
-   :caption: :download:`code/40-global-assignment.py`
-   :language: python
+.. jupyter-execute::
 
-.. code-block:: console
-
-   $ python code/40-global-assignment.py
-   assigned global: 1
-   global: 1
+   x = 666
+   
+   def f():
+       global x
+       x = 1
+       print('assigned global:', x)
+   
+   f()
+   print('global:', x)

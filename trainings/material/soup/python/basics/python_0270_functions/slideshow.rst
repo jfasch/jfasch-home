@@ -24,7 +24,7 @@ Why Functions?
 An Example
 ----------
 
-.. code-block:: python
+.. jupyter-execute::
 
    def maximum(a, b):
        if a < b:
@@ -32,7 +32,7 @@ An Example
        else:
            return a
    
-   max = maximum(42, 666)
+   maximum(42, 666)
 
 * ``def``: introduces function definition
 * ``maximum``: function name
@@ -50,13 +50,14 @@ Sidenote: Pure Beauty
 * Creates a function object
 * Points a *variable* to it - the function's name
 
-.. code-block:: python
+.. jupyter-execute::
 
-   >>> type(maximum)
-   <class 'function'>
-   >>> a = maximum
-   >>> a(1,2)
-   2
+   type(maximum)
+
+.. jupyter-execute::
+
+   a = maximum
+   a(1,2)
 
 Parameters and Types
 --------------------
@@ -71,13 +72,10 @@ Parameters and Types
 * |longrightarrow| More testing required
 * |longrightarrow| Unit testing, module ``unittest``
 
-.. code-block:: python
+.. jupyter-execute::
+   :raises:
 
-   >>> maximum(1, '1')
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in <module>
-     File "<stdin>", line 2, in maximum
-   TypeError: unorderable types: int() < str()
+   maximum(1, '1')    # <--- comparing apples and oranges
 
 Default Parameters
 ------------------
@@ -100,13 +98,13 @@ Default parameters must come at the end of the parameter list ...
    def program_exit(exitstatus=0, message):
        ...
 
-Default Parameters: Pitfalls
-----------------------------
+Mutable Default Parameters: Attention!
+--------------------------------------
 
 **Attention:** mutable default parameters may not do what one expects
 ...
 
-.. code-block:: python
+.. jupyter-execute::
 
    def f(i, x=[]):
        x.append(i)
@@ -115,9 +113,9 @@ Default Parameters: Pitfalls
    print(f(1))
    print(f(2))
 
-Produces ...
+Will produce ...
 
-.. code-block:: python
+.. jupyter-execute::
 
    [1]
    [1, 2]
@@ -125,6 +123,10 @@ Produces ...
 *Reason:** default value for a parameter *is part of the function
 object* |longrightarrow| retains its value across calls
   
+.. jupyter-execute::
+
+   f.__defaults__
+
 Keyword Arguments
 -----------------
 

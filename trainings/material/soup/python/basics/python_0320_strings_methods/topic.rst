@@ -10,6 +10,13 @@ Miscellaneous String Methods
 .. contents::
    :local:
 
+.. sidebar::
+   
+   **Documentation**
+
+   * `Text Sequence Type — str
+     <https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str>`__
+
 Batteries Included: Checks
 --------------------------
 
