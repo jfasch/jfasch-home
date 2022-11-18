@@ -84,8 +84,6 @@ More Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
 
-  A modularized version of that:
-
   * `prime.py
     <https://github.com/jfasch/2022-11-16/blob/main/livehacking/prime.py>`__
   * `primeness.py
@@ -120,6 +118,7 @@ Object Oriented Programming
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+* :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
 
 More, Possibly
 --------------
