@@ -16,7 +16,7 @@ String Formatting
    * `<https://docs.python.org/3.8/library/string.html#format-string-syntax>`__
 
 C-Style Formatting (1)
-======================
+----------------------
 
 **Good old C:** ``%[flags][width][.precision]type}``
 
@@ -52,7 +52,7 @@ C-Style Formatting (1)
 	  '%07d, %8.4f' % (42, 3.14159265359)
 
 C-Style Formatting: Conversions
-===============================
+-------------------------------
 
 **Frequently used conversions** ...
 
@@ -93,7 +93,7 @@ C-Style Formatting: Conversions
      * The ``%`` sign itself
 
 C-Style Formatting: Flags
-=========================
+-------------------------
 
 **Frequently used flags** ...
 
@@ -116,7 +116,7 @@ C-Style Formatting: Flags
      * Print space in place of sign if positive
 
 C-Style Formatting: Examples
-============================
+----------------------------
 
 .. list-table::
    :align: left
@@ -163,7 +163,7 @@ C-Style Formatting: Examples
 	  '%04d' % 42
 
 The ``format`` Method
-=====================
+---------------------
 
 **Problems** with C-style formatting
 
@@ -180,7 +180,7 @@ The ``format`` Method
    'a 00042, b     1.50, a again 42'
 
 Cool Since 3.6: *f-Strings*
-===========================
+---------------------------
 
 * Definitely cool
 * In-string syntax like above, but reaching out ...

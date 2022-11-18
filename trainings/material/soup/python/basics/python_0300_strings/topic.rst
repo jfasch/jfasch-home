@@ -1,4 +1,10 @@
+.. ot-topic:: python.basics.python_0300_strings
+   :dependencies: python.basics.python_0200_sequential_types, 
+		  python.basics.python_0150_datatypes_overview, 
+		  python.basics.python_0250_refs_flat_deep_copy
+
 .. include:: <mmlalias.txt>
+
 
 More About Strings
 ==================
@@ -6,41 +12,54 @@ More About Strings
 .. contents::
    :local:
 
-.. ot-topic:: python.basics.python_0300_strings
-   :dependencies: python.basics.python_0200_sequential_types, 
-		  python.basics.python_0150_datatypes_overview, 
-		  python.basics.python_0250_refs_flat_deep_copy
-
 String Delimiters
 -----------------
 
-**Delimiters**: double quotes ("...") or single quotes ('...'), as
-needed
+* Double quotes ("...") or single quotes ('...')
+* No difference
 
-.. code-block:: python
+  .. jupyter-execute::
+  
+     'spam eggs'
+  
+  .. jupyter-execute::
+  
+     "spam eggs"
 
-   >>> 'spam eggs'  # single quotes
-   'spam eggs'
-   >>> 'doesn\'t'  # use \' to escape the single quote...
-   "doesn't"
-   >>> "doesn't"  # ...or use double quotes instead
-   "doesn't"
-   >>> '"Yes," he said.'
-   '"Yes," he said.'
-   >>> "\"Yes,\" he said."
-   '"Yes," he said.'
-   >>> '"Isn\'t," she said.'
-   '"Isn\'t," she said.'
+* Single quote (``'``) embedded as literal character inside a string
+  delimited with single quotes |longrightarrow| *escaping* needed
+
+  .. jupyter-execute::
+  
+     'doesn\'t'
+
+* Alternative: choose double quote as string delimiter
+
+  .. jupyter-execute::
+  
+     "doesn't"
+
+* Or, the other way around
+
+  .. jupyter-execute::
+  
+     '"Yes," he said.'
+
+* No way out though if both double *and* single quotes need to be part
+  of a string
+
+  .. jupyter-execute::
+  
+     '"Isn\'t," she said.'
 
 Escape Sequences
 ----------------
 
-.. code-block:: python
-   :caption: Newline, embedded in string
+* Newline, embedded in string
 
-   >>> print('first line\nsecond line')
-   first line
-   second line
+  .. jupyter-execute::
+  
+     print('first line\nsecond line')
 
 **More (but not all) escape sequences** ...
 
@@ -59,27 +78,26 @@ Escape Sequences
 Raw Strings
 -----------
 
-**Unwanted escaping (Doze pathnames)** ...
+* Unwanted escaping (Doze pathnames) ...
 
-.. code-block:: python
+  .. jupyter-execute::
 
-   >>> print('C:\some\name')
-   C:\some
-   ame
-   >>> print(r'C:\some\name')
-   C:\some\name
+     print('C:\some\name')
+     print(r'C:\some\name')
 
-.. code-block:: python
-   :caption: Unwanted escaping (regular expressions)
+* Unwanted escaping (regular expressions)
 
-   regex = re.compile(r'^(.*)\.(\d+)$')
+  .. jupyter-execute::
+     
+     import re
+     regex = re.compile(r'^(.*)\.(\d+)$')
 
 Multiline Strings
 -----------------
 
 **Escaping newlines is no fun** ...
 
-.. code-block:: python
+.. jupyter-execute::
 
    print("""\
    Bummer!
@@ -99,16 +117,16 @@ will produce ...
 More String Tricks
 ------------------
 
-.. code-block:: python
-   :caption: String literal concatenation
+* String literal concatenation
 
-   >>> 'Hello' ' ' 'World'
-   'Hello World'
+  .. jupyter-execute::
 
-.. code-block:: python
-   :caption: String literal concatenation (multiple lines)
+     'Hello' ' ' 'World'
 
-   >>> ('Hello'
-   ... ' '
-   ... 'World')
-   'Hello World'
+* String literal concatenation (multiple lines)
+
+  .. jupyter-execute::
+
+     ('Hello'
+     ' '
+     'World')

@@ -1,13 +1,14 @@
+.. ot-topic:: python.basics.python_0320_strings_methods
+   :dependencies: python.basics.python_0300_strings
+
 .. include:: <mmlalias.txt>
+
 
 Miscellaneous String Methods
 ============================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_0320_strings_methods
-   :dependencies: python.basics.python_0300_strings
 
 Batteries Included: Checks
 --------------------------
@@ -53,22 +54,34 @@ Batteries Included: Search
 Substring Search: Examples
 --------------------------
 
-.. code-block:: python
+.. jupyter-execute::
 
-   >>> '/etc/passwd'.startswith('/etc/')
-   True
-   >>> 'notes.txt'.endswith('.txt')
-   True
-   >>> 'this is a thistle with many thorns'.count('th')
-   4
-   >>> 'haystack containing needle and straw'.find('needle')
-   20
-   >>> 'haystack containing needle and straw'.find('mouse')
-   -1
-   >>> 'haystack containing needle and straw'.index('mouse')
-   Traceback (most recent call last):
-     File "<stdin>", line 1, in <module>
-   ValueError: substring not found
+   '/etc/passwd'.startswith('/etc/')
+
+.. jupyter-execute::
+
+   'notes.txt'.endswith('.txt')
+
+.. jupyter-execute::
+
+   'this is a thistle with many thorns'.count('th')
+
+.. jupyter-execute::
+
+   'haystack containing needle and straw'.find('needle')
+
+* ``find()`` returns position - ``-1`` if not found
+
+.. jupyter-execute::
+
+   'haystack containing needle and straw'.find('mouse')
+
+* ``index()`` returns position - raises if not found
+
+.. jupyter-execute::
+   :raises:
+
+   'haystack containing needle and straw'.index('mouse')
 
 Split and Join (1)
 ------------------
@@ -77,38 +90,42 @@ Split and Join (1)
 * Error prone |longrightarrow| writing them is a major annoyance
 * Off-by-one errors
 
-.. code-block:: python
-   :caption: ``split()`` and ``join()``
+.. jupyter-execute::
 
-   >>> 'one:two:three'.split(':')
-   ['one', 'two', 'three']
-   >>> ':'.join(['one', 'two', 'three'])
-   'one:two:three'
+   'one:two:three'.split(':')
 
-.. code-block:: python
-   :caption: Not off-by-one
+.. jupyter-execute::
 
-   >>> ':'.join([])
-   ''
-   >>> ':'.join(['one'])
-   'one'
+   ':'.join(['one', 'two', 'three'])
+
+.. jupyter-execute::
+
+   ':'.join([])
+
+.. jupyter-execute::
+
+   ':'.join(['one'])
 
 Split and Join (2)
 ------------------
 
-.. code-block:: python
-   :caption: Split at most 2 fields
+* Split at most 2 fields
 
-   >>> 'one:two:three:four'.split(':', 2)
-   ['one', 'two', 'three:four']
-   >>> 'one:two:three:four'.rsplit(':', 2)
-   ['one:two', 'three', 'four']
+  .. jupyter-execute::
 
-.. code-block:: python
-   :caption: Real life example: ``/etc/passwd``
+     'one:two:three:four'.split(':', 2)
 
-   >>> username,rest = 'jfasch:x:1000:...'.split(':', 1)
-   >>> username
-   'jfasch'
-   >>> rest
-   'x:1000:1000::/home/jfasch:/bin/bash'
+  .. jupyter-execute::
+
+     'one:two:three:four'.rsplit(':', 2)
+
+* Real life example: ``/etc/passwd``
+
+  .. jupyter-execute::
+
+     username,rest = 'jfasch:x:1000:...'.split(':', 1)
+     username
+
+  .. jupyter-execute::
+
+     rest
