@@ -12,6 +12,13 @@ Decorators
 .. contents::
    :local:
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../starargs/topic`
+   * :doc:`../closures/topic`
+
 The Ominous "``@``"
 -------------------
 
@@ -30,8 +37,8 @@ The Ominous "``@``"
   * Defining Flask URL routes to call Python functions
   * ...
 
-What and How
-------------
+Decorators Overview
+-------------------
 
 * Only syntactic sugar for inner functions/closures (see
   :doc:`../closures/topic`)
@@ -52,133 +59,102 @@ What and How
    def bar(a, b, c):
        ...
 
-Closures Recap
---------------
+Decorator Basics
+----------------
 
-.. jupyter-execute::
+.. sidebar::
 
-   def decorator(param):
-       def wrapper():
-           print('wrapper called, param =', param)
-           return param
-       return wrapper
-   
-   eins = decorator(1)
-   zwei = decorator(2)
-   blah = decorator('blah')
-   
-   print('eins', eins())
-   print('zwei', zwei())
-   print('blah', blah())
+   **See also**
 
-* Ignore names ``decorator``, ``wrapper``
-* Think ``outer`` and ``inner``, or ``foo`` and ``bar``
-* Decorator semantics will come next
+   * :doc:`../closures/topic`
 
-Simple Decorator: Function Without Args
----------------------------------------
-
-.. jupyter-execute::
-
-   def decorator(func):
-       def wrapper():
-           print('wrapper called, func =', func.__name__)
-           return func()
-       return wrapper
-   
-   def f1():
-       print('f1 called')
-       return 1
-   
-   def f2():
-       print('f2 called')
-       return 2
-   
-   f1 = decorator(f1)
-   f2 = decorator(f2)
-   
-   print('f1 returned', f1())
-   print('f2 returned', f2())
-
-* Modify ``decorator`` to take a function as parameter
-* Print return values, and wrapping information
-
-Decorators are Syntactic Sugar
-------------------------------
-
-.. jupyter-execute::
-
-   def decorator(func):
-       def wrapper():
-           print('wrapper called, func =', func.__name__)
-           return func()
-       return wrapper
-   
-   @decorator
-   def f1():
-       print('f1 called')
-       return 1
-   
-   @decorator
-   def f2():
-       print('f2 called')
-       return 2
-   
-   print('f1 returned', f1())
-   print('f2 returned', f2())
-
-
-* Replace explicit wrapper call to ``decorator`` with "``@``" directly
-  before function definitions
-* Simply call functions (they are automatically wrapped)
-* |longrightarrow| exactly the same
-* *That's basically it*!
-
-``*args``, ``**kwargs``: A Debug-Decorator
-------------------------------------------
-
-* Wrong
-
-.. jupyter-execute::
-   :raises:
-
-   def debug(func):
-       def wrapper():
-           print('debug: func =', func.__name__)
-           return func()
-       return wrapper
-   
-   @debug
-   def add(l, r):
-       return l+r
-   
-   @debug
-   def sub(l, r):
-       return l-r
-   
-   print('add(1,2) returned', add(1,2))
-   print('sub(1,2) returned', sub(1,2))
-
-* Right
+* Something that creates a function to wrap another function
+* Wrapped function passed as argument
+* That is the whole point
 
 .. jupyter-execute::
 
    def debug(func):
        def wrapper(*args, **kwargs):
-           print('debug: func =', func.__name__, args, kwargs)
+           print(func.__name__, 'called:', args, kwargs)
            return func(*args, **kwargs)
        return wrapper
-   
+
+* Can ``@debug`` anything now
+
+.. jupyter-execute::
+
    @debug
-   def add(l, r):
-       return l+r
+   def add(a, b):
+       return a+b
    
+   add(1,2)
+
+Decorators are Syntactic Sugar
+------------------------------
+
+* This is too much typing
+* Why explicitly *replace* a function?
+
+.. jupyter-execute::
+
+   def f():
+       print('f called')
+       return 42
+   f = debug(f)
+
+* Want decadence!
+
+.. jupyter-execute::
+
    @debug
-   def sub(l, r):
-       return l-r
+   def f():
+       return 42
+
+Problem: Arbitrary Function Arguments
+-------------------------------------
+
+* Currently, ``wrapper()`` cannot does not take any arguments
+* |longrightarrow| cannot wrap *any* function
+
+.. jupyter-execute::
+   :raises:
+
+   @debug
+   def add(a, b):
+       return a+b
    
-   print('add(1,2) returned', add(1,2))
-   print('sub(1,2) returned', sub(1,2))
+   add(1,2)
+
+``*args``, ``**kwargs`` To The Rescue
+-------------------------------------
+
+.. sidebar::
+
+   * :doc:`../starargs/topic`
+
+* A wrapper needs to accept *anything* that the wrapped function can
+  take
+* As generic as possible
+* |longrightarrow| :doc:`starargs <../starargs/topic>`
+
+.. jupyter-execute::
+
+   def debug(func):
+       def wrapper(*args, **kwargs):       # <--- accept anything
+           print(func.__name__, 'called:', args, kwargs)
+           return func(*args, **kwargs)    # <--- pass anything
+       return wrapper
+
+* Can wrap anything
+
+.. jupyter-execute::
+
+   @debug
+   def add(a, b):
+       return a+b
+   
+   add(1,2)
 
 Sideways: ``functools.wraps``
 -----------------------------
@@ -187,46 +163,31 @@ Sideways: ``functools.wraps``
 
 .. jupyter-execute::
 
-   def debug(func):
-       def wrapper(*args, **kwargs):
-           print('debug: func =', func.__name__, args, kwargs)
-           return func(*args, **kwargs)
-       return wrapper
-   
-   @debug
-   def add(l, r):
-       return l+r
-   
-   @debug
-   def sub(l, r):
-       return l-r
-   
-   print('add name:', add.__name__)
-   print('sub name:', sub.__name__)
+   add.__name__
 
 * Pretty: add description (copy metadata over)
+* ``@functools.wraps``: a decorator for decorators
 
 .. jupyter-execute::
 
    import functools
    
    def debug(func):
-       @functools.wraps(func)
+       @functools.wraps(func)           # <--- copy func metadata over to wrapper
        def wrapper(*args, **kwargs):
-           print('debug: func =', func.__name__, args, kwargs)
+           print(func.__name__, 'called:', args, kwargs)
            return func(*args, **kwargs)
        return wrapper
-   
+
+* Now any decorated/wrapped function has all it needs
+
+.. jupyter-execute::
+
    @debug
-   def add(l, r):
-       return l+r
+   def add(a, b):
+       return a+b
    
-   @debug
-   def sub(l, r):
-       return l-r
-   
-   print('add name:', add.__name__)
-   print('sub name:', sub.__name__)
+   add.__name__
 
 Class Decorator: ``debug()`` with prefix
 ----------------------------------------
