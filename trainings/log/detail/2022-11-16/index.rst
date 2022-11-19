@@ -120,32 +120,13 @@ Object Oriented Programming
 * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
 
-More, Possibly
---------------
-
-Advanced Topics
-...............
-
-* :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
-* :doc:`/trainings/material/soup/python/misc/encoding/topic`
-
-Clean and Structured Coding
-...........................
-
-* :doc:`/trainings/material/soup/python/advanced/modules`
-* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-
-Extended Language Features
-..........................
+Advanced Language Features
+--------------------------
 
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-* :doc:`/trainings/material/soup/python/advanced/closures/topic`
-* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
-Project Management
-..................
+Noob Exercises
+--------------
 
-* :doc:`/trainings/material/soup/python/swdev/pip/topic`
-* :doc:`/trainings/material/soup/python/swdev/venv/topic`
-* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* :doc:`/trainings/material/soup/python/exercises/herdt/greet`
