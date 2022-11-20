@@ -75,26 +75,15 @@ Decorator Basics
 .. jupyter-execute::
 
    def debug(func):
-       def wrapper(*args, **kwargs):
-           print(func.__name__, 'called:', args, kwargs)
-           return func(*args, **kwargs)
+       def wrapper():
+           print(func.__name__, 'called')
+           return func()
        return wrapper
-
-* Can ``@debug`` anything now
-
-.. jupyter-execute::
-
-   @debug
-   def add(a, b):
-       return a+b
-   
-   add(1,2)
 
 Decorators are Syntactic Sugar
 ------------------------------
 
-* This is too much typing
-* Why explicitly *replace* a function?
+* Lets decorate ``f()``
 
 .. jupyter-execute::
 
@@ -103,7 +92,11 @@ Decorators are Syntactic Sugar
        return 42
    f = debug(f)
 
+* This is too much typing
+* Why explicitly *replace* a function?
+
 * Want decadence!
+* |longrightarrow| ``@debug`` is the same as ``f = debug(f)``!
 
 .. jupyter-execute::
 
@@ -114,14 +107,14 @@ Decorators are Syntactic Sugar
 Problem: Arbitrary Function Arguments
 -------------------------------------
 
-* Currently, ``wrapper()`` cannot does not take any arguments
+* Currently, ``wrapper()`` cannot does not take *any* arguments
 * |longrightarrow| cannot wrap *any* function
 
 .. jupyter-execute::
    :raises:
 
    @debug
-   def add(a, b):
+   def add(a, b):         # <--- takes 2 arguments
        return a+b
    
    add(1,2)
@@ -130,6 +123,8 @@ Problem: Arbitrary Function Arguments
 -------------------------------------
 
 .. sidebar::
+
+   **See also**
 
    * :doc:`../starargs/topic`
 
@@ -146,7 +141,8 @@ Problem: Arbitrary Function Arguments
            return func(*args, **kwargs)    # <--- pass anything
        return wrapper
 
-* Can wrap anything
+* ``wrapper()`` can wrap anything
+* Can ``@debug`` anything now
 
 .. jupyter-execute::
 
@@ -160,13 +156,14 @@ Sideways: ``functools.wraps``
 -----------------------------
 
 * Ugly: wrapper's ``__name__`` attribute unreadable
+* It's just ``wrapper`` inside local scope
 
 .. jupyter-execute::
 
    add.__name__
 
-* Pretty: add description (copy metadata over)
-* ``@functools.wraps``: a decorator for decorators
+* Fix: copy wrapped function's metadata over
+* |longrightarrow| ``@functools.wraps``: a decorator for decorators
 
 .. jupyter-execute::
 
