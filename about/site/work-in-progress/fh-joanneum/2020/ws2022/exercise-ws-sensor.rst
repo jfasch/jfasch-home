@@ -1,7 +1,7 @@
 Exercise: OneWire Sensor Class
 ==============================
 
-.. contents:
+.. contents::
    :local:
 
 Download Monolithic Sensor Implementation
@@ -22,7 +22,7 @@ Test Monolithic Implementation
 * Build as described in
   :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
 * Transfer to Raspberry (my build directory is
-  ``/tmp/FH-ECE20-patterns-pi``)
+  ``/tmp/FH-ECE20-patterns-pi``, your is likely different)
 
   .. code-block:: console
 
@@ -49,7 +49,7 @@ Test Monolithic Implementation
 
 .. literalinclude:: w1-sensor-suite.cpp
    :caption: :download:`w1-sensor-suite.cpp`
-   :language:c++
+   :language: c++
 
 Refactoring
 -----------

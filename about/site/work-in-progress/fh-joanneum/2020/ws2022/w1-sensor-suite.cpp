@@ -10,6 +10,8 @@
 using namespace std;
 
 
+// fixture class: supply a temporary file, plus a method
+// write_temperature() thaht derived classes can call
 struct w1_sensor_suite : public ::testing::Test
 {
     void SetUp() override
@@ -50,8 +52,14 @@ struct w1_sensor_suite : public ::testing::Test
 
 TEST_F(w1_sensor_suite, test_read_sensor)
 {
-    write_temperature(42.666);
-
     W1Sensor sensor(filename);
-    ASSERT_FLOAT_EQ(sensor.get_temperature(), 42.666);
+    double temperature;
+
+    write_temperature(42.666);                 // <--- change temperature
+    temperature = sensor.get_temperature();    // <--- read temperature
+    ASSERT_FLOAT_EQ(temperature, 42.666);
+
+    write_temperature(36.5);                   // <--- change temperature
+    temperature = sensor.get_temperature();    // <--- read temperature
+    ASSERT_FLOAT_EQ(temperature, 36.5);
 }
