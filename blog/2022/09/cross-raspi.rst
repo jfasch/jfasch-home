@@ -27,23 +27,6 @@ Why This Article? Why Not Use A Prebuilt Toolchain?
 * A number of other Raspberry toolchains exist out there, but I either
   didn't get them to work at all (see the ``glibc`` :ref:`version
   dependency <glibc-version>`), or didn't get them to work for C++.
-* Let alone the bullshitting on the Internet where one asks,
-
-  .. line-block::
-
-     *Where can I find a cross toolchain for the Pi?*
-
-  Responses ...
-
-  .. line-block::
-
-     *This does not work. Build on the Pi locally.*
-
-  ... and ...
-
-  .. line-block::
-
-     *Use distcc if one Pi is not enough.*
 
 .. contents::
    :local:
@@ -54,11 +37,12 @@ in my opinion, totally wasted. Building a toolchain yourself is not at
 all hard, provided that you bring basic Linux understanding (which you
 should if you program for it).
 
-In my opinion (feedback :doc:`welcome </about/myself/contact>`), this
-article describes the most close-to-correct way to build a toolchain
-for a target that does not come with a toolchain. Although I describe
-the situation for the Raspberry (because that was my primary
-intention), it will sure work for *any* target.
+In my opinion (please given me :doc:`feedback
+</about/myself/contact>`), this article describes the most
+close-to-correct way to build a toolchain for a target that does not
+come with a toolchain. Although I describe the situation for the
+Raspberry (because that was my primary intention), it will sure work
+for *any* target.
 
 Installing ``crosstool-ng``
 ---------------------------
@@ -87,7 +71,7 @@ dependencies can be taken from the Docker file for your OS (see `here
 .. code-block:: console
    :caption: Dependencies for Ubuntu
 
-   root@host # apt-get install -y gcc g++ gperf bison flex texinfo help2man make libncurses5-dev \
+   root@host # apt install -y gcc g++ gperf bison flex texinfo help2man make libncurses5-dev \
        python3-dev autoconf automake libtool libtool-bin gawk wget bzip2 xz-utils unzip \
        patch libstdc++6 rsync git meson ninja-build
 

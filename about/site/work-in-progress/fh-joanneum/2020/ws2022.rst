@@ -77,62 +77,6 @@ Plan: Evolution
            :doc:`more information
            </trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector>`)
 
-	   jjj stop here
-
-       * Cross toolchain setup (now one that works for C++)
-
-	 * Download toolchain (whopping 70MB), and unpack to
-           ``<toolchain-dir>``: `armv8-rpi4-linux-gnueabihf.tar.xz
-           <https://drive.google.com/file/d/1vuV3fLCamsqR54Thhr1vZ7lmSjCTpqSg/view?usp=sharing>`__
-	 * Modify ``PATH`` (best permanently in ``~/.bashrc``). Make
-           sure that ``<toolchain-dir>`` is given as **absolute path**
-           (:doc:`see here
-           </trainings/material/soup/linux/basics/shell/paths>`).
-
-	   .. code-block:: console
-
-	      $ export PATH=<toolchain-dir>/armv8-rpi4-linux-gnueabihf/bin:$PATH
-
-	      jjj .bashrc recap
-
-	 * Download (best into ``<toolchain-dir>``) and modify:
-	   :download:`Toolchain file <armv8-rpi4-linux-gnueabihf.cmake>`
-
-	   .. code-block:: text
-
-	      set(CMAKE_FIND_ROOT_PATH <toolchain-dir>/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot)
-	      set(CMAKE_SYSROOT <toolchain-dir>/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot)
-
-	      jjj sysroot
-
-	 * Further information
-
-	   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
-	   * :doc:`/blog/2022/09/cross-raspi`
-
-	   jjj demo how that goes #$%^&^%$#
-
-       * Exercise
-
-	 * To your project, as a subdirectory of the toplevel
-           directory, add a directory ``bin-trainee/`` to your build,
-           and register it with your top-level ``CMakeLists.txt``
-	 * Add `onewire-temperature.cpp
-           <https://github.com/jfasch/FH-ECE20-patterns/blob/main/bin-trainer/onewire-temperature.cpp>`__
-           to that directory (and its ``CMakeLists.txt``, of course)
-	 * Slowly transform that program as follows
-
-	   * Create a *real* sensor in ``libtrainee/sensor-onewire.h``
-             and ``libtrainee/sensor-onewire.cpp``. (Move code over
-             from the ``onewire-temperature.cpp`` into the class as
-             you go.) (*Hint:* you use `std::stod
-             <https://en.cppreference.com/w/cpp/string/basic_string/stof>`__
-             to convert a string into its ``double`` representation.)
-	   * Otherwise, leave the program intact.
-
-	 * When done, transfer it to our Cloud Platform (``ssh -p 2020
-           firstname.lastname@jfasch.bounceme.net``) and test.
-
    * *
      * 2022-11-15
      * 4
@@ -141,6 +85,10 @@ Plan: Evolution
      * 2022-11-22
      * 4
      *
+
+       * :doc:`ws2022/toolchain-setup`
+       * :doc:`ws2022/exercise-ws-sensor`
+       
    * * 
      * 2022-11-29
      * 4
