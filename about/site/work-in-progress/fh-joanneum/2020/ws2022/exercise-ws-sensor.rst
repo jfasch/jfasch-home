@@ -21,6 +21,17 @@ Test Monolithic Implementation
 * Setup toolchain (if not yet done): :doc:`toolchain-setup`
 * Build as described in
   :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
+
+  In short (please supply the paths from your situation),
+
+  .. code-block:: console
+
+     $ mkdir /tmp/FH-ECE20-patterns-pi/        # <--- create build directory
+     $ cd /tmp/FH-ECE20-patterns-pi/           # <--- cd into it
+     $ cmake -DCMAKE_TOOLCHAIN_FILE=/home/jfasch/armv8-rpi4-linux-gnueabihf.cmake ~/work/FH-ECE20-patterns/
+     ... roedel ...
+     $ make
+
 * Transfer to Raspberry (my build directory is
   ``/tmp/FH-ECE20-patterns-pi``, your is likely different)
 
