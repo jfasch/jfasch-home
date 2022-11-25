@@ -10,10 +10,14 @@ Solution: Adapter
 .. contents::
    :local:
 
-Adapter Class For Company A's Sensor
+Adapter Class For Fahrenheit Sensors
 ------------------------------------
 
-.. literalinclude:: ../code/libtrainee/sensor-A-adapter.h
-   :caption: :download:`../code/libtrainee/sensor-A-adapter.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.h`
+   :language: c++
+
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.cpp`
    :language: c++
 

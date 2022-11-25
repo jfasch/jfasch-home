@@ -35,7 +35,7 @@ Requirement
 In directory ``programs/``, add an executable that is built from the
 following code:
 
-.. literalinclude:: ../code/programs/dynamic-measurement-language.cpp
-   :caption: :download:`../code/programs/dynamic-measurement-language.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/programs/dynamic-measurement-language.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/programs/dynamic-measurement-language.cpp`
    :language: c++
 

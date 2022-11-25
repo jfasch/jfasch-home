@@ -1,9 +1,0 @@
-ADD_SUBDIRECTORY(libtrainer)
-ADD_SUBDIRECTORY(tests-trainer)
-
-ADD_SUBDIRECTORY(libtrainee)
-ADD_SUBDIRECTORY(tests-trainee)
-
-ADD_SUBDIRECTORY(singleton)
-ADD_SUBDIRECTORY(programs)
-ADD_SUBDIRECTORY(heating)

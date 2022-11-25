@@ -22,8 +22,8 @@ In this exercise, the "network" is represented by the communication
 between a client thread and a "remote" thread in the same address
 space, expressed in the following class definitions,
 
-.. literalinclude:: ../code/libtrainer/server-thread.h
-   :caption: :download:`../code/libtrainer/server-thread.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/utilities/utilities/server-thread.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/utilities/utilities/server-thread.h`
    :language: c++
 
 Requirements
@@ -33,8 +33,8 @@ Use the "remote" form of the :doc:`Proxy design pattern <proxy>` to
 implement such a client, in the form of yet another ``Sensor``
 implementation that fulfills the following requirements.
 
-.. literalinclude:: ../code/tests-trainee/proxy-remote-suite.cpp
-   :caption: :download:`../code/tests-trainee/proxy-remote-suite.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-proxy/tests/proxy-remote-suite.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-proxy/tests/proxy-remote-suite.cpp`
    :language: c++
 
 Implementation Hints

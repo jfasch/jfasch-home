@@ -11,10 +11,10 @@ Solution: Observer
    :local:
 
 
-.. literalinclude:: ../code/libtrainee/social-db-observable.h
-   :caption: :download:`../code/libtrainee/social-db-observable.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-observer/code/social-db-observable.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-observer/code/social-db-observable.h`
    :language: c++
 
-.. literalinclude:: ../code/libtrainee/social-db-observable.cpp
-   :caption: :download:`../code/libtrainee/social-db-observable.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-observer/code/social-db-observable.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-observer/code/social-db-observable.cpp`
    :language: c++

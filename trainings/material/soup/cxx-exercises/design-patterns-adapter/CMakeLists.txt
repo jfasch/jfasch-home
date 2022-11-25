@@ -1,0 +1,3 @@
+ADD_SUBDIRECTORY(sensors-fahrenheit)
+ADD_SUBDIRECTORY(sensors)
+ADD_SUBDIRECTORY(tests)

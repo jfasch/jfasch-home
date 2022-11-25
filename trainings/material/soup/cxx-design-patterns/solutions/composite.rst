@@ -13,12 +13,12 @@ Solution: Composite
 Averaging (Composite) Sensor
 ----------------------------
 
-.. literalinclude:: ../code/libtrainee/sensor-avg.h
-   :caption: :download:`../code/libtrainee/sensor-avg.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-composite/sensors/sensor-avg.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-composite/sensors/sensor-avg.h`
    :language: c++
 
-.. literalinclude:: ../code/libtrainee/sensor-avg.cpp
-   :caption: :download:`../code/libtrainee/sensor-avg.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-composite/sensors/sensor-avg.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-composite/sensors/sensor-avg.cpp`
    :language: c++
 
 

@@ -1,0 +1,2 @@
+ADD_SUBDIRECTORY(socialdb)
+ADD_SUBDIRECTORY(tests)

@@ -11,21 +11,21 @@ Solution: Proxy (Remote Thermometer)
 Client (Proxy) Thermometer
 --------------------------
 
-.. literalinclude:: ../code/libtrainee/sensor-remote.h
-   :caption: :download:`../code/libtrainee/sensor-remote.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote.h`
    :language: c++
 
-.. literalinclude:: ../code/libtrainee/sensor-remote.cpp
-   :caption: :download:`../code/libtrainee/sensor-remote.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote.cpp`
    :language: c++
 
 Remote Stub
 -----------
 
-.. literalinclude:: ../code/libtrainee/sensor-remote-adapter.h
-   :caption: :download:`../code/libtrainee/sensor-remote-adapter.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote-adapter.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote-adapter.h`
    :language: c++
 
-.. literalinclude:: ../code/libtrainee/sensor-remote-adapter.cpp
-   :caption: :download:`../code/libtrainee/sensor-remote-adapter.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote-adapter.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-proxy/sensors/sensor-remote-adapter.cpp`
    :language: c++

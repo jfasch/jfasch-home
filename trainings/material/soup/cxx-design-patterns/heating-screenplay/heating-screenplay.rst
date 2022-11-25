@@ -22,8 +22,8 @@ Step 1: Monolithic
 .. image:: heating-step-1.png
    :scale: 40%
 
-.. literalinclude:: ../code/heating/heating-demo-v1.cpp
-   :caption: :download:`../code/heating/heating-demo-v1.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/heating-screenplay/heating-demo-v1.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/heating-screenplay/heating-demo-v1.cpp`
    :language: c++
 
 .. code-block:: console
@@ -49,18 +49,18 @@ Step 2: And D-Bus? |longrightarrow| Interfaces
 * See how we can log and store via D-Bus
 * Create Interfaces
 * Pull out ``SensorReader``
-  (:download:`../code/heating/sensor-reader.h`)
+  (:download:`/trainings/material/soup/cxx-exercises/heating-screenplay/sensor-reader.h`)
 * Modify demo program
-  (:download:`../code/heating/heating-demo-v2.cpp`)
+  (:download:`/trainings/material/soup/cxx-exercises/heating-screenplay/heating-demo-v2.cpp`)
 
 .. image:: heating-interfaces.png
 
-.. literalinclude:: ../code/heating/sensor-reader.h
-   :caption: :download:`../code/heating/sensor-reader.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/heating-screenplay/sensor-reader.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/heating-screenplay/sensor-reader.h`
    :language: c++
 
-.. literalinclude:: ../code/heating/heating-demo-v2.cpp
-   :caption: :download:`../code/heating/heating-demo-v2.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/heating-screenplay/heating-demo-v2.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/heating-screenplay/heating-demo-v2.cpp`
    :language: c++
 
 .. code-block:: console
@@ -83,29 +83,29 @@ Step 3: Start D-Bus Implementation
 Pull Demo Logger/Store Out Into Separate Files
 ..............................................
 
-* :download:`logger-demo.h <../code/heating/logger-demo.h>`
+* :download:`logger-demo.h </trainings/material/soup/cxx-exercises/heating-screenplay/logger-demo.h>`
 * :download:`valuestore-demo.h
-  <../code/heating/valuestore-demo.h>`
+  </trainings/material/soup/cxx-exercises/heating-screenplay/valuestore-demo.h>`
 
 Adapter: ``DBusLogger``
 .......................
 
-.. literalinclude:: ../code/heating/logger-dbus.h
-   :caption: :download:`../code/heating/logger-dbus.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/heating-screenplay/logger-dbus.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/heating-screenplay/logger-dbus.h`
    :language: c++
 
 Adapter: ``DBusValueStore``
 ...........................
 
-.. literalinclude:: ../code/heating/valuestore-dbus.h
-   :caption: :download:`../code/heating/valuestore-dbus.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/heating-screenplay/valuestore-dbus.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/heating-screenplay/valuestore-dbus.h`
    :language: c++
 
 Demo Program To Instantiate Either Demo Or DBus
 ...............................................
 
-.. literalinclude:: ../code/heating/heating-demo-v3.cpp
-   :caption: :download:`../code/heating/heating-demo-v3.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/heating-screenplay/heating-demo-v3.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/heating-screenplay/heating-demo-v3.cpp`
    :language: c++
 
 Stop Here, Need Help
@@ -131,8 +131,8 @@ Tests
 
 .. image:: heating-tests.png
 
-.. literalinclude:: ../code/heating/sensor-reader-suite.cpp
-   :caption: :download:`../code/heating/sensor-reader-suite.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/heating-screenplay/sensor-reader-suite.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/heating-screenplay/sensor-reader-suite.cpp`
    :language: c++
 
 .. code-block:: console

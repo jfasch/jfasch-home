@@ -13,28 +13,28 @@ Solution: Decorator
 Decorated Sensor (Intermediate Interface)
 -----------------------------------------
 
-.. literalinclude:: ../code/libtrainee/sensor-decorated.h
-   :caption: :download:`../code/libtrainee/sensor-decorated.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated.h`
    :language: c++
 
 Decorated Constant Sensor
 -------------------------
 
-.. literalinclude:: ../code/libtrainee/sensor-decorated-const.h
-   :caption: :download:`../code/libtrainee/sensor-decorated-const.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-const.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-const.h`
    :language: c++
 
-.. literalinclude:: ../code/libtrainee/sensor-decorated-const.cpp
-   :caption: :download:`../code/libtrainee/sensor-decorated-const.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-const.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-const.cpp`
    :language: c++
 
 Decorated Random Sensor
 -----------------------
 
-.. literalinclude:: ../code/libtrainee/sensor-decorated-random.h
-   :caption: :download:`../code/libtrainee/sensor-decorated-random.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-random.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-random.h`
    :language: c++
 
-.. literalinclude:: ../code/libtrainee/sensor-decorated-random.cpp
-   :caption: :download:`../code/libtrainee/sensor-decorated-random.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-random.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/sensors/sensor-decorated-random.cpp`
    :language: c++

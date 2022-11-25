@@ -10,19 +10,19 @@ Solution: Singleton (Flexible)
 Main Program
 ------------
 
-.. literalinclude:: ../code/singleton/singleton-social-insurance-flexible-main.cpp
-   :caption: :download:`../code/singleton/singleton-social-insurance-flexible-main.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/singleton-social-insurance-flexible-main.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/singleton-social-insurance-flexible-main.cpp`
    :language: c++
 
 ``SocialInsurance`` Interface
 -----------------------------
 
-.. literalinclude:: ../code/singleton/social-insurance-flexible.h
-   :caption: :download:`../code/singleton/social-insurance-flexible.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-flexible.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-flexible.h`
    :language: c++
 
-.. literalinclude:: ../code/singleton/social-insurance-flexible.cpp
-   :caption: :download:`../code/singleton/social-insurance-flexible.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-flexible.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-flexible.cpp`
    :language: c++
 
 Two Concrete Implementations
@@ -31,21 +31,21 @@ Two Concrete Implementations
 OEGK
 ....
 
-.. literalinclude:: ../code/singleton/social-insurance-oegk.h
-   :caption: :download:`../code/singleton/social-insurance-oegk.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-oegk.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-oegk.h`
    :language: c++
 
-.. literalinclude:: ../code/singleton/social-insurance-oegk.cpp
-   :caption: :download:`../code/singleton/social-insurance-oegk.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-oegk.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-oegk.cpp`
    :language: c++
 
 SVS
 ...
 
-.. literalinclude:: ../code/singleton/social-insurance-svs.h
-   :caption: :download:`../code/singleton/social-insurance-svs.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-svs.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-svs.h`
    :language: c++
 
-.. literalinclude:: ../code/singleton/social-insurance-svs.cpp
-   :caption: :download:`../code/singleton/social-insurance-svs.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-svs.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-svs.cpp`
    :language: c++

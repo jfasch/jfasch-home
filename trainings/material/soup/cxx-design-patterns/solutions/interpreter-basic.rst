@@ -10,10 +10,10 @@ Solution: Arithmetic Expression Interpreter
 .. contents::
    :local:
 
-.. literalinclude:: ../code/libtrainee/expression.h
-   :caption: :download:`../code/libtrainee/expression.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/expressions/expression.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/expressions/expression.h`
    :language: c++
 
-.. literalinclude:: ../code/libtrainee/expression.cpp
-   :caption: :download:`../code/libtrainee/expression.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/expressions/expression.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/expressions/expression.cpp`
    :language: c++

@@ -11,17 +11,17 @@ Solution: Singleton (Inflexible)
 Main Program
 ------------
 
-.. literalinclude:: ../code/singleton/singleton-social-insurance-inflexible-main.cpp
-   :caption: :download:`../code/singleton/singleton-social-insurance-inflexible-main.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/singleton-social-insurance-inflexible-main.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/singleton-social-insurance-inflexible-main.cpp`
    :language: c++
 
 Singleton Implementation
 ------------------------
 
-.. literalinclude:: ../code/singleton/social-insurance-inflexible.h
-   :caption: :download:`../code/singleton/social-insurance-inflexible.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-inflexible.h
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-inflexible.h`
    :language: c++
 
-.. literalinclude:: ../code/singleton/social-insurance-inflexible.cpp
-   :caption: :download:`../code/singleton/social-insurance-inflexible.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-inflexible.cpp
+   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/social-insurance-inflexible.cpp`
    :language: c++
