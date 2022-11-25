@@ -44,8 +44,8 @@ Exercise
 
 Implement the following test:
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-composite/tests/composite-suite-basic.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-composite/tests/composite-suite-basic.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-composite/tests/composite-suite-basic.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-composite/tests/composite-suite-basic.cpp`
    :language: c++
 
 Maybe, as a C++ 11 excursion, lets implement real *initialization*,
@@ -57,6 +57,6 @@ already being used.
 
    This step is optional!
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-composite/tests/composite-suite-initializer-list.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-composite/tests/composite-suite-initializer-list.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-composite/tests/composite-suite-initializer-list.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-composite/tests/composite-suite-initializer-list.cpp`
    :language: c++

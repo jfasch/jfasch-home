@@ -55,8 +55,8 @@ run. Take special care:
   compiler errors.
 * There must not be a memory leak at program end.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-singleton/singleton-social-insurance-flexible-strict-main.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-singleton/singleton-social-insurance-flexible-strict-main.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-singleton/singleton-social-insurance-flexible-strict-main.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-singleton/singleton-social-insurance-flexible-strict-main.cpp`
    :language: c++
 
 Tests

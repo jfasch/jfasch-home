@@ -1,0 +1,2 @@
+ADD_SUBDIRECTORY(commands)
+ADD_SUBDIRECTORY(tests)

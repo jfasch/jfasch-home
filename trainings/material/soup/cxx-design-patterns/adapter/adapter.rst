@@ -29,8 +29,8 @@ measure in degrees Fahrenheit.
 .. image:: fahrenheit-hierarchy.png
    :scale: 40%
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors-fahrenheit/sensor-fahrenheit.h
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors-fahrenheit/sensor-fahrenheit.h`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-adapter/sensors-fahrenheit/sensor-fahrenheit.h
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-adapter/sensors-fahrenheit/sensor-fahrenheit.h`
    :language: c++
 
 Solution: Adaptation
@@ -60,22 +60,22 @@ time.
 Basic Adaptation
 ................
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-basic.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-basic.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-basic.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-basic.cpp`
    :language: c++
 
 Adapter Must *Be-A* ``Sensor``
 ..............................
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-adapter--is-a--sensor.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-adapter--is-a--sensor.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-adapter--is-a--sensor.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-adapter--is-a--sensor.cpp`
    :language: c++
 
 Adaptee Can *Be-Any* ``ASensor``
 ................................
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-adapter--knows--an-a-sensor.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-adapter--knows--an-a-sensor.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-adapter--knows--an-a-sensor.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-adapter--knows--an-a-sensor.cpp`
    :language: c++
 
 Adapter Is Doing Real Measurements
@@ -84,8 +84,8 @@ Adapter Is Doing Real Measurements
 Make sure that the adapter is really doing *measurement* (i.e. *use*
 the adaptee) when being asked for its temperature.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-adapter-definitely-knows--a-sensor--HELL.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/tests/adapter-suite-adapter-definitely-knows--a-sensor--HELL.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-adapter-definitely-knows--a-sensor--HELL.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-adapter/tests/adapter-suite-adapter-definitely-knows--a-sensor--HELL.cpp`
    :language: c++
 
 

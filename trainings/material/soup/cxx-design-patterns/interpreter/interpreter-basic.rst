@@ -60,8 +60,8 @@ value.
    :align: left
    :widths: auto
 
-   * * .. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-literal.cpp
-          :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-literal.cpp`
+   * * .. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-literal.cpp
+          :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-literal.cpp`
           :language: c++
 
      * .. image:: interpreter-literal-class.png
@@ -77,8 +77,8 @@ Arithmetic (Binary) Expressions
      :align: left
      :widths: auto
   
-     * * .. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-addition.cpp
-            :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-addition.cpp`
+     * * .. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-addition.cpp
+            :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-addition.cpp`
             :language: c++
   
        * .. image:: interpreter-addition-class.png
@@ -86,20 +86,20 @@ Arithmetic (Binary) Expressions
 
 * ``Subtraction``
 
-  .. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-subtraction.cpp
-     :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-subtraction.cpp`
+  .. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-subtraction.cpp
+     :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-subtraction.cpp`
      :language: c++
 
 * ``Multiplication``
 
-  .. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-multiplication.cpp
-     :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-multiplication.cpp`
+  .. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-multiplication.cpp
+     :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-multiplication.cpp`
      :language: c++
 
 * ``Division``
 
-  .. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-division.cpp
-     :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-division.cpp`
+  .. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-division.cpp
+     :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-division.cpp`
      :language: c++
 
 Check: Combined Arithmetic Expressions
@@ -117,8 +117,8 @@ objects, so it should be possible to create expression trees like,
    * * Test
      * Expression
      * Tree
-   * * .. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-combined-arith.cpp
-          :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-combined-arith.cpp`
+   * * .. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-combined-arith.cpp
+          :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-combined-arith.cpp`
 	  :language: c++
      * ``(7+3)*(3-1) = 20``
      * .. image:: interpreter-expression-tree.png
@@ -150,8 +150,8 @@ No Uninitialized Variables!!
 Lets say, our variable are always initialized - without ever assigning
 to them, they have a defined value: ``0``.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-variable-not-set.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-variable-not-set.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-variable-not-set.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-variable-not-set.cpp`
    :language: c++
 
 Assigning To Variables
@@ -171,8 +171,8 @@ into the variable's context/scope. Additionally, we implement C's
 I.e., the assignment ``i = 42`` is an expression whose value is
 ``42``.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-variable-assignment.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-variable-assignment.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-variable-assignment.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-variable-assignment.cpp`
    :language: c++
 
 Using Variables As Expressions
@@ -186,6 +186,6 @@ expressions themselves.
    int i = 42;
    int j = i;  // <--- i used as expression whose value is assigned to j
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-variable-used-as-expression.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-interpreter/tests/interpreter-suite-variable-used-as-expression.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-variable-used-as-expression.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-interpreter/tests/interpreter-suite-variable-used-as-expression.cpp`
    :language: c++

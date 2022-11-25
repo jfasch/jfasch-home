@@ -13,11 +13,11 @@ Solution: Adapter
 Adapter Class For Fahrenheit Sensors
 ------------------------------------
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.h
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.h`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.h
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.h`
    :language: c++
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-adapter/sensors/sensor-fahrenheit-adapter.cpp`
    :language: c++
 

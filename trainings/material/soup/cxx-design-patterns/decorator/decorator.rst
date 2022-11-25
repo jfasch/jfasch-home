@@ -81,8 +81,8 @@ A somewhat contrived (but representative) example of "current code" is
 the ``average()`` function that computes an average value across a set
 of sensors.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-starting-point.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-starting-point.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-starting-point.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-starting-point.cpp`
    :language: c++
 
 Step 2: Decorate ``ConstantSensor`` |longrightarrow| ``DecoratedConstantSensor``
@@ -96,8 +96,8 @@ the added functionality to attach their own debugging/diagnostics code
 to the system - **without any modification/pollution of existing
 code**.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-const-sensor-added-functionality.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-const-sensor-added-functionality.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-const-sensor-added-functionality.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-const-sensor-added-functionality.cpp`
    :language: c++
 
 Step 3: Decorate ``RandomSensor`` |longrightarrow| ``DecoratedRandomSensor``
@@ -105,8 +105,8 @@ Step 3: Decorate ``RandomSensor`` |longrightarrow| ``DecoratedRandomSensor``
 
 Same as step 2, only with ``RandomSensor``.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-random-sensor-added-functionality.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-random-sensor-added-functionality.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-random-sensor-added-functionality.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-random-sensor-added-functionality.cpp`
    :language: c++
 
 Step 4: Verify That ``DecoratedConstantSensor`` Can Be Used As ``Sensor``
@@ -117,8 +117,8 @@ system is to extend existing functionality *without* any
 *modification* thereof. In that sense, it must be possible to use a
 decorator object *as-a* original object.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-const-sensor-is-a-sensor.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-const-sensor-is-a-sensor.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-const-sensor-is-a-sensor.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-const-sensor-is-a-sensor.cpp`
    :language: c++
 
 Step 5: Verify That ``DecoratedRandomSensor`` Can Be Used As ``Sensor``
@@ -126,8 +126,8 @@ Step 5: Verify That ``DecoratedRandomSensor`` Can Be Used As ``Sensor``
 
 Same as step 4, only with ``RandomSensor``.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-random-sensor-is-a-sensor.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-random-sensor-is-a-sensor.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-random-sensor-is-a-sensor.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-random-sensor-is-a-sensor.cpp`
    :language: c++
 
 Step 6: Verify That Current Situation Still Holds True
@@ -138,6 +138,6 @@ integrity of the system is still guaranteed, even though new
 functionality has been added. Those proponents will sure want to see
 the following test pass:
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-decorated-used-in-legacy.cpp
-   :caption: :download:`/trainings/material/soup/cxx-exercises/design-patterns-decorator/tests/decorator-suite-decorated-used-in-legacy.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-decorated-used-in-legacy.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/design-patterns-decorator/tests/decorator-suite-decorated-used-in-legacy.cpp`
    :language: c++
