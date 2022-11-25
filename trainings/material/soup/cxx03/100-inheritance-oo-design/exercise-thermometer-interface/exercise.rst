@@ -8,94 +8,171 @@ Exercise: Thermometer Interface
 .. contents::
    :local:
 
-Prerequisites
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+   * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
+
+Project Setup
 -------------
 
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
-* :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
+Directory ``sensors``
+.....................
 
-Goal
-----
+Download the following files into directory ``sensors/``:
 
-Create a single-directory CMake project, step by step. The initial
-``CMakeLists.txt`` file contains the following boilerplate,
+* :download:`CMakeLists.txt
+  </trainings/material/soup/cxx-code/sensors-duck/sensors/CMakeLists.txt>`
+* :download:`sensor-const.h
+  </trainings/material/soup/cxx-code/sensors-duck/sensors/sensor-const.h>`
+* :download:`sensor-const.cpp
+  </trainings/material/soup/cxx-code/sensors-duck/sensors/sensor-const.cpp>`
+* :download:`sensor-random.h
+  </trainings/material/soup/cxx-code/sensors-duck/sensors/sensor-random.h>`
+* :download:`sensor-random.cpp
+  </trainings/material/soup/cxx-code/sensors-duck/sensors/sensor-random.cpp>`
 
-.. code-block:: CMake
+Directory ``bin``
+.................
 
-   CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
-   PROJECT(FH-ECE20)
-   
-   set(CMAKE_CXX_STANDARD 17)
-   
-   # compiler options. (we only check for gcc)
-   if (${CMAKE_COMPILER_IS_GNUCC})
-     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0 -g3 -Wall -Werror")
-     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g3 -Wall -Werror")
-   endif()
+Download the following files into directory ``bin/``:
 
-Unrelated Thermometers: Library
--------------------------------
+* :download:`CMakeLists.txt
+  </trainings/material/soup/cxx-code/sensors-duck/bin/CMakeLists.txt>`
+* :download:`sensor-const-main.cpp
+  </trainings/material/soup/cxx-code/sensors-duck/bin/sensor-const-main.cpp>`
+* :download:`sensor-random-main.cpp
+  </trainings/material/soup/cxx-code/sensors-duck/bin/sensor-random-main.cpp>`
 
-The following *unrelated* thermometers will go in a library,
-``thermometers``. Hint: use the CMake function ``ADD_LIBRARY()``.
+Directory ``tests``
+...................
 
-* ``ThermometerConst``
+Download the following files into directory ``tests/``:
 
-  .. literalinclude:: code/thermometer-const.h
-     :caption: :download:`code/thermometer-const.h`
-     :language: c++
+* :download:`CMakeLists.txt
+  </trainings/material/soup/cxx-code/sensors-duck/tests/CMakeLists.txt>`
+* :download:`sensor-const-suite-basic.cpp
+  </trainings/material/soup/cxx-code/sensors-duck/tests/sensor-const-suite-basic.cpp>`
+* :download:`sensor-random-suite-basic.cpp
+  </trainings/material/soup/cxx-code/sensors-duck/tests/sensor-random-suite-basic.cpp>`
 
-  .. literalinclude:: code/thermometer-const.cpp
-     :caption: :download:`code/thermometer-const.cpp`
-     :language: c++
+Build and Test
+..............
 
-* ``ThermometerRandom``
+* Build the project
+* In the build directory for ``bin/``,
 
-  .. literalinclude:: code/thermometer-random.h
-     :caption: :download:`code/thermometer-random.h`
-     :language: c++
+  .. code-block:: console
 
-  .. literalinclude:: code/thermometer-random.cpp
-     :caption: :download:`code/thermometer-random.cpp`
-     :language: c++
+     $ ./sensor-const-main 
+     42.7
 
-Executables
------------
+  .. code-block:: console
 
-Add the following executables to the project. Hint: use
-``ADD_EXECUTABLE()`` to build the main code itself, together with
-``TARGET_LINK_LIBRARIES()`` to link the ``thermometers`` library to
-each.
+     $ ./sensor-random-main 
+     17.7177
 
-* ``ThermometerConst`` test program
+* In the build directory for ``tests/``,
 
-  .. literalinclude:: code/thermometer-const-test.cpp
-     :caption: :download:`code/thermometer-const-test.cpp`
-     :language: c++
+  .. code-block:: console
 
-* ``ThermometerRandom`` test program
+     $ ./cxx-exercises-sensors-duck--suite 
+     Running main() from /home/jfasch/work/jfasch-home/googletest/googletest/src/gtest_main.cc
+     [==========] Running 2 tests from 2 test suites.
+     [----------] Global test environment set-up.
+     [----------] 1 test from sensor_const_suite
+     [ RUN      ] sensor_const_suite.basic
+     [       OK ] sensor_const_suite.basic (0 ms)
+     [----------] 1 test from sensor_const_suite (0 ms total)
+     
+     [----------] 1 test from sensor_random_suite
+     [ RUN      ] sensor_random_suite.basic
+     [       OK ] sensor_random_suite.basic (0 ms)
+     [----------] 1 test from sensor_random_suite (0 ms total)
+     
+     [----------] Global test environment tear-down
+     [==========] 2 tests from 2 test suites ran. (0 ms total)
+     [  PASSED  ] 2 tests.
 
-  .. literalinclude:: code/thermometer-random-test.cpp
-     :caption: :download:`code/thermometer-random-test.cpp`
-     :language: c++
+Problem: Polymorphic Thermometer Usage
+--------------------------------------
 
-Getting To The Point: Polymorphic Thermometer Usage
----------------------------------------------------
-
-``ThermometerConst`` and ``ThermometerRandom`` are completely
-unrelated - *they don't share a common base class*.
+``ConstantSensor`` and ``RandomSensor`` are completely unrelated -
+*they don't share a common base class*. They just look similar. This
+programming technique, *Duck Typing*, is heavily used in dynamic
+languages such as Python (see
+:doc:`/trainings/material/soup/python/advanced/oo/abc/topic`). It is
+not appropriate in a strongly tyoed language like C++ though, as we
+will see.
 
 The following program uses an instance of each *in an array of a
 hypothetical interface/base class* to measure two temperature
 points. It calculates the average of both points, and outputs that.
 
-Add the missing ``Thermometer`` interface (create a file
-``thermometer.h`` to contain it), and make the program compile and
-run.
-
-.. literalinclude:: code/thermometer-avg.cpp
-   :caption: :download:`code/thermometer-avg.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/bin/sensors-avg.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/sensors-core/bin/sensors-avg.cpp`
    :language: c++
+
+The Exercise
+------------
+
+* Download the program into the ``bin/`` directory, and register it
+  with that directory's ``CMakeLists.txt`` file:
+
+  * :download:`sensors-avg.cpp
+    </trainings/material/soup/cxx-code/sensors-core/bin/sensors-avg.cpp>`
+
+* In addition ot the program, download two tests into the ``tests/``
+  directory, and register them with that directory's
+  ``CMakeLists.txt`` file:
+
+  * :download:`sensor-const-suite-is-a-sensor.cpp
+    </trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-suite-is-a-sensor.cpp>`
+  * :download:`sensor-random-suite-is-a-sensor.cpp
+    </trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-suite-is-a-sensor.cpp>`
+
+* *It won't build*
+* Add the missing ``Sensor`` interface (create a file
+  ``sensors/sensor.h`` to contain it), and make the program compile
+  and run. In UML, the new sensor hierarchy would look like follows:
+
+  .. image:: sensor-hierarchy.png
+     :scale: 30%
+
+* Run the program
+
+  .. code-block:: console
+
+     $ ./bin/cxx-exercises-sensors-avg 
+     27.5731
+
+* Run the tests
+
+  .. code-block:: console
+
+     $ ./tests/cxx-exercises-sensors-core--suite 
+     Running main() from /home/jfasch/work/jfasch-home/googletest/googletest/src/gtest_main.cc
+     [==========] Running 4 tests from 2 test suites.
+     [----------] Global test environment set-up.
+     [----------] 2 tests from sensor_const_suite
+     [ RUN      ] sensor_const_suite.basic
+     [       OK ] sensor_const_suite.basic (0 ms)
+     [ RUN      ] sensor_const_suite.is_a_sensor
+     [       OK ] sensor_const_suite.is_a_sensor (0 ms)
+     [----------] 2 tests from sensor_const_suite (0 ms total)
+     
+     [----------] 2 tests from sensor_random_suite
+     [ RUN      ] sensor_random_suite.basic
+     [       OK ] sensor_random_suite.basic (0 ms)
+     [ RUN      ] sensor_random_suite.is_a_sensor
+     [       OK ] sensor_random_suite.is_a_sensor (0 ms)
+     [----------] 2 tests from sensor_random_suite (0 ms total)
+     
+     [----------] Global test environment tear-down
+     [==========] 4 tests from 2 test suites ran. (0 ms total)
+     [  PASSED  ] 4 tests.
 
 Topics Covered
 --------------

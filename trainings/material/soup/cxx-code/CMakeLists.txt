@@ -2,7 +2,7 @@ ADD_SUBDIRECTORY(utilities)
 
 ADD_SUBDIRECTORY(socialdb)
 
-ADD_SUBDIRECTORY(sensors-start)
+ADD_SUBDIRECTORY(sensors-duck)
 ADD_SUBDIRECTORY(sensors-core)
 ADD_SUBDIRECTORY(sensors-core-i2c)
 

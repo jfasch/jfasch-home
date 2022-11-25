@@ -15,13 +15,3 @@ TEST(sensor_random_suite, basic)
     ASSERT_FLOAT_EQ(rs.high(), 42.3);      // <--- RandomSensor specific interface
     
 }
-
-TEST(sensor_random_suite, is_a_sensor)
-{
-    RandomSensor rs(36.4, 42.3);
-
-    Sensor* s = &rs;                     // <--- ConstantSensor is-a Sensor
-
-    // avoid "unused" warning
-    (void)s;
-}

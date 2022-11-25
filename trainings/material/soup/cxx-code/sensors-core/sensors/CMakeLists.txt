@@ -2,9 +2,12 @@ ADD_LIBRARY(
   cxx-exercises-sensors-core
 
   sensor.h
+
   sensor-random.h
   sensor-random.cpp
+
   sensor-const.h
+  sensor-const.cpp
 
   sensor-utils.h
 )
