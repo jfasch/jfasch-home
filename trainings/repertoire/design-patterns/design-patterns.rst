@@ -95,6 +95,6 @@ in a sequence that makes didactical sense. Among those are,
 
 .. rubric:: Footnotes
 .. [#luke] While some say that polymorphism has been invented by the
-	   indecisive, other say that architecture is the art of
+	   indecisive, others say that architecture is the art of
 	   making decisions late.
 

@@ -1,7 +1,7 @@
 .. ot-exercise:: cxx_design_patterns.interpreter_and_adapter
    :dependencies: cxx_design_patterns.adapter,
 		  cxx_design_patterns.interpreter,
-		  cxx_design_patterns.interpreter_basic,
+		  cxx.exercises.design_patterns.interpreter_basic,
 		  cxx_design_patterns.sensor_hierarchy
 
 .. include:: <mmlalias.txt>
@@ -20,7 +20,7 @@ In :doc:`interpreter` we created a clas hierarchy to do arithmetic
 calculations, based on literals and variables - *values*, all in all.
 
 The venerable ``Sensor`` :doc:`hierarchy <../sensor-hierarchy>` that
-we used in :doc:`../adapter/adapter` and in :doc:`../proxy/proxy-round`, for example,
+we used in :doc:`../adapter/adapter` and in :doc:`/trainings/material/soup/cxx-exercises/design-patterns/proxy-round`, for example,
 contains a number of classes (to be extended by real-world sensors one
 day), that also provide *values*.
 

@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx_design_patterns.singleton_inflexible
+.. ot-exercise:: cxx.exercises.design_patterns.singleton_inflexible
    :dependencies: cxx_design_patterns.singleton,
 		  cxx_design_patterns.uml
 

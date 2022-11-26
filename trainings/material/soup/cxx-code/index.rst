@@ -15,7 +15,7 @@ C++ Code
    * * ``sensors-duck``
      * (Project setup)
    * * ``sensors-core``
-     * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/exercise-thermometer-interface/exercise`
+     * :doc:`/trainings/material/soup/cxx-exercises/oo/sensor-interface`
    * * ``sensors-core-i2c``
      * (Implicitly by others)
    * * ``design-patterns-abstract-factory``
@@ -45,10 +45,9 @@ C++ Code
        * Solution: :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-round`
        * Solution: :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-remote`
    * * ``design-patterns-singleton``
-     * * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible-strict`
-       * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-inflexible`
+     * * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible`
+       * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible-strict`
+       * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-inflexible`
        * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible`
        * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible-strict`
        * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-inflexible`

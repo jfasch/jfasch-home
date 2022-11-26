@@ -1,5 +1,5 @@
 .. ot-topic:: cxx_design_patterns.solutions.observer
-   :dependencies: cxx_design_patterns.observer
+   :dependencies: cxx.exercises.design_patterns.observer
 
 .. include:: <mmlalias.txt>
 

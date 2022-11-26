@@ -1,5 +1,5 @@
 .. ot-exercise:: cxx_design_patterns.solutions.proxy_remote
-   :dependencies: cxx_design_patterns.proxy_remote
+   :dependencies: cxx.exercises.design_patterns.proxy_remote
 
 
 Solution: Proxy (Remote Thermometer)

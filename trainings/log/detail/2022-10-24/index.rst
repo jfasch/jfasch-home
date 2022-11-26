@@ -22,15 +22,15 @@ Monday
 * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
 * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-inflexible`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-inflexible`
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-inflexible`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible`
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton-flexible-strict`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible-strict`
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible-strict`
 
@@ -40,11 +40,11 @@ Monday
   
 * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy-round`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/proxy-round`
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-round`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy-remote`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/proxy-remote`
     (That with the ``ServerThread`` |:thinking:|)
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-remote`

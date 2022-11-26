@@ -1,0 +1,21 @@
+.. ot-group:: cxx.exercises.oo
+
+
+C++ Exercises: Object Oriented Programming
+==========================================
+
+.. contents::
+   :local:
+
+Exercises
+---------
+
+.. toctree::
+
+   sensor-interface
+
+Dependencies
+------------
+	      
+.. ot-graph::
+   :entries: cxx.exercises.oo

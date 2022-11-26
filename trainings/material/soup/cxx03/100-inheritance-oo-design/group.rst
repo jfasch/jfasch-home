@@ -23,10 +23,7 @@ Topics
 Exercises
 ---------
 
-.. toctree::
-   :maxdepth: 1
-
-   exercise-thermometer-interface/exercise
+* :doc:`/trainings/material/soup/cxx-exercises/oo/sensor-interface`
 
 Dependencies
 ------------

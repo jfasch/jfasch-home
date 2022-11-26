@@ -1,5 +1,5 @@
 .. ot-exercise:: cxx_design_patterns.solutions.singleton_inflexible
-   :dependencies: cxx_design_patterns.singleton_inflexible
+   :dependencies: cxx.exercises.design_patterns.singleton_inflexible
 
 
 Solution: Singleton (Inflexible)

@@ -1,5 +1,6 @@
 .. ot-exercise:: cxx_design_patterns.solutions.interpreter_basic
-   :dependencies: cxx_design_patterns.interpreter_basic
+   :dependencies: cxx.exercises.design_patterns.interpreter_basic,
+		  cxx_design_patterns.interpreter_basic
 
 .. include:: <mmlalias.txt>
 

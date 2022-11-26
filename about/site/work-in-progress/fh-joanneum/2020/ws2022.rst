@@ -39,7 +39,7 @@ Plan: Evolution
 
        Exercise
 
-       * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/exercise-thermometer-interface/exercise`
+       * :doc:`/trainings/material/soup/cxx-exercises/oo/sensor-interface`
 
    * * 2022-10-31
      * 

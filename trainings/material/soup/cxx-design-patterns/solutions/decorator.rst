@@ -1,5 +1,5 @@
 .. ot-topic:: cxx_design_patterns.solutions.decorator
-   :dependencies: cxx_design_patterns.decorator
+   :dependencies: cxx.exercises.design_patterns.decorator
 
 .. include:: <mmlalias.txt>
 

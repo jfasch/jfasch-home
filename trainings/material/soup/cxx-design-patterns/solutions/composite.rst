@@ -1,5 +1,5 @@
 .. ot-topic:: cxx_design_patterns.solutions.composite
-   :dependencies: cxx_design_patterns.composite
+   :dependencies: cxx.exercises.design_patterns.composite
 
 .. include:: <mmlalias.txt>
 

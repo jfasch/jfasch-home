@@ -21,6 +21,7 @@ work in progress*).
    cxx11/group
    cxx-design-patterns/group
    cxx-code/index
+   cxx-exercises/group
    linux/group
    unittest/group
    kernel/group

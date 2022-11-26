@@ -1,9 +1,9 @@
-.. ot-exercise:: cxx03.inheritance_oo.exercise_thermometer_iface
+.. ot-exercise:: cxx.exercises.oo.sensor_interface
    :dependencies: cxx03.inheritance_oo.interface,
 		  linux.toolchain.cmake_local
 
-Exercise: Thermometer Interface
-===============================
+Exercise: Sensor Interface
+==========================
 
 .. contents::
    :local:
@@ -178,4 +178,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx03.inheritance_oo.exercise_thermometer_iface
+   :entries: cxx.exercises.oo.sensor_interface

@@ -29,19 +29,16 @@ Solution: *Proxy*
 Local Variant
 .............
 
-.. image:: proxy-local.png
+.. image:: /trainings/material/soup/cxx-exercises/design-patterns/proxy-local.png
    :scale: 40%
 
 Remote Variant
 ..............
 
-.. image:: proxy-remote.png
+.. image:: /trainings/material/soup/cxx-exercises/design-patterns/proxy-remote.png
 
 Exercises
 ---------
 
-.. toctree::
-
-   proxy-round
-   proxy-remote
-
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/proxy-remote`
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/proxy-round`

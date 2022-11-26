@@ -1,6 +1,6 @@
 .. ot-topic:: cxx_design_patterns.composite
    :dependencies: cxx_design_patterns.proxy,
-		  cxx_design_patterns.proxy_round,
+		  cxx.exercises.design_patterns.proxy_round,
 		  cxx03.inheritance_oo.interface,
 		  cxx_design_patterns.uml,
 		  cxx_design_patterns.sensor_hierarchy

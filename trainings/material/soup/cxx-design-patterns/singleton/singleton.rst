@@ -24,14 +24,12 @@ Description
 * Instantiation should be automatic
 * ... and this is where the problems arise
 
-Exerises
---------
+Exercises
+---------
 
-.. toctree::
-
-   singleton-inflexible
-   singleton-flexible
-   singleton-flexible-strict
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible`
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible-strict`
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-inflexible`
 
 And ``class Person``?
 .....................
