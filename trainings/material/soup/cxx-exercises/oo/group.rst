@@ -13,6 +13,7 @@ Exercises
 .. toctree::
 
    sensor-interface
+   sensor-w1
 
 Dependencies
 ------------

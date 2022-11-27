@@ -31,6 +31,7 @@ Solutions
 ---------
 
 .. toctree::
+   :maxdepth: 2
 
    solutions/group
 

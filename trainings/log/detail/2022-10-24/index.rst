@@ -24,47 +24,47 @@ Monday
 
   * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-inflexible`
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-inflexible`
+    * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/singleton-inflexible`
 
   * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible`
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible`
+    * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/singleton-flexible`
 
   * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/singleton-flexible-strict`
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/singleton-flexible-strict`
+    * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/singleton-flexible-strict`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/adapter`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/adapter`
   
 * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy`
 
   * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/proxy-round`
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-round`
+    * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/proxy-round`
 
   * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/proxy-remote`
     (That with the ``ServerThread`` |:thinking:|)
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/proxy-remote`
+    * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/proxy-remote`
 
 Tuesday
 -------
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/composite`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/composite`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/command/command`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/command`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/command`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter`
 
   * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/interpreter-basic`
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/interpreter-basic`
+    * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/interpreter-basic`
 
 Wednesday
 ---------
@@ -73,14 +73,14 @@ Wednesday
 
   * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/interpreter-and-adapter`
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/interpreter-and-adapter`
+    * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/interpreter-and-adapter`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/observer/observer`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/observer`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/observer`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/abstract-factory/abstract-factory`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/abstract-factory`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/abstract-factory`
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/heating-screenplay/heating-screenplay`
