@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx_design_patterns.solutions.proxy_round
+.. ot-exercise:: cxx.exercises.design_patterns.solutions.proxy_round
    :dependencies: cxx.exercises.design_patterns.proxy_round
 
 

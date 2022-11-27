@@ -1,4 +1,4 @@
-.. ot-topic:: cxx_design_patterns.solutions.adapter
+.. ot-topic:: cxx.exercises.design_patterns.solutions.adapter
    :dependencies: cxx.exercises.design_patterns.adapter
 
 .. include:: <mmlalias.txt>

@@ -1,4 +1,4 @@
-.. ot-group:: cxx_design_patterns.solutions
+.. ot-group:: cxx.exercises.design_patterns.solutions
 
 
 Solutions

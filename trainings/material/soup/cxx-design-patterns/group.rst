@@ -40,10 +40,7 @@ Topics/Exercises
 Solutions
 ---------
 
-.. toctree::
-   :maxdepth: 1
-
-   solutions/group
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/solutions/group`
 
 To Be Done
 ----------

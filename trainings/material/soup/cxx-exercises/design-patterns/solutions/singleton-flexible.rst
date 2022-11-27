@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx_design_patterns.solutions.singleton_flexible
+.. ot-exercise:: cxx.exercises.design_patterns.solutions.singleton_flexible
    :dependencies: cxx.exercises.design_patterns.singleton_flexible
 
 Solution: Singleton (Flexible)

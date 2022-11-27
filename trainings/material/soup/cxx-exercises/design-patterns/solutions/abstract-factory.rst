@@ -1,4 +1,4 @@
-.. ot-topic:: cxx_design_patterns.solutions.abstract_factory
+.. ot-topic:: cxx.exercises.design_patterns.solutions.abstract_factory
    :dependencies: cxx.exercises.design_patterns.abstract_factory
 
 .. include:: <mmlalias.txt>

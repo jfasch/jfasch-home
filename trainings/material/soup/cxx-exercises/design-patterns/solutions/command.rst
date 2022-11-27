@@ -1,4 +1,4 @@
-.. ot-topic:: cxx_design_patterns.solutions.command
+.. ot-topic:: cxx.exercises.design_patterns.solutions.command
    :dependencies: cxx.exercises.design_patterns.command
 
 .. include:: <mmlalias.txt>

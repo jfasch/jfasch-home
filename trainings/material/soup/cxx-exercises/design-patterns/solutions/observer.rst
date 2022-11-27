@@ -1,4 +1,4 @@
-.. ot-topic:: cxx_design_patterns.solutions.observer
+.. ot-topic:: cxx.exercises.design_patterns.solutions.observer
    :dependencies: cxx.exercises.design_patterns.observer
 
 .. include:: <mmlalias.txt>

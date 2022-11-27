@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx_design_patterns.solutions.proxy_remote
+.. ot-exercise:: cxx.exercises.design_patterns.solutions.proxy_remote
    :dependencies: cxx.exercises.design_patterns.proxy_remote
 
 
