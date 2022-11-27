@@ -87,7 +87,7 @@ Plan: Evolution
      *
 
        * :doc:`ws2022/toolchain-setup`
-       * :doc:`ws2022/exercise-ws-sensor`
+       * :doc:`/trainings/material/soup/cxx-exercises/oo/sensor-w1`
        
    * * 
      * 2022-11-29

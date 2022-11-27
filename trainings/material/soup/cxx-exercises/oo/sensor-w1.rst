@@ -1,3 +1,6 @@
+.. ot-exercise:: cxx.exercises.oo.sensor_w1
+   :dependencies: cxx.exercises.oo.sensor_interface
+
 Exercise: OneWire Sensor Class
 ==============================
 
@@ -7,9 +10,9 @@ Exercise: OneWire Sensor Class
 Download Monolithic Sensor Implementation
 -----------------------------------------
 
-To your project, as a subdirectory of the toplevel
-directory, add a directory ``bin-trainee/``, and register
-it with your top-level ``CMakeLists.txt``.
+To your project, as a subdirectory of the toplevel directory, add a
+directory ``bin-trainee/``, and register it with your top-level
+``CMakeLists.txt``.
 
 Add `onewire-temperature.cpp
 <https://github.com/jfasch/FH-ECE20-patterns/blob/main/bin-trainer/onewire-temperature.cpp>`__
@@ -18,7 +21,8 @@ to that directory (and its ``CMakeLists.txt``, of course)
 Test Monolithic Implementation
 ------------------------------
 
-* Setup toolchain (if not yet done): :doc:`toolchain-setup`
+* Setup toolchain (if not yet done):
+  :doc:`/about/site/work-in-progress/fh-joanneum/2020/ws2022/toolchain-setup`
 * Build as described in
   :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
 
@@ -58,6 +62,12 @@ Test Monolithic Implementation
 * To make it run, create a pair of files
   ``libtrainee/sensor-w1.{h,cpp}``
 
+.. note::
+
+   The sensor implementation is in no way tied to the Raspberry. All
+   it does is read a file, and that can be done on the development
+   machine (a PC likely) just as well.
+
 .. literalinclude:: w1-sensor-suite.cpp
    :caption: :download:`w1-sensor-suite.cpp`
    :language: c++
@@ -73,4 +83,4 @@ Refactoring
 
 **Testing**
 
-* When done, test it one the Pi like above
+* When done, test it on the Pi like above
