@@ -1,7 +1,7 @@
 .. ot-group:: cxx.exercises.design_patterns
 
 
-C++ Exercises: Design Patterns
+Exercises: Design Patterns
 ==============================
 
 .. contents::

@@ -62,7 +62,7 @@ Tuesday
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter`
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter-basic`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/interpreter-basic`
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/interpreter-basic`
 
@@ -71,7 +71,7 @@ Wednesday
 
 * Continuing with :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter` ...
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/interpreter/interpreter-and-adapter`
+  * :doc:`/trainings/material/soup/cxx-exercises/design-patterns/interpreter-and-adapter`
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/solutions/interpreter-and-adapter`
 

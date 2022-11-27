@@ -11,9 +11,10 @@ Exercises
 ---------
 
 .. toctree::
+   :maxdepth: 1
 
-   design-patterns/group
    oo/group
+   design-patterns/group
 
 Solutions
 ---------

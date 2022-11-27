@@ -14,7 +14,5 @@ Interpreter
 Exercise
 --------
 
-.. toctree::
-
-   interpreter-basic
-   interpreter-and-adapter
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/interpreter-basic`
+* :doc:`/trainings/material/soup/cxx-exercises/design-patterns/interpreter-and-adapter`
