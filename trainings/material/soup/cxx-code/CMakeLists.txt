@@ -1,3 +1,5 @@
+ADD_SUBDIRECTORY(fixtures)
+
 ADD_SUBDIRECTORY(utilities)
 
 ADD_SUBDIRECTORY(socialdb)

@@ -7,6 +7,9 @@
 Type Conversions
 ================
 
+.. contents::
+   :local:
+
 Implicit Type Conversions
 -------------------------
 

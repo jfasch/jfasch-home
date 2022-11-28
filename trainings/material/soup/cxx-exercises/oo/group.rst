@@ -14,6 +14,7 @@ Exercises
 
    sensor-interface
    sensor-w1
+   sensor-w1-factory
 
 Dependencies
 ------------

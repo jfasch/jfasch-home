@@ -7,6 +7,9 @@
 Know Your Integers
 ==================
 
+.. contents::
+   :local:
+
 Standard Data Types: ``size_t`` (1)
 -----------------------------------
 

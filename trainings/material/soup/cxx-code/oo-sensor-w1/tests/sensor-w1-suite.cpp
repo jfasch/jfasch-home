@@ -33,10 +33,7 @@ struct w1_sensor_suite : public ::testing::Test
         }
     }
 
-    int fd;
-    string filename;
-
-    void write_temperature(double temperature)
+    void change_temperature(double temperature)
     {
         unsigned temp_milli = temperature * 1000;
 
@@ -48,18 +45,22 @@ struct w1_sensor_suite : public ::testing::Test
         ssize_t nwritten = ::write(fd, content.c_str(), content.size());
         ASSERT_EQ(nwritten, content.size());
     }
+
+
+    int fd;
+    string filename;
 };
 
 TEST_F(w1_sensor_suite, test_read_sensor)
 {
-    W1Sensor sensor(filename);
+    W1Sensor sensor(filename);                 // <--- using filename from w1_sensor_suite fixture
     double temperature;
 
-    write_temperature(42.666);                 // <--- change temperature
+    change_temperature(42.666);                // <--- change temperature
     temperature = sensor.get_temperature();    // <--- read temperature
     ASSERT_FLOAT_EQ(temperature, 42.666);
 
-    write_temperature(36.5);                   // <--- change temperature
+    change_temperature(36.5);                  // <--- change temperature
     temperature = sensor.get_temperature();    // <--- read temperature
     ASSERT_FLOAT_EQ(temperature, 36.5);
 }

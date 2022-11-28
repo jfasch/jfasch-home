@@ -4,6 +4,7 @@ ADD_EXECUTABLE(
   path_compose_compare.cpp
   path_compose_compare_2.cpp
   path_abs_rel.cpp
+  path_component_access.cpp
   path_iteration.cpp
   create_directory_error.cpp
   create_directory_single.cpp
@@ -16,6 +17,7 @@ ADD_EXECUTABLE(
 TARGET_LINK_LIBRARIES(
   c++11-filesystem-suite
 
+  cxx-exercises-fixtures
   gtest_main
   )
 

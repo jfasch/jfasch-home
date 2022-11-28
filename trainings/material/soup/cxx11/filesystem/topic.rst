@@ -90,6 +90,17 @@ Absolute and Relative Paths
    :caption: :download:`code/path_abs_rel.cpp`
    :language: c++
 
+Path Component Access
+---------------------
+
+* Extracting filename from an entire path
+* Extracting parent directory from an entire path
+* ...
+
+.. literalinclude:: code/path_component_access.cpp
+   :caption: :download:`code/path_component_access.cpp`
+   :language: c++
+
 Iterating Over Path Components
 ------------------------------
 

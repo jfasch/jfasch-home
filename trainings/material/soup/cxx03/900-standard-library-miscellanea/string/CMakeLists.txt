@@ -1,1 +1,1 @@
-ADD_EXECUTABLE(basic-usage basic-usage.cpp)
+ADD_SUBDIRECTORY(code)

@@ -15,7 +15,7 @@ TEST_F(filesystem_suite, directory_iterator)
 
     std::set<std::filesystem::path> entries;         // <--- iteration order is not (necessarily) creation order
     auto diriter = std::filesystem::directory_iterator(dirname);
-    for (const auto& entry: diriter)
+    for (const std::filesystem::directory_entry& entry: diriter)
         entries.insert(entry);
 
     ASSERT_EQ(entries.size(), 4);                    // <--- not 6! (no recursion)
