@@ -14,8 +14,8 @@ To your project, as a subdirectory of the toplevel directory, add a
 directory ``bin-trainee/``, and register it with your top-level
 ``CMakeLists.txt``.
 
-Add `onewire-temperature.cpp
-<https://github.com/jfasch/FH-ECE20-patterns/blob/main/bin-trainer/onewire-temperature.cpp>`__
+Add :download:`onewire-temperature-monolithic.cpp
+</trainings/material/soup/cxx-code/oo-sensor-w1/bin/onewire-temperature-monolithic.cpp>`
 to that directory (and its ``CMakeLists.txt``, of course)
 
 Test Monolithic Implementation
@@ -68,8 +68,8 @@ Test Monolithic Implementation
    it does is read a file, and that can be done on the development
    machine (a PC likely) just as well.
 
-.. literalinclude:: w1-sensor-suite.cpp
-   :caption: :download:`w1-sensor-suite.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-code/oo-sensor-w1/tests/sensor-w1-suite.cpp
+   :caption: :download:`/trainings/material/soup/cxx-code/oo-sensor-w1/tests/sensor-w1-suite.cpp`
    :language: c++
 
 Refactoring
