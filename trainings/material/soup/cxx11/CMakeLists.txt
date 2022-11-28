@@ -8,4 +8,6 @@ ADD_SUBDIRECTORY(050-multithreading)
 ADD_SUBDIRECTORY(040-bind-function)
 ADD_SUBDIRECTORY(100-miscellaneous)
 
+ADD_SUBDIRECTORY(filesystem)
+
 ADD_SUBDIRECTORY(exercises)
