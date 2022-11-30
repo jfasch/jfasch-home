@@ -92,7 +92,8 @@ Plan: Evolution
    * * 
      * 2022-11-29
      * 4
-     *
+     * * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+       * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
    * * 2022-12-07
      * 
      * 3

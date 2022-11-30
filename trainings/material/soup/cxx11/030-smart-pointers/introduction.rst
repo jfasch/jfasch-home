@@ -43,3 +43,19 @@ Recap: Constructors and Destructors
 
 .. image:: introduction-dtors.dia
 
+Links
+-----
+
+* ` Back to Basics: C++ Smart Pointers - David Olsen - CppCon 2022
+  <https://youtu.be/YokY6HzLkXs>`__
+
+  .. raw:: html
+
+     <iframe 
+         width="560" height="315" 
+	 src="https://www.youtube.com/embed/YokY6HzLkXs" 
+	 title="YouTube video player" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>

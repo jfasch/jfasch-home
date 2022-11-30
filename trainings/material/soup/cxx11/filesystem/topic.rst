@@ -23,11 +23,15 @@ Overview
    * `std::filesystem
      <https://en.cppreference.com/w/cpp/filesystem>`__
 
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/basics/shell/group`
+
 * File system related stuff (obviously)
 
   * Path manipulation
   * Directory creation and iteration |longrightarrow| even recursive!
-  * Stats linke size, access time
+  * Stats like *size*, *access time*
   * Permissions
   * Support routines like copy, remove, ...
 
@@ -136,10 +140,17 @@ Directory Creation: ``std::filesystem::create_directory()``
    :caption: :download:`code/create_directory_single.cpp`
    :language: c++
 
-Directory Creation: ``std::filesystem::create_directories()`` (``mkdir -p``)
-----------------------------------------------------------------------------
+Directory Creation: ``std::filesystem::create_directories()``
+-------------------------------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
 
 * Creating multiple level of directories in one shot
+* Like ``mkdir -p ...``
 
 .. literalinclude:: code/create_directory_multiple.cpp
    :caption: :download:`code/create_directory_multiple.cpp`
@@ -156,7 +167,12 @@ Directory Entry Classification: ``std::filesystem::is_xxx()``
    :caption: :download:`code/is_xxx.cpp`
    :language: c++
 
-From `cppreference.com <https://en.cppreference.com/w/cpp/filesystem>`__:
+.. sidebar::
+
+   **Documentation**
+
+   * `cppreference.com
+     <https://en.cppreference.com/w/cpp/filesystem>`__:
 
 .. list-table::
    :align: left
