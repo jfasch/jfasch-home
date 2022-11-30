@@ -1,7 +1,16 @@
 try:
-    pass
-finally: 
-    pass
+    open('/tmp/some-file.txt')           # <--- fails
+except OSError as e:
+    print('bad luck, OS-wise:', e)
+finally:
+    print('doing error-unrelated stuff')
+
+try:
+    open('/etc/passwd')                  # <--- succeeds
+except OSError as e:
+    print('bad luck, OS-wise:', e)
+finally:
+    print('doing error-unrelated stuff')
 
 
 # -----------------------------------------------------
@@ -57,13 +66,13 @@ finally:
 # attention: isinstance() is used to determine the match of the
 # exception clause
 
-print(issubclass(FileNotFoundError, Exception))
+# print(issubclass(FileNotFoundError, Exception))
 
-try:
-    f = open('file-that-does-not-exist.txt')
-    print(blah)
-except Exception as e:
-    print('going weird:', e)
-except FileNotFoundError as e:
-    print('bad luck:', e, type(e), e.errno)
+# try:
+#     f = open('file-that-does-not-exist.txt')
+#     print(blah)
+# except Exception as e:
+#     print('going weird:', e)
+# except FileNotFoundError as e:
+#     print('bad luck:', e, type(e), e.errno)
 

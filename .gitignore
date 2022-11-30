@@ -1,3 +1,4 @@
+#*#
 *~
 /_build
 __pycache__
@@ -8,3 +9,4 @@ __pycache__
 .ipynb_checkpoints
 /trainings/log/detail/2021-12-01/mei-super-file
 /trainings/material/soup/linux/sysprog/file-io/cp-for-the-poor
+/some-file.txt

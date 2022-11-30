@@ -29,31 +29,189 @@ Basic Exception Handling: ``try``, ``except``
 
 * Catching an exception *no matter what*
 
-.. jupyter-execute::
+  .. jupyter-execute::
+  
+     try:
+         f = open('file-that-does-not-exist.txt')
+     except:                     # <--- unconditionally catching *any* error
+         print('bad luck')
 
-   try:
-       f = open('file-that-does-not-exist.txt')
-   except:                     # <--- unconditionally catching *any* error
-       print('bad luck')
+* **Usually not a good idea**: covers other more severe errors
 
-* Usually not a good idea: covers other more severe errors
-
-.. jupyter-execute::
-
-   try:
-       print(a_variable)       # <--- raises NameError!
-       f = open('file-that-does-not-exist.txt')
-   except:
-       print('bad luck')
+  .. jupyter-execute::
+  
+     try:
+         print(a_variable)       # <--- raises NameError!
+         f = open('file-that-does-not-exist.txt')
+     except:
+         print('bad luck')
 
 * |longrightarrow| catch exception *by their type*
+
+Catching Exceptions By Type
+---------------------------
+
+* More specific reaction on errors: *by type*
+* E.g.: ``open()`` raises ``FileNotFoundError`` when ... well ... file
+  is not found
+
+  .. jupyter-execute::
+  
+     try:
+         f = open('file-that-does-not-exist.txt')
+     except FileNotFoundError:
+         print('file not there')
+
+Exception Objects
+-----------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+
+* Exceptions are objects
+* Can carry anything that's relevant to the error
+* Usually implement ``__str__()`` |longrightarrow| printable
+
+.. jupyter-execute::
+  
+   try:
+       f = open('file-that-does-not-exist.txt')
+   except FileNotFoundError as e:
+       print('file not there:', e)
+
+Catching Multiple Exception Types: Exception List
+-------------------------------------------------
+
+* Different error at the same level: ``PermissionError``
+* E.g. when a file has no read permissions
+
+  .. jupyter-execute::
+     :hide-code:
+     :hide-output:
+
+     import os
+     
+     try:
+         open('/tmp/some-file.txt', 'w')
+     except OSError: pass
+     os.chmod('/tmp/some-file.txt', 0)
+
+  .. program-output:: ls -l /tmp/some-file.txt
+
+  .. jupyter-execute::
+  
+     try:
+         open('/tmp/some-file.txt')
+     except PermissionError as e:
+         print('bad luck on permissions:', e)
+
+* Catching both ``FileNotFoundError`` and ``PermissionError`` at once
+
+  .. jupyter-execute::
+  
+     try:
+         open('/tmp/some-file.txt')
+     except (FileNotFoundError, PermissionError) as e:
+         print('either file not there, or bad luck on permissions:', e)
+
+Catching Multiple Exception Types: Multiple ``except`` Clauses
+--------------------------------------------------------------
+
+* Specific handling of a number of different exceptions
+* |longrightarrow| multiple ``except`` clauses in a row
+
+.. jupyter-execute::
+
+   try:
+       open('/tmp/some-file.txt')
+   except FileNotFoundError as e:
+       print('file not there:', e)
+   except PermissionError as e:
+       print('bad luck on permissions:', e)
+
+Catching Multiple Exception Types: By Base Type
+-----------------------------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
+
+* Both ``FileNotFoundError`` and ``PermissionError`` are
+  :doc:`subclasses
+  </trainings/material/soup/python/advanced/oo/inheritance/topic>` of
+  ``OSError``
+
+  .. line-block::
+  
+     ...
+      └── OSError
+           ├── FileNotFoundError
+           ├── ...
+           └── PermissionError
+
+* |longrightarrow| Catching ``OSError`` covers both
+
+  .. jupyter-execute::
+  
+     try:
+         open('/tmp/some-file.txt')
+     except OSError as e:            # <--- FileNotFoundError and PermissionError (and ...)
+         print('bad luck, OS-wise:', e)
+
+Important: Order Of ``except`` Clauses
+--------------------------------------
+
+* ``except`` clauses are evaluated in order of appearance
+* Traversal stops at first match
+* *The following is generally unwanted*
+* |longrightarrow| ``OSError`` swallows any ``open()`` error,
+  preventing specific handling of ``FileNotFoundError`` and
+  ``PermissionError``
+
+.. jupyter-execute::
+ 
+   try:
+       open('/tmp/some-file.txt')
+   except OSError as e:               # <--- prevents specific handling of FileNotFoundError and PermissionError!!
+       print('bad luck, OS-wise:', e)
+   except FileNotFoundError as e:
+       print('file not there:', e)
+   except PermissionError as e:
+       print('bad luck on permissions:', e)
+
+* Put more specific errors at the top
+* Base classes at the bottom
+* |longrightarrow| *sort by specificity*
+* |longrightarrow| fallback error handling
+
+.. jupyter-execute::
+ 
+   try:
+       open('/tmp/some-file.txt')
+   except FileNotFoundError as e:
+       print('file not there:', e)
+   except PermissionError as e:
+       print('bad luck on permissions:', e)
+   except OSError as e:               # <--- fallback for other types of OSError
+       print('bad luck, OS-wise:', e)
 
 Built-In Exception Hierarchy
 ----------------------------
 
 .. sidebar::
 
+   **Documentation**
+
    * :doc:`python:library/exceptions`
+
+* ``BaseException`` is the root of all exceptions
+* ``Exception`` is the root of all non-system-exiting exceptions
+* User-defined exceptions should derive from ``Exception``
 
 .. line-block::
 
@@ -125,264 +283,111 @@ Built-In Exception Hierarchy
               ├── UnicodeWarning
               └── UserWarning
 
-Exceptions Are Objects
-----------------------
+Raising Exceptions
+------------------
 
-.. sidebar::
+* ``raise`` an exception object
+* Exception is an instance of a class - the exception's class
+* No secret here: exceptions are objects like anything else
+* Can only ``raise`` subtypes of ``BaseException`` though
 
-   **See also**
+.. jupyter-execute::
+   :raises:
 
-   * :doc:`../oo/inheritance/topic`
+   def maybe_fail(answer):
+       if answer != 42:
+           raise RuntimeError('wrong answer')
+   
+   maybe_fail(666)
 
-* Start with very base class
-* An *object* of (at least) type ``BaseException``
+User-Defined Exceptions
+-----------------------
+
+* Built-in exceptions can be raised in user code
+* |longrightarrow| ``RuntimeError`` is a good candidate when defining
+  one's own exception hierarchy is too much work
+* Not always enough though
+* Convention, not law: *derive user defined exceptions from*
+  ``Exception``
+
+Minimal hierarchy - just the types are of interest ...
 
 .. jupyter-execute::
 
-   try:
-       f = open('file-that-does-not-exist.txt')
-   except BaseException as e:    # <--- base class of all exception
-       print('bad luck:', e)     # <--- bad luck, because e
-
-``class Exception``
--------------------
-
-From :doc:`python:library/exceptions`
-
-     Exception
-
-         All built-in, non-system-exiting exceptions are derived from this
-         class. All user-defined exceptions should also be derived from
-         this class.
-
-
-Pitfall: Bad ecept order jjj
-----------------------------
-
-.. sidebar::
-
-   * :doc:`../../misc/encoding/topic`
-
-* encodingerror
-* is-a exception
-
-
-
-
-
-
-Exception Hierarchy
--------------------
-
-
-
-
-Why Exceptions?
----------------
-
-.. list-table::
-   :align: left
-
-   * - **Deal:**
-
-       * Return ``< 0`` on error
-       * Caller has to check
-       * Caller has to pass error on
-
-     - .. code-block:: python
-
-          def do_much(this, that):
-              if do_this(this) < 0:
-                  return -1
-              if do_that(that) < 0:
-                  return -1
-              return 0
-          
-          def do_this(this):
-              if this == 2:
-                  return -1
-              else:
-                  return 9
-          
-          def do_that(that):
-              if that == 5:
-                  return -1
-              else:
-                  return 'blah'
-
-Exception Handling
-------------------
-
-**Plan is:** write less code |Longrightarrow| cleaner code
-
-.. code-block:: python
-
-   def do_much(this, that):
-       do_this(this)
-       do_that(that)
+   class MySubsystemError(Exception):
+       pass
    
-   try:
-       do_much(1, 5)
-   except MyError as e:
-       print('Error:', e.msg,
-             file=sys.stderr)
-
-   def do_this(this):
-       if this == 2:
-           raise MyError('this is 2')
-       else:
-           return 9
+   class ReallyBadError(MySubsystemError):
+       pass
    
-   def do_that(that):
-       if that == 5:
-           raise MyError('that is 5')
-       else:
-           return 'blah'
+   class SomeOtherError(MySubsystemError):
+       pass
 
-Exceptions
-----------
-
-**Exceptions are objects** ...
-
-* Python 2: can be anything
-* Python 3: must be *derived* from ``class BaseException``
-
-  * User defined exception *should* be derived from ``Exception``
-
-* |longrightarrow| *Object oriented programming*
-
-.. code-block:: python
-
-   class MyError(Exception):
-       def __init__(self, msg):
-           self.msg = msg
-
-Catching All Exceptions
------------------------
-
-.. code-block:: python
-
-   a_dict = {}
-   try:
-       print(a_dict['novalidkey'])
-   except:   # KeyError
-       print("d'oh!")
-
-
-* Catches *everything* no matter what
-* Hides severe programming errors
-* |longrightarrow| use only if you really know you want
-
-.. code-block:: python
-
-   try:
-       print(nonexisting_name)
-   except:   # NameError
-       print("d'oh!")
-
-Catching Exceptions By Type
----------------------------
-
-.. code-block:: python
-
-   a_dict = {}
-   try:
-       print(a_dict['novalidkey'])
-   except KeyError:
-       print("d'oh!")
-
-* ``NameError`` (and *most* others) passes through
-
-  * ... and terminate the program unless caught higher in the call
-    chain
-
-* Very specific |longrightarrow| best used punctually
-
-Catching Exceptions By Multiple Types
--------------------------------------
-
-.. code-block:: python
-
-   a_dict = {}
-   try:
-       print(a_dict[int('aaa')])
-   except (KeyError, ValueError):
-       print("d'oh!")
-
-* (Btw, the exception list is an *iterable* of *type objects*)
-* As always: reflect your intentions
-* Is the handling the same in both cases?
-
-  * I'd say very rarely
-
-Storing the Exception's Value
+User-Defined Exceptions: More
 -----------------------------
 
-* Many exceptions' only information is their type
-* |longrightarrow| "A ``KeyError`` happened!"
-* Sometimes exceptions carry additional information
+* Why not store common data (e.g. ``OSError`` has a ``errno``
+  attribute) ...
+* A possible error scheme would be as follows
 
-.. code-block:: python
-
-   class MyError(Exception):
-       def __init__(self, msg):
-           self.msg = msg
-   
-   def do_something():
-       raise MyError('it failed')
-   
-   try:
-       do_something()
-   except MyError as e:
-       print(e.msg)
-
-Order of Except-Clauses (1)
----------------------------
-
-* Except-Clauses are processed top-down
-* |longrightarrow| Very important when exceptions are related/inherited
-* ``MyError`` *is a* ``Exception``
-
-.. code-block:: python
+  .. jupyter-execute::
   
-   class MyError(Exception):
-       def __init__(self, msg):
-           self.msg = msg
+     (DefinitelyBad, EvenWorse, CollapsingTheWorld) = range(1, 4)
      
-   def do_something():
-       raise MyError('it failed')
+     class MySubsystemError(Exception):           # <--- common base class for all subsystem errors
+         def __init__(self, msg, errorcode):
+             super().__init__(msg)
+             self.errorcode = errorcode
+         def __str__(self):
+             return super().__str__() + f' ({self.errorcode})'
+     
+     class ReallyBadError(MySubsystemError):      # <--- one error
+         pass
+     
+     class SomeOtherError(MySubsystemError):      # <--- another error
+         pass
 
-Order of Except-Clauses (2)
----------------------------
+* The "subsystem" implementation
 
-.. list-table::
-   :align: left
+  .. jupyter-execute::
+  
+     def foo(answer):
+         if answer != 42:
+             raise ReallyBadError(f'Bad answer: {answer}', DefinitelyBad)
 
-   * - .. code-block:: python
-          :caption: Wrong
+* "subsystem" usage
 
-          try:
-              do_something()
-          except Exception as e:
-              print('unexpected')
-          except MyError as e:
-              print(e.msg)
-          
+  .. jupyter-execute::
+  
+     try:
+         foo(666)
+     except MySubsystemError as e:                # <--- only interested in base type
+         print(e)
 
-       * ``MyError`` is a ``Exception``
-       * |longrightarrow| eats all ``MyError`` objects
-       * |longrightarrow| ``MyError`` never caught
+``finally``: Executed Regardless Of Exception
+---------------------------------------------
 
-     - .. code-block:: python
-          :caption: Right
+* Separation of concerns
+* Error handling done in ``except`` clauses
+* Error-unrelated things done in ``finally`` block
+* Here the error case:
 
-          try:
-              do_something()
-          except MyError as e:
-              print(e.msg)
-          except Exception as e:
-              print('unexpected')
+  .. jupyter-execute::
+  
+     try:
+         open('/tmp/some-file.txt')           # <--- fails
+     except OSError as e:
+         print('bad luck, OS-wise:', e)
+     finally:
+         print('doing error-unrelated stuff')
 
-       **Rule:**
+* And the sunny case
 
-       * Catch the *most specific* exception first
+  .. jupyter-execute::
+  
+     try:
+         open('/etc/passwd')                  # <--- succeeds
+     except OSError as e:
+         print('bad luck, OS-wise:', e)
+     finally:
+         print('doing error-unrelated stuff')
