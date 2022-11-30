@@ -21,6 +21,11 @@ Python (2022-11-07 - 2022-11-10)
    * :doc:`Whole notebook <notebook>`
    * :download:`Download <notebook.ipynb>`
 
+.. toctree::
+   :hidden:
+
+   setup-py
+
 Up Front: Project Management
 ----------------------------
 
@@ -147,37 +152,22 @@ Function Arguments, Closures, Decorators
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
   (`Livehacking <livehacking/decorator.py>`__)
 
-TODO
-----
-
-* SOLID
-
-* The ``with`` Statement (Context Managers)
-* setuptools
-* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-* :doc:`/trainings/material/soup/python/misc/python_5550_xml_etree/topic`
-
 Databases
-.........
+---------
   
 * :doc:`/trainings/material/soup/python/misc/db/dbapi2`
+* :doc:`/trainings/material/soup/python/misc/db/sqlite3`
 * :doc:`/trainings/material/soup/python/exercises/csv/csv-db`
 
-
-Context Managers/``with``
-.........................
-
-Project Ideas
+Miscellaneous
 -------------
 
-* ``NoneType`` object is not **iterable** -> iteration
-* ``subprocess`` optimization
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
+* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
 
-  * Network programming (client/server)
-  * stdin, stdout to a coprocess
+Software Development
+--------------------
 
-* Sensors, configurable
-
-  * configfile: INI
-  * configfile: XML
-  * configfile: ``exec()``
+* :doc:`/trainings/material/soup/cxx-design-patterns/group`
+* :doc:`/trainings/material/soup/python/swdev/pypi`
+* :doc:`setup-py`
