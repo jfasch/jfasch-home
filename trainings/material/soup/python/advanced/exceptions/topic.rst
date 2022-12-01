@@ -29,22 +29,22 @@ Basic Exception Handling: ``try``, ``except``
 
 * Catching an exception *no matter what*
 
-  .. jupyter-execute::
-  
-     try:
-         f = open('file-that-does-not-exist.txt')
-     except:                     # <--- unconditionally catching *any* error
-         print('bad luck')
+.. jupyter-execute::
+
+   try:
+       f = open('file-that-does-not-exist.txt')
+   except:                     # <--- unconditionally catching *any* error
+       print('bad luck')
 
 * **Usually not a good idea**: covers other more severe errors
 
-  .. jupyter-execute::
-  
-     try:
-         print(a_variable)       # <--- raises NameError!
-         f = open('file-that-does-not-exist.txt')
-     except:
-         print('bad luck')
+.. jupyter-execute::
+
+   try:
+       print(a_variable)       # <--- raises NameError!
+       f = open('file-that-does-not-exist.txt')
+   except:
+       print('bad luck')
 
 * |longrightarrow| catch exception *by their type*
 
@@ -88,34 +88,34 @@ Catching Multiple Exception Types: Exception List
 * Different error at the same level: ``PermissionError``
 * E.g. when a file has no read permissions
 
-  .. jupyter-execute::
-     :hide-code:
-     :hide-output:
+.. jupyter-execute::
+   :hide-code:
+   :hide-output:
 
-     import os
-     
-     try:
-         open('/tmp/some-file.txt', 'w')
-     except OSError: pass
-     os.chmod('/tmp/some-file.txt', 0)
+   import os
+   
+   try:
+       open('/tmp/some-file.txt', 'w')
+   except OSError: pass
+   os.chmod('/tmp/some-file.txt', 0)
 
-  .. program-output:: ls -l /tmp/some-file.txt
+.. program-output:: ls -l /tmp/some-file.txt
 
-  .. jupyter-execute::
-  
-     try:
-         open('/tmp/some-file.txt')
-     except PermissionError as e:
-         print('bad luck on permissions:', e)
+.. jupyter-execute::
+
+   try:
+       open('/tmp/some-file.txt')
+   except PermissionError as e:
+       print('bad luck on permissions:', e)
 
 * Catching both ``FileNotFoundError`` and ``PermissionError`` at once
 
-  .. jupyter-execute::
-  
-     try:
-         open('/tmp/some-file.txt')
-     except (FileNotFoundError, PermissionError) as e:
-         print('either file not there, or bad luck on permissions:', e)
+.. jupyter-execute::
+
+   try:
+       open('/tmp/some-file.txt')
+   except (FileNotFoundError, PermissionError) as e:
+       print('either file not there, or bad luck on permissions:', e)
 
 Catching Multiple Exception Types: Multiple ``except`` Clauses
 --------------------------------------------------------------
@@ -146,22 +146,22 @@ Catching Multiple Exception Types: By Base Type
   </trainings/material/soup/python/advanced/oo/inheritance/topic>` of
   ``OSError``
 
-  .. line-block::
-  
-     ...
-      └── OSError
-           ├── FileNotFoundError
-           ├── ...
-           └── PermissionError
+.. code-block:: console
+
+   ...
+    └── OSError
+         ├── FileNotFoundError
+         ├── ... many more ...
+         └── PermissionError
 
 * |longrightarrow| Catching ``OSError`` covers both
 
-  .. jupyter-execute::
-  
-     try:
-         open('/tmp/some-file.txt')
-     except OSError as e:            # <--- FileNotFoundError and PermissionError (and ...)
-         print('bad luck, OS-wise:', e)
+.. jupyter-execute::
+
+   try:
+       open('/tmp/some-file.txt')
+   except OSError as e:            # <--- FileNotFoundError and PermissionError (and ...)
+       print('bad luck, OS-wise:', e)
 
 Important: Order Of ``except`` Clauses
 --------------------------------------
@@ -176,12 +176,12 @@ Important: Order Of ``except`` Clauses
 .. jupyter-execute::
  
    try:
-       open('/tmp/some-file.txt')
-   except OSError as e:               # <--- prevents specific handling of FileNotFoundError and PermissionError!!
+       open('/tmp/some-file.txt')       # <--- raises PermissionError
+   except OSError as e:                 # <--- matches PermissionError (which is-a OSError)
        print('bad luck, OS-wise:', e)
-   except FileNotFoundError as e:
+   except FileNotFoundError as e:       # <--- skipped
        print('file not there:', e)
-   except PermissionError as e:
+   except PermissionError as e:         # <--- skipped
        print('bad luck on permissions:', e)
 
 * Put more specific errors at the top
@@ -212,8 +212,9 @@ Built-In Exception Hierarchy
 * ``BaseException`` is the root of all exceptions
 * ``Exception`` is the root of all non-system-exiting exceptions
 * User-defined exceptions should derive from ``Exception``
+* (Not a hard rule though)
 
-.. line-block::
+.. code-block:: console
 
    BaseException
     ├── BaseExceptionGroup
@@ -287,7 +288,7 @@ Raising Exceptions
 ------------------
 
 * ``raise`` an exception object
-* Exception is an instance of a class - the exception's class
+* Exception object is an instance of a class - the exception's class
 * No secret here: exceptions are objects like anything else
 * Can only ``raise`` subtypes of ``BaseException`` though
 
@@ -300,6 +301,27 @@ Raising Exceptions
    
    maybe_fail(666)
 
+Re-Raising Exceptions
+---------------------
+
+* Want to only shortly intercept an exception on its way through
+* Otherwise pass it on unmodified
+* |longrightarrow| a lone ``raise`` statement
+
+.. jupyter-execute::
+   :raises:
+
+   def maybe_fail(answer):
+       if answer != 42:
+           raise RuntimeError('wrong answer')
+
+   try:
+      maybe_fail(666)
+   except RuntimeError as e:
+      print('argh!')
+      raise             # <--- re-raise same exception
+
+
 User-Defined Exceptions
 -----------------------
 
@@ -307,7 +329,7 @@ User-Defined Exceptions
 * |longrightarrow| ``RuntimeError`` is a good candidate when defining
   one's own exception hierarchy is too much work
 * Not always enough though
-* Convention, not law: *derive user defined exceptions from*
+* Convention, not law: *derive user-defined exceptions from*
   ``Exception``
 
 Minimal hierarchy - just the types are of interest ...
@@ -330,64 +352,84 @@ User-Defined Exceptions: More
   attribute) ...
 * A possible error scheme would be as follows
 
-  .. jupyter-execute::
-  
-     (DefinitelyBad, EvenWorse, CollapsingTheWorld) = range(1, 4)
-     
-     class MySubsystemError(Exception):           # <--- common base class for all subsystem errors
-         def __init__(self, msg, errorcode):
-             super().__init__(msg)
-             self.errorcode = errorcode
-         def __str__(self):
-             return super().__str__() + f' ({self.errorcode})'
-     
-     class ReallyBadError(MySubsystemError):      # <--- one error
-         pass
-     
-     class SomeOtherError(MySubsystemError):      # <--- another error
-         pass
+.. jupyter-execute::
+
+   (DefinitelyBad, EvenWorse, CollapsingTheWorld) = range(1, 4)
+   
+   class MySubsystemError(Exception):           # <--- common base class for all subsystem errors
+       def __init__(self, msg, errorcode):
+           super().__init__(msg)
+           self.errorcode = errorcode
+       def __str__(self):
+           return super().__str__() + f' ({self.errorcode})'
+   
+   class ReallyBadError(MySubsystemError):      # <--- one error
+       pass
+   
+   class SomeOtherError(MySubsystemError):      # <--- another error
+       pass
 
 * The "subsystem" implementation
 
-  .. jupyter-execute::
-  
-     def foo(answer):
-         if answer != 42:
-             raise ReallyBadError(f'Bad answer: {answer}', DefinitelyBad)
+.. jupyter-execute::
+
+   def foo(answer):
+       if answer != 42:
+           raise ReallyBadError(f'Bad answer: {answer}', DefinitelyBad)
 
 * "subsystem" usage
 
-  .. jupyter-execute::
-  
-     try:
-         foo(666)
-     except MySubsystemError as e:                # <--- only interested in base type
-         print(e)
+.. jupyter-execute::
+
+   try:
+       foo(666)
+   except MySubsystemError as e:                # <--- only interested in base type
+       print(e)
+
+``else``: Executed If No Exception
+----------------------------------
+
+* *Separation of concerns*
+* Executed if no exception was raised
+* Must come directly after ``except`` clauses (and before ``finally``
+  if any)
+* (Sadly) a syntax error if no ``except`` clause is present
+
+.. jupyter-execute::
+
+   try:
+       open('/etc/passwd')        # <--- succeeds
+   except OSError as e:           # <--- must be there (syntax error otherwise)
+       print('bad luck, OS-wise:', e)
+   else:
+       print('all well')
 
 ``finally``: Executed Regardless Of Exception
 ---------------------------------------------
 
-* Separation of concerns
-* Error handling done in ``except`` clauses
+* *Separation of concerns*
 * Error-unrelated things done in ``finally`` block
+* Executed regardless if an exception was raised or not
+* Must come last (after any ``except`` and ``else`` clauses)
 * Here the error case:
 
-  .. jupyter-execute::
-  
-     try:
-         open('/tmp/some-file.txt')           # <--- fails
-     except OSError as e:
-         print('bad luck, OS-wise:', e)
-     finally:
-         print('doing error-unrelated stuff')
+.. jupyter-execute::
+
+   try:
+       open('/tmp/some-file.txt')           # <--- fails
+   except OSError as e:
+       print('bad luck, OS-wise:', e)
+   finally:
+       print('doing error-unrelated stuff')
 
 * And the sunny case
 
-  .. jupyter-execute::
-  
-     try:
-         open('/etc/passwd')                  # <--- succeeds
-     except OSError as e:
-         print('bad luck, OS-wise:', e)
-     finally:
-         print('doing error-unrelated stuff')
+.. jupyter-execute::
+
+   try:
+       open('/etc/passwd')                  # <--- succeeds
+   except OSError as e:
+       print('bad luck, OS-wise:', e)
+   finally:
+       print('doing error-unrelated stuff')
+

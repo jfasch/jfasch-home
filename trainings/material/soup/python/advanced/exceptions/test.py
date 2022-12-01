@@ -1,16 +1,9 @@
 try:
-    open('/tmp/some-file.txt')           # <--- fails
+    open('/etc/passwd')        # <--- succeeds
 except OSError as e:
     print('bad luck, OS-wise:', e)
-finally:
-    print('doing error-unrelated stuff')
-
-try:
-    open('/etc/passwd')                  # <--- succeeds
-except OSError as e:
-    print('bad luck, OS-wise:', e)
-finally:
-    print('doing error-unrelated stuff')
+else:
+    print('all well')
 
 
 # -----------------------------------------------------
