@@ -1,3 +1,7 @@
+.. ot-topic:: python.drafts.setuptools
+   :dependencies: python.swdev.venv,
+		  python.swdev.pip
+
 .. include:: <mmlalias.txt>
 
 
@@ -6,6 +10,13 @@ Package Installation (``setuptools``)
 
 .. contents::
    :local:
+
+.. sidebar::
+   
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/swdev/pip/topic`
+   * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 
 Prerequisites
 -------------
@@ -107,7 +118,7 @@ Publishing On PyPI
 Links
 -----
 
-* ` Publishing (Perfect) Python Packages on PyPi
+* `Publishing (Perfect) Python Packages on PyPi
   <https://youtu.be/GIF3LaRqgXo>`__
 
   .. raw:: html

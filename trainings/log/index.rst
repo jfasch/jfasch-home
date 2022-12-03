@@ -36,10 +36,12 @@ Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
 
 (:doc:`Mehr ... <detail/2022-11-16/index>`)
 
-Python (2022-11-07 - 2022-11-10)
---------------------------------
+Python (2022-11-07 - 2022-11-10, 2022-12-01)
+--------------------------------------------
 
-Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+This was a heavily dynamic (and fun) course |:ok_hand:|. Some basics,
+but mostly advanced topics within a group project, in five days across
+Python.
 
 (:doc:`Mehr ... <detail/2022-11-07/index>`)
 

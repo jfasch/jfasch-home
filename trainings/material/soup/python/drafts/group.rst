@@ -15,6 +15,7 @@ Python: Draft Topics
 
    matplotlib/topic
    argparse/topic
+   setuptools/topic
 
 .. ot-graph::
    :entries: python.drafts

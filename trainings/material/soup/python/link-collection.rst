@@ -379,6 +379,20 @@ PyPI (Installing Modules that don't come as Batteries)
 
      <iframe width="560" height="315" src="https://www.youtube.com/embed/U2ZN104hIcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+* `Publishing (Perfect) Python Packages on PyPi
+  <https://youtu.be/GIF3LaRqgXo>`__
+
+  .. raw:: html
+
+     <iframe
+         width="560" height="315" 
+	 src="https://www.youtube.com/embed/GIF3LaRqgXo" 
+	 title="YouTube video player" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>
+
 * `Packaging, Deployment, PyPI, and pip
   <https://www.youtube.com/watch?v=P3dY3uDmnkU>`__: **Chris Wilcox**
   (of Google) talking about packaging and deployment, and related

@@ -96,10 +96,13 @@ Under The Hood: *Context Manager*
 * ``__exit__``: *cleans up resources*, and receives exception context
   if any
 
+  * Not called if ``__enter__`` failed
   * Exception ignored if returns ``True``
-  * Exception re-raised if returns ``False``
+  * Exception re-raised if returns ``False`` (can omit ``return
+    False`` |longrightarrow| ``return None`` implicitly)
 
 * Example: manual ``open()`` context manager
+* (attention: complete nonsense because ``open()`` does that already)
 
 .. jupyter-execute::
    :raises:
@@ -111,7 +114,7 @@ Under The Hood: *Context Manager*
        def __enter__(self):
            self.file = open(self.filename)
            return self.file      # <--- becomes 'f' in 'as f'
-       def __exit__(self, exc_type, exc_value, exc_tb):
+       def __exit__(self, exc_type, exc_value, exc_traceback):
            self.file.close()
            return False          # <--- re-raise exception
    
@@ -140,22 +143,27 @@ Example: Monkeypatching The ``print`` Function
    
        def __enter__(self):
            global print
-           self.orig_print = print
-           print = self.myprint
+           self.orig_print = print   # <--- save away original print
+           print = self.myprint      # <--- override print
    
        def __exit__(self, exc_type, exc_val, exc_tb):
            global print
-           print = self.orig_print
-	   return True
+           print = self.orig_print   # <--- restore original print
+	   return False              # <--- re-raise exception if any
    
-   print('cool')
+   print('not cool')            # <--- prints: "not cool"
    with PrefixPrint('MEGA:'):
-       print('even cooler')
+       print('super cool')      # <--- prints: "MEGA: super cool"
+   print('not cool again')      # <--- prints: "not cool again"
    
 Still Much Typing |longrightarrow| ``@contextlib.contextmanager``
 -----------------------------------------------------------------
 
 .. sidebar::
+
+   **Documentation**
+
+   * :doc:`python:library/contextlib`
 
    **See also**
 
@@ -173,12 +181,10 @@ Still Much Typing |longrightarrow| ``@contextlib.contextmanager``
    
    @contextlib.contextmanager
    def OpenForReading(filename):
-       try:
-           file = open(filename)
-           yield file            # <--- becomes 'f' in 'as f'
-	                         # <--- continuing here after 'with' block has run
-       finally:
-           file.close()
+       file = open(filename)
+       yield file            # <--- give control to with block ('file' becomes 'f' in 'as f')
+       file.close()          # <--- continuing here after 'with' block has run
+
 
 More Involved: Using Closures To Implement ``PrefixPrint``
 ----------------------------------------------------------
@@ -189,19 +195,22 @@ More Involved: Using Closures To Implement ``PrefixPrint``
    
    @contextlib.contextmanager
    def PrefixPrint(prefix):
-       def myprint(*args, **kwargs):
-           pfxargs = (prefix,)+args
-           orig_print(*pfxargs, **kwargs)
+       global print 
+       orig_print = print       # <--- save away original print
 
-       global print
-   
+       def myprint(*args, **kwargs):
+           myargs = (prefix,) + args
+           orig_print(*myargs, **kwargs)
+
+       print = myprint
+
        try:
-           orig_print = print
-           print = myprint
-           yield
+           yield                # <--- give control to user's with block
        finally:
-           print = orig_print
+           print = orig_print   # <--- restore original print
    
+   print('not cool')            # <--- prints: "not cool"
    with PrefixPrint('MEGA:'):
-       print('hallo')
+       print('super cool')      # <--- prints: "MEGA: super cool"
+   print('not cool again')      # <--- prints: "not cool again"
    

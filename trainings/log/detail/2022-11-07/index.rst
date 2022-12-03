@@ -1,5 +1,5 @@
-Python (2022-11-07 - 2022-11-10)
-================================
+Python (2022-11-07 - 2022-11-10, 2022-12-01)
+============================================
 
 .. contents::
    :local:
@@ -20,11 +20,6 @@ Python (2022-11-07 - 2022-11-10)
    * :doc:`Structure <notebook-wrapper>`
    * :doc:`Whole notebook <notebook>`
    * :download:`Download <notebook.ipynb>`
-
-.. toctree::
-   :hidden:
-
-   setup-py
 
 Up Front: Project Management
 ----------------------------
@@ -126,8 +121,6 @@ Data Structures Recap
 Miscellaneous Livehacking
 -------------------------
 
-https://github.com/jfasch/2022-11-07/tree/main/
-
 * Subprocess
 
   * `Livehacking
@@ -152,22 +145,253 @@ Function Arguments, Closures, Decorators
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
   (`Livehacking <livehacking/decorator.py>`__)
 
-Databases
----------
-  
-* :doc:`/trainings/material/soup/python/misc/db/dbapi2`
-* :doc:`/trainings/material/soup/python/misc/db/sqlite3`
-* :doc:`/trainings/material/soup/python/exercises/csv/csv-db`
-
-Miscellaneous
--------------
-
-* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
-
-Software Development
+Exceptions, ``with``
 --------------------
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/group`
-* :doc:`/trainings/material/soup/python/swdev/pypi`
-* :doc:`setup-py`
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
+  (`Livehacking
+  <https://github.com/jfasch/2022-11-07/blob/main/livehacking/exceptions.py>`__)
+* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
+  (`Livehacking
+  <https://github.com/jfasch/2022-11-07/blob/main/livehacking/context-mgr.py>`__)
+
+Package Management
+------------------
+
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+* :doc:`/trainings/material/soup/python/drafts/setuptools/topic`
+
+Videos
+------
+
+Beginner
+........
+
+* `Python Quick Tip: F-Strings - How to Use Them and Advanced String
+  Formatting <https://www.youtube.com/watch?v=nghuHvKLhJA>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/nghuHvKLhJA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
+  <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/W8KRzm-HUcc" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 5: Dictionaries - Working with
+  Key-Value Pairs <https://www.youtube.com/watch?v=daefaLgNkw0>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/daefaLgNkw0" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 7: Loops and Iterations - For/While
+  Loops <https://www.youtube.com/watch?v=6iF8Xb7Z3wQ>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/6iF8Xb7Z3wQ" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 8: Functions
+  <https://www.youtube.com/watch?v=9Os0o3wzS_I>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/9Os0o3wzS_I" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `10 Python Tips and Tricks For Writing Better Code
+  <https://www.youtube.com/watch?v=C-gEQdGVXbk>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/C-gEQdGVXbk" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Using Try/Except Blocks for Error Handling
+  <https://www.youtube.com/watch?v=NIWwJbo-9_8>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/NIWwJbo-9_8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Advanced
+........
+
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__, by **Raymond
+  Hettinger**
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/OSGv2VnC0go" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Decorators - Dynamically Alter The Functionality
+  Of Your Functions <https://www.youtube.com/watch?v=FsAPt_9Bf3U>`__,
+  by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/FsAPt_9Bf3U" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Publishing (Perfect) Python Packages on PyPi
+  <https://youtu.be/GIF3LaRqgXo>`__
+
+  .. raw:: html
+
+     <iframe
+         width="560" height="315" 
+	 src="https://www.youtube.com/embed/GIF3LaRqgXo" 
+	 title="YouTube video player" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+     </iframe>
+
+Fun
+...
+
+* `Built in Super Heroes
+  <https://www.youtube.com/watch?v=lyDLAutA88s>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ in an entertaining keynote to the
+  "PyData Chicago 2016" conference. He has a number of very good and
+  entertaining (and very advanced) videos. You have to spend an entire
+  evening with him though.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/lyDLAutA88s" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Iterations of Evolution: The Unauthorized Biography of the For-Loop
+  <https://www.youtube.com/watch?v=2AXuhgid7E4>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ giving lessons in history. How ``for``
+  evolved from the beginning until where we are today.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2AXuhgid7E4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `The Fun of Reinvention - David Beazley - Pycon Israel 2017
+  <https://www.youtube.com/watch?v=5nXmq1PsoJ0&t=1263s>`__. `David
+  Beazley <https://www.dabeaz.com/>`__ with an entertaining keynote
+  about typing, type annotations, metaprogramming, contracts.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/5nXmq1PsoJ0" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Keynote - David Beazley
+  <https://www.youtube.com/watch?v=VUT386_GKI8>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ live
+  coding a Web Assembly interpreter. PyCon India 2019.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/VUT386_GKI8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `David Beazley: Generators: The Final Frontier - PyCon 2014
+  <https://www.youtube.com/watch?v=D1twn9kLmYg>`__: `David Beazley
+  <https://www.dabeaz.com/>`__ again a bit (a whopping four hours)
+  more precise on that topic.
+
+  .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+	     src="https://www.youtube.com/embed/D1twn9kLmYg" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
