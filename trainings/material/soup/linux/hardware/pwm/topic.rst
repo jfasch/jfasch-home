@@ -125,26 +125,39 @@ Reboot. Now we see a filesystem representation of the I2C bus in
 used internally for the camera interface, and which is not exported to
 userspace).
 
-.. code-block:: console
-
-   $ ls -l /dev/i2c*
-   crw-rw---- 1 root i2c 89, 1 Aug 10 09:13 /dev/i2c-1
-
 We are now in a position to probe that bus for devices, using the
-``i2c-detect`` program.
+``i2c-detect`` program. 
 
-.. code-block:: console
+* First, make sure that the ``i2c-dev`` module is loaded (that module
+  exposes I2C buses to userspace, which is where ``i2cdetect``
+  operates).
 
-   $ i2cdetect -y 1
-        0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-   00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
-   10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-   20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-   30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-   40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-   50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-   60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
-   70: 70 -- -- -- -- -- -- --                         
+  .. code-block:: console
+     :caption: as root ...
+  
+     # modprobe i2c-dev
+
+* See the ``i2c-1`` charactre device appear
+
+ .. code-block:: console
+ 
+    $ ls -l /dev/i2c*
+    crw-rw---- 1 root i2c 89, 1 Aug 10 09:13 /dev/i2c-1
+
+* Probe the bus
+
+ .. code-block:: console
+ 
+    $ i2cdetect -y 1
+         0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+    00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+    10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+    20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+    30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+    40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+    50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+    60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+    70: 70 -- -- -- -- -- -- --                         
 
 The addresses are in hexadecimal notation. We see address ``0x40``
 which is what we expect from the wiring. The PCA has a second address,

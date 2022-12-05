@@ -22,3 +22,6 @@ ADD_SUBDIRECTORY(design-patterns-observer)
 ADD_SUBDIRECTORY(heating-screenplay)
 
 ADD_SUBDIRECTORY(oo-sensor-w1)
+
+
+ADD_SUBDIRECTORY(oo-display-core)

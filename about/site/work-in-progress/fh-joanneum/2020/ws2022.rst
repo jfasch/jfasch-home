@@ -97,7 +97,7 @@ Plan: Evolution
    * * 2022-12-07
      * 
      * 3
-     *
+     * * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
    * * 
      * 2022-12-13
      * 4
