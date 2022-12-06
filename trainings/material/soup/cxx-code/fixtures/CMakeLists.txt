@@ -2,8 +2,10 @@ ADD_LIBRARY(
   cxx-exercises-fixtures
 
   fixture-tmpdir.h
+  fixture-tmpdir.cpp
 
-  dummy.c     # must have at least one compliation unit in a library
+  fixture-tmpdir-cwd.h
+  fixture-tmpdir-cwd.cpp
 )
 
 TARGET_INCLUDE_DIRECTORIES(
@@ -12,3 +14,9 @@ TARGET_INCLUDE_DIRECTORIES(
   PUBLIC
   .
 )
+
+TARGET_LINK_LIBRARIES(
+  cxx-exercises-fixtures
+
+  gtest
+)  

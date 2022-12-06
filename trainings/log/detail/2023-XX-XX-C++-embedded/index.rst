@@ -58,7 +58,7 @@ Standard Template Library
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find`
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find_if`
 
-* Sorted Array Algirithms
+* Sorted Array Algorithms
 
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
@@ -106,3 +106,31 @@ C++11 Outlook
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
+
+Teams Meeting 2022-12-06
+------------------------
+
+* C++11 intro screenplay verlinken
+* OO Intro (Point etc.)
+* HAL/C -> C++ wrappers
+
+  * Timer management in Linux: Signals vs. Thread
+  * GPIO in Linux
+  * -> Software PWM (as opposed to `hardware PWM
+    </trainings/material/soup/linux/hardware/pwm/topic>`)
+
+* Work environment: WSL links
+
+* Punkte von Stefan
+
+  * C++ >= 11
+  * array !!!!!
+  * optimierungskapitel?
+  * new operator overload?
+  * smart ptr
+  * Global objects initialization order
+
+* Zeitpunkt
+
+  * März
+  * Präsent
