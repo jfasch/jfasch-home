@@ -18,7 +18,7 @@ int main(int argc, char** argv)
     }
     
     std::string basedir = argv[1];
-    uint64_t addr = std::stoul(argv[2]);
+    uint64_t addr = std::stoul(argv[2], 0, 16);
     int interval = std::stoi(argv[3]);
 
     int niterations = -1;
@@ -29,6 +29,10 @@ int main(int argc, char** argv)
     W1SensorFactory factory(basedir);
 
     W1Sensor* sensor = factory.find_by_address(addr);
+    if (sensor == nullptr) {
+        std::cerr << "No Onewire sensor at address 0x" << std::hex << addr << std::endl;
+        return 1;
+    }
 
     int iteration = 0;
     while (niterations == -1 || iteration++ < niterations) {
@@ -38,6 +42,8 @@ int main(int argc, char** argv)
         if (time_remaining != 0)
             std::cerr << "did not sleep " << interval << " seconds, " << time_remaining << " remaining" << std::endl;
     }
+
+    delete sensor;
 
     return 0;
 }
