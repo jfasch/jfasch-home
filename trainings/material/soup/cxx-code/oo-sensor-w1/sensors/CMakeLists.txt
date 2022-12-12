@@ -3,9 +3,6 @@ ADD_LIBRARY(
 
   sensor-w1.h
   sensor-w1.cpp
-
-  sensor-w1-factory.h
-  sensor-w1-factory.cpp
 )  
 
 TARGET_INCLUDE_DIRECTORIES(

@@ -1,5 +1,5 @@
-SSH: Secure Shell Remote Login
-==============================
+SSH: Secure Shell
+=================
 
 .. ot-group:: linux.ssh
 

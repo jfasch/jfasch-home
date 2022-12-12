@@ -32,33 +32,20 @@ can log in from our PCs.
 Please check that connecting to some foreign untrusted LAN is
 permitted IT-wise.
 
-More Detailed Topics
---------------------
+Agenda
+------
 
-Those will make it into the agenda below.
+Day 1: Overview
+...............
 
-* GPIO overview: ``libgpiod`` (documentation `here
-  <https://libgpiod.readthedocs.io/en/latest/index.html>`__)
-* I2C by example
+The Shell
+`````````
 
-  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
-  * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
-
-* Toolchain and cross compiling
-
-  * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
-  * :doc:`/blog/2022/09/cross-raspi`
-
-Agenda (To Be Reworked)
------------------------
-
-Tag 1: Überblick
-................
-
-Ziel ist es, mit Hilfe der Shell/Commandline einen Überlick über die
-Systemkonzepte zu vermitteln, ohne noch einen Strich zu
-programmieren. Viele beziehungsweise alle dieser Konzepte werden in
-den folgenden Kurstagen programmatisch behaldelt werden.
+Using the Shell's commandline, an overview is given about Unix system
+concepts like *processes*, *files*, and *permissions*. Many if not all
+of these concepts will be viewed programmatically in the remainder of
+the course. It will be no surprise, for example, that communication
+with hardware has to do with file I/O.
 
 * :doc:`Konzepte und Terminologie
   </trainings/material/soup/linux/basics/intro/group>`
@@ -66,65 +53,103 @@ den folgenden Kurstagen programmatisch behaldelt werden.
   (auszugsweise)
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
 * :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+Secure Shell (SSH)
+``````````````````
+
 * :doc:`/trainings/material/soup/linux/ssh/group`
 
-Tag 2: (File) I/O und Prozesse
-..............................
+Cross Development
+`````````````````
 
-Files und Prozesse sind die Eckpfeiler des UNIX-Designs. Sehr stabile
-Konzepte, die seit ihrer "Erfindung" in den Siebzigerjahren des
-vorigen Jahrtausends unverändert geblieben (ergo von MacOS, Linux,
-Android, und anderen UNIXen für gut befunden wurden). Das Design wurde
-in Linux unverändert erweitert, und vieles aus hardwarenaher
-Programmierung (siehe unten) baut darauf auf.
+An overview of the *toolchain* is given - a collection of tools
+(compiler, linker, ...) to transform C/C++ source code into running
+executables.
 
-* Prozesse (Kapitel "Processes" aus :download:`Systemnahe
-  Programmierung (PDF)
+This is followed by an introduction to `CMake <cmake.org>`_, a higher
+level build tool that solves many problems that both hand-written
+``Makefile`` hacks and IDE-clickabout builds have.
+
+Last, a bit more involved, we see how cross development is
+done. Together with :doc:`/trainings/material/soup/linux/ssh/group`,
+this enables us to build software for devices that show a different
+architecture that the development machine.
+
+* From :doc:`/trainings/material/soup/linux/toolchain/group`
+
+  * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
+  * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
+  * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
+  * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
+  * :doc:`/trainings/material/soup/linux/toolchain/cross/group`
+  * :doc:`/trainings/material/soup/linux/toolchain/cmake/stub-cmake-course`
+  * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
+  * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
+  * :doc:`/trainings/material/soup/linux/toolchain/exercises/group`
+
+* Bringing a :doc:`self-made cross toolchain for the Raspberry
+  </blog/2022/09/cross-raspi>`
+
+Day 2: File I/O and Processes
+.............................
+
+Files and processes are the cornerstones of the Unix design - concepts
+that have proven very stable since their invention in the seventies of
+the past century. They have driven the evolution of Linux (and MacOS
+and Android, for what it's worth), and many of Linux's hardware
+related capabilities build upon those.
+
+* Processes (chapter "Processes" from :download:`Linux Systems
+  Programming (PDF) (download)
   </trainings/material/pdf/020-linux-sysprog--en.pdf>`)
 * System Calls, Blocking, und File I/O
 
   * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`
   * :doc:`/trainings/material/soup/linux/sysprog/file-io/group`
 
-Tag 3: Netzwerkprogrammierung (inklusive CAN-Bus)
-.................................................
+Day 3: Network Programming (including CAN-Bus)
+..............................................
 
 Siehe :doc:`/trainings/repertoire/sysprog/network`
 
-* TCP/IP Networking: die vorhandenen Netzwerkschnittstellen (Ethernet,
-  Wifi, ...) nutzen
-* CAN-Bus (broadcast-only, aber eben Netzerk)
-* Fortgeschrittene Paradigmen wie Event-Driven Programming
+* TCP/IP Networking
+* :doc:`/trainings/material/soup/linux/hardware/can/group`
+* Advanced topics: event driven programming
 
-Tag 4: Multithreading, und Realtime
+Day 4: Multithreading, and Realtime
 ...................................
 
-Siehe :doc:`/trainings/repertoire/sysprog/multithreading`
+From :doc:`/trainings/repertoire/sysprog/multithreading`:
 
-* Die Gefahren (Race Conditions) und deren Vermeidung (Mutexes)
-* Kommunikationsmechanismen
+* Race Conditions, and prevention thereof (mutexes)
+* Communication mechanisms (condition variable)
 * Atomics
 * Realtime
 
 .. note::
 
-   Unter Umständen kann in diesem Zusammenhang auch auf die relevanten
-   Neuerungen in C++ eingegangen werden
+   Maybe we should have a look at how threading is done in :doc:`C++
+   11 </trainings/material/soup/cxx11/group>` ...
 
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+   From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
 
-     * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-     * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
-     * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
-     * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
-     * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
-     * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
 
-Tag 5: Verschiedenes aus der Hardware-Ecke
-..........................................
+Day 5: Miscellaneous Hardware Topics
+....................................
 
-* Eine Auswahl aus
-  :doc:`/trainings/material/soup/linux/hardware/group`
-* USB aus dem Userspace
-* Serielle Schnittstellen (UART): Einführung in `termios
+* Serial interfaces (UART): introduction in `termios
   <https://www.man7.org/linux/man-pages/man3/termios.3.html>`__
+* GPIO overview: ``libgpiod`` (documentation `here
+  <https://libgpiod.readthedocs.io/en/latest/index.html>`__)
+* From :doc:`/trainings/material/soup/linux/hardware/group`
+
+  * :doc:`/trainings/material/soup/linux/hardware/can/group`
+  * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
+  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
+  * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`

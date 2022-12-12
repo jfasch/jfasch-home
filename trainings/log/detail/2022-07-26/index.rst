@@ -32,7 +32,7 @@ I suggest you use the :doc:`Windows Subsystem For Linux (WSL2)
 </trainings/material/soup/linux/basics/intro/wsl>` (Microsoft
 documentation `here
 <https://docs.microsoft.com/en-us/windows/wsl/>`__). This sets up a
-virtualized Ubuntu insode Windows, together with all interoperability
+virtualized Ubuntu inside Windows, together with all interoperability
 wazoo.
 
 It is also possible to setup a Linux-like environment on native

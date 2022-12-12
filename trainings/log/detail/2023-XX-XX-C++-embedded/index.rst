@@ -10,6 +10,7 @@ C++ For Embedded Developers (Beginning of 2023)
 .. sidebar::
 
    * 3 days
+   * Course project on Github: https://github.com/jfasch/2023-03-07
 
 Goal
 ----
@@ -30,10 +31,69 @@ exercises.
   </trainings/repertoire/c-like/cxx11>`, the language has undergone a
   major revolution. An overview is given.
 
+Work Environment
+----------------
+
+Preferred: Ubuntu under Windows (WSL)
+.....................................
+
+I suggest you use the :doc:`Windows Subsystem For Linux (WSL2)
+</trainings/material/soup/linux/basics/intro/wsl>` (Microsoft
+documentation `here
+<https://docs.microsoft.com/en-us/windows/wsl/>`__). This sets up a
+virtualized Ubuntu inside Windows, together with all interoperability
+wazoo.
+
+When installed, open a Ubuntu terminal, and install the software that
+is required for this training.
+
+.. code-block::
+
+   $ sudo apt install git build-essential cmake libgtest-dev libgmock-dev
+
+Unsupported Environments
+........................
+
+It is also possible to setup a Linux-like environment on native
+Windows, using the following emulation layers:
+
+* `Cygwin <https://www.cygwin.com/>`__
+* `MinGW <https://www.mingw-w64.org/>`__ (known to have problems when
+  it comes to threading)
+
+You may use these, but be warned that there might not exist enough
+trainer-side knowledge to help you out f anything goes wrong.
+
+Skeleton Project Setup
+......................
+
+Follow the instructions in the `course project README
+<https://github.com/jfasch/2023-03-07>`__ to setup the initial version
+of the course project.
+
+C++ Overview Presentation
+-------------------------
+
+Live-hacked :doc:`overview of C++
+</trainings/material/soup/cxx11/010-introduction/overview-livehacking>`,
+with a bias on features from C++11 onwards.
+
 Object Oriented Programming
 ---------------------------
 
-* From :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+* From
+  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
+
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+
+* From
+  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
 
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`
@@ -43,9 +103,11 @@ Object Oriented Programming
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
-Standard Template Library
--------------------------
+C++ Standard Library
+--------------------
 
+* :doc:`Managed Pointers
+  </trainings/material/soup/cxx11/030-smart-pointers/group>`
 * Pointer Arithmetic Recap:
   :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
 * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
@@ -76,10 +138,20 @@ Standard Template Library
   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/multimap`
 
+Miscellaneous Topics
+--------------------
+
+* Optimization (optional)
+
+  * :doc:`/trainings/material/soup/c/100-performance/010-introduction/topic`
+  * :doc:`/trainings/material/soup/c/100-performance/020-computebound/topic`
+  * :doc:`/trainings/material/soup/c/100-performance/030-memory/topic`
+
 Exercise Series
 ---------------
 
-Exercise series ideas ...
+Based upon an object oriented encapsulation for OS primitives (timers
+and GPIOs, mainly),
 
 * Sensors
 
@@ -93,44 +165,12 @@ Exercise series ideas ...
   * Another *interface* in the system
   * Display measurement values
   * Concrete implementation: a software PWM using a timer and a GPIO
+    (as opposed to :doc:`hardware PWM
+    </trainings/material/soup/linux/hardware/pwm/topic>`
 
-C++11 Outlook
--------------
+To Be Done
+----------
 
-* Language features (from
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/group`)
-
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for-map`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
-
-Teams Meeting 2022-12-06
-------------------------
-
-* C++11 intro screenplay verlinken
-* OO Intro (Point etc.)
-* HAL/C -> C++ wrappers
-
-  * Timer management in Linux: Signals vs. Thread
-  * GPIO in Linux
-  * -> Software PWM (as opposed to `hardware PWM
-    </trainings/material/soup/linux/hardware/pwm/topic>`)
-
-* Work environment: WSL links
-
-* Punkte von Stefan
-
-  * C++ >= 11
-  * array !!!!!
-  * optimierungskapitel?
-  * new operator overload?
-  * smart ptr
-  * Global objects initialization order
-
-* Zeitpunkt
-
-  * März
-  * Präsent
+* ``std::array``
+* Overloading the ``new`` operator
+* Global objects initialization order

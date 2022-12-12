@@ -3,6 +3,7 @@
 #include <gtest/gtest.h>
 #include <filesystem>
 #include <fstream>
+#include <iostream>
 
 TEST_F(filesystem_suite, directory_iterator)
 {
