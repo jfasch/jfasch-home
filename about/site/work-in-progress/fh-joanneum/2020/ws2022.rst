@@ -126,15 +126,10 @@ Plan: Evolution
 	 * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
 	 * Use case: detect W1 sensor *by address*
 
-       * C++11 maybe
-
-         * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
-         * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
-
    * * 
      * 2022-12-13
      * 4
-     *
+     * :doc:`/trainings/material/soup/cxx-exercises/oo/sensor-w1-factory`
    * * 2022-12-21
      * 
      * 3

@@ -41,7 +41,7 @@ Test Monolithic Implementation
 
   .. code-block:: console
 
-     $ scp -P 2020 /tmp/FH-ECE20-patterns-pi/bin-trainee/onewire-temperature firstname.lastname.faschingbauer@jfasch.bounceme.net:
+     $ scp -P 2020 /tmp/FH-ECE20-patterns-pi/bin-trainee/onewire-temperature firstname.lastname@jfasch.bounceme.net:
 
 * Test it
 
