@@ -2,8 +2,11 @@ ADD_EXECUTABLE(
   cxx-exercises-shapes--suite
 
   point-suite.cpp
+
   circle-suite.cpp
   square-suite.cpp
+
+  shape-suite.cpp
 )
 
 TARGET_LINK_LIBRARIES(

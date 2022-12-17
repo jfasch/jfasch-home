@@ -34,7 +34,7 @@ TEST(square_suite, area)
 
 TEST(square_suite, area_const)
 {
-    Square s(Point(1,2), 5);
+    const Square s(Point(1,2), 5);
 
     double area = s.area();
 
