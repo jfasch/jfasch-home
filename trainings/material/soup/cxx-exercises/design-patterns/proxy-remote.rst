@@ -1,5 +1,5 @@
 .. ot-exercise:: cxx.exercises.design_patterns.proxy_remote
-   :dependencies: cxx.exercises.oo.sensor_interface,
+   :dependencies: cxx.exercises.oo_sensors.sensor_interface,
 		  cxx.exercises.design_patterns.proxy_round,
 		  cxx.exercises.design_patterns.adapter,
 		  cxx_design_patterns.proxy,

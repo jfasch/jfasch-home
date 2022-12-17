@@ -1,5 +1,5 @@
-.. ot-exercise:: cxx.exercises.oo.sensor_w1
-   :dependencies: cxx.exercises.oo.sensor_interface
+.. ot-exercise:: cxx.exercises.oo_sensors.sensor_w1
+   :dependencies: cxx.exercises.oo_sensors.sensor_interface
 
 Exercise: OneWire Sensor Class
 ==============================

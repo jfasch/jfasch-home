@@ -13,9 +13,9 @@ Exercises
 .. toctree::
    :maxdepth: 1
 
-   oo/group
-   design-patterns/group 
-   fh-sensor-oo-first-try/group  
+   oo-sensors/group
+   design-patterns/group
+   fh-sensor-oo-first-try/group
 
 Dependencies
 ------------

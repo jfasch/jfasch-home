@@ -1,6 +1,6 @@
 .. ot-exercise:: cxx.exercises.design_patterns.decorator
    :dependencies: cxx_design_patterns.decorator,
-		  cxx.exercises.oo.sensor_interface
+		  cxx.exercises.oo_sensors.sensor_interface
 
 Exercise: Decorator
 ===================

@@ -24,5 +24,7 @@ ADD_SUBDIRECTORY(heating-screenplay)
 ADD_SUBDIRECTORY(oo-sensor-w1)
 ADD_SUBDIRECTORY(oo-sensor-w1-factory)
 
-
 ADD_SUBDIRECTORY(oo-display-core)
+
+
+ADD_SUBDIRECTORY(oo-shapes)
