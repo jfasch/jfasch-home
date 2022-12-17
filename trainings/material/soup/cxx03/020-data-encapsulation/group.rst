@@ -24,13 +24,7 @@ Topics
 Exercises
 ---------
 
-.. toctree::
-   :maxdepth: 1
-
-   exercises-fh/exercise-FH-sensor-oo
-   exercises-fh/exercise-FH-sensor-oo-loop-function
-   exercises-fh/exercise-FH-sensor-oo-no-polymorphism
-   exercises-fh/exercise-FH-sensor-oo-random-sensor
+* :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/group`
 
 Group Description
 -----------------

@@ -14,7 +14,8 @@ Exercises
    :maxdepth: 1
 
    oo/group
-   design-patterns/group
+   design-patterns/group 
+   fh-sensor-oo-first-try/group  
 
 Dependencies
 ------------

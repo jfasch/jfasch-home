@@ -1,2 +1,1 @@
 ADD_SUBDIRECTORY(code)
-ADD_SUBDIRECTORY(exercises-fh)

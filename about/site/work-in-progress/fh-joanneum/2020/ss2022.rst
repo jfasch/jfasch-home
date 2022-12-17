@@ -187,9 +187,9 @@ Block 3: C++
      * 2022-06-07
      * 2022-06-08
      * 3
-     * * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/exercises-fh/exercise-FH-sensor-oo`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/exercises-fh/exercise-FH-sensor-oo-loop-function`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/exercises-fh/exercise-FH-sensor-oo-no-polymorphism`
+     * * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo`
+       * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-loop-function`
+       * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-no-polymorphism`
    * * 2022-06-09
      * 
      * 
@@ -204,7 +204,7 @@ Block 3: C++
      * 2022-06-09
      * 2022-06-10
      * 3
-     * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/exercises-fh/exercise-FH-sensor-oo-random-sensor`
+     * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-random-sensor`
    * * 2022-06-21
      * 
      * 
