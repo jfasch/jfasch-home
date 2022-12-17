@@ -13,6 +13,7 @@ Exercises
 .. toctree::
    :maxdepth: 1
 
+   fh-oo-lab-exam/oo
    oo-sensors/group
    design-patterns/group
    fh-sensor-oo-first-try/group
