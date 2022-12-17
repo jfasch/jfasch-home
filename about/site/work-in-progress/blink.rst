@@ -1,17 +1,26 @@
-Blink
-=====
+Nonsensical Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry Pi of Course)
+==============================================================================================
 
+Focus of another pointless project of mine is to blink a configurable
+set of programmable patterns on a number of LEDs. This might sound
+like "hey, you are reinventing the wheel". I admit I do - I am a
+notorious reinventer, and it is fun.
 
-* `Libgpiod V2: New Major Release with a Ton of New Features - Bartosz
-  Golaszewski <https://www.youtube.com/watch?v=6fxcDDLII6Y>`__
+Lets reinvent LED blinking in a live-hacking session, and look into a
+number of topics as we go:
 
-  .. raw:: html
-  
-     <iframe 
-         width="560" height="315" 
-         src="https://www.youtube.com/embed/6fxcDDLII6Y" 
-         title="YouTube video player" 
-         frameborder="0" 
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-         allowfullscreen>
-     </iframe>
+* Python is a programming language that most of you know. It is simple
+  and expressive, thus *fun*.
+* Python's ``asyncio`` is a parallel programming technique, similar to
+  multithreading in its usage, but fundamentally different in every
+  other respect. At its core, it maps multiple parallel control flows
+  onto one single event loop. Given that timers are events, this gives
+  us the possiblity to run multiple LED blinking programs in one
+  single thread - saving all the context switching and scheduling
+  overhead that multithreaded program usually have. Smoother blinking
+  patterns!
+* Ah, blinking programs. Know what Python decorators are? Closures?
+  We'll twist our brains to create a ``@program`` decorator,
+  implemented as a triple-closure, and use that to write a number of
+  amazingly simple blinking programs.
+* Last not least, ``libgpiod``. The way to go for GPIO on Linux.

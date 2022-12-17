@@ -24,7 +24,7 @@ static int /*bool: EOF detected*/ consume_fd(int fd, const char* msg)
     if (nread == 0 /*EOF*/)
         return 1;
 
-    printf("%s: consumed %ld bytes\n", msg, nread);
+    printf("%s: consumed %ld bytes\n", msg, (long)nread);
     return 0;
 }
 

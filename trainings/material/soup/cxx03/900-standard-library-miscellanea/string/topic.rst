@@ -51,12 +51,26 @@ Conversion To String
 Searching
 ---------
 
+.. sidebar::
+
+   **Documentation**
+
+   * `std::string::find()
+     <https://en.cppreference.com/w/cpp/string/basic_string/find>`__
+
 .. literalinclude:: code/find.cpp
    :caption: :download:`code/find.cpp`
    :language: c++
 
 Substrings
 ----------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `std::string::substr()
+     <https://en.cppreference.com/w/cpp/string/basic_string/substr>`__
 
 .. literalinclude:: code/substr.cpp
    :caption: :download:`code/substr.cpp`

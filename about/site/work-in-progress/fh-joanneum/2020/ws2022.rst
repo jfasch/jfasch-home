@@ -129,7 +129,13 @@ Plan: Evolution
    * * 
      * 2022-12-13
      * 4
-     * :doc:`/trainings/material/soup/cxx-exercises/oo/sensor-w1-factory`
+     * **Exercise**
+
+       * Github project: https://github.com/jfasch/FH-ECE20-final
+       * :doc:`/trainings/material/soup/cxx-exercises/oo/sensor-w1-factory`
+       * Pi Toolchain file:
+         :download:`/about/site/work-in-progress/fh-joanneum/2020/ws2022/armv8-rpi4-linux-gnueabihf.cmake`
+
    * * 2022-12-21
      * 
      * 3

@@ -1,6 +1,9 @@
 .. ot-exercise:: cxx.exercises.oo.sensor_w1_factory
    :dependencies: cxx.exercises.oo.sensor_w1
 
+.. include:: <mmlalias.txt>
+
+
 Exercise: OneWire Sensor Factory
 ================================
 
@@ -117,12 +120,6 @@ a ``W1Sensor`` object.
 
 ``notfound``
 ````````````
-
-.. sidebar::
-
-   **See also**
-
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic``
 
 One possible error: *address not found*. Lacking any knowledge of
 :doc:`C++ smart pointers

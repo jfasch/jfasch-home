@@ -75,10 +75,45 @@ dependencies can be taken from the Docker file for your OS (see `here
        python3-dev autoconf automake libtool libtool-bin gawk wget bzip2 xz-utils unzip \
        patch libstdc++6 rsync git meson ninja-build
 
-Download, Build, Install
-........................
+Installing From Cloned Git Repository
+.....................................
+
+.. note::
+
+   At one point, ``ct-ng`` (as installed from the release tarball)
+   failed to build toolchains because it tried to download a version
+   of ``zlib`` that did not exist anymore:
+
+   .. code-block:: console
+
+      [EXTRA]    Retrieving 'zlib-1.2.12'
+      [ERROR]    zlib: download failed
+
+   The issue had already been resolved in the upstream repository, but
+   no tarball release had been made. So building ``crosstool-ng`` from
+   source is in order.
+
+The steps are basically the same as installing from the release
+tarball, except that some massaging (yes, autotools) in the source
+directory is necessary prior to building.
+
+Clone repository, and massage source tree:
+
+.. code-block:: console
+
+   me@host$ git clone https://github.com/crosstool-ng/crosstool-ng
+   me@host$ cd crosstool-ng/
+   me@host$ sh ./bootstrap
+   me@host$ ./configure --prefix=/home/jfasch/cross
+   me@host$ make
+   me@host$ make install
+
+Installing From Release Tarball
+...............................
  
-I chose to install from a release tarball (`here
+As complained above, releases might be out of date. Anyway, the
+procedure is slightly simpler that building from the upstream repo
+source. Download latest release `here
 <https://crosstool-ng.github.io/download/>`__); current version as of
 this writing is ``1.25.0``.
 
@@ -90,6 +125,9 @@ this writing is ``1.25.0``.
    me@host$ ./configure --prefix=/home/jfasch/cross
    me@host$ make
    me@host$ make install
+
+``PATH``, And Basic Test
+........................
 
 Add ``ct-ng`` to ``PATH``,
 
@@ -146,11 +184,17 @@ create a ``.config`` file for that,
 Important: ``glibc`` Version
 ............................
 
+The Error
+`````````
+
 Executables built by your toolchain won't work if the toolchain links
 against a C library whose version is higher than what is present on
 the target. Continuing with the above default configuration, and just
 saying ``ct-ng build`` will likely result in an error
-[#glibc-default-version]_:
+[#glibc-default-version]_.
+
+A minimal ``int main() { return 0; }`` program, compiled for the
+target, will complain:
 
 .. code-block:: console
 
@@ -182,7 +226,10 @@ Simply *invoke* (sic!) the library,
    GNU C Library (Debian GLIBC 2.28-10+rpt2+rpi1+deb10u1) stable release version 2.28.
    ...
 
-So, it's ``2.28``. Tune configuration,
+The Fix
+```````
+
+So, it's ``2.28``. Back on the *host* again, tune configuration:
 
 .. code-block:: console
 
@@ -197,6 +244,40 @@ Minor quirk: version ``2.28`` does not build without warnings, so one
 has to disable ``-Werror`` during its build,
 
 .. image:: werror.png
+   :scale: 50%
+
+Important: GCC Version
+......................
+
+Not only is the Pi's ``glibc`` version rather outdated; GCC is also a
+bit behind - it's ``8.3.0``.
+
+The Error
+`````````
+
+Using the latest supported GCC version (``12.2.0`` as of this writing)
+as a cross compiler, A less trivial C++ program fails to start:
+
+.. code-block:: console
+
+   ./a.out: /lib/arm-linux-gnueabihf/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by ./a.out)
+   ./a.out: /lib/arm-linux-gnueabihf/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by ./a.out)
+
+It turns out that the program makes use of the ``std::filesystem``
+library that has been added in C++17. Apparently that library uses
+some more modern functionality from GCC's C++ support library,
+``libgcc_s.so.1``. That functionality is obviously not contained in
+``libgcc_s.so.1`` as of GCC ``8.3.0``
+
+The Fix
+```````
+
+Downgrade the toolchain's GCC to something like ``8.3.0`` (``8.5.0``
+is just a minor release, so it should work).
+
+In ``C compiler -> Version of gcc``, choose ``8.5.0``:
+
+.. image:: gcc-version.png
    :scale: 50%
 
 Toolchain Build/Install
@@ -339,4 +420,3 @@ Creating such an SDK is the job of higher level tools like `Yocto
                             GNU C Library version ``2.34``. Your
                             situation might be different, the
                             principle remains the same.
-
