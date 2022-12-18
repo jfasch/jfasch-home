@@ -53,6 +53,13 @@ Setup, Exam Procedure
 * Remove the initial failure
 * Implement the test cases that follow, one by one
 
+  * Put the required files (``point.{h,cpp}``, ``circle.{h,cpp}``,
+    ``square.{h,cpp}``, ``shape.h``) into the ``shapes/`` directory
+    (and edit its ``CMakeLists.txt`` accordingly)
+  * In the ``tests/`` directory, only the ``CMakeLists.txt`` needs to
+    be modified (to add test files)
+  * *No test file must be modified!*
+
 Exercise Table
 --------------
 
