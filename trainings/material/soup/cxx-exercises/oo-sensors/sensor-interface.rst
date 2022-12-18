@@ -2,6 +2,9 @@
    :dependencies: cxx03.inheritance_oo.interface,
 		  linux.toolchain.cmake_local
 
+.. include:: <mmlalias.txt>
+
+
 Exercise: Sensor Interface
 ==========================
 

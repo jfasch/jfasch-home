@@ -1,5 +1,16 @@
-FH Lab Exam: OO Basics, Interfaces
-==================================
+.. ot-exercise:: cxx.exercises.oo_shapes
+   :dependencies: cxx03.data_encapsulation.ctor_custom,
+		  cxx03.functions_and_methods.methods,
+		  cxx03.functions_and_methods.const,
+		  cxx03.functions_and_methods.static,
+		  cxx03.functions_and_methods.operators,
+		  cxx03.inheritance_oo.interface
+		  
+.. include:: <mmlalias.txt>
+
+
+FH Lab Exam: OO Basics, Interfaces (Shapes)
+===========================================
 
 .. contents::
    :local:
@@ -16,8 +27,6 @@ Setup, Exam Procedure
 
 * :doc:`Setup project
   </trainings/material/soup/cxx-exercises/project-setup>`
-* Build initial version :doc:`with CMake
-  </trainings/material/soup/linux/toolchain/cmake/local>`
 * See it fail initially
 
 .. code-block:: console
@@ -44,11 +53,56 @@ Setup, Exam Procedure
 * Remove the initial failure
 * Implement the test cases that follow, one by one
 
+Exercise Table
+--------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Exercise
+     * Points
+   * * :ref:`point_suite-ctor_and_getters`
+     * 
+   * * :ref:`point_suite-default_ctor`
+     * 
+   * * :ref:`point_suite-equal_method`
+     * 
+   * * :ref:`point_suite-operator_equals`
+     * 
+   * * :ref:`point_suite-move_method`
+     * 
+   * * :ref:`point_suite-operator_plus_equals`
+     * 
+   * * :ref:`point_suite-add_method`
+     * 
+   * * :ref:`point_suite-operator_plus`
+     * 
+   * * :ref:`circle_suite-ctor_and_getters`
+     * 
+   * * :ref:`circle_suite-ctor_and_getters_using_operator_equals`
+     * 
+   * * :ref:`circle_suite-area`
+     * 
+   * * :ref:`square_suite-ctor_and_getters`
+     * 
+   * * :ref:`square_suite-ctor_and_getters_using_operator_equals`
+     * 
+   * * :ref:`square_suite-area`
+     * 
+   * * :ref:`shape_suite-circle_is_a_shape`
+     * 
+   * * :ref:`shape_suite-area_is_shape_functionality__circle`
+     * 
+
 Point
 -----
 
-Constructor and Getter Methods
-..............................
+.. _point_suite-ctor_and_getters:
+
+Point: Constructor and Getter Methods
+.....................................
 
 .. sidebar::
 
@@ -69,15 +123,19 @@ Getters won't modify the objects (|longrightarrow| are usable on
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-ctor_and_getters.cpp`
    :language: c++
 
-Default Constructor
-...................
+.. _point_suite-default_ctor:
+
+Point: Default Constructor
+..........................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-default_ctor.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-default_ctor.cpp`
    :language: c++
 
-Static Method: ``equal()``
-..........................
+.. _point_suite-equal_method:
+
+Point: Static Method: ``equal()``
+.................................
 
 .. sidebar::
 
@@ -85,8 +143,9 @@ Static Method: ``equal()``
 
    * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
 
-A static method ``equal()`` compares two ``Point`` objects for
-equality:
+* A static method ``equal()`` compares two ``Point`` objects for
+  equality
+* Try to pass parameters *by reference*
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-equal_method.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-equal_method.cpp`
@@ -98,8 +157,10 @@ The method must be usable with ``const Point`` objects:
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-equal_method.cpp`
    :language: c++
 
-``operator==()``
-................
+.. _point_suite-operator_equals:
+
+Point: ``operator==()``
+.......................
 
 .. sidebar::
 
@@ -107,8 +168,9 @@ The method must be usable with ``const Point`` objects:
 
    * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
 
-Overload the ``==`` operator to implement a more expressive way than
-to call the ``equal()`` method:
+* Overload the ``==`` operator to implement a more expressive way than
+  to call the ``equal()`` method
+* Try to pass parameters *by reference*
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-operator_equals.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-operator_equals.cpp`
@@ -120,30 +182,39 @@ The method must be usable with ``const Point`` objects:
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-operator_equals_const.cpp`
    :language: c++
 
-Method: ``move()``
-..................
+.. _point_suite-move_method:
 
-``p.move(vector)`` modifies a ``Point`` object by ``vector``.
+Point: Method: ``move()``
+.........................
+
+* ``p.move(vector)`` modifies a ``Point`` object by ``vector``
+* Try to pass parameters *by reference*
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-move_method.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-move_method.cpp`
    :language: c++
 
-``operator+=()``
-................
+.. _point_suite-operator_plus_equals:
 
-Overload the ``+=`` operator to implement a more expressive way than
-to call the ``equal()`` method:
+Point: ``operator+=()``
+.......................
+
+* Overload the ``+=`` operator to implement a more expressive way than
+  to call the ``equal()`` method
+* Try to pass parameters *by reference*
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-operator_plus_equals.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-operator_plus_equals.cpp`
    :language: c++
 
-Static Method: ``add()``
-........................
+.. _point_suite-add_method:
 
-The static ``add()`` method creates a *new* ``Point`` object from its
-two parameters:
+Point: Static Method: ``add()``
+...............................
+
+* The static ``add()`` method creates a *new* ``Point`` object from
+  its two parameters
+* Try to pass parameters *by reference*
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-add_method.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-add_method.cpp`
@@ -156,8 +227,14 @@ modify its parameters):
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-add_method.cpp`
    :language: c++
 
-``operator+()``
-...............
+.. _point_suite-operator_plus:
+
+Point: ``operator+()``
+......................
+
+* Overload the ``+`` operator to implement a more expressive way than
+  to call the ``add()`` method
+* Try to pass parameters *by reference*
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-operator_plus.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-operator_plus.cpp`
@@ -178,22 +255,28 @@ A square is defined by:
 * A ``Point``, the *center*
 * Its *radius*
 
-Constructor
-...........
+.. _circle_suite-ctor_and_getters:
+
+Circle: Constructor
+...................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/circle_suite-ctor_and_getters.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/circle_suite-ctor_and_getters.cpp`
    :language: c++
 
-``operator==()``
-................
+.. _circle_suite-ctor_and_getters_using_operator_equals:
+
+Circle: ``operator==()``
+........................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/circle_suite-ctor_and_getters_using_operator_equals.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/circle_suite-ctor_and_getters_using_operator_equals.cpp`
    :language: c++
 
-Method: ``area()``
-..................
+.. _circle_suite-area:
+
+Circle: Method: ``area()``
+..........................
 
 .. sidebar::
 
@@ -222,22 +305,28 @@ A square is defined by:
 * A ``Point``, the *bottom left* corner
 * Its *side length*
 
-Constructor
-...........
+.. _square_suite-ctor_and_getters:
+
+Square: Constructor
+...................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/square_suite-ctor_and_getters.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/square_suite-ctor_and_getters.cpp`
    :language: c++
 
-``operator==()``
-................
+.. _square_suite-ctor_and_getters_using_operator_equals:
+
+Square: ``operator==()``
+........................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/square_suite-ctor_and_getters_using_operator_equals.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/square_suite-ctor_and_getters_using_operator_equals.cpp`
    :language: c++
 
-Method: ``area()``
-..................
+.. _square_suite-area:
+
+Square: Method: ``area()``
+..........................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/square_suite-area.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/square_suite-area.cpp`
@@ -262,22 +351,23 @@ Although ``Circle`` and ``Square`` are shapes - both have an
 ``area()`` method -, they cannot be used exchangeable. Lets change
 that situation by defining an *interface*.
 
-``Circle`` *Is-A* ``Shape``
-...........................
+.. _shape_suite-circle_is_a_shape:
+
+Interface: ``Circle`` And ``Square`` *Is-A* ``Shape``
+.....................................................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-circle_is_a_shape.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-circle_is_a_shape.cpp`
    :language: c++
 
-``Square`` *Is-A* ``Shape``
-...........................
-
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-square_is_a_shape.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-square_is_a_shape.cpp`
    :language: c++
 
-Can Compute Area Of Any Shape
-.............................
+.. _shape_suite-area_is_shape_functionality__circle:
+
+Interface: Can Compute Area Of Any Shape
+........................................
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-area_is_shape_functionality__circle.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-area_is_shape_functionality__circle.cpp`
@@ -286,3 +376,4 @@ Can Compute Area Of Any Shape
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-area_is_shape_functionality__square.cpp
    :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/shape_suite-area_is_shape_functionality__square.cpp`
    :language: c++
+

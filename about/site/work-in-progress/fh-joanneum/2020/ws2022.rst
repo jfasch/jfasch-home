@@ -143,13 +143,9 @@ Plan: Evolution
 
        *TODO*
 
-       * ``oo.rst``: dependencies (-> **See also** section)
-       * const &
        * Grading (points per test)
-       * Fill in
-         :doc:`/trainings/material/soup/cxx-exercises/project-setup`
-       * Setup project, together with commented-out tests
        * string exercises
+       * Setup project, together with commented-out tests
 
    * * 
      * 2023-01-10
