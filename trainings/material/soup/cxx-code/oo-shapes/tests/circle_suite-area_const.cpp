@@ -3,7 +3,7 @@
 
 TEST(circle_suite, area_const)
 {
-    const Circle c(Point(1,2), 5);
+    const Circle c(Point(1,2), 5); // <--- unmodifiable
 
     double area = c.area();
 

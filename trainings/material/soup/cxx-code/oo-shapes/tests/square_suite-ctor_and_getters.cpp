@@ -3,7 +3,7 @@
 
 TEST(square_suite, ctor_and_getters)
 {
-    Square s(Point(1,2), 5);
+    const Square s(Point(1,2), 5); // <--- unmodifiable
 
     Point bottom_left = s.bottom_left();
     int side_length = s.side_length();

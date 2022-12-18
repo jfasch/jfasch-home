@@ -80,13 +80,13 @@ For the remainder, lets define these directories ...
    * * Build directory
      * ``/home/jfasch/build``
 
-Step 1: Generate ``Makefile`` in Build Directory
+Step 1: Generate ``Makefile`` In Build Directory
 ------------------------------------------------
 
 .. code-block:: console
    
-   $ cd /home/jfasch/build
-   $ cmake /home/jfasch/source
+   $ cd /home/jfasch/build              # <--- CWD is the *build* directory
+   $ cmake /home/jfasch/source          # <--- parameter is the *source* directory
    -- The C compiler identification is GNU 11.2.1
    -- The CXX compiler identification is GNU 11.2.1
    -- Detecting C compiler ABI info
@@ -103,17 +103,23 @@ Step 1: Generate ``Makefile`` in Build Directory
    -- Generating done
    -- Build files have been written to: /home/jfasch/build
 
+.. note::
+
+   Please be careful to pass the source **directory** to ``cmake``,
+   not the ``CMakeLists.txt`` file in that directory! (CMake builds in
+   the source if you pass the *file*)
+
 This creates a ``Makefile`` in the *build directory*
 
-* Used as usual
-* Only generated |longrightarrow| basically unreadable
+* Used as usual |longrightarrow| ``make``
+* The file is generated |longrightarrow| basically unreadable
 
 Step 2: Build Using ``make``
 ----------------------------
 
 .. code-block:: console
 
-   $ pwd
+   $ pwd                               # <--- CWD is the *build* directory when you call make
    /home/jfasch/build
    $ make
    [ 14%] Building C object CMakeFiles/greet.dir/hello.c.o

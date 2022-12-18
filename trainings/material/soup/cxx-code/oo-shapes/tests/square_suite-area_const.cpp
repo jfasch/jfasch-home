@@ -3,7 +3,7 @@
 
 TEST(square_suite, area_const)
 {
-    const Square s(Point(1,2), 5);
+    const Square s(Point(1,2), 5); // <--- unmodifiable
 
     double area = s.area();
 

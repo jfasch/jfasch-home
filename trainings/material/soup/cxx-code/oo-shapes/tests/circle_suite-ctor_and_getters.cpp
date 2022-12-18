@@ -3,7 +3,7 @@
 
 TEST(circle_suite, ctor_and_getters)
 {
-    Circle c(Point(1,2), 5);
+    const Circle c(Point(1,2), 5);
 
     Point center = c.center();
     int radius = c.radius();

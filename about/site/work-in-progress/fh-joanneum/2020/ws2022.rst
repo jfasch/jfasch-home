@@ -139,7 +139,18 @@ Plan: Evolution
    * * 2022-12-21
      * 
      * 3
-     *
+     * **Lab Exam**
+
+       *TODO*
+
+       * ``oo.rst``: dependencies (-> **See also** section)
+       * const &
+       * Grading (points per test)
+       * Fill in
+         :doc:`/trainings/material/soup/cxx-exercises/project-setup`
+       * Setup project, together with commented-out tests
+       * string exercises
+
    * * 
      * 2023-01-10
      * 4
