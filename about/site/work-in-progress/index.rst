@@ -16,4 +16,4 @@ Work in Progress
    project-xxx/index
    packaging/index
    2022-04-13/index
-   blink
+   blink/index
