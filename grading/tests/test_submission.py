@@ -1,5 +1,6 @@
 from submission import Submission
 
+import random
 import os
 import os.path
 import shutil
@@ -114,7 +115,6 @@ def test_only(project_ok_tar, tmpdir):
         library_name = 'ok',
     )
     
-    sm.warmup()
     result = sm.evaluate(tests=[
         # PASS: pass code as string
         (
@@ -179,3 +179,24 @@ def test_only(project_ok_tar, tmpdir):
     assert testname == 'ok-fail-file'
     assert points == 0
     assert type(comment) is str
+
+def test_tar_missing():
+    tarname = f'/tmp/some-nonexisting-file-{random.random()}.tar.gz'
+
+    sm = Submission(
+        tar_name = tarname,
+        project_name = 'PROJECT-OK',
+        library_name = 'ok',
+    )
+
+    results = sm.evaluate(tests=[
+        ('test', 'test code', 5),
+    ])
+
+    assert len(results) == 1
+    testname, points, comment = results[0]
+    assert testname == 'test'
+    assert points == 0
+    assert comment == tarname+' missing'
+    
+    

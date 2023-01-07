@@ -2,6 +2,7 @@ from submission import Submission
 
 from dataclasses import dataclass
 import csv
+from pathlib import Path
 
 @dataclass
 class _StudentResult:
@@ -11,8 +12,10 @@ class _StudentResult:
 
 class Exam:
     def __init__(self, base_dir, tar_name, project_name, library_name, students, tests):
+        self.base_dir = Path(base_dir)
         self.tar_name = tar_name
         self.project_name = project_name
+        self.library_name = library_name
         self.students = students
         self.tests = tests
 
@@ -20,11 +23,10 @@ class Exam:
         all_results = []
         for s in self.students:
             sub = Submission(
-                tar_name=self.tar_name,
+                tar_name=self.base_dir / s / self.tar_name,
                 project_name=self.project_name,
-                library_name='irrelevant because monkeypatched-out',
+                library_name=self.library_name,
             )
-            sub.warmup()
             test_results = sub.evaluate(self.tests)
 
             total = 0

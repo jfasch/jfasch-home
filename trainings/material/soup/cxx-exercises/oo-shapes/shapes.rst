@@ -129,7 +129,7 @@ Getters won't modify the objects (|longrightarrow| are usable on
 ``const Point`` objects)
 
 .. literalinclude:: /trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-ctor_and_getters_const.cpp
-   :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-ctor_and_getters.cpp`
+   :caption: :download:`/trainings/material/soup/cxx-code/oo-shapes/tests/point_suite-ctor_and_getters_const.cpp`
    :language: c++
 
 .. _point_suite-default_ctor:
