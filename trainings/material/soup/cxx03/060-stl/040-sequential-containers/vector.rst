@@ -7,10 +7,6 @@
 .. sidebar:: Documentation
   
    * `std::vector <https://en.cppreference.com/w/cpp/container/vector>`__
-     @ `cppreference.com <https://cppreference.com>`__
-   * `std::vector
-     <http://www.cplusplus.com/reference/vector/vector/>`__ @
-     `cplusplus.com <https://cplusplus.com>`__
 
 ``vector<>``
 ============
@@ -18,6 +14,11 @@
 .. contents::
    :local:
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../015-vector-copy-etc/topic`
 
 Characteristics
 ---------------
@@ -64,8 +65,8 @@ Insertion
 
        * Insert at arbitrary position
 
-	 * All elements from there on have to be shifted (copied) toward the
-           end by one position
+	 * All elements from there on have to be shifted (copied)
+           toward the end by one position
 	 * Reallocation is also possible
 
        * Removal at arbitrary position

@@ -10,6 +10,15 @@ Standard Template Library: Basics
 .. contents::
    :local:
 
+.. toctree::
+   :hidden:
+
+   pointer-arith-basics
+   pointer-arith-out-of-range
+   pointer-arith-difference
+   pointer-arith-algo
+   algo-copy
+
 Containers, Iterators, Algorithms
 ---------------------------------
 
@@ -22,12 +31,13 @@ Containers, Iterators, Algorithms
 
 |longrightarrow| *Pointer arithmetic*, revisited ...
 
-Pointer Arithmetic (1)
-----------------------
+Blahblah
+--------
 
 .. list-table::
+   :align: left
 
-   * * **Pointer and arrary index**
+   * * **Pointer and array index**
 
        * *Pointer + Integer = Pointer*
        * Exactly the same as subscript ("index") operator
@@ -38,15 +48,24 @@ Pointer Arithmetic (1)
      * * 
 
          .. image:: 40-10-00-pointer-plus-int.dia
+	    :scale: 40%
 
        * 
 
          .. image:: 40-10-00-pointer-plus-int-error.dia
+	    :scale: 40%
 
-Pointer Arithmetic (2)
-----------------------
+Pointer Increment and Decrement
+-------------------------------
+
+.. sidebar::
+
+   **Live Hacking**
+
+   * :doc:`pointer-arith-basics`
 
 .. list-table::
+   :align: left
 
    * * **Pointer Increment**
 
@@ -58,6 +77,7 @@ Pointer Arithmetic (2)
      * 
      
        .. image:: 40-10-00-pointer-increment.dia
+	  :scale: 40%
 
    * * **Pointer Decrement**
 
@@ -69,13 +89,21 @@ Pointer Arithmetic (2)
      * 
 
        .. image:: 40-10-00-pointer-decrement.dia
+	  :scale: 40%
 
-Pointer Arithmetic (3)
-----------------------
+Out Of Range Errors (The Spirit Of C)
+-------------------------------------
+
+.. sidebar::
+
+   **Live Hacking**
+
+   * :doc:`pointer-arith-out-of-range`
 
 **Pointers don't necessarily point to valid memory locations ...**
 
 .. list-table::
+   :align: left
 
    * * .. code-block:: c++
 
@@ -86,6 +114,7 @@ Pointer Arithmetic (3)
      * 
 
        .. image:: 40-10-00-pointer-out-of-range.dia
+	  :scale: 40%
 
    * * .. code-block:: c++
 
@@ -96,13 +125,21 @@ Pointer Arithmetic (3)
      *
 
        .. image:: 40-10-00-pointer-out-of-range-negative.dia
+	  :scale: 40%
 
-Pointer Arithmetic: Difference
-------------------------------
+Pointer Difference
+------------------
+
+.. sidebar::
+
+   **Live Hacking**
+
+   * :doc:`pointer-arith-difference`
 
 **How many array elements are there between two pointers?**
 
 .. list-table::
+   :align: left
 
    * * .. code-block:: c++
 
@@ -113,39 +150,16 @@ Pointer Arithmetic: Difference
      *
 
        .. image:: 40-10-00-pointer-diff.dia
+	  :scale: 40%
 
-**General practice ("The Spirit of C"):**
+**General practice ("The Spirit of C"):** [#no-spirit]_
 
 * *Beginning* of an array (a *set* of elements) is a *pointer to the
   first element*
 * *End* is *pointer past the last element*
 
-Pointer Arithmetic: Array Algorithms
-------------------------------------
-
-**Iteration over all elements of an array ...**
-
-.. code-block:: c++
-
-   int sum(const int *begin, const int *end)
-   {
-       int sum = 0;
-   
-       while (begin < end)
-           sum += *begin++; /* precedence? what? */
-       return sum;
-   }
-
-.. list-table::
-
-   * * 
-
-       .. image:: 40-10-00-pointer-begin-end.dia
-
-     * **Pretty, isn't it?**
-
-Pointer Arithmetic: Step Width? (1)
------------------------------------
+Step Width? (1)
+---------------
 
 **So far:** pointer to ``int`` - how about different datatypes?
 
@@ -156,8 +170,8 @@ Pointer Arithmetic: Step Width? (1)
 * Pointer knows the type of the data it points to
 * Careful with ``void`` and ``void*``
 
-Pointer Arithmetic: Step Width? (2)
------------------------------------
+Step Width? (2)
+---------------
 
 .. code-block:: c++
 
@@ -176,10 +190,11 @@ Pointer Arithmetic: Step Width? (2)
        ++begin;
    }
 
-Pointer Arithmetic: Arbitrary Data Types?
------------------------------------------
+And Arbitrary Data Types?
+-------------------------
 
 .. list-table::
+   :align: left
 
    * * *sizeof*: size (in bytes) of a type or variable
 
@@ -194,9 +209,70 @@ Pointer Arithmetic: Arbitrary Data Types?
      * 
 
        .. image:: 40-10-00-pointer-plus-int-generalized.dia
+	  :scale: 40%
 
-Container
----------
+Enter Algorithms (On Good Old C Arrays)
+---------------------------------------
+
+.. sidebar::
+
+   **Live Hacking**
+
+   * :doc:`pointer-arith-algo`
+
+* Iteration over all elements of an array
+* ``begin``: pointer to first element, *inclusive*
+* ``end``: pointer past last element, *exclusive*
+* |longrightarrow| *range* ``[begin, end)``
+
+.. code-block:: c++
+
+   int sum(const int *begin, const int *end)
+   {
+       int sum = 0;
+   
+       while (begin < end)
+           sum += *begin++; /* precedence? what? */
+       return sum;
+   }
+
+.. code-block:: c++
+
+   void copy(const int *src_begin, const int *src_end, int *dst_begin)
+   {
+       while (src_begin != src_end)
+           *dst_begin++ = *src_begin++;
+   }
+   
+.. list-table::
+   :align: left
+
+   * * 
+
+       .. image:: 40-10-00-pointer-begin-end.dia
+	  :scale: 40%
+
+     * **Pretty, isn't it?**
+
+STL Algorithms
+--------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `C++ algorithms <https://en.cppreference.com/w/cpp/algorithm>`__
+
+   **Live Hacking**
+
+   * :doc:`algo-copy`
+
+* ``#include <algorithm>``
+* Many general purpose algorithms
+* One of the simplest: ``std::copy<>()``
+
+STL Containers
+--------------
 
 **Container**
 
@@ -204,112 +280,9 @@ Container
 * Sequential container |longrightarrow| array, list
 * Associative containers
 
-Dynamically growing array: ``std::vector``
-------------------------------------------
 
-.. code-block:: c++
+.. rubric:: Footnotes
 
-   #include <vector>
-   
-   std::vector<int> int_array;
-   int_array.push_back(42);
-   int_array.push_back(7);
-   int_array.push_back(666);
-   
-   for (int i=0; i<int_array.size(); ++i)
-       std::cout << int_array[i] << ' ';
-
-Pointer Arithmetic
-------------------
-
-.. code-block:: c++
-
-   std::vector<int>::const_iterator begin = int_array.begin();
-   std::vector<int>::const_iterator end = int_array.end();
-   while (begin < end) {
-       std::cout << *begin << ' ';
-       ++begin;
-   }
-
-Algorithms: ``std::copy`` (1)
------------------------------
-
-**Copy array by hand**
-
-.. code-block:: c++
-
-   std::vector<int> int_array;
-   int_array.push_back(42);
-   int_array.push_back(7);
-   int_array.push_back(666);
-   
-   int int_array_c[3];
-   std::vector<int>::const_iterator src_begin = int_array.begin();
-   std::vector<int>::const_iterator src_end = int_array.end();
-   int *dst_begin = int_array_c;
-   
-   while (src_begin < src_end)
-       *dst_begin++ = *src_begin++;
-
-Algorithms: ``std::copy`` (2)
------------------------------
-
-**Copy using STL**
-
-.. code-block:: c++
-
-   #include <algorithm>
-   
-   std::vector<int> int_array;
-   // ...
-   int int_array_c[3];
-   
-   std::copy(int_array.begin(), int_array.end(), int_array_c);
-
-Adapting Iterators: ``std::ostream_iterator``
----------------------------------------------
-
-**Copy**: array to ``std::ostream``, which looks like another array
-
-.. code-block:: c++
-
-   #include <iterator>
-   
-   int int_array_c[] = { 34, 45, 1, 3, 2, 666 };
-   std::copy(int_array_c, int_array_c+6, 
-             std::ostream_iterator<int>(std::cout, " "));
-   
-   std::vector<int> int_array;
-   // ...
-   std::copy(int_array.begin(), int_array.end(), 
-             std::ostream_iterator<int>(std::cout, " "));
-
-Adapting Iterators: ``std::back_insert_iterator`` (1)
------------------------------------------------------
-
-**Problem**
-
-* ``std::copy()`` requires *existing/allocated memory* |longrightarrow| *performance!*
-* |longrightarrow| copying onto empty ``std::vector`` impossible
-
-.. code-block:: c++
-   :caption: Segmentation Fault
-
-   int int_array_c[] = { 34, 45, 1, 3, 2, 666 };
-   std::vector<int> int_array; // empty!
-   
-   std::copy(int_array_c, int_array_c+6, int_array.begin());
-
-Adapting Iterators: ``std::back_insert_iterator`` (2)
------------------------------------------------------
-
-**Solution**: ``std::back_insert_iterator``
-
-.. code-block:: c++
-
-   int int_array_c[] = { 34, 45, 1, 3, 2, 666 };
-   std::vector<int> int_array;
-   
-   std::copy(
-       int_array_c, int_array_c+6, 
-       std::back_insert_iterator<std::vector<int> >(int_array));
+.. [#no-spirit] `Dennis Ritchie
+		<https://en.wikipedia.org/wiki/Dennis_Ritchie>`_ once
+		said, though, that *C has no spirit*.

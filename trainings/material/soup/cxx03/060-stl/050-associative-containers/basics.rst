@@ -10,7 +10,3 @@ Associative Containers
 * Sorted by nature
 * Many kinds of associative containers |longrightarrow| degree in
   Computer Science
-
-
-.. image:: 40-40-00-map.dia
-	   

@@ -26,5 +26,6 @@ ADD_SUBDIRECTORY(oo-sensor-w1-factory)
 
 ADD_SUBDIRECTORY(oo-display-core)
 
-
 ADD_SUBDIRECTORY(oo-shapes)
+
+ADD_SUBDIRECTORY(stl-exercises)
