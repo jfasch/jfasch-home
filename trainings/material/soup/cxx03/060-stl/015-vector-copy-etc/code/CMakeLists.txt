@@ -1,0 +1,11 @@
+ADD_EXECUTABLE(cxx-stl-basics-vector-basic vector-basic.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-vector-basic-brace-init vector-basic-brace-init.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-vector-basic-pointer-arith vector-basic-pointer-arith.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-vector-basic-iterators vector-basic-iterators.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-vector-basic-range-based vector-basic-range-based.cpp)
+
+ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-array copy-vector-to-array.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-vector-crash copy-vector-to-vector-crash.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-vector-preallocate copy-vector-to-vector-preallocate.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-vector-back-insert-iterator copy-vector-to-vector-back-insert-iterator.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-stdout copy-vector-to-stdout.cpp)

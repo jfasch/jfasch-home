@@ -1,0 +1,10 @@
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-basics pointer-arith-basics.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-out-of-range pointer-arith-out-of-range.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-difference pointer-arith-difference.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-algo-print pointer-arith-algo-print.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-algo-sum pointer-arith-algo-sum.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-algo-sum-func pointer-arith-algo-sum-func.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-algo-copy-func pointer-arith-algo-copy-func.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-pointer-arith-algo-copy-func-range-based pointer-arith-algo-copy-func-range-based.cpp)
+
+ADD_EXECUTABLE(cxx-stl-basics-algo-copy algo-copy.cpp)
