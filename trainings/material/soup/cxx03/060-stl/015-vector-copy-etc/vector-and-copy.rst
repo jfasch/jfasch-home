@@ -29,9 +29,17 @@ Copying Into ``std::vector`` (Without Allocation)
 Solution 1: Pre-allocate Destination
 ------------------------------------
 
-* Using ``.size()``
+* Using ``src.size()``
+* Pre-initialization, allocating the destination just as big as needed
 
 .. literalinclude:: code/copy-vector-to-vector-preallocate.cpp
+   :language: c++
+   :caption: :download:`code/copy-vector-to-vector-preallocate.cpp`
+
+* Using ``.reserve()`` if destination's memory is not known to be
+  pre-allocated
+
+.. literalinclude:: code/copy-vector-to-vector-reserve.cpp
    :language: c++
    :caption: :download:`code/copy-vector-to-vector-preallocate.cpp`
 

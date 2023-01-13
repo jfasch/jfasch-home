@@ -7,5 +7,6 @@ ADD_EXECUTABLE(cxx-stl-basics-vector-basic-range-based vector-basic-range-based.
 ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-array copy-vector-to-array.cpp)
 ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-vector-crash copy-vector-to-vector-crash.cpp)
 ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-vector-preallocate copy-vector-to-vector-preallocate.cpp)
+ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-vector-reserve copy-vector-to-vector-reserve.cpp)
 ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-vector-back-insert-iterator copy-vector-to-vector-back-insert-iterator.cpp)
 ADD_EXECUTABLE(cxx-stl-basics-copy-vector-to-stdout copy-vector-to-stdout.cpp)

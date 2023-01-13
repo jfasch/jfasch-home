@@ -2,6 +2,10 @@ ADD_EXECUTABLE(
   cxx-exercises-stl--suite
 
   # initial-failure.cpp
+  test-vector.cpp
+  test-map.cpp
+  test-algo.cpp
+
   test-sensor-repo.cpp
 
   test-sort-in-place.cpp

@@ -90,7 +90,7 @@ good to at least know the basics of.
 OO Introduction
 ...............
 
-Python is strongly object oriented internally - event an ``int`` is an
+Python is strongly object oriented internally - even an ``int`` is an
 *object of class int*, for example. It does not impose OO knowledge on
 its users though; nevertheless knowing a bit of it cannot hurt.
   
@@ -108,8 +108,8 @@ handling in a separate section of the code.
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 
-Context Manager (Automatic Cleanup)
-...................................
+Context Managers (Automatic Cleanup)
+....................................
 
 Much like error handling, resource cleanup tends to become
 clumsy. Context managers are a way to bring more structure to that

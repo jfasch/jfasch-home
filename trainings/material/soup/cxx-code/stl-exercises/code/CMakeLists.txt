@@ -2,7 +2,13 @@ ADD_LIBRARY(
   cxx-exercises-stl-code
 
   dummy.cpp
-  
+
+  vector-exercises.cpp
+  map-exercises.cpp
+  algo-exercises.cpp
+
+  sensor-repo.cpp
+
   sort-in-place.cpp
   sorted.cpp
 
@@ -10,8 +16,6 @@ ADD_LIBRARY(
   filter.cpp
   filter-odd.cpp
   filter-greater-10.cpp
-
-  sensor-repo.cpp
 )
 
 TARGET_INCLUDE_DIRECTORIES(
