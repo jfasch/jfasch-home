@@ -12,3 +12,4 @@ Embedded Computing 2020
    ws2022
    ws2022/toolchain-build-docker-fedora
    ws2022/toolchain-setup
+   ws2022/lab-exam-2023-01-17

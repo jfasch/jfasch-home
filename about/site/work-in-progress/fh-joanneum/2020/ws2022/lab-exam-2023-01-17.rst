@@ -1,0 +1,52 @@
+Lab Exam 2023-01-17
+===================
+
+.. contents::
+   :local:
+
+Project Setup
+-------------
+
+* :doc:`/trainings/material/soup/cxx-exercises/project-setup`
+
+Exercises
+---------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Exercise
+     * Points
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/uniq`
+     * 10
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-generic`
+     * 8
+   * *
+     *
+   * * From :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/group` ...
+     *
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/insert-sunny`
+     * 6
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/lookup-sunny`
+     * 3
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/remove-sunny`
+     * 3
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/insert-no-overwrite`
+     * 4
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/lookup-not-found`
+     * 3
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/remove-not-found`
+     * 4
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/size-const`
+     * 1
+   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/no-memleak`
+     * 8
+   * * **Total**
+     * 50
+
+.. note::
+
+   The total points from this exam are equivalent to *30%* of the
+   total grade from this semester.

@@ -10,8 +10,6 @@ bool is_odd(int elem)
     return elem % 2 == 1;
 }
 
-// give hint for filterfunc param
-
 TEST(stl_exercises_suite, filter)
 {
     const vector<int> input = {42, 3, 42, 5, 6, 7, 5, 3, 666};

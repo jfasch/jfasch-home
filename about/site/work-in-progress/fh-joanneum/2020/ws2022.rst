@@ -172,5 +172,24 @@ Plan: Evolution
    * * 
      * 2023-01-17
      * 4
-     * * 2 hours exercise
-       * Rest: lab exam
+     * * **One hour exercise**
+
+         * Sent out 2023-01-015, as a voluntary exercise
+         * `Github Project (FH-ECE20-2023-01-15)
+           <https://github.com/jfasch/FH-ECE20-2023-01-15>`__
+         * *Project Setup*
+
+	   * :doc:`/trainings/material/soup/cxx-exercises/project-setup`
+
+	 * *Exercise Descriptions*
+
+           * :doc:`/trainings/material/soup/cxx-exercises/stl/vector`
+           * :doc:`/trainings/material/soup/cxx-exercises/stl/map`
+           * :doc:`/trainings/material/soup/cxx-exercises/stl/algo`
+           * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
+           * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
+
+       * **Lab Exam**
+
+	 * `Github Project (FH-ECE20-2023-01-17) <https://github.com/jfasch/FH-ECE20-2023-01-17>`__
+	 * :doc:`Exercise Page <ws2022/lab-exam-2023-01-17>`

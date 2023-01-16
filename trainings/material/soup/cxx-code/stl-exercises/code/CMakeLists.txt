@@ -13,9 +13,10 @@ ADD_LIBRARY(
   sorted.cpp
 
   uniq.cpp
-  filter.cpp
+
   filter-odd.cpp
   filter-greater-10.cpp
+  filter.cpp
 )
 
 TARGET_INCLUDE_DIRECTORIES(

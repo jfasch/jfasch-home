@@ -9,6 +9,8 @@
 class SensorRepository
 {
 public:
+    ~SensorRepository();
+
     size_t size() const { return _repo.size(); }
     bool add_sensor(const std::string& name, Sensor*);
     bool remove_sensor(const std::string& name);

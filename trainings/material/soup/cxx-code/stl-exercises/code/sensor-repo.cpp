@@ -1,5 +1,11 @@
 #include "sensor-repo.h"
 
+SensorRepository::~SensorRepository()
+{
+    for (auto& [key, value]: _repo)
+        delete value;
+}
+
 bool SensorRepository::add_sensor(const std::string& name, Sensor* s)
 {
     auto [iter, inserted] = _repo.insert(std::make_pair(name, s));
@@ -8,8 +14,12 @@ bool SensorRepository::add_sensor(const std::string& name, Sensor* s)
 
 bool SensorRepository::remove_sensor(const std::string& name)
 {
-    size_t nremoved = _repo.erase(name);
-    return nremoved == 1;
+    auto found = _repo.find(name);
+    if (found == _repo.end())
+        return false;
+    delete found->second;
+    _repo.erase(found);
+    return true;
 }
 
 Sensor* SensorRepository::get_sensor(const std::string& name)
