@@ -22,6 +22,17 @@ Create Remote Tracking Branch
    $ git clone git@github.com:jfasch/jfasch-home.git
    $ git checkout --track origin/the-branch
 
+Create, Submit, Apply Patches
+-----------------------------
+
+.. code-block:: console
+
+   $ git format-patch -o dir branch-von-wo
+   $ git format-patch -o dir --root         # since beginning of project
+   $ git send-email --compose dir
+   $ git send-email --compose /tmp/libgpiod --from jf@faschingbauer.co.at --to jf@faschingbauer.co.at -cc joerg.faschingbauer@aon.at master 
+
+Single commit: -1
 
 Miscellaneous
 -------------
@@ -41,14 +52,6 @@ Miscellaneous
   git remote add <my-remote-name> <repo>
   git fetch <myremote-name>
   git checkout -b <my-branch> <my-remote-name>/<remote-branch>
-
-* Patches per Email
-
-  git format-patch -o dir branch-von-wo
-  git format-patch -o dir --root # since beginning of project
-  git send-email --compose dir
-
-  Single commit: -1
 
 * remote branches
 

@@ -29,6 +29,15 @@ Dieser Kurs ist in Vorbereitung.
 
 (:doc:`Mehr ... <detail/2023-02-13/index>`)
 
+Linux Basics (2023-01-23 - 2023-01-26)
+--------------------------------------
+
+Linux commandline usage, the inevitable system concepts section (*exit
+status*, *"everything is a file"*, etc.), together with SSH and a
+little shell scripting for test automation.
+
+(:doc:`More ... <detail/2023-01-23/index>`)
+
 Python (2022-11-16 - 2022-11-18)
 --------------------------------
 
