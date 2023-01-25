@@ -10,8 +10,10 @@ Linux Basics (2023-01-23 - 2023-01-26)
 .. sidebar::
 
    * Course: :doc:`/trainings/material/soup/linux/basics/group`
-   * :download:`PDF (unmaintained)
+   * :download:`Linux Basics PDF (unmaintained)
      </trainings/material/pdf/010-linux-basics.pdf>`
+   * :download:`Shell Scripting PDF
+     </trainings/material/pdf/100-shell-scripting.pdf>`
 
 Course Preparation
 ------------------
@@ -25,6 +27,9 @@ Agenda
 
   * :doc:`/trainings/material/soup/linux/basics/intro/overview`
   * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
+  * :doc:`/trainings/material/soup/linux/basics/intro/process`
+  * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
+  * :doc:`/trainings/material/soup/linux/basics/intro/environment`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/group`
 
@@ -38,22 +43,6 @@ Agenda
   * :doc:`/trainings/material/soup/linux/basics/shell/links`
   * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
   * :doc:`/trainings/material/soup/linux/basics/shell/exercises/group`
-
-* More About Processes
-
-  * :doc:`/trainings/material/soup/linux/basics/intro/process`
-  * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
-  * :doc:`/trainings/material/soup/linux/basics/intro/environment`
-  * :doc:`/trainings/material/soup/linux/basics/intro/login`
-
-* :doc:`/trainings/material/soup/linux/basics/permissions/group`
-
-  * :doc:`/trainings/material/soup/linux/basics/permissions/group`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
 
 * :doc:`/trainings/material/soup/linux/basics/text-tools/group`
 
@@ -73,6 +62,20 @@ Agenda
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
 
+* From :doc:`/trainings/material/soup/linux/ssh/group`
+
+  * :doc:`/trainings/material/soup/linux/ssh/basics`
+  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
+
+* :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/permissions/group`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+
 * :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
 
   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/overview`
@@ -80,10 +83,8 @@ Agenda
   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/tar`
   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/exercises`
 
-* :doc:`/trainings/material/soup/linux/ssh/group`
+* :doc:`More about SSH </trainings/material/soup/linux/ssh/group>`
 
-  * :doc:`/trainings/material/soup/linux/ssh/basics`
-  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
   * :doc:`/trainings/material/soup/linux/ssh/scp`
   * :doc:`/trainings/material/soup/linux/ssh/portforwarding`
   * :doc:`/trainings/material/soup/linux/ssh/sshfs`
@@ -91,3 +92,7 @@ Agenda
   * :doc:`/trainings/material/soup/linux/ssh/exercises/group`
 
 * :doc:`/trainings/material/soup/linux/basics/exercises/group`
+
+* Shell Scripting
+
+  * :download:`PDF </trainings/material/pdf/100-shell-scripting.pdf>`

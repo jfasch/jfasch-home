@@ -29,7 +29,7 @@ Overview
 
   * Connect one program's *standard output* with another program's
     *standard input*
-  * |longrightarrow| multipe tools connected toether in a pipeline
+  * |longrightarrow| multiple tools connected toether in a pipeline
 
 * Most text/line based
     

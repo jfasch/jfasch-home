@@ -9,3 +9,4 @@ A talk at `Grazer Linuxtage 2023 <https://www.linuxtage.at/>`__
    glt
    screenplay
    installation
+   notes

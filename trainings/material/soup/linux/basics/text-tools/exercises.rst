@@ -4,6 +4,7 @@
 		  linux.basics.text_tools.grep,
 		  linux.basics.text_tools.head_tail,
 		  linux.basics.text_tools.less,
+		  linux.basics.text_tools.find,
 		  linux.basics.text_tools.overview
 
 .. include:: <mmlalias.txt>

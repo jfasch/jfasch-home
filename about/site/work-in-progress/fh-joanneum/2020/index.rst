@@ -13,3 +13,10 @@ Embedded Computing 2020
    ws2022/toolchain-build-docker-fedora
    ws2022/toolchain-setup
    ws2022/lab-exam-2023-01-17
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   ws2022-questions-yesno
+   ws2022-questions-code-general

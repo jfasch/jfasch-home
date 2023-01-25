@@ -1,0 +1,1063 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 6 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 13 0 R /XYZ 62.69291 677.0236 0 ] /Rect [ 62.69291 692.0236 137.7229 704.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+5 0 obj
+<<
+/Border [ 0 0 0 ] /Contents () /Dest [ 13 0 R /XYZ 62.69291 677.0236 0 ] /Rect [ 527.0227 692.7736 532.5827 704.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/basics.html)
+>> /Border [ 0 0 0 ] /Rect [ 108.6929 420.7739 546.6329 432.7739 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method.html)
+>> /Border [ 0 0 0 ] /Rect [ 108.6929 402.7739 581.6429 414.7739 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism.html)
+>> /Border [ 0 0 0 ] /Rect [ 108.6929 384.7739 580.5229 396.7739 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor.html)
+>> /Border [ 0 0 0 ] /Rect [ 108.6929 366.7739 562.7529 378.7739 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor.html)
+>> /Border [ 0 0 0 ] /Rect [ 108.6929 348.7739 592.7529 360.7739 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/interface.html)
+>> /Border [ 0 0 0 ] /Rect [ 108.6929 330.7739 556.6429 342.7739 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R ] /Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 18 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+14 0 obj
+<<
+/Outlines 16 0 R /PageLabels 20 0 R /PageMode /UseNone /Pages 18 0 R /Type /Catalog
+>>
+endobj
+15 0 obj
+<<
+/Author () /CreationDate (D:20230124190452-01'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230124190452-01'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (FH Joanneum \(Embedded Computing\): WS2022/2023 \(Questions About Code\)) /Trapped /False
+>>
+endobj
+16 0 obj
+<<
+/Count 1 /First 17 0 R /Last 17 0 R /Type /Outlines
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 677.0236 0 ] /Parent 16 0 R /Title (C++ Inheritance)
+>>
+endobj
+18 0 obj
+<<
+/Count 1 /Kids [ 13 0 R ] /Type /Pages
+>>
+endobj
+19 0 obj
+<<
+/Length 15150
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 28 Tm /F2 20 Tf 24 TL 49.38488 0 Td (FH Joanneum \(Embedded Computing\):) Tj T* 4.410002 0 Td (WS2022/2023 \(Questions About Code\)) Tj T* -53.79488 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 689.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 .501961 rg (C++ Inheritance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 397.8898 3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 66.44 0 Td (1) Tj T* -66.44 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 656.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (C++ Inheritance) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 638.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Given the following class definitions:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 620.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (What would the following code output?) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 614.0236 cm
+Q
+q
+1 0 0 1 62.69291 462.0239 cm
+q
+1 1 1 rg
+n 0 151.9997 469.8898 -18 re f*
+.878431 .878431 .878431 rg
+n 0 133.9997 469.8898 -41.26169 re f*
+1 1 1 rg
+n 0 92.73801 469.8898 -41.26169 re f*
+.878431 .878431 .878431 rg
+n 0 51.47632 469.8898 -51.47632 re f*
+.960784 .960784 .862745 rg
+n 0 151.9997 469.8898 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 136.9997 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 222.9449 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 99.52244 0 Td (Code) Tj T* -99.52244 0 Td ET
+Q
+Q
+q
+1 0 0 1 240.9449 136.9997 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 222.9449 12 re f*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 96.46244 0 Td (Output) Tj T* -96.46244 0 Td ET
+Q
+Q
+0 0 0 rg
+q
+1 0 0 1 6 95.73801 cm
+q
+q
+.947895 0 0 .947895 0 0 cm
+q
+1 0 0 1 6.6 6.962797 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 234 36 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 24 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 30 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 42 12 0 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 18 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 54 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 72 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 84 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 126 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 138 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 144 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 150 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 156 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 162 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 180 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 192 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 216 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 222 0 0 12 re f*
+BT 1 0 0 1 0 14 Tm 12 TL /F3 10 Tf 0 0 0 rg (Base) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (b) Tj (;) Tj .733333 .733333 .733333 rg  T* 0 0 0 rg (std) Tj .4 .4 .4 rg (::) Tj 0 0 0 rg (cout) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (<) Tj (<) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (b) Tj (.) Tj (method) Tj (\(\)) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (<) Tj (<) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (std) Tj .4 .4 .4 rg (::) Tj 0 0 0 rg (endl) Tj (;) Tj .733333 .733333 .733333 rg  T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 6 54.47632 cm
+q
+q
+.947895 0 0 .947895 0 0 cm
+q
+1 0 0 1 6.6 6.962797 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 234 36 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 12 42 12 re f*
+.960784 .960784 .862745 rg
+n 42 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 48 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 12 0 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 18 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 54 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 72 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 84 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 126 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 138 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 144 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 150 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 156 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 162 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 180 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 192 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 216 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 222 0 0 12 re f*
+BT 1 0 0 1 0 14 Tm 12 TL /F3 10 Tf 0 0 0 rg (Derived) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (d) Tj (;) Tj .733333 .733333 .733333 rg  T* 0 0 0 rg (std) Tj .4 .4 .4 rg (::) Tj 0 0 0 rg (cout) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (<) Tj (<) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (d) Tj (.) Tj (method) Tj (\(\)) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (<) Tj (<) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (std) Tj .4 .4 .4 rg (::) Tj 0 0 0 rg (endl) Tj (;) Tj .733333 .733333 .733333 rg  T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+q
+.924315 0 0 .924315 0 0 cm
+q
+1 0 0 1 6.6 7.14042 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 240 48 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 0 24 42 12 re f*
+.960784 .960784 .862745 rg
+n 42 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 48 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 24 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 24 0 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 24 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 30 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 42 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 48 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 54 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 72 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 12 0 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 18 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 54 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 60 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 66 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 72 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 84 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 90 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 132 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 144 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 150 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 156 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 162 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 168 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 186 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 198 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 222 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 228 0 0 12 re f*
+BT 1 0 0 1 0 26 Tm 12 TL /F3 10 Tf 0 0 0 rg (Derived) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (d) Tj (;) Tj .733333 .733333 .733333 rg  T* 0 0 0 rg (Base) Tj .4 .4 .4 rg (*) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (b) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (=) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (&) Tj 0 0 0 rg (d) Tj (;) Tj .733333 .733333 .733333 rg  T* 0 0 0 rg (std) Tj .4 .4 .4 rg (::) Tj 0 0 0 rg (cout) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (<) Tj (<) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (b) Tj .4 .4 .4 rg (-) Tj (>) Tj 0 0 0 rg (method) Tj (\(\)) Tj .733333 .733333 .733333 rg ( ) Tj .4 .4 .4 rg (<) Tj (<) Tj .733333 .733333 .733333 rg ( ) Tj 0 0 0 rg (std) Tj .4 .4 .4 rg (::) Tj 0 0 0 rg (endl) Tj (;) Tj .733333 .733333 .733333 rg  T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 133.9997 m 469.8898 133.9997 l S
+n 0 92.73801 m 469.8898 92.73801 l S
+n 0 51.47632 m 469.8898 51.47632 l S
+n 234.9449 0 m 234.9449 151.9997 l S
+n 0 151.9997 m 469.8898 151.9997 l S
+n 0 0 m 469.8898 0 l S
+n 0 0 m 0 151.9997 l S
+n 469.8898 0 m 469.8898 151.9997 l S
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 462.0239 cm
+Q
+q
+1 0 0 1 62.69291 456.0239 cm
+Q
+q
+1 0 0 1 62.69291 456.0239 cm
+Q
+q
+1 0 0 1 62.69291 192.0239 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (OO, Polymorphism) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 243 cm
+Q
+q
+1 0 0 1 23 243 cm
+Q
+q
+1 0 0 1 23 231 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/basics.html) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 225 cm
+Q
+q
+1 0 0 1 23 213 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method.html) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 207 cm
+Q
+q
+1 0 0 1 23 195 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism.html) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 189 cm
+Q
+q
+1 0 0 1 23 177 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor.html) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 171 cm
+Q
+q
+1 0 0 1 23 159 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor.html) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 153 cm
+Q
+q
+1 0 0 1 23 141 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (https://www.faschingbauer.me/trainings/material/soup/cxx03/100-inheritance-oo-design/interface.html) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 135 cm
+Q
+q
+1 0 0 1 23 87 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Base/Derived w/o virtual) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (What's the effect of ... Base b; b.method\(\);) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (What's the effect of ... Derived d; d.method\(\);) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 81 cm
+Q
+q
+1 0 0 1 23 33 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (w/ virtual) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (What's the effect of ... Base b; b.method\(\);) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (What's the effect of ... Derived d; d.method\(\);) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (How would you fix the problem? \(-) Tj (> virtual = 0\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Where's the leak?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 186.0239 cm
+Q
+q
+1 0 0 1 62.69291 156.0239 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Patterns, UML) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Sketch -) Tj (> Implementation Sketch on Paper) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 150.0239 cm
+Q
+q
+1 0 0 1 62.69291 102.0239 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (STL code questions jjj) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Which output would the following code produce?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (What's wrong with the following code?) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 102.0239 cm
+Q
+ 
+endstream
+endobj
+20 0 obj
+<<
+/Nums [ 0 21 0 R ]
+>>
+endobj
+21 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+xref
+0 22
+0000000000 65535 f 
+0000000073 00000 n 
+0000000124 00000 n 
+0000000231 00000 n 
+0000000343 00000 n 
+0000000511 00000 n 
+0000000679 00000 n 
+0000000784 00000 n 
+0000001032 00000 n 
+0000001288 00000 n 
+0000001542 00000 n 
+0000001795 00000 n 
+0000002056 00000 n 
+0000002308 00000 n 
+0000002577 00000 n 
+0000002683 00000 n 
+0000003013 00000 n 
+0000003087 00000 n 
+0000003191 00000 n 
+0000003252 00000 n 
+0000018455 00000 n 
+0000018496 00000 n 
+trailer
+<<
+/ID 
+[<9bd93df7a4d006b62ef5f9e6ed3f6314><9bd93df7a4d006b62ef5f9e6ed3f6314>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 15 0 R
+/Root 14 0 R
+/Size 22
+>>
+startxref
+18530
+%%EOF

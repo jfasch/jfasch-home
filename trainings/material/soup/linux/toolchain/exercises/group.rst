@@ -16,7 +16,7 @@ Contents
    raspberry-toolchain
    native-build
    cross-build
-   fh-questions
+   fh-2022-questions
 
 Dependencies
 ------------

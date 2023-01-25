@@ -6,6 +6,12 @@
 Exercise: Copy Directory Tree
 =============================
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`../../cp`
+
 * We just :doc:`had a look at <verify-hierarchy>` the directory tree
   at ``/tmp/parent``
 
