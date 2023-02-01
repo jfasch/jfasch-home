@@ -4,3 +4,6 @@
 [submodule "googletest"]
 	path = googletest
 	url = https://github.com/google/googletest
+[submodule "trainings/material/soup/linux/sysprog/code/blink"]
+	path = trainings/material/soup/linux/sysprog/code/blink
+	url = git@github.com:jfasch/blink.git
