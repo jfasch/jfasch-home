@@ -6,6 +6,16 @@ Linux Systems Programming (2023-02-13 - 2023-02-17)
 .. contents::
    :local:
 
+.. sidebar::
+
+   **Github Repository**
+
+   * https://github.com/jfasch/2023-02-13
+
+   **CMake Toolchain File (Raspberry Corss Build)**
+
+   * :download:`armv8-rpi4-linux-gnueabihf.cmake`
+
 Programming Environment
 -----------------------
 
@@ -38,6 +48,17 @@ Agenda
 Day 1: Overview
 ...............
 
+Introductory Live Hacking
+`````````````````````````
+
+Hammering on a GPIO pin: a typical example of how hardware access
+works on Linux (from
+:doc:`/trainings/material/soup/linux/sysprog/intro-hw/group`).
+
+* :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
+* :doc:`/trainings/material/soup/linux/sysprog/intro-hw/get`
+* :doc:`/trainings/material/soup/linux/sysprog/intro-hw/watch`
+
 The Shell
 `````````
 
@@ -47,17 +68,51 @@ of these concepts will be viewed programmatically in the remainder of
 the course. It will be no surprise, for example, that communication
 with hardware has to do with file I/O.
 
-* :doc:`Konzepte und Terminologie
-  </trainings/material/soup/linux/basics/intro/group>`
-* :doc:`/trainings/material/soup/linux/basics/shell/group`
-  (auszugsweise)
-* :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
-* :doc:`/trainings/material/soup/linux/basics/permissions/group`
+* From :doc:`/trainings/material/soup/linux/basics/intro/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/intro/overview`
+  * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
+  * :doc:`/trainings/material/soup/linux/basics/intro/process`
+  * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
+  * :doc:`/trainings/material/soup/linux/basics/intro/environment`
+  * :doc:`/trainings/material/soup/linux/basics/intro/login`
+
+* From :doc:`/trainings/material/soup/linux/basics/shell/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
+  * :doc:`/trainings/material/soup/linux/basics/shell/paths`
+  * :doc:`/trainings/material/soup/linux/basics/shell/ls`
+  * :doc:`/trainings/material/soup/linux/basics/shell/cwd`
+  * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
+  * :doc:`/trainings/material/soup/linux/basics/shell/cp`
+  * :doc:`/trainings/material/soup/linux/basics/shell/mv`
+  * :doc:`/trainings/material/soup/linux/basics/shell/links`
+  * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
+
+* From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
+
+* From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
 
 Secure Shell (SSH)
 ``````````````````
 
-* :doc:`/trainings/material/soup/linux/ssh/group`
+* From :doc:`/trainings/material/soup/linux/ssh/group` ...
+
+  * :doc:`/trainings/material/soup/linux/ssh/basics`
+  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
+  * :doc:`/trainings/material/soup/linux/ssh/scp`
+  * :doc:`/trainings/material/soup/linux/ssh/sshfs`
 
 Cross Development
 `````````````````

@@ -82,3 +82,6 @@ C++, OO
    * * ``std::map`` is a sequential data structure
      *
      *
+   * * ``std::vector`` is a sequential data structure
+     *
+     *

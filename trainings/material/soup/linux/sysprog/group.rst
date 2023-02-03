@@ -13,6 +13,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
+   intro-hw/group
    basics/group
    file-io/group
    blocking-io/group

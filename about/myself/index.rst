@@ -1,6 +1,11 @@
 Über Mich
 =========
 
+.. toctree::
+   :hidden:
+
+   wohnung/index
+
 .. list-table::
    :align: left
 

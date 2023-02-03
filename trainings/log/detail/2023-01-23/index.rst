@@ -83,6 +83,14 @@ Agenda
   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/tar`
   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/exercises`
 
+* Networking (from :download:`Linux Basics PDF
+  </trainings/material/pdf/010-linux-basics.pdf>`)
+
+  * ``netstat``
+  * Netcat (``nc``)
+
+* Processes And Scheduling (from :download:`Linux Basics PDF
+  </trainings/material/pdf/010-linux-basics.pdf>`)
 * :doc:`More about SSH </trainings/material/soup/linux/ssh/group>`
 
   * :doc:`/trainings/material/soup/linux/ssh/scp`

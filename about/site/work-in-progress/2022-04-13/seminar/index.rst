@@ -42,7 +42,7 @@ Is Software A Craft? Software Is A Craft!
 
    Every craft has rules
 
-   This particular electrical installation does not seems to adhere to
+   This particular electrical installation does not seem to adhere to
    any rule.
 
 .. figure:: ../images/gsellmanns-weltmaschine.jpg
