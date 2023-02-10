@@ -4,6 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2023-03-28--Python-Clean-Code/index
    2023-03-20--C++-embedded/index
    2023-XX-XX-C++-embedded/index
    2023-XX-XX-Python-SAP/index

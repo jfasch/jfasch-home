@@ -1,16 +1,17 @@
 .. include:: <mmlalias.txt>
 
 
-C++ For Embedded Developers (Beginning of 2023)
-===============================================
+C++ For Embedded Developers (2023-03-20 - 2023-03-23)
+=====================================================
 
 .. contents::
    :local:
 
 .. sidebar::
 
+   * Start: Monday 9:00
    * 3 days
-   * Course project on Github: https://github.com/jfasch/2023-03-07
+   * Project on Github: https://github.com/jfasch/2023-03-20
 
 Goal
 ----
@@ -68,7 +69,7 @@ Skeleton Project Setup
 ......................
 
 Follow the instructions in the `course project README
-<https://github.com/jfasch/2023-03-07>`__ to setup the initial version
+<https://github.com/jfasch/2023-03-20>`__ to setup the initial version
 of the course project.
 
 C++ Overview Presentation
@@ -153,7 +154,8 @@ Exercise Series
 Based upon an object oriented encapsulation for OS primitives (timers
 and GPIOs, mainly),
 
-* Sensors
+* Sensors (roughly taken from :doc:`here
+  </trainings/material/soup/cxx-exercises/oo-sensors/group>`)
 
   * A sensor *abstract base class* - an *interface*
   * A number of concrete sensor implementations

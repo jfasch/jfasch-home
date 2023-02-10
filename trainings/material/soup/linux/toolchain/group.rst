@@ -45,16 +45,15 @@ architecture that the development machine.
    cmake/stub-cmake-course
    cmake/local
    cmake/cross
-
-   exercises/group
+   raspberry-pi/group
 
 Exercises
 ---------
 
-.. .. toctree::
-..    :maxdepth: 1
-.. 
-..    exercises/group
+.. toctree::
+   :maxdepth: 1
+
+   exercises/group
 
 Dependencies
 ------------

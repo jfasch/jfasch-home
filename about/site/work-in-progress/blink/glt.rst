@@ -38,8 +38,9 @@ number of topics as we go:
   onto one *single-threaded* event loop. Given that timers are events,
   this gives us the possiblity to run multiple LED blinking programs
   in one single thread - saving all the context switching and
-  scheduling overhead that multithreaded program usually
-  bring. Blinking with less glitches caused by context switch hiccups!
+  scheduling overhead that multithreaded programs usually
+  exhibit. Blinking with less glitches caused by context switch
+  hiccups!
 * Ah, blinking patterns. Know what Python decorators are? Closures?
   We'll twist our brains and create a ``@program`` decorator,
   implemented as a triple-closure, and use that to write a number of

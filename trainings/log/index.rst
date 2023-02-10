@@ -15,6 +15,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Clean Code Development With Python (2023-03-28 - 2023-03-30)
+------------------------------------------------------------
+
+This training is under preparation.
+
+(:doc:`More ... <detail/2023-03-28--Python-Clean-Code/index>`)
+
 C++ For Embedded Developers (2023-03-20 - 2023-03-22)
 -----------------------------------------------------
 

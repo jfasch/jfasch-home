@@ -11,7 +11,7 @@ Download And Install Toolchain Archive
 
    **See also**
 
-   * :doc:`toolchain-build-docker-fedora`
+   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-docker-fedora`
 
    **Download**: 
 
