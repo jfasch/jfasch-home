@@ -22,7 +22,7 @@ Cross Build: Parameters
 
 * Cross build parameters "toolchain" and "sysroot"
 * See :doc:`/trainings/material/soup/linux/toolchain/cross/basics` and
-  :doc:`/trainings/material/soup/linux/toolchain/cross/raspberry`
+  :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
 * *Toolchain*: usually a ``$PATH`` setting and a compiler name
   (``arm-linux-gnueabihf-gcc``)
 * *Sysroot*: a directory with target artifacts

@@ -234,7 +234,7 @@ On The Target
    * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
    * FH toolchain setup (you should have that already in place for a
      long time though):
-     :doc:`/about/site/work-in-progress/fh-joanneum/2020/ws2022/toolchain-setup`
+     :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
 
 Having *cross compiled* the project (:doc:`see here
 </trainings/material/soup/linux/toolchain/cmake/cross>`), we test it

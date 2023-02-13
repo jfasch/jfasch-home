@@ -21,11 +21,10 @@ Topics
    :maxdepth: 1
 
    basics
-   raspberry
 
-Exercises
----------
-
+.. Exercises
+.. ---------
+.. 
 .. .. toctree::
 ..    :maxdepth: 1
 .. 

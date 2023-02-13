@@ -103,7 +103,7 @@ Block 2: C on Linux: Local and *Cross* Development
      * 3
      * **Get cross build running, Homework**
 
-       * :doc:`/trainings/material/soup/linux/toolchain/cross/raspberry`
+       * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/group`
        * :doc:`/trainings/material/soup/linux/toolchain/exercises/raspberry-toolchain`
        * :doc:`/trainings/material/soup/linux/toolchain/exercises/native-build`
        * :doc:`/trainings/material/soup/linux/toolchain/exercises/cross-build`

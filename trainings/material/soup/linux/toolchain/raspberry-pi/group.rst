@@ -12,8 +12,10 @@ Topics
 .. toctree::
    :maxdepth: 1
 
-   cross-details
+   toolchain-build-details
    toolchain-build-docker-fedora
+   linaro
+   toolchain-setup
 
 Dependencies
 ------------

@@ -17,7 +17,7 @@ Topics
 * :doc:`/trainings/material/soup/linux/basics/intro/environment`
 * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
-* :doc:`/trainings/material/soup/linux/toolchain/cross/raspberry`
+* :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/group`
 
 **Development environment**
 

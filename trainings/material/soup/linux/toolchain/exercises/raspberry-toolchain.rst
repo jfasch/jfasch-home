@@ -7,7 +7,7 @@ Exercise: Install And Check Raspberry Toolchain
 ===============================================
 
 * Install the RaspberryPi toolchain as described :doc:`here
-  <../cross/raspberry>`
+  <../raspberry-pi/toolchain-setup>`
 
 .. ot-graph::
    :entries: linux.toolchain.exercises.raspberry_toolchain

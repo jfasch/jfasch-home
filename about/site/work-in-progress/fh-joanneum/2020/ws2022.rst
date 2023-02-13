@@ -86,7 +86,7 @@ Plan: Evolution
      * 4
      *
 
-       * :doc:`ws2022/toolchain-setup`
+       * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
        * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
        
    * * 
@@ -134,7 +134,7 @@ Plan: Evolution
        * Github project: https://github.com/jfasch/FH-ECE20-final
        * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1-factory`
        * Pi Toolchain file:
-         :download:`/about/site/work-in-progress/fh-joanneum/2020/ws2022/armv8-rpi4-linux-gnueabihf.cmake`
+         :download:`/trainings/material/soup/linux/toolchain/raspberry-pi/armv8-rpi4-linux-gnueabihf.cmake`
 
    * * 2022-12-21
      * 

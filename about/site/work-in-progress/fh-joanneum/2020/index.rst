@@ -10,7 +10,6 @@ Embedded Computing 2020
    ss2022
    ss2022-log/index
    ws2022
-   ws2022/toolchain-setup
    ws2022/lab-exam-2023-01-17
 
 .. toctree::

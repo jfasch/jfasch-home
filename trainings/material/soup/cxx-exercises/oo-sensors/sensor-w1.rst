@@ -22,7 +22,7 @@ Test Monolithic Implementation
 ------------------------------
 
 * Setup toolchain (if not yet done):
-  :doc:`/about/site/work-in-progress/fh-joanneum/2020/ws2022/toolchain-setup`
+  :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
 * Build as described in
   :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
 

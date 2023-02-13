@@ -1,4 +1,4 @@
-.. ot-topic:: linux.toolchain.cross.raspberry
+.. ot-topic:: linux.toolchain.raspi.linaro_pi
    :dependencies: linux.toolchain.cross.basics,
 		  linux.ssh.basics,
 		  linux.ssh.scp,
@@ -8,12 +8,12 @@
 .. include:: <mmlalias.txt>
 
 
-The Raspberry Toolchain
-=======================
+Linaro Toolchain For The Pi (Defunct)
+=====================================
 
 .. important::
 
-   This article is defunct; check out :doc:`/blog/2022/09/cross-raspi`
+   This article is defunct; check out :doc:`toolchain-build-details`
    instead!
 
    Reason: C++ is much more involved, and ``libstdc++`` itself (as

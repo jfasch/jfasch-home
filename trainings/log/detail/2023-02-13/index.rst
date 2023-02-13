@@ -45,8 +45,8 @@ For the more involved hardware related topics, I'll bring a Raspberry
 Pi and some network equipment and build up a local network where we
 can log in from our PCs.
 
-Please check that connecting to some foreign untrusted LAN is
-permitted IT-wise.
+Please check that connecting the course participants' PCs to some
+foreign untrusted LAN is permitted IT-wise.
 
 Agenda
 ------
@@ -148,8 +148,16 @@ architecture that the development machine.
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
   * :doc:`/trainings/material/soup/linux/toolchain/exercises/group`
 
-* Bringing a :doc:`self-made cross toolchain for the Raspberry
-  </blog/2022/09/cross-raspi>`
+* Establish a custom built toolchain for Raspberry Pi cross
+  development (from
+  :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/group`)
+
+  * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
+
+  Have a look into how toolchains are made:
+
+  * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-details`
+  * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-docker-fedora`
 
 Day 2: File I/O and Processes
 .............................
@@ -214,3 +222,5 @@ Day 5: Miscellaneous Hardware Topics
   * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
   * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
   * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
+
+* Maybe some insight into :doc:`/trainings/material/soup/kernel/group`

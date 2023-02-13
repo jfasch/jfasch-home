@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-Toolchain Build *On* Fedora *For* Ubuntu 18.04 (WSL)
-====================================================
+Building A Toolchain *On* Fedora *For* Ubuntu 18.04 (WSL)
+=========================================================
 
 .. contents::
    :local:
