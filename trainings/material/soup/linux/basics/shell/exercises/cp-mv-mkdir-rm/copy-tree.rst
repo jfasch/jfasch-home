@@ -13,12 +13,12 @@ Exercise: Copy Directory Tree
    * :doc:`../../cp`
 
 * We just :doc:`had a look at <verify-hierarchy>` the directory tree
-  at ``/tmp/parent``
+  at ``/tmp/firstname.lastname/parent``
 
   .. code-block:: console
   
-     $ tree /tmp/parent
-     /tmp/parent
+     $ tree /tmp/firstname.lastname/parent
+     /tmp/firstname.lastname/parent
      ├── child
      │   ├── business-card
      │   ├── garbage1.txt

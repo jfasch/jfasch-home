@@ -6,8 +6,16 @@
 Exercise: ``mkdir``, ``rm``
 ===========================
 
-* Change your *current working directory* to ``/tmp``
-* Inside ``/tmp``
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
+
+* Create a directory ``/tmp/firstname.lastname``
+* Change your *current working directory* to
+  ``/tmp/firstname.lastname``
+* Inside ``/tmp/firstname.lastname``
 
   * :doc:`Create a subdirectory <../../file_dir_create_rm>` ``parent``
     (using a :doc:`relative path <../../paths>`)

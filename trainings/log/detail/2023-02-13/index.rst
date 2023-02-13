@@ -92,6 +92,25 @@ with hardware has to do with file I/O.
   * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
   * :doc:`/trainings/material/soup/linux/basics/shell/cp`
   * :doc:`/trainings/material/soup/linux/basics/shell/mv`
+  * Exercises (from
+    :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/group`)
+
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/etc-passwd-size`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/dev-types`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/home-permissions`
+
+  * Exercises (from
+    :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`)
+
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-copy-files`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-move-files`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/verify-hierarchy`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/copy-tree`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-tree`
+    * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-rf`
+
   * :doc:`/trainings/material/soup/linux/basics/shell/links`
   * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 

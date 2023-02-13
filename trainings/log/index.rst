@@ -32,9 +32,9 @@ This training is under preparation.
 Linux Systems Programming (2023-02-13 - 2023-02-17)
 ---------------------------------------------------
 
-Dieser Kurs ist in Vorbereitung.
+This training is under preparation.
 
-(:doc:`Mehr ... <detail/2023-02-13/index>`)
+(:doc:`More ... <detail/2023-02-13/index>`)
 
 Linux Basics (2023-01-23 - 2023-01-26)
 --------------------------------------

@@ -15,7 +15,7 @@ In the exercises
 * :doc:`echo-copy-files`
 * :doc:`echo-move-files`
 
-, you created a tree rooted at ``/tmp/parent``.
+, you created a tree rooted at ``/tmp/firstname.lastname/parent``.
 
 1. Verify that all is correct
 
@@ -33,14 +33,14 @@ In the exercises
         ├── garbage2.txt
         └── hello
       
-   * The file ``/tmp/parent/hello`` should look as follows,
+   * The file ``/tmp/firstname.lastname/parent/hello`` should look as follows,
    
      .. code-block:: console
    
         $ cat /tmp/parent/hello
         hello sweetheart
    
-   * The file ``/tmp/parent/child/business-card`` should contain
+   * The file ``/tmp/firstname.lastname/parent/child/business-card`` should contain
      something like,
    
      .. code-block:: console
@@ -52,7 +52,7 @@ In the exercises
         8020 Graz
 
 2. If any of the above is not the case, :doc:`remove
-   <../../file_dir_create_rm>` ``/tmp/parent`` again recursively, and
+   <../../file_dir_create_rm>` ``/tmp/firstname.lastname/parent`` again recursively, and
    recreate the hierarchy.
 3. **Repeat until successful!**
 

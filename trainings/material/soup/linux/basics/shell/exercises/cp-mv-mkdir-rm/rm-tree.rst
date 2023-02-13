@@ -6,6 +6,12 @@
 Exercise: Remove Directory Tree
 ===============================
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
+
 * In :doc:`copy-tree`, you created a directory ``~/parent-copy``,
 
   .. code-block:: console

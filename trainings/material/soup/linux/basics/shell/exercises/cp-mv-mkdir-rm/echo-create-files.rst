@@ -8,6 +8,13 @@
 Exercise: Create Files (I/O Redirection)
 ========================================
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/basics/shell/cwd`
+   * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
+
 * Make your home directory your *current working diretory* ("Change
   into your home directory")
 * *From there*, fill the directory hierarchy from :doc:`mkdir-p-rm-r`
