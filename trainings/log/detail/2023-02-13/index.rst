@@ -48,14 +48,11 @@ can log in from our PCs.
 Please check that connecting the course participants' PCs to some
 foreign untrusted LAN is permitted IT-wise.
 
-Agenda
-------
-
 Day 1: Overview
-...............
+---------------
 
 Introductory Live Hacking
-`````````````````````````
+.........................
 
 Hammering on a GPIO pin: a typical example of how hardware access
 works on Linux (from
@@ -66,7 +63,7 @@ works on Linux (from
 * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/watch`
 
 The Shell
-`````````
+.........
 
 Using the Shell's commandline, an overview is given about Unix system
 concepts like *processes*, *files*, and *permissions*. Many if not all
@@ -111,6 +108,14 @@ with hardware has to do with file I/O.
     * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-tree`
     * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-rf`
 
+Day 2
+-----
+
+The Shell, Continued
+....................
+
+* From :doc:`/trainings/material/soup/linux/basics/shell/group`
+
   * :doc:`/trainings/material/soup/linux/basics/shell/links`
   * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
@@ -130,7 +135,7 @@ with hardware has to do with file I/O.
   * :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
 
 Secure Shell (SSH)
-``````````````````
+..................
 
 * From :doc:`/trainings/material/soup/linux/ssh/group` ...
 
@@ -140,7 +145,7 @@ Secure Shell (SSH)
   * :doc:`/trainings/material/soup/linux/ssh/sshfs`
 
 Cross Development
-`````````````````
+.................
 
 An overview of the *toolchain* is given - a collection of tools
 (compiler, linker, ...) to transform C/C++ source code into running
@@ -179,7 +184,7 @@ architecture that the development machine.
   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-docker-fedora`
 
 Day 2: File I/O and Processes
-.............................
+-----------------------------
 
 Files and processes are the cornerstones of the Unix design - concepts
 that have proven very stable since their invention in the seventies of
@@ -196,7 +201,7 @@ related capabilities build upon those.
   * :doc:`/trainings/material/soup/linux/sysprog/file-io/group`
 
 Day 3: Network Programming (including CAN-Bus)
-..............................................
+----------------------------------------------
 
 Siehe :doc:`/trainings/repertoire/sysprog/network`
 
@@ -205,7 +210,7 @@ Siehe :doc:`/trainings/repertoire/sysprog/network`
 * Advanced topics: event driven programming
 
 Day 4: Multithreading, and Realtime
-...................................
+-----------------------------------
 
 From :doc:`/trainings/repertoire/sysprog/multithreading`:
 
@@ -229,7 +234,7 @@ From :doc:`/trainings/repertoire/sysprog/multithreading`:
    * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
 
 Day 5: Miscellaneous Hardware Topics
-....................................
+------------------------------------
 
 * Serial interfaces (UART): introduction in `termios
   <https://www.man7.org/linux/man-pages/man3/termios.3.html>`__
