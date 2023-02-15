@@ -249,6 +249,12 @@ Voila, everything there - one device at address ``0x48``.
 Using the Device: Talking I2C from Userspace
 --------------------------------------------
 
+.. sidebar::
+
+   **Documentation**
+
+   * :download:`LM73 datasheet (download) <Thermometer_LM73.pdf>`
+
 Reading the :download:`datasheet <Thermometer_LM73.pdf>` thoroughly
 [#datasheet-authors-mad]_, one can implement the device's protocol in
 userspace. On the *bus* device ``/dev/i2c-1``, you kind of *connect*

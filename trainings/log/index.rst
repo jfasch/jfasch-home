@@ -32,7 +32,8 @@ This training is under preparation.
 Linux Systems Programming (2023-02-13 - 2023-02-17)
 ---------------------------------------------------
 
-This training is under preparation.
+Explaining Linux, Unix, and especially Linux hardware interfaces to a
+number of smart electronic engineers.
 
 (:doc:`More ... <detail/2023-02-13/index>`)
 

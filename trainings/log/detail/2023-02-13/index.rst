@@ -19,8 +19,13 @@ Linux Systems Programming (2023-02-13 - 2023-02-17)
    **Toolchain (Raspberry Cross Build)**
 
    * Toolchain archive: `armv8-rpi4-linux-gnueabihf.tar.xz
-     <https://drive.google.com/file/d/1FJvnLGbHwAABy0DgVfRvSqDnuqK5aloZ/view?usp=sharing>`
+     <https://drive.google.com/file/d/1FJvnLGbHwAABy0DgVfRvSqDnuqK5aloZ/view?usp=sharing>`__
    * CMake toolchain file: :download:`armv8-rpi4-linux-gnueabihf.cmake`
+
+   **Good Ol' Sysprog PDF**
+
+   * :download:`020-linux-sysprog--en.pdf
+     </trainings/material/pdf/020-linux-sysprog--en.pdf>`
 
 Programming Environment
 -----------------------
@@ -78,7 +83,6 @@ with hardware has to do with file I/O.
   * :doc:`/trainings/material/soup/linux/basics/intro/process`
   * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
   * :doc:`/trainings/material/soup/linux/basics/intro/environment`
-  * :doc:`/trainings/material/soup/linux/basics/intro/login`
 
 * From :doc:`/trainings/material/soup/linux/basics/shell/group`
 
@@ -111,54 +115,168 @@ with hardware has to do with file I/O.
 Day 2
 -----
 
-The Shell, Continued
-....................
+Processes Quick Walk-Through
+............................
 
-* From :doc:`/trainings/material/soup/linux/basics/shell/group`
+* From :doc:`/trainings/material/soup/linux/sysprog/group`
 
-  * :doc:`/trainings/material/soup/linux/basics/shell/links`
-  * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
+  * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
 
-* From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
+* jjj copy ``process.cpp`` from Rapsi into github repo
+  (``livehacking``); add link here
+* Quick livehacking walk-through: chapter "Processes" from
+  :download:`020-linux-sysprog--en.pdf
+  </trainings/material/pdf/020-linux-sysprog--en.pdf>`
 
-  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
-  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
-  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
-  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
+  * Argument vector
+  * Environment
+  * Exit status
+  * ``PID``
+  * ``PPID``
+  * Signals
 
-* From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+Permissions
+...........
 
-  * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
-  * :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
+From :doc:`/trainings/material/soup/linux/basics/permissions/group`
 
-Secure Shell (SSH)
-..................
+* :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+* :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
+* :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
+* :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+* :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
+* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
 
-* From :doc:`/trainings/material/soup/linux/ssh/group` ...
+Development: CMake Quick Intro, And Git Quick Intro
+...................................................
 
-  * :doc:`/trainings/material/soup/linux/ssh/basics`
-  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
-  * :doc:`/trainings/material/soup/linux/ssh/scp`
-  * :doc:`/trainings/material/soup/linux/ssh/sshfs`
+* Setup Github project for local build: https://github.com/jfasch/2023-02-13
+* |longrightarrow| See instructions on that page
+
+File IO
+.......
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/sysprog/group`
+
+* :doc:`/trainings/material/soup/linux/sysprog/basics/group`
+
+  * :doc:`/trainings/material/soup/linux/sysprog/basics/syscalls`
+  * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/group`
+
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+
+Day 3
+-----
+
+UART
+....
+
+.. sidebar::
+
+   * `man -s 1 stty
+     <https://man7.org/linux/man-pages/man1/stty.1.html>`__
+   * `man -s 3 termios
+     <https://www.man7.org/linux/man-pages/man3/termios.3.html>`__
+   * `man -s 2 ioctl_tty
+     <https://man7.org/linux/man-pages/man2/ioctl_tty.2.html>`__
+   * `man -s 8 setserial <https://linux.die.net/man/8/setserial>`__
+   * ``setserial`` source code on `Github
+     <https://github.com/Distrotech/setserial>`__
+   * Linux kernel source code (e.g. on `Github
+     <https://github.com/torvalds/linux>`__): `drivers/tty/tty_io.c
+     <https://github.com/torvalds/linux/blob/master/drivers/tty/tty_io.c>`__
+
+* First try: four programs, two on either side (``cat``, and ``echo``)
+
+  * |longrightarrow| weird output when used bidirectionally
+  * Enable "raw mode" |:thinking:| |longrightarrow| `man -s 1 stty
+    <https://man7.org/linux/man-pages/man1/stty.1.html>`__
+  * |longrightarrow| no special character handling in terminal
+    driver. *Want no terminal, want naked UART IO!!*
+  * |longrightarrow| weird output still weird, but less so
+
+* Dedicated input and output programs
+
+  * `tty-read.cpp
+    <https://github.com/jfasch/2023-02-13/blob/main/livehacking/tty-read.cpp>`__
+  * `tty-write.cpp
+    <https://github.com/jfasch/2023-02-13/blob/main/livehacking/tty-read.cpp>`__
+  * First w/o ``termios`` and
+    ``TIOCGSERIAL``/``TIOCSSERIAL``/``ASYNC_LOW_LATENCY``
+  * |longrightarrow| better
+
+* Add ``cfmakeraw()`` programmatically (the "non-cooked mode" from
+  `man -s 1 stty
+  <https://man7.org/linux/man-pages/man1/stty.1.html>`__)
+
+  * |longrightarrow| **this is what we want to see!**
+
+* "Realtime": ``setserial /dev/ttyUSB0 low_latency`` (`man -s 8
+  setserial <https://linux.die.net/man/8/setserial>`__), only
+  programmatically
+
+  * ``setserial`` source code on `Github
+    <https://github.com/Distrotech/setserial>`__
+  * Linux kernel source code: `drivers/tty/tty_io.c
+    <https://github.com/torvalds/linux/blob/master/drivers/tty/tty_io.c>`__
+  * ``ioctl(fd, TIOCGSERIAL, &serial_struct)``
+  * ``serial_struct.flags |= ASYNC_LOW_LATENCY``
+  * ``ioctl(fd, TIOCSSERIAL, &serial_struct)``
+
+* `tty-bidir-threads.cpp
+  <https://github.com/jfasch/2023-02-13/blob/main/livehacking/tty-bidir-threads.cpp>`__:
+  not separate programs on different fds; two threads hammering on one
+  fd
+* Livehacking: transform that into event-driven (jjj)
+
+SUSI
+....
+
+* `Advantec Marketingese <https://youtu.be/FmbXboI7slQ>`__ (IoT
+  blahblah)
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/FmbXboI7slQ" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	     allowfullscreen>
+     </iframe>
+
+  |:middle_finger:|
+
+Exercise
+........
+
+.. sidebar::
+
+   **Github Repository**
+
+   * https://github.com/jfasch/2023-02-13
+   * Especially ``mycat.cpp``:
+     https://github.com/jfasch/2023-02-13/blob/main/exercises/mycat.cpp
+
+Modify that program such that it mimicks ``cat``:
+
+* Is given on single filename argument
+* Opens that file
+* Reads its content, and outputs it on *standard output*
+
+.. code-block:: console
+
+   $ ./mycat /etc/passwd
+   ... contents of /etc/passwd here ...
 
 Cross Development
 .................
-
-An overview of the *toolchain* is given - a collection of tools
-(compiler, linker, ...) to transform C/C++ source code into running
-executables.
-
-This is followed by an introduction to `CMake <cmake.org>`_, a higher
-level build tool that solves many problems that both hand-written
-``Makefile`` hacks and IDE-clickabout builds have.
-
-Last, a bit more involved, we see how cross development is
-done. Together with :doc:`/trainings/material/soup/linux/ssh/group`,
-this enables us to build software for devices that show a different
-architecture that the development machine.
 
 * From :doc:`/trainings/material/soup/linux/toolchain/group`
 
@@ -183,25 +301,30 @@ architecture that the development machine.
   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-details`
   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-docker-fedora`
 
-Day 2: File I/O and Processes
------------------------------
+Remaining Shell/OS Topics
+.........................
 
-Files and processes are the cornerstones of the Unix design - concepts
-that have proven very stable since their invention in the seventies of
-the past century. They have driven the evolution of Linux (and MacOS
-and Android, for what it's worth), and many of Linux's hardware
-related capabilities build upon those.
+* From :doc:`/trainings/material/soup/linux/basics/shell/group`
 
-* Processes (chapter "Processes" from :download:`Linux Systems
-  Programming (PDF) (download)
-  </trainings/material/pdf/020-linux-sysprog--en.pdf>`)
-* System Calls, Blocking, und File I/O
+  * :doc:`/trainings/material/soup/linux/basics/shell/links`
+  * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
-  * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/group`
+* From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
 
-Day 3: Network Programming (including CAN-Bus)
-----------------------------------------------
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
+  * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
+
+Secure Shell (SSH)
+..................
+
+* From :doc:`/trainings/material/soup/linux/ssh/group` ...
+
+  * :doc:`/trainings/material/soup/linux/ssh/basics`
+  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
+  * :doc:`/trainings/material/soup/linux/ssh/scp`
+  * :doc:`/trainings/material/soup/linux/ssh/sshfs`
 
 Siehe :doc:`/trainings/repertoire/sysprog/network`
 
