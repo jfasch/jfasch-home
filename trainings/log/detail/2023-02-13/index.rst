@@ -1,5 +1,6 @@
 .. include:: <mmlalias.txt>
 
+
 Linux Systems Programming (2023-02-13 - 2023-02-17)
 ===================================================
 
@@ -22,10 +23,12 @@ Linux Systems Programming (2023-02-13 - 2023-02-17)
      <https://drive.google.com/file/d/1FJvnLGbHwAABy0DgVfRvSqDnuqK5aloZ/view?usp=sharing>`__
    * CMake toolchain file: :download:`armv8-rpi4-linux-gnueabihf.cmake`
 
-   **Good Ol' Sysprog PDF**
+   **PDF slides (unmaintained)**
 
-   * :download:`020-linux-sysprog--en.pdf
+   * Systems Programming: :download:`020-linux-sysprog--en.pdf
      </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+   * CMake: :download:`045-cmake.pdf
+     </trainings/material/pdf/045-cmake.pdf>`
 
 Programming Environment
 -----------------------
@@ -122,7 +125,7 @@ Processes Quick Walk-Through
 
   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
 
-* jjj copy ``process.cpp`` from Rapsi into github repo
+* jjj copy ``process.cpp`` from Raspi into github repo
   (``livehacking``); add link here
 * Quick livehacking walk-through: chapter "Processes" from
   :download:`020-linux-sysprog--en.pdf
@@ -233,7 +236,8 @@ UART
   <https://github.com/jfasch/2023-02-13/blob/main/livehacking/tty-bidir-threads.cpp>`__:
   not separate programs on different fds; two threads hammering on one
   fd
-* Livehacking: transform that into event-driven (jjj)
+* Livehacking: transform that into event-driven (`tty-bidir-events.cpp
+  <https://github.com/jfasch/2023-02-13/blob/main/livehacking/tty-bidir-events.cpp>`__)
 
 SUSI
 ....
@@ -295,14 +299,87 @@ Cross Development
   :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/group`)
 
   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
+  * Unpacking the toolchain archive:
+    :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
 
   Have a look into how toolchains are made:
 
   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-details`
   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-docker-fedora`
 
-Remaining Shell/OS Topics
+Day 4
+-----
+
+Secure Shell (SSH)
+..................
+
+* From :doc:`/trainings/material/soup/linux/ssh/group` ...
+
+  * :doc:`/trainings/material/soup/linux/ssh/basics`
+  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
+  * :doc:`/trainings/material/soup/linux/ssh/scp`
+  * :doc:`/trainings/material/soup/linux/ssh/sshfs`
+
+Miscellaneous Hardware
+......................
+
+* From :doc:`/trainings/material/soup/linux/hardware/group`
+
+  * :doc:`/trainings/material/soup/linux/hardware/can/group`
+  * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
+  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
+  * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
+
+Group Exercise
+..............
+
+* Send sensor values (:doc:`W1
+  </trainings/material/soup/linux/hardware/w1/topic>`, and
+  :doc:`userspace LM73
+  </trainings/material/soup/linux/hardware/i2c/topic>`) over CAN
+* Receive values, and show via a :doc:`PWM'd LED
+  </trainings/material/soup/linux/hardware/pwm/topic>`
+
+Day 5
+-----
+
+* Some OO: PWM display (`display-pwm.h
+  <https://github.com/jfasch/2023-02-13/blob/main/company/display-pwm.h>`__,
+  `display-pwm.cpp
+  <https://github.com/jfasch/2023-02-13/blob/main/company/display-pwm.cpp>`__),
+  and associated program (`show-pwm-temperature.cpp
+  <https://github.com/jfasch/2023-02-13/blob/main/company-bin/show-pwm-temperature.cpp>`__
+* Show sine wave: `show-pwm-temperature-sine.cpp
+  <https://github.com/jfasch/2023-02-13/blob/main/company-bin/show-pwm-temperature-sine.cpp>`__
+* Realtime sine waves on 2 LEDs (see ``make_realtime()`` in
+  `show-pwm-temperature-sine.cpp
+  <https://github.com/jfasch/2023-02-13/blob/main/company-bin/show-pwm-temperature-sine.cpp>`__)
+* More OO? Writing temperature to CAN could be viewed as another kind
+  of display. A little C++ interfacery ( `display.h
+  <https://github.com/jfasch/2023-02-13/blob/main/company/display.h>`__,
+  leading to `display-can.h
+  <https://github.com/jfasch/2023-02-13/blob/main/company/display-can.h>`__,
+  `display-can.cpp
+  <https://github.com/jfasch/2023-02-13/blob/main/company/display-can.cpp>`__)
+
+  * |longrightarrow| *is-a* Display
+
+* CIFS/Samba: mounting a Windows share on Linux:
+  https://automationadmin.com/2016/12/mounting-a-samba-share-in-fedora/#gsc.tab=0
+
+
+Untold
+------
+
+More From The Commandline
 .........................
+
+.. sidebar::
+
+   **See also**
+
+   * Shell scripting: :download:`100-shell-scripting.pdf
+     </trainings/material/pdf/100-shell-scripting.pdf>`
 
 * From :doc:`/trainings/material/soup/linux/basics/shell/group`
 
@@ -316,24 +393,8 @@ Remaining Shell/OS Topics
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
 
-Secure Shell (SSH)
-..................
-
-* From :doc:`/trainings/material/soup/linux/ssh/group` ...
-
-  * :doc:`/trainings/material/soup/linux/ssh/basics`
-  * :doc:`/trainings/material/soup/linux/ssh/key-pair`
-  * :doc:`/trainings/material/soup/linux/ssh/scp`
-  * :doc:`/trainings/material/soup/linux/ssh/sshfs`
-
-Siehe :doc:`/trainings/repertoire/sysprog/network`
-
-* TCP/IP Networking
-* :doc:`/trainings/material/soup/linux/hardware/can/group`
-* Advanced topics: event driven programming
-
-Day 4: Multithreading, and Realtime
------------------------------------
+Multithreading (And C++)
+........................
 
 From :doc:`/trainings/repertoire/sysprog/multithreading`:
 
@@ -342,32 +403,11 @@ From :doc:`/trainings/repertoire/sysprog/multithreading`:
 * Atomics
 * Realtime
 
-.. note::
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
 
-   Maybe we should have a look at how threading is done in :doc:`C++
-   11 </trainings/material/soup/cxx11/group>` ...
-
-   From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
-
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
-
-Day 5: Miscellaneous Hardware Topics
-------------------------------------
-
-* Serial interfaces (UART): introduction in `termios
-  <https://www.man7.org/linux/man-pages/man3/termios.3.html>`__
-* GPIO overview: ``libgpiod`` (documentation `here
-  <https://libgpiod.readthedocs.io/en/latest/index.html>`__)
-* From :doc:`/trainings/material/soup/linux/hardware/group`
-
-  * :doc:`/trainings/material/soup/linux/hardware/can/group`
-  * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
-  * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
-  * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
-
-* Maybe some insight into :doc:`/trainings/material/soup/kernel/group`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
