@@ -187,12 +187,12 @@ Create Toolchain Archive
 
 * Tar from ``~/x-tools``
 * Into
-  ``/var/raspi-toolchains/18.04/armv8-rpi4-linux-gnueabihf.tar.bxz``
+  ``/var/raspi-toolchains/18.04/armv8-rpi4-linux-gnueabihf.tar.xz``
 
 .. code-block:: console
 
    $ tar --create --xz \
-         --file /var/raspi-toolchains/18.04/armv8-rpi4-linux-gnueabihf.tar.bxz \
+         --file /var/raspi-toolchains/18.04/armv8-rpi4-linux-gnueabihf.tar.xz \
          --directory ~/x-tools \
          armv8-rpi4-linux-gnueabihf/
 

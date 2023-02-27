@@ -263,6 +263,9 @@ to the device's address (``0x48``), and send bytes back and forth.
 .. literalinclude:: LM73.py
    :caption: :download:`LM73.py`
 
+.. literalinclude:: LM73.cpp
+   :caption: :download:`LM73.cpp`
+
 Implementing the device's protocol in userspace is always possible for
 I2C devices. See `the kernel documentation
 <https://www.kernel.org/doc/html/latest/i2c/dev-interface.html>`__ for

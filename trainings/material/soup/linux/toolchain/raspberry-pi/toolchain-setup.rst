@@ -18,6 +18,7 @@ Download And Install Toolchain Archive
    **See also**
 
    * :doc:`toolchain-build-docker-fedora`
+   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
 
    **Download**: 
 
@@ -26,8 +27,9 @@ Download And Install Toolchain Archive
 
 * `Download
   <https://drive.google.com/file/d/1FJvnLGbHwAABy0DgVfRvSqDnuqK5aloZ/view?usp=share_link>`__
-  the toolchain archive (a whopping 70MB), and unpack to
-  ``<toolchain-dir>``
+  the toolchain archive (a whopping 70MB), and :doc:`unpack
+  </trainings/material/soup/linux/basics/archiving-compression/group>`
+  to ``<toolchain-dir>``
 * Modify ``PATH`` (best permanently in ``~/.bashrc``). Make sure that
   ``<toolchain-dir>`` is given as **absolute path** (:doc:`see here
   </trainings/material/soup/linux/basics/shell/paths>`).
