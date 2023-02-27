@@ -124,19 +124,7 @@ Processes Quick Walk-Through
 * From :doc:`/trainings/material/soup/linux/sysprog/group`
 
   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
-
-* jjj copy ``process.cpp`` from Raspi into github repo
-  (``livehacking``); add link here
-* Quick livehacking walk-through: chapter "Processes" from
-  :download:`020-linux-sysprog--en.pdf
-  </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-
-  * Argument vector
-  * Environment
-  * Exit status
-  * ``PID``
-  * ``PPID``
-  * Signals
+  * :doc:`/trainings/material/soup/linux/sysprog/process/tree`
 
 Permissions
 ...........
@@ -366,7 +354,6 @@ Day 5
 
 * CIFS/Samba: mounting a Windows share on Linux:
   https://automationadmin.com/2016/12/mounting-a-samba-share-in-fedora/#gsc.tab=0
-
 
 Untold
 ------
