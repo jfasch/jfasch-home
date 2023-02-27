@@ -13,6 +13,12 @@ Process Hierarchy (Parent, Child Process)
 More Process Rules
 ------------------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/sysprog/process/tree`
+
 * Every process has a parent process
 
   * Inherits parent's attributes

@@ -1,4 +1,5 @@
 ADD_SUBDIRECTORY(blocking-io)
+ADD_SUBDIRECTORY(process)
 
 ADD_SUBDIRECTORY(scheduling/code)
 
