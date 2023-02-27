@@ -1,0 +1,80 @@
+.. include:: <mmlalias.txt>
+
+
+SS2023
+======
+
+.. contents::
+   :local:
+
+Block 1: Linux, and Working With Remote/Embedded Devices
+--------------------------------------------------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 2023-02-27
+     * 
+     * 3
+     * * :doc:`/trainings/material/soup/linux/basics/intro/overview`
+         (from
+         :doc:`/trainings/material/soup/linux/basics/intro/group`)
+       * "Everything is a file"
+
+	 * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
+           (from
+           :doc:`/trainings/material/soup/linux/basics/intro/group`)
+	 * Reading temperature sensor values (from
+           :doc:`/trainings/material/soup/linux/hardware/w1/topic`)
+	 * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
+
+       * Blocking I/O (from
+         :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`)
+
+	 * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io-file`
+	 * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io-timer`
+
+       * :doc:`/trainings/material/soup/linux/basics/intro/process`
+	 (from
+	 :doc:`/trainings/material/soup/linux/basics/intro/group`)
+
+
+Block 2: C on Linux: Local and *Cross* Development
+--------------------------------------------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 
+     * 
+     * 
+     * 
+
+Block 3: C++
+------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 
+     * 
+     * 
+     * 
