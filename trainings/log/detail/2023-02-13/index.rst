@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Linux Systems Programming (2023-02-13 - 2023-02-17)
-===================================================
+Embedded Linux Systems Programming (2023-02-13 - 2023-02-17)
+============================================================
 
 .. contents::
    :local:
@@ -230,8 +230,10 @@ UART
 SUSI
 ....
 
-* `Advantec Marketingese <https://youtu.be/FmbXboI7slQ>`__ (IoT
-  blahblah)
+* `Advantec Marketingese <https://youtu.be/FmbXboI7slQ>`__. **Security
+  is the "S" in IoT** ... that library requires you to run your code
+  as root. Considered cool nonetheless, and marketed heavily by
+  Advantec.
 
   .. raw:: html
 

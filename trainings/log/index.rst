@@ -29,8 +29,8 @@ This training is under preparation.
 
 (:doc:`More ... <detail/2023-03-20--C++-embedded/index>`)
 
-Linux Systems Programming (2023-02-13 - 2023-02-17)
----------------------------------------------------
+Embedded Linux Systems Programming (2023-02-13 - 2023-02-17)
+------------------------------------------------------------
 
 Explaining Linux, Unix, and especially Linux hardware interfaces to a
 number of smart electronic engineers.
