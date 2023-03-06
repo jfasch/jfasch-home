@@ -49,6 +49,7 @@ material.
 
    csv/topic
    db/group
+   pandas/group
    ai/group
    mqtt/topic
    python_5550_xml_etree/topic

@@ -44,6 +44,7 @@ extensions = [
     'nbsphinx',
     'jupyter_sphinx',
 
+    'IPython.sphinxext.ipython_directive',    
     # .../notebook.ipynb:: WARNING: Could not lex literal_block as "ipython3". Highlighting skipped.    
     'IPython.sphinxext.ipython_console_highlighting',
 

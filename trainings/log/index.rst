@@ -29,6 +29,13 @@ This training is under preparation.
 
 (:doc:`More ... <detail/2023-03-20--C++-embedded/index>`)
 
+Python For SAP Developers (2023-03-13 - 2023-03-15)
+---------------------------------------------------
+
+This training is under preparation.
+
+(:doc:`More ... <detail/2023-03-13-Python-SAP/index>`)
+
 Embedded Linux Systems Programming (2023-02-13 - 2023-02-17)
 ------------------------------------------------------------
 
