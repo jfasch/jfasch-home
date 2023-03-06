@@ -31,7 +31,7 @@ Exercise: Remove Directory Tree
   .. code-block:: console
 
      $ ls ~/parent-copy
-     ls: cannot access '/home/jfasch/parent-copy': No such file or directory
+     ls: cannot access '/home/<you>/parent-copy': No such file or directory
 
 .. ot-graph::
    :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.rm_tree

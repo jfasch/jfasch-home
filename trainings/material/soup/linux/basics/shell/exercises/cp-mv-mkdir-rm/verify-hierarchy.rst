@@ -23,8 +23,8 @@ In the exercises
    
      .. code-block:: console
      
-        $ tree /tmp/parent
-        /tmp/parent
+        $ tree /tmp/firstname.lastname/parent
+        /tmp/firstname.lastname/parent
         ├── child
         │   ├── business-card
         │   ├── garbage1.txt
@@ -37,7 +37,7 @@ In the exercises
    
      .. code-block:: console
    
-        $ cat /tmp/parent/hello
+        $ cat /tmp/firstname.lastname/parent/hello
         hello sweetheart
    
    * The file ``/tmp/firstname.lastname/parent/child/business-card`` should contain
@@ -45,7 +45,7 @@ In the exercises
    
      .. code-block:: console
    
-        $ cat /tmp/parent/child/business-card 
+        $ cat /tmp/firstname.lastname/parent/child/business-card 
         Joerg
         Faschingbauer
         Prankergasse 33
