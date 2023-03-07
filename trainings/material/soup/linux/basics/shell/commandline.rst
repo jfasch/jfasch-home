@@ -10,6 +10,15 @@ Commandline
 .. contents:: 
    :local:
 
+.. sidebar:: Documentation
+
+   * `Useful Linux Command Line Bash Shortcuts You Should Know <https://www.tecmint.com/linux-command-line-bash-shortcut-keys/>`__
+   * `Bash Shortcuts for the Command Line (emacs) <https://www.smartfile.com/blog/bash-shortcuts-for-the-command-line-emacs/>`__
+   * :download:`bash-help-sheet.pdf`
+   * :download:`readline-emacs-editing-mode-cheat-sheet.pdf`
+   * `Repetitive strain injury (RSI, Mouse Disease)
+     <https://en.wikipedia.org/wiki/Repetitive_strain_injury>`__
+
 Shape (1)
 ---------
   

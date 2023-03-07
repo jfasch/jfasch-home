@@ -65,17 +65,28 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * :doc:`/trainings/material/soup/linux/basics/shell/ls`
          * :doc:`/trainings/material/soup/linux/basics/shell/cwd`
          * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
+
+   * * 
+     * 2023-03-10
+     * 3
+     *
+       * **Working With The Commandline (The Shell)** (from
+         :doc:`/trainings/material/soup/linux/basics/shell/group`)
+
          * :doc:`/trainings/material/soup/linux/basics/shell/cp`
          * :doc:`/trainings/material/soup/linux/basics/shell/mv`
          * :doc:`/trainings/material/soup/linux/basics/shell/links`
          * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
+
+       * **Working With The Commandline (The Shell)** (from
+         :doc:`/trainings/material/soup/linux/basics/shell/group`)
 
 	 * **Exercises** (from
            :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`)
 
            * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
            * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
-           * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-copy-files`
+	   * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-copy-files`
            * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-move-files`
            * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/verify-hierarchy`
            * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/copy-tree`
