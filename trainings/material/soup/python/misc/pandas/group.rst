@@ -13,6 +13,15 @@ Topics
 .. toctree::
    :maxdepth: 1
 
+   basics
+   iloc
+   loc
+
+   indexes
+
+   filters
+   modify_row_col
+
    topic
 
 Dependencies

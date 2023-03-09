@@ -1,10 +1,10 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: python.misc.pandas.basics
+.. ot-topic:: python.misc.pandas.topic
 
 
-Pandas
-======
+Preparational
+=============
 
 .. contents::
    :local:
@@ -59,8 +59,6 @@ Basics
 	     allowfullscreen>
      </iframe>
 
-  * View DF as dict (5:09)
-
 * Corey Schafer: `Python Pandas Tutorial (Part 3): Indexes - How to
   Set, Reset, and Use Indexes <https://youtu.be/W9XjRYFkkyw>`__
 
@@ -72,6 +70,19 @@ Basics
 	     frameborder="0" 
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 	     allowfullscreen>
+     </iframe>
+
+* Data School: `How do I use the MultiIndex in pandas?
+  <https://youtu.be/tcRGa2soc-c>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/tcRGa2soc-c" 
+	    title="YouTube video player" 
+	    frameborder="0" 
+	    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	    allowfullscreen>
      </iframe>
 
 * Corey Schafer: `Python Pandas Tutorial (Part 4): Filtering - Using
