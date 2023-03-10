@@ -160,6 +160,20 @@ Selecting Multiple Columns
 
    Unfortunately this does not work.
 
+To Copy Or Not To Copy
+----------------------
+
+* Working on large datasets (i.e. that take a long time to load)
+* One does not want to make irreversible changes
+* |longrightarrow| make a backup copy before trying around
+
+.. jupyter-execute::
+
+   persons2 = persons.copy()
+
+* Or use ``inplace=False`` (which is the default when that parameter
+  exists)
+
 Links
 -----
 

@@ -31,74 +31,6 @@ Videos
 Basics
 ......
 
-* Corey Schafer: `Python Pandas Tutorial (Part 1): Getting Started
-  with Data Analysis - Installation and Loading Data
-  <https://youtu.be/ZyhVh-qRZPA>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/ZyhVh-qRZPA" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-	     allowfullscreen>
-     </iframe>
-
-* Corey Schafer: `Python Pandas Tutorial (Part 2): DataFrame and
-  Series Basics - Selecting Rows and Columns
-  <https://youtu.be/zmdjNSmRXF4>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/zmdjNSmRXF4" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
-* Corey Schafer: `Python Pandas Tutorial (Part 3): Indexes - How to
-  Set, Reset, and Use Indexes <https://youtu.be/W9XjRYFkkyw>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/W9XjRYFkkyw" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
-* Data School: `How do I use the MultiIndex in pandas?
-  <https://youtu.be/tcRGa2soc-c>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/tcRGa2soc-c" 
-	    title="YouTube video player" 
-	    frameborder="0" 
-	    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	    allowfullscreen>
-     </iframe>
-
-* Corey Schafer: `Python Pandas Tutorial (Part 4): Filtering - Using
-  Conditionals to Filter Rows and Columns
-  <https://youtu.be/Lw2rlcxScZY>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/Lw2rlcxScZY" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
 * Corey Schafer: `Python Pandas Tutorial (Part 8): Grouping and
   Aggregating - Analyzing and Exploring Your Data
   <https://youtu.be/txMdrV1Ut64>`__
@@ -115,22 +47,6 @@ Basics
 
 Advanced Usage: Filtering, Editing
 ..................................
-
-* Corey Schafer: `Python Pandas Tutorial (Part 5): Updating Rows and
-  Columns - Modifying Data Within DataFrames
-  <https://youtu.be/DCDe29sIKcE>`__
-
-  * ``apply()``, and such
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/DCDe29sIKcE" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
 
 * Corey Schafer: `Python Pandas Tutorial (Part 6): Add/Remove Rows and
   Columns From DataFrames <https://youtu.be/HQ6XO9eT-fc>`__
@@ -191,6 +107,8 @@ From/To Other Locations
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 	     allowfullscreen>
      </iframe>
+
+* ``read_csv('http://...')``
      
 Blah
 ----

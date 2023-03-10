@@ -12,9 +12,6 @@ Pandas: Selecting Rows (And Columns) With ``iloc[]``
 .. contents::
    :local:
 
-Row By Number: ``iloc[]``
--------------------------
-
 .. jupyter-execute::
 
    import pandas as pd
@@ -25,6 +22,9 @@ Row By Number: ``iloc[]``
        'email':     ['jf@faschingbauer.co.at', 'caro@email.com', 'johanna@email.com', 'philipp@email.com'],
        'age':       [56,                       27,               25,                  37],
    })
+
+Row By Number: ``iloc[]``
+-------------------------
 
 .. sidebar::
 
@@ -161,3 +161,21 @@ Summary
 * Works with integers only
 * Cannot even specify columns by their names
 * Efficient though
+
+Links
+-----
+
+* Corey Schafer: `Python Pandas Tutorial (Part 2): DataFrame and
+  Series Basics - Selecting Rows and Columns
+  <https://youtu.be/zmdjNSmRXF4>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/zmdjNSmRXF4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	     allowfullscreen>
+     </iframe>
+

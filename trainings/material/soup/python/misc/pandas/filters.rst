@@ -124,6 +124,7 @@ Neat Helpers
      <https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isin.html>`__
    * `String methods
      <https://pandas.pydata.org/docs/user_guide/text.html#string-methods>`__
+   * `Working with text data <https://pandas.pydata.org/docs/user_guide/text.html>`__
 
 .. jupyter-execute::
   
@@ -134,3 +135,20 @@ Neat Helpers
   
    flt = persons['firstname'].str.startswith('J')
    persons[flt]
+
+Links
+-----
+
+* Corey Schafer: `Python Pandas Tutorial (Part 4): Filtering - Using
+  Conditionals to Filter Rows and Columns
+  <https://youtu.be/Lw2rlcxScZY>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/Lw2rlcxScZY" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	     allowfullscreen>
+     </iframe>

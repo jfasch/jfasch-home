@@ -29,11 +29,14 @@ Rows (And Columns) By Label
 
 .. sidebar::
 
+   **See also**
+
+   * :doc:`indexes`
    * :doc:`filters`
 
 * Label?
-* |longrightarrow| Default index is integer, so ... just the same as
-  ``iloc``
+* |longrightarrow| Default index (:doc:`more on indexes <indexes>`) is
+  integer, so ... just the same as ``iloc``
 
   .. jupyter-execute::
   
@@ -86,3 +89,21 @@ Summary
 * *Attention*: inconsistent with rest of Python (and ``iloc[]``)
 * More (absolute) power by using :doc:`filters <filters>` with
   ``loc[]``
+
+Links
+-----
+
+* Corey Schafer: `Python Pandas Tutorial (Part 2): DataFrame and
+  Series Basics - Selecting Rows and Columns
+  <https://youtu.be/zmdjNSmRXF4>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/zmdjNSmRXF4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	     allowfullscreen>
+     </iframe>
+

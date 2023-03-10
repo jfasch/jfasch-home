@@ -16,11 +16,10 @@ Topics
    basics
    iloc
    loc
-
    indexes
-
    filters
-   modify_row_col
+   mod_col
+   add_row
 
    topic
 
@@ -29,3 +28,5 @@ Dependencies
 
 .. ot-graph::
    :entries: python.misc.pandas
+
+
