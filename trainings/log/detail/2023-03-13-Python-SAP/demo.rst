@@ -4,6 +4,15 @@
 Whetting Your Appetite (Livehacking Demo)
 =========================================
 
+.. toctree::
+   :hidden:
+
+   Demo/demo-notebook
+
+.. sidebar::
+
+   **Jupyter Notebook:** * :doc:`Demo/demo-notebook`
+
 .. contents::
    :local:
 
