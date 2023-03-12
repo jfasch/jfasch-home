@@ -234,8 +234,3 @@ unit tests, so maybe this chapter is in order right at the beginning
 of it.
 
 * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
-
-*Day 3*: Group Exercise
------------------------
-
-To be designed. Will be the subject of one or two successor meeting.

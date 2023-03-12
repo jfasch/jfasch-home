@@ -1,6 +1,11 @@
 Python For SAP Developers (2023-03-13 - 2023-03-15)
 ===================================================
 
+.. toctree::
+   :hidden:
+
+   demo
+
 .. contents::
    :local:
 
@@ -24,6 +29,11 @@ Day 1: Basics
 
 Goal: gain a basic understanding of Python: variables, datatypes, some
 language internals (good to know if one wants to do more).
+
+Demo
+....
+
+* :doc:`demo`
 
 Setup
 .....
