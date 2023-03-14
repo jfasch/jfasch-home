@@ -1,13 +1,6 @@
 Python For SAP Developers (2023-03-13 - 2023-03-15)
 ===================================================
 
-.. toctree::
-   :hidden:
-
-   demo
-   notebook-wrapper
-   original-agenda
-
 .. contents::
    :local:
 
@@ -17,32 +10,20 @@ Python For SAP Developers (2023-03-13 - 2023-03-15)
 
    Lets start at 9AM on Monday, and see how we proceed on Tuesday and
    Wednesday.
-   
+
    **Material**
 
    * :doc:`/trainings/material/soup/python/group`
-   * Github project: https://github.com/jfasch/2023-03-13
 
-   **Notebook**
+Agenda (i.e., a basis for further discussion) for a three day Python
+training. Exercises will be woven in on demand (see :doc:`here
+</trainings/material/soup/python/exercises/group>`).
 
-   * :doc:`Entire book <notebook>`
-   * :doc:`Structure <notebook-wrapper>`
-   * :download:`Download notebook.ipynb <notebook.ipynb>`
-
-   **Original Agenda**
-
-   * :doc:`original-agenda`
-
-Day 1 (Basics)
---------------
+Day 1: Basics
+-------------
 
 Goal: gain a basic understanding of Python: variables, datatypes, some
 language internals (good to know if one wants to do more).
-
-Demo
-....
-
-* :doc:`demo`
 
 Setup
 .....
@@ -67,19 +48,6 @@ datatypes there are.
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 
-**Exercises**
-
-* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
-* :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
-* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
-* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
-  (solution: `maximum.py
-  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/maximum.py>`__)
-* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit` (solution: `digit.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/digit.py>`__)
-
-Day 2 (Basics, Continued)
--------------------------
-
 Control Flow, Sequences, *Iteration*
 ....................................
 
@@ -90,16 +58,6 @@ important topic in Python, which is why we dedicate some time to it.
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-
-**Exercises**
-
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
-  (solution: `uniq.py
-  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/uniq.py>`__)
-* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
-  (solution: `prime-while.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-while.py>`__)
-* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
-  (solution: `prime-for.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-for.py>`__)
 
 More Datatypes
 ..............
@@ -113,20 +71,6 @@ another three lines of code? What's *Pythonic*?
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-
-**Exercises: Functions**
-
-* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
-  (solution: `maximum-func.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/maximum-func.py>`__)
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
-  (solution: `uniq-func.py
-  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/uniq-func.py>`__)
-* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
-  (solution: `prime-func.py
-  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-func.py>`__)
-
-**More about datatypes ...**
-
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
@@ -134,13 +78,19 @@ another three lines of code? What's *Pythonic*?
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
-**Exercises, File I/O, Strings**
+Day 2: Outlook Into Advanced Python
+-----------------------------------
 
-* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
-* :doc:`/trainings/material/soup/python/exercises/legacy/wc`
+Goal: there's always more. OO isn't necessary, for example,
+nonetheless Python is strongly object oriented *internally*
+[#oo-aint-overengineering]_. Exception handling isn't necessary either
+(one can always let exceptions pass by and terminate the
+program). Knowing what *decorators* are isn't necessary either, much
+like the *iterator protocol*, or *context managers*.
 
-Day 3
------
+If you want to do more (probably with less code), you'll want to know
+more; on day 2 we take a look into some topics that are optional, but
+good to at least know the basics of.
 
 OO Introduction
 ...............
@@ -162,38 +112,6 @@ lets you focus your code on the sunny case, and do clumsy error
 handling in a separate section of the code.
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-
-Pandas
-......
-
-From :doc:`/trainings/material/soup/python/misc/pandas/group` ...
-
-* :doc:`/trainings/material/soup/python/misc/pandas/basics`
-* :doc:`/trainings/material/soup/python/misc/pandas/iloc`
-* :doc:`/trainings/material/soup/python/misc/pandas/loc`
-* :doc:`/trainings/material/soup/python/misc/pandas/indexes`
-* :doc:`/trainings/material/soup/python/misc/pandas/filters`
-* :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
-* :doc:`/trainings/material/soup/python/misc/pandas/add_row`
-
-Machine Learning: Pandas, NumPy, And Algorithms
-...............................................
-
-From :doc:`/trainings/material/soup/python/misc/ai/group`
-
-* :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
-* :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`
-* :doc:`/trainings/material/soup/python/misc/ai/k-means`
-
-Untold
-------
-
-Goal: there's always more. OO isn't necessary, for example,
-nonetheless Python is strongly object oriented *internally*
-[#oo-aint-overengineering]_. Exception handling isn't necessary either
-(one can always let exceptions pass by and terminate the
-program). Knowing what *decorators* are isn't necessary either, much
-like the *iterator protocol*, or *context managers*.
 
 Context Managers (Automatic Cleanup)
 ....................................
@@ -227,6 +145,30 @@ works, and what a :doc:`closure
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+
+Day 3: Domain Specifics
+-----------------------
+
+That day is dedicated to solving domain specific problems:
+implementing a SAP data pipeline in Python.
+
+Pandas
+......
+
+From :doc:`/trainings/material/soup/python/misc/pandas/group` ...
+
+* :doc:`/trainings/material/soup/python/misc/pandas/basics`
+* :doc:`/trainings/material/soup/python/misc/pandas/iloc`
+* :doc:`/trainings/material/soup/python/misc/pandas/loc`
+* :doc:`/trainings/material/soup/python/misc/pandas/indexes`
+* :doc:`/trainings/material/soup/python/misc/pandas/filters`
+* :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
+* :doc:`/trainings/material/soup/python/misc/pandas/add_row`
+
+NumPy
+.....
+
+* `NumPy <https://numpy.org/>`__ overview
 
 Unit Testing
 ............
