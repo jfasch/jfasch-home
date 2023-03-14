@@ -20,7 +20,7 @@ Pandas: Selecting Rows (And Columns) With ``iloc[]``
        'firstname': ['Joerg',                  'Johanna',        'Caro',              'Philipp'          ],
        'lastname':  ['Faschingbauer',          'Faschingbauer',  'Faschingbauer',     'Lichtenberger'    ],
        'email':     ['jf@faschingbauer.co.at', 'caro@email.com', 'johanna@email.com', 'philipp@email.com'],
-       'age':       [56,                       27,               25,                  37],
+       'age':       [56,                       27,               25,                  37                 ],
    })
 
 Row By Number: ``iloc[]``
@@ -46,7 +46,7 @@ Row By Number: ``iloc[]``
   
      type(persons.iloc[1])
 
-* Out-of-range access not possible (see :doc:`modify_row_col`)
+* Out-of-range access not possible (see :doc:`add_row`)
 
 .. sidebar::
 

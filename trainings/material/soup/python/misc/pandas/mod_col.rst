@@ -26,7 +26,7 @@ Example 1: Lowercasing A Column Of Strings
 
        'email':     ['JF@faschingbauer.co.at', 'Caro@email.com', 'Johanna@email.com', 'PHILIPP@email.com'],
 
-       'age':       [56,                       27,               25,                  37],
+       'age':       [56,                       27,               25,                  37                 ],
    })
 
 .. jupyter-execute::
