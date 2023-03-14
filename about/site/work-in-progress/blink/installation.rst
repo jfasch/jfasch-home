@@ -7,6 +7,21 @@ Installing Prerequisites
 ``libgpiod``
 ------------
 
+Argh: python 3.9 first!
+.......................
+
+sudo apt install libffi-dev
+
+wget  https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+
+tar xf ... && cd ...
+
+configure --prefix ...  # try out of source!
+
+make -j5
+
+
+
 Prerequisites
 .............
 

@@ -11,7 +11,9 @@ Whetting Your Appetite (Livehacking Demo)
 
 .. sidebar::
 
-   **Jupyter Notebook:** * :doc:`Demo/demo-notebook`
+   **Jupyter Notebook:** 
+   
+   * :doc:`Demo/demo-notebook`
 
 .. contents::
    :local:

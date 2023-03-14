@@ -28,8 +28,7 @@ Numbers
   * Lists
 
 * *Sets*
-
-  * *Mappings*: *key* to *value*
+* *Mappings*: *key* to *value*
 
 Integer Numbers
 ---------------

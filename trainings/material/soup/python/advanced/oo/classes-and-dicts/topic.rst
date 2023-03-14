@@ -32,7 +32,7 @@ Using Raw Dictionaries As Objects
    :cwd: .
 
 * Much writing
-* Many opportunities for bus/typos
+* Many opportunities for bugs/typos
 * |longrightarrow| **BAD!**
 
 Enter Classes: An Empty Class, And Its Effects

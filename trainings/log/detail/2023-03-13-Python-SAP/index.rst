@@ -5,6 +5,7 @@ Python For SAP Developers (2023-03-13 - 2023-03-15)
    :hidden:
 
    demo
+   notebook-wrapper
 
 .. contents::
    :local:
@@ -15,35 +16,41 @@ Python For SAP Developers (2023-03-13 - 2023-03-15)
 
    Lets start at 9AM on Monday, and see how we proceed on Tuesday and
    Wednesday.
-
+   
    **Material**
 
    * :doc:`/trainings/material/soup/python/group`
+   * Github project: https://github.com/jfasch/2023-03-13
 
-Agenda (i.e., a basis for further discussion) for a three day Python
-training. Exercises will be woven in on demand (see :doc:`here
-</trainings/material/soup/python/exercises/group>`).
+   **Notebook**
 
-Day 1: Basics
--------------
+   * :doc:`Entire book <notebook>`
+   * :doc:`Structure <notebook-wrapper>`
+   * :download:`Download notebook.ipynb <notebook.ipynb>`
+
+Day 1
+-----
+
+Basics
+......
 
 Goal: gain a basic understanding of Python: variables, datatypes, some
 language internals (good to know if one wants to do more).
 
 Demo
-....
+````
 
 * :doc:`demo`
 
 Setup
-.....
+`````
 
 * :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/misc/vscode`
 * `Jupyter Notebook <https://jupyter.org/>`__ Intro
 
 Datatypes
-.........
+`````````
 
 An overview of the language, how variables are used, and which primary
 datatypes there are.
@@ -58,8 +65,24 @@ datatypes there are.
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 
+**Exercises**
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
+* :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+  (solution: `maximum.py
+  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/maximum.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit` (solution: `digit.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/digit.py>`__)
+
+Day 2
+-----
+
+Basics, Continued
+.................
+
 Control Flow, Sequences, *Iteration*
-....................................
+````````````````````````````````````
 
 Basic branching and looping. Iteration (via the ``for`` loop) is an
 important topic in Python, which is why we dedicate some time to it.
@@ -69,8 +92,17 @@ important topic in Python, which is why we dedicate some time to it.
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 
+**Exercises**
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
+  (solution: `uniq.py
+  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/uniq.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+  (solution: `prime-while.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-while.py>`__)
+* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+
 More Datatypes
-..............
+``````````````
 
 There is more to say about datatypes than what has already been said
 (there is always more to everything in Python). What's *mutable*,
@@ -81,6 +113,15 @@ another three lines of code? What's *Pythonic*?
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
+
+**Exercises: Functions**
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+
+**More about datatypes ...**
+
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
@@ -88,8 +129,13 @@ another three lines of code? What's *Pythonic*?
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
-Day 2: Outlook Into Advanced Python
------------------------------------
+**Exercises, File I/O, Strings**
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+* :doc:`/trainings/material/soup/python/exercises/legacy/wc`
+
+Outlook Into Advanced Python
+............................
 
 Goal: there's always more. OO isn't necessary, for example,
 nonetheless Python is strongly object oriented *internally*
@@ -103,7 +149,7 @@ more; on day 2 we take a look into some topics that are optional, but
 good to at least know the basics of.
 
 OO Introduction
-...............
+```````````````
 
 Python is strongly object oriented internally - even an ``int`` is an
 *object of class int*, for example. It does not impose OO knowledge on
@@ -115,7 +161,7 @@ its users though; nevertheless knowing a bit of it cannot hurt.
 * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
 
 Exception Handling
-..................
+``````````````````
 
 Error handling is commonly done using *exceptions* - a construct that
 lets you focus your code on the sunny case, and do clumsy error
@@ -124,7 +170,7 @@ handling in a separate section of the code.
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 
 Context Managers (Automatic Cleanup)
-....................................
+````````````````````````````````````
 
 Much like error handling, resource cleanup tends to become
 clumsy. Context managers are a way to bring more structure to that
@@ -133,7 +179,7 @@ part of a program.
 * :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
 
 Iteration, Generators, Comprehensions
-.....................................
+`````````````````````````````````````
 
 Iterating over large sets of data - while at the same time saving
 resources - is one of the absolute strengths of Python. Lets dive a
@@ -143,7 +189,7 @@ bit deeper into what a ``for`` loop actually is.
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
 
 Decorators, and Related Topics
-..............................
+``````````````````````````````
 
 It might not be immediately obvious what a decorator is, and what
 benefits it can bring. Lets have a look into that part of the
