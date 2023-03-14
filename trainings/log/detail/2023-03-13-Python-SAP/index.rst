@@ -100,6 +100,7 @@ important topic in Python, which is why we dedicate some time to it.
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
   (solution: `prime-while.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-while.py>`__)
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+  (solution: `prime-for.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-for.py>`__)
 
 More Datatypes
 ``````````````
@@ -117,8 +118,13 @@ another three lines of code? What's *Pythonic*?
 **Exercises: Functions**
 
 * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
+  (solution: `maximum-func.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/maximum-func.py>`__)
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+  (solution: `uniq-func.py
+  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/uniq-func.py>`__)
 * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+  (solution: `prime-func.py
+  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-func.py>`__)
 
 **More about datatypes ...**
 
@@ -221,10 +227,14 @@ From :doc:`/trainings/material/soup/python/misc/pandas/group` ...
 * :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
 * :doc:`/trainings/material/soup/python/misc/pandas/add_row`
 
-NumPy
-.....
+Machine Learning: Pandas, NumPy, And Algorithms
+...............................................
 
-* `NumPy <https://numpy.org/>`__ overview
+From :doc:`/trainings/material/soup/python/misc/ai/group`
+
+* :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
+* :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`
+* :doc:`/trainings/material/soup/python/misc/ai/k-means`
 
 Unit Testing
 ............

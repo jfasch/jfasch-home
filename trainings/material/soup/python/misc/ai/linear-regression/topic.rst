@@ -35,11 +35,8 @@ Also, you will agree that is complete nonsense to choose "minimum day
 temperature" as single input feature, and to predict the maximum day
 temperature from it. We do just that.
 
-Artifacts
----------
-
 Jupyter Notebook
-................
+----------------
 
 A :doc:`Jupyter Notebook <linear_regression>` (download:
 :download:`linear_regression.ipynb`) is the heart of the topic. It has
@@ -50,7 +47,7 @@ much of the code, together with explanations.
    linear_regression.ipynb
 
 Running Code
-............
+------------
 
 While such notebooks are cute for research papers and for trying
 around, one should not use them as an IDE and/or runtime
@@ -60,7 +57,7 @@ environments - *they are not*.
 not show the fancy graphs that nobody needs.
 
 Dataset
-.......
+-------
 
 Both the notebook and the program use a :doc:`test dataset
 <history_data>` (download: :download:`history_data.csv`).
