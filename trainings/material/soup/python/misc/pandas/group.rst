@@ -21,7 +21,10 @@ Topics
    mod_col
    add_row
 
-   topic
+Random Material
+---------------
+
+* :doc:`/trainings/log/detail/2023-03-13-Python-SAP/sap-dataset/index`
 
 Dependencies
 ------------

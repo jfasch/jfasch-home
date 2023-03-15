@@ -13,11 +13,10 @@ Python For SAP Developers (2023-03-13 - 2023-03-15)
 
 .. sidebar:: *Training Information*
 
-   **Start**
+   **Original Agenda**
 
-   Lets start at 9AM on Monday, and see how we proceed on Tuesday and
-   Wednesday.
-   
+   * :doc:`original-agenda`
+
    **Material**
 
    * :doc:`/trainings/material/soup/python/group`
@@ -28,10 +27,6 @@ Python For SAP Developers (2023-03-13 - 2023-03-15)
    * :doc:`Entire book <notebook>`
    * :doc:`Structure <notebook-wrapper>`
    * :download:`Download notebook.ipynb <notebook.ipynb>`
-
-   **Original Agenda**
-
-   * :doc:`original-agenda`
 
 Day 1 (Basics)
 --------------
@@ -142,6 +137,45 @@ another three lines of code? What's *Pythonic*?
 Day 3
 -----
 
+Pandas
+......
+
+From :doc:`/trainings/material/soup/python/misc/pandas/group` ...
+
+* :doc:`/trainings/material/soup/python/misc/pandas/basics`
+* :doc:`/trainings/material/soup/python/misc/pandas/iloc`
+* :doc:`/trainings/material/soup/python/misc/pandas/loc`
+* :doc:`/trainings/material/soup/python/misc/pandas/indexes`
+* :doc:`/trainings/material/soup/python/misc/pandas/filters`
+* :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
+* :doc:`/trainings/material/soup/python/misc/pandas/add_row`
+
+Hacking About On A SAP Test Dataset
+...................................
+
+.. toctree::
+
+   sap-dataset/index
+
+Untold (From Original Agenda)
+-----------------------------
+
+.. sidebar::
+
+   :doc:`original-agenda`
+
+Goal: there's always more. OO isn't necessary, for example,
+nonetheless Python is strongly object oriented *internally*
+[#oo-aint-overengineering]_. Exception handling isn't necessary either
+(one can always let exceptions pass by and terminate the
+program). Knowing what *decorators* are isn't necessary either, much
+like the *iterator protocol*, or *context managers*.
+
+Encoding
+........
+
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
+
 OO Introduction
 ...............
 
@@ -162,38 +196,6 @@ lets you focus your code on the sunny case, and do clumsy error
 handling in a separate section of the code.
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-
-Pandas
-......
-
-From :doc:`/trainings/material/soup/python/misc/pandas/group` ...
-
-* :doc:`/trainings/material/soup/python/misc/pandas/basics`
-* :doc:`/trainings/material/soup/python/misc/pandas/iloc`
-* :doc:`/trainings/material/soup/python/misc/pandas/loc`
-* :doc:`/trainings/material/soup/python/misc/pandas/indexes`
-* :doc:`/trainings/material/soup/python/misc/pandas/filters`
-* :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
-* :doc:`/trainings/material/soup/python/misc/pandas/add_row`
-
-Machine Learning: Pandas, NumPy, And Algorithms
-...............................................
-
-From :doc:`/trainings/material/soup/python/misc/ai/group`
-
-* :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
-* :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`
-* :doc:`/trainings/material/soup/python/misc/ai/k-means`
-
-Untold
-------
-
-Goal: there's always more. OO isn't necessary, for example,
-nonetheless Python is strongly object oriented *internally*
-[#oo-aint-overengineering]_. Exception handling isn't necessary either
-(one can always let exceptions pass by and terminate the
-program). Knowing what *decorators* are isn't necessary either, much
-like the *iterator protocol*, or *context managers*.
 
 Context Managers (Automatic Cleanup)
 ....................................
@@ -233,6 +235,15 @@ Unit Testing
   
 * :doc:`Unit testing
   </trainings/material/soup/python/swdev/pytest-intro>`
+
+Machine Learning: Pandas, NumPy, And Algorithms
+...............................................
+
+From :doc:`/trainings/material/soup/python/misc/ai/group`
+
+* :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
+* :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`
+* :doc:`/trainings/material/soup/python/misc/ai/k-means`
 
 
 .. rubric:: Footnotes
