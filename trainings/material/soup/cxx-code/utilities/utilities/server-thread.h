@@ -8,6 +8,9 @@
 #include <memory>
 
 
+namespace jf::utilities
+{
+
 class ServerThread
 {
 public:
@@ -42,3 +45,5 @@ private:
     MTQueue<Packet*> _queue;
     std::thread _thread;
 };
+
+}

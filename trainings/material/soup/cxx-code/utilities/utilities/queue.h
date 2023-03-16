@@ -7,6 +7,9 @@
 #include <deque>
 
 
+namespace jf::utilities
+{
+
 template <typename T>
 class MTQueue
 {
@@ -46,3 +49,5 @@ private:
     std::condition_variable _notempty;
     std::condition_variable _notfull;
 };
+
+}

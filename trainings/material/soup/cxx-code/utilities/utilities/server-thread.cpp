@@ -1,6 +1,9 @@
 #include "server-thread.h"
 
 
+namespace jf::utilities
+{
+
 ServerThread::ServerThread(RemoteAdapter* adapter)
 : _adapter(adapter),
   _queue(10),
@@ -30,4 +33,6 @@ std::string ServerThread::write(const std::string& request)
     _queue.push(&packet);
 
     return response_future.get();
+}
+
 }
