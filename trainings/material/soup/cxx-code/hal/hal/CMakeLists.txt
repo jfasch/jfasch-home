@@ -6,8 +6,8 @@ ADD_LIBRARY(
   hal-core.h
   hal-core.cpp
 
-  timer-interrupt.h
-  timer-interrupt.cpp
+  hal-timer.h
+  hal-timer.cpp
 )
 
 TARGET_LINK_LIBRARIES(

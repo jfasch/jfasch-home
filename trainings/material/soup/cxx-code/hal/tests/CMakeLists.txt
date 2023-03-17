@@ -1,7 +1,7 @@
 ADD_EXECUTABLE(
   cxx-exercises-hal--suite
 
-  timer-interrupt-suite.cpp
+  timer-suite.cpp
   )
 
 TARGET_LINK_LIBRARIES(

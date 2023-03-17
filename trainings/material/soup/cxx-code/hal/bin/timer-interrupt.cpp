@@ -19,9 +19,14 @@ int main(int argc, char** argv)
     sem_t sem;
     sem_init(&sem, 0, 0);
 
-    jf::hal::start_timer_ms(3000, wakeup, &sem);
+    jf::hal::start_oneshot_timer_ms(1500, wakeup, &sem);
 
     int error = sem_wait(&sem);  assert(!error);
+    std::cout << "wakeup" << std::endl;
+    
+    jf::hal::start_oneshot_timer_ms(3000, wakeup, &sem);
+
+    error = sem_wait(&sem);  assert(!error);
     std::cout << "wakeup" << std::endl;
     
     jf::hal::deinit();
