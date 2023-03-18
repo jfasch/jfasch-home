@@ -3,6 +3,7 @@
 #include "hal-core.h"
 
 #include <vector>
+#include <mutex>
 
 #include <assert.h>
 #include <string.h>
@@ -23,7 +24,7 @@ struct timer
 };
 using timerlist = std::vector<timer*>;
 
-// jjj mutex
+static std::mutex timers_mutex;
 static timerlist timers;
 
 static void timer_trampoline(union sigval v)
@@ -34,16 +35,18 @@ static void timer_trampoline(union sigval v)
     timercb cb = expired->cb;
     void* context = expired->context;
 
-    // remove and delete my own timer structure jjj mutex
     {
+        std::lock_guard<std::mutex> guard(timers_mutex);
+
+        // remove and delete my own timer structure
         for (auto iter = timers.begin(); iter != timers.end(); ++iter)
             if (*iter == expired) {
                 timers.erase(iter);
                 break;
             }
-
-        delete expired;
     }
+
+    delete expired;
 
     // delete posix timer
     int error = timer_delete(posix_id); assert(!error);
@@ -53,14 +56,15 @@ static void timer_trampoline(union sigval v)
 
 size_t num_active_timers()
 {
-    return timers.size(); // jjj mutex
+    std::lock_guard<std::mutex> guard(timers_mutex);
+    return timers.size();
 }
 
 timerid start_oneshot_timer_ms(unsigned long ms, timercb cb, void* context)
 {
     assert(is_initialized());
 
-    // jjj mutex
+    std::lock_guard<std::mutex> guard(timers_mutex);
 
     timer* t = new timer;
     timers.push_back(t);
@@ -95,15 +99,13 @@ timerid start_oneshot_timer_ms(unsigned long ms, timercb cb, void* context)
     error = timer_settime(posix_id, 0, &ts, nullptr);
     assert(!error);
 
-    timerid ret = t->hal_id;
-
-    // jjj mutex
-    return ret;
+    return t->hal_id;
 }
 
 void stop_timer(timerid id)
 {
-    // jjj mutex
+    std::lock_guard<std::mutex> guard(timers_mutex);
+
     for (auto iter = timers.begin(); iter != timers.end(); ++iter) {
         const timer* t = *iter;
         if (t->hal_id == id) {
