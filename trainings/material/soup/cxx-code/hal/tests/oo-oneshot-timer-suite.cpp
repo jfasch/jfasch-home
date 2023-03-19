@@ -7,11 +7,14 @@
 #include <time.h>
 #include <cassert>
 
+#include <iostream>
+using namespace std; // jjj
+
 
 struct oo_oneshot_timer_suite : HAL_Fixture {};
 
 
-class MyTimerUser : public jf::hal::OneshotTimer::User
+class MyTimerUser : public jf::hal::Timer::User
 {
 public:
     MyTimerUser() : _expired(false) {}
@@ -28,6 +31,8 @@ TEST_F(oo_oneshot_timer_suite, basic_expiry)
     MyTimerUser u;
     jf::hal::OneshotTimer timer(1, &u);
     timer.start();
+
+    cerr << "jjjjjjjjjjjjjjjjjjj started, " << timer.is_active() << endl;
 
     ASSERT_TRUE(timer.is_active());
 

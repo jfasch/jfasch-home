@@ -7,50 +7,34 @@
 namespace jf::hal
 {
 
-static timespec ms_to_timespec(unsigned long ms)
-{
-    static const long ONE_SECOND_NS = 1000*1000*1000;
-    long nanos = 1000*1000*ms;
-    time_t secs = nanos / ONE_SECOND_NS;
-    nanos %= ONE_SECOND_NS;
-
-    return { secs, nanos };
-}
-
-OneshotTimer::OneshotTimer(size_t milliseconds, User* u)
-: _milliseconds(milliseconds),
-  _user(u)
+Timer::Timer(User* u)
+: _user(u),
+  _is_active(false)
 {
     sigevent ev;
     memset(&ev, 0, sizeof(ev));
     ev.sigev_notify = SIGEV_THREAD;
-    ev.sigev_notify_function = timer_expired;
+    ev.sigev_notify_function = _timer_expired;
     ev.sigev_value.sival_ptr = this;
 
     int error = timer_create(CLOCK_MONOTONIC, &ev, &_id);
     assert(!error);
 }
 
-OneshotTimer::~OneshotTimer()
+Timer::~Timer()
 {
     int error = timer_delete(_id);
     assert(!error);
 }
 
-void OneshotTimer::start()
+void Timer::_do_start(itimerspec s)
 {
-    itimerspec ts = {
-        {0,0}, // interval (none; this is a one-shot timer)
-        ms_to_timespec(_milliseconds),
-    };          
-
-    int error = timer_settime(_id, 0, &ts, nullptr);
+    int error = timer_settime(_id, 0, &s, nullptr);
     assert(!error);
-
     _is_active = true;
 }
 
-void OneshotTimer::stop()
+void Timer::stop()
 {
     itimerspec s = {{},{}};
     int error = timer_settime(_id, 0, &s, nullptr);
@@ -59,9 +43,9 @@ void OneshotTimer::stop()
     _is_active = false;
 }
 
-void OneshotTimer::timer_expired(union sigval v)
+void Timer::_timer_expired(union sigval v)
 {
-    OneshotTimer* expired = (OneshotTimer*)v.sival_ptr;
+    Timer* expired = (Timer*)v.sival_ptr;
     expired->_is_active = false;
     expired->call();
 }

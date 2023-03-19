@@ -8,7 +8,7 @@
 namespace jf::hal
 {
 
-class OneshotTimer
+class Timer
 {
 public:
     class User
@@ -19,10 +19,10 @@ public:
     };
 
 public:
-    OneshotTimer(size_t milliseconds, User*);
-    ~OneshotTimer();
+    Timer(User*);
+    virtual ~Timer();
 
-    void start();
+    virtual void start() = 0;
     void stop();
 
     bool is_active() const { return _is_active; }
@@ -36,15 +36,27 @@ public:
     // for testing only!
     timer_t id() const { return _id; }
 
-private:
-    size_t _milliseconds;
-    User* _user;
-    timer_t _id;
-    bool _is_active = false;
+protected:
+    void _do_start(itimerspec);
+
+    // callback function for timer_create()
+    static void _timer_expired(union sigval);
 
 private:
-    // callback function for timer_create()
-    static void timer_expired(union sigval);
+    User* _user;
+    timer_t _id;
+    bool _is_active;
+
+public:
+    static timespec ms_to_timespec(unsigned long ms)
+    {
+        static const long ONE_SECOND_NS = 1000*1000*1000;
+        long nanos = 1000*1000*ms;
+        time_t secs = nanos / ONE_SECOND_NS;
+        nanos %= ONE_SECOND_NS;
+
+        return { secs, nanos };
+    }
 };
 
 }

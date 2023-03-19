@@ -11,6 +11,9 @@ ADD_LIBRARY(
 
   hal-timer-oo.h
   hal-timer-oo.cpp
+
+  hal-timer-oo-oneshot.h
+  hal-timer-oo-oneshot.cpp
 )
 
 TARGET_LINK_LIBRARIES(
