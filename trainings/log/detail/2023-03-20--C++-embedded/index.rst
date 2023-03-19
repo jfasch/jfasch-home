@@ -50,6 +50,7 @@ is required for this training.
 
 .. code-block::
 
+   $ sudo apt update
    $ sudo apt install git build-essential cmake libgtest-dev libgmock-dev
 
 Unsupported Environments

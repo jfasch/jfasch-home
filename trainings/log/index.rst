@@ -32,7 +32,8 @@ This training is under preparation.
 Python For SAP Developers (2023-03-13 - 2023-03-15)
 ---------------------------------------------------
 
-This training is under preparation.
+Called to teach people how to program *SAP Data Pipelines* in
+Python/Pandas.
 
 (:doc:`More ... <detail/2023-03-13-Python-SAP/index>`)
 
