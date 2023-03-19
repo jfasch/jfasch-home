@@ -11,6 +11,9 @@ ADD_LIBRARY(
 
   hal-timer-periodic.h
   hal-timer-periodic.cpp
+
+  hal-fileutil.h
+  hal-fileutil.cpp
 )
 
 TARGET_LINK_LIBRARIES(
