@@ -4,7 +4,7 @@
 #include "server-thread.h"
 
 
-class RemoteSensorAdapter : public ServerThread::RemoteAdapter
+class RemoteSensorAdapter : public jf::utilities::ServerThread::RemoteAdapter
 {
 public:
     RemoteSensorAdapter(Sensor* sensor) : _sensor(sensor) {}

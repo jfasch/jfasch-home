@@ -38,3 +38,5 @@ SET_SOURCE_FILES_PROPERTIES(c++03-default-ctor-compiler-generated-pitfall.cpp PR
 ADD_EXECUTABLE(c++03-copy-string-10 c++03-copy-string-10.cpp)
 ADD_EXECUTABLE(c++03-copy-string-20-03 c++03-copy-string-20-03.cpp)
 ADD_EXECUTABLE(c++03-copy-string-20-11 c++03-copy-string-20-11.cpp)
+
+ADD_EXECUTABLE(c-point c-point.c)

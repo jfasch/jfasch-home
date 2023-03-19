@@ -16,7 +16,7 @@ struct proxy_remote_suite : ::testing::Test    // <--- fixture: server thread an
 
     ConstantSensor _cs;
     RemoteSensorAdapter _adapter;
-    ServerThread server;
+    jf::utilities::ServerThread server;
 };
 
 TEST_F(proxy_remote_suite, protocol)

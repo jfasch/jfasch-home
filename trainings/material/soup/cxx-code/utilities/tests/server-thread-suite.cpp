@@ -3,7 +3,7 @@
 #include <server-thread.h>
 
 
-class Echo : public ServerThread::RemoteAdapter
+class Echo : public jf::utilities::ServerThread::RemoteAdapter
 {
 public:
     std::string execute(const std::string& request)
@@ -15,7 +15,7 @@ public:
 TEST(server_thread_suite, basic)
 {
     Echo echo;
-    ServerThread s(&echo);
+    jf::utilities::ServerThread s(&echo);
     std::string request = "abc";
     std::string response = s.write(request);
     ASSERT_EQ(request, response);

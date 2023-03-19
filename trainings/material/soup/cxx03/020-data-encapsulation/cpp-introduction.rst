@@ -11,6 +11,13 @@ Classes and Objects
 .. contents::
    :local:
 
+.. sidebar::
+
+   **Trainer's Note**
+
+   * Download :download:`code/c-point.cpp`
+   * Morph it into C++
+
 Introducing C++: ``class point``
 --------------------------------
 
