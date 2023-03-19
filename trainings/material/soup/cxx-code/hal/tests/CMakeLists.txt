@@ -3,6 +3,8 @@ ADD_EXECUTABLE(
 
   oneshot-timer-suite.cpp
   periodic-timer-suite.cpp
+
+  oo-oneshot-timer-suite.cpp
   )
 
 TARGET_LINK_LIBRARIES(

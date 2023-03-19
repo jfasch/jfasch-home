@@ -8,6 +8,9 @@ ADD_LIBRARY(
 
   hal-timer.h
   hal-timer.cpp
+
+  hal-timer-oo.h
+  hal-timer-oo.cpp
 )
 
 TARGET_LINK_LIBRARIES(
