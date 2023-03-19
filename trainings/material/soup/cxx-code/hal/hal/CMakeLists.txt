@@ -3,17 +3,14 @@ ADD_LIBRARY(
 
   hal.h
 
-  hal-core.h
-  hal-core.cpp
-
   hal-timer.h
   hal-timer.cpp
 
-  hal-timer-oo.h
-  hal-timer-oo.cpp
+  hal-timer-oneshot.h
+  hal-timer-oneshot.cpp
 
-  hal-timer-oo-oneshot.h
-  hal-timer-oo-oneshot.cpp
+  hal-timer-periodic.h
+  hal-timer-periodic.cpp
 )
 
 TARGET_LINK_LIBRARIES(

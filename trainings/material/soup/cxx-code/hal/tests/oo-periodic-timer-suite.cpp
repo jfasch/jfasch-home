@@ -9,19 +9,19 @@
 class MyTimerUser : public jf::hal::Timer::User
 {
 public:
-    MyTimerUser() : _expired(false) {}
+    MyTimerUser() : _n_expiries(0) {}
 
-    void expired() override { _expired = true; }
-    bool is_expired() const { return _expired; }
+    void expired() override { _n_expiries++; }
+    size_t n_expiries() const { return _n_expiries; }
 
 private:
-    bool _expired;
+    size_t _n_expiries;
 };
 
-TEST(oneshot_timer_suite, basic_expiry)
+TEST(periodic_timer_suite, basic_expiry)
 {
     MyTimerUser u;
-    jf::hal::OneshotTimer timer(1, &u);
+    jf::hal::PeriodicTimer timer(1, &u);
     timer.start();
 
     ASSERT_TRUE(timer.is_active());
@@ -29,7 +29,7 @@ TEST(oneshot_timer_suite, basic_expiry)
     timespec delay = {0/*s*/, 1000*1000/*ns, =1ms*/};
 
     unsigned nwaits = 1000;
-    while (!u.is_expired()) {
+    while (u.n_expiries() < 7) {
         int error = nanosleep(&delay, nullptr);
         assert(!error);
         (void)error;
@@ -37,13 +37,13 @@ TEST(oneshot_timer_suite, basic_expiry)
             FAIL();
     }
 
-    ASSERT_FALSE(timer.is_active());
+    ASSERT_TRUE(timer.is_active());
 }
 
-TEST(oneshot_timer_suite, stop_before_expiry)
+TEST(periodic_timer_suite, stop_before_expiry)
 {
     MyTimerUser u;
-    jf::hal::OneshotTimer timer(
+    jf::hal::PeriodicTimer timer(
         1000*1000,     // enough time to stop timer before it expires
         &u);
     timer.start();
@@ -53,12 +53,12 @@ TEST(oneshot_timer_suite, stop_before_expiry)
     ASSERT_FALSE(timer.is_active());
 }
 
-TEST(oneshot_timer_suite, dtor_cleanup)
+TEST(periodic_timer_suite, dtor_cleanup)
 {
     timer_t id;
     {
         MyTimerUser u;
-        jf::hal::OneshotTimer timer(
+        jf::hal::PeriodicTimer timer(
             1000*1000,     // enough time to stop timer before it expires
             &u);
         timer.start();

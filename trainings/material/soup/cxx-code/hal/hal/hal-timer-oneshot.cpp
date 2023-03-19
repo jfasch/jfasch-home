@@ -1,7 +1,4 @@
-#include "hal-timer-oo-oneshot.h"
-
-#include <string.h>
-#include <assert.h>
+#include "hal-timer-oneshot.h"
 
 
 namespace jf::hal
@@ -17,7 +14,20 @@ void OneshotTimer::start()
         {0,0}, // interval (none; this is a one-shot timer)
         ms_to_timespec(_milliseconds),
     };          
+    _is_active = true;
     _do_start(ts);
+}
+
+void OneshotTimer::stop()
+{
+    _is_active = false;
+    _do_stop();
+}
+
+void OneshotTimer::_expired()
+{
+    _is_active = false; // disarmed by system at expiry
+    _call_user();
 }
 
 }
