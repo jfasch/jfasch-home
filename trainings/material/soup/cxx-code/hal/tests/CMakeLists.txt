@@ -4,6 +4,8 @@ ADD_EXECUTABLE(
   timer-oneshot-suite.cpp
   timer-periodic-suite.cpp
 
+  delay-suite.cpp
+
   fileutil-suite.cpp
   )
 

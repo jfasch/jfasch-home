@@ -1,8 +1,8 @@
 .. ot-group:: cxx11.smart_pointers
 
 
-Smart Pointers
-==============
+Smart Pointers (``std::unique_ptr``, ``std::shared_ptr``)
+=========================================================
 
 .. contents::
    :local:

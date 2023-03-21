@@ -1,5 +1,7 @@
 #include "hal-timer-oneshot.h"
 
+#include "hal-util.h"
+
 
 namespace jf::hal
 {

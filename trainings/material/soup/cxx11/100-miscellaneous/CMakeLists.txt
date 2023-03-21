@@ -1,2 +1,3 @@
 ADD_SUBDIRECTORY(010-chrono)
 ADD_SUBDIRECTORY(any-variant-optional)
+ADD_SUBDIRECTORY(array)

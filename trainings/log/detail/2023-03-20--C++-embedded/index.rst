@@ -110,9 +110,9 @@ Day 2
 -----
 
 * ODR, static inline, ...: :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/065-static-member-variables/topic`
-* ``constexpr`` livehacking, revisited. :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
-* Global objects? Ctor order?
-
+* ``constexpr`` livehacking,
+  revisited. :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* Global objects? Ctor order? jjj livehacking ref
 
 * From
   :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
@@ -124,6 +124,16 @@ Day 2
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+
+* Preparation for move semantics (and copy elision) tomorrow jjjj
+  https://www.faschingbauer.me/trainings/material/soup/cxx03/020-data-encapsulation/object-copy.html
+
+Day 3
+-----
+
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
+* Only maybe: have a look at
+  :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
 
 C++ Standard Library
 --------------------
