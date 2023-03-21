@@ -73,15 +73,11 @@ Follow the instructions in the `course project README
 <https://github.com/jfasch/2023-03-20>`__ to setup the initial version
 of the course project.
 
-C++ Overview Presentation
--------------------------
-
-Live-hacked :doc:`overview of C++
-</trainings/material/soup/cxx11/010-introduction/overview-livehacking>`,
-with a bias on features from C++11 onwards.
+Day 1
+-----
 
 Object Oriented Programming
----------------------------
+...........................
 
 * From
   :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
@@ -93,6 +89,30 @@ Object Oriented Programming
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+
+* From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
+
+  **Exercises**
+
+  * :doc:`/trainings/material/soup/cxx-exercises/oo-shapes/shapes`
+
+jjj live hacking references, explanations
+
+Day 2
+-----
+
+* ODR, static inline, ...: :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/065-static-member-variables/topic`
+* ``constexpr`` livehacking, revisited. :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* Global objects? Ctor order?
+
 
 * From
   :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`

@@ -20,7 +20,9 @@ Topics
    040-this/topic
    050-references/topic
    060-static/topic
+   065-static-member-variables/topic
    070-operators/topic
+
 
 Exercises
 ---------

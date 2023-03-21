@@ -15,7 +15,7 @@ Classes and Objects
 
    **Trainer's Note**
 
-   * Download :download:`code/c-point.cpp`
+   * Download :download:`code/c-point.c`
    * Morph it into C++
 
 Introducing C++: ``class point``
