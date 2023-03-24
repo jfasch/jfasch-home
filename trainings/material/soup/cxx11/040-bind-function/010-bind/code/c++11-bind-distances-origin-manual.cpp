@@ -28,7 +28,8 @@ int main()
     double origin_distances[sizeof(points)/sizeof(Point)];
 
     // compute origin-distances of points
-    for (int i=0; auto p: points)
+    int i=0;     
+    for (auto p: points)
         origin_distances[i++] = distance_origin(p);
 
     for (double dist: origin_distances)

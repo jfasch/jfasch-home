@@ -1,12 +1,12 @@
 ADD_EXECUTABLE(
   cxx-exercises-hal--suite
 
-  timer-oneshot-suite.cpp
-  timer-periodic-suite.cpp
+  hal-timer-oneshot-suite.cpp
+  hal-timer-periodic-suite.cpp
 
-  delay-suite.cpp
+  hal-delay-suite.cpp
 
-  fileutil-suite.cpp
+  hal-fileutil-suite.cpp
   )
 
 TARGET_LINK_LIBRARIES(

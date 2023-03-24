@@ -12,6 +12,7 @@ ADD_SUBDIRECTORY(oo-sensor-w1)
 ADD_SUBDIRECTORY(oo-sensor-w1-factory)
 
 ADD_SUBDIRECTORY(switches-core)
+ADD_SUBDIRECTORY(switches-sysfs)
 
 ADD_SUBDIRECTORY(design-patterns-singleton)
 ADD_SUBDIRECTORY(design-patterns-adapter)

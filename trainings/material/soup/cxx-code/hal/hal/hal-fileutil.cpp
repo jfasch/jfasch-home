@@ -2,6 +2,7 @@
 
 #include <stdexcept>
 #include <fstream>
+#include <sstream>
 
 #include <fcntl.h>
 #include <unistd.h>
@@ -17,6 +18,14 @@ void write_to_file(const std::string& path, const std::string& content)
         throw std::runtime_error(path + " does not exist");
 
     f.write(content.c_str(), content.size()); // fix that: error check
+    f.close();
+}
+
+void write_to_file_int(const std::string& path, int i)
+{
+    std::ostringstream s;
+    s << i;
+    write_to_file(path, s.str());
 }
 
 std::string read_from_file(const std::string& path)
@@ -33,6 +42,12 @@ std::string read_from_file(const std::string& path)
     }
 
     return std::string(buffer, nread);
+}
+
+int read_from_file_int(const std::string& path)
+{
+    std::string content = read_from_file(path);
+    return std::stoi(content);
 }
 
 }

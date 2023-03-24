@@ -31,8 +31,8 @@ public:
 private:
     struct data
     {
-        data() : answer_valid(false) {}
-        data(int answer) : answer_valid(true), answer(answer) {}
+        data() noexcept : answer_valid(false), answer(0) {}
+        data(int answer) noexcept : answer_valid(true), answer(answer) {}
         bool answer_valid;
         int answer;
     };

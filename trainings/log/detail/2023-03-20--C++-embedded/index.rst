@@ -76,8 +76,8 @@ of the course project.
 Day 1
 -----
 
-Object Oriented Programming
-...........................
+Classes, Objects, Methods
+.........................
 
 * From
   :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
@@ -100,19 +100,31 @@ Object Oriented Programming
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
 
-  **Exercises**
+Exercises
+.........
 
-  * :doc:`/trainings/material/soup/cxx-exercises/oo-shapes/shapes`
+* :doc:`/trainings/material/soup/cxx-exercises/oo-shapes/shapes`
 
-jjj live hacking references, explanations
+Miscellaneous
+.............
+
+* One Definition Rule (ODR), and ``static inline`` class members:
+  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/065-static-member-variables/topic`
+* ``constexpr`` explored. How is it used to populate the ``rodata``
+  section and save RAM?
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+  * Sample code: `rodata.cpp
+    <https://github.com/jfasch/2023-03-20/blob/main/livehacking/rodata.cpp>`__
+
+* Global objects from different compilation units are initialized in
+  *unspecified* order. See `here <https://github.com/jfasch/2023-03-20/tree/main/livehacking/global-ctor>`__.
 
 Day 2
 -----
 
-* ODR, static inline, ...: :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/065-static-member-variables/topic`
-* ``constexpr`` livehacking,
-  revisited. :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
-* Global objects? Ctor order? jjj livehacking ref
+Heavy Weight OO |:muscle:|
+..........................
 
 * From
   :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
@@ -125,18 +137,54 @@ Day 2
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
-* Preparation for move semantics (and copy elision) tomorrow jjjj
-  https://www.faschingbauer.me/trainings/material/soup/cxx03/020-data-encapsulation/object-copy.html
+Resource Management Pitfalls
+............................
+
+* Exploring object copy when resources have to be explicitly managed:
+  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
 Day 3
 -----
 
+R-Value References/Moving, And Managed Pointers
+...............................................
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
-* Only maybe: have a look at
+
+A Little Concurrency
+....................
+
+* Only if there is time (and fun): have a look at
   :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
 
+Exercise
+........
+
+Based upon an object oriented encapsulation for OS primitives (timers
+and GPIOs, mainly),
+
+* Sensors (roughly taken from :doc:`here
+  </trainings/material/soup/cxx-exercises/oo-sensors/group>`)
+
+  * A sensor *abstract base class* - an *interface*
+  * A number of concrete sensor implementations
+  * A configured set of those, measuring live data
+  * Live data is *posted* via another interface
+
+* Display(s)
+
+  * Another *interface* in the system
+  * Display measurement values
+  * Concrete implementation: a software PWM using a timer and a GPIO
+    (as opposed to :doc:`hardware PWM
+    </trainings/material/soup/linux/hardware/pwm/topic>`
+
+Untold So Far
+-------------
+
 C++ Standard Library
---------------------
+....................
 
 * :doc:`Managed Pointers
   </trainings/material/soup/cxx11/030-smart-pointers/group>`
@@ -171,39 +219,10 @@ C++ Standard Library
   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/multimap`
 
 Miscellaneous Topics
---------------------
+....................
 
-* Optimization (optional)
+* Optimization
 
   * :doc:`/trainings/material/soup/c/100-performance/010-introduction/topic`
   * :doc:`/trainings/material/soup/c/100-performance/020-computebound/topic`
   * :doc:`/trainings/material/soup/c/100-performance/030-memory/topic`
-
-Exercise Series
----------------
-
-Based upon an object oriented encapsulation for OS primitives (timers
-and GPIOs, mainly),
-
-* Sensors (roughly taken from :doc:`here
-  </trainings/material/soup/cxx-exercises/oo-sensors/group>`)
-
-  * A sensor *abstract base class* - an *interface*
-  * A number of concrete sensor implementations
-  * A configured set of those, measuring live data
-  * Live data is *posted* via another interface
-
-* Display(s)
-
-  * Another *interface* in the system
-  * Display measurement values
-  * Concrete implementation: a software PWM using a timer and a GPIO
-    (as opposed to :doc:`hardware PWM
-    </trainings/material/soup/linux/hardware/pwm/topic>`
-
-To Be Done
-----------
-
-* ``std::array``
-* Overloading the ``new`` operator
-* Global objects initialization order

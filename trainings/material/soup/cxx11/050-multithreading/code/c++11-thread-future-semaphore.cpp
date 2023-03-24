@@ -1,3 +1,5 @@
+#if __cplusplus >= 202001L
+
 #include <thread>
 #include <semaphore>
 #include <iostream>
@@ -47,3 +49,16 @@ int main()
     chew_answer.join();
     return 0;
 }
+
+#else
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cerr << "no!" << endl;
+    return 0;
+}
+
+#endif
