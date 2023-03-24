@@ -18,24 +18,83 @@ Stringification And Representation
   ``eval()`` input
 * Default: prints something useless (class name and object identity)
 
-.. literalinclude:: str-repr-default.py
-   :caption: :download:`str-repr-default.py`
-   :language: python
+.. jupyter-execute::
 
-.. command-output:: python str-repr-default.py
-   :cwd: .
+   class Person:
+       def __init__(self, firstname, lastname):
+           self.firstname = firstname
+           self.lastname = lastname
 
-Special Object Methods: ``__str__()``, ``__repr__()``
------------------------------------------------------
+   person = Person('Joerg', 'Faschingbauer')
 
-* ``__str__()``: return human readable string, describing the
+* Expicitly calling ``str()`` on object
+
+  .. jupyter-execute::
+
+     str(person)
+
+* Using ``print()`` with an object calls ``str()`` on is own
+
+  .. jupyter-execute::
+
+     print(person)
+
+* ``repr()`` on an object
+
+  .. jupyter-execute::
+
+     repr(person)
+
+* ``print()`` a list of objects |longrightarrow| uses ``repr()`` on
+  list elements
+
+  .. jupyter-execute::
+
+     print([person])
+
+Overloading ``str()`` And ``repr()``: ``__str__()``, ``__repr__()``
+-------------------------------------------------------------------
+
+* ``__str__()``: returns human readable string, describing the
   object. Called, for example, by ``print()``.
 * ``__repr__()``: object representation. Usually the code to
   re-construct the object.
 
-.. literalinclude:: str-repr-implemented.py
-   :caption: :download:`str-repr-implemented.py`
-   :language: python
+.. jupyter-execute::
 
-.. command-output:: python str-repr-implemented.py
-   :cwd: .
+   class Person:
+       def __init__(self, firstname, lastname):
+           self.firstname = firstname
+           self.lastname = lastname
+   
+       def __str__(self):
+           return f'{self.firstname} {self.lastname}'
+   
+       def __repr__(self):
+           return f'Person("{self.firstname}", "{self.lastname}")'
+
+.. jupyter-execute::
+
+   person = Person('Joerg', 'Faschingbauer')
+
+* ``str()`` (and ``print()``)
+
+.. jupyter-execute::
+
+   str(person)
+
+.. jupyter-execute::
+
+   print(person)
+
+* ``repr()`` (and ``print()`` on lists)
+
+.. jupyter-execute::
+
+   print(repr(person))
+
+.. jupyter-execute::
+
+   print([person])
+
+

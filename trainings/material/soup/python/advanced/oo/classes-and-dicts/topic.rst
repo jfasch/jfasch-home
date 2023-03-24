@@ -24,13 +24,31 @@ Facts Up-Front
 Using Raw Dictionaries As Objects
 ---------------------------------
 
-.. literalinclude:: classes-and-dicts-dict.py
-   :caption: :download:`classes-and-dicts-dict.py`
-   :language: python
+* Raw dictionary to hold attributes
 
-.. command-output:: python classes-and-dicts-dict.py
-   :cwd: .
+  .. jupyter-execute::
+  
+     person = {}
 
+* ``str`` type keys as *attributes*
+
+  .. jupyter-execute::
+  
+     person['firstname'] = 'Joerg'
+     person['lastname'] = 'Faschingbauer'
+
+* Attribute access is clumsy
+   
+  .. jupyter-execute::
+  
+     person['firstname']
+
+* The type of the object does not refect that it is a *person*
+   
+  .. jupyter-execute::
+  
+     type(person)
+   
 * Much writing
 * Many opportunities for bugs/typos
 * |longrightarrow| **BAD!**
@@ -38,14 +56,55 @@ Using Raw Dictionaries As Objects
 Enter Classes: An Empty Class, And Its Effects
 ----------------------------------------------
 
-.. literalinclude:: classes-and-dicts-enter-class.py
-   :caption: :download:`classes-and-dicts-enter-class.py`
-   :language: python
+Better notation for the same thing: ``class``
 
-.. command-output:: python classes-and-dicts-enter-class.py
-   :cwd: .
+* Create empty class (one without *class attributes* and *methods*)
 
-**Better**, because ...
+  .. jupyter-execute::
+  
+     class Person:
+         pass
+
+* Classes are first-class object |longrightarrow| have a type
+
+  .. jupyter-execute::
+  
+     type(Person)
+
+  |longrightarrow| A-ha! Created a new type, obviously
+
+* Objects are instantiated by *calling* their type
+
+  .. jupyter-execute::
+  
+     person = Person()
+     type(person)
+
+Attributes
+----------
+
+* Setting attributes
+
+  .. jupyter-execute::
+  
+     person.firstname = 'Joerg'
+     person.lastname = 'Faschingbauer'
+
+* Getting attributes
+
+  .. jupyter-execute::
+  
+     person.firstname
+
+* Unknown attribute access
+
+  .. jupyter-execute::
+     :raises:
+  
+     person.svnr                   # <--- attribute 'svnr' does not exist
+
+Summary: Classes Or Raw Dictionaries
+------------------------------------
 
 * Definitely less typing 
 * Objects have type other than ``dict``
@@ -65,9 +124,32 @@ Dynamic Attribute Access
 * ``dir()``
 * ``obj.__dict__``
 
-.. literalinclude:: classes-and-dicts-dynamic-access.py
-   :caption: :download:`classes-and-dicts-dynamic-access.py`
-   :language: python
+  .. jupyter-execute::
+  
+     class Person:
+         pass
+     
+     person = Person()
+     person.firstname = 'Joerg'
+     person.lastname = 'Faschingbauer'
 
-.. command-output:: python classes-and-dicts-dynamic-access.py
-   :cwd: .
+  .. jupyter-execute::
+  
+     hasattr(person, 'firstname')
+
+  .. jupyter-execute::
+  
+     getattr(person, 'firstname')
+
+  .. jupyter-execute::
+     :raises:
+
+     getattr(person, 'svnr')
+
+  .. jupyter-execute::
+  
+     setattr(person, 'svnr', '1037190666')
+
+  .. jupyter-execute::
+  
+     print('Boing, now having an ID', person.svnr)

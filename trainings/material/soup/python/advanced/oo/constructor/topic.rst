@@ -16,13 +16,22 @@ Motivation
 * Manually setting attributes (as in :doc:`../classes-and-dicts/topic`) is clumsy
 * Typos/bugs ahead
 * |longrightarrow| want a well-defined object *initialization*
+* |longrightarrow| want to require user to pass ``firstname`` and
+  ``lastname``
 
-.. literalinclude:: constructor.py
-   :caption: :download:`constructor.py`
-   :language: python
+.. jupyter-execute::
 
-.. command-output:: python constructor.py
-   :cwd: .
+   class Person:
+       def __init__(self, firstname, lastname):
+           self.firstname = firstname
+           self.lastname = lastname
+
+* Calling the type |longrightarrow| ``__init__()``
+
+.. jupyter-execute::
+
+   person = Person('Joerg', 'Faschingbauer')
+   f'firstname: {person.firstname}, {person.lastname}'
 
 And ``self``?
 -------------
@@ -33,7 +42,7 @@ And ``self``?
   *initialize* the object
 * *Invoked* with two parameters
 
-  .. code-block:: python
+  .. jupyter-execute::
 
      person = Person('Joerg', 'Faschingbauer')
 

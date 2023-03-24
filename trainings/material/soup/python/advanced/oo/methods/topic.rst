@@ -17,12 +17,20 @@ Object Methods
 * ... the *object* the method *is called on*
 * Usually called ``self`` (not a must though; see :doc:`../constructor/topic`)
 
-.. literalinclude:: method-object.py
-   :caption: :download:`method-object.py`
-   :language: python
+.. jupyter-execute::
 
-.. command-output:: python method-object.py
-   :cwd: .
+   class Person:
+       def __init__(self, firstname, lastname):
+           self.firstname = firstname
+           self.lastname = lastname
+           
+       def say_hello(self, phrase):
+           return f'{phrase} {self.firstname} {self.lastname}'
+
+.. jupyter-execute::
+
+   joerg = Person('Joerg', 'Faschingbauer')
+   joerg.say_hello("Howdy, I'm")
 
 Class Methods (``@classmethod``)
 --------------------------------
@@ -34,12 +42,24 @@ Class Methods (``@classmethod``)
 * Usually named ``cls`` (again, not necessarily)
 * Cool when inheriting/specializing ``Person``
 
-.. literalinclude:: method-class.py
-   :caption: :download:`method-class.py`
-   :language: python
+.. jupyter-execute::
 
-.. command-output:: python method-class.py
-   :cwd: .
+   class Person:
+       def __init__(self, firstname, lastname):
+           self.firstname = firstname
+           self.lastname = lastname
+           
+       @classmethod
+       def make_child(cls, firstname, parent1, parent2):
+           # ---- vvv --- not hardwiring class Person
+           return cls(firstname, f'{parent1.lastname}-{parent2.lastname}')
+
+.. jupyter-execute::
+
+   mother = Person('Isolde', 'Haubentaucher')
+   father = Person('Joerg', 'Faschingbauer')
+
+   child = Person.make_child('Alex', mother, father)
 
 Static Methods (``@staticmethod``)
 ----------------------------------
@@ -48,10 +68,23 @@ Static Methods (``@staticmethod``)
 * Only without implicit parameter
 * (Consequentially, does not play well with inheritance)
 
-.. literalinclude:: method-static.py
-   :caption: :download:`method-static.py`
-   :language: python
+.. jupyter-execute::
 
-.. command-output:: python method-static.py
-   :cwd: .
+   class Person:
+       def __init__(self, firstname, lastname):
+           self.firstname = firstname
+           self.lastname = lastname
+           
+       @staticmethod
+       def make_child(firstname, parent1, parent2):
+           # ---- vvvvvv --- hardwiring class Person
+           return Person(firstname, f'{parent1.lastname}-{parent2.lastname}')
 
+* Used the same as ``classmethod``
+
+.. jupyter-execute::
+
+   mother = Person('Isolde', 'Haubentaucher')
+   father = Person('Joerg', 'Faschingbauer')
+   
+   child = Person.make_child('Alex', mother, father)

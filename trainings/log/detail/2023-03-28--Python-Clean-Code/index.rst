@@ -1,4 +1,4 @@
-Clean Code Development With Python (2023-03-28 - 2023-03-30)
+Clean Code Development With Python (2023-03-28 - 2023-03-29)
 ============================================================
 
 .. contents::
@@ -32,52 +32,88 @@ Work Environment
 *Day 1:* Python Development: Select Topics
 ------------------------------------------
 
-Up front, something about *Python The Language*. Exercise material not
-shown, will pick that from :doc:`here
-</trainings/material/soup/python/exercises/group>` as appropriate, or
-invent something new.
+Knowing more about Python enables one to write ... well ... more code
+in fewer lines. While that is not usually an attitude of programmers
+that everybody loves, in Python there's a word for it: *Pythonic*. An
+early PEP, `"PEP 20 – The Zen of Python"
+<https://peps.python.org/pep-0020/>`__ describes what that could
+be. Lets have a closer look at what today's version of the language
+offers in that respect.
 
-Basics, And Datatypes
-.....................
+Datatypes, References, Memory Management, Iteration
+...................................................
 
-A quick run-through covering Python basics, and its built-in
-datatypes. Neat insights into Python's internals ("everything is an
-object"), iterators, and slicing (the basis for `NumPy <numpy.org>`__
-array handling).
+Built-In Types: Facts
+`````````````````````
 
-* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
+* :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
+
+``for`` Loops, And The Iterator Protocol
+````````````````````````````````````````
+
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
+  (with empasis on the ``else`` clause)
 
-Advanced Topics
-...............
+* From :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
 
-There always more about Python. Error handling, automatic resource
-cleanup, modularization.
+  * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/iterator-protocol`
+  * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/fibonacci-generator`
 
-* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
-* :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
-* :doc:`/trainings/material/soup/python/advanced/modules`
+* Live hack a test-driven directory-only iterator on a parent
+  directory (hint:
+  ``fabric-defect-detection/scripts/data/make_data_set.py``)
 
-(To be created) Presentable material and exercises about
-
-* `NumPy <https://numpy.org/>`__
-* `pandas <https://pandas.pydata.org/>`__
-
-Optional
-........
-
-Even more about Python. Interesting and useful stuff; optional
-nonetheless.
+Decorators (The Ominous ``@``)
+..............................
 
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
-* :doc:`/trainings/material/soup/python/advanced/multithreading/group`
+
+Error And Resource Management
+.............................
+
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
+* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
+
+OO, Modules
+...........
+
+Object Oriented Programming
+```````````````````````````
+
+From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+
+* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`              
+* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
+Modules And Packages
+````````````````````
+
+* :doc:`/trainings/material/soup/python/advanced/modules`
+
+Pandas
+......
+
+From :doc:`/trainings/material/soup/python/misc/pandas/group`:
+
+* :doc:`/trainings/material/soup/python/misc/pandas/basics`
+* :doc:`/trainings/material/soup/python/misc/pandas/iloc`
+* :doc:`/trainings/material/soup/python/misc/pandas/loc`
+* :doc:`/trainings/material/soup/python/misc/pandas/indexes`
+* :doc:`/trainings/material/soup/python/misc/pandas/filters`
+* :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
+* :doc:`/trainings/material/soup/python/misc/pandas/add_row`
 
 *Day 2:* Clean Code? (Software Development: A Craft)
 ----------------------------------------------------
@@ -173,37 +209,6 @@ takes two days to watch:
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 	     allowfullscreen>
      </iframe>
-
-Object Oriented Programming
-...........................
-
-Python is not a strict OO language: it does not require anybody to
-know what a class is. It does bring all features that such languages
-usually bring, though, and if one knows more, one can *do* more.
-
-Conversely, Python's *internals* are stongly object oriented. ``int``
-and ``float`` are objects, for example, and functions and classes are,
-too, as are modules and iterators/generators, to name a few more.
-
-It looks like OO is not entirely bad. OO has made its way into
-software development, it is part of our "craft", so lets have a deeper
-look at it.
-
-From :doc:`/trainings/material/soup/python/advanced/oo/group`:
-
-* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
-
-Exercises: there is some in
-:doc:`/trainings/material/soup/python/advanced/oo/group` that we could
-pick from. Lets think about something more to the point though.
 
 Design Patterns
 ...............

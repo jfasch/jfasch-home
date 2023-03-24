@@ -20,21 +20,27 @@
 Shortcut For Simple Data-Holding Classes
 ----------------------------------------
 
-.. code-block:: python
+* Much writing for a simple data holder
 
-   class Person:
-       def __init__(self, firstname, lastname):
-           self.firstname = firstname
-           self.lastname = lastname
+  .. jupyter-execute::
+  
+     class Person:
+         def __init__(self, firstname, lastname):
+             self.firstname = firstname
+             self.lastname = lastname
+  
+     person = Person('Joerg', 'Faschingbauer')
+     print(person.firstname, person.lastname)
 
-... is the same as ...
+* Written shorter (and with much more features - but read on)
 
-.. literalinclude:: named-tuple-simple.py
-   :caption: :download:`named-tuple-simple.py`
-   :language: python
-
-.. command-output:: python named-tuple-simple.py
-   :cwd: .
+  .. jupyter-execute::
+  
+     from collections import namedtuple
+     Person = namedtuple('Person', ('firstname', 'lastname'))
+     
+     person = Person('Joerg', 'Faschingbauer')
+     print(person.firstname, person.lastname)
    
 Constructing From Iterable: ``_make()``
 ---------------------------------------
@@ -43,20 +49,27 @@ Constructing From Iterable: ``_make()``
   <../../../misc/csv/topic>`, :doc:`databases <../../../misc/db/group>`, ...)
 * Rows are *iterable*
 * |longrightarrow| ``someclass._make()``
+* Example: rows read from a CSV file
 
-.. literalinclude:: named-tuple-csv.py
-   :caption: :download:`named-tuple-csv.py`
-   :language: python
+  .. jupyter-execute::
+  
+     persons_from_csv = [
+         ['Joerg', 'Faschingbauer'],
+         ['Caro', 'Faschingbauer'],
+     ]
 
-.. command-output:: python named-tuple-csv.py
-   :cwd: .
+* Turning each into a ``Person`` object
+
+  .. jupyter-execute::
+  
+     for person in map(Person._make, persons_from_csv):
+         print(person.firstname, person.lastname)
 
 Convert To ``dict``: ``_asdict()``
 ----------------------------------
 
-.. literalinclude:: named-tuple-asdict.py
-   :caption: :download:`named-tuple-asdict.py`
-   :language: python
-
-.. command-output:: python named-tuple-asdict.py
-   :cwd: .
+.. jupyter-execute::
+  
+   person = Person('Joerg', 'Faschingbauer')
+   person_dict = person._asdict()
+   person_dict

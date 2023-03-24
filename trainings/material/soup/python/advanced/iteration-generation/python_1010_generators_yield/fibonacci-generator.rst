@@ -4,15 +4,13 @@
                  yield statement works
    :keywords: python, schulung, training, programming, yield
 
-Screenplay: Python: The Yield Statement
-=======================================
+Implementing A Fibonacci Number Generator 
+=========================================
 
 .. sidebar:: Contents
 
    .. contents::
       :local:
-
-   **Code**: :doc:`code/index`
 
 Fibonacci Numbers: Naive List
 -----------------------------
