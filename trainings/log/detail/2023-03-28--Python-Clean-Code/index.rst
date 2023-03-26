@@ -29,8 +29,16 @@ Work Environment
   * :doc:`/trainings/material/soup/python/swdev/pip/topic`
   * :doc:`/trainings/material/soup/python/swdev/venv/topic`
       
-*Day 1:* Python Development: Select Topics
-------------------------------------------
+*Day 1*
+-------
+
+Introduction
+............
+
+* :doc:`/trainings/material/soup/clean-code/intro-python/livehacking`
+
+Python Development: Select Topics
+.................................
 
 Knowing more about Python enables one to write ... well ... more code
 in fewer lines. While that is not usually an attitude of programmers
@@ -39,9 +47,6 @@ early PEP, `"PEP 20 – The Zen of Python"
 <https://peps.python.org/pep-0020/>`__ describes what that could
 be. Lets have a closer look at what today's version of the language
 offers in that respect.
-
-Datatypes, References, Memory Management, Iteration
-...................................................
 
 Built-In Types: Facts
 `````````````````````
@@ -67,20 +72,17 @@ Built-In Types: Facts
   ``fabric-defect-detection/scripts/data/make_data_set.py``)
 
 Decorators (The Ominous ``@``)
-..............................
+``````````````````````````````
 
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
 Error And Resource Management
-.............................
+`````````````````````````````
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 * :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
-
-OO, Modules
-...........
 
 Object Oriented Programming
 ```````````````````````````

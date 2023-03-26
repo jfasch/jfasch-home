@@ -93,8 +93,8 @@ Feature Request: Concatenate Input Data From ``YYYY-MM.csv`` Files
 ``DataFrame.to_csv()`` writes out by default. ``header=False`` fixes
 that.)
 
-A Step Back: What Do We Have?
------------------------------
+Where Are We? Questions!
+------------------------
 
 * A number of different ways - *policies* - to read input data
 * Data cleaning
@@ -103,16 +103,23 @@ A Step Back: What Do We Have?
 
 **Questions**
 
-* How do I test input-reading (and data cleaning)?
-* Can categorization be done without cleaning? |longrightarrow|
-  currently yes, but possibly not in the general case
-* How do I proceed with categorization? 
+* I'm annoyed by the cycles. Modify, manual test. Libreoffice in the
+  toolchain or what??!
+* What do I test?
 
-  * It's going to become more complex
-  * Want to specify expected category by-example
+  * Input?
+  * Cleaning? 
+  * Categories?
+  * All in one? *Monolithically?*
 
-Testability At A Low Level: Currency And Date Conversion
---------------------------------------------------------
+Testability: Input Cleaning
+---------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/swdev/pytest/group`
 
 **Currency conversion**
 
@@ -132,3 +139,66 @@ Testability At A Low Level: Currency And Date Conversion
 .. literalinclude:: code/test-data-cleaning/tests/test_data_cleaning.py
    :caption: :download:`code/test-data-cleaning/tests/test_data_cleaning.py`
    :language: python
+
+Testability: Reading Input (One Or Multiple Files, Explicitly)
+--------------------------------------------------------------
+
+* ``test_input.py``
+* ``stuff/input.py``, containing
+
+  * ``read_from_csv_single()``
+  * ``read_from_csv_multiple()``
+
+* Write tests first (don't touch ``scripts/categorize.py``
+* Deliberately omit ``encoding`` parameter to ``open()``
+  |longrightarrow| failure
+* Raw strings!
+* Only finally factor out ``read_from_csv()`` from
+  ``scripts/categorize.py``
+
+.. literalinclude:: code/test-input/tests/test_input.py
+   :caption: :download:`code/test-input/tests/test_input.py`
+   :language: python
+
+.. literalinclude:: code/test-input/stuff/input.py
+   :caption: :download:`code/test-input/stuff/input.py`
+   :language: python
+
+Test Sanity: Common Code
+------------------------
+
+* Tests contain repeated code
+* |longrightarrow| Factor out (write simple function to create one CSV
+  file in one go)
+
+.. literalinclude:: code/test-input-common-code/tests/test_input.py
+   :caption: :download:`code/test-input-common-code/tests/test_input.py`
+   :language: python
+
+Testability: Reading Input From Directory
+-----------------------------------------
+
+* Finally, factor out ``read_from_dir()``
+* Don't forget to modify ``scripts/categorize.py``
+
+.. literalinclude:: code/test-input-dir/tests/test_input.py
+   :caption: :download:`code/test-input-dir/tests/test_input.py`
+   :language: python
+
+* Tests become larger
+* Programs become smaller
+
+Testability: Categorization
+---------------------------
+
+* First: all-in-one approach
+* Write entire CSV file, and see how categorization is
+* |longrightarrow| rip ``_write_csv()`` out from ``test_input.py``
+* Lets see: ``__init__.py`` necessary
+
+.. literalinclude:: code/test-category/tests/test_category.py
+   :caption: :download:`code/test-category/tests/test_category.py`
+   :language: python
+
+* Finally, rip out ``write_to_csv()``
+* |longrightarrow| **null length script**
