@@ -122,7 +122,7 @@ PyPI, Virtual Environments
 Requirements Engineering, Test Driven Development
 .................................................
 
-* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 
 Live coding on the CSV code base, see `Github
 <https://github.com/jfasch/2022-05-02/tree/main/exercises/joerg/csv>`__

@@ -13,12 +13,3 @@ Seminar Agenda and Timeline
    :hidden:
 
    seminar/index
-
-Past: Agenda Proposals
-----------------------
-
-.. toctree::
-   :maxdepth: 1
-
-   agendae/index
-

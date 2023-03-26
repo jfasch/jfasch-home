@@ -66,20 +66,7 @@ Continue with exercises: CSV |longrightarrow| modularization
 Test Driven Development
 .......................
 
-.. sidebar:: Test Driven Development |longrightarrow| Clean Code
-
-   .. list-table::
-      :align: left
-      
-      * * * `Wikipedia: Test-driven development
-            <https://en.wikipedia.org/wiki/Test-driven_development>`__
-	  * `Kent Beck: Test Driven Development: By Example
-            <https://www.oreilly.com/library/view/test-driven-development/0321146530/>`__
-	  * `Clean Code: A Handbook of Agile Software Craftsmanship
-            <https://www.oreilly.com/library/view/clean-code-a/9780136083238/>`__
-	  * `Scrum <https://en.wikipedia.org/wiki/Scrum_(software_development)>`__
-	* .. image:: tdd.jpg
-	* .. image:: cleancode.jpg
+(Mostly from :doc:`/trainings/material/soup/clean-code/group`)
 
 I had stated my strong opinion about (excess) debugger usage. (In
 short words, debuggers are from hell when you use one to *comprehend*
@@ -88,7 +75,7 @@ excess IDE usage).
 
 Discussion, naturally (thank you Alex). Decided to switch to test
 driven development, provocantly. Based upon
-:doc:`/trainings/material/soup/python/swdev/pytest-intro`, hacked the
+:doc:`/trainings/material/soup/python/swdev/pytest/intro`, hacked the
 following topics while introducing TDD:
 
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
@@ -118,7 +105,7 @@ Revisit yesterday's mess ...
 
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
-* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 
 Continue with mess ...
 

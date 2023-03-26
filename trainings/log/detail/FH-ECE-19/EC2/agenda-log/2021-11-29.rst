@@ -56,7 +56,7 @@ Unit Testing
   * Test case
   * Test suite
 
-* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 * `opentraining tests
   <https://github.com/jfasch/opentraining/tree/main/tests>`__
 * Live-hack a test, together with ``.ini`` guys

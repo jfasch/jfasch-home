@@ -165,7 +165,7 @@ Testing
    * :download:`Test Driven Development
      </trainings/material/pdf/060-design-patterns-unittests.pdf>`
    * :doc:`/trainings/material/soup/python/swdev/unittest` (comes with Python)
-   * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+   * :doc:`/trainings/material/soup/python/swdev/pytest/intro`
      (outright genius)
    * :doc:`/trainings/material/soup/python/advanced/modules`
 

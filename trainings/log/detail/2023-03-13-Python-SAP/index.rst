@@ -234,7 +234,7 @@ Unit Testing
 ............
   
 * :doc:`Unit testing
-  </trainings/material/soup/python/swdev/pytest-intro>`
+  </trainings/material/soup/python/swdev/pytest/intro>`
 
 Machine Learning: Pandas, NumPy, And Algorithms
 ...............................................

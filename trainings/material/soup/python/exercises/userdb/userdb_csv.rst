@@ -29,7 +29,7 @@ Test Code
 ---------
 
 The following test (see
-:doc:`/trainings/material/soup/python/swdev/pytest-intro` for how to
+:doc:`/trainings/material/soup/python/swdev/pytest/intro` for how to
 use it) can better express the requirement,
 
 .. literalinclude:: code/tests/test_read_csv.py

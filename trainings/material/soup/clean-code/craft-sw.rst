@@ -40,7 +40,7 @@ A rather old discipline ...
 
 **Looks like that is part of our craft**
 
-.. image:: ../images/design_patterns.webp
+.. image:: /trainings/material/soup/clean-code/design_patterns.webp
 
 * Not tied to any programming language
 * "This is how things are done"

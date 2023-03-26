@@ -23,6 +23,7 @@ work in progress*).
    cxx-code/index
    cxx-exercises/group
    linux/group
+   clean-code/group
    unittest/group
    kernel/group
 

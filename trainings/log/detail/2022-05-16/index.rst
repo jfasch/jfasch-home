@@ -40,7 +40,7 @@ Project Management
 Unit Testing, Test Driven Development
 .....................................
 
-* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 
 Object Priented Programming
 ...........................

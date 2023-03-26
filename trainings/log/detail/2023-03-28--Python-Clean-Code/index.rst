@@ -118,97 +118,31 @@ From :doc:`/trainings/material/soup/python/misc/pandas/group`:
 *Day 2:* Clean Code? (Software Development: A Craft)
 ----------------------------------------------------
 
-Messages From *The Book*
-........................
+Clean Code?
+...........
 
-.. image:: clean-code.jpg
-   :align: right
-   :height: 300px
+What does `Robert C. Martin
+<https://en.wikipedia.org/wiki/Robert_C._Martin>`__ mean?
 
-The following material (which has been created for a similar show, but
-in C++) will be adapted for our seminar. Goal is to start a discussion
-on ... well ... software development, and how it is
-understood. *Agile*.
+From :doc:`/trainings/material/soup/clean-code/group`
 
-* :doc:`/about/site/work-in-progress/2022-04-13/seminar/craft-sw`
-* Survey of *The Book* (taken from
-  :doc:`/about/site/work-in-progress/2022-04-13/seminar/clean-code-craftsmanship`,
-  but polished and Pythonized)
+* :doc:`/trainings/material/soup/clean-code/intro-python/livehacking`
+* :doc:`/trainings/material/soup/clean-code/craft-sw`
+* :doc:`/trainings/material/soup/clean-code/book-messages`
 
-Condensed version of the following talk series by Bob Martin which
-takes two days to watch:
+Unit Testing
+............
 
-* `Clean Code - Uncle Bob / Lesson 1 <https://youtu.be/7EmboKQH8lM>`__
+No craft without testing. Again, automated testing is part of software
+development for a long time now. Developers, and their employers
+likewise, do not always recognize the goodness of non-immediacy.
 
-  .. raw:: html
+Ease the technical hurdle, give terminology, discuss (unit tests as
+documentation). The exercises in this training will be formulated as
+unit tests, so maybe this chapter is in order right at the beginning
+of it.
 
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/7EmboKQH8lM" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
-* `Clean Code - Uncle Bob / Lesson 2 <https://youtu.be/2a_ytyt9sf8>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/2a_ytyt9sf8" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
-* `Clean Code - Uncle Bob / Lesson 3 <https://youtu.be/Qjywrq2gM8o>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/Qjywrq2gM8o" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
-* `Clean Code - Uncle Bob / Lesson 4 <https://youtu.be/58jGpV2Cg50>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/58jGpV2Cg50" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
-* `Clean Code - Uncle Bob / Lesson 5 <https://youtu.be/sn0aFEMVTpA>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/sn0aFEMVTpA" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
-
-* `Solid Principles by Uncle Bob Martin <https://youtu.be/oar-T2KovwE>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/oar-T2KovwE" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 
 Design Patterns
 ...............
@@ -226,16 +160,3 @@ reproducible way.
   * Composite
   * Observer
 
-Unit Testing
-............
-
-No craft without testing. Again, automated testing is part of software
-development for a long time now. Developers, and their employers
-likewise, do not always recognize the goodness of non-immediacy.
-
-Ease the technical hurdle, give terminology, discuss (unit tests as
-documentation). The exercises in this training will be formulated as
-unit tests, so maybe this chapter is in order right at the beginning
-of it.
-
-* :doc:`/trainings/material/soup/python/swdev/pytest-intro`

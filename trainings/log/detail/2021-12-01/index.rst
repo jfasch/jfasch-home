@@ -63,7 +63,7 @@ Basics Recap
 Group Project Preparation
 .........................
 
-* At the basis: :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* At the basis: :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 * Talking about IoT sensors posting crap into cloud
 
   .. image:: images/big-picture.png

@@ -27,7 +27,7 @@ Up Front: Project Management
 * :doc:`/trainings/material/soup/linux/basics/intro/wsl`
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
-* :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 
 Object Oriented Programming: Classes
 ------------------------------------
@@ -65,7 +65,7 @@ Missing Pieces: Encoding, Unit Testing
       <https://github.com/jfasch/2022-11-07/blob/main/livehacking/unittest/test_read_csv.py>`__
       (*Private Github project*)
 
-  * :doc:`/trainings/material/soup/python/swdev/pytest-intro`
+  * :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 
 Exercise Series: CSV, JSON
 --------------------------

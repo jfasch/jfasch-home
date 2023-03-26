@@ -1,4 +1,4 @@
-.. ot-topic:: python.swdev.pytest
+.. ot-topic:: python.swdev.pytest.intro
    :dependencies: python.advanced.modules
 
 .. include:: <mmlalias.txt>
@@ -62,7 +62,7 @@ Common project layout:
 * ``pytest`` is a PyPi package (`here
   <https://pypi.org/project/pytest/>`__)
 * Suggest to create a project-specific :doc:`virtual environment
-  <venv/topic>`, and install it into that.
+  <../venv/topic>`, and install it into that.
 
   .. code-block:: console
   
