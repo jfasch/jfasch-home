@@ -110,19 +110,19 @@ jjj done
   * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
 Decorators (The Ominous ``@``)
-``````````````````````````````
+..............................
 
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
-Error And Resource Management
-`````````````````````````````
+Exceptions
+..........
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 
 Modules And Packages
-````````````````````
+....................
 
 * :doc:`/trainings/material/soup/python/advanced/modules`
 
@@ -138,20 +138,6 @@ From :doc:`/trainings/material/soup/python/misc/pandas/group`:
 * :doc:`/trainings/material/soup/python/misc/pandas/filters`
 * :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
 * :doc:`/trainings/material/soup/python/misc/pandas/add_row`
-
-Unit Testing
-............
-
-No craft without testing. Again, automated testing is part of software
-development for a long time now. Developers, and their employers
-likewise, do not always recognize the goodness of non-immediacy.
-
-Ease the technical hurdle, give terminology, discuss (unit tests as
-documentation). The exercises in this training will be formulated as
-unit tests, so maybe this chapter is in order right at the beginning
-of it.
-
-* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
 
 Design Patterns
 ...............
