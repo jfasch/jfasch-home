@@ -35,7 +35,16 @@ Work Environment
 Introduction
 ............
 
+Clean Code?
+```````````
+
+From :doc:`/trainings/material/soup/clean-code/group`:
+
 * :doc:`/trainings/material/soup/clean-code/craft-sw`
+
+Demo Hacking
+````````````
+
 * :doc:`/trainings/material/soup/clean-code/intro-python/livehacking`
 
 Python Development: Select Topics
@@ -57,6 +66,8 @@ Built-In Types: Facts
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
 
+jjj done
+
 ``for`` Loops, And The Iterator Protocol
 ````````````````````````````````````````
 
@@ -72,6 +83,32 @@ Built-In Types: Facts
   directory (hint:
   ``fabric-defect-detection/scripts/data/make_data_set.py``)
 
+jjj done
+
+*Day 2:* Clean Code? (Software Development: A Craft)
+----------------------------------------------------
+
+**Plan**
+
+* More pytest (yield-fixtures)
+
+  * :doc:`/trainings/material/soup/python/swdev/pytest/intro`
+
+* While we are at yield-fixtures: contextlib
+  (:doc:`/trainings/material/soup/python/advanced/context-mgr/topic`)
+
+* From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+
+  * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`              
+  * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+  * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
 Decorators (The Ominous ``@``)
 ``````````````````````````````
 
@@ -83,22 +120,6 @@ Error And Resource Management
 `````````````````````````````
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
-
-Object Oriented Programming
-```````````````````````````
-
-From :doc:`/trainings/material/soup/python/advanced/oo/group`:
-
-* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`              
-* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
 Modules And Packages
 ````````````````````
@@ -117,21 +138,6 @@ From :doc:`/trainings/material/soup/python/misc/pandas/group`:
 * :doc:`/trainings/material/soup/python/misc/pandas/filters`
 * :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
 * :doc:`/trainings/material/soup/python/misc/pandas/add_row`
-
-*Day 2:* Clean Code? (Software Development: A Craft)
-----------------------------------------------------
-
-Clean Code?
-...........
-
-What does `Robert C. Martin
-<https://en.wikipedia.org/wiki/Robert_C._Martin>`__ mean?
-
-From :doc:`/trainings/material/soup/clean-code/group`
-
-* :doc:`/trainings/material/soup/clean-code/intro-python/livehacking`
-* :doc:`/trainings/material/soup/clean-code/craft-sw`
-* :doc:`/trainings/material/soup/clean-code/book-messages`
 
 Unit Testing
 ............
