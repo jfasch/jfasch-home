@@ -234,3 +234,23 @@ Refactoring (continuously testing against safety net)
    :caption: :download:`code/refact-category/tests/test_category.py`
    :language: python
 
+Refactoring Input Reading (|longrightarrow| Overengineering)
+------------------------------------------------------------
+
+* Goal: abstract base class: ``InputReader``
+* OO-rewrite input functions from ``stuff/input.py``
+* Use in main program: accepts multiple inputs (again), use
+  ``RecursiveCSVInputReader`` on dir, ``SingleCSVInputReader`` on file
+* |longrightarrow| ``CompositeInputReader``
+
+.. literalinclude:: code/refact-category/stuff/input_abc.py
+   :caption: :download:`code/refact-category/stuff/input_abc.py`
+   :language: python
+
+.. literalinclude:: code/refact-category/tests/test_input_abc.py
+   :caption: :download:`code/refact-category/tests/test_input_abc.py`
+   :language: python
+
+.. literalinclude:: code/refact-category/scripts/categorize.py
+   :caption: :download:`code/refact-category/scripts/categorize.py`
+   :language: python

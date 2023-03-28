@@ -35,6 +35,7 @@ Work Environment
 Introduction
 ............
 
+* :doc:`/trainings/material/soup/clean-code/craft-sw`
 * :doc:`/trainings/material/soup/clean-code/intro-python/livehacking`
 
 Python Development: Select Topics

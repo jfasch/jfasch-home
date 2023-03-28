@@ -30,6 +30,8 @@ def category(info):
             return Category.Sport
         if organization.startswith('SHELL'):
             return Category.Car
+        if organization.startswith('FLUGHAFEN WIEN'):
+            return Category.Car
         return Category.CardUnknown
     else:
         return Category.Unknown
