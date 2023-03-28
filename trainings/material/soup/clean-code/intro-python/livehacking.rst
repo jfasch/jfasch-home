@@ -202,3 +202,35 @@ Testability: Categorization
 
 * Finally, rip out ``write_to_csv()``
 * |longrightarrow| **null length script**
+
+Safety Net In Place |longrightarrow| Refactoring Categorization
+---------------------------------------------------------------
+
+Looking at ``stuff/category.py`` ...
+
+* Still has those string return values
+* There will be more
+* Categories? |longrightarrow| :doc:`python:library/enum`
+  
+Refactoring (continuously testing against safety net)
+
+* Pull out inner function
+* Separation into ``DataFrame`` concerns and simple string routines
+* |longrightarrow| ease of testing? A test still has to formulate an
+  entire CSV for nothing.
+* Introduce :doc:`Enum <python:library/enum>`
+
+  * First class style
+  * When done, switch to functional
+
+* Create finer grained tests, with only ``info`` style strings as
+  input
+
+.. literalinclude:: code/refact-category/stuff/category.py
+   :caption: :download:`code/refact-category/stuff/category.py`
+   :language: python
+
+.. literalinclude:: code/refact-category/tests/test_category.py
+   :caption: :download:`code/refact-category/tests/test_category.py`
+   :language: python
+
