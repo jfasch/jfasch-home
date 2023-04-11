@@ -19,7 +19,12 @@ Contents
    private-directory-question
    public-directory
    public-directory-question
-   fh-questions
+   fh-questions-nocheat
+
+.. .. toctree::
+..    :hidden:
+.. 
+..    fh-questions
 
 Dependencies
 ------------

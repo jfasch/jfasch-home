@@ -20,6 +20,7 @@ Exercise: Create Group-Shared File
   [#create_file]_.
 * Tune that file's permissions so that every member of your team can
   write to it.
+* Nobody else must be able to write to it.
 
 .. rubric:: Footnotes
 

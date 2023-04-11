@@ -4,6 +4,8 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2023-04-24--Python-Advanced/index
+   2023-05-23--Linux-Basics/index
    2023-03-28--Python-Clean-Code/index
    2023-03-20--C++-embedded/index
    2023-XX-XX-C++-embedded/index

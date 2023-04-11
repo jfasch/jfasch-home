@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 Clean Code Development With Python (2023-03-28 - 2023-03-29)
 ============================================================
 
@@ -6,9 +9,9 @@ Clean Code Development With Python (2023-03-28 - 2023-03-29)
 
 .. sidebar::
 
-  **Github Repository**
+   **Github Repository**
 
-  * https://github.com/jfasch/2023-03-28.git
+   * https://github.com/jfasch/2023-03-28.git
 
 Work Environment
 ----------------
@@ -47,6 +50,9 @@ Demo Hacking
 
 * :doc:`/trainings/material/soup/clean-code/intro-python/livehacking`
 
+The demo hacking session was extended through the entire session, with
+topics woven in as time seemed right. Read on for those.
+
 Python Development: Select Topics
 .................................
 
@@ -62,52 +68,76 @@ Built-In Types: Facts
 `````````````````````
 
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
-
-jjj done
 
 ``for`` Loops, And The Iterator Protocol
 ````````````````````````````````````````
 
-* :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
-  (with empasis on the ``else`` clause)
-
 * From :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
 
   * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/iterator-protocol`
-  * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/fibonacci-generator`
-
-* Live hack a test-driven directory-only iterator on a parent
-  directory (hint:
-  ``fabric-defect-detection/scripts/data/make_data_set.py``)
-
-jjj done
 
 *Day 2:* Clean Code? (Software Development: A Craft)
 ----------------------------------------------------
 
-**Plan**
+Closures, And Function Parameters
+.................................
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/advanced/closures/topic`
+   * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+
+``functools.partial`` was used yesterday to augment ``os.listdir()``
+with the dirname: provide my own version, using a :doc:`closure
+</trainings/material/soup/python/advanced/closures/topic>`
+
+Generators (Again), ``yield`` Fixtures, And ``yield`` Context Managers
+......................................................................
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/fibonacci-generator`
+   * :doc:`/trainings/material/soup/python/swdev/pytest/intro`
+   * :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
+
+* Generator recap:
+  :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/fibonacci-generator`
 * More pytest (yield-fixtures)
 
+  * How come pytest provide fixtures by saying ``test_blah(tmpdir)``?
+    |longrightarrow| :doc:`python:library/inspect`
   * :doc:`/trainings/material/soup/python/swdev/pytest/intro`
+  * ``pytest.monkeypatch`` (mocking ``os.listdir()``)
+    (:doc:`pytest:how-to/monkeypatch`)
 
 * While we are at yield-fixtures: contextlib
   (:doc:`/trainings/material/soup/python/advanced/context-mgr/topic`)
 
-* From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+Object Oriented Programming
+...........................
 
-  * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`              
-  * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
-  * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+(Maybe begin with operator overloading?)
+
+From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+
+* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`              
+* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
+Untold
+------
+
 
 Decorators (The Ominous ``@``)
 ..............................

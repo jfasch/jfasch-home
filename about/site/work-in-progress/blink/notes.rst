@@ -1,7 +1,17 @@
+.. include:: <mmlalias.txt>
+
+
 Random Notes
 ============
 
-.. code-block:: console
+Hardware
+--------
+     
+ULN2803A Darlington array 8x
+............................
 
-   $ sshfs -p 2020 -o 'idmap=user,uid=1000,gid=1000' who@where: /home/user/mount-point
+|longrightarrow| 4 pcs
 
+https://www.mouser.at/datasheet/2/389/uln2801a-1852595.pdf
+
+* Datasheet: :download:`ULN2803.PDF` 

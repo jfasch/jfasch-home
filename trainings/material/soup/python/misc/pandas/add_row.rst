@@ -37,8 +37,7 @@ Add Rows: Assign To New Row Number
 Add Rows: ``append()`` (*Deprecated*)
 -------------------------------------
 
-.. jupyter-execute::
-   :raises:
+.. code-block:: python
 
    persons2 = persons.copy()
    try:

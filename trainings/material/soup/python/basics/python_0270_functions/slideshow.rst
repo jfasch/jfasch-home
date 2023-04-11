@@ -3,6 +3,9 @@
 Functions (Slideshow)
 =====================
 
+.. contents::
+   :local:
+
 Why Functions?
 --------------
 

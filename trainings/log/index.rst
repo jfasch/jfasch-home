@@ -15,6 +15,20 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Linux Basics (2023-05-23 - 2023-05-25)
+--------------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-05-23--Linux-Basics/index>`)
+
+Python Advanced (2023-04-24 - 2023-04-26)
+-----------------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-04-24--Python-Advanced/index>`)
+
 Clean Code Development With Python (2023-03-28 - 2023-03-30)
 ------------------------------------------------------------
 

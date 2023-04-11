@@ -130,9 +130,9 @@ Miscellaneous Livehacking
 * Network programming
 
   * `Livehacked client
-    <https://github.com/jfasch/2022-11-07/tree/main/livehacking/livehacking/client.py>`__
+    <https://github.com/jfasch/2022-11-07/tree/main/livehacking/client.py>`__
   * `Livehacked server
-    <https://github.com/jfasch/2022-11-07/tree/main/livehacking/livehacking/server.py>`__
+    <https://github.com/jfasch/2022-11-07/tree/main/livehacking/server.py>`__
   * Documentation: :doc:`python:library/socket`
 
 Function Arguments, Closures, Decorators
