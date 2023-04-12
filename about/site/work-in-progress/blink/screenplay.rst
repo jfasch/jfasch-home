@@ -4,10 +4,133 @@ Screenplay
 .. contents::
    :local:
 
-.. toctree::
-   
    asyncio
    libgpiod
+
+Multiple Background Threads
+---------------------------
+
+* Start with :download:`code/thread-multi.py`
+
+  * 0.5s ``"hello left"``
+  * 0.8s ``"hello right"`` (``str.rjust(60)``)
+  * 1s ``"hello middle"`` (``str.center(60)``)
+
+.. literalinclude:: code/thread-multi.py
+   :caption: :download:`code/thread-multi.py`
+   :language: python
+
+.. code-block:: console
+
+   $ strace -f python3 code/thread-multi.py
+   ...
+   [pid  4677] write(1, "hello left\n", 11hello left
+   ) = 11
+   [pid  4677] clock_gettime64(CLOCK_MONOTONIC, {tv_sec=164646, tv_nsec=833862215}) = 0
+   [pid  4677] _newselect(0, NULL, NULL, NULL, {tv_sec=0, tv_usec=500000} <unfinished ...>
+   [pid  4679] <... _newselect resumed>)   = 0 (Timeout)
+   [pid  4679] write(1, "                        hello mi"..., 61                        hello middle                        
+   ) = 61
+   [pid  4679] clock_gettime64(CLOCK_MONOTONIC, {tv_sec=164646, tv_nsec=845864201}) = 0
+   [pid  4679] _newselect(0, NULL, NULL, NULL, {tv_sec=1, tv_usec=0} <unfinished ...>
+   [pid  4678] <... _newselect resumed>)   = 0 (Timeout)
+   [pid  4678] write(1, "                                "..., 61                                                 hello right
+   ) = 61
+
+* Three independent PIDs, using ``select()`` to implement
+  ``time.sleep()`` (``NULL`` fds)
+* Managed by OS scheduler
+* |longrightarrow| scheduling jitter, heavy (?) OS load
+
+Enter ``asyncio``
+-----------------
+
+* Replace ``threading`` and ``time`` with ``asyncio``
+* ``async`` functions, ``await asyncio.sleep(...)``
+* ``async def main()``
+* ``asyncio.run(main())``
+
+.. literalinclude:: code/async-multi.py
+   :caption: :download:`code/async-multi.py`
+   :language: python
+
+.. code-block:: console
+
+   $ strace -f code/async-multi.py
+   ...
+   epoll_wait(3, [], 1, 201)               = 0
+   ...
+
+* *Single thread!*
+* Timeouts apparently multiplexed on the *event loop's* timeout
+  parameter
+
+Character Device Based GPIO
+---------------------------
+
+* The way to go for GPIO on Linux
+* Alternative: ``sysfs`` GPIO
+
+  * Unmaintained
+  * Not immune to hotplug GPIO (e.g. USB GPIO controller)
+    |longrightarrow| fixed number range
+  * Not reset when application crashes (a feature that is not wanted
+    by most people)
+  * No pullup/pulldown configuration
+
+* ``RPi.GPIO``
+
+  * Raspberry specific
+  * Weird (a background thread fires event/interrupts)
+  * Bound to go away (I hope)
+
+`Libgpiod V2: New Major Release with a Ton of New Features - Bartosz
+Golaszewski <https://youtu.be/6fxcDDLII6Y>`__
+  
+.. raw:: html
+
+   <iframe
+       width="560" height="315" 
+	 src="https://www.youtube.com/embed/6fxcDDLII6Y" 
+	 title="YouTube video player" 
+	 frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	 allowfullscreen>
+   </iframe>
+
+GPIO Device
+-----------
+
+* ``/dev/gpiochip0``: character device
+* Opened by processes
+* Communication via ``ioctl()``
+* Selectable |longrightarrow| events/interrupts
+* User space library: ``libgpiod``
+
+.. code-block:: console
+
+   $ ls -l /dev/gpiochip0
+   ls -l crw-rw---- 1 root gpio 254, 0 Apr  9 13:30 /dev/gpiochip0
+
+Most Basic Feature: Setting Single GPIO Value
+---------------------------------------------
+
+* Request GPIO 11 (left upper corner)
+* ... configuring for output
+
+.. literalinclude:: code/gpio-set-11.py
+   :caption: :download:`code/code/gpio-set-11.py`
+   :language: python
+  
+Entire Matrix On/Off
+--------------------
+
+* Pull in from snippet: ``matrix``
+* Join ``MATRIX`` lines using ``sum(MATRIX, ())``
+
+.. literalinclude:: code/gpio-matrix-on-off.py
+   :caption: :download:`code/gpio-matrix-on-off.py`
+   :language: python
 
 Bringing All Together
 ---------------------
@@ -121,9 +244,14 @@ A Stripped-Down Program (|longrightarrow| Factory)
 Turn ``blink()`` Into A Factory
 -------------------------------
 
-* ``blink``: stores parameters for ``_blink()`` (the real one)
-* ``blink.create_coro()`` creates ``_blink()`` (nested function,
-  unchanged from original ``blink()``)
+* ``class blink``, with a ``__init__`` just like original ``blink()``
+  function
+* Stores ctor parameters as members
+* One single method: ``create_coro(self)``
+
+  * Creates nested function ``_blink(ios, interval, ntimes)``
+  * Returns instantiated coroutine from it
+
 * ``forever()`` gets passed ``factory``, and calls
   ``factory.create_coro()`` in every iteration
 * |longrightarrow| done
