@@ -1,0 +1,9 @@
+import itertools
+
+async def blink(ios, interval, ntimes=None):
+    loop = (ntimes is None) and itertools.count() or range(ntimes)
+    for _ in loop:
+        SET_VALUES(ios, 1)
+        await asyncio.sleep(interval)
+        SET_VALUES(ios, 0)
+        await asyncio.sleep(interval)
