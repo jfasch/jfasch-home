@@ -261,8 +261,49 @@ Turn ``blink()`` Into A Factory
    :caption: :download:`code/blink-factory.py`
    :language: python
 
-Anti-Clumsy Decorator: ``@program``
------------------------------------
+Anti-Clumsy Decorator: ``blink()`` Wrapper
+------------------------------------------
+
+* Factory is much writing
+* Closures are objects
+
+  * "Members" are *in the closure*
+  * One *method*: the function
+  * |longrightarrow| inverted view
+
+* Start with ``create_factory_for_blink(blink_func)``
+
+  * |longrightarrow| hardwired parameters: ``ios, interval, ntimes``
+
+  .. code-block:: python
+  
+     def create_factory_for_blink(blinkfunc):
+         def factory(ios, interval, ntimes=None):
+             def create_coro():
+                 return blinkfunc(ios, interval, ntimes)
+             return create_coro
+         return factory
+
+  * Wrap manually
+
+  .. code-block:: python
+
+     blink = create_factory_for_blink(blink)
+
+**Stuff**
+
+.. literalinclude:: code/stuff_decorator_stage1.py
+   :caption: :download:`code/stuff_decorator_stage1.py`
+   :language: python
+
+**Blink**
+
+.. literalinclude:: code/blink-decorator-stage1.py
+   :caption: :download:`code/blink-decorator-stage1.py`
+   :language: python
+
+``@program``, Finally
+---------------------
 
 .. sidebar::
 
@@ -272,13 +313,22 @@ Anti-Clumsy Decorator: ``@program``
    * :doc:`/trainings/material/soup/python/advanced/closures/topic`
    * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
-* Factory is much writing
-* Closures are objects
+* Use starargs
+* Rename ``blinkfunc`` to ``func``
+* Rename ``create_factory_for_blink`` to ``program``
+* Decorate both ``blink()`` and ``forever()``
+* Move both (back) into ``stuff.py``
+* Decorate the others (and let them start programs by calling them)
+* ``main()`` becomes obsolete: just call ``prog()``
 
-  * "Members" are *in the closure*
-  * One *method*: the function
-  * |longrightarrow| inverted view
+**Stuff**
 
-* Decorator creates factory
-* Factory creates coroutine (the 
+.. literalinclude:: code/stuff_decorator_stage1.py
+   :caption: :download:`code/stuff_decorator_stage1.py`
+   :language: python
 
+**Blink**
+
+.. literalinclude:: code/blink-decorator-stage1.py
+   :caption: :download:`code/blink-decorator-stage1.py`
+   :language: python
