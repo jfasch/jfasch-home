@@ -1,5 +1,8 @@
-Screenplay
-==========
+.. include:: <mmlalias.txt>
+
+
+Screenplay: Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry Pi of Course)
+========================================================================================================
 
 .. contents::
    :local:
@@ -88,7 +91,7 @@ Not Enough: ``sequence()``
    :language: python
 
 * Pull ``all()`` and ``sequence()`` out into ``stuff.py`` when done
-* :download:`blink-sequence-clean.py
+* :download:`code/blink-sequence-clean.py`
 
 Looping: ``forever()``
 ----------------------
