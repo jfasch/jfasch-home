@@ -7,9 +7,6 @@ Screenplay: Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a
 .. contents::
    :local:
 
-   asyncio
-   libgpiod
-
 Multiple Background Threads
 ---------------------------
 
@@ -122,7 +119,7 @@ Most Basic Feature: Setting Single GPIO Value
 * ... configuring for output
 
 .. literalinclude:: code/gpio-set-11.py
-   :caption: :download:`code/code/gpio-set-11.py`
+   :caption: :download:`code/gpio-set-11.py`
    :language: python
   
 Entire Matrix On/Off
