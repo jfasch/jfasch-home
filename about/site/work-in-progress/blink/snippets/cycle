@@ -1,0 +1,7 @@
+@program
+async def cycle(ios, interval):
+    import itertools
+
+    for i in itertools.cycle(ios):
+        p = blink((i,), interval, 1)
+        await p()

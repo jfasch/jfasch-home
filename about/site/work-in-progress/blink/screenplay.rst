@@ -241,8 +241,8 @@ Coroutines?
 Not Enough: ``sequence()``
 --------------------------
 
+* Not using ``create_task()``: sequential execution
 * Pass a limit to ``blink()``
-* |longrightarrow| sequential execution
 * |longrightarrow| another one: ``sequence()``
 
 .. literalinclude:: code/blink-sequence.py
@@ -371,3 +371,21 @@ Anti-Clumsy Decorator: ``blink()`` Wrapper
 .. literalinclude:: code/blink-decorator-stage1.py
    :caption: :download:`code/blink-decorator-stage1.py`
    :language: python
+
+Playground: ``cycle()``
+-----------------------
+
+* Live-hack ``cycle(ios, interval)``
+* Use ``blink(ios, interval, 1)`` interally
+* **But**: forget to **call** what is created by ``blink()``
+
+.. literalinclude:: snippets/cycle
+   :caption: :download:`snippets/cycle`
+   :language: python
+
+* Cycle ``row[0]``
+* |longrightarrow| **A-HA!!**
+
+Playground: ``any()``
+---------------------
+

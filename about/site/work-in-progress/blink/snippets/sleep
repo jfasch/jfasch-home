@@ -1,0 +1,3 @@
+@program
+async def sleep(secs):
+    await asyncio.sleep(secs)
