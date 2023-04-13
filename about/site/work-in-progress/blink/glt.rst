@@ -1,7 +1,5 @@
-Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry Pi of Course)
-============================================================================================
-
-* Submitted for `Grazer Linuxtage 2023 <https://www.linuxtage.at/>`__.
+Submission: Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry Pi of Course)
+========================================================================================================
 
 Biography
 ---------
