@@ -7,18 +7,25 @@ Screenplay: Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a
 .. contents::
    :local:
 
+Setup Before Presentation
+-------------------------
+
+* Download :download:`code/thread-multi.py` as ``blink.py``, and
+  ``chmod +x``
+* Download :download:`code/gpio-multi.py`` as ``gpio.py``, and ``chmod
+  +x``
+* Download :download:`code/off.py`` as ``off.py``, and ``chmod +x``
+* Download :download:`snippets/set_values` into ``snippets``
+* Download :download:`snippets/blink-raw` into ``snippets``
+
 Multiple Background Threads
 ---------------------------
 
-* Start with :download:`code/thread-multi.py`
+.. sidebar::
 
-  * 0.5s ``"hello left"``
-  * 0.8s ``"hello right"`` (``str.rjust(60)``)
-  * 1s ``"hello middle"`` (``str.center(60)``)
+   **Note**
 
-.. literalinclude:: code/thread-multi.py
-   :caption: :download:`code/thread-multi.py`
-   :language: python
+   * Editor: ``blink.py``
 
 .. code-block:: console
 
@@ -39,8 +46,16 @@ Multiple Background Threads
 
 * Three independent PIDs, using ``select()`` to implement
   ``time.sleep()`` (``NULL`` fds)
+* Fourth (main thread) also involved occasionally, likely due to
+  Python's weird thread management (GIL)
 * Managed by OS scheduler
 * |longrightarrow| scheduling jitter, heavy (?) OS load
+
+**Blink**
+
+.. literalinclude:: code/thread-multi.py
+   :caption: :download:`code/thread-multi.py`
+   :language: python
 
 Enter ``asyncio``
 -----------------
@@ -49,10 +64,6 @@ Enter ``asyncio``
 * ``async`` functions, ``await asyncio.sleep(...)``
 * ``async def main()``
 * ``asyncio.run(main())``
-
-.. literalinclude:: code/async-multi.py
-   :caption: :download:`code/async-multi.py`
-   :language: python
 
 .. code-block:: console
 
@@ -64,6 +75,12 @@ Enter ``asyncio``
 * *Single thread!*
 * Timeouts apparently multiplexed on the *event loop's* timeout
   parameter
+
+**Blink**
+
+.. literalinclude:: code/async-multi.py
+   :caption: :download:`code/async-multi.py`
+   :language: python
 
 Character Device Based GPIO
 ---------------------------
@@ -125,8 +142,14 @@ Most Basic Feature: Setting Single GPIO Value
 Entire Matrix On/Off
 --------------------
 
+.. sidebar::
+
+   **Note**
+
+   * Snippet: ``matrix``
+
 * Pull in from snippet: ``matrix``
-* Join ``MATRIX`` lines using ``sum(MATRIX, ())``
+* Note: ``ALL_IOS = sum(MATRIX, start=())``
 
 .. literalinclude:: code/gpio-matrix-on-off.py
    :caption: :download:`code/gpio-matrix-on-off.py`
@@ -135,15 +158,31 @@ Entire Matrix On/Off
 Bringing All Together
 ---------------------
 
-* Continue ``code/async-multi.py``
+.. sidebar::
+
+   **Note**
+
+   * Editor: ``blink.py``
+   * Snippet: ``set_values``
+   * Snippet: ``blink-raw``
+
+* Continue ``blink.py``
 * Morph ``hello*()`` in ``blink(ios, interval, ntimes=None)``
   (``None`` -> ``itertools.count()``, else ``range()``)
 * ``import gpiod``, next to ``asyncio``
 * Pull in snippet ``set_values``
 * Pull in snippet ``blink-raw``
-* ``left`` -> 11
-* ``middle`` -> 10
-* ``right`` -> 27
+
+.. list-table::
+   :align: left
+   :widths: auto
+
+   * * ``left``
+     * 11
+   * * ``middle``
+     * 10
+   * * ``right``
+     * 27
 
 .. literalinclude:: code/blink-multi-raw.py
    :caption: :download:`code/blink-multi-raw.py`

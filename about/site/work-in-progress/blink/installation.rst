@@ -1,5 +1,5 @@
-Installing Prerequisites
-========================
+Installation Notes
+==================
 
 .. contents::
    :local:

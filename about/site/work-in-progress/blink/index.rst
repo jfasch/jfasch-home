@@ -1,12 +1,18 @@
 Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry Pi of Course)
 ============================================================================================
 
-A talk at `Grazer Linuxtage 2023 <https://www.linuxtage.at/>`__
-
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    glt
    screenplay
    installation
-   notes
+
+* :doc:`Livehacking screenplay <screenplay>`
+* :doc:`Submission text <glt>`
+* :doc:`installation`
+* Submitted for (and accepted by) `Grazer Linuxtage 2023
+  <https://www.linuxtage.at/>`__.
+* Submitted for `Europython 2023 in Prague
+  <https://ep2023.europython.eu/>`__
+
