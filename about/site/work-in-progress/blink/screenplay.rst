@@ -12,9 +12,9 @@ Setup Before Presentation
 
 * Download :download:`code/thread-multi.py` as ``blink.py``, and
   ``chmod +x``
-* Download :download:`code/gpio-multi.py`` as ``gpio.py``, and ``chmod
+* Download :download:`code/gpio-multi.py` as ``gpio.py``, and ``chmod
   +x``
-* Download :download:`code/off.py`` as ``off.py``, and ``chmod +x``
+* Download :download:`code/off.py` as ``off.py``, and ``chmod +x``
 * Download :download:`snippets/set_values` into ``snippets``
 * Download :download:`snippets/blink-raw` into ``snippets``
 
@@ -129,14 +129,14 @@ GPIO Device
    $ ls -l /dev/gpiochip0
    ls -l crw-rw---- 1 root gpio 254, 0 Apr  9 13:30 /dev/gpiochip0
 
-Most Basic Feature: Setting Single GPIO Value
----------------------------------------------
+Most Basic Feature: Setting GPIO Values
+---------------------------------------
 
-* Request GPIO 11 (left upper corner)
+* Request GPIO 11, 10, 27
 * ... configuring for output
 
-.. literalinclude:: code/gpio-set-11.py
-   :caption: :download:`code/gpio-set-11.py`
+.. literalinclude:: code/gpio-multi.py
+   :caption: :download:`code/gpio-multi.py`
    :language: python
   
 Entire Matrix On/Off
@@ -150,6 +150,8 @@ Entire Matrix On/Off
 
 * Pull in from snippet: ``matrix``
 * Note: ``ALL_IOS = sum(MATRIX, start=())``
+
+**GPIO**
 
 .. literalinclude:: code/gpio-matrix-on-off.py
    :caption: :download:`code/gpio-matrix-on-off.py`
@@ -184,6 +186,8 @@ Bringing All Together
    * * ``right``
      * 27
 
+**Blink**
+
 .. literalinclude:: code/blink-multi-raw.py
    :caption: :download:`code/blink-multi-raw.py`
    :language: python
@@ -195,9 +199,14 @@ Modularize
 * Cram stuff into ``stuff.py``
 * All but ``main()`` goes there
 
+
+**Stuff**
+
 .. literalinclude:: code/stuff_raw.py
    :caption: :download:`code/stuff_raw.py`
    :language: python
+
+**Blink**
 
 .. literalinclude:: code/blink-multi-raw-mod.py
    :caption: :download:`code/blink-multi-raw-mod.py`
@@ -209,6 +218,8 @@ Play A Bit: Blink Entire Rows
 * Five tasks, one for each row
 * Make list of tasks
 
+**Blink**
+
 .. literalinclude:: code/blink-rows-raw.py
    :caption: :download:`code/blink-rows-raw.py`
    :language: python
@@ -216,6 +227,8 @@ Play A Bit: Blink Entire Rows
 * Sideway, maybe: blink columns
 * |longrightarrow| ``numpy.transpose()``
 * I like heavy dependencies |:pig:|
+
+**Blink**
 
 .. literalinclude:: code/blink-cols-raw.py
    :caption: :download:`code/blink-cols-raw.py`
@@ -233,6 +246,8 @@ Coroutines?
 
 * Pass to ``all()`` (pull in from snippet ``all-initial``)
 * ``await`` that instead
+
+**Blink**
 
 .. literalinclude:: code/blink-cols-coro.py
    :caption: :download:`code/blink-cols-coro.py`

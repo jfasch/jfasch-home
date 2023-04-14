@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from stuff_raw import *
+from stuff_raw import *          # <-- this is not about "clean code"
 import asyncio
 
 async def main():
