@@ -30,12 +30,14 @@ async def blink(ios, interval, ntimes=None):
         await asyncio.sleep(interval)
 
 async def main():
-    t1 = asyncio.create_task(blink((11,), 0.5))
-    t2 = asyncio.create_task(blink((10,), 0.8))
-    t3 = asyncio.create_task(blink((27,), 1))
-
-    await t1
-    await t2
-    await t3
+    tasks = [
+        asyncio.create_task(blink((11,), 0.5)),
+        asyncio.create_task(blink((10,), 0.4)),
+        asyncio.create_task(blink((27,), 0.3)),
+        asyncio.create_task(blink(( 4,), 0.2)),
+        asyncio.create_task(blink(( 2,), 0.1)),
+    ]
+    for t in tasks:
+        await t
 
 asyncio.run(main())

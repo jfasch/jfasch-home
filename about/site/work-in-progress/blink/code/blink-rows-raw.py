@@ -8,12 +8,11 @@ async def main():
 
     tasks = [
         asyncio.create_task(blink(rows[0], 0.5)),
-        asyncio.create_task(blink(rows[1], 0.8)),
-        asyncio.create_task(blink(rows[2], 0.1)),
-        asyncio.create_task(blink(rows[3], 0.01)),
-        asyncio.create_task(blink(rows[4], 0.05)),
+        asyncio.create_task(blink(rows[1], 0.4)),
+        asyncio.create_task(blink(rows[2], 0.3)),
+        asyncio.create_task(blink(rows[3], 0.2)),
+        asyncio.create_task(blink(rows[4], 0.1)),
     ]
-
     for t in tasks:
         await t
 
