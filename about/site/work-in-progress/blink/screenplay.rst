@@ -389,3 +389,8 @@ Playground: ``cycle()``
 Playground: ``any()``
 ---------------------
 
+.. sidebar::
+
+   **Snippets**
+
+   * ``stuff-complete``
