@@ -499,3 +499,45 @@ Playground: ``cycle()``
 .. literalinclude:: snippets/cycle
    :caption: :download:`snippets/cycle`
    :language: python
+
+* Cycle ``row[0]``
+* |longrightarrow| **A-HA!!**
+
+Playground: ``any()``
+---------------------
+
+.. sidebar::
+
+   **Snippets**
+
+   * ``stuff-complete``, replacing ``stuff.py`` content
+   * ``prog-any-demo``
+
+* Show ``stuff.any()``
+* ``blink.py``: insert ``prog-any-demo``
+
+Playground: ``on()``
+--------------------
+
+.. sidebar::
+
+   **Snippets**
+
+   * ``prog-any-on-demo``
+   * ``prog-my-blink``
+
+* Show ``stuff.on()``
+* Explain ``Future``
+* ``blink.py``: insert ``prog-any-on-demo``
+* ``blink.py``: insert ``prog-my-blink``
+
+Goodbye
+-------
+
+.. sidebar::
+
+   **Snippets**
+
+   * ``prog-smiley``
+
+* ``blink.py``: insert ``prog-smiley``

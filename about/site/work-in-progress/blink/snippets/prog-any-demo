@@ -1,0 +1,4 @@
+prog = any([
+    blink(ALL_IOS, 0.2),
+    sleep(3),
+])
