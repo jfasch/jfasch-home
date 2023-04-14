@@ -23,9 +23,9 @@ Multiple Background Threads
 
 .. sidebar::
 
-   **Note**
+   **Editor**
 
-   * Editor: ``blink.py``
+   * ``blink.py``
 
 .. code-block:: console
 
@@ -84,6 +84,12 @@ Enter ``asyncio``
 
 Character Device Based GPIO
 ---------------------------
+
+.. sidebar::
+
+   **Editor**
+
+   * ``gpio.py``
 
 * The way to go for GPIO on Linux
 * Alternative: ``sysfs`` GPIO
@@ -144,12 +150,18 @@ Entire Matrix On/Off
 
 .. sidebar::
 
-   **Note**
+   **Editor**
 
-   * Snippet: ``matrix``
+   * ``gpio.py``
 
-* Pull in from snippet: ``matrix``
-* Note: ``ALL_IOS = sum(MATRIX, start=())``
+   **Snippets**
+
+   * ``matrix``
+
+   **Steps**
+
+   * Dictionary comprehension ``set_values()``
+   * Use ``ALL_IOS``
 
 **GPIO**
 
@@ -162,11 +174,20 @@ Bringing All Together
 
 .. sidebar::
 
-   **Note**
+   **Editor**
 
-   * Editor: ``blink.py``
-   * Snippet: ``set_values``
-   * Snippet: ``blink-raw``
+   * ``blink.py``
+
+   **Snippets**
+
+   * ``set_values``
+   * ``blink-raw``
+
+   **Steps**
+
+   * Transform ``print()`` to ``blink()`` according to table
+   * No ``ntimes``
+   * List of tasks
 
 * Continue ``blink.py``
 * Morph ``hello*()`` in ``blink(ios, interval, ntimes=None)``
@@ -178,13 +199,20 @@ Bringing All Together
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
-   * * ``left``
-     * 11
-   * * ``middle``
-     * 10
-   * * ``right``
-     * 27
+   * * GPIO
+     * Interval
+   * * 11
+     * 0.5
+   * * 10
+     * 0.4
+   * * 27
+     * 0.3
+   * * 4
+     * 0.2
+   * * 2
+     * 0.1
 
 **Blink**
 
@@ -194,6 +222,17 @@ Bringing All Together
 
 Modularize
 ----------
+
+.. sidebar::
+
+   **Editor**
+
+   * ``blink.py``
+   * ``stuff.py``
+
+   **Steps**
+
+   * Externalize stuff into ``stuff.py``
 
 * Note this is not about clean coding |:pig:|
 * Cram stuff into ``stuff.py``
@@ -214,6 +253,13 @@ Modularize
 
 Play A Bit: Blink Entire Rows
 -----------------------------
+
+.. sidebar::
+
+   **Steps**
+
+   * ``rows = MATRIX``
+   * Blink rows
 
 * Five tasks, one for each row
 * Make list of tasks
@@ -236,6 +282,14 @@ Play A Bit: Blink Entire Rows
 
 Coroutines?
 -----------
+
+.. sidebar::
+
+   **Steps**
+
+   * Omit ``create_task()`` |longrightarrow| coroutines
+   * Show ``blink()`` in interactive interpreter (``await`` outside
+     function? |longrightarrow| ``run()``)
 
 * Hm ... too much of ``asyncio.create_task()`` here
 * Instantiate coroutines first, not using ``create-task()``
@@ -270,6 +324,13 @@ Not Enough: ``sequence()``
 Looping: ``forever()``
 ----------------------
 
+.. sidebar::
+
+   **Steps**
+
+   * Cannot re-use coroutine
+   * |longrightarrow| **re-instantiate!**
+
 .. literalinclude:: code/blink-forever.py
    :caption: :download:`code/blink-forever.py`
    :language: python
@@ -287,9 +348,11 @@ Looping: ``forever()``
 A Stripped-Down Program (|longrightarrow| Factory)
 --------------------------------------------------
 
-* Strip down program to bare minimum
-* Overwriting ``blink()``, ``forever()`` in main (still need
-  ``stuff.py`` for intialization)
+.. sidebar::
+
+   **Steps**
+
+   * Strip down program to bare minimum
 
 .. literalinclude:: code/blink-factory-start.py
    :caption: :download:`code/blink-factory-start.py`
@@ -297,6 +360,14 @@ A Stripped-Down Program (|longrightarrow| Factory)
 
 Turn ``blink()`` Into A Factory
 -------------------------------
+
+.. sidebar::
+
+   **Steps**
+
+   * ``class blink``
+   * Method ``create_coro()``
+   * Call in ``forever()``
 
 * ``class blink``, with a ``__init__`` just like original ``blink()``
   function
@@ -317,6 +388,22 @@ Turn ``blink()`` Into A Factory
 
 Anti-Clumsy Decorator: ``blink()`` Wrapper
 ------------------------------------------
+
+.. code-block:: python
+
+   def create_factory_for_blink(blinkfunc):
+       def factory(ios, interval, ntimes=None):
+           def create_coro():
+               return blinkfunc(ios, interval, ntimes)
+           return create_coro
+       return factory
+
+.. sidebar::
+
+   **Steps**
+
+   * ``create_factory_for_blink()``
+   * Replace: ``blink = create_factory_for_blink(blink)``
 
 * Factory is much writing
 * Closures are objects
@@ -361,19 +448,24 @@ Anti-Clumsy Decorator: ``blink()`` Wrapper
 
 .. sidebar::
 
+   **Steps**
+
+   * Use starargs
+   * Rename ``blinkfunc`` to ``func``
+   * Rename ``create_factory_for_blink`` to ``program``
+   * Decorate both ``blink()`` and ``forever()``
+   * Move both (back) into ``stuff.py``
+   * Decorate the others (and let them start programs by calling them)
+   * ``main()`` becomes obsolete: just call ``prog()``
+
+.. sidebar::
+
    **See also**
 
    * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
    * :doc:`/trainings/material/soup/python/advanced/closures/topic`
    * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
-* Use starargs
-* Rename ``blinkfunc`` to ``func``
-* Rename ``create_factory_for_blink`` to ``program``
-* Decorate both ``blink()`` and ``forever()``
-* Move both (back) into ``stuff.py``
-* Decorate the others (and let them start programs by calling them)
-* ``main()`` becomes obsolete: just call ``prog()``
 
 **Stuff**
 
@@ -390,17 +482,20 @@ Anti-Clumsy Decorator: ``blink()`` Wrapper
 Playground: ``cycle()``
 -----------------------
 
-* Live-hack ``cycle(ios, interval)``
-* Use ``blink(ios, interval, 1)`` interally
-* **But**: forget to **call** what is created by ``blink()``
+.. sidebar::
+
+   **Snippets**
+
+   * ``cycle`` into ``stuff.py``
+   * ``squares`` into ``stuff.py``
+
+   **Steps**
+
+   * cycle one row
+   * cycle all rows
+   * cycle squares
+   * ...
 
 .. literalinclude:: snippets/cycle
    :caption: :download:`snippets/cycle`
    :language: python
-
-* Cycle ``row[0]``
-* |longrightarrow| **A-HA!!**
-
-Playground: ``any()``
----------------------
-
