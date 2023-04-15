@@ -18,10 +18,10 @@ async def main():
 
     await sequence([
         blink(cols[0], 0.5, 2),
-        blink(cols[1], 0.8, 2),
-        blink(cols[2], 0.1, 2),
-        blink(cols[3], 0.01, 2),
-        blink(cols[4], 0.05, 2),
+        blink(cols[1], 0.4, 2),
+        blink(cols[2], 0.3, 2),
+        blink(cols[3], 0.2, 2),
+        blink(cols[4], 0.1, 2),
     ])
 
 asyncio.run(main())

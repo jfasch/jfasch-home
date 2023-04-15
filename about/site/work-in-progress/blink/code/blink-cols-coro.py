@@ -14,10 +14,10 @@ async def main():
 
     await all([
         blink(cols[0], 0.5),
-        blink(cols[1], 0.8),
-        blink(cols[2], 0.1),
-        blink(cols[3], 0.01),
-        blink(cols[4], 0.05),
+        blink(cols[1], 0.4),
+        blink(cols[2], 0.3),
+        blink(cols[3], 0.2),
+        blink(cols[4], 0.1),
     ])
 
 asyncio.run(main())

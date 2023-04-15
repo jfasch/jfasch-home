@@ -3,9 +3,9 @@
 from stuff_raw2 import *
 import asyncio
 
-async def forever(factory):
+async def forever(coro_creator):
     while True:
-        await factory.create_coro()
+        await coro_creator.create_coro()
 
 class blink:
     def __init__(self, ios, interval, ntimes=None):
@@ -25,7 +25,7 @@ class blink:
 
 async def main():
     await forever(
-        blink((11,), 0.3, 1),
+        blink((11,), 0.3, 1),       # <--- create *coro-creator*, passed to forever()
     )
 
 asyncio.run(main())
