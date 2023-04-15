@@ -1,0 +1,7 @@
+prog = sequence([
+    all([
+        blink((11,), 0.1, 5),
+        sleep(3)
+    ]),
+    blink((1,), 0.3, 5),
+])

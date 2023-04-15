@@ -10,13 +10,23 @@ Screenplay: Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a
 Setup Before Presentation
 -------------------------
 
+Starting Point
+..............
+
 * Download :download:`code/thread-multi.py` as ``blink.py``, and
   ``chmod +x``
 * Download :download:`code/gpio-multi.py` as ``gpio.py``, and ``chmod
   +x``
 * Download :download:`code/off.py` as ``off.py``, and ``chmod +x``
-* Download :download:`snippets/set_values` into ``snippets``
-* Download :download:`snippets/blink-raw` into ``snippets``
+* Download :download:`snippets/*` into ``snippets``
+
+Greeting
+........
+
+In a subdirectory:
+
+* ``stuff.py`` from :download:`snippets/stuff_complete``
+* jjjj save away blink program with the squares etc
 
 Multiple Background Threads
 ---------------------------
@@ -503,8 +513,8 @@ Playground: ``cycle()``
 * Cycle ``row[0]``
 * |longrightarrow| **A-HA!!**
 
-Playground: ``any()``
----------------------
+Fast Forward: ``any()``, And Cancellation
+-----------------------------------------
 
 .. sidebar::
 
@@ -513,7 +523,8 @@ Playground: ``any()``
    * ``stuff-complete``, replacing ``stuff.py`` content
    * ``prog-any-demo``
 
-* Show ``stuff.any()``
+* ``blink.py``: insert ``prog-all-demo`` |longrightarrow| explain
+* Show ``stuff.any()`` |longrightarrow| opposite of ``all()``
 * ``blink.py``: insert ``prog-any-demo``
 
 Playground: ``on()``
