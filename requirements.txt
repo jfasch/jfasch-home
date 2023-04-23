@@ -38,7 +38,7 @@ jupyter-sphinx==0.4.0
 jupyterlab-pygments==0.1.2
 jupyterlab-widgets==1.0.2
 kiwisolver==1.4.2
-lxml==4.6.3
+lxml==4.9.1
 MarkupSafe==2.0.1
 matplotlib==3.5.2
 matplotlib-inline==0.1.3
