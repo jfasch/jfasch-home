@@ -93,6 +93,15 @@ Error Handling And Recovery
 Miscellaneous Threading
 .......................
 
+.. sidebar::
+
+   **The GIL**
+
+   * `GIL, over at the Python Wiki
+     <https://wiki.python.org/moin/GlobalInterpreterLock>`__
+   * `David Beazley: Understanding the Python GIL (Youtube)
+     <https://youtu.be/Obt-vMVdM8s>`__
+
 * Show how the load/modify/store conflict appears to not be an issue
   in Python (?) (:download:`code/race-load-modify-store.py`)
 
