@@ -18,6 +18,7 @@ Topics
    020-algorithm/group
    040-sequential-containers/group
    050-associative-containers/group
+   allocators/group
 
    exercises/group
 

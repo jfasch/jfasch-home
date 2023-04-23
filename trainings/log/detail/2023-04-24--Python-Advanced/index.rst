@@ -5,6 +5,8 @@ Python Advanced (2023-04-24 - 2023-04-26)
    :hidden:
 
    agenda
+   log
+   notebook-wrapper
 
 .. contents::
    :local:
@@ -15,9 +17,14 @@ Python Advanced (2023-04-24 - 2023-04-26)
 
    * :doc:`agenda`
 
-   **Notebook**
+   **Course Log**
 
-   * :doc:`Structure <notebook-wrapper>`
-   * :doc:`Whole notebook <notebook>`
-   * :download:`Download <notebook.ipynb>`
+   * :doc:`log`
 
+   **Material**
+
+   * :doc:`/trainings/material/soup/python/group`
+
+   **Github Repository**
+
+   * https://github.com/jfasch/2023-04-24

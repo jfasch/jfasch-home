@@ -195,3 +195,6 @@ Goodie: Dependency Management
      $ dot -Tpng dependencies.dot > dependencies.png
 
   .. graphviz:: dependencies.dot
+
+.. ot-graph::
+   :entries: linux.toolchain.cmake_local

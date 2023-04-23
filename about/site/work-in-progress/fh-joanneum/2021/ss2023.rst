@@ -141,10 +141,44 @@ Block 2: C on Linux: Local and *Cross* Development
      * KU
      * #Units
      * Topics
+   * * 2023-04-17
+     * 
+     * 3
+     * **Lab Exam**
+
+       * :doc:`/trainings/material/soup/linux/basics/intro/exercises/fh-questions-nocheat`
+
+       **Toolchain Intro (Local)** (from
+       :doc:`/trainings/material/soup/linux/toolchain/group`)
+
+       * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
+       * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
+       * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
+       * :doc:`/trainings/material/soup/linux/toolchain/exercises/native-build`
+
    * * 
-     * 
-     * 
-     * 
+     * 2023-04-17
+     * 3
+     * **Toolchain Intro (CMake)** (from
+       :doc:`/trainings/material/soup/linux/toolchain/group`)
+
+       * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
+       * Exercise: like above
+         (:doc:`/trainings/material/soup/linux/toolchain/exercises/native-build`),
+         only using CMake
+
+   * * 
+     * 2023-04-21
+     * 3
+     * **Systems Programming Basics: File I/O**
+
+       * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
+       * :doc:`/trainings/material/soup/linux/sysprog/basics/group`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+
+       **Homework (until next time - 2023-05-08)**
+
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
 
 Block 3: C++
 ------------

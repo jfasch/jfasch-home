@@ -75,9 +75,18 @@ Local variables *shadow* global variables:
 Assignment to Global Variable: ``global``
 -----------------------------------------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/advanced/closures/topic`
+
 * How do I assign to a global variable then, if assignment creates a
   variable in local scope?
 * |longrightarrow| ``global`` keyword
+* See :doc:`here
+  </trainings/material/soup/python/advanced/closures/topic>` for a
+  description of the ``nonlocal`` keyword
 
 .. jupyter-execute::
 

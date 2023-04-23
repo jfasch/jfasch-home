@@ -18,15 +18,15 @@ Starting Point
 * Download :download:`code/gpio-multi.py` as ``gpio.py``, and ``chmod
   +x``
 * Download :download:`code/off.py` as ``off.py``, and ``chmod +x``
-* Download :download:`snippets/*` into ``snippets``
+* Download `snippets/*` into ``snippets``
 
 Greeting
 ........
 
 In a subdirectory:
 
-* ``stuff.py`` from :download:`snippets/stuff_complete``
-* jjjj save away blink program with the squares etc
+* ``stuff.py`` from :download:`snippets/stuff_complete`
+* Save away blink program with the squares etc
 
 Multiple Background Threads
 ---------------------------

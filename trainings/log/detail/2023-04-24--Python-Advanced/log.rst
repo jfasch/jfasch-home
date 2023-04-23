@@ -1,21 +1,23 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda: Python Advanced (2023-04-24 - 2023-04-26)
-=================================================
+Course Log: Python Advanced (2023-04-24 - 2023-04-26)
+=====================================================
 
 .. contents::
    :local:
 
 .. sidebar::
 
-   **Material**
-
-   * :doc:`/trainings/material/soup/python/group`
-
    **Course Overview**
 
    * :doc:`index`
+
+   **Notebook**
+
+   * :doc:`Structure <notebook-wrapper>`
+   * :doc:`Whole notebook <notebook>`
+   * :download:`Download <notebook.ipynb>`
 
 Up Front: Project Management
 ----------------------------
@@ -96,19 +98,22 @@ Miscellaneous Threading
 * Show how the load/modify/store conflict appears to not be an issue
   in Python (?) (:download:`code/race-load-modify-store.py`)
 
-  * Could that be the `GIL <https://wiki.python.org/moin/GlobalInterpreterLock>`__
+  * Could that be the `GIL
+    <https://wiki.python.org/moin/GlobalInterpreterLock>`__?
   * What's the GIL altogether?
   * Why could it be a bad idea to trust the GIL too much?
-    (|longrightarrow| `PEP 703 <https://peps.python.org/pep-0703/>`__)
-  * Jason Brownlee `mentions
-    <https://superfastpython.com/thread-race-condition-shared-variable/>`__
-    the same "issue" -- there is no race condition. There used to, he
-    says, before Python 3.10, but nowadays there's not. He shows an
+    (|longrightarrow| `PEP 703
+    <https://peps.python.org/pep-0703/>`__)
+  *
+    `https://superfastpython.com/thread-race-condition-shared-variable/`__
+    mentions the same "issue" -- there is no race condition. There
+    used to, before Python 3.10, but nowadays there's not. He shows an
     contrived way to show a race (involving a ``time.sleep(0)``
     |:rolling_eyes:|)
   * Fix that with a mutex (show ``with`` usage!)
 
-  * `Events <https://docs.python.org/3/library/threading.html#event-objects>`__. Maybe
+  * `Events
+    <https://docs.python.org/3/library/threading.html#event-objects>`__. Maybe
     some live-hacked dice-rolling in a subthread.
   * :doc:`python:library/queue`
 

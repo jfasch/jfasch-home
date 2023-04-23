@@ -29,6 +29,13 @@ This course is under preparation.
 
 (:doc:`More ... <detail/2023-04-24--Python-Advanced/index>`)
 
+C++ For Embedded Developers (2023-04-18 - 2023-04-20)
+-----------------------------------------------------
+
+This training is under preparation.
+
+(:doc:`More ... <detail/2023-04-18--C++-embedded/index>`)
+
 Clean Code Development With Python (2023-03-28 - 2023-03-30)
 ------------------------------------------------------------
 

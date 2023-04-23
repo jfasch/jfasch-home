@@ -34,10 +34,10 @@ Exercise: Build Software Package (Native)
   * A program ``greet-parameterized`` is built by linking
     ``greet-parameterized.o`` (containing ``main()``) against
     ``libgreet.a``.
-  * Likewise, ``greet-simple`` is build by linking ``greet-simple.o``
-    against the Library.
+  * Likewise, ``greet-simple`` is built by linking ``greet-simple.o``
+    against the library.
 
-* Test the outcome by running the two program.
+* Test the outcome by running the two programs.
 
 .. ot-graph::
    :entries: linux.toolchain.exercises.native_build
