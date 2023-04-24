@@ -6,6 +6,12 @@ Functions (Slideshow)
 .. contents::
    :local:
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+
 Why Functions?
 --------------
 
