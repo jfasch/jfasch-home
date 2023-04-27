@@ -14,6 +14,7 @@ Contents
    herdt/group
    csv/group
    userdb/group
+   sensors/group
 
 Graph
 -----

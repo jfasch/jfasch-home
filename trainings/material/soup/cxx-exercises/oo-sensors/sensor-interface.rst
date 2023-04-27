@@ -131,10 +131,15 @@ The Exercise
   directory, and register them with that directory's
   ``CMakeLists.txt`` file:
 
-  * :download:`sensor-const-suite-is-a-sensor.cpp
-    </trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-suite-is-a-sensor.cpp>`
-  * :download:`sensor-random-suite-is-a-sensor.cpp
-    </trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-suite-is-a-sensor.cpp>`
+  .. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-suite-is-a-sensor.cpp
+     :caption: :download:`sensor-const-suite-is-a-sensor.cpp
+               </trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-suite-is-a-sensor.cpp>`
+     :language: c++
+
+  .. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-suite-is-a-sensor.cpp
+     :caption: :download:`sensor-random-suite-is-a-sensor.cpp
+               </trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-suite-is-a-sensor.cpp>`
+     :language: c++
 
 * *It won't build*
 * Add the missing ``Sensor`` interface (create a file

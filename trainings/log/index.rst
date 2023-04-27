@@ -15,6 +15,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+CMake (2023-07-03)
+------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-07-03--CMake/index>`)
+
 Linux Basics (2023-05-23 - 2023-05-25)
 --------------------------------------
 
