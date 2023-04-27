@@ -17,6 +17,9 @@ The C Preprocessor: *Why*!
 * Brutal and stupid text replacement
 * |longrightarrow| Please use cautiously!
 
+.. contents::
+   :local:
+
 ``#include``
 ------------
 

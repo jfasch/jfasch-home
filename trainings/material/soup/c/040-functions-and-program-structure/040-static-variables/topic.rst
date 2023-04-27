@@ -7,6 +7,9 @@
 Static Variables
 ================
 
+.. contents::
+   :local:
+
 Lifetime and Visibility (1)
 ---------------------------
 

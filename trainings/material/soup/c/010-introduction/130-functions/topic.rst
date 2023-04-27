@@ -7,6 +7,9 @@
 Functions
 =========
 
+.. contents::
+   :local:
+
 Functions
 ---------
 

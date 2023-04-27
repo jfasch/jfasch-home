@@ -7,6 +7,9 @@
 Extern/Global Variables
 =======================
 
+.. contents::
+   :local:
+
 Variables: Declaration and Definition
 -------------------------------------
 

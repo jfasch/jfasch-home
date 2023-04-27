@@ -9,53 +9,118 @@
 CMake
 =====
 
-.. sidebar:: Kursdaten
+.. sidebar:: The Course
 
    .. csv-table::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 1 Tage
-      PDF Slides, :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+      Contact, training@faschingbauer.co.at
+      Duration, 1-2 days
+
+   **See also**
+   
+   * :doc:`/trainings/repertoire/c-like/c`
+   * :doc:`/trainings/repertoire/c-like/cxx`
+   * :doc:`/trainings/repertoire/linux-basics`
 
 .. image:: images/cmake_logo.jpg
    :alt: CMake Logo
    :align: left
 
-Sind :doc:`C <../repertoire/c-like/c>` und :doc:`C++
-<../repertoire/c-like/cxx>` nicht schon schwer genug zu
-erlernen, muss man sie auch noch kompliziert bauen - alles, damit
-diese Sprachen ihrem Performanceargument gerecht werden.
+.. contents::
+   :local:
 
-Ist :doc:`(GNU-)Make <make>` quasi der "Assembler" des Software
-Builds, haben sich über die Jahre einige "Hochsprachen" entwickelt;
-`CMake <https://cmake.org/>`__ ist eine davon. Nicht perfekt, nicht
-schön, ein ziemliches Flickwerk, hat sich CMake etabliert als *das*
-Tool, Software zu bauen - auch deswegen, weil nicht nur Linux, sondern
-auch Windows und andere Plattformen unterstützt werden.
+As if :doc:`C <../repertoire/c-like/c>` and :doc:`C++
+<../repertoire/c-like/cxx>` weren't complicated enough, building
+programs written in those languages seems to be even more complicated.
 
-Zielpublikum
-------------
+:doc:`(GNU-)Make <make>`, a low-level build tool to manage some of the
+intricacies of the build, has been invented rather early in
+history. Today it is considered the "assembly language of a build".
 
-Softwareentwickler, Punkt. Jeder muss sich damit beschäftigen, wie das
-Projekt seines Teams strukturiert ist, welche Module/Libraries wie
-gebaut werden, wie die Abhängigkeiten sind.
+A number of higher level tools have been designed, to manage most of
+the rest of the build intricacies, together with some that ``make``
+has created on its own. One of these tools, `CMake
+<https://cmake.org/>`__, is introduced in this course.
 
-Kursinhalt
-----------
+Target Audience
+---------------
 
-* Projektstruktur (Meinungsbildung)
-* Executables, Libraries
-* Abhängigkeiten formulieren
-* Subdirectories
-* Optional gebauter Code
-* Generierter Code
-* Einbinden von :doc:`Unit Tests <unittests>`
-* *Installieren* des Projekts
-* *Packaging* des Projekts
+Software developers, mostly. Every developer of a team is concerned
+about the structure of the project that is maintained by the team. The
+project's modules and their interdependencies have to be
+understood. CMake, if used judiciously, can be used to clearly define
+project structure.
 
-Empfohlene Vorkenntnisse
-------------------------
+Agenda
+------
 
-Kenntnisse in C oder C++ werden vorausgesetzt, sowie eine gewisse
-Fertigkeit auf der Commandline (Shell).
+Toolchain Introduction
+......................
 
+What are the problems that CMake solves?
+
+* Compiler
+* Linker
+* Search paths: header files, libraries
+* Dependencies
+
+How are these solved by CMake? Present a trivial one-level-only CMake
+project where compilation and linking happens.
+
+Project Structure, Dependencies
+...............................
+
+As projects become larger, structure is in order. Present a typical
+project structure where there are separate directories for
+
+* Libraries/Modules
+* Executables
+* Data files
+
+External Dependencies
+.....................
+
+CMake has so-called "Find Modules" to incorporate code that is not
+*owned* by the project, but only *used* by it.
+
+* Quickly introduce what that is
+* Provide a number of examples
+* See how a project can react if one such external dependency is not
+  found (optional code)
+
+Code Generators
+...............
+
+Traditionally, lexers and parser generators (just as a typical
+example) generate code that has to be built by the project.
+
+* Show what problems arise when such generators are use naively
+* Show how generators are integrated in a CMake project
+
+Automatic Testing
+.................
+
+Today's software standards dictate that a project use unit testing
+(see for example :doc:`/trainings/material/soup/unittest/group`). See
+how that can be integrated with CMake.
+
+Installation And Deployment
+...........................
+
+* *Installation* is referred to as locally building code inside the
+  build directory, and that transferring the artifact (executables and
+  libraries, usually) into a well-known location where they are found
+  by others.
+* *Deployment* usually means *packaging* a project, and making it
+  available for installation on other machines - often together with
+  *cross compiliation*
+
+Recommended Prior Knowledge
+---------------------------
+
+* C or C++ is recommended, obviously. It is good to understand what
+  C's ``#include`` directive does (see
+  :doc:`/trainings/material/soup/c/040-functions-and-program-structure/group`
+  for ``#include`` and more).
+* A rudimentary understanding of the Unix shell is also helpful (see
+  :doc:`/trainings/repertoire/linux-basics` for Shell topics, and more)

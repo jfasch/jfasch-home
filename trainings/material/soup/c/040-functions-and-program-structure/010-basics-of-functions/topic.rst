@@ -6,6 +6,9 @@
 Basics
 ======
 
+.. contents::
+   :local:
+
 Nesting
 -------
 

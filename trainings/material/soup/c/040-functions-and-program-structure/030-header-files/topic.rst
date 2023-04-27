@@ -7,6 +7,9 @@
 Header Files
 ============
 
+.. contents::
+   :local:
+
 Declarations: Problems (1)
 --------------------------
 

@@ -7,6 +7,9 @@
 C Preprocessor: More
 ====================
 
+.. contents::
+   :local:
+
 Conditional Compilation: Rules
 ------------------------------
 
