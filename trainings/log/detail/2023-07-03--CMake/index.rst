@@ -24,4 +24,4 @@ CMake (2023-07-03)
 
    **See also**
 
-   * :doc:`/trainings/repertoire/cmake` (Course description)`
+   * :doc:`/trainings/repertoire/cmake` (Course description)

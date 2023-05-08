@@ -23,10 +23,10 @@ Download And Install Toolchain Archive
    **Download**: 
 
    * `armv8-rpi4-linux-gnueabihf.tar.xz
-     <https://drive.google.com/file/d/1FJvnLGbHwAABy0DgVfRvSqDnuqK5aloZ/view?usp=share_link>`__
+     <https://drive.google.com/file/d/1YAlNEQT9UY-z-nVWX-U55i0Zl1TNUfjB/view?usp=share_link>`__
 
 * `Download
-  <https://drive.google.com/file/d/1FJvnLGbHwAABy0DgVfRvSqDnuqK5aloZ/view?usp=share_link>`__
+  <https://drive.google.com/file/d/1YAlNEQT9UY-z-nVWX-U55i0Zl1TNUfjB/view?usp=share_link>`__
   the toolchain archive (a whopping 70MB), and :doc:`unpack
   </trainings/material/soup/linux/basics/archiving-compression/group>`
   to ``<toolchain-dir>``
