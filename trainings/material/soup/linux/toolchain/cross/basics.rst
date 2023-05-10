@@ -17,7 +17,7 @@ Native Compilation
 * Compiler runs on a machine, say ``x86_64``
 * Produces code *for that machine*
 * Uses header files and libraries from that machine
-* Default paths for headers and libraries
+* Default *paths* for headers and libraries
 
   * ``/usr/include``: e.g. ``#include <stdio.h>`` is found as
     ``/usr/include/stdio.h``

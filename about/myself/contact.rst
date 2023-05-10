@@ -8,6 +8,8 @@ Kontakt
 * Prankergasse 33, 8020 Graz
 * UID/VAT: ATU63522469
 
+Write a review: https://g.page/r/CTb02zUg3CRHEB0/review
+
 Navigation
 ----------
 

@@ -90,8 +90,8 @@ Example follows ...
 
 .. _dummy-section:
 
-Dummy Section That We Refer To
-``````````````````````````````
+Section That We Refer To
+````````````````````````
 
 This section is referred to by the next section. It requires a section
 label, like so:

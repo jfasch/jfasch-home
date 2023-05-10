@@ -27,13 +27,23 @@ Cross Build: Parameters
   (``arm-linux-gnueabihf-gcc``)
 * *Sysroot*: a directory with target artifacts
 
-In its raw form:
+For a ``crosstool-ng`` built toolchain (unpacked to
+``/home/jfasch/x-tools/``), the parameters are:
+
+.. list-table::
+   :align: left
+   :widths: auto
+
+   * * Cross tools
+     * ``/home/jfasch/x-tools/armv8-rpi4-linux-gnueabihf/bin/``
+   * * Sysroot
+     * ``/home/jfasch/x-tools/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/``
 
 .. code-block:: console
 
-   $ PATH=/home/jfasch/cross/toolchains/gcc-linaro-12.0.1-2022.02-x86_64_arm-linux-gnueabihf/bin:$PATH
-   $ export PATH
-   $ arm-linux-gnueabihf-gcc --sysroot ~/cross/sysroots/raspberry -o hello-single hello-single.c 
+   $ /home/jfasch/x-tools/armv8-rpi4-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc \
+         --sysroot /home/jfasch/x-tools/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf \
+	 -o hello-single hello-single.c 
 
 Core Build Instructions: *Target Agnostic*
 ------------------------------------------
@@ -70,33 +80,44 @@ Toolchain Files
 * Parameters *Sysroot* and *Toolchain* are set in per-target
   "toolchain files"
 
-.. literalinclude:: ../jfasch-home-linux-toolchain/cmake/Toolchain-RaspberryPi.cmake
+.. literalinclude:: ../raspberry-pi/armv8-rpi4-linux-gnueabihf.cmake
    :language: cmake
-   :caption: :download:`../jfasch-home-linux-toolchain/cmake/Toolchain-RaspberryPi.cmake`
+   :caption: :download:`../raspberry-pi/armv8-rpi4-linux-gnueabihf.cmake`
+
+* Toolchain files *describe* toolchian parameters
+* |longrightarrow| stored not in the project, but rather *next to the
+  toolchain*
+* It depends |:wink:|
 
 Step 1: Generate ``Makefile`` in Build Directory
 ------------------------------------------------
 
 Sadly, cross build is a little more involved than native build - even
-with CMake ...
+with CMake.
 
-.. code-block:: console
-   
-   $ cd /home/jfasch/build-pi
-   $ cmake -DCMAKE_TOOLCHAIN_FILE=/home/jfasch/source/Toolchain-RaspberryPi.cmake /home/jfasch/source
-   -- The CXX compiler identification is GNU 11.2.1
-   -- Detecting CXX compiler ABI info
-   -- Detecting CXX compiler ABI info - done
-   -- Check for working CXX compiler: /usr/bin/c++ - skipped
-   -- Detecting CXX compile features
-   -- Detecting CXX compile features - done
-   -- Configuring done
-   -- Generating done
-   -- Build files have been written to: /home/jfasch/build-pi
+* In the build directory for the target architecture ...
 
+  .. code-block:: console
+     
+     $ cd /home/jfasch/build-pi    # <--- build directory
 
-This creates a ``Makefile`` in the *build directory*
+* ... you invoke CMake, pointing it to the toolchain file
+* |longrightarrow| ``CMAKE_TOOLCHAIN_FILE``
 
+  .. code-block:: console
+     
+     $ cmake -DCMAKE_TOOLCHAIN_FILE=/home/jfasch/armv8-rpi4-linux-gnueabihf.cmake /home/jfasch/source
+     -- The CXX compiler identification is GNU 11.2.1
+     -- Detecting CXX compiler ABI info
+     -- Detecting CXX compiler ABI info - done
+     -- Check for working CXX compiler: /usr/bin/c++ - skipped
+     -- Detecting CXX compile features
+     -- Detecting CXX compile features - done
+     -- Configuring done
+     -- Generating done
+     -- Build files have been written to: /home/jfasch/build-pi
+
+* This creates a ``Makefile`` in the *build directory*
 * Used as usual
 * Only generated |longrightarrow| basically unreadable
 

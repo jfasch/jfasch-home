@@ -30,13 +30,6 @@ Download And Install Toolchain Archive
   the toolchain archive (a whopping 70MB), and :doc:`unpack
   </trainings/material/soup/linux/basics/archiving-compression/group>`
   to ``<toolchain-dir>``
-* Modify ``PATH`` (best permanently in ``~/.bashrc``). Make sure that
-  ``<toolchain-dir>`` is given as **absolute path** (:doc:`see here
-  </trainings/material/soup/linux/basics/shell/paths>`).
-
-.. code-block:: console
-
-   $ export PATH=<toolchain-dir>/armv8-rpi4-linux-gnueabihf/bin:$PATH
 
 Establish CMake Toolchain File
 ------------------------------
@@ -53,12 +46,11 @@ Establish CMake Toolchain File
 
 * Download (best into ``<toolchain-dir>``) :download:`toolchain file
   <armv8-rpi4-linux-gnueabihf.cmake>`
-* Open it with a text editor, and modify the folling lines to point to
-  your toolchain
+* Open it with a text editor, and modify the following lines to point
+  to your toolchain
 
   .. code-block:: text
 
-     set(CMAKE_FIND_ROOT_PATH <toolchain-dir>/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot)
-     set(CMAKE_SYSROOT <toolchain-dir>/armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot)
+     set(TOOLCHAIN_BASE_DIR /home/jfasch/x-tools/armv8-rpi4-linux-gnueabihf)
 
-* Build your project with it (:doc:`../cross/group`)
+* Build your project with it (:doc:`../cmake/cross`)

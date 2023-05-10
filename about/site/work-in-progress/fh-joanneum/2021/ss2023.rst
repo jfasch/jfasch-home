@@ -7,6 +7,10 @@ SS2023
 .. contents::
    :local:
 
+.. sidebar::
+
+   * `Github project <https://github.com/jfasch/FH-ECE21>`__
+
 Block 1: Linux, and Working With Remote/Embedded Devices
 --------------------------------------------------------
 
@@ -179,6 +183,31 @@ Block 2: C on Linux: Local and *Cross* Development
        **Homework (until next time - 2023-05-08)**
 
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+
+   * * 2023-05-11
+     * 
+     * 3
+     * **Homework Recap**
+
+       Talk about solutions from last time's (2023-04-21) homework.
+
+       **Cross Development**
+
+       * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
+       * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
+
+       **Cross Toolchain Setup**
+
+       * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
+
+       **Homework Recap: Cross**
+
+       * Setup Pi toolchain
+         (:doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`)
+       * Cross-build your project
+       * On the Pi, copy ``/etc/passwd`` to ``~/passwd-copy``
+       * Compare both files using ``diff -u`` (`man -s 1 diff
+         <https://man7.org/linux/man-pages/man1/diff.1.html>`__)
 
 Block 3: C++
 ------------

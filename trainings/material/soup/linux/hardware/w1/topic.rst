@@ -131,6 +131,8 @@ Overview
 * Once DS2482 is configured, we can attach our OneWire device(s) to
   it.
 
+.. _configure-i2c-address:
+
 Wiring: Attach DS2482-800 via I2C
 .................................
 
@@ -191,7 +193,7 @@ In ``/boot/config.txt``, add the following line.
 
    dtparam=i2c_arm=on
 
-Reboot and verify all is well.
+Reboot and verify that all is well.
 
 .. code-block:: console
    :caption: I2C platform driver loaded?
@@ -208,7 +210,18 @@ Reboot and verify all is well.
 Verify That Our Device Is There
 ```````````````````````````````
 
-(Optional if you are sure it is there)
+.. sidebar::
+
+   **Documentation**
+
+   * `man -s 8 i2cdetect <https://linux.die.net/man/8/i2cdetect>`__
+   * `man -s 5 modules-load.d
+     <https://man7.org/linux/man-pages/man5/modules-load.d.5.html>`__
+
+This is done using the ``i2cdetect`` tool which accesses the I2C bus
+from userspace; it needs ``/dev/i2c-1`` to probe I2C bus #1. Load the
+``i2c-dev`` driver which provides ``/dev/i2c-N`` for each bus #N that
+is found on the system.
 
 .. code-block:: console
    :caption: ``i2c-dev`` exposes bus to userspace
@@ -217,7 +230,18 @@ Verify That Our Device Is There
    $ ls -l /dev/i2c-1 
    crw-rw---- 1 root i2c 89, 1 Sep 29 14:27 /dev/i2c-1
 
-Device should be there at configured address (``0x18``),
+You probably want to load ``i2c-dev`` automatically, at boot time. In
+this case, add the following line either to ``/etc/modules`` directly,
+or to a new config file, say, ``/etc/modules-load.d/i2c.conf`` :
+
+.. code-block:: text
+   :caption: Add to ``/etc/modules``
+
+   dtparam=i2c_arm=on
+
+
+The device should now be there at the :ref:`configured address
+<configure-i2c-address>` (``0x18`` in our case),
 
 .. code-block:: console
    :caption: ``i2c-detect`` scans bus
@@ -246,6 +270,13 @@ responsible to communicate with the OneWire devices on the new buses
    $ sudo -i
    # echo ds2482 0x18 > /sys/bus/i2c/devices/i2c-1/new_device
    # exit
+
+You probably want to do this automatically during boot. Download the
+following file into ``/usr/local/lib/systemd/system/`` (create that
+directory if it does not exist),
+
+.. literalinclude:: ds2482.service
+   :caption: :download:`ds2482.service`
 
 See if driver is loaded,
 

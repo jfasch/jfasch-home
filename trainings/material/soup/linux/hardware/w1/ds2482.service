@@ -1,0 +1,7 @@
+[Unit]
+Description=DS2482-800@(1,0x18)
+
+[Service]
+ExecStart=/bin/sh -c 'echo ds2482 0x18 > /sys/bus/i2c/devices/i2c-1/new_device'
+
+[Install]
