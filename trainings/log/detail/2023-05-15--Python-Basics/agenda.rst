@@ -1,24 +1,5 @@
-Python (2022-11-16 - 2022-11-18)
-================================
-
-.. contents::
-   :local:
-
-.. sidebar:: *Training Information*
-
-   **Material**
-
-   * :doc:`/trainings/material/soup/python/group`
-
-   **Source Code**
-
-   * `Github <https://github.com/jfasch/2022-11-16>`__
-
-   **Notebook**
-
-   * :doc:`Structure <notebook-wrapper>`
-   * :doc:`Whole notebook <notebook>`
-   * :download:`Download <notebook.ipynb>`
+Agenda: Python Basics (2023-05-15 - 2023-05-17)
+===============================================
 
 Setup
 -----
@@ -44,34 +25,15 @@ Datatypes
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
-  (`digit.py
-  <https://github.com/jfasch/2022-11-16/blob/main/livehacking/digit.py>`__)
-
-* At the end of the day, a small CSV demo: `koppel-netzwerke.py
-  <https://github.com/jfasch/2022-11-16/blob/main/livehacking/koppel-netzwerke.py>`__
 
 Control Flow, Sequences, *Iteration*
 ....................................
 
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
-
-  * A condensed/pythonic version: `maximum.py
-    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/maximum.py>`__
-
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-
-  * Rolling dice, demonstrating the ``else`` clause of ``while``):
-    `dice.py
-    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/dice.py>`__
-
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
-
-  * ``yield`` demo, iterating over generated Fibonacci numbers:
-    `fibonacci.py
-    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/fibonacci.py>`__
-
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
@@ -83,12 +45,6 @@ More Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
-
-  * `prime.py
-    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/prime.py>`__
-  * `primeness.py
-    <https://github.com/jfasch/2022-11-16/blob/main/livehacking/primeness.py>`__
-
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
@@ -124,8 +80,3 @@ Advanced Language Features
 
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-
-Noob Exercises
---------------
-
-* :doc:`/trainings/material/soup/python/exercises/herdt/greet`

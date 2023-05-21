@@ -10,6 +10,14 @@
 Exercise: Determine Maximum of Two Numbers
 ==========================================
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
+   * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic` ("Datatype Conversions")
+   * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
+
 Write a program that
 
 * Takes two numbers from the commandline. *Remember*: commandline

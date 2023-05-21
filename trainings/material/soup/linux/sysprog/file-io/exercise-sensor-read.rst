@@ -39,6 +39,15 @@ Requirement
 Program
 .......
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_RDONLY`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
+
 Write a program ``onewire-temperature`` that reads a sensor's
 temperature periodically. It takes two arguments,
 
@@ -54,75 +63,49 @@ temperature periodically. It takes two arguments,
    24562
    ...
 
+.. note::
+
+   * To convert a string (``argv[2]``) into an integer, the ``atoi()``
+     function can be used (see `here
+     <https://man7.org/linux/man-pages/man3/atoi.3.html>`__)
+   * To put the process to sleep for an amount of time (in seconds),
+     you use the ``sleep()`` function (see `here
+     <https://man7.org/linux/man-pages/man3/sleep.3.html>`__)
+
 CMake Build
 ...........
 
-.. important::
+.. sidebar::
 
-   Although the project does not use C++, CMake by default checks for
-   a working C++ compiler which leads to a long list of errors.
+   **See also**
 
-   To work around this, you instruct CMake to *not* check for the C++
-   compiler, by adding an optional ``LANGUAGES`` parameter to the
-   ``PROJECT()`` macro,
+   * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
+   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
+   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross` 
 
-   .. code-block:: console
+* Read :doc:`/trainings/material/soup/linux/toolchain/cmake/local` for
+  how to create a simple CMake project. 
 
-      PROJECT(MyProjectName LANGUAGES C)
+  Note that the program in this
+  exercise consists of only one source file, so you will omit the
+  library stuff referenced there.
+* Read
+  :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
+  and :doc:`/trainings/material/soup/linux/toolchain/cmake/cross` for cross-building a CMake project
+* Add your file (``onewire-temperature.cpp`` is a likely name) to the
+  project.
 
-* Package the program's source code together with a ``CMakeLists.txt``
-  file that builds the program from its source (see
-  :doc:`/trainings/material/soup/linux/toolchain/cmake/local`; you
-  will want to omit all that library stuff - your program will be
-  built from its main file only)
-* Put both in a directory ``exercise-sensor-read``
-* Pack that directory into a XZ compressed tar archive
-  ``exercise-sensor-read.tar.xz``
+Test On The Target Machine
+..........................
 
-  .. code-block:: console
+.. sidebar::
 
-     $ tar Jcf exercise-sensor-read.tar.xz exercise-sensor-read
+   **See also**
 
-It is that archive that is then uploaded.
+   * :doc:`/trainings/material/soup/linux/ssh/basics`
+   * :doc:`/trainings/material/soup/linux/ssh/scp`
 
-.. important::
+* Use ``scp`` to copy the program over. *Note* that you specify a
+  non-default port (say, 2020) using the ``-P 2020`` option.
+* Use ``ssh`` to login to the target and test
 
-   You might want to test your program *on the target machine*. For
-   this,
-
-   * write a CMake toolchain file (see
-     :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`)
-   * use :doc:`SSH </trainings/material/soup/linux/ssh/group>` to copy
-     the program over
-   * use :doc:`SSH </trainings/material/soup/linux/ssh/group>` to
-     login on the target and test
-
-Hints, Documentation
---------------------
-
-**File I/O**
-
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
-* :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_RDONLY`
-
-**Commandline Arguments**
-
-* :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
-* To convert a string (``argv[2]``) into an integer, the ``atoi()``
-  function can be used (see `here
-  <https://man7.org/linux/man-pages/man3/atoi.3.html>`__)
-* To put the process to sleep for an amount of time (in seconds), you
-  use the ``sleep()`` function (see `here
-  <https://man7.org/linux/man-pages/man3/sleep.3.html>`__)
-
-**Build**
-
-* :doc:`/trainings/material/soup/linux/toolchain/cmake/local`. Note
-  that the program in this exercise consists of only one source file,
-  so you will omit the library stuff referenced there.
-* :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
-
-**SSH**
-
-* :doc:`SSH </trainings/material/soup/linux/ssh/group>`

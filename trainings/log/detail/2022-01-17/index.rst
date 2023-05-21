@@ -129,7 +129,6 @@ Tag 2
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
 
   * Sequential search in output list (bad): `uniq-sequential.py <https://github.com/jfasch/2022-01-17/blob/main/uniq-sequential.py>`__
   * Constant-time search in ``set`` (good): `uniq-set.py <https://github.com/jfasch/2022-01-17/blob/main/uniq-set.py>`__

@@ -134,7 +134,6 @@ Tag 3
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 

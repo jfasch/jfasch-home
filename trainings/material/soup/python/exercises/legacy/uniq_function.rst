@@ -1,6 +1,5 @@
 .. ot-exercise:: python.exercises.legacy.uniq_function
    :dependencies: python.exercises.legacy.function_primeness,
-		  python.exercises.legacy.uniq_plain,
 		  python.basics.python_0270_functions,
 		  python.basics.python_0150_datatypes_overview_compound
 

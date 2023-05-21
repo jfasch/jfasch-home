@@ -49,10 +49,17 @@ Requirement
      * `man -s 3 strerror
        <https://man7.org/linux/man-pages/man3/strerror.3.html>`__
 
-Write a program ``cp-for-the-poor`` that interprets its two arguments
-as filenames, and copies the first to the second. The first filename
-must be an existing file. The second filename is the target of the
-copy. No existing file must be overwritten.
+Write a program ``cp-for-the-poor`` which exhibits the following
+behavior:
+
+* It interprets its two arguments as filenames, and copies
+  the first to the second
+* The first filename must be an existing file
+* The second filename is the target of the copy
+* No existing file must be overwritten
+* *The program operates at the system call layer*. Use
+  ``open()``/``read()``/``write()``/``close()``, and *not* anything
+  from ``<stdio.h>``.
 
 .. note::
 

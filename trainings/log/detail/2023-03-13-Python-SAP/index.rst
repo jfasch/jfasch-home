@@ -88,9 +88,6 @@ important topic in Python, which is why we dedicate some time to it.
 
 **Exercises**
 
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
-  (solution: `uniq.py
-  <https://github.com/jfasch/2023-03-13/blob/main/livehacking/uniq.py>`__)
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
   (solution: `prime-while.py <https://github.com/jfasch/2023-03-13/blob/main/livehacking/prime-while.py>`__)
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`

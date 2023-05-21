@@ -1,11 +1,18 @@
 .. ot-exercise:: cxx.exercises.oo_sensors.sensor_w1
-   :dependencies: cxx.exercises.oo_sensors.sensor_interface
+   :dependencies: cxx.exercises.oo_sensors.sensor_interface,
+		  linux.sysprog.fileio.exercise_w1_sensor
 
 Exercise: OneWire Sensor Class
 ==============================
 
 .. contents::
    :local:
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/exercise-sensor-read`
 
 Download Monolithic Sensor Implementation
 -----------------------------------------

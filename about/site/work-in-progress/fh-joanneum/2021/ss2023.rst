@@ -10,6 +10,7 @@ SS2023
 .. sidebar::
 
    * `Github project <https://github.com/jfasch/FH-ECE21>`__
+   * SSH login on the Pi: ``ssh -p 2020 firstname.lastname@jfasch.bounceme.net``
 
 Block 1: Linux, and Working With Remote/Embedded Devices
 --------------------------------------------------------
@@ -191,6 +192,11 @@ Block 2: C on Linux: Local and *Cross* Development
 
        Talk about solutions from last time's (2023-04-21) homework.
 
+       **Work Environment**
+
+       * `Github project <https://github.com/jfasch/FH-ECE21>`__
+       * SSH login on the Pi: ``ssh -p 2020 firstname.lastname@jfasch.bounceme.net``
+
        **Cross Development**
 
        * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
@@ -209,6 +215,23 @@ Block 2: C on Linux: Local and *Cross* Development
        * Compare both files using ``diff -u`` (`man -s 1 diff
          <https://man7.org/linux/man-pages/man1/diff.1.html>`__)
 
+   * * 
+     * 2023-05-12
+     * 3
+     * **Finish Raspi Cross Toolchain Setup**
+
+       * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
+
+       **Exercise Time**
+
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/exercise-sensor-read`
+
+       **Homework**
+
+       * Please complete the exercise until next time (2023-05-22)
+       * Please send me your Github account name (create one if you
+         don't already have one)
+
 Block 3: C++
 ------------
 
@@ -221,7 +244,24 @@ Block 3: C++
      * KU
      * #Units
      * Topics
-   * * 
+   * * 2023-05-22
      * 
-     * 
-     * 
+     * 3
+     * **The Spirit Of C (Why C++?)**
+
+       * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
+
+       **C++ Standard Library**
+
+       * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+
+       From :doc:`/trainings/material/soup/cxx03/060-stl/group` ...
+
+       * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
+       * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/topic`
+       * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/vector-basic`
+
+       **OO Basics**
+
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`

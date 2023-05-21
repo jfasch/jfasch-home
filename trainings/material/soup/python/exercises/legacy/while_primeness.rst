@@ -9,6 +9,14 @@
 Exercise: Primeness (``while``)
 ===============================
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
+   * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic` ("Datatype Conversions")
+   * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
+
 Write a program that checks whether a given number is prime!
 
 The number that the program checks can be given in two ways,

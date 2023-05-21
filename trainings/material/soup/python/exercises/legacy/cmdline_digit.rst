@@ -1,14 +1,22 @@
 .. ot-exercise:: python.exercises.legacy.cmdline_digit
-   :dependencies: python.exercises.legacy.dict_keyerror,
-		  python.basics.python_0120_helloworld,
+   :dependencies: python.basics.python_0120_helloworld,
 		  python.basics.python_0150_datatypes_overview_compound,
-		  python.basics.python_0139_commandline_argv
+		  python.basics.python_0139_commandline_argv,
+		  python.basics.python_0150_datatypes_overview
 
 .. include:: <mmlalias.txt>
 
 
 Exercise: Digit to English Word
 ===============================
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
+   * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic` ("Datatype Conversions")
+   * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 
 Write a program ``digit.py`` that takes a single digit as commandline
 parameter. Print the English word for that digit. 

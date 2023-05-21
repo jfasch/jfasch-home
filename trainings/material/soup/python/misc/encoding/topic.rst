@@ -1,7 +1,6 @@
 .. ot-topic:: python.misc.encoding
    :dependencies: python.basics.python_0150_datatypes_overview,
-		  python.basics.python_0330_strings_encoding,
-		  python.basics.python_0500_files
+		  python.basics.python_0320_strings_methods
 
 .. include:: <mmlalias.txt>
 
@@ -11,15 +10,6 @@ Encoding
 
 .. contents::
    :local:
-
-TODO
-----
-
-* Somehow externalize "encoding" stuff from these, and point them
-  here.
-
-  * :doc:`/trainings/material/soup/python/basics/python_0330_strings_encoding/topic`
-  * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
 ASCII
 -----

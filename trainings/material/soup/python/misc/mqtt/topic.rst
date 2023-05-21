@@ -109,7 +109,7 @@ communicating parties.
 You should probably read up on
 
 * Encoding:
-  :doc:`/trainings/material/soup/python/basics/python_0330_strings_encoding/topic`
+  :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * `JSON <https://docs.python.org/3/library/json.html#module-json>`__,
   a popular transport format, used for MQTT message transfer, and on
   The Web which is full of it.

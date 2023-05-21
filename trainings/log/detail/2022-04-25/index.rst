@@ -55,7 +55,6 @@ Agenda
 * :doc:`/trainings/material/soup/python/exercises/herdt/exercise_while_even_numbers`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_plain`
 
 **More On DataTypes**
 

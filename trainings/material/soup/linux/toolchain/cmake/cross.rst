@@ -52,6 +52,8 @@ A typical (simple) ``CMakeLists.txt`` ...
 
 .. code-block:: cmake
 
+   PROJECT(GreetDemo)
+
    ADD_LIBRARY(greet hello.h hello.c hello-flexible.c)
 
    ADD_EXECUTABLE(hello-first hello-first.c)

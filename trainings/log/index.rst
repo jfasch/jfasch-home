@@ -29,6 +29,13 @@ This course is under preparation.
 
 (:doc:`More ... <detail/2023-05-23--Linux-Basics/index>`)
 
+Python Basics (2023-05-15 - 2023-05-17)
+---------------------------------------
+
+Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+
+(:doc:`Mehr ... <detail/2023-05-15--Python-Basics/index>`)
+
 Python Advanced (2023-04-24 - 2023-04-26)
 -----------------------------------------
 

@@ -103,7 +103,7 @@ Day 2
   * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
   * Exercise: :doc:`/trainings/material/soup/python/exercises/legacy/string-rightjustify`
   * :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
-  * :doc:`/trainings/material/soup/python/basics/python_0330_strings_encoding/topic`
+  * :doc:`/trainings/material/soup/python/misc/encoding/topic`
   * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
   * ``collections.namedtuple``: see `here
     <https://docs.python.org/3/library/collections.html#collections.namedtuple>`__
