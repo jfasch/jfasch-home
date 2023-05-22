@@ -247,9 +247,14 @@ Block 3: C++
    * * 2023-05-22
      * 
      * 3
-     * **The Spirit Of C (Why C++?)**
+     * 
+
+       **The Spirit Of C (Why C++?)**
 
        * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
+
+       (livehacked: `arrays.cpp
+       <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/arrays.cpp>`__)
 
        **Unit Testing (Quick Intro)**
 
@@ -257,6 +262,19 @@ Block 3: C++
        * (For completeness only:
          :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`)
 
+       (livehacked: `unittesting
+       <https://github.com/jfasch/FH-ECE21/tree/main/livehacking/unittesting>`__ -
+       look into `CMakeLists.txt
+       <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/unittesting/CMakeLists.txt>`__)
+
+       **OO Basics**
+
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
+       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+
+       (livehacked: `point.cpp
+       <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__)
+       
        **C++ Standard Library**
 
        * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
@@ -267,7 +285,3 @@ Block 3: C++
        * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/topic`
        * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/vector-basic`
 
-       **OO Basics**
-
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
