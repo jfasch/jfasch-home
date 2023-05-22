@@ -251,6 +251,12 @@ Block 3: C++
 
        * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
 
+       **Unit Testing (Quick Intro)**
+
+       * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/topic`
+       * (For completeness only:
+         :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`)
+
        **C++ Standard Library**
 
        * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
