@@ -274,7 +274,120 @@ Block 3: C++
 
        (livehacked: `point.cpp
        <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__)
-       
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 
+     * 2023-06-01
+     * 3
+     * 
+
+       **Exercise**
+
+       * Clone `Github project <https://github.com/jfasch/FH-ECE21>`__
+       * Setup as described in ``README.rst``
+       * Find your place in it
+
+	 * ``bin/`` is for *programs*
+	 * ``lib/`` is for *library code* (e.g. the sensor
+           implementation)
+	 * ``tests/`` is for *unit tests*
+
+       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 2023-06-02
+     * 
+     * 3
+     * 
+
+       **Exercise**
+
+       * *Questions*
+       * *Solution (livehacked)*
+
+         * CMake recap (`CMake Documentation here
+           <https://cmake.org/cmake/help/latest/>`__)
+  
+	   * Source dir
+
+	     * Sketch ``bin/``, ``lib/``, ``tests/``
+	     * ``CMakeLists.txt``
+        
+	       * Structural: intermediate; ``ADD_DIRECTORY()``
+	       * Structural: `entry point, toplevel
+                 <https://github.com/jfasch/FH-ECE21/blob/main/CMakeLists.txt>`__)
+        
+		 * |longrightarrow| ``ADD_DIRECTORY()`` to decend into
+		   subdirs
+    
+	   * Build: *build *dirs* |longrightarrow| ``cmake
+	     $SOURCEDIR`` creates parallel structure in *current
+	     working directory*.
+	   
+	     * Build |longrightarrow| ``make -j``
+	     * Run test suite |longrightarrow| see it fail
+
+	   * Exercise
+             :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
+
+	     * Setup initial status
+
+	       * ``ADD_EXECUTABLE()`` |longrightarrow| dependencies
+		 (show dependencies of my own solution, monolithic)
+	       * ``ADD_LIBRARY()``? ``TARGET_LINK_LIBRARIES()``?
+	       * Download, and CMakery to build monolithic sensor
+		 implementation |longrightarrow| ``bin/``!
+	       * Build in topdir ... stop
+	       * Build in subdir (faster), run from there, on a
+                 simulation, on ``x86_64``
+
+	   * Exercise:
+             :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
+
+	     * Initial status
+
+	       * Download, and CMakery to build monolithic sensor
+		 implementation |longrightarrow| ``bin/``!
+	       * Test only locally, with simu file |longrightarrow|
+		 ARM later
+	       * Add :download:`test suite
+		 </trainings/material/soup/cxx-code/oo-sensor-w1/bin/onewire-temperature-monolithic.cpp>`
+		 to test runner |longrightarrow| ``tests/``!
+
+	     * Add test
+
+	       * Download and add test
+	       * CMakery: add ``lib`` 's name to test runner
+	       * Enter TDD ...
+
+		 * ``while (1);``
+
+	       * Definition of *Done*
+
+	     * Add non-monolithic binary
+	     * Test locally
+	     * Cross, remote
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 2023-06-05
+     * 
+     * 3
+     * 
+
+       **Future Directions**
+
+       * PLC state machine (Salloker)
+       * Possible OO implementation (TDD?)
+
        **C++ Standard Library**
 
        * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`

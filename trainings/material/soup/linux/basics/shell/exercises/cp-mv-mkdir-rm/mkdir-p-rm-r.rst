@@ -3,8 +3,8 @@
 		  linux.basics.shell.cwd
 
 
-Exercise: ``mkdir``, ``rm``
-===========================
+Exercise: ``mkdir``
+===================
 
 .. sidebar::
 

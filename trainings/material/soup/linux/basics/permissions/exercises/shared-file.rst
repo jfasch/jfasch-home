@@ -11,6 +11,7 @@ Exercise: Create Group-Shared File
    **Documentation**
 
    * `man -s 1 chmod <https://linux.die.net/man/1/chmod>`__
+   * `man -s 1 chgrp <https://linux.die.net/man/1/chgrp>`__
 
    **Topics**
 

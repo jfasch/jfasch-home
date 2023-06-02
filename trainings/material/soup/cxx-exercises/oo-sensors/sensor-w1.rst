@@ -17,13 +17,10 @@ Exercise: OneWire Sensor Class
 Download Monolithic Sensor Implementation
 -----------------------------------------
 
-To your project, as a subdirectory of the toplevel directory, add a
-directory ``bin-trainee/``, and register it with your top-level
-``CMakeLists.txt``.
-
-Add :download:`onewire-temperature-monolithic.cpp
-</trainings/material/soup/cxx-code/oo-sensor-w1/bin/onewire-temperature-monolithic.cpp>`
-to that directory (and its ``CMakeLists.txt``, of course)
+* Download :download:`onewire-temperature-monolithic.cpp
+  </trainings/material/soup/cxx-code/oo-sensor-w1/bin/onewire-temperature-monolithic.cpp>`
+  to your *programs* directory
+* Add it to ``CMakeLists.txt``
 
 Test Monolithic Implementation
 ------------------------------
@@ -33,22 +30,22 @@ Test Monolithic Implementation
 * Build as described in
   :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
 
-  In short (please supply the paths from your situation),
+  In short (please supply the paths from your situation -
+  ``/tmp/build`` and ``~/source`` are only placeholders),
 
   .. code-block:: console
 
-     $ mkdir /tmp/FH-ECE20-patterns-pi/        # <--- create build directory
-     $ cd /tmp/FH-ECE20-patterns-pi/           # <--- cd into it
-     $ cmake -DCMAKE_TOOLCHAIN_FILE=/home/jfasch/armv8-rpi4-linux-gnueabihf.cmake ~/work/FH-ECE20-patterns/
+     $ mkdir /tmp/build/                       # <--- create build directory
+     $ cd /tmp/build/                          # <--- cd into it
+     $ cmake -DCMAKE_TOOLCHAIN_FILE=/home/jfasch/armv8-rpi4-linux-gnueabihf.cmake ~/source/
      ... roedel ...
      $ make
 
-* Transfer to Raspberry (my build directory is
-  ``/tmp/FH-ECE20-patterns-pi``, your is likely different)
+* Transfer to Raspberry,
 
   .. code-block:: console
 
-     $ scp -P 2020 /tmp/FH-ECE20-patterns-pi/bin-trainee/onewire-temperature firstname.lastname@jfasch.bounceme.net:
+     $ scp -P 2020 /tmp/build/path/to/your/programs/onewire-temperature firstname.lastname@jfasch.bounceme.net:
 
 * Test it
 
@@ -65,9 +62,11 @@ Test Monolithic Implementation
 ``class W1Sensor``
 ------------------
 
-* Add the following test to the test suite in ``tests-trainee/``
-* To make it run, create a pair of files
-  ``libtrainee/sensor-w1.{h,cpp}``
+* Add the following test to your test suite (i.e., register it a
+  another source file in ``CMakeLists.txt``)
+* To make it run, create a pair of files (``sensor-w1.{h,cpp}``) in
+  your library directory (again, ``CMakeLists.txt``)
+* Fix test failures until green
 
 .. note::
 
@@ -82,11 +81,8 @@ Test Monolithic Implementation
 Refactoring
 -----------
 
-* Using ``class W1Sensor`` from ``<sensor-w1.h>``, modify
-  ``onewire-temperature.cpp`` to use that class.
-* **Goal**: ``onewire-temperature.cpp`` must not use any of file
-  operations ``open()``, ``read()`` and ``close()`` to read the sensor
-  file. All that is done by ``W1Sensor``.
+Modify ``onewire-temperature.cpp`` to not use any file
+operations. Rather, ``#include <sensor-w1.h>`` and use that instead.
 
 **Testing**
 
