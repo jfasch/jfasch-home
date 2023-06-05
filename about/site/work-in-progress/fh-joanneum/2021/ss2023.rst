@@ -308,71 +308,15 @@ Block 3: C++
 
        **Exercise**
 
-       * *Questions*
+       * *Q&A*
+       * `Github project <https://github.com/jfasch/FH-ECE21>`__ (and
+         CMake) recap
        * *Solution (livehacked)*
 
-         * CMake recap (`CMake Documentation here
-           <https://cmake.org/cmake/help/latest/>`__)
-  
-	   * Source dir
-
-	     * Sketch ``bin/``, ``lib/``, ``tests/``
-	     * ``CMakeLists.txt``
-        
-	       * Structural: intermediate; ``ADD_DIRECTORY()``
-	       * Structural: `entry point, toplevel
-                 <https://github.com/jfasch/FH-ECE21/blob/main/CMakeLists.txt>`__)
-        
-		 * |longrightarrow| ``ADD_DIRECTORY()`` to decend into
-		   subdirs
-    
-	   * Build: *build *dirs* |longrightarrow| ``cmake
-	     $SOURCEDIR`` creates parallel structure in *current
-	     working directory*.
-	   
-	     * Build |longrightarrow| ``make -j``
-	     * Run test suite |longrightarrow| see it fail
-
-	   * Exercise
-             :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
-
-	     * Setup initial status
-
-	       * ``ADD_EXECUTABLE()`` |longrightarrow| dependencies
-		 (show dependencies of my own solution, monolithic)
-	       * ``ADD_LIBRARY()``? ``TARGET_LINK_LIBRARIES()``?
-	       * Download, and CMakery to build monolithic sensor
-		 implementation |longrightarrow| ``bin/``!
-	       * Build in topdir ... stop
-	       * Build in subdir (faster), run from there, on a
-                 simulation, on ``x86_64``
-
-	   * Exercise:
-             :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
-
-	     * Initial status
-
-	       * Download, and CMakery to build monolithic sensor
-		 implementation |longrightarrow| ``bin/``!
-	       * Test only locally, with simu file |longrightarrow|
-		 ARM later
-	       * Add :download:`test suite
-		 </trainings/material/soup/cxx-code/oo-sensor-w1/bin/onewire-temperature-monolithic.cpp>`
-		 to test runner |longrightarrow| ``tests/``!
-
-	     * Add test
-
-	       * Download and add test
-	       * CMakery: add ``lib`` 's name to test runner
-	       * Enter TDD ...
-
-		 * ``while (1);``
-
-	       * Definition of *Done*
-
-	     * Add non-monolithic binary
-	     * Test locally
-	     * Cross, remote
+	 * `sensor-w1.h
+           <https://github.com/jfasch/FH-ECE21/blob/main/students/joerg.faschingbauer/lib/sensor-w1.h>`__
+	 * `onewire-temperature-modular.cpp
+           <https://github.com/jfasch/FH-ECE21/blob/main/students/joerg.faschingbauer/bin/onewire-temperature-modular.cpp>`__
 
    * * VO
      * KU
@@ -388,9 +332,11 @@ Block 3: C++
        * PLC state machine (Salloker)
        * Possible OO implementation (TDD?)
 
+       .. image:: doormgr-fsm.png
+
        **C++ Standard Library**
 
-       * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+       * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
 
        From :doc:`/trainings/material/soup/cxx03/060-stl/group` ...
 
