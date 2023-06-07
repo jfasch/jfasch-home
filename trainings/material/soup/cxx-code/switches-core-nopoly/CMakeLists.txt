@@ -1,0 +1,2 @@
+ADD_SUBDIRECTORY(switches)
+ADD_SUBDIRECTORY(tests)

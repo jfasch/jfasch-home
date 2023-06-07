@@ -7,7 +7,7 @@ ADD_SUBDIRECTORY(socialdb)
 ADD_SUBDIRECTORY(sensors-core-nopoly)
 ADD_SUBDIRECTORY(sensors-core)
 
-#ADD_SUBDIRECTORY(switches-core-nopoly)
+ADD_SUBDIRECTORY(switches-core-nopoly)
 ADD_SUBDIRECTORY(switches-core)
 
 #ADD_SUBDIRECTORY(hysteresis-nopoly)

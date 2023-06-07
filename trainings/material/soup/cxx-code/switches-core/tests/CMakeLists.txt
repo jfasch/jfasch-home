@@ -1,7 +1,10 @@
 ADD_EXECUTABLE(
   cxx-exercises-switches-core--suite
 
-  switch-mock-suite.cpp
+  # using the tests from "nopoly" which still hold
+  ../../switches-core-nopoly/tests/switch-mock-suite.cpp
+
+  switch-mock-is-a-switch-suite.cpp
 )
 
 TARGET_LINK_LIBRARIES(
