@@ -3,6 +3,7 @@ ADD_EXECUTABLE(
 
   sensor-const-suite-basic.cpp
   sensor-random-suite-basic.cpp
+  sensor-mock-suite-basic.cpp
 )
 
 TARGET_LINK_LIBRARIES(

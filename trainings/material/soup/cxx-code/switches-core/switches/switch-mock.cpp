@@ -1,8 +1,8 @@
 #include "switch-mock.h"
 
 
-MockSwitch::MockSwitch()
-: _state(Switch::State::OFF)
+MockSwitch::MockSwitch(Switch::State initial_state)
+: _state(initial_state)
 {}
     
 void MockSwitch::on()

@@ -6,7 +6,7 @@
 class MockSwitch : public Switch
 {
 public:
-    MockSwitch();
+    MockSwitch(Switch::State);
     
     Switch::State state() const override { return _state; }
     void on() override;

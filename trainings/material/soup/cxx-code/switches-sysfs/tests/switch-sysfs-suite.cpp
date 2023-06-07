@@ -5,7 +5,7 @@
 
 TEST(switch_mock_suite, basic)
 {
-    MockSwitch sw;
+    MockSwitch sw(Switch::State::OFF);
     ASSERT_TRUE(sw.state() == Switch::State::OFF);
     sw.on();
     ASSERT_TRUE(sw.state() == Switch::State::ON);
@@ -15,7 +15,7 @@ TEST(switch_mock_suite, basic)
 
 TEST(switch_mock_suite, is_a_switch)
 {
-    MockSwitch msw;
+    MockSwitch msw(Switch::State::OFF);
     Switch* sw = &msw;
     ASSERT_EQ(sw->state(), Switch::State::OFF);
     sw->on();

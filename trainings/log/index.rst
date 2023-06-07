@@ -22,45 +22,73 @@ This course is under preparation.
 
 (:doc:`More ... <detail/2023-07-03--CMake/index>`)
 
+Python Basics (2023-06-20 - 2023-06-22)
+---------------------------------------
+
+This course is under preparation.
+
+Location: Wels, Austria
+
+(:doc:`Mehr ... <detail/2023-06-20--Python-Basics/index>`)
+
 Linux Basics (2023-05-23 - 2023-05-25)
 --------------------------------------
 
-This course is under preparation.
+A mixture of :doc:`Linux Basics </trainings/repertoire/linux-basics>`
+and :doc:`Linux Systems Programming
+</trainings/repertoire/sysprog/index>`, to help port a C# application
+to Linux.
+
+Location: Baden-Württemberg, Germany
 
 (:doc:`More ... <detail/2023-05-23--Linux-Basics/index>`)
 
 Python Basics (2023-05-15 - 2023-05-17)
 ---------------------------------------
 
-Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+Teaching Python to a number of smart people, at a long-time customer
+of mine.
+
+Location: Wels, Austria
 
 (:doc:`Mehr ... <detail/2023-05-15--Python-Basics/index>`)
 
 Python Advanced (2023-04-24 - 2023-04-26)
 -----------------------------------------
 
-This course is under preparation.
+Walking through advanced corners of Python, with a number of
+experienced programmers who were relatively new to Python. Very cool
+setting which, although online, was very dynamic and fun.
+
+Location: online (Baden-Württemberg, Germany)
 
 (:doc:`More ... <detail/2023-04-24--Python-Advanced/index>`)
 
 C++ For Embedded Developers (2023-04-18 - 2023-04-20)
 -----------------------------------------------------
 
-This training is under preparation.
+A C++ introduction for a number of embedded programmers.
+
+Location: Gräfelfing, Germany
 
 (:doc:`More ... <detail/2023-04-18--C++-embedded/index>`)
 
 Clean Code Development With Python (2023-03-28 - 2023-03-30)
 ------------------------------------------------------------
 
-This training is under preparation.
+Workshop to discuss how clean code could look when using Python -
+naturally deviating from Uncle Bob's dogmatic view.
+
+Location: Darmstadt, Germany
 
 (:doc:`More ... <detail/2023-03-28--Python-Clean-Code/index>`)
 
 C++ For Embedded Developers (2023-03-20 - 2023-03-22)
 -----------------------------------------------------
 
-This training is under preparation.
+A C++ introduction for a number of embedded programmers.
+
+Location: Gräfelfing, Germany
 
 (:doc:`More ... <detail/2023-03-20--C++-embedded/index>`)
 
@@ -78,6 +106,8 @@ Embedded Linux Systems Programming (2023-02-13 - 2023-02-17)
 Explaining Linux, Unix, and especially Linux hardware interfaces to a
 number of smart electronic engineers.
 
+Location: Baden-Württemberg, Germany
+
 (:doc:`More ... <detail/2023-02-13/index>`)
 
 Linux Basics (2023-01-23 - 2023-01-26)
@@ -92,7 +122,10 @@ little shell scripting for test automation.
 Python (2022-11-16 - 2022-11-18)
 --------------------------------
 
-Dieser Kurs wurde von einer Firma aus Oberösterreich gebucht.
+An introduction to Python to a number of test engineers, for a
+long-time customer.
+
+Location: Wels, Austria
 
 (:doc:`Mehr ... <detail/2022-11-16/index>`)
 
@@ -102,6 +135,8 @@ Python (2022-11-07 - 2022-11-10, 2022-12-01)
 This was a heavily dynamic (and fun) course |:ok_hand:|. Some basics,
 but mostly advanced topics within a group project, in five days across
 Python.
+
+Location: Wels, Austria
 
 (:doc:`Mehr ... <detail/2022-11-07/index>`)
 

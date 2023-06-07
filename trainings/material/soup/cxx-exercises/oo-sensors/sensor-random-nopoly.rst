@@ -1,5 +1,5 @@
-.. ot-exercise:: cxx.exercises.oo_sensors.sensor_mock_random
-   :dependencies: cxx.exercises.oo_sensors.sensor_mock_const,
+.. ot-exercise:: cxx.exercises.oo_sensors.sensor_random_nopoly
+   :dependencies: cxx.exercises.oo_sensors.sensor_const_nopoly,
 		  cxx03.data_encapsulation.initializer_list,
 		  cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
@@ -7,8 +7,8 @@
 .. include:: <mmlalias.txt>
 
 
-Exercise: ``RandomSensor`` (Mocking Sensor)
-===========================================
+Exercise: ``RandomSensor`` (Non-Polymorphic)
+============================================
 
 .. contents::
    :local:
@@ -28,7 +28,7 @@ Implement a sensor class ``RandomSensor`` which does not access any
 real hardware, but rather returns a random temperature within a given
 range.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensors-duck/tests/sensor-random-suite-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-random-suite-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-random-suite-basic.cpp
 	     </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-random-suite-basic.cpp>`
@@ -54,4 +54,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx.exercises.oo_sensors.sensor_mock_random
+   :entries: cxx.exercises.oo_sensors.sensor_random_nopoly

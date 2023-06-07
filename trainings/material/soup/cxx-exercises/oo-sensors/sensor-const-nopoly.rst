@@ -1,12 +1,12 @@
-.. ot-exercise:: cxx.exercises.oo_sensors.sensor_mock_const
+.. ot-exercise:: cxx.exercises.oo_sensors.sensor_const_nopoly
    :dependencies: cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
 
 .. include:: <mmlalias.txt>
 
 
-Exercise: ``ConstantSensor`` (Mocking Sensor)
-=============================================
+Exercise: ``ConstantSensor`` (Non-Polymorphic)
+==============================================
 
 .. contents::
    :local:
@@ -25,7 +25,7 @@ Implement a sensor class ``ConstantSensor`` which does not access any
 real hardware, but rather always measures the same temperature - the
 one it is initialized with.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensors-duck/tests/sensor-const-suite-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-const-suite-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-const-suite-basic.cpp
              </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-const-suite-basic.cpp>`
@@ -34,4 +34,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx.exercises.oo_sensors.sensor_mock_const
+   :entries: cxx.exercises.oo_sensors.sensor_const_nopoly

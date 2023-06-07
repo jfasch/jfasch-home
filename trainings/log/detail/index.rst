@@ -5,6 +5,7 @@ Details
    :maxdepth: 1
 
    2023-07-03--CMake/index
+   2023-06-20--Python-Basics/index
    2023-05-15--Python-Basics/index
    2023-04-18--C++-embedded/index
    2023-04-24--Python-Advanced/index

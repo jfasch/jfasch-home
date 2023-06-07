@@ -174,11 +174,260 @@ Advanced Language Features
   `context-manager.py
   <https://github.com/jfasch/2023-05-15/blob/main/livehacking/context-manager.py>`__)
 
-Untold
-------
+Links
+-----
 
-* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-* :doc:`/trainings/material/soup/python/advanced/closures/topic`
-* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+Beginner
+........
+
+* `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
+  <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/W8KRzm-HUcc" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 5: Dictionaries - Working with
+  Key-Value Pairs <https://www.youtube.com/watch?v=daefaLgNkw0>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/daefaLgNkw0" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `10 Python Tips and Tricks For Writing Better Code
+  <https://www.youtube.com/watch?v=C-gEQdGVXbk>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/C-gEQdGVXbk" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Using Try/Except Blocks for Error Handling
+  <https://www.youtube.com/watch?v=NIWwJbo-9_8>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/NIWwJbo-9_8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Modules from Standard Library
+.............................
+
+* `Python Tutorial: OS Module - Use Underlying Operating System
+  Functionality <https://www.youtube.com/watch?v=tJxcKyFMTGo>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/tJxcKyFMTGo" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Calling External Commands Using the Subprocess
+  Module <https://www.youtube.com/watch?v=2Fp1N6dof0Y>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/2Fp1N6dof0Y" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: re Module - How to Write and Match Regular
+  Expressions (Regex)
+  <https://www.youtube.com/watch?v=K8L6KVGG-7o>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/K8L6KVGG-7o" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: CSV Module - How to Read, Parse, and Write CSV
+  Files <https://www.youtube.com/watch?v=q5uM4VKywbA>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/q5uM4VKywbA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Advanced
+........
+
+* `Transforming Code into Beautiful, Idiomatic Python
+  <https://www.youtube.com/watch?v=OSGv2VnC0go>`__, by **Raymond
+  Hettinger**
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/OSGv2VnC0go" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial: Duck Typing and Asking Forgiveness, Not Permission
+  (EAFP) <https://www.youtube.com/watch?v=x3v9zMX1s4s>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/x3v9zMX1s4s" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+NumPy and Data Science Tutorials
+................................
+
+* `Complete Python NumPy Tutorial (Creating Arrays, Indexing, Math,
+  Statistics, Reshaping)
+  <https://www.youtube.com/watch?v=GB9ByFAIAH4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/GB9ByFAIAH4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Solving real world data science tasks with Python Pandas!
+  <https://www.youtube.com/watch?v=eMOA1pPVUc4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/eMOA1pPVUc4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Intro to Data Visualization in Python with Matplotlib! (line graph,
+  bar chart, title, labels, size)
+  <https://www.youtube.com/watch?v=DAQNHzOcO5A>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/DAQNHzOcO5A" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+Conference Talks
+................
+
+* `Built in Super Heroes
+  <https://www.youtube.com/watch?v=lyDLAutA88s>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ in an entertaining keynote to the
+  "PyData Chicago 2016" conference. He has a number of very good and
+  entertaining (and very advanced) videos. You have to spend an entire
+  evening with him though.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+	     src="https://www.youtube.com/embed/lyDLAutA88s" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Keynote - David Beazley
+  <https://www.youtube.com/watch?v=VUT386_GKI8>`__. `David Beazley
+  <https://www.dabeaz.com/>`__ live
+  coding a Web Assembly interpreter. PyCon India 2019.
+
+  .. raw:: html
+
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/VUT386_GKI8" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `David Beazley: Generators: The Final Frontier - PyCon 2014
+  <https://www.youtube.com/watch?v=D1twn9kLmYg>`__: `David Beazley
+  <https://www.dabeaz.com/>`__ again a bit (a whopping four hours)
+  more precise on that topic.
+
+  .. raw:: html
+
+     <iframe width="560" 
+             height="315" 
+	     src="https://www.youtube.com/embed/D1twn9kLmYg" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+

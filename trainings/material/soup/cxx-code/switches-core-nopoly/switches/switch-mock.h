@@ -10,7 +10,7 @@ public:
         OFF
     };
 
-    MockSwitch();
+    MockSwitch(State initial_state);
     
     State state() const { return _state; }
     void on();

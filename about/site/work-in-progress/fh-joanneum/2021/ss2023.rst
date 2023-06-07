@@ -275,10 +275,6 @@ Block 3: C++
        (livehacked: `point.cpp
        <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__)
 
-   * * VO
-     * KU
-     * #Units
-     * Topics
    * * 
      * 2023-06-01
      * 3
@@ -297,10 +293,6 @@ Block 3: C++
 
        * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
 
-   * * VO
-     * KU
-     * #Units
-     * Topics
    * * 2023-06-02
      * 
      * 3
@@ -318,10 +310,6 @@ Block 3: C++
 	 * `onewire-temperature-modular.cpp
            <https://github.com/jfasch/FH-ECE21/blob/main/students/joerg.faschingbauer/bin/onewire-temperature-modular.cpp>`__
 
-   * * VO
-     * KU
-     * #Units
-     * Topics
    * * 2023-06-05
      * 
      * 3
@@ -338,10 +326,6 @@ Block 3: C++
 
        * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
 
-   * * VO
-     * KU
-     * #Units
-     * Topics
    * * 
      * 2023-06-07
      * 3
@@ -349,18 +333,14 @@ Block 3: C++
 
        **Exercises**
 
-       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-mock-const`
-       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-mock-random`
+       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-const-nopoly`
+       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-random-nopoly`
        * :doc:`/trainings/material/soup/cxx-exercises/oo-switches/switch-mock`
 
        *Note*: see `point.cpp
        <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__
        for a sample class implementation.
 
-   * * VO
-     * KU
-     * #Units
-     * Topics
    * * 
      * 2023-06-12
      * 3
@@ -368,3 +348,26 @@ Block 3: C++
 
        **Lab Exam**
 
+       * Implementation
+
+         * Clone from Github: https://github.com/jfasch/FH-ECE21-LabExam-2023-06-12.git
+         * Prepare according to README (see Github project page)
+         * Build as usual
+         * Implement requirements (to come on Monday)
+
+       * Upload a ``.tar.bz2`` file of the project
+
+	 * Change your current working directory to *one above* the
+           project's source root
+	 * Create a ``tar`` archive
+
+	   .. code-block:: console
+
+	      $ tar -j -c -f FH-ECE21-LabExam-2023-06-12.tar.bz2 FH-ECE21-LabExam-2023-06-12/
+
+	 * Upload ``FH-ECE21-LabExam-2023-06-12.tar.bz2`` to `moodle
+           <https://moodle-22-23.fh-joanneum.at/mod/assign/view.php?id=58630>`__
+
+       .. attention::
+
+	  blah

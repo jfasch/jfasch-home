@@ -1,7 +1,5 @@
-#include <sensor-const.h>
-
 #include <gtest/gtest.h>
-
+#include <sensor-const.h>
 
 TEST(sensor_const_suite, basic)
 {

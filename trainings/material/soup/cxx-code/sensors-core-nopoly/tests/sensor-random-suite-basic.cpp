@@ -1,7 +1,5 @@
-#include <sensor-random.h>
-
 #include <gtest/gtest.h>
-
+#include <sensor-random.h>
 
 TEST(sensor_random_suite, basic)
 {
@@ -13,5 +11,4 @@ TEST(sensor_random_suite, basic)
 
     ASSERT_FLOAT_EQ(rs.low(), 36.4);      // <--- RandomSensor specific interface
     ASSERT_FLOAT_EQ(rs.high(), 42.3);      // <--- RandomSensor specific interface
-    
 }
