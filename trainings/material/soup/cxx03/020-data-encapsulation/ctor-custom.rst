@@ -89,6 +89,12 @@ Constructors: Implementation - *Inline*
        int _y;
    };
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`initializer-list`
+
 * Better: using an *initializer list* for member initialization
 * No difference for non ``const`` members
 * Assignment in constructor body not possible for ``const`` members

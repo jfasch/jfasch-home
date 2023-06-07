@@ -306,7 +306,7 @@ Block 3: C++
      * 3
      * 
 
-       **Exercise**
+       **Exercise, cont'd**
 
        * *Q&A*
        * `Github project <https://github.com/jfasch/FH-ECE21>`__ (and
@@ -327,7 +327,7 @@ Block 3: C++
      * 3
      * 
 
-       **Future Directions**
+       **Discussion: Future Directions**
 
        * PLC state machine (Salloker)
        * Possible OO implementation (TDD?)
@@ -338,9 +338,32 @@ Block 3: C++
 
        * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
 
-       From :doc:`/trainings/material/soup/cxx03/060-stl/group` ...
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 
+     * 2023-06-07
+     * 3
+     * 
 
-       * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
-       * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/topic`
-       * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/vector-basic`
+       **Exercises**
 
+       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-mock-const`
+       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-mock-random`
+       * :doc:`/trainings/material/soup/cxx-exercises/oo-switches/switch-mock`
+
+       *Note*: see `point.cpp
+       <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__
+       for a sample class implementation.
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 
+     * 2023-06-12
+     * 3
+     * 
+
+       **Lab Exam**

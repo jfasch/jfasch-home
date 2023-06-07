@@ -13,6 +13,8 @@ Exercises
 .. toctree::
    :maxdepth: 1
 
+   sensor-mock-const
+   sensor-mock-random
    sensor-interface
    sensor-w1
    sensor-w1-factory

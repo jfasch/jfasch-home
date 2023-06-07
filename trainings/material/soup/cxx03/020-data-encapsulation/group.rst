@@ -16,6 +16,7 @@ Topics
    c
    cpp-introduction
    ctor-custom
+   initializer-list
    ctor-default
    copy-basics
    ctor-dtor

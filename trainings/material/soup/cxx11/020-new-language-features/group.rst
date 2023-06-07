@@ -33,6 +33,8 @@ Topics
    delete
    default
 
+   coroutines/topic
+
 Group Description
 -----------------
 	      

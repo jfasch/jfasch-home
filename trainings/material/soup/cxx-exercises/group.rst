@@ -23,6 +23,7 @@ Exercises
 
    oo-shapes/shapes
    oo-sensors/group
+   oo-switches/group
    stl/group
    design-patterns/group
    fh-sensor-oo-first-try/group

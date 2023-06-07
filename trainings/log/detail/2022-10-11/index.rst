@@ -205,3 +205,13 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
+
+News in C++20 (2023-06-13)
+--------------------------
+
+* Feature test macros
+* Coroutines
+* Ranges and Views
+* C++23 Generators
+* Modules
+* Concepts
