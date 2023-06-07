@@ -4,14 +4,19 @@ ADD_SUBDIRECTORY(utilities)
 
 ADD_SUBDIRECTORY(socialdb)
 
-ADD_SUBDIRECTORY(sensors-duck)
+ADD_SUBDIRECTORY(sensors-core-nopoly)
 ADD_SUBDIRECTORY(sensors-core)
+
+#ADD_SUBDIRECTORY(switches-core-nopoly)
+ADD_SUBDIRECTORY(switches-core)
+
+#ADD_SUBDIRECTORY(hysteresis-nopoly)
+
 ADD_SUBDIRECTORY(sensors-core-i2c)
 
 ADD_SUBDIRECTORY(oo-sensor-w1)
 ADD_SUBDIRECTORY(oo-sensor-w1-factory)
 
-ADD_SUBDIRECTORY(switches-core)
 ADD_SUBDIRECTORY(switches-sysfs)
 
 ADD_SUBDIRECTORY(design-patterns-singleton)

@@ -31,7 +31,7 @@ range.
 .. literalinclude:: /trainings/material/soup/cxx-code/sensors-duck/tests/sensor-random-suite-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-random-suite-basic.cpp
-             </trainings/material/soup/cxx-code/sensors-duck/tests/sensor-random-suite-basic.cpp>`
+	     </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-random-suite-basic.cpp>`
 
 Implementation Hint: Randomicity In C++
 .......................................

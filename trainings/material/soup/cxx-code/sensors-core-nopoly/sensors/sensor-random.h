@@ -2,6 +2,7 @@
 
 #include <random>
 
+
 class RandomSensor
 {
 public:
@@ -10,7 +11,7 @@ public:
     double low() const { return _low; }
     double high() const { return _high; }
 
-    virtual double get_temperature();
+    double get_temperature();
 
 private:
     std::uniform_real_distribution<double> _distribution;

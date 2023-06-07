@@ -28,7 +28,7 @@ one it is initialized with.
 .. literalinclude:: /trainings/material/soup/cxx-code/sensors-duck/tests/sensor-const-suite-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-const-suite-basic.cpp
-             </trainings/material/soup/cxx-code/sensors-duck/tests/sensor-const-suite-basic.cpp>`
+             </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-const-suite-basic.cpp>`
 
 Topics Covered
 --------------
