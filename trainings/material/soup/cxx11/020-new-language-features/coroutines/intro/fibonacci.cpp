@@ -2,16 +2,16 @@
 #include <iostream>
 #include <cstdint>
 
-class Fibo
+class Fibonacci
 {
 public:
     class promise_type
     {
     public: // customization of coro behavior
-        Fibo get_return_object() { return Fibo(this); }
+        Fibonacci get_return_object() { return Fibonacci(this); }
         std::suspend_never initial_suspend() noexcept { return {}; }
         std::suspend_always final_suspend() noexcept { return {}; }
-        std::suspend_always yield_value(int elem)
+        std::suspend_always yield_value(uint64_t elem)
         {
             _elem = elem;
             return {};
@@ -27,8 +27,8 @@ public:
     using Handle = std::coroutine_handle<promise_type>;
 
 public:
-    explicit Fibo(promise_type* p) : _coro(Handle::from_promise(*p)) {}
-    ~Fibo()
+    explicit Fibonacci(promise_type* p) : _coro(Handle::from_promise(*p)) {}
+    ~Fibonacci()
     { 
         if (_coro)
             _coro.destroy();
@@ -41,17 +41,18 @@ private:
     Handle _coro{};
 };
 
-Fibo fibonacci()
+Fibonacci fibonacci()
 {
     uint64_t first = 1;
-    co_yield first;
-
     uint64_t second = 1;
-    co_yield second;
+
+    co_yield first;                                    // <--- suspend
+    co_yield second;                                   // <--- suspend
 
     while (true) {
         uint64_t third = first + second;
-        co_yield third;
+
+        co_yield third;                                // <--- suspend
         
         first = second;
         second = third;

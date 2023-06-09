@@ -1,16 +1,32 @@
-.. ot-topic:: cxx11.new_language_features.coroutines
+.. ot-topic:: cxx11.new_language_features.coroutines.overview
+   :dependencies: cxx11.new_language_features.coroutines.intro
 
 .. include:: <mmlalias.txt>
 
 
-Coroutines
-==========
+Coroutines: Overview
+====================
 
 .. contents::
    :local:
 
 Overview
 --------
+
+* Really hard to remember |longrightarrow|
+  https://www.youtube.com/watch?v=J7fYddslH0Q
+* Pause/resume
+* Use cases
+
+  * Async: looks like blocking, but isn't
+
+    * Multithreading replacement
+    * Much like Python's ``asyncio``
+    * |longrightarrow| `Boost.Asio
+      <https://www.boost.org/doc/libs/1_82_0/doc/html/boost_asio.html>`__
+    * *Event loop*
+
+  * Generators
 
 * blah re-enter/pause/suspend/resume
 * ``#include <coroutine>``
@@ -21,6 +37,11 @@ Overview
   * ``co_await``
 
 * *"Stackless"* (whatever that means)
+
+Introductory Live Hacking jjj
+-----------------------------
+
+* :doc:`intro`
 
 Pitfalls
 --------
