@@ -3,4 +3,4 @@
 
 .. literalinclude:: fibonacci.cpp
    :language: c++
-   :caption: `Download fibonacci.cpp <fibonacci.cpp>`
+   :caption: :download:`Download fibonacci.cpp <fibonacci.cpp>`

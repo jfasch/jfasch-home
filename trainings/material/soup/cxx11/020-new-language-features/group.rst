@@ -34,6 +34,10 @@ Topics
    default
 
    coroutines/group
+   ranges/group
+
+.. concepts
+..   http://docs.seqan.de/seqan3/3-master-user/tutorial_concepts.html
 
 Group Description
 -----------------

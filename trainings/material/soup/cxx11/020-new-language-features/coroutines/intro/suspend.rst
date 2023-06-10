@@ -3,4 +3,4 @@
 
 .. literalinclude:: suspend.cpp
    :language: c++
-   :caption: `Download suspend.cpp <suspend.cpp>`
+   :caption: :download:`Download suspend.cpp <suspend.cpp>`

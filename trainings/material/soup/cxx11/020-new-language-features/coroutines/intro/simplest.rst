@@ -3,4 +3,4 @@
 
 .. literalinclude:: simplest.cpp
    :language: c++
-   :caption: `Download simplest.cpp <simplest.cpp>`
+   :caption: :download:`Download simplest.cpp <simplest.cpp>`

@@ -3,4 +3,4 @@
 
 .. literalinclude:: generator.h
    :language: c++
-   :caption: `Download generator.h <generator.h>`
+   :caption: :download:`Download generator.h <generator.h>`

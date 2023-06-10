@@ -6,8 +6,8 @@
 .. include:: <mmlalias.txt>
 
 
-Overview (Lvalues, Rvalues, And Such)
-=====================================
+Lvalues, Rvalues, And Such
+==========================
 
 .. contents::
    :local:
