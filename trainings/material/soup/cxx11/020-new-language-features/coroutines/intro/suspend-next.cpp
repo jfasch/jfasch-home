@@ -20,8 +20,15 @@ public:
 
 public:
     Coro(promise_type* p) : _promise(p) {}
-    void resume() { std::coroutine_handle<promise_type>::from_promise(*_promise).resume(); }
-    std::string last_value() const { return _promise->last_value; }
+    struct StopIteration {};                           // <--- Python-style sentinel exception
+    std::string next()                                 // <--- produce next element, or throw StopIteration
+    {
+        auto coro = std::coroutine_handle<promise_type>::from_promise(*_promise);
+        coro.resume();
+        if (coro.done())
+            throw StopIteration();
+        return _promise->last_value;
+    }
 
 private:
     promise_type* _promise;
@@ -38,9 +45,15 @@ Coro hello()
 int main()
 {
     auto hello_instance = hello();
-    hello_instance.resume();                           // <--- yields into promise
-    auto value = hello_instance.last_value();          // <--- get yielded value from promise
-    std::cout << "coro produced: " << value << std::endl;
-    hello_instance.resume();                           // <--- terminate: resume until co_return
+
+    while (true) {
+        try {
+            std::cout << hello_instance.next() << std::endl;
+        }
+        catch (const Coro::StopIteration&) {
+            break;
+        }
+    }
+
     return 0;
 }

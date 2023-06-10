@@ -1,12 +1,13 @@
 #include <coroutine>
 #include <iostream>
+#include <iterator>
 
 class Coro {
 public:
     struct promise_type
     {
         Coro get_return_object() { return Coro(this); }
-        std::suspend_always initial_suspend() { return {}; }
+        std::suspend_never initial_suspend() { return {}; }
         std::suspend_always yield_value(std::string v) // <--- called by co_yield  
         { 
             last_value = v;                            // <--- save yielded value
@@ -18,10 +19,26 @@ public:
         std::string last_value;                        // <--- last value co_yield'ed
     };
 
+    struct sentinel {};
+    struct iterator
+    {
+        std::coroutine_handle<promise_type> coro;
+        bool operator==(sentinel) const { return coro.done(); }
+        iterator& operator++()
+        {
+            coro.resume();
+            return *this;
+        }
+        std::string operator*() const
+        {
+            return coro.promise().last_value;
+        }
+    };
+
 public:
     Coro(promise_type* p) : _promise(p) {}
-    void resume() { std::coroutine_handle<promise_type>::from_promise(*_promise).resume(); }
-    std::string last_value() const { return _promise->last_value; }
+    iterator begin() const { return {std::coroutine_handle<promise_type>::from_promise(*_promise)}; }
+    sentinel end() const { return {}; }
 
 private:
     promise_type* _promise;
@@ -38,9 +55,9 @@ Coro hello()
 int main()
 {
     auto hello_instance = hello();
-    hello_instance.resume();                           // <--- yields into promise
-    auto value = hello_instance.last_value();          // <--- get yielded value from promise
-    std::cout << "coro produced: " << value << std::endl;
-    hello_instance.resume();                           // <--- terminate: resume until co_return
+
+    for (auto elem: hello_instance)
+        std::cout << elem << std::endl;
+
     return 0;
 }

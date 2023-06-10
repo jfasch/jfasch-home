@@ -1,4 +1,4 @@
-.. ot-topic:: cxx11.new_language_features.coroutines
+.. ot-group:: cxx11.new_language_features.coroutines
 
 .. include:: <mmlalias.txt>
 
