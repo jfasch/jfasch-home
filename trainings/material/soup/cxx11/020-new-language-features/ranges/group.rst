@@ -16,6 +16,8 @@ Topics
    :maxdepth: 1
 
    intro
+   good-bad
+   links
 
 Dependencies
 ------------

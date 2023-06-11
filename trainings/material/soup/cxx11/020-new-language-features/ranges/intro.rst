@@ -13,7 +13,7 @@ Ranges: An Overview
 
    **Documentation**
 
-   * `ranges (cppreference.com)
+   * `Ranges
      <https://en.cppreference.com/w/cpp/ranges>`__
 
 Ranges?
@@ -65,88 +65,74 @@ Pipe Syntax
    :caption: :download:`Download drop-take-pipe.cpp
              <intro/drop-take-pipe.cpp>`
 
-Dangling Iterator Protection
-----------------------------
-
-.. sidebar::
-
-   **See also**
-
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
-
-* A *range* is one object describing a ... well ... a range of
-  elements
-* Traditionally (pre-20), described by a pair of *iterators* ``[begin,
-  end)``
-
-  .. literalinclude:: intro/dangling-protection-1.cpp
-     :language: c++
-     :caption: :download:`Download dangling-protection-1.cpp
-               <intro/dangling-protection-1.cpp>`
-
-* *Ranges* do the same, using one object of range (or view) type
-
-  .. literalinclude:: intro/dangling-protection-2.cpp
-     :language: c++
-     :caption: :download:`Download dangling-protection-2.cpp
-               <intro/dangling-protection-2.cpp>`
-
-* |longrightarrow| much more possibilities
-
-*For example ...* 
-
-* Passing temporaries adds to readability
-* ... but often also to bugginess
-
-  .. literalinclude:: intro/dangling-protection-3.cpp
-     :language: c++
-     :caption: :download:`Download dangling-protection-3.cpp
-               <intro/dangling-protection-3.cpp>`
-
-* ``std::ranges::dangling`` when passing an :doc:`RValue
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/overview>`
-* |longrightarrow| *compiler error*
-
-Range Views, And Piping 
------------------------
-
-.. https://youtu.be/sZy9XcGHmI4 (Jason Turner)
+Views As Parameters: Good Old Template
+--------------------------------------
 
 .. sidebar::
 
    **Documentation**
 
-   * `std::ranges::views::drop
-     <https://en.cppreference.com/w/cpp/ranges/drop_view>`__
+   * `(Abbreviated) function templates
+     <https://en.cppreference.com/w/cpp/language/function_template>`__
 
-* 
+   **See also**
 
-  .. literalinclude:: intro/view-procedural.cpp
+   * :doc:`../concepts/group`
+
+   **Trainer's Note**
+
+   * Start with ``intro/print-oldstyle.cpp``, and morph
+
+* As an old-style template
+
+  .. literalinclude:: intro/print-oldstyle.cpp
      :language: c++
-     :caption: :download:`Download view-procedural.cpp
-               <intro/view-procedural.cpp>`
+     :caption: :download:`Download print-oldstyle.cpp
+               <intro/print-oldstyle.cpp>`
 
+Views As Parameters: Abbreviated Function Template
+--------------------------------------------------
 
+* `Abbreviated function templates
+  <https://en.cppreference.com/w/cpp/language/function_template>`__.
 
-jjj
----
+This is new in C++20. The feature is inspired by generic lambda (new
+in C++14, and refined from then on; see `here
+<https://en.cppreference.com/w/cpp/language/lambda>`__).
 
-https://youtu.be/L0bhZp6HMDM 25:00
+.. literalinclude:: intro/print-auto-template.cpp
+   :language: c++
+   :caption: :download:`Download print-auto-template.cpp
+             <intro/print-auto-template.cpp>`
 
+Views As Parameters: Concepts
+-----------------------------
 
+* Abbreviated function templates are best combined with :doc:`concepts
+  <../concepts/group>`
+* |longrightarrow| Better compiler errors
 
-Links
------
+.. literalinclude:: intro/print-concept.cpp
+   :language: c++
+   :caption: :download:`Download print-concept.cpp
+             <intro/print-concept.cpp>`
 
-* ` C++20 Ranges in Practice - Tristan Brindle - CppNorth 2022
-  <https://youtu.be/L0bhZp6HMDM>`__
+Available ``<ranges>`` Concepts
+-------------------------------
 
-  .. raw:: html
+.. list-table::
+   :widths: auto
+   :header-rows: 1
 
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/L0bhZp6HMDM" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     allowfullscreen>
-     </iframe>
+   * * Concept name
+     * Description
+   * * ``std::ranges::input_range``
+     * Can be iterated from beginning to end at least once
+   * * ``std::ranges::forward_range``
+     * Can be iterated from beginning to end multiple times
+   * * ``std::ranges::bidirectional_range``
+     * Iterator can also move backwards with ``operator--()``
+   * * ``std::ranges::random_access_range``
+     * You can jump to elements in constant-time with ``operator[]()``
+   * * ``std::ranges::contiguous_range``
+     * Elements are always stored consecutively in memory

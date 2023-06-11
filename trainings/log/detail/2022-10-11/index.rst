@@ -213,5 +213,4 @@ News in C++20 (2023-06-13)
 * Coroutines
 * Ranges and Views
 * C++23 Generators
-* Modules
 * Concepts

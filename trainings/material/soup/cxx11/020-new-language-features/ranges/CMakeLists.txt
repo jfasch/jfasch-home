@@ -1,1 +1,2 @@
 ADD_SUBDIRECTORY(intro)
+ADD_SUBDIRECTORY(good-bad)
