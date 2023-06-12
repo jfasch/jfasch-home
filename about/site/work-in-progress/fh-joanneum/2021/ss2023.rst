@@ -375,3 +375,10 @@ Block 3: C++
 	  tree *must not* be part of the uploaded archive
 
 	  If you do, this will severely influence the exam grading!
+
+   * * 
+     * 2023-06-15
+     * 3
+     * 
+
+       * Mr.Felber to show how vscode works

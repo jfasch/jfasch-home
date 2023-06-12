@@ -209,8 +209,30 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 News in C++20 (2023-06-13)
 --------------------------
 
-* Feature test macros
-* Coroutines
-* Ranges and Views
-* C++23 Generators
-* Concepts
+Coroutines and C++23 Generators
+...............................
+
+From
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/group`
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/intro`
+
+Ranges And Views
+................
+
+From
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/group`
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/intro`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/good-bad`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/links`
+
+Concepts
+........
+
+From
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/links`
