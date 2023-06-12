@@ -15,6 +15,8 @@ Concepts: Overview
 
    * `Constraints and Concepts
      <https://en.cppreference.com/w/cpp/language/constraints>`__
+   * <concepts>: `Standard library header
+     <https://en.cppreference.com/w/cpp/header/concepts>`__
 
 Motivation
 ----------
@@ -108,7 +110,7 @@ Concept: ``has_size``
 
 * Implement concept ``has_size``
 * Requires that any object of ``V`` has a ``.size()`` method
-* |longrightarrow| i.e. the expression ``v.size()`` compiles
+* |longrightarrow| i.e. the expression ``v.size()`` *compiles*
 
 .. code-block:: c++
 
@@ -138,3 +140,61 @@ Concept: ``has_size``
 
    double hypotenuse(const has_size auto& v) { /*...*/ }
 
+Concept: ``index_returns_double``
+---------------------------------
+
+.. toctree::
+   :hidden:
+
+   intro/example-5-concept-index-ret-double
+
+.. sidebar::
+
+   **Source**
+
+   * :doc:`intro/example-5-concept-index-ret-double`
+
+* Hmm ... what if elements are not ``double``?
+* |longrightarrow| Somebody could use ``hypotenuse()`` on something
+  that has ``int`` coordinates
+* Could we check this?
+
+*Ruin the whole thing ...*
+
+* Modify object initialization to take real double values,
+  e.g. ``{3.5L, 4.5L}``
+* |longrightarrow| Result not straight 5 anymore
+* Modify ``point2d::operator[]()`` to return ``int``
+* |longrightarrow| Result straight 5 again
+
+*Concept* ``index_returns_double``
+
+.. sidebar::
+
+   **Documentation**
+
+   * `std::same_as
+     <https://en.cppreference.com/w/cpp/concepts/same_as>`__
+   * `std::commone_reference_with
+     <https://en.cppreference.com/w/cpp/concepts/common_reference_with>`__
+   * <concepts>: `Standard library header
+     <https://en.cppreference.com/w/cpp/header/concepts>`__
+   * `std::vector
+     <https://en.cppreference.com/w/cpp/container/vector>`__
+
+* First use ``std::same_as<double>``
+* |longrightarrow| Constraint check fails:
+  ``std::vector::operator[]()`` is *not* same as ``double`` (rather, it returns ``double&``)
+* Solution: ``std::commone_reference_with<double>``
+
+.. code-block:: c++
+
+   template <typename V>
+   concept index_returns_double = requires(V v) {
+       { v[0] } -> std::common_reference_with<double>;
+   };
+
+* Argh: checking multiple constraints is not possible with abbreviated
+  function templates 
+* |longrightarrow| fall back to ordinary template syntax, and its
+  ``requires`` clause
