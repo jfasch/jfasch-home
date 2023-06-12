@@ -5,8 +5,8 @@
 double hypotenuse(const std::vector<double>& v)
 {
     double sumsq = 0;
-    for (size_t i=0; i<v.size(); ++i)
-        sumsq += v[i]*v[i];
+    for (size_t i=0; i<v.size(); ++i)                  // <--- vector has .size()
+        sumsq += v[i]*v[i];                            // <--- vector has []
     return std::sqrt(sumsq);
 }
 

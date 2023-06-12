@@ -4,15 +4,8 @@
 
 template <typename V>
 concept has_size = requires(V v) {
-    v.size();
+    v.size();                                          // <--- compiles
 };
-
-// template <typename V>
-// requires has_size<V>
-// double hypotenuse(const V& v)
-
-// template <typename V>
-// double hypotenuse(const V& v) requires has_size<V>
 
 double hypotenuse(const has_size auto& v)
 {
@@ -28,7 +21,6 @@ public:
     point2d(double x, double y)
     : _x{x}, _y{y} {}
 
-    // glue to be usable with hypotenuse()
     size_t size() const { return 2; }
     double operator[](size_t i) const
     {

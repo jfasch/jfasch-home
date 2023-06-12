@@ -3,5 +3,6 @@
 
 .. literalinclude:: example-5-concept-index-ret-double.cpp
    :language: c++
-   :caption: `Download example-5-concept-index-ret-double.cpp
+   :caption: :download:`Download
+             example-5-concept-index-ret-double.cpp
              <example-5-concept-index-ret-double.cpp>`

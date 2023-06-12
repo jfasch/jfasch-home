@@ -17,15 +17,13 @@ public:
     point2d(double x, double y)
     : _x{x}, _y{y} {}
 
-    // glue to be usable with hypotenuse()
-    size_t size() const { return 2; }
-    double operator[](size_t i) const
+    size_t size() const { return 2; }                  // <--- point2d has .size() too
+    double operator[](size_t i) const                  // <--- point2d has [] too
     {
         if (i==0) return _x;
         if (i==1) return _y;
         return 666;
     }
-
 private:
     double _x, _y;
 };

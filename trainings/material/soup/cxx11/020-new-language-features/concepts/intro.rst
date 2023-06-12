@@ -21,7 +21,7 @@ Concepts: Overview
 Motivation
 ----------
 
-* Error messages failed template instantiations are brutal
+* Error messages on failed template instantiations are brutal
 * |longrightarrow| Solution needed
 * Template metaprogramming is *not* a solution
 
@@ -31,170 +31,159 @@ Motivation
 * Enter *Concepts*
 * Relatively easy language to formulate what's needed for successful
   substitution
-* Let's walk through an initial concept by example ...
+* Let's walk through a simple example: using the ``std::integral``
+  concept from ``<concepts>``
 
-Starting Point: Good Old Function
----------------------------------
+No Problem: Template Instantiation Chosen By Parameter Type
+-----------------------------------------------------------
 
 .. toctree::
    :hidden:
 
-   intro/example-1-good-old-func
+   intro/toolcase-1-conceptless
 
 .. sidebar::
 
    **Source**
 
-   * :doc:`intro/example-1-good-old-func`
+   * :doc:`intro/toolcase-1-conceptless`
 
-* N-dimensional hypotenuse
-* ``std::vector<double>``
-* Using index based iteration, only too keep requirements to a minimum
-* Requirements
+.. code-block:: c++
 
-  * ``.size()``
-  * ``.operator[]()``
+   template <typename T>
+   bool is_even(T num)
+   {
+       return (num % 2) == 0;
+   }
+   
+   is_even(3);
+   is_even(4UL);
+   is_even(4L);
 
-Need Template
--------------
+* Everything fine
+* Template used with compatible types (compatible?)
+* |longrightarrow| no errors
+
+Problem: Template Instantiation Chosen By Parameter Type
+--------------------------------------------------------
 
 .. toctree::
    :hidden:
 
-   intro/example-2-need-template
+   intro/toolcase-2-conceptless-error
 
 .. sidebar::
 
    **Source**
 
-   * :doc:`intro/example-2-need-template`
+   * :doc:`intro/toolcase-2-conceptless-error`
 
-* ``point2d``: members ``x, y`` (and potentially some operations on a
-  point, but that is not the point here)
-* How to fit that into ``hypotenuse()``?
-* |longrightarrow| implement what's *required* by ``hypotenuse()``
-  (``.size()`` and ``.operator[]()``)
-* |longrightarrow| Turn ``hypotenuse()`` into a template
-* *Straightforward*
+.. code-block:: c++
 
-Error: Requirement Not Fulfilled
---------------------------------
+   is_even(1.5);
 
-* Uncomment ``.size()``
-* Error message is relatively clear (see below)
-* ``error: ‘const class point2d’ has no member named ‘size’``
-* Can be worse though; for example if helper types (possibly nested a
-  dozen levels deep) are instantiated by the implementation
+* Not fine
+* ``%`` not defined for floating point numbers
+* Template instantiated nonetheless
+* |longrightarrow| Error (possibly deep down complicated code)
+* |longrightarrow| User can only guess
 
 .. code-block:: console
 
-   example-3-requirement-not-fulfilled.cpp: In instantiation of ‘double hypotenuse(const V&) [with V = point2d]’:
-   example-3-requirement-not-fulfilled.cpp:39:28:   required from here
-   example-3-requirement-not-fulfilled.cpp:9:26: error: ‘const class point2d’ has no member named ‘size’
-       9 |     for (size_t i=0; i<v.size(); ++i)
-         |                        ~~^~~~
+   toolcase-2-conceptless-error.cpp: In instantiation of ‘bool is_even(T) [with T = double]’:
+   toolcase-2-conceptless-error.cpp:11:25:   required from here
+   toolcase-2-conceptless-error.cpp:6:17: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+       6 |     return (num % 2) == 0;
+         |            ~~~~~^~~~
 
-Concept: ``has_size``
----------------------
-
-.. toctree::
-   :hidden:
-
-   intro/example-4-concept-has-size
-
-.. sidebar::
-
-   **Source**
-
-   * :doc:`intro/example-4-concept-has-size`
-
-* Implement concept ``has_size``
-* Requires that any object of ``V`` has a ``.size()`` method
-* |longrightarrow| i.e. the expression ``v.size()`` *compiles*
-
-.. code-block:: c++
-
-   template <typename V>
-   concept has_size = requires(V v) {
-       v.size();
-   };
-
-* Concept usage: good old full explicit template
-
-.. code-block:: c++
-
-   template <typename V>
-   requires has_size<V>
-   double hypotenuse(const V& v) { /*...*/ }
-
-* Concept usage: good old full explicit template (after declaration)
-
-.. code-block:: c++
-
-   template <typename V>
-   double hypotenuse(const V& v) requires has_size<V> { /*...*/ }
-
-* Concept usage: abbreviated function templates
-
-.. code-block:: c++
-
-   double hypotenuse(const has_size auto& v) { /*...*/ }
-
-Concept: ``index_returns_double``
----------------------------------
+Concepts To The Rescue
+----------------------
 
 .. toctree::
    :hidden:
 
-   intro/example-5-concept-index-ret-double
-
-.. sidebar::
-
-   **Source**
-
-   * :doc:`intro/example-5-concept-index-ret-double`
-
-* Hmm ... what if elements are not ``double``?
-* |longrightarrow| Somebody could use ``hypotenuse()`` on something
-  that has ``int`` coordinates
-* Could we check this?
-
-*Ruin the whole thing ...*
-
-* Modify object initialization to take real double values,
-  e.g. ``{3.5L, 4.5L}``
-* |longrightarrow| Result not straight 5 anymore
-* Modify ``point2d::operator[]()`` to return ``int``
-* |longrightarrow| Result straight 5 again
-
-*Concept* ``index_returns_double``
+   intro/toolcase-3-concept-integral
 
 .. sidebar::
 
    **Documentation**
 
-   * `std::same_as
-     <https://en.cppreference.com/w/cpp/concepts/same_as>`__
-   * `std::commone_reference_with
-     <https://en.cppreference.com/w/cpp/concepts/common_reference_with>`__
-   * <concepts>: `Standard library header
-     <https://en.cppreference.com/w/cpp/header/concepts>`__
-   * `std::vector
-     <https://en.cppreference.com/w/cpp/container/vector>`__
+   * `std::integral <https://en.cppreference.com/w/cpp/concepts/integral>`__
 
-* First use ``std::same_as<double>``
-* |longrightarrow| Constraint check fails:
-  ``std::vector::operator[]()`` is *not* same as ``double`` (rather, it returns ``double&``)
-* Solution: ``std::commone_reference_with<double>``
+   **Source**
+
+   * :doc:`intro/toolcase-3-concept-integral`
+
+* Implicit constraint: ``%`` is only defined for integral types
+* Why not make that constraint *explicit*?
+* A case for ``<concepts>``
+* |longrightarrow| ``std::integral``
 
 .. code-block:: c++
 
-   template <typename V>
-   concept index_returns_double = requires(V v) {
-       { v[0] } -> std::common_reference_with<double>;
-   };
+   template <typename T>
+   requires std::integral<T>
+   bool is_even(T num) { /*...*/ }
 
-* Argh: checking multiple constraints is not possible with abbreviated
-  function templates 
-* |longrightarrow| fall back to ordinary template syntax, and its
-  ``requires`` clause
+* Gives the following compiler error 
+* Have to read carefully though
+
+.. code-block:: console
+
+   toolcase-3-concept-integral.cpp:13:25: error: no matching function for call to ‘is_even(double)’
+      13 |     std::cout << is_even(1.5) << std::endl;
+         |                  ~~~~~~~^~~~~
+   toolcase-3-concept-integral.cpp:6:6: note: candidate: ‘template<class T>  requires  integral<T> bool is_even(T)’
+       6 | bool is_even(T num)
+         |      ^~~~~~~
+   toolcase-3-concept-integral.cpp:6:6: note:   template argument deduction/substitution failed:
+   toolcase-3-concept-integral.cpp:6:6: note: constraints not satisfied            # <--- HERE!!!
+   In file included from toolcase-3-concept-integral.cpp:1:
+   /usr/include/c++/12/concepts: In substitution of ‘template<class T>  requires  integral<T> bool is_even(T) [with T = double]’:
+   toolcase-3-concept-integral.cpp:13:25:   required from here
+   /usr/include/c++/12/concepts:100:13:   required for the satisfaction of ‘integral<T>’ [with T = double]
+   /usr/include/c++/12/concepts:100:24: note: the expression ‘is_integral_v<_Tp> [with _Tp = double]’ evaluated to ‘false’
+     100 |     concept integral = is_integral_v<_Tp>;
+         |                        ^~~~~~~~~~~~~~~~~~
+
+Syntactic Variations
+--------------------
+
+Apparently C++ does not follow rule 13 of "The Zen of Python":
+
+   | There should be one-- and preferably only one --obvious way to do
+   | it.
+
+.. code-block:: c++
+
+   template <typename T>
+   bool is_even(T num) requires std::integral<T>          // <--- same, but different
+   {
+       return (num % 2) == 0;
+   }
+
+* Cool: instead of ``typename``
+
+.. code-block:: c++
+
+   template <std::integral T>                             // <--- cool
+   bool is_even(T num)
+   {
+       return (num % 2) == 0;
+   }
+
+.. sidebar::
+
+   **Documentation**
+
+   * `Function template
+     <https://en.cppreference.com/w/cpp/language/function_template>`__
+
+* Really cool: *Abbreviated Function Template*
+
+.. code-block:: c++
+
+   bool is_even(std::integral auto num)                   // <--- cool: abbreviated function template
+   {                                                      //      (with constraint std::integral)
+       return (num % 2) == 0;
+   }

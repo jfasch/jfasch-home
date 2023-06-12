@@ -3,5 +3,5 @@
 
 .. literalinclude:: example-4-concept-has-size.cpp
    :language: c++
-   :caption: `Download example-4-concept-has-size.cpp
+   :caption: :download:`Download example-4-concept-has-size.cpp
              <example-4-concept-has-size.cpp>`
