@@ -188,17 +188,20 @@ One Of Many Bugs, Introduced By ``.begin()`` Caching
 
 .. code-block:: console
 
-$ ./c++11-ranges-modify-view-nok 
-5
+   $ ./c++11-ranges-modify-view-nok 
+   5
+
+* ``5`` is at index ``[2]`` which is cached as ex ``4`` - the first even number in the ex-vector
+* |longrightarrow| *be careful!*
 
 Exceptions From Rules |longrightarrow| Dogmatic Don'ts (Sigh, C++)
 ------------------------------------------------------------------
 
 * Don't re-use views
 * Don't modify collections through views
-* Don't use multiple threads (a good idea anyway)
-* Many more, I'm certain
+* Don't use multiple threads (not a good idea anyway)
+* Many more, I'm certain - watch out!
 
-Thanks to Nicolai Josuttis who is bashing the standard comittee in
-`this video <https://youtu.be/qv29fo9sUjY>`__. He is much less polite
-than I am.
+Thanks to Nicolai Josuttis who is bashing the C++ standards comittee
+in `this video <https://youtu.be/qv29fo9sUjY>`__. He is much less
+polite than I am.

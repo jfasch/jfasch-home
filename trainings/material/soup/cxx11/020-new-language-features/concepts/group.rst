@@ -12,15 +12,14 @@ Concepts
 Topics
 ------
 
-.. .. toctree::
-..    :maxdepth: 1
-.. 
-..    intro
-..    good-bad
-..    links
+.. toctree::
+   :maxdepth: 1
+
+   intro
 
 * problem: https://devblogs.microsoft.com/cppblog/abbreviated-function-templates-and-constrained-auto/
 * intro: https://www.cppstories.com/2021/concepts-intro/
+* initial livehack: https://www.youtube.com/watch?v=B_KjoLid5gw
 
 Dependencies
 ------------

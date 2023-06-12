@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-Ranges: An Overview
-===================
+Ranges: Overview
+================
 
 .. contents::
    :local:
