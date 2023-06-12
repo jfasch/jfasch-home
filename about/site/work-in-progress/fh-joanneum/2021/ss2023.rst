@@ -348,14 +348,15 @@ Block 3: C++
 
        **Lab Exam**
 
-       * Implementation
+       * *Work*
 
          * Clone from Github: https://github.com/jfasch/FH-ECE21-LabExam-2023-06-12.git
          * Prepare according to README (see Github project page)
          * Build as usual
-         * Implement requirements (to come on Monday)
+         * Implement requirements:
+           :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/hysteresis-nopoly`
 
-       * Upload a ``.tar.bz2`` file of the project
+       * *Upload to Moodle*
 
 	 * Change your current working directory to *one above* the
            project's source root
@@ -365,9 +366,12 @@ Block 3: C++
 
 	      $ tar -j -c -f FH-ECE21-LabExam-2023-06-12.tar.bz2 FH-ECE21-LabExam-2023-06-12/
 
-	 * Upload ``FH-ECE21-LabExam-2023-06-12.tar.bz2`` to `moodle
+	 * Upload ``FH-ECE21-LabExam-2023-06-12.tar.bz2`` to `Moodle
            <https://moodle-22-23.fh-joanneum.at/mod/assign/view.php?id=58630>`__
 
        .. attention::
 
-	  blah
+	  Please do *not* build inside the source directory! The build
+	  tree *must not* be part of the uploaded archive
+
+	  If you do, this will severely influence the exam grading!
