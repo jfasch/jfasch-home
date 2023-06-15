@@ -35,18 +35,27 @@ Use the following tests to drive you through the exercise:
 
 .. literalinclude:: /trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-nop_when_within_range.cpp
    :language: c++
-   :caption: :download:`Download hysteresis-nopoly-suite-nop_when_within_range.cpp
+   :caption: :download:`Download
+             hysteresis-nopoly-suite-nop_when_within_range.cpp
              </trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-nop_when_within_range.cpp>`
 
 .. literalinclude:: /trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-falls_below_range.cpp
    :language: c++
-   :caption: :download:`Download hysteresis-nopoly-suite-falls_below_range.cpp
+   :caption: :download:`Download
+             hysteresis-nopoly-suite-falls_below_range.cpp
              </trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-falls_below_range.cpp>`
 
 .. literalinclude:: /trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-rises_above_range.cpp
    :language: c++
-   :caption: :download:`Download hysteresis-nopoly-suite-rises_above_range.cpp
+   :caption: :download:`Download
+             hysteresis-nopoly-suite-rises_above_range.cpp
              </trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-rises_above_range.cpp>`
+
+.. literalinclude:: /trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-rises_above_range_when_on.cpp
+   :language: c++
+   :caption: :download:`Download
+             hysteresis-nopoly-suite-rises_above_range_when_on.cpp
+             </trainings/material/soup/cxx-code/hysteresis-nopoly/tests/hysteresis-nopoly-suite-rises_above_range_when_on.cpp>`
 
 Topics Covered
 --------------

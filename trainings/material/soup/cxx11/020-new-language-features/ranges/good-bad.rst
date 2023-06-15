@@ -122,7 +122,7 @@ Constraints: How To Read?
   | to compute the distance between them in **constant time**.
 
 * |longrightarrow| *A-ha!* ``.size()`` is not there because
-  ``filter_view`` is linear time
+  ``filter_view`` is **linear time**
 
 And ``drop()``? ``std::vector`` Is Easy
 ---------------------------------------

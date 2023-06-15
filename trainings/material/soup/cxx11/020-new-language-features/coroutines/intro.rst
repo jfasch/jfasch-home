@@ -184,6 +184,13 @@ Suspension: Returning Control To Caller (``co_yield``)
 
 .. code-block:: c++
 
+    struct promise_type
+    {
+        std::suspend_always yield_value(std::string);
+    }
+
+.. code-block:: c++
+
    Coro hello()
    {
        std::cout << "Saying Hello" << std::endl;
@@ -195,11 +202,13 @@ Suspension: Returning Control To Caller (``co_yield``)
    int main()
    {
        auto hello_instance = hello();
-       hello_instance.resume();                        // <--- run until first yield
-       hello_instance.resume();                        // <--- resume after yield
+       hello_instance.resume();                           // <--- yields into promise
+       auto value = hello_instance.last_value();          // <--- get yielded value from promise
+       std::cout << "coro produced: " << value << std::endl;
+       hello_instance.resume();                           // <--- terminate: resume until co_return
        return 0;
    }
-   
+
 * Customization point: ``yield_value()``
 * ``co_yield`` parameter ideally stored in promise object
 

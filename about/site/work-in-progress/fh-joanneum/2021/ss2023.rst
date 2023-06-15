@@ -381,4 +381,37 @@ Block 3: C++
      * 3
      * 
 
-       * Mr.Felber to show how vscode works
+       * **Lab Exam recap**
+       * **Work Environment**
+
+	 Mr.Felber to show how vscode could solve problems. Discuss,
+	 e.g.
+
+	 * *"Open Folder"*. 
+
+	   * What does that do, as opposed to opening single files?
+	   * |longrightarrow| understanding your project by trying to
+	     comprehend ``CMakeLists.txt``
+	   * |longrightarrow| ``${workspaceFolder}``
+
+	 * *"Build"* button.
+
+	   * `CMake Tools
+             <https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/how-to.md>`__
+	   * `Build with CMake Tools
+             <https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/build.md>`__
+	   * Configuration in ``.vscode/settings.json``.
+	   * Maybe supply a ``.vscode/setting.json`` that contains
+             paths relative to ``${workspaceFolder}``
+
+   * * 2023-06-15
+     *
+     * 3
+     * 
+
+       * **More C++**
+
+	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+	 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
+	 * Livehacking ``std::vector``
