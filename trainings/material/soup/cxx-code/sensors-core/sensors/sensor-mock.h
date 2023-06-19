@@ -1,6 +1,8 @@
 #pragma once
 
-class MockSensor
+#include "sensor.h"
+
+class MockSensor : public Sensor
 {
 public:
     MockSensor(double initial_temperature);

@@ -9,6 +9,9 @@ ADD_LIBRARY(
   sensor-const.h
   sensor-const.cpp
 
+  sensor-mock.h
+  sensor-mock.cpp
+
   sensor-utils.h
 )
 

@@ -1,9 +1,9 @@
-#include "hysteresis.h"
+#include "hysteresis-nopoly.h"
 
 
-Hysteresis::Hysteresis(
-    MockSensor* sensor, 
-    MockSwitch* switcH, 
+Hysteresis_nopoly::Hysteresis_nopoly(
+    MockSensor_nopoly* sensor, 
+    MockSwitch_nopoly* switcH, 
     double low, 
     double high)
 : _sensor(sensor),
@@ -12,7 +12,7 @@ Hysteresis::Hysteresis(
   _high(high)
 {}
 
-void Hysteresis::check()
+void Hysteresis_nopoly::check()
 {
     double current_temperature = _sensor->get_temperature();
     if (current_temperature < _low)

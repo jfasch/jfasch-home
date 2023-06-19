@@ -1,0 +1,2 @@
+ADD_SUBDIRECTORY(sensors)
+ADD_SUBDIRECTORY(tests)

@@ -1,8 +1,8 @@
 ADD_LIBRARY(
   cxx-exercises-hysteresis-nopoly
 
-  hysteresis.h
-  hysteresis.cpp
+  hysteresis-nopoly.h
+  hysteresis-nopoly.cpp
 )
 
 TARGET_INCLUDE_DIRECTORIES(

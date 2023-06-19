@@ -1,16 +1,14 @@
 ADD_LIBRARY(
   cxx-exercises-sensors-core-nopoly
 
-  sensor-random.h
-  sensor-random.cpp
+  sensor-random-nopoly.h
+  sensor-random-nopoly.cpp
 
-  sensor-const.h
-  sensor-const.cpp
+  sensor-const-nopoly.h
+  sensor-const-nopoly.cpp
 
-  sensor-mock.h
-  sensor-mock.cpp
-
-  sensor-utils.h
+  sensor-mock-nopoly.h
+  sensor-mock-nopoly.cpp
 )
 
 TARGET_INCLUDE_DIRECTORIES(

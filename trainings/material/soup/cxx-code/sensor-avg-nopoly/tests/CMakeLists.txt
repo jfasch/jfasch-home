@@ -1,14 +1,13 @@
 ADD_EXECUTABLE(
-  cxx-exercises-sensors-core-nopoly--suite
+  cxx-exercises-sensor-avg-nopoly--suite
 
-  sensor-const-nopoly-basic.cpp
-  sensor-random-nopoly-basic.cpp
-  sensor-mock-nopoly-basic.cpp
+  sensor-avg-nopoly-suite.cpp
 )
 
 TARGET_LINK_LIBRARIES(
   cxx-exercises-sensors-core-nopoly--suite
 
+  cxx-exercises-sensor-avg-nopoly
   cxx-exercises-sensors-core-nopoly
   gtest_main 
 )

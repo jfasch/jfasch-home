@@ -1,7 +1,7 @@
 #pragma once
 
 
-class MockSwitch
+class MockSwitch_nopoly
 {
 public:
     enum State
@@ -10,7 +10,7 @@ public:
         OFF
     };
 
-    MockSwitch(State initial_state);
+    MockSwitch_nopoly(State initial_state);
     
     State state() const { return _state; }
     void on();

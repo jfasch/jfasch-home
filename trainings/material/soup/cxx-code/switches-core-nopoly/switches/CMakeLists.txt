@@ -1,8 +1,8 @@
 ADD_LIBRARY(
   cxx-exercises-switches-core-nopoly
 
-  switch-mock.h
-  switch-mock.cpp
+  switch-mock-nopoly.h
+  switch-mock-nopoly.cpp
 )
 
 TARGET_INCLUDE_DIRECTORIES(

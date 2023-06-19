@@ -3,10 +3,10 @@
 #include <random>
 
 
-class RandomSensor
+class RandomSensor_nopoly
 {
 public:
-    RandomSensor(double low, double high);
+    RandomSensor_nopoly(double low, double high);
 
     double low() const { return _low; }
     double high() const { return _high; }

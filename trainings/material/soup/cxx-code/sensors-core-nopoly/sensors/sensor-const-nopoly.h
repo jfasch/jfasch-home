@@ -1,9 +1,9 @@
 #pragma once
 
-class ConstantSensor
+class ConstantSensor_nopoly
 {
 public:
-    ConstantSensor(double value);
+    ConstantSensor_nopoly(double value);
 
     double value() const { return _value; }
     double get_temperature();
