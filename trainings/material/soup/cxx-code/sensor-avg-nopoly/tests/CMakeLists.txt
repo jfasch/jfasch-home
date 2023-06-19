@@ -1,11 +1,12 @@
 ADD_EXECUTABLE(
   cxx-exercises-sensor-avg-nopoly--suite
 
-  sensor-avg-nopoly-suite.cpp
+  sensor-avg-nopoly-basic.cpp
+  sensor-avg-nopoly-change-temperatures.cpp
 )
 
 TARGET_LINK_LIBRARIES(
-  cxx-exercises-sensors-core-nopoly--suite
+  cxx-exercises-sensor-avg-nopoly--suite
 
   cxx-exercises-sensor-avg-nopoly
   cxx-exercises-sensors-core-nopoly
