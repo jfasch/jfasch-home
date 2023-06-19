@@ -17,6 +17,7 @@ Exercises
    sensor-random-nopoly
    sensor-mock-nopoly
    hysteresis-nopoly
+   sensor-avg-nopoly
    sensor-interface
    sensor-w1
    sensor-w1-factory

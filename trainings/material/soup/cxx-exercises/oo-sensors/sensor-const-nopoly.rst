@@ -5,8 +5,8 @@
 .. include:: <mmlalias.txt>
 
 
-Exercise: ``ConstantSensor`` (Non-Polymorphic)
-==============================================
+Exercise: ``ConstantSensor_nopoly`` (Non-Polymorphic)
+=====================================================
 
 .. contents::
    :local:
@@ -21,14 +21,14 @@ Exercise: ``ConstantSensor`` (Non-Polymorphic)
 Requirement
 -----------
 
-Implement a sensor class ``ConstantSensor`` which does not access any
-real hardware, but rather always measures the same temperature - the
-one it is initialized with.
+Implement a sensor class ``ConstantSensor_nopoly`` which does not
+access any real hardware, but rather always measures the same
+temperature - the one it is initialized with.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-const-suite-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-const-nopoly-basic.cpp
    :language: c++
-   :caption: :download:`Download sensor-const-suite-basic.cpp
-             </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-const-suite-basic.cpp>`
+   :caption: :download:`Download sensor-const-nopoly-basic.cpp
+             </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-const-nopoly-basic.cpp>`
 
 Topics Covered
 --------------

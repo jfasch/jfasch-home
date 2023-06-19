@@ -431,3 +431,38 @@ Block 3: C++
          * :doc:`/trainings/material/soup/cxx-exercises/stl/vector`
          * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
          * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
+
+   * * 
+     * 2023-06-19
+     * 3
+     * 
+
+       **Exercises**
+
+       * Recap ``std::vector``
+
+         * :doc:`/trainings/material/soup/cxx-exercises/stl/vector`
+         * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
+         * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
+
+       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-avg-nopoly`
+
+	 * Pull from our `Github project <https://github.com/jfasch/FH-ECE21>`__
+	 * Implement ``AveragingSensor_nopoly`` in
+           ``students/firstname.lastname/lib/``
+	 * In the toplevel ``toolcase/`` directory, you'll find an
+           implementation of ``MockSensor_nopoly``
+	 * You will use that class in your
+           ``AveragingSensor_nopoly``. This means that the library in
+           your ``lib/`` directory **depends** on the library in the
+           toplevel ``toolcase/`` directory. 
+
+	   **Figure out how to specify that dependency to the CMake
+           build system!**
+
+	   *Hint:* the CMake ``TARGET_LINK_LIBRARIES()`` function is
+           used to specify dependencies. As an example, see your
+           ``students/firstname.lastname/bin/CMakeLists.txt`` file
+           where a dependency is specified for an executable that is
+           built. You can do this for inter-library dependencies
+           likewise.

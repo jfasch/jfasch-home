@@ -5,8 +5,8 @@
 .. include:: <mmlalias.txt>
 
 
-Exercise: ``MockSensor`` (Non-Polymorphic)
-==========================================
+Exercise: ``MockSensor_nopoly`` (Non-Polymorphic)
+=================================================
 
 .. contents::
    :local:
@@ -21,15 +21,15 @@ Exercise: ``MockSensor`` (Non-Polymorphic)
 Requirement
 -----------
 
-Implement a sensor class ``MockSensor`` which does not access any real
+Implement a sensor class ``MockSensor_nopoly`` which does not access any real
 hardware, but rather has a method ``set_temperature()``. Unit tests
 use that method to change the value of future temperature
 measurements.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-mock-suite-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-mock-nopoly-basic.cpp
    :language: c++
-   :caption: :download:`Download sensor-mock-suite-basic.cpp
-             </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-mock-suite-basic.cpp>`
+   :caption: :download:`Download sensor-mock-nopoly-basic.cpp
+             </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-mock-nopoly-basic.cpp>`
 
 Topics Covered
 --------------

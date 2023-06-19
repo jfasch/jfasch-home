@@ -7,8 +7,8 @@
 .. include:: <mmlalias.txt>
 
 
-Exercise: ``RandomSensor`` (Non-Polymorphic)
-============================================
+Exercise: ``RandomSensor_nopoly`` (Non-Polymorphic)
+===================================================
 
 .. contents::
    :local:
@@ -24,14 +24,14 @@ Exercise: ``RandomSensor`` (Non-Polymorphic)
 Requirement
 -----------
 
-Implement a sensor class ``RandomSensor`` which does not access any
+Implement a sensor class ``RandomSensor_nopoly`` which does not access any
 real hardware, but rather returns a random temperature within a given
 range.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-random-suite-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-random-nopoly-basic.cpp
    :language: c++
-   :caption: :download:`Download sensor-random-suite-basic.cpp
-	     </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-random-suite-basic.cpp>`
+   :caption: :download:`Download sensor-random-nopoly-basic.cpp
+	     </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-random-nopoly-basic.cpp>`
 
 Implementation Hint: Randomicity In C++
 .......................................

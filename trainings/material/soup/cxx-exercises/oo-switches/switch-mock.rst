@@ -24,10 +24,10 @@ Requirements
 Implement a switch class which does not access any real hardware, but
 rather will be used for testing ("mocking").
 
-.. literalinclude:: /trainings/material/soup/cxx-code/switches-core-nopoly/tests/switch-mock-suite.cpp
+.. literalinclude:: /trainings/material/soup/cxx-code/switches-core-nopoly/tests/switch-mock-nopoly-basic.cpp
    :language: c++
-   :caption: :download:`Download switch-mock-suite.cpp
-	     </trainings/material/soup/cxx-code/switches-core-nopoly/tests/switch-mock-suite.cpp>`
+   :caption: :download:`Download switch-mock-nopoly-basic.cpp
+	     </trainings/material/soup/cxx-code/switches-core-nopoly/tests/switch-mock-nopoly-basic.cpp>`
 
 Topics Covered
 --------------

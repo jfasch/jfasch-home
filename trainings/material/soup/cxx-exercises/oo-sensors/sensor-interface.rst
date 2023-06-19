@@ -51,18 +51,18 @@ The Exercise
   * :download:`sensors-avg.cpp
     </trainings/material/soup/cxx-code/sensors-core/bin/sensors-avg.cpp>`
 
-* In addition ot the program, download two tests into the ``tests/``
+* In addition to the program, download two tests into the ``tests/``
   directory, and register them with that directory's
   ``CMakeLists.txt`` file:
 
-  .. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-suite-is-a-sensor.cpp
-     :caption: :download:`sensor-const-suite-is-a-sensor.cpp
-               </trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-suite-is-a-sensor.cpp>`
+  .. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-is-a-sensor.cpp
+     :caption: :download:`sensor-const-is-a-sensor.cpp
+               </trainings/material/soup/cxx-code/sensors-core/tests/sensor-const-is-a-sensor.cpp>`
      :language: c++
 
-  .. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-suite-is-a-sensor.cpp
-     :caption: :download:`sensor-random-suite-is-a-sensor.cpp
-               </trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-suite-is-a-sensor.cpp>`
+  .. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-is-a-sensor.cpp
+     :caption: :download:`sensor-random-is-a-sensor.cpp
+               </trainings/material/soup/cxx-code/sensors-core/tests/sensor-random-is-a-sensor.cpp>`
      :language: c++
 
 * *It won't build*
