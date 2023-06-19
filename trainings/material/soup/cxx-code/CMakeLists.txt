@@ -16,7 +16,6 @@ ADD_SUBDIRECTORY(switches-core)
 
 ADD_SUBDIRECTORY(sensors-core-i2c)
 
-ADD_SUBDIRECTORY(oo-sensor-w1)
 ADD_SUBDIRECTORY(oo-sensor-w1-factory)
 
 ADD_SUBDIRECTORY(switches-sysfs)

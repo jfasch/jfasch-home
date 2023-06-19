@@ -19,7 +19,6 @@ Exercises
    hysteresis-nopoly
    sensor-avg-nopoly
    sensor-interface
-   sensor-w1
    sensor-w1-factory
 
 Dependencies

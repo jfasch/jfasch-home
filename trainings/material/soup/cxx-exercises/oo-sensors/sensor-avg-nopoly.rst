@@ -33,6 +33,12 @@ a configurable set of sensors that it knows.
    :caption: :download:`Download sensor-avg-nopoly-basic.cpp
 	     </trainings/material/soup/cxx-code/sensor-avg-nopoly/tests/sensor-avg-nopoly-basic.cpp>`
 
+.. literalinclude:: /trainings/material/soup/cxx-code/sensor-avg-nopoly/tests/sensor-avg-nopoly-change-temperatures.cpp
+   :language: c++
+   :caption: :download:`Download
+	     sensor-avg-nopoly-change-temperatures.cpp
+	     </trainings/material/soup/cxx-code/sensor-avg-nopoly/tests/sensor-avg-nopoly-change-temperatures.cpp>`
+
 Topics Covered
 --------------
 

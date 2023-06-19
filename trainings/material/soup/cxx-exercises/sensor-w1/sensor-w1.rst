@@ -18,7 +18,7 @@ Download Monolithic Sensor Implementation
 -----------------------------------------
 
 * Download :download:`onewire-temperature-monolithic.cpp
-  </trainings/material/soup/cxx-code/oo-sensor-w1/bin/onewire-temperature-monolithic.cpp>`
+  </trainings/material/soup/cxx-exercises/sensor-w1/code/bin/onewire-temperature-monolithic.cpp>`
   to your *programs* directory
 * Add it to ``CMakeLists.txt``
 
@@ -74,8 +74,9 @@ Test Monolithic Implementation
    it does is read a file, and that can be done on the development
    machine (a PC likely) just as well.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/oo-sensor-w1/tests/sensor-w1-suite.cpp
-   :caption: :download:`/trainings/material/soup/cxx-code/oo-sensor-w1/tests/sensor-w1-suite.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-w1/code/tests/sensor-w1-suite.cpp
+   :caption: :download:`sensor-w1-suite.cpp
+             </trainings/material/soup/cxx-exercises/sensor-w1/code/tests/sensor-w1-suite.cpp>`
    :language: c++
 
 Refactoring

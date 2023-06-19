@@ -28,6 +28,8 @@ Exercises
    design-patterns/group
    fh-sensor-oo-first-try/group
 
+   sensor-w1/sensor-w1
+
 Dependencies
 ------------
 	      
