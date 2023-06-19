@@ -91,8 +91,9 @@ As a test-implementation detail, the fixture class
 * The method ``void change_temperature(double temperature)`` is used
   to modify the temperature from within test code.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-fixture.h
-   :caption: :download:`/trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-fixture.h`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-fixture.h
+   :caption: :download:`sensor-w1-factory-fixture.h
+             </trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-fixture.h>`
    :language: c++
 
 .. note::
@@ -114,8 +115,9 @@ the next.
 The sunny case: given an existing Onewire address, the factory returns
 a ``W1Sensor`` object.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-suite--basic.cpp
-   :caption: :download:`/trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-suite--basic.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-suite--basic.cpp
+   :caption: :download:`sensor-w1-factory-suite--basic.cpp
+             </trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-suite--basic.cpp>`
    :language: c++
 
 ``notfound``
@@ -126,8 +128,9 @@ One possible error: *address not found*. Lacking any knowledge of
 </trainings/material/soup/cxx11/030-smart-pointers/group>`, a raw
 pointer with the value ``nullptr`` is returned.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-suite--notfound.cpp
-   :caption: :download:`/trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-suite--notfound.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-suite--notfound.cpp
+   :caption: :download:`sensor-w1-factory-suite--notfound.cpp
+             </trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-suite--notfound.cpp>`
    :language: c++
 
 ``find_is_const``
@@ -138,8 +141,9 @@ something rarely modifies itself - hence the
 ``W1SensorFactory::find_by_address()`` could just as well be
 ``const``.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-suite--find_is_const.cpp
-   :caption: :download:`/trainings/material/soup/cxx-code/oo-sensor-w1-factory/tests/sensor-w1-factory-suite--find_is_const.cpp`
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-suite--find_is_const.cpp
+   :caption: :download:`sensor-w1-factory-suite--find_is_const.cpp
+             </trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-suite--find_is_const.cpp>`
    :language: c++
 
 Testing In Isolation

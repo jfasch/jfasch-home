@@ -13,13 +13,9 @@ Exercises
 .. toctree::
    :maxdepth: 1
 
-   sensor-const-nopoly
-   sensor-random-nopoly
-   sensor-mock-nopoly
    hysteresis-nopoly
    sensor-avg-nopoly
    sensor-interface
-   sensor-w1-factory
 
 Dependencies
 ------------

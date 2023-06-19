@@ -26,10 +26,10 @@ hardware, but rather has a method ``set_temperature()``. Unit tests
 use that method to change the value of future temperature
 measurements.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-mock-nopoly-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-mock-nopoly-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-mock-nopoly-basic.cpp
-             </trainings/material/soup/cxx-code/sensors-core-nopoly/tests/sensor-mock-nopoly-basic.cpp>`
+             </trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-mock-nopoly-basic.cpp>`
 
 Topics Covered
 --------------

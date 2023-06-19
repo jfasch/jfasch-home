@@ -5,7 +5,6 @@ ADD_SUBDIRECTORY(utilities)
 ADD_SUBDIRECTORY(socialdb)
 
 # "nopoly"
-ADD_SUBDIRECTORY(sensors-core-nopoly)
 ADD_SUBDIRECTORY(switches-core-nopoly)
 ADD_SUBDIRECTORY(hysteresis-nopoly)
 ADD_SUBDIRECTORY(sensor-avg-nopoly)
@@ -15,8 +14,6 @@ ADD_SUBDIRECTORY(sensors-core)
 ADD_SUBDIRECTORY(switches-core)
 
 ADD_SUBDIRECTORY(sensors-core-i2c)
-
-ADD_SUBDIRECTORY(oo-sensor-w1-factory)
 
 ADD_SUBDIRECTORY(switches-sysfs)
 
