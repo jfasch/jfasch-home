@@ -31,6 +31,7 @@ Exercises
    sensors-core-nopoly/sensor-const-nopoly
    sensors-core-nopoly/sensor-random-nopoly
    sensors-core-nopoly/sensor-mock-nopoly
+   hysteresis-nopoly/hysteresis-nopoly
 
    sensor-w1/sensor-w1
    sensor-w1-factory/sensor-w1-factory

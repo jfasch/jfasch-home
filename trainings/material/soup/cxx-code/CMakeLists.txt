@@ -6,7 +6,6 @@ ADD_SUBDIRECTORY(socialdb)
 
 # "nopoly"
 ADD_SUBDIRECTORY(switches-core-nopoly)
-ADD_SUBDIRECTORY(sensor-avg-nopoly)
 
 # switching to poly
 ADD_SUBDIRECTORY(sensors-core)

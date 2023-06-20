@@ -39,9 +39,10 @@ Implementation Hint: Randomicity In C++
 * The following program demonstrates how to generate uniformly
   distributed random ``double`` values in a specified range.
 
-.. literalinclude:: random-demo.cpp
+.. literalinclude:: code/bin/random-demo.cpp
    :language: c++
-   :caption: :download:`Download random-demo.cpp <random-demo.cpp>`
+   :caption: :download:`Download random-demo.cpp
+             <code/bin/random-demo.cpp>`
 
 Implementation Hint: Initializer Lists
 ......................................

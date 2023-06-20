@@ -13,7 +13,6 @@ Exercises
 .. toctree::
    :maxdepth: 1
 
-   hysteresis-nopoly
    sensor-avg-nopoly
    sensor-interface
 

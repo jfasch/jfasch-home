@@ -28,16 +28,16 @@ Implement a sensor class ``AveragingSensor_nopoly`` which is not a
 real sensor. Rather, it calculates its temperature as the average from
 a configurable set of sensors that it knows.
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensor-avg-nopoly/tests/sensor-avg-nopoly-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-avg-nopoly/code/tests/sensor-avg-nopoly-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-avg-nopoly-basic.cpp
-	     </trainings/material/soup/cxx-code/sensor-avg-nopoly/tests/sensor-avg-nopoly-basic.cpp>`
+	     </trainings/material/soup/cxx-exercises/sensor-avg-nopoly/code/tests/sensor-avg-nopoly-basic.cpp>`
 
-.. literalinclude:: /trainings/material/soup/cxx-code/sensor-avg-nopoly/tests/sensor-avg-nopoly-change-temperatures.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-avg-nopoly/code/tests/sensor-avg-nopoly-change-temperatures.cpp
    :language: c++
    :caption: :download:`Download
 	     sensor-avg-nopoly-change-temperatures.cpp
-	     </trainings/material/soup/cxx-code/sensor-avg-nopoly/tests/sensor-avg-nopoly-change-temperatures.cpp>`
+	     </trainings/material/soup/cxx-exercises/sensor-avg-nopoly/code/tests/sensor-avg-nopoly-change-temperatures.cpp>`
 
 Topics Covered
 --------------
