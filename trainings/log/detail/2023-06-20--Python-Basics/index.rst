@@ -49,23 +49,49 @@ Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0125_running/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic` (livehacked: `argv.py <https://github.com/jfasch/2023-06-20/blob/main/livehacking/argv.py>`__)
 * :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
-* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
-
-Basics
-------
+* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit` (solution: `digit.py <https://github.com/jfasch/2023-06-20/blob/main/livehacking/digit.py>`__
 
 Control Flow, Sequences, *Iteration*
-....................................
+````````````````````````````````````
 
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers` (solution, in one line, using a generator expression |:wink:|: `maximum.py <https://github.com/jfasch/2023-06-20/blob/main/livehacking/maximum.py>`__)
+
+Miscellaneous
+`````````````
+
+* *Generating* Fibonacci numbers: `fibonacci.py
+  <https://github.com/jfasch/2023-06-20/blob/main/livehacking/fibonacci.py>`__
+
+Day2
+----
+
+Morning Wakeup
+..............
+
+* Index-based vs. element-based iteration
+
+  .. code-block:: python
+
+     for i in range(len(sys.argv)):
+         print(i, sys.argv[i], 'type', type(sys.argv[i]))
+
+* ``yield``, again: sequence of yielded element (three in a row), with
+  debug statement in between
+
+Basics
+......
+
+Control Flow, Sequences, *Iteration*
+````````````````````````````````````
+
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
@@ -73,7 +99,7 @@ Control Flow, Sequences, *Iteration*
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
 More Datatypes
-..............
+```````````````
 
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
@@ -92,7 +118,7 @@ More Datatypes
 * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
 
 Exercise Series: CSV Files
---------------------------
+..........................
 
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
@@ -102,7 +128,7 @@ Exercise Series: CSV Files
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
 
 Object Oriented Programming
----------------------------
+...........................
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
@@ -111,7 +137,7 @@ Object Oriented Programming
 * :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
 
 Advanced Language Features
---------------------------
+..........................
 
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
