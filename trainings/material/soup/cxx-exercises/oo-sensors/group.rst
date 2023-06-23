@@ -7,15 +7,6 @@ C++ Exercises: Object Oriented Programming - Sensors
 .. contents::
    :local:
 
-Exercises
----------
-
-.. toctree::
-   :maxdepth: 1
-
-   sensor-avg-nopoly
-   sensor-interface
-
 Dependencies
 ------------
 	      
