@@ -23,7 +23,6 @@ Exercises
 
    oo-shapes/shapes
    oo-sensors/group
-   oo-switches/group
    stl/group
    design-patterns/group
    fh-sensor-oo-first-try/group
@@ -31,10 +30,14 @@ Exercises
    sensors-core-nopoly/sensor-const-nopoly
    sensors-core-nopoly/sensor-random-nopoly
    sensors-core-nopoly/sensor-mock-nopoly
+   switch-mock-nopoly/switch-mock-nopoly
    hysteresis-nopoly/hysteresis-nopoly
+   display-led-stripe-nopoly/display-led-stripe-nopoly
 
    sensor-w1/sensor-w1
    sensor-w1-factory/sensor-w1-factory
+
+   oo-switches
 
 Dependencies
 ------------

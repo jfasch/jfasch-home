@@ -1,5 +1,7 @@
 .. ot-exercise:: cxx.exercises.oo_sensors.hysteresis_nopoly
-   :dependencies: cxx03.data_encapsulation.classes_objects,
+   :dependencies: cxx.exercises.oo_sensors.sensor_mock_nopoly,
+		  cxx.exercises.oo_switches.switch_mock_nopoly,
+		  cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
 
 .. include:: <mmlalias.txt>

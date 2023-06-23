@@ -4,9 +4,6 @@ ADD_SUBDIRECTORY(utilities)
 
 ADD_SUBDIRECTORY(socialdb)
 
-# "nopoly"
-ADD_SUBDIRECTORY(switches-core-nopoly)
-
 # switching to poly
 ADD_SUBDIRECTORY(sensors-core)
 ADD_SUBDIRECTORY(switches-core)

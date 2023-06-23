@@ -256,7 +256,7 @@ From :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/group`:
   (polymorphic use of different sensors)
 * :doc:`Averaging sensor ("Composite" pattern)
   </trainings/material/soup/cxx-design-patterns/composite/composite>`
-* :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1`
+* :doc:`/trainings/material/soup/cxx-exercises/sensor-w1/sensor-w1`
   (OneWire sensor - in the Linux OneWire style)
-* :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-w1-factory`
+* :doc:`/trainings/material/soup/cxx-exercises/sensor-w1-factory/sensor-w1-factory`
   (*factory* pattern - a class that creates OneWire sensors *by address*)
