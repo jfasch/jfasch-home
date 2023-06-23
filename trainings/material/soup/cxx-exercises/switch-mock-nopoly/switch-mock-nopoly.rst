@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx.exercises.oo_switches.switch_mock_nopoly
+.. ot-exercise:: cxx.exercises.switch_mock_nopoly
    :dependencies: cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
 
@@ -33,4 +33,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx.exercises.oo_switches.switch_mock_nopoly
+   :entries: cxx.exercises.switch_mock_nopoly

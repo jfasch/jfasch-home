@@ -5,6 +5,8 @@ ADD_EXECUTABLE(
   display_led_stripe_nopoly_suite__below_range.cpp
   display_led_stripe_nopoly_suite__above_range.cpp
   display_led_stripe_nopoly_suite__movement.cpp
+
+  display_led_stripe_nopoly_suite__variations.cpp
 )
 
 TARGET_LINK_LIBRARIES(

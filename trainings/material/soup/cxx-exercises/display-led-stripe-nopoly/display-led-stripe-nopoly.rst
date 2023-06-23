@@ -1,6 +1,6 @@
 .. ot-exercise:: cxx.exercises.display_led_stripe_nopoly
    :dependencies: cxx.exercises.sensor_mock_nopoly,
-		  cxx.exercises.oo_switches.switch_mock_nopoly,
+		  cxx.exercises.switch_mock_nopoly,
 		  cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
 
@@ -64,6 +64,12 @@ left unclear. Use these to complete the exercise, one by one.
    :caption: :download:`Download
              display_led_stripe_nopoly_suite__movement.cpp
              <code/tests/display_led_stripe_nopoly_suite__movement.cpp>`
+
+.. literalinclude:: code/tests/display_led_stripe_nopoly_suite__variations.cpp
+   :language: c++
+   :caption: :download:`Download
+             display_led_stripe_nopoly_suite__variations.cpp
+             <code/tests/display_led_stripe_nopoly_suite__variations.cpp>`
 
 Topics Covered
 --------------

@@ -39,8 +39,6 @@ Exercises
    sensor-w1/sensor-w1
    sensor-w1-factory/sensor-w1-factory
 
-   oo-switches
-
 Dependencies
 ------------
 	      

@@ -1,6 +1,6 @@
 .. ot-exercise:: cxx.exercises.hysteresis_nopoly
    :dependencies: cxx.exercises.sensor_mock_nopoly,
-		  cxx.exercises.oo_switches.switch_mock_nopoly,
+		  cxx.exercises.switch_mock_nopoly,
 		  cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
 
