@@ -1,5 +1,5 @@
-.. ot-exercise:: cxx.exercises.oo_sensors.sensor_w1
-   :dependencies: cxx.exercises.oo_sensors.sensor_interface,
+.. ot-exercise:: cxx.exercises.sensor_w1
+   :dependencies: cxx.exercises.sensor_interface,
 		  linux.sysprog.fileio.exercise_w1_sensor
 
 Exercise: OneWire Sensor Class

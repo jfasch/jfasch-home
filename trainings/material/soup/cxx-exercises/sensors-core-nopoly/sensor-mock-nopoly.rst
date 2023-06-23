@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx.exercises.oo_sensors.sensor_mock_nopoly
+.. ot-exercise:: cxx.exercises.sensor_mock_nopoly
    :dependencies: cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
 
@@ -38,4 +38,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx.exercises.oo_sensors.sensor_mock_nopoly
+   :entries: cxx.exercises.sensor_mock_nopoly

@@ -23,7 +23,7 @@ Topics
 Exercises
 ---------
 
-* :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-interface`
+* :doc:`/trainings/material/soup/cxx-exercises/sensor-interface/sensor-interface`
 
 Dependencies
 ------------

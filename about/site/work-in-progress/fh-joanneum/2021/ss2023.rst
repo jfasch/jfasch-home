@@ -447,7 +447,7 @@ Block 3: C++
          * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
          * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
 
-       * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-avg-nopoly`
+       * :doc:`/trainings/material/soup/cxx-exercises/sensor-avg-nopoly/sensor-avg-nopoly`
 
 	 * Pull from our `Github project <https://github.com/jfasch/FH-ECE21>`__
 	 * Implement ``AveragingSensor_nopoly`` in

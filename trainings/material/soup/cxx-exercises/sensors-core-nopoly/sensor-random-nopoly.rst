@@ -1,5 +1,5 @@
-.. ot-exercise:: cxx.exercises.oo_sensors.sensor_random_nopoly
-   :dependencies: cxx.exercises.oo_sensors.sensor_const_nopoly,
+.. ot-exercise:: cxx.exercises.sensor_random_nopoly
+   :dependencies: cxx.exercises.sensor_const_nopoly,
 		  cxx03.data_encapsulation.initializer_list,
 		  cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
@@ -55,4 +55,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx.exercises.oo_sensors.sensor_random_nopoly
+   :entries: cxx.exercises.sensor_random_nopoly

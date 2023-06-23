@@ -1,4 +1,4 @@
-.. ot-exercise:: cxx.exercises.oo_sensors.sensor_interface
+.. ot-exercise:: cxx.exercises.sensor_interface
    :dependencies: cxx03.inheritance_oo.interface,
 		  linux.toolchain.cmake_local
 
@@ -110,4 +110,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx.exercises.oo_sensors.sensor_interface
+   :entries: cxx.exercises.sensor_interface

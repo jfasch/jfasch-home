@@ -250,9 +250,7 @@ From :doc:`/trainings/material/soup/cxx-exercises/stl/group`:
 Exercises: OO And Interfaces
 ............................
 
-From :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/group`:
-
-* :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-interface`
+* :doc:`/trainings/material/soup/cxx-exercises/sensor-interface/sensor-interface`
   (polymorphic use of different sensors)
 * :doc:`Averaging sensor ("Composite" pattern)
   </trainings/material/soup/cxx-design-patterns/composite/composite>`

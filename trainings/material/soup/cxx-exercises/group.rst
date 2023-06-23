@@ -22,7 +22,6 @@ Exercises
    :maxdepth: 1
 
    oo-shapes/shapes
-   oo-sensors/group
    stl/group
    design-patterns/group
    fh-sensor-oo-first-try/group

@@ -1,5 +1,5 @@
-.. ot-exercise:: cxx.exercises.oo_sensors.sensor_avg_nopoly
-   :dependencies: cxx.exercises.oo_sensors.sensor_mock_nopoly,
+.. ot-exercise:: cxx.exercises.sensor_avg_nopoly
+   :dependencies: cxx.exercises.sensor_mock_nopoly,
 		  cxx03.data_encapsulation.initializer_list,
 		  cxx03.data_encapsulation.classes_objects,
 		  linux.toolchain.cmake_local
@@ -43,4 +43,4 @@ Topics Covered
 --------------
 
 .. ot-graph::
-   :entries: cxx.exercises.oo_sensors.sensor_avg_nopoly
+   :entries: cxx.exercises.sensor_avg_nopoly

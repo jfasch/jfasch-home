@@ -15,7 +15,7 @@ C++ Code
    * * ``sensors-duck``
      * (Project setup)
    * * ``sensors-core``
-     * :doc:`/trainings/material/soup/cxx-exercises/oo-sensors/sensor-interface`
+     * :doc:`/trainings/material/soup/cxx-exercises/sensor-interface/sensor-interface`
    * * ``sensors-core-i2c``
      * (Implicitly by others)
    * * ``design-patterns-abstract-factory``

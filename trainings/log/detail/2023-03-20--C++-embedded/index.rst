@@ -164,8 +164,7 @@ Exercise
 Based upon an object oriented encapsulation for OS primitives (timers
 and GPIOs, mainly),
 
-* Sensors (roughly taken from :doc:`here
-  </trainings/material/soup/cxx-exercises/oo-sensors/group>`)
+* Sensors
 
   * A sensor *abstract base class* - an *interface*
   * A number of concrete sensor implementations
