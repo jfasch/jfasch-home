@@ -7,8 +7,10 @@ Python Links
 Books
 -----
 
-* `Book: Automate the Boring Stuff with Python (Al Sweigart)
+* `Automate the Boring Stuff with Python (Al Sweigart)
   <https://automatetheboringstuff.com/>`__
+* `Fluent Python (Luciano Ramalho)
+  <https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/>`__
 
 Visual Studio Code
 ------------------

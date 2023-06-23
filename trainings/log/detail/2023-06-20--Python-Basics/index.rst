@@ -124,6 +124,11 @@ File I/O, And Encoding
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
 
+  * Solution: `distill.py <https://github.com/jfasch/2023-06-20/blob/main/livehacking/distill.py>`__
+  * Alternative solution, using a generator expression:
+    `distill-yield.py
+    <https://github.com/jfasch/2023-06-20/blob/main/livehacking/distill-yield.py>`__
+
 Exercise Series: CSV Files
 ..........................
 
@@ -133,21 +138,153 @@ Exercise Series: CSV Files
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+* Solution: `csv-exercises/
+  <https://github.com/jfasch/2023-06-20/tree/main/csv-exercises>`__
 
-Untold
-------
+Links
+-----
 
-Object Oriented Programming
-...........................
+Books
+.....
 
-* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
-* :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
+* `Automate the Boring Stuff with Python (Al Sweigart)
+  <https://automatetheboringstuff.com/>`__
+* `Fluent Python (Luciano Ramalho)
+  <https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/>`__
 
-Advanced Language Features
-..........................
+Python Videos
+.............
 
-* :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
-* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+* `Python Tutorial for Beginners 4: Lists, Tuples, and Sets
+  <https://www.youtube.com/watch?v=W8KRzm-HUcc>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/W8KRzm-HUcc" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 5: Dictionaries - Working with
+  Key-Value Pairs <https://www.youtube.com/watch?v=daefaLgNkw0>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/daefaLgNkw0" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 7: Loops and Iterations - For/While
+  Loops <https://www.youtube.com/watch?v=6iF8Xb7Z3wQ>`__, by `Corey
+  Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/6iF8Xb7Z3wQ" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Tutorial for Beginners 8: Functions
+  <https://www.youtube.com/watch?v=9Os0o3wzS_I>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/9Os0o3wzS_I" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `10 Python Tips and Tricks For Writing Better Code
+  <https://www.youtube.com/watch?v=C-gEQdGVXbk>`__, by `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/C-gEQdGVXbk" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Python Quick Tip: F-Strings - How to Use Them and Advanced String
+  Formatting <https://www.youtube.com/watch?v=nghuHvKLhJA>`__, by
+  `Corey Schafer
+  <https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/nghuHvKLhJA" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+NumPy, Pandas, Matplotlib
+.........................
+
+* `Complete Python NumPy Tutorial (Creating Arrays, Indexing, Math,
+  Statistics, Reshaping)
+  <https://www.youtube.com/watch?v=GB9ByFAIAH4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/GB9ByFAIAH4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Solving real world data science tasks with Python Pandas!
+  <https://www.youtube.com/watch?v=eMOA1pPVUc4>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+	   
+     <iframe width="560" height="315" 
+             src="https://www.youtube.com/embed/eMOA1pPVUc4" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
+
+* `Intro to Data Visualization in Python with Matplotlib! (line graph,
+  bar chart, title, labels, size)
+  <https://www.youtube.com/watch?v=DAQNHzOcO5A>`__, by `Keith Galli
+  <https://www.youtube.com/channel/UCq6XkhO5SZ66N04IcPbqNcw>`__
+
+  .. raw:: html
+
+     <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/DAQNHzOcO5A" 
+	     title="YouTube video player" 
+	     frameborder="0" 
+	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen>
+     </iframe>
