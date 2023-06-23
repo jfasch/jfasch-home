@@ -21,10 +21,13 @@ Exercise: ``MockSensor_nopoly`` (Non-Polymorphic)
 Requirement
 -----------
 
-Implement a sensor class ``MockSensor_nopoly`` which does not access any real
-hardware, but rather has a method ``set_temperature()``. Unit tests
-use that method to change the value of future temperature
-measurements.
+Implement a sensor class ``MockSensor_nopoly`` which does not access
+any real hardware to measure temperature. Rather, it has a method
+``set_temperature()`` which can be used (by unit tests, ideally) to
+control the value that is returned by subsequent calls to
+``get_temperature()``.
+
+Use the following test to guide you through the implementation:
 
 .. literalinclude:: /trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-mock-nopoly-basic.cpp
    :language: c++

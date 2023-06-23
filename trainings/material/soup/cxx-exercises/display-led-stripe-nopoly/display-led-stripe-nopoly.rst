@@ -30,7 +30,7 @@ follows.
 * It uses a sensor (a ``MockSensor_nopoly`` for now) to measure the
   temperature
 * It controls an "LED bar" consisting of multiple switches
-  (``MockSwitch_nopoly``), on per LED.
+  (``MockSwitch_nopoly``), one per LED.
 * It is configured to show temperatures within a certain range
 
   * Temperatures below that range turn all LEDs off
