@@ -17,8 +17,8 @@ Object Code Archives/Static Libraries
 .. contents::
    :local:
 
-Code Bases Get Larger (1)
--------------------------
+Code Bases Become Larger (1)
+----------------------------
 
 New feature in our code base |:clown:| ...
 
@@ -62,8 +62,8 @@ New feature in our code base |:clown:| ...
 	  :caption: :download:`../jfasch-home-linux-toolchain/static-libraries/hello-flexible.c`
           :language: c
 
-Code Bases Get Larger
----------------------
+Code Bases Become Larger (2)
+----------------------------
 
 Build instructions need to be updated
 

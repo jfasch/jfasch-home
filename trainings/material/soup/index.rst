@@ -22,6 +22,7 @@ work in progress*).
    cxx-design-patterns/group
    cxx-code/index
    cxx-exercises/group
+   cmake/group
    linux/group
    clean-code/group
    unittest/group

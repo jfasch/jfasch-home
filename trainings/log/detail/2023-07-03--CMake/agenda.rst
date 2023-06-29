@@ -38,7 +38,7 @@ project structure where there are separate directories for
 External Dependencies
 ---------------------
 
-CMake has so-called "Find Modules" to incorporate code taht is not
+CMake has so-called "Find Modules" to incorporate code that is not
 built by the project, but only used by it. 
 
 * Quickly introduce what that is
@@ -52,7 +52,7 @@ Code Generators
 Traditionally, lexers and parser generators (just as a typical
 example) generate code that has to be built by the project.
 
-* Show what problems arise when such generators are use naively
+* Show what problems arise when such generators are used naively
 * Show how generators are integrated in a CMake project
 
 Automatic Testing
