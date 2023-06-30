@@ -4,6 +4,12 @@
 SS2023
 ======
 
+.. toctree::
+   :hidden:
+
+   exam-2023-06-30
+   exam-2023-06-30-solved
+
 .. contents::
    :local:
 
@@ -151,7 +157,7 @@ Block 2: C on Linux: Local and *Cross* Development
      * 3
      * **Lab Exam**
 
-       * :doc:`/trainings/material/soup/linux/basics/intro/exercises/fh-questions-nocheat`
+       * :doc:`/trainings/material/soup/linux/basics/intro/exercises/fh-questions`
 
        **Toolchain Intro (Local)** (from
        :doc:`/trainings/material/soup/linux/toolchain/group`)
@@ -504,3 +510,7 @@ Block 3: C++
 
 	  If you do, this will severely influence the exam grading!
 
+Finish
+------
+
+* :doc:`exam-2023-06-30`

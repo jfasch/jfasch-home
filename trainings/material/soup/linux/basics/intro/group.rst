@@ -25,12 +25,7 @@ Introduction: Concepts and Terminology
 .. toctree::
    :maxdepth: 1
 
-   exercises/fh-questions-nocheat
-
-.. .. toctree::
-..    :hidden:
-.. 
-..    exercises/fh-questions
+   exercises/fh-questions
 
 **Dependencies**
 

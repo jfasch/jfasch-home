@@ -1,0 +1,221 @@
+SS2023: Exam 2023-06-30
+=======================
+
+.. list-table::
+   :align: left
+
+   * * **Name**
+     * 
+
+UNIX/Linux Concepts
+-------------------
+
+(From
+:doc:`/trainings/material/soup/linux/basics/intro/exercises/fh-questions`)
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Statement
+     * True
+     * False
+   * * In kernel space there exists the concept of a process
+     *
+     * 
+   * * In user space there exists the concept of a process
+     * 
+     *
+   * * Interrupts are generally serviced in user space
+     *
+     * 
+   * * Interrupts are generally serviced in kernel space
+     * 
+     *
+   * * Scheduling of processes is done by the kernel
+     * 
+     *
+   * * Address spaces are implemented in user space
+     *
+     * 
+   * * A process can own all memory in the system
+     *
+     * 
+   * * The kernel is the owner of all memory in the system
+     * 
+     *
+   * * All processes share a single address space
+     *
+     * 
+   * * Each process in the system has its own address space
+     * 
+     *
+   * * An address space is three-dimensional
+     *
+     * 
+   * * A process is identified by its process ID
+     * 
+     *
+   * * A process is identified by its pthread context number
+     *
+     * 
+   * * Processes are arranged in a process hierarchy, starting at
+       process 1
+     * 
+     *
+   * * A process may have multiple parents
+     *
+     * 
+   * * Every process has a parent process
+     *
+     * 
+   * * Every process except process 1 has a parent process
+     * 
+     *
+   * * A timeslice is the amount of time that a process can run
+       until it is suspended in favor of other processes
+     * 
+     *
+   * * Fair scheduling ensures that network resources are evenly
+       shared
+     *
+     * 
+   * * On a single-CPU machine, no process may enter an infinite
+       loop - or else, the entire machine will come to a halt
+     *
+     * 
+   * * Fair scheduling ensures that every process gets its fair
+       share of CPU resources
+     * 
+     *
+   * * The scheduler gives processes the illusion that each of them
+       owns the CPU
+     * 
+     *
+   * * A context switch happens when one process enters a blocking
+       system call
+     * 
+     *
+
+Toolchain
+---------
+
+(From :doc:`/trainings/material/soup/linux/toolchain/exercises/fh-2022-questions`)
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Statement
+     * True
+     * False
+   * * The compiler combines multiple object files together into one
+       executable
+     * 
+     * 
+   * * The compiler turns a single source file into an object
+       (``.o``) file
+     * 
+     *
+   * * Object files are not executable
+     * 
+     *
+   * * Object files are executable
+     *
+     * 
+   * * The linker combines multiple object files together into one
+       executable
+     * 
+     *
+   * * The linker combines multiple object files together into a
+       static library
+     * 
+     * 
+
+C++
+---
+
+(From
+:doc:`/trainings/material/soup/cxx03/exercises-misc/fh-questions`)
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Statement
+     * True
+     * False
+   * * When an action is said to lead to *undefined behavior*, this
+       means that the program *will* crash
+     *
+     * 
+   * * When an action is said to lead to *undefined behavior*, this
+       means that the program *could* crash
+     * 
+     *
+   * * When an action is said to lead to *undefined behavior*, this
+       means that the program *will* continue but *will* wreak havoc on
+       its data
+     *
+     * 
+   * * When an action is said to lead to *undefined behavior*, this
+       means that the program *could* continue but *could* wreak havoc
+       on its data
+     * 
+     *
+   * * A variable declared ``const`` can only be initialized and
+       never modified.
+     * 
+     *
+   * * A variable of type ``int`` which is declared ``const`` is
+       initialized to 0 if no initializer is given.
+     *
+     * 
+   * * Class members cannot be declared ``const``
+     *
+     * 
+   * * ``const`` class member variables can be initialized in the
+       constructor body
+     *
+     * 
+   * * A *method* declared ``const`` promises to the compiler (and
+       the caller) that a call to it does not modify the object it
+       is called on
+     * 
+     *
+   * * Declaring a class constructor ``const`` leads to undefined
+       behavior
+     *
+     * 
+   * * A reference variable can be left uninitialized
+     *
+     * 
+   * * A caller that passes a variable to a function/method as a
+       reference must take into account that the variable could be
+       modified
+     * 
+     *
+   * * A caller that passes a variable to a function/method as a
+       ``const`` reference must take into account that the variable
+       could be modified
+     *
+     * 
+   * * A default constructor initializes an object when no
+       initialization parameters are given
+     * 
+     *
+   * * ``std::vector<>`` guarantees that it keeps elements in
+       contiguous memory
+     * 
+     *
+   * * In a ``std::vector<>`` instance that contains three elements,
+       accessing index 3 (``vec[3]``) leads to undefined behavior
+     * 
+     *
+   * * In a ``std::vector<>`` instance that contains three elements,
+       accessing index 0 (``vec[0]``) leads to undefined behavior
+     *
+     * 
