@@ -4,6 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2023-XX-XX-C++-Advanced/index
    2023-07-03--CMake/index
    2023-06-20--Python-Basics/index
    2023-05-15--Python-Basics/index

@@ -25,9 +25,10 @@ This course is under preparation.
 Python Basics (2023-06-20 - 2023-06-22)
 ---------------------------------------
 
-This course is under preparation.
+Teaching Python to a number of smart people, at a long-time customer
+of mine.
 
-Location: Wels, Austria
+Location: Thalheim, Austria
 
 (:doc:`Mehr ... <detail/2023-06-20--Python-Basics/index>`)
 
@@ -49,7 +50,7 @@ Python Basics (2023-05-15 - 2023-05-17)
 Teaching Python to a number of smart people, at a long-time customer
 of mine.
 
-Location: Wels, Austria
+Location: Thalheim, Austria
 
 (:doc:`Mehr ... <detail/2023-05-15--Python-Basics/index>`)
 
