@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-C++: A New Language Starting In 2011
-====================================
+C++: Advanced Topics
+====================
 
 .. contents::
    :local:

@@ -7,11 +7,6 @@ Agenda: C++: Advanced Topics
 .. contents::
    :local:
 
-.. sidebar::
-
-   This agenda is supposed to feel like (and is a copy of)
-   :doc:`../2022-07-26/index`.
-
 Introduction
 ------------
 
@@ -80,42 +75,86 @@ Delegating Constructor
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic`
 
-Smart Pointers
---------------
+``constexpr``, ``constinit``, ``consteval``
+-------------------------------------------
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* ``constinit``
+* ``consteval``
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
-* :doc:`/trainings/material/soup/cxx11/exercises/bag-unique` (
-  `Solution on Github: bag-unique.h
-  <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-unique.h>`__)
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
-* :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+Smart Pointers, And Move Semantics
+----------------------------------
 
-Moving, “RValue References” (And Perfect Forwarding)
-----------------------------------------------------
+* From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
-* :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+  * :doc:`/trainings/material/soup/cxx11/exercises/bag-unique`
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
+  * :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
+  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
 
-Functions (``std::function<>``, Lambdas)
+* Moving, “RValue References”
+
+  Put emphasis on *Rule Of Five*!
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+  * :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
+    (a feature which shares the syntax with moving in that it uses
+    ``&&``, but is something completely different)
+
+Types, Functions, Type Erasure, Toolcase
 ----------------------------------------
 
-From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
+A broader view of interfaces, and what can be done about it.
 
-* :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
-* :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+Functions (``std::function<>``, Lambdas)
+........................................
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+* From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+  * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
+  * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+
+Type Erasure
+............
+
+* *Type erasure*: what is that, and why?
+* Solutions
+
+C++ Toolcase
+............
+
+* ``std::any``
+* ``std::optional``
+* ``std::variant``
+
+Dynamic Versus Static Typing: Templates
+.......................................
+
+* From :doc:`/trainings/material/soup/cxx03/050-templates/group`
+
+  * :doc:`/trainings/material/soup/cxx03/050-templates/010-function-templates/topic`
+  * :doc:`/trainings/material/soup/cxx03/050-templates/020-class-templates/topic`
+
+* Type traits
+
+Concepts
+........
+
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts`
 
 Multithreading
 --------------
@@ -131,14 +170,8 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
 
-Topics New Since Course In :doc:`2022-07-26 <../2022-07-26/index>`
-------------------------------------------------------------------
-
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
-
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts`
+Outlook In ``>=20``
+-------------------
 
 * From :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/group`
 
@@ -146,3 +179,29 @@ Topics New Since Course In :doc:`2022-07-26 <../2022-07-26/index>`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/good-bad`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/intro`
+
+Miscellaneous
+-------------
+
+Attributes And The Like
+.......................
+
+* [[nodiscard]]: Was bedeutet das?
+* [[fallthrough]]: Was bedeutet das?
+* noexcept
+
+``<algorithm>`` Overview
+........................
+
+* ``std::transform``
+* ``std::find``
+* ``std::find_if``
+* ``std::lower_bound``
+* ...
+
+Miscellaneous Miscellaneous
+...........................
+
+* const overloading
+* user-defined literals
+* ``std::string_view``

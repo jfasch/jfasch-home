@@ -1,5 +1,5 @@
-Templates
-=========
+C++ Template Basics
+===================
 
 .. contents::
    :local:
@@ -11,7 +11,8 @@ Topics
    :maxdepth: 1
    :glob:
 
-   */topic
+   010-function-templates/topic
+   020-class-templates/topic
 
 Group Description
 -----------------
