@@ -243,6 +243,269 @@ Structure - Subdirectories, Dependencies, and Include Paths
     only) a target's source code into ``src/`` and ``inc/`` for
     example.
 
+Switch To C++
+-------------
+
+* 9-c++
+* C++ standard
+
+  .. code-block:: console
+
+     set(CMAKE_CXX_STANDARD 23)
+
+* jjj class diagram (doxygen?)
+
+Debugging (``MESSAGE()``, etc)
+------------------------------
+
+``MESSAGE()``: Usage, Pitfalls
+..............................
+
+.. sidebar::
+
+   **Documentation**
+
+   * `message
+     <https://cmake.org/cmake/help/latest/command/message.html>`__
+
+* Basic usage
+
+  .. code-block:: console
+  
+     MESSAGE("Howdy")
+  
+  is the same as
+  
+  .. code-block:: console
+  
+     MESSAGE(NOTICE "Howdy")
+
+  is the same as
+
+  .. code-block:: console
+  
+     MESSAGE(Howdy)          # <--- root of all evil (one of roots)
+
+|longrightarrow| all sorts of ... crap:
+
+* Tags? Enums? *No!*
+
+  .. code-block:: console
+
+     MESSAGE(WARNING "Howdy")
+
+  Prints, as expected ...
+
+  .. code-block:: console
+
+     CMake Warning at CMakeLists.txt:5 (MESSAGE):
+       Howdy
+		  
+  .. code-block:: console
+
+     MESSAGE(BULLSHIT "Howdy")
+
+  Prints ...
+
+  .. code-block:: console
+
+     cd ~/tmp/cmake-demo&&cmake ~/work/jfasch-home/trainings/material/soup/cmake/code/
+     BULLSHITHowdy
+
+``MESSAGE()``: Popular "Modes"
+..............................
+
+More: `Documentation (message)
+<https://cmake.org/cmake/help/latest/command/message.html>`__
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Mode
+     * Description
+   * * ``FATAL_ERROR``
+     * CMake Error, stop processing and generation.
+   * * ``SEND_ERROR``
+     * CMake Error, continue processing, but skip generation.
+   * * ``WARNING``
+     * CMake Warning, continue processing.
+   * * (none) or ``NOTICE``
+     * Important message printed to stderr to attract user's attention.
+   * * ``STATUS``
+     * The main interesting messages that project users might be
+       interested in. Ideally these should be concise, no more than a
+       single line, but still informative.
+   * * ``VERBOSE``
+     * Detailed informational messages intended for project
+       users. These messages should provide additional details that
+       won't be of interest in most cases, but which may be useful to
+       those building the project when they want deeper insight into
+       what's happening.
+   * * ``DEBUG``
+     * Detailed informational messages intended for developers working
+       on the project itself as opposed to users who just want to
+       build it. These messages will not typically be of interest to
+       other users building the project and will often be closely
+       related to internal implementation details.
+   * * ``TRACE``
+     * Fine-grained messages with very low-level implementation
+       details. Messages using this log level would normally only be
+       temporary and would expect to be removed before releasing the
+       project, packaging up the files, etc.
+
+.. code-block:: console
+
+   $ cmake --help
+   ...
+   --log-level=<ERROR|WARNING|NOTICE|STATUS|VERBOSE|DEBUG|TRACE>
+   ...
+
+.. attention::
+
+   All of this lacks a clear definition. Apparently ...
+
+   * Ordering appear to be ``ERROR > WARNING > NOTICE > STATUS >
+     VERBOSE > DEBUG > TRACE``
+   * ``STATUS`` is the default "level"
+
+Configured Header File (``CONFIGURE_FILE()``)
+---------------------------------------------
+
+* 10-configure-file
+
+Problem
+.......
+
+* Want to output project version in executables
+* |longrightarrow| Set version using ``PROJECT()``
+
+  .. code-block:: console
+  
+     PROJECT(Demo VERSION 42.666)
+     MESSAGE(DEBUG "Major: ${Demo_VERSION_MAJOR}")
+     MESSAGE(DEBUG "Major: ${Demo_VERSION_MINOR}")
+
+* Compiled code does not have access to CMake variables
+
+Solution: Configure Files
+.........................
+
+* Convert CMake variables to *macros* using ``CONFIGURE_FILE()``
+
+  .. code-block:: console
+  
+     CONFIGURE_FILE(DemoConfig.h.in DemoConfig.h)
+
+* ``DemoConfig.h.in`` contents
+
+  .. code-block:: c++
+
+     // This file is generated, do not modify
+     
+     #define DEMO_MAJOR @Demo_VERSION_MAJOR@
+     #define DEMO_MINOR @Demo_VERSION_MINOR@
+
+* Converted to ``${CMAKE_CURRENT_BINARY_DIR}/DemoConfig.h``
+
+Use In Executables
+..................
+
+* Pick up CMake variables from configure file
+
+.. code-block:: c++
+
+   #include <DemoConfig.h>
+   // ...
+   std::cout << "Version " << DEMO_MAJOR << '.' << DEMO_MINOR << std::endl;
+
+* Does not compile |longrightarrow| include path missing
+
+.. code-block:: console
+
+   bin/hello-first.cpp:4:10: fatal error: DemoConfig.h: No such file or directory
+       4 | #include <DemoConfig.h>
+         |          ^~~~~~~~~~~~~~
+   
+* Solution: set include path *for all* (to add a dependency would be
+  overkill but could be done)
+
+.. code-block:: console
+
+   INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
+
+Optional Code
+-------------
+
+Problem
+.......
+
+* ``hello-second`` licensing requirements
+* Must pay extra ``$$`` to be able to greet "Joerg" (and a number of
+  other blacklisted names)
+* |longrightarrow| separate builds
+
+  * One that ignores a blacklist (pay extra ``$$``)
+  * One in the public domain, with restrictions
+
+Solution: Add An Option
+.......................
+
+.. sidebar:: 
+
+   **Documentation**
+
+   * `option
+     <https://cmake.org/cmake/help/latest/command/option.html>`__
+   * `if (and conditionals)
+     <https://cmake.org/cmake/help/latest/command/if.html>`__
+
+* Goal: add option ``USE_BLACKLIST`` to be used like
+
+  .. code-block:: console
+
+     $ cmake -DUSE_BLACKLIST=ON ...
+     $ cmake -DUSE_BLACKLIST=OFF ...
+
+* Implementation
+
+  * Conditionally build a ``blacklist`` library
+  * Provide macro ``DEMO_USE_BLACKLIST`` so ``NameGreeter`` can decide
+    whether to use it
+
+Define Option And Macro
+.......................
+
+* Define option
+
+  .. code-block:: console
+     :caption: Toplevel ``CMakeLists.txt``
+  
+     OPTION(USE_BLACKLIST "Refuse to greet blacklisted names" ON)
+
+* Normalize option values for better macros usage
+
+.. code-block:: console
+   :caption: Toplevel ``CMakeLists.txt``, below ``OPTION()``
+
+   # normalize option strings into numbers (for better macros usage)
+   IF (${USE_BLACKLIST} STREQUAL ON)
+     SET(USE_BLACKLIST 1)
+   ELSEIF (${USE_BLACKLIST} STREQUAL OFF)
+     SET(USE_BLACKLIST 0)
+   ELSE()
+     MESSAGE(DEBUG "USE_BLACKLIST must be ON or OFF (not ${USE_BLACKLIST}); assuming OFF")
+     SET(USE_BLACKLIST 0)
+   ENDIF()
+
+* Provide macro ``DEMO_USE_BLACKLIST`` which expands to int/bool value
+
+  .. code-block:: c++
+     :caption: DemoConfig.h.in
+
+     #define DEMO_USE_BLACKLIST @USE_BLACKLIST@
+
 More Topics
 -----------
 
@@ -254,6 +517,17 @@ More Topics
 
 
 * Properties, ``INTERFACE`` libraries
+
+  https://cmake.org/cmake/help/latest/guide/tutorial/Adding%20Usage%20Requirements%20for%20a%20Library.html#exercise-1-adding-usage-requirements-for-a-library
+
+  * target_compile_definitions()
+  * target_compile_options()
+  * target_include_directories()
+  * target_link_directories()
+  * target_link_options()
+  * target_precompile_headers()
+  * target_sources()
+
 * Using installed project |longrightarrow| install headers
 
   https://stackoverflow.com/questions/10487256/cmake-how-to-properly-copy-static-librarys-header-file-into-usr-include
@@ -267,3 +541,5 @@ More Topics
   * ``CMAKE_CURRENT_SOURCE_DIR``
   * ``CMAKE_BINARY_DIR``
   * ``CMAKE_CURRENT_BINARY_DIR``
+
+* Properties

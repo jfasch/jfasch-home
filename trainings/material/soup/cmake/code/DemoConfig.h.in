@@ -1,0 +1,6 @@
+// This file is generated, do not modify
+
+#define DEMO_MAJOR @Demo_VERSION_MAJOR@
+#define DEMO_MINOR @Demo_VERSION_MINOR@
+
+#define DEMO_USE_BLACKLIST @USE_BLACKLIST@
