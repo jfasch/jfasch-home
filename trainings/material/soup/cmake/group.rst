@@ -484,7 +484,8 @@ Define Option And Macro
   
      OPTION(USE_BLACKLIST "Refuse to greet blacklisted names" ON)
 
-* Normalize option values for better macros usage
+* Normalize option values for better macro usage (|longrightarrow|
+  CMake "programming language")
 
 .. code-block:: console
    :caption: Toplevel ``CMakeLists.txt``, below ``OPTION()``
@@ -505,6 +506,47 @@ Define Option And Macro
      :caption: DemoConfig.h.in
 
      #define DEMO_USE_BLACKLIST @USE_BLACKLIST@
+
+* Plan
+
+  * Build ``blacklist`` library *conditionally*
+  * Let library announce itself via propagted (``PUBLIC``) *CMake
+    target property* |longrightarrow| optionally build excutable that
+    outputs blacklist content
+  * Use ``TARGET_COMPILE_OPTIONS()`` |longrightarrow| let using
+    programs make decisions based upon a macro
+
+Optionally Descending in Subdirectory
+-------------------------------------
+
+That is easy ...
+
+.. code-block:: console
+   :caption: Toplevel ``CMakeLists.txt``
+
+   IF (${USE_BLACKLIST} EQUAL 1)
+     ADD_SUBDIRECTORY(blacklist)
+   ENDIF()
+
+Optional Dependency In ``libhello``
+-----------------------------------
+
+This is a massacre ...
+
+* Optional ``TARGET_LINK_LIBRARIES()``
+
+  .. code-block:: console
+     :caption: ``libhello/CMakeLists.txt``
+		  
+     jjj
+		  
+* Designer's / Architect's choice: dependency in ``greeter-name.h``
+  header file
+
+  * |longrightarrow| massacre
+  * All users ("dependers") of ``libhello`` need to have include path
+    to ``blacklist.h``
+  * Macro-conditionals all over the place
 
 More Topics
 -----------
