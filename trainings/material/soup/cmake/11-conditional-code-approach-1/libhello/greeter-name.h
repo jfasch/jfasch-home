@@ -4,9 +4,6 @@
 #include "greeter.h"
 
 #include <DemoConfig.h>                                // <--- dependency in header file!!!
-#ifndef DEMO_USE_BLACKLIST
-# error DEMO_USE_BLACKLIST not defined
-#endif
 #if DEMO_USE_BLACKLIST == 1                            
 #  include <blacklist.h>                               // <--- dependency in header file!!!
 #endif

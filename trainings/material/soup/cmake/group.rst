@@ -392,6 +392,13 @@ Problem
 Solution: Configure Files
 .........................
 
+.. sidebar:: 
+
+   **Documentation**
+
+   * `CONFIGURE_FILE()
+     <https://cmake.org/cmake/help/latest/command/configure_file.html>`__
+
 * Convert CMake variables to *macros* using ``CONFIGURE_FILE()``
 
   .. code-block:: console
@@ -474,8 +481,8 @@ Solution: Add An Option
   * Provide macro ``DEMO_USE_BLACKLIST`` so ``NameGreeter`` can decide
     whether to use it
 
-Define Option And Macro
-.......................
+Define Option ``USE_BLACKLIST``; Option Usage, Cache
+....................................................
 
 * Define option
 
@@ -484,69 +491,334 @@ Define Option And Macro
   
      OPTION(USE_BLACKLIST "Refuse to greet blacklisted names" ON)
 
-* Normalize option values for better macro usage (|longrightarrow|
-  CMake "programming language")
+* Default: ``ON``
 
 .. code-block:: console
-   :caption: Toplevel ``CMakeLists.txt``, below ``OPTION()``
 
-   # normalize option strings into numbers (for better macros usage)
-   IF (${USE_BLACKLIST} STREQUAL ON)
-     SET(USE_BLACKLIST 1)
-   ELSEIF (${USE_BLACKLIST} STREQUAL OFF)
-     SET(USE_BLACKLIST 0)
-   ELSE()
-     MESSAGE(DEBUG "USE_BLACKLIST must be ON or OFF (not ${USE_BLACKLIST}); assuming OFF")
-     SET(USE_BLACKLIST 0)
-   ENDIF()
+   $ cmake -L ~/work/jfasch-home/trainings/material/soup/cmake/code/
+   ...
+   USE_BLACKLIST:BOOL=ON
+   ...
 
-* Provide macro ``DEMO_USE_BLACKLIST`` which expands to int/bool value
+* Set to ``OFF``
+
+.. code-block:: console
+
+   $ cmake -DUSE_BLACKLIST=OFF  ~/work/jfasch-home/trainings/material/soup/cmake/code/
+   ...
+
+* Value of ``USE_BLACKLIST`` is persisted ("cached")
+
+.. code-block:: console
+
+   $ cmake -L ~/work/jfasch-home/trainings/material/soup/cmake/code/
+   ...
+   USE_BLACKLIST:BOOL=OFF
+   ...
+
+Option Handling: Many Approaches
+................................
+
+* *Note that this is programming!*
+* |longrightarrow| should not be taken lightly
+* Here: two alternative approaches
+
+.. sidebar:: 
+
+   **Documentation**
+
+   * `TARGET_INCLUDE_DIRECTORIES()
+     <https://cmake.org/cmake/help/latest/command/target_include_directories.html#command:target_include_directories>`__
+   * `TARGET_COMPILE_DEFINITIONS()
+     <https://cmake.org/cmake/help/latest/command/target_compile_definitions.html#command:target_compile_definitions>`__
+
+#. Approach 1: globally define flags at CMake and C (macro) level
+
+   * CMake variable ``USE_BLACKLIST`` from option, re-used downwards
+   * C macro ``MACRO_USE_BLACKLIST`` in ``DemoConfig.h.in``
+   * *Optionally* descend into ``blacklist`` directory
+   * *Conditionals* at CMake and C level everywhere
+
+#. Approach 2: optionally make ``blacklist`` an ``INTERFACE`` library
+
+   * If not ``USE_BLACKLIST``, make ``blacklist`` an ``INTERFACE``
+     library
+   * Use ``TARGET_COMPILE_DEFINITIONS()`` and
+     ``TARGET_INCLUDE_DIRECTORIES()`` to announce (non-)presence of
+     ``blacklist``
+
+Approach 1 (Global Flags): Optional ``blacklist``, C Macro
+----------------------------------------------------------
+
+* 10-conditional-code-approach-1
+* Descend into ``blacklist`` directory *optionally*
+
+  .. code-block:: console
+     :caption: Toplevel ``CMakeLists.txt``
+  
+     IF (${USE_BLACKLIST})
+       ADD_SUBDIRECTORY(blacklist)
+     ENDIF()
+
+* Provide C macro for occasional C macro orgies
+
+  .. code-block:: console
+     :caption: Toplevel ``CMakeLists.txt``
+
+     # for configure-file macro, define parallel variable with bool values
+     IF (${USE_BLACKLIST})
+       SET(MACRO_USE_BLACKLIST 1)
+     ELSE()
+       SET(MACRO_USE_BLACKLIST 0)
+     ENDIF()
 
   .. code-block:: c++
-     :caption: DemoConfig.h.in
+     :caption: ``DemoConfig.h.in``
 
-     #define DEMO_USE_BLACKLIST @USE_BLACKLIST@
+     #define DEMO_USE_BLACKLIST @MACRO_USE_BLACKLIST@
 
-* Plan
+Approach 1 (Global Flags): Optional Dependency In ``libhello``
+--------------------------------------------------------------
 
-  * Build ``blacklist`` library *conditionally*
-  * Let library announce itself via propagted (``PUBLIC``) *CMake
-    target property* |longrightarrow| optionally build excutable that
-    outputs blacklist content
-  * Use ``TARGET_COMPILE_OPTIONS()`` |longrightarrow| let using
-    programs make decisions based upon a macro
+.. note::
 
-Optionally Descending in Subdirectory
--------------------------------------
-
-That is easy ...
-
-.. code-block:: console
-   :caption: Toplevel ``CMakeLists.txt``
-
-   IF (${USE_BLACKLIST} EQUAL 1)
-     ADD_SUBDIRECTORY(blacklist)
-   ENDIF()
-
-Optional Dependency In ``libhello``
------------------------------------
-
-This is a massacre ...
+   This is a massacre!
 
 * Optional ``TARGET_LINK_LIBRARIES()``
 
   .. code-block:: console
      :caption: ``libhello/CMakeLists.txt``
 		  
-     jjj
+     IF (${USE_BLACKLIST})
+       TARGET_LINK_LIBRARIES(hello blacklist)
+     ENDIF()
+
+Approach 1 (Global Flags): Optional Dependency In ``libhello`` Header File
+--------------------------------------------------------------------------
 		  
 * Designer's / Architect's choice: dependency in ``greeter-name.h``
   header file
+* |longrightarrow| massacre
+* All users ("dependers") of ``libhello`` need to have include path to
+  ``blacklist.h``
+* Macro-conditionals all over the place
 
-  * |longrightarrow| massacre
-  * All users ("dependers") of ``libhello`` need to have include path
-    to ``blacklist.h``
-  * Macro-conditionals all over the place
+.. code-block:: c++
+
+   #include <DemoConfig.h>                                // <--- dependency in header file!!!
+   #ifndef DEMO_USE_BLACKLIST
+   # error DEMO_USE_BLACKLIST not defined                 // <--- guard against build system bugs
+   #endif
+   #if DEMO_USE_BLACKLIST == 1                            
+   #  include <blacklist.h>                               // <--- dependency in header file!!!
+   #endif
+   
+   #include <string>
+   
+   class NameGreeter : public Greeter
+   {
+   private:
+   #if DEMO_USE_BLACKLIST == 1                            // <--- dependency in header file!!!
+       Blacklist _blacklist;
+   #endif
+   };
+
+.. note::
+
+   All **users** of ``libhello`` need to be aware!
+
+Approach 1 (Global Flags): Optional Dependency In ``libhello`` CPP File
+-----------------------------------------------------------------------
+ 
+* If one likes macros, then this is normal business
+* No implications on users, as opposed to conditional code in header
+  file
+
+.. code-block:: c++
+
+   void NameGreeter::sayhello()
+   {
+   #if DEMO_USE_BLACKLIST == 1
+       if (_blacklist.is_forbidden(_name))
+           std::cout << "Goodbye " << _name << '\n';
+   #else
+       std::cout << "Hello " << _name << '\n';
+   #endif
+   }
+
+Approach 1: Good Or Bad?
+------------------------
+
+What is approach 1? |longrightarrow| use "globals" a lot
+
+* ``USE_BACKLIST`` used in ``libhello`` to conditionally add
+  dependency on ``blacklist``
+* C macro defined globally - in ``DemoConfig.h.in``
+
+Approach 2: Remove Too Much CMake Optionality
+---------------------------------------------
+
+* Remove optional descending from toplevel ``CMakeLists.txt``
+* Remove optional dependency from ``libhello``
+* Remove ``DEMO_USE_BLACKLIST`` from ``DemoConfig.h.in``
+* Test (|longrightarrow| macro not defined)
+
+  .. code-block:: console
+
+     $ cmake -DUSE_BLACKLIST=ON  ~/work/jfasch-home/trainings/material/soup/cmake/code/
+     $ make
+     greeter-name.h:8:3: error: #error DEMO_USE_BLACKLIST not defined
+     8 | # error DEMO_USE_BLACKLIST not defined
+       |   ^~~~~
+
+* How to solve? Where to define macro?
+
+Approach 2: ``TARGET_COMPILE_DEFINITIONS()`` (``backlist`` Availablility)
+-------------------------------------------------------------------------
+
+.. sidebar:: 
+   
+   **Documentation**
+
+   * `TARGET_COMPILE_DEFINITIONS()
+     <https://cmake.org/cmake/help/latest/command/target_compile_definitions.html>`__
+   * `TARGET_COMPILE_OPTIONS()
+     <https://cmake.org/cmake/help/latest/command/target_compile_options.html>`__
+
+* Let ``blacklist`` announce its availability to its dependers
+* |longrightarrow| ``TARGET_COMPILE_DEFINITIONS()``
+
+  .. code-block:: console
+     :caption: ``blacklist/CMakeLists.txt``
+
+     TARGET_COMPILE_DEFINITIONS(blacklist PUBLIC DEMO_USE_BLACKLIST=1)
+
+* Test
+
+  * ``cmake -DUSE_BLACKLIST=ON ...`` |longrightarrow| works
+  * ``cmake -DUSE_BLACKLIST=OFF ...`` |longrightarrow| blacklist still
+    used
+
+* |longrightarrow| put optionality in ``blacklist``
+
+Approach 2: Push Optionality Down In ``blacklist`` (|longrightarrow| ``INTERFACE`` Targets)
+-------------------------------------------------------------------------------------------
+
+* Naive approach
+
+  .. code-block:: console
+
+     IF (${USE_BLACKLIST})
+       ADD_LIBRARY(blacklist blacklist.cpp)
+     
+       TARGET_INCLUDE_DIRECTORIES(blacklist PUBLIC .)
+       TARGET_COMPILE_DEFINITIONS(blacklist PUBLIC DEMO_USE_BLACKLIST=1)
+     ELSE()
+       TARGET_COMPILE_DEFINITIONS(blacklist PUBLIC DEMO_USE_BLACKLIST=0)
+     ENDIF()
+
+  .. code-block:: console
+
+     $ cmake -DUSE_BLACKLIST=OFF  ~/work/jfasch-home/trainings/material/soup/cmake/code/
+     CMake Error at blacklist/CMakeLists.txt:7 (TARGET_COMPILE_DEFINITIONS):
+       Cannot specify compile definitions for target "blacklist" which is not
+       built by this project.
+     
+     -- Configuring incomplete, errors occurred!
+
+* ``INTERFACE`` targets: dependency nodes, but without anything that's
+  built
+* Can have dependencies itself (``TARGET_LINK_LIBRARIES()``)
+* Ours has ``TARGET_COMPILE_DEFINITIONS()``
+
+  .. code-block:: console
+
+     IF (${USE_BLACKLIST})
+       ADD_LIBRARY(blacklist blacklist.cpp)
+     
+       TARGET_INCLUDE_DIRECTORIES(blacklist PUBLIC .)
+       TARGET_COMPILE_DEFINITIONS(blacklist INTERFACE DEMO_USE_BLACKLIST=1) # <--- INTERFACE
+     ELSE()
+       ADD_LIBRARY(blacklist INTERFACE)
+       TARGET_COMPILE_DEFINITIONS(blacklist INTERFACE DEMO_USE_BLACKLIST=0) # <--- INTERFACE
+     ENDIF()
+
+Target Types
+------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `ADD_LIBRARY()
+     <https://cmake.org/cmake/help/latest/command/add_library.html>`__
+   * `ADD_EXECUTABLE()
+     <https://cmake.org/cmake/help/latest/command/add_executable.html>`__
+
+* Two basic types: ``ADD_EXECUTABLE()`` and ``ADD_LIBRARY()``
+* ``ADD_EXECUTABLE()`` is not relevant ...
+
+  * Only entry point into dependency graph
+  * |longrightarrow| does not propagate anything to dependers
+  * There *are no* dependers
+
+* ``ADD_LIBRARY()`` ...
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Type
+       * Description
+     * * Normal library
+       * ``STATIC`` (default), ``SHARED``, ``MODULE``. *Has sources to
+         be built.*
+     * * Object libraries
+       * Technically much like normal libraries, but *not* an archive
+         or shared object (only virtual, implemented by CMake)
+     * * Interface libraries
+       * No sources; only there to propagate properties to dependers,
+         and to have further dependencies on their own.
+
+Properties
+----------
+
+(For a complete list see `ADD_LIBRARY()
+<https://cmake.org/cmake/help/latest/command/add_library.html>`__)
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Target function 
+     * Property name
+     * Description
+     * Documentation
+   * * ``TARGET_COMPILE_DEFINITIONS()``
+     * ``COMPILE_DEFINITIONS``
+     * Macros set on the compiler command line (``-Dname=value``)
+     * `TARGET_COMPILE_DEFINITIONS()
+       <https://cmake.org/cmake/help/latest/command/target_compile_definitions.html>`__
+   * * ``TARGET_COMPILE_OPTIONS()``
+     * ``COMPILE_OPTIONS``
+     * Non-macro compiler flags/options
+     * `TARGET_COMPILE_OPTIONS()
+       <https://cmake.org/cmake/help/latest/command/target_compile_options.html>`__
+   * * ``TARGET_INCLUDE_DIRECTORIES()``
+     * ``INCLUDE_DIRECTORIES``
+     * Include directories
+     * `TARGET_INCLUDE_DIRECTORIES()
+       <https://cmake.org/cmake/help/latest/command/target_include_directories.html>`__
+   * * ``TARGET_LINK_LIBRARIES()``
+     * (Much more complicated, see documentation)
+     * Dependencies, in the widest sense
+     * `TARGET_LINK_LIBRARIES()
+       <https://cmake.org/cmake/help/latest/command/target_link_libraries.html>`__
+
+Properties: ``PRIVATE``, ``PUBLIC``, ``INTERFACE``?
+---------------------------------------------------
 
 More Topics
 -----------
