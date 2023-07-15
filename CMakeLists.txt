@@ -7,7 +7,7 @@ PROJECT(JoergFaschingbauer)
 
 #FIND_PACKAGE(GTest REQUIRED)
 FIND_PACKAGE(Threads REQUIRED)
-set(CMAKE_CXX_STANDARD 23)
+SET(CMAKE_CXX_STANDARD 23)
 
 # compiler options. (we only check for gcc)
 if (${CMAKE_COMPILER_IS_GNUCC})
