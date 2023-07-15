@@ -2,8 +2,8 @@
    :dependencies: cmake.optional_code_problem
 .. include:: <mmlalias.txt>
 
-Optional Code, Approach 1 (Global Flags): Optional ``blacklist``, C Macro
-=========================================================================
+Optional Code, Approach 1: Optional ``blacklist``, C Macro  (Global Flags)
+==========================================================================
 
 .. contents::
    :local:
@@ -48,10 +48,9 @@ Optional Code, Approach 1 (Global Flags): Optional ``blacklist``, C Macro
    * :download:`11-conditional-code-approach-1/blacklist/blacklist.h`
    * :download:`11-conditional-code-approach-1/blacklist/blacklist.cpp`
 
-Approach 1 (Global Flags): Optional ``blacklist``, C Macro
-----------------------------------------------------------
+Optional ``blacklist``, C Macro
+-------------------------------
 
-* 10-conditional-code-approach-1
 * Descend into ``blacklist`` directory *optionally*
 
   .. code-block:: console
@@ -78,8 +77,8 @@ Approach 1 (Global Flags): Optional ``blacklist``, C Macro
 
      #define DEMO_USE_BLACKLIST @MACRO_USE_BLACKLIST@
 
-Approach 1 (Global Flags): Optional Dependency In ``libhello``
---------------------------------------------------------------
+Optional Dependency In ``libhello``
+-----------------------------------
 
 .. note::
 
@@ -94,8 +93,13 @@ Approach 1 (Global Flags): Optional Dependency In ``libhello``
        TARGET_LINK_LIBRARIES(hello blacklist)
      ENDIF()
 
-Approach 1 (Global Flags): Optional Dependency In ``libhello`` Header File
---------------------------------------------------------------------------
+Optional Dependency In ``libhello`` Header File
+-----------------------------------------------
+
+.. note::
+
+   This is a software design choice. Putting optional code in header
+   file leads to messy code, no matter which build system.
 		  
 * Designer's / Architect's choice: dependency in ``greeter-name.h``
   header file
@@ -128,9 +132,9 @@ Approach 1 (Global Flags): Optional Dependency In ``libhello`` Header File
 
    All **users** of ``libhello`` need to be aware!
 
-Approach 1 (Global Flags): Optional Dependency In ``libhello`` CPP File
------------------------------------------------------------------------
- 
+Optional Dependency In ``libhello`` CPP File
+--------------------------------------------
+
 * If one likes macros, then this is normal business
 * No implications on users, as opposed to conditional code in header
   file
@@ -147,8 +151,8 @@ Approach 1 (Global Flags): Optional Dependency In ``libhello`` CPP File
    #endif
    }
 
-Approach 1: Good Or Bad?
-------------------------
+Good Or Bad?
+------------
 
 What is approach 1? |longrightarrow| use "globals" a lot
 
