@@ -1,6 +1,5 @@
 .. ot-topic:: linux.toolchain.cmake_local
-   :dependencies: linux.toolchain.cmake_stub_course,
-		  linux.toolchain.static_library
+   :dependencies: linux.toolchain.static_library
 
 .. include:: <mmlalias.txt>
 
@@ -9,6 +8,10 @@ CMake: Local Build
 ==================
 
 .. sidebar:: 
+
+   **See also**
+
+   * :doc:`Entire CMake course </trainings/material/soup/cmake/group>`
 
    **Source Code**
 

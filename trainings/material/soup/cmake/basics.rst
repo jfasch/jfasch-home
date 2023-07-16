@@ -28,7 +28,6 @@ Single Monolithic Executable
    * :download:`01-single/CMakeLists.txt`
    * :download:`01-single/hello-single.c`
 
-* First: toolchain
 * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
 * Default output name: ``a.out``
 
@@ -78,8 +77,8 @@ Building With CMake
   which features we will need (or fail)
 * ``PROJECT()``: used in many corners, e.g. package names
 
-  * ``VERSION`` parameter (optional); used later when building shared
-    libraries
+  * ``VERSION`` parameter (optional); will use it later
+
 * ``ADD_EXECUTABLE()``
 
 Building With CMake: Separate Source And Build Directories
@@ -236,4 +235,4 @@ Solution: Libraries
 -------------------
 
 * Bag of object file
-* Come in *shared* flavors
+* Come in *static* and *shared* flavors

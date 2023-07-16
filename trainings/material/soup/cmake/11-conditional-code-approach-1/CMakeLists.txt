@@ -4,7 +4,8 @@ SET(CMAKE_CXX_STANDARD 23)
 
 OPTION(USE_BLACKLIST "Refuse to greet blacklisted names" ON)
 
-# for configure-file macro, define parallel variable with bool values
+# for configure-file macro, define parallel variable with real bool
+# values
 IF (${USE_BLACKLIST})
   SET(MACRO_USE_BLACKLIST 1)
 ELSE()

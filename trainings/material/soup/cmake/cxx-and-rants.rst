@@ -1,9 +1,9 @@
-.. ot-topic:: cmake.cxx
+.. ot-topic:: cmake.cxx_and_rants
    :dependencies: cmake.structure
 .. include:: <mmlalias.txt>
 
-C++, Debug/Release, Rants
-=========================
+C++, Debug/Release, CMake "Programming", Rants
+==============================================
 
 .. contents::
    :local:
@@ -49,6 +49,7 @@ Class Diagram
 -------------
 
 .. image:: 09-c++/hierarchy.png
+   :scale: 30%
 
 C++ Standard Version
 --------------------
@@ -111,13 +112,24 @@ Compiler Type
    * `IF (and conditionals)
      <https://cmake.org/cmake/help/latest/command/if.html>`__
 
+* Compiler flags chosen half-heartely by CMake
+* |longrightarrow| custom flags needed
+* E.g. for "Debug", but only if GCC
+
+  * Optimization off (``-O0``), to improve single-stepping experience
+  * Better debug info (``-g3``)
+  * More warnings (``-Wall``) for sanity
+  * Turn warnings into errors (``-Werror``) for sanity
+
 .. code-block:: console
 
-   IF (${CMAKE_C_COMPILER_ID} STREQUAL GNU)
-     SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0 -g3 -Wall -Werror")
-   ENDIF()
-   IF (${CMAKE_CXX_COMPILER_ID} STREQUAL GNU)
-     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g3 -Wall -Werror")
+   IF (${CMAKE_BUILD_TYPE} STREQUAL Debug)
+     IF (${CMAKE_C_COMPILER_ID} STREQUAL GNU)
+       SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0 -g3 -Wall -Werror")
+     ENDIF()
+     IF (${CMAKE_CXX_COMPILER_ID} STREQUAL GNU)
+       SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g3 -Wall -Werror")
+     ENDIF()
    ENDIF()
 
 Strings And Lists
@@ -136,7 +148,7 @@ Strings And Lists
 * Strings can be compared numerically or lexically |longrightarrow| no
   errors, just bugs
 * Lists are strings that contain semicolon separated values
-* |longrightarrow| CMake commands to manipulate strigs and lists
+* |longrightarrow| CMake commands to manipulate strings and lists
    
 .. code-block:: console
 

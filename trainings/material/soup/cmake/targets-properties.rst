@@ -1,4 +1,5 @@
 .. ot-topic:: cmake.targets_properties
+   :dependencies: cmake.libraries, cmake.structure, cmake.optional_code_approach_1, cmake.optional_code_approach_2
 .. include:: <mmlalias.txt>
 
 
@@ -84,4 +85,37 @@ Properties
 
 Properties: ``PRIVATE``, ``PUBLIC``, ``INTERFACE``?
 ---------------------------------------------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `Transitive Usage Requirements
+     <https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html#target-usage-requirements>`__
+
+* ``PUBLIC`` *propagated* to *dependers*
+
+  * Dependency through ``#include <other.h>`` in a header file
+    |longrightarrow| all *includers* need to know
+  * ``blacklist`` availability in :doc:`approach 2
+    <optional-code-approach-2>` (but only if ``blacklist`` has
+    compiled code)
+  * ``PUBLIC`` only possible when target has *compiled code*
+
+* ``PRIVATE`` does not propagate
+
+  * For example, one might structure a target's source code into
+    ``src/``, ``private-inc/``, and ``public-inc/`` |longrightarrow|
+    ``private-inc/`` would be ``TARGET_INCLUDE_DIRECTORIES(... PRIVATE
+    ...)``
+  * For example, ``TARGET_COMPILE_DEFINITIONS()`` for target-local
+    compilation only
+
+* ``INTERFACE`` *propagated* to *dependers*
+
+  * Just like ``PUBLIC`` - except that ``PUBLIC`` is not possible on
+    ``INTERFACE`` targets (e.g. header-only libraries)
+  * Asymmetric; smells like it does in many corners of CMake
+  * Documentation has no clear explanation. Exceptions, and
+    paragraph-long explanations.
 

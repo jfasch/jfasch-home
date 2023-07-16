@@ -90,7 +90,7 @@ Remove Too Much CMake Optionality
 
   * ``cmake -DUSE_BLACKLIST=ON ...`` |longrightarrow| works
   * ``cmake -DUSE_BLACKLIST=OFF ...`` |longrightarrow| blacklist still
-    used
+    used (obviously, because we always announce is as ``1``)
 
 * |longrightarrow| put optionality in ``blacklist``
 
@@ -135,3 +135,13 @@ Push Optionality Down In ``blacklist`` (|longrightarrow| ``INTERFACE`` Targets)
        ADD_LIBRARY(blacklist INTERFACE)
        TARGET_COMPILE_DEFINITIONS(blacklist INTERFACE DEMO_USE_BLACKLIST=0) # <--- INTERFACE
      ENDIF()
+
+Good Or Bad?
+------------
+
+*Is this better than the other approach?*
+
+* Is is more flexible
+* Optionality is local, between *provider* (``blacklist``) and
+  *consumer* (``libhello``)
+* Is it simpler? *Probably not!*

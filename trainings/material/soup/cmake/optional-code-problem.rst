@@ -2,8 +2,8 @@
    :dependencies: cmake.configure_file
 .. include:: <mmlalias.txt>
 
-Optional Code: Problem Definition
-=================================
+Optional Code: Problem Definition, ``OPTION()``
+===============================================
 
 .. contents::
    :local:
@@ -12,11 +12,11 @@ Problem
 -------
 
 * ``hello-second`` licensing requirements
-* Must pay extra ``$$`` to be able to greet "Joerg" (and a number of
-  other blacklisted names)
+* Must pay extra $$ to be able to greet "Joerg" (and a number of other
+  blacklisted names)
 * |longrightarrow| separate builds
 
-  * One that ignores a blacklist (pay extra ``$$``)
+  * One that ignores a blacklist (pay extra $$)
   * One in the public domain, with restrictions
 
 Solution: Add An Option
@@ -87,9 +87,10 @@ Option Handling: Many Approaches
    * `TARGET_COMPILE_DEFINITIONS()
      <https://cmake.org/cmake/help/latest/command/target_compile_definitions.html#command:target_compile_definitions>`__
 
+* Question: what to when ``USE_BLACKLIST`` is ``ON`` or ``OFF``
 * *Note that this is programming!*
 * |longrightarrow| should not be taken lightly
-* Here: two alternative approaches
+* Here we present two alternative approaches
 
 #. Approach 1: globally define flags at CMake and C (macro) levels
 

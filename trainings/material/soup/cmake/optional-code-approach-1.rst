@@ -65,7 +65,8 @@ Optional ``blacklist``, C Macro
   .. code-block:: console
      :caption: Toplevel ``CMakeLists.txt``
 
-     # for configure-file macro, define parallel variable with bool values
+     # for configure-file macro, define parallel variable with real bool
+     # values
      IF (${USE_BLACKLIST})
        SET(MACRO_USE_BLACKLIST 1)
      ELSE()
@@ -80,10 +81,6 @@ Optional ``blacklist``, C Macro
 Optional Dependency In ``libhello``
 -----------------------------------
 
-.. note::
-
-   This is a massacre!
-
 * Optional ``TARGET_LINK_LIBRARIES()``
 
   .. code-block:: console
@@ -93,12 +90,16 @@ Optional Dependency In ``libhello``
        TARGET_LINK_LIBRARIES(hello blacklist)
      ENDIF()
 
+.. note::
+
+   *This is a massacre!*
+
 Optional Dependency In ``libhello`` Header File
 -----------------------------------------------
 
 .. note::
 
-   This is a software design choice. Putting optional code in header
+   *This is a software design choice*. Putting optional code in header
    file leads to messy code, no matter which build system.
 		  
 * Designer's / Architect's choice: dependency in ``greeter-name.h``
@@ -154,9 +155,14 @@ Optional Dependency In ``libhello`` CPP File
 Good Or Bad?
 ------------
 
-What is approach 1? |longrightarrow| use "globals" a lot
+*What is this approach?*
 
-* ``USE_BACKLIST`` used in ``libhello`` to conditionally add
-  dependency on ``blacklist``
-* C macro defined globally - in ``DemoConfig.h.in``
+* |longrightarrow| Using "globals" a lot
 
+  * ``USE_BACKLIST`` defined *toplevel*, and used in ``libhello`` to
+    conditionally add dependency on ``blacklist``
+  * C macro defined *toplevel* - in ``DemoConfig.h.in``
+
+*Is there a better way?* 
+
+* Almost always |:ninja:|

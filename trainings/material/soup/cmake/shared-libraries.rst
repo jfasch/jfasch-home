@@ -112,7 +112,7 @@ More About *Loading*
      PROJECT(Demo VERSION "1.0.0")
      SET_PROPERTY(TARGET hello PROPERTY VERSION ${PROJECT_VERSION})
 
-* Discuss ABI versions (|longrightarrow| rarely project versions can
-  be used as ABI versions)
+* Discuss ABI versions |longrightarrow| **rarely project versions can
+  be used as ABI versions**
 * |longrightarrow| can of worms: **installation/deployment**
 

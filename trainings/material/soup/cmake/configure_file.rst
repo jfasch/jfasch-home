@@ -1,5 +1,5 @@
 .. ot-topic:: cmake.configure_file
-   :dependencies: cmake.cxx
+   :dependencies: cmake.cxx_and_rants
 .. include:: <mmlalias.txt>
 
 "Configured" Header Files
@@ -75,7 +75,7 @@ Configured Files
 
    * `CONFIGURE_FILE()
      <https://cmake.org/cmake/help/latest/command/configure_file.html>`__
-   * `CMAKE_CURRENT_BINARY_DIR()
+   * `CMAKE_CURRENT_BINARY_DIR
      <https://cmake.org/cmake/help/latest/variable/CMAKE_CURRENT_BINARY_DIR.html>`__
 
 * Header file *template* that contains CMake variable substitutions
@@ -84,7 +84,7 @@ Configured Files
      :language: c++
      :caption: :download:`10-configure-file/DemoConfig.h.in`
 
-* Let CMake perform substutions
+* Let CMake perform substitutions
 
   .. code-block:: console
   
@@ -94,6 +94,13 @@ Configured Files
 
 Use In Compiled Code
 --------------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `INCLUDE_DIRECTORIES()
+     <https://cmake.org/cmake/help/latest/command/include_directories.html>`__
 
 * Pick up CMake variables from configure file
   (:download:`10-configure-file/bin/hello-first.cpp` and

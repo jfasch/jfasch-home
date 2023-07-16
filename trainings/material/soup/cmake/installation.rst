@@ -35,14 +35,9 @@ Installation ("Deployment")
 "Prefix": Where Everything Comes Together
 -----------------------------------------
 
-.. sidebar::
-
-   **Documentation**
-
-   * `INSTALL()
-     <https://cmake.org/cmake/help/latest/command/install.html>`__
-
-* *Prefix* (e.g. ``/usr``): contains subdirectories
+* Multiple projects usually are *installed* at one *prefix*
+  |longrightarrow| ``/usr``
+* Subdirectories
 
   * ``bin/``: executables
   * ``lib/`` (or ``lib64``): libraries
@@ -59,6 +54,13 @@ Installation ("Deployment")
 
 Installing Targets
 ------------------
+
+.. sidebar::
+
+   **Documentation**
+
+   * `INSTALL()
+     <https://cmake.org/cmake/help/latest/command/install.html>`__
 
 .. code-block:: console
 
@@ -164,6 +166,8 @@ Shared Libraries: Installed Vs. Local (``RUNPATH``)
       ...
 
   .. code-block:: console
+     :caption: Which libraries would be loaded if I ran
+               ``./hello-first``?
   
      $ ldd ./hello-first 
              ...
@@ -184,6 +188,13 @@ Shared Libraries: Installed Vs. Local (``RUNPATH``)
 
      $ readelf  --dynamic /tmp/install/bin/hello-first 
      ... no RUNPATH ...
+
+  .. code-block:: console
+
+     $ ldd /tmp/install/bin/hello-first 
+             ...
+             libhello.so.1 => not found
+             ...
 
   |longrightarrow| installed executable does *not* run
 
@@ -224,7 +235,7 @@ Shared Libraries: ABI Versions
      $ readelf  --dynamic /tmp/install/bin/hello-first 
      0x0000000000000001 (NEEDED)             Shared library: [libhello.so.1]
 
-* ``SONAME`` link (done by ``ldconfig`` on a live system ,after
+* ``SONAME`` link (done by ``ldconfig`` on a live system, after
   package installation)
 
   .. code-block:: console

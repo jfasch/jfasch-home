@@ -42,7 +42,6 @@ architecture that the development machine.
    static-library/topic
    shared-libraries/topic
    cross/group
-   cmake/stub-cmake-course
    cmake/local
    cmake/cross
    raspberry-pi/group

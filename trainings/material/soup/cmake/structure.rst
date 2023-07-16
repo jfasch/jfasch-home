@@ -50,8 +50,14 @@ Reorganization
 * Descend into ``libhello/`` and ``bin/``
 
   * Move files around
-  * Move Cmake code around
+  * Move CMake code around
   * *Miss to care about include paths*
+
+  .. code-block:: console
+     :caption: Toplevel ``CMakeLists.txt``
+
+     ADD_SUBDIRECTORY(libhello)
+     ADD_SUBDIRECTORY(bin)
 
 .. code-block:: console
 
@@ -76,12 +82,13 @@ Dependencies, And *Target Properties*
 
    **Documentation**
 
-   * `TARGET_INCLUDE_DIRECTORIES():
+   * `TARGET_INCLUDE_DIRECTORIES()
      <https://cmake.org/cmake/help/latest/command/target_include_directories.html>`__
 
 * Dependencies are in place
 
   .. image:: 08-structure/Demo.png
+     :scale: 60%
 
 * Only code has been moved around
 * |longrightarrow| ``hello`` header files are now too far away from
@@ -97,6 +104,6 @@ Dependencies, And *Target Properties*
 
   * ``PUBLIC`` *propagated* to *dependers* (see/show ``.dependers``
     dot file) so they can find the headers of targets they depend on
-  * ``PRIVATE`` does not propagate. One might structure (internally
-    only) a target's source code into ``src/`` and ``inc/`` for
-    example.
+  * ``PRIVATE`` does not propagate. Purpose: e.g., one might structure
+    (internally only) a target's source code into ``src/`` and
+    ``inc/`` for example.
