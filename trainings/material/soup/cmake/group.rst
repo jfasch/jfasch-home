@@ -39,23 +39,7 @@ CMake: An Introduction
    optional-code-approach-2
    targets-properties
    external-dependencies
-
-.. contents::
-   :local:
-
-To Do
------
-
-* Using installed project |longrightarrow| install headers
-
-  https://stackoverflow.com/questions/10487256/cmake-how-to-properly-copy-static-librarys-header-file-into-usr-include
-
-* Variables
-
-  * ``CMAKE_SOURCE_DIR``
-  * ``CMAKE_CURRENT_SOURCE_DIR``
-  * ``CMAKE_BINARY_DIR``
-  * ``CMAKE_CURRENT_BINARY_DIR``
+   testing
 
 Dependencies
 ------------

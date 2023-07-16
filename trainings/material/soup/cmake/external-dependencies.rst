@@ -194,7 +194,7 @@ Demo Time
      $ ldd bin/hello-third 
             ...
             libsqlite3.so.0 => /lib64/libsqlite3.so.0 (0x00007f76ae011000)
-     	    libz.so.1 => /lib64/libz.so.1 (0x00007f76adef7000)
+	    libz.so.1 => /lib64/libz.so.1 (0x00007f76adef7000)
 	    ...
      
   * Somebody must have told linker to look for ``sqlite3``

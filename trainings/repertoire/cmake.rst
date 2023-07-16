@@ -16,6 +16,10 @@ CMake
       Contact, training@faschingbauer.co.at
       Duration, 1-2 days
 
+   **Course Material**
+
+   * :doc:`/trainings/material/soup/cmake/group`
+
    **See also**
    
    * :doc:`/trainings/repertoire/c-like/c`

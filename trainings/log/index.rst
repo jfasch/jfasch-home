@@ -15,8 +15,8 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
-CMake (2023-07-03)
-------------------
+CMake: An Introduction (2023-07-18)
+-----------------------------------
 
 This course is under preparation.
 

@@ -2,6 +2,8 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
 PROJECT(Demo VERSION 42.666)
 SET(CMAKE_CXX_STANDARD 23)
 
+ENABLE_TESTING()
+
 OPTION(USE_BLACKLIST "Refuse to greet blacklisted names" ON)
 
 # for configure-file macro, define parallel variable with bool values
