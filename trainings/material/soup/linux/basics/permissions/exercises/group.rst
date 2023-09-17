@@ -22,7 +22,6 @@ Contents
    fh-questions-nocheat
 
 .. .. toctree::
-..    :hidden:
 .. 
 ..    fh-questions
 

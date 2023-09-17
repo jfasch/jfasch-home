@@ -7,16 +7,14 @@
 Race Conditions, and Mutexes
 ============================
 
+.. contents::
+   :local:
+
 .. sidebar::
 
-   **Contents**
+   **Documentation**
 
-   .. contents::
-      :local:
-
-   **Threading Documentation**
-
-   :doc:`python:library/threading`
+   * :doc:`python:library/threading`
 
 Mother of All Race conditions: Integer Increment
 ------------------------------------------------

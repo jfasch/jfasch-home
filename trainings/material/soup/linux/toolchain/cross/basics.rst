@@ -28,6 +28,13 @@ Native Compilation
 Cross?
 ------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/blog/2022/09/cross-raspi`
+   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-docker-fedora`
+
 * Compiler runs on *host* machine (e.g. ``x86_64``)
 * Produces code for the *target* machine (e.g. ``armv7l``)
 

@@ -15,10 +15,19 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+
+
+Python Advanced (2023-10-23 - 2023-10-25)
+-----------------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-10-XX--Python-Advanced/index>`)
+
 CMake: An Introduction (2023-07-18)
 -----------------------------------
 
-This course is under preparation.
+A one-day crash course in CMake, held online.
 
 (:doc:`More ... <detail/2023-07-03--CMake/index>`)
 

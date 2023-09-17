@@ -279,7 +279,7 @@ Cross Development
   * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
   * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
   * :doc:`/trainings/material/soup/linux/toolchain/cross/group`
-  * :doc:`/trainings/material/soup/linux/toolchain/cmake/stub-cmake-course`
+  * :doc:`/trainings/material/soup/cmake/group`
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
   * :doc:`/trainings/material/soup/linux/toolchain/exercises/group`

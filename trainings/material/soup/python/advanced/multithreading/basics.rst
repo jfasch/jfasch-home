@@ -7,16 +7,14 @@
 Multithreading (Python)
 =======================
 
+.. contents::
+   :local:
+
 .. sidebar::
 
-   **Contents**
+   **Documentation**
 
-   .. contents::
-      :local:
-
-   **Threading Documentation**
-
-   :doc:`python:library/threading`
+   * :doc:`python:library/threading`
 
 What's a Thread?
 ----------------

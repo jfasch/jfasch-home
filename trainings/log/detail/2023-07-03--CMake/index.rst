@@ -33,6 +33,11 @@ CMake: An Introduction (2023-07-18)
 * :doc:`/trainings/material/soup/cmake/installation`
 * :doc:`/trainings/material/soup/cmake/structure`
 * :doc:`/trainings/material/soup/cmake/cxx-and-rants`
+* Cross development
+
+  * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
+  * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
+
 * :doc:`/trainings/material/soup/cmake/configure_file`
 * :doc:`/trainings/material/soup/cmake/optional-code-problem`
 * :doc:`/trainings/material/soup/cmake/optional-code-approach-1`

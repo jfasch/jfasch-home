@@ -9,7 +9,7 @@ CMake: An Introduction
 .. image:: logo.jpg
    :alt: CMake logo
    :align: right
-   :scale: 50%
+   :scale: 100%
 
 .. sidebar::
 

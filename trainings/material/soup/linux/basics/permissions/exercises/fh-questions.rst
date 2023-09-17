@@ -19,17 +19,26 @@ Questions
   .. list-table::
      :align: left
      :widths: auto
+     :header-rows: 1
 
+     * * Question
+       * Yes
+       * No
      * * Everyone may execute the file
        * y
+       * 
      * * Everyone may read the file
        * y
+       * 
      * * Members of the owning group may write the file
+       * 
        * n
      * * The owner may write the file
        * y
+       * 
      * * Any user that is neither the owner nor a member of the owning
          group may write the file
+       * 
        * n
 
 * A permission mask of ``rwxr-x---`` on a directory means that ... (multiple correct answers)
@@ -37,16 +46,24 @@ Questions
   .. list-table::
      :align: left
      :widths: auto
+     :header-rows: 1
 
+     * * Question
+       * Yes
+       * No
      * * The owner may create files in the directory
        * y
+       * 
      * * Members of the owning group may create files in the directory
+       * 
        * n
      * * Any user that is neither the owner nor a member of the owning
          group may not access the directory in any way
-       * n
+       * y
+       * 
      * * The owner may remove the directory and its contents
-       * n
+       * y
+       * 
 
 Dependencies
 ------------
