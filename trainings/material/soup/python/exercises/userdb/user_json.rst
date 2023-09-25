@@ -26,7 +26,7 @@ of the following form:
    }
 
 Preparing for MQTT communication (:doc:`mqtt-publish-csv`), it is
-advisable to create a module ``user_json.py`` that defines a transport
+advisable to create a module ``userdb_json.py`` that defines a transport
 format for transmission that is
 
 * Converted to before sending
@@ -37,7 +37,7 @@ Usage is envisioned as follows:
 .. code-block:: python
 
    import userdb_csv
-   import user_json
+   import userdb_json
 
    for user in userdb_csv.read_csv_noheader('some.csv'):   # could be ANY source, of course
        json_str = user_json.to_json(user)

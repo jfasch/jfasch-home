@@ -17,17 +17,25 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
 
 
 
-Python Advanced (2023-10-23 - 2023-10-25)
+Python Advanced (2023-10-24 - 2023-10-26)
 -----------------------------------------
 
 This course is under preparation.
 
-(:doc:`More ... <detail/2023-10-XX--Python-Advanced/index>`)
+(:doc:`More ... <detail/2023-10-24--Python-Advanced/index>`)
+
+Python Advanced (2023-09-25 - 2023-09-27)
+-----------------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-09-25--Python-Advanced/index>`)
 
 CMake: An Introduction (2023-07-18)
 -----------------------------------
 
-A one-day crash course in CMake, held online.
+A one-day crash course in CMake, held online. Didactic live-hacking,
+along with the training material.
 
 (:doc:`More ... <detail/2023-07-03--CMake/index>`)
 
