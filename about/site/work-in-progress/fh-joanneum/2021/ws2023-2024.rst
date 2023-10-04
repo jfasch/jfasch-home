@@ -1,0 +1,88 @@
+.. include:: <mmlalias.txt>
+
+
+WS2023/24
+=========
+
+.. sidebar::
+
+   * `Github project <https://github.com/jfasch/FH-ECE21>`__
+   * SSH login on the Pi: ``ssh -p 2020 firstname.lastname@jfasch.bounceme.net``
+
+.. contents::
+   :local:
+
+Object Oriented Programming (C++)
+---------------------------------
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * VO
+     * KU
+     * #Units
+     * Topics
+   * * 2023-10-05
+     * 6
+     * 
+     * 
+       * **OO Recap**
+
+	 * *What we know*: Constructor, Methods, Objects, ``this``
+
+	   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+	   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+	   
+	 * *What we have*
+
+	   *Sensor-like* types
+
+           * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
+	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-mock-nopoly` (`sensor-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-mock.h>`__)
+           * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly` (`sensor-random.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-random.h>`__)
+	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
+
+	   *Switch-like* types
+
+	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly` (`switch-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/switch-mock.h>`__)
+
+	   *Consumers*
+
+	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
+	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly` (`hysteresis.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/hysteresis.h>`__)
+
+	 * **Plan**  |:muscle:|
+
+	   * Polymorphize switches and sensors |longrightarrow| interfaces
+	   * Use interfaces in LED display and hysteresis
+
+	     * Show example of a display that outputs sensor values to
+               ``stdout`` (rather than writing the output inline,
+               inside the measurement loop)
+
+	   * Define "datalogger" sink
+	   * Define source configuration
+	   * Lifetime (e.g. ``AveragingSensor::add()``)
+	     |longrightarrow| pointer classes
+	   * ... see what time brings ...
+
+	 * **OO Programming:** 
+
+	   From
+	   :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+	   ...
+
+	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
+	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
+	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
+	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
+	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+
+	   From
+	   :doc:`/trainings/material/soup/cxx11/020-new-language-features/group`
+	   ...
+
+	   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`

@@ -25,7 +25,7 @@ Plain (Base) Class
 
 .. code-block:: console
 
-   $ ./inher-basics-base 
+   $ ./inher-oo-base 
    Base::method()
 
 Inheriting (Deriving) From Base
@@ -44,7 +44,7 @@ Inheriting (Deriving) From Base
 
 .. code-block:: console
 
-   $ ./inher-basics-derived-novirtual 
+   $ ./inher-oo-derived-novirtual 
    Base::method()
    Derived::method()
 
@@ -71,7 +71,7 @@ Inheriting (Deriving) From Base
 
 .. code-block:: console
 
-   $ ./inher-basics-derived-novirtual-base-conversion 
+   $ ./inher-oo-derived-novirtual-base-conversion 
    Base::method()
 
 **Answer**

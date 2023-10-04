@@ -14,10 +14,13 @@ Python Advanced (2023-09-25 - 2023-09-27)
 
 .. sidebar::
 
-   **Predecessor Course**
+   **Predecessor Courses**
 
-   This course is a followup to
-   :doc:`../2023-05-15--Python-Basics/index`
+   This course is a followup to two "Python Basics" courses held
+   before summer 2023,
+
+   * :doc:`../2023-05-15--Python-Basics/index`
+   * :doc:`../2023-06-20--Python-Basics/index`
 
    **Notebook**
 
@@ -63,8 +66,8 @@ Exercises
 * Become acquainted with Test Driven Development:
   :doc:`/trainings/material/soup/python/exercises/userdb/user_json`
 
-Agenda
-------
+Day 2
+-----
 
 Object Oriented Programming
 ...........................
@@ -87,24 +90,6 @@ Exercises
 * Create a simple class:
   :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
 
-More Details
-,,,,,,,,,,,,
-
-* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
-* Going Dynamic: ``type()``, ``exec()``
-
-  #. Class dictionary (|longrightarrow| ``fullname()``, and ctor). As
-     opposed to object dictionary.
-  #. Build ``class Person`` from code (as ``str``), using ``exec()``
-  #. Define functions ``fullname()`` and ``ctor()``, and use
-     ``type()`` to create the class object.
-
-OO Design: Inheritance, And Abstract Base Classes
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-
-* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
-* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
-
 Into The Wild: Group Project Kickoff
 ....................................
 
@@ -121,15 +106,25 @@ and TDD), let's hack something. An idea:
   <https://docs.pytest.org/en/7.1.x/how-to/monkeypatch.html>`__
   (testing MQTT functionality without MQTT/internet)
 
+Agenda
+------
+
+OO Design: Duck Typing, Inheritance, And Abstract Base Classes
+..............................................................
+
+* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
 Exceptions, ``with``
 ....................
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 * :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
 
-Package Management
-..................
+Package And Dependency Management
+.................................
 
+* :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/drafts/setuptools/topic`
 
@@ -139,3 +134,8 @@ Function Arguments, Closures, Decorators
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+
+Operator Overloading
+....................
+
+* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`

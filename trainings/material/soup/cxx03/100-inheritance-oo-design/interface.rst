@@ -35,6 +35,13 @@ Bringing It All Together
 Interfaces
 ----------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`
+
 **Bringing it all together**: an interface is defined like so ...
 
 * Virtual destructor, with an empty implementation (remember,
@@ -56,3 +63,10 @@ Interfaces
   in the interface's :doc:`protected interface <private-protected>`
 * |longrightarrow| Personal taste, combined with *respect for
   colleagues*
+
+.. note::
+
+   C++11 brings features for derived classes:
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`

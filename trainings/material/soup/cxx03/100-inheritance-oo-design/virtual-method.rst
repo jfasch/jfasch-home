@@ -19,7 +19,7 @@ Simple *Is-A* Relationship Is Not Enough
 
 .. code-block:: console
 
-   $ ./inher-basics-derived-novirtual-base-usage 
+   $ ./inher-oo-derived-novirtual-base-usage 
    Base::method()
 
 **Questions**
@@ -38,9 +38,8 @@ Simple *Is-A* Relationship Is Not Enough
 * In software, I don't want to care
 
   * **I only want to know the temperature**
-  * **I don't want to expose the physics of thermometers to me
+  * **I don't want to expose the physics of thermometers to my
     system**
-  * **I have my own problems**
 
 Enter ``virtual``
 -----------------
@@ -57,7 +56,7 @@ Enter ``virtual``
 
 .. code-block:: console
 
-   $ ./inher-basics-derived-virtual-base-usage 
+   $ ./inher-oo-derived-virtual-base-usage 
    Derived::method()
 
 **Question**
@@ -68,7 +67,6 @@ Enter ``virtual``
 
 * Performance |longrightarrow| *indirect function call* cannot be
   default
-* See :doc:`private-protected`
 
 Caution: ``virtual``
 --------------------
@@ -89,7 +87,7 @@ Caution: ``virtual``
 
 .. code-block:: console
 
-   $ ./inher-basics-derived-virtual-base-usage-wrong 
+   $ ./inher-oo-derived-virtual-base-usage-wrong 
    Base::method()
 
 **Obscure but correct**
@@ -104,5 +102,5 @@ Caution: ``virtual``
 
 .. code-block:: console
 
-   $ ./inher-basics-derived-virtual-base-usage-obscure 
+   $ ./inher-oo-derived-virtual-base-usage-obscure 
    Derived::method()

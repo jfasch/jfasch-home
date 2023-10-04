@@ -35,29 +35,29 @@ Implement a class ``Hysteresis_nopoly`` (a Thermostat) that works as follows.
 
 Use the following tests to drive you through the exercise:
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-nop_when_within_range.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-nop_when_within_range.cpp
    :language: c++
    :caption: :download:`Download
              hysteresis-nopoly-nop_when_within_range.cpp
-             </trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-nop_when_within_range.cpp>`
+             </trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-nop_when_within_range.cpp>`
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-falls_below_range.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-falls_below_range.cpp
    :language: c++
    :caption: :download:`Download
              hysteresis-nopoly-falls_below_range.cpp
-             </trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-falls_below_range.cpp>`
+             </trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-falls_below_range.cpp>`
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-rises_above_range.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-rises_above_range.cpp
    :language: c++
    :caption: :download:`Download
              hysteresis-nopoly-rises_above_range.cpp
-             </trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-rises_above_range.cpp>`
+             </trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-rises_above_range.cpp>`
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-rises_above_range_when_on.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-rises_above_range_when_on.cpp
    :language: c++
    :caption: :download:`Download
              hysteresis-nopoly-rises_above_range_when_on.cpp
-             </trainings/material/soup/cxx-exercises/hysteresis-nopoly/code/tests/hysteresis-nopoly-rises_above_range_when_on.cpp>`
+             </trainings/material/soup/cxx-exercises/nopoly-hysteresis/code/tests/hysteresis-nopoly-rises_above_range_when_on.cpp>`
 
 Topics Covered
 --------------

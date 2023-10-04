@@ -24,14 +24,14 @@ Exercise: ``RandomSensor_nopoly`` (Non-Polymorphic)
 Requirement
 -----------
 
-Implement a sensor class ``RandomSensor_nopoly`` which does not access any
-real hardware, but rather returns a random temperature within a given
-range.
+Implement a sensor class ``RandomSensor_nopoly`` which does not access
+any real hardware, but rather returns a random temperature within a
+given range.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-random-nopoly-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-random-nopoly-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-random-nopoly-basic.cpp
-	     </trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-random-nopoly-basic.cpp>`
+	     </trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-random-nopoly-basic.cpp>`
 
 Implementation Hint: Randomicity In C++
 .......................................

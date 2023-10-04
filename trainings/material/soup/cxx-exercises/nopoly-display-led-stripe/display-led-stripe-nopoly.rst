@@ -17,9 +17,9 @@ Exercise: ``LEDStripeDisplay_nopoly`` (Non-Polymorphic)
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx-exercises/sensors-core-nopoly/sensor-mock-nopoly`
-   * :doc:`/trainings/material/soup/cxx-exercises/switch-mock-nopoly/switch-mock-nopoly`
-   * :doc:`/trainings/material/soup/cxx-exercises/hysteresis-nopoly/hysteresis-nopoly`
+   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-mock-nopoly`
+   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
+   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
 
 Requirement
 -----------

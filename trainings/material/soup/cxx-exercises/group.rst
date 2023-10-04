@@ -26,13 +26,13 @@ Exercises
    design-patterns/group
    fh-sensor-oo-first-try/group
 
-   sensors-core-nopoly/sensor-const-nopoly
-   sensors-core-nopoly/sensor-random-nopoly
-   sensors-core-nopoly/sensor-mock-nopoly
-   switch-mock-nopoly/switch-mock-nopoly
-   sensor-avg-nopoly/sensor-avg-nopoly
-   hysteresis-nopoly/hysteresis-nopoly
-   display-led-stripe-nopoly/display-led-stripe-nopoly
+   nopoly-sensors-core/sensor-const-nopoly
+   nopoly-sensors-core/sensor-random-nopoly
+   nopoly-sensors-core/sensor-mock-nopoly
+   nopoly-switch-mock/switch-mock-nopoly
+   nopoly-sensor-avg/sensor-avg-nopoly
+   nopoly-hysteresis/hysteresis-nopoly
+   nopoly-display-led-stripe/display-led-stripe-nopoly
 
    sensor-interface/sensor-interface
 

@@ -18,14 +18,14 @@ Stringification And Representation
   ``eval()`` input
 * Default: prints something useless (class name and object identity)
 
-.. jupyter-execute::
-
-   class Person:
-       def __init__(self, firstname, lastname):
-           self.firstname = firstname
-           self.lastname = lastname
-
-   person = Person('Joerg', 'Faschingbauer')
+  .. jupyter-execute::
+  
+     class Person:
+         def __init__(self, firstname, lastname):
+             self.firstname = firstname
+             self.lastname = lastname
+  
+     person = Person('Joerg', 'Faschingbauer')
 
 * Expicitly calling ``str()`` on object
 
@@ -60,41 +60,41 @@ Overloading ``str()`` And ``repr()``: ``__str__()``, ``__repr__()``
 * ``__repr__()``: object representation. Usually the code to
   re-construct the object.
 
-.. jupyter-execute::
-
-   class Person:
-       def __init__(self, firstname, lastname):
-           self.firstname = firstname
-           self.lastname = lastname
-   
-       def __str__(self):
-           return f'{self.firstname} {self.lastname}'
-   
-       def __repr__(self):
-           return f'Person("{self.firstname}", "{self.lastname}")'
-
-.. jupyter-execute::
-
-   person = Person('Joerg', 'Faschingbauer')
+  .. jupyter-execute::
+  
+     class Person:
+         def __init__(self, firstname, lastname):
+             self.firstname = firstname
+             self.lastname = lastname
+     
+         def __str__(self):
+             return f'{self.firstname} {self.lastname}'
+     
+         def __repr__(self):
+             return f'Person("{self.firstname}", "{self.lastname}")'
+  
+  .. jupyter-execute::
+  
+     person = Person('Joerg', 'Faschingbauer')
 
 * ``str()`` (and ``print()``)
 
-.. jupyter-execute::
-
-   str(person)
-
-.. jupyter-execute::
-
-   print(person)
+  .. jupyter-execute::
+  
+     str(person)
+  
+  .. jupyter-execute::
+  
+     print(person)
 
 * ``repr()`` (and ``print()`` on lists)
 
-.. jupyter-execute::
-
-   print(repr(person))
-
-.. jupyter-execute::
-
-   print([person])
+  .. jupyter-execute::
+  
+     print(repr(person))
+  
+  .. jupyter-execute::
+  
+     print([person])
 
 

@@ -196,7 +196,9 @@ Block 2: C on Linux: Local and *Cross* Development
      * 3
      * **Homework Recap**
 
-       Talk about solutions from last time's (2023-04-21) homework.
+       Talk about solutions from :doc:`last time's (2023-04-21)
+       homework
+       </trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy>`
 
        **Work Environment**
 
@@ -339,9 +341,9 @@ Block 3: C++
 
        **Exercises**
 
-       * :doc:`/trainings/material/soup/cxx-exercises/sensors-core-nopoly/sensor-const-nopoly`
-       * :doc:`/trainings/material/soup/cxx-exercises/sensors-core-nopoly/sensor-random-nopoly`
-       * :doc:`/trainings/material/soup/cxx-exercises/switch-mock-nopoly/switch-mock-nopoly`
+       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly`
+       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly`
+       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
 
        *Note*: see `point.cpp
        <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__
@@ -360,7 +362,7 @@ Block 3: C++
 	 * Prepare according to README (see Github project page)
          * Build as usual
          * Implement requirements:
-           :doc:`/trainings/material/soup/cxx-exercises/hysteresis-nopoly/hysteresis-nopoly`
+           :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
 
        * *Upload to Moodle*
 
@@ -415,7 +417,7 @@ Block 3: C++
      * 3
      * 
 
-       * **More C++ Language Feature**
+       * **More C++ Language Features**
 
 	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
 	   (livehacked: `const-and-refs.cpp <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/const-and-refs.cpp>`__)
@@ -453,7 +455,7 @@ Block 3: C++
          * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
          * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
 
-       * :doc:`/trainings/material/soup/cxx-exercises/sensor-avg-nopoly/sensor-avg-nopoly`
+       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly`
 
 	 * Pull from our `Github project <https://github.com/jfasch/FH-ECE21>`__
 	 * Implement ``AveragingSensor_nopoly`` in
@@ -488,7 +490,7 @@ Block 3: C++
 	 * Prepare according to README (see Github project page)
          * Build as usual
          * Implement requirements:
-           :doc:`/trainings/material/soup/cxx-exercises/display-led-stripe-nopoly/display-led-stripe-nopoly`
+           :doc:`/trainings/material/soup/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
 
        * *Upload to Moodle*
 
@@ -510,8 +512,8 @@ Block 3: C++
 
 	  If you do, this will severely influence the exam grading!
 
-Finish
-------
+Finish: Written Exam
+--------------------
 
 * :doc:`exam-2023-06-30`
 * :doc:`exam-2023-06-30-solved`

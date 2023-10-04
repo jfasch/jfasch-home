@@ -19,18 +19,18 @@ Extending Existing Classes
 * *is-a* ``Person``, but with additional features
 * |longrightarrow| *Implementation inheritance*
 
-.. jupyter-execute::
-
-   class Person:
-       def __init__(self, firstname, lastname):
-           self.firstname = firstname
-           self.lastname = lastname
-   
-       def fullname(self):
-           return f'{self.firstname} {self.lastname}'
-   
-   class Employee(Person):  # <--- is-a Person
-       pass
+  .. jupyter-execute::
+  
+     class Person:
+         def __init__(self, firstname, lastname):
+             self.firstname = firstname
+             self.lastname = lastname
+     
+         def fullname(self):
+             return f'{self.firstname} {self.lastname}'
+     
+     class Employee(Person):  # <--- is-a Person
+         pass
 
 Creating an instance of ``Employee`` ...
 
@@ -38,10 +38,10 @@ Creating an instance of ``Employee`` ...
 * ``Person``: found
 * |longrightarrow| ``Person.__init__()`` called
 
-.. jupyter-execute::
-
-   emp = Employee('Joerg', 'Faschingbauer')
-   emp.fullname()
+  .. jupyter-execute::
+  
+     emp = Employee('Joerg', 'Faschingbauer')
+     emp.fullname()
 
 Additional Feature: Salary
 --------------------------
@@ -49,23 +49,23 @@ Additional Feature: Salary
 * ``Employee`` needs its own constructor (added ``salary``)
 * Calls base classe constructor |longrightarrow| ``super()``
 
-.. jupyter-execute::
-
-   class Employee(Person):
-       def __init__(self, firstname, lastname, salary):
-           super().__init__(firstname, lastname)   # <--- Person.__init__()
-           self.salary = salary
-   
-       def title(self):
-           return f'{self.fullname()} ({self.salary})'
+  .. jupyter-execute::
+  
+     class Employee(Person):
+         def __init__(self, firstname, lastname, salary):
+             super().__init__(firstname, lastname)   # <--- Person.__init__()
+             self.salary = salary
+     
+         def title(self):
+             return f'{self.fullname()} ({self.salary})'
 
 * Now calling ``Employee.__init__()`` ...
 * ... which in turn calls ``Person.__init__()``
 
-.. jupyter-execute::
-
-   emp = Employee('Joerg', 'Faschingbauer', 6000)
-   emp.title()
+  .. jupyter-execute::
+  
+     emp = Employee('Joerg', 'Faschingbauer', 6000)
+     emp.title()
 
 Want Manager
 ------------

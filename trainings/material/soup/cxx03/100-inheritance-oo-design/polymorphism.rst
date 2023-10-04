@@ -24,7 +24,8 @@ What Larger Systems Want
 * Have multiple objects of different *concrete* types (say,
   ``Derived1``, ``Derived2``) in a system
 * Access them through their base types
-* |longrightarrow| *interfaces* (but see :doc:`interface`)
+* |longrightarrow| *interfaces* (but there are gotchas - see
+  :doc:`interface`)
 * |longrightarrow| *polymorphic usage* of objects
 
 **Why do we want this?**
@@ -39,7 +40,7 @@ What Larger Systems Want
 
 .. code-block:: console
 
-   $ ./inher-basics-polymorphic 
+   $ ./inher-oo-polymorphic 
    Derived1::method()
    Derived2::method()
 
@@ -65,7 +66,7 @@ Pitfall |longrightarrow| *Pure Virtual Methods*
 
 .. code-block:: console
 
-   $ ./inher-basics-polymorphic-not-pure 
+   $ ./inher-oo-polymorphic-not-pure 
    Derived1::method()
    Derived2::method()
    Base::method()                # <--- BUG!
@@ -84,12 +85,12 @@ Pure Virtual Method
 
 .. code-block:: console
 
-   inher-basics-polymorphic-pure.cpp:39:14: error: cannot declare variable ‘d3’ to be of abstract type ‘Derived3’
+   inher-oo-polymorphic-pure.cpp:39:14: error: cannot declare variable ‘d3’ to be of abstract type ‘Derived3’
       39 |     Derived3 d3;
          |              ^~
-   inher-basics-polymorphic-pure.cpp:28:7: note:   because the following virtual functions are pure within ‘Derived3’:
+   inher-oo-polymorphic-pure.cpp:28:7: note:   because the following virtual functions are pure within ‘Derived3’:
       28 | class Derived3 : public Base
          |       ^~~~~~~~
-   inher-basics-polymorphic-pure.cpp:7:18: note:     ‘virtual void Base::method() const’
+   inher-oo-polymorphic-pure.cpp:7:18: note:     ‘virtual void Base::method() const’
        7 |     virtual void method() const = 0;
          |                  ^~~~~~

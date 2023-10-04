@@ -8,3 +8,4 @@ Embedded Computing 2021
    :maxdepth: 1
 
    ss2023
+   ws2023-2024

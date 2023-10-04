@@ -13,6 +13,12 @@ Exercise: Convert User Record To JSON And Back
 Requirement
 -----------
 
+.. sidebar::
+
+   **Documentation**
+
+   * :doc:`python:library/json`
+
 In :doc:`userdb_csv`, we created a set of routines around user records
 of the following form:
 

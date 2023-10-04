@@ -29,10 +29,10 @@ control the value that is returned by subsequent calls to
 
 Use the following test to guide you through the implementation:
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-mock-nopoly-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-mock-nopoly-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-mock-nopoly-basic.cpp
-             </trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-mock-nopoly-basic.cpp>`
+             </trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-mock-nopoly-basic.cpp>`
 
 Topics Covered
 --------------

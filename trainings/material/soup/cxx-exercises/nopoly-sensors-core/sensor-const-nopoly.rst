@@ -25,10 +25,10 @@ Implement a sensor class ``ConstantSensor_nopoly`` which does not
 access any real hardware, but rather always measures the same
 temperature - the one it is initialized with.
 
-.. literalinclude:: /trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-const-nopoly-basic.cpp
+.. literalinclude:: /trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-const-nopoly-basic.cpp
    :language: c++
    :caption: :download:`Download sensor-const-nopoly-basic.cpp
-             </trainings/material/soup/cxx-exercises/sensors-core-nopoly/code/tests/sensor-const-nopoly-basic.cpp>`
+             </trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-const-nopoly-basic.cpp>`
 
 Topics Covered
 --------------
