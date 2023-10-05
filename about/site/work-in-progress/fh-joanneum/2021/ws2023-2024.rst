@@ -53,36 +53,53 @@ Object Oriented Programming (C++)
 	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
 	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly` (`hysteresis.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/hysteresis.h>`__)
 
-	 * **Plan**  |:muscle:|
+       * **Plan**  |:muscle:|
 
-	   * Polymorphize switches and sensors |longrightarrow| interfaces
-	   * Use interfaces in LED display and hysteresis
+	 * Polymorphize switches and sensors |longrightarrow| interfaces
+	 * Use interfaces in LED display and hysteresis
 
-	     * Show example of a display that outputs sensor values to
-               ``stdout`` (rather than writing the output inline,
-               inside the measurement loop)
+	   Show example of a display that outputs sensor values to
+           ``stdout`` (rather than writing the output inline, inside
+           the measurement loop)
 
-	   * Define "datalogger" sink
+	 * Project: *Data Logger*
+
+	   * Define sink
 	   * Define source configuration
-	   * Lifetime (e.g. ``AveragingSensor::add()``)
-	     |longrightarrow| pointer classes
-	   * ... see what time brings ...
 
-	 * **OO Programming:** 
+	 * Lifetime (e.g. ``AveragingSensor::add()``) |longrightarrow|
+	   pointer classes
+	 * ... see what time brings ...
 
-	   From
-	   :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
-	   ...
+       * **OO Programming:** 
 
-	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
-	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
-	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
-	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
-	   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+	 From
+	 :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+	 ...
 
-	   From
-	   :doc:`/trainings/material/soup/cxx11/020-new-language-features/group`
-	   ...
+         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
+         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
+         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
+         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
+         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
-	   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+	 From
+	 :doc:`/trainings/material/soup/cxx11/020-new-language-features/group`
+	 ...
+
+	 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+
+       * **Git Collaboration** (via Github, *but not necessarily*)
+
+	 `Github pull requests
+	 <https://docs.github.com/pull-requests>`__, especially ...
+
+	 * `Fork and pull model
+	   <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`__
+	 * `Fork a repo
+           <https://docs.github.com/en/get-started/quickstart/fork-a-repo>`__
+	 * `About pull requests
+           <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>`__
+	 * `Creating a pull request from a fork
+           <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>`__
