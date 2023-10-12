@@ -16,7 +16,6 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
-
 Python Advanced (2023-10-24 - 2023-10-26)
 -----------------------------------------
 
@@ -24,10 +23,23 @@ This course is under preparation.
 
 (:doc:`More ... <detail/2023-10-24--Python-Advanced/index>`)
 
+Python Advanced (2023-10-09 - 2023-10-11)
+-----------------------------------------
+
+Teaching Python to a number of smart people, at a long-time customer
+of mine.
+
+Location: Thalheim, Austria
+
+(:doc:`More ... <detail/2023-10-09--Python-Advanced/index>`)
+
 Python Advanced (2023-09-25 - 2023-09-27)
 -----------------------------------------
 
-This course is under preparation.
+Teaching Python to a number of smart people, at a long-time customer
+of mine.
+
+Location: Thalheim, Austria
 
 (:doc:`More ... <detail/2023-09-25--Python-Advanced/index>`)
 

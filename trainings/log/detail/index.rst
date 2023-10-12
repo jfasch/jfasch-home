@@ -4,6 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2023-10-09--Python-Advanced/index
    2023-10-24--Python-Advanced/index
    2023-09-25--Python-Advanced/index
    2023-XX-XX-C++-Advanced/index
