@@ -28,7 +28,7 @@ Python Advanced (2023-10-09 - 2023-10-11)
    * Entire notebook: :doc:`notebook`
    * Download notebook: :download:`notebook.ipynb`
 
-   **Github Repository**
+   **Github Repository (private to course participants)**
 
    * `https://github.com/jfasch/2023-10-09
      <https://github.com/jfasch/2023-10-09>`__

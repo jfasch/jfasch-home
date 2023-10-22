@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda: Python Advanced (2023-10-23 - 2023-10-25)
+Agenda: Python Advanced (2023-10-24 - 2023-10-26)
 =================================================
 
 .. contents::
@@ -181,6 +181,6 @@ Group Project: An Idea
 
 * Data acquisition: gathering sensor data
 * Varying kinds of sensors: physical hardware, internet proxy, MQTT,
-    ...
+  ...
 * Varying kinds of information sinks: CSV, database, MQTT, ...
 * Acquisition machinery: timestamping, frequency, buffering, ...
