@@ -67,7 +67,7 @@ knew more. Here the more advanced core Python topics that shall be
 covered.
 
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
-* :doc:`/trainings/material/soup/python/misc/context_manager/topic`
+* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
 * :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 * :doc:`/trainings/material/soup/python/advanced/modules`
@@ -487,22 +487,3 @@ climb the `Traunstein
 
 :doc:`See here for the description and pictures from this
 extraordinary hike.  </blog/2020/09/traunstein>`
-
-Graph
------
-
-.. ot-graph::
-   :entries: python.misc.ai.linear_regression,
-	     python.misc.ai.k_means,
-	     python.advanced.oo.inheritance,
-	     python.misc.context_manager,
-	     python.advanced.oo.operator_overloading,
-	     python.advanced.closures,
-	     python.advanced.decorators,
-	     python.advanced.starargs,
-	     python.advanced.modules,
-	     python.advanced.python_1010_generators_yield,
-	     python.misc.encoding,
-	     python.basics.installation,
-	     python.advanced.exceptions
-

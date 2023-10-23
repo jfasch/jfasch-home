@@ -53,7 +53,6 @@ material.
    ai/group
    mqtt/topic
    python_5550_xml_etree/topic
-   context_manager/topic
    import
    vscode
    encoding/topic
