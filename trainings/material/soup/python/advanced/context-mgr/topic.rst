@@ -55,7 +55,7 @@ Without ``with``, this would have to look more ugly:
            if 'jfasch' in line:
                print(line)
    finally:
-       f.close()
+       f.close()                  # <--- gosh: what if open() failed?
 
 Example: Temporary Directory
 ----------------------------

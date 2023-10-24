@@ -50,8 +50,8 @@ Threads: The Pythonic Way
 
 **Two threads exist, runnning in parallel**
 
-* Main thread (not explicitly create)
-* Background integer incrementer (explicitly started)
+* Main thread (not explicitly created)
+* Background integer incrementer (explicitly created)
 
 Threads: The OO Way - Inheritance
 ---------------------------------

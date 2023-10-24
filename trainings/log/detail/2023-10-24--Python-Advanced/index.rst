@@ -49,7 +49,8 @@ Python Basics Recap
 -------------------
 
 All optional. But we should not miss the central points like Python's
-referencing scheme, im/mutability, memory management, typing.
+referencing scheme, im/mutability, memory management,
+typing. Everything's an object, alas.
 
 Datatypes, Datatypes
 ....................
@@ -95,6 +96,8 @@ Miscellaneous
 Exercise Series: CSV Files
 ..........................
 
+If appropriate, go through these exercises:
+
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
@@ -129,4 +132,4 @@ From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
 
 * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
-  * Require ``Sensor`` being-a ``abc.ABC`` (*test first*)
+  * Require ``Sensor`` to be-a ``abc.ABC`` (*test first*)
