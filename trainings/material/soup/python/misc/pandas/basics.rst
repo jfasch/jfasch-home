@@ -58,10 +58,10 @@ Inverted: Objects, And Collections Of Objects (|longrightarrow| ``DataFrame``)
 .. jupyter-execute::
 
    persons = {
-       'firstname': ['Joerg',                  'Johanna',        'Caro',              'Philipp'          ],
-       'lastname':  ['Faschingbauer',          'Faschingbauer',  'Faschingbauer',     'Lichtenberger'    ],
-       'email':     ['jf@faschingbauer.co.at', 'caro@email.com', 'johanna@email.com', 'philipp@email.com'],
-       'age':       [56,                       27,               25,                  37                 ],
+       'firstname': ['Joerg',                  'Johanna',           'Caro',              'Philipp'          ],
+       'lastname':  ['Faschingbauer',          'Faschingbauer',     'Faschingbauer',     'Lichtenberger'    ],
+       'email':     ['jf@faschingbauer.co.at', 'johanna@email.com', 'caro@email.com',    'philipp@email.com'],
+       'age':       [56,                       27,                  25,                  37                 ],
    }
 
 * Operation: *column selection*

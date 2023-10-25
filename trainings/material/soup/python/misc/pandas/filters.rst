@@ -16,10 +16,10 @@ Pandas: Filters
    import pandas as pd
 
    persons = pd.DataFrame({
-       'firstname': ['Joerg',                  'Johanna',        'Caro',              'Philipp'          ],
-       'lastname':  ['Faschingbauer',          'Faschingbauer',  'Faschingbauer',     'Lichtenberger'    ],
-       'email':     ['jf@faschingbauer.co.at', 'caro@email.com', 'johanna@email.com', 'philipp@email.com'],
-       'age':       [56,                       27,               25,                  37                 ],
+       'firstname': ['Joerg',                  'Johanna',           'Caro',              'Philipp'          ],
+       'lastname':  ['Faschingbauer',          'Faschingbauer',     'Faschingbauer',     'Lichtenberger'    ],
+       'email':     ['jf@faschingbauer.co.at', 'johanna@email.com', 'caro@email.com',    'philipp@email.com'],
+       'age':       [56,                       27,                  25,                  37                 ],
    })
 
 Basic Filter Example
@@ -94,8 +94,10 @@ Boolean Expressions: Bitwise Operators! Braces!
 
 * **Confusion**: braces around ``==`` are important!
 * *Bitwise* ``&`` binds stronger than ``==``
-* |longrightarrow| wish they had used the normal boolean operators
+* Wish they had used the normal boolean operators
   instead
+* But those cannot be overloaded (they are more like control flow
+  tools)
 
 Anyway,
 

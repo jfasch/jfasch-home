@@ -21,12 +21,12 @@ Example 1: Lowercasing A Column Of Strings
    import pandas as pd
 
    persons = pd.DataFrame({
-       'firstname': ['Joerg',                  'Johanna',        'Caro',              'Philipp'          ],
-       'lastname':  ['Faschingbauer',          'Faschingbauer',  'Faschingbauer',     'Lichtenberger'    ],
+       'firstname': ['Joerg',                  'Johanna',           'Caro',              'Philipp'          ],
+       'lastname':  ['Faschingbauer',          'Faschingbauer',     'Faschingbauer',     'Lichtenberger'    ],
 
-       'email':     ['JF@faschingbauer.co.at', 'Caro@email.com', 'Johanna@email.com', 'PHILIPP@email.com'],
+       'email':     ['JF@faschingbauer.co.at', 'Johanna@email.com', 'Caro@email.com',    'PHILIPP@email.com'],
 
-       'age':       [56,                       27,               25,                  37                 ],
+       'age':       [56,                       27,                  25,                  37                 ],
    })
 
 .. jupyter-execute::
