@@ -254,29 +254,6 @@ https://pypi.org/project/pydbus/
 
   ``$ dnf install all packages``
 
-
-Perturb :doc:`Encoding </trainings/material/soup/python/misc/encoding/topic>`
-.............................................................................
-
-* Rename it so we can fix all referers. Split string explanation out
-  of legacy "encoding" topic.
-* Create "legacy" group and move old stuff there.
-* Move new encoding into basic. Better yet, create one new group
-  'special' ("other python core topics")
-
-:doc:`/trainings/material/soup/python/misc/context_manager/slides`
-..................................................................
-
-Bring pseudo code in the slideshow. What is solved?
-
-ABC (new Topic)
-...............
-
-There was a live-hacking session about interface vs. duck typing (in
-:doc:`Gmunden </trainings/log/detail/2020-09-07/index>` I
-belive). Error at instantiate (``abc``) rather than use: *as early as
-possible*).
-
 Finish Meta/SEO and Stuff
 -------------------------
 

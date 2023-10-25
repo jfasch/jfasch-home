@@ -314,7 +314,7 @@ Temporary Test Directory
 
 .. sidebar::
 
-   More built-in fixture see :doc:`pytest:reference/fixtures`
+   More built-in fixtures see :doc:`pytest:reference/fixtures`
 
 * Sometimes it is necessary to create temporary data in the filesystem
 * ``pytest`` has a number of fixtures to cover this (and related) use

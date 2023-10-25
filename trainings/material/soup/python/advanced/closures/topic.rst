@@ -35,7 +35,9 @@ Today
 
 * Definitely not unique to Python
 
-  * Although Wikipedia start out with Python examples
+  * Although `Wikipedia
+    <https://en.wikipedia.org/wiki/Closure_(computer_programming)>`__
+    starts out with Python examples
 
 ``def`` is a Statement
 ----------------------
