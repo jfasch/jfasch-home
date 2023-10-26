@@ -94,8 +94,8 @@ From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
 Day 2
 -----
 
-Leftover From Yesterday
-.......................
+Leftovers From Yesterday
+........................
 
 * ``float.__int__()`` (via ``Person.__str__()``)
 * Where does the ``exit()`` function come from? It is not documented
@@ -108,15 +108,9 @@ Leftover From Yesterday
 
   |longrightarrow| a-ha
 
-* ``frozendict``? There is no such thing, but there's a :doc:`python:library/stdtypes`
+* ``frozendict``? There is no such thing, but there's a
+  :doc:`frozenset <python:library/stdtypes>`
 * ``async``/``await``? |longrightarrow| :doc:`/about/site/work-in-progress/blink/index`
-
-Group Project: Flip Chart Sketches
-..................................
-
-jjj take pictures
-
-jjj * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
 Miscellaneous
 .............
@@ -211,9 +205,10 @@ Morning Greeting
   (enter :doc:`/trainings/material/soup/python/advanced/closures/topic`)
 * Further plan (see below)
 
-Decorator Toolcase, Continued
-.............................
+Decorator Toolcase, Continued (Including Function Scoping and ``global``)
+.........................................................................
 
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
@@ -322,15 +317,6 @@ Bring timestamps (``datatime.datatime``) into the game ...
   that is composed in ``AcquisitionLoop``, and consumed across all
   ``Sink`` implementations.
 
-Error Handling And Recovery
-...........................
-
-* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
-* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
-
-Still Untold
-------------
-
 Data Science
 ............
 
@@ -364,21 +350,15 @@ NumPy
 	     allowfullscreen>
      </iframe>
 
-Looping Constructs (With An Emphasis On The ``else`` Clause)
-............................................................
+Error Handling And Recovery
+...........................
 
-* :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
-
-Functions
-.........
-
-* :doc:`/trainings/material/soup/python/basics/python_0270_functions/slideshow`
-* :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
+* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
 
 Project Management
 ..................
 
-* :doc:`/trainings/material/soup/linux/basics/intro/wsl`
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
+
