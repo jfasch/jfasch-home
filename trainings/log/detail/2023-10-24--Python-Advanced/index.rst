@@ -204,7 +204,12 @@ Morning Greeting
 * How does ``pytest`` know which fixtures are requested?
   |longrightarrow| :doc:`python:library/inspect`
 * Sergey's OPC-UA sensor
-* |longrightarrow| further plan
+* Revisit ``test_acquisition_loop.test_mock_csv_sink``. Replace
+  ``class MyMockedThing`` with a function that uses ``nonlocal``
+* |longrightarrow|
+  :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
+  (enter :doc:`/trainings/material/soup/python/advanced/closures/topic`)
+* Further plan (see below)
 
 Decorator Toolcase, Continued
 .............................
@@ -216,6 +221,15 @@ Multithreading
 ..............
 
 * :doc:`/trainings/material/soup/python/advanced/multithreading/basics`
+* Hack small *Load-Modify-Store* race
+  (:doc:`/trainings/material/soup/linux/sysprog/posix-threads/030-exercise-pthcreate-race-condition/topic`
+  and
+  :doc:`/trainings/material/soup/linux/sysprog/posix-threads/040-mutex/topic`
+  in C++
+* Same in Python |longrightarrow| nothing
+* |longrightarrow| The GIL (Global Interpreter Lock), and `its way out
+  of the Python interpreter
+  <https://discuss.python.org/t/pep-703-making-the-global-interpreter-lock-optional-in-cpython-acceptance/37075>`__
 * :doc:`/trainings/material/soup/python/advanced/multithreading/mutex`
 
 Exercises

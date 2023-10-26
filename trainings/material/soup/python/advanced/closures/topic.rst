@@ -96,7 +96,8 @@ Inner Function Reaches Out To Global Scope
 ------------------------------------------
 
 * Variables in global scope can be accessed by "inner" functions
-* No surprise: global variables can be accessed by *any* function
+* *No surprise*: global variables can be accessed by *any* function
+* *No surprise*: global variables have program lifetime
 
 .. jupyter-execute::
 
@@ -145,21 +146,21 @@ A Less Theoretical "Use Case"
 
 .. jupyter-execute::
 
-   def print_it(msg):
-       def _p():
-           print(msg)
-       return _p
+   def create_print(msg):   # <--- parameters are local variables to the callee
+       def p():
+           print(msg)       # <--- local variable captured
+       return p
    
-   blah = print_it('blah')
-   something = print_it('something')
+   print_blah = create_print('blah')
+   print_something = create_print('something')
    
-   blah()
-   something()
+   print_blah()
+   print_something()
 
 Scope Issues: Assignment to Global Scope (``global`` Keyword)
 -------------------------------------------------------------
 
-* First assignment create variable *in local scope*
+* First assignment creates variable *in local scope*
 * The following is wrong! (At least if you want to assign to *global*
   ``g``)
 

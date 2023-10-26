@@ -59,6 +59,17 @@ Decorators Overview
    def bar(a, b, c):
        ...
 
+A Simple Minded Function
+------------------------
+
+.. jupyter-execute::
+
+   def f():
+       print('f called (inside the function)')
+       return 42
+
+   f()
+
 Decorator Basics
 ----------------
 
@@ -76,7 +87,7 @@ Decorator Basics
 
    def debug(func):
        def wrapper():
-           print(func.__name__, 'called')
+           print(func.__name__, 'called (says wrapper)')
            return func()
        return wrapper
 
@@ -87,10 +98,8 @@ Decorators are Syntactic Sugar
 
 .. jupyter-execute::
 
-   def f():
-       print('f called')
-       return 42
    f = debug(f)
+   f()
 
 * This is too much typing
 * Why explicitly *replace* a function?
@@ -103,6 +112,10 @@ Decorators are Syntactic Sugar
    @debug
    def f():
        return 42
+
+.. jupyter-execute::
+
+   f()
 
 Problem: Arbitrary Function Arguments
 -------------------------------------
@@ -197,18 +210,18 @@ Class Decorator: ``debug()`` with prefix
        def __init__(self, msg):
            self.msg = msg
    
-       def __call__(self, func):
+       def __call__(self, func):        # <--- __call__() implements () (calls) on objects of "class debug"
            @functools.wraps(func)
            def wrapper(*args, **kwargs):
                print(f'{self.msg}: func = {func.__name__}, {args}, {kwargs}')
                return func(*args, **kwargs)
            return wrapper
    
-   @debug('wtf')
+   @debug('wtf')                        # <--- here
    def add(l, r):
        return l+r
    
-   @debug('gosh')
+   @debug('gosh')                       # <--- and here
    def sub(l, r):
        return l-r
    
