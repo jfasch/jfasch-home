@@ -8,8 +8,8 @@ setup(
     # long_description='blah',
     # long_description_content_type='text/markdown',
 
-    url='https://fronius.com',
-    author='Rene Allerstorfer',
+    url='https://company.com',
+    author='Joerg Faschingbauer',
 
     # https://pypi.org/classifiers/
     classifiers=[
