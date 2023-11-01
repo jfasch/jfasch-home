@@ -12,100 +12,201 @@ WS2023/24
 .. contents::
    :local:
 
-Object Oriented Programming (C++)
----------------------------------
+2023-10-05 (6 VO)
+-----------------
 
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
+OO: Recap
+.........
 
-   * * VO
-     * KU
-     * #Units
-     * Topics
-   * * 2023-10-05
-     * 6
-     * 
-     * 
-       * **OO Recap**
+* *What we know*: Constructor, Methods, Objects, ``this``
 
-	 * *What we know*: Constructor, Methods, Objects, ``this``
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+  
+* *What we have*
 
-	   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-	   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
-	   
-	 * *What we have*
+  *Sensor-like* types
 
-	   *Sensor-like* types
+  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
+  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-mock-nopoly` (`sensor-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-mock.h>`__)
+  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly` (`sensor-random.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-random.h>`__)
+  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
 
-           * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
-	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-mock-nopoly` (`sensor-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-mock.h>`__)
-           * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly` (`sensor-random.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-random.h>`__)
-	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
+  *Switch-like* types
 
-	   *Switch-like* types
+  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly` (`switch-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/switch-mock.h>`__)
 
-	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly` (`switch-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/switch-mock.h>`__)
+  *Consumers*
 
-	   *Consumers*
+  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
+  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly` (`hysteresis.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/hysteresis.h>`__)
 
-	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
-	   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly` (`hysteresis.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/hysteresis.h>`__)
+Plan |:muscle:|
+...............
 
-       * **Plan**  |:muscle:|
+* Polymorphize switches and sensors |longrightarrow| interfaces
+* Use interfaces in LED display and hysteresis
 
-	 * Polymorphize switches and sensors |longrightarrow| interfaces
-	 * Use interfaces in LED display and hysteresis
+  Show example of a display that outputs sensor values to ``stdout``
+  (rather than writing the output inline, inside the measurement loop)
 
-	   Show example of a display that outputs sensor values to
-           ``stdout`` (rather than writing the output inline, inside
-           the measurement loop)
+* Project: *Data Logger*
 
-	 * Project: *Data Logger*
+  * Define sink
+  * Define source configuration
 
-	   * Define sink
-	   * Define source configuration
+* Lifetime (e.g. ``AveragingSensor::add()``) |longrightarrow| pointer
+  classes
+* ... see what time brings ...
 
-	 * Lifetime (e.g. ``AveragingSensor::add()``) |longrightarrow|
-	   pointer classes
-	 * ... see what time brings ...
+OO: Polymorphism
+................
 
-       * **OO Programming:** 
+From
+:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`:
 
-	 From
-	 :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
-	 ...
+* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
+* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
+* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
+* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
+* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
-         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
-         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
-         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
-         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
-         * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+From
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/group`:
 
-	 From
-	 :doc:`/trainings/material/soup/cxx11/020-new-language-features/group`
-	 ...
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
 
-	 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+Git Collaboration (via Github, but not necessarily)
+...................................................
 
-       * **Git Collaboration** (via Github, *but not necessarily*)
+`Github pull requests
+<https://docs.github.com/pull-requests>`__, especially ...
 
-	 `Github pull requests
-	 <https://docs.github.com/pull-requests>`__, especially ...
+* `Fork and pull model
+  <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`__
+* `Fork a repo
+  <https://docs.github.com/en/get-started/quickstart/fork-a-repo>`__
+* `About pull requests
+  <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>`__
+* `Creating a pull request from a fork
+  <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>`__
 
-	 * `Fork and pull model
-	   <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`__
-	 * `Fork a repo
-           <https://docs.github.com/en/get-started/quickstart/fork-a-repo>`__
-	 * `About pull requests
-           <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>`__
-	 * `Creating a pull request from a fork
-           <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>`__
+.. image:: github-workflow.jpg
 
-	 .. image:: github-workflow.jpg
+.. image:: teams-2023-10-05.jpg
 
-	 .. image:: teams-2023-10-05.jpg
+2023-11-02 (6 VO)
+-----------------
 
-	    
+Organizational
+..............
+
+* Course page modifications (chapters instead of table)
+* Grading scheme
+
+OO: Design?
+...........
+
+* Look over integrated pull requests
+
+  * ``ConstantSensor``
+  * ``RandomSensor``
+  * ``MockSensor``
+  * ``AveragingSensor`` |longrightarrow| Design patterns
+    (:doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`)
+
+* What was that all for?
+
+  * Structure: ``Sensor`` interface
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+  * Design patterns (outlook)
+
+    * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+    * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+    * Many more: :doc:`/trainings/material/soup/cxx-design-patterns/group`
+
+Project
+.......
+
+Data Logger
+```````````
+
+.. sidebar::
+
+   **Documentation**
+
+   * `std::vector
+     <https://en.cppreference.com/w/cpp/container/vector>`__
+   * `std::pair <https://en.cppreference.com/w/cpp/utility/pair>`__
+   * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+
+Acquisition loop, left (sensors), right (a CSV file?
+Terminal/``std::cout``?). Sketch that in spaghetti style
+|longrightarrow| reusable components!
+
+* Sensor config (by name). `Vector
+  <https://en.cppreference.com/w/cpp/container/vector>`__ of `pairs
+  <see https://en.cppreference.com/w/cpp/utility/pair>`__ ``(name:
+  string, Sensor*)`` internally, but with a dedicated class around it
+  to constrain the interface to what's needed.
+* Acquisition loop class. *Interval*, left (sensor config), right
+  (CSV/Terminal?).
+* Problem: decoupling |longrightarrow| *interface* (eg. ``Sink``)
+
+Boiling Pot
+```````````
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
+
+Basic feature set
+
+* Temperature setting (a wheel/potentiometer)
+* Hardwired low/high hysteresis setting
+
+Optional
+
+* Temperature display |longrightarrow| later (we have
+  ``LEDStripeDisplay``, but that *is-not-a* ``Display``)
+* Modifiable low/high hysteresis settings
+
+Switch Interface
+````````````````
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
+
+We have ``MockSwitch`` that serves no real purpose but
+testing. Prepare the ground for future "real" switches (see below).
+
+* Define a ``Switch`` interface (``switch.h``, much like ``sensor.h``)
+* Change ``MockSwitch`` to be *an implementation of* ``Switch``
+* Modify ``LEDStripeDisplay`` to use ``Sensor`` and ``Switch`` (and
+  not ``MockSensor`` and ``MockSwitch``)
+* Modify ``Hysteresis`` to use ``Sensor`` and ``Switch`` (and not
+  ``MockSensor`` and ``MockSwitch``)
+
+Real Switches
+`````````````
+
+* :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
+* Show live operation on the Pi
+* File IO
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+
+Temperature Display: LED Via A PWM Controller
+`````````````````````````````````````````````
+
+* :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
+* Define ``Display`` interface
+* Put ``LEDStripeDisplay`` under it
