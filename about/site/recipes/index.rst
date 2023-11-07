@@ -12,3 +12,4 @@ Recipes
    isoamsr
    isonum
    sphinxish
+   camera-ssh

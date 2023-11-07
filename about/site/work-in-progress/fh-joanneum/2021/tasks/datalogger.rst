@@ -1,0 +1,89 @@
+.. include:: <mmlalias.txt>
+
+.. ot-task:: fh2021.datalogger
+
+
+Data Logger
+===========
+
+.. sidebar::
+
+   **Documentation**
+
+   * `std::vector
+     <https://en.cppreference.com/w/cpp/container/vector>`__
+   * `std::pair <https://en.cppreference.com/w/cpp/utility/pair>`__
+   * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+
+Acquisition loop, left (sensors), right (a CSV file?
+Terminal/``std::cout``?). Sketch that in spaghetti style
+|longrightarrow| reusable components!
+
+* Sensor config (by name). `Vector
+  <https://en.cppreference.com/w/cpp/container/vector>`__ of `pairs
+  <see https://en.cppreference.com/w/cpp/utility/pair>`__ ``(name:
+  string, Sensor*)`` internally, but with a dedicated class around it
+  to constrain the interface to what's needed.
+* Acquisition loop class. *Interval*, left (sensor config), right
+  (CSV/Terminal?).
+* Problem: decoupling |longrightarrow| *interface* (eg. ``Sink``)
+
+Requirements
+------------
+
+Modify the program ``bin/data-logger.cpp`` to compose itself out of
+prebuilt components.
+
+* Sensor config (by name).
+* Acquisition loop class. *Interval*, left (sensor config), right
+  (CSV/Terminal?).
+* Problem: decoupling |longrightarrow| *interface* (eg. ``Sink``)
+
+Implementation
+--------------
+
+Look like a number of classes is in order ...
+
+* ``SensorConfig``. Holds the sensors, together with their names. 
+
+  * ``void add(const std::string& name, Sensor*);``
+  * Iteration over ``(name,sensor)`` pairs. Maybe a method ``const
+    std::map<std::string, Sensor*> all();`` that gives easy access to
+    that iteration? See the current state of ``bin/data-logger.cpp``
+    for iteration.
+
+* ``SensorValues``. Much like the ``SensorConfig``, but with live
+  values instead of sensors.
+
+* ``AcquisitionLoop``.
+
+  * (Constructor). Parameters ``interval``, ``n_iterations``?
+  * ``void doit();`` Nothing more.
+
+* A ``Sink`` hierarchy, starting at the interface ``Sink``. (See the
+  ``Sensor`` hierarchy for how interfaces are made.)
+
+  * The interface will have to have something like ``void
+    write_measurements(const SensorValues&);``
+  * The first implementation could be for testing only -
+    ``MockingSink``. That class simply stores the ``SensorValues``
+    that it receives in a ``std::vector`` that is used by the tests.
+
+Testing
+-------
+
+* Try hard to test all aspects
+* Write tests before you start to program
+
+Future (*Not* Part Of This Development Cycle)
+---------------------------------------------
+
+* Configuration files format(s). JSON? XML? YAML? ``.ini``?
+* CSV sink
+* MQTT sink
+
+Dependencies
+------------
+
+.. ot-graph::
+   :entries: fh2021.datalogger

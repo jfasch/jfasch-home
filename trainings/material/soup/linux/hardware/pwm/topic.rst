@@ -235,32 +235,12 @@ exports the device in a directory under the ``sysfs`` tree,
 ``/sys/class/pwm/pwmchip0`` is actually a symbolic link to a device
 which obviously is located in an area in the ``sysfs`` tree that is
 responsible for I2C. We do not care. Change the current working
-directory into there.
-
-.. note::
-
-   Unfortunately, the default permissions of the sysfs PWM interface
-   are ``root/root``, so we have to be logged in as root. ``sudo -i``
-   will do the job, for example.
-
-   .. code-block:: console
-   
-      $ sudo -i
-      
-      SSH is enabled and the default password for the 'pi' user has not been changed.
-      This is a security risk - please login as the 'pi' user and type 'passwd' to set a new password.
-      
-      # 
-
-   (The ``#`` prompt shows us that we are logged in as root now. We
-   ignore security warnings.)
-
-Now, shift our butt into the chip, and see what's there,
+directory into ``/sys/class/pwm/pwmchip0``, and see what's there.
 
 .. code-block:: console
 
-   # cd /sys/class/pwm/pwmchip0
-   # ls -l
+   $ cd /sys/class/pwm/pwmchip0
+   $ ls -l
    total 0
    lrwxrwxrwx 1 root root    0 Aug 10 10:14 device -> ../../../1-0040
    --w------- 1 root root 4096 Aug 10 10:14 export
@@ -277,8 +257,8 @@ channel 0. Export that to userspace, by writing ``0`` into the
 
 .. code-block:: console
 
-   # echo 0 > export 
-   # ls -l 
+   $ echo 0 > export 
+   $ ls -l 
    total 0
    ...
    drwxr-xr-x 3 root root    0 Aug 10 10:21 pwm0
@@ -289,7 +269,7 @@ see what's there.
 
 .. code-block:: console
 
-   # ls -l
+   $ ls -l
    total 0
    ...
    -rw-r--r-- 1 root root 4096 Aug 10 10:23 duty_cycle
@@ -306,20 +286,20 @@ those files. First the PWM period,
 
 .. code-block:: console
 
-   # echo 1000000 > period
+   $ echo 1000000 > period
 
 This does nothing because the duty cycle is still 0,
 
 .. code-block:: console
 
-   # cat duty_cycle 
+   $ cat duty_cycle 
    0
 
 Bring LED to full brightness,
 
 .. code-block:: console
 
-   # echo 1000000 > duty_cycle 
+   $ echo 1000000 > duty_cycle 
 
 Dim it,
 
@@ -334,7 +314,7 @@ Fade it programmatically [#dim-not-linear]_,
 
 .. code-block:: console
 
-   # for d in 1000000 800000 600000 400000 200000 100000 50000 0; do
+   $ for d in 1000000 800000 600000 400000 200000 100000 50000 0; do
    >    echo $d > duty_cycle
    >    sleep 0.5
    > done

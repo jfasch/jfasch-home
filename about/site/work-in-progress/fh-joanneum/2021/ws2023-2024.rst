@@ -4,6 +4,11 @@
 WS2023/24
 =========
 
+.. toctree::
+   :hidden:
+
+   tasks/group
+
 .. sidebar::
 
    * `Github project <https://github.com/jfasch/FH-ECE21>`__
@@ -96,7 +101,7 @@ Git Collaboration (via Github, but not necessarily)
 
 .. image:: teams-2023-10-05.jpg
 
-2023-11-02 (6 VO)
+2023-11-03 (6 VO)
 -----------------
 
 Organizational
@@ -113,14 +118,19 @@ OO: Design?
   * ``ConstantSensor``
   * ``RandomSensor``
   * ``MockSensor``
-  * ``AveragingSensor`` |longrightarrow| Design patterns
-    (:doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`)
+  * ``AveragingSensor``
+
+    * Dependencies: does it really need ``sensor-mock.h``?
+    * |longrightarrow| UML sketch
+
+* :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
+* |longrightarrow| Design patterns
+  (:doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`)
 
 * What was that all for?
 
   * Structure: ``Sensor`` interface
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
-  * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
   * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
   * Design patterns (outlook)
 
@@ -131,82 +141,34 @@ OO: Design?
 Project
 .......
 
-Data Logger
-```````````
+Hardware Overview
+`````````````````
 
 .. sidebar::
 
-   **Documentation**
-
-   * `std::vector
-     <https://en.cppreference.com/w/cpp/container/vector>`__
-   * `std::pair <https://en.cppreference.com/w/cpp/utility/pair>`__
-   * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
-
-Acquisition loop, left (sensors), right (a CSV file?
-Terminal/``std::cout``?). Sketch that in spaghetti style
-|longrightarrow| reusable components!
-
-* Sensor config (by name). `Vector
-  <https://en.cppreference.com/w/cpp/container/vector>`__ of `pairs
-  <see https://en.cppreference.com/w/cpp/utility/pair>`__ ``(name:
-  string, Sensor*)`` internally, but with a dedicated class around it
-  to constrain the interface to what's needed.
-* Acquisition loop class. *Interval*, left (sensor config), right
-  (CSV/Terminal?).
-* Problem: decoupling |longrightarrow| *interface* (eg. ``Sink``)
-
-Boiling Pot
-```````````
-
-.. sidebar::
-
-   **See also**
-
-   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
-
-Basic feature set
-
-* Temperature setting (a wheel/potentiometer)
-* Hardwired low/high hysteresis setting
-
-Optional
-
-* Temperature display |longrightarrow| later (we have
-  ``LEDStripeDisplay``, but that *is-not-a* ``Display``)
-* Modifiable low/high hysteresis settings
-
-Switch Interface
-````````````````
-
-.. sidebar::
-
-   **See also**
-
-   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
-
-We have ``MockSwitch`` that serves no real purpose but
-testing. Prepare the ground for future "real" switches (see below).
-
-* Define a ``Switch`` interface (``switch.h``, much like ``sensor.h``)
-* Change ``MockSwitch`` to be *an implementation of* ``Switch``
-* Modify ``LEDStripeDisplay`` to use ``Sensor`` and ``Switch`` (and
-  not ``MockSensor`` and ``MockSwitch``)
-* Modify ``Hysteresis`` to use ``Sensor`` and ``Switch`` (and not
-  ``MockSensor`` and ``MockSwitch``)
-
-Real Switches
-`````````````
+   * :doc:`/about/site/recipes/camera-ssh`
 
 * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
-* Show live operation on the Pi
-* File IO
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+  (see :doc:`tasks/sysfs-gpio-switch`)
+* :doc:`/trainings/material/soup/linux/hardware/w1/topic` (``class
+  W1Sensor`` implements that, in our project)
+* :doc:`/trainings/material/soup/linux/hardware/pwm/topic` (see
+  :doc:`tasks/pwm-display`)
 
-Temperature Display: LED Via A PWM Controller
-`````````````````````````````````````````````
+Tasks
+`````
 
-* :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
-* Define ``Display`` interface
-* Put ``LEDStripeDisplay`` under it
+.. ot-graph::
+   :entries: fh2021.boiling_pot, 
+	     fh2021.datalogger, 
+	     fh2021.pwm_display, 
+	     fh2021.switch_interface, 
+	     fh2021.sysfs_gpio_switch
+
+2023-11-09 (3 VO)
+-----------------
+
+* :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+
+  See :doc:`tasks/sysfs-gpio-switch` and :doc:`tasks/boiling-pot` for
+  why.
