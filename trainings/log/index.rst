@@ -16,6 +16,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
+CMake: An Introduction (2023-11-27)
+-----------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-11-27--CMake/index>`)
+
 Python Advanced (2023-11-22 - 2023-11-24)
 -----------------------------------------
 
