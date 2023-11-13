@@ -168,7 +168,86 @@ Tasks
 2023-11-09 (3 VO)
 -----------------
 
+Project
+.......
+
+* Caring about hacking students
+
+2023-11-10 (3 VO)
+-----------------
+
+Project
+.......
+
+* Caring about hacking students
+* Team meeting
+
+.. image:: 2023-11-10-uml.jpg
+   :scale: 50%
+
+2023-11-17 (3 VO)
+-----------------
+
+OO, And Software Development At Large
+.....................................
+
 * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
 
   See :doc:`tasks/sysfs-gpio-switch` and :doc:`tasks/boiling-pot` for
   why.
+
+  * Single responsibility |longrightarrow| ``Hysteresis`` (does not do
+    sensoring and switching *itself*)
+  * Open/closed |longrightarrow| ``Hysteresis`` (work with *any*
+    ``Sensor``)
+  * Liskow substitution |longrightarrow| ``Hysteresis`` *should* be
+    possible to use *any* sensor*. **Easily violated**
+  * Interface segregation |longrightarrow| ``Sensor`` does not have a
+    name in it. Although data logger needs one.
+
+Project
+.......
+
+* GCC warning: "Structured binding only available for C++17"
+  |longrightarrow| ``-std=c++17`` at toplevel ``CMakeLists.txt``
+* Datalogger pull request
+
+  * One team member to present task
+
+  * *Explain:* ``TARGET_INCLUDE_DIRECTORIES()`` announces ``.``
+    ``PUBLIC`` to anyone who needs that node
+  * Two ``DataLogger::startLogging()`` implementations
+    |longrightarrow| unify
+  * Discuss time
+    
+    * Remove leftover ``DataLogger::getTime()``
+    * ``DataLogger::_interval`` appears to be milliseconds
+      |longrightarrow| rename accordingly
+    * `man -s 2 nanosleep
+      <https://man7.org/linux/man-pages/man2/nanosleep.2.html>`__
+    * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
+
+  * ``SinkMock::getTemperature()``
+
+    * Write *sunny* test for it
+    * And how about non-existing entries?
+    * ``std::map<>::at()``
+
+  * Tests
+
+    * ``tests/logger-suite.cpp``
+      
+      * Fixtures
+      * ``EXPECT_EQ()``
+
+    * ``tests/sensor-config-suite.cpp``
+
+      * Adding the same name three times should be an error (lets use
+        ``assert(false)`` as an error handling replacement)
+      * Three sensors should lead to a measurement size (``.size()``) of 3
+      * How about order? ``std::map<>`` *does not preserve order!*
+
+    * ``tests/sensor-values-suite.cpp`` *does not exist*
+    * ``tests/sink-suite.cpp``
+
+      Lets look at it together

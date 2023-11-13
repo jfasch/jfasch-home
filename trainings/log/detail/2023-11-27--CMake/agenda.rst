@@ -1,7 +1,7 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda: CMake (2023-07-03)
+Agenda: CMake (2023-11-27)
 ==========================
 
 .. contents::
