@@ -8,10 +8,12 @@ WS2023/24
    :hidden:
 
    tasks/group
+   git/git
 
 .. sidebar::
 
    * `Github project <https://github.com/jfasch/FH-ECE21>`__
+   * :doc:`git/git`
    * SSH login on the Pi: ``ssh -p 2020 firstname.lastname@jfasch.bounceme.net``
 
 .. contents::
@@ -82,22 +84,13 @@ From
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
 
-Git Collaboration (via Github, but not necessarily)
-...................................................
+Git Collaboration (via Github, but not necessarily): Forks And Pull Request
+...........................................................................
 
-`Github pull requests
-<https://docs.github.com/pull-requests>`__, especially ...
+See :doc:`git/git`, "Forks And Pull Requests"
 
-* `Fork and pull model
-  <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models>`__
-* `Fork a repo
-  <https://docs.github.com/en/get-started/quickstart/fork-a-repo>`__
-* `About pull requests
-  <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests>`__
-* `Creating a pull request from a fork
-  <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork>`__
-
-.. image:: github-workflow.jpg
+Tasks, First Round
+..................
 
 .. image:: teams-2023-10-05.jpg
 
@@ -158,12 +151,7 @@ Hardware Overview
 Tasks
 `````
 
-.. ot-graph::
-   :entries: fh2021.boiling_pot, 
-	     fh2021.datalogger, 
-	     fh2021.pwm_display, 
-	     fh2021.switch_interface, 
-	     fh2021.sysfs_gpio_switch
+See :doc:`tasks/group`
 
 2023-11-09 (3 VO)
 -----------------
@@ -183,7 +171,7 @@ Project
 * Team meeting
 
 .. image:: 2023-11-10-uml.jpg
-   :scale: 50%
+   :scale: 30%
 
 2023-11-17 (3 VO)
 -----------------
@@ -196,58 +184,72 @@ OO, And Software Development At Large
   See :doc:`tasks/sysfs-gpio-switch` and :doc:`tasks/boiling-pot` for
   why.
 
-  * Single responsibility |longrightarrow| ``Hysteresis`` (does not do
-    sensoring and switching *itself*)
-  * Open/closed |longrightarrow| ``Hysteresis`` (work with *any*
-    ``Sensor``)
+  * Single responsibility |longrightarrow| ``Hysteresis`` does not do
+    sensoring and switching *itself*; it *uses* an interface
+  * Open/closed |longrightarrow| ``Hysteresis`` is not modified when a
+    new ``Sensor`` implementation is added
   * Liskow substitution |longrightarrow| ``Hysteresis`` *should* be
-    possible to use *any* sensor*. **Easily violated**
+    possible to use *any* ``Sensor``. **Easily violated!!**
   * Interface segregation |longrightarrow| ``Sensor`` does not have a
-    name in it. Although data logger needs one.
+    name in it. Data logger would need one, but adds it itself
+    (``SensorConfig`` is a ``name`` |longrightarrow| ``Sensor``
+    mapping)
+  * Dependency Inversion |longrightarrow| ``Hysteresis`` does not
+    depend on, say, ``W1Sensor``, but rather on ``Sensor``
 
 Project
 .......
 
-* GCC warning: "Structured binding only available for C++17"
-  |longrightarrow| ``-std=c++17`` at toplevel ``CMakeLists.txt``
-* Datalogger pull request
+Updating A Fork From Upstream
+`````````````````````````````
 
-  * One team member to present task
+* Look over :doc:`git/git`
+* Reasons to "sync" a fork
 
-  * *Explain:* ``TARGET_INCLUDE_DIRECTORIES()`` announces ``.``
-    ``PUBLIC`` to anyone who needs that node
-  * Two ``DataLogger::startLogging()`` implementations
-    |longrightarrow| unify
-  * Discuss time
+  * GCC warning: "Structured binding only available for C++17"
+    |longrightarrow| ``-std=c++17`` at toplevel ``CMakeLists.txt``
+  * Continuous development cycles on fork, repeated pull requests from
+    the same fork
+
+Datalogger Pull Request
+```````````````````````
+
+* One team member to present task
+* *Explain:* ``TARGET_INCLUDE_DIRECTORIES()`` announces ``.``
+  ``PUBLIC`` to anyone who needs that node
+* Two ``DataLogger::startLogging()`` implementations |longrightarrow|
+  unify
+* Discuss time
+  
+  * Remove leftover ``DataLogger::getTime()``
+  * ``DataLogger::_interval`` appears to be milliseconds
+    |longrightarrow| rename accordingly
+  * `man -s 2 nanosleep
+    <https://man7.org/linux/man-pages/man2/nanosleep.2.html>`__
+  * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
+
+* ``SinkMock::getTemperature()``
+
+  * Write *sunny* test for it
+  * And how about non-existing entries?
+  * ``std::map<>::at()``
+
+* Tests
+
+  * ``tests/logger-suite.cpp``
     
-    * Remove leftover ``DataLogger::getTime()``
-    * ``DataLogger::_interval`` appears to be milliseconds
-      |longrightarrow| rename accordingly
-    * `man -s 2 nanosleep
-      <https://man7.org/linux/man-pages/man2/nanosleep.2.html>`__
-    * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
+    * Fixtures
+    * ``EXPECT_EQ()``
 
-  * ``SinkMock::getTemperature()``
+  * ``tests/sensor-config-suite.cpp``
 
-    * Write *sunny* test for it
-    * And how about non-existing entries?
-    * ``std::map<>::at()``
+    * Adding the same name three times should be an error (lets use
+      ``assert(false)`` as an error handling replacement)
+    * Three sensors should lead to a measurement size (``.size()``) of
+      3
+    * How about order? ``std::map<>`` *does not preserve order!*
 
-  * Tests
+  * ``tests/sensor-values-suite.cpp`` *does not exist*
+  * ``tests/sink-suite.cpp``
 
-    * ``tests/logger-suite.cpp``
-      
-      * Fixtures
-      * ``EXPECT_EQ()``
-
-    * ``tests/sensor-config-suite.cpp``
-
-      * Adding the same name three times should be an error (lets use
-        ``assert(false)`` as an error handling replacement)
-      * Three sensors should lead to a measurement size (``.size()``) of 3
-      * How about order? ``std::map<>`` *does not preserve order!*
-
-    * ``tests/sensor-values-suite.cpp`` *does not exist*
-    * ``tests/sink-suite.cpp``
-
-      Lets look at it together
+    Lets look at it together

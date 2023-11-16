@@ -19,6 +19,8 @@ Tasks
    pwm-display
    switch-interface
    sysfs-gpio-switch
+   datalogger-mqtt-sink
+   datalogger-csv-sink
 
 Dependencies
 ------------
