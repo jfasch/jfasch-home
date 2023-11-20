@@ -13,6 +13,7 @@ WS2023/24
 .. sidebar::
 
    * `Github project <https://github.com/jfasch/FH-ECE21>`__
+   * :doc:`tasks/group`
    * :doc:`git/git`
    * SSH login on the Pi: ``ssh -p 2020 firstname.lastname@jfasch.bounceme.net``
 
@@ -210,6 +211,17 @@ Updating A Fork From Upstream
     |longrightarrow| ``-std=c++17`` at toplevel ``CMakeLists.txt``
   * Continuous development cycles on fork, repeated pull requests from
     the same fork
+
+* Presentations: where we are, with 
+
+  * :doc:`tasks/boiling-pot`
+  * :doc:`tasks/pwm-display`
+
+2023-11-20 (6 VO)
+-----------------
+
+Project
+.......
 
 Datalogger Pull Request
 ```````````````````````

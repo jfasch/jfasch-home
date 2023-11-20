@@ -36,7 +36,7 @@ Requirements
        "sensor2": 42.666
      }
 
-  **Write a unit test** to define the format
+  **Write unit tests** to define the format
 
 Implementation
 --------------

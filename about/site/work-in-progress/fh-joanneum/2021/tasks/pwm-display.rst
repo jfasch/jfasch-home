@@ -43,10 +43,16 @@ Implementation
     * Configure the *period*. Write ``10000000`` (or whatever
       ``period`` was configured) into the ``period`` file.
 
-  * ``void set(unsigned long percentage);``
+  * ``void set_percentage(unsigned long percentage);``
 
     Compute the appropriate *duty cycle* and write that into the
     ``duty_cycle`` file.
+
+  * Use unbuffered IO, like in
+    :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`, and in
+    the exercise
+    :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+
 
 Testing
 -------
