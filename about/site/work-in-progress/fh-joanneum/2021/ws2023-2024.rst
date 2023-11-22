@@ -220,48 +220,64 @@ Updating A Fork From Upstream
 2023-11-20 (6 VO)
 -----------------
 
+Container Templates (``std::map``)
+..................................
+
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
+
 Project
 .......
+
+New Tasks: MQTT And CSV ``Sink`` Implementations
+````````````````````````````````````````````````
+
+* MQTT
+
+  * :doc:`/trainings/material/soup/python/misc/mqtt/topic`
+  * :doc:`tasks/datalogger-mqtt-sink` (task definition)
+
+* :doc:`tasks/datalogger-csv-sink`
+
 
 Datalogger Pull Request
 ```````````````````````
 
-* One team member to present task
-* *Explain:* ``TARGET_INCLUDE_DIRECTORIES()`` announces ``.``
-  ``PUBLIC`` to anyone who needs that node
-* Two ``DataLogger::startLogging()`` implementations |longrightarrow|
-  unify
-* Discuss time
-  
-  * Remove leftover ``DataLogger::getTime()``
-  * ``DataLogger::_interval`` appears to be milliseconds
-    |longrightarrow| rename accordingly
-  * `man -s 2 nanosleep
-    <https://man7.org/linux/man-pages/man2/nanosleep.2.html>`__
-  * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
+* See today's meeting minutes in :doc:`tasks/datalogger`
 
-* ``SinkMock::getTemperature()``
+Boiling Pot, Switches
+`````````````````````
 
-  * Write *sunny* test for it
-  * And how about non-existing entries?
-  * ``std::map<>::at()``
+* See today's meeting minutes in :doc:`tasks/boiling-pot`
+* Team to continue on ``tasks/switch-interface``
 
-* Tests
+SysFS GPIO Switch
+`````````````````
 
-  * ``tests/logger-suite.cpp``
-    
-    * Fixtures
-    * ``EXPECT_EQ()``
+* See today's meeting minutes in :doc:`tasks/boiling-pot`
 
-  * ``tests/sensor-config-suite.cpp``
+2023-12-07 (6 VO)
+-----------------
 
-    * Adding the same name three times should be an error (lets use
-      ``assert(false)`` as an error handling replacement)
-    * Three sensors should lead to a measurement size (``.size()``) of
-      3
-    * How about order? ``std::map<>`` *does not preserve order!*
+Project
+.......
 
-  * ``tests/sensor-values-suite.cpp`` *does not exist*
-  * ``tests/sink-suite.cpp``
+Structure
+`````````
 
-    Lets look at it together
+* ``firmware/``: what's supposed to be deployed: ``data-logger`` and
+  ``boiling-pot``
+* ``demos/``: demo and test programs
+* ``toolcase/``: library, structure into subdirectories
+
+  * ``base/``
+  * ``data-logger/``
+  * ``boiling-pot/``
+
+* ``tests/`` ...
+
+Show dependency graph
+
+Renames
+```````
+
+* ``LEDDisplay`` -> ``PWMController``

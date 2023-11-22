@@ -12,6 +12,35 @@ Temperature Display: LED Via A PWM Controller
 
    * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
 
+Standup Records
+---------------
+
+2023-11-20
+..........
+
+* Use raw file IO (see :doc:
+  :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`)
+* Do not do the ``export`` (making ``/sys/class/pwm/pwmchip0/pwm0``
+  available to userspace) dance; rather place that responsibility on a
+  "system-setup phase" (that we don't have).
+
+  "System setup" will have to be done manually before an application
+  run. At the time that this becomes too cumbersome, define how we
+  want it.
+* Look out for something like
+
+  .. code-block:: c++
+
+     class PercentageDisplay
+     {
+     public:
+         // ...
+         virtual void show_percentage(unsigned int) = 0;
+         // ...
+     };
+
+* Refactoring round (just like :doc:`switch-interface`): put
+  everything display-like under its hood
 
 Requirements
 ------------

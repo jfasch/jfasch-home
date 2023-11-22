@@ -7,6 +7,18 @@
 SysFS GPIO Switch
 =================
 
+Standup Records
+---------------
+
+2023-11-20
+..........
+
+* Pull request won't accept changes other than necessary to complete
+  task
+
+  * Revert all changes that were made to fix upstream errors
+  * Update fork (see :doc:`../git/git`)
+
 Requirements
 ------------
 

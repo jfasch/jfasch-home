@@ -13,6 +13,16 @@ An IoT Boiling Pot (The Beginning)
 
    * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
 
+Standup Records
+---------------
+
+2023-11-20
+..........
+
+* Complete tests (define a few more?)
+* Pull request
+* Team to continue on :doc:`switch-interface`
+
 Requirements
 ------------
 

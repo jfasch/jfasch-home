@@ -28,6 +28,45 @@ Terminal/``std::cout``?). Sketch that in spaghetti style
   (CSV/Terminal?).
 * Problem: decoupling |longrightarrow| *interface* (eg. ``Sink``)
 
+Standup Records
+---------------
+
+2023-11-20
+..........
+
+* Structure: ``datalogger/CMakeLists.txt``
+
+  *Explain:* ``TARGET_INCLUDE_DIRECTORIES()`` announces ``.``
+  ``PUBLIC`` to anyone who needs that node
+
+* ``void DataLogger::startLogging(uint16_t count = 0);``, with ``0``
+  having the special meaning *infinity* |longrightarrow| unification
+  into *one single* method
+* Remove leftover ``DataLogger::getTime()``. Defer implementation
+  until we need timestamps
+* ``tests/logger-suite.cpp``: don't use ``SinkFile`` - test *in terms
+  of* ``SinkMock``
+
+  |longrightarrow| make ``SinkMock`` usable for that purpose
+
+* ``tests/sink-suite.cpp`` 
+
+  * use ``SinkMock`` instead of ``SinkFile`` (like above)
+  * don't use ``SensorConfig`` to create a ``SensorValues`` object -
+    create it directly, inside the test (we're not testing
+    ``SensorConfig``, only the sink)
+
+    Best to create ``tests/sensor-values-suite.cpp`` to define the
+    behavior of ``SensorValues``
+
+* ``tests/sensor-config-suite.cpp``
+
+  * Adding the same name three times should be an error (lets use
+    ``throw runtime_error("...message here...")`` as an error handling
+    replacement)
+  * Three sensors should lead to a measurement size (.size()) of 3
+  * ...
+
 Requirements
 ------------
 
