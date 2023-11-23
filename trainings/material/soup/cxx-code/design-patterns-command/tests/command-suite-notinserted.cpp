@@ -16,5 +16,12 @@ TEST(command_suite, notinserted)
     SocialDBCommand *c = &ic;
     c->execute(db);
 
-    ASSERT_THROW(ic.result(), SocialDB::NotInserted);
+    try {
+        ic.result();
+        FAIL();
+    }
+    catch (const SocialDB::NotInserted&) {}
+
+    // -Werror=restrict
+    // ASSERT_THROW(ic.result(), SocialDB::NotInserted);
 }

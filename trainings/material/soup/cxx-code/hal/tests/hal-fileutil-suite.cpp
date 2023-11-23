@@ -24,7 +24,15 @@ TEST_F(fileutil_suite, read_from_file)
 TEST_F(fileutil_suite, read_from_file_noexist)
 {
     auto filename = tmpdir_fixture::dirname / "no-such-file";
-    ASSERT_THROW(jf::hal::read_from_file(filename), std::runtime_error);
+
+    try {
+        jf::hal::read_from_file(filename);
+        FAIL();
+    }
+    catch (const std::runtime_error&) {}
+
+    // -Werror=restrict
+    // ASSERT_THROW(jf::hal::read_from_file(filename), std::runtime_error);
 }
 
 TEST_F(fileutil_suite, write_to_file)

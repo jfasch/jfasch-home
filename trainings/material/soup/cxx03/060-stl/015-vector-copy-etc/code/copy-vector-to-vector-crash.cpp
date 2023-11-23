@@ -1,5 +1,8 @@
 #include <vector>
 #include <iostream>
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wnonnull"
    
 int main()
 {
@@ -12,3 +15,5 @@ int main()
 
     return 0;
 }
+
+#pragma GCC diagnostic pop

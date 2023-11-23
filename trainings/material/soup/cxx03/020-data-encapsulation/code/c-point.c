@@ -47,7 +47,10 @@ struct point point_sub(struct point lhs, struct point rhs)
 
 void point_print(struct point p)
 {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wuninitialized"
     printf("(%d, %d)", p.x, p.y);
+#pragma GCC diagnostic pop
 }
 
 

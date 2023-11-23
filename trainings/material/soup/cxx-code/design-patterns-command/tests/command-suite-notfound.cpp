@@ -13,5 +13,12 @@ TEST(command_suite, notfound)
     SocialDBCommand* c = &fc;           // <--- used as-a base
     c->execute(db);
 
-    ASSERT_THROW(fc.result(), SocialDB::NotFound);
+    try {
+        fc.result();
+        FAIL();
+    }
+    catch (const SocialDB::NotFound&) {}
+
+    // -Werror=restrict
+    // ASSERT_THROW(fc.result(), SocialDB::NotFound);
 }

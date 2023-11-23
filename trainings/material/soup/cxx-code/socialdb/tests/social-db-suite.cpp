@@ -21,9 +21,17 @@ TEST(socialdb_suite, duplicate)
 {
     SocialDB db;
     db.insert("1037190666", "Joerg", "Faschingbauer");
-    ASSERT_THROW(
-        db.insert("1037190666", "Joerg", "Faschingbauer"),
-        SocialDB::NotInserted);
+
+    try {
+        db.insert("1037190666", "Joerg", "Faschingbauer");
+        ASSERT_FALSE(true);
+    }
+    catch (const SocialDB::NotInserted&) {}
+
+    // -Werror=restrict
+    // ASSERT_THROW(
+    //     db.insert("1037190666", "Joerg", "Faschingbauer"),
+    //     SocialDB::NotInserted);
 }
 
 TEST(socialdb_suite, init)
@@ -55,9 +63,16 @@ TEST(socialdb_suite, find)
 TEST(socialdb_suite, notfound)
 {
     SocialDB db;
-    ASSERT_THROW(
-        db.find("1037190666"), 
-        SocialDB::NotFound);
+    try {
+        db.find("1037190666");
+        ASSERT_FALSE(true);
+    }
+    catch (const SocialDB::NotFound&) {}
+
+    // -Werror=restrict
+    // ASSERT_THROW(
+    //     db.find("1037190666"), 
+    //     SocialDB::NotFound);
 }
 
 TEST(socialdb_suite, drop)

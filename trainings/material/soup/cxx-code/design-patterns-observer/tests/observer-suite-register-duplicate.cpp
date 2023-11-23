@@ -19,5 +19,12 @@ TEST(observer_suite, register_duplicate)
     MyObserver observer;
     db.register_new_citizen_notification(&observer);
 
-    ASSERT_THROW(db.register_new_citizen_notification(&observer), SocialDB_Observable::ObserverAlreadyRegistered);
+    try {
+        db.register_new_citizen_notification(&observer);
+        FAIL();
+    }
+    catch (const SocialDB_Observable::ObserverAlreadyRegistered&) {}
+
+    // -Werror=restrict
+    // ASSERT_THROW(db.register_new_citizen_notification(&observer), SocialDB_Observable::ObserverAlreadyRegistered);
 }

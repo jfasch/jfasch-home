@@ -16,5 +16,13 @@ TEST(observer_suite, unregister_not_registered)
 {
     SocialDB_Observable db;
     MyObserver observer;
-    ASSERT_THROW(db.unregister_new_citizen_notification(&observer), SocialDB_Observable::ObserverNotRegistered);
+
+    try {
+        db.unregister_new_citizen_notification(&observer);
+        FAIL();
+    }
+    catch (const SocialDB_Observable::ObserverNotRegistered&) {}
+
+    // -Werror=restrict
+    // ASSERT_THROW(db.unregister_new_citizen_notification(&observer), SocialDB_Observable::ObserverNotRegistered);
 }

@@ -50,12 +50,56 @@ Also covered ``yield``, and the *Iterator Protocol*:
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/iterator-protocol`
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
 
-Afternoon:
+Afternoon exercise:
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+
+More Python:
 
 * :doc:`/trainings/material/soup/python/basics/python_0310_strings_formatting/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic` (including some ``with`` coverage)
+
+Day 2: Group Project, And Object Oriented Programming
+-----------------------------------------------------
+
+Morning wakeup:
+
+* Partial tuple unpacking with ``*``
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
+
+Project Management
+
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+
+From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+necessary material before we can start hacking
+
+* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+
+Hackin' da project ...
+
+* Dictionary comprehension in ``SensorConfig``
+* ``pytest`` fixtures: ``tmpdir``
+* ``AcquisitionLoop`` test, using ``MockSink``
+* Derive ``MockSink`` from ``list``
+
+From :doc:`/trainings/material/soup/python/advanced/oo/group`: to be
+covered when time is right
+
+* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
+

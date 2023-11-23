@@ -1,6 +1,9 @@
 #include <vector>
 #include <iostream>
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Warray-bounds"
+
 int main()
 {
     std::vector<int> my_vector = { 1,2,3 };
@@ -8,3 +11,5 @@ int main()
 
     return 0;
 }
+
+#pragma GCC diagnostic pop

@@ -1,7 +1,11 @@
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wrestrict"  // no idea, happens with -O3
+
 #include <gtest/gtest.h>
 #include <any>
 #include <string>
 #include <vector>
+
 
 TEST(any_suite, basic)
 {
@@ -78,3 +82,5 @@ TEST(any_suite, pointer_cast_avoid_exception)
     auto ip = std::any_cast<int>(&a);
     ASSERT_EQ(*ip, 42);
 }
+
+#pragma GCC diagnostic pop
