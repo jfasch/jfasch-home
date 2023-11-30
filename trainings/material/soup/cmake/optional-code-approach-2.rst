@@ -130,10 +130,12 @@ Push Optionality Down In ``blacklist`` (|longrightarrow| ``INTERFACE`` Targets)
        ADD_LIBRARY(blacklist blacklist.cpp)
      
        TARGET_INCLUDE_DIRECTORIES(blacklist PUBLIC .)
-       TARGET_COMPILE_DEFINITIONS(blacklist INTERFACE DEMO_USE_BLACKLIST=1) # <--- INTERFACE
+       TARGET_COMPILE_DEFINITIONS(
+             blacklist INTERFACE DEMO_USE_BLACKLIST=1) # <--- INTERFACE: propagate-only
      ELSE()
-       ADD_LIBRARY(blacklist INTERFACE)
-       TARGET_COMPILE_DEFINITIONS(blacklist INTERFACE DEMO_USE_BLACKLIST=0) # <--- INTERFACE
+       ADD_LIBRARY(blacklist INTERFACE)                # <--- INTERFACE: there is no library here
+       TARGET_COMPILE_DEFINITIONS(
+             blacklist INTERFACE DEMO_USE_BLACKLIST=0) # <--- INTERFACE: propagate-only
      ENDIF()
 
 Good Or Bad?

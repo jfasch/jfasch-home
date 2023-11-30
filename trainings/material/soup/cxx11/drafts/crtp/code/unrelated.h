@@ -27,4 +27,10 @@ private:
     double _temperature;
 };
 
+template <typename T>
+double get_temperature(T* s)
+{
+    return s->get_temperature();
+}
+
 }

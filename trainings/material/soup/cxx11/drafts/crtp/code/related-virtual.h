@@ -1,6 +1,6 @@
 #pragma once
 
-namespace classic_virtual
+namespace related_virtual
 {
 
 class Sensor
@@ -33,5 +33,10 @@ public:
 private:
     double _temperature;
 };
+
+double poly_get_temperature(Sensor* s)
+{
+    return s->get_temperature();
+}
 
 }

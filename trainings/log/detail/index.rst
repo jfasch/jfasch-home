@@ -4,6 +4,9 @@ Details
 .. toctree::
    :maxdepth: 1
 
+
+   2024-XX-XX--Python-Basics/agenda
+   2023-11-29--Python-Basics/index
    2023-11-27--CMake/index
    2023-11-22--Python-Advanced/index
    2023-10-24--Python-Advanced/index

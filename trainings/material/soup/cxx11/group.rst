@@ -22,6 +22,7 @@ Topics
    100-miscellaneous/group
    filesystem/topic
 
+   drafts/group
    exercises/group
 
 Group Description

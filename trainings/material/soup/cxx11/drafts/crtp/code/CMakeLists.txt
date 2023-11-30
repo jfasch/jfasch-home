@@ -1,7 +1,6 @@
-ADD_EXECUTABLE(
-  crtp-benches
+ADD_EXECUTABLE(single--related-no-virtual single--related-no-virtual.cpp)
+ADD_EXECUTABLE(single--related-virtual single--related-virtual.cpp)
 
-  classic-virtual-bench.cpp
-  unrelated-bench.cpp
-)
-TARGET_LINK_LIBRARIES(crtp-benches benchmark_main)
+ADD_EXECUTABLE(avg--related-virtual-main avg--related-virtual-main.cpp)
+ADD_EXECUTABLE(avg--related-no-virtual-main avg--related-no-virtual-main.cpp)
+
