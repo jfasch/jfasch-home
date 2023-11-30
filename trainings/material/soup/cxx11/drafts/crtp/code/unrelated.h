@@ -27,10 +27,40 @@ private:
     double _temperature;
 };
 
-template <typename T>
-double get_temperature(T* s)
+union SensorUnion
 {
-    return s->get_temperature();
+    Sensor1* s1;
+    Sensor2* s2;
+};
+
+enum class SensorType
+{
+    SENSOR1,
+    SENSOR2,
+};
+
+struct SensorVariant
+{
+    SensorVariant(Sensor1* s) { type = SensorType::SENSOR1; sensor_union.s1 = s; }
+    SensorVariant(Sensor2* s) { type = SensorType::SENSOR2; sensor_union.s2 = s; }
+
+    SensorType type;
+    SensorUnion sensor_union;
+};
+
+static inline double get_temperature(SensorVariant sv)
+{
+    switch (sv.type) {
+        case SensorType::SENSOR1: {
+            Sensor1* s1 = sv.sensor_union.s1;
+            return s1->get_temperature();
+        }
+        case SensorType::SENSOR2: {
+            Sensor2* s2 = sv.sensor_union.s2;
+            return s2->get_temperature();
+        }
+    }
+    return -273.15; // <--- never reached
 }
 
 }

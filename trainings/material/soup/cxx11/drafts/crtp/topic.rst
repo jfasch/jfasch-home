@@ -6,6 +6,50 @@
 Curiously Recurring Template Pattern (Will Be: How To Avoid ``virtual``)
 ========================================================================
 
+Structure/Plan
+--------------
+
+Straightforward
+
+* ``related-virtual``: classic polymorphic types. ``average()``
+  calculated over a range of pointers-to-base, calling
+  ``get_temperature()`` on each polymorphically.
+* ``related-no-virtual``: related types, non-polymorphic. Base class
+  only has a type field that derived classes set. ``average()``
+  calculated by ``switch``'ing over the type field, and
+  ``static_cast``'ing to derived class.
+* ``unrelated``: completely unrelated types, much like :doc:`duck
+  typing in dynamic languages like Python
+  </trainings/material/soup/python/advanced/oo/abc/topic>`. ``average()``
+  on a range of ``union`` crammed into a ``struct`` that adds a type
+  field. This way we can store them "polymorphically" in an array.
+
+Future
+
+* ``average()`` in each namespaces is an :doc:`Abbreviated Function
+  Template
+  </trainings/material/soup/cxx11/020-new-language-features/ranges/intro>`
+
+  * All implementations look the same
+  * Global ``get_temperature()`` is used to implement "polymorphism"
+  * |longrightarrow| unify
+  * |longrightarrow| add :doc:`concepts
+    </trainings/material/soup/cxx11/020-new-language-features/concepts/group>`
+    to each
+
+* Use a :doc:`variant
+  </trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant>`
+  to achive "polymorphism", with ``std::variant``'s methods for
+  inspectation.
+* ``std::visit``, twofold
+
+  * manually, ``if`` |longrightarrow| unsafe
+  * Visitor, overloading ``operator()`` |longrightarrow| safe
+
+* Sideways: ``unrelated`` with CRTP (maybe bring that first,
+  before moving to ``std::variant``). **NO** that crap "pattern" (it's
+  an idiom at most) does not solve any real problem.
+
 ``virtual``
 -----------
 

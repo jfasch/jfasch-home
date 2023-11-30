@@ -13,11 +13,8 @@ public:
 class Sensor1 : public Sensor
 {
 public:
-    Sensor1(double temperature)
-    : _temperature{temperature} {}
-
+    Sensor1(double temperature) : _temperature{temperature} {}
     double get_temperature() override { return _temperature; }
-
 private:
     double _temperature;
 };
@@ -25,16 +22,13 @@ private:
 class Sensor2 : public Sensor
 {
 public:
-    Sensor2(double temperature)
-    : _temperature{temperature} {}
-
+    Sensor2(double temperature) : _temperature{temperature} {}
     double get_temperature() override { return _temperature; }
-
 private:
     double _temperature;
 };
 
-double poly_get_temperature(Sensor* s)
+static inline double get_temperature(Sensor* s)
 {
     return s->get_temperature();
 }
