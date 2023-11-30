@@ -36,11 +36,8 @@ Setup
 * :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/misc/vscode`
 
-Basics
-------
-
 Datatypes
-.........
+---------
 
 * :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
@@ -56,25 +53,49 @@ Datatypes
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 
 Control Flow, Sequences, *Iteration*
-....................................
+------------------------------------
 
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
 * :doc:`/trainings/material/soup/python/basics/python_0193_while/topic`
 
 Day 2, Morning Awakening
-........................
+------------------------
 
 * linq
-* infinity
+* Infinity: :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/iterator-protocol`
 * while weiter :-)
 
 Control Flow, Sequences, *Iteration* (Continued)
-................................................
+------------------------------------------------
 
-* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`   jjj link gh
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness` jjj link gh
 
+Functions
+---------
 
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/slideshow`
+* :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
+* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+
+More Datatypes
+--------------
+
+* :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
+
+Pause
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
+* :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
