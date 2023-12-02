@@ -64,14 +64,11 @@ More Information
    :hidden:
 
    link-collection
-   pcap-exam
    graph
    exercises/group
 
 * :doc:`Here is a collection of links <link-collection>` that I use to
   paste into :doc:`training logs </trainings/log/index>`.
-* Occasionally, course participants want to pass an exam;
-  :doc:`pcap-exam`
 * :doc:`Here is a more differentiated view <graph>` of all Python
   material that is available.
 

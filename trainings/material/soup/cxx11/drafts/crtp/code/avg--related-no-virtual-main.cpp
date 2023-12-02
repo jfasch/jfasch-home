@@ -1,5 +1,5 @@
 #include "related-no-virtual.h"
-#include "avg--related-no-virtual.h"
+#include "avg.h"
 
 #include <iostream>
 

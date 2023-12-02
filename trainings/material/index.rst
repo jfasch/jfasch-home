@@ -26,14 +26,14 @@ material.
 .. list-table::
 
    * - **Description**
-     - **PDF**
+     - **PDF (unmaintained)**
      - **OpenTraining**
    * - :doc:`/trainings/repertoire/linux-basics`
      - :download:`basics <pdf/010-linux-basics.pdf>`
      - :doc:`soup/linux/group`
    * - :doc:`/trainings/repertoire/sysprog/basics`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
-     -
+     - :doc:`/trainings/material/soup/linux/sysprog/basics/group`
    * - :doc:`/trainings/repertoire/sysprog/network`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
@@ -59,6 +59,15 @@ material.
      - :download:`C++03 <pdf/055-c++03.pdf>`, :download:`C++11
        <pdf/056-c++11.pdf>`
      - :doc:`soup/cxx/group`
+   * - 
+     - 
+     - :doc:`soup/cxx/group`
+   * - 
+     - 
+     - :doc:`soup/cxx03/group`
+   * - 
+     - 
+     - :doc:`soup/cxx11/group`
    * - :doc:`/trainings/material/soup/python/basics/group`
      - 
      - :doc:`/trainings/material/soup/python/basics/group`

@@ -62,17 +62,15 @@ Control Flow, Sequences, *Iteration*
 Day 2, Morning Awakening
 ------------------------
 
-* linq
 * Infinity: :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/iterator-protocol`
-* while weiter :-)
 
 Control Flow, Sequences, *Iteration* (Continued)
 ------------------------------------------------
 
-* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`   jjj link gh
+* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness` jjj link gh
+* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
 Functions
 ---------
@@ -92,10 +90,38 @@ More Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
-
-Pause
-
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
+
+Day 3, Morning Awakening
+------------------------
+
+Some CSV, ``matplotlib``, ...
+
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+* :doc:`/trainings/material/soup/python/misc/pandas/group`
+
+Weird things ...
+
+* Taking time: :doc:`python:library/time`
+* More time and date: :doc:`python:library/datetime`
+* Measuring code execution time
+
+  * :doc:`python:library/timeit`
+  * :doc:`/trainings/material/soup/python/advanced/exec/topic`
+
+Miscellaneous
+-------------
+
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+
+Exercise Series: CSV Files
+--------------------------
+
+* :doc:`/trainings/material/soup/python/misc/csv/topic`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`

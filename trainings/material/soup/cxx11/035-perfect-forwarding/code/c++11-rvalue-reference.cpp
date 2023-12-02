@@ -1,8 +1,6 @@
 #include <string>
 
-void function(std::string&& rvref)
-{
-}
+void function(std::string&& rvref) {}
 
 int main()
 {

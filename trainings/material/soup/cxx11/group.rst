@@ -1,8 +1,8 @@
 .. ot-group:: cxx11
 
 
-C++ 11
-======
+The New C++ (11-...)
+====================
 
 .. contents::
    :local:

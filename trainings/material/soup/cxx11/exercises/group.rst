@@ -1,7 +1,7 @@
 .. ot-group:: cxx11.exercises
 
-Introduction
-============
+Exercises
+=========
 
 .. contents::
    :local:

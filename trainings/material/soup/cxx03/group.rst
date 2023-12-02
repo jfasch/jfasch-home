@@ -1,8 +1,8 @@
 .. ot-group:: cxx03
 
 
-C++ 03
-======
+C++
+===
 
 .. contents::
    :local:

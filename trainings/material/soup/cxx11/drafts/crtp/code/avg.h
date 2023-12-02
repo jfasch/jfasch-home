@@ -1,7 +1,4 @@
-namespace related_virtual
-{
-
-double average(auto& sensors)
+double average(auto& sensors)  // <--- abbreviated function template
 {
     double sum = 0;
     unsigned long num = 0;
@@ -10,6 +7,4 @@ double average(auto& sensors)
         sum += get_temperature(s);
     }
     return sum/num;
-}
-
 }

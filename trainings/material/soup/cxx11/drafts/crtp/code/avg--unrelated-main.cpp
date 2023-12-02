@@ -1,5 +1,5 @@
 #include "unrelated.h"
-#include "avg--unrelated.h"
+#include "avg.h"
 
 #include <iostream>
 
@@ -11,7 +11,7 @@ int main()
     Sensor1 s1{37.1};
     Sensor2 s2{42.666};
 
-    SensorVariant sensors[] = {SensorVariant{&s1}, SensorVariant{&s2}};
+    SensorVariant sensors[] = {&s1, &s2};
     
     cout << average(sensors) << endl;
     return 0;
