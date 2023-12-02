@@ -14,7 +14,6 @@ Python Basics (2022-02-23 - 2022-02-25)
      * :download:`download <Notebook.ipynb>`
 
    * `Github Repository <https://github.com/jfasch/2022-02-23>`__
-   * :doc:`/trainings/material/soup/python/pcap-exam`
    * Followup training to this one: :doc:`../2022-03-15/index`
 
 .. toctree::

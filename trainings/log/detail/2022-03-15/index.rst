@@ -14,7 +14,6 @@ Python Advanced (2022-03-15 - 2022-03-17, 2022-03-31)
      * :download:`download <Notebook.ipynb>`
 
    * `Github Repository <https://github.com/jfasch/2022-02-23>`__
-   * :doc:`/trainings/material/soup/python/pcap-exam`
    * Predecessor training: :doc:`../2022-02-23/index`
 
 .. toctree::
@@ -134,30 +133,6 @@ Continue with mess ...
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 
-:doc:`PCAP exam </trainings/material/soup/python/pcap-exam>` preparation
-........................................................................
-
-* Look through
-  https://www.udemy.com/course/python-certification-exam-pcap-31-03-practice-tests/
-  (suggest subscription at Udemy)
-
-  * :doc:`Notebook <notebook-wrapper>` section on OO
-
-    * Duck typing
-    * Interfaces
-    * Implementation Inheritance
-    * Method Resolution Order (MRO), and super()
-    * Object Layout (``self``)
-
-    .. image:: mro.png
-       :scale: 50%
-
-* Repeat these:
-
-  * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
-  * :doc:`/trainings/material/soup/python/advanced/closures/topic`
-  * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
- 
 Links
 -----
 
