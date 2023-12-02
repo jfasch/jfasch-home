@@ -1,10 +1,7 @@
-#include "related-virtual.h"
+#include "sensors.h"
 #include "avg.h"
 
 #include <iostream>
-
-using namespace related_virtual;
-using namespace std;
 
 int main()
 {
@@ -13,6 +10,6 @@ int main()
 
     Sensor* sensors[] = {&s1, &s2};
     
-    cout << average(sensors) << endl;
+    std::cout << average(sensors) << std::endl;
     return 0;
 }

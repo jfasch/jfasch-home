@@ -14,6 +14,11 @@ Topics
    :maxdepth: 1
    :glob:
 
+   crtp/classic-virtual
+   crtp/related-no-virtual
+   crtp/unrelated
+   crtp/variant
+
    crtp/topic
 
 Group Description

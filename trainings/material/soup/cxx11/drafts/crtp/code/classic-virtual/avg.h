@@ -1,3 +1,7 @@
+#pragma once
+
+#include "virtual.h"
+
 double average(auto& sensors)  // <--- abbreviated function template
 {
     double sum = 0;

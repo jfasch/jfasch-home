@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 New-Style Union: ``std::variant``
 =================================
 

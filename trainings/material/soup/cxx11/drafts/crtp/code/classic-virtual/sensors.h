@@ -1,8 +1,5 @@
 #pragma once
 
-namespace related_virtual
-{
-
 class Sensor
 {
 public:
@@ -27,10 +24,3 @@ public:
 private:
     double _temperature;
 };
-
-static inline double get_temperature(Sensor* s)
-{
-    return s->get_temperature();
-}
-
-}

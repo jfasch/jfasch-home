@@ -6,6 +6,51 @@
 Curiously Recurring Template Pattern (Will Be: How To Avoid ``virtual``)
 ========================================================================
 
+Options ``code/problem-definition/``
+------------------------------------
+
+* Classic virtual
+* Related, non-virtual, type field in base
+* Completely unrelated: equivalent, but not storable in e.g. vector
+
+Problems
+........
+
+* want unrelated, like Python - but union is cumbersome
+* only storing pointers to real instances (because union)
+
+jjj
+
+Solution: ``std::variant<>``
+----------------------------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
+
+
+
+* Start with ``code/problem-definition/unrelated.h``
+* Replace ``union`` with ``using Sensor = std::variant<Sensor1, Sensor2>``
+* Insert some into vector -> ok
+* ``delete`` copy (ctor and ass.) -> ``default`` moves
+* |longrightarrow| move into vector
+* Use ``avg.h`` as-is: *Abbreviated Function Template*
+
+
+
+
+
+
+* Add another sensor type? Comiler support to not crash the variant
+  access in avg()?
+* CRTP to prevent copy etc
+
+
+
+
 Structure/Plan
 --------------
 
@@ -74,52 +119,12 @@ Future
   * Code bloat (lotsa runtime decision/type-info stuff)
     |longrightarrow| ``-no-rtti`` to eliminate some
 
-Typical ``virtual`` Usecase: Polymorphic ``Sensor`` Type
-........................................................
-
-.. literalinclude:: code/related-virtual.h
-   :language: c++
-   :caption: :download:`Download <code/related-virtual.h>`
-
-Building average across multiple sensors:
-
-.. literalinclude:: code/avg--related-virtual.h
-   :language: c++
-   :caption: :download:`Download <code/avg--related-virtual.h>`
-
-Main program:
-
-.. literalinclude:: code/avg--related-virtual-main.cpp
-   :language: c++
-   :caption: :download:`Download <code/avg--related-virtual-main.cpp>`
-
 Omit ``virtual``: Non-Related ``Sensor`` Implementations
 ........................................................
 
 * jjj blah cannot store because no commmon type
 
 jjj bring code
-
-Type Field
-----------
-
-Solution to handmade polymorphism
-
-.. literalinclude:: code/related-no-virtual.h
-   :language: c++
-   :caption: :download:`Download <code/related-no-virtual.h>`
-
-Building average across multiple sensors:
-
-.. literalinclude:: code/avg--related-no-virtual.h
-   :language: c++
-   :caption: :download:`Download <code/avg--related-no-virtual.h>`
-
-Main program:
-
-.. literalinclude:: code/avg--related-no-virtual-main.cpp
-   :language: c++
-   :caption: :download:`Download <code/avg--related-no-virtual-main.cpp>`
 
 Union? C++? ``std::variant<>``!
 -------------------------------
