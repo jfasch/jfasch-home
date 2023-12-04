@@ -1,5 +1,23 @@
+.. include:: <mmlalias.txt>
+
+
 Non-Virtual, But Related
 ========================
+
+.. contents::
+   :local:
+
+Overview
+--------
+
+* Goal: eliminate ``virtual``
+* Need dynamic dispatch though (want to store base types
+  polymorphically)
+* Base class
+* ``static_cast<>``, based on a type field that is stored in base
+  class
+* *Manual* virtual dispatch (see
+  :download:`code/unrelated/virtual.h`): ``switch`` based on type field.
 
 Sensor Definitions
 ------------------

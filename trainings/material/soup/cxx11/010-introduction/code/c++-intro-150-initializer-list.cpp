@@ -15,7 +15,7 @@ public:
     TodoList() = default;
     TodoList(std::initializer_list<std::pair<const std::string, std::function<void()>>> l)
     {
-        for (const auto& [key, func]: l)
+        for (const auto& [key, func]: l)         // <--- eliminate by pulling std::variant into initializer_list<>
             _list[key] = func;
     }
     TodoList(const TodoList&) = delete;

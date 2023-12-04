@@ -6,13 +6,13 @@ Details
 
 
    2024-XX-XX--Python-Basics/agenda
+   2023-12-04--C++-Advanced/index
    2023-11-29--Python-Basics/index
    2023-11-27--CMake/index
    2023-11-22--Python-Advanced/index
    2023-10-24--Python-Advanced/index
    2023-10-09--Python-Advanced/index
    2023-09-25--Python-Advanced/index
-   2023-XX-XX-C++-Advanced/index
    2023-07-03--CMake/index
    2023-06-20--Python-Basics/index
    2023-05-15--Python-Basics/index

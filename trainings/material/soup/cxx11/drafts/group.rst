@@ -12,14 +12,8 @@ Topics
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   crtp/classic-virtual
-   crtp/related-no-virtual
-   crtp/unrelated
-   crtp/variant
-
-   crtp/topic
+   embedded-problems/group
 
 Group Description
 -----------------

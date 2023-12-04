@@ -255,7 +255,7 @@ Wrapping All That Into A Class
 * Copying an object that maintains threads shouldn't be possible.
 * Copy is possible though: for technical reasons we had to use
   ``std::shared_ptr<std::thread>``
-* `` = delete``
+* ``= delete``
 
 .. literalinclude:: code/c++-intro-130-class-nocopy.cpp
    :caption: :download:`code/c++-intro-130-class-nocopy.cpp`

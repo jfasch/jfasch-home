@@ -6,8 +6,8 @@
 .. include:: <mmlalias.txt>
 
 
-Interfaces
-==========
+C++ "Interfaces"
+================
 
 .. contents:: 
    :local:
@@ -15,6 +15,17 @@ Interfaces
 Bringing It All Together
 ------------------------
 
+.. sidebar::
+
+   **See also**
+
+   * :doc:`basics`
+   * :doc:`private-protected`
+   * :doc:`virtual-method`
+   * :doc:`polymorphism`
+   * :doc:`destructor`
+   * :doc:`virtual-destructor`
+   
 * C++ has a toolset for 
 
   * Inheritance

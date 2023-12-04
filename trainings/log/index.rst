@@ -16,12 +16,20 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
+C++: Advanced Topics (2023-12-04 - 2023-12-06)
+----------------------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-12-04--C++-Advanced/index>`)
+
+
 Python Basics (2023-11-29 - 2023-12-01)
 ---------------------------------------
 
 This course is under preparation.
 
-(:doc:`Mehr ... <detail/2023-11-29--Python-Basics/index>`)
+(:doc:`More ... <detail/2023-11-29--Python-Basics/index>`)
 
 CMake: An Introduction (2023-11-27)
 -----------------------------------

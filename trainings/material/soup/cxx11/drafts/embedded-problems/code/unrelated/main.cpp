@@ -1,6 +1,5 @@
 #include "sensors.h"
 #include "avg.h"
-
 #include <iostream>
 
 int main()
@@ -13,3 +12,4 @@ int main()
     std::cout << average(sensors) << std::endl;
     return 0;
 }
+

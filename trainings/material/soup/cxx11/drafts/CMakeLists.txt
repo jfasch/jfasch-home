@@ -1,1 +1,1 @@
-ADD_SUBDIRECTORY(crtp)
+ADD_SUBDIRECTORY(embedded-problems)

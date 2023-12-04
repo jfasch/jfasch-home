@@ -1,5 +1,25 @@
+.. include:: <mmlalias.txt>
+
+
 Unrelated (Duck-Typed)
 ======================
+
+.. contents::
+   :local:
+
+Overview
+--------
+
+.. sidebar::
+
+   * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
+* Alternative to common base class ...
+* ... which is too much writing
+* |longrightarrow| Good ol' C ``union``
+* (Pointer-only though)
+* *Manual* virtual dispatch (see
+  :download:`code/unrelated/virtual.h`): ``switch`` based on type field.
 
 Sensor Definitions
 ------------------

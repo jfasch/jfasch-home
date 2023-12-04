@@ -7,14 +7,11 @@ Agenda: C++: Advanced Topics
 .. contents::
    :local:
 
-Introduction
-------------
+Introduction: A New Language To Me
+----------------------------------
 
 * :doc:`/trainings/material/soup/cxx11/010-introduction/history`
 * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
-
-Pythonicity (Thank You: Readablility and Writability)
------------------------------------------------------
 
 Range Based for Loops
 .....................
@@ -31,17 +28,6 @@ Duck Typing (err, ``auto``) Without A Duck
 ..........................................
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
-
-Exercise
-........
-
-* :doc:`/trainings/material/soup/cxx11/exercises/bag-copy`
-
-  `Solution on Github: bag-copy.h
-  <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-copy.h>`__
-
-Things That Simply Deserved Fixing Since Ages
----------------------------------------------
 
 Brace Initialization
 ....................
@@ -60,6 +46,28 @@ New OO keywords: override, final, default, delete
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
 
+``constexpr``, ``constinit``, ``consteval``
+...........................................
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* ``constinit``
+* ``consteval``
+
+Functions: ``std::function<>``, Lambdas
+.......................................
+
+* From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
+
+  * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
+  * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+
 Strongly Typed enum
 ...................
 
@@ -75,81 +83,73 @@ Delegating Constructor
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic`
 
-``constexpr``, ``constinit``, ``consteval``
--------------------------------------------
+Moving, RValue References: Do We Want To Copy Sensors?
+------------------------------------------------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
-* ``constinit``
-* ``consteval``
+Moving: Usage
+.............
 
-Smart Pointers, And Move Semantics
-----------------------------------
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 
-* From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
 
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
-  * :doc:`/trainings/material/soup/cxx11/exercises/bag-unique`
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
-  * :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+Moving: Implementation
+......................
 
-* Moving, “RValue References”
+Building upon the example from
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group` which is 
 
-  Put emphasis on *Rule Of Five*!
+* Pointless
+* It implements a pointless ``String`` class that does resource
+  management
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
-  * :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
-    (a feature which shares the syntax with moving in that it uses
-    ``&&``, but is something completely different)
+Do some initial live hacking
 
-Types, Functions, Type Erasure, Toolcase
-----------------------------------------
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
 
-A broader view of interfaces, and what can be done about it.
+Live-code a sensor class for
+:doc:`/trainings/material/soup/linux/hardware/w1/topic`
 
-Functions (``std::function<>``, Lambdas)
-........................................
+* Show problems |longrightarrow| *copy!*
+* |longrightarrow| rule of five
+* Inhibit copy
+* Implement move
 
-* From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
+Round it up: ``&&`` is not always what you think |:thumbsdown:|
+|:middle_finger:|
 
-  * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
-  * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
-
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
-
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
+  (a feature which shares the syntax with moving in that it uses
+  ``&&``, but is something completely different)
 
 Type Erasure
-............
+------------
 
 * *Type erasure*: what is that, and why?
-* Solutions
+* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
 
-C++ Toolcase
-............
+Allocators
+----------
+
+Ugh. Try to come up with something. Urgh.
+
+C++ Pythonic Toolcase
+---------------------
 
 * ``std::any``
 * ``std::optional``
 * ``std::variant``
 
-Dynamic Versus Static Typing: Templates
-.......................................
-
-* From :doc:`/trainings/material/soup/cxx03/050-templates/group`
-
-  * :doc:`/trainings/material/soup/cxx03/050-templates/010-function-templates/topic`
-  * :doc:`/trainings/material/soup/cxx03/050-templates/020-class-templates/topic`
-
-* Type traits
-
 Concepts
-........
+--------
 
 From :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
 

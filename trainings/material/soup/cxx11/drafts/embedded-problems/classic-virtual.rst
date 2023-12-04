@@ -1,5 +1,28 @@
+.. include:: <mmlalias.txt>
+
+
 Classic Virtual
 ===============
+
+.. contents::
+   :local:
+
+Overview
+--------
+
+.. sidebar::
+
+   **See also**
+
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+
+* Classic polymorpism: common base class - *interface*
+* Easy to use: call base class pointer |longrightarrow| *dynamic dispatch*
+* *Pro*: easy polymorphic use (e.g. store object of different derived
+  type in an array of pointer-to-base-type)
+* *Con*: code bloat, measured in binary size
+* *Virtual dispatch* per language support (this is what ``virtual`` is
+  there for)
 
 Sensor Definitions
 ------------------
@@ -10,6 +33,8 @@ Sensor Definitions
 
 Virtual Access
 --------------
+
+This is easy - just call virtual method ...
 
 .. literalinclude:: code/classic-virtual/virtual.h
    :caption: :download:`code/classic-virtual/virtual.h`
