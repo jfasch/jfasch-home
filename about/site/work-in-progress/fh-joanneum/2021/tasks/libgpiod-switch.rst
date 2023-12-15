@@ -7,6 +7,9 @@
 ``libgpiod`` Switch
 ===================
 
+.. contents::
+   :local:
+
 Requirements
 ------------
 

@@ -3,8 +3,11 @@
 .. ot-task:: fh2021.switch_interface
 
 
-Switch Interface
-================
+(DONE) Switch Interface
+=======================
+
+.. contents::
+   :local:
 
 .. sidebar::
 

@@ -3,8 +3,11 @@
 .. ot-task:: fh2021.datalogger
 
 
-Data Logger
-===========
+(DONE) Data Logger
+==================
+
+.. contents::
+   :local:
 
 .. sidebar::
 
@@ -66,6 +69,24 @@ Standup Records
     replacement)
   * Three sensors should lead to a measurement size (.size()) of 3
   * ...
+
+2023-12-14
+..........
+
+* Look over new tests
+
+  * ``logger_suite.LoggerBasicTest``
+  * ``sensor_values_suite.*``
+  * ``sensor_config_suite.basic``
+
+* ``SensorConfig``: check duplicates
+
+  * ``sensor_config_suite.duplicate_sensor``
+
+* Outlook
+
+  * :doc:`datalogger-csv-sink`
+  * :doc:`datalogger-mqtt-sink`
 
 Requirements
 ------------

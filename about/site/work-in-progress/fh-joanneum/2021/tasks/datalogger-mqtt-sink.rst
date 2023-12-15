@@ -7,6 +7,9 @@
 Data Logger: MQTT Sink
 ======================
 
+.. contents::
+   :local:
+
 Requirements
 ------------
 

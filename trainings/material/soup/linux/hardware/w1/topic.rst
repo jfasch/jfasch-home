@@ -237,7 +237,7 @@ or to a new config file, say, ``/etc/modules-load.d/i2c.conf`` :
 .. code-block:: text
    :caption: Add to ``/etc/modules``
 
-   dtparam=i2c_arm=on
+   i2c-dev
 
 
 The device should now be there at the :ref:`configured address

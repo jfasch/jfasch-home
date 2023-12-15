@@ -7,6 +7,9 @@
 Data Logger: CSV Sink
 =====================
 
+.. contents::
+   :local:
+
 Requirements
 ------------
 

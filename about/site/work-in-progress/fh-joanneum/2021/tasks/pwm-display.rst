@@ -6,6 +6,9 @@
 Temperature Display: LED Via A PWM Controller
 =============================================
 
+.. contents::
+   :local:
+
 .. sidebar::
    
    **See also**
@@ -41,6 +44,18 @@ Standup Records
 
 * Refactoring round (just like :doc:`switch-interface`): put
   everything display-like under its hood
+
+2023-12-14
+..........
+
+* ``src_demos/``? Move things to ``toolcase/base/``!
+* What's the relationship between, e.g.
+
+  * ``src_demos/LEDStripeDisplay.h`` and
+    ``toolcase/base/display-led-stripe.h``
+  * ``src_demos/PWMDisplay.h`` and ``toolcase/base/pwm_controller.h``
+
+  |longrightarrow| unify!
 
 Requirements
 ------------

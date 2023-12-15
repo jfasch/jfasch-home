@@ -281,3 +281,45 @@ Renames
 ```````
 
 * ``LEDDisplay`` -> ``PWMController``
+
+2023-12-14 (6 VO)
+-----------------
+
+Project
+.......
+
+* :doc:`tasks/group`
+
+Datalogger
+``````````
+
+* :doc:`tasks/datalogger`
+
+  * Status: couple of minor tweaks (see "Standup records" in
+    :doc:`tasks/datalogger`)
+
+* Followup tasks
+
+  * :doc:`tasks/datalogger-csv-sink`
+  * :doc:`tasks/datalogger-mqtt-sink`
+  * :doc:`tasks/datalogger-integration`
+
+Boiling Pot
+```````````
+
+* :doc:`tasks/boiling-pot`
+* Followup tasks
+
+  * :doc:`tasks/boiling-pot-display`
+  * :doc:`tasks/boiling-pot-basic-integration`
+  * :doc:`tasks/boiling-pot-full-integration`
+
+Peripherals
+```````````
+
+* :doc:`tasks/pwm-display`
+* :doc:`tasks/sysfs-gpio-switch`
+* :doc:`tasks/switch-interface`
+* Followup tasks
+
+  * :doc:`tasks/display-infrastructure`

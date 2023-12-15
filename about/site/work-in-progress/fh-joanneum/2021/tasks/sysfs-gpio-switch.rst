@@ -7,6 +7,9 @@
 SysFS GPIO Switch
 =================
 
+.. contents::
+   :local:
+
 Standup Records
 ---------------
 

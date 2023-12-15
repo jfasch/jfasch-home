@@ -1,10 +1,11 @@
 .. include:: <mmlalias.txt>
 
 .. ot-task:: fh2021.boiling_pot
-   :dependencies: fh2021.switch_interface
+   :dependencies: fh2021.switch_interface,
+		  fh2021.sensor_interface
 
 
-An IoT Boiling Pot (The Beginning)
+(DONE) Boiling Pot (The Beginning)
 ==================================
 
 .. sidebar::
@@ -12,6 +13,9 @@ An IoT Boiling Pot (The Beginning)
    **See also**
 
    * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
+
+.. contents::
+   :local:
 
 Standup Records
 ---------------
@@ -22,6 +26,12 @@ Standup Records
 * Complete tests (define a few more?)
 * Pull request
 * Team to continue on :doc:`switch-interface`
+
+2023-12-14
+..........
+
+* Should be complete, no?
+* Outlook: 
 
 Requirements
 ------------
