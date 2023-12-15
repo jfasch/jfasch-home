@@ -1,3 +1,6 @@
+.. ot-topic:: cxx11.embedded_problems.related_no_virtual
+   :dependencies: cxx11.embedded_problems.classic_virtual
+
 .. include:: <mmlalias.txt>
 
 

@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-Structured Binding
-==================
+Tuple Unpacking (Err, Structured Binding)
+=========================================
 
 .. contents::
    :local:

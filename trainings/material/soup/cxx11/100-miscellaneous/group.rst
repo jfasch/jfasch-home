@@ -1,3 +1,6 @@
+.. ot-group:: cxx11.miscellaneous
+
+
 Miscellaneous
 =============
 
@@ -17,7 +20,5 @@ Topics
 Group Description
 -----------------
 	      
-.. ot-group:: cxx11.miscellaneous
-
 .. ot-graph::
    :entries: cxx11.miscellaneous

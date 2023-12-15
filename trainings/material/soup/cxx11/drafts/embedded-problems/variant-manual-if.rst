@@ -1,3 +1,7 @@
+.. ot-topic:: cxx11.embedded_problems.variant_manual_if
+   :dependencies: cxx11.embedded_problems.unrelated,
+		  cxx11.miscellaneous.variant
+
 .. include:: <mmlalias.txt>
 
 
@@ -18,8 +22,9 @@ Overview
 
 * Take ``union`` approach from :doc:`unrelated` further
 * |longrightarrow| store not only pointers, but objects
-* *Manual* virtual dispatch (see :download:`code/variant-manual-if/virtual.h`)
-  based on ``std::variant<>`` examination (``if``)
+* *Manual* virtual dispatch (see
+  :download:`code/variant-manual-if/virtual.h`) based on
+  ``std::variant<>`` examination (``if``)
 * |longrightarrow| *Adding another sensor type requires another branch
   in* ``if``
 

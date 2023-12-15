@@ -1,7 +1,10 @@
+ADD_SUBDIRECTORY(why-replace-virtual)
+
 ADD_SUBDIRECTORY(classic-virtual)
 ADD_SUBDIRECTORY(related-no-virtual)
 ADD_SUBDIRECTORY(unrelated)
 ADD_SUBDIRECTORY(variant-manual-if)
 ADD_SUBDIRECTORY(variant-manual-visit)
 ADD_SUBDIRECTORY(variant-automatic-visit)
+ADD_SUBDIRECTORY(type-erasure)
 ADD_SUBDIRECTORY(vector-allocator)

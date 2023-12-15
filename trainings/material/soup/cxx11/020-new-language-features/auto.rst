@@ -4,8 +4,8 @@
    :dependencies: cxx11.new_language_features.strongly_typed_enums
 
 
-``auto``
-========
+Duck Typing (Err, ``auto``) Without A Duck
+==========================================
 
 .. contents::
    :local:

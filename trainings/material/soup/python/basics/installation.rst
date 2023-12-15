@@ -3,6 +3,9 @@
 Python Installation
 ===================
 
+.. contents::
+   :local:
+
 Setup
 -----
 

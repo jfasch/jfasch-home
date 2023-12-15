@@ -1,3 +1,7 @@
+.. ot-topic:: cxx11.embedded_problems.variant_automatic_visit
+   :dependencies: cxx11.embedded_problems.variant_manual_visit
+
+
 .. include:: <mmlalias.txt>
 
 

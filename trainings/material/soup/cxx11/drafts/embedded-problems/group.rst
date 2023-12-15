@@ -16,17 +16,19 @@ solves no obvious problem. This is my personal attempt to create
 another solution to an unknown problem.
 
 Showing options to eliminate ``virtual``, landing in
-:doc:`variant-automatic-visit`
+:doc:`type-erasure`
 
 .. toctree::
    :maxdepth: 1
 
+   why-replace-virtual
    classic-virtual
    related-no-virtual
    unrelated
    variant-manual-if
    variant-manual-visit
    variant-automatic-visit
+   type-erasure
 
 Another attempt is that one:
 
@@ -52,8 +54,8 @@ Allocators
 
    allocator
 
-Group Description
------------------
+Dependencies
+------------
 	      
 .. ot-graph::
    :entries: cxx11.embedded_problems

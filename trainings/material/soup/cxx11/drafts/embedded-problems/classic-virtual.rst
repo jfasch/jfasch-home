@@ -1,3 +1,6 @@
+.. ot-topic:: cxx11.embedded_problems.classic_virtual
+   :dependencies: cxx03.inheritance_oo.interface
+
 .. include:: <mmlalias.txt>
 
 
@@ -17,12 +20,14 @@ Overview
    * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
 * Classic polymorpism: common base class - *interface*
+* *Virtual dispatch* per language support (this is what ``virtual`` is
+  there for)
+* **Type erasure**: not seeing derived types (a.k.a. *concrete types*)
+  across the program - *only the interface*
 * Easy to use: call base class pointer |longrightarrow| *dynamic dispatch*
 * *Pro*: easy polymorphic use (e.g. store object of different derived
   type in an array of pointer-to-base-type)
 * *Con*: code bloat, measured in binary size
-* *Virtual dispatch* per language support (this is what ``virtual`` is
-  there for)
 
 Sensor Definitions
 ------------------
