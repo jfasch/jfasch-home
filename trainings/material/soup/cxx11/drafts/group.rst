@@ -14,6 +14,7 @@ Topics
    :maxdepth: 1
 
    embedded-problems/group
+   crtp
 
 Group Description
 -----------------

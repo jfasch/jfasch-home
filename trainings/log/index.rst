@@ -16,6 +16,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
+Python Basics (2023-12-18 - 2023-12-20)
+---------------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2023-12-18--Python-Basics/index>`)
+
 C++: Advanced Topics (2023-12-04 - 2023-12-06)
 ----------------------------------------------
 

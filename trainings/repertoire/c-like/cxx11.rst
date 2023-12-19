@@ -5,6 +5,9 @@
 An Introduction to Modern C++, In Three Days
 ============================================
 
+.. contents::
+   :local:
+
 .. sidebar::
 
    * training@faschingbauer.co.at

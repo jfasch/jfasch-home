@@ -38,6 +38,8 @@ Programming Languages
 
 * :doc:`material/soup/python/group`
 * :doc:`repertoire/c-like/index`
+* :doc:`/trainings/repertoire/c-like/cxx11`
+* :doc:`/trainings/repertoire/design-patterns/design-patterns`
 * :doc:`repertoire/bash`
 
 .. toctree::
@@ -63,7 +65,6 @@ Miscellaneous but Related
 * :doc:`A Week with the Raspberry Pi <repertoire/raspi-hands-on>`
 * :doc:`GNU Make: The Mother of All Build Tools <repertoire/make>`
 * :doc:`CMake: A Dirty But Powerful Build Tool <repertoire/cmake>`
-* :doc:`Subversion (SVN): The History of Version History <repertoire/svn>`
 * :doc:`repertoire/unittests`
 * :doc:`repertoire/design-patterns/design-patterns`
 

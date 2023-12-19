@@ -1,10 +1,10 @@
 .. meta::
-   :description: Gang of four patterns for empbedded C++ developers
+   :description: Gang of four patterns for C++ developers
    :keywords: schulung, training, programming, c, c++, architecture,
 	      design, patterns, oo, object, object oriented
 
-Design Patterns For Embedded C++ Developers
-===========================================
+Design Patterns For C++ Developers
+==================================
 
 .. sidebar::
 

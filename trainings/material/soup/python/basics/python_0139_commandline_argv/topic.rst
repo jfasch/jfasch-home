@@ -14,6 +14,10 @@ Commandline Arguments (``sys.argv``)
 Operating Systems and Programs
 ------------------------------
 
+.. sidebar::
+
+   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
+
 * *The Shell* is just one way to start a program
 
   * Generally speaking, programs are started by other programs (the
