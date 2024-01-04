@@ -38,8 +38,8 @@ Programming Languages
 
 * :doc:`material/soup/python/group`
 * :doc:`repertoire/c-like/index`
-* :doc:`/trainings/repertoire/c-like/cxx11`
-* :doc:`/trainings/repertoire/design-patterns/design-patterns`
+* :doc:`repertoire/c-like/cxx11`
+* :doc:`repertoire/design-patterns/design-patterns`
 * :doc:`repertoire/bash`
 
 .. toctree::

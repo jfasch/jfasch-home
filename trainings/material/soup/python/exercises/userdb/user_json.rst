@@ -46,7 +46,7 @@ Usage is envisioned as follows:
    import userdb_json
 
    for user in userdb_csv.read_csv_noheader('some.csv'):   # could be ANY source, of course
-       json_str = user_json.to_json(user)
+       json_str = userdb_json.to_json(user)
        ... publish json_str to MQTT topic ...
 
 Test Code

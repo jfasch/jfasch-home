@@ -31,7 +31,6 @@ Standup Records
 ..........
 
 * Should be complete, no?
-* Outlook: 
 
 Requirements
 ------------

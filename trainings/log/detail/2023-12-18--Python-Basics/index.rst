@@ -142,3 +142,17 @@ Exercise Series: CSV Files
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
 
+A Bit Of OO
+-----------
+
+From :doc:`/trainings/material/soup/python/advanced/oo/group`
+
+* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
+
+Exercise:
+
+* :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`

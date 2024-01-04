@@ -19,6 +19,10 @@ Standup Records
 2023-12-14
 ..........
 
+* Sensor as described in
+  :doc:`/trainings/material/soup/linux/hardware/w1/topic`
+* Someone from :doc:`sysfs-gpio-switch` to help out.
+
 Requirements
 ------------
 

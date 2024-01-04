@@ -323,3 +323,31 @@ Peripherals
 * Followup tasks
 
   * :doc:`tasks/display-infrastructure`
+
+2024-01-08 (6 VO)
+-----------------
+
+Project
+.......
+
+* Close task :doc:`tasks/boiling-pot-basic-integration`
+
+  * Bonus points for switch
+  * Bonus points for Pi donation
+  * Bring relay board and cooker, and a gapher tape
+
+* Bring :doc:`tasks/datalogger-integration` to an and
+
+  * Use a real sensor
+  * Coordinate with :doc:`tasks/datalogger-csv-sink` and
+    :doc:`tasks/datalogger-mqtt-sink`
+  * Integrate those using a *composite* sink
+
+* :doc:`tasks/display-infrastructure`, and
+  :doc:`tasks/boiling-pot-display`
+
+  * Status: do we have an interface? If not, make it so!
+  * Integrate into `firmware/boiling-pot.cpp
+    <https://github.com/jfasch/FH-ECE21/blob/main/firmware/boiling-pot.cpp>`__
+    |longrightarrow| see test cases mentioned in
+    :doc:`tasks/boiling-pot-display`
