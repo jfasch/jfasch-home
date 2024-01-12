@@ -4,7 +4,8 @@ Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry P
 .. toctree::
    :hidden:
 
-   glt
+   glt-2023
+   glt-2024
    pycon-2023
    screenplay
    installation

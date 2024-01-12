@@ -351,3 +351,11 @@ Project
     <https://github.com/jfasch/FH-ECE21/blob/main/firmware/boiling-pot.cpp>`__
     |longrightarrow| see test cases mentioned in
     :doc:`tasks/boiling-pot-display`
+
+2024-01-11 (6 VO)
+-----------------
+
+Project
+.......
+
+**BIG FAT SYSFS-GPIO NOTICE**: **NO SAFETY**
