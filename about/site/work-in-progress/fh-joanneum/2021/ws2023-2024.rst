@@ -9,6 +9,7 @@ WS2023/24
 
    tasks/group
    git/git
+   exam-2024-02-02/exam-2024-02-02-sample
 
 .. sidebar::
 
@@ -359,3 +360,8 @@ Project
 .......
 
 **BIG FAT SYSFS-GPIO NOTICE**: **NO SAFETY**
+
+2024-02-02 (Exam)
+-----------------
+
+* :doc:`exam-2024-02-02/exam-2024-02-02-sample`

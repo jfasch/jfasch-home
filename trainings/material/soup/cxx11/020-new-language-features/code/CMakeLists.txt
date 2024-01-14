@@ -55,6 +55,8 @@ ADD_EXECUTABLE(c++11-auto-array c++11-auto-array.cpp)
 # override
 # ----------------------------------------
 ADD_EXECUTABLE(c++11-override-ok c++11-override-ok.cpp)
+
+SET_SOURCE_FILES_PROPERTIES(c++11-override-omit-const.cpp PROPERTIES COMPILE_FLAGS -Wno-overloaded-virtual)
 ADD_EXECUTABLE(c++11-override-omit-const c++11-override-omit-const.cpp)
 # ADD_EXECUTABLE(c++11-override-keyword c++11-override-keyword.cpp)
 

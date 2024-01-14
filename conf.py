@@ -66,7 +66,6 @@ todo_include_todos = True
 # ablog
 if True:
     import ablog
-    templates_path.append(ablog.get_html_templates_path())
     post_date_format = '%Y-%m-%d'
 
     blog_title = u'Jörg Faschingbauer'

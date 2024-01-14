@@ -1,5 +1,6 @@
 #include "generator.h"
 #include <iostream>
+#include <cstdint>
 
 Generator<uint64_t> fibonacci()
 {
