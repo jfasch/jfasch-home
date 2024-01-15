@@ -181,7 +181,9 @@ if html_theme == _ALABASTER:
             'about.html',
             'searchbox.html',
             'navigation.html',
-            'postcard.html',
+            'ablog/postcard.html',
+            'ablog/tagcloud.html',
+
         ],
         '**': [
             'about.html',
