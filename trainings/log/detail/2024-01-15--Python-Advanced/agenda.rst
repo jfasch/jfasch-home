@@ -40,6 +40,11 @@ Control Flow, Sequences, *Iteration*
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
+Iterators ...
+
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
+
 Functions
 .........
 
