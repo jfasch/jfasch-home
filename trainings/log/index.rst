@@ -16,6 +16,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
+Python Advanced (2024-01-15 - 2024-01-17)
+-----------------------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2024-01-15--Python-Advanced/index>`)
+
+Location: Thalheim, Austria
+
 Python Basics (2023-12-18 - 2023-12-20)
 ---------------------------------------
 

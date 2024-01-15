@@ -1,5 +1,5 @@
-Agenda: Python Basics (Beginning Of 2024)
-=========================================
+Agenda: Python Advanced (2024-01-15 - 2024-01-17)
+=================================================
 
 .. contents::
    :local:
