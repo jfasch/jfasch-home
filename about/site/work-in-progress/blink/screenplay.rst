@@ -25,7 +25,7 @@ Greeting
 
 In a subdirectory:
 
-* ``stuff.py`` from :download:`snippets/stuff_complete`
+* ``stuff.py`` from :download:`snippets/stuff-complete`
 * Save away blink program with the squares etc
 
 Multiple Background Threads

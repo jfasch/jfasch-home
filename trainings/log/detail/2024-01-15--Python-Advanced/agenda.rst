@@ -106,5 +106,3 @@ From :doc:`/trainings/material/soup/python/misc/pandas/group`
 * :doc:`/trainings/material/soup/python/misc/pandas/filters`
 * :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
 * :doc:`/trainings/material/soup/python/misc/pandas/add_row`
-
-Refer to :doc:`/trainings/log/detail/2019-11-12/index` a lot.

@@ -11,7 +11,7 @@ Boiling Pot: Display, And Status Reporting
 
    **See also**
 
-   * :doc:`boiling-pot``
+   * :doc:`boiling-pot`
 
 .. contents::
    :local:

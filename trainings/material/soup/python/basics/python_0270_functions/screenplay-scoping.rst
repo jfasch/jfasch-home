@@ -47,13 +47,13 @@ scope:
 
 .. jupyter-execute::
 
-   def g():
-       print(globvar)
+   def f():
+       print(x)
    
-   globvar = 42
-   g()
+   x = 42
+   f()
 
-Note: ``globvar`` must be visible at *call* time, not at *definition*
+Note: ``x`` must be visible at *call* time, not at *definition*
 time
 
 Local and Global Variable With Same Name
