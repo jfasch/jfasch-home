@@ -111,9 +111,14 @@ Object Oriented Programming
 * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
-global?
+An afterthought:
 :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
 
+Group Project
+-------------
 
-* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+* :doc:`/trainings/material/soup/python/swdev/pytest/group`
