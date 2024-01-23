@@ -9,7 +9,7 @@ WS2023/24
 
    tasks/group
    git/git
-   exam-2024-02-02/exam-2024-02-02-sample
+   exam-2024-02-02/index
 
 .. sidebar::
 
@@ -30,7 +30,14 @@ OO: Recap
 * *What we know*: Constructor, Methods, Objects, ``this``
 
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+
+  From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group` ...
+
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
   
 * *What we have*
 
@@ -364,4 +371,36 @@ Project
 2024-02-02 (Exam)
 -----------------
 
-* :doc:`exam-2024-02-02/exam-2024-02-02-sample`
+Relevant Topics
+...............
+
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+* From
+  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+
+* From
+  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+
+* SOLID (OO Design)
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+  * `SOLID on Wikipedia <https://en.wikipedia.org/wiki/SOLID>`__
+
+A Sample Exam
+.............
+    
+:doc:`exam-2024-02-02/exam-2024-02-02-sample`
