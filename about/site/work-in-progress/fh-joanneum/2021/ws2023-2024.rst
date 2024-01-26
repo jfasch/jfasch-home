@@ -9,7 +9,7 @@ WS2023/24
 
    tasks/group
    git/git
-   exam-2024-02-02/index
+   exam-2024/index
 
 .. sidebar::
 
@@ -20,6 +20,7 @@ WS2023/24
 
 .. contents::
    :local:
+   :depth: 2
 
 2023-10-05 (6 VO)
 -----------------
@@ -403,4 +404,4 @@ Relevant Topics
 A Sample Exam
 .............
     
-:doc:`exam-2024-02-02/exam-2024-02-02-sample`
+:doc:`exam-2024/exam-2024-02-02-sample`

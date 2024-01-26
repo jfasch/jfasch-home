@@ -16,12 +16,17 @@ Here is a sampe usage of the ``W1Sensor`` class.
 .. literalinclude:: q-solid--sensor-with-id/sensor-with-id-main.cpp
    :language: c++
 
-Which of the five SOLID principles are violated? (Wrong answers are
-subtracted from correct answers)
+Obviously the ``id`` attribute of a sensor remains unused in most
+situations.
+
+Which of the five SOLID principles are violated? Write an ``X`` if a
+principle is violated. Wrong answers are subtracted from correct
+answers (the number of correct answers cannot become negative though).
 
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
    * * `X` if violated
      * Principle

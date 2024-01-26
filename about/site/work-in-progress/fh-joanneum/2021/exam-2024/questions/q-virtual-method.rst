@@ -4,7 +4,8 @@ To Be Or Not To Be Virtual
 Program Output, Version 1
 -------------------------
 
-What will be the output of the following program?
+What will be the output of the following program? (Write an ``X`` in
+the "True" or "False" columns)
 
 .. literalinclude:: q-virtual-method/nonvirtual.cpp
    :language: c++
@@ -12,6 +13,7 @@ What will be the output of the following program?
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
    * * True
      * False
@@ -32,7 +34,8 @@ What will be the output of the following program?
 Program Output, Version 2
 -------------------------
 
-What will be the output of the following program?
+What will be the output of the following program? (Write an ``X`` in
+the "True" or "False" columns)
 
 .. literalinclude:: q-virtual-method/virtual.cpp
    :language: c++
@@ -40,6 +43,7 @@ What will be the output of the following program?
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
    * * True
      * False

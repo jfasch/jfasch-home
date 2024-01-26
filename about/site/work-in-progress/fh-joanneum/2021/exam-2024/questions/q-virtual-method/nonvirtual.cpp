@@ -3,18 +3,18 @@
 class Base
 {
 public:
-    virtual void method() const
+    void method() const
     {
-        std::cout << "Base::method()" << std::endl;
+        std::cout << "Base::method()\n";
     }
 };
 
 class Derived : public Base
 {
 public:
-    void method() const override
+    void method() const
     {
-        std::cout << "Derived::method()" << std::endl;
+        std::cout << "Derived::method()\n";
     }
 };
 

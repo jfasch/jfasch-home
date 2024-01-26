@@ -1,11 +1,7 @@
 Parameter Passing
 =================
 
-Which One Is Better?
---------------------
-
-Which of the following (partial) class definition would lead to better
-performance in object initialization
+Given the following (partial) class definitions:
 
 .. code-block:: c++
    :caption: Variant A
@@ -25,17 +21,24 @@ performance in object initialization
        Person(const std::string& firstname, const std::string& lastname);
    };
 
+Question 1: Which One Is Better?
+--------------------------------
+
+Which of these class definitions would lead to better performance in
+object initialization?
+
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
    * * Variant A
      * Variant B
    * *
      *
 
-Why?
-----
+Question2: Why?
+---------------
 
 Why does the chosen variant perform better? (Write an ``X`` in the
 "True" or "False" columns)
@@ -43,6 +46,7 @@ Why does the chosen variant perform better? (Write an ``X`` in the
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
    * * True
      * False

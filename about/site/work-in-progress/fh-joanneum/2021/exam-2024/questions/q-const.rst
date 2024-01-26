@@ -1,5 +1,5 @@
-``const``
-=========
+``const`` Objects
+=================
 
 Given the following (incomplete) class definition ..
 
@@ -11,8 +11,8 @@ Given the following (incomplete) class definition ..
        int x() const { return _x; }
    };
 
-``const`` Objects
------------------
+Question 1
+----------
 
 Would the following code snippet compile?
 
@@ -24,14 +24,15 @@ Would the following code snippet compile?
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
    * * Yes
      * No
    * *
      *
 
-Non-``const`` Objects
----------------------
+Question 2
+----------
 
 Would the following code snippet compile?
 
@@ -43,6 +44,7 @@ Would the following code snippet compile?
 .. list-table::
    :align: left
    :widths: auto
+   :header-rows: 1
 
    * * Yes
      * No

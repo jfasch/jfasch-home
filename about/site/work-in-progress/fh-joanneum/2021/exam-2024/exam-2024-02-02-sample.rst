@@ -124,15 +124,15 @@ Consider the following ``Sensor`` hierarchy (and imagine that there
 are many more implementations like ``W1Sensor`` out there that
 implement the ``Sensor`` interface).
 
-.. literalinclude:: q-solid--sensor-with-id/sensor.h
+.. literalinclude:: questions/q-solid--sensor-with-id/sensor.h
    :language: c++
 
-.. literalinclude:: q-solid--sensor-with-id/sensor-w1.h
+.. literalinclude:: questions/q-solid--sensor-with-id/sensor-w1.h
    :language: c++
 
 Here is a sampe usage of the ``W1Sensor`` class.
 
-.. literalinclude:: q-solid--sensor-with-id/sensor-with-id-main.cpp
+.. literalinclude:: questions/q-solid--sensor-with-id/sensor-with-id-main.cpp
    :language: c++
 
 Which of the five SOLID principles are violated? (Wrong answers are

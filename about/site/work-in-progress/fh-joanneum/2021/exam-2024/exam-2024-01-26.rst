@@ -1,0 +1,29 @@
+Exam: Embedded Computing 2 (2024-01-26)
+=======================================
+
+.. list-table::
+   :align: left
+   :widths: 10 50
+
+   * * Name
+     *
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Topic
+     * Points
+   * * :doc:`questions/q-const`
+     *
+   * * :doc:`questions/q-param-passing`
+     *
+   * * :doc:`questions/q-virtual-method`
+     *
+   * * :doc:`questions/q-solid--hysteresis-with-display`
+     *
+   * * :doc:`questions/q-solid--sensor-with-id`
+     *
+
+

@@ -4,7 +4,7 @@
 
 int main()
 {
-    W1Sensor sensor(/*id*/ 666,                        // <--- unused
+    W1Sensor sensor(/*id*/ 666,                        // <--- unused in this program
                     /*w1_address*/ 0xdeadbeefUL);
 
     while (true) {
