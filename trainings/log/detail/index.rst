@@ -5,6 +5,7 @@ Details
    :maxdepth: 1
 
 
+   2024-01-29--Python-Basics/index
    2024-01-15--Python-Advanced/index
    2023-12-18--Python-Basics/index
    2023-12-04--C++-Advanced/index
