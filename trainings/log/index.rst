@@ -15,11 +15,17 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Python Basics (2024-01-29 - 2024-01-31)
+---------------------------------------
+
+This course is under preparation
+
+(:doc:`More ... <detail/2024-01-29--Python-Basics/index>`)
+
+Location: Raaba/Graz, Austria
 
 Python Advanced (2024-01-15 - 2024-01-17)
 -----------------------------------------
-
-This course is under preparation.
 
 (:doc:`More ... <detail/2024-01-15--Python-Advanced/index>`)
 
@@ -28,36 +34,29 @@ Location: Thalheim, Austria
 Python Basics (2023-12-18 - 2023-12-20)
 ---------------------------------------
 
-This course is under preparation.
-
 (:doc:`More ... <detail/2023-12-18--Python-Basics/index>`)
+
+Location: Thalheim, Austria
 
 C++: Advanced Topics (2023-12-04 - 2023-12-06)
 ----------------------------------------------
 
-This course is under preparation.
-
 (:doc:`More ... <detail/2023-12-04--C++-Advanced/index>`)
-
 
 Python Basics (2023-11-29 - 2023-12-01)
 ---------------------------------------
 
-This course is under preparation.
-
 (:doc:`More ... <detail/2023-11-29--Python-Basics/index>`)
+
+Location: Thalheim, Austria
 
 CMake: An Introduction (2023-11-27)
 -----------------------------------
-
-This course is under preparation.
 
 (:doc:`More ... <detail/2023-11-27--CMake/index>`)
 
 Python Advanced (2023-11-22 - 2023-11-24)
 -----------------------------------------
-
-This course is under preparation.
 
 (:doc:`More ... <detail/2023-11-22--Python-Advanced/index>`)
 

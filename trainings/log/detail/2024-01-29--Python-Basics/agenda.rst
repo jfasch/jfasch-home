@@ -94,11 +94,11 @@ Pandas (Data Science Basics)
 
 From :doc:`/trainings/material/soup/python/misc/pandas/group`
 
-* :doc:`/trainings/material/soup/python/misc/pandas/basics
-* :doc:`/trainings/material/soup/python/misc/pandas/iloc
-* :doc:`/trainings/material/soup/python/misc/pandas/loc
-* :doc:`/trainings/material/soup/python/misc/pandas/indexes
-* :doc:`/trainings/material/soup/python/misc/pandas/filters
-* :doc:`/trainings/material/soup/python/misc/pandas/mod_col
-* :doc:`/trainings/material/soup/python/misc/pandas/add_row
+* :doc:`/trainings/material/soup/python/misc/pandas/basics`
+* :doc:`/trainings/material/soup/python/misc/pandas/iloc`
+* :doc:`/trainings/material/soup/python/misc/pandas/loc`
+* :doc:`/trainings/material/soup/python/misc/pandas/indexes`
+* :doc:`/trainings/material/soup/python/misc/pandas/filters`
+* :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
+* :doc:`/trainings/material/soup/python/misc/pandas/add_row`
 
