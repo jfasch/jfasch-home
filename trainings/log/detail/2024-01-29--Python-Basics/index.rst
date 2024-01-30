@@ -47,11 +47,11 @@ Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0125_running/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0130_syntax_etc/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0140_variables/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0139_commandline_argv/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
 * :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
@@ -80,7 +80,6 @@ More Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
@@ -91,3 +90,14 @@ More Datatypes
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+
+Exercise Series: CSV Files
+--------------------------
+
+* :doc:`/trainings/material/soup/python/misc/csv/topic`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
+* :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+
