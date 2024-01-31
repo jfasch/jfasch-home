@@ -107,6 +107,7 @@ Morning Awakening
 
 * ``os.walk()``
 * ``pathlib``: a better ``os.join()``
+* :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
 
 More About Datatypes
 ....................
@@ -116,6 +117,31 @@ More About Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
+
+Unit Testing (``pytest``), Project Management
+.............................................
+
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
+* From :doc:`/trainings/material/soup/python/swdev/pip/topic`:
+
+  * :doc:`/trainings/material/soup/python/swdev/pip/slides`
+  * :doc:`/trainings/material/soup/python/swdev/pip/screenplay`
+
+* From :doc:`/trainings/material/soup/python/swdev/venv/topic`
+
+  * :doc:`/trainings/material/soup/python/swdev/venv/slides`
+  * :doc:`/trainings/material/soup/python/swdev/venv/screenplay`
+
+Object Oriented Programming
+...........................
+
+From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+
+* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 
 Exercise Series: CSV Files
 ..........................
