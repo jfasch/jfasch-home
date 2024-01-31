@@ -31,17 +31,20 @@ Python Basics (2024-01-29 - 2024-01-31)
 
    * :doc:`/trainings/material/soup/python/group`
 
-Setup
+Day 1
 -----
+
+Setup
+.....
 
 * :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/misc/vscode`
 
 Basics
-------
+......
 
 Datatypes
-.........
+`````````
 
 * :doc:`/trainings/material/soup/python/basics/python_0110_blahblah/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0120_helloworld/topic`
@@ -57,7 +60,7 @@ Datatypes
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 
 Control Flow, Sequences, *Iteration*
-....................................
+````````````````````````````````````
 
 * :doc:`/trainings/material/soup/python/basics/python_0170_if/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
@@ -65,6 +68,10 @@ Control Flow, Sequences, *Iteration*
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
+
+Day 2
+-----
+
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
 Functions
@@ -72,27 +79,46 @@ Functions
 
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/slideshow`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
+* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
 
-More Datatypes
-..............
+More Datatypes, File IO
+.......................
 
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0250_refs_flat_deep_copy/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0270_functions/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0300_strings/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+  (Solution: `distill.py
+  <https://github.com/jfasch/2024-01-29/blob/main/livehacking/distill.py>`__)
+
+``os.listdir()``, ``os.path.join()``
+....................................
+
+See :doc:`notebook`
+
+Day 3
+-----
+
+Morning Awakening
+.................
+
+* ``os.walk()``
+* ``pathlib``: a better ``os.join()``
+
+More About Datatypes
+....................
+
 * :doc:`/trainings/material/soup/python/basics/python_0400_lists/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0450_dictionaries/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0460_sets/topic`
 * :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
-* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_generator`
 * :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
-* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
 
 Exercise Series: CSV Files
---------------------------
+..........................
 
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
