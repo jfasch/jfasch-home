@@ -11,24 +11,28 @@ devices without any kind of temperature display, the ``Display*``
 parameter to its constructor will not be passed (respectively, it will
 be passed as NULL pointer).
 
-Which of the five SOLID principles are violated? Write an ``X`` if a
-principle is violated. Wrong answers are subtracted from correct
-answers (the number of correct answers cannot become negative though).
+Which of the five SOLID principles are violated? Which are not? Comment!
 
 .. list-table::
    :align: left
-   :widths: auto
+   :widths: 10 50 50
    :header-rows: 1
 
-   * * `X` if violated
-     * Principle
-   * * 
-     * Single Responsibility
-   * * 
-     * Open/Closed
-   * * 
-     * Liskov Substitution
-   * * 
-     * Interface Segregation
-   * * 
-     * Dependency Inversion
+   * * Principle
+     * Why violated?
+     * Why not?
+   * * Single Responsibility
+     *
+     *
+   * * Open/Closed
+     * 
+     *
+   * * Liskov Substitution
+     *
+     *
+   * * Interface Segregation
+     *
+     *
+   * * Dependency Inversion
+     *
+     *

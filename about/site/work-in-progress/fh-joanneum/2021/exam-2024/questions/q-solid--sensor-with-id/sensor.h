@@ -7,8 +7,11 @@ public:
     virtual double get_temperature() = 0;
 
     Sensor(unsigned int id) : _id(id) {}
-    unsigned int id() const { return _id; }            // <--- unused, mostly
+
+    // unused, mostly
+    unsigned int id() const { return _id; }
 
 private:
+    // unused, mostly
     unsigned int _id;
 };

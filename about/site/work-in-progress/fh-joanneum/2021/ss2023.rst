@@ -4,12 +4,6 @@
 SS2023
 ======
 
-.. toctree::
-   :hidden:
-
-   exam-2023-06-30
-   exam-2023-06-30-solved
-
 .. contents::
    :local:
 

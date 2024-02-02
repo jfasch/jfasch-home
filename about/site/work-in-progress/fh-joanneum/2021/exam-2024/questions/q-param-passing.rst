@@ -9,7 +9,8 @@ Given the following (partial) class definitions:
    class Person
    {
    public:
-       Person(std::string firstname, std::string lastname);
+       Person(std::string firstname, 
+              std::string lastname);
    };
 
 .. code-block:: c++
@@ -18,7 +19,8 @@ Given the following (partial) class definitions:
    class Person
    {
    public:
-       Person(const std::string& firstname, const std::string& lastname);
+       Person(const std::string& firstname, 
+              const std::string& lastname);
    };
 
 Question 1: Which One Is Better?

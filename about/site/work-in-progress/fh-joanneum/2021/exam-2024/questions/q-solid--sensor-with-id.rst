@@ -19,24 +19,28 @@ Here is a sampe usage of the ``W1Sensor`` class.
 Obviously the ``id`` attribute of a sensor remains unused in most
 situations.
 
-Which of the five SOLID principles are violated? Write an ``X`` if a
-principle is violated. Wrong answers are subtracted from correct
-answers (the number of correct answers cannot become negative though).
+Which of the five SOLID principles are violated? Which are not? Comment!
 
 .. list-table::
    :align: left
-   :widths: auto
+   :widths: 10 50 50
    :header-rows: 1
 
-   * * `X` if violated
-     * Principle
-   * * 
-     * Single Responsibility
-   * * 
-     * Open/Closed
-   * * 
-     * Liskov Substitution
-   * * 
-     * Interface Segregation
-   * * 
-     * Dependency Inversion
+   * * Principle
+     * Why violated?
+     * Why not?
+   * * Single Responsibility
+     *
+     *
+   * * Open/Closed
+     * 
+     *
+   * * Liskov Substitution
+     *
+     *
+   * * Interface Segregation
+     *
+     *
+   * * Dependency Inversion
+     *
+     *

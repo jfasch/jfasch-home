@@ -24,7 +24,8 @@ class Hysteresis
 {
 public:
     Hysteresis(Sensor* sensor, Switch* switcH,
-               Display* display,                       // <--- passed a nullptr, mostly
+               // passed a nullptr, mostly
+               Display* display,    
                double low, double high)
     : _sensor(sensor),
       _switch(switcH),
@@ -42,7 +43,8 @@ public:
         else { /* leave as-is */ }
 
         if (_display)
-            _display->show(current_temperature);       // <--- not called, mostly
+            // not called, mostly
+            _display->show(current_temperature);
     }
 
 private:

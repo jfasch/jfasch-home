@@ -97,7 +97,7 @@ More Datatypes, File IO
 ``os.listdir()``, ``os.path.join()``
 ....................................
 
-See :doc:`notebook`
+See :doc:`notebook <notebook>`
 
 Day 3
 -----
@@ -143,8 +143,8 @@ From :doc:`/trainings/material/soup/python/advanced/oo/group`:
 * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 
-Exercise Series: CSV Files
-..........................
+(Optional) Exercise Series: CSV Files
+.....................................
 
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader`
@@ -152,4 +152,19 @@ Exercise Series: CSV Files
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/csvdictreader-function`
 * :doc:`/trainings/material/soup/python/exercises/userdb/userdb_csv`
+
+``pandas``, ``numpy``, ``scikit-learn``
+.......................................
+
+From :doc:`/trainings/material/soup/python/misc/pandas/group`
+
+* :doc:`/trainings/material/soup/python/misc/pandas/basics`
+* :doc:`/trainings/material/soup/python/misc/pandas/iloc`
+* :doc:`/trainings/material/soup/python/misc/pandas/loc`
+* :doc:`/trainings/material/soup/python/misc/pandas/indexes`
+* :doc:`/trainings/material/soup/python/misc/pandas/filters`
+* :doc:`/trainings/material/soup/python/misc/pandas/mod_col`
+* :doc:`/trainings/material/soup/python/misc/pandas/add_row`
+
+``numpy`` and ``scikit-learn``: see :doc:`notebook <notebook>`
 

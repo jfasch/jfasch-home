@@ -20,7 +20,7 @@ import sys
 _me = 'Jörg Faschingbauer'
 _canonical = 'https://www.faschingbauer.me'
 project = author = _me
-copyright = '2019-2023 (GPLv3), '+_me
+copyright = '2019-2024 (GPLv3), '+_me
 html_title = _me
 html_baseurl = _canonical
 release = version = ''

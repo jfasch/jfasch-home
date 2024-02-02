@@ -4,13 +4,6 @@
 WS2023/24
 =========
 
-.. toctree::
-   :hidden:
-
-   tasks/group
-   git/git
-   exam-2024/index
-
 .. sidebar::
 
    * `Github project <https://github.com/jfasch/FH-ECE21>`__
