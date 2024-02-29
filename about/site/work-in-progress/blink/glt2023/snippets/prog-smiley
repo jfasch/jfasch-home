@@ -1,0 +1,25 @@
+good_mouth = (5,16,7,24,18)
+bad_mouth = (13,16,7,24,14)
+straight_mouth = rows[3]
+prog = sequence([
+    any([
+        all([
+            forever(
+                sequence([
+                    any([on(good_mouth), sleep(0.5)]),
+                    any([on(straight_mouth), sleep(0.5)]),
+                    any([on(bad_mouth), sleep(0.5)]),
+                    any([on(straight_mouth), sleep(0.5)]),
+                ]),
+            ),
+            on((10,)),
+            on((4,)),
+        ]),
+        sleep(7),
+    ]),
+    all([
+        on(good_mouth),
+        on((10,)),
+        on((4,)),
+    ]),
+])

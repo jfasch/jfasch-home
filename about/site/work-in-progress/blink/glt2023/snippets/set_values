@@ -1,0 +1,2 @@
+def SET_VALUES(ios, b):
+    REQUEST.set_values({i: gpiod.line.Value(b) for i in ios})

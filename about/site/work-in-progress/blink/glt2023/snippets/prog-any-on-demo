@@ -1,0 +1,4 @@
+prog = any([
+    on(ALL_IOS),
+    sleep(0.5),
+])
