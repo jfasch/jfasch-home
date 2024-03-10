@@ -1,4 +1,0 @@
-async def all(coros):
-    tasks = [asyncio.create_task(c) for c in coros]
-    for t in tasks:
-        await t
