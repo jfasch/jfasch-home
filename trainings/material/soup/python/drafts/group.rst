@@ -16,6 +16,7 @@ Python: Draft Topics
    matplotlib/topic
    argparse/topic
    setuptools/topic
+   asyncio/topic
 
 .. ot-graph::
    :entries: python.drafts

@@ -117,6 +117,21 @@ html_theme_options = {}
 
 _jf_csss = []
 
+if True: # Gaphor
+    extensions.append("gaphor.extensions.sphinx")
+
+    # the extensions does not regognize .gaphor files which I can the
+    # refer to by names. bring that information in.
+
+    # normally, this should not be a burden because models are cental
+    # to a project anyway, phycially existing in ``Documentation/``
+    # once and for all.
+
+    gaphor_models = {  
+        "fh_source_sink": './about/site/work-in-progress/playground/gaphor/SourceAndSink.gaphor',
+    }    
+
+
 if html_theme == _ALABASTER:
     # RANT: the settings below (page_width 90%, sidebar_width 20% (of
     # page_width, essentially)) result in 

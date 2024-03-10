@@ -16,7 +16,8 @@ CAN/Linux Basics
 Why This Talk?
 --------------
 
-* Everything is very complicated ((C) Fred Sinowatz) ... if things are
+* Everything is very complicated ((C) `Fred Sinowatz
+  <https://de.wikipedia.org/wiki/Fred_Sinowatz>`__) ... if things are
   not kept apart
 * CAN bus is not usually associated with simplicity
 * |longrightarrow| Linux makes it simple by keeping matters apart

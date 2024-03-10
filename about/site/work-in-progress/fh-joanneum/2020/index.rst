@@ -1,5 +1,5 @@
-Embedded Computing 2020
-=======================
+Embedded Computing STECE-2020)
+==============================
 
 .. contents::
    :local:

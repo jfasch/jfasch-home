@@ -1,5 +1,5 @@
-Embedded Computing 2019
-=======================
+Embedded Computing (STECE-2019)
+===============================
 
 .. contents::
    :local:

@@ -8,7 +8,7 @@ Work in Progress
    python-training
    stacks
    seo
-   blog-queue/index
+   playground/index
    todo-misc.rst
    git
    screencast

@@ -1,5 +1,5 @@
-Embedded Computing 2021
-=======================
+Embedded Computing (STECE-2021)
+===============================
 
 .. contents::
    :local:
