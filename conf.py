@@ -120,8 +120,8 @@ _jf_csss = []
 if True: # Gaphor
     extensions.append("gaphor.extensions.sphinx")
 
-    # the extensions does not regognize .gaphor files which I can the
-    # refer to by names. bring that information in.
+    # the extensions does not regognize .gaphor files which I can then
+    # refer to by name. bring that information in.
 
     # normally, this should not be a burden because models are cental
     # to a project anyway, phycially existing in ``Documentation/``

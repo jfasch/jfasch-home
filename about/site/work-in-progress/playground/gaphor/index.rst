@@ -84,8 +84,8 @@ Sphinx
    if True: # Gaphor
        extensions.append("gaphor.extensions.sphinx")
    
-       # the extensions does not regognize .gaphor files which I can the
-       # refer to by names. bring that information in.
+       # the extensions does not regognize .gaphor files which I can then
+       # refer to by name. bring that information in.
    
        # normally, this should not be a burden because models are cental
        # to a project anyway, phycially existing in ``Documentation/``
@@ -95,8 +95,28 @@ Sphinx
            "fh_source_sink": './about/site/work-in-progress/playground/gaphor/SourceAndSink.gaphor',
        }    
 
-.. diagram:: Static
-   :model: fh_source_sink
+Here's where I get stuck. The ``diagram::`` directive somehow assumes
+that we generate right into the source.
+
+.. code-block:: console
+
+   .. diagram:: Static
+      :model: fh_source_sink
+
+.. code-block:: console
+
+   File "/usr/lib64/python3.12/pathlib.py", line 682, in relative_to
+     raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+   ValueError: '/tmp/jfasch-home/gaphor' is not in the subpath of '/home/jfasch/My-Projects/jfasch-home'
+   
+   Exception occurred:
+     File "/usr/lib64/python3.12/pathlib.py", line 682, in relative_to
+       raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+   ValueError: '/tmp/jfasch-home/gaphor' is not in the subpath of '/home/jfasch/My-Projects/jfasch-home'
+   The full traceback has been saved in /tmp/sphinx-err-niho62fg.log, if you want to report the issue to the developers.
+   Please also report this if it was a user error, so that a better error message can be provided next time.
+   A bug report can be filed in the tracker at <https://github.com/sphinx-doc/sphinx/issues>. Thanks!
+   make: *** [Makefile:20: html] Error 2
 
 
 Jupyter Notebook
