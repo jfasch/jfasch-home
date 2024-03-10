@@ -15,10 +15,20 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Linux Basics (2024-03-11 - 2024-03-13)
+--------------------------------------
+
+This course is under preparation.
+
+Held online via Teams.
+
+(:doc:`More ... <detail/2024-03-11--Linux-Basics/index>`)
+
 Python Basics (2024-01-29 - 2024-01-31)
 ---------------------------------------
 
-This course is under preparation
+Very Python Basics for a group of young Physicists/Data Scientists at
+a company near Graz.
 
 (:doc:`More ... <detail/2024-01-29--Python-Basics/index>`)
 
@@ -27,12 +37,18 @@ Location: Raaba/Graz, Austria
 Python Advanced (2024-01-15 - 2024-01-17)
 -----------------------------------------
 
+Teaching Python to a number of smart people, at a long-time customer
+of mine.
+
 (:doc:`More ... <detail/2024-01-15--Python-Advanced/index>`)
 
 Location: Thalheim, Austria
 
 Python Basics (2023-12-18 - 2023-12-20)
 ---------------------------------------
+
+Teaching Python to a number of smart people, at a long-time customer
+of mine.
 
 (:doc:`More ... <detail/2023-12-18--Python-Basics/index>`)
 
