@@ -79,7 +79,7 @@ Overview
 Pipe: Examples
 --------------
 
-* How many group am I member of?
+* How many groups am I member of?
 
   .. code-block:: console
 

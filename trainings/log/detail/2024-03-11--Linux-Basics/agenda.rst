@@ -59,7 +59,7 @@ Agenda
 
 * :doc:`/trainings/material/soup/linux/basics/permissions/group`
 
-  * :doc:`/trainings/material/soup/linux/basics/permissions/group`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
   * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
   * :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
   * :doc:`/trainings/material/soup/linux/basics/permissions/umask`

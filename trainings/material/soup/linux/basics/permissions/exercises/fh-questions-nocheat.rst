@@ -59,7 +59,9 @@ Questions
          group may not access the directory in any way
        * 
        * 
-     * * The owner may remove the directory and its contents
+     * * Provided that the directory's parent directory is writeable
+         for the owner, the owner may remove the directory and its
+         contents
        * 
        * 
 

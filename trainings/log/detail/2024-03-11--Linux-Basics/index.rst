@@ -43,9 +43,9 @@ Introduction: Concepts and Terminology
 From :doc:`/trainings/material/soup/linux/basics/intro/group`
 
 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
-* :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
 * :doc:`/trainings/material/soup/linux/basics/intro/process`
 * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
+* :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
 * :doc:`/trainings/material/soup/linux/basics/intro/environment`
 
 The Shell (Bash - “Bourne Again Shell”)
@@ -59,6 +59,139 @@ From :doc:`/trainings/material/soup/linux/basics/shell/group`
 * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
 * :doc:`/trainings/material/soup/linux/basics/shell/cp`
 * :doc:`/trainings/material/soup/linux/basics/shell/mv`
-* :doc:`/trainings/material/soup/linux/basics/shell/links`
+
+Exercises
+.........
+
+From
+:doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`
+
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-copy-files`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-move-files`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/verify-hierarchy`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/copy-tree`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-tree`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-rf`
+
+Day 2
+-----
+
+Morning Wakeup
+..............
+
+Quiz |:ninja:|
+``````````````
+
+.. list-table::
+   :align: left
+   :widths: auto
+
+   * * Relative paths start with a '/'
+     * 
+   * * Relative paths don't start with a '/'
+     * 
+   * * Absolute paths start with a '/'
+     * 
+   * * Absolute paths don't start with a '/'
+     * 
+   * * Absolute paths are relative to the root directory
+     * 
+   * * '.' refers to the currect working directory
+     * 
+   * * '..' refers to the currect working directory of the parent
+       process
+     * 
+
+Exercises
+`````````
+
+From
+:doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/group`
+
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/etc-passwd-size`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/dev-types`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/home-permissions`
+
+File System Permissions
+.......................
+
+From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+* :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory-question`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory-question`
+  * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/fh-questions-nocheat`
+
+* :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
+* :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
+* :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+* :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
+
+The Shell (Bash - “Bourne Again Shell”) (Continued)
+...................................................
+
 * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/group`
+* :doc:`/trainings/material/soup/linux/basics/shell/links`
+
+Day 3
+-----
+
+Morning Wakeup
+..............
+
+* What does ``/`` contain? |longrightarrow| `File system hierarchy
+  overview (systemd)
+  <https://www.freedesktop.org/software/systemd/man/latest/file-hierarchy.html>`__
+* Emacs/Bash keyboard shortcuts (Google knows). E.g.
+
+  * :download:`/trainings/material/soup/linux/basics/shell/bash-help-sheet.pdf`
+  * :download:`/trainings/material/soup/linux/basics/shell/readline-emacs-editing-mode-cheat-sheet.pdf`
+
+* WSL walk-through |longrightarrow|
+  :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+* Services? 
+
+  * ``systemd``: `System and Service Manager <https://systemd.io/>`__
+  * ... as opposed to `SysVinit
+    <https://de.wikipedia.org/wiki/SysVinit>`__
+
+Missing Pieces: Environment
+...........................
+
+From :doc:`/trainings/material/soup/linux/basics/intro/group`
+
+* :doc:`/trainings/material/soup/linux/basics/intro/environment`
+
+Tools: Inspecting Text Files
+............................
+
+From :doc:`/trainings/material/soup/linux/basics/text-tools/group`
+
+* :doc:`/trainings/material/soup/linux/basics/text-tools/overview`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/cat`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/head-tail`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/cut`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/less`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/grep`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/find`
+* :doc:`/trainings/material/soup/linux/basics/text-tools/exercises`
+
+I/O Redirection And Pipes
+.........................
+
+From
+:doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
+
+* :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
+* :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
+* :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
+* :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
+
