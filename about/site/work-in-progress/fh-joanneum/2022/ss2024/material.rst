@@ -45,21 +45,40 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	   * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
 	   * Outlook: project in winter semester (:doc:`gluehwein`)
 
-	 * System interaction from the shell
-
-	   * ``cat``?
-	   * ``echo``?
-	   * ``>``?
-	   * ``strace``!
-
 	 * Writing my own programs to combine functionality, and add
            logic
 
 	   * On PC, read CPU temperatures
-	   * On PC, driving PWM channel based on temperature
-             |longrightarrow| *there is no PWM on a PC!*
-	   * Cross compilation, and deployment
-	   * And Python?
+
+       * **Homework**
+
+	 Working
+	 :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+	 installation until next time around.
+
+   * * Date
+     * #Units
+     * Topics
+   * * 2024-03-21
+     * 6
+     *
+       * **Intro: Course Contents (cont'd)**
+
+	 Data logger: https://github.com/jfasch/FH-STECE2022/blob/main/datalogger.cpp
+
+	 * Cross compilation, and deployment
+	 * System interaction from the shell
+
+	   * ``cat``?
+	   * ``strace``!
+
+	 * And Python?
+
+       * **SSH Setup**. From :doc:`/trainings/material/soup/linux/ssh/group`
+
+         * :doc:`/trainings/material/soup/linux/ssh/basics`
+         * :doc:`/trainings/material/soup/linux/ssh/key-pair`
+         * :doc:`/trainings/material/soup/linux/ssh/scp`
 
        * **Material: OS Concepts**
 
@@ -77,19 +96,6 @@ Block 1: Linux, and Working With Remote/Embedded Devices
            * :doc:`/trainings/material/soup/linux/basics/intro/process` (from :doc:`/trainings/material/soup/linux/basics/intro/group`)
            * :doc:`/trainings/material/soup/linux/sysprog/process/commandline` (from :doc:`/trainings/material/soup/linux/sysprog/process/group`)
            * :doc:`/trainings/material/soup/linux/sysprog/process/tree` (from :doc:`/trainings/material/soup/linux/sysprog/process/group`)
-
-       * **Homework**
-
-	 Working
-	 :doc:`/trainings/material/soup/linux/basics/intro/wsl`
-	 installation until next time around.
-
-   * * Date
-     * #Units
-     * Topics
-   * * 2024-03-18
-     * 6
-     * * :doc:`/trainings/material/soup/linux/ssh/group` (Exercises!)
 	 
 Block 2: C on Linux: Local and *Cross* Development
 --------------------------------------------------

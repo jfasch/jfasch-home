@@ -163,12 +163,16 @@ Morning Wakeup
   * ... as opposed to `SysVinit
     <https://de.wikipedia.org/wiki/SysVinit>`__
 
-Missing Pieces: Environment
-...........................
+Missing Pieces
+..............
 
 From :doc:`/trainings/material/soup/linux/basics/intro/group`
 
 * :doc:`/trainings/material/soup/linux/basics/intro/environment`
+
+From :doc:`/trainings/material/soup/linux/ssh/group`
+
+* :doc:`/trainings/material/soup/linux/ssh/sshfs`
 
 Tools: Inspecting Text Files
 ............................
@@ -191,7 +195,16 @@ From
 :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
 
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
-* :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/exercises`
 
+Archiving and Compression
+.........................
+
+From
+:doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
+
+* :doc:`/trainings/material/soup/linux/basics/archiving-compression/overview`
+* :doc:`/trainings/material/soup/linux/basics/archiving-compression/gzip`
+* :doc:`/trainings/material/soup/linux/basics/archiving-compression/tar`
+* :doc:`/trainings/material/soup/linux/basics/archiving-compression/exercises`
