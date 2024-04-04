@@ -23,11 +23,34 @@ CAN-Interface: Configuration
    # ip link show
    ... all interfaces here ...
    # ip link show can0
-   3: can0: <NOARP,ECHO> mtu 16 qdisc noop state DOWN mode DEFAULT qlen 10
+   3: can0: <NOARP,ECHO> mtu 16 qdisc noop state DOWN mode DEFAULT group default qlen 10
        link/can 
+
+.. code-block:: console
+
    # ip link set can0 type can help
-   # ip link set can0 bitrate 500000
+
+.. code-block:: console
+
+   # ip link set can0 type can bitrate 500000
+   # ip link set can0 txqueuelen 1000
+   # ip -detail link show can0 
+   12: can0: <NOARP,ECHO> mtu 16 qdisc pfifo_fast state DOWN mode DEFAULT group default qlen 1000
+       link/can  promiscuity 0 allmulti 0 minmtu 0 maxmtu 0 
+       can state STOPPED restart-ms 0 
+   	  bitrate 500000 sample-point 0.875
+   	  tq 125 prop-seg 6 phase-seg1 7 phase-seg2 2 sjw 1 brp 6
+   	  gs_usb: tseg1 1..16 tseg2 1..8 sjw 1..4 brp 1..1024 brp_inc 1
+   	  clock 48000000 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 tso_max_size 65536 tso_max_segs 65535 gro_max_size 65536 gso_ipv4_max_size 65536 gro_ipv4_max_size 65536 parentbus usb parentdev 3-6.2.4:1.0 
+   
+.. code-block:: console
+   :caption: Same, but listen-only
+
    # ip link set can0 bitrate 500000 listen-only on
+
+.. code-block:: console
+   :caption: Finally: turn on the interface
+
    # ip link set can0 up
 
 CAN Utils

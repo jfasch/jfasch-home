@@ -1,5 +1,5 @@
-Pointless Blinking: Evolution
-=============================
+Python, asyncio, libgpiod, and Pointless Blinking
+=================================================
 
 .. toctree::
 

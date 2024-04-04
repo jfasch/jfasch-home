@@ -10,7 +10,7 @@ Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry P
    installation
 
 * :doc:`Livehacking screenplay <screenplay>`
-* :doc:`Submission text <glt-2023>`
+* :doc:`Submission text <submission>`
 * :doc:`installation`
 * Submitted for (and accepted by) `Grazer Linuxtage 2023
   <https://www.linuxtage.at/>`__.

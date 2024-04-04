@@ -96,8 +96,8 @@ Future (*Not* Part Of This Development Cycle)
   to proide a ``configure()`` method that is called later in a
   program's lifecycle?
 * An alternative GPIO interface, ``libgpiod`` (see
-  :doc:`/about/site/work-in-progress/blink/installation`). SysFS GPIO is
-  deprecated!
+  :doc:`/about/site/work-in-progress/blink/glt2023/installation`). SysFS
+  GPIO is deprecated!
 
 Dependencies
 ------------
