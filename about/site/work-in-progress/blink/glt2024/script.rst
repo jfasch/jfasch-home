@@ -45,6 +45,8 @@ And ``blink``?
 * Explain ``on()``, ``sleep()``, ``any()``, ``forever()``
 * Pull in snippet ``blueprints/snippet-nice-pattern``
 * Ah, ``wait_button()``
+* Revert to original blinking
+* Enclose in ``any()``, limiting it to 3 secons
 
 ``gpiod``, And Interrupts
 -------------------------

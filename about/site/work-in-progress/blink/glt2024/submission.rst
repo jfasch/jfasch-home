@@ -1,5 +1,5 @@
-GLT 2024 Submission: Python, asyncio, libgpiod, and Pointless Blinking
-======================================================================
+Submission: Python, asyncio, libgpiod, and Pointless Blinking
+=============================================================
 
 Biography
 ---------
