@@ -1,7 +1,8 @@
-Python, asyncio, libgpiod, and Pointless Blinking
-=================================================
+GLT 2024: Python, asyncio, libgpiod, and Pointless Blinking
+===========================================================
 
 .. toctree::
 
+   slides
+   script
    submission
-   talk-sketch

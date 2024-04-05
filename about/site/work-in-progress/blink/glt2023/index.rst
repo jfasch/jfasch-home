@@ -1,5 +1,5 @@
-Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry Pi of Course)
-============================================================================================
+GLT 2023: Pointless Blinking With Python, ``asyncio``, and ``libgpiod`` (and a Raspberry Pi of Course)
+======================================================================================================
 
 .. toctree::
    :hidden:

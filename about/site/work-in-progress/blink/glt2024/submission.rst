@@ -32,7 +32,8 @@ Continuing the :doc:`story of pointlessly blinking lights
 * How GPIO interrupts are configured to get notified of hardware
   button presses, and how this can look like in Python (hint:
   *generators*, and *iteration*).
-* How button-events can be used in an ``async`` programming style.
+* How button-events can be used in an ``async`` programming style
+  (hint: *asyncronous generators*, and ``async for``)
 * How this fits into the pointless project of blinking lights.
 
 Additionally, I give an overview of async libraries that are more to
