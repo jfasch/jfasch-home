@@ -109,6 +109,33 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * :doc:`/trainings/material/soup/linux/ssh/basics`
          * :doc:`/trainings/material/soup/linux/ssh/key-pair`
          * :doc:`/trainings/material/soup/linux/ssh/scp`
+
+   * * 2024-04-14
+     * 6
+     * * **SSH: Secure Shell** (from
+	 :doc:`/trainings/material/soup/linux/ssh/group`)
+
+         * :doc:`/trainings/material/soup/linux/ssh/basics`
+         * :doc:`/trainings/material/soup/linux/ssh/key-pair`
+         * :doc:`/trainings/material/soup/linux/ssh/scp`
+         * :doc:`/trainings/material/soup/linux/ssh/sshfs`
+
+       * **File System Permissions** (from
+	 :doc:`/trainings/material/soup/linux/basics/permissions/group`)
+
+         * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+
+       * **File System Permissions (Exercises)** (from
+	 :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`)
+
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory-question`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory-question`
 	 
 Block 2: C on Linux: Local and *Cross* Development
 --------------------------------------------------

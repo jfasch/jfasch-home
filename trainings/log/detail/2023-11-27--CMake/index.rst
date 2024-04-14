@@ -35,7 +35,8 @@ CMake: An Introduction (2023-11-27)
 * :doc:`/trainings/material/soup/cmake/installation`
 * :doc:`/trainings/material/soup/cmake/structure`
 * :doc:`/trainings/material/soup/cmake/cxx-and-rants`
-* Exercise
+* Exercise: see
+  https://github.com/jfasch/2023-11-27/tree/main/exercise
 * :doc:`/trainings/material/soup/cmake/configure_file`
 * :doc:`/trainings/material/soup/cmake/optional-code-problem`
 * :doc:`/trainings/material/soup/cmake/optional-code-approach-1`
