@@ -4,7 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
-
+   2024-04-09--TDD-Python-Delphi/index
    2024-03-11--Linux-Basics/index
    2024-01-29--Python-Basics/index
    2024-01-15--Python-Advanced/index

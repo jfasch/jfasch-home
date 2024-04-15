@@ -15,10 +15,15 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+Refactoring, Unit Testing, And Test Driven Development In Python (2024-04-09 - 2024-04-11)
+------------------------------------------------------------------------------------------
+
+A three day online course, for a highly motivated team of developers.
+
+(:doc:`More ... <detail/2024-04-09--TDD-Python-Delphi/index>`)
+
 Linux Basics (2024-03-11 - 2024-03-13)
 --------------------------------------
-
-This course is under preparation.
 
 Held online via Teams.
 

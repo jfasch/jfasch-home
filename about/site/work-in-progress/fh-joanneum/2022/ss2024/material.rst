@@ -124,8 +124,8 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	 :doc:`/trainings/material/soup/linux/basics/permissions/group`)
 
          * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-         * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
          * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+         * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
 
        * **File System Permissions (Exercises)** (from
 	 :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`)
@@ -136,6 +136,17 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory-question`
          * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory`
          * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory-question`
+
+       * **Homework**
+
+	 On Wednesday, we will start to program. Please make sure you
+	 have the following prerequisites installed:
+
+	 * In WSL, install the packages ``build-essential`` (C and C++
+           compilers) and ``cmake`` (a build tool at a higher level
+           than ``make``)
+	 * In Windows, install `Visual Studio Code
+           <https://code.visualstudio.com/docs/cpp/config-wsl>`__
 	 
 Block 2: C on Linux: Local and *Cross* Development
 --------------------------------------------------
