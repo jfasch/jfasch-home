@@ -53,10 +53,16 @@ GCC - GNU Compiler Collection
 All-In-One Usage: Single File
 -----------------------------
 
+.. sidebar:: Download source
+
+   * :download:`hello-single.c
+     <../jfasch-home-linux-toolchain/basics/hello-single.c>`
+
 * "Monolithic" program
 
   .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello-single.c
-     :caption: :download:`../jfasch-home-linux-toolchain/basics/hello-single.c`
+     :caption: :download:`hello-single.c
+               <../jfasch-home-linux-toolchain/basics/hello-single.c>`
      :language: c
 
 * All-in-one: convert C to executable (seemingly directly)
@@ -89,6 +95,12 @@ All-In-One Usage: Single File
 All-In-One Usage: Multiple Files
 --------------------------------
 
+.. sidebar:: Download source
+
+   * :download:`hello-main.c <../jfasch-home-linux-toolchain/basics/hello-main.c>`
+   * :download:`hello.h <../jfasch-home-linux-toolchain/basics/hello.h>`
+   * :download:`hello.c <../jfasch-home-linux-toolchain/basics/hello.c>`
+
 * "Modular" program
 
   .. list-table::
@@ -99,14 +111,17 @@ All-In-One Usage: Multiple Files
      * * Main
        * "Modularized" out
      * * .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello-main.c
-            :caption: :download:`../jfasch-home-linux-toolchain/basics/hello-main.c`
+            :caption: :download:`hello-main.c
+                      <../jfasch-home-linux-toolchain/basics/hello-main.c>`
             :language: c
        * .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello.h
-            :caption: :download:`../jfasch-home-linux-toolchain/basics/hello.h`
+            :caption: :download:`hello.h
+                      <../jfasch-home-linux-toolchain/basics/hello.h>`
             :language: c
 
          .. literalinclude:: ../jfasch-home-linux-toolchain/basics/hello.c
-            :caption: :download:`../jfasch-home-linux-toolchain/basics/hello.c`
+            :caption: :download:`hello.c
+                      <../jfasch-home-linux-toolchain/basics/hello.c>`
             :language: c
 
 * All-in-one: convert *multiple C files* to executable
@@ -172,6 +187,75 @@ This Is Not As Simple As It Seems!
 
 .. image:: exec.svg
    :scale: 80%
+
+Program Loading (Short Version)
+-------------------------------
+
+.. sidebar:: Documentation
+
+   * `man -s 1 ldd
+     <https://man7.org/linux/man-pages/man1/ldd.1.html>`__
+   * `man -s 8 ld.so
+     <https://man7.org/linux/man-pages/man8/ld.so.8.html>`__
+   * `man -s 8 ldconfig
+     <https://man7.org/linux/man-pages/man8/ldconfig.8.html>`__
+
+* Few programs are really self-contained
+* Basic dependency: *C runtime* (``libc``)
+* Determine program's dependencies |longrightarrow| must be loaded in
+  dependency order.
+
+  .. code-block:: console
+  
+     $ ldd hello-modular 
+           linux-vdso.so.1 (0x00007ffc44130000)
+           libc.so.6 => /lib64/libc.so.6 (0x00007fdd8ea64000)
+           /lib64/ld-linux-x86-64.so.2 (0x00007fdd8ec5c000)
+
+* Program loader in action
+  
+  .. code-block:: console
+  
+     $ strace ./hello-modular 
+     execve("./hello-modular", ["./hello-modular"], 0x7fffea18b920 /* 47 vars */) = 0
+     brk(NULL)                               = 0x67e000
+     arch_prctl(0x3001 /* ARCH_??? */, 0x7fff6d3dd240) = -1 EINVAL (Invalid argument)
+     access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+     openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+     newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=80987, ...}, AT_EMPTY_PATH) = 0
+     mmap(NULL, 80987, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1721afc000
+     close(3)                                = 0
+     openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+     read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \203\2\0\0\0\0\0"..., 832) = 832
+     pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+     newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2420152, ...}, AT_EMPTY_PATH) = 0
+     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1721afa000
+     pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+     mmap(NULL, 1973104, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1721918000
+     mmap(0x7f172193e000, 1441792, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f172193e000
+     mmap(0x7f1721a9e000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x186000) = 0x7f1721a9e000
+     mmap(0x7f1721aec000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d3000) = 0x7f1721aec000
+     mmap(0x7f1721af2000, 31600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1721af2000
+     close(3)                                = 0
+     mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1721916000
+     arch_prctl(ARCH_SET_FS, 0x7f1721afb680) = 0
+     set_tid_address(0x7f1721afb950)         = 471382
+     set_robust_list(0x7f1721afb960, 24)     = 0
+     rseq(0x7f1721afbfa0, 0x20, 0, 0x53053053) = 0
+     mprotect(0x7f1721aec000, 16384, PROT_READ) = 0
+     mprotect(0x403000, 4096, PROT_READ)     = 0
+     mprotect(0x7f1721b42000, 8192, PROT_READ) = 0
+     prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+     munmap(0x7f1721afc000, 80987)           = 0
+     newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0xb), ...}, AT_EMPTY_PATH) = 0
+     getrandom("\xcd\x7c\xc9\x3b\xd6\xc3\xf2\x44", 8, GRND_NONBLOCK) = 8
+     brk(NULL)                               = 0x67e000
+     brk(0x69f000)                           = 0x69f000
+     write(1, "Hello World\n", 12Hello World
+     )           = 12
+     exit_group(0)                           = ?
+     +++ exited with 0 +++
+     
 
 What's In A Program? |longrightarrow| Symbols (``nm``)
 ------------------------------------------------------

@@ -20,6 +20,12 @@ Zooming In: Separate Compilation, and Linking *Statically*
 Remember: All-In-One Build ...
 ------------------------------
 
+.. sidebar:: Download source
+
+   * :download:`hello-first.c <../jfasch-home-linux-toolchain/separate-compilation/hello-first.c>`
+   * :download:`hello.h <../jfasch-home-linux-toolchain/separate-compilation/hello.h>`
+   * :download:`hello.c <../jfasch-home-linux-toolchain/separate-compilation/hello.c>`
+
 .. list-table::
    :align: left
    :widths: auto
@@ -28,14 +34,17 @@ Remember: All-In-One Build ...
    * * User
      * Valuable and rock-stable code
    * * .. literalinclude:: ../jfasch-home-linux-toolchain/separate-compilation/hello-first.c
-          :caption: :download:`../jfasch-home-linux-toolchain/separate-compilation/hello-first.c`
+          :caption: :download:`hello-first.c
+                    <../jfasch-home-linux-toolchain/separate-compilation/hello-first.c>`
           :language: c
      * .. literalinclude:: ../jfasch-home-linux-toolchain/separate-compilation/hello.h
-          :caption: :download:`../jfasch-home-linux-toolchain/separate-compilation/hello.h`
+          :caption: :download:`hello.h
+                    <../jfasch-home-linux-toolchain/separate-compilation/hello.h>`
 	  :language: c
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/separate-compilation/hello.c
-          :caption: :download:`../jfasch-home-linux-toolchain/separate-compilation/hello.c`
+          :caption: :download:`hello.c
+                    <../jfasch-home-linux-toolchain/separate-compilation/hello.c>`
           :language: c
 
 Would be built like so,
@@ -46,6 +55,14 @@ Would be built like so,
 
 Adding Another ``main()``: What About Shared Code?
 --------------------------------------------------
+
+.. sidebar:: Download source
+
+   * :download:`hello-first.c <../jfasch-home-linux-toolchain/separate-compilation/hello-first.c>`
+   * :download:`hello-second.c <../jfasch-home-linux-toolchain/separate-compilation/hello-second.c>`
+   * :download:`hello.h <../jfasch-home-linux-toolchain/separate-compilation/hello.h>`
+   * :download:`hello.c <../jfasch-home-linux-toolchain/separate-compilation/hello.c>`
+
 
 * Lets say ``hello()`` is a popular thing
 * |longrightarrow| more code will want to use it
@@ -60,19 +77,19 @@ Adding Another ``main()``: What About Shared Code?
    * * Users
      * Valuable and rock-stable code
    * * .. literalinclude:: ../jfasch-home-linux-toolchain/separate-compilation/hello-first.c
-          :caption: :download:`../jfasch-home-linux-toolchain/separate-compilation/hello-first.c`
+          :caption: :download:`hello-first.c <../jfasch-home-linux-toolchain/separate-compilation/hello-first.c>`
           :language: c
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/separate-compilation/hello-second.c
-          :caption: :download:`../jfasch-home-linux-toolchain/separate-compilation/hello-second.c`
+          :caption: :download:`hello-second.c <../jfasch-home-linux-toolchain/separate-compilation/hello-second.c>`
           :language: c
 
      * .. literalinclude:: ../jfasch-home-linux-toolchain/separate-compilation/hello.h
-          :caption: :download:`../jfasch-home-linux-toolchain/separate-compilation/hello.h`
+          :caption: :download:`hello.h <../jfasch-home-linux-toolchain/separate-compilation/hello.h>`
 	  :language: c
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/separate-compilation/hello.c
-	  :caption: :download:`../jfasch-home-linux-toolchain/separate-compilation/hello.c`
+	  :caption: :download:`hello.c <../jfasch-home-linux-toolchain/separate-compilation/hello.c>`
           :language: c
 
 **Building all this**
@@ -131,9 +148,14 @@ Solution: Separate Compilation And Linking Steps
 
   .. note::
 
-     This is referred to as *static linking*. Each of the resulting
-     executables ``hello-first`` and ``hello-second`` has its own copy
-     of ``hello.o`` in it!
+     * This is referred to as *static linking*. Each of the resulting
+       executables ``hello-first`` and ``hello-second`` has its own
+       copy of ``hello.o`` in it!
+     * As opposed to *dynamic linking* where ``hello.o`` is wrapped
+       into a *shared library* (usually named like
+       ``libhello.so``). This shared library is then loaded at program
+       startup, just like ``libc.so`` as we saw in
+       :doc:`../basics/topic`
 
 Complication: Modification Tracking
 -----------------------------------
@@ -189,13 +211,16 @@ relationships (an arrow ``A`` "|longrightarrow|" ``B`` says that "If
 Enter Makefiles
 ---------------
 
-.. sidebar::
-
-   **Documentation**
+.. sidebar:: Documentation
 
    * `GNU Make <https://www.gnu.org/software/make/>`__
    * `man -s 1 make
      <https://man7.org/linux/man-pages/man1/make.1.html>`__
+
+.. sidebar:: Download source
+
+   * : :download:`Makefile
+     <../jfasch-home-linux-toolchain/separate-compilation/Makefile>`
 
 **Problem**: how would I manually track all those dependencies in a
 rapidly growing project?

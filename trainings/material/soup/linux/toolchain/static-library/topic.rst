@@ -20,6 +20,15 @@ Object Code Archives/Static Libraries
 Code Bases Become Larger (1)
 ----------------------------
 
+.. sidebar:: Download source
+
+   * :download:`hello-first.c <../jfasch-home-linux-toolchain/static-libraries/hello-first.c>`
+   * :download:`hello-second.c <../jfasch-home-linux-toolchain/static-libraries/hello-second.c>`
+   * :download:`hello.h <../jfasch-home-linux-toolchain/static-libraries/hello.h>`
+   * :download:`hello.c <../jfasch-home-linux-toolchain/static-libraries/hello.c>`
+   * :download:`hello-flexible.h <../jfasch-home-linux-toolchain/static-libraries/hello-flexible.h>`
+   * :download:`hello-flexible.c <../jfasch-home-linux-toolchain/static-libraries/hello-flexible.c>`
+
 New feature in our code base |:clown:| ...
 
 * more flexible greeting, in a separate file pair,
@@ -37,29 +46,29 @@ New feature in our code base |:clown:| ...
    * * Users
      * Valuable and rock-stable code
    * * .. literalinclude:: ../jfasch-home-linux-toolchain/static-libraries/hello-first.c
-          :caption: :download:`../jfasch-home-linux-toolchain/static-libraries/hello-first.c`
+          :caption: :download:`hello-first.c <../jfasch-home-linux-toolchain/static-libraries/hello-first.c>`
           :language: c
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/static-libraries/hello-second.c
-          :caption: :download:`../jfasch-home-linux-toolchain/static-libraries/hello-second.c`
+          :caption: :download:`hello-second.c <../jfasch-home-linux-toolchain/static-libraries/hello-second.c>`
           :language: c
 
      * 
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/static-libraries/hello.h
-          :caption: :download:`../jfasch-home-linux-toolchain/static-libraries/hello.h`
+          :caption: :download:`hello.h <../jfasch-home-linux-toolchain/static-libraries/hello.h>`
 	  :language: c
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/static-libraries/hello.c
-	  :caption: :download:`../jfasch-home-linux-toolchain/static-libraries/hello.c`
+	  :caption: :download:`hello.c <../jfasch-home-linux-toolchain/static-libraries/hello.c>`
           :language: c
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/static-libraries/hello-flexible.h
-          :caption: :download:`../jfasch-home-linux-toolchain/static-libraries/hello-flexible.h`
+          :caption: :download:`hello-flexible.h <../jfasch-home-linux-toolchain/static-libraries/hello-flexible.h>`
 	  :language: c
 
        .. literalinclude:: ../jfasch-home-linux-toolchain/static-libraries/hello-flexible.c
-	  :caption: :download:`../jfasch-home-linux-toolchain/static-libraries/hello-flexible.c`
+	  :caption: :download:`hello-flexible.c <../jfasch-home-linux-toolchain/static-libraries/hello-flexible.c>`
           :language: c
 
 Code Bases Become Larger (2)
