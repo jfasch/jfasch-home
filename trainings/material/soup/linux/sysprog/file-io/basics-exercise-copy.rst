@@ -61,6 +61,7 @@ behavior:
   ``open()``/``read()``/``write()``/``close()``, and *not* anything
   from ``<stdio.h>``.
 
+
 .. note::
 
    * Check for system call errors; see
@@ -126,7 +127,20 @@ for example),
    $ ./cp-for-the-poor /etc/passwd /etc/passwd-copy
    /etc/passwd-copy: Permission denied
    $ echo $?
-   3
+   4
+
+Submission
+----------
+
+* Create a directory ``exercise-1`` which contains all the source (C
+  code, and CMake build instructions)
+* From the parent directory of ``exercise-1``, package that directory
+
+  .. code-block:: 
+
+     $ tar -J -c -f submission.tar.xz exercise-1/
+
+* Submit ``submission.tar.xz``
 
 Dependencies
 ------------
