@@ -15,6 +15,14 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+
+CMake Basics (2024-06-18)
+-------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2024-06-18--CMake-Basics/index>`)
+
 Refactoring, Unit Testing, And Test Driven Development In Python (2024-04-09 - 2024-04-11)
 ------------------------------------------------------------------------------------------
 
