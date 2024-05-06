@@ -27,7 +27,7 @@ Contents
    example-O_WRONLY
    example-O_CREAT
    example-O_EXCL
-   basics-exercise-copy
+   basics-exercise-copy/exercise
    basics-exercise-hole
    exercise-sensor-read
    duplicate

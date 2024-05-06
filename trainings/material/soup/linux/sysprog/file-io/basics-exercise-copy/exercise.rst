@@ -52,15 +52,14 @@ Requirement
 Write a program ``cp-for-the-poor`` which exhibits the following
 behavior:
 
-* It interprets its two arguments as filenames, and copies
-  the first to the second
+* It interprets its two arguments as filenames, and copies the first
+  to the second
 * The first filename must be an existing file
 * The second filename is the target of the copy
 * No existing file must be overwritten
 * *The program operates at the system call layer*. Use
   ``open()``/``read()``/``write()``/``close()``, and *not* anything
   from ``<stdio.h>``.
-
 
 .. note::
 
@@ -84,6 +83,8 @@ Sunny Case: Source File Exists, Destination Does Not Exist
    $ echo $?
    0
 
+(:download:`Test script (download) <requirement-sunny.sh>`)
+
 Error: Wrong Number Of Arguments Specified
 ..........................................
 
@@ -94,6 +95,8 @@ Error: Wrong Number Of Arguments Specified
    $ echo $?
    1
 
+(:download:`Test script (download) <requirement-wrong-number-args.sh>`)
+
 Error: Source File Does Not Exist
 .................................
 
@@ -103,6 +106,8 @@ Error: Source File Does Not Exist
    /etc/passwd-not-there: No such file or directory
    $ echo $?
    2
+
+(:download:`Test script (download) <requirement-source-not-exist.sh>`)
 
 Error: Destination File Exists
 ..............................
@@ -116,6 +121,8 @@ Provided that ``/tmp/passwd-copy`` already exists [#create-file]_:
    $ echo $?
    3
 
+(:download:`Test script (download) <requirement-dest-exists.sh>`)
+
 Error: Destination Directory Not Writable
 .........................................
 
@@ -128,6 +135,8 @@ for example),
    /etc/passwd-copy: Permission denied
    $ echo $?
    4
+
+(:download:`Test script (download) <requirement-dest-dir-not-writeable.sh>`)
 
 Submission
 ----------

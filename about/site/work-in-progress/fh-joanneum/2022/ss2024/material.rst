@@ -200,9 +200,6 @@ Block 2: C on Linux: Local and *Cross* Development
        Today's outcome visible in
        https://github.com/jfasch/FH-STECE2022/tree/main/livecoding/toolchain-demo
 
-   * * Date
-     * #Units
-     * Topics
    * * 2024-04-22
      * 6
      * **CMake, Native Build** (from
@@ -227,7 +224,67 @@ Block 2: C on Linux: Local and *Cross* Development
 
        **Homework (until next time - 2024-05-06)**
 
-       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
+
+   * * 2024-04-22
+     * 3
+     * **Homework, Recap**
+
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
+
+       **Exercise: Reading A Sensor (Driven By Tests)**
+
+       * Clone, setup, and build
+         https://github.com/jfasch/FH-STECE2022 (see instructions on
+         the project page)
+       * Say 
+
+	 .. code-block:: console
+
+	    $ cd ~/FH-STECE22-x86_64      # or whatever your build directory is
+
+       * Say
+
+	 .. code-block:: console
+
+	    $ echo 42666 > /tmp/temperature
+	    $ ./exercises/02-sensor/bin/read-sensor /tmp/temperature
+	    Hier noch brav sein!
+
+	 That program should read the sensor file, and output the
+	 temperature in a floating point format, representing degrees
+	 in Celsius.
+
+	 (This is much the same as reading a real sensor on a machine
+	 that has one, like the Raspberry in
+	 ``/sys/bus/w1/devices/28-02131d959eaa/temperature``, or my
+	 laptop in ``/sys/class/hwmon/hwmon5/temp*_input``.)
+
+	 **Obviously** the program is supposed to use the
+          ``read_temperature()`` function you are supposed to
+          implement in the next step.
+
+	 **Continue with the next step, then come back here.**
+
+       * Say
+
+	 .. code-block:: console
+
+	    $ ./exercises/02-sensor/tests/02-sensor-tests 
+	    ... OMG: all tests fail! ...
+
+	 **Implement!**
+
+       * **Hints**
+
+	 The relevant ``errno`` values are
+
+	 * ``ENOENT``
+	 * ``EACCES``
+
+	 See `man -s 3 sscanf
+	 <https://man7.org/linux/man-pages/man3/sscanf.3.html>`__ for
+	 string to integer conversion.
 
 Block 3: C++
 ------------
