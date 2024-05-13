@@ -12,8 +12,3 @@ Embedded Computing 1 (STECE-2022): Summer
 
    syllabus
    material
-
-.. toctree::
-   :hidden:
-
-   gluehwein

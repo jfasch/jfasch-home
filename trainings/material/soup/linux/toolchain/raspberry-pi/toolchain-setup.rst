@@ -30,21 +30,22 @@ Download And Install Toolchain Archive
    * `armv8-rpi4-linux-gnueabihf.tar.xz
      <https://drive.google.com/file/d/1YAlNEQT9UY-z-nVWX-U55i0Zl1TNUfjB/view?usp=share_link>`__
 
-* Create a directory, say, ``~/toolchains`` (you might well choose a
+* Create a directory, say, ``~/x-tools`` (the :doc:`Crosstool-NG
+  </blog/2022/09/cross-raspi>` default name, you might well choose a
   different name). We will use that directory as a well-known place to
   put our toolchains in. (Toolchains tend to be updated a lot, and
-  keeping different versions together in one directory helps
-  organizing our work.)
+  keeping different versions together in one directory helps organize
+  our work.)
 * `Download
   <https://drive.google.com/file/d/1YAlNEQT9UY-z-nVWX-U55i0Zl1TNUfjB/view?usp=share_link>`__
   the toolchain archive (a whopping 70MB)
-* Unpack the archive into ``~/toolchains``, as follows
+* Unpack the archive into ``~/x-tools``, as follows
 
   * Change into toolchain install directory
 
   .. code-block:: console
   
-     $ cd ~/toolchains
+     $ cd ~/x-tools
 
   * Get an overview of the download, and see what's in it
 
@@ -68,7 +69,7 @@ Download And Install Toolchain Archive
      armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot/usr/include/asm-generic/errno-base.h
 
   * If you are fine, unpack it. This will create a directory
-    ``~/toolchains/armv8-rpi4-linux-gnueabihf`` - our toolchain base
+    ``~/x-tools/armv8-rpi4-linux-gnueabihf`` - our toolchain base
     directory.
 
   .. code-block:: console
@@ -77,7 +78,7 @@ Download And Install Toolchain Archive
 
   .. code-block:: console
 
-     $ ls -l ~/toolchains/
+     $ ls -l ~/x-tools/
      total 0
      dr-xr-xr-x. 1 jfasch jfasch 128 Apr 17 12:01 armv8-rpi4-linux-gnueabihf
 
@@ -95,14 +96,14 @@ Establish CMake Toolchain File
    * CMake toolchain file: :download:`armv8-rpi4-linux-gnueabihf.cmake`
 
 * :download:`Download the toolchain file
-  <armv8-rpi4-linux-gnueabihf.cmake>` into ``~/toolchains``
+  <armv8-rpi4-linux-gnueabihf.cmake>` into ``~/x-tools``
 * The *toolchain file* describes toolchain parameters for cross builds
   that you will perform using CMake, eventually. Modify the downloaded
   file to reflect your situation, by changing the following line:
 
   .. code-block:: text
 
-     set(TOOLCHAIN_BASE_DIR /home/jfasch/toolchains/armv8-rpi4-linux-gnueabihf)
+     set(TOOLCHAIN_BASE_DIR /home/jfasch/x-tools/armv8-rpi4-linux-gnueabihf)
 
 Test Run
 --------
@@ -133,7 +134,7 @@ Test Run
 
      $ pwd
      /home/jfasch/project-build-raspi
-     $ cmake -DCMAKE_TOOLCHAIN_FILE=$HOME/toolchains/armv8-rpi4-linux-gnueabihf.cmake ~/project-source
+     $ cmake -DCMAKE_TOOLCHAIN_FILE=$HOME/x-tools/armv8-rpi4-linux-gnueabihf.cmake ~/project-source
      ... roedel ...
 
 * Build it

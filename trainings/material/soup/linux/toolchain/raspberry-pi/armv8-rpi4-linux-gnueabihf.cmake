@@ -3,7 +3,7 @@ set(CMAKE_SYSTEM_NAME Linux)
 
 # toolchain base directory (crosstool-ng toolchains bring the sysroot
 # with them)
-set(TOOLCHAIN_BASE_DIR /home/jfasch/toolchains/armv8-rpi4-linux-gnueabihf)
+set(TOOLCHAIN_BASE_DIR /home/jfasch/x-tools/armv8-rpi4-linux-gnueabihf)
 
 # which compilers to use for C and C++
 set(CMAKE_C_COMPILER   ${TOOLCHAIN_BASE_DIR}/bin/armv8-rpi4-linux-gnueabihf-gcc)
