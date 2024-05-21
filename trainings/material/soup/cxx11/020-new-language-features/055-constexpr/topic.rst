@@ -13,8 +13,8 @@ Basic Usage: Expressions
 ------------------------
 
 * Requesting ``i`` to be calculated by compiler
-* |longrightarrow| Input to calculation has to ``constexpr`` just as
-  well
+* |longrightarrow| Input to calculation has to be ``constexpr`` just
+  as well
 
 .. literalinclude:: code/basic.cpp
    :caption: :download:`code/basic.cpp`

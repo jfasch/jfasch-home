@@ -183,7 +183,7 @@ Block 2: C on Linux: Local and *Cross* Development
 
        **Homework (until next time - 2023-05-08)**
 
-       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
 
    * * 2023-05-11
      * 
@@ -192,7 +192,7 @@ Block 2: C on Linux: Local and *Cross* Development
 
        Talk about solutions from :doc:`last time's (2023-04-21)
        homework
-       </trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy>`
+       </trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise>`
 
        **Work Environment**
 

@@ -7,6 +7,11 @@
 .. contents::
    :local:
 
+Homework Recap
+--------------
+
+* :doc:`../2024-05-06/exercise`
+
 Cross Development
 -----------------
 

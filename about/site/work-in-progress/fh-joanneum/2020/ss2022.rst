@@ -141,7 +141,7 @@ Block 2: C on Linux: Local and *Cross* Development
          * :doc:`/trainings/material/soup/linux/toolchain/exercises/raspberry-toolchain` (2P)
          * :doc:`/trainings/material/soup/linux/toolchain/exercises/native-build` (3P)
          * :doc:`/trainings/material/soup/linux/toolchain/exercises/cross-build` (5P)
-	 * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+	 * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
 
        * Test
 

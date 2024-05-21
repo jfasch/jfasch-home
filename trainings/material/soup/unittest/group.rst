@@ -17,7 +17,9 @@ Topics
    :maxdepth: 1
    :glob:
 
-   */topic
+   unittest_gtest_basics/topic
+   unittest_gtest_cmake/topic
+   unittest_gtest_fixture/topic
 
 Dependencies
 ------------

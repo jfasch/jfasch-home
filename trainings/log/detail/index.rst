@@ -4,8 +4,10 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2024-XX-XX--C++/index
    2024-XX-XX--CMake-Advanced/index
    2024-06-18--CMake-Basics/index
+   2024-06-03--C++/index
    2024-04-09--TDD-Python-Delphi/index
    2024-03-11--Linux-Basics/index
    2024-01-29--Python-Basics/index

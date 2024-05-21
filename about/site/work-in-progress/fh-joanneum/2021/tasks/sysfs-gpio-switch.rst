@@ -50,7 +50,7 @@ Implementation
 
    * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
-   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
 
 .. attention::
 

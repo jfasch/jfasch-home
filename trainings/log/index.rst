@@ -16,6 +16,14 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
+C++: A Thorough Overview (2024-06-03)
+-------------------------------------
+
+Four days around C++, at a company near Salzburg. Booked via my
+partner `IT-Visions <https://www.it-visions.at>`__.
+
+(:doc:`More ... <detail/2024-06-03--C++/index>`)
+
 CMake Basics (2024-06-18)
 -------------------------
 

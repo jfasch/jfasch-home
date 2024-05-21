@@ -95,7 +95,7 @@ Implementation
   * Use unbuffered IO, like in
     :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`, and in
     the exercise
-    :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy`
+    :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
 
 
 Testing

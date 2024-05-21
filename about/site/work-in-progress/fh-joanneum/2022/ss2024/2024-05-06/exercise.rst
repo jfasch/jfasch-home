@@ -35,7 +35,7 @@ In the ``tests/`` directory,
    $ ./exercises/02-sensor/tests/02-sensor-tests 
    ... OMG: all tests fail! ...
 
-Now we can start to fix ``lib/sensor.c`` until the test are green.
+Now we can start to fix ``lib/sensor.c`` until the tests are green.
 
 ``lib/sensor.c``: Sensor Implementation
 ---------------------------------------
