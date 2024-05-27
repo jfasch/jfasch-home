@@ -16,8 +16,8 @@ Write a program (lets call it ``sum-ints``) that
 
 * reads a sequence of integer numbers from standard input (``std::cin``), line by line
 * store them in a ``std::vector<int>``
-* outputs the sum of these number when standard input's end is reached
-  [#eof]_
+* outputs the sum of these numbers when standard input's end is
+  reached [#eof]_
 
 The program is typically called this way:
 

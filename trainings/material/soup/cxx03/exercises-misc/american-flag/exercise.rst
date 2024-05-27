@@ -44,7 +44,7 @@ Rather, it defines a function to compose the output:
 
 .. code-block:: c++
 
-   void print_chars(char c, const std::string& sep, unsigned int n);
+   void print_chars(char c, std::string sep, unsigned int n);
 
 To print the line above, for example, the program would use that
 function like so:

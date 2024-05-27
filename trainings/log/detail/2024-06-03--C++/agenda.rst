@@ -92,7 +92,7 @@ Smart Pointers: ``std::shared_ptr<>``, ``std::unique_ptr<>`` (And A Little ``std
 From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`   jjjj
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
@@ -107,7 +107,7 @@ Moving
 Best explained in a live hacking session (from
 :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`)
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`, including *Rule Of Five*
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
@@ -165,12 +165,16 @@ Code (And Project) Sanity
   <https://valgrind.org/>`__
 * Metrics and static code analysis
 
-Design Patterns
-...............
+Clean Code, Design Patterns
+...........................
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton` (but see "Code Sanity" above)
-* :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
-* :doc:`/trainings/material/soup/cxx-design-patterns/observer/observer`
-* :doc:`/trainings/material/soup/cxx-design-patterns/abstract-factory/abstract-factory`
-* Strategy, and Dependency Inversion/Injection
-* Builder
+* :doc:`/trainings/material/soup/clean-code/group`
+  (overview/discussion only)
+* From :doc:`/trainings/material/soup/cxx-design-patterns/group`
+
+  * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton` (but see "Code Sanity" above)
+  * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/observer/observer`
+  * :doc:`/trainings/material/soup/cxx-design-patterns/abstract-factory/abstract-factory`
+  * Strategy, and Dependency Inversion/Injection
+  * Builder

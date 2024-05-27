@@ -36,7 +36,16 @@ Block 2: C on Linux: Local and *Cross* Development
    2024-04-22/index
    2024-05-06/index
    2024-05-13/index
+   2024-05-27/index
 
 Block 3: C++
 ------------
 
+Plan
+....
+
+* User's view: ``std::string``, and ``std::vector``
+* Implementor's view
+
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`  

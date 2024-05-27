@@ -1,17 +1,14 @@
 #include <iostream>
 
-using namespace std;
-
-
 int main()
 {
     int i;
 
     while (true) {
-        cin >> i;
-        if (cin.eof())
+        std::cin >> i;
+        if (std::cin.eof())
             break;
-        cout << i << endl;
+        std::cout << i << std::endl;
     }
     
     return 0;
