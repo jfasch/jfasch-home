@@ -24,19 +24,28 @@ Exercise: Install Cross Toolchain
 * Build the project from the last exercise,
   :doc:`../2024-05-06/exercise`
 
-C++ Intro
----------
+C++ Intro: Livecoding Session
+-----------------------------
 
-* Livecoding session (see
-  https://github.com/jfasch/FH-STECE2022/tree/main/livecoding/sensor-oo-c)
+See
+https://github.com/jfasch/FH-STECE2022/tree/main/livecoding/sensor-oo-c
+for code.
 
-  * Morph :doc:`../2024-05-06/exercise` into something
-    object-oriented, but still C
-  * Introduce exception handling; this is done to overcome the weird
-    function signature of ``sensor_get_temperature()``
+* Morphing :doc:`../2024-05-06/exercise` into something
+  object-oriented, but still C
+* Introduce exception handling; this is done to overcome the weird
+  function signature of ``sensor_get_temperature()``. 
+
+  * Causing exceptions (``throw``):
+    https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/sensor-oo-c/lib/sensor.cpp
+  * Reacting upon exceptions (``try``, and ``catch``)
+
+    * Production code:
+      https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/sensor-oo-c/bin/read-sensor.cpp
+    * Test code (attention, the logic seems somehow inverted):
+      https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/sensor-oo-c/tests/suite-sensor.cpp
 
 User's View
 ...........
 
 * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
-* :doc:`/trainings/material/soup/cxx/cxx_stl_container_intro/screenplay`

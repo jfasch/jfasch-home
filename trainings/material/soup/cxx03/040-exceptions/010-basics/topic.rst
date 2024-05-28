@@ -1,7 +1,6 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: cxx03.exceptions.basics
-   :dependencies: cxx03.functions_and_methods.operators
 
 
 Basics

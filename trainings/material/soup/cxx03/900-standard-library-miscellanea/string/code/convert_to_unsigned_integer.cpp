@@ -1,8 +1,3 @@
-// file:///tmp/jfasch-home/html/trainings/material/soup/c/020-types-operators-expressions/080-type-conversions/topic.html
-
-// stoull
-// no stoui
-// base, etc like signed
 #include <gtest/gtest.h>
 #include <string>
 

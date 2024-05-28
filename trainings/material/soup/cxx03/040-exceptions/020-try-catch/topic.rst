@@ -1,7 +1,8 @@
 .. include:: <mmlalias.txt>
 
 .. ot-topic:: cxx03.exceptions.try_catch
-   :dependencies: cxx03.exceptions.basics
+   :dependencies: cxx03.exceptions.basics,
+		  cxx03.data_encapsulation.classes_objects
 
 
 ``try`` - ``catch``

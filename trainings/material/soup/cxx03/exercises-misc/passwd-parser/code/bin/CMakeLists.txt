@@ -1,11 +1,11 @@
 ADD_EXECUTABLE(
-  cxx03--exercises-misc--passwd-parser--code--bin--parse-passwd
+  cxx03--exercises-misc--passwd-parser--code--bin--read-passwd
 
-  parse-passwd.cpp
+  read-passwd.cpp
 )
 
 TARGET_LINK_LIBRARIES(
-  cxx03--exercises-misc--passwd-parser--code--bin--parse-passwd
+  cxx03--exercises-misc--passwd-parser--code--bin--read-passwd
 
   cxx03--exercises-misc--passwd-parser--code--lib
   )

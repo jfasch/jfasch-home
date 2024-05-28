@@ -1,6 +1,7 @@
 #include "parse-passwd.h"
 
-#include <iostream>
+#include <fstream>
+#include <stdexcept>
 
 
 User parse_passwd_line(std::string line)
@@ -9,38 +10,59 @@ User parse_passwd_line(std::string line)
 
     size_t cur = 0, next;
 
-    next = line.find_first_of(':', cur);
+    next = line.find(':', cur);
+    if (next == line.npos)
+        throw PasswdError(PasswdError::LINE_INVALID, line);
     user.name = line.substr(cur, next-cur);
 
     cur = next + 1;
-    next = line.find_first_of(':', cur);
+    next = line.find(':', cur);
+    if (next == line.npos)
+        throw PasswdError(PasswdError::LINE_INVALID, line);
     user.passwd = line.substr(cur, next-cur);
 
     cur = next + 1;
-    next = line.find_first_of(':', cur);
-    user.uid = std::stoi(line.substr(cur, next-cur));
+    next = line.find(':', cur);
+    if (next == line.npos)
+        throw PasswdError(PasswdError::LINE_INVALID, line);
+    try {
+        user.uid = std::stoi(line.substr(cur, next-cur));
+    }
+    catch (const std::invalid_argument&) {
+        throw PasswdError(PasswdError::LINE_INVALID, line);
+    }
 
     cur = next + 1;
-    next = line.find_first_of(':', cur);
-    std::cout << line.substr(cur, next-cur) << std::endl;
-    user.gid = std::stoi(line.substr(cur, next-cur));
+    next = line.find(':', cur);
+    if (next == line.npos)
+        throw PasswdError(PasswdError::LINE_INVALID, line);
+    try {
+        user.gid = std::stoi(line.substr(cur, next-cur));
+    }
+    catch (const std::invalid_argument&) {
+        throw PasswdError(PasswdError::LINE_INVALID, line);
+    }
 
     cur = next + 1;
-    next = line.find_first_of(':', cur);
+    next = line.find(':', cur);
+    if (next == line.npos)
+        throw PasswdError(PasswdError::LINE_INVALID, line);
     user.descr = line.substr(cur, next-cur);
 
     cur = next + 1;
-    next = line.find_first_of(':', cur);
+    next = line.find(':', cur);
+    if (next == line.npos)
+        throw PasswdError(PasswdError::LINE_INVALID, line);
     user.homedir = line.substr(cur, next-cur);
 
     cur = next + 1;
-    user.shell = line.substr(cur);
+    next = line.find('\n', cur);
+    if (next == line.npos)
+        user.shell = line.substr(cur);
+    else
+        user.shell = line.substr(cur, next-cur);
+    if (user.shell.size() == 0)
+        throw PasswdError(PasswdError::LINE_INVALID, line);
 
     return user;
-}
-
-std::vector<User> parse_passwd_file(std::string filename)
-{
-    std::vector<User> users;
-    return users;
 }

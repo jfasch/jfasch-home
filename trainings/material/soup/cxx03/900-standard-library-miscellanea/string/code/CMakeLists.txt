@@ -3,8 +3,10 @@ ADD_EXECUTABLE(
 
   initialization.cpp
   addition.cpp
+  comparison.cpp
   convert_to_signed_integer.cpp
   convert_to_unsigned_integer.cpp
+  convert_to_number_error.cpp
   convert_from_something.cpp
   find.cpp
   substr.cpp

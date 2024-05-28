@@ -1,7 +1,3 @@
-// file:///tmp/jfasch-home/html/trainings/material/soup/c/020-types-operators-expressions/080-type-conversions/topic.html
-
-// stol -> long
-// stoll -> long long
 #include <gtest/gtest.h>
 #include <string>
 
