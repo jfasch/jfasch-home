@@ -72,6 +72,28 @@ The specification of the ``parse_passwd_line()`` function is in
 ``./tests/suite-passwd-line.cpp``. The other test suites in ``tests/``
 are implementation hints (see below).
 
+**Do not modify the tests!**
+
+Program (``bin/read-passwd.cpp``)
+.................................
+
+Finally, after all tests pass, the program built from
+``bin/read-passwd.cpp`` (this file must not be modified) should give
+an output similar to this:
+
+.. code-block:: console
+
+   $ ./bin/read-passwd /etc/passwd
+   ...
+   User.name    jfasch
+       .passwd  x
+       .uid     1000
+       .gid     1000
+       .descr   Jörg Faschingbauer
+       .homedir /home/jfasch
+       .shell   /bin/bash
+   ...
+
 Hints
 -----
 

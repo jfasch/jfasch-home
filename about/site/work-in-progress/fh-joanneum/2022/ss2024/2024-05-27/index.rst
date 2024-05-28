@@ -34,7 +34,7 @@ for code.
 * Morphing :doc:`../2024-05-06/exercise` into something
   object-oriented, but still C
 * Introduce exception handling; this is done to overcome the weird
-  function signature of ``sensor_get_temperature()``. 
+  function signature of ``sensor_get_temperature()``.
 
   * Causing exceptions (``throw``):
     https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/sensor-oo-c/lib/sensor.cpp
@@ -49,3 +49,10 @@ User's View
 ...........
 
 * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+
+Exercise: Parse Lines From ``/etc/passwd``
+------------------------------------------
+
+* Moodle submission: 
+* Exercise definition:
+  :doc:`/trainings/material/soup/cxx03/exercises-misc/passwd-parser/exercise`

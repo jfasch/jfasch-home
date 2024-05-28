@@ -1,6 +1,5 @@
 #include "parse-passwd.h"
 
-#include <fstream>
 #include <stdexcept>
 
 
