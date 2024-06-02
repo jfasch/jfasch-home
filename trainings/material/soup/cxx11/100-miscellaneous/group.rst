@@ -14,7 +14,8 @@ Topics
    :maxdepth: 1
    :glob:
 
-   */topic
+   010-chrono/topic
+   any-variant-optional/any
    any-variant-optional/variant
 
 Group Description
