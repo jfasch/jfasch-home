@@ -3,8 +3,6 @@
 
 TEST(variant_suite, get_if)
 {
-    int tmp[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    (void)tmp;
     std::variant<int, float> v{42};
 
     const int* pi = std::get_if<int>(& /*REALLY!*/ v);

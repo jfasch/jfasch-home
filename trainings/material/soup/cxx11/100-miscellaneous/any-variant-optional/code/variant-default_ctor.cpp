@@ -5,8 +5,9 @@ TEST(variant_suite, default_ctor)
 {
     std::variant<int, float> v;                        // <--- default: int{}
 
-    ASSERT_EQ(std::get<int>(v), 0);                    // <--- by-type: does not fail
-    ASSERT_EQ(std::get<0>(v), 0);                      // <--- by-position
+    ASSERT_EQ(std::get<int>(v), 0);                    // <--- access: by-type
+    ASSERT_EQ(std::get<0>(v), 0);                      // <--- access: by-position
+
     ASSERT_EQ(v.index(), 0);                           // <--- which position does it hold?
     ASSERT_TRUE(std::holds_alternative<int>(v));       // <--- which type does it hold?
 

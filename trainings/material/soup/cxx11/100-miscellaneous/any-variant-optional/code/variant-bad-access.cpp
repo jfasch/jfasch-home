@@ -8,5 +8,7 @@ TEST(variant_suite, bad_access)
     try {
         std::get<float>(v);
     }
-    catch (const std::bad_variant_access&) {}
+    catch (const std::bad_variant_access&) {
+        SUCCEED();
+    }
 }

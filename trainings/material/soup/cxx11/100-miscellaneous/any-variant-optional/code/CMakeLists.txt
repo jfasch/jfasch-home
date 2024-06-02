@@ -10,7 +10,14 @@ ADD_EXECUTABLE(
   variant-string-and-charp.cpp
   variant-no-default-ctor.cpp
 
-  any.cpp
+  any-default-ctor.cpp
+  any-init-access.cpp
+  any-copy.cpp
+  any-bad-cast.cpp
+  any-has-value.cpp
+  any-ptr-cast.cpp
+  any-reference-cast.cpp
+  any-string-and-charp.cpp
 )
 TARGET_LINK_LIBRARIES(c++11-any-variant-optional-suite gtest_main)
 
