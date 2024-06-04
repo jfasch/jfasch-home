@@ -1,4 +1,4 @@
-.. ot-topic:: cmake.basics
+.. ot-topic:: cmake.intro.basics
 .. include:: <mmlalias.txt>
 
 

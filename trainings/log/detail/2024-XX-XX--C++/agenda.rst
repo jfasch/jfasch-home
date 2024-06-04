@@ -175,11 +175,11 @@ CMake Intro: Project Structure
 
 From :doc:`/trainings/material/soup/cmake/group`
 
-* :doc:`/trainings/material/soup/cmake/basics`
-* :doc:`/trainings/material/soup/cmake/libraries`
-* :doc:`/trainings/material/soup/cmake/shared-libraries`
-* :doc:`/trainings/material/soup/cmake/installation`
-* :doc:`/trainings/material/soup/cmake/structure`
+* :doc:`/trainings/material/soup/cmake/intro/basics`
+* :doc:`/trainings/material/soup/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
+* :doc:`/trainings/material/soup/cmake/intro/installation`
+* :doc:`/trainings/material/soup/cmake/intro/structure`
 
 Unit Testing With googletest
 ............................

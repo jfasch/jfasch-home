@@ -22,3 +22,105 @@ C++: A Thorough Overview (2024-06-03)
 
    * :doc:`agenda`
 
+Day 1
+-----
+
+Introduction: What C++ >= 11 Brings
+...................................
+
+* :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking` (the outcome of it being `new-cpp.cpp <https://github.com/jfasch/2024-06-03/blob/main/livecoding/new-cpp.cpp>`__
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`, including 
+
+  * a discussion of how arrays continue to *decay* to pointers in C++,
+    using ``auto``
+  * a demo of good old C decayed arrays, `ptr-decay.cpp
+    <https://github.com/jfasch/2024-06-03/blob/main/livecoding/ptr-decay.cpp>`__
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`, 
+  and its relationship with ``std::function``, 
+  :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+
+  * A little upside down show of it, `lambda.cpp
+    <https://github.com/jfasch/2024-06-03/blob/main/livecoding/lambda.cpp>`__
+  * Walking through the inevitable capturing syntax,
+    :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+
+Smart Pointers: ``std::shared_ptr<>``, ``std::unique_ptr<>`` (And A Little ``std::move``)
+.........................................................................................
+
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+
+Livecoding experiences:
+
+* `unique-ptr.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/smart-pointers/unique-ptr.cpp>`__
+* `weak-ptr.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/smart-pointers/weak-ptr.cpp>`__
+
+Day 2
+-----
+
+Morning Awakening
+.................
+
+* ``mutable`` on lambda, to capture value by non-const copy:
+  `weak-ptr.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/smart-pointers/weak-ptr.cpp>`__
+
+Unit Testing, Test Driven Development, And ``googletest``
+.........................................................
+
+* Relevant parts from :download:`Design Patterns and Test Driven
+  Development (PDF)
+  </trainings/material/pdf/060-design-patterns-unittests.pdf>`
+
+* From :doc:`/trainings/material/soup/unittest/group`
+
+  * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/topic`
+  * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`
+  * :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/topic`
+
+A Little CMake
+..............
+
+From :doc:`/trainings/material/soup/cmake/group` (only what we use
+from it)
+
+* :doc:`/trainings/material/soup/cmake/intro/basics`
+* :doc:`/trainings/material/soup/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/cmake/intro/structure`
+
+Exercise: ``class Sensor``, And A ``SensorConfig`` Thereof
+..........................................................
+
+* Implementation detail: :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
+* See ``tests`` directory in our Github project: https://github.com/jfasch/2024-06-03/tree/main/tests
+
+  * Working: ``tests/sensor-const-suite.cpp``
+  * Working: ``tests/sensor-random-suite.cpp``
+  * Not working: ``tests/sensor-config-suite.cpp``. Does not even
+    compile |longrightarrow| commented-out in ``tests/CMakeLists.txt``
+
+* Comment-in ``tests/sensor-config-suite.cpp``
+* Add implementation files ``toolcase/sensor-config.h`` and
+  ``toolcase/sensor-config.cpp``, and fix until tests run.
+
+Multithreading
+..............
+
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
+
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/030-race-conditions/topic`
+  (live-coding ``int`` with *lost increment*)
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`

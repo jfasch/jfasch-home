@@ -1,5 +1,5 @@
-.. ot-topic:: cmake.shared_libraries_preview
-   :dependencies: cmake.libraries
+.. ot-topic:: cmake.intro.shared_libraries_preview
+   :dependencies: cmake.intro.libraries
 .. include:: <mmlalias.txt>
 
 
@@ -39,7 +39,7 @@ Shared Libraries (Preview)
 
    **See also**
 
-   * :doc:`targets-properties`
+   * :doc:`/trainings/material/soup/cmake/targets-properties`
    * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
 
    **Documentation**

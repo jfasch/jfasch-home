@@ -49,13 +49,6 @@ New OO keywords: override, final, default, delete
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
 
-``constexpr``, ``constinit``, ``consteval``
-...........................................
-
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
-* ``constinit``
-* ``consteval``
-
 Functions: ``std::function<>``, Lambdas
 .......................................
 
@@ -153,6 +146,12 @@ Strings
 * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
 * ``std::string_view``: purpose, and usage
 
+``constexpr``, ``constinit``, ``consteval``
+...........................................
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* ``constinit``
+* ``consteval``
 
 Code (And Project) Sanity
 .........................

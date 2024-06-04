@@ -1,5 +1,5 @@
 .. ot-topic:: cmake.configure_file
-   :dependencies: cmake.cxx_and_rants
+   :dependencies: cmake.intro.cxx_and_rants
 .. include:: <mmlalias.txt>
 
 "Configured" Header Files

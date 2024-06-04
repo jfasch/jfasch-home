@@ -1,5 +1,5 @@
-.. ot-topic:: cmake.cxx_and_rants
-   :dependencies: cmake.structure
+.. ot-topic:: cmake.intro.cxx_and_rants
+   :dependencies: cmake.intro.structure
 .. include:: <mmlalias.txt>
 
 C++, Debug/Release, CMake "Programming", Rants

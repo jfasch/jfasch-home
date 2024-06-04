@@ -1,12 +1,12 @@
-.. ot-group:: cmake
+.. ot-group:: cmake.intro
 
 .. include:: <mmlalias.txt>
 
 
-CMake
-=====
+CMake: Introduction
+===================
 
-.. image:: logo.jpg
+.. image:: ../logo.jpg
    :alt: CMake logo
    :align: right
    :scale: 100%
@@ -17,7 +17,7 @@ CMake
       :align: left
 
       * * **Duration**
- 	* * One day
+	* * One day
       * * **Course Language**
 	* * Course material language is English
 	  * Trainer language is English or German
@@ -27,17 +27,15 @@ CMake
 .. toctree::
    :maxdepth: 1
 
-   intro/group
-   configure_file
-   optional-code-problem
-   optional-code-approach-1
-   optional-code-approach-2
-   targets-properties
-   external-dependencies
-   testing
+   basics
+   libraries
+   shared-libraries
+   installation
+   structure
+   cxx-and-rants
 
 Dependencies
 ------------
 
 .. ot-graph::
-   :entries: cmake
+   :entries: cmake.intro

@@ -27,12 +27,12 @@ CMake: An Introduction (2023-07-18)
    * :doc:`/trainings/repertoire/cmake` (Course description)
    * :doc:`/trainings/material/soup/cmake/group` (Course material)
 
-* :doc:`/trainings/material/soup/cmake/basics`
-* :doc:`/trainings/material/soup/cmake/libraries`
-* :doc:`/trainings/material/soup/cmake/shared-libraries`
-* :doc:`/trainings/material/soup/cmake/installation`
-* :doc:`/trainings/material/soup/cmake/structure`
-* :doc:`/trainings/material/soup/cmake/cxx-and-rants`
+* :doc:`/trainings/material/soup/cmake/intro/basics`
+* :doc:`/trainings/material/soup/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
+* :doc:`/trainings/material/soup/cmake/intro/installation`
+* :doc:`/trainings/material/soup/cmake/intro/structure`
+* :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
 * Cross development
 
   * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`

@@ -29,12 +29,12 @@ CMake: An Introduction (2023-11-27)
    * :download:`PDF (Unmaintained; old CMake course)
      </trainings/material/pdf/045-cmake.pdf>`
 
-* :doc:`/trainings/material/soup/cmake/basics`
-* :doc:`/trainings/material/soup/cmake/libraries`
-* :doc:`/trainings/material/soup/cmake/shared-libraries`
-* :doc:`/trainings/material/soup/cmake/installation`
-* :doc:`/trainings/material/soup/cmake/structure`
-* :doc:`/trainings/material/soup/cmake/cxx-and-rants`
+* :doc:`/trainings/material/soup/cmake/intro/basics`
+* :doc:`/trainings/material/soup/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
+* :doc:`/trainings/material/soup/cmake/intro/installation`
+* :doc:`/trainings/material/soup/cmake/intro/structure`
+* :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
 * Exercise: see
   https://github.com/jfasch/2023-11-27/tree/main/exercise
 * :doc:`/trainings/material/soup/cmake/configure_file`
