@@ -1,0 +1,2 @@
+/home/jfasch/My-Projects/jfasch-home/trainings/material/soup/cmake/advanced/testbed/CMakeFiles/edit_cache.dir
+/home/jfasch/My-Projects/jfasch-home/trainings/material/soup/cmake/advanced/testbed/CMakeFiles/rebuild_cache.dir

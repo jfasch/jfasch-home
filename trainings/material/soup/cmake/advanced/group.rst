@@ -34,6 +34,7 @@ CMake: Advanced Topics
    targets-properties
    external-dependencies
    testing
+   language-basics
 
 Dependencies
 ------------
