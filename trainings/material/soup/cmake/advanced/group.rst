@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-CMake
-=====
+CMake: Advanced Topics
+======================
 
 .. image:: ../logo.jpg
    :alt: CMake logo

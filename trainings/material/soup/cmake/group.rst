@@ -11,19 +11,6 @@ CMake
    :align: right
    :scale: 100%
 
-.. sidebar::
-
-   .. list-table::
-      :align: left
-
-      * * **Duration**
- 	* * One day
-      * * **Course Language**
-	* * Course material language is English
-	  * Trainer language is English or German
-      * * **Booking**
-	* training@faschingbauer.co.at
-
 .. toctree::
    :maxdepth: 1
 
