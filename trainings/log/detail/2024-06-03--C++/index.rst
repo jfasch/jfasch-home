@@ -98,10 +98,13 @@ from it)
 * :doc:`/trainings/material/soup/cmake/intro/libraries`
 * :doc:`/trainings/material/soup/cmake/intro/structure`
 
+.. _exercise-day-2:
+
 Exercise: ``class Sensor``, And A ``SensorConfig`` Thereof
 ..........................................................
 
-* Implementation detail: :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
+* Implementation detail:
+  :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
 * See ``tests`` directory in our Github project: https://github.com/jfasch/2024-06-03/tree/main/tests
 
   * Working: ``tests/sensor-const-suite.cpp``
@@ -120,7 +123,58 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
+
+  Dissecting *joinable* vs. *detached* threads: `join-vs-detach.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/join-vs-detach.cpp>`__
+
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/030-race-conditions/topic`
-  (live-coding ``int`` with *lost increment*)
+  
+  ``i++`` ain't thread safe - the *load/modify/store conflict*:
+  `mother-of-race-conditions.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/mother-of-race-conditions.cpp>`__
+
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+
+  ``i++`` made thread safe with ``std::atomic<>``:
+  `mother-of-race-conditions--atomic.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/mother-of-race-conditions--atomic.cpp>`__
+
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
+
+  ``i++`` made thread safe with ``std::mutex`` (rather slow though):
+  `mother-of-race-conditions--mutex.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/mother-of-race-conditions--mutex.cpp>`__
+
+Day 3
+-----
+
+Multithreading, Continued
+.........................
+
+* Exercise time: based upon the :ref:`exercise from Day 2
+  <exercise-day-2>`,
+
+  * Implement new requirements from `tests/sensor-config-suite.cpp
+    <https://github.com/jfasch/2024-06-03/blob/main/tests/sensor-config-suite.cpp>`__
+  * Make ``SensorConfig`` thread safe. Empirically check its thread
+    safety by running `tests/sensor-config-maybe-mt-safe.cpp
+    <https://github.com/jfasch/2024-06-03/blob/main/tests/sensor-config-maybe-mt-safe.cpp>`__
+
+    (See `sensor-config.h
+    <https://github.com/jfasch/2024-06-03/blob/main/toolcase/sensor-config.h>`__
+    and `sensor-config.cpp
+    <https://github.com/jfasch/2024-06-03/blob/main/toolcase/sensor-config.cpp>`__)
+
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
+
+  See a contrived ping-pong game, livecoded in `promise-future.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/promise-future.cpp>`__
+
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
+
+  See an implementation of a thread safe queue, livecoded in
+  `thread-safe-queue.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/thread-safe-queue.cpp>`__
+
+  (A templated version of it available as `queue.h
+  <https://github.com/jfasch/2024-06-03/blob/main/toolcase/queue.h>`__)
