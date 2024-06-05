@@ -1,4 +1,4 @@
-.. ot-topic:: cmake.configure_file
+.. ot-topic:: cmake.advanced.configure_file
    :dependencies: cmake.intro.cxx_and_rants
 .. include:: <mmlalias.txt>
 

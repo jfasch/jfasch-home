@@ -1,5 +1,5 @@
-.. ot-topic:: cmake.optional_code_approach_2
-   :dependencies: cmake.optional_code_approach_1
+.. ot-topic:: cmake.advanced.optional_code_approach_2
+   :dependencies: cmake.advanced.optional_code_approach_1
 .. include:: <mmlalias.txt>
 
 Optional Code, Approach 2: Pushing Optionality Down In Module *Interface*

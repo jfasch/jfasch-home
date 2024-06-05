@@ -1,5 +1,5 @@
-.. ot-topic:: cmake.optional_code_approach_1
-   :dependencies: cmake.optional_code_problem
+.. ot-topic:: cmake.advanced.optional_code_approach_1
+   :dependencies: cmake.advanced.optional_code_problem
 .. include:: <mmlalias.txt>
 
 Optional Code, Approach 1: Optional ``blacklist``, C Macro  (Global Flags)

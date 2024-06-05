@@ -1,5 +1,5 @@
-.. ot-topic:: cmake.external_dependencies
-   :dependencies: cmake.targets_properties
+.. ot-topic:: cmake.advanced.external_dependencies
+   :dependencies: cmake.advanced.targets_properties
 .. include:: <mmlalias.txt>
 
 
@@ -97,8 +97,8 @@ External Dependencies
 
 .. note::
 
-   A requirement appears to only fail if at least one target
-   *depends* on the *imported target*
+   A requirement appears to only fail if at least one target *depends*
+   on the *imported target*
 
    .. code-block:: console
       :caption: ``libhello/CMakeLists.txt``

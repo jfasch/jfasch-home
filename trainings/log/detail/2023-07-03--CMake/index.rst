@@ -38,10 +38,10 @@ CMake: An Introduction (2023-07-18)
   * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
 
-* :doc:`/trainings/material/soup/cmake/configure_file`
-* :doc:`/trainings/material/soup/cmake/optional-code-problem`
-* :doc:`/trainings/material/soup/cmake/optional-code-approach-1`
-* :doc:`/trainings/material/soup/cmake/optional-code-approach-2`
-* :doc:`/trainings/material/soup/cmake/targets-properties`
-* :doc:`/trainings/material/soup/cmake/external-dependencies`
-* :doc:`/trainings/material/soup/cmake/testing`
+* :doc:`/trainings/material/soup/cmake/advanced/configure_file`
+* :doc:`/trainings/material/soup/cmake/advanced/optional-code-problem`
+* :doc:`/trainings/material/soup/cmake/advanced/optional-code-approach-1`
+* :doc:`/trainings/material/soup/cmake/advanced/optional-code-approach-2`
+* :doc:`/trainings/material/soup/cmake/advanced/targets-properties`
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies`
+* :doc:`/trainings/material/soup/cmake/advanced/testing`

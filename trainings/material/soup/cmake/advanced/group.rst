@@ -1,4 +1,4 @@
-.. ot-group:: cmake
+.. ot-group:: cmake.advanced
 
 .. include:: <mmlalias.txt>
 
@@ -6,7 +6,7 @@
 CMake
 =====
 
-.. image:: logo.jpg
+.. image:: ../logo.jpg
    :alt: CMake logo
    :align: right
    :scale: 100%
@@ -27,11 +27,16 @@ CMake
 .. toctree::
    :maxdepth: 1
 
-   intro/group
-   advanced/group
+   configure_file
+   optional-code-problem
+   optional-code-approach-1
+   optional-code-approach-2
+   targets-properties
+   external-dependencies
+   testing
 
 Dependencies
 ------------
 
 .. ot-graph::
-   :entries: cmake
+   :entries: cmake.advanced

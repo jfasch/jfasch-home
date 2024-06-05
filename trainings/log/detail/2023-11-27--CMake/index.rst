@@ -37,13 +37,13 @@ CMake: An Introduction (2023-11-27)
 * :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
 * Exercise: see
   https://github.com/jfasch/2023-11-27/tree/main/exercise
-* :doc:`/trainings/material/soup/cmake/configure_file`
-* :doc:`/trainings/material/soup/cmake/optional-code-problem`
-* :doc:`/trainings/material/soup/cmake/optional-code-approach-1`
-* :doc:`/trainings/material/soup/cmake/optional-code-approach-2`
-* :doc:`/trainings/material/soup/cmake/targets-properties`
-* :doc:`/trainings/material/soup/cmake/external-dependencies`
-* :doc:`/trainings/material/soup/cmake/testing`
+* :doc:`/trainings/material/soup/cmake/advanced/configure_file`
+* :doc:`/trainings/material/soup/cmake/advanced/optional-code-problem`
+* :doc:`/trainings/material/soup/cmake/advanced/optional-code-approach-1`
+* :doc:`/trainings/material/soup/cmake/advanced/optional-code-approach-2`
+* :doc:`/trainings/material/soup/cmake/advanced/targets-properties`
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies`
+* :doc:`/trainings/material/soup/cmake/advanced/testing`
 * Cross development
 
   * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
