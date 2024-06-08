@@ -125,25 +125,35 @@ Basically ...
 
 * Anything that is not an lvalue is an rvalue
 
-  * Temporaries
-
-    .. code-block:: c++
-
-       std::string("blah") = "blech";  // <--- error
-
   * Literal constants
 
     .. code-block:: c++
 
        42 = 666;  // <--- error
 
-  * Function return values (that aren't lvalue references)
+  * This is ok though (because ... ?)
+
+    .. code-block:: c++
+
+       std::string("blah") = "blech";
+
+  * Sadly, this is ok too (because ... ?)
 
     .. code-block:: c++
 
        std::string f();
+       f() = "blech";                  // <--- ok
+
+    Scott Meyers (Effective C++) says you shoud declare copy-returns
+    as ``const`` to make it consistent |:pig:|
+
+    .. code-block:: c++
+
+       const std::string f();
        f() = "blech";                  // <--- error
 
+  * This is intended
+       
     .. code-block:: c++
 
        std::string& f();
@@ -193,7 +203,7 @@ Rvalue References: So What Is That?
   .. code-block:: c++
   
      int&& rvr = 42;   // <--- bound to an rvalue (an int literal)
-     rvr = 42;         // <--- assigned to!
+     rvr = 7;          // <--- assigned to!
 
 * Cannot bind to lvalues
 

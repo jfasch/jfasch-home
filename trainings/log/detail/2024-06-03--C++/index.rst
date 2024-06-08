@@ -178,3 +178,40 @@ Multithreading, Continued
 
   (A templated version of it available as `queue.h
   <https://github.com/jfasch/2024-06-03/blob/main/toolcase/queue.h>`__)
+
+Day 4
+-----
+
+Exercise Time
+.............
+
+Something with threads |:metal:|
+
+RValue References, Move Semantics
+.................................
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
+* Lengthy livecoding: *Rule Of 5?*
+
+  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
+
+* :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
+
+
+
+TODO
+----
+
+* my-latch.h: programs/, tests/
+
+.. code-block:: console
+
+   $ ./programs/latch-demo 1.2 3.6 0.1 7.5
+   producer #3 arriving
+   producer #1 arriving
+   producer #2 arriving
+   producer #4 arriving
+   consumer says "yessss, everybody arrived"
+  
