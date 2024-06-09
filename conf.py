@@ -30,7 +30,7 @@ release = version = ''
 master_doc = 'index'
 templates_path = []
 
-# suppress terminal color codes during inclusion via
+# suppress terminal color codes during "cmake -P ..." inclusion via
 # ".. command-output::"
 os.environ['CLICOLOR'] = '0'
 

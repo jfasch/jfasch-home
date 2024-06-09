@@ -10,3 +10,4 @@ CMake: Datatypes
 * string methods
 * list methods
 * regex
+* bool!!!!!!!!

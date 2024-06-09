@@ -1,4 +1,4 @@
-.. ot-topic:: cmake.advanced.language_basics
+.. ot-topic:: cmake.advanced.language_basics.basics
 .. include:: <mmlalias.txt>
 
 CMake: Language Basics
@@ -125,7 +125,7 @@ Commands: Quoted Arguments
   .. literalinclude:: code/commands/multiline-strings.cmake
      :caption: :download:`multiline-strings.cmake (download)
   	     <code/commands/multiline-strings.cmake>`
-     :language: text
+     :language: cmake
   
   .. command-output:: cmake -P multiline-strings.cmake
      :cwd: code/commands
@@ -136,7 +136,7 @@ Commands: Quoted Arguments
   .. literalinclude:: code/commands/variable-expansion.cmake
      :caption: :download:`variable-expansion.cmake (download)
   	     <code/commands/variable-expansion.cmake>`
-     :language: text
+     :language: cmake
   
   .. command-output:: cmake -P variable-expansion.cmake
      :cwd: code/commands
@@ -156,7 +156,7 @@ Commands: Unquoted Arguments
   .. literalinclude:: code/commands/unquoted-arguments-correct.cmake
      :caption: :download:`unquoted-arguments-correct.cmake (download)
   	     <code/commands/unquoted-arguments-correct.cmake>`
-     :language: text
+     :language: cmake
   
   .. command-output:: cmake -P unquoted-arguments-correct.cmake
      :cwd: code/commands
@@ -169,7 +169,7 @@ Commands: Unquoted Arguments
   .. literalinclude:: code/commands/unquoted-arguments-list.cmake
      :caption: :download:`unquoted-arguments-list.cmake (download)
   	     <code/commands/unquoted-arguments-list.cmake>`
-     :language: text
+     :language: cmake
   
   .. command-output:: cmake -P unquoted-arguments-list.cmake
      :cwd: code/commands

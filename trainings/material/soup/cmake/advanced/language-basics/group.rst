@@ -1,4 +1,4 @@
-g.. ot-group:: cmake.advanced.language_basics
+.. ot-group:: cmake.advanced.language_basics
 
 .. include:: <mmlalias.txt>
 
@@ -10,10 +10,10 @@ CMake: Language Basics
    :maxdepth: 1
 
    basics/topic
-   variables
+   variables/topic
+   control-flow
    datatypes
    functions-and-macros
-   control-flow
 
 Dependencies
 ------------
