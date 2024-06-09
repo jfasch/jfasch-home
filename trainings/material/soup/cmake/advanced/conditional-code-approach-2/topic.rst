@@ -143,7 +143,7 @@ Good Or Bad?
 
 *Is this better than the other approach?*
 
-* Is is more flexible
+* It is more flexible
 * Optionality is local, between *provider* (``blacklist``) and
   *consumer* (``libhello``)
 * Is it simpler? *Probably not!*

@@ -1,8 +1,8 @@
 .. ot-topic:: cmake.advanced.language_basics
 .. include:: <mmlalias.txt>
 
-CMake Language Basics
-=====================
+CMake: Language Basics
+======================
 
 .. contents::
    :local:
@@ -41,8 +41,12 @@ Multiline Comments ("Bracketed Comments")
 .. literalinclude:: code/comments/single-line-comment-bracketed-nested-trick.cmake
    :language: cmake
 
-Commands
---------
+Command Execution
+-----------------
+
+.. sidebar:: See also
+
+   * :doc:`../functions-and-macros`
 
 * Command names are case insensitive (arguments are just strings, so
   sensitivity depends upon what the command wants from them)
@@ -101,3 +105,72 @@ Commands: Bracketed Arguments
 Commands: Quoted Arguments
 --------------------------
 
+.. sidebar:: See also
+
+   * :doc:`../datatypes`
+
+* C-like escape chararcters
+
+  .. literalinclude:: code/commands/quoted-c-escapes.cmake
+     :caption: :download:`quoted-c-escapes.cmake (download)
+  	     <code/commands/quoted-c-escapes.cmake>`
+     :language: text
+  
+  .. command-output:: cmake -P quoted-c-escapes.cmake
+     :cwd: code/commands
+     :shell:
+
+* Multiline strings
+
+  .. literalinclude:: code/commands/multiline-strings.cmake
+     :caption: :download:`multiline-strings.cmake (download)
+  	     <code/commands/multiline-strings.cmake>`
+     :language: text
+  
+  .. command-output:: cmake -P multiline-strings.cmake
+     :cwd: code/commands
+     :shell:
+
+* Variable expansion
+
+  .. literalinclude:: code/commands/variable-expansion.cmake
+     :caption: :download:`variable-expansion.cmake (download)
+  	     <code/commands/variable-expansion.cmake>`
+     :language: text
+  
+  .. command-output:: cmake -P variable-expansion.cmake
+     :cwd: code/commands
+     :shell:
+
+Commands: Unquoted Arguments
+----------------------------
+
+.. attention:: Always Quote Arguments
+
+   * Unquoted arguments, if used correctly, can save a few keystrokes
+   * It's just hard to use unquoted arguments correctly
+   * |longrightarrow| **Try to always quote your arguments!**
+
+* Correct usage example
+
+  .. literalinclude:: code/commands/unquoted-arguments-correct.cmake
+     :caption: :download:`unquoted-arguments-correct.cmake (download)
+  	     <code/commands/unquoted-arguments-correct.cmake>`
+     :language: text
+  
+  .. command-output:: cmake -P unquoted-arguments-correct.cmake
+     :cwd: code/commands
+     :shell:
+
+* List confusion
+
+  Lists are strings that are separated by " " (or ``;``)
+
+  .. literalinclude:: code/commands/unquoted-arguments-list.cmake
+     :caption: :download:`unquoted-arguments-list.cmake (download)
+  	     <code/commands/unquoted-arguments-list.cmake>`
+     :language: text
+  
+  .. command-output:: cmake -P unquoted-arguments-list.cmake
+     :cwd: code/commands
+     :shell:
