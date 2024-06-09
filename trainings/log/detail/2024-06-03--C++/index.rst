@@ -25,6 +25,9 @@ C++: A Thorough Overview (2024-06-03)
 Day 1
 -----
 
+.. contents::
+   :local:
+
 Introduction: What C++ >= 11 Brings
 ...................................
 
@@ -67,6 +70,9 @@ Livecoding experiences:
 
 Day 2
 -----
+
+.. contents::
+   :local:
 
 Morning Awakening
 .................
@@ -116,8 +122,8 @@ Exercise: ``class Sensor``, And A ``SensorConfig`` Thereof
 * Add implementation files ``toolcase/sensor-config.h`` and
   ``toolcase/sensor-config.cpp``, and fix until tests run.
 
-Multithreading
-..............
+Multithreading: Threads, Race Conditions, Locking Primitives
+............................................................
 
 From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 
@@ -148,22 +154,27 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 Day 3
 -----
 
-Multithreading, Continued
-.........................
+.. contents::
+   :local:
 
-* Exercise time: based upon the :ref:`exercise from Day 2
-  <exercise-day-2>`,
+Exercise: Make ``SensorConfig`` Thread Safe
+...........................................
 
-  * Implement new requirements from `tests/sensor-config-suite.cpp
-    <https://github.com/jfasch/2024-06-03/blob/main/tests/sensor-config-suite.cpp>`__
-  * Make ``SensorConfig`` thread safe. Empirically check its thread
-    safety by running `tests/sensor-config-maybe-mt-safe.cpp
-    <https://github.com/jfasch/2024-06-03/blob/main/tests/sensor-config-maybe-mt-safe.cpp>`__
+Based upon the :ref:`exercise from Day 2 <exercise-day-2>`,
 
-    (See `sensor-config.h
-    <https://github.com/jfasch/2024-06-03/blob/main/toolcase/sensor-config.h>`__
-    and `sensor-config.cpp
-    <https://github.com/jfasch/2024-06-03/blob/main/toolcase/sensor-config.cpp>`__)
+* Implement new requirements from `tests/sensor-config-suite.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/tests/sensor-config-suite.cpp>`__
+* Make ``SensorConfig`` thread safe. Empirically check its thread
+  safety by running `tests/sensor-config-maybe-mt-safe.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/tests/sensor-config-maybe-mt-safe.cpp>`__
+
+  (See `sensor-config.h
+  <https://github.com/jfasch/2024-06-03/blob/main/toolcase/sensor-config.h>`__
+  and `sensor-config.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/toolcase/sensor-config.cpp>`__)
+
+Multithreading: Communication
+.............................
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
 
@@ -182,10 +193,77 @@ Multithreading, Continued
 Day 4
 -----
 
+.. contents::
+   :local:
+
 Exercise Time
 .............
 
-Something with threads |:metal:|
+Group 1: Data Logger (Sketch)
+`````````````````````````````
+
+Given N ``Sensor`` instances in a ``SensorConfig``, sketch a
+producer-consumer scenario over a ``Queue`` (the thread safe queue
+from `queue.h
+<https://github.com/jfasch/2024-06-03/blob/main/toolcase/queue.h>`__),
+
+* N threads producing ``(timestamp, sensor_name, sensor_value)``
+  measurements into the queue.
+* One thread consuming those samples from the queue, and writing them
+  to ``stdout`` as they arrive.
+
+Group 2: Use ``std::latch``
+```````````````````````````
+
+.. sidebar:: Documentation
+
+   * `std::latch <https://en.cppreference.com/w/cpp/thread/latch>`__
+
+* Read the `std::latch
+  <https://en.cppreference.com/w/cpp/thread/latch>`__ documentation
+* Given that communication device, and an understanding of it, write a
+  program that pulls up a scenario that is just right for
+  it. ("Construct a problem that fits the solution.")
+
+.. _my-latch:
+
+Group 3: Program a ``MyLatch`` Class
+````````````````````````````````````
+
+.. sidebar:: Documentation
+
+   * `std::latch <https://en.cppreference.com/w/cpp/thread/latch>`__
+   * `std::condition_variable
+     <https://en.cppreference.com/w/cpp/thread/condition_variable>`__
+
+* Read the `std::latch
+  <https://en.cppreference.com/w/cpp/thread/latch>`__ documentation,
+  and make sense of it.
+* Write your own ``MyLatch`` implementation (presumably using a
+  `std::condition_variable
+  <https://en.cppreference.com/w/cpp/thread/condition_variable>`__ and
+  a `std::mutex <https://en.cppreference.com/w/cpp/thread/mutex>`__)
+
+Outcome:
+
+* Implementation: `my-latch.h
+  <https://github.com/jfasch/2024-06-03/blob/main/toolcase/my-latch.h>`__
+* Test suite: `latch-suite.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/tests/latch-suite.cpp>`__
+  (note how :doc:`futures
+  </trainings/material/soup/cxx11/050-multithreading/promise-future>`
+  can be used to achieve tests determinism)
+* Demo program: `latch-demo.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/programs/latch-demo.cpp>`__
+
+.. code-block:: console
+
+   $ ./programs/latch-demo 1.2 3.6 0.1 7.5
+   producer #3 arriving
+   producer #1 arriving
+   producer #2 arriving
+   producer #4 arriving
+   consumer says "yessss, everybody arrived"
 
 RValue References, Move Semantics
 .................................
@@ -197,21 +275,7 @@ RValue References, Move Semantics
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
 
+  Outcome `string-move.cpp
+  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/string-move.cpp>`__
+
 * :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
-
-
-
-TODO
-----
-
-* my-latch.h: programs/, tests/
-
-.. code-block:: console
-
-   $ ./programs/latch-demo 1.2 3.6 0.1 7.5
-   producer #3 arriving
-   producer #1 arriving
-   producer #2 arriving
-   producer #4 arriving
-   consumer says "yessss, everybody arrived"
-  
