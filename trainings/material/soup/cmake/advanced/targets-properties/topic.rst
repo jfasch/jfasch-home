@@ -98,8 +98,8 @@ Properties: ``PRIVATE``, ``PUBLIC``, ``INTERFACE``?
   * Dependency through ``#include <other.h>`` in a header file
     |longrightarrow| all *includers* need to know
   * ``blacklist`` availability in :doc:`approach 2
-    <optional-code-approach-2>` (but only if ``blacklist`` has
-    compiled code)
+    <conditional-code-approach-2/topic>` (but only if ``blacklist``
+    has compiled code)
   * ``PUBLIC`` only possible when target has *compiled code*
 
 * ``PRIVATE`` does not propagate

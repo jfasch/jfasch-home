@@ -90,7 +90,7 @@ External Dependencies
    ...
 
 * |longrightarrow| Handle through *optional code* (like in
-  :doc:`../conditional-code-approach-1/topic` and :doc:`optional-code-approach-2`)
+  :doc:`../conditional-code-approach-1/topic` and :doc:`conditional-code-approach-2/topic`)
 
 ``FIND_PACKAGE(... REQUIRED)``
 ------------------------------

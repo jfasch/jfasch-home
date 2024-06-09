@@ -215,7 +215,7 @@ Cache Variables
 .. sidebar:: Documentation
 
    * `set(... CACHE ...)
-     <https://cmake.org/cmake/help/latest/command/set.html#set-cache-entry`__
+     <https://cmake.org/cmake/help/latest/command/set.html#set-cache-entry>`__
 
 * Persistent variables
 * Visible in a *project*, across CMake runs
@@ -223,7 +223,7 @@ Cache Variables
 
 .. literalinclude:: code/project-cache/CMakeLists.txt
    :caption: :download:`CMakeLists.txt (download)
-	     <code/project-cache/CMakeLists.txt>`
+             <code/project-cache/CMakeLists.txt>`
    :language: cmake
 
 * First run
@@ -276,12 +276,12 @@ Scopes: Function Scope
 * Intermediate scope. Calling function inherits its variables into
   called function.
 
-  .. literalinclude:: code/scopes-function-local-scope-longer-call-chain.cmake.cmake
-     :caption: :download:`scopes-function-local-scope-longer-call-chain.cmake.cmake
-  	     (download) <code/scopes-function-local-scope-longer-call-chain.cmake.cmake>`
+  .. literalinclude:: code/scopes-function-local-scope-longer-call-chain.cmake
+     :caption: :download:`scopes-function-local-scope-longer-call-chain.cmake
+  	     (download) <code/scopes-function-local-scope-longer-call-chain.cmake>`
      :language: cmake
   
-  .. command-output:: cmake -P scopes-function-local-scope-longer-call-chain.cmake.cmake
+  .. command-output:: cmake -P scopes-function-local-scope-longer-call-chain.cmake
      :cwd: code
 
 * Reaching out into global scope
@@ -328,7 +328,7 @@ and ``subdirectory/CMakeLists.txt`` has
 
 A CMake run would print,
 
-.. code-block:: cmake
+.. code-block:: console
 
    $ cmake -B /tmp/cmake-demo/ -S ./code/directory-scope
    ...
