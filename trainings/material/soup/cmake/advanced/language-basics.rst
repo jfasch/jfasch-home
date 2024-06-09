@@ -80,7 +80,7 @@ Commands: Bracketed Arguments
 
 * Passing multiline strings into commands
 * Much like multiline comments
-* Of limited use - formatted text blocks, mainly
+* Of limited use - pre-formatted text blocks, at most
 
 .. literalinclude:: language-basics/commands/bracket.cmake
    :language: cmake
@@ -88,6 +88,8 @@ Commands: Bracketed Arguments
 * No string interpolation occurs
 
 .. literalinclude:: language-basics/commands/bracket-no-evaluate.cmake
+   :caption: `bracket-no-evaluate.cmake
+             <language-basics/commands/bracket-no-evaluate.cmake>`
    :language: cmake
 
 .. code-block:: console
