@@ -37,23 +37,23 @@ External Dependencies
           ├── greeter-simple.cpp
           └── greeter-simple.h
 
-   * :download:`13-external-dependencies/CMakeLists.txt`
-   * :download:`13-external-dependencies/DemoConfig.h.in`
-   * :download:`13-external-dependencies/bin/CMakeLists.txt`
-   * :download:`13-external-dependencies/bin/hello-first.cpp`
-   * :download:`13-external-dependencies/bin/hello-second.cpp`
-   * :download:`13-external-dependencies/bin/hello-third.cpp`
-   * :download:`13-external-dependencies/libhello/CMakeLists.txt`
-   * :download:`13-external-dependencies/libhello/greeter.h`
-   * :download:`13-external-dependencies/libhello/greeter-simple.h`
-   * :download:`13-external-dependencies/libhello/greeter-simple.cpp`
-   * :download:`13-external-dependencies/libhello/greeter-name.h`
-   * :download:`13-external-dependencies/libhello/greeter-name.cpp`
-   * :download:`13-external-dependencies/libhello/greeter-alias-db.h`
-   * :download:`13-external-dependencies/libhello/greeter-alias-db.cpp`
-   * :download:`13-external-dependencies/blacklist/CMakeLists.txt`
-   * :download:`13-external-dependencies/blacklist/blacklist.h`
-   * :download:`13-external-dependencies/blacklist/blacklist.cpp`
+   * :download:`code/CMakeLists.txt`
+   * :download:`code/DemoConfig.h.in`
+   * :download:`code/bin/CMakeLists.txt`
+   * :download:`code/bin/hello-first.cpp`
+   * :download:`code/bin/hello-second.cpp`
+   * :download:`code/bin/hello-third.cpp`
+   * :download:`code/libhello/CMakeLists.txt`
+   * :download:`code/libhello/greeter.h`
+   * :download:`code/libhello/greeter-simple.h`
+   * :download:`code/libhello/greeter-simple.cpp`
+   * :download:`code/libhello/greeter-name.h`
+   * :download:`code/libhello/greeter-name.cpp`
+   * :download:`code/libhello/greeter-alias-db.h`
+   * :download:`code/libhello/greeter-alias-db.cpp`
+   * :download:`code/blacklist/CMakeLists.txt`
+   * :download:`code/blacklist/blacklist.h`
+   * :download:`code/blacklist/blacklist.cpp`
 
 ``FIND_PACKAGE()``
 ------------------
@@ -90,7 +90,7 @@ External Dependencies
    ...
 
 * |longrightarrow| Handle through *optional code* (like in
-  :doc:`optional-code-approach-1` and :doc:`optional-code-approach-2`)
+  :doc:`../conditional-code-approach-1/topic` and :doc:`optional-code-approach-2`)
 
 ``FIND_PACKAGE(... REQUIRED)``
 ------------------------------
@@ -175,8 +175,8 @@ Demo Time
 
 * Download into ``libhello/``
 
-  * :download:`13-external-dependencies/libhello/greeter-alias-db.h`
-  * :download:`13-external-dependencies/libhello/greeter-alias-db.cpp`
+  * :download:`code/libhello/greeter-alias-db.h`
+  * :download:`code/libhello/greeter-alias-db.cpp`
 
 * In ``libhello/greeter-alias-db.h``, notice
 

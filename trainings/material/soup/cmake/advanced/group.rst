@@ -27,14 +27,14 @@ CMake: Advanced Topics
 .. toctree::
    :maxdepth: 1
 
-   configure_file
-   optional-code-problem
-   optional-code-approach-1
-   optional-code-approach-2
-   targets-properties
-   external-dependencies
-   testing
-   language-basics
+   configure-file/topic
+   conditional-code-problem/topic
+   conditional-code-approach-1/topic
+   conditional-code-approach-2/topic
+   targets-properties/topic
+   external-dependencies/topic
+   testing/topic
+   language-basics/topic
 
 Dependencies
 ------------

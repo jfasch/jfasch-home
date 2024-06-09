@@ -33,20 +33,20 @@ Optional Code, Approach 1: Optional ``blacklist``, C Macro  (Global Flags)
           ├── greeter-simple.cpp
           └── greeter-simple.h
 
-   * :download:`11-conditional-code-approach-1/CMakeLists.txt`
-   * :download:`11-conditional-code-approach-1/DemoConfig.h.in`
-   * :download:`11-conditional-code-approach-1/bin/CMakeLists.txt`
-   * :download:`11-conditional-code-approach-1/bin/hello-first.cpp`
-   * :download:`11-conditional-code-approach-1/bin/hello-second.cpp`
-   * :download:`11-conditional-code-approach-1/libhello/CMakeLists.txt`
-   * :download:`11-conditional-code-approach-1/libhello/greeter.h`
-   * :download:`11-conditional-code-approach-1/libhello/greeter-simple.h`
-   * :download:`11-conditional-code-approach-1/libhello/greeter-simple.cpp`
-   * :download:`11-conditional-code-approach-1/libhello/greeter-name.h`
-   * :download:`11-conditional-code-approach-1/libhello/greeter-name.cpp`
-   * :download:`11-conditional-code-approach-1/blacklist/CMakeLists.txt`
-   * :download:`11-conditional-code-approach-1/blacklist/blacklist.h`
-   * :download:`11-conditional-code-approach-1/blacklist/blacklist.cpp`
+   * :download:`code/CMakeLists.txt`
+   * :download:`code/DemoConfig.h.in`
+   * :download:`code/bin/CMakeLists.txt`
+   * :download:`code/bin/hello-first.cpp`
+   * :download:`code/bin/hello-second.cpp`
+   * :download:`code/libhello/CMakeLists.txt`
+   * :download:`code/libhello/greeter.h`
+   * :download:`code/libhello/greeter-simple.h`
+   * :download:`code/libhello/greeter-simple.cpp`
+   * :download:`code/libhello/greeter-name.h`
+   * :download:`code/libhello/greeter-name.cpp`
+   * :download:`code/blacklist/CMakeLists.txt`
+   * :download:`code/blacklist/blacklist.h`
+   * :download:`code/blacklist/blacklist.cpp`
 
 Optional ``blacklist``, C Macro
 -------------------------------

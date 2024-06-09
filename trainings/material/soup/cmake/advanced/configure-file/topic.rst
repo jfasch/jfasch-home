@@ -29,17 +29,17 @@
           ├── greeter-simple.cpp
           └── greeter-simple.h
 
-   * :download:`10-configure-file/CMakeLists.txt`
-   * :download:`10-configure-file/DemoConfig.h.in`
-   * :download:`10-configure-file/libhello/CMakeLists.txt`
-   * :download:`10-configure-file/libhello/greeter.h`
-   * :download:`10-configure-file/libhello/greeter-simple.h`
-   * :download:`10-configure-file/libhello/greeter-simple.cpp`
-   * :download:`10-configure-file/libhello/greeter-name.cpp`
-   * :download:`10-configure-file/libhello/greeter-name.h`
-   * :download:`10-configure-file/bin/CMakeLists.txt`
-   * :download:`10-configure-file/bin/hello-second.cpp`
-   * :download:`10-configure-file/bin/hello-first.cpp`
+   * :download:`code/CMakeLists.txt`
+   * :download:`code/DemoConfig.h.in`
+   * :download:`code/libhello/CMakeLists.txt`
+   * :download:`code/libhello/greeter.h`
+   * :download:`code/libhello/greeter-simple.h`
+   * :download:`code/libhello/greeter-simple.cpp`
+   * :download:`code/libhello/greeter-name.cpp`
+   * :download:`code/libhello/greeter-name.h`
+   * :download:`code/bin/CMakeLists.txt`
+   * :download:`code/bin/hello-second.cpp`
+   * :download:`code/bin/hello-first.cpp`
       
 Problem
 -------
@@ -80,9 +80,9 @@ Configured Files
 
 * Header file *template* that contains CMake variable substitutions
 
-  .. literalinclude:: 10-configure-file/DemoConfig.h.in
+  .. literalinclude:: code/DemoConfig.h.in
      :language: c++
-     :caption: :download:`10-configure-file/DemoConfig.h.in`
+     :caption: :download:`code/DemoConfig.h.in`
 
 * Let CMake perform substitutions
 
@@ -103,8 +103,8 @@ Use In Compiled Code
      <https://cmake.org/cmake/help/latest/command/include_directories.html>`__
 
 * Pick up CMake variables from configure file
-  (:download:`10-configure-file/bin/hello-first.cpp` and
-  :download:`10-configure-file/bin/hello-second.cpp`)
+  (:download:`code/bin/hello-first.cpp` and
+  :download:`code/bin/hello-second.cpp`)
 
   .. code-block:: c++
   

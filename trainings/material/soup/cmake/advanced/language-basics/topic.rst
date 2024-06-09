@@ -13,10 +13,10 @@ Single Line Comments
 * Like in C++ (well, approximately |:face_with_raised_eyebrow:|)
 * Single-line comments
 
-.. literalinclude:: language-basics/comments/single-line-comment-whole.cmake
+.. literalinclude:: code/comments/single-line-comment-whole.cmake
    :language: cmake
 
-.. literalinclude:: language-basics/comments/single-line-comment-rest-of-line.cmake
+.. literalinclude:: code/comments/single-line-comment-rest-of-line.cmake
    :language: cmake
 
 Multiline Comments ("Bracketed Comments")
@@ -27,18 +27,18 @@ Multiline Comments ("Bracketed Comments")
 * Closed with the same pattern, only with closing square brackets
   ("]")
 
-.. literalinclude:: language-basics/comments/single-line-comment-bracketed-simple.cmake
+.. literalinclude:: code/comments/single-line-comment-bracketed-simple.cmake
    :language: cmake
 
 * Nesting of comments possible by varying the number of equal signs
 
-.. literalinclude:: language-basics/comments/single-line-comment-bracketed-nested.cmake
+.. literalinclude:: code/comments/single-line-comment-bracketed-nested.cmake
    :language: cmake
 
 * Trick: turning multiline nested comments into live code -
   *comment out the comment*
 
-.. literalinclude:: language-basics/comments/single-line-comment-bracketed-nested-trick.cmake
+.. literalinclude:: code/comments/single-line-comment-bracketed-nested-trick.cmake
    :language: cmake
 
 Commands
@@ -49,7 +49,7 @@ Commands
 * Arguments are separated by whitespaces
 * Example: command ``message`` invoked with two arguments
 
-.. literalinclude:: language-basics/commands/sample-invocation.cmake
+.. literalinclude:: code/commands/sample-invocation.cmake
    :language: cmake
 
 outputs
@@ -82,14 +82,14 @@ Commands: Bracketed Arguments
 * Much like multiline comments
 * Of limited use - pre-formatted text blocks, at most
 
-.. literalinclude:: language-basics/commands/bracket.cmake
+.. literalinclude:: code/commands/bracket.cmake
    :language: cmake
 
 * No string interpolation occurs
 
-.. literalinclude:: language-basics/commands/bracket-no-evaluate.cmake
+.. literalinclude:: code/commands/bracket-no-evaluate.cmake
    :caption: `bracket-no-evaluate.cmake
-             <language-basics/commands/bracket-no-evaluate.cmake>`
+             <code/commands/bracket-no-evaluate.cmake>`
    :language: cmake
 
 .. code-block:: console

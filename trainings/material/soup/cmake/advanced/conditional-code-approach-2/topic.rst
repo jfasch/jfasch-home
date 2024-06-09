@@ -33,20 +33,20 @@ Optional Code, Approach 2: Pushing Optionality Down In Module *Interface*
           ├── greeter-simple.cpp
           └── greeter-simple.h
       
-   * :download:`12-conditional-code-approach-2/CMakeLists.txt`
-   * :download:`12-conditional-code-approach-2/DemoConfig.h.in`
-   * :download:`12-conditional-code-approach-2/bin/CMakeLists.txt`
-   * :download:`12-conditional-code-approach-2/bin/hello-first.cpp`
-   * :download:`12-conditional-code-approach-2/bin/hello-second.cpp`
-   * :download:`12-conditional-code-approach-2/libhello/CMakeLists.txt`
-   * :download:`12-conditional-code-approach-2/libhello/greeter.h`
-   * :download:`12-conditional-code-approach-2/libhello/greeter-simple.h`
-   * :download:`12-conditional-code-approach-2/libhello/greeter-simple.cpp`
-   * :download:`12-conditional-code-approach-2/libhello/greeter-name.cpp`
-   * :download:`12-conditional-code-approach-2/libhello/greeter-name.h`
-   * :download:`12-conditional-code-approach-2/blacklist/CMakeLists.txt`
-   * :download:`12-conditional-code-approach-2/blacklist/blacklist.h`
-   * :download:`12-conditional-code-approach-2/blacklist/blacklist.cpp`
+   * :download:`code/CMakeLists.txt`
+   * :download:`code/DemoConfig.h.in`
+   * :download:`code/bin/CMakeLists.txt`
+   * :download:`code/bin/hello-first.cpp`
+   * :download:`code/bin/hello-second.cpp`
+   * :download:`code/libhello/CMakeLists.txt`
+   * :download:`code/libhello/greeter.h`
+   * :download:`code/libhello/greeter-simple.h`
+   * :download:`code/libhello/greeter-simple.cpp`
+   * :download:`code/libhello/greeter-name.cpp`
+   * :download:`code/libhello/greeter-name.h`
+   * :download:`code/blacklist/CMakeLists.txt`
+   * :download:`code/blacklist/blacklist.h`
+   * :download:`code/blacklist/blacklist.cpp`
 
 Remove Too Much CMake Optionality
 ---------------------------------
