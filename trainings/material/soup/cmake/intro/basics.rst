@@ -84,12 +84,14 @@ Building With CMake
 Building With CMake: Separate Source And Build Directories
 ----------------------------------------------------------
 
-* *Source directory*,
-  e.g. ``/home/jfasch/work/jfasch-home/trainings/material/soup/cmake/01-single``
-* Build directory, e.g. ``/tmp/build``
+* *Source directory*, e.g. ``~/My-Projects/01-single``
+
+  * Version controlled
+
+* Build directory, e.g. ``~/My-Builds/01-single-x86_64``
 
   * Not version controlled |longrightarrow| does not interfere with
-    version control
+    version control (no need to ``.gitignore`` build directory)
   * Completely resurrectable
   * Not subject to backups
   * Cheap storage medium
@@ -105,8 +107,8 @@ Building With CMake: Separate Source And Build Directories
 .. code-block:: console
    :caption: Create ``Makefile`` structure
 
-   $ cd /tmp/build
-   $ cmake /home/jfasch/work/jfasch-home/trainings/material/soup/cmake/01-single
+   $ cd ~/My-Builds/01-single-x86_64
+   $ cmake ~/My-Projects/01-single
    -- The C compiler identification is GNU 12.2.1
    -- The CXX compiler identification is GNU 12.2.1
    -- Detecting C compiler ABI info
@@ -121,7 +123,7 @@ Building With CMake: Separate Source And Build Directories
    -- Detecting CXX compile features - done
    -- Configuring done (0.7s)
    -- Generating done (0.0s)
-   -- Build files have been written to: /tmp/build
+   -- Build files have been written to: /home/jfasch/My-Builds/01-single-x86_64
    
 .. code-block:: console
    :caption: Build using ``make``
@@ -234,5 +236,5 @@ Problem: More Functionality
 Solution: Libraries
 -------------------
 
-* Bag of object file
+* Bag of object files
 * Come in *static* and *shared* flavors

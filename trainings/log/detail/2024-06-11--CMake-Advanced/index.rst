@@ -1,0 +1,68 @@
+.. include:: <mmlalias.txt>
+
+
+CMake: Advanced Topics (2024-06-11)
+===================================
+
+.. toctree::
+   :hidden:
+
+   agenda
+
+.. sidebar::
+
+   **Github Repository**
+
+   * https://github.com/jfasch/2024-06-11
+
+   **Original Agenda** 
+
+   * :doc:`agenda`
+
+
+.. contents::
+   :local:
+
+Day 1
+-----
+
+Basics
+......
+
+From :doc:`/trainings/material/soup/cmake/intro/group`
+
+* :doc:`/trainings/material/soup/cmake/intro/basics`
+* :doc:`/trainings/material/soup/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
+* :doc:`/trainings/material/soup/cmake/intro/installation`
+* :doc:`/trainings/material/soup/cmake/intro/structure`
+* :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
+* *Exercise*: add CMake build to existing source code in
+  https://github.com/jfasch/2024-06-11/tree/main/exercises/straightforward
+
+Optional Code And External Dependencies
+.......................................
+
+From :doc:`/trainings/material/soup/cmake/advanced/group`
+
+* :doc:`/trainings/material/soup/cmake/advanced/configure-file/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-problem/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-1/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-2/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/targets-properties/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/topic`
+
+Day 2
+-----
+
+The CMake Language
+..................
+
+From :doc:`/trainings/material/soup/cmake/advanced/language/group`
+
+* :doc:`/trainings/material/soup/cmake/advanced/language/basics/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/language/variables/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/language/if-and-conditions/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/language/datatypes/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/language/file-etc/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`

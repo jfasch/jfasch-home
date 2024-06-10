@@ -16,6 +16,20 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
+CMake: Basics (2024-06-18)
+--------------------------
+
+This course is under preparation.
+
+(:doc:`More ... <detail/2024-06-18--CMake-Basics/index>`)
+
+CMake: Advanced Topics (2024-06-11)
+-----------------------------------
+
+Three days of CMake; hope the course participants survive.
+
+(:doc:`More ... <detail/2024-06-11--CMake-Advanced/index>`)
+
 C++: A Thorough Overview (2024-06-03)
 -------------------------------------
 
@@ -24,17 +38,11 @@ partner `IT-Visions <https://www.it-visions.at>`__.
 
 (:doc:`More ... <detail/2024-06-03--C++/index>`)
 
-CMake Basics (2024-06-18)
--------------------------
-
-This course is under preparation.
-
-(:doc:`More ... <detail/2024-06-18--CMake-Basics/index>`)
-
 Refactoring, Unit Testing, And Test Driven Development In Python (2024-04-09 - 2024-04-11)
 ------------------------------------------------------------------------------------------
 
-A three day online course, for a highly motivated team of developers.
+A three day online course, for a highly motivated team of Delphi
+developers.
 
 (:doc:`More ... <detail/2024-04-09--TDD-Python-Delphi/index>`)
 

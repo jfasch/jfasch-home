@@ -1,11 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Advanced CMake (Course Date Yet Unknown)
-========================================
-
-.. contents::
-   :local:
+Agenda: CMake: Advanced Topics (2024-06-11)
+===========================================
 
 Basics
 ------
