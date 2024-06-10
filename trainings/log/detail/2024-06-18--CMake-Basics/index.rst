@@ -32,7 +32,7 @@ CMake: An Introduction (2024-06-18)
 * :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
 * Exercise: see
   https://github.com/jfasch/2023-11-27/tree/main/exercise
-* :doc:`/trainings/material/soup/cmake/advanced/configure_file/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/configure-file/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-problem/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-1/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-2/topic`

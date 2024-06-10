@@ -50,7 +50,7 @@ Empty/Undefined Variables
 
 .. sidebar:: See also
 
-   * :doc:`../control-flow`
+   * :doc:`../if-and-conditions/topic`
    * :doc:`../datatypes`
 
 .. sidebar:: See also
@@ -116,7 +116,7 @@ Checking Emptyness And Definedness
 
 .. sidebar:: See also
 
-   * :doc:`../control-flow`
+   * :doc:`../if-and-conditions/topic`
 
 .. sidebar:: Documentation
 
@@ -129,7 +129,7 @@ there's a subtle difference.
 
   .. literalinclude:: code/empty-variable-check.cmake
      :caption: :download:`empty-variable-check.cmake (download)
-  	     <code/empty-variable-check.cmake>`
+	       <code/empty-variable-check.cmake>`
      :language: cmake
   
   .. command-output:: cmake -P empty-variable-check.cmake

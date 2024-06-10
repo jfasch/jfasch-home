@@ -11,7 +11,7 @@ CMake: Language Basics
 
    basics/topic
    variables/topic
-   control-flow
+   if-and-conditions/topic
    datatypes
    functions-and-macros
 

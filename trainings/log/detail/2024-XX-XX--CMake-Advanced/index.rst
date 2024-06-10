@@ -22,7 +22,7 @@ Basics
 Optional Code And External Dependencies
 ---------------------------------------
 
-* :doc:`/trainings/material/soup/cmake/advanced/configure_file/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/configure-file/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-problem/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-1/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-2/topic`
