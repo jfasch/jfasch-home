@@ -1,10 +1,10 @@
-.. ot-group:: cmake.advanced.language_basics
+.. ot-group:: cmake.advanced.language
 
 .. include:: <mmlalias.txt>
 
 
-CMake: Language Basics
-======================
+CMake: The Language
+===================
 
 .. toctree::
    :maxdepth: 1
@@ -12,8 +12,12 @@ CMake: Language Basics
    basics/topic
    variables/topic
    if-and-conditions/topic
-   datatypes
+   datatypes/topic
    functions-and-macros
+   for
+   foreach
+   file-etc/topic
+   scripts/topic
 
 Dependencies
 ------------

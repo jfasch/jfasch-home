@@ -34,17 +34,15 @@ CMake: Advanced Topics
    targets-properties/topic
    external-dependencies/topic
    testing/topic
-   language-basics/group
+   language/group
 
 .. todo jjj
 
 .. todo jjj
 
-.. language-basics/variables (normal, cache, environment -
-..       https://cmake.org/cmake/help/latest/command/set.html)
-.. language-basics/datatypes
-.. language-basics/functions-and-macros
-.. language-basics/control-flow
+.. language/datatypes
+.. language/functions-and-macros
+.. language/while,for
 
 Dependencies
 ------------

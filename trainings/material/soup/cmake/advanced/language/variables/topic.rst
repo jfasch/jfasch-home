@@ -1,5 +1,5 @@
-.. ot-topic:: cmake.advanced.language_basics.variables
-   :dependencies: cmake.advanced.language_basics.basics
+.. ot-topic:: cmake.advanced.language.variables
+   :dependencies: cmake.advanced.language.basics
 .. include:: <mmlalias.txt>
 
 CMake: Variables
@@ -51,17 +51,17 @@ Empty/Undefined Variables
 .. sidebar:: See also
 
    * :doc:`../if-and-conditions/topic`
-   * :doc:`../datatypes`
+   * :doc:`../datatypes/topic`
 
 .. sidebar:: See also
 
-   * :doc:`../datatypes`
+   * :doc:`../datatypes/topic`
 
 * Empty variable
 
   .. literalinclude:: code/empty-variable.cmake
      :caption: :download:`empty-variable.cmake (download)
-  	     <code/empty-variable.cmake>`
+	       <code/empty-variable.cmake>`
      :language: cmake
   
   .. command-output:: cmake -P empty-variable.cmake
@@ -143,7 +143,7 @@ Indirect Variables
 
   .. literalinclude:: code/indirect-variable.cmake
      :caption: :download:`indirect-variable.cmake (download)
-  	     <code/indirect-variable.cmake>`
+  	       <code/indirect-variable.cmake>`
      :language: cmake
   
   .. command-output:: cmake -P indirect-variable.cmake

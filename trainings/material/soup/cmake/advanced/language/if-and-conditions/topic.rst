@@ -1,5 +1,5 @@
-.. ot-topic:: cmake.advanced.language_basics.if_and_conditions
-   :dependencies: cmake.advanced.language_basics.variables
+.. ot-topic:: cmake.advanced.language.if_and_conditions
+   :dependencies: cmake.advanced.language.variables
 .. include:: <mmlalias.txt>
 
 

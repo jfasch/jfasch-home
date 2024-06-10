@@ -1,4 +1,4 @@
-.. ot-topic:: cmake.advanced.language_basics.basics
+.. ot-topic:: cmake.advanced.language.basics
 .. include:: <mmlalias.txt>
 
 CMake: Language Basics
@@ -107,7 +107,7 @@ Commands: Quoted Arguments
 
 .. sidebar:: See also
 
-   * :doc:`../datatypes`
+   * :doc:`../datatypes/topic`
 
 * C-like escape chararcters
 
