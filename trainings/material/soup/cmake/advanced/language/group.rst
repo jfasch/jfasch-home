@@ -13,7 +13,7 @@ CMake: The Language
    variables/topic
    if-and-conditions/topic
    datatypes/topic
-   functions-and-macros
+   functions-and-macros/topic
    for
    foreach
    file-etc/topic

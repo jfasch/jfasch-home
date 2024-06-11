@@ -19,9 +19,19 @@ CMake: Advanced Topics (2024-06-11)
 
    * :doc:`agenda`
 
+   **Windows Users**
+
+   * `Windows Subsystem for Linux (WSL)
+     <https://learn.microsoft.com/en-us/windows/wsl/>`__
+   * `VSCode: Developing in WSL
+     <https://code.visualstudio.com/docs/remote/wsl>`__
+   * `VSCode: Remote Development using SSH
+     <https://code.visualstudio.com/docs/remote/ssh>`__
+
 
 .. contents::
    :local:
+
 
 Day 1
 -----
@@ -36,9 +46,22 @@ From :doc:`/trainings/material/soup/cmake/intro/group`
 * :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
 * :doc:`/trainings/material/soup/cmake/intro/installation`
 * :doc:`/trainings/material/soup/cmake/intro/structure`
+
+  Propagated properties ...
+
+  .. image:: propagated-properties.png
+     :scale: 20%
+
 * :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
-* *Exercise*: add CMake build to existing source code in
-  https://github.com/jfasch/2024-06-11/tree/main/exercises/straightforward
+
+Exercise: Build It!
+...................
+
+Add CMake build to existing source code in
+https://github.com/jfasch/2024-06-11/tree/main/exercises/straightforward
+
+.. image:: exercise-day-1.png
+   :scale: 20%
 
 Optional Code And External Dependencies
 .......................................

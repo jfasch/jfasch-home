@@ -278,24 +278,10 @@ Scopes: Function Scope
 
   .. literalinclude:: code/scopes-function-local-scope-longer-call-chain.cmake
      :caption: :download:`scopes-function-local-scope-longer-call-chain.cmake
-  	     (download) <code/scopes-function-local-scope-longer-call-chain.cmake>`
+  	       (download) <code/scopes-function-local-scope-longer-call-chain.cmake>`
      :language: cmake
   
   .. command-output:: cmake -P scopes-function-local-scope-longer-call-chain.cmake
-     :cwd: code
-
-* Reaching out into global scope
-
-  .. attention::
-
-     The setting function still sees its own copy!
-
-  .. literalinclude:: code/scopes-function-reaching-out.cmake
-     :caption: :download:`scopes-function-reaching-out.cmake
-  	     (download) <code/scopes-function-reaching-out.cmake>`
-     :language: cmake
-  
-  .. command-output:: cmake -P scopes-function-reaching-out.cmake
      :cwd: code
 
 Scopes: Directory Scope
