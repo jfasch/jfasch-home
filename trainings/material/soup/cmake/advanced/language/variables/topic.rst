@@ -2,8 +2,8 @@
    :dependencies: cmake.advanced.language.basics
 .. include:: <mmlalias.txt>
 
-CMake: Variables
-================
+Variables
+=========
 
 .. contents::
    :local:

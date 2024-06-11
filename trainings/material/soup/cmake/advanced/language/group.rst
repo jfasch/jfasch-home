@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-CMake: The Language
-===================
+The Language
+============
 
 .. toctree::
    :maxdepth: 1
@@ -12,10 +12,10 @@ CMake: The Language
    basics/topic
    variables/topic
    if-and-conditions/topic
+   while/topic
+   foreach/topic
    datatypes/topic
    functions-and-macros/topic
-   for
-   foreach
    file-etc/topic
    scripts/topic
 

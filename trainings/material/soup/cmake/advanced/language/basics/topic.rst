@@ -1,8 +1,8 @@
 .. ot-topic:: cmake.advanced.language.basics
 .. include:: <mmlalias.txt>
 
-CMake: Language Basics
-======================
+Language Basics
+===============
 
 .. contents::
    :local:
@@ -46,7 +46,7 @@ Command Execution
 
 .. sidebar:: See also
 
-   * :doc:`../functions-and-macros`
+   * :doc:`../functions-and-macros/topic`
 
 * Command names are case insensitive (arguments are just strings, so
   sensitivity depends upon what the command wants from them)

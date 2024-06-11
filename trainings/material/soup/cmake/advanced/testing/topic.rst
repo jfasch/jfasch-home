@@ -19,7 +19,7 @@ Setup And Usage
    * `ENABLE_TESTING()
      <https://cmake.org/cmake/help/latest/command/enable_testing.html>`__
 
-* Enable testing (ideally in toplavel ``CMakeLists.txt``)
+* Enable testing (ideally in toplevel ``CMakeLists.txt``)
 
   .. code-block:: console
 

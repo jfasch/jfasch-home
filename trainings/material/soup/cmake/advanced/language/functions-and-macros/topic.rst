@@ -5,8 +5,8 @@
 .. include:: <mmlalias.txt>
 
 
-CMake: Functions And Macros
-===========================
+Functions And Macros
+====================
 
 .. contents::
    :local:

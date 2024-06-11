@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-CMake: ``if``, And Conditions
-=============================
+``if``, And Conditions
+======================
 
 .. contents::
    :local:

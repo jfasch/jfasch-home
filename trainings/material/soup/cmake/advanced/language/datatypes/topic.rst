@@ -1,8 +1,9 @@
 .. ot-topic:: cmake.advanced.language.datatypes
+   :dependencies: cmake.advanced.language.variables
 .. include:: <mmlalias.txt>
 
-CMake: Datatypes
-================
+Datatypes
+=========
 
 .. contents::
    :local:
@@ -228,9 +229,9 @@ Lists: Iteration (``foreach`` Loop)
 
 .. sidebar:: See also
 
-   * :doc:`../foreach`
+   * :doc:`../foreach/topic`
 
-* ``foreach()`` operates on *elements*, not on lists (see :doc:`../foreach`)
+* ``foreach()`` operates on *elements*, not on lists (see :doc:`../foreach/topic`)
 * Separators can either be spaces (``" "``) or semicolons (``";"``)
 * |longrightarrow| Unquoted string reference (clearly |:pig:|)
 

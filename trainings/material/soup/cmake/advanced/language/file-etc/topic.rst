@@ -4,8 +4,8 @@
 
 .. include:: <mmlalias.txt>
 
-CMake: Filesystem Interaction, Pathname Manipulation
-====================================================
+Filesystem Interaction, Pathname Manipulation
+=============================================
 
 .. contents::
    :local:

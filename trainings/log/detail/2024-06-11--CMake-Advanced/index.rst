@@ -21,6 +21,7 @@ CMake: Advanced Topics (2024-06-11)
 
    **Windows Users**
 
+   * :doc:`/trainings/material/soup/linux/basics/intro/wsl`
    * `Windows Subsystem for Linux (WSL)
      <https://learn.microsoft.com/en-us/windows/wsl/>`__
    * `VSCode: Developing in WSL
@@ -78,6 +79,19 @@ From :doc:`/trainings/material/soup/cmake/advanced/group`
 Day 2
 -----
 
+Morning Awakening
+.................
+
+* Someone to show how :doc:`WSL
+  </trainings/material/soup/linux/basics/intro/wsl>` can be used.
+* Continue discussion from yesterday: how do I include file from the
+  local directory?
+
+  * ``#include "file.h"``
+  * ``#include <file.h>``
+
+  |longrightarrow| ``target_include_directories(... INTERFACE ...)``
+
 The CMake Language
 ..................
 
@@ -88,4 +102,5 @@ From :doc:`/trainings/material/soup/cmake/advanced/language/group`
 * :doc:`/trainings/material/soup/cmake/advanced/language/if-and-conditions/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/datatypes/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/file-etc/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/language/functions-and-macros/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`
