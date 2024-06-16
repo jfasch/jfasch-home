@@ -51,7 +51,6 @@ From :doc:`/trainings/material/soup/cmake/intro/group`
   Propagated properties ...
 
   .. image:: propagated-properties.png
-     :scale: 20%
 
 * :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
 
@@ -62,19 +61,13 @@ Add CMake build to existing source code in
 https://github.com/jfasch/2024-06-11/tree/main/exercises/straightforward
 
 .. image:: exercise-day-1.png
-   :scale: 20%
 
-Optional Code And External Dependencies
-.......................................
+Bringing CMake Information Into C/C++
+.....................................
 
 From :doc:`/trainings/material/soup/cmake/advanced/group`
 
 * :doc:`/trainings/material/soup/cmake/advanced/configure-file/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-problem/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-1/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-2/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/targets-properties/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/topic`
 
 Day 2
 -----
@@ -92,6 +85,39 @@ Morning Awakening
 
   |longrightarrow| ``target_include_directories(... INTERFACE ...)``
 
+More About Dependencies
+.......................
+
+* :doc:`/trainings/material/soup/cmake/advanced/targets-properties/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/topic`
+
+Much More ... (Various Kinds Of Dependencies)
+.............................................
+
+Demo project:
+https://github.com/jfasch/2024-06-11/tree/main/livecoding/kinds-of-dependencies
+
+.. image:: kinds-of-dependencies.png
+
+.. graphviz:: kind-of-dependencies.dot
+
+* Various kinds of property propagation (``PUBLIC``, ``PRIVATE``,
+  ``INTERFACE``)
+* ``add_library()`` variations
+
+  * ``SHARED``: `b/CMakeLists.txt
+    <https://github.com/jfasch/2024-06-11/blob/main/livecoding/kinds-of-dependencies/b/CMakeLists.txt>`__
+  * ``INTERFACE``: `c/CMakeLists.txt
+    <https://github.com/jfasch/2024-06-11/blob/main/livecoding/kinds-of-dependencies/c/CMakeLists.txt>`__
+
+* Aggregating static libraries into shared libraries
+
+  * Static library as position independent code: `d/CMakeLists.txt
+    <https://github.com/jfasch/2024-06-11/blob/main/livecoding/kinds-of-dependencies/d/CMakeLists.txt>`__
+  * Shared library *depends* on static library: `b/CMakeLists.txt
+    <https://github.com/jfasch/2024-06-11/blob/main/livecoding/kinds-of-dependencies/b/CMakeLists.txt>`__
+
+
 The CMake Language
 ..................
 
@@ -102,5 +128,18 @@ From :doc:`/trainings/material/soup/cmake/advanced/language/group`
 * :doc:`/trainings/material/soup/cmake/advanced/language/if-and-conditions/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/datatypes/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/file-etc/topic`
+* Exercise
+
+  Write a CMake script (see
+  :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`)
+  that receives as input parameters
+
+  * A directory name ``INPUT_DIR``
+  * A filename ``OUTPUT_FILE``
+
+  It reads all directory entries from ``INPUT_DIR``, transforms those
+  names into their filename-only part (e.g. ``/a/b/c.txt`` ->
+  ``c.txt``), and writes those names to ``OUTPUT_FILE``
+
 * :doc:`/trainings/material/soup/cmake/advanced/language/functions-and-macros/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`
