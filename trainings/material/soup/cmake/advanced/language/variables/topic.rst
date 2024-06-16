@@ -253,6 +253,10 @@ Cache Variables
 Scopes: Function Scope
 ----------------------
 
+.. sidebar:: See also
+
+   * :doc:`../functions-and-macros/topic`
+
 * Local variables
 
   .. literalinclude:: code/scopes-function-local-scope.cmake

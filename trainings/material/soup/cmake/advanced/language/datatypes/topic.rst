@@ -38,6 +38,39 @@ There Are No Datatypes, Basta
 
      string(APPEND variable "value")
 
+Attention: Inconsistencies All Over
+-----------------------------------
+
+.. sidebar:: Documentation
+
+   * `string
+     <https://cmake.org/cmake/help/latest/command/string.html>`__
+   * `list <https://cmake.org/cmake/help/latest/command/list.html>`__
+
+What follows is a relatively random list of "methods" on strings and
+lists. Please read the documentation to get an impression of what is
+available.
+
+**CMake is not very consistent! Be sure to test your code, if
+possible, using standalone scripts before you integrate it into a
+project build!**
+
+The ``string(FIND...)`` method, for example, requires us to pass the
+string content - *not the variable name* - for it to work.
+
+.. literalinclude:: code/inconsistency-string.cmake
+   :caption: :download:`inconsistency-string.cmake (download)
+	     <code/inconsistency-string.cmake>`
+   :language: cmake
+
+On the contrary, the ``list(LENGTH...)`` method wants me to pass the
+variable name that contains the list.
+
+.. literalinclude:: code/inconsistency-list.cmake
+   :caption: :download:`inconsistency-list.cmake (download)
+	     <code/inconsistency-list.cmake>`
+   :language: cmake
+
 Strings
 -------
 
@@ -48,7 +81,7 @@ Strings
 
 * Many methods for string modification |longrightarrow| variable
   passed *unquoted* (c/f "per-reference")
-* Many mehtods for string examination |longrightarrow| variable passed
+* Many methods for string examination |longrightarrow| variable passed
   *quoted* (c/f "per-copy")
 
 Strings: In-Place Modification Of A Variable (Use Unquoted Names)

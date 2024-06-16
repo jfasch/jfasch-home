@@ -164,7 +164,8 @@ Commands: Unquoted Arguments
 
 * List confusion
 
-  Lists are strings that are separated by " " (or ``;``)
+  Lists are strings that are separated by ``;`` |longrightarrow| what
+  if a string contains ``;``?
 
   .. literalinclude:: code/commands/unquoted-arguments-list.cmake
      :caption: :download:`unquoted-arguments-list.cmake (download)

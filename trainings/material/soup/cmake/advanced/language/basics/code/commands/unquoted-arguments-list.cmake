@@ -1,3 +1,4 @@
-message(undesired hello world)
-message(undesired;hello;world)
-message("desired hello world")
+set(some_variable "undesired;hello;world")
+message(some_variable)
+message(${some_variable})
+message("${some_variable}")     # <--- MUCH preferred
