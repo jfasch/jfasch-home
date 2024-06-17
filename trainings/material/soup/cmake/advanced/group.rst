@@ -31,6 +31,7 @@ CMake: Advanced Topics
    conditional-code-problem/topic
    conditional-code-approach-1/topic
    conditional-code-approach-2/topic
+   dependencies/topic
    targets-properties/topic
    external-dependencies/topic
    testing/topic
