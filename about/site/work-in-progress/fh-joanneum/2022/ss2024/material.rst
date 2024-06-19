@@ -44,9 +44,4 @@ Block 3: C++
 .. toctree::
 
    2024-06-17/index
-
-Plan
-....
-
-* User's view: ``std::string``, and ``std::vector``
-* Implementor's view
+   2024-06-19/index
