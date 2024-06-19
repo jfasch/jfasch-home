@@ -26,7 +26,7 @@ Base
 
 * Basic tools
 * Maybe exclude w1 and sysfs, and bring them in later. together with
-  libgpoid2, as an external dependency? MAybe examples 
+  libgpoid2, as an external dependency? Maybe examples
 
   * one simple such as zlib
   * one like protobuf
