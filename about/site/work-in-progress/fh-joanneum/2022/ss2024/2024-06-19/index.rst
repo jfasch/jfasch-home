@@ -13,7 +13,13 @@ Sorting And Searching
 From :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/group`
 
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find`
+  (`find-demo.cpp
+  <https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/find-demo.cpp>`__)
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find_if`
+  (`find-if-demo.cpp
+  <https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/find-if-demo.cpp>`__,
+  `find-if-demo-lambda.cpp
+  <https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/find-if-demo-lambda.cpp>`__)
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/lower_bound`
+  (`sort-demo.cpp
+  <https://github.com/jfasch/FH-STECE2022/blob/main/livecoding/sort-demo.cpp>`__)
