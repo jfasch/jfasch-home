@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-2024-06-17(6): C++: Container Templates
-=======================================
+2024-06-17(6): Container Templates
+==================================
 
 .. contents::
    :local:

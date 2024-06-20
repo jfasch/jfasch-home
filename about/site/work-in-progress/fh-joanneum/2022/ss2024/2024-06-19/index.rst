@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-2024-06-19(6): C++: Sorting And Searching
-=========================================
+2024-06-19(6): Sorting And Searching
+====================================
 
 .. contents::
    :local:
