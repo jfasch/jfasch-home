@@ -25,7 +25,7 @@ ADD_EXECUTABLE(
   cpp-manual-copy.cpp
 )
 TARGET_LINK_LIBRARIES(c++03-data-encapsulation-suite gtest_main)
-
+add_test(NAME c++03-data-encapsulation-suite COMMAND c++03-data-encapsulation-suite)
 
 ADD_EXECUTABLE(c++03-class c++03-class.cpp)
 #TARGET_LINK_LIBRARIES(c++03-class m)

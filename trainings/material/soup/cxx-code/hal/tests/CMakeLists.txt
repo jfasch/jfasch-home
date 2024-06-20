@@ -17,7 +17,4 @@ TARGET_LINK_LIBRARIES(
   gtest_main 
   )
 
-
-
-
-
+add_test(NAME cxx-exercises-hal--suite COMMAND cxx-exercises-hal--suite)

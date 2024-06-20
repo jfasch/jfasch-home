@@ -10,3 +10,5 @@ TARGET_LINK_LIBRARIES(
   gtest_main 
   cxx-exercises-socialdb
 )
+
+add_test(NAME cxx-exercises-socialdb--suite COMMAND cxx-exercises-socialdb--suite)

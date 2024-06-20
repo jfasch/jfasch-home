@@ -11,3 +11,5 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-switches-core
   gtest_main 
 )
+
+add_test(NAME cxx-exercises-switches-core--suite COMMAND cxx-exercises-switches-core--suite)

@@ -23,3 +23,4 @@ TARGET_LINK_LIBRARIES(
   gtest_main
   )
 
+add_test(NAME c++11-filesystem-suite COMMAND c++11-filesystem-suite)

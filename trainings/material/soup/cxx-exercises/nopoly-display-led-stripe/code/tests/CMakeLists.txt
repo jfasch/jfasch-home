@@ -17,3 +17,5 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-sensors-core-nopoly
   gtest_main 
 )
+
+add_test(NAME cxx-exercises-display-led-stripe-nopoly--suite COMMAND cxx-exercises-display-led-stripe-nopoly--suite)

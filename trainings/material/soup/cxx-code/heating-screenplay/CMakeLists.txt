@@ -41,3 +41,5 @@ TARGET_LINK_LIBRARIES(heating-tests
   gtest_main
   cxx-exercises-sensors-core
   )
+
+add_test(NAME heating-tests COMMAND heating-tests)

@@ -21,7 +21,7 @@ private:
 TEST(periodic_timer_suite, basic_expiry)
 {
     MyTimerUser u;
-    jf::hal::PeriodicTimer timer(1, &u);
+    jf::hal::PeriodicTimer timer(1/*ms*/, &u);
     timer.start();
 
     ASSERT_TRUE(timer.is_active());
@@ -29,7 +29,7 @@ TEST(periodic_timer_suite, basic_expiry)
     timespec delay = {0/*s*/, 1000*1000/*ns, =1ms*/};
 
     unsigned nwaits = 1000;
-    while (u.n_expiries() < 7) {
+    while (u.n_expiries() < 700) {
         int error = nanosleep(&delay, nullptr);
         assert(!error);
         (void)error;

@@ -5,6 +5,7 @@ ADD_EXECUTABLE(gm-stl-container
   map.cc
 )
 TARGET_LINK_LIBRARIES(gm-stl-container gtest_main)
+add_test(NAME gm-stl-container COMMAND gm-stl-container)
 
 ADD_EXECUTABLE(gm-lambda-threads threads.cc)
 TARGET_LINK_LIBRARIES(gm-lambda-threads Threads::Threads)

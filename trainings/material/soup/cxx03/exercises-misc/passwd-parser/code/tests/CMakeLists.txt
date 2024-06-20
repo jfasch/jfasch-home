@@ -13,3 +13,4 @@ TARGET_LINK_LIBRARIES(
   gtest_main 
   )
 
+add_test(NAME cxx03--exercises-misc--passwd-parser--code--tests COMMAND cxx03--exercises-misc--passwd-parser--code--tests)

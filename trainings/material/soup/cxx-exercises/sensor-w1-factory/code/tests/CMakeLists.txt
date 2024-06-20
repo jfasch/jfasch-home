@@ -14,3 +14,5 @@ TARGET_LINK_LIBRARIES(
 
   gtest_main 
   )
+
+add_test(NAME cxx-exercises-oo-sensor-w1-factory--suite COMMAND cxx-exercises-oo-sensor-w1-factory--suite)

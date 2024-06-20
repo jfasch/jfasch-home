@@ -34,8 +34,8 @@ TEST(CC_Point_Tests, Move)
     {
         Point<double> p(1.1,2.2);
 
-        ASSERT_ALMOST_EQ(p.x(), 4.4);
-        ASSERT_ALMOST_EQ(p.y(), 5.5);
+        ASSERT_DOUBLE_EQ(p.x(), 1.1);
+        ASSERT_DOUBLE_EQ(p.y(), 2.2);
     }
 }
 

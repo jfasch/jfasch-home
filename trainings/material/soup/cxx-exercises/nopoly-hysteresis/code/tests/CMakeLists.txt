@@ -16,3 +16,5 @@ TARGET_LINK_LIBRARIES(
 
   gtest_main 
 )
+
+add_test(NAME cxx-exercises--hysteresis-nopoly--suite COMMAND cxx-exercises--hysteresis-nopoly--suite)

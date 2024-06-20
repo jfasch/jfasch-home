@@ -15,6 +15,7 @@ TARGET_LINK_LIBRARIES(
   gtest_main 
 )
 
+add_test(NAME cxx-exercises-design-patterns-observer--suite COMMAND cxx-exercises-design-patterns-observer--suite)
 
 
 

@@ -10,6 +10,7 @@ ADD_EXECUTABLE(
   c++11-bind-lambda.cpp
 )
 TARGET_LINK_LIBRARIES(c++11-bind-suite gtest_main)
+add_test(NAME c++11-bind-suite COMMAND c++11-bind-suite)
 
 ADD_EXECUTABLE(c++11-bind-distances-origin-manual c++11-bind-distances-origin-manual.cpp)
 ADD_EXECUTABLE(c++11-bind-distances-origin-transform c++11-bind-distances-origin-transform.cpp)

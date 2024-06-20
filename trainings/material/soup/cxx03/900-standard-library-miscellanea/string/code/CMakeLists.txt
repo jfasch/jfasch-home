@@ -17,3 +17,5 @@ TARGET_LINK_LIBRARIES(
 
   gtest_main 
   )
+
+add_test(NAME c++03-string-suite COMMAND c++03-string-suite)

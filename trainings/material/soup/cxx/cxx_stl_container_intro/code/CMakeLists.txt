@@ -9,3 +9,5 @@ ADD_EXECUTABLE(c++-stl-container-intro
   30-map.cc
 )
 TARGET_LINK_LIBRARIES(c++-stl-container-intro gtest_main)
+
+add_test(NAME c++-stl-container-intro COMMAND c++-stl-container-intro)

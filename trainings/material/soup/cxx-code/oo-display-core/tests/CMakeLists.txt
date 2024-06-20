@@ -11,3 +11,5 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-displays-core
   gtest_main 
 )
+
+add_test(NAME cxx-exercises-displays-core--suite COMMAND cxx-exercises-displays-core--suite)

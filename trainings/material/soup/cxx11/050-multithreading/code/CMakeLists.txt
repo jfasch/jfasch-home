@@ -6,6 +6,7 @@ ADD_EXECUTABLE(
   promise-future.cpp
 )
 TARGET_LINK_LIBRARIES(c++11-thread-suite gtest_main)
+add_test(NAME c++11-thread-suite COMMAND c++11-thread-suite)
 
 # ------------------------------------------------------------------
 # promise/future

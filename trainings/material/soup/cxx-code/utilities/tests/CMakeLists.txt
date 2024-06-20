@@ -11,3 +11,5 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-utilities
   Threads::Threads
 )
+
+add_test(NAME cxx-exercises-utilities--suite COMMAND cxx-exercises-utilities--suite)

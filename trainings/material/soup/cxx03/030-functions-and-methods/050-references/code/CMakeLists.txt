@@ -12,6 +12,7 @@ ADD_EXECUTABLE(
   pass-by-const-reference-cheap.cpp
 )
 TARGET_LINK_LIBRARIES(c++03-references-suite gtest_main)
+add_test(NAME c++03-references-suite COMMAND c++03-references-suite)
 
 ADD_EXECUTABLE(c++03-references-uninitialized-pointer c++03-references-uninitialized-pointer.cpp)
 SET_SOURCE_FILES_PROPERTIES(c++03-references-uninitialized-pointer.cpp PROPERTIES COMPILE_FLAGS -Wno-uninitialized)

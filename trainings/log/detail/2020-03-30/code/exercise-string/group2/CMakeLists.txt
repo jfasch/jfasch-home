@@ -5,5 +5,4 @@ TARGET_INCLUDE_DIRECTORIES(gm-mystring-${GROUPNAME} INTERFACE "${CMAKE_CURRENT_S
 
 ADD_EXECUTABLE(gm-mystring-${GROUPNAME}-tests ../test.cc)
 TARGET_LINK_LIBRARIES(gm-mystring-${GROUPNAME}-tests gm-mystring-${GROUPNAME} gtest_main)
-
-ADD_TEST(gm-mystring-${GROUPNAME}-tests gm-mystring-${GROUPNAME}-tests)
+add_test(NAME gm-mystring-${GROUPNAME}-tests COMMAND gm-mystring-${GROUPNAME}-tests)

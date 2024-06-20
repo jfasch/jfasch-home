@@ -39,3 +39,4 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-shapes
   gtest_main 
 )
+add_test(NAME cxx-exercises-shapes--suite COMMAND cxx-exercises-shapes--suite)

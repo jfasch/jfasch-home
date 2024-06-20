@@ -7,3 +7,4 @@ TARGET_LINK_LIBRARIES(
   gtest_main 
 )
 
+add_test(NAME fh2021-q-solid--sensor-with-id-suite COMMAND fh2021-q-solid--sensor-with-id-suite)

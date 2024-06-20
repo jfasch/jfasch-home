@@ -36,3 +36,5 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-stl-code
   gtest_main 
 )
+
+add_test(NAME cxx-exercises-stl--suite COMMAND cxx-exercises-stl--suite)

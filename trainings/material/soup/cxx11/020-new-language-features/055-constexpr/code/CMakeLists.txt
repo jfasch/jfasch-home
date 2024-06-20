@@ -10,3 +10,4 @@ ADD_EXECUTABLE(
 )
 
 TARGET_LINK_LIBRARIES(c++11-constexpr-suite gtest_main)
+add_test(NAME c++11-constexpr-suite COMMAND c++11-constexpr-suite)

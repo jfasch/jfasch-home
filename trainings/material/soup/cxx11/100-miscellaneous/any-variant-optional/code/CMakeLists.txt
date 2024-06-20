@@ -20,5 +20,6 @@ ADD_EXECUTABLE(
   any-string-and-charp.cpp
 )
 TARGET_LINK_LIBRARIES(c++11-any-variant-optional-suite gtest_main)
+add_test(NAME c++11-any-variant-optional-suite COMMAND c++11-any-variant-optional-suite)
 
 ADD_EXECUTABLE(any-more any-more.cpp)

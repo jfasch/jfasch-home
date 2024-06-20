@@ -12,6 +12,7 @@ TARGET_LINK_LIBRARIES(
   gtest_main 
 )
 
+add_test(NAME cxx-exercises-design-patterns-composite--suite COMMAND cxx-exercises-design-patterns-composite--suite)
 
 
 

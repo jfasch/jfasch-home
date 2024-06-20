@@ -51,3 +51,4 @@ TARGET_LINK_LIBRARIES(
   gtest_main
 )
 
+add_test(NAME c++03-exercises-fh-suite COMMAND c++03-exercises-fh-suite)

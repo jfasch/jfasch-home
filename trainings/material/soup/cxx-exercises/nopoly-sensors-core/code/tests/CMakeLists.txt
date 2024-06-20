@@ -12,3 +12,5 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-sensors-core-nopoly
   gtest_main 
 )
+
+add_test(NAME cxx-exercises-sensors-core-nopoly--suite COMMAND cxx-exercises-sensors-core-nopoly--suite)

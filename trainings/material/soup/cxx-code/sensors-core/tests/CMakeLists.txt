@@ -16,3 +16,5 @@ TARGET_LINK_LIBRARIES(
   cxx-exercises-sensors-core
   gtest_main 
 )
+
+add_test(NAME cxx-exercises-sensors-core--suite COMMAND cxx-exercises-sensors-core--suite)
