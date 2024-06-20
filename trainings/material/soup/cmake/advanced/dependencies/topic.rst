@@ -4,6 +4,14 @@ More Topics
 .. content:
    :local:
 
+Dependencies, Properties, Propagation
+-------------------------------------
+
+* Beipackzettel
+* Livehacking script
+
+.. image:: dependencies-properties.png
+
 Faschingbauer Toybox
 --------------------
 
