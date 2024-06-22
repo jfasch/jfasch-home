@@ -1,0 +1,82 @@
+function(my_add_library)
+  cmake_parse_arguments(MY_ADD_LIBRARY "SHARED;STATIC" "NAME" "PRIVATE_HEADERS;PUBLIC_HEADERS;SOURCES" ${ARGN})
+
+  message("MY_ADD_LIBRARY_SHARED: >${MY_ADD_LIBRARY_SHARED}<")
+  message("MY_ADD_LIBRARY_STATIC: >${MY_ADD_LIBRARY_STATIC}<")
+  message("MY_ADD_LIBRARY_NAME: >${MY_ADD_LIBRARY_NAME}<")
+  message("MY_ADD_LIBRARY_PRIVATE_HEADERS: >${MY_ADD_LIBRARY_PRIVATE_HEADERS}<")
+  message("MY_ADD_LIBRARY_PUBLIC_HEADERS: >${MY_ADD_LIBRARY_PUBLIC_HEADERS}<")
+  message("MY_ADD_LIBRARY_SOURCES: >${MY_ADD_LIBRARY_SOURCES}<")
+endfunction()
+
+my_add_library(
+  NAME base 
+  SHARED 
+  PUBLIC_HEADERS
+
+  include/public/sensor.h
+  include/public/sensor-const.h
+  include/public/sensor-random.h
+  include/public/sensor-avg.h
+  include/public/sensor-w1.h
+  include/public/switch.h
+  include/public/sysfs-switch.h
+  include/public/hysteresis.h
+
+  PRIVATE_HEADERS
+
+  include/private/file-util.h
+
+  SOURCES
+
+  src/sensor-const.cpp
+  src/sensor-random.cpp
+  src/sensor-avg.cpp
+  src/sensor-w1.cpp
+  src/sysfs-switch.cpp
+  src/hysteresis.cpp
+  src/file-util.cpp
+ )
+
+set(_public_inc_files 
+
+  include/public/sensor.h
+  include/public/sensor-const.h
+  include/public/sensor-random.h
+  include/public/sensor-avg.h
+  include/public/sensor-w1.h
+  include/public/switch.h
+  include/public/sysfs-switch.h
+  include/public/hysteresis.h
+)
+
+set(_private_inc_files
+
+  include/private/file-util.h
+)
+
+set(_src_files
+
+  src/sensor-const.cpp
+  src/sensor-random.cpp
+  src/sensor-avg.cpp
+  src/sensor-w1.cpp
+  src/sysfs-switch.cpp
+  src/hysteresis.cpp
+
+  src/file-util.cpp
+)
+
+add_library(
+  base
+
+  ${_public_inc_files}
+  ${_private_inc_files}
+  ${_src_files}
+)
+
+target_include_directories(base PUBLIC ./include/public)
+target_include_directories(base PRIVATE ./include/private)
+
+install(TARGETS base DESTINATION lib)
+install(FILES ${_public_inc_files} DESTINATION include)
