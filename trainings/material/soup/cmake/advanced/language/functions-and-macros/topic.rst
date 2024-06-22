@@ -59,6 +59,23 @@ Function Scope
 * Function cannot modify caller's variables |longrightarrow| *function
   scope is a copy of caller's scope*
 
+Function Scope: And Nested Function?
+------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`../variables/topic`
+
+* Calling functions inherit their scope into called functions
+
+  .. literalinclude:: code/function-nested-scope.cmake
+     :caption: :download:`function-nested-scope.cmake (download) <code/function-nested-scope.cmake>`
+     :language: cmake
+  
+  .. command-output:: cmake -P function-nested-scope.cmake
+     :cwd: code
+     :shell:
+
 Passing Parameters In
 ---------------------
 
@@ -110,6 +127,54 @@ Passing Parameters In
      :language: cmake
   
   .. command-output:: cmake -P function-two-parameters.cmake
+     :cwd: code
+     :shell:
+
+Parameters: ``ARGC``, ``ARGV``, ``ARGVn``, ``ARGN``
+---------------------------------------------------
+
+* ``ARGC``: number of arguments passed
+
+  .. literalinclude:: code/function-argc.cmake
+     :caption: :download:`function-argc.cmake (download)
+               <code/function-argc.cmake>`
+     :language: cmake
+  
+  .. command-output:: cmake -P function-argc.cmake
+     :cwd: code
+     :shell:
+
+* ``ARGV``: list of all arguments
+
+  .. literalinclude:: code/function-argv.cmake
+     :caption: :download:`function-argv.cmake (download)
+               <code/function-argv.cmake>`
+     :language: cmake
+  
+  .. command-output:: cmake -P function-argv.cmake
+     :cwd: code
+     :shell:
+
+* ``ARGVn``: referencing arguments by position (invalid position
+  |longrightarrow| empty/undefined)
+
+  .. literalinclude:: code/function-argvn.cmake
+     :caption: :download:`function-argvn.cmake (download)
+               <code/function-argvn.cmake>`
+     :language: cmake
+  
+  .. command-output:: cmake -P function-argvn.cmake
+     :cwd: code
+     :shell:
+
+* ``ARGN``: arguments past the last formal argument
+
+  .. literalinclude:: code/function-argn.cmake
+     :caption: :download:`function-argn.cmake (download)
+	       <code/function-argn.cmake>`
+     :language: cmake
+  
+  .. command-output:: cmake -P function-argn.cmake
      :cwd: code
      :shell:
 
