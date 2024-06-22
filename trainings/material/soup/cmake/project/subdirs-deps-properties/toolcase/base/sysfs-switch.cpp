@@ -13,6 +13,11 @@ SysFSGPIOSwitch::SysFSGPIOSwitch(int gpioPin) : pinNumber(gpioPin)
     configureOutput();
 }
 
+SysFSGPIOSwitch::~SysFSGPIOSwitch()
+{
+    unexportGPIO();
+}
+
 void SysFSGPIOSwitch::set_state(bool state)
 {
     std::string valueFilePath = "/sys/class/gpio/gpio" + std::to_string(pinNumber) + "/value";
@@ -48,12 +53,6 @@ bool SysFSGPIOSwitch::get_state()
         perror("Failed to open GPIO value file");
         return false; // Return a default value if the file cannot be opened
     }
-}
-
-
-SysFSGPIOSwitch::~SysFSGPIOSwitch()
-{
-    unexportGPIO();
 }
 
 void SysFSGPIOSwitch::exportGPIO()

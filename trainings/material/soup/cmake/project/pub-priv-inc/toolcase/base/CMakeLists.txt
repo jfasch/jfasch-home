@@ -17,6 +17,9 @@ add_library(
 
   hysteresis.h
   hysteresis.cpp
+
+  file-util.h
+  file-util.cpp
 )
 
 target_include_directories(base INTERFACE .)
