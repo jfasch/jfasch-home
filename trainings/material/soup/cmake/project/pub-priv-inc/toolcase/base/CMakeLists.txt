@@ -1,42 +1,42 @@
+set(_public_inc_files 
+
+  include/public/sensor.h
+  include/public/sensor-const.h
+  include/public/sensor-random.h
+  include/public/sensor-avg.h
+  include/public/sensor-w1.h
+  include/public/switch.h
+  include/public/sysfs-switch.h
+  include/public/hysteresis.h
+)
+
+set(_private_inc_files
+
+  include/private/file-util.h
+)
+
+set(_src_files
+
+  src/sensor-const.cpp
+  src/sensor-random.cpp
+  src/sensor-avg.cpp
+  src/sensor-w1.cpp
+  src/sysfs-switch.cpp
+  src/hysteresis.cpp
+
+  src/file-util.cpp
+)
+
 add_library(
   base
 
-  sensor.h
-  sensor-const.h
-  sensor-const.cpp
-  sensor-random.h
-  sensor-random.cpp
-  sensor-avg.h
-  sensor-avg.cpp
-  sensor-w1.h
-  sensor-w1.cpp
-
-  switch.h
-  sysfs-switch.h
-  sysfs-switch.cpp
-
-  hysteresis.h
-  hysteresis.cpp
-
-  file-util.h
-  file-util.cpp
+  ${_public_inc_files}
+  ${_private_inc_files}
+  ${_src_files}
 )
 
-target_include_directories(base INTERFACE .)
+target_include_directories(base PUBLIC ./include/public)
+target_include_directories(base PRIVATE ./include/private)
 
 install(TARGETS base DESTINATION lib)
-install(
-  FILES
-
-  sensor.h
-  sensor-const.h
-  sensor-random.h
-  sensor-avg.h
-  sensor-w1.h
-
-  switch.h
-  sysfs-switch.h
-
-  hysteresis.h
-
-  DESTINATION include)
+install(FILES ${_public_inc_files} DESTINATION include)

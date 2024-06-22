@@ -33,6 +33,8 @@ CMake: Advanced Topics
    conditional-code-approach-2/topic
    dependencies/topic
    targets-properties/topic
+   targets-properties/screenplay
+   library-function/screenplay
    external-dependencies/topic
    testing/topic
    language/group

@@ -9,6 +9,10 @@ Targets, Properties, And More
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   * :doc:`screenplay`
+
 Target Types
 ------------
 
@@ -119,3 +123,7 @@ Properties: ``PRIVATE``, ``PUBLIC``, ``INTERFACE``?
   * Documentation has no clear explanation. Exceptions, and
     paragraph-long explanations.
 
+Demo Time
+---------
+
+Move on to :doc:`screenplay`
