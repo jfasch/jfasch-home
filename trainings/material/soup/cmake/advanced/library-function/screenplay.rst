@@ -122,3 +122,5 @@ Make ``my_add_library()`` A Matter For The Architect
 * |longrightarrow| *directory scope* (see
   :doc:`../language/variables/topic`)
 * Restructure ``data-logger`` and ``boiling-pot``
+* While we are at it, move compiler settings into
+  ``/cmake/compiler.cmake``

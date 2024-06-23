@@ -36,8 +36,9 @@ CMake: Advanced Topics
    targets-properties/screenplay
    library-function/screenplay
    external-dependencies/topic
-   testing/topic
+   external-dependencies/screenplay-sqlite3
    language/group
+   testing/topic   
 
 .. todo jjj
 .. * modules
@@ -45,7 +46,8 @@ CMake: Advanced Topics
 ..   * googletest how?
 ..   * find modules: pkgconfig
 ..   * handwritten -> mosqitto
-
+.. * reference https://cmake.org/cmake/help/latest/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide
+..   * fetchcontent()
 .. * testing
 
 Dependencies
