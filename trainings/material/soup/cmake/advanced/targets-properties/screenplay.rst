@@ -11,10 +11,21 @@ Screenplay: Public And Private Include Directories
 
 .. sidebar:: Trainer's note
 
-   * Source code in ``.../cmake/project/pub-priv-inc/``
+   Source code starts here
+
+   .. command-output:: ls -l ../../project/pub-priv-inc/CMakeLists.txt
+      :cwd: .
+      :shell:
 
 Motivation
 ----------
+
+.. sidebar:: New files
+
+   * :download:`file-util.h
+     </trainings/material/soup/cmake/project/pub-priv-inc/toolcase/base/include/private/file-util.h>`
+   * :download:`file-util.cpp
+     </trainings/material/soup/cmake/project/pub-priv-inc/toolcase/base/src/file-util.cpp>`
 
 * ``file-util.h`` and ``file-util.cpp``
 * Used only in ``base/``

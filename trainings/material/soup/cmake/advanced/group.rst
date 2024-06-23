@@ -40,12 +40,13 @@ CMake: Advanced Topics
    language/group
 
 .. todo jjj
+.. * modules
+..   * include()
+..   * googletest how?
+..   * find modules: pkgconfig
+..   * handwritten -> mosqitto
 
-.. todo jjj
-
-.. language/datatypes
-.. language/functions-and-macros
-.. language/while,for
+.. * testing
 
 Dependencies
 ------------

@@ -11,9 +11,74 @@ Screenplay: Function Wrapping ``add_library()``
 
 .. sidebar:: Trainer's note
 
-   * Source code in ``.../cmake/project/function-add-library/``
+   Source code starts here
 
-* Start in base/CMakeLists.txt
+   .. command-output:: ls -l ../../project/function-add-library/CMakeLists.txt
+      :cwd: .
+      :shell:
+
+Streamline Build-Spaghetti: How Want It?
+----------------------------------------
+
+* Simple call to ``my_add_library()``, beautifully reflecting the
+  situation
+* Implicitly dictating the directory structure
+
+  .. code-block:: text
+
+     .
+     ├── include
+     │   ├── private
+     │   └── public
+     └── src
+
+.. code-block:: cmake
+
+   my_add_library(
+     NAME base 
+   
+     DEBUG
+   
+     PUBLIC_HEADERS
+   
+       sensor.h
+       sensor-const.h
+       sensor-random.h
+       sensor-avg.h
+       sensor-w1.h
+       switch.h
+       sysfs-switch.h
+       hysteresis.h
+   
+     PRIVATE_HEADERS
+   
+       file-util.h
+   
+     SOURCES
+   
+       sensor-const.cpp
+       sensor-random.cpp
+       sensor-avg.cpp
+       sensor-w1.cpp
+       sysfs-switch.cpp
+       hysteresis.cpp
+       file-util.cpp
+    )
+   
+Function ``my_add_library()``: ``cmake_parse_arguments()``
+----------------------------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`../language/functions-and-macros/topic`
+
+.. sidebar:: Documentation
+
+   * `cmake_parse_arguments()
+     <https://cmake.org/cmake/help/latest/command/cmake_parse_arguments.html>`__
+
+* In same ``CMakeLists.txt``, define function
+* |longrightarrow| ``cmake_parse_arguments()``
 
   .. code-block:: cmake
 
@@ -28,11 +93,32 @@ Screenplay: Function Wrapping ``add_library()``
        message("MY_ADD_LIBRARY_SOURCES: >${MY_ADD_LIBRARY_SOURCES}<")
      endfunction()
   
-  ... and a call reflaecting the situation
-
 * Hmm ... how about error checking? ``SHARED`` *and* ``STATIC``
   passed?
-* |longrightarrow| externalize into ``my_add_library.cmake``, and
-  develop there (in script mode)
-* |longrightarrow| no ``add_library()`` etc. possible in script mode
-* |longrightarrow| ``include()``
+* Externalize into ``my_add_library.cmake``, and develop there (in
+  script mode, mostly)
+* |longrightarrow| we will use it in other modules too
+
+Function ``my_add_library()``: Final Version
+--------------------------------------------
+
+.. literalinclude:: ../../project/function-add-library/cmake/my_add_library.cmake
+   :caption: :download:`my_add_library.cmake (download)
+             <../../project/function-add-library/cmake/my_add_library.cmake>`
+   :language: cmake
+
+Make ``my_add_library()`` A Matter For The Architect
+----------------------------------------------------
+
+* Put in toplevel ``cmake/`` directory (for all files of similar
+  purpose)
+* |longrightarrow| add to ``${CMAKE_MODULE_PATH}``
+* ``include()`` in toplevel ``CMakeLists.txt``
+
+  * Remove existing ``include()`` from ``base/CMakeLists.txt``
+  * **RANT**: when including via ``${CMAKE_MODULE_PATH}``, omit the
+    ``.cmake`` extension or the file will not be found
+
+* |longrightarrow| *directory scope* (see
+  :doc:`../language/variables/topic`)
+* Restructure ``data-logger`` and ``boiling-pot``
