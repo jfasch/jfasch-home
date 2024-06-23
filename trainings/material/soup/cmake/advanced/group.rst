@@ -37,6 +37,7 @@ CMake: Advanced Topics
    library-function/screenplay
    external-dependencies/topic
    external-dependencies/screenplay-sqlite3
+   external-dependencies/screenplay-sqlite3-optional
    language/group
    testing/topic   
 

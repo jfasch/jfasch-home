@@ -1,5 +1,6 @@
 .. ot-topic:: cmake.advanced.targets_properties
-   :dependencies: cmake.intro.libraries, cmake.intro.structure, cmake.advanced.optional_code_approach_1, cmake.advanced.optional_code_approach_2
+   :dependencies: cmake.intro.libraries, 
+		  cmake.intro.structure
 .. include:: <mmlalias.txt>
 
 

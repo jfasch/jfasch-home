@@ -1,6 +1,7 @@
 .. ot-topic:: cmake.advanced.external_dependencies_sqlite3
    :dependencies: cmake.advanced.targets_properties,
-		  cmake.advanced.targets_properties_pub_priv_inc_screenplay
+		  cmake.advanced.targets_properties_pub_priv_inc_screenplay,
+		  cmake.advanced.library_function_screenplay
 .. include:: <mmlalias.txt>
 
 
@@ -13,13 +14,24 @@ Screenplay: Adding ``SQLite3`` External Dependency
 Add SQLite3 Capability To Datalogger
 ------------------------------------
 
+.. sidebar:: Documentation
+
+   * `An Introduction To The SQLite C/C++ Interface
+     <https://www.sqlite.org/cintro.html>`__
+
 .. sidebar:: Trainer's note
 
-   Make sure SQLite3 is not available ...
+   * Source code starts here
 
-   .. code-block:: console
+     .. command-output:: ls -l ../../project/external-dependency-sqlite3/CMakeLists.txt
+        :cwd: .
+        :shell:
 
-      $ sudo dnf remove sqlite-devel
+   * Make sure SQLite3 is not available ...
+
+     .. code-block:: console
+  
+        $ sudo dnf remove sqlite-devel
 
 * Add to ``toolcase/data-logger`` ...
 
@@ -63,6 +75,10 @@ Add SQLite3 Capability To Datalogger
    * `FindSQLite3
      <https://cmake.org/cmake/help/latest/module/FindSQLite3.html>`__
 
+.. sidebar:: See also
+
+   * :doc:`screenplay-sqlite3-optional`
+
 * Pulling in parameters for ``SQLite3``
 
   .. code-block:: cmake
@@ -83,7 +99,7 @@ Add SQLite3 Capability To Datalogger
 * |longrightarrow| error remains: ``sqlite3.h: No such file or
   directory``
 * Could continue if we could handle *optional* dependencies
-* |longrightarrow| later
+* |longrightarrow| Later (:doc:`screenplay-sqlite3-optional`)
 
 ``FIND_PACKAGE(... REQUIRED)``
 ------------------------------
@@ -143,7 +159,8 @@ Bringing A New Node Into The Graph: Theory
 * From `FindSQLite3
   <https://cmake.org/cmake/help/latest/module/FindSQLite3.html>`__
 
-  * ``SQLite::SQLite3``: *imported* target
+  * ``SQLite::SQLite3``: *imported* target |longrightarrow| **most
+    important**
   * ``SQLite3_INCLUDE_DIRS``: include path (via
      `target_include_directories()
      <https://cmake.org/cmake/help/latest/command/target_include_directories.html>`__)
