@@ -30,5 +30,5 @@ target_link_libraries(data-logger base)
 
 if (SQLite3_FOUND)
   target_link_libraries(data-logger SQLite::SQLite3)
-  target_compile_definitions(data-logger INTERFACE HAVE_SINK_SQLITE3=1)
+  target_compile_definitions(data-logger INTERFACE HAVE_SQLITE3=1)
 endif()

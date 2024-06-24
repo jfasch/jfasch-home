@@ -84,7 +84,7 @@ Optionally *Not* Depending On SQLite3
   .. code-block:: cmake
 
      if (SQLite3_FOUND)
-       target_compile_definitions(data-logger INTERFACE HAVE_SINK_SQLITE3=1)
+       target_compile_definitions(data-logger INTERFACE HAVE_SQLITE3=1)
      endif()
 
 Optionally *Not* Depending On Someone Who Depends On SQLite3
@@ -93,12 +93,12 @@ Optionally *Not* Depending On Someone Who Depends On SQLite3
 * ``firmware/data-logger.cpp`` (node ``app-data-logger``)
   uses/includes ``<sink-sqlite3.h>``
 * In *that* node - ``app-data-logger`` - it would be nice to have a
-  macro ``HAVE_SINK_SQLITE3`` available
+  macro ``HAVE_SQLITE3`` available
 * Litter ``#ifdef`` all across your code
 
   .. code-block:: cmake
 
-     #ifdef HAVE_SINK_SQLITE3
+     #ifdef HAVE_SQLITE3
      #  include <sink-sqlite3.h>
      #else
      #  include <sink-terminal.h>

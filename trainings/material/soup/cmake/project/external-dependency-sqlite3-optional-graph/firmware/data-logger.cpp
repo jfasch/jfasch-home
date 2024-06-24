@@ -1,6 +1,6 @@
 #include <sensor-const.h>
 #include <sensor-random.h>
-#ifdef HAVE_SINK_SQLITE3
+#ifdef HAVE_SQLITE3
 #  include <sink-sqlite3.h>
 #else
 #  include <sink-terminal.h>
@@ -13,7 +13,7 @@
 
 int main(int argc, char** argv)
 {
-#   ifdef HAVE_SINK_SQLITE3
+#   ifdef HAVE_SQLITE3
     if (argc != 2) {
         std::cerr << "Usage: " << argv[0] << " <SQLITE3-DB>" << std::endl;
         std::cerr << "  (Create: \"" << SinkSQLite3::create_table_statement << "\")" << std::endl;
@@ -34,7 +34,7 @@ int main(int argc, char** argv)
     config.add_sensor("tl", std::move(top_left));
     config.add_sensor("tr", std::move(top_right));
 
-#   ifdef HAVE_SINK_SQLITE3    
+#   ifdef HAVE_SQLITE3
     auto sink = std::make_unique<SinkSQLite3>(dbfile);
 #   else
     auto sink = std::make_unique<SinkTerminal>();
