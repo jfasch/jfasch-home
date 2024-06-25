@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-Screenplay: Making ``SQLite3`` Optional
-=======================================
+Screenplay: Making ``SQLite3`` Optional (``target_compile_definitions()``)
+==========================================================================
 
 .. contents::
    :local:
@@ -27,7 +27,7 @@ What If We Know How to Live Without SQLite3?
 
    * Source code starts here
 
-     .. command-output:: ls -l ../../project/external-dependency-sqlite3-optional/CMakeLists.txt
+     .. command-output:: ls -l ../../project/external-dependency-sqlite3-optional-graph/CMakeLists.txt
         :cwd: .
         :shell:
 

@@ -17,12 +17,32 @@ CMake: Advanced Topics
       :align: left
 
       * * **Duration**
- 	* * One day
+ 	* * Two days
       * * **Course Language**
 	* * Course material language is English
 	  * Trainer language is English or German
       * * **Booking**
 	* training@faschingbauer.co.at
+
+Topics
+------
+
+.. toctree::
+   :maxdepth: 1
+
+   targets-properties/topic
+   targets-properties/screenplay
+   language/group
+   library-function/screenplay
+   external-dependencies/topic
+   external-dependencies/screenplay-sqlite3
+   external-dependencies/screenplay-sqlite3-optional-graph
+   external-dependencies/screenplay-sqlite3-optional-configured-file
+   external-dependencies/screenplay-mosquitto
+   testing/topic   
+
+Alternative Topics
+------------------
 
 .. toctree::
    :maxdepth: 1
@@ -31,23 +51,12 @@ CMake: Advanced Topics
    conditional-code-problem/topic
    conditional-code-approach-1/topic
    conditional-code-approach-2/topic
-   dependencies/topic
-   targets-properties/topic
-   targets-properties/screenplay
-   library-function/screenplay
-   external-dependencies/topic
-   external-dependencies/screenplay-sqlite3
-   external-dependencies/screenplay-sqlite3-optional-graph
-   external-dependencies/screenplay-sqlite3-optional-configured-file
-   language/group
-   testing/topic   
 
 .. todo jjj
 .. * modules
-..   * include()
 ..   * googletest how?
 ..   * find modules: pkgconfig
-..   * handwritten -> mosqitto
+..   * handwritten -> mosquitto
 .. * reference https://cmake.org/cmake/help/latest/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide
 ..   * fetchcontent()
 .. * testing

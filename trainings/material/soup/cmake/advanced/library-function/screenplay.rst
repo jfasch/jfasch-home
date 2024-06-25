@@ -20,8 +20,11 @@ Screenplay: Function Wrapping ``add_library()``
 Streamline Build-Spaghetti: How Want It?
 ----------------------------------------
 
-* Simple call to ``my_add_library()``, beautifully reflecting the
-  situation
+* :doc:`../targets-properties/screenplay` was a massacre
+* ``toolcase/base/CMakeLists.txt`` has become rather cluttered
+  (``base`` ist the worst, the others are ugly too)
+* *Wanted*: simple call to ``my_add_library()``, beautifully
+  reflecting the situation
 * Implicitly dictating the directory structure
 
   .. code-block:: text

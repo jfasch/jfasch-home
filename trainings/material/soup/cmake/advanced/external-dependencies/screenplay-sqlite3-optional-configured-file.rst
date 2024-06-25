@@ -1,5 +1,5 @@
 .. ot-topic:: cmake.advanced.external_dependencies_sqlite3_optional_configured_file
-   :dependencies: cmake.advanced.external_dependencies_sqlite3
+   :dependencies: cmake.advanced.external_dependencies_sqlite3_optional_graph
 .. include:: <mmlalias.txt>
 
 
@@ -20,6 +20,14 @@ Alternative: ``configure_file()`` Instead Of ``target_compile_definitions()``
 
    * `configure_file()
      <https://cmake.org/cmake/help/latest/command/configure_file.html>`__
+
+.. sidebar:: Trainer's note
+
+   * Source code starts here
+
+     .. command-output:: ls -l ../../project/external-dependency-sqlite3-optional-configured-file/CMakeLists.txt
+        :cwd: .
+        :shell:
 
 * In :doc:`screenplay-sqlite3-optional-graph`, we used
   ``target_compile_definitions()`` to *propagate*
