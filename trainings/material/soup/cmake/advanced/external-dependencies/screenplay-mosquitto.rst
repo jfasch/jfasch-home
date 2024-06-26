@@ -55,7 +55,8 @@ Add MQTT Capability To Datalogger
 
 * Use in ``firmware/data-logger.cpp``
 
-  * Instantiate, and add to ``SinkComposite`` instance
+  * conditionally ``#include``, instantiate, and add to
+    ``SinkComposite`` instance
 
     * ``SinkTerminal``
     * ``SinkSQLite3``
@@ -80,7 +81,7 @@ External ``libmosquitto`` Dependency
      :language: cmake
 
 * ``add_library(... INTERFACE IMPORTED)`` (see `add_library
-  <https://cmake.org/cmake/help/latest/command/add_library.html>`__
+  <https://cmake.org/cmake/help/latest/command/add_library.html>`__)
 * Glue all together in ``cmake/mosquitto.cmake``, and include from
   toplevel ``CMakeLists.txt``
 

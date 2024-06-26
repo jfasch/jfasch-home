@@ -11,11 +11,12 @@ Screenplay: Public And Private Include Directories
 
 .. sidebar:: Trainer's note
 
-   Source code starts here
+   * Finally, don't forget to discuss :doc:`global-incdir`
+   * Source code starts here
 
-   .. command-output:: ls -l ../../project/pub-priv-inc/CMakeLists.txt
-      :cwd: .
-      :shell:
+     .. command-output:: ls -l ../../project/pub-priv-inc/CMakeLists.txt
+        :cwd: .
+        :shell:
 
 Motivation
 ----------
@@ -144,3 +145,8 @@ That is the same as
   .. code-block:: cmake
   
      target_include_directories(base PUBLIC ./include/public)
+
+Final Final Note: ````include_directories()``
+---------------------------------------------
+
+:doc:`global-incdir`

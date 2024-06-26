@@ -14,6 +14,10 @@ Targets, Properties, And More
 
    * :doc:`screenplay`
 
+.. sidebar:: Trainer's note
+
+   * Finally, don't forget to discuss :doc:`global-incdir`
+
 Target Types
 ------------
 
@@ -128,3 +132,9 @@ Demo Time
 ---------
 
 Move on to :doc:`screenplay`
+
+
+Final Note: ````include_directories()``
+---------------------------------------
+
+:doc:`global-incdir`

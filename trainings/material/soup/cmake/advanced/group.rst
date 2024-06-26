@@ -39,7 +39,13 @@ Topics
    external-dependencies/screenplay-sqlite3-optional-graph
    external-dependencies/screenplay-sqlite3-optional-configured-file
    external-dependencies/screenplay-mosquitto
+   code-generators/screenplay
    testing/topic   
+
+.. toctree::
+   :hidden:
+
+   targets-properties/global-incdir
 
 Alternative Topics
 ------------------
@@ -52,18 +58,31 @@ Alternative Topics
    conditional-code-approach-1/topic
    conditional-code-approach-2/topic
 
-.. todo jjj
-.. * modules
-..   * googletest how?
-..   * find modules: pkgconfig
-..   * handwritten -> mosquitto
-.. * reference https://cmake.org/cmake/help/latest/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide
-..   * fetchcontent()
-.. * testing
-
 Dependencies
 ------------
 
 .. ot-graph::
    :entries: cmake.advanced
+
+Todo jjj |:metal:|
+------------------
+
+* Modules
+
+  * googletest how?
+
+    * https://cmake.org/cmake/help/latest/module/GoogleTest.html#command:gtest_discover_tests
+      probably not. read docs, "may not work cross"
+    * https://cmake.org/cmake/help/latest/module/FindGTest.html
+    * optional tests, depending on ``GTest::Main``
+    * https://cliutils.gitlab.io/modern-cmake/
+
+  * find modules: pkgconfig? suppose not
+
+* reference https://cmake.org/cmake/help/latest/guide/using-dependencies/index.html#guide:Using%20Dependencies%20Guide
+* fetchcontent() and
+  https://cmake.org/cmake/help/latest/module/ExternalProject.html#module:ExternalProject
+
+  if you find yourself doing this, you should better use conan or
+  yocto or distribution pakage managers
 
