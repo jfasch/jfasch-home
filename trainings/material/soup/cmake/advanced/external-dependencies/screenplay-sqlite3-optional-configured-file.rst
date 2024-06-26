@@ -23,11 +23,8 @@ Alternative: ``configure_file()`` Instead Of ``target_compile_definitions()``
 
 .. sidebar:: Trainer's note
 
-   * Source code starts here
-
-     .. command-output:: ls -l CMakeLists.txt
-        :cwd: /foreign/cmake-external-dependency-sqlite3-optional-configure-file
-	:shell:
+   * Source code:
+     https://github.com/jfasch/cmake-external-dependency-sqlite3-optional-configure-file
 
 * In :doc:`screenplay-sqlite3-optional-graph`, we used
   ``target_compile_definitions()`` to *propagate*

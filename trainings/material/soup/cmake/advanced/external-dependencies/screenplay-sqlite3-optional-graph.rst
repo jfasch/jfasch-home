@@ -25,12 +25,8 @@ What If We Know How to Live Without SQLite3?
 
 .. sidebar:: Trainer's note
 
-   * Source code starts here
-
-     .. command-output:: ls -l CMakeLists.txt
-        :cwd: /foreign/cmake-external-dependency-sqlite3-optional-graph
-        :shell:
-
+   * Source code:
+     https://github.com/jfasch/cmake-external-dependency-sqlite3-optional-graph
    * Uninstall SQLite3 again ...
 
      .. code-block:: console

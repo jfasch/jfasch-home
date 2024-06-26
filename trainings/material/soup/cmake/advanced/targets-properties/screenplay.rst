@@ -12,11 +12,7 @@ Screenplay: Public And Private Include Directories
 .. sidebar:: Trainer's note
 
    * Finally, don't forget to discuss :doc:`global-incdir`
-   * Source code starts here
-
-     .. command-output:: ls -l CMakeLists.txt
-	:cwd: /foreign/cmake-public-private-src
-        :shell:
+   * Source code: https://github.com/jfasch/cmake-public-private-src
 
 Motivation
 ----------

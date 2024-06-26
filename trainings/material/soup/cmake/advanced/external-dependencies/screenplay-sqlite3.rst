@@ -21,12 +21,8 @@ Add SQLite3 Capability To Datalogger
 
 .. sidebar:: Trainer's note
 
-   * Source code starts here
-
-     .. command-output:: ls -l CMakeLists.txt
-	:cwd: /foreign/cmake-external-dependency-sqlite3
-        :shell:
-
+   * Source code:
+     https://github.com/jfasch/cmake-external-dependency-sqlite3
    * Make sure SQLite3 is not available ...
 
      .. code-block:: console

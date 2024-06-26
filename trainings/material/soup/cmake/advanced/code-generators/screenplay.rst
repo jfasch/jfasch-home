@@ -16,12 +16,7 @@ Screenplay: Generated Code (``add_custom_command()``)
 
 .. sidebar:: Trainer's note
 
-   * Source code starts here
-
-     .. command-output:: ls -l CMakeLists.txt
-        :cwd: /foreign/cmake-code-generators
-        :shell:
-
+   * Source code: https://github.com/jfasch/cmake-code-generators
    * Download into ``firmware/``
 
      * :download:`2024-06-20.conf

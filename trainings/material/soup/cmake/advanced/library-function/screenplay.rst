@@ -11,11 +11,7 @@ Screenplay: Function Wrapping ``add_library()``
 
 .. sidebar:: Trainer's note
 
-   Source code starts here
-
-   .. command-output:: ls -l CMakeLists.txt
-      :cwd: /foreign/cmake-function-add-library
-      :shell:
+   * Source code: https://github.com/jfasch/cmake-function-add-library
 
 Streamline Build-Spaghetti: How Want It?
 ----------------------------------------
