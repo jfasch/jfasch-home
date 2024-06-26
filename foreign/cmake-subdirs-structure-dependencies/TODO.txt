@@ -1,2 +1,0 @@
-* SensorConfig: unique_ptr
-* Hysteresis: unique_ptr
