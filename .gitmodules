@@ -22,3 +22,6 @@
 [submodule "foreign/cmake-external-dependency-sqlite3-optional-graph"]
 	path = foreign/cmake-external-dependency-sqlite3-optional-graph
 	url = git@github.com:jfasch/cmake-external-dependency-sqlite3-optional-graph.git
+[submodule "foreign/cmake-external-dependency-sqlite3-optional-configure-file"]
+	path = foreign/cmake-external-dependency-sqlite3-optional-configure-file
+	url = git@github.com:jfasch/cmake-external-dependency-sqlite3-optional-configure-file.git
