@@ -28,3 +28,6 @@
 [submodule "foreign/cmake-external-dependency-mosquitto"]
 	path = foreign/cmake-external-dependency-mosquitto
 	url = git@github.com:jfasch/cmake-external-dependency-mosquitto.git
+[submodule "foreign/cmake-code-generators"]
+	path = foreign/cmake-code-generators
+	url = git@github.com:jfasch/cmake-code-generators.git
