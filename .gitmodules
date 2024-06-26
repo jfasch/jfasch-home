@@ -16,3 +16,6 @@
 [submodule "foreign/cmake-function-add-library"]
 	path = foreign/cmake-function-add-library
 	url = git@github.com:jfasch/cmake-function-add-library.git
+[submodule "foreign/cmake-external-dependency-sqlite3"]
+	path = foreign/cmake-external-dependency-sqlite3
+	url = git@github.com:jfasch/cmake-external-dependency-sqlite3.git
