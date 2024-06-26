@@ -14,8 +14,8 @@ Screenplay: Public And Private Include Directories
    * Finally, don't forget to discuss :doc:`global-incdir`
    * Source code starts here
 
-     .. command-output:: ls -l ../../project/pub-priv-inc/CMakeLists.txt
-        :cwd: .
+     .. command-output:: ls -l CMakeLists.txt
+	:cwd: /foreign/cmake-public-private-src
         :shell:
 
 Motivation
@@ -24,9 +24,9 @@ Motivation
 .. sidebar:: New files
 
    * :download:`file-util.h
-     </trainings/material/soup/cmake/project/pub-priv-inc/toolcase/base/include/private/file-util.h>`
+     </foreign/cmake-public-private-src/toolcase/base/include/private/file-util.h>`
    * :download:`file-util.cpp
-     </trainings/material/soup/cmake/project/pub-priv-inc/toolcase/base/src/file-util.cpp>`
+     </foreign/cmake-public-private-src/toolcase/base/src/file-util.cpp>`
 
 * ``file-util.h`` and ``file-util.cpp``
 * Used only in ``base/``

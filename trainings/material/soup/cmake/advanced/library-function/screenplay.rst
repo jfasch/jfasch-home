@@ -13,8 +13,8 @@ Screenplay: Function Wrapping ``add_library()``
 
    Source code starts here
 
-   .. command-output:: ls -l ../../project/function-add-library/CMakeLists.txt
-      :cwd: .
+   .. command-output:: ls -l CMakeLists.txt
+      :cwd: /foreign/cmake-function-add-library
       :shell:
 
 Streamline Build-Spaghetti: How Want It?
@@ -105,9 +105,9 @@ Function ``my_add_library()``: ``cmake_parse_arguments()``
 Function ``my_add_library()``: Final Version
 --------------------------------------------
 
-.. literalinclude:: ../../project/function-add-library/cmake/my_add_library.cmake
+.. literalinclude:: /foreign/cmake-function-add-library/cmake/my_add_library.cmake
    :caption: :download:`my_add_library.cmake (download)
-             <../../project/function-add-library/cmake/my_add_library.cmake>`
+             </foreign/cmake-function-add-library/cmake/my_add_library.cmake>`
    :language: cmake
 
 Make ``my_add_library()`` A Matter For The Architect

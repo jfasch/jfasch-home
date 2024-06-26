@@ -23,8 +23,8 @@ Add SQLite3 Capability To Datalogger
 
    * Source code starts here
 
-     .. command-output:: ls -l ../../project/external-dependency-sqlite3/CMakeLists.txt
-        :cwd: .
+     .. command-output:: ls -l CMakeLists.txt
+	:cwd: /foreign/cmake-external-dependency-sqlite3
         :shell:
 
    * Make sure SQLite3 is not available ...
@@ -36,9 +36,9 @@ Add SQLite3 Capability To Datalogger
 * Add to ``toolcase/data-logger`` ...
 
   * :download:`sink-sqlite3.h
-    </trainings/material/soup/cmake/project/external-dependency-sqlite3/toolcase/data-logger/include/public/sink-sqlite3.h>`
+    </foreign/cmake-external-dependency-sqlite3/toolcase/data-logger/include/public/sink-sqlite3.h>`
   * :download:`sink-sqlite3.cpp
-    </trainings/material/soup/cmake/project/external-dependency-sqlite3/toolcase/data-logger/src/sink-sqlite3.cpp>`
+    </foreign/cmake-external-dependency-sqlite3/toolcase/data-logger/src/sink-sqlite3.cpp>`
 
 * Use in ``firmware/data-logger.cpp``
 
@@ -77,7 +77,8 @@ Add SQLite3 Capability To Datalogger
 
 .. sidebar:: See also
 
-   * :doc:`screenplay-sqlite3-optional`
+   * :doc:`screenplay-sqlite3-optional-graph`
+   * :doc:`screenplay-sqlite3-optional-configured-file`
 
 * Pulling in parameters for ``SQLite3``
 
@@ -99,7 +100,8 @@ Add SQLite3 Capability To Datalogger
 * |longrightarrow| error remains: ``sqlite3.h: No such file or
   directory``
 * Could continue if we could handle *optional* dependencies
-* |longrightarrow| Later (:doc:`screenplay-sqlite3-optional`)
+* |longrightarrow| Later (:doc:`screenplay-sqlite3-optional-graph`,
+  :doc:`screenplay-sqlite3-optional-configured-file`)
 
 ``FIND_PACKAGE(... REQUIRED)``
 ------------------------------

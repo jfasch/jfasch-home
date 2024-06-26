@@ -18,17 +18,22 @@ Screenplay: Generated Code (``add_custom_command()``)
 
    * Source code starts here
 
-     .. command-output:: ls -l ../../project/generated-code/CMakeLists.txt
-        :cwd: .
+     .. command-output:: ls -l CMakeLists.txt
+        :cwd: /foreign/cmake-code-generators
         :shell:
 
    * Download into ``firmware/``
 
-     * :download:`2024-06-20.conf </trainings/material/soup/cmake/project/generated-code/firmware/2024-06-20.conf>`
-     * :download:`conf-sensors.h </trainings/material/soup/cmake/project/generated-code/firmware/conf-sensors.h>`
-     * :download:`2024-06-20-manual.cpp </trainings/material/soup/cmake/project/generated-code/firmware/2024-06-20-manual.cpp>`
-     * :download:`data-logger-deeply-embedded.cpp </trainings/material/soup/cmake/project/generated-code/firmware/data-logger-deeply-embedded.cpp>`
-     * :download:`config-generator.py </trainings/material/soup/cmake/project/generated-code/firmware/config-generator.py>`
+     * :download:`2024-06-20.conf
+       </foreign/cmake-code-generators/firmware/2024-06-20.conf>`
+     * :download:`conf-sensors.h
+       </foreign/cmake-code-generators/firmware/conf-sensors.h>`
+     * :download:`2024-06-20-manual.cpp
+       </foreign/cmake-code-generators/firmware/2024-06-20-manual.cpp>`
+     * :download:`data-logger-deeply-embedded.cpp
+       </foreign/cmake-code-generators/firmware/data-logger-deeply-embedded.cpp>`
+     * :download:`config-generator.py
+       </foreign/cmake-code-generators/firmware/config-generator.py>`
 
 What We Want
 ------------
@@ -51,7 +56,7 @@ Handwritten Prototype: What A Code Generator Could Do For Us
 
   .. code-block:: text
      :caption: :download:`2024-06-20.conf (Download)
-               </trainings/material/soup/cmake/project/generated-code/firmware/2024-06-20.conf>`
+               </foreign/cmake-code-generators/firmware/2024-06-20.conf>`
 
      [bottom-right]
      Type = Const
@@ -64,7 +69,7 @@ Handwritten Prototype: What A Code Generator Could Do For Us
 
   .. code-block:: c++
      :caption: :download:`2024-06-20-manual.cpp (Download)
-               </trainings/material/soup/cmake/project/generated-code/firmware/2024-06-20-manual.cpp>`
+               </foreign/cmake-code-generators/firmware/2024-06-20-manual.cpp>`
 
      #include "conf-sensors.h"       // <--- THE config's extern declaration
      
@@ -88,7 +93,7 @@ Handwritten Prototype: What A Code Generator Could Do For Us
 
   .. code-block:: c++
      :caption: :download:`data-logger-deeply-embedded.cpp (Download)
-               </trainings/material/soup/cmake/project/generated-code/firmware/data-logger-deeply-embedded.cpp>`
+               </foreign/cmake-code-generators/firmware/data-logger-deeply-embedded.cpp>`
 
      #include "conf-sensors.h"         // <--- conf_sensors'  extern declaration
 

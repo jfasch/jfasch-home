@@ -13,8 +13,8 @@ Screenplay: Integrating ``libmosquitto`` (MQTT - Handwritten Find-Module)
 
    * Source code starts here
 
-     .. command-output:: ls -l ../../project/external-dependency-mosquitto/CMakeLists.txt
-        :cwd: .
+     .. command-output:: ls -l CMakeLists.txt
+        :cwd: /foreign/cmake-external-dependency-mosquitto
         :shell:
 
 First: Clean Up Toplevel ``CMakeLists.txt``
@@ -22,9 +22,9 @@ First: Clean Up Toplevel ``CMakeLists.txt``
 
 * Cram SQLite3 stuff into into ``cmake/sqlite3.cmake``
 
-  .. literalinclude:: ../../project/external-dependency-mosquitto/cmake/sqlite3.cmake
+  .. literalinclude:: /foreign/cmake-external-dependency-mosquitto/cmake/sqlite3.cmake
      :caption: :download:`sqlite3.cmake (download)
-               <../../project/external-dependency-mosquitto/cmake/sqlite3.cmake>`
+               </foreign/cmake-external-dependency-mosquitto/cmake/sqlite3.cmake>`
      :language: cmake
   
 * Include from tolevel
@@ -44,14 +44,15 @@ Add MQTT Capability To Datalogger
 
 * Add to ``toolcase/data-logger`` ...
 
+
   * :download:`sink-mqtt.h
-    </trainings/material/soup/cmake/project/external-dependency-mosquitto/toolcase/data-logger/include/public/sink-mqtt.h>`
+    </foreign/cmake-external-dependency-mosquitto/toolcase/data-logger/include/public/sink-mqtt.h>`
   * :download:`sink-mqtt.cpp
-    </trainings/material/soup/cmake/project/external-dependency-mosquitto/toolcase/data-logger/src/sink-mqtt.cpp>`
+    </foreign/cmake-external-dependency-mosquitto/toolcase/data-logger/src/sink-mqtt.cpp>`
   * :download:`sink-composite.h
-    </trainings/material/soup/cmake/project/external-dependency-mosquitto/toolcase/data-logger/include/public/sink-composite.h>`
+    </foreign/cmake-external-dependency-mosquitto/toolcase/data-logger/include/public/sink-composite.h>`
   * :download:`sink-composite.cpp
-    </trainings/material/soup/cmake/project/external-dependency-mosquitto/toolcase/data-logger/src/sink-composite.cpp>`
+    </foreign/cmake-external-dependency-mosquitto/toolcase/data-logger/src/sink-composite.cpp>`
 
 * Use in ``firmware/data-logger.cpp``
 
@@ -75,9 +76,9 @@ External ``libmosquitto`` Dependency
 * No find module that comes with CMake
 * |longrightarrow| write one myself
 
-  .. literalinclude:: ../../project/external-dependency-mosquitto/cmake/FindMosquitto.cmake
+  .. literalinclude:: /foreign/cmake-external-dependency-mosquitto/cmake/FindMosquitto.cmake
      :caption: :download:`FindMosquitto.cmake (download)
-               <../../project/external-dependency-mosquitto/cmake/FindMosquitto.cmake>`
+	       </foreign/cmake-external-dependency-mosquitto/cmake/FindMosquitto.cmake>`
      :language: cmake
 
 * ``add_library(... INTERFACE IMPORTED)`` (see `add_library
@@ -85,9 +86,9 @@ External ``libmosquitto`` Dependency
 * Glue all together in ``cmake/mosquitto.cmake``, and include from
   toplevel ``CMakeLists.txt``
 
-  .. literalinclude:: ../../project/external-dependency-mosquitto/cmake/mosquitto.cmake
+  .. literalinclude:: /foreign/cmake-external-dependency-mosquitto/cmake/mosquitto.cmake
      :caption: :download:`mosquitto.cmake (download)
-               <../../project/external-dependency-mosquitto/cmake/mosquitto.cmake>`
+               </foreign/cmake-external-dependency-mosquitto/cmake/mosquitto.cmake>`
      :language: cmake
 * Add ``HAVE_MOSQUITTO`` to ``project-config.h.in``
 * Et voila!
