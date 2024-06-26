@@ -13,3 +13,6 @@
 [submodule "foreign/cmake-subdirs-structure-dependencies"]
 	path = foreign/cmake-subdirs-structure-dependencies
 	url = git@github.com:jfasch/cmake-subdirs-structure-dependencies.git
+[submodule "foreign/cmake-function-add-library"]
+	path = foreign/cmake-function-add-library
+	url = git@github.com:jfasch/cmake-function-add-library.git
