@@ -34,7 +34,6 @@ Topics
    targets-properties/screenplay
    language/group
    library-function/screenplay
-   external-dependencies/topic
    external-dependencies/screenplay-sqlite3
    external-dependencies/screenplay-sqlite3-optional-graph
    external-dependencies/screenplay-sqlite3-optional-configured-file
@@ -53,6 +52,7 @@ Alternative Topics
 .. toctree::
    :maxdepth: 1
 
+   external-dependencies/topic
    configure-file/topic
    conditional-code-problem/topic
    conditional-code-approach-1/topic

@@ -31,3 +31,6 @@
 [submodule "foreign/cmake-code-generators"]
 	path = foreign/cmake-code-generators
 	url = git@github.com:jfasch/cmake-code-generators.git
+[submodule "foreign/cmake-public-private-src"]
+	path = foreign/cmake-public-private-src
+	url = git@github.com:jfasch/cmake-public-private-src.git

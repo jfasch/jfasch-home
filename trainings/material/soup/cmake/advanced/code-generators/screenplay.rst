@@ -9,6 +9,10 @@ Screenplay: Generated Code (``add_custom_command()``)
 .. contents::
    :local:
 
+.. sidebar:: Complete source code
+
+   * https://github.com/jfasch/cmake-code-generators
+
 .. sidebar:: Documentation
 
    * `add_custom_command
@@ -16,7 +20,6 @@ Screenplay: Generated Code (``add_custom_command()``)
 
 .. sidebar:: Trainer's note
 
-   * Source code: https://github.com/jfasch/cmake-code-generators
    * Download into ``firmware/``
 
      * :download:`2024-06-20.conf

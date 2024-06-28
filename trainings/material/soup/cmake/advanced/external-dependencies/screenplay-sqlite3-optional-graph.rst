@@ -12,6 +12,10 @@ Screenplay: Making ``SQLite3`` Optional (``target_compile_definitions()``)
 What If We Know How to Live Without SQLite3?
 --------------------------------------------
 
+.. sidebar:: Complete source code
+
+   * https://github.com/jfasch/cmake-external-dependency-sqlite3-optional-graph
+
 .. sidebar:: See also
 
    * :doc:`screenplay-sqlite3`
@@ -25,8 +29,6 @@ What If We Know How to Live Without SQLite3?
 
 .. sidebar:: Trainer's note
 
-   * Source code:
-     https://github.com/jfasch/cmake-external-dependency-sqlite3-optional-graph
    * Uninstall SQLite3 again ...
 
      .. code-block:: console

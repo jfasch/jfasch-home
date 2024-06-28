@@ -14,6 +14,10 @@ Screenplay: Adding ``SQLite3`` External Dependency
 Add SQLite3 Capability To Datalogger
 ------------------------------------
 
+.. sidebar:: Complete source code
+
+   * https://github.com/jfasch/cmake-external-dependency-sqlite3
+
 .. sidebar:: Documentation
 
    * `An Introduction To The SQLite C/C++ Interface
@@ -21,8 +25,6 @@ Add SQLite3 Capability To Datalogger
 
 .. sidebar:: Trainer's note
 
-   * Source code:
-     https://github.com/jfasch/cmake-external-dependency-sqlite3
    * Make sure SQLite3 is not available ...
 
      .. code-block:: console

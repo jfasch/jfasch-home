@@ -143,3 +143,51 @@ From :doc:`/trainings/material/soup/cmake/advanced/language/group`
 
 * :doc:`/trainings/material/soup/cmake/advanced/language/functions-and-macros/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`
+
+Day 3
+-----
+
+Morning Awakening
+.................
+
+* Recap https://github.com/jfasch/2024-06-11/tree/main/exercises/ausbaufaehig
+
+  * Create build directory and all that
+  * Graph
+  * Include paths (``make VERBOSE=1``)
+  * Remember building a shared library from a subgraph?
+
+* Recap
+  :doc:`/trainings/material/soup/cmake/advanced/targets-properties/screenplay`
+
+The CMake Language, Continued
+.............................
+
+From :doc:`/trainings/material/soup/cmake/advanced/language/group` ...
+
+* :doc:`/trainings/material/soup/cmake/advanced/language/functions-and-macros/topic`
+* :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`
+
+One example of a function ...
+
+* :doc:`/trainings/material/soup/cmake/advanced/library-function/screenplay`
+
+External Dependencies
+.....................
+
+From :doc:`/trainings/material/soup/cmake/advanced/group` ...
+
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3`
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-graph`
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-configured-file`
+* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-mosquitto`
+
+Code Generators
+...............
+
+* :doc:`/trainings/material/soup/cmake/advanced/code-generators/screenplay`
+
+Unit Tests
+..........
+
+* :doc:`/trainings/material/soup/cmake/advanced/testing/topic`

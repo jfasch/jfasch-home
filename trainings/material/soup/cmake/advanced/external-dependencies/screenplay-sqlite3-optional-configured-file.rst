@@ -12,6 +12,10 @@ Screenplay: Making ``SQLite3`` Optional (``configure_file()``)
 Alternative: ``configure_file()`` Instead Of ``target_compile_definitions()``
 -----------------------------------------------------------------------------
 
+.. sidebar:: Complete source code
+
+   * https://github.com/jfasch/cmake-external-dependency-sqlite3-optional-configure-file
+
 .. sidebar:: See also
 
    * :doc:`screenplay-sqlite3-optional-graph`
@@ -20,11 +24,6 @@ Alternative: ``configure_file()`` Instead Of ``target_compile_definitions()``
 
    * `configure_file()
      <https://cmake.org/cmake/help/latest/command/configure_file.html>`__
-
-.. sidebar:: Trainer's note
-
-   * Source code:
-     https://github.com/jfasch/cmake-external-dependency-sqlite3-optional-configure-file
 
 * In :doc:`screenplay-sqlite3-optional-graph`, we used
   ``target_compile_definitions()`` to *propagate*

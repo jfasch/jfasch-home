@@ -9,10 +9,9 @@ Screenplay: Integrating ``libmosquitto`` (MQTT - Handwritten Find-Module)
 .. contents::
    :local:
 
-.. sidebar:: Trainer's note
+.. sidebar:: Complete source code
 
-   * Source code:
-     https://github.com/jfasch/cmake-external-dependency-mosquitto
+   * https://github.com/jfasch/cmake-external-dependency-mosquitto
 
 First: Clean Up Toplevel ``CMakeLists.txt``
 -------------------------------------------

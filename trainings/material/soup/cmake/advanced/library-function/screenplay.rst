@@ -9,9 +9,9 @@ Screenplay: Function Wrapping ``add_library()``
 .. contents::
    :local:
 
-.. sidebar:: Trainer's note
+.. sidebar:: Complete source code
 
-   * Source code: https://github.com/jfasch/cmake-function-add-library
+   * https://github.com/jfasch/cmake-function-add-library
 
 Streamline Build-Spaghetti: How Want It?
 ----------------------------------------

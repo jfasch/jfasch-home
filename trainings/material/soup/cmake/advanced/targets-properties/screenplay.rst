@@ -9,10 +9,18 @@ Screenplay: Public And Private Include Directories
 .. contents::
    :local:
 
+.. sidebar:: Complete source code
+
+   * https://github.com/jfasch/cmake-public-private-src
+
 .. sidebar:: Trainer's note
 
    * Finally, don't forget to discuss :doc:`global-incdir`
-   * Source code: https://github.com/jfasch/cmake-public-private-src
+
+.. sidebar:: Documentation
+
+   * `Transitive Usage Requirements
+     <https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html#target-usage-requirements>`__
 
 Motivation
 ----------
@@ -47,17 +55,17 @@ Move Code Around: ``toolcase/base/``
    .
    ├── CMakeLists.txt
    ├── include
-   │   ├── private
-   │   │   └── file-util.h
-   │   └── public
-   │       ├── hysteresis.h
-   │       ├── sensor-avg.h
-   │       ├── sensor-const.h
-   │       ├── sensor.h
-   │       ├── sensor-random.h
-   │       ├── sensor-w1.h
-   │       ├── switch.h
-   │       └── sysfs-switch.h
+   │   ├── private
+   │   │   └── file-util.h
+   │   └── public
+   │       ├── hysteresis.h
+   │       ├── sensor-avg.h
+   │       ├── sensor-const.h
+   │       ├── sensor.h
+   │       ├── sensor-random.h
+   │       ├── sensor-w1.h
+   │       ├── switch.h
+   │       └── sysfs-switch.h
    └── src
        ├── file-util.cpp
        ├── hysteresis.cpp
@@ -142,7 +150,7 @@ That is the same as
   
      target_include_directories(base PUBLIC ./include/public)
 
-Final Final Note: ````include_directories()``
----------------------------------------------
+Final Final Note: ``include_directories()``
+-------------------------------------------
 
 :doc:`global-incdir`
