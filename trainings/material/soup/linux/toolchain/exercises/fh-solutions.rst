@@ -1,16 +1,11 @@
-.. ot-exercise:: linux.toolchain.exercises.fh_moodle_quiz
-   :dependencies: linux.toolchain.basics,
-		  linux.toolchain.separate_compilation
-
-
-FH/Moodle Quiz: Toolchain
-=========================
+Quiz: Toolchain (Solutions)
+===========================
 
 .. contents::
    :local:
 
-Questions
----------
+Native
+------
 
 * Compiler: which of the following statements are true?
 
@@ -55,6 +50,41 @@ Questions
          static library
        * 
        * n
+
+Cross
+-----
+
+* Cross: which of the following statements are true?
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Statement
+       * True
+       * False
+     * * The cross compiler is an executable that runs on the build
+         machine
+       * y
+       *
+     * * The cross compiler is an executable that runs on the target
+         machine
+       * y
+       *
+     * * The cross compiler is linked against the C runtime
+         (``libc.so``). That file is contained in the *sysroot*.
+       * 
+       * n
+     * * The output that is produced by a cross toolchain runs on the
+         target machine.
+       * y
+       * 
+     * * The output that is produced by a cross toolchain is linked
+         against the C runtime (``libc.so``). That file is contained
+         in the *sysroot*.
+       * y
+       * 
 
 Dependencies
 ------------

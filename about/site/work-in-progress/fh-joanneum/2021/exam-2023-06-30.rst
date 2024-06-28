@@ -101,7 +101,7 @@ UNIX/Linux Concepts
 Toolchain
 ---------
 
-(From :doc:`/trainings/material/soup/linux/toolchain/exercises/fh-2022-questions`)
+(From :doc:`/trainings/material/soup/linux/toolchain/exercises/fh-questions`)
 
 .. list-table::
    :align: left

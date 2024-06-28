@@ -46,3 +46,8 @@ Block 3: C++
    2024-06-17/index
    2024-06-19/index
    2024-06-20/index
+
+.. toctree::
+   :hidden:
+
+   2024-06-28/index

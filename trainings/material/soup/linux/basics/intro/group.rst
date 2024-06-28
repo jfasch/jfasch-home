@@ -27,6 +27,11 @@ Introduction: Concepts and Terminology
 
    exercises/fh-questions
 
+.. toctree::
+   :hidden:
+
+   exercises/fh-solutions
+
 **Dependencies**
 
 .. ot-graph::

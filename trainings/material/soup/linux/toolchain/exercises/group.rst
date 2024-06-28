@@ -16,7 +16,12 @@ Contents
    raspberry-toolchain
    native-build
    cross-build
-   fh-2022-questions
+   fh-questions
+
+.. toctree::
+   :hidden:
+
+   fh-solutions
 
 Dependencies
 ------------

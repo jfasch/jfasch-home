@@ -1,18 +1,17 @@
-.. ot-exercise:: linux.basics.intro.fh_moodle_quiz
-   :dependencies: linux.basics.intro.overview,
-		  linux.sysprog.blocking_io.blocking_io_file,
-		  linux.basics.intro.demo_everything_is_a_file,
-		  linux.basics.intro.process
+SS2024: Exam 2024-06-28 (Handout)
+=================================
 
+.. list-table::
+   :align: left
 
-Quiz: Linux Basics
-==================
+   * * **Name**
+     * 
 
-.. contents::
-   :local:
+Linux: OS Concepts
+------------------
 
-User Space, Kernel Space
-------------------------
+(From
+:doc:`/trainings/material/soup/linux/basics/intro/exercises/fh-questions`)
 
 * Kernel/user space: which of the following statements are true?
 
@@ -63,35 +62,6 @@ User Space, Kernel Space
        *
        * 
      * * Reverse interrupts
-       *
-       * 
-
-* File abstraction: which concepts are represented by file decriptors?
-  
-  .. list-table::
-     :align: left
-     :widths: auto
-     :header-rows: 1
-
-     * * Statement
-       * True
-       * False
-     * * Files
-       * 
-       *
-     * * Network sockets
-       * 
-       *
-     * * Timers
-       * 
-       *
-     * * Serial/UART devices
-       * 
-       *
-     * * Memory
-       *
-       * 
-     * * The process stack
        *
        * 
 
@@ -211,10 +181,83 @@ Processes, Scheduling, and Virtual Memory
        * 
        *
 
-(:doc:`Solutions <fh-solutions>`)
+Toolchain
+---------
 
-Dependencies
-------------
+(From :doc:`/trainings/material/soup/linux/toolchain/exercises/fh-questions`)
 
-.. ot-graph::
-   :entries: linux.basics.intro.fh_moodle_quiz
+* Compiler: which of the following statements are true?
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Statement
+       * True
+       * False
+     * * The compiler combines multiple object files together into one
+         executable
+       * 
+       * 
+     * * The compiler turns a single source file into an object
+         (``.o``) file
+       * 
+       *
+     * * Object files are not executable
+       * 
+       *
+     * * Object files are executable
+       *
+       * 
+
+* Linker: which of the following statements are true?
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Statement
+       * True
+       * False
+     * * The linker combines multiple object files together into one
+         executable
+       * 
+       *
+     * * The linker combines multiple object files together into a
+         static library
+       * 
+       * 
+
+* Cross: which of the following statements are true?
+
+  .. list-table::
+     :align: left
+     :widths: auto
+     :header-rows: 1
+
+     * * Statement
+       * True
+       * False
+     * * The cross compiler is an executable that runs on the build
+         machine
+       * 
+       *
+     * * The cross compiler is an executable that runs on the target
+         machine
+       * 
+       *
+     * * The cross compiler is linked against the C runtime
+         (``libc.so``). That file is contained in the *sysroot*.
+       * 
+       * 
+     * * The output that is produced by a cross toolchain runs on the
+         target machine.
+       * 
+       * 
+     * * The output that is produced by a cross toolchain is linked
+         against the C runtime (``libc.so``). That file is contained
+         in the *sysroot*.
+       * 
+       * 
