@@ -5,6 +5,7 @@ Details
    :maxdepth: 1
 
    2024-XX-XX--C++/index
+   2024-07-01--CMake-Advanced/index
    2024-06-11--CMake-Advanced/index
    2024-06-18--CMake-Basics/index
    2024-06-03--C++/index

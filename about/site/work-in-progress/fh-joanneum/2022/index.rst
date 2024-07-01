@@ -8,3 +8,4 @@ Embedded Computing (STECE-2022)
    :maxdepth: 1
 
    ss2024/index
+   ws2024-25/index

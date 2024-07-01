@@ -16,6 +16,13 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    detail/index
 
 
+CMake: Advanced Topics (2024-07-01)
+-----------------------------------
+
+Three days of CMake.
+
+(:doc:`More ... <detail/2024-07-01--CMake-Advanced/index>`)
+
 CMake: Basics (2024-06-18)
 --------------------------
 
