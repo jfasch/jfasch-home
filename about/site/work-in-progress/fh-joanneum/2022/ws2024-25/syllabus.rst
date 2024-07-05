@@ -52,7 +52,7 @@ Die Studierenden
 Angaben zur Prüfung
 -------------------
 
-.. _beurteilungsschema:
+.. _beurteilungsschema_1:
 
 Beurteilungsschema
 ..................
@@ -108,7 +108,7 @@ Hilfsmittel zugelassen.
 Wiederholungsmöglichkeiten
 ..........................
 
-Wie unter :ref`beurteilungsschema` beschrieben, müssen im Fall einer
+Wie unter :ref`beurteilungsschema_1` beschrieben, müssen im Fall einer
 negativen Beurteilung sowohl der praktische (Laborklausur) als auch
 der theoretische (schriftliche Klausur) Teil wiederholt werden.
 
