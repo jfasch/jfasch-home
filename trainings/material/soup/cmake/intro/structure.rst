@@ -44,7 +44,7 @@ Reorganization
 
    **Documentation**
 
-   * `ADD_SUBDIRECTORY()
+   * `add_subdirectory()
      <https://cmake.org/cmake/help/latest/command/add_subdirectory.html>`__
 
 * Descend into ``libhello/`` and ``bin/``
@@ -56,8 +56,8 @@ Reorganization
   .. code-block:: console
      :caption: Toplevel ``CMakeLists.txt``
 
-     ADD_SUBDIRECTORY(libhello)
-     ADD_SUBDIRECTORY(bin)
+     add_subdirectory(libhello)
+     add_subdirectory(bin)
 
 .. code-block:: console
 
@@ -82,7 +82,7 @@ Dependencies, And *Target Properties*
 
    **Documentation**
 
-   * `TARGET_INCLUDE_DIRECTORIES()
+   * `target_include_directories()
      <https://cmake.org/cmake/help/latest/command/target_include_directories.html>`__
 
 * Dependencies are in place
@@ -97,7 +97,7 @@ Dependencies, And *Target Properties*
 
   .. code-block:: console
 
-     TARGET_INCLUDE_DIRECTORIES(hello PUBLIC .)
+     target_include_directories(hello PUBLIC .)
 
 * |longrightarrow| *propagated* to dependers
 * ``PUBLIC`` vs. ``PRIVATE``

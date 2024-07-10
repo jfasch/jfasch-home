@@ -25,19 +25,19 @@ Target Types
 
    **Documentation**
 
-   * `ADD_LIBRARY()
+   * `add_library()
      <https://cmake.org/cmake/help/latest/command/add_library.html>`__
-   * `ADD_EXECUTABLE()
+   * `add_executable()
      <https://cmake.org/cmake/help/latest/command/add_executable.html>`__
 
-* Two basic types: ``ADD_EXECUTABLE()`` and ``ADD_LIBRARY()``
-* ``ADD_EXECUTABLE()`` is not relevant ...
+* Two basic types: ``add_executable()`` and ``add_library()``
+* ``add_executable()`` is not relevant ...
 
   * Only entry point into dependency graph
   * |longrightarrow| does not propagate anything to dependers
   * There *are no* dependers
 
-* ``ADD_LIBRARY()`` ...
+* ``add_library()`` ...
 
   .. list-table::
      :align: left
@@ -59,7 +59,7 @@ Target Types
 Properties
 ----------
 
-(For a complete list see `ADD_LIBRARY()
+(For a complete list see `add_library()
 <https://cmake.org/cmake/help/latest/command/add_library.html>`__)
 
 .. list-table::
@@ -71,26 +71,31 @@ Properties
      * Property name
      * Description
      * Documentation
-   * * ``TARGET_COMPILE_DEFINITIONS()``
+   * * ``target_compile_definitions()``
      * ``COMPILE_DEFINITIONS``
      * Macros set on the compiler command line (``-Dname=value``)
-     * `TARGET_COMPILE_DEFINITIONS()
+     * `target_compile_definitions()
        <https://cmake.org/cmake/help/latest/command/target_compile_definitions.html>`__
-   * * ``TARGET_COMPILE_OPTIONS()``
+   * * ``target_compile_options()``
      * ``COMPILE_OPTIONS``
      * Non-macro compiler flags/options
      * `TARGET_COMPILE_OPTIONS()
        <https://cmake.org/cmake/help/latest/command/target_compile_options.html>`__
-   * * ``TARGET_INCLUDE_DIRECTORIES()``
+   * * ``target_include_directories()``
      * ``INCLUDE_DIRECTORIES``
      * Include directories
-     * `TARGET_INCLUDE_DIRECTORIES()
+     * `target_include_directories()
        <https://cmake.org/cmake/help/latest/command/target_include_directories.html>`__
-   * * ``TARGET_LINK_LIBRARIES()``
+   * * ``target_link_libraries()``
      * (Much more complicated, see documentation)
      * Dependencies, in the widest sense
-     * `TARGET_LINK_LIBRARIES()
+     * `target_link_libraries()
        <https://cmake.org/cmake/help/latest/command/target_link_libraries.html>`__
+   * * ``set_target_properties()``
+     * Any property, including custom properties
+     * See documentation
+     * `set_target_properties()
+       <https://cmake.org/cmake/help/latest/command/set_target_properties.html>`__
 
 Properties: ``PRIVATE``, ``PUBLIC``, ``INTERFACE``?
 ---------------------------------------------------
@@ -115,9 +120,9 @@ Properties: ``PRIVATE``, ``PUBLIC``, ``INTERFACE``?
 
   * For example, one might structure a target's source code into
     ``src/``, ``private-inc/``, and ``public-inc/`` |longrightarrow|
-    ``private-inc/`` would be ``TARGET_INCLUDE_DIRECTORIES(... PRIVATE
+    ``private-inc/`` would be ``target_include_directories(... PRIVATE
     ...)``
-  * For example, ``TARGET_COMPILE_DEFINITIONS()`` for target-local
+  * For example, ``target_compile_definitions()`` for target-local
     compilation only
 
 * ``INTERFACE`` *propagated* to *dependers*
@@ -134,7 +139,7 @@ Demo Time
 Move on to :doc:`screenplay`
 
 
-Final Note: ````include_directories()``
----------------------------------------
+Final Note: ``include_directories()``
+-------------------------------------
 
 :doc:`global-incdir`
