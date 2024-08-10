@@ -12,3 +12,4 @@ Embedded Computing 2 (STECE-2022): Winter
 
    syllabus
    material
+

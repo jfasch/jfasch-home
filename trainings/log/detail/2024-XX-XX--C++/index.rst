@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-C++: A Thorough Overview
-========================
+C++: A One-Day Overview (Date Yet Unknown)
+==========================================
 
 .. contents::
    :local:

@@ -15,6 +15,12 @@ Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
    ../codex
    detail/index
 
+C++: A One-Day Overview (Date Yet Unknown)
+------------------------------------------
+
+A one-day ride through C++. Still under preparation.
+
+(:doc:`More ... <detail/2024-XX-XX--C++/index>`)
 
 CMake: Advanced Topics (2024-07-01)
 -----------------------------------
@@ -26,7 +32,7 @@ Three days of CMake.
 CMake: Basics (2024-06-18)
 --------------------------
 
-This course is under preparation.
+One day CMake intro.
 
 (:doc:`More ... <detail/2024-06-18--CMake-Basics/index>`)
 
