@@ -1,5 +1,5 @@
-Organisatorisches: Buchung, Kursablauf
-======================================
+Booking, and Org
+================
 
 .. toctree::
    :hidden:

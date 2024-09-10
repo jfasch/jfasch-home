@@ -1,5 +1,5 @@
-Eine Woche mit dem Raspberry Pi
-===============================
+A Week with the Raspberry Pi
+============================
 
 .. sidebar:: Kursdaten
 
@@ -13,7 +13,7 @@ Eine Woche mit dem Raspberry Pi
    * 22.6.2020 - 26.6.2020, Hemmenhofen/Bodensee, `bodenseo
      <https://www.bodenseo.de/kurs/raspberry_pi_python.html>`__
 
-.. image:: images/raspberry_logo.png
+.. image:: raspi-hands-on-images/raspberry_logo.png
    :alt: Raspi Logo
    :align: left
 
@@ -53,7 +53,7 @@ vorhanden, jedoch macht es mit dem eigenen wahrscheinlich mehr Spass.
 Kursinhalt
 ----------
 
-.. image:: images/Pi-GPIO-header.png
+.. image:: raspi-hands-on-images/Pi-GPIO-header.png
    :alt: Raspi Pinout
    :align: right
 

@@ -5,8 +5,8 @@
    :keywords: schulung, training, programming, c, linker, toolchain,
               kernighan, ritchie, linux, embedded, pointer, memory
 
-C: Einführung
-=============
+C: Introduction
+===============
 
 .. sidebar:: Kursdaten
 

@@ -6,8 +6,8 @@
               bash, bourne shell, redirection, console, kill, ps, cat,
               less, pipe, filesystem, grep, debugging, scripting
 
-Linux Basics: Eine Einführung Anhand von Beispielen
-===================================================
+Linux Basics: A Gentle Introduction
+===================================
 
 .. sidebar:: Kursdaten
 

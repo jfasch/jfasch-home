@@ -8,20 +8,20 @@
 .. rst-class:: jf-main-page
 
 	       
-Linux und Open Source
-=====================
+Programming Linux
+=================
 
 .. toctree::
-   :caption: Schulungen
+   :caption: Courses
    :hidden:
    :maxdepth: -1
    :titlesonly:
 
-   Kursangebot <trainings/index>
-   Unterlagen & Download <trainings/material/index>
-   Organisatorisches <trainings/org>
-   Datenschutz <trainings/codex>
+   trainings/index
    trainings/log/index
+   trainings/material/index
+   trainings/org
+   trainings/codex
 
 .. toctree::
    :caption: About
@@ -40,38 +40,27 @@ Linux und Open Source
 
    blog/index
 
-Schulung
---------
+Courses
+-------
 
-* :doc:`trainings/material/soup/python/group`
-* :doc:`trainings/repertoire/c-like/index`
-* :doc:`trainings/repertoire/c-like/cxx11`
-* :doc:`trainings/repertoire/design-patterns/design-patterns`
-* :doc:`trainings/repertoire/sysprog/index`
-* :doc:`trainings/repertoire/kernel-programming-basics`
-* :doc:`Buildmanagement <trainings/repertoire/cmake>` and Version
+* :doc:`/trainings/material/soup/python/group`
+* :doc:`/trainings/repertoire/c-like/index`
+* :doc:`/trainings/repertoire/c-like/cxx11`
+* :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
+* :doc:`/trainings/repertoire/linux-prog/linux-basics`
+* :doc:`/trainings/repertoire/linux-prog/sysprog/index`
+* :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`
+* :doc:`/trainings/repertoire/linux-prog/embedded`
+* :doc:`/trainings/repertoire/linux-prog/raspi-hands-on`
+* :doc:`Buildmanagement </trainings/repertoire/misc/cmake>` and Version
   Control
+
+jjj many more, structure needed
 
 :doc:`More ... </trainings/index>`
 
-Entwicklung
------------
+Consulting And Development
+--------------------------
 
-* Systemnahe Softwareentwicklung
-* Portierung nach Linux
-* Server- und Embeddedentwicklung
-* Multithreading und Realtime
-* Hardwareintegration
-* Driverentwicklung
-* Übertragungsprotokolle
-* Anpassungen und Fixes in Open-Source-Paketen
-* Rootfilesystem-Entwicklung
-
-Beratung
---------
-
-* Architektur
-* Versionskontrolle und Releasemanagement
-* Buildmanagement
-* Unittesting, Test Driven Development
-* OO Analyse und Design
+For all the fields where I offer courses, I also offer consulting and
+development services.

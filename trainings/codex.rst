@@ -1,5 +1,5 @@
-Richtlinien zur Veröffentlichung von Kursmaterial
-=================================================
+Privacy
+=======
 
 :doc:`Diese Homepage </about/site/index>` dient einerseits zur
 Vermarktung meines Angebotes; eine Homepage eben. Andererseits dient

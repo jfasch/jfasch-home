@@ -24,18 +24,18 @@ CMake
    
    * :doc:`/trainings/repertoire/c-like/c`
    * :doc:`/trainings/repertoire/c-like/cxx`
-   * :doc:`/trainings/repertoire/linux-basics`
+   * :doc:`/trainings/repertoire/linux-prog/linux-basics`
 
-.. image:: images/cmake_logo.jpg
+.. image:: cmake-images/cmake_logo.jpg
    :alt: CMake Logo
    :align: left
 
 .. contents::
    :local:
 
-As if :doc:`C <../repertoire/c-like/c>` and :doc:`C++
-<../repertoire/c-like/cxx>` weren't complicated enough, building
-programs written in those languages seems to be even more complicated.
+As if :doc:`C </trainings/repertoire/c-like/c>` and :doc:`C++
+</trainings/repertoire/c-like/cxx>` weren't complicated enough,
+building programs written in those languages is even more complicated.
 
 :doc:`(GNU-)Make <make>`, a low-level build tool to manage some of the
 intricacies of the build, has been invented rather early in
@@ -127,4 +127,4 @@ Recommended Prior Knowledge
   :doc:`/trainings/material/soup/c/040-functions-and-program-structure/group`
   for ``#include`` and more).
 * A rudimentary understanding of the Unix shell is also helpful (see
-  :doc:`/trainings/repertoire/linux-basics` for Shell topics, and more)
+  :doc:`/trainings/repertoire/linux-prog/linux-basics` for Shell topics, and more)

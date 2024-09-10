@@ -178,7 +178,7 @@ if html_theme == _ALABASTER:
         'show_powered_by': False,
         'fixed_sidebar': True,
         'logo': 'logo.png',
-        'description': 'Linux und Open Source',
+        'description': 'Programming Linux',
         'page_width': '90%',
         'sidebar_width': '20%',
 

@@ -3,8 +3,8 @@
 		 together with download links
    :keywords: schulung, training
 
-Training Material: Overview and Download
-========================================
+Course Material
+===============
 
 .. toctree::
    :maxdepth: 1

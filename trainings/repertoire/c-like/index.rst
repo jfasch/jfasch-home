@@ -31,7 +31,7 @@ C and C++ Programming
 
      c
 
-* :doc:`Advanced C <c-advanced>`.     
+* :doc:`c-advanced`.
 
   * Traps, traps, traps (and their avoidance)
   * The preprocessor: macro writing
@@ -44,8 +44,8 @@ C and C++ Programming
 
      c-advanced
 
-* :doc:`C++: A Broad Overview <cxx>`. A tour through C++: old school C++, and the new
-  C++ since 11.
+* :doc:`cxx`. A tour through C++: old school C++, and the new C++
+  since 11.
 
   * Encapsulation, and object oriented programming
   * Standard template library (STL)
@@ -67,3 +67,9 @@ C and C++ Programming
 
      cxx11
 
+* :doc:`design-patterns/design-patterns`
+
+  .. toctree::
+     :hidden:
+
+     design-patterns/design-patterns

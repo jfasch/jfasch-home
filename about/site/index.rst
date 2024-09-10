@@ -1,5 +1,5 @@
-About This Site
-===============
+This Site
+=========
 
 .. contents::
    :local:

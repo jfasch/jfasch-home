@@ -1,5 +1,5 @@
-Courses: Overview
-=================
+Course Overview
+===============
 
 .. contents::
    :local:
@@ -22,16 +22,17 @@ Courses: Overview
 Everything About Linux
 ----------------------
 
-* :doc:`Linux Basics: A Gentle Introduction <repertoire/linux-basics>`
-* :doc:`repertoire/sysprog/index`
-* :doc:`repertoire/kernel-programming-basics`
+* :doc:`repertoire/linux-prog/linux-basics`
+* :doc:`repertoire/linux-prog/sysprog/index`
+* :doc:`repertoire/linux-prog/kernel-programming-basics`
+* :doc:`repertoire/linux-prog/bash`
+* :doc:`repertoire/linux-prog/embedded`
+* :doc:`repertoire/linux-prog/raspi-hands-on`
 
 .. toctree::
    :hidden:
 
-   repertoire/linux-basics
-   repertoire/sysprog/index
-   repertoire/kernel-programming-basics
+   repertoire/linux-prog/index
 
 Programming Languages
 ---------------------
@@ -39,15 +40,13 @@ Programming Languages
 * :doc:`material/soup/python/group`
 * :doc:`repertoire/c-like/index`
 * :doc:`repertoire/c-like/cxx11`
-* :doc:`repertoire/design-patterns/design-patterns`
-* :doc:`repertoire/bash`
+* :doc:`repertoire/c-like/design-patterns/design-patterns`
 
 .. toctree::
    :hidden:
 
    material/soup/python/group
    repertoire/c-like/index
-   repertoire/bash
 
 .. there are a few links out there that reference those. have to keep
    them for a while:
@@ -61,25 +60,17 @@ Programming Languages
 Miscellaneous but Related
 -------------------------
 
-* :doc:`repertoire/embedded`
-* :doc:`A Week with the Raspberry Pi <repertoire/raspi-hands-on>`
-* :doc:`GNU Make: The Mother of All Build Tools <repertoire/make>`
-* :doc:`CMake: A Dirty But Powerful Build Tool <repertoire/cmake>`
-* :doc:`repertoire/unittests`
-* :doc:`repertoire/design-patterns/design-patterns`
+* :doc:`GNU Make: The Mother of All Build Tools <repertoire/misc/make>`
+* :doc:`CMake: A Dirty But Powerful Build Tool <repertoire/misc/cmake>`
+* :doc:`repertoire/misc/unittests`
 
 .. toctree::
    :hidden:
 
-   repertoire/embedded
-   repertoire/raspi-hands-on
-   repertoire/make
-   repertoire/cmake
-   repertoire/svn
-   repertoire/unittests
-   repertoire/design-patterns/design-patterns
+   repertoire/misc/index
 
 .. rubric:: Footnotes
 
 .. [#basteln_nicht] :doc:`Tinkering and soldering in an online setting
-                    <repertoire/raspi-hands-on>` is hard though.
+                    <repertoire/linux-prog/raspi-hands-on>` is hard
+                    though.

@@ -5,8 +5,8 @@
    :keywords: schulung, training, programming, c, c++, linker,
               toolchain
 
-C++: Einführung und Überblick
-=============================
+C++: Introduction
+=================
 
 .. sidebar:: Kursdaten
 

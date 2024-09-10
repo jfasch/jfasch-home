@@ -1,0 +1,4 @@
+Gyroscope
+---------
+
+Interrupts -> ``libgpiod``

@@ -4,15 +4,12 @@ Work in Progress
 .. toctree::
    :maxdepth: 1
 
-   web
-   python-training
-   stacks
+   fh-joanneum/index
+   refactoring-homepage
    seo
    playground/index
-   todo-misc.rst
    git
    screencast
-   fh-joanneum/index
    project-xxx/index
    packaging/index
    2022-04-13/index

@@ -127,4 +127,4 @@ Links
 -----
 
 * `PHP: A Fractal of Bad Design <https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/>`__
-* :doc:`Meine Web-Tutorials </about/site/work-in-progress/web>`
+
