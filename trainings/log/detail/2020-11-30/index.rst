@@ -14,7 +14,7 @@ Linux Basics (30.11.2020 - 3.12.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/linux-basics`
+   :doc:`/trainings/repertoire/linux-prog/linux-basics`
 
    **Material**
 

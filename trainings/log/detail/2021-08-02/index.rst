@@ -13,7 +13,6 @@ Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
    **Material**
 
    * :doc:`/trainings/material/soup/python/basics/group`
-   * Herdt vs. Python: :doc:`hier </trainings/repertoire/python/herdt>`.
    * `Github Repository <https://github.com/jfasch/2021-08-02>`__
 
 .. contents::
@@ -28,12 +27,6 @@ viele der Python-spezifische Elemente werden von :doc:`hier
 
 Themenreihenfolge und Übungen werden aus dem Herdt-Skriptum
 "Programmierung Grundlagen mit Beispielen in Python" übernommen.
-
-Das Herdt Skriptum ist etwas zu allgemein gehalten (geht auf
-Programmiersprachen im Allgemeinen ein, und ist dadurch verwirrend),
-weswegen in vielen Fällen Ausnahmen gemacht werden. Siehe :doc:`hier
-</trainings/repertoire/python/herdt>` für eine Zuordnung zu meinen
-Python Unterlagen.
 
 Log
 ---

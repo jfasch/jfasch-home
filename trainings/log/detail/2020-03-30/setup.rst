@@ -12,7 +12,7 @@ and :doc:`areas </trainings/material/soup/index>`. This site is also into
 build and project management [#project_management]_, so we do not let
 code bitrot.
 
-This site has a :doc:`CMake </trainings/repertoire/cmake>` build
+This site has a :doc:`CMake </trainings/repertoire/misc/cmake>` build
 associated with it, starting at the root directory of the checkout. It
 works as follows.
 

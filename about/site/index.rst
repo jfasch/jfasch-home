@@ -116,4 +116,3 @@ More
    opentraining/index
    work-in-progress/index
    recipes/index
-   courses/index

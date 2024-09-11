@@ -38,7 +38,7 @@ Shell Script
 
    **See also**
 
-   * :doc:`/trainings/repertoire/bash`
+   * :doc:`/trainings/repertoire/linux-prog/bash`
    * :download:`/trainings/material/pdf/100-shell-scripting.pdf`
 
 Script usage ...

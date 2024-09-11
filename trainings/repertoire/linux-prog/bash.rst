@@ -48,4 +48,4 @@ Empfohlene Vorkenntnisse
 
 Erfahrung in Unix und der Umgang mit der Shell auf der Commandline
 werden vorausgesetzt. Siehe dazu auch den :doc:`Linux Einführungskurs
-<linux-basics>`.
+</trainings/repertoire/linux-prog/linux-basics>`.

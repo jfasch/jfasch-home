@@ -5,7 +5,7 @@ C++: Building with CMake
 
 As a project become larger, it becomes increasingly difficult to
 comprehensively manage it using :doc:`Make
-</trainings/repertoire/make>`.
+</trainings/repertoire/misc/make>`.
 
 There are a number of open source alternatives to using Make whose
 goal is to make project maintenance easier (software build and

@@ -14,7 +14,7 @@ Linux Kernel Driver Development Basics (14.12.2020)
 
    **Official Description**
 
-   :doc:`/trainings/repertoire/kernel-programming-basics`
+   :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`
 
    **Course Details**
 
@@ -28,7 +28,7 @@ Agenda
 ------
 
 The training will be based upon
-:doc:`/trainings/repertoire/kernel-programming-basics`.
+:doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`.
 
 * **Modules**
 

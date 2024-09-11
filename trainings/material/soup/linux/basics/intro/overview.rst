@@ -62,7 +62,7 @@ Kernel: Where The Heavy Stuff Is
 
 .. sidebar:: 
 
-   See :doc:`/trainings/repertoire/kernel-programming-basics` for a
+   See :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics` for a
    look under the surface.
 
 * Interrupts from hardware devices

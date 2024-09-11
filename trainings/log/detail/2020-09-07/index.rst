@@ -88,7 +88,7 @@ Special Topics
 
 * Unit Testing, Test Driven Development, Design Patterns
 
-  * Excerpt from :doc:`/trainings/repertoire/unittests`
+  * Excerpt from :doc:`/trainings/repertoire/misc/unittests`
     (:download:`/trainings/material/pdf/060-design-patterns-unittests.pdf`)
   * :doc:`/trainings/material/soup/python/swdev/unittest`
 

@@ -10,7 +10,7 @@ Design- and Architectural Patterns With C++ (2022-10-24 - 2022-10-26)
 .. sidebar::
 
    * Course Description:
-     :doc:`/trainings/repertoire/design-patterns/design-patterns`
+     :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
    * :doc:`/trainings/material/soup/cxx-design-patterns/group`
    * `Github Repository <https://github.com/jfasch/2022-10-24>`__
 

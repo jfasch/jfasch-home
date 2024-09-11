@@ -20,9 +20,9 @@ Linux on Raspberry Pi
      <https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
    * `Linux Command Line – Basics
      <https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/linux-basis>`__
-   * :doc:`/trainings/repertoire/linux-basics`
-   * :doc:`/trainings/repertoire/raspi-hands-on`
-   * :doc:`/trainings/repertoire/bash`
+   * :doc:`/trainings/repertoire/linux-prog/linux-basics`
+   * :doc:`/trainings/repertoire/linux-prog/embedded/raspi-hands-on`
+   * :doc:`/trainings/repertoire/linux-prog/bash`
 
    **Material**
 

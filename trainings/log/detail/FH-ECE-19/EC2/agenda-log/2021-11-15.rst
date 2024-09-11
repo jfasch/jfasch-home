@@ -50,7 +50,7 @@ Work Environment
 Systems Programming: Files, Directories, Links ...
 --------------------------------------------------
 
-* :doc:`/trainings/repertoire/sysprog/index`, and Python. Files, file
+* :doc:`/trainings/repertoire/linux-prog/sysprog/index`, and Python. Files, file
   descriptors, File IO.
 
   * C: System Calls (53, 54, 55, 56)

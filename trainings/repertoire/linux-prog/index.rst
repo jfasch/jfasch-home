@@ -7,5 +7,4 @@ Linux, And Programming
    bash
    kernel-programming-basics
    linux-basics
-   embedded
-   raspi-hands-on
+   embedded/index

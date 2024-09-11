@@ -1,6 +1,11 @@
 Course Overview
 ===============
 
+.. toctree::
+   :hidden:
+
+   template
+
 .. contents::
    :local:
 
@@ -26,8 +31,7 @@ Everything About Linux
 * :doc:`repertoire/linux-prog/sysprog/index`
 * :doc:`repertoire/linux-prog/kernel-programming-basics`
 * :doc:`repertoire/linux-prog/bash`
-* :doc:`repertoire/linux-prog/embedded`
-* :doc:`repertoire/linux-prog/raspi-hands-on`
+* :doc:`repertoire/linux-prog/embedded/index` jjj descend?
 
 .. toctree::
    :hidden:
@@ -37,7 +41,7 @@ Everything About Linux
 Programming Languages
 ---------------------
 
-* :doc:`material/soup/python/group`
+* :doc:`repertoire/python/index`
 * :doc:`repertoire/c-like/index`
 * :doc:`repertoire/c-like/cxx11`
 * :doc:`repertoire/c-like/design-patterns/design-patterns`
@@ -45,6 +49,7 @@ Programming Languages
 .. toctree::
    :hidden:
 
+   repertoire/python/index
    material/soup/python/group
    repertoire/c-like/index
 
@@ -72,5 +77,6 @@ Miscellaneous but Related
 .. rubric:: Footnotes
 
 .. [#basteln_nicht] :doc:`Tinkering and soldering in an online setting
-                    <repertoire/linux-prog/raspi-hands-on>` is hard
-                    though.
+                    <repertoire/linux-prog/embedded/raspi-hands-on>`
+                    is hard though.
+

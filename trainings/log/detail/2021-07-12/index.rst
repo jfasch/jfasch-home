@@ -203,7 +203,7 @@ Toolchain: C/C++ Build (How Complicated Can Things Be?)
          .. image:: wacom-sketches/toolchain-cmake.png
 	    :scale: 50%
 
-       * Using :doc:`CMake </trainings/repertoire/cmake>` to do manage
+       * Using :doc:`CMake </trainings/repertoire/misc/cmake>` to do manage
          the build. What is still left to the developer is to define "module"
          dependencies.
 

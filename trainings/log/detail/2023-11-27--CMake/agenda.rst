@@ -10,7 +10,7 @@ Agenda: CMake (2023-11-27)
 .. sidebar::
 
    * :doc:`Main Training Page <index>`
-   * :doc:`/trainings/repertoire/cmake` (Course description)
+   * :doc:`/trainings/repertoire/misc/cmake` (Course description)
 
 Toolchain Introduction
 ----------------------

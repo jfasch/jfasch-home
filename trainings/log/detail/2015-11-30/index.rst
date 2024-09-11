@@ -13,7 +13,7 @@ Die Inter-Thread Kommunkation mit Hilfe von Condition Variablen habe
 ich nur frontal vorgeführt (mit viel Diskussion, vielen Dank an
 Stefan), mit Beispielcode aus meinem `Github-Projekt
 <https://github.com/jfasch/jf-linuxexamples>`__) zum Kurs
-:doc:`/trainings/repertoire/sysprog/index`.
+:doc:`/trainings/repertoire/linux-prog/sysprog/index`.
 
 Das Beispiel war eine "Message Queue", händisch ausprogrammiert mit
 Hilfe eines Mutex und zweier Condition Variablen ("not full", "not

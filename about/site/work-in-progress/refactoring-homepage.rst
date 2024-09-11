@@ -11,19 +11,40 @@ Refactoring The Homepage
   * Python: main page in repertoire/python, mit verweis auf
     soup/python/group
   * CMake detto
-  * Section course style, github repo, privacy :doc:`/trainings/org`
-  * Datenschutz raus
+  * Sidebar
+
+    * Link to :doc:`/trainings/booking`
+    * Link to :doc:`/trainings/material/soup/index`
+
+  * :doc:`/trainings/org`
+
+    * Section course style, github repo, privacy 
+    * Datenschutz raus
+    * :doc:`/trainings/exercises`?
+
+  * Once repertoire/ clean, replace group.rst references with possibly
+    more appropriate references/ references
 
   * Structural
 
     * complete :doc:`/trainings/repertoire/linux-prog/index`
 
+      * Blah around toctree blah
       * Going embedded
     
         * Linux and hardware
         * Realtime
 
+    * C and C++ Programming :doc:`/trainings/repertoire/c-like/index`
+
+    * complete :doc:`/trainings/repertoire/linux-prog/embedded/index`
     * complete :doc:`/trainings/repertoire/misc/index`
+
+    * :doc:`/trainings/repertoire/python/index`: move text from
+      soup/python/group to here, DEPEND on whats left (the material)
+
+      if well, let the other repertoires behave the same where
+      appropriate
 
   * Cross links (Schubladendenken ist Scheisse)
 
@@ -36,7 +57,6 @@ Refactoring The Homepage
   * Remove :doc:`/about/site/courses/index`
 
 * Python: link to "more differentiated view" raus
-* C and C++ Programming :doc:`/trainings/repertoire/c-like/index`
 * :doc:`/trainings/org`
 
   * -> "booking"
@@ -56,12 +76,12 @@ Refactoring The Homepage
   * :doc:`/trainings/repertoire/linux-prog/sysprog/multithreading`
   * :doc:`/trainings/repertoire/linux-prog/sysprog/fortgeschrittenes`
   * :doc:`/trainings/repertoire/linux-prog/bash`
-  * :doc:`/trainings/repertoire/linux-prog/embedded`
-  * :doc:`/trainings/repertoire/linux-prog/raspi-hands-on`
+  * :doc:`/trainings/repertoire/linux-prog/embedded/embedded`
+  * :doc:`/trainings/repertoire/linux-prog/embedded/raspi-hands-on`
   * :doc:`/trainings/repertoire/c-like/c`
   * :doc:`/trainings/repertoire/c-like/cxx`
-  * :doc:`/trainings/repertoire/make`
-  * :doc:`/trainings/repertoire/unittests`
+  * :doc:`/trainings/repertoire/misc/make`
+  * :doc:`/trainings/repertoire/misc/unittests`
   * :doc:`/trainings/log/index`
   * :doc:`/about/myself/index`
 

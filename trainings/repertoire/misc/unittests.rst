@@ -56,16 +56,24 @@ die Tests nicht zur Last werden zu lassen.
 
 Der Vortragende kann aufgrund seiner Herkunft mit folgendem aufwarten:
 
-* `Boost.Test (C++)
+* Python: ``pytest`` (:doc:`course material
+  </trainings/material/soup/python/swdev/pytest/group>`, `official
+  site <https://docs.pytest.org/>`__)
+* Python: ``unittest`` (:doc:`course material
+  </trainings/material/soup/python/swdev/unittest>`, `official site
+  <https://docs.python.org/3.7/library/unittest.html>`__)
+* C++: GoogleTest (:doc:`course material
+  </trainings/material/soup/unittest/group>`, `official site
+  <https://github.com/google/googletest>`__)
+* C++: `Boost.Test
   <https://www.boost.org/doc/libs/1_72_0/libs/test/doc/html/index.html>`__
-* `Google Test (C++) <https://github.com/google/googletest>`__
-* `Python's unittest Modul
-  <https://docs.python.org/3.7/library/unittest.html>`__
 
 Der Inhalt des Kurses ist aber die Sache, nicht die Sprache. Ich kann
 den Teilnehmern nicht Java oder C# beibringen (beide mit üppigen
 Unittestframeworks ausgestattet), aber die Einfachheit des Prinzips
 wird sich wohl auch dort nicht verbergen.
+
+jjj link to delphi training
 
 Empfohlene Vorkenntnisse
 ------------------------

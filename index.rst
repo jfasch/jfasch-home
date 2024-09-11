@@ -20,6 +20,7 @@ Programming Linux
    trainings/index
    trainings/log/index
    trainings/material/index
+   trainings/booking
    trainings/org
    trainings/codex
 
@@ -43,19 +44,35 @@ Programming Linux
 Courses
 -------
 
-* :doc:`/trainings/material/soup/python/group`
-* :doc:`/trainings/repertoire/c-like/index`
-* :doc:`/trainings/repertoire/c-like/cxx11`
-* :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
-* :doc:`/trainings/repertoire/linux-prog/linux-basics`
-* :doc:`/trainings/repertoire/linux-prog/sysprog/index`
-* :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`
-* :doc:`/trainings/repertoire/linux-prog/embedded`
-* :doc:`/trainings/repertoire/linux-prog/raspi-hands-on`
-* :doc:`Buildmanagement </trainings/repertoire/misc/cmake>` and Version
-  Control
+.. list-table::
+   :align: left
+   :widths: auto
 
-jjj many more, structure needed
+   * * Linux
+
+       * :doc:`/trainings/repertoire/linux-prog/linux-basics`
+       * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
+       * :doc:`/trainings/repertoire/linux-prog/embedded/index`
+       * :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`
+       * :doc:`/trainings/repertoire/linux-prog/bash`
+       
+       More: :doc:`/trainings/repertoire/linux-prog/index`
+
+     * Python
+
+       * :doc:`/trainings/repertoire/python/index`
+       * blah
+       * blech
+
+   * * C/C++
+
+       * blah
+       * blech
+
+     * Miscellaneous
+
+       * blah
+       * blech
 
 :doc:`More ... </trainings/index>`
 

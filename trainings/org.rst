@@ -82,5 +82,5 @@ werden wahlweise in Deutsch oder Englisch gehalten.
                        exklusiv für eine Firma gehalten wird -
                        üblicherweise am Firmenstandort.
 .. [#basteln_nicht] :doc:`Gemeinsam mit Hardware zu basteln
-                    <repertoire/raspi-hands-on>` gestaltet sich online
-                    schwierig.
+                    <repertoire/linux-prog/embedded/raspi-hands-on>`
+                    gestaltet sich online schwierig.

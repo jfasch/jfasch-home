@@ -14,7 +14,6 @@ Programmierung Grundlagen, anhand von Python (2022-04-05 - 2022-04-08)
    **Material**
 
    * :doc:`/trainings/material/soup/python/basics/group`
-   * Herdt vs. Python: :doc:`hier </trainings/repertoire/python/herdt>`.
    * `Github Repository <https://github.com/jfasch/2022-04-05>`__
 
    **Notebook**
@@ -36,15 +35,6 @@ Programmierung Grundlagen, anhand von Python (2022-04-05 - 2022-04-08)
 Die Kurssprache des Kurses "Programmierung Grundlagen" ist Python;
 viele der Python-spezifische Elemente werden von :doc:`hier
 </trainings/material/soup/python/basics/group>` unterrichtet.
-
-Themenreihenfolge und Übungen werden aus dem Herdt-Skriptum
-"Programmierung Grundlagen mit Beispielen in Python" übernommen.
-
-Das Herdt Skriptum ist etwas zu allgemein gehalten (geht auf
-Programmiersprachen im Allgemeinen ein, und ist dadurch verwirrend),
-weswegen in vielen Fällen Ausnahmen gemacht werden. Siehe :doc:`hier
-</trainings/repertoire/python/herdt>` für eine Zuordnung zu meinen
-Python Unterlagen.
 
 Log
 ---

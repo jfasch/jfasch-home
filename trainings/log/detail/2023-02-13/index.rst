@@ -385,7 +385,7 @@ More From The Commandline
 Multithreading (And C++)
 ........................
 
-From :doc:`/trainings/repertoire/sysprog/multithreading`:
+From :doc:`/trainings/repertoire/linux-prog/sysprog/multithreading`:
 
 * Race Conditions, and prevention thereof (mutexes)
 * Communication mechanisms (condition variable)

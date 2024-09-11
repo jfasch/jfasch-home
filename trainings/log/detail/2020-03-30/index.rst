@@ -33,7 +33,7 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
    * :doc:`C Einführung </trainings/repertoire/c-like/c>`
    * :doc:`C Advanced </trainings/repertoire/c-like/c-advanced>`
    * :doc:`C++ </trainings/repertoire/c-like/cxx>`
-   * :doc:`CMake </trainings/repertoire/cmake>`
+   * :doc:`CMake </trainings/repertoire/misc/cmake>`
 
    **Folien**
 

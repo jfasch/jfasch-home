@@ -28,25 +28,25 @@ material.
    * - **Description**
      - **PDF (unmaintained)**
      - **OpenTraining**
-   * - :doc:`/trainings/repertoire/linux-basics`
+   * - :doc:`/trainings/repertoire/linux-prog/linux-basics`
      - :download:`basics <pdf/010-linux-basics.pdf>`
      - :doc:`soup/linux/group`
-   * - :doc:`/trainings/repertoire/sysprog/basics`
+   * - :doc:`/trainings/repertoire/linux-prog/sysprog/basics`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      - :doc:`/trainings/material/soup/linux/sysprog/basics/group`
-   * - :doc:`/trainings/repertoire/sysprog/network`
+   * - :doc:`/trainings/repertoire/linux-prog/sysprog/network`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
-   * - :doc:`/trainings/repertoire/sysprog/multithreading`
+   * - :doc:`/trainings/repertoire/linux-prog/sysprog/multithreading`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      -
-   * - :doc:`/trainings/repertoire/sysprog/fortgeschrittenes`
+   * - :doc:`/trainings/repertoire/linux-prog/sysprog/fortgeschrittenes`
      - :download:`sysprog <pdf/020-linux-sysprog--en.pdf>`
      - :doc:`soup/linux/sysprog/group`
-   * - :doc:`/trainings/repertoire/embedded`
+   * - :doc:`/trainings/repertoire/linux-prog/embedded/embedded`
      -
      - :doc:`soup/linux/hardware/group`
-   * - :doc:`/trainings/repertoire/raspi-hands-on`
+   * - :doc:`/trainings/repertoire/linux-prog/embedded/raspi-hands-on`
      -
      - :doc:`soup/linux/hardware/group`
    * - :doc:`/trainings/repertoire/c-like/c`
@@ -80,25 +80,22 @@ material.
    * - :doc:`/trainings/material/soup/python/misc/group`
      - 
      - :doc:`/trainings/material/soup/python/misc/group`
-   * - :doc:`/trainings/repertoire/design-patterns/design-patterns`
+   * - :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      -
-   * - :doc:`/trainings/repertoire/unittests`
+   * - :doc:`/trainings/repertoire/misc/unittests`
      - :download:`Unittesting/TDD <pdf/060-design-patterns-unittests.pdf>`
      - :doc:`Unittest <soup/unittest/group>`
-   * - :doc:`/trainings/repertoire/kernel-programming-basics`
+   * - :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`
      - :download:`Kernel <pdf/400-kernel.pdf>`
      - (See `jf-kernel-course on Github
        <https://github.com/jfasch/jf-kernel-course>`__)
-   * - :doc:`/trainings/repertoire/bash`
+   * - :doc:`/trainings/repertoire/linux-prog/bash`
      - :download:`Bash <pdf/100-shell-scripting.pdf>`
      -
-   * - :doc:`/trainings/repertoire/make`
+   * - :doc:`/trainings/repertoire/misc/make`
      - :download:`GNU Make <pdf/040-gnu-make.pdf>`
      -
-   * - :doc:`/trainings/repertoire/cmake`
+   * - :doc:`/trainings/repertoire/misc/cmake`
      - :download:`CMake <pdf/045-cmake.pdf>`
-     -
-   * - :doc:`/trainings/repertoire/svn`
-     - :download:`Subversion <pdf/070-subversion.pdf>`
      -
