@@ -16,12 +16,6 @@ Refactoring The Homepage
     * Link to :doc:`/trainings/booking`
     * Link to :doc:`/trainings/material/soup/index`
 
-  * :doc:`/trainings/org`
-
-    * Section course style, github repo, privacy 
-    * Datenschutz raus
-    * :doc:`/trainings/exercises`?
-
   * Once repertoire/ clean, replace group.rst references with possibly
     more appropriate references/ references
 
@@ -54,22 +48,10 @@ Refactoring The Homepage
 * :doc:`/about/myself/index`
 
   * Alles auf eine seite
-  * Remove :doc:`/about/site/courses/index`
 
 * Python: link to "more differentiated view" raus
-* :doc:`/trainings/org`
-
-  * -> "booking"
-  * move course style and privacy into :doc:`/trainings/index`
-
-* :doc:`/trainings/codex`
-
-  * Link to courses where gh is public/private
-
 * Englisch
 
-  * :doc:`/trainings/codex`
-  * :doc:`/trainings/org`
   * :doc:`/trainings/repertoire/linux-prog/linux-basics`
   * :doc:`/trainings/repertoire/linux-prog/sysprog/basics`
   * :doc:`/trainings/repertoire/linux-prog/sysprog/network`
@@ -84,15 +66,5 @@ Refactoring The Homepage
   * :doc:`/trainings/repertoire/misc/unittests`
   * :doc:`/trainings/log/index`
   * :doc:`/about/myself/index`
-
-* Struktur Kursbeschreibungen
-
-  * Links auf material in sidebar, course material
-
-    * remove :doc:`/trainings/material/index`
-
-  * Links auf training@ in sidebar
-  * Links auf sample trainings in sidebar
-  * Toc
 
 * jjj suchen

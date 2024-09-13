@@ -22,8 +22,7 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
 
    * Bitte einen `Github <https://github.com/>`__ Account mitbringen,
      um an Übungen teilzunehmen. Diese werden in einem Private
-     Repository stattfinden (Link folgt). Siehe hierzu die
-     :doc:`Privatheitsrichtlinien </trainings/codex>`.
+     Repository stattfinden (Link folgt).
    * :doc:`Hier die Bauanleitung <setup>`; bitte wenn geht vorab
      ausprobieren (:doc:`Feedback </about/myself/contact>` sehr
      willkommen).

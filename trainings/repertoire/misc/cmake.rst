@@ -6,8 +6,8 @@
 	      linux, embedded, linker, compiler, project, management,
 	      project management
 
-CMake
-=====
+CMake: A Dirty But Powerful Build Tool
+======================================
 
 .. sidebar:: The Course
 

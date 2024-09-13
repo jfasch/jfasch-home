@@ -41,12 +41,6 @@ Python Grundlagen (13.5.2020 - 14.5.2020 bei einer Firma in Graz)
    Coding will be done in a git clone of this homepage, in a
    :doc:`sandbox <code/index>` dedicated to this training.
 
-   **Privacy Statement**
-
-   Please note that, although this concept page is publicly available,
-   everything will follow a privacy guideline; see :doc:`here
-   </trainings/codex>` for more.
-
 Environment
 -----------
 

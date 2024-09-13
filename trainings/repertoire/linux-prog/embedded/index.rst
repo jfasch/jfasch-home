@@ -1,5 +1,5 @@
-Embedded Linux Programming
-==========================
+Embedded Linux
+==============
 
 .. toctree::
 

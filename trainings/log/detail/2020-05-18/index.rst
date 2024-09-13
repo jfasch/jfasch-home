@@ -27,8 +27,6 @@ Python Individualtraining (18.5.2020 - 19.5.2020)
    **Material**
 
    * :doc:`/trainings/material/soup/python/basics/group`
-   * Anleitung: :doc:`Entstandenes Material und Übungen
-     </trainings/exercises>`
 
 Kursverlauf
 -----------

@@ -1,18 +1,17 @@
-Bisher Gehaltene
-================
+Log Of Past Courses
+===================
 
-Diese Liste ist als Logbuch zu verstehen, das ich verwende, um den
-Kursteilnehmern das zustandegekommene Material zukommen zu lassen. Und
-die potentiellen zukünftigen Kursteilnehmer können einen Eindruck
-bekommen, was auf sie zukommt.
+Course preparations (agendae) and outcomes (what really happened) are
+maintained on this site. When a course is over, customers will not be
+left with a deck of printed material, but rather with a link to their
+custom course page [#consent]_.
 
-Das Publizieren des Materials geschieht natürlich nur mit dem
-Einverständnis des Kunden; siehe dazu :doc:`die Richtlinien <../codex>`.
+Here is the entire list of such past courses. Use it to get an
+impression of how courses are held.
 
 .. toctree::
    :hidden:
 
-   ../codex
    detail/index
 
 C++: A One-Day Overview (Date Yet Unknown)
@@ -1392,3 +1391,8 @@ Softwareentwicklung unter Linux (20.10.2010 - 24.10.2010, `Mathias Kettner <http
 * Software Build
 * Git
 
+
+
+.. rubric:: Footnotes
+.. [#consent] Course content will only be published if the customer
+              agrees.

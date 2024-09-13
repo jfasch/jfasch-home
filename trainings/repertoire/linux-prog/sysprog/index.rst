@@ -7,8 +7,8 @@
               multiprocessing, network, tcp-ip, udp
 
 
-Linux Systems Programming
-=========================
+Linux Systems Programming (Course Series)
+=========================================
 
 .. sidebar::
 

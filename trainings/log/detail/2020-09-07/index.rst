@@ -48,8 +48,7 @@ Github for Exercises
 
 Please create `Github <https://github.com/>`__ accounts and send them
 to training@faschingbauer.co.at. We will do exercises via a private
-repository on Github. (See the :doc:`privacy statement
-</trainings/codex>`.)
+repository on Github.
 
 Agenda
 ------

@@ -5,8 +5,8 @@
               linux, embedded, make gnu, gnu make, rule, dependency,
               build, build management
 
-GNU Make: Die Mutter aller Build Tools
-======================================
+GNU Make: The Mother of All Build Tools
+=======================================
 
 .. sidebar:: Kursdaten
 

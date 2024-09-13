@@ -32,9 +32,9 @@ Python: The Language Fundamentals
 	  * :doc:`Complete Python material
             </trainings/material/soup/python/group>`
       * * **Related**
-	* * :doc:`advanced`
-	  * :doc:`swdev`
-	  * :doc:`misc`
+	* * :doc:`/trainings/repertoire/python/advanced`
+	  * :doc:`/trainings/repertoire/python/swdev`
+	  * :doc:`/trainings/repertoire/python/misc`
       * * **Booking**
 	* :doc:`/trainings/booking`
 
@@ -76,3 +76,8 @@ Prerequisites
 Attendees should have a little programming experience from other
 languages. Python is easy to learn, but complete computer noobs demand
 a different focus than this course has.
+
+Sample Trainings
+----------------
+
+Links to course log here

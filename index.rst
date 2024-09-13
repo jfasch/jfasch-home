@@ -8,9 +8,6 @@
 .. rst-class:: jf-main-page
 
 	       
-Programming Linux
-=================
-
 .. toctree::
    :caption: Courses
    :hidden:
@@ -18,11 +15,9 @@ Programming Linux
    :titlesonly:
 
    trainings/index
-   trainings/log/index
-   trainings/material/index
+   trainings/material/soup/index
    trainings/booking
-   trainings/org
-   trainings/codex
+   trainings/log/index
 
 .. toctree::
    :caption: About
@@ -41,14 +36,14 @@ Programming Linux
 
    blog/index
 
-Courses
--------
+Linux Courses: OS And Programming
+=================================
 
 .. list-table::
    :align: left
-   :widths: auto
+   :widths: 50, 50
 
-   * * Linux
+   * * **Linux**
 
        * :doc:`/trainings/repertoire/linux-prog/linux-basics`
        * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
@@ -56,28 +51,30 @@ Courses
        * :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`
        * :doc:`/trainings/repertoire/linux-prog/bash`
        
-       More: :doc:`/trainings/repertoire/linux-prog/index`
+       :doc:`More ... </trainings/repertoire/linux-prog/index>`
 
-     * Python
+     * **Python**
 
-       * :doc:`/trainings/repertoire/python/index`
-       * blah
-       * blech
+       * :doc:`/trainings/repertoire/python/basics`
+       * :doc:`/trainings/repertoire/python/advanced`
+       * :doc:`/trainings/repertoire/python/swdev`
+          
+       :doc:`More ... </trainings/repertoire/python/index>`
 
-   * * C/C++
+   * * **C/C++**
+ 
+       * :doc:`/trainings/repertoire/c-like/c`
+       * :doc:`/trainings/repertoire/c-like/c-advanced`
+       * :doc:`/trainings/repertoire/c-like/cxx`
+       * :doc:`/trainings/repertoire/c-like/cxx11`
+       * :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
 
-       * blah
-       * blech
+       :doc:`More ... </trainings/repertoire/c-like/index>`
 
-     * Miscellaneous
+     * **Miscellaneous**
 
-       * blah
-       * blech
+       * :doc:`/trainings/repertoire/misc/make`
+       * :doc:`/trainings/repertoire/misc/cmake`
+       * :doc:`/trainings/repertoire/misc/unittests`
 
-:doc:`More ... </trainings/index>`
-
-Consulting And Development
---------------------------
-
-For all the fields where I offer courses, I also offer consulting and
-development services.
+       :doc:`More ... </trainings/repertoire/misc/index>`
