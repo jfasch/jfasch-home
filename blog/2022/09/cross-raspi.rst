@@ -38,7 +38,7 @@ all hard, provided that you bring basic Linux understanding (which you
 should if you program for it).
 
 In my opinion (please given me :doc:`feedback
-</about/myself/contact>`), this article describes the most
+</about/myself/index>`), this article describes the most
 close-to-correct way to build a toolchain for a target that does not
 come with a toolchain. Although I describe the situation for the
 Raspberry (because that was my primary intention), it will sure work
@@ -387,7 +387,7 @@ Afterword
 
 I hope I could help you with this article. Share it if I could, or, if
 I couldn't, feel free to send me an :doc:`email
-</about/myself/contact>` explaining why.
+</about/myself/index>` explaining why.
 
 Either way: cross development is not easy, given the huge number of
 dependencies between target libraries. This is a rather complex and

@@ -38,7 +38,7 @@ Linux, and to test all the details; this is what I want to share with
 you in this post. It is sure not a definitive guide as I am not a
 Microsoft expert [#driver_dont_tell_anybody]_, and things might have
 changed as you read this. Please :doc:`inform me
-</about/myself/contact>` if you have news.
+</about/myself/index>` if you have news.
 
 .. _desktop-sharing-x11-revival:
 

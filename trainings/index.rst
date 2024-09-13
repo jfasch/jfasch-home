@@ -29,7 +29,7 @@ Courses Overview
       * * **Individual Trainings**
 	* If you do not find a course description that fits your
 	  needs, that is not a problem. Write an :doc:`Email
-	  </about/myself/contact>`, and we'll compose a custom
+	  </about/myself/index>`, and we'll compose a custom
 	  training.
 
       * * **Booking**
@@ -82,6 +82,8 @@ C And C++ Courses
 * :doc:`repertoire/c-like/cxx11`
 * :doc:`repertoire/c-like/design-patterns/design-patterns`
 
+:doc:`More ... <repertoire/c-like/index>`
+
 Miscellaneous Courses
 ---------------------
 
@@ -93,6 +95,8 @@ Miscellaneous Courses
 * :doc:`repertoire/misc/make`
 * :doc:`repertoire/misc/cmake`
 * :doc:`repertoire/misc/unittests`
+
+:doc:`More ... <repertoire/misc/index>`
 
 .. rubric:: Footnotes
 

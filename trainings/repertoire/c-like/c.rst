@@ -8,14 +8,25 @@
 C: Introduction
 ===============
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 5 Tage
-      Material, :doc:`/trainings/material/soup/c/group`
-      PDF Slides (unmaintained), :download:`C </trainings/material/pdf/050-c.pdf>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 5 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/c/group`
+      * * **Related**
+	* * :doc:`c-advanced`
+	  * :doc:`/trainings/repertoire/misc/unittests`
+      * * **Booking**
+	* :doc:`/trainings/booking`
 
 Der `Bibel von Brian Kernighan und Dennis Ritchie
 <http://de.wikipedia.org/wiki/The_C_Programming_Language>`__ kann man

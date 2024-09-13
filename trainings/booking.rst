@@ -13,7 +13,8 @@ Please send an email training@faschingbauer.co.at, describing your
 wishes. Cite course descriptions that you read :doc:`here
 </trainings/index>`, list topics that you want included in a
 training. The information need not be structured - just throw it at me
-(:doc:`just call me </about/myself/index>`), and lets get in contact.
+(or :doc:`simply call me </about/myself/index>`), and lets get in
+contact.
 
 We'll then compose a training for you; this need not necessarily match
 a :doc:`course description </trainings/index>`, but can be composed

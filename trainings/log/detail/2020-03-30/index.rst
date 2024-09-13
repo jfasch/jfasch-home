@@ -24,7 +24,7 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
      um an Übungen teilzunehmen. Diese werden in einem Private
      Repository stattfinden (Link folgt).
    * :doc:`Hier die Bauanleitung <setup>`; bitte wenn geht vorab
-     ausprobieren (:doc:`Feedback </about/myself/contact>` sehr
+     ausprobieren (:doc:`Feedback </about/myself/index>` sehr
      willkommen).
 
    **Schulungsbeschreibungen**

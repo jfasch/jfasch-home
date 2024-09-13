@@ -8,13 +8,26 @@
 C: Advanced Topics
 ==================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 3 Tage
-      PDF Slides, :download:`C </trainings/material/pdf/050-c.pdf>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 3 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/c/group`
+      * * **Related**
+	* * :doc:`c`
+	  * :doc:`/trainings/repertoire/misc/unittests`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 C ist eine kleine und einfache Sprache, was den Sprachumfang angeht. C
 ist auch eine schnelle Sprache, da compilierter Maschinencode

@@ -11,10 +11,22 @@ C and C++ Programming
    .. list-table::
       :align: left
 
-      * * **Requirements**
-	* A basic understanding of programming: variables, loops
-      * * **Booking**
-	* training@faschingbauer.co.at
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/c/group`
+	  * :doc:`/trainings/material/soup/cxx/group`
+	  * :doc:`/trainings/material/soup/cxx03/group`
+	  * :doc:`/trainings/material/soup/cxx11/group`
+	  * :doc:`/trainings/material/soup/cxx-design-patterns/group`
+      * * **Related**
+	* * :doc:`/trainings/repertoire/misc/make`
+	  * :doc:`/trainings/repertoire/misc/cmake`
+	  * :doc:`/trainings/repertoire/misc/unittests`
+
+
+Courses
+-------
 
 * :doc:`c`. A gentle intro to C, as envisioned by the inventors of the
   language.
