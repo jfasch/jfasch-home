@@ -8,15 +8,29 @@
 C++: Introduction
 =================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 5 Tage
-      Material (C++03): :doc:`/trainings/material/soup/cxx03/group`
-      Material (C++11): :doc:`/trainings/material/soup/cxx11/group`
-      Material (C++ misc.traps): :doc:`/trainings/material/soup/cxx/group`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 5 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/cxx03/group`
+	  * :doc:`/trainings/material/soup/cxx11/group`
+	  * :doc:`/trainings/material/soup/cxx/group`
+      * * **Related**
+	* * :doc:`cxx11`
+	  * :doc:`design-patterns/design-patterns`
+	  * :doc:`../misc/unittests`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 C++ wurde ursprünglich erfunden, um als Superset des guten alten C
 dessen Schwächen leichter handhabbar zu machen. Die Eckpfeiler der

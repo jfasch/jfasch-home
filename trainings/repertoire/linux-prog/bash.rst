@@ -8,13 +8,25 @@
 Shell Scripting/Bourne Again Shell (Bash)
 =========================================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 3 Tage
-      PDF Slides, :download:`Bash </trainings/material/pdf/100-shell-scripting.pdf>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 3 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * PDF Slides, :download:`Bash </trainings/material/pdf/100-shell-scripting.pdf>`
+      * * **Related**
+	* * :doc:`linux-basics`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 Die Shell ist nicht nur ein notwendiges Übel, um mit dem System
 sprechen zu können. Sie ist auch eine vollständige Programmiersprache
@@ -26,11 +38,8 @@ Programmierung mit der Shell, anhand der "Bourne Again Shell", kurz
 Shellprogrammierung den Ruf des Schmutzigen zu nehmen und ihr
 stattdessen eher einen Hauch von perverser Ästhetik zu verpassen.
 
-Zielpublikum
-------------
-
-Kursinhalt
-----------
+Course Outline
+--------------
 
 * **Die Geschichte der Shell**. Die Shell und Unix haben eine lange
   und interessante gemeinsame Geschichte
@@ -43,8 +52,8 @@ Kursinhalt
 * **Verschiedenes**. Stringmanipulation ("Parameter Expansion") und
   verschiedene andere obskure Konstrukte, ohne die man nicht auskommt
 
-Empfohlene Vorkenntnisse
-------------------------
+Prerequisites
+-------------
 
 Erfahrung in Unix und der Umgang mit der Shell auf der Commandline
 werden vorausgesetzt. Siehe dazu auch den :doc:`Linux Einführungskurs

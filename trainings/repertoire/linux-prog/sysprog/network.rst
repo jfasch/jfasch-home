@@ -1,13 +1,28 @@
 Linux Systems Programming: Network Programming
 ==============================================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 2 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+      * * **Related**
+	* * :doc:`basics`
+	  * :doc:`fortgeschrittenes`
+	  * :doc:`multithreading`
+	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
 in das Grundprinzip "Everything is a File" ein. Das Socket-Interface

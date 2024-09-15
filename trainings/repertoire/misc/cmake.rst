@@ -9,22 +9,21 @@
 CMake: A Dirty But Powerful Build Tool
 ======================================
 
-.. sidebar:: The Course
+.. sidebar::
 
-   .. csv-table::
+   .. list-table::
+      :align: left
 
-      Contact, training@faschingbauer.co.at
-      Duration, 1-2 days
-
-   **Course Material**
-
-   * :doc:`/trainings/material/soup/cmake/group`
-
-   **See also**
-   
-   * :doc:`/trainings/repertoire/c-like/c`
-   * :doc:`/trainings/repertoire/c-like/cxx`
-   * :doc:`/trainings/repertoire/linux-prog/linux-basics`
+      * * **Duration**
+	* 1-2 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/cmake/group`
+      * * **Related**
+	* * :doc:`make`
+      * * **Booking**
+	* :doc:`/trainings/booking`
 
 .. image:: cmake-images/cmake_logo.jpg
    :alt: CMake Logo

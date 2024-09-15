@@ -1,17 +1,22 @@
 A Week with the Raspberry Pi
 ============================
 
-.. sidebar:: Kursdaten
+.. sidebar::
 
-   .. csv-table::
+   .. list-table::
+      :align: left
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 5 Tage
-
-   **Termine**
-
-   * 22.6.2020 - 26.6.2020, Hemmenhofen/Bodensee, `bodenseo
-     <https://www.bodenseo.de/kurs/raspberry_pi_python.html>`__
+      * * **Duration**
+	* 5 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Related**
+	* * :doc:`embedded`
+	  * :doc:`../linux-basics`
+	  * :doc:`../sysprog/index`
+	  * :doc:`../kernel-programming-basics`
+      * * **Booking**
+	* :doc:`/trainings/booking`
 
 .. image:: raspi-hands-on-images/raspberry_logo.png
    :alt: Raspi Logo

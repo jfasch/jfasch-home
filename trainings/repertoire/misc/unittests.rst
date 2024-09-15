@@ -1,13 +1,22 @@
 Unittesting and Test Driven Development
 =======================================
 
-.. sidebar:: Kursdaten
+.. sidebar::
 
-   .. csv-table::
+   .. list-table::
+      :align: left
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
-      PDF Slides, :download:`Test Driven Development </trainings/material/pdf/060-design-patterns-unittests.pdf>`
+      * * **Duration**
+	* 2 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/unittest/group`
+	  * :download:`Design Patterns And Test Driven Development
+            (PDF)
+            </trainings/material/pdf/060-design-patterns-unittests.pdf>`
+      * * **Booking**
+	* :doc:`/trainings/booking`
 
 **Unittesting**: das Prinzip kann einfacher nicht sein. Statt per Hand
 zu testen, schreibt man ein Programm, dass einem das auf Knopfdruck

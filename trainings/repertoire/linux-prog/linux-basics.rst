@@ -9,13 +9,25 @@
 Linux Basics: A Gentle Introduction
 ===================================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 3 Tage
-      PDF Slides, :download:`linux-basics </trainings/material/pdf/010-linux-basics.pdf>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 3 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/linux/basics/group`
+      * * **Related**
+	* * :doc:`bash`
+	  * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
+      * * **Booking**
+	* :doc:`/trainings/booking`
 
 Dieser Kurs liefert einen grundlegenden Einblick in die Shell, mit
 Hinblick auf das Verständnis des Betriebssystems.
@@ -27,8 +39,8 @@ entmystifiziert. Im Kurs wird anhand von vielen Beispielen und
 Übungen, ausschliesslich mit Hilfe der gefürchteten Shell, der Umgang
 mit dem Betriebssystem und die Konzepte des Betriebssystems erlernt.
 
-Zielpublikum
-------------
+Target Audience
+---------------
 
 * Programmierer
 * Tester
@@ -36,8 +48,8 @@ Zielpublikum
 * Hardwareingenieure
 * Angehende Administratoren
 
-Kursinhalt
-----------
+Course Outline
+--------------
 
 * Commandline Basics
 
@@ -81,8 +93,8 @@ Kursinhalt
   * Signale
   * Scheduling
 
-Empfohlene Vorkenntnisse
-------------------------
+Prerequisites
+-------------
 
 Programmierkenntnisse sind hilfreich, aber nicht nötig. Interesse und
 Spass an Betriebssystemen zwingend nötig.

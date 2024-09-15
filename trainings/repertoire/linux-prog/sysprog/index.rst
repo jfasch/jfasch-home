@@ -10,21 +10,34 @@
 Linux Systems Programming (Course Series)
 =========================================
 
+.. contents::
+   :local:
+
 .. sidebar::
 
    .. list-table::
       :align: left
 
       * * **Duration**
-	* * Each module is about two or three days
+	* * Each module is about 2-3 days
 	  * Modules can be booked separately
-      * * **Requirements**
-	* Participants should be fluent in C
-      * * **See also**
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/linux/sysprog/group`
+	  * :download:`Linux Systems Programming (PDF)
+            </trainings/material/pdf/020-linux-sysprog--en.pdf`
+      * * **Related**
 	* * :doc:`../linux-basics`
 	  * :doc:`../kernel-programming-basics`
+	  * :doc:`../embedded/embedded`
+	  * :doc:`../embedded/raspi-hands-on`
       * * **Booking**
-	* training@faschingbauer.co.at
+	* :doc:`/trainings/booking`
+
+
+Courses
+-------
 
 *Systems Programming in Linux* is a series of courses, each of about
 two or three days worth of content (mixed lecture and exercises).
@@ -81,4 +94,7 @@ two or three days worth of content (mixed lecture and exercises).
   
      fortgeschrittenes
 
+Prerequisites
+-------------
 
+Attendees should be fluent in C.

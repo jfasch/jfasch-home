@@ -1,13 +1,28 @@
 Linux Systems Programming: Multithreading
 =========================================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 2 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+      * * **Related**
+	* * :doc:`basics`
+	  * :doc:`fortgeschrittenes`
+	  * :doc:`network`
+	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 Parallele Programmierung war schon immer schwer, und es ist
 unverständlich, warum Multithreading von modernen Programmiersprachen

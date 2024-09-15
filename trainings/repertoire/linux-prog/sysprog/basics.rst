@@ -1,13 +1,29 @@
 Linux Systems Programming: Introduction
 =======================================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 2 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/python/basics/group`
+	  * :doc:`Complete Python material
+            </trainings/material/soup/python/group>`
+      * * **Related**
+	* * :doc:`/trainings/material/soup/linux/sysprog/group`
+	  * PDF Slides, :download:`sysprog
+            </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 Dieser Einführungskurs richtet sich an Programmierer, die Linux nicht
 so sehr kennen, es aber kennen lernen wollen. Die Zusammenhänge und

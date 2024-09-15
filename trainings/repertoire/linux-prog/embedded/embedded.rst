@@ -1,12 +1,26 @@
 Embedded Software Development: Hardware, Realtime, and Memory Management
 ========================================================================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 5 Tage
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 5 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Related**
+	* * :doc:`raspi-hands-on`
+	  * :doc:`../linux-basics`
+	  * :doc:`../sysprog/index`
+	  * :doc:`../kernel-programming-basics`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 **Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher
 Programmierung - das ist das Zentrum dieses Kurses.**

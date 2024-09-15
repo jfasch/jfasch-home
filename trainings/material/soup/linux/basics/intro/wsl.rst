@@ -15,9 +15,9 @@ Links
 
 .. sidebar:: Disclaimer!
 
-   **I am no Windows expert**. Although I have written a Kernel driver
-   (PCI, DMA, tons of interrupts) in the past that runs equally stable
-   on both Linux (did that first) and Windows (ported the Linux
+   **I am not a Windows expert**. Although I have written a Kernel
+   driver (PCI, DMA, tons of interrupts) in the past that runs equally
+   stable on both Linux (did that first) and Windows (ported the Linux
    implementation to Doze), I tend to keep my fingers away because I
    know my enemy.
 

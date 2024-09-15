@@ -1,17 +1,32 @@
 Linux Systems Programming: Virtual Memory, IPC, Shared Libraries
 ================================================================
 
-.. sidebar:: Kursdaten
+.. contents::
+   :local:
 
-   .. csv-table::
+.. sidebar::
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-      S5 Slides, :doc:`Signals </trainings/material/soup/linux/sysprog/sysprog_signals/slides>`
-      S5 Slides, :doc:`IPC </trainings/material/soup/linux/sysprog/sysprog_ipc/slides>`
-      Live Hacking, :doc:`Signals </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
-      Live Hacking, :doc:`IPC </trainings/material/soup/linux/sysprog/sysprog_ipc/screenplay>`
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 2 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+	  * S5 Slides, :doc:`Signals </trainings/material/soup/linux/sysprog/sysprog_signals/slides>`
+	  * S5 Slides, :doc:`IPC </trainings/material/soup/linux/sysprog/sysprog_ipc/slides>`
+	  * Live Hacking, :doc:`Signals </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
+	  * Live Hacking, :doc:`IPC </trainings/material/soup/linux/sysprog/sysprog_ipc/screenplay>`
+      * * **Related**
+	* * :doc:`basics`
+	  * :doc:`multithreading`
+	  * :doc:`network`
+	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 Will man in Tiefen des Systems steigen, die dem Alltagsprogrammierer
 normalerweise verborgen bleiben, ist dieser Kurs genau der

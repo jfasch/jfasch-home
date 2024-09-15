@@ -10,11 +10,27 @@ An Introduction to Modern C++, In Three Days
 
 .. sidebar::
 
-   * training@faschingbauer.co.at
-   * 3 days
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 3 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/cxx03/group`
+	  * :doc:`/trainings/material/soup/cxx11/group`
+	  * :doc:`/trainings/material/soup/cxx/group`
+      * * **Related**
+	* * :doc:`cxx`
+	  * :doc:`design-patterns/design-patterns`
+	  * :doc:`../misc/unittests`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+
 
 Goal
-....
+----
 
 C++, as of its standard revision in 2003, has been the worst language
 in the world [#mother-tongue]_. Programmers were forced to write
@@ -25,7 +41,7 @@ That situation changed completely when the C++11 standard came
 out. Writing code is definitely fun again! 
 
 Contents
-........
+--------
 
 With many practical exercises and a great deal of trainer live
 hacking, this course gives a broad overview of the key language

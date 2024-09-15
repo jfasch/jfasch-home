@@ -10,6 +10,9 @@
 Linux Kernel Driver Development
 ===============================
 
+.. contents::
+   :local:
+
 .. sidebar::
 
    .. list-table::
@@ -17,15 +20,15 @@ Linux Kernel Driver Development
 
       * * **Duration**
 	* 5 days
-      * * **Course Language**
-	* Heavy C
-      * * **Booking**
-	* training@faschingbauer.co.at
-      * * **Course Material**
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
 	* :doc:`/trainings/material/soup/kernel/group`
-      * * **Source Code**
-	* `jf-kernel-course
-          <https://github.com/jfasch/jf-kernel-course>`__
+      * * **Related**
+	* * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
+	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
+      * * **Booking**
+	* :doc:`/trainings/booking`
 
 
 First off: the Linux kernel cannot be taught in 5 days - no way.
@@ -77,3 +80,8 @@ chance to get in touch with the mechanisms as they are covered.
 
 See :doc:`here </trainings/material/soup/kernel/sample-project>` for a
 trainer-centric view of what's to be done.
+
+Prerequisites
+-------------
+
+Attendees are expected to be fluent in C.

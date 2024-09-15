@@ -6,13 +6,29 @@
 Design Patterns For C++ Developers
 ==================================
 
+.. contents::
+   :local:
+
 .. sidebar::
 
-      * training@faschingbauer.co.at
-      * Duration: 2-3 days
+   .. list-table::
+      :align: left
+
+      * * **Duration**
+	* 2-3 days
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :doc:`/trainings/material/soup/cxx-design-patterns/group`
+      * * **Related**
+	* * :doc:`../cxx`
+	  * :doc:`../cxx11`
+	  * :doc:`../../misc/unittests`
+      * * **Booking**
+	* :doc:`/trainings/booking`
 
 Goal
-....
+----
 
 Software in embedded systems is not generally known to be
 overengineered. Embedded hardware, though, is becoming more and more
@@ -43,8 +59,8 @@ all, it establishes a common vocabulary. It looks at the whole
 overengineering topic from the angle of embedded developers who are
 confronted with their own set of problems.
 
-Contents
---------
+Course Outline
+--------------
 
 .. image:: design-patterns-book.jpg
    :scale: 40%

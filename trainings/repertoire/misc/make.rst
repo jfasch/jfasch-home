@@ -8,13 +8,22 @@
 GNU Make: The Mother of All Build Tools
 =======================================
 
-.. sidebar:: Kursdaten
+.. sidebar::
 
-   .. csv-table::
+   .. list-table::
+      :align: left
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 1 Tage
-      PDF Slides, :download:`GNU Make </trainings/material/pdf/040-gnu-make.pdf>`
+      * * **Duration**
+	* 1 day
+      * * **Language**
+	* Trainer language is English or German
+      * * **Material**
+	* * :download:`GNU Make (PDF) </trainings/material/pdf/040-gnu-make.pdf>`
+      * * **Related**
+	* * :doc:`cmake`
+      * * **Booking**
+	* :doc:`/trainings/booking`
+      
 
 Die Mutter aller Build-Tools unter Linux und Unix ist Make - unter
 Linux in seiner extrem mächtigen Variante "GNU Make" verfügbar. Steht
