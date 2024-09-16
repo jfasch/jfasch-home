@@ -17,70 +17,51 @@ Linux Systems Programming: Network Programming
 	* * PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
       * * **Related**
 	* * :doc:`basics`
-	  * :doc:`fortgeschrittenes`
+	  * :doc:`advanced`
 	  * :doc:`multithreading`
 	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
       * * **Booking**
 	* :doc:`/trainings/booking`
 
 
-Netzwerkprogrammierung unter Linux (und UNIX) fügt sich hervorragend
-in das Grundprinzip "Everything is a File" ein. Das Socket-Interface
-stellt ein leicht zu benutzendes Programmierparadigma dar, das nicht
-auf TCP/IP beschränkt ist, sondern auf eine Vielzahl anderer
-Netzwerkprotokolle anwendbar ist.
+This course covers the socket interface and some of the protocols that
+are supported by it, together with the programming paradigms that are
+common with networking.
 
-Kursinhalt
-----------
+Course Outline
+--------------
 
-* **Grundlagen der Netzwerkprogrammierung**. Das Socket-Interface -
-  seine Datentypen und Systemcalls - wird erklärt, ohne jedoch noch
-  auf ein spezielles Medium einzugehen.
+* **Network programming basics**. The socket interface is defined in
+  abstract terms, not mentioning any of TCP/IP, or Bluetooth or ... . 
 
-  * *Relevante Systemcalls*: ``socket()``, ``connect()``, ``bind()``,
+  * *Systemcalls*: ``socket()``, ``connect()``, ``bind()``,
     ``listen()``, ``accept()``
-  * *Streamverbindungen*: Verbindungsaufnahme und Kommunikation
-  * *Datagramme*: verbindungslose Kommunikation
-  * *Fehlerszenarien*
-  * *Adressfamilien*: jedes "Medium" hat seine eigene Auffassung der
-    Adresse eines Endpoints. Beispielsweise kennt man von IPv4 die
-    vier Nummern wie 192.168.1.2 - andere Medien wie Bluetooth haben
-    andere Adressen, die aber mit den gleichen System Calls bearbeitet
-    werden.
+  * *Stream communication*: connection establishment and communication
+  * *Datagrams*: connectionless communication
+  * *Error scenarios*
+  * *Adress families*
 
-* **TCP/IP**. Netzwerkprogrammierung am Internet.
+* **TCP/IP**. Network programming on The Internet
 
-  * TCP (Stream-Verbindungen) und UDP (Datagramme)
-  * Hilfsfunktionen zur Adresskonvertierung
+  * TCP and UDP
+  * Address conversion routines
   * DNS-Lookup
-  * IPv4 und IPv6
+  * IPv4 and IPv6
 
-* **UNIX Domain Sockets**. Prozesse, die nur lokal (innerhalb eines
-  Systems) kommunizieren, verwenden UNIX Domain Sockets. Sie
-  funktionieren gleich wie ihre TCP/IP-Äquivalente, nur sind sie
-  ungleich ressourcenschonender, und ihre Adressen sind Pfadnamen im
-  Filesystem.
-* **CAN-Bus**. CAN (Controller Area Network) war lange Zeit nur über
-  Controller-spezifische Driver und deren Interfaces bedienbar;
-  mittlerweise wurde dieses Medium, wenngleich *broadcast-only*, in
-  das Socket-Interface eingepasst und ist dementsprechend angenehm zu
-  verwenden.
-* **IO-Multiplexing mit select/poll/epoll**. Eine Möglichkeit, in
-  einem Prozess mit mehreren Verbindungen umzugehen, ist, jeder
-  Verbindung einen Thread zu widmen - und sich dadurch den damit
-  verbundenen Gefahren auszusetzen. IO-Multiplexing ist eine
-  alternative Methode, mit mehreren Verbindungen umzugehen - man
-  reagiert auf *IO-Events* wie "Daten können von einem Socket gelesen
-  werden", oder "Daten können auf ein Socket geschrieben werden".
+* **UNIX Domain Sockets**. An interprocess communication mechanism for
+  processes running on the same machine.
+* **CAN-Bus**. CAN (Controller Area Network) fits itself into the
+  Linux network stack.
+* **Event loops (select/poll/epoll)**.
 
-  * *Eventgetriebenes ("nonblocking") Programmieren*
-  * *Verbindungsaufnahme*, nonblocking
-  * *I/O*, nonblocking
-  * *Eventgetriebenes Programmieren* abseits von Netzwerk-I/O: Timer, Signale, ...
+  * Event driven programming
+  * Nonblocking connection establishment
+  * Nonblocking IO
+  * Other applications of events: timers (via timer file descriptors),
+    events (via event file descriptors)
 
-Empfohlene Vorkenntnisse
-------------------------
+Prerequisites
+-------------
 
-Solide Kenntnisse in C werden vorausgesetzt, genau wie eine
-Grundkenntnis des Systems (vgl. :doc:`Einführungskurs
-<basics>`).
+A solid understanding of the C programming language is helpful. Fun
+with low-level hacking is required.

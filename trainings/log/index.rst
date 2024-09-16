@@ -715,7 +715,7 @@ tief ins System hinabgestiegen.
 
 * :doc:`../repertoire/c-like/c`
 * :doc:`../repertoire/c-like/c-advanced`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 Der Kurs wurde gebucht über meinen Partner `LinuxCampus
 <https://www.linuxcampus.net/>`__.
@@ -762,7 +762,7 @@ Ein Zusammenschnitt aus diesen Kursen:
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/network`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 .. _records-2019-05-23:
 
@@ -837,7 +837,7 @@ Ein Gemisch aus diesen Kursen:
 
 * :doc:`../repertoire/linux-prog/linux-basics`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 .. _records-2018-03-12:
 
@@ -850,7 +850,7 @@ Ein Zusammenschnitt aus folgenden Kursen, angeordnet um die
 * :doc:`../repertoire/linux-prog/linux-basics`
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 .. _records-2017-09-11:
@@ -881,7 +881,7 @@ Ein Gemisch aus diesen Kursen:
 
 * :doc:`../repertoire/linux-prog/linux-basics`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 .. _records-fraunhofer-2017-08-23:
@@ -992,7 +992,7 @@ Eine Einführung in Linux Kernel Konzepte. Betrachtung der
 Realtimefähigkeit von Linux mit Fokus auf Xenomai.
 
 * :doc:`../repertoire/linux-prog/kernel-programming-basics`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 Der Kurs wurde gebucht über meinen Partner `tecTrain
@@ -1028,7 +1028,7 @@ Linux Basics, Systemnahe Programmierung (27.7.2015 - 31.7.2015, bei einer Firma 
   * :doc:`../repertoire/linux-prog/sysprog/basics`
   * :doc:`../repertoire/linux-prog/sysprog/network`
   * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-  * :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+  * :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 .. _records-fraunhofer-2015-07-01:
 
@@ -1115,7 +1115,7 @@ Ausgewählte Themen aus
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/network`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 .. _records-2014-03-03:
@@ -1143,7 +1143,7 @@ Linux: Boot-Konfiguration und Systemnahe Programmierung (27.5.2014 - 30.5.2014 i
 
 * :doc:`../repertoire/linux-prog/linux-basics`
 * :doc:`../repertoire/linux-prog/sysprog/basics`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 Der Kurs fand in den Räumen der Firma `tecTrain in Graz
 <https://www.tectrain.at/>`__ statt, über die auch gebucht wurde.
@@ -1219,7 +1219,7 @@ Linux - Einführung und Programmierung (27.5.2013 - 29.5.2013, bei einer Firma i
 Ausgewählte Themen aus
 
 * :doc:`../repertoire/linux-prog/linux-basics`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 GNU Make (23.4.2013 in Graz)
@@ -1238,7 +1238,7 @@ Linux Basics & Embedded (14.1.2013 - 18.1.2013, bei einer Firma in Oberösterrei
 Ausgewählte Themen aus
 
 * :doc:`../repertoire/linux-prog/linux-basics`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 .. _records-2012-11-26:
@@ -1251,7 +1251,7 @@ Ausgewählte Themen aus
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/network`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 * :doc:`Verschiedenes Neues aus C++ (C++11) <../repertoire/c-like/cxx>`
 
@@ -1276,7 +1276,7 @@ Ausgewählte Themen aus
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/network`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 Einführung in Python (15.10.2012 - 17.10.2012, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
@@ -1298,7 +1298,7 @@ Ausgewählte Themen aus
 
 * :doc:`../repertoire/linux-prog/sysprog/basics`: Toolchain, Crosscompilation
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`: Signale und IPC
+* :doc:`../repertoire/linux-prog/sysprog/advanced`: Signale und IPC
 * :doc:`../repertoire/linux-prog/embedded/embedded`: Userspace I2C, SPI, USB, CAN
 
 Einführung in Python (24.1.2012 - 26.1.2012, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
@@ -1316,7 +1316,7 @@ Ausgewählte Themen aus
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/network`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 * :doc:`../repertoire/linux-prog/embedded/embedded`
 
 .. _records-2011-09-13:
@@ -1334,7 +1334,7 @@ Offene Schulung; ein Zusammenschnitt aus folgenden Themen:
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/network`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 Linux Systemnah (14.2.2011 - 18.2.2011, `Bodenseo <http://bodenseo.de/>`__, Hemmenhofen am Bodensee)
 ----------------------------------------------------------------------------------------------------
@@ -1344,7 +1344,7 @@ Offene Schulung; ein Zusammenschnitt aus folgenden Themen:
 * :doc:`../repertoire/linux-prog/sysprog/basics`
 * :doc:`../repertoire/linux-prog/sysprog/network`
 * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-* :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+* :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 Linux from Scratch (12.12.2010 - 17.12.2010, `Mathias Kettner <http://mathias-kettner.de>`__ in München)
 --------------------------------------------------------------------------------------------------------
@@ -1363,7 +1363,7 @@ Softwareentwicklung unter Linux (6.12.2010 - 10.12.2010, bei einer Firma in Darm
   * :doc:`../repertoire/linux-prog/sysprog/basics`
   * :doc:`../repertoire/linux-prog/sysprog/network`
   * :doc:`../repertoire/linux-prog/sysprog/multithreading`
-  * :doc:`../repertoire/linux-prog/sysprog/fortgeschrittenes`
+  * :doc:`../repertoire/linux-prog/sysprog/advanced`
 
 Softwareentwicklung unter Linux (24.11.2010 - 26.11.2010, bei einer Firma im Raum Ulm)
 --------------------------------------------------------------------------------------

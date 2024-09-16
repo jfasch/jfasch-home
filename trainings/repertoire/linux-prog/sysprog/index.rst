@@ -82,7 +82,7 @@ two or three days worth of content (mixed lecture and exercises).
   
      multithreading
 
-* :doc:`fortgeschrittenes`.
+* :doc:`advanced`.
 
   * Virtuelles memory
   * POSIX IPC: semaphore, message queues
@@ -92,7 +92,7 @@ two or three days worth of content (mixed lecture and exercises).
   .. toctree::
      :hidden:
   
-     fortgeschrittenes
+     advanced
 
 Prerequisites
 -------------
