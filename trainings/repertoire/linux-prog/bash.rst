@@ -1,7 +1,5 @@
 .. meta::
-   :description: Dieses Training zeigt, dass Shell Scripting durchaus
-                 Sinn macht - und, dass die Shell eine vollständige
-                 Programmiersprache ist.
+   :description: The shell programming language
    :keywords: schulung, training, programming, bash, bourne, shell,
               bourne shell, linux, embedded, script, scripting
 
@@ -28,33 +26,28 @@ Shell Scripting/Bourne Again Shell (Bash)
 	* :doc:`/trainings/booking`
 
 
-Die Shell ist nicht nur ein notwendiges Übel, um mit dem System
-sprechen zu können. Sie ist auch eine vollständige Programmiersprache
-- auch wenn das auf den ersten Blick nicht so aussieht.
-
-Dieser Kurs gibt eine Einführung in die wesentlichen Aspekte der
-Programmierung mit der Shell, anhand der "Bourne Again Shell", kurz
-``bash``, die unter Linux de-facto Standard ist. Er versucht, der
-Shellprogrammierung den Ruf des Schmutzigen zu nehmen und ihr
-stattdessen eher einen Hauch von perverser Ästhetik zu verpassen.
+The Bourne Shell is not only used to communicate with the system using
+the commandline that it provides. It is also a full programming
+language. This course gives insight into shell programming, exchanging
+the first impression - *dirty!* - with the more appropriate second
+impression: *aesthetic!*.
 
 Course Outline
 --------------
 
-* **Die Geschichte der Shell**. Die Shell und Unix haben eine lange
-  und interessante gemeinsame Geschichte
-* **Hello World** und diverser Boilerplate-Kram
-* **Variablen, Environmentvariablen, und Commandlineargumente**
-* **Kontrollkonstrukte**. Der Hauptteil des Kurses: Bedingungen,
-  Schleifen, etc.
-* **Funktionen**
-* **Pipes, IO-Redirection**
-* **Verschiedenes**. Stringmanipulation ("Parameter Expansion") und
-  verschiedene andere obskure Konstrukte, ohne die man nicht auskommt
+* **Some history** of UNIX and the shells which grew up together
+* **Hello World** and other boilerplate
+* **Variables, environment variablens, and commandline arguments**
+* **Control constructs**. The bigger part of the course: conditionals
+  and loops
+* **Functions**
+* **Pipes and IO-Redirection**
+* **Miscellaneous**. String manipulation ("parameter expansion" is the
+  correct term) and several other obscure constructs that one might
+  not be able to do without
 
 Prerequisites
 -------------
 
-Erfahrung in Unix und der Umgang mit der Shell auf der Commandline
-werden vorausgesetzt. Siehe dazu auch den :doc:`Linux Einführungskurs
-</trainings/repertoire/linux-prog/linux-basics>`.
+Experience with Linux, especially shell commandline usage, is
+required. See :doc:`/trainings/repertoire/linux-prog/linux-basics`.
