@@ -25,54 +25,41 @@ Linux Systems Programming: Introduction
 	* :doc:`/trainings/booking`
 
 
-Dieser Einführungskurs richtet sich an Programmierer, die Linux nicht
-so sehr kennen, es aber kennen lernen wollen. Die Zusammenhänge und
-die Grundpfeiler des Systems werden erklärt, sodass man am Ende ein
-großes Bild hat und sich selbst orientieren und zurechtfinden kann.
+This introductory course gives an overview of the OS, the
+interconnections between its concepts, and how to program it.
 
-Kursinhalt
-----------
+Course Outline
+--------------
 
-* **Die Shell**. Für Ein- bzw. Umsteiger ist dieses Commandline-Zeug
-  meist ein einziges Ärgernis. Wenn man allerdings die Möglichkeiten,
-  die einem die Shell bietet, einmal zu nutzen weiss, schlägt man
-  damit das ausgeklügeltste GUI. Im Kurs werden Commandline-Editing,
-  History, die Pipe, und weitere Shell-Grundlagen erklärt.
-* **Systemkonzepte und Systemcalls**. Die Shell und Unix haben sich
-  gemeinsam entwickelt, und viele Konzepte des Betriebssystems sind
-  direkt in der Shell erkennbar.
+* **The Shell**. Being UNIX's first user interface, it is intimately
+  tied to the system and a good instrument to get insight into it. The
+  course gets you started in shell usage.
+* **OS concepts, and system calls**. Exploring the system, still using
+  the shell.
 
-  * Kurze Beispiele in der Shell: Prozesse, Filesystem,
-    IO-Redirection, ...
-  * ``strace``: ein Programm, mit dem sich die Systemschnittstellen
-    (sogenannte Systemcalls) inspizieren lässt.
-  * *Everything is a File* ist ein Grundprinzip in Unix, und ganz
-    speziell in Linux.
-  * Das ``/proc`` Filesystem
+  * Processes (and the ``/proc`` filesystem), filesystems,
+    IO-redirection, ...
+  * ``strace``: introspecting the system call interface
+  * Several examples of *Everything is a File* - probably UNIX's
+    strongest concept, and how Linux extends it
 
-* **Die Toolchain**. Die Programmiersprache für systemnahes
-  Programmieren ist C - die *Toolchain* ist eine Sammlung von
-  Programmen, die C-Code in ausführbare Programme verwandeln.
+* **The toolchain**. Learn how to build your programs.
 
   * Compiler, Linker
   * Debugger
-  * Shared und statische Libraries
+  * Static and shared libraries
   * Executables
+  * :doc:`GNU Make <../../misc/make>`
 
-* **Make** ist ein Programm, das die Toolchain bedient und Programme,
-  die aus mehr als einem C-File bestehen, baut. Seine Handhabung ist
-  für Anfänger etwas gewöhnungsbedürftig - hier wird eine kurze
-  Einführung gegeben.
-* **Programmierung**. In Übungen werden grundlegende Systemcalls
-  verwendet.
+* **Programming**. Many small exercises bring you through the course
+  content.
 
-  * Prozesse: ``fork/exec/wait``, Signale
+  * Processes: ``fork/exec/wait``, signal handling
   * Filesystem: ``open/read/write/close``
-  * Filedescriptoren und assoziierte Systemcalls
+  * Filedescriptors, and associated system calls
   
-Empfohlene Vorkenntnisse
-------------------------
+Prerequisites
+-------------
 
-Solide Kenntnisse in C werden vorausgesetzt. Kenntnisse in
-Betriebssystemen im Allgemeinen sind von Vorteil, aber nicht zwingend
-notwendig. (Spaß an Lowlevel-Programmierung hingegen schon.)
+A solid understanding of the C programming language is helpful. Fun
+with low-level hacking is required.

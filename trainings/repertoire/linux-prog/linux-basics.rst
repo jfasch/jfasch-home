@@ -1,7 +1,6 @@
 .. meta::
-   :description: Eine Linux-Einführung für Programmierer, Tester,
-                 Architekten, Hardwerker, und alle, die Shell und
-                 Systemkonzpte verstehen wollen
+   :description: A Linux introduction for programmers, testers,
+                 architects, hardware engineers
    :keywords: schulung, training, programming, embedded, linux, shell,
               bash, bourne shell, redirection, console, kill, ps, cat,
               less, pipe, filesystem, grep, debugging, scripting
@@ -29,72 +28,70 @@ Linux Basics: A Gentle Introduction
       * * **Booking**
 	* :doc:`/trainings/booking`
 
-Dieser Kurs liefert einen grundlegenden Einblick in die Shell, mit
-Hinblick auf das Verständnis des Betriebssystems.
-
-Die Entwicklung der Shell und die Entwicklung von UNIX gingen Hand in
-Hand. UNIX wäre nicht UNIX, wenn die Shell nicht wäre. Anhand vieler
-Demosessions werden vertrackte Konstrukte gezeigt und
-entmystifiziert. Im Kurs wird anhand von vielen Beispielen und
-Übungen, ausschliesslich mit Hilfe der gefürchteten Shell, der Umgang
-mit dem Betriebssystem und die Konzepte des Betriebssystems erlernt.
+This course is an introduction to the operating system and its strong
+concepts. By using only the shell (no programming skills needed),
+we'll learn how the system works.
 
 Target Audience
 ---------------
 
-* Programmierer
-* Tester
-* Inbetriebsetzer
-* Hardwareingenieure
-* Angehende Administratoren
+* Programmers
+* Testers
+* Support personnel
+* Hardware engineers
+* ... or anybody who is interested in understanding the OS
 
 Course Outline
 --------------
 
 * Commandline Basics
 
-  * Zeilen editieren
-  * Die Bedeutung des TAB Key
-  * Variablen
-  * History (blättern, suchen, Shortcuts)
+  * Editing a command
+  * Completion: the TAB key
+  * Variables and environment variables
+  * The history buffer
 
 * Filesystem
 
-  * Pfade und Verzeichnisse
-  * Typen von Files (incl. Symlinks, Device Special Files, ...)
-  * Current Working Directory
-  * Anzeigen und manipulieren (ls, cp, mv, find)
-  * Permissions
+  * Directories, and path names
+  * File types (symbolic links, device special files, ...)
+  * Current working directory
+  * Commands: ``ls``, ``cp``, ``mv``, ``find``
+  * Filesystem permissions
 
-* Textdateien
+* Text file handling
 
-  * cat, less, diff, grep
+  * ``cat``, ``less``, ``diff``, ``grep``
 
 * Pipes etc.
 
-  * Standard-Filedeskriptoren: stdin, stdout, stderr
-  * IO-Redirection (Demo: Serielle Schnittstelle - immer lustig)
-  * Pipes
-  * Named Pipes
+  * Standard filedescriptors: ``stdin``, ``stdout``, ``stderr``
+  * IO redirection
+  * Pipes and named pipes
 
-* Werkzeuge, Kombinationen mittels Pipes
+* Tools, and their combination using the pipe
 
-  * gzip, tar, in Kombination mit z.B. find
-  * ssh
-  * Shell-Scripts
+  * ``gzip``, ``tar``, in combination with e.g. ``find``
+  * ``ssh``
+  * Shell scripts
 
-* Prozesse
+* Processes
 
-  * Grundlagen (incl. Abschweifen Richtung Virtual Memory)
-  * Shell Konstrukte
-  * System Calls
-  * ps
-  * top
-  * Signale
+  * Basics (including virtual memory)
+  * Shell job control
+  * System calls
+  * ``ps``
+  * ``top``
+  * Signals
   * Scheduling
+
+* Networking
+
+  * Network status reporting (``ss``, and ``netstat``)
+  * ``netcat``
 
 Prerequisites
 -------------
 
-Programmierkenntnisse sind hilfreich, aber nicht nötig. Interesse und
-Spass an Betriebssystemen zwingend nötig.
+Programming skills are sure helpful but not required. Interest in and
+fun with operating systems are required.

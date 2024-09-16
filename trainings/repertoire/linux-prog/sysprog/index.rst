@@ -26,7 +26,7 @@ Linux Systems Programming (Course Series)
       * * **Material**
 	* * :doc:`/trainings/material/soup/linux/sysprog/group`
 	  * :download:`Linux Systems Programming (PDF)
-            </trainings/material/pdf/020-linux-sysprog--en.pdf`
+            </trainings/material/pdf/020-linux-sysprog--en.pdf>`
       * * **Related**
 	* * :doc:`../linux-basics`
 	  * :doc:`../kernel-programming-basics`

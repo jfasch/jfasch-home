@@ -1,9 +1,6 @@
 Linux, And Programming
 ======================
 
-.. contents::
-   :local:
-
 .. sidebar::
 
    .. list-table::

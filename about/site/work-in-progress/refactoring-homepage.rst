@@ -10,7 +10,6 @@ Refactoring The Homepage
 
 * Englisch
 
-  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
   * :doc:`/trainings/repertoire/linux-prog/sysprog/basics`
   * :doc:`/trainings/repertoire/linux-prog/sysprog/network`
   * :doc:`/trainings/repertoire/linux-prog/sysprog/multithreading`
