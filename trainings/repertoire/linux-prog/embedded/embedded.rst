@@ -22,109 +22,74 @@ Embedded Software Development: Hardware, Realtime, and Memory Management
 	* :doc:`/trainings/booking`
 
 
-**Gute alte Betriebssystemkonzepte in Verbindung mit hardwarenaher
-Programmierung - das ist das Zentrum dieses Kurses.**
+Linux, being "a flavor of UNIX", builds upon the strong concepts of
+the OS family. Yet Linux has proven to be an embedded OS too -
+hardware support is amazingly complete, realtime capabilities are in
+place, memory management is as fine grained as embedded developers
+like it.
 
-Linux ist ein vollwertiges Unix - das heisst, es setzt auf die selben
-Betriessystemkonzepte auf, die sich seit mehr als vier Jahrzehnten
-bewährt und weiterentwickelt haben.
+This course introduces into the OS and its system programming APIs,
+with an emphasis on typical embedded topics like hardware, memory
+management, and realtime.
 
-Linux ist nicht nur ein vollwertiges Unix, sondern auch ein
-hervorragendes Embedded-Betriebssystem. Es kann mit jeglicher Hardware
-umgehen, die im Embedded- und Automotive-Sektor vertreten ist. Möglich
-ist das, indem Linux die altbewährten Konzepte konsequent ausbaut,
-Hardwareschnittstellen so gestaltet, dass sie sich nahtlos einfügen,
-und verschiedene Features wie Echtzeitfähigkeit implementiert.
+Target Audience
+---------------
 
-Dieser Kurs gibt in fünf Tagen eine Einführung in das Betriebssystem
-selbst, erläutert die Konzepte dahinter, die Programmierung inklusive
-Werkzeuge, und rundet das Gelernte mit einem "Hardwarebastelworkshop"
-ab.
+* **Embedded software developers**
+* **Electronic engineers** who work together with software developers,
+  and occasionally have to get in touch with what those produce
+* **System architects** whose job is to make good decisions
 
-Zielpublikum
-------------
+Attendees are invited to bring their own material - development boards
+with their favorite processor architecture, breadboards, and all
+that's needed for tinkering. Usually the trainer brings a couple of
+Raspberry Pi computers, a pile of sensors, and wiring material.
 
-* **Embeddedprogrammierer**, die sich schon länger fragen, warum
-  Features eines "normalen" Betriebssystems, wie z.B. Multiprocessing,
-  TCP/IP, Dateisysteme, ihnen versagt bleiben oder teuer erkauft
-  werden müssen.
-* **Elektroniker**, die Devices testen wollen, bevor in ihrer Firma
-  die Hostsoftware soweit ist.
-* **Architekten**, die ihre Plattformzusammensetzung entscheiden und
-  rechtfertigen müssen. Die Frage "Wieviel Logik stecke ich in externe
-  Hardware, und muss ich das überhaupt?" ist schwer zu beantworten.
+Course Outline
+--------------
 
-Die Teilnehmer sind eingeladen, eigenes Equipment - Lötmaterial,
-Breadboard, etc. - mitzubringen. Werkzeug und Material ist reichlich
-vorhanden, jedoch macht es mit dem eigenen wahrscheinlich mehr
-Spass. Die Bastelei erfolgt mit vorhandenen Raspberry Minicomputern,
-mit denen sich hervorragend Prototypen erstellen lassen.
+* **Linux and the commandline** (taken from :doc:`this course
+  <../linux-basics>`). 
 
-Kursinhalt
-----------
+  * Remote login with SSH
+  * Basics: the shell, and tools like ``sed``, ``grep``, ``find`` ...
+  * Diagnosing problems: ``netstat`` and ``ss``, ``top``, dedicated
+    filesystems like ``procfs`` and ``sysfs``, the ``strace`` tool,
+    ...
 
-* **Linux und die Commandline**. Linux ist ein Desktopbetriebssystem.
-  Unter anderem - es ist alles nur eine Frage des vorhandenen
-  Speichers. Das Rasperry ist für Embedded-Verhältnisse mit 512MB
-  reichlich ausgestattet. Ein Desktop ist trotzdem nur mühsam zu
-  betreiben - und ist für ein Embedded-Produktivsystem ohnehin
-  unangebracht. Zurück an die Unix-Anfänge also ...
+* **Programming** (taken from :doc:`../sysprog/index`).
 
-  * Remote Login mit SSH
-  * Grundlegendes: die Shell, Werkzeuge wie ``sed``, ``grep``,
-    ``find`` ...
-  * Diagnose mit Tools wie ``netstat``, ``top``, den Filesystemen
-    ``procfs`` und ``sysfs`` ...
-
-* **Programmierung**. Die altbewährten Unix-Konzepte werden benutzt,
-  um einfache Übungen durchzuführen. Themen sind unter anderem ...
-
-  * Files. Files bzw. Filedeskriptoren sind ein grundlegendes Konzept
-    unter Linux/UNIX.
-  * Prozesse. Das zweite Standbein von Linux/UNIX: getrennte
-    Adressräume.
-  * Multithreading. Mehrere parallele Abläufe im gleichen Adressraum
-    zu haben, erfordert vom Programmierer einiges an Sorgfalt und
-    Wissen.
-  * Netzwerkprogrammierung. Im Grunde sehr einfach (File I/O), bloss
-    sehr breit gefächert. TCP/IP ist nur ein Netzwerk unter vielen,
-    Bluetooth, CAN-Bus, und viele andere Netzwerke sind auch über
-    dieses API zu programmieren.
-  * Memory Management. Virtuelles Memory - Shared Memory,
-    Memory-Mapped I/O und weitere Techniken.
-  * Realtime. Aus gewissen Szenarien (Steuerungen, Audio, ...) nicht
-    wegzudenken. Auch gefährlich, wenn falsch bzw. zu umfangreich
-    benutzt.
-  * Kernel-Konzepte. Wenngleich nicht Hauptthema des Kurses, ist es
-    dennoch sehr nützlich, zu wissen, wie diese Konzepte, die die
-    Programmierung so einfach machen, unter der Haube implementiert
-    sind.
+  * Files and file IO. Be aware that file descriptors can describe
+    almost anything (not just open files), and that the *file* IO
+    topic is just the beginning. (:doc:`More
+    ... </trainings/repertoire/linux-prog/sysprog/basics>`)
+  * Processes. Address spaces and scheduling. (:doc:`More
+    ... </trainings/repertoire/linux-prog/sysprog/basics>`)
+  * Multithreading. (:doc:`More
+    ... </trainings/repertoire/linux-prog/sysprog/multithreading>`)
+  * Network programming. The socket interface not only covers TCP/IP,
+    but also Bluetooth, CAN, and other protocols. (:doc:`More
+    ... </trainings/repertoire/linux-prog/sysprog/network>`)
+  * Memory Management. Virtual memory: shared memory, memory mapped
+    IO, and IPC techniques. (:doc:`More
+    ... </trainings/repertoire/linux-prog/sysprog/advanced>`)
+  * Realtime. Linux is a realtime OS, and we'll learn what that means
+      (:doc:`More
+      ... </trainings/repertoire/linux-prog/sysprog/multithreading>`)
+  * Kernel hacking. Not the center of this course, but it's always
+    good to know how things that I use are implemented. (:doc:`More
+    ... </trainings/repertoire/linux-prog/kernel-programming-basics>`)
 
 * **Hardware**.
 
-  * Das General Purpose IO (GPIO) Subsystem. Schalten von Ausgängen,
-    Abfragen von Eingängen (sowohl über dummes Polling als auch über
-    intelligentes ereignisgesteuertes Programmieren bzw. Interrupts)
-  * Mit Mikrocontrollern sprechen. Aufgaben wie
-    z.B. Temperaturmessung, IO-Port Expandierung, Pulse Width
-    Modulation (PWM) etc. werden gerne an externe Hardware
-    ausgelagert, die über dedizierte Protokolle angesteuert
-    wird. Hier wird ein Überblick über die Protokolle und über
-    verschiedene Aspekte der Integration in Linux
-    gegeben. Stichworte:
+  * The General Purpose IO (GPIO) subsystem.
+  * I2C userspace API
+  * SPI userspace API
+  * CAN, via the socket API ("SocketCAN")
+  * UART communication
 
-    * Inter Integrated Circuit (I2C)
-    * Serial Peripheral Interface (SPI)
-    * Verschiedene Driverframeworks im Kernel
-    * CAN-Bus. In Linux hat sich eine sehr nette Infrastruktur
-      entwickelt, die das Protokoll nahtlos in den Netzwerkstack
-      einpasst.
-    * Serielle Schnittstellen
-    * USB Programmierung im Userspace
+Prerequisites
+-------------
 
-Empfohlene Vorkenntnisse
-------------------------
-
-* Etwas Programmiererfahrung. Implementationssprachen sind C und/oder
-  Python.
-* Etwas Hardwareerfahrung
+* Programming experience in C and/or Python
+* A feel for hardware

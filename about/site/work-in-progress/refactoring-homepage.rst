@@ -10,7 +10,6 @@ Refactoring The Homepage
 
 * Englisch
 
-  * :doc:`/trainings/repertoire/linux-prog/bash`
   * :doc:`/trainings/repertoire/linux-prog/embedded/embedded`
   * :doc:`/trainings/repertoire/linux-prog/embedded/raspi-hands-on`
   * :doc:`/trainings/repertoire/c-like/c`
