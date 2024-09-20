@@ -2,9 +2,9 @@ Log Of Past Courses
 ===================
 
 Course preparations (agendae) and outcomes (what really happened) are
-maintained on this site. When a course is over, customers will not be
+maintained here online. When a course is over, customers will not be
 left with a deck of printed material, but rather with a link to their
-custom course page [#consent]_.
+custom course page.
 
 Here is the entire list of such past courses. Use it to get an
 impression of how courses are held.
@@ -19,7 +19,17 @@ C++: A One-Day Overview (Date Yet Unknown)
 
 A one-day ride through C++. Still under preparation.
 
-(:doc:`More ... <detail/2024-XX-XX--C++/index>`)
+(:doc:`More ... <detail/2024-11-19--C++-One-Day/index>`)
+
+C++: A Wild Ride (2024-09-30 - 2024-10-04)
+------------------------------------------
+
+Five days C++ for a mixed group of C and C++ developers, at a
+long-time customer of mine.
+
+(:doc:`More ... <detail/2024-09-30--C++/index>`)
+
+Location: Thalheim, Austria
 
 CMake: Advanced Topics (2024-07-01)
 -----------------------------------
@@ -1390,9 +1400,3 @@ Softwareentwicklung unter Linux (20.10.2010 - 24.10.2010, `Mathias Kettner <http
 * Systemkonzepte (heute :doc:`../repertoire/linux-prog/linux-basics`)
 * Software Build
 * Git
-
-
-
-.. rubric:: Footnotes
-.. [#consent] Course content will only be published if the customer
-              agrees.

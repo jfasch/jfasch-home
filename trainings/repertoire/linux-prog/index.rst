@@ -18,8 +18,9 @@ Courses
 Linux has a set of strong concepts inherited from its UNIX roots, and
 understanding these concepts is very helpful to everybody who writes
 applications or otherwise gets in touch with software written for
-Linux. This series of courses covers these concepts from multiple
-viewpoints.
+Linux.
+
+This series of courses covers these concepts from multiple viewpoints.
 
 * :doc:`linux-basics`. An introduction to Linux on the commandline. As
   such, this course is not only for programmers (no program is

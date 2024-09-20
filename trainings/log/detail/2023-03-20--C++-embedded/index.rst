@@ -64,7 +64,7 @@ Windows, using the following emulation layers:
   it comes to threading)
 
 You may use these, but be warned that there might not exist enough
-trainer-side knowledge to help you out f anything goes wrong.
+trainer-side knowledge to help you out if anything goes wrong.
 
 Skeleton Project Setup
 ......................
