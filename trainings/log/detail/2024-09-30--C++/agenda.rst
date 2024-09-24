@@ -151,13 +151,18 @@ From :doc:`/trainings/material/soup/cxx-design-patterns/group`:
 * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
 * :doc:`/trainings/material/soup/cxx-design-patterns/proxy/proxy`
 * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+* Builder
 
-.. .. jjj
+More C++ >= 11
+--------------
 
-* Builder?
+OO Features
+...........
 
-More C++
---------
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
 
 Memory Management
 .................
@@ -196,30 +201,31 @@ Exercise
 Convert all interface usage to ``std::unique_ptr<>`` (``Sensor*``,
 ``LoggingTarget*``)
 
+Functional: An Alternative To Full Polymorphism
+...............................................
+
+* :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+
 Going Embedded
 --------------
 
 * :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
 * :doc:`/trainings/material/soup/cxx11/drafts/crtp`
 
-Wenn noch Zeit ist
-------------------
+Optional Topics
+---------------
 
-* Standard Template Library
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* :doc:`/trainings/material/soup/cxx03/060-stl/group`
+* Excerpts from :doc:`/trainings/material/soup/cmake/intro/group` and
+  :doc:`/trainings/material/soup/cmake/advanced/group`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+* From :doc:`/trainings/material/soup/c/100-performance/group`
 
-  * Standard Template Library: Basics
-  * Algorithms
-  * Sequential Containers
-  * Associative Containers
-  * STL: Exercises
-
-* CMake: An Introduction
-* Multithreading
-* Performance
-
-  * Optimization
-  * Optimizations: Compute Bound Code
-  * Optimizations: Memory Optimizations
+  * :doc:`/trainings/material/soup/c/100-performance/010-introduction/topic`
+  * :doc:`/trainings/material/soup/c/100-performance/020-computebound/topic`
+  * :doc:`/trainings/material/soup/c/100-performance/030-memory/topic`
 
 * Warum sollen c-casts vermieden werden?
 * Projektaufbau

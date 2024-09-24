@@ -10,7 +10,7 @@ Hardware
    gyroscope
    adc
    servo-motor
-   h-bridge
+   motor-control
    display-ssd1305
    display-waveshare
 
