@@ -351,7 +351,7 @@ Classes (continued)
   Solution see `here
   <https://github.com/jfasch/2021-12-06/tree/main/exercises/joerg/userdb>`__
 
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
 
   Livehacking
 

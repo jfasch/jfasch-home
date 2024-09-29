@@ -10,6 +10,10 @@ Object Copy (And Resource Management): There Be Dragons
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
+
 Copy in C
 ---------
 
@@ -68,11 +72,10 @@ That was simple. **But ...**
 Pointer Members, And Compiler Generated Copy
 --------------------------------------------
 
-.. sidebar::
-
-   **See also**
+.. sidebar:: See also
 
    * :doc:`/trainings/material/soup/c/090-program-sanity/080-valgrind/topic`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
 
 * Compiler-generated copy constructor (and assignment operator) does
   member-wise copy

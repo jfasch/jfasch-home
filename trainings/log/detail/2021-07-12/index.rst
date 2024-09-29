@@ -147,7 +147,6 @@ Regular Topics
     
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`

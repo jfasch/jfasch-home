@@ -49,105 +49,151 @@ Reiterating ``class point`` from
 * What is a point? |longrightarrow| ``x`` and ``y``
 * What is the responsibility of a point?
 
+  * contain ``x`` and ``y``
   * move itself
   * compute its distance to origin
   * ... or from another point ...
 
-.. literalinclude:: code/point.h
-   :caption: :download:`code/point.h`
-   :language: c++
-
-Simple Methods: Access Methods ("Getters")
-------------------------------------------
+Access Methods ("Getters") **WRONG**
+------------------------------------
 
 * Members are private |longrightarrow| outside access prohibited
 * Read-only access desired, though
 * |longrightarrow| Public access methods
 
-.. code-block:: c++
+  .. literalinclude:: code/accessors-nonconst/point.h
+     :caption: :download:`point.h <code/accessors-nonconst/point.h>`
+     :language: c++
 
-   class point
-   {
-   public:
-       int x() const { return _x; }
-       int y() const { return _y; }
-   private:
-       int _x;
-       int _y;
-   };
+* Getting ``x`` and ``y`` values: call getters
 
-* ``const``: read-only access does not alter the object
+  .. literalinclude:: code/accessors-nonconst/main-ok.cpp
+     :caption: :download:`main-ok.cpp
+               <code/accessors-nonconst/main-ok.cpp>`
+     :language: c++
 
-  .. code-block:: c++
+Access Methods ("Getters"): ``const`` Objects
+---------------------------------------------
 
-     const point p{1,2};
-     int x = p.x();       // <--- x() is *const* => ok
+* ``const`` objects: must not be changed
+* |longrightarrow| guarantee, enforced by the compiler
 
-How Are Members Accessed Inside Methods?
-----------------------------------------
+.. literalinclude:: code/accessors-nonconst/main-error.cpp
+   :caption: :download:`main-error.cpp
+             <code/accessors-nonconst/main-error.cpp>`
+   :language: c++
 
-.. sidebar::
+.. code-block:: console
 
-   **See also**
+   .../main-error.cpp:8:28: error: passing ‘const point’ as ‘this’ argument discards qualifiers [-fpermissive]
+       8 |     std::cout << '(' << p.x() << ',' << p.y() << ")\n";
+         |                         ~~~^~
+   
+Access Methods ("Getters"): ``const`` Methods
+---------------------------------------------
 
-   * :doc:`../040-this/topic`
+.. sidebar:: See also
 
-* Method is a *function* that is defined inside the class definition
-* |longrightarrow| C++ *knows* that an object is involved
-* ``_x`` in method body means: "the ``_x`` of the object"
-* Accessed via the hidded ``this`` pointer (see
-  :doc:`../040-this/topic`)
+   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
 
-``const`` Methods
------------------
+* ``const`` objects can only be accessed with ``const`` method
+* |longrightarrow| leave the object itself (``this``) unchanged
 
-.. sidebar::
+.. literalinclude:: code/accessors-const/point.h
+   :caption: :download:`point.h <code/accessors-const/point.h>`
+   :language: c++
 
-   **See also**
+Modifying Method (``p.move(...)``)
+----------------------------------
 
-   * :doc:`../030-const/topic`
+* "Point, move yourself by ``x`` and ``y``"
+* Usage ...
 
-* Getters above are ``const`` but trivial
-* Even non-trivial methods can be ``const``
-* |longrightarrow| whenever a method does not modify a member, it
-  should be written as ``const``
+.. literalinclude:: code/move-x-y/main.cpp
+   :caption: :download:`main.cpp <code/move-x-y/main.cpp>`
+   :language: c++
 
-.. code-block:: c++
+* Implementation (inline)
 
-   class point
-   {
-   public:
-       double abs() const
-       {
-           int hyp = _x*_x + _y*_y;  // <--- read-only member access -> const
-           return sqrt(hyp);
-       }
-   };
+.. literalinclude:: code/move-x-y/point.h
+   :caption: :download:`point.h <code/move-x-y/point.h>`
+   :language: c++
 
-Non ``const`` Methods
----------------------
+Non-Inline Implementation
+-------------------------
 
-* Moving a point obviously must modify its coordinates
-* |longrightarrow| cannot be ``const``
+* Implementation in header file is *inline*
+* |longrightarrow| code inserted at call site
+* |longrightarrow| large binary size (not for ``move(x,y)``, but sure
+  for larger methods)
 
-.. code-block:: c++
+.. literalinclude:: code/move-x-y-non-inline/point.h
+   :caption: :download:`point.h <code/move-x-y-non-inline/point.h>`
+   :language: c++
 
-   class point
-   {
-   public:
-       void move(int x, int y)
-       {
-           _x += x;
-           _y += y;
-       }
-   };
+.. literalinclude:: code/move-x-y-non-inline/point.cpp
+   :caption: :download:`point.h <code/move-x-y-non-inline/point.cpp>`
+   :language: c++
 
-* Non ``const`` methods cannot be called on objects that are ``const``
-* |longrightarrow| that is the deal, after all
+Overloading ``move()`` |longrightarrow| Vector Addition
+-------------------------------------------------------
 
-.. code-block:: c++
+* Why not use a ``point`` instance as a vector?
+* |longrightarrow| ``move(point vec)``
 
-   const point p{1,2};
-   p.move(3,4);         // <--- ERROR: passing ‘const point’ as ‘this’ argument discards qualifiers
+.. literalinclude:: code/move-vector/point.h
+   :caption: :download:`point.h <code/move-vector/point.h>`
+   :language: c++
 
-* Error message is a little "C++ standardese"
+Moving ``const point`` Objects?
+-------------------------------
+
+.. literalinclude:: code/move-const-object/main-error.cpp
+   :caption: :download:`main.cpp <code/move-const-object/main-error.cpp>`
+   :language: c++
+
+.. code-block:: console
+
+   .../main-error.cpp:8:11: error: passing ‘const point’ as ‘this’ argument discards qualifiers [-fpermissive]
+       8 |     p.move(vec);
+         |     ~~~~~~^~~~~
+
+* As above (accessors): cannot call non-``const`` method on ``const``
+  object
+
+.. literalinclude:: code/move-const-object/main-ok.cpp
+   :caption: :download:`main.cpp <code/move-const-object/main-ok.cpp>`
+   :language: c++
+
+Finally: ``point::distance()``
+------------------------------
+
+What we want ...
+
+* distance from another point
+* distance from origin
+* |longrightarrow| overload
+* |longrightarrow| ``const`` method (though Heisenberg says we always
+  modify through measurement)
+
+.. literalinclude:: code/distance/main.cpp
+   :caption: :download:`main.cpp <code/distance/main.cpp>`
+   :language: c++
+
+.. literalinclude:: code/distance/point.h
+   :caption: :download:`main.cpp <code/distance/point.h>`
+   :language: c++
+
+
+``const`` Correctness vs. Pollution
+-----------------------------------
+
+* ``const`` *pollution*
+
+  * "being correct is very cumbersome"
+  * not using ``const`` is arrogant ("the compiler cannot help me
+    because I am better")
+
+* Nice goodie offered by the language
+* Compiler helps me verify that my code is correct
+* ``const`` *correctness*

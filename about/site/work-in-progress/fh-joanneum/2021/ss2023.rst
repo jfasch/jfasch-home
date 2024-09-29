@@ -413,7 +413,7 @@ Block 3: C++
 
        * **More C++ Language Features**
 
-	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
 	   (livehacked: `const-and-refs.cpp <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/const-and-refs.cpp>`__)
 	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
 	   (livehacked: `const-and-refs.cpp <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/const-and-refs.cpp>`__)

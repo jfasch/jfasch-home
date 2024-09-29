@@ -16,7 +16,6 @@ Topics
 
    010-overloading/topic
    020-methods/topic
-   030-const/topic
    040-this/topic
    050-references/topic
    060-static/topic

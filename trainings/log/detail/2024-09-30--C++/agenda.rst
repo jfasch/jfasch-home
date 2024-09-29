@@ -18,7 +18,7 @@ overhaul which is still ongoing. It is not always easy for someone who
 is new to C++ to understand why things are how they are.
 
 :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
-tries to draw he boundary between the old and new C++.
+tries to draw the boundary between the old and new C++.
 
 "New" C++: Syntactic Goodies (Pythonicity)
 ------------------------------------------
@@ -52,7 +52,9 @@ From
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
@@ -64,7 +66,6 @@ From
 
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`

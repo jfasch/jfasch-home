@@ -169,7 +169,7 @@ Custom Constructor: Implementation
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
 
 * Members ``_x`` and ``_y`` initialized with respective parameters
 * Just like assignment in constructor body
@@ -182,7 +182,7 @@ Access Methods For Otherwise Private Members
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/030-const/topic`
+   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
 
 * Members in ``private:`` section inaccessibile from outside class
   definition

@@ -1,6 +1,5 @@
 .. ot-exercise:: cxx03.exercises_userdb.user_const
    :dependencies: cxx03.exercises_userdb.user_access_methods,
-		  cxx03.functions_and_methods.const,
 		  cxx03.functions_and_methods.references
 
 .. include:: <mmlalias.txt>

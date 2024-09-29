@@ -10,6 +10,10 @@ Default Constructor
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+
 Compiler Generated Default Constructor
 --------------------------------------
 

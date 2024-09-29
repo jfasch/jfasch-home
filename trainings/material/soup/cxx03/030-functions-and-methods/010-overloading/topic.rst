@@ -81,6 +81,10 @@ Underlying Mechanism: *Name Mangling*
 Overloading Class Methods: Just The Same
 ----------------------------------------
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+
 The pointless ``class point`` from
 :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
 has a method ``move(int, int)`` which takes two parameters which

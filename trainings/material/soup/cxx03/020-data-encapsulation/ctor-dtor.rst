@@ -14,6 +14,10 @@ More Constructors, Destructors
 Default Constructor (1)
 -----------------------
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+
 **Constructor without parameter** - *Default Constructor*
 
 .. code-block:: c++

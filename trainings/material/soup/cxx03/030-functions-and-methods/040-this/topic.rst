@@ -1,5 +1,5 @@
 .. ot-topic:: cxx03.functions_and_methods.this
-   :dependencies: cxx03.functions_and_methods.const
+   :dependencies: cxx03.functions_and_methods.methods
 
 .. include:: <mmlalias.txt>
 
