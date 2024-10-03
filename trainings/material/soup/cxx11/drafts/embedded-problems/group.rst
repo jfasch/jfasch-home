@@ -30,6 +30,13 @@ Showing options to eliminate ``virtual``, landing in
    variant-automatic-visit
    type-erasure
 
+See that livehacked 
+
+.. toctree::
+   :maxdepth: 1
+
+   virtual-vs-nonvirtual
+
 Another attempt is that one:
 
 * `Breaking Dependencies: Type Erasure - A Design Analysis - Klaus

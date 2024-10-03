@@ -32,3 +32,5 @@ ADD_SUBDIRECTORY(oo-display-core)
 ADD_SUBDIRECTORY(oo-shapes)
 
 ADD_SUBDIRECTORY(stl-exercises)
+
+ADD_SUBDIRECTORY(embedded-virtual-or-not)

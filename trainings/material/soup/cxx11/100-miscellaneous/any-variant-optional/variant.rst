@@ -6,12 +6,14 @@
 New-Style Union: ``std::variant``
 =================================
 
-.. sidebar::
-
-   **Documentation**
+.. sidebar:: Documentation
 
    * `std::variant
      <https://en.cppreference.com/w/cpp/utility/variant>`__
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
 
 .. contents::
    :local:

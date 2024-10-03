@@ -236,22 +236,43 @@ Project Work (Tests err Requirements)
   ``SensorReader::one()``. How about more loops, with abstracted time?
   Discuss!
 
-Resource Management: Copy And Move
-..................................
+Resource Management: Copy
+.........................
 
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
 
+Smart Pointers: ``std::shared_ptr<>``
+.....................................
+
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
+
+Day 5
+-----
+
+Smart Pointers: ``std::unique_ptr<>``
+.....................................
+
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+
+Resource Management: Move
+.........................
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
 
-.. .. error handling bei get_temperature() -> std::expected(?)
+If ``virtual`` Is Bad, Is There An Alternative?
+...............................................
 
-.. .. cmake and dependencies   
+* Show ``operator()(...)`` (function call)
+* While we are at it: :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+* :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant` |longrightarrow| ``std::visit``
 
-.. .. copy/assign -> spaeter
+Finally: hackit
+
+* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/virtual-vs-nonvirtual`
