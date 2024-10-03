@@ -187,7 +187,11 @@ Exercise
 * Like
   :doc:`/trainings/material/soup/cxx-exercises/sensor-interface/sensor-interface`,
   but with our sensors.
-* Wild hacking jjj uml diagram of everything
+* Project plan
+
+.. image:: project-plan.jpg
+
+.. image:: uml.jpg
 
 Day 4
 -----
