@@ -173,3 +173,16 @@ Implementation
      [----------] Global test environment tear-down
      [==========] 4 tests from 1 test suite ran. (0 ms total)
      [  PASSED  ] 4 tests.
+
+Submission
+..........
+
+Archive the project state into a compressed ``.tar`` archive,
+
+.. code-block:: console
+
+   $ cd ~/My-Projects/
+   $ tar -z -c -f dtle-2024.tar.gz dtle-2024/
+
+Submit the archive ``dtle-2024.tar.gz`` to Moodle.
+

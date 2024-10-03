@@ -16,7 +16,7 @@ Compiler Generated Copy Constructor
 
 .. admonition:: **Rule**
 
-   Copy constructor and copy assignment operator is automatically
+   Copy constructor and copy assignment operator are automatically
    generated if ...
 
    * there is no user defined move constructor
