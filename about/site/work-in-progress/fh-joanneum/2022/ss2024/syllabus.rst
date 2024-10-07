@@ -127,7 +127,7 @@ Hilfsmittel zugelassen.
 Wiederholungsmöglichkeiten
 ..........................
 
-Wie unter :ref`beurteilungsschema` beschrieben, müssen im Fall einer
+Wie unter :ref:`beurteilungsschema` beschrieben, müssen im Fall einer
 negativen Beurteilung sowohl der praktische (Laborklausur) als auch
 der theoretische (schriftliche Klausur) Teil wiederholt werden.
 

@@ -21,6 +21,9 @@ Alignment
 ..
 .. http://www.makelinux.net/books/lkd2/ch19lev1sec3
 
+.. contents::
+   :local:
+
 Data Alignment
 --------------
 
@@ -72,12 +75,15 @@ Unaligned Data Access (2)
 
 * The following code is not clean
 * Works only because all is done to make unaligned access work
+* *This is not guaranteed!*
+* An OS is perfectly allowed to crash the offending program (not
+  generally done though)
 
 .. code-block:: c
 
    char dog[10];
-   char *p = &dog[1];
-   unsigned long l = *(unsigned long *)p;
+   char *p = dog+1;
+   unsigned long l = *(unsigned long *)p;                 // <-- unaligned access
 
 * Future proof (but no faster) ...
 

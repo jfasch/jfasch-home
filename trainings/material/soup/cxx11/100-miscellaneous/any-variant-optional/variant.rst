@@ -81,3 +81,35 @@ And User Defined Types?
 .. literalinclude:: code/variant-no-default-ctor.cpp
    :caption: :download:`code/variant-no-default-ctor.cpp`
    :language: c++
+
+And Memory Usage?
+-----------------
+
+* Not defined by standard
+* Results presented are from GCC
+
+  .. code-block:: console
+
+     $ gcc --version
+     gcc (GCC) 13.3.1 20240913 (Red Hat 13.3.1-3)
+     Copyright (C) 2023 Free Software Foundation, Inc.
+     This is free software; see the source for copying conditions.  There is NO
+     warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+* What does make sense?
+* |longrightarrow| A typesafe union has to carry a type discriminator:
+  at least as wide as a ``uint8_t`` for < 256 different types
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/c/080-advanced-language-features/030-alignment/topic`
+
+.. literalinclude:: code/variant-mem-usage-2-uint8.cpp
+   :caption: :download:`variant-mem-usage-2-uint8.cpp
+             <code/variant-mem-usage-2-uint8.cpp>`
+   :language: c++
+
+.. code-block:: console
+
+   $ ./c++11-variant-mem-usage-2-uint8 
+   2

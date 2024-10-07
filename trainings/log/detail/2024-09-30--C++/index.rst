@@ -253,6 +253,19 @@ Smart Pointers: ``std::shared_ptr<>``
 Day 5
 -----
 
+Morning Wakeup
+..............
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/hardware/can/group`
+   * :doc:`/trainings/repertoire/linux-prog/embedded/embedded`
+
+* ``toolcase/can/CanCoutPeriph.h``: dtor not needed
+* Show ``toolcase/can/SocketCANPeriph.h``
+* |longrightarrow| *no copy!*
+* Show ``programs/can-thermometer-firmware.cpp``
+
 Smart Pointers: ``std::unique_ptr<>``
 .....................................
 

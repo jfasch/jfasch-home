@@ -36,6 +36,20 @@ C++ Intro
 
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+* From
+  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+
+* From :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
+  * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
 Recommended Readings, Links
 ---------------------------
