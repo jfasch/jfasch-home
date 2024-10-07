@@ -7,5 +7,5 @@ class Source
 {
 public:
     virtual ~Source() = default;
-    virtual std::string get() = 0;
+    virtual const char* get() = 0;
 };

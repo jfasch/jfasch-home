@@ -1,4 +1,3 @@
-ADD_EXECUTABLE(
-  embedded-firmware-virtual
-  firmware.cpp
-)
+add_subdirectory(firmware)
+add_subdirectory(toolcase)
+add_subdirectory(tests)
