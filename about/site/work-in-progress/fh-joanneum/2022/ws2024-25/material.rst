@@ -4,17 +4,22 @@
 Embedded Computing 2 (STECE-2022): Material
 ===========================================
 
+.. toctree::
+   :hidden:
+
+   project/index
+
+.. sidebar::
+
+   * Github Project: https://github.com/jfasch/FH-STECE2022
+   * :doc:`project/index`
+
 .. contents::
    :local:
 
-Github Project
---------------
-
-https://github.com/jfasch/FH-STECE2022
-
-Project Plan
-------------
+Project: Peripherals
+--------------------
 
 .. toctree::
 
-   project/index
+   2024-10-08/index

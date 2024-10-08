@@ -7,14 +7,14 @@
 Cross Toolchain Setup
 =====================
 
-.. contents::
-   :local:
-
 .. sidebar::
 
    **See also**
 
    * :doc:`toolchain-build-docker-fedora`
+
+.. contents::
+   :local:
 
 Download And Install Toolchain Archive
 --------------------------------------
@@ -27,8 +27,8 @@ Download And Install Toolchain Archive
 
    **Download**
 
-   * `armv8-rpi4-linux-gnueabihf.tar.xz
-     <https://drive.google.com/file/d/1YAlNEQT9UY-z-nVWX-U55i0Zl1TNUfjB/view?usp=share_link>`__
+   * `armv8-rpi4-linux-gnueabihf-gcc-10.2-glibc-2.31.tar.xz
+     <https://drive.google.com/file/d/1FskznIXk4v_1JFyFbHtNLjC_WPDOLehH/view?usp=sharing>`__
 
 * Create a directory, say, ``~/x-tools`` (the :doc:`Crosstool-NG
   </blog/2022/09/cross-raspi>` default name, you might well choose a
@@ -37,14 +37,15 @@ Download And Install Toolchain Archive
   keeping different versions together in one directory helps organize
   our work.)
 * `Download
-  <https://drive.google.com/file/d/1YAlNEQT9UY-z-nVWX-U55i0Zl1TNUfjB/view?usp=share_link>`__
+  <https://drive.google.com/file/d/1FskznIXk4v_1JFyFbHtNLjC_WPDOLehH/view?usp=sharing>`__
   the toolchain archive (a whopping 70MB)
 * Unpack the archive into ``~/x-tools``, as follows
 
   * Change into toolchain install directory
 
   .. code-block:: console
-  
+
+     $ mkdir ~/x-tools
      $ cd ~/x-tools
 
   * Get an overview of the download, and see what's in it
@@ -67,6 +68,7 @@ Download And Install Toolchain Archive
      armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot/usr/include/asm-generic/bitsperlong.h
      armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot/usr/include/asm-generic/bpf_perf_event.h
      armv8-rpi4-linux-gnueabihf/armv8-rpi4-linux-gnueabihf/sysroot/usr/include/asm-generic/errno-base.h
+     ...
 
   * If you are fine, unpack it. This will create a directory
     ``~/x-tools/armv8-rpi4-linux-gnueabihf`` - our toolchain base

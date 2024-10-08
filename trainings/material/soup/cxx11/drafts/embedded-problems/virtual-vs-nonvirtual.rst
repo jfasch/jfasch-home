@@ -23,45 +23,45 @@ Classic OO Design
 Source Hierarchy
 ................
 
-.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/source.h
+.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/source.h
    :caption: :download:`Interface: source.h
-             </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/source.h>`
+             </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/source.h>`
    :language: c++
 
-.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/source-a.h
-   :caption: :download:`Implementation: source-a.h
-	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/source-a.h>`
+.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/source-copyable.h
+   :caption: :download:`Implementation: source-copyable.h
+	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/source-copyable.h>`
    :language: c++
 
-.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/source-b.h
-   :caption: :download:`Implementation: source-b.h
-             </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/source-b.h>`
+.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/source-movable.h
+   :caption: :download:`Implementation: source-movable.h
+             </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/source-movable.h>`
    :language: c++
 
 Sink Hierarchy
 ..............
 
-.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/sink.h
+.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/sink.h
    :caption: :download:`Interface: sink.h
-	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/sink.h>`
+	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/sink.h>`
    :language: c++
 
-.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/sink-1.h
-   :caption: :download:`Implementation: sink-1.h
-	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/sink-1.h>`
+.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/sink-copyable.h
+   :caption: :download:`Implementation: sink-copyable.h
+	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/sink-copyable.h>`
    :language: c++
 
-.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/sink-2.h
-   :caption: :download:`Implementation: sink-2.h
-	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/sink-2.h>`
+.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/sink-movable.h
+   :caption: :download:`Implementation: sink-movable.h
+	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/sink-movable.h>`
    :language: c++
 
 Loop In The Middle
 ..................
 
-.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/loop.h
+.. literalinclude:: /trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/loop.h
    :caption: :download:`loop.h
-	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/loop.h>`
+	     </trainings/material/soup/cxx-code/embedded-virtual-or-not/embedded-virtual/toolcase/loop.h>`
    :language: c++
 
 Omitting ``virtual``: Cram All Alternatives Into ``std::variant<>``

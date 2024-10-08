@@ -246,6 +246,8 @@ devices. Lets proble I2C bus 1 (i.e. ``/dev/i2c-1``),
 
 Voila, everything there - one device at address ``0x48``.
 
+.. _lm73-userspace-i2c:
+
 Using the Device: Talking I2C from Userspace
 --------------------------------------------
 

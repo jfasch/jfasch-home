@@ -184,8 +184,10 @@ Configure Software
 Next, we configure software. Please read :doc:`../i2c/topic` for
 details; here we just reproduce shortly what is explained there.
 
-Enable I2C, and Check
-`````````````````````
+.. _w1-i2c-raspi-bootloader:
+
+Enable I2C, and Check (Bootloader config, ``/boot/config.txt)``
+```````````````````````````````````````````````````````````````
 
 In ``/boot/config.txt``, add the following line.
 
@@ -207,8 +209,10 @@ Reboot and verify that all is well.
    $ ls -l /sys/bus/i2c/devices/i2c-1
    lrwxrwxrwx 1 root root 0 Oct  4 12:43 /sys/bus/i2c/devices/i2c-1 -> ../../../devices/platform/soc/fe804000.i2c/i2c-1
 
-Verify That Our Device Is There
-```````````````````````````````
+.. _w1-i2c-raspi-i2cdetect:
+
+Verify That Our Device Is There (``i2cdetect)``
+```````````````````````````````````````````````
 
 .. sidebar::
 

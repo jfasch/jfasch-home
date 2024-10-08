@@ -7,9 +7,12 @@
 CMake: Cross Build
 ==================
 
-.. sidebar:: 
+.. sidebar:: See also
 
-   **Source Code**
+   * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
+   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
+
+.. sidebar:: Source Code
 
    The example code in this section is maintained on `Github
    <https://github.com/jfasch/jfasch-home-linux-toolchain>`__

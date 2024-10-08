@@ -21,7 +21,8 @@ Process Context
 **Preemption** ...
 
 * Process context is subject to *scheduling*
-* Fair scheduling: *preemption* at end of time slice
+* Fair scheduling: *preemption* at end of time slice (or after
+  voluntary sleep)
 * Realtime: *preemption* when higher priority process/thread is
   runnable
 

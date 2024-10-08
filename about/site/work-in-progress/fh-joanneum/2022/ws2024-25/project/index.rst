@@ -1,16 +1,19 @@
 Project Plan
 ============
 
+.. contents::
+   :local:
+
 Hardware
 --------
 
 .. toctree::
 
-   proximity
-   gyroscope
+   proximity-vl53l1x
+   gyroscope-bno055
+   motor-control-btn9960lv
    adc
    servo-motor
-   motor-control
    display-ssd1305
    display-waveshare
 
