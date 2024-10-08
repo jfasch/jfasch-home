@@ -37,6 +37,7 @@ From :doc:`/trainings/material/soup/linux/basics/shell/group`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
 * :doc:`/trainings/material/soup/linux/basics/shell/paths`
+* :doc:`/trainings/material/soup/linux/basics/shell/special-paths`
 * :doc:`/trainings/material/soup/linux/basics/shell/ls`
 * :doc:`/trainings/material/soup/linux/basics/shell/cwd`
 * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`

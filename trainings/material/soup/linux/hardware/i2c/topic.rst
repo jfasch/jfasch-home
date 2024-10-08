@@ -251,16 +251,14 @@ Voila, everything there - one device at address ``0x48``.
 Using the Device: Talking I2C from Userspace
 --------------------------------------------
 
-.. sidebar::
-
-   **Documentation**
+.. sidebar:: Documentation
 
    * :download:`LM73 datasheet (download) <Thermometer_LM73.pdf>`
 
 Reading the :download:`datasheet <Thermometer_LM73.pdf>` thoroughly
 [#datasheet-authors-mad]_, one can implement the device's protocol in
 userspace. On the *bus* device ``/dev/i2c-1``, you kind of *connect*
-to the device's address (``0x48``), and send bytes back and forth.
+to the device's address (``0x49``), and send bytes back and forth.
 
 .. literalinclude:: LM73.py
    :caption: :download:`LM73.py`
@@ -274,7 +272,8 @@ I2C devices. See `the kernel documentation
 detailed information - we are scratching only the surface here.
 
 But this is rarely necessary because most devices are supported by
-Linux out of the box, and LM73 is no exception.
+Linux out of the box, and `LM73 is no exception
+<https://github.com/torvalds/linux/blob/master/drivers/hwmon/lm73.c>`__.
 
 Using the Device: ``hwmon`` - Hardware Monitoring
 -------------------------------------------------
