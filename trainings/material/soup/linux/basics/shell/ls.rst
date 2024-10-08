@@ -1,6 +1,7 @@
 .. ot-topic:: linux.basics.shell.ls
    :dependencies: linux.basics.shell.cwd,
 		  linux.basics.shell.paths,
+		  linux.basics.shell.special_paths,
 		  linux.basics.intro.overview
 
 .. include:: <mmlalias.txt>

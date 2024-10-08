@@ -98,6 +98,10 @@ Help and Manual
 
   .. code-block:: console
 
+     $ man find
+
+  .. code-block:: console
+
      FIND(1)                                                                                                  General Commands Manual                                                                                                 FIND(1)
      
      NAME

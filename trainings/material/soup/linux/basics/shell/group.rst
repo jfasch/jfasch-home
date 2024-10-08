@@ -14,6 +14,7 @@ The Shell (Bash - "Bourne Again Shell")
 
    commandline
    paths
+   special-paths
    ls
    cwd
    file_dir_create_rm
