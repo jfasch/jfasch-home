@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Exercise: ``Hysteresis``
-========================
+Exam: ``Hysteresis``
+====================
 
 .. contents::
    :local:

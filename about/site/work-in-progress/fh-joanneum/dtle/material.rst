@@ -1,4 +1,4 @@
-Design Tools And Laboratory Engineering: Intro
+Design Tools And Laboratory Engineering (2024)
 ==============================================
 
 .. contents::
@@ -9,11 +9,13 @@ Design Tools And Laboratory Engineering: Intro
    A VirtualBox image with Debian Linux is provided
    
 
-C And C++
----------
+C
+-
 
-C: Structures, Pointers And Arrays
-..................................
+Type System, Structures, Pointers And Arrays
+............................................
+
+* :doc:`/trainings/material/soup/c/020-types-operators-expressions/080-type-conversions/topic`
 
 From :doc:`/trainings/material/soup/c/060-structures/group` ...
 
@@ -24,46 +26,27 @@ From :doc:`/trainings/material/soup/c/050-pointers-and-arrays/group` ...
 
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/010-pointers-and-addresses/topic`
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/020-pointers-and-function-arguments/topic`
+
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/030-exercise-swap/topic`
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
-
-C++: A Better C?
-................
-
-From :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group` ...
-
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
-
-From
-:doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group` ...
-
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
-
-From :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group` ...
-
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
 Recommended Readings, Links
 ...........................
 
-* Bjarne Stroustrup: The C++ Programming Language (Fourth Edition),
-  Addison-Wesley (`PDF
-  <https://chenweixiang.github.io/docs/The_C++_Programming_Language_4th_Edition_Bjarne_Stroustrup.pdf>`__)
-* `C++ Tutorial for Beginners - Full Course
-  <https://youtu.be/vLnPwxZdW4Y?si=T-myWFs4zt9ekbf0>`__
+* `FH Joanneum: Egon Teiniker on Computer Science (Github)
+  <https://github.com/teiniker/teiniker-lectures-computerscience>`__
+  (`"programming-c"
+  <https://github.com/teiniker/teiniker-lectures-computerscience/tree/master/programming-c>`__)
+* `Brian W. Kernighan, Dennis M. Ritchie: The C Programming Language
+  (Second Edition/ANSI C), Prentice Hall
+  <https://en.wikipedia.org/wiki/The_C_Programming_Language>`__
+* `Pointers in C for Absolute Beginners – Full Course
+  <https://youtu.be/MIL2BK02X8A?si=T8w9O7a-AM7T2IMu>`__
 
   .. raw:: html
 
      <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/vLnPwxZdW4Y?si=T-myWFs4zt9ekbf0" 
+             src="https://www.youtube.com/embed/MIL2BK02X8A?si=vX5AVl0BJvyZU3Eo" 
 	     title="YouTube video player" 
 	     frameborder="0" 
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -99,48 +82,6 @@ Exercises
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/copy-tree`
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-tree`
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-rf`
-
-More Commands
-.............
-
-From :doc:`/trainings/material/soup/linux/basics/text-tools/group`
-
-* :doc:`/trainings/material/soup/linux/basics/text-tools/cat`
-* :doc:`/trainings/material/soup/linux/basics/text-tools/head-tail`
-* :doc:`/trainings/material/soup/linux/basics/text-tools/cut`
-
-.. TODO head und tail
-
-.. cat as nop filter file:///tmp/jfasch-home/html/trainings/material/soup/linux/basics/text-tools/cat.html
-.. file:///tmp/jfasch-home/html/trainings/material/soup/linux/basics/text-tools/overview.html
-.. from stdin :doc:`/trainings/material/soup/linux/basics/text-tools/head-tail`
-.. /etc/passwd * :doc:`/trainings/material/soup/linux/basics/text-tools/cut`
-
-Exercises
-.........
-
-#. Output the first two lines of ``/etc/passwd``
-#. Output the third line of ``/etc/passwd`` (Note: use head and tail
-   in a pipe)
-
-OS Concepts: File System Permissions
-....................................
-
-* :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-
-Exercises
-.........
-
-From
-:doc:`/trainings/material/soup/linux/basics/permissions/exercises/group` ...
-
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/private-directory-question`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory-question`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/fh-questions`
 
 Recommended Readings, Links
 ...........................
