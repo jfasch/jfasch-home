@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-C++: A Wild Ride (2024-09-30 - 2024-10-04)
-==========================================
+C++: An Embedded Wild Ride (2024-09-30 - 2024-10-04)
+====================================================
 
 .. contents::
    :local:
@@ -199,11 +199,6 @@ Day 4
 Morning Wakeup
 ..............
 
-.. sidebar:: See also
-
-   * :doc:`/trainings/material/soup/cmake/advanced/code-generators/screenplay` (from :doc:`/trainings/repertoire/misc/cmake`)
-
-
 * ``#include`` coding guidelies: e.g. ``toolcase/base/CoutSink.h`` has
   ``#include <base/IDataSink.h>``
 
@@ -219,10 +214,21 @@ Morning Wakeup
 Code Generation With CMake
 ..........................
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cmake/advanced/code-generators/screenplay` (from :doc:`/trainings/repertoire/misc/cmake`)
+
 * Show how config (sensor, sink) can be brought in more statically, at
   link time |longrightarrow| manual prototype
 * Generate code? |longrightarrow|
   :doc:`/trainings/material/soup/cmake/advanced/code-generators/screenplay`
+
+Livehacked outcome
+
+* Code generator invocation: `programs/CMakeLists.txt
+  <https://github.com/jfasch/2024-09-30/blob/main/programs/CMakeLists.txt>`__
+* Code generator itself: `programs/thermometer-firmware-confgen.py
+  <https://github.com/jfasch/2024-09-30/blob/main/programs/thermometer-firmware-confgen.py>`__
 
 Project Work (Tests err Requirements)
 .....................................
@@ -279,13 +285,126 @@ Resource Management: Move
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
 
-If ``virtual`` Is Bad, Is There An Alternative?
+See `livehacking/string.cpp
+<https://github.com/jfasch/2024-09-30/blob/main/livehacking/string.cpp>`__
+
+.. _course-2024-09-30-candatasink-template:
+
+Eliminating ``virtual``: Template ``CanDataSink<>``
+...................................................
+
+The `Strategy Pattern
+<https://en.wikipedia.org/wiki/Strategy_pattern>`__ has many facets.
+
+Originally, it was conceived as using a polymorphic type. Like
+``CanDataSink`` (`CanDataSink.h
+<https://github.com/jfasch/2024-09-30/blob/main/toolcase/can/CanDataSink.h>`__),
+using a polymorphic CAN interface to abstract away CAN communication
+(`ICan.h
+<https://github.com/jfasch/2024-09-30/blob/main/toolcase/can/ICan.h>`__). While
+this is the most flexible application of the pattern, it is not always
+applicable in embedded systems where code size matters.
+
+Instead of parameterizing ``CanDataSink`` with a polymorphic object -
+at runtime - of base type ``ICan``, the same effect can be achieved by
+parameterizing ``CanDataSink`` *at compile time*, by turning
+``CanDataSink`` into a template class, parameterized with a concrete
+class that does the physical output.
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+
+See
+`embedded-nonvirtual-polymorphic-pointers/toolcase/can/CanDataSink.h
+<https://github.com/jfasch/2024-09-30/blob/main/embedded-nonvirtual-polymorphic-pointers/toolcase/can/CanDataSink.h>`__.
+
+Note that templates, instantiated with parameter types that are
+lacking required functionality, can cause a compiler to frustrate
+developers. :doc:`Concepts
+</trainings/material/soup/cxx11/020-new-language-features/concepts/group>`
+are a newer language feature to prevent such situations.
+
+Eliminating ``virtual``: using ``std::variant``
 ...............................................
 
-* Show ``operator()(...)`` (function call)
-* While we are at it: :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
-* :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant` |longrightarrow| ``std::visit``
+.. sidebar:: See also
 
-Finally: hackit
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+   * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
 
-* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/virtual-vs-nonvirtual`
+* Show function call operator (``operator()(...)``), and Lambdas:
+  `livehacking/lambda.cpp
+  <https://github.com/jfasch/2024-09-30/blob/main/livehacking/lambda.cpp>`__
+* :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`, and ``std::visit``: 
+  `livehacking/variant.cpp <https://github.com/jfasch/2024-09-30/blob/main/livehacking/variant.cpp>`__
+
+**Idea**
+
+The approach seen in :ref:`course-2024-09-30-candatasink-template`
+does not permit runtime dispatch between two strategies. If runtime
+dispatch is needed, ``virtual`` sometimes runs into opposition from
+embedded developers for the following reasons.
+
+* It has a certain runtime overhead. The compiler is prevented from
+  applying optimizations across indirect calls. ``inline virtual`` is
+  much desired, but not a feature of the language.
+* Code bloat. Unsure though if that is really the case.
+
+.. _course-2024-09-30-approach-1:
+
+Approach 1: Pointers To Alternatives In A ``std::variant``
+``````````````````````````````````````````````````````````
+
+Rather than implementing the `Strategy Pattern
+<https://en.wikipedia.org/wiki/Strategy_pattern>`__ using a classic
+pointer to polymorphic type, union (err ``std::variant``) is used to
+hold a fixed number of *unrelated* alternative pointer types. Advantages:
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+   * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
+
+* No ``virtual``. The alternatives only need to match the requirements
+  (see :ref:`course-2024-09-30-candatasink-template`); :doc:`Concepts
+  </trainings/material/soup/cxx11/020-new-language-features/concepts/group>`
+  could additionally be used to check requirements.
+* Dynamic dispatch is done using `std::visit`, using the
+  ``std::variant``'s type discriminator, with the effect that the
+  compiler is allowed to optimize aggressively.
+* If the ``std::variant`` is instantiated with only one type (when the
+  embedded firmware is burnt into hardware), chances are that *dynamic
+  dispatch is omitted altogether*.
+
+**Implementation**
+
+* `DataSinkPointerAlternative.h
+  <https://github.com/jfasch/2024-09-30/blob/main/embedded-nonvirtual-polymorphic-pointers/toolcase/base/DataSinkPointerAlternative.h>`__:
+  pointer-like, using a ``std::variant`` to hold a predefined set of
+  alternatives
+* `can-thermometer-firmware.cpp
+  <https://github.com/jfasch/2024-09-30/blob/main/embedded-nonvirtual-polymorphic-pointers/programs/can-thermometer-firmware.cpp>`__:
+  application of it.
+
+Approach 2: Alternative Objects In A ``std::variant``
+`````````````````````````````````````````````````````
+
+As a case study (and to show :doc:`Move Semantics
+</trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
+in action), :ref:`course-2024-09-30-approach-1` is modified to cram
+entire objects in a ``std::variant``.
+
+* Advantage: no pointer usage. Objects are *moved* or *copied*, thus
+  there are no references that might dangle.
+* Disadvantage: takes a while to understand.
+
+**Implementation**
+
+* `DataSinkObjectAlternative.h
+  <https://github.com/jfasch/2024-09-30/blob/main/embedded-nonvirtual-polymorphic-objects/toolcase/base/DataSinkObjectAlternative.h>`__:
+  pointer-like, using a ``std::variant`` to hold a predefined set of
+  alternatives
+* `can-thermometer-firmware.cpp
+  <https://github.com/jfasch/2024-09-30/blob/main/embedded-nonvirtual-polymorphic-objects/programs/can-thermometer-firmware.cpp>`__:
+  application of it.

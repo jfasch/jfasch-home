@@ -21,10 +21,10 @@ A one-day ride through C++. Still under preparation.
 
 (:doc:`More ... <detail/2024-11-19--C++-One-Day/index>`)
 
-C++: A Wild Ride (2024-09-30 - 2024-10-04)
-------------------------------------------
+C++: An Embedded Wild Ride (2024-09-30 - 2024-10-04)
+----------------------------------------------------
 
-Five days C++ for a mixed group of C and C++ developers, at a
+Five days C++ for a mixed group of C and C++ embedded developers, at a
 long-time customer of mine.
 
 (:doc:`More ... <detail/2024-09-30--C++/index>`)
