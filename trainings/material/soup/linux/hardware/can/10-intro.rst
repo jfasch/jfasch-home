@@ -13,6 +13,10 @@ CAN/Linux Basics
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   * :doc:`40-harware`
+
 Why This Talk?
 --------------
 

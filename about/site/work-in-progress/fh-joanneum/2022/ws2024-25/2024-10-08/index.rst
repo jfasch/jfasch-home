@@ -7,15 +7,6 @@
 .. contents::
    :local:
 
-Devices Overview
-----------------
-
-* :doc:`../project/proximity-vl53l1x`
-* :doc:`../project/gyroscope-bno055`
-* :doc:`../project/motor-control-btn9960lv`
-* :doc:`../project/display-waveshare`
-* :doc:`../project/servo-motor`
-
 Cross Development Recap
 -----------------------
 
@@ -23,11 +14,19 @@ Cross Development Recap
 * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
 * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
 
-Hardware Interfaces
--------------------
+Project Kickoff: Hack Hardware In Groups
+----------------------------------------
 
-I2C
-...
+Devices Overview
+................
+
+* :doc:`../project/proximity-vl53l1x`
+* :doc:`../project/gyroscope-bno055`
+* :doc:`../project/motor-control-btn9960lv`
+* :doc:`../project/servo-motor`
+
+Linux And I2C
+.............
 
 * Enable I2C on Raspi
 
@@ -40,13 +39,13 @@ I2C
     https://docs.kernel.org/i2c/dev-interface.html
   * Example using LM73 temperature sensor: :ref:`lm73-userspace-i2c`
 
-PWM
-...
+Linux And PWM
+.............
 
 * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
 
-SPI
-...
+Linux And SPI
+.............
 
 * `ws2812-spi on Github
   <https://github.com/jfasch/ws2812-spi>`__. Look into `ws2812/spi.cpp

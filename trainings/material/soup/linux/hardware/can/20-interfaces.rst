@@ -1,4 +1,5 @@
 .. ot-topic:: linux.hardware.can.interfaces
+   :dependencies: linux.hardware.can.intro
 
 .. meta::
    :description: CAN Bus (using MCP2515)

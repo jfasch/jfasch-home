@@ -25,7 +25,8 @@ C++: An Embedded Wild Ride (2024-09-30 - 2024-10-04)
 ----------------------------------------------------
 
 Five days C++ for a mixed group of C and C++ embedded developers, at a
-long-time customer of mine.
+long-time customer of mine. It took me some time to recover from it
+|:dizzy_face:|.
 
 (:doc:`More ... <detail/2024-09-30--C++/index>`)
 

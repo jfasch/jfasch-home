@@ -91,8 +91,12 @@ Attaching a `PCA9685
 is really simple as the remainder of this topic will show, and to use
 it from Linux is even simpler.
 
-Wiring, Setup, and Testing
---------------------------
+Wiring, And Checking Device Presence
+------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
 
 That said, here's the wiring.
 
@@ -166,8 +170,13 @@ there are multiple PCA's on the same bus, and which you want to give
 commands simultaneously. We don't use this feature so we can ignore
 that second address.
 
+PCA9685 Kernel Driver 
+---------------------
+
 Ok, so the device is there. We do not want to talk to it "by hand",
-using ``/dev/i2c-1``. We could, see `here
+using ``/dev/i2c-1`` (see :doc:`here
+</trainings/material/soup/linux/hardware/i2c/topic>` for how to do
+this). We could, see `here
 <https://www.kernel.org/doc/Documentation/i2c/dev-interface>`__ for
 how, but we won't. The Linux kernel has dedicated PWM subsystem that
 is used to control PWM devices, regardless of their peculiarities such

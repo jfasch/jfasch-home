@@ -37,7 +37,7 @@ MCP2515: SPI
    :align: left
    :widths: auto
 
-   * * * SPI: asymmetrisch (Master/Slave)
+   * * * SPI: asymmetric (Master/Slave)
 
          * ``MOSI``, ``MISO``, ``SCLK``: SPI lines
          * *Chip Select* (*slave select*)

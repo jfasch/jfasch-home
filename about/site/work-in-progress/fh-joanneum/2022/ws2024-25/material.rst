@@ -17,9 +17,7 @@ Embedded Computing 2 (STECE-2022): Material
 .. contents::
    :local:
 
-Project: Peripherals
---------------------
-
 .. toctree::
 
    2024-10-08/index
+   2024-10-23/index

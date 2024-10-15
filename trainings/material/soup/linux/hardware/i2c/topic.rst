@@ -18,14 +18,15 @@ Overview
 --------
 
 This article shows how you use Linux to communicate with `I2C
-<https://en.wikipedia.org/wiki/I%C2%B2C>`__ devices. We use ...
+<https://en.wikipedia.org/wiki/I%C2%B2C>`__ devices.
 
-* Rasperry Pi because everything's easy there. This article's
-  principles hold unmodified for other devices that run Linux (more
-  handwork might be needed though).
-* The *Hardware Monitoring* interface in ``/sys/class/hwmon``
-* The `Texas Instruments LM73 <https://www.ti.com/product/LM73>`__
-  temperature sensor.
+* We use the `Rasperry Pi <https://www.raspberrypi.org/>`__ because
+  everything's easy there. This article's principles hold unmodified
+  for other devices that run Linux (more handwork might be needed
+  though).
+* We use the `Texas Instruments LM73
+  <https://www.ti.com/product/LM73>`__ temperature sensor, as a
+  placeholder for *just about any I2C device*
 
 Configuring I2C Master
 ----------------------
@@ -37,10 +38,10 @@ of no relevance here.
 The other, ``i2c-1``, is for maker's use. This is what this section is
 about.
 
-Enable I2C, Load BCM2835 Platform Driver
-........................................
+Enable I2C, Load BCM2835 I2C Master Driver
+..........................................
 
-.. sidebar:: Raspberry Pi GPIO header pinout
+.. sidebar:: Raspberry Pi 40-pin header pinout
 
    .. image:: ../common-images/raspi-pinout.png
 
@@ -61,17 +62,17 @@ The effect of enabling I2C is that
 * pins *GPIO2* and *GPIO3* are not GPIO pins anymore, but rather their
   alternative configurations as *data* and *clock*, respectively, are
   enabled. See the pinout diagram.
-* the platform I2C driver is loaded.
+* the driver for the Raspberry (BCM2835) I2C master is loaded.
 
 **Reboot**, and check:
 
 .. code-block:: console
    :caption: I2C platform driver
 
-   $ lsmod |grep i2c
+   $ lsmod | grep i2c
    i2c_bcm2835            16384  0
 
-We can see a userspace representation of the bus in ``sysfs``,
+We can see a userspace representation of the I2C master in ``sysfs``,
 
 .. code-block:: console
    :caption: I2C bus #1 visible in ``sysfs``
@@ -82,22 +83,22 @@ We can see a userspace representation of the bus in ``sysfs``,
 .. note::
 
    You can use the ``raspi-config`` tool to do the same in a more
-   comfortable manner. Here in this article, we do *not* use any of
-   those decadent tools. These are Raspberry specific and not
-   available on any other Linux device [#config-txt-decadent-enough]_.
+   comfortable way. Here in this article, we do *not* use any of those
+   decadent tools. These are Raspberry specific and not available on
+   any other Linux device [#config-txt-decadent-enough]_.
 
    See `here
    <https://www.raspberrypi.org/documentation/computers/configuration.html>`__
    for decadent documentation of ``raspi-config``.
 
-Enable Userspace I2C
-....................
+Make I2C Master Visible In Userspace (``/dev/i2c-1``)
+.....................................................
 
-We will be using a `LM73 <https://www.ti.com/product/LM73>`__
-temperature sensor, for which a kernel driver exists. This means it is
-not strictly necessary to enable the I2C userspace interface - it is
-helpful though if you want to do diagnostics such as scanning an I2C
-bus for available devices.
+One of the next steps will be to connect an I2C device to our bus, and
+to check if it is actually recognized as such. There is a tool for
+that check, ``i2cdetect`` (:ref:`see below <hardware-i2c-i2cdetect>`),
+which requires us to make the I2C master available in userspace as
+``/dev/i2c-1``. Lets to this before we continue.
 
 Load the driver, ``i2c_dev``, manually first to see what is going
 on. This will create a *character device* ``/dev/i2c-1`` which
@@ -125,12 +126,16 @@ has booted, so we write the module name in ``/etc/modules``,
    The same is accomplished by creating a dedicated file, say
    ``/etc/modules-load.d/i2c``, with ``i2c-dev`` in it.
 
-**Reboot**, and check if ``/etc/i2c-1`` is still there. We will later
-see how to detect devices on it using the ``i2cdetect`` `tool
+**Reboot**, and check if ``/etc/i2c-1`` is still there. We will
+:ref:`later see <hardware-i2c-i2cdetect>` how to detect devices on it
+using the ``i2cdetect`` `tool
 <https://linux.die.net/man/8/i2cdetect>`__.
 
-Slave Device: LM73
-------------------
+Connect A Slave Device (LM73 Temperature Sensor)
+------------------------------------------------
+
+LM73 Hardware
+.............
 
 .. sidebar:: Datasheet etc.
 
@@ -142,15 +147,10 @@ small. Power can be supplied in a range between 2.7V and 5.5V. This is
 practical since the Pi's I2C operating voltage is 3.3V; we use the
 3.3V rail to power the chip.
 
-During a larger project, I had to write a larger software package and,
-among other tasks like PCI communication, talk to LM73. This is where
-I decided to isolate the chip for easy testing, and came up with a PCB
-to carry only the LM73 and a capacitor.
-
 .. image:: breakout.jpg
 
-The breakout board has a 10-pin IDC header with the following pin
-assignments:
+The breakout board [#lm73-breakout-why]_ has a 10-pin IDC header with
+the following pin assignments:
 
 .. list-table::
    :align: left
@@ -191,8 +191,8 @@ The LM73 lets you choose between three different addresses, via pin 1.
 The breakout board takes this into account: a 3 pin header lets you
 connect pins with a jumper.
 
-Connecting LM73 to Raspberry Pi
--------------------------------
+Wiring LM73 To The Raspberry Pi
+...............................
 
 Given the above IDC header pinout, we can now connect to the Raspberry
 Pi as follows:
@@ -212,6 +212,8 @@ Pi as follows:
    * * 5 (SCL)
      * 5
 
+.. _hardware-i2c-i2cdetect:
+
 ``i2c-tools``/``i2cdetect``: Diagnostics, Detecting Devices
 -----------------------------------------------------------
 
@@ -221,15 +223,15 @@ everything's connected correctly. I omitted the address jumper, so
 LM73 pin 1 is left floating - the chip should appear on address
 ``0x48``.
 
-Install the ``i2c-tools`` package,
+Install the ``i2c-tools`` package [#i2c-tools-maybe-installed]_,
 
 .. code-block:: console
 		
    # apt install i2c-tools
 
 ``i2c-tools`` brings a set of low-level programs to manipulate I2C
-device registers. ``i2cdetect`` is a tool to "probe" a bus for
-devices. Lets proble I2C bus 1 (i.e. ``/dev/i2c-1``),
+device registers. Among those, ``i2cdetect`` is a tool to "probe" a
+bus for devices. Lets probe I2C bus #1 (i.e. ``/dev/i2c-1``),
 
 .. code-block:: console
 
@@ -244,12 +246,13 @@ devices. Lets proble I2C bus 1 (i.e. ``/dev/i2c-1``),
    60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
    70: -- -- -- -- -- -- -- --                         
 
-Voila, everything there - one device at address ``0x48``.
+Voila, everything there - one device at address ``0x48`` which is the
+default LM73 address when you leave the address pins unconnected.
 
 .. _lm73-userspace-i2c:
 
-Using the Device: Talking I2C from Userspace
---------------------------------------------
+Implementing A LM73 Client In Userspace
+---------------------------------------
 
 .. sidebar:: Documentation
 
@@ -258,7 +261,7 @@ Using the Device: Talking I2C from Userspace
 Reading the :download:`datasheet <Thermometer_LM73.pdf>` thoroughly
 [#datasheet-authors-mad]_, one can implement the device's protocol in
 userspace. On the *bus* device ``/dev/i2c-1``, you kind of *connect*
-to the device's address (``0x49``), and send bytes back and forth.
+to the device's address (``0x48``), and send bytes back and forth.
 
 .. literalinclude:: LM73.py
    :caption: :download:`LM73.py`
@@ -271,14 +274,13 @@ I2C devices. See `the kernel documentation
 <https://www.kernel.org/doc/html/latest/i2c/dev-interface.html>`__ for
 detailed information - we are scratching only the surface here.
 
-But this is rarely necessary because most devices are supported by
-Linux out of the box, and `LM73 is no exception
-<https://github.com/torvalds/linux/blob/master/drivers/hwmon/lm73.c>`__.
+Using The LM73 Kernel Driver (If Available)
+-------------------------------------------
 
-Using the Device: ``hwmon`` - Hardware Monitoring
--------------------------------------------------
-
-The Linux kernel comes with `a driver for LM73
+Many devices are supported by Linux out of the box, and `LM73 is no
+exception
+<https://github.com/torvalds/linux/blob/master/drivers/hwmon/lm73.c>`__. The
+Linux kernel comes with `a driver for LM73
 <https://github.com/torvalds/linux/blob/master/drivers/hwmon/lm73.c>`__
 (`documentation
 <https://www.kernel.org/doc/html/latest/hwmon/lm73.html>`__). Sadly,
@@ -472,3 +474,11 @@ in milli-celsius):
                            task.
 .. [#datasheet-authors-mad] Beware, data sheet authors have a strange
                             kind of humor!
+.. [#lm73-breakout-why] During a larger project, I had to write a
+			larger software package and, among other tasks
+			like PCI communication, talk to LM73. This is
+			where I decided to isolate the chip for easy
+			testing, and came up with a PCB to carry only
+			the LM73 and a capacitor.
+.. [#i2c-tools-maybe-installed] Chances are that the ``i2c-tools``
+                                package is already preinstalled
