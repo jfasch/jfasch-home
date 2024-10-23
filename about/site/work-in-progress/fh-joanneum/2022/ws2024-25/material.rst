@@ -18,6 +18,12 @@ Embedded Computing 2 (STECE-2022): Material
    :local:
 
 .. toctree::
+   :maxdepth: 1
 
    2024-10-08/index
    2024-10-23/index
+
+.. toctree::
+   :maxdepth: 1
+
+   queue

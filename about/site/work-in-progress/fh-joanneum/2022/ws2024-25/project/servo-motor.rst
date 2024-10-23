@@ -7,6 +7,11 @@ Motor Control: Servo Motor
 .. contents::
    :local:
 
+.. sidebar:: Lecture Coverage
+
+   * :ref:`2024-10-08-linux-and-pwm`
+   * :ref:`2024-10-08-linux-and-spi`
+
 Facts
 -----
 

@@ -25,69 +25,94 @@ Basic Information
 Raspberry Build
 ---------------
 
+.. sidebar::
+
+   * `meta-raspberrypi
+     <https://github.com/agherzan/meta-raspberrypi>`__
+
+Project Setup
+.............
+
 * Change into ``~/My-Projects/yocto``
-* use poky@HEAD
+* use ``poky@HEAD``
 
   .. code-block:: console
 
      $ git clone https://git.yoctoproject.org/poky
 
-* Create raspberry build directory
+* Create ``raspberrypi3-64`` build directory
 
   .. code-block:: console
 
      $ pwd
-     /home/jfasch/My-Projects/yocto
-     $ . poky/oe-init-build-env raspberry
+     ~/My-Projects/yocto
+     $ . poky/oe-init-build-env raspberrypi3-64
      ... blah ...
      $ pwd
-     /home/jfasch/My-Projects/yocto/raspberry
+     ~/My-Projects/yocto/raspberrypi3-64
 
-* Get ``meta-raspberrypi`` 
+* Set machine type that we build for
+
+  In ``~/My-Projects/yocto/raspberry3-build/conf/local.conf``, add the
+  following line
+
+  .. code-block:: console
+ 
+     MACHINE = "raspberrypi3-64"
+
+* Get ``meta-raspberrypi``
 
   .. code-block:: console
 
+     $ cd ~/My-Projects/yocto
      $ git clone https://github.com/agherzan/meta-raspberrypi
 
 * Add ``meta-raspberrypi`` to layers
 
-  In ``conf/bblayers.conf``, add
+  In ``~/My-Projects/yocto/raspberry3-build/conf/bblayers.conf``, add
 
   .. code-block:: console
 
-     BBLAYERS += " ${TOPDIR}/meta-raspberrypi"
+     BBLAYERS += " ${HOME}/My-Projects/yocto/meta-raspberrypi"
 
-* Share download and sstate
+* Share download and sstate directories (for repeated builds, and in
+  case we want to build for a Pi4)
 
-  In ``conf/local.conf``, add the following lines
+  In ``~/My-Projects/yocto/raspberry3-build/conf/local.conf``, add the
+  following lines
 
   .. code-block:: console
 
      DL_DIR = "${HOME}/My-Projects/yocto/DOWNLOAD
      SSTATE_DIR = "${HOME}/My-Projects/yocto/SSTATE"
 
-* Define machine type to build for (``raspberrypi4-64``)
+Build/Fix Loop
+..............
 
-  In ``conf/local.conf``, add
-
-  .. code-block:: console
-
-     MACHINE = "raspberrypi4-64"
-
-* Build-and-fix loop
+* Build
 
   .. code-block:: console
 
+     $ pwd
+     ~/My-Projects/yocto/raspberrypi3-64
      $ bitbake core-image-base
 
-  Add to ``conf/local.conf``
+* Fix. Add to ``~/My-Projects/yocto/raspberry3-build/conf/local.conf``
 
-  * https://github.com/RPi-Distro/firmware-nonfree/issues/29
-
-    .. code-block:: console
+  .. code-block:: console
   
-       LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
+     LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
 
+Todo
+....
+
+* Add systemd unit that enlarges rootfs to take available SD card
+  space (at first boot only, ideally)
+
+  .. code-block:: console
+
+     $ parted /dev/mmcblk0 'resizepart 2 100%'
+     $ resize2fs /dev/mmcblk0p2
 
 
 Next Steps
@@ -106,6 +131,13 @@ Yocto
 * Strip down, omit e.g. wayland and all that
 * version controlling my own config:
   https://unix.stackexchange.com/questions/626496/what-is-the-right-way-to-store-bitbake-configuration-under-git
+* https://git.openembedded.org/meta-openembedded
+
+Python
+......
+
+* `Packaging and installing own Python program for/on Yocto
+  <https://stackoverflow.com/questions/76529171/packaging-and-installing-own-python-program-for-on-yocto>`__
 
 QEMU
 ....

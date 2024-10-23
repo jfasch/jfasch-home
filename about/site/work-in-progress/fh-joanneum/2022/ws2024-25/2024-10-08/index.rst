@@ -25,6 +25,8 @@ Devices Overview
 * :doc:`../project/motor-control-btn9960lv`
 * :doc:`../project/servo-motor`
 
+.. _2024-10-08-linux-and-i2c:
+
 Linux And I2C
 .............
 
@@ -39,10 +41,14 @@ Linux And I2C
     https://docs.kernel.org/i2c/dev-interface.html
   * Example using LM73 temperature sensor: :ref:`lm73-userspace-i2c`
 
+.. _2024-10-08-linux-and-pwm:
+
 Linux And PWM
 .............
 
 * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
+
+.. _2024-10-08-linux-and-spi:
 
 Linux And SPI
 .............

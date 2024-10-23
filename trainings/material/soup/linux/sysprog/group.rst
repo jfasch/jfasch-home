@@ -23,6 +23,7 @@ Contents
    sysprog_events/topic
    sysprog_ipc/topic
    sysprog_signals/topic
+   mmap/group
 
 Dependencies
 ------------

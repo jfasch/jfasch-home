@@ -23,9 +23,22 @@ Go over Linux userspace I2C:
 
 * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
 
-Explain difference between userspace I2C, and a kernel driver - coincidentally using a driver for a PWM device:
+Explain difference between userspace I2C, and a kernel driver -
+coincidentally using a driver for a PWM device:
 
 * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
+
+.. list-table::
+   :align: left
+   :widths: auto
+   :header-rows: 1
+
+   * * Userspace I2C
+     * Reading device registers
+     * Kernel OO/UML
+   * * .. image:: userspace-i2c.jpg
+     * .. image:: userspace-i2c-read-registers.jpg
+     * .. image:: kernel-oo.jpg
 
 PWM
 ---
@@ -41,32 +54,3 @@ PWM
 
 * :doc:`../project/servo-motor`
 
-  Could work over PWM. I suspect not. Read on for SPI.
-
-SPI?
-----
-
-In case PWM does not work for the servos, then chances are that it is
-PPM (`Wikipedia
-<https://en.wikipedia.org/wiki/Pulse-position_modulation>`__)
-
-* `ws2812-spi on Github
-  <https://github.com/jfasch/ws2812-spi>`__. Look into `ws2812/spi.cpp
-  <https://github.com/jfasch/ws2812-spi/blob/main/ws2812/spi.cpp>`__:
-
-  .. code-block:: c++
-
-     struct spi_ioc_transfer tr = {
-         .tx_buf = (unsigned long)xfer_bytes,
-         .len = (uint32_t)xfer_size,
-         .speed_hz = s.profile().frequency_hz,
-     };
-
-     int ret = ioctl(_fd, SPI_IOC_MESSAGE(1), &tr);
-
-* https://datasheets.raspberrypi.com/bcm2711/bcm2711-peripherals.pdf
-
-  Things to take into accout when you use SPI to clock out multi-byte
-  waveforms. Take care of "2.3.1. SPI implementation details", where
-  they say that there is a garanteed gap between two bytes. During
-  that time the MOSI signal is also low (alas it's SPI).

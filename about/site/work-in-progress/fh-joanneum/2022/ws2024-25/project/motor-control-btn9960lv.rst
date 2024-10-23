@@ -7,6 +7,10 @@ Motor Control: BTN9960LV
 .. contents::
    :local:
 
+.. sidebar:: Meeting Minutes
+
+   * :ref:`2024-10-08-linux-and-pwm`
+
 Facts
 -----
 

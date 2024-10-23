@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 
-#include <switch-mock.h>
 
 
-TEST(switch_mock_suite, basic)
+
+TEST_F(switch_mock_suite, basic)
 {
     MockSwitch sw(Switch::State::OFF);
     ASSERT_TRUE(sw.state() == Switch::State::OFF);

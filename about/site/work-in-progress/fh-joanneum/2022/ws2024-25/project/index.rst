@@ -15,8 +15,8 @@ Project Plan (Yay)
    display-ssd1305
    display-waveshare
 
-Goal
-----
+On The Basis
+------------
 
 Create Linux prototype implementations for the following hardware
 pieces that are found on the next-generation Crazy Car.
@@ -26,29 +26,14 @@ pieces that are found on the next-generation Crazy Car.
 * :doc:`motor-control-btn9960lv`
 * :doc:`servo-motor`
 
+On Top Of The Basis
+-------------------
+
 In addition to that, solve problems like
 
 * devices needing calibration
 * configure acceleration ramps on top of motor control
 * servos likewise
-
-Hardware-Interfaces
--------------------
-
-* Calibration
-
-  * Stellmotor
-  * Sensoren allgemein
-  * Template, je nach Art/Calibration (e.g. table with 1024 entries,
-    one for each possible value in range(2**10))
-
-* ADC get_value() -> double
-* Gyro
-* PWM(duty,period).set_percentage(double)
-* Stellmotor?
-* Motor?
-* Proximity
-* Timer? Mocking time for tests?
 
 Algorithms
 ----------

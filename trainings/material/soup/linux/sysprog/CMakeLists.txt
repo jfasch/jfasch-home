@@ -1,11 +1,14 @@
-ADD_SUBDIRECTORY(blocking-io)
-ADD_SUBDIRECTORY(process)
+add_subdirectory(blocking-io)
+add_subdirectory(process)
 
-ADD_SUBDIRECTORY(scheduling/code)
+add_subdirectory(scheduling/code)
 
-ADD_SUBDIRECTORY(sysprog_events/code)
-ADD_SUBDIRECTORY(sysprog_ipc/code)
-ADD_SUBDIRECTORY(sysprog_signals/code)
+add_subdirectory(sysprog_events/code)
+add_subdirectory(sysprog_ipc/code)
+add_subdirectory(sysprog_signals/code)
 
-ADD_SUBDIRECTORY(file-io)
-ADD_SUBDIRECTORY(file-locking)
+add_subdirectory(file-io)
+add_subdirectory(file-locking)
+
+add_subdirectory(mmap)
+

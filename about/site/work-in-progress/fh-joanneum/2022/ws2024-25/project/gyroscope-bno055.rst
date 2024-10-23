@@ -15,6 +15,11 @@ Facts
 * Datasheet:
   https://cdn-learn.adafruit.com/assets/assets/000/125/776/original/bst-bno055-ds000.pdf
 
+Arduino Implementation
+----------------------
+
+* Bosch "driver": https://github.com/boschsensortec/BNO055_SensorAPI
+
 Notes
 -----
 
