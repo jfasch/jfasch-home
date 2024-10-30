@@ -45,11 +45,6 @@ Reading A File, Not Using File I/O
    $ ./file-mapping-ro /tmp/a-file
    0123456789
 
-What's Happening?
------------------
-
-.. image:: lodraw/all.svg
-
 Read-Only, Basic
 ----------------
 

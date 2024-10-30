@@ -4,7 +4,12 @@
 .. toctree::
    :maxdepth: 1
 
-   basics
+   virtual-memory
+   lazy-alloc
+   mmap-intro-anon
+
+   file-mappings
+   realtime
 
 
 * `Introduction to Memory Management in Linux <https://youtu.be/7aONIVSXiJ8?si=DH9IhlIFTAu3d-qC>`__

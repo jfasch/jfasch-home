@@ -58,6 +58,8 @@ extensions = [
     'sphinxcontrib.images',
     'sphinxemoji.sphinxemoji',
 
+    'sphinxcontrib.libreoffice',
+
     'opentraining',
 ]
 intersphinx_mapping = {
@@ -67,6 +69,8 @@ intersphinx_mapping = {
     'numpy': ('https://numpy.org/doc/stable/', None),
 }
 todo_include_todos = True
+
+libreoffice_format = dict(latex='pdf', html='svg')
 
 # ablog
 if True:

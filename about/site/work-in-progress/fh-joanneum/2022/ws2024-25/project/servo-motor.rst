@@ -1,8 +1,11 @@
+.. ot-topic:: fh.crazycar.servo_motor
+   :dependencies: fh.crazycar.sysfs_pwm
+
 .. include:: <mmlalias.txt>
 
 
-Motor Control: Servo Motor
-==========================
+RC Servo Motor Control
+======================
 
 .. contents::
    :local:
@@ -24,3 +27,26 @@ Notes
 
 * Discrete pre-configured servo positions
 * Userspace SPI 
+
+Software Interface
+------------------
+
+.. code-block:: c++
+
+   class DerEineRCServoUeberPWM
+   {
+       // hmm ... find out ...
+   };
+
+**Usage/Unit test**
+
+.. code-block:: c++
+
+   DerEineRCServoUeberPWM rc(pwm7);
+   rc.set(0.0); // middle position
+
+   double degrees = -45.7;
+
+   rc.set_absolute_angle(degrees); // 45.7 degrees left
+
+

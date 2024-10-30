@@ -53,4 +53,3 @@ PWM
   :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
 
 * :doc:`../project/servo-motor`
-

@@ -1,6 +1,9 @@
 To Be Done
 ==========
 
+.. contents::
+   :local:
+
 Userspace SPI, And The BCM SPI Implementation
 ---------------------------------------------
 
@@ -28,3 +31,10 @@ PPM (`Wikipedia
   waveforms. Take care of "2.3.1. SPI implementation details", where
   they say that there is a garanteed gap between two bytes. During
   that time the MOSI signal is also low (alas it's SPI).
+
+C++ Object Copy
+---------------
+
+* Problem: I2C (vl53l1x, bto055) *own* a I2C bus fd -> object *copy*
+* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+* Show crash/valgrind/strace once we close I2C fd in dtor

@@ -20,7 +20,7 @@ Memory: Caches
 
 .. image:: 92-03-00-performance-memory-cache.dia
 
-Locality of reference
+Locality Of Reference
 ---------------------
 
 **Rules to keep caches hot**
@@ -63,7 +63,7 @@ Multidimensional Arrays: Cache Thrashing
 ----------------------------------------
 
 * Traversing the matrix columns-first is correct
-* ... but not efficient
+* ... **but not efficient**
 
 .. code-block:: c
 
