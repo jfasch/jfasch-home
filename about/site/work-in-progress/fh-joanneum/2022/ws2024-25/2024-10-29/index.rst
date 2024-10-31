@@ -98,13 +98,76 @@ Live hack that into the ubiquitous ``class point`` (see
 Homework Until 2024-11-05
 -------------------------
 
-Talk about it here: :doc:`../2024-11-05/index`
-
 .. contents::
    :local:
 
-Group :doc:`../project/servo-motor`: Write ``class SysFSPWMPin``
-................................................................
+Intro
+.....
+
+**Sensors**
+
+Two relatively autonomous tasks, :doc:`../project/proximity-vl53l1x`
+and :doc:`../project/gyroscope-bno055`. Good luck |:ninja:|
+
+**Motor Controls**
+
+We have two PWM users, so we want to coordinate. Write a tool for it,
+
+* :doc:`../project/sysfs-pwm`
+
+``class SysFSPWMPin`` can then be used from
+
+* :doc:`../project/motor-control-btn9960lv` and
+* :doc:`../project/servo-motor`.
+
+So please lets ...
+
+* Sync your fork with upstream
+* Read through specific "workpackage" descriptions below
+
+(Talk about it here: :doc:`../2024-11-05/index`)
+
+"Sync Your Fork" (Github term)
+..............................
+
+*Please update your fork with the upstream changes from*
+https://github.com/jfasch/FH-STECE2022.
+
+See :doc:`/about/site/work-in-progress/fh-joanneum/2021/git/git` about
+that workflow, especially :ref:`fh-2021-git-sync-fork-from-upstream`.
+
+What is new there:
+
+* A failing unit test or two for :doc:`../project/sysfs-pwm`
+* Fixes for ``proximity-vl53l1x``, see
+  `proximity-vl53l1x/proximity-vl53l1x/bin/CMakeLists.txt
+  <https://github.com/jfasch/FH-STECE2022/blob/main/proximity-vl53l1x/proximity-vl53l1x/bin/CMakeLists.txt>`__
+* Fixes, and more tests for `class SysFSFile
+  (toolcase/base/sysfs-file.h)
+  <https://github.com/jfasch/FH-STECE2022/blob/main/toolcase/base/sysfs-file.h>`__
+  where we can use common code from.
+
+.. code-block:: console
+
+   [jfasch@jflaptop ~/My-Builds/FH-STECE2022-x86_64]
+   $ ./tests/fh-stece22-suite 
+   ...
+   [ RUN      ] sysfs_pwm_pin_suite.get_period
+   /home/jfasch/My-Projects/FH-STECE2022/tests/sysfs-pwm-pin-tests.cpp:41: Failure
+   Expected equality of these values:
+     pin.period()
+       Which is: -666
+     PERIOD_NS_INIT
+       Which is: 10000000
+   
+   [  FAILED  ] sysfs_pwm_pin_suite.get_period (0 ms)
+   [ RUN      ] sysfs_pwm_pin_suite.add_your_own_tests_here
+   /home/jfasch/My-Projects/FH-STECE2022/tests/sysfs-pwm-pin-tests.cpp:53: Failure
+   Failed
+   ...
+
+Write ``class SysFSPWMPin`` (Group :doc:`../project/servo-motor`)
+.................................................................
 
 * Write ``class SysFSPWMPin`` (respectively, complete the skeleton
   `toolcase/base/sysfs-pwm-pin.h
@@ -156,8 +219,10 @@ Group :doc:`../project/servo-motor`: Write ``class SysFSPWMPin``
   <https://github.com/jfasch/FH-STECE2022/blob/main/bin/pwm-test.cpp>`__;
   feel free to modify
 
-Group :doc:`../project/motor-control-btn9960lv`: Tinker With Hardware, Think About Future
-.........................................................................................
+Halfbridge Horror (Group :doc:`../project/motor-control-btn9960lv`)
+...................................................................
+
+Tinker With Hardware, Think About Future.
 
 * Figure out how to operate the halfbridges
 
@@ -172,13 +237,13 @@ Group :doc:`../project/motor-control-btn9960lv`: Tinker With Hardware, Think Abo
   * See :ref:`fh2022-motor-control-btn9960lv-software-interface` for
     an idea how it could look like
 
-Group :doc:`../project/proximity-vl53l1x`
-.........................................
+VL53L1X (Group :doc:`../project/proximity-vl53l1x`)
+...................................................
 
 * Make it work, simply
 
-Group :doc:`../project/gyroscope-bno055`
-........................................
+BNO055 (Group :doc:`../project/gyroscope-bno055`)
+.................................................
 
 * Figure out what we need, by trying around with the commandline
   program that you brought

@@ -21,6 +21,8 @@ Forks And Pull Requests
 
 .. image:: github-workflow.jpg
 
+.. _fh-2021-git-sync-fork-from-upstream:
+
 Multiple Pull Requests: Pulling Upstream Changes ("Syncing" A Fork)
 -------------------------------------------------------------------
 

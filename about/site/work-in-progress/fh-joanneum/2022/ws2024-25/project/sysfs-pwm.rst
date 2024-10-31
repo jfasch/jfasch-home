@@ -14,13 +14,17 @@ PMW Abstraction On Top Of ``/sys/class/pwm/``
 Facts
 -----
 
-* As an implementation detail (reasding and writing small files in
+* As an implementation detail (reading and writing small files in
   ``/sys/class/pwm/``)
 * Use `class SysFSFile
   <https://github.com/jfasch/FH-STECE2022/blob/main/toolcase/base/sysfs-file.h>`__
-  abstraction
-* `How to use class SysFSFile
+  to read and write e.g. ``/sys/class/pwm/pwmchip0/pin7/duty_cycle``.
+
+  `How to use class SysFSFile
   <https://github.com/jfasch/FH-STECE2022/blob/main/tests/sysfs-file-tests.cpp>`__
+
+* Implementation in `toolcase/base/sysfs-pwm-pin.h
+  <https://github.com/jfasch/FH-STECE2022/blob/main/toolcase/base/sysfs-pwm-pin.h>`__.
 
 Software Interface
 ------------------

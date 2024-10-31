@@ -23,6 +23,11 @@ Org
 
 * Define hardware (task group) owner
 
+Material
+--------
+
+* Recap ``class point``. Emphasize on ``const``, and initialization
+
 Project
 -------
 
