@@ -126,9 +126,15 @@ Scheduling: Threads (2)
 Priority Inversion
 ------------------
 
+.. toctree::
+   :hidden:
+
+   mars-pathfinder
+
 * `Wikipedia <https://en.wikipedia.org/wiki/Priority_inversion>`__
 * `FreeRTOS
   <https://www.digikey.ee/en/maker/projects/introduction-to-rtos-solution-to-part-11-priority-inversion/abf4b8f7cd4a4c70bece35678d178321>`__
+* :doc:`mars-pathfinder`
 
 .. image:: priority-inversion.svg
 
