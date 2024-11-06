@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 ``mmap``
 ========
 
@@ -11,6 +14,13 @@
    file-mappings
    realtime
 
+Todo
+----
+
+* shared anonymous mappings? |longrightarrow| ``fork()``
+
+Links
+-----
 
 * `Introduction to Memory Management in Linux <https://youtu.be/7aONIVSXiJ8?si=DH9IhlIFTAu3d-qC>`__
 

@@ -15,7 +15,9 @@ Lazy Allocation, And Overcommit
    :widths: 40, 60
 
    * * * Mappings are *unpopulated*, initially
-       * No memory exists |longrightarrow| no mapping exists in MMU
+       * Not backed by physical memory
+       * |longrightarrow| MMU knows nothing
+       * |longrightarrow| Error condition
        * Memory will be allocated at first access
        * |longrightarrow| *overcommit*: if all processes allocated
          memory for all of their mappings, the system would run out of
@@ -32,15 +34,14 @@ Memory Access, And Allocation
    :align: left
    :widths: 40, 60
 
-   * * * On first access, MMU has no mapping (no TLB entry)
+   * * * On first access, MMU knows nothing (no TLB entry)
        * |longrightarrow| "TLB miss"
        * Page table has nothing too
        * |longrightarrow| Process is *suspended*
        * Memory allocation starts
-
-	 * Might require disk IO |longrightarrow| could take a while
-	 * |longrightarrow| No-go if one has :doc:`realtime
-           requirements <realtime>`
+       * Might require disk IO |longrightarrow| could take a while
+       * |longrightarrow| No-go if one has :doc:`realtime requirements
+         <realtime>`
 
      * .. libreoffice:: drawings/libreoffice/lazy-alloc-mmu-trap.odg
           :align: center
@@ -53,9 +54,8 @@ Finish: Setup Mapping, Kick Process Loose
    :align: left
    :widths: 40, 60
 
-   * * * Finally, allocation has taken place (allocated memory is
-         zero-filled, btw)
-       * Kernel page tables modified, TLB entry in place
+   * * * Finally, when allocation has taken place, page tables and TLB
+         are updated
        * |longrightarrow| Process is runnable again
        * |longrightarrow| Subject to scheduling
      * .. libreoffice:: drawings/libreoffice/lazy-alloc-allocated.odg
@@ -93,11 +93,14 @@ Further Notes: Realtime
 
    * :doc:`realtime`
 
-* Lazy allocation is not generally wanted in realtime situations
+* **Allocation may suspend a process in critical situations**
+* |longrightarrow| Lazy allocation is not generally wanted in realtime
+  situations
 * Allocations must be done up-front
+* *Not all allocations are explicit*
 
-  * Program itself (code and data) is loaded on-demand
-    |longrightarrow| bad luck if a new code branch is taken at the
-    wrong time
+  * Program itself is loaded on-demand |longrightarrow| bad luck if a
+    new code branch is taken at the wrong time
   * Stack memory is dynamically allocated
+  * Global are lazy-loaded too
   * ...

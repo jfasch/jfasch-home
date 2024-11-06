@@ -288,7 +288,7 @@ if html_theme == _BOOTSTRAP:
 def rstjinja(app, docname, source):
     """Render our pages as a jinja template for fancy templating goodness.
 
-    Eroc Holscher mentions this somewhere in his blog.
+    Eric Holscher mentions this somewhere in his blog.
 
     """
     # Make sure we're outputting HTML

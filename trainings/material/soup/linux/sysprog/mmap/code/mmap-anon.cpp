@@ -12,12 +12,12 @@ int main()
         -1,                                            // <-- (fd) no fd, this is an anonymous mapping
         0                                              // <-- (offset) no offset, this is an anonymous mapping
     );
-    if (memory == MAP_FAILED) {
+    if (memory == MAP_FAILED) {                        // <-- MAP_FAILED is -1 (as every syscall error)
         perror("mmap");
         return 1;
     }
 
-    *(((char*)memory)+16) = 'a';                       // <-- access memory in first page of mapping
+    *(((char*)memory)+16) = 'a';                       // <-- memory access in first page of mapping
                                                        //     will cause page to be allocated
 
     munmap(memory, 16*1024*1024);                      // <-- technically not necessary; done anyway at exit
