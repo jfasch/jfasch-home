@@ -7,8 +7,49 @@ Yocto
 .. contents::
    :local:
 
+Work Environment (ENDLESS)
+--------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/ssh/group`.
+
+.. code-block:: console
+
+   $ ENDLESS_SERVER=ddd.ddd.ddd.ddd
+
+Interactive Login On ``$ENDLESS_SERVER``
+........................................
+
+Required: an SSH account, setup by the administrator
+(:doc:`/about/myself/index`). My (``jfasch``'s) steps to setup my
+daily work environment follow. It's all SSH, after all.
+
+.. code-block:: console
+
+   $ ssh jfasch@$ENDLESS_SERVER
+
+Mounting And Unmounting My Home On ``$ENDLESS_SERVER``
+......................................................
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/ssh/sshfs`
+
+.. code-block:: console
+
+   $ mkdir ~/mounts/$ENDLESS_SERVER
+   $ sshfs $ENDLESS_SERVER: ~/mounts/$ENDLESS_SERVER
+
+.. code-block:: console
+
+   $ umount ~/mounts/$ENDLESS_SERVER
+
+To Be Cleaned
+-------------
+
 Basic Information
------------------
+.................
 
 * https://docs.yoctoproject.org/brief-yoctoprojectqs/index.html
 * https://docs.yoctoproject.org/dunfell/what-i-wish-id-known.html
@@ -23,7 +64,7 @@ Basic Information
   |longrightarrow| ``scarthgap`` (latest LTS)
 
 Raspberry Build
----------------
+...............
 
 .. sidebar::
 
@@ -31,7 +72,7 @@ Raspberry Build
      <https://github.com/agherzan/meta-raspberrypi>`__
 
 Project Setup
-.............
+`````````````
 
 * Change into ``~/My-Projects/yocto``
 * use ``poky@HEAD``
@@ -87,7 +128,7 @@ Project Setup
      SSTATE_DIR = "${HOME}/My-Projects/yocto/SSTATE"
 
 Build/Fix Loop
-..............
+``````````````
 
 * Build
 
@@ -114,6 +155,10 @@ Todo
      $ parted /dev/mmcblk0 'resizepart 2 100%'
      $ resize2fs /dev/mmcblk0p2
 
+Creating A Layer
+----------------
+
+https://docs.yoctoproject.org/next/dev-manual/layers.html
 
 Next Steps
 ----------
@@ -121,17 +166,8 @@ Next Steps
 Yocto
 .....
 
-* externalize build directory:
-  https://docs.yoctoproject.org/ref-manual/terms.html#term-Build-Directory
-* common sstate cache and download:
-  https://bootlin.com/blog/yocto-sharing-the-sstate-cache-and-download-directories/
-* build raspberry image: https://github.com/agherzan/meta-raspberrypi
-* use systemd:
-  https://docs.yoctoproject.org/next/dev-manual/init-manager.html
-* Strip down, omit e.g. wayland and all that
-* version controlling my own config:
-  https://unix.stackexchange.com/questions/626496/what-is-the-right-way-to-store-bitbake-configuration-under-git
-* https://git.openembedded.org/meta-openembedded
+* For better shell experience: get rid of busybox
+* ``/boot/config.txt``: enable i2c and spi
 
 Python
 ......
