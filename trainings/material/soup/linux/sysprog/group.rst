@@ -24,6 +24,7 @@ Contents
    sysprog_ipc/topic
    sysprog_signals/topic
    mmap/group
+   ipc-mqueue/topic
 
 Dependencies
 ------------

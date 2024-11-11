@@ -11,4 +11,5 @@ add_subdirectory(file-io)
 add_subdirectory(file-locking)
 
 add_subdirectory(mmap)
+add_subdirectory(ipc-mqueue)
 

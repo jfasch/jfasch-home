@@ -5,7 +5,6 @@ Work in Progress
    :maxdepth: 1
 
    fh-joanneum/index
-   yocto/index
    refactoring-homepage
    seo
    playground/index

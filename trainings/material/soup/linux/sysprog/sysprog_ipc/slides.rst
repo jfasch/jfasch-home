@@ -1,10 +1,6 @@
 Slides: Sysprog: POSIX IPC
 ==========================
 
-.. sidebar:: Slideshow
-
-   :download:`slides.s5.html`
-
 * **Unix IPC:** mechanisms to communicate between unrelated* processes
 
   * Semaphores
@@ -55,121 +51,6 @@ File Semantics
   * Shared memory: ``int`` - a true file descriptor
   * Message queue: ``mqd_t`` (typedef ``int``)
   * Incremented across ``fork()``, ``dup()`` etc.
-
-
-.. Message Queues
-.. -------------------------------------------------------------------------------------------
-
-Message Queues
---------------
-
-* **Message queue parameters**
-  
-  * Maximum number of messages
-  * Maximum size of a single message
-  * *Realtime guarantees*
-
-* **Message priorities**
-  
-  * Messages are sent with a priority
-  * Higher prioritized messages overtake lower prioritized messages
-
-`man -s 7 mq_overview
-<http://man7.org/linux/man-pages/man7/mq_overview.7.html>`__
-
-Open/Create: ``mq_open()``
---------------------------
-
-.. code-block:: c
-
-   mqd_t mq_open(const char *name, int oflag);
-   mqd_t mq_open(const char *name, int oflag, mode_t mode, struct mq_attr *attr);
-
-* Attributes (``attr``)
-
-  * ``mq_flags``: nonblocking?
-  * ``mq_maxmsg``: length
-  * ``mq_msgsize``: width
-
-`man -s 3 mq_open
-<http://man7.org/linux/man-pages/man2/mq_open.2.html>`__
-
-Sending/Receiving: ``mq_send()``, ``mq_receive()``
---------------------------------------------------
-
-.. code-block:: c
-
-   int mq_send(mqd_t mqdes, const char *msg_ptr, 
-               size_t msg_len, unsigned msg_prio);
-   ssize_t mq_receive(mqd_t mqdes, char *msg_ptr,
-               size_t msg_len, unsigned *msg_prio);
-
-* Higher with higher priority are faster
-* ``msg_len`` must not exceed configured queue width
-* Same as ``write()``/``send()`` otherwise
-
-`man -s 3 mq_receive <http://man7.org/linux/man-pages/man3/mq_receive.3.html>`__
-
-`man -s 3 mq_send <http://man7.org/linux/man-pages/man3/mq_send.3.html>`__
-
-Closing/Removing: ``mq_close()``, ``mq_unlink()``
--------------------------------------------------
-
-.. code-block:: c
-
-   int mq_close(mqd_t mqdes);
-   int mq_unlink(const char *name);
-
-* Boring ...
-* Analogy: ``close()`` and ``unlink()``.
-
-`man -s 3 mq_close
-<http://man7.org/linux/man-pages/man3/mq_close.3.html>`__
-
-`man -s 3 mq_unlink
-<http://man7.org/linux/man-pages/man3/mq_unlink.3.html>`__
-
-Notification: ``mq_notify()``
------------------------------
-
-.. code-block:: c
-
-   int mq_notify(mqd_t mqdes, const struct sigevent *sevp);
-
-**Obscure feature ...**
-
-* Only shown because of its obscurity
-* Specification *predates* that of event loops
-* Guess what ... **SIGNALS**
-* Please read yourself and be disturbed!
-
-`man -s 3 mq_notify
-<http://man7.org/linux/man-pages/man3/mq_notify.3.html>`__
-
-Message Queues are Files
-------------------------
-
-* **Obvious implementation:** files
-
-  * ... provided there's OS infrastructure
-  * Message queues are implemented as files
-  * Virtual filesystem - ``mqueue``
-
-Notifications can be received more elegantly - ``select()``,
-``poll()``, ``epoll``!
-
-Message Queue Filesystem: ``mqueue``
-------------------------------------
-
-* **Message queues visible as files:** the *mqueue* filesystem
-
-.. code-block:: console
-  
-   # mount -t mqueue blah /mnt/mqueue
-   # ls -l /mnt/mqueue/my-queue
-   -rw------- ... /mnt/mqueue/my-queue
-   # cat /mnt/mqueue/my-queue
-   QSIZE:0          NOTIFY:0     SIGNO:0     NOTIFY_PID:0     
 
 
 .. Semaphores
