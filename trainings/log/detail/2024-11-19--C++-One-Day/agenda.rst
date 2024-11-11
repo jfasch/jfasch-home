@@ -1,14 +1,18 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda: C++: A One-Day Overview (Date Yet Unknown)
-==================================================
+Agenda: C++: A One-Day Overview (2024-11-19 - 2024-11-21)
+=========================================================
 
 .. contents::
    :local:
 
 The "New C++": Fundamental Changes Since 2011
 ---------------------------------------------
+
+.. sidebar:: Livehacking screenplay
+
+   * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
 
 A live-coded overview of what will follow, showing the cornerstones of
 the "new C++". Starting with a C++98 code base, we morph that into
