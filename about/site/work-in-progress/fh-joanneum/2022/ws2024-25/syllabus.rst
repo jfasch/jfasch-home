@@ -60,7 +60,7 @@ Beurteilungsschema
 Die Gesamtnote setzt sich aus einem praktischen und einem
 theoretischen Teil zusammen.
 
-* 60% aus mehreren kleineren Laborklausuren während des Semesters
+* 60% aus einem gemeinsamen Prokjekt während des Semesters
 * 40% Klausur über den theoretischen Block
 
 Zusätzlich besteht die Möglichkeit, im Zuge von Hausaufgaben Punkte zu sammeln, die zu
