@@ -130,6 +130,8 @@ Usage: Open An Existing Message Queue, And Produce Into It
 * Use `mq_send
   <https://man7.org/linux/man-pages/man3/mq_send.3.html>`__ to produce
   a message into queue |longrightarrow| ``priority``
+* *Attention*: ``mq_send()`` returns 0 on success (not the number of
+  bytes written)
 
 .. literalinclude:: code/produce.cpp
    :caption: :download:`unlink.cpp <code/produce.cpp>`

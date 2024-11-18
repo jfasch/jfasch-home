@@ -14,7 +14,7 @@ int main()
         .mq_maxmsg = 10,
         .mq_msgsize = sizeof(my_message)
     };
-    mqd_t q = mq_open("/my-queue", O_CREAT|O_EXCL, 0666, &attr);
+    mqd_t q = mq_open("/my-queue", O_CREAT|O_EXCL|O_RDWR, 0666, &attr);
     if (q == -1) {
         perror("mq_open");
         return 1;
