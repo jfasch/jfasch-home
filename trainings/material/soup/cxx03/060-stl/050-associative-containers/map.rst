@@ -75,6 +75,8 @@ Filling The Container
 * Type definition with ``using`` is strongly recommended when working
   with maps
 
+.. _cxx_map_inserting:
+  
 Inserting Elements
 ------------------
 

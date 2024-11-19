@@ -14,10 +14,10 @@ impression of how courses are held.
 
    detail/index
 
-C++: A One-Day Overview (Date Yet Unknown)
-------------------------------------------
+C++: A One-Day Overview (2024-11-19 - 2024-11-21)
+-------------------------------------------------
 
-A one-day ride through C++. Still under preparation.
+A one-day ride through C++.
 
 (:doc:`More ... <detail/2024-11-19--C++-One-Day/index>`)
 
