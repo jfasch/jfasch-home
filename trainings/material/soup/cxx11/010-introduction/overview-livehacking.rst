@@ -1,5 +1,4 @@
 .. ot-topic:: cxx11.introduction.overview_livehacking
-   :dependencies: cxx11.introduction.history
 
 .. include:: <mmlalias.txt>
 
@@ -23,7 +22,7 @@ New C++*
 C++03 To-Do List Version
 ------------------------
 
-* Using ``std::map<std::string,std::string>`` as clumsy as in the
+* Using ``std::map<std::string,std::string>`` as clumsy as is the
   nature of C++03
 * No *initialization*, only default constructor (|longrightarrow|
   empty), and explicit fill at runtime

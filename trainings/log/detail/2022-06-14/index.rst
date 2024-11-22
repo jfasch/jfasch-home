@@ -23,7 +23,6 @@ Metadata
 Introduction
 ------------
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/history`
 * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
 
 Pythonicity (Thank You: Readablility and Writability)

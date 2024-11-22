@@ -25,7 +25,6 @@ C++: Advanced Topics (2023-12-04 - 2023-12-06)
 Day 1: Introduction: C++, A New Language
 ----------------------------------------
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/history`
 * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
 
 Pythonicity

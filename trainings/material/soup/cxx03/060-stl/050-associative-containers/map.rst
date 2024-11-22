@@ -17,6 +17,7 @@
    map-insert
    map-remove
    map-search
+   map-index-operator-bad
 
 Basics
 ------

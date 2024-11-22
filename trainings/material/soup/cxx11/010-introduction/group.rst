@@ -10,8 +10,8 @@ Topics
 .. toctree::
    :maxdepth: 1
 
-   history
    overview-livehacking
+   overview-livehacking-oo
 
 Group Description
 -----------------

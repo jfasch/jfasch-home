@@ -10,7 +10,6 @@ Agenda: C++: Advanced Topics
 Introduction: A New Language To Me
 ----------------------------------
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/history`
 * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
 
 Range Based for Loops

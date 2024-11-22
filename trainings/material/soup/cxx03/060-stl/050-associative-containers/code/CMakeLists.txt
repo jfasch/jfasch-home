@@ -17,5 +17,8 @@ ADD_EXECUTABLE(cxx-stl-map-search-find map-search-find.cpp)
 ADD_EXECUTABLE(cxx-stl-map-search-subscript map-search-subscript.cpp)
 ADD_EXECUTABLE(cxx-stl-map-search-at map-search-at.cpp)
 
+ADD_EXECUTABLE(cxx-stl-map-index-operator map-index-operator.cpp)
+ADD_EXECUTABLE(cxx-stl-map-index-operator-access-notexist map-index-operator-access-notexist.cpp)
+# ADD_EXECUTABLE(cxx-stl-map-index-operator-nonconst map-index-operator-nonconst.cpp)
 
 ADD_EXECUTABLE(multimap multimap.cpp)
