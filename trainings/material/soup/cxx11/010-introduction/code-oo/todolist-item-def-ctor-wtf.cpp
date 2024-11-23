@@ -5,7 +5,7 @@
 class Item
 {
 public:
-    Item() = default;                                  // <-- WTF?
+    Item() = default;                                  // <-- WTF? I don't want this!
     Item(const std::string& descr) : _descr(descr) {}
     void doit() const
     {

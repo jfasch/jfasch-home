@@ -10,6 +10,15 @@ Inheritance Basics
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   From
+   :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking-oo`
+
+   * :ref:`cxx11-overview-inheritance`
+   * :ref:`cxx11-overview-inheritance-slicing`
+   * :ref:`cxx11-overview-inheritance-pointer-conversion`
+
 Plain (Base) Class
 ------------------
 

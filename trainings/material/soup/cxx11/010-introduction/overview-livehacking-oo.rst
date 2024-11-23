@@ -42,8 +42,8 @@ C++03 To-Do List Version
    :caption: :download:`code-oo/todolist-orig.cpp`
    :language: c++
 
-Encapsulate ``std::map`` Value Side in ``class Item``: Pitfall #1
------------------------------------------------------------------
+Encapsulate ``std::map`` Value In ``class Item``
+------------------------------------------------
 
 .. sidebar:: See also
 
@@ -72,7 +72,7 @@ Encapsulate ``std::map`` Value Side in ``class Item``: Pitfall #1
 
   .. code-block:: console
 
-     ... 10 kilemeters omitted ...
+     ... 10 kilometers omitted ...
      /usr/include/c++/13/tuple:2268:9: error: no matching function for call to ‘Item::Item()’
       2268 |         second(std::forward<_Args2>(std::get<_Indexes2>(__tuple2))...)
            |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,6 +114,151 @@ Real Container Initialization: *Brace Initialization*
 
 .. literalinclude:: code-oo/todolist-const.cpp
    :caption: :download:`code-oo/todolist-const.cpp`
+   :language: c++
+
+.. _cxx11-overview-interfaces:
+
+Towards *The Interface Dogma*: ``class Item_up_1_to_10``, ``class Item_down_1000_to_980``
+-----------------------------------------------------------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+
+* Naive way: implement two *non-related* classes
+
+  * To the "UP" item class, add a member ``prefix``, for later (slicing)
+  * Be naive for that entire section, until we actually understand
+    *the dogma*
+
+* Omit constructors and members (there's only ``doit()`` methods)
+* |longrightarrow| wonder how to get two distinct types into the map
+* |longrightarrow| intermediate, non-functional, version
+
+.. literalinclude:: code-oo/todolist-items-non-compiling.cpp
+   :caption: :download:`code-oo/todolist-items-non-compiling.cpp`
+   :language: c++
+
+.. _cxx11-overview-inheritance:
+
+Make It Compile (Not *Work*): Inheritance
+-----------------------------------------
+
+* Radically, to just get objects into the map: derive from base
+  ``class Item``
+* What to do in base class? |longrightarrow| output nonsense
+* Talk about ... whats happening ...
+
+.. literalinclude:: code-oo/todolist-items-non-working.cpp
+   :caption: :download:`code-oo/todolist-items-non-working.cpp`
+   :language: c++
+
+.. _cxx11-overview-inheritance-slicing:
+
+Analysis: The Perils Of Inheritance - Base Class Conversion (Copy), And *Slicing*
+---------------------------------------------------------------------------------
+
+* Clarify: comment out todolist, and explain sideways
+* C++ permits one to *copy* an object of derived type onto an object
+  of base type
+* Question: what if derived has additional members? Adds to the size
+  of base?
+* |longrightarrow| *slicing*
+* |longrightarrow| mostly undesired, *but legal*
+
+.. literalinclude:: code-oo/todolist-sideway-slicing.cpp
+   :caption: :download:`code-oo/todolist-sideway-slicing.cpp`
+   :language: c++
+
+.. _cxx11-overview-inheritance-pointer-conversion:
+
+Analysis: The Perils Of Inheritance - Base Class Conversion (Pointer Types)
+---------------------------------------------------------------------------
+
+* Better than *copying* objects of different sizes onto each other: *automatic type conversion*
+* *The Plan*
+* Still not perfect
+* Nothing gets lost: only pointers are copied, the information in the
+  derived object is still there (just not reachable)
+
+.. literalinclude:: code-oo/todolist-sideway-pointer-type-conversion.cpp
+   :caption: :download:`code-oo/todolist-sideway-pointer-type-conversion.cpp`
+   :language: c++
+
+.. _cxx11-overview-inheritance-pointer-virtual:
+
+Key To Polymorphism: ``virtual``
+--------------------------------
+
+* Makes ``base->doit()`` magically work
+* By adding runtime type information
+* |longrightarrow| *dynamic method dispatch*, depending on concrete
+  type
+* |longrightarrow| Extension mechanism
+
+.. literalinclude:: code-oo/todolist-sideway-virtual.cpp
+   :caption: :download:`code-oo/todolist-sideway-virtual.cpp`
+   :language: c++
+
+Pitfall #N: Incorrectly Implement Derived Class Method
+------------------------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+
+.. sidebar:: Trainer's note
+
+   GCC (``gcc (GCC) 13.3.1 20240913 (Red Hat 13.3.1-3)`` as of this
+   writing) is smart enough to warn about such cases. Turn that off
+   with ``-Wno-overloaded-virtual``.
+
+* Someone comes along and only understands ``void doit()``
+* (``const`` not considered important to many)
+* |longrightarrow| New method; different from ``void doit() const``
+
+.. literalinclude:: code-oo/todolist-sideway-false-override.cpp
+   :caption: :download:`code-oo/todolist-sideway-false-override.cpp`
+   :language: c++
+
+Pitfall #N: Solution: That's What ``override`` Is There For
+-----------------------------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+
+* ``override`` attached by *user* of base class (*implementor* of
+  derived class)
+* Makes the intent clear
+
+.. literalinclude:: code-oo/todolist-sideway-override.cpp
+   :caption: :download:`code-oo/todolist-sideway-override.cpp`
+   :language: c++
+
+.. code-block:: console
+
+   todolist-sideway-override.cpp:17:10: error: ‘void YetAnotherItem::doit()’ marked ‘override’, but does not override
+      17 |     void doit() override
+         |          ^~~~
+
+Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
+------------------------------------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+
+* Implementation of ``Item::doit()`` is purely dummy
+* Should not be there in the first place
+* Pure virtual method: ``virtual void doit() const = 0``
+* |longrightarrow| In fact, *is not there*
+* |longrightarrow| *Forces* derived classes to implement it
+* Btw., makes ``override`` redundant if only single-level inheritance
+  is used
+
+.. literalinclude:: code-oo/todolist-sideway-pure-virtual.cpp
+   :caption: :download:`code-oo/todolist-sideway-pure-virtual.cpp`
    :language: c++
 
 .. .. Long ``iterator`` Type Names |longrightarrow| ``auto``
