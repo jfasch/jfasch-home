@@ -5,7 +5,8 @@
 class Item
 {
 public:
-    Item(const std::string& descr) : _descr(descr) {}  // <-- the only ctor!
+    Item(const std::string& descr)
+    : _descr(descr) {}                                 // <-- the only ctor!
     void doit() const
     {
         std::cout << _descr;

@@ -10,10 +10,16 @@ A Live-Hacked Tour Around The New C++ (Including OO)
 
    * :doc:`overview-livehacking`
 
+.. sidebar:: jjj todo
+
+   * Better description
+   * check pitfall numbers
+   * Link to leica course
+
 A variation of :doc:`overview-livehacking`, omitting threading (and
 :doc:`std::variant
 </trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant>`
-for that matter). Instead, we cover 
+for that matter). Instead, we cover
 
 * C++ "object oriented programming" (what's an *interface*?), C++11
   features to fix it (``= delete``, ``= default``, ``override``, and
@@ -42,14 +48,22 @@ C++03 To-Do List Version
    :caption: :download:`code-oo/todolist-orig.cpp`
    :language: c++
 
-Encapsulate ``std::map`` Value In ``class Item``
-------------------------------------------------
+.. code-block:: console
+
+   $ ./c++-intro-overview-oo-todolist-orig 
+   NAME: down 1000 to 980, DESC: prefix: 'DOWN', count down from 1000 to 980, interval 0.5 second
+   NAME: up 1 to 10, DESC: prefix: 'UP', count up from 1 to 10, interval 1 second
+
+Encapsulate ``std::map`` Value In ``class Item`` (Pitfall)
+----------------------------------------------------------
 
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
    * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
 
+* Encapsulate value part of te map into something more approachable,
+  for later extension
 * Obvious implementation of ``class Item`` (only a wrapper around
   ``std::string``)
 
@@ -92,7 +106,7 @@ Pitfall #1: Accessing ``std::map`` Using Its ``operator[]``
    * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map-index-operator-bad`
 
 * See :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map-index-operator-bad`
-* |longrightarrow| **A-ha**: this is why we had to implemnt default
+* |longrightarrow| **A-ha**: this is why we had to implement default
   constructor
 * **We don't want, though!**
 
@@ -118,8 +132,8 @@ Real Container Initialization: *Brace Initialization*
 
 .. _cxx11-overview-interfaces:
 
-Towards *The Interface Dogma*: ``class Item_up_1_to_10``, ``class Item_down_1000_to_980``
------------------------------------------------------------------------------------------
+OOP (Towards *The Interface Dogma*): Two Kinds Of Items, Two Classes
+--------------------------------------------------------------------
 
 .. sidebar:: See also
 
@@ -128,8 +142,8 @@ Towards *The Interface Dogma*: ``class Item_up_1_to_10``, ``class Item_down_1000
 * Naive way: implement two *non-related* classes
 
   * To the "UP" item class, add a member ``prefix``, for later (slicing)
-  * Be naive for that entire section, until we actually understand
-    *the dogma*
+  * Be naive for that entire section, until we actually understand the
+    *dogma*
 
 * Omit constructors and members (there's only ``doit()`` methods)
 * |longrightarrow| wonder how to get two distinct types into the map
@@ -141,22 +155,32 @@ Towards *The Interface Dogma*: ``class Item_up_1_to_10``, ``class Item_down_1000
 
 .. _cxx11-overview-inheritance:
 
-Make It Compile (Not *Work*): Inheritance
------------------------------------------
+OOP: Inheritance (Make It Compile, But Not Yet Work)
+----------------------------------------------------
 
-* Radically, to just get objects into the map: derive from base
+* Radically, just to get objects into the map: derive from base
   ``class Item``
 * What to do in base class? |longrightarrow| output nonsense
-* Talk about ... whats happening ...
+* Talk about whats going on (see :ref:`next slide
+  <cxx11-overview-inheritance-slicing>`
 
 .. literalinclude:: code-oo/todolist-items-non-working.cpp
    :caption: :download:`code-oo/todolist-items-non-working.cpp`
    :language: c++
 
+* Only ``Item::doit()`` is called
+* Derived functionality not reached
+
+.. code-block:: console
+
+   $ ./c++-intro-overview-oo-todolist-items-non-working 
+   NAME: down 1000 to 980, don't know what to do
+   NAME: up 1 to 10, don't know what to do
+
 .. _cxx11-overview-inheritance-slicing:
 
-Analysis: The Perils Of Inheritance - Base Class Conversion (Copy), And *Slicing*
----------------------------------------------------------------------------------
+OOP: Analysis: The Perils Of Inheritance - *Slicing*
+----------------------------------------------------
 
 * Clarify: comment out todolist, and explain sideways
 * C++ permits one to *copy* an object of derived type onto an object
@@ -172,14 +196,17 @@ Analysis: The Perils Of Inheritance - Base Class Conversion (Copy), And *Slicing
 
 .. _cxx11-overview-inheritance-pointer-conversion:
 
-Analysis: The Perils Of Inheritance - Base Class Conversion (Pointer Types)
----------------------------------------------------------------------------
+OOP: Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
+----------------------------------------------------------------------------
 
-* Better than *copying* objects of different sizes onto each other: *automatic type conversion*
+* Better than *copying* objects of different sizes onto each other:
+  *automatic type conversion*
 * *The Plan*
 * Still not perfect
 * Nothing gets lost: only pointers are copied, the information in the
-  derived object is still there (just not reachable)
+  derived object is still there
+* Still not working though
+* |longrightarrow| Derived class functionality not reachable
 
 .. literalinclude:: code-oo/todolist-sideway-pointer-type-conversion.cpp
    :caption: :download:`code-oo/todolist-sideway-pointer-type-conversion.cpp`
@@ -187,8 +214,8 @@ Analysis: The Perils Of Inheritance - Base Class Conversion (Pointer Types)
 
 .. _cxx11-overview-inheritance-pointer-virtual:
 
-Key To Polymorphism: ``virtual``
---------------------------------
+OOP: Key To Polymorphism: ``virtual``
+-------------------------------------
 
 * Makes ``base->doit()`` magically work
 * By adding runtime type information
@@ -200,8 +227,8 @@ Key To Polymorphism: ``virtual``
    :caption: :download:`code-oo/todolist-sideway-virtual.cpp`
    :language: c++
 
-Pitfall #N: Incorrectly Implement Derived Class Method
-------------------------------------------------------
+OOP: Pitfall #N: Incorrectly Implement Derived Class Method
+-----------------------------------------------------------
 
 .. sidebar:: See also
 
@@ -221,8 +248,8 @@ Pitfall #N: Incorrectly Implement Derived Class Method
    :caption: :download:`code-oo/todolist-sideway-false-override.cpp`
    :language: c++
 
-Pitfall #N: Solution: That's What ``override`` Is There For
------------------------------------------------------------
+OOP: Pitfall #N: Solution: That's What ``override`` Is There For
+----------------------------------------------------------------
 
 .. sidebar:: See also
 
@@ -242,8 +269,8 @@ Pitfall #N: Solution: That's What ``override`` Is There For
       17 |     void doit() override
          |          ^~~~
 
-Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
-------------------------------------------------------------------
+OOP: Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
+-----------------------------------------------------------------------
 
 .. sidebar:: See also
 
@@ -260,6 +287,70 @@ Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
 .. literalinclude:: code-oo/todolist-sideway-pure-virtual.cpp
    :caption: :download:`code-oo/todolist-sideway-pure-virtual.cpp`
    :language: c++
+
+OOP: Pitfall #N+1: Derived Class Destructor (1)
+-----------------------------------------------
+
+* Destructors are special
+* Lets be naive ...
+
+.. literalinclude:: code-oo/todolist-sideway-nonvirtual-dtor.cpp
+   :caption: :download:`code-oo/todolist-sideway-nonvirtual-dtor.cpp`
+   :language: c++
+
+* Runs as expected
+* No memory leaks
+
+.. code-block:: console
+
+   $ ./c++-intro-overview-oo-todolist-sideway-nonvirtual-dtor 
+   Allocated space for: blah(jfasch-home)
+
+.. code-block:: console
+
+   $ valgrind ./c++-intro-overview-oo-todolist-sideway-nonvirtual-dtor 
+   ...
+   HEAP SUMMARY:
+       in use at exit: 0 bytes in 0 blocks
+   ...
+
+OOP: Pitfall #N+1: Derived Class Destructor (2)
+-----------------------------------------------
+
+* But what if we call destructor via base class?
+* Much like with methods |longrightarrow| derived destructor not
+  reached
+* |longrightarrow| ``virtual destructor``
+* Cannot be pure virtual
+
+  * Destructors are special
+  * Called from most derived upwards to base
+  * |longrightarrow| Interface must have "do nothing" dtor
+    implementation
+
+.. literalinclude:: code-oo/todolist-sideway-virtual-dtor.cpp
+   :caption: :download:`code-oo/todolist-sideway-virtual-dtor.cpp`
+   :language: c++
+
+OOP: The Interface, Put Dogmatically
+------------------------------------
+
+.. code-block:: c++
+
+   class Interface
+   {
+   public:
+       virtual ~Implementation() = default;
+       virtual void doit() const = 0;
+   };
+      
+   class Implementation : public Interface
+   {
+   public:
+       ~Implementation() override ...                     // <-- optional
+       void doit() const override ...                     // <-- mandatory
+   };
+
 
 .. .. Long ``iterator`` Type Names |longrightarrow| ``auto``
 .. .. ------------------------------------------------------

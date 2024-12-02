@@ -36,16 +36,16 @@ public:
 
 int main()
 {
-    using todo_list = std::map<std::string, Item>;       // <-- base class conversion
+    using todo_list = std::map<std::string, Item>;       // <-- base class
 
     const todo_list tdl = {
-        { "up 1 to 10", Item_up_1_to_10("blah") },       // <-- copy: base class conversion
-        { "down 1000 to 980", Item_down_1000_to_980() }, // <-- copy: base class conversion
+        { "up 1 to 10", Item_up_1_to_10("blah") },       // <-- copy: derived onto base
+        { "down 1000 to 980", Item_down_1000_to_980() }, // <-- copy: derived onto base
     };
 
     for (todo_list::const_iterator it=tdl.begin(); it!= tdl.end(); ++it) {
         std::string name = it->first;
-        Item item = it->second;                          // <-- base class copy
+        Item item = it->second;                          // <-- copy: base onto base
 
         std::cout << "NAME: " << name << ", ";
         item.doit();

@@ -27,7 +27,7 @@ private:
 int main()
 {
     Item_up_1_to_10 derived("blah");
-    // derived.doit();                                 // <-- STEP 1: works, obviously
+    // derived.doit();                                 // <-- STEP 1: works on derived instance, obviously
 
     Item base;
     base = derived;                                    // <-- STEP 2: *convert* (omit all that base hasn't)

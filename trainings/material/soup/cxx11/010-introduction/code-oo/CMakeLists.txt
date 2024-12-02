@@ -13,3 +13,6 @@ target_compile_options(c++-intro-overview-oo-todolist-sideway-false-override PRI
 
 # add_executable(c++-intro-overview-oo-todolist-sideway-override todolist-sideway-override.cpp)
 add_executable(c++-intro-overview-oo-todolist-sideway-pure-virtual todolist-sideway-pure-virtual.cpp)
+
+add_executable(c++-intro-overview-oo-todolist-sideway-nonvirtual-dtor todolist-sideway-nonvirtual-dtor.cpp)
+add_executable(c++-intro-overview-oo-todolist-sideway-virtual-dtor todolist-sideway-virtual-dtor.cpp)
