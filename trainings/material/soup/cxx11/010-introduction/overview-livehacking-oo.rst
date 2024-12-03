@@ -351,6 +351,13 @@ OOP: The Interface, Put Dogmatically
        void doit() const override ...                     // <-- mandatory
    };
 
+Wrap Up: Polymorpic Todolist
+----------------------------
+
+.. literalinclude:: code-oo/todolist-polymorphic.cpp
+   :caption: :download:`code-oo/todolist-polymorphic.cpp`
+   :language: c++
+
 
 .. .. Long ``iterator`` Type Names |longrightarrow| ``auto``
 .. .. ------------------------------------------------------
@@ -363,11 +370,12 @@ OOP: The Interface, Put Dogmatically
 .. .. 
 .. .. * Annoying: long ``iterator`` names
 .. .. * ``typedef`` is of limited help
+.. .. * |longrightarrow| ``auto``
 .. .. 
-.. .. .. literalinclude:: code/c++-intro-030-auto-iterator.cpp
-.. ..    :caption: :download:`code/c++-intro-030-auto-iterator.cpp`
+.. .. .. literalinclude:: code-oo/todolist-auto.cpp
+.. ..    :caption: :download:`code-oo/todolist-auto.cpp`
 .. ..    :language: c++
-.. .. 
+
 .. .. More ``auto``: Unpacking ``std::pair``
 .. .. --------------------------------------
 .. .. 

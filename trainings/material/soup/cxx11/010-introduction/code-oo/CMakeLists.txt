@@ -16,3 +16,5 @@ add_executable(c++-intro-overview-oo-todolist-sideway-pure-virtual todolist-side
 
 add_executable(c++-intro-overview-oo-todolist-sideway-nonvirtual-dtor todolist-sideway-nonvirtual-dtor.cpp)
 add_executable(c++-intro-overview-oo-todolist-sideway-virtual-dtor todolist-sideway-virtual-dtor.cpp)
+
+add_executable(c++-intro-overview-oo-todolist-polymorphic todolist-polymorphic.cpp)
