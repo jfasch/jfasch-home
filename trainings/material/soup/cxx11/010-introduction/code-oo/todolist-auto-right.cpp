@@ -1,5 +1,6 @@
 #include <map>
 #include <string>
+#include <memory>
 #include <iostream>
 
 class Item
@@ -34,24 +35,21 @@ public:
 
 int main()
 {
-    using todo_list = std::map<std::string, Item*>;            // <-- pointer to interface
+    using todo_list = std::map<std::string, std::shared_ptr<Item>>;
 
     const todo_list tdl = {
-        { "up 1 to 10", new Item_up_1_to_10("blah") },         // <-- dynamic allocation
-        { "down 1000 to 980", new Item_down_1000_to_980() },   // <-- dynamic allocation
+        { "up 1 to 10", std::make_shared<Item_up_1_to_10>("blah") },
+        { "down 1000 to 980", std::make_shared<Item_down_1000_to_980>() },
     };
 
-    for (todo_list::const_iterator it=tdl.begin(); it!= tdl.end(); ++it) {
-        std::string name = it->first;
-        const Item* item = it->second;
+    for (auto it=tdl.begin(); it!= tdl.end(); ++it) {
+        const auto& name = it->first;                                        // <-- better
+        const auto& item = it->second;                                       // <-- better
 
         std::cout << "NAME: " << name << ", ";
-        item->doit();                                          // <-- polymorphic use
+        item->doit();
         std::cout << '\n';
     }
-
-    for (todo_list::const_iterator it=tdl.begin(); it!= tdl.end(); ++it)
-        delete it->second;                                     // <-- polymorphic dtor call
 
     return 0;
 }
