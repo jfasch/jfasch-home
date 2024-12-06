@@ -664,8 +664,9 @@ Wrap Up: TodoList, De-Overengineered
 .. rubric:: Footnotes
 .. [#tweakable] The course can be adapted to your organization as you
                 like it. Omit topics that are not relevant for you,
-                and replace them with others like threading, for
-                example.
+                and replace them with others like :doc:`threading
+                </trainings/material/soup/cxx11/050-multithreading/group>`,
+                for example.
 
 		See :doc:`here </trainings/material/soup/index>` for
 		what's there overall.
