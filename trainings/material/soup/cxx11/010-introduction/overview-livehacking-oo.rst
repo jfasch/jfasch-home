@@ -51,11 +51,16 @@ completely different (which does not make much more sense either).
 I wrote this up after a number of iterations of the talk (:doc:`here's
 another version of it <overview-livehacking>`). C++ cannot be taught
 in just one day; that seems to be clear to the companies that have
-booked the courses.
+booked the courses. (See :doc:`here for one such course
+</trainings/log/detail/2024-11-19--C++-One-Day/2024-11-19>`)
+
+
 
 .. contents::
    :depth: 1
    :local:
+
+.. _cxx11-overview-cxx03:
 
 C++03 Todo-List
 ---------------
@@ -81,6 +86,8 @@ C++03 Todo-List
    $ ./c++-intro-overview-oo-todolist-orig 
    NAME: down 1000 to 980, DESC: prefix: 'DOWN', count down from 1000 to 980, interval 0.5 second
    NAME: up 1 to 10, DESC: prefix: 'UP', count up from 1 to 10, interval 1 second
+
+.. _cxx11-overview-class-item-encap:
 
 Pitfall: Encapsulate ``std::map`` Value In ``class Item``
 ---------------------------------------------------------
@@ -126,6 +133,8 @@ Pitfall: Encapsulate ``std::map`` Value In ``class Item``
      :caption: :download:`code-oo/todolist-item-def-ctor-wtf.cpp`
      :language: c++
 
+.. _cxx11-overview-class-item-encap-pitfall:
+
 Pitfall: Accessing ``std::map`` Using Its ``operator[]``
 --------------------------------------------------------
 
@@ -138,6 +147,8 @@ Pitfall: Accessing ``std::map`` Using Its ``operator[]``
 * |longrightarrow| **A-ha**: this is why we had to implement default
   constructor
 * **We don't want, though!**
+
+.. _cxx11-overview-brace-init:
 
 Real Container Initialization: *Brace Initialization*
 -----------------------------------------------------
@@ -159,12 +170,15 @@ Real Container Initialization: *Brace Initialization*
    :language: c++
 
 .. _cxx11-overview-interfaces:
+.. _cxx11-overview-towards-interface-dogma:
 
 OOP: Towards *The Interface Dogma*
---------------------------------------------------------------------
+----------------------------------
 
 .. contents::
    :local:
+
+.. _cxx11-overview-towards-interface-dogma-two-classes:
 
 Two Kinds Of Items, Two Classes
 ...............................
@@ -188,6 +202,7 @@ Two Kinds Of Items, Two Classes
    :language: c++
 
 .. _cxx11-overview-inheritance:
+.. _cxx11-overview-towards-interface-dogma-inheritance:
 
 Inheritance (Make It Compile, But Not Yet Work)
 ...............................................
@@ -217,6 +232,7 @@ Inheritance (Make It Compile, But Not Yet Work)
    NAME: up 1 to 10, don't know what to do
 
 .. _cxx11-overview-inheritance-slicing:
+.. _cxx11-overview-towards-interface-dogma-slicing:
 
 Analysis: The Perils Of Inheritance - *Slicing*
 ...............................................
@@ -239,6 +255,7 @@ Analysis: The Perils Of Inheritance - *Slicing*
    :language: c++
 
 .. _cxx11-overview-inheritance-pointer-conversion:
+.. _cxx11-overview-towards-interface-dogma-pointer-conversion:
 
 Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
 .......................................................................
@@ -262,6 +279,7 @@ Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
    :language: c++
 
 .. _cxx11-overview-inheritance-pointer-virtual:
+.. _cxx11-overview-towards-interface-dogma-virtual:
 
 Key To Polymorphism: ``virtual``
 ................................
@@ -280,6 +298,8 @@ Key To Polymorphism: ``virtual``
 .. literalinclude:: code-oo/todolist-sideway-virtual.cpp
    :caption: :download:`code-oo/todolist-sideway-virtual.cpp`
    :language: c++
+
+.. _cxx11-overview-towards-interface-dogma-not-overriding:
 
 Pitfall: Incorrectly Implement Derived Class Method
 ...................................................
@@ -302,6 +322,8 @@ Pitfall: Incorrectly Implement Derived Class Method
    :caption: :download:`code-oo/todolist-sideway-false-override.cpp`
    :language: c++
 
+.. _cxx11-overview-towards-interface-dogma-override:
+
 Solution: That's What ``override`` Is There For
 ...............................................
 
@@ -323,6 +345,8 @@ Solution: That's What ``override`` Is There For
       17 |     void doit() override
          |          ^~~~
 
+.. _cxx11-overview-towards-interface-dogma-pure-virtual:
+
 Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
 ..................................................................
 
@@ -342,6 +366,8 @@ Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
 .. literalinclude:: code-oo/todolist-sideway-pure-virtual.cpp
    :caption: :download:`code-oo/todolist-sideway-pure-virtual.cpp`
    :language: c++
+
+.. _cxx11-overview-towards-interface-dogma-derived-dtor-1:
 
 Pitfall: Derived Class Destructor (1)
 .....................................
@@ -375,6 +401,8 @@ Pitfall: Derived Class Destructor (1)
        in use at exit: 0 bytes in 0 blocks
    ...
 
+.. _cxx11-overview-towards-interface-dogma-derived-dtor-2:
+
 Pitfall: Derived Class Destructor (2)
 .....................................
 
@@ -400,6 +428,7 @@ Pitfall: Derived Class Destructor (2)
    :language: c++
 
 .. _cxx_overview_oo__iface_dogma:
+.. _cxx11-overview-towards-interface-dogma-done:
 
 The Interface, Put Dogmatically
 ...............................
@@ -424,6 +453,8 @@ The Interface, Put Dogmatically
        void doit() const override ...                     // <-- mandatory
    };
 
+.. _cxx11-overview-polymorphic-todolist:
+
 Wrap Up: Polymorpic Todolist
 ----------------------------
 
@@ -434,6 +465,8 @@ Wrap Up: Polymorpic Todolist
 .. literalinclude:: code-oo/todolist-polymorphic.cpp
    :caption: :download:`code-oo/todolist-polymorphic.cpp`
    :language: c++
+
+.. _cxx11-overview-smart-pointers:
 
 Memory Management: Smart Pointers (Showing The Options)
 -------------------------------------------------------
@@ -454,6 +487,8 @@ Memory Management: Smart Pointers (Showing The Options)
   :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
 * Explain
   :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+
+.. _cxx11-overview-unique-ptr:
 
 Memory Management: ``std::unique_ptr<>`` In TodoList |longrightarrow| *No*
 --------------------------------------------------------------------------
@@ -477,6 +512,23 @@ Memory Management: ``std::unique_ptr<>`` In TodoList |longrightarrow| *No*
    :caption: :download:`code-oo/todolist-unique-ptr.cpp`
    :language: c++
 
+.. _cxx11-overview-move:
+
+A Short Deviation: Move Semantics
+---------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+
+* At that time, a little deviation into :doc:`move semantics
+  </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
+  is in order
+* |longrightarrow| This helps understand the compiler when he tries to
+  just say "no" but fails
+
+.. _cxx11-overview-shared-ptr:
+
 Memory Management: ``std::shared_ptr<>`` In TodoList
 ----------------------------------------------------
 
@@ -495,6 +547,8 @@ Memory Management: ``std::shared_ptr<>`` In TodoList
    :caption: :download:`code-oo/todolist-shared-ptr.cpp`
    :language: c++
 
+.. _cxx11-overview-auto:
+
 Readability: Long Type Names |longrightarrow| ``auto``
 ------------------------------------------------------
 
@@ -510,6 +564,8 @@ Readability: Long Type Names |longrightarrow| ``auto``
 .. literalinclude:: code-oo/todolist-auto-wrong.cpp
    :caption: :download:`code-oo/todolist-auto-wrong.cpp`
    :language: c++
+
+.. _cxx11-overview-auto-pitfalls:
 
 Pitfalls: ``auto``
 ------------------
@@ -527,6 +583,8 @@ Pitfalls: ``auto``
    :caption: :download:`code-oo/todolist-auto-right.cpp`
    :language: c++
 
+.. _cxx11-overview-structured-binding:
+
 Readability: Tuple Unpacking (Err, Structured Binding)
 ------------------------------------------------------
 
@@ -540,6 +598,8 @@ Readability: Tuple Unpacking (Err, Structured Binding)
 .. literalinclude:: code-oo/todolist-structured-binding.cpp
    :caption: :download:`code-oo/todolist-structured-binding.cpp`
    :language: c++
+
+.. _cxx11-overview-range-based-for:
 
 Range Based ``for``
 -------------------
@@ -555,6 +615,8 @@ Range Based ``for``
 .. literalinclude:: code-oo/todolist-range-for.cpp
    :caption: :download:`code-oo/todolist-range-for.cpp`
    :language: c++
+
+.. _cxx11-overview-lambda:
 
 Full Classes Hierarchy For One Method ``doit()`` |longrightarrow| *NO* (Lambdas)
 --------------------------------------------------------------------------------
@@ -582,6 +644,8 @@ Full Classes Hierarchy For One Method ``doit()`` |longrightarrow| *NO* (Lambdas)
   * Functor
   * Lambda
   * ...
+
+.. _cxx11-overview-lambda-todolist:
 
 Wrap Up: TodoList, De-Overengineered
 ------------------------------------
