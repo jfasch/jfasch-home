@@ -31,7 +31,7 @@ groups at the same company.
 
 The day was woven around :doc:`the screenplay
 </trainings/material/soup/cxx11/010-introduction/overview-livehacking-oo>`,
-which I used that to live-hack `2024-11-19/intro.cpp
+which I used to live-hack `2024-11-19/intro.cpp
 <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/intro.cpp>`__ -
 which is the final outcome.
 

@@ -44,15 +44,16 @@ programmers. For example,
 
 This is not a slide deck, but rather can be seen as a live-coding
 "screenplay" that is used by the :doc:`trainer </about/myself/index>`
-to not get too far off track. It starts with an old-style version of a
-nonsense program, which is continuously modified into something
-completely different (which does not make much more sense either).
+to not get too far off track. It starts with an old-style (pre C++11)
+version of a nonsense program, which is continuously modified into
+something completely different (which does not make much more sense
+either).
 
 I wrote this up after a number of iterations of the talk (:doc:`here's
 another version of it <overview-livehacking>`). C++ cannot be taught
 in just one day; that seems to be clear to the companies that have
 booked the courses. (See :doc:`here for one such course
-</trainings/log/detail/2024-11-19--C++-One-Day/2024-11-19>`)
+</trainings/log/detail/2024-11-19--C++-One-Day/index>`)
 
 
 
