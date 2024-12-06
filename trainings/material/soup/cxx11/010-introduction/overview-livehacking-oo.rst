@@ -38,9 +38,9 @@ The intent of this course [#tweakable]_ is not to teach C++
 programmers. For example, 
 
 * Different teams who already use C++ come together in the course, and
-  develop a common viewpoint and vocabulary
+  develop a common viewpoint and vocabulary.
 * Those who come from C (or an entirely different language?) want to
-  see what they're up to
+  see what they're up to.
 
 This is not a slide deck, but rather can be seen as a live-coding
 "screenplay" that is used by the :doc:`trainer </about/myself/index>`
@@ -48,7 +48,10 @@ to not get too far off track. It starts with an old-style version of a
 nonsense program, which is continuously modified into something
 completely different (which does not make much more sense either).
 
-I wrote this up after a number of iterations of the talk jjjjjjjjjjjj
+I wrote this up after a number of iterations of the talk (:doc:`here's
+another version of it <overview-livehacking>`). C++ cannot be taught
+in just one day; that seems to be clear to the companies that have
+booked the courses.
 
 .. contents::
    :depth: 1
