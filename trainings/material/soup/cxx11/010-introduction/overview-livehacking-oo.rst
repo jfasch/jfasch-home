@@ -3,77 +3,65 @@
 .. include:: <mmlalias.txt>
 
 
-A Live-Hacked Tour Around The New C++ (Including OO)
-====================================================
+A One-Day Overview Of C++
+=========================
 
-.. sidebar:: C++ topics covered jjj
+.. sidebar:: Topics covered
+
+   *Language basics*
 
    * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map` (and the STL in general)
-
-   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map-index-operator-bad`
-   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map-insert`
-
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group` (including C++11 goodies like ``override``, ``final``, ``= delete``, ...)
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
-
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
-   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
+   *Memory management*
 
    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
 
-   pythonicity
-
+   *Pythonic features*
+     
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
 
-   even more pythonicity
+   *New language directions*
 
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
    * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
+A one-day ride through C++ for those who can take it. Course format is
+"trainer hacks/speaks, audience speaks up to comment/ask/discuss".
 
-.. sidebar:: jjj todo
+The intent of this course [#tweakable]_ is not to teach C++
+[#unteachable]_, but rather to give an overview of it to experienced
+programmers. For example, 
 
-   * Better description
-   * check pitfall numbers
-   * Link to leica course
+* Different teams who already use C++ come together in the course, and
+  develop a common viewpoint and vocabulary
+* Those who come from C (or an entirely different language?) want to
+  see what they're up to
 
-A variation of :doc:`overview-livehacking`, omitting threading (and
-:doc:`std::variant
-</trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant>`
-for that matter). Instead, we cover
+This is not a slide deck, but rather can be seen as a live-coding
+"screenplay" that is used by the :doc:`trainer </about/myself/index>`
+to not get too far off track. It starts with an old-style version of a
+nonsense program, which is continuously modified into something
+completely different (which does not make much more sense either).
 
-* C++ "object oriented programming" (what's an *interface*?), C++11
-  features to fix it (``= delete``, ``= default``, ``override``, and
-  ``final``).
-* All object orientation is then eliminated in favor of :doc:`lambda
-  </trainings/material/soup/cxx11/020-new-language-features/lambda/group>`
-  and :doc:`std::function
-  </trainings/material/soup/cxx11/040-bind-function/020-function/topic>`.
-
-See the following table of contents for the full topic coverage.
+I wrote this up after a number of iterations of the talk jjjjjjjjjjjj
 
 .. contents::
+   :depth: 1
    :local:
 
-C++03 To-Do List Version
-------------------------
+C++03 Todo-List
+---------------
 
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
 
+* Todo-list: a key-value store
 * Using ``std::map<std::string,std::string>`` as clumsy as is the
   nature of C++03
 * No *initialization*, only default constructor (|longrightarrow|
@@ -91,8 +79,8 @@ C++03 To-Do List Version
    NAME: down 1000 to 980, DESC: prefix: 'DOWN', count down from 1000 to 980, interval 0.5 second
    NAME: up 1 to 10, DESC: prefix: 'UP', count up from 1 to 10, interval 1 second
 
-Encapsulate ``std::map`` Value In ``class Item`` (Pitfall)
-----------------------------------------------------------
+Pitfall: Encapsulate ``std::map`` Value In ``class Item``
+---------------------------------------------------------
 
 .. sidebar:: See also
 
@@ -135,8 +123,8 @@ Encapsulate ``std::map`` Value In ``class Item`` (Pitfall)
      :caption: :download:`code-oo/todolist-item-def-ctor-wtf.cpp`
      :language: c++
 
-Pitfall #1: Accessing ``std::map`` Using Its ``operator[]``
------------------------------------------------------------
+Pitfall: Accessing ``std::map`` Using Its ``operator[]``
+--------------------------------------------------------
 
 .. sidebar:: See also
 
@@ -169,8 +157,14 @@ Real Container Initialization: *Brace Initialization*
 
 .. _cxx11-overview-interfaces:
 
-OOP (Towards *The Interface Dogma*): Two Kinds Of Items, Two Classes
+OOP: Towards *The Interface Dogma*
 --------------------------------------------------------------------
+
+.. contents::
+   :local:
+
+Two Kinds Of Items, Two Classes
+...............................
 
 .. sidebar:: See also
 
@@ -192,8 +186,8 @@ OOP (Towards *The Interface Dogma*): Two Kinds Of Items, Two Classes
 
 .. _cxx11-overview-inheritance:
 
-OOP: Inheritance (Make It Compile, But Not Yet Work)
-----------------------------------------------------
+Inheritance (Make It Compile, But Not Yet Work)
+...............................................
 
 .. sidebar:: See also
 
@@ -221,8 +215,8 @@ OOP: Inheritance (Make It Compile, But Not Yet Work)
 
 .. _cxx11-overview-inheritance-slicing:
 
-OOP: Analysis: The Perils Of Inheritance - *Slicing*
-----------------------------------------------------
+Analysis: The Perils Of Inheritance - *Slicing*
+...............................................
 
 .. sidebar:: See also
 
@@ -243,8 +237,8 @@ OOP: Analysis: The Perils Of Inheritance - *Slicing*
 
 .. _cxx11-overview-inheritance-pointer-conversion:
 
-OOP: Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
-----------------------------------------------------------------------------
+Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
+.......................................................................
 
 .. sidebar:: See also
 
@@ -266,8 +260,8 @@ OOP: Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
 
 .. _cxx11-overview-inheritance-pointer-virtual:
 
-OOP: Key To Polymorphism: ``virtual``
--------------------------------------
+Key To Polymorphism: ``virtual``
+................................
 
 .. sidebar:: See also
 
@@ -284,8 +278,8 @@ OOP: Key To Polymorphism: ``virtual``
    :caption: :download:`code-oo/todolist-sideway-virtual.cpp`
    :language: c++
 
-OOP: Pitfall #N: Incorrectly Implement Derived Class Method
------------------------------------------------------------
+Pitfall: Incorrectly Implement Derived Class Method
+...................................................
 
 .. sidebar:: See also
 
@@ -305,8 +299,8 @@ OOP: Pitfall #N: Incorrectly Implement Derived Class Method
    :caption: :download:`code-oo/todolist-sideway-false-override.cpp`
    :language: c++
 
-OOP: Pitfall #N: Solution: That's What ``override`` Is There For
-----------------------------------------------------------------
+Solution: That's What ``override`` Is There For
+...............................................
 
 .. sidebar:: See also
 
@@ -326,8 +320,8 @@ OOP: Pitfall #N: Solution: That's What ``override`` Is There For
       17 |     void doit() override
          |          ^~~~
 
-OOP: Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
------------------------------------------------------------------------
+Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
+..................................................................
 
 .. sidebar:: See also
 
@@ -346,8 +340,8 @@ OOP: Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
    :caption: :download:`code-oo/todolist-sideway-pure-virtual.cpp`
    :language: c++
 
-OOP: Pitfall #N+1: Derived Class Destructor (1)
------------------------------------------------
+Pitfall: Derived Class Destructor (1)
+.....................................
 
 .. sidebar:: See also
 
@@ -378,8 +372,8 @@ OOP: Pitfall #N+1: Derived Class Destructor (1)
        in use at exit: 0 bytes in 0 blocks
    ...
 
-OOP: Pitfall #N+1: Derived Class Destructor (2)
------------------------------------------------
+Pitfall: Derived Class Destructor (2)
+.....................................
 
 .. sidebar:: See also
 
@@ -404,8 +398,8 @@ OOP: Pitfall #N+1: Derived Class Destructor (2)
 
 .. _cxx_overview_oo__iface_dogma:
 
-OOP: The Interface, Put Dogmatically
-------------------------------------
+The Interface, Put Dogmatically
+...............................
 
 .. sidebar:: See also
 
@@ -597,3 +591,16 @@ Wrap Up: TodoList, De-Overengineered
 .. literalinclude:: code-oo/todolist-lambda.cpp
    :caption: :download:`code-oo/todolist-lambda.cpp`
    :language: c++
+
+
+.. rubric:: Footnotes
+.. [#tweakable] The course can be adapted to your organization as you
+                like it. Omit topics that are not relevant for you,
+                and replace them with others like threading, for
+                example.
+
+		See :doc:`here </trainings/material/soup/index>` for
+		what's there overall.
+
+.. [#unteachable] C++'s nature is that it is nearly unteachable -
+                  teaching it in one day is especially unrealistic.
