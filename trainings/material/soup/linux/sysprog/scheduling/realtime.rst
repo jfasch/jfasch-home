@@ -108,7 +108,7 @@ Immediately?
 Situations where preemption is difficult ...
 
 * Holds a :doc:`spinlock
-  </trainings/material/soup/kernel/spinlock/topic>`
+  </trainings/material/soup/linux/kernel/spinlock/topic>`
 
   * |longrightarrow| preemption disabled, interrupts off
   * |longrightarrow| *brutal*

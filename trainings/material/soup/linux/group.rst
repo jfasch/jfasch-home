@@ -12,6 +12,7 @@ Linux
    toolchain/group
    sysprog/group
    hardware/group
+   kernel/group
    drafts/group
 
 .. ot-graph::

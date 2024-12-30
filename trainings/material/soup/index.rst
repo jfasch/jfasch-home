@@ -22,7 +22,6 @@ Sphinx extension to form a network of *topics* as I call it. This is
    linux/group
    clean-code/group
    unittest/group
-   kernel/group
 
 (See :doc:`here <graph>` for interconnections between topics.)
 

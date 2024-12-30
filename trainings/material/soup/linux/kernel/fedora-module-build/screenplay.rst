@@ -12,7 +12,7 @@ Prerequisite: Build Entire Kernel
   * The kernel proper itself
 
 This means that, as a prerequisite :doc:`the entire target kernel needs to
-be built </trainings/material/soup/kernel/fedora-kernel-build/topic>`.
+be built </trainings/material/soup/linux/kernel/fedora-kernel-build/topic>`.
 
 We used to ``make modules`` in the past, so ``Module.symvers`` was
 created for the in-tree modules. However, nowadays the build

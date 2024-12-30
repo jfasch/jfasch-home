@@ -29,10 +29,10 @@ Cross Compilation
 .................
 
 * :doc:`build kernel
-  </trainings/material/soup/kernel/raspi-kernel-build/topic>`
+  </trainings/material/soup/linux/kernel/raspi-kernel-build/topic>`
 * Build our module against that kernel. Use ``make`` parameters
   ``ARCH`` and ``CROSS_COMPILE`` from
-  :doc:`/trainings/material/soup/kernel/raspi-kernel-build/topic`
+  :doc:`/trainings/material/soup/linux/kernel/raspi-kernel-build/topic`
 * Load it |longrightarrow| fine
 
 Cross Compilation Sucks

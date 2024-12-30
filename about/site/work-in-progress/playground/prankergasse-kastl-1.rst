@@ -63,8 +63,8 @@ Schubladen Bauen
 * Zusammensetzen (probieren: auflegen auf losem Kastenboden und oberem
   Abschlussboden, und schauen obs passt)
 
-Blenden und Tueren
-------------------
+Blenden und Türen
+-----------------
 
 * Türen lt. oben
 * Blenden klein lt. oben

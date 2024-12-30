@@ -80,7 +80,7 @@ Configure kernel, using the target system config.
 Build kernel. If you only want to build external modules against some
 specific kernel version, you *do* have to build the entire kernel -
 not just modules as it used to be in old times. See :doc:`here
-</trainings/material/soup/kernel/fedora-module-build/screenplay>` for
+</trainings/material/soup/linux/kernel/fedora-module-build/screenplay>` for
 more.
 
 .. code-block:: console

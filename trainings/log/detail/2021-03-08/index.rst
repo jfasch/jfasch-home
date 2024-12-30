@@ -18,7 +18,7 @@ Linux Kernel Driver Development Basics (14.12.2020)
 
    **Course Details**
 
-   :doc:`Course details </trainings/material/soup/kernel/group>`
+   :doc:`Course details </trainings/material/soup/linux/kernel/group>`
 
    **Material**
 

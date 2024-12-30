@@ -23,7 +23,7 @@ Linux Kernel Driver Development
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* :doc:`/trainings/material/soup/kernel/group`
+	* :doc:`/trainings/material/soup/linux/kernel/group`
       * * **Related**
 	* * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
 	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
@@ -78,7 +78,7 @@ Sample Project
 An exercise project accompanies the course, giving the audience a
 chance to get in touch with the mechanisms as they are covered.
 
-See :doc:`here </trainings/material/soup/kernel/sample-project>` for a
+See :doc:`here </trainings/material/soup/linux/kernel/sample-project>` for a
 trainer-centric view of what's to be done.
 
 Prerequisites
