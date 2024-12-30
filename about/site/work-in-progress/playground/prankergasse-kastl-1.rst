@@ -71,6 +71,11 @@ Blenden und Tueren
 * Blenden gross lt oben
 * Abschluss ober den oberen Laden
 
+Alles Ölen
+----------
+
+Innen nicht, da is wurscht.
+
 Montage
 -------
 
@@ -79,11 +84,16 @@ Montage
 
   * kl. Klemmtisch
   * Tauchsäge und Schiene
+  * Schleifmaschine
   * Hobel
+  * Staubsauger?
   * Zwingen
   * Akkuschrauber etc.
   * Schrauben
   * Filzpatscherln
+  * Kontaktkleber
+  * Silikon
+  * Holzkitt
 
 * Alles raufschleppen
 * Draufhauen bis steht
