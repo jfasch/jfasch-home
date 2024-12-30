@@ -25,7 +25,6 @@ C++: A One-Day Overview (2024-11-19 - 2024-11-21)
 
 This was unusual: a one-day course based on
 :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking-oo`,
-
 given three times in a row [#groundhog-day]_, to three different
 groups at the same company.
 
