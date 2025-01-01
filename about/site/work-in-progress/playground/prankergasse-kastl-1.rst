@@ -80,6 +80,7 @@ Montage
 -------
 
 * Leisten rundherum kaufen
+* Steckdosen Aufputz
 * Werkzeug
 
   * kl. Klemmtisch
@@ -94,6 +95,8 @@ Montage
   * Kontaktkleber
   * Silikon
   * Holzkitt
+  * Wagoklemmen
+  * Kabel
 
 * Alles raufschleppen
 * Draufhauen bis steht

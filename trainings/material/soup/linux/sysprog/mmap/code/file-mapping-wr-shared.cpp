@@ -15,7 +15,7 @@ int main(int argc, char** argv)
     }
 
     const char* filename = argv[1];
-    int fd = open(filename, O_RDONLY);
+    int fd = open(filename, O_RDWR);                 // <-- read and write
     if (fd == -1) {
         perror("open");
         return 1;
@@ -31,8 +31,8 @@ int main(int argc, char** argv)
     void* content = mmap(
         NULL,
         stat.st_size,
-        PROT_READ,
-        MAP_PRIVATE,
+        PROT_WRITE,
+        MAP_SHARED,                                    // <-- make changes visible to others
         fd,
         0
     );
@@ -43,9 +43,10 @@ int main(int argc, char** argv)
 
     close(fd);
 
-    write(STDOUT_FILENO, content, stat.st_size);
-    cin.peek();
-    write(STDOUT_FILENO, content, stat.st_size);
+    ((char*)content)[0] = 'a';
+    ((char*)content)[1] = 'b';
+    ((char*)content)[2] = 'c';
+    ((char*)content)[3] = 'd';
 
     munmap(content, stat.st_size);
 

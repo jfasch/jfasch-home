@@ -9,6 +9,7 @@ Sphinx extension to form a network of *topics* as I call it. This is
 .. toctree::
    :maxdepth: 1
 
+   linux/group
    python/group
    c/group
    cxx-todo/index
@@ -19,7 +20,6 @@ Sphinx extension to form a network of *topics* as I call it. This is
    cxx-code/index
    cxx-exercises/group
    cmake/group
-   linux/group
    clean-code/group
    unittest/group
 

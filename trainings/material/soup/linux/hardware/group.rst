@@ -7,7 +7,7 @@ Linux Hardware Interfaces
    :local:
 
 A very incomplete collection of hardware related topics. Linux has
-much much more, so this section is expanded continuously.
+much much more, and this section is expanded continuously.
 
 Contents
 --------

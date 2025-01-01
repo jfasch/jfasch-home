@@ -27,10 +27,11 @@ Reading A File, Not Using File I/O
 
 * Open file ``O_RDONLY``
 * Create mapping
+* Close file (mapping already knows)
 * ``PROT_READ``: memory protection *read only*
 * ``MAP_PRIVATE``: private mapping
 
-  * pointless as we don't *write* to it, but we have to say something
+  * Pointless as we don't *write* to it, but we have to say something
   * *Copy on write* otherwise |longrightarrow| private to each address
     space (later)
 
@@ -45,6 +46,41 @@ Reading A File, Not Using File I/O
    $ ./file-mapping-ro /tmp/a-file
    0123456789
 
+Writing: ``MAP_PRIVATE``, And Copy-On-Write (COW)
+-------------------------------------------------
+
+* Change ``PROT_READ`` to ``PROT_WRITE`` 
+* *Note* how ``open()`` is left as-is - ``O_RDONLY``
+* Touch one byte in mapping
+* Look with ``cat`` |longrightarrow| no change
+* Copy-On-Write (COW)
+* |longrightarrow| this is why this works on a ``O_RDONLY`` file
+
+.. literalinclude:: code/file-mapping-wr-private.cpp
+   :caption: :download:`code/file-mapping-wr-private.cpp`
+   :language: c++
+
+Writing: ``MAP_SHARED`` - Make Changes Visible
+----------------------------------------------
+
+* Change ``MAP_PRIVATE`` to ``MAP_SHARED``
+* Fails with ``EACCESS``
+* |longrightarrow| change ``O_RDONLY`` to ``O_WRONLY``
+* Still fails
+* |longrightarrow| ``O_RDWR`` - mapping needs to be populated
+
+.. literalinclude:: code/file-mapping-wr-shared.cpp
+   :caption: :download:`code/file-mapping-wr-shared.cpp`
+   :language: c++
+
+
+
+
+
+
+
+
+
 Read-Only, Basic
 ----------------
 
@@ -58,8 +94,9 @@ Wait, /proc/PID/maps
 Error Cases
 -----------
 
+* map ro, write to it -> segv
 * file ro, map rw
 * file ro, map ro, write byte -> segfault
 * file rw, map ro, write byte -> segfault
 * read beyond eof
-* offset not multiple of pagae size
+* offset not multiple of page size

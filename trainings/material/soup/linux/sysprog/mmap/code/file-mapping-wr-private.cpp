@@ -15,7 +15,7 @@ int main(int argc, char** argv)
     }
 
     const char* filename = argv[1];
-    int fd = open(filename, O_RDONLY);                 // <-- O_WRONLY
+    int fd = open(filename, O_RDONLY);                 // <-- read-only!
     if (fd == -1) {
         perror("open");
         return 1;
@@ -31,7 +31,7 @@ int main(int argc, char** argv)
     void* content = mmap(
         NULL,
         stat.st_size,
-        PROT_WRITE,                                    // <-- map for writing writeable
+        PROT_WRITE,                                    // <-- content is writeable
         MAP_PRIVATE,                                   // <-- and *private* -> COW
         fd,
         0

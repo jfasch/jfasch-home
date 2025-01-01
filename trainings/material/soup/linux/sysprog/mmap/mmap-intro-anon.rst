@@ -23,10 +23,14 @@ Building the situation from :doc:`lazy-alloc` ...
 
 * Mapping (contents of it) not backed from anywhere (a file, say)
   |longrightarrow| *anonymous* mapping (``MAP_ANONYMOUS``)
-* Mapping is not visible in another address space/process
-  |longrightarrow| *private* mapping (``MAP_PRIVATE``)
 * We want the allocated memory to be readable and writable
   |longrightarrow| ``PROT_READ|PROT_WRITE``
+* Mapping is not shared with another address space/process
+  |longrightarrow| *private* mapping (``MAP_PRIVATE``)
+
+  If already backed by physical memory, that memory is shared. A copy
+  is made if one party *writes* to it |longrightarrow| Copy-On-Write
+  (COW)
 
 .. literalinclude:: code/mmap-anon.cpp
    :caption: :download:`mmap-anon.cpp <code/mmap-anon.cpp>`
@@ -127,8 +131,9 @@ Unpopulated Mapping: ``/proc/PID/maps``, ``/proc/PID/smaps``
 Lazy Allocation, And ``Rss``
 ----------------------------
 
-* Move program past memory access (hit return)
-* |longrightarrow| Et voila: one page allocated
+* Hit return to write one byte
+* |longrightarrow| Et voila: one page allocated (the one containing
+  the byte)
 
 .. code-block:: console
 

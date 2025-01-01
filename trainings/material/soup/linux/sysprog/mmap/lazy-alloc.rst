@@ -99,8 +99,8 @@ Further Notes: Realtime
 * Allocations must be done up-front
 * *Not all allocations are explicit*
 
-  * Program itself is loaded on-demand |longrightarrow| bad luck if a
-    new code branch is taken at the wrong time
-  * Stack memory is dynamically allocated
-  * Global are lazy-loaded too
+  * Program itself is loaded *on-demand* |longrightarrow| bad luck if
+    a new code branch is taken at the wrong time
+  * Stack memory is dynamically allocated, *on-demand*
+  * Global variables are lazy-loaded too
   * ...
