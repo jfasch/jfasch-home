@@ -72,31 +72,3 @@ Writing: ``MAP_SHARED`` - Make Changes Visible
 .. literalinclude:: code/file-mapping-wr-shared.cpp
    :caption: :download:`code/file-mapping-wr-shared.cpp`
    :language: c++
-
-
-
-
-
-
-
-
-
-Read-Only, Basic
-----------------
-
-* file ro
-* map ro, private
-* error MAP_FAILED
-
-Wait, /proc/PID/maps
---------------------
-
-Error Cases
------------
-
-* map ro, write to it -> segv
-* file ro, map rw
-* file ro, map ro, write byte -> segfault
-* file rw, map ro, write byte -> segfault
-* read beyond eof
-* offset not multiple of page size

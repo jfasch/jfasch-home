@@ -12,10 +12,9 @@ Korpus Basis
 
 * Lose Stücke
 
-  * Dübel fräsen und setzen
-  * Schubladenführungen montieren rechts
-  * Scharnierinnenteile montieren links. **Vorsicht**: links
-    Vollabdeckung, rechts Halbabdeckung (wegen Schubladenblenden).
+  * Schubladenführungen montieren
+  * Schleifen
+  * Ölen
 
 * Mal alles zusammenstecken und schauen, wie's weitergeht
 
@@ -34,11 +33,6 @@ Korpus Basis
     * Blenden: **Achtung** Überlappung mit oberen Blenden am Steg
       oben, und Kastltüren links.
 
-  * Türblätter messen für Kastl links
-
-    **Achtung**: links Vollabdeckung, rechts Halbabdeckung (wegen
-    Schubladenblenden).
-
 * Holzkitt kaufen, und nach dem Abbauen gleich mal auflegen und
   zukitten.
 
@@ -53,8 +47,17 @@ Schubladen Bauen
 
   Nut/Falz Verbindungen fuer Korpus, Nut für Boden
 
-* Multiplex bei Hornbach kaufen (grosse Platten 250x122). 15mm für
-  große Laden hamma eh. 12mm, 9mm eher
+* Multiplex 
+
+  * bei Hornbach kaufen? (grosse Platten 250x122). 15mm für große
+    Laden hamma eh. 12mm, 9mm eher
+
+    https://www.hornbach.at/p/multiplexplatte-platte-unbehandelt-holz-2500-x-1220-x-9-mm/10578442/
+    waer cool, aber lieferzeit 3 wochen.
+
+  * das depperte sperrholz, zumindest fuer die kleinen vorher
+    probieren. rest einfach gescheit kaufen.
+
 * Teile schneiden
 * Nut/Falz fräsen Korpus kleine Laden
 * Nut/Falz fräsen Korpus grosse Laden
@@ -62,14 +65,6 @@ Schubladen Bauen
 * Nut fräsen Boden gross
 * Zusammensetzen (probieren: auflegen auf losem Kastenboden und oberem
   Abschlussboden, und schauen obs passt)
-
-Blenden und Türen
------------------
-
-* Türen lt. oben
-* Blenden klein lt. oben
-* Blenden gross lt oben
-* Abschluss ober den oberen Laden
 
 Alles Ölen
 ----------
@@ -79,8 +74,6 @@ Innen nicht, da is wurscht.
 Montage
 -------
 
-* Leisten rundherum kaufen
-* Steckdosen Aufputz
 * Werkzeug
 
   * kl. Klemmtisch
@@ -97,6 +90,16 @@ Montage
   * Holzkitt
   * Wagoklemmen
   * Kabel
+  * Eckstecker
+  * Kabelhaken
+  * Fraeser
+  * Spachtel
+  * OBI
+
+    * Steckdosen Aufputz
+    * Steckdosen
+    * Holzkitt
+    * Schrauben 3.5x16, 3x16, 5x16
 
 * Alles raufschleppen
 * Draufhauen bis steht

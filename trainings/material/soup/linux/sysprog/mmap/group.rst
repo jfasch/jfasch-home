@@ -10,8 +10,8 @@
    virtual-memory
    lazy-alloc
    mmap-intro-anon
-
    file-mappings
+   file-mappings-client-server
    realtime
 
 Todo

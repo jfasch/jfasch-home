@@ -69,6 +69,8 @@ Scatter/Gather I/O, without Offset Manipulation
    ssize_t pwritev(int fd, const struct iovec *iov, int iovcnt,
                    off_t offset);
 
+.. _sysprog-ftruncate:
+
 Truncating Files
 ----------------
 
