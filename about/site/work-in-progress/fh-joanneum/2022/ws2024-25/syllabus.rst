@@ -108,9 +108,9 @@ Hilfsmittel zugelassen.
 Wiederholungsmöglichkeiten
 ..........................
 
-Wie unter :ref`beurteilungsschema_1` beschrieben, müssen im Fall einer
-negativen Beurteilung sowohl der praktische (Laborklausur) als auch
-der theoretische (schriftliche Klausur) Teil wiederholt werden.
+Wie unter :ref:`beurteilungsschema_1` beschrieben, müssen im Fall
+einer negativen Beurteilung sowohl der praktische (Laborklausur) als
+auch der theoretische (schriftliche Klausur) Teil wiederholt werden.
 
 Die kommissionelle Wiederholung einer Prüfung ist immer eine
 Gesamtprüfung (vergleichbar einem 2. Antritt).
