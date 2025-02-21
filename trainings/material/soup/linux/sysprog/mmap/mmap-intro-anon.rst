@@ -30,7 +30,7 @@ Building the situation from :doc:`lazy-alloc` ...
 
   If already backed by physical memory, that memory is shared. A copy
   is made if one party *writes* to it |longrightarrow| Copy-On-Write
-  (COW)
+  (COW). See :doc:`fork`
 
 .. literalinclude:: code/mmap-anon.cpp
    :caption: :download:`mmap-anon.cpp <code/mmap-anon.cpp>`
