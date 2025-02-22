@@ -15,11 +15,6 @@
    realtime
    fork
 
-Todo
-----
-
-* shared anonymous mappings? |longrightarrow| ``fork()``
-
 Links
 -----
 

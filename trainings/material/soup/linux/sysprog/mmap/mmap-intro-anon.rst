@@ -25,12 +25,13 @@ Building the situation from :doc:`lazy-alloc` ...
   |longrightarrow| *anonymous* mapping (``MAP_ANONYMOUS``)
 * We want the allocated memory to be readable and writable
   |longrightarrow| ``PROT_READ|PROT_WRITE``
-* Mapping is not shared with another address space/process
-  |longrightarrow| *private* mapping (``MAP_PRIVATE``)
-
-  If already backed by physical memory, that memory is shared. A copy
-  is made if one party *writes* to it |longrightarrow| Copy-On-Write
-  (COW). See :doc:`fork`
+* Mapping is not *write-shared* with another address space/process
+  |longrightarrow| *private* mapping (``MAP_PRIVATE``).
+* Memory *is* shared though - as long as both parties only *read*
+  it. As soon as one party *writes* to it, a copy is made
+  |longrightarrow| Copy On Write (COW).
+* See :doc:`fork` for how to share anonymous memory with a child
+  process.
 
 .. literalinclude:: code/mmap-anon.cpp
    :caption: :download:`mmap-anon.cpp <code/mmap-anon.cpp>`
