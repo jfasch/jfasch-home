@@ -11,3 +11,4 @@ Embedded Computing (FH Joanneum Graz)
    2020/index
    2021/index
    2022/index
+   2023/index

@@ -1,9 +1,5 @@
-Embedded Computing 1 (STECE-2022): Syllabus
+Embedded Computing 1 (STECE-2023): Syllabus
 ===========================================
-
-.. sidebar::
-
-   Jörg Faschingbauer, 2024-02-29
 
 .. contents::
    :local:
@@ -71,7 +67,7 @@ Die Studierenden
 Angaben zur Prüfung
 -------------------
 
-.. _beurteilungsschema_25:
+.. _beurteilungsschema:
 
 Beurteilungsschema
 ..................
@@ -82,8 +78,9 @@ theoretischen Teil zusammen.
 * 60% aus mehreren kleineren Laborklausuren während des Semesters
 * 40% Klausur über den theoretischen Block
 
-Zusätzlich besteht die Möglichkeit, im Zuge von Hausaufgaben Punkte zu sammeln, die zu
-diesen hinzugerechnet werden, und quasi als Ausfallsicherung dienen.
+Zusätzlich besteht die Möglichkeit, im Zuge von **Mitarbeit** und
+**Hausaufgaben** Punkte zu sammeln, die zu den "regulären"
+hinzugerechnet werden, und quasi als Ausfallsicherung dienen.
 
 Bewertung der Leistungen
 ........................

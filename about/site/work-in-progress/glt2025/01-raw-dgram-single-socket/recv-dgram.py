@@ -8,3 +8,5 @@ sock.bind('/tmp/incoming')
 
 while True:
     print(sock.recv(1024))
+
+# socket.fileno()

@@ -52,6 +52,31 @@ Talk Concept
 
 * incoming AF_UNIX dgrams
 
+  * v1: single receiving socket
+
+    .. literalinclude:: 01-raw-dgram-single-socket/send-dgram.py
+       :caption: send,
+                 :download:`01-raw-dgram-single-socket/send-dgram.py`
+       :language: python
+
+    .. literalinclude:: 01-raw-dgram-single-socket/recv-dgram.py
+       :caption: receive,
+                 :download:`01-raw-dgram-single-socket/recv-dgram.py`
+       :language: python
+
+  * v2: multiple receiving sockets
+
+    .. literalinclude:: 02-raw-dgram-multiple-sockets-mt/send-dgram.py
+       :caption: send,
+                 :download:`02-raw-dgram-multiple-sockets-mt/send-dgram.py`
+       :language: python
+
+    .. literalinclude:: 02-raw-dgram-multiple-sockets-mt/recv-dgram.py
+       :caption: receive,
+		 :download:`02-raw-dgram-multiple-sockets-mt/recv-dgram.py`
+       :language: python
+
+
   imagine other data sources ...
 
   * CAN socket jjj link
