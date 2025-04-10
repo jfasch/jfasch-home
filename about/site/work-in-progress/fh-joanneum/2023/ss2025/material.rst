@@ -7,9 +7,9 @@ Embedded Computing 1 (STECE-2023): Material
 .. contents::
    :local:
 
-.. sidebar:: Github Project
+.. sidebar:: Git repo
 
-   * Github project: https://github.com/jfasch/FH-STECE2023
+   https://github.com/jfasch/FH-STECE2023
 
 .. sidebar:: Documentation
 
