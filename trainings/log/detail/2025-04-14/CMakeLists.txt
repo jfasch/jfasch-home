@@ -1,0 +1,4 @@
+ADD_SUBDIRECTORY(bin)
+
+ADD_SUBDIRECTORY(tests)
+

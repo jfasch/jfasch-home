@@ -126,7 +126,12 @@ Concepts To The Rescue
    bool is_even(T num) { /*...*/ }
 
 * Gives the following compiler error 
-* Have to read carefully though
+* Have to read carefully though, search for something like this (and
+  the next lines) for relatively readable messages
+
+  ::
+
+     ``toolcase-3-concept-integral.cpp:6:6: note: constraints not satisfied``
 
 .. code-block:: console
 

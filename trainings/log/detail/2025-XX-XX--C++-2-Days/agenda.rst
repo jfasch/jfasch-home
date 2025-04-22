@@ -83,5 +83,3 @@ unordered (yet), and adaptations to it are likely to be made.
 .. [#adapt_standard] Material to be adapted to the latest standards.
 .. [#make_material] Material to be created.
 
-
-.. alexander.neundorf@math2market.de
