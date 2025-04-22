@@ -20,7 +20,11 @@ endif()
 ADD_SUBDIRECTORY(googletest)
 ADD_SUBDIRECTORY(googlebenchmark)
 ADD_SUBDIRECTORY(trainings/material/soup)
+
+message("jjjjjjjjjjjjjjjjjjjjjjjjjjj in trainings/log/detail/* sind noch vielmehr cmake verloren gegangen")
 ADD_SUBDIRECTORY(trainings/log/detail/2020-03-30/code)
+ADD_SUBDIRECTORY(trainings/log/detail/2025-04-14/)
+
 ADD_SUBDIRECTORY(about/site/work-in-progress/fh-joanneum/2020/code)
 ADD_SUBDIRECTORY(about/site/work-in-progress/fh-joanneum/2021)
 
