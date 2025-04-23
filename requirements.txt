@@ -9,6 +9,7 @@ async-lru==2.0.4
 attrs==23.2.0
 Babel==2.14.0
 beautifulsoup4==4.12.2
+better-exceptions==0.3.3
 bleach==6.1.0
 certifi==2023.11.17
 cffi==1.16.0
@@ -20,11 +21,15 @@ debugpy==1.8.0
 decorator==5.1.1
 defusedxml==0.7.1
 docutils==0.20.1
+exceptiongroup==1.2.0
 executing==2.0.1
 fastjsonschema==2.19.1
 feedgen==1.0.0
 fonttools==4.47.2
 fqdn==1.5.1
+gaphas==4.0.0
+gaphor==2.24.0
+generic==1.1.2
 idna==3.6
 imagesize==1.4.1
 invoke==2.2.0
@@ -81,8 +86,12 @@ prompt-toolkit==3.0.43
 psutil==5.9.7
 ptyprocess==0.7.0
 pure-eval==0.2.2
+pycairo==1.26.0
 pycparser==2.21
+pydot==2.0.0
+pygit2==1.14.1
 Pygments==2.17.2
+PyGObject==3.46.0
 pyparsing==3.1.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
@@ -98,6 +107,8 @@ rfc3986-validator==0.1.1
 rpds-py==0.17.1
 scikit-learn==1.4.0
 scipy==1.12.0
+sdbus==0.14.0
+sdbus-notifications==1.0.3
 Send2Trash==1.8.2
 setuptools==69.0.3
 six==1.16.0
@@ -110,6 +121,7 @@ sphinxcontrib-devhelp==1.0.5
 sphinxcontrib-htmlhelp==2.0.4
 sphinxcontrib-images==0.9.4
 sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-libreoffice==0.2
 sphinxcontrib-programoutput==0.17
 sphinxcontrib-qthelp==1.0.6
 sphinxcontrib-serializinghtml==1.1.9

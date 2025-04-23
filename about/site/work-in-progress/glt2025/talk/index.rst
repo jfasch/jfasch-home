@@ -4,98 +4,15 @@
 systemd's D-Bus Implementation, And Its Python ``asyncio`` Binding
 ==================================================================
 
-.. .. Presentation
-.. .. ------------
-.. .. 
-.. .. jjjjjjj
-.. .. 
-.. .. * Short D-Bus show (spotify button vs. cmd aus history) jjj
-.. .. * Picture jjj (one) bus, jjj picture two buses -> ``system and (user
-.. ..   or session)``
-.. .. * 
-.. .. 
-.. ..   * show ``d-feet``
-.. ..   * show ``dbus-monitor``
-.. .. 
-.. ..   Can add to it, eg.
-.. .. 
-.. ..   * jjj notification synchronous, incl. few words about ``sync``
-.. ..     vs. ``async``
-.. ..   * jjj sidebar
-.. .. 
-.. ..     * enter asyncio jjj 
-.. .. 
-.. ..   * jjj glt2025 structural refact
-.. .. 
+.. toctree::
 
-* Short history, implementations, my usage reports (link to nody.py
-  decorator something jjj). enter sd-bus.
+   slides
 
-* sd-bus
-
-  * D-Bus implementation to interlink `systemd <https://systemd.io/>`__ components
-
-    * incl. ``dbus-broker`` jjjjj
-
-  * Python binding: `python-sdbus
-    <https://python-sdbus.readthedocs.io/en/latest/>`__
-
-    * Show links in sidebar  In realty, all is more complex
-
-      * `dbus-broker <https://github.com/bus1/dbus-broker/wiki>`__
-      * `python-sdbus
-        <https://python-sdbus.readthedocs.io/en/latest/>`__
-      * https://github.com/bus1/dbus-broker/wiki/Integration
-      * https://lwn.net/Articles/967192/ ("``xz`` backdoor")
-
-* python asyncio, blah single threaded blah jjj
-
-  * jjj show async notification from above -> blah complicated
-  * jjj show second task, printing out "hello" over and over
-  * jjj show one that receives dbus signals (jjjj project jjj switch
-    change notification -> ``async for``) and dbus notify on each (and
-    prints "hello")
-
-  * jjj sidebar
-
-    * aiomqtt
-    * aiohttp
-    * python-sdbus/
-
-* Switch to jf-irrigation
-
-* what else?
-
-  * write own proxy jjj -> spotify proxy
-
-
+Old Stuff
+---------
 
 D-Bus Show
 ..........
-
-* Use case: spotify
-
-  * Function keys play/pause (and next, prev)
-  * |longrightarrow| how?
-  * |longrightarrow| D-Bus
-
-* d-feet
-
-  * Search for "spotify"
-  * Pause
-
-* ``busctl`` (`man -s 7 busctl <https://man7.org/linux/man-pages/man1/busctl.1.html>`__)
-
-  .. code-block:: console
-
-     $ busctl --user tree
-     $ busctl --user call org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Pause
-
-  .. code-block:: console
-
-     $ busctl --system call org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager Suspend "b" 1
-
-  See `MPRIS D-Bus Interface Specification <https://specifications.freedesktop.org/mpris-spec/latest/>`__.
 
 * Monitoring/Debugging
 

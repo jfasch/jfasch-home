@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-GLT 2025
-========
+GLT 2025: systemd's D-Bus Implementation, And Its Python ``asyncio`` Binding
+============================================================================
 
 .. contents::
    :local:

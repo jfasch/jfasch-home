@@ -1,4 +1,4 @@
-systemd's D-Bus Implementation, And Its Python ``asyncio`` Binding (GLT 2025 Submission)
+ GLT 2025 Submission: systemd's D-Bus Implementation, And Its Python ``asyncio`` Binding
 ========================================================================================
 
 .. sidebar:: Grazer Linuxtage
