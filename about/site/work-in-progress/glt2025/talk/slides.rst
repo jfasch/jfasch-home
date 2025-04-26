@@ -7,136 +7,252 @@ Slides: systemd's D-Bus Implementation, And Its Python ``asyncio`` Binding
 .. contents::
    :local:
 
+TL;DR
+-----
+
+* Lennart Poettering's blog post about D-Bus and Lennart's baby,
+  sdbus: https://0pointer.net/blog/the-new-sd-bus-api-of-systemd.html
+* sdbus's Python binding: https://python-sdbus.readthedocs.io
+* :doc:`python:library/asyncio`
+* ... and programming; e.g. https://github.com/jfasch/jf-irrigation/
+
 Show
 ----
 
 .. sidebar::
 
-   * jjjj https://dbus.freedesktop.org/doc/dbus-specification.html
-   * `MPRIS D-Bus Interface Specification <https://specifications.freedesktop.org/mpris-spec/latest/>`__.
+   * `MPRIS D-Bus Interface Specification <https://specifications.freedesktop.org/mpris-spec/>`__.
+   * `man -s 7 busctl <https://man7.org/linux/man-pages/man1/busctl.1.html>`__
 
 * How does Spotify react on ``Next/Prev`` buttons? |longrightarrow|
   D-Bus
-* d-feet: Search for "spotify"; play/pause
-* ``busctl`` (`man -s 7 busctl <https://man7.org/linux/man-pages/man1/busctl.1.html>`__)
+* ``d-feet``: on *session*/*user* bus, search "spotify", and examine
+  object |longrightarrow| call
+* Same with ``busctl`` |longrightarrow| *wonderful commandline
+  completion!*
 
   .. code-block:: console
 
-     $ busctl --user tree
+     $ busctl --user list | grep spotify
+     $ busctl --user tree org.mpris.MediaPlayer2.spotify
      $ busctl --user call org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player Pause
-
-  .. code-block:: console
-
-     $ busctl --system call org.freedesktop.login1 /org/freedesktop/login1 org.freedesktop.login1.Manager Suspend "b" 1
 
 A Big Picture
 -------------
 
-* Picture jjj (one) bus, jjj picture two buses -> ``system and (user
-  or session)``
+.. sidebar::
 
-Implementations
----------------
+   * `D-Bus Overview
+     <https://www.freedesktop.org/wiki/Software/dbus/>`__
+   * `D-Bus Specification
+     <https://dbus.freedesktop.org/doc/dbus-specification.html>`__
 
-* Original/reference implementation (``libdbus``)
-* Used in GNOME to interconnect apps (jjj link gi.gdbus)
-* Used in systemd to interconnect components (jjj link sd-bus)
+.. image:: spotify.jpg
+   :scale: 50%
 
+.. image:: bus.jpg
+   :scale: 50%
 
+Sample Client (``sdbus``, Blocking)
+-----------------------------------
 
-Can Add To It
--------------
+.. sidebar:: Speaker notes
 
-jjj spotify binding
+   * :download:`snippets/spotify-client.py`
+   * :download:`snippets/mpris.py`
+   * :download:`snippets/snippet-spotify-quit`
 
-.. literalinclude:: notification-blocking.py
-   :caption: :download:`notification-blocking.py`
-   :language: python
+* Simple main program |longrightarrow| *blocking*
 
-Bindings
---------
+  .. literalinclude:: snippets/spotify-client.py
+     :language: python
+     :caption: :download:`spotify-client.py (download)
+	       <snippets/spotify-client.py>`
 
-Can add to it using language bindings. Here: jjj link sd-bus
+* Show ``strace`` output on it. Explain ``ppoll()`` usage (dispatching
+  only one event) on non-blocking file descriptor |longrightarrow|
+  *Blocking*
 
-* jjj notification synchronous, incl. a few words about ``sync``
-  vs. ``async``
+Defining Interfaces, Pythonically
+---------------------------------
 
-  https://python-sdbus-notifications.readthedocs.io/
+* Interface definition (``MPRISPlayer``)
 
-* jjj sidebar
+  .. literalinclude:: code/mpris.py
+     :language: python
+     :caption: :download:`mpris.py (download) <code/mpris.py>`
 
-  * enter asyncio jjj 
+* Quit Spotify (now via ``MPRISApp``)
 
-* Short history, implementations, my usage reports (link to nody.py
-  decorator something jjj). enter sd-bus.
+  .. literalinclude:: snippets/snippet-spotify-quit
+     :language: python
+     :caption: ``snippet-spotify-quit``
 
-* sd-bus
+History/Implementations/Bindings |longrightarrow| ``sdbus``
+-----------------------------------------------------------
 
-  * D-Bus implementation to interlink `systemd <https://systemd.io/>`__ components
+.. sidebar:: In reality, all is more complex
 
-    * incl. ``dbus-broker`` jjjjj
+   * https://lwn.net/Articles/967192/ ("``xz`` backdoor")
+   * `dbus-broker <https://github.com/bus1/dbus-broker/wiki>`__
+   * https://github.com/bus1/dbus-broker/wiki/Integration
 
-  * Python binding: `python-sdbus
-    <https://python-sdbus.readthedocs.io/en/latest/>`__
+* Original/reference implementation (``libdbus``): https://www.freedesktop.org/wiki/Software/dbus/
+* GNOME/GLib/GIO implementation:
+  https://gnome.pages.gitlab.gnome.org/libsoup/gio/gdbus-convenience.html
+* `systemd <https://systemd.io>`__ implementation (``sdbus``):
+  https://0pointer.net/blog/the-new-sd-bus-api-of-systemd.html
+* ... some more ...
 
-    * Show links in sidebar  In realty, all is more complex
+Language bindings available for all languages and all implementations
+|longrightarrow| confusion
 
-      * `dbus-broker <https://github.com/bus1/dbus-broker/wiki>`__
-      * `python-sdbus
-        <https://python-sdbus.readthedocs.io/en/latest/>`__
-      * https://github.com/bus1/dbus-broker/wiki/Integration
-      * https://lwn.net/Articles/967192/ ("``xz`` backdoor")
+For Python,
 
-* python asyncio, blah single threaded blah jjj
- 
-  * jjj show async notification from above -> blah complicated
-  * jjj show second task, printing out "hello" over and over
-  * jjj show one that receives dbus signals (jjjj project jjj switch
-    change notification -> ``async for``) and dbus notify on each (and
-    prints "hello")
-
-  * jjj sidebar
-
-    * aiomqtt
-    * aiohttp
-    * python-sdbus/
+* ``dbus-python``: deprecated; uses ``libdbus``
+  (https://dbus.freedesktop.org/doc/dbus-python/)
+* ``pydbus``: uses GLib/GIO (https://pydbus.readthedocs.io)
+* ``python-sdbus``: uses ``sdbus``; both blocking and async
+  (https://python-sdbus.readthedocs.io)
 
 Concrete Use Case: ``jf-irrigation``
 ------------------------------------
 
-* Purely local irrigation system
+.. sidebar::
+
+   * https://github.com/jfasch/jf-irrigation
+
+.. image:: irrigation.jpg
+   :scale: 50%
+
+* Local objects
+
+  * Entire irrigation system, containing irrigators
+  * Irrigators: sensor/switch pairs, giving water when moisture low
+  * Show `bin/irrigation-local.py
+    <https://github.com/jfasch/jf-irrigation/blob/main/bin/irrigation-local.py>`__
+  * Show `config
+    <https://github.com/jfasch/jf-irrigation/blob/main/configs/tomatoes-beans-file-stubs.conf>`__
+
+  .. code-block:: console
+
+     $ ./bin/irrigation-local.py --conf configs/tomatoes-beans-file-stubs.conf
+
 * |longrightarrow| *adaptation* into D-Bus
 
+Irrigation Client: Enter ``asyncio``
+------------------------------------
 
+* Show `irrigation/dbus_interfaces.py
+  <https://github.com/jfasch/jf-irrigation/blob/main/src/irrigation/dbus_interfaces.py>`__
+  |longrightarrow| *async*
+* Need to duplicate definition to create *blocking* client
+  |longrightarrow| **No!** *async is better anyway*
 
+First Step: Create Proxy
+------------------------
 
-Keep In Mind
-------------
+.. literalinclude:: snippets/irrigation-client-01
+   :language: python
+   :caption: ``snippets/irrigation-client-01`` (:download:`download
+             <snippets/irrigation-client-01>`)
+
+Naive try: Use Async Definition To Block
+----------------------------------------
+
+.. literalinclude:: snippets/irrigation-client-10
+   :language: python
+   :caption: ``snippets/irrigation-client-10`` (:download:`download
+             <snippets/irrigation-client-10>`)
+
+Fix: Async Machinery
+--------------------
+
+* Blah event loop blah
+* |longrightarrow| ``strace`` output below
+
+.. literalinclude:: snippets/irrigation-client-20
+   :language: python
+   :caption: ``snippets/irrigation-client-20`` (:download:`download
+             <snippets/irrigation-client-20>`)
+
+Create Irrigator Proxies
+------------------------
+
+.. literalinclude:: snippets/irrigation-client-30
+   :language: python
+   :caption: ``snippets/irrigation-client-30`` (:download:`download
+             <snippets/irrigation-client-30>`)
+
+Print Statistics
+----------------
+
+.. literalinclude:: snippets/irrigation-client-40
+   :language: python
+   :caption: ``snippets/irrigation-client-40`` (:download:`download
+             <snippets/irrigation-client-40>`)
+
+D-Bus Signals
+-------------
+
+* D-Bus Signals: events emitted from D-Bus objects
+* |longrightarrow| opposite of method call or property read
+* |longrightarrow| Pythonically, this can only be ``async for``
+* Replace one client "task" (printing irrigator properties) with
+  another (waiting for signals)
+
+  .. literalinclude:: snippets/irrigation-client-50
+     :language: python
+     :caption: ``snippets/irrigation-client-50`` (:download:`download
+               <snippets/irrigation-client-50>`)
+
+And Parallelism?
+----------------
+
+.. sidebar::
+
+   * :doc:`python:library/asyncio-task`
+
+* ``async def status_loop()``, ``report_switches_changed()``
+
+  .. literalinclude:: snippets/irrigation-client-60
+     :language: python
+     :caption: ``snippets/irrigation-client-60`` (:download:`download
+               <snippets/irrigation-client-60>`)
+
+Introduce ``asyncio.TaskGroup``
+-------------------------------
+
+  .. literalinclude:: snippets/irrigation-client-70
+     :language: python
+     :caption: ``snippets/irrigation-client-70`` (:download:`download
+               <snippets/irrigation-client-70>`)
+
+Keep In Mind ...
+----------------
 
 * D-Bus calls (method calls, signals, and property access) are
   *expensive*
 
-  * |longrightarrow| jjj picture from earlier
-  * ``low``, ``high``, sensor value, and switch state should better be
-    exposed as D-Bus *struct* with those members
-  * jjj hack that
+  * tons of context switches until a call is back |longrightarrow|
+    picture from earlier
+  * ``low``, ``high``, sensor value, and switch state of
+    ``DBusIrrigator`` should better be exposed as D-Bus *struct* type
+    property with those members
+  * (maybe hack that)
 
-  See ``DBusIrrigator`` jjj link vs. ``Irrigator`` (which even exposes
-  Python objects) jjj link
+* *Local* irrigation system knows nothing about ``async``.
 
-* Local system knows nothing about ``async``. Events
-  - like "switch state changed" - are usually modeled as *callbacks*.
+  * It might implement a switch change as callback
+  * ... a small local-to-dbus trampoline sends the signal away
+  * Not trivial: non-async functions cannot call async
+    directly. Possibilities:
 
-  * No direct translation to D-Bus signals, at least not in async
-    sd-bus: cannot asynchronously emit something onto D-Bus when
-    caller is not async.
-  * Solution: stay away from callbacks (better for software sanity
-    anyway), but rather return data to be carried by signal. jjj show
-    implementation of ``SwitchStateChanged`` signal.
-
-
- D-Bus *signals* are
-  *events*, which are locally 
+    * Local callback enqueues towards a "signal emitter task" (which
+      is entirely async, obviously)
+    * Avoid callbacks in local system (show
+      ``DBusIrrigationSystem.SwitchStateChanged``, and
+      ``bin/irrigationd.py``)
 
 * All in all
 
@@ -144,8 +260,19 @@ Keep In Mind
     possible
   * But no closer
 
+* What else?
 
-* what else?
+  * Show ``dbus-monitor``
 
-  * write own proxy jjj -> spotify proxy
-  * show ``dbus-monitor``
+More ``asyncio``
+----------------
+
+* ``aiomqtt`` (`PyPI <https://pypi.org/project/aiomqtt/>`__, `source
+  <https://github.com/empicano/aiomqtt>`__)
+* ``aiohttp`` (`PyPI <https://pypi.org/project/aiohttp/>`__, `source
+  <https://github.com/aio-libs/aiohttp>`__)
+* ``asyncio-requests`` (`PyPi
+  <https://pypi.org/project/asyncio-requests/>`__, `source
+  <https://github.com/gofynd/asyncio-requests>`__)
+* ``textual`` (`PyPI <https://pypi.org/project/textual/>`__, `source
+  <https://github.com/Textualize/textual>`__)

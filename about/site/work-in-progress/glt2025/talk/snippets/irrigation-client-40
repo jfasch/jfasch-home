@@ -1,0 +1,11 @@
+while True:
+    for name, irrigator in irrigators.items():
+        name = await irrigator.Name
+        low = await irrigator.Low
+        high = await irrigator.High
+        moisture_value = await irrigator.MoistureValue 
+        switch_state = await irrigator.SwitchState
+
+        print(f'name {name}: low {low}, high {high}, moisture_value {moisture_value}, switch_state {switch_state}')
+
+    await asyncio.sleep(1)

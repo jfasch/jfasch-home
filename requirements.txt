@@ -32,6 +32,7 @@ gaphor==2.24.0
 generic==1.1.2
 idna==3.6
 imagesize==1.4.1
+iniconfig==2.1.0
 invoke==2.2.0
 ipykernel==6.28.0
 ipython==8.20.0
@@ -81,6 +82,7 @@ parso==0.8.3
 pexpect==4.9.0
 pillow==10.2.0
 platformdirs==4.1.0
+pluggy==1.5.0
 prometheus-client==0.19.0
 prompt-toolkit==3.0.43
 psutil==5.9.7
@@ -93,6 +95,7 @@ pygit2==1.14.1
 Pygments==2.17.2
 PyGObject==3.46.0
 pyparsing==3.1.1
+pytest==8.3.5
 python-dateutil==2.8.2
 python-json-logger==2.0.7
 pytz==2023.3.post1

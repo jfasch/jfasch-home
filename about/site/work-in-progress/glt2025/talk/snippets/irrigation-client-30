@@ -1,0 +1,11 @@
+irrigators = {}
+
+async def main():
+    names = await irrigation_system.GetIrrigatorNames()
+    for name in names:
+        irrigators[name] = DBusIrrigator.new_proxy(
+            bus = sdbus.sd_bus_open_user(),
+            service_name = 'me.faschingbauer.IrrigationService',
+            object_path = f'/me/faschingbauer/IrrigationSystem/{name}')
+
+    pprint(irrigators)                                 # <-- more info wanted

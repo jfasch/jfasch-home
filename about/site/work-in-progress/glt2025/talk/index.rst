@@ -1,15 +1,15 @@
 .. include:: <mmlalias.txt>
 
 
-systemd's D-Bus Implementation, And Its Python ``asyncio`` Binding
-==================================================================
+Talk Preparation: systemd's D-Bus Implementation, And Its Python ``asyncio`` Binding
+====================================================================================
 
 .. toctree::
 
    slides
 
-Old Stuff
----------
+Old Stuff, Random Notes
+-----------------------
 
 D-Bus Show
 ..........
@@ -46,7 +46,7 @@ D-Bus Spec, Implementations
   * Interfaces defined in XML, pretty weird. Show
     https://github.com/jfasch/openheating/blob/master/openheating/dbus/node.py
 
-* SD-Bus jjj
+* SD-Bus
 
   * https://www.freedesktop.org/software/systemd/man/latest/sd-bus.html
   * Python binding https://python-sdbus.readthedocs.io/en/latest/

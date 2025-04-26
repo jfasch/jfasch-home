@@ -1,0 +1,3 @@
+async with asyncio.TaskGroup() as tg:
+    tg.create_task(status_loop())
+    tg.create_task(report_switches_changed())

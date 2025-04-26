@@ -1,0 +1,2 @@
+async for event in irrigation_system.SwitchStateChanged:
+    print(event)

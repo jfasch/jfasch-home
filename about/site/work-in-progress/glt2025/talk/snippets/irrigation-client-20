@@ -1,0 +1,4 @@
+async def main():
+    print(await irrigation_system.GetIrrigatorNames())
+
+asyncio.run(main())
