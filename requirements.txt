@@ -113,7 +113,7 @@ scipy==1.12.0
 sdbus==0.14.0
 sdbus-notifications==1.0.3
 Send2Trash==1.8.2
-setuptools==69.0.3
+setuptools==70.0.0
 six==1.16.0
 sniffio==1.3.0
 snowballstemmer==2.2.0
