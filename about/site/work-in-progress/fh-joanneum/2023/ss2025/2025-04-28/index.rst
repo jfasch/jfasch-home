@@ -7,6 +7,11 @@
 .. contents::
    :local:
 
+Org
+---
+
+* UE(2x3) on 2025-05-15?
+
 OS Concepts
 -----------
 
@@ -33,16 +38,12 @@ From :doc:`/trainings/material/soup/linux/basics/shell/group`
 * :doc:`/trainings/material/soup/linux/basics/shell/links`
 * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
-*Exercises:* from :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group` ...
+Permissions
+-----------
 
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-copy-files`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-move-files`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/verify-hierarchy`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/copy-tree`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-tree`
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-rf`
+From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+
+* :doc:`/trainings/material/soup/linux/basics/permissions/basics`
 
 SSH Setup
 ---------
