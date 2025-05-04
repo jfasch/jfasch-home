@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-C++: News Until C++20 (2 Days)
-==============================
+C++: News Until C++20 (2 Days, Yet Unspecified)
+===============================================
 
 .. contents::
    :local:

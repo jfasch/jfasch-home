@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-C++: News Until C++20 (2 Days)
-==============================
+Agenda: C++: News Until C++20 (2025-05-14 - 2050-05-15)
+=======================================================
 
 Training Goal/Style
 -------------------
@@ -21,65 +21,36 @@ screenplay-like writeup, much like :doc:`this one
 Topics
 ------
 
-The following list of topics is the outcome of a "pre-sales" talk with
-the customer, for a two-days on-site C++ training. The list is largely
-unordered (yet), and adaptations to it are likely to be made.
+New Language Features
+.....................
 
-* Brace initialization (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group>`)
-* RValue References, and Move Semantics (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`). Primarily,
-  show the *usage* of moving.
+* Spaceship ``operator<=>``
+* Local variables in ``if`` and ``for`` statements
+* Lambda in C++20
+* ``constexpr`` in C++20
+* ``constinit`` and ``consteval``
+* Concepts: better template error messages
+* Attributes, especially ``[[likely]]`` und ``[[unlikely]]``
+* Modules
 
-  * What the compiler knows/does
-  * Relation with RVO
-  * Using ``std::move()``
-  * Rule of 5 (as opposed to "3" before rvalue references were
-    invented)
-  * ``= delete``, ``= default``
-  * Non-relation to *perfect forwarding* ( :doc:`here
-    </trainings/material/soup/cxx11/035-perfect-forwarding/topic>`)
+Multithreading
+..............
 
-* Container and algorithms overview (:doc:`here
-  </trainings/material/soup/cxx03/060-stl/group>`). Show hash-table
-  based data structures ``std::unordered_set<>`` and
-  ``std::unordered_map<>`` [#make_material]_.
-* Structured Binding (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/structured-binding>`). Discuss
-  usage of ``std::tuple<>``.
-* ``constexpr`` (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic>`)
-  [#adapt_standard]_
-* Multithreading (:doc:`here
-  </trainings/material/soup/cxx11/050-multithreading/group>`). `OpenMP
-  <https://www.openmp.org/>`__ is used by the custumer, so the problem
-  appears to be solved. It might not hurt, though, to know what a race
-  condition is, and how to protect against it.
-* Smart pointers: ``std::shared_ptr<>`` vs. ``std::unique_ptr<>``
-  (:doc:`here
-  </trainings/material/soup/cxx11/030-smart-pointers/group>`). Probably
-  show the *RValue References/Move Semantics* topic in the light of
-  understanding compiler error messages when using
-  ``std::unique_ptr<>`` incorrectly.
-* ``std::array<>`` [#make_material]_
-* ``std::span<>`` [#make_material]_
-* Ranges and views (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/ranges/group>`)
-* ``std::any`` (:doc:`here
-  </trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/any>`),
-  ``std::variant<>`` (:doc:`here
-  </trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant>`). Show
-  usage, and discuss.
-* The "spaceship" operator [#make_material]_
-* ``std::fmt`` (vs ``printf()``) [#make_material]_
-* ``std::filesystem`` (:doc:`here
-  </trainings/material/soup/cxx11/filesystem/topic>`). In addition to
-  basic functionality, show how to handle UTF-8 encoded paths
-  (``std::filesystem::u8path``) [#make_material]_
-* Deducing ``this`` (C++23) [#make_material]_
-* Execution policies of parallel algorithms [#make_material]_
+Attendees are experienced in multithreading. Nonetheless the topic is
+important enough for a solid recap.
 
-.. rubric:: Footnotes
-.. [#adapt_standard] Material to be adapted to the latest standards.
-.. [#make_material] Material to be created.
+* C++ memory model overview
+* Atomic smart pointers, and what's unsafe with smart pointers
+* Atomic references (``atomic_ref``)
+* Synchronization and communication primitives
+* And realtime? C++ does not define realtime concepts, so this is an
+  OS topic.
+* Coroutines, and what makes them different from threads
 
+News From The Standard Library
+..............................
+
+* ``std::format``: *Pythonicity never stops*
+* ``std::chrono``: calendar and timezone
+* ``std::ranges``: overview
+* ``std::span``: the problems it solves, and usage

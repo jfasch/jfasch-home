@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-C++: News Until C++20 (2 Days)
-==============================
+Agenda: C++: News Until C++20 (2 Days, Yet Unspecified)
+=======================================================
 
 Training Goal/Style
 -------------------
