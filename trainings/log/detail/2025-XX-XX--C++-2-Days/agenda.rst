@@ -48,7 +48,7 @@ unordered (yet), and adaptations to it are likely to be made.
   </trainings/material/soup/cxx11/020-new-language-features/structured-binding>`). Discuss
   usage of ``std::tuple<>``.
 * ``constexpr`` (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic>`)
+  </trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr>`)
   [#adapt_standard]_
 * Multithreading (:doc:`here
   </trainings/material/soup/cxx11/050-multithreading/group>`). `OpenMP

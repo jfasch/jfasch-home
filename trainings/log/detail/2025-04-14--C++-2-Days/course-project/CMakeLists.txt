@@ -1,4 +1,3 @@
-ADD_SUBDIRECTORY(bin)
-
-ADD_SUBDIRECTORY(tests)
+add_subdirectory(bin)
+add_subdirectory(tests)
 

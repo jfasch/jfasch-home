@@ -112,7 +112,7 @@ Miscellaneous
 * ``constexpr`` explored. How is it used to populate the ``rodata``
   section and save RAM?
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
   * Sample code: `rodata.cpp
     <https://github.com/jfasch/2023-03-20/blob/main/livehacking/rodata.cpp>`__
 

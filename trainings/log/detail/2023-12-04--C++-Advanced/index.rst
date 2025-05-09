@@ -169,7 +169,7 @@ And Embedded?
 .............
 
 * :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
 
 Still Untold
 ------------

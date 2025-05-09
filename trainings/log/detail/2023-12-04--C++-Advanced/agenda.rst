@@ -48,7 +48,7 @@ New OO keywords: override, final, default, delete
 ``constexpr``, ``constinit``, ``consteval``
 ...........................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
 * ``constinit``
 * ``consteval``
 

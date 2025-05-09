@@ -28,6 +28,9 @@ New Language Features
 * Local variables in ``if`` and ``for`` statements
 * Lambda in C++20
 * ``constexpr`` in C++20
+
+.. if constexpr, is_constant_evaluated
+
 * ``constinit`` and ``consteval``
 * Concepts: better template error messages
 * Attributes, especially ``[[likely]]`` und ``[[unlikely]]``

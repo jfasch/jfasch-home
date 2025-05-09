@@ -1,6 +1,6 @@
 ADD_SUBDIRECTORY(code)
 ADD_SUBDIRECTORY(030-brace-initialization)
-ADD_SUBDIRECTORY(055-constexpr)
+ADD_SUBDIRECTORY(constexpr-constinit-consteval)
 ADD_SUBDIRECTORY(060-move)
 ADD_SUBDIRECTORY(coroutines)
 ADD_SUBDIRECTORY(ranges)

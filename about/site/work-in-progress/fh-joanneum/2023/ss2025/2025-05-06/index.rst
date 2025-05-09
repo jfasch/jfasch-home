@@ -24,6 +24,23 @@ From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/
 Permissions
 -----------
 
+For this, we log in to our team computer. For example:
+
+.. code-block:: console
+
+   $ ssh -p 2020 joerg.faschingbauer@jfasch.bounceme.net
+
+On the team computer, we check our identity, and see that we are all
+members of the ``team`` group:
+
+.. code-block:: console
+
+   $ id
+   uid=1001(joerg.faschingbauer) gid=1002(joerg.faschingbauer) groups=1002(joerg.faschingbauer),1001(team)
+
+Knowing this, we can now tune permissions of files and directories to
+explicitly *share* with other ``team`` members.
+
 From :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
 
 * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`

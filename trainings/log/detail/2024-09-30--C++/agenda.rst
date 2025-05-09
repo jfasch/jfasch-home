@@ -217,7 +217,7 @@ Going Embedded
 Optional Topics
 ---------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/055-constexpr/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
 * :doc:`/trainings/material/soup/cxx03/060-stl/group`
 * Excerpts from :doc:`/trainings/material/soup/cmake/intro/group` and
   :doc:`/trainings/material/soup/cmake/advanced/group`

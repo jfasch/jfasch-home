@@ -14,7 +14,7 @@ Topics
    :maxdepth: 1
 
    050-delegating-ctor/topic
-   055-constexpr/topic
+   constexpr-constinit-consteval/group
    060-move/group
 
    range-based-for
