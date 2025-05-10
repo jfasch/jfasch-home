@@ -17,6 +17,7 @@ Topics
    lambda-is-functor
    lambda-is-functor-pitfall
    lambda-capture
+   lambda-templates
 
 Group Description
 -----------------

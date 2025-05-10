@@ -45,11 +45,20 @@ Topics
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/control-flow-locals`
 
+* Lambdas (and C++20 news)
+
+  From
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+
 New Language Features
 .....................
 
 * Spaceship ``operator<=>``
-* Lambda in C++20
 * Attributes, especially ``[[likely]]`` und ``[[unlikely]]``
 * Modules
 
