@@ -7,12 +7,21 @@ left with a deck of printed material, but rather with a link to their
 custom course page.
 
 Here is the entire list of such past courses. Use it to get an
-impression of how courses are held.
+impression of how my courses look like.
 
 .. toctree::
    :hidden:
 
    detail/index
+
+
+C++: What's New In C++20 (2025-05-14 - 2025-05-15)
+--------------------------------------------------
+
+Two days didactic livehacking in the middle of Germany (beautiful
+`Vulkaneifel <https://de.wikipedia.org/wiki/Vulkaneifel>`__)
+
+(:doc:`More ... <detail/2025-04-14--C++-2-Days/index>`)
 
 C++: A One-Day Overview (2024-11-19 - 2024-11-21)
 -------------------------------------------------

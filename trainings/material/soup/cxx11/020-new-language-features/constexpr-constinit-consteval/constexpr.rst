@@ -86,6 +86,8 @@ Enter ``constexpr``
   completely different*
 * |longrightarrow| ``constexpr``
 
+.. _cxx11-constexpr-force-necessary:
+
 ``constexpr`` Functions: Evaluated At Runtime *OR* Compiletime
 --------------------------------------------------------------
 
@@ -128,7 +130,10 @@ So What Are The Rules? ``constexpr`` Functions Are *Dual*
 **Rules**
 
 * If the user wants compiletime evaluation, then they have to say so
-* Only *immutable* parameters!
+
+  * Only *immutable* parameters!
+
+* Runtime evaluation has no constraints - function is just called
 
 .. literalinclude:: code/constexpr-add-constexpr-function-request-constexpr.cpp
    :caption: :download:`code/constexpr-add-constexpr-function-request-constexpr.cpp`
@@ -139,6 +144,25 @@ So What Are The Rules? ``constexpr`` Functions Are *Dual*
 
 .. literalinclude:: code/constexpr-add-constexpr-function-runtime-call.cpp
    :caption: :download:`code/constexpr-add-constexpr-function-runtime-call.cpp`
+   :language: c++
+
+.. _cxx11-constexpr-uncool:
+
+Uncool: Forcing Compiletime Evaluation Leads To ``constexpr`` Result
+--------------------------------------------------------------------
+
+.. sidebar:: See also
+
+   * :ref:`cxx11-constexpr-force-necessary`
+
+* One has to force ``constexpr`` context, even when calling with
+  immutable parameters (see :ref:`here
+  <cxx11-constexpr-force-necessary>`)
+* Assigned-to variable has to be ``constexpr``
+* |longrightarrow| this sucks somehow!
+
+.. literalinclude:: code/constexpr-immutable-variable-uncool.cpp
+   :caption: :download:`code/constexpr-immutable-variable-uncool.cpp`
    :language: c++
 
 ``constexpr`` Callchains
@@ -161,8 +185,8 @@ Recursion
 ``constexpr`` Classes
 ---------------------
 
-.. literalinclude:: code/constexpr_ctor.cpp
-   :caption: :download:`code/constexpr_ctor.cpp`
+.. literalinclude:: code/constexpr-class.cpp
+   :caption: :download:`code/constexpr-class.cpp`
    :language: c++
 
 ``constexpr`` Algorithms, ``constexpr std::vector``

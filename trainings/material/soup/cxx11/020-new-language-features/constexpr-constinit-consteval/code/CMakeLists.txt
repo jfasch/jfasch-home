@@ -10,11 +10,22 @@ add_executable(c++11-constexpr-add-simple-function-static constexpr-add-simple-f
 add_executable(c++11-constexpr-add-constexpr-function constexpr-add-constexpr-function.cpp)
 add_executable(c++11-constexpr-add-constexpr-function-request-constexpr constexpr-add-constexpr-function-request-constexpr.cpp)
 add_executable(c++11-constexpr-add-constexpr-function-runtime-call constexpr-add-constexpr-function-runtime-call.cpp)
+# add_executable(c++11-constexpr-immutable-variable-uncool constexpr-immutable-variable-uncool.cpp)
 add_executable(c++11-constexpr-callchain constexpr-callchain.cpp)
 add_executable(c++11-constexpr-recursion constexpr-recursion.cpp)
 add_executable(c++11-constexpr-class constexpr-class.cpp)
 
 # --- consteval
-add_executable(c++11-consteval-function-ok consteval-function-ok.cpp)
-#add_executable(c++11-consteval-function-error consteval-function-error.cpp)
-add_executable(c++11-consteval-function-uses-constexpr-function consteval-function-uses-constexpr-function.cpp)
+add_executable(c++11-consteval-add-function consteval-add-function.cpp)
+# add_executable(c++11-consteval-add-function-error consteval-add-function-error.cpp)
+add_executable(c++11-consteval-constexpr-callchain consteval-constexpr-callchain.cpp)
+
+# --- constinit
+add_executable(c++11-constinit-usecase constinit-usecase.cpp)
+
+
+
+
+
+
+
