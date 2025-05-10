@@ -33,6 +33,8 @@ Topics
    delete
    default
 
+   control-flow-locals
+
    coroutines/group
    ranges/group
    concepts/group

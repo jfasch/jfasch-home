@@ -21,18 +21,35 @@ screenplay-like writeup, much like :doc:`this one
 Topics
 ------
 
+* ``constexpr``, and the C++20 ``consteval`` and ``constinit``
+
+  From
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/group`
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/const`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/consteval`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constinit`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/if`
+
+* Concepts (a.k.a. "Template error messages are a PITA")
+
+  From
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/links`
+
+* Local variables in ``if`` and ``for`` statements
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/control-flow-locals`
+
 New Language Features
 .....................
 
 * Spaceship ``operator<=>``
-* Local variables in ``if`` and ``for`` statements
 * Lambda in C++20
-* ``constexpr`` in C++20
-
-.. if constexpr, is_constant_evaluated
-
-* ``constinit`` and ``consteval``
-* Concepts: better template error messages
 * Attributes, especially ``[[likely]]`` und ``[[unlikely]]``
 * Modules
 
