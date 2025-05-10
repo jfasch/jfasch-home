@@ -21,9 +21,12 @@ add_executable(c++11-consteval-add-function consteval-add-function.cpp)
 add_executable(c++11-consteval-constexpr-callchain consteval-constexpr-callchain.cpp)
 
 # --- constinit
-add_executable(c++11-constinit-usecase constinit-usecase.cpp)
+add_executable(c++11-constinit-problem constinit-problem.cpp)
+add_executable(c++11-constinit-solution constinit-solution.cpp)
 
-
+# --- const{expr,eval} if
+add_executable(c++11-constexpr-if-problem constexpr-if-problem.cpp)
+add_executable(c++11-constexpr-if-solution constexpr-if-solution.cpp)
 
 
 

@@ -3,8 +3,8 @@
 #include <chrono>
 #include <iostream>
 
-unsigned sequence;
-std::mutex sequence_lock;                              // <-- initialized at runtim
+constinit unsigned sequence;                           // <-- compiletime anyway, even without constinit
+constinit std::mutex sequence_lock;                    // <-- compiletime
 
 int main()
 {

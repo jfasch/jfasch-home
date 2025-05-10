@@ -23,6 +23,7 @@ From `cppreference
    constexpr
    consteval
    constinit
+   if
 
 Links
 -----
