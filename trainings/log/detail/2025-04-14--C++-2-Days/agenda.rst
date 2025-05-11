@@ -59,10 +59,13 @@ Topics
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/attributes/topic`
 
+* Spaceship operator
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/spaceship/topic`
+
 New Language Features
 .....................
 
-* Spaceship ``operator<=>``
 * Modules
 
 .. .. * std::same_as<>, no_narrowing_conversion<>

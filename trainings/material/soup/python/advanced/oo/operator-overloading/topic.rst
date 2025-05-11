@@ -102,6 +102,8 @@ Simplest: Equality Comparison (``==``)
 
    l != r    # <--- not (l==r)
 
+.. _python_oo_operator_overloading_eq_magic:
+
 Comparing Against Incompatible Types? (Lotsa Magic!)
 ----------------------------------------------------
 
