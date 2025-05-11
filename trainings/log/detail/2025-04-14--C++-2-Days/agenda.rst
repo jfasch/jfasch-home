@@ -55,12 +55,33 @@ Topics
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
 
+* Attributes
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/attributes/topic`
+
 New Language Features
 .....................
 
 * Spaceship ``operator<=>``
-* Attributes, especially ``[[likely]]`` und ``[[unlikely]]``
 * Modules
+
+.. .. * std::same_as<>, no_narrowing_conversion<>
+.. .. 
+.. ..   * `Keynote: The Real Problem of C++ - Klaus Iglberger
+.. ..     <https://youtu.be/vN0U4P4qmRY?si=nD4fRmurcBjX2UiD>`__
+.. .. 
+.. ..     .. raw:: html
+.. .. 
+.. ..        <iframe width="560" height="315" 
+.. ..                src="https://www.youtube.com/embed/vN0U4P4qmRY?si=Emhn2EtAQO9w_3I0" 
+.. .. 	       title="YouTube video player" 
+.. .. 	       frameborder="0" 
+.. .. 	       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+.. .. 	       referrerpolicy="strict-origin-when-cross-origin" 
+.. .. 	       allowfullscreen>
+.. ..        </iframe>
+.. .. 
+.. ..     Somewhere in the middle
 
 Multithreading
 ..............

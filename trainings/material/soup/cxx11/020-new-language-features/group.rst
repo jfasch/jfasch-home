@@ -34,6 +34,7 @@ Topics
    default
 
    control-flow-locals
+   attributes/topic
 
    coroutines/group
    ranges/group
