@@ -44,6 +44,8 @@ C++ Intro
 * C implementation: https://github.com/jfasch/FH-STECE2023/tree/main/livehacking/point-c
 * C++ implementation: https://github.com/jfasch/FH-STECE2023/tree/main/livehacking/point-c++
 
+.. _fh_2023_door_exercise:
+
 Door State Machine
 ------------------
 
