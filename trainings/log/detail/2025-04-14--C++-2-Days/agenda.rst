@@ -63,6 +63,10 @@ Topics
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/spaceship/topic`
 
+* C++ memory model overview
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/memory-model/topic`
+
 New Language Features
 .....................
 
@@ -92,7 +96,6 @@ Multithreading
 Attendees are experienced in multithreading. Nonetheless the topic is
 important enough for a solid recap.
 
-* C++ memory model overview
 * Atomic smart pointers, and what's unsafe with smart pointers
 * Atomic references (``atomic_ref``)
 * Synchronization and communication primitives

@@ -28,8 +28,10 @@ Motivation: Let Compiler Do More Of This
 ----------------------------------------
 
 * Extract ``40+2`` into a function
-* |longrightarrow| this turns into a *function call*
+* |longrightarrow| this turns into a *function call*, rather than a
+  precalculated constant
 * **Would be cool if not**
+* |longrightarrow| binary size reduction, startup time
 
 .. literalinclude:: code/constexpr-add-simple-function.cpp
    :caption: :download:`code/constexpr-add-simple-function.cpp`

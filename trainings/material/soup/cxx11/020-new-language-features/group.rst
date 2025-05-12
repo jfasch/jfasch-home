@@ -36,6 +36,7 @@ Topics
    control-flow-locals
    attributes/topic
    spaceship/topic
+   memory-model/topic
 
    coroutines/group
    ranges/group
