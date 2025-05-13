@@ -45,4 +45,3 @@ Range ``for`` Locals: Only Logical |longrightarrow| New In C++20
 .. literalinclude:: code/locals-ctlflow-rangefor.cpp
    :caption: :download:`code/locals-ctlflow-rangefor.cpp`
    :language: c++
-

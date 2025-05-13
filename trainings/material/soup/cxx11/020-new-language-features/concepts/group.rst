@@ -15,8 +15,8 @@ Topics
 .. toctree::
    :maxdepth: 1
 
-   intro
-   writing-concepts
+   intro/topic
+   writing-concepts/topic
    links
 
 Dependencies

@@ -230,7 +230,7 @@ Release And Acquire Ordering: A Naive Spinlock
 
   * |longrightarrow| less context switches
   * Good for short critical sections
-  * Not good if both contenters are scheduled on the same CPU
+  * Not good if both contenders are scheduled on the same CPU
 
 * ``std::atomic_flag`` is guaranteed to be lock-free
 * ``std::atomic<>`` specializations are not
@@ -250,8 +250,8 @@ Sequential Consistency: Resolving Load-Modify-Store-Conflict
    :caption: :download:`code/load-modify-store-seq-cst.cpp`
    :language: c++
 
-And Others Memory Orders?
--------------------------
+And Other Memory Orders?
+------------------------
 
 * Read-Copy-Update (`What is RCU, Fundamentally?
   <https://lwn.net/Articles/262464/>`__)

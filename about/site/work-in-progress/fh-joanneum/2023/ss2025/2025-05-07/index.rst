@@ -49,8 +49,4 @@ C++ Intro
 Door State Machine
 ------------------
 
-* State machine discussion. Draw something.
-* Ownership? Pointers!
-* Polling paradigm: simple and stupid. CPU always at the highest
-  possible load; no power saving possible. Battery? No!
-* googletest ASSERT_EQ
+.. image:: door.jpg

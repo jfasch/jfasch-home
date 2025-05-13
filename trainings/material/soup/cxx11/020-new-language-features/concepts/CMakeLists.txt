@@ -1,3 +1,2 @@
-ADD_SUBDIRECTORY(code)
-ADD_SUBDIRECTORY(intro)
-ADD_SUBDIRECTORY(writing-concepts)
+add_subdirectory(intro)
+add_subdirectory(writing-concepts)
