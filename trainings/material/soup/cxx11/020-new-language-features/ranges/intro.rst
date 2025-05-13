@@ -13,8 +13,7 @@ Ranges: Overview
 
    **Documentation**
 
-   * `Ranges
-     <https://en.cppreference.com/w/cpp/ranges>`__
+   * `Ranges <https://en.cppreference.com/w/cpp/ranges>`__
 
 Ranges?
 -------
@@ -35,8 +34,8 @@ Containers And Views (Storage Behavior)
   * Refer to another range to draw elements from
   * Transformation done *lazily* during iteration/dereferencing
 
-Examples
---------
+Example: ``std::views::drop``
+-----------------------------
 
 * Dropping first two elements of a sequence, and printing the rest
 * |longrightarrow| *no copy*
@@ -46,12 +45,28 @@ Examples
    :caption: :download:`Download drop-procedural.cpp
              <intro/drop-procedural.cpp>`
 
+.. code-block:: console
+
+   $ ./c++11-ranges-drop-procedural 
+   4
+   3
+   5
+
+Example: ``std::views::take``
+-----------------------------
+
 * Dropping first two, taking next two
 
 .. literalinclude:: intro/drop-take-procedural.cpp
    :language: c++
    :caption: :download:`Download drop-take-procedural.cpp
              <intro/drop-take-procedural.cpp>`
+
+.. code-block:: console
+
+   $ ./c++11-ranges-drop-take-procedural 
+   4
+   3
 
 Pipe Syntax
 -----------
@@ -63,7 +78,13 @@ Pipe Syntax
 .. literalinclude:: intro/drop-take-pipe.cpp
    :language: c++
    :caption: :download:`Download drop-take-pipe.cpp
-             <intro/drop-take-pipe.cpp>`
+	     <intro/drop-take-pipe.cpp>`
+
+.. code-block:: console
+
+   $ ./c++11-ranges-drop-take-pipe 
+   4
+   3
 
 Views As Parameters: Good Old Template
 --------------------------------------

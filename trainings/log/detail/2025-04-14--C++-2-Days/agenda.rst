@@ -1,8 +1,11 @@
 .. include:: <mmlalias.txt>
 
 
-Agenda: C++: News Until C++20 (2025-05-14 - 2050-05-15)
+Agenda: C++: News Until C++20 (2025-05-14 - 2025-05-15)
 =======================================================
+
+.. contents::
+   :local:
 
 Training Goal/Style
 -------------------
@@ -18,59 +21,81 @@ presentation style where applicable. The audience will be left with a
 screenplay-like writeup, much like :doc:`this one
 </trainings/material/soup/cxx11/010-introduction/overview-livehacking>`.
 
-Topics
-------
+``constexpr``, and the C++20 ``consteval`` and ``constinit``
+------------------------------------------------------------
 
-* ``constexpr``, and the C++20 ``consteval`` and ``constinit``
+From
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/group`
 
-  From
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/const`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/consteval`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constinit`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/if`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/const`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/consteval`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constinit`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/if`
+Concepts (a.k.a. "Template error messages are a PITA")
+------------------------------------------------------
 
-* Concepts (a.k.a. "Template error messages are a PITA")
+From
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
 
-  From
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts/topic`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/links`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/links`
+Local variables in ``if`` and ``for`` statements
+------------------------------------------------
 
-* Local variables in ``if`` and ``for`` statements
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/control-flow-locals`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/control-flow-locals`
+Lambdas
+-------
 
-* Lambdas (and C++20 news)
+From
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
 
-  From
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+Attributes
+----------
 
-* Attributes
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/attributes/topic`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/attributes/topic`
+Spaceship Operator
+------------------
 
-* Spaceship operator
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/spaceship/topic`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/spaceship/topic`
+Multithreading (And Related Topics)
+-----------------------------------
 
-* C++ memory model overview
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/memory-model/topic`
+* From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/memory-model/topic`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/030-race-conditions/topic`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
+  * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
 
-New Language Features
-.....................
+* Atomic smart pointers, and what's unsafe with smart pointers
+* Atomic references (``atomic_ref``)
+* And realtime? C++ does not define realtime concepts, so this is an
+  OS topic.
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/group`
 
-* Modules
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/intro`
+
+Modules
+-------
+
+Leider nein
 
 .. .. * std::same_as<>, no_narrowing_conversion<>
 .. .. 
@@ -90,23 +115,15 @@ New Language Features
 .. .. 
 .. ..     Somewhere in the middle
 
-Multithreading
-..............
-
-Attendees are experienced in multithreading. Nonetheless the topic is
-important enough for a solid recap.
-
-* Atomic smart pointers, and what's unsafe with smart pointers
-* Atomic references (``atomic_ref``)
-* Synchronization and communication primitives
-* And realtime? C++ does not define realtime concepts, so this is an
-  OS topic.
-* Coroutines, and what makes them different from threads
-
 News From The Standard Library
-..............................
+------------------------------
+
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/group`
+
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/intro`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/good-bad`
+  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/links`
 
 * ``std::format``: *Pythonicity never stops*
 * ``std::chrono``: calendar and timezone
-* ``std::ranges``: overview
 * ``std::span``: the problems it solves, and usage
