@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.multithreading.mutex
-   :dependencies: python.advanced.multithreading.basics
-
 .. include:: <mmlalias.txt>
 
 
@@ -71,9 +68,3 @@ Solution: Mutex (``with`` Statement)
 
 .. literalinclude:: code/mutex-with.py
    :caption: :download:`code/mutex-with.py`
-
-Dependencies
-------------
-
-.. ot-graph:: 
-   :entries: python.advanced.multithreading.mutex

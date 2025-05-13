@@ -1,5 +1,3 @@
-.. ot-topic:: cxx.stl_container_intro
-
 C++: STL Containers (Intro)
 ===========================
 

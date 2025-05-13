@@ -1,6 +1,3 @@
-.. ot-task:: clean_code.bugs.overwrite_existing_files
-
-
 Existing Files Are Overwritten
 ==============================
 

@@ -1,13 +1,8 @@
-.. ot-topic:: python.misc.ai.machine_learning_intro
-
 Machine Learning: Concepts and Terminology
 ==========================================
 
 .. contents::
    :local:
-
-.. ot-graph::
-   :entries: python.misc.ai.machine_learning_intro
 
 This topic is an introductory one. We will only scratch the surface;
 there is much terminology to learn, and this is what this topic is

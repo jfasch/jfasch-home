@@ -1,8 +1,5 @@
 :orphan:
 
-.. ot-exercise:: linux.basics.permissions.fh_moodle_quiz
-   :dependencies: linux.basics.permissions.basics
-
 
 FH/Moodle Quiz: Permissions
 ===========================
@@ -64,9 +61,3 @@ Questions
      * * The owner may remove the directory and its contents
        * y
        * 
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.permissions.fh_moodle_quiz

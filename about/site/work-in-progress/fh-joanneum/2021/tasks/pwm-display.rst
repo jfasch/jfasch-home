@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.pwm_display
-
 
 Temperature Display: LED Via A PWM Controller
 =============================================
@@ -110,9 +108,3 @@ Future (*Not* Part Of This Development Cycle)
 ---------------------------------------------
 
 (None)
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.pwm_display

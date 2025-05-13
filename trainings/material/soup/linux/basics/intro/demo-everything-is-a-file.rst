@@ -1,7 +1,3 @@
-.. ot-topic:: linux.basics.intro.demo_everything_is_a_file
-   :dependencies: linux.basics.intro.overview,
-		  linux.sysprog.blocking_io.blocking_io_file
-
 .. include:: <mmlalias.txt>
 
 

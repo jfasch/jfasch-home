@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.io_redir_pipes.exercises
-   :dependencies: linux.basics.io_redir_pipes.io_redir,
-		  linux.basics.io_redir_pipes.io_redir_swap_stdout_stderr,
-		  linux.basics.io_redir_pipes.pipes
-
 .. include:: <mmlalias.txt>
 
 

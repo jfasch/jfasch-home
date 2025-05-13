@@ -16,11 +16,3 @@ Topics
    :glob:
 
    */topic
-
-Group Description
------------------
-	      
-.. ot-group:: cxx
-
-.. ot-graph::
-   :entries: cxx

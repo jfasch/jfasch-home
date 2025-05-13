@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx03.functions_and_methods.exercise_class_cuboid
-   :dependencies: cxx03.functions_and_methods.exercise_class_point3d
-
 .. include:: <mmlalias.txt>
 
 

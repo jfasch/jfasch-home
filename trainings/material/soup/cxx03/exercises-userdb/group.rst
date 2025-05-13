@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.exercises_userdb
-
-
 Exercises: User Database
 ========================
 
@@ -21,7 +18,4 @@ Exercises: User Database
    userdb-search/exercise
    userdb-search-find_if/exercise
    userdb-search-notfound-exception/exercise
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb
 

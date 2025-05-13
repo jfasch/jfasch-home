@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.profiling.introduction
-   :dependencies: c.performance.memory
-
 
 Introduction
 ============

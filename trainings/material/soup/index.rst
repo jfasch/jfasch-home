@@ -22,10 +22,3 @@ Sphinx extension to form a network of *topics* as I call it. This is
    cmake/group
    clean-code/group
    unittest/group
-
-(See :doc:`here <graph>` for interconnections between topics.)
-
-.. toctree::
-   :hidden:
-
-   graph

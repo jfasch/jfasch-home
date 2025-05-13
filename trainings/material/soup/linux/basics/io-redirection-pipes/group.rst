@@ -1,13 +1,11 @@
-.. ot-group:: linux.basics.io_redir_pipes
-
-
 I/O Redirection And Pipes
 =========================
 
 .. contents::
    :local:
 
-**Topics**
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -16,8 +14,3 @@ I/O Redirection And Pipes
    io-redirection-swap-stdout-stderr
    pipes
    exercises
-
-**Dependencies**
-
-.. ot-graph::
-   :entries: linux.basics.io_redir_pipes

@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: ece19.file_read
-   :dependencies: python.basics.python_0500_files
 
 Reading a File
 ==============
@@ -61,9 +59,3 @@ Further Information
   <https://docs.python.org/3/library/stdtypes.html#str.rstrip>`__)
 * Use ``str.split()`` on each line (documentation `here
   <https://docs.python.org/3/library/stdtypes.html#str.split>`__).
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: ece19.file_read

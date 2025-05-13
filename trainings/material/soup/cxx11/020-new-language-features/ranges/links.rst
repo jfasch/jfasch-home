@@ -1,7 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.ranges.links
-   :dependencies: cxx11.new_language_features.ranges.intro,
-		  cxx11.new_language_features.ranges.good_bad
-
 .. include:: <mmlalias.txt>
 
 

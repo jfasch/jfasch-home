@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.pointers_and_arrays.pointers_and_addresses
-   :dependencies: c.functions_and_program_structure.c_preprocessor_advanced
-
 
 Pointers and Addresses
 ======================

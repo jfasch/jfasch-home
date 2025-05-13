@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.observer
-   :dependencies: cxx_design_patterns.observer
-
 Exercise: Adapter
 =================
 

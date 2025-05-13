@@ -1,5 +1,3 @@
-.. ot-topic:: cxx03.stl.allocator.basics
-
 .. include:: <mmlalias.txt>
 
 

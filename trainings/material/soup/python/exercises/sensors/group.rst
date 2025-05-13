@@ -1,6 +1,3 @@
-.. ot-group:: python.exercises.sensors
-
-
 Sensors, And Data Acquisition (Exercise Series)
 ===============================================
 
@@ -15,10 +12,3 @@ Contents
 
    project-setup
    sensor-const
-
-Graph
------
-
-.. ot-graph::
-   :entries: python.exercises.sensors
-

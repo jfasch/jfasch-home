@@ -1,5 +1,3 @@
-.. ot-topic:: python.basics.installation
-
 Python Installation
 ===================
 

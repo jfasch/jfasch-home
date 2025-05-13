@@ -1,9 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: python.misc.pandas.filters
-   :dependencies: python.misc.pandas.indexes,
-		  python.misc.pandas.basics
-
 
 Pandas: Filters
 ===============

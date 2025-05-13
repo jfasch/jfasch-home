@@ -1,8 +1,3 @@
-.. ot-topic:: cxx11.multithreading.condition_variable
-   :dependencies: cxx11.multithreading.mutex,
-		  cxx11.multithreading.promise_future,
-		  linux.sysprog.posix_threads.condition_variable
-
 .. include:: <mmlalias.txt>
 
 

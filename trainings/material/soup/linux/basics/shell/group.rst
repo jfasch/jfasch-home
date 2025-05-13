@@ -1,13 +1,11 @@
-.. ot-group:: linux.basics.shell
-
-
 The Shell (Bash - "Bourne Again Shell")
 =======================================
 
 .. contents::
    :local:
 
-**Topics**
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -23,14 +21,10 @@ The Shell (Bash - "Bourne Again Shell")
    links
    configfiles
 
-**Exercises**
+Exercises
+---------
 
 .. toctree::
    :maxdepth: 1
 
    exercises/group
-
-**Dependencies**
-
-.. ot-graph::
-   :entries: linux.basics.shell

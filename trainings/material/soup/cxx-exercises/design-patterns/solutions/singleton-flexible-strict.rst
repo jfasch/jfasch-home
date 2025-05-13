@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.solutions.singleton_flexible_strict
-   :dependencies: cxx.exercises.design_patterns.singleton_flexible_strict
-
-
 Solution: Singleton (Flexible *And* Strict)
 ===========================================
 

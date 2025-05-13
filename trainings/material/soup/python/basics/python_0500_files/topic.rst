@@ -1,14 +1,11 @@
 .. include:: <mmlalias.txt>
 
+
 File I/O
 ========
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_0500_files
-   :dependencies: python.basics.python_0220_for, 
-		  python.misc.encoding
 
 Python 2 vs. Python 3
 ---------------------

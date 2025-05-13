@@ -129,7 +129,6 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/030-race-conditions/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`

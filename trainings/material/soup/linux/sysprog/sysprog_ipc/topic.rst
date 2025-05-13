@@ -1,5 +1,3 @@
-.. ot-topic:: linux.sysprog.ipc
-
 Sysprog: POSIX IPC
 ==================
 

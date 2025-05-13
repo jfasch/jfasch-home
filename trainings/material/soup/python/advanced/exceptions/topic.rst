@@ -1,8 +1,3 @@
-.. ot-topic:: python.advanced.exceptions
-   :dependencies: python.basics.python_0140_variables,
-		  python.basics.python_0270_functions,
-		  python.advanced.oo.inheritance
-
 .. include:: <mmlalias.txt>
 
 

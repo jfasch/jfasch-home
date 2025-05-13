@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.userdb_insert
-   :dependencies: cxx03.exercises_userdb.userdb_vector_basic,
-		  cxx03.stl.basics
-
 .. include:: <mmlalias.txt>
 
 
@@ -43,9 +39,3 @@ version of it):
 
 .. literalinclude:: test-userdb-insert.cpp
    :caption: :download:`test-userdb-insert.cpp`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.userdb_insert

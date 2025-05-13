@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.kernel.cdev_refactoring
-   :dependencies: linux.kernel.cdev_first_functionality
-
-
 Coding: Refactoring
 ===================
 
@@ -10,6 +6,3 @@ Coding: Refactoring
 
    slides
    screenplay
-
-.. ot-graph:: 
-   :entries: linux.kernel.cdev_refactoring

@@ -1,8 +1,3 @@
-.. ot-topic:: cxx03.stl.algorithm.lower_bound
-   :dependencies: cxx03.stl.algorithm.binary_search,
-		  cxx03.stl.basics, 
-		  cxx03.stl.algorithm.sort
-
 .. include:: <mmlalias.txt>
 
 

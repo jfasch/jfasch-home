@@ -1,15 +1,11 @@
 .. include:: <mmlalias.txt>
 
+
 DBAPI 2
 =======
 
 .. contents::
    :local:
-
-.. ot-topic:: python.db.dbapi2
-   :dependencies: python.advanced.modules,
-		  python.basics.python_0220_for,
-                  python.advanced.python_1010_generators_yield
 
 Database Interfaces
 -------------------

@@ -1,7 +1,3 @@
-.. ot-topic:: python.advanced.oo.inheritance
-   :dependencies: python.advanced.oo.classes_and_dicts,
-		  python.advanced.oo.constructor
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,9 +1,3 @@
-.. ot-topic:: linux.kernel.pci
-   :dependencies: linux.kernel.interrupt,
-		  linux.kernel.iomemory,
-		  linux.kernel.dma
-
-
 PCI
 ===
 
@@ -11,6 +5,3 @@ PCI
    :maxdepth: 1
 
    slides
-
-.. ot-graph:: 
-   :entries: linux.kernel.pci

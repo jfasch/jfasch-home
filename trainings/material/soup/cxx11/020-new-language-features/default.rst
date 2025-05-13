@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.new_language_features.default
-
 
 ``= default``
 =============

@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.stl.algorithm.binary_search
-   :dependencies: cxx03.stl.basics, cxx03.stl.algorithm.sort
-
 .. include:: <mmlalias.txt>
 
 

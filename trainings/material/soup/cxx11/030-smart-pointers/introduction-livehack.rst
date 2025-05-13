@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.smart_pointers.introduction_livehack
-   :dependencies: cxx11.smart_pointers.introduction
-
 (Trying To) Handwrite A Smart Pointer Class in C++ Before C++11
 ===============================================================
 

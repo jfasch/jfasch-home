@@ -1,9 +1,3 @@
-.. ot-exercise:: linux.sysprog.fileio.exercise_w1_sensor
-   :dependencies: linux.sysprog.fileio.basics,
-		  linux.sysprog.basics.errorhandling,
-		  linux.basics.permissions.basics
-
-
 Exercise: Read Temperature From Onewire Sensor
 ==============================================
 

@@ -1,6 +1,3 @@
-.. ot-task:: clean_code.bugs.overwrite_store_content_on_read
-
-
 ``UserDB::read()``: What If Done Twice?
 =======================================
 

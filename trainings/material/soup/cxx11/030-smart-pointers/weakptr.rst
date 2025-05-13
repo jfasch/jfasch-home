@@ -1,9 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.smart_pointers.weak_ptr
-   :dependencies: cxx11.smart_pointers.introduction,
-		  cxx11.smart_pointers.shared_ptr
-
 
 ``std::weak_ptr``
 =================

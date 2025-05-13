@@ -1,5 +1,3 @@
-.. ot-topic:: ecproposal.ec2.python.flask
-
 Simple Web Programming
 ======================
 

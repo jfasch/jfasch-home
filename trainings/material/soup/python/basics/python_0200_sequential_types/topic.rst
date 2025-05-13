@@ -6,9 +6,6 @@ Sequential Datatypes
 .. contents::
    :local:
 
-.. ot-topic:: python.basics.python_0200_sequential_types
-   :dependencies: python.basics.python_0150_datatypes_overview_compound
-
 Sequential Datatypes
 --------------------
 

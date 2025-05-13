@@ -6,8 +6,6 @@ Blahblah
 .. contents::
    :local:
 
-.. ot-topic:: python.basics.python_0110_blahblah
-
 The Python Programming Language
 -------------------------------
 

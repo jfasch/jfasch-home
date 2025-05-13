@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.sensor_repository.remove_not_found
-   :dependencies: cxx.exercises.stl.sensor_repository.remove_sunny
-
 .. include:: <mmlalias.txt>
 
 

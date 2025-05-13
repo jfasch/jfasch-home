@@ -1,5 +1,3 @@
-.. ot-group:: cmake.advanced.language
-
 .. include:: <mmlalias.txt>
 
 
@@ -18,10 +16,3 @@ The Language
    functions-and-macros/topic
    file-etc/topic
    scripts/topic
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cmake.advanced
-

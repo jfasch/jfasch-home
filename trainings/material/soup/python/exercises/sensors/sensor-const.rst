@@ -1,7 +1,3 @@
-.. ot-exercise:: python.exercises.sensors.sensor_const
-   :dependencies: python.exercises.sensors.project_setup,
-		  python.advanced.oo.methods
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -67,9 +63,3 @@ In you project's root directory, unit tests like follows ...
    tests/test_sensor_const.py .                                             [100%]
    
    ============================== 1 passed in 0.01s ===============================
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.sensors.sensor_const

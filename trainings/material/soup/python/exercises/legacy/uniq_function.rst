@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.legacy.uniq_function
-   :dependencies: python.exercises.legacy.function_primeness,
-		  python.basics.python_0270_functions,
-		  python.basics.python_0150_datatypes_overview_compound
-
 .. include:: <mmlalias.txt>
 
 
@@ -38,10 +33,3 @@ The expected program output is as follows:
    1
    10
    5
-
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.legacy.uniq_function

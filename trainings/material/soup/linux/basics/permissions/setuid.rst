@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.permissions.setuid
-   :dependencies: linux.basics.permissions.basics
-
 .. include:: <mmlalias.txt>
 
 

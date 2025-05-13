@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.posix_threads.lifecycle
-   :dependencies: linux.sysprog.posix_threads.basics
-
 .. include:: <mmlalias.txt>
 
 

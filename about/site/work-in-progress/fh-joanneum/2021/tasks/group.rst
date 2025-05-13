@@ -1,19 +1,11 @@
 .. include:: <mmlalias.txt>
 
-.. ot-group:: fh2021
-
 
 WS2023/24: Group Project - Tasks
 ================================
 
 .. contents::
    :local:
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021
 
 Tasks
 -----

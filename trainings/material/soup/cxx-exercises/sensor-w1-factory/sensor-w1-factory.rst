@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.sensor_w1_factory
-   :dependencies: cxx.exercises.sensor_w1
-
 .. include:: <mmlalias.txt>
 
 

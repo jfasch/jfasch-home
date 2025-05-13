@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.drafts
-
-
 Drafts
 ======
 
@@ -15,9 +12,3 @@ Topics
 
    embedded-problems/group
    crtp
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx11.drafts

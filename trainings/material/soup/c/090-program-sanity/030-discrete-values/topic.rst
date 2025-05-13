@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_sanity.discrete_values
-   :dependencies: c.program_sanity.integral_types
-
 
 Discrete Values - ``enum``
 ==========================

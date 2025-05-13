@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.miscellaneous
-
-
 Miscellaneous
 =============
 
@@ -17,9 +14,3 @@ Topics
    010-chrono/topic
    any-variant-optional/any
    any-variant-optional/variant
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx11.miscellaneous

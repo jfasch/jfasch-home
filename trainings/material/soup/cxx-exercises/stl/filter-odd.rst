@@ -1,5 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.filter_odd
-
 .. include:: <mmlalias.txt>
 
 

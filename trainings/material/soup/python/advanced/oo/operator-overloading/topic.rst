@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.oo.operator_overloading
-   :dependencies: python.advanced.oo.classes_and_dicts
-
 .. meta::
    :description: A thorough walk through Python's operator
                  overloading: reverse operations, "NotImplemented"

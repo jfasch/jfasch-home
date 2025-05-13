@@ -1,4 +1,3 @@
-.. ot-topic:: cmake.advanced.language.basics
 .. include:: <mmlalias.txt>
 
 Language Basics

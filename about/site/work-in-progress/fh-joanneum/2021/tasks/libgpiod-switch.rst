@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.libgpiod_switch
-   :dependencies: fh2021.switch_interface
-
 
 ``libgpiod`` Switch
 ===================
@@ -55,12 +52,3 @@ Testing
 
 Write a test program in ``bin/`` that you use
 interactively/manually. Much like :doc:`sysfs-gpio-switch`.
-
-Future (*Not* Part Of This Development Cycle)
----------------------------------------------
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.libgpiod_switch

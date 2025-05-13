@@ -1,13 +1,11 @@
 .. include:: <mmlalias.txt>
 
+
 Function Objects
 ================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_1000_function_objects
-   :dependencies: python.basics.python_0270_functions
 
 What's a Function?
 ------------------

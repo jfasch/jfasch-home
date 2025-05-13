@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.performance.introduction
-   :dependencies: c.program_sanity.valgrind
 
 Optimization
 ============

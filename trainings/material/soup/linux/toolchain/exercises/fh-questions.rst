@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.toolchain.exercises.fh_moodle_quiz
-   :dependencies: linux.toolchain.basics,
-		  linux.toolchain.separate_compilation
-
-
 Quiz: Toolchain
 ===============
 
@@ -92,9 +87,3 @@ Cross
        * 
 
 (:doc:`Solutions <fh-solutions>`)
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.toolchain.exercises.fh_moodle_quiz

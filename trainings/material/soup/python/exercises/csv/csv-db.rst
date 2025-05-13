@@ -1,7 +1,3 @@
-.. ot-exercise:: python.exercises.csv.csv_db
-   :dependencies: python.db.sqlite3,
-		  python.basics.python_0139_commandline_argv
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -32,9 +28,3 @@ manipulate a :doc:`Sqlite3 database
    .. code-block:: console
 
       $ python stock-to-db.py stock.csv /tmp/mydb.sqlite
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.csv.csv_db

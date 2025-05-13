@@ -1,8 +1,3 @@
-.. ot-topic:: python.basics.python_0300_strings
-   :dependencies: python.basics.python_0200_sequential_types, 
-		  python.basics.python_0150_datatypes_overview, 
-		  python.basics.python_0250_refs_flat_deep_copy
-
 .. include:: <mmlalias.txt>
 
 

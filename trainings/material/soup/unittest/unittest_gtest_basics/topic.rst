@@ -1,5 +1,3 @@
-.. ot-topic:: unittest.gtest_basics
-
 Unittest: GTest Basics
 ======================
 

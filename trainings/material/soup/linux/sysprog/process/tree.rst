@@ -1,9 +1,3 @@
-.. ot-topic:: linux.sysprog.process.tree
-   :dependencies: linux.sysprog.process.commandline,
-		  linux.basics.intro.process_tree,
-		  linux.basics.intro.process,
-		  linux.basics.intro.environment
-
 .. include:: <mmlalias.txt>
 
 

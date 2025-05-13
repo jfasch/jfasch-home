@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.legacy.distill
-   :dependencies: python.exercises.legacy.revert,
-		  python.basics.python_0500_files,
-		  python.basics.python_0139_commandline_argv
-
 .. include:: <mmlalias.txt>
 
 
@@ -41,9 +36,3 @@ should look as follows.
    the previous line contains two TAB characters
          starts at column >0, but is visible
    the previousline is entirely empty
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.legacy.distill

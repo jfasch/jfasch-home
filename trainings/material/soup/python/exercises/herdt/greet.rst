@@ -1,7 +1,3 @@
-.. ot-exercise:: python.exercises.herdt.greeting
-   :dependencies: python.exercises.herdt.max_numbers,
-		  python.basics.python_0170_if
-
 .. include:: <mmlalias.txt>
 
 
@@ -45,9 +41,3 @@ and sex.
    Hour of day: 22
 
    Good evening, Mrs. Jörg
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.herdt.greeting

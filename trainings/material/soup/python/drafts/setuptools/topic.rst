@@ -1,7 +1,3 @@
-.. ot-topic:: python.drafts.setuptools
-   :dependencies: python.swdev.venv,
-		  python.swdev.pip
-
 .. include:: <mmlalias.txt>
 
 

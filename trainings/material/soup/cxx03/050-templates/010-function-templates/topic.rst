@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx03.templates.function_templates
-   :dependencies: cxx03.exceptions.try_catch
-
 
 Function Templates
 ==================

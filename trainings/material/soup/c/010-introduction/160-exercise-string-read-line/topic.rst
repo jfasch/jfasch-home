@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: c.introduction.exercise_string_read_line
-   :dependencies: c.introduction.character_arrays
-
 
 Exercise: Read Line Into String from ``stdin``
 ==============================================

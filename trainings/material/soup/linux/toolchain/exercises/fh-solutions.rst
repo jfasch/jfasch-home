@@ -85,9 +85,3 @@ Cross
          in the *sysroot*.
        * y
        * 
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.toolchain.exercises.fh_moodle_quiz

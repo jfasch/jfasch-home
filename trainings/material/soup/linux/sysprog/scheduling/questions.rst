@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.sysprog.scheduling.exam_questions
-   :dependencies: linux.sysprog.scheduling.realtime,
-		  linux.sysprog.scheduling.wakeup_latency,
-		  linux.sysprog.scheduling.processes_and_threads
-
 Scheduling: Exam Questions
 ==========================
 
@@ -100,6 +95,3 @@ Scheduling: Exam Questions
     latency.
   * Fair scheduling provides a guaranteed upper bound to wakeup
     latency.
-
-.. ot-graph::
-   :entries: linux.sysprog.scheduling.exam_questions

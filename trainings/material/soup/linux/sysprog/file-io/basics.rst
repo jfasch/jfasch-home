@@ -1,7 +1,3 @@
-.. ot-topic:: linux.sysprog.fileio.basics
-   :dependencies: linux.sysprog.basics.groupnode,
-		  linux.basics.permissions.basics
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-topic:: python.basics.python_0120_helloworld
-   :dependencies: python.basics.python_0110_blahblah
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.mqtt_tkinter
-
 
 Python MQTT Subscriber
 ======================
@@ -17,9 +15,3 @@ Notes
 
   Idea: instead of MQTT, simulate random sensor values from a timer
   event.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.mqtt_tkinter

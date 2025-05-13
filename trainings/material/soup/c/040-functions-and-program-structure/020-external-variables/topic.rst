@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.functions_and_program_structure.external_variables
-   :dependencies: c.functions_and_program_structure.basics
-
 
 Extern/Global Variables
 =======================

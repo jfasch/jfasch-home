@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.brace_initialization.intro
-   :dependencies: cxx11.new_language_features.auto
-
 .. include:: <mmlalias.txt>
 
 

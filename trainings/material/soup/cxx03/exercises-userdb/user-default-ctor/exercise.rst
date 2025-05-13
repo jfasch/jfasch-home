@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.user_default_ctor
-   :dependencies: cxx03.exercises_userdb.user_const,
-		  cxx03.data_encapsulation.ctor_dtor
-
 .. include:: <mmlalias.txt>
 
 
@@ -26,9 +22,3 @@ the array members must be *initialized* |longrightarrow| their
 constructors are called.
 
 *Solution*: add a default constructor to ``class User``
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.user_const

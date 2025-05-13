@@ -1,7 +1,3 @@
-.. ot-topic:: python.misc.ai.linear_regression
-   :dependencies: python.swdev.venv, 
-		  python.misc.ai.machine_learning_intro
-
 Linear Regression
 =================
 
@@ -76,10 +72,3 @@ Both the notebook and the program use a :doc:`test dataset
 			   spent the bigger part of the research for
 			   this set of topics searching for
 			   appropriate datasets.
-
-Topic Dependencies
-------------------
-
-.. ot-graph::
-   :entries: python.misc.ai.linear_regression
-

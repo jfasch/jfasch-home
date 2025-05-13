@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.archiving_compression.overview
-   :dependencies: linux.basics.shell.commandline
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-topic:: python.drafts.argparse
-   :dependencies: python.basics.python_0139_commandline_argv
-
 .. include:: <mmlalias.txt>
 
 

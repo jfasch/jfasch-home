@@ -1,6 +1,3 @@
-.. ot-group:: linux.ssh.exercises
-
-
 Exercises: SSH
 ==============
 
@@ -16,9 +13,3 @@ Contents
    pubkey
    copy-file
    copy-tree
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.ssh.exercises

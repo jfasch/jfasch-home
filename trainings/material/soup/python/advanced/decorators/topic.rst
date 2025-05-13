@@ -1,8 +1,3 @@
-.. ot-topic:: python.advanced.decorators
-   :dependencies: python.basics.python_0270_functions,
-		  python.advanced.closures,
-		  python.advanced.starargs
-
 .. include:: <mmlalias.txt>
 
 

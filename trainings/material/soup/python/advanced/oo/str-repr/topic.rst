@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.oo.str_repr
-   :dependencies: python.advanced.oo.methods
-
 .. include:: <mmlalias.txt>
 
 

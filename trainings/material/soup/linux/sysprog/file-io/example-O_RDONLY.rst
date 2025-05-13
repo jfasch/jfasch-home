@@ -1,7 +1,3 @@
-.. ot-topic:: linux.sysprog.fileio.example_O_RDONLY
-   :dependencies: linux.sysprog.fileio.basics,
-		  linux.basics.permissions.basics
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.permissions.exercises.private_directory
-   :dependencies: linux.basics.permissions.exercises.credentials,
-		  linux.basics.permissions.basics
-
-
 Exercise: Create Private Directory
 ==================================
 
@@ -23,6 +18,3 @@ Exercise: Create Private Directory
   * Look and ``cd`` into it
   * Create files and directories in it
   * Remove files and directories from it
-
-.. ot-graph::
-   :entries: linux.basics.permissions.exercises.private_directory

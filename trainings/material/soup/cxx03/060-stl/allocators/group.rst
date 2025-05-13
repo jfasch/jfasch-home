@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.stl.allocator
-
-
 Allocators
 ==========
 
@@ -14,10 +11,3 @@ Topics
    :maxdepth: 1
 
    allocator_basics
-
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx03.stl.allocator

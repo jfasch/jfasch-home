@@ -1,4 +1,3 @@
-.. ot-topic:: cmake.advanced.language.scripts
 .. include:: <mmlalias.txt>
 
 Scripts

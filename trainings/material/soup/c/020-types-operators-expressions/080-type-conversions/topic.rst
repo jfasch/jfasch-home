@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.types_operators_expressions.type_conversions
-   :dependencies: c.types_operators_expressions.relational_logical_operators
-
 
 Type Conversions
 ================

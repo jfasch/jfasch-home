@@ -1,5 +1,3 @@
-.. ot-group:: clean_code
-
 .. include:: <mmlalias.txt>
 
 

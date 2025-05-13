@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.stl.associative_containers.map
-   :dependencies: cxx03.stl.associative_containers.basics
-
 .. include:: <mmlalias.txt>
 
 

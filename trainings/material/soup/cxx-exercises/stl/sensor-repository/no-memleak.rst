@@ -1,12 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.sensor_repository.memory_leaks
-   :dependencies: cxx.exercises.stl.sensor_repository.insert_no_overwrite,
-		  cxx.exercises.stl.sensor_repository.insert_sunny,
-		  cxx.exercises.stl.sensor_repository.lookup_not_found,
-		  cxx.exercises.stl.sensor_repository.lookup_sunny,
-		  cxx.exercises.stl.sensor_repository.remove_not_found,
-		  cxx.exercises.stl.sensor_repository.remove_sunny,
-		  cxx.exercises.stl.sensor_repository.size_const
-
 Memory Leaks?
 =============
 

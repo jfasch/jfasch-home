@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.new_language_features.range_based_for_map
-   :dependencies: cxx11.new_language_features.range_based_for
-
 
 Case Study: Range Based ``for`` On ``std::map``
 ===============================================

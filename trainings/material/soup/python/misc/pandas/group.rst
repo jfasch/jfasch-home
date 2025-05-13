@@ -1,6 +1,3 @@
-.. ot-group:: python.misc.pandas
-
-
 Pandas
 ======
 
@@ -25,11 +22,5 @@ Random Material
 ---------------
 
 * :doc:`/trainings/log/detail/2023-03-13-Python-SAP/sap-dataset/index`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.misc.pandas
 
 

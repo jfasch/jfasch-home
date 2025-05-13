@@ -1,5 +1,3 @@
-.. ot-group:: clean_code.features
-
 Features
 ========
 
@@ -8,7 +6,3 @@ Features
 
    csv
    other-indexes
-
-
-.. ot-graph::
-   :entries: clean_code.features

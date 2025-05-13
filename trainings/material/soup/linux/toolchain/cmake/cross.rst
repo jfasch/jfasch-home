@@ -1,6 +1,3 @@
-.. ot-topic:: linux.toolchain.cmake_cross
-   :dependencies: linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 

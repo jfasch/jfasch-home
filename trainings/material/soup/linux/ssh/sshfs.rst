@@ -1,6 +1,3 @@
-.. ot-topic:: linux.ssh.sshfs
-   :dependencies: linux.ssh.basics
-
 .. meta::
    :description: SSHFS: SSH File System
    :keywords: linux, ssh, file system, network file system, training

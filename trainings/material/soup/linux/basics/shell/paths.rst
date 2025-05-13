@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.shell.paths
-   :dependencies: linux.basics.shell.commandline
-
 .. include:: <mmlalias.txt>
 
 

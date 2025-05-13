@@ -1,6 +1,3 @@
-.. ot-group:: cxx.exercises.fh_sensor_first_try
-
-
 FH Sensor OO (First Try)
 ========================
 

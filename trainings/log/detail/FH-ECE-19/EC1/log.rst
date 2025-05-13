@@ -173,13 +173,6 @@ Python
 
      * :download:`Notebook: Datatypes <Notebooks/Datatypes.ipynb>`
 
-.. _first-dag-here:
-
-**Course material**
-
-.. ot-graph::
-   :entries: python.exercises.legacy.cmdline_digit
-
 2021-04-29
 ----------
 
@@ -211,7 +204,6 @@ Org Stuff
 
   * Notebooks now maintained here (moved over from Github) (see
     :ref:`here <first-notebook-here>`)
-  * Topic dependency graphs inserted in random locations (see :ref:`here <first-dag-here>`)
 
 * Github
 
@@ -387,15 +379,6 @@ In `checker-digit
   fails to pass the correct arguments.
 * Optional argument: ``--python`` (a contribution to Doze users)
 
-Exercise
-........
-
-.. ot-graph::
-   :entries: ece19.blinklicht_unittest,
-	     ece19.blinklicht_abc,
-	     ece19.blinklicht_oo,
-	     ece19.blinklicht
-
 2021-05-21
 ----------
 
@@ -484,9 +467,6 @@ Notebook
 
 ``sysfs`` GPIO: Blinking an LED
 ...............................
-
-.. ot-graph::
-   :entries: ece19.blinklicht
 
 2021-06-07
 ----------

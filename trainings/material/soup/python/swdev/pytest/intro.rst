@@ -1,6 +1,3 @@
-.. ot-topic:: python.swdev.pytest.intro
-   :dependencies: python.advanced.modules
-
 .. include:: <mmlalias.txt>
 
 

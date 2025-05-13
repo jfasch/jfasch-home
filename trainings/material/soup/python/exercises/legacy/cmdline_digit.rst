@@ -1,9 +1,3 @@
-.. ot-exercise:: python.exercises.legacy.cmdline_digit
-   :dependencies: python.basics.python_0120_helloworld,
-		  python.basics.python_0150_datatypes_overview_compound,
-		  python.basics.python_0139_commandline_argv,
-		  python.basics.python_0150_datatypes_overview
-
 .. include:: <mmlalias.txt>
 
 
@@ -29,9 +23,3 @@ parameter. Print the English word for that digit.
 * Use a dictionary (key: ``int``, value: ``str``) for the translation.
 * Valid inputs are digits ``0`` - ``9``. Outputs are the corresponding
   *lowercase* english words for that digit.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.legacy.cmdline_digit

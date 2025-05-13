@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.functions_and_methods
-
-
 Functions and Methods
 =====================
 
@@ -33,9 +30,3 @@ Exercises
    exercises-fh/class-rectangle
    exercises-fh/class-point3d
    exercises-fh/class-cuboid
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx03.functions_and_methods

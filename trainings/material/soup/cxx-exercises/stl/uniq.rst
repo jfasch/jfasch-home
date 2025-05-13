@@ -1,5 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.uniq
-
 .. include:: <mmlalias.txt>
 
 

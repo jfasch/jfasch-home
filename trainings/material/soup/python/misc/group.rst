@@ -1,6 +1,3 @@
-.. ot-group:: python.misc
-
-
 Python: Miscellaneous Topics
 ============================
 
@@ -27,9 +24,3 @@ Topics
    import
    vscode
    encoding/topic
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.misc

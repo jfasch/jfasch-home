@@ -1,10 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: python.misc.pandas.indexes
-   :dependencies: python.misc.pandas.basics,
-		  python.misc.pandas.loc,
-		  python.misc.pandas.iloc
-
 
 Pandas: Indexes
 ===============

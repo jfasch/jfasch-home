@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.user_access_methods
-   :dependencies: cxx03.exercises_userdb.user_simple_method,
-		  cxx03.functions_and_methods.methods
-
 .. include:: <mmlalias.txt>
 
 
@@ -24,9 +20,3 @@ that section. This will break all code that accesses members
 directly. 
 
 **Fix that**: introduce *access methods* for the members.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.user_access_methods

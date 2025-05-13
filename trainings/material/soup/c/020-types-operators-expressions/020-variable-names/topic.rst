@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.types_operators_expressions.variable_names
-   :dependencies: c.types_operators_expressions.introduction
-
 
 Variable Names
 ==============

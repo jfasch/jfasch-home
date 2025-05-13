@@ -12,11 +12,3 @@ Topics
 
    overview-livehacking
    overview-livehacking-oo
-
-Group Description
------------------
-	      
-.. ot-group:: cxx11.introduction
-
-.. ot-graph::
-   :entries: cxx11.introduction

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.text_tools.cut
-   :dependencies: linux.basics.text_tools.head_tail
-
 .. include:: <mmlalias.txt>
 
 

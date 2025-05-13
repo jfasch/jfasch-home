@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.functions_and_program_structure.c_preprocessor_advanced
-   :dependencies: c.functions_and_program_structure.c_preprocessor
-
 
 C Preprocessor: More
 ====================

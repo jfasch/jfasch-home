@@ -1,6 +1,3 @@
-.. ot-group:: linux.basics.shell.exercises
-
-
 The Shell - Exercises
 =====================
 
@@ -16,9 +13,3 @@ Contents
    cp-mv-mkdir-rm/group
    ls/group
    fh-questions
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises

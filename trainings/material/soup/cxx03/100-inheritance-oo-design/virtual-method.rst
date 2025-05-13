@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.inheritance_oo.virtual_method
-   :dependencies: cxx03.inheritance_oo.basics
-
 .. include:: <mmlalias.txt>
 
 

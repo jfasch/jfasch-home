@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.advanced_language_features.volatile
-   :dependencies: c.memory.exercise_linked_list
-
 
 Volatile
 ========

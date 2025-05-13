@@ -1,10 +1,3 @@
-.. ot-topic:: linux.toolchain.raspi.linaro_pi
-   :dependencies: linux.toolchain.cross.basics,
-		  linux.ssh.basics,
-		  linux.ssh.scp,
-		  linux.basics.archiving_compression.tar,
-		  linux.basics.intro.environment
-
 .. include:: <mmlalias.txt>
 
 

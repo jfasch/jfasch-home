@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.variables_and_arithmetic_expressions
-   :dependencies: c.introduction.hello_world
-
 
 Variables and Arithmetic
 ========================

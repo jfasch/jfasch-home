@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.sysfs_gpio_switch
-   :dependencies: fh2021.switch_interface
-
 
 SysFS GPIO Switch
 =================
@@ -98,9 +95,3 @@ Future (*Not* Part Of This Development Cycle)
 * An alternative GPIO interface, ``libgpiod`` (see
   :doc:`/about/site/work-in-progress/blink/glt2023/installation`). SysFS
   GPIO is deprecated!
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.sysfs_gpio_switch, fh2021.boiling_pot

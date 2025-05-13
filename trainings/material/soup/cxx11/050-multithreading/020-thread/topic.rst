@@ -1,7 +1,3 @@
-.. ot-topic:: cxx11.multithreading.thread
-   :dependencies: cxx11.multithreading.introduction,
-		  linux.sysprog.posix_threads.lifecycle
-
 .. include:: <mmlalias.txt>
 
 

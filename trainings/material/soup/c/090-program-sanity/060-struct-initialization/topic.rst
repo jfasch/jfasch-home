@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_sanity.struct_initialization
-   :dependencies: c.program_sanity.const
-
 
 Struct Initialization
 =====================

@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.stl.vector_copy_etc
-   :dependencies: cxx03.stl.basics
-
 .. include:: <mmlalias.txt>
 
 

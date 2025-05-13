@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.sensor_const_nopoly
-   :dependencies: cxx03.data_encapsulation.classes_objects,
-		  linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 
@@ -29,9 +25,3 @@ temperature - the one it is initialized with.
    :language: c++
    :caption: :download:`Download sensor-const-nopoly-basic.cpp
              </trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-const-nopoly-basic.cpp>`
-
-Topics Covered
---------------
-
-.. ot-graph::
-   :entries: cxx.exercises.sensor_const_nopoly

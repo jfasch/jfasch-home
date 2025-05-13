@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.fileio.duplicate
-   :dependencies: linux.sysprog.fileio.basics
-
 .. include:: <mmlalias.txt>
 
 

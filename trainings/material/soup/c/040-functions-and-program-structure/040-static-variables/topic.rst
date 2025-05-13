@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.functions_and_program_structure.static_variables
-   :dependencies: c.functions_and_program_structure.header_files
-
 
 Static Variables
 ================

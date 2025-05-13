@@ -1,6 +1,3 @@
-.. ot-group:: linux
-
-
 Linux
 =====
 
@@ -14,7 +11,4 @@ Linux
    hardware/group
    kernel/group
    drafts/group
-
-.. ot-graph::
-   :entries: linux
 

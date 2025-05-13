@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.solutions.proxy_round
-   :dependencies: cxx.exercises.design_patterns.proxy_round
-
-
 Solution: Proxy (Rounding Thermometer)
 ======================================
 

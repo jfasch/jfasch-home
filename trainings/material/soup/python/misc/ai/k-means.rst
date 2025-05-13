@@ -1,8 +1,3 @@
-.. ot-topic:: python.misc.ai.k_means
-   :dependencies: python.swdev.venv, 
-		  python.misc.ai.machine_learning_intro,
-		  python.misc.ai.linear_regression
-
 K-Means
 =======
 
@@ -46,9 +41,3 @@ Like :doc:`linear-regression/topic`, this topic consists of
   :download:`/trainings/log/detail/2019-11-12/code/color-reduce.py`)
 * Input data, in the form of a PNG (download:
   :download:`/trainings/log/detail/2019-11-12/code/veggie.png`)
-
-Topic Dependencies
-------------------
-
-.. ot-graph::
-   :entries: python.misc.ai.k_means

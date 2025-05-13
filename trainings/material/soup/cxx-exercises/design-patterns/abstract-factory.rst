@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.abstract_factory
-   :dependencies: cxx_design_patterns.abstract_factory,
-		  cxx.exercises.sensor_interface
-
 Exercise: Abstract Factory
 ==========================
 

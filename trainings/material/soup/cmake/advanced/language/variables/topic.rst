@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.language.variables
-   :dependencies: cmake.advanced.language.basics
 .. include:: <mmlalias.txt>
 
 Variables

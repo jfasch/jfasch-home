@@ -1,13 +1,11 @@
-.. ot-group:: linux.basics.permissions
-
-
 File System Permissions
 =======================
 
 .. contents::
    :local:
 
-**Topics**
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -18,14 +16,10 @@ File System Permissions
    umask
    sticky
 
-**Exercises**
+Exercises
+---------
 
 .. toctree::
    :maxdepth: 1
 
    exercises/group
-
-**Dependencies**
-
-.. ot-graph::
-   :entries: linux.basics.permissions

@@ -1,6 +1,3 @@
-.. ot-group:: cxx.exercises.design_patterns.solutions
-
-
 Solutions
 =========
 

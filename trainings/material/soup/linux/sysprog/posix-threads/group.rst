@@ -1,6 +1,3 @@
-.. ot-group:: linux.sysprog.posix_threads
-
-
 POSIX Threads
 =============
 
@@ -16,9 +13,3 @@ Topics
 
    */topic
    locked-trylock
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: linux.sysprog.posix_threads

@@ -1,6 +1,3 @@
-.. ot-topic:: cmake.advanced.targets_properties
-   :dependencies: cmake.intro.libraries, 
-		  cmake.intro.structure
 .. include:: <mmlalias.txt>
 
 

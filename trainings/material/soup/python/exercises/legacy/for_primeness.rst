@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.legacy.for_primeness
-   :dependencies: python.exercises.legacy.while_primeness,
-		  python.basics.python_0220_for,
-		  python.basics.python_0225_range
-
 .. include:: <mmlalias.txt>
 
 

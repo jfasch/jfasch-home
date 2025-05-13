@@ -1,7 +1,3 @@
-.. ot-topic:: ecproposal.ec2.python.exercise_sensors
-   :dependencies: ecproposal.ec1.linux.exercise_sensors,
-		  ecproposal.ec2.python.basics
-
 EX: Temperature Sensors
 =======================
 

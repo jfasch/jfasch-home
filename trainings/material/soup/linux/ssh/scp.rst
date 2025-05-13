@@ -1,6 +1,3 @@
-.. ot-topic:: linux.ssh.scp
-   :dependencies: linux.ssh.basics
-
 .. meta::
    :description: Slide material: scp (secure copy)
    :keywords: linux, ssh, scp, secure copy, training

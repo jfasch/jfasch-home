@@ -14,6 +14,3 @@ catalog of topics in "book" form. Chapters containing subchapters and
 all that.
 
 The information is there, and all that information can be computed.
-
-.. ot-graph::
-   :entries: python

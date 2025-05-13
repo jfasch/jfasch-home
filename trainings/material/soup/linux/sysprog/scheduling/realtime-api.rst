@@ -1,8 +1,3 @@
-.. ot-topic:: linux.sysprog.scheduling.realtime_api
-   :dependencies: linux.sysprog.scheduling.realtime,
-		  linux.sysprog.posix_threads.mutex,
-		  linux.sysprog.posix_threads.lifecycle
-
 .. include:: <mmlalias.txt>
 
 

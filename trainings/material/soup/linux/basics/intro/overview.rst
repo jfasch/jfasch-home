@@ -1,5 +1,3 @@
-.. ot-topic:: linux.basics.intro.overview
-
 .. include:: <mmlalias.txt>
 
 

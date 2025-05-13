@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: c.introduction.exercise_fahrenheit_cpp
-   :dependencies: c.introduction.cpp_symbolic_constants
-
 
 Exercise: Fahrenheit Table Using Macros
 =======================================

@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.structures.basics
-   :dependencies: c.pointers_and_arrays.command_line_arguments
 
 ``struct``: Basics
 ==================

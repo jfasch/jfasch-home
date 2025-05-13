@@ -1,6 +1,3 @@
-.. ot-exercise:: linux.sysprog.posix_threads.exercise_condition_variable
-   :dependencies: linux.sysprog.posix_threads.condition_variable
-
 .. include:: <mmlalias.txt>
 
 

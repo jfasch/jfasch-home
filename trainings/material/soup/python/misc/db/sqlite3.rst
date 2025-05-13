@@ -1,6 +1,3 @@
-.. ot-topic:: python.db.sqlite3
-   :dependencies: python.db.dbapi2
-
 .. include:: <mmlalias.txt>
 
 

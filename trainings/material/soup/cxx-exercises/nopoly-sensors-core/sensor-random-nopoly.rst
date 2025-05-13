@@ -1,9 +1,3 @@
-.. ot-exercise:: cxx.exercises.sensor_random_nopoly
-   :dependencies: cxx.exercises.sensor_const_nopoly,
-		  cxx03.data_encapsulation.initializer_list,
-		  cxx03.data_encapsulation.classes_objects,
-		  linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 
@@ -50,9 +44,3 @@ Implementation Hint: Initializer Lists
 See
 :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
 for how to initialize members in an initializer list.
-
-Topics Covered
---------------
-
-.. ot-graph::
-   :entries: cxx.exercises.sensor_random_nopoly

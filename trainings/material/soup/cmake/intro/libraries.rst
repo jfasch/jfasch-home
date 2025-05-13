@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.intro.libraries
-   :dependencies: cmake.intro.basics
 .. include:: <mmlalias.txt>
 
 

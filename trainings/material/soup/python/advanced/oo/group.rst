@@ -1,5 +1,3 @@
-.. ot-group:: python.advanced.oo
-
 Object Oriented Programming
 ===========================
 
@@ -38,9 +36,3 @@ Exercises
 * Belonging here
 
   * :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`
-
-Interrelationships
-------------------
-
-.. ot-graph::
-   :entries: python.advanced.oo

@@ -1,5 +1,3 @@
-.. ot-group:: cmake
-
 .. include:: <mmlalias.txt>
 
 
@@ -16,9 +14,3 @@ CMake
 
    intro/group
    advanced/group
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cmake

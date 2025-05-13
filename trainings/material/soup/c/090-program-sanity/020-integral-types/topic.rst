@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_sanity.integral_types
-   :dependencies: c.program_sanity.introduction
-
 
 Know Your Integers
 ==================

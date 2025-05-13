@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.permissions.setuid_livedemo
-   :dependencies: linux.basics.permissions.setuid
-
 .. include:: <mmlalias.txt>
 
 

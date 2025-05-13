@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.vector
-   :dependencies: cxx03.stl.vector_copy_etc
-
 .. include:: <mmlalias.txt>
 
 

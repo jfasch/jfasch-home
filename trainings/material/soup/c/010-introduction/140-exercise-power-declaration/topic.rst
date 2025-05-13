@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: c.introduction.exercise_power_declaration
-   :dependencies: c.introduction.functions
-
 
 Exercise: Forward Declaration
 =============================

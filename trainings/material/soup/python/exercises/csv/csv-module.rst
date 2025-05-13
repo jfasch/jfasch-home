@@ -1,9 +1,3 @@
-.. ot-exercise:: python.exercises.csv.csv_module
-   :dependencies: python.misc.csv,
-		  python.advanced.python_1010_generators_yield,
-		  python.advanced.modules,
-		  python.basics.python_0139_commandline_argv
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -69,10 +63,3 @@ Requirement
                       hardly know what money is. Lets take the CSV as
                       a representative example, and not try to
                       understand what's in it.
-
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.csv.csv_module

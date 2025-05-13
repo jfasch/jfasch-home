@@ -1,6 +1,3 @@
-.. ot-group:: linux.toolchain.exercises
-
-
 Exercises: Toolchain
 ====================
 
@@ -22,9 +19,3 @@ Contents
    :hidden:
 
    fh-solutions
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.toolchain.exercises

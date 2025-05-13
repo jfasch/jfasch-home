@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.basics.permissions.exercises.public_directory_question
-   :dependencies: linux.basics.permissions.exercises.public_directory
-
-
 Question: Public Directory
 ==========================
 
@@ -16,6 +12,3 @@ following question:
 * *Would any other user with sharing permissions be able to remove
   that file?*
 * *Give a reason for your answer*!
-
-.. ot-graph::
-   :entries: linux.basics.permissions.exercises.public_directory_question

@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.character_io
-   :dependencies: c.introduction.exercise_fahrenheit_cpp
-
 
 Character I/O
 =============

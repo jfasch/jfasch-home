@@ -133,12 +133,6 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
   Dissecting *joinable* vs. *detached* threads: `join-vs-detach.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/join-vs-detach.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/030-race-conditions/topic`
-  
-  ``i++`` ain't thread safe - the *load/modify/store conflict*:
-  `mother-of-race-conditions.cpp
-  <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/mother-of-race-conditions.cpp>`__
-
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
 
   ``i++`` made thread safe with ``std::atomic<>``:

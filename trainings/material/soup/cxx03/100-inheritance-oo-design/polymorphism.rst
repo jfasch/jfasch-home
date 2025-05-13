@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.inheritance_oo.polymorphism
-   :dependencies: cxx03.inheritance_oo.virtual_method
-
 .. include:: <mmlalias.txt>
 
 

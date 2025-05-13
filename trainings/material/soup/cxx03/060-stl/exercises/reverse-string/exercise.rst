@@ -1,5 +1,3 @@
-.. ot-exercise:: cxx03.stl.exercises.reverse_string.exercise
-
 .. include:: <mmlalias.txt>
 
 
@@ -54,9 +52,3 @@ Write a program that
 
 				    std::string s("cb");
 				    s += 'a';
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.stl.exercises.reverse_string.exercise

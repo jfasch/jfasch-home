@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.stl.sequential_containers.list
-   :dependencies: cxx03.stl.sequential_containers.basics
-
 .. include:: <mmlalias.txt>
 
 

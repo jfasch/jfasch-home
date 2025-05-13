@@ -1,6 +1,3 @@
-.. ot-topic:: cxx.exercises.fh_sensor_first_try.exercise_FH_sensor_oo_random_sensor
-   :dependencies: cxx.exercises.fh_sensor_first_try.exercise_FH_sensor_oo
-
 .. include:: <mmlalias.txt>
 
 

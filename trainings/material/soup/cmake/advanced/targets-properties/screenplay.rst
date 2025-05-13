@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.targets_properties_pub_priv_inc_screenplay
-   :dependencies: cmake.advanced.targets_properties
 .. include:: <mmlalias.txt>
 
 

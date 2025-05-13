@@ -1,6 +1,3 @@
-.. ot-topic:: cmake.advanced.language.foreach
-   :dependencies: cmake.advanced.language.variables,
-		  cmake.advanced.language.datatypes
 .. include:: <mmlalias.txt>
 
 ``foreach`` Loops

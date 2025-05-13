@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.sensor_repository.insert_no_overwrite
-   :dependencies: cxx.exercises.stl.sensor_repository.insert_sunny
-
 .. include:: <mmlalias.txt>
 
 

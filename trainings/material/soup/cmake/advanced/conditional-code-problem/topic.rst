@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.optional_code_problem
-   :dependencies: cmake.advanced.configure_file
 .. include:: <mmlalias.txt>
 
 Optional Code: Problem Definition, ``OPTION()``

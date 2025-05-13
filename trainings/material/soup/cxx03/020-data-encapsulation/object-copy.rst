@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx03.data_encapsulation.object_copy
-   :dependencies: cxx03.data_encapsulation.ctor_dtor
-
 
 Object Copy (And Resource Management): There Be Dragons
 =======================================================

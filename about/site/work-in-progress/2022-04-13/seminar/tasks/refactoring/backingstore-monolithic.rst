@@ -1,10 +1,4 @@
-.. ot-task:: clean_code.refactoring.backingstore_monolithic
-   :dependencies: clean_code.refactoring.store_enum_switch,
-		  clean_code.bugs.overwrite_existing_files,
-		  clean_code.bugs.overwrite_store_content_on_read
-
 .. include:: <mmlalias.txt>
-
 
 
 ``UserDB`` Has Too Many Responsibilities |longrightarrow| ``BackingStore``
@@ -47,6 +41,3 @@ Like so,
    };
 
 .. image:: backingstore-monolithic.png
-
-.. ot-graph::
-   :entries: clean_code.refactoring.backingstore_monolithic

@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.sysprog.fileio.basics_exercise_hole
-   :dependencies: linux.sysprog.fileio.basics
-
-
 Exercise: Create File With Hole
 ===============================
   

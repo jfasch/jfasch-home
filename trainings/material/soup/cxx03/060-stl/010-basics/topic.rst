@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx03.stl.basics
-   :dependencies: cxx03.templates.class_templates
-
 
 Standard Template Library: Basics
 =================================

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.shell.configfiles
-   :dependencies: linux.basics.intro.environment
-
 .. include:: <mmlalias.txt>
 
 

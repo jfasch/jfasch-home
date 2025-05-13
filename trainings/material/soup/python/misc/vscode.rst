@@ -1,5 +1,3 @@
-.. ot-topic:: python.misc.vscode
-
 Visual Studio Code for Python Programming
 =========================================
 

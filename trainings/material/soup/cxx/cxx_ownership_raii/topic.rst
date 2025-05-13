@@ -1,5 +1,3 @@
-.. ot-topic:: cxx.ownership_raii
-
 C++: Ownership/RAII
 ===================
 

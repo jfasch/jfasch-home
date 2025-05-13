@@ -1,5 +1,3 @@
-.. ot-group:: cxx03.inheritance_oo
-
 Inheritance And Object Oriented Design
 ======================================
 
@@ -31,9 +29,3 @@ Exercises
 ---------
 
 * :doc:`/trainings/material/soup/cxx-exercises/sensor-interface/sensor-interface`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.inheritance_oo

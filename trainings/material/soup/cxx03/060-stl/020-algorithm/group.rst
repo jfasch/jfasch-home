@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.stl.algorithm
-
-
 Algorithms
 ==========
 
@@ -32,10 +29,3 @@ Sorted Arrays
    sort
    binary_search
    lower_bound
-
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx03.stl.algorithm

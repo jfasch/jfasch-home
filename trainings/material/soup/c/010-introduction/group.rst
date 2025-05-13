@@ -12,11 +12,3 @@ Topics
    :glob:
 
    */topic
-
-Group Description
------------------
-	      
-.. ot-group:: c.introduction
-
-.. ot-graph::
-   :entries: c.introduction

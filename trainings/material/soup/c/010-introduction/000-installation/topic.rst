@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.installation
-
 
 Installation
 ============

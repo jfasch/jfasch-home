@@ -1,5 +1,3 @@
-.. ot-group:: python.misc.ai
-
 Machine Learning, Artificial Intelligence
 =========================================
 
@@ -9,6 +7,3 @@ Machine Learning, Artificial Intelligence
    machine-learning-intro
    linear-regression/topic
    k-means
-
-.. ot-graph::
-   :entries: python.misc.ai

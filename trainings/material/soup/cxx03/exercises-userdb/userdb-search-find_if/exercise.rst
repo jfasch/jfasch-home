@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.userdb_search_find_if
-   :dependencies: cxx03.exercises_userdb.userdb_search		  
-
 .. include:: <mmlalias.txt>
 
 
@@ -34,9 +31,3 @@ sufficient - if that works, our change did not break anything.
 
 .. literalinclude:: ../userdb-search/test-userdb-search.cpp
    :caption: :download:`../userdb-search/test-userdb-search.cpp`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.userdb_search_find_if

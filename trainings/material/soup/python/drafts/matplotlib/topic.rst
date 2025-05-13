@@ -1,8 +1,3 @@
-.. ot-topic:: python.drafts.matplotlib
-   :dependencies: python.swdev.venv,
-		  python.swdev.pip
-
-
 Matplotlib
 ==========
 

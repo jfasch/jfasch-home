@@ -1,5 +1,3 @@
-.. ot-group:: python.advanced.multithreading
-
 Multithreading
 ==============
 
@@ -10,7 +8,3 @@ Multithreading
    mutex
 
    questions
-
-.. ot-graph::
-   :entries: python.advanced.multithreading
-

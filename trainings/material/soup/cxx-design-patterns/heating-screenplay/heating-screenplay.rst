@@ -1,8 +1,3 @@
-.. ot-topic:: cxx_design_patterns.heating_screenplay
-   :dependencies: cxx_design_patterns.adapter,
-		  cxx_design_patterns.uml,
-		  cxx_design_patterns.sensor_hierarchy
-
 .. include:: <mmlalias.txt>
 
 

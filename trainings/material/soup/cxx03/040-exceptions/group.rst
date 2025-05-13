@@ -13,10 +13,3 @@ Topics
 
    */topic
 
-Group Description
------------------
-	      
-.. ot-group:: cxx03.exceptions
-
-.. ot-graph::
-   :entries: cxx03.exceptions

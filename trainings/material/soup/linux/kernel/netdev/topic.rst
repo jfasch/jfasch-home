@@ -1,7 +1,3 @@
-.. ot-topic:: linux.kernel.netdev
-   :dependencies: linux.kernel.dma,
-		  linux.kernel.interrupt
-
 Network Devices
 ===============
 
@@ -9,6 +5,3 @@ Network Devices
    :maxdepth: 1
 
    slides
-
-.. ot-graph:: 
-   :entries: linux.kernel.netdev

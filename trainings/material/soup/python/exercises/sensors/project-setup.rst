@@ -1,6 +1,3 @@
-.. ot-exercise:: python.exercises.sensors.project_setup
-   :dependencies: python.exercises.sensors.sensor_const
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -49,9 +46,3 @@ Install the project's requirements,
 
    (python-course) $ python -m pip install -r /home/you/project/requirements.txt
    ... roedel ...
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.sensors.project_setup

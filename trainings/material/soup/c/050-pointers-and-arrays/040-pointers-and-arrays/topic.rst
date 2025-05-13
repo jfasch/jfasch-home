@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.pointers_and_arrays.pointers_and_arrays
-   :dependencies: c.pointers_and_arrays.exercise_swap
-
 
 Pointers and Arrays
 ===================

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.text_tools.find
-   :dependencies: linux.basics.text_tools.grep
-
 .. include:: <mmlalias.txt>
 
 

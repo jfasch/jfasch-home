@@ -1,5 +1,3 @@
-.. ot-group:: linux.toolchain.raspi
-
 Case Study: Raspberry Toolchain
 ===============================
 
@@ -16,9 +14,3 @@ Topics
    toolchain-build-docker-fedora
    linaro
    toolchain-setup
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.toolchain.raspi

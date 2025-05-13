@@ -1,10 +1,3 @@
-.. ot-exercise:: linux.basics.intro.fh_moodle_quiz
-   :dependencies: linux.basics.intro.overview,
-		  linux.sysprog.blocking_io.blocking_io_file,
-		  linux.basics.intro.demo_everything_is_a_file,
-		  linux.basics.intro.process
-
-
 Quiz: Linux Basics
 ==================
 
@@ -212,9 +205,3 @@ Processes, Scheduling, and Virtual Memory
        *
 
 (:doc:`Solutions <fh-solutions>`)
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.intro.fh_moodle_quiz

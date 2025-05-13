@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.copy_tree
-   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.verify_hierarchy,
-		  linux.basics.shell.cp
-
-
 Exercise: Copy Directory Tree
 =============================
 
@@ -41,7 +36,3 @@ Exercise: Copy Directory Tree
      ├── garbage1.txt
      ├── garbage2.txt
      └── hello
-
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.copy_tree

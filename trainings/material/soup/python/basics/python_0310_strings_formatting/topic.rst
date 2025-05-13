@@ -6,9 +6,6 @@ String Formatting
 .. contents::
    :local:
 
-.. ot-topic:: python.basics.python_0310_strings_formatting
-   :dependencies: python.basics.python_0300_strings
-
 .. sidebar::
 
    **Documentation**

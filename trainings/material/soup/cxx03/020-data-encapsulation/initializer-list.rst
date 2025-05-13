@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.data_encapsulation.initializer_list
-   :dependencies: cxx03.data_encapsulation.ctor_custom
-
 .. include:: <mmlalias.txt>
 
 

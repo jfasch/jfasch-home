@@ -1,10 +1,3 @@
-.. ot-exercise:: linux.basics.exercises.FH_SS2022_EXAM_01_G2
-   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
-		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files,
-		  linux.basics.shell.cp,
-		  linux.basics.shell.ls
-
-
 Exam (ECE/SS2022/G2): Do A Lot With Files And Directories
 =========================================================
 
@@ -213,8 +206,3 @@ Make A Backup Of ``~/exam-01`` (15 Points)
   its default permissions that it had initially.
 * **Finally, execute the** ``scp`` **command on your local machine**
 
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.exercises.FH_SS2022_EXAM_01_G2

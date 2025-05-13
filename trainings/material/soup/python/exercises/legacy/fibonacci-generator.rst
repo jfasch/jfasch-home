@@ -1,7 +1,3 @@
-.. ot-exercise:: python.exercises.legacy.python_1011_generators_yield
-   :dependencies: python.exercises.legacy.uniq_generator,
-		  python.advanced.python_1010_generators_yield
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,5 +1,3 @@
-.. ot-group:: clean_code
-
 Backlog: What Needs To Change, Or We Will All Die
 =================================================
 
@@ -31,6 +29,3 @@ deliciously and fearlessly clean up the code base after the fact.
    bugs/group
    features/group
    refactoring/group
-
-.. ot-graph::
-   :entries: clean_code

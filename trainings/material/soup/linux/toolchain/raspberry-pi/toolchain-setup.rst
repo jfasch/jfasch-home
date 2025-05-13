@@ -1,6 +1,3 @@
-.. ot-topic:: linux.toolchain.raspi.toolchain_setup
-   :dependencies: linux.toolchain.cross.basics
-
 .. include:: <mmlalias.txt>
 
 

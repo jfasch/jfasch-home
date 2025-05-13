@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.new_language_features.range_based_for
-   :dependencies: cxx11.new_language_features.brace_initialization.intro
-
 
 Range Based ``for`` Loops: Introduction
 =======================================

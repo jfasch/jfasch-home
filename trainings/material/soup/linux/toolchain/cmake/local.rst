@@ -1,6 +1,3 @@
-.. ot-topic:: linux.toolchain.cmake_local
-   :dependencies: linux.toolchain.static_library
-
 .. include:: <mmlalias.txt>
 
 
@@ -198,6 +195,3 @@ Goodie: Dependency Management
      $ dot -Tpng dependencies.dot > dependencies.png
 
   .. graphviz:: dependencies.dot
-
-.. ot-graph::
-   :entries: linux.toolchain.cmake_local

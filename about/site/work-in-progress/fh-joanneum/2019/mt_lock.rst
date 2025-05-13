@@ -1,6 +1,3 @@
-.. ot-topic:: ecproposal.ec1.mt.lock
-   :dependencies: ecproposal.ec1.mt.exercise_mt_race
-
 Avoiding Race Conditions: Semaphore/Mutex
 =========================================
 

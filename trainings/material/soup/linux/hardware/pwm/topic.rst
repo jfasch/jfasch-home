@@ -6,8 +6,6 @@
 PWM Userspace Interface (using PCA9685)
 =======================================
 
-.. ot-topic:: linux.hardware.pwm
-
 .. contents::
    :local:
 

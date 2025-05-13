@@ -1,7 +1,3 @@
-.. ot-topic:: linux.kernel.mutex
-   :dependencies: linux.kernel.process_vs_atomic
-
-
 Mutex (and RT Mutex)
 ====================
 
@@ -9,6 +5,3 @@ Mutex (and RT Mutex)
    :maxdepth: 1
 
    slides
-
-.. ot-graph:: 
-   :entries: linux.kernel.mutex

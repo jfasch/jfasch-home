@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.code_generators
-   :dependencies: cmake.advanced.external_dependencies_mosquitto
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.multithreading.promise_future
-   :dependencies: cxx11.multithreading.thread
-
 .. include:: <mmlalias.txt>
 
 

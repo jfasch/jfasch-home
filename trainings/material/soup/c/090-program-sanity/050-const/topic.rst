@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_sanity.const
-   :dependencies: c.program_sanity.static
 
 Correctness - ``const``
 =======================

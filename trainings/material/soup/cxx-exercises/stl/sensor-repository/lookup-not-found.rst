@@ -1,9 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.sensor_repository.lookup_not_found
-   :dependencies: cxx.exercises.stl.sensor_repository.lookup_sunny
-
-.. include:: <mmlalias.txt>
-
-
 Lookup - Not Found
 ==================
 

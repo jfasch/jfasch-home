@@ -1,9 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.interpreter_and_adapter
-   :dependencies: cxx_design_patterns.adapter,
-		  cxx_design_patterns.interpreter,
-		  cxx.exercises.design_patterns.interpreter_basic,
-		  cxx_design_patterns.sensor_hierarchy
-
 .. include:: <mmlalias.txt>
 
 

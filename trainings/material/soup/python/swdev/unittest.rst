@@ -1,7 +1,3 @@
-.. ot-topic:: python.swdev.unittest
-   :dependencies: python.advanced.oo.inheritance,
-		  python.advanced.modules
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: ece19.blinklicht
-   :dependencies: ece19.file_read
 
 GPIO: Blinklicht
 ================
@@ -130,10 +128,3 @@ Implementation Notes
   * VS Code, There is also a VS Code extension, `Remote SSH
     <https://code.visualstudio.com/docs/remote/ssh>`__, that you might
     want to try.
-
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: ece19.blinklicht

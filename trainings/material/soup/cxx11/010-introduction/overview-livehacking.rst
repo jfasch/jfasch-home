@@ -1,5 +1,3 @@
-.. ot-topic:: cxx11.introduction.overview_livehacking
-
 .. include:: <mmlalias.txt>
 
 

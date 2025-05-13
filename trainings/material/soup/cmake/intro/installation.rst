@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.intro.installation
-   :dependencies: cmake.intro.libraries, cmake.intro.shared_libraries_preview
 .. include:: <mmlalias.txt>
 
 

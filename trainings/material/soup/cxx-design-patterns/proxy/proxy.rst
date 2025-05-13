@@ -1,8 +1,3 @@
-.. ot-topic:: cxx_design_patterns.proxy
-   :dependencies: cxx03.inheritance_oo.interface,
-		  cxx_design_patterns.uml,
-		  cxx_design_patterns.sensor_hierarchy
-
 .. include:: <mmlalias.txt>
 
 

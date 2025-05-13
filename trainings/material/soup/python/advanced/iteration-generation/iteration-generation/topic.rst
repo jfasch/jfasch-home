@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.iteration_generation
-   :dependencies: python.basics.python_0220_for
-
 .. include:: <mmlalias.txt>
 
 

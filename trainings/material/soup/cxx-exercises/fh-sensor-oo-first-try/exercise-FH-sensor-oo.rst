@@ -1,6 +1,3 @@
-.. ot-topic:: cxx.exercises.fh_sensor_first_try.exercise_FH_sensor_oo
-   :dependencies: cxx03.data_encapsulation.classes_objects
-
 .. include:: <mmlalias.txt>
 
 

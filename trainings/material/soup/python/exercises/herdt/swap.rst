@@ -1,9 +1,3 @@
-.. ot-exercise:: python.exercises.herdt.swap
-   :dependencies: python.exercises.herdt.boolean,
-		  python.basics.python_0140_variables,
-		  python.basics.python_0150_datatypes_overview,
-		  python.basics.python_0120_helloworld
-
 .. include:: <mmlalias.txt>
 
 
@@ -33,9 +27,3 @@ Exercise: Swap Two Variables
       $ python swap.py
       Before: 1 2
       After: 2 1
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.herdt.swap

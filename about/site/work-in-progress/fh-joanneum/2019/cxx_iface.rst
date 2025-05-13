@@ -1,6 +1,3 @@
-.. ot-topic:: ecproposal.ec1.cxx.iface
-   :dependencies: ecproposal.ec1.cxx.oo_basics
-
 C++: Interfaces
 ===============
 

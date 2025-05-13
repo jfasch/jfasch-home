@@ -1,6 +1,3 @@
-.. ot-group:: linux.basics.permissions.exercises
-
-
 Exercises: File System Permissions
 ==================================
 
@@ -24,9 +21,3 @@ Contents
 .. .. toctree::
 .. 
 ..    fh-questions
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.permissions.exercises

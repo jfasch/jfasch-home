@@ -1,7 +1,3 @@
-.. ot-topic:: cxx11.multithreading.mutex
-   :dependencies: cxx11.multithreading.race_conditions, 
-		  linux.sysprog.posix_threads.mutex
-
 .. include:: <mmlalias.txt>
 
 

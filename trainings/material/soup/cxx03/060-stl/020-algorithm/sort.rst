@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.stl.algorithm.sort
-   :dependencies: cxx03.stl.basics
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,7 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.move_pf.livehack_using_string_move
-   :dependencies: cxx11.new_language_features.move_pf.livehack_string_move,
-		  cxx11.new_language_features.move_pf.overview
-
 .. include:: <mmlalias.txt>
 
 

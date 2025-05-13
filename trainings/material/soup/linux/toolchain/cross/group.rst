@@ -1,6 +1,3 @@
-.. ot-group:: linux.toolchain.cross
-
-
 Cross Development
 =================
 
@@ -21,17 +18,3 @@ Topics
    :maxdepth: 1
 
    basics
-
-.. Exercises
-.. ---------
-.. 
-.. .. toctree::
-..    :maxdepth: 1
-.. 
-..    exercises/group
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.toolchain.cross

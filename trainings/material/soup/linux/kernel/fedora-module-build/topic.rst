@@ -1,6 +1,3 @@
-.. ot-topic:: linux.kernel.fedora_module_build
-   :dependencies: linux.kernel.fedora_kernel_build
-
 Fedora: Building External Kernel Modules
 ========================================
 
@@ -8,6 +5,3 @@ Fedora: Building External Kernel Modules
    :maxdepth: 1
 
    screenplay
-
-.. ot-graph:: 
-   :entries: linux.kernel.fedora_module_build

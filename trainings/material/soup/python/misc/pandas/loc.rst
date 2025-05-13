@@ -1,11 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: python.misc.pandas.loc
-   :dependencies: python.misc.pandas.iloc,
-		  python.misc.pandas.indexes,
-		  python.misc.pandas.basics,
-		  python.basics.python_0210_indexing_slicing
-
 
 Pandas: Selecting Rows (And Columns) With ``loc[]``
 ====================================================

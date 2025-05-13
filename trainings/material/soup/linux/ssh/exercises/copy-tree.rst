@@ -1,11 +1,3 @@
-.. ot-exercise:: linux.ssh.exercises.copy_tree
-   :dependencies: linux.ssh.exercises.copy_file,
-		  linux.ssh.exercises.pubkey,
-		  linux.ssh.key_pair,
-		  linux.ssh.scp,
-		  linux.ssh.basics
-
-
 Exercise: Copy a Tree To Remote Machine (And Adjust Permissions)
 ================================================================
 
@@ -32,6 +24,3 @@ Continuing from there ...
 
   (Hint: you can use the ``-R`` option to the ``chmod`` command to
   modify permissions recursively)
-
-.. ot-graph::
-   :entries: linux.ssh.exercises.copy_tree

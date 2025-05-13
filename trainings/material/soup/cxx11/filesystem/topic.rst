@@ -1,5 +1,3 @@
-.. ot-topic:: cxx11.filesystem
-
 .. include:: <mmlalias.txt>
 
 

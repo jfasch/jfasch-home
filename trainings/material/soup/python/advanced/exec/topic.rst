@@ -2,10 +2,6 @@
    :description: Python - The exec Function
    :keywords: python, exec, configuration
 
-.. ot-topic:: python.advanced.exec
-   :dependencies: python.basics.python_0450_dictionaries,
-		  python.basics.python_0500_files
-
 .. include:: <mmlalias.txt>
 
 The ``exec()`` Function

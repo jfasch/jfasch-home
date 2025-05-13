@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_flow.goto_and_labels
-   :dependencies: c.program_flow.break_and_continue
 
 ``goto`` and Labels
 ===================

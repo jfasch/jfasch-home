@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: c.introduction.exercise_fahrenheit_for
-   :dependencies: c.introduction.for_loop
-
 
 Exercise: Fahrenheit Table Using ``for``
 ========================================

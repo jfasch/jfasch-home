@@ -1,13 +1,11 @@
-.. ot-group:: linux.basics.intro
-
-
 Introduction: Concepts and Terminology
 ======================================
 
 .. contents::
    :local:
 
-**Topics**
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -20,7 +18,8 @@ Introduction: Concepts and Terminology
    login
    wsl
 
-**Exercises**
+Exercises
+---------
 
 .. toctree::
    :maxdepth: 1
@@ -31,8 +30,3 @@ Introduction: Concepts and Terminology
    :hidden:
 
    exercises/fh-solutions
-
-**Dependencies**
-
-.. ot-graph::
-   :entries: linux.basics.intro

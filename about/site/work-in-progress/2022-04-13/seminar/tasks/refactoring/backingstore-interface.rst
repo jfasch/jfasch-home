@@ -1,6 +1,3 @@
-.. ot-task:: clean_code.refactoring.backingstore_interface
-   :dependencies: clean_code.refactoring.backingstore_monolithic
-
 .. include:: <mmlalias.txt>
 
 

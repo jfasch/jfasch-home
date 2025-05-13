@@ -1,5 +1,3 @@
-.. ot-exercise:: cxx03.exercises_misc.sum_integers_from_stdin
-
 .. include:: <mmlalias.txt>
 
 
@@ -44,12 +42,3 @@ The program is typically called this way:
 
 .. [#eof] Standard input's End-Of-File (EOF) is reached when the user
 	  type :kbd:`ctrl` + :kbd:`d` (Unix) or :kbd:`ctrl` + :kbd:`z`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_misc.sum_integers_from_stdin
-
-
-

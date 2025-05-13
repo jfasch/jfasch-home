@@ -1,6 +1,3 @@
-.. ot-group:: python.swdev
-
-
 Python: Project/Package Management
 ==================================
 
@@ -23,9 +20,3 @@ Topics
    pypi
    unittest
    pytest/group
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.swdev

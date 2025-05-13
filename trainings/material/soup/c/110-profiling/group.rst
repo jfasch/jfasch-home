@@ -12,11 +12,3 @@ Topics
    :glob:
 
    */topic
-
-Group Description
------------------
-	      
-.. ot-group:: c.profiling
-
-.. ot-graph::
-   :entries: c.profiling

@@ -1,6 +1,3 @@
-.. ot-topic:: python.basics.python_0150_datatypes_overview_compound
-   :dependencies: python.basics.python_0150_datatypes_overview
-
 .. include:: <mmlalias.txt>
 
 

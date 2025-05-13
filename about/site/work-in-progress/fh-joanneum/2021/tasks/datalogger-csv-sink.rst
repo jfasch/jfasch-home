@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.datalogger_csv_sink
-   :dependencies: fh2021.datalogger
-
 
 Data Logger: CSV Sink
 =====================
@@ -81,9 +78,3 @@ Future (*Not* Part Of This Development Cycle)
 
 * Log rotation. Users might want to backup what was logged, remove old
   data, and start a new file. The class must somehow support this.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.datalogger_csv_sink

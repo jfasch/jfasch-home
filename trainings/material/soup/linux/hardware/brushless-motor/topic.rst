@@ -11,11 +11,6 @@ Controlling a Brushless Motor With Raspberry Pi
 .. contents::
    :local:
 
-.. sidebar:: Topic
-
-   .. ot-topic:: linux.hardware.brushless_motor
-      :dependencies: linux.hardware.pwm
-
 The focus of this post is to control a brushless motor from an
 automation point of view. Imagine an autonomous vehicle that grabs
 boxes from a storage rack. It has several motors, and a small computer

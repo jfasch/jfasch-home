@@ -1,5 +1,3 @@
-.. ot-topic:: cxx.inheritance_virtual
-
 C++: Inheritance, Interfaces, ``virtual``
 =========================================
 

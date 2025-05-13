@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.testing
-   :dependencies: cmake.advanced.external_dependencies
 .. include:: <mmlalias.txt>
 
 

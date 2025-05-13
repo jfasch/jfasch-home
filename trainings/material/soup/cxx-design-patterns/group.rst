@@ -1,6 +1,3 @@
-.. ot-group:: cxx_design_patterns
-
-
 Design Patterns With C++
 ========================
 
@@ -62,9 +59,3 @@ To Be Done
 * Fun exercise: devise a system where person have a sensor plugged
   into them. When the sensor sees a sign of sickness, a post is made
   into SocialDB to charge for it, and an observing party is notified.
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx_design_patterns

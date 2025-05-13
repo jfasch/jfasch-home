@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.multithreading.scoped_locking
-   :dependencies: cxx11.multithreading.mutex
-
 .. include:: <mmlalias.txt>
 
 

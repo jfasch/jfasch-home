@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_misc.passwd_parser
-   :dependencies: cxx03.standard_library_miscellanea.string,
-		  cxx03.exceptions.try_catch
-
 .. include:: <mmlalias.txt>
 
 
@@ -177,11 +173,7 @@ will likely require the following tools.
   corresponding section in
   :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`)
 
-Dependencies
-------------
 
-.. ot-graph::
-   :entries: cxx03.exercises_misc.passwd_parser
 
 .. rubric:: Footnotes
 

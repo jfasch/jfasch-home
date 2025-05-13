@@ -1,7 +1,3 @@
-.. ot-topic:: linux.sysprog.intro_hw.watch
-   :dependencies: linux.sysprog.intro_hw.get,
-		  linux.sysprog.intro_hw.sysfs_gpio
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.new_language_features
-
-
 New Language Features
 =====================
 
@@ -42,12 +39,3 @@ Topics
    ranges/group
    concepts/group
    modules
-
-.. concepts
-..   http://docs.seqan.de/seqan3/3-master-user/tutorial_concepts.html
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features

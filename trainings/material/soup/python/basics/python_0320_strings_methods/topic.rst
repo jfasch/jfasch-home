@@ -1,6 +1,3 @@
-.. ot-topic:: python.basics.python_0320_strings_methods
-   :dependencies: python.basics.python_0300_strings
-
 .. include:: <mmlalias.txt>
 
 

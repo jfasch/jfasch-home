@@ -1,5 +1,3 @@
-.. ot-group:: cxx11.new_language_features.ranges
-
 .. include:: <mmlalias.txt>
 
 
@@ -18,9 +16,3 @@ Topics
    intro
    good-bad
    links
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features.ranges

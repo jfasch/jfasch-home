@@ -1,6 +1,3 @@
-.. ot-task:: project_xxx.wait_hardware
-
-
 Wait for Customer Hardware
 ==========================
 

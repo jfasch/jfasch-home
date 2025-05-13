@@ -1,7 +1,3 @@
-.. ot-topic:: linux.ssh.key_pair
-   :dependencies: linux.ssh.basics, 
-		  linux.basics.intro.login
-
 .. meta::
    :description: Slide material: SSH key pairs
    :keywords: linux, ssh, ssh-keygen, password authentication,

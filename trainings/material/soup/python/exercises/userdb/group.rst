@@ -1,6 +1,3 @@
-.. ot-group:: python.exercises.userdb
-
-
 User Database (Exercise Series)
 ===============================
 
@@ -21,10 +18,3 @@ Contents
    user_json
    mqtt-publish-csv
    user-class-person
-
-Graph
------
-
-.. ot-graph::
-   :entries: python.exercises.userdb
-

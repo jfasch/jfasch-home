@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.embedded_problems
-
-
 Embedded Problems? Code Bloat? Type Erasure? Solutions?
 =======================================================
 
@@ -140,10 +137,3 @@ More
 	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 	     allowfullscreen>
      </iframe>
-
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx11.embedded_problems

@@ -1,8 +1,6 @@
 Embedded Computing (FH Joanneum Graz)
 =====================================
 
-.. ot-group:: fh
-
 .. toctree::
    :maxdepth: 1
 

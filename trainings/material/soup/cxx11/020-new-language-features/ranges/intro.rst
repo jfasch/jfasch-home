@@ -1,5 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.ranges.intro
-
 .. include:: <mmlalias.txt>
 
 

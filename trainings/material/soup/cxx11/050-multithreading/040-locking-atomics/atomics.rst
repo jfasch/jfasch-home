@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.multithreading.atomics
-   :dependencies: cxx11.multithreading.race_conditions
-
 .. include:: <mmlalias.txt>
 
 

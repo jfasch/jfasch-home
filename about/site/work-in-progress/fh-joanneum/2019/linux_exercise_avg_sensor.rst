@@ -1,7 +1,3 @@
-.. ot-topic:: ecproposal.ec1.linux.exercise_avg_sensor
-   :dependencies: ecproposal.ec1.cxx.unittest,
-		  ecproposal.ec1.linux.exercise_sensors
-
 EX: Averaging Sensor
 ====================
 

@@ -1,5 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.lambda.lambda_is_functor
-
 .. include:: <mmlalias.txt>
 
 

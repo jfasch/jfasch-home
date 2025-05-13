@@ -1,6 +1,3 @@
-.. ot-group:: linux.basics.shell.exercises.cp_mv_mkdir_rm
-
-
 Exercises: Create/Copy/Move/Remove
 ==================================
 
@@ -22,9 +19,3 @@ Contents
    rm-tree
 
    rm-rf
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm

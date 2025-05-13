@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.data_encapsulation.c
-   :dependencies: cxx03.introduction
-
 .. include:: <mmlalias.txt>
 
 

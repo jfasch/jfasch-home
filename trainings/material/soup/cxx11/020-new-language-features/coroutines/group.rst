@@ -1,5 +1,3 @@
-.. ot-group:: cxx11.new_language_features.coroutines
-
 .. include:: <mmlalias.txt>
 
 
@@ -16,9 +14,3 @@ Topics
    :maxdepth: 1
 
    intro
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features.coroutines

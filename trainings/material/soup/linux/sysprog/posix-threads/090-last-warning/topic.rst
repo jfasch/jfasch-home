@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.posix_threads.last_warning
-   :dependencies: linux.sysprog.posix_threads.miscellaneous
-
 .. include:: <mmlalias.txt>
 
 

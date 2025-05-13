@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.rm_tree
-   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.copy_tree,
-		  linux.basics.shell.file_dir_create_rm
-
-
 Exercise: Remove Directory Tree
 ===============================
 
@@ -32,6 +27,3 @@ Exercise: Remove Directory Tree
 
      $ ls ~/parent-copy
      ls: cannot access '/home/<you>/parent-copy': No such file or directory
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.rm_tree

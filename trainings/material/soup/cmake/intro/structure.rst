@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.intro.structure
-   :dependencies: cmake.intro.installation
 .. include:: <mmlalias.txt>
 
 Structure - Subdirectories, Dependencies, and Include Paths

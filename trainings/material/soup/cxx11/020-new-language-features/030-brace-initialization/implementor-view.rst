@@ -1,5 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.brace_initialization.implementor_view
-
 .. include:: <mmlalias.txt>
 
 

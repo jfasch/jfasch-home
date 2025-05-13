@@ -15,7 +15,3 @@ Goals
   * Counting semaphore
   * Condition variable
 
-.. ot-group:: ecproposal.ec1.mt
-
-.. ot-graph::
-   :entries: ecproposal.ec1.mt

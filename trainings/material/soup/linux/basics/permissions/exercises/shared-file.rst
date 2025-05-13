@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.permissions.exercises.shared_file
-   :dependencies: linux.basics.permissions.basics,
-		  linux.basics.permissions.exercises.credentials
-
-
 Exercise: Create Group-Shared File
 ==================================
 
@@ -34,6 +29,3 @@ Exercise: Create Group-Shared File
    .. code-block:: console
 
       $ touch shared.txt
-
-.. ot-graph::
-   :entries: linux.basics.permissions.exercises.shared_file

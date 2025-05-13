@@ -1,9 +1,3 @@
-.. ot-exercise:: cxx11.exercises.bag_unique
-   :dependencies: cxx11.exercises.bag_copy,
-		  cxx11.smart_pointers.unique_ptr,
-		  cxx11.new_language_features.auto,
-		  cxx11.new_language_features.range_based_for
-
 Exercise: Bag Of Items, By Unique Reference
 ===========================================
 

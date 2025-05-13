@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.structures.structures_and_functions
-   :dependencies: c.structures.basics
-
 
 ``struct``: Functions
 =====================

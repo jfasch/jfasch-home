@@ -1,10 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: python.exercises.legacy.while_primeness
-   :dependencies: python.exercises.legacy.cmdline_digit,
-		  python.basics.python_0193_while,
-		  python.basics.python_0139_commandline_argv
-
 
 Exercise: Primeness (``while``)
 ===============================
@@ -41,10 +36,3 @@ The number that the program checks can be given in two ways,
    not prime
    $ python prime.py 2
    prime
-
-Dependencies
-------------
-
-.. ot-graph:: 
-   :entries: python.exercises.legacy.while_primeness
-   

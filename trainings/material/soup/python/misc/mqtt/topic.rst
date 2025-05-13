@@ -1,6 +1,3 @@
-.. ot-topic:: python.misc.mqtt
-   :dependencies: python.swdev.venv
-
 MQTT
 ====
 
@@ -162,10 +159,4 @@ Links
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
       </iframe>
-
-Dependencies
-------------
-
-.. ot-graph:: 
-   :entries: python.misc.mqtt
 

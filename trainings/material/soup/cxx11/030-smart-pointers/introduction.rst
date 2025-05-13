@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.smart_pointers.introduction
-   :dependencies: cxx11.new_language_features.miscellaneous
-
 
 Introduction
 ============

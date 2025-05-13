@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.legacy.uniq_generator
-   :dependencies: python.exercises.legacy.uniq_function,
-		  python.exercises.legacy.passwd,
-		  python.advanced.python_1010_generators_yield
-
 .. include:: <mmlalias.txt>
 
 
@@ -14,9 +9,3 @@ You came up with a solution for
 
 In that solution, you use a temporary list to hold the to-be-returned
 uniqified numbers. Transform your solution to use ``yield`` instead.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.legacy.uniq_generator

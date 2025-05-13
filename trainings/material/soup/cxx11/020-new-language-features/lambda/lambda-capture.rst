@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.lambda.lambda_capture
-   :dependencies: cxx11.new_language_features.lambda.lambda
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.ssh.portforwarding
-   :dependencies: linux.ssh.basics
-
 .. meta::
    :description: SSH Port Forwarding
    :keywords: linux, ssh, tunnel, port forwarding, portforwarding,

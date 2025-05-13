@@ -1,6 +1,3 @@
-.. ot-topic:: linux.ssh.basics
-   :dependencies: linux.basics.intro.login
-
 .. meta::
    :description: Slide material: SSH basics
    :keywords: linux, ssh, ssh-keygen, password authentication,

@@ -1,5 +1,3 @@
-.. ot-topic:: ecproposal.ec1.linux.basics
-
 Introduction to Linux and Unix
 ==============================
 

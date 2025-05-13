@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.new_language_features.lambda
-
-
 Lambda
 ======
 
@@ -18,9 +15,3 @@ Topics
    lambda-is-functor-pitfall
    lambda-capture
    lambda-templates
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features.lambda

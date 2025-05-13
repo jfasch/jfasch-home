@@ -1,8 +1,3 @@
-.. ot-topic:: linux.sysprog.fileio.example_O_CREAT
-   :dependencies: linux.sysprog.fileio.basics,
-		  linux.sysprog.fileio.example_O_WRONLY,
-		  linux.basics.permissions.basics
-
 .. include:: <mmlalias.txt>
 
 

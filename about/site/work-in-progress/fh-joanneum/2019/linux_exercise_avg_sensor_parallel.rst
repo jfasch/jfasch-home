@@ -1,8 +1,3 @@
-.. ot-topic:: ecproposal.ec1.linux.exercise_avg_sensor_parallel
-   :dependencies: ecproposal.ec1.mt.wait,
-		  ecproposal.ec1.mt.exercise_mt_race_fixed,
-		  ecproposal.ec1.linux.exercise_avg_sensor
-
 EX: Averaging Sensor (parallel)
 ===============================
 

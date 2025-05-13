@@ -10,8 +10,3 @@ ECE19: Exercises and Custom Topics
    blinklicht-abc
    blinklicht-unittest
 
-.. ot-group:: ece19
-
-.. ot-graph::
-   :entries: ece19
-

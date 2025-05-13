@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.embedded_problems.virtual_vs_nonvirtual
-   :dependencies: cxx11.miscellaneous.variant, cxx03.inheritance_oo.interface
-
 .. include:: <mmlalias.txt>
 
 

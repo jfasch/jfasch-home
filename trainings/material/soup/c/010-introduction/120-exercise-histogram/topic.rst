@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: c.introduction.exercise_histogram
-   :dependencies: c.introduction.arrays
-
 
 Exercise: Character Histogram
 =============================

@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.permissions.exercises.public_directory
-   :dependencies: linux.basics.permissions.exercises.credentials,
-		  linux.basics.permissions.basics
-
-
 Exercise: Create Public Directory
 ==================================
 
@@ -28,6 +23,3 @@ Exercise: Create Public Directory
   * You and your team mates can store data in it
   * You and your team mates can remove data from it
   * Nobody else but you and your team mates have any permissions
-
-.. ot-graph::
-   :entries: linux.basics.permissions.exercises.public_directory

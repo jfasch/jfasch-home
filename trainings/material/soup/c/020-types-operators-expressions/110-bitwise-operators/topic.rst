@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.types_operators_expressions.bit_operators
-   :dependencies: c.types_operators_expressions.exercise_string_reduce
-
 
 Bit-Operators
 =============

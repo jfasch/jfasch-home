@@ -1,6 +1,3 @@
-.. ot-topic:: linux.toolchain.separate_compilation
-   :dependencies: linux.toolchain.basics
-
 .. include:: <mmlalias.txt>
 
 

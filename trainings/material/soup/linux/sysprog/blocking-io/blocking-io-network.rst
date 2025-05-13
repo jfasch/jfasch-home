@@ -1,7 +1,3 @@
-.. ot-topic:: linux.sysprog.blocking_io.blocking_io_network
-   :dependencies: linux.sysprog.fileio.basics,
-		  linux.sysprog.blocking_io.blocking_io
-
 .. include:: <mmlalias.txt>
 
 

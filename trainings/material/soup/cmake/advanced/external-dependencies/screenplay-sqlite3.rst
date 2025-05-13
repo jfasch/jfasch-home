@@ -1,7 +1,3 @@
-.. ot-topic:: cmake.advanced.external_dependencies_sqlite3
-   :dependencies: cmake.advanced.targets_properties,
-		  cmake.advanced.targets_properties_pub_priv_inc_screenplay,
-		  cmake.advanced.library_function_screenplay
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-group:: cxx03
-
-
 C++
 ===
 
@@ -31,7 +28,4 @@ Exercises
 
    exercises-userdb/group
    exercises-misc/group
-
-.. ot-graph::
-   :entries: cxx03
 

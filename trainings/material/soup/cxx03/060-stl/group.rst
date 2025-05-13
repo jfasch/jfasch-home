@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.stl
-
-
 Standard Template Library
 =========================
 
@@ -21,9 +18,3 @@ Topics
    allocators/group
 
    exercises/group
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx03.stl

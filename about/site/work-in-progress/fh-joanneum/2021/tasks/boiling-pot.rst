@@ -1,9 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.boiling_pot
-   :dependencies: fh2021.switch_interface,
-		  fh2021.sensor_interface
-
 
 (DONE) Boiling Pot (The Beginning)
 ==================================
@@ -91,9 +87,3 @@ Future (*Not* Part Of This Development Cycle)
 * Modifiable low/high hysteresis settings
 * Error reporting ("unreasonable sensor value"?)
 * Status reporting ("switch on", "switch off", for example)
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.boiling_pot, fh2021.sysfs_gpio_switch

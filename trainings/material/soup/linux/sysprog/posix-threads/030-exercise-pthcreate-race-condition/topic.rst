@@ -1,6 +1,3 @@
-.. ot-exercise:: linux.sysprog.posix_threads.exercise_pthcreate_racecondition
-   :dependencies: linux.sysprog.posix_threads.lifecycle
-
 .. include:: <mmlalias.txt>
 
 

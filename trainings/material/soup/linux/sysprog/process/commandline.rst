@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.process.commandline
-   :dependencies: linux.basics.intro.process
-
 .. include:: <mmlalias.txt>
 
 

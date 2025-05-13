@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.userdb.user_class_person
-   :dependencies: python.exercises.userdb.user_json,
-		  python.exercises.userdb.userdb_module,
-		  python.advanced.oo.namedtuple
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -59,9 +54,3 @@ The following tests cover the required ``class Person`` changes.
 .. literalinclude:: code/tests/test_user_json_person.py
    :caption: :download:`code/tests/test_user_json_person.py`
    :language: python
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.userdb.user_class_person

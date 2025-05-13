@@ -1,8 +1,3 @@
-.. ot-topic:: cxx_design_patterns.command
-   :dependencies: cxx03.inheritance_oo.interface,
-		  cxx_design_patterns.composite,
-		  cxx_design_patterns.uml
-
 .. include:: <mmlalias.txt>
 
 

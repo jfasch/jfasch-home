@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.functions_functions.bind
-   :dependencies: cxx11.smart_pointers.closing_words
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.sensor_interface
-   :dependencies: cxx03.inheritance_oo.interface,
-		  linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 
@@ -105,9 +101,3 @@ The Exercise
      [----------] Global test environment tear-down
      [==========] 4 tests from 2 test suites ran. (0 ms total)
      [  PASSED  ] 4 tests.
-
-Topics Covered
---------------
-
-.. ot-graph::
-   :entries: cxx.exercises.sensor_interface

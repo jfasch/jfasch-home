@@ -1,5 +1,3 @@
-.. ot-topic:: linux.ssh.links
-
 .. include:: <mmlalias.txt>
 
 

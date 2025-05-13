@@ -1,6 +1,3 @@
-.. ot-group:: python.basics
-
-
 Python: The Language Fundamentals
 =================================
 
@@ -21,10 +18,3 @@ Topics
 
    installation
    */topic
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.basics
-

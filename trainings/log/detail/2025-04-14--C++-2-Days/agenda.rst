@@ -77,7 +77,6 @@ Multithreading (And Related Topics)
 
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-  * :doc:`/trainings/material/soup/cxx11/050-multithreading/030-race-conditions/topic`
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
@@ -125,5 +124,5 @@ News From The Standard Library
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/links`
 
 * ``std::format``: *Pythonicity never stops*
-* ``std::chrono``: calendar and timezone
+* :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
 * ``std::span``: the problems it solves, and usage

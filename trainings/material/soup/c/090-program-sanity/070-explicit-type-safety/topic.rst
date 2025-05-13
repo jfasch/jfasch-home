@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_sanity.explicit_type_safety
-   :dependencies: c.program_sanity.struct_initialization
-
 
 Explict Type Safety
 ===================

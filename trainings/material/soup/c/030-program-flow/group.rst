@@ -12,11 +12,3 @@ Topics
    :glob:
 
    */topic
-
-Group Description
------------------
-	      
-.. ot-group:: c.program_flow
-
-.. ot-graph::
-   :entries: c.program_flow

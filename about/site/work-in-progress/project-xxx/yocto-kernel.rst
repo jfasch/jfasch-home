@@ -1,6 +1,3 @@
-.. ot-task:: project_xxx.yocto_kernel
-
-
 Extract Kernel from Intel Yocto BSP
 ===================================
 

@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.kernel.multiple_devices
-   :dependencies: linux.kernel.cdev_refactoring
-
-
 Coding: Multiple Devices
 ========================
 
@@ -9,6 +5,3 @@ Coding: Multiple Devices
    :maxdepth: 1
 
    slides
-
-.. ot-graph:: 
-   :entries: linux.kernel.multiple_devices

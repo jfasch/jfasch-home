@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.command
-   :dependencies: cxx_design_patterns.command
-
 Exercise: Command
 =================
 

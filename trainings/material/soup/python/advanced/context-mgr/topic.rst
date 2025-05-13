@@ -1,8 +1,3 @@
-.. ot-topic:: python.advanced.context_mgr
-   :dependencies: python.advanced.oo.classes_and_dicts,
-		  python.advanced.exceptions,
-		  python.advanced.iteration_generation
-
 .. include:: <mmlalias.txt>
 
 

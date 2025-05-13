@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.stl.algorithm.find_if
-   :dependencies: cxx03.stl.algorithm.find
-
 .. include:: <mmlalias.txt>
 
 

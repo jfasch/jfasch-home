@@ -1,13 +1,11 @@
 .. include:: <mmlalias.txt>
 
+
 More About Sets
 ===============
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_0460_sets
-   :dependencies: python.basics.python_0150_datatypes_overview_compound
 
 Sets
 ----

@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.switch_mock_nopoly
-   :dependencies: cxx03.data_encapsulation.classes_objects,
-		  linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 
@@ -28,9 +24,3 @@ rather will be used for testing ("mocking").
    :language: c++
    :caption: :download:`Download switch-mock-nopoly-basic.cpp
 	     </trainings/material/soup/cxx-exercises/nopoly-switch-mock/code/tests/switch-mock-nopoly-basic.cpp>`
-
-Topics Covered
---------------
-
-.. ot-graph::
-   :entries: cxx.exercises.switch_mock_nopoly

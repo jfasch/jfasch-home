@@ -1,6 +1,3 @@
-.. ot-group:: linux.toolchain
-
-
 Toolchain, And Cross Development
 ================================
 
@@ -53,9 +50,3 @@ Exercises
    :maxdepth: 1
 
    exercises/group
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.toolchain

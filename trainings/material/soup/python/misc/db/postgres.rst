@@ -1,13 +1,11 @@
 .. include:: <mmlalias.txt>
 
+
 DBAPI 2: PostgreSQL
 ===================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.db.postgres
-   :dependencies: python.db.dbapi2
 
 DBAPI 2 Example: Postgres
 -------------------------

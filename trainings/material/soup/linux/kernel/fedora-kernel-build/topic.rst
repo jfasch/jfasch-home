@@ -1,5 +1,3 @@
-.. ot-topic:: linux.kernel.fedora_kernel_build
-
 Fedora: Building the Kernel
 ===========================
 
@@ -7,6 +5,3 @@ Fedora: Building the Kernel
    :maxdepth: 1
 
    screenplay
-
-.. ot-graph:: 
-   :entries: linux.kernel.fedora_kernel_build

@@ -1,7 +1,3 @@
-.. ot-topic:: cxx03.inheritance_oo.destructor
-   :dependencies: cxx03.inheritance_oo.basics,
-		  cxx03.data_encapsulation.ctor_dtor
-
 .. include:: <mmlalias.txt>
 
 

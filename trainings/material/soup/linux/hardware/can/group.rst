@@ -1,5 +1,3 @@
-.. ot-group:: linux.hardware.can
-
 CAN Bus With Linux And Python
 =============================
 
@@ -18,9 +16,3 @@ Contents
    20-interfaces
    30-programming
    40-harware
-
-Group Description
------------------
-
-.. ot-graph::
-   :entries: linux.hardware.can

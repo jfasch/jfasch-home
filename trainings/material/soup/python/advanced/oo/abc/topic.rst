@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.oo.abc
-   :dependencies: python.advanced.oo.inheritance
-
 .. include:: <mmlalias.txt>
 
 

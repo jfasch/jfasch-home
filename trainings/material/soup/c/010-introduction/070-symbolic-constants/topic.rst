@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.cpp_symbolic_constants
-   :dependencies: c.introduction.exercise_fahrenheit_for
-
 
 Symbolic Constants
 ==================

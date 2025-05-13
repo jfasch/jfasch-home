@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.user_simple_method
-   :dependencies: cxx03.exercises_userdb.user_const_members,
-		  cxx03.functions_and_methods.methods
-
 .. include:: <mmlalias.txt>
 
 
@@ -29,9 +25,3 @@ idea in general, lets implement a way to let users age. Like so,
 
 Essentially: add to ``class User`` a method, ``void
 age_by_n_years(unsigned int);``
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.user_simple_method

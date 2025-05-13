@@ -1,10 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: python.misc.csv
-   :dependencies: python.basics.python_0220_for,
-		  python.basics.python_0500_files,
-		  python.basics.python_0150_datatypes_overview_compound
-
 
 CSV Files
 =========

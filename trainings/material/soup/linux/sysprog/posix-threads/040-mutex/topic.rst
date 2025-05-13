@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.posix_threads.mutex
-   :dependencies: linux.sysprog.posix_threads.exercise_pthcreate_racecondition
-
 .. include:: <mmlalias.txt>
 
 

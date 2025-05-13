@@ -1,7 +1,3 @@
-.. ot-topic:: python.basics.python_0139_commandline_argv
-   :dependencies: python.basics.python_0130_syntax_etc,
-		  python.basics.python_0125_running
-
 .. include:: <mmlalias.txt>
 
 

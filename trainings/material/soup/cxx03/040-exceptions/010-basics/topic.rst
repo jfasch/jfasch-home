@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx03.exceptions.basics
-
 
 Basics
 ======

@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.strongly_typed_enums
-   :dependencies: c.program_sanity.discrete_values
-
 .. include:: <mmlalias.txt>
 
 

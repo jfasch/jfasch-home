@@ -1,7 +1,3 @@
-.. ot-topic:: linux.basics.shell.cp
-   :dependencies: linux.basics.shell.file_dir_create_rm,
-		  linux.basics.shell.paths
-
 .. include:: <mmlalias.txt>
 
 

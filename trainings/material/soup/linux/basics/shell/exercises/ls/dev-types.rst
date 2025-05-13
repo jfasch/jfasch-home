@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.basics.shell.exercises.ls.dev_types
-   :dependencies: linux.basics.shell.ls
-
-
 Exercise: File Types in ``/dev``
 ================================
 
@@ -11,6 +7,3 @@ Exercise: File Types in ``/dev``
 * What is the type of ``/dev/mqueue``?
 * What is the type of ``/dev/core``?
 * What is the type of ``/dev/stdin``?
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.ls.dev_types

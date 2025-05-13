@@ -1,7 +1,3 @@
-.. ot-topic:: linux.kernel.usermem
-   :dependencies: linux.kernel.workqueue
-
-
 Accessing Userspace Memory
 ==========================
 
@@ -10,6 +6,3 @@ Accessing Userspace Memory
 
    slides
    screenplay
-
-.. ot-graph:: 
-   :entries: linux.kernel.usermem

@@ -1,10 +1,3 @@
-.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_copy_files
-   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
-		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files,
-		  linux.basics.shell.cp,
-		  linux.basics.shell.file_dir_create_rm
-
-
 Exercise: Copy Files
 ====================
 
@@ -23,6 +16,3 @@ Exercise: Copy Files
   ``garbage2.txt`` from your home directory
 
   * Do this using a *single* command
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_copy_files

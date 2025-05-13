@@ -1,5 +1,3 @@
-.. ot-group:: cmake.advanced
-
 .. include:: <mmlalias.txt>
 
 
@@ -57,12 +55,6 @@ Alternative Topics
    conditional-code-problem/topic
    conditional-code-approach-1/topic
    conditional-code-approach-2/topic
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cmake.advanced
 
 Todo jjj |:metal:|
 ------------------

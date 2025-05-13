@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.io_redir_pipes.io_redir_swap_stdout_stderr
-   :dependencies: linux.basics.io_redir_pipes.io_redir
-
 .. include:: <mmlalias.txt>
 
 

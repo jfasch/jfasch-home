@@ -1,6 +1,3 @@
-.. ot-topic:: linux.toolchain.raspi.docker_fedora_wsl
-   :dependencies: linux.toolchain.raspi.details
-
 .. include:: <mmlalias.txt>
 
 

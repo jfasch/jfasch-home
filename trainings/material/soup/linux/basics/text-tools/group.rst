@@ -1,13 +1,11 @@
-.. ot-group:: linux.basics.text_tools
-
-
 Tools: Inspecting Text Files
 ============================
 
 .. contents::
    :local:
 
-**Topics**
+Topics
+------
 
 .. toctree::
    :maxdepth: 1
@@ -20,8 +18,3 @@ Tools: Inspecting Text Files
    grep
    find
    exercises
-
-**Dependencies**
-
-.. ot-graph::
-   :entries: linux.basics.text_tools

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.scheduling.processes_and_threads
-   :dependencies: linux.sysprog.scheduling.basics
-
 .. include:: <mmlalias.txt>
 
 

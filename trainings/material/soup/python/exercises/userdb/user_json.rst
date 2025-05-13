@@ -1,6 +1,3 @@
-.. ot-exercise:: python.exercises.userdb.user_json
-   :dependencies: python.exercises.userdb.userdb_module
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -59,9 +56,3 @@ use it) can better express the requirement,
 .. literalinclude:: code/tests/test_user_json.py
    :caption: :download:`code/tests/test_user_json.py`
    :language: python
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.userdb.user_json

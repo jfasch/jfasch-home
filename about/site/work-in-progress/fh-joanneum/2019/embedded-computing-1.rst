@@ -21,17 +21,3 @@ Current Curriculum
 * Fundamentals of object-oriented programming
 * Data encapsulation through classes and inheritance
 * Objects with their characteristics and methods
-
-Topics
-------
-
-.. ot-group:: ecproposal.ec1
-
-Dependency Graph
-----------------
-
-Read: an arrow ``A`` |longrightarrow| ``B`` means that topic ``A``
-*depends on* topic ``B``.
-
-.. ot-graph::
-   :entries: ecproposal.ec1

@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.switch_interface
-
 
 (DONE) Switch Interface
 =======================

@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: python.misc.pandas.basics
-
 
 Pandas: Basics (``DataFrame`` And ``Series``)
 =============================================

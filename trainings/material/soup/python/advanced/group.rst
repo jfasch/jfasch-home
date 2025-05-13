@@ -1,6 +1,3 @@
-.. ot-group:: python.advanced
-
-
 Python: More Language Features
 ==============================
 
@@ -29,10 +26,3 @@ Topics
    oo/group
    modules
    multithreading/group
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.advanced
-

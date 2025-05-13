@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.structures.typedef
-   :dependencies: c.structures.structures_and_functions
 
 ``typedef``: Type Alias
 =======================

@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.multithreading.basics
-   :dependencies: python.advanced.oo.inheritance
-
 .. include:: <mmlalias.txt>
 
 
@@ -115,9 +112,3 @@ Daemon Threads
 
 .. literalinclude:: code/program-termination-ok.py
    :caption: :download:`code/program-termination-ok.py`
-
-Dependencies
-------------
-
-.. ot-graph:: 
-   :entries: python.advanced.multithreading.basics

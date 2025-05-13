@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.permissions.sticky
-   :dependencies: linux.basics.permissions.basics
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,7 +1,3 @@
-.. ot-topic:: cxx03.data_encapsulation.ctor_dtor
-   :dependencies: cxx03.data_encapsulation.ctor_default,
-		  cxx03.data_encapsulation.ctor_custom
-
 .. include:: <mmlalias.txt>
 
 

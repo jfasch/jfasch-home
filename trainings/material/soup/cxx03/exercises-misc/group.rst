@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.exercises_misc
-
-
 Exercises: Miscellaneous
 ========================
 
@@ -17,10 +14,3 @@ Contents
    american-flag/exercise
    passwd-parser/exercise
    fh-questions
-
-Graph
------
-
-.. ot-graph::
-   :entries: cxx03.exercises_misc
-

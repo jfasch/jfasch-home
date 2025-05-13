@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.userdb.csvdictreader
-   :dependencies: python.basics.python_0139_commandline_argv,
-		  python.misc.csv,
-		  python.exercises.userdb.csvreader
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -44,9 +39,3 @@ row (use Python's `csv.dictreader
 
    Btw, like in :doc:`csvreader`, the CSV file is encoded in
    ``cp1252``.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.userdb.csvdictreader

@@ -1,8 +1,3 @@
-.. ot-topic:: cxx03.stl.exercises.reverse_string.solution
-   :dependencies: cxx03.stl.exercises.reverse_string.exercise,
-		  cxx03.stl.algorithm.reverse,
-		  cxx03.stl.algorithm.reverse_copy
-
 .. include:: <mmlalias.txt>
 
 
@@ -42,7 +37,3 @@ Using ``std::reverse_copy<>``
 .. literalinclude:: reverse-string-reverse-copy.cpp
    :caption: :download:`reverse-string-reverse-copy.cpp`
    :language: c++
-
-
-.. ot-graph::
-   :entries: cxx03.stl.exercises.reverse_string.solution

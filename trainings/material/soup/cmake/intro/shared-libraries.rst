@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.intro.shared_libraries_preview
-   :dependencies: cmake.intro.libraries
 .. include:: <mmlalias.txt>
 
 

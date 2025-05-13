@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.new_language_features.delegating_ctor
-   :dependencies: cxx11.new_language_features.range_based_for
-
 
 Delegating Constructor
 ======================

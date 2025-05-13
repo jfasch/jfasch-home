@@ -1,6 +1,3 @@
-.. ot-exercise:: linux.sysprog.posix_threads.exercise_mutex
-   :dependencies: linux.sysprog.posix_threads.mutex
-
 .. include:: <mmlalias.txt>
 
 

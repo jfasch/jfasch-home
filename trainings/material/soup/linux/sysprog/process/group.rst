@@ -1,6 +1,3 @@
-.. ot-group:: linux.sysprog.process
-
-
 Processes
 =========
 
@@ -15,9 +12,3 @@ Contents
 
    commandline
    tree
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.sysprog.fileio

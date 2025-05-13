@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.sensor_repository.lookup_sunny
-   :dependencies: cxx.exercises.stl.sensor_repository.insert_sunny
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,5 +1,3 @@
-.. ot-group:: cxx11.new_language_features.concepts
-
 .. include:: <mmlalias.txt>
 
 
@@ -18,9 +16,3 @@ Topics
    intro/topic
    writing-concepts/topic
    links
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features.concepts

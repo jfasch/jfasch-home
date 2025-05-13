@@ -1,10 +1,3 @@
-.. ot-exercise:: linux.ssh.exercises.copy_file
-   :dependencies: linux.ssh.exercises.pubkey,
-		  linux.ssh.key_pair,
-		  linux.ssh.scp,
-		  linux.ssh.basics
-
-
 Exercise: Copy a File To Remote Machine, And Verify
 ===================================================
 
@@ -36,6 +29,3 @@ Exercise: Copy a File To Remote Machine, And Verify
 
 * Compare the remote fingerprint with the local fingerprint
 * Did the copy succeed without information loss?
-
-.. ot-graph::
-   :entries: linux.ssh.exercises.copy_file

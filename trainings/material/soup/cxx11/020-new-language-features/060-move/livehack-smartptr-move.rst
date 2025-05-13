@@ -1,7 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.livehack_smartptr_move
-   :dependencies: cxx11.new_language_features.move_pf.overview,
-		  cxx11.smart_pointers.introduction_livehack
-
 .. include:: <mmlalias.txt>
 
 

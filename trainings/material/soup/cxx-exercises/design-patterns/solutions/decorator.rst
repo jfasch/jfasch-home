@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.solutions.decorator
-   :dependencies: cxx.exercises.design_patterns.decorator
-
 .. include:: <mmlalias.txt>
 
 

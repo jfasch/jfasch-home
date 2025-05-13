@@ -1,5 +1,3 @@
-.. ot-topic:: python.drafts.asyncio
-
 .. include:: <mmlalias.txt>
 
 

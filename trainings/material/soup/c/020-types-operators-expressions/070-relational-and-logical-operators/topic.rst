@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.types_operators_expressions.relational_logical_operators
-   :dependencies: c.types_operators_expressions.arithmetic_operators
-
 
 Relational and Logical Operators
 ================================

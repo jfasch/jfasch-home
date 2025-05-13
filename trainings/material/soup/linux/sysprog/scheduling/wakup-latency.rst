@@ -1,7 +1,3 @@
-.. ot-topic:: linux.sysprog.scheduling.wakeup_latency
-   :dependencies: linux.sysprog.scheduling.basics,
-		  linux.sysprog.blocking_io.blocking_io
-
 .. include:: <mmlalias.txt>
 
 

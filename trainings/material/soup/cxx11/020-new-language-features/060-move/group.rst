@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.new_language_features.move_pf
-
-
 Move Semantics, Rvalue References
 =================================
 
@@ -25,9 +22,3 @@ Alternative Livehacking
    :maxdepth: 1
 
    livehack-smartptr-move
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features.move_pf

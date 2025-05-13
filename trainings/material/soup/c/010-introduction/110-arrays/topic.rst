@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.arrays
-   :dependencies: c.introduction.exercise_wc
-
 
 Arrays
 ======

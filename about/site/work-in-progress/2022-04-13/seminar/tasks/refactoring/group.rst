@@ -1,5 +1,3 @@
-.. ot-group:: clean_code.refactoring
-
 Refactoring
 ===========
 
@@ -10,7 +8,3 @@ Refactoring
    backingstore-monolithic
    backingstore-interface
    pass-store-in-ctor
-
-
-.. ot-graph::
-   :entries: clean_code.refactoring

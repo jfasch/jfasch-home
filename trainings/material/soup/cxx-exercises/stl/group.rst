@@ -1,6 +1,3 @@
-.. ot-group:: cxx.exercises.stl
-
-
 C++ Exercises: Standard Template Library
 ========================================
 
@@ -21,9 +18,3 @@ Exercises
    filter-greater-10
    filter-generic
    sensor-repository/group
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx.exercises.stl

@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_misc.fh_moodle_quiz
-   :dependencies: cxx03.functions_and_methods.overloading
-
-
 FH/Moodle Quiz: C++
 ===================
 
@@ -166,9 +162,3 @@ Questions
          accessing index 0 (``vec[0]``) leads to undefined behavior
        *
        * n
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_misc.fh_moodle_quiz

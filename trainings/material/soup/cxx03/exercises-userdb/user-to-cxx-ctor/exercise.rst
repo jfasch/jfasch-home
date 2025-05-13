@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.user_ctor
-   :dependencies: cxx03.data_encapsulation.ctor_custom,
-		  cxx03.standard_library_miscellanea.string
-
 .. include:: <mmlalias.txt>
 
 
@@ -44,9 +40,3 @@ is written in C, in an object oriented style. Transform that
      :caption: ``CMakeLists.txt``
 
      ADD_EXECUTABLE(user-main user-main.cpp user.cpp)
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.user_ctor

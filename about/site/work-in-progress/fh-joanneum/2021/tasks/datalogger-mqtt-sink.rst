@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.datalogger_mqtt_sink
-   :dependencies: fh2021.datalogger
-
 
 Data Logger: MQTT Sink
 ======================
@@ -95,9 +92,3 @@ Future (*Not* Part Of This Development Cycle)
   "switch-on"/"switch-off" events and temperature measurements (it
   only has a single sensor, *the temperature of the pot itself*) -
   will need a more flexible input than just ``SensorValues``
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.datalogger_mqtt_sink

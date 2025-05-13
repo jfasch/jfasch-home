@@ -1,9 +1,3 @@
-.. ot-topic:: cxx_design_patterns.abstract_factory
-   :dependencies: cxx_design_patterns.singleton,
-		  cxx03.inheritance_oo.interface,
-		  cxx_design_patterns.uml,
-		  cxx_design_patterns.sensor_hierarchy
-
 .. include:: <mmlalias.txt>
 
 

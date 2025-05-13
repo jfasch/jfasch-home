@@ -1,6 +1,3 @@
-.. ot-task:: project_xxx.audio_chip
-   :dependencies: project_xxx.hardware_bringup
-
 Audio Chip Bringup
 ==================
 

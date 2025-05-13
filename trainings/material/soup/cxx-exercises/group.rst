@@ -1,6 +1,3 @@
-.. ot-group:: cxx.exercises
-
-
 C++ Exercises
 =============
 
@@ -38,9 +35,3 @@ Exercises
 
    sensor-w1/sensor-w1
    sensor-w1-factory/sensor-w1-factory
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx.exercises

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.intro.environment
-   :dependencies: linux.basics.intro.process
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-group:: python.exercises.csv
-
-
 CSV and Databases
 =================
 
@@ -18,10 +15,3 @@ Contents
 
    csv-module
    csv-db
-
-Graph
------
-
-.. ot-graph::
-   :entries: python.exercises.csv
-

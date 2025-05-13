@@ -1,7 +1,3 @@
-.. ot-topic:: python.swdev.venv
-   :dependencies: python.misc.import,
-		  python.swdev.pip
-
 Virtual Environments
 ====================
 
@@ -10,7 +6,3 @@ Virtual Environments
 
    slides
    screenplay
-
-.. ot-graph:: 
-   :entries: python.swdev.venv
-

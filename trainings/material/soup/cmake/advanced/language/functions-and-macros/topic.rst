@@ -1,7 +1,3 @@
-.. ot-topic:: cmake.advanced.language.functions_and_macros
-   :dependencies: cmake.advanced.language.variables,
-		  cmake.advanced.language.datatypes,
-		  cmake.advanced.language.if_and_conditions
 .. include:: <mmlalias.txt>
 
 

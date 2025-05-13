@@ -1,5 +1,3 @@
-.. ot-topic:: ecproposal.ec1.cxx.build
-
 C++: Building with CMake
 ========================
 

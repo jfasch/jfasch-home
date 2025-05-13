@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_flow.else_if
-   :dependencies: c.program_flow.if_else
-
 
 ``else`` - ``if``
 =================

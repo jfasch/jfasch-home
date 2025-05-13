@@ -12,11 +12,3 @@ Topics
    :glob:
 
    */topic
-
-Group Description
------------------
-	      
-.. ot-group:: cxx11.functions_functions
-
-.. ot-graph::
-   :entries: cxx11.functions_functions

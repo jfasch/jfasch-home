@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise::  c.introduction.exercise_fahrenheit_float
-   :dependencies: c.introduction.variables_and_arithmetic_expressions
-
 
 Exercise: A Better Fahrenheit Table
 ===================================

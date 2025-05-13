@@ -1,7 +1,3 @@
-.. ot-topic:: cxx11.embedded_problems.variant_manual_if
-   :dependencies: cxx11.embedded_problems.unrelated,
-		  cxx11.miscellaneous.variant
-
 .. include:: <mmlalias.txt>
 
 

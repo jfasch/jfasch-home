@@ -1,7 +1,3 @@
-.. ot-exercise:: python.advanced.multithreading.exam_questions
-   :dependencies: python.advanced.multithreading.basics,
-		  python.advanced.multithreading.mutex
-
 Multithreading: Exam Questions
 ==============================
 
@@ -40,8 +36,3 @@ Multithreading: Exam Questions
 
   * A mutex
   * Character device
-
-
-
-.. ot-graph::
-   :entries: python.advanced.multithreading.exam_questions

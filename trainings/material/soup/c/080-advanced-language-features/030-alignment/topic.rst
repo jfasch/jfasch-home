@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.advanced_language_features.alignment
-   :dependencies: c.advanced_language_features.atomic
-
 
 Alignment
 =========

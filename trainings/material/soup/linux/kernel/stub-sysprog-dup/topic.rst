@@ -1,6 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: linux.kernel.stub_sysprog_dup
 
 ``dup()``, ``fork()``, and Reference Counting (Stub)
 ====================================================

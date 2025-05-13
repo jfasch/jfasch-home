@@ -1,7 +1,3 @@
-.. ot-exercise:: python.exercises.herdt.username_password
-   :dependencies: python.exercises.herdt.greeting,
-		  python.basics.python_0170_if
-
 .. include:: <mmlalias.txt>
 
 
@@ -16,9 +12,3 @@ Write a program that
   you hardcode in the program.
 * Outputs (to ``stdout``) either "Authentication successful" or
   "Authentication failed".
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.herdt.username_password

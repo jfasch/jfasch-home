@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: python.basics.python_0170_if
-   :dependencies: python.basics.python_0160_boolean
 
 The ``if`` Statement
 ====================
@@ -42,7 +40,3 @@ The ``if`` Statement
               print('3')
           else:
               print('many')
-
-
-.. ot-graph::
-   :entries: python.basics.python_0170_if

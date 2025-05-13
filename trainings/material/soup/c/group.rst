@@ -21,18 +21,3 @@ Topics
    090-program-sanity/group
    100-performance/group
    110-profiling/group
-
-Group Description
------------------
-	      
-.. ot-group:: c
-
-.. ot-graph::
-   :entries: c
-
-.. register subgroups with toctree.
-
-.. toctree::
-   :hidden:
-
-..   020-data-encapsulation/group

@@ -1,7 +1,3 @@
-.. ot-topic:: python.misc.encoding
-   :dependencies: python.basics.python_0150_datatypes_overview,
-		  python.basics.python_0320_strings_methods
-
 .. include:: <mmlalias.txt>
 
 
@@ -265,9 +261,3 @@ And Source Encoding?
   .. code-block:: python
 
      # -*- coding: utf-8 -*-
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.misc.encoding

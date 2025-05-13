@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.user_const_members
-   :dependencies: cxx03.exercises_userdb.user_ctor,
-		  cxx03.data_encapsulation.ctor_dtor
-
 .. include:: <mmlalias.txt>
 
 
@@ -29,9 +25,3 @@ overwrite any of the members.
   than *assign* to them.
 * |longrightarrow| use an *initializer list* (see
   :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`)
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.user_const_members

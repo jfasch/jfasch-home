@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.functions
-   :dependencies: c.introduction.exercise_histogram
-
 
 Functions
 =========

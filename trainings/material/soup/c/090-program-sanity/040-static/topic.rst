@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_sanity.static
-   :dependencies: c.program_sanity.discrete_values
 
 Visibility - ``static``
 =======================

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.intro.login
-   :dependencies: linux.basics.intro.process_tree
-
 .. include:: <mmlalias.txt>
 
 

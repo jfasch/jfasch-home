@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.types_operators_expressions.declarations
-   :dependencies: c.types_operators_expressions.constants
-
 
 Variable Definitions
 ====================

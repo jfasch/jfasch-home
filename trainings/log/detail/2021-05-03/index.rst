@@ -60,11 +60,6 @@ Tag 3
 Tag 4
 .....
 
-.. ot-graph::
-   :entries: python.exercises.legacy.wc,
-             python.exercises.legacy.revert,
-             python.exercises.legacy.distill
-
 **PCAP – Certified Associate in Python Programming certification**
 
 * `PCAP <https://pythoninstitute.org/certification/pcap-certification-associate/>`__

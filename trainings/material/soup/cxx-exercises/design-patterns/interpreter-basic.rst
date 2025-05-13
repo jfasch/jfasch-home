@@ -1,8 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.interpreter_basic
-   :dependencies: cxx_design_patterns.interpreter,
-		  cxx03.inheritance_oo.interface,
-		  cxx_design_patterns.uml
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-task:: project_xxx.debian_config
-
-
 Get Debian 10 Kernel Config
 ===========================
 

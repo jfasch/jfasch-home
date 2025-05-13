@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.shell.commandline
-   :dependencies: linux.basics.intro.overview
-
 .. include:: <mmlalias.txt>
 
 

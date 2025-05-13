@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.solutions.command
-   :dependencies: cxx.exercises.design_patterns.command
-
 .. include:: <mmlalias.txt>
 
 

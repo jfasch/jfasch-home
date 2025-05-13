@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.external_dependencies
-   :dependencies: cmake.advanced.targets_properties
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.stl.algorithm.reverse
-   :dependencies: cxx03.stl.basics
-
 .. include:: <mmlalias.txt>
 
 

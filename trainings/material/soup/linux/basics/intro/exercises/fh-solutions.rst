@@ -203,9 +203,3 @@ Processes, Scheduling, and Virtual Memory
      * * Every process except process 1 has a parent process
        * y
        *
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.intro.fh_moodle_quiz

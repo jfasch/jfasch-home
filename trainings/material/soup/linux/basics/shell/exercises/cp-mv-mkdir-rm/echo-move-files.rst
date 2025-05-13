@@ -1,10 +1,3 @@
-.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_move_files
-   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
-		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files,
-		  linux.basics.shell.cp,
-		  linux.basics.shell.ls
-
-
 Exercise: Move Files
 ====================
 
@@ -26,6 +19,3 @@ Exercise: Move Files
   ``/tmp/firstname.lastname/parent``
 
   * Do this using a *single* command
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_move_files

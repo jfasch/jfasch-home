@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.external_dependencies_sqlite3_optional_graph
-   :dependencies: cmake.advanced.external_dependencies_sqlite3
 .. include:: <mmlalias.txt>
 
 

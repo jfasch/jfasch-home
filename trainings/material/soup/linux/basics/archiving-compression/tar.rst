@@ -1,7 +1,3 @@
-.. ot-topic:: linux.basics.archiving_compression.tar
-   :dependencies: linux.basics.shell.commandline,
-		  linux.basics.archiving_compression.gzip
-
 .. include:: <mmlalias.txt>
 
 

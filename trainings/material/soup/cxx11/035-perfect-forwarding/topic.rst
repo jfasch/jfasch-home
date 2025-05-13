@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.perfect_forwarding
-   :dependencies: cxx11.new_language_features.move_pf.overview
-
 .. include:: <mmlalias.txt>
 
 

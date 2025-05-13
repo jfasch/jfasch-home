@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.inheritance_oo.basics
-   :dependencies: cxx03.data_encapsulation.classes_objects
-
 .. include:: <mmlalias.txt>
 
 

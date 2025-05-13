@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.standard_library_miscellanea
-
-
 The Standard Library: Miscellaneous Topics
 ==========================================
 
@@ -15,9 +12,3 @@ Topics
    :glob:
 
    */topic
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx03.standard_library_miscellanea

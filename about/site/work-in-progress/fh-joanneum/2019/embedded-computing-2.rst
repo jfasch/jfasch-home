@@ -18,17 +18,3 @@ Current Curriculum
 * Concurrency
 * Use of class libraries
 * Templates and template classes 
-
-Topics
-------
-
-.. ot-group:: ecproposal.ec2
-
-Dependency Graph
-----------------
-
-Read: an arrow ``A`` |longrightarrow| ``B`` means that topic ``A``
-*depends on* topic ``B``.
-
-.. ot-graph::
-   :entries: ecproposal.ec2

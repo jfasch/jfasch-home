@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.character_arrays
-   :dependencies: c.introduction.exercise_power_declaration
-
 
 Character Arrays
 ================

@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.userdb_search
-   :dependencies: cxx03.exercises_userdb.userdb_insert
-
 .. include:: <mmlalias.txt>
 
 
@@ -44,9 +41,3 @@ version of it):
 
 .. literalinclude:: test-userdb-search.cpp
    :caption: :download:`test-userdb-search.cpp`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.userdb_search

@@ -1,5 +1,3 @@
-.. ot-group:: cmake.intro
-
 .. include:: <mmlalias.txt>
 
 
@@ -33,9 +31,3 @@ CMake: Introduction
    installation
    structure
    cxx-and-rants
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cmake.intro

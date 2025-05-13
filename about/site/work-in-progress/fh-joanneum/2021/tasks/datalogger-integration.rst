@@ -1,10 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.datalogger_integration
-   :dependencies: fh2021.datalogger,
-		  fh2021.datalogger_mqtt_sink,
-		  fh2021.datalogger_csv_sink
-
 
 Data Logger: Integration
 ========================
@@ -28,9 +23,3 @@ Integrate :doc:`datalogger` with the real world
 
   * :doc:`datalogger-csv-sink`
   * :doc:`datalogger-mqtt-sink`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.datalogger

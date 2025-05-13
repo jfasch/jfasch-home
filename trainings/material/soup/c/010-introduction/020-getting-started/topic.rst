@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.introduction.hello_world
-   :dependencies: c.introduction.introduction
 
 Hello World
 ===========

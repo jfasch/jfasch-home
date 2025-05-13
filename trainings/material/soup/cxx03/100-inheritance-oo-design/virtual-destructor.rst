@@ -1,8 +1,3 @@
-.. ot-topic:: cxx03.inheritance_oo.virtual_destructor
-   :dependencies: cxx03.inheritance_oo.virtual_method,
-		  cxx03.inheritance_oo.destructor,
-		  cxx03.inheritance_oo.polymorphism
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-topic:: linux.kernel.dma
-   :dependencies: linux.kernel.kmalloc
-
 DMA
 ===
 
@@ -8,6 +5,3 @@ DMA
    :maxdepth: 1
 
    slides
-
-.. ot-graph:: 
-   :entries: linux.kernel.dma

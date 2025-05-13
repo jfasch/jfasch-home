@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.boiling_pot_display
-   :dependencies: fh2021.boiling_pot, fh2021.display_infrastructure
-
 
 Boiling Pot: Display, And Status Reporting
 ==========================================
@@ -30,9 +27,3 @@ Make the following test cases work (both from `boiling-pot-test.cpp
 
 * ``BoilingPot_suite.status_report``
 * ``BoilingPot_suite.percentage_display``
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.boiling_pot_display

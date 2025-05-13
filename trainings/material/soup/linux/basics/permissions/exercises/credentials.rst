@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.permissions.exercises.credentials
-   :dependencies: linux.basics.permissions.basics,
-		  linux.basics.intro.login
-
-
 Exercise: Determine Your User Credentials
 =========================================
 
@@ -23,6 +18,3 @@ Exercise: Determine Your User Credentials
   * User ID
   * Names of groups you are member of
   * IDs of groups you are member of
-
-.. ot-graph::
-   :entries: linux.basics.permissions.exercises.credentials

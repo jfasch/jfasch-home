@@ -1,9 +1,3 @@
-.. ot-task:: clean_code.refactoring.pass_store_in_ctor
-   :dependencies: clean_code.refactoring.backingstore_monolithic,
-		  clean_code.bugs.overwrite_existing_files,
-		  clean_code.bugs.overwrite_store_content_on_read
-
-
 Load From BackingStore in Constructor
 =====================================
 

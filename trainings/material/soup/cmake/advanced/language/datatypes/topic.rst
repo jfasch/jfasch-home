@@ -1,5 +1,3 @@
-.. ot-topic:: cmake.advanced.language.datatypes
-   :dependencies: cmake.advanced.language.variables
 .. include:: <mmlalias.txt>
 
 Datatypes

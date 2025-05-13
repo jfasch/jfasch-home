@@ -1,5 +1,3 @@
-.. ot-topic:: linux.hardware.can.hardware
-
 .. meta::
    :description: CAN Bus (using MCP2515)
    :keywords: linux, can bus, spi, raspberry pi, raspi

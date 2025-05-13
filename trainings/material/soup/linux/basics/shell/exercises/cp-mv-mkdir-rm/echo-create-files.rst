@@ -1,10 +1,3 @@
-.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files
-   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
-		  linux.basics.shell.file_dir_create_rm,
-		  linux.basics.shell.paths,
-		  linux.basics.shell.cwd
-
-
 Exercise: Create Files (I/O Redirection)
 ========================================
 
@@ -39,6 +32,3 @@ Exercise: Create Files (I/O Redirection)
    .. code-block:: console
 
       $ echo 8020 Graz >> somefile.txt
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files

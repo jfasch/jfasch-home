@@ -1,6 +1,3 @@
-.. ot-topic:: c.performance.memory
-   :dependencies: c.performance.computebound
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,8 +1,6 @@
 SSH: Secure Shell
 =================
 
-.. ot-group:: linux.ssh
-
 Topics
 ------
 
@@ -16,9 +14,3 @@ Topics
    sshfs
    links
    exercises/group
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.ssh

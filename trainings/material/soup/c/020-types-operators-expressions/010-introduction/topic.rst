@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.types_operators_expressions.introduction
-   :dependencies: c.introduction.external_variables_and_scope
-
 
 Type System
 ===========

@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.profiling.callgrind
-   :dependencies: c.profiling.gprof
-
 
 ``callgrind``
 =============

@@ -1,5 +1,3 @@
-.. ot-exercise:: cxx03.exercises_misc.american_flag
-
 .. include:: <mmlalias.txt>
 
 
@@ -54,9 +52,3 @@ function like so:
    print_chars('*', " ", 6);
    cout << ' ';
    print_chars('=', "", 34);
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_misc.american_flag

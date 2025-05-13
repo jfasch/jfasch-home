@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.basics.syscalls
-   :dependencies: linux.toolchain.basics
-
 .. include:: <mmlalias.txt>
 
 

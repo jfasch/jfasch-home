@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-exercise:: c.types_operators_expressions.exercise_string_reduce
-   :dependencies: c.types_operators_expressions.increment_decrement_operators
-
 
 Exercise: Copy and Reduce String
 ================================

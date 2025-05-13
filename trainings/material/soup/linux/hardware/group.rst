@@ -1,5 +1,3 @@
-.. ot-group:: linux.hardware
-
 Linux Hardware Interfaces
 =========================
 
@@ -20,9 +18,3 @@ Contents
    i2c/topic
    pwm/topic
    brushless-motor/topic
-
-Group Description
------------------
-
-.. ot-graph::
-   :entries: linux.hardware 

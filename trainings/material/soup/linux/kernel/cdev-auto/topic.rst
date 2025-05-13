@@ -1,6 +1,3 @@
-.. ot-topic:: linux.kernel.cdev_auto
-   :dependencies: linux.kernel.cdev_manual
-
 Modern Character Devices
 ========================
 
@@ -16,6 +13,3 @@ Modern Character Devices
 
    slides
    screenplay
-
-.. ot-graph:: 
-   :entries: linux.kernel.cdev_auto

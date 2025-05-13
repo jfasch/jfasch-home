@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.legacy.function_primeness
-   :dependencies: python.exercises.legacy.max_numbers_function,
-		  python.basics.python_0270_functions,
-		  python.basics.python_0139_commandline_argv
-
 .. include:: <mmlalias.txt>
 
 
@@ -30,9 +25,3 @@ using ``input()`` to prompt the user for the number) remains
 intact. The only change is that the new function is called with the
 number as parameter, rather than implement the algorithm in top level
 code.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.legacy.function_primeness

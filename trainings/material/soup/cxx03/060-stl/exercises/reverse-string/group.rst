@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.stl.exercises.reverse_string
-
-
 Exercise: Reverse A String
 ==========================
 

@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.new_language_features.const_expr_init_eval
-
-
 ``const``, ``constexpr``, ``constinit``, ``consteval``
 ======================================================
 
@@ -69,9 +66,3 @@ Links
 	     referrerpolicy="strict-origin-when-cross-origin" 
 	     allowfullscreen>
      </iframe>
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features.const_expr_init_eval

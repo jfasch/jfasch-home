@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx03.exercises_userdb.userdb_search_notfound_exception
-   :dependencies: cxx03.exercises_userdb.userdb_search_find_if,
-		  cxx03.exceptions.try_catch
-
 .. include:: <mmlalias.txt>
 
 
@@ -79,9 +75,3 @@ Exercise
 
 .. literalinclude:: test-userdb-search-notfound.cpp
    :caption: :download:`test-userdb-search-notfound.cpp`
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx03.exercises_userdb.userdb_search_notfound_exception

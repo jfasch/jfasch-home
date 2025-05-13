@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.basics.shell.fh_moodle_quiz
-   :dependencies: linux.basics.shell.paths
-
-
 FH/Moodle Quiz: Shell
 =====================
 
@@ -32,9 +28,3 @@ Questions
      * * '..' refers to the currect working directory of the parent
          process
        * n
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.shell.fh_moodle_quiz

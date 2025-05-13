@@ -1,11 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.boiling_pot_full_integration
-   :dependencies: fh2021.boiling_pot_basic_integration,
-		  fh2021.boiling_pot_display,
-		  fh2021.display_infrastructure,
-		  fh2021.datalogger_mqtt_sink
-
 
 Boiling Pot: Full Integration (Display And IoT)
 ===============================================
@@ -29,9 +23,3 @@ Requirements
     :doc:`display-infrastructure`), composed of one PWM and one LEd
     stripe
   * Use a MQTT reporter
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.boiling_pot, fh2021.sysfs_gpio_switch

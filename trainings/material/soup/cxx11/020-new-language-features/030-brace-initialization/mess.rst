@@ -1,7 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.brace_initialization.mess
-   :dependencies: cxx11.new_language_features.brace_initialization.intro,
-		  cxx11.new_language_features.brace_initialization.implementor_view
-
 .. include:: <mmlalias.txt>
 
 

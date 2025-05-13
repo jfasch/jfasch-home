@@ -1,14 +1,11 @@
 .. include:: <mmlalias.txt>
 
+
 More About Dictionaries
 =======================
 
 .. contents::
    :local:
-
-.. ot-topic:: python.basics.python_0450_dictionaries
-   :dependencies: python.basics.python_0150_datatypes_overview_compound,
-                  python.basics.python_0220_for
 
 Dictionaries
 ------------

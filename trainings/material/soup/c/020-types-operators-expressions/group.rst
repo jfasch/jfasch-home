@@ -12,11 +12,3 @@ Topics
    :glob:
 
    */topic
-
-Group Description
------------------
-	      
-.. ot-group:: c.types_operators_expressions
-
-.. ot-graph::
-   :entries: c.types_operators_expressions

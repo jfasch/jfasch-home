@@ -1,6 +1,3 @@
-.. ot-topic:: ecproposal.ec1.linux.dev_mgmt
-   :dependencies: ecproposal.ec1.linux.basics
-
 Linux Hardware Device Management
 ================================
 

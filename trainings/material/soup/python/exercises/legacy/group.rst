@@ -32,12 +32,3 @@ Contents
    passwd
    uniq_generator
    fibonacci-generator
-
-Graph
------
-
-.. ot-group:: python.exercises.legacy
-
-.. ot-graph::
-   :entries: python.exercises.legacy
-

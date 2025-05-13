@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.sensor_mock_nopoly
-   :dependencies: cxx03.data_encapsulation.classes_objects,
-		  linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 
@@ -33,9 +29,3 @@ Use the following test to guide you through the implementation:
    :language: c++
    :caption: :download:`Download sensor-mock-nopoly-basic.cpp
              </trainings/material/soup/cxx-exercises/nopoly-sensors-core/code/tests/sensor-mock-nopoly-basic.cpp>`
-
-Topics Covered
---------------
-
-.. ot-graph::
-   :entries: cxx.exercises.sensor_mock_nopoly

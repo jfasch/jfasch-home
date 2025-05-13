@@ -1,10 +1,3 @@
-.. ot-exercise:: linux.basics.shell.exercises.cp_mv_mkdir_rm.verify_hierarchy
-   :dependencies: linux.basics.shell.exercises.cp_mv_mkdir_rm.mkdir_p_rm_r,
-		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_create_files,
-		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_copy_files,
-		  linux.basics.shell.exercises.cp_mv_mkdir_rm.echo_move_files
-
-
 Exercise: Verify, Repeat
 ========================
 
@@ -55,8 +48,3 @@ In the exercises
    <../../file_dir_create_rm>` ``/tmp/firstname.lastname/parent`` again recursively, and
    recreate the hierarchy.
 3. **Repeat until successful!**
-
-
-
-.. ot-graph::
-   :entries: linux.basics.shell.exercises.cp_mv_mkdir_rm.verify_hierarchy

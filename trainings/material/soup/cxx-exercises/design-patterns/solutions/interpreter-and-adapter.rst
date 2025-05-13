@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.solutions.interpreter_and_adapter
-   :dependencies: cxx.exercises.design_patterns.interpreter_and_adapter
-
 .. include:: <mmlalias.txt>
 
 

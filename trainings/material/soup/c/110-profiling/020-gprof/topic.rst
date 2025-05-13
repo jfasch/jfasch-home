@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.profiling.gprof
-   :dependencies: c.profiling.introduction
-
 
 GNU Profiler - ``gprof``
 ========================

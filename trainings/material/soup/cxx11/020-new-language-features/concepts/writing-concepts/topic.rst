@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.concepts.writing_concepts
-   :dependencies: cxx11.new_language_features.concepts.intro
-
 .. include:: <mmlalias.txt>
 
 

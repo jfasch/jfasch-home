@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.starargs
-   :dependencies: python.basics.python_0270_functions
-
 .. include:: <mmlalias.txt>
 
 

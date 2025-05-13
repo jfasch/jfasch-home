@@ -6,8 +6,6 @@
 Linux and OneWire (using DS18B20 Temperature Sensor as Slave)
 =============================================================
 
-.. ot-topic:: linux.hardware.w1
-
 .. contents::
    :local:
 

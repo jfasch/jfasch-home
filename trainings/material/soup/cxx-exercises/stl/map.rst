@@ -1,6 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.map
-   :dependencies: cxx03.stl.associative_containers.map
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,10 +1,3 @@
-.. ot-exercise:: cxx.exercises.oo_shapes
-   :dependencies: cxx03.data_encapsulation.ctor_custom,
-		  cxx03.functions_and_methods.methods,
-		  cxx03.functions_and_methods.static,
-		  cxx03.functions_and_methods.operators,
-		  cxx03.inheritance_oo.interface
-		  
 .. include:: <mmlalias.txt>
 
 

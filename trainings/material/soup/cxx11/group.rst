@@ -1,6 +1,3 @@
-.. ot-group:: cxx11
-
-
 The New C++ (11-...)
 ====================
 
@@ -24,16 +21,3 @@ Topics
 
    drafts/group
    exercises/group
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx11
-
-.. register subgroups with toctree.
-
-.. toctree::
-   :hidden:
-
-..   020-data-encapsulation/group

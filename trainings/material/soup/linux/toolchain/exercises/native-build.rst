@@ -1,6 +1,3 @@
-.. ot-exercise:: linux.toolchain.exercises.native_build
-   :dependencies: linux.toolchain.static_library
-
 .. include:: <mmlalias.txt>
 
 
@@ -38,6 +35,3 @@ Exercise: Build Software Package (Native)
     against the library.
 
 * Test the outcome by running the two programs.
-
-.. ot-graph::
-   :entries: linux.toolchain.exercises.native_build

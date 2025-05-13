@@ -1,6 +1,3 @@
-.. ot-group:: linux.sysprog.scheduling
-
-
 Scheduling
 ==========
 
@@ -21,9 +18,3 @@ Topics
    realtime-api
 
    questions
-
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: linux.sysprog.scheduling

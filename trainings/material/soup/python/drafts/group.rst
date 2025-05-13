@@ -1,6 +1,3 @@
-.. ot-group:: python.drafts
-
-
 Python: Draft Topics
 ====================
 
@@ -17,6 +14,3 @@ Python: Draft Topics
    argparse/topic
    setuptools/topic
    asyncio/topic
-
-.. ot-graph::
-   :entries: python.drafts

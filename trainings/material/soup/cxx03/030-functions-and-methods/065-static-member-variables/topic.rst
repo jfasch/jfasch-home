@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.functions_and_methods.static_member_variables
-   :dependencies: cxx03.functions_and_methods.static
-
 .. include:: <mmlalias.txt>
 
 

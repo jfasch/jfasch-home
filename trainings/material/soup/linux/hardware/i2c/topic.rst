@@ -9,8 +9,6 @@
 Linux and I2C (using LM73 Temperature Sensor as Slave)
 ======================================================
 
-.. ot-topic:: linux.hardware.i2c
-
 .. contents::
    :local:
 

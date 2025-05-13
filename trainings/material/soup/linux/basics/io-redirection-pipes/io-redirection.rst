@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.io_redir_pipes.io_redir
-   :dependencies: linux.basics.shell.commandline
-
 .. include:: <mmlalias.txt>
 
 

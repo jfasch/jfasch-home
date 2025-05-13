@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.basics.permissions.fh_moodle_quiz_nocheat
-   :dependencies: linux.basics.permissions.basics
-
-
 FH/Moodle Quiz: Permissions
 ===========================
 
@@ -64,9 +60,3 @@ Questions
          contents
        * 
        * 
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.basics.permissions.fh_moodle_quiz_nocheat

@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.embedded_problems.classic_virtual
-   :dependencies: cxx03.inheritance_oo.interface
-
 .. include:: <mmlalias.txt>
 
 

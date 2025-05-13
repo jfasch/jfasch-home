@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.multithreading.introduction
-   :dependencies: cxx11.functions_functions.function
-
 
 Threads Introduction
 ====================

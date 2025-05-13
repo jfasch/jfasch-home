@@ -1,6 +1,3 @@
-.. ot-topic:: linux.kernel.modules_hello_world
-   :dependencies: linux.kernel.fedora_module_build
-
 Module Loading, Hello World
 ===========================
 
@@ -8,6 +5,3 @@ Module Loading, Hello World
    :maxdepth: 1
 
    slides
-
-.. ot-graph:: 
-   :entries: linux.kernel.modules_hello_world

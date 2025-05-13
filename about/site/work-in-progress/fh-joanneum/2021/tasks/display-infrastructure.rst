@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.display_infrastructure
-   :dependencies: fh2021.pwm_display, fh2021.switch_interface
-
 
 Display Interface/Infrastructure
 ================================
@@ -74,9 +71,3 @@ Write one test program ``demo/display-demo``) that
 
   That program is already there, in ``src_demos/main.cpp``, together
   with much of the ``Display`` stuff. Clean it up.
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.display_infrastructure

@@ -1,5 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.modules
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,6 +1,3 @@
-.. ot-topic:: python.swdev.pip
-   :dependencies: python.misc.import
-
 Python Package Index
 ====================
 
@@ -11,6 +8,3 @@ Python Package Index
    screenplay
 
 See also :doc:`../venv/topic`.
-
-.. ot-graph:: 
-   :entries: python.swdev.pip

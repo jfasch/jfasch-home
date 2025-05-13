@@ -1,10 +1,3 @@
-.. ot-exercise:: cxx11.exercises.bag_shared
-   :dependencies: cxx11.exercises.bag_unique,
-		  cxx11.smart_pointers.shared_ptr,
-		  cxx11.smart_pointers.weak_ptr,
-		  cxx11.new_language_features.auto,
-		  cxx11.new_language_features.range_based_for
-
 Exercise: Bag Of Items, By Shared Reference
 ===========================================
 

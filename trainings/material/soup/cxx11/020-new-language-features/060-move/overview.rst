@@ -1,8 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.move_pf.overview
-   :dependencies: cxx11.smart_pointers.unique_ptr,
-		  cxx03.functions_and_methods.references,
-		  cxx03.data_encapsulation.object_copy
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.datalogger
-
 
 (DONE) Data Logger
 ==================
@@ -141,9 +139,3 @@ Future (*Not* Part Of This Development Cycle)
 * Configuration files format(s). JSON? XML? YAML? ``.ini``?
 * CSV sink
 * MQTT sink
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: fh2021.datalogger

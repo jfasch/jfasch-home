@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.memory.malloc
-   :dependencies: c.structures.typedef
-
 
 Dynamic Memory
 ==============

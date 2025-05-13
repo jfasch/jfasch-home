@@ -1,13 +1,11 @@
-.. ot-group:: linux.basics
-
-
 Linux Basics
 ============
 
 .. contents::
    :local:
 
-**Topics**
+Topics
+------
 
 .. toctree::
    :maxdepth: 2
@@ -19,14 +17,10 @@ Linux Basics
    archiving-compression/group
    io-redirection-pipes/group
 
-**Exercises**
+Exercises
+---------
 
 .. toctree::
    :maxdepth: 1
 
    exercises/group
-
-**Dependencies**
-
-.. ot-graph::
-   :entries: linux.basics

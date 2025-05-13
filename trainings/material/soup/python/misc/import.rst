@@ -1,6 +1,3 @@
-.. ot-topic:: python.misc.import
-   :dependencies: python.advanced.modules
-
 The ``import`` Statement (incomplete)
 =====================================
 

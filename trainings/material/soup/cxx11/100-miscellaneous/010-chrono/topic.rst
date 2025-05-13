@@ -1,7 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.multithreading.chrono
-
 
 ``std::chrono``
 ===============

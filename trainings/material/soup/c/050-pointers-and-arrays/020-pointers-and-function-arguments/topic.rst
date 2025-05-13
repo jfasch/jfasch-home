@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.pointers_and_arrays.pointers_and_function_arguments
-   :dependencies: c.pointers_and_arrays.pointers_and_addresses
-
 
 Pointers as Function Parameters
 ===============================

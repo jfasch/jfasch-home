@@ -1,6 +1,3 @@
-.. ot-topic:: cxx03.functions_and_methods.overloading
-   :dependencies: cxx03.data_encapsulation.classes_objects
-
 .. include:: <mmlalias.txt>
 
 

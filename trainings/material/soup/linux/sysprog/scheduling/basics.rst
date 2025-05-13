@@ -1,6 +1,3 @@
-.. ot-topic:: linux.sysprog.scheduling.basics
-   :dependencies: linux.sysprog.blocking_io.blocking_io
-
 .. include:: <mmlalias.txt>
 
 

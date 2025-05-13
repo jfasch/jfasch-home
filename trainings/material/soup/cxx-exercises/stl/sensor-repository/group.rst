@@ -1,5 +1,3 @@
-.. ot-group:: cxx.exercises.stl.sensor_repository
-
 .. include:: <mmlalias.txt>
 
 
@@ -33,9 +31,3 @@ decriptive name.
    remove-not-found
    size-const
    no-memleak
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: cxx.exercises.stl.sensor_repository

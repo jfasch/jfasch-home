@@ -7,7 +7,6 @@ Embedded Computing (STECE-2019)
 .. toctree::
    :maxdepth: 1
 
-   ec
    embedded-computing-1
    embedded-computing-2
 
@@ -91,8 +90,6 @@ environment *and* hardware platform.
 
 Details
 -------
-
-See :doc:`here <ec>` for a complete overview of the course structure.
   
 Embedded Computing 1
 ....................

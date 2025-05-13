@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.new_language_features.structured_binding
-   :dependencies: cxx11.new_language_features.auto
-
 .. include:: <mmlalias.txt>
 
 

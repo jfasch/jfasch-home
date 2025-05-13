@@ -1,6 +1,3 @@
-.. ot-exercise:: python.exercises.herdt.boolean
-   :dependencies: python.basics.python_0160_boolean
-
 .. include:: <mmlalias.txt>
 
 
@@ -21,9 +18,3 @@ Exercise: Boolean Expressions
   #. * ``value1 = 500``
      * ``value2 = 800``
      * ``value3 = 0``
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.herdt.boolean

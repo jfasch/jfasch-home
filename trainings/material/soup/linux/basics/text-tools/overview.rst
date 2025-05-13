@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.text_tools.overview
-   :dependencies: linux.basics.shell.commandline
-
 .. include:: <mmlalias.txt>
 
 

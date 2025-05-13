@@ -6,11 +6,6 @@ References, (Im)mutability
 .. contents::
    :local:
 
-.. ot-topic:: python.basics.python_0250_refs_flat_deep_copy
-   :dependencies: python.basics.python_0140_variables,
-		  python.basics.python_0150_datatypes_overview,
-		  python.basics.python_0150_datatypes_overview_compound
-
 Immutability: Numbers
 ---------------------
 

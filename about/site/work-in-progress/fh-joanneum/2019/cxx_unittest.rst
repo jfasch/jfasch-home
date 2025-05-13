@@ -1,7 +1,3 @@
-.. ot-topic:: ecproposal.ec1.cxx.unittest
-   :dependencies: ecproposal.ec1.cxx.build,
-		  ecproposal.ec1.cxx.oo_basics
-
 C++: Unit Testing
 =================
 

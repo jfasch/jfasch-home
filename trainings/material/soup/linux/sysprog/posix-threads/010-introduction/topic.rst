@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: linux.sysprog.posix_threads.basics
-   :dependencies: linux.sysprog.scheduling.basics
-
 
 Basics
 ======

@@ -1,8 +1,3 @@
-.. ot-topic:: linux.basics.shell.cwd
-   :dependencies: linux.basics.shell.commandline,
-		  linux.basics.intro.process,
-		  linux.basics.shell.paths
-
 .. include:: <mmlalias.txt>
 
 

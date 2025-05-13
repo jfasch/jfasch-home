@@ -1,5 +1,3 @@
-.. ot-topic:: cxx.class_template
-
 C++: Class Templates
 ====================
 

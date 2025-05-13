@@ -1,7 +1,3 @@
-.. ot-exercise:: linux.basics.archiving_compression.exercises
-   :dependencies: linux.basics.archiving_compression.gzip,
-		  linux.basics.archiving_compression.tar
-
 .. include:: <mmlalias.txt>
 
 

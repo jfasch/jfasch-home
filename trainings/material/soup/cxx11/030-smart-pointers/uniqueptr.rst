@@ -1,6 +1,3 @@
-.. ot-topic:: cxx11.smart_pointers.unique_ptr
-   :dependencies: cxx11.smart_pointers.introduction
-
 .. include:: <mmlalias.txt>
 
 

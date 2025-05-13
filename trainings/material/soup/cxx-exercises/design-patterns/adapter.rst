@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx.exercises.design_patterns.adapter
-   :dependencies: cxx_design_patterns.adapter,
-		  cxx.exercises.sensor_interface
-
 Exercise: Adapter
 =================
 

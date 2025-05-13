@@ -1,9 +1,3 @@
-.. ot-exercise:: cxx.exercises.sensor_avg_nopoly
-   :dependencies: cxx.exercises.sensor_mock_nopoly,
-		  cxx03.data_encapsulation.initializer_list,
-		  cxx03.data_encapsulation.classes_objects,
-		  linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 
@@ -38,9 +32,3 @@ a configurable set of sensors that it knows.
    :caption: :download:`Download
 	     sensor-avg-nopoly-change-temperatures.cpp
 	     </trainings/material/soup/cxx-exercises/nopoly-sensor-avg/code/tests/sensor-avg-nopoly-change-temperatures.cpp>`
-
-Topics Covered
---------------
-
-.. ot-graph::
-   :entries: cxx.exercises.sensor_avg_nopoly

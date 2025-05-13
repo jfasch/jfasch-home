@@ -1,7 +1,6 @@
 Exercises (External)
 ====================
 
-
 .. contents::
    :local:
 
@@ -17,12 +16,3 @@ Contents
    greet
    username_password
    exercise_while_even_numbers
-
-Graph
------
-
-.. ot-group:: python.exercises.herdt
-
-.. ot-graph::
-   :entries: python.exercises.herdt
-

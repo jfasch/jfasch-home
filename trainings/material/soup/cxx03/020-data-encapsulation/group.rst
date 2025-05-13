@@ -1,6 +1,3 @@
-.. ot-group:: cxx03.data_encapsulation
-
-
 Data Encapsulation
 ==================
 
@@ -27,8 +24,3 @@ Exercises
 
 * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/group`
 
-Group Description
------------------
-	      
-.. ot-graph::
-   :entries: cxx03.data_encapsulation

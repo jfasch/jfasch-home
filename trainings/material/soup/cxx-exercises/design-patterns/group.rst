@@ -1,6 +1,3 @@
-.. ot-group:: cxx.exercises.design_patterns
-
-
 Exercises: Design Patterns
 ==============================
 
@@ -34,9 +31,3 @@ Solutions
    :maxdepth: 2
 
    solutions/group
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx.exercises.design_patterns

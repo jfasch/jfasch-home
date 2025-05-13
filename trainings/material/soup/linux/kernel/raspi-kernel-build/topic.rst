@@ -1,5 +1,3 @@
-.. ot-topic:: linux.kernel.raspi_kernel_build
-
 Raspberry Pi: Building the Kernel
 =================================
 
@@ -68,12 +66,5 @@ Todo jjj
        :caption: On host ...
 
        $ make ARCH=arm CROSS_COMPILE=arm-linux-gnu- zImage modules dtbs
-
-
-Graph
------
-   
-.. ot-graph:: 
-   :entries: linux.kernel.raspi_kernel_build
 
 

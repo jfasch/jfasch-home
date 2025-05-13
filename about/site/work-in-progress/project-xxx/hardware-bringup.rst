@@ -1,7 +1,3 @@
-.. ot-task:: project_xxx.hardware_bringup
-   :dependencies: project_xxx.dirty_upgrade, project_xxx.wait_hardware
-
-
 Yocto Kernel Bringup on Customer Hardware
 =========================================
 

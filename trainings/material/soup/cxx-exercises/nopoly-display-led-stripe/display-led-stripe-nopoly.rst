@@ -1,9 +1,3 @@
-.. ot-exercise:: cxx.exercises.display_led_stripe_nopoly
-   :dependencies: cxx.exercises.sensor_mock_nopoly,
-		  cxx.exercises.switch_mock_nopoly,
-		  cxx03.data_encapsulation.classes_objects,
-		  linux.toolchain.cmake_local
-
 .. include:: <mmlalias.txt>
 
 
@@ -70,9 +64,3 @@ left unclear. Use these to complete the exercise, one by one.
    :caption: :download:`Download
              display_led_stripe_nopoly_suite__variations.cpp
              <code/tests/display_led_stripe_nopoly_suite__variations.cpp>`
-
-Topics Covered
---------------
-
-.. ot-graph::
-   :entries: cxx.exercises.display_led_stripe_nopoly

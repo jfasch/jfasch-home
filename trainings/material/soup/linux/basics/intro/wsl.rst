@@ -1,6 +1,3 @@
-.. ot-topic:: linux.basics.intro.wsl
-   :dependencies: linux.basics.intro.overview
-
 .. include:: <mmlalias.txt>
 
 

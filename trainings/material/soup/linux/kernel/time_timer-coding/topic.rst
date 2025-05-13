@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.kernel.timer_coding
-   :dependencies: linux.kernel.spinlock_coding,
-		  linux.kernel.timer
-
-
 Coding: Timed Event
 ===================
 
@@ -10,6 +5,3 @@ Coding: Timed Event
    :maxdepth: 1
 
    slides
-
-.. ot-graph:: 
-   :entries: linux.kernel.timer_coding

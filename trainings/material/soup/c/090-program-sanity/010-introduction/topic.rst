@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_sanity.introduction
-   :dependencies: c.advanced_language_features.alignment
-
 
 Sanity and Readabilty
 =====================

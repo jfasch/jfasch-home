@@ -1,6 +1,3 @@
-.. ot-group:: linux.sysprog
-
-
 Linux Systems Programming
 =========================
 
@@ -25,9 +22,3 @@ Contents
    sysprog_signals/topic
    mmap/group
    ipc-mqueue/topic
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.sysprog

@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: c.program_flow.break_and_continue
-   :dependencies: c.program_flow.loops_do_while
-
 
 ``break`` and ``continue``
 ==========================

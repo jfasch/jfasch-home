@@ -1,6 +1,3 @@
-.. ot-group:: cxx11.new_language_features.brace_initialization
-
-
 Brace Initialization (Uniform Initialization)
 =============================================
 
@@ -16,9 +13,3 @@ Topics
    intro
    implementor-view
    mess
-
-Dependencies
-------------
-	      
-.. ot-graph::
-   :entries: cxx11.new_language_features.brace_initialization

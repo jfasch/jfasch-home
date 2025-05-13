@@ -1,7 +1,3 @@
-.. ot-exercise:: cxx11.exercises.bag_copy
-   :dependencies: cxx11.new_language_features.auto,
-		  cxx11.new_language_features.range_based_for
-
 Exercise: Bag Of Items, By Copy
 ===============================
 

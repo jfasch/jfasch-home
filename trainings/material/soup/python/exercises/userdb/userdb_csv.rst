@@ -1,8 +1,3 @@
-.. ot-exercise:: python.exercises.userdb.userdb_module
-   :dependencies: python.exercises.userdb.csvdictreader_function,
-		  python.exercises.userdb.csvreader,
-		  python.advanced.modules
-		  
 .. include:: <mmlalias.txt>
 
 
@@ -35,9 +30,3 @@ use it) can better express the requirement,
 .. literalinclude:: code/tests/test_read_csv.py
    :caption: :download:`code/tests/test_read_csv.py`
    :language: python
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: python.exercises.userdb.userdb_module

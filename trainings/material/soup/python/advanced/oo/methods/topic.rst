@@ -1,6 +1,3 @@
-.. ot-topic:: python.advanced.oo.methods
-   :dependencies: python.advanced.oo.classes_and_dicts
-
 .. include:: <mmlalias.txt>
 
 

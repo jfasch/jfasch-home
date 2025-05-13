@@ -1,6 +1,3 @@
-.. ot-topic:: python.misc.pandas.mod_col
-   :dependencies: python.misc.pandas.basics
-
 .. include:: <mmlalias.txt>
 
 

@@ -1,8 +1,3 @@
-.. ot-exercise:: linux.basics.permissions.exercises.private_directory_question
-   :dependencies: linux.basics.permissions.exercises.private_directory,
-		  linux.basics.permissions.basics
-
-
 Question: Private Directory
 ===========================
 
@@ -16,6 +11,3 @@ following question:
 
 * *Would any user be able to read that file?*
 * *Give a reason for your answer*!
-
-.. ot-graph::
-   :entries: linux.basics.permissions.exercises.private_directory_question

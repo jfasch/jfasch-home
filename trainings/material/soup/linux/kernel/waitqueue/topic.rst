@@ -1,8 +1,3 @@
-.. ot-topic:: linux.kernel.waitqueue
-   :dependencies: linux.kernel.usermem,
-		  linux.kernel.cdev_file_operations
-
-
 Waiting for Something
 =====================
 
@@ -11,6 +6,3 @@ Waiting for Something
 
    slides
    screenplay
-
-.. ot-graph:: 
-   :entries: linux.kernel.waitqueue

@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-topic:: cxx11.new_language_features.auto
-   :dependencies: cxx11.new_language_features.strongly_typed_enums
-
 
 Duck Typing (Err, ``auto``) Without A Duck
 ==========================================

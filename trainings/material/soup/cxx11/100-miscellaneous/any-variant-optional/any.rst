@@ -1,5 +1,3 @@
-.. ot-topic:: cxx11.miscellaneous.any
-
 .. include:: <mmlalias.txt>
 
 

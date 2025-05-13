@@ -1,7 +1,3 @@
-.. ot-topic:: cmake.advanced.language.file_etc
-   :dependencies: cmake.advanced.language.datatypes, 
-		  cmake.advanced.language.variables
-
 .. include:: <mmlalias.txt>
 
 Filesystem Interaction, Pathname Manipulation

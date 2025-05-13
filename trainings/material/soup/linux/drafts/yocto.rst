@@ -1,5 +1,3 @@
-.. ot-group:: linux.drafts.yocto
-
 Yocto
 =====
 

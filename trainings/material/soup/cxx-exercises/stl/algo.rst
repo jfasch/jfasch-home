@@ -1,9 +1,3 @@
-.. ot-exercise:: cxx.exercises.stl.algo
-   :dependencies: cxx03.stl.algorithm.copy,
-		  cxx03.stl.algorithm.find,
-		  cxx03.stl.vector_copy_etc
-		  
-
 .. include:: <mmlalias.txt>
 
 

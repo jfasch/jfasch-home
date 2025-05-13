@@ -1,8 +1,5 @@
 .. include:: <mmlalias.txt>
 
-.. ot-task:: fh2021.sensor_w1
-   :dependencies: fh2021.sensor_interface
-
 
 (DONE) Onewire Sensor
 =====================

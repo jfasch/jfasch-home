@@ -1,6 +1,3 @@
-.. ot-topic:: c.performance.computebound
-   :dependencies: c.performance.introduction
-
 .. include:: <mmlalias.txt>
 
 

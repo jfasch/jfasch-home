@@ -1,7 +1,3 @@
-.. ot-task:: project_xxx.dirty_upgrade
-   :dependencies: project_xxx.debian_config, project_xxx.yocto_kernel
-
-
 Dirty Upgrade Path
 ==================
 

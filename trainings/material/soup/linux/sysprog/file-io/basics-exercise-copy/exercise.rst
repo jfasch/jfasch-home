@@ -1,9 +1,3 @@
-.. ot-exercise:: linux.sysprog.fileio.basics_exercise_copy
-   :dependencies: linux.sysprog.fileio.basics,
-		  linux.sysprog.basics.errorhandling,
-		  linux.basics.permissions.basics
-
-
 Exercise: Copy A File
 =====================
 
@@ -150,12 +144,6 @@ Submission
      $ tar -J -c -f submission.tar.xz exercise-1/
 
 * Submit ``submission.tar.xz``
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.sysprog.fileio.basics_exercise_copy
 
 
 .. rubric:: Footnotes

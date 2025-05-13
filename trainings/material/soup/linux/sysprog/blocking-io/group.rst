@@ -1,5 +1,3 @@
-.. ot-group:: linux.sysprog.blocking_io
-
 .. include:: <mmlalias.txt>
 
 
@@ -19,9 +17,3 @@ nasty things like interrupt management for us.
    blocking-io-file
    blocking-io-network
    blocking-io-timer
-
-Dependencies
-------------
-
-.. ot-graph::
-   :entries: linux.sysprog.blocking_io
