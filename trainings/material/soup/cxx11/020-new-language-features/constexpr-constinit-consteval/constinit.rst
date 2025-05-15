@@ -7,14 +7,89 @@
 .. contents::
    :local:
 
-Definition, And Usage
----------------------
+Definition: Initialization Of Globals
+-------------------------------------
 
-* Used to initialize variables (and only those) that have *program
-  lifetime*: ``static`` local, and global
-* ``static`` local: initialized when program flow crosses
-  initialization *the first time*
-* (Except integral which is initialized at compile time)
+* ``static`` locals
+
+  * Initialized when program flow crosses initialization *the first
+    time*
+
+* Globals
+
+  * Initialization in definition order per compilation unit
+  * **Initialization order of compilation units is undefined**
+
+* Since 1970-01-01: integrals are initialized at compile time
+
+Problem: The *Static Initialization Order Fiasco*
+-------------------------------------------------
+
+.. sidebar:: Documentation
+
+   * `Static Initialization Order Fiasco
+     <https://en.cppreference.com/w/cpp/language/siof>`__
+
+.. literalinclude:: code/siof/point.h
+   :caption: :download:`code/siof/point.h`
+   :language: c++
+
+.. list-table:: 
+   :align: left
+   :widths: auto
+
+   * * .. literalinclude:: code/siof/global-point-standalone.h
+          :caption: :download:`code/siof/global-point-standalone.h`
+	  :language: c++
+     * .. literalinclude:: code/siof/global-point-standalone.cpp
+          :caption: :download:`code/siof/global-point-standalone.cpp`
+          :language: c++
+
+.. list-table:: 
+   :align: left
+   :widths: auto
+
+   * * .. literalinclude:: code/siof/global-point-depends.h
+          :caption: :download:`code/siof/global-point-depends.h`
+          :language: c++
+     * .. literalinclude:: code/siof/global-point-depends.cpp 
+          :caption: :download:`code/siof/global-point-depends.cpp`
+          :language: c++
+
+.. literalinclude:: code/siof/main.cpp
+   :caption: :download:`code/siof/main.cpp`
+   :language: c++
+
+* Compile
+
+.. code-block:: console
+
+   $ g++ -c -o global-point-depends.o global-point-depends.cpp
+   $ g++ -c -o global-point-standalone.o global-point-standalone.cpp
+   $ g++ -c -o main.o main.cpp
+
+* Link order wrong: "standalone" *after* "depends"
+
+.. code-block:: console
+
+   $ g++ main.o global-point-depends.o global-point-standalone.o
+   $ ./a.out 
+   global_point_standalone: (42,666)
+   global_point_depends: (0,0)
+
+* Link order wrong: "standalone" *before* "depends"
+
+.. code-block:: console
+
+   $ g++ main.o global-point-standalone.o global-point-depends.o
+   $ ./a.out 
+   global_point_standalone: (42,666)
+   global_point_depends: (42,666)
+
+Solution: ``constinit``
+-----------------------
+
+
 
 The Problem
 -----------

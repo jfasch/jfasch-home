@@ -1,1 +1,2 @@
-ADD_SUBDIRECTORY(code)
+add_subdirectory(code)
+add_subdirectory(atomic-shared-ptr)

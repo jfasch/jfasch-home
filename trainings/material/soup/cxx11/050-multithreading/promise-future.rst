@@ -7,6 +7,11 @@
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   A different (but more realistic) usecase is brought in
+   :ref:`cxx11-thread-atomic-shared-ptr-sync-thread-start`
+
 Overview
 --------
 

@@ -126,3 +126,17 @@ News From The Standard Library
 * ``std::format``: *Pythonicity never stops*
 * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/010-chrono/topic`
 * ``std::span``: the problems it solves, and usage
+
+Optional Content From Past C++ Versions
+---------------------------------------
+
+If the situation wants it, we can look over
+material that predates C++20, such as:
+
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
+* :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
+
+You can always browse :doc:`all material
+</trainings/material/soup/index>` - but be warned, it is rather
+unstructured.

@@ -4,6 +4,9 @@
 Threads Introduction
 ====================
 
+.. contents::
+   :local:
+
 Operating System Primitives
 ---------------------------
 
