@@ -11,7 +11,7 @@ Modules
 * module name: ``export module MODULE-NAME;``
 * export ... symbols
 * import MODULE-NAME;
-* macros defined in a modules do not leak to the importer
+* macros defined in a module do not leak to the importer
 * macros defined before import do not leak into the imported module
 * can be 
 

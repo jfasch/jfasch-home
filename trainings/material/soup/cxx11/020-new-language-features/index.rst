@@ -13,10 +13,10 @@ Topics
    delegating-ctor/topic
    strongly-typed-enums/topic
    brace-initialization/index
-   auto
+   auto/topic
    structured-binding
 
-   control-flow-locals
+   control-flow-locals/topic
    attributes/topic
 
    oo/index

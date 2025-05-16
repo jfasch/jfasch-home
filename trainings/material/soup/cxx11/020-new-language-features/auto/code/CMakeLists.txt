@@ -1,0 +1,6 @@
+add_executable(c++11-auto-most-basic c++11-auto-most-basic.cpp)
+add_executable(c++11-auto-ref-pitfall c++11-auto-ref-pitfall.cpp)
+add_executable(c++11-auto-ref c++11-auto-ref.cpp)
+add_executable(c++11-auto-const-ref c++11-auto-const-ref.cpp)
+add_executable(c++11-auto-pointer c++11-auto-pointer.cpp)
+add_executable(c++11-auto-array c++11-auto-array.cpp)
