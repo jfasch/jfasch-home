@@ -259,7 +259,7 @@ Playing Around: Iteration, Range-Based-For
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+   * :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
 
 * ``Coro``'s own iterator
 

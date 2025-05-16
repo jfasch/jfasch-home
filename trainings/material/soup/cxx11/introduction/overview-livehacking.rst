@@ -38,7 +38,7 @@ Real Container Initialization
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
 * Think C's "array of ``struct``" initialization
 * ``std::map`` is *initialized* |longrightarrow| could be ``const``!
@@ -56,7 +56,7 @@ Long ``iterator`` Type Names |longrightarrow| ``auto``
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+   * :doc:`/trainings/material/soup/cxx11/auto/topic`
 
 * Annoying: long ``iterator`` names
 * ``typedef`` is of limited help
@@ -72,7 +72,7 @@ More ``auto``: Unpacking ``std::pair``
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+   * :doc:`/trainings/material/soup/cxx11/auto/topic`
 
 * More explicit type names
 * ``std::pair`` 's ``first``, ``second``
@@ -88,7 +88,7 @@ Pitfall: Plain ``auto`` Creates Copy |longrightarrow| ``const auto&``
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+   * :doc:`/trainings/material/soup/cxx11/auto/topic`
 
 * ``auto`` is only the base type
 * Here: deducing the type of ``std::pair`` members
@@ -105,8 +105,8 @@ Iterators Are So Old-School: *Range Based For*
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for-map`
+   * :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
+   * :doc:`/trainings/material/soup/cxx11/range-for/range-based-for-map`
 
 * C's ``for`` loops are only brutal syntactic sugar for ``while``
 * This can be done better
@@ -126,7 +126,7 @@ Still Too Old-School: Want Python's *Tuple Unpacking*
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
+   * :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
 
 * Annoying: manually unpacking ``std::pair`` 's ``first``, ``second``
 * In Python there they have *tuple unpacking*: ``for k, v in tdl.items(): ...``
@@ -187,13 +187,13 @@ Definitely *Not* Old-School: *Lambda*
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+   * :doc:`/trainings/material/soup/cxx11/lambda/index`
 
 * ``up_1_to_10()`` and ``down_1000_to_980()`` are *one-shot functions*
 * Make only sense at one point: part of a todo list
 * Want to define them *where I use them*
 * |longrightarrow| :doc:`Lambda
-  </trainings/material/soup/cxx11/new-language-features/lambda/index>`
+  </trainings/material/soup/cxx11/lambda/index>`
 
 .. note::
 
@@ -245,8 +245,8 @@ Wrapping All That Into A Class
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+   * :doc:`/trainings/material/soup/cxx11/oo/default`
+   * :doc:`/trainings/material/soup/cxx11/oo/delete`
 
 * This is getting too big |longrightarrow| encapsulate into ``class
   TodoList``
@@ -266,7 +266,7 @@ Architectural Considerations: No Implementation Inheritance Wanted
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
+   * :doc:`/trainings/material/soup/cxx11/oo/final`
 
 * Clean architecture does not do too much implementation inheritance
   (at least, OO evangelists say so)
@@ -283,7 +283,7 @@ Wrapping Up: Initializer
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
 * Lost the ability to *initialize* a ``TodoList`` object
   (|longrightarrow| ``add_item()``)

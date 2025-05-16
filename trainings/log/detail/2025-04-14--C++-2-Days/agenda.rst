@@ -25,55 +25,55 @@ screenplay-like writeup, much like :doc:`this one
 ------------------------------------------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/index`
+:doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/const`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/consteval`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constinit`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/if`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/const`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/consteval`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constinit`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/if`
 
 Concepts (a.k.a. "Template error messages are a PITA")
 ------------------------------------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/new-language-features/concepts/index`
+:doc:`/trainings/material/soup/cxx11/concepts/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/intro/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/writing-concepts/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/links`
+* :doc:`/trainings/material/soup/cxx11/concepts/intro/topic`
+* :doc:`/trainings/material/soup/cxx11/concepts/writing-concepts/topic`
+* :doc:`/trainings/material/soup/cxx11/concepts/links`
 
 Local variables in ``if`` and ``for`` statements
 ------------------------------------------------
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/control-flow-locals/topic`
+* :doc:`/trainings/material/soup/cxx11/control-flow-locals/topic`
 
 Lambdas
 -------
 
 From
-:doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+:doc:`/trainings/material/soup/cxx11/lambda/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor-pitfall`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor-pitfall`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
 
 Attributes
 ----------
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/attributes/topic`
+* :doc:`/trainings/material/soup/cxx11/attributes/topic`
 
 Spaceship Operator
 ------------------
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/spaceship/topic`
+* :doc:`/trainings/material/soup/cxx11/spaceship/topic`
 
 Multithreading (And Related Topics)
 -----------------------------------
 
 * :doc:`/trainings/material/soup/cxx11/multithreading/atomic-shared-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/memory-model/topic`
+* :doc:`/trainings/material/soup/cxx11/multithreading/memory-model/topic`
 * From :doc:`/trainings/material/soup/cxx11/multithreading/index`
 
   * :doc:`/trainings/material/soup/cxx11/multithreading/010-introduction/topic`
@@ -87,9 +87,9 @@ Multithreading (And Related Topics)
 * Atomic references (``atomic_ref``)
 * And realtime? C++ does not define realtime concepts, so this is an
   OS topic.
-* From :doc:`/trainings/material/soup/cxx11/new-language-features/coroutines/index`
+* From :doc:`/trainings/material/soup/cxx11/coroutines/index`
 
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/coroutines/intro`
+  * :doc:`/trainings/material/soup/cxx11/coroutines/intro`
 
 Modules
 -------
@@ -117,11 +117,11 @@ Leider nein
 News From The Standard Library
 ------------------------------
 
-* From :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/index`
+* From :doc:`/trainings/material/soup/cxx11/ranges/index`
 
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/intro`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/good-bad`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/links`
+  * :doc:`/trainings/material/soup/cxx11/ranges/intro`
+  * :doc:`/trainings/material/soup/cxx11/ranges/good-bad`
+  * :doc:`/trainings/material/soup/cxx11/ranges/links`
 
 * ``std::format``: *Pythonicity never stops*
 * :doc:`/trainings/material/soup/cxx11/miscellaneous/010-chrono/topic`
@@ -133,7 +133,7 @@ Optional Content From Past C++ Versions
 If the situation wants it, we can look over
 material that predates C++20, such as:
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+* :doc:`/trainings/material/soup/cxx11/move/index`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
 * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
 

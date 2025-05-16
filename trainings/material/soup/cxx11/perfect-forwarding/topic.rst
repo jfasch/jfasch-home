@@ -11,7 +11,7 @@ Universal References? Forwarding References? **REALLY?**
 --------------------------------------------------------
 
 This is a good ol' function that takes an :doc:`rvalue reference
-<../new-language-features/move/index>` (to a
+<../move/index>` (to a
 ``std::string`` for that matter):
 
 .. code-block:: c++
@@ -34,7 +34,7 @@ Universal Reference? Binds To *Lvalues*?
 * A *function* taking an *rvalue reference* cannot take an *lvalue*
 * Reason: if it did, it could do harm to something the caller might
   still want to use
-* See :doc:`../new-language-features/move/index`
+* See :doc:`..//move/index`
 
 .. literalinclude:: code/c++11-rvalue-reference.cpp
    :caption: :download:`code/c++11-rvalue-reference.cpp`

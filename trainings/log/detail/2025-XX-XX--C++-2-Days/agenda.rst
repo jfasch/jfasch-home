@@ -26,9 +26,9 @@ the customer, for a two-days on-site C++ training. The list is largely
 unordered (yet), and adaptations to it are likely to be made.
 
 * Brace initialization (:doc:`here
-  </trainings/material/soup/cxx11/new-language-features/brace-initialization/index>`)
+  </trainings/material/soup/cxx11/brace-initialization/index>`)
 * RValue References, and Move Semantics (:doc:`here
-  </trainings/material/soup/cxx11/new-language-features/move/index>`). Primarily,
+  </trainings/material/soup/cxx11/move/index>`). Primarily,
   show the *usage* of moving.
 
   * What the compiler knows/does
@@ -45,10 +45,10 @@ unordered (yet), and adaptations to it are likely to be made.
   based data structures ``std::unordered_set<>`` and
   ``std::unordered_map<>`` [#make_material]_.
 * Structured Binding (:doc:`here
-  </trainings/material/soup/cxx11/new-language-features/structured-binding/topic>`). Discuss
+  </trainings/material/soup/cxx11/structured-binding/topic>`). Discuss
   usage of ``std::tuple<>``.
 * ``constexpr`` (:doc:`here
-  </trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr>`)
+  </trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr>`)
   [#adapt_standard]_
 * Multithreading (:doc:`here
   </trainings/material/soup/cxx11/multithreading/index>`). `OpenMP
@@ -64,7 +64,7 @@ unordered (yet), and adaptations to it are likely to be made.
 * ``std::array<>`` [#make_material]_
 * ``std::span<>`` [#make_material]_
 * Ranges and views (:doc:`here
-  </trainings/material/soup/cxx11/new-language-features/ranges/index>`)
+  </trainings/material/soup/cxx11/ranges/index>`)
 * ``std::any`` (:doc:`here
   </trainings/material/soup/cxx11/miscellaneous/any-variant-optional/any>`),
   ``std::variant<>`` (:doc:`here

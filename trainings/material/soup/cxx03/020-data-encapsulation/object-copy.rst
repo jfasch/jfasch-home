@@ -9,7 +9,7 @@ Object Copy (And Resource Management): There Be Dragons
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+   * :doc:`/trainings/material/soup/cxx11/oo/delete`
 
 Copy in C
 ---------
@@ -72,7 +72,7 @@ Pointer Members, And Compiler Generated Copy
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/c/090-program-sanity/080-valgrind/topic`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+   * :doc:`/trainings/material/soup/cxx11/oo/delete`
 
 * Compiler-generated copy constructor (and assignment operator) does
   member-wise copy
@@ -169,7 +169,7 @@ Solution: Write Copy Constructor Manually
        * Solution: write clumsy helper function
      * * Simply call the other ctor
        * |longrightarrow|
-         :doc:`/trainings/material/soup/cxx11/new-language-features/delegating-ctor/topic`
+         :doc:`/trainings/material/soup/cxx11/delegating-ctor/topic`
    * * .. literalinclude:: code/string-20-03.h
           :caption: :download:`code/string-20-03.h`
 	  :language: c++

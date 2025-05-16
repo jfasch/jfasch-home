@@ -29,6 +29,6 @@ From :doc:`/trainings/material/soup/cxx03/060-stl/index`
 --------
 
 From
-:doc:`/trainings/material/soup/cxx11/new-language-features/index`
+:doc:`/trainings/material/soup/cxx11/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/auto/topic`

@@ -30,24 +30,24 @@ Day 1: Introduction: C++, A New Language
 Pythonicity
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/auto/topic`
 
 Brace Initialization
 ....................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/intro`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/implementor-view`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/mess`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/implementor-view`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/mess`
 
 New OO Features
 ...............
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
+* :doc:`/trainings/material/soup/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx11/oo/final`
+* :doc:`/trainings/material/soup/cxx11/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/oo/default`
 
 Functions: ``std::function<>``, Lambdas
 .......................................
@@ -57,12 +57,12 @@ From :doc:`/trainings/material/soup/cxx11/bind-function/index`:
 * :doc:`/trainings/material/soup/cxx11/bind-function/010-bind/topic`
 * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
-From :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+From :doc:`/trainings/material/soup/cxx11/lambda/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor-pitfall`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor-pitfall`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
 
 Day 2: Simply Getting Stuff Done
 --------------------------------
@@ -102,12 +102,12 @@ From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
 Move Semantics
 ..............
 
-From :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+From :doc:`/trainings/material/soup/cxx11/move/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
+* :doc:`/trainings/material/soup/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/afterword`
 
 Day 3: All The Rest
 -------------------
@@ -148,11 +148,11 @@ Moving, Roundup
 ```````````````
 
 * Discuss L/R-Values, and what compiler generates when (from
-  :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`)
+  :doc:`/trainings/material/soup/cxx11/move/overview`)
 * Hack a ``String``
 
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
+  * :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
 
 Containers And Algorithms
 .........................
@@ -169,12 +169,12 @@ And Embedded?
 .............
 
 * :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/index`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
 
 Still Untold
 ------------
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/strongly-typed-enums/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/delegating-ctor/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/miscellaneous/topic`
+* :doc:`/trainings/material/soup/cxx11/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx11/miscellaneous2/topic`
 * :doc:`/trainings/material/soup/c/080-advanced-language-features/030-alignment/topic`

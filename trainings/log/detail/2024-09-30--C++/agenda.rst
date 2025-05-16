@@ -24,19 +24,19 @@ tries to draw the boundary between the old and new C++.
 ------------------------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/new-language-features/index`:
+:doc:`/trainings/material/soup/cxx11/index`:
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/intro`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/implementor-view`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/mess`
+  * :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
+  * :doc:`/trainings/material/soup/cxx11/brace-initialization/implementor-view`
+  * :doc:`/trainings/material/soup/cxx11/brace-initialization/mess`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/strongly-typed-enums/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx11/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/delegating-ctor/topic`
 
 Back To The Beginnings Of C++: What Everybody Has To Know
 ---------------------------------------------------------
@@ -52,9 +52,9 @@ From
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
+* :doc:`/trainings/material/soup/cxx11/oo/default`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/oo/delete`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
@@ -160,10 +160,10 @@ More C++ >= 11
 OO Features
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
+* :doc:`/trainings/material/soup/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx11/oo/final`
+* :doc:`/trainings/material/soup/cxx11/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/oo/default`
 
 Memory Management
 .................
@@ -185,12 +185,12 @@ Move Semantics, And Perfect Forwarding
 ......................................
 
 From
-:doc:`/trainings/material/soup/cxx11/new-language-features/move/index`:
+:doc:`/trainings/material/soup/cxx11/move/index`:
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
+* :doc:`/trainings/material/soup/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/afterword`
 
 Same syntax, different meaning ...
 
@@ -206,7 +206,7 @@ Functional: An Alternative To Full Polymorphism
 ...............................................
 
 * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+* :doc:`/trainings/material/soup/cxx11/lambda/index`
 
 Going Embedded
 --------------
@@ -217,7 +217,7 @@ Going Embedded
 Optional Topics
 ---------------
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
 * :doc:`/trainings/material/soup/cxx03/060-stl/index`
 * Excerpts from :doc:`/trainings/material/soup/cmake/intro/index` and
   :doc:`/trainings/material/soup/cmake/advanced/index`

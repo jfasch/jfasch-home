@@ -112,7 +112,7 @@ Miscellaneous
 * ``constexpr`` explored. How is it used to populate the ``rodata``
   section and save RAM?
 
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
+  * :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
   * Sample code: `rodata.cpp
     <https://github.com/jfasch/2023-03-20/blob/main/livehacking/rodata.cpp>`__
 
@@ -148,7 +148,7 @@ Day 3
 R-Value References/Moving, And Managed Pointers
 ...............................................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+* :doc:`/trainings/material/soup/cxx11/move/index`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
 
 A Little Concurrency

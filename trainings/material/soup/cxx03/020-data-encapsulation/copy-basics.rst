@@ -23,7 +23,7 @@ Compiler Generated Copy Constructor
    **See also**
 
    * :doc:`object-copy`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+   * :doc:`/trainings/material/soup/cxx11/move/index`
 
 The venerable ``class point`` from :doc:`cpp-introduction` is simple
 
@@ -56,7 +56,7 @@ Manually Written Copy Constructor And Assignment Operator
 
    * You should be writing an assignment operator just as well
    * You should probably implement :doc:`move semantics
-     </trainings/material/soup/cxx11/new-language-features/move/index>`
+     </trainings/material/soup/cxx11/move/index>`
      just as well
    * You should probably implement a destructor just as well
    * You should probably be careful, and read :doc:`object-copy`

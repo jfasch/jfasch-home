@@ -9,7 +9,7 @@ Screenplay: ``std::vector`` Basics
      :caption: :download:`code/vector-basic.cpp`
 
 * Using C++11 :doc:`brace initialization
-  </trainings/material/soup/cxx11/new-language-features/brace-initialization/index>`
+  </trainings/material/soup/cxx11/brace-initialization/index>`
 
   .. literalinclude:: code/vector-basic-brace-init.cpp
      :language: c++

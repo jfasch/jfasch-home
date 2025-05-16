@@ -22,7 +22,7 @@ Recap Of :ref:`Door Exercise <fh_2023_door_exercise>`
 C++ Material
 ------------
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/strongly-typed-enums/topic`
 
 Some Git
 --------

@@ -127,7 +127,7 @@ Custom Constructor: Usage
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
 * User defined initialization
 * Programmer responsible for parameter signature

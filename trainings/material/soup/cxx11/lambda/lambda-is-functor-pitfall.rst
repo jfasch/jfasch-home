@@ -10,8 +10,8 @@ Live Hacking: Handwritten Functors, And Capturing By Reference (Pitfalls)
 Original, Handwritten Functor (By Copy)
 ---------------------------------------
 
-.. literalinclude:: ../code/c++11-lambda-capture-handwritten.cpp
-   :caption: :download:`../code/c++11-lambda-capture-handwritten.cpp`
+.. literalinclude:: code/c++11-lambda-capture-handwritten.cpp
+   :caption: :download:`code/c++11-lambda-capture-handwritten.cpp`
    :language: c++
 
 .. code-block:: console
@@ -22,8 +22,8 @@ Original, Handwritten Functor (By Copy)
 Possible Pitfall: Capturing A Reference
 ---------------------------------------
 
-.. literalinclude:: ../code/c++11-lambda-capture-handwritten-reference.cpp
-   :caption: :download:`../code/c++11-lambda-capture-handwritten-reference.cpp`
+.. literalinclude:: code/c++11-lambda-capture-handwritten-reference.cpp
+   :caption: :download:`code/c++11-lambda-capture-handwritten-reference.cpp`
    :language: c++
 
 .. code-block:: console
@@ -56,8 +56,8 @@ Lifetime Of Temporary, Made Explicit
   * Debug output in ctor and dtor
   * Stores only pointer to ``"howdy"``
 
-.. literalinclude:: ../code/c++11-lambda-capture-handwritten-reference-gosh.cpp
-   :caption: :download:`../code/c++11-lambda-capture-handwritten-reference-gosh.cpp`
+.. literalinclude:: code/c++11-lambda-capture-handwritten-reference-gosh.cpp
+   :caption: :download:`code/c++11-lambda-capture-handwritten-reference-gosh.cpp`
    :language: c++
 
 .. code-block:: console
@@ -88,8 +88,8 @@ Lifetime Of Temporary, Made Explicit |longrightarrow| |:ambulance:|
     </trainings/material/soup/cxx03/020-data-encapsulation/object-copy>`
     (gosh!)
 
-.. literalinclude:: ../code/c++11-lambda-capture-handwritten-reference-gosh-boom.cpp
-   :caption: :download:`../code/c++11-lambda-capture-handwritten-reference-gosh-boom.cpp`
+.. literalinclude:: code/c++11-lambda-capture-handwritten-reference-gosh-boom.cpp
+   :caption: :download:`code/c++11-lambda-capture-handwritten-reference-gosh-boom.cpp`
    :language: c++
 
 .. code-block:: console

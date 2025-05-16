@@ -10,15 +10,15 @@ Live Hacking: Handwritten Functors (Too Much Boilerplate)
 Original Lambda Demo Proggy
 ---------------------------
 
-.. literalinclude:: ../code/c++11-lambda-capture.cpp
-   :caption: :download:`../code/c++11-lambda-capture.cpp`
+.. literalinclude:: code/c++11-lambda-capture.cpp
+   :caption: :download:`code/c++11-lambda-capture.cpp`
    :language: c++
 
 Morph Lambda Into Handwritten Functor Class
 -------------------------------------------
 
-.. literalinclude:: ../code/c++11-lambda-capture-handwritten.cpp
-   :caption: :download:`../code/c++11-lambda-capture-handwritten.cpp`
+.. literalinclude:: code/c++11-lambda-capture-handwritten.cpp
+   :caption: :download:`code/c++11-lambda-capture-handwritten.cpp`
    :language: c++
 
 .. code-block:: console

@@ -35,10 +35,10 @@ Low Hanging Fruit
 Much of it has been said in the intro section, but let's quickly
 repeat ...
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+* :doc:`/trainings/material/soup/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
 * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
@@ -48,15 +48,15 @@ Memory Management
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
   (and a little :doc:`moving
-  </trainings/material/soup/cxx11/new-language-features/move/index>`)
+  </trainings/material/soup/cxx11/move/index>`)
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr` (optional)
 
 Lambdas
 -------
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
 
 Multithreading
 --------------
@@ -72,12 +72,12 @@ Optional (But Cool) Topics
 --------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/new-language-features/move/index`:
+:doc:`/trainings/material/soup/cxx11/move/index`:
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
+* :doc:`/trainings/material/soup/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/afterword`
 
 From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
 communication primitives

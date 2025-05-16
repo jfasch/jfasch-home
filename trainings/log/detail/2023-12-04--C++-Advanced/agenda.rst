@@ -15,40 +15,40 @@ Introduction: A New Language To Me
 Range Based for Loops
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for-map`
+* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for-map`
 
 Tuple Unpacking (err, Structured Binding)
 .........................................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
 
 Duck Typing (err, ``auto``) Without A Duck
 ..........................................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/auto/topic`
 
 Brace Initialization
 ....................
 
-From :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+From :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/intro`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/implementor-view`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/mess`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/implementor-view`
+* :doc:`/trainings/material/soup/cxx11/brace-initialization/mess`
 
 New OO keywords: override, final, default, delete
 .................................................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
+* :doc:`/trainings/material/soup/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx11/oo/final`
+* :doc:`/trainings/material/soup/cxx11/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/oo/default`
 
 ``constexpr``, ``constinit``, ``consteval``
 ...........................................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
 * ``constinit``
 * ``consteval``
 
@@ -60,27 +60,27 @@ Functions: ``std::function<>``, Lambdas
   * :doc:`/trainings/material/soup/cxx11/bind-function/010-bind/topic`
   * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
-* From :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+* From :doc:`/trainings/material/soup/cxx11/lambda/index`
 
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor-pitfall`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+  * :doc:`/trainings/material/soup/cxx11/lambda/lambda`
+  * :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor`
+  * :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor-pitfall`
+  * :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
 
 Strongly Typed enum
 ...................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/strongly-typed-enums/topic`
 
 Delegating Constructor
 ......................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx11/delegating-ctor/topic`
 
 ``nullptr``
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/miscellaneous/topic`
+* :doc:`/trainings/material/soup/cxx11/miscellaneous2/topic`
 
 Moving, RValue References: Do We Want To Copy Sensors?
 ------------------------------------------------------
@@ -101,7 +101,7 @@ Moving: Implementation
 ......................
 
 Building upon the example from
-:doc:`/trainings/material/soup/cxx11/new-language-features/move/index` which is 
+:doc:`/trainings/material/soup/cxx11/move/index` which is 
 
 * Pointless
 * It implements a pointless ``String`` class that does resource
@@ -109,10 +109,10 @@ Building upon the example from
 
 Do some initial live hacking
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
+* :doc:`/trainings/material/soup/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/afterword`
 
 Live-code a sensor class for
 :doc:`/trainings/material/soup/linux/hardware/w1/topic`
@@ -150,10 +150,10 @@ C++ Pythonic Toolcase
 Concepts
 --------
 
-From :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/index`
+From :doc:`/trainings/material/soup/cxx11/concepts/index`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/intro/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/writing-concepts/topic`
+* :doc:`/trainings/material/soup/cxx11/concepts/intro/topic`
+* :doc:`/trainings/material/soup/cxx11/concepts/writing-concepts/topic`
 
 Multithreading
 --------------
@@ -171,12 +171,12 @@ From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
 Outlook In ``>=20``
 -------------------
 
-* From :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/index`
+* From :doc:`/trainings/material/soup/cxx11/ranges/index`
 
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/intro`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/good-bad`
+  * :doc:`/trainings/material/soup/cxx11/ranges/intro`
+  * :doc:`/trainings/material/soup/cxx11/ranges/good-bad`
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/coroutines/intro`
+* :doc:`/trainings/material/soup/cxx11/coroutines/intro`
 
 Miscellaneous
 -------------

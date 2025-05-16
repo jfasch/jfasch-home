@@ -77,10 +77,10 @@ Some Details
 
 * A little ``constexpr``: `constexpr.cpp
   <https://github.com/jfasch/2023-04-18/blob/main/livehacking/constexpr.cpp>`__
-* From :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+* From :doc:`/trainings/material/soup/cxx11/lambda/index`
 
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+  * :doc:`/trainings/material/soup/cxx11/lambda/lambda`
+  * :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
   * ChatGPT bashing ("How would you compute the squares of a list of
     numbers with a lambda, like you would in Python?"):
     `lambda-transform.cpp

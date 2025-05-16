@@ -77,8 +77,8 @@ Same In C++: *Capturing*
 
    * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
-.. literalinclude:: ../code/c++11-lambda-capture.cpp
-   :caption: :download:`../code/c++11-lambda-capture.cpp`
+.. literalinclude:: code/c++11-lambda-capture.cpp
+   :caption: :download:`code/c++11-lambda-capture.cpp`
    :language: c++
 
 .. code-block:: console
@@ -105,8 +105,8 @@ So What Is That? (Answer: A *Functor*)
 Capturing By Reference |longrightarrow| *Careful!*
 --------------------------------------------------
 
-.. literalinclude:: ../code/c++11-lambda-capture-reference.cpp
-   :caption: :download:`../code/c++11-lambda-capture-reference.cpp`
+.. literalinclude:: code/c++11-lambda-capture-reference.cpp
+   :caption: :download:`code/c++11-lambda-capture-reference.cpp`
    :language: c++
 
 .. code-block:: console

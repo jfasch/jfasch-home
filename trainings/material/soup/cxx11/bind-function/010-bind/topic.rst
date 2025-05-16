@@ -159,7 +159,7 @@ Summary
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+   * :doc:`/trainings/material/soup/cxx11/lambda/index`
 
 * Lambdas are usually a better alternative
 * |longrightarrow| more readable (?)

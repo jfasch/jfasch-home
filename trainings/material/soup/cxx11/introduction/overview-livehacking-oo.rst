@@ -9,23 +9,23 @@ A One-Day Overview Of C++
    *Language basics*
 
    * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map` (and the STL in general)
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
    * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index` (including C++11 goodies like ``override``, ``final``, ``= delete``, ...)
 
    *Memory management*
 
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+   * :doc:`/trainings/material/soup/cxx11/move/index`
 
    *Pythonic features*
      
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+   * :doc:`/trainings/material/soup/cxx11/auto/topic`
+   * :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+   * :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
 
    *New language directions*
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+   * :doc:`/trainings/material/soup/cxx11/lambda/index`
    * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
 A one-day ride through C++ for those who can take it. Course format is
@@ -93,7 +93,7 @@ Pitfall: Encapsulate ``std::map`` Value In ``class Item``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
+   * :doc:`/trainings/material/soup/cxx11/oo/default`
    * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
 
 * Encapsulate value part of te map into something more approachable,
@@ -154,7 +154,7 @@ Real Container Initialization: *Brace Initialization*
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
 * I don't want ``class Item`` to have a default constructor (I don't use it)
 * I don't want to use :doc:`std::map::insert()
@@ -162,7 +162,7 @@ Real Container Initialization: *Brace Initialization*
   either
 * I want my map to be ``const``, **and initialized with content**
 * |longrightarrow|
-  :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+  :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
 .. literalinclude:: code-oo/todolist-const.cpp
    :caption: :download:`code-oo/todolist-const.cpp`
@@ -305,7 +305,7 @@ Pitfall: Incorrectly Implement Derived Class Method
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
+   * :doc:`/trainings/material/soup/cxx11/oo/override`
 
 .. sidebar:: Trainer's note
 
@@ -328,7 +328,7 @@ Solution: That's What ``override`` Is There For
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
+   * :doc:`/trainings/material/soup/cxx11/oo/override`
 
 * ``override`` attached by *user* of base class (*implementor* of
   derived class)
@@ -494,8 +494,8 @@ Memory Management: ``std::unique_ptr<>`` In TodoList |longrightarrow| *No*
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/move/index`
 
 * Try to use it (failed code below)
 * Explain ``std::initializer_list<>``
@@ -505,7 +505,7 @@ Memory Management: ``std::unique_ptr<>`` In TodoList |longrightarrow| *No*
 * |longrightarrow| ``std::unique_ptr<>`` is *move only*
 * |longrightarrow| ``std::unique_ptr<>`` unusable in :doc:`brace
   initialization
-  </trainings/material/soup/cxx11/new-language-features/brace-initialization/index>`
+  </trainings/material/soup/cxx11/brace-initialization/index>`
 
 .. literalinclude:: code-oo/todolist-unique-ptr.cpp
    :caption: :download:`code-oo/todolist-unique-ptr.cpp`
@@ -518,10 +518,10 @@ A Short Deviation: Move Semantics
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+   * :doc:`/trainings/material/soup/cxx11/move/index`
 
 * At that time, a little deviation into :doc:`move semantics
-  </trainings/material/soup/cxx11/new-language-features/move/index>`
+  </trainings/material/soup/cxx11/move/index>`
   is in order
 * |longrightarrow| This helps understand the compiler when he tries to
   just say "no" but fails
@@ -537,7 +537,7 @@ Memory Management: ``std::shared_ptr<>`` In TodoList
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
 
 * I do want :doc:`brace initialization
-  </trainings/material/soup/cxx11/new-language-features/brace-initialization/index>`
+  </trainings/material/soup/cxx11/brace-initialization/index>`
 * *And* I don't want to do manual memory management
 * |longrightarrow| The only viable option is to use
   ``std::shared_ptr<>``
@@ -553,7 +553,7 @@ Readability: Long Type Names |longrightarrow| ``auto``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+   * :doc:`/trainings/material/soup/cxx11/auto/topic`
 
 * ``std::map<std::string, std::shared_ptr<Item>::const_iterator``
 * ... and more
@@ -571,7 +571,7 @@ Pitfalls: ``auto``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+   * :doc:`/trainings/material/soup/cxx11/auto/topic`
 
 * ``auto`` is only the base type (``const`` and ``&``) omitted
 * ``tdl.begin()`` gives ``const_iterator`` if ``tdl`` is ``const``
@@ -589,7 +589,7 @@ Readability: Tuple Unpacking (Err, Structured Binding)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
+   * :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
 
 * ``auto`` is required, obviously
 * Transformation is trivial
@@ -605,7 +605,7 @@ Range Based ``for``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+   * :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
 
 * Iterator based loops? Pointer arithmetic? |longrightarrow| *NO*
 * Element based iteration (Python's ``for``, C# ``foreach``)
@@ -622,7 +622,7 @@ Full Classes Hierarchy For One Method ``doit()`` |longrightarrow| *NO* (Lambdas)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+   * :doc:`/trainings/material/soup/cxx11/lambda/index`
    * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
 * :ref:`Interfaces <cxx_overview_oo__iface_dogma>` are heavyweight
@@ -632,11 +632,11 @@ Full Classes Hierarchy For One Method ``doit()`` |longrightarrow| *NO* (Lambdas)
 
 * Show what a *functor* is (class with overloaded ``operator()()``)
   (see :doc:`here
-  </trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor>`)
+  </trainings/material/soup/cxx11/lambda/lambda-is-functor>`)
 * Turn functor into lambda
 * |longrightarrow| Captures vs. functor members
 * More syntax:
-  :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+  :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
 * Show what a ``std::function<>`` can do
 
   * Plain old function

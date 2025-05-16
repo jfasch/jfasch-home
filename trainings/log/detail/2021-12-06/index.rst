@@ -571,7 +571,7 @@ Exceptions, and Exception Handling
 C++11: A New Language
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/index`
+* :doc:`/trainings/material/soup/cxx11/index`
 
 Dynamic Allocation, Smart Pointers
 ..................................

@@ -45,8 +45,8 @@ Interfaces
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
+   * :doc:`/trainings/material/soup/cxx11/oo/override`
+   * :doc:`/trainings/material/soup/cxx11/oo/final`
 
 **Bringing it all together**: an interface is defined like so ...
 
@@ -74,5 +74,5 @@ Interfaces
 
    C++11 brings features for derived classes:
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
+   * :doc:`/trainings/material/soup/cxx11/oo/override`
+   * :doc:`/trainings/material/soup/cxx11/oo/final`

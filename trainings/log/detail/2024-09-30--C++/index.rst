@@ -99,7 +99,7 @@ More About Classes
   * Show ``int i{};``
   * Show how default ctor uses that
   * Show how default ctor is not generated when explicit ctor is in place
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
+  * :doc:`/trainings/material/soup/cxx11/oo/default`
 
   See
 
@@ -175,8 +175,8 @@ From :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
 C++11: additional keywords
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
+* :doc:`/trainings/material/soup/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx11/oo/final`
 
 Livehacked outcome in `livehacking/inheritance.cpp
 <https://github.com/jfasch/2024-09-30/blob/main/livehacking/inheritance.cpp>`__
@@ -248,7 +248,7 @@ Resource Management: Copy
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/oo/delete`
 
 Smart Pointers: ``std::shared_ptr<>``
 .....................................
@@ -280,10 +280,10 @@ Smart Pointers: ``std::unique_ptr<>``
 Resource Management: Move
 .........................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
+* :doc:`/trainings/material/soup/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/move/afterword`
 
 See `livehacking/string.cpp
 <https://github.com/jfasch/2024-09-30/blob/main/livehacking/string.cpp>`__
@@ -313,7 +313,7 @@ class that does the physical output.
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/index`
+   * :doc:`/trainings/material/soup/cxx11/concepts/index`
 
 See
 `embedded-nonvirtual-polymorphic-pointers/toolcase/can/CanDataSink.h
@@ -322,7 +322,7 @@ See
 Note that templates, instantiated with parameter types that are
 lacking required functionality, can cause a compiler to frustrate
 developers. :doc:`Concepts
-</trainings/material/soup/cxx11/new-language-features/concepts/index>`
+</trainings/material/soup/cxx11/concepts/index>`
 are a newer language feature to prevent such situations.
 
 Eliminating ``virtual``: using ``std::variant``
@@ -330,7 +330,7 @@ Eliminating ``virtual``: using ``std::variant``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
+   * :doc:`/trainings/material/soup/cxx11/lambda/index`
    * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
 
 * Show function call operator (``operator()(...)``), and Lambdas:
@@ -363,12 +363,12 @@ hold a fixed number of *unrelated* alternative pointer types. Advantages:
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/index`
+   * :doc:`/trainings/material/soup/cxx11/concepts/index`
    * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
 
 * No ``virtual``. The alternatives only need to match the requirements
   (see :ref:`course-2024-09-30-candatasink-template`); :doc:`Concepts
-  </trainings/material/soup/cxx11/new-language-features/concepts/index>`
+  </trainings/material/soup/cxx11/concepts/index>`
   could additionally be used to check requirements.
 * Dynamic dispatch is done using `std::visit`, using the
   ``std::variant``'s type discriminator, with the effect that the
@@ -391,7 +391,7 @@ Approach 2: Alternative Objects In A ``std::variant``
 `````````````````````````````````````````````````````
 
 As a case study (and to show :doc:`Move Semantics
-</trainings/material/soup/cxx11/new-language-features/move/index>`
+</trainings/material/soup/cxx11/move/index>`
 in action), :ref:`course-2024-09-30-approach-1` is modified to cram
 entire objects in a ``std::variant``.
 

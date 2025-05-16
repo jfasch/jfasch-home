@@ -87,7 +87,7 @@ Brace Initialization
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
 Discussed the differences between ``{}`` and ``()``. See
 `2024-11-19/brace-init.cpp
@@ -115,10 +115,10 @@ Smart Pointers, And Move Semantics
 
    **Move semantics, and Rvalue references**
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
+   * :doc:`/trainings/material/soup/cxx11/move/overview`
+   * :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+   * :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
+   * :doc:`/trainings/material/soup/cxx11/move/afterword`
 
 While using ``std::shared_ptr<>`` in `2024-11-19/intro.cpp
 <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/intro.cpp>`__,
@@ -136,7 +136,7 @@ While we were at it, we discussed related topics like
   `2024-11-19/rvo-or-not.cpp
   <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/rvo-or-not.cpp>`__
 * Moving and rvalue references in general
-  (:doc:`/trainings/material/soup/cxx11/new-language-features/move/index`)
+  (:doc:`/trainings/material/soup/cxx11/move/index`)
 * Dual implementation (move and copy) of, say,
   ``std::vector::push_back()``. Demo code in `2024-11-19/push-back-move.cpp
   <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/push-back-move.cpp>`__
@@ -151,10 +151,10 @@ Lambda
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor-pitfall`
-   * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+   * :doc:`/trainings/material/soup/cxx11/lambda/lambda`
+   * :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor`
+   * :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor-pitfall`
+   * :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
    * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
 
 Transformed `2024-11-19/intro.cpp

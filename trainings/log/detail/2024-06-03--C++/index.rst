@@ -32,23 +32,23 @@ Introduction: What C++ >= 11 Brings
 ...................................
 
 * :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking` (the outcome of it being `new-cpp.cpp <https://github.com/jfasch/2024-06-03/blob/main/livecoding/new-cpp.cpp>`__
-* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`, including 
+* :doc:`/trainings/material/soup/cxx11/auto/topic`, including 
 
   * a discussion of how arrays continue to *decay* to pointers in C++,
     using ``auto``
   * a demo of good old C decayed arrays, `ptr-decay.cpp
     <https://github.com/jfasch/2024-06-03/blob/main/livecoding/ptr-decay.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
-* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`, 
+* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/lambda/lambda`, 
   and its relationship with ``std::function``, 
   :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
   * A little upside down show of it, `lambda.cpp
     <https://github.com/jfasch/2024-06-03/blob/main/livecoding/lambda.cpp>`__
   * Walking through the inevitable capturing syntax,
-    :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
+    :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
 
 Smart Pointers: ``std::shared_ptr<>``, ``std::unique_ptr<>`` (And A Little ``std::move``)
 .........................................................................................
@@ -262,12 +262,12 @@ Outcome:
 RValue References, Move Semantics
 .................................
 
-* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
+* :doc:`/trainings/material/soup/cxx11/move/overview`
 * Lengthy livecoding: *Rule Of 5?*
 
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
-  * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
+  * :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+  * :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
 
   Outcome `string-move.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/livecoding/string-move.cpp>`__
