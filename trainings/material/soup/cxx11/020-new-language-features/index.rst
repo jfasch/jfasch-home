@@ -14,7 +14,7 @@ Topics
    strongly-typed-enums/topic
    brace-initialization/index
    auto/topic
-   structured-binding
+   structured-binding/topic
 
    control-flow-locals/topic
    attributes/topic
@@ -35,4 +35,4 @@ Topics
    coroutines/index
    ranges/index
    concepts/index
-   modules
+   modules/topic

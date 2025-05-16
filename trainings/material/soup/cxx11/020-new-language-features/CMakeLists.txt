@@ -13,4 +13,5 @@ add_subdirectory(range-for)
 add_subdirectory(oo)
 add_subdirectory(auto)
 add_subdirectory(control-flow-locals)
+add_subdirectory(structured-binding)
 

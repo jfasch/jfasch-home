@@ -14,7 +14,7 @@ Basics
 
    **See also**
 
-   * :doc:`auto`
+   * :doc:`../auto/topic`
 
 **Wanted:** Python's tuple unpacking
 
@@ -24,7 +24,7 @@ Basics
    a, b, c = (1, 2, 3)   # from tuple
    ...
 
-* |longrightarrow| :doc:`structured-binding`
+* |longrightarrow| *structured binding*
 * C++-ification of Python
 * Comes in many flavors since C++ cares more about types, obviously
 * Creates variables in surrounding scope
