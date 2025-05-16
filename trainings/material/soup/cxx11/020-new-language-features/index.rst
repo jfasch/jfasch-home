@@ -10,24 +10,24 @@ Topics
 .. toctree::
    :maxdepth: 1
 
-   050-delegating-ctor/topic
-   range-for/index
-   070-miscellaneous/topic
-   010-strongly-typed-enums/topic
-   030-brace-initialization/index
-   structured-binding
+   delegating-ctor/topic
+   strongly-typed-enums/topic
+   brace-initialization/index
    auto
-   lambda/index
-   override
-   final
-   delete
-   default
-
-   constexpr-constinit-consteval/index
-   060-move/index
+   structured-binding
 
    control-flow-locals
    attributes/topic
+
+   oo/index
+
+   range-for/index
+   miscellaneous/topic
+   lambda/index
+
+   constexpr-constinit-consteval/index
+   move/index
+
    spaceship/topic
 
    memory-model/topic

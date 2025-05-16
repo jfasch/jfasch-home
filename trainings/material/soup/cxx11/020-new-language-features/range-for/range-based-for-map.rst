@@ -32,12 +32,12 @@ Basic C++11 Iteration: Range Based For, ``auto``, And Initialization
    
    **See also**
 
-   * :doc:`../030-brace-initialization/index`
+   * :doc:`../brace-initialization/index`
    * :doc:`../auto`
 
 * New initialization syntax (:doc:`user's view
-  <../030-brace-initialization/intro>`, :doc:`implementor's view
-  <../030-brace-initialization/implementor-view>`)
+  <../brace-initialization/intro>`, :doc:`implementor's view
+  <../brace-initialization/implementor-view>`)
 * Compiler knows the type of a ``std::map`` iterator anyway
 
   * |longrightarrow| let him write the type

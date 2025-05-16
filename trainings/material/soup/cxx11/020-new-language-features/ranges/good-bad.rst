@@ -14,7 +14,7 @@ Dangling Iterator Protection
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/move/overview`
 
 * A *range* is one object describing a ... well ... a range of
   elements
@@ -47,7 +47,7 @@ Dangling Iterator Protection
              <good-bad/dangling-protection-3.cpp>`
 
 * ``std::ranges::dangling`` when passing an :doc:`RValue
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/overview>`
+  </trainings/material/soup/cxx11/020-new-language-features/move/overview>`
 * |longrightarrow| *compiler error*
 
 Performance: ``views::drop`` Is Easy

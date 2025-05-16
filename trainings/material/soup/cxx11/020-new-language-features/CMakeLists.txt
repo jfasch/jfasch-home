@@ -10,3 +10,5 @@ add_subdirectory(attributes)
 add_subdirectory(spaceship)
 add_subdirectory(memory-model)
 add_subdirectory(range-for)
+add_subdirectory(oo)
+
