@@ -7,7 +7,7 @@ Python (2022-03-23, 2022-03-30, 2022-04-19 - 2022-03-21)
 
    Start: 9:00
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
    * Jupyter Notebook (filled as course proceeds)
 
      * :doc:`Structure <notebook-wrapper>`
@@ -120,9 +120,9 @@ More details (omitted in "basics" days)
 
 Select topics from chapters ...
 
-* :doc:`/trainings/material/soup/python/advanced/group`
-* :doc:`/trainings/material/soup/python/swdev/group`
-* :doc:`/trainings/material/soup/python/misc/group`
+* :doc:`/trainings/material/soup/python/advanced/index`
+* :doc:`/trainings/material/soup/python/swdev/index`
+* :doc:`/trainings/material/soup/python/misc/index`
 
 .. note:: Customer Request
 

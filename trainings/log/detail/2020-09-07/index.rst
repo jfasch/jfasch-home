@@ -20,7 +20,7 @@ Python Advanced (7.9.2020 - 10.9.2020)
 
    .. csv-table::
 
-      Python material, :doc:`/trainings/material/soup/python/group`
+      Python material, :doc:`/trainings/material/soup/python/index`
       PDF Slides (Design Patterns), :download:`Design Patterns </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 
    **Github Private Repository**
@@ -79,7 +79,7 @@ covered.
 Special Topics
 ..............
 
-* :doc:`/trainings/material/soup/python/misc/ai/group`
+* :doc:`/trainings/material/soup/python/misc/ai/index`
 
   * :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
   * :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`

@@ -7,7 +7,7 @@ WS2023/24
 .. sidebar::
 
    * `Github project <https://github.com/jfasch/FH-ECE21>`__
-   * :doc:`tasks/group`
+   * :doc:`tasks/index`
    * :doc:`git/git`
    * SSH login on the Pi: ``ssh -p 2020 firstname.lastname@jfasch.bounceme.net``
 
@@ -25,7 +25,7 @@ OO: Recap
 
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
 
-  From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group` ...
+  From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index` ...
 
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
@@ -72,7 +72,7 @@ OO: Polymorphism
 ................
 
 From
-:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`:
+:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`:
 
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
@@ -82,7 +82,7 @@ From
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/group`:
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/index`:
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
 
@@ -131,7 +131,7 @@ OO: Design?
 
     * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
     * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
-    * Many more: :doc:`/trainings/material/soup/cxx-design-patterns/group`
+    * Many more: :doc:`/trainings/material/soup/cxx-design-patterns/index`
 
 Project
 .......
@@ -153,7 +153,7 @@ Hardware Overview
 Tasks
 `````
 
-See :doc:`tasks/group`
+See :doc:`tasks/index`
 
 2023-11-09 (3 VO)
 -----------------
@@ -289,7 +289,7 @@ Renames
 Project
 .......
 
-* :doc:`tasks/group`
+* :doc:`tasks/index`
 
 Datalogger
 ``````````
@@ -369,7 +369,7 @@ Relevant Topics
 
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
 * From
-  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index`
 
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
@@ -377,7 +377,7 @@ Relevant Topics
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
 
 * From
-  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`

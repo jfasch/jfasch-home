@@ -14,7 +14,7 @@ Overview
 
    **More information**
 
-   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
+   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/index`
 
 * Good Ol' Unix philosopy
   
@@ -59,7 +59,7 @@ Overview
      47
 
   ``wc`` reads ``/etc/passwd`` from ``stdin``, :doc:`arranged by the
-  shell <../io-redirection-pipes/group>`
+  shell <../io-redirection-pipes/index>`
 
 * Finally: redirecting ``stdout``
 

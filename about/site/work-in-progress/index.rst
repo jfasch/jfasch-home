@@ -5,8 +5,6 @@ Work in Progress
    :maxdepth: 1
 
    fh-joanneum/index
-   refactoring-homepage
-   seo
    playground/index
    git
    screencast

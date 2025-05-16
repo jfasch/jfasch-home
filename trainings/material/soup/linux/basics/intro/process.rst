@@ -20,7 +20,7 @@ Solution: Scheduling (Time Slices)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`
+   * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/index`
 
 * Owning the CPU?
 
@@ -35,7 +35,7 @@ Solution: Scheduling (Time Slices)
   becomes, obviously
 * |longrightarrow| best to not spin until an event happens, but rather
   *block on that event* (see
-  :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`)
+  :doc:`/trainings/material/soup/linux/sysprog/blocking-io/index`)
 
 .. image:: process/timeslicing.svg
    :scale: 50%

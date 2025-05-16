@@ -13,7 +13,7 @@ Topics
   * Have a quick look
 
 * **Exercises from**
-  :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+  :doc:`/trainings/material/soup/linux/basics/permissions/exercises/index`
 
   * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
   * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
@@ -23,7 +23,7 @@ Topics
   * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/public-directory-question`
 
 * **Exercises from**
-  :doc:`/trainings/material/soup/linux/ssh/exercises/group`
+  :doc:`/trainings/material/soup/linux/ssh/exercises/index`
 
   * :doc:`/trainings/material/soup/linux/ssh/exercises/pubkey`
     (done)

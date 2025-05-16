@@ -39,7 +39,7 @@ Introduction: What C++ >= 11 Brings
   * a demo of good old C decayed arrays, `ptr-decay.cpp
     <https://github.com/jfasch/2024-06-03/blob/main/livecoding/ptr-decay.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`, 
   and its relationship with ``std::function``, 
@@ -53,7 +53,7 @@ Introduction: What C++ >= 11 Brings
 Smart Pointers: ``std::shared_ptr<>``, ``std::unique_ptr<>`` (And A Little ``std::move``)
 .........................................................................................
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
 
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
@@ -88,7 +88,7 @@ Unit Testing, Test Driven Development, And ``googletest``
   Development (PDF)
   </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 
-* From :doc:`/trainings/material/soup/unittest/group`
+* From :doc:`/trainings/material/soup/unittest/index`
 
   * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/topic`
   * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`
@@ -97,7 +97,7 @@ Unit Testing, Test Driven Development, And ``googletest``
 A Little CMake
 ..............
 
-From :doc:`/trainings/material/soup/cmake/group` (only what we use
+From :doc:`/trainings/material/soup/cmake/index` (only what we use
 from it)
 
 * :doc:`/trainings/material/soup/cmake/intro/basics`
@@ -125,7 +125,7 @@ Exercise: ``class Sensor``, And A ``SensorConfig`` Thereof
 Multithreading: Threads, Race Conditions, Locking Primitives
 ............................................................
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`

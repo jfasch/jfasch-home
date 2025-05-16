@@ -43,7 +43,7 @@ Constructing From Iterable: ``_make()``
 ---------------------------------------
 
 * Data-holding classes are popular with tabular data (:doc:`CSV
-  <../../../misc/csv/topic>`, :doc:`databases <../../../misc/db/group>`, ...)
+  <../../../misc/csv/topic>`, :doc:`databases <../../../misc/db/index>`, ...)
 * Rows are *iterable*
 * |longrightarrow| ``someclass._make()``
 * Example: rows read from a CSV file

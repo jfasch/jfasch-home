@@ -40,7 +40,7 @@ Day 1
 Basics
 ......
 
-From :doc:`/trainings/material/soup/cmake/intro/group`
+From :doc:`/trainings/material/soup/cmake/intro/index`
 
 * :doc:`/trainings/material/soup/cmake/intro/basics`
 * :doc:`/trainings/material/soup/cmake/intro/libraries`
@@ -65,7 +65,7 @@ https://github.com/jfasch/2024-06-11/tree/main/exercises/straightforward
 Bringing CMake Information Into C/C++
 .....................................
 
-From :doc:`/trainings/material/soup/cmake/advanced/group`
+From :doc:`/trainings/material/soup/cmake/advanced/index`
 
 * :doc:`/trainings/material/soup/cmake/advanced/configure-file/topic`
 
@@ -121,7 +121,7 @@ https://github.com/jfasch/2024-06-11/tree/main/livecoding/kinds-of-dependencies
 The CMake Language
 ..................
 
-From :doc:`/trainings/material/soup/cmake/advanced/language/group`
+From :doc:`/trainings/material/soup/cmake/advanced/language/index`
 
 * :doc:`/trainings/material/soup/cmake/advanced/language/basics/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/variables/topic`
@@ -163,7 +163,7 @@ Morning Awakening
 The CMake Language, Continued
 .............................
 
-From :doc:`/trainings/material/soup/cmake/advanced/language/group` ...
+From :doc:`/trainings/material/soup/cmake/advanced/language/index` ...
 
 * :doc:`/trainings/material/soup/cmake/advanced/language/functions-and-macros/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`
@@ -175,7 +175,7 @@ One example of a function ...
 External Dependencies
 .....................
 
-From :doc:`/trainings/material/soup/cmake/advanced/group` ...
+From :doc:`/trainings/material/soup/cmake/advanced/index` ...
 
 * :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3`
 * :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-graph`

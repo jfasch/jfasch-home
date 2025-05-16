@@ -18,7 +18,7 @@ Blocking I/O: On A Network Socket
 
 .. sidebar:: See Also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/group`
+   * :doc:`/trainings/material/soup/linux/sysprog/basics/index`
 
 Opening a Network Connection
 ----------------------------

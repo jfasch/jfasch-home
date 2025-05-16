@@ -16,7 +16,7 @@ Python Grundlagen (2021-05-03 - 2021-05-05)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-05-03>`__

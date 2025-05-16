@@ -7,13 +7,13 @@
 Topics
 ------
 
-* From :doc:`/trainings/material/soup/linux/basics/intro/group` (continued from 2022-03-08)
+* From :doc:`/trainings/material/soup/linux/basics/intro/index` (continued from 2022-03-08)
 
   * :doc:`/trainings/material/soup/linux/basics/intro/process`
   * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
   * :doc:`/trainings/material/soup/linux/basics/intro/login`
 
-* From :doc:`/trainings/material/soup/linux/basics/shell/group`
+* From :doc:`/trainings/material/soup/linux/basics/shell/index`
 
   * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
   * :doc:`/trainings/material/soup/linux/basics/shell/paths`

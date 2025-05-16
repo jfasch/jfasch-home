@@ -80,7 +80,7 @@ Classes, Objects, Methods
 .........................
 
 * From
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
+  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/index`
 
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
@@ -90,7 +90,7 @@ Classes, Objects, Methods
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
-* From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+* From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index`
 
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
   * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
@@ -126,7 +126,7 @@ Heavy Weight OO |:muscle:|
 ..........................
 
 * From
-  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`
@@ -148,14 +148,14 @@ Day 3
 R-Value References/Moving, And Managed Pointers
 ...............................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
 
 A Little Concurrency
 ....................
 
 * Only if there is time (and fun): have a look at
-  :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+  :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
 
 Exercise
 ........
@@ -185,7 +185,7 @@ C++ Standard Library
 ....................
 
 * :doc:`Managed Pointers
-  </trainings/material/soup/cxx11/030-smart-pointers/group>`
+  </trainings/material/soup/cxx11/030-smart-pointers/index>`
 * Pointer Arithmetic Recap:
   :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
 * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`

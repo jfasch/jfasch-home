@@ -17,12 +17,12 @@ Type System, Structures, Pointers And Arrays
 
 * :doc:`/trainings/material/soup/c/020-types-operators-expressions/080-type-conversions/topic`
 
-From :doc:`/trainings/material/soup/c/060-structures/group` ...
+From :doc:`/trainings/material/soup/c/060-structures/index` ...
 
 * :doc:`/trainings/material/soup/c/060-structures/010-basics-of-structures/topic`
 * :doc:`/trainings/material/soup/c/060-structures/020-structures-and-functions/topic`
 
-From :doc:`/trainings/material/soup/c/050-pointers-and-arrays/group` ...
+From :doc:`/trainings/material/soup/c/050-pointers-and-arrays/index` ...
 
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/010-pointers-and-addresses/topic`
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/020-pointers-and-function-arguments/topic`
@@ -60,7 +60,7 @@ Linux Basics
 Filesystem Commands
 ...................
 
-From :doc:`/trainings/material/soup/linux/basics/shell/group` ...
+From :doc:`/trainings/material/soup/linux/basics/shell/index` ...
 
 * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
 * :doc:`/trainings/material/soup/linux/basics/shell/paths`

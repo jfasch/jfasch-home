@@ -14,7 +14,7 @@ Python Basics (23.11.2020 - 25.11.2020)
 
    **Official Description**
 
-   :doc:`/trainings/material/soup/python/basics/group`
+   :doc:`/trainings/material/soup/python/basics/index`
 
    **Github Repo**
 
@@ -22,7 +22,7 @@ Python Basics (23.11.2020 - 25.11.2020)
 
    **Material**
 
-   :doc:`/trainings/material/soup/python/group`
+   :doc:`/trainings/material/soup/python/index`
 
 Preparation
 -----------
@@ -142,7 +142,4 @@ Links
 -----
 
 * File IO: https://www.youtube.com/watch?v=Uh2ebFW8OYM
-* :doc:`Data science </trainings/material/soup/python/misc/ai/group>`
-* jjj exceptions corey schaefer
-* jjj slice corey schaefer
-* jjj KI
+* :doc:`Data science </trainings/material/soup/python/misc/ai/index>`

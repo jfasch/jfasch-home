@@ -59,7 +59,7 @@ Automatic Testing
 -----------------
 
 Today's software standards dictate that a project use unit testing
-(see for example :doc:`/trainings/material/soup/unittest/group`). See
+(see for example :doc:`/trainings/material/soup/unittest/index`). See
 how that can be integrated with CMake.
 
 Installation And Deployment

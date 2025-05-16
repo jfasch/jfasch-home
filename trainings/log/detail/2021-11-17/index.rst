@@ -7,8 +7,8 @@ Python Basics (2021-11-17 - 2021-11-19)
 
    **Material**
 
-   * :doc:`Python Basics </trainings/material/soup/python/basics/group>`
-   * :doc:`Python </trainings/material/soup/python/group>`
+   * :doc:`Python Basics </trainings/material/soup/python/basics/index>`
+   * :doc:`Python </trainings/material/soup/python/index>`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-11-17>`__
@@ -121,7 +121,7 @@ Day 3
   .. literalinclude:: code/csv/read-stock.py
      :caption: :download:`code/csv/read-stock.py`
 
-* :doc:`/trainings/material/soup/python/misc/db/group`
+* :doc:`/trainings/material/soup/python/misc/db/index`
 * :doc:`/trainings/material/soup/python/exercises/csv/csv-db`
 
   The program ``stock-to-db.py``:

@@ -11,7 +11,7 @@ Agenda: Python Advanced (2023-11-22 - 2023-11-24)
 
    **Available Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1: Basic Python
 -------------------
@@ -111,7 +111,7 @@ Project Management, Test Driven Development
 Object Oriented Programming
 ...........................
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
+From :doc:`/trainings/material/soup/python/advanced/oo/index` ...
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
@@ -149,7 +149,7 @@ CSV And Databases
 .................
 
 * :doc:`/trainings/material/soup/python/misc/csv/topic`
-* :doc:`/trainings/material/soup/python/misc/db/group`
+* :doc:`/trainings/material/soup/python/misc/db/index`
 
 Closures, Decorators And More
 .............................
@@ -183,8 +183,8 @@ Multithreading
 Data Science Topics
 ...................
 
-* :doc:`/trainings/material/soup/python/misc/pandas/group`
-* From :doc:`/trainings/material/soup/python/misc/ai/group`
+* :doc:`/trainings/material/soup/python/misc/pandas/index`
+* From :doc:`/trainings/material/soup/python/misc/ai/index`
 
   * :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
   * :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`

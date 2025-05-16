@@ -23,7 +23,7 @@ Data logger: https://github.com/jfasch/FH-STECE2022/blob/main/datalogger.cpp
 OS Concepts
 -----------
 
-From :doc:`/trainings/material/soup/linux/basics/intro/group`
+From :doc:`/trainings/material/soup/linux/basics/intro/index`
 
 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
 * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
@@ -33,7 +33,7 @@ From :doc:`/trainings/material/soup/linux/basics/intro/group`
 Shell Usage
 -----------
 
-From :doc:`/trainings/material/soup/linux/basics/shell/group`
+From :doc:`/trainings/material/soup/linux/basics/shell/index`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
 * :doc:`/trainings/material/soup/linux/basics/shell/paths`
@@ -46,7 +46,7 @@ From :doc:`/trainings/material/soup/linux/basics/shell/group`
 * :doc:`/trainings/material/soup/linux/basics/shell/links`
 * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
-*Exercises:* from :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group` ...
+*Exercises:* from :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/index` ...
 
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
@@ -60,7 +60,7 @@ From :doc:`/trainings/material/soup/linux/basics/shell/group`
 SSH Setup
 ---------
 
-From :doc:`/trainings/material/soup/linux/ssh/group`
+From :doc:`/trainings/material/soup/linux/ssh/index`
 
 * :doc:`/trainings/material/soup/linux/ssh/basics`
 * :doc:`/trainings/material/soup/linux/ssh/key-pair`

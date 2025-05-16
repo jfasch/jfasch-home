@@ -1,24 +1,19 @@
 Slide Material
 ==============
 
-Training material is written in `reStructuredText
-<https://docutils.sourceforge.io/rst.html>`__, and massaged by a
-Sphinx extension to form a network of *topics* as I call it. This is
-:doc:`work in progress </about/site/opentraining/index>`.
-
 .. toctree::
    :maxdepth: 1
 
-   linux/group
-   python/group
-   c/group
+   linux/index
+   python/index
+   c/index
    cxx-todo/index
-   cxx/group
-   cxx03/group
-   cxx11/group
-   cxx-design-patterns/group
+   cxx/index
+   cxx03/index
+   cxx11/index
+   cxx-design-patterns/index
    cxx-code/index
-   cxx-exercises/group
-   cmake/group
-   clean-code/group
-   unittest/group
+   cxx-exercises/index
+   cmake/index
+   clean-code/index
+   unittest/index

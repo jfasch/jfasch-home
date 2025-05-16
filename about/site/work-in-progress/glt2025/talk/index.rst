@@ -101,9 +101,3 @@ Irrigation Outlook
 * Hardware, finally
 * User interface with `textual <https://github.com/Textualize/textual>`__
 * Add logging, error reporting, watchdog
-
-More Information
-................
-
-* jjj collect links here, annotated and grouped
-

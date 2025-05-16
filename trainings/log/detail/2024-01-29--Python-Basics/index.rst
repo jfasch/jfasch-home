@@ -29,7 +29,7 @@ Python Basics (2024-01-29 - 2024-01-31)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1
 -----
@@ -135,7 +135,7 @@ Unit Testing (``pytest``), Project Management
 Object Oriented Programming
 ...........................
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+From :doc:`/trainings/material/soup/python/advanced/oo/index`:
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
@@ -156,7 +156,7 @@ From :doc:`/trainings/material/soup/python/advanced/oo/group`:
 ``pandas``, ``numpy``, ``scikit-learn``
 .......................................
 
-From :doc:`/trainings/material/soup/python/misc/pandas/group`
+From :doc:`/trainings/material/soup/python/misc/pandas/index`
 
 * :doc:`/trainings/material/soup/python/misc/pandas/basics`
 * :doc:`/trainings/material/soup/python/misc/pandas/iloc`

@@ -9,23 +9,23 @@ A One-Day Overview Of C++
    *Language basics*
 
    * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map` (and the STL in general)
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group` (including C++11 goodies like ``override``, ``final``, ``= delete``, ...)
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index` (including C++11 goodies like ``override``, ``final``, ``= delete``, ...)
 
    *Memory management*
 
-   * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+   * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
 
    *Pythonic features*
      
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
    * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
 
    *New language directions*
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
    * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
 A one-day ride through C++ for those who can take it. Course format is
@@ -154,7 +154,7 @@ Real Container Initialization: *Brace Initialization*
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 * I don't want ``class Item`` to have a default constructor (I don't use it)
 * I don't want to use :doc:`std::map::insert()
@@ -162,7 +162,7 @@ Real Container Initialization: *Brace Initialization*
   either
 * I want my map to be ``const``, **and initialized with content**
 * |longrightarrow|
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 .. literalinclude:: code-oo/todolist-const.cpp
    :caption: :download:`code-oo/todolist-const.cpp`
@@ -184,7 +184,7 @@ Two Kinds Of Items, Two Classes
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
 * Naive way: implement two *non-related* classes
 
@@ -208,7 +208,7 @@ Inheritance (Make It Compile, But Not Yet Work)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
    * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 
 * Radically, just to get objects into the map: derive from base
@@ -238,7 +238,7 @@ Analysis: The Perils Of Inheritance - *Slicing*
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
    * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 
 * Clarify: comment out todolist, and explain sideways
@@ -261,7 +261,7 @@ Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
    * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 
 * Better than *copying* objects of different sizes onto each other:
@@ -285,7 +285,7 @@ Key To Polymorphism: ``virtual``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
    * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
 
 * Makes ``base->doit()`` magically work
@@ -472,7 +472,7 @@ Memory Management: Smart Pointers (Showing The Options)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
+   * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
 
 * Plan: no manual memory management
 
@@ -494,8 +494,8 @@ Memory Management: ``std::unique_ptr<>`` In TodoList |longrightarrow| *No*
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
 
 * Try to use it (failed code below)
 * Explain ``std::initializer_list<>``
@@ -505,7 +505,7 @@ Memory Management: ``std::unique_ptr<>`` In TodoList |longrightarrow| *No*
 * |longrightarrow| ``std::unique_ptr<>`` is *move only*
 * |longrightarrow| ``std::unique_ptr<>`` unusable in :doc:`brace
   initialization
-  </trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group>`
+  </trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index>`
 
 .. literalinclude:: code-oo/todolist-unique-ptr.cpp
    :caption: :download:`code-oo/todolist-unique-ptr.cpp`
@@ -518,10 +518,10 @@ A Short Deviation: Move Semantics
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
 
 * At that time, a little deviation into :doc:`move semantics
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
+  </trainings/material/soup/cxx11/020-new-language-features/060-move/index>`
   is in order
 * |longrightarrow| This helps understand the compiler when he tries to
   just say "no" but fails
@@ -537,7 +537,7 @@ Memory Management: ``std::shared_ptr<>`` In TodoList
    * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
 
 * I do want :doc:`brace initialization
-  </trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group>`
+  </trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index>`
 * *And* I don't want to do manual memory management
 * |longrightarrow| The only viable option is to use
   ``std::shared_ptr<>``
@@ -605,7 +605,7 @@ Range Based ``for``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
 
 * Iterator based loops? Pointer arithmetic? |longrightarrow| *NO*
 * Element based iteration (Python's ``for``, C# ``foreach``)
@@ -622,7 +622,7 @@ Full Classes Hierarchy For One Method ``doit()`` |longrightarrow| *NO* (Lambdas)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
    * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
 * :ref:`Interfaces <cxx_overview_oo__iface_dogma>` are heavyweight
@@ -663,7 +663,7 @@ Wrap Up: TodoList, De-Overengineered
 .. [#tweakable] The course can be adapted to your organization as you
                 like it. Omit topics that are not relevant for you,
                 and replace them with others like :doc:`threading
-                </trainings/material/soup/cxx11/050-multithreading/group>`,
+                </trainings/material/soup/cxx11/050-multithreading/index>`,
                 for example.
 
 		See :doc:`here </trainings/material/soup/index>` for

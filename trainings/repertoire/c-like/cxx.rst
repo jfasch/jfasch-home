@@ -21,9 +21,9 @@ C++: Introduction
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/cxx03/group`
-	  * :doc:`/trainings/material/soup/cxx11/group`
-	  * :doc:`/trainings/material/soup/cxx/group`
+	* * :doc:`/trainings/material/soup/cxx03/index`
+	  * :doc:`/trainings/material/soup/cxx11/index`
+	  * :doc:`/trainings/material/soup/cxx/index`
       * * **Related**
 	* * :doc:`cxx11`
 	  * :doc:`design-patterns/design-patterns`

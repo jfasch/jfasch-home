@@ -23,7 +23,7 @@ Linux Kernel Driver Development
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* :doc:`/trainings/material/soup/linux/kernel/group`
+	* :doc:`/trainings/material/soup/linux/kernel/index`
       * * **Related**
 	* * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
 	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`

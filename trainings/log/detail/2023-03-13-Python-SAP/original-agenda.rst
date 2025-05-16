@@ -13,11 +13,11 @@ Original Agenda: Python For SAP Developers (2023-03-13 - 2023-03-15)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Agenda (i.e., a basis for further discussion) for a three day Python
 training. Exercises will be woven in on demand (see :doc:`here
-</trainings/material/soup/python/exercises/group>`).
+</trainings/material/soup/python/exercises/index>`).
 
 Day 1: Basics
 -------------
@@ -155,7 +155,7 @@ implementing a SAP data pipeline in Python.
 Pandas
 ......
 
-From :doc:`/trainings/material/soup/python/misc/pandas/group` ...
+From :doc:`/trainings/material/soup/python/misc/pandas/index` ...
 
 * :doc:`/trainings/material/soup/python/misc/pandas/basics`
 * :doc:`/trainings/material/soup/python/misc/pandas/iloc`

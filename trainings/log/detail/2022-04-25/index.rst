@@ -12,7 +12,7 @@ Python Basics (2022-04-25 - 2022-04-27)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
    * `Github Repository <https://github.com/jfasch/2022-04-25>`__
 
    **Notebook**

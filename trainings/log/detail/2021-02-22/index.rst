@@ -16,9 +16,9 @@ Python Basics (22.2.2021 - 24.2.2021)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
-   * :doc:`/trainings/material/soup/python/advanced/group`
-   * :doc:`/trainings/material/soup/python/swdev/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
+   * :doc:`/trainings/material/soup/python/advanced/index`
+   * :doc:`/trainings/material/soup/python/swdev/index`
 
    **Source Code**
 

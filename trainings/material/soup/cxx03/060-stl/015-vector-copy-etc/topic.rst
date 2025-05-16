@@ -21,7 +21,7 @@ Basics
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
    **Documentation**
 
@@ -70,7 +70,7 @@ STL Iterators: Pointer Arithmetic On A ``std::vector<>``
    **See also**
 
    * :doc:`C++11 range based for
-     </trainings/material/soup/cxx11/020-new-language-features/range-based-for>`
+     </trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for>`
    * :doc:`C++11 auto
      </trainings/material/soup/cxx11/020-new-language-features/auto>`
 
@@ -114,7 +114,7 @@ STL Iterators: Pointer Arithmetic On A ``std::vector<>``
 
 * Alternative to pointer-loops (but not always applicable):
   :doc:`range based for
-  </trainings/material/soup/cxx11/020-new-language-features/range-based-for>`
+  </trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for>`
 
 Algorithms And Containers : ``std::copy``
 -----------------------------------------

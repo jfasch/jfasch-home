@@ -25,7 +25,7 @@ CMake: An Introduction (2023-07-18)
    **See also**
 
    * :doc:`/trainings/repertoire/misc/cmake` (Course description)
-   * :doc:`/trainings/material/soup/cmake/group` (Course material)
+   * :doc:`/trainings/material/soup/cmake/index` (Course material)
 
 * :doc:`/trainings/material/soup/cmake/intro/basics`
 * :doc:`/trainings/material/soup/cmake/intro/libraries`

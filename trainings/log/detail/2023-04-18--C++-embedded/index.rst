@@ -66,7 +66,7 @@ Day 1
 Introduction
 ............
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/group`
+* :doc:`/trainings/material/soup/cxx11/010-introduction/index`
 
   * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
   * Outcome, including a quit-flag for the threads: `intro.cpp
@@ -77,7 +77,7 @@ Some Details
 
 * A little ``constexpr``: `constexpr.cpp
   <https://github.com/jfasch/2023-04-18/blob/main/livehacking/constexpr.cpp>`__
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
@@ -89,7 +89,7 @@ Some Details
     <https://github.com/jfasch/2023-04-18/blob/main/livehacking/lambda.cpp>`__
 
 * A little threading (more:
-  :doc:`/trainings/material/soup/cxx11/050-multithreading/group`)
+  :doc:`/trainings/material/soup/cxx11/050-multithreading/index`)
 
   * And Python's ``asyncio``? (maybe watch the video in
     :doc:`/about/site/work-in-progress/blink/index` |:metal:|)
@@ -97,19 +97,19 @@ Some Details
 Standard Template Library
 .........................
 
-From :doc:`/trainings/material/soup/cxx03/060-stl/group`
+From :doc:`/trainings/material/soup/cxx03/060-stl/index`
 
 * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
 * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/topic`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/group`
-* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/group`
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/group`
+* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/index`
+* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/index`
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
 
 OO
 ..
 
 From
-:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
+:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/index`
 
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
@@ -139,7 +139,7 @@ Warm-Up
   * *Memory model?*
 
 * A little threading (from
-  :doc:`/trainings/material/soup/cxx11/050-multithreading/group`)
+  :doc:`/trainings/material/soup/cxx11/050-multithreading/index`)
 
   * Load-modify-store conflict: `race-condition.cpp
     <https://github.com/jfasch/2023-04-18/blob/main/livehacking/race-condition.cpp>`__
@@ -168,7 +168,7 @@ OO, Cont'd
 ..........
 
 From
-:doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+:doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index`
 
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
@@ -205,14 +205,14 @@ Heavy Weight OO |:muscle:|
 
 Complete the pointless ``point`` class, by quickly moving across the
 following topics from
-:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
+:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/index`
 
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
 From
-:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`
@@ -228,14 +228,14 @@ See live-hacked code in `interfaces.cpp
 Exception Handling
 ..................
 
-From :doc:`/trainings/material/soup/cxx03/040-exceptions/group`:
+From :doc:`/trainings/material/soup/cxx03/040-exceptions/index`:
 
 * :doc:`/trainings/material/soup/cxx03/040-exceptions/020-try-catch/topic`
 
 Exercises: Containers And Algorithms 
 ....................................
 
-From :doc:`/trainings/material/soup/cxx-exercises/stl/group`:
+From :doc:`/trainings/material/soup/cxx-exercises/stl/index`:
 
 * :doc:`/trainings/material/soup/cxx-exercises/stl/vector`
 * :doc:`/trainings/material/soup/cxx-exercises/stl/map`
@@ -244,7 +244,7 @@ From :doc:`/trainings/material/soup/cxx-exercises/stl/group`:
 * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
 * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
 * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-generic`
-* :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/group`
+* :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/index`
 
 Exercises: OO And Interfaces
 ............................

@@ -7,10 +7,10 @@
 Topics
 ------
 
-* From :doc:`/trainings/material/soup/linux/basics/intro/group`
+* From :doc:`/trainings/material/soup/linux/basics/intro/index`
 
   * :doc:`/trainings/material/soup/linux/basics/intro/overview`
-  * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`
+  * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/index`
   * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
 
 Homework

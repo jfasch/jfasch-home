@@ -15,7 +15,7 @@ We are an organization that sits on a large pile of software. Sensors,
 there are many sensor implementations around. All are organized in a
 class hierarchy, starting at an abstract base class (an
 :doc:`interface
-</trainings/material/soup/cxx03/100-inheritance-oo-design/group>`):
+</trainings/material/soup/cxx03/100-inheritance-oo-design/index>`):
 
 .. literalinclude:: /trainings/material/soup/cxx-code/sensors-core/sensors/sensor.h
    :caption: :download:`/trainings/material/soup/cxx-code/sensors-core/sensors/sensor.h`

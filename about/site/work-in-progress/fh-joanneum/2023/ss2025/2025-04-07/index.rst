@@ -22,7 +22,7 @@ Live demo of what's going to happen in the next two semsters ...
 
 * Command line usage: basic commands, file types, special files
 * SSH usage: interactive login to my home Raspberry (:doc:`more on SSH
-  </trainings/material/soup/linux/ssh/group>`)
+  </trainings/material/soup/linux/ssh/index>`)
 * ``sysfs`` GPIO demo
 
   * See :doc:`here

@@ -25,7 +25,7 @@ screenplay-like writeup, much like :doc:`this one
 ------------------------------------------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/group`
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/const`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
@@ -37,7 +37,7 @@ Concepts (a.k.a. "Template error messages are a PITA")
 ------------------------------------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro/topic`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts/topic`
@@ -52,7 +52,7 @@ Lambdas
 -------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
@@ -72,8 +72,9 @@ Spaceship Operator
 Multithreading (And Related Topics)
 -----------------------------------
 
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/atomic-shared-ptr/topic`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/memory-model/topic`
-* From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+* From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
 
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
@@ -83,11 +84,10 @@ Multithreading (And Related Topics)
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
   * :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
 
-* Atomic smart pointers, and what's unsafe with smart pointers
 * Atomic references (``atomic_ref``)
 * And realtime? C++ does not define realtime concepts, so this is an
   OS topic.
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/group`
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/index`
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/intro`
 
@@ -117,7 +117,7 @@ Leider nein
 News From The Standard Library
 ------------------------------
 
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/group`
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/index`
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/intro`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/good-bad`
@@ -133,8 +133,8 @@ Optional Content From Past C++ Versions
 If the situation wants it, we can look over
 material that predates C++20, such as:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
 * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
 
 You can always browse :doc:`all material

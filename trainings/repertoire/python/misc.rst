@@ -22,9 +22,9 @@ Python: Miscellaneous Topics
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/python/misc/group`
+	* * :doc:`/trainings/material/soup/python/misc/index`
 	  * :doc:`Complete Python material
-            </trainings/material/soup/python/group>`
+            </trainings/material/soup/python/index>`
       * * **Related**
 	* * :doc:`basics`
 	  * :doc:`advanced`
@@ -39,4 +39,4 @@ courses. (Some of the topics still are in draft status.)
 Occasionally, I augment Python courses with excerpts from this
 material.
 
-See :doc:`/trainings/material/soup/python/misc/group` for more.
+See :doc:`/trainings/material/soup/python/misc/index` for more.

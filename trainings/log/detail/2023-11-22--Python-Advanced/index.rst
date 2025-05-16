@@ -30,7 +30,7 @@ Python Advanced (2023-11-22 - 2023-22-24)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1: Basics
 -------------
@@ -78,7 +78,7 @@ Project Management
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+From :doc:`/trainings/material/soup/python/advanced/oo/index`:
 necessary material before we can start hacking
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
@@ -95,7 +95,7 @@ Hackin' da project ...
 Day 3: OO, Hacking, Python Specials
 -----------------------------------
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`: all the rest
+From :doc:`/trainings/material/soup/python/advanced/oo/index`: all the rest
 
 * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`

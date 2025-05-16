@@ -34,7 +34,7 @@ Python Advanced (2023-09-25 - 2023-09-27)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1
 -----
@@ -75,7 +75,7 @@ Object Oriented Programming
 Classes
 ,,,,,,,
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`
+From :doc:`/trainings/material/soup/python/advanced/oo/index`
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`

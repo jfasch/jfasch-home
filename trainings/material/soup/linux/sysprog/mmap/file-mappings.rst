@@ -12,7 +12,7 @@ Reading A File, Not Using File I/O
 
 .. sidebar:: See also
 
-   * :doc:`../file-io/group`
+   * :doc:`../file-io/index`
 
 .. sidebar:: Documentation
 

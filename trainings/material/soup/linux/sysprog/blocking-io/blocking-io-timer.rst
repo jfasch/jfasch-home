@@ -16,7 +16,7 @@ Blocking I/O: On A Timer? WTF?
 
 .. sidebar:: See Also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/group`
+   * :doc:`/trainings/material/soup/linux/sysprog/basics/index`
 
 Setup A Timer
 -------------

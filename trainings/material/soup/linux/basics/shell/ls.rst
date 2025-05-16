@@ -87,7 +87,7 @@ Metadata
    * * ``-``
      * :ref:`File type <filetype>` (``-``: *regular file*)
    * * ``rw-r--r--``
-     * :doc:`Permissions <../permissions/group>`
+     * :doc:`Permissions <../permissions/index>`
    * * ``1``
      * Reference count (|longrightarrow| :doc:`links`)
    * * ``root``

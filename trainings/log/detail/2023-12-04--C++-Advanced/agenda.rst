@@ -15,8 +15,8 @@ Introduction: A New Language To Me
 Range Based for Loops
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for-map`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for-map`
 
 Tuple Unpacking (err, Structured Binding)
 .........................................
@@ -31,7 +31,7 @@ Duck Typing (err, ``auto``) Without A Duck
 Brace Initialization
 ....................
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
@@ -55,12 +55,12 @@ New OO keywords: override, final, default, delete
 Functions: ``std::function<>``, Lambdas
 .......................................
 
-* From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
+* From :doc:`/trainings/material/soup/cxx11/040-bind-function/index`:
 
   * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
   * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
@@ -88,7 +88,7 @@ Moving, RValue References: Do We Want To Copy Sensors?
 Moving: Usage
 .............
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
 
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
@@ -101,7 +101,7 @@ Moving: Implementation
 ......................
 
 Building upon the example from
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group` which is 
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index` which is 
 
 * Pointless
 * It implements a pointless ``String`` class that does resource
@@ -133,7 +133,7 @@ Type Erasure
 ------------
 
 * *Type erasure*: what is that, and why?
-* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
+* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/index`
 
 Allocators
 ----------
@@ -150,7 +150,7 @@ C++ Pythonic Toolcase
 Concepts
 --------
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro/topic`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts/topic`
@@ -158,7 +158,7 @@ From :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/gro
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
@@ -171,7 +171,7 @@ From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
 Outlook In ``>=20``
 -------------------
 
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/group`
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/index`
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/intro`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/good-bad`

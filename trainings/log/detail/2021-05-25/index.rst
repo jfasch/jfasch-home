@@ -12,9 +12,9 @@ Python Advanced (2021-05-25 - 2021-05-27)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
-   * :doc:`/trainings/material/soup/python/advanced/group`
-   * :doc:`/trainings/material/soup/python/swdev/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
+   * :doc:`/trainings/material/soup/python/advanced/index`
+   * :doc:`/trainings/material/soup/python/swdev/index`
 
 .. contents::
    :local:

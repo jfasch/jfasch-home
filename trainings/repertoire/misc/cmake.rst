@@ -19,7 +19,7 @@ CMake: A Dirty But Powerful Build Tool
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/cmake/group`
+	* * :doc:`/trainings/material/soup/cmake/index`
       * * **Related**
 	* * :doc:`make`
       * * **Booking**
@@ -104,7 +104,7 @@ Automatic Testing
 .................
 
 Today's software standards dictate that a project use unit testing
-(see for example :doc:`/trainings/material/soup/unittest/group`). See
+(see for example :doc:`/trainings/material/soup/unittest/index`). See
 how that can be integrated with CMake.
 
 Installation And Deployment
@@ -123,7 +123,7 @@ Recommended Prior Knowledge
 
 * C or C++ is recommended, obviously. It is good to understand what
   C's ``#include`` directive does (see
-  :doc:`/trainings/material/soup/c/040-functions-and-program-structure/group`
+  :doc:`/trainings/material/soup/c/040-functions-and-program-structure/index`
   for ``#include`` and more).
 * A rudimentary understanding of the Unix shell is also helpful (see
   :doc:`/trainings/repertoire/linux-prog/linux-basics` for Shell topics, and more)

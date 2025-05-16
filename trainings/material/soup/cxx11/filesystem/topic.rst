@@ -23,7 +23,7 @@ Overview
 
    **See also**
 
-   * :doc:`/trainings/material/soup/linux/basics/shell/group`
+   * :doc:`/trainings/material/soup/linux/basics/shell/index`
 
 * File system related stuff (obviously)
 
@@ -162,7 +162,7 @@ Current Working Directory
    **See also**
 
    * :doc:`/trainings/material/soup/linux/basics/shell/cwd` (from
-     :doc:`/trainings/material/soup/linux/basics/group`)
+     :doc:`/trainings/material/soup/linux/basics/index`)
 
 * Current working directory: process attribute
 * Process can change CWD
@@ -180,7 +180,7 @@ Directory Creation: ``std::filesystem::create_directory()``
    **See also**
 
    * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm` (from
-     :doc:`/trainings/material/soup/linux/basics/group`)
+     :doc:`/trainings/material/soup/linux/basics/index`)
 
 * Os wise, creating a directory fail if the parent directory does not
   exist (or has no permissions)
@@ -205,7 +205,7 @@ Directory Creation: ``std::filesystem::create_directories()``
    **See also**
 
    * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm` (from
-     :doc:`/trainings/material/soup/linux/basics/group`)
+     :doc:`/trainings/material/soup/linux/basics/index`)
 
 * Creating multiple level of directories in one shot
 * Like ``mkdir -p ...``

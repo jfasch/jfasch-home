@@ -28,9 +28,9 @@ Python: The Language Fundamentals
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/python/basics/group`
+	* * :doc:`/trainings/material/soup/python/basics/index`
 	  * :doc:`Complete Python material
-            </trainings/material/soup/python/group>`
+            </trainings/material/soup/python/index>`
       * * **Related**
 	* * :doc:`/trainings/repertoire/python/advanced`
 	  * :doc:`/trainings/repertoire/python/swdev`

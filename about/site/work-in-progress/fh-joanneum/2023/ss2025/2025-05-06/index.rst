@@ -10,7 +10,7 @@
 Basic File And Directory
 ------------------------
 
-From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`:
+From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/index`:
 
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
@@ -41,7 +41,7 @@ members of the ``team`` group:
 Knowing this, we can now tune permissions of files and directories to
 explicitly *share* with other ``team`` members.
 
-From :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+From :doc:`/trainings/material/soup/linux/basics/permissions/exercises/index`
 
 * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
 * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`

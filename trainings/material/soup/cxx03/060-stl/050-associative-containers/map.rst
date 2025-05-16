@@ -69,7 +69,7 @@ Filling The Container
   * To be filled explicitly during runtime
 
 * Since C++11:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+  :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 * Type definition with ``using`` is strongly recommended when working
   with maps
 

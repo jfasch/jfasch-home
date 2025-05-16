@@ -28,7 +28,7 @@ Last Warning (2)
   
 * It is sexy
 * It is easy - a thread is created in no time (gosh: :doc:`C++11
-  </trainings/material/soup/cxx11/group>`)
+  </trainings/material/soup/cxx11/index>`)
 * There are race conditions *everywhere*
 * Keep hands off cancellation
 * Careful when sharing data structures |longrightarrow| global

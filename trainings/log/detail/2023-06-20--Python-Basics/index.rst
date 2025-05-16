@@ -28,7 +28,7 @@ Python Basics (2023-06-20 - 2023-06-22)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1
 -----

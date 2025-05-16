@@ -10,7 +10,7 @@
 Sorting And Searching
 ---------------------
 
-From :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/group`
+From :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/index`
 
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find`
   (`find-demo.cpp

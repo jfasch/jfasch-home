@@ -30,7 +30,7 @@ Day 1: Introduction: C++, A New Language
 Pythonicity
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 
@@ -52,12 +52,12 @@ New OO Features
 Functions: ``std::function<>``, Lambdas
 .......................................
 
-From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
+From :doc:`/trainings/material/soup/cxx11/040-bind-function/index`:
 
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
@@ -70,7 +70,7 @@ Day 2: Simply Getting Stuff Done
 Classic Polymorphism: Interfaces
 ................................
 
-:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
@@ -91,7 +91,7 @@ Look over sensor hierachy in our project:
 Smart Pointers
 ..............
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
 
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
@@ -102,7 +102,7 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
 Move Semantics
 ..............
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
@@ -157,18 +157,18 @@ Moving, Roundup
 Containers And Algorithms
 .........................
 
-From :doc:`/trainings/material/soup/cxx03/060-stl/group`
+From :doc:`/trainings/material/soup/cxx03/060-stl/index`
 
 * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
 * :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/topic`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/group`
-* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/group`
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/group`
+* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/index`
+* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/index`
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
 
 And Embedded?
 .............
 
-* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
+* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/index`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
 
 Still Untold

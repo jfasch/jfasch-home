@@ -64,7 +64,7 @@ Introductory Live Hacking
 
 Hammering on a GPIO pin: a typical example of how hardware access
 works on Linux (from
-:doc:`/trainings/material/soup/linux/sysprog/intro-hw/group`).
+:doc:`/trainings/material/soup/linux/sysprog/intro-hw/index`).
 
 * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
 * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/get`
@@ -79,7 +79,7 @@ of these concepts will be viewed programmatically in the remainder of
 the course. It will be no surprise, for example, that communication
 with hardware has to do with file I/O.
 
-* From :doc:`/trainings/material/soup/linux/basics/intro/group`
+* From :doc:`/trainings/material/soup/linux/basics/intro/index`
 
   * :doc:`/trainings/material/soup/linux/basics/intro/overview`
   * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
@@ -87,7 +87,7 @@ with hardware has to do with file I/O.
   * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
   * :doc:`/trainings/material/soup/linux/basics/intro/environment`
 
-* From :doc:`/trainings/material/soup/linux/basics/shell/group`
+* From :doc:`/trainings/material/soup/linux/basics/shell/index`
 
   * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
   * :doc:`/trainings/material/soup/linux/basics/shell/paths`
@@ -98,14 +98,14 @@ with hardware has to do with file I/O.
   * :doc:`/trainings/material/soup/linux/basics/shell/cp`
   * :doc:`/trainings/material/soup/linux/basics/shell/mv`
   * Exercises (from
-    :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/group`)
+    :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/index`)
 
     * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/etc-passwd-size`
     * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/dev-types`
     * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/home-permissions`
 
   * Exercises (from
-    :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`)
+    :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/index`)
 
     * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
     * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
@@ -122,7 +122,7 @@ Day 2
 Processes Quick Walk-Through
 ............................
 
-* From :doc:`/trainings/material/soup/linux/sysprog/group`
+* From :doc:`/trainings/material/soup/linux/sysprog/index`
 
   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
   * :doc:`/trainings/material/soup/linux/sysprog/process/tree`
@@ -130,14 +130,14 @@ Processes Quick Walk-Through
 Permissions
 ...........
 
-From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+From :doc:`/trainings/material/soup/linux/basics/permissions/index`
 
 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
 * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
 * :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
 * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
 * :doc:`/trainings/material/soup/linux/basics/permissions/sticky`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/index`
 
 Development: CMake Quick Intro, And Git Quick Intro
 ...................................................
@@ -152,14 +152,14 @@ File IO
 
    **See also**
 
-   * :doc:`/trainings/material/soup/linux/sysprog/group`
+   * :doc:`/trainings/material/soup/linux/sysprog/index`
 
-* :doc:`/trainings/material/soup/linux/sysprog/basics/group`
+* :doc:`/trainings/material/soup/linux/sysprog/basics/index`
 
   * :doc:`/trainings/material/soup/linux/sysprog/basics/syscalls`
   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
 
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/group`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
 
   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
 
@@ -273,25 +273,25 @@ Modify that program such that it mimicks ``cat``:
 Cross Development
 .................
 
-* From :doc:`/trainings/material/soup/linux/toolchain/group`
+* From :doc:`/trainings/material/soup/linux/toolchain/index`
 
   * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
   * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
   * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
   * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
-  * :doc:`/trainings/material/soup/linux/toolchain/cross/group`
-  * :doc:`/trainings/material/soup/cmake/group`
+  * :doc:`/trainings/material/soup/linux/toolchain/cross/index`
+  * :doc:`/trainings/material/soup/cmake/index`
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
-  * :doc:`/trainings/material/soup/linux/toolchain/exercises/group`
+  * :doc:`/trainings/material/soup/linux/toolchain/exercises/index`
 
 * Establish a custom built toolchain for Raspberry Pi cross
   development (from
-  :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/group`)
+  :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/index`)
 
   * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
   * Unpacking the toolchain archive:
-    :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
+    :doc:`/trainings/material/soup/linux/basics/archiving-compression/index`
 
   Have a look into how toolchains are made:
 
@@ -304,7 +304,7 @@ Day 4
 Secure Shell (SSH)
 ..................
 
-* From :doc:`/trainings/material/soup/linux/ssh/group` ...
+* From :doc:`/trainings/material/soup/linux/ssh/index` ...
 
   * :doc:`/trainings/material/soup/linux/ssh/basics`
   * :doc:`/trainings/material/soup/linux/ssh/key-pair`
@@ -314,9 +314,9 @@ Secure Shell (SSH)
 Miscellaneous Hardware
 ......................
 
-* From :doc:`/trainings/material/soup/linux/hardware/group`
+* From :doc:`/trainings/material/soup/linux/hardware/index`
 
-  * :doc:`/trainings/material/soup/linux/hardware/can/group`
+  * :doc:`/trainings/material/soup/linux/hardware/can/index`
   * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
   * :doc:`/trainings/material/soup/linux/hardware/i2c/topic`
   * :doc:`/trainings/material/soup/linux/hardware/pwm/topic`
@@ -371,12 +371,12 @@ More From The Commandline
    * Shell scripting: :download:`100-shell-scripting.pdf
      </trainings/material/pdf/100-shell-scripting.pdf>`
 
-* From :doc:`/trainings/material/soup/linux/basics/shell/group`
+* From :doc:`/trainings/material/soup/linux/basics/shell/index`
 
   * :doc:`/trainings/material/soup/linux/basics/shell/links`
   * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
-* From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
+* From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/index`
 
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
   * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
@@ -393,7 +393,7 @@ From :doc:`/trainings/repertoire/linux-prog/sysprog/multithreading`:
 * Atomics
 * Realtime
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`

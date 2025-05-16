@@ -15,7 +15,7 @@ Linux Basics (2023-05-23 - 2023-05-25)
 .. sidebar::
 
    * Start: Tuesday, 8:30
-   * :doc:`/trainings/material/soup/linux/basics/group`
+   * :doc:`/trainings/material/soup/linux/basics/index`
    * Original agenda: :doc:`agenda`
 
 Day 1
@@ -33,7 +33,7 @@ me the *public key*.
 Introduction: Concepts and Terminology
 ......................................
 
-From :doc:`/trainings/material/soup/linux/basics/intro/group`
+From :doc:`/trainings/material/soup/linux/basics/intro/index`
 
 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
 * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file`
@@ -44,7 +44,7 @@ From :doc:`/trainings/material/soup/linux/basics/intro/group`
 The Shell (Bash - “Bourne Again Shell”)
 .......................................
 
-From :doc:`/trainings/material/soup/linux/basics/shell/group`
+From :doc:`/trainings/material/soup/linux/basics/shell/index`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/paths`
 * :doc:`/trainings/material/soup/linux/basics/shell/special-paths`
@@ -58,7 +58,7 @@ Day 2
 The Shell (Bash - “Bourne Again Shell”)
 .......................................
 
-From :doc:`/trainings/material/soup/linux/basics/shell/group`
+From :doc:`/trainings/material/soup/linux/basics/shell/index`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/cp`
 * :doc:`/trainings/material/soup/linux/basics/shell/mv`
@@ -66,14 +66,14 @@ From :doc:`/trainings/material/soup/linux/basics/shell/group`
 * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
 Exercise time (from
-:doc:`/trainings/material/soup/linux/basics/shell/exercises/group`)
+:doc:`/trainings/material/soup/linux/basics/shell/exercises/index`)
 
-* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`
+* :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/index`
 
 Tools: Inspecting Text Files
 ............................
 
-From :doc:`/trainings/material/soup/linux/basics/text-tools/group`
+From :doc:`/trainings/material/soup/linux/basics/text-tools/index`
 
 * :doc:`/trainings/material/soup/linux/basics/text-tools/overview`
 * :doc:`/trainings/material/soup/linux/basics/text-tools/cat`
@@ -87,10 +87,10 @@ From :doc:`/trainings/material/soup/linux/basics/text-tools/group`
 File System Permissions
 .......................
 
-From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+From :doc:`/trainings/material/soup/linux/basics/permissions/index`
 
 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/index`
 
 Day 3
 -----
@@ -125,7 +125,7 @@ File System Permissions
 .......................
 
 More from
-:doc:`/trainings/material/soup/linux/basics/permissions/group`
+:doc:`/trainings/material/soup/linux/basics/permissions/index`
 
 * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
 * :doc:`/trainings/material/soup/linux/basics/permissions/setuid-livedemo`
@@ -135,7 +135,7 @@ More from
 I/O Redirection And Pipes
 .........................
 
-From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
+From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/index`
 
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`
@@ -145,7 +145,7 @@ From :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
 Archiving and Compression
 .........................
 
-From :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
+From :doc:`/trainings/material/soup/linux/basics/archiving-compression/index`
 
 * :doc:`/trainings/material/soup/linux/basics/archiving-compression/overview`
 * :doc:`/trainings/material/soup/linux/basics/archiving-compression/gzip`
@@ -170,7 +170,7 @@ From :download:`Linux Basics PDF
 SSH: Secure Shell
 .................
 
-From :doc:`/trainings/material/soup/linux/ssh/group`
+From :doc:`/trainings/material/soup/linux/ssh/index`
 
 * :doc:`/trainings/material/soup/linux/ssh/basics`
 * :doc:`/trainings/material/soup/linux/ssh/key-pair`
@@ -178,7 +178,7 @@ From :doc:`/trainings/material/soup/linux/ssh/group`
 * :doc:`/trainings/material/soup/linux/ssh/portforwarding`
 * :doc:`/trainings/material/soup/linux/ssh/sshfs`
 * :doc:`/trainings/material/soup/linux/ssh/links`
-* :doc:`/trainings/material/soup/linux/ssh/exercises/group`
+* :doc:`/trainings/material/soup/linux/ssh/exercises/index`
 
 Shell Scripting (at least some of it)
 .....................................

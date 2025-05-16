@@ -119,7 +119,7 @@ Testability: Input Cleaning
 
    **See also**
 
-   * :doc:`/trainings/material/soup/python/swdev/pytest/group`
+   * :doc:`/trainings/material/soup/python/swdev/pytest/index`
 
 **Currency conversion**
 

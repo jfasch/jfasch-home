@@ -15,8 +15,8 @@ Introduction: A New Language To Me
 Range Based for Loops
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for-map`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for-map`
 
 Tuple Unpacking (err, Structured Binding)
 .........................................
@@ -34,7 +34,7 @@ C++ Pythonic Toolcase
 Brace Initialization (``std::initializer_list<>``)
 ..................................................
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
@@ -51,12 +51,12 @@ New OO keywords: override, final, default, delete
 Functions: ``std::function<>``, Lambdas
 .......................................
 
-* From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
+* From :doc:`/trainings/material/soup/cxx11/040-bind-function/index`:
 
   * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
   * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
@@ -81,7 +81,7 @@ Delegating Constructor
 Smart Pointers: ``std::shared_ptr<>``, ``std::unique_ptr<>`` (And A Little ``std::move``)
 -----------------------------------------------------------------------------------------
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
 
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
@@ -97,7 +97,7 @@ Moving
 ......
 
 Best explained in a live hacking session (from
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`)
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`)
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`, including *Rule Of Five*
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
@@ -116,7 +116,7 @@ Something Similar But Completely Different: Perfect Forwarding
 Unit Testing With ``googletest``
 --------------------------------
 
-From :doc:`/trainings/material/soup/unittest/group`:
+From :doc:`/trainings/material/soup/unittest/index`:
 
 * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/topic`
 * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`
@@ -125,7 +125,7 @@ From :doc:`/trainings/material/soup/unittest/group`:
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
@@ -165,9 +165,9 @@ Code (And Project) Sanity
 Clean Code, Design Patterns
 ...........................
 
-* :doc:`/trainings/material/soup/clean-code/group`
+* :doc:`/trainings/material/soup/clean-code/index`
   (overview/discussion only)
-* From :doc:`/trainings/material/soup/cxx-design-patterns/group`
+* From :doc:`/trainings/material/soup/cxx-design-patterns/index`
 
   * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton` (but see "Code Sanity" above)
   * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`

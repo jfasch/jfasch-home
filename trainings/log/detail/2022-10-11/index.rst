@@ -95,8 +95,8 @@ Pythonicity (Thank You: Readablility and Writability)
 Range Based for Loops
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for-map`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for-map`
 
 Tuple Unpacking (err, Structured Binding)
 .........................................
@@ -119,7 +119,7 @@ Things That Simply Deserved Fixing Since Ages
 Brace Initialization
 ....................
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
@@ -151,7 +151,7 @@ Delegating Constructor
 Smart Pointers
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
 
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
@@ -165,7 +165,7 @@ From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
 Moving, “RValue References”, And Perfect Forwarding
 ---------------------------------------------------
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
@@ -179,12 +179,12 @@ Perfect forwarding *ain't moving*:
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
 ---------------------------------------------------------
 
-From :doc:`/trainings/material/soup/cxx11/040-bind-function/group`:
+From :doc:`/trainings/material/soup/cxx11/040-bind-function/index`:
 
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
@@ -194,7 +194,7 @@ From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
@@ -211,7 +211,7 @@ Coroutines and C++23 Generators
 ...............................
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/group`
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/intro`
 
@@ -219,7 +219,7 @@ Ranges And Views
 ................
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/group`
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/intro`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/good-bad`
@@ -229,7 +229,7 @@ Concepts
 ........
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro/topic`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts/topic`

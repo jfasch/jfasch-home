@@ -5,8 +5,8 @@ Python Advanced (2022-03-15 - 2022-03-17, 2022-03-31)
 
 .. sidebar:: *Training Information*
 
-   * :doc:`/trainings/material/soup/python/advanced/group`
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/advanced/index`
+   * :doc:`/trainings/material/soup/python/index`
    * Jupyter Notebook
 
      * :doc:`Structure <notebook-wrapper>`
@@ -65,7 +65,7 @@ Continue with exercises: CSV |longrightarrow| modularization
 Test Driven Development
 .......................
 
-(Mostly from :doc:`/trainings/material/soup/clean-code/group`)
+(Mostly from :doc:`/trainings/material/soup/clean-code/index`)
 
 I had stated my strong opinion about (excess) debugger usage. (In
 short words, debuggers are from hell when you use one to *comprehend*
@@ -120,7 +120,7 @@ Continue with mess ...
   * "Duplicate ID in DB" exception
   * Common exception base class
   * ``collections.defaultdict``
-  * :doc:`/trainings/material/soup/python/misc/db/group`
+  * :doc:`/trainings/material/soup/python/misc/db/index`
 
     * `sqlite3 user database test
       <https://github.com/jfasch/2022-02-23/blob/main/userdb/tests/test_sqlite_db.py>`__

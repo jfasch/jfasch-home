@@ -7,7 +7,7 @@ Python Basics (2021-08-31 - 2021-09-01)
 
    **Material**
 
-   * :doc:`Python Topics </trainings/material/soup/python/group>`
+   * :doc:`Python Topics </trainings/material/soup/python/index>`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-08-31>`__

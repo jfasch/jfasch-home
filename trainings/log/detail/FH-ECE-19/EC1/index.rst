@@ -4,7 +4,7 @@ Embedded Computing 1 (ECE 19)
 .. sidebar:: Material
 
    * :download:`Linux Basics (PDF) </trainings/material/pdf/010-linux-basics.pdf>`
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
    * Private repository on Github: https://github.com/jfasch/FH-ECE-19
 
 .. toctree::

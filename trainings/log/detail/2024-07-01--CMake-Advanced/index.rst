@@ -39,7 +39,7 @@ Day 1
 Basics
 ......
 
-From :doc:`/trainings/material/soup/cmake/intro/group`
+From :doc:`/trainings/material/soup/cmake/intro/index`
 
 * :doc:`/trainings/material/soup/cmake/intro/basics`
 * :doc:`/trainings/material/soup/cmake/intro/libraries`
@@ -56,7 +56,7 @@ Cross Development
 * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
   (including a link to a working toolchain file)
 * :doc:`More about toolchains and cross development
-  </trainings/material/soup/linux/toolchain/group>`
+  </trainings/material/soup/linux/toolchain/index>`
 
 Day 2
 -----
@@ -78,7 +78,7 @@ Dependencies, Dependencies, Properties, ...
 The CMake Language
 ..................
 
-From :doc:`/trainings/material/soup/cmake/advanced/language/group`
+From :doc:`/trainings/material/soup/cmake/advanced/language/index`
 
 * :doc:`/trainings/material/soup/cmake/advanced/language/basics/topic`
 * :doc:`/trainings/material/soup/cmake/advanced/language/variables/topic`
@@ -99,7 +99,7 @@ Morning Awakening
 External Dependencies
 .....................
 
-From :doc:`/trainings/material/soup/cmake/advanced/group` ...
+From :doc:`/trainings/material/soup/cmake/advanced/index` ...
 
 * :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3`
 * :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-graph`

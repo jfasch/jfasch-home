@@ -38,7 +38,7 @@ Real Container Initialization
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 * Think C's "array of ``struct``" initialization
 * ``std::map`` is *initialized* |longrightarrow| could be ``const``!
@@ -105,8 +105,8 @@ Iterators Are So Old-School: *Range Based For*
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for-map`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for-map`
 
 * C's ``for`` loops are only brutal syntactic sugar for ``while``
 * This can be done better
@@ -187,13 +187,13 @@ Definitely *Not* Old-School: *Lambda*
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
 * ``up_1_to_10()`` and ``down_1000_to_980()`` are *one-shot functions*
 * Make only sense at one point: part of a todo list
 * Want to define them *where I use them*
 * |longrightarrow| :doc:`Lambda
-  </trainings/material/soup/cxx11/020-new-language-features/lambda/group>`
+  </trainings/material/soup/cxx11/020-new-language-features/lambda/index>`
 
 .. note::
 
@@ -209,7 +209,7 @@ Inevitable: Threads
 
 .. sidebar::
 
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+   * :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
 
 * Threads are not a toy
 * Far too easy in C++ since 2011
@@ -283,7 +283,7 @@ Wrapping Up: Initializer
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 * Lost the ability to *initialize* a ``TodoList`` object
   (|longrightarrow| ``add_item()``)

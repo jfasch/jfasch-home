@@ -28,7 +28,7 @@ Python Basics (2023-11-29 - 2023-12-01)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Setup
 -----
@@ -99,7 +99,7 @@ Some CSV, ``matplotlib``, ...
 
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
-* :doc:`/trainings/material/soup/python/misc/pandas/group`
+* :doc:`/trainings/material/soup/python/misc/pandas/index`
 
 Weird things ...
 

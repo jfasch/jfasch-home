@@ -30,7 +30,7 @@ Python Advanced (2023-04-24 - 2023-04-26)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1: Python Inside Out
 ------------------------
@@ -65,7 +65,7 @@ Dynamic Features
 Object Oriented Programming
 ...........................
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
+From :doc:`/trainings/material/soup/python/advanced/oo/index` ...
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
@@ -90,7 +90,7 @@ lot.
 Object Oriented Programming (Continued)
 .......................................
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
+From :doc:`/trainings/material/soup/python/advanced/oo/index` ...
 
 * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
@@ -102,7 +102,7 @@ From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
 Clean Code?
 ...........
 
-From :doc:`/trainings/material/soup/clean-code/group` ...
+From :doc:`/trainings/material/soup/clean-code/index` ...
 
 * :doc:`/trainings/material/soup/clean-code/craft-sw`
 * :doc:`/about/site/work-in-progress/2022-04-13/seminar/clean-code-craftsmanship`
@@ -244,6 +244,6 @@ Design Patterns Overview
 * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
 * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
 * :doc:`Design patterns
-  </trainings/material/soup/cxx-design-patterns/group>`: problems,
+  </trainings/material/soup/cxx-design-patterns/index>`: problems,
   possible solutions
 

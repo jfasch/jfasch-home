@@ -20,7 +20,7 @@ Download And Install Toolchain Archive
 
    **See also**
 
-   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
+   * :doc:`/trainings/material/soup/linux/basics/archiving-compression/index`
 
    **Download**
 

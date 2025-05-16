@@ -158,14 +158,14 @@ Plan: Evolution
 
        * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
        * Excerpts from
-	 :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/group`
+	 :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/index`
 
 	 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find_if`
 	 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
 	 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
 
        * Excerpts from
-	 :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/group`
+	 :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
 
 	 * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
 

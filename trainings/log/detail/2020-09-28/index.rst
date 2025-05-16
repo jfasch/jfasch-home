@@ -14,14 +14,14 @@ Python Basics (28.9.2020 - 30.9.2020)
 
    **Official Description**
 
-   :doc:`/trainings/material/soup/python/basics/group`
+   :doc:`/trainings/material/soup/python/basics/index`
 
    **Material**
 
    .. csv-table::
 
-      Python material, :doc:`/trainings/material/soup/python/group`
-      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/group`
+      Python material, :doc:`/trainings/material/soup/python/index`
+      :doc:`OpenTraining </about/site/opentraining/index>` Topics, :doc:`/trainings/material/soup/python/index`
 
 Preparation
 -----------

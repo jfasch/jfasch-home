@@ -29,7 +29,7 @@ Python Basics (2023-12-18 - 2023-12-20)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Setup
 -----
@@ -145,7 +145,7 @@ Exercise Series: CSV Files
 A Bit Of OO
 -----------
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`
+From :doc:`/trainings/material/soup/python/advanced/oo/index`
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`

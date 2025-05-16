@@ -28,9 +28,9 @@ Python: Project/Package Management
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/python/swdev/group`
+	* * :doc:`/trainings/material/soup/python/swdev/index`
 	  * :doc:`Complete Python material
-            </trainings/material/soup/python/group>`
+            </trainings/material/soup/python/index>`
       * * **Related**
 	* * :doc:`basics`
 	  * :doc:`advanced`

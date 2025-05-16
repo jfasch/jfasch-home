@@ -16,7 +16,7 @@ Python Grundlagen (2021-08-23 - 2021-08-25)
 
    **Material**
 
-   * :doc:`Python Topics </trainings/material/soup/python/group>`
+   * :doc:`Python Topics </trainings/material/soup/python/index>`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-08-23>`__
@@ -149,7 +149,7 @@ Day 3
 
 * Advanced Topics
 
-  * :doc:`/trainings/material/soup/python/advanced/oo/group`
+  * :doc:`/trainings/material/soup/python/advanced/oo/index`
   * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
   * :doc:`/trainings/material/soup/python/swdev/unittest`
 

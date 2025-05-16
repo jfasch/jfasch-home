@@ -1,7 +1,7 @@
 2022-03-10 (Homework until 2022-03-21)
 ======================================
 
-From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`
+From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/index`
 --------------------------------------------------------------------------------------
 
 **Exercise series: create, copy, move, remove things**
@@ -18,7 +18,7 @@ From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/
 
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/rm-rf`
 
-From  :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/group`
+From  :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/index`
 ---------------------------------------------------------------------------
 
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/etc-passwd-size`

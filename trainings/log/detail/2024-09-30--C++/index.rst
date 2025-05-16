@@ -43,7 +43,7 @@ Basic C++: Classes
 ..................
 
 From
-:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
+:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/index`
 
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
@@ -125,7 +125,7 @@ Preparing for 2nd exercise (``class FileSensor``)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/unittest/group`
+   * :doc:`/trainings/material/soup/unittest/index`
    * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
    * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
 
@@ -135,7 +135,7 @@ Preparing for 2nd exercise (``class FileSensor``)
   :doc:`/trainings/material/soup/linux/hardware/w1/topic`)
 
 * :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/screenplay` 
-  (from :doc:`/trainings/material/soup/unittest/group`)
+  (from :doc:`/trainings/material/soup/unittest/index`)
 * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
 * ``<fstream>`` short livehack
 
@@ -163,7 +163,7 @@ Morning Wakeup
 Inheritance, And Polymorphism
 .............................
 
-From :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+From :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`
@@ -264,7 +264,7 @@ Morning Wakeup
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/linux/hardware/can/group`
+   * :doc:`/trainings/material/soup/linux/hardware/can/index`
    * :doc:`/trainings/repertoire/linux-prog/embedded/embedded`
 
 * ``toolcase/can/CanCoutPeriph.h``: dtor not needed
@@ -313,7 +313,7 @@ class that does the physical output.
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/index`
 
 See
 `embedded-nonvirtual-polymorphic-pointers/toolcase/can/CanDataSink.h
@@ -322,7 +322,7 @@ See
 Note that templates, instantiated with parameter types that are
 lacking required functionality, can cause a compiler to frustrate
 developers. :doc:`Concepts
-</trainings/material/soup/cxx11/020-new-language-features/concepts/group>`
+</trainings/material/soup/cxx11/020-new-language-features/concepts/index>`
 are a newer language feature to prevent such situations.
 
 Eliminating ``virtual``: using ``std::variant``
@@ -330,7 +330,7 @@ Eliminating ``virtual``: using ``std::variant``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
    * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
 
 * Show function call operator (``operator()(...)``), and Lambdas:
@@ -363,12 +363,12 @@ hold a fixed number of *unrelated* alternative pointer types. Advantages:
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/index`
    * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
 
 * No ``virtual``. The alternatives only need to match the requirements
   (see :ref:`course-2024-09-30-candatasink-template`); :doc:`Concepts
-  </trainings/material/soup/cxx11/020-new-language-features/concepts/group>`
+  </trainings/material/soup/cxx11/020-new-language-features/concepts/index>`
   could additionally be used to check requirements.
 * Dynamic dispatch is done using `std::visit`, using the
   ``std::variant``'s type discriminator, with the effect that the
@@ -391,7 +391,7 @@ Approach 2: Alternative Objects In A ``std::variant``
 `````````````````````````````````````````````````````
 
 As a case study (and to show :doc:`Move Semantics
-</trainings/material/soup/cxx11/020-new-language-features/060-move/group>`
+</trainings/material/soup/cxx11/020-new-language-features/060-move/index>`
 in action), :ref:`course-2024-09-30-approach-1` is modified to cram
 entire objects in a ``std::variant``.
 

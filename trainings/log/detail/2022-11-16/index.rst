@@ -8,7 +8,7 @@ Python (2022-11-16 - 2022-11-18)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
    **Source Code**
 

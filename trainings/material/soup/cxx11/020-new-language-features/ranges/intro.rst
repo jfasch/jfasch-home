@@ -96,7 +96,7 @@ Views As Parameters: Good Old Template
 
    **See also**
 
-   * :doc:`../concepts/group`
+   * :doc:`../concepts/index`
 
    **Trainer's Note**
 
@@ -128,7 +128,7 @@ Views As Parameters: Concepts
 -----------------------------
 
 * Abbreviated function templates are best combined with :doc:`concepts
-  <../concepts/group>`
+  <../concepts/index>`
 * |longrightarrow| Better compiler errors
 
 .. literalinclude:: intro/print-concept.cpp

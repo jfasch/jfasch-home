@@ -24,7 +24,7 @@ Linux Systems Programming (Course Series)
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/linux/sysprog/group`
+	* * :doc:`/trainings/material/soup/linux/sysprog/index`
 	  * :download:`Linux Systems Programming (PDF, unmaintained but still there)
             </trainings/material/pdf/020-linux-sysprog--en.pdf>`
       * * **Related**

@@ -19,7 +19,7 @@ Python For SAP Developers (2023-03-13 - 2023-03-15)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
    * Github project: https://github.com/jfasch/2023-03-13
 
    **Notebook**
@@ -137,7 +137,7 @@ Day 3
 Pandas
 ......
 
-From :doc:`/trainings/material/soup/python/misc/pandas/group` ...
+From :doc:`/trainings/material/soup/python/misc/pandas/index` ...
 
 * :doc:`/trainings/material/soup/python/misc/pandas/basics`
 * :doc:`/trainings/material/soup/python/misc/pandas/iloc`
@@ -236,7 +236,7 @@ Unit Testing
 Machine Learning: Pandas, NumPy, And Algorithms
 ...............................................
 
-From :doc:`/trainings/material/soup/python/misc/ai/group`
+From :doc:`/trainings/material/soup/python/misc/ai/index`
 
 * :doc:`/trainings/material/soup/python/misc/ai/machine-learning-intro`
 * :doc:`/trainings/material/soup/python/misc/ai/linear-regression/topic`

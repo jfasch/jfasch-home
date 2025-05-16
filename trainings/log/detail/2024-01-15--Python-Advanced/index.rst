@@ -29,7 +29,7 @@ Python Advanced (2024-01-15 - 2024-01-17)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Basics
 ------
@@ -121,4 +121,4 @@ Group Project
 
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
-* :doc:`/trainings/material/soup/python/swdev/pytest/group`
+* :doc:`/trainings/material/soup/python/swdev/pytest/index`

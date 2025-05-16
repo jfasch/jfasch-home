@@ -21,7 +21,7 @@ Linux Basics: A Gentle Introduction
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/linux/basics/group`
+	* * :doc:`/trainings/material/soup/linux/basics/index`
       * * **Related**
 	* * :doc:`bash`
 	  * :doc:`/trainings/repertoire/linux-prog/sysprog/index`

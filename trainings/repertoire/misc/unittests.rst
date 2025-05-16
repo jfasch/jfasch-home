@@ -11,7 +11,7 @@ Unittesting and Test Driven Development
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/unittest/group`
+	* * :doc:`/trainings/material/soup/unittest/index`
 	  * :download:`Design Patterns And Test Driven Development
             (PDF)
             </trainings/material/pdf/060-design-patterns-unittests.pdf>`
@@ -66,13 +66,13 @@ die Tests nicht zur Last werden zu lassen.
 Der Vortragende kann aufgrund seiner Herkunft mit folgendem aufwarten:
 
 * Python: ``pytest`` (:doc:`course material
-  </trainings/material/soup/python/swdev/pytest/group>`, `official
+  </trainings/material/soup/python/swdev/pytest/index>`, `official
   site <https://docs.pytest.org/>`__)
 * Python: ``unittest`` (:doc:`course material
   </trainings/material/soup/python/swdev/unittest>`, `official site
   <https://docs.python.org/3.7/library/unittest.html>`__)
 * C++: GoogleTest (:doc:`course material
-  </trainings/material/soup/unittest/group>`, `official site
+  </trainings/material/soup/unittest/index>`, `official site
   <https://github.com/google/googletest>`__)
 * C++: `Boost.Test
   <https://www.boost.org/doc/libs/1_72_0/libs/test/doc/html/index.html>`__

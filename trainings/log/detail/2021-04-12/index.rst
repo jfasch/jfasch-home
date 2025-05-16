@@ -16,7 +16,7 @@ Programmierung Grundlagen (12. und 13.4.2021)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`,
      :download:`download <Notebook.ipynb>`
    * `Github Repository <https://github.com/jfasch/2021-04-12>`__
@@ -35,7 +35,7 @@ Programmierung Grundlagen (12. und 13.4.2021)
 
 Die Kurssprache des Kurses "Programmierung Grundlagen" ist Python;
 viele der Python-spezifische Elemente werden von :doc:`hier
-</trainings/material/soup/python/basics/group>` unterrichtet.
+</trainings/material/soup/python/basics/index>` unterrichtet.
 
 Log
 ---

@@ -12,7 +12,7 @@ Python Advanced (2022-05-16 - 2022-05-18)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
    * `Github Repository <https://github.com/jfasch/2022-05-16>`__
 
    **Notebook**
@@ -45,7 +45,7 @@ Unit Testing, Test Driven Development
 Object Priented Programming
 ...........................
 
-* :doc:`/trainings/material/soup/python/advanced/oo/group`
+* :doc:`/trainings/material/soup/python/advanced/oo/index`
 
 *"class Person" basics*
 
@@ -128,7 +128,7 @@ Standesregister nach SQLite3
 
 .. sidebar:: Topics
 
-   * :doc:`/trainings/material/soup/python/misc/db/group`
+   * :doc:`/trainings/material/soup/python/misc/db/index`
 
 .. code-block:: console
 

@@ -70,7 +70,7 @@ Python Development
 
 .. sidebar:: Slides
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 * **Language Introduction**
 

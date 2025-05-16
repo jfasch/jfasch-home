@@ -23,7 +23,7 @@ Python Programming: From Absolute Beginner to Advanced Productivity
 	* Trainer language is English or German
       * * **Material**
 	* :doc:`Complete Python material
-	  </trainings/material/soup/python/group>`
+	  </trainings/material/soup/python/index>`
       * * **Booking**
 	* :doc:`/trainings/booking`
 

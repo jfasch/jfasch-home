@@ -65,7 +65,7 @@ Linux/UNIX
 SSH
 ---
 
-* :doc:`SSH </trainings/material/soup/linux/ssh/group>` (connecting
+* :doc:`SSH </trainings/material/soup/linux/ssh/index>` (connecting
   to the Raspberry)
 
 Python

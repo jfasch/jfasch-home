@@ -5,8 +5,8 @@ Python Basics (2022-02-23 - 2022-02-25)
 
 .. sidebar:: *Training Information*
 
-   * :doc:`/trainings/material/soup/python/basics/group`
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
+   * :doc:`/trainings/material/soup/python/index`
    * Jupyter Notebook
 
      * :doc:`Structure <notebook-wrapper>`

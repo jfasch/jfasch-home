@@ -9,7 +9,7 @@ Linux, And Programming
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/linux/group`
+	* * :doc:`/trainings/material/soup/linux/index`
 
 	  
 Courses

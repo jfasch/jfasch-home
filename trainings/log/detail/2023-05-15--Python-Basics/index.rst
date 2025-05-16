@@ -28,7 +28,7 @@ Python Basics (2023-05-15 - 2023-05-17)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1
 -----
@@ -97,7 +97,7 @@ Generators
 A Bit Of ``venv``, A Bit Of ``pip``
 ```````````````````````````````````
 
-From :doc:`/trainings/material/soup/python/swdev/group`
+From :doc:`/trainings/material/soup/python/swdev/index`
 
 * :doc:`/trainings/material/soup/python/swdev/venv/topic`
 * :doc:`/trainings/material/soup/python/swdev/pip/topic`
@@ -136,7 +136,7 @@ Day 3
 Object Oriented Programming
 ...........................
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`
+From :doc:`/trainings/material/soup/python/advanced/oo/index`
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`

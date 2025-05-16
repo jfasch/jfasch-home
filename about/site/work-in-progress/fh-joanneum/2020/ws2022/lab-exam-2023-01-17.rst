@@ -26,7 +26,7 @@ Exercises
      * 8
    * *
      *
-   * * From :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/group` ...
+   * * From :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/index` ...
      *
    * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/insert-sunny`
      * 6

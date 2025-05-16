@@ -28,9 +28,9 @@ Python: More Language Features
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/python/advanced/group`
+	* * :doc:`/trainings/material/soup/python/advanced/index`
 	  * :doc:`Complete Python material
-	    </trainings/material/soup/python/group>`
+	    </trainings/material/soup/python/index>`
       * * **Related**
 	* * :doc:`basics`
 	  * :doc:`swdev`
@@ -53,7 +53,7 @@ To meet this goal, this course covers some advanced language features
 which you won't be able to do without once you got used to them.
 
 Here is an outline of the course; see the :doc:`course material
-</trainings/material/soup/python/advanced/group>` for more detailed
+</trainings/material/soup/python/advanced/index>` for more detailed
 information.
 
 * Object orientation: inheritance, interfaces, or only ducks?

@@ -14,11 +14,11 @@ C and C++ Programming
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/c/group`
-	  * :doc:`/trainings/material/soup/cxx/group`
-	  * :doc:`/trainings/material/soup/cxx03/group`
-	  * :doc:`/trainings/material/soup/cxx11/group`
-	  * :doc:`/trainings/material/soup/cxx-design-patterns/group`
+	* * :doc:`/trainings/material/soup/c/index`
+	  * :doc:`/trainings/material/soup/cxx/index`
+	  * :doc:`/trainings/material/soup/cxx03/index`
+	  * :doc:`/trainings/material/soup/cxx11/index`
+	  * :doc:`/trainings/material/soup/cxx-design-patterns/index`
       * * **Related**
 	* * :doc:`/trainings/repertoire/misc/make`
 	  * :doc:`/trainings/repertoire/misc/cmake`

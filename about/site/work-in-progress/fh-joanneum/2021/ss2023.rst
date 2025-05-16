@@ -32,18 +32,18 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 
          * :doc:`/trainings/material/soup/linux/basics/intro/overview`
            (from
-           :doc:`/trainings/material/soup/linux/basics/intro/group`)
+           :doc:`/trainings/material/soup/linux/basics/intro/index`)
          * **Everything is a file**
 
-           * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file` (from :doc:`/trainings/material/soup/linux/basics/intro/group`)
+           * :doc:`/trainings/material/soup/linux/basics/intro/demo-everything-is-a-file` (from :doc:`/trainings/material/soup/linux/basics/intro/index`)
            * Reading temperature sensor values (from :doc:`/trainings/material/soup/linux/hardware/w1/topic`)
 	   * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
 
 	 * **Processes**
 
-           * :doc:`/trainings/material/soup/linux/basics/intro/process` (from :doc:`/trainings/material/soup/linux/basics/intro/group`)
-           * :doc:`/trainings/material/soup/linux/sysprog/process/commandline` (from :doc:`/trainings/material/soup/linux/sysprog/process/group`)
-           * :doc:`/trainings/material/soup/linux/sysprog/process/tree` (from :doc:`/trainings/material/soup/linux/sysprog/process/group`)
+           * :doc:`/trainings/material/soup/linux/basics/intro/process` (from :doc:`/trainings/material/soup/linux/basics/intro/index`)
+           * :doc:`/trainings/material/soup/linux/sysprog/process/commandline` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
+           * :doc:`/trainings/material/soup/linux/sysprog/process/tree` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
 
        * **Homework**
 
@@ -59,11 +59,11 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 
          * **Files and Processes: I/O Blocks Processes**
 
-           * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io-file` (from :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`)
-           * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io-timer` (from :doc:`/trainings/material/soup/linux/sysprog/blocking-io/group`)
+           * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io-file` (from :doc:`/trainings/material/soup/linux/sysprog/blocking-io/index`)
+           * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io-timer` (from :doc:`/trainings/material/soup/linux/sysprog/blocking-io/index`)
 
        * **Working With The Commandline (The Shell)** (from
-         :doc:`/trainings/material/soup/linux/basics/shell/group`)
+         :doc:`/trainings/material/soup/linux/basics/shell/index`)
 
          * :doc:`/trainings/material/soup/linux/basics/shell/commandline`
          * :doc:`/trainings/material/soup/linux/basics/shell/paths`
@@ -77,7 +77,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 3
      *
        * **Working With The Commandline (The Shell)** (from
-         :doc:`/trainings/material/soup/linux/basics/shell/group`)
+         :doc:`/trainings/material/soup/linux/basics/shell/index`)
 
          * :doc:`/trainings/material/soup/linux/basics/shell/cp`
          * :doc:`/trainings/material/soup/linux/basics/shell/mv`
@@ -85,10 +85,10 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
        * **Working With The Commandline (The Shell)** (from
-         :doc:`/trainings/material/soup/linux/basics/shell/group`)
+         :doc:`/trainings/material/soup/linux/basics/shell/index`)
 
 	 * **Exercises** (from
-           :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`)
+           :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/index`)
 
            * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
            * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
@@ -104,7 +104,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 3
      *
        * **SSH: Secure Shell** (from
-	 :doc:`/trainings/material/soup/linux/ssh/group`)
+	 :doc:`/trainings/material/soup/linux/ssh/index`)
 
          * :doc:`/trainings/material/soup/linux/ssh/basics`
          * :doc:`/trainings/material/soup/linux/ssh/key-pair`
@@ -112,7 +112,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
          * :doc:`/trainings/material/soup/linux/ssh/sshfs`
 
        * **File System Permissions** (from
-	 :doc:`/trainings/material/soup/linux/basics/permissions/group`)
+	 :doc:`/trainings/material/soup/linux/basics/permissions/index`)
 
          * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
          * :doc:`/trainings/material/soup/linux/basics/permissions/setuid`
@@ -123,10 +123,10 @@ Block 1: Linux, and Working With Remote/Embedded Devices
      * 3
      *
        * **File System Permissions** (from
-	 :doc:`/trainings/material/soup/linux/basics/permissions/group`)
+	 :doc:`/trainings/material/soup/linux/basics/permissions/index`)
 
 	 From
-	 :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+	 :doc:`/trainings/material/soup/linux/basics/permissions/exercises/index`
 
          * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
          * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
@@ -155,7 +155,7 @@ Block 2: C on Linux: Local and *Cross* Development
        * :doc:`/trainings/material/soup/linux/basics/intro/exercises/fh-questions`
 
        **Toolchain Intro (Local)** (from
-       :doc:`/trainings/material/soup/linux/toolchain/group`)
+       :doc:`/trainings/material/soup/linux/toolchain/index`)
 
        * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
        * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
@@ -166,7 +166,7 @@ Block 2: C on Linux: Local and *Cross* Development
      * 2023-04-17
      * 3
      * **Toolchain Intro (CMake)** (from
-       :doc:`/trainings/material/soup/linux/toolchain/group`)
+       :doc:`/trainings/material/soup/linux/toolchain/index`)
 
        * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
        * Exercise: like above
@@ -179,7 +179,7 @@ Block 2: C on Linux: Local and *Cross* Development
      * **Systems Programming Basics: File I/O**
 
        * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
-       * :doc:`/trainings/material/soup/linux/sysprog/basics/group`
+       * :doc:`/trainings/material/soup/linux/sysprog/basics/index`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
 
        **Homework (until next time - 2023-05-08)**
@@ -427,7 +427,7 @@ Block 3: C++
            <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/vector.cpp>`__
 	 * Documentation `std::vector on cppreference.com
 	   <https://en.cppreference.com/w/cpp/container/vector>`__)
-	 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+	 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/index`
 
        * **Homework**
 

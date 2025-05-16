@@ -39,7 +39,7 @@ Methods
    * * ``std::weak_ptr(std::weak_ptr&& from)``
      * Move constructor; ``from`` is not tied to any shared pointer
        afterwards (see
-       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`)
+       :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`)
    * * ``std::weak_ptr(const std::shared_ptr& that)``
      * Tie constructed object to ``that``
    * * ``reset()``

@@ -21,7 +21,7 @@ C: Introduction
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/c/group`
+	* * :doc:`/trainings/material/soup/c/index`
       * * **Related**
 	* * :doc:`c-advanced`
 	  * :doc:`/trainings/repertoire/misc/unittests`

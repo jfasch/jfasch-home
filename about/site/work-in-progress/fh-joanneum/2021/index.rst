@@ -20,7 +20,7 @@ Supporting Material
    :maxdepth: 1
 
    git/git
-   tasks/group
+   tasks/index
 
 Exams
 -----

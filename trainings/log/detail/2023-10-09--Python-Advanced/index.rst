@@ -35,7 +35,7 @@ Python Advanced (2023-10-09 - 2023-10-11)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Recap Of Python Basics Course (Before Summer)
 ---------------------------------------------
@@ -68,7 +68,7 @@ Object Oriented Programming
 Classes: Basics
 ...............
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`
+From :doc:`/trainings/material/soup/python/advanced/oo/index`
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`

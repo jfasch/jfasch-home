@@ -18,9 +18,9 @@ An Introduction to Modern C++, In Three Days
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/cxx03/group`
-	  * :doc:`/trainings/material/soup/cxx11/group`
-	  * :doc:`/trainings/material/soup/cxx/group`
+	* * :doc:`/trainings/material/soup/cxx03/index`
+	  * :doc:`/trainings/material/soup/cxx11/index`
+	  * :doc:`/trainings/material/soup/cxx/index`
       * * **Related**
 	* * :doc:`cxx`
 	  * :doc:`design-patterns/design-patterns`
@@ -133,6 +133,6 @@ features.
 .. rubric:: Footnotes
 .. [#mother-tongue] It is my mother tongue, though. Tried to unlearn
                     it in favor of :doc:`Python
-                    </trainings/material/soup/python/group>`, that did
+                    </trainings/material/soup/python/index>`, that did
                     not work.
 

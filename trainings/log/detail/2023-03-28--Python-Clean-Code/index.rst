@@ -41,7 +41,7 @@ Introduction
 Clean Code?
 ```````````
 
-From :doc:`/trainings/material/soup/clean-code/group`:
+From :doc:`/trainings/material/soup/clean-code/index`:
 
 * :doc:`/trainings/material/soup/clean-code/craft-sw`
 
@@ -123,7 +123,7 @@ Object Oriented Programming
 
 (Maybe begin with operator overloading?)
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group`:
+From :doc:`/trainings/material/soup/python/advanced/oo/index`:
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
@@ -159,7 +159,7 @@ Modules And Packages
 Pandas
 ......
 
-From :doc:`/trainings/material/soup/python/misc/pandas/group`:
+From :doc:`/trainings/material/soup/python/misc/pandas/index`:
 
 * :doc:`/trainings/material/soup/python/misc/pandas/basics`
 * :doc:`/trainings/material/soup/python/misc/pandas/iloc`
@@ -178,7 +178,7 @@ reproducible way.
 * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
 * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
 * Pythonize *some* patterns (the simpler ones) from
-  :doc:`/trainings/material/soup/cxx-design-patterns/group`. Maybe ...
+  :doc:`/trainings/material/soup/cxx-design-patterns/index`. Maybe ...
 
   * Adapter
   * Proxy

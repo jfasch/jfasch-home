@@ -10,7 +10,7 @@
 ``std::vector<>``, ``std::map<>``
 ---------------------------------
 
-From :doc:`/trainings/material/soup/cxx03/060-stl/group`
+From :doc:`/trainings/material/soup/cxx03/060-stl/index`
 
 * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
   (`ptr-arith-stl.cpp
@@ -29,6 +29,6 @@ From :doc:`/trainings/material/soup/cxx03/060-stl/group`
 --------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/group`
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/index`
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`

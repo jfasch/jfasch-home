@@ -26,7 +26,7 @@ Python Individualtraining (18.5.2020 - 19.5.2020)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
 
 Kursverlauf
 -----------
@@ -42,7 +42,7 @@ durch konkreten Aufgabenstellungen seines Dienstgebers mitgebracht,
 was uns einen Quickstart ermöglichte.
 
 Im ersten Teil wurden im Wesentlichen die :doc:`Folien
-</trainings/material/soup/python/group>` vorgetragen, wenngleich in
+</trainings/material/soup/python/index>` vorgetragen, wenngleich in
 einer etwas unüblichen Reihenfolge.
 
 Einen guten Teil des zweiten Tages verbrachten wir mit Code Review

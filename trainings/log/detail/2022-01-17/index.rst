@@ -13,7 +13,7 @@ Programmierung Grundlagen, anhand von Python (2022-01-17 - 2022-01-10)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
    * `Github Repository <https://github.com/jfasch/2022-01-17>`__
 
 .. contents::
@@ -24,7 +24,7 @@ Programmierung Grundlagen, anhand von Python (2022-01-17 - 2022-01-10)
 
 Die Kurssprache des Kurses "Programmierung Grundlagen" ist Python;
 viele der Python-spezifische Elemente werden von :doc:`hier
-</trainings/material/soup/python/basics/group>` unterrichtet.
+</trainings/material/soup/python/basics/index>` unterrichtet.
 
 Jupyter Notebook
 ----------------
@@ -182,7 +182,7 @@ Tag 4
 -----
 
 * :doc:`/trainings/material/soup/python/advanced/modules`
-* :doc:`/trainings/material/soup/python/advanced/oo/group`
+* :doc:`/trainings/material/soup/python/advanced/oo/index`
 * SQL
 
   * :doc:`/trainings/material/soup/python/misc/db/dbapi2`

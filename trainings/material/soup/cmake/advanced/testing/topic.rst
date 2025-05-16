@@ -113,6 +113,6 @@ Questionability
 * Get code right from beginning |:face_with_raised_eyebrow:|
 * Use a unit testing framework; for example
 
-  * :doc:`/trainings/material/soup/unittest/group`
+  * :doc:`/trainings/material/soup/unittest/index`
   * `Boost.Test <https://www.boost.org/doc/libs/1_82_0/libs/test/doc/html/index.html>`__
   * ... many others ...

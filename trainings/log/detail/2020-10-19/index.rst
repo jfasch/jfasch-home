@@ -14,13 +14,13 @@ Python Basic and Advanced (19.10.2020 - 22.10.2020)
 
    **Course Description**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
-   * :doc:`/trainings/material/soup/python/advanced/group`
-   * :doc:`/trainings/material/soup/python/swdev/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
+   * :doc:`/trainings/material/soup/python/advanced/index`
+   * :doc:`/trainings/material/soup/python/swdev/index`
 
    **Material**
 
-   :doc:`/trainings/material/soup/python/group`
+   :doc:`/trainings/material/soup/python/index`
 
 Preparation
 -----------

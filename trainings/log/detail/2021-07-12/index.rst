@@ -22,13 +22,13 @@ The C++ Programming Language (2021-07-12 - 2021-07-16)
 	* OpenTraining
       * * C
 	* :download:`C </trainings/material/pdf/050-c.pdf>`
-	* :doc:`/trainings/material/soup/c/group`
+	* :doc:`/trainings/material/soup/c/index`
       * * C++03
 	* :download:`C++03 </trainings/material/pdf/055-c++03.pdf>`
-	* :doc:`/trainings/material/soup/cxx03/group`
+	* :doc:`/trainings/material/soup/cxx03/index`
       * * C++11
 	* :download:`C++11 </trainings/material/pdf/056-c++11.pdf>`
-	* :doc:`/trainings/material/soup/cxx11/group`
+	* :doc:`/trainings/material/soup/cxx11/index`
       * * CMake
 	* :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
 	*
@@ -181,8 +181,8 @@ Regular Topics
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find`
   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/group`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/group`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/index`
+  * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
 
 Toolchain: C/C++ Build (How Complicated Can Things Be?)
 .......................................................
@@ -317,7 +317,7 @@ Day 5
     it does, its usage is more involved. Ownership transfer (this is
     what I like about it) is implemented using the outright genius
     :doc:`"move" mechanism (since C++11)
-    </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`,
+    </trainings/material/soup/cxx11/020-new-language-features/060-move/index>`,
     and one needs to know a bit when the compiler fails to enforce the
     ownership transfer contract.
 
@@ -350,7 +350,7 @@ Smart Pointers, Recap
 ``std::map``
 ............
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/group`. Livehackingly
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`. Livehackingly
   building an index into our `user database <https://github.com/jfasch/2021-06-14/blob/main/db-cpp/db.hpp>`__
 
 OO, and Polymorphism

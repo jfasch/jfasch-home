@@ -30,7 +30,7 @@ Python Advanced (2023-10-24 - 2023-10-26)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
 Day 1
 -----
@@ -85,7 +85,7 @@ Group Project Kickoff
 Object Oriented Programming
 ...........................
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
+From :doc:`/trainings/material/soup/python/advanced/oo/index` ...
 
 * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
@@ -120,7 +120,7 @@ Miscellaneous
 Object Oriented Programming, Continued
 ......................................
 
-From :doc:`/trainings/material/soup/python/advanced/oo/group` ...
+From :doc:`/trainings/material/soup/python/advanced/oo/index` ...
 
 * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`

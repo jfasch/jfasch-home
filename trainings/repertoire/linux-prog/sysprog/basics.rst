@@ -14,11 +14,11 @@ Linux Systems Programming: Introduction
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/python/basics/group`
+	* * :doc:`/trainings/material/soup/python/basics/index`
 	  * :doc:`Complete Python material
-            </trainings/material/soup/python/group>`
+            </trainings/material/soup/python/index>`
       * * **Related**
-	* * :doc:`/trainings/material/soup/linux/sysprog/group`
+	* * :doc:`/trainings/material/soup/linux/sysprog/index`
 	  * PDF Slides, :download:`sysprog
             </trainings/material/pdf/020-linux-sysprog--en.pdf>`
       * * **Booking**

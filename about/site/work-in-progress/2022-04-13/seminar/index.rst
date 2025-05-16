@@ -101,8 +101,8 @@ In a live-hacking session, establish the initial project state.
 14:00-14:45 Keeping Code Clean In The Small
 -------------------------------------------
 
-* :doc:`/trainings/material/soup/c/090-program-sanity/group`
-* :doc:`/trainings/material/soup/c/100-performance/group`
+* :doc:`/trainings/material/soup/c/090-program-sanity/index`
+* :doc:`/trainings/material/soup/c/100-performance/index`
 
 14:45-15:00 Coffee Break
 ------------------------
@@ -116,6 +116,6 @@ up the code base!
 .. toctree::
    :hidden:
 
-   tasks/group
+   tasks/index
 
-See :doc:`tasks/group` for more.
+See :doc:`tasks/index` for more.

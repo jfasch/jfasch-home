@@ -21,7 +21,7 @@ C: Advanced Topics
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/c/group`
+	* * :doc:`/trainings/material/soup/c/index`
       * * **Related**
 	* * :doc:`c`
 	  * :doc:`/trainings/repertoire/misc/unittests`

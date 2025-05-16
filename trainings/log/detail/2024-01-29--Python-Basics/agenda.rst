@@ -92,7 +92,7 @@ Exceptions
 Pandas (Data Science Basics)
 ----------------------------
 
-From :doc:`/trainings/material/soup/python/misc/pandas/group`
+From :doc:`/trainings/material/soup/python/misc/pandas/index`
 
 * :doc:`/trainings/material/soup/python/misc/pandas/basics`
 * :doc:`/trainings/material/soup/python/misc/pandas/iloc`

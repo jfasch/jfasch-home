@@ -16,7 +16,7 @@ Programmierung Grundlagen (13. und 14.1.2021)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
    * Jupyter Notebook: :doc:`HTML <notebook-wrapper>`, :download:`download
      <Notebook.ipynb>`
 
@@ -41,7 +41,7 @@ Programmierung Grundlagen (13. und 14.1.2021)
   weswegen in einigen Fällen Ausnahmen gemacht werden.
 * Die Kurssprache ist Python; viele der Python-spezifische Elemente
   werden von :doc:`hier
-  </trainings/material/soup/python/basics/group>` unterrichtet.
+  </trainings/material/soup/python/basics/index>` unterrichtet.
 * Live-Hackereien des Trainers erfolgen in einem :doc:`gleichermaßen
   strukturierten Dokument <Notebook>`, einem sogenannten `Jupyter
   Notebook <https://jupyter.org/>`__.

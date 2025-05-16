@@ -5,4 +5,3 @@ Miscellaneous
 
    screencast
    topics-to-write
-   draft-topics/index

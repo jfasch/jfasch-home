@@ -12,7 +12,7 @@ Python Advanced (2021-12-01 - 2021-12-03)
    **Material**
 
    * :doc:`..//2021-11-17/index`
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
    **Notebook**
 
@@ -120,7 +120,7 @@ time series data is hard when you *must* deal with time. We don't.
 
 Wild hacking expected.
 
-* :doc:`/trainings/material/soup/python/advanced/oo/group`
+* :doc:`/trainings/material/soup/python/advanced/oo/index`
 * :doc:`/trainings/material/soup/python/advanced/modules`
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/topic`
 * Git workflow question, "What commit local? What push pull?"
@@ -129,7 +129,7 @@ Wild hacking expected.
      :scale: 40%
 
 * Last topic for today:
-  :doc:`/trainings/material/soup/python/advanced/multithreading/group`
+  :doc:`/trainings/material/soup/python/advanced/multithreading/index`
 
 **TODO**
 
@@ -140,7 +140,7 @@ Wild hacking expected.
 Day 3
 -----
 
-* :doc:`/trainings/material/soup/python/advanced/multithreading/group`
+* :doc:`/trainings/material/soup/python/advanced/multithreading/index`
 
   Reiterate, was a bit fast yesteray.
 
@@ -230,6 +230,6 @@ Hmmm?
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
-* :doc:`/trainings/material/soup/python/misc/db/group`
+* :doc:`/trainings/material/soup/python/misc/db/index`
 
 

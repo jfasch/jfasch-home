@@ -8,7 +8,7 @@ Python (2022-05-02 - 2022-05-05)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
    **Source Code**
 
@@ -75,7 +75,7 @@ Encoding, Strings, and File I/O
 Excursion: CAN Communication, OO, Modules
 .........................................
 
-* :doc:`/trainings/material/soup/linux/hardware/can/group`
+* :doc:`/trainings/material/soup/linux/hardware/can/index`
 * Live hacking
 
   * Send values from a list

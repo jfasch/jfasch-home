@@ -345,7 +345,7 @@ Interface: Shape
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
 Although ``Circle`` and ``Square`` are shapes - both have an
 ``area()`` method -, they cannot be used exchangeable. Lets change

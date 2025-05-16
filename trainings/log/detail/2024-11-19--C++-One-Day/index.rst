@@ -87,7 +87,7 @@ Brace Initialization
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
 Discussed the differences between ``{}`` and ``()``. See
 `2024-11-19/brace-init.cpp
@@ -136,7 +136,7 @@ While we were at it, we discussed related topics like
   `2024-11-19/rvo-or-not.cpp
   <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/rvo-or-not.cpp>`__
 * Moving and rvalue references in general
-  (:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`)
+  (:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`)
 * Dual implementation (move and copy) of, say,
   ``std::vector::push_back()``. Demo code in `2024-11-19/push-back-move.cpp
   <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/push-back-move.cpp>`__

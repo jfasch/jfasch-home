@@ -19,7 +19,7 @@ Design Patterns For C++ Developers
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/cxx-design-patterns/group`
+	* * :doc:`/trainings/material/soup/cxx-design-patterns/index`
       * * **Related**
 	* * :doc:`../cxx`
 	  * :doc:`../cxx11`

@@ -20,7 +20,7 @@ Python (12.11.2019 - 14.11.2019 in Graz)
 
 .. sidebar:: Material
 
-   :doc:`/trainings/material/soup/python/basics/group`
+   :doc:`/trainings/material/soup/python/basics/index`
 
 
 Eine Einführung in Python und `NumPy <https://numpy.org/>`__, zur

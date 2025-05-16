@@ -20,7 +20,7 @@ Recap, Outlook
 Toolchain Intro, And Basic Makefiles
 ------------------------------------
 
-From :doc:`/trainings/material/soup/linux/toolchain/group`
+From :doc:`/trainings/material/soup/linux/toolchain/index`
 
 * :doc:`/trainings/material/soup/linux/toolchain/basics/topic`
 * :doc:`/trainings/material/soup/linux/toolchain/separate-compilation/topic`
@@ -30,7 +30,7 @@ From :doc:`/trainings/material/soup/linux/toolchain/group`
 CMake, Native Build
 -------------------
 
-From :doc:`/trainings/material/soup/linux/toolchain/group`
+From :doc:`/trainings/material/soup/linux/toolchain/index`
 
 * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
 * Exercise: like above

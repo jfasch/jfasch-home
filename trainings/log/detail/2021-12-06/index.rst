@@ -14,7 +14,7 @@ C/C++ Programming (2021-12-06 - 2021-12-10, 2022-01-24 - 2022-02-04)
    **Material**
 
    * :doc:`Course Description </trainings/repertoire/c-like/c>`
-   * :doc:`Slide Material </trainings/material/soup/c/group>`
+   * :doc:`Slide Material </trainings/material/soup/c/index>`
 
    **Git**
 
@@ -136,7 +136,7 @@ C/C++ Programming (2021-12-06 - 2021-12-10, 2022-01-24 - 2022-02-04)
   .. image:: images/signed-unsigned-massacre.png
      :scale: 40%
 
-* :doc:`/trainings/material/soup/c/050-pointers-and-arrays/group`
+* :doc:`/trainings/material/soup/c/050-pointers-and-arrays/index`
 
   * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/010-pointers-and-addresses/topic`
   
@@ -210,20 +210,20 @@ C/C++ Programming (2021-12-06 - 2021-12-10, 2022-01-24 - 2022-02-04)
     .. image:: images/swap-ok.png
        :scale: 40%
 
-* Continuing with :doc:`/trainings/material/soup/c/050-pointers-and-arrays/group`
+* Continuing with :doc:`/trainings/material/soup/c/050-pointers-and-arrays/index`
 
   * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
   * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
 
     Hack a little ``argv`` example
 
-* :doc:`/trainings/material/soup/c/060-structures/group`
+* :doc:`/trainings/material/soup/c/060-structures/index`
 
   * :doc:`/trainings/material/soup/c/060-structures/010-basics-of-structures/topic`
   * :doc:`/trainings/material/soup/c/060-structures/020-structures-and-functions/topic`
   * :doc:`/trainings/material/soup/c/060-structures/030-typedef/topic`
 
-* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/group`
+* :doc:`/trainings/material/soup/c/040-functions-and-program-structure/index`
 * Pointer Recap: `pointer-recap.cpp
   <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/pointer-recap.cpp>`__
 
@@ -402,7 +402,7 @@ Standard Template Library: Container Templates
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/lower_bound`
-* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/group`
+* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/index`
 
 2022-01-31
 ----------
@@ -498,7 +498,7 @@ Associative Container: ``std::map``
   * Introducing *Lambda*: `sort-lambda.cpp
     <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/functors/sort-lambda.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/group`
+* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
 
   Not much in there though |longrightarrow| live hacking
 
@@ -571,18 +571,18 @@ Exceptions, and Exception Handling
 C++11: A New Language
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/index`
 
 Dynamic Allocation, Smart Pointers
 ..................................
 
 * Dynamic memory allocation
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`
+* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
 
 Multithreading
 ..............
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
 * :doc:`/trainings/material/soup/linux/sysprog/posix-threads/040-mutex/topic`
 
 Live hacked:

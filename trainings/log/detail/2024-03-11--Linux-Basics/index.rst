@@ -17,7 +17,7 @@ Linux Basics (2024-03-11 - 2024-03-13)
    * Start: Monday 2024-03-11, 8:00AM
    * Original agenda: :doc:`agenda`
    * Material taken from
-     :doc:`/trainings/material/soup/linux/basics/group`
+     :doc:`/trainings/material/soup/linux/basics/index`
 
 Day 1
 -----
@@ -25,7 +25,7 @@ Day 1
 SSH/Putty Setup
 ...............
 
-From :doc:`/trainings/material/soup/linux/ssh/group`
+From :doc:`/trainings/material/soup/linux/ssh/index`
 
 * :doc:`/trainings/material/soup/linux/ssh/basics`
 * :doc:`/trainings/material/soup/linux/ssh/key-pair`
@@ -40,7 +40,7 @@ me the *public key*.
 Introduction: Concepts and Terminology
 ......................................
 
-From :doc:`/trainings/material/soup/linux/basics/intro/group`
+From :doc:`/trainings/material/soup/linux/basics/intro/index`
 
 * :doc:`/trainings/material/soup/linux/basics/intro/overview`
 * :doc:`/trainings/material/soup/linux/basics/intro/process`
@@ -51,7 +51,7 @@ From :doc:`/trainings/material/soup/linux/basics/intro/group`
 The Shell (Bash - “Bourne Again Shell”)
 .......................................
 
-From :doc:`/trainings/material/soup/linux/basics/shell/group`
+From :doc:`/trainings/material/soup/linux/basics/shell/index`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/paths`
 * :doc:`/trainings/material/soup/linux/basics/shell/special-paths`
@@ -65,7 +65,7 @@ Exercises
 .........
 
 From
-:doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/group`
+:doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/index`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/mkdir-p-rm-r`
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/echo-create-files`
@@ -109,7 +109,7 @@ Exercises
 `````````
 
 From
-:doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/group`
+:doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/index`
 
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/etc-passwd-size`
 * :doc:`/trainings/material/soup/linux/basics/shell/exercises/ls/dev-types`
@@ -118,10 +118,10 @@ From
 File System Permissions
 .......................
 
-From :doc:`/trainings/material/soup/linux/basics/permissions/group`
+From :doc:`/trainings/material/soup/linux/basics/permissions/index`
 
 * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/group`
+* :doc:`/trainings/material/soup/linux/basics/permissions/exercises/index`
 
   * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/credentials`
   * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/shared-file`
@@ -167,18 +167,18 @@ Morning Wakeup
 Missing Pieces
 ..............
 
-From :doc:`/trainings/material/soup/linux/basics/intro/group`
+From :doc:`/trainings/material/soup/linux/basics/intro/index`
 
 * :doc:`/trainings/material/soup/linux/basics/intro/environment`
 
-From :doc:`/trainings/material/soup/linux/ssh/group`
+From :doc:`/trainings/material/soup/linux/ssh/index`
 
 * :doc:`/trainings/material/soup/linux/ssh/sshfs`
 
 Tools: Inspecting Text Files
 ............................
 
-From :doc:`/trainings/material/soup/linux/basics/text-tools/group`
+From :doc:`/trainings/material/soup/linux/basics/text-tools/index`
 
 * :doc:`/trainings/material/soup/linux/basics/text-tools/overview`
 * :doc:`/trainings/material/soup/linux/basics/text-tools/cat`
@@ -193,7 +193,7 @@ I/O Redirection And Pipes
 .........................
 
 From
-:doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/group`
+:doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/index`
 
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
 * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/pipes`
@@ -203,7 +203,7 @@ Archiving and Compression
 .........................
 
 From
-:doc:`/trainings/material/soup/linux/basics/archiving-compression/group`
+:doc:`/trainings/material/soup/linux/basics/archiving-compression/index`
 
 * :doc:`/trainings/material/soup/linux/basics/archiving-compression/overview`
 * :doc:`/trainings/material/soup/linux/basics/archiving-compression/gzip`

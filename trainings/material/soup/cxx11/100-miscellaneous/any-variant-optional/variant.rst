@@ -11,7 +11,7 @@ New-Style Union: ``std::variant``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
+   * :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/index`
 
 .. contents::
    :local:

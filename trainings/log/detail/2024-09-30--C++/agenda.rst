@@ -24,12 +24,12 @@ tries to draw the boundary between the old and new C++.
 ------------------------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/group`:
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/index`:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
@@ -45,7 +45,7 @@ From C To C++
 .............
 
 From
-:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/group`
+:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/index`
 
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
@@ -62,7 +62,7 @@ Classes And Methods (And Functions)
 ...................................
 
 From
-:doc:`/trainings/material/soup/cxx03/030-functions-and-methods/group`
+:doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index`
 
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
@@ -75,7 +75,7 @@ From
 Templates
 .........
 
-From :doc:`/trainings/material/soup/cxx03/050-templates/group`
+From :doc:`/trainings/material/soup/cxx03/050-templates/index`
 
 * :doc:`/trainings/material/soup/cxx03/050-templates/010-function-templates/topic`
 * :doc:`/trainings/material/soup/cxx03/050-templates/020-class-templates/topic`
@@ -90,13 +90,13 @@ Exercises
   how this is done) of shape ``sensor-name -> sensor*``, encapsulated
   in a class
 
-  |longrightarrow| :doc:`/trainings/material/soup/unittest/group`
+  |longrightarrow| :doc:`/trainings/material/soup/unittest/index`
 
 Inheritance, And Interfaces
 ...........................
 
 From
-:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/group`
+:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`
@@ -146,7 +146,7 @@ Idea ...
 More Design Patterns
 ....................
 
-From :doc:`/trainings/material/soup/cxx-design-patterns/group`:
+From :doc:`/trainings/material/soup/cxx-design-patterns/index`:
 
 * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton`
 * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
@@ -168,7 +168,7 @@ OO Features
 Memory Management
 .................
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/group`:
+From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
 
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`, and :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
@@ -185,7 +185,7 @@ Move Semantics, And Perfect Forwarding
 ......................................
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`:
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`:
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
@@ -206,23 +206,23 @@ Functional: An Alternative To Full Polymorphism
 ...............................................
 
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
 
 Going Embedded
 --------------
 
-* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/group`
+* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/index`
 * :doc:`/trainings/material/soup/cxx11/drafts/crtp`
 
 Optional Topics
 ---------------
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
-* :doc:`/trainings/material/soup/cxx03/060-stl/group`
-* Excerpts from :doc:`/trainings/material/soup/cmake/intro/group` and
-  :doc:`/trainings/material/soup/cmake/advanced/group`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/group`
-* From :doc:`/trainings/material/soup/c/100-performance/group`
+* :doc:`/trainings/material/soup/cxx03/060-stl/index`
+* Excerpts from :doc:`/trainings/material/soup/cmake/intro/index` and
+  :doc:`/trainings/material/soup/cmake/advanced/index`
+* :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
+* From :doc:`/trainings/material/soup/c/100-performance/index`
 
   * :doc:`/trainings/material/soup/c/100-performance/010-introduction/topic`
   * :doc:`/trainings/material/soup/c/100-performance/020-computebound/topic`

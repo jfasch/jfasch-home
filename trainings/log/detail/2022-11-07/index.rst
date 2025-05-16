@@ -8,7 +8,7 @@ Python: Tour-De-Force (2022-11-07 - 2022-11-10, 2022-12-01)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/group`
+   * :doc:`/trainings/material/soup/python/index`
 
    **Source Code**
 
@@ -32,7 +32,7 @@ Up Front: Project Management
 Object Oriented Programming: Classes
 ------------------------------------
 
-* From :doc:`/trainings/material/soup/python/advanced/oo/group`
+* From :doc:`/trainings/material/soup/python/advanced/oo/index`
 
   * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
@@ -100,7 +100,7 @@ Going Dynamic: ``type()``, ``exec()``
 More OO: Inheritance, Abstract Base Classes
 -------------------------------------------
 
-* From :doc:`/trainings/material/soup/python/advanced/oo/group`
+* From :doc:`/trainings/material/soup/python/advanced/oo/index`
 
   * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
   * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`

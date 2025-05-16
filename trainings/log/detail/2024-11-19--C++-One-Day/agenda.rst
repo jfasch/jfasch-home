@@ -37,8 +37,8 @@ repeat ...
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/group`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
 * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
 * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
 
@@ -48,7 +48,7 @@ Memory Management
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
   (and a little :doc:`moving
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/group>`)
+  </trainings/material/soup/cxx11/020-new-language-features/060-move/index>`)
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
 * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr` (optional)
 
@@ -61,7 +61,7 @@ Lambdas
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
@@ -72,14 +72,14 @@ Optional (But Cool) Topics
 --------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/group`:
+:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`:
 
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/group`:
+From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
 communication primitives
 
 * :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`

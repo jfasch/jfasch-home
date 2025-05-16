@@ -12,7 +12,7 @@ Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/python/basics/group`
+   * :doc:`/trainings/material/soup/python/basics/index`
    * `Github Repository <https://github.com/jfasch/2021-08-02>`__
 
 .. contents::
@@ -23,7 +23,7 @@ Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
 
 Die Kurssprache des Kurses "Programmierung Grundlagen" ist Python;
 viele der Python-spezifische Elemente werden von :doc:`hier
-</trainings/material/soup/python/basics/group>` unterrichtet.
+</trainings/material/soup/python/basics/index>` unterrichtet.
 
 Themenreihenfolge und Übungen werden aus dem Herdt-Skriptum
 "Programmierung Grundlagen mit Beispielen in Python" übernommen.
