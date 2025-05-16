@@ -10,77 +10,77 @@ Agenda: C++: Advanced Topics
 Introduction: A New Language To Me
 ----------------------------------
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
+* :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
 
 Range Based for Loops
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for-map`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for-map`
 
 Tuple Unpacking (err, Structured Binding)
 .........................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
 
 Duck Typing (err, ``auto``) Without A Duck
 ..........................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
 
 Brace Initialization
 ....................
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
+From :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/mess`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/intro`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/implementor-view`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/mess`
 
 New OO keywords: override, final, default, delete
 .................................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
 
 ``constexpr``, ``constinit``, ``consteval``
 ...........................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
 * ``constinit``
 * ``consteval``
 
 Functions: ``std::function<>``, Lambdas
 .......................................
 
-* From :doc:`/trainings/material/soup/cxx11/040-bind-function/index`:
+* From :doc:`/trainings/material/soup/cxx11/bind-function/index`:
 
-  * :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
-  * :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+  * :doc:`/trainings/material/soup/cxx11/bind-function/010-bind/topic`
+  * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
+* From :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor-pitfall`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
 
 Strongly Typed enum
 ...................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/strongly-typed-enums/topic`
 
 Delegating Constructor
 ......................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/050-delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/delegating-ctor/topic`
 
 ``nullptr``
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/miscellaneous/topic`
 
 Moving, RValue References: Do We Want To Copy Sensors?
 ------------------------------------------------------
@@ -88,20 +88,20 @@ Moving, RValue References: Do We Want To Copy Sensors?
 Moving: Usage
 .............
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
+From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction-livehack`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction-livehack`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
 
 Moving: Implementation
 ......................
 
 Building upon the example from
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index` which is 
+:doc:`/trainings/material/soup/cxx11/new-language-features/move/index` which is 
 
 * Pointless
 * It implements a pointless ``String`` class that does resource
@@ -109,10 +109,10 @@ Building upon the example from
 
 Do some initial live hacking
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
 
 Live-code a sensor class for
 :doc:`/trainings/material/soup/linux/hardware/w1/topic`
@@ -125,7 +125,7 @@ Live-code a sensor class for
 Round it up: ``&&`` is not always what you think |:thumbsdown:|
 |:middle_finger:|
 
-* :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
+* :doc:`/trainings/material/soup/cxx11/perfect-forwarding/topic`
   (a feature which shares the syntax with moving in that it uses
   ``&&``, but is something completely different)
 
@@ -150,33 +150,33 @@ C++ Pythonic Toolcase
 Concepts
 --------
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/index`
+From :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/index`
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/intro/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/concepts/writing-concepts/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/intro/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/concepts/writing-concepts/topic`
 
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
+From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
+* :doc:`/trainings/material/soup/cxx11/multithreading/010-introduction/topic`
+* :doc:`/trainings/material/soup/cxx11/multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/mutex`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/scoped-locking`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx11/multithreading/promise-future`
+* :doc:`/trainings/material/soup/cxx11/multithreading/condition-variable`
 
 Outlook In ``>=20``
 -------------------
 
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/index`
+* From :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/index`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/intro`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/ranges/good-bad`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/intro`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/ranges/good-bad`
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/coroutines/intro`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/coroutines/intro`
 
 Miscellaneous
 -------------

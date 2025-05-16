@@ -27,7 +27,7 @@ Screenplay: Pointer Arithmetic, And Algorithms
    :caption: :download:`code/pointer-arith-algo-copy-func.cpp`
 
 * Transform to :doc:`range based for
-  </trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for>`
+  </trainings/material/soup/cxx11/new-language-features/range-for/range-based-for>`
 
 .. literalinclude:: code/pointer-arith-algo-copy-func-range-based.cpp
    :language: c++

@@ -8,7 +8,7 @@
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
+   * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
 
 .. contents::
    :local:

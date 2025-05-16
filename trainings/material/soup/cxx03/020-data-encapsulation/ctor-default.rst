@@ -9,7 +9,7 @@ Default Constructor
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
 
 Compiler Generated Default Constructor
 --------------------------------------

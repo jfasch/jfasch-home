@@ -427,7 +427,7 @@ Block 3: C++
            <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/vector.cpp>`__
 	 * Documentation `std::vector on cppreference.com
 	   <https://en.cppreference.com/w/cpp/container/vector>`__)
-	 * :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/index`
+	 * :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/index`
 
        * **Homework**
 

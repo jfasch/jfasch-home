@@ -82,9 +82,9 @@ From
 * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/index`:
+:doc:`/trainings/material/soup/cxx11/new-language-features/index`:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
 
 Git Collaboration (via Github, but not necessarily): Forks And Pull Request
 ...........................................................................
@@ -125,7 +125,7 @@ OO: Design?
 * What was that all for?
 
   * Structure: ``Sensor`` interface
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
   * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
   * Design patterns (outlook)
 

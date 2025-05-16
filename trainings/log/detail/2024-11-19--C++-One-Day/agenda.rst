@@ -12,7 +12,7 @@ The "New C++": Fundamental Changes Since 2011
 
 .. sidebar:: Livehacking screenplay
 
-   * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
+   * :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
 
 A live-coded overview of what will follow, showing the cornerstones of
 the "new C++". Starting with a C++98 code base, we morph that into
@@ -35,52 +35,52 @@ Low Hanging Fruit
 Much of it has been said in the intro section, but let's quickly
 repeat ...
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
-* :doc:`/trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant`
-* :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
+* :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
+* :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
 Memory Management
 -----------------
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
   (and a little :doc:`moving
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/index>`)
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr` (optional)
+  </trainings/material/soup/cxx11/new-language-features/move/index>`)
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr` (optional)
 
 Lambdas
 -------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
 
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
+From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx11/multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/mutex`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/scoped-locking`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/atomics`
 
 Optional (But Cool) Topics
 --------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`:
+:doc:`/trainings/material/soup/cxx11/new-language-features/move/index`:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
+From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
 communication primitives
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
+* :doc:`/trainings/material/soup/cxx11/multithreading/promise-future`
+* :doc:`/trainings/material/soup/cxx11/multithreading/condition-variable`

@@ -16,7 +16,7 @@ Screenplay: ``std::vector``, And Pointer Arithmetics
 
 * Simpler alternative, but not always applicable: :doc:`range based
   for
-  </trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for>`
+  </trainings/material/soup/cxx11/new-language-features/range-for/range-based-for>`
 
   .. literalinclude:: code/vector-basic-range-based.cpp
      :language: c++

@@ -10,13 +10,13 @@ Topics
 .. toctree::
    :maxdepth: 1
 
-   010-introduction/index
-   020-new-language-features/index
-   030-smart-pointers/index
-   035-perfect-forwarding/topic
-   040-bind-function/index
-   050-multithreading/index
-   100-miscellaneous/index
+   introduction/index
+   new-language-features/index
+   smart-pointers/index
+   perfect-forwarding/topic
+   bind-function/index
+   multithreading/index
+   miscellaneous/index
    filesystem/topic
 
    drafts/index

@@ -121,7 +121,7 @@ a ``W1Sensor`` object.
 ````````````
 
 One possible error: *address not found*. Lacking any knowledge of
-:doc:`C++ smart pointers </trainings/material/soup/cxx11/030-smart-pointers/index>`, a raw
+:doc:`C++ smart pointers </trainings/material/soup/cxx11/smart-pointers/index>`, a raw
 pointer with the value ``nullptr`` is returned.
 
 .. literalinclude:: /trainings/material/soup/cxx-exercises/sensor-w1-factory/code/tests/sensor-w1-factory-suite--notfound.cpp

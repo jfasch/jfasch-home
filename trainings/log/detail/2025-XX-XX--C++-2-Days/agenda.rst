@@ -16,7 +16,7 @@ Throughout the training, the presentation style will be
 live-coding-by-trainer, only falling back to a traditional frontal
 presentation style where applicable. The audience will be left with a
 screenplay-like writeup, much like :doc:`this one
-</trainings/material/soup/cxx11/010-introduction/overview-livehacking>`.
+</trainings/material/soup/cxx11/introduction/overview-livehacking>`.
 
 Topics
 ------
@@ -26,9 +26,9 @@ the customer, for a two-days on-site C++ training. The list is largely
 unordered (yet), and adaptations to it are likely to be made.
 
 * Brace initialization (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index>`)
+  </trainings/material/soup/cxx11/new-language-features/brace-initialization/index>`)
 * RValue References, and Move Semantics (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/060-move/index>`). Primarily,
+  </trainings/material/soup/cxx11/new-language-features/move/index>`). Primarily,
   show the *usage* of moving.
 
   * What the compiler knows/does
@@ -38,37 +38,37 @@ unordered (yet), and adaptations to it are likely to be made.
     invented)
   * ``= delete``, ``= default``
   * Non-relation to *perfect forwarding* ( :doc:`here
-    </trainings/material/soup/cxx11/035-perfect-forwarding/topic>`)
+    </trainings/material/soup/cxx11/perfect-forwarding/topic>`)
 
 * Container and algorithms overview (:doc:`here
   </trainings/material/soup/cxx03/060-stl/index>`). Show hash-table
   based data structures ``std::unordered_set<>`` and
   ``std::unordered_map<>`` [#make_material]_.
 * Structured Binding (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/structured-binding>`). Discuss
+  </trainings/material/soup/cxx11/new-language-features/structured-binding/topic>`). Discuss
   usage of ``std::tuple<>``.
 * ``constexpr`` (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr>`)
+  </trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr>`)
   [#adapt_standard]_
 * Multithreading (:doc:`here
-  </trainings/material/soup/cxx11/050-multithreading/index>`). `OpenMP
+  </trainings/material/soup/cxx11/multithreading/index>`). `OpenMP
   <https://www.openmp.org/>`__ is used by the custumer, so the problem
   appears to be solved. It might not hurt, though, to know what a race
   condition is, and how to protect against it.
 * Smart pointers: ``std::shared_ptr<>`` vs. ``std::unique_ptr<>``
   (:doc:`here
-  </trainings/material/soup/cxx11/030-smart-pointers/index>`). Probably
+  </trainings/material/soup/cxx11/smart-pointers/index>`). Probably
   show the *RValue References/Move Semantics* topic in the light of
   understanding compiler error messages when using
   ``std::unique_ptr<>`` incorrectly.
 * ``std::array<>`` [#make_material]_
 * ``std::span<>`` [#make_material]_
 * Ranges and views (:doc:`here
-  </trainings/material/soup/cxx11/020-new-language-features/ranges/index>`)
+  </trainings/material/soup/cxx11/new-language-features/ranges/index>`)
 * ``std::any`` (:doc:`here
-  </trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/any>`),
+  </trainings/material/soup/cxx11/miscellaneous/any-variant-optional/any>`),
   ``std::variant<>`` (:doc:`here
-  </trainings/material/soup/cxx11/100-miscellaneous/any-variant-optional/variant>`). Show
+  </trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant>`). Show
   usage, and discuss.
 * The "spaceship" operator [#make_material]_
 * ``std::fmt`` (vs ``printf()``) [#make_material]_

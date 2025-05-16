@@ -112,7 +112,7 @@ Miscellaneous
 * ``constexpr`` explored. How is it used to populate the ``rodata``
   section and save RAM?
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
   * Sample code: `rodata.cpp
     <https://github.com/jfasch/2023-03-20/blob/main/livehacking/rodata.cpp>`__
 
@@ -148,14 +148,14 @@ Day 3
 R-Value References/Moving, And Managed Pointers
 ...............................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
 
 A Little Concurrency
 ....................
 
 * Only if there is time (and fun): have a look at
-  :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
+  :doc:`/trainings/material/soup/cxx11/multithreading/index`
 
 Exercise
 ........
@@ -185,7 +185,7 @@ C++ Standard Library
 ....................
 
 * :doc:`Managed Pointers
-  </trainings/material/soup/cxx11/030-smart-pointers/index>`
+  </trainings/material/soup/cxx11/smart-pointers/index>`
 * Pointer Arithmetic Recap:
   :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
 * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`

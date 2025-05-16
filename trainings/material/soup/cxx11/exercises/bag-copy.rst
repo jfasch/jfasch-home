@@ -16,7 +16,7 @@ The class supports the methods
 
 * ``insert()``
 * ``find_by_int() const`` (try to use :doc:`range based for
-  <../020-new-language-features/range-for/range-based-for>` in the
+  <../new-language-features/range-for/range-based-for>` in the
   implementation)
 
 Make the following tests pass:

@@ -9,7 +9,7 @@
 
 .. sidebar:: See also
 
-   From :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking-oo`
+   From :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking-oo`
 
    * :ref:`cxx11-overview-inheritance-pointer-virtual`
 

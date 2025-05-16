@@ -25,44 +25,44 @@ C++: Advanced Topics (2023-12-04 - 2023-12-06)
 Day 1: Introduction: C++, A New Language
 ----------------------------------------
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
+* :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
 
 Pythonicity
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
 
 Brace Initialization
 ....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/mess`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/intro`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/implementor-view`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/mess`
 
 New OO Features
 ...............
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
 
 Functions: ``std::function<>``, Lambdas
 .......................................
 
-From :doc:`/trainings/material/soup/cxx11/040-bind-function/index`:
+From :doc:`/trainings/material/soup/cxx11/bind-function/index`:
 
-* :doc:`/trainings/material/soup/cxx11/040-bind-function/010-bind/topic`
-* :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+* :doc:`/trainings/material/soup/cxx11/bind-function/010-bind/topic`
+* :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
+From :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-is-functor-pitfall`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-is-functor-pitfall`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
 
 Day 2: Simply Getting Stuff Done
 --------------------------------
@@ -91,23 +91,23 @@ Look over sensor hierachy in our project:
 Smart Pointers
 ..............
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
+From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
 
 Move Semantics
 ..............
 
-From :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`
+From :doc:`/trainings/material/soup/cxx11/new-language-features/move/index`
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
 
 Day 3: All The Rest
 -------------------
@@ -148,11 +148,11 @@ Moving, Roundup
 ```````````````
 
 * Discuss L/R-Values, and what compiler generates when (from
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`)
+  :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`)
 * Hack a ``String``
 
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
 
 Containers And Algorithms
 .........................
@@ -169,12 +169,12 @@ And Embedded?
 .............
 
 * :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/index`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
 
 Still Untold
 ------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/050-delegating-ctor/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/070-miscellaneous/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/miscellaneous/topic`
 * :doc:`/trainings/material/soup/c/080-advanced-language-features/030-alignment/topic`

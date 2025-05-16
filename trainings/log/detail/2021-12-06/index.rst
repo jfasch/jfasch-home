@@ -571,18 +571,18 @@ Exceptions, and Exception Handling
 C++11: A New Language
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/index`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/index`
 
 Dynamic Allocation, Smart Pointers
 ..................................
 
 * Dynamic memory allocation
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
 
 Multithreading
 ..............
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
+* :doc:`/trainings/material/soup/cxx11/multithreading/index`
 * :doc:`/trainings/material/soup/linux/sysprog/posix-threads/040-mutex/topic`
 
 Live hacked:

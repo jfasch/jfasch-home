@@ -66,9 +66,9 @@ Day 1
 Introduction
 ............
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/index`
+* :doc:`/trainings/material/soup/cxx11/introduction/index`
 
-  * :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
+  * :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
   * Outcome, including a quit-flag for the threads: `intro.cpp
     <https://github.com/jfasch/2023-04-18/blob/main/livehacking/intro.cpp>`__
 
@@ -77,10 +77,10 @@ Some Details
 
 * A little ``constexpr``: `constexpr.cpp
   <https://github.com/jfasch/2023-04-18/blob/main/livehacking/constexpr.cpp>`__
-* From :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
+* From :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
   * ChatGPT bashing ("How would you compute the squares of a list of
     numbers with a lambda, like you would in Python?"):
     `lambda-transform.cpp
@@ -89,7 +89,7 @@ Some Details
     <https://github.com/jfasch/2023-04-18/blob/main/livehacking/lambda.cpp>`__
 
 * A little threading (more:
-  :doc:`/trainings/material/soup/cxx11/050-multithreading/index`)
+  :doc:`/trainings/material/soup/cxx11/multithreading/index`)
 
   * And Python's ``asyncio``? (maybe watch the video in
     :doc:`/about/site/work-in-progress/blink/index` |:metal:|)
@@ -126,9 +126,9 @@ Warm-Up
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
-   * :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+   * :doc:`/trainings/material/soup/cxx11/multithreading/020-thread/topic`
+   * :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/mutex`
+   * :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/atomics`
 
 * ``std::atomic<>``. Revisit Ludwig's ChatGPT findings, and introduce
   a signal handler in `intro.cpp
@@ -139,7 +139,7 @@ Warm-Up
   * *Memory model?*
 
 * A little threading (from
-  :doc:`/trainings/material/soup/cxx11/050-multithreading/index`)
+  :doc:`/trainings/material/soup/cxx11/multithreading/index`)
 
   * Load-modify-store conflict: `race-condition.cpp
     <https://github.com/jfasch/2023-04-18/blob/main/livehacking/race-condition.cpp>`__
@@ -181,7 +181,7 @@ From
 Smart Pointers
 ..............
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
 * With this, fix memleak
 
 Day 3
@@ -190,7 +190,7 @@ Day 3
 Smart Pointers (Continued)
 ..........................
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
 * Morphed our "registry" universe to use those ...
 
   * `sensors-main.cpp

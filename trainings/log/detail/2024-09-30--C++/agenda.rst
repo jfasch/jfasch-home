@@ -17,26 +17,26 @@ always backwards compatible with its origins. In 2011, C++ got a major
 overhaul which is still ongoing. It is not always easy for someone who
 is new to C++ to understand why things are how they are.
 
-:doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`
+:doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
 tries to draw the boundary between the old and new C++.
 
 "New" C++: Syntactic Goodies (Pythonicity)
 ------------------------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/index`:
+:doc:`/trainings/material/soup/cxx11/new-language-features/index`:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
 
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/intro`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/implementor-view`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/mess`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/intro`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/implementor-view`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/mess`
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/010-strongly-typed-enums/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/050-delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/delegating-ctor/topic`
 
 Back To The Beginnings Of C++: What Everybody Has To Know
 ---------------------------------------------------------
@@ -52,9 +52,9 @@ From
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
 
@@ -160,20 +160,20 @@ More C++ >= 11
 OO Features
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/override`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/final`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/delete`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/override`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/final`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/delete`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
 
 Memory Management
 .................
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
+From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`, and :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`, and :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
 
 Exercise
 ........
@@ -185,16 +185,16 @@ Move Semantics, And Perfect Forwarding
 ......................................
 
 From
-:doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/index`:
+:doc:`/trainings/material/soup/cxx11/new-language-features/move/index`:
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/afterword`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/afterword`
 
 Same syntax, different meaning ...
 
-* :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
+* :doc:`/trainings/material/soup/cxx11/perfect-forwarding/topic`
 
 Exercise
 ........
@@ -205,8 +205,8 @@ Convert all interface usage to ``std::unique_ptr<>`` (``Sensor*``,
 Functional: An Alternative To Full Polymorphism
 ...............................................
 
-* :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/index`
+* :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/index`
 
 Going Embedded
 --------------
@@ -217,11 +217,11 @@ Going Embedded
 Optional Topics
 ---------------
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/constexpr-constinit-consteval/constexpr`
 * :doc:`/trainings/material/soup/cxx03/060-stl/index`
 * Excerpts from :doc:`/trainings/material/soup/cmake/intro/index` and
   :doc:`/trainings/material/soup/cmake/advanced/index`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
+* :doc:`/trainings/material/soup/cxx11/multithreading/index`
 * From :doc:`/trainings/material/soup/c/100-performance/index`
 
   * :doc:`/trainings/material/soup/c/100-performance/010-introduction/topic`

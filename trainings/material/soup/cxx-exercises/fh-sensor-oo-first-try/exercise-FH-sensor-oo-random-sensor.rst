@@ -71,7 +71,7 @@ high)`` - passes its arguments to the constructor of the
 ``_distribution`` member in the initializer list.
 
 See this in analogy to the ``class point`` example in
-:doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking`,
+:doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`,
 where we initialize ``int`` members (and not random distributions),
 
 .. code-block:: c++

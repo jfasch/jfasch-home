@@ -26,14 +26,14 @@ Subscript Operator
      :caption: :download:`code/map-insert-insert-pre11.cpp`
 
 * Same, using :doc:`C++11 auto
-  </trainings/material/soup/cxx11/020-new-language-features/auto>`
+  </trainings/material/soup/cxx11/new-language-features/auto/topic>`
 
   .. literalinclude:: code/map-insert-insert-auto.cpp
      :language: c++
      :caption: :download:`code/map-insert-insert-auto.cpp`
 
 * Same, using :doc:`C++17 Structured Binding
-  </trainings/material/soup/cxx11/020-new-language-features/structured-binding>`
+  </trainings/material/soup/cxx11/new-language-features/structured-binding/topic>`
 
   .. literalinclude:: code/map-insert-insert-structured-binding.cpp
      :language: c++

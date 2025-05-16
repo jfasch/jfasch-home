@@ -144,10 +144,10 @@ Step 6a: Bulk Insert Using ``std::initializer_list``?
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
 
 To make matters less clumsy, they invented :doc:`brace initialization
-</trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index>`. Lets
+</trainings/material/soup/cxx11/new-language-features/brace-initialization/index>`. Lets
 try it out.
 
 .. literalinclude:: /trainings/material/soup/cxx-code/design-patterns-command/tests/command-suite-bulk-insert--std_initializer_list.cpp

@@ -12,7 +12,7 @@ Default Constructor (1)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/020-new-language-features/default`
+   * :doc:`/trainings/material/soup/cxx11/new-language-features/oo/default`
 
 **Constructor without parameter** - *Default Constructor*
 

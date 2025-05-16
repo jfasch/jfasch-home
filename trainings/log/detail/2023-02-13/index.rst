@@ -393,11 +393,11 @@ From :doc:`/trainings/repertoire/linux-prog/sysprog/multithreading`:
 * Atomics
 * Realtime
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`
+From :doc:`/trainings/material/soup/cxx11/multithreading/index`
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/scoped-locking`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
+* :doc:`/trainings/material/soup/cxx11/multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/mutex`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/scoped-locking`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx11/multithreading/promise-future`
+* :doc:`/trainings/material/soup/cxx11/multithreading/condition-variable`

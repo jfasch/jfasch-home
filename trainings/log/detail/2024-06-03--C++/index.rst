@@ -31,35 +31,35 @@ Day 1
 Introduction: What C++ >= 11 Brings
 ...................................
 
-* :doc:`/trainings/material/soup/cxx11/010-introduction/overview-livehacking` (the outcome of it being `new-cpp.cpp <https://github.com/jfasch/2024-06-03/blob/main/livecoding/new-cpp.cpp>`__
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/auto`, including 
+* :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking` (the outcome of it being `new-cpp.cpp <https://github.com/jfasch/2024-06-03/blob/main/livecoding/new-cpp.cpp>`__
+* :doc:`/trainings/material/soup/cxx11/new-language-features/auto/topic`, including 
 
   * a discussion of how arrays continue to *decay* to pointers in C++,
     using ``auto``
   * a demo of good old C decayed arrays, `ptr-decay.cpp
     <https://github.com/jfasch/2024-06-03/blob/main/livecoding/ptr-decay.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/structured-binding`
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda`, 
+* :doc:`/trainings/material/soup/cxx11/new-language-features/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda`, 
   and its relationship with ``std::function``, 
-  :doc:`/trainings/material/soup/cxx11/040-bind-function/020-function/topic`
+  :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
   * A little upside down show of it, `lambda.cpp
     <https://github.com/jfasch/2024-06-03/blob/main/livecoding/lambda.cpp>`__
   * Walking through the inevitable capturing syntax,
-    :doc:`/trainings/material/soup/cxx11/020-new-language-features/lambda/lambda-capture`
+    :doc:`/trainings/material/soup/cxx11/new-language-features/lambda/lambda-capture`
 
 Smart Pointers: ``std::shared_ptr<>``, ``std::unique_ptr<>`` (And A Little ``std::move``)
 .........................................................................................
 
-From :doc:`/trainings/material/soup/cxx11/030-smart-pointers/index`:
+From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/introduction`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/weakptr`
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/040-closing-words/topic`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
 
 Livecoding experiences:
 
@@ -125,21 +125,21 @@ Exercise: ``class Sensor``, And A ``SensorConfig`` Thereof
 Multithreading: Threads, Race Conditions, Locking Primitives
 ............................................................
 
-From :doc:`/trainings/material/soup/cxx11/050-multithreading/index`:
+From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/010-introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx11/multithreading/010-introduction/topic`
+* :doc:`/trainings/material/soup/cxx11/multithreading/020-thread/topic`
 
   Dissecting *joinable* vs. *detached* threads: `join-vs-detach.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/join-vs-detach.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/atomics`
 
   ``i++`` made thread safe with ``std::atomic<>``:
   `mother-of-race-conditions--atomic.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/mother-of-race-conditions--atomic.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/040-locking-atomics/mutex`
+* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/mutex`
 
   ``i++`` made thread safe with ``std::mutex`` (rather slow though):
   `mother-of-race-conditions--mutex.cpp
@@ -170,12 +170,12 @@ Based upon the :ref:`exercise from Day 2 <exercise-day-2>`,
 Multithreading: Communication
 .............................
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/promise-future`
+* :doc:`/trainings/material/soup/cxx11/multithreading/promise-future`
 
   See a contrived ping-pong game, livecoded in `promise-future.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/livecoding/threads/promise-future.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/050-multithreading/condition-variable`
+* :doc:`/trainings/material/soup/cxx11/multithreading/condition-variable`
 
   See an implementation of a thread safe queue, livecoded in
   `thread-safe-queue.cpp
@@ -245,7 +245,7 @@ Outcome:
 * Test suite: `latch-suite.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/tests/latch-suite.cpp>`__
   (note how :doc:`futures
-  </trainings/material/soup/cxx11/050-multithreading/promise-future>`
+  </trainings/material/soup/cxx11/multithreading/promise-future>`
   can be used to achieve tests determinism)
 * Demo program: `latch-demo.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/programs/latch-demo.cpp>`__
@@ -262,14 +262,14 @@ Outcome:
 RValue References, Move Semantics
 .................................
 
-* :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/overview`
+* :doc:`/trainings/material/soup/cxx11/new-language-features/move/overview`
 * Lengthy livecoding: *Rule Of 5?*
 
   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-string-move`
-  * :doc:`/trainings/material/soup/cxx11/020-new-language-features/060-move/livehack-using-string-move`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-string-move`
+  * :doc:`/trainings/material/soup/cxx11/new-language-features/move/livehack-using-string-move`
 
   Outcome `string-move.cpp
   <https://github.com/jfasch/2024-06-03/blob/main/livecoding/string-move.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx11/035-perfect-forwarding/topic`
+* :doc:`/trainings/material/soup/cxx11/perfect-forwarding/topic`

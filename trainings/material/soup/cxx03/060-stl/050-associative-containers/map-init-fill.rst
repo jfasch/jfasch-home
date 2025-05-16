@@ -39,7 +39,7 @@ Initialization
      :caption: :download:`code/map-initialize-pre11.cpp`
 
 * C++11:
-  :doc:`/trainings/material/soup/cxx11/020-new-language-features/030-brace-initialization/index`
+  :doc:`/trainings/material/soup/cxx11/new-language-features/brace-initialization/index`
 * |longrightarrow| ``const`` non-default-constructed object
 
   .. literalinclude:: code/map-initialize-11.cpp

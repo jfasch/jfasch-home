@@ -311,20 +311,20 @@ Day 5
   recource management and smart pointers.
 * Pointer classes ("smart pointers")
 
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
 
     Although ``std::unique_ptr<>`` is the simpler of the two in what
     it does, its usage is more involved. Ownership transfer (this is
     what I like about it) is implemented using the outright genius
     :doc:`"move" mechanism (since C++11)
-    </trainings/material/soup/cxx11/020-new-language-features/060-move/index>`,
+    </trainings/material/soup/cxx11/new-language-features/move/index>`,
     and one needs to know a bit when the compiler fails to enforce the
     ownership transfer contract.
 
     Live-hacked that `here
     <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/unique_ptr.cpp>`__.
 
-  * :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
 
     Didn't go through it in great detail (time was over
     anyway). Shared ownership, though, is easier explained than
@@ -337,12 +337,12 @@ Day X
 Smart Pointers, Recap
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
 
   .. image:: wacom-sketches/ptr-unique.png
      :scale: 50%
 
-* :doc:`/trainings/material/soup/cxx11/030-smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
 
   .. image:: wacom-sketches/ptr-shared.png
      :scale: 50%
