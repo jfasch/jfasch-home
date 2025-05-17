@@ -227,7 +227,7 @@ Unions? ``std::variant``!
 
 .. sidebar::
 
-   * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
+   * :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
 
 * Why use ``std::pair<std::function<void()>,
   std::shared_ptr<std::thread>>`` when only either function or thread

@@ -135,7 +135,7 @@ material that predates C++20, such as:
 
 * :doc:`/trainings/material/soup/cxx11/move/index`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
-* :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
+* :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
 
 You can always browse :doc:`all material
 </trainings/material/soup/index>` - but be warned, it is rather

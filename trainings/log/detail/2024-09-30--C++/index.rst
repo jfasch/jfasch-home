@@ -331,12 +331,12 @@ Eliminating ``virtual``: using ``std::variant``
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx11/lambda/index`
-   * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
+   * :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
 
 * Show function call operator (``operator()(...)``), and Lambdas:
   `livehacking/lambda.cpp
   <https://github.com/jfasch/2024-09-30/blob/main/livehacking/lambda.cpp>`__
-* :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`, and ``std::visit``: 
+* :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`, and ``std::visit``: 
   `livehacking/variant.cpp <https://github.com/jfasch/2024-09-30/blob/main/livehacking/variant.cpp>`__
 
 **Idea**
@@ -364,7 +364,7 @@ hold a fixed number of *unrelated* alternative pointer types. Advantages:
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx11/concepts/index`
-   * :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
+   * :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
 
 * No ``virtual``. The alternatives only need to match the requirements
   (see :ref:`course-2024-09-30-candatasink-template`); :doc:`Concepts

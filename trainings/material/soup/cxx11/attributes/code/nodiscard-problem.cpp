@@ -6,5 +6,5 @@ bool might_fail()
 int main()
 {
     might_fail();                                      // <-- potential error not handled
-    return 0;                                          // <-- exit OK
+    return 0;                                          // <-- ... though exit OK
 }

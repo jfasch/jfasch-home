@@ -39,7 +39,7 @@ repeat ...
 * :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
 * :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
 * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
-* :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
+* :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
 * :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
 
 Memory Management

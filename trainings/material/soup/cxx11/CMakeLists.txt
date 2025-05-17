@@ -1,7 +1,6 @@
 set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(introduction)
-add_subdirectory(new-language-features)
 add_subdirectory(smart-pointers)
 add_subdirectory(perfect-forwarding)
 add_subdirectory(multithreading)
@@ -28,4 +27,4 @@ add_subdirectory(oo)
 add_subdirectory(auto)
 add_subdirectory(control-flow-locals)
 add_subdirectory(structured-binding)
-
+add_subdirectory(any-variant-optional)

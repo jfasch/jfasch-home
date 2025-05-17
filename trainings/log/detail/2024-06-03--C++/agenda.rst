@@ -27,8 +27,8 @@ C++ Pythonic Toolcase
 .....................
 
 * :doc:`/trainings/material/soup/cxx11/auto/topic`
-* :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant`
-* :doc:`/trainings/material/soup/cxx11/miscellaneous/any-variant-optional/any`
+* :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
+* :doc:`/trainings/material/soup/cxx11/any-variant-optional/any`
 * ``std::optional``
 
 Brace Initialization (``std::initializer_list<>``)

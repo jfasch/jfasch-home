@@ -4,6 +4,11 @@
 ``std::chrono``
 ===============
 
+.. sidebar:: Documentation
+
+   * `Date and time library
+     <https://en.cppreference.com/w/cpp/chrono>`__
+
 ``std::chrono``
 ---------------
 

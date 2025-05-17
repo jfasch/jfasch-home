@@ -1,4 +1,4 @@
-ADD_EXECUTABLE(
+add_executable(
   c++11-any-variant-optional-suite
 
   variant-default_ctor.cpp
@@ -19,10 +19,10 @@ ADD_EXECUTABLE(
   any-reference-cast.cpp
   any-string-and-charp.cpp
 )
-TARGET_LINK_LIBRARIES(c++11-any-variant-optional-suite gtest_main)
+target_link_libraries(c++11-any-variant-optional-suite gtest_main)
 add_test(NAME c++11-any-variant-optional-suite COMMAND c++11-any-variant-optional-suite)
 
 add_executable(c++11-variant-mem-usage variant-mem-usage.cpp)
 add_executable(c++11-variant-mem-usage-2-uint8 variant-mem-usage-2-uint8.cpp)
 
-ADD_EXECUTABLE(any-more any-more.cpp)
+add_executable(any-more any-more.cpp)

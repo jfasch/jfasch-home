@@ -1,3 +1,2 @@
-ADD_SUBDIRECTORY(010-chrono)
-ADD_SUBDIRECTORY(any-variant-optional)
-ADD_SUBDIRECTORY(array)
+add_subdirectory(010-chrono)
+add_subdirectory(array)

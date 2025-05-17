@@ -12,5 +12,3 @@ Topics
    :glob:
 
    010-chrono/topic
-   any-variant-optional/any
-   any-variant-optional/variant

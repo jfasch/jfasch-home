@@ -66,9 +66,9 @@ unordered (yet), and adaptations to it are likely to be made.
 * Ranges and views (:doc:`here
   </trainings/material/soup/cxx11/ranges/index>`)
 * ``std::any`` (:doc:`here
-  </trainings/material/soup/cxx11/miscellaneous/any-variant-optional/any>`),
+  </trainings/material/soup/cxx11/any-variant-optional/any>`),
   ``std::variant<>`` (:doc:`here
-  </trainings/material/soup/cxx11/miscellaneous/any-variant-optional/variant>`). Show
+  </trainings/material/soup/cxx11/any-variant-optional/variant>`). Show
   usage, and discuss.
 * The "spaceship" operator [#make_material]_
 * ``std::fmt`` (vs ``printf()``) [#make_material]_

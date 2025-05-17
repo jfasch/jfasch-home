@@ -31,6 +31,7 @@ Topics
 
    smart-pointers/index
 
+   any-variant-optional/index
 
    miscellaneous/index
 
@@ -50,10 +51,5 @@ Topics
    coroutines/index
    modules/topic
 
-
    drafts/index
    exercises/index
-
-
-
-
