@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 From Concrete To Polymorphic (``class Sensor``)
 ===============================================
 
@@ -8,7 +11,7 @@ From Concrete To Polymorphic (``class Sensor``)
 
    * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
 
-Most Concrete, And Old School
+Very Concrete, And Old School
 -----------------------------
 
 .. sidebar:: Documentation
@@ -18,12 +21,13 @@ Most Concrete, And Old School
    * `man -s3 sleep
      <https://man7.org/linux/man-pages/man3/sleep.3.html>`__
 
-* Mock sensor straightforward, with a method ``set_value()`` for test
-  usage. (Note that ``Logger`` only uses ``get_value()``.)
+* Main program calls ``logger.log_one()`` at a one-second interval
+  (`man -s3 sleep
+  <https://man7.org/linux/man-pages/man3/sleep.3.html>`__)
 
-.. literalinclude:: code/concrete-no-chrono/sensor-mock.h
+.. literalinclude:: code/concrete-no-chrono/main.cpp
    :language: c++
-   :caption: :download:`code/concrete-no-chrono/sensor-mock.h`
+   :caption: :download:`code/concrete-no-chrono/main.cpp`
 
 * ``Logger::log_one()`` takes the current time, and outputs the sensor
   value along with it (`man -s2 time
@@ -33,26 +37,90 @@ Most Concrete, And Old School
    :language: c++
    :caption: :download:`code/concrete-no-chrono/logger.h`
 
-* Main program calls ``logger.log_one()`` at a one-second interval
-  (`man -s3 sleep
-  <https://man7.org/linux/man-pages/man3/sleep.3.html>`__)
+* Mock sensor straightforward, with a method ``set_value()`` for test
+  usage. (Note that ``Logger`` only uses ``get_value()``.)
 
-.. literalinclude:: code/concrete-no-chrono/main.cpp
+.. literalinclude:: code/concrete-no-chrono/sensor-mock.h
    :language: c++
-   :caption: :download:`code/concrete-no-chrono/main.cpp`
+   :caption: :download:`code/concrete-no-chrono/sensor-mock.h`
 
 Use ``std::chrono`` For Time
 ----------------------------
 
-* logger
+.. sidebar:: See also
 
-  * time -> chrono :doc:`/trainings/material/soup/cxx11/chrono/topic`
+   * :doc:`/trainings/material/soup/cxx11/chrono/topic`
 
-    * copy from :ref:`cxx11-chrono-clock-domains` -> system_clock
-    * use auto :doc:`/trainings/material/soup/cxx11/auto/topic`
+* Main program
 
-  * talk about system_clock vs steady_clock
+.. literalinclude:: code/concrete-chrono/main.cpp
+   :language: c++
+   :caption: :download:`code/concrete-chrono/main.cpp`
 
-* main
+* Logger. Talk about :ref:`cxx11-chrono-clock-domains`
 
-  * use chrono/thread -> literals
+.. literalinclude:: code/concrete-chrono/logger.h
+   :language: c++
+   :caption: :download:`code/concrete-chrono/logger.h`
+
+New Sensor Type: ``FileSensor``
+-------------------------------
+
+* Invent new sensor type: ``FileSensor``
+* Show usage in ``main.cpp``, *not* passing it to logger
+
+.. literalinclude:: code/file-sensor/sensor-file.h
+   :language: c++
+   :caption: :download:`code/file-sensor/sensor-file.h`
+
+.. literalinclude:: code/file-sensor/sensor-file.cpp
+   :language: c++
+   :caption: :download:`code/file-sensor/sensor-file.cpp`
+
+Type Mismatch: ``Logger(...)``
+------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+
+* Pass to ``Logger`` |longrightarrow| wants ``MockSensor*``, not
+  ``FileSensor*``
+* What to do?
+* Interfaces, ``virtual``
+* See
+  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+  for the full story
+
+Create Interface: ``Sensor``
+----------------------------
+
+* jjj begin sketch
+* **Every** interface has a ``virtual`` destructor *that does nothing*
+* *Dynamic dispatch*: object carries its type, and that type's
+  ``get_value()`` is called.
+
+.. literalinclude:: code/polymorphic/sensor.h
+   :language: c++
+   :caption: :download:`code/polymorphic/sensor.h`
+
+Derive Concrete Implementations From ``Sensor``
+-----------------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/oo/override`
+
+* jjj finish sketch
+* *Is-a* relationship
+* ``override`` the ``virtual = 0`` in interface (:doc:`don't ask
+  </trainings/material/soup/cxx11/oo/override>`)
+
+.. literalinclude:: code/polymorphic/sensor-file.h
+   :language: c++
+   :caption: :download:`code/polymorphic/sensor-file.h`
+
+.. literalinclude:: code/polymorphic/sensor-mock.h
+   :language: c++
+   :caption: :download:`code/polymorphic/sensor-mock.h`
+

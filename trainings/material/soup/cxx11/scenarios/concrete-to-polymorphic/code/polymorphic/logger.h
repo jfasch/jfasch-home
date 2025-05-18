@@ -1,20 +1,20 @@
 #pragma once
 
-#include "sensor-mock.h"
+#include "sensor.h"
 
 #include <iostream>
-#include <time.h>
+#include <chrono>
 
 class Logger
 {
 public:
-    Logger(MockSensor* sensor) : _sensor{sensor} {}
+    Logger(Sensor* sensor) : _sensor{sensor} {}
     void log_one()
     {
-        time_t now = time(nullptr);
+        auto now = std::chrono::system_clock::now();
         double value = _sensor->get_value();
         std::cout << now << ": " << value << std::endl;
     }
 private:
-    MockSensor* _sensor;
+    Sensor* _sensor;
 };
