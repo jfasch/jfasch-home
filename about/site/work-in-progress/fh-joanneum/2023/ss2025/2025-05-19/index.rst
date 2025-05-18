@@ -10,17 +10,15 @@
 Homework Recap
 --------------
 
+* See :ref:`fh-2025-05-12-homework`
 * Pictures: door, git
 * Git: updating from upstream
-* See :ref:`fh-2025-05-12-homework`
 * Initializer list (member initialization)
 
-C++ Tricks
-----------
+Interfaces, Polymorphic Types
+-----------------------------
 
-* Brace initialization/truncation
-* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector`
-
+* :doc:`/trainings/material/soup/cxx11/scenarios/concrete-to-polymorphic/topic`
 
 
 
