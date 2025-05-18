@@ -24,6 +24,7 @@ Topics
    auto/topic
    structured-binding/topic
    range-for/index
+   miscellaneous2/topic
 
    lambda/index
    constexpr-constinit-consteval/index
@@ -31,17 +32,12 @@ Topics
 
    smart-pointers/index
 
-   any-variant-optional/index
-
-   miscellaneous/index
-
-   miscellaneous2/topic
-
-
    move/index
    perfect-forwarding/topic
 
    multithreading/index
+   any-variant-optional/index
+   chrono/topic
    filesystem/topic
 
    spaceship/topic
@@ -53,3 +49,11 @@ Topics
 
    drafts/index
    exercises/index
+
+Scenarios
+---------
+
+.. toctree::
+   :maxdepth: 1
+
+   scenarios/concrete-to-polymorphic/topic

@@ -124,7 +124,7 @@ News From The Standard Library
   * :doc:`/trainings/material/soup/cxx11/ranges/links`
 
 * ``std::format``: *Pythonicity never stops*
-* :doc:`/trainings/material/soup/cxx11/miscellaneous/010-chrono/topic`
+* :doc:`/trainings/material/soup/cxx11/chrono/topic`
 * ``std::span``: the problems it solves, and usage
 
 Optional Content From Past C++ Versions

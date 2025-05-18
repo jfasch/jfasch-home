@@ -10,7 +10,19 @@
 Homework Recap
 --------------
 
-See :ref:`fh-2025-05-12-homework`
+* Pictures: door, git
+* Git: updating from upstream
+* See :ref:`fh-2025-05-12-homework`
+* Initializer list (member initialization)
+
+C++ Tricks
+----------
+
+* Brace initialization/truncation
+* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector`
+
+
+
 
 .. * Pullrequests einsammeln
 .. 
@@ -44,3 +56,12 @@ See :ref:`fh-2025-05-12-homework`
 .. 	* jjj full rebuild, mitsamt dem gschissenen googletest
 .. 	* jjj mit egon reden, wie er das so mit dem unittesten macht.
 .. 	* -> CI pipeline hardware haufen memory
+
+.. * const und * irgendwo aus c rausgraben und bringen
+
+..   * https://www.youtube.com/watch?v=tA6LbPyYdco
+..   * -> constinit: eine tour, wie man explizit steuert, wo memory hingeht
+..     * viel mit nm --demangle, oder objdump
+..     * 28:50 constexpr sort and vector
+
+.. * bei der theoretischen pruefung fragen :-)

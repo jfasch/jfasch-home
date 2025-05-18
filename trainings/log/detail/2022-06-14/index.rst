@@ -177,7 +177,7 @@ Miscellaneous
    * * ``chrono`` += how to sleep
      * Done in various live hacking session on the way; add to
        :doc:`slide material
-       </trainings/material/soup/cxx11/miscellaneous/010-chrono/topic>`
+       </trainings/material/soup/cxx11/chrono/topic>`
    * * `Regular expression library
        <https://en.cppreference.com/w/cpp/regex>`__
      * `(Raw) string literal

@@ -4,6 +4,9 @@
 ``std::chrono``
 ===============
 
+.. contents::
+   :local:
+
 .. sidebar:: Documentation
 
    * `Date and time library
@@ -26,6 +29,8 @@
 
   * Difference between time points
   * Time point - duration between time point's epoch and itself
+
+.. _cxx11-chrono-clock-domains:
 
 Clock Domains
 -------------
@@ -58,7 +63,7 @@ Measuring Time (1)
 
    #include <chrono>
    
-   std::chrono::system_clock::time_point now = 
+   std::chrono::system_clock::time_point now =
         std::chrono::system_clock::now();
 
 Measuring Time (2)

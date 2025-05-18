@@ -7,16 +7,20 @@ Tuple Unpacking (Err, Structured Binding)
 .. contents::
    :local:
 
-Basics
-------
+Basics: Python Tuple Unpacking
+------------------------------
 
-.. sidebar::
-
-   **See also**
+.. sidebar:: See also
 
    * :doc:`../auto/topic`
 
-**Wanted:** Python's tuple unpacking
+.. sidebar:: Documentation
+
+   * `Structured binding declaration (since C++17)
+     <https://en.cppreference.com/w/cpp/language/structured_binding>`__
+
+* Wanted: Python tuple unpacking (that feature is based on iteration,
+  a very strong concept in Python)
 
 .. code-block:: python
 
@@ -28,6 +32,8 @@ Basics
 * C++-ification of Python
 * Comes in many flavors since C++ cares more about types, obviously
 * Creates variables in surrounding scope
+* *Not* based on iteration (which is also a very strong concept in
+  C++)
 
 For example ...
 

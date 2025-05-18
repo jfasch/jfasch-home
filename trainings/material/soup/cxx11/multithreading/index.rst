@@ -1,5 +1,5 @@
-Multithreading
-==============
+Multithreading, C++ Memory Model
+================================
 
 .. contents::
    :local:

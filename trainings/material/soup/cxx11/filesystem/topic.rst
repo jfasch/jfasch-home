@@ -7,10 +7,6 @@
 .. contents::
    :local:
 
-.. note::
-
-   This topic is usually live hacked.
-
 Overview
 --------
 

@@ -142,7 +142,7 @@ Sideways: ``std::chrono``, And Literals
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/miscellaneous/010-chrono/topic`
+   * :doc:`/trainings/material/soup/cxx11/chrono/topic`
 
 * Replace ``<time.h>`` with ``<chrono>``
 * Use cool literals with built-in units, and ``constexpr``

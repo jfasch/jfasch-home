@@ -145,7 +145,7 @@ What If To-Do List Items Can Really Do Something? |longrightarrow| Functions
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/miscellaneous/010-chrono/topic`
+   * :doc:`/trainings/material/soup/cxx11/chrono/topic`
 
 * Strings "Up, 1 .. 10", and "Down, 1000 .. 980" are not really
   unambiguous

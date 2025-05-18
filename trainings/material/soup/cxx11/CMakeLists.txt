@@ -5,9 +5,10 @@ add_subdirectory(smart-pointers)
 add_subdirectory(perfect-forwarding)
 add_subdirectory(multithreading)
 add_subdirectory(bind-function)
-add_subdirectory(miscellaneous)
 
+add_subdirectory(array)
 add_subdirectory(filesystem)
+add_subdirectory(chrono)
 add_subdirectory(drafts)
 
 add_subdirectory(exercises)
@@ -28,3 +29,6 @@ add_subdirectory(auto)
 add_subdirectory(control-flow-locals)
 add_subdirectory(structured-binding)
 add_subdirectory(any-variant-optional)
+
+
+add_subdirectory(scenarios/concrete-to-polymorphic)
