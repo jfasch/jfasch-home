@@ -77,17 +77,22 @@ hoops.
 Deploy SSH public on GH |longrightarrow| homework. On Github, *You ->
 Settings -> SSH and GPG Keys*. Paste your public key.
 
-.. _fh-2025-05-12-change-upstream:
+.. _fh-2025-05-12-change-origin:
 
-Change Upstream, And Push
-.........................
+Change ``origin``, And Push
+...........................
 
 .. image:: git-workflow.jpg
 
-* Fork old upstream into something where you have write access; say,
-  https://github.com/you/FH-STECE2023.git. On Github, press the "Fork"
-  button and follow the instructions.
-* Change upstream of your clone to be your fork
+``origin`` is the default for ``git pull`` and ``git push``. We want
+that these operation always go to something where we have write
+access - our own "fork".
+
+* On Github (https://github.com/jfasch/FH-STECE2023), fork the project
+  into something where you have write access; say,
+  https://github.com/you/FH-STECE2023.git. Press the "Fork" button and
+  follow the instructions.
+* Change ``origin`` of your clone to be your fork
 
   .. code-block:: console
 
@@ -142,15 +147,15 @@ Local C++ Transformation
 * Make clean commits in your local repo that you cloned from
   https://github.com/jfasch/FH-STECE2023.git the other day
 
-Fork on Github, And Change Your Upstream
-........................................
+Fork on Github, And Change Your ``origin``
+..........................................
 
 Following the procedure outlined in
-:ref:`fh-2025-05-12-change-upstream`,
+:ref:`fh-2025-05-12-change-origin`,
 
 * Create a fork of our project
-* In your clone from earlier days, change upstream to that fork.
-* Push your repo to the new upstream
+* In your clone from earlier days, change ``origin`` to that fork.
+* Push your repo to the new ``origin``
 
 Submission: Pull Request
 ........................

@@ -61,7 +61,7 @@ Use ``std::chrono`` For Time
 
 .. literalinclude:: code/concrete-chrono/logger.h
    :language: c++
-   :caption: :download:`code/concrete-chrono/logger.h
+   :caption: :download:`code/concrete-chrono/logger.h`
 
 New Sensor Type: ``FileSensor``
 -------------------------------

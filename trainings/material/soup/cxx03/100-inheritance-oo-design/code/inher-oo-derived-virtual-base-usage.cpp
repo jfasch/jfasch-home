@@ -23,7 +23,7 @@ int main()
 {
     Derived d;
     Base* b = &d;
-    b->method();       // <--- **dynamic dispatch**: calling Derived::method()!
+    b->method();                                       // <--- **dynamic dispatch**: calling Derived::method()!
     
     return 0;
 }

@@ -30,6 +30,8 @@ Block 1: Linux, and Working With Remote/Embedded Devices
    2025-05-07/index
    2025-05-12/index
    2025-05-19/index
+   2025-05-20,22/index
+   2025-06-02/index
 
 Block 2: C on Linux: Local and *Cross* Development
 --------------------------------------------------

@@ -47,6 +47,10 @@ Simple *Is-A* Relationship Is Not Enough
 Enter ``virtual``
 -----------------
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/cxx11/oo/override`
+
 **Answer**
 
 * Use ``virtual`` on those methods that need *dynamic dispatch*
