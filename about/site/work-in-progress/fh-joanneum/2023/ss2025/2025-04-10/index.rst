@@ -7,6 +7,10 @@
 .. contents::
    :local:
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/basics/index`
+
 Overview: User? Home?
 ---------------------
 

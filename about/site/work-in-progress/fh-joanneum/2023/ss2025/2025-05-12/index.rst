@@ -7,18 +7,6 @@
 .. contents::
    :local:
 
-Recap Of :ref:`Door Exercise <fh_2023_door_exercise>`
------------------------------------------------------
-
-.. sidebar:: Exercise
-
-   :ref:`Door Exercise <fh_2023_door_exercise>`   
-
-**Notes**
-
-* .h vs .cpp: where to put implementation?
-* Ownership (why do we pass pointers into Door ctor?)
-
 C++ Material
 ------------
 

@@ -18,8 +18,8 @@ Embedded Computing 1 (STECE-2023): Material
    * `VSCode: Remote Development using SSH
      <https://code.visualstudio.com/docs/remote/ssh>`__
 
-Block 1: Linux, and Working With Remote/Embedded Devices
---------------------------------------------------------
+Linux/Shell Basics
+------------------
 
 .. toctree::
 
@@ -27,15 +27,16 @@ Block 1: Linux, and Working With Remote/Embedded Devices
    2025-04-10/index
    2025-04-28/index
    2025-05-06/index
+
+C++ Basics
+----------
+
+.. toctree::
+
    2025-05-07/index
    2025-05-12/index
    2025-05-19/index
    2025-05-20,22/index
    2025-06-02/index
 
-Block 2: C on Linux: Local and *Cross* Development
---------------------------------------------------
-
-Block 3: C++
-------------
 

@@ -228,7 +228,8 @@ Release And Acquire Ordering: A Naive Spinlock
 
   * |longrightarrow| less context switches
   * Good for short critical sections
-  * Not good if both contenders are scheduled on the same CPU
+  * **Not good if both contenders are scheduled on the same CPU**
+    |longrightarrow| do not use this, it is way too naive.
 
 * ``std::atomic_flag`` is guaranteed to be lock-free
 * ``std::atomic<>`` specializations are not

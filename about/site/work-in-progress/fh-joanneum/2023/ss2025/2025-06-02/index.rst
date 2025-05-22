@@ -1,5 +1,11 @@
-blah
-====
+.. include:: <mmlalias.txt>
+
+
+2025-06-02 (3 VO): CMake, And More C++
+======================================
+
+.. contents::
+   :local:
 
 * cmake dependencies (-> gebaut wird nur toplevel)
 * auto (mlinar)

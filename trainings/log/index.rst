@@ -18,10 +18,12 @@ impression of how my courses look like.
 C++: What's New In C++20 (2025-05-14 - 2025-05-15)
 --------------------------------------------------
 
-Two days didactic livehacking in the middle of Germany (beautiful
-`Vulkaneifel <https://de.wikipedia.org/wiki/Vulkaneifel>`__)
+A lot is new in C++20, only the surface of which can be scratched in a
+two-day course. Didactic livehacking in the middle of Germany
+(beautiful `Vulkaneifel
+<https://de.wikipedia.org/wiki/Vulkaneifel>`__)
 
-(:doc:`More ... <detail/2025-04-14--C++-2-Days/index>`)
+(:doc:`More ... <detail/2025-05-14--C++-2-Days/index>`)
 
 C++: A One-Day Overview (2024-11-19 - 2024-11-21)
 -------------------------------------------------

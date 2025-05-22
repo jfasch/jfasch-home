@@ -7,11 +7,6 @@
 .. contents::
    :local:
 
-Org
----
-
-* UE(2x3) on 2025-05-15?
-
 OS Concepts
 -----------
 

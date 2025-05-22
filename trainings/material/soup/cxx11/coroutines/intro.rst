@@ -10,6 +10,13 @@ Coroutines: An Overview
 Foreword
 --------
 
+.. sidebar:: Documentation
+
+   * `Coroutines
+     <https://en.cppreference.com/w/cpp/language/coroutines>`__
+   * `std::generator
+     <https://en.cppreference.com/w/cpp/coroutine/generator>`__
+
 * A "function" that is not a function
 * Entered multiple times (what?)
 

@@ -4,7 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
-   2025-04-14--C++-2-Days/index
+   2025-05-14--C++-2-Days/index
    2025-XX-XX--C++-2-Days/index
    2024-11-19--C++-One-Day/index
    2024-09-30--C++/index

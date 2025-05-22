@@ -37,9 +37,9 @@ everyone's local work.
      remotes/origin/main
 
 Update Your Fork
-----------------
+................
 
-jjj draw sketch
+.. image:: update-from-upstream.jpg
 
 * Create a remote for *upstream*
   https://github.com/jfasch/FH-STECE2023.git (this is done only once):
@@ -113,6 +113,8 @@ Requirement
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx11/scenarios/concrete-to-polymorphic/topic`
+
+.. image:: ../2025-05-19/polymorphic.jpg
 
 * According to
   :doc:`/trainings/material/soup/cxx11/scenarios/concrete-to-polymorphic/topic`,

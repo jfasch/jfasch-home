@@ -24,6 +24,10 @@ From :doc:`/trainings/material/soup/linux/basics/shell/exercises/cp-mv-mkdir-rm/
 Permissions
 -----------
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/basics/permissions/exercises/index`
+
 For this, we log in to our team computer. For example:
 
 .. code-block:: console

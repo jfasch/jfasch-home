@@ -50,6 +50,10 @@ Homework
 Install Linux
 .............
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/basics/intro/wsl`
+
 We want to work on our own laptops, using Linux. Three options:
 
 * You have native Linux installed on the laptop. Nothing to do but
