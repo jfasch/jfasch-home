@@ -7,11 +7,14 @@
 .. contents::
    :local:
 
+* Finish :ref:`fh-2025-05-20--exercise-door-polymorphic`
 * cmake dependencies (-> gebaut wird nur toplevel)
+* git: rebase, stash
 * auto (mlinar)
 * brace initialization
 * polymorphic genauer -> screenplay
 * syllabus grading nix laborklausur
+
 
 .. * Pullrequests einsammeln
 .. 

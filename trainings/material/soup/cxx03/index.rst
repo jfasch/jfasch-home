@@ -17,7 +17,7 @@ Topics
    050-templates/index
    060-stl/index
    070-dynamic-memory/index
-   100-inheritance-oo-design/index
+   inheritance-oo-design/index
    900-standard-library-miscellanea/index
 
 Exercises

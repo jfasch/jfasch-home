@@ -19,13 +19,18 @@ Inheritance Basics
 Plain (Base) Class
 ------------------
 
-* A plain class ``Base``, with a ``method`` (simply announcing itself
-  on ``stdout``)
+* A plain class ``Sensor`` with a ``get_value()`` method
 * No surprise
 
-.. literalinclude:: code/inher-oo-base.cpp
-   :caption: :download:`code/inher-oo-base.cpp`
+.. literalinclude:: code/base.cpp
+   :caption: :download:`code/base.cpp`
    :language: c++
+
+.. .. .. plantuml::
+.. .. 
+.. ..    @startuml
+.. ..    alice -> bob: test
+.. ..    @enduml
 
 .. image:: uml-base.jpg
 

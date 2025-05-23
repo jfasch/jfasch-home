@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-2025-05-{20,22} (3+3UE): Polymorphic Door Parts, And Some Git
-=============================================================
+2025-05-{20,22,23} (6+6 UE): Polymorphic Door Parts, And Some Git
+=================================================================
 
 .. contents::
    :local:
@@ -87,6 +87,8 @@ Update Your Fork
   
      $ git push
 
+.. _fh-2025-05-20--exercise-door-polymorphic:
+
 Exercise: Create Interfaces For Door Parts
 ------------------------------------------
 
@@ -170,3 +172,9 @@ should be able to guide you through the exercise.
 * Understand and fix compiler errors
 * Run test suite
 * Repeat with next door part
+
+Homework (Until 2025-06-01)
+---------------------------
+
+Complete :ref:`the exercise
+<fh-2025-05-20--exercise-door-polymorphic>`, and send pull request.

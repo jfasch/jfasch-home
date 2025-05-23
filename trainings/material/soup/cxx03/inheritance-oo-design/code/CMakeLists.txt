@@ -1,4 +1,6 @@
-ADD_EXECUTABLE(inher-oo-base inher-oo-base.cpp)
+add_executable(cxx03-inher-oo-base base.cpp)
+
+
 ADD_EXECUTABLE(inher-oo-derived-novirtual inher-oo-derived-novirtual.cpp)
 ADD_EXECUTABLE(inher-oo-derived-novirtual-base-conversion inher-oo-derived-novirtual-base-conversion.cpp)
 ADD_EXECUTABLE(inher-oo-derived-novirtual-base-usage inher-oo-derived-novirtual-base-usage.cpp)
