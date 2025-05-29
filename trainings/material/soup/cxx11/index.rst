@@ -57,3 +57,4 @@ Scenarios
    :maxdepth: 1
 
    scenarios/concrete-to-polymorphic/topic
+   scenarios/polymorphism-in-c/topic

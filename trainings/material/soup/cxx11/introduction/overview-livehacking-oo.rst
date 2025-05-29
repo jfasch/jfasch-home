@@ -10,7 +10,7 @@ A One-Day Overview Of C++
 
    * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map` (and the STL in general)
    * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index` (including C++11 goodies like ``override``, ``final``, ``= delete``, ...)
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index` (including C++11 goodies like ``override``, ``final``, ``= delete``, ...)
 
    *Memory management*
 
@@ -184,7 +184,7 @@ Two Kinds Of Items, Two Classes
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
 
 * Naive way: implement two *non-related* classes
 
@@ -208,8 +208,8 @@ Inheritance (Make It Compile, But Not Yet Work)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
 
 * Radically, just to get objects into the map: derive from base
   ``class Item``
@@ -238,8 +238,8 @@ Analysis: The Perils Of Inheritance - *Slicing*
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
 
 * Clarify: comment out todolist, and explain sideways
 * C++ permits one to *copy* an object of derived type onto an object
@@ -261,8 +261,8 @@ Analysis: The Perils Of Inheritance - Automatic Pointer Type Conversion
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
 
 * Better than *copying* objects of different sizes onto each other:
   *automatic type conversion*
@@ -285,8 +285,8 @@ Key To Polymorphism: ``virtual``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
 
 * Makes ``base->doit()`` magically work
 * By adding runtime type information
@@ -351,8 +351,8 @@ Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/polymorphism`
 
 * Implementation of ``Item::doit()`` is purely dummy
 * Should not be there in the first place
@@ -373,9 +373,9 @@ Pitfall: Derived Class Destructor (1)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-destructor`
 
 * Destructors are special
 * Lets be naive ...
@@ -407,9 +407,9 @@ Pitfall: Derived Class Destructor (2)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-destructor`
 
 * But what if we call destructor via base class?
 * Much like with methods |longrightarrow| derived destructor not
@@ -434,7 +434,7 @@ The Interface, Put Dogmatically
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
 
 .. code-block:: c++
 

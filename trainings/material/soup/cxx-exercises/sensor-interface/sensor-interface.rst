@@ -11,7 +11,7 @@ Exercise: Sensor Interface
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
    * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
 
 Project Setup

@@ -14,7 +14,7 @@ Overview
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
 
 * Classic polymorpism: common base class - *interface*
 * *Virtual dispatch* per language support (this is what ``virtual`` is

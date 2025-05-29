@@ -9,7 +9,7 @@ From Concrete To Polymorphic (``class Sensor``)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
 
 Very Concrete, And Old School
 -----------------------------
@@ -82,20 +82,19 @@ Type Mismatch: ``Logger(...)``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
 
 * Pass to ``Logger`` |longrightarrow| wants ``MockSensor*``, not
   ``FileSensor*``
 * What to do?
 * Interfaces, ``virtual``
 * See
-  :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+  :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
   for the full story
 
 Create Interface: ``Sensor``
 ----------------------------
 
-* jjj begin sketch
 * **Every** interface has a ``virtual`` destructor *that does nothing*
 * *Dynamic dispatch*: object carries its type, and that type's
   ``get_value()`` is called.
@@ -111,7 +110,6 @@ Derive Concrete Implementations From ``Sensor``
 
    * :doc:`/trainings/material/soup/cxx11/oo/override`
 
-* jjj finish sketch
 * *Is-a* relationship
 * ``override`` the ``virtual = 0`` in interface (:doc:`don't ask
   </trainings/material/soup/cxx11/oo/override>`)

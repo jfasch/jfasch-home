@@ -163,15 +163,15 @@ Morning Wakeup
 Inheritance, And Polymorphism
 .............................
 
-From :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+From :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
 
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/private-protected`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/private-protected`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/polymorphism`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-destructor`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
 
 C++11: additional keywords
 

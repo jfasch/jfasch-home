@@ -8,7 +8,7 @@ Replacing ``virtual`` With ``std::variant<>`` (In Real Life)
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
    * :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
 
 .. contents::

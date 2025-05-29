@@ -26,11 +26,11 @@ Plain (Base) Class
    :caption: :download:`code/base.cpp`
    :language: c++
 
-.. .. .. plantuml::
-.. .. 
-.. ..    @startuml
-.. ..    alice -> bob: test
-.. ..    @enduml
+.. plantuml::
+
+   @startuml
+   alice -> bob: test
+   @enduml
 
 .. image:: uml-base.jpg
 

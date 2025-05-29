@@ -70,14 +70,14 @@ Day 2: Simply Getting Stuff Done
 Classic Polymorphism: Interfaces
 ................................
 
-:doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/index`
+:doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
 
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/basics`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-method`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/polymorphism`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/destructor`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/virtual-destructor`
-* :doc:`/trainings/material/soup/cxx03/100-inheritance-oo-design/interface`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/polymorphism`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-destructor`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
 
 Look over sensor hierachy in our project:
 

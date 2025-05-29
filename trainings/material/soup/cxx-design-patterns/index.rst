@@ -8,7 +8,7 @@ Introduction
 ------------
 
 * :doc:`C++ Interfaces
-  </trainings/material/soup/cxx03/100-inheritance-oo-design/index>`
+  </trainings/material/soup/cxx03/inheritance-oo-design/index>`
 
 .. toctree::
    :maxdepth: 1

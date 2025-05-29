@@ -18,7 +18,7 @@ Design- and Architectural Patterns With C++ (2022-10-24 - 2022-10-26)
 Monday
 ------
 
-* :doc:`C++ Interfaces </trainings/material/soup/cxx03/100-inheritance-oo-design/index>`
+* :doc:`C++ Interfaces </trainings/material/soup/cxx03/inheritance-oo-design/index>`
 * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
 * :doc:`/trainings/material/soup/cxx-design-patterns/singleton/singleton`
 

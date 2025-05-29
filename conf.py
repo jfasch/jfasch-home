@@ -59,7 +59,7 @@ extensions = [
     'sphinxemoji.sphinxemoji',
 
     'sphinxcontrib.libreoffice',
-#    'sphinxcontrib.plantuml',
+    'sphinxcontrib.plantuml',
 
     'opentraining.sphinxglue.dia',
 ]
@@ -71,7 +71,7 @@ intersphinx_mapping = {
 }
 todo_include_todos = True
 
-libreoffice_format = dict(latex='pdf', html='svg')
+# libreoffice_format = dict(latex='pdf', html='svg')
 
 # ablog
 if True:
