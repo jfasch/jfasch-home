@@ -22,22 +22,33 @@ Plain (Base) Class
 * A plain class ``Sensor`` with a ``get_value()`` method
 * No surprise
 
+.. plantuml::
+   :width: 100%
+   :align: left
+
+   @startuml
+
+   class Sensor {
+     + double get_value()
+   }
+   note left of Sensor::get_value
+      Implemented somehow
+   end note   
+
+   @enduml
+
+.. .. image:: uml-base.jpg
+
+
 .. literalinclude:: code/base.cpp
    :caption: :download:`code/base.cpp`
    :language: c++
 
-.. plantuml::
-
-   @startuml
-   alice -> bob: test
-   @enduml
-
-.. image:: uml-base.jpg
-
 .. code-block:: console
 
-   $ ./inher-oo-base 
-   Base::method()
+   $ ./cxx-inher-oo-base 
+   Sensor::get_value()
+   got value 36.5
 
 Inheriting (Deriving) From Base
 -------------------------------
@@ -47,29 +58,52 @@ Inheriting (Deriving) From Base
    Here we use only ``public`` inheritance. See
    :doc:`private-protected` for more.
 
-.. literalinclude:: code/inher-oo-derived-novirtual.cpp
-   :caption: :download:`code/inher-oo-derived-novirtual.cpp`
-   :language: c++
+.. plantuml::
+   :width: 100%
+   :align: left
 
-.. image:: uml-derived.jpg
+   @startuml
+
+   class Sensor {
+     + double get_value()
+   }
+
+   class MySensor {
+     + double get_value()
+   }
+
+   Sensor <|-- MySensor
+
+   @enduml
+
+.. .. image:: uml-derived.jpg
+
+.. literalinclude:: code/derived.cpp
+   :caption: :download:`code/derived.cpp`
+   :language: c++
 
 .. code-block:: console
 
-   $ ./inher-oo-derived-novirtual 
-   Base::method()
-   Derived::method()
+   $ ./cxx-inher-oo-derived 
+   Sensor::get_value()
+   Sensor value: 36.5
+   MySensor::get_value()
+   MySensor value 42.6
 
 **News**
 
-* ``Derived`` **is-a** base (though the usage of an is-a relationship
-  is not at all clear yet)
-* Given an instance of ``Base``, ``Base::method()`` is called
-* Given an instance of ``Derived``, ``Derived::method()`` is called
+* ``MySensor`` **is-a** ``Sensor`` (though the usage of an is-a
+  relationship is not at all clear yet)
+* Given an instance of ``Sensor``, ``Sensor::method()`` is called
+* Given an instance of ``MySensor``, ``MySensor::method()`` is called
 
 **Question**
 
-* When ``d`` is of type ``Derived``, but also (*is-a*) of type
-  ``Base``, is it true that I can use ``d`` as a ``Base``?
+* When ``ms`` is of type ``MySensor``, but also (*is-a*) of type
+  ``Sensor``, is it true that I can use ``ms`` as a ``Sensor``?
+
+jjj
+
 * If I use a ``Derived`` object as-a ``Base``, what is the effect of
   calling ``method()`` on it?
 

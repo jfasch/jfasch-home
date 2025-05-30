@@ -1,4 +1,6 @@
-add_executable(cxx03-inher-oo-base base.cpp)
+add_executable(cxx-inher-oo-base base.cpp)
+add_executable(cxx-inher-oo-derived derived.cpp)
+
 
 
 ADD_EXECUTABLE(inher-oo-derived-novirtual inher-oo-derived-novirtual.cpp)

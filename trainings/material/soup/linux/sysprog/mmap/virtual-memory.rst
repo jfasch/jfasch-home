@@ -10,7 +10,11 @@ Virtual Memory: Big Picture
 Big Picture
 -----------
 
-.. libreoffice:: drawings/libreoffice/virtual-memory-basics.odg
+jjj libreoffice extension dead
+
+.. .. libreoffice:: drawings/libreoffice/virtual-memory-basics.odg
+
+:download:`drawings/libreoffice/virtual-memory-basics.odg`
 
 Terms
 -----

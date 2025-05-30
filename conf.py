@@ -58,7 +58,7 @@ extensions = [
     'sphinxcontrib.images',
     'sphinxemoji.sphinxemoji',
 
-    'sphinxcontrib.libreoffice',
+#    'sphinxcontrib.libreoffice',
     'sphinxcontrib.plantuml',
 
     'opentraining.sphinxglue.dia',

@@ -23,9 +23,13 @@ Lazy Allocation, And Overcommit
          memory for all of their mappings, the system would run out of
          memory
        * (generally, they don't)
-     * .. libreoffice:: drawings/libreoffice/lazy-alloc-unpopulated.odg
-          :align: center
-          :autocrop:
+     * :download:`drawings/libreoffice/lazy-alloc-unpopulated.odg`
+
+..      * .. libreoffice:: drawings/libreoffice/lazy-alloc-unpopulated.odg
+..           :align: center
+..           :autocrop:
+
+jjj libreoffice extension dead
 
 Memory Access, And Allocation
 -----------------------------
@@ -43,9 +47,13 @@ Memory Access, And Allocation
        * |longrightarrow| No-go if one has :doc:`realtime requirements
          <realtime>`
 
-     * .. libreoffice:: drawings/libreoffice/lazy-alloc-mmu-trap.odg
-          :align: center
-          :autocrop:
+     * :download:`drawings/libreoffice/lazy-alloc-mmu-trap.odg`
+
+jjj libreoffice extension dead
+
+..      * .. libreoffice:: drawings/libreoffice/lazy-alloc-mmu-trap.odg
+..           :align: center
+..           :autocrop:
 
 Finish: Setup Mapping, Kick Process Loose
 -----------------------------------------
@@ -58,9 +66,13 @@ Finish: Setup Mapping, Kick Process Loose
          are updated
        * |longrightarrow| Process is runnable again
        * |longrightarrow| Subject to scheduling
-     * .. libreoffice:: drawings/libreoffice/lazy-alloc-allocated.odg
-          :align: center
-          :autocrop:
+     * :download:`drawings/libreoffice/lazy-alloc-allocated.odg`
+
+jjj libreoffice extension dead
+
+..      * .. libreoffice:: drawings/libreoffice/lazy-alloc-allocated.odg
+..           :align: center
+..           :autocrop:
 
 Further Notes: TLB Misses, Memory Performance
 ---------------------------------------------
