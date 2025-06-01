@@ -7,13 +7,24 @@
 .. contents::
    :local:
 
-* Finish :ref:`fh-2025-05-20--exercise-door-polymorphic`
-* cmake dependencies (-> gebaut wird nur toplevel)
-* git: rebase, stash
-* auto (mlinar)
-* brace initialization
-* polymorphic genauer -> screenplay
+Various C++/Git/CMake
+---------------------
+
 * syllabus grading nix laborklausur
+* Finish :ref:`fh-2025-05-20--exercise-door-polymorphic`
+* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+* From :doc:`/trainings/material/soup/cmake/intro/index`
+
+  * :doc:`/trainings/material/soup/cmake/intro/libraries`
+    (dependencies and visualization)
+  * :doc:`/trainings/material/soup/cmake/intro/structure` (include
+    paths)
+
+* git: rebase, stash (mlinar)
+* :doc:`/trainings/material/soup/cxx11/auto/topic` (mlinar)
+* From :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
+
+  * :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
 
 Plan
 ----
