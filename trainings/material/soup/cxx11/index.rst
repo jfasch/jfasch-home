@@ -12,9 +12,6 @@ Topics
 
    introduction/index
 
-
-
-
    delegating-ctor/topic
    strongly-typed-enums/topic
    oo/index

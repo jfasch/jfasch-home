@@ -71,6 +71,8 @@ intersphinx_mapping = {
 }
 todo_include_todos = True
 
+plantuml_output_format = 'svg_img'
+
 # libreoffice_format = dict(latex='pdf', html='svg')
 
 # ablog

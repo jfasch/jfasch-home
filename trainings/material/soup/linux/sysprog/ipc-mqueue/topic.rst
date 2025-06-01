@@ -7,7 +7,9 @@ POSIX Message Queues
 .. toctree::
    :maxdepth: 1
 
-.. libreoffice:: mqueue.odg
+jjj diagram here
+
+.. .. libreoffice:: mqueue.odg
 
 Overview
 --------

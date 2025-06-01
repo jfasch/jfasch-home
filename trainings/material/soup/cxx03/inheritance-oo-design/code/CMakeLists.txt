@@ -1,14 +1,15 @@
-add_executable(cxx-inher-oo-base base.cpp)
-add_executable(cxx-inher-oo-derived derived.cpp)
+add_subdirectory(base)
+add_subdirectory(derived)
+add_subdirectory(virtual-rudimentary)
+add_subdirectory(virtual-wrong)
+add_subdirectory(virtual-override-problem)
+add_subdirectory(virtual-override-solution)
+add_subdirectory(pure-virtual-methods)
+add_subdirectory(destructor-nonvirtual)
+add_subdirectory(destructor-virtual-nonempty)
 
 
 
-ADD_EXECUTABLE(inher-oo-derived-novirtual inher-oo-derived-novirtual.cpp)
-ADD_EXECUTABLE(inher-oo-derived-novirtual-base-conversion inher-oo-derived-novirtual-base-conversion.cpp)
-ADD_EXECUTABLE(inher-oo-derived-novirtual-base-usage inher-oo-derived-novirtual-base-usage.cpp)
-ADD_EXECUTABLE(inher-oo-derived-virtual-base-usage inher-oo-derived-virtual-base-usage.cpp)
-ADD_EXECUTABLE(inher-oo-derived-virtual-base-usage-wrong inher-oo-derived-virtual-base-usage-wrong.cpp)
-ADD_EXECUTABLE(inher-oo-derived-virtual-base-usage-obscure inher-oo-derived-virtual-base-usage-obscure.cpp)
 ADD_EXECUTABLE(inher-oo-polymorphic inher-oo-polymorphic.cpp)
 ADD_EXECUTABLE(inher-oo-polymorphic-not-pure inher-oo-polymorphic-not-pure.cpp)
 # ADD_EXECUTABLE(inher-oo-polymorphic-pure inher-oo-polymorphic-pure.cpp)         compiler error, purposely

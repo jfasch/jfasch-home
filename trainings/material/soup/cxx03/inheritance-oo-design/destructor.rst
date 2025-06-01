@@ -1,14 +1,11 @@
 .. include:: <mmlalias.txt>
 
 
-Destructors And Inheritance
-===========================
+Destructors And Interfaces
+==========================
 
 .. contents:: 
    :local:
-
-Plain (Base) Class
-------------------
 
 .. sidebar::
 
@@ -17,60 +14,70 @@ Plain (Base) Class
    * :doc:`basics`
    * :doc:`../020-data-encapsulation/ctor-dtor`
 
-* Destructors are *almost* ordinary methods
-* Except: they cannot be overridden
-* This just would not make sense |longrightarrow| resource leaks in
-  base class
-* But wait ... lets start with a plain base class
+Destructor, Straightforward Usage
+---------------------------------
 
-.. literalinclude:: code/inher-oo-dtor-base.cpp
-   :caption: :download:`code/inher-oo-dtor-base.cpp`
+* Lets say one of our sensor implementations allocates resources
+  (e.g. by using ``new``)
+* |longrightarrow| Destructor needed!
+* Called at exit from function
+
+.. literalinclude:: code/destructor-nonvirtual/sensors.h
+   :caption: :download:`code/destructor-nonvirtual/sensors.h`
+   :language: c++
+
+.. literalinclude:: code/destructor-nonvirtual/main.cpp
+   :caption: :download:`code/destructor-nonvirtual/main.cpp`
    :language: c++
 
 .. code-block:: console
 
-   $ ./inher-oo-dtor-base 
-   Base::~Base()
+  $ ./code/destructor-nonvirtual/cxx-inher-oo-destructor-straightforward 
+  MySensor::~MySensor()
 
-Derived Class, And Destructor
------------------------------
+Calling Destructor Through Base Class Pointer
+---------------------------------------------
 
-* Destroying derived class calls *all* destructors up to the innermost
-  base class
+* What if ``MySensor`` object is
 
-.. literalinclude:: code/inher-oo-dtor-derived-novirtual.cpp
-   :caption: :download:`code/inher-oo-dtor-derived-novirtual.cpp`
+  * allocated on the heap?
+  * only a ``Sensor*`` is used to represent it? (Polymorphic usage)
+  * freed using a ``Sensor*``?
+
+.. literalinclude:: code/destructor-nonvirtual/base-delete.cpp
+   :caption: :download:`code/destructor-nonvirtual/base-delete.cpp`
    :language: c++
 
 .. code-block:: console
 
-   $ ./inher-oo-dtor-derived-novirtual 
-   Derived::~Derived()
-   Base::~Base()
+  $ ./code/destructor-nonvirtual/cxx-inher-oo-destructor-base-delete
+  ... remains silent ...
 
-And Base Class Conversion?
---------------------------
+Virtual Destructor (Destructors Are Special)
+--------------------------------------------
 
-.. sidebar::
+* Obviously, *dynamic dispatch* is needed for destructor too
+* Compiler inserts code to call all destructors along the inheritance
+  chain, up to the very base
+* |longrightarrow| Cannot be ``virtual``
+* |longrightarrow| Empty ``virtual`` 
 
-   **See also**
+Solution: Empty Virtual Destructor
+----------------------------------
 
-   * :doc:`basics`
+.. sidebar:: See also
 
-* **C++ mantra: unless you know a lot you cannot write bug-free code**
-* Problem: just like *base class conversion* with ordinary
-  (non-virtual) methods
-* Which destructor is called when ``Derived`` is destroyed through a
-  ``Base*``?
-* *Spoiler*: only ``Base::~Base()``
-* (Obviously only apparent when objects are allocated from dynamic
-  memory)
+   * :doc:`/trainings/material/soup/cxx11/oo/default`
 
-.. literalinclude:: code/inher-oo-dtor-derived-novirtual-base-conversion.cpp
-   :caption: :download:`code/inher-oo-dtor-derived-novirtual-base-conversion.cpp`
+.. literalinclude:: code/destructor-virtual-nonempty/sensors.h
+   :caption: :download:`code/destructor-virtual-nonempty/sensors.h`
+   :language: c++
+
+.. literalinclude:: code/destructor-virtual-nonempty/main.cpp
+   :caption: :download:`code/destructor-virtual-nonempty/main.cpp`
    :language: c++
 
 .. code-block:: console
 
-   $ ./inher-oo-dtor-derived-novirtual-base-conversion 
-   Base::~Base()
+   $ ./code/destructor-virtual-nonempty/cxx-inher-oo-destructor-virtual-nonempty 
+   MySensor::~MySensor()

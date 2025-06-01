@@ -352,7 +352,7 @@ Pure Virtual Methods ("I Don't Know What ``class Item`` Would Do")
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
-   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/polymorphism`
+   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/pure-virtual`
 
 * Implementation of ``Item::doit()`` is purely dummy
 * Should not be there in the first place
@@ -375,7 +375,6 @@ Pitfall: Derived Class Destructor (1)
 
    * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
    * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-destructor`
 
 * Destructors are special
 * Lets be naive ...
@@ -409,7 +408,6 @@ Pitfall: Derived Class Destructor (2)
 
    * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
    * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-   * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-destructor`
 
 * But what if we call destructor via base class?
 * Much like with methods |longrightarrow| derived destructor not

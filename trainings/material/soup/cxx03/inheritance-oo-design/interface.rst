@@ -15,11 +15,9 @@ Bringing It All Together
    **See also**
 
    * :doc:`basics`
-   * :doc:`private-protected`
    * :doc:`virtual-method`
-   * :doc:`polymorphism`
+   * :doc:`pure-virtual`
    * :doc:`destructor`
-   * :doc:`virtual-destructor`
    
 * C++ has a toolset for 
 
@@ -31,9 +29,7 @@ Bringing It All Together
 
   * ``interface``, ``implements``: interfaces (C++: pure virtual) and
     their implementation
-  * ``extends``: implementation inheritance (see
-    :doc:`private-protected`)
-
+  
 * Programmer's choice how to use tools
 * |longrightarrow| very easily incomprehensible code is created
 * |longrightarrow| best practices!
@@ -41,11 +37,10 @@ Bringing It All Together
 Interfaces
 ----------
 
-.. sidebar::
-
-   **See also**
+.. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx11/oo/override`
+   * :doc:`/trainings/material/soup/cxx11/oo/default`
    * :doc:`/trainings/material/soup/cxx11/oo/final`
 
 **Bringing it all together**: an interface is defined like so ...
@@ -65,8 +60,6 @@ Interfaces
   
 * *Ideally* nothing else
 * Programmers are invited to break the rules!
-* |longrightarrow| Hybrid forms, e.g. providing little helper methods
-  in the interface's :doc:`protected interface <private-protected>`
 * |longrightarrow| Personal taste, combined with *respect for
   colleagues*
 

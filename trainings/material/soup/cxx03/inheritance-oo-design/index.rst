@@ -18,11 +18,9 @@ Topics
    :maxdepth: 1
 
    basics
-   private-protected
    virtual-method
-   polymorphism
+   pure-virtual
    destructor
-   virtual-destructor
    interface
 
 Exercises
