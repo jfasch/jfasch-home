@@ -21,6 +21,9 @@ CMake: Introduction
 	  * Trainer language is English or German
       * * **Booking**
 	* training@faschingbauer.co.at
+      * * **See also**
+	* :doc:`../advanced/index`
+      
 
 .. toctree::
    :maxdepth: 1

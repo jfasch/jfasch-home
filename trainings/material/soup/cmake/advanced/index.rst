@@ -21,6 +21,8 @@ CMake: Advanced Topics
 	  * Trainer language is English or German
       * * **Booking**
 	* training@faschingbauer.co.at
+      * * **See also**
+	* :doc:`../intro/index`
 
 Topics
 ------
