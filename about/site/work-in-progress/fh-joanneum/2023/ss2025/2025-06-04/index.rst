@@ -1,16 +1,28 @@
 .. include:: <mmlalias.txt>
 
 
-2025-06-04 (3 VO): CMake, And More C++
-======================================
+2025-06-04 (3 VO): More C++, And A Little Git
+=============================================
 
 .. contents::
    :local:
 
-Various C++/Git/CMake
----------------------
+Homework Anyone?
+----------------
 
-* Finish :ref:`fh-2025-05-20--exercise-door-polymorphic`
+Collect remaining pull requests from
+:ref:`fh-2025-05-20--exercise-door-polymorphic`
+
+C++: References, ``auto``, and Structured Binding
+-------------------------------------------------
+
+* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+* :doc:`/trainings/material/soup/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+
+Optional: ``git {rebase,stash}``, And CMake Dependencies
+--------------------------------------------------------
+
 * From :doc:`/trainings/material/soup/cmake/intro/index`
 
   * :doc:`/trainings/material/soup/cmake/intro/libraries`
@@ -18,14 +30,16 @@ Various C++/Git/CMake
   * :doc:`/trainings/material/soup/cmake/intro/structure` (include
     paths)
 
-* git: rebase, stash (mlinar)
-* Maybe ...
+* Short explanation: ``git rebase ...``
 
-  * :doc:`/trainings/material/soup/cxx11/auto/topic` (mlinar)
-  * From
-    :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
-  
-    * :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
+  .. code-block:: console
+
+     $ git branch
+     * some-modification
+     $ git rebase main
+     ... ? ...
+
+* Short explanation: ``git stash``
 
 Group Project: Potential Tasks
 ------------------------------
@@ -35,7 +49,8 @@ Group Project: Potential Tasks
 * Requirements
 
   * Burglar detection
-  * Close
+  * Close-request while open
+  * Close-request while closed
   * Close-request while opening
   * Open-request while closing
   * Safety: pressure sensor

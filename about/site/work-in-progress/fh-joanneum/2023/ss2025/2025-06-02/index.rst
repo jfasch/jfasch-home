@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-2025-06-02 (3 VO): CMake, And More C++
-======================================
+2025-06-02 (3 VO): More C++: Interfaces, The Whole Story
+========================================================
 
 .. contents::
    :local:
