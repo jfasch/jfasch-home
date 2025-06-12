@@ -18,3 +18,4 @@ Contents
    i2c/topic
    pwm/topic
    brushless-motor/topic
+   libgpiod/index

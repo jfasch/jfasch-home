@@ -1,0 +1,99 @@
+.. include:: <mmlalias.txt>
+
+
+Agenda: C++ - Overview Of New Language Features (Around C++20)
+==============================================================
+
+The audience consists of professional programmers who are not new to
+C++. As such, rather than reinforcing each topic through exercises, it
+is more important to *discuss* matters and to develop a common
+knowledge and a common sense.
+
+Throughout the training, the presentation style will be
+live-coding-by-trainer, only falling back to a traditional frontal
+presentation style where applicable.
+
+.. contents::
+   :local:
+
+News From The Library
+---------------------
+
+* Container and algorithms overview (:doc:`here
+  </trainings/material/soup/cxx03/060-stl/index>`). Show hash-table
+  based data structures ``std::unordered_set<>`` and
+  ``std::unordered_map<>`` [#make_material]_.
+* ``std::array<>`` [#make_material]_
+* Execution policies of parallel algorithms [#make_material]_
+* ``std::span<>`` [#make_material]_
+* Ranges and views (:doc:`here
+  </trainings/material/soup/cxx11/ranges/index>`)
+* ``std::fmt`` (vs ``printf()``) [#make_material]_
+* :doc:`/trainings/material/soup/cxx11/filesystem/topic`. In addition
+  to basic functionality, show how to handle UTF-8 encoded paths
+  (``std::filesystem::u8path``) [#make_material]_
+* From :doc:`/trainings/material/soup/cxx11/any-variant-optional/index`
+
+  * :doc:`/trainings/material/soup/cxx11/any-variant-optional/any`
+  * :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
+
+* ``std::tuple<>`` [#make_material]_
+
+New From The Language
+---------------------
+
+* From :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
+
+  * :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
+  * :doc:`/trainings/material/soup/cxx11/brace-initialization/implementor-view`
+  * :doc:`/trainings/material/soup/cxx11/brace-initialization/mess`
+
+* :doc:`/trainings/material/soup/cxx11/control-flow-locals/topic`
+* :doc:`/trainings/material/soup/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+* Deducing ``this`` (C++23) [#make_material]_
+* :doc:`/trainings/material/soup/cxx11/spaceship/topic`
+* From :doc:`/trainings/material/soup/cxx11/concepts/index`
+
+  * :doc:`/trainings/material/soup/cxx11/concepts/intro/topic`
+  * :doc:`/trainings/material/soup/cxx11/concepts/writing-concepts/topic`
+
+Multithreading, Memory Model, Smart Pointers, And Move Semantics
+----------------------------------------------------------------
+
+This section is a bit involved as all of this is somehow related.
+
+* From :doc:`/trainings/material/soup/cxx11/multithreading/index`
+
+  * :doc:`/trainings/material/soup/cxx11/multithreading/memory-model/topic`. This
+    briefly shows what a race condition is, and gives mutex examples.
+
+* From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
+
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
+
+* :doc:`/trainings/material/soup/cxx11/move/index`. Explain
+  :doc:`/trainings/material/soup/cxx11/perfect-forwarding/topic`, 
+  only to show that this is a different concept but looks syntactically the same.
+* :doc:`/trainings/material/soup/cxx11/multithreading/atomic-shared-ptr/topic`. 
+
+C++ Executed At Compile Time (The ``constexpr`` Engine)
+-------------------------------------------------------
+
+From :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/index`
+
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/const`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/consteval`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constinit`
+* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/if`
+
+
+.. rubric:: Footnotes
+.. [#adapt_standard] Material to be adapted to the latest standards.
+.. [#make_material] Material to be created.
+

@@ -15,6 +15,14 @@ impression of how my courses look like.
    detail/index
 
 
+C++: Overview Of New Language Features (Around C++20) (2025-07-02 - 2025-07-03)
+-------------------------------------------------------------------------------
+
+Continuing the series of 2-day C++ courses, here's another one from
+the middle of Germany.
+
+(:doc:`More ... <detail/2025-07-02--C++-2-Days/index>`)
+
 C++: What's New In C++20 (2025-05-14 - 2025-05-15)
 --------------------------------------------------
 

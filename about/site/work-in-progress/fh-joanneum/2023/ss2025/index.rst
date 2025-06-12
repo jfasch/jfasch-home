@@ -16,7 +16,7 @@ Embedded Computing 1 (STECE-2023): Summer
 
    syllabus
    material
-
+   tasks/index
 
 
 

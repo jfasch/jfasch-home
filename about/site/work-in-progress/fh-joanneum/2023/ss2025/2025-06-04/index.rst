@@ -1,48 +1,22 @@
 .. include:: <mmlalias.txt>
 
 
-2025-06-04 (3 VO): More C++, And A Little Git
-=============================================
+2025-06-04 (3 VO): More C++, Project Kickoff
+============================================
 
 .. contents::
    :local:
-
-Homework Anyone?
-----------------
-
-Collect remaining pull requests from
-:ref:`fh-2025-05-20--exercise-door-polymorphic`
 
 C++: References, ``auto``, and Structured Binding
 -------------------------------------------------
 
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
 * :doc:`/trainings/material/soup/cxx11/auto/topic`
-* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
-
-Optional: ``git {rebase,stash}``, And CMake Dependencies
---------------------------------------------------------
-
-* From :doc:`/trainings/material/soup/cmake/intro/index`
-
-  * :doc:`/trainings/material/soup/cmake/intro/libraries`
-    (dependencies and visualization)
-  * :doc:`/trainings/material/soup/cmake/intro/structure` (include
-    paths)
-
-* Short explanation: ``git rebase ...``
-
-  .. code-block:: console
-
-     $ git branch
-     * some-modification
-     $ git rebase main
-     ... ? ...
-
-* Short explanation: ``git stash``
 
 Group Project: Potential Tasks
 ------------------------------
+
+Talk about ...
 
 * Error handling: ``ASSERT_THROW()`` (see `here
   <http://google.github.io/googletest/reference/assertions.html>`__)
@@ -84,6 +58,65 @@ Group Project: Potential Tasks
 * Door state machine: convert to `State design pattern
   <https://en.wikipedia.org/wiki/State_pattern>`__
 
+
+Teams
+-----
+
+* SPS Dreamteam
+
+  1
+
+  * Feistritzer
+  * Dandler
+  * Winter
+  * Tragner
+
+* Event Detector
+
+  1
+
+  * Doan
+  * Amrhein
+  * Wettl
+  * Winkler
+
+* Motor mit 2 LEDs
+
+  2
+
+  * Seiner
+  * Hofstaetter
+  * Polivka
+  * Kristl
+
+* PushButton GPIO
+
+  2
+
+  * Sinnhofer
+  * Hasenhuettl
+  * Mlinar
+  * Wirtl
+
+* LightBarrier GPIO
+
+  2
+
+  * Fink
+  * Teichtmeister
+  * Supper
+  * Alrashid
+
+* Pressure Sensor
+
+  1
+
+  * Traussnigg
+  * Bichl
+  * Dzidzic
+  * Froihofer
+
+
 .. Immer alles mit jeweils aktuellen Versionen
 ..   der anderen. Sollen sich ruhig beschimpfen.  
 .. 
@@ -112,23 +145,6 @@ Group Project: Potential Tasks
 ..   Oder besser Filter und Ranges. Iterate over state Changes aber Switch oder Them
 ..   Generator 😁
 ..   Filter zum numerischen Transform eines oder einer Queue von Sensor Werten
-
-Links
------
-
-* `Bartosz Golaszewski: "New GPIO interface for linux user space" /
-  #LinuxPiter <https://youtu.be/BK6gOLVRKuU?si=j_cm_tiBo3uL9s57>`__
-
-  .. raw:: html
-
-     <iframe width="560" height="315" 
-             src="https://www.youtube.com/embed/BK6gOLVRKuU?si=FfNfRC9Kslhqw35-" 
-	     title="YouTube video player" 
-	     frameborder="0" 
-	     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	     referrerpolicy="strict-origin-when-cross-origin" 
-	     allowfullscreen>
-     </iframe>
 
 
 .. * Pullrequests einsammeln
