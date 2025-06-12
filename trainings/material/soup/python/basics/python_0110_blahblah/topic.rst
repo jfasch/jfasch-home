@@ -60,7 +60,7 @@ A Little Bit of History
 
 * Version 3.0 (2008)
 
-  * Incompatible in subtle ways
+  * Incompatible in many (subtle) ways
 
 Guido Van Rossum
 ----------------
