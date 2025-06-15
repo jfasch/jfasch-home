@@ -7,6 +7,10 @@ Libraries, And *Dependencies*
 .. contents::
    :local:
 
+.. sidebar:: Documentation
+
+   * `Graphviz <https://graphviz.org/>`__
+
 Libraries And Executables
 -------------------------
 

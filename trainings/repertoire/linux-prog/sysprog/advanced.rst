@@ -15,8 +15,6 @@ Linux Systems Programming: Virtual Memory, IPC, Shared Libraries
 	* Trainer language is English or German
       * * **Material**
 	* * PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-	  * S5 Slides, :doc:`Signals </trainings/material/soup/linux/sysprog/sysprog_signals/slides>`
-	  * S5 Slides, :doc:`IPC </trainings/material/soup/linux/sysprog/sysprog_ipc/slides>`
 	  * Live Hacking, :doc:`Signals </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
 	  * Live Hacking, :doc:`IPC </trainings/material/soup/linux/sysprog/sysprog_ipc/screenplay>`
       * * **Related**

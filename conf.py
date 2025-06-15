@@ -129,7 +129,7 @@ html_theme_options = {}
 
 _jf_csss = []
 
-if True: # Gaphor
+if False: # Gaphor
     extensions.append("gaphor.extensions.sphinx")
 
     # the extensions does not regognize .gaphor files which I can then
@@ -204,14 +204,14 @@ if html_theme == _ALABASTER:
         # dictionary order is preserved since 3.7 :-) prior to that we
         # would have had no chance to fix that other than changing
         # html_sidebars to a list of tuples).
-        'blog/**': [
-            'about.html',
-            'searchbox.html',
-            'navigation.html',
-            'ablog/postcard.html',
-            'ablog/tagcloud.html',
-
-        ],
+#        'blog/**': [
+#            'about.html',
+#            'searchbox.html',
+#            'navigation.html',
+#            'ablog/postcard.html',
+#            'ablog/tagcloud.html',
+#
+#        ],
         '**': [
             'about.html',
             'searchbox.html',

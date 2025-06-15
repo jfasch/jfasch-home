@@ -6,4 +6,7 @@ Posts
 * Posts
 
 .. postlist::
-   :date: %Y-%m-%d
+   :list-style: circle
+   :category: Manual
+   :format: {title}
+   :sort:
