@@ -94,6 +94,5 @@ From :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/index`
 
 
 .. rubric:: Footnotes
-.. [#adapt_standard] Material to be adapted to the latest standards.
 .. [#make_material] Material to be created.
 
