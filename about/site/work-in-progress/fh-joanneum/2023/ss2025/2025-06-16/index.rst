@@ -63,7 +63,7 @@ Dependencies
      $ loupe dependencies.png 
 
 Install ``libgpiod``, And Visualize Again
-````````````````````
+`````````````````````````````````````````
 
 * Optional Dependencies
 
