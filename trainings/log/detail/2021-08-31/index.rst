@@ -15,8 +15,7 @@ Python Basics (2021-08-31 - 2021-09-01)
 .. toctree::
    :hidden:
 
-   Jupyter Notebook (Übersicht) <notebook-wrapper>
-   Jupyter Notebook <Notebook>
+   notebook-wrapper
 
 .. contents::
    :local:

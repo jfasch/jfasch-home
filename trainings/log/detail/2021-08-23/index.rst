@@ -24,8 +24,7 @@ Python Grundlagen (2021-08-23 - 2021-08-25)
 .. toctree::
    :hidden:
 
-   Jupyter Notebook (Übersicht) <notebook-wrapper>
-   Jupyter Notebook <Notebook>
+   notebook-wrapper
    exercises/sap-cleaned
 
 .. contents::

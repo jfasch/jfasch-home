@@ -24,8 +24,7 @@ Programmierung Grundlagen (12. und 13.4.2021)
 .. toctree::
    :hidden:
 
-   Jupyter Notebook (Übersicht) <notebook-wrapper>
-   Jupyter Notebook <Notebook>
+   notebook-wrapper
 
 .. contents::
    :local:

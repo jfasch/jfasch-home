@@ -3,11 +3,6 @@
 Python Basics (2022-04-25 - 2022-04-27)
 =======================================
 
-.. toctree:: 
-   :hidden:
-
-   notebook
-
 .. sidebar:: *Training Information*
 
    **Material**

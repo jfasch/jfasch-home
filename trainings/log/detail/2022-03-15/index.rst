@@ -19,8 +19,7 @@ Python Advanced (2022-03-15 - 2022-03-17, 2022-03-31)
 .. toctree::
    :hidden:
 
-   Jupyter Notebook (Übersicht) <notebook-wrapper>
-   Jupyter Notebook <Notebook>
+   notebook-wrapper
 
 .. contents::
    :local:
