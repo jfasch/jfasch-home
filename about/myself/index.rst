@@ -24,7 +24,7 @@ Further Information
 .. toctree::
    :maxdepth: 1
        
+   tech-bg
    cv-de
-   skills-de
    projects-de
 
