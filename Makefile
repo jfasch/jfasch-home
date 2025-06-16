@@ -6,7 +6,7 @@
 SPHINXOPTS    ?= -W -T --keep-going --no-color
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
-BUILDDIR = /tmp/jfasch-home
+BUILDDIR = $HOME/tmp/jfasch-home
 
 # Put it first so that "make" without argument is like "make help".
 help:
