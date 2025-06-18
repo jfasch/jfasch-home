@@ -49,9 +49,9 @@ extensions = [
     'nbsphinx',
     'jupyter_sphinx',
 
-    'IPython.sphinxext.ipython_directive',    
+    #'IPython.sphinxext.ipython_directive',    
     # .../notebook.ipynb:: WARNING: Could not lex literal_block as "ipython3". Highlighting skipped.    
-    'IPython.sphinxext.ipython_console_highlighting',
+    #'IPython.sphinxext.ipython_console_highlighting',
 
     # ??? 'sphinxcontrib.fulltoc',
     'sphinxcontrib.programoutput',
@@ -72,6 +72,12 @@ intersphinx_mapping = {
 todo_include_todos = True
 
 plantuml_output_format = 'svg_img'
+
+# nbsphinx by default loads RequireJS, and changes config to do
+# so. sphinx then warns me that the config has changed @#$%. suppress
+# that by setting those config options to not-None.
+nbsphinx_requirejs_path = ''
+nbsphinx_requirejs_options = 666
 
 # libreoffice_format = dict(latex='pdf', html='svg')
 
