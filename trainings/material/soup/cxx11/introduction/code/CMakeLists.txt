@@ -37,6 +37,14 @@ TARGET_LINK_LIBRARIES(c++-intro-110-threads Threads::Threads)
 
 ADD_EXECUTABLE(c++-intro-120-variant c++-intro-120-variant.cpp)
 TARGET_LINK_LIBRARIES(c++-intro-120-variant Threads::Threads)
+# upgrade to gcc 15.1.1:
+# /usr/include/c++/15/bits/shared_ptr_base.h:1068:13: error: ‘((std::__shared_count<__gnu_cxx::_S_atomic>*)<unknown>)[9].std::__shared_count<>::_M_pi’ may be used uninitialized [-Werror=maybe-uninitialized]
+#  1068 |         if (_M_pi != nullptr)
+#       |             ^~~~~
+# /usr/include/c++/15/bits/std_function.h:245:11: warning: ‘((std::_Function_base*)((char*)<unknown> + 16))[2].std::_Function_base::_M_manager’ may be used uninitialized [-Wmaybe-uninitialized]
+#   245 |       if (_M_manager)
+#       |           ^~~~~~~~~~
+target_compile_options(c++-intro-120-variant PRIVATE "-Wno-maybe-uninitialized")
 
 ADD_EXECUTABLE(c++-intro-130-class-nocopy c++-intro-130-class-nocopy.cpp)
 TARGET_LINK_LIBRARIES(c++-intro-130-class-nocopy Threads::Threads)

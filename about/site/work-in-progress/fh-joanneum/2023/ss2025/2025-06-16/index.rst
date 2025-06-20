@@ -10,6 +10,8 @@
 CMake
 -----
 
+.. image:: cmake-dependencies.jpg
+
 Dependencies
 ............
 

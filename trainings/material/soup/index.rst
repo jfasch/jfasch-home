@@ -7,11 +7,11 @@ Slide Material
    linux/index
    python/index
    c/index
-   cxx-todo/index
-   cxx/index
    cxx03/index
    cxx11/index
    cxx-design-patterns/index
+   cxx-todo/index
+   cxx/index
    cxx-code/index
    cxx-exercises/index
    cmake/index
