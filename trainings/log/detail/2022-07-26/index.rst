@@ -183,7 +183,7 @@ From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
 
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction-livehack`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-unique` (
   `Solution on Github: bag-unique.h
   <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-unique.h>`__)

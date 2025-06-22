@@ -190,7 +190,7 @@ Day 3
 Smart Pointers (Continued)
 ..........................
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 * Morphed our "registry" universe to use those ...
 
   * `sensors-main.cpp

@@ -46,7 +46,7 @@ Memory Management
 -----------------
 
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
   (and a little :doc:`moving
   </trainings/material/soup/cxx11/move/index>`)
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`

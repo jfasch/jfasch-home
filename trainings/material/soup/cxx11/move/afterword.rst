@@ -14,7 +14,7 @@ Uses In The Standard Library
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+   * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
    * :doc:`/trainings/material/soup/cxx/cxx_stl_container_intro/topic`
    
    **Documentation**
@@ -35,7 +35,7 @@ Uses In The Standard Library
 
 * Utility classes
 
-  * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
   * Was not possible in C++ pre 11
   * |longrightarrow| `std::auto_ptr <https://en.cppreference.com/w/cpp/memory/auto_ptr>`__ was the
      closest possible attempt (error prone though)

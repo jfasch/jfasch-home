@@ -4,7 +4,7 @@
 
 static void foo(std::unique_ptr<BigData> d)            // <-- pass by copy
 {
-    // ... do domething with p
+    // ... do something with p
 }
 
 TEST(unique_ptr_suite, pass_by_copy_explicit_move)

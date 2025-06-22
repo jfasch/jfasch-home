@@ -53,8 +53,10 @@ Creating ``std::unique_ptr`` Instances
    :language: c++
 
 * More condensed usage: ``std::make_unique<T>()``
-* Convenience function that *forwards* its argument to ``T``'s
-  constructor
+* Convenience function that
+
+  * allocates ``T``, using ``new``
+  * *forwards* its arguments to ``T``'s constructor
 
 .. literalinclude:: code/more_condensed_creation.cpp
    :caption: :download:`code/more_condensed_creation.cpp`
@@ -113,8 +115,8 @@ Passing Temporary Objects Are *Moved* Automatically
 * |longrightarrow| *Move* it into the function's parameter (see
   :doc:`here </trainings/material/soup/cxx11/move/index>`)
 
-.. literalinclude:: code/pass_by_copy_inhibited.cpp
-   :caption: :download:`code/pass_by_copy_inhibited.cpp`
+.. literalinclude:: code/temporary_object_moved.cpp
+   :caption: :download:`code/temporary_object_moved.cpp`
    :language: c++
 
 ``std::move()``: Moving Objects Explicitly
@@ -178,4 +180,18 @@ Deallocation *Before* Pointer Destruction: ``.reset()``
 
 .. literalinclude:: code/reset_exchange.cpp
    :caption: :download:`code/reset_exchange.cpp`
+   :language: c++
+
+Custom Deleter
+--------------
+
+* Additional template parameter ``Deleter``
+
+  * Callable
+  * Signature ``void(T*)``
+
+* Additional constructor parameter of that type
+
+.. literalinclude:: code/custom_deleter.cpp
+   :caption: :download:`code/custom_deleter.cpp`
    :language: c++

@@ -483,7 +483,7 @@ Memory Management: Smart Pointers (Showing The Options)
 * Explain
   :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
 * Explain
-  :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+  :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 
 .. _cxx11-overview-unique-ptr:
 

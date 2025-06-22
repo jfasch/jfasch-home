@@ -273,7 +273,7 @@ Morning Wakeup
 Smart Pointers: ``std::unique_ptr<>``
 .....................................
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 
 Resource Management: Move
 .........................

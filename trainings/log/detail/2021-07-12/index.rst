@@ -311,7 +311,7 @@ Day 5
   recource management and smart pointers.
 * Pointer classes ("smart pointers")
 
-  * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 
     Although ``std::unique_ptr<>`` is the simpler of the two in what
     it does, its usage is more involved. Ownership transfer (this is
@@ -337,7 +337,7 @@ Day X
 Smart Pointers, Recap
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 
   .. image:: wacom-sketches/ptr-unique.png
      :scale: 50%
