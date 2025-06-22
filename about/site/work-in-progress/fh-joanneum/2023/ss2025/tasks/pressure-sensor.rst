@@ -10,6 +10,11 @@ Pressure Sensor
    * `BMP280
      <https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp280/>`__
 
+Meetings/News
+-------------
+
+* 2025-06-17: :ref:`2025-06-17-pressure-sensor`
+
 Goal
 ----
 

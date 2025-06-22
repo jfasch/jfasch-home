@@ -4,6 +4,11 @@ SPS Shell
 .. contents::
    :local:
 
+Meetings/News
+-------------
+
+* 2025-06-17: :ref:`2025-06-17-sps-dreamteam`
+
 Goal
 ----
 

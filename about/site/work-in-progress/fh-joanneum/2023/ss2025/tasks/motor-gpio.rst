@@ -1,12 +1,17 @@
 Motor/GPIO (Simulating Motor With LEDs)
 =======================================
 
-.. contents;:
+.. contents::
    :local:
 
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/linux/hardware/libgpiod/index`
+
+Meetings/News
+-------------
+
+* 2025-06-17: :ref:`2025-06-17-libgpiod-fiasco`
 
 Goal
 ----
