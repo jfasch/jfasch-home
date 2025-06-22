@@ -251,7 +251,7 @@ Resource Management: Copy
 Smart Pointers: ``std::shared_ptr<>``
 .....................................
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
 
 Day 5

@@ -45,7 +45,7 @@ repeat ...
 Memory Management
 -----------------
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
   (and a little :doc:`moving
   </trainings/material/soup/cxx11/move/index>`)

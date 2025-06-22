@@ -11,8 +11,9 @@ Topics
    :maxdepth: 1
 
    introduction/topic
-   introduction-livehack
    uniqueptr
    sharedptr
    weakptr
    040-closing-words/topic
+
+   introduction-livehack

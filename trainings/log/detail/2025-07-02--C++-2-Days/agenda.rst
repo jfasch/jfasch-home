@@ -70,7 +70,7 @@ This section is a bit involved as all of this is somehow related.
 
 * From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
 
-  * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
   * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
   * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
   * :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`

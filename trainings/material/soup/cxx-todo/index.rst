@@ -124,27 +124,6 @@ Smart Pointers
 * https://github.com/jfasch/2021-12-06/blob/main/live-hacking/unique-ptr.cpp
 * https://github.com/jfasch/2021-12-06/blob/main/live-hacking/shared-ptr.cpp
 
-UserDB Exercise
----------------
-
-* Add boost test
-* Define requirement: add interface ``UserDB``, let ``UserDB_Vector``
-  derive from it.
-* Define requirement: ``UserDB_Map``
-
-Miscellaneous
--------------
-
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`: 
-  bring ``swap()`` example from livehacking
-* Write down ``const`` exercise ``User``: how to transform pointers
-  into references.
-
-Complete Transcription of C++11
-...............................
-
-Many of the chapters from the LaTex deck haven't yet been transcribed.
-
 Dependencies
 ............
 
@@ -156,7 +135,7 @@ Dependencies
     * ``explicit``. See `here
       <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/explicit.cpp>`__
       for a live-hacked explanation.
-    * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction`
+    * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
     * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
 
       Bring `this
