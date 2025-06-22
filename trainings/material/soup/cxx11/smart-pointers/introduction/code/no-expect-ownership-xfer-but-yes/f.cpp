@@ -2,7 +2,7 @@
 
 double f()
 {
-    BigData* data = new BigData{1.2, 2.3, 3.4};
+    BigData* data = new BigData(100, 'a');
     double answer = crunch(data);                      // <-- unexpectedly frees data
     delete data;                                       // <-- DOUBLE FREE!
     return answer;

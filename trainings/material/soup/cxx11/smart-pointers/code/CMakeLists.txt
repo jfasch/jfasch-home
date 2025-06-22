@@ -15,17 +15,6 @@ ADD_EXECUTABLE(
   handwritten-smart-ptr-assignment.cpp
   
 
-  unique-ptr-basic.cpp
-  # unique-ptr-ownership-error.cpp
-  unique-ptr-ownership-move.cpp
-  unique-ptr-verbose-ctor.cpp
-  unique-ptr-make-unique.cpp
-  unique-ptr-implicit-ownership-transfer.cpp
-  unique-ptr-release-reset.cpp
-
-  unique-ptr-all.cpp
-
-
   shared-ptr-basic.cpp
   shared-ptr-basic-make_shared.cpp
   shared-ptr-cyclic.cpp

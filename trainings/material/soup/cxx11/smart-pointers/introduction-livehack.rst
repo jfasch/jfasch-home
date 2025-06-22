@@ -133,8 +133,8 @@ Stop!!!
 
    **See also**
 
-   * :doc:`uniqueptr`
+   * :doc:`unique-ptr/topic`
 
 * But lets stop here ...
-* ... and see what :doc:`uniqueptr` (and C++11) can do
+* ... and see what :doc:`unique-ptr/topic` (and C++11) can do
 

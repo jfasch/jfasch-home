@@ -2,7 +2,7 @@
 
 double f()
 {
-    auto data = new BigData{1.2, 2.3, 3.4};
+    auto data = new BigData(100, 'a');
     double answer = crunch(data);                      // <-- throws -> MEMORY LEAK!
     delete data;
     return answer;

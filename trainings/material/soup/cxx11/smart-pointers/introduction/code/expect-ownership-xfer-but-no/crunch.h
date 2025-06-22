@@ -1,11 +1,18 @@
 #pragma once
 
-#include <vector>
+#include <cstring>
 
 struct BigData
 {
-    BigData(std::initializer_list<double> numbers) : numbers{numbers} {}
-    std::vector<double> numbers;
+    BigData(unsigned size, char content) : _data(new char[size])
+    {
+        memset(_data, content, size);
+    }
+    ~BigData()
+    {
+        delete[] _data;
+    }
+    char* _data;
 };
 
 double crunch(BigData*);

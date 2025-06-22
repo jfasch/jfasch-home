@@ -136,7 +136,7 @@ Dependencies
       <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/explicit.cpp>`__
       for a live-hacked explanation.
     * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-    * :doc:`/trainings/material/soup/cxx11/smart-pointers/uniqueptr`
+    * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 
       Bring `this
       <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/unique_ptr.cpp>`__

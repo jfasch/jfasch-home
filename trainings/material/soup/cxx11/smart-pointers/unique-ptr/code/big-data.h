@@ -1,10 +1,10 @@
 #pragma once
 
-#include <optional>
 #include <cstring>
 
-struct BigData
+class BigData
 {
+public:
     BigData(unsigned size, char content) : _data(new char[size])
     {
         memset(_data, content, size);
@@ -13,7 +13,9 @@ struct BigData
     {
         delete[] _data;
     }
+
+    char at(unsigned i) const { return _data[i]; }
+
+private:
     char* _data;
 };
-
-std::optional<double> crunch(BigData*);

@@ -11,7 +11,7 @@ Topics
    :maxdepth: 1
 
    introduction/topic
-   uniqueptr
+   unique-ptr/topic
    sharedptr
    weakptr
    040-closing-words/topic
