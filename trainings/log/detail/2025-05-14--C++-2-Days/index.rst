@@ -95,7 +95,7 @@ Multithreading (And Related Topics)
 * :doc:`/trainings/material/soup/cxx11/multithreading/atomic-shared-ptr/topic`. 
 
   * Discussed why a :doc:`"normal" shared pointer
-    </trainings/material/soup/cxx11/smart-pointers/sharedptr>` is only
+    </trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic>` is only
     half threadsafe
   * How to use it safely pre 20, to get to the solution - atomic
     shared pointer. 

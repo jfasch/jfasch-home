@@ -324,7 +324,7 @@ Day 5
     Live-hacked that `here
     <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/unique_ptr.cpp>`__.
 
-  * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+  * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 
     Didn't go through it in great detail (time was over
     anyway). Shared ownership, though, is easier explained than
@@ -342,7 +342,7 @@ Smart Pointers, Recap
   .. image:: wacom-sketches/ptr-unique.png
      :scale: 50%
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 
   .. image:: wacom-sketches/ptr-shared.png
      :scale: 50%

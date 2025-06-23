@@ -16,6 +16,14 @@ Grading
 Project: Standup
 ----------------
 
-* :doc:`../2025-06-17/index`
-* Clarify tasks
-* Followup tasks
+.. sidebar:: See also
+
+   * :doc:`../2025-06-17/index`
+
+Followup Tasks
+..............
+
+* :doc:`Motor/LED
+  </about/site/work-in-progress/fh-joanneum/2023/ss2025/tasks/motor-gpio>`
+  guys to continue with a real motor. See
+  :doc:`/about/site/work-in-progress/fh-joanneum/2023/ss2025/tasks/motor-stepper`.

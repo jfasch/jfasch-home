@@ -481,7 +481,7 @@ Memory Management: Smart Pointers (Showing The Options)
        delete it->second;
 
 * Explain
-  :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+  :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 * Explain
   :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 
@@ -531,7 +531,7 @@ Memory Management: ``std::shared_ptr<>`` In TodoList
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+   * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
 
 * I do want :doc:`brace initialization

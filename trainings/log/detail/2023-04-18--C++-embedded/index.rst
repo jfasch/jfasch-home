@@ -181,7 +181,7 @@ From
 Smart Pointers
 ..............
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 * With this, fix memleak
 
 Day 3

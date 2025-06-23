@@ -7,6 +7,7 @@ The Door Project: Tasks
    pushbutton-gpio
    lightbarrier-gpio
    motor-gpio
+   motor-stepper
    sps-shell
    event-detector
    pressure-sensor

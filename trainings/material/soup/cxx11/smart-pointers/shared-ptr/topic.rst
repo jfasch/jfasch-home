@@ -7,8 +7,8 @@
 .. contents::
    :local:
 
-Spirit: Not Unique, But Shared (i.e. *Reference Counted*)
----------------------------------------------------------
+The Spirit Of ``std::shared_ptr``
+---------------------------------
 
 .. sidebar::
 
@@ -19,27 +19,99 @@ Spirit: Not Unique, But Shared (i.e. *Reference Counted*)
    * `std::make_shared
      <https://en.cppreference.com/w/cpp/memory/shared_ptr/make_shared>`__
 
-**Ownership is not always clear ...**
+* *Shared* ownership: multiple pointer objects reference one object
+  that is shared
+* Pointer copy creates one more reference
 
-* Rare occasions where shared ownership is the right design choice
-* ... laziness, mostly
-* If in doubt, say ``std::shared_ptr``
+  * |longrightarrow| Increases *reference count*
 
-.. list-table::
-   :align: left
+* Last remaining reference is responsible for deallocation
 
-   * * .. code-block:: c++
+Notes About Thread Safety
+-------------------------
 
-          #include <memory>
-          std::shared_ptr<MyClass> ptr(
-              new MyClass(666));
+.. sidebar:: See also
 
-     * 
+   * :doc:`/trainings/material/soup/cxx11/multithreading/atomic-shared-ptr/topic`
+   * :doc:`/trainings/material/soup/cxx11/multithreading/memory-model/topic`
 
-       .. image:: sharedptr.dia
+* **Reference count is thread-safe**
+* |longrightarrow| Creating new references (i.e. copying pointer
+  objects) is a little more expensive than a simple integer increment
+* **Pointer object itself is not thread-safe**
+* |longrightarrow| Concurrent writes lead to *undefined behavior*
+* See
+  :doc:`/trainings/material/soup/cxx11/multithreading/atomic-shared-ptr/topic`
+  for a "workaround"
 
-Methods
--------
+Creating ``std::shared_ptr`` Instances
+--------------------------------------
+
+.. sidebar:: See also
+
+   * :doc:`../unique-ptr/topic`
+
+* Raw pointer at the basis
+* ``std::shared_ptr<>`` wrapped around
+* |longrightarrow| "Control block" created: *reference count*
+* Reference count initialized to *one*
+
+.. literalinclude:: code/basic_creation.cpp
+   :caption: :download:`code/basic_creation.cpp`
+   :language: c++
+
+.. image:: sharedptr.dia
+   :scale: 50%
+
+* More condensed usage (just like ``std::unique_ptr<>``)
+* Convenience function: allocates object of type T, and forward
+  arguments to constructor
+
+.. literalinclude:: code/more_condensed_creation.cpp
+   :caption: :download:`code/more_condensed_creation.cpp`
+   :language: c++
+
+Copying ``std::shared_ptr`` Instances
+-------------------------------------
+
+* **Copying** is what shared pointers are there for
+* Each pointer copy adds one reference to the object
+
+.. literalinclude:: code/copy.cpp
+   :caption: :download:`code/copy.cpp`
+   :language: c++
+
+.. image:: sharedptr-copy.dia
+   :scale: 50%
+
+Object Lifetime ("Garbage Collection")
+--------------------------------------
+
+**How long does the pointed-to object live?**
+
+* Reference count is used to track shared ownership
+* When reference count drops to zero, the object is *not referenced
+  anymore*
+* |longrightarrow| deallocated
+
+**Examining the reference count**
+
+* The zero-transition of the reference count *is the only event in the
+  object lifecycle that can be counted on*
+* **Everything else is dangerous when the object is shared across
+  threads**
+
+.. literalinclude:: code/refcount_if.cpp
+   :caption: :download:`code/refcount_if.cpp`
+   :language: c++
+
+
+
+
+
+
+jjj Methods
+-----------
 
 Object of type ``std::shared_ptr`` behave like pointers in any respect
 (``->``, ``*``, copy, ...), except that they have methods:
@@ -72,76 +144,9 @@ Object of type ``std::shared_ptr`` behave like pointers in any respect
    * * ``get()``
      * Pointer to currently managed object
 
-``std::shared_ptr``: Copy
----------------------------
 
-**Copying** is what shared pointer are there for
-
-.. list-table:: 
-   :align: left
-
-   * * .. code-block:: c++
-
-          shared_ptr<MyClass> ptr(
-              new MyClass(666));
-          shared_ptr<MyClass> copy1 = ptr;
-          shared_ptr<MyClass> copy2 = copy1;
-
-     * 
-
-       .. image:: sharedptr-copy.dia
-
-``std::shared_ptr`` vs. ``std::unique_ptr``
------------------------------------------------
-
-How do ``std::shared_ptr`` and ``std::unique_ptr`` compare?
-
-* ``std::unique_ptr``
-
-  * Small - size of a pointer
-  * Operations compile away entirely
-  * No excuse *not* to use it
-  * Have to think more though
-
-* ``std::shared_ptr``
-
-  * Size of two pointers
-  * Copying manipulates the resource count. *Expensive: atomic
-    instructions - memory barriers*
-  * Copying manipulates non-adjacent memory locations
-  * Usage is very easy (no ``std::move`` and such)
-
-  .. attention::
-
-     * Cyclic references possible! 
-     * No *garbage collection* as in Java
-     * |longrightarrow| Leak!!
-
-     See below ...
-
-``std::shared_ptr``: Object Lifetime
-------------------------------------
-
-**How long does the pointed-to object live?**
-
-* Reference count is used to track shared ownership
-* When reference count drops to zero, the object is *not referenced anymore*
-* |longrightarrow| deleted
-
-**Examining the reference count**
-
-.. code-block:: c++
-
-   shared_ptr<MyClass> ptr(new MyClass(666));
-   auto refcount = ptr->use_count();
-
-.. attention::
-
-   Do not make any decisions based on it - at least not when the
-   pointer is shared among multiple threads!
-
-``std::shared_ptr``: Juggling
--------------------------------
+jjj ``std::shared_ptr``: Juggling
+---------------------------------
 
 .. list-table::
    :align: left
@@ -167,8 +172,8 @@ How do ``std::shared_ptr`` and ``std::unique_ptr`` compare?
 
      * * Makes an empty pointer the initial reference
 
-Demo: Basic Usage
------------------
+jjj Demo: Basic Usage
+---------------------
 
 .. literalinclude:: code/shared-ptr-basic.cpp
    :caption: :download:`code/shared-ptr-basic.cpp`
@@ -176,15 +181,15 @@ Demo: Basic Usage
 
 .. _make_shared:
 
-Demo: ``std::make_shared``
---------------------------
+jjj Demo: ``std::make_shared``
+------------------------------
 
 .. literalinclude:: code/shared-ptr-basic-make_shared.cpp
    :caption: :download:`code/shared-ptr-basic-make_shared.cpp`
    :language: c++
 
-Demo: Cyclic References
------------------------
+jjj Demo: Cyclic References
+---------------------------
 
 .. literalinclude:: code/shared-ptr-cyclic.cpp
    :caption: :download:`code/shared-ptr-cyclic.cpp`

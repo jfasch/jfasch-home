@@ -49,7 +49,7 @@ Memory Management
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
   (and a little :doc:`moving
   </trainings/material/soup/cxx11/move/index>`)
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr` (optional)
 
 Lambdas

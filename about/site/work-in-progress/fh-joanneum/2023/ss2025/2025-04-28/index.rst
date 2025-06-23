@@ -30,7 +30,6 @@ From :doc:`/trainings/material/soup/linux/basics/shell/index`
 * :doc:`/trainings/material/soup/linux/basics/shell/file_dir_create_rm`
 * :doc:`/trainings/material/soup/linux/basics/shell/cp`
 * :doc:`/trainings/material/soup/linux/basics/shell/mv`
-* :doc:`/trainings/material/soup/linux/basics/shell/links`
 * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
 
 Permissions

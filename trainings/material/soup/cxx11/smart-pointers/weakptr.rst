@@ -10,7 +10,7 @@
 Spirit: Borrowed Reference That Could Be Invalid
 ------------------------------------------------
 
-* Tied to a :doc:`shared pointer <sharedptr>`
+* Tied to a :doc:`shared pointer <shared-ptr/topic>`
 * Lightweight reference: shared pointer might become invalid (because
   all references are dropped)
 * |longrightarrow| ask before use!

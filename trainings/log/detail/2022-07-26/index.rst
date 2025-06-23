@@ -187,7 +187,7 @@ From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-unique` (
   `Solution on Github: bag-unique.h
   <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-unique.h>`__)
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`

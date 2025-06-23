@@ -12,7 +12,7 @@ Topics
 
    introduction/topic
    unique-ptr/topic
-   sharedptr
+   shared-ptr/topic
    weakptr
    040-closing-words/topic
 

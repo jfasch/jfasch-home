@@ -1,7 +1,7 @@
 add_executable(
   c++11-unique-ptr-suite
 
-  basic_leak_prevention.cpp
+  basic_creation.cpp
   more_condensed_creation.cpp
   # copy_inhibited.cpp
   # pass_by_copy_inhibited.cpp

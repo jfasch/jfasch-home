@@ -157,7 +157,7 @@ From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction-livehack`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-unique`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
 * :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`

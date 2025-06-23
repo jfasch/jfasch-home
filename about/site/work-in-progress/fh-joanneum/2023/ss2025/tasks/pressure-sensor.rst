@@ -15,6 +15,11 @@ Meetings/News
 
 * 2025-06-17: :ref:`2025-06-17-pressure-sensor`
 
+  Split group into "hardware specifics" (I2C sensor), and a compute
+  events "high pressure"/"low pressure" based on something that sound
+  like hysteresis. But see the :ref:`meeting minutes
+  <2025-06-17-pressure-sensor>`.
+
 Goal
 ----
 

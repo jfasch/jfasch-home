@@ -142,7 +142,7 @@ Dependencies
       <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/unique_ptr.cpp>`__
       as a screenplay.
 
-    * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+    * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
     * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
 
 Exercise series

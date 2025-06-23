@@ -25,3 +25,32 @@ Shared Pointers: Closing Words
 
 * Don't waste a thought on ownership, simply write it
 * Always use ``std::shared_ptr<>``
+
+jjj move to closing words: ``std::shared_ptr`` vs. ``std::unique_ptr``
+----------------------------------------------------------------------
+
+How do ``std::shared_ptr`` and ``std::unique_ptr`` compare?
+
+* ``std::unique_ptr``
+
+  * Small - size of a pointer
+  * Operations compile away entirely
+  * No excuse *not* to use it
+  * Have to think more though
+
+* ``std::shared_ptr``
+
+  * Size of two pointers
+  * Copying manipulates the resource count. *Expensive: atomic
+    instructions - memory barriers*
+  * Copying manipulates non-adjacent memory locations
+  * Usage is very easy (no ``std::move`` and such)
+
+  .. attention::
+
+     * Cyclic references possible! 
+     * No *garbage collection* as in Java
+     * |longrightarrow| Leak!!
+
+     See below ...
+

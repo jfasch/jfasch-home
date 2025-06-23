@@ -15,9 +15,6 @@ ADD_EXECUTABLE(
   handwritten-smart-ptr-assignment.cpp
   
 
-  shared-ptr-basic.cpp
-  shared-ptr-basic-make_shared.cpp
-  shared-ptr-cyclic.cpp
   shared-ptr-all.cpp
 
   weak-ptr-basic.cpp

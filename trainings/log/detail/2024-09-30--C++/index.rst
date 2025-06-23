@@ -252,7 +252,7 @@ Smart Pointers: ``std::shared_ptr<>``
 .....................................
 
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 
 Day 5
 -----

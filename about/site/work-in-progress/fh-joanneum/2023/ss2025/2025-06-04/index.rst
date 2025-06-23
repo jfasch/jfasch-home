@@ -7,8 +7,8 @@
 .. contents::
    :local:
 
-C++: References, ``auto``, and Structured Binding
--------------------------------------------------
+C++: References, ``auto``
+-------------------------
 
 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
 * :doc:`/trainings/material/soup/cxx11/auto/topic`

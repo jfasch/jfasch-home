@@ -61,4 +61,4 @@ What if pointers could be *objects*?
 Two pointer classes available
 
 * :doc:`../unique-ptr/topic`
-* :doc:`../sharedptr`
+* :doc:`../shared-ptr/topic`

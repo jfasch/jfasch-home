@@ -23,16 +23,16 @@ The Spirit Of ``std::unique_ptr``
      <https://en.cppreference.com/w/cpp/memory/make_unique>`__
 
 * *Unique* resource ownership: only one pointer object is responsible
-  for deleting the referenced object
+  for deallocation of the referenced object
 * No simple pointer *copy* allowed
 
   * |longrightarrow| would create second reference
 
-* Explicit ownership transfer needed
-* Only implicit when compiler can prove that no harm is done
+* Explicit ownership transfer needed |longrightarrow| *Move-only*
+* Implicit ownership transfer only when compiler can prove that no
+  harm is done
 * ``unique_ptr`` is only one (though important) user of a new language
-  feature:
-  :doc:`/trainings/material/soup/cxx11/move/index`
+  feature: :doc:`/trainings/material/soup/cxx11/move/index`
 
 Creating ``std::unique_ptr`` Instances
 --------------------------------------
@@ -48,8 +48,8 @@ Creating ``std::unique_ptr`` Instances
 * ``std::unique_ptr<>`` wrapped around
 * |longrightarrow| controlled/deterministic deallocation
 
-.. literalinclude:: code/basic_leak_prevention.cpp
-   :caption: :download:`code/basic_leak_prevention.cpp`
+.. literalinclude:: code/basic_creation.cpp
+   :caption: :download:`code/basic_creation.cpp`
    :language: c++
 
 * More condensed usage: ``std::make_unique<T>()``
@@ -62,8 +62,8 @@ Creating ``std::unique_ptr`` Instances
    :caption: :download:`code/more_condensed_creation.cpp`
    :language: c++
 
-Inhibited: Copying Instances
-----------------------------
+Inhibited: Copying ``std::unique_ptr`` Instances
+------------------------------------------------
 
 .. sidebar:: See also
 

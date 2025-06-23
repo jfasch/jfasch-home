@@ -16,7 +16,7 @@ Safe: Control Block Modification
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/sharedptr`
+   * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
 
 .. literalinclude:: code/safe.cpp
    :caption: :download:`code/safe.cpp`
