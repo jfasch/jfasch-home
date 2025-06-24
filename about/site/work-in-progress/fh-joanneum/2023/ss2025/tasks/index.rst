@@ -11,3 +11,4 @@ The Door Project: Tasks
    sps-shell
    event-detector
    pressure-sensor
+   input-output-switch
