@@ -110,8 +110,8 @@ Smart Pointers, And Move Semantics
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-   * (Not covered) :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
+   * (Not covered) :doc:`/trainings/material/soup/cxx11/smart-pointers/weak-ptr/topic`
+   * :doc:`/trainings/material/soup/cxx11/smart-pointers/closing-words/topic`
 
    **Move semantics, and Rvalue references**
 

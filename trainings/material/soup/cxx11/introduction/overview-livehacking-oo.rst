@@ -532,7 +532,7 @@ Memory Management: ``std::shared_ptr<>`` In TodoList
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
+   * :doc:`/trainings/material/soup/cxx11/smart-pointers/closing-words/topic`
 
 * I do want :doc:`brace initialization
   </trainings/material/soup/cxx11/brace-initialization/index>`

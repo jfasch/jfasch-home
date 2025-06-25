@@ -29,6 +29,7 @@ add_subdirectory(auto)
 add_subdirectory(control-flow-locals)
 add_subdirectory(structured-binding)
 add_subdirectory(any-variant-optional)
+add_subdirectory(deducing-this)
 
 
 add_subdirectory(scenarios/concrete-to-polymorphic)

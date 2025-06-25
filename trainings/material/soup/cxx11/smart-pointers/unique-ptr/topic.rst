@@ -34,6 +34,8 @@ The Spirit Of ``std::unique_ptr``
 * ``unique_ptr`` is only one (though important) user of a new language
   feature: :doc:`/trainings/material/soup/cxx11/move/index`
 
+.. _cxx11_unique_ptr_create:
+
 Creating ``std::unique_ptr`` Instances
 --------------------------------------
 
@@ -43,6 +45,10 @@ Creating ``std::unique_ptr`` Instances
      <https://en.cppreference.com/w/cpp/memory/unique_ptr.html>`__
    * `std::make_unique
      <https://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique.html>`__
+
+.. sidebar:: See also
+
+   * :ref:`cxx11_shared_ptr_create`
 
 * Raw pointer at the basis
 * ``std::unique_ptr<>`` wrapped around
@@ -142,8 +148,14 @@ Object Access: ``std::unique_ptr`` Behaves Like A Pointer
    :caption: :download:`code/is_a_pointer.cpp`
    :language: c++
 
+.. _cxx11_unique_ptr_raw_access_get:
+
 Raw Pointer Access: ``.get()``
 ------------------------------
+
+.. sidebar:: See also
+
+   * :ref:`cxx11_shared_ptr_raw_access_get`
 
 * Not the plan
 * Sometimes needed though
@@ -164,8 +176,14 @@ Re-Gaining Control: ``.release()``
    :caption: :download:`code/raw_pointer_release.cpp`
    :language: c++
 
+.. _cxx11_unique_ptr_reset:
+
 Deallocation *Before* Pointer Destruction: ``.reset()``
 -------------------------------------------------------
+
+.. sidebar:: See also
+
+   * :ref:`cxx11_shared_ptr_reset`
 
 * Nulling out pointer object
 * With all consequences: pointed-to object deallocated
@@ -182,8 +200,14 @@ Deallocation *Before* Pointer Destruction: ``.reset()``
    :caption: :download:`code/reset_exchange.cpp`
    :language: c++
 
+.. _cxx11_unique_ptr_custom_deleter:
+
 Custom Deleter
 --------------
+
+.. sidebar:: See also
+
+   * :ref:`cxx11_shared_ptr_custom_deleter`
 
 * Additional template parameter ``Deleter``
 

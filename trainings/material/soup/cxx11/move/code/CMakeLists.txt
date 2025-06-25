@@ -9,6 +9,15 @@ ADD_EXECUTABLE(
 
   # person-suite-bogus.cpp
   person-suite.cpp
+
+  handwritten-smart-ptr-basic.cpp
+  handwritten-smart-ptr-copy-bad.cpp  
+  handwritten-smart-ptr-copy-autoptr-style.cpp
+  
+
+  handwritten-smart-ptr-explicit-move.cpp
+  handwritten-smart-ptr-return-from-function.cpp
+  handwritten-smart-ptr-assignment.cpp
 )
 
 TARGET_LINK_LIBRARIES(c++11-string-move-suite gtest_main)

@@ -143,7 +143,7 @@ Dependencies
       as a screenplay.
 
     * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-    * :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
+    * :doc:`/trainings/material/soup/cxx11/smart-pointers/closing-words/topic`
 
 Exercise series
 ...............

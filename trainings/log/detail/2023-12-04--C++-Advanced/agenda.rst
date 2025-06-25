@@ -91,11 +91,10 @@ Moving: Usage
 From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
 
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction-livehack`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
 * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/weakptr`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/040-closing-words/topic`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/weak-ptr/topic`
+* :doc:`/trainings/material/soup/cxx11/smart-pointers/closing-words/topic`
 
 Moving: Implementation
 ......................

@@ -13,7 +13,5 @@ Topics
    introduction/topic
    unique-ptr/topic
    shared-ptr/topic
-   weakptr
-   040-closing-words/topic
-
-   introduction-livehack
+   weak-ptr/topic
+   closing-words/topic

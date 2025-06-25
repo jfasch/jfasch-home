@@ -7,8 +7,8 @@ Smart Pointers: Closing Words
 .. contents::
    :local:
 
-Shared Pointers: Closing Words
-------------------------------
+Shared Pointers: When To Use Which?
+-----------------------------------
 
 **Now when to use which pointer?**
 
@@ -26,8 +26,8 @@ Shared Pointers: Closing Words
 * Don't waste a thought on ownership, simply write it
 * Always use ``std::shared_ptr<>``
 
-jjj move to closing words: ``std::shared_ptr`` vs. ``std::unique_ptr``
-----------------------------------------------------------------------
+Resource Usage
+--------------
 
 How do ``std::shared_ptr`` and ``std::unique_ptr`` compare?
 

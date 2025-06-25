@@ -44,12 +44,14 @@ Notes About Thread Safety
   :doc:`/trainings/material/soup/cxx11/multithreading/atomic-shared-ptr/topic`
   for a "workaround"
 
+.. _cxx11_shared_ptr_create:
+
 Creating ``std::shared_ptr`` Instances
 --------------------------------------
 
 .. sidebar:: See also
 
-   * :doc:`../unique-ptr/topic`
+   * :ref:`cxx11_unique_ptr_create`
 
 * Raw pointer at the basis
 * ``std::shared_ptr<>`` wrapped around
@@ -105,129 +107,91 @@ Object Lifetime ("Garbage Collection")
    :caption: :download:`code/refcount_if.cpp`
    :language: c++
 
+.. _cxx11_shared_ptr_raw_access_get:
 
-
-
-
-
-jjj Methods
------------
-
-Object of type ``std::shared_ptr`` behave like pointers in any respect
-(``->``, ``*``, copy, ...), except that they have methods:
-
-.. sidebar:: 
-
-   **Documentation**
-
-   * `std::shared_ptr
-     <https://en.cppreference.com/w/cpp/memory/shared_ptr>`__
-
-.. list-table::
-   :align: left
-   :widths: auto
-   :header-rows: 1
-
-   * * Method
-     * Description
-   * * ``std::shared_ptr()``
-     * Initializes to ``nullptr``
-   * * ``std::shared_ptr(T* pointer)``
-     * Initializes to ``pointer`` (but see :ref:`std::make_shared
-       <make_shared>` instead); refcount is 1
-   * * ``std::shared_ptr(std::shared_ptr&& from)``
-     * Move constructor; ``from`` is empty afterwards (see
-       :doc:`/trainings/material/soup/cxx11/move/index`)
-   * * ``reset(T* pointer)``
-     * Replaces the managed object if any, possibly deleting it if
-       refcount reaches zero. ``pointer`` can be ``nullptr``
-   * * ``get()``
-     * Pointer to currently managed object
-
-
-jjj ``std::shared_ptr``: Juggling
----------------------------------
-
-.. list-table::
-   :align: left
-
-   * * **Clearing**: ``reset()``
-
-       .. code-block:: c++
-
-          shared_ptr<MyClass> ptr(
-              new MyClass(666));
-          auto copy = ptr;
-          ptr.reset();
-
-     * * Decrements reference count
-       * Only if it becomes zero, object is deleted
-
-   * * **Filling**: ``reset()``
-
-       .. code-block:: c++
-
-          shared_ptr<MyClass> ptr;
-	  ptr.reset(new MyClass(666));
-
-     * * Makes an empty pointer the initial reference
-
-jjj Demo: Basic Usage
----------------------
-
-.. literalinclude:: code/shared-ptr-basic.cpp
-   :caption: :download:`code/shared-ptr-basic.cpp`
-   :language: c++
-
-.. _make_shared:
-
-jjj Demo: ``std::make_shared``
+Raw Pointer Access: ``.get()``
 ------------------------------
 
-.. literalinclude:: code/shared-ptr-basic-make_shared.cpp
-   :caption: :download:`code/shared-ptr-basic-make_shared.cpp`
+.. sidebar:: See also
+
+   * :ref:`cxx11_unique_ptr_raw_access_get`
+
+* Not the plan
+* Sometimes needed though
+* ⟶ Careful!
+
+.. literalinclude:: code/raw_pointer_get.cpp
+   :caption: :download:`code/raw_pointer_get.cpp`
    :language: c++
 
-jjj Demo: Cyclic References
----------------------------
+.. _cxx11_shared_ptr_reset:
 
-.. literalinclude:: code/shared-ptr-cyclic.cpp
-   :caption: :download:`code/shared-ptr-cyclic.cpp`
+Unreferencing Objects: ``.reset()``
+-----------------------------------
+
+.. sidebar:: See also
+
+   * :ref:`cxx11_unique_ptr_reset`
+
+* Nulling out pointer object
+* Drop reference on object (decrease reference count)
+
+.. literalinclude:: code/reset.cpp
+   :caption: :download:`code/reset.cpp`
+   :language: c++
+
+* Variant: exchanging pointer-to object with different (or even same)
+  object
+
+.. literalinclude:: code/reset_exchange.cpp
+   :caption: :download:`code/reset_exchange.cpp`
+   :language: c++
+
+.. _cxx11_shared_ptr_custom_deleter:
+
+Custom Deleter
+--------------
+
+.. sidebar:: See also
+
+   * :ref:`cxx11_unique_ptr_custom_deleter`
+
+* Deleter *not* part of the type - as opposed to ``std::unique_ptr``
+* |longrightarrow| would prevent sharing, obviously
+* Delete stored in control block
+* |longrightarrow| Each shared object can have its own deleter
+* ``.get_deleter()``
+
+.. literalinclude:: code/custom_deleter.cpp
+   :caption: :download:`code/custom_deleter.cpp`
+   :language: c++
+
+Cyclic References
+-----------------
+
+.. sidebar:: See also
+
+   * :doc:`../weak-ptr/topic`
+
+* Cyclic references are *not* detected
+* |longrightarrow| *Memory leak*
+
+.. literalinclude:: code/cyclic.cpp
+   :caption: :download:`code/cyclic.cpp`
    :language: c++
 
 .. code-block:: console
 
-   $ valgrind ./c++11-smartptr --gtest_filter=shared_ptr_suite.cyclic_reference
-   ==303549== Memcheck, a memory error detector
-   ==303549== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-   ==303549== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-   ==303549== Command: ./c++11-smartptr --gtest_filter=shared_ptr_suite.cyclic_reference
-   ==303549== 
-   Running main() from /home/jfasch/work/jfasch-home/googletest/googletest/src/gtest_main.cc
-   Note: Google Test filter = shared_ptr_suite.cyclic_reference
-   [==========] Running 1 test from 1 test suite.
-   [----------] Global test environment set-up.
-   [----------] 1 test from shared_ptr_suite
-   [ RUN      ] shared_ptr_suite.cyclic_reference
-   [       OK ] shared_ptr_suite.cyclic_reference (8 ms)
-   [----------] 1 test from shared_ptr_suite (13 ms total)
-   
-   [----------] Global test environment tear-down
-   [==========] 1 test from 1 test suite ran. (38 ms total)
-   [  PASSED  ] 1 test.
-   ==303549== 
-   ==303549== HEAP SUMMARY:
-   ==303549==     in use at exit: 40 bytes in 2 blocks
-   ==303549==   total heap usage: 515 allocs, 513 frees, 134,791 bytes allocated
-   ==303549== 
-   ==303549== LEAK SUMMARY:
-   ==303549==    definitely lost: 16 bytes in 1 blocks
-   ==303549==    indirectly lost: 24 bytes in 1 blocks
-   ==303549==      possibly lost: 0 bytes in 0 blocks
-   ==303549==    still reachable: 0 bytes in 0 blocks
-   ==303549==         suppressed: 0 bytes in 0 blocks
-   ==303549== Rerun with --leak-check=full to see details of leaked memory
-   ==303549== 
-   ==303549== For lists of detected and suppressed errors, rerun with: -s
-   ==303549== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-   
+   $ valgrind ./c++11-shared-ptr-cyclic 
+   ...
+   ==888857== HEAP SUMMARY:
+   ==888857==     in use at exit: 40 bytes in 2 blocks
+   ==888857==   total heap usage: 3 allocs, 1 frees, 73,768 bytes allocated
+   ==888857== 
+   ==888857== LEAK SUMMARY:
+   ==888857==    definitely lost: 16 bytes in 1 blocks
+   ==888857==    indirectly lost: 24 bytes in 1 blocks
+   ==888857==      possibly lost: 0 bytes in 0 blocks
+   ==888857==    still reachable: 0 bytes in 0 blocks
+   ==888857==         suppressed: 0 bytes in 0 blocks
+   ...

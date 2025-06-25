@@ -16,8 +16,8 @@ Overview
 Starting Point
 --------------
 
-.. literalinclude:: ../smart-pointers/code/handwritten-smart-ptr-explicit-move.cpp
-   :caption: :download:`../smart-pointers/code/handwritten-smart-ptr-explicit-move.cpp`
+.. literalinclude:: code/handwritten-smart-ptr-explicit-move.cpp
+   :caption: :download:`code/handwritten-smart-ptr-explicit-move.cpp`
    :language: c++
 
 Return ``SmartPtr`` Object From Function
@@ -37,8 +37,8 @@ Return ``SmartPtr`` Object From Function
 
 |longrightarrow| Implement move constructor
 
-.. literalinclude:: ../smart-pointers/code/handwritten-smart-ptr-return-from-function.cpp
-   :caption: :download:`../smart-pointers/code/handwritten-smart-ptr-return-from-function.cpp`
+.. literalinclude:: code/handwritten-smart-ptr-return-from-function.cpp
+   :caption: :download:`code/handwritten-smart-ptr-return-from-function.cpp`
    :language: c++
 
 Assign ``SmartPtr`` Object |longrightarrow| Moved
@@ -63,6 +63,6 @@ Put correct ``SmartPtr`` implementation (see below), but fail to
 
 **Attempt #2: move**
 
-.. literalinclude:: ../smart-pointers/code/handwritten-smart-ptr-assignment.cpp
-   :caption: :download:`../smart-pointers/code/handwritten-smart-ptr-assignment.cpp`
+.. literalinclude:: code/handwritten-smart-ptr-assignment.cpp
+   :caption: :download:`code/handwritten-smart-ptr-assignment.cpp`
    :language: c++

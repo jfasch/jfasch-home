@@ -1,6 +1,3 @@
-#include "sensors.h"
-
-#include <gtest/gtest.h>
 #include <memory>
 
 class NonSense
@@ -15,8 +12,9 @@ private:
     std::shared_ptr<NonSense> _ref;
 };
 
-TEST(shared_ptr_suite, cyclic_reference)
+int main()
 {
     std::shared_ptr<NonSense> cycle(new NonSense);
     cycle->set_reference(cycle);
+    return 0;
 }
