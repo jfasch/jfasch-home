@@ -36,6 +36,7 @@ Topics
    any-variant-optional/index
    chrono/topic
    filesystem/topic
+   format/topic
 
    spaceship/topic
    concepts/index
