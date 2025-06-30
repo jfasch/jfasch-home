@@ -33,6 +33,8 @@ Topics
    perfect-forwarding/topic
 
    multithreading/index
+
+   array/topic
    any-variant-optional/index
    chrono/topic
    filesystem/topic

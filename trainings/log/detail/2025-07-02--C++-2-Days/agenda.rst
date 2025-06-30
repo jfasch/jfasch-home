@@ -23,7 +23,7 @@ News From The Library
   </trainings/material/soup/cxx03/060-stl/index>`). Show hash-table
   based data structures ``std::unordered_set<>`` and
   ``std::unordered_map<>`` [#make_material]_.
-* ``std::array<>`` [#make_material]_
+* :doc:`/trainings/material/soup/cxx11/array/topic`
 * Execution policies of parallel algorithms [#make_material]_
 * ``std::span<>`` [#make_material]_
 * Ranges and views (:doc:`here
