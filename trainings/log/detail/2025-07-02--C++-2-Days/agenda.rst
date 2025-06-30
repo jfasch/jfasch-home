@@ -28,7 +28,7 @@ News From The Library
 * ``std::span<>`` [#make_material]_
 * Ranges and views (:doc:`here
   </trainings/material/soup/cxx11/ranges/index>`)
-* ``std::fmt`` (vs ``printf()``) [#make_material]_
+* :doc:`/trainings/material/soup/cxx11/format/topic`
 * :doc:`/trainings/material/soup/cxx11/filesystem/topic`. In addition
   to basic functionality, show how to handle UTF-8 encoded paths
   (``std::filesystem::u8path``) [#make_material]_
@@ -39,8 +39,8 @@ News From The Library
 
 * ``std::tuple<>`` [#make_material]_
 
-New From The Language
----------------------
+News From The Language
+----------------------
 
 * From :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
 
@@ -51,7 +51,7 @@ New From The Language
 * :doc:`/trainings/material/soup/cxx11/control-flow-locals/topic`
 * :doc:`/trainings/material/soup/cxx11/auto/topic`
 * :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
-* Deducing ``this`` (C++23) [#make_material]_
+* :doc:`/trainings/material/soup/cxx11/deducing-this/topic`
 * :doc:`/trainings/material/soup/cxx11/spaceship/topic`
 * From :doc:`/trainings/material/soup/cxx11/concepts/index`
 

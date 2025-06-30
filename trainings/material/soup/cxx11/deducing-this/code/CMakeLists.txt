@@ -1,7 +1,4 @@
-add_executable(
-  c++11-deducing-this-suite
-
-  basic.cpp
-)
-target_link_libraries(c++11-deducing-this-suite gtest_main)
-add_test(NAME c++11-deducing-this-suite COMMAND c++11-deducing-this-suite)
+add_executable(c++11-deducing-this-problem-dry problem-dry.cpp)
+add_executable(c++11-deducing-this-explicit-object explicit-object.cpp)
+add_executable(c++11-deducing-this-deduplicated deduplicated.cpp)
+add_executable(c++11-deducing-this-deduplicated-abbrev-fun-template deduplicated-abbrev-fun-template.cpp)

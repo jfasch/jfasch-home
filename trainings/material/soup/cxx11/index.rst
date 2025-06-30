@@ -38,6 +38,7 @@ Topics
    filesystem/topic
    format/topic
 
+   deducing-this/topic
    spaceship/topic
    concepts/index
    ranges/index
