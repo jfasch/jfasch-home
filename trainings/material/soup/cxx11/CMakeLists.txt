@@ -5,6 +5,7 @@ add_subdirectory(multithreading)
 add_subdirectory(bind-function)
 
 add_subdirectory(array)
+add_subdirectory(span)
 add_subdirectory(filesystem)
 add_subdirectory(chrono)
 add_subdirectory(drafts)
