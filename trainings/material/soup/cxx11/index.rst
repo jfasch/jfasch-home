@@ -12,6 +12,8 @@ Topics
 
    introduction/index
 
+   rule-of-5/topic   
+
    delegating-ctor/topic
    strongly-typed-enums/topic
    oo/index
@@ -39,7 +41,7 @@ Topics
    chrono/topic
    filesystem/topic
    format/topic
-
+   span/topic
    deducing-this/topic
    spaceship/topic
    concepts/index

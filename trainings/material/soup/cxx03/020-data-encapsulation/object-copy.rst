@@ -7,8 +7,14 @@ Object Copy (And Resource Management): There Be Dragons
 .. contents::
    :local:
 
+.. sidebar:: Trainer's note
+
+   This material is deprecated. It is superseded by
+   :doc:`/trainings/material/soup/cxx11/rule-of-5/topic`
+
 .. sidebar:: See also
 
+   * :doc:`/trainings/material/soup/cxx11/rule-of-5/topic`
    * :doc:`/trainings/material/soup/cxx11/oo/delete`
 
 Copy in C
