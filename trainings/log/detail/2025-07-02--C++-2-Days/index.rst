@@ -67,14 +67,43 @@ From :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/index`
 Day 2
 -----
 
-* Multithreading - eher kurz
-* C++ Memory Model - s.o.
+Multithreading, Memory Model
+............................
+
+This section is a bit involved as all of this is somehow related.
+
+* From :doc:`/trainings/material/soup/cxx11/multithreading/index`
+
+  * :doc:`/trainings/material/soup/cxx11/multithreading/memory-model/topic`. This
+    briefly shows what a race condition is, and gives mutex examples.
+
+* :doc:`/trainings/material/soup/cxx11/multithreading/atomic-shared-ptr/topic`. 
+
+``std::span``, Ranges, Views, Concepts
+......................................
+
+* :doc:`/trainings/material/soup/cxx11/span/topic`
+* :doc:`/trainings/material/soup/cxx11/ranges/index`
+* From :doc:`/trainings/material/soup/cxx11/concepts/index`
+
+  * :doc:`/trainings/material/soup/cxx11/concepts/intro/topic`
+  * :doc:`/trainings/material/soup/cxx11/concepts/writing-concepts/topic`
+
+Rest
+....
+
 * Custom Class That Supports Brace Initialization
-* Concepts
-* std::span<> , Ranges And Views
+  (:doc:`/trainings/material/soup/cxx11/brace-initialization/index`)
 * std::unordered_set<> and std::unordered_map<>
 * Execution policies of parallel algorithms - frontal
+  (:doc:`/trainings/material/soup/cxx11/drafts/parallel-algo/topic`)
 * Formatting Library (std::format(), std::print())
+  (:doc:`/trainings/material/soup/cxx11/format/topic`)
 * The Spaceship Operator <=> (And Comparison In General) - frontal
+  (:doc:`/trainings/material/soup/cxx11/spaceship/topic`)
 * Explicit Object Member Functions (A.k.a Deducing this)
+  (:doc:`/trainings/material/soup/cxx11/deducing-this/topic`)
 * std::any, std::variant
+  (:doc:`/trainings/material/soup/cxx11/any-variant-optional/index`)
+* Coroutines? Generators?
+  (:doc:`/trainings/material/soup/cxx11/coroutines/index`)
