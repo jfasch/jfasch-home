@@ -97,7 +97,7 @@ News From The Library
   based data structures ``std::unordered_set<>`` and
   ``std::unordered_map<>`` [#make_material]_.
 * :doc:`/trainings/material/soup/cxx11/array/topic`
-* Execution policies of parallel algorithms [#make_material]_
+* :doc:`/trainings/material/soup/cxx11/drafts/parallel-algo/topic`
 * :doc:`/trainings/material/soup/cxx11/span/topic`
 * ``std::tuple<>`` [#make_material]_
 

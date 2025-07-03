@@ -13,3 +13,4 @@ Topics
    embedded-problems/index
    crtp
    unicode/topic
+   parallel-algo/topic
