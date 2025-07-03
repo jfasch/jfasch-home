@@ -24,9 +24,21 @@ Execution Policies
 * ``std::execution::par_unseq``: use vectorization. Might fall back to
   ``std::execution::seq`` though.
 
-Example
--------
+And Exceptions?
+---------------
 
-.. literalinclude:: code/parallel-algo.cpp
-   :caption: :download:`code/parallel-algo.cpp`
+* Parallel execution (``std::execution::par`` and
+  ``std::execution::par_unseq``) does not like exceptions
+* Process is terminated by default (``std::abort()``)
+* |longrightarrow| You data should not throw on access
+
+Examples
+--------
+
+.. literalinclude:: code/parallel-sort.cpp
+   :caption: :download:`code/parallel-sort.cpp`
+   :language: c++
+
+.. literalinclude:: code/parallel-foreach.cpp
+   :caption: :download:`code/parallel-foreach.cpp`
    :language: c++
