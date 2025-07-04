@@ -92,8 +92,9 @@ This section is a bit involved as all of this is somehow related.
 Rest
 ....
 
-* Custom Class That Supports Brace Initialization
-  (:doc:`/trainings/material/soup/cxx11/brace-initialization/index`)
+.. * Custom Class That Supports Brace Initialization
+..   (:doc:`/trainings/material/soup/cxx11/brace-initialization/index`)
+
 * std::unordered_set<> and std::unordered_map<>
 * Execution policies of parallel algorithms - frontal
   (:doc:`/trainings/material/soup/cxx11/drafts/parallel-algo/topic`)
