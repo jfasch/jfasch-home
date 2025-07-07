@@ -16,7 +16,7 @@ A Week with the Raspberry Pi
 	  * :doc:`../sysprog/index`
 	  * :doc:`../kernel-programming-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 .. image:: raspi-hands-on-images/raspberry_logo.png
    :alt: Raspi Logo

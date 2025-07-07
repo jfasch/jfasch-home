@@ -23,7 +23,7 @@ Shell Scripting/Bourne Again Shell (Bash)
       * * **Related**
 	* * :doc:`linux-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 The Bourne Shell is not only used to communicate with the system using

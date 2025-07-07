@@ -23,7 +23,7 @@ CMake: A Dirty But Powerful Build Tool
       * * **Related**
 	* * :doc:`make`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 .. image:: cmake-images/cmake_logo.jpg
    :alt: CMake Logo

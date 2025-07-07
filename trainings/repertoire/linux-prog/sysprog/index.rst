@@ -33,7 +33,7 @@ Linux Systems Programming (Course Series)
 	  * :doc:`../embedded/embedded`
 	  * :doc:`../embedded/raspi-hands-on`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 Courses

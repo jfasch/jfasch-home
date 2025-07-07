@@ -26,7 +26,7 @@ An Introduction to Modern C++, In Three Days
 	  * :doc:`design-patterns/design-patterns`
 	  * :doc:`../misc/unittests`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 Goal

@@ -36,7 +36,7 @@ Python: Project/Package Management
 	  * :doc:`advanced`
 	  * :doc:`misc`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 Course Outline
 --------------

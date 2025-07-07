@@ -13,7 +13,7 @@ Embedded Linux Programming
 	  * :doc:`../sysprog/index`
 	  * :doc:`../kernel-programming-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 To put it provocantly: *Linux is an embedded realtime OS*. These
 courses show you, from slightly different angles, what this means and

@@ -25,7 +25,7 @@ Design Patterns For C++ Developers
 	  * :doc:`../cxx11`
 	  * :doc:`../../misc/unittests`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 Goal
 ----

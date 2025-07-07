@@ -1,5 +1,5 @@
-Linux, And Programming
-======================
+Linux Programming
+=================
 
 .. sidebar::
 
@@ -10,7 +10,6 @@ Linux, And Programming
 	* Trainer language is English or German
       * * **Material**
 	* * :doc:`/trainings/material/soup/linux/index`
-
 	  
 Courses
 -------

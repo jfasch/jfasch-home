@@ -119,17 +119,12 @@ exclude_patterns = [
 ]
 html_context = {}
 html_static_path = ['_static']
+html_css_files = ['mycss.css']
 
-_RTD = 'sphinx_rtd_theme'
-_ALABASTER = 'alabaster'
-_PYDATA = 'pydata_sphinx_theme'
-
-#html_theme = _ALABASTER
-html_theme = _PYDATA
+html_theme = 'pydata_sphinx_theme'
 html_theme_path = []
 html_theme_options = {}
 
-_jf_csss = []
 
 if False: # Gaphor
     extensions.append("gaphor.extensions.sphinx")
@@ -145,130 +140,21 @@ if False: # Gaphor
         "fh_source_sink": './about/site/work-in-progress/playground/gaphor/SourceAndSink.gaphor',
     }    
 
-if html_theme == _PYDATA:
-    #html_logo = '_static/logo.png'
+if True:
     html_context['default_mode'] = 'light'
-    #html_theme_options['description'] = 'Programming Linux'
     html_theme_options['logo'] = {
         'image_light': '_static/logo.png',
         'image_dark': '_static/logo.png',
-        #'text': 'Programming Linux',
     }
     html_theme_options['show_prev_next'] = False
+    html_theme_options['secondary_sidebar_items'] = ['page-toc']
     html_theme_options['navbar_end'] = ["navbar-icon-links"]
     html_theme_options['navbar_align'] = 'left'
+    html_theme_options['footer_start'] = ['copyright']
+    html_theme_options['footer_center'] = ['sphinx-version', 'theme-version']
+    html_theme_options['footer_end'] = ['sourcelink']
 
     fontawesome_included = True
-
-if html_theme == _ALABASTER:
-    # RANT: the settings below (page_width 90%, sidebar_width 20% (of
-    # page_width, essentially)) result in 
-
-    # * div.bodywrapper: margin-left: 20% (=274.75 on my screen)
-
-    # * div.sphinxsidebar: width: 20% (305.267)
-
-    # though the plan is obviously that they have the same calculated
-    # size, so the sphinxsidebar fits in bodywrapper's left
-    # margin. (sidenote: why the f**k is it done in this way? why not
-    # just position clearly with ... whatever ... some flexbox fancy?)
-
-    # however: this *not* the case. for some reason (*), the
-    # calculated values are *not* equal, and the sidebar's
-    # width=305.267 overlaps into bodywrapper's 274.75 margin-left.
-
-    # (*) hmm ... when I look at the element hierarchy, I see that
-
-    # * div.sphinxsidebar is a child of div.document
-
-    # * div.bodywrapper is a child of div.documentwrapper which is a
-    #   child of div.document
-
-    # question: how can it be that bodywrapper'div.s margin-left
-    # calculates to a value that appears to be derived from
-    # div.document?
-
-    # ANYWAY: stick with it, but keep looking out for better
-    # solutions/themes. learn to do web crap better.
-
-    import alabaster
-
-    html_theme_path.append(alabaster.get_path())
-
-    templates_path.append('_templates')
-
-    html_theme_options.update({
-        'show_powered_by': False,
-        'fixed_sidebar': True,
-        'logo': 'logo.png',
-        'description': 'Programming Linux',
-        'page_width': '90%',
-        'sidebar_width': '20%',
-
-        # hardwired by default by "basic" theme, to 800px. no idea
-        # why. occupy what we can get.
-        'body_max_width': '100%',
-
-        # 'github_banner': True,
-        # 'github_button': True,
-
-        'font_family': '"Lucida Sans Unicode", "Lucida Grande", sans-serif;'
-    })
-
-    html_sidebars = {
-        # the more specific match must come first (fortunately
-        # dictionary order is preserved since 3.7 :-) prior to that we
-        # would have had no chance to fix that other than changing
-        # html_sidebars to a list of tuples).
-        #        'blog/**': [
-        #            'about.html',
-        #            'searchbox.html',
-        #            'navigation.html',
-        #            'ablog/postcard.html',
-        #            'ablog/tagcloud.html',
-        #
-        #        ],
-        '**': [
-            'about.html',
-            'searchbox.html',
-            'navigation.html',
-        ],
-    }
-
-    html_context.update({
-        'jf_nav_bg': '#f0f3f8',
-        'jf_info_bg': '#fcfcfc',
-        'jf_note_bg': '#eee',
-    })
-
-    _jf_csss.append('css/jf-alabaster.css')
-
-if html_theme == _RTD:
-    # nav and location feedback really great
-    
-    # looks good on mobile
-    
-    # on wider screen a lot of screen real estate to the right is wasted
-    
-    # html_sidebars disregarded
-
-    # RTD css unreadable (uglified?)
-    
-    extensions.append('sphinx_rtd_theme')
-
-    html_theme_options['collapse_navigation'] = False
-    html_theme_options['navigation_depth'] = -1
-    
-    # context that jinja (and rst, via the rstjinja extension) sees.
-    html_context.update({
-        # experimental: this is how we can get settings into templates
-        'READTHEDOCS': False, # {en,dis}able versions.html
-        'versions': [('blah', 'https://www.google.com'),],
-        
-        # reading the RTD theme sources, I see that this is the RTD way of
-        # adding my own css.
-        'extra_css_files': ['_static/css/jf.css'],
-    })
 
 def rstjinja(app, docname, source):
     """Render our pages as a jinja template for fancy templating goodness.
@@ -286,8 +172,7 @@ def rstjinja(app, docname, source):
     source[0] = rendered
 
 def setup(app):
-    for css in _jf_csss:
-        app.add_css_file(css)
+    app.add_css_file('mycss.css')
 
     app.connect("source-read", rstjinja)
 

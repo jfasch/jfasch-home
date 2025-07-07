@@ -30,7 +30,7 @@ Python: Miscellaneous Topics
 	  * :doc:`advanced`
 	  * :doc:`swdev`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 This course is not a course, but rather a collection of largely
 unrelated topics that do not fit into one of the other Python

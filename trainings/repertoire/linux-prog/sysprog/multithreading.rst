@@ -21,7 +21,7 @@ Linux Systems Programming: Multithreading
 	  * :doc:`network`
 	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 Parallel programming is hard - this is no different on Linux. This

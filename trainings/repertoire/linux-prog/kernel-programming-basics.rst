@@ -22,13 +22,11 @@ Linux Kernel Driver Development
 	* 5 days
       * * **Language**
 	* Trainer language is English or German
-      * * **Material**
-	* :doc:`/trainings/material/soup/linux/kernel/index`
       * * **Related**
 	* * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
 	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 First off: the Linux kernel cannot be taught in 5 days - no way.

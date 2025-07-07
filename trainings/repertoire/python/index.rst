@@ -3,8 +3,8 @@
    :keywords: schulung, training, programming, python, course
 
 
-Python Programming: From Absolute Beginner to Advanced Productivity
-===================================================================
+Python Programming
+==================
 
 .. contents::
    :local:
@@ -25,7 +25,7 @@ Python Programming: From Absolute Beginner to Advanced Productivity
 	* :doc:`Complete Python material
 	  </trainings/material/soup/python/index>`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 **Python Programming** is a series of courses, each about two or three

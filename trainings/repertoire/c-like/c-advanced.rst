@@ -26,7 +26,7 @@ C: Advanced Topics
 	* * :doc:`c`
 	  * :doc:`/trainings/repertoire/misc/unittests`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 C ist eine kleine und einfache Sprache, was den Sprachumfang angeht. C

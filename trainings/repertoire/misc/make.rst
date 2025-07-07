@@ -22,7 +22,7 @@ GNU Make: The Mother of All Build Tools
       * * **Related**
 	* * :doc:`cmake`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
       
 
 Die Mutter aller Build-Tools unter Linux und Unix ist Make - unter

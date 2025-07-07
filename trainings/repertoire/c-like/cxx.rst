@@ -29,7 +29,7 @@ C++: Introduction
 	  * :doc:`design-patterns/design-patterns`
 	  * :doc:`../misc/unittests`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 C++ wurde ursprünglich erfunden, um als Superset des guten alten C

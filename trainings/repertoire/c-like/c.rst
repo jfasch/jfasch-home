@@ -26,7 +26,7 @@ C: Introduction
 	* * :doc:`c-advanced`
 	  * :doc:`/trainings/repertoire/misc/unittests`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 Der `Bibel von Brian Kernighan und Dennis Ritchie
 <http://de.wikipedia.org/wiki/The_C_Programming_Language>`__ kann man

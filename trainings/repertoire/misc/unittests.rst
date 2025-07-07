@@ -16,7 +16,7 @@ Unittesting and Test Driven Development
             (PDF)
             </trainings/material/pdf/060-design-patterns-unittests.pdf>`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 **Unittesting**: das Prinzip kann einfacher nicht sein. Statt per Hand
 zu testen, schreibt man ein Programm, dass einem das auf Knopfdruck

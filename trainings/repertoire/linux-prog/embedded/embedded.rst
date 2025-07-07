@@ -19,11 +19,11 @@ Embedded Software Development: Hardware, Realtime, and Memory Management
 	  * :doc:`../sysprog/index`
 	  * :doc:`../kernel-programming-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 Linux, being "a flavor of UNIX", builds upon the strong concepts of
-the OS family. Yet Linux has proven to be an embedded OS too -
+that OS family. Yet Linux has proven to be an embedded OS too -
 hardware support is amazingly complete, realtime capabilities are in
 place, memory management is as fine grained as embedded developers
 like it.

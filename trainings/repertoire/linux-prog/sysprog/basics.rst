@@ -22,7 +22,7 @@ Linux Systems Programming: Introduction
 	  * PDF Slides, :download:`sysprog
             </trainings/material/pdf/020-linux-sysprog--en.pdf>`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 This introductory course gives an overview of the OS, the

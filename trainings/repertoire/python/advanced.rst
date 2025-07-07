@@ -36,7 +36,7 @@ Python: More Language Features
 	  * :doc:`swdev`
 	  * :doc:`misc`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 Course Outline

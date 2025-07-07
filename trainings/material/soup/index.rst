@@ -1,5 +1,5 @@
-Slide Material
-==============
+Complete Slide Material
+=======================
 
 .. toctree::
    :maxdepth: 1

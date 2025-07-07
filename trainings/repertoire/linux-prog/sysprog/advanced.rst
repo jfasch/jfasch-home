@@ -24,7 +24,7 @@ Linux Systems Programming: Virtual Memory, IPC, Shared Libraries
 	  * :doc:`../embedded/index`
 	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 

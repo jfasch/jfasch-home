@@ -26,7 +26,7 @@ Linux Basics: A Gentle Introduction
 	* * :doc:`bash`
 	  * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 This course is an introduction to the operating system and its strong
 concepts. By using only the shell (no programming skills needed),

@@ -21,7 +21,7 @@ Linux Systems Programming: Network Programming
 	  * :doc:`multithreading`
 	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 
 This course covers the socket interface and some of the protocols that

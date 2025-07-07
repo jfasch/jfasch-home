@@ -36,7 +36,7 @@ Python: The Language Fundamentals
 	  * :doc:`swdev`
 	  * :doc:`misc`
       * * **Booking**
-	* :doc:`/trainings/booking`
+	* :doc:`/trainings/info`
 
 Course Outline
 --------------

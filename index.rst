@@ -1,3 +1,5 @@
+:sd_hide_title:
+
 .. meta::
    :description: Linux/C/C++/Python/etc Schulungen für Programmierer;
                  Beratung für Softwareprojekte; Programmierung,
@@ -11,9 +13,39 @@
 Programming Linux
 =================
 
+.. grid:: 1 1 3 3
+
+   .. grid-item:: 
+
+      .. button-ref:: course-pricing
+	 :ref-type: ref
+         :color: primary
+	 :expand:
+
+   .. grid-item:: 
+
+      .. button-ref:: course-mode
+	 :ref-type: ref
+         :color: primary
+	 :expand:
+
+   .. grid-item:: 
+
+      .. button-ref:: course-individual
+	 :ref-type: ref
+         :color: primary
+	 :expand:
+
 .. grid:: 1 1 2 2
 
-   .. grid-item-card:: Linux
+   .. grid-item-card::
+   
+      .. button-ref:: /trainings/repertoire/linux-prog/index
+	 :ref-type: doc
+         :color: primary
+	 :expand:
+
+      ^^^
 
       * :doc:`/trainings/repertoire/linux-prog/linux-basics`
       * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
@@ -21,33 +53,50 @@ Programming Linux
       * :doc:`/trainings/repertoire/linux-prog/kernel-programming-basics`
       * :doc:`/trainings/repertoire/linux-prog/bash`
 
-      :doc:`More ... </trainings/repertoire/linux-prog/index>`
+   .. grid-item-card::
+   
+      .. button-ref:: /trainings/repertoire/python/index
+	 :ref-type: doc
+         :color: primary
+	 :expand:
 
-   .. grid-item-card:: Python
+      ^^^
 
       * :doc:`/trainings/repertoire/python/basics`
       * :doc:`/trainings/repertoire/python/advanced`
       * :doc:`/trainings/repertoire/python/swdev`
-         
-      :doc:`More ... </trainings/repertoire/python/index>`
+      
+   .. grid-item-card::
 
-   .. grid-item-card:: C/C++
+      .. button-ref:: /trainings/repertoire/c-like/index
+	 :ref-type: doc
+         :color: primary
+	 :expand:
+
+      ^^^
 
       * :doc:`/trainings/repertoire/c-like/c`
       * :doc:`/trainings/repertoire/c-like/c-advanced`
       * :doc:`/trainings/repertoire/c-like/cxx`
       * :doc:`/trainings/repertoire/c-like/cxx11`
       * :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
+      
+   .. grid-item-card::
 
-      :doc:`More ... </trainings/repertoire/c-like/index>`
+      .. button-ref:: /trainings/repertoire/misc/index
+	 :ref-type: doc
+         :color: primary
+	 :expand:
 
-   .. grid-item-card:: Miscellaneous
+      ^^^
 
       * :doc:`/trainings/repertoire/misc/make`
       * :doc:`/trainings/repertoire/misc/cmake`
       * :doc:`/trainings/repertoire/misc/unittests`
 
-      :doc:`More ... </trainings/repertoire/misc/index>`
+
+
+
 
 .. toctree::
    :hidden:
