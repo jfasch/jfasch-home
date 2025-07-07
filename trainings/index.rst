@@ -1,10 +1,11 @@
-Courses Overview
+Training Courses
 ================
 
 .. toctree::
-   :hidden:
 
-   template
+   material/soup/index
+   booking
+   log/index
 
 .. contents::
    :local:

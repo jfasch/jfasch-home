@@ -57,8 +57,8 @@ extensions = [
     'sphinxcontrib.programoutput',
     'sphinxcontrib.images',
     'sphinxemoji.sphinxemoji',
+    'sphinx_design',
 
-#    'sphinxcontrib.libreoffice',
     'sphinxcontrib.plantuml',
 
     'opentraining.sphinxglue.dia',
@@ -103,6 +103,7 @@ if True:
     }
     blog_default_location = 'daham'
     fontawesome_link_cdn = 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
+    
     blog_feed_fulltext = True
     blog_feed_length = 10
     blog_feed_archives = True
@@ -119,17 +120,12 @@ exclude_patterns = [
 html_context = {}
 html_static_path = ['_static']
 
-_BASIC = 'basic'
 _RTD = 'sphinx_rtd_theme'
-_BETTER = 'better'
-_CLOUD = 'cloud'
-_PYRAMID = 'pyramid'
-_PRESS = 'press'
-_NATURE = 'nature'
 _ALABASTER = 'alabaster'
-_BOOTSTRAP = 'bootstrap'
+_PYDATA = 'pydata_sphinx_theme'
 
-html_theme = _ALABASTER
+#html_theme = _ALABASTER
+html_theme = _PYDATA
 html_theme_path = []
 html_theme_options = {}
 
@@ -149,6 +145,20 @@ if False: # Gaphor
         "fh_source_sink": './about/site/work-in-progress/playground/gaphor/SourceAndSink.gaphor',
     }    
 
+if html_theme == _PYDATA:
+    #html_logo = '_static/logo.png'
+    html_context['default_mode'] = 'light'
+    #html_theme_options['description'] = 'Programming Linux'
+    html_theme_options['logo'] = {
+        'image_light': '_static/logo.png',
+        'image_dark': '_static/logo.png',
+        #'text': 'Programming Linux',
+    }
+    html_theme_options['show_prev_next'] = False
+    html_theme_options['navbar_end'] = ["navbar-icon-links"]
+    html_theme_options['navbar_align'] = 'left'
+
+    fontawesome_included = True
 
 if html_theme == _ALABASTER:
     # RANT: the settings below (page_width 90%, sidebar_width 20% (of
@@ -210,14 +220,14 @@ if html_theme == _ALABASTER:
         # dictionary order is preserved since 3.7 :-) prior to that we
         # would have had no chance to fix that other than changing
         # html_sidebars to a list of tuples).
-#        'blog/**': [
-#            'about.html',
-#            'searchbox.html',
-#            'navigation.html',
-#            'ablog/postcard.html',
-#            'ablog/tagcloud.html',
-#
-#        ],
+        #        'blog/**': [
+        #            'about.html',
+        #            'searchbox.html',
+        #            'navigation.html',
+        #            'ablog/postcard.html',
+        #            'ablog/tagcloud.html',
+        #
+        #        ],
         '**': [
             'about.html',
             'searchbox.html',
@@ -254,45 +264,11 @@ if html_theme == _RTD:
         # experimental: this is how we can get settings into templates
         'READTHEDOCS': False, # {en,dis}able versions.html
         'versions': [('blah', 'https://www.google.com'),],
-    
+        
         # reading the RTD theme sources, I see that this is the RTD way of
         # adding my own css.
         'extra_css_files': ['_static/css/jf.css'],
     })
-
-if html_theme == _BETTER:
-    from better import better_theme_path
-    html_theme_path = [better_theme_path]
-
-if html_theme == _CLOUD:
-    html_theme_options['max_width'] = '100%'
-    pass
-
-if html_theme == _PYRAMID:
-    import pyramid_sphinx_themes
-    html_theme_path += pyramid_sphinx_themes.get_html_themes_path()
-
-if html_theme == _PRESS:
-    # html_sidebars as set above won't work. emptying it does,
-    # somehow.
-
-    # nav is buggy.
-    pass
-
-if html_theme == _NATURE:
-    pass
-
-if html_theme == _BASIC:
-    pass
-
-if html_theme == _BOOTSTRAP:
-    # just a try, no navigation with location feedback
-
-    import sphinx_bootstrap_theme
-    html_theme_path += sphinx_bootstrap_theme.get_html_theme_path()
-
-
-
 
 def rstjinja(app, docname, source):
     """Render our pages as a jinja template for fancy templating goodness.

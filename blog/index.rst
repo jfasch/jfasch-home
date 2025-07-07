@@ -1,5 +1,5 @@
-Posts
------
+Blog
+----
 
 * :ref:`blog-categories`
 * :ref:`blog-archives` 
