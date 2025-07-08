@@ -1,4 +1,6 @@
-Organizational, Pricing
+.. _course-info:
+
+Pricing, Organizational
 =======================
 
 .. contents::

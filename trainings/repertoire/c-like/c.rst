@@ -8,25 +8,30 @@
 C: Introduction
 ===============
 
-.. contents::
-   :local:
-
 .. sidebar::
 
-   .. list-table::
-      :align: left
+   .. grid:: 1
 
-      * * **Duration**
-	* 5 days
-      * * **Language**
-	* Trainer language is English or German
-      * * **Material**
-	* * :doc:`/trainings/material/soup/c/index`
-      * * **Related**
-	* * :doc:`c-advanced`
-	  * :doc:`/trainings/repertoire/misc/unittests`
-      * * **Booking**
-	* :doc:`/trainings/info`
+      .. grid-item-card:: 
+
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
+
+      .. grid-item-card:: Duration: 5 Days
+   
+      .. grid-item-card:: 
+   
+	 .. dropdown:: Related Courses
+
+            * :doc:`c-advanced`
+            * :doc:`/trainings/repertoire/misc/unittests`
+
+	 .. dropdown:: Slide Material
+
+            * :doc:`/trainings/material/soup/c/index`
+
 
 Der `Bibel von Brian Kernighan und Dennis Ritchie
 <http://de.wikipedia.org/wiki/The_C_Programming_Language>`__ kann man

@@ -1,0 +1,42 @@
+/* conf.py: we remove theme-switcher, and default to
+
+html_context['default_mode'] = 'light'
+
+https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/light-dark.html#customize-the-css-of-light-and-dark-themes
+*/
+
+html[data-theme="light"] {
+    --sd-color-primary: #3a6081;
+    --sd-color-primary-highlight: #3a816a;
+
+    --pst-color-link: #3a6081;
+    --pst-color-link-hover: #3a816a;
+
+    /* navbar hover */
+    --pst-color-secondary: #3a816a;
+}
+
+/* no underlines for internal links */
+a.internal {
+    text-decoration: none;
+}
+/* "visited" looks like "hover", but remains persistent */
+a:visited {
+    color: #3a816a;
+}
+
+/* in a sidebar, a <ul> comes right below <p> (the sidebar
+   header/title). bullet points leak out far to the left, so that they
+   are not vertically aligned with the <p> above. this is a well-known
+   effect that I don't understand. padding the entire <ul> pushes the
+   items back into where they belong.
+*/
+.sidebar > ul { 
+    padding-left: 2em;
+}
+
+
+/* stack footer items horizontally */
+.footer-items__start, .footer-items__end {
+  flex-direction: row;
+}

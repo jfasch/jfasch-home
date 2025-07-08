@@ -79,7 +79,37 @@ plantuml_output_format = 'svg_img'
 nbsphinx_requirejs_path = ''
 nbsphinx_requirejs_options = 666
 
-# libreoffice_format = dict(latex='pdf', html='svg')
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = [
+    '_build',
+    '**.ipynb_checkpoints',
+]
+html_context = {} # filled one by one later
+html_static_path = ['_static']
+html_css_files = ['css/custom.css']
+
+html_theme = 'pydata_sphinx_theme'
+html_theme_path = []
+html_theme_options = {}
+
+if True:
+    html_context['default_mode'] = 'light'
+    html_theme_options['logo'] = {
+        'image_light': '_static/logo.png',
+        'image_dark': '_static/logo.png',
+    }
+    html_theme_options['show_prev_next'] = False
+    html_theme_options['secondary_sidebar_items'] = ['page-toc']
+    html_theme_options['navbar_end'] = ["navbar-icon-links"] # only to remove 'theme-switcher'
+    html_theme_options['navbar_align'] = 'left'
+    html_theme_options['footer_start'] = ['copyright']
+    html_theme_options['footer_center'] = ['sphinx-version', 'theme-version']
+    html_theme_options['footer_end'] = ['sourcelink']
+    html_theme_options['collapse_navigation'] = True
+
+    fontawesome_included = True
 
 # ablog
 if True:
@@ -109,85 +139,3 @@ if True:
     blog_feed_archives = True
 
     # feed is http://feeds.feedburner.com/JoergFaschingbauer
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [
-    '_build',
-    '**.ipynb_checkpoints',
-]
-html_context = {}
-html_static_path = ['_static']
-html_css_files = ['mycss.css']
-
-html_theme = 'pydata_sphinx_theme'
-html_theme_path = []
-html_theme_options = {}
-
-
-if False: # Gaphor
-    extensions.append("gaphor.extensions.sphinx")
-
-    # the extensions does not regognize .gaphor files which I can then
-    # refer to by name. bring that information in.
-
-    # normally, this should not be a burden because models are cental
-    # to a project anyway, phycially existing in ``Documentation/``
-    # once and for all.
-
-    gaphor_models = {  
-        "fh_source_sink": './about/site/work-in-progress/playground/gaphor/SourceAndSink.gaphor',
-    }    
-
-if True:
-    html_context['default_mode'] = 'light'
-    html_theme_options['logo'] = {
-        'image_light': '_static/logo.png',
-        'image_dark': '_static/logo.png',
-    }
-    html_theme_options['show_prev_next'] = False
-    html_theme_options['secondary_sidebar_items'] = ['page-toc']
-    html_theme_options['navbar_end'] = ["navbar-icon-links"]
-    html_theme_options['navbar_align'] = 'left'
-    html_theme_options['footer_start'] = ['copyright']
-    html_theme_options['footer_center'] = ['sphinx-version', 'theme-version']
-    html_theme_options['footer_end'] = ['sourcelink']
-
-    fontawesome_included = True
-
-def rstjinja(app, docname, source):
-    """Render our pages as a jinja template for fancy templating goodness.
-
-    Eric Holscher mentions this somewhere in his blog.
-
-    """
-    # Make sure we're outputting HTML
-    if app.builder.format != 'html':
-        return
-    src = source[0]
-    rendered = app.builder.templates.render_string(
-        src, app.config.html_context
-    )
-    source[0] = rendered
-
-def setup(app):
-    app.add_css_file('mycss.css')
-
-    app.connect("source-read", rstjinja)
-
-    # html_sidebars has two matches, and both match any /blog/
-    # docname. the first match is more specific than the second, which
-    # I consider a common case. nevertheless sphinx generates a
-    # warning. filter that out.
-
-    # (rant) I have no idea what's the benefit of wrapping loggers
-    # into LoggerAdapter's. Or what SphinxLoggerAdapter's purpose
-    # is. Fortunately the LoggerAdapter (victim.logger) is friendly
-    # enough to have a 'logger' member. gosh; I only want to silence a
-    # warning.
-    class NoWarnMultipleMatches(logging.Filter):
-        def filter(self, record):
-            return 'matches two patterns in html_sidebars' not in record.getMessage()
-    import sphinx.builders.html as victim
-    victim.logger.logger.addFilter(NoWarnMultipleMatches())

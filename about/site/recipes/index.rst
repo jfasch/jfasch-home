@@ -5,7 +5,7 @@ Recipes
    :maxdepth: 1
 
    rst-cheatsheet
-   layout-test
+   layout-tests/index
    emoji
    mathml
    isoamsa

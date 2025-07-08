@@ -8,22 +8,32 @@ C and C++ Programming
 
 .. sidebar::
 
-   .. list-table::
-      :align: left
+   .. grid:: 1
+   
+      .. grid-item:: 
 
-      * * **Language**
-	* Trainer language is English or German
-      * * **Material**
-	* * :doc:`/trainings/material/soup/c/index`
-	  * :doc:`/trainings/material/soup/cxx/index`
-	  * :doc:`/trainings/material/soup/cxx03/index`
-	  * :doc:`/trainings/material/soup/cxx11/index`
-	  * :doc:`/trainings/material/soup/cxx-design-patterns/index`
-      * * **Related**
-	* * :doc:`/trainings/repertoire/misc/make`
-	  * :doc:`/trainings/repertoire/misc/cmake`
-	  * :doc:`/trainings/repertoire/misc/unittests`
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
 
+      .. grid-item:: 
+   
+	 .. dropdown:: Related Courses
+
+            * :doc:`/trainings/repertoire/misc/make`
+            * :doc:`/trainings/repertoire/misc/cmake`
+            * :doc:`/trainings/repertoire/misc/unittests`
+
+      .. grid-item:: 
+   
+	 .. dropdown:: Slide Material
+
+            * :doc:`/trainings/material/soup/c/index`
+            * :doc:`/trainings/material/soup/cxx/index`
+            * :doc:`/trainings/material/soup/cxx03/index`
+            * :doc:`/trainings/material/soup/cxx11/index`
+            * :doc:`/trainings/material/soup/cxx-design-patterns/index`
 
 Courses
 -------

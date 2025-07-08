@@ -1,6 +1,12 @@
 Layout Test Page
 ================
 
+.. toctree::
+
+   text-styles
+   sidebar-slide-doc-seealso
+   sphinx-design-buttons
+
 .. contents::
    :local:
    :depth: 1
@@ -82,16 +88,34 @@ Sidebar
 Sidebars require a title anyway. Hmm. So the least annoying thing was
 to have a transparent sidebar with a very thin border around it.
 
-Sidebar "Kursdaten"
--------------------
+Sidebar "Course Data"
+---------------------
 
-.. sidebar:: Kursdaten
+.. sidebar::
 
-   .. csv-table::
+   .. grid:: 1
 
-      Anfrage, training@faschingbauer.co.at
-      Dauer, 2 Tage
-      PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+      .. grid-item-card:: Duration: 5 Days
+   
+      .. grid-item:: 
+
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
+
+      .. grid-item:: 
+   
+	 .. dropdown:: Related Courses
+
+            * :doc:`/trainings/repertoire/c-like/c-advanced`
+            * :doc:`/trainings/repertoire/misc/unittests`
+
+      .. grid-item:: 
+   
+	 .. dropdown:: Slide Material
+
+            * :doc:`/trainings/material/soup/c/index`
 
 Hmm. Should be an eye-catcher somehow.
 
@@ -99,7 +123,13 @@ blah blah blah blah blah blah Dieser Einführungskurs richtet sich an
 Programmierer, die Linux nicht so sehr kennen, es aber kennen lernen
 wollen. Die Zusammenhänge und die Grundpfeiler des Systems werden
 erklärt, sodass man am Ende ein großes Bild hat und sich selbst
-orientieren und zurechtfinden kann.  blah
+orientieren und zurechtfinden kann.  
+
+blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+blah blah blah blah blah blah blah blah blah blah blah
 
 Local Content
 -------------

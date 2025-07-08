@@ -25,7 +25,7 @@ Problem: Repeated Code
 Python Excursion: Explicit Object Parameter
 -------------------------------------------
 
-* In Python, there is not *implicit* ``this``
+* In Python, there is no *implicit* ``this``
 * According to Zen, *Explicit is better than implicit* (`here <PEP 20
   – The Zen of Python>`__)
 * Also, in Python, there is no overloading
@@ -59,7 +59,7 @@ Template Method To Deduplicate
    :caption: :download:`code/deduplicated.cpp`
    :language: c++
 
-Even Shorted: Abbreviated Function Template
+Even Shorter: Abbreviated Function Template
 -------------------------------------------
 
 * Cool
