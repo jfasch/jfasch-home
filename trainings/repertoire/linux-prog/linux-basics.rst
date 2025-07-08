@@ -8,25 +8,30 @@
 Linux Basics: A Gentle Introduction
 ===================================
 
-.. contents::
-   :local:
-
 .. sidebar::
 
-   .. list-table::
-      :align: left
+   .. grid:: 1
+      :class-container: jf-course-description-sidebar
 
-      * * **Duration**
-	* 3 days
-      * * **Language**
-	* Trainer language is English or German
-      * * **Material**
-	* * :doc:`/trainings/material/soup/linux/basics/index`
-      * * **Related**
-	* * :doc:`bash`
-	  * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
-      * * **Booking**
-	* :doc:`/trainings/info`
+      .. grid-item-card:: 
+
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
+
+      .. grid-item-card:: Duration: 3 Days
+   
+      .. grid-item-card:: 
+   
+	 .. dropdown:: Related Courses
+
+	    * :doc:`bash`
+	    * :doc:`/trainings/repertoire/linux-prog/sysprog/index`
+
+	 .. dropdown:: Slide Material
+
+	    * :doc:`/trainings/material/soup/linux/basics/index`
 
 This course is an introduction to the operating system and its strong
 concepts. By using only the shell (no programming skills needed),

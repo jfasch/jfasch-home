@@ -11,6 +11,7 @@ C: Introduction
 .. sidebar::
 
    .. grid:: 1
+      :class-container: jf-course-description-sidebar
 
       .. grid-item-card:: 
 

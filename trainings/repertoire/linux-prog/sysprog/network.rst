@@ -1,28 +1,38 @@
 Linux Systems Programming: Network Programming
 ==============================================
 
-.. contents::
-   :local:
-
 .. sidebar::
 
-   .. list-table::
-      :align: left
+   .. grid:: 1
+      :class-container: jf-course-description-sidebar
 
-      * * **Duration**
-	* 2 days
-      * * **Language**
-	* Trainer language is English or German
-      * * **Material**
-	* * PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-      * * **Related**
-	* * :doc:`basics`
-	  * :doc:`advanced`
-	  * :doc:`multithreading`
-	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
-      * * **Booking**
-	* :doc:`/trainings/info`
+      .. grid-item-card:: 
 
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
+
+      .. grid-item-card:: Duration: 2 Days
+   
+      .. grid-item-card:: 
+   
+	 .. dropdown:: Related Courses
+
+	    * :doc:`index`
+	    * :doc:`basics`
+	    * :doc:`multithreading`
+	    * :doc:`advanced`
+	      
+	    * :doc:`../linux-basics`
+            * :doc:`../kernel-programming-basics`
+            * :doc:`../embedded/embedded`
+            * :doc:`../embedded/raspi-hands-on`
+
+	 .. dropdown:: Slide Material
+
+	    * PDF Slides, :download:`sysprog
+              </trainings/material/pdf/020-linux-sysprog--en.pdf>`
 
 This course covers the socket interface and some of the protocols that
 are supported by it, together with the programming paradigms that are

@@ -1,33 +1,42 @@
 Linux Systems Programming: Virtual Memory, IPC, Shared Libraries
 ================================================================
 
-.. contents::
-   :local:
-
 .. sidebar::
 
-   .. list-table::
-      :align: left
+   .. grid:: 1
+      :class-container: jf-course-description-sidebar
 
-      * * **Duration**
-	* 2 days
-      * * **Language**
-	* Trainer language is English or German
-      * * **Material**
-	* * PDF Slides, :download:`sysprog </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-	  * Live Hacking, :doc:`Signals </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
-	  * Live Hacking, :doc:`IPC </trainings/material/soup/linux/sysprog/sysprog_ipc/screenplay>`
-      * * **Related**
-	* * :doc:`basics`
-	  * :doc:`multithreading`
-	  * :doc:`network`
-	  * :doc:`../embedded/index`
-	  * :doc:`/trainings/repertoire/linux-prog/linux-basics`
-      * * **Booking**
-	* :doc:`/trainings/info`
+      .. grid-item-card:: 
 
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
 
+      .. grid-item-card:: Duration: 2 Days
+   
+      .. grid-item-card:: 
+   
+	 .. dropdown:: Related Courses
 
+	    * :doc:`index`
+	    * :doc:`basics`
+	    * :doc:`network`
+	    * :doc:`multithreading`
+	      
+	    * :doc:`../linux-basics`
+            * :doc:`../kernel-programming-basics`
+            * :doc:`../embedded/embedded`
+            * :doc:`../embedded/raspi-hands-on`
+
+	 .. dropdown:: Slide Material
+
+	    * PDF Slides, :download:`sysprog
+              </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+	    * Live Hacking, :doc:`Signals
+              </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
+	    * Live Hacking, :doc:`IPC
+              </trainings/material/soup/linux/sysprog/sysprog_ipc/screenplay>`
 
 Especially on :doc:`resource constrained systems <../embedded/index>`
 it is important to use resources consciously. This course gives

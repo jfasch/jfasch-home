@@ -10,30 +10,40 @@
 Linux Systems Programming (Course Series)
 =========================================
 
-.. contents::
-   :local:
-
 .. sidebar::
 
-   .. list-table::
-      :align: left
+   .. grid:: 1
+      :class-container: jf-course-description-sidebar
 
-      * * **Duration**
-	* * Each module is about 2-3 days
-	  * Modules can be booked separately
-      * * **Language**
-	* Trainer language is English or German
-      * * **Material**
-	* * :doc:`/trainings/material/soup/linux/sysprog/index`
-	  * :download:`Linux Systems Programming (PDF, unmaintained but still there)
-            </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-      * * **Related**
-	* * :doc:`../linux-basics`
-	  * :doc:`../kernel-programming-basics`
-	  * :doc:`../embedded/embedded`
-	  * :doc:`../embedded/raspi-hands-on`
-      * * **Booking**
-	* :doc:`/trainings/info`
+      .. grid-item-card:: 
+
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
+
+      .. grid-item-card:: Duration: 3 days per 
+   
+      .. grid-item-card:: 
+   
+	 .. dropdown:: Related Courses
+
+	    * :doc:`basics`
+	    * :doc:`network`
+	    * :doc:`multithreading`
+	    * :doc:`advanced`
+	      
+	    * :doc:`../linux-basics`
+            * :doc:`../kernel-programming-basics`
+            * :doc:`../embedded/embedded`
+            * :doc:`../embedded/raspi-hands-on`
+
+	 .. dropdown:: Slide Material
+
+	    * :doc:`/trainings/material/soup/linux/sysprog/index`
+	    * :download:`Linux Systems Programming (PDF, unmaintained
+	      but still there)
+              </trainings/material/pdf/020-linux-sysprog--en.pdf>`
 
 
 Courses

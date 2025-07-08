@@ -5,6 +5,7 @@ Layout Test Page
 
    text-styles
    sidebar-slide-doc-seealso
+   sidebar-fancy-course-descriptions
    sphinx-design-buttons
 
 .. contents::

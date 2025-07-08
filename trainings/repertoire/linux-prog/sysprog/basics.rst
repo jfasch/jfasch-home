@@ -1,29 +1,38 @@
 Linux Systems Programming: Introduction
 =======================================
 
-.. contents::
-   :local:
-
 .. sidebar::
 
-   .. list-table::
-      :align: left
+   .. grid:: 1
+      :class-container: jf-course-description-sidebar
 
-      * * **Duration**
-	* 2 days
-      * * **Language**
-	* Trainer language is English or German
-      * * **Material**
-	* * :doc:`/trainings/material/soup/python/basics/index`
-	  * :doc:`Complete Python material
-            </trainings/material/soup/python/index>`
-      * * **Related**
-	* * :doc:`/trainings/material/soup/linux/sysprog/index`
-	  * PDF Slides, :download:`sysprog
-            </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-      * * **Booking**
-	* :doc:`/trainings/info`
+      .. grid-item-card:: 
 
+         .. button-ref:: course-info
+   	    :ref-type: ref
+            :color: primary
+	    :expand:
+
+      .. grid-item-card:: Duration: 2 Days
+   
+      .. grid-item-card:: 
+   
+	 .. dropdown:: Related Courses
+
+	    * :doc:`index`
+	    * :doc:`network`
+	    * :doc:`multithreading`
+	    * :doc:`advanced`
+	      
+	    * :doc:`../linux-basics`
+            * :doc:`../kernel-programming-basics`
+            * :doc:`../embedded/embedded`
+            * :doc:`../embedded/raspi-hands-on`
+
+	 .. dropdown:: Slide Material
+
+	    * PDF Slides, :download:`sysprog
+              </trainings/material/pdf/020-linux-sysprog--en.pdf>`
 
 This introductory course gives an overview of the OS, the
 interconnections between its concepts, and how to program it.
