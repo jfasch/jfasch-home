@@ -21,11 +21,10 @@ add_executable(c++11-consteval-add-function consteval-add-function.cpp)
 add_executable(c++11-consteval-constexpr-callchain consteval-constexpr-callchain.cpp)
 
 # --- constinit
-add_subdirectory(siof)
-#add_subdirectory(siof-constinit)
-
-add_executable(c++11-constinit-problem constinit-problem.cpp)
-add_executable(c++11-constinit-solution constinit-solution.cpp)
+add_subdirectory(siof-mutex)
+add_subdirectory(siof-string)
+add_subdirectory(siof-foo)
+add_subdirectory(siof-foo-solution)
 
 # --- const{expr,eval} if
 add_executable(c++11-constexpr-if-problem constexpr-if-problem.cpp)

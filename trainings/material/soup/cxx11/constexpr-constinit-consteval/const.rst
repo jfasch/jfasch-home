@@ -1,11 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-``const``
-=========
-
-.. contents::
-   :local:
+``const``, And What Compilers Can Do With It
+============================================
 
 Facts
 -----
@@ -14,8 +11,9 @@ Facts
 * Beware of ``const_cast<>`` though: modifying a variable *after*
   removing ``const`` is **undefined behavior**
 * Can be used in ``constexpr`` (but see :doc:`constexpr`)
-* *Might* be evaluated at compile time - no guarantee though
-  |longrightarrow| that is the point in ``constexpr``
+* *Might* be evaluated at compile time
+* *No guarantee though* |longrightarrow| that is the point in
+  ``constexpr``
 
 ``const`` Variables *Might* Disappear Entirely
 ----------------------------------------------

@@ -1,11 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-``if constexpr``
-================
-
-.. contents::
-   :local:
+``if constexpr``: Metaprogramming Made Easy
+===========================================
 
 Problem
 -------

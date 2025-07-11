@@ -1,11 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-``constexpr``
-=============
-
-.. contents::
-   :local:
+``constexpr``: Run C++ Code At Compile Time
+===========================================
 
 Compilers Always Did Runtime Work
 ---------------------------------

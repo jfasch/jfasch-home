@@ -21,8 +21,7 @@ endif()
 add_subdirectory(googletest)
 add_subdirectory(googlebenchmark)
 add_subdirectory(trainings/material/soup)
-
-add_subdirectory(trainings/log/detail/2020-03-30/code)
+add_subdirectory(trainings/log/detail)
 
 add_subdirectory(about/site/work-in-progress/fh-joanneum/2020/code)
 add_subdirectory(about/site/work-in-progress/fh-joanneum/2021)

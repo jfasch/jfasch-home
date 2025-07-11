@@ -1,11 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-``consteval``
-=============
-
-.. contents::
-   :local:
+``consteval``: Run C++ Code At Compile Time *Only*
+==================================================
 
 Why?
 ----
@@ -18,11 +15,14 @@ Why?
 
      constexpr int i = f();     // <-- force compiletime evaluation of f
 
-* Something stronger is needed: a function that *always* evaluates at
-  compiletime (|longrightarrow| no forcing needed)
+* Moreover: ``i`` is a constant
+* Something different is needed: a function that 
+
+  * *Always* evaluates at compiletime (|longrightarrow| no forcing needed)
+  * Value can be assigned to non-``const`` variable
+
 * |longrightarrow| ``consteval``
 * *Only available at compiletime*
-* Same as ``constexpr`` otherwise
 
 Usage: At Compiletime *Only*
 ----------------------------

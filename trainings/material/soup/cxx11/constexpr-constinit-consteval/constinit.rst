@@ -1,14 +1,18 @@
 .. include:: <mmlalias.txt>
 
 
-``constinit``
-=============
+``constinit`` And The *Static Initialization Order Fiasco*
+==========================================================
 
-.. contents::
-   :local:
+Problem: The *Static Initialization Order Fiasco*
+-------------------------------------------------
 
-Definition: Initialization Of Globals
--------------------------------------
+.. sidebar:: Documentation
+
+   * `Static Initialization Order Fiasco
+     <https://en.cppreference.com/w/cpp/language/siof>`__
+
+**Definition: Initialization Of Globals**
 
 * ``static`` locals
 
@@ -20,119 +24,128 @@ Definition: Initialization Of Globals
   * Initialization in definition order per compilation unit
   * **Initialization order of compilation units is undefined**
 
-* Since 1970-01-01: integrals are initialized at compile time
+* Since 1970-01-01 (`the epoch
+  <https://en.wikipedia.org/wiki/Epoch_(computing)>`__): integrals are
+  initialized at compile time |longrightarrow| this problem has been
+  brought about by C++
 
-Problem: The *Static Initialization Order Fiasco*
--------------------------------------------------
+SIOF Example: Mutex As A Global Variable (Demo Failure)
+-------------------------------------------------------
 
-.. sidebar:: Documentation
+.. sidebar:: Trainer's note
 
-   * `Static Initialization Order Fiasco
-     <https://en.cppreference.com/w/cpp/language/siof>`__
+   * Prepare two files, ``main.cpp`` and ``other.cpp``
+   * Morph those throughout this session
 
-.. literalinclude:: code/siof/point.h
-   :caption: :download:`code/siof/point.h`
+* This is a contrived example, but C++ Marketing stresses the
+  *constant initialized mutex* feature a lot - so here it is
+* Compilation unit #1 contains a global ``std::mutex`` (and ``main()``
+  btw, which just pauses the process)
+* Compilation unit #2 contains a global ``std::thread`` object *which
+  references the mutex*
+* Both ``the_mutex`` and ``the_thread`` are initialized at runtime
+  before main in *undefined order*
+* This is *undefined behavior* - the thread *could* run before the
+  mutex is initialized
+* To check, we link the program twice to reverse the order of
+  initialization (see :download:`code/siof-mutex/CMakeLists.txt`)
+
+.. literalinclude:: code/siof-mutex/CMakeLists.txt
+   :caption: :download:`code/siof-mutex/CMakeLists.txt`
    :language: c++
 
-.. list-table:: 
-   :align: left
-   :widths: auto
-
-   * * .. literalinclude:: code/siof/global-point-standalone.h
-          :caption: :download:`code/siof/global-point-standalone.h`
-	  :language: c++
-     * .. literalinclude:: code/siof/global-point-standalone.cpp
-          :caption: :download:`code/siof/global-point-standalone.cpp`
-          :language: c++
-
-.. list-table:: 
-   :align: left
-   :widths: auto
-
-   * * .. literalinclude:: code/siof/global-point-depends.h
-          :caption: :download:`code/siof/global-point-depends.h`
-          :language: c++
-     * .. literalinclude:: code/siof/global-point-depends.cpp 
-          :caption: :download:`code/siof/global-point-depends.cpp`
-          :language: c++
-
-.. literalinclude:: code/siof/main.cpp
-   :caption: :download:`code/siof/main.cpp`
+.. literalinclude:: code/siof-mutex/main.cpp
+   :caption: :download:`code/siof-mutex/main.cpp`
    :language: c++
 
-* Compile
+.. literalinclude:: code/siof-mutex/other.cpp
+   :caption: :download:`code/siof-mutex/other.cpp`
+   :language: c++
+
+SIOF Example: Global ``std::string`` Instances With Interdependencies (Demo Failure)
+------------------------------------------------------------------------------------
+
+* Similar situation: ``std::string my_string`` (defined in
+  ``main.cpp``) depends on ``other_string`` (defined in ``other.cpp``)
+* Demo failure: ``std::string`` constructor already appears to do
+  magic to paper over bad language definition
+* |longrightarrow| both programs show correct behavior - even though
+  ill-formed
 
 .. code-block:: console
 
-   $ g++ -c -o global-point-depends.o global-point-depends.cpp
-   $ g++ -c -o global-point-standalone.o global-point-standalone.cpp
-   $ g++ -c -o main.o main.cpp
+   $ ./siof-string/c++11-constinit-string-runtime-init
+   hello world
+   $ ./siof-string/c++11-constinit-string-runtime-init-reversed 
+   hello world
 
-* Link order wrong: "standalone" *after* "depends"
+.. literalinclude:: code/siof-string/CMakeLists.txt
+   :caption: :download:`code/siof-string/CMakeLists.txt`
+   :language: c++
+
+.. literalinclude:: code/siof-string/main.cpp
+   :caption: :download:`code/siof-string/main.cpp`
+   :language: c++
+
+.. literalinclude:: code/siof-string/other.cpp
+   :caption: :download:`code/siof-string/other.cpp`
+   :language: c++
+
+SIOF Example: Global ``Foo`` Instances With Interdependencies
+-------------------------------------------------------------
+
+* Becoming even more contrived - *although somewhat realistic*
+* ``Foo`` instances depending on each other, just like ``std::string`` above
+* |longrightarrow| Demo success
 
 .. code-block:: console
 
-   $ g++ main.o global-point-depends.o global-point-standalone.o
-   $ ./a.out 
-   global_point_standalone: (42,666)
-   global_point_depends: (0,0)
+   $ ./siof-foo/c++11-constinit-foo-runtime-init
+   42
+   $ ./siof-foo/c++11-constinit-foo-runtime-init-reversed 
+   708
 
-* Link order wrong: "standalone" *before* "depends"
+.. literalinclude:: code/siof-foo/CMakeLists.txt
+   :caption: :download:`code/siof-foo/CMakeLists.txt`
+   :language: c++
 
-.. code-block:: console
+.. literalinclude:: code/siof-foo/main.cpp
+   :caption: :download:`code/siof-foo/main.cpp`
+   :language: c++
 
-   $ g++ main.o global-point-standalone.o global-point-depends.o
-   $ ./a.out 
-   global_point_standalone: (42,666)
-   global_point_depends: (42,666)
+.. literalinclude:: code/siof-foo/other.cpp
+   :caption: :download:`code/siof-foo/other.cpp`
+   :language: c++
 
 Solution: ``constinit``
 -----------------------
 
+.. sidebar:: Trainer's note
 
+   * Start with making ``other_foo`` const-initialized/``constinit``
+   * See how ``Foo::Foo()`` has to be ``constexpr``
 
-The Problem
------------
+* ``other_foo`` needs to be available *before* someone depends on it
+* |longrightarrow| ``constinit``
+* Note that the depender cannot be ``constinit``
+* Note: ``my_foo`` cannot be ``constinit`` |longrightarrow| ``extern``
+  has no idea
 
-.. sidebar:: Documentation
+.. code-block:: console
 
-   * `std::mutex::mutex()
-     <https://en.cppreference.com/w/cpp/thread/mutex/mutex>`__
+   $ ./siof-foo-solution/c++11-constinit-foo-constinit
+   708
+   $ ./siof-foo-solution/c++11-constinit-foo-constinit-reversed 
+   708
 
-* ``std::mutex`` is initialized at runtime
-* ``unsigned`` is initialized at compiletime (integral)
-* |longrightarrow| *this is asymmetric*
-* *Want ``std::mutex`` to be initialized at compiletime!*
-* This should be possible because it has a ``constexpr`` default
-  constructor
-
-.. literalinclude:: code/constinit-problem.cpp
-   :caption: :download:`code/constinit-problem.cpp`
+.. literalinclude:: code/siof-foo-solution/CMakeLists.txt
+   :caption: :download:`code/siof-foo-solution/CMakeLists.txt`
    :language: c++
 
-Possible Solutions?
--------------------
-
-* Make ``sequence_lock`` a ``constexpr`` object
-
-  * **No:** ``lock()`` and ``unlock()`` are not ``const``
-
-* Live with runtime initialization
-
-  * **No:** I am programming a tiny embedded microcontroller and
-    cannot afford any additional startup time
-  * **No:** I have had enough of C++'s `Static Initialization Order
-    Fiasco <https://en.cppreference.com/w/cpp/language/siof>`__
-
-* ``constinit``
-
-  * **Yay**
-
-Solution: ``constinit``
------------------------
-
-.. literalinclude:: code/constinit-solution.cpp
-   :caption: :download:`code/constinit-solution.cpp`
+.. literalinclude:: code/siof-foo-solution/main.cpp
+   :caption: :download:`code/siof-foo-solution/main.cpp`
    :language: c++
 
-
+.. literalinclude:: code/siof-foo-solution/other.cpp
+   :caption: :download:`code/siof-foo-solution/other.cpp`
+   :language: c++

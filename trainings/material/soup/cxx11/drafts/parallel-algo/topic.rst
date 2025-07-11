@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Execution Policies (Incomplete Draft)
-=====================================
+Execution Policies And Parallel Algorithms (Incomplete Draft)
+=============================================================
 
 .. contents::
    :local:

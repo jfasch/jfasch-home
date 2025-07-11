@@ -1,8 +1,5 @@
-``const``, ``constexpr``, ``constinit``, ``consteval``
-======================================================
-
-.. contents::
-   :local:
+The ``constexpr`` Engine
+========================
 
 Topics
 ------
