@@ -1,5 +1,5 @@
-Layout Test Page
-================
+Layout Tests
+============
 
 .. toctree::
 

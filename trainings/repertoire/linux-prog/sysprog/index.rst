@@ -11,19 +11,12 @@ Linux Systems Programming (Course Series)
 =========================================
 
 .. sidebar::
+   :class: jf-course-description-sidebar
 
    .. grid:: 1
-      :class-container: jf-course-description-sidebar
 
-      .. grid-item-card:: 
-
-         .. button-ref:: course-info
-   	    :ref-type: ref
-            :color: primary
-	    :expand:
-
-      .. grid-item-card:: Duration: 3 days per 
-   
+      .. grid-item-card:: Duration: see each course
+      .. grid-item-card:: :doc:`/trainings/info`
       .. grid-item-card:: 
    
 	 .. dropdown:: Related Courses

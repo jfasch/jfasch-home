@@ -2,19 +2,12 @@ Linux Systems Programming: Virtual Memory, IPC, Shared Libraries
 ================================================================
 
 .. sidebar::
+   :class: jf-course-description-sidebar
 
    .. grid:: 1
-      :class-container: jf-course-description-sidebar
-
-      .. grid-item-card:: 
-
-         .. button-ref:: course-info
-   	    :ref-type: ref
-            :color: primary
-	    :expand:
 
       .. grid-item-card:: Duration: 2 Days
-   
+      .. grid-item-card:: :doc:`/trainings/info`
       .. grid-item-card:: 
    
 	 .. dropdown:: Related Courses

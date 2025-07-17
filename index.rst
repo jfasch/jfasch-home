@@ -15,21 +15,21 @@ Programming Linux
 
 .. grid:: 1 1 3 3
 
-   .. grid-item:: 
+   .. grid-item-card:: 
 
       .. button-ref:: course-pricing
 	 :ref-type: ref
          :color: primary
 	 :expand:
 
-   .. grid-item:: 
+   .. grid-item-card:: 
 
       .. button-ref:: course-mode
 	 :ref-type: ref
          :color: primary
 	 :expand:
 
-   .. grid-item:: 
+   .. grid-item-card:: 
 
       .. button-ref:: course-individual
 	 :ref-type: ref

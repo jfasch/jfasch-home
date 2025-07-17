@@ -3,9 +3,6 @@
 Pricing, Organizational
 =======================
 
-.. contents::
-   :local:
-
 .. _course-mode:
 
 Course Modes
