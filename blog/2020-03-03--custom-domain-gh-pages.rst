@@ -1,6 +1,6 @@
-.. post:: 2020-03-03
+.. post:: Mar 3, 2020
    :category: sphinx
-   :language: en
+
 
 Adding a Custom Domain to a Github Pages Project Site
 =====================================================
@@ -8,8 +8,8 @@ Adding a Custom Domain to a Github Pages Project Site
 .. in ablog, apparently, <sphinx-gh-pages> is not a document
    name. have to reference absolutely.
 
-In the :doc:`previous post </blog/2020/03/sphinx-gh-pages>` I pushed
-generated static site content to `Github Pages
+In the :doc:`previous post </blog/2020-03-02--sphinx-gh-pages>` I
+pushed generated static site content to `Github Pages
 <https://pages.github.com/>`__, to be served as
 `https://jfasch.github.io/jfasch-home-pages/
 <https://jfasch.github.io/jfasch-home-pages/>`__.
@@ -47,7 +47,7 @@ Configure a Subdomain, ``www.faschingbauer.me``
 
    (Enforcing HTTPS also makes sense, while we are at it)
 
-   .. image:: custom-domain.png
+   .. image:: 2020-03-03--custom-domain-gh-pages/custom-domain.png
 
    All this does is to create a :file:`docs/CNAME`; pull the changes,
 

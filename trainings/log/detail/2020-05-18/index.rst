@@ -32,7 +32,7 @@ Kursverlauf
 -----------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
 gebucht. Konzipiert als offene Schulung hat nur ein Teilnehmer gebucht

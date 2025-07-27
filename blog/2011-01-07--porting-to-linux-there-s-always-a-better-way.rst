@@ -1,8 +1,5 @@
-.. post:: 2011-01-07
+.. post:: Jan 1, 2011
    :category: linux, embedded
-   :author: Jörg Faschingbauer
-   :location: Hart bei Graz, Austria
-   :language: en
 
 Porting to Linux (There's Always A Better Way)
 ==============================================

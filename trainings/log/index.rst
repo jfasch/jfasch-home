@@ -376,7 +376,7 @@ Programmierung Grundlagen, anhand von Python (2022-04-05 - 2022-04-08)
 ----------------------------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
 gebucht.
@@ -400,7 +400,7 @@ Python Advanced (2022-03-15 - 2022-03-17)
 -----------------------------------------
 
 Der Kurs fand präsent *und* online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/python-vertiefung>`__
 gebucht.
@@ -411,7 +411,7 @@ Python Basics (2022-02-23 - 2022-02-25)
 ---------------------------------------
 
 Der Kurs fand präsent *und* online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/python-grundlagen>`__
 gebucht.
@@ -422,7 +422,7 @@ Programmierung Grundlagen, anhand von Python (2022-01-17 - 2022-01-10)
 ----------------------------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
 gebucht.
@@ -474,7 +474,7 @@ Programmierung Grundlagen, anhand von Python (2. und 3.8.2021)
 --------------------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
 gebucht.
@@ -503,7 +503,7 @@ Python Grundlagen (2021-05-03 - 2021-05-05)
 -------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
 gebucht.
@@ -514,7 +514,7 @@ Programmierung Grundlagen, anhand von Python (12. und 13.4.2021)
 -----------------------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/seminar-themen/programmierung/programmierung-grundlagen>`__
 gebucht.
@@ -557,7 +557,7 @@ Python Basics (22.2.2021 - 24.2.2021)
 -------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
 gebucht.
@@ -568,7 +568,7 @@ Programmierung Grundlagen, anhand von Python (13. und 14.1.2021)
 -----------------------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
 gebucht.
@@ -587,7 +587,7 @@ Python Basics (23.11.2020 - 25.11.2020)
 ---------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
 gebucht.
@@ -598,7 +598,7 @@ Linux und Raspberry Pi (3.11.2020, 4.11.2020, 17.11.2020)
 ---------------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/linux/unix-linux-fuer-entwickler/raspberry-pi-einfuehrung-in-embedded-linux>`__
 gebucht.
@@ -626,7 +626,7 @@ Ein Inhouse-Kurs bei einer Firma im schönen Gmunden. Ein homogenes
 Team aus 10 Teilnehmern, die die Kursführung aktiv mitgestaltet haben.
 
 Als Kursabschluss :doc:`war der Traunstein dran
-</blog/2020/09/traunstein>`, der in ganz Oberösterreich provokant
+</blog/2020-09-07--traunstein>`, der in ganz Oberösterreich provokant
 sichtbar ist und schon lange fällig war.
 
 (:doc:`Mehr ... <detail/2020-09-07/index>`)
@@ -635,7 +635,7 @@ Python Individualtraining (18.5.2020 - 19.5.2020)
 -------------------------------------------------
 
 Der Kurs fand online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` statt, und wurde über meinen
+</blog/2020-03-22--ms-teams-on-linux>` statt, und wurde über meinen
 Partner `tecTrain
 <https://www.tectrain.at/seminare/themen/programmierung/python-grundlagen>`__
 gebucht.
@@ -658,7 +658,7 @@ C++ für Embedded-Entwickler (30.3.2020 - 4.4.2020, bei einer Firma in Baden-Wü
 Eine Einführung in C++ für gestandene C-Embedded-Entwickler; die
 Zusatzaufgabe "Test Driven Development" hat uns durch den Kurs
 geführt. Der Kurs wurde online mittels :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` gehalten. Einschränkungen dadurch:
+</blog/2020-03-22--ms-teams-on-linux>` gehalten. Einschränkungen dadurch:
 keine.
 
 (:doc:`Mehr ... <detail/2020-03-30/index>`)

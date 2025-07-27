@@ -1,6 +1,6 @@
-.. post:: 2020-03-02
+.. post:: Mar 2, 2020
    :category: sphinx
-   :language: en
+
 
 Deploying Sphinx Generated Documentation to Github Pages
 ========================================================
@@ -27,7 +27,7 @@ were,
   <https://jfasch.github.io/jfasch-home-pages/>`__. Bending things to
   serve it as `https://www.faschingbauer.me
   <https://www.faschingbauer.me>`__ is the topic of a :doc:`companion
-  post </blog/2020/03/custom-domain-gh-pages>`.
+  post </blog/2020-03-03--custom-domain-gh-pages>`.
 
 Create "Site Publication Repo"
 ------------------------------
@@ -105,7 +105,7 @@ We intend to serve content from ``docs/`` - the *Publishing Source* in
 Github terminology -, so select "master branch / docs folder". Scroll
 to the "Github Pages" section, and select that constellation.
 
-.. image:: master-docs.png
+.. image:: 2020-03-02--sphinx-gh-pages/master-docs.png
 
 .. note::
 
@@ -145,10 +145,10 @@ that's another story.)
 
    If you don't know what this is then you probably haven't configured
    a *custom subdomain* for your Github Pages project. See :doc:`here
-   </blog/2020/03/custom-domain-gh-pages>` for how that works. This
-   step can be added as an afterthough so lets omit it for now,
-   remembering that we have to preserve the :file:`docs/CNAME` file
-   once we add a custom domain.
+   </blog/2020-03-02--sphinx-gh-pages>` for how that works. This step
+   can be added as an afterthough so lets omit it for now, remembering
+   that we have to preserve the :file:`docs/CNAME` file once we add a
+   custom domain.
 
    .. code-block:: console
 

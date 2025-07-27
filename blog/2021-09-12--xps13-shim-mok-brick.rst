@@ -1,6 +1,5 @@
-.. post:: 2021-09-12
+.. post:: Sep 12, 2021
    :category: linux
-   :language: en
 
 .. meta::
    :description: How to Brick a €1399 Dell XPS 13
@@ -205,7 +204,7 @@ This is where I stand. Blog post over. Nothing. Bloody firmware
 wasting CPU, fans running at highest rate, laptop case melting. New
 laptop ordered.
 
-.. image:: brick.jpg
+.. image:: 2021-09-12--xps13-shim-mok-brick/brick.jpg
 
 Diagnostics
 ...........

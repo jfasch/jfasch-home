@@ -1,8 +1,5 @@
-.. post:: 2012-04-03
+.. post:: Apr 3, 2012
    :category: linux
-   :author: Jörg Faschingbauer
-   :location: Hart bei Graz, Austria
-   :language: en
 
 "Why ``ps`` Sucks" or "Counting Memory Consumption"
 ===================================================

@@ -96,11 +96,9 @@ Programming Linux
 
 
 
-
-
 .. toctree::
    :hidden:
 
    trainings/index
    about/index
-   blog/index
+   Blog <blog/postlist>

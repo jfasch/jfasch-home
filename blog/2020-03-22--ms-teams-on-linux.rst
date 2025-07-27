@@ -1,6 +1,5 @@
-.. post:: 2020-03-22
+.. post:: Mar 22, 2020
    :category: microsoft
-   :language: en
 
 .. meta::
    :description: This post details how to run Microsoft Teams on Linux
@@ -142,7 +141,7 @@ doesn't; it keeps running in the background,
    1 S jfasch     62033   61764  5  80   0 - 1259666 -    17:04 ?        00:01:26 /usr/share/teams/teams --type=renderer --autoplay-policy=no-user-gesture-required --enable-features=SharedArrayBuffer --disable-features=SpareRendererForSitePerProcess --service-pipe-token=5585537623314398260 --lang=en-US --app-path=/usr/share/teams/resources/app.asar --user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) MicrosoftTeams-Preview/1.3.00.5153 Chrome/69.0.3497.128 Electron/4.2.12 Safari/537.36 --node-integration=false --webview-tag=false --no-sandbox --preload=/usr/share/teams/resources/app.asar/lib/pluginhost/preload.js --disable-remote-module --background-color=#fff --electron-shared-settings=eyJjci5jb21wYW55IjoiRWxlY3Ryb24iLCJjci5kdW1wcyI6IiIsImNyLmVuYWJsZWQiOmZhbHNlLCJjci5wcm9kdWN0IjoiRWxlY3Ryb24iLCJjci5zZXNzaW9uIjoiIiwiY3IudXJsIjoiIiwiY3IudmVyc2lvbiI6InY0LjIuMTIifQ== --num-raster-threads=4 --enable-main-frame-before-activation --service-request-channel-token=5585537623314398260 --renderer-client-id=20 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101 --msteams-process-type=pluginHost
    
 When I look at the ``SZ`` column of the ``ps`` output, that
-:doc:`makes me wish </blog/2012/04/Why-ps-sucks>` it would really
+:doc:`makes me wish </blog/2012-04-03--Why-ps-sucks>` it would really
 stop. It consumes insane amounts of memory doing nothing.
 
 Make it so,

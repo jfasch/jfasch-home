@@ -1,8 +1,5 @@
-.. post:: 2011-01-11
+.. post:: Jan 11, 2011
    :category: linux
-   :author: Jörg Faschingbauer
-   :location: Hart bei Graz, Austria
-   :language: en
 
 Saving Solid State Disk Life (Gentoo)
 =====================================

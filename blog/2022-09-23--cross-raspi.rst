@@ -1,9 +1,8 @@
-.. post:: 2022-09-23
+.. post:: Sep 23, 2022
    :category: embedded, linux, raspberry
-   :language: en
 
 .. meta::
-   :description: crosstool-ng - built Raspberry Pi Cross Toolchain 
+   :description: crosstool-ng - build Raspberry Pi Cross Toolchain 
    :keywords: cross development, raspberry pi, linux, crosstool-ng, gcc, c++
 
 Building A Cross Toolchain For The Raspberry Pi, Using ``crosstool-ng``
@@ -237,13 +236,13 @@ So, it's ``2.28``. Back on the *host* again, tune configuration:
 
 In ``C-library -> Version of glibc``, choose ``2.28``.
 
-.. image:: glibc-version.png
+.. image:: 2022-09-23--cross-raspi/glibc-version.png
    :scale: 50%
 
 Minor quirk: version ``2.28`` does not build without warnings, so one
 has to disable ``-Werror`` during its build,
 
-.. image:: werror.png
+.. image:: 2022-09-23--cross-raspi/werror.png
    :scale: 50%
 
 Important: GCC Version
@@ -277,7 +276,7 @@ is just a minor release, so it should work).
 
 In ``C compiler -> Version of gcc``, choose ``8.5.0``:
 
-.. image:: gcc-version.png
+.. image:: 2022-09-23--cross-raspi/gcc-version.png
    :scale: 50%
 
 Toolchain Build/Install
@@ -321,8 +320,8 @@ Simplest: C, ``<stdio.h>``
 
 Check for availability of ``libc``.
 
-.. literalinclude:: c-stdio.c
-   :caption: :download:`c-stdio.c`
+.. literalinclude:: 2022-09-23--cross-raspi/c-stdio.c
+   :caption: :download:`2022-09-23--cross-raspi/c-stdio.c`
    :language: c
 
 .. code-block:: console
@@ -337,8 +336,8 @@ C++, ``<iostream>``
 
 Check for availability of ``libstdc++``.
 
-.. literalinclude:: c++-iostream.cpp
-   :caption: :download:`c++-iostream.cpp`
+.. literalinclude:: 2022-09-23--cross-raspi/c++-iostream.cpp
+   :caption: :download:`2022-09-23--cross-raspi/c++-iostream.cpp`
    :language: c++
 
 .. code-block:: console
@@ -353,8 +352,8 @@ C++, ``<thread>``
 
 Check for availability of ``libpthread``.
 
-.. literalinclude:: c++-thread.cpp
-   :caption: :download:`c++-thread.cpp`
+.. literalinclude:: 2022-09-23--cross-raspi/c++-thread.cpp
+   :caption: :download:`2022-09-23--cross-raspi/c++-thread.cpp`
    :language: c++
 
 .. code-block:: console

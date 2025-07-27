@@ -28,7 +28,7 @@ Download And Install Toolchain Archive
      <https://drive.google.com/file/d/1FskznIXk4v_1JFyFbHtNLjC_WPDOLehH/view?usp=sharing>`__
 
 * Create a directory, say, ``~/x-tools`` (the :doc:`Crosstool-NG
-  </blog/2022/09/cross-raspi>` default name, you might well choose a
+  </blog/2022-09-23--cross-raspi>` default name, you might well choose a
   different name). We will use that directory as a well-known place to
   put our toolchains in. (Toolchains tend to be updated a lot, and
   keeping different versions together in one directory helps organize

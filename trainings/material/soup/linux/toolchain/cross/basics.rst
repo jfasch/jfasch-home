@@ -29,7 +29,7 @@ Cross?
 
    **See also**
 
-   * :doc:`/blog/2022/09/cross-raspi`
+   * :doc:`/blog/2022-09-23--cross-raspi`
    * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-build-docker-fedora`
 
 * Compiler runs on *host* machine (e.g. ``x86_64``)
@@ -73,7 +73,7 @@ Example: Cross Toolchain And ``sysroot`` Built With `crosstool-ng <https://cross
 
 .. sidebar:: See also
 
-   * :doc:`/blog/2022/09/cross-raspi`
+   * :doc:`/blog/2022-09-23--cross-raspi`
 
 By default, ``ct-ng`` installs the toolchain/sysroot combo in
 ``~/x-tools/``

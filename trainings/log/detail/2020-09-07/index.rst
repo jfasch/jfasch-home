@@ -485,4 +485,4 @@ climb the `Traunstein
 <https://www.alpenvereinaktiv.com/de/tour/am-zierlersteig-auf-den-traunstein-1691-m/10620837/>`__.
 
 :doc:`See here for the description and pictures from this
-extraordinary hike.  </blog/2020/09/traunstein>`
+extraordinary hike.  </blog/2020-09-07--traunstein>`

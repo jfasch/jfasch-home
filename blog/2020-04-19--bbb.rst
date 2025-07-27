@@ -1,6 +1,5 @@
-.. post:: 2020-04-19
+.. post:: Apr 19, 2020
    :category: training, linux
-   :language: en
 
 .. meta::
    :description: Using BigBlueButton for Online Training
@@ -17,7 +16,7 @@ Using BigBlueButton for Online Training
 
 It's the *Age of the Corona Virus*, and I have had opportunity to gain
 a little experience with :doc:`Microsoft Teams
-</blog/2020/03/ms-teams-on-linux>` and `Zoom <https://zoom.us/>`__
+</blog/2020-03-22--ms-teams-on-linux>` and `Zoom <https://zoom.us/>`__
 recently. I now know that doing my :doc:`trainings </trainings/index>`
 online *is definitely possible* - it is more a matter of attitude
 [#need_attitude]_ than a technical problem. Plus: I strongly believe
@@ -151,7 +150,7 @@ firewall rule,
 
 Firewall settings are important; here's what I have,
 
-.. image:: gcp-firewall.png
+.. image:: 2020-04-19--bbb/gcp-firewall.png
 
 Now login to the machine via SSH (clickable in the GCP window).
 
@@ -227,7 +226,7 @@ your VM instance listing), and
    
 Done. Point the browser at ``https://bbb.faschingbauer.co.at``, and you'll see BigBlueButton's front page.
 
-.. image:: bbb-front.jpg
+.. image:: 2020-04-19--bbb/bbb-front.jpg
    :scale: 80%
  
 .. danger::
@@ -246,14 +245,14 @@ Functionality Check
 Creating a room for a meeting is as easy as clicking on a big fat
 button,
 
-.. image:: bbb-room-create.png
+.. image:: 2020-04-19--bbb/bbb-room-create.png
    :scale: 120%
 
 Here's a screenshot from a tryout session that I had with the
 kids. Video and audio quality no different from other tools, from a
 layman's perspective. No glitches.
 
-.. image:: bbb-family.jpg
+.. image:: 2020-04-19--bbb/bbb-family.jpg
    :scale: 70%
 
 I haven't used the tool for a real-life training yet, as of

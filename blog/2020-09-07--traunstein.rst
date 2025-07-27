@@ -1,6 +1,5 @@
-.. post:: 2020-09-07
+.. post:: Sep 7, 2020
    :category: outdoor
-   :language: de
 
 .. meta::
    :description: Auf den Traunstein über den Zierlersteig:
@@ -65,9 +64,9 @@ So ungefähr ...
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: kaltenbachwildnis-1.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/kaltenbachwildnis-1.jpg
           :width: 150em
-     * .. thumbnail:: kaltenbachwildnis-2.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/kaltenbachwildnis-2.jpg
           :width: 150em
 
 ... bis man rechter Hand einen Felsstock, den *Adlerhorst* denke ich,
@@ -80,7 +79,7 @@ verfehlen: bergauf.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: kaltenbachwildnis-3-raus.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/kaltenbachwildnis-3-raus.jpg
           :width: 150em
 	  :title: Adlerhorst
 
@@ -97,15 +96,15 @@ voll mit Zecken (ich hatte elf davon).
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: zierlerberg-1.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/zierlerberg-1.jpg
           :width: 150em
-     * .. thumbnail:: zierlerberg-2.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/zierlerberg-2.jpg
           :height: 150em
-     * .. thumbnail:: zierlerberg-3.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/zierlerberg-3.jpg
           :width: 150em
-     * .. thumbnail:: zierlerberg-4.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/zierlerberg-4.jpg
           :width: 150em
-     * .. thumbnail:: zierlerberg-5.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/zierlerberg-5.jpg
           :height: 150em
 
 Vom Zierlerberg aus sieht man schon, was einem weiter blüht. Die linke
@@ -116,7 +115,7 @@ vertun, bitte ein Manderl aufstellen für die Nachwelt.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: zierlerberg-6.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/zierlerberg-6.jpg
           :height: 150em
 
 Die Rinne
@@ -139,7 +138,7 @@ ich zu sehr damit beschäftigt, mir in die Hose zu kacken.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: rinne-01.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/rinne-01.jpg
           :width: 150em
 
 Hier ein paar Eindrücke aus der Rinne. Wie gesagt, man verkoffert sich
@@ -149,13 +148,13 @@ hinterlassen.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: rinne-02.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/rinne-02.jpg
           :width: 150em
-     * .. thumbnail:: rinne-03.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/rinne-03.jpg
           :height: 150em
-     * .. thumbnail:: rinne-04.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/rinne-04.jpg
           :width: 150em
-     * .. thumbnail:: rinne-05.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/rinne-05.jpg
           :width: 150em
 
 Aufnahmen vom zunehmenden Sonnenuntergang über dem
@@ -169,17 +168,17 @@ exklusive.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: rinne-06.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/rinne-06.jpg
           :height: 150em
-     * .. thumbnail:: rinne-07.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/rinne-07.jpg
           :height: 150em
-     * .. thumbnail:: rinne-08.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/rinne-08.jpg
           :height: 150em
-   * * .. thumbnail:: rinne-09.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/rinne-09.jpg
           :height: 150em
-     * .. thumbnail:: rinne-10.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/rinne-10.jpg
           :height: 150em
-     * .. thumbnail:: rinne-11.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/rinne-11.jpg
           :height: 150em
 
 Zum Schluss noch eine Schnecke auf Jägerbrot im Schein der Stirnlampe.
@@ -187,7 +186,7 @@ Zum Schluss noch eine Schnecke auf Jägerbrot im Schein der Stirnlampe.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: rinne-12.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/rinne-12.jpg
           :height: 150em
 
 Gleich beim Ausstieg des `Hernlersteigs
@@ -201,7 +200,7 @@ geputzt haben. Backerbsen tuns auch.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: rinne-13.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/rinne-13.jpg
           :height: 150em
 
 Abstieg
@@ -214,23 +213,23 @@ ist, sich zu verziehen.
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: abstieg-01.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/abstieg-01.jpg
           :height: 150em
-     * .. thumbnail:: abstieg-02.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/abstieg-02.jpg
           :height: 150em
-     * .. thumbnail:: abstieg-03.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/abstieg-03.jpg
           :width: 150em
-   * * .. thumbnail:: abstieg-04.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/abstieg-04.jpg
           :height: 150em
-     * .. thumbnail:: abstieg-05.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/abstieg-05.jpg
           :width: 150em
-     * .. thumbnail:: abstieg-06.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/abstieg-06.jpg
           :height: 150em
-   * * .. thumbnail:: abstieg-07.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/abstieg-07.jpg
           :width: 150em
-     * .. thumbnail:: abstieg-08.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/abstieg-08.jpg
           :height: 150em
-     * .. thumbnail:: abstieg-09.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/abstieg-09.jpg
           :width: 150em
 
 Rückweg zum Hoisnwirt über den Miesweg. Wer braucht schon die Karibik?
@@ -238,7 +237,7 @@ Rückweg zum Hoisnwirt über den Miesweg. Wer braucht schon die Karibik?
 .. list-table::
    :align: left
 
-   * * .. thumbnail:: abstieg-10.jpg
+   * * .. thumbnail:: 2020-09-07--traunstein/abstieg-10.jpg
           :height: 150em
-     * .. thumbnail:: abstieg-11.jpg
+     * .. thumbnail:: 2020-09-07--traunstein/abstieg-11.jpg
           :height: 150em

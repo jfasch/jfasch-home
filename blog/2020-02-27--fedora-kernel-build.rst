@@ -1,6 +1,6 @@
-.. post:: 2020-02-27
+.. post:: Feb 27, 2020
    :category: kernel
-   :language: en
+
 
 Patching and Building the Fedora Kernel
 =======================================
@@ -111,9 +111,9 @@ pointer is not checked for NULL-ness.
 
 The fix is really easy,
 
-.. literalinclude:: displayport.c
+.. literalinclude:: 2020-02-27--fedora-kernel-build/displayport.c
    :language: c
-   :diff: displayport.c.orig
+   :diff: 2020-02-27--fedora-kernel-build/displayport.c.orig
 
 The bug is tracked as `Red Hat Bugzilla – Bug 1785972
 <https://bugzilla.redhat.com/show_bug.cgi?id=1785972>`__, and upstream
@@ -261,9 +261,9 @@ Edit the build specification, ``~/rpmbuild/SPECS/kernel.spec``, to
 * contain a descriptive version
 * apply the patch
 
-.. literalinclude:: kernel.spec
+.. literalinclude:: 2020-02-27--fedora-kernel-build/kernel.spec
    :language: shell
-   :diff: kernel.spec.orig
+   :diff: 2020-02-27--fedora-kernel-build/kernel.spec.orig
 
 Build the Kernel RPMs
 ---------------------

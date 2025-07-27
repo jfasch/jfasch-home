@@ -1,8 +1,6 @@
-.. post:: 2010-07-30
+.. post:: Jul 30, 2010
    :category: linux, embedded
-   :author: Jörg Faschingbauer
-   :location: Hart bei Graz, Austria
-   :language: en
+
 
 Beagleboard: How to Repair NAND (also known as 40W)
 ===================================================

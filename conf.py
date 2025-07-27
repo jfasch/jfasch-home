@@ -94,6 +94,19 @@ html_theme = 'pydata_sphinx_theme'
 html_theme_path = []
 html_theme_options = {}
 
+html_sidebars = {
+    "blog/*": [
+        "ablog/postcard.html",
+        "ablog/recentposts.html",
+        "ablog/tagcloud.html",
+        "ablog/categories.html",
+        "ablog/authors.html",
+        "ablog/languages.html",
+        "ablog/locations.html",
+        "ablog/archives.html",
+    ],
+}
+
 if True:
     html_context['default_mode'] = 'light'
     html_theme_options['logo'] = {
@@ -114,10 +127,10 @@ if True:
 # ablog
 if True:
     import ablog
-    post_date_format = '%Y-%m-%d'
+#    post_date_format = '%Y-%m-%d'
 
     blog_title = u'Jörg Faschingbauer'
-    blog_path = 'blog'
+    blog_path = 'blog/index'
 
     # a side effect of setting blog_baseurl is that atom.xml feeds
     # are generated altogether
@@ -128,14 +141,14 @@ if True:
     }
     blog_default_author = 'jfasch'
     
-    blog_locations = {
-        'daham': ('Graz, Austria', 'https://de.wikipedia.org/wiki/Graz'),
-    }
-    blog_default_location = 'daham'
-    fontawesome_link_cdn = 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
+    # blog_locations = {
+    #     'daham': ('Graz, Austria', 'https://de.wikipedia.org/wiki/Graz'),
+    # }
+    # blog_default_location = 'daham'
+    # fontawesome_link_cdn = 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
     
-    blog_feed_fulltext = True
-    blog_feed_length = 10
-    blog_feed_archives = True
+    # blog_feed_fulltext = True
+    # blog_feed_length = 10
+    # blog_feed_archives = True
 
     # feed is http://feeds.feedburner.com/JoergFaschingbauer

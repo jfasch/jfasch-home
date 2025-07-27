@@ -20,8 +20,8 @@ Courses can be delivered in the following formats:
   [#basteln_nicht]_. Verified platforms are
  
   * `Zoom <https://zoom.us/>`__
-  * :doc:`Microsoft Teams </blog/2020/03/ms-teams-on-linux>`
-  * :doc:`BigBlueButton </blog/2020/04/bbb>`
+  * :doc:`Microsoft Teams </blog/2020-03-22--ms-teams-on-linux>`
+  * :doc:`BigBlueButton </blog/2020-04-19--bbb>`
 
 Delivery/Material
 .................
