@@ -15,7 +15,7 @@ Uses In The Standard Library
    **See also**
 
    * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
-   * :doc:`/trainings/material/soup/cxx/cxx_stl_container_intro/topic`
+   * :doc:`/trainings/material/soup/cxx-livehacking/cxx_stl_container_intro/topic`
    
    **Documentation**
 

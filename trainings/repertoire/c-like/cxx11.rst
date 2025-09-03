@@ -20,7 +20,7 @@ An Introduction to Modern C++, In Three Days
       * * **Material**
 	* * :doc:`/trainings/material/soup/cxx03/index`
 	  * :doc:`/trainings/material/soup/cxx11/index`
-	  * :doc:`/trainings/material/soup/cxx/index`
+	  * :doc:`/trainings/material/soup/cxx-livehacking/index`
       * * **Related**
 	* * :doc:`cxx`
 	  * :doc:`design-patterns/design-patterns`

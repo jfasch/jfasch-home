@@ -10,7 +10,7 @@ Structural
 * Move C++03 and C++11, and "C++: Miscellaneous Live-Hacking" into new
   group, "C++"
 * *Depend* c++11 on c++03, topic by topic
-* Bring pieces of :doc:`/trainings/material/soup/cxx/index` to where
+* Bring pieces of :doc:`/trainings/material/soup/cxx-livehacking/index` to where
   they belong
 
 STL, Containers and Algorithms

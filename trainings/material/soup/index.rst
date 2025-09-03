@@ -11,7 +11,7 @@ Complete Slide Material
    cxx11/index
    cxx-design-patterns/index
    cxx-todo/index
-   cxx/index
+   cxx-livehacking/index
    cxx-code/index
    cxx-exercises/index
    cmake/index

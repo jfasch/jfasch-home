@@ -30,7 +30,7 @@ C and C++ Programming
 	 .. dropdown:: Slide Material
 
             * :doc:`/trainings/material/soup/c/index`
-            * :doc:`/trainings/material/soup/cxx/index`
+            * :doc:`/trainings/material/soup/cxx-livehacking/index`
             * :doc:`/trainings/material/soup/cxx03/index`
             * :doc:`/trainings/material/soup/cxx11/index`
             * :doc:`/trainings/material/soup/cxx-design-patterns/index`

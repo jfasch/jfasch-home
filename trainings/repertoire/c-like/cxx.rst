@@ -23,7 +23,7 @@ C++: Introduction
       * * **Material**
 	* * :doc:`/trainings/material/soup/cxx03/index`
 	  * :doc:`/trainings/material/soup/cxx11/index`
-	  * :doc:`/trainings/material/soup/cxx/index`
+	  * :doc:`/trainings/material/soup/cxx-livehacking/index`
       * * **Related**
 	* * :doc:`cxx11`
 	  * :doc:`design-patterns/design-patterns`
