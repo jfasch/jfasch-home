@@ -8,7 +8,7 @@
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
+   * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
 
 .. contents::
    :local:

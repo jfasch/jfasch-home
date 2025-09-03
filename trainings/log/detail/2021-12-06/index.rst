@@ -280,12 +280,12 @@ Modularization
 C++ and OO (Classes)
 ....................
 
-* :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
+* :doc:`/trainings/material/soup/cxx/cxx03/001-introduction/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-default`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-custom`
 
-  * :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-to-cxx-ctor/exercise`
+  * :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/user-to-cxx-ctor/exercise`
 
 Modularization (again)
 ......................
@@ -315,15 +315,15 @@ Modularization: Repeating Important Topics (Quickly)
 Classes (continued)
 ...................
 
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-dtor`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/object-copy`
 
   * Livehacking: `Writing a string class by hand: resource management
     and copy
     <https://github.com/jfasch/2021-12-06/tree/main/live-hacking/mystring>`__
     
   
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
 
   Livehacking:
 
@@ -334,24 +334,24 @@ Classes (continued)
   * `Explaining "immediate if"
     <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/iif.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
 
-  * :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-simple-method/exercise`
+  * :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/user-simple-method/exercise`
 
 2022-01-27
 ----------
 
 * Good-morning-exercise:
-  :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-access-methods/exercise`
+  :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/user-access-methods/exercise`
 
   (See
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+  :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
   for ``private`` and *access methods*)
 
   Solution see `here
   <https://github.com/jfasch/2021-12-06/tree/main/exercises/joerg/userdb>`__
 
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
 
   Livehacking
 
@@ -362,10 +362,10 @@ Classes (continued)
 
   Exercise
 
-  * :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-const/exercise`
+  * :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/user-const/exercise`
 
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
 
   Livehacking: excursion, back to *parameter passing*
 
@@ -387,28 +387,28 @@ Classes (continued)
 2022-01-28
 ----------
 
-* :doc:`/trainings/material/soup/cxx03/exercises-userdb/user-default-ctor/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/user-default-ctor/exercise`
 
 Standard Template Library: Container Templates
 ..............................................
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/010-basics/topic`
 
   Livehacking: pointer arithmetic, using a C array of ``struct User``:
   `user-pointerarith.cpp
   <https://github.com/jfasch/2021-12-06/blob/main/userdb/user-pointerarith.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/exercises-userdb/userdb-vector/exercise`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/lower_bound`
-* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/index`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/userdb-vector/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/sort`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/binary_search`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/lower_bound`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/index`
 
 2022-01-31
 ----------
 
-* :doc:`/trainings/material/soup/cxx03/exercises-userdb/userdb-insert/exercise`
-* :doc:`/trainings/material/soup/cxx03/exercises-userdb/userdb-search/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/userdb-insert/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/userdb-search/exercise`
 
 2022-02-01
 ----------
@@ -438,7 +438,7 @@ Functors
 Operator Overloading
 ....................
 
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/070-operators/topic`
 * Live-hacking: `operator-overloading.cpp
   <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/operator-overloading.cpp>`__
 
@@ -461,7 +461,7 @@ Unified Modeling Language (UML)
 Exercise (Using All From Today)
 ...............................
 
-* :doc:`/trainings/material/soup/cxx03/exercises-userdb/userdb-search-find_if/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/userdb-search-find_if/exercise`
 
   For those who chose to return a pointer from
   ``UserDB::search_by_lastname()`` ... this is how to convert a
@@ -498,16 +498,16 @@ Associative Container: ``std::map``
   * Introducing *Lambda*: `sort-lambda.cpp
     <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/functors/sort-lambda.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/index`
 
   Not much in there though |longrightarrow| live hacking
 
 Exceptions, and Exception Handling
 ..................................
 
-* :doc:`/trainings/material/soup/cxx03/040-exceptions/010-basics/topic`
-* :doc:`/trainings/material/soup/cxx03/040-exceptions/020-try-catch/topic`
-* :doc:`/trainings/material/soup/cxx03/exercises-userdb/userdb-search-notfound-exception/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/040-exceptions/010-basics/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/040-exceptions/020-try-catch/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-userdb/userdb-search-notfound-exception/exercise`
 * Livehacking
 
   * Original problem: clumsy (but comprehensive) C-style error
@@ -533,13 +533,13 @@ Exceptions, and Exception Handling
   Point``: `live-hacking/ostream-operator.cpp
   <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/ostream-operator.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/exercises-misc/american-flag/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-misc/american-flag/exercise`
 
   One possible solution, `american-flag.cpp
   <https://github.com/jfasch/2021-12-06/blob/main/exercises/joerg/american-flag.cpp>`__. Slightly
   over-engineered, to show how you write your own ``operator<<()``.
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/exercises/reverse-string/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/exercises/reverse-string/exercise`
 
   Solution alternatives:
 
@@ -552,7 +552,7 @@ Exceptions, and Exception Handling
   * ``std::reverse_copy<>()``: `reverse-string-reverse-copy.cpp
     <https://github.com/jfasch/2021-12-06/blob/main/live-hacking/reverse-string-reverse-copy.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/exercises-misc/sum-integers-from-stdin/exercise`
+* :doc:`/trainings/material/soup/cxx/cxx03/exercises-misc/sum-integers-from-stdin/exercise`
 
   Solution (a history of iteration in C++, to the point where we do
   not iterate but use std::accumulate<>() instead): `sum-ints.cpp
@@ -571,18 +571,18 @@ Exceptions, and Exception Handling
 C++11: A New Language
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/index`
 
 Dynamic Allocation, Smart Pointers
 ..................................
 
 * Dynamic memory allocation
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/index`
 
 Multithreading
 ..............
 
-* :doc:`/trainings/material/soup/cxx11/multithreading/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/index`
 * :doc:`/trainings/material/soup/linux/sysprog/posix-threads/040-mutex/topic`
 
 Live hacked:

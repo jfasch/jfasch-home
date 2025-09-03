@@ -577,9 +577,6 @@ jjj
 .. rubric:: Footnotes
 .. [#yocto_tried] I sure tried no matter what they say, but ran into
                   build error over and over.
-.. [#old_fart] jjj better wording jjj Developing myself a little
-               further from time to time is not a bad idea, even if it
-               is only to know a little better what you *don't* want.
 .. [#cgroups_docker] Naturally, Docker also uses cgroups to implement
                      the isolation that it provides.
 .. [#empty_is_not_fail] I would have expected an error message rather

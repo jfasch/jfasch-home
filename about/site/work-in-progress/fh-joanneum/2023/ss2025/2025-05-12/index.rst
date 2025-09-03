@@ -10,7 +10,7 @@
 C++ Material
 ------------
 
-* :doc:`/trainings/material/soup/cxx11/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/strongly-typed-enums/topic`
 
 Some Git
 --------

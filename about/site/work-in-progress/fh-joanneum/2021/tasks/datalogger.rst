@@ -14,7 +14,7 @@
    * `std::vector
      <https://en.cppreference.com/w/cpp/container/vector>`__
    * `std::pair <https://en.cppreference.com/w/cpp/utility/pair>`__
-   * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx03/900-standard-library-miscellanea/string/topic`
 
 Acquisition loop, left (sensors), right (a CSV file?
 Terminal/``std::cout``?). Sketch that in spaghetti style

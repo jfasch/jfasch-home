@@ -34,7 +34,7 @@ always backwards compatible with its origins. In 2011, C++ got a major
 overhaul which is still ongoing. It is not always easy for someone who
 is new to C++ to understand why things are how they are.
 
-:doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
+:doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking`
 tries to draw the boundary between the old and new C++.
 
 (Omitting material from threading onwards)
@@ -43,16 +43,16 @@ Basic C++: Classes
 ..................
 
 From
-:doc:`/trainings/material/soup/cxx03/020-data-encapsulation/index`
+:doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/index`
 
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/c`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-custom`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-default`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
 
 See `livehacking/point.cpp
 <https://github.com/jfasch/2024-09-30/blob/main/livehacking/point.cpp>`__
@@ -94,12 +94,12 @@ Morning Wakeup
 More About Classes
 ..................
 
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-default`
 
   * Show ``int i{};``
   * Show how default ctor uses that
   * Show how default ctor is not generated when explicit ctor is in place
-  * :doc:`/trainings/material/soup/cxx11/oo/default`
+  * :doc:`/trainings/material/soup/cxx/cxx11/oo/default`
 
   See
 
@@ -109,13 +109,13 @@ More About Classes
     `livehacking/point-default-init.cpp
     <https://github.com/jfasch/2024-09-30/blob/main/livehacking/point-default-init.cpp>`__
 
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`, 
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-custom`, 
+  :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/initializer-list`
 
   * ``class point``: Show how code does not compile when members are
     ``const``
   * |longrightarrow|
-    :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
+    :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/initializer-list`
 
   See `livehacking/point-const-members.cpp
   <https://github.com/jfasch/2024-09-30/blob/main/livehacking/point-const-members.cpp>`__
@@ -126,7 +126,7 @@ Preparing for 2nd exercise (``class FileSensor``)
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/unittest/index`
-   * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/filesystem/topic`
    * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
 
 * Sketch a test for a sensor that reads from a file
@@ -136,7 +136,7 @@ Preparing for 2nd exercise (``class FileSensor``)
 
 * :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/screenplay` 
   (from :doc:`/trainings/material/soup/unittest/index`)
-* :doc:`/trainings/material/soup/cxx11/filesystem/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/filesystem/topic`
 * ``<fstream>`` short livehack
 
 Exercise: ``class FileSensor``
@@ -163,18 +163,18 @@ Morning Wakeup
 Inheritance, And Polymorphism
 .............................
 
-From :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+From :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/index`
 
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/pure-virtual`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/basics`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/virtual-method`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/pure-virtual`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/destructor`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/interface`
 
 C++11: additional keywords
 
-* :doc:`/trainings/material/soup/cxx11/oo/override`
-* :doc:`/trainings/material/soup/cxx11/oo/final`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/final`
 
 Livehacked outcome in `livehacking/inheritance.cpp
 <https://github.com/jfasch/2024-09-30/blob/main/livehacking/inheritance.cpp>`__
@@ -183,7 +183,7 @@ Exercise
 ........
 
 * Like
-  :doc:`/trainings/material/soup/cxx-exercises/sensor-interface/sensor-interface`,
+  :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-interface/sensor-interface`,
   but with our sensors.
 * Project plan
 
@@ -243,16 +243,16 @@ Project Work (Tests err Requirements)
 Resource Management: Copy
 .........................
 
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
-* :doc:`/trainings/material/soup/cxx11/oo/delete`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-dtor`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/copy-basics`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/object-copy`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/delete`
 
 Smart Pointers: ``std::shared_ptr<>``
 .....................................
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/introduction/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/shared-ptr/topic`
 
 Day 5
 -----
@@ -273,15 +273,15 @@ Morning Wakeup
 Smart Pointers: ``std::unique_ptr<>``
 .....................................
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
 
 Resource Management: Move
 .........................
 
-* :doc:`/trainings/material/soup/cxx11/move/overview`
-* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/move/afterword`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/afterword`
 
 See `livehacking/string.cpp
 <https://github.com/jfasch/2024-09-30/blob/main/livehacking/string.cpp>`__
@@ -311,7 +311,7 @@ class that does the physical output.
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/concepts/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/concepts/index`
 
 See
 `embedded-nonvirtual-polymorphic-pointers/toolcase/can/CanDataSink.h
@@ -320,7 +320,7 @@ See
 Note that templates, instantiated with parameter types that are
 lacking required functionality, can cause a compiler to frustrate
 developers. :doc:`Concepts
-</trainings/material/soup/cxx11/concepts/index>`
+</trainings/material/soup/cxx/cxx11/concepts/index>`
 are a newer language feature to prevent such situations.
 
 Eliminating ``virtual``: using ``std::variant``
@@ -328,13 +328,13 @@ Eliminating ``virtual``: using ``std::variant``
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/lambda/index`
-   * :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
+   * :doc:`/trainings/material/soup/cxx/cxx11/lambda/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/any-variant-optional/variant`
 
 * Show function call operator (``operator()(...)``), and Lambdas:
   `livehacking/lambda.cpp
   <https://github.com/jfasch/2024-09-30/blob/main/livehacking/lambda.cpp>`__
-* :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`, and ``std::visit``: 
+* :doc:`/trainings/material/soup/cxx/cxx11/any-variant-optional/variant`, and ``std::visit``: 
   `livehacking/variant.cpp <https://github.com/jfasch/2024-09-30/blob/main/livehacking/variant.cpp>`__
 
 **Idea**
@@ -361,12 +361,12 @@ hold a fixed number of *unrelated* alternative pointer types. Advantages:
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/concepts/index`
-   * :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
+   * :doc:`/trainings/material/soup/cxx/cxx11/concepts/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/any-variant-optional/variant`
 
 * No ``virtual``. The alternatives only need to match the requirements
   (see :ref:`course-2024-09-30-candatasink-template`); :doc:`Concepts
-  </trainings/material/soup/cxx11/concepts/index>`
+  </trainings/material/soup/cxx/cxx11/concepts/index>`
   could additionally be used to check requirements.
 * Dynamic dispatch is done using `std::visit`, using the
   ``std::variant``'s type discriminator, with the effect that the
@@ -389,7 +389,7 @@ Approach 2: Alternative Objects In A ``std::variant``
 `````````````````````````````````````````````````````
 
 As a case study (and to show :doc:`Move Semantics
-</trainings/material/soup/cxx11/move/index>`
+</trainings/material/soup/cxx/cxx11/move/index>`
 in action), :ref:`course-2024-09-30-approach-1` is modified to cram
 entire objects in a ``std::variant``.
 

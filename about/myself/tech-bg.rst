@@ -73,7 +73,7 @@ Programming Languages
    * :doc:`/trainings/repertoire/c-like/c`
    * :doc:`/trainings/repertoire/c-like/c-advanced`
    * :doc:`/trainings/repertoire/c-like/cxx`
-   * :doc:`/trainings/material/soup/cxx11/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/index`
    * :doc:`/trainings/repertoire/linux-prog/bash`
 
 Over the years, many programming languages happened. C++ is my mother

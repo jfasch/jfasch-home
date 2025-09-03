@@ -25,10 +25,10 @@ The C++ Programming Language (2021-07-12 - 2021-07-16)
 	* :doc:`/trainings/material/soup/c/index`
       * * C++03
 	* :download:`C++03 </trainings/material/pdf/055-c++03.pdf>`
-	* :doc:`/trainings/material/soup/cxx03/index`
+	* :doc:`/trainings/material/soup/cxx/cxx03/index`
       * * C++11
 	* :download:`C++11 </trainings/material/pdf/056-c++11.pdf>`
-	* :doc:`/trainings/material/soup/cxx11/index`
+	* :doc:`/trainings/material/soup/cxx/cxx11/index`
       * * CMake
 	* :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
 	*
@@ -95,9 +95,9 @@ Recapitulate some C
 Jump into C++
 .............
 
-* :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
+* :doc:`/trainings/material/soup/cxx/cxx03/001-introduction/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-dtor`
 
 Exercise
 ........
@@ -136,21 +136,21 @@ Regular Topics
 
 * Constructor, Destructor, Copy
 
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-dtor`
   
     The rest of it. Yesterday we only got to the plain ``point`` stuff
     where no resource management is necessary.
   
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/object-copy`
 
 * Functions and Methods
     
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/060-static/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/070-operators/topic`
 
 Exercises
 .........
@@ -172,17 +172,17 @@ Regular Topics
 
 * Templates
 
-  * :doc:`/trainings/material/soup/cxx03/050-templates/010-function-templates/topic`
-  * :doc:`/trainings/material/soup/cxx03/050-templates/020-class-templates/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/050-templates/010-function-templates/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/050-templates/020-class-templates/topic`
 
 * Standard Template Library: Container Templates
 
-  * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/index`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/010-basics/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/sort`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/find`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/binary_search`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/index`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/index`
 
 Toolchain: C/C++ Build (How Complicated Can Things Be?)
 .......................................................
@@ -289,8 +289,8 @@ Regular Topics
   <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/functor.cpp>`__
 * Exceptions
 
-  * :doc:`/trainings/material/soup/cxx03/040-exceptions/010-basics/topic`
-  * :doc:`/trainings/material/soup/cxx03/040-exceptions/020-try-catch/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/040-exceptions/010-basics/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/040-exceptions/020-try-catch/topic`
 
   Live-hacked, rudimentarily, into our project. See `here
   <https://github.com/jfasch/2021-06-14/blob/main/db-cpp/db-find.cpp>`__
@@ -300,7 +300,7 @@ Day 5
 -----
 
 * References recap
-  (:doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`)
+  (:doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`)
 * ``explicit``: another C++ trap/bug (automatic conversion), fixed by
   an ad-hoc solution - the ``explicit`` keyword, bolted onto what's
   there. `Here's
@@ -311,20 +311,20 @@ Day 5
   recource management and smart pointers.
 * Pointer classes ("smart pointers")
 
-  * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
 
     Although ``std::unique_ptr<>`` is the simpler of the two in what
     it does, its usage is more involved. Ownership transfer (this is
     what I like about it) is implemented using the outright genius
     :doc:`"move" mechanism (since C++11)
-    </trainings/material/soup/cxx11/move/index>`,
+    </trainings/material/soup/cxx/cxx11/move/index>`,
     and one needs to know a bit when the compiler fails to enforce the
     ownership transfer contract.
 
     Live-hacked that `here
     <https://github.com/jfasch/2021-06-14/blob/main/live-hacking/unique_ptr.cpp>`__.
 
-  * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/shared-ptr/topic`
 
     Didn't go through it in great detail (time was over
     anyway). Shared ownership, though, is easier explained than
@@ -337,12 +337,12 @@ Day X
 Smart Pointers, Recap
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
 
   .. image:: wacom-sketches/ptr-unique.png
      :scale: 50%
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/shared-ptr/topic`
 
   .. image:: wacom-sketches/ptr-shared.png
      :scale: 50%
@@ -350,7 +350,7 @@ Smart Pointers, Recap
 ``std::map``
 ............
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`. Livehackingly
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/index`. Livehackingly
   building an index into our `user database <https://github.com/jfasch/2021-06-14/blob/main/db-cpp/db.hpp>`__
 
 OO, and Polymorphism

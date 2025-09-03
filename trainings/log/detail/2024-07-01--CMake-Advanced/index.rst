@@ -110,7 +110,7 @@ From :doc:`/trainings/material/soup/cmake/advanced/index` ...
    :align: left
    :widths: auto
 
-   * * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+   * * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
      * :doc:`/trainings/material/soup/python/misc/mqtt/topic`
      * Dependencies in our project
    * * .. image:: composite.png

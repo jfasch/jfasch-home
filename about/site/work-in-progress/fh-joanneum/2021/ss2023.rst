@@ -272,8 +272,8 @@ Block 3: C++
 
        **OO Basics**
 
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/c`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
 
        (livehacked: `point.cpp
        <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__)
@@ -294,7 +294,7 @@ Block 3: C++
            implementation)
 	 * ``tests/`` is for *unit tests*
 
-       * :doc:`/trainings/material/soup/cxx-exercises/sensor-w1/sensor-w1`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-w1/sensor-w1`
 
    * * 2023-06-02
      * 
@@ -327,7 +327,7 @@ Block 3: C++
 
        **C++ Standard Library**
 
-       * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx11/filesystem/topic`
 
    * * 
      * 2023-06-07
@@ -336,9 +336,9 @@ Block 3: C++
 
        **Exercises**
 
-       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly`
-       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly`
-       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
 
        *Note*: see `point.cpp
        <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/point.cpp>`__
@@ -357,7 +357,7 @@ Block 3: C++
 	 * Prepare according to README (see Github project page)
          * Build as usual
          * Implement requirements:
-           :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
+           :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly`
 
        * *Upload to Moodle*
 
@@ -414,11 +414,11 @@ Block 3: C++
 
        * **More C++ Language Features**
 
-	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
 	   (livehacked: `const-and-refs.cpp <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/const-and-refs.cpp>`__)
-	 * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
 	   (livehacked: `const-and-refs.cpp <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/const-and-refs.cpp>`__)
-	 * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/initializer-list`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/initializer-list`
            (livehacked: `member-initialization.cpp <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/member-initialization.cpp>`__)
 
        * **C++ Standard Library:** ``std::vector`` 
@@ -427,15 +427,15 @@ Block 3: C++
            <https://github.com/jfasch/FH-ECE21/blob/main/livehacking/vector.cpp>`__
 	 * Documentation `std::vector on cppreference.com
 	   <https://en.cppreference.com/w/cpp/container/vector>`__)
-	 * :doc:`/trainings/material/soup/cxx11/range-for/index`
+	 * :doc:`/trainings/material/soup/cxx/cxx11/range-for/index`
 
        * **Homework**
 
 	 Using ``std::vector``
 
-         * :doc:`/trainings/material/soup/cxx-exercises/stl/vector`
-         * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
-         * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
+         * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/vector`
+         * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/filter-odd`
+         * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/filter-greater-10`
 
    * * 
      * 2023-06-19
@@ -446,11 +446,11 @@ Block 3: C++
 
        * Recap ``std::vector``
 
-         * :doc:`/trainings/material/soup/cxx-exercises/stl/vector`
-         * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
-         * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
+         * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/vector`
+         * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/filter-odd`
+         * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/filter-greater-10`
 
-       * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly`
 
 	 * Pull from our `Github project <https://github.com/jfasch/FH-ECE21>`__
 	 * Implement ``AveragingSensor_nopoly`` in
@@ -485,7 +485,7 @@ Block 3: C++
 	 * Prepare according to README (see Github project page)
          * Build as usual
          * Implement requirements:
-           :doc:`/trainings/material/soup/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
+           :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
 
        * *Upload to Moodle*
 

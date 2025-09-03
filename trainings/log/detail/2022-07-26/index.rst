@@ -112,7 +112,7 @@ the project are,
 Introduction
 ------------
 
-* :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
+* :doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking`
 
 Pythonicity (Thank You: Readablility and Writability)
 -----------------------------------------------------
@@ -120,23 +120,23 @@ Pythonicity (Thank You: Readablility and Writability)
 Range Based for Loops
 .....................
 
-* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for-map`
+* :doc:`/trainings/material/soup/cxx/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx/cxx11/range-for/range-based-for-map`
 
 Tuple Unpacking (err, Structured Binding)
 .........................................
 
-* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/structured-binding/topic`
 
 Duck Typing (err, ``auto``) Without A Duck
 ..........................................
 
-* :doc:`/trainings/material/soup/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/auto/topic`
 
 Exercise
 ........
 
-* :doc:`/trainings/material/soup/cxx11/exercises/bag-copy`
+* :doc:`/trainings/material/soup/cxx/cxx11/exercises/bag-copy`
 
   `Solution on Github: bag-copy.h
   <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-copy.h>`__
@@ -147,82 +147,82 @@ Things That Simply Deserved Fixing Since Ages
 Brace Initialization
 ....................
 
-From :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
+From :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/index`
 
-* :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
-* :doc:`/trainings/material/soup/cxx11/brace-initialization/implementor-view`
-* :doc:`/trainings/material/soup/cxx11/brace-initialization/mess`
+* :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/intro`
+* :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/implementor-view`
+* :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/mess`
 
 New OO keywords: override, final, default, delete
 .................................................
 
-* :doc:`/trainings/material/soup/cxx11/oo/override`
-* :doc:`/trainings/material/soup/cxx11/oo/final`
-* :doc:`/trainings/material/soup/cxx11/oo/delete`
-* :doc:`/trainings/material/soup/cxx11/oo/default`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/final`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/delete`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/default`
 
 Strongly Typed enum
 ...................
 
-* :doc:`/trainings/material/soup/cxx11/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/strongly-typed-enums/topic`
 
 Delegating Constructor
 ......................
 
-* :doc:`/trainings/material/soup/cxx11/delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/delegating-ctor/topic`
 
 ``nullptr``
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/miscellaneous2/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/miscellaneous2/topic`
 
 Smart Pointers
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`:
+From :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/index`:
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/exercises/bag-unique` (
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/introduction/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/exercises/bag-unique` (
   `Solution on Github: bag-unique.h
   <https://github.com/jfasch/2022-07-26/blob/main/exercises/bag-unique.h>`__)
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/weak-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/exercises/bag-shared`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/closing-words/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/shared-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/weak-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/exercises/bag-shared`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/closing-words/topic`
 
 Moving, “RValue References”
 ---------------------------
 
-* :doc:`/trainings/material/soup/cxx11/move/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/index`
 
 Functions (``std::bind<>``, ``std::function<>``, Lambdas)
 ---------------------------------------------------------
 
-From :doc:`/trainings/material/soup/cxx11/bind-function/index`:
+From :doc:`/trainings/material/soup/cxx/cxx11/bind-function/index`:
 
-* :doc:`/trainings/material/soup/cxx11/bind-function/010-bind/topic`
-* :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/bind-function/010-bind/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/bind-function/020-function/topic`
 
-From :doc:`/trainings/material/soup/cxx11/lambda/index`
+From :doc:`/trainings/material/soup/cxx/cxx11/lambda/index`
 
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor`
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor-pitfall`
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-is-functor`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-is-functor-pitfall`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-capture`
 
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
+From :doc:`/trainings/material/soup/cxx/cxx11/multithreading/index`:
 
-* :doc:`/trainings/material/soup/cxx11/multithreading/010-introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/multithreading/020-thread/topic`
-* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/mutex`
-* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/scoped-locking`
-* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/atomics`
-* :doc:`/trainings/material/soup/cxx11/multithreading/promise-future`
-* :doc:`/trainings/material/soup/cxx11/multithreading/condition-variable`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/010-introduction/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/040-locking-atomics/mutex`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/040-locking-atomics/scoped-locking`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/promise-future`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/condition-variable`
 
 Miscellaneous
 -------------
@@ -264,7 +264,7 @@ Miscellaneous
    * * ``chrono`` += how to sleep
      * Done in various live hacking session on the way; add to
        :doc:`slide material
-       </trainings/material/soup/cxx11/chrono/topic>`
+       </trainings/material/soup/cxx/cxx11/chrono/topic>`
    * * `Regular expression library
        <https://en.cppreference.com/w/cpp/regex>`__
      * `(Raw) string literal

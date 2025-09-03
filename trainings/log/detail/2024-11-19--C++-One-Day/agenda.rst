@@ -12,7 +12,7 @@ The "New C++": Fundamental Changes Since 2011
 
 .. sidebar:: Livehacking screenplay
 
-   * :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
+   * :doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking`
 
 A live-coded overview of what will follow, showing the cornerstones of
 the "new C++". Starting with a C++98 code base, we morph that into
@@ -35,52 +35,52 @@ Low Hanging Fruit
 Much of it has been said in the intro section, but let's quickly
 repeat ...
 
-* :doc:`/trainings/material/soup/cxx11/auto/topic`
-* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
-* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
-* :doc:`/trainings/material/soup/cxx11/any-variant-optional/variant`
-* :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/any-variant-optional/variant`
+* :doc:`/trainings/material/soup/cxx/cxx11/bind-function/020-function/topic`
 
 Memory Management
 -----------------
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/introduction/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
   (and a little :doc:`moving
-  </trainings/material/soup/cxx11/move/index>`)
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/weak-ptr/topic` (optional)
+  </trainings/material/soup/cxx/cxx11/move/index>`)
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/shared-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/weak-ptr/topic` (optional)
 
 Lambdas
 -------
 
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-capture`
 
 Multithreading
 --------------
 
-From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
+From :doc:`/trainings/material/soup/cxx/cxx11/multithreading/index`:
 
-* :doc:`/trainings/material/soup/cxx11/multithreading/020-thread/topic`
-* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/mutex`
-* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/scoped-locking`
-* :doc:`/trainings/material/soup/cxx11/multithreading/040-locking-atomics/atomics`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/020-thread/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/040-locking-atomics/mutex`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/040-locking-atomics/scoped-locking`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/040-locking-atomics/atomics`
 
 Optional (But Cool) Topics
 --------------------------
 
 From
-:doc:`/trainings/material/soup/cxx11/move/index`:
+:doc:`/trainings/material/soup/cxx/cxx11/move/index`:
 
-* :doc:`/trainings/material/soup/cxx11/move/overview`
-* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/move/afterword`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/afterword`
 
-From :doc:`/trainings/material/soup/cxx11/multithreading/index`:
+From :doc:`/trainings/material/soup/cxx/cxx11/multithreading/index`:
 communication primitives
 
-* :doc:`/trainings/material/soup/cxx11/multithreading/promise-future`
-* :doc:`/trainings/material/soup/cxx11/multithreading/condition-variable`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/promise-future`
+* :doc:`/trainings/material/soup/cxx/cxx11/multithreading/condition-variable`

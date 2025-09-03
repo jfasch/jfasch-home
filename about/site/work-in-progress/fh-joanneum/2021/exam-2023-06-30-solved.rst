@@ -138,7 +138,7 @@ C++
 ---
 
 (From
-:doc:`/trainings/material/soup/cxx03/exercises-misc/fh-questions`)
+:doc:`/trainings/material/soup/cxx/cxx03/exercises-misc/fh-questions`)
 
 .. list-table::
    :align: left

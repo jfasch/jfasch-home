@@ -30,7 +30,7 @@ Add MQTT Capability To Datalogger
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+   * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
 
 .. sidebar:: Documentation
 

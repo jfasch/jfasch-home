@@ -241,9 +241,9 @@ Miscellaneous Threading
 Design Patterns Overview
 ........................
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
-* :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/uml`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/oo-principles`
 * :doc:`Design patterns
-  </trainings/material/soup/cxx-design-patterns/index>`: problems,
+  </trainings/material/soup/cxx/cxx-design-patterns/index>`: problems,
   possible solutions
 

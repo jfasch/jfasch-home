@@ -187,36 +187,36 @@ Block 3: C++
      * 2022-06-07
      * 2022-06-08
      * 3
-     * * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo`
-       * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-loop-function`
-       * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-no-polymorphism`
+     * * :doc:`/trainings/material/soup/cxx/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-loop-function`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-no-polymorphism`
    * * 2022-06-09
      * 
      * 
      * 3
      * **More about C++: Classes and Objects**
 
-       * :doc:`/trainings/material/soup/cxx03/001-introduction/topic`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+       * :doc:`/trainings/material/soup/cxx/cxx03/001-introduction/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/c`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
 
    * * 
      * 2022-06-09
      * 2022-06-10
      * 3
-     * :doc:`/trainings/material/soup/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-random-sensor`
+     * :doc:`/trainings/material/soup/cxx/cxx-exercises/fh-sensor-oo-first-try/exercise-FH-sensor-oo-random-sensor`
    * * 2022-06-21
      * 
      * 
      * 3
-     * **More C++** from :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index`
+     * **More C++** from :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/index`
 
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/060-static/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/070-operators/topic`
 
        **Live-hacked material on Github**
 
@@ -229,16 +229,16 @@ Block 3: C++
      * 3
      * **Exercises**
 
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-point`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-rectangle`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/exercises-fh/class-point`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/exercises-fh/class-rectangle`
 
    * * 
      * 2022-06-28
      * 2022-06-28
      * 3
-     * * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
+     * * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-custom`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-default`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/copy-basics`
 
 	 Demo on `Github <https://github.com/jfasch/FH-ECE20>`__
 
@@ -247,8 +247,8 @@ Block 3: C++
 	 * `copy-good.h
            <https://github.com/jfasch/FH-ECE20/blob/main/src/c%2B%2B-school/copy-good.h>`__
 
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-dtor`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/object-copy`
 
 	 Demo on `Github <https://github.com/jfasch/FH-ECE20>`__
 
@@ -273,16 +273,16 @@ Block 3: C++
      * 3
      * **Test**
 
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-       * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/c`
+       * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/060-static/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/070-operators/topic`
 
        Exercises: 
 
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-point3d`
-       * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/exercises-fh/class-cuboid`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/exercises-fh/class-point3d`
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/exercises-fh/class-cuboid`

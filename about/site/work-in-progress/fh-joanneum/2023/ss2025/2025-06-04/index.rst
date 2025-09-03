@@ -10,8 +10,8 @@
 C++: References, ``auto``
 -------------------------
 
-* :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
-* :doc:`/trainings/material/soup/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/auto/topic`
 
 Group Project: Potential Tasks
 ------------------------------

@@ -17,7 +17,7 @@ Interfaces, Polymorphic Types
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/scenarios/concrete-to-polymorphic/topic` 
+   * :doc:`/trainings/material/soup/cxx/cxx11/scenarios/concrete-to-polymorphic/topic` 
 
 .. image:: polymorphic.jpg
 

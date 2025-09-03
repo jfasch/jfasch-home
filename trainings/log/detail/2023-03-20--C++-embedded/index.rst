@@ -80,39 +80,39 @@ Classes, Objects, Methods
 .........................
 
 * From
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/index`
+  :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/index`
 
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-custom`
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-default`
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/copy-basics`
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/ctor-dtor`
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/c`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-custom`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-default`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/copy-basics`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/ctor-dtor`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/object-copy`
 
-* From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index`
+* From :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/index`
 
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/060-static/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/070-operators/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/060-static/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/070-operators/topic`
 
 Exercises
 .........
 
-* :doc:`/trainings/material/soup/cxx-exercises/oo-shapes/shapes`
+* :doc:`/trainings/material/soup/cxx/cxx-exercises/oo-shapes/shapes`
 
 Miscellaneous
 .............
 
 * One Definition Rule (ODR), and ``static inline`` class members:
-  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/065-static-member-variables/topic`
+  :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/065-static-member-variables/topic`
 * ``constexpr`` explored. How is it used to populate the ``rodata``
   section and save RAM?
 
-  * :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
+  * :doc:`/trainings/material/soup/cxx/cxx11/constexpr-constinit-consteval/constexpr`
   * Sample code: `rodata.cpp
     <https://github.com/jfasch/2023-03-20/blob/main/livehacking/rodata.cpp>`__
 
@@ -126,19 +126,19 @@ Heavy Weight OO |:muscle:|
 ..........................
 
 * From
-  :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+  :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/index`
 
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/pure-virtual`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/basics`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/virtual-method`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/pure-virtual`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/destructor`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/interface`
 
 Resource Management Pitfalls
 ............................
 
 * Exploring object copy when resources have to be explicitly managed:
-  :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
+  :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/object-copy`
 
 Day 3
 -----
@@ -146,14 +146,14 @@ Day 3
 R-Value References/Moving, And Managed Pointers
 ...............................................
 
-* :doc:`/trainings/material/soup/cxx11/move/index`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/index`
 
 A Little Concurrency
 ....................
 
 * Only if there is time (and fun): have a look at
-  :doc:`/trainings/material/soup/cxx11/multithreading/index`
+  :doc:`/trainings/material/soup/cxx/cxx11/multithreading/index`
 
 Exercise
 ........
@@ -183,36 +183,36 @@ C++ Standard Library
 ....................
 
 * :doc:`Managed Pointers
-  </trainings/material/soup/cxx11/smart-pointers/index>`
+  </trainings/material/soup/cxx/cxx11/smart-pointers/index>`
 * Pointer Arithmetic Recap:
   :doc:`/trainings/material/soup/c/050-pointers-and-arrays/040-pointers-and-arrays/topic`
-* :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/010-basics/topic`
 * Basic Algorithms
 
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/for_each`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/copy`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/reverse`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/reverse_copy`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find_if`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/for_each`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/copy`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/reverse`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/reverse_copy`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/find`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/find_if`
 
 * Sorted Array Algorithms
 
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/lower_bound`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/sort`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/binary_search`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/lower_bound`
 
 * Sequential Containers
 
-  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/basics`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/list`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/basics`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/vector`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/list`
 
 * Associative Containers
 
-  * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/basics`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
-  * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/multimap`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/basics`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/map`
+  * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/multimap`
 
 Miscellaneous Topics
 ....................

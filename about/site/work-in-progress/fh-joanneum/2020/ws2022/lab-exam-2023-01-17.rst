@@ -8,7 +8,7 @@ Project Setup
 -------------
 
 * `Github Project (FH-ECE20-2023-01-17) <https://github.com/jfasch/FH-ECE20-2023-01-17>`__
-* :doc:`/trainings/material/soup/cxx-exercises/project-setup`
+* :doc:`/trainings/material/soup/cxx/cxx-exercises/project-setup`
 
 Exercises
 ---------
@@ -20,29 +20,29 @@ Exercises
 
    * * Exercise
      * Points
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/uniq`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/uniq`
      * 10
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-generic`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/filter-generic`
      * 8
    * *
      *
-   * * From :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/index` ...
+   * * From :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/index` ...
      *
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/insert-sunny`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/insert-sunny`
      * 6
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/lookup-sunny`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/lookup-sunny`
      * 3
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/remove-sunny`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/remove-sunny`
      * 3
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/insert-no-overwrite`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/insert-no-overwrite`
      * 4
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/lookup-not-found`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/lookup-not-found`
      * 3
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/remove-not-found`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/remove-not-found`
      * 4
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/size-const`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/size-const`
      * 1
-   * * :doc:`/trainings/material/soup/cxx-exercises/stl/sensor-repository/no-memleak`
+   * * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/sensor-repository/no-memleak`
      * 8
    * * **Total**
      * 50

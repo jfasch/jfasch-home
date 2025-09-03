@@ -21,21 +21,21 @@ C++: A One-Day Overview (2024-11-19 - 2024-11-21)
 
    **Material**
 
-   * :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking-oo`
+   * :doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking-oo`
 
 This was unusual: a one-day course based on
-:doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking-oo`,
+:doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking-oo`,
 given three times in a row [#groundhog-day]_, to three different
 groups at the same company.
 
 The day was woven around :doc:`the screenplay
-</trainings/material/soup/cxx11/introduction/overview-livehacking-oo>`,
+</trainings/material/soup/cxx/cxx11/introduction/overview-livehacking-oo>`,
 which I used to live-hack `2024-11-19/intro.cpp
 <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/intro.cpp>`__ -
 which is the final outcome.
 
 See :doc:`the screenplay
-</trainings/material/soup/cxx11/introduction/overview-livehacking-oo>`
+</trainings/material/soup/cxx/cxx11/introduction/overview-livehacking-oo>`
 to see how we got there. Any deviations (asked questions, discussions)
 are documented below.
 
@@ -46,7 +46,7 @@ Course Flow: Questions And Discussions
 --------------------------------------
 
 The following chapters correspond to sections in
-:doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking-oo`,
+:doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking-oo`,
 which are referred to in their respective sidebars.
 
 ``std::map``, And Pitfalls (:ref:`cxx11-overview-class-item-encap`)
@@ -59,8 +59,8 @@ which are referred to in their respective sidebars.
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
-   * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map-insert`
+   * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/map`
+   * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/map-insert`
    * :ref:`cxx_map_inserting`
 
 ``std::map``, when filled using ``tdl["something"] = Item("... blah
@@ -87,7 +87,7 @@ Brace Initialization
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/brace-initialization/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/index`
 
 Discussed the differences between ``{}`` and ``()``. See
 `2024-11-19/brace-init.cpp
@@ -107,18 +107,18 @@ Smart Pointers, And Move Semantics
 
    **Pointer Classes**
 
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-   * (Not covered) :doc:`/trainings/material/soup/cxx11/smart-pointers/weak-ptr/topic`
-   * :doc:`/trainings/material/soup/cxx11/smart-pointers/closing-words/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/introduction/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/shared-ptr/topic`
+   * (Not covered) :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/weak-ptr/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/closing-words/topic`
 
    **Move semantics, and Rvalue references**
 
-   * :doc:`/trainings/material/soup/cxx11/move/overview`
-   * :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
-   * :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
-   * :doc:`/trainings/material/soup/cxx11/move/afterword`
+   * :doc:`/trainings/material/soup/cxx/cxx11/move/overview`
+   * :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-string-move`
+   * :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-using-string-move`
+   * :doc:`/trainings/material/soup/cxx/cxx11/move/afterword`
 
 While using ``std::shared_ptr<>`` in `2024-11-19/intro.cpp
 <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/intro.cpp>`__,
@@ -136,7 +136,7 @@ While we were at it, we discussed related topics like
   `2024-11-19/rvo-or-not.cpp
   <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/rvo-or-not.cpp>`__
 * Moving and rvalue references in general
-  (:doc:`/trainings/material/soup/cxx11/move/index`)
+  (:doc:`/trainings/material/soup/cxx/cxx11/move/index`)
 * Dual implementation (move and copy) of, say,
   ``std::vector::push_back()``. Demo code in `2024-11-19/push-back-move.cpp
   <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/push-back-move.cpp>`__
@@ -151,11 +151,11 @@ Lambda
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/lambda/lambda`
-   * :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor`
-   * :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor-pitfall`
-   * :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
-   * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
+   * :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda`
+   * :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-is-functor`
+   * :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-is-functor-pitfall`
+   * :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-capture`
+   * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/sort`
 
 Transformed `2024-11-19/intro.cpp
 <https://github.com/jfasch/2024-11-19/blob/main/2024-11-19/intro.cpp>`__

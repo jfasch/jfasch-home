@@ -18,7 +18,7 @@ Integrate :doc:`datalogger` with the real world
   * Possibly add a number of built-in CPU sensors, just for fun
 
 * Sinks. A composite (see
-  :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`)
+  :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`)
   of
 
   * :doc:`datalogger-csv-sink`

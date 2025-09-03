@@ -18,9 +18,9 @@ An Introduction to Modern C++, In Three Days
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/cxx03/index`
-	  * :doc:`/trainings/material/soup/cxx11/index`
-	  * :doc:`/trainings/material/soup/cxx-livehacking/index`
+	* * :doc:`/trainings/material/soup/cxx/cxx03/index`
+	  * :doc:`/trainings/material/soup/cxx/cxx11/index`
+	  * :doc:`/trainings/material/soup/cxx/cxx-livehacking/index`
       * * **Related**
 	* * :doc:`cxx`
 	  * :doc:`design-patterns/design-patterns`

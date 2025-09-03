@@ -7,13 +7,7 @@ Complete Slide Material
    linux/index
    python/index
    c/index
-   cxx03/index
-   cxx11/index
-   cxx-design-patterns/index
-   cxx-todo/index
-   cxx-livehacking/index
-   cxx-code/index
-   cxx-exercises/index
+   cxx/index
    cmake/index
    clean-code/index
    unittest/index

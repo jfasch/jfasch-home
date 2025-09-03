@@ -23,32 +23,32 @@ OO: Recap
 
 * *What we know*: Constructor, Methods, Objects, ``this``
 
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
 
-  From :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index` ...
+  From :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/index` ...
 
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
   
 * *What we have*
 
   *Sensor-like* types
 
-  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
-  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-mock-nopoly` (`sensor-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-mock.h>`__)
-  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly` (`sensor-random.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-random.h>`__)
-  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
+  * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-sensors-core/sensor-const-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
+  * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-sensors-core/sensor-mock-nopoly` (`sensor-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-mock.h>`__)
+  * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-sensors-core/sensor-random-nopoly` (`sensor-random.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-random.h>`__)
+  * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-sensor-avg/sensor-avg-nopoly` (`sensor-avg.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/sensor-avg.h>`__)
 
   *Switch-like* types
 
-  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly` (`switch-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/switch-mock.h>`__)
+  * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly` (`switch-mock.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/switch-mock.h>`__)
 
   *Consumers*
 
-  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
-  * :doc:`/trainings/material/soup/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly` (`hysteresis.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/hysteresis.h>`__)
+  * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-display-led-stripe/display-led-stripe-nopoly`
+  * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-hysteresis/hysteresis-nopoly` (`hysteresis.h <https://github.com/jfasch/FH-ECE21/blob/main/toolcase/hysteresis.h>`__)
 
 Plan |:muscle:|
 ...............
@@ -72,18 +72,18 @@ OO: Polymorphism
 ................
 
 From
-:doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`:
+:doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/index`:
 
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/pure-virtual`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/basics`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/virtual-method`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/pure-virtual`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/destructor`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/interface`
 
 From
-:doc:`/trainings/material/soup/cxx11/index`:
+:doc:`/trainings/material/soup/cxx/cxx11/index`:
 
-* :doc:`/trainings/material/soup/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/override`
 
 Git Collaboration (via Github, but not necessarily): Forks And Pull Request
 ...........................................................................
@@ -117,20 +117,20 @@ OO: Design?
     * Dependencies: does it really need ``sensor-mock.h``?
     * |longrightarrow| UML sketch
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/uml`
 * |longrightarrow| Design patterns
-  (:doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`)
+  (:doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`)
 
 * What was that all for?
 
   * Structure: ``Sensor`` interface
-  * :doc:`/trainings/material/soup/cxx11/oo/override`
-  * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+  * :doc:`/trainings/material/soup/cxx/cxx11/oo/override`
+  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/oo-principles`
   * Design patterns (outlook)
 
-    * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
-    * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
-    * Many more: :doc:`/trainings/material/soup/cxx-design-patterns/index`
+    * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
+    * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
+    * Many more: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/index`
 
 Project
 .......
@@ -180,7 +180,7 @@ Project
 OO, And Software Development At Large
 .....................................
 
-* :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/oo-principles`
 
   See :doc:`tasks/sysfs-gpio-switch` and :doc:`tasks/boiling-pot` for
   why.
@@ -223,7 +223,7 @@ Updating A Fork From Upstream
 Container Templates (``std::map``)
 ..................................
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/map`
 
 Project
 .......
@@ -366,27 +366,27 @@ Project
 Relevant Topics
 ...............
 
-* :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+* :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
 * From
-  :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/index`
+  :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/index`
 
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/010-overloading/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/020-methods/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/040-this/topic`
-  * :doc:`/trainings/material/soup/cxx03/030-functions-and-methods/050-references/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/010-overloading/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/020-methods/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/040-this/topic`
+  * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
 
 * From
-  :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+  :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/index`
 
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/pure-virtual`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-  * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/basics`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/virtual-method`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/pure-virtual`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/destructor`
+  * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/interface`
 
 * SOLID (OO Design)
 
-  * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
+  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/oo-principles`
   * `SOLID on Wikipedia <https://en.wikipedia.org/wiki/SOLID>`__
 
 A Sample Exam

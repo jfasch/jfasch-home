@@ -48,11 +48,11 @@ for code.
 User's View
 ...........
 
-* :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/900-standard-library-miscellanea/string/topic`
 
 Exercise: Parse Lines From ``/etc/passwd``
 ------------------------------------------
 
 * Moodle submission: 
 * Exercise definition:
-  :doc:`/trainings/material/soup/cxx03/exercises-misc/passwd-parser/exercise`
+  :doc:`/trainings/material/soup/cxx/cxx03/exercises-misc/passwd-parser/exercise`

@@ -99,9 +99,9 @@ Quiz |:ninja:|
      * 
    * * Absolute paths are relative to the root directory
      * 
-   * * '.' refers to the currect working directory
+   * * '.' refers to the current working directory
      * 
-   * * '..' refers to the currect working directory of the parent
+   * * '..' refers to the current working directory of the parent
        process
      * 
 

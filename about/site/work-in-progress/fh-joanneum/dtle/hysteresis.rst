@@ -11,7 +11,7 @@ Exam: ``Hysteresis``
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+   * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
    * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
 
 Requirement

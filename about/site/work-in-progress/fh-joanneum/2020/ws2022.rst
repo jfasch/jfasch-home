@@ -24,21 +24,21 @@ Plan: Evolution
      * 3
      * Theory: C++ Inheritance
        
-       * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
-       * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
-       * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/pure-virtual`
+       * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/basics`
+       * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/virtual-method`
+       * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/pure-virtual`
 
    * * 
      * 2022-10-10
      * 3
      * Theory: C++ Interfaces
 
-       * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-       * :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+       * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/destructor`
+       * :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/interface`
 
        Exercise
 
-       * :doc:`/trainings/material/soup/cxx-exercises/sensor-interface/sensor-interface`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-interface/sensor-interface`
 
    * * 2022-10-31
      * 
@@ -48,21 +48,21 @@ Plan: Evolution
        * Theory: Design Patterns (some)
 
          * https://github.com/jfasch/FH-ECE20-patterns
-         * :doc:`/trainings/material/soup/cxx-design-patterns/uml/uml`
-         * :doc:`/trainings/material/soup/cxx-design-patterns/oo-principles`
-         * :doc:`/trainings/material/soup/cxx-design-patterns/sensor-hierarchy`
-         * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/uml`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/oo-principles`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/sensor-hierarchy`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
 
    * *
      * 2022-11-02
      * 3
      * 
 
-       * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
-       * :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector`
+       * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/010-basics/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/vector`
        * Continuing with Design Patterns
 
-         * :doc:`/trainings/material/soup/cxx-design-patterns/adapter/adapter`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
 
    * * 2022-11-11
      * 
@@ -71,10 +71,10 @@ Plan: Evolution
 
        * Continuing with Design Patterns
 
-	 * :doc:`/trainings/material/soup/cxx-design-patterns/composite/composite`
+	 * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
            (use ``std::vector<>`` to store multiple ``Sensor*``;
            :doc:`more information
-           </trainings/material/soup/cxx03/060-stl/040-sequential-containers/vector>`)
+           </trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/vector>`)
 
    * *
      * 2022-11-15
@@ -86,7 +86,7 @@ Plan: Evolution
      *
 
        * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`
-       * :doc:`/trainings/material/soup/cxx-exercises/sensor-w1/sensor-w1`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-w1/sensor-w1`
        
    * * 
      * 2022-11-29
@@ -121,8 +121,8 @@ Plan: Evolution
 
        * Excerpts from the C++ Standard Library
        
-	 * :doc:`/trainings/material/soup/cxx03/900-standard-library-miscellanea/string/topic`
-	 * :doc:`/trainings/material/soup/cxx11/filesystem/topic`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/900-standard-library-miscellanea/string/topic`
+	 * :doc:`/trainings/material/soup/cxx/cxx11/filesystem/topic`
 	 * Use case: detect W1 sensor *by address*
 
    * * 
@@ -131,7 +131,7 @@ Plan: Evolution
      * **Exercise**
 
        * Github project: https://github.com/jfasch/FH-ECE20-final
-       * :doc:`/trainings/material/soup/cxx-exercises/sensor-w1-factory/sensor-w1-factory`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-w1-factory/sensor-w1-factory`
        * Pi Toolchain file:
          :download:`/trainings/material/soup/linux/toolchain/raspberry-pi/armv8-rpi4-linux-gnueabihf.cmake`
 
@@ -140,7 +140,7 @@ Plan: Evolution
      * 3
      * **Lab Exam**
 
-       * :doc:`/trainings/material/soup/cxx-exercises/oo-shapes/shapes`
+       * :doc:`/trainings/material/soup/cxx/cxx-exercises/oo-shapes/shapes`
        * Grading :download:`see here (download CSV)
          <ws2022-lab-exam-1.csv>` (50 points are equivalent to 30%
          total semester share)
@@ -155,18 +155,18 @@ Plan: Evolution
 
        * **C++ Algorithms and Containers**
 
-       * :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
+       * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/010-basics/topic`
        * Excerpts from
-	 :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/index`
+	 :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/index`
 
-	 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/find_if`
-	 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/sort`
-	 * :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/binary_search`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/find_if`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/sort`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/binary_search`
 
        * Excerpts from
-	 :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
+	 :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/index`
 
-	 * :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/map`
+	 * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/map`
 
    * * 
      * 2023-01-17
@@ -178,15 +178,15 @@ Plan: Evolution
            <https://github.com/jfasch/FH-ECE20-2023-01-15>`__
          * *Project Setup*
 
-	   * :doc:`/trainings/material/soup/cxx-exercises/project-setup`
+	   * :doc:`/trainings/material/soup/cxx/cxx-exercises/project-setup`
 
 	 * *Exercise Descriptions*
 
-           * :doc:`/trainings/material/soup/cxx-exercises/stl/vector`
-           * :doc:`/trainings/material/soup/cxx-exercises/stl/map`
-           * :doc:`/trainings/material/soup/cxx-exercises/stl/algo`
-           * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-odd`
-           * :doc:`/trainings/material/soup/cxx-exercises/stl/filter-greater-10`
+           * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/vector`
+           * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/map`
+           * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/algo`
+           * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/filter-odd`
+           * :doc:`/trainings/material/soup/cxx/cxx-exercises/stl/filter-greater-10`
 
        * **Lab Exam**
 

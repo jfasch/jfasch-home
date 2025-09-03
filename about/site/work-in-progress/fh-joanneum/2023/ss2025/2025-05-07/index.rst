@@ -17,8 +17,8 @@ C++ Intro
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/c`
-   * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/cpp-introduction`
+   * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/c`
+   * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/cpp-introduction`
 
 * C implementation: https://github.com/jfasch/FH-STECE2023/tree/main/livehacking/point-c
 * C++ implementation: https://github.com/jfasch/FH-STECE2023/tree/main/livehacking/point-c++

@@ -6,7 +6,7 @@ One Slide
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/move/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/move/index`
 
 .. sidebar:: Documentation
 

@@ -25,44 +25,44 @@ C++: Advanced Topics (2023-12-04 - 2023-12-06)
 Day 1: Introduction: C++, A New Language
 ----------------------------------------
 
-* :doc:`/trainings/material/soup/cxx11/introduction/overview-livehacking`
+* :doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking`
 
 Pythonicity
 ...........
 
-* :doc:`/trainings/material/soup/cxx11/range-for/range-based-for`
-* :doc:`/trainings/material/soup/cxx11/structured-binding/topic`
-* :doc:`/trainings/material/soup/cxx11/auto/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/range-for/range-based-for`
+* :doc:`/trainings/material/soup/cxx/cxx11/structured-binding/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/auto/topic`
 
 Brace Initialization
 ....................
 
-* :doc:`/trainings/material/soup/cxx11/brace-initialization/intro`
-* :doc:`/trainings/material/soup/cxx11/brace-initialization/implementor-view`
-* :doc:`/trainings/material/soup/cxx11/brace-initialization/mess`
+* :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/intro`
+* :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/implementor-view`
+* :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/mess`
 
 New OO Features
 ...............
 
-* :doc:`/trainings/material/soup/cxx11/oo/override`
-* :doc:`/trainings/material/soup/cxx11/oo/final`
-* :doc:`/trainings/material/soup/cxx11/oo/delete`
-* :doc:`/trainings/material/soup/cxx11/oo/default`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/override`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/final`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/delete`
+* :doc:`/trainings/material/soup/cxx/cxx11/oo/default`
 
 Functions: ``std::function<>``, Lambdas
 .......................................
 
-From :doc:`/trainings/material/soup/cxx11/bind-function/index`:
+From :doc:`/trainings/material/soup/cxx/cxx11/bind-function/index`:
 
-* :doc:`/trainings/material/soup/cxx11/bind-function/010-bind/topic`
-* :doc:`/trainings/material/soup/cxx11/bind-function/020-function/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/bind-function/010-bind/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/bind-function/020-function/topic`
 
-From :doc:`/trainings/material/soup/cxx11/lambda/index`
+From :doc:`/trainings/material/soup/cxx/cxx11/lambda/index`
 
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda`
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor`
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda-is-functor-pitfall`
-* :doc:`/trainings/material/soup/cxx11/lambda/lambda-capture`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-is-functor`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-is-functor-pitfall`
+* :doc:`/trainings/material/soup/cxx/cxx11/lambda/lambda-capture`
 
 Day 2: Simply Getting Stuff Done
 --------------------------------
@@ -70,13 +70,13 @@ Day 2: Simply Getting Stuff Done
 Classic Polymorphism: Interfaces
 ................................
 
-:doc:`/trainings/material/soup/cxx03/inheritance-oo-design/index`
+:doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/index`
 
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/basics`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/virtual-method`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/pure-virtual`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/destructor`
-* :doc:`/trainings/material/soup/cxx03/inheritance-oo-design/interface`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/basics`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/virtual-method`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/pure-virtual`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/destructor`
+* :doc:`/trainings/material/soup/cxx/cxx03/inheritance-oo-design/interface`
 
 Look over sensor hierachy in our project:
 
@@ -90,23 +90,23 @@ Look over sensor hierachy in our project:
 Smart Pointers
 ..............
 
-From :doc:`/trainings/material/soup/cxx11/smart-pointers/index`
+From :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/index`
 
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/introduction/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/unique-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/shared-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/weak-ptr/topic`
-* :doc:`/trainings/material/soup/cxx11/smart-pointers/closing-words/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/introduction/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/shared-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/weak-ptr/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/closing-words/topic`
 
 Move Semantics
 ..............
 
-From :doc:`/trainings/material/soup/cxx11/move/index`
+From :doc:`/trainings/material/soup/cxx/cxx11/move/index`
 
-* :doc:`/trainings/material/soup/cxx11/move/overview`
-* :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
-* :doc:`/trainings/material/soup/cxx11/move/livehack-using-string-move`
-* :doc:`/trainings/material/soup/cxx11/move/afterword`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/overview`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-string-move`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-using-string-move`
+* :doc:`/trainings/material/soup/cxx/cxx11/move/afterword`
 
 Day 3: All The Rest
 -------------------
@@ -147,33 +147,33 @@ Moving, Roundup
 ```````````````
 
 * Discuss L/R-Values, and what compiler generates when (from
-  :doc:`/trainings/material/soup/cxx11/move/overview`)
+  :doc:`/trainings/material/soup/cxx/cxx11/move/overview`)
 * Hack a ``String``
 
-  * :doc:`/trainings/material/soup/cxx03/020-data-encapsulation/object-copy`
-  * :doc:`/trainings/material/soup/cxx11/move/livehack-string-move`
+  * :doc:`/trainings/material/soup/cxx/cxx03/020-data-encapsulation/object-copy`
+  * :doc:`/trainings/material/soup/cxx/cxx11/move/livehack-string-move`
 
 Containers And Algorithms
 .........................
 
-From :doc:`/trainings/material/soup/cxx03/060-stl/index`
+From :doc:`/trainings/material/soup/cxx/cxx03/060-stl/index`
 
-* :doc:`/trainings/material/soup/cxx03/060-stl/010-basics/topic`
-* :doc:`/trainings/material/soup/cxx03/060-stl/015-vector-copy-etc/topic`
-* :doc:`/trainings/material/soup/cxx03/060-stl/020-algorithm/index`
-* :doc:`/trainings/material/soup/cxx03/060-stl/040-sequential-containers/index`
-* :doc:`/trainings/material/soup/cxx03/060-stl/050-associative-containers/index`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/010-basics/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/015-vector-copy-etc/topic`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/020-algorithm/index`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/index`
+* :doc:`/trainings/material/soup/cxx/cxx03/060-stl/050-associative-containers/index`
 
 And Embedded?
 .............
 
-* :doc:`/trainings/material/soup/cxx11/drafts/embedded-problems/index`
-* :doc:`/trainings/material/soup/cxx11/constexpr-constinit-consteval/constexpr`
+* :doc:`/trainings/material/soup/cxx/cxx11/drafts/embedded-problems/index`
+* :doc:`/trainings/material/soup/cxx/cxx11/constexpr-constinit-consteval/constexpr`
 
 Still Untold
 ------------
 
-* :doc:`/trainings/material/soup/cxx11/strongly-typed-enums/topic`
-* :doc:`/trainings/material/soup/cxx11/delegating-ctor/topic`
-* :doc:`/trainings/material/soup/cxx11/miscellaneous2/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/strongly-typed-enums/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/delegating-ctor/topic`
+* :doc:`/trainings/material/soup/cxx/cxx11/miscellaneous2/topic`
 * :doc:`/trainings/material/soup/c/080-advanced-language-features/030-alignment/topic`

@@ -1,0 +1,16 @@
+Exercise: Proxy (Rounding Thermometer)
+======================================
+
+.. contents::
+   :local:
+
+Given the existing ``Sensor`` hierarchy, invent a new class
+``RoundingSensor`` that takes the measurement from an existing sensor,
+and returns that measurement rounded to the nearest integer.
+
+Invent that new sensor in a way that it fullfills the following
+requirements:
+
+.. literalinclude:: /trainings/material/soup/cxx/cxx-code/design-patterns-proxy/tests/proxy-round-suite.cpp
+   :caption: :download:`/trainings/material/soup/cxx/cxx-code/design-patterns-proxy/tests/proxy-round-suite.cpp`
+   :language: c++

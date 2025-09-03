@@ -11,7 +11,7 @@
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
+   * :doc:`/trainings/material/soup/cxx/cxx-exercises/nopoly-switch-mock/switch-mock-nopoly`
 
 We have ``MockSwitch`` that serves no real purpose but
 testing. Prepare the ground for future "real" switches (see below).

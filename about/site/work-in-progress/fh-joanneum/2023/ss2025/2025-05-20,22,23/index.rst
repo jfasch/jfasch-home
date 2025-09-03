@@ -114,12 +114,12 @@ Requirement
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cxx11/scenarios/concrete-to-polymorphic/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/scenarios/concrete-to-polymorphic/topic`
 
 .. image:: ../2025-05-19/polymorphic.jpg
 
 * According to
-  :doc:`/trainings/material/soup/cxx11/scenarios/concrete-to-polymorphic/topic`,
+  :doc:`/trainings/material/soup/cxx/cxx11/scenarios/concrete-to-polymorphic/topic`,
   create *interfaces* (those with ``virtual`` and ``= 0``) for
 
   * ``LightBarrier`` (``light-barrier.h``)
