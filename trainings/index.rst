@@ -9,3 +9,4 @@ Training Courses
    log/index
    material/soup/index
 
+.. include:: /trainings-table.include
