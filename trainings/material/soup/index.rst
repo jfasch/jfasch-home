@@ -8,6 +8,4 @@ Complete Slide Material
    python/index
    c/index
    cxx/index
-   cmake/index
-   clean-code/index
-   unittest/index
+   misc/index

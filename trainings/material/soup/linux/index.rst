@@ -1,5 +1,5 @@
-Linux
-=====
+Linux: Introduction, Userland/Kernel Programming, Hardware/Embedded
+===================================================================
 
 .. toctree::
    :maxdepth: 1

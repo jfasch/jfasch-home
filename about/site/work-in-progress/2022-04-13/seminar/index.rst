@@ -11,11 +11,11 @@ Is Software A Craft? Software Is A Craft!
    :align: left
    :widths: auto
 
-   * * .. image:: /trainings/material/soup/clean-code/clean-code.jpg
+   * * .. image:: /trainings/material/soup/misc/clean-code/clean-code.jpg
           :height: 300px
-     * .. image:: /trainings/material/soup/clean-code/tdd.jpg
+     * .. image:: /trainings/material/soup/misc/clean-code/tdd.jpg
           :height: 300px
-     * .. image:: /trainings/material/soup/clean-code/design_patterns.webp
+     * .. image:: /trainings/material/soup/misc/clean-code/design_patterns.webp
           :height: 300px
 
 09:00-09:15 Introductory Words
@@ -37,7 +37,7 @@ Is Software A Craft? Software Is A Craft!
   * Do we want this?
   * Ethics maybe? Do we have ethics?
 
-.. figure:: /trainings/material/soup/clean-code/electrical-nonsolution.jpg
+.. figure:: /trainings/material/soup/misc/clean-code/electrical-nonsolution.jpg
    :scale: 60%
 
    Every craft has rules
@@ -45,7 +45,7 @@ Is Software A Craft? Software Is A Craft!
    This particular electrical installation does not seem to adhere to
    any rule.
 
-.. figure:: /trainings/material/soup/clean-code/gsellmanns-weltmaschine.jpg
+.. figure:: /trainings/material/soup/misc/clean-code/gsellmanns-weltmaschine.jpg
    :scale: 40%
 
    This is art
@@ -79,7 +79,7 @@ In a live-hacking session, establish the initial project state.
 11:00-12:00 Enter Unit Testing Frameworks
 -----------------------------------------
 
-.. image:: /trainings/material/soup/clean-code/xunit-structure.png
+.. image:: /trainings/material/soup/misc/clean-code/xunit-structure.png
    :scale: 50%
 
 .. toctree::

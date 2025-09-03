@@ -1,5 +1,5 @@
-The C++ Programming Language
-============================
+C++ Programming
+===============
 
 .. contents::
    :local:
