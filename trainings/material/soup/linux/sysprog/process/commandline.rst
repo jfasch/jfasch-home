@@ -4,9 +4,6 @@
 Process: Arguments, Exit Status
 ===============================
 
-.. contents::
-   :local:
-
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/linux/basics/intro/process`

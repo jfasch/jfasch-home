@@ -1,8 +1,3 @@
-ADD_SUBDIRECTORY(unittest)
-ADD_SUBDIRECTORY(linux)
-ADD_SUBDIRECTORY(cxx)
-ADD_SUBDIRECTORY(cxx03)
-ADD_SUBDIRECTORY(cxx11)
-
-ADD_SUBDIRECTORY(cxx-code)
-ADD_SUBDIRECTORY(cxx-exercises)
+add_subdirectory(linux)
+add_subdirectory(cxx)
+add_subdirectory(misc)
