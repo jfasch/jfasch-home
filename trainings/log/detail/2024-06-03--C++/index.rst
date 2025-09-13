@@ -88,21 +88,21 @@ Unit Testing, Test Driven Development, And ``googletest``
   Development (PDF)
   </trainings/material/pdf/060-design-patterns-unittests.pdf>`
 
-* From :doc:`/trainings/material/soup/unittest/index`
+* From :doc:`/trainings/material/soup/misc/unittest/index`
 
-  * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/topic`
-  * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`
-  * :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/topic`
+  * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_basics/topic`
+  * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_cmake/topic`
+  * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_fixture/topic`
 
 A Little CMake
 ..............
 
-From :doc:`/trainings/material/soup/cmake/index` (only what we use
+From :doc:`/trainings/material/soup/misc/cmake/index` (only what we use
 from it)
 
-* :doc:`/trainings/material/soup/cmake/intro/basics`
-* :doc:`/trainings/material/soup/cmake/intro/libraries`
-* :doc:`/trainings/material/soup/cmake/intro/structure`
+* :doc:`/trainings/material/soup/misc/cmake/intro/basics`
+* :doc:`/trainings/material/soup/misc/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/misc/cmake/intro/structure`
 
 .. _exercise-day-2:
 

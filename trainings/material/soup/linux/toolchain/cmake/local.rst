@@ -8,7 +8,7 @@ CMake: Local Build
 
    **See also**
 
-   * :doc:`Entire CMake course </trainings/material/soup/cmake/index>`
+   * :doc:`Entire CMake course </trainings/material/soup/misc/cmake/index>`
 
    **Source Code**
 

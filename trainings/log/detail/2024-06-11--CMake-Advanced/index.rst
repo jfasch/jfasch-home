@@ -40,19 +40,19 @@ Day 1
 Basics
 ......
 
-From :doc:`/trainings/material/soup/cmake/intro/index`
+From :doc:`/trainings/material/soup/misc/cmake/intro/index`
 
-* :doc:`/trainings/material/soup/cmake/intro/basics`
-* :doc:`/trainings/material/soup/cmake/intro/libraries`
-* :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
-* :doc:`/trainings/material/soup/cmake/intro/installation`
-* :doc:`/trainings/material/soup/cmake/intro/structure`
+* :doc:`/trainings/material/soup/misc/cmake/intro/basics`
+* :doc:`/trainings/material/soup/misc/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/misc/cmake/intro/shared-libraries`
+* :doc:`/trainings/material/soup/misc/cmake/intro/installation`
+* :doc:`/trainings/material/soup/misc/cmake/intro/structure`
 
   Propagated properties ...
 
   .. image:: propagated-properties.png
 
-* :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
+* :doc:`/trainings/material/soup/misc/cmake/intro/cxx-and-rants`
 
 Exercise: Build It!
 ...................
@@ -65,9 +65,9 @@ https://github.com/jfasch/2024-06-11/tree/main/exercises/straightforward
 Bringing CMake Information Into C/C++
 .....................................
 
-From :doc:`/trainings/material/soup/cmake/advanced/index`
+From :doc:`/trainings/material/soup/misc/cmake/advanced/index`
 
-* :doc:`/trainings/material/soup/cmake/advanced/configure-file/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/configure-file/topic`
 
 Day 2
 -----
@@ -88,8 +88,8 @@ Morning Awakening
 More About Dependencies
 .......................
 
-* :doc:`/trainings/material/soup/cmake/advanced/targets-properties/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/targets-properties/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/external-dependencies/topic`
 
 Much More ... (Various Kinds Of Dependencies)
 .............................................
@@ -121,17 +121,17 @@ https://github.com/jfasch/2024-06-11/tree/main/livecoding/kinds-of-dependencies
 The CMake Language
 ..................
 
-From :doc:`/trainings/material/soup/cmake/advanced/language/index`
+From :doc:`/trainings/material/soup/misc/cmake/advanced/language/index`
 
-* :doc:`/trainings/material/soup/cmake/advanced/language/basics/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/language/variables/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/language/if-and-conditions/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/language/datatypes/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/language/file-etc/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/basics/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/variables/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/if-and-conditions/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/datatypes/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/file-etc/topic`
 * Exercise
 
   Write a CMake script (see
-  :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`)
+  :doc:`/trainings/material/soup/misc/cmake/advanced/language/scripts/topic`)
   that receives as input parameters
 
   * A directory name ``INPUT_DIR``
@@ -141,8 +141,8 @@ From :doc:`/trainings/material/soup/cmake/advanced/language/index`
   names into their filename-only part (e.g. ``/a/b/c.txt`` ->
   ``c.txt``), and writes those names to ``OUTPUT_FILE``
 
-* :doc:`/trainings/material/soup/cmake/advanced/language/functions-and-macros/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/functions-and-macros/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/scripts/topic`
 
 Day 3
 -----
@@ -158,36 +158,36 @@ Morning Awakening
   * Remember building a shared library from a subgraph?
 
 * Recap
-  :doc:`/trainings/material/soup/cmake/advanced/targets-properties/screenplay`
+  :doc:`/trainings/material/soup/misc/cmake/advanced/targets-properties/screenplay`
 
 The CMake Language, Continued
 .............................
 
-From :doc:`/trainings/material/soup/cmake/advanced/language/index` ...
+From :doc:`/trainings/material/soup/misc/cmake/advanced/language/index` ...
 
-* :doc:`/trainings/material/soup/cmake/advanced/language/functions-and-macros/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/language/scripts/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/functions-and-macros/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/language/scripts/topic`
 
 One example of a function ...
 
-* :doc:`/trainings/material/soup/cmake/advanced/library-function/screenplay`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/library-function/screenplay`
 
 External Dependencies
 .....................
 
-From :doc:`/trainings/material/soup/cmake/advanced/index` ...
+From :doc:`/trainings/material/soup/misc/cmake/advanced/index` ...
 
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3`
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-graph`
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-configured-file`
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/screenplay-mosquitto`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/external-dependencies/screenplay-sqlite3`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-graph`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/external-dependencies/screenplay-sqlite3-optional-configured-file`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/external-dependencies/screenplay-mosquitto`
 
 Code Generators
 ...............
 
-* :doc:`/trainings/material/soup/cmake/advanced/code-generators/screenplay`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/code-generators/screenplay`
 
 Unit Tests
 ..........
 
-* :doc:`/trainings/material/soup/cmake/advanced/testing/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/testing/topic`

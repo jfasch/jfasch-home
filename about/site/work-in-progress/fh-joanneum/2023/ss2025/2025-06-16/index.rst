@@ -17,7 +17,7 @@ Dependencies
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cmake/intro/libraries`
+   * :doc:`/trainings/material/soup/misc/cmake/intro/libraries`
    * `Graphviz <https://graphviz.org/>`__
 
 .. sidebar:: Trainer's note
@@ -101,7 +101,7 @@ Include Paths
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cmake/intro/structure`
+   * :doc:`/trainings/material/soup/misc/cmake/intro/structure`
 
 * *Build information* like include paths are propagated along reverse
   edges

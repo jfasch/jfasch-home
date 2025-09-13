@@ -64,7 +64,7 @@ Continue with exercises: CSV |longrightarrow| modularization
 Test Driven Development
 .......................
 
-(Mostly from :doc:`/trainings/material/soup/clean-code/index`)
+(Mostly from :doc:`/trainings/material/soup/misc/clean-code/index`)
 
 I had stated my strong opinion about (excess) debugger usage. (In
 short words, debuggers are from hell when you use one to *comprehend*

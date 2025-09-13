@@ -12,7 +12,7 @@ Operating Systems and Programs
 
 .. sidebar::
 
-   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
 
 * *The Shell* is just one way to start a program
 

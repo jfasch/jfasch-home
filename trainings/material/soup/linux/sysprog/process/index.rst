@@ -10,5 +10,5 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   commandline
-   tree
+   commandline/index
+   tree/index

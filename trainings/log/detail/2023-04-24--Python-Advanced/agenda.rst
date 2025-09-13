@@ -140,9 +140,9 @@ Group Project: Discussion
 Clean Code?
 ...........
 
-From :doc:`/trainings/material/soup/clean-code/index` ...
+From :doc:`/trainings/material/soup/misc/clean-code/index` ...
 
-* :doc:`/trainings/material/soup/clean-code/craft-sw`
+* :doc:`/trainings/material/soup/misc/clean-code/craft-sw`
 * :doc:`/about/site/work-in-progress/2022-04-13/seminar/clean-code-craftsmanship`
 
 Design Patterns Overview

@@ -59,7 +59,7 @@ Is Software A Craft? Software Is A Craft!
 09:15-10:00 Software Engineering: A Discipline? (What Have We Established?)
 ---------------------------------------------------------------------------
 
-* :doc:`/trainings/material/soup/clean-code/craft-sw`
+* :doc:`/trainings/material/soup/misc/clean-code/craft-sw`
 
 10:00-10:15 Coffee Break
 ------------------------

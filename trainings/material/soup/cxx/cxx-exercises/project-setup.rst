@@ -12,7 +12,7 @@ tries to transport the big picture of what needs to be
 implemented. Human language, though, is inefficient in specifying
 exactly what's needed. Detailed specifications are given as unit
 tests, using :doc:`Google's unit testing framework
-</trainings/material/soup/unittest/index>`.
+</trainings/material/soup/misc/unittest/index>`.
 
 Typically, exercise packs are cloned from a Git repository, need to be
 massaged a bit, compiled, and finally a *test suite* is run. Here's

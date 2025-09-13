@@ -46,9 +46,9 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
 
    **Screenplays**
 
-   * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/screenplay`
-   * :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/screenplay`
-   * :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/screenplay`
+   * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_basics/screenplay`
+   * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_cmake/screenplay`
+   * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_fixture/screenplay`
    * :doc:`/trainings/material/soup/cxx/cxx-livehacking/cxx_dynamic_memory/screenplay`
    * :doc:`/trainings/material/soup/cxx/cxx-livehacking/cxx_ownership_raii/screenplay`
    * :doc:`/trainings/material/soup/cxx/cxx-livehacking/cxx_global_initialization/screenplay`

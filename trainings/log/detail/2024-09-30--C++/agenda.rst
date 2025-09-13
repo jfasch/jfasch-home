@@ -90,7 +90,7 @@ Exercises
   how this is done) of shape ``sensor-name -> sensor*``, encapsulated
   in a class
 
-  |longrightarrow| :doc:`/trainings/material/soup/unittest/index`
+  |longrightarrow| :doc:`/trainings/material/soup/misc/unittest/index`
 
 Inheritance, And Interfaces
 ...........................
@@ -217,8 +217,8 @@ Optional Topics
 
 * :doc:`/trainings/material/soup/cxx/cxx11/constexpr-constinit-consteval/constexpr`
 * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/index`
-* Excerpts from :doc:`/trainings/material/soup/cmake/intro/index` and
-  :doc:`/trainings/material/soup/cmake/advanced/index`
+* Excerpts from :doc:`/trainings/material/soup/misc/cmake/intro/index` and
+  :doc:`/trainings/material/soup/misc/cmake/advanced/index`
 * :doc:`/trainings/material/soup/cxx/cxx11/multithreading/index`
 * From :doc:`/trainings/material/soup/c/100-performance/index`
 

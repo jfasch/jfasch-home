@@ -167,7 +167,7 @@ Block 3: C++
      * **Memory Errors, And Pointers**
 
        * Based upon
-         :doc:`/trainings/material/soup/linux/sysprog/process/commandline`,
+         :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`,
          explain
 
 	 * strings

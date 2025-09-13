@@ -35,9 +35,9 @@ System Calls: ``getpid()``, ``getppid()``
    * `man -s 2 getppid
      <https://man7.org/linux/man-pages/man2/getpid.2.html>`__
 
-.. literalinclude:: tree.cpp
+.. literalinclude:: code/tree.cpp
    :language: c++
-   :caption: :download:`tree.cpp`
+   :caption: :download:`code/tree.cpp`
 
 Environment Variables
 ---------------------
@@ -63,6 +63,6 @@ Environment Variables
    * `man -s 3 clearenv
      <https://man7.org/linux/man-pages/man3/clearenv.3.html>`__
 
-.. literalinclude:: environ.cpp
+.. literalinclude:: code/environ.cpp
    :language: c++
-   :caption: :download:`environ.cpp`
+   :caption: :download:`code/environ.cpp`

@@ -42,8 +42,8 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	 * **Processes**
 
            * :doc:`/trainings/material/soup/linux/basics/intro/process` (from :doc:`/trainings/material/soup/linux/basics/intro/index`)
-           * :doc:`/trainings/material/soup/linux/sysprog/process/commandline` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
-           * :doc:`/trainings/material/soup/linux/sysprog/process/tree` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
+           * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
+           * :doc:`/trainings/material/soup/linux/sysprog/process/tree/index` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
 
        * **Homework**
 
@@ -261,9 +261,9 @@ Block 3: C++
 
        **Unit Testing (Quick Intro)**
 
-       * :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/topic`
+       * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_basics/topic`
        * (For completeness only:
-         :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`)
+         :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_cmake/topic`)
 
        (livehacked: `unittesting
        <https://github.com/jfasch/FH-ECE21/tree/main/livehacking/unittesting>`__ -

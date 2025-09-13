@@ -115,11 +115,11 @@ Something Similar But Completely Different: Perfect Forwarding
 Unit Testing With ``googletest``
 --------------------------------
 
-From :doc:`/trainings/material/soup/unittest/index`:
+From :doc:`/trainings/material/soup/misc/unittest/index`:
 
-* :doc:`/trainings/material/soup/unittest/unittest_gtest_basics/topic`
-* :doc:`/trainings/material/soup/unittest/unittest_gtest_cmake/topic`
-* :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/topic`
+* :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_basics/topic`
+* :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_cmake/topic`
+* :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_fixture/topic`
 
 Multithreading
 --------------
@@ -164,7 +164,7 @@ Code (And Project) Sanity
 Clean Code, Design Patterns
 ...........................
 
-* :doc:`/trainings/material/soup/clean-code/index`
+* :doc:`/trainings/material/soup/misc/clean-code/index`
   (overview/discussion only)
 * From :doc:`/trainings/material/soup/cxx/cxx-design-patterns/index`
 

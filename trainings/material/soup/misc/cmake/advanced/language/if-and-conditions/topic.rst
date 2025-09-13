@@ -146,9 +146,9 @@ Miscellaneous Checks (Some Rather Advanced)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-1/topic`
-   * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-2/topic`
-   * :doc:`/trainings/material/soup/cmake/advanced/conditional-code-problem/topic`
+   * :doc:`/trainings/material/soup/misc/cmake/advanced/conditional-code-approach-1/topic`
+   * :doc:`/trainings/material/soup/misc/cmake/advanced/conditional-code-approach-2/topic`
+   * :doc:`/trainings/material/soup/misc/cmake/advanced/conditional-code-problem/topic`
 
 
 * Is a variable defined? *Note: a variable may be defined but empty*

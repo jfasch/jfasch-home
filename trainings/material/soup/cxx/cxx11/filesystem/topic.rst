@@ -39,13 +39,13 @@ Fixture
 
    **See also**
 
-   * :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/topic`
+   * :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_fixture/topic`
 
 (Not central to this topic, just for completeness)
 
 This topic is mainly livehacked, along the test cases that
 follow. Each test case is executed withing a :doc:`test fixture
-</trainings/material/soup/unittest/unittest_gtest_fixture/topic>`;
+</trainings/material/soup/misc/unittest/unittest_gtest_fixture/topic>`;
 that fixture works as follows:
 
 * Every test case has its own temporary directory, by a
@@ -54,7 +54,7 @@ that fixture works as follows:
   :doc:`current working directory </trainings/material/soup/linux/basics/shell/cwd>` is set to
   ``dirname`` before the test runs, and reset to whatever it was before.
 * ``dirname`` is removed after each test run |longrightarrow|
-  :doc:`fixture </trainings/material/soup/unittest/unittest_gtest_fixture/topic>`
+  :doc:`fixture </trainings/material/soup/misc/unittest/unittest_gtest_fixture/topic>`
 
 .. literalinclude:: code/suite.h
    :caption: :download:`code/suite.h`

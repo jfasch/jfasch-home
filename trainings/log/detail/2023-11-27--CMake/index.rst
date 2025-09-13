@@ -25,25 +25,25 @@ CMake: An Introduction (2023-11-27)
    **See also**
 
    * :doc:`/trainings/repertoire/misc/cmake` (Course description)
-   * :doc:`/trainings/material/soup/cmake/index` (Course material)
+   * :doc:`/trainings/material/soup/misc/cmake/index` (Course material)
    * :download:`PDF (Unmaintained; old CMake course)
      </trainings/material/pdf/045-cmake.pdf>`
 
-* :doc:`/trainings/material/soup/cmake/intro/basics`
-* :doc:`/trainings/material/soup/cmake/intro/libraries`
-* :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
-* :doc:`/trainings/material/soup/cmake/intro/installation`
-* :doc:`/trainings/material/soup/cmake/intro/structure`
-* :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
+* :doc:`/trainings/material/soup/misc/cmake/intro/basics`
+* :doc:`/trainings/material/soup/misc/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/misc/cmake/intro/shared-libraries`
+* :doc:`/trainings/material/soup/misc/cmake/intro/installation`
+* :doc:`/trainings/material/soup/misc/cmake/intro/structure`
+* :doc:`/trainings/material/soup/misc/cmake/intro/cxx-and-rants`
 * Exercise: see
   https://github.com/jfasch/2023-11-27/tree/main/exercise
-* :doc:`/trainings/material/soup/cmake/advanced/configure-file/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-problem/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-1/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/conditional-code-approach-2/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/targets-properties/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/testing/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/configure-file/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/conditional-code-problem/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/conditional-code-approach-1/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/conditional-code-approach-2/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/targets-properties/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/external-dependencies/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/testing/topic`
 * Cross development
 
   * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`

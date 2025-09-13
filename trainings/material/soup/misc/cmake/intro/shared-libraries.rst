@@ -37,7 +37,7 @@ Shared Libraries (Preview)
 
    **See also**
 
-   * :doc:`/trainings/material/soup/cmake/advanced/targets-properties/topic`
+   * :doc:`/trainings/material/soup/misc/cmake/advanced/targets-properties/topic`
    * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
 
    **Documentation**

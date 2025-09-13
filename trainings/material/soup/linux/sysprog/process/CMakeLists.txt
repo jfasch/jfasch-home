@@ -1,5 +1,2 @@
-ADD_EXECUTABLE(exit-ok exit-ok.cpp)
-ADD_EXECUTABLE(exit-nok exit-nok.cpp)
-ADD_EXECUTABLE(argv argv.cpp)
-ADD_EXECUTABLE(tree tree.cpp)
-ADD_EXECUTABLE(environ environ.cpp)
+add_subdirectory(commandline)
+add_subdirectory(tree)

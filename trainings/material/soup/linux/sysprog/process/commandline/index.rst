@@ -56,9 +56,9 @@ Exit Status
 Exit Status: ``0`` is "OK"
 --------------------------
 
-.. literalinclude:: exit-ok.cpp
+.. literalinclude:: code/exit-ok.cpp
    :language: c++
-   :caption: :download:`exit-ok.cpp`
+   :caption: :download:`code/exit-ok.cpp`
 
 * In the sunny case, an exit status of *zero* is returned.
 * The truth value of *zero* is ``true``, paradoxically. This makes
@@ -81,9 +81,9 @@ Exit Status: ``0`` is "OK"
 Exit Status: ``!= 0`` is "Not OK"
 ---------------------------------
 
-.. literalinclude:: exit-nok.cpp
+.. literalinclude:: code/exit-nok.cpp
    :language: c++
-   :caption: :download:`exit-nok.cpp`
+   :caption: :download:`code/exit-nok.cpp`
 
 * In any error case, an exit status of *non-zero* is returned.
 * The truth value of *non-zero* is ``false``. Again, this makes sense
@@ -113,9 +113,9 @@ Argument Vector (``int argc, char** argv``)
 .. image:: argv.dia
    :scale: 40%
 
-.. literalinclude:: argv.cpp
+.. literalinclude:: code/argv.cpp
    :language: c++
-   :caption: :download:`argv.cpp`
+   :caption: :download:`code/argv.cpp`
 
 .. code-block:: console
 

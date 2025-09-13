@@ -124,8 +124,8 @@ Processes Quick Walk-Through
 
 * From :doc:`/trainings/material/soup/linux/sysprog/index`
 
-  * :doc:`/trainings/material/soup/linux/sysprog/process/commandline`
-  * :doc:`/trainings/material/soup/linux/sysprog/process/tree`
+  * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/process/tree/index`
 
 Permissions
 ...........
@@ -280,7 +280,7 @@ Cross Development
   * :doc:`/trainings/material/soup/linux/toolchain/static-library/topic`
   * :doc:`/trainings/material/soup/linux/toolchain/shared-libraries/topic`
   * :doc:`/trainings/material/soup/linux/toolchain/cross/index`
-  * :doc:`/trainings/material/soup/cmake/index`
+  * :doc:`/trainings/material/soup/misc/cmake/index`
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
   * :doc:`/trainings/material/soup/linux/toolchain/cmake/cross`
   * :doc:`/trainings/material/soup/linux/toolchain/exercises/index`

@@ -20,16 +20,16 @@ CMake: An Introduction (2024-06-18)
    **See also**
 
    * :doc:`/trainings/repertoire/misc/cmake` (Course description)
-   * :doc:`/trainings/material/soup/cmake/index` (Course material)
+   * :doc:`/trainings/material/soup/misc/cmake/index` (Course material)
 
-* :doc:`/trainings/material/soup/cmake/intro/basics`
-* :doc:`/trainings/material/soup/cmake/intro/libraries`
-* :doc:`/trainings/material/soup/cmake/intro/shared-libraries`
-* :doc:`/trainings/material/soup/cmake/intro/installation`
-* :doc:`/trainings/material/soup/cmake/intro/structure`
+* :doc:`/trainings/material/soup/misc/cmake/intro/basics`
+* :doc:`/trainings/material/soup/misc/cmake/intro/libraries`
+* :doc:`/trainings/material/soup/misc/cmake/intro/shared-libraries`
+* :doc:`/trainings/material/soup/misc/cmake/intro/installation`
+* :doc:`/trainings/material/soup/misc/cmake/intro/structure`
 * Exercise: see
   https://github.com/jfasch/2024-06-18/tree/main/exercise
-* :doc:`/trainings/material/soup/cmake/intro/cxx-and-rants`
+* :doc:`/trainings/material/soup/misc/cmake/intro/cxx-and-rants`
 * Cross development
 
   * :doc:`/trainings/material/soup/linux/toolchain/cross/basics`
@@ -37,8 +37,8 @@ CMake: An Introduction (2024-06-18)
   * Sample CMake toolchain file `here
     <https://github.com/jfasch/2024-06-18/blob/main/CMake/armv8-rpi4-linux-gnueabihf.cmake>`__
 
-* :doc:`/trainings/material/soup/cmake/advanced/targets-properties/topic`
-* :doc:`/trainings/material/soup/cmake/advanced/external-dependencies/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/targets-properties/topic`
+* :doc:`/trainings/material/soup/misc/cmake/advanced/external-dependencies/topic`
 
   * Add MQTT logic to `exercise project
     <https://github.com/jfasch/2024-06-18/tree/main/exercise>`__

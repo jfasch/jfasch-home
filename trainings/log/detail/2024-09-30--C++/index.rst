@@ -125,7 +125,7 @@ Preparing for 2nd exercise (``class FileSensor``)
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/unittest/index`
+   * :doc:`/trainings/material/soup/misc/unittest/index`
    * :doc:`/trainings/material/soup/cxx/cxx11/filesystem/topic`
    * :doc:`/trainings/material/soup/linux/hardware/w1/topic`
 
@@ -134,8 +134,8 @@ Preparing for 2nd exercise (``class FileSensor``)
   Much like Linux presents temperature sensors (see for example
   :doc:`/trainings/material/soup/linux/hardware/w1/topic`)
 
-* :doc:`/trainings/material/soup/unittest/unittest_gtest_fixture/screenplay` 
-  (from :doc:`/trainings/material/soup/unittest/index`)
+* :doc:`/trainings/material/soup/misc/unittest/unittest_gtest_fixture/screenplay` 
+  (from :doc:`/trainings/material/soup/misc/unittest/index`)
 * :doc:`/trainings/material/soup/cxx/cxx11/filesystem/topic`
 * ``<fstream>`` short livehack
 
@@ -152,13 +152,13 @@ Morning Wakeup
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cmake/intro/libraries` (from
+   * :doc:`/trainings/material/soup/misc/cmake/intro/libraries` (from
      :doc:`/trainings/repertoire/misc/cmake`)
 
 * Recap: ``= default``, brace initialization, member initialization,
   "``vector`` anomaly"
 * Show CMake dependencies (``.dot``
-  files). :doc:`/trainings/material/soup/cmake/intro/libraries`
+  files). :doc:`/trainings/material/soup/misc/cmake/intro/libraries`
 
 Inheritance, And Polymorphism
 .............................
@@ -214,12 +214,12 @@ Code Generation With CMake
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/cmake/advanced/code-generators/screenplay` (from :doc:`/trainings/repertoire/misc/cmake`)
+   * :doc:`/trainings/material/soup/misc/cmake/advanced/code-generators/screenplay` (from :doc:`/trainings/repertoire/misc/cmake`)
 
 * Show how config (sensor, sink) can be brought in more statically, at
   link time |longrightarrow| manual prototype
 * Generate code? |longrightarrow|
-  :doc:`/trainings/material/soup/cmake/advanced/code-generators/screenplay`
+  :doc:`/trainings/material/soup/misc/cmake/advanced/code-generators/screenplay`
 
 Livehacked outcome
 

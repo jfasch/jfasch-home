@@ -45,7 +45,7 @@ Code: Reading A File
 .. sidebar:: Topics
 
    * :doc:`basics`
-   * :doc:`../process/commandline`
+   * :doc:`../process/commandline/index`
    * :doc:`../basics/errorhandling`
 
 .. sidebar:: Documentation

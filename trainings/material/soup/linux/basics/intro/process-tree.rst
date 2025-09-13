@@ -14,7 +14,7 @@ More Process Rules
 
    **See also**
 
-   * :doc:`/trainings/material/soup/linux/sysprog/process/tree`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/tree/index`
 
 * Every process has a parent process
 

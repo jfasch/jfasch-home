@@ -41,14 +41,14 @@ Introduction
 Clean Code?
 ```````````
 
-From :doc:`/trainings/material/soup/clean-code/index`:
+From :doc:`/trainings/material/soup/misc/clean-code/index`:
 
-* :doc:`/trainings/material/soup/clean-code/craft-sw`
+* :doc:`/trainings/material/soup/misc/clean-code/craft-sw`
 
 Demo Hacking
 ````````````
 
-* :doc:`/trainings/material/soup/clean-code/intro-python/livehacking`
+* :doc:`/trainings/material/soup/misc/clean-code/intro-python/livehacking`
 
 The demo hacking session was extended through the entire session, with
 topics woven in as time seemed right. Read on for those.

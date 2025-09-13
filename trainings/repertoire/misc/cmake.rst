@@ -19,7 +19,7 @@ CMake: A Dirty But Powerful Build Tool
       * * **Language**
 	* Trainer language is English or German
       * * **Material**
-	* * :doc:`/trainings/material/soup/cmake/index`
+	* * :doc:`/trainings/material/soup/misc/cmake/index`
       * * **Related**
 	* * :doc:`make`
       * * **Booking**
@@ -104,7 +104,7 @@ Automatic Testing
 .................
 
 Today's software standards dictate that a project use unit testing
-(see for example :doc:`/trainings/material/soup/unittest/index`). See
+(see for example :doc:`/trainings/material/soup/misc/unittest/index`). See
 how that can be integrated with CMake.
 
 Installation And Deployment
