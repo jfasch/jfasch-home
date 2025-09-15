@@ -1,2 +1,1 @@
-add_executable(tree tree.cpp)
-add_executable(environ environ.cpp)
+add_executable(sysprog-process-tree tree.cpp)

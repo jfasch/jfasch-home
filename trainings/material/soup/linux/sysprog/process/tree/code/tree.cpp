@@ -1,12 +1,11 @@
 #include <unistd.h>
 
-#include <iostream>
-using namespace std;
+#include <print>
 
 int main(int argc, char** argv)
 {
-    cout << "PID: " << getpid() << endl;               // <--- self's PID
-    cout << "PPID: " << getppid() << endl;             // <--- parent's PID
+    std::println("PID: {}", getpid());                // <--- self's PID
+    std::println("PPID: {}", getppid());              // <--- parent's PID
 
     return 0;
 }

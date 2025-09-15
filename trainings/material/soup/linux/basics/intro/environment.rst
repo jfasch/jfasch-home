@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Environment (Variables)
-=======================
+Environment Variables
+=====================
 
 .. sidebar::
 

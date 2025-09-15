@@ -12,12 +12,3 @@ add_subdirectory(file-locking)
 
 add_subdirectory(mmap)
 add_subdirectory(ipc-mqueue)
-
-
-
-# ---------------- new stuff ------------------
-add_subdirectory(fork)
-# jjj fd, dup, dup2
-# jjj mmap
-# jjj signals
-# jjj event loops?

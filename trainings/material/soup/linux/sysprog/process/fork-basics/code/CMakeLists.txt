@@ -1,7 +1,3 @@
-# --- process states
-
-# bring ../5-3.webp state diagram
-
 # ---
 # basic fork: blah returns twice. warning about code flow; everything
 # is possible.

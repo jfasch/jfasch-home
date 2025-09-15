@@ -4,9 +4,6 @@
 The Process Tree (And Environment, And ``procfs``)
 ==================================================
 
-.. contents::
-   :local:
-
 Process ID (PID) And Parent Process ID (PPID)
 ---------------------------------------------
 
@@ -20,11 +17,25 @@ Process ID (PID) And Parent Process ID (PPID)
 * Every process but the first (PID 1) has a parent process)
 * |longrightarrow| process tree
 
-.. image:: /trainings/material/soup/linux/basics/intro/process-tree/process-tree.svg
-   :scale: 40%
+A typical distro's process tree (simplified)
+
+* ``init`` - nowadays mostly ``systemd``
+* Services
+* User login sessions (console, graphical, network ...)
+
+.. figure:: typical-process-tree.svg
+   :scale: 30%
+
+   A typical distro's process tree
 
 System Calls: ``getpid()``, ``getppid()``
 -----------------------------------------
+
+Technically ...
+
+* A process can ask the kernel about its parent process
+* A process *cannot ask* the kernel about its children
+  |longrightarrow| has to take care itself
 
 .. sidebar::
 
@@ -35,34 +46,16 @@ System Calls: ``getpid()``, ``getppid()``
    * `man -s 2 getppid
      <https://man7.org/linux/man-pages/man2/getpid.2.html>`__
 
+.. image:: tree-syscalls.svg
+   :scale: 40%
+
 .. literalinclude:: code/tree.cpp
    :language: c++
    :caption: :download:`code/tree.cpp`
 
-Environment Variables
----------------------
+.. code-block:: console
 
-.. sidebar::
-
-   **See also**
-
-   * :doc:`/trainings/material/soup/linux/basics/intro/environment`
-
-   **Documentation**
-
-   * `man -s 7 environ
-     <https://man7.org/linux/man-pages/man7/environ.7.html>`__
-   * `man -s 3 getenv
-     <https://man7.org/linux/man-pages/man3/getenv.3.html>`__
-   * `man -s 3 setenv
-     <https://man7.org/linux/man-pages/man3/setenv.3.html>`__
-   * `man -s 3 putenv
-     <https://man7.org/linux/man-pages/man3/putenv.3.html>`__
-   * `man -s 3 unsetenv
-     <https://man7.org/linux/man-pages/man3/unsetenv.3.html>`__
-   * `man -s 3 clearenv
-     <https://man7.org/linux/man-pages/man3/clearenv.3.html>`__
-
-.. literalinclude:: code/environ.cpp
-   :language: c++
-   :caption: :download:`code/environ.cpp`
+   $ echo $$                                           # <-- PID of the shell itself
+   $ ./code/sysprog-process-tree 
+   PID: 115971
+   PPID: 33634
