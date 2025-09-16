@@ -7,27 +7,52 @@ Basic Process Creation
 Process States
 --------------
 
-* Much more complex than can be shown on a paper sketch
+* Many of the states reflect the process's runtime behavior: does it
+  wait for something, or has it expired its timeslice, or is it
+  offended (or the offender itself) in a realtime scenario. *A process
+  is always under the control of the scheduler.*
+
+* Much more complex than can be shown on a sketch
 * |longrightarrow| Uninterruptible vs. interruptible sleep
-* |longrightarrow| Various way to terminate a process
+* |longrightarrow| Various ways to terminate a process
 * ...
 
 .. image:: process-states.svg
    :scale: 40%
    :align: center
 
-Creative Weirdness
-------------------
+Creative Weirdness: ``fork()``
+------------------------------
 
-.. # basic fork: blah returns twice. warning about code flow; everything
-.. # is possible.
+.. sidebar:: Documentation
+
+   * `man -s 2 fork
+     <https://man7.org/linux/man-pages/man2/fork.2.html>`__
+
+* Creates a child process
+* Exact copy of the calling process
+* On return - **returns twice** - both parent and child continue where
+  they left off, **independently**
+
+  * *Parent's return value*: PID of the newly created child process
+  * *Child's return value*: 0 - can use ``getpid()`` if needed
+    (:doc:`here <../tree/index>`)
+
+.. image:: fork-basic.svg
+   :scale: 40%
+
+(Live demo start ...)
 
 .. literalinclude:: code/basic.cpp
    :language: c++
    :caption: :download:`code/basic.cpp`
 
-Bugs Ahead: Code Leakage
-------------------------
+Bugs Ahead: Code Flow Leakage
+-----------------------------
+
+* Attention ``fork()`` returns twice
+* |longrightarrow| two code flow paths
+* *Usually it is a good idea to keep them separate!*
 
 .. literalinclude:: code/leak-code-flow.cpp
    :language: c++

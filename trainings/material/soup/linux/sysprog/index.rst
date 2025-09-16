@@ -10,10 +10,8 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   intro-hw/index
    basics/index
    file-io/index
-   blocking-io/index
    process/index
    posix-threads/index
    scheduling/index
@@ -22,3 +20,18 @@ Contents
    sysprog_signals/topic
    mmap/index
    ipc-mqueue/topic
+
+Miscellanous Live Demos (And Other Stuff)
+-----------------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   intro-hw/index
+   blocking-io/index
+
+Building Blocks For Sketches
+----------------------------
+
+.. image:: building-blocks.svg
+   :scale: 40%
