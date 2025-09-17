@@ -19,8 +19,8 @@ Requirement
      * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_CREAT`
      * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_EXCL`
 
-   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
    * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
 
    **Manual Pages**
@@ -58,14 +58,14 @@ behavior:
 .. note::
 
    * Check for system call errors; see
-     :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+     :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
      for how to.
    * Make sure the program interprets its commandline correctly; see
-     :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
+     :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
      for how to.
    * Make sure the program returns exit statuses as specified below;
      see
-     :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
+     :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
      for how to.
 
 Sunny Case: Source File Exists, Destination Does Not Exist

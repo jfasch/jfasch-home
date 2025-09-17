@@ -3,8 +3,12 @@ TODO
 
 * "Process" chapter
 
-  * what happens to open file descriptors on fork()? ->
-    refactor/create dup section in file-io
+  * what happens to open file descriptors on fork()?
+
+    * add lseek() and off_t and whence section
+    * refactor/create dup section in file-io
+
+      * intro/file descriptors
 
 * Refactor old crap
 

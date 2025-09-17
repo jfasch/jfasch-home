@@ -21,7 +21,7 @@ Systems Programming Basics: File I/O
 ------------------------------------
 
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
-* :doc:`/trainings/material/soup/linux/sysprog/basics/index`
+* :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
 * From :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
 
   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`

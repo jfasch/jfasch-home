@@ -38,9 +38,9 @@ Program
    **See also**
 
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_RDONLY`
-   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
 
 Write a program ``onewire-temperature`` that reads a sensor's
 temperature periodically. It takes two arguments,

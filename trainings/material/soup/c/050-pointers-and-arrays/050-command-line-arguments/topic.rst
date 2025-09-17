@@ -9,7 +9,7 @@ Commandline Arguments
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
 
 ``main()`` Can Take Parameters
 ------------------------------

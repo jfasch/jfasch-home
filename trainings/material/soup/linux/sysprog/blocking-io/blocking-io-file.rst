@@ -16,7 +16,7 @@ Blocking I/O (On A File): What is That?
 
 .. sidebar:: See Also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
 
 Reading a File
 --------------

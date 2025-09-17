@@ -1,3 +1,5 @@
+add_subdirectory(syscalls-and-errors)
+
 add_subdirectory(blocking-io)
 add_subdirectory(process)
 

@@ -10,7 +10,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   basics/index
+   syscalls-and-errors/index
    file-io/index
    process/index
    posix-threads/index

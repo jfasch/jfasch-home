@@ -42,7 +42,7 @@ Now we can start to fix ``lib/sensor.c`` until the tests are green.
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/basics/errorhandling`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
 
 .. sidebar:: Documentation
 

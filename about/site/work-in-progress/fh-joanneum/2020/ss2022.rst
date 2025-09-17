@@ -128,7 +128,7 @@ Block 2: C on Linux: Local and *Cross* Development
 
        *Systems Programming: File I/O*
 
-       * :doc:`/trainings/material/soup/linux/sysprog/basics/index`
+       * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/duplicate`
 
@@ -167,7 +167,7 @@ Block 3: C++
      * **Memory Errors, And Pointers**
 
        * Based upon
-         :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`,
+         :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`,
          explain
 
 	 * strings

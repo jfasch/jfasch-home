@@ -12,7 +12,7 @@ Operating Systems and Programs
 
 .. sidebar::
 
-   * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
 
 * *The Shell* is just one way to start a program
 

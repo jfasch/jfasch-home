@@ -13,14 +13,14 @@ File Descriptors
 * Universal *handle* for everything that's got to do with I/O
 * Type: ``int``
 * *File* is only one shape of I/O
-* Alternative shapes
+* Alternative shapes, for example
 
   * Pipes
   * Sockets
   * FIFOs
   * Terminals
-  * Device Special Files |longrightarrow| entry point into arbitrary
-    kernel drivers
+  * Device Special Files |longrightarrow| entry points into kernel
+    space
 
 .. sidebar:: Documentation
 
@@ -170,7 +170,7 @@ bitwise-or'ed flags:
    ssize_t read(int fd, void *buf, size_t count);
 
 * Return value: number of bytes read (-1 on error, :doc:`as always
-  </trainings/material/soup/linux/sysprog/basics/errorhandling>`)
+  </trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index>`)
 * ``0`` is *End of File* (EOF)
 * Can read less than ``count`` (usually with network I/O)
 
@@ -189,7 +189,7 @@ bitwise-or'ed flags:
    ssize_t write(int fd, const void *buf, size_t count);
 
 * Return value: number of bytes written (-1 on error, :doc:`as always
-  </trainings/material/soup/linux/sysprog/basics/errorhandling>`)
+  </trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index>`)
 * Can write less than ``count`` (usually with network I/O)
 * ``SIGPIPE`` (process termination) when ...
 

@@ -61,7 +61,7 @@ extensions = [
 
     'sphinxcontrib.plantuml',
 
-    'opentraining.sphinxglue.dia',
+    'opentraining',
 ]
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),

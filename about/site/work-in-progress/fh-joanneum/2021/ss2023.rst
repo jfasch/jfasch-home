@@ -42,7 +42,7 @@ Block 1: Linux, and Working With Remote/Embedded Devices
 	 * **Processes**
 
            * :doc:`/trainings/material/soup/linux/basics/intro/process` (from :doc:`/trainings/material/soup/linux/basics/intro/index`)
-           * :doc:`/trainings/material/soup/linux/sysprog/process/commandline/index` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
+           * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
            * :doc:`/trainings/material/soup/linux/sysprog/process/tree/index` (from :doc:`/trainings/material/soup/linux/sysprog/process/index`)
 
        * **Homework**
@@ -179,7 +179,7 @@ Block 2: C on Linux: Local and *Cross* Development
      * **Systems Programming Basics: File I/O**
 
        * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
-       * :doc:`/trainings/material/soup/linux/sysprog/basics/index`
+       * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
 
        **Homework (until next time - 2023-05-08)**

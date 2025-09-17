@@ -45,8 +45,8 @@ Code: Reading A File
 .. sidebar:: Topics
 
    * :doc:`basics`
-   * :doc:`../process/commandline/index`
-   * :doc:`../basics/errorhandling`
+   * :doc:`../process/exit-args-env/index`
+   * :doc:`../syscalls-and-errors/errorhandling/index`
 
 .. sidebar:: Documentation
 
@@ -64,7 +64,7 @@ Code: Reading A File
 The following program 
 
 * opens the file (doing basic :doc:`error handling
-  <../basics/errorhandling>` which is always a good idea)
+  <../syscalls-and-errors/errorhandling/index>` which is always a good idea)
 
   * It is at the time of ``open()`` -ing a file where you *declare*
     that you intend to read from it! This is the time where the system
