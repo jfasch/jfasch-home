@@ -1,8 +1,5 @@
-File I/O
-========
-
-.. contents::
-   :local:
+Files And File Descriptors
+==========================
 
 Contents
 --------
@@ -10,13 +7,19 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   basics
-   example-O_RDONLY
-   example-O_WRONLY
-   example-O_CREAT
-   example-O_EXCL
+   file-descriptors/index
+   open-read-write-close/index
+   lseek/index
+
+   duplicate
+   misc
+
+Exercises
+---------
+
+.. toctree::
+   :maxdepth: 1
+
    basics-exercise-copy/exercise
    basics-exercise-hole
    exercise-sensor-read
-   duplicate
-   misc

@@ -13,11 +13,11 @@ Requirement
 
    * The Whole Truth About ``open()``
 
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_RDONLY`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_WRONLY`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_CREAT`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_EXCL`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/overview`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_RDONLY`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_WRONLY`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_CREAT`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_EXCL`
 
    * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
    * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`

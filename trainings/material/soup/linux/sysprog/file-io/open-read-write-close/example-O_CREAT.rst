@@ -11,8 +11,8 @@ Creating A File If It Does Not Exist (Bogus Version)
 ----------------------------------------------------
 
 We saw in :doc:`example-O_WRONLY` that a file is not implicitly
-created only because we open one, which is a good thing. Lets see how
-to use the ``O_CREAT`` to make this happen.
+created only because we open one - which is a good thing. Lets see how
+to use ``O_CREAT`` to make this happen.
 
 .. sidebar:: Documentation
 
@@ -27,14 +27,9 @@ The following program
   * We pass the ``O_WRONLY`` flag since this is our intention
   * We also pass the ``O_CREAT`` flag in a bitwise-or combination
 
-.. literalinclude:: example-O_CREAT-bogus.c
-   :caption: :download:`example-O_CREAT-bogus.c`
+.. literalinclude:: code/example-O_CREAT-bogus.c
+   :caption: :download:`code/example-O_CREAT-bogus.c`
    :language: c
-
-.. code-block:: console
-   :caption: Build it
-
-   $ gcc -o example-O_CREAT-bogus example-O_CREAT-bogus.c
 
 Bogus ``O_CREAT`` Usage: Mode Parameter Missing
 -----------------------------------------------
@@ -90,14 +85,9 @@ that works, and how to specify the ``umask``.
 
 Here's a fixed version of the bogus program from above:
 
-.. literalinclude:: example-O_CREAT.c
-   :caption: :download:`example-O_CREAT.c`
+.. literalinclude:: code/example-O_CREAT.c
+   :caption: :download:`code/example-O_CREAT.c`
    :language: c
-
-.. code-block:: console
-   :caption: Build it
-
-   $ gcc -o example-O_CREAT example-O_CREAT.c
 
 .. rubric:: Footnotes
 .. [#read-just-as-well] One could legally combine ``O_CREAT`` with

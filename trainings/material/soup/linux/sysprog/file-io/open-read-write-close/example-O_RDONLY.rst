@@ -12,7 +12,7 @@ Me and ``/etc/passwd``
 
 .. sidebar:: Topics
    
-   * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+   * :doc:`overview`
 
 Who am I?
 
@@ -44,9 +44,9 @@ Code: Reading A File
 
 .. sidebar:: Topics
 
-   * :doc:`basics`
-   * :doc:`../process/exit-args-env/index`
-   * :doc:`../syscalls-and-errors/errorhandling/index`
+   * :doc:`overview`
+   * :doc:`../../process/exit-args-env/index`
+   * :doc:`../../syscalls-and-errors/errorhandling/index`
 
 .. sidebar:: Documentation
 
@@ -64,7 +64,7 @@ Code: Reading A File
 The following program 
 
 * opens the file (doing basic :doc:`error handling
-  <../syscalls-and-errors/errorhandling/index>` which is always a good idea)
+  <../../syscalls-and-errors/errorhandling/index>` which is always a good idea)
 
   * It is at the time of ``open()`` -ing a file where you *declare*
     that you intend to read from it! This is the time where the system
@@ -79,8 +79,8 @@ The following program
 * returns the exit status ``0`` if all is well, and arbitrarily chosen
   numbers for the different error situations that it may encounter
 
-.. literalinclude:: example-O_RDONLY.c
-   :caption: :download:`example-O_RDONLY.c`
+.. literalinclude:: code/example-O_RDONLY.c
+   :caption: :download:`code/example-O_RDONLY.c`
    :language: c
 
 .. code-block:: console
@@ -109,9 +109,9 @@ be ok:
 
    See
 
-   * :doc:`duplicate` for an explanation of what's going on in the
+   * :doc:`../duplicate` for an explanation of what's going on in the
      system to make this happen
-   * :doc:`misc` for alternative ways of reading a file that do not
+   * :doc:`../misc` for alternative ways of reading a file that do not
      exhibit this behaviour (which is intended in most cases)
 
 Error: File Not Readable

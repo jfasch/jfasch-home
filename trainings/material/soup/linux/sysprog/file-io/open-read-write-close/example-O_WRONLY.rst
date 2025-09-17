@@ -32,14 +32,9 @@ The following program
 
 * writes a number of bytes to it
 
-.. literalinclude:: example-O_WRONLY.c
-   :caption: :download:`example-O_WRONLY.c`
+.. literalinclude:: code/example-O_WRONLY.c
+   :caption: :download:`code/example-O_WRONLY.c`
    :language: c
-
-.. code-block:: console
-   :caption: Build it
-
-   $ gcc -o example-O_WRONLY example-O_WRONLY.c
 
 Error: File Not Writeable
 -------------------------

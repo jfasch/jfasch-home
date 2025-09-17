@@ -42,6 +42,11 @@ On error, system calls (and most C library functions)
 Simplest Stringification: ``perror()``
 --------------------------------------
 
+.. sidebar:: Documentation
+
+   * `man -s 3 perror
+     <https://man7.org/linux/man-pages/man3/perror.3.html>`__
+
 * Advantage: need not mention ``errno``
 * Translates ``errno`` into a descriptive string
 * Value of ``errno`` not printed though
@@ -57,6 +62,11 @@ Simplest Stringification: ``perror()``
 
 More Stringification: ``strerror()``
 ------------------------------------
+
+.. sidebar:: Documentation
+
+   * `man -s 3 strerror
+     <https://man7.org/linux/man-pages/man3/strerror.3.html>`__
 
 * Returns a pointer to a descriptive string
 * Does not print anything itself
@@ -74,6 +84,11 @@ More Stringification: ``strerror()``
 
 Thread-Safe Stringification: ``strerror_r()``
 ---------------------------------------------
+
+.. sidebar:: Documentation
+
+   * `man -s 3 strerror_r
+     <https://man7.org/linux/man-pages/man3/strerror.3.html>`__
 
 * ``_r`` for "reentrant"
 * User has to supply buffer

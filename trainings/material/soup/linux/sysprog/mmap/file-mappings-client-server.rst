@@ -41,7 +41,7 @@ Server: Initialize Shared Data, Poll For Data
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_EXCL`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_EXCL`
    * :ref:`sysprog-ftruncate`
 
 * Open shared file

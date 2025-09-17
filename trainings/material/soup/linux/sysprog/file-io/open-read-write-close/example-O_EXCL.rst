@@ -32,8 +32,8 @@ The following program
   with ``O_WRONLY``
 * writes a number of bytes to it
 
-.. literalinclude:: example-O_EXCL.c
-   :caption: :download:`example-O_EXCL.c`
+.. literalinclude:: code/example-O_EXCL.c
+   :caption: :download:`code/example-O_EXCL.c`
    :language: c
 
 .. code-block:: console

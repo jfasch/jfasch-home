@@ -1,9 +1,6 @@
 System Calls, And Error Handling
 ================================
 
-.. contents::
-   :local:
-
 Contents
 --------
 

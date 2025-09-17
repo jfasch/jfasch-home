@@ -1,9 +1,6 @@
 Linux Systems Programming
 =========================
 
-.. contents::
-   :local:
-
 Contents
 --------
 
