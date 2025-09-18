@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-File Position/Offset (``lseek()``)
-==================================
+File Position/Offset (``lseek64()``)
+====================================
 
 .. sidebar:: Documentation
 
@@ -25,8 +25,8 @@ File Offset, And ``read()/write()``
 * |longrightarrow| offset is part of the "open file description"
   (``struct file``) in kernel space
 
-.. image:: getpos.svg
-   :scale: 50%
+.. image:: offset.svg
+   :scale: 40%
 
 How ``lseek64()`` Works
 -----------------------
@@ -45,13 +45,13 @@ How ``lseek64()`` Works
      * * Macro
        * Description
      * * ``SEEK_SET``
-       * The file offset is set to ``offset`` bytes.
+       * The file offset is set to ``offset`` bytes, *absolutely*.
      * * ``SEEK_CUR``
        * The file offset is set to its current location plus ``offset``
-         bytes.
+         bytes, *relatively*.
      * * ``SEEK_END``
        * The file offset is set to the size of the file plus
-         ``offset`` bytes.
+         ``offset`` bytes, *relatively*.
   
 Getting Current Offset
 ----------------------
@@ -90,16 +90,26 @@ Setting File Offset
    $ cat /tmp/somefile
    01X345
    
-   
-   
+Holes In Files?
+---------------
 
+* One of the more obscure UNIX features
+* Set the offset beyond file size
+* Drop at least one byte there
+* |longrightarrow| gap does not occupy space
+* |longrightarrow| reading from holes yields 0-bytes
 
+.. image:: hole.svg
+   :scale: 40%
 
+Holes In Files (Program)
+------------------------
 
+* The following program uses ``/tmp/somefile`` from above
+* Adds a hole according to the sketch
+* Note how it does not consume disk space correspondingly (``btrfs``
+  works differently/specially though)
 
-**Obscure feature**: *files with holes*
-
-* positioning *beyond file size*
-* write to that position
-* |longrightarrow| *holes*, occupying no space
-* ``read()`` across a hole give 0-bytes
+.. literalinclude:: code/hole.cpp
+   :language: c++
+   :caption: :download:`code/hole.cpp`

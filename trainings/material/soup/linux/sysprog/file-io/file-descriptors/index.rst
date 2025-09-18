@@ -64,7 +64,7 @@ File Descriptor Lifecycle - ``open/read/write/close``
    * `man -s 2 close
      <https://man7.org/linux/man-pages/man2/close.2.html>`__
 
-* Creation: depends on type of medium
+* **Creation**: depends on type of medium
 
   * ``open()`` for files and similar (roughly: what has a name in the
     filesystem)
@@ -75,11 +75,11 @@ File Descriptor Lifecycle - ``open/read/write/close``
     `eventfd
     <https://man7.org/linux/man-pages/man2/eventfd.2.html>`__)
 
-* Usage
+* **Usage**
 
   * ``read()`` and ``write()`` for typical IO scenarios
   * ``ioctl()`` for non-IO operations
   * ...
 
-* Cleanup: ``close()`` must be called on all file descriptors to free
-  in-kernel memory
+* **Cleanup**: ``close()`` must be called on all file descriptors to
+  free in-kernel memory
