@@ -24,11 +24,12 @@ Systems Programming Basics: File I/O
 * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
 * From :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
 
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_RDONLY`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_WRONLY`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_CREAT`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/example-O_EXCL`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_RDONLY`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_WRONLY`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_CREAT`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_EXCL`
 
 Homework (until next time - 2024-05-06)
 ---------------------------------------

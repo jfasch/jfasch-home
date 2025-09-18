@@ -171,6 +171,8 @@ More state changes than simple exit:
    :language: c++
    :caption: :download:`code/wait-status-more-info.cpp`
 
+.. _sysprog-process-zombie:
+
 Zombies: Consequences Of Not Caring For Children
 ------------------------------------------------
 

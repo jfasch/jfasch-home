@@ -154,14 +154,15 @@ File IO
 
    * :doc:`/trainings/material/soup/linux/sysprog/index`
 
-* :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
+* From :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
 
   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/syscalls/index`
   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
 
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
+* From :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
 
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`
 
 Day 3
 -----

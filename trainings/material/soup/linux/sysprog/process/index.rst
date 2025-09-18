@@ -7,4 +7,5 @@ Processes
    exit-args-env/index
    tree/index
    fork-basics/index
+   unnamed-pipe-ipc/index
    todo

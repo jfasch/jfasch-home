@@ -105,10 +105,10 @@ be ok:
 
    See
 
-   * :doc:`../duplicate` for an explanation of what's going on in the
+   * :doc:`../dup/index` for an explanation of what's going on in the
      system to make this happen
-   * :doc:`../misc` for alternative ways of reading a file that do not
-     exhibit this behaviour (which is intended in most cases)
+   * :doc:`../misc` for alternative ways of reading a file that does
+     not exhibit this behaviour (which is intended in most cases)
 
 Error: File Not Readable
 ------------------------
