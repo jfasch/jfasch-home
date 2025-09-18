@@ -4,6 +4,15 @@
 Basic Process Creation
 ======================
 
+.. sidebar:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`
+
+.. sidebar:: Documentation
+
+   * `man -s 2 fork
+     <https://man7.org/linux/man-pages/man2/fork.2.html>`__
+
 Process States
 --------------
 
@@ -63,96 +72,119 @@ Bugs Ahead: Code Flow Leakage
 File Descriptors Are Inherited
 ------------------------------
 
-* jjj see file IO chapter
+.. sidebar:: See also
 
-.. # omit output in child. parent is sufficient to get hold of both pids.
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`
 
-.. # what if both read from the same fd? (e.g. STDIN_FILENO)
-.. # * fd inheritance semantics
-.. # * -> see dup, dup2
-.. # * which one wakes up is UNDEFINED
-.. 
-.. # show 
-.. # $ echo -n ab > /tmp/input-file
-.. # $ ./sysprog-fork-stdin-inherited-undefined < /tmp/input-file 
+* Parent opens a file
+* Creates child process
+* |longrightarrow| file descriptor is inherited
+* Semantics just like ``dup()`` (see :doc:`here
+  </trainings/material/soup/linux/sysprog/file-io/dup/index>`
 
-.. literalinclude:: code/stdin-inherited-undefined.cpp
+.. image:: fd-inher.svg
+   :scale: 40%
+
+.. literalinclude:: code/fd-inher.cpp
    :language: c++
-   :caption: :download:`code/stdin-inherited-undefined.cpp`
+   :caption: :download:`code/fd-inher.cpp`
 
-Copy-On-Write Memory (COW)
---------------------------
+.. code-block:: console
 
-.. # temporarily pull out one_byte into main() scope. what does that
-.. # mean? do we share one_byte in two different processes?
-.. 
-.. # * short overview of COW (private memory)
-.. # * -> see mmap, and shared memory in general
-.. 
-.. # SKETCH!!
+   $ echo abc > /tmp/somefile 
+   $ ./sysprog-fork-fd-inher 
+   parent pid = 267811, child pid = 267812
+   parent has read one byte: a/0x61
+   child has read one byte: b/0x62
 
 Care For Your Children - *Waiting*
 ----------------------------------
 
-.. # --- Caring for the kids: wait (and friends)
-.. 
-.. # let child wait for input on STDIN_FILENO, and parent do a wait on
-.. # child
+.. sidebar:: Documentation
+
+   * `man -s 2 wait
+     <https://man7.org/linux/man-pages/man2/wait.2.html>`__
+
+* Parents must care - *wait* - for their children
+* If they don't, kids become zombies (see :ref:`below
+  <sysprog-process-zombie>`)
+* |longrightarrow| retrieve the child's termination status (see
+  :ref:`below <sysprog-process-status>`)
+* If child has not yet terminated, parent blocks in ``wait()``
 
 .. literalinclude:: code/wait.cpp
    :language: c++
    :caption: :download:`code/wait.cpp`
 
+Copy-On-Write Memory (COW)
+--------------------------
+
+* Parent and child run the same code |longrightarrow| share code
+  memory pages
+* They do so read-only (code cannot be written to)
+* Question: how about data? Do they share data?
+* Answer: No!
+* Share data pages initially; copy is made at first write
+* |longrightarrow| Copy On Write (COW)
+
+.. literalinclude:: code/cow.cpp
+   :language: c++
+   :caption: :download:`code/cow.cpp`
+
+.. _sysprog-process-status:
+
 Waiting, And Exit Status
 ------------------------
 
-.. # modify child "return 42 from mainP" to exit(42)
-.. # * see what wait(&status) is
-.. # * -> print bitmask
-.. # * next step: use macros
+* Now what about status?
+* |longrightarrow| More information than just the exit value (7 in
+  this case)
+* Exit status: ``WIFEXITED()``, ``WEXITSTATUS()``
 
 .. literalinclude:: code/wait-status.cpp
    :language: c++
    :caption: :download:`code/wait-status.cpp`
 
-More Exit Information: Why Exit? How Exit?
-------------------------------------------
+More Exit Information
+---------------------
 
-.. # modify wait() -> waitpid(-1 (or child pid), &status, WUNTRACED|WCONTINUED)
-.. 
-.. # * waitpid
-.. 
-.. #   * explicit pid (-1 for any)
-.. #   * options
-.. 
-.. # * WIFSIGNALED
-.. 
-.. #   show
-.. #   $ kill -TERM ...
-.. #   $ kill -SEGV ...     (128 is true)
-.. 
-.. # * WIFSTOPPED
-.. # * WIFCONTINUED
-.. 
-.. #   both in a loop:
-.. #   $ kill -STOP ...
-.. #   $ kill -CONT ...
+More state changes than simple exit:
 
-.. literalinclude:: code/wait-status-alternatives.cpp
+* Signaled, e.g.
+
+  * ``SIGINT``: Ctrl-C from terminal
+  * ``SIGTERM``: similar, but explicitly sent by another process
+  * ``SIGSEGV``, ``SIGBUS``: software memory error (likely a pointer
+    bug)
+  * More, see `man -s 7 signal
+    <https://man7.org/linux/man-pages/man7/signal.7.html>`__
+
+* Stopped and continued
+
+  * Have to use ``waitpid()`` (``wait()`` does not give that
+    information)
+  * ``SIGTSTP``: Ctrl-Z from terminal
+  * ``SIGSTOP``: explicitly sent
+  * ``SIGCONT``: request to continue
+
+.. literalinclude:: code/wait-status-more-info.cpp
    :language: c++
-   :caption: :download:`code/wait-status-alternatives.cpp`
-
-.. # --- list of signals (from PDFs?)
+   :caption: :download:`code/wait-status-more-info.cpp`
 
 Zombies: Consequences Of Not Caring For Children
 ------------------------------------------------
 
-.. # let child terminate
-.. # see how child pid still there in ps
-.. # -> <defunct>
-.. # kill incompetent parent
-.. # -> reparented
-.. # -> zombie reaped by new parent
+* Terminated process are still there - shown in ``ps`` as ``<defunct>``
+* |longrightarrow| Carry information for parents
+* "Zombie"
+* "Reaped" by their parents when they call ``wait()``
+
+.. sidebar:: Trainer's note
+
+   * See how child pid still there ``ps -fl <CHILDPID>``
+   * |longrightarrow| ``<defunct>``
+   * Kill incompetent parent
+   * |longrightarrow| Reparented (see below)
 
 .. literalinclude:: code/zombie.cpp
    :language: c++
@@ -161,17 +193,20 @@ Zombies: Consequences Of Not Caring For Children
 Orphanage (Parent's Death)
 --------------------------
 
-.. # * until now we have taken care of child termination
-.. # * what if parent terminates? child without parent? 
-.. # * reparenting (c/v orphanage)
-.. 
-.. # * let parent process terminate
-.. # * see how child is still alive
-.. # * has been reparented to some systemd session manager (who is already responsible for many children)
-.. 
-.. # history -> pid 1
-.. # nowadays (linux specific) -> child reaper
-.. # https://man7.org/linux/man-pages/man2/PR_SET_CHILD_SUBREAPER.2const.html
+.. sidebar:: Trainer's note
+
+   * The program will terminate immediately
+   * Child keeps running, deteched from terminal
+   * ``ps -fl <CHILDPID>`` |longrightarrow| A-ha, new parent
+
+* Final question: what if a process's parent terminates? 
+* Nobody can then reap the zombie!
+* |longrightarrow| Parentless child is *reparented* to PID 1
+  (according to good ol' UNIX)
+* On modern Linux, one can set a dedicated reaper process (`man -s 2
+  PR_SET_CHILD_SUBREAPER
+  <https://man7.org/linux/man-pages/man2/PR_SET_CHILD_SUBREAPER.2const.html>`__)
+* Normally the login session leader (``systemd --user``)
 
 .. literalinclude:: code/reparenting.cpp
    :language: c++

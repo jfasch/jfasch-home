@@ -5,20 +5,21 @@
 
 int main()
 {
+    int variable = 42;
+
     pid_t pid = fork();
     if (pid == -1) {
         perror("fork");
         return 1;
     }
-
+    
     if (pid == 0) {
-        sleep(3);
-        std::println("child exiting");
+        variable = 666;                                // <-- copy-on-write
         return 7;
     }
     else {
-        std::println("parent pid = {}, child pid = {}", getpid(), pid);
-        pause();                                       // <-- don't care for kids
+        wait(NULL);                                    // <-- be sure child has touched variable
+        std::println("parent: variable=={}", variable);
         return 0;
     }
 }

@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Process: Exit Status, Arguments, Environment
-============================================
+Exit Status, Arguments, Environment
+===================================
 
 .. sidebar:: See also
 

@@ -4,13 +4,7 @@ TODO
 * "Process" chapter
 
   * what happens to open file descriptors on fork()?
-
-    * add lseek() and off_t and whence section
-    * refactor/create dup section in file-io
-
-      * intro/file descriptors
-
-    * filenum allocation -> file-descriptors, bottom of page
+  * return from main vs exit() -> top of fork-basics/
 
 * Refactor old crap
 
