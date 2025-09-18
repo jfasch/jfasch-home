@@ -4,9 +4,6 @@
 I/O Redirection: Swap ``stdout`` And ``stderr``
 ===============================================
 
-.. contents::
-   :local:
-
 Basic Pipe Usage
 ----------------
 

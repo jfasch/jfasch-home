@@ -5,7 +5,7 @@
 
 int main()
 {
-    int fd = open("/tmp/somefile", O_WRONLY);
+    int fd = open("/tmp/somefile", O_WRONLY|O_CREAT|O_EXCL, 0666);
     if (fd == -1) {
         perror("open");
         return 1;

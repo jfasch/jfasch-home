@@ -4,9 +4,6 @@
 ``O_CREAT``: Creating A File
 ============================
 
-.. contents::
-   :local:
-
 Creating A File If It Does Not Exist (Bogus Version)
 ----------------------------------------------------
 

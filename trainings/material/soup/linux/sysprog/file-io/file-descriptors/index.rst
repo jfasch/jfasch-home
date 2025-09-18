@@ -83,3 +83,9 @@ File Descriptor Lifecycle - ``open/read/write/close``
 
 * **Cleanup**: ``close()`` must be called on all file descriptors to
   free in-kernel memory
+
+.. _sysprog-filedesc-alloc:
+
+jjj How Descriptor Numbers Are Chosen
+-------------------------------------
+

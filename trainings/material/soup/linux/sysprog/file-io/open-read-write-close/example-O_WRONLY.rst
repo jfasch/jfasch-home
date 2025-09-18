@@ -4,9 +4,6 @@
 ``O_WRONLY``: Writing A File (Which Must Exist)
 ===============================================
 
-.. contents::
-   :local:
-
 Writing (And Not Creating) A File
 ---------------------------------
 

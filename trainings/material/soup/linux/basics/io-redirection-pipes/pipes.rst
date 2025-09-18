@@ -4,9 +4,6 @@
 Pipes
 =====
 
-.. contents::
-   :local:
-
 Why Pipes?
 ----------
 

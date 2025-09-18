@@ -1,11 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-Miscellaneous
-=============
-
-.. contents::
-   :local:
+Miscellaneous: No Offset-Bending, Scatter-Gather IO, Truncating
+===============================================================
 
 I/O without Offset Manipulation
 -------------------------------
@@ -85,16 +82,3 @@ Truncating Files
 
 * Truncating a file ...
 * ... or create a hole (|longrightarrow| ``lseek()``)
-
-File Descriptors - Allocation
------------------------------
-
-Value of the next file descriptors is not arbitrarily chosen
-|longrightarrow| next free slot, starting at 0.
-
-.. code-block:: c
-   :caption: Filedescriptor Allocation
-
-   close(STDIN_FILENO);
-   int fd = open("/dev/null", O_WRONLY);
-   assert(fd == 0);

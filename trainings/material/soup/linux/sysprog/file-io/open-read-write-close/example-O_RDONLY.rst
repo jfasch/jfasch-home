@@ -4,9 +4,6 @@
 ``O_RDONLY``: Reading a File
 ============================
 
-.. contents::
-   :local:
-
 Me and ``/etc/passwd``
 ----------------------
 
@@ -18,7 +15,6 @@ Who am I?
 
 .. code-block:: console
 
-   $ id
    $ id
    uid=1000(jfasch) gid=1000(jfasch) groups=1000(jfasch),10(wheel),18(dialout)
 
@@ -36,7 +32,7 @@ A-ha: Read-writable by user ``root``, readable by members of group
 ``root``, and by all others.
 
 So, I (being among the others for the purpose of ``/etc/passwd``
-access), I'll be able to read that file. Lets do that: read the entire
+access) will be able to read that file. Lets do that: read the entire
 file, and write it to *standard output*.
 
 Code: Reading A File

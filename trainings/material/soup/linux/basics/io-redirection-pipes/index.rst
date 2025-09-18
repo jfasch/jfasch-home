@@ -1,9 +1,6 @@
 I/O Redirection And Pipes
 =========================
 
-.. contents::
-   :local:
-
 Topics
 ------
 

@@ -4,9 +4,6 @@
 ``O_EXCL``: Creating A File, But Failing If It Already Exists
 =============================================================
 
-.. contents::
-   :local:
-
 Is "Create or Open" Always Wanted?
 ----------------------------------
 

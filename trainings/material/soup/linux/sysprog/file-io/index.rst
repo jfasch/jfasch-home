@@ -10,8 +10,8 @@ Contents
    file-descriptors/index
    open-read-write-close/index
    lseek/index
+   dup/index
 
-   duplicate
    misc
 
 Exercises

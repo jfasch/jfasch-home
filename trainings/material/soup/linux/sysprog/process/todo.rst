@@ -10,6 +10,8 @@ TODO
 
       * intro/file descriptors
 
+    * filenum allocation -> file-descriptors, bottom of page
+
 * Refactor old crap
 
   * file io basics: open/read/write/close

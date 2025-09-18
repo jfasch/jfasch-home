@@ -58,6 +58,8 @@ Bugs Ahead: Code Flow Leakage
    :language: c++
    :caption: :download:`code/leak-code-flow.cpp`
 
+.. _sysprog-process-filedesc-inher:
+
 File Descriptors Are Inherited
 ------------------------------
 

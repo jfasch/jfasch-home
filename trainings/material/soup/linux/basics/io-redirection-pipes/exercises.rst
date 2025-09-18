@@ -4,9 +4,6 @@
 Exercises: IO-Redirection, Pipes
 ================================
 
-.. contents::
-   :local:
-
 * Use the ``cat`` program (without any commandline parameters) to
   copy ``/etc/passwd`` to ``/tmp/passwd``.
 * Use the ``echo`` command (call it multiple times in a row) to create

@@ -4,9 +4,6 @@
 I/O Redirection
 ===============
 
-.. contents::
-   :local:
-
 .. sidebar:: See also
 
    * :doc:`io-redirection-swap-stdout-stderr`
