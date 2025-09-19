@@ -56,6 +56,23 @@ Creative Weirdness: ``fork()``
    :language: c++
    :caption: :download:`code/basic.cpp`
 
+``return`` From ``main()``, And ``exit()``
+------------------------------------------
+
+* ``main()`` is special (entry point from C startup/runtime)
+* Return statement in ``main()`` is special
+
+  * Terminates process
+  * Return value is *exit status* of the process
+  * **Only one byte**: 0-255
+
+* Return from ``main()`` has the same effect as calling ``exit()``
+  instead
+
+.. literalinclude:: code/basic-exit.cpp
+   :language: c++
+   :caption: :download:`code/basic-exit.cpp`
+
 Bugs Ahead: Code Flow Leakage
 -----------------------------
 

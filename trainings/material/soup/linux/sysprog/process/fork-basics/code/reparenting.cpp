@@ -6,6 +6,11 @@
 int main()
 {
     pid_t pid = fork();
+    if (pid == -1) {
+        perror("fork");
+        return 1;
+    }
+
     if (pid == 0)
         pause();
     else {

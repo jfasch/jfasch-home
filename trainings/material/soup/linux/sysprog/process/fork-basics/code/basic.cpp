@@ -6,7 +6,7 @@ int main()
     pid_t pid = fork();                                // <-- returns TWICE!!
     if (pid == -1) {
         perror("fork");
-        return -1;
+        return 1;
     }
 
     if (pid == 0) {                                    // <-- child
