@@ -19,10 +19,10 @@ int main()
     }
 
     if (pid == 0) {
-        close(read_end);
+        close(read_end);                               // <-- unneeded
     }
     else {
-        close(write_end);
+        close(write_end);                              // <-- unneeded
     }
 
     return 0;

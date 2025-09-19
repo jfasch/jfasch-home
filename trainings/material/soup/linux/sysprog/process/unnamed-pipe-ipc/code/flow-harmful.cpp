@@ -28,9 +28,8 @@ int main()
     if (pid == 0) {
         close(read_end);
 
-        // ******                                      <-- produce data once a second
         int cur_seq = 0;
-        while (true) {
+        for (int i=0; i<5; i++) {
             data data = { cur_seq++ };
             ssize_t nwritten = write(write_end, &data, sizeof(data));
             if (nwritten == -1) {
@@ -39,11 +38,13 @@ int main()
             }
             sleep(1);
         }
+        
+        close(write_end);
+        exit(0);
     }
     else {
-        close(write_end);
+        // close(write_end);                           // <-- NOT closing -> pinned
 
-        // ******                                      <-- consume data
         while (true) {
             data data;
             ssize_t nread = read(read_end, &data, sizeof(data));
@@ -51,9 +52,17 @@ int main()
                 perror("read");
                 exit(1);
             }
+            if (nread == 0)  {
+                std::println("seen EOF");
+                break;
+            }
             std::println("parent received: {}", data.sequence_number);
         }
+
+        close(read_end);
+        exit(0);
     }
 
     return 0;
 }
+
