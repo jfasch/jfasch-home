@@ -5,9 +5,9 @@ Linux: Introduction, Userland/Kernel Programming, Hardware/Embedded
    :maxdepth: 1
 
    basics/index
+   sysprog/index
    ssh/index
    toolchain/index
-   sysprog/index
    hardware/index
    kernel/index
    drafts/index

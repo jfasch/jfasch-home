@@ -21,7 +21,9 @@ int main()
     else {
         std::println("parent pid = {}, child pid = {}", getpid(), pid);
 
-        while (true) {
+        while (true) {                                 // <-- loop: child could be
+                                                       // <-- stopped and continued 
+                                                       // <-- multiple times in a row
             int status;
             pid_t waited_for = waitpid(pid, &status, WUNTRACED|WCONTINUED);
             if (waited_for == -1) {

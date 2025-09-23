@@ -10,13 +10,15 @@ Contents
    syscalls-and-errors/index
    file-io/index
    process/index
+   signals/index
+
    posix-threads/index
    scheduling/index
    sysprog_events/topic
    sysprog_ipc/topic
-   sysprog_signals/topic
    mmap/index
    ipc-mqueue/topic
+   todo
 
 Miscellanous Live Demos (And Other Stuff)
 -----------------------------------------

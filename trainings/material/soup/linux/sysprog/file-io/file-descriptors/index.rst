@@ -86,6 +86,6 @@ File Descriptor Lifecycle - ``open/read/write/close``
 
 .. _sysprog-filedesc-alloc:
 
-jjj How Descriptor Numbers Are Chosen
--------------------------------------
+How Descriptor Numbers Are Chosen
+---------------------------------
 
