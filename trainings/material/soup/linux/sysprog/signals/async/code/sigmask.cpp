@@ -37,7 +37,7 @@ int main()
     char c;
     rv = read(STDIN_FILENO, &c, 1);                    // <-- send SIGUSR1 from another terminal
                                                        //     - *not* delivered
-                                                       //     - read() waits for me
+                                                       //     - read() continues uninterrupted
     if (rv == -1) {
         perror("read");
         return 1;

@@ -6,7 +6,7 @@
 static void handler(int signal)
 {
     static const char msg[] = "signal handler\n";
-    write(STDOUT_FILENO, msg, sizeof(msg));            // <-- async-signal-safe
+    write(STDOUT_FILENO, msg, sizeof(msg));
 }
 
 int main()
@@ -22,6 +22,11 @@ int main()
         return 1;
     }
 
-    for(;;);
+    char c;
+    rv = read(STDIN_FILENO, &c, 1);                    // <-- blocks until keypress (possibly long)
+    if (rv == -1) {
+        perror("read");
+        return 1;
+    }
     return 0;
 }

@@ -16,16 +16,12 @@ int main()
     struct sigaction sa = { 0 };
     sa.sa_handler = handler;
 
-    int rv = sigaction(SIGTERM, &sa, nullptr);
+    int rv = sigaction(SIGTERM, &sa, nullptr);         // <-- establish handler
     if (rv == -1) {
         perror("sigaction");
         return 1;
     }
 
-    rv = pause();                                      // <-- blocks a long time
-    if (rv == -1) {
-        perror("pause");
-        return 1;
-    }
+    for(;;);
     return 0;
 }

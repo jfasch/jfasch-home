@@ -71,6 +71,14 @@ A Little Terminology
   * The process is scheduled out, either because another process is
     running on the CPU, or because it is not runnable at all
 
+* **"Traditional" signals** are not *queued* against the process
+  |longrightarrow| multiple arrivals go unnoticed
+* **Realtime signals** *are* queued (see :ref:`here
+  <sysprog-signals-rtsig>` for more
+
+  * No predefined meanings like traditional signals
+  * ``SIGRTMIN`` up to ``SIGRTMAX`` (32 on Linux)
+
 * **Disposition**: determines how the process reacts on the
   signal. From (`man -s 7 signal
   <https://man7.org/linux/man-pages/man7/signal.7.html>`__):
@@ -169,7 +177,8 @@ Examples: "Term" And "Core"
    :language: c++
    :caption: :download:`code/fpe.cpp`
 
-* ``SIGSEGV`` and ``SIGFPE``
+* ``SIGSEGV`` and ``SIGFPE`` (``target_compile_options(prog PRIVATE
+  -Wno-div-by-zero``)
 * Better to not handle (denial of reality)
 * Talk about core dumps
 * Show in ``gdb``
@@ -178,4 +187,3 @@ Examples: "Term" And "Core"
 
    $ cat /proc/sys/kernel/core_pattern
    $ sudo sh -c 'echo core > /proc/sys/kernel/core_pattern'
-

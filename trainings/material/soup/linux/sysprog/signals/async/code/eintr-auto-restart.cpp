@@ -6,7 +6,7 @@
 static void handler(int signal)
 {
     static const char msg[] = "signal handler\n";
-    write(STDOUT_FILENO, msg, sizeof(msg));            // <-- async-signal-safe
+    write(STDOUT_FILENO, msg, sizeof(msg));
 }
 
 int main()
@@ -15,6 +15,7 @@ int main()
 
     struct sigaction sa = { 0 };
     sa.sa_handler = handler;
+    sa.sa_flags = SA_RESTART;                          // <-- automatic restart
 
     int rv = sigaction(SIGTERM, &sa, nullptr);
     if (rv == -1) {
@@ -23,7 +24,7 @@ int main()
     }
 
     char c;
-    rv = read(STDIN_FILENO, &c, 1);                    // <-- also blocks for longer
+    rv = read(STDIN_FILENO, &c, 1);                    // <-- restarted
     if (rv == -1) {
         perror("read");
         return 1;
