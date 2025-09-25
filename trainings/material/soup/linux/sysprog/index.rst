@@ -12,6 +12,12 @@ Contents
    process/index
    signals/index
 
+In The Queue
+------------
+
+.. toctree::
+   :maxdepth: 1
+
    posix-threads/index
    scheduling/index
    sysprog_events/topic

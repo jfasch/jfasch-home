@@ -7,7 +7,8 @@ Signals
    intro/index
    async/index
 
-.. .. selfpipe/index
+   async-graceful/index
+   selfpipe/index
 
 .. .. blocking: sigwait sigwaitinfo
 .. toctree::

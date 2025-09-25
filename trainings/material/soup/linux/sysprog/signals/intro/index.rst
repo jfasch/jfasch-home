@@ -99,8 +99,8 @@ A Little Terminology
        * Default action is to continue the process if it is currently
          stopped.
 
-List Of Signals
----------------
+List Of Traditional Signals
+---------------------------
 
 From `man -s 7 signal
 <https://man7.org/linux/man-pages/man7/signal.7.html>`__:
