@@ -3,7 +3,7 @@ TODO
 
 * fill :ref:`sysprog-filedesc-alloc` in
   :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
-* signals
+* signals / async
 
   * traditional/async delivery (-> on return from syscall)
   * when called: 
@@ -17,19 +17,6 @@ TODO
       when the process is rescheduled onto the CPU), it creates a new
       frame on the user-space stack"
 
-  * catch SIGTERM
+* events
 
-    * debug output -> async signal safety
-    * should exit somehow, in the handler or gracefully
-    * if not -> SIG_IGN
-    * install SIG_IGN for SIGINT 
-
-      * show SIGKILL (sigaction error on ign SIGKILL?)
-      * send SIGSEGV
-
-  * fork(): disposition inherited
-  * EINTR
-  * realtime signals
-
-  * strsignal
-
+  * link from :doc:`intro/index` signalfd

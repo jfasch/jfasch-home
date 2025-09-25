@@ -32,7 +32,8 @@ How Are Signals Received?
 
   * In history, asynchronous delivery was implemented first (right at
     epoch)
-  * Process may establish signal handler
+  * Process may establish a :ref:`signal handler
+    <sysprog-signals-handler>`
   * Interrupts process flow |longrightarrow| :ref:`race conditions
     <sysprog-signals-async-signal-safe>`
   * Hard to get right - much like writing interrupt service routines

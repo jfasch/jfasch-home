@@ -3,6 +3,11 @@
 Asynchronous Signal Handling
 ============================
 
+.. _sysprog-signals-handler:
+
+Handler
+-------
+
 .. _sysprog-signals-async-signal-safe:
 
 Async-Signal-Safety
