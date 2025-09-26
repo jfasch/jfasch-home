@@ -1,22 +1,29 @@
-.. post:: Jul 29, 2025
+.. post:: Sep 26, 2025
    :category: linux, embedded
 
+Why Use A Container When There Is ``chroot``?
+=============================================
 
-Yocto On An Unsupported Distribution (What's Wrong With ``chroot``?)
-====================================================================
+.. LinkedIn post
+.. -------------
+.. 
+.. Recenty I had the problem that Yocto does not support the OS that I am
+.. running (Fedora 42), and I had to setup a supported OS to do the
+.. job. Normally, nowadays, one would jump up and throw a container at
+.. that particular kind of problem. In this article I present how good
+.. old ``chroot`` is used to do the same, although a little more
+.. lightweight.
 
-* jjj sudo vs being root?
-* Busybox Klammern weg
 
 I cannot build `Yocto "Walnascar"
 <https://docs.yoctoproject.org/migration-guides/migration-5.2.html>`__
 natively on my Fedora 42 - it is not supported [#yocto_tried]_. So I
-was looking for a way to "isolate" a supported distribution inside
-Fedora 42.
+was looking for a way to "isolate" a supported distribution (Fedora 41
+for that matter) inside Fedora 42.
 
 I had done this a number of times before: using a subdirectory on one
 OS as the root directory for another OS, combining a few features like
-``chroot`` and (bind) mounts. Also, I am always looking for
+``chroot`` and bind mounts. Also, I am always looking for
 opportunities to :doc:`explain people the world </trainings/index>` -
 setting up a ``chroot`` jail in front the audience would not only
 explain what ``chroot`` is, but also what a root directory is.
@@ -33,11 +40,6 @@ directly to :ref:`blog_chroot_decontainerized_simple` to skip my case
 against Docker and read the full explanation of everything. Jump to
 :ref:`blog_chroot_short_fedora41` if you don't want any explanation
 but only want the pure commandlines for a Fedora 41 ``chroot``.
-
-.. contents::
-   :local:
-   :depth: 1
-
 
 .. _blog_chroot_container_attempts:
 
@@ -61,7 +63,8 @@ Installed docker, pulled ``fedora:41`` from `Docker Hub
 shell. Further steps would have been to mount my home directory into
 it, to solve my original problem - build Yocto.
 
-While digging around I found `Docker considered harmful
+While digging around I found the alarmistic article `"Docker
+considered harmful"
 <https://quantum5.ca/2025/03/18/docker-considered-harmful/>`__ which
 is really worth a read. I mean, it's probably me - I am really
 sceptical about any hype, and it takes very little (for example, an
@@ -89,10 +92,11 @@ steroids.
 
 Long story short: network setup for nspawn containers works best when
 the host system's network is managed by ``systemd-networkd``. My
-machine runs GNOME, which works best together with ``NetworkManager``,
-which again is perfectly integrated with
+machine runs GNOME, which works best together with GNOME's
+``NetworkManager``, which again is perfectly integrated with
 ``wpa_supplicant``. ``systemd-networkd`` has no idea what
-``wpa_supplicant`` is, all has to be done manually.
+``wpa_supplicant`` is. Doing everything by hand is a cool learning
+experience, but does not help me get the job (remember: Yocto) done.
 
 Conclusion
 ..........
@@ -115,23 +119,34 @@ If I went down that route though, I'd have to think a lot more.
   virtualization/isolation - I don't, however.
 
 **But again**: my only problem is that I want to build Yocto on Fedora
-42 which is unsupported. I know what ``chroot`` is, I know what a
-*bind mount* is, I know what Linux is - so I should be able to solve
-my problem in a minimal and hype-less way.
+42 which is not supported by Yocto. I know what ``chroot`` is, I know
+what a *bind mount* is, I know what Linux is - so I should be able to
+solve my problem in a minimal and hype-less way.
 
 .. _blog_chroot_decontainerized_simple:
 
-Solution: De-Containerized And Simple
--------------------------------------
+``chroot``: De-Containerization (Minimal ``busybox`` Root Filesystem)
+---------------------------------------------------------------------
 
-This section uses a minimal ``busybox`` root filesystem, rather than a
-full OS, only to explain the fundamentals. The fundamentals will
-remain the same later, when we :ref:`repeat the jail setup for the
-full Fedora 41 <blog_chroot_short_fedora41>`.
+I'll begin with a minimal ``busybox`` root filesystem. The likelihood
+that this particular approach will let me build Yocto is relatively
+low again, but it lets me present the fundamentals without confusing
+you with distro specific things. If you already know enough you may
+well jump ahead and read the section where I :ref:`repeat the whole
+thing with Fedora 41 <blog_chroot_short_fedora41>` instead of
+``busybox``.
 
-I will not use ``sudo`` to execute commands as root - rather I'll use
-the hash sign (``#``) as prompt when the command is run as root, and
-the dollar sign (``$``) when the command is run as normal user.
+**Conventions**
+
+I the remainder, I'll not use ``sudo`` to execute commands as root.
+Rather, I'll use 
+
+* the hash sign (``#``) as prompt when the command is run as root
+* the dollar sign (``$``) when the command is run as normal user
+
+To help you distinguish commands that I run inside the jail from those
+that are run on the host system, I try to annotate code blocks
+accordingly ("Inside jail", "Outside jail").
 
 .. contents::
    :local:
@@ -141,21 +156,24 @@ the dollar sign (``$``) when the command is run as normal user.
 ``chroot`` Jail
 ...............
 
-``chroot`` is a system call that changes the root directory of the
-calling process to its single parameter which has to be a
-directory. In effect, it redirects path traversal to start from that
-directory. This is best explained using an example, using a shell command
-``chroot`` with the same name.
+``chroot`` is a system call (`documentation
+<https://man7.org/linux/man-pages/man2/chroot.2.html>`__) that changes
+the root directory of the calling process to its single parameter
+which has to be a directory. In effect, it redirects path traversal to
+start from that directory. This is best explained using an example,
+using a shell command ``chroot`` with the same name (`documentation
+<https://man7.org/linux/man-pages/man1/chroot.1.html>`__).
 
 Below is a functional (although rather pointless) root filesystem,
-implemented using the neat ``busybox`` (`Wikipedia link
+implemented using the neat ``busybox`` (`Github
+<https://github.com/brgl/busybox>`__, `Wikipedia
 <https://en.wikipedia.org/wiki/BusyBox>`__).
 
 .. code-block:: console
    :caption: Outside jail
 
-   $ tree ~/Machines/Simple\(Busybox\)
-   /home/jfasch/Machines/Simple(Busybox)
+   $ tree ~/Machines/Simple-Busybox
+   /home/jfasch/Machines/Simple-Busybox
    └── bin
        ├── busybox
        ├── ls -> /bin/busybox
@@ -164,17 +182,17 @@ implemented using the neat ``busybox`` (`Wikipedia link
 The ``chroot`` command is used to execute a command *inside* the
 "jail". The root directory of that process, and all of its
 descendants, is *the jail*,
-``/home/jfasch/Machines/Simple(Busybox)``. Here we enclose an instance
+``/home/jfasch/Machines/Simple-Busybox``. Here we enclose an instance
 of ``/bin/sh`` (actually
-``/home/jfasch/Machines/Simple(Busybox)/bin/sh``) into the "container"
-``/home/jfasch/Machines/Simple(Busybox)``.
+``/home/jfasch/Machines/Simple-Busybox/bin/sh``) into the "container"
+``/home/jfasch/Machines/Simple-Busybox``.
 
 .. code-block:: console
    :caption: Outside jail
 
-   # chroot ~/Machines/Simple\(Busybox\) /bin/sh
+   # chroot ~/Machines/Simple-Busybox /bin/sh
    #            # <-- inside jail
-   # pwd        # <-- actually /home/jfasch/Machines/Simple(Busybox)
+   # pwd        # <-- actually /home/jfasch/Machines/Simple-Busybox
    /
    # ls         # <-- busybox ls
    bin
@@ -199,16 +217,18 @@ example, fails without a populated ``/proc`` [#empty_is_not_fail]_:
    PID   USER     TIME  COMMAND
 
 To make ``proc`` available inside the jail, we create a mountpoint
-``/proc``, and mount a ``proc`` instance at it. On the host (err: from
-outside the jail, as ``root``):
+``/proc`` (inside), and mount a ``proc`` instance on it. On the host
+(err: from outside the jail, as ``root``):
 
 .. code-block:: console
    :caption: Outside jail
 
    # pwd
    /home/jfasch/Machines
-   # mkdir Simple\(Busybox\)/proc
-   # mount -t proc proc Simple\(Busybox\)/proc
+   # mkdir Simple-Busybox/proc
+   # mount -t proc proc Simple-Busybox/proc
+
+Retry ``busybox ps`` inside, and see a the full process list.
 
 .. code-block:: console
    :caption: Inside jail
@@ -234,15 +254,15 @@ outside the jail, as ``root``):
 
 Another virtual filesystem, of type ``devtmpfs``, is usually mounted
 at ``/dev/``. For our purposes, it provides special files like
-``/dev/null`` which is used occasionally in less trivial root
+``/dev/null`` which are used occasionally in less trivial root
 filesystems. (Our simple Busybox root doesn't.) Make that available
 much like we did with ``/proc``
 
 .. code-block:: console
    :caption: Outside jail
 
-   # mkdir Simple\(Busybox\)/dev
-   # mount -t devtmpfs dev Simple\(Busybox\)/dev
+   # mkdir Simple-Busybox/dev
+   # mount -t devtmpfs dev Simple-Busybox/dev
 
 There is another filesystem type, ``tmpfs``, which is a plain RAM
 based filesystem (no persistence). An instance of it is usually
@@ -253,8 +273,8 @@ we are at it.
 .. code-block:: console
    :caption: Outside jail
 
-   # mkdir Simple\(Busybox\)/dev/shm
-   # mount -t tmpfs shm Simple\(Busybox\)/dev/shm
+   # mkdir Simple-Busybox/dev/shm
+   # mount -t tmpfs shm Simple-Busybox/dev/shm
 
 Bind Mounts
 ...........
@@ -262,7 +282,7 @@ Bind Mounts
 To access files outside the jail, one would have to navigate past the
 root of the jail upwards in the hierarchy. This is not possible -
 which is the entire point of ``chroot``. Instead, *bind mounts* are
-used to make outside content visible inside.
+used to make *outside content* visible *inside*.
 
 .. _blog_chroot_bind_home:
 
@@ -276,9 +296,9 @@ mountpoint ``/home/jfasch`` *inside*, and mount the *outside*
 .. code-block:: console
    :caption: Outside jail
 
-   # mkdir -p Simple\(Busybox\)/home/jfasch
-   # chown jfasch:jfasch Simple\(Busybox\)/home/jfasch
-   # mount --bind /home/jfasch Simple\(Busybox\)/home/jfasch
+   # mkdir -p Simple-Busybox/home/jfasch
+   # chown jfasch:jfasch Simple-Busybox/home/jfasch
+   # mount --bind /home/jfasch Simple-Busybox/home/jfasch
 
 ``/etc/resolv.conf``
 ````````````````````
@@ -315,8 +335,8 @@ mounted into the jail.
 .. code-block:: console
    :caption: Outside jail
 
-   # touch Simple\(Busybox\)/etc/resolv.conf
-   # mount --bind /etc/resolv.conf Simple\(Busybox\)/etc/resolv.conf 
+   # touch Simple-Busybox/etc/resolv.conf
+   # mount --bind /etc/resolv.conf Simple-Busybox/etc/resolv.conf 
 
 Verify all is well,
 
@@ -467,13 +487,13 @@ not capable to run a Yocto build [#busybox-not-yocto-supported]_.
 
 What follows is an annotated shell-command-like transcript of what I
 did to solve my very original problem: a Yocto build on
-Yocto-unsupported Fedora 42. It has much of what we did above, only
+Yocto-unsupported Fedora 42. It has much of what I did above, only
 more condensed.
 
 Fedora 41 Jail
 ..............
 
-We now setup a real distro's root filesystem. LIke the Busybox in
+Lets now setup a real distro's root filesystem. Like the Busybox in
 :ref:`blog_chroot_chroot_jail`, but bigger. All the mountpoints, like
 ``/proc``, are already there, for example.
 
@@ -492,7 +512,7 @@ error.
    # minimal install
    PACKAGES="dnf fedora-release glibc glibc-langpack-en glibc-langpack-de gcc g++ cmake util-linux iputils"
    
-   # for bitbake itself
+   # for Yocto's bitbake itself
    PACKAGES="$PACKAGES python3"
    # these had to be installed on the host, as bitbake complained
    PACKAGES="$PACKAGES chrpath diffstat lz4 patch rpcgen"
@@ -513,6 +533,8 @@ Populate the root directory ...
 
 Create Environment
 ..................
+
+Let's now repeat the steps from above, one by one.
 
 Mount ``/proc`` (see :ref:`blog_chroot_proc`):
 
@@ -555,6 +577,8 @@ Give myself a name inside the jail (see
    # chroot $JAILDIR su - jfasch
    [jfasch@laptop ~]$ 
 
+Et voila: Fedora 41 *inside* Fedora 42!
+
 Finally: Build Yocto
 ....................
 
@@ -567,19 +591,31 @@ up for that purpose.
    [jfasch@laptop ~]$ cd ~/My-Projects/FH-ENDLESS/Yocto/
    [jfasch@laptop Yocto]$ . poky/oe-init-build-env raspberry3-build/
    [jfasch@laptop raspberry3-build]$ bitbake endless-image-fulldev
-   ... CPU fan on ...
+   ... CPU fan getting loud ...
 
 Conclusion
 ----------
 
-jjj
+Please don't consider this article a flame against any container
+technologies. Containers are cool when there are problems to be solved
+bigger than building Yocto using a different distro than the one you
+are just running. Need isolation, need a full (well, half) OS boot and
+services started inside - this is what containers are there for. 
+
+Sure a full distro container can solve my trivial Yocto problem
+too. In my opinion, though, this feels like using a sledgehammer to
+crack a nut. If you feel the same, then this article is for you, and I
+hope that the information was helpful. Send comments (:doc:`here
+</about/myself/index>`) if you liked it and/or have suggestions!
+
 
 .. rubric:: Footnotes
 .. [#yocto_tried] I sure tried no matter what they say, but ran into
-                  build error over and over.
+                  build errors over and over.
 .. [#cgroups_docker] Naturally, Docker also uses cgroups to implement
                      the isolation that it provides.
-.. [#empty_is_not_fail] I would have expected an error message rather
-                        than empty output, though.
+.. [#empty_is_not_fail] I would have expected ``busybox ps`` to fail
+                        rather than succeeding with empty output,
+                        though.
 .. [#busybox-not-yocto-supported] Busybox is not among Yocto's list of
                                   supported distibutions
