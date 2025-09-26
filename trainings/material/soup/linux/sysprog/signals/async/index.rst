@@ -9,6 +9,8 @@ Asynchronous Signal Handling
 
    * `man -s 2 sigaction
      <https://man7.org/linux/man-pages/man2/sigaction.2.html>`__
+   * `man -s 3 sigsetops
+     <https://man7.org/linux/man-pages/man3/sigfillset.3.html>`__
 
 .. topic:: Teacher's note
 
