@@ -16,7 +16,7 @@ int main()
     int rv = sigprocmask(SIG_BLOCK, &interest,         // <-- inhibit async delivery
                          nullptr);
     if (rv == -1) {
-        perror("sigwait");
+        perror("sigprocmask");
         return 1;
     }
 

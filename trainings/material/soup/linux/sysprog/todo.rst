@@ -23,6 +23,8 @@ TODO
   * link from :doc:`signals/async/index` ``EINTR`` handling
   * link from :doc:`signals/async-self-pipe/index` (more with signals)
   * signalfd: link from
-    :doc:`/trainings/material/soup/linux/sysprog/signals/sync/index`
+
+    * :doc:`/trainings/material/soup/linux/sysprog/signals/sync/index`
+    * :doc:`/trainings/material/soup/linux/sysprog/signals/signalfd/index`
 
 * replace ``sidebar`` with ``topic`` (better for mobile)

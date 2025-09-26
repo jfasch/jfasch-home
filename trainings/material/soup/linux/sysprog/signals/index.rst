@@ -11,3 +11,5 @@ Signals
    async-self-pipe/index
 
    sync/index
+
+   signalfd/index
