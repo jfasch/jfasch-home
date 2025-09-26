@@ -8,7 +8,7 @@ static volatile sig_atomic_t quit = 0;                 // <-- special "atomic" t
 static void handler(int signal)
 {
     if (signal == SIGTERM || signal == SIGINT)
-        quit = 1;
+        quit = 1;                                      // <-- communicate into main loop
 }
 
 int main()
@@ -27,7 +27,7 @@ int main()
         return 1;
     }
 
-    while (!quit) {
+    while (!quit) {                                    // <-- graceful termination
         char c;
         rv = read(STDIN_FILENO, &c, 1);
         if (rv == -1) {
@@ -40,6 +40,6 @@ int main()
         }
     }
 
-    std::println("bye");
+    std::println("cleaning up, bye");                  // <-- sync database
     return 0;
 }

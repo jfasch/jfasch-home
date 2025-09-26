@@ -1,7 +1,7 @@
 add_subdirectory(intro)
 add_subdirectory(async)
 add_subdirectory(async-graceful)
-add_subdirectory(selfpipe)
+add_subdirectory(async-self-pipe)
 
 
 

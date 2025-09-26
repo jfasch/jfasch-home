@@ -21,5 +21,6 @@ TODO
 
   * link from :doc:`signals/intro/index` signalfd
   * link from :doc:`signals/async/index` ``EINTR`` handling
+  * link from :doc:`signals/self-pipe/index` (more with signals)
 
 * replace ``sidebar`` with ``topic`` (better for mobile)
