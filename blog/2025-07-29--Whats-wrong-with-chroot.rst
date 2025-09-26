@@ -7,6 +7,8 @@ Why Use A Container When There Is ``chroot``?
 .. LinkedIn post
 .. -------------
 .. 
+.. Why Use A Container When There Is ``chroot``?
+.. 
 .. Recenty I had the problem that Yocto does not support the OS that I am
 .. running (Fedora 42), and I had to setup a supported OS to do the
 .. job. Normally, nowadays, one would jump up and throw a container at
