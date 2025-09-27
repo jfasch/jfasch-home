@@ -29,8 +29,9 @@ Basic Operation
 * ``read()`` on the ``fd`` into an array of ``signalfd_siginfo``
   structures
 * Best to choose array size according to number of handled signals
+  |longrightarrow| read all possible pending signals in one swoop
 
-  * Different strategy for realtime signals needed: these are queued
+  * Different for realtime signals: these are queued
 
 Example: A Better ``sigwaitinfo()``
 -----------------------------------
