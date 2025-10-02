@@ -11,9 +11,15 @@ Contents
    file-io/index
    process/index
    signals/index
+   eventloop/index
 
 In The Queue
 ------------
+
+This is course material which has done its duty already. It is in the
+queue for refactoring, so it will look like the "regular" material
+above. It can be booked nonetheless; in this case the booked topics
+will receive extra priority points for refactoring |:wink:|.
 
 .. toctree::
    :maxdepth: 1

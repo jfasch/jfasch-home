@@ -7,7 +7,12 @@ File Descriptors: Basics
 File Descriptors
 ----------------
 
-* Universal *handle* for everything that's got to do with I/O
+.. jjj add link to eventfd, timerfd
+
+* Universal *handle* for everything that's got to do with I/O. You'd
+  be surprised what fits under the "I/O" hat (:doc:`signals
+  </trainings/material/soup/linux/sysprog/signals/signalfd/index>`,
+  for example)
 * Not only files, but *any* kind of IO
 
   * Pipes

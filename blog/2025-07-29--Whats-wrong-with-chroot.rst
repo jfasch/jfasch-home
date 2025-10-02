@@ -288,8 +288,8 @@ used to make *outside content* visible *inside*.
 
 .. _blog_chroot_bind_home:
 
-Home Directory (And Network, While We At Bind Mounting)
-```````````````````````````````````````````````````````
+Home Directory
+``````````````
 
 To make my home directory visible inside the jail, we create a
 mountpoint ``/home/jfasch`` *inside*, and mount the *outside*
@@ -302,8 +302,8 @@ mountpoint ``/home/jfasch`` *inside*, and mount the *outside*
    # chown jfasch:jfasch Simple-Busybox/home/jfasch
    # mount --bind /home/jfasch Simple-Busybox/home/jfasch
 
-``/etc/resolv.conf``
-````````````````````
+Network/``/etc/resolv.conf``
+````````````````````````````
 
 No isolation is cool - I can use the host network inside the jail
 (simply because the concept "host" does not exist).

@@ -27,4 +27,10 @@ TODO
     * :doc:`/trainings/material/soup/linux/sysprog/signals/sync/index`
     * :doc:`/trainings/material/soup/linux/sysprog/signals/signalfd/index`
 
+  * eventd, timerfd (add link from
+    :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`,
+    look out for "jjj")
+
 * replace ``sidebar`` with ``topic`` (better for mobile)
+
+* exercises see :doc:`/trainings/material/soup/linux/sysprog/eventloop/index`

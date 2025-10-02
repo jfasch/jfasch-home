@@ -2,6 +2,7 @@ add_subdirectory(syscalls-and-errors)
 add_subdirectory(file-io)
 add_subdirectory(process)
 add_subdirectory(signals)
+add_subdirectory(eventloop)
 
 add_subdirectory(blocking-io)
 
