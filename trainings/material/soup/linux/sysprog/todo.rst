@@ -34,3 +34,11 @@ TODO
 * replace ``sidebar`` with ``topic`` (better for mobile)
 
 * exercises see :doc:`/trainings/material/soup/linux/sysprog/eventloop/index`
+
+* toplevel livehacking explanation
+
+  exit status
+
+  * shell demo: grep jjj /etc/passwd
+  * prog main() { return 0; } -> shell -> shell if, while,
+  * 

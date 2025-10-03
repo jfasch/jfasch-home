@@ -1,6 +1,15 @@
 Linux Systems Programming
 =========================
 
+..   * say something about where i learned unix (lesend am scheisshaus)
+..   * blah these are the principles one should understand when doing
+..     serious systems programming blah
+..
+..   * link material
+..
+..     * signals, and blocking IO, and the shell:
+..       https://www.linusakesson.net/programming/tty/
+
 Contents
 --------
 
