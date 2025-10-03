@@ -4,6 +4,7 @@ Details
 .. toctree::
    :maxdepth: 1
 
+   2025-10-13--Python/index
    2025-07-02--C++-2-Days/index
    2025-05-14--C++-2-Days/index
    2024-11-19--C++-One-Day/index
