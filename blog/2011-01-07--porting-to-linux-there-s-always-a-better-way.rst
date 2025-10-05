@@ -80,12 +80,9 @@ Don't use Unix signals for communication. They have very few in common
 with what's called a *signal* in RTOSs. (In the RTOS world, *signals*
 are often called *messages*.)
 
-.. sidebar:: References
+.. sidebar:: See also
 
-   * :doc:`Slide material: UNIX signals
-     </trainings/material/soup/linux/sysprog/sysprog_signals/slides>`
-   * :doc:`Demo code: UNIX signals
-     </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
+   * :doc:`/trainings/material/soup/linux/sysprog/signals/index`
 
 In Unix, signals are commonly used to tear down a process (*not* a
 thread), giving it a chance to perform proper cleanup before

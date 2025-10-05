@@ -161,7 +161,7 @@ File IO
 
 * From :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
 
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
   * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`
 
 Day 3

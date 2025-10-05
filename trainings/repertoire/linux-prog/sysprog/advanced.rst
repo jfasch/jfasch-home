@@ -26,8 +26,7 @@ Linux Systems Programming: Virtual Memory, IPC, Shared Libraries
 
 	    * PDF Slides, :download:`sysprog
               </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-	    * Live Hacking, :doc:`Signals
-              </trainings/material/soup/linux/sysprog/sysprog_signals/screenplay>`
+	    * :doc:`/trainings/material/soup/linux/sysprog/signals/index`
 	    * Live Hacking, :doc:`IPC
               </trainings/material/soup/linux/sysprog/sysprog_ipc/screenplay>`
 
