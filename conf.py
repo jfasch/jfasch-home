@@ -19,7 +19,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 _me = 'Jörg Faschingbauer'
-_canonical = 'https://www.faschingbauer.me'
+_canonical = 'https://www.faschingbauer.me/'
 project = author = _me
 copyright = '2019-2025 (GPLv3), '+_me
 html_title = _me
@@ -58,6 +58,7 @@ extensions = [
     'sphinxcontrib.images',
     'sphinxemoji.sphinxemoji',
     'sphinx_design',
+    'sphinx_sitemap',
 
     'sphinxcontrib.plantuml',
 
@@ -132,23 +133,7 @@ if True:
     blog_title = u'Jörg Faschingbauer'
     blog_path = 'blog/index'
 
-    # a side effect of setting blog_baseurl is that atom.xml feeds
-    # are generated altogether
-    blog_baseurl = _canonical
-
     blog_authors = {
         'jfasch': ('Jörg Faschingbauer', _canonical),
     }
     blog_default_author = 'jfasch'
-    
-    # blog_locations = {
-    #     'daham': ('Graz, Austria', 'https://de.wikipedia.org/wiki/Graz'),
-    # }
-    # blog_default_location = 'daham'
-    # fontawesome_link_cdn = 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
-    
-    # blog_feed_fulltext = True
-    # blog_feed_length = 10
-    # blog_feed_archives = True
-
-    # feed is http://feeds.feedburner.com/JoergFaschingbauer
