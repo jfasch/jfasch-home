@@ -5,7 +5,6 @@ Work in Progress
    :maxdepth: 1
 
    fh-joanneum/index
-   playground/index
    git
    screencast
    project-xxx/index

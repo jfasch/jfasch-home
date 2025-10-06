@@ -18,9 +18,7 @@ The source of this site is licensed under the `GPLv3
 **Why apply a software license to a website?**
 
 This site contains material for trainings that I give. The material is
-structured much like software (topics *depend on* other topics; see
-for example :doc:`here </trainings/material/soup/linux/kernel/index>` and
-:doc:`here </trainings/material/soup/python/index>`)
+structured much like software (topics *depend on* other topics)
 
 See also `this discussion over at LWN
 <https://lwn.net/Articles/394306/>`__.
@@ -65,10 +63,6 @@ not much different from documentation - so yes, Sphinx is a really
 great static website generator. It lets me focus myself on content,
 with an eye towards structure and built-in link consistency (it won't
 let me break links by moving content around).
-
-Last not least, Sphinx has an extension interface :doc:`that I use
-<opentraining:index>` a lot to make course material :doc:`a little
-more maintainable </trainings/material/soup/linux/kernel/index>`.
 
 Installation Instructions
 -------------------------
