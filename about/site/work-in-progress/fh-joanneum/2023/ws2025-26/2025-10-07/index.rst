@@ -1,0 +1,184 @@
+.. include:: <mmlalias.txt>
+
+
+2025-10-07 (3 VO): Introduction
+===============================
+
+Quiz
+----
+
+.. list-table:: **Project Management**
+   :align: left
+   :header-rows: 1
+   :widths: 70 10 10 10
+
+   * * Topic
+     * Weak
+     * Intermediate
+     * Strong
+   * * CMake
+     * 
+     *
+     *
+   * * Creating and using libraries (``.h`` files, ``.cpp`` files)
+     * 
+     *
+     *
+   * * Git
+     * 
+     *
+     *
+
+.. list-table:: **C/C++**
+   :align: left
+   :header-rows: 1
+   :widths: 70 10 10 10
+
+   * * Topic
+     * Weak
+     * Intermediate
+     * Strong
+   * * Interfaces and implementation
+     * 
+     *
+     *
+   * * ``const``
+     * 
+     *
+     *
+   * * References
+     * 
+     *
+     *
+   * * Constructors, Destructors
+     * 
+     *
+     *
+
+.. list-table:: **Linux**
+   :align: left
+   :header-rows: 1
+   :widths: 70 10 10 10
+
+   * * Topic
+     * Weak
+     * Intermediate
+     * Strong
+   * * Shell usage (files and directories, permissions)
+     * 
+     *
+     *
+   * * System calls, file IO, error handling
+     * 
+     *
+     *
+   * * I2C 
+     * 
+     *
+     *
+   * * GPIO
+     * 
+     *
+     *
+
+Course Contents
+---------------
+
+More Linux (Systems Programming)
+................................
+
+.. topic:: Material
+
+   From :doc:`/trainings/material/soup/linux/sysprog/index`
+   
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/signals/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/eventloop/index`
+
+Process Creation/Lifetime
+`````````````````````````
+
+Use case: blocking on sensor readout. 
+
+If, for example, a sensor takes 100ms to give the value that it
+measures, this might keep other parts of the software from reacting
+fast enough. *It blocks the entire control program*, leading to all
+sorts of misbehavior (e.g. motor stops too late)
+
+*Solution:* create a subprocess which does the sensor
+readout. Communicate the value to the main/parent process.
+
+Graceful Termination
+````````````````````
+
+When a process is requested to terminate (``Ctrl-C`` on the console,
+or by ``kill``-ing it), the process's default behaviour is to just
+exhaust its life immediately. For a nontrivial control program, this
+might be too abrupt - it might want to do cleanup such as closing
+files (databases?), terminating child/worker processes, etc.
+
+No Busy Loops
+`````````````
+
+*A tight polling loop of 1ms is not friendly*. Lets save resources by
+doing nothing when there is nothing to do, and learn how to react
+intelligently on multiple event sources.
+
+More C++
+........
+
+Ownership
+`````````
+
+.. topic:: Material
+
+   From :doc:`/trainings/material/soup/cxx/cxx11/index`:
+
+   * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/rule-of-5/topic`
+
+This code from the main executable, `run-door.cpp
+<https://github.com/jfasch/FH-STECE2023/blob/main/bin/run-door.cpp>`__,
+has a number of shortcomings:
+
+.. code-block:: c++
+
+   InputSwitchMock button1(InputSwitch::State::INPUT_LOW);
+   InputSwitchMock button2(InputSwitch::State::INPUT_LOW);
+   InputSwitchMock light1(InputSwitch::State::INPUT_LOW);
+   InputSwitchMock light2(InputSwitch::State::INPUT_HIGH);
+   MotorMock motor(Motor::Direction::IDLE);
+
+   Inputs inputs(&button1, &button2, &light1, &light2, time);
+   Outputs outputs(&motor);
+
+* ``Inputs`` and ``Outputs`` get passed *pointers* to their delegees,
+  and *pointers are bad*
+* The lifetime of ``InputSwitchMock`` and ``MotorMock`` is
+  *automatic* (on main's stack frame). In less obvious code (the
+  default) this can easily go wrong.
+
+Lets decide on ownership semantics, and learn about C++11 *smart
+pointers* ``std::unique_ptr`` and ``std::shared_ptr``. Also shed
+some light on ownership rules, and how C++ tries really hard to
+shoot you in the foot.
+
+Bells and Whistles (Pythonicity)
+````````````````````````````````
+
+.. topic:: Material
+
+   From :doc:`/trainings/material/soup/cxx/cxx11/index`:
+
+   * :doc:`/trainings/material/soup/cxx/cxx11/auto/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/control-flow-locals/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/structured-binding/topic`
+   * :doc:`/trainings/material/soup/cxx/cxx11/range-for/index`
+   * :doc:`/trainings/material/soup/cxx/cxx11/lambda/index`?
+   * Maybe (much) more
+
+C++ is awful. C++11 (and onwards) tries to make it a better language
+(but fails). Learn about the funky new stuff.
+

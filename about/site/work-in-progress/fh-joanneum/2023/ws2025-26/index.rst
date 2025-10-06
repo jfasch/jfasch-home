@@ -11,8 +11,30 @@ Embedded Computing 1 (STECE-2023): Winter
 
    https://github.com/jfasch/FH-STECE2023
 
-Task Candidates
----------------
+Lectures, By Date
+-----------------
+
+.. toctree::
+
+   2025-10-07/index
+
+Lectures
+--------
+
+* Syscalls, error handling, and raw file IO
+* C++ copy horror (-> move)
+
+  * ``src/door/input-switch-gpio.h`` as an example
+  * demonstrate crash on home pi
+
+* Realtime, and parallelism
+
+  * Small sensor program (ADS1115? BMP?), timing a sensor read -> not
+    immediate
+  * Enter ``fork()``
+
+Work Queue (*Very* Informal)
+----------------------------
 
 How to include files
 ....................
@@ -107,18 +129,3 @@ Motor/Stepper
 
 * writeData(): use raw file IO
 * Use OutputSwitchGPIO rather than libgpiod directly
-
-Lectures
---------
-
-* Syscalls, error handling, and raw file IO
-* C++ copy horror (-> move)
-
-  * ``src/door/input-switch-gpio.h`` as an example
-  * demonstrate crash on home pi
-
-* Realtime, and parallelism
-
-  * Small sensor program (ADS1115? BMP?), timing a sensor read -> not
-    immediate
-  * Enter ``fork()``
