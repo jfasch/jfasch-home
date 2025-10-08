@@ -168,9 +168,9 @@ Clean Code, Design Patterns
   (overview/discussion only)
 * From :doc:`/trainings/material/soup/cxx/cxx-design-patterns/index`
 
-  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/singleton/singleton` (but see "Code Sanity" above)
-  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
-  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/observer/observer`
-  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/abstract-factory/abstract-factory`
+  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/singleton/index` (but see "Code Sanity" above)
+  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/index`
+  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/observer/index`
+  * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/abstract-factory/index`
   * Strategy, and Dependency Inversion/Injection
   * Builder

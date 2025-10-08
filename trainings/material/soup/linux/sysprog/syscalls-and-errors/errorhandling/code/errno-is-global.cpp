@@ -5,8 +5,8 @@ int main()
 {
     int fd = open("/etc/passwd", O_RDWR);
     if (fd == -1) {
-        std::println("open failed");
-        std::println("errno=={}", errno);              // <-- errno could have changed by previous println()
+        std::println("open failed");                   // <-- might encounter an error, somewhere, internally
+        std::println("errno=={}", errno);              // <-- errno might not be open's anymore
         return 1;
     }
 

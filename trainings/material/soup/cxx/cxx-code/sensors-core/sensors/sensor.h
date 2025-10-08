@@ -3,7 +3,7 @@
 class Sensor
 {
 public:
-    virtual ~Sensor() {}
+    virtual ~Sensor() = default;
 
     // returns degrees Celsius
     virtual double get_temperature() = 0;

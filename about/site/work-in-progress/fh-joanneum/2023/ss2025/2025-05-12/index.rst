@@ -12,6 +12,8 @@ C++ Material
 
 * :doc:`/trainings/material/soup/cxx/cxx11/strongly-typed-enums/topic`
 
+.. _fh-2025-05-12-some-git:
+
 Some Git
 --------
 

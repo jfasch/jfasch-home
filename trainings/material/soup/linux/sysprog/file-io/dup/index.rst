@@ -67,8 +67,8 @@ number - ``42`` in this case. (See :ref:`sysprog-filedesc-alloc`)
    $ ./sysprog-dup-dup 
    offset: 11
 
-Standardout Redirection With ``dup()``
---------------------------------------
+Standard Output Redirection With ``dup()``
+------------------------------------------
 
 * ``println()`` (and many others) write to ``stdout`` (descriptor
   number 1)

@@ -19,29 +19,29 @@ C++ Code
    * * ``sensors-core-i2c``
      * (Implicitly by others)
    * * ``design-patterns-abstract-factory``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/abstract-factory/abstract-factory`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/abstract-factory/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/abstract-factory`
    * * ``design-patterns-adapter``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/adapter`
    * * ``design-patterns-command``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/command/command`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/command/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/command`
    * * ``design-patterns-composite``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/composite`
    * * ``design-patterns-decorator``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/decorator/decorator`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/decorator/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/decorator`
    * * ``design-patterns-interpreter``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/interpreter`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/interpreter-basic`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/interpreter-and-adapter`
    * * ``design-patterns-observer``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/observer/observer`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/observer/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/observer`
    * * ``design-patterns-proxy``
-     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/proxy/proxy`
+     * * Exercise: :doc:`/trainings/material/soup/cxx/cxx-design-patterns/proxy/index`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/proxy-round`
        * Solution: :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/proxy-remote`
    * * ``design-patterns-singleton``
@@ -52,5 +52,5 @@ C++ Code
        * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/singleton-flexible-strict`
        * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/singleton-inflexible`
    * * ``heating-screenplay``
-     * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/heating-screenplay/heating-screenplay`
+     * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/heating-screenplay/index`
      

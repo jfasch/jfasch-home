@@ -12,6 +12,8 @@ Syllabus Change
 
 Laborklausur schlecht, Gruppenarbeit gut
 
+.. _fh-2025-06-02-interfaces:
+
 C++: Interfaces?
 ----------------
 

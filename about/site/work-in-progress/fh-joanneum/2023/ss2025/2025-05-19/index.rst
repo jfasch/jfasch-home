@@ -12,6 +12,8 @@ Homework Recap
 
 * See :ref:`fh-2025-05-12-homework`
 
+.. _fh-2025-05-19-polymorphic:
+
 Interfaces, Polymorphic Types
 -----------------------------
 

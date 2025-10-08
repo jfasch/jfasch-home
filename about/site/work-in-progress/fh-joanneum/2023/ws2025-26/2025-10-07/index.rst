@@ -1,13 +1,16 @@
 .. include:: <mmlalias.txt>
 
 
-2025-10-07 (3 VO): Introduction
-===============================
+2025-10-07 (3 VO): Semester Kickoff
+===================================
 
 Quiz
 ----
 
-.. list-table:: **Project Management**
+Project Management
+..................
+
+.. list-table::
    :align: left
    :header-rows: 1
    :widths: 70 10 10 10
@@ -16,20 +19,30 @@ Quiz
      * Weak
      * Intermediate
      * Strong
-   * * CMake
+   * * **CMake**
+
+       * :ref:`2025-06-16 Nodes and dependencies
+         <fh-2025-06-16-cmake-nodes-dependencies>`
+       * :ref:`2025-06-16 Include paths
+         <fh-2025-06-16-cmake-include-path>`
+
      * 
      *
      *
-   * * Creating and using libraries (``.h`` files, ``.cpp`` files)
-     * 
-     *
-     *
-   * * Git
+   * * **Git**
+
+       * :ref:`2025-05-12 Git Basics <fh-2025-05-12-some-git>`
+       * :ref:`2025-05-20 Git remote workflow
+         <fh-2025-05-20-git-remote-workflow>`
+
      * 
      *
      *
 
-.. list-table:: **C/C++**
+C/C++
+.....
+
+.. list-table::
    :align: left
    :header-rows: 1
    :widths: 70 10 10 10
@@ -38,24 +51,30 @@ Quiz
      * Weak
      * Intermediate
      * Strong
-   * * Interfaces and implementation
+   * * **Interfaces and implementation**
+
+       * :ref:`Polymorphic types <fh-2025-05-19-polymorphic>`
+       * :ref:`Interfaces <fh-2025-06-02-interfaces>`
+
      * 
      *
      *
-   * * ``const``
+   * * **References, and** ``const``
+
+       * :doc:`/trainings/material/soup/cxx/cxx03/030-functions-and-methods/050-references/topic`
+
      * 
      *
      *
-   * * References
-     * 
-     *
-     *
-   * * Constructors, Destructors
+   * * **Constructors, Destructors**
      * 
      *
      *
 
-.. list-table:: **Linux**
+Linux
+.....
+
+.. list-table::
    :align: left
    :header-rows: 1
    :widths: 70 10 10 10
@@ -64,25 +83,29 @@ Quiz
      * Weak
      * Intermediate
      * Strong
-   * * Shell usage (files and directories, permissions)
+   * * **Shell usage (files and directories, permissions)**
+
+       * :doc:`/about/site/work-in-progress/fh-joanneum/2023/ss2025/2025-04-28/index`
+       * :doc:`/about/site/work-in-progress/fh-joanneum/2023/ss2025/2025-05-06/index`
+
      * 
      *
      *
-   * * System calls, file IO, error handling
+   * * **System calls, file IO, processes, error handling**
      * 
      *
      *
-   * * I2C 
+   * * **I2C** 
      * 
      *
      *
-   * * GPIO
+   * * **GPIO** (``libgpiod`` |:thumbsdown:|)
      * 
      *
      *
 
-Course Contents
----------------
+Semester Plan
+-------------
 
 More Linux (Systems Programming)
 ................................
@@ -182,3 +205,23 @@ Bells and Whistles (Pythonicity)
 C++ is awful. C++11 (and onwards) tries to make it a better language
 (but fails). Learn about the funky new stuff.
 
+Today's Material
+----------------
+
+Error Handling Recap
+....................
+
+* :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
+
+File IO Recap
+.............
+
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/overview`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_RDONLY`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_WRONLY`
+
+Positions, And Duplicating
+..........................
+
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/lseek/index`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`

@@ -230,7 +230,7 @@ To make ``proc`` available inside the jail, we create a mountpoint
    # mkdir Simple-Busybox/proc
    # mount -t proc proc Simple-Busybox/proc
 
-Retry ``busybox ps`` inside, and see a the full process list.
+Retry ``busybox ps`` inside, and see the full process list.
 
 .. code-block:: console
    :caption: Inside jail
@@ -393,7 +393,7 @@ names for me and my group - just numbers.
 .. code-block:: console
    :caption: Outside jail
 
-   # chroot --userspec=1000:1000 Simple\(Busybox\) /bin/sh
+   # chroot --userspec=1000:1000 Simple-Busybox /bin/sh
    $         # <-- now inside, note the non-root prompt "$"
    $ ls -l /home/jfasch
    ...
@@ -430,9 +430,9 @@ distro" case.
   .. code-block:: console
      :caption: Outside jail
 
-     # mkdir Simple\(Busybox\)/etc
-     # touch Simple\(Busybox\)/etc/group
-     # touch Simple\(Busybox\)/etc/passwd
+     # mkdir Simple-Busybox/etc
+     # touch Simple-Busybox/etc/group
+     # touch Simple-Busybox/etc/passwd
 
 * Use *inside* (Busybox) tools to create user and group. As I said,
   Fedora and other distros are a little different (Busybox has
@@ -441,8 +441,8 @@ distro" case.
   .. code-block:: console
      :caption: Outside jail
 
-     # chroot Simple\(Busybox\) busybox addgroup -g 1000 jfasch
-     # chroot Simple\(Busybox\) busybox adduser -s /bin/sh -G jfasch -u 1000 -D jfasch
+     # chroot Simple-Busybox busybox addgroup -g 1000 jfasch
+     # chroot Simple-Busybox busybox adduser -s /bin/sh -G jfasch -u 1000 -D jfasch
 
 I can now go into jail in one step, and it would feel like
 freedom. It's still Busybox which is not quite usable for a Yocto
@@ -452,7 +452,7 @@ distro.
 .. code-block:: console
    :caption: Outside jail
 
-   # chroot Simple\(Busybox\)/ /bin/busybox su - jfasch
+   # chroot Simple-Busybox /bin/busybox su - jfasch
    ~ $           # <-- indise jail
    ~ $ cd ~/My-Projects/FH-ENDLESS/Yocto/
    ~/My-Projects/FH-ENDLESS/Yocto $ ls -l 

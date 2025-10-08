@@ -250,7 +250,7 @@ Exercises: OO And Interfaces
 * :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-interface/sensor-interface`
   (polymorphic use of different sensors)
 * :doc:`Averaging sensor ("Composite" pattern)
-  </trainings/material/soup/cxx/cxx-design-patterns/composite/composite>`
+  </trainings/material/soup/cxx/cxx-design-patterns/composite/index>`
 * :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-w1/sensor-w1`
   (OneWire sensor - in the Linux OneWire style)
 * :doc:`/trainings/material/soup/cxx/cxx-exercises/sensor-w1-factory/sensor-w1-factory`

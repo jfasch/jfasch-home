@@ -7,6 +7,8 @@
 .. contents::
    :local:
 
+.. _fh-2025-05-20-git-remote-workflow:
+
 Git: Update From Upstream
 -------------------------
 

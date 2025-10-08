@@ -54,7 +54,7 @@ Interfaces
    class Interface
    {
    public:
-       virtual ~Interface() {}
+       virtual ~Interface() = default;
        virtual void method() const = 0;
    };
   

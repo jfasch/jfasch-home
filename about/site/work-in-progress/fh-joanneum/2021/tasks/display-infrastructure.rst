@@ -52,7 +52,7 @@ this interface.
 ...................
 
 Implement a
-:doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
+:doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/index`
 display.
 
 Testing: Breadboard Acrobatics, Demo Program

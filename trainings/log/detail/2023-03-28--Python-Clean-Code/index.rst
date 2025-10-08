@@ -175,7 +175,7 @@ Design Patterns
 *Discussion*: so what? OO is there to solve problems in a readable and
 reproducible way.
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/uml`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/index`
 * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/oo-principles`
 * Pythonize *some* patterns (the simpler ones) from
   :doc:`/trainings/material/soup/cxx/cxx-design-patterns/index`. Maybe ...

@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-OO Design Principles
-====================
+SOLID: OO Design Principles
+===========================
 
 .. contents::
    :local:

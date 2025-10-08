@@ -146,10 +146,10 @@ More Design Patterns
 
 From :doc:`/trainings/material/soup/cxx/cxx-design-patterns/index`:
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/singleton/singleton`
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/proxy/proxy`
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/singleton/index`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/index`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/proxy/index`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/index`
 * Builder
 
 More C++ >= 11

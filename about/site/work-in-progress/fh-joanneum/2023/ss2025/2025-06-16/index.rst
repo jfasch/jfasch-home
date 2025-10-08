@@ -7,20 +7,20 @@
 .. contents::
    :local:
 
+.. _fh-2025-06-16-cmake-nodes-dependencies:
+
 CMake
 -----
-
-.. image:: cmake-dependencies.jpg
 
 Dependencies
 ............
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/misc/cmake/intro/libraries`
    * `Graphviz <https://graphviz.org/>`__
 
-.. sidebar:: Trainer's note
+.. topic:: Trainer's note
 
    Remove ``libgpiod`` first
 
@@ -30,6 +30,8 @@ Dependencies
 
 *Node/Target* Definitions, Basic Visualization
 ``````````````````````````````````````````````
+
+.. image:: cmake-dependencies.jpg
 
 * ``run-door`` (through ``add_executable``)
 
@@ -61,8 +63,9 @@ Dependencies
   
      $ cd ~/My-Builds/FH-STECE2023-x86_64
      $ cmake --graphviz dependencies.dot ~/My-Projects/FH-STECE2023
-     $ dot -Tpng dependencies.dot > dependencies.png
-     $ loupe dependencies.png 
+     $ dot -Tsvg dependencies.dot > dependencies.svg
+
+  .. image:: dependencies.svg
 
 Install ``libgpiod``, And Visualize Again
 `````````````````````````````````````````
@@ -95,6 +98,8 @@ Install ``libgpiod``, And Visualize Again
      $ loupe dependencies.png 
 
 * |longrightarrow| more dependencies
+
+.. _fh-2025-06-16-cmake-include-path:
 
 Include Paths
 .............

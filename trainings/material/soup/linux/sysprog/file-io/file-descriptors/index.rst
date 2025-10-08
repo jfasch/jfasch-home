@@ -94,3 +94,13 @@ File Descriptor Lifecycle - ``open/read/write/close``
 How Descriptor Numbers Are Chosen
 ---------------------------------
 
+* ``open()`` (and ``socket()``, and ...) have to choose a number
+* *Which one is that?* Random? |longrightarrow| *No!*
+
+.. topic:: Algorithm
+
+   Starting at 0, continuing upwards, choose the first number that
+   does not refer to an open file description
+
+.. image:: first-free.svg
+   :scale: 40%

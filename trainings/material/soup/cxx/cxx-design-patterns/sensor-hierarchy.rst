@@ -27,7 +27,7 @@ exercise series in this course are:
   </trainings/material/soup/cxx/cxx-code/sensors-core/sensors/sensor-random.h>`. That sensor yields
   floating point random numbers in a configurable range.
 * :download:`ConstantSensor
-  </trainings/material/soup/cxx/cxx-code/sensors-core/sensors/sensor-const.h>`. That one yield always the
+  </trainings/material/soup/cxx/cxx-code/sensors-core/sensors/sensor-const.h>`. That one always yields the
   same temperature. Cool for testing.
 
 We will extend that hierarchy along with the exercises.
@@ -35,4 +35,26 @@ We will extend that hierarchy along with the exercises.
 Class Hierarchy
 ---------------
 
-.. image:: sensor-hierarchy.png
+.. plantuml::
+
+   @startuml
+
+   interface Sensor {
+     + double get_temperature()
+   }
+   
+   class I2CSensor {
+     + double get_value()
+   }
+   class RandomSensor {
+     + double get_value()
+   }
+   class ConstantSensor {
+     + double get_value()
+   }
+   
+   Sensor <|.. I2CSensor
+   Sensor <|.. RandomSensor
+   Sensor <|.. ConstantSensor
+
+   @enduml

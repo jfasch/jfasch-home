@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int main(void)
+int main()
 {
     exit(42);                                          // <-- != 0 is "Not OK"
 }

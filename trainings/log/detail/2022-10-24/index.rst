@@ -19,8 +19,8 @@ Monday
 ------
 
 * :doc:`C++ Interfaces </trainings/material/soup/cxx/cxx03/inheritance-oo-design/index>`
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/uml`
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/singleton/singleton`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/index`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/singleton/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/singleton-inflexible`
 
@@ -34,11 +34,11 @@ Monday
 
     * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/singleton-flexible-strict`
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/adapter`
   
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/proxy/proxy`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/proxy/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/proxy-round`
 
@@ -52,15 +52,15 @@ Monday
 Tuesday
 -------
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/composite`
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/command/command`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/command/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/command`
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/interpreter`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/interpreter-basic`
 
@@ -69,18 +69,18 @@ Tuesday
 Wednesday
 ---------
 
-* Continuing with :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/interpreter` ...
+* Continuing with :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/index` ...
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/interpreter-and-adapter`
 
     * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/interpreter-and-adapter`
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/observer/observer`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/observer/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/observer`
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/abstract-factory/abstract-factory`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/abstract-factory/index`
 
   * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/abstract-factory`
 
-* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/heating-screenplay/heating-screenplay`
+* :doc:`/trainings/material/soup/cxx/cxx-design-patterns/heating-screenplay/index`

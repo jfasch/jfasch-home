@@ -48,10 +48,10 @@ Plan: Evolution
        * Theory: Design Patterns (some)
 
          * https://github.com/jfasch/FH-ECE20-patterns
-         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/uml`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/uml/index`
          * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/oo-principles`
          * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/sensor-hierarchy`
-         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/index`
 
    * *
      * 2022-11-02
@@ -62,7 +62,7 @@ Plan: Evolution
        * :doc:`/trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/vector`
        * Continuing with Design Patterns
 
-         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter`
+         * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/adapter/index`
 
    * * 2022-11-11
      * 
@@ -71,7 +71,7 @@ Plan: Evolution
 
        * Continuing with Design Patterns
 
-	 * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/composite`
+	 * :doc:`/trainings/material/soup/cxx/cxx-design-patterns/composite/index`
            (use ``std::vector<>`` to store multiple ``Sensor*``;
            :doc:`more information
            </trainings/material/soup/cxx/cxx03/060-stl/040-sequential-containers/vector>`)

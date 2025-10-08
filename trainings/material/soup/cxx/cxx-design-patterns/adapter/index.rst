@@ -11,18 +11,35 @@ Problem
 -------
 
 The sensor hierarchy of our company covers many different
-sensors. However, management has decided that it is not broad enough,
-and some sensors of another company need to be added. That company has
-software implementations for those sensors that we could technically
-use. Naturally, those software implementations do not fit into our
-hierarchy [#impedance_mismatch]_.
+sensors. However, management has decided that our repertoire is not
+broad enough, and some sensors of another company need to be
+added. That company has software implementations for those sensors
+that we could technically use. Naturally, those software
+implementations do not fit into our hierarchy [#impedance_mismatch]_.
 
 What they have, though, is a similar hierarchy (one interface for all
 their sensors), with the only apparent difference being that they
-measure in degrees Fahrenheit.
+measure in degrees Fahrenheit instead.
 
-.. image:: fahrenheit-hierarchy.png
-   :scale: 40%
+.. plantuml::
+
+   @startuml
+
+   interface FahrenheitSensor {
+     + get_temperature_f()
+   }
+
+   class ConstantFahrenheitSensor {
+     + get_temperature_f()
+   }
+   class RandomFahrenheitSensor {
+     + get_temperature_f()
+   }
+
+   FahrenheitSensor <|.. ConstantFahrenheitSensor
+   FahrenheitSensor <|.. RandomFahrenheitSensor
+
+   @enduml
 
 .. literalinclude:: /trainings/material/soup/cxx/cxx-code/design-patterns-adapter/sensors-fahrenheit/sensor-fahrenheit.h
    :caption: :download:`/trainings/material/soup/cxx/cxx-code/design-patterns-adapter/sensors-fahrenheit/sensor-fahrenheit.h`
@@ -34,8 +51,33 @@ Solution: Adaptation
 Seems like we could be able to integrate all of their sensors in one
 swoop, *easily*.
 
-.. image:: fahrenheit-adapter.png
-   :scale: 40%
+.. plantuml::
+
+   @startuml
+
+   interface Sensor {
+     + get_temperature()
+   }
+   class FahrenheitSensorAdapter {
+     + get_temperature()
+   }
+   Sensor <|.. FahrenheitSensorAdapter
+   FahrenheitSensorAdapter -r-> FahrenheitSensor
+
+   interface FahrenheitSensor {
+     + get_temperature_f()
+   }
+   class ConstantFahrenheitSensor {
+     + get_temperature_f()
+   }
+   class RandomFahrenheitSensor {
+     + get_temperature_f()
+   }
+
+   FahrenheitSensor <|.. ConstantFahrenheitSensor
+   FahrenheitSensor <|.. RandomFahrenheitSensor
+
+   @enduml
 
 .. note::
 

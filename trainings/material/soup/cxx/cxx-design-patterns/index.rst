@@ -7,55 +7,48 @@ Design Patterns With C++
 Introduction
 ------------
 
+.. toctree::
+   :hidden:
+
+   uml/index
+   oo-principles
+
 * :doc:`C++ Interfaces
   </trainings/material/soup/cxx/cxx03/inheritance-oo-design/index>`
-
-.. toctree::
-   :maxdepth: 1
-
-   uml/uml
-   oo-principles
+* :doc:`uml/index`
+* :doc:`oo-principles`
 
 Topics/Exercises
 ----------------
 
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
-   singleton/singleton
+   singleton/index
    sensor-hierarchy
-   adapter/adapter
-   proxy/proxy
-   decorator/decorator
-   composite/composite
-   command/command
-   interpreter/interpreter
-   observer/observer
-   abstract-factory/abstract-factory
-   heating-screenplay/heating-screenplay
+   adapter/index
+   proxy/index
+   decorator/index
+   composite/index
+   command/index
+   interpreter/index
+   observer/index
+   abstract-factory/index
+   heating-screenplay/index
+
+* :doc:`singleton/index`
+* :doc:`sensor-hierarchy`
+* :doc:`adapter/index`
+* :doc:`proxy/index`
+* :doc:`decorator/index`
+* :doc:`composite/index`
+* :doc:`command/index`
+* :doc:`interpreter/index`
+* :doc:`observer/index`
+* :doc:`abstract-factory/index`
+* :doc:`heating-screenplay/index`
 
 Solutions
 ---------
 
 * :doc:`/trainings/material/soup/cxx/cxx-exercises/design-patterns/solutions/index`
-
-To Be Done
-----------
-
-* Repertoire page
-
-* Source page
-
-  * Solution page(s) maybe?
-  * Link those into course page
-
-* Command with MTQueue
-* Course preparation page
-
-  * Split project: base libraries and their tests
-  * To-be-implemented things
-  * List of files
-
-* Fun exercise: devise a system where person have a sensor plugged
-  into them. When the sensor sees a sign of sickness, a post is made
-  into SocialDB to charge for it, and an observing party is notified.

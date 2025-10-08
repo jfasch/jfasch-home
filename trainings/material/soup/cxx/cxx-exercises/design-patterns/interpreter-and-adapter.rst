@@ -10,7 +10,7 @@ Exercise: Interpreter Combined With Adapter (And A Proxy)
 Motivation
 ----------
 
-In :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/interpreter` we created a clas hierarchy to do arithmetic
+In :doc:`/trainings/material/soup/cxx/cxx-design-patterns/interpreter/index` we created a clas hierarchy to do arithmetic
 calculations, based on literals and variables - *values*, all in all.
 
 The venerable ``Sensor`` :doc:`hierarchy </trainings/material/soup/cxx/cxx-design-patterns/sensor-hierarchy>` that

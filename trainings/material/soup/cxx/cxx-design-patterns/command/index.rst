@@ -22,7 +22,7 @@ operations. The executing entity is different from the originator of
 the operations, and thus does not want to know about the particular
 nature of those - it just wants to ``execute()`` them.
 
-Commands are often :doc:`composed <../composite/composite>` - one command actually
+Commands are often :doc:`composed <../composite/index>` - one command actually
 holds/executes an entire set of lower level commands.
 
 Solution
@@ -140,9 +140,7 @@ in a, say, ``BulkInsert`` command. Lets give it a try.
 Step 6a: Bulk Insert Using ``std::initializer_list``?
 .....................................................
 
-.. sidebar::
-
-   **See also**
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/cxx/cxx11/brace-initialization/index`
 

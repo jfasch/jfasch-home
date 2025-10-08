@@ -28,8 +28,8 @@ Linux/Shell Basics
    2025-04-28/index
    2025-05-06/index
 
-C++ Basics
-----------
+C++ Basics, And Development In General
+--------------------------------------
 
 .. toctree::
 

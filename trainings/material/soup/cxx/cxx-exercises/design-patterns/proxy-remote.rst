@@ -22,7 +22,7 @@ space, expressed in the following class definitions,
 Requirements
 ------------
 
-Use the "remote" form of the :doc:`Proxy design pattern </trainings/material/soup/cxx/cxx-design-patterns/proxy/proxy>` to
+Use the "remote" form of the :doc:`Proxy design pattern </trainings/material/soup/cxx/cxx-design-patterns/proxy/index>` to
 implement such a client, in the form of yet another ``Sensor``
 implementation that fulfills the following requirements.
 
@@ -38,11 +38,11 @@ implementation that takes place in the following class diagram. It's
 the green parts that need to be implemented.
 
 Note that the ``RemoteAdapter`` is a specialized form of the
-:doc:`Adapter pattern </trainings/material/soup/cxx/cxx-design-patterns/adapter/adapter>`: implementations of the
+:doc:`Adapter pattern </trainings/material/soup/cxx/cxx-design-patterns/adapter/index>`: implementations of the
 ``RemoteAdapter`` interface are supposed to adapt to *something* by
 implementing a protocol onto somthing that is already there. This is
 not a requirement though - a simplistic implementation may not only
 implement the protocol, but also the logic behind it (effectively
-turning it into an example of :doc:`Command </trainings/material/soup/cxx/cxx-design-patterns/command/command>`)
+turning it into an example of :doc:`Command </trainings/material/soup/cxx/cxx-design-patterns/command/index>`)
 
 .. image:: proxy-remote.png
