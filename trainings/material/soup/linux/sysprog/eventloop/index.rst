@@ -5,6 +5,9 @@ Event Loops
    :maxdepth: 1
 
    intro/index
+   poll/index
+   poll-cpp/index
+   signalfd/index
 
 Exercises
 ---------

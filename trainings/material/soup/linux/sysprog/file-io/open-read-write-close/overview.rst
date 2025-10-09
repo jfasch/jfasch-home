@@ -62,8 +62,10 @@ Swiss army knife: multiple actions, governed by bitwise-or'ed flags:
 * ``O_CLOEXEC``: ``exec()`` closes the file descriptor
   (|longrightarrow| later)
 
-``read()``
-----------
+.. _sysprog-fileio-eof:
+
+``read()``, And End-Of-File
+---------------------------
 
 .. sidebar:: Documentation
 

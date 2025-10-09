@@ -174,6 +174,9 @@ Async-Signal-Safety
   (see :ref:`below <sysprog-signals-sigmask>`)
 * |longrightarrow| Complicated and error prone, *keep away!*
 
+Following a program with a *signal handler race condition* (crashes
+after a while when pointers run astray) ...
+
 .. literalinclude:: code/async-signal-unsafe.cpp
    :language: c++
    :caption: :download:`code/async-signal-unsafe.cpp`
