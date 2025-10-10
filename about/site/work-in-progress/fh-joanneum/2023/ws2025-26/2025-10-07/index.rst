@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-2025-10-07 (3 VO): Semester Kickoff
-===================================
+2025-10-07 (3 Lec): Semester Kickoff
+====================================
 
 Quiz
 ----
@@ -205,23 +205,3 @@ Bells and Whistles (Pythonicity)
 C++ is awful. C++11 (and onwards) tries to make it a better language
 (but fails). Learn about the funky new stuff.
 
-Today's Material
-----------------
-
-Error Handling Recap
-....................
-
-* :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
-
-File IO Recap
-.............
-
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/overview`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_RDONLY`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_WRONLY`
-
-Positions, And Duplicating
-..........................
-
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/lseek/index`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`

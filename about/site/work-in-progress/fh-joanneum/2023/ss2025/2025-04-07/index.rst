@@ -44,6 +44,8 @@ Live demo of what's going to happen in the next two semsters ...
 * Talk about last year's project: `Crazy Car on Linux
   <https://fh-stece2022.readthedocs.io>`__
 
+.. _fh-2025-04-07-homework:
+
 Homework
 --------
 

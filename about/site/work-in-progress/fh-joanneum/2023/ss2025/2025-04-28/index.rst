@@ -17,6 +17,8 @@ From :doc:`/trainings/material/soup/linux/basics/intro/index`
 * :doc:`/trainings/material/soup/linux/basics/intro/process`
 * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
 
+.. _fh-2025-04-28-shell-usage:
+
 Shell Usage
 -----------
 
@@ -31,6 +33,8 @@ From :doc:`/trainings/material/soup/linux/basics/shell/index`
 * :doc:`/trainings/material/soup/linux/basics/shell/cp`
 * :doc:`/trainings/material/soup/linux/basics/shell/mv`
 * :doc:`/trainings/material/soup/linux/basics/shell/configfiles`
+
+.. _fh-2025-04-28-permissions:
 
 Permissions
 -----------

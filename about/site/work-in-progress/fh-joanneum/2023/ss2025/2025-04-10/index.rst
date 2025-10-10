@@ -33,6 +33,7 @@ Tour Through File System
 
   .. code-block:: console
 
+     $ ls -l /
      ...
      drwxr-xr-x.  21 root root 4300 Apr  7 20:53 dev
      drwxr-xr-x.   1 root root 4908 Apr  3 17:17 etc
@@ -89,6 +90,8 @@ Tour Through File System
   *system runtime*)
 * ``/boot``: bootloader specific, kernel image
 
+.. _fh-2025-04-10-workenv:
+
 Work Environment
 ----------------
 
@@ -112,7 +115,7 @@ In home directory (``/home/jfasch``)
    $ mkdir My-{Projects,Builds}
 
 Get Code, Build
----------------
+...............
 
 .. sidebar:: Git repo
 
