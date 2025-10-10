@@ -4,14 +4,22 @@
 Embedded Computing 2 (STECE-2023): Winter
 =========================================
 
-.. sidebar:: Git repo
+.. toctree::
+   :hidden:
 
-   https://github.com/jfasch/FH-STECE2023
+   syllabus
+
+Organizational And Legalese
+---------------------------
+
+* Git repo: https://github.com/jfasch/FH-STECE2023
+* :doc:`syllabus`
 
 Lectures, By Date
 -----------------
 
 .. toctree::
+   :maxdepth: 2
 
    2025-10-07/index
    2025-10-20-Lec/index
