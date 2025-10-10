@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.signal.async
+   :dependencies: sysprog.signal.intro
+
 .. include:: <mmlalias.txt>
 
 Asynchronous Signal Handling

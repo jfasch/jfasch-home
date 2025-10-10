@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.signal.async_selfpipe
+   :dependencies: sysprog.signal.async
+
 .. include:: <mmlalias.txt>
 
 Use Case: Self-Pipe Trick

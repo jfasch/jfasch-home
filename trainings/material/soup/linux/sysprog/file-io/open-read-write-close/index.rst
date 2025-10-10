@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.fileio.open
+   :dependencies: sysprog.fileio.fd
+
 .. include:: <mmlalias.txt>
 
 

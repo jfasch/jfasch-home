@@ -1,6 +1,9 @@
+.. ot-topic:: sysprog.eventloop.poll_cpp
+   :dependencies: sysprog.eventloop.poll
+
 .. include:: <mmlalias.txt>
 
 
-A Naive C++ Evenloop (Based Upon ``poll()``)
-============================================
+A Naive C++ Eventloop (Based Upon ``poll()``)
+=============================================
 

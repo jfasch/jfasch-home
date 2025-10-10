@@ -1,3 +1,5 @@
+.. ot-group:: sysprog.signal
+
 Signals
 =======
 

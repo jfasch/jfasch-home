@@ -1,10 +1,12 @@
+.. ot-group:: sysprog.eventloop
+
 Event Loops
 ===========
 
 .. toctree::
    :maxdepth: 1
 
-   intro/index
+   problem/index
    poll/index
    poll-cpp/index
    signalfd/index

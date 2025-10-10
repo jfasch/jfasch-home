@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.signal.async_graceful
+   :dependencies: sysprog.signal.async
+
 .. include:: <mmlalias.txt>
 
 Use Case: Graceful Termination

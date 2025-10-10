@@ -1,6 +1,7 @@
 TODO
 ====
 
+* move open/read/write/close to FD
 * fill :ref:`sysprog-filedesc-alloc` in
   :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
 * signals / async
@@ -41,4 +42,4 @@ TODO
 
   * shell demo: grep jjj /etc/passwd
   * prog main() { return 0; } -> shell -> shell if, while,
-  * 
+

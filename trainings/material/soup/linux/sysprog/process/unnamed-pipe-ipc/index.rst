@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.process.unnamed_pipe_ipc
+   :dependencies: sysprog.process.fork, sysprog.fileio.dup
+
 .. include:: <mmlalias.txt>
 
 

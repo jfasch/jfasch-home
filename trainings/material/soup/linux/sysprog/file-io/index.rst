@@ -1,3 +1,5 @@
+.. ot-group:: sysprog.fileio
+
 Files And File Descriptors
 ==========================
 

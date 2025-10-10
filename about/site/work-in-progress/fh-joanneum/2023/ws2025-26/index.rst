@@ -34,8 +34,9 @@ Please catch up on the following topics.
 * Install a Linux of some kind. I (and Leo) suggest that you install
   WSL (use :doc:`this as an entry point
   </trainings/material/soup/linux/basics/intro/wsl>`), but there is
-  also a VirtualBox image provided by a colleague (information
-  follows).
+  also a VirtualBox image provided by a colleague (`Google Drive
+  download
+  <https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l>`).
 
   * :ref:`fh-2025-04-07-homework`
 

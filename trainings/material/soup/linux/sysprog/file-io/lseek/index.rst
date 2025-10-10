@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.fileio.lseek
+   :dependencies: sysprog.fileio.open
+
 .. include:: <mmlalias.txt>
 
 
