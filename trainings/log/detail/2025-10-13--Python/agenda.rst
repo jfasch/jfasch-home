@@ -35,7 +35,16 @@ Datatypes
 * :doc:`/trainings/material/soup/python/basics/python_0150_datatypes_overview_compound/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0160_boolean/topic`
 
-Lets look at these topics on demand:
+Exercises
+`````````
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_interactive`
+* :doc:`/trainings/material/soup/python/exercises/legacy/mixed_list_executable`
+* :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
+* :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
+
+More On Datatypes
+.................
 
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
@@ -55,6 +64,13 @@ Control Flow, Sequences, *Iteration*
 * :doc:`/trainings/material/soup/python/basics/python_0220_for/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0225_range/topic`
 
+Exercises
+`````````
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers`
+* :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
+* :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
+
 Functions
 .........
 
@@ -63,6 +79,13 @@ From
 
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/slideshow`
 * :doc:`/trainings/material/soup/python/basics/python_0270_functions/screenplay-scoping`
+
+Exercises
+`````````
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/max_numbers_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
+* :doc:`/trainings/material/soup/python/exercises/legacy/uniq_function`
 
 Lets keep the following topics in mind, but defer them until later.
 

@@ -16,7 +16,7 @@ Syntax: Indentation (1)
 * Blocks are *indented*
 * End of a block is end of indentation
 * *No explicit block delimiters* (like '``{``', '``BEGIN``', ...)
-* Indentation is not only *Coding Style*, but also Syntax*
+* Indentation is not only *Coding Style*, but also *Syntax*
 
 **Careful, you experienced programmers!**
 
