@@ -1,11 +1,8 @@
 #include "database.h"
-
 #include <unistd.h>
-#include <regex>
 
 int main()
 {
-    static const std::regex re_line("^(\\d+)\\s+(\\w+)\\s+(\\w+)\\s*$");
     Database db;
 
     bool quit = false;
@@ -22,10 +19,9 @@ int main()
             continue;
         }
 
-        std::string sline(line, nread);
-        std::smatch match;
-        if (std::regex_search(sline, match, re_line))
-            db.insert(std::stoi(match[1].str()), match[2].str(), match[3].str());
+        std::string sline(line, nread);                // <-- (zero-termination!)
+        if (Record r = split_line(sline))
+            db.insert(r);
         else
             std::println(stderr, "invalid line: \"{}\"", sline);
     }

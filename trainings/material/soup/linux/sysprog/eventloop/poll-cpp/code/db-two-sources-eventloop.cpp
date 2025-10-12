@@ -7,6 +7,17 @@
 #include <assert.h>
 #include <regex>
 
+class ReceiveLineAndInsertRecord : public InputHandler
+{
+public:
+    ReceiveLineAndInsertRecord(int fd, Database& db) : _fd(fd), _db(db) {}
+    
+    EventAction ready(int fd)
+    {
+        
+    }
+};
+
 int main()
 {
     Database db;

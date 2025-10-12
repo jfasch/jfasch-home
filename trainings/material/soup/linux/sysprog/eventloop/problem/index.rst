@@ -1,4 +1,5 @@
 .. ot-topic:: sysprog.eventloop.problem
+   :dependencies: sysprog.fileio.fd
 
 .. include:: <mmlalias.txt>
 
@@ -58,7 +59,8 @@ A "Real Life" Example
 
 .. topic:: Trainer's note
 
-   Copy program below as a start.
+   * Switch to "real-world database" use case 
+   * Copy program below as a start
 
 * Read records ``(id, firstname, lastname)`` from standard input
 * Insert into database
@@ -70,13 +72,13 @@ A "Real Life" Example
 A "Real Life" Example: Code
 ---------------------------
 
-.. literalinclude:: code/db-simple.cpp
-   :language: c++
-   :caption: :download:`code/db-simple.cpp`
-
 .. literalinclude:: /trainings/material/soup/linux/sysprog/eventloop/code/database.h
    :language: c++
    :caption: :download:`/trainings/material/soup/linux/sysprog/eventloop/code/database.h`
+
+.. literalinclude:: code/db-simple.cpp
+   :language: c++
+   :caption: :download:`code/db-simple.cpp`
 
 And Multiple Sources?
 ---------------------

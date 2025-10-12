@@ -88,6 +88,8 @@ and condensed):
    * * ``POLLNVAL``
      * Invalid request: fd not open (``revents`` only).
 
+.. _sysprog-eventloop-poll-solution:
+
 Solution: Read From Two Input Sources
 -------------------------------------
 

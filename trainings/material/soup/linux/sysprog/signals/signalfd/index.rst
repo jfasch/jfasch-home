@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.signal.signalfd
+   :dependencies: sysprog.fileio.fd, sysprog.signal.intro
+
 .. include:: <mmlalias.txt>
 
 

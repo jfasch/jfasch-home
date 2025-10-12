@@ -1,3 +1,6 @@
+.. ot-topic:: sysprog.signal.sync
+   :dependencies: sysprog.signal.intro
+
 .. include:: <mmlalias.txt>
 
 
