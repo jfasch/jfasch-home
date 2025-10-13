@@ -106,6 +106,13 @@ File IO
 
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
+Exercises
+`````````
+
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+* :doc:`/trainings/material/soup/python/exercises/legacy/wc`
+* :doc:`/trainings/material/soup/python/exercises/legacy/distill`
+
 .. _2025-10-13-exercise:
 
 Exercise Kick Off
