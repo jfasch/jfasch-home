@@ -1,12 +1,6 @@
 User Database (Exercise Series)
 ===============================
 
-.. contents::
-   :local:
-
-Contents
---------
-
 .. toctree:: 
    :maxdepth: 1
 

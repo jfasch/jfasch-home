@@ -1,12 +1,6 @@
 Exercises
 =========
 
-.. contents::
-   :local:
-
-Contents
---------
-
 .. toctree:: 
    :maxdepth: 1
 
@@ -15,3 +9,5 @@ Contents
    csv/index
    userdb/index
    sensors/index
+
+   userdb-2/index

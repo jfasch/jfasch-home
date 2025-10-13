@@ -4,9 +4,6 @@
 Exercise: Refactoring - Extract CSV Reading Into Function (``csv.dictreader``)
 ==============================================================================
 
-.. contents::
-   :local:
-
 Requirement
 -----------
 

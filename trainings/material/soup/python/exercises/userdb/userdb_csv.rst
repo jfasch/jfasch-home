@@ -4,9 +4,6 @@
 Exercise: Refactoring - Extract Both CSV Formats Into Module
 ============================================================
 
-.. contents::
-   :local:
-
 Requirement
 -----------
 

@@ -24,8 +24,7 @@ Linux Systems Programming: Introduction
 
 	 .. dropdown:: Slide Material
 
-	    * PDF Slides, :download:`sysprog
-              </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+	    * :doc:`/trainings/material/soup/linux/sysprog/index`
 
 This introductory course gives an overview of the OS, the
 interconnections between its concepts, and how to program it.

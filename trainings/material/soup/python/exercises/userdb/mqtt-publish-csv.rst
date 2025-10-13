@@ -4,9 +4,6 @@
 Exercise: MQTT: Publish User Records
 ====================================
 
-.. contents::
-   :local:
-
 Requirement
 -----------
 

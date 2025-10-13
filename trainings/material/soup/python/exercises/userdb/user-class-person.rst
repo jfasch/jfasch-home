@@ -4,9 +4,6 @@
 Exercise: Away From Raw Dictionaries
 ====================================
 
-.. contents::
-   :local:
-
 Requirement
 -----------
 

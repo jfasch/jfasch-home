@@ -101,11 +101,6 @@ Lets keep the following topics in mind, but defer them until later.
   * :doc:`/trainings/material/soup/python/advanced/iteration-generation/iteration-generation/topic`
   * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/topic`
 
-File IO
-.......
-
-* :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
-
 Exercises
 `````````
 

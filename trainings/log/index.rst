@@ -15,6 +15,16 @@ impression of how my courses look like.
    detail/index
 
 
+Python Advanced (2025-10-13 - 2025-10-15)
+-----------------------------------------
+
+Teaching Python to a number of smart people, at a long-time customer
+of mine.
+
+(:doc:`More ... <detail/2025-10-13--Python/index>`)
+
+Location: Thalheim, Austria
+
 C++: Overview Of New Language Features (Around C++20) (2025-07-02 - 2025-07-03)
 -------------------------------------------------------------------------------
 

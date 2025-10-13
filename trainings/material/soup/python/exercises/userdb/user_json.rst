@@ -4,9 +4,6 @@
 Exercise: Convert User Record To JSON And Back
 ==============================================
 
-.. contents::
-   :local:
-
 Requirement
 -----------
 

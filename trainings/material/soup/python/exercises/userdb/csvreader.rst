@@ -4,9 +4,6 @@
 Exercise: Read CSV File (``csv.reader``)
 ========================================
 
-.. contents::
-   :local:
-
 Requirement
 -----------
 

@@ -7,11 +7,6 @@
 Implementing A Fibonacci Number Generator 
 =========================================
 
-.. sidebar:: Contents
-
-   .. contents::
-      :local:
-
 Fibonacci Numbers: Naive List
 -----------------------------
 

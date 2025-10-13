@@ -3,9 +3,6 @@
 Functions: Global and Local Scope (Livehacking Screenplay)
 ==========================================================
 
-.. contents::
-   :local:
-
 Undefined Variable
 ------------------
 
