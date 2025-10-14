@@ -36,7 +36,7 @@ ISO Latin 1 (ISO-8859-1)
    * * * Bytes have 8 bits of information, nowadays
        * One bit is wasted
        * Latin Europeans (and Germans) said, "Hey, lets use all 8 bits
-	 and cram bloody umlauts and all that in"
+	 and cram umlauts and accents in"
        * ASCII on steroids
        * ``encoding = 'iso-8859-1'``
      * .. figure:: latin1.gif
@@ -139,7 +139,7 @@ Encoding Mess
 And *祝好, Jörg*? (1)
 -----------------------
 
-祝好 is Chinese, for "Liebe Grüße" (kindly taken from `here
+"祝好" is Chinese for "Liebe Grüße" (kindly taken from `here
 <http://www.new-chinese.org/lernwortschatz-chinesisch-emails-schreiben.html>`__)
 
 .. list-table::

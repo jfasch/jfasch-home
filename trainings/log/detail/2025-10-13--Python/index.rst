@@ -100,9 +100,10 @@ Exercises
 
 * :doc:`/trainings/material/soup/python/exercises/legacy/primeness_function`
 
-File IO
-.......
+File IO, Encoding
+.................
 
+* :doc:`/trainings/material/soup/python/misc/encoding/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0500_files/topic`
 
 Exercises
