@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 Python (2025-10-13 - 2025-10-15)
 ================================
 
@@ -11,14 +14,9 @@ Python (2025-10-13 - 2025-10-15)
 
 .. sidebar::
 
-   **Original Agenda** 
+   **Original Agenda**
 
    * :doc:`agenda`
-
-..    **Github Repository**
-.. 
-..    * `https://github.com/jfasch/2025-10-13
-..      <https://github.com/jfasch/2024-10-13>`__
 
    **Material**
 
@@ -119,4 +117,116 @@ Modules
 Afternoon Hacking
 .................
 
-* :doc:`/trainings/material/soup/python/exercises/userdb-2/index`
+From :doc:`/trainings/material/soup/python/exercises/userdb-2/index`:
+
+* :doc:`/trainings/material/soup/python/exercises/userdb-2/read-csv-dicts`
+* :doc:`/trainings/material/soup/python/exercises/userdb-2/write-json-dicts`
+* :doc:`/trainings/material/soup/python/exercises/userdb-2/csv2json`
+
+What A ``class`` Can Do
+.......................
+
+From :doc:`/trainings/material/soup/python/advanced/oo/index`
+
+* :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
+
+Day 3
+-----
+
+Morning Wakeup (At 7am |:face_with_raised_eyebrow:|)
+....................................................
+
+A Case For Duck Typing
+``````````````````````
+
+* Classes everywhere
+
+  * Functions are *callable*: ``f.__call__()``
+  * Generators
+
+    .. code-block:: console
+
+       >>> x = g()
+       >>> type(x)
+       <class 'generator'>
+
+    * *Iterable*: ``__iter__()`` (and ``__next__()``, on the iterator)
+
+  * Classes/types are *callable*: ``Person.__call__()``
+    |longrightarrow| instantiation of a type
+  * Modules
+
+    .. code-block:: python
+
+       >>> import sys
+       >>> type(sys)
+       <class 'module'>
+
+* And inheritance?
+
+  * File-like?
+  * Callable?
+  * Iterable?
+
+Context Managers (``with``)
+```````````````````````````
+
+* :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
+
+OO, Continued (And Excpetions)
+..............................
+
+* :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
+
+Optional (likely disregarded):
+
+* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
+* :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
+
+Exception are classes too (error handling)
+
+* :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
+
+Exercises
+`````````
+
+* :doc:`/trainings/material/soup/python/exercises/userdb-2/read-csv-objs`
+* :doc:`/trainings/material/soup/python/exercises/userdb-2/write-json-objs`
+* :doc:`/trainings/material/soup/python/exercises/userdb-2/csv2json-modern`
+
+Random Cool Things
+..................
+
+Closures, Decorators, ...
+`````````````````````````
+
+* :doc:`/trainings/material/soup/python/advanced/starargs/topic`
+* :doc:`/trainings/material/soup/python/advanced/closures/topic`
+* :doc:`/trainings/material/soup/python/advanced/decorators/topic`
+
+Standard Library Tour
+.....................
+
+* :doc:`/trainings/material/soup/python/drafts/argparse/topic`
+* `collections
+  <https://docs.python.org/3/library/collections.html>`__
+* `csv <https://docs.python.org/3/library/csv.html>`__
+* `datetime
+  <https://docs.python.org/3/library/datetime.html>`__
+* `html <https://docs.python.org/3/library/html.html>`__
+* `itertools <https://docs.python.org/3/library/itertools.html>`__
+* `json <https://docs.python.org/3/library/json.html>`__
+* `logging <https://docs.python.org/3/library/logging.html>`__
+* `multiprocessing
+  <https://docs.python.org/3/library/multiprocessing.html>`__
+* `shutil <https://docs.python.org/3/library/shutil.html>`__
+* `subprocess <https://docs.python.org/3/library/subprocess.html>`__
+* `tarfile <https://docs.python.org/3/library/tarfile.html>`__
+* `threading
+  <https://docs.python.org/3/library/threading.html#module-threading>`__
+* `zipfile <https://docs.python.org/3/library/zipfile.html>`__

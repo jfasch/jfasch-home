@@ -3,7 +3,7 @@ from collections import namedtuple
 
 User = namedtuple('User', ('id', 'firstname', 'lastname', 'birth'))
 
-def read_userdicts_from_colon_separated_values(input):
+def read_users_from_colon_separated_values(input):
     users = []
     for line in input:
         line = line.rstrip('\n')
@@ -16,7 +16,7 @@ def read_userdicts_from_colon_separated_values(input):
         })
     return users
 
-def write_userdicts_to_json(users, output):
+def write_users_to_json(users, output):
     json.dump(users, output)
 
 def read_userobjs_from_colon_separated_values(input):

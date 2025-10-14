@@ -139,6 +139,10 @@ Dynamic Attribute Access
      getattr(person, 'firstname')
 
   .. jupyter-execute::
+  
+     hasattr(person, 'svnr')
+
+  .. jupyter-execute::
      :raises:
 
      getattr(person, 'svnr')
