@@ -1,5 +1,16 @@
-Another User Database (Exercise Series)
-=======================================
+From ``dict`` Records To Simple (Data) Classes 
+==============================================
+
+.. topic:: Covers the following topics
+
+   * :doc:`/trainings/material/soup/python/basics/python_0320_strings_methods/topic`
+   * (Optional) :doc:`/trainings/material/soup/python/misc/csv/topic`
+   * :doc:`/trainings/material/soup/python/swdev/pytest/index`
+   * From :doc:`/trainings/material/soup/python/advanced/oo/index`
+
+     * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+     * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+     * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 
 Setup
 -----

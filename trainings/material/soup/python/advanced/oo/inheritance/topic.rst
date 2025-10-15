@@ -4,9 +4,6 @@
 Inheritance
 ===========
 
-.. contents::
-   :local:
-
 Extending Existing Classes
 --------------------------
 

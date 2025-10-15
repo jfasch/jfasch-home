@@ -14,13 +14,17 @@ Python (2025-10-13 - 2025-10-15)
 
 .. sidebar::
 
-   **Original Agenda**
+   **Github**
 
-   * :doc:`agenda`
+   * https://github.com/jfasch/2025-10-13
 
    **Material**
 
    * :doc:`/trainings/material/soup/python/index`
+
+   **Original Agenda**
+
+   * :doc:`agenda`
 
 Setup
 -----
@@ -52,8 +56,8 @@ Exercises
 * :doc:`/trainings/material/soup/python/exercises/legacy/cmdline_digit`
 * :doc:`/trainings/material/soup/python/exercises/legacy/dict_keyerror`
 
-More On Datatypes
-.................
+More About Datatypes
+....................
 
 * :doc:`/trainings/material/soup/python/basics/python_0200_sequential_types/topic`
 * :doc:`/trainings/material/soup/python/basics/python_0210_indexing_slicing/topic`
@@ -173,6 +177,9 @@ A Case For Duck Typing
 Context Managers (``with``)
 ```````````````````````````
 
+We've been using the ``with`` statement lately for file I/O. Lets have
+a quick look at what that is ...
+
 * :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
 
 OO, Continued (And Excpetions)
@@ -182,18 +189,17 @@ OO, Continued (And Excpetions)
 * :doc:`/trainings/material/soup/python/advanced/oo/properties/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
-
-Optional (likely disregarded):
-
-* :doc:`/trainings/material/soup/python/advanced/oo/operator-overloading/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
-Exception are classes too (error handling)
+Exception are classes too, and there is an entire hierarchy starting
+at ``BaseException``.
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 
 Exercises
 `````````
+
+Lets use classes in our exercise project.
 
 * :doc:`/trainings/material/soup/python/exercises/userdb-2/read-csv-objs`
 * :doc:`/trainings/material/soup/python/exercises/userdb-2/write-json-objs`

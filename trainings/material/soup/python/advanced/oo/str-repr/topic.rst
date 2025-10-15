@@ -4,9 +4,6 @@
 ``str()`` And ``repr()``
 ========================
 
-.. contents::
-   :local:
-
 Stringification And Representation
 ----------------------------------
 

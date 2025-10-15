@@ -4,9 +4,6 @@
 Constructor
 ===========
 
-.. contents::
-   :local:
-
 Motivation
 ----------
 

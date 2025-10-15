@@ -4,9 +4,6 @@
 Properties
 ==========
 
-.. contents::
-   :local:
-
 Motivation
 ----------
 

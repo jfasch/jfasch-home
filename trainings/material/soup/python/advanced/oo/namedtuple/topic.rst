@@ -4,12 +4,7 @@
 ``collections.namedtuple``
 ==========================
 
-.. contents::
-   :local:
-
-.. sidebar::
-
-   **Documentation**
+.. topic:: nDocumentation
 
    * `collections
      <https://docs.python.org/3/library/collections.html>`__

@@ -4,9 +4,6 @@
 Methods
 =======
 
-.. contents::
-   :local:
-
 Object Methods
 --------------
 

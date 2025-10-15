@@ -4,9 +4,6 @@
 Classes And Dictionaries
 ========================
 
-.. contents::
-   :local:
-
 Facts Up-Front
 --------------
 

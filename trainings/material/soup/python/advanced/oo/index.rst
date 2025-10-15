@@ -1,9 +1,6 @@
 Object Oriented Programming
 ===========================
 
-.. contents::
-   :local:
-
 Topics
 ------
 
@@ -35,4 +32,5 @@ Exercises
 
 * Belonging here
 
+  * :doc:`/trainings/material/soup/python/exercises/userdb-2/index`
   * :doc:`/trainings/material/soup/python/exercises/userdb/user-class-person`

@@ -10,9 +10,6 @@
 Operator Overloading
 ====================
 
-.. contents::
-   :local:
-
 .. attention::
 
    **Respect!**

@@ -3,9 +3,9 @@ Exercise: Split Strings To User Objects
 
 .. topic:: See also
 
-   * :doc:`/material/soup/python/advanced/oo/classes-and-dicts/topic`
-   * :doc:`/material/soup/python/advanced/oo/constructor/topic`
-   * :doc:`/material/soup/python/advanced/oo/namedtuple/topic`
+   * :doc:`/trainings/material/soup/python/advanced/oo/classes-and-dicts/topic`
+   * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
+   * :doc:`/trainings/material/soup/python/advanced/oo/namedtuple/topic`
 
 Using dictionaries to carry user records is much too clumsy (and error
 prone, and complicated ...). Lets create a simple class and use that

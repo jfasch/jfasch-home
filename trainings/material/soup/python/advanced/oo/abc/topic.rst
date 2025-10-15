@@ -4,8 +4,8 @@
 Abstract Base Classes (``abc``), And Duck Typing
 ================================================
 
-.. contents::
-   :local:
+Intro
+-----
 
 * Python is not picky about types
 * Very late binding
