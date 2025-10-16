@@ -16,6 +16,23 @@
       * :doc:`/trainings/repertoire/linux-prog/bash`
 
    .. grid-item-card::
+
+      .. button-ref:: /trainings/repertoire/c-like/index
+	 :ref-type: doc
+         :color: primary
+	 :expand:
+
+      ^^^
+
+      * :doc:`/trainings/repertoire/c-like/c`
+      * :doc:`/trainings/repertoire/c-like/c-advanced`
+      * :doc:`(All C Material) </trainings/material/soup/c/index>`
+      * :doc:`/trainings/repertoire/c-like/cxx`
+      * :doc:`/trainings/repertoire/c-like/cxx11`
+      * :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
+      * :doc:`(All C++ Material) </trainings/material/soup/cxx/index>`
+      
+   .. grid-item-card::
    
       .. button-ref:: /trainings/repertoire/python/index
 	 :ref-type: doc
@@ -27,21 +44,6 @@
       * :doc:`/trainings/repertoire/python/basics`
       * :doc:`/trainings/repertoire/python/advanced`
       * :doc:`/trainings/repertoire/python/swdev`
-      
-   .. grid-item-card::
-
-      .. button-ref:: /trainings/repertoire/c-like/index
-	 :ref-type: doc
-         :color: primary
-	 :expand:
-
-      ^^^
-
-      * :doc:`/trainings/repertoire/c-like/c`
-      * :doc:`/trainings/repertoire/c-like/c-advanced`
-      * :doc:`/trainings/repertoire/c-like/cxx`
-      * :doc:`/trainings/repertoire/c-like/cxx11`
-      * :doc:`/trainings/repertoire/c-like/design-patterns/design-patterns`
       
    .. grid-item-card::
 

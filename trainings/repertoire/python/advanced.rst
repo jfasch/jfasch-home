@@ -6,12 +6,8 @@
               arguments, starstarargs, iterator, for loop, iterator
               protocol, operator, operator overloading, exec
 
-
 Python: More Language Features
 ==============================
-
-.. contents::
-   :local:
 
 .. image:: /_images/python-logo-master-v3-TM.png
    :alt: Python logo

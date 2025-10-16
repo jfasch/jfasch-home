@@ -1,12 +1,6 @@
 C Programming
 =============
 
-.. contents::
-   :local:
-
-Topics
-------
-
 .. toctree::
    :maxdepth: 1
 
