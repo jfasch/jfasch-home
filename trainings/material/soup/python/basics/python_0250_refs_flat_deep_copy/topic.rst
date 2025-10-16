@@ -3,9 +3,6 @@
 References, (Im)mutability
 ==========================
 
-.. contents::
-   :local:
-
 Immutability: Numbers
 ---------------------
 

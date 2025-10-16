@@ -4,9 +4,6 @@
 Modules and Packages
 ====================
 
-.. contents::
-   :local:
-
 Modules
 -------
 

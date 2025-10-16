@@ -4,12 +4,7 @@
 ``pytest`` Introduction, By Example
 ===================================
 
-.. contents::
-   :local:
-
-.. sidebar::
-
-   **Documentation**
+.. topic:: Documentation
 
    * :doc:`pytest:index`
 

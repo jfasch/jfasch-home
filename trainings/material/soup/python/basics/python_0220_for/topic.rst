@@ -4,9 +4,6 @@
 ``for`` Loops
 =============
 
-.. contents::
-   :local:
-
 Iteration over ... Something
 ----------------------------
 

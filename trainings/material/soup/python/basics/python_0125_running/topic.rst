@@ -4,9 +4,6 @@
 Running Python Programs
 =======================
 
-.. contents::
-   :local:
-
 The UNIX Way: *Executable* Bit, ``chmod``
 -----------------------------------------
 

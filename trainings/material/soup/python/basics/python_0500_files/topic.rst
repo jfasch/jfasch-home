@@ -4,9 +4,6 @@
 File I/O
 ========
 
-.. contents::
-   :local:
-
 Python 2 vs. Python 3
 ---------------------
 

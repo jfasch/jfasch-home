@@ -4,9 +4,6 @@
 Variables
 =========
 
-.. contents::
-   :local:
-
 Variables (1)
 -------------
 

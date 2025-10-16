@@ -4,12 +4,7 @@
 Decorators
 ==========
 
-.. contents::
-   :local:
-
-.. sidebar::
-
-   **See also**
+.. topic:: See also
 
    * :doc:`../starargs/topic`
    * :doc:`../closures/topic`

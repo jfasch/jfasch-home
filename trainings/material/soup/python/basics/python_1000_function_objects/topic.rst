@@ -4,9 +4,6 @@
 Function Objects
 ================
 
-.. contents::
-   :local:
-
 What's a Function?
 ------------------
 

@@ -4,9 +4,6 @@
 Compound Datatypes
 ==================
 
-.. contents::
-   :local:
-
 Compound Datatypes By Example: List, Tuple
 ------------------------------------------
 

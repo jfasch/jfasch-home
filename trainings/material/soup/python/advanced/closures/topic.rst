@@ -4,9 +4,6 @@
 Closures
 ========
 
-.. contents::
-   :local:
-
 History
 -------
 

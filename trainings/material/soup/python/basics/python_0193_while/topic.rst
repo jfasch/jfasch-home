@@ -4,9 +4,6 @@
 ``while`` Loops
 ===============
 
-.. contents::
-   :local:
-
 Looping Constructs
 ------------------
 

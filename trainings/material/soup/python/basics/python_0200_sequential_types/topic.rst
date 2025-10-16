@@ -3,9 +3,6 @@
 Sequential Datatypes
 ====================
 
-.. contents::
-   :local:
-
 Sequential Datatypes
 --------------------
 

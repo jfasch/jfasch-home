@@ -4,9 +4,6 @@
 Hello World
 ===========
 
-.. contents::
-   :local:
-
 *Hello World*: Interactive Mode
 -------------------------------
 

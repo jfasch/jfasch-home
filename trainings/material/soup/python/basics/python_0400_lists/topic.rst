@@ -3,9 +3,6 @@
 More About Lists
 ================
 
-.. contents::
-   :local:
-
 List Access
 -----------
 

@@ -4,9 +4,6 @@
 The ``if`` Statement
 ====================
 
-.. contents::
-   :local:
-
 The ``if`` Statement
 --------------------
 

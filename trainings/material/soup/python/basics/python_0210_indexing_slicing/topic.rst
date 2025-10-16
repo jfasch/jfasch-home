@@ -4,9 +4,6 @@
 Indexing and Slicing
 ====================
 
-.. contents::
-   :local:
-
 Indexing (1)
 ------------
 

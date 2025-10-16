@@ -3,10 +3,6 @@
 Datatypes
 =========
 
-.. contents::
-   :local:
-
-
 Numbers
 -------
 

@@ -4,9 +4,6 @@
 More About Dictionaries
 =======================
 
-.. contents::
-   :local:
-
 Dictionaries
 ------------
 

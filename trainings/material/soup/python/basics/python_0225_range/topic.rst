@@ -3,9 +3,6 @@
 The ``range`` Function
 ======================
 
-.. contents::
-   :local:
-
 Iteration over Numbers: ``range()``
 -----------------------------------
 

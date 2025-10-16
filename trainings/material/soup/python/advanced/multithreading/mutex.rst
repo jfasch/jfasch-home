@@ -4,12 +4,7 @@
 Race Conditions, and Mutexes
 ============================
 
-.. contents::
-   :local:
-
-.. sidebar::
-
-   **Documentation**
+.. topic:: Documentation
 
    * :doc:`python:library/threading`
 

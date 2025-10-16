@@ -4,6 +4,12 @@
 Python (2025-10-13 - 2025-10-15)
 ================================
 
+.. topic:: Course Info
+
+   * **Github**: https://github.com/jfasch/2025-10-13
+   * **Material**: :doc:`/trainings/material/soup/python/index`
+   * **Original Agenda**: :doc:`agenda`
+
 .. contents::
    :local:
 
@@ -12,28 +18,14 @@ Python (2025-10-13 - 2025-10-15)
 
    agenda
 
-.. sidebar::
-
-   **Github**
-
-   * https://github.com/jfasch/2025-10-13
-
-   **Material**
-
-   * :doc:`/trainings/material/soup/python/index`
-
-   **Original Agenda**
-
-   * :doc:`agenda`
-
 Setup
 -----
 
 * :doc:`/trainings/material/soup/python/basics/installation`
 * :doc:`/trainings/material/soup/python/misc/vscode`
 
-Day 1
------
+Day 1: Basics
+-------------
 
 Datatypes
 .........
@@ -82,14 +74,21 @@ Exercises
 * :doc:`/trainings/material/soup/python/exercises/legacy/while_primeness`
 * :doc:`/trainings/material/soup/python/exercises/legacy/for_primeness`
 
-Day 2
------
+Day 2: Towards Real Programming
+-------------------------------
 
 Cleanup Mess From Yesterday
 ...........................
 
-* :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
+All participants know, from other programming languages they speak,
+what a function is. A didactical masterpiece, at the end of
+yesterday's course, was to show a Python generator *before* showing
+what a Python function is. Ah yes, comprehension had also confused
+people. Now, at 8am, with fresh minds in the audience, lets clear this
+up.
+
 * :doc:`/trainings/material/soup/python/advanced/iteration-generation/python_1010_generators_yield/fibonacci-generator`
+* :doc:`/trainings/material/soup/python/advanced/comprehensions/topic`
 
 Functions
 .........
@@ -118,8 +117,19 @@ Modules
 
 * :doc:`/trainings/material/soup/python/advanced/modules`
 
-Afternoon Hacking
-.................
+Project Management, Testing
+...........................
+
+From :doc:`/trainings/material/soup/python/swdev/index`:
+
+* :doc:`/trainings/material/soup/python/swdev/pytest/intro`
+* :doc:`/trainings/material/soup/python/swdev/venv/topic`
+* :doc:`/trainings/material/soup/python/swdev/pip/topic`
+
+.. _2025-10-13-exercise-kickoff:
+
+Afternoon Hacking, Test Driven Development (Exercises)
+......................................................
 
 From :doc:`/trainings/material/soup/python/exercises/userdb-2/index`:
 
@@ -127,8 +137,8 @@ From :doc:`/trainings/material/soup/python/exercises/userdb-2/index`:
 * :doc:`/trainings/material/soup/python/exercises/userdb-2/write-json-dicts`
 * :doc:`/trainings/material/soup/python/exercises/userdb-2/csv2json`
 
-What A ``class`` Can Do
-.......................
+Classes: Introduction
+.....................
 
 From :doc:`/trainings/material/soup/python/advanced/oo/index`
 
@@ -136,14 +146,14 @@ From :doc:`/trainings/material/soup/python/advanced/oo/index`
 * :doc:`/trainings/material/soup/python/advanced/oo/constructor/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/methods/topic`
 
-Day 3
------
+Day 3: More OO, Advanced Stuff
+------------------------------
 
 Morning Wakeup (At 7am |:face_with_raised_eyebrow:|)
 ....................................................
 
-A Case For Duck Typing
-``````````````````````
+Duck Typing: Good? Bad?
+```````````````````````
 
 * Classes everywhere
 
@@ -156,10 +166,11 @@ A Case For Duck Typing
        >>> type(x)
        <class 'generator'>
 
-    * *Iterable*: ``__iter__()`` (and ``__next__()``, on the iterator)
+    * *Iterable*: anything that has ``__iter__()`` (and
+      ``__next__()``, on the iterator)
 
   * Classes/types are *callable*: ``Person.__call__()``
-    |longrightarrow| instantiation of a type
+    |longrightarrow| *instantiation* of a type
   * Modules
 
     .. code-block:: python
@@ -168,11 +179,13 @@ A Case For Duck Typing
        >>> type(sys)
        <class 'module'>
 
-* And inheritance?
+* And inheritance? No:
 
-  * File-like?
-  * Callable?
-  * Iterable?
+  * *File-like*: anything that behaves like a file (see, for example,
+    `io.StringIO
+    <https://docs.python.org/3/library/io.html#io.StringIO>`__)
+  * *Callable*
+  * *Iterable*
 
 Context Managers (``with``)
 ```````````````````````````
@@ -182,7 +195,7 @@ a quick look at what that is ...
 
 * :doc:`/trainings/material/soup/python/advanced/context-mgr/topic`
 
-OO, Continued (And Excpetions)
+OO, Continued (And Exceptions)
 ..............................
 
 * :doc:`/trainings/material/soup/python/advanced/oo/str-repr/topic`
@@ -191,15 +204,16 @@ OO, Continued (And Excpetions)
 * :doc:`/trainings/material/soup/python/advanced/oo/inheritance/topic`
 * :doc:`/trainings/material/soup/python/advanced/oo/abc/topic`
 
-Exception are classes too, and there is an entire hierarchy starting
-at ``BaseException``.
+Exception are classes too; every exception has its place in an entire
+hierarchy starting at ``BaseException``.
 
 * :doc:`/trainings/material/soup/python/advanced/exceptions/topic`
 
 Exercises
 `````````
 
-Lets use classes in our exercise project.
+Lets use classes in our :ref:`exercise project that we started
+yesterday <2025-10-13-exercise-kickoff>`.
 
 * :doc:`/trainings/material/soup/python/exercises/userdb-2/read-csv-objs`
 * :doc:`/trainings/material/soup/python/exercises/userdb-2/write-json-objs`
@@ -208,22 +222,21 @@ Lets use classes in our exercise project.
 Random Cool Things
 ..................
 
-Closures, Decorators, ...
-`````````````````````````
+``*args`` And ``**kwargs``, Closures, Decorators, ...
+`````````````````````````````````````````````````````
 
 * :doc:`/trainings/material/soup/python/advanced/starargs/topic`
 * :doc:`/trainings/material/soup/python/advanced/closures/topic`
 * :doc:`/trainings/material/soup/python/advanced/decorators/topic`
 
-Standard Library Tour
-.....................
+Batteries Included: Tour Through The Standard Library
+.....................................................
 
 * :doc:`/trainings/material/soup/python/drafts/argparse/topic`
 * `collections
   <https://docs.python.org/3/library/collections.html>`__
 * `csv <https://docs.python.org/3/library/csv.html>`__
-* `datetime
-  <https://docs.python.org/3/library/datetime.html>`__
+* `datetime <https://docs.python.org/3/library/datetime.html>`__
 * `html <https://docs.python.org/3/library/html.html>`__
 * `itertools <https://docs.python.org/3/library/itertools.html>`__
 * `json <https://docs.python.org/3/library/json.html>`__
@@ -236,3 +249,11 @@ Standard Library Tour
 * `threading
   <https://docs.python.org/3/library/threading.html#module-threading>`__
 * `zipfile <https://docs.python.org/3/library/zipfile.html>`__
+
+I strongly expressed my enthusiasm for `asyncio
+<https://docs.python.org/3/library/asyncio.html>`__, but this would
+probably be a course of its own. 
+
+One question was if there was anything to build ASCII art GUIs,
+though, and I was quick to show `Textualize
+<https://www.textualize.io/>`__ which is an ``asyncio`` user.

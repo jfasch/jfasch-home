@@ -4,9 +4,6 @@
 Iteration, Comprehensions, and Generators
 =========================================
 
-.. contents::
-   :local:
-
 Coverage Of This Topic
 ----------------------
 

@@ -4,9 +4,6 @@
 Exception Handling
 ==================
 
-.. contents::
-   :local:
-
 Introduction
 ------------
 

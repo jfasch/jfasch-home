@@ -7,9 +7,6 @@
 The ``exec()`` Function
 =======================
 
-.. contents::
-   :local:
-
 Dictionaries Everywhere: Context
 --------------------------------
 

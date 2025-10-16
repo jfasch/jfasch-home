@@ -3,9 +3,6 @@
 Boolean
 =======
 
-.. contents::
-   :local:
-
 Boolean Values
 --------------
 

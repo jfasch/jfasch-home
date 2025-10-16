@@ -4,9 +4,6 @@
 Comprehensions (List, Dictionary, Set)
 ======================================
 
-.. contents::
-   :local:
-
 Intro
 -----
 

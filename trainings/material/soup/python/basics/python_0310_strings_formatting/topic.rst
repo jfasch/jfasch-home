@@ -3,12 +3,7 @@
 String Formatting
 =================
 
-.. contents::
-   :local:
-
-.. sidebar::
-
-   **Documentation**
+.. topic:: Documentation
 
    * `<https://docs.python.org/3.8/library/string.html#format-string-syntax>`__
 

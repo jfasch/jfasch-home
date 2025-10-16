@@ -3,9 +3,6 @@
 Blahblah
 ========
 
-.. contents::
-   :local:
-
 The Python Programming Language
 -------------------------------
 

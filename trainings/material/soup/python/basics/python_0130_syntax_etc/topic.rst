@@ -3,9 +3,6 @@
 Syntax etc.
 ===========
 
-.. contents::
-   :local:
-
 Syntax: Indentation (1)
 -----------------------
 

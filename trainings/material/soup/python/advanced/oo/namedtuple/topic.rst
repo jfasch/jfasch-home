@@ -4,7 +4,7 @@
 ``collections.namedtuple``
 ==========================
 
-.. topic:: nDocumentation
+.. topic:: Documentation
 
    * `collections
      <https://docs.python.org/3/library/collections.html>`__

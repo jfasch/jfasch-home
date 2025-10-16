@@ -4,9 +4,6 @@
 More About Sets
 ===============
 
-.. contents::
-   :local:
-
 Sets
 ----
 

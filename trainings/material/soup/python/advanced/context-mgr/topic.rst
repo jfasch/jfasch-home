@@ -4,9 +4,6 @@
 Context Managers: The ``with`` Statement
 ========================================
 
-.. contents::
-   :local:
-
 Why?
 ----
 

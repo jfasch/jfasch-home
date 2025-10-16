@@ -4,9 +4,6 @@
 More About Strings
 ==================
 
-.. contents::
-   :local:
-
 String Delimiters
 -----------------
 

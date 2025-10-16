@@ -4,9 +4,6 @@
 Commandline Arguments (``sys.argv``)
 ====================================
 
-.. contents::
-   :local:
-
 Operating Systems and Programs
 ------------------------------
 
