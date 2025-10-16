@@ -13,8 +13,14 @@ Linux Systems Programming
 ..     * signals, and blocking IO, and the shell:
 ..       https://www.linusakesson.net/programming/tty/
 
-Contents
---------
+Fundamentals
+------------
+
+This section covers the stone-old UNIX concepts that I love so much,
+and that are still very active today - more than fifty years after The
+Epoch. Linux has taken its freedom to expand where necessary
+[#async-signals]_; together - Good Old UNIX, and modern Linux - this
+forms a solid basis for serious Linux systems programming.
 
 .. toctree::
    :maxdepth: 1
@@ -25,8 +31,8 @@ Contents
    signals/index
    eventloop/index
 
-In The Queue
-------------
+In The Queue: IPC, Multithreading, And More
+-------------------------------------------
 
 This is course material which has done its duty already. It is in the
 queue for refactoring, so it will look like the "regular" material
@@ -64,3 +70,9 @@ Building Blocks For Sketches
 
 .. image:: building-blocks.svg
    :scale: 40%
+
+
+.. rubric:: Footnotes
+.. [#async-signals] Asynchronous signal handling, for example, is
+		    nothing that anybody really wants, let alone
+		    asynchronous *timer* signal handling.

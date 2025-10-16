@@ -11,9 +11,9 @@ Event Loops
    poll-cpp/index
    signalfd/index
 
-Exercises
----------
-
+.. Exercises
+.. ---------
+.. 
 .. .. toctree::
 ..    :maxdepth: 1
 ..
