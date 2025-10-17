@@ -38,13 +38,13 @@ file, and write it to *standard output*.
 Code: Reading A File
 --------------------
 
-.. sidebar:: Topics
+.. topic:: See also
 
    * :doc:`overview`
    * :doc:`../../process/exit-args-env/index`
    * :doc:`../../syscalls-and-errors/errorhandling/index`
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 open
      <https://man7.org/linux/man-pages/man2/open.2.html>`__
@@ -79,11 +79,6 @@ The following program
    :caption: :download:`code/example-O_RDONLY.c`
    :language: c
 
-.. code-block:: console
-   :caption: Build it
-
-   $ gcc -o example-O_RDONLY example-O_RDONLY.c
-
 Sunny Case: Reading ``/etc/passwd``
 -----------------------------------
 
@@ -113,7 +108,7 @@ be ok:
 Error: File Not Readable
 ------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 5 shadow
      <https://man7.org/linux/man-pages/man5/shadow.5.html>`__

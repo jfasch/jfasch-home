@@ -1,5 +1,3 @@
-.. ot-topic:: sysprog.fileio.fd
-
 .. include:: <mmlalias.txt>
 
 
@@ -42,16 +40,20 @@ Standard Filedescriptors
 
    * * Number
      * POSIX Macro
-     * ``stdio.h`` equivalent
+     * ``<stdio.h>``
+     * ``<iostream>``
    * * 0
      * ``STDIN_FILENO``
      * ``stdin``
+     * ``std::cin``
    * * 1
      * ``STDOUT_FILENO``
      * ``stdout``
+     * ``std::cout``
    * * 2
      * ``STDERR_FILENO``
      * ``stderr``
+     * ``std::cerr``
 
 * Interactive shell: all three associated with terminal
 * Standard input and output used for I/O redirection and pipes
@@ -60,7 +62,7 @@ Standard Filedescriptors
 File Descriptor Lifecycle - ``open/read/write/close``
 -----------------------------------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 open
      <https://man7.org/linux/man-pages/man2/openat.2.html>`__

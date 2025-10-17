@@ -11,7 +11,7 @@ Continuing from :doc:`example-O_RDONLY`, lets see how a file is
 written. This is where the ``O_WRONLY`` (or ``O_RDWR`` if combined
 reading *and* writing is desired) is passed to ``open()``.
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 open
      <https://man7.org/linux/man-pages/man2/open.2.html>`__

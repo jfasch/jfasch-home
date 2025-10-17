@@ -7,7 +7,7 @@
 Is "Create or Open" Always Wanted?
 ----------------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 open
      <https://man7.org/linux/man-pages/man2/open.2.html>`__

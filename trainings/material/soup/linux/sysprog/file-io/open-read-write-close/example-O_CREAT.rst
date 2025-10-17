@@ -11,7 +11,7 @@ We saw in :doc:`example-O_WRONLY` that a file is not implicitly
 created only because we open one - which is a good thing. Lets see how
 to use ``O_CREAT`` to make this happen.
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 open
      <https://man7.org/linux/man-pages/man2/open.2.html>`__
@@ -62,7 +62,7 @@ This is a consequence of reading manual pages too sloppily ::
 Creating A File If It Does Not Exist
 ------------------------------------
 
-.. sidebar:: Topics
+.. topic:: Topics
 
    * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
 

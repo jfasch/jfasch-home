@@ -1,5 +1,5 @@
 .. ot-topic:: sysprog.fileio.open
-   :dependencies: sysprog.fileio.fd
+   :dependencies: sysprog.fileio.fd, sysprog.syscalls.errorhandling
 
 .. include:: <mmlalias.txt>
 

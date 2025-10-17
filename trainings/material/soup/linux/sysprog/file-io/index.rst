@@ -3,6 +3,12 @@
 Files And File Descriptors
 ==========================
 
+Here we cover one of the most important concepts - file descriptors,
+and I/O. While a file on disk is by far not the only thing that one
+can do I/O on, we see how the ``open(2)`` :doc:`system call
+</trainings/material/soup/linux/sysprog/syscalls/index>` is used to
+acquire file descriptors to open files in many ways.
+
 Contents
 --------
 
@@ -11,8 +17,8 @@ Contents
 
    file-descriptors/index
    open-read-write-close/index
-   lseek/index
    dup/index
+   lseek/index
 
    misc
 
@@ -25,3 +31,8 @@ Exercises
    basics-exercise-copy/exercise
    basics-exercise-hole
    exercise-sensor-read
+
+.. rubric:: Footnotes
+.. [#processes] :doc:`Processes
+		</trainings/material/soup/linux/sysprog/process/index>`
+		are just as important
