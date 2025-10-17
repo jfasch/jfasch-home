@@ -43,7 +43,7 @@ Pipe Facts
 
 * *No* temporary files used to hand data from one command to the next
   in the pipeline
-* Pipe member work *in parallel*
+* Pipe members work *in parallel*
 * Data exchanged *in memory* |longrightarrow| buffer of fixed size
   (~8K, depending on system configuration)
 * Writer suspended when buffer is full

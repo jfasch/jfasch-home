@@ -25,7 +25,7 @@ forms a solid basis for serious Linux systems programming.
 .. toctree::
    :maxdepth: 1
 
-   syscalls-and-errors/index
+   syscalls/index
    file-io/index
    process/index
    signals/index

@@ -1,12 +1,6 @@
 POSIX Threads
 =============
 
-.. contents::
-   :local:
-
-Topics
-------
-
 .. toctree::
    :maxdepth: 1
    :glob:

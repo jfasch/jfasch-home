@@ -1,10 +1,7 @@
 Inheritance And Object Oriented Design
 ======================================
 
-.. contents::
-   :local:
-
-.. sidebar:: See also
+.. topic:: See also
 
    From
    :doc:`/trainings/material/soup/cxx/cxx11/introduction/overview-livehacking-oo`

@@ -7,8 +7,8 @@
 The Problem
 ===========
 
-Simplest Case: One Source
--------------------------
+Simplest Case: One Single Event Source
+--------------------------------------
 
 .. topic:: See also
 
@@ -22,7 +22,7 @@ Simplest Case: One Source
 
 * Read from file descriptor until end-of-file (see :ref:`here
   <sysprog-fileio-eof>`)
-* Terminate
+* Terminate when end-of-file
 * File descriptor might refer to anything that lets me read from it
 
   * Pipe
@@ -37,7 +37,7 @@ Pipe, TTY, ...
 
 .. code-block:: console
 
-   $ cat /etc/passwd|grep jfasch
+   $ cat /etc/passwd|grep jfasch                  # <-- useless use of cat
    jfasch:x:1000:1000:Joerg Faschingbauer:/home/jfasch:/bin/bash
 
 .. image:: simple-pipe.svg
@@ -80,8 +80,8 @@ A "Real Life" Example: Code
    :language: c++
    :caption: :download:`code/db-simple.cpp`
 
-And Multiple Sources?
----------------------
+And Multiple Event Sources?
+---------------------------
 
 .. image:: db-two-sources.svg
    :scale: 40%

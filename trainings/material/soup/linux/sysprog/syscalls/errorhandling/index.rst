@@ -1,39 +1,25 @@
+.. ot-topic:: sysprog.syscalls.errorhandling
+
 .. include:: <mmlalias.txt>
 
 
-Error Handling
-==============
+``errno``, And Error Handling
+=============================
 
-.. contents::
-   :local:
+.. topic:: See also
 
-The ``errno`` Variable
-----------------------
+   * :doc:`../overview/index`
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 3 errno
      <https://man7.org/linux/man-pages/man3/errno.3.html>`__
 
-On error, system calls (and most C library functions) 
-
-* return -1
-* set the *global* variable ``errno``
-
-.. literalinclude:: code/return-and-errno.cpp
-   :language: c++
-   :caption: :download:`code/return-and-errno.cpp`
-
-.. code-block:: console
-
-   $ ./sysprog-errors--return-and-errno 
-   open failed, errno==13
-
 ``errno`` Is A *Global* Variable
 --------------------------------
 
-* ``errno`` is global, with all consequences
-* Should read it immediately after failed syscall
+* ``errno`` is *global*, with all consequences
+* Should read it immediately after something went wrong
 
 .. literalinclude:: code/errno-is-global.cpp
    :language: c++
@@ -42,13 +28,13 @@ On error, system calls (and most C library functions)
 Simplest Stringification: ``perror()``
 --------------------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 3 perror
      <https://man7.org/linux/man-pages/man3/perror.3.html>`__
 
 * Advantage: need not mention ``errno``
-* Translates ``errno`` into a descriptive string
+* Writes human-readable description of ``errno`` to standard error
 * Value of ``errno`` not printed though
 
 .. literalinclude:: code/perror.cpp
@@ -63,7 +49,7 @@ Simplest Stringification: ``perror()``
 More Stringification: ``strerror()``
 ------------------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 3 strerror
      <https://man7.org/linux/man-pages/man3/strerror.3.html>`__
@@ -72,6 +58,8 @@ More Stringification: ``strerror()``
 * Does not print anything itself
 * *Not thread-safe*: pointer might be invalidated by subsequent calls
   to ``strerror()``
+* Historical baggage: return type is ``char*`` - but *please* don't
+  write to it
 
 .. literalinclude:: code/strerror.cpp
    :language: c++
@@ -85,7 +73,7 @@ More Stringification: ``strerror()``
 Thread-Safe Stringification: ``strerror_r()``
 ---------------------------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 3 strerror_r
      <https://man7.org/linux/man-pages/man3/strerror.3.html>`__

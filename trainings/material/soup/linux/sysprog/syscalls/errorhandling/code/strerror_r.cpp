@@ -5,9 +5,10 @@
 
 int main()
 {
-    int fd = open("/etc/passwd", O_RDWR);
+    int fd = open("/etc/passwd", O_WRONLY);
     if (fd == -1) {
-        const char* errstr = strerror(errno);
+        char buf[64];                                  // <-- *might* be used
+        const char* errstr = strerror_r(errno, buf, sizeof(buf));
         std::println("open failed: {} ({})", errstr, errno);
         return 1;
     }

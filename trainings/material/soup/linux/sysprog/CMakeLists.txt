@@ -1,4 +1,4 @@
-add_subdirectory(syscalls-and-errors)
+add_subdirectory(syscalls)
 add_subdirectory(file-io)
 add_subdirectory(process)
 add_subdirectory(signals)

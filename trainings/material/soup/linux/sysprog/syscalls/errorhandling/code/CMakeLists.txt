@@ -1,4 +1,3 @@
-add_executable(sysprog-errors--return-and-errno return-and-errno.cpp)
 add_executable(sysprog-errors--errno-is-global errno-is-global.cpp)
 add_executable(sysprog-errors--perror perror.cpp)
 add_executable(sysprog-errors--strerror strerror.cpp)
