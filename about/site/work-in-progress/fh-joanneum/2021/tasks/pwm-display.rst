@@ -20,7 +20,7 @@ Standup Records
 ..........
 
 * Use raw file IO (see :doc:
-  :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`)
+  :doc:`/trainings/material/soup/linux/sysprog/file-io/index`)
 * Do not do the ``export`` (making ``/sys/class/pwm/pwmchip0/pwm0``
   available to userspace) dance; rather place that responsibility on a
   "system-setup phase" (that we don't have).
@@ -91,10 +91,9 @@ Implementation
     ``duty_cycle`` file.
 
   * Use unbuffered IO, like in
-    :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`, and in
+    :doc:`/trainings/material/soup/linux/sysprog/file-io/index`, and in
     the exercise
     :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
-
 
 Testing
 -------

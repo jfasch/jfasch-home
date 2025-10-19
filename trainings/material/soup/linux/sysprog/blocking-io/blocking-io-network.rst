@@ -7,7 +7,7 @@ Blocking I/O: On A Network Socket
 .. contents::
    :local:
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 7 socket (sockets overview) <https://man7.org/linux/man-pages/man7/socket.7.html>`__
    * `man -s 2 socket <https://man7.org/linux/man-pages/man2/socket.2.html>`__
@@ -16,9 +16,9 @@ Blocking I/O: On A Network Socket
    * `man -s 2 write <https://man7.org/linux/man-pages/man2/write.2.html>`__
    * `man -s 2 close <https://man7.org/linux/man-pages/man2/close.2.html>`__
 
-.. sidebar:: See Also
+.. topic:: See Also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls/index`
 
 Opening a Network Connection
 ----------------------------

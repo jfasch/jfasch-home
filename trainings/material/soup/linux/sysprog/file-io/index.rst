@@ -3,7 +3,7 @@
 Files And File Descriptors
 ==========================
 
-Here we cover one of the most important concepts - file descriptors,
+Here we cover one of the most important concepts - file descriptors [#processes]_,
 and I/O. While a file on disk is by far not the only thing that one
 can do I/O on, we see how the ``open(2)`` :doc:`system call
 </trainings/material/soup/linux/sysprog/syscalls/index>` is used to
@@ -16,7 +16,10 @@ Contents
    :maxdepth: 1
 
    file-descriptors/index
-   open-read-write-close/index
+   open/index
+   file-input/index
+   file-output/index
+   create/index
    dup/index
    lseek/index
 

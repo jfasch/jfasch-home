@@ -16,7 +16,7 @@ Blocking I/O: On A Timer? WTF?
 
 .. sidebar:: See Also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls/index`
 
 Setup A Timer
 -------------

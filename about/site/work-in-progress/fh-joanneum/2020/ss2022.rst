@@ -128,9 +128,12 @@ Block 2: C on Linux: Local and *Cross* Development
 
        *Systems Programming: File I/O*
 
-       * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
+       * :doc:`/trainings/material/soup/linux/sysprog/syscalls/index`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
-       * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/open/index`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-input/index`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-output/index`
+       * :doc:`/trainings/material/soup/linux/sysprog/file-io/create/index`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/lseek/index`
        * :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`
 

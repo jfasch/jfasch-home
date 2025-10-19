@@ -46,9 +46,12 @@ Implementation
    **See also**
 
    * :doc:`/trainings/material/soup/linux/sysprog/intro-hw/sysfs-gpio`
-   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls/index`
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
-   * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/open/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-input/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-output/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/create/index`
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/basics-exercise-copy/exercise`
 
 .. attention::

@@ -1,6 +1,40 @@
 Exercise: Copy A File
 =====================
 
+.. topic:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
+
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open/index`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-input/index`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-output/index`
+     * :doc:`/trainings/material/soup/linux/sysprog/file-io/create/index`
+
+   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/syscalls/errorhandling/index`
+   * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
+
+.. topic:: Documentation
+
+   * File I/O
+
+     * `man -s 2 open
+       <https://man7.org/linux/man-pages/man2/open.2.html>`__
+     * `man -s 2 read
+       <https://man7.org/linux/man-pages/man2/read.2.html>`__
+     * `man -s 2 write
+       <https://man7.org/linux/man-pages/man2/write.2.html>`__
+     * `man -s 2 close
+       <https://man7.org/linux/man-pages/man2/close.2.html>`__
+
+   * Miscellaneous
+
+     * `man -s 3 errno
+       <https://man7.org/linux/man-pages/man3/errno.3.html>`__
+     * `man -s 3 strerror
+       <https://man7.org/linux/man-pages/man3/strerror.3.html>`__
+
 Requirement
 -----------
 
@@ -19,7 +53,7 @@ behavior:
 .. note::
 
    * Check for system call errors; see
-     :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
+     :doc:`/trainings/material/soup/linux/sysprog/syscalls/errorhandling/index`
      for how to.
    * Make sure the program interprets its commandline correctly; see
      :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
@@ -93,20 +127,6 @@ for example),
 
 (:download:`Test script (download) <requirement-dest-dir-not-writeable.sh>`)
 
-Submission
-----------
-
-* Create a directory ``exercise-1`` which contains all the source (C
-  code, and CMake build instructions)
-* From the parent directory of ``exercise-1``, package that directory
-
-  .. code-block:: 
-
-     $ tar -J -c -f submission.tar.xz exercise-1/
-
-* Submit ``submission.tar.xz``
-
-
 .. rubric:: Footnotes
 .. [#create-file] If not, and you need one for testing purposes, you
                   create it like so:
@@ -116,40 +136,3 @@ Submission
 		     $ touch /tmp/passwd-copy
 
 		  (Or by running the sunny case, of course)
-
-More Information
-----------------
-
-.. topic:: See also
-
-   * The Whole Truth About ``open()``
-
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/overview`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_RDONLY`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_WRONLY`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_CREAT`
-     * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_EXCL`
-
-   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
-   * :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
-   * :doc:`/trainings/material/soup/linux/basics/permissions/basics`
-
-.. topic:: Documentation
-
-   * File I/O
-
-     * `man -s 2 open
-       <https://man7.org/linux/man-pages/man2/open.2.html>`__
-     * `man -s 2 read
-       <https://man7.org/linux/man-pages/man2/read.2.html>`__
-     * `man -s 2 write
-       <https://man7.org/linux/man-pages/man2/write.2.html>`__
-     * `man -s 2 close
-       <https://man7.org/linux/man-pages/man2/close.2.html>`__
-
-   * Miscellaneous
-
-     * `man -s 3 errno
-       <https://man7.org/linux/man-pages/man3/errno.3.html>`__
-     * `man -s 3 strerror
-       <https://man7.org/linux/man-pages/man3/strerror.3.html>`__

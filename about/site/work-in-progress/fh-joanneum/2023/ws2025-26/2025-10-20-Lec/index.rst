@@ -1,8 +1,8 @@
 .. include:: <mmlalias.txt>
 
 
-2025-10-20 (3 Lec): Systems Programming Basics
-==============================================
+2025-10-20 (3 Lec): Files And File I/O
+======================================
 
 Processes: Commandline, Exit Status, Environment
 ------------------------------------------------
@@ -12,17 +12,15 @@ Processes: Commandline, Exit Status, Environment
 Error Handling Recap
 --------------------
 
-* :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/errorhandling/index`
+* :doc:`/trainings/material/soup/linux/sysprog/syscalls/errorhandling/index`
 
-File IO Recap
--------------
+Files, And File I/O
+-------------------
 
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/overview`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_RDONLY`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_WRONLY`
+From :doc:`/trainings/material/soup/linux/sysprog/file-io/index`:
 
-Positions, And Duplicating
---------------------------
-
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/lseek/index`
-* :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/open/index`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/file-input/index`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/file-output/index`
+* :doc:`/trainings/material/soup/linux/sysprog/file-io/create/index`

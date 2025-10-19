@@ -21,16 +21,15 @@ Systems Programming Basics: File I/O
 ------------------------------------
 
 * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
-* :doc:`/trainings/material/soup/linux/sysprog/syscalls-and-errors/index`
+* :doc:`/trainings/material/soup/linux/sysprog/syscalls/index`
 * From :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
 
   * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-descriptors/index`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/index`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_RDONLY`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_WRONLY`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_CREAT`
-  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open-read-write-close/example-O_EXCL`
-
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/open/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-input/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-output/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/file-io/create/index`
+  
 Homework (until next time - 2024-05-06)
 ---------------------------------------
 
