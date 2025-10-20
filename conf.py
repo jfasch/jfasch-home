@@ -93,7 +93,10 @@ html_css_files = ['css/custom.css']
 
 html_theme = 'pydata_sphinx_theme'
 html_theme_path = []
-html_theme_options = {}
+html_theme_options = {
+    'show_nav_level': 7,
+    "navigation_depth": 7,
+}
 
 html_sidebars = {
     "blog/*": [
