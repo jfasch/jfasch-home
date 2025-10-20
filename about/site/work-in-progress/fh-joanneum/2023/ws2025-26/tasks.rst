@@ -7,11 +7,11 @@ Tasks: Rafactoring, Realtime Behavior, ...
 How to include files
 --------------------
 
-* ``file.cpp`` includes its own ``file.h``, or ``anotherfile.h``
-  from the same directory (or any include inside one directory)
+* ``file.cpp`` includes its own ``file.h``, or any other file *from
+  the same directory*. Such files are included like ``#include ""``
 
-  * *Wrong*: ``#include <door/file.h>``
   * *Right*: ``#include "file.h"``
+  * *Wrong*: ``#include <door/file.h>``
 
   .. code-block:: console
 

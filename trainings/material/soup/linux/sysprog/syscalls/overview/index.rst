@@ -57,7 +57,7 @@ Return Value, And Errors
   <https://man7.org/linux/man-pages/man2/mmap.2.html>`__ is one
   exception)
 * Return value ``>= 0`` |longrightarrow| no error
-* Return value ``== 0`` |longrightarrow| error
+* Return value ``== -1`` |longrightarrow| error
 
   * Global variable ``errno`` is set to indicate the cause
 

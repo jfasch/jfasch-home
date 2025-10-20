@@ -9,9 +9,10 @@ Processes: Commandline, Exit Status, Environment
 
 * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
 
-Error Handling Recap
---------------------
+System Calls, Error Handling
+----------------------------
 
+* :doc:`/trainings/material/soup/linux/sysprog/syscalls/overview/index`
 * :doc:`/trainings/material/soup/linux/sysprog/syscalls/errorhandling/index`
 
 Files, And File I/O

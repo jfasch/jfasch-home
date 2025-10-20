@@ -38,7 +38,8 @@ Swiss Army Knife
 Swiss army knife: multiple actions, governed by bitwise-or'ed flags:
 
 * Create/Open/Truncate/...
-* Access intention ("mode"): open for reading, writing, both
+* ``flags``: access intention - open for reading, writing, appending,
+  ...
 * Hundreds of others
 * |longrightarrow| `man -s 2 open
   <https://man7.org/linux/man-pages/man2/open.2.html>`__ is a very
@@ -60,11 +61,14 @@ Swiss army knife: multiple actions, governed by bitwise-or'ed flags:
 **Creating a File**
 
 * ``O_CREAT``: create if not exists, else simply open
+
+  * If file is created, ``mode`` is used - file *permissions*
+
 * ``O_CREAT|O_EXCL``: *exclusive creation*
 
   * *error* if file exists
   * |longrightarrow| to prevent race conditions when two parties try
-    to create a file at the smae time
+    to create a file at the same time
   * security measure
 
 **Miscellaneous**

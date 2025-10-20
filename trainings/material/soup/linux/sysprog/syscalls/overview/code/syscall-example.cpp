@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include <sys/syscall.h>
+#include <sys/syscall.h>                               // <-- SYS_* macros
 
 int main()
 {

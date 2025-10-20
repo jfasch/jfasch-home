@@ -17,7 +17,7 @@ Creating Files
 * ``O_CREAT``, combined with ``O_WRONLY`` or any other such flag
   [#read-just-as-well]_, creates a file if it does not exist
 * If the file is created, then ``mode`` is used to initialize its
-  permssion mask
+  permission mask
 * Additionally, if ``flags`` contains ``O_EXCL``, ``open()`` fails if
   the file exists
 
@@ -44,7 +44,7 @@ Creating A File, Failing If It Already Exists
 ---------------------------------------------
 
 * ``O_CREAT | O_EXCL``: "exclusive" creation
-* Prevents race condition if *two* process ... 
+* Prevents race condition if two processes ...
 
   * see that a file does not exist
   * create it
@@ -58,12 +58,23 @@ Creating A File, Failing If It Already Exists
 .. [#read-just-as-well] One could legally combine ``O_CREAT`` with
                         ``O_RDONLY`` just as well if that made sense.
 
-Attention: ``mode``
--------------------
+Attention: ``mode`` (A.k.a. *Permissions*)
+------------------------------------------
 
-* Always specifiy ``mode`` when using ``O_CREAT``
+.. topic:: See also
+
+   * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+
+* Always specifiy ``mode`` when using ``O_CREAT``: the new file needs
+  well-defined *permissions*!
 * C cannot tell you that it's missing
 * |longrightarrow| Unspecified third parameter is the same as using
   uninitialized memory
+* Recommendation: ``mode`` should be ``0666`` (``rw-rw-rw-``)
+
+  * Bits are subtracted from it using the user's ``umask`` (see
+    :doc:`here
+    </trainings/material/soup/linux/basics/permissions/umask>`)
+
 
 (Short demo maybe)
