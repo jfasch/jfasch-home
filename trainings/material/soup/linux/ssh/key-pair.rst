@@ -65,6 +65,8 @@ Key Pair?
 
   *Private key*; remains local - **in your safe**
 
+  .. image:: deepest-secret.jpg
+
   .. danger::
 
      The *private key* is **your secret**, and must not be disclosed
