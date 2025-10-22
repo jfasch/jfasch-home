@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-A Naive C++ Eventloop (Based Upon ``poll()``)
-=============================================
+A Naive C++ Eventloop (``poll()``)
+==================================
 
 .. topic:: Remark: this is not a C++ course
 
