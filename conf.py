@@ -74,6 +74,8 @@ todo_include_todos = True
 
 plantuml_output_format = 'svg_img'
 
+sitemap_url_scheme = '{link}'
+
 # nbsphinx by default loads RequireJS, and changes config to do
 # so. sphinx then warns me that the config has changed @#$%. suppress
 # that by setting those config options to not-None.
