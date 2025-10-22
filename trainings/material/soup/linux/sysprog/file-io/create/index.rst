@@ -24,10 +24,20 @@ Creating Files
   * |longrightarrow| Important when no two processes must create the
     same file and overwrite each other's contents
 
-Creating A File If It Does Not Exist
-------------------------------------
+Creating A File If It Does Not Exist (``O_CREAT``)
+--------------------------------------------------
 
-* Note: ``mode`` is ``0600``
+.. topic:: See also
+
+   * :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+
+* Note: ``mode`` is ``0666``
+
+  * This is the preferred ``mode`` that the program should specify
+  * The user's
+    :doc:`/trainings/material/soup/linux/basics/permissions/umask`
+    specifies the bits that are subtracted from it
+
 * Use this on ``/tmp/somefile`` from previous section
   (:doc:`../file-output/index`)
 * |longrightarrow| File opened for overwrite (we did not say
@@ -40,10 +50,13 @@ Creating A File If It Does Not Exist
    :caption: :download:`code/create-simple.cpp`
    :language: c++
 
-Creating A File, Failing If It Already Exists
----------------------------------------------
+Creating A File, Failing If It Already Exists (``O_EXCL``)
+----------------------------------------------------------
 
 * ``O_CREAT | O_EXCL``: "exclusive" creation
+* ``O_CREAT`` creates a file if it does not exist
+* ``O_EXCL`` fails if the file already exists
+* |longrightarrow| No data can be accidentally overwritten
 * Prevents race condition if two processes ...
 
   * see that a file does not exist

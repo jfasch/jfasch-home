@@ -5,7 +5,7 @@
 int main()
 {
     int fd = open("/tmp/somefile", O_WRONLY | O_CREAT, 
-                  0600);                               // <-- note "mode"!
+                  0666);                               // <-- note "mode"!
     if (fd == -1) {
         perror("open");
         return 1;
