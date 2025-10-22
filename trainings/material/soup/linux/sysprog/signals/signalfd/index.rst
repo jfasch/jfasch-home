@@ -21,7 +21,8 @@ Basic Operation
 
    int signalfd(int fd, const sigset_t *mask, int flags);
 
-* Signals received as *events*, via file descriptor
+* Signals - specified in ``mask`` - received as *events*, via file
+  descriptor
 
   * |longrightarrow| Perfect fit for event loop programming
 

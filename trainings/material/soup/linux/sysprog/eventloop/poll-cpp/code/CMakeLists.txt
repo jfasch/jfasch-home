@@ -20,6 +20,12 @@ add_test(
   COMMAND sysprog-eventloop-poll-tests
 )
 
-# add_executable(sysprog-eventloop-db-two-sources-eventloop db-two-sources-eventloop.cpp)
-# target_link_libraries(sysprog-eventloop-db-two-sources-eventloop 
-#   sysprog-eventloop-poll sysprog-eventloop-db)
+add_executable(
+  sysprog-eventloop-db-two-sources-eventloop 
+
+  main.cpp
+  udp-db.cpp
+  stdin-db.cpp
+)
+target_link_libraries(sysprog-eventloop-db-two-sources-eventloop 
+  sysprog-eventloop-poll sysprog-eventloop-db)

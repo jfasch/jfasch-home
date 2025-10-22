@@ -1,2 +1,7 @@
-add_library(sysprog-eventloop-db INTERFACE database.h)
-target_include_directories(sysprog-eventloop-db INTERFACE .)
+add_library(
+  sysprog-eventloop-db 
+
+  database.h
+  database.cpp
+)
+target_include_directories(sysprog-eventloop-db PUBLIC .)

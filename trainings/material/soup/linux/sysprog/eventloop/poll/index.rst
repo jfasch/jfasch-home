@@ -47,10 +47,13 @@ Enter ``poll()``
    int poll(struct pollfd *fds, nfds_t nfds, int timeout);
 
 * ``timeout`` in milliseconds (0 for "don't block", -1 for infinite)
-* Original I/O multiplexing system call: ``select()`` (`man -s 2
-  select <https://man7.org/linux/man-pages/man2/select.2.html>`__)
+* Original I/O multiplexing system call (since 4.2 BSD UNIX):
+  ``select()`` (`man -s 2 select
+  <https://man7.org/linux/man-pages/man2/select.2.html>`__)
 * ``poll()`` was added to POSIX later
 * |longrightarrow| More resource (and developer) friendly
+
+.. _sysprog-eventloop-poll-events:
 
 Possible Events
 ---------------
@@ -103,9 +106,49 @@ Continuing from :ref:`where we left <sysprog-eventloop-intro-problem>` ...
 * Use ``poll()`` to wait for both (no ``timeout`` |longrightarrow| -1)
 * Multiplex on return
 
-.. literalinclude:: code/db-poll-solution.cpp
+.. image:: flowchart.svg
+   :scale: 40%
+
+.. literalinclude:: code/main.cpp
    :language: c++
-   :caption: :download:`code/db-poll-solution.cpp`
+   :caption: :download:`code/main.cpp`
+
+.. _sysprog-poll-db-testing:
+
+Testing
+-------
+
+* In one terminal, start the program |longrightarrow| sits and waits
+  in ``poll()``
+
+  .. code-block:: console
+
+     $ ./sysprog-eventloop-db-poll-solution 
+     <sits and waits>
+
+* Feed it a record on standard input and watch it entered into the
+  database
+
+  .. code-block:: console
+
+     42 Joerg Faschingbauer
+     insert id=42, firstname=Joerg, lastname=Faschingbauer
+     
+* In another terminal, send a UDP packet containing another record
+  |longrightarrow| inserted too
+
+  .. code-block:: console
+
+     $ nc -4 --udp localhost 1234
+     666 Bad Guy
+
+* ``Crtl-d`` On standard input
+
+  .. code-block:: console
+
+     ...
+     commit
+     $
 
 Afterword
 ---------
