@@ -9,6 +9,7 @@ class UDPToDatabase : public InputHandler
 {
 public:
     UDPToDatabase(const std::string& addr, short port, Database& db);
+    ~UDPToDatabase() override;
     void hookup(Eventloop&);
     EventAction ready(int fd) override;
 

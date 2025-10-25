@@ -22,7 +22,10 @@ Waiting (Blocking) For Signals
 ------------------------------
 
 * ``sigwait()`` (and friends) *synchronously wait* for a signal
-* |longrightarrow| No async delivery, no async-signal-safety concerns
+* To make that happen, one must *block* this signal for asynchronous
+  delivery
+* Good: no :ref:`async-signal-safety
+  <sysprog-signals-async-signal-safe>` concerns
 * |longrightarrow| All fine
 * Use case: in a multithreaded program, it is probably best to
   dedicate one thread to signal handling, using ``sigwait()`` or

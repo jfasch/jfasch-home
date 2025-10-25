@@ -23,7 +23,8 @@ inside an application that is highly reactive.
    problem/index
    poll/index
    poll-cpp/index
-   signalfd/index
+   exercise-graceful-termination/index
+   exercise-commit-rollback/index
 
 .. Exercises
 .. ---------

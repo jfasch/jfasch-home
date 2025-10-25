@@ -26,6 +26,12 @@ UDPToDatabase::UDPToDatabase(const std::string& addrstr, short port, Database& d
         throw std::runtime_error(std::format("cannot bind socket: {} ({})", strerror(errno), errno));
 }
 
+UDPToDatabase::~UDPToDatabase()
+{
+    if (_socket != -1)
+        close(_socket);
+}
+
 void UDPToDatabase::hookup(Eventloop& loop)
 {
     loop.register_input(_socket, this);

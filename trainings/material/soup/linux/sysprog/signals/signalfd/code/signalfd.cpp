@@ -32,7 +32,7 @@ int main()
             return 1;
         }
 
-        for (size_t i=0; i<sizeof(signals)/sizeof(signalfd_siginfo); i++) {
+        for (size_t i=0; i < nread/sizeof(signalfd_siginfo); i++) {
             switch (signals[i].ssi_signo) {            // <-- disregard other structure members
                 case SIGTERM:
                 case SIGINT:

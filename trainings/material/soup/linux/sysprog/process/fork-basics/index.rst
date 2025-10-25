@@ -19,19 +19,16 @@ Basic Process Creation
 Process States
 --------------
 
-* Many of the states reflect the process's runtime behavior: does it
-  wait for something, or has it expired its timeslice, or is it
-  offended (or the offender itself) in a realtime scenario. *A process
-  is always under the control of the scheduler.*
+.. image:: process-states.svg
+   :scale: 40%
+   :align: center
 
+* Many of the states reflect the process's runtime behavior: does it
+  wait for something, or has it expired its timeslice, ...
 * Much more complex than can be shown on a sketch
 * |longrightarrow| Uninterruptible vs. interruptible sleep
 * |longrightarrow| Various ways to terminate a process
 * ...
-
-.. image:: process-states.svg
-   :scale: 40%
-   :align: center
 
 Creative Weirdness: ``fork()``
 ------------------------------

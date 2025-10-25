@@ -252,8 +252,8 @@ Batteries Included: Tour Through The Standard Library
 
 I strongly expressed my enthusiasm for `asyncio
 <https://docs.python.org/3/library/asyncio.html>`__, but this would
-probably be a course of its own. 
+probably justify a course of its own. 
 
 One question was if there was anything to build ASCII art GUIs,
 though, and I was quick to show `Textualize
-<https://www.textualize.io/>`__ which is an ``asyncio`` user.
+<https://www.textualize.io/>`__ (which is an ``asyncio`` user btw).

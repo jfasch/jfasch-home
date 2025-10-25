@@ -19,8 +19,8 @@ Fundamentals
 This section covers the stone-old UNIX concepts that I love so much,
 and that are still very active today - more than fifty years after The
 Epoch. Linux has taken its freedom to expand where necessary
-[#async-signals]_; together - Good Old UNIX, and modern Linux - this
-forms a solid basis for serious Linux systems programming.
+[#async-signals]_; knowing these concepts - Good Old UNIX, and modern
+Linux - is a solid basis for serious Linux systems programming.
 
 .. toctree::
    :maxdepth: 1
