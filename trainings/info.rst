@@ -8,9 +8,6 @@ Pricing, Organizational
 Course Modes
 ------------
 
-Onsite/Online
-.............
-
 Courses can be delivered in the following formats:
 
 * **Onsite** for a single customer organization. Travel expenses are
@@ -23,18 +20,15 @@ Courses can be delivered in the following formats:
   * :doc:`Microsoft Teams </blog/2020-03-22--ms-teams-on-linux>`
   * :doc:`BigBlueButton </blog/2020-04-19--bbb>`
 
-Delivery/Material
-.................
-
-.. sidebar:: See also
-
-   * :doc:`/trainings/material/soup/index`
-   * :doc:`log/index`
-
 All material is available :doc:`online from this site
 </trainings/material/soup/index>`. Attendees are left with
 :doc:`personalized writeups <log/index>` of their particular event as
 it happened.
+
+.. topic:: See also
+
+   * :doc:`log/index`
+   * :doc:`/trainings/material/soup/index`
 
 .. _course-pricing:
 
@@ -48,14 +42,8 @@ Pricing
 
 .. _course-individual:
 
-Individual
-----------
-
-.. sidebar:: See also
-
-   * :doc:`/trainings/repertoire/index`
-   * :doc:`/trainings/log/index`
-   * :doc:`/about/myself/index`
+Composed Individually
+---------------------
 
 *Nearly all courses that I hold are composed individually.*
 :doc:`Course descriptions </trainings/repertoire/index>` should be
@@ -73,6 +61,12 @@ I'll then compose a training for you; this need not necessarily match
 a :doc:`course description </trainings/index>`, but can be composed
 from the :doc:`huge amount of course material
 </trainings/material/soup/index>`.
+
+.. topic:: See also
+
+   * :doc:`/trainings/repertoire/index`
+   * :doc:`/trainings/log/index`
+   * :doc:`/about/myself/index`
 
 
 .. rubric:: Footnotes

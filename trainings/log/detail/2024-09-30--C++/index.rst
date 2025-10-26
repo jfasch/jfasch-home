@@ -153,7 +153,7 @@ Morning Wakeup
 .. sidebar:: See also
 
    * :doc:`/trainings/material/soup/misc/cmake/intro/libraries` (from
-     :doc:`/trainings/repertoire/misc/cmake`)
+     :doc:`/trainings/material/soup/misc/cmake/index`)
 
 * Recap: ``= default``, brace initialization, member initialization,
   "``vector`` anomaly"
@@ -214,7 +214,7 @@ Code Generation With CMake
 
 .. sidebar:: See also
 
-   * :doc:`/trainings/material/soup/misc/cmake/advanced/code-generators/screenplay` (from :doc:`/trainings/repertoire/misc/cmake`)
+   * :doc:`/trainings/material/soup/misc/cmake/advanced/code-generators/screenplay` (from :doc:`/trainings/material/soup/misc/cmake/index`)
 
 * Show how config (sensor, sink) can be brought in more statically, at
   link time |longrightarrow| manual prototype

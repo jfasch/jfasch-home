@@ -1105,7 +1105,7 @@ Linux Basics, Kernel, Git (9.3.2015 - 13.3.2015, Siemens Braunschweig)
 Offene Schulung, "Softwareentwicklung unter Linux". Themen:
 
 * Systemkonzepte (:doc:`../repertoire/linux-prog/linux-basics`)
-* Software Build (:doc:`../repertoire/misc/cmake`)
+* Software Build (:doc:`/trainings/material/soup/misc/cmake/index`)
 * Kernelprogrammierung (:doc:`../repertoire/linux-prog/kernel-programming-basics`)
 * Git
 

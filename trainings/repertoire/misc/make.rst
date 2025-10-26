@@ -20,7 +20,7 @@ GNU Make: The Mother of All Build Tools
       * * **Material**
 	* * :download:`GNU Make (PDF) </trainings/material/pdf/040-gnu-make.pdf>`
       * * **Related**
-	* * :doc:`cmake`
+	* * :doc:`/trainings/material/soup/misc/cmake/index`
       * * **Booking**
 	* :doc:`/trainings/info`
       

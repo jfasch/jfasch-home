@@ -24,10 +24,7 @@ CMake: An Introduction (2023-11-27)
 
    **See also**
 
-   * :doc:`/trainings/repertoire/misc/cmake` (Course description)
-   * :doc:`/trainings/material/soup/misc/cmake/index` (Course material)
-   * :download:`PDF (Unmaintained; old CMake course)
-     </trainings/material/pdf/045-cmake.pdf>`
+   * :doc:`/trainings/material/soup/misc/cmake/index`
 
 * :doc:`/trainings/material/soup/misc/cmake/intro/basics`
 * :doc:`/trainings/material/soup/misc/cmake/intro/libraries`

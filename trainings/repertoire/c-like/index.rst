@@ -22,7 +22,7 @@ C and C++ Programming
 	 .. dropdown:: Related Courses
 
             * :doc:`/trainings/repertoire/misc/make`
-            * :doc:`/trainings/repertoire/misc/cmake`
+            * :doc:`/trainings/material/soup/misc/cmake/index`
             * :doc:`/trainings/repertoire/misc/unittests`
 
       .. grid-item:: 

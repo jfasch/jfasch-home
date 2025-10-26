@@ -51,7 +51,7 @@ C/C++ Development
    * :download:`C++03 (PDF) </trainings/material/pdf/055-c++03.pdf>`
    * :download:`C++11 (PDF) </trainings/material/pdf/056-c++11.pdf>`
    * :download:`GNU Make (PDF) </trainings/material/pdf/040-gnu-make.pdf>`
-   * :download:`CMake (PDF) </trainings/material/pdf/045-cmake.pdf>`
+   * :doc:`/trainings/material/soup/misc/cmake/index`
 
 * **Cross Development with C**
 

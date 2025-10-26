@@ -2,7 +2,11 @@ Miscellaneous
 =============
 
 .. toctree::
+   :hidden:
 
    make
-   cmake
    unittests
+
+* :doc:`/trainings/material/soup/misc/cmake/index`
+* :doc:`unittests`
+* :doc:`make`

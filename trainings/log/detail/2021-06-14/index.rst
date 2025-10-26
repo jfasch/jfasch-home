@@ -17,7 +17,7 @@ Programmieren mit C (2021-06-14 - 2021-06-18)
    **Material**
 
    * Slides, :download:`C </trainings/material/pdf/050-c.pdf>`
-   * Slides, :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+   * :doc:`/trainings/material/soup/misc/cmake/index`
    * Slides, :download:`GNU Make </trainings/material/pdf/040-gnu-make.pdf>`
    * `Github Repository <https://github.com/jfasch/2021-06-14>`__
 
@@ -95,7 +95,7 @@ Regular Course Topics
   </trainings/material/pdf/050-c.pdf>` (the ``power()`` function from
   the K&R book) as a live hacking gig. `See here on Github
   <https://github.com/jfasch/2021-06-14/blob/main/power-function.c>`__.
-* Quick :download:`CMake </trainings/material/pdf/045-cmake.pdf>`
+* Quick :doc:`CMake </trainings/material/soup/misc/cmake/index>`
   intro, as a preparation for the upcoming group project. Confusing
   people.
 

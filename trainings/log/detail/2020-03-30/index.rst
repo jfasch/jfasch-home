@@ -32,14 +32,14 @@ C++ für Embedded C Programmierer (30.3.2020 - 3.4.2020 Baden Württemberg)
    * :doc:`C Einführung </trainings/repertoire/c-like/c>`
    * :doc:`C Advanced </trainings/repertoire/c-like/c-advanced>`
    * :doc:`C++ </trainings/repertoire/c-like/cxx>`
-   * :doc:`CMake </trainings/repertoire/misc/cmake>`
+   * :doc:`CMake </trainings/material/soup/misc/cmake/index>`
 
    **Folien**
 
    * :download:`C </trainings/material/pdf/050-c.pdf>` (PDF)
    * :download:`C++03 </trainings/material/pdf/055-c++03.pdf>` (PDF)
    * :download:`C++11 </trainings/material/pdf/056-c++11.pdf>` (PDF)
-   * :download:`CMake </trainings/material/pdf/045-cmake.pdf>` (PDF)
+   * :doc:`/trainings/material/soup/misc/cmake/index`
    * :download:`Unittesting
      </trainings/material/pdf/060-design-patterns-unittests.pdf>`
      (PDF)

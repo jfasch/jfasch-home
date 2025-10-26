@@ -4,10 +4,9 @@
 CMake: Advanced Topics
 ======================
 
-.. image:: ../logo.jpg
+.. image:: ../logo.svg
    :alt: CMake logo
    :align: right
-   :scale: 100%
 
 .. sidebar::
 

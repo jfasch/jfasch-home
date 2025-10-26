@@ -27,8 +27,6 @@ Embedded Linux Systems Programming (2023-02-13 - 2023-02-17)
 
    * Systems Programming: :download:`020-linux-sysprog--en.pdf
      </trainings/material/pdf/020-linux-sysprog--en.pdf>`
-   * CMake: :download:`045-cmake.pdf
-     </trainings/material/pdf/045-cmake.pdf>`
 
 Programming Environment
 -----------------------

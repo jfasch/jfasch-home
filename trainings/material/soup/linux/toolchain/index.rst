@@ -16,15 +16,18 @@ Topics
 
    **See also**
 
+   * :doc:`/trainings/material/soup/misc/cmake/index`
    * :doc:`/trainings/material/soup/linux/ssh/index`
 
 An overview of the *toolchain* is given - a collection of tools
 (compiler, linker, ...) to transform C/C++ source code into running
 executables.
 
-This is followed by an introduction to `CMake <cmake.org>`_, a higher
-level build tool that solves many problems that both hand-written
-``Makefile`` hacks and IDE-clickabout builds have.
+This is followed by an introduction to `CMake <cmake.org>`_ (a
+:doc:`separate course is available
+</trainings/material/soup/misc/cmake/index>`), a higher level build
+tool that solves many problems that both hand-written ``Makefile``
+hacks and IDE-clickabout builds have.
 
 Last, a bit more involved, we see how cross development is
 done. Together with :doc:`/trainings/material/soup/linux/ssh/index`,

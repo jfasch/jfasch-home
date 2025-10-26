@@ -90,7 +90,7 @@ Software Development At Large
 .. sidebar:: Training Courses
 
    * :doc:`/trainings/repertoire/misc/make`
-   * :doc:`/trainings/repertoire/misc/cmake`
+   * :doc:`/trainings/material/soup/misc/cmake/index`
    * :doc:`/trainings/repertoire/misc/unittests`
 
 In my non-freelance life, I've been in roles called "architect". I
