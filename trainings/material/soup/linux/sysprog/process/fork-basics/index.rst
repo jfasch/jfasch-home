@@ -19,7 +19,7 @@ Basic Process Creation
 Process States
 --------------
 
-.. image:: process-states.svg
+.. image:: states.svg
    :scale: 40%
    :align: center
 
