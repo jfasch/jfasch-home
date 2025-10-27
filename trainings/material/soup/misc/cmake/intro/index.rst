@@ -4,9 +4,10 @@
 CMake: Introduction
 ===================
 
-.. image:: ../logo.svg
+.. image:: ../logo.jpg
    :alt: CMake logo
    :align: right
+   :scale: 50%
 
 .. sidebar::
 

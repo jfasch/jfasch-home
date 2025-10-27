@@ -22,14 +22,15 @@ As if :doc:`C </trainings/repertoire/c-like/c>` and :doc:`C++
 </trainings/repertoire/c-like/cxx>` weren't complicated enough,
 building programs written in those languages is even more complicated.
 
-.. image:: logo.svg
-   :alt: CMake Logo
-   :align: left
-
 :doc:`(GNU-)Make </trainings/repertoire/misc/make>`, a low-level build
 tool to manage some of the intricacies of the build, has been invented
 rather early in history. Today it is considered the "assembly language
 of a build".
+
+.. image:: logo.jpg
+   :alt: CMake Logo
+   :align: left
+   :scale: 50%
 
 A number of higher level tools have been designed, to manage most of
 the rest of the build intricacies, together with some that ``make``
