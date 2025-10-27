@@ -154,7 +154,11 @@ Afterword
 ---------
 
 * Of course this works for more than two sources
-* Many possible kinds of events
+* Many possible kinds of events; for example:
+
+  * :doc:`../exercise-graceful-termination/index`
+  * :doc:`../exercise-commit-rollback/index`
+
 * |longrightarrow| Code complexity ahead
 * |longrightarrow| best to encapsulate (see :doc:`here
   <../poll-cpp/index>` for a naive C++ eventloop implementation)

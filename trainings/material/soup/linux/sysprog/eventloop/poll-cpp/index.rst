@@ -89,7 +89,7 @@ Eventloop, And Associated Types
   * Replacement for ``while`` loop in
     :ref:`sysprog-eventloop-poll-solution`
   * Uses ``poll()`` to watch registered file descriptors
-  * Calls back assiciated ``InputHandler`` objects when it detects
+  * Calls back associated ``InputHandler`` objects when it detects
     input (``POLLIN``) readiness (see
     :ref:`sysprog-eventloop-poll-events`)
 
@@ -144,7 +144,7 @@ Building Blocks In Detail
 
    * * Types
      * Download
-     * Inline
+     * View
    * * ``Eventloop`` and ``InputHandler``
      * * :download:`eventloop.h <code/eventloop.h>`
        * :download:`eventloop.cpp <code/eventloop.cpp>`
