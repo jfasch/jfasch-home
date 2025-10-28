@@ -1,15 +1,15 @@
-.. ot-topic:: sysprog.process.exit_argv_env
+.. ot-topic:: sysprog.process.exit
 
 .. include:: <mmlalias.txt>
 
 
-Exit Status, Arguments, Environment
-===================================
+Exit Status
+===========
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/basics/intro/process`
-   * :doc:`/trainings/material/soup/c/050-pointers-and-arrays/050-command-line-arguments/topic`
+   * :doc:`/trainings/repertoire/linux-prog/bash`
 
 The Shell: A Program Like Any Other Program
 -------------------------------------------
@@ -22,18 +22,23 @@ The Shell: A Program Like Any Other Program
    $ grep jfasch /etc/passwd
    jfasch:x:1000:1000:Joerg Faschingbauer:/home/jfasch:/bin/bash
 
-* Search program ``grep`` along ``$PATH``
+* Search program ``grep`` along ``$PATH`` (see :doc:`../environ/index`)
 * Start it, passing it two arguments: ``jfasch``, ``/etc/passwd``
+  (:doc:`../argv/index`))
 * Wait for it to terminate
 * Examine its exit status
 
 .. code-block:: console
 
-   $ echo $?            # <--- $? ... exit status of last foreground process (huh?)
+   $ echo $?            # <-- $? ... exit status of last foreground process (huh?)
    0
 
 The Shell: A Programming Language
 ---------------------------------
+
+.. topic:: See also
+
+   * :doc:`/trainings/repertoire/linux-prog/bash`
 
 .. code-block:: console
 
@@ -103,79 +108,3 @@ Exit Status: ``!= 0`` is "Not OK"
 
    $ if ./exit-nok; then echo YAY; else echo NOPE; fi
    NOPE
-
-Argument Vector (``int argc, char** argv``)
--------------------------------------------
-
-* Passing parameters to programs
-* ``argc``: number of arguments
-* ``argv``: string array - the "argument vector"
-* ``argv[0]``: how the command was invoked (unused, mostly)
-
-.. image:: argv.dia
-   :scale: 40%
-
-.. literalinclude:: code/argv.cpp
-   :language: c++
-   :caption: :download:`code/argv.cpp`
-
-.. code-block:: console
-
-   $ ./argv
-   argc: 1
-   argv[0]: ./argv
-   
-.. code-block:: console
-
-   $ ./argv hello sweetheart
-   argc: 3
-   argv[0]: ./argv
-   argv[1]: hello
-   argv[2]: sweetheart
-
-Environment Variables
----------------------
-
-.. sidebar:: See also
-
-   * :doc:`/trainings/material/soup/linux/basics/intro/environment`
-
-.. sidebar:: Documentation
-
-   * `man -s 7 environ
-     <https://man7.org/linux/man-pages/man7/environ.7.html>`__
-   * `man -s 3 getenv
-     <https://man7.org/linux/man-pages/man3/getenv.3.html>`__
-   * `man -s 3 setenv
-     <https://man7.org/linux/man-pages/man3/setenv.3.html>`__
-   * `man -s 3 putenv
-     <https://man7.org/linux/man-pages/man3/putenv.3.html>`__
-   * `man -s 3 unsetenv
-     <https://man7.org/linux/man-pages/man3/unsetenv.3.html>`__
-   * `man -s 3 clearenv
-     <https://man7.org/linux/man-pages/man3/clearenv.3.html>`__
-
-* Environment variables are a *process attribute* (not related to any
-  programming language)
-* *Inherited* to child processes
-* A process can use ``getenv()`` (`here
-  <https://man7.org/linux/man-pages/man3/getenv.3.html>`__) to read
-  its value
-
-.. image:: environ-inherit.svg
-   :scale: 40%
-
-.. literalinclude:: code/environ.cpp
-   :language: c++
-   :caption: :download:`code/environ.cpp`
-
-.. code-block:: console
-
-   $ ./sysprog-process-environ 
-   FOO is not set
-   
-.. code-block:: console
-
-   $ export FOO=bar
-   $ ./sysprog-process-environ 
-   FOO=bar

@@ -7,9 +7,9 @@ Commandline Arguments
 .. contents::
    :local:
 
-.. sidebar:: See also
+.. topic:: See also
 
-   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/argv/index`
 
 ``main()`` Can Take Parameters
 ------------------------------

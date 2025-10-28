@@ -4,12 +4,12 @@
 Commandline Arguments (``sys.argv``)
 ====================================
 
+.. topic:: See also
+
+   * :doc:`/trainings/material/soup/linux/sysprog/process/argv/index`
+
 Operating Systems and Programs
 ------------------------------
-
-.. sidebar::
-
-   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
 
 * *The Shell* is just one way to start a program
 
@@ -50,7 +50,7 @@ Commandline Arguments in Python
 Cosmetics: Rudimentary Argument Parsing
 ---------------------------------------
 
-.. sidebar:: Further information: ``argparse``
+.. topic:: Further information: ``argparse``
 
    On top of ``sys.argv``, the ``argparse`` module provides further
    functionality to parse commandline parameters.

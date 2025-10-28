@@ -7,12 +7,12 @@
 Duplicating (``dup()`` And Friends)
 ===================================
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
    * :doc:`/trainings/material/soup/linux/sysprog/process/fork-basics/index`
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 dup
      <https://man7.org/linux/man-pages/man2/dup.2.html>`__
@@ -53,12 +53,13 @@ number - ``42`` in this case. (See :ref:`sysprog-filedesc-alloc`)
 .. image:: dup.svg
    :scale: 40%
 
-``dup()``: Program
-------------------
+Demo: ``dup()``
+---------------
 
 * Create second reference using ``dup()``
 * Append bytes to file via original file descriptor
-* Inquire offset via dupped file descriptor
+* Inquire offset via duplicated file descriptor (see
+  :doc:`../lseek/index`)
 
 .. literalinclude:: code/dup.cpp
    :language: c++
@@ -121,7 +122,7 @@ Standardout Redirection With ``dup2()``
 Shell IO Redirection And Pipes
 ------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection`
    * :doc:`/trainings/material/soup/linux/basics/io-redirection-pipes/io-redirection-swap-stdout-stderr`

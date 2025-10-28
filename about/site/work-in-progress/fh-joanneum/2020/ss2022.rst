@@ -172,7 +172,7 @@ Block 3: C++
      * **Memory Errors, And Pointers**
 
        * Based upon
-         :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`,
+         :doc:`/trainings/material/soup/linux/sysprog/process/argv/index`,
          explain
 
 	 * strings

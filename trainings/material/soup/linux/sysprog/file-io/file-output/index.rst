@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-Output To Files (``write()``)
-=============================
+Writing Files
+=============
 
 .. topic:: Documentation
 
@@ -32,8 +32,9 @@ Output To Files (``write()``)
      <https://man7.org/linux/man-pages/man2/open.2.html>`__
 
 * ``flags`` contains ``O_WRONLY`` (or ``O_RDWR`` for that matter)
-* Unless ``flags`` also contains ``O_APPEND`` (see :ref:`sysprog-fileio-file-output-append`, *the file will be
-  overwritten starting a position 0*
+* *The file will be overwritten starting a position 0* - unless
+  ``flags`` also contains ``O_APPEND`` (see
+  :ref:`sysprog-fileio-file-output-append`,
 * File must exist
 * ``mode`` is necessary when ``O_CREAT`` (and possibly ``O_EXCL``) is
   used (but see :doc:`../create/index` for more)

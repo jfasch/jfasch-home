@@ -4,8 +4,8 @@
 .. include:: <mmlalias.txt>
 
 
-File Position/Offset (``lseek64()``)
-====================================
+File Position/Offset
+====================
 
 .. sidebar:: Documentation
 
@@ -34,10 +34,10 @@ File Offset, And ``read()/write()``
 How ``lseek64()`` Works
 -----------------------
 
-* |longrightarrow| how to determine current offset, how to explicitly
-  set offset?
 * ``lseek()`` can only handle 32 bit offsets (historical baggage)
 * |longrightarrow| ``lseek64()``
+* Sets current file offset
+* Returns new position
 * Possible values for ``whence``
 
   .. list-table::

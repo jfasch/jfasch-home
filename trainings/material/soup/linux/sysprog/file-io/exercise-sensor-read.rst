@@ -33,11 +33,10 @@ Requirement
 Program
 .......
 
-.. sidebar::
+.. topic:: See also
 
-   **See also**
-
-   * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/exit/index`
+   * :doc:`/trainings/material/soup/linux/sysprog/process/argv/index`
    * :doc:`/trainings/material/soup/linux/sysprog/syscalls/errorhandling/index`
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/open/index`
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/file-input/index`
@@ -69,9 +68,7 @@ temperature periodically. It takes two arguments,
 CMake Build
 ...........
 
-.. sidebar::
-
-   **See also**
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/toolchain/cmake/local`
    * :doc:`/trainings/material/soup/linux/toolchain/raspberry-pi/toolchain-setup`

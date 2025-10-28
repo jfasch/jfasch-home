@@ -122,7 +122,9 @@ Processes Quick Walk-Through
 
 * From :doc:`/trainings/material/soup/linux/sysprog/index`
 
-  * :doc:`/trainings/material/soup/linux/sysprog/process/exit-args-env/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/process/exit/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/process/argv/index`
+  * :doc:`/trainings/material/soup/linux/sysprog/process/environ/index`
   * :doc:`/trainings/material/soup/linux/sysprog/process/tree/index`
 
 Permissions

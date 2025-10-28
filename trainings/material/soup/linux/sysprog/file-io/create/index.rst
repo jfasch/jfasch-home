@@ -44,7 +44,10 @@ Creating A File If It Does Not Exist (``O_CREAT``)
   ``O_APPEND``)
 * |longrightarrow| File mode as before (file existed)
 * Remove file, and call again
-* |longrightarrow| Created with ``mode`` specified
+* |longrightarrow| Created with ``mode`` specified, but ``umask``
+  subtracted (see :doc:`here
+  </trainings/material/soup/linux/basics/permissions/umask>` for an
+  explanation of ``umask``)
 
 .. literalinclude:: code/create-simple.cpp
    :caption: :download:`code/create-simple.cpp`

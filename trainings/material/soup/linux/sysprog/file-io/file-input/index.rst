@@ -3,8 +3,8 @@
 .. include:: <mmlalias.txt>
 
 
-Input From Files (``read()``)
-=============================
+Reading Files
+=============
 
 .. topic:: Documentation
 
@@ -39,14 +39,14 @@ Input From Files (``read()``)
 * Simplest case
 * Only ``flags`` needed: ``O_RDONLY`` (or ``O_RDWR`` if writing is
   also intended)
-* Third parameter (``mode``) ignored
+* Third parameter (``mode``) ignored (see :doc:`../create/index`)
 
 .. literalinclude:: code/open-readonly.cpp
    :caption: :download:`code/open-readonly.cpp`
    :language: c++
 
-Read Block Of Bytes
--------------------
+Demo: Read One Block Of Bytes
+-----------------------------
 
 .. topic:: Documentation
 
@@ -78,8 +78,8 @@ Read Block Of Bytes
 
 .. _sysprog-fileio-eof:
 
-Read Until *End-Of-File*
-------------------------
+Demo: Read Until *End-Of-File*
+------------------------------
 
 * *End-of-file*: there won't be any input anymore (file is exhausted)
 * Reached when ``read()`` returns *0 bytes*

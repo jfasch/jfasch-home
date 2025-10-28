@@ -54,11 +54,13 @@ Swiss army knife: multiple actions, governed by bitwise-or'ed flags:
 
 **Intended Access**
 
-* ``O_RDONLY``: Can only ``read()``; error on ``write()``
-* ``O_WRONLY``: Can only ``write()``; error on ``read()``
-* ``O_RDWR``: ...
+* ``O_RDONLY``: can only ``read()``; error on ``write()`` (see
+  :doc:`../file-input/index`)
+* ``O_WRONLY``: can only ``write()``; error on ``read()`` (see
+  :doc:`../file-output/index`)
+* ``O_RDWR``: both
 
-**Creating a File**
+**Creating a File** (see :doc:`../create/index`)
 
 * ``O_CREAT``: create if not exists, else simply open
 
@@ -75,7 +77,7 @@ Swiss army knife: multiple actions, governed by bitwise-or'ed flags:
 
 * ``O_APPEND``: write access appends at the end
 * ``O_TRUNC``: truncate file to zero length if already exists
-* ``O_CLOEXEC``: ``exec()`` closes the file descriptor
+* ``O_CLOEXEC``: closes the file descriptor on ``exec()``
   (|longrightarrow| later)
 
 More About Each Of ``flags`` And ``mode``

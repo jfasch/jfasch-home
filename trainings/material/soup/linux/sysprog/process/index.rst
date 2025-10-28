@@ -7,7 +7,9 @@ Processes
 .. toctree::
    :maxdepth: 1
 
-   exit-args-env/index
+   exit/index
+   argv/index
+   environ/index
    tree/index
    fork-basics/index
    unnamed-pipe-ipc/index

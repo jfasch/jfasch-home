@@ -7,12 +7,12 @@ The Rule Of Three/Five/Zero
 .. contents::
    :local:
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `The rule of three/five/zero
      <https://en.cppreference.com/w/cpp/language/rule_of_three.html>`__
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/cxx/cxx11/move/index`
 
@@ -48,7 +48,7 @@ Rule Of Zero
 Example: Rule Of Zero, Simplest
 -------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/cxx/cxx11/move/index`
    * :doc:`/trainings/material/soup/cxx/cxx03/900-standard-library-miscellanea/string/topic`
@@ -70,7 +70,7 @@ Example: Rule Of Zero, Simplest
 Example: Rule Of Zero, Move-Only
 --------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/cxx/cxx11/smart-pointers/unique-ptr/topic`
 
@@ -84,7 +84,7 @@ Example: Rule Of Zero, Move-Only
 Example: Rule Of Three - Explicit Resource Management, *Done Wrong*
 -------------------------------------------------------------------
 
-.. sidebar:: Trainer's note
+.. topic:: Trainer's note
 
    *Important:* ``-O0`` *crashes as expected*
 
@@ -122,7 +122,7 @@ Example: Rule Of Three - Explicit Resource Management, *Done Wrong*
 Example: Rule Of Three - Explicit Resource Management, *Done Almost Right*
 --------------------------------------------------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/cxx/cxx11/delegating-ctor/topic`
 
@@ -167,7 +167,7 @@ Example: Rule Of Five - Explicit Resource Management, And Moving?
 Example: Rule Of Five - Explicit Resource Management, And Moving!
 -----------------------------------------------------------------
 
-.. sidebar:: Trainer's note
+.. topic:: Trainer's note
 
    ``-Wall`` implies ``-Wself-move``. Disable that CMake-wise, like
 
@@ -184,7 +184,7 @@ Example: Rule Of Five - Explicit Resource Management, And Moving!
 Example: Move-Only Datatypes
 ----------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 timerfd_create
      <https://man7.org/linux/man-pages/man2/timerfd_create.2.html>`__
