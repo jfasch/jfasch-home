@@ -4,14 +4,14 @@
 .. include:: <mmlalias.txt>
 
 
-Basic Process Creation
-======================
+Process Creation (``fork()``)
+=============================
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 fork
      <https://man7.org/linux/man-pages/man2/fork.2.html>`__
@@ -23,42 +23,64 @@ Process States
    :scale: 40%
    :align: center
 
-* Many of the states reflect the process's runtime behavior: does it
-  wait for something, or has it expired its timeslice, ...
-* Much more complex than can be shown on a sketch
-* |longrightarrow| Uninterruptible vs. interruptible sleep
-* |longrightarrow| Various ways to terminate a process
-* ...
+* Focus on
+
+  * *Creation*
+  * *Termination*: zombies, and orphanage
+
+* Other states are controlled by the *scheduler*
+
+  * Preemption
+  * Blocking
+  * CPU assignment
+  * ...
+
+  |longrightarrow| much more complex than can be shown on a simple
+  diagram
 
 Creative Weirdness: ``fork()``
 ------------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 fork
      <https://man7.org/linux/man-pages/man2/fork.2.html>`__
 
-* Creates a child process
-* Exact copy of the calling process
-* On return - **returns twice** - both parent and child continue where
-  they left off, **independently**
+.. code-block:: c
 
-  * *Parent's return value*: PID of the newly created child process
-  * *Child's return value*: 0 - can use ``getpid()`` if needed
-    (:doc:`here <../tree/index>`)
+   #include <unistd.h>
+   pid_t fork(void);
+
+* The most innocent-looking function
+* Creates a child process: *exact copy of the calling process*
+* **Returns twice**
+
+  * Once in parent
+  * Once in child
+
+* Both continue where they left off, **independently**
+* *Parent's return value*: PID of the newly created child process
+* *Child's return value*: 0 - can use ``getpid()`` if needed
+  (:doc:`here <../tree/index>`)
 
 .. image:: fork-basic.svg
    :scale: 40%
 
-(Live demo start ...)
+Demo: ``fork()``
+----------------
 
 .. literalinclude:: code/basic.cpp
    :language: c++
    :caption: :download:`code/basic.cpp`
 
-``return`` From ``main()``, And ``exit()``
-------------------------------------------
+Sideway: ``return`` From ``main()`` Vs. ``exit()``
+--------------------------------------------------
 
+.. topic:: See also
+
+   * :doc:`../exit/index`
+
+* Following example code will always return from ``main()``
 * ``main()`` is special (entry point from C startup/runtime)
 * Return statement in ``main()`` is special
 
@@ -69,16 +91,16 @@ Creative Weirdness: ``fork()``
 * Return from ``main()`` has the same effect as calling ``exit()``
   instead
 
-.. literalinclude:: code/basic-exit.cpp
-   :language: c++
-   :caption: :download:`code/basic-exit.cpp`
-
 Bugs Ahead: Code Flow Leakage
 -----------------------------
 
 * Attention ``fork()`` returns twice
 * |longrightarrow| two code flow paths
 * *Usually it is a good idea to keep them separate!*
+
+.. topic:: Trainer's note
+
+   Quiz: show what a *fork bomb* is
 
 .. literalinclude:: code/leak-code-flow.cpp
    :language: c++
@@ -89,7 +111,7 @@ Bugs Ahead: Code Flow Leakage
 File Descriptors Are Inherited
 ------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/dup/index`
 
@@ -97,10 +119,19 @@ File Descriptors Are Inherited
 * Creates child process
 * |longrightarrow| file descriptor is inherited
 * Semantics just like ``dup()`` (see :doc:`here
-  </trainings/material/soup/linux/sysprog/file-io/dup/index>`
+  </trainings/material/soup/linux/sysprog/file-io/dup/index>`)
 
 .. image:: fd-inher.svg
    :scale: 40%
+
+Demo: File Descriptor Inheritance
+---------------------------------
+
+* ``/tmp/somefile`` contains ``ab``
+* Opened for reading by parent
+* Creates child
+* In each of the parent/child branches, one byte is read
+* |longrightarrow| file offset apparently shared
 
 .. literalinclude:: code/fd-inher.cpp
    :language: c++
@@ -108,7 +139,7 @@ File Descriptors Are Inherited
 
 .. code-block:: console
 
-   $ echo abc > /tmp/somefile 
+   $ echo ab > /tmp/somefile 
    $ ./sysprog-fork-fd-inher 
    parent pid = 267811, child pid = 267812
    parent has read one byte: a/0x61
@@ -117,7 +148,7 @@ File Descriptors Are Inherited
 Care For Your Children - *Waiting*
 ----------------------------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man -s 2 wait
      <https://man7.org/linux/man-pages/man2/wait.2.html>`__
@@ -167,7 +198,8 @@ More Exit Information
 
 More state changes than simple exit:
 
-* Signaled, e.g.
+* Signaled (see
+  :doc:`/trainings/material/soup/linux/sysprog/signals/index`), e.g.
 
   * ``SIGINT``: Ctrl-C from terminal
   * ``SIGTERM``: similar, but explicitly sent by another process
@@ -193,12 +225,15 @@ More state changes than simple exit:
 Zombies: Consequences Of Not Caring For Children
 ------------------------------------------------
 
-* Terminated process are still there - shown in ``ps`` as ``<defunct>``
-* |longrightarrow| Carry information for parents
-* "Zombie"
-* "Reaped" by their parents when they call ``wait()``
+* Terminated process are still there ...
+* ... until their parents ``wait()`` for them
+* |longrightarrow| Carry information for parents on how child has
+  terminated
+* Usually a very short time span - unless parents are sloppy
+* *Zombie* state: shown in ``ps`` as ``<defunct>``
+* "Parents use ``wait()`` to *reap** zombies"
 
-.. sidebar:: Trainer's note
+.. topic:: Trainer's note
 
    * See how child pid still there ``ps -fl <CHILDPID>``
    * |longrightarrow| ``<defunct>``
@@ -212,7 +247,7 @@ Zombies: Consequences Of Not Caring For Children
 Orphanage (Parent's Death)
 --------------------------
 
-.. sidebar:: Trainer's note
+.. topic:: Trainer's note
 
    * The program will terminate immediately
    * Child keeps running, deteched from terminal

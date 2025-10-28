@@ -3,26 +3,25 @@
 .. include:: <mmlalias.txt>
 
 
-The Process Tree (And Environment, And ``procfs``)
-==================================================
+The Process Tree
+================
 
 Process ID (PID) And Parent Process ID (PPID)
 ---------------------------------------------
 
-.. sidebar::
-
-   **See also**
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/basics/intro/process-tree`
 
 * Every process has an ID (PID ... Process ID)
-* Every process but the first (PID 1) has a parent process)
+* Every process but the first (PID 1) has a parent process
 * |longrightarrow| process tree
 
 A typical distro's process tree (simplified)
 
-* ``init`` - nowadays mostly ``systemd``
-* Services
+* ``init`` (PID 1): created by kernel |longrightarrow| no parent
+* Nowadays mostly ``systemd``
+* "Service manager"
 * User login sessions (console, graphical, network ...)
 
 .. figure:: typical-process-tree.svg
@@ -39,9 +38,7 @@ Technically ...
 * A process *cannot ask* the kernel about its children
   |longrightarrow| has to take care itself
 
-.. sidebar::
-
-   **Documentation**
+.. topic:: Documentation
 
    * `man -s 2 getpid
      <https://man7.org/linux/man-pages/man2/getpid.2.html>`__
@@ -58,6 +55,7 @@ Technically ...
 .. code-block:: console
 
    $ echo $$                                           # <-- PID of the shell itself
+   33634
    $ ./code/sysprog-process-tree 
    PID: 115971
    PPID: 33634

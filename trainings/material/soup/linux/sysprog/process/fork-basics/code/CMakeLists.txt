@@ -1,5 +1,4 @@
 add_executable(sysprog-fork-basic basic.cpp)
-add_executable(sysprog-fork-basic-exit basic-exit.cpp)
 add_executable(sysprog-fork-leak-code-flow leak-code-flow.cpp)
 add_executable(sysprog-fork-fd-inher fd-inher.cpp)
 add_executable(sysprog-fork-wait wait.cpp)
