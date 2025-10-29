@@ -233,6 +233,9 @@ Zombies: Consequences Of Not Caring For Children
 * *Zombie* state: shown in ``ps`` as ``<defunct>``
 * "Parents use ``wait()`` to *reap** zombies"
 
+Demo: Zombification
+-------------------
+
 .. topic:: Trainer's note
 
    * See how child pid still there ``ps -fl <CHILDPID>``
@@ -247,12 +250,6 @@ Zombies: Consequences Of Not Caring For Children
 Orphanage (Parent's Death)
 --------------------------
 
-.. topic:: Trainer's note
-
-   * The program will terminate immediately
-   * Child keeps running, deteched from terminal
-   * ``ps -fl <CHILDPID>`` |longrightarrow| A-ha, new parent
-
 * Final question: what if a process's parent terminates? 
 * Nobody can then reap the zombie!
 * |longrightarrow| Parentless child is *reparented* to PID 1
@@ -261,6 +258,15 @@ Orphanage (Parent's Death)
   PR_SET_CHILD_SUBREAPER
   <https://man7.org/linux/man-pages/man2/PR_SET_CHILD_SUBREAPER.2const.html>`__)
 * Normally the login session leader (``systemd --user``)
+
+Demo: Orphanage/Reparenting
+---------------------------
+
+.. topic:: Trainer's note
+
+   * The program will terminate immediately
+   * Child keeps running, deteched from terminal
+   * ``ps -fl <CHILDPID>`` |longrightarrow| A-ha, new parent
 
 .. literalinclude:: code/reparenting.cpp
    :language: c++
