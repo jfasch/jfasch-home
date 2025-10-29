@@ -29,6 +29,7 @@ Linux - is a solid basis for serious Linux systems programming.
    file-io/index
    process/index
    signals/index
+   timers/index
    eventloop/index
 
 In The Queue: IPC, Multithreading, And More
