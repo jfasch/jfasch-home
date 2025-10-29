@@ -6,13 +6,18 @@ Time, Clocks, Timers And Notification
 .. toctree::
    :maxdepth: 1
 
+   clocks/index
    historical/index
+   posix/index
 
 .. nanosleep, clock_nanosleep
 
 .. gettimeofday
 .. clock_gettime
 
+
+Basics
+------
 
 * POSIX timers: ``timer_create()`` (and ``timer_delete()``, unshown in
   examples)
@@ -30,59 +35,69 @@ Time, Clocks, Timers And Notification
        event.sigev_notify = SIGEV_SIGNAL;    // <-- alternatives?
        event.sigev_signo = SIGRTMIN;
 
-  * one shot (:download:`code/posix-oneshot.cpp`)
+* one shot (:download:`code/posix-oneshot.cpp`)
 
-    * ``it_interval`` is 0 -> oneshot
-    * expiry at ``it_value``
-    * nothing new regarding signals
+  * ``it_interval`` is 0 -> oneshot
+  * expiry at ``it_value``
+  * nothing new regarding signals
 
-  * periodic (:download:`code/posix-periodic.cpp`)
+* periodic (:download:`code/posix-periodic.cpp`)
 
-    * note ``it_interval`` not 0
-    * wrap in infinite loop
+  * note ``it_interval`` not 0
+  * wrap in infinite loop
 
-  * multiplexing multiple timers on one signal via siginfo_t
+* thread notification
 
-    * jjj link from signals/async
-    * only 32 rt signals
-    * might want to use more timers
-    * continue from posix-periodic.cpp
-    * add 2nd timer (and arm it differently)
-    * remove "interrupted" in main loop
-    * -> handler cannot say which
+Details
+-------
 
-    * -> :download:`code/posix-2timers.cpp`
+* thread notification: is a new thread created? `man -s 3 sigevent
+  <https://man7.org/linux/man-pages/man3/sigevent.3type.html>`__ says
+  that it could, but otherwise nothing usable.
 
-    solution
+* multiplexing multiple timers on one signal via siginfo_t
 
-    * step 1: sigaction -> SA_SIGINFO, sa_sigaction (more info in
-      handler)
+  * jjj link from signals/async
+  * only 32 rt signals
+  * might want to use more timers
+  * continue from posix-periodic.cpp
+  * add 2nd timer (and arm it differently)
+  * remove "interrupted" in main loop
+  * -> handler cannot say which
 
-      * handler signature: void(int sig, siginfo_t* info, void*)
-      * in handler, use ``info->si_value``
-      * make timer1, timer2 visible in signal handler (-> global)
+  * -> :download:`code/posix-2timers.cpp`
 
-    * event notification setup
+  solution
 
-      * event.sival_ptr = &timer{1,2} (-> handler's info->si_ptr)
+  * step 1: sigaction -> SA_SIGINFO, sa_sigaction (more info in
+    handler)
 
-  * max # timers: :download:`code/posix-maxtimers.cpp` -> 62207
+    * handler signature: void(int sig, siginfo_t* info, void*)
+    * in handler, use ``info->si_value``
+    * make timer1, timer2 visible in signal handler (-> global)
 
-    .. code-block:: console
+  * event notification setup
 
-       $ ulimit -a
-       ...
-       pending signals                     (-i) 62209
-       ...
+    * event.sival_ptr = &timer{1,2} (-> handler's info->si_ptr)
 
-    From `man -s 2 timer_create
-    <https://man7.org/linux/man-pages/man2/timer_create.2.html>`__
+* max # timers: :download:`code/posix-maxtimers.cpp` -> 62207
 
-    .. code-block:: text
-       :caption: ``NOTES`` section
+  .. code-block:: console
 
-       The kernel preallocates a "queued real-time signal" for each
-       timer created using timer_create().  Consequently, the number
-       of timers is limited by the RLIMIT_SIGPENDING resource limit
-       (see setrlimit(2)).
+     $ ulimit -a
+     ...
+     pending signals                     (-i) 62209
+     ...
 
+  From `man -s 2 timer_create
+  <https://man7.org/linux/man-pages/man2/timer_create.2.html>`__
+
+  .. code-block:: text
+     :caption: ``NOTES`` section
+
+     The kernel preallocates a "queued real-time signal" for each
+     timer created using timer_create().  Consequently, the number
+     of timers is limited by the RLIMIT_SIGPENDING resource limit
+     (see setrlimit(2)).
+
+* overrun
