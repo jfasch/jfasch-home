@@ -10,65 +10,43 @@ Lazy Allocation, Demand Paging, And Overcommit
 Lazy Allocation, And Overcommit
 -------------------------------
 
-.. list-table::
-   :align: left
-   :widths: 40, 60
+* Mappings are *unpopulated*, initially
+* Not backed by physical memory
+* |longrightarrow| MMU knows nothing
+* |longrightarrow| Error condition
+* Memory will be allocated at first access
+* |longrightarrow| *overcommit*: if all processes allocated memory for
+  all of their mappings, the system would run out of memory
+* (generally, they don't)
 
-   * * * Mappings are *unpopulated*, initially
-       * Not backed by physical memory
-       * |longrightarrow| MMU knows nothing
-       * |longrightarrow| Error condition
-       * Memory will be allocated at first access
-       * |longrightarrow| *overcommit*: if all processes allocated
-         memory for all of their mappings, the system would run out of
-         memory
-       * (generally, they don't)
-     * :download:`drawings/libreoffice/lazy-alloc-unpopulated.odg`
-
-..      * .. libreoffice:: drawings/libreoffice/lazy-alloc-unpopulated.odg
-..           :align: center
-..           :autocrop:
-
-jjj libreoffice extension dead
+libreoffice extension dead:
+:download:`drawings/libreoffice/lazy-alloc-unpopulated.odg`
 
 Memory Access, And Allocation
 -----------------------------
 
-.. list-table::
-   :align: left
-   :widths: 40, 60
+* On first access, MMU knows nothing (no TLB entry)
+* |longrightarrow| "TLB miss"
+* Page table has nothing too
+* |longrightarrow| Process is *suspended*
+* Memory allocation starts
+* Might require disk IO |longrightarrow| could take a while
+* |longrightarrow| No-go if one has :doc:`realtime requirements
+  <realtime>`
 
-   * * * On first access, MMU knows nothing (no TLB entry)
-       * |longrightarrow| "TLB miss"
-       * Page table has nothing too
-       * |longrightarrow| Process is *suspended*
-       * Memory allocation starts
-       * Might require disk IO |longrightarrow| could take a while
-       * |longrightarrow| No-go if one has :doc:`realtime requirements
-         <realtime>`
-
-     * :download:`drawings/libreoffice/lazy-alloc-mmu-trap.odg`
-
-jjj libreoffice extension dead
-
-..      * .. libreoffice:: drawings/libreoffice/lazy-alloc-mmu-trap.odg
-..           :align: center
-..           :autocrop:
+libreoffice extension dead:
+:download:`drawings/libreoffice/lazy-alloc-mmu-trap.odg`
 
 Finish: Setup Mapping, Kick Process Loose
 -----------------------------------------
 
-.. list-table::
-   :align: left
-   :widths: 40, 60
+* Finally, when allocation has taken place, page tables and TLB are
+  updated
+* |longrightarrow| Process is runnable again
+* |longrightarrow| Subject to scheduling
 
-   * * * Finally, when allocation has taken place, page tables and TLB
-         are updated
-       * |longrightarrow| Process is runnable again
-       * |longrightarrow| Subject to scheduling
-     * :download:`drawings/libreoffice/lazy-alloc-allocated.odg`
-
-jjj libreoffice extension dead
+libreoffice extension dead:
+:download:`drawings/libreoffice/lazy-alloc-allocated.odg`
 
 ..      * .. libreoffice:: drawings/libreoffice/lazy-alloc-allocated.odg
 ..           :align: center
@@ -77,7 +55,7 @@ jjj libreoffice extension dead
 Further Notes: TLB Misses, Memory Performance
 ---------------------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/c/100-performance/030-memory/topic`
 

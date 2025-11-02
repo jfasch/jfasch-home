@@ -9,7 +9,6 @@ add_subdirectory(blocking-io)
 
 add_subdirectory(scheduling/code)
 
-add_subdirectory(sysprog_events/code)
 add_subdirectory(sysprog_ipc/code)
 
 add_subdirectory(file-locking)

@@ -5,6 +5,17 @@ Myself: Contact, Impressum, ...
    :align: right
    :scale: 60%
 
+.. toctree::
+   :maxdepth: 1
+       
+   tech-bg
+   cv-de
+
+.. toctree::
+   :hidden:
+
+   projects-de
+
 Contact
 -------
 
@@ -17,14 +28,4 @@ Contact
 * UID/VAT: ATU63522469
 
 Write a review: https://g.page/r/CTb02zUg3CRHEB0/review
-
-Further Information
--------------------
-
-.. toctree::
-   :maxdepth: 1
-       
-   tech-bg
-   cv-de
-   projects-de
 

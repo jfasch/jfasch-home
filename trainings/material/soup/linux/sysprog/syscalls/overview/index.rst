@@ -50,6 +50,8 @@ Syscall Wrappers (C-Library)
    :language: c++
    :caption: :download:`code/syscall-example.cpp`
 
+.. _sysprog-syscalls-errno:
+
 Return Value, And Errors
 ------------------------
 
@@ -80,6 +82,8 @@ Return Value, And Errors
    ...
    #define	EACCES		13	/* Permission denied */
    ...
+
+.. _sysprog-syscalls-strace:
 
 ``strace``: System Call Tracer
 ------------------------------

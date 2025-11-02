@@ -3,82 +3,40 @@
 Time, Clocks, Timers And Notification
 =====================================
 
+Time is a complex topic, even with computers omitted from the
+picture. This section, naturally, discusses how time - and timers
+(notifications of time-related events) - are handled in Linux.
+
+Starting with a discussion of *clock* variants, and various ways to
+*synchronously* defer execution, we try to cover the vast amount of
+*notification* possibilities. (I'll try to not be too judgy on the
+way, but you might know my preferences anyway regarding
+:doc:`asynchronous signal delivery <../signals/async/index>`.)
+
+.. topic:: Under development
+
+   This section is still under development. The sheer amount of rabbit
+   holes (e.g. POSIX timer overrun semantics, or the implications of
+   selecting POSIX *threaded* delivery) makes it challenging to
+   provide conclusive material *that is still interesting*.
+
 .. toctree::
    :maxdepth: 1
 
    clocks/index
    historical/index
-   posix/index
-
-.. nanosleep, clock_nanosleep
-
-.. gettimeofday
-.. clock_gettime
-
-
-Basics
-------
-
-* POSIX timers: ``timer_create()`` (and ``timer_delete()``, unshown in
-  examples)
-
-  * delivery/expiry: (async) signal, thread (-> later)
-  * choose signal to use (*never* queued, not even rt signals)
-  * setup handler for it (see :doc:`../signals/async/index`)
-  * ``timer_create()`` to send that signal on expiry
-
-    * `man -s 3 sigevent
-      <https://man7.org/linux/man-pages/man3/sigevent.3type.html>`__
-
-    .. code-block:: c
-
-       event.sigev_notify = SIGEV_SIGNAL;    // <-- alternatives?
-       event.sigev_signo = SIGRTMIN;
-
-* one shot (:download:`code/posix-oneshot.cpp`)
-
-  * ``it_interval`` is 0 -> oneshot
-  * expiry at ``it_value``
-  * nothing new regarding signals
-
-* periodic (:download:`code/posix-periodic.cpp`)
-
-  * note ``it_interval`` not 0
-  * wrap in infinite loop
-
-* thread notification
+   posix-intro/index
+   posix-async/index
+   posix-threaded/index
+   timerfd/index
 
 Details
 -------
 
-* thread notification: is a new thread created? `man -s 3 sigevent
-  <https://man7.org/linux/man-pages/man3/sigevent.3type.html>`__ says
-  that it could, but otherwise nothing usable.
+.. _sysprog-posix-timer-limit:
 
-* multiplexing multiple timers on one signal via siginfo_t
-
-  * jjj link from signals/async
-  * only 32 rt signals
-  * might want to use more timers
-  * continue from posix-periodic.cpp
-  * add 2nd timer (and arm it differently)
-  * remove "interrupted" in main loop
-  * -> handler cannot say which
-
-  * -> :download:`code/posix-2timers.cpp`
-
-  solution
-
-  * step 1: sigaction -> SA_SIGINFO, sa_sigaction (more info in
-    handler)
-
-    * handler signature: void(int sig, siginfo_t* info, void*)
-    * in handler, use ``info->si_value``
-    * make timer1, timer2 visible in signal handler (-> global)
-
-  * event notification setup
-
-    * event.sival_ptr = &timer{1,2} (-> handler's info->si_ptr)
+Limits, Anywhere?
+.................
 
 * max # timers: :download:`code/posix-maxtimers.cpp` -> 62207
 
@@ -96,8 +54,12 @@ Details
      :caption: ``NOTES`` section
 
      The kernel preallocates a "queued real-time signal" for each
-     timer created using timer_create().  Consequently, the number
-     of timers is limited by the RLIMIT_SIGPENDING resource limit
-     (see setrlimit(2)).
+     timer created using timer_create().  Consequently, the number of
+     timers is limited by the RLIMIT_SIGPENDING resource limit (see
+     setrlimit(2)).
 
-* overrun
+Timer Overrun
+.............
+
+Continue from :download:`code/posix-overrun.cpp`
+

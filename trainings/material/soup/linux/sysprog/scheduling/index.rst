@@ -1,15 +1,17 @@
-Scheduling
-==========
+Scheduling And Realtime
+=======================
 
-.. contents::
-   :local:
+.. topic:: TODO
 
-Topics
-------
+   * The material in this section is largely unstructured
+
+     * Focus on scheduling and its guarantees (-> none)
+     * Focus on realtime scheduling (-> guarantees)
+
+   * ``mlock()`` and ``mlockall()`` is not mentioned!
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
    basics
    processes-and-threads

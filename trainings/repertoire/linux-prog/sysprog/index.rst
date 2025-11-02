@@ -34,9 +34,6 @@ Linux Systems Programming (Course Series)
 	 .. dropdown:: Slide Material
 
 	    * :doc:`/trainings/material/soup/linux/sysprog/index`
-	    * :download:`Linux Systems Programming (PDF, unmaintained
-	      but still there)
-              </trainings/material/pdf/020-linux-sysprog--en.pdf>`
 
 
 Courses

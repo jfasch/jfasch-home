@@ -1,5 +1,5 @@
-POSIX Interval Timers
-=====================
+POSIX Timers: Introduction
+==========================
 
 .. topic:: See also
 

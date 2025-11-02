@@ -1,3 +1,8 @@
-Clocks (jjj)
-============
+Clocks, And Points In Time
+==========================
 
+* ``CLOCK_REALTIME``, ``CLOCK_MONOTONIC``, ...
+* Resolution, ``clock_gettime()``, ...
+* ``struct tm``, and ``strftime()``, ``gettimeofday()``, ...
+* ``{clock_,}nanosleep()``
+* Why ``TIMER_ABSTIME``?

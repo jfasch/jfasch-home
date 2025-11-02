@@ -24,8 +24,7 @@ Linux Systems Programming: Multithreading
 
 	 .. dropdown:: Slide Material
 
-	    * PDF Slides, :download:`sysprog
-              </trainings/material/pdf/020-linux-sysprog--en.pdf>`
+	    * :doc:`/trainings/material/soup/linux/sysprog/posix-threads/index`
 
 Parallel programming is hard - this is no different on Linux. This
 course gives a solid overview of multithreading on Linux (POSIX

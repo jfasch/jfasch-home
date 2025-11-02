@@ -30,8 +30,6 @@ Building the situation from :doc:`lazy-alloc` ...
 * Memory *is* shared though - as long as both parties only *read*
   it. As soon as one party *writes* to it, a copy is made
   |longrightarrow| Copy On Write (COW).
-* See :doc:`fork` for how to share anonymous memory with a child
-  process.
 
 .. literalinclude:: code/mmap-anon.cpp
    :caption: :download:`mmap-anon.cpp <code/mmap-anon.cpp>`
