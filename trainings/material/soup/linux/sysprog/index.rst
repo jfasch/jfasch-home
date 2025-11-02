@@ -9,15 +9,18 @@ The material below covers "what an :doc:`old UNIX greybeard
 seen as classical slide material, but rather as support material for
 didactical live programming [#slides-boring]_.
 
-Training courses are always composed individually from what's there
-(maybe combined with select topics from
-:doc:`/trainings/material/soup/linux/basics/index`), see :doc:`here
-for how to book </trainings/info>`.
+It is not meant to be complete, and it never will be. I leave that
+task to other authorities - `Michael Kerrisks site
+<https://man7.org/>`__ is heavily cited from here; he offers courses
+at that level.
 
-..   * link material
-..
-..     * signals, and blocking IO, and the shell:
-..       https://www.linusakesson.net/programming/tty/
+Note that this is not an agenda for a single course. This material is
+a set of building blocks, used to compose a course that is adapted to
+the audience.
+
+.. topic:: See also
+
+   * :doc:`/trainings/material/soup/linux/basics/index`
 
 Fundamentals
 ------------
