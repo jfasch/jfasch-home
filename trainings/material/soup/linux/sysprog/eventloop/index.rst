@@ -8,7 +8,7 @@ upon a "database". The application receives input and commands from
 multiple data sources - *and it is single threaded*.
 
 .. image:: idea.svg
-   :scale: 30%
+   :scale: 20%
    :align: right
 
 Based upon our knowledge of :doc:`file descriptors <../file-io/index>`
