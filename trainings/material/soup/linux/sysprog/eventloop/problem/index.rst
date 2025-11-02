@@ -69,7 +69,7 @@ A "Real Life" Example
 .. image:: db-simple.svg
    :scale: 40%
 
-A "Real Life" Example: Code
+Demo: A "Real Life" Example
 ---------------------------
 
 .. literalinclude:: /trainings/material/soup/linux/sysprog/eventloop/code/database.h
@@ -116,13 +116,21 @@ The Problem
 
 .. topic:: Trainer's note
 
-   Temporarily replace ``STDIN_FILENO`` with ``sock``, just to
-   demonstrate that it's an either/or decision. *Cannot block on two
-   file descriptors at once.*
+   * Temporarily replace ``STDIN_FILENO`` with ``sock``, just to
+     demonstrate that it's an either/or decision. *Cannot block on two
+     file descriptors at once.*
+   * Test 
+
+     .. code-block:: console
+
+	$ nc -4u localhost 1234
+	666 Joerg Faschingbauer
 
 .. literalinclude:: code/db-udp-incomplete.cpp
    :language: c++
    :caption: :download:`code/db-udp-incomplete.cpp`
+
+
 
 Spoiler: The Solution
 ---------------------

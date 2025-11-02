@@ -149,7 +149,7 @@ Building Blocks For Sketches
                            <https://en.wikipedia.org/wiki/Advanced_Programming_in_the_Unix_Environment>`__
                            and `UNIX Network Programming
                            <https://en.wikipedia.org/wiki/UNIX_Network_Programming>`__.
-.. [#slides-boring] I a course, I use to quickly explain what the
+.. [#slides-boring] In a course, I use to quickly explain what the
                     topic of the next hour (or so) is. Then I'll start
                     to program, and while I program I explain what I
                     do, and discuss matters. I consider this much more
