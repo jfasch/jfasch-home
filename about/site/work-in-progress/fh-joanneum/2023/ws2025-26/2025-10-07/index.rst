@@ -118,7 +118,6 @@ More Linux (Systems Programming)
    * :doc:`/trainings/material/soup/linux/sysprog/file-io/index`
    * :doc:`/trainings/material/soup/linux/sysprog/process/index`
    * :doc:`/trainings/material/soup/linux/sysprog/signals/index`
-   * :doc:`/trainings/material/soup/linux/sysprog/eventloop/index`
 
 Process Creation/Lifetime
 `````````````````````````

@@ -41,8 +41,31 @@ absolute basis for any kind of serious system level programming.
       process/index
       signals/index
       timers/index
-      eventloop/index
 
+Event Driven Programming
+------------------------
+
+In this section we will develop a semi-realistic application that sits
+upon a "database". The application receives input and commands from
+multiple data sources - *and it is single threaded*.
+
+.. image:: eventloop-idea.svg
+   :scale: 20%
+   :align: right
+
+Based upon our knowledge of :doc:`file descriptors <file-io/index>`
+("everything is a file"), we learn how to use advanced *I/O
+multiplexing* system calls to dispatch *events* from multiple sources
+inside an application that is highly reactive.
+
+.. toctree::
+   :maxdepth: 1
+
+   eventloop/problem/index
+   eventloop/poll/index
+   eventloop/poll-cpp/index
+   eventloop/exercise-graceful-termination/index
+   eventloop/exercise-commit-rollback/index
 
 Multithreading
 --------------

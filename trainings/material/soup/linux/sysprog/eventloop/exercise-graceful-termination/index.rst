@@ -15,7 +15,7 @@ Our :doc:`database application
 still does not commit the database when terminated like processes are
 usually terminated,
 
-.. image:: ../idea.svg
+.. image:: ../../eventloop-idea.svg
    :scale: 20%
    :align: right
 

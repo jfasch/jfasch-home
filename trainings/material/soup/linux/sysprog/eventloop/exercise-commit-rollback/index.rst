@@ -15,7 +15,7 @@ we added graceful termination to our :doc:`database application
 </trainings/material/soup/linux/sysprog/eventloop/poll-cpp/index>`. The
 application then has a chance to commit the changes before exiting.
 
-.. image:: ../idea.svg
+.. image:: ../../eventloop-idea.svg
    :scale: 20%
    :align: right
 
