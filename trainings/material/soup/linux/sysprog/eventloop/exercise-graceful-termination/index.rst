@@ -15,6 +15,10 @@ Our :doc:`database application
 still does not commit the database when terminated like processes are
 usually terminated,
 
+.. image:: ../idea.svg
+   :scale: 20%
+   :align: right
+
 * ``Ctrl-C`` from the terminal, when run in foreground (``SIGINT`` is
   delivered)
 * ``kill <PID>`` from another process; the shell, usually (``SIGTERM``

@@ -15,8 +15,13 @@ we added graceful termination to our :doc:`database application
 </trainings/material/soup/linux/sysprog/eventloop/poll-cpp/index>`. The
 application then has a chance to commit the changes before exiting.
 
+.. image:: ../idea.svg
+   :scale: 20%
+   :align: right
+
 Lets add more commit/rollback logic to the application so that it
 reacts on two more signals, ``SIGUSR1`` and ``SIGUSR2``.
 
 * ``SIGUSR1`` commits the database
 * ``SIGUSR2`` rolls back the database
+
