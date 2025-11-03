@@ -4,15 +4,10 @@
 Process Hierarchy (Parent, Child Process)
 ==========================================
 
-.. contents::
-   :local:
-
 More Process Rules
 ------------------
 
-.. sidebar::
-
-   **See also**
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/sysprog/process/tree/index`
 

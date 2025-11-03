@@ -4,14 +4,9 @@
 Environment Variables
 =====================
 
-.. sidebar::
-
-   **Documentation**
+.. topic:: Documentation
 
    * `man -s 7 environ <https://man7.org/linux/man-pages/man7/environ.7.html>`__
-
-.. contents::
-   :local:
 
 Environment
 -----------
@@ -75,7 +70,6 @@ In that shell, start a new shell. This looks like nothing happened
 Popular Environment Variables: ``HOME``, ``SHELL``, ``USER``
 ------------------------------------------------------------
 
-
 * Set at :doc:`login time <login>` (for example by ``sshd``)
 * User's metadata, found in ``/etc/passwd``
 * Made available to all processes in the *login session*
@@ -97,9 +91,7 @@ Popular Environment Variables: ``HOME``, ``SHELL``, ``USER``
 Popular Environment Variables: ``PATH``
 ---------------------------------------
 
-.. sidebar::
-
-   **Topics**
+.. topic:: See also
 
    * :doc:`../shell/configfiles`
 

@@ -1,9 +1,6 @@
 Quiz: Linux Basics
 ==================
 
-.. contents::
-   :local:
-
 User Space, Kernel Space
 ------------------------
 

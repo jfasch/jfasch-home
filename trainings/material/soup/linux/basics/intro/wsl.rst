@@ -4,13 +4,10 @@
 Windows Subsystem for Linux (WSL)
 =================================
 
-.. contents::
-   :local:
-
 Links
 -----
 
-.. sidebar:: Disclaimer!
+.. topic:: Disclaimer!
 
    **I am not a Windows expert**. Although I have written a Kernel
    driver (PCI, DMA, tons of interrupts) in the past that runs equally

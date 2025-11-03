@@ -30,8 +30,10 @@ Requirement
 
      add_executable(cp-for-the-poor cp-for-the-poor.cpp)
 
-For The New Ones
-----------------
+.. _fh-2025-10-21-incomings-cmake-build:
+
+(Incomings) CMake Build
+-----------------------
 
 * Create one dedicated directory for the exercise, say
   ``~/My-Projects/the-new-ones/``

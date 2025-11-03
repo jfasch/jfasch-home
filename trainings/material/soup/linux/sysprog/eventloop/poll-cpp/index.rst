@@ -54,9 +54,10 @@ Readability, And OO
 * |longrightarrow| Complication ahead; for example ...
 
   * ``signalfd()``: handle ``SIGTERM`` and ``SIGINT`` to terminate
-    gracefully
-  * ``signalfd()``: use ``SIGUSR1`` to commit database
-  * ``signalfd()``: use ``SIGUSR2`` to rollback database
+    gracefully (see :doc:`../exercise-graceful-termination/index`)
+  * ``signalfd()``: use ``SIGUSR1`` to commit database 
+  * ``signalfd()``: use ``SIGUSR2`` to rollback database (see
+    :doc:`../exercise-commit-rollback/index`)
   * Timers using ``timerfd_create()``
   * More network I/O
   * ...

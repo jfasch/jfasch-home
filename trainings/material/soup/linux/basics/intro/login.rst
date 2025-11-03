@@ -4,9 +4,6 @@
 Login? What Is That?
 ====================
 
-.. contents::
-   :local:
-
 Authentication: Prompting The User For Login Data
 -------------------------------------------------
 

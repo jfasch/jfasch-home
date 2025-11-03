@@ -4,9 +4,6 @@
 Processes, Scheduling, Address Spaces
 =====================================
 
-.. contents::
-   :local:
-
 Problem: Owning the CPU?
 ------------------------
 
@@ -18,7 +15,7 @@ The following program is not sane. Why?
 Solution: Scheduling (Time Slices)
 ----------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/index`
 
@@ -79,7 +76,7 @@ Solution: Virtual Memory
 Process Attributes: User ID (UID)
 ---------------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`login`
    * :doc:`../permissions/basics`
@@ -109,7 +106,7 @@ Process Attributes: User ID (UID)
 Process Attributes: Groups
 --------------------------
 
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`login`
    * :doc:`../permissions/basics`

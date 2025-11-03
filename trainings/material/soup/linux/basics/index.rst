@@ -1,9 +1,6 @@
 Linux Basics
 ============
 
-.. contents::
-   :local:
-
 Topics
 ------
 

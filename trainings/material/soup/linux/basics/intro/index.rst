@@ -1,9 +1,6 @@
 Introduction: Concepts and Terminology
 ======================================
 
-.. contents::
-   :local:
-
 Topics
 ------
 

@@ -67,6 +67,11 @@ inside an application that is highly reactive.
    eventloop/exercise-graceful-termination/index
    eventloop/exercise-commit-rollback/index
 
+.. toctree:: 
+   :hidden:
+
+   eventloop/group-dummy
+
 Multithreading
 --------------
 
@@ -87,7 +92,7 @@ Inter Process Communication
 ---------------------------
 
 **Outdated** This is course material which has done its duty
-already. It is in the queue for refactoring, so it will look like the
+already. It is in the queue for refactoring, to make it look like the
 "regular" material above. It can be booked nonetheless; in this case
 the booked topics will receive extra priority points for refactoring
 |:wink:|.
@@ -105,7 +110,7 @@ Scheduling And Realtime
 -----------------------
 
 **Outdated** This is course material which has done its duty
-already. It is in the queue for refactoring, so it will look like the
+already. It is in the queue for refactoring, to make it look like the
 "regular" material above. It can be booked nonetheless; in this case
 the booked topics will receive extra priority points for refactoring
 |:wink:|.

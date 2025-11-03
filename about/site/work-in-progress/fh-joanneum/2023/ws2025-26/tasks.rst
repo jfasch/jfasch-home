@@ -4,6 +4,46 @@
 Tasks: Rafactoring, Realtime Behavior, ...
 ==========================================
 
+.. _fh-ws2023-task-panel:
+
+Another Panel
+-------------
+
+See ``textualize``
+
+Panel
+-----
+
+There is a panel somewhere ...
+
+Integration Tests
+-----------------
+
+Somebody take care of the setup phase in ``run-door.cpp``. Based on
+some configuration (commandline switch, like ``--simu``, ``--real``,
+...), instantiate object *polymorphically*.
+
+* ``InputSwitchMock``, ``InputSwitchGPIO``
+* ``OutputSwitchMock``, ``OutputSwitchGPIO``
+* ``MotorLED``, ``MotorStepper``, ``MotorMock``
+
+Coordinate with :ref:`Panel task <fh-ws2023-task-panel>`.
+
+Main ``run-door.cpp``: Instantiate HW/Mock Objects
+--------------------------------------------------
+
+* Define some (preliminary) config ``use_mock = {true|false}``, and
+  pass that into ``main()``
+* Based on that, instantiate mock or real-hw objects
+* Bring it into ``Inputs()`` and ``Outputs()``
+
+Graceful Termination
+--------------------
+
+* Signal handling, as explaind in course
+* Before termination, call dtors of all objects that are alive in
+  ``main()``
+
 How to include files
 --------------------
 

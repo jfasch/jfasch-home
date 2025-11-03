@@ -61,6 +61,11 @@ Ignoring Signals
 Interrupting System Calls
 -------------------------
 
+.. topic:: Documentation
+
+   * `man -s 2 pause
+     <https://man7.org/linux/man-pages/man2/pause.2.html>`__
+
 * Process context (as opposed to code in signal handlers) may want to
   react upon changes made by a signal handler
 * |longrightarrow| Long-sleeping system calls are interrupted
@@ -127,6 +132,8 @@ Long-Sleeping: Waiting For Keypress
 .. literalinclude:: code/eintr-wait-keypress.cpp
    :language: c++
    :caption: :download:`code/eintr-wait-keypress.cpp`
+
+.. _sysprog-signals-async-restart:
 
 Handling ``EINTR`` Sanely? Manually Restarting Interrupted Call?
 ----------------------------------------------------------------

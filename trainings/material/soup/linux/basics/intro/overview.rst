@@ -4,9 +4,6 @@
 Overview
 ========
 
-.. contents::
-   :local:
-
 .. image:: user-kernel/user-kernel.svg
 
 User Space, Kernel Space?

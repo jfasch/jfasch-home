@@ -4,10 +4,7 @@
 Everything Is A File (Live Demo)
 ================================
 
-.. contents::
-   :local:
-
-.. sidebar:: See also
+.. topic:: See also
 
    * :doc:`/trainings/material/soup/linux/sysprog/blocking-io/blocking-io`
 
@@ -106,7 +103,7 @@ Disks and Partitions
 Pseudo Devices
 --------------
 
-.. sidebar:: Documentation
+.. topic:: Documentation
 
    * `man dd <https://man7.org/linux/man-pages/man1/dd.1.html>`__
    * `/dev/zero <https://en.wikipedia.org/wiki//dev/zero>`__
