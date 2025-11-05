@@ -14,6 +14,11 @@ and
 
 * What's ``sizeof``?
 
+Tasks
+-----
+
+Look into :doc:`../tasks`
+
 Signal Handling, Graceful Termination
 -------------------------------------
 
@@ -68,3 +73,4 @@ https://github.com/jfasch/FH-STECE2023 existed. All from scratch.
     https://github.com/jfasch/FH-STECE2023 (no ``libgpiod``)
   * Create build directory - **please not as a subdirectory of the
     source directory**
+

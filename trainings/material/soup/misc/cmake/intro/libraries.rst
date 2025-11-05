@@ -7,10 +7,6 @@ Libraries, And *Dependencies*
 .. contents::
    :local:
 
-.. sidebar:: Documentation
-
-   * `Graphviz <https://graphviz.org/>`__
-
 Libraries And Executables
 -------------------------
 
@@ -95,8 +91,14 @@ Targets And Dependencies
 * (Nothing ever depends on an executable)
 * |longrightarrow| Directed Acyclic Graph (DAG)
 
+.. _cmake-graphviz:
+
 Visualizing Dependencies
 ------------------------
+
+.. topic:: Documentation
+
+   * `Graphviz <https://graphviz.org/>`__
 
 * *Project sanity*: knowing your dependencies
 * |longrightarrow| `Graphviz <https://graphviz.org/>`__ package

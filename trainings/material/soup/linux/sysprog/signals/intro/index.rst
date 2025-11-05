@@ -164,6 +164,10 @@ From `man -s 7 signal
 Examples: "Term" And "Core"
 ---------------------------
 
+.. topic:: Trainer's note
+
+   ``target_compile_options(prog PRIVATE -Wno-div-by-zero``
+
 .. literalinclude:: code/stupid.cpp
    :language: c++
    :caption: :download:`code/stupid.cpp`
@@ -179,8 +183,7 @@ Examples: "Term" And "Core"
    :language: c++
    :caption: :download:`code/fpe.cpp`
 
-* ``SIGSEGV`` and ``SIGFPE`` (``target_compile_options(prog PRIVATE
-  -Wno-div-by-zero``)
+* ``SIGSEGV`` and ``SIGFPE``
 * Better to not handle (denial of reality)
 * Talk about core dumps
 * Show in ``gdb``
