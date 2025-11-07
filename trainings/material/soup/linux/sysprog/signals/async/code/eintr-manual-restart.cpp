@@ -9,20 +9,6 @@ static void handler(int signal)
     write(STDOUT_FILENO, msg, sizeof(msg));            // <-- async-signal-safe
 }
 
-char read_one_byte() {
-    while (true) {
-        char c;
-        int rv = read(STDIN_FILENO, &c, 1);
-        if (rv == -1) {
-            if (errno == EINTR)
-                continue;                              // <-- restart
-            else
-                ;                                      // <-- and now? return error?
-        }
-        return c;
-    }
-}
-
 int main()
 {
     std::println("PID={}", getpid());
@@ -36,6 +22,17 @@ int main()
         return 1;
     }
 
-    read_one_byte();
+    while (true) {
+        char c;
+        ssize_t nread = read(STDIN_FILENO, &c, 1);
+        if (nread == -1) {
+            if (errno == EINTR)
+                continue;
+            else {
+                perror("read");
+                return 1;
+            }
+        }
+    }
     return 0;
 }
