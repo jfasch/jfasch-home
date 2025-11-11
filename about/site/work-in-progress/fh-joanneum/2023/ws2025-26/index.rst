@@ -25,7 +25,9 @@ Lectures, By Date
    2025-10-20-Lec/index
    2025-10-20-G2/index
    2025-10-21-G1/index
-   2025-11-03-Lec/index
+   2025-11-03-G1-G2/index
+   2025-11-04-Lec/index
+   2025-11-11-Lec/index
 
 Work Queue
 ----------

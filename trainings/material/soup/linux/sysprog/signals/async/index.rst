@@ -212,8 +212,21 @@ Blocking Asynchronous Signal Delivery: Signal Mask
 * Multithreaded programs use `pthread_sigmask()
   <https://man7.org/linux/man-pages/man3/pthread_sigmask.3.html>`__
 
-From `man -s 2 sigprocmask
-<https://man7.org/linux/man-pages/man2/sigprocmask.2.html>`__:
+``sigprocmask()``: Manipulate Signal Mask
+-----------------------------------------
+
+.. topic:: Documentation
+
+   * `man -s 2 sigprocmask
+     <https://man7.org/linux/man-pages/man2/sigprocmask.2.html>`__
+
+.. code-block:: c
+
+   #include <signal.h>
+   
+   /* Prototype for the glibc wrapper function */
+   int sigprocmask(int how, const sigset_t *_Nullable restrict set,
+                              sigset_t *_Nullable restrict oldset);
 
 .. list-table:: 
    :align: left
@@ -227,6 +240,9 @@ From `man -s 2 sigprocmask
        which is not blocked.
    * * ``SIG_SETMASK``
      * The set of blocked signals is set to the argument set.
+
+Code: Blocking/Unblocking ``SIGUSR1``
+-------------------------------------
 
 .. literalinclude:: code/sigmask.cpp
    :language: c++

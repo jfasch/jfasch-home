@@ -76,6 +76,10 @@ Demo: A "Real Life" Example
    :language: c++
    :caption: :download:`/trainings/material/soup/linux/sysprog/eventloop/code/database.h`
 
+.. literalinclude:: /trainings/material/soup/linux/sysprog/eventloop/code/database.cpp
+   :language: c++
+   :caption: :download:`/trainings/material/soup/linux/sysprog/eventloop/code/database.cpp`
+
 .. literalinclude:: code/db-simple.cpp
    :language: c++
    :caption: :download:`code/db-simple.cpp`
