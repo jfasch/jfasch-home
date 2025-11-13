@@ -6,7 +6,7 @@
 #include <print>
 #include <iostream>
 
-static timer_t timer1, timer2;
+static timer_t timer1, timer2;                         // <-- global (to share with handler)
 
 static void handler(int signal, siginfo_t* info, void* ctx)
 {
@@ -49,8 +49,8 @@ int main()
 
     /* timer signal handling */ 
     struct sigaction sa = { 0 };
-    sa.sa_flags = SA_SIGINFO;                          // <-- do the siginfo_t game altogether
-    sa.sa_sigaction = handler;                         // <-- SA_SIGINFO handler
+    sa.sa_flags = SA_SIGINFO;
+    sa.sa_sigaction = handler;
 
     rv = sigaction(SIGRTMIN, &sa, nullptr);
     if (rv == -1) {

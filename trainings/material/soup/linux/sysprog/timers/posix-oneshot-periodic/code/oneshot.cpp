@@ -35,8 +35,8 @@ int main()
 
     /* timer activation */
     struct itimerspec sp = {
-        {0,0},                                         // <-- one-shot (no interval)
-        {3,0},                                         // <-- {sec,nsec}
+        .it_interval = {.tv_sec=0, .tv_nsec=0},        // <-- zero interval -> one-shot
+        .it_value    = {.tv_sec=3, .tv_nsec=0},        // <-- expire after {sec,nsec}
     };
     rv = timer_settime(timer, 0 /*relative*/,
                        &sp,

@@ -26,7 +26,8 @@ way, but you might know my preferences anyway regarding
    clocks/index
    historical/index
    posix-intro/index
-   posix-async/index
+   posix-oneshot-periodic/index
+   posix-siginfo/index
    posix-threaded/index
    timerfd/index
 

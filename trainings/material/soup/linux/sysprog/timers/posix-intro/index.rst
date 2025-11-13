@@ -51,12 +51,30 @@ Creation And Deletion
    
    int timer_create(clockid_t clockid,
                     struct sigevent *_Nullable restrict sevp,
-                    timer_t *restrict timerid);
+		    timer_t *restrict timerid);
    int timer_delete(timer_t timerid);
 
 * "Callback" configuration via ``struct sigevent``
-* Signal or thread
 * Optional callback parameter
+
+"Arming" A Timer
+----------------
+
+.. topic:: Documentation
+
+   * `man -s 2 timer_settime
+     <https://man7.org/linux/man-pages/man2/timer_settime.2.html>`__
+
+.. code-block:: c
+
+   #include <time.h>
+
+   int timer_settime(timer_t timerid, int flags,
+                     const struct itimerspec *restrict new_value,
+                     struct itimerspec *_Nullable restrict old_value);
+
+* After creation, a timer is idle |longrightarrow| must "arm" first
+* Oneshot or periodic (see :doc:`../posix-oneshot-periodic/index`)
 
 ``struct sigevent``
 -------------------
@@ -67,14 +85,14 @@ Creation And Deletion
 
 **Notification type**
 
-* ``sigev_notify = SIGEV_SIGNAL`` 
+* ``sigev_notify == SIGEV_SIGNAL`` 
 
   * ``sigev_signo``: signal number - user selectable,
     e.g. ``SIGRTMIN+7``, or ``SIGUSR1``
   * Important: even when a realtime signal is chosen (see :ref:`here
     <sysprog-signals-rtsig>`), *multiple expirations are not queued*
 
-* ``sigev_notify = SIGEV_THREAD`` 
+* ``sigev_notify == SIGEV_THREAD`` 
 
   * ``sigev_notify_function``: callback function called in a separate
     thread
@@ -82,7 +100,7 @@ Creation And Deletion
     :doc:`here
     </trainings/material/soup/linux/sysprog/posix-threads/020-lifecycle/topic>`)
 
-* ``sigev_notify = SIGEV_NONE``: must poll using ``timer_gettime()``
+* ``sigev_notify == SIGEV_NONE``: must poll using ``timer_gettime()``
 
 **More callback information**
 
