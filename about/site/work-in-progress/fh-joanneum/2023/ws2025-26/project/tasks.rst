@@ -1,125 +1,13 @@
 .. include:: <mmlalias.txt>
 
-
-The Big Plan
-============
+Tasks
+=====
 
 .. contents::
    :local:
 
 .. _fh-2025-assignments:
 
-Teams, Assignments
-------------------
-
-.. list-table:: 
-   :align: left
-   :header-rows: 1
-
-   * * Task
-     * **ReinRaus**
-     * **Abrissbirne**
-     * **DieSeinigen**
-     * **Knepferldrucker**
-     * **HighPressure**
-     * **DingsbumsSPS**
-     * **NukeIt**
-   * * :ref:`fh-ws2025-26-task-sysfs-gpio`
-     * x
-     *
-     *
-     *
-     *
-     *
-     * 
-   * * :ref:`fh-ws2025-26-task-how-to-include-files`
-     *
-     * x
-     *
-     *
-     *
-     *
-     * 
-   * * :ref:`fh-ws2025-26-task-struct-refact`
-     *
-     * x
-     *
-     *
-     *
-     *
-     * 
-   * * :ref:`fh-ws2025-26-task-analog-sensor`
-     * 
-     * 
-     * 
-     * 
-     * x
-     * 
-     * 
-   * * :ref:`fh-ws2025-26-task-testrack`
-     *
-     *
-     * x
-     *
-     *
-     *
-     * 
-   * * :ref:`fh-ws2025-26-task-rm-light-push`
-     *
-     *
-     *
-     * x
-     *
-     *
-     * 
-   * * :ref:`fh-ws2025-26-task-copy-delete`
-     *
-     *
-     *
-     * x
-     *
-     *
-     * 
-   * * :ref:`fh-ws2025-26-task-ads1115`
-     * 
-     * 
-     * 
-     * 
-     * x
-     * 
-     * 
-   * * :ref:`fh-ws2025-26-task-analog-sensor`
-     * 
-     * 
-     * 
-     * 
-     * x
-     * 
-     * 
-   * * :ref:`fh-ws2025-26-task-graceful-termination`
-     * 
-     * 
-     * 
-     * 
-     * 
-     * x
-     * 
-   * * jjj adc inputs thresholds
-     * 
-     * 
-     * 
-     * 
-     * 
-     * x
-     * 
-   * * :ref:`fh-ws2025-26-task-integration-tests`
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * x
 
 ..    * * ref task
 ..      * **ReinRaus**
@@ -147,26 +35,26 @@ Teams, Assignments
 
 
    
-.. list-table:: 
-   :align: left
-   :header-rows: 1
-
-   * * Team
-     * Assigment
-   * * **ReinRaus**
-     * :ref:`fh-ws2025-26-task-sysfs-gpio`
-   * * **Abrissbirne**
-     * :ref:`fh-ws2025-26-task-struct-refact`,
-       :ref:`fh-ws2025-26-task-how-to-include-files`
-   * * **DieSeinigen**
-     * :ref:`fh-ws2025-26-task-testrack`
-   * * **Knepferldrucker**
-     * :ref:`fh-ws2025-26-task-copy-delete`,
-       :ref:`fh-ws2025-26-task-rm-light-push`
-   * * **HighPressure**
-     * :ref:`fh-ws2025-26-task-ads1115`
-   * * **DingsbumsSPS**
-     * :ref:`fh-ws2025-26-task-graceful-termination`
+.. .. list-table:: 
+..    :align: left
+..    :header-rows: 1
+.. 
+..    * * Team
+..      * Assigment
+..    * * **ReinRaus**
+..      * :ref:`fh-ws2025-26-task-sysfs-gpio`
+..    * * **Abrissbirne**
+..      * :ref:`fh-ws2025-26-task-struct-refact`,
+..        :ref:`fh-ws2025-26-task-how-to-include-files`
+..    * * **DieSeinigen**
+..      * :ref:`fh-ws2025-26-task-testrack`
+..    * * **Knepferldrucker**
+..      * :ref:`fh-ws2025-26-task-copy-delete`,
+..        :ref:`fh-ws2025-26-task-rm-light-push`
+..    * * **HighPressure**
+..      * :ref:`fh-ws2025-26-task-ads1115`
+..    * * **DingsbumsSPS**
+..      * :ref:`fh-ws2025-26-task-graceful-termination`
 
 Small Linux (Busybox)
 ---------------------
@@ -184,13 +72,13 @@ Graceful Termination (Done)
 * In ``bin/run-door.cpp`` introduce signal handling for ``SIGINT`` and
   ``SIGTERM``
 * ... to terminate gracefully, drop out of the main loop
-* Before exit, perform necessary cleanup (done my destructors,
+* Before exit, perform necessary cleanup (done by destructors,
   mostly), and print a "bye" message.
 
 .. _fh-ws2025-26-task-sysfs-gpio:
 
-``sysfs`` GPIO (Ongoing)
-------------------------
+``sysfs`` GPIO (Done)
+---------------------
 
 **Reinraus**
 
@@ -300,8 +188,8 @@ Test Rack (Ongoing)
 
 .. _fh-ws2025-26-task-analog-sensor:
 
-Analog Sensor Interface
------------------------
+Analog Sensor Interface (Ongoing)
+---------------------------------
 
 Unify pressure sensor and adc (1115) under the hood of one
 ``AnalogSensor`` interface where you can use ``get_value() ->
@@ -450,8 +338,8 @@ How to include files (Done)
 
 .. _fh-ws2025-26-task-rm-light-push:
 
-Remove Light Barrier And Push Putton (Ongoing)
-----------------------------------------------
+Remove Light Barrier And Push Putton (Done)
+-------------------------------------------
 
 **Knepferldrucker**
 
@@ -479,8 +367,8 @@ Comment ``TEST(door_suite, straightforward_open)`` back in and see.
 
 .. _fh-ws2025-26-task-ads1115:
 
-ADC/ADS1115
------------
+ADC/ADS1115 (Ongoing)
+---------------------
 
 **HighPressure**
 

@@ -7,6 +7,7 @@
 Project
 -------
 
+* Pointer types
 * Exception handling: ``door/small_file_handling.cpp``: live-replace
   ``std::runtime_error`` with something that carries a msg, and
   ``errno``

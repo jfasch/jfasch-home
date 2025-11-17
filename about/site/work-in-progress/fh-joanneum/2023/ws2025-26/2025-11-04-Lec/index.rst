@@ -16,7 +16,7 @@ From :doc:`/trainings/material/soup/linux/sysprog/process/index`
 Tasks
 -----
 
-Look into :doc:`../tasks`
+Look into :doc:`../project/index`
 
 Responsibilities
 ----------------

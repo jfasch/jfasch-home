@@ -7,7 +7,7 @@
 Project
 -------
 
-Look into THE TABLE: :ref:`fh-2025-assignments`
+Look into THE TABLE: :doc:`../project/assignments`
 
 ``override``
 ------------
