@@ -72,7 +72,7 @@ inside an application that is highly reactive.
 .. toctree:: 
    :hidden:
 
-   eventloop/group-dummy
+   eventloop/index
 
 Multithreading
 --------------

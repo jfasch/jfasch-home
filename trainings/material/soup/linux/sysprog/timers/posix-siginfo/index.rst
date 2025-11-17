@@ -7,7 +7,7 @@ POSIX Timers: Additional Information (``siginfo_t``)
 .. topic:: Trainer's note
 
    Continue with the oneshot timer demo program from
-   :ref:`sysprog-timers-oneshot`
+   :ref:`sysprog-timers-oneshot-code`
    (:doc:`../posix-oneshot-periodic/index`)
 
 ``siginfo_t``: A Bag Of Further Information
@@ -59,7 +59,7 @@ Use Case: Multiple Timers, Single Signal Handler
 ------------------------------------------------
 
 * Can create more timers than signals available
-* |longrightarrow| Use one signal for multiple timers
+* |longrightarrow| Use *one* signal for multiple timers
 
 .. topic:: Trainer's note
 

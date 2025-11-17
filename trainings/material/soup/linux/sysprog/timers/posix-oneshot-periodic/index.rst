@@ -6,6 +6,7 @@ uses *signals* as a timer expiration delivery mechanism. There are
 other delivery options that we will cover in the remainder of this
 chapter.
 
+
 Basics
 ------
 
@@ -59,9 +60,9 @@ Arming: ``struct itimerspec``
    };
 
 * ``it_interval``: periodic timer
-* Left 0 for one-shot timer
+* {0,0} for one-shot timer
 
-.. _sysprog-timers-oneshot:
+.. _sysprog-timers-oneshot-code:
 
 Code: One-shot Timers
 ---------------------
@@ -69,6 +70,8 @@ Code: One-shot Timers
 .. literalinclude:: code/oneshot.cpp
    :language: c++
    :caption: :download:`code/oneshot.cpp`
+
+.. _sysprog-timers-periodic-code:
 
 Code: Periodic Timers
 ---------------------

@@ -1,3 +1,6 @@
+.. include:: <mmlalias.txt>
+
+
 POSIX Timers: Introduction
 ==========================
 
@@ -8,14 +11,18 @@ POSIX Timers: Introduction
 
 .. topic:: Documentation
 
-   * `man -s 2 timer_create <https://man7.org/linux/man-pages/man2/timer_create.2.html>`__
-   * `man -s 2 timer_delete <https://man7.org/linux/man-pages/man2/timer_delete.2.html>`__
+   * `man -s 2 timer_create
+     <https://man7.org/linux/man-pages/man2/timer_create.2.html>`__
+   * `man -s 2 timer_delete
+     <https://man7.org/linux/man-pages/man2/timer_delete.2.html>`__
    * `man -s 2 timer_settime
      <https://man7.org/linux/man-pages/man2/timer_settime.2.html>`__
    * `man -s 2 timer_gettime
      <https://man7.org/linux/man-pages/man2/timer_settime.2.html>`__
    * `man -s 2 timer_getoverrun
      <https://man7.org/linux/man-pages/man2/timer_getoverrun.2.html>`__
+   * `man -s 3 sigevent
+     <https://man7.org/linux/man-pages/man3/sigevent.3type.html>`__
 
 Overview
 --------
