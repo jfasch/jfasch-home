@@ -58,7 +58,7 @@ int main()
 
     // another_copy = another_copy;
 
-    String moved = std::move(orig);
+    String moved(std::move(orig));
 
     std::cout << orig.c_str() << std::endl;
     std::cout << moved.c_str() << std::endl;
