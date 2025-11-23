@@ -44,9 +44,9 @@ Threaded Timer Expiry Notification
 .. code-block:: c
 
    sigevent event = {0};
-   event.sigev_notify = SIGEV_THREAD;
-   event.sigev_notify_function = handler;
-   // event.sigev_notify_attributes = ...;
+   event.sigev_notify = SIGEV_THREAD;                     // <-- threaded delivery
+   event.sigev_notify_function = handler;                 // <-- callback function 
+   // event.sigev_notify_attributes = ...;                // <-- (optional) thread attributes
 
 Code: Periodic Timer, Threaded
 ------------------------------
@@ -81,7 +81,9 @@ Drawback: Thread Creation
 * "each timer notification could result in the creation of a new
   thread"
 * Exactly that is the case
-* |longrightarrow| Critical for high frequency timers, at least
+* *Thread creation is not free*
+* |longrightarrow| Might impose performance problems for high
+  frequency timers
 
 .. code-block:: console
 

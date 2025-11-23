@@ -124,3 +124,41 @@ Creation And Deletion
   ``SA_SIGINFO`` (see later)
 * ``SIGEV_THREAD``: passed as argument to thread callback function,
   ``sigev_notify_function`` (see later)
+
+.. _sysprog-posix-timer-limit:
+
+Limits, Anywhere?
+-----------------
+
+* From `man -s 2 timer_create
+  <https://man7.org/linux/man-pages/man2/timer_create.2.html>`__
+
+  .. code-block:: text
+     :caption: ``NOTES`` section
+
+     The kernel preallocates a "queued real-time signal" for each
+     timer created using timer_create().  Consequently, the number of
+     timers is limited by the RLIMIT_SIGPENDING resource limit (see
+     setrlimit(2)).
+
+* A-ha
+* Limit of pending signals
+
+  .. code-block:: console
+
+     $ ulimit -a
+     ...
+     pending signals                     (-i) 62209
+     ...
+
+* Reality check
+
+  .. literalinclude:: code/maxtimers.cpp
+     :language: c++
+     :caption: :download:`code/maxtimers.cpp`
+
+  .. code-block:: console
+
+     $ ./sysprog-timers-maxtimers 
+     timer_create: Resource temporarily unavailable
+     62207 timers created

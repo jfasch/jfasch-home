@@ -29,38 +29,5 @@ way, but you might know my preferences anyway regarding
    posix-oneshot-periodic/index
    posix-siginfo/index
    posix-threaded/index
+   posix-overrun/index
    timerfd/index
-
-Details
--------
-
-.. _sysprog-posix-timer-limit:
-
-Limits, Anywhere?
-.................
-
-* max # timers: :download:`code/posix-maxtimers.cpp` -> 62207
-
-  .. code-block:: console
-
-     $ ulimit -a
-     ...
-     pending signals                     (-i) 62209
-     ...
-
-  From `man -s 2 timer_create
-  <https://man7.org/linux/man-pages/man2/timer_create.2.html>`__
-
-  .. code-block:: text
-     :caption: ``NOTES`` section
-
-     The kernel preallocates a "queued real-time signal" for each
-     timer created using timer_create().  Consequently, the number of
-     timers is limited by the RLIMIT_SIGPENDING resource limit (see
-     setrlimit(2)).
-
-Timer Overrun
-.............
-
-Continue from :download:`code/posix-overrun.cpp`
-

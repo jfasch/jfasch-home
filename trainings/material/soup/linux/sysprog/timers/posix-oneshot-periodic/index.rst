@@ -1,11 +1,11 @@
 POSIX Timers: Arming (Oneshot/Periodic)
 =======================================
 
-To show how to setup oneshot and periodic timers are, this section
-uses *signals* as a timer expiration delivery mechanism. There are
-other delivery options that we will cover in the remainder of this
-chapter.
-
+To show how to setup ("arm") oneshot and periodic timers, this section
+uses *signals* as a timer expiration delivery mechanism. There is also
+a "threaded" delivery, this will be covered in
+:doc:`../posix-threaded/index`. The mechanism how timer are armed
+stays the same, no matter what delivery option is used.
 
 Basics
 ------
