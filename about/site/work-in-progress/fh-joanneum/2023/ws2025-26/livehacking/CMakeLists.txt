@@ -27,4 +27,4 @@ add_executable(runtime-error runtime-error.cpp)
 add_subdirectory(poll)
 
 add_executable(string-move string-move.cpp)
-add_executable(pointer-types-start pointer-types-start.cpp)
+add_executable(pointer-types pointer-types.cpp)

@@ -1,6 +1,9 @@
+#include <string>
 #include <vector>
 #include <random>
 #include <print>
+#include <memory>
+#include <iostream>
 
 class Sensor
 {
@@ -40,25 +43,42 @@ private:
 class Averager
 {
 public:
-    Averager(Sensor* left, Sensor* right)
+    Averager(std::shared_ptr<Sensor> left, std::shared_ptr<Sensor> right)
     : _left(left), _right(right) {}
 
     double get_average() { return (_left->get_value() + _right->get_value()) / 2; }
 
 private:
-    Sensor* _left;
-    Sensor* _right;
+    std::shared_ptr<Sensor> _left;
+    std::shared_ptr<Sensor> _right;
 };
-
 
 int main(int argc, char** argv)
 {
+    if (argc != 2) {
+        std::println(stderr, "nix wie gegeben (mock|random)");
+        return 1;
+    }
+
     std::string how = argv[1];
 
-    MockSensor left(2.0);
-    MockSensor right(7.5);
+    std::shared_ptr<Sensor> left;
+    std::shared_ptr<Sensor> right;
 
-    Averager avg(&left, &right);
+    if (how == "mock") {
+        left = std::shared_ptr<MockSensor>(new MockSensor(2.0));
+        right = std::shared_ptr<MockSensor>(new MockSensor(7.5));
+    }
+    else if (how == "random") {
+        left = std::shared_ptr<RandomSensor>(new RandomSensor(1.5, 2.5));
+        right = std::shared_ptr<RandomSensor>(new RandomSensor(-273.15, 6000000000));
+    }
+    else {
+        std::println("nix mock oder random");
+        return 1;
+    }
+
+    Averager avg(left, right);
 
     double v = avg.get_average();
     std::println("Average value: {}", v);
