@@ -46,7 +46,7 @@ EventAction GracefulTerminator::ready(int fd)
     if (nread == -1)
         throw std::runtime_error(std::format("read: {} ({})", strerror(errno), errno));
 
-    for (size_t i=0; i<2; i++)
+    for (size_t i=0; i < nread / sizeof(signalfd_siginfo); i++)
         switch (signals[i].ssi_signo) {
             case SIGTERM:
             case SIGINT:

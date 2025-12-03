@@ -10,6 +10,9 @@ Exercise: Graceful Termination Via ``SIGTERM``/``SIGINT``
    * :doc:`/trainings/material/soup/linux/sysprog/signals/index`
    * :doc:`/trainings/material/soup/linux/sysprog/eventloop/poll-cpp/index`
 
+Exercise
+--------
+
 Our :doc:`database application
 </trainings/material/soup/linux/sysprog/eventloop/poll-cpp/index>`
 still does not commit the database when terminated like processes are
@@ -37,3 +40,18 @@ descriptor. See
 and
 :doc:`/trainings/material/soup/linux/sysprog/eventloop/poll-cpp/udp-db-code`
 for how such a ``hookup()`` method is usually implemented
+
+Solution
+--------
+
+.. literalinclude:: code/graceful-term.h
+   :language: c++
+   :caption: :download:`code/graceful-term.h`
+
+.. literalinclude:: code/graceful-term.cpp
+   :language: c++
+   :caption: :download:`code/graceful-term.cpp`
+
+.. literalinclude:: code/main.cpp
+   :language: c++
+   :caption: :download:`code/main.cpp`
