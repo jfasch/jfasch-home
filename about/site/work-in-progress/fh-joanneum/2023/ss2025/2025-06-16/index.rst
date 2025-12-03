@@ -37,7 +37,7 @@ Dependencies
 
   .. code-block:: cmake
      :caption: `bin/CMakeLists.txt
-               <https://github.com/jfasch/FH-STECE2023/blob/main/bin/CMakeLists.txt>`__
+               <https://github.com/FH-STECE2023-Org/FH-STECE2023/blob/main/bin/CMakeLists.txt>`__
   
      add_executable(run-door run-door.cpp)
      target_link_libraries(run-door door)
@@ -46,7 +46,7 @@ Dependencies
 
   .. code-block:: cmake
      :caption: `src/door/CMakeLists.txt
-               <https://github.com/jfasch/FH-STECE2023/blob/main/src/door/CMakeLists.txt>`__
+               <https://github.com/FH-STECE2023-Org/FH-STECE2023/blob/main/src/door/CMakeLists.txt>`__
   
      add_library(
        door
@@ -74,7 +74,7 @@ Install ``libgpiod``, And Visualize Again
 
   .. code-block:: cmake
      :caption: `src/door/CMakeLists.txt
-               <https://github.com/jfasch/FH-STECE2023/blob/main/src/door/CMakeLists.txt>`__
+               <https://github.com/FH-STECE2023-Org/FH-STECE2023/blob/main/src/door/CMakeLists.txt>`__
 
      if (LIBGPIOD_FOUND)                                    # <-- set toplevel by find_package(LIBGPIOD)
        target_link_libraries(door LIBGPIOD::LIBGPIOD)
@@ -113,7 +113,7 @@ Include Paths
 
 .. code-block:: cmake
    :caption: `src/door/CMakeLists.txt
-             <https://github.com/jfasch/FH-STECE2023/blob/main/src/door/CMakeLists.txt>`__
+             <https://github.com/FH-STECE2023-Org/FH-STECE2023/blob/main/src/door/CMakeLists.txt>`__
 
    # build information (include path) for our users
    target_include_directories(

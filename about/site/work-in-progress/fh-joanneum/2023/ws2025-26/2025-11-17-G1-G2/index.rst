@@ -7,38 +7,8 @@
 Tasks
 -----
 
-Status "Ongoing"
-````````````````
-
-* :ref:`fh-ws2025-26-task-integration-tests`
-* :ref:`fh-ws2025-26-task-testrack`
-* :ref:`fh-ws2025-26-task-struct-refact`
-
-  ``MotorStepper`` is still using ``libgpiod``?
-
-* :ref:`fh-ws2025-26-task-analog-sensor`
-* :ref:`fh-ws2025-26-task-ads1115`
-
-**Questions**
-
-* :ref:`fh-ws2025-26-task-integration-tests` and
-  :ref:`fh-ws2025-26-task-testrack`
-* Does :ref:`fh-ws2025-26-task-analog-sensor` include
-  :ref:`fh-ws2025-26-task-ads1115` -> no, todo
-
-Status "Done"
-`````````````
-
-* :ref:`fh-ws2025-26-task-rm-light-push`
-* :ref:`fh-ws2025-26-task-copy-delete`
-* :ref:`fh-ws2025-26-task-graceful-termination`
-* :ref:`fh-ws2025-26-task-how-to-include-files`
-* :ref:`fh-ws2025-26-task-sysfs-gpio`
-
-**Questions**
-
-* Is there anything missing?
-* How hard was it?
+`Task list
+<https://github.com/orgs/FH-STECE2023-Org/projects/3/views/1?filterQuery=has%3Atype>`__
 
 Grading
 ```````

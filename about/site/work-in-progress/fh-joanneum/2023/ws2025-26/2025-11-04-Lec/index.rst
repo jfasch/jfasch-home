@@ -16,9 +16,6 @@ From :doc:`/trainings/material/soup/linux/sysprog/process/index`
 Tasks
 -----
 
-Look into :doc:`../project/index`
+Look over `task list
+<https://github.com/orgs/FH-STECE2023-Org/projects/3/views/1?filterQuery=has%3Atype>`__
 
-Responsibilities
-----------------
-
-**ReinRaus** ...

@@ -25,8 +25,8 @@ This article shows how you use Linux to communicate with `OneWire
   temperature sensor as a slave device.
 * Rasperry Pi because everything's easy there. This article's
   principles stand unmodified for other platforms that run Linux (more
-  handwork might be needed though - Pi's ``/boot/config.txt`` is
-  really cool, for example).
+  handwork might be needed though - Pi's ``/boot/firmware/config.txt``
+  is really cool, for example).
 
 A `OneWire <https://en.wikipedia.org/wiki/1-Wire>`__ device has three
 wires attached to it: data, ground, and power. Data and ground are
@@ -44,7 +44,7 @@ data line, and the kernel driver is then used to `bitbang
 and out of the CPU.
 
 Configuration is easy: say you want to use GPIO 21 as data line. In
-``/boot/config.txt`` you write,
+``/boot/firmware/config.txt`` you write,
 
 .. code-block:: console
 
@@ -184,10 +184,10 @@ details; here we just reproduce shortly what is explained there.
 
 .. _w1-i2c-raspi-bootloader:
 
-Enable I2C, and Check (Bootloader config, ``/boot/config.txt)``
-```````````````````````````````````````````````````````````````
+Enable I2C, and Check (Bootloader config, ``/boot/firmware/config.txt)``
+````````````````````````````````````````````````````````````````````````
 
-In ``/boot/config.txt``, add the following line.
+In ``/boot/firmware/config.txt``, add the following line.
 
 .. code-block:: text
 
@@ -274,11 +274,18 @@ responsible to communicate with the OneWire devices on the new buses
    # exit
 
 You probably want to do this automatically during boot. Download the
-following file into ``/usr/local/lib/systemd/system/`` (create that
-directory if it does not exist),
+following file into ``/etc/systemd/system/`` (create that directory if
+it does not exist),
 
 .. literalinclude:: ds2482.service
    :caption: :download:`ds2482.service`
+
+Enable and start the unit as usual,
+
+.. code-block:: console
+
+   # systemctl enable ds2482.service
+   # systemctl start ds2482.service
 
 See if driver is loaded,
 
@@ -353,8 +360,8 @@ Hardware Bringup
 ................
 
 * All the wiring
-* ``w1-gpio`` configuration in ``/boot/config.txt``
-* I2C configuration in ``/boot/config.txt``
+* ``w1-gpio`` configuration in ``/boot/firmware/config.txt``
+* I2C configuration in ``/boot/firmware/config.txt``
 * ``echo ds2482 0x18 > /sys/bus/i2c/devices/i2c-1/new_device`` to load a driver
 * ``lsmod``
 * All the files in ``sysfs``

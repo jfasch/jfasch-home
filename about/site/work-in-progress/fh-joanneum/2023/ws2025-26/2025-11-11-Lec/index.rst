@@ -7,7 +7,8 @@
 Project
 -------
 
-Look into THE TABLE: :doc:`../project/assignments`
+`Task list
+<https://github.com/orgs/FH-STECE2023-Org/projects/3/views/1?filterQuery=has%3Atype>`__
 
 ``override``
 ------------

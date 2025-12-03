@@ -9,7 +9,7 @@ Embedded Computing 1 (STECE-2023): Summer
 
 .. sidebar:: Git repo
 
-   https://github.com/jfasch/FH-STECE2023
+   https://github.com/FH-STECE2023-Org/FH-STECE2023
 
 .. toctree::
    :maxdepth: 1

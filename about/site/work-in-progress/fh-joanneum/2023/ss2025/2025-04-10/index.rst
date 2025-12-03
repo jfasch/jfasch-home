@@ -97,7 +97,7 @@ Work Environment
 
 .. sidebar:: Git repo
 
-   https://github.com/jfasch/FH-STECE2023
+   https://github.com/FH-STECE2023-Org/FH-STECE2023
 
 * Work directories in ``~/My-Projects/`` 
 * Build directories in ``~/My-Builds/``
@@ -119,10 +119,10 @@ Get Code, Build
 
 .. sidebar:: Git repo
 
-   https://github.com/jfasch/FH-STECE2023
+   https://github.com/FH-STECE2023-Org/FH-STECE2023
 
 * Read `build instructions
-  <https://github.com/jfasch/FH-STECE2023/blob/main/README.rst>`__
+  <https://github.com/FH-STECE2023-Org/FH-STECE2023/blob/main/README.rst>`__
 
   .. code-block:: console
   

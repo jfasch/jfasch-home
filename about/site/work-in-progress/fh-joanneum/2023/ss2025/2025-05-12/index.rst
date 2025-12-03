@@ -78,7 +78,7 @@ Change ``origin``, And Push
 that these operation always go to something where we have write
 access - our own "fork".
 
-* On Github (https://github.com/jfasch/FH-STECE2023), fork the project
+* On Github (https://github.com/FH-STECE2023-Org/FH-STECE2023), fork the project
   into something where you have write access; say,
   https://github.com/you/FH-STECE2023.git. Press the "Fork" button and
   follow the instructions.
@@ -92,9 +92,9 @@ access - our own "fork".
 
 * Pull changes that you don't have. Reason: between the time you
   cloned your repo (remember, from
-  https://github.com/jfasch/FH-STECE2023), and the time you created
+  https://github.com/FH-STECE2023-Org/FH-STECE2023), and the time you created
   the fork, some commits have been pushed to
-  https://github.com/jfasch/FH-STECE2023.
+  https://github.com/FH-STECE2023-Org/FH-STECE2023.
 
   .. code-block:: console
 
@@ -118,9 +118,9 @@ Local C++ Transformation
 
 * Complete the C++ transformation according to the example in
   `lib/push-button.h
-  <https://github.com/jfasch/FH-STECE2023/blob/main/exercises/joerg.faschingbauer/lib/push-button.h>`__
+  <https://github.com/FH-STECE2023-Org/FH-STECE2023/blob/main/exercises/joerg.faschingbauer/lib/push-button.h>`__
   and `lib/push-button.cpp
-  <https://github.com/jfasch/FH-STECE2023/blob/main/exercises/joerg.faschingbauer/lib/push-button.cpp>`__
+  <https://github.com/FH-STECE2023-Org/FH-STECE2023/blob/main/exercises/joerg.faschingbauer/lib/push-button.cpp>`__
 
   See door sketch in :ref:`Door Exercise <fh_2023_door_exercise>`. For
   all the components in your ``exercise/firstname.lastname/lib``
@@ -135,7 +135,7 @@ Local C++ Transformation
 
 * Make sure the tests still run
 * Make clean commits in your local repo that you cloned from
-  https://github.com/jfasch/FH-STECE2023.git the other day
+  https://github.com/FH-STECE2023-Org/FH-STECE2023.git the other day
 
 Fork on Github, And Change Your ``origin``
 ..........................................

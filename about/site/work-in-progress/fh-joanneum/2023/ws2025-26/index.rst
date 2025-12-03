@@ -9,11 +9,14 @@ Embedded Computing 2 (STECE-2023): Winter
 
    syllabus
 
-Organizational And Legalese
----------------------------
+.. topic:: Syllabus
 
-* Git repo: https://github.com/jfasch/FH-STECE2023
-* :doc:`syllabus`
+   * :doc:`syllabus`
+
+.. topic:: Github
+
+   * Repository: https://github.com/FH-STECE2023-Org/FH-STECE2023
+   * Project: https://github.com/orgs/FH-STECE2023-Org/projects/3
 
 Lectures, By Date
 -----------------
@@ -30,14 +33,4 @@ Lectures, By Date
    2025-11-11-Lec/index
    2025-11-17-G1-G2/index
    2025-11-18-Lec/index
-
-Project
--------
-
-.. toctree::
-   :hidden:
-
-   project/index
-
-* :doc:`project/assignments`
-* :doc:`project/tasks`
+   2025-12-01-G1-G2/index

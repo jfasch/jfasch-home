@@ -2,6 +2,8 @@
 Description=DS2482-800@(1,0x18)
 
 [Service]
+Type=oneshot
 ExecStart=/bin/sh -c 'echo ds2482 0x18 > /sys/bus/i2c/devices/i2c-1/new_device'
 
 [Install]
+WantedBy=multi-user.target

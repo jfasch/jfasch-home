@@ -5,8 +5,8 @@
 =======================================
 
 * Gather project status updates
-* Fill them into :doc:`../project/index`
-* Gather new ideas (also into :doc:`../project/index`)
+* Fill them into task list
+* Gather new ideas (also into task list)
 
   * Python (`textualize.io <https://www.textualize.io/>`__, `MQTT
     <https://pypi.org/project/paho-mqtt/>`__

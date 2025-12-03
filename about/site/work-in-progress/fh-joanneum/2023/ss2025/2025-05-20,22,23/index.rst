@@ -20,7 +20,7 @@ Current Status: Your Own Fork Is ``origin``
    * :ref:`fh-2025-05-12-change-origin`
 
 Recently, we arranged that everyone's own fork of the *upstream*
-project (https://github.com/jfasch/FH-STECE2023) is the *origin* of
+project (https://github.com/FH-STECE2023-Org/FH-STECE2023) is the *origin* of
 everyone's local work.
 
 .. image:: ../2025-05-12/git-workflow.jpg
@@ -44,19 +44,19 @@ Update Your Fork
 .. image:: update-from-upstream.jpg
 
 * Create a remote for *upstream*
-  https://github.com/jfasch/FH-STECE2023.git (this is done only once):
+  https://github.com/FH-STECE2023-Org/FH-STECE2023.git (this is done only once):
 
   .. code-block:: console
   
-     $ git remote add upstream https://github.com/jfasch/FH-STECE2023.git
+     $ git remote add upstream https://github.com/FH-STECE2023-Org/FH-STECE2023.git
 
   .. code-block:: console
   
      $ git remote -v 
      origin	git@github.com:you/FH-STECE2023.git (fetch)
      origin	git@github.com:you/FH-STECE2023.git (push)
-     upstream   https://github.com/jfasch/FH-STECE2023.git (fetch)
-     upstream   https://github.com/jfasch/FH-STECE2023.git (push)
+     upstream   https://github.com/FH-STECE2023-Org/FH-STECE2023.git (fetch)
+     upstream   https://github.com/FH-STECE2023-Org/FH-STECE2023.git (push)
 
 * Fetch from *upstream*. This fetches into a branch ``upstream/main``.
 
